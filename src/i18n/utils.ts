@@ -5,9 +5,9 @@ type TranslationKey = string;
 type Translations = Record<string, any>;
 
 const translations: Record<Language, Translations> = {
-  nl: {},
-  en: {},
   es: {},
+  en: {},
+  nl: {},
 };
 
 /**

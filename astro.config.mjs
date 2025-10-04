@@ -6,15 +6,15 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   i18n: {
-    defaultLocale: 'nl',
-    locales: ['nl', 'en', 'es'],
+    defaultLocale: 'es',
+    locales: ['es', 'en', 'nl'],
     routing: {
       prefixDefaultLocale: false,
       fallbackType: 'rewrite'
     },
     fallback: {
-      en: 'nl',
-      es: 'nl'
+      en: 'es',
+      nl: 'es'
     }
   }
 });
