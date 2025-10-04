@@ -31,11 +31,15 @@ const {
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		
+		<!-- Canonical URL -->
+		<link rel="canonical" href={`https://tesoro-crm-website.pages.dev${currentPath}`} />
+		
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:locale" content={locale === 'nl' ? 'nl_NL' : locale === 'en' ? 'en_US' : 'es_ES'} />
+		<meta property="og:url" content={`https://tesoro-crm-website.pages.dev${currentPath}`} />
 		
 		<!-- Hreflang Tags for SEO -->
 		{alternateLinks.map(({ lang, href }) => (

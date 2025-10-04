@@ -1,0 +1,15 @@
+# robots.txt for Tesoro CRM
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /es/
+
+# Sitemap
+Sitemap: https://tesoro-crm-website.pages.dev/sitemap.xml
+
+# Disallow admin/internal pages (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Crawl-delay (optional, for politeness)
+# Crawl-delay: 1

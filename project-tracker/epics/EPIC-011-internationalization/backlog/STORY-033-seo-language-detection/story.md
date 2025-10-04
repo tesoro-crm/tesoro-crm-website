@@ -1,23 +1,24 @@
 ---
 id: STORY-033
 title: SEO & Language Detection
-status: proposed
+status: done
 epic: EPIC-011
 assignee: SEO Specialist
 priority: medium
 estimate: 3 story points
+completed-date: 2025-10-04
 ---
 
 ## User Story
 Als SEO specialist wil ik dat elke taalversie correct geïndexeerd wordt door zoekmachines en dat gebruikers automatisch de juiste taal zien.
 
 ## Acceptance Criteria
-- [ ] Hreflang tags op alle pages
-- [ ] Language detection based on browser/location
-- [ ] Language preference persistence (cookie/localStorage)
-- [ ] Sitemap.xml met alle taalversies
-- [ ] Canonical URLs correct per taal
-- [ ] robots.txt updated
+- [x] Hreflang tags op alle pages
+- [x] Language detection based on browser/location (via Astro routing)
+- [x] Language preference persistence (cookie/localStorage)
+- [x] Sitemap.xml met alle taalversies
+- [x] Canonical URLs correct per taal
+- [x] robots.txt updated
 
 ## SEO Implementation
 

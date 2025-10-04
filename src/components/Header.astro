@@ -146,4 +146,19 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
       languageMenu?.classList.add('hidden');
     }
   });
+
+  // Language persistence - save preference when language link is clicked
+  document.querySelectorAll('#language-menu a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+      if (href) {
+        // Extract language from href (/, /en, /es)
+        const lang = href.startsWith('/en') ? 'en' : href.startsWith('/es') ? 'es' : 'nl';
+        // Save to cookie (expires in 1 year)
+        document.cookie = `preferred-language=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+        // Also save to localStorage as backup
+        localStorage.setItem('preferred-language', lang);
+      }
+    });
+  });
 </script>
