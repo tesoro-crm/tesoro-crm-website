@@ -1,7 +1,7 @@
 ---
 id: ISSUE-021
 story: STORY-009
-status: todo
+status: done
 assignee: UX Copywriter
 due-date: 2025-10-20
 labels:

@@ -1,7 +1,7 @@
 ---
 id: ISSUE-018
 story: STORY-008
-status: todo
+status: done
 assignee: Marketing Ops
 due-date: 2025-10-17
 labels:
