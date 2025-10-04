@@ -246,7 +246,7 @@ const faqs = [
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">
-              Bereken je ROI
+              {t('pricing_page.roi_title', locale)}
             </h2>
             <p class="text-lg text-white/90 mb-6">
               Ontdek hoeveel tijd en geld je bespaart met Tesoro CRM. Gemiddeld verdienen onze klanten hun investering binnen 2 maanden terug.
@@ -266,7 +266,7 @@ const faqs = [
               </li>
             </ul>
             <Button variant="secondary" size="lg" href="/roi-calculator">
-              Bereken Mijn ROI
+              {t('pricing_page.roi_cta', locale)}
             </Button>
           </div>
           <div class="hidden lg:block">
@@ -302,9 +302,9 @@ const faqs = [
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-neutral-600 mb-4">Nog meer vragen?</p>
+        <p class="text-neutral-600 mb-4">{t('pricing_page.more_questions', locale)}</p>
         <Button variant="outline" href="/contact">
-          Neem Contact Op
+          {t('cta.contact', locale)}
         </Button>
       </div>
     </div>
