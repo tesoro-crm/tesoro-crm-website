@@ -24,8 +24,11 @@
       "trust_3": "Cancel anytime"
     },
     "stats": {
+      "value_1": "3.2x",
       "captaties": "Meer captaties",
+      "value_2": "67%",
       "tijdsbesparing": "Tijdsbesparing",
+      "value_3": "€12K",
       "omzet": "Extra omzet/maand"
     },
     "social_proof": {
@@ -34,24 +37,30 @@
     "features": {
       "title": "Alles wat je nodig hebt voor succesvolle captación",
       "description": "Van AI-powered leadgeneratie tot compliance management - Tesoro CRM automatiseert je workflow end-to-end.",
+      "feature_1_icon": "🎯",
       "feature_1_title": "Captación Automatizada",
       "feature_1_description": "IA-gestuurde lead generatie identificeert kansrijke woningen voordat ze op de markt komen.",
+      "feature_2_icon": "🔄",
       "feature_2_title": "MLS Integratie",
       "feature_2_description": "Directe synchronisatie met alle grote MLS-platforms voor realtime marktinzicht.",
+      "feature_3_icon": "✓",
       "feature_3_title": "Compliance Dashboard",
       "feature_3_description": "Automatische AVG/GDPR checks en documentbeheer voor zorgeloze naleving."
     },
     "testimonials": {
       "title": "Wat onze klanten zeggen",
       "subtitle": "500+ makelaars vertrouwen op Tesoro CRM voor hun dagelijkse captación workflow",
+      "testimonial_1_image": "👤",
       "testimonial_1_quote": "Tesoro CRM heeft onze captatie-ratio verdrievoudigd. De AI identificeert kansrijke woningen voordat ze op de markt komen.",
       "testimonial_1_author": "Maria González",
       "testimonial_1_role": "Senior Makelaar",
       "testimonial_1_company": "Costa del Sol Properties",
+      "testimonial_2_image": "👤",
       "testimonial_2_quote": "De MLS integratie bespaart ons 10+ uur per week. Alles synchroniseert automatisch, geen dubbel werk meer.",
       "testimonial_2_author": "Jan Bakker",
       "testimonial_2_role": "Kantoormanager",
       "testimonial_2_company": "Amsterdam Makelaars",
+      "testimonial_3_image": "👤",
       "testimonial_3_quote": "GDPR compliance was altijd een hoofdpijn. Nu regelt Tesoro alles automatisch, inclusief documentbeheer.",
       "testimonial_3_author": "Sophie Dubois",
       "testimonial_3_role": "Compliance Officer",
@@ -190,40 +199,52 @@
       "ai": {
         "name": "AI-Powered Captación",
         "description": "Intelligente lead generatie die kansrijke woningen identificeert voordat ze op de markt komen",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Predictive Lead Scoring",
         "feature_1_description": "AI analyseert marktdata en voorspelt welke woningen binnenkort verkocht worden",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Automated Outreach",
         "feature_2_description": "Gepersonaliseerde emails en berichten worden automatisch verstuurd op het juiste moment",
+      "feature_3_icon": "✓",
         "feature_3_title": "Smart Follow-ups",
         "feature_3_description": "Intelligente herinneringen en follow-up suggesties gebaseerd op gedrag"
       },
       "mls": {
         "name": "MLS Integraties",
         "description": "Naadloze synchronisatie met alle grote MLS-platforms voor realtime marktinzicht",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Realtime Sync",
         "feature_1_description": "Automatische synchronisatie van listings, updates en marktdata",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Multi-Platform Support",
         "feature_2_description": "Integratie met Funda, Idealista, Kyero, Fotocasa en 20+ andere platforms",
+      "feature_3_icon": "✓",
         "feature_3_title": "Duplicate Detection",
         "feature_3_description": "Automatische detectie en merge van dubbele listings"
       },
       "compliance": {
         "name": "Compliance & GDPR",
         "description": "Automatische compliance checks en documentbeheer voor zorgeloze naleving",
+      "feature_1_icon": "🎯",
         "feature_1_title": "GDPR Dashboard",
         "feature_1_description": "Overzicht van alle data processing activities en consent management",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Document Vault",
         "feature_2_description": "Veilige opslag van contracten, ID's en andere gevoelige documenten",
+      "feature_3_icon": "✓",
         "feature_3_title": "Audit Trail",
         "feature_3_description": "Volledige logging van alle acties voor compliance audits"
       },
       "team": {
         "name": "Team Collaboration",
         "description": "Werk samen met je team, deel leads en track performance",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Shared Inbox",
         "feature_1_description": "Centraal overzicht van alle communicatie met leads en klanten",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Task Management",
         "feature_2_description": "Assign taken, set deadlines en track voortgang",
+      "feature_3_icon": "✓",
         "feature_3_title": "Performance Analytics",
         "feature_3_description": "Real-time dashboards met team en individuele performance metrics"
       }

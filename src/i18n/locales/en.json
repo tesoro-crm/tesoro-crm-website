@@ -24,8 +24,11 @@
       "trust_3": "Cancel anytime"
     },
     "stats": {
+      "value_1": "3.2x",
       "captaties": "More leads",
+      "value_2": "67%",
       "tijdsbesparing": "Time saved",
+      "value_3": "€12K",
       "omzet": "Extra revenue/month"
     },
     "social_proof": {
@@ -34,24 +37,30 @@
     "features": {
       "title": "Everything you need for successful lead generation",
       "description": "From AI-powered lead generation to compliance management - Tesoro CRM automates your workflow end-to-end.",
+      "feature_1_icon": "🎯",
       "feature_1_title": "Automated Lead Generation",
       "feature_1_description": "AI-driven lead generation identifies promising properties before they hit the market.",
+      "feature_2_icon": "🔄",
       "feature_2_title": "MLS Integration",
       "feature_2_description": "Direct synchronization with all major MLS platforms for real-time market insights.",
+      "feature_3_icon": "✓",
       "feature_3_title": "Compliance Dashboard",
       "feature_3_description": "Automatic GDPR checks and document management for worry-free compliance."
     },
     "testimonials": {
       "title": "What our customers say",
       "subtitle": "500+ agents trust Tesoro CRM for their daily lead generation workflow",
+      "testimonial_1_image": "👤",
       "testimonial_1_quote": "Tesoro CRM has tripled our acquisition ratio. The AI identifies promising properties before they come on the market.",
       "testimonial_1_author": "Maria González",
       "testimonial_1_role": "Senior Agent",
       "testimonial_1_company": "Costa del Sol Properties",
+      "testimonial_2_image": "👤",
       "testimonial_2_quote": "The MLS integration saves us 10+ hours per week. Everything synchronizes automatically, no more double work.",
       "testimonial_2_author": "Jan Bakker",
       "testimonial_2_role": "Office Manager",
       "testimonial_2_company": "Amsterdam Real Estate",
+      "testimonial_3_image": "👤",
       "testimonial_3_quote": "GDPR compliance was always a headache. Now Tesoro handles everything automatically, including document management.",
       "testimonial_3_author": "Sophie Dubois",
       "testimonial_3_role": "Compliance Officer",
@@ -190,40 +199,52 @@
       "ai": {
         "name": "AI-Powered Lead Generation",
         "description": "Intelligent lead generation that identifies promising properties before they hit the market",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Predictive Lead Scoring",
         "feature_1_description": "AI analyzes market data and predicts which properties will be sold soon",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Automated Outreach",
         "feature_2_description": "Personalized emails and messages are automatically sent at the right time",
+      "feature_3_icon": "✓",
         "feature_3_title": "Smart Follow-ups",
         "feature_3_description": "Intelligent reminders and follow-up suggestions based on behavior"
       },
       "mls": {
         "name": "MLS Integrations",
         "description": "Seamless synchronization with all major MLS platforms for real-time market insights",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Realtime Sync",
         "feature_1_description": "Automatic synchronization of listings, updates and market data",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Multi-Platform Support",
         "feature_2_description": "Integration with Funda, Idealista, Kyero, Fotocasa and 20+ other platforms",
+      "feature_3_icon": "✓",
         "feature_3_title": "Duplicate Detection",
         "feature_3_description": "Automatic detection and merging of duplicate listings"
       },
       "compliance": {
         "name": "Compliance & GDPR",
         "description": "Automatic compliance checks and document management for worry-free compliance",
+      "feature_1_icon": "🎯",
         "feature_1_title": "GDPR Dashboard",
         "feature_1_description": "Overview of all data processing activities and consent management",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Document Vault",
         "feature_2_description": "Secure storage of contracts, IDs and other sensitive documents",
+      "feature_3_icon": "✓",
         "feature_3_title": "Audit Trail",
         "feature_3_description": "Complete logging of all actions for compliance audits"
       },
       "team": {
         "name": "Team Collaboration",
         "description": "Work together with your team, share leads and track performance",
+      "feature_1_icon": "🎯",
         "feature_1_title": "Shared Inbox",
         "feature_1_description": "Central overview of all communication with leads and customers",
+      "feature_2_icon": "🔄",
         "feature_2_title": "Task Management",
         "feature_2_description": "Assign tasks, set deadlines and track progress",
+      "feature_3_icon": "✓",
         "feature_3_title": "Performance Analytics",
         "feature_3_description": "Real-time dashboards with team and individual performance metrics"
       }
