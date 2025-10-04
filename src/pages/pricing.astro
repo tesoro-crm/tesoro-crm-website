@@ -1,0 +1,327 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+
+const plans = [
+  {
+    name: 'Starter',
+    price: '€99',
+    period: '/maand',
+    description: 'Perfect voor individuele makelaars die net beginnen met captación',
+    features: [
+      '50 AI-powered leads per maand',
+      '1 MLS integratie',
+      'Basis compliance dashboard',
+      'Email support',
+      '5GB opslag',
+      'Mobiele app',
+    ],
+    cta: 'Start Gratis Trial',
+    highlighted: false,
+  },
+  {
+    name: 'Professional',
+    price: '€249',
+    period: '/maand',
+    description: 'Voor groeiende teams die hun captación willen automatiseren',
+    features: [
+      '200 AI-powered leads per maand',
+      '5 MLS integraties',
+      'Geavanceerd compliance dashboard',
+      'Priority support (24/7)',
+      '50GB opslag',
+      'Team collaboration tools',
+      'Custom branding',
+      'API toegang',
+    ],
+    cta: 'Start Gratis Trial',
+    highlighted: true,
+    badge: 'Meest Populair',
+  },
+  {
+    name: 'Enterprise',
+    price: 'Custom',
+    period: '',
+    description: 'Voor grote kantoren met specifieke eisen en integraties',
+    features: [
+      'Onbeperkte AI-powered leads',
+      'Onbeperkte MLS integraties',
+      'White-label oplossing',
+      'Dedicated account manager',
+      'Onbeperkte opslag',
+      'Custom workflows',
+      'SLA garantie',
+      'On-premise optie',
+    ],
+    cta: 'Neem Contact Op',
+    highlighted: false,
+  },
+];
+
+const addons = [
+  {
+    name: 'Extra MLS Integraties',
+    price: '€49/maand per integratie',
+    description: 'Voeg extra MLS-platforms toe aan je account',
+  },
+  {
+    name: 'Premium Support',
+    price: '€99/maand',
+    description: '24/7 priority support met dedicated account manager',
+  },
+  {
+    name: 'White Label',
+    price: '€199/maand',
+    description: 'Volledig gebrand op jouw kantoor met custom domain',
+  },
+  {
+    name: 'API Access',
+    price: '€149/maand',
+    description: 'Volledige API toegang voor custom integraties',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Kan ik op elk moment upgraden of downgraden?',
+    answer: 'Ja, je kunt op elk moment je plan wijzigen. Upgrades zijn direct actief, bij downgrades blijf je tot het einde van je huidige periode op het hogere plan.',
+  },
+  {
+    question: 'Wat gebeurt er na de gratis trial?',
+    answer: 'Na 14 dagen wordt je automatisch doorgeschakeld naar het gekozen betaalde plan. Je kunt op elk moment tijdens de trial opzeggen zonder kosten.',
+  },
+  {
+    question: 'Zijn er setup kosten?',
+    answer: 'Nee, er zijn geen setup kosten. Je betaalt alleen het maandelijkse abonnement en eventuele add-ons die je kiest.',
+  },
+  {
+    question: 'Welke betaalmethoden accepteren jullie?',
+    answer: 'We accepteren alle gangbare creditcards (Visa, Mastercard, Amex), SEPA automatische incasso en bankoverschrijving voor Enterprise klanten.',
+  },
+  {
+    question: 'Is er een jaarlijks contract vereist?',
+    answer: 'Nee, al onze plannen zijn maandelijks opzegbaar. We bieden wel 20% korting bij jaarlijkse betaling.',
+  },
+  {
+    question: 'Wat is inbegrepen in de gratis trial?',
+    answer: 'De gratis trial geeft je volledige toegang tot alle features van het gekozen plan, inclusief AI leads, MLS integraties en compliance tools.',
+  },
+];
+---
+
+<Layout 
+  title="Prijzen - Tesoro CRM"
+  description="Transparante prijzen voor AI-powered captación. Kies het plan dat bij jouw kantoor past. 14 dagen gratis proberen."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        💰 Transparante Prijzen
+      </Badge>
+      
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        Kies het plan dat bij je past
+      </h1>
+      
+      <p class="text-lg sm:text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
+        Alle plannen inclusief 14 dagen gratis trial. Geen creditcard vereist. Cancel anytime.
+      </p>
+
+      <div class="flex items-center justify-center gap-4 text-sm text-neutral-600">
+        <span class="flex items-center gap-2">
+          <span class="text-success text-xl">✓</span>
+          14 dagen gratis
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="text-success text-xl">✓</span>
+          Geen creditcard
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="text-success text-xl">✓</span>
+          Cancel anytime
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {plans.map((plan) => (
+          <Card 
+            variant={plan.highlighted ? 'bordered' : 'default'} 
+            padding="lg"
+            class={`flex flex-col relative ${plan.highlighted ? 'ring-2 ring-primary shadow-xl scale-105' : ''}`}
+          >
+            {plan.badge && (
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <Badge variant="primary" size="sm">
+                  {plan.badge}
+                </Badge>
+              </div>
+            )}
+            
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-display font-bold text-neutral-900 mb-2">
+                {plan.name}
+              </h3>
+              <div class="flex items-baseline justify-center gap-1 mb-3">
+                <span class="text-4xl font-display font-bold text-primary">{plan.price}</span>
+                {plan.period && <span class="text-neutral-600">{plan.period}</span>}
+              </div>
+              <p class="text-sm text-neutral-600">{plan.description}</p>
+            </div>
+
+            <ul class="space-y-3 mb-8 flex-grow">
+              {plan.features.map((feature) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <span class="text-success text-lg flex-shrink-0">✓</span>
+                  <span class="text-neutral-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Button 
+              variant={plan.highlighted ? 'primary' : 'outline'} 
+              size="lg" 
+              fullWidth
+              href="/signup"
+            >
+              {plan.cta}
+            </Button>
+          </Card>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-neutral-600 mb-4">
+          Bespaar 20% met jaarlijkse betaling
+        </p>
+        <Button variant="ghost" href="/contact">
+          Vragen over Enterprise? Neem contact op
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add-ons Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Optionele Add-ons
+        </h2>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          Breid je plan uit met extra functionaliteit
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {addons.map((addon) => (
+          <Card variant="default" padding="lg" class="flex items-start gap-4">
+            <div class="flex-grow">
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">{addon.name}</h3>
+              <p class="text-sm text-neutral-600 mb-3">{addon.description}</p>
+              <p class="text-primary font-semibold">{addon.price}</p>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Teaser -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="bg-gradient-to-r from-primary to-primary-accent rounded-2xl p-8 lg:p-12 text-white">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">
+              Bereken je ROI
+            </h2>
+            <p class="text-lg text-white/90 mb-6">
+              Ontdek hoeveel tijd en geld je bespaart met Tesoro CRM. Gemiddeld verdienen onze klanten hun investering binnen 2 maanden terug.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-2">
+                <span class="text-secondary text-xl">✓</span>
+                <span>3.2x meer captaties per maand</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-secondary text-xl">✓</span>
+                <span>67% tijdsbesparing op administratie</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-secondary text-xl">✓</span>
+                <span>€12K extra omzet gemiddeld</span>
+              </li>
+            </ul>
+            <Button variant="secondary" size="lg" href="/roi-calculator">
+              Bereken Mijn ROI
+            </Button>
+          </div>
+          <div class="hidden lg:block">
+            <Card variant="elevated" class="bg-white/10 backdrop-blur-sm border-white/20 p-8">
+              <div class="text-center">
+                <div class="text-6xl mb-4">📈</div>
+                <div class="text-4xl font-display font-bold text-secondary mb-2">€12,450</div>
+                <p class="text-white/80">Gemiddelde extra omzet per maand</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Veelgestelde vragen over prijzen
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <Card variant="default" padding="lg">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+            <p class="text-neutral-600">{faq.answer}</p>
+          </Card>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-neutral-600 mb-4">Nog meer vragen?</p>
+        <Button variant="outline" href="/contact">
+          Neem Contact Op
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        Klaar om te starten?
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        Begin vandaag nog met je gratis trial. Geen creditcard vereist.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href="/signup">
+          Start Gratis Trial
+        </Button>
+        <Button variant="ghost" size="lg" href="/demo" class="border-2 border-white hover:bg-white hover:text-primary">
+          Boek een Demo
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

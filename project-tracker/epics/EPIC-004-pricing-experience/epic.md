@@ -1,7 +1,7 @@
 ---
 id: EPIC-004
 title: Pricing Experience & Monetisation
-status: proposed
+status: done
 owner: Product Lead
 start-date: 2025-10-09
 end-date: 2025-11-02
@@ -20,9 +20,9 @@ dependencies:
 Implementeer de structuur en content beschreven in `tesoro-crm-website-blueprint.md#4` inclusief hero, tier cards, add-ons, ROI calculator, FAQ en trust elementen.
 
 ## Deliverables
-- [ ] Pricing pagina (desktop + mobiel) design en copy
-- [ ] ROI calculator prototype + implementatie plan
-- [ ] Add-on en FAQ content afgestemd met product & compliance
+- [x] Pricing pagina (desktop + mobiel) design en copy
+- [x] ROI calculator prototype + implementatie plan
+- [x] Add-on en FAQ content afgestemd met product & compliance
 
 ## Stories
 - STORY-010
