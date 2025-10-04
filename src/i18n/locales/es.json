@@ -86,5 +86,98 @@
       "cta_primary": "Comenzar Prueba Gratuita",
       "cta_secondary": "Ver Precios"
     }
+  },
+  "pricing": {
+    "hero": {
+      "badge": "💰 Precios Transparentes",
+      "title": "Elige el plan que se adapta a ti",
+      "description": "Todos los planes incluyen 14 días de prueba gratuita. No se requiere tarjeta de crédito. Cancela en cualquier momento.",
+      "trust_1": "14 días gratis",
+      "trust_2": "Sin tarjeta de crédito",
+      "trust_3": "Cancelar en cualquier momento"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "€99",
+        "period": "/mes",
+        "description": "Perfecto para agentes individuales que comienzan con la captación",
+        "cta": "Comenzar Prueba Gratuita",
+        "feature_1": "50 leads con IA por mes",
+        "feature_2": "1 integración MLS",
+        "feature_3": "Panel de cumplimiento básico",
+        "feature_4": "Soporte por email",
+        "feature_5": "5GB de almacenamiento",
+        "feature_6": "Aplicación móvil"
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "€249",
+        "period": "/mes",
+        "description": "Para equipos en crecimiento que buscan automatizar su captación",
+        "badge": "Más Popular",
+        "cta": "Comenzar Prueba Gratuita",
+        "feature_1": "200 leads con IA por mes",
+        "feature_2": "5 integraciones MLS",
+        "feature_3": "Panel de cumplimiento avanzado",
+        "feature_4": "Soporte prioritario (24/7)",
+        "feature_5": "50GB de almacenamiento",
+        "feature_6": "Herramientas de colaboración en equipo",
+        "feature_7": "Marca personalizada",
+        "feature_8": "Acceso API"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Personalizado",
+        "period": "",
+        "description": "Para grandes oficinas con requisitos e integraciones específicas",
+        "cta": "Contáctenos",
+        "feature_1": "Leads ilimitados con IA",
+        "feature_2": "Integraciones MLS ilimitadas",
+        "feature_3": "Solución de marca blanca",
+        "feature_4": "Gerente de cuenta dedicado",
+        "feature_5": "Almacenamiento ilimitado",
+        "feature_6": "Flujos de trabajo personalizados",
+        "feature_7": "Garantía SLA",
+        "feature_8": "Opción on-premise"
+      }
+    },
+    "addons": {
+      "title": "Complementos",
+      "description": "Amplía tu plan con estos complementos",
+      "addon_1_name": "Integraciones MLS Extra",
+      "addon_1_price": "€49/mes por integración",
+      "addon_1_description": "Añade plataformas MLS adicionales a tu cuenta",
+      "addon_2_name": "Soporte Premium",
+      "addon_2_price": "€99/mes",
+      "addon_2_description": "Soporte prioritario 24/7 con gerente de cuenta dedicado",
+      "addon_3_name": "Marca Blanca",
+      "addon_3_price": "€199/mes",
+      "addon_3_description": "Totalmente personalizado para tu oficina con dominio propio",
+      "addon_4_name": "Acceso API",
+      "addon_4_price": "€149/mes",
+      "addon_4_description": "Acceso completo a la API para integraciones personalizadas"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes sobre precios",
+      "question_1": "¿Puedo cambiar de plan?",
+      "answer_1": "Sí, puedes actualizar o degradar en cualquier momento. El cambio se aplica inmediatamente y cobramos prorrateado.",
+      "question_2": "¿Qué sucede después de la prueba?",
+      "answer_2": "Después de 14 días, se te cambiará automáticamente al plan elegido. Recibirás un recordatorio con anticipación.",
+      "question_3": "¿Hay costos de configuración?",
+      "answer_3": "No, todos los planes no tienen costos de configuración. Solo pagas la suscripción mensual.",
+      "question_4": "¿Qué métodos de pago aceptan?",
+      "answer_4": "Aceptamos todas las principales tarjetas de crédito, iDEAL y débito directo SEPA para pagos anuales.",
+      "question_5": "¿Hay descuento por pago anual?",
+      "answer_5": "Sí, con el pago anual obtienes 2 meses gratis (16% de descuento).",
+      "question_6": "¿Puedo exportar mis datos?",
+      "answer_6": "Sí, puedes exportar todos tus datos en cualquier momento en formato CSV o JSON."
+    },
+    "cta": {
+      "title": "¿Listo para comenzar?",
+      "description": "Comienza tu prueba gratuita de 14 días hoy. No se requiere tarjeta de crédito.",
+      "cta_primary": "Comenzar Prueba Gratuita",
+      "cta_secondary": "Contáctenos"
+    }
   }
 }

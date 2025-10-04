@@ -86,5 +86,98 @@
       "cta_primary": "Start Free Trial",
       "cta_secondary": "View Pricing"
     }
+  },
+  "pricing": {
+    "hero": {
+      "badge": "💰 Transparent Pricing",
+      "title": "Choose the plan that fits you",
+      "description": "All plans include 14-day free trial. No credit card required. Cancel anytime.",
+      "trust_1": "14 days free",
+      "trust_2": "No credit card",
+      "trust_3": "Cancel anytime"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "€99",
+        "period": "/month",
+        "description": "Perfect for individual agents just starting with lead generation",
+        "cta": "Start Free Trial",
+        "feature_1": "50 AI-powered leads per month",
+        "feature_2": "1 MLS integration",
+        "feature_3": "Basic compliance dashboard",
+        "feature_4": "Email support",
+        "feature_5": "5GB storage",
+        "feature_6": "Mobile app"
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "€249",
+        "period": "/month",
+        "description": "For growing teams looking to automate their lead generation",
+        "badge": "Most Popular",
+        "cta": "Start Free Trial",
+        "feature_1": "200 AI-powered leads per month",
+        "feature_2": "5 MLS integrations",
+        "feature_3": "Advanced compliance dashboard",
+        "feature_4": "Priority support (24/7)",
+        "feature_5": "50GB storage",
+        "feature_6": "Team collaboration tools",
+        "feature_7": "Custom branding",
+        "feature_8": "API access"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "For large offices with specific requirements and integrations",
+        "cta": "Contact Us",
+        "feature_1": "Unlimited AI-powered leads",
+        "feature_2": "Unlimited MLS integrations",
+        "feature_3": "White-label solution",
+        "feature_4": "Dedicated account manager",
+        "feature_5": "Unlimited storage",
+        "feature_6": "Custom workflows",
+        "feature_7": "SLA guarantee",
+        "feature_8": "On-premise option"
+      }
+    },
+    "addons": {
+      "title": "Add-ons",
+      "description": "Extend your plan with these add-ons",
+      "addon_1_name": "Extra MLS Integrations",
+      "addon_1_price": "€49/month per integration",
+      "addon_1_description": "Add extra MLS platforms to your account",
+      "addon_2_name": "Premium Support",
+      "addon_2_price": "€99/month",
+      "addon_2_description": "24/7 priority support with dedicated account manager",
+      "addon_3_name": "White Label",
+      "addon_3_price": "€199/month",
+      "addon_3_description": "Fully branded on your office with custom domain",
+      "addon_4_name": "API Access",
+      "addon_4_price": "€149/month",
+      "addon_4_description": "Full API access for custom integrations"
+    },
+    "faq": {
+      "title": "Frequently asked questions about pricing",
+      "question_1": "Can I switch plans?",
+      "answer_1": "Yes, you can upgrade or downgrade at any time. The change takes effect immediately and we charge pro-rata.",
+      "question_2": "What happens after the trial?",
+      "answer_2": "After 14 days you'll automatically be switched to your chosen plan. You'll receive a reminder beforehand.",
+      "question_3": "Are there setup fees?",
+      "answer_3": "No, all plans are without setup fees. You only pay the monthly subscription.",
+      "question_4": "Which payment methods do you accept?",
+      "answer_4": "We accept all major credit cards, iDEAL, and SEPA direct debit for annual payments.",
+      "question_5": "Is there a discount for annual payment?",
+      "answer_5": "Yes, with annual payment you get 2 months free (16% discount).",
+      "question_6": "Can I export my data?",
+      "answer_6": "Yes, you can export all your data at any time in CSV or JSON format."
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "description": "Start your 14-day free trial today. No credit card required.",
+      "cta_primary": "Start Free Trial",
+      "cta_secondary": "Contact Us"
+    }
   }
 }
