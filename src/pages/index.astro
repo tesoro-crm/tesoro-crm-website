@@ -96,11 +96,11 @@ const faqs = [
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-            {t('home.hero.title', locale).split(' ').slice(0, -1).join(' ')} <span class="text-secondary">{t('home.hero.title', locale).split(' ').slice(-1)}</span>
+            {t('home.hero.headline', locale)}
           </h1>
           
           <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-            {t('home.hero.description', locale)}
+            {t('home.hero.subheadline', locale)}
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -112,18 +112,18 @@ const faqs = [
             </Button>
           </div>
           
-          <div class="flex items-center gap-6 mt-8 text-sm text-white/80 justify-center lg:justify-start">
+          <div class="flex flex-wrap items-center gap-4 sm:gap-6 mt-8 text-sm text-white/80 justify-center lg:justify-start">
             <span class="flex items-center gap-2">
               <span class="text-secondary text-xl">✓</span>
-              {t('home.hero.trust_1', locale)}
+              {t('home.hero.trust_pricing', locale)}
             </span>
             <span class="flex items-center gap-2">
               <span class="text-secondary text-xl">✓</span>
-              {t('home.hero.trust_2', locale)}
+              {t('home.hero.trust_integration', locale)}
             </span>
             <span class="flex items-center gap-2">
               <span class="text-secondary text-xl">✓</span>
-              {t('home.hero.trust_3', locale)}
+              {t('home.hero.trust_commitment', locale)}
             </span>
           </div>
         </div>
