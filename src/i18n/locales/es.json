@@ -179,5 +179,54 @@
       "cta_primary": "Comenzar Prueba Gratuita",
       "cta_secondary": "Contáctenos"
     }
+  },
+  "features": {
+    "hero": {
+      "badge": "✨ Todas las Características",
+      "title": "Todo lo que necesitas para una captación exitosa",
+      "description": "Desde la generación de leads con IA hasta la gestión de cumplimiento - Tesoro CRM ofrece todas las herramientas que necesitas para hacer crecer tu negocio inmobiliario."
+    },
+    "categories": {
+      "ai": {
+        "name": "Captación con IA",
+        "description": "Generación inteligente de leads que identifica propiedades prometedoras antes de que salgan al mercado",
+        "feature_1_title": "Puntuación Predictiva de Leads",
+        "feature_1_description": "La IA analiza datos del mercado y predice qué propiedades se venderán pronto",
+        "feature_2_title": "Alcance Automatizado",
+        "feature_2_description": "Correos y mensajes personalizados se envían automáticamente en el momento adecuado",
+        "feature_3_title": "Seguimientos Inteligentes",
+        "feature_3_description": "Recordatorios inteligentes y sugerencias de seguimiento basadas en el comportamiento"
+      },
+      "mls": {
+        "name": "Integraciones MLS",
+        "description": "Sincronización perfecta con todas las principales plataformas MLS para información del mercado en tiempo real",
+        "feature_1_title": "Sincronización en Tiempo Real",
+        "feature_1_description": "Sincronización automática de listados, actualizaciones y datos del mercado",
+        "feature_2_title": "Soporte Multi-Plataforma",
+        "feature_2_description": "Integración con Funda, Idealista, Kyero, Fotocasa y más de 20 plataformas",
+        "feature_3_title": "Detección de Duplicados",
+        "feature_3_description": "Detección automática y fusión de listados duplicados"
+      },
+      "compliance": {
+        "name": "Cumplimiento y GDPR",
+        "description": "Verificaciones automáticas de cumplimiento y gestión de documentos para un cumplimiento sin preocupaciones",
+        "feature_1_title": "Panel GDPR",
+        "feature_1_description": "Visión general de todas las actividades de procesamiento de datos y gestión de consentimiento",
+        "feature_2_title": "Bóveda de Documentos",
+        "feature_2_description": "Almacenamiento seguro de contratos, identificaciones y otros documentos sensibles",
+        "feature_3_title": "Registro de Auditoría",
+        "feature_3_description": "Registro completo de todas las acciones para auditorías de cumplimiento"
+      },
+      "team": {
+        "name": "Colaboración en Equipo",
+        "description": "Trabaja junto con tu equipo, comparte leads y rastrea el rendimiento",
+        "feature_1_title": "Bandeja de Entrada Compartida",
+        "feature_1_description": "Vista central de toda la comunicación con leads y clientes",
+        "feature_2_title": "Gestión de Tareas",
+        "feature_2_description": "Asigna tareas, establece plazos y rastrea el progreso",
+        "feature_3_title": "Análisis de Rendimiento",
+        "feature_3_description": "Paneles en tiempo real con métricas de rendimiento del equipo e individuales"
+      }
+    }
   }
 }
