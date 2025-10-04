@@ -1,7 +1,7 @@
 ---
 id: ISSUE-028
 story: STORY-013
-status: todo
+status: done
 assignee: UX Architect
 due-date: 2025-10-15
 labels:
@@ -13,9 +13,9 @@ labels:
 Ontwerp de informatiearchitectuur voor de feature overview pagina inclusief secties per categorie (pipeline, captación, MLS, co-brokerage, AI, compliance) en CTA flows.
 
 ## Checklist
-- [ ] Wireframes desktop/mobile
-- [ ] CTA mapping naar relevante oplossing/pagina
-- [ ] Feedback ronde met product team
+- [x] Wireframes desktop/mobile
+- [x] CTA mapping naar relevante oplossing/pagina
+- [x] Feedback ronde met product team
 
 ## Logboek
 | Datum | Opmerking |

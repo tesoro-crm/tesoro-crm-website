@@ -1,7 +1,7 @@
 ---
 id: ISSUE-033
 story: STORY-015
-status: todo
+status: done
 assignee: UI Designer
 due-date: 2025-10-21
 labels:
@@ -13,10 +13,10 @@ labels:
 Ontwerp de interactieve comparison matrix (desktop + mobiel) inclusief sortable kolommen, tooltips en download CTA, gebaseerd op data uit ISSUE-032.
 
 ## Checklist
-- [ ] Desktop layout met kolom-highlights
-- [ ] Mobile accordion/stacked variant
-- [ ] CTA naar download en contact-form toegevoegd
-- [ ] Handoff (Figma) + design specs gedeeld
+- [x] Desktop layout met kolom-highlights
+- [x] Mobile accordion/stacked variant
+- [x] CTA naar download en contact-form toegevoegd
+- [x] Handoff (Figma) + design specs gedeeld
 
 ## Logboek
 | Datum | Opmerking |
