@@ -1,0 +1,9 @@
+name = "tesoro-crm-website"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "./dist"
+
+[env.preview]
+name = "tesoro-crm-website-preview"
+
+[env.production]
+name = "tesoro-crm-website-production"

@@ -1,0 +1,37 @@
+---
+export interface Props {
+  variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info' | 'neutral';
+  size?: 'sm' | 'md' | 'lg';
+  class?: string;
+}
+
+const {
+  variant = 'primary',
+  size = 'md',
+  class: className = '',
+} = Astro.props;
+
+const baseClasses = 'inline-flex items-center font-medium rounded-full';
+
+const variantClasses = {
+  primary: 'bg-primary/10 text-primary border border-primary/20',
+  secondary: 'bg-secondary/10 text-secondary-dark border border-secondary/20',
+  success: 'bg-success/10 text-success border border-success/20',
+  warning: 'bg-warning/10 text-warning border border-warning/20',
+  error: 'bg-error/10 text-error border border-error/20',
+  info: 'bg-info/10 text-info border border-info/20',
+  neutral: 'bg-neutral-100 text-neutral-700 border border-neutral-200',
+};
+
+const sizeClasses = {
+  sm: 'px-2 py-0.5 text-xs',
+  md: 'px-3 py-1 text-sm',
+  lg: 'px-4 py-1.5 text-base',
+};
+
+const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+---
+
+<span class={classes}>
+  <slot />
+</span>

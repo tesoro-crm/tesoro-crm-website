@@ -1,0 +1,25 @@
+## Pull Request Checklist
+
+- **Branch hygiene**
+  - Branch name volgt `feature/ISSUE-xxx-short-description`.
+  - Rebase uitgevoerd op `develop`; geen merge commits.
+- **Scope & context**
+  - Description bevat samenvatting, linked issues, screenshots/recording indien UI-impact.
+  - Checklist met risico's/rollback plan toegevoegd.
+- **Tests & QA**
+  - `npm test` en `npm run lint` lokaal uitgevoerd.
+  - Storybook/visual regression (indien van toepassing) gedraaid.
+  - Edge cases beschreven.
+- **Docs & translations**
+  - Relevante docs/MD bestanden bijgewerkt (bijv. `SETUP.md`, `docs/design-system/*`).
+  - Meertalige copy gecontroleerd (NL/EN/ES) of taak aangemaakt voor vertaling.
+- **Security & compliance**
+  - Secrets/keys verwijderd of geanonimiseerd.
+  - GDPR/AVG implicaties gecheckt bij nieuwe tracking.
+- **Review voorbereiding**
+  - Preview deploy link toegevoegd.
+  - Toegewezen reviewers (engineering + betrokken discipline). 
+  - Labels (scope, epic) toegevoegd in tracker.
+- **Definition of Done bevestigen**
+  - Acceptance criteria van story/issue afgevinkt.
+  - Checklist in `project-tracker/epics/**/issue.md` geüpdatet.

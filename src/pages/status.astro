@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { loadStatusSnapshot, countStatuses } from "../lib/status";
+import type { StatusSnapshot, EpicRecord, StoryRecord, IssueRecord } from "../lib/status";
+
+const snapshot: StatusSnapshot = await loadStatusSnapshot();
+const epics: readonly EpicRecord[] = snapshot.epics;
+const stories: readonly StoryRecord[] = epics.flatMap((epic) => epic.stories);
+const issues: readonly IssueRecord[] = stories.flatMap((story) => story.issues);
+
+const epicTotals = countStatuses(epics);
+const storyTotals = countStatuses(stories);
+const issueTotals = countStatuses(issues);
+
+const activeStories = storyTotals["in-progress"] ?? 0;
+const activeIssues = issueTotals["in-progress"] ?? 0;
+
+function getChipClass(status: string): string {
+  const normalized = status.toLowerCase();
+  if (normalized === "done") return "bg-success/10 text-success border border-success/20";
+  if (normalized === "in-progress") return "bg-warning/10 text-warning border border-warning/20";
+  if (normalized === "on-hold") return "bg-error/10 text-error border border-error/20";
+  return "bg-primary/10 text-primary border border-primary/20";
+}
+---
+
+<Layout title="Tesoro CRM Project Status" description="Live project status dashboard">
+  <div class="min-h-screen bg-neutral-50 py-8">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <!-- Banner -->
+      <div class="bg-gradient-to-r from-neutral-900 to-neutral-800 text-white rounded-2xl p-8 mb-8 shadow-xl">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <h1 class="text-3xl font-display font-bold mb-2">Tesoro CRM Project Status</h1>
+            <p class="text-neutral-300"><strong>Actieve branch:</strong> {snapshot.branch}</p>
+            <div class="flex gap-6 mt-3 text-sm">
+              <span>Stories bezig: <strong class="text-warning">{activeStories}</strong></span>
+              <span>Issues bezig: <strong class="text-warning">{activeIssues}</strong></span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-error/20 px-4 py-2 rounded-full">
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-error"></span>
+            </span>
+            <span class="text-sm">Live — {new Date(snapshot.generatedAt).toLocaleTimeString()}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">Summary</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-white rounded-xl p-6 border border-neutral-200 shadow-sm">
+            <div class="text-sm font-medium text-neutral-600 mb-1">Total Epics</div>
+            <div class="text-3xl font-display font-bold text-primary">{epics.length}</div>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-neutral-200 shadow-sm">
+            <div class="text-sm font-medium text-neutral-600 mb-1">Total Stories</div>
+            <div class="text-3xl font-display font-bold text-primary">{stories.length}</div>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-neutral-200 shadow-sm">
+            <div class="text-sm font-medium text-neutral-600 mb-1">Total Issues</div>
+            <div class="text-3xl font-display font-bold text-primary">{issues.length}</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Status Totals -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">Status Breakdown</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          {Object.entries(epicTotals).map(([status, count]) => (
+            <div class="bg-white rounded-lg p-4 border border-neutral-200 shadow-sm">
+              <div class="text-xs font-medium text-neutral-500 mb-1">Epics</div>
+              <div class="text-2xl font-bold text-neutral-900 mb-1">{count}</div>
+              <span class={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold ${getChipClass(status)}`}>
+                {status}
+              </span>
+            </div>
+          ))}
+          {Object.entries(storyTotals).map(([status, count]) => (
+            <div class="bg-white rounded-lg p-4 border border-neutral-200 shadow-sm">
+              <div class="text-xs font-medium text-neutral-500 mb-1">Stories</div>
+              <div class="text-2xl font-bold text-neutral-900 mb-1">{count}</div>
+              <span class={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold ${getChipClass(status)}`}>
+                {status}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Epic Breakdown -->
+      <section>
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">Epic Breakdown</h2>
+        {epics.map((epic) => (
+          <article 
+            class="bg-white rounded-xl p-6 mb-6 border border-neutral-200 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer hover:-translate-y-0.5"
+            data-type="epic" 
+            data-id={epic.id} 
+            data-title={epic.title} 
+            data-status={epic.status} 
+            data-path={epic.path}
+            data-content={epic.content}
+          >
+            <header class="flex items-start justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-display font-semibold text-neutral-900">{epic.id}: {epic.title}</h3>
+              </div>
+              <span class={`inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide ${getChipClass(epic.status)}`}>
+                {epic.status}
+              </span>
+            </header>
+            
+            <div class="space-y-3">
+              {epic.stories.map((story) => (
+                <div 
+                  class="bg-neutral-50 rounded-lg p-4 border border-neutral-200 hover:bg-neutral-100 transition-colors cursor-pointer"
+                  data-type="story" 
+                  data-id={story.id} 
+                  data-status={story.status} 
+                  data-path={story.path}
+                  data-content={story.content}
+                >
+                  <div class="flex items-center justify-between mb-2">
+                    <strong class="text-neutral-900">{story.id}</strong>
+                    <span class={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold ${getChipClass(story.status)}`}>
+                      {story.status}
+                    </span>
+                  </div>
+                  <p class="text-sm text-neutral-600 font-mono">{story.path}</p>
+                  
+                  {story.issues.length > 0 && (
+                    <ul class="mt-3 space-y-2 pl-4">
+                      {story.issues.map((issue) => (
+                        <li 
+                          class="flex items-center justify-between text-sm hover:bg-neutral-200 p-2 rounded transition-colors cursor-pointer"
+                          data-type="issue" 
+                          data-id={issue.id} 
+                          data-status={issue.status} 
+                          data-path={issue.path}
+                          data-content={issue.content}
+                        >
+                          <div class="flex items-center gap-2">
+                            <span class="font-medium text-neutral-700">{issue.id}</span>
+                            <span class={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold ${getChipClass(issue.status)}`}>
+                              {issue.status}
+                            </span>
+                          </div>
+                          <small class="text-neutral-500 font-mono text-xs truncate max-w-xs">{issue.path}</small>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+    </div>
+
+    <!-- Drawer Overlay -->
+    <div 
+      id="drawerOverlay" 
+      class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+    ></div>
+
+    <!-- Drawer -->
+    <div 
+      id="drawer" 
+      class="fixed top-0 right-0 bottom-0 w-full sm:w-[600px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-50 overflow-y-auto"
+    >
+      <div class="sticky top-0 bg-gradient-to-r from-neutral-900 to-neutral-800 text-white p-6 flex items-center justify-between border-b border-neutral-700 z-10">
+        <h2 id="drawerTitle" class="text-2xl font-display font-bold">Item Details</h2>
+        <button 
+          id="drawerClose" 
+          class="text-white hover:text-neutral-300 transition-colors text-3xl leading-none p-2"
+        >
+          ×
+        </button>
+      </div>
+      
+      <div id="drawerContent" class="p-6">
+        <p class="text-neutral-600">Loading...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { marked } from 'marked';
+
+    const drawer = document.getElementById('drawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const drawerClose = document.getElementById('drawerClose');
+    const drawerTitle = document.getElementById('drawerTitle');
+    const drawerContent = document.getElementById('drawerContent');
+
+    async function openDrawer(type: string, data: any) {
+      if (!drawerTitle || !drawerContent || !drawer || !drawerOverlay) return;
+      
+      drawerTitle.textContent = data.id || 'Item Details';
+      drawerContent.innerHTML = '<div class="flex items-center justify-center py-12"><div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div></div>';
+      drawer.classList.remove('translate-x-full');
+      drawerOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      
+      // Use content from data attribute
+      const content = data.content || null;
+      drawerContent.innerHTML = await renderDrawerContent(type, data, content);
+    }
+
+    function closeDrawer() {
+      drawer?.classList.add('translate-x-full');
+      drawerOverlay?.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    function getChipClass(status: string): string {
+      const normalized = (status || 'todo').toLowerCase();
+      if (normalized === 'done') return 'bg-success/10 text-success border border-success/20';
+      if (normalized === 'in-progress') return 'bg-warning/10 text-warning border border-warning/20';
+      if (normalized === 'on-hold') return 'bg-error/10 text-error border border-error/20';
+      return 'bg-primary/10 text-primary border border-primary/20';
+    }
+
+    async function renderDrawerContent(type: string, data: any, markdownContent: string | null): Promise<string> {
+      const statusClass = getChipClass(data.status);
+      
+      let contentHtml = '';
+      if (markdownContent) {
+        // Remove frontmatter
+        const withoutFrontmatter = markdownContent.replace(/^---\n[\s\S]*?\n---\n/, '');
+        contentHtml = await marked.parse(withoutFrontmatter);
+      }
+      
+      return `
+        <div class="grid grid-cols-3 gap-4 mb-6">
+          <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200">
+            <div class="text-xs font-semibold text-neutral-500 uppercase mb-1">Type</div>
+            <div class="text-lg font-bold text-neutral-900">${type.toUpperCase()}</div>
+          </div>
+          <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200">
+            <div class="text-xs font-semibold text-neutral-500 uppercase mb-1">Status</div>
+            <span class="inline-block px-2 py-1 rounded-full text-xs font-semibold ${statusClass}">
+              ${data.status}
+            </span>
+          </div>
+          <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200">
+            <div class="text-xs font-semibold text-neutral-500 uppercase mb-1">ID</div>
+            <div class="text-lg font-bold text-neutral-900">${data.id}</div>
+          </div>
+        </div>
+
+        ${data.title ? `
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">Title</h3>
+            <p class="text-neutral-700">${data.title}</p>
+          </div>
+        ` : ''}
+
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">Path</h3>
+          <div class="bg-neutral-100 p-3 rounded-lg border border-neutral-200 font-mono text-sm text-neutral-700 break-all">
+            ${data.path}
+          </div>
+        </div>
+
+        ${contentHtml ? `
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">Content</h3>
+            <div class="prose prose-sm max-w-none bg-white p-6 rounded-lg border border-neutral-200">
+              ${contentHtml}
+            </div>
+          </div>
+        ` : `
+          <div class="bg-warning/5 border border-warning/20 rounded-lg p-4">
+            <p class="text-sm text-neutral-600">
+              ⚠️ Could not load content for this item.
+            </p>
+          </div>
+        `}
+      `;
+    }
+
+    // Event listeners
+    drawerClose?.addEventListener('click', closeDrawer);
+    drawerOverlay?.addEventListener('click', closeDrawer);
+
+    // Click handlers for items
+    document.querySelectorAll('[data-type="epic"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (target.closest('[data-type="story"], [data-type="issue"]')) return;
+        e.stopPropagation();
+        const element = e.currentTarget as HTMLElement;
+        openDrawer('epic', {
+          id: element.dataset.id,
+          title: element.dataset.title,
+          status: element.dataset.status,
+          path: element.dataset.path,
+          content: element.dataset.content,
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-type="story"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (target.closest('[data-type="issue"]')) return;
+        e.stopPropagation();
+        const element = e.currentTarget as HTMLElement;
+        openDrawer('story', {
+          id: element.dataset.id,
+          status: element.dataset.status,
+          path: element.dataset.path,
+          content: element.dataset.content,
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-type="issue"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const element = e.currentTarget as HTMLElement;
+        openDrawer('issue', {
+          id: element.dataset.id,
+          status: element.dataset.status,
+          path: element.dataset.path,
+          content: element.dataset.content,
+        });
+      });
+    });
+
+    // Auto-refresh (disabled when drawer is open)
+    setInterval(() => {
+      if (drawer?.classList.contains('translate-x-full')) {
+        window.location.reload();
+      }
+    }, 15000);
+  </script>
+</Layout>

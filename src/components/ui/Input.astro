@@ -1,0 +1,72 @@
+---
+export interface Props {
+  type?: 'text' | 'email' | 'password' | 'tel' | 'url' | 'number';
+  name: string;
+  id?: string;
+  label?: string;
+  placeholder?: string;
+  value?: string;
+  required?: boolean;
+  disabled?: boolean;
+  error?: string;
+  helperText?: string;
+  class?: string;
+}
+
+const {
+  type = 'text',
+  name,
+  id = name,
+  label,
+  placeholder,
+  value,
+  required = false,
+  disabled = false,
+  error,
+  helperText,
+  class: className = '',
+} = Astro.props;
+
+const inputClasses = `w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed ${
+  error
+    ? 'border-error focus:border-error focus:ring-error'
+    : 'border-neutral-300 focus:border-primary focus:ring-primary'
+} ${className}`;
+---
+
+<div class="space-y-1">
+  {label && (
+    <label for={id} class="block text-sm font-medium text-neutral-700">
+      {label}
+      {required && <span class="text-error ml-1">*</span>}
+    </label>
+  )}
+  
+  <input
+    type={type}
+    name={name}
+    id={id}
+    placeholder={placeholder}
+    value={value}
+    required={required}
+    disabled={disabled}
+    class={inputClasses}
+    aria-invalid={error ? 'true' : 'false'}
+    aria-describedby={error ? `${id}-error` : helperText ? `${id}-helper` : undefined}
+  />
+  
+  {error && (
+    <p id={`${id}-error`} class="text-sm text-error flex items-center gap-1">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+      </svg>
+      {error}
+    </p>
+  )}
+  
+  {helperText && !error && (
+    <p id={`${id}-helper`} class="text-sm text-neutral-500">
+      {helperText}
+    </p>
+  )}
+</div>
