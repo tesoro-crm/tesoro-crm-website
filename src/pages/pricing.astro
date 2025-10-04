@@ -3,110 +3,115 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 const plans = [
   {
-    name: 'Starter',
-    price: '€99',
-    period: '/maand',
-    description: 'Perfect voor individuele makelaars die net beginnen met captación',
+    name: t('pricing.plans.starter.name', locale),
+    price: t('pricing.plans.starter.price', locale),
+    period: t('pricing.plans.starter.period', locale),
+    description: t('pricing.plans.starter.description', locale),
     features: [
-      '50 AI-powered leads per maand',
-      '1 MLS integratie',
-      'Basis compliance dashboard',
-      'Email support',
-      '5GB opslag',
-      'Mobiele app',
+      t('pricing.plans.starter.feature_1', locale),
+      t('pricing.plans.starter.feature_2', locale),
+      t('pricing.plans.starter.feature_3', locale),
+      t('pricing.plans.starter.feature_4', locale),
+      t('pricing.plans.starter.feature_5', locale),
+      t('pricing.plans.starter.feature_6', locale),
     ],
-    cta: 'Start Gratis Trial',
+    cta: t('pricing.plans.starter.cta', locale),
     highlighted: false,
   },
   {
-    name: 'Professional',
-    price: '€249',
-    period: '/maand',
-    description: 'Voor groeiende teams die hun captación willen automatiseren',
+    name: t('pricing.plans.professional.name', locale),
+    price: t('pricing.plans.professional.price', locale),
+    period: t('pricing.plans.professional.period', locale),
+    description: t('pricing.plans.professional.description', locale),
     features: [
-      '200 AI-powered leads per maand',
-      '5 MLS integraties',
-      'Geavanceerd compliance dashboard',
-      'Priority support (24/7)',
-      '50GB opslag',
-      'Team collaboration tools',
-      'Custom branding',
-      'API toegang',
+      t('pricing.plans.professional.feature_1', locale),
+      t('pricing.plans.professional.feature_2', locale),
+      t('pricing.plans.professional.feature_3', locale),
+      t('pricing.plans.professional.feature_4', locale),
+      t('pricing.plans.professional.feature_5', locale),
+      t('pricing.plans.professional.feature_6', locale),
+      t('pricing.plans.professional.feature_7', locale),
+      t('pricing.plans.professional.feature_8', locale),
     ],
-    cta: 'Start Gratis Trial',
+    cta: t('pricing.plans.professional.cta', locale),
     highlighted: true,
-    badge: 'Meest Populair',
+    badge: t('pricing.plans.professional.badge', locale),
   },
   {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: '',
-    description: 'Voor grote kantoren met specifieke eisen en integraties',
+    name: t('pricing.plans.enterprise.name', locale),
+    price: t('pricing.plans.enterprise.price', locale),
+    period: t('pricing.plans.enterprise.period', locale),
+    description: t('pricing.plans.enterprise.description', locale),
     features: [
-      'Onbeperkte AI-powered leads',
-      'Onbeperkte MLS integraties',
-      'White-label oplossing',
-      'Dedicated account manager',
-      'Onbeperkte opslag',
-      'Custom workflows',
-      'SLA garantie',
-      'On-premise optie',
+      t('pricing.plans.enterprise.feature_1', locale),
+      t('pricing.plans.enterprise.feature_2', locale),
+      t('pricing.plans.enterprise.feature_3', locale),
+      t('pricing.plans.enterprise.feature_4', locale),
+      t('pricing.plans.enterprise.feature_5', locale),
+      t('pricing.plans.enterprise.feature_6', locale),
+      t('pricing.plans.enterprise.feature_7', locale),
+      t('pricing.plans.enterprise.feature_8', locale),
     ],
-    cta: 'Neem Contact Op',
+    cta: t('pricing.plans.enterprise.cta', locale),
     highlighted: false,
   },
 ];
 
 const addons = [
   {
-    name: 'Extra MLS Integraties',
-    price: '€49/maand per integratie',
-    description: 'Voeg extra MLS-platforms toe aan je account',
+    name: t('pricing.addons.addon_1_name', locale),
+    price: t('pricing.addons.addon_1_price', locale),
+    description: t('pricing.addons.addon_1_description', locale),
   },
   {
-    name: 'Premium Support',
-    price: '€99/maand',
-    description: '24/7 priority support met dedicated account manager',
+    name: t('pricing.addons.addon_2_name', locale),
+    price: t('pricing.addons.addon_2_price', locale),
+    description: t('pricing.addons.addon_2_description', locale),
   },
   {
-    name: 'White Label',
-    price: '€199/maand',
-    description: 'Volledig gebrand op jouw kantoor met custom domain',
+    name: t('pricing.addons.addon_3_name', locale),
+    price: t('pricing.addons.addon_3_price', locale),
+    description: t('pricing.addons.addon_3_description', locale),
   },
   {
-    name: 'API Access',
-    price: '€149/maand',
-    description: 'Volledige API toegang voor custom integraties',
+    name: t('pricing.addons.addon_4_name', locale),
+    price: t('pricing.addons.addon_4_price', locale),
+    description: t('pricing.addons.addon_4_description', locale),
   },
 ];
 
 const faqs = [
   {
-    question: 'Kan ik op elk moment upgraden of downgraden?',
-    answer: 'Ja, je kunt op elk moment je plan wijzigen. Upgrades zijn direct actief, bij downgrades blijf je tot het einde van je huidige periode op het hogere plan.',
+    question: t('pricing.faq.question_1', locale),
+    answer: t('pricing.faq.answer_1', locale),
   },
   {
-    question: 'Wat gebeurt er na de gratis trial?',
-    answer: 'Na 14 dagen wordt je automatisch doorgeschakeld naar het gekozen betaalde plan. Je kunt op elk moment tijdens de trial opzeggen zonder kosten.',
+    question: t('pricing.faq.question_2', locale),
+    answer: t('pricing.faq.answer_2', locale),
   },
   {
-    question: 'Zijn er setup kosten?',
-    answer: 'Nee, er zijn geen setup kosten. Je betaalt alleen het maandelijkse abonnement en eventuele add-ons die je kiest.',
+    question: t('pricing.faq.question_3', locale),
+    answer: t('pricing.faq.answer_3', locale),
   },
   {
-    question: 'Welke betaalmethoden accepteren jullie?',
-    answer: 'We accepteren alle gangbare creditcards (Visa, Mastercard, Amex), SEPA automatische incasso en bankoverschrijving voor Enterprise klanten.',
+    question: t('pricing.faq.question_4', locale),
+    answer: t('pricing.faq.answer_4', locale),
   },
   {
-    question: 'Is er een jaarlijks contract vereist?',
-    answer: 'Nee, al onze plannen zijn maandelijks opzegbaar. We bieden wel 20% korting bij jaarlijkse betaling.',
+    question: t('pricing.faq.question_5', locale),
+    answer: t('pricing.faq.answer_5', locale),
   },
   {
-    question: 'Wat is inbegrepen in de gratis trial?',
-    answer: 'De gratis trial geeft je volledige toegang tot alle features van het gekozen plan, inclusief AI leads, MLS integraties en compliance tools.',
+    question: t('pricing.faq.question_6', locale),
+    answer: t('pricing.faq.answer_6', locale),
   },
 ];
 ---
@@ -119,29 +124,29 @@ const faqs = [
   <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <Badge variant="primary" size="md" class="mb-6">
-        💰 Transparante Prijzen
+        {t('pricing.hero.badge', locale)}
       </Badge>
       
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
-        Kies het plan dat bij je past
+        {t('pricing.hero.title', locale)}
       </h1>
       
       <p class="text-lg sm:text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
-        Alle plannen inclusief 14 dagen gratis trial. Geen creditcard vereist. Cancel anytime.
+        {t('pricing.hero.description', locale)}
       </p>
 
       <div class="flex items-center justify-center gap-4 text-sm text-neutral-600">
         <span class="flex items-center gap-2">
           <span class="text-success text-xl">✓</span>
-          14 dagen gratis
+          {t('pricing.hero.trust_1', locale)}
         </span>
         <span class="flex items-center gap-2">
           <span class="text-success text-xl">✓</span>
-          Geen creditcard
+          {t('pricing.hero.trust_2', locale)}
         </span>
         <span class="flex items-center gap-2">
           <span class="text-success text-xl">✓</span>
-          Cancel anytime
+          {t('pricing.hero.trust_3', locale)}
         </span>
       </div>
     </div>
@@ -213,10 +218,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Optionele Add-ons
+          {t('pricing.addons.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Breid je plan uit met extra functionaliteit
+          {t('pricing.addons.description', locale)}
         </p>
       </div>
 
@@ -283,7 +288,7 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Veelgestelde vragen over prijzen
+          {t('pricing.faq.title', locale)}
         </h2>
       </div>
 
@@ -309,17 +314,17 @@ const faqs = [
   <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar om te starten?
+        {t('pricing.cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Begin vandaag nog met je gratis trial. Geen creditcard vereist.
+        {t('pricing.cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('pricing.cta.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/demo" class="border-2 border-white hover:bg-white hover:text-primary">
-          Boek een Demo
+          {t('pricing.cta.cta_secondary', locale)}
         </Button>
       </div>
     </div>
