@@ -3,6 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 const features = [
   {
@@ -23,9 +28,9 @@ const features = [
 ];
 
 const stats = [
-  { value: '3.2x', label: 'Meer captaties' },
-  { value: '67%', label: 'Tijdsbesparing' },
-  { value: '€12K', label: 'Extra omzet/maand' },
+  { value: '3.2x', label: t('home.stats.captaties', locale) },
+  { value: '67%', label: t('home.stats.tijdsbesparing', locale) },
+  { value: '€12K', label: t('home.stats.omzet', locale) },
 ];
 
 const testimonials = [
@@ -87,33 +92,41 @@ const faqs = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="text-center lg:text-left">
           <Badge variant="secondary" size="md" class="mb-6">
-            🚀 Nieuwe AI-powered captación tools
+            {t('home.hero.badge', locale)}
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-            Captación inteligente voor <span class="text-secondary">topmakelaar</span>
+            {t('home.hero.title', locale).split(' ').slice(0, -1).join(' ')} <span class="text-secondary">{t('home.hero.title', locale).split(' ').slice(-1)}</span>
           </h1>
           
           <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-            Automatiseer je leadgeneratie met AI, integreer naadloos met MLS-platforms en verhoog je captatie-ratio met 3.2x. Speciaal gebouwd voor ambitieuze makelaars.
+            {t('home.hero.description', locale)}
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button variant="secondary" size="lg" href="/signup">
-              Start Gratis Trial
+              {t('home.hero.cta_primary', locale)}
             </Button>
             <Button variant="outline" size="lg" href="/demo">
-              Bekijk Demo
+              {t('home.hero.cta_secondary', locale)}
             </Button>
           </div>
           
-          <div class="mt-8 flex items-center gap-4 justify-center lg:justify-start text-sm text-white/80">
-            <span>✓ Geen creditcard vereist</span>
-            <span>✓ 14 dagen gratis</span>
-            <span>✓ Cancel anytime</span>
+          <div class="flex items-center gap-6 mt-8 text-sm text-white/80 justify-center lg:justify-start">
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_1', locale)}
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_2', locale)}
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_3', locale)}
+            </span>
           </div>
         </div>
-        
         <div class="hidden lg:block">
           <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary-accent/20 rounded-2xl blur-2xl"></div>
