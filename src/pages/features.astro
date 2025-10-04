@@ -176,10 +176,10 @@ const comparison = [
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="primary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('cta.trial', locale)}
         </Button>
         <Button variant="outline" size="lg" href="/demo">
-          Bekijk Demo
+          {t('cta.demo', locale)}
         </Button>
       </div>
     </div>
@@ -230,7 +230,7 @@ const comparison = [
           Integraties met je favoriete tools
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Tesoro CRM integreert naadloos met 50+ platforms die je al gebruikt
+          {t('features_page.integrations_title', locale)}
         </p>
       </div>
 
@@ -258,10 +258,10 @@ const comparison = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Hoe Tesoro CRM zich verhoudt tot de concurrentie
+          {t('features_page.comparison_title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Zie waarom 500+ makelaars kiezen voor Tesoro CRM
+          {t('features_page.comparison_subtitle', locale)}
         </p>
       </div>
 
@@ -270,9 +270,9 @@ const comparison = [
           <thead>
             <tr class="border-b border-neutral-200">
               <th class="text-left p-4 font-semibold text-neutral-900">Feature</th>
-              <th class="p-4 font-semibold text-primary">Tesoro CRM</th>
-              <th class="p-4 font-semibold text-neutral-600">Concurrent A</th>
-              <th class="p-4 font-semibold text-neutral-600">Concurrent B</th>
+              <th class="p-4 font-semibold text-primary">{t('features_page.comparison_tesoro', locale)}</th>
+              <th class="p-4 font-semibold text-neutral-600">{t('features_page.comparison_competitor_a', locale)}</th>
+              <th class="p-4 font-semibold text-neutral-600">{t('features_page.comparison_competitor_b', locale)}</th>
             </tr>
           </thead>
           <tbody>
@@ -308,7 +308,7 @@ const comparison = [
 
       <div class="text-center mt-12">
         <Button variant="primary" size="lg" href="/signup">
-          Kies voor de Beste - Start Gratis
+          {t('features_page.final_cta_title', locale)}
         </Button>
       </div>
     </div>
@@ -321,11 +321,11 @@ const comparison = [
         Klaar om je workflow te automatiseren?
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Sluit je aan bij 500+ succesvolle makelaars die hun captación hebben verdrievoudigd met Tesoro CRM.
+        {t('features_page.final_cta_description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('cta.trial', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
           Bekijk Prijzen
