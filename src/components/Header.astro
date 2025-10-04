@@ -1,11 +1,12 @@
 ---
 import Button from './ui/Button.astro';
-import { getLocale, getLocalizedPath } from '../i18n/utils';
+import { getLocale, getLocalizedPath, loadTranslations, t } from '../i18n/utils';
 import { languages, languageFlags } from '../i18n/config';
 import type { Language } from '../i18n/config';
 
 const currentPath = Astro.url.pathname;
 const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 // Get base path without language prefix
 const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
@@ -26,7 +27,7 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
             href="/features" 
             class={`text-sm font-medium transition-colors ${currentPath === '/features' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Features
+            {t('nav.features', locale)}
           </a>
         </li>
         <li>
@@ -34,7 +35,7 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
             href="/pricing" 
             class={`text-sm font-medium transition-colors ${currentPath === '/pricing' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Pricing
+            {t('nav.pricing', locale)}
           </a>
         </li>
         <li>
@@ -42,7 +43,7 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
             href="/status" 
             class={`text-sm font-medium transition-colors ${currentPath === '/status' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Status
+            {t('nav.status', locale)}
           </a>
         </li>
       </ul>
@@ -77,7 +78,7 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
         </div>
         
         <Button variant="primary" size="sm" href="/signup">
-          Start Gratis Trial
+          {t('nav.cta', locale)}
         </Button>
       </div>
 
