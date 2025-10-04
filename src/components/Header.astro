@@ -40,8 +40,30 @@ const currentPath = Astro.url.pathname;
         </li>
       </ul>
 
-      <!-- CTA Button -->
-      <div class="hidden md:block">
+      <!-- Language Selector & CTA -->
+      <div class="hidden md:flex items-center gap-4">
+        <div class="relative">
+          <button 
+            id="language-button"
+            class="flex items-center gap-1 text-sm font-medium text-neutral-700 hover:text-primary transition-colors"
+            aria-label="Select language"
+          >
+            <span>🌐</span>
+            <span>NL</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div 
+            id="language-menu"
+            class="hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 z-50"
+          >
+            <a href="/" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇳🇱 Nederlands</a>
+            <a href="/en" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇬🇧 English</a>
+            <a href="/es" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇪🇸 Español</a>
+          </div>
+        </div>
+        
         <Button variant="primary" size="sm" href="/signup">
           Start Gratis Trial
         </Button>
@@ -88,10 +110,27 @@ const currentPath = Astro.url.pathname;
 </header>
 
 <script>
-  const button = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
+  // Mobile menu toggle
+  const mobileButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
   
-  button?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
+  mobileButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Language selector toggle
+  const languageButton = document.getElementById('language-button');
+  const languageMenu = document.getElementById('language-menu');
+  
+  languageButton?.addEventListener('click', () => {
+    languageMenu?.classList.toggle('hidden');
+  });
+
+  // Close language menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!languageButton?.contains(target) && !languageMenu?.contains(target)) {
+      languageMenu?.classList.add('hidden');
+    }
   });
 </script>
