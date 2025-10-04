@@ -1,7 +1,7 @@
 ---
 id: ISSUE-020
 story: STORY-009
-status: todo
+status: done
 assignee: Pricing Lead
 due-date: 2025-10-19
 labels:

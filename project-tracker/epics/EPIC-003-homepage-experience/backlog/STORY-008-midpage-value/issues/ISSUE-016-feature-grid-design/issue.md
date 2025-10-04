@@ -1,7 +1,7 @@
 ---
 id: ISSUE-016
 story: STORY-008
-status: todo
+status: done
 assignee: UI Designer
 due-date: 2025-10-14
 labels:
