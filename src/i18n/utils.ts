@@ -64,16 +64,38 @@ export function getLocale(astroLocale: string | undefined): Language {
   return defaultLang;
 }
 
+// URL translations per language
+const urlTranslations: Record<Language, Record<string, string>> = {
+  nl: {
+    '/pricing': '/prijzen',
+    '/features': '/kenmerken',
+    '/status': '/status',
+  },
+  en: {
+    '/pricing': '/pricing',
+    '/features': '/features',
+    '/status': '/status',
+  },
+  es: {
+    '/pricing': '/precios',
+    '/features': '/caracteristicas',
+    '/status': '/estado',
+  },
+};
+
 /**
- * Get localized path
+ * Get localized path with translated URL
  */
 export function getLocalizedPath(path: string, locale: Language): string {
+  // Translate the path for the target locale
+  const translatedPath = urlTranslations[locale]?.[path] || path;
+  
   if (locale === defaultLang) {
-    return path;
+    return translatedPath;
   }
   
   // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const cleanPath = translatedPath.startsWith('/') ? translatedPath.slice(1) : translatedPath;
   
   return `/${locale}${cleanPath ? `/${cleanPath}` : ''}`;
 }
