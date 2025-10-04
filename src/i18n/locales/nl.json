@@ -86,5 +86,98 @@
       "cta_primary": "Start Gratis Trial",
       "cta_secondary": "Bekijk Prijzen"
     }
+  },
+  "pricing": {
+    "hero": {
+      "badge": "💰 Transparante Prijzen",
+      "title": "Kies het plan dat bij je past",
+      "description": "Alle plannen inclusief 14 dagen gratis trial. Geen creditcard vereist. Cancel anytime.",
+      "trust_1": "14 dagen gratis",
+      "trust_2": "Geen creditcard",
+      "trust_3": "Cancel anytime"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "€99",
+        "period": "/maand",
+        "description": "Perfect voor individuele makelaars die net beginnen met captación",
+        "cta": "Start Gratis Trial",
+        "feature_1": "50 AI-powered leads per maand",
+        "feature_2": "1 MLS integratie",
+        "feature_3": "Basis compliance dashboard",
+        "feature_4": "Email support",
+        "feature_5": "5GB opslag",
+        "feature_6": "Mobiele app"
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "€249",
+        "period": "/maand",
+        "description": "Voor groeiende teams die hun captación willen automatiseren",
+        "badge": "Meest Populair",
+        "cta": "Start Gratis Trial",
+        "feature_1": "200 AI-powered leads per maand",
+        "feature_2": "5 MLS integraties",
+        "feature_3": "Geavanceerd compliance dashboard",
+        "feature_4": "Priority support (24/7)",
+        "feature_5": "50GB opslag",
+        "feature_6": "Team collaboration tools",
+        "feature_7": "Custom branding",
+        "feature_8": "API toegang"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "Voor grote kantoren met specifieke eisen en integraties",
+        "cta": "Neem Contact Op",
+        "feature_1": "Onbeperkte AI-powered leads",
+        "feature_2": "Onbeperkte MLS integraties",
+        "feature_3": "White-label oplossing",
+        "feature_4": "Dedicated account manager",
+        "feature_5": "Onbeperkte opslag",
+        "feature_6": "Custom workflows",
+        "feature_7": "SLA garantie",
+        "feature_8": "On-premise optie"
+      }
+    },
+    "addons": {
+      "title": "Extra opties",
+      "description": "Breid je plan uit met deze add-ons",
+      "addon_1_name": "Extra MLS Integraties",
+      "addon_1_price": "€49/maand per integratie",
+      "addon_1_description": "Voeg extra MLS-platforms toe aan je account",
+      "addon_2_name": "Premium Support",
+      "addon_2_price": "€99/maand",
+      "addon_2_description": "24/7 priority support met dedicated account manager",
+      "addon_3_name": "White Label",
+      "addon_3_price": "€199/maand",
+      "addon_3_description": "Volledig gebrand op jouw kantoor met custom domain",
+      "addon_4_name": "API Access",
+      "addon_4_price": "€149/maand",
+      "addon_4_description": "Volledige API toegang voor custom integraties"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen over prijzen",
+      "question_1": "Kan ik van plan wisselen?",
+      "answer_1": "Ja, je kunt op elk moment upgraden of downgraden. De wijziging gaat direct in en we rekenen pro-rata af.",
+      "question_2": "Wat gebeurt er na de trial?",
+      "answer_2": "Na 14 dagen wordt je automatisch doorgeschakeld naar het gekozen plan. Je ontvangt vooraf een herinnering.",
+      "question_3": "Zijn er setup kosten?",
+      "answer_3": "Nee, alle plannen zijn zonder setup kosten. Je betaalt alleen het maandelijkse abonnement.",
+      "question_4": "Welke betaalmethoden accepteren jullie?",
+      "answer_4": "We accepteren alle gangbare creditcards, iDEAL, en SEPA incasso voor jaarlijkse betalingen.",
+      "question_5": "Is er korting bij jaarlijkse betaling?",
+      "answer_5": "Ja, bij jaarlijkse betaling krijg je 2 maanden gratis (16% korting).",
+      "question_6": "Kan ik mijn data exporteren?",
+      "answer_6": "Ja, je kunt op elk moment al je data exporteren in CSV of JSON formaat."
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "description": "Start vandaag nog met je 14 dagen gratis trial. Geen creditcard vereist.",
+      "cta_primary": "Start Gratis Trial",
+      "cta_secondary": "Neem Contact Op"
+    }
   }
 }
