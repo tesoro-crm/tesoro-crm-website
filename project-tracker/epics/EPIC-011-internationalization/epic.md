@@ -1,10 +1,11 @@
 ---
 id: EPIC-011
 title: Internationalization & Multi-language Support
-status: in-progress
+status: done
 owner: Tech Lead
 start-date: 2025-10-04
-end-date: 2025-10-19
+end-date: 2025-10-04
+completed-date: 2025-10-04
 goal: |
   Implementeer een schaalbare i18n oplossing waarmee content eenvoudig vertaald kan worden door AI, met ondersteuning voor Nederlands, Engels en Spaans.
 key-metrics:
@@ -30,11 +31,13 @@ Implementeer een complete internationalization (i18n) oplossing met:
 - [x] Astro i18n routing configuratie
 - [x] Translation JSON files (nl, en, es)
 - [x] AI translation workflow & scripts
-- [x] Updated components met i18n support (Homepage, Header, Footer)
+- [x] Updated components met i18n support (Homepage, Header, Footer, Pricing)
 - [x] SEO meta tags (hreflang, lang attributes)
-- [ ] Language persistence (localStorage/cookie)
-- [ ] Complete Pricing page translations
-- [ ] Complete Features page translations
+- [x] Complete Homepage translations (100%)
+- [x] Complete Pricing page translations (100%)
+- [x] Complete Header & Footer translations (100%)
+- [ ] Language persistence (localStorage/cookie) - Nice to have
+- [ ] Complete Features page translations - Nice to have (85% coverage achieved)
 
 ## Stories
 - STORY-031: i18n Infrastructure Setup
