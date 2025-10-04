@@ -13,6 +13,9 @@ const locale: Language = getLocale(Astro.currentLocale);
 const currentPath = Astro.url.pathname;
 const alternateLinks = getAlternateLinks(currentPath);
 
+// Get site URL from environment or use current origin
+const siteUrl = import.meta.env.SITE || Astro.url.origin;
+
 const {
   title = 'Tesoro CRM - Captación inteligente para profesionales inmobiliarios',
   description = 'Automatiza la captación de propiedades con IA y maximiza tu ROI inmobiliario',
@@ -32,20 +35,20 @@ const {
 		<meta name="description" content={description} />
 		
 		<!-- Canonical URL -->
-		<link rel="canonical" href={`https://tesoro-crm-website.pages.dev${currentPath}`} />
+		<link rel="canonical" href={`${siteUrl}${currentPath}`} />
 		
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:locale" content={locale === 'es' ? 'es_ES' : locale === 'en' ? 'en_US' : 'nl_NL'} />
-		<meta property="og:url" content={`https://tesoro-crm-website.pages.dev${currentPath}`} />
+		<meta property="og:url" content={`${siteUrl}${currentPath}`} />
 		
 		<!-- Hreflang Tags for SEO -->
 		{alternateLinks.map(({ lang, href }) => (
-			<link rel="alternate" hreflang={lang} href={`https://tesoro-crm-website.pages.dev${href}`} />
+			<link rel="alternate" hreflang={lang} href={`${siteUrl}${href}`} />
 		))}
-		<link rel="alternate" hreflang="x-default" href="https://tesoro-crm-website.pages.dev/" />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
