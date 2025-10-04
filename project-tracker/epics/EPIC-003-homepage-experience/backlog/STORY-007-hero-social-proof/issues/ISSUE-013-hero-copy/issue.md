@@ -13,9 +13,9 @@ labels:
 Schrijf hero headline, subheadline en microcopy (NL/EN/ES) met focus op captación, MLS integraties en compliance voordelen. Koppel aan UVP uit `EPIC-001` deliverables.
 
 ## Checklist
-- [ ] Headline + subheadline drie talen
-- [ ] CTA copy afgestemd op trial/demo flows
-- [ ] Messaging afgestemd met Product Marketing
+- [x] Headline + subheadline drie talen
+- [x] CTA copy afgestemd op trial/demo flows
+- [x] Messaging afgestemd met Product Marketing
 
 ## Logboek
 | Datum | Opmerking |
