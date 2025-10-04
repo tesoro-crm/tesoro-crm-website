@@ -16,9 +16,25 @@ const alternateLinks = getAlternateLinks(currentPath);
 // Get site URL from environment or use current origin
 const siteUrl = import.meta.env.SITE || Astro.url.origin;
 
+// Default meta tags per language
+const defaultMeta = {
+  es: {
+    title: 'Tesoro CRM - Captación inteligente para profesionales inmobiliarios',
+    description: 'Automatiza la captación de propiedades con IA y maximiza tu ROI inmobiliario',
+  },
+  en: {
+    title: 'Tesoro CRM - Intelligent Lead Generation for Real Estate Professionals',
+    description: 'Automate property lead generation with AI and maximize your real estate ROI',
+  },
+  nl: {
+    title: 'Tesoro CRM - Intelligente Leadgeneratie voor Vastgoedprofessionals',
+    description: 'Automatiseer vastgoed leadgeneratie met AI en maximaliseer je ROI',
+  },
+};
+
 const {
-  title = 'Tesoro CRM - Captación inteligente para profesionales inmobiliarios',
-  description = 'Automatiza la captación de propiedades con IA y maximiza tu ROI inmobiliario',
+  title = defaultMeta[locale].title,
+  description = defaultMeta[locale].description,
 } = Astro.props;
 ---
 
