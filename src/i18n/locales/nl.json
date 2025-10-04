@@ -179,5 +179,54 @@
       "cta_primary": "Start Gratis Trial",
       "cta_secondary": "Neem Contact Op"
     }
+  },
+  "features": {
+    "hero": {
+      "badge": "✨ Alle Features",
+      "title": "Alles wat je nodig hebt voor succesvolle captación",
+      "description": "Van AI-powered lead generatie tot compliance management - Tesoro CRM biedt alle tools die je nodig hebt om je vastgoed business te laten groeien."
+    },
+    "categories": {
+      "ai": {
+        "name": "AI-Powered Captación",
+        "description": "Intelligente lead generatie die kansrijke woningen identificeert voordat ze op de markt komen",
+        "feature_1_title": "Predictive Lead Scoring",
+        "feature_1_description": "AI analyseert marktdata en voorspelt welke woningen binnenkort verkocht worden",
+        "feature_2_title": "Automated Outreach",
+        "feature_2_description": "Gepersonaliseerde emails en berichten worden automatisch verstuurd op het juiste moment",
+        "feature_3_title": "Smart Follow-ups",
+        "feature_3_description": "Intelligente herinneringen en follow-up suggesties gebaseerd op gedrag"
+      },
+      "mls": {
+        "name": "MLS Integraties",
+        "description": "Naadloze synchronisatie met alle grote MLS-platforms voor realtime marktinzicht",
+        "feature_1_title": "Realtime Sync",
+        "feature_1_description": "Automatische synchronisatie van listings, updates en marktdata",
+        "feature_2_title": "Multi-Platform Support",
+        "feature_2_description": "Integratie met Funda, Idealista, Kyero, Fotocasa en 20+ andere platforms",
+        "feature_3_title": "Duplicate Detection",
+        "feature_3_description": "Automatische detectie en merge van dubbele listings"
+      },
+      "compliance": {
+        "name": "Compliance & GDPR",
+        "description": "Automatische compliance checks en documentbeheer voor zorgeloze naleving",
+        "feature_1_title": "GDPR Dashboard",
+        "feature_1_description": "Overzicht van alle data processing activities en consent management",
+        "feature_2_title": "Document Vault",
+        "feature_2_description": "Veilige opslag van contracten, ID's en andere gevoelige documenten",
+        "feature_3_title": "Audit Trail",
+        "feature_3_description": "Volledige logging van alle acties voor compliance audits"
+      },
+      "team": {
+        "name": "Team Collaboration",
+        "description": "Werk samen met je team, deel leads en track performance",
+        "feature_1_title": "Shared Inbox",
+        "feature_1_description": "Centraal overzicht van alle communicatie met leads en klanten",
+        "feature_2_title": "Task Management",
+        "feature_2_description": "Assign taken, set deadlines en track voortgang",
+        "feature_3_title": "Performance Analytics",
+        "feature_3_description": "Real-time dashboards met team en individuele performance metrics"
+      }
+    }
   }
 }

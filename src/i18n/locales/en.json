@@ -179,5 +179,54 @@
       "cta_primary": "Start Free Trial",
       "cta_secondary": "Contact Us"
     }
+  },
+  "features": {
+    "hero": {
+      "badge": "✨ All Features",
+      "title": "Everything you need for successful lead generation",
+      "description": "From AI-powered lead generation to compliance management - Tesoro CRM offers all the tools you need to grow your real estate business."
+    },
+    "categories": {
+      "ai": {
+        "name": "AI-Powered Lead Generation",
+        "description": "Intelligent lead generation that identifies promising properties before they hit the market",
+        "feature_1_title": "Predictive Lead Scoring",
+        "feature_1_description": "AI analyzes market data and predicts which properties will be sold soon",
+        "feature_2_title": "Automated Outreach",
+        "feature_2_description": "Personalized emails and messages are automatically sent at the right time",
+        "feature_3_title": "Smart Follow-ups",
+        "feature_3_description": "Intelligent reminders and follow-up suggestions based on behavior"
+      },
+      "mls": {
+        "name": "MLS Integrations",
+        "description": "Seamless synchronization with all major MLS platforms for real-time market insights",
+        "feature_1_title": "Realtime Sync",
+        "feature_1_description": "Automatic synchronization of listings, updates and market data",
+        "feature_2_title": "Multi-Platform Support",
+        "feature_2_description": "Integration with Funda, Idealista, Kyero, Fotocasa and 20+ other platforms",
+        "feature_3_title": "Duplicate Detection",
+        "feature_3_description": "Automatic detection and merging of duplicate listings"
+      },
+      "compliance": {
+        "name": "Compliance & GDPR",
+        "description": "Automatic compliance checks and document management for worry-free compliance",
+        "feature_1_title": "GDPR Dashboard",
+        "feature_1_description": "Overview of all data processing activities and consent management",
+        "feature_2_title": "Document Vault",
+        "feature_2_description": "Secure storage of contracts, IDs and other sensitive documents",
+        "feature_3_title": "Audit Trail",
+        "feature_3_description": "Complete logging of all actions for compliance audits"
+      },
+      "team": {
+        "name": "Team Collaboration",
+        "description": "Work together with your team, share leads and track performance",
+        "feature_1_title": "Shared Inbox",
+        "feature_1_description": "Central overview of all communication with leads and customers",
+        "feature_2_title": "Task Management",
+        "feature_2_description": "Assign tasks, set deadlines and track progress",
+        "feature_3_title": "Performance Analytics",
+        "feature_3_description": "Real-time dashboards with team and individual performance metrics"
+      }
+    }
   }
 }
