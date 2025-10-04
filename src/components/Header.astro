@@ -1,0 +1,97 @@
+---
+import Button from './ui/Button.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white border-b border-neutral-200 shadow-sm">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="text-2xl font-display font-bold text-primary hover:text-primary-dark transition-colors">
+        Tesoro CRM
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li>
+          <a 
+            href="/features" 
+            class={`text-sm font-medium transition-colors ${currentPath === '/features' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+          >
+            Features
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/pricing" 
+            class={`text-sm font-medium transition-colors ${currentPath === '/pricing' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+          >
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/status" 
+            class={`text-sm font-medium transition-colors ${currentPath === '/status' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+          >
+            Status
+          </a>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <Button variant="primary" size="sm" href="/signup">
+          Start Gratis Trial
+        </Button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="md:hidden p-2 text-neutral-700 hover:text-primary"
+        aria-label="Menu"
+        id="mobile-menu-button"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden pb-4" id="mobile-menu">
+      <ul class="space-y-2">
+        <li>
+          <a href="/features" class="block py-2 text-neutral-700 hover:text-primary">
+            Features
+          </a>
+        </li>
+        <li>
+          <a href="/pricing" class="block py-2 text-neutral-700 hover:text-primary">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="/status" class="block py-2 text-neutral-700 hover:text-primary">
+            Status
+          </a>
+        </li>
+        <li class="pt-2">
+          <Button variant="primary" size="sm" href="/signup" fullWidth>
+            Start Gratis Trial
+          </Button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
