@@ -1,7 +1,7 @@
 ---
 id: EPIC-005
 title: Product & Features Experience
-status: proposed
+status: done
 owner: UX Lead
 start-date: 2025-10-10
 end-date: 2025-11-07
@@ -20,9 +20,9 @@ dependencies:
 Volgt `tesoro-crm-website-blueprint.md#5`, inclusief feature categorieën, integraties, AI-assistent en vergelijkingsmatrix.
 
 ## Deliverables
-- [ ] Feature overzichtspagina + detail templates
-- [ ] Integrations hub (logo grid + CTA)
-- [ ] Comparison matrix content en design
+- [x] Feature overzichtspagina + detail templates
+- [x] Integrations hub (logo grid + CTA)
+- [x] Comparison matrix content en design
 
 ## Stories
 - STORY-013
