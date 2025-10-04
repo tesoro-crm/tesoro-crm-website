@@ -3,71 +3,76 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 const features = [
   {
-    title: 'Captación Automatizada',
-    description: 'IA-gestuurde lead generatie identificeert kansrijke woningen voordat ze op de markt komen.',
+    title: t('home.features.feature_1_title', locale),
+    description: t('home.features.feature_1_description', locale),
     icon: '🎯',
   },
   {
-    title: 'MLS Integratie',
-    description: 'Directe synchronisatie met alle grote MLS-platforms voor realtime marktinzicht.',
+    title: t('home.features.feature_2_title', locale),
+    description: t('home.features.feature_2_description', locale),
     icon: '🔄',
   },
   {
-    title: 'Compliance Dashboard',
-    description: 'Automatische AVG/GDPR checks en documentbeheer voor zorgeloze naleving.',
+    title: t('home.features.feature_3_title', locale),
+    description: t('home.features.feature_3_description', locale),
     icon: '✓',
   },
 ];
 
 const stats = [
-  { value: '3.2x', label: 'Meer captaties' },
-  { value: '67%', label: 'Tijdsbesparing' },
-  { value: '€12K', label: 'Extra omzet/maand' },
+  { value: '3.2x', label: t('home.stats.captaties', locale) },
+  { value: '67%', label: t('home.stats.tijdsbesparing', locale) },
+  { value: '€12K', label: t('home.stats.omzet', locale) },
 ];
 
 const testimonials = [
   {
-    quote: 'Tesoro CRM heeft onze captatie-ratio verdrievoudigd. De AI identificeert kansrijke woningen voordat ze op de markt komen.',
-    author: 'Maria González',
-    role: 'Senior Makelaar',
-    company: 'Costa del Sol Properties',
+    quote: t('home.testimonials.testimonial_1_quote', locale),
+    author: t('home.testimonials.testimonial_1_author', locale),
+    role: t('home.testimonials.testimonial_1_role', locale),
+    company: t('home.testimonials.testimonial_1_company', locale),
     image: '👤',
   },
   {
-    quote: 'De MLS integratie bespaart ons 10+ uur per week. Alles synchroniseert automatisch, geen dubbel werk meer.',
-    author: 'Jan Bakker',
-    role: 'Kantoormanager',
-    company: 'Amsterdam Makelaars',
+    quote: t('home.testimonials.testimonial_2_quote', locale),
+    author: t('home.testimonials.testimonial_2_author', locale),
+    role: t('home.testimonials.testimonial_2_role', locale),
+    company: t('home.testimonials.testimonial_2_company', locale),
     image: '👤',
   },
   {
-    quote: 'GDPR compliance was altijd een hoofdpijn. Nu regelt Tesoro alles automatisch, inclusief documentbeheer.',
-    author: 'Sophie Dubois',
-    role: 'Compliance Officer',
-    company: 'Brussels Real Estate Group',
+    quote: t('home.testimonials.testimonial_3_quote', locale),
+    author: t('home.testimonials.testimonial_3_author', locale),
+    role: t('home.testimonials.testimonial_3_role', locale),
+    company: t('home.testimonials.testimonial_3_company', locale),
     image: '👤',
   },
 ];
 
 const faqs = [
   {
-    question: 'Hoe lang duurt de implementatie?',
-    answer: 'De meeste klanten zijn binnen 24 uur operationeel. Onze onboarding wizard importeert je bestaande data en configureert alles automatisch.',
+    question: t('home.faq.question_1', locale),
+    answer: t('home.faq.answer_1', locale),
   },
   {
-    question: 'Welke MLS-platforms worden ondersteund?',
-    answer: 'We integreren met alle grote platforms: Funda, Idealista, Kyero, Fotocasa, en 20+ andere. Custom integraties zijn mogelijk.',
+    question: t('home.faq.question_2', locale),
+    answer: t('home.faq.answer_2', locale),
   },
   {
-    question: 'Is mijn data veilig?',
-    answer: 'Absoluut. We zijn GDPR-compliant, gebruiken end-to-end encryptie en hosten in EU datacenters. SOC 2 Type II gecertificeerd.',
+    question: t('home.faq.question_3', locale),
+    answer: t('home.faq.answer_3', locale),
   },
   {
-    question: 'Kan ik op elk moment opzeggen?',
-    answer: 'Ja, geen lock-in contracten. Je kunt maandelijks opzeggen en je data exporteren wanneer je wilt.',
+    question: t('home.faq.question_4', locale),
+    answer: t('home.faq.answer_4', locale),
   },
 ];
 ---
@@ -87,33 +92,41 @@ const faqs = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="text-center lg:text-left">
           <Badge variant="secondary" size="md" class="mb-6">
-            🚀 Nieuwe AI-powered captación tools
+            {t('home.hero.badge', locale)}
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-            Captación inteligente voor <span class="text-secondary">topmakelaar</span>
+            {t('home.hero.title', locale).split(' ').slice(0, -1).join(' ')} <span class="text-secondary">{t('home.hero.title', locale).split(' ').slice(-1)}</span>
           </h1>
           
           <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-            Automatiseer je leadgeneratie met AI, integreer naadloos met MLS-platforms en verhoog je captatie-ratio met 3.2x. Speciaal gebouwd voor ambitieuze makelaars.
+            {t('home.hero.description', locale)}
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button variant="secondary" size="lg" href="/signup">
-              Start Gratis Trial
+              {t('home.hero.cta_primary', locale)}
             </Button>
             <Button variant="outline" size="lg" href="/demo">
-              Bekijk Demo
+              {t('home.hero.cta_secondary', locale)}
             </Button>
           </div>
           
-          <div class="mt-8 flex items-center gap-4 justify-center lg:justify-start text-sm text-white/80">
-            <span>✓ Geen creditcard vereist</span>
-            <span>✓ 14 dagen gratis</span>
-            <span>✓ Cancel anytime</span>
+          <div class="flex items-center gap-6 mt-8 text-sm text-white/80 justify-center lg:justify-start">
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_1', locale)}
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_2', locale)}
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="text-secondary text-xl">✓</span>
+              {t('home.hero.trust_3', locale)}
+            </span>
           </div>
         </div>
-        
         <div class="hidden lg:block">
           <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary-accent/20 rounded-2xl blur-2xl"></div>
@@ -145,7 +158,7 @@ const faqs = [
   <!-- Social Proof -->
   <section class="bg-neutral-50 py-12">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
-      <p class="text-neutral-600 mb-6">Vertrouwd door 500+ makelaars in Nederland, België en Spanje</p>
+      <p class="text-neutral-600 mb-6">{t('home.social_proof.title', locale)}</p>
       <div class="flex flex-wrap items-center justify-center gap-8 opacity-60">
         <div class="text-2xl font-bold text-neutral-400">Funda</div>
         <div class="text-2xl font-bold text-neutral-400">Idealista</div>
@@ -160,10 +173,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Alles wat je nodig hebt voor succesvolle captación
+          {t('home.features.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Van AI-powered leadgeneratie tot compliance management - Tesoro CRM automatiseert je workflow end-to-end.
+          {t('home.features.description', locale)}
         </p>
       </div>
       
@@ -188,10 +201,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Wat onze klanten zeggen
+          {t('home.testimonials.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          500+ makelaars vertrouwen op Tesoro CRM voor hun dagelijkse captación workflow
+          {t('home.testimonials.subtitle', locale)}
         </p>
       </div>
       
@@ -219,30 +232,30 @@ const faqs = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <Badge variant="primary" size="md" class="mb-4">
-            🎥 Product Demo
+            {t('home.demo.badge', locale)}
           </Badge>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Zie Tesoro CRM in actie
+            {t('home.demo.title', locale)}
           </h2>
           <p class="text-lg text-neutral-600 mb-8">
-            Ontdek hoe onze AI-powered captación tools je helpen om meer woningen te vinden, sneller deals te sluiten en compliant te blijven.
+            {t('home.demo.description', locale)}
           </p>
           <ul class="space-y-4 mb-8">
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">AI lead scoring en predictive analytics</span>
+              <span class="text-neutral-700">{t('home.demo.feature_1', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Realtime MLS synchronisatie</span>
+              <span class="text-neutral-700">{t('home.demo.feature_2', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Geautomatiseerde compliance checks</span>
+              <span class="text-neutral-700">{t('home.demo.feature_3', locale)}</span>
             </li>
           </ul>
           <Button variant="primary" size="lg" href="/demo">
-            Boek een Demo
+            {t('home.demo.cta', locale)}
           </Button>
         </div>
         <div>
@@ -259,10 +272,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Veelgestelde vragen
+          {t('home.faq.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600">
-          Alles wat je moet weten over Tesoro CRM
+          {t('home.faq.subtitle', locale)}
         </p>
       </div>
       
@@ -276,9 +289,9 @@ const faqs = [
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-neutral-600 mb-4">Nog meer vragen?</p>
+        <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
         <Button variant="outline" href="/contact">
-          Neem Contact Op
+          {t('home.faq.contact_cta', locale)}
         </Button>
       </div>
     </div>
@@ -288,17 +301,17 @@ const faqs = [
   <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar om je captatie te verdrievoudigen?
+        {t('home.final_cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Sluit je aan bij 500+ succesvolle makelaars die hun workflow hebben geautomatiseerd met Tesoro CRM.
+        {t('home.final_cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('home.final_cta.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
-          Bekijk Prijzen
+          {t('home.final_cta.cta_secondary', locale)}
         </Button>
       </div>
     </div>

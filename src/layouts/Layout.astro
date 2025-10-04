@@ -1,11 +1,17 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getLocale, getAlternateLinks } from '../i18n/utils';
+import type { Language } from '../i18n/config';
 
 export interface Props {
   title?: string;
   description?: string;
 }
+
+const locale: Language = getLocale(Astro.currentLocale);
+const currentPath = Astro.url.pathname;
+const alternateLinks = getAlternateLinks(currentPath);
 
 const {
   title = 'Tesoro CRM - Captación inteligente para profesionales inmobiliarios',
@@ -14,7 +20,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="es" class="scroll-smooth">
+<html lang={locale} class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,6 +35,13 @@ const {
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
+		<meta property="og:locale" content={locale === 'nl' ? 'nl_NL' : locale === 'en' ? 'en_US' : 'es_ES'} />
+		
+		<!-- Hreflang Tags for SEO -->
+		{alternateLinks.map(({ lang, href }) => (
+			<link rel="alternate" hreflang={lang} href={`https://tesoro-crm-website.pages.dev${href}`} />
+		))}
+		<link rel="alternate" hreflang="x-default" href="https://tesoro-crm-website.pages.dev/" />
 		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />

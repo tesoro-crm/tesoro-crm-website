@@ -1,7 +1,15 @@
 ---
 import Button from './ui/Button.astro';
+import { getLocale, getLocalizedPath, loadTranslations, t } from '../i18n/utils';
+import { languages, languageFlags } from '../i18n/config';
+import type { Language } from '../i18n/config';
 
 const currentPath = Astro.url.pathname;
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+// Get base path without language prefix
+const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
 ---
 
 <header class="sticky top-0 z-50 bg-white border-b border-neutral-200 shadow-sm">
@@ -19,7 +27,7 @@ const currentPath = Astro.url.pathname;
             href="/features" 
             class={`text-sm font-medium transition-colors ${currentPath === '/features' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Features
+            {t('nav.features', locale)}
           </a>
         </li>
         <li>
@@ -27,7 +35,7 @@ const currentPath = Astro.url.pathname;
             href="/pricing" 
             class={`text-sm font-medium transition-colors ${currentPath === '/pricing' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Pricing
+            {t('nav.pricing', locale)}
           </a>
         </li>
         <li>
@@ -35,7 +43,7 @@ const currentPath = Astro.url.pathname;
             href="/status" 
             class={`text-sm font-medium transition-colors ${currentPath === '/status' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Status
+            {t('nav.status', locale)}
           </a>
         </li>
       </ul>
@@ -49,23 +57,28 @@ const currentPath = Astro.url.pathname;
             aria-label="Select language"
           >
             <span>🌐</span>
-            <span>NL</span>
+            <span>{locale.toUpperCase()}</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
           <div 
             id="language-menu"
-            class="hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 z-50"
+            class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 z-50"
           >
-            <a href="/" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇳🇱 Nederlands</a>
-            <a href="/en" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇬🇧 English</a>
-            <a href="/es" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50">🇪🇸 Español</a>
+            {Object.entries(languages).map(([lang, name]) => (
+              <a 
+                href={getLocalizedPath(basePath, lang as Language)} 
+                class={`block px-4 py-2 text-sm hover:bg-neutral-50 ${locale === lang ? 'text-primary font-semibold' : 'text-neutral-700'}`}
+              >
+                {languageFlags[lang as Language]} {name}
+              </a>
+            ))}
           </div>
         </div>
         
         <Button variant="primary" size="sm" href="/signup">
-          Start Gratis Trial
+          {t('nav.cta', locale)}
         </Button>
       </div>
 

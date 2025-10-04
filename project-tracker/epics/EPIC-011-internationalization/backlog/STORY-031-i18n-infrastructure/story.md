@@ -1,7 +1,7 @@
 ---
 id: STORY-031
 title: i18n Infrastructure Setup
-status: proposed
+status: done
 epic: EPIC-011
 assignee: Tech Lead
 priority: high
@@ -13,11 +13,11 @@ Als developer wil ik een schaalbare i18n infrastructuur zodat we eenvoudig nieuw
 
 ## Acceptance Criteria
 - [x] Astro i18n routing geconfigureerd (`/`, `/en`, `/es`)
-- [ ] Translation file structure opgezet (`src/i18n/locales/`)
-- [ ] Helper functions voor translations (`t()`, `getLocale()`)
-- [ ] Language configuration file
-- [ ] Layout component updated met lang attribute
-- [ ] Type-safe translation keys (TypeScript)
+- [x] Translation file structure opgezet (`src/i18n/locales/`)
+- [x] Helper functions voor translations (`t()`, `getLocale()`)
+- [x] Language configuration file
+- [x] Layout component updated met lang attribute
+- [x] Type-safe translation keys (TypeScript)
 
 ## Technical Tasks
 1. Configure Astro i18n routing in `astro.config.mjs`
