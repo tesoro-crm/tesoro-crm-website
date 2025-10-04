@@ -158,7 +158,7 @@ const faqs = [
   <!-- Social Proof -->
   <section class="bg-neutral-50 py-12">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
-      <p class="text-neutral-600 mb-6">Vertrouwd door 500+ makelaars in Nederland, België en Spanje</p>
+      <p class="text-neutral-600 mb-6">{t('home.social_proof.title', locale)}</p>
       <div class="flex flex-wrap items-center justify-center gap-8 opacity-60">
         <div class="text-2xl font-bold text-neutral-400">Funda</div>
         <div class="text-2xl font-bold text-neutral-400">Idealista</div>
@@ -173,10 +173,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Alles wat je nodig hebt voor succesvolle captación
+          {t('home.features.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Van AI-powered leadgeneratie tot compliance management - Tesoro CRM automatiseert je workflow end-to-end.
+          {t('home.features.description', locale)}
         </p>
       </div>
       
@@ -201,10 +201,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Wat onze klanten zeggen
+          {t('home.testimonials.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          500+ makelaars vertrouwen op Tesoro CRM voor hun dagelijkse captación workflow
+          {t('home.testimonials.subtitle', locale)}
         </p>
       </div>
       
@@ -232,30 +232,30 @@ const faqs = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <Badge variant="primary" size="md" class="mb-4">
-            🎥 Product Demo
+            {t('home.demo.badge', locale)}
           </Badge>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Zie Tesoro CRM in actie
+            {t('home.demo.title', locale)}
           </h2>
           <p class="text-lg text-neutral-600 mb-8">
-            Ontdek hoe onze AI-powered captación tools je helpen om meer woningen te vinden, sneller deals te sluiten en compliant te blijven.
+            {t('home.demo.description', locale)}
           </p>
           <ul class="space-y-4 mb-8">
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">AI lead scoring en predictive analytics</span>
+              <span class="text-neutral-700">{t('home.demo.feature_1', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Realtime MLS synchronisatie</span>
+              <span class="text-neutral-700">{t('home.demo.feature_2', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Geautomatiseerde compliance checks</span>
+              <span class="text-neutral-700">{t('home.demo.feature_3', locale)}</span>
             </li>
           </ul>
           <Button variant="primary" size="lg" href="/demo">
-            Boek een Demo
+            {t('home.demo.cta', locale)}
           </Button>
         </div>
         <div>
@@ -272,10 +272,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Veelgestelde vragen
+          {t('home.faq.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600">
-          Alles wat je moet weten over Tesoro CRM
+          {t('home.faq.subtitle', locale)}
         </p>
       </div>
       
@@ -289,9 +289,9 @@ const faqs = [
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-neutral-600 mb-4">Nog meer vragen?</p>
+        <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
         <Button variant="outline" href="/contact">
-          Neem Contact Op
+          {t('home.faq.contact_cta', locale)}
         </Button>
       </div>
     </div>
@@ -301,17 +301,17 @@ const faqs = [
   <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar om je captatie te verdrievoudigen?
+        {t('home.final_cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Sluit je aan bij 500+ succesvolle makelaars die hun workflow hebben geautomatiseerd met Tesoro CRM.
+        {t('home.final_cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('home.final_cta.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
-          Bekijk Prijzen
+          {t('home.final_cta.cta_secondary', locale)}
         </Button>
       </div>
     </div>
