@@ -1,21 +1,21 @@
 export const languages = {
-  nl: 'Nederlands',
-  en: 'English',
   es: 'Español',
+  en: 'English',
+  nl: 'Nederlands',
 } as const;
 
-export const defaultLang = 'nl' as const;
+export const defaultLang = 'es' as const;
 
 export type Language = keyof typeof languages;
 
 export const languageFlags = {
-  nl: '🇳🇱',
-  en: '🇬🇧',
   es: '🇪🇸',
+  en: '🇬🇧',
+  nl: '🇳🇱',
 } as const;
 
 export const languageRoutes = {
-  nl: '/',
+  es: '/',
   en: '/en',
-  es: '/es',
+  nl: '/nl',
 } as const;
