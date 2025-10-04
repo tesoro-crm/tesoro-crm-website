@@ -9,6 +9,12 @@ Een moderne, high-performance marketing website gebouwd met Astro, Tailwind CSS 
 - **Preview**: https://preview.tesoro-crm-website.pages.dev
 - **Production**: https://tesoro-crm-website.pages.dev
 
+### Pages
+- Homepage: `/`
+- Pricing: `/pricing`
+- Features: `/features`
+- Status Dashboard: `/status`
+
 ## ✨ Features
 
 ### Homepage (9 Secties)
@@ -21,6 +27,19 @@ Een moderne, high-performance marketing website gebouwd met Astro, Tailwind CSS 
 - **FAQ**: 4 veelgestelde vragen met antwoorden
 - **Final CTA**: Gradient background met dual buttons
 - **Footer**: 4-column layout met links
+
+### Pricing Page (6 Secties)
+- **3 Pricing Tiers**: Starter (€99), Professional (€249), Enterprise (custom)
+- **4 Add-ons**: Extra MLS, Premium Support, White Label, API Access
+- **ROI Calculator**: Teaser met gemiddelde resultaten
+- **6 FAQs**: Veelgestelde vragen over prijzen
+- **Trust Elements**: 14 dagen gratis, geen creditcard, cancel anytime
+
+### Features Page (7 Secties)
+- **4 Feature Categories**: AI Captación, MLS Integraties, Compliance, Team Collaboration
+- **12 Integrations**: MLS platforms, email, messaging, automation tools
+- **Comparison Matrix**: 8 features vs 2 concurrenten
+- **Alternating Layout**: Visuele variatie met left/right sections
 
 ### Status Dashboard
 - Live project status overzicht
@@ -103,8 +122,9 @@ npm run deploy:production
 
 ## 📊 Performance
 
-- **Build Time**: ~1.3s
+- **Build Time**: ~0.9s
 - **Bundle Size**: 43KB (13KB gzipped)
+- **Pages**: 4 (homepage, pricing, features, status)
 - **Lighthouse Score**: Target 95+
 - **First Contentful Paint**: Target <1.5s
 - **Time to Interactive**: Target <3s
