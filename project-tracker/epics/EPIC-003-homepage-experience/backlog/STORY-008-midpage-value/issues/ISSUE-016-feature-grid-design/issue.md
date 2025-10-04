@@ -13,10 +13,10 @@ labels:
 Ontwerp de feature highlight grid (6 features) conform `tesoro-crm-website-blueprint.md#3.4`, inclusief iconografie en responsive layout.
 
 ## Checklist
-- [ ] Desktop grid ontwerp
-- [ ] Mobile stacked variant
-- [ ] Icon set afgestemd met design system
-- [ ] Copy placeholders toegevoegd (linked to Product Marketing)
+- [x] Desktop grid ontwerp
+- [x] Mobile stacked variant
+- [x] Icon set afgestemd met design system
+- [x] Copy placeholders toegevoegd (linked to Product Marketing)
 
 ## Logboek
 | Datum | Opmerking |

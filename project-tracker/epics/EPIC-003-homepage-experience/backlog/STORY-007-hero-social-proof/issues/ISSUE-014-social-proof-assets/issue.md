@@ -13,9 +13,9 @@ labels:
 Verzamel klantlogo's, review scores en testimonials gericht op Spaanse kustmakelaars voor gebruik in de social-proof bar en testimonials sectie.
 
 ## Checklist
-- [ ] Minimaal 6 klantlogo's met toestemming
-- [ ] Review scores (G2, Capterra, Trustpilot) verzameld
-- [ ] Testimonial quotes gevalideerd door klanten
+- [x] Minimaal 6 klantlogo's met toestemming
+- [x] Review scores (G2, Capterra, Trustpilot) verzameld
+- [x] Testimonial quotes gevalideerd door klanten
 
 ## Logboek
 | Datum | Opmerking |
