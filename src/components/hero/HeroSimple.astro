@@ -12,7 +12,7 @@ interface Props {
   readonly properties: readonly string[];
 }
 
-const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, kanbanInterested, kanbanRejected, properties } = Astro.props;
+const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, kanbanInterested, kanbanRejected, properties } = Astro.props;
 ---
 
 <section class="hero-simple">
@@ -20,7 +20,6 @@ const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanPro
   <div class="hero-simple__container">
     <div class="hero-simple__grid">
       <div class="hero-simple__content">
-        <span class="hero-simple__badge">{badge}</span>
         <h1 class="hero-simple__headline">{headline}</h1>
         <p class="hero-simple__subheadline">{subheadline}</p>
 
@@ -33,13 +32,23 @@ const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanPro
           </a>
         </div>
 
-        <div class="hero-simple__trust">
-          {trust.map((item) => (
-            <span class="hero-simple__trust-item">
-              <span class="hero-simple__trust-icon" aria-hidden="true">✓</span>
-              <span class="hero-simple__trust-text">{item}</span>
-            </span>
-          ))}
+        <div class="hero-simple__trust-grid">
+          <div class="hero-simple__trust-column">
+            {trust.slice(0, 3).map((item) => (
+              <div class="hero-simple__trust-item">
+                <span class="hero-simple__trust-icon">✓</span>
+                <span class="hero-simple__trust-text">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div class="hero-simple__trust-column">
+            {trust.slice(3, 6).map((item) => (
+              <div class="hero-simple__trust-item">
+                <span class="hero-simple__trust-icon">✓</span>
+                <span class="hero-simple__trust-text">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -116,12 +125,16 @@ const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanPro
       </div>
     </div>
   </div>
+</section>
 
   <script>
-    // Simple Kanban animation: Proposed → Interested → Rejected → Reset
-    const kanban = document.querySelector('[data-kanban]');
-    
-    if (kanban && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    function initKanbanAnimation() {
+      // Simple Kanban animation: Proposed → Interested → Rejected → Reset
+      const kanban = document.querySelector('[data-kanban]');
+      
+      if (!kanban || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
       const mainCard = kanban.querySelector('[data-property-card="main"]');
       const secondCard = kanban.querySelector('[data-property-card="second"]');
       let step = 0;
@@ -171,15 +184,41 @@ const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanPro
         } else if (step === 2) {
           setTimeout(() => animateCard(secondCard, 2), 1500);
         } else {
-          setTimeout(() => location.reload(), 2000);
+          // Reset: fade out and restart
+          setTimeout(() => {
+            step = 0;
+            // Fade out all cards
+            const allCards = kanban.querySelectorAll('.hero-simple__property-card');
+            allCards.forEach(card => {
+              card.style.transition = 'opacity 0.3s ease';
+              card.style.opacity = '0';
+            });
+            
+            // Reset after fade
+            setTimeout(() => {
+              allCards.forEach(card => {
+                card.style.opacity = '1';
+              });
+            }, 300);
+          }, 2000);
         }
       };
 
       const interval = setInterval(runAnimation, 3000);
+      
+      // Pause on hover (desktop)
       kanban.addEventListener('mouseenter', () => clearInterval(interval));
+      
+      // Pause on touch (mobile)
+      kanban.addEventListener('touchstart', () => clearInterval(interval), { passive: true });
     }
+
+    // Run on initial load
+    initKanbanAnimation();
+
+    // Re-run after View Transitions
+    document.addEventListener('astro:after-swap', initKanbanAnimation);
   </script>
-</section>
 
 <style>
   @media (min-width: 1024px) {
@@ -292,24 +331,31 @@ const { badge, headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanPro
     color: white;
   }
 
-  .hero-simple__trust {
+  .hero-simple__trust-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero-simple__trust-column {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    color: rgba(10, 31, 68, 0.6);
-    font-size: 0.85rem;
-    margin-top: 0.25rem;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
   .hero-simple__trust-item {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.6rem;
+    font-size: 0.9rem;
+    color: #64748b;
   }
 
   .hero-simple__trust-icon {
     color: #ff6b9d;
     font-size: 1.1rem;
+    flex-shrink: 0;
   }
 
   .hero-simple__visual {
