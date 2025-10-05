@@ -210,11 +210,11 @@ const { slides, metric, trust, ctas, carouselLabel } = Astro.props as HeroCarous
     </div>
   </div>
 
-  <script type="module">
+<script type="module">
+    // @ts-check
     /**
      * @typedef {HTMLElement & { dataset: DOMStringMap }} HeroElement
      */
-    /** @type {HeroElement | null} */
     const hero = document.querySelector('[data-hero]');
     if (hero) {
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -479,6 +479,7 @@ const { slides, metric, trust, ctas, carouselLabel } = Astro.props as HeroCarous
         /** @type {HTMLElement[]} */
         const stages = Array.from(kanban.querySelectorAll('[data-stage]'));
         
+        /** @type {number | null} */
         let autoMoveTimer = null;
         let currentCardIndex = 0;
         let currentStageIndex = 0;
@@ -496,8 +497,8 @@ const { slides, metric, trust, ctas, carouselLabel } = Astro.props as HeroCarous
           const startRect = card.getBoundingClientRect();
           const kanbanRect = kanban.getBoundingClientRect();
           
-          // Create a clone for animation
-          const clone = card.cloneNode(true);
+          /** @type {HTMLElement} */
+          const clone = /** @type {HTMLElement} */ (card.cloneNode(true));
           clone.style.position = 'absolute';
           clone.style.left = `${startRect.left - kanbanRect.left}px`;
           clone.style.top = `${startRect.top - kanbanRect.top}px`;
