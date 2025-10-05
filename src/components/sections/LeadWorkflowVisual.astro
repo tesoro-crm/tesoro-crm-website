@@ -295,12 +295,16 @@ const {
     const options = document.querySelectorAll('[data-option]') as NodeListOf<HTMLElement>;
 
     if (templateButton && templateOptions) {
+      const dropdown = document.querySelector('[data-template-dropdown]') as HTMLElement | null;
+      
       templateButton.addEventListener('click', () => {
         const isOpen = templateOptions.classList.contains('open');
         if (isOpen) {
           templateOptions.classList.remove('open');
+          dropdown?.classList.remove('open');
         } else {
           templateOptions.classList.add('open');
+          dropdown?.classList.add('open');
         }
       });
 
@@ -311,14 +315,15 @@ const {
             templateSelectText.textContent = text;
           }
           templateOptions.classList.remove('open');
+          dropdown?.classList.remove('open');
         });
       });
 
       // Close dropdown when clicking outside
       document.addEventListener('click', (e) => {
-        const dropdown = document.querySelector('[data-template-dropdown]');
         if (dropdown && !dropdown.contains(e.target as Node)) {
           templateOptions.classList.remove('open');
+          dropdown.classList.remove('open');
         }
       });
     }
@@ -755,7 +760,7 @@ const {
     transition: transform 0.3s ease;
   }
 
-  .mockup-template__options.open ~ .mockup-template__select .mockup-template__select-arrow {
+  .mockup-template__dropdown.open .mockup-template__select-arrow {
     transform: rotate(180deg);
   }
 
