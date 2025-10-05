@@ -64,10 +64,17 @@ De sectie gebruikt een responsive grid-layout: tekst links (45%), visual rechts 
 ## Visuele Elementen
 
 ### Afbeelding
-- **Bron:** Screenshot van de echte Tesoro lead-detailpagina.
-- **Alternatief:** Placeholder met wireframe van interface.
-- **Stijl:** Clean, professional, met Tesoro branding (oranje accenten).
-- **Alt-tekst:** "Voorbeeld van de lead-detailpagina in Tesoro met bel- en e-mail functies."
+- **Stijl:** Herkenbaar als de echte Tesoro interface, vergelijkbaar met de kanban-visual in de hero-sectie (statische versie).
+- **Inhoud:** Mockup van de lead-detailpagina scherm:
+  - **Header:** Lead naam en status (bijv. "Nieuwe lead: Jan Jansen").
+  - **Bel-knop:** Grote groene knop met telefoon-icoon: "Bellen".
+  - **E-mail template:** Dropdown of knoppen voor "Follow-up e-mail" met Office 365/Google logo.
+  - **Opname-sectie:** Indicator "Gesprek opgenomen" met play-knop (statisch).
+  - **Historie:** Lijst van eerdere acties (bijv. "E-mail verstuurd op 15 okt").
+  - **Qualificatie:** Velden voor "Budget", "Interesse niveau" met checkboxes.
+- **Bron:** Screenshot van de echte Tesoro app, of een wireframe die lijkt op de kanban-stijl (witte achtergrond, schaduw, ronde hoeken).
+- **Alternatief:** Statische HTML/CSS mockup die eruitziet als een app-scherm.
+- **Alt-tekst:** "Voorbeeld van de Tesoro lead-detailpagina met bel- en e-mail functies."
 - **Formaat:** Max 600px breed, border-radius 1rem, schaduw voor diepte.
 
 ### Typografie
