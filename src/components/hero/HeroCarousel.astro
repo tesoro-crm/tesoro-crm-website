@@ -1,0 +1,1279 @@
+---
+interface HeroMetric {
+  readonly label: string;
+  readonly value: string;
+  readonly subtitle: string;
+}
+
+interface HeroTickerItem {
+  readonly property: string;
+  readonly match: string;
+  readonly score: string;
+}
+
+interface HeroHighlight {
+  readonly title: string;
+  readonly description: string;
+}
+
+type HeroSlide =
+  | {
+      readonly id: 'matching';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly ticker: {
+        readonly label: string;
+        readonly items: readonly HeroTickerItem[];
+      };
+    }
+  | {
+      readonly id: 'portal';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly highlights: readonly HeroHighlight[];
+    };
+
+interface HeroCtas {
+  readonly primary: string;
+  readonly secondary: string;
+  readonly video: string;
+}
+
+interface HeroCarouselProps {
+  readonly slides: readonly HeroSlide[];
+  readonly metric: HeroMetric;
+  readonly trust: readonly string[];
+  readonly ctas: HeroCtas;
+  readonly carouselLabel: string;
+}
+
+const { slides, metric, trust, ctas, carouselLabel } = Astro.props as HeroCarouselProps;
+---
+<section class="hero" data-hero>
+  <div class="hero__background" aria-hidden="true"></div>
+  <div class="hero__container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div
+          class="hero__carousel"
+          role="region"
+          aria-label={carouselLabel}
+          data-hero-carousel
+        >
+          {slides.map((slide, index) => (
+            <article
+              class={`hero__slide${index === 0 ? ' hero__slide--active' : ''}`}
+              data-hero-slide
+              data-index={index}
+              data-floating={slide.floatingBadge}
+              aria-hidden={index === 0 ? 'false' : 'true'}
+              aria-label={slide.label}
+            >
+              <span class="hero__badge">{slide.badge}</span>
+              <h1 class="hero__headline">{slide.headline}</h1>
+              <p class="hero__subheadline">{slide.subheadline}</p>
+
+              {slide.id === 'matching' ? (
+                <div class="hero__ticker" data-hero-ticker>
+                  <div class="hero__ticker-label">{slide.ticker.label}</div>
+                  <div class="hero__ticker-track" data-hero-ticker-track>
+                    {[...slide.ticker.items, ...slide.ticker.items].map((item, tickerIndex) => (
+                      <div class="hero__ticker-item" aria-hidden={tickerIndex >= slide.ticker.items.length ? 'true' : 'false'}>
+                        <span class="hero__ticker-property">{item.property}</span>
+                        <span class="hero__ticker-match">{item.match}</span>
+                        <span class="hero__ticker-score">{item.score}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <ul class="hero__highlights" role="list">
+                  {slide.highlights.map((highlight) => (
+                    <li class="hero__highlight">
+                      <span class="hero__highlight-dot" aria-hidden="true"></span>
+                      <div>
+                        <span class="hero__highlight-title">{highlight.title}</span>
+                        <span class="hero__highlight-description">{highlight.description}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </article>
+          ))}
+
+          <div class="hero__controls" role="group" aria-label="Slide controls">
+            <button class="hero__control" type="button" data-hero-prev aria-label="Previous slide">
+              ‹
+            </button>
+            <div class="hero__dots" role="tablist">
+              {slides.map((slide, index) => (
+                <button
+                  class={`hero__dot${index === 0 ? ' hero__dot--active' : ''}`}
+                  type="button"
+                  data-hero-dot
+                  data-index={index}
+                  role="tab"
+                  aria-selected={index === 0 ? 'true' : 'false'}
+                  aria-label={slide.label}
+                ></button>
+              ))}
+            </div>
+            <button class="hero__control" type="button" data-hero-next aria-label="Next slide">
+              ›
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__ctas">
+          <a href="#contact" class="hero__cta hero__cta--primary">
+            {ctas.primary}
+          </a>
+          <a href="#demo" class="hero__cta hero__cta--secondary">
+            {ctas.secondary}
+          </a>
+          <button type="button" class="hero__cta hero__cta--video" data-hero-video>
+            {ctas.video}
+          </button>
+        </div>
+
+        <div class="hero__trust">
+          {trust.map((item) => (
+            <span class="hero__trust-item">
+              <span class="hero__trust-icon" aria-hidden="true">✓</span>
+              <span class="hero__trust-text">{item}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div class="hero__visual" data-hero-visual>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__kanban" data-hero-kanban>
+          <div class="hero__kanban-stage" data-stage="proposed">
+            <div class="hero__kanban-header">
+              <span class="hero__kanban-title">Proposed</span>
+              <span class="hero__kanban-count">2</span>
+            </div>
+            <div class="hero__kanban-cards" data-kanban-cards>
+              <div class="hero__property-card" data-property-card="1">
+                <div class="hero__property-image"></div>
+                <div class="hero__property-info">
+                  <span class="hero__property-name">Villa Costa Blanca</span>
+                  <span class="hero__property-match">96%</span>
+                </div>
+              </div>
+              <div class="hero__property-card" data-property-card="2">
+                <div class="hero__property-image"></div>
+                <div class="hero__property-info">
+                  <span class="hero__property-name">Loft Madrid</span>
+                  <span class="hero__property-match">93%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__kanban-stage" data-stage="interested">
+            <div class="hero__kanban-header">
+              <span class="hero__kanban-title">Interested</span>
+              <span class="hero__kanban-count">0</span>
+            </div>
+            <div class="hero__kanban-cards" data-kanban-cards></div>
+          </div>
+          <div class="hero__kanban-stage" data-stage="viewing">
+            <div class="hero__kanban-header">
+              <span class="hero__kanban-title">Viewing</span>
+              <span class="hero__kanban-count">0</span>
+            </div>
+            <div class="hero__kanban-cards" data-kanban-cards></div>
+          </div>
+        </div>
+        <div class="hero__floating-badge" data-hero-floating>
+          {slides[0]?.floatingBadge}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__modal" data-hero-modal aria-hidden="true">
+    <div class="hero__modal-backdrop" data-hero-modal-close></div>
+    <div class="hero__modal-dialog" role="dialog" aria-modal="true" aria-label="Hero video" data-hero-modal-dialog>
+      <button type="button" class="hero__modal-close" data-hero-modal-close aria-label="Close video">×</button>
+      <div class="hero__modal-video">
+        <div class="hero__modal-placeholder">🎬 Tesoro Matching Overview (00:46)</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    /**
+     * @typedef {HTMLElement & { dataset: DOMStringMap }} HeroElement
+     */
+    /** @type {HeroElement | null} */
+    const hero = document.querySelector('[data-hero]');
+    if (hero) {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      /** @type {HTMLElement | null} */
+      const carousel = hero.querySelector('[data-hero-carousel]');
+      /** @type {HTMLElement[]} */
+      const slideElements = carousel ? Array.from(carousel.querySelectorAll('[data-hero-slide]')) : [];
+      /** @type {HTMLButtonElement[]} */
+      const dotElements = Array.from(hero.querySelectorAll('[data-hero-dot]'));
+      /** @type {HTMLButtonElement | null} */
+      const prevButton = hero.querySelector('[data-hero-prev]');
+      /** @type {HTMLButtonElement | null} */
+      const nextButton = hero.querySelector('[data-hero-next]');
+      /** @type {HTMLElement | null} */
+      const tickerTrack = hero.querySelector('[data-hero-ticker-track]');
+      /** @type {HTMLElement | null} */
+      const floatingCard = hero.querySelector('[data-hero-card-floating]');
+      /** @type {HTMLElement | null} */
+      const metricCard = hero.querySelector('[data-hero-metric]');
+      /** @type {HTMLElement | null} */
+      const floatingBadge = hero.querySelector('[data-hero-floating]');
+      /** @type {HTMLElement | null} */
+      const visual = hero.querySelector('[data-hero-visual]');
+      /** @type {HTMLButtonElement | null} */
+      const videoButton = hero.querySelector('[data-hero-video]');
+      /** @type {HTMLElement | null} */
+      const modal = hero.querySelector('[data-hero-modal]');
+      /** @type {HTMLElement | null} */
+      const modalDialog = hero.querySelector('[data-hero-modal-dialog]');
+      /** @type {HTMLElement[]} */
+      const modalCloseElements = Array.from(hero.querySelectorAll('[data-hero-modal-close]'));
+      /** @type {number} */
+      let currentIndex = 0;
+      /** @type {number | null} */
+      let autoTimer = null;
+      /** @type {boolean} */
+      let isIntersecting = false;
+      /** @type {HTMLElement | null} */
+      let previousFocus = null;
+
+      /**
+       * @param {number} nextIndex
+       * @returns {void}
+       */
+      const setSlide = (nextIndex) => {
+        if (!carousel) {
+          return;
+        }
+        const targetIndex = Math.max(0, Math.min(nextIndex, slideElements.length - 1));
+        if (targetIndex === currentIndex) {
+          return;
+        }
+        slideElements.forEach((slide, index) => {
+          const isActive = index === targetIndex;
+          slide.classList.toggle('hero__slide--active', isActive);
+          slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+        });
+        dotElements.forEach((dot) => {
+          const dotIndex = Number.parseInt(dot.getAttribute('data-index') ?? '0', 10);
+          const isActive = dotIndex === targetIndex;
+          dot.classList.toggle('hero__dot--active', isActive);
+          dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+        const activeSlide = slideElements[targetIndex];
+        const floatingText = activeSlide?.getAttribute('data-floating') ?? activeSlide?.querySelector('.hero__badge')?.textContent;
+        if (floatingBadge && floatingText) {
+          floatingBadge.textContent = floatingText;
+        }
+        currentIndex = targetIndex;
+      };
+
+      /**
+       * @param {number} offset
+       * @returns {void}
+       */
+      const goTo = (offset) => {
+        const nextIndex = (currentIndex + offset + slideElements.length) % slideElements.length;
+        setSlide(nextIndex);
+      };
+
+      /** @returns {void} */
+      const clearAuto = () => {
+        if (autoTimer !== null) {
+          window.clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      };
+
+      /** @returns {void} */
+      const startAuto = () => {
+        if (prefersReducedMotion.matches || slideElements.length < 2) {
+          return;
+        }
+        clearAuto();
+        autoTimer = window.setInterval(() => {
+          goTo(1);
+        }, 8000);
+      };
+
+      /** @returns {void} */
+      const pauseAuto = () => {
+        clearAuto();
+      };
+
+      if (prevButton) {
+        prevButton.addEventListener('click', () => {
+          goTo(-1);
+          pauseAuto();
+        });
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', () => {
+          goTo(1);
+          pauseAuto();
+        });
+      }
+
+      dotElements.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          const dotIndex = Number.parseInt(dot.getAttribute('data-index') ?? '0', 10);
+          setSlide(dotIndex);
+          pauseAuto();
+        });
+      });
+
+      if (carousel) {
+        carousel.addEventListener('mouseenter', pauseAuto);
+        carousel.addEventListener('mouseleave', () => {
+          if (isIntersecting) {
+            startAuto();
+          }
+        });
+        carousel.addEventListener('focusin', pauseAuto);
+        carousel.addEventListener('focusout', () => {
+          if (isIntersecting) {
+            startAuto();
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          isIntersecting = entry.isIntersecting;
+          if (isIntersecting) {
+            hero.classList.add('hero--visible');
+            startAuto();
+          } else {
+            pauseAuto();
+          }
+        },
+        { threshold: 0.6 }
+      );
+      observer.observe(hero);
+
+      /**
+       * @param {boolean} reduce
+       * @returns {void}
+       */
+      const applyMotionPreference = (reduce) => {
+        if (reduce) {
+          hero.classList.add('hero--reduced');
+          tickerTrack?.classList.remove('hero__ticker-track--animate');
+          visual?.classList.remove('hero__visual--animate');
+          pauseAuto();
+        } else {
+          hero.classList.remove('hero--reduced');
+          if (isIntersecting) {
+            animateTicker();
+            animateCards();
+            startAuto();
+          }
+        }
+      };
+
+      applyMotionPreference(prefersReducedMotion.matches);
+
+      prefersReducedMotion.addEventListener('change', (event) => {
+        applyMotionPreference(event.matches);
+      });
+
+      /** @returns {void} */
+      const animateTicker = () => {
+        if (!tickerTrack) {
+          return;
+        }
+        tickerTrack.classList.add('hero__ticker-track--animate');
+      };
+
+      /** @returns {void} */
+      const animateCards = () => {
+        if (!floatingCard || !metricCard || !visual) {
+          return;
+        }
+        visual.classList.add('hero__visual--animate');
+      };
+
+      if (!prefersReducedMotion.matches) {
+        animateTicker();
+        animateCards();
+      }
+
+      if (tickerTrack) {
+        tickerTrack.addEventListener('mouseenter', () => {
+          tickerTrack.classList.add('hero__ticker-track--pause');
+        });
+        tickerTrack.addEventListener('mouseleave', () => {
+          tickerTrack.classList.remove('hero__ticker-track--pause');
+        });
+      }
+
+      /** @returns {void} */
+      const openModal = () => {
+        if (!modal || !modalDialog) {
+          return;
+        }
+        previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+        modal.removeAttribute('aria-hidden');
+        modal.classList.add('hero__modal--open');
+        modalDialog.focus();
+      };
+
+      /** @returns {void} */
+      const closeModal = () => {
+        if (!modal) {
+          return;
+        }
+        modal.setAttribute('aria-hidden', 'true');
+        modal.classList.remove('hero__modal--open');
+        if (previousFocus) {
+          previousFocus.focus();
+        }
+      };
+
+      if (videoButton) {
+        videoButton.addEventListener('click', openModal);
+      }
+
+      modalCloseElements.forEach((element) => {
+        element.addEventListener('click', closeModal);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeModal();
+        }
+      });
+
+      modal?.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Kanban drag and drop animation
+      /** @type {HTMLElement | null} */
+      const kanban = hero.querySelector('[data-hero-kanban]');
+      if (kanban && !prefersReducedMotion.matches) {
+        /** @type {HTMLElement[]} */
+        const propertyCards = Array.from(kanban.querySelectorAll('[data-property-card]'));
+        /** @type {HTMLElement[]} */
+        const stages = Array.from(kanban.querySelectorAll('[data-stage]'));
+        
+        let autoMoveTimer = null;
+        let currentCardIndex = 0;
+        let currentStageIndex = 0;
+
+        /**
+         * @param {HTMLElement} card
+         * @param {HTMLElement} targetStage
+         * @returns {void}
+         */
+        const moveCard = (card, targetStage) => {
+          const targetCards = targetStage.querySelector('[data-kanban-cards]');
+          if (!targetCards) return;
+
+          // Get positions before any changes
+          const startRect = card.getBoundingClientRect();
+          const kanbanRect = kanban.getBoundingClientRect();
+          
+          // Create a clone for animation
+          const clone = card.cloneNode(true);
+          clone.style.position = 'absolute';
+          clone.style.left = `${startRect.left - kanbanRect.left}px`;
+          clone.style.top = `${startRect.top - kanbanRect.top}px`;
+          clone.style.width = `${startRect.width}px`;
+          clone.style.zIndex = '10';
+          clone.style.pointerEvents = 'none';
+          kanban.appendChild(clone);
+
+          // Hide original immediately
+          card.style.opacity = '0';
+          card.style.visibility = 'hidden';
+
+          // Update counts
+          const oldStage = card.closest('[data-stage]');
+          if (oldStage) {
+            const oldCount = oldStage.querySelector('.hero__kanban-count');
+            if (oldCount) {
+              const count = Math.max(0, parseInt(oldCount.textContent || '0') - 1);
+              oldCount.textContent = count.toString();
+            }
+          }
+
+          const newCount = targetStage.querySelector('.hero__kanban-count');
+          if (newCount) {
+            const count = parseInt(newCount.textContent || '0') + 1;
+            newCount.textContent = count.toString();
+          }
+
+          // Move card to target in DOM (hidden)
+          targetCards.appendChild(card);
+          
+          // Get target position
+          const targetRect = card.getBoundingClientRect();
+          const endLeft = targetRect.left - kanbanRect.left;
+          const endTop = targetRect.top - kanbanRect.top;
+
+          // Animate clone
+          clone.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+          requestAnimationFrame(() => {
+            clone.style.left = `${endLeft}px`;
+            clone.style.top = `${endTop}px`;
+            clone.style.opacity = '0.8';
+          });
+
+          // Clean up and show real card
+          setTimeout(() => {
+            clone.remove();
+            card.style.opacity = '1';
+            card.style.visibility = 'visible';
+            card.style.transition = '';
+          }, 600);
+        };
+
+        /** @returns {void} */
+        const autoMoveCards = () => {
+          if (propertyCards.length === 0 || stages.length === 0) return;
+
+          const card = propertyCards[currentCardIndex];
+          const nextStageIndex = (currentStageIndex + 1) % stages.length;
+          const targetStage = stages[nextStageIndex];
+
+          if (card && targetStage) {
+            moveCard(card, targetStage);
+            currentStageIndex = nextStageIndex;
+
+            // Move to next card when we complete a cycle
+            if (nextStageIndex === 0) {
+              currentCardIndex = (currentCardIndex + 1) % propertyCards.length;
+            }
+          }
+        };
+
+        /** @returns {void} */
+        const startAutoMove = () => {
+          if (autoMoveTimer) clearInterval(autoMoveTimer);
+          autoMoveTimer = setInterval(autoMoveCards, 3000);
+        };
+
+        /** @returns {void} */
+        const stopAutoMove = () => {
+          if (autoMoveTimer) {
+            clearInterval(autoMoveTimer);
+            autoMoveTimer = null;
+          }
+        };
+
+        // Start auto-move when hero is visible
+        if (isIntersecting) {
+          startAutoMove();
+        }
+
+        // Pause on hover
+        kanban.addEventListener('mouseenter', stopAutoMove);
+        kanban.addEventListener('mouseleave', () => {
+          if (isIntersecting) startAutoMove();
+        });
+
+        // Update observer to control auto-move
+        const kanbanObserver = new IntersectionObserver(
+          (entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+              startAutoMove();
+            } else {
+              stopAutoMove();
+            }
+          },
+          { threshold: 0.5 }
+        );
+        kanbanObserver.observe(kanban);
+      }
+    }
+  </script>
+</section>
+
+<style lang="css">
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: #faf9f7;
+    padding: 3rem 0;
+    min-height: min(85vh, 700px);
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      padding: 4rem 0;
+      min-height: min(90vh, 800px);
+    }
+  }
+
+  .hero__background {
+    position: absolute;
+    inset: -30%;
+    background: radial-gradient(circle at 0% 0%, rgba(255, 155, 67, 0.45), transparent 45%),
+      radial-gradient(circle at 90% 10%, rgba(255, 107, 157, 0.4), transparent 50%),
+      radial-gradient(circle at 50% 90%, rgba(10, 31, 68, 0.2), transparent 55%);
+    transform: scale(1.1);
+    animation: hero-gradient 18s ease-in-out infinite;
+    opacity: 0.85;
+  }
+
+  .hero--reduced .hero__background {
+    animation: none;
+  }
+
+  .hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .hero__grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1024px) {
+    .hero__grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero__carousel {
+    position: relative;
+    min-height: 400px;
+  }
+
+  @media (min-width: 768px) {
+    .hero__carousel {
+      min-height: 450px;
+    }
+  }
+
+  .hero__slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero__slide--active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+
+  .hero__badge {
+    align-self: flex-start;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    background: rgba(255, 107, 157, 0.15);
+    color: #ff6b9d;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .hero__headline {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #0a1f44;
+  }
+
+  .hero__subheadline {
+    font-size: clamp(1.125rem, 2vw, 1.35rem);
+    color: rgba(10, 31, 68, 0.7);
+    max-width: 36rem;
+  }
+
+  .hero__ticker {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .hero__ticker-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(10, 31, 68, 0.55);
+  }
+
+  .hero__ticker-track {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+
+  .hero__ticker-track--animate {
+    animation: hero-ticker 16s linear infinite;
+  }
+
+  .hero__ticker-track--pause {
+    animation-play-state: paused;
+  }
+
+  .hero--reduced .hero__ticker-track--animate {
+    animation: none;
+  }
+
+  .hero__ticker-item {
+    flex: 0 0 auto;
+    min-width: 16rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: grid;
+    gap: 0.25rem;
+    box-shadow: 0 10px 30px rgba(10, 31, 68, 0.08);
+  }
+
+  .hero__ticker-property {
+    font-weight: 600;
+    color: #0a1f44;
+  }
+
+  .hero__ticker-match {
+    font-size: 0.9rem;
+    color: rgba(10, 31, 68, 0.65);
+  }
+
+  .hero__ticker-score {
+    font-size: 0.85rem;
+    color: #ff9f43;
+    font-weight: 600;
+  }
+
+  .hero__highlights {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .hero__highlight {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .hero__highlight-dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 9999px;
+    background: #ff6b9d;
+    margin-top: 0.4rem;
+  }
+
+  .hero__highlight-title {
+    display: block;
+    font-weight: 600;
+    color: #0a1f44;
+  }
+
+  .hero__highlight-description {
+    display: block;
+    font-size: 0.95rem;
+    color: rgba(10, 31, 68, 0.65);
+  }
+
+  .hero__controls {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero__control {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(10, 31, 68, 0.12);
+    background: white;
+    color: #0a1f44;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hero__control:hover,
+  .hero__control:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(10, 31, 68, 0.15);
+  }
+
+  .hero__dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .hero__dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background: rgba(10, 31, 68, 0.15);
+    border: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .hero__dot--active {
+    background: #0a1f44;
+    transform: scale(1.2);
+  }
+
+  .hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 2.25rem;
+    border-radius: 0.85rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  .hero__cta--primary {
+    background: #ff9f43;
+    color: white;
+    box-shadow: 0 20px 30px rgba(255, 159, 67, 0.35);
+  }
+
+  .hero__cta--primary:hover,
+  .hero__cta--primary:focus {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 26px 40px rgba(255, 159, 67, 0.45);
+  }
+
+  .hero__cta--secondary {
+    border: 2px solid #0a1f44;
+    color: #0a1f44;
+    background: transparent;
+  }
+
+  .hero__cta--secondary:hover,
+  .hero__cta--secondary:focus {
+    background: #0a1f44;
+    color: white;
+  }
+
+  .hero__cta--video {
+    border: 2px solid rgba(10, 31, 68, 0.2);
+    color: #0a1f44;
+    background: white;
+  }
+
+  .hero__cta--video:hover,
+  .hero__cta--video:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 24px rgba(10, 31, 68, 0.15);
+  }
+
+  .hero__trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    color: rgba(10, 31, 68, 0.6);
+    font-size: 0.95rem;
+  }
+
+  .hero__trust-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .hero__trust-icon {
+    color: #ff6b9d;
+    font-size: 1.25rem;
+  }
+
+  .hero__visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hero__glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 2rem;
+    background: linear-gradient(145deg, rgba(255, 155, 67, 0.25), rgba(255, 107, 157, 0.15));
+    filter: blur(35px);
+  }
+
+  .hero__kanban {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 40px 70px rgba(10, 31, 68, 0.18);
+    border: 1px solid rgba(10, 31, 68, 0.05);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .hero__kanban-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 280px;
+  }
+
+  .hero__kanban-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    background: rgba(10, 31, 68, 0.04);
+    border-radius: 0.5rem;
+  }
+
+  .hero__kanban-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0a1f44;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .hero__kanban-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(10, 31, 68, 0.5);
+    background: rgba(10, 31, 68, 0.08);
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+  }
+
+  .hero__kanban-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+    padding: 0.5rem;
+    background: rgba(10, 31, 68, 0.02);
+    border-radius: 0.5rem;
+    min-height: 200px;
+  }
+
+  .hero__property-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    box-shadow: 0 4px 12px rgba(10, 31, 68, 0.08);
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(10, 31, 68, 0.06);
+  }
+
+  .hero__property-card:active {
+    cursor: grabbing;
+  }
+
+  .hero__property-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 31, 68, 0.12);
+  }
+
+  .hero__property-card.dragging {
+    opacity: 0.5;
+    transform: rotate(3deg);
+  }
+
+  .hero__property-image {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255, 155, 67, 0.15), rgba(255, 107, 157, 0.15));
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__property-image::after {
+    content: '🏠';
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+
+  .hero__property-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .hero__property-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0a1f44;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero__property-match {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ff9f43;
+    background: rgba(255, 159, 67, 0.1);
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+  }
+
+  .hero__metric {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    display: grid;
+    gap: 0.35rem;
+    box-shadow: 0 28px 50px rgba(10, 31, 68, 0.15);
+  }
+
+  .hero__metric-label {
+    font-size: 0.85rem;
+    color: rgba(10, 31, 68, 0.6);
+  }
+
+  .hero__metric-value {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #0a1f44;
+  }
+
+  .hero__metric-subtitle {
+    font-size: 0.85rem;
+    color: #ff6b9d;
+    font-weight: 600;
+  }
+
+  .hero__floating-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff9f43;
+    color: white;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    box-shadow: 0 24px 36px rgba(255, 159, 67, 0.4);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hero__visual--animate .hero__metric {
+    animation: hero-metric 8s ease-in-out infinite;
+  }
+
+  .hero__visual--animate .hero__floating-badge {
+    animation: hero-badge 10s ease-in-out infinite;
+  }
+
+  .hero--reduced .hero__visual--animate .hero__metric,
+  .hero--reduced .hero__visual--animate .hero__floating-badge {
+    animation: none;
+  }
+
+  .hero__modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(10, 31, 68, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    z-index: 50;
+  }
+
+  .hero__modal--open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hero__modal-backdrop {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero__modal-dialog {
+    position: relative;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    width: min(680px, 90vw);
+    outline: none;
+    box-shadow: 0 40px 80px rgba(10, 31, 68, 0.4);
+  }
+
+  .hero__modal-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    border: none;
+    background: rgba(10, 31, 68, 0.08);
+    font-size: 1.5rem;
+    color: #0a1f44;
+    cursor: pointer;
+  }
+
+  .hero__modal-video {
+    aspect-ratio: 16 / 9;
+    background: rgba(10, 31, 68, 0.05);
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    color: rgba(10, 31, 68, 0.7);
+    font-weight: 600;
+  }
+
+  .hero__modal-placeholder {
+    font-size: 1.2rem;
+  }
+
+  @keyframes hero-gradient {
+    0%,
+    100% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(3deg);
+    }
+  }
+
+  @keyframes hero-ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  @keyframes hero-metric {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0 28px 50px rgba(10, 31, 68, 0.15);
+    }
+    50% {
+      transform: translate3d(0, -6px, 0);
+      box-shadow: 0 34px 60px rgba(10, 31, 68, 0.2);
+    }
+  }
+
+  @keyframes hero-badge {
+    0%,
+    100% {
+      transform: translate(-50%, 0) scale(1);
+      box-shadow: 0 24px 36px rgba(255, 159, 67, 0.4);
+    }
+    50% {
+      transform: translate(-50%, -6px) scale(1.04);
+      box-shadow: 0 30px 44px rgba(255, 159, 67, 0.5);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .hero {
+      padding: 2.5rem 0;
+      min-height: auto;
+    }
+    .hero__floating-badge {
+      position: static;
+      transform: none;
+      margin-top: 1.5rem;
+    }
+    .hero__kanban {
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+    .hero__kanban-stage {
+      min-height: 180px;
+    }
+    .hero__metric {
+      position: static;
+      margin-top: 1.5rem;
+    }
+    .hero__visual {
+      order: -1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero__cta {
+      width: 100%;
+    }
+    .hero__trust {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero__ticker-item {
+      min-width: 14rem;
+    }
+  }
+</style>
+***

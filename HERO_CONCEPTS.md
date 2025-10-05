@@ -193,6 +193,59 @@ Construido para agentes modernos
 
 ---
 
+## 💎 Hero Concept 5: "Live Matching Pulse" (High Impact)
+
+### Visual Layout
+```
+[Split 55/45 + sticky motion layer]
+
+[Left: Text + Live pulse strip]
+  - Badge bovenaan met lichte glow (CSS filter)
+  - Headline met highlight-underline die inloopt (gradient wipe)
+  - Subheadline verschijnt via staggered fade-up
+  - Onder headline een "Matching Pulse" ticker: drie property cards scrollen horizontaal (auto + hover pause)
+
+[Right: 3D-stacked cards]
+  - Screenshotframe van Kanban board
+  - Twee floating cards die cyclisch naar voren schuiven (Framer Motion loop)
+  - Badge "Matching 2x/día" die pulserend oplicht wanneer een kaart wisselt
+
+[Bottom band]
+  - CTA-buttons met gentle scale-in animatie bij load
+  - Trust bar met auto-typing effect voor €99/mes …
+```
+
+### Headline Varianten (ES)
+
+- **Opción Pulse:** `Tesoro enciende tu matching en tiempo real`
+- **Opción Control:** `Matching inteligente 2x al día. Tú decides qué llega.`
+- **Opción Epicenter:** `El hub donde cada propiedad encuentra a su cliente.`
+
+### Motion Hooks
+
+- **Matching Pulse Strip:** horizontale marquee met property-cards die <8s per loop draaien, pause-on-hover voor usability.
+- **Card Swap:** CSS 3D transform + drop shadow transition om elke 6s een nieuwe match te laten zien.
+- **CTA Hover:** magnetische hover die 4px translate + box-shadow versterkt.
+- **Scroll Trigger:** zodra hero 60% in viewport is, activeert intersection observer de animaties (geen auto-play boven fold in low-power modus).
+
+### Waarom uitdagender
+
+- Combineert copy, real-time storytelling én motion; developer kan IntersectionObserver + requestAnimationFrame optimaliseren.
+- Designer krijgt ruimte voor layer depth, glassmorphism badges en gradient accenten uit Tesoro palette.
+- Interactie-team kan Progressive Reduced-Motion fallback ontwerpen.
+
+---
+
+## ✨ Motion & Interaction Guidelines
+
+- **Reduced Motion Support:** respecteer `prefers-reduced-motion`; vervang loops door crossfades.
+- **Performance Budget:** animaties < 60% GPU load, gebruik CSS transforms i.p.v. layout-mutaties.
+- **Timing Curve:** gebruik cubic-bezier(0.4, 0, 0.2, 1) voor ease-in-out consistentie.
+- **Staggering:** 120ms offset tussen headline, subheadline en CTA voor ritme.
+- **Hover Feedback:** alle interactieve elementen ≥ 2 states (idle + hover + focus), focus-outline in Tesoro coral.
+
+---
+
 ## 🎯 Aanbevolen Hero: Hybrid Concept
 
 ### Final Recommendation

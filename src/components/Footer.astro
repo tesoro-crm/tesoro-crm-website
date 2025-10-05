@@ -2,7 +2,7 @@
 import { getLocale, loadTranslations, t } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
-const locale: Language = getLocale(Astro.currentLocale);
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 ---
 

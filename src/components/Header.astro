@@ -3,21 +3,22 @@ import Button from './ui/Button.astro';
 import { getLocale, getLocalizedPath, loadTranslations, t } from '../i18n/utils';
 import { languages, languageFlags } from '../i18n/config';
 import type { Language } from '../i18n/config';
+import logo from '../assets/tesoro-logo-full-color-rgb-1500px-w-300ppi.png';
 
 const currentPath = Astro.url.pathname;
-const locale: Language = getLocale(Astro.currentLocale);
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 
 // Get base path without language prefix
-const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
+const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 ---
 
-<header class="sticky top-0 z-50 bg-white border-b border-neutral-200 shadow-sm">
+<header class="sticky top-0 z-[100] bg-white border-b border-neutral-200 shadow-sm">
   <nav class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href="/" class="text-2xl font-display font-bold text-primary hover:text-primary-dark transition-colors">
-        Tesoro CRM
+      <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
+        <img src={logo.src} alt="Tesoro CRM" class="h-8" />
       </a>
 
       <!-- Desktop Navigation -->
@@ -99,22 +100,33 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
       <ul class="space-y-2">
         <li>
           <a href="/features" class="block py-2 text-neutral-700 hover:text-primary">
-            Features
+            {t('nav.features', locale)}
           </a>
         </li>
         <li>
           <a href="/pricing" class="block py-2 text-neutral-700 hover:text-primary">
-            Pricing
+            {t('nav.pricing', locale)}
           </a>
         </li>
         <li>
           <a href="/status" class="block py-2 text-neutral-700 hover:text-primary">
-            Status
+            {t('nav.status', locale)}
           </a>
+        </li>
+        <li class="border-t border-neutral-200 pt-2 mt-2">
+          <p class="text-xs text-neutral-500 mb-2 px-2">{t('nav.language', locale)}</p>
+          {Object.entries(languages).map(([lang, name]) => (
+            <a 
+              href={getLocalizedPath(basePath, lang as Language)} 
+              class={`block py-2 px-2 text-sm rounded ${locale === lang ? 'bg-primary/10 text-primary font-semibold' : 'text-neutral-700 hover:bg-neutral-50'}`}
+            >
+              {languageFlags[lang as Language]} {name}
+            </a>
+          ))}
         </li>
         <li class="pt-2">
           <Button variant="primary" size="sm" href="/signup" fullWidth>
-            Start Gratis Trial
+            {t('nav.cta', locale)}
           </Button>
         </li>
       </ul>
@@ -123,42 +135,55 @@ const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
 </header>
 
 <script>
-  // Mobile menu toggle
-  const mobileButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  mobileButton?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
-  });
-
-  // Language selector toggle
-  const languageButton = document.getElementById('language-button');
-  const languageMenu = document.getElementById('language-menu');
-  
-  languageButton?.addEventListener('click', () => {
-    languageMenu?.classList.toggle('hidden');
-  });
-
-  // Close language menu when clicking outside
-  document.addEventListener('click', (e) => {
-    const target = e.target as HTMLElement;
-    if (!languageButton?.contains(target) && !languageMenu?.contains(target)) {
-      languageMenu?.classList.add('hidden');
+  function initHeader() {
+    // Mobile menu toggle
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileButton && mobileMenu) {
+      mobileButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
     }
-  });
 
-  // Language persistence - save preference when language link is clicked
-  document.querySelectorAll('#language-menu a').forEach((link) => {
-    link.addEventListener('click', (e) => {
-      const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
-      if (href) {
-        // Extract language from href (/, /en, /es)
-        const lang = href.startsWith('/en') ? 'en' : href.startsWith('/es') ? 'es' : 'nl';
-        // Save to cookie (expires in 1 year)
-        document.cookie = `preferred-language=${lang}; path=/; max-age=31536000; SameSite=Lax`;
-        // Also save to localStorage as backup
-        localStorage.setItem('preferred-language', lang);
-      }
-    });
-  });
+    // Language selector toggle
+    const languageButton = document.getElementById('language-button');
+    const languageMenu = document.getElementById('language-menu');
+    
+    if (languageButton && languageMenu) {
+      languageButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        languageMenu.classList.toggle('hidden');
+      });
+
+      // Close language menu when clicking outside
+      document.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (!languageButton.contains(target) && !languageMenu.contains(target)) {
+          languageMenu.classList.add('hidden');
+        }
+      });
+
+      // Language persistence - save preference when language link is clicked
+      languageMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+          if (href) {
+            // Extract language from href (/, /en, /es)
+            const lang = href.startsWith('/en') ? 'en' : href.startsWith('/es') ? 'es' : 'nl';
+            // Save to cookie (expires in 1 year)
+            document.cookie = `preferred-language=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+            // Also save to localStorage as backup
+            localStorage.setItem('preferred-language', lang);
+          }
+        });
+      });
+    }
+  }
+
+  // Run on initial load
+  initHeader();
+
+  // Re-run after View Transitions
+  document.addEventListener('astro:after-swap', initHeader);
 </script>

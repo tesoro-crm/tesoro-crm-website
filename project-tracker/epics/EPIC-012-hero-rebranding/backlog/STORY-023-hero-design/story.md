@@ -7,25 +7,28 @@ priority: P1
 sprint: S1
 ---
 
-## Context
 
 Design en implementeer de nieuwe hero section volgens Tesoro brand guidelines. 60/40 split layout met Kanban interface screenshot en floating elements.
 
 ## Acceptance Criteria
 
-- [ ] 60/40 split layout (text left, visual right)
-- [ ] Tesoro brand kleuren: Navy (#0A1F44), Coral (#FF6B9D), Orange (#FF9F43)
-- [ ] Typography: Inter/Poppins, headline 56px desktop / 36px mobile
-- [ ] Screenshot van Kanban interface met "Proposed lane"
-- [ ] Floating metric card (top right)
-- [ ] Floating feature badge (bottom)
-- [ ] CTA buttons: Orange primary, Navy outline secondary
-- [ ] Trust bar met 3 items (pricing, integration, commitment)
-- [ ] Responsive design (mobile, tablet, desktop)
-- [ ] Accessibility AA compliant
+- [ ] Hero layout volgt dynamisch 55/45 of 60/40 split met motion layer
+- [ ] Tesoro kleuren (navy, coral, orange, beige) toegepast inclusief gradient accents
+- [ ] Kanban screenshot placeholders plus floating cards met animatie-haken
+- [ ] Metric badge + feature badge met pulse-effect toegevoegd
+- [ ] Hero responsief voor desktop, tablet, mobiel en behoudt animaties
+- [ ] Reduced motion fallback zonder loops
+
+## Design Notes
+
+- Gebruik layering voor depth (cards, badges, glow)
+- CTA primary = oranje, secondary = navy outline
+- Trust bar in 1 regel onder CTA's
+- Hero moet Matching Pulse strip of alternatief dynamisch element bevatten
+- Motion consistent met richtlijnen in `HERO_CONCEPTS.md`
 
 ## Design Specificaties
-
+{{ ... }}
 ### Layout
 - Container max-width: 1280px
 - Left column: 60% (text content)

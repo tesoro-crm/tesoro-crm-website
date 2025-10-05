@@ -9,7 +9,7 @@ const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
 
 const snapshot: StatusSnapshot = await loadStatusSnapshot();
-const epics: readonly EpicRecord[] = snapshot.epics;
+const epics: readonly EpicRecord[] = [...snapshot.epics].reverse(); // Nieuwste bovenaan
 const stories: readonly StoryRecord[] = epics.flatMap((epic) => epic.stories);
 const issues: readonly IssueRecord[] = stories.flatMap((story) => story.issues);
 
@@ -197,11 +197,17 @@ function getChipClass(status: string): string {
   <script>
     import { marked } from 'marked';
 
-    const drawer = document.getElementById('drawer');
-    const drawerOverlay = document.getElementById('drawerOverlay');
-    const drawerClose = document.getElementById('drawerClose');
-    const drawerTitle = document.getElementById('drawerTitle');
-    const drawerContent = document.getElementById('drawerContent');
+    function initStatusDrawer() {
+      const drawer = document.getElementById('drawer');
+      const drawerOverlay = document.getElementById('drawerOverlay');
+      const drawerClose = document.getElementById('drawerClose');
+      const drawerTitle = document.getElementById('drawerTitle');
+      const drawerContent = document.getElementById('drawerContent');
+
+      if (!drawer || !drawerOverlay || !drawerClose || !drawerTitle || !drawerContent) {
+        console.error('Drawer elements not found');
+        return;
+      }
 
     async function openDrawer(type: string, data: any) {
       if (!drawerTitle || !drawerContent || !drawer || !drawerOverlay) return;
@@ -337,11 +343,18 @@ function getChipClass(status: string): string {
       });
     });
 
-    // Auto-refresh (disabled when drawer is open)
-    setInterval(() => {
-      if (drawer?.classList.contains('translate-x-full')) {
-        window.location.reload();
-      }
-    }, 15000);
+      // Auto-refresh (disabled when drawer is open)
+      setInterval(() => {
+        if (drawer?.classList.contains('translate-x-full')) {
+          window.location.reload();
+        }
+      }, 15000);
+    }
+
+    // Run on initial load
+    initStatusDrawer();
+
+    // Re-run after View Transitions
+    document.addEventListener('astro:after-swap', initStatusDrawer);
   </script>
 </Layout>

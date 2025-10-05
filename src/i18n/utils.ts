@@ -51,14 +51,22 @@ export function t(key: TranslationKey, lang: Language = defaultLang): string {
 }
 
 /**
- * Get current locale from Astro
+ * Get current locale from Astro or URL
  */
-export function getLocale(astroLocale: string | undefined): Language {
-  if (!astroLocale) return defaultLang;
+export function getLocale(astroLocale: string | undefined, url?: URL): Language {
+  // First try Astro.currentLocale
+  if (astroLocale) {
+    const locale = astroLocale.toLowerCase();
+    if (locale === 'nl' || locale === 'en' || locale === 'es') {
+      return locale;
+    }
+  }
   
-  const locale = astroLocale.toLowerCase();
-  if (locale === 'nl' || locale === 'en' || locale === 'es') {
-    return locale;
+  // Fallback: detect from URL path
+  if (url) {
+    const path = url.pathname;
+    if (path.startsWith('/nl')) return 'nl';
+    if (path.startsWith('/en')) return 'en';
   }
   
   return defaultLang;
