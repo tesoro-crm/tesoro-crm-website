@@ -10,11 +10,13 @@
     "lint": "eslint . --ext .js,.ts,.tsx,.astro",
     "test": "echo 'No tests defined yet' && exit 0",
     "deploy:preview": "npm run build && wrangler pages deploy dist --branch preview",
-    "deploy:production": "npm run build && wrangler pages deploy dist --branch main"
+    "deploy:production": "npm run build && wrangler pages deploy dist --branch main",
+    "export:tracker": "node scripts/export-project-tracker.mjs"
   },
   "dependencies": {
     "astro": "^5.14.1",
-    "marked": "^16.3.0"
+    "marked": "^16.3.0",
+    "yaml": "^2.6.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
