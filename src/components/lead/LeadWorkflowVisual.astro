@@ -1,0 +1,610 @@
+---
+// src/components/lead/LeadWorkflowVisual.astro
+// Interactive timeline visualization of the lead workflow
+---
+<div class="lead-visual">
+  <div class="lead-visual__timeline">
+    <div class="lead-visual__step" data-step="1">
+      <div class="lead-visual__step-number">1</div>
+      <div class="lead-visual__step-icon">⚡</div>
+      <div class="lead-visual__step-content">
+        <h3 class="lead-visual__step-title">Lead komt binnen</h3>
+        <p class="lead-visual__step-text">Direct in uw inbox</p>
+      </div>
+    </div>
+
+    <div class="lead-visual__step" data-step="2">
+      <div class="lead-visual__step-number">2</div>
+      <div class="lead-visual__step-icon">📞</div>
+      <div class="lead-visual__step-content">
+        <h3 class="lead-visual__step-title">Bel in één klik</h3>
+        <p class="lead-visual__step-text">Gesprek wordt opgenomen</p>
+      </div>
+    </div>
+
+    <div class="lead-visual__step" data-step="3">
+      <div class="lead-visual__step-number">3</div>
+      <div class="lead-visual__step-icon">✉️</div>
+      <div class="lead-visual__step-content">
+        <h3 class="lead-visual__step-title">Follow-up in 3 kliks</h3>
+        <p class="lead-visual__step-text">Gepersonaliseerd, direct verzonden</p>
+      </div>
+    </div>
+
+    <div class="lead-visual__step" data-step="4">
+      <div class="lead-visual__step-number">4</div>
+      <div class="lead-visual__step-icon">✓</div>
+      <div class="lead-visual__step-content">
+        <h3 class="lead-visual__step-title">Niets gaat verloren</h3>
+        <p class="lead-visual__step-text">Volledige communicatie op één plek</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-visual__mockup">
+    <!-- Step 1: Email notification -->
+    <div class="lead-visual__screen" data-screen="1">
+      <div class="mockup-email">
+        <div class="mockup-email__badge">NIEUW</div>
+        <div class="mockup-email__header">Nieuwe lead: Jan Jansen</div>
+        <div class="mockup-email__body">
+          <p>📧 Lead ontvangen via Instagram</p>
+          <p>📍 Interesse: Villa in Marbella</p>
+        </div>
+        <button class="mockup-email__cta">Bekijk lead in Tesoro →</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Call interface -->
+    <div class="lead-visual__screen" data-screen="2">
+      <div class="mockup-call">
+        <div class="mockup-call__header">
+          <h3>Jan Jansen</h3>
+          <span class="mockup-call__status">Nieuwe lead</span>
+        </div>
+        <button class="mockup-call__button">
+          <span class="mockup-call__icon">📞</span>
+          <span class="mockup-call__text">Bellen</span>
+        </button>
+        <div class="mockup-call__recording">
+          <span class="mockup-call__recording-icon">🔴</span>
+          Gesprek wordt opgenomen
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Email template -->
+    <div class="lead-visual__screen" data-screen="3">
+      <div class="mockup-template">
+        <div class="mockup-template__header">Follow-up e-mail</div>
+        <div class="mockup-template__providers">
+          <img src="/assets/office365-logo.svg" alt="Office 365" class="mockup-template__logo" />
+          <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
+        </div>
+        <select class="mockup-template__select">
+          <option>Kies een template...</option>
+          <option>Bedankt voor uw interesse</option>
+          <option>Ik bel u later vandaag terug</option>
+          <option>Meer informatie over de woning</option>
+        </select>
+        <button class="mockup-template__send">Verstuur e-mail</button>
+      </div>
+    </div>
+
+    <!-- Step 4: History -->
+    <div class="lead-visual__screen" data-screen="4">
+      <div class="mockup-history">
+        <div class="mockup-history__header">Communicatie historie</div>
+        <div class="mockup-history__list">
+          <div class="mockup-history__item">
+            <span class="mockup-history__icon">📧</span>
+            <div class="mockup-history__content">
+              <strong>E-mail verstuurd</strong>
+              <span class="mockup-history__time">Vandaag, 14:32</span>
+            </div>
+          </div>
+          <div class="mockup-history__item">
+            <span class="mockup-history__icon">📞</span>
+            <div class="mockup-history__content">
+              <strong>Gesprek opgenomen (2:34)</strong>
+              <span class="mockup-history__time">Vandaag, 14:15</span>
+            </div>
+          </div>
+          <div class="mockup-history__item">
+            <span class="mockup-history__icon">⚡</span>
+            <div class="mockup-history__content">
+              <strong>Lead ontvangen</strong>
+              <span class="mockup-history__time">Vandaag, 14:10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initLeadVisual(): void {
+    const steps = document.querySelectorAll('[data-step]') as NodeListOf<HTMLElement>;
+    const screens = document.querySelectorAll('[data-screen]') as NodeListOf<HTMLElement>;
+    let currentStep = 1;
+    let autoPlayInterval: number | null = null;
+
+    const showStep = (stepNumber: number): void => {
+      // Update active step
+      steps.forEach((step) => {
+        const stepNum = parseInt(step.getAttribute('data-step') || '0');
+        if (stepNum === stepNumber) {
+          step.classList.add('active');
+          if (stepNum <= currentStep) {
+            step.classList.add('completed');
+          }
+        } else {
+          step.classList.remove('active');
+        }
+      });
+
+      // Update active screen
+      screens.forEach((screen) => {
+        const screenNum = parseInt(screen.getAttribute('data-screen') || '0');
+        if (screenNum === stepNumber) {
+          screen.classList.add('active');
+        } else {
+          screen.classList.remove('active');
+        }
+      });
+    };
+
+    const nextStep = (): void => {
+      currentStep = currentStep >= 4 ? 1 : currentStep + 1;
+      showStep(currentStep);
+    };
+
+    const startAutoPlay = (): void => {
+      if (autoPlayInterval) clearInterval(autoPlayInterval);
+      autoPlayInterval = window.setInterval(nextStep, 3000);
+    };
+
+    const stopAutoPlay = (): void => {
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+      }
+    };
+
+    // Manual step navigation
+    steps.forEach((step) => {
+      step.addEventListener('click', () => {
+        const stepNum = parseInt(step.getAttribute('data-step') || '0');
+        currentStep = stepNum;
+        showStep(stepNum);
+        stopAutoPlay();
+        setTimeout(startAutoPlay, 5000); // Resume after 5s
+      });
+    });
+
+    // Initialize
+    showStep(1);
+    startAutoPlay();
+
+    // Pause on hover
+    const visual = document.querySelector('.lead-visual');
+    visual?.addEventListener('mouseenter', stopAutoPlay);
+    visual?.addEventListener('mouseleave', startAutoPlay);
+  }
+
+  // Run on load
+  initLeadVisual();
+
+  // Re-run after View Transitions
+  document.addEventListener('astro:after-swap', initLeadVisual);
+</script>
+
+<style>
+  .lead-visual {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .lead-visual {
+      grid-template-columns: 40% 60%;
+      gap: 3rem;
+    }
+  }
+
+  /* Timeline */
+  .lead-visual__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  .lead-visual__timeline::before {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+    bottom: 3rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #ff9f43, #ff6b9d);
+    opacity: 0.3;
+  }
+
+  .lead-visual__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .lead-visual__step:hover {
+    background: rgba(255, 159, 67, 0.05);
+  }
+
+  .lead-visual__step.active {
+    background: rgba(255, 159, 67, 0.1);
+    box-shadow: 0 0 20px rgba(255, 159, 67, 0.3);
+  }
+
+  .lead-visual__step.completed .lead-visual__step-number {
+    background: #10b981;
+  }
+
+  .lead-visual__step-number {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #0a1f44;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  .lead-visual__step.active .lead-visual__step-number {
+    background: #ff9f43;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(255, 159, 67, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(255, 159, 67, 0);
+    }
+  }
+
+  .lead-visual__step-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .lead-visual__step-content {
+    flex: 1;
+  }
+
+  .lead-visual__step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 0.25rem;
+  }
+
+  .lead-visual__step-text {
+    font-size: 0.95rem;
+    color: rgba(10, 31, 68, 0.6);
+  }
+
+  /* Mockup screens */
+  .lead-visual__mockup {
+    position: relative;
+    min-height: 400px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(10, 31, 68, 0.12);
+    overflow: hidden;
+  }
+
+  .lead-visual__screen {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s ease;
+    pointer-events: none;
+  }
+
+  .lead-visual__screen.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  /* Email mockup */
+  .mockup-email {
+    max-width: 400px;
+  }
+
+  .mockup-email__badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #ef4444;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    animation: bounce 1s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .mockup-email__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1rem;
+  }
+
+  .mockup-email__body {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .mockup-email__body p {
+    margin: 0.5rem 0;
+    color: #0a1f44;
+  }
+
+  .mockup-email__cta {
+    width: 100%;
+    padding: 1rem;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .mockup-email__cta:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+  }
+
+  /* Call mockup */
+  .mockup-call {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .mockup-call__header {
+    margin-bottom: 2rem;
+  }
+
+  .mockup-call__header h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 0.5rem;
+  }
+
+  .mockup-call__status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #10b981;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+
+  .mockup-call__button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s ease;
+    animation: pulse-green 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-green {
+    0%, 100% {
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.4);
+    }
+    50% {
+      box-shadow: 0 20px 60px rgba(16, 185, 129, 0.6);
+    }
+  }
+
+  .mockup-call__button:hover {
+    transform: scale(1.05);
+  }
+
+  .mockup-call__icon {
+    font-size: 3rem;
+  }
+
+  .mockup-call__recording {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #0a1f44;
+    font-size: 0.95rem;
+  }
+
+  .mockup-call__recording-icon {
+    animation: blink 1.5s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Template mockup */
+  .mockup-template {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .mockup-template__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1.5rem;
+  }
+
+  .mockup-template__providers {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+  }
+
+  .mockup-template__logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .mockup-template__select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .mockup-template__send {
+    width: 100%;
+    padding: 1rem;
+    background: #ff9f43;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .mockup-template__send:hover {
+    background: #f59e0b;
+    transform: translateY(-2px);
+  }
+
+  /* History mockup */
+  .mockup-history {
+    max-width: 400px;
+  }
+
+  .mockup-history__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1.5rem;
+  }
+
+  .mockup-history__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mockup-history__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+  }
+
+  .mockup-history__icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .mockup-history__content {
+    flex: 1;
+  }
+
+  .mockup-history__content strong {
+    display: block;
+    color: #0a1f44;
+    margin-bottom: 0.25rem;
+  }
+
+  .mockup-history__time {
+    font-size: 0.875rem;
+    color: rgba(10, 31, 68, 0.5);
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 767px) {
+    .lead-visual__timeline::before {
+      left: 1.5rem;
+    }
+
+    .lead-visual__step-number {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+    }
+
+    .lead-visual__step-icon {
+      font-size: 1.5rem;
+    }
+
+    .lead-visual__step-title {
+      font-size: 1.1rem;
+    }
+
+    .mockup-call__button {
+      width: 150px;
+      height: 150px;
+    }
+
+    .mockup-call__icon {
+      font-size: 2rem;
+    }
+  }
+</style>
