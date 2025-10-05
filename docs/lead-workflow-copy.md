@@ -1,7 +1,7 @@
 # Lead Workflow Sectie - Definitieve Copy
 
 ## Headline
-U verliest kostbare leads omdat ze niet op tijd worden opgevolgd.
+U verliest kostbare leads omdat ze niet goed worden opgevolgd.
 
 ## Sub-headline
 Met Tesoro krijgt u direct een e-mail zodra er een nieuwe lead binnenkomt – en kunt u in één klik bellen, het gesprek opnemen en meteen een follow-up-mail sturen.
