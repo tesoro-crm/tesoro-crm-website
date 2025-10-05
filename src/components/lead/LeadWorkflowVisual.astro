@@ -169,8 +169,14 @@ const {
       <div class="mockup-template">
         <div class="mockup-template__header">{templateHeader}</div>
         <div class="mockup-template__providers">
-          <img src="/assets/office365-logo.svg" alt="Office 365" class="mockup-template__logo" />
-          <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
+          <div class="mockup-template__provider">
+            <span class="mockup-template__provider-icon">📧</span>
+            <span class="mockup-template__provider-name">Office 365</span>
+          </div>
+          <div class="mockup-template__provider">
+            <span class="mockup-template__provider-icon">✉️</span>
+            <span class="mockup-template__provider-name">Google</span>
+          </div>
         </div>
         <select class="mockup-template__select">
           <option>{templatePlaceholder}</option>
@@ -676,15 +682,29 @@ const {
 
   .mockup-template__providers {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
     justify-content: center;
   }
 
-  .mockup-template__logo {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
+  .mockup-template__provider {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+
+  .mockup-template__provider-icon {
+    font-size: 1.5rem;
+  }
+
+  .mockup-template__provider-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0a1f44;
   }
 
   .mockup-template__select {
