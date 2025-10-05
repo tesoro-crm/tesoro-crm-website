@@ -2,7 +2,43 @@
 // src/components/lead/LeadWorkflowSection.astro
 import LeadWorkflowVisual from './LeadWorkflowVisual.astro';
 
-/** @typedef {{title?: string; subtitle?: string; bullets?: readonly string[]; ctaLabel?: string; ctaHref?: string;}} LeadSectionProps */
+/** @typedef {{
+  title?: string; 
+  subtitle?: string; 
+  bullets?: readonly string[]; 
+  ctaLabel?: string; 
+  ctaHref?: string;
+  step1Title?: string;
+  step1Text?: string;
+  step2Title?: string;
+  step2Text?: string;
+  step3Title?: string;
+  step3Text?: string;
+  step4Title?: string;
+  step4Text?: string;
+  inboxLabel?: string;
+  newBadge?: string;
+  emailSubject?: string;
+  emailSource?: string;
+  emailInterest?: string;
+  emailBudget?: string;
+  emailCta?: string;
+  callStatus?: string;
+  callButton?: string;
+  callRecording?: string;
+  templateHeader?: string;
+  templatePlaceholder?: string;
+  templateOption1?: string;
+  templateOption2?: string;
+  templateOption3?: string;
+  templateSend?: string;
+  historyHeader?: string;
+  historyEmail?: string;
+  historyCall?: string;
+  historyReceived?: string;
+  timeNow?: string;
+  timeToday?: string;
+}} LeadSectionProps */
 
 /**
  * Lead Workflow sectie.
@@ -18,7 +54,37 @@ const {
     "Volledige historie: alle telefoongesprekken en e-mails staan onder één lead, zodat er niets verloren gaat."
   ],
   ctaLabel = "Bekijk de demo",
-  ctaHref = "#lead-demo"
+  ctaHref = "#lead-demo",
+  step1Title,
+  step1Text,
+  step2Title,
+  step2Text,
+  step3Title,
+  step3Text,
+  step4Title,
+  step4Text,
+  inboxLabel,
+  newBadge,
+  emailSubject,
+  emailSource,
+  emailInterest,
+  emailBudget,
+  emailCta,
+  callStatus,
+  callButton,
+  callRecording,
+  templateHeader,
+  templatePlaceholder,
+  templateOption1,
+  templateOption2,
+  templateOption3,
+  templateSend,
+  historyHeader,
+  historyEmail,
+  historyCall,
+  historyReceived,
+  timeNow,
+  timeToday
 } = Astro.props;
 ---
 <section class="lead-workflow">
@@ -28,7 +94,38 @@ const {
       <p class="lead-workflow__subtitle">{subtitle}</p>
     </div>
 
-    <LeadWorkflowVisual />
+    <LeadWorkflowVisual 
+      step1Title={step1Title}
+      step1Text={step1Text}
+      step2Title={step2Title}
+      step2Text={step2Text}
+      step3Title={step3Title}
+      step3Text={step3Text}
+      step4Title={step4Title}
+      step4Text={step4Text}
+      inboxLabel={inboxLabel}
+      newBadge={newBadge}
+      emailSubject={emailSubject}
+      emailSource={emailSource}
+      emailInterest={emailInterest}
+      emailBudget={emailBudget}
+      emailCta={emailCta}
+      callStatus={callStatus}
+      callButton={callButton}
+      callRecording={callRecording}
+      templateHeader={templateHeader}
+      templatePlaceholder={templatePlaceholder}
+      templateOption1={templateOption1}
+      templateOption2={templateOption2}
+      templateOption3={templateOption3}
+      templateSend={templateSend}
+      historyHeader={historyHeader}
+      historyEmail={historyEmail}
+      historyCall={historyCall}
+      historyReceived={historyReceived}
+      timeNow={timeNow}
+      timeToday={timeToday}
+    />
 
     <div class="lead-workflow__benefits">
       <ul class="lead-workflow__list">
