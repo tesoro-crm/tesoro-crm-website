@@ -9,6 +9,14 @@ export default tseslint.config(
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "error"
+    },
+    languageOptions: {
+      globals: {
+        ...astro.configs["flat/recommended"][0].languageOptions.globals,
+        location: "readonly",
+        URL: "readonly",
+        URLSearchParams: "readonly"
+      }
     }
   }
 );
