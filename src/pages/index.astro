@@ -3,11 +3,127 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import HeroSimple from '../components/hero/HeroSimple.astro';
 import { getLocale, loadTranslations, t } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
-const locale: Language = getLocale(Astro.currentLocale);
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
+
+interface HeroMetric {
+  readonly label: string;
+  readonly value: string;
+  readonly subtitle: string;
+}
+
+interface HeroTickerItem {
+  readonly property: string;
+  readonly match: string;
+  readonly score: string;
+}
+
+interface HeroHighlight {
+  readonly title: string;
+  readonly description: string;
+}
+
+type HeroSlide =
+  | {
+      readonly id: 'matching';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly ticker: {
+        readonly label: string;
+        readonly items: readonly HeroTickerItem[];
+      };
+    }
+  | {
+      readonly id: 'portal';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly highlights: readonly HeroHighlight[];
+    };
+
+const heroMetric: HeroMetric = {
+  label: t('home.hero.metric_label', locale),
+  value: t('home.hero.metric_value', locale),
+  subtitle: t('home.hero.metric_sub', locale),
+};
+
+const heroTickerItems: readonly HeroTickerItem[] = [
+  {
+    property: t('home.hero.ticker.item_1_property', locale),
+    match: t('home.hero.ticker.item_1_match', locale),
+    score: t('home.hero.ticker.item_1_score', locale),
+  },
+  {
+    property: t('home.hero.ticker.item_2_property', locale),
+    match: t('home.hero.ticker.item_2_match', locale),
+    score: t('home.hero.ticker.item_2_score', locale),
+  },
+  {
+    property: t('home.hero.ticker.item_3_property', locale),
+    match: t('home.hero.ticker.item_3_match', locale),
+    score: t('home.hero.ticker.item_3_score', locale),
+  },
+];
+
+const heroSlides: readonly HeroSlide[] = [
+  {
+    id: 'matching',
+    label: t('home.hero.carousel_slide_matching', locale),
+    badge: t('home.hero.badge', locale),
+    headline: t('home.hero.headline', locale),
+    subheadline: t('home.hero.subheadline', locale),
+    floatingBadge: t('home.hero.floating_badge', locale),
+    ticker: {
+      label: t('home.hero.ticker.label', locale),
+      items: heroTickerItems,
+    },
+  },
+  {
+    id: 'portal',
+    label: t('home.hero.carousel_slide_portal', locale),
+    badge: t('home.hero.secondary_badge', locale),
+    headline: t('home.hero.secondary_headline', locale),
+    subheadline: t('home.hero.secondary_subheadline', locale),
+    floatingBadge: t('home.hero.secondary_badge', locale),
+    highlights: [
+      {
+        title: t('home.hero.portal_highlight_1_title', locale),
+        description: t('home.hero.portal_highlight_1_description', locale),
+      },
+      {
+        title: t('home.hero.portal_highlight_2_title', locale),
+        description: t('home.hero.portal_highlight_2_description', locale),
+      },
+      {
+        title: t('home.hero.portal_highlight_3_title', locale),
+        description: t('home.hero.portal_highlight_3_description', locale),
+      },
+    ],
+  },
+];
+
+const heroTrust: readonly string[] = [
+  t('home.hero.trust_pricing', locale),
+  t('home.hero.trust_integration', locale),
+  t('home.hero.trust_commitment', locale),
+];
+
+const heroCtas = {
+  primary: t('home.hero.cta_primary', locale),
+  secondary: t('home.hero.cta_secondary', locale),
+  video: t('home.hero.cta_video', locale),
+} as const;
+
+const heroCarouselLabel = t('home.hero.carousel_label', locale);
 
 const features = [
   {
@@ -81,96 +197,25 @@ const faqs = [
   title={t('meta.home_title', locale)}
   description={t('meta.home_description', locale)}
 >
-  <!-- Hero Section - Tesoro Brand -->
-  <section class="relative bg-[#FAF9F7] py-16 lg:py-24 overflow-hidden">
-    <!-- Subtle background pattern -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-    </div>
-    
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-12 items-center">
-        <!-- Left: Content (60%) -->
-        <div class="text-center lg:text-left">
-          <!-- Badge -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-6">
-            {t('home.hero.badge', locale)}
-          </div>
-          
-          <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-display font-bold mb-6 leading-[1.1] text-primary">
-            {t('home.hero.headline', locale)}
-          </h1>
-          
-          <!-- Subheadline -->
-          <p class="text-lg sm:text-xl text-primary/70 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            {t('home.hero.subheadline', locale)}
-          </p>
-          
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <a 
-              href="#contact" 
-              class="inline-flex items-center justify-center px-8 py-4 bg-accent hover:bg-accent-dark text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            >
-              {t('home.hero.cta_primary', locale)}
-            </a>
-            <a 
-              href="#demo" 
-              class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold rounded-lg transition-all duration-200"
-            >
-              {t('home.hero.cta_secondary', locale)}
-            </a>
-          </div>
-          
-          <!-- Trust Bar -->
-          <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-primary/60 justify-center lg:justify-start">
-            <span class="flex items-center gap-2">
-              <span class="text-accent text-xl">✓</span>
-              <span class="font-medium">{t('home.hero.trust_pricing', locale)}</span>
-            </span>
-            <span class="flex items-center gap-2">
-              <span class="text-accent text-xl">✓</span>
-              <span class="font-medium">{t('home.hero.trust_integration', locale)}</span>
-            </span>
-            <span class="flex items-center gap-2">
-              <span class="text-accent text-xl">✓</span>
-              <span class="font-medium">{t('home.hero.trust_commitment', locale)}</span>
-            </span>
-          </div>
-        </div>
-        
-        <!-- Right: Visual (40%) -->
-        <div class="hidden lg:block">
-          <div class="relative">
-            <!-- Floating metric card (top right) -->
-            <div class="absolute -top-4 -right-4 bg-white rounded-xl shadow-xl p-4 z-20">
-              <div class="text-sm text-primary/60 mb-1">Matching/día</div>
-              <div class="text-3xl font-bold text-primary">2x</div>
-              <div class="text-xs text-accent font-medium">Automático</div>
-            </div>
-            
-            <!-- Main visual placeholder (Kanban interface) -->
-            <div class="relative bg-white rounded-xl shadow-2xl p-6 border border-neutral-200">
-              <div class="aspect-[4/3] bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-lg flex items-center justify-center">
-                <div class="text-center">
-                  <div class="text-6xl mb-4">📊</div>
-                  <div class="text-sm text-primary/60 font-medium">Kanban Interface</div>
-                  <div class="text-xs text-primary/40">Screenshot placeholder</div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Floating feature badge (bottom) -->
-            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-accent text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold whitespace-nowrap z-20">
-              Matching automático en tiempo real
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSimple 
+    badge={t('home.hero.badge', locale)}
+    headline={t('home.hero.headline', locale)}
+    subheadline={t('home.hero.subheadline', locale)}
+    ctaPrimary={t('home.hero.cta_primary', locale)}
+    ctaSecondary={t('home.hero.cta_secondary', locale)}
+    trust={heroTrust}
+    kanbanProposed={t('home.hero.kanban_proposed', locale)}
+    kanbanInterested={t('home.hero.kanban_interested', locale)}
+    kanbanRejected={t('home.hero.kanban_rejected', locale)}
+    properties={[
+      t('home.hero.property_1', locale),
+      t('home.hero.property_2', locale),
+      t('home.hero.property_3', locale),
+      t('home.hero.property_4', locale),
+      t('home.hero.property_5', locale),
+      t('home.hero.property_6', locale)
+    ]}
+  />
 
   <!-- Stats Bar -->
   <section class="bg-white border-b border-neutral-200 py-8">

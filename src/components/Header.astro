@@ -5,11 +5,11 @@ import { languages, languageFlags } from '../i18n/config';
 import type { Language } from '../i18n/config';
 
 const currentPath = Astro.url.pathname;
-const locale: Language = getLocale(Astro.currentLocale);
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 
 // Get base path without language prefix
-const basePath = currentPath.replace(/^\/(en|es)/, '') || '/';
+const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 ---
 
 <header class="sticky top-0 z-50 bg-white border-b border-neutral-200 shadow-sm">
