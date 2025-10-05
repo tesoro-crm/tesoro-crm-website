@@ -1,0 +1,103 @@
+---
+// src/components/lead/LeadWorkflowSection.astro
+/** @typedef {{title?: string; subtitle?: string; bullets?: readonly string[]; ctaLabel?: string; ctaHref?: string; imgSrc?: string;}} LeadSectionProps */
+
+/**
+ * Lead Workflow sectie.
+ * @param {LeadSectionProps} Astro.props
+ */
+const {
+  title = "U verliest kostbare leads omdat ze niet goed worden opgevolgd.",
+  subtitle = "Met Tesoro krijgt u direct een e-mail zodra er een nieuwe lead binnenkomt – en kunt u in één klik bellen, het gesprek opnemen en meteen een follow-up-mail sturen.",
+  bullets = [
+    "Directe melding: een e-mail met een link naar de lead in Tesoro.",
+    "Eén-klik bellen: start het gesprek vanuit Tesoro; de opname wordt automatisch opgeslagen bij de lead.",
+    "Altijd een backup: als de opname niet beschikbaar is, kunt u in drie klikken een gepersonaliseerde e-mail versturen via Office 365 of Google Business.",
+    "Volledige historie: alle telefoongesprekken en e-mails staan onder één lead, zodat er niets verloren gaat."
+  ],
+  ctaLabel = "Bekijk de demo",
+  ctaHref = "#lead-demo",
+  imgSrc = "/assets/lead-detail-placeholder.png"
+} = Astro.props;
+---
+<section class="lead-workflow">
+  <div class="lead-workflow__grid">
+    <!-- Tekstkolom -->
+    <div class="lead-workflow__content">
+      <h2 class="lead-workflow__title">{title}</h2>
+      <p class="lead-workflow__subtitle">{subtitle}</p>
+
+      <ul class="lead-workflow__list">
+        {bullets.map((b: string) => (
+          <li class="lead-workflow__item">{b}</li>
+        ))}
+      </ul>
+
+      <a class="lead-workflow__cta" href={ctaHref}>{ctaLabel}</a>
+    </div>
+
+    <!-- Visual kolom -->
+    <div class="lead-workflow__visual">
+      <img src={imgSrc} alt="Voorbeeld van de Tesoro lead-detailpagina met bel- en e-mail functies" class="lead-workflow__image" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .lead-workflow {
+    padding: 4rem 0;
+    background: #faf9f7;
+  }
+  .lead-workflow__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .lead-workflow__grid {
+      grid-template-columns: 45% 55%;
+    }
+  }
+  .lead-workflow__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 0.5rem;
+  }
+  .lead-workflow__subtitle {
+    font-size: 1.1rem;
+    color: rgba(10, 31, 68, 0.7);
+    margin-bottom: 1.5rem;
+  }
+  .lead-workflow__list {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style: disc;
+    color: #0a1f44;
+  }
+  .lead-workflow__item {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  .lead-workflow__cta {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: #ff9f43;
+    color: #fff;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .lead-workflow__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px rgba(255, 159, 67, 0.35);
+  }
+  .lead-workflow__image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+</style>

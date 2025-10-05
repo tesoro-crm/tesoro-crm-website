@@ -4,6 +4,7 @@ import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
 import HeroSimple from '../components/hero/HeroSimple.astro';
+import LeadWorkflowSection from '../components/lead/LeadWorkflowSection.astro';
 import CoCreated from '../components/sections/CoCreated.astro';
 import { getLocale, loadTranslations, t } from '../i18n/utils';
 import type { Language } from '../i18n/config';
@@ -104,6 +105,8 @@ const faqs = [
       t('home.hero.property_6', locale)
     ]}
   />
+
+  <LeadWorkflowSection />
 
   <!-- Co-Created Section -->
   <CoCreated locale={locale} />
