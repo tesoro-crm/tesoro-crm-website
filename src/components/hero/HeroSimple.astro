@@ -1,6 +1,5 @@
 ---
 interface Props {
-  readonly badge: string;
   readonly headline: string;
   readonly subheadline: string;
   readonly ctaPrimary: string;
@@ -135,18 +134,18 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, 
       if (!kanban || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;
       }
-      const mainCard = kanban.querySelector('[data-property-card="main"]');
-      const secondCard = kanban.querySelector('[data-property-card="second"]');
+      const mainCard = kanban.querySelector('[data-property-card="main"]') as HTMLElement | null;
+      const secondCard = kanban.querySelector('[data-property-card="second"]') as HTMLElement | null;
       let step = 0;
 
-      const animateCard = (card, toStageIndex) => {
+      const animateCard = (card: HTMLElement | null, toStageIndex: number): void => {
         if (!card) return;
         
-        const targetStage = kanban.querySelectorAll('[data-stage]')[toStageIndex];
-        const targetCards = targetStage?.querySelector('[data-kanban-cards]');
+        const targetStage = kanban.querySelectorAll('[data-stage]')[toStageIndex] as HTMLElement | null;
+        const targetCards = targetStage?.querySelector('[data-kanban-cards]') as HTMLElement | null;
         if (!targetCards) return;
         
-        const clone = card.cloneNode(true);
+        const clone = card.cloneNode(true) as HTMLElement;
         const startRect = card.getBoundingClientRect();
         const kanbanRect = kanban.getBoundingClientRect();
         
@@ -188,7 +187,7 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, 
           setTimeout(() => {
             step = 0;
             // Fade out all cards
-            const allCards = kanban.querySelectorAll('.hero-simple__property-card');
+            const allCards = kanban.querySelectorAll('.hero-simple__property-card') as NodeListOf<HTMLElement>;
             allCards.forEach(card => {
               card.style.transition = 'opacity 0.3s ease';
               card.style.opacity = '0';
