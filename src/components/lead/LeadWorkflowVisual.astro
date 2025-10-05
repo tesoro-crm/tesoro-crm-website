@@ -1,6 +1,76 @@
 ---
 // src/components/lead/LeadWorkflowVisual.astro
 // Interactive timeline visualization of the lead workflow
+
+/** @typedef {{
+  step1Title?: string;
+  step1Text?: string;
+  step2Title?: string;
+  step2Text?: string;
+  step3Title?: string;
+  step3Text?: string;
+  step4Title?: string;
+  step4Text?: string;
+  inboxLabel?: string;
+  newBadge?: string;
+  emailSubject?: string;
+  emailSource?: string;
+  emailInterest?: string;
+  emailBudget?: string;
+  emailCta?: string;
+  callStatus?: string;
+  callButton?: string;
+  callRecording?: string;
+  templateHeader?: string;
+  templatePlaceholder?: string;
+  templateOption1?: string;
+  templateOption2?: string;
+  templateOption3?: string;
+  templateSend?: string;
+  historyHeader?: string;
+  historyEmail?: string;
+  historyCall?: string;
+  historyReceived?: string;
+  timeNow?: string;
+  timeToday?: string;
+}} LeadVisualProps */
+
+/**
+ * Lead Workflow Visual component.
+ * @param {LeadVisualProps} Astro.props
+ */
+const {
+  step1Title = "Lead komt binnen",
+  step1Text = "Direct in uw inbox",
+  step2Title = "Bel in één klik",
+  step2Text = "Gesprek wordt opgenomen",
+  step3Title = "Follow-up in 3 kliks",
+  step3Text = "Gepersonaliseerd, direct verzonden",
+  step4Title = "Niets gaat verloren",
+  step4Text = "Volledige communicatie op één plek",
+  inboxLabel = "Inbox",
+  newBadge = "NIEUW",
+  emailSubject = "Nieuwe lead: Jan Jansen",
+  emailSource = "Lead ontvangen via Instagram",
+  emailInterest = "Interesse: Villa in Marbella",
+  emailBudget = "Budget: €500.000 - €750.000",
+  emailCta = "Bekijk lead in Tesoro →",
+  callStatus = "Nieuwe lead",
+  callButton = "Bellen",
+  callRecording = "Gesprek wordt opgenomen",
+  templateHeader = "Follow-up e-mail",
+  templatePlaceholder = "Kies een template...",
+  templateOption1 = "Bedankt voor uw interesse",
+  templateOption2 = "Ik bel u later vandaag terug",
+  templateOption3 = "Meer informatie over de woning",
+  templateSend = "Verstuur e-mail",
+  historyHeader = "Communicatie historie",
+  historyEmail = "E-mail verstuurd",
+  historyCall = "Gesprek opgenomen (2:34)",
+  historyReceived = "Lead ontvangen",
+  timeNow = "Nu",
+  timeToday = "Vandaag"
+} = Astro.props;
 ---
 <div class="lead-visual">
   <div class="lead-visual__timeline">
@@ -8,8 +78,8 @@
       <div class="lead-visual__step-number">1</div>
       <div class="lead-visual__step-icon">⚡</div>
       <div class="lead-visual__step-content">
-        <h3 class="lead-visual__step-title">Lead komt binnen</h3>
-        <p class="lead-visual__step-text">Direct in uw inbox</p>
+        <h3 class="lead-visual__step-title">{step1Title}</h3>
+        <p class="lead-visual__step-text">{step1Text}</p>
       </div>
     </div>
 
@@ -17,8 +87,8 @@
       <div class="lead-visual__step-number">2</div>
       <div class="lead-visual__step-icon">📞</div>
       <div class="lead-visual__step-content">
-        <h3 class="lead-visual__step-title">Bel in één klik</h3>
-        <p class="lead-visual__step-text">Gesprek wordt opgenomen</p>
+        <h3 class="lead-visual__step-title">{step2Title}</h3>
+        <p class="lead-visual__step-text">{step2Text}</p>
       </div>
     </div>
 
@@ -26,8 +96,8 @@
       <div class="lead-visual__step-number">3</div>
       <div class="lead-visual__step-icon">✉️</div>
       <div class="lead-visual__step-content">
-        <h3 class="lead-visual__step-title">Follow-up in 3 kliks</h3>
-        <p class="lead-visual__step-text">Gepersonaliseerd, direct verzonden</p>
+        <h3 class="lead-visual__step-title">{step3Title}</h3>
+        <p class="lead-visual__step-text">{step3Text}</p>
       </div>
     </div>
 
@@ -35,8 +105,8 @@
       <div class="lead-visual__step-number">4</div>
       <div class="lead-visual__step-icon">✓</div>
       <div class="lead-visual__step-content">
-        <h3 class="lead-visual__step-title">Niets gaat verloren</h3>
-        <p class="lead-visual__step-text">Volledige communicatie op één plek</p>
+        <h3 class="lead-visual__step-title">{step4Title}</h3>
+        <p class="lead-visual__step-text">{step4Text}</p>
       </div>
     </div>
   </div>
@@ -48,7 +118,7 @@
         <div class="mockup-email__toolbar">
           <div class="mockup-email__toolbar-left">
             <span class="mockup-email__toolbar-icon">📥</span>
-            <span class="mockup-email__toolbar-title">Inbox</span>
+            <span class="mockup-email__toolbar-title">{inboxLabel}</span>
           </div>
           <div class="mockup-email__toolbar-right">
             <span class="mockup-email__badge-count">1</span>
@@ -60,18 +130,18 @@
               <div class="mockup-email__avatar">T</div>
               <div class="mockup-email__sender-info">
                 <strong>Tesoro CRM</strong>
-                <span class="mockup-email__time">Nu</span>
+                <span class="mockup-email__time">{timeNow}</span>
               </div>
             </div>
-            <div class="mockup-email__badge">NIEUW</div>
+            <div class="mockup-email__badge">{newBadge}</div>
           </div>
-          <div class="mockup-email__subject">Nieuwe lead: Jan Jansen</div>
+          <div class="mockup-email__subject">{emailSubject}</div>
           <div class="mockup-email__body">
-            <p>📧 Lead ontvangen via Instagram</p>
-            <p>📍 Interesse: Villa in Marbella</p>
-            <p>💰 Budget: €500.000 - €750.000</p>
+            <p>📧 {emailSource}</p>
+            <p>📍 {emailInterest}</p>
+            <p>💰 {emailBudget}</p>
           </div>
-          <button class="mockup-email__cta">Bekijk lead in Tesoro →</button>
+          <button class="mockup-email__cta">{emailCta}</button>
         </div>
       </div>
     </div>
@@ -81,15 +151,15 @@
       <div class="mockup-call">
         <div class="mockup-call__header">
           <h3>Jan Jansen</h3>
-          <span class="mockup-call__status">Nieuwe lead</span>
+          <span class="mockup-call__status">{callStatus}</span>
         </div>
         <button class="mockup-call__button">
           <span class="mockup-call__icon">📞</span>
-          <span class="mockup-call__text">Bellen</span>
+          <span class="mockup-call__text">{callButton}</span>
         </button>
         <div class="mockup-call__recording">
           <span class="mockup-call__recording-icon">🔴</span>
-          Gesprek wordt opgenomen
+          {callRecording}
         </div>
       </div>
     </div>
@@ -97,45 +167,45 @@
     <!-- Step 3: Email template -->
     <div class="lead-visual__screen" data-screen="3">
       <div class="mockup-template">
-        <div class="mockup-template__header">Follow-up e-mail</div>
+        <div class="mockup-template__header">{templateHeader}</div>
         <div class="mockup-template__providers">
           <img src="/assets/office365-logo.svg" alt="Office 365" class="mockup-template__logo" />
           <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
         </div>
         <select class="mockup-template__select">
-          <option>Kies een template...</option>
-          <option>Bedankt voor uw interesse</option>
-          <option>Ik bel u later vandaag terug</option>
-          <option>Meer informatie over de woning</option>
+          <option>{templatePlaceholder}</option>
+          <option>{templateOption1}</option>
+          <option>{templateOption2}</option>
+          <option>{templateOption3}</option>
         </select>
-        <button class="mockup-template__send">Verstuur e-mail</button>
+        <button class="mockup-template__send">{templateSend}</button>
       </div>
     </div>
 
     <!-- Step 4: History -->
     <div class="lead-visual__screen" data-screen="4">
       <div class="mockup-history">
-        <div class="mockup-history__header">Communicatie historie</div>
+        <div class="mockup-history__header">{historyHeader}</div>
         <div class="mockup-history__list">
           <div class="mockup-history__item">
             <span class="mockup-history__icon">📧</span>
             <div class="mockup-history__content">
-              <strong>E-mail verstuurd</strong>
-              <span class="mockup-history__time">Vandaag, 14:32</span>
+              <strong>{historyEmail}</strong>
+              <span class="mockup-history__time">{timeToday}, 14:32</span>
             </div>
           </div>
           <div class="mockup-history__item">
             <span class="mockup-history__icon">📞</span>
             <div class="mockup-history__content">
-              <strong>Gesprek opgenomen (2:34)</strong>
-              <span class="mockup-history__time">Vandaag, 14:15</span>
+              <strong>{historyCall}</strong>
+              <span class="mockup-history__time">{timeToday}, 14:15</span>
             </div>
           </div>
           <div class="mockup-history__item">
             <span class="mockup-history__icon">⚡</span>
             <div class="mockup-history__content">
-              <strong>Lead ontvangen</strong>
-              <span class="mockup-history__time">Vandaag, 14:10</span>
+              <strong>{historyReceived}</strong>
+              <span class="mockup-history__time">{timeToday}, 14:10</span>
             </div>
           </div>
         </div>
