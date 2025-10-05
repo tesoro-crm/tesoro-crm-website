@@ -11,106 +11,6 @@ import type { Language } from '../i18n/config';
 const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 
-interface HeroMetric {
-  readonly label: string;
-  readonly value: string;
-  readonly subtitle: string;
-}
-
-interface HeroTickerItem {
-  readonly property: string;
-  readonly match: string;
-  readonly score: string;
-}
-
-interface HeroHighlight {
-  readonly title: string;
-  readonly description: string;
-}
-
-type HeroSlide =
-  | {
-      readonly id: 'matching';
-      readonly label: string;
-      readonly badge: string;
-      readonly headline: string;
-      readonly subheadline: string;
-      readonly floatingBadge: string;
-      readonly ticker: {
-        readonly label: string;
-        readonly items: readonly HeroTickerItem[];
-      };
-    }
-  | {
-      readonly id: 'portal';
-      readonly label: string;
-      readonly badge: string;
-      readonly headline: string;
-      readonly subheadline: string;
-      readonly floatingBadge: string;
-      readonly highlights: readonly HeroHighlight[];
-    };
-
-const heroMetric: HeroMetric = {
-  label: t('home.hero.metric_label', locale),
-  value: t('home.hero.metric_value', locale),
-  subtitle: t('home.hero.metric_sub', locale),
-};
-
-const heroTickerItems: readonly HeroTickerItem[] = [
-  {
-    property: t('home.hero.ticker.item_1_property', locale),
-    match: t('home.hero.ticker.item_1_match', locale),
-    score: t('home.hero.ticker.item_1_score', locale),
-  },
-  {
-    property: t('home.hero.ticker.item_2_property', locale),
-    match: t('home.hero.ticker.item_2_match', locale),
-    score: t('home.hero.ticker.item_2_score', locale),
-  },
-  {
-    property: t('home.hero.ticker.item_3_property', locale),
-    match: t('home.hero.ticker.item_3_match', locale),
-    score: t('home.hero.ticker.item_3_score', locale),
-  },
-];
-
-const heroSlides: readonly HeroSlide[] = [
-  {
-    id: 'matching',
-    label: t('home.hero.carousel_slide_matching', locale),
-    badge: t('home.hero.badge', locale),
-    headline: t('home.hero.headline', locale),
-    subheadline: t('home.hero.subheadline', locale),
-    floatingBadge: t('home.hero.floating_badge', locale),
-    ticker: {
-      label: t('home.hero.ticker.label', locale),
-      items: heroTickerItems,
-    },
-  },
-  {
-    id: 'portal',
-    label: t('home.hero.carousel_slide_portal', locale),
-    badge: t('home.hero.secondary_badge', locale),
-    headline: t('home.hero.secondary_headline', locale),
-    subheadline: t('home.hero.secondary_subheadline', locale),
-    floatingBadge: t('home.hero.secondary_badge', locale),
-    highlights: [
-      {
-        title: t('home.hero.portal_highlight_1_title', locale),
-        description: t('home.hero.portal_highlight_1_description', locale),
-      },
-      {
-        title: t('home.hero.portal_highlight_2_title', locale),
-        description: t('home.hero.portal_highlight_2_description', locale),
-      },
-      {
-        title: t('home.hero.portal_highlight_3_title', locale),
-      },
-    ],
-  },
-];
-
 const heroTrust: readonly string[] = [
   t('home.hero.trust_pricing', locale),
   t('home.hero.trust_integration', locale),
@@ -119,14 +19,6 @@ const heroTrust: readonly string[] = [
   t('home.hero.trust_realtime', locale),
   t('home.hero.trust_portal', locale),
 ];
-
-const heroCtas = {
-  primary: t('home.hero.cta_primary', locale),
-  secondary: t('home.hero.cta_secondary', locale),
-  video: t('home.hero.cta_video', locale),
-} as const;
-
-const heroCarouselLabel = t('home.hero.carousel_label', locale);
 
 const features = [
   {
@@ -144,12 +36,6 @@ const features = [
     description: t('home.features.feature_3_description', locale),
     icon: t('home.features.feature_3_icon', locale),
   },
-];
-
-const stats = [
-  { value: t('home.stats.value_1', locale), label: t('home.stats.captaties', locale) },
-  { value: t('home.stats.value_2', locale), label: t('home.stats.tijdsbesparing', locale) },
-  { value: t('home.stats.value_3', locale), label: t('home.stats.omzet', locale) },
 ];
 
 const testimonials = [
