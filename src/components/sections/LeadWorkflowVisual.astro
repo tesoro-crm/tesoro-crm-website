@@ -172,12 +172,17 @@ const {
           <img src="/assets/office365-logo.svg" alt="Office 365" class="mockup-template__logo" />
           <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
         </div>
-        <select class="mockup-template__select">
-          <option>{templatePlaceholder}</option>
-          <option>{templateOption1}</option>
-          <option>{templateOption2}</option>
-          <option>{templateOption3}</option>
-        </select>
+        <div class="mockup-template__dropdown" data-template-dropdown>
+          <button class="mockup-template__select" data-template-button>
+            <span class="mockup-template__select-text">{templatePlaceholder}</span>
+            <span class="mockup-template__select-arrow">▼</span>
+          </button>
+          <div class="mockup-template__options" data-template-options>
+            <div class="mockup-template__option" data-option="1">{templateOption1}</div>
+            <div class="mockup-template__option" data-option="2">{templateOption2}</div>
+            <div class="mockup-template__option" data-option="3">{templateOption3}</div>
+          </div>
+        </div>
         <button class="mockup-template__send">{templateSend}</button>
       </div>
     </div>
@@ -282,6 +287,41 @@ const {
     const visual = document.querySelector('.lead-visual');
     visual?.addEventListener('mouseenter', stopAutoPlay);
     visual?.addEventListener('mouseleave', startAutoPlay);
+
+    // Template dropdown animation
+    const templateButton = document.querySelector('[data-template-button]') as HTMLElement | null;
+    const templateOptions = document.querySelector('[data-template-options]') as HTMLElement | null;
+    const templateSelectText = document.querySelector('.mockup-template__select-text') as HTMLElement | null;
+    const options = document.querySelectorAll('[data-option]') as NodeListOf<HTMLElement>;
+
+    if (templateButton && templateOptions) {
+      templateButton.addEventListener('click', () => {
+        const isOpen = templateOptions.classList.contains('open');
+        if (isOpen) {
+          templateOptions.classList.remove('open');
+        } else {
+          templateOptions.classList.add('open');
+        }
+      });
+
+      options.forEach((option) => {
+        option.addEventListener('click', () => {
+          const text = option.textContent;
+          if (templateSelectText && text) {
+            templateSelectText.textContent = text;
+          }
+          templateOptions.classList.remove('open');
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        const dropdown = document.querySelector('[data-template-dropdown]');
+        if (dropdown && !dropdown.contains(e.target as Node)) {
+          templateOptions.classList.remove('open');
+        }
+      });
+    }
   }
 
   // Run on load
@@ -687,14 +727,76 @@ const {
     object-fit: contain;
   }
 
+  .mockup-template__dropdown {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
   .mockup-template__select {
     width: 100%;
     padding: 1rem;
     border: 2px solid #e5e7eb;
     border-radius: 0.5rem;
     font-size: 1rem;
-    margin-bottom: 1rem;
     cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-color 0.2s ease;
+  }
+
+  .mockup-template__select:hover {
+    border-color: #ff9f43;
+  }
+
+  .mockup-template__select-arrow {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+  }
+
+  .mockup-template__options.open ~ .mockup-template__select .mockup-template__select-arrow {
+    transform: rotate(180deg);
+  }
+
+  .mockup-template__options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+  }
+
+  .mockup-template__options.open {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mockup-template__option {
+    padding: 0.875rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .mockup-template__option:last-child {
+    border-bottom: none;
+  }
+
+  .mockup-template__option:hover {
+    background: #f9fafb;
+    color: #ff9f43;
   }
 
   .mockup-template__send {
