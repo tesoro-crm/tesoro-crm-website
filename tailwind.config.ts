@@ -7,16 +7,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Tesoro Brand Colors (from tesorohq.io)
         primary: {
-          DEFAULT: '#003366',
+          DEFAULT: '#0A1F44', // Navy
           accent: '#4BA3FF',
-          dark: '#002244',
-          light: '#0055AA',
+          dark: '#071628',
+          light: '#1a3a6b',
         },
         secondary: {
-          DEFAULT: '#F5B400',
-          dark: '#D49A00',
-          light: '#FFD966',
+          DEFAULT: '#FF6B9D', // Coral/Pink accent
+          dark: '#E5527D',
+          light: '#FF8FB3',
+        },
+        accent: {
+          DEFAULT: '#FF9F43', // Orange (CTA buttons)
+          dark: '#E58A2E',
+          light: '#FFB366',
         },
         neutral: {
           50: '#F9FAFB',

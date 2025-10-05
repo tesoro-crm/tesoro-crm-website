@@ -13,9 +13,9 @@ labels:
 Ontwerp de probleem→oplossing sectie van de homepage met twee kolommen (problemen links, oplossingen rechts) en icons voor captación, MLS en compliance workflows.
 
 ## Checklist
-- [ ] Layout ontworpen in Figma
-- [ ] Icons/visuals afgestemd met design system team
-- [ ] Feedback ronde met product marketing
+- [x] Layout ontworpen in Figma
+- [x] Icons/visuals afgestemd met design system team
+- [x] Feedback ronde met product marketing
 
 ## Logboek
 | Datum | Opmerking |

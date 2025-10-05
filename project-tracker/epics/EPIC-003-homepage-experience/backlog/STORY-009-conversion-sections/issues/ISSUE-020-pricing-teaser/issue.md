@@ -1,7 +1,7 @@
 ---
 id: ISSUE-020
 story: STORY-009
-status: todo
+status: done
 assignee: Pricing Lead
 due-date: 2025-10-19
 labels:
@@ -13,9 +13,9 @@ labels:
 Werk de pricing teaser sectie uit (sectie 8) inclusief tier overzicht, CTA's en messaging "Ondersteunt Resales Online, Inmobalia, Idealista en meer", zoals beschreven in `tesoro-crm-website-blueprint.md#3.8`.
 
 ## Checklist
-- [ ] Pricing tier content afgestemd met finance
-- [ ] CTA buttons linken naar volledige pricing pagina
-- [ ] Visual design afgestemd met design system
+- [x] Pricing tier content afgestemd met finance
+- [x] CTA buttons linken naar volledige pricing pagina
+- [x] Visual design afgestemd met design system
 
 ## Logboek
 | Datum | Opmerking |

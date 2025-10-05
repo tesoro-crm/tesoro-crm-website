@@ -3,167 +3,234 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import HeroSimple from '../components/hero/HeroSimple.astro';
+import CoCreated from '../components/sections/CoCreated.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
+await loadTranslations(locale);
+
+interface HeroMetric {
+  readonly label: string;
+  readonly value: string;
+  readonly subtitle: string;
+}
+
+interface HeroTickerItem {
+  readonly property: string;
+  readonly match: string;
+  readonly score: string;
+}
+
+interface HeroHighlight {
+  readonly title: string;
+  readonly description: string;
+}
+
+type HeroSlide =
+  | {
+      readonly id: 'matching';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly ticker: {
+        readonly label: string;
+        readonly items: readonly HeroTickerItem[];
+      };
+    }
+  | {
+      readonly id: 'portal';
+      readonly label: string;
+      readonly badge: string;
+      readonly headline: string;
+      readonly subheadline: string;
+      readonly floatingBadge: string;
+      readonly highlights: readonly HeroHighlight[];
+    };
+
+const heroMetric: HeroMetric = {
+  label: t('home.hero.metric_label', locale),
+  value: t('home.hero.metric_value', locale),
+  subtitle: t('home.hero.metric_sub', locale),
+};
+
+const heroTickerItems: readonly HeroTickerItem[] = [
+  {
+    property: t('home.hero.ticker.item_1_property', locale),
+    match: t('home.hero.ticker.item_1_match', locale),
+    score: t('home.hero.ticker.item_1_score', locale),
+  },
+  {
+    property: t('home.hero.ticker.item_2_property', locale),
+    match: t('home.hero.ticker.item_2_match', locale),
+    score: t('home.hero.ticker.item_2_score', locale),
+  },
+  {
+    property: t('home.hero.ticker.item_3_property', locale),
+    match: t('home.hero.ticker.item_3_match', locale),
+    score: t('home.hero.ticker.item_3_score', locale),
+  },
+];
+
+const heroSlides: readonly HeroSlide[] = [
+  {
+    id: 'matching',
+    label: t('home.hero.carousel_slide_matching', locale),
+    badge: t('home.hero.badge', locale),
+    headline: t('home.hero.headline', locale),
+    subheadline: t('home.hero.subheadline', locale),
+    floatingBadge: t('home.hero.floating_badge', locale),
+    ticker: {
+      label: t('home.hero.ticker.label', locale),
+      items: heroTickerItems,
+    },
+  },
+  {
+    id: 'portal',
+    label: t('home.hero.carousel_slide_portal', locale),
+    badge: t('home.hero.secondary_badge', locale),
+    headline: t('home.hero.secondary_headline', locale),
+    subheadline: t('home.hero.secondary_subheadline', locale),
+    floatingBadge: t('home.hero.secondary_badge', locale),
+    highlights: [
+      {
+        title: t('home.hero.portal_highlight_1_title', locale),
+        description: t('home.hero.portal_highlight_1_description', locale),
+      },
+      {
+        title: t('home.hero.portal_highlight_2_title', locale),
+        description: t('home.hero.portal_highlight_2_description', locale),
+      },
+      {
+        title: t('home.hero.portal_highlight_3_title', locale),
+      },
+    ],
+  },
+];
+
+const heroTrust: readonly string[] = [
+  t('home.hero.trust_pricing', locale),
+  t('home.hero.trust_integration', locale),
+  t('home.hero.trust_commitment', locale),
+  t('home.hero.trust_ai', locale),
+  t('home.hero.trust_realtime', locale),
+  t('home.hero.trust_portal', locale),
+];
+
+const heroCtas = {
+  primary: t('home.hero.cta_primary', locale),
+  secondary: t('home.hero.cta_secondary', locale),
+  video: t('home.hero.cta_video', locale),
+} as const;
+
+const heroCarouselLabel = t('home.hero.carousel_label', locale);
 
 const features = [
   {
-    title: 'Captación Automatizada',
-    description: 'IA-gestuurde lead generatie identificeert kansrijke woningen voordat ze op de markt komen.',
-    icon: '🎯',
+    title: t('home.features.feature_1_title', locale),
+    description: t('home.features.feature_1_description', locale),
+    icon: t('home.features.feature_1_icon', locale),
   },
   {
-    title: 'MLS Integratie',
-    description: 'Directe synchronisatie met alle grote MLS-platforms voor realtime marktinzicht.',
-    icon: '🔄',
+    title: t('home.features.feature_2_title', locale),
+    description: t('home.features.feature_2_description', locale),
+    icon: t('home.features.feature_2_icon', locale),
   },
   {
-    title: 'Compliance Dashboard',
-    description: 'Automatische AVG/GDPR checks en documentbeheer voor zorgeloze naleving.',
-    icon: '✓',
+    title: t('home.features.feature_3_title', locale),
+    description: t('home.features.feature_3_description', locale),
+    icon: t('home.features.feature_3_icon', locale),
   },
 ];
 
 const stats = [
-  { value: '3.2x', label: 'Meer captaties' },
-  { value: '67%', label: 'Tijdsbesparing' },
-  { value: '€12K', label: 'Extra omzet/maand' },
+  { value: t('home.stats.value_1', locale), label: t('home.stats.captaties', locale) },
+  { value: t('home.stats.value_2', locale), label: t('home.stats.tijdsbesparing', locale) },
+  { value: t('home.stats.value_3', locale), label: t('home.stats.omzet', locale) },
 ];
 
 const testimonials = [
   {
-    quote: 'Tesoro CRM heeft onze captatie-ratio verdrievoudigd. De AI identificeert kansrijke woningen voordat ze op de markt komen.',
-    author: 'Maria González',
-    role: 'Senior Makelaar',
-    company: 'Costa del Sol Properties',
-    image: '👤',
+    quote: t('home.testimonials.testimonial_1_quote', locale),
+    author: t('home.testimonials.testimonial_1_author', locale),
+    role: t('home.testimonials.testimonial_1_role', locale),
+    company: t('home.testimonials.testimonial_1_company', locale),
+    image: t('home.testimonials.testimonial_1_image', locale),
   },
   {
-    quote: 'De MLS integratie bespaart ons 10+ uur per week. Alles synchroniseert automatisch, geen dubbel werk meer.',
-    author: 'Jan Bakker',
-    role: 'Kantoormanager',
-    company: 'Amsterdam Makelaars',
-    image: '👤',
+    quote: t('home.testimonials.testimonial_2_quote', locale),
+    author: t('home.testimonials.testimonial_2_author', locale),
+    role: t('home.testimonials.testimonial_2_role', locale),
+    company: t('home.testimonials.testimonial_2_company', locale),
+    image: t('home.testimonials.testimonial_2_image', locale),
   },
   {
-    quote: 'GDPR compliance was altijd een hoofdpijn. Nu regelt Tesoro alles automatisch, inclusief documentbeheer.',
-    author: 'Sophie Dubois',
-    role: 'Compliance Officer',
-    company: 'Brussels Real Estate Group',
-    image: '👤',
+    quote: t('home.testimonials.testimonial_3_quote', locale),
+    author: t('home.testimonials.testimonial_3_author', locale),
+    role: t('home.testimonials.testimonial_3_role', locale),
+    company: t('home.testimonials.testimonial_3_company', locale),
+    image: t('home.testimonials.testimonial_3_image', locale),
   },
 ];
 
 const faqs = [
   {
-    question: 'Hoe lang duurt de implementatie?',
-    answer: 'De meeste klanten zijn binnen 24 uur operationeel. Onze onboarding wizard importeert je bestaande data en configureert alles automatisch.',
+    question: t('home.faq.question_1', locale),
+    answer: t('home.faq.answer_1', locale),
   },
   {
-    question: 'Welke MLS-platforms worden ondersteund?',
-    answer: 'We integreren met alle grote platforms: Funda, Idealista, Kyero, Fotocasa, en 20+ andere. Custom integraties zijn mogelijk.',
+    question: t('home.faq.question_2', locale),
+    answer: t('home.faq.answer_2', locale),
   },
   {
-    question: 'Is mijn data veilig?',
-    answer: 'Absoluut. We zijn GDPR-compliant, gebruiken end-to-end encryptie en hosten in EU datacenters. SOC 2 Type II gecertificeerd.',
+    question: t('home.faq.question_3', locale),
+    answer: t('home.faq.answer_3', locale),
   },
   {
-    question: 'Kan ik op elk moment opzeggen?',
-    answer: 'Ja, geen lock-in contracten. Je kunt maandelijks opzeggen en je data exporteren wanneer je wilt.',
+    question: t('home.faq.question_4', locale),
+    answer: t('home.faq.answer_4', locale),
   },
 ];
 ---
 
 <Layout 
-  title="Tesoro CRM - Captación Inteligente para Profesionales Inmobiliarios"
-  description="Automatiza la captación de propiedades con IA y maximiza tu ROI inmobiliario. Integración MLS, compliance automático y dashboard en tiempo real."
+  title={t('meta.home_title', locale)}
+  description={t('meta.home_description', locale)}
 >
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-primary via-primary-dark to-primary-light text-white py-20 lg:py-32 overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
-    </div>
-    
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="text-center lg:text-left">
-          <Badge variant="secondary" size="md" class="mb-6">
-            🚀 Nieuwe AI-powered captación tools
-          </Badge>
-          
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-            Captación inteligente voor <span class="text-secondary">topmakelaar</span>
-          </h1>
-          
-          <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-            Automatiseer je leadgeneratie met AI, integreer naadloos met MLS-platforms en verhoog je captatie-ratio met 3.2x. Speciaal gebouwd voor ambitieuze makelaars.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button variant="secondary" size="lg" href="/signup">
-              Start Gratis Trial
-            </Button>
-            <Button variant="outline" size="lg" href="/demo">
-              Bekijk Demo
-            </Button>
-          </div>
-          
-          <div class="mt-8 flex items-center gap-4 justify-center lg:justify-start text-sm text-white/80">
-            <span>✓ Geen creditcard vereist</span>
-            <span>✓ 14 dagen gratis</span>
-            <span>✓ Cancel anytime</span>
-          </div>
-        </div>
-        
-        <div class="hidden lg:block">
-          <div class="relative">
-            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-primary-accent/20 rounded-2xl blur-2xl"></div>
-            <Card variant="elevated" class="relative backdrop-blur-sm bg-white/10 border-white/20">
-              <div class="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-lg flex items-center justify-center">
-                <span class="text-6xl">📊</span>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSimple 
+    headline={t('home.hero.headline', locale)}
+    subheadline={t('home.hero.subheadline', locale)}
+    ctaPrimary={t('home.hero.cta_primary', locale)}
+    ctaSecondary={t('home.hero.cta_secondary', locale)}
+    trust={heroTrust}
+    kanbanProposed={t('home.hero.kanban_proposed', locale)}
+    kanbanInterested={t('home.hero.kanban_interested', locale)}
+    kanbanRejected={t('home.hero.kanban_rejected', locale)}
+    properties={[
+      t('home.hero.property_1', locale),
+      t('home.hero.property_2', locale),
+      t('home.hero.property_3', locale),
+      t('home.hero.property_4', locale),
+      t('home.hero.property_5', locale),
+      t('home.hero.property_6', locale)
+    ]}
+  />
 
-  <!-- Stats Bar -->
-  <section class="bg-white border-b border-neutral-200 py-8">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-        {stats.map((stat) => (
-          <div>
-            <div class="text-4xl font-display font-bold text-primary mb-2">{stat.value}</div>
-            <div class="text-neutral-600">{stat.label}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Proof -->
-  <section class="bg-neutral-50 py-12">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
-      <p class="text-neutral-600 mb-6">Vertrouwd door 500+ makelaars in Nederland, België en Spanje</p>
-      <div class="flex flex-wrap items-center justify-center gap-8 opacity-60">
-        <div class="text-2xl font-bold text-neutral-400">Funda</div>
-        <div class="text-2xl font-bold text-neutral-400">Idealista</div>
-        <div class="text-2xl font-bold text-neutral-400">Kyero</div>
-        <div class="text-2xl font-bold text-neutral-400">Fotocasa</div>
-      </div>
-    </div>
-  </section>
+  <!-- Co-Created Section -->
+  <CoCreated locale={locale} />
 
   <!-- Features Grid -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Alles wat je nodig hebt voor succesvolle captación
+          {t('home.features.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Van AI-powered leadgeneratie tot compliance management - Tesoro CRM automatiseert je workflow end-to-end.
+          {t('home.features.description', locale)}
         </p>
       </div>
       
@@ -188,10 +255,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Wat onze klanten zeggen
+          {t('home.testimonials.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          500+ makelaars vertrouwen op Tesoro CRM voor hun dagelijkse captación workflow
+          {t('home.testimonials.subtitle', locale)}
         </p>
       </div>
       
@@ -219,30 +286,30 @@ const faqs = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <Badge variant="primary" size="md" class="mb-4">
-            🎥 Product Demo
+            {t('home.demo.badge', locale)}
           </Badge>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Zie Tesoro CRM in actie
+            {t('home.demo.title', locale)}
           </h2>
           <p class="text-lg text-neutral-600 mb-8">
-            Ontdek hoe onze AI-powered captación tools je helpen om meer woningen te vinden, sneller deals te sluiten en compliant te blijven.
+            {t('home.demo.description', locale)}
           </p>
           <ul class="space-y-4 mb-8">
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">AI lead scoring en predictive analytics</span>
+              <span class="text-neutral-700">{t('home.demo.feature_1', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Realtime MLS synchronisatie</span>
+              <span class="text-neutral-700">{t('home.demo.feature_2', locale)}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-success text-xl">✓</span>
-              <span class="text-neutral-700">Geautomatiseerde compliance checks</span>
+              <span class="text-neutral-700">{t('home.demo.feature_3', locale)}</span>
             </li>
           </ul>
           <Button variant="primary" size="lg" href="/demo">
-            Boek een Demo
+            {t('home.demo.cta', locale)}
           </Button>
         </div>
         <div>
@@ -259,10 +326,10 @@ const faqs = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Veelgestelde vragen
+          {t('home.faq.title', locale)}
         </h2>
         <p class="text-lg text-neutral-600">
-          Alles wat je moet weten over Tesoro CRM
+          {t('home.faq.subtitle', locale)}
         </p>
       </div>
       
@@ -276,9 +343,9 @@ const faqs = [
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-neutral-600 mb-4">Nog meer vragen?</p>
+        <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
         <Button variant="outline" href="/contact">
-          Neem Contact Op
+          {t('home.faq.contact_cta', locale)}
         </Button>
       </div>
     </div>
@@ -288,17 +355,17 @@ const faqs = [
   <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar om je captatie te verdrievoudigen?
+        {t('home.final_cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Sluit je aan bij 500+ succesvolle makelaars die hun workflow hebben geautomatiseerd met Tesoro CRM.
+        {t('home.final_cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('home.final_cta.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
-          Bekijk Prijzen
+          {t('home.final_cta.cta_secondary', locale)}
         </Button>
       </div>
     </div>

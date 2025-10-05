@@ -1,7 +1,7 @@
 ---
 id: ISSUE-018
 story: STORY-008
-status: todo
+status: done
 assignee: Marketing Ops
 due-date: 2025-10-17
 labels:
@@ -13,9 +13,9 @@ labels:
 Verzamel en redigeer testimonials + KPI's voor homepage carrousel en link naar volledige case studies.
 
 ## Checklist
-- [ ] 3 testimonials geselecteerd (verschillende persona's)
-- [ ] KPI's geverifieerd (ARR, deals, tijdswinst)
-- [ ] Copy en foto's goedgekeurd door klanten
+- [x] 3 testimonials geselecteerd (verschillende persona's)
+- [x] KPI's geverifieerd (ARR, deals, tijdswinst)
+- [x] Copy en foto's goedgekeurd door klanten
 
 ## Logboek
 | Datum | Opmerking |

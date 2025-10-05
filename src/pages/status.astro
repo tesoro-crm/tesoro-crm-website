@@ -2,9 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import { loadStatusSnapshot, countStatuses } from "../lib/status";
 import type { StatusSnapshot, EpicRecord, StoryRecord, IssueRecord } from "../lib/status";
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 const snapshot: StatusSnapshot = await loadStatusSnapshot();
-const epics: readonly EpicRecord[] = snapshot.epics;
+const epics: readonly EpicRecord[] = [...snapshot.epics].reverse(); // Nieuwste bovenaan
 const stories: readonly StoryRecord[] = epics.flatMap((epic) => epic.stories);
 const issues: readonly IssueRecord[] = stories.flatMap((story) => story.issues);
 
@@ -24,7 +29,7 @@ function getChipClass(status: string): string {
 }
 ---
 
-<Layout title="Tesoro CRM Project Status" description="Live project status dashboard">
+<Layout title={t('meta.status_title', locale)} description={t('meta.status_description', locale)}>
   <div class="min-h-screen bg-neutral-50 py-8">
     <div class="container mx-auto px-4 max-w-7xl">
       <!-- Banner -->
@@ -192,11 +197,17 @@ function getChipClass(status: string): string {
   <script>
     import { marked } from 'marked';
 
-    const drawer = document.getElementById('drawer');
-    const drawerOverlay = document.getElementById('drawerOverlay');
-    const drawerClose = document.getElementById('drawerClose');
-    const drawerTitle = document.getElementById('drawerTitle');
-    const drawerContent = document.getElementById('drawerContent');
+    function initStatusDrawer() {
+      const drawer = document.getElementById('drawer');
+      const drawerOverlay = document.getElementById('drawerOverlay');
+      const drawerClose = document.getElementById('drawerClose');
+      const drawerTitle = document.getElementById('drawerTitle');
+      const drawerContent = document.getElementById('drawerContent');
+
+      if (!drawer || !drawerOverlay || !drawerClose || !drawerTitle || !drawerContent) {
+        console.error('Drawer elements not found');
+        return;
+      }
 
     async function openDrawer(type: string, data: any) {
       if (!drawerTitle || !drawerContent || !drawer || !drawerOverlay) return;
@@ -332,11 +343,18 @@ function getChipClass(status: string): string {
       });
     });
 
-    // Auto-refresh (disabled when drawer is open)
-    setInterval(() => {
-      if (drawer?.classList.contains('translate-x-full')) {
-        window.location.reload();
-      }
-    }, 15000);
+      // Auto-refresh (disabled when drawer is open)
+      setInterval(() => {
+        if (drawer?.classList.contains('translate-x-full')) {
+          window.location.reload();
+        }
+      }, 15000);
+    }
+
+    // Run on initial load
+    initStatusDrawer();
+
+    // Re-run after View Transitions
+    document.addEventListener('astro:after-swap', initStatusDrawer);
   </script>
 </Layout>

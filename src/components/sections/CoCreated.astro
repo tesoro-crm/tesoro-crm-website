@@ -1,0 +1,754 @@
+---
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+interface Props {
+  readonly locale: Language;
+}
+
+const { locale } = Astro.props;
+
+interface Partner {
+  readonly company: string;
+  readonly feature: string;
+}
+
+const partners: readonly Partner[] = [
+  {
+    company: t('home.cocreated.partner_1_company', locale),
+    feature: t('home.cocreated.partner_1_feature', locale),
+  },
+  {
+    company: t('home.cocreated.partner_2_company', locale),
+    feature: t('home.cocreated.partner_2_feature', locale),
+  },
+  {
+    company: t('home.cocreated.partner_3_company', locale),
+    feature: t('home.cocreated.partner_3_feature', locale),
+  },
+  {
+    company: t('home.cocreated.partner_4_company', locale),
+    feature: t('home.cocreated.partner_4_feature', locale),
+  },
+  {
+    company: t('home.cocreated.partner_5_company', locale),
+    feature: t('home.cocreated.partner_5_feature', locale),
+  },
+  {
+    company: t('home.cocreated.partner_6_company', locale),
+    feature: t('home.cocreated.partner_6_feature', locale),
+  },
+];
+---
+
+<section class="cocreated">
+  <div class="cocreated__container">
+    <!-- Header -->
+    <div class="cocreated__header">
+      <h2 class="cocreated__headline">{t('home.cocreated.headline', locale)}</h2>
+      <p class="cocreated__subheadline">{t('home.cocreated.subheadline', locale)}</p>
+    </div>
+
+    <!-- Partners Grid -->
+    <div class="cocreated__partners">
+      {partners.map((partner, index) => (
+        <button 
+          class="cocreated__partner-card"
+          data-partner-index={index}
+          aria-label={`View ${partner.company}'s contribution`}
+        >
+          <div class="cocreated__partner-logo">
+            <div class="cocreated__partner-logo-placeholder">{partner.company.charAt(0)}</div>
+          </div>
+          <div class="cocreated__partner-info">
+            <h3 class="cocreated__partner-company-name">{partner.company}</h3>
+            <div class="cocreated__partner-feature">
+              <span class="cocreated__feature-icon">💡</span>
+              <span class="cocreated__feature-text">{partner.feature}</span>
+            </div>
+          </div>
+        </button>
+      ))}
+    </div>
+
+    <!-- Drawer -->
+    <div class="cocreated__drawer" id="partner-drawer">
+      <div class="cocreated__drawer-overlay" id="drawer-overlay"></div>
+      <div class="cocreated__drawer-content">
+        <button class="cocreated__drawer-close" id="drawer-close" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+        <div id="drawer-body">
+          <div class="cocreated__drawer-company-header">
+            <div class="cocreated__drawer-logo">
+              <div id="drawer-logo-placeholder" class="cocreated__drawer-logo-placeholder"></div>
+            </div>
+            <div class="cocreated__drawer-company-info">
+              <h3 id="drawer-company-name" class="cocreated__drawer-company-name"></h3>
+            </div>
+          </div>
+
+          <div class="cocreated__drawer-content-body">
+            <h2 class="cocreated__drawer-main-title">{t('home.cocreated.drawer_case_study_title', locale)}</h2>
+            
+            <div class="cocreated__drawer-box cocreated__drawer-box--primary">
+              <h4 class="cocreated__drawer-box-title">{t('home.cocreated.drawer_section_title_request', locale)}</h4>
+              <p id="drawer-feature-request" class="cocreated__drawer-box-text"></p>
+            </div>
+
+            <div class="cocreated__drawer-box">
+              <h4 class="cocreated__drawer-box-title">{t('home.cocreated.drawer_section_title_why', locale)}</h4>
+              <p class="cocreated__drawer-box-text">{t('home.cocreated.drawer_section_text_why', locale)}</p>
+            </div>
+
+            <div class="cocreated__drawer-box">
+              <h4 class="cocreated__drawer-box-title">{t('home.cocreated.drawer_section_title_solution', locale)}</h4>
+              <p class="cocreated__drawer-box-text">{t('home.cocreated.drawer_section_text_solution', locale)}</p>
+            </div>
+
+            <div class="cocreated__drawer-divider"></div>
+
+            <h3 class="cocreated__drawer-subtitle">{t('home.cocreated.drawer_timeline_heading', locale)}</h3>
+            
+            <div class="cocreated__drawer-timeline">
+              <div class="cocreated__drawer-timeline-item">
+                <div class="cocreated__drawer-timeline-step">{t('home.cocreated.drawer_timeline_step_1_label', locale)}</div>
+                <div class="cocreated__drawer-timeline-desc">{t('home.cocreated.drawer_timeline_step_1_text', locale)}</div>
+              </div>
+              <div class="cocreated__drawer-timeline-item">
+                <div class="cocreated__drawer-timeline-step">{t('home.cocreated.drawer_timeline_step_2_label', locale)}</div>
+                <div class="cocreated__drawer-timeline-desc">{t('home.cocreated.drawer_timeline_step_2_text', locale)}</div>
+              </div>
+              <div class="cocreated__drawer-timeline-item">
+                <div class="cocreated__drawer-timeline-step">{t('home.cocreated.drawer_timeline_step_3_label', locale)}</div>
+                <div class="cocreated__drawer-timeline-desc">{t('home.cocreated.drawer_timeline_step_3_text', locale)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="cocreated__comparison">
+      <div class="cocreated__comparison-item cocreated__comparison-item--bad">
+        <span class="cocreated__comparison-icon">❌</span>
+        <p class="cocreated__comparison-text">{t('home.cocreated.comparison_traditional', locale)}</p>
+      </div>
+      <div class="cocreated__comparison-item cocreated__comparison-item--good">
+        <span class="cocreated__comparison-icon">✅</span>
+        <p class="cocreated__comparison-text">{t('home.cocreated.comparison_tesoro', locale)}</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cocreated__cta">
+      <a href="#contact" class="cocreated__cta-button">
+        {t('home.cocreated.cta', locale)}
+      </a>
+      <p class="cocreated__cta-benefit">{t('home.cocreated.cta_benefit', locale)}</p>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ partners }}>
+  function initCoCreated() {
+    const cards = document.querySelectorAll('.cocreated__partner-card');
+    const drawer = document.getElementById('partner-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    const closeBtn = document.getElementById('drawer-close');
+    const drawerBody = document.getElementById('drawer-body');
+
+    if (!drawer || !overlay || !closeBtn || !drawerBody) return;
+
+    function openDrawer(index) {
+      const partner = partners[index];
+      if (!partner) return;
+
+      // Select elements
+      const logoPlaceholder = document.getElementById('drawer-logo-placeholder');
+      const companyName = document.getElementById('drawer-company-name');
+      const featureRequest = document.getElementById('drawer-feature-request');
+
+      // Fill content
+      if (logoPlaceholder) logoPlaceholder.textContent = partner.company.charAt(0);
+      if (companyName) companyName.textContent = partner.company;
+      if (featureRequest) featureRequest.textContent = partner.feature;
+
+      // Open drawer
+      drawer.classList.add('cocreated__drawer--open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('cocreated__drawer--open');
+      document.body.style.overflow = '';
+    }
+
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const index = parseInt(card.getAttribute('data-partner-index') || '0');
+        openDrawer(index);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.classList.contains('cocreated__drawer--open')) {
+        closeDrawer();
+      }
+    });
+  }
+
+  initCoCreated();
+  document.addEventListener('astro:after-swap', initCoCreated);
+</script>
+
+<style>
+  .cocreated {
+    position: relative;
+    background: #ffffff;
+    padding: 8rem 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    isolation: isolate;
+    margin: 4rem 0;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .cocreated::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    height: 90%;
+    background: linear-gradient(135deg, 
+      rgba(255, 140, 66, 0.08) 0%, 
+      rgba(255, 107, 157, 0.12) 25%,
+      rgba(139, 92, 246, 0.08) 50%,
+      rgba(255, 107, 157, 0.12) 75%,
+      rgba(255, 140, 66, 0.08) 100%
+    );
+    background-size: 200% 200%;
+    transform: skewY(-2deg);
+    transform-origin: center;
+    z-index: 0;
+    animation: gradientShift 15s ease-in-out infinite;
+  }
+
+  .cocreated::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background: linear-gradient(45deg,
+      transparent 0%,
+      rgba(255, 155, 107, 0.06) 30%,
+      rgba(255, 107, 157, 0.08) 50%,
+      rgba(255, 155, 107, 0.06) 70%,
+      transparent 100%
+    );
+    background-size: 200% 200%;
+    transform: skewY(1.5deg);
+    transform-origin: center;
+    z-index: 0;
+    animation: gradientShiftReverse 20s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% {
+      background-position: 0% 50%;
+      transform: skewY(-2deg) translateX(0);
+    }
+    50% {
+      background-position: 100% 50%;
+      transform: skewY(-2deg) translateX(20px);
+    }
+  }
+
+  @keyframes gradientShiftReverse {
+    0%, 100% {
+      background-position: 0% 50%;
+      transform: skewY(1.5deg) translateX(0);
+    }
+    50% {
+      background-position: 100% 50%;
+      transform: skewY(1.5deg) translateX(-20px);
+    }
+  }
+
+  .cocreated__container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .cocreated__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .cocreated__headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .cocreated__subheadline {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cocreated__partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .cocreated__partner-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-align: left;
+    width: 100%;
+  }
+
+  .cocreated__partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #ff6b9d;
+  }
+
+  .cocreated__partner-card:active {
+    transform: translateY(-2px);
+  }
+
+  .cocreated__partner-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .cocreated__partner-logo-placeholder {
+    width: 120px;
+    height: 48px;
+    background: #f8f9fa;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #94a3b8;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cocreated__partner-logo-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 107, 157, 0.05) 100%);
+  }
+
+  .cocreated__partner-info {
+    text-align: center;
+  }
+
+  .cocreated__partner-company-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .cocreated__partner-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-top: 0.75rem;
+  }
+
+  .cocreated__feature-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .cocreated__feature-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #64748b;
+  }
+
+  /* Drawer Styles */
+  .cocreated__drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .cocreated__drawer--open {
+    pointer-events: auto;
+  }
+
+  .cocreated__drawer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .cocreated__drawer--open .cocreated__drawer-overlay {
+    opacity: 1;
+  }
+
+  .cocreated__drawer-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    padding: 2rem;
+    padding-top: calc(4rem + 64px); /* 2rem base + 64px header height */
+  }
+
+  .cocreated__drawer--open .cocreated__drawer-content {
+    transform: translateX(0);
+  }
+
+  .cocreated__drawer-close {
+    position: fixed;
+    top: calc(64px + 1rem); /* Header height + 1rem spacing */
+    right: 1rem;
+    background: white;
+    border: 2px solid #e5e7eb;
+    color: #64748b;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .cocreated__drawer-close:hover {
+    background: #f8f9fa;
+  }
+
+  /* Company Header */
+  .cocreated__drawer-company-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    margin: -2rem -2rem 0 -2rem;
+  }
+
+  .cocreated__drawer-logo {
+    flex-shrink: 0;
+  }
+
+  .cocreated__drawer-logo-placeholder {
+    width: 100px;
+    height: 40px;
+    background: #f8f9fa;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #94a3b8;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cocreated__drawer-logo-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 107, 157, 0.05) 100%);
+  }
+
+  .cocreated__drawer-company-info {
+    flex: 1;
+  }
+
+  .cocreated__drawer-company-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .cocreated__drawer-badge {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #16a34a;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    border: 1px solid #bbf7d0;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  /* Content Body */
+  .cocreated__drawer-content-body {
+    padding: 2.5rem 0 0 0;
+  }
+
+  .cocreated__drawer-main-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .cocreated__drawer-subtitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  /* Box Sections */
+  .cocreated__drawer-box {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cocreated__drawer-box--primary {
+    background: linear-gradient(135deg, #fff5f7 0%, #ffffff 100%);
+    border-color: #ff6b9d;
+  }
+
+  .cocreated__drawer-box-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #0a1f44;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+  }
+
+  .cocreated__drawer-box-text {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    margin: 0;
+  }
+
+  /* Divider */
+  .cocreated__drawer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #e5e7eb 50%, transparent 100%);
+    margin: 2.5rem 0;
+  }
+
+  /* Timeline */
+  .cocreated__drawer-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .cocreated__drawer-timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .cocreated__drawer-timeline-step {
+    flex-shrink: 0;
+    width: 80px;
+    font-weight: 700;
+    color: #0a1f44;
+    font-size: 0.875rem;
+  }
+
+  .cocreated__drawer-timeline-desc {
+    flex: 1;
+    color: #64748b;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .cocreated__timeline-section {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .cocreated__timeline-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .cocreated__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cocreated__timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .cocreated__timeline-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .cocreated__timeline-content {
+    flex: 1;
+  }
+
+  .cocreated__timeline-week {
+    display: block;
+    font-weight: 600;
+    color: #ff6b9d;
+    margin-bottom: 0.25rem;
+  }
+
+  .cocreated__timeline-description {
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .cocreated__comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cocreated__comparison-item {
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cocreated__comparison-item--bad {
+    background: #fef2f2;
+    border: 2px solid #fecaca;
+  }
+
+  .cocreated__comparison-item--good {
+    background: #f0fdf4;
+    border: 2px solid #bbf7d0;
+  }
+
+  .cocreated__comparison-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .cocreated__comparison-text {
+    color: #0a1f44;
+    line-height: 1.6;
+  }
+
+  .cocreated__cta {
+    text-align: center;
+  }
+
+  .cocreated__cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b9d 0%, #ff9b6b 100%);
+    color: white;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.125rem;
+  }
+
+  .cocreated__cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 107, 157, 0.4);
+  }
+
+  .cocreated__cta-benefit {
+    margin-top: 1rem;
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    .cocreated {
+      padding: 3rem 0;
+    }
+
+    .cocreated__headline {
+      font-size: 2rem;
+    }
+
+    .cocreated__partners {
+      grid-template-columns: 1fr;
+    }
+
+    .cocreated__timeline-section {
+      padding: 2rem 1.5rem;
+    }
+
+    .cocreated__comparison {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

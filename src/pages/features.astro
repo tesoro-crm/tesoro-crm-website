@@ -3,81 +3,86 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
 
 const featureCategories = [
   {
-    name: 'AI-Powered Captación',
+    name: t('features.categories.ai.name', locale),
     icon: '🤖',
-    description: 'Intelligente lead generatie die kansrijke woningen identificeert voordat ze op de markt komen',
+    description: t('features.categories.ai.description', locale),
     features: [
       {
-        title: 'Predictive Lead Scoring',
-        description: 'AI analyseert marktdata en voorspelt welke woningen binnenkort verkocht worden',
+        title: t('features.categories.ai.feature_1_title', locale),
+        description: t('features.categories.ai.feature_1_description', locale),
       },
       {
-        title: 'Automated Outreach',
-        description: 'Gepersonaliseerde emails en berichten worden automatisch verstuurd op het juiste moment',
+        title: t('features.categories.ai.feature_2_title', locale),
+        description: t('features.categories.ai.feature_2_description', locale),
       },
       {
-        title: 'Smart Follow-ups',
-        description: 'Intelligente herinneringen en follow-up suggesties gebaseerd op gedrag',
+        title: t('features.categories.ai.feature_3_title', locale),
+        description: t('features.categories.ai.feature_3_description', locale),
       },
     ],
   },
   {
-    name: 'MLS Integraties',
+    name: t('features.categories.mls.name', locale),
     icon: '🔄',
-    description: 'Naadloze synchronisatie met alle grote MLS-platforms voor realtime marktinzicht',
+    description: t('features.categories.mls.description', locale),
     features: [
       {
-        title: 'Realtime Sync',
-        description: 'Automatische synchronisatie van listings, updates en marktdata',
+        title: t('features.categories.mls.feature_1_title', locale),
+        description: t('features.categories.mls.feature_1_description', locale),
       },
       {
-        title: 'Multi-Platform Support',
-        description: 'Integratie met Funda, Idealista, Kyero, Fotocasa en 20+ andere platforms',
+        title: t('features.categories.mls.feature_2_title', locale),
+        description: t('features.categories.mls.feature_2_description', locale),
       },
       {
-        title: 'Duplicate Detection',
-        description: 'Automatische detectie en merge van dubbele listings',
+        title: t('features.categories.mls.feature_3_title', locale),
+        description: t('features.categories.mls.feature_3_description', locale),
       },
     ],
   },
   {
-    name: 'Compliance & GDPR',
+    name: t('features.categories.compliance.name', locale),
     icon: '✓',
-    description: 'Automatische compliance checks en documentbeheer voor zorgeloze naleving',
+    description: t('features.categories.compliance.description', locale),
     features: [
       {
-        title: 'GDPR Dashboard',
-        description: 'Overzicht van alle data processing activities en consent management',
+        title: t('features.categories.compliance.feature_1_title', locale),
+        description: t('features.categories.compliance.feature_1_description', locale),
       },
       {
-        title: 'Document Vault',
-        description: 'Veilige opslag van contracten, ID\'s en andere gevoelige documenten',
+        title: t('features.categories.compliance.feature_2_title', locale),
+        description: t('features.categories.compliance.feature_2_description', locale),
       },
       {
-        title: 'Audit Trail',
-        description: 'Volledige logging van alle acties voor compliance audits',
+        title: t('features.categories.compliance.feature_3_title', locale),
+        description: t('features.categories.compliance.feature_3_description', locale),
       },
     ],
   },
   {
-    name: 'Team Collaboration',
+    name: t('features.categories.team.name', locale),
     icon: '👥',
-    description: 'Werk samen met je team, deel leads en track performance',
+    description: t('features.categories.team.description', locale),
     features: [
       {
-        title: 'Shared Inbox',
-        description: 'Centraal overzicht van alle communicatie met leads en klanten',
+        title: t('features.categories.team.feature_1_title', locale),
+        description: t('features.categories.team.feature_1_description', locale),
       },
       {
-        title: 'Task Management',
-        description: 'Assign taken, set deadlines en track voortgang',
+        title: t('features.categories.team.feature_2_title', locale),
+        description: t('features.categories.team.feature_2_description', locale),
       },
       {
-        title: 'Performance Analytics',
-        description: 'Real-time dashboards met team en individuele performance metrics',
+        title: t('features.categories.team.feature_3_title', locale),
+        description: t('features.categories.team.feature_3_description', locale),
       },
     ],
   },
@@ -151,30 +156,30 @@ const comparison = [
 ---
 
 <Layout 
-  title="Features - Tesoro CRM"
-  description="Ontdek alle features van Tesoro CRM: AI-powered captación, MLS integraties, compliance tools en meer. Alles wat je nodig hebt voor succesvolle lead generatie."
+  title={t('meta.features_title', locale)}
+  description={t('meta.features_description', locale)}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <Badge variant="primary" size="md" class="mb-6">
-        ⚡ Krachtige Features
+        {t('features.hero.badge', locale)}
       </Badge>
       
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
-        Alles wat je nodig hebt voor succesvolle captación
+        {t('features.hero.title', locale)}
       </h1>
       
       <p class="text-lg sm:text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
-        Van AI-powered lead generatie tot compliance management - Tesoro CRM automatiseert je workflow end-to-end.
+        {t('features.hero.description', locale)}
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="primary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('cta.trial', locale)}
         </Button>
         <Button variant="outline" size="lg" href="/demo">
-          Bekijk Demo
+          {t('cta.demo', locale)}
         </Button>
       </div>
     </div>
@@ -225,7 +230,7 @@ const comparison = [
           Integraties met je favoriete tools
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Tesoro CRM integreert naadloos met 50+ platforms die je al gebruikt
+          {t('features_page.integrations_title', locale)}
         </p>
       </div>
 
@@ -253,10 +258,10 @@ const comparison = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Hoe Tesoro CRM zich verhoudt tot de concurrentie
+          {t('features_page.comparison_title', locale)}
         </h2>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Zie waarom 500+ makelaars kiezen voor Tesoro CRM
+          {t('features_page.comparison_subtitle', locale)}
         </p>
       </div>
 
@@ -265,9 +270,9 @@ const comparison = [
           <thead>
             <tr class="border-b border-neutral-200">
               <th class="text-left p-4 font-semibold text-neutral-900">Feature</th>
-              <th class="p-4 font-semibold text-primary">Tesoro CRM</th>
-              <th class="p-4 font-semibold text-neutral-600">Concurrent A</th>
-              <th class="p-4 font-semibold text-neutral-600">Concurrent B</th>
+              <th class="p-4 font-semibold text-primary">{t('features_page.comparison_tesoro', locale)}</th>
+              <th class="p-4 font-semibold text-neutral-600">{t('features_page.comparison_competitor_a', locale)}</th>
+              <th class="p-4 font-semibold text-neutral-600">{t('features_page.comparison_competitor_b', locale)}</th>
             </tr>
           </thead>
           <tbody>
@@ -303,7 +308,7 @@ const comparison = [
 
       <div class="text-center mt-12">
         <Button variant="primary" size="lg" href="/signup">
-          Kies voor de Beste - Start Gratis
+          {t('features_page.final_cta_title', locale)}
         </Button>
       </div>
     </div>
@@ -316,11 +321,11 @@ const comparison = [
         Klaar om je workflow te automatiseren?
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Sluit je aan bij 500+ succesvolle makelaars die hun captación hebben verdrievoudigd met Tesoro CRM.
+        {t('features_page.final_cta_description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="/signup">
-          Start Gratis Trial
+          {t('cta.trial', locale)}
         </Button>
         <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
           Bekijk Prijzen
