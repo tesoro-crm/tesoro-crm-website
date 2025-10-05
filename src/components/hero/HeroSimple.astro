@@ -53,10 +53,6 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, 
       <div class="hero-simple__visual">
         <div class="hero-simple__glow" aria-hidden="true"></div>
         <div class="hero-simple__kanban" data-kanban>
-          <div class="hero-simple__kanban-controls">
-            <button class="hero-simple__control" data-kanban-pause aria-label="Pause animation">⏸️</button>
-            <button class="hero-simple__control" data-kanban-play aria-label="Play animation" style="display: none;">▶️</button>
-          </div>
           <div class="hero-simple__kanban-stage" data-stage="0">
             <div class="hero-simple__kanban-header">
               <span class="hero-simple__kanban-title">{kanbanProposed}</span>
@@ -206,32 +202,13 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, 
         }
       };
 
-      const pauseButton = kanban.querySelector('[data-kanban-pause]') as HTMLButtonElement | null;
-      const playButton = kanban.querySelector('[data-kanban-play]') as HTMLButtonElement | null;
-
       const interval = setInterval(runAnimation, 3000);
       
-      const pauseAnimation = () => {
-        clearInterval(interval);
-        pauseButton?.style.setProperty('display', 'none');
-        playButton?.style.setProperty('display', 'inline-flex');
-      };
-
-      const resumeAnimation = () => {
-        const newInterval = setInterval(runAnimation, 3000);
-        // Update interval reference somehow, but for simplicity, just restart
-        pauseButton?.style.setProperty('display', 'inline-flex');
-        playButton?.style.setProperty('display', 'none');
-      };
-
-      pauseButton?.addEventListener('click', pauseAnimation);
-      playButton?.addEventListener('click', resumeAnimation);
-      
       // Pause on hover (desktop)
-      kanban.addEventListener('mouseenter', pauseAnimation);
+      kanban.addEventListener('mouseenter', () => clearInterval(interval));
       
       // Pause on touch (mobile)
-      kanban.addEventListener('touchstart', pauseAnimation, { passive: true });
+      kanban.addEventListener('touchstart', () => clearInterval(interval), { passive: true });
     }
 
     // Run on initial load
@@ -409,34 +386,6 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, 
     gap: 1rem;
     justify-content: center;
     overflow: hidden;
-  }
-
-  .hero-simple__kanban-controls {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    z-index: 10;
-  }
-
-  .hero-simple__control {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 9999px;
-    border: none;
-    background: rgba(10, 31, 68, 0.1);
-    color: #0a1f44;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-
-  .hero-simple__control:hover {
-    background: rgba(10, 31, 68, 0.2);
   }
 
   .hero-simple__kanban-stage {
