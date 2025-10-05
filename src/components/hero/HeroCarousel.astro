@@ -48,43 +48,6 @@ interface HeroCarouselProps {
 
 const { slides, trust, ctas, carouselLabel } = Astro.props as HeroCarouselProps;
 ---
-  | {
-      readonly id: 'matching';
-      readonly label: string;
-      readonly badge: string;
-      readonly headline: string;
-      readonly subheadline: string;
-      readonly floatingBadge: string;
-      readonly ticker: {
-        readonly label: string;
-        readonly items: readonly HeroTickerItem[];
-      };
-    }
-  | {
-      readonly id: 'portal';
-      readonly label: string;
-      readonly badge: string;
-      readonly headline: string;
-      readonly subheadline: string;
-      readonly floatingBadge: string;
-      readonly highlights: readonly HeroHighlight[];
-    };
-
-interface HeroCtas {
-  readonly primary: string;
-  readonly secondary: string;
-  readonly video: string;
-}
-
-interface HeroCarouselProps {
-  readonly slides: readonly HeroSlide[];
-  readonly trust: readonly string[];
-  readonly ctas: HeroCtas;
-  readonly carouselLabel: string;
-}
-
-const { slides, trust, ctas, carouselLabel } = Astro.props as HeroCarouselProps;
----
 <section class="hero" data-hero>
   <div class="hero__background" aria-hidden="true"></div>
   <div class="hero__container">
@@ -604,7 +567,7 @@ const { slides, trust, ctas, carouselLabel } = Astro.props as HeroCarouselProps;
         /** @returns {void} */
         const startAutoMove = () => {
           if (autoMoveTimer) clearInterval(autoMoveTimer);
-          autoMoveTimer = setInterval(autoMoveCards, 3000);
+        autoMoveTimer = setInterval(autoMoveCards, 3000) as number;
         };
 
         /** @returns {void} */
