@@ -159,7 +159,7 @@ const faqs = [
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
           {t('home.features.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
           {t('home.features.description', locale)}
         </p>
       </div>
@@ -171,7 +171,7 @@ const faqs = [
             <h3 class="text-xl font-display font-semibold text-neutral-900 mb-3">
               {feature.title}
             </h3>
-            <p class="text-neutral-600">
+            <p class="text-neutral-700">
               {feature.description}
             </p>
           </Card>
@@ -187,7 +187,7 @@ const faqs = [
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
           {t('home.testimonials.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
           {t('home.testimonials.subtitle', locale)}
         </p>
       </div>
@@ -200,8 +200,8 @@ const faqs = [
               <div class="text-4xl">{testimonial.image}</div>
               <div>
                 <div class="font-semibold text-neutral-900">{testimonial.author}</div>
-                <div class="text-sm text-neutral-600">{testimonial.role}</div>
-                <div class="text-sm text-neutral-600">{testimonial.company}</div>
+                <div class="text-sm text-neutral-700">{testimonial.role}</div>
+                <div class="text-sm text-neutral-700">{testimonial.company}</div>
               </div>
             </div>
           </Card>
@@ -221,7 +221,7 @@ const faqs = [
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
             {t('home.demo.title', locale)}
           </h2>
-          <p class="text-lg text-neutral-600 mb-8">
+          <p class="text-lg text-neutral-700 mb-8">
             {t('home.demo.description', locale)}
           </p>
           <ul class="space-y-4 mb-8">
@@ -258,7 +258,7 @@ const faqs = [
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
           {t('home.faq.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-600">
+        <p class="text-lg text-neutral-700">
           {t('home.faq.subtitle', locale)}
         </p>
       </div>
@@ -267,13 +267,13 @@ const faqs = [
         {faqs.map((faq) => (
           <Card variant="default" padding="lg">
             <h3 class="text-lg font-semibold text-neutral-900 mb-3">{faq.question}</h3>
-            <p class="text-neutral-600">{faq.answer}</p>
+            <p class="text-neutral-700">{faq.answer}</p>
           </Card>
         ))}
       </div>
 
       <div class="text-center mt-12">
-        <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
+        <p class="text-neutral-700 mb-4">{t('home.faq.more_questions', locale)}</p>
         <Button variant="outline" href="/contact">
           {t('home.faq.contact_cta', locale)}
         </Button>
