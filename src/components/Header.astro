@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Button from './ui/Button.astro';
+import AISearch from './AISearch.astro';
 import { getLocale, getLocalizedPath, loadTranslations, t } from '../i18n/utils';
 import { languages, languageFlags } from '../i18n/config';
 import type { Language } from '../i18n/config';
@@ -52,8 +53,9 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         </li>
       </ul>
 
-      <!-- Language Selector & CTA -->
+      <!-- AI Search, Language Selector & CTA -->
       <div class="hidden md:flex items-center gap-4">
+        <AISearch locale={locale} />
         <div class="relative">
           <button 
             id="language-button"
