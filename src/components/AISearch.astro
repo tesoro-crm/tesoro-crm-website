@@ -1,0 +1,409 @@
+---
+// AI-powered search component for Cloudflare AI Search
+// Docs: https://developers.cloudflare.com/ai-search/
+
+import { t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
+---
+
+<div class="ai-search">
+  <button 
+    type="button" 
+    class="ai-search__trigger"
+    aria-label={t('search.open', locale)}
+    data-search-trigger
+  >
+    <svg class="ai-search__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="ai-search__text">{t('search.placeholder', locale)}</span>
+    <kbd class="ai-search__kbd">⌘K</kbd>
+  </button>
+
+  <dialog class="ai-search__dialog" data-search-dialog>
+    <div class="ai-search__container">
+      <div class="ai-search__header">
+        <svg class="ai-search__header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <input 
+          type="search" 
+          class="ai-search__input"
+          placeholder={t('search.placeholder', locale)}
+          aria-label={t('search.label', locale)}
+          data-search-input
+        />
+        <button 
+          type="button" 
+          class="ai-search__close"
+          aria-label={t('search.close', locale)}
+          data-search-close
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="ai-search__results" data-search-results>
+        <div class="ai-search__empty">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon">
+            <path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="ai-search__empty-text">{t('search.empty', locale)}</p>
+        </div>
+      </div>
+
+      <div class="ai-search__footer">
+        <span class="ai-search__powered">
+          Powered by 
+          <strong>Cloudflare AI</strong>
+        </span>
+        <div class="ai-search__shortcuts">
+          <kbd>↑↓</kbd> {t('search.navigate', locale)}
+          <kbd>↵</kbd> {t('search.select', locale)}
+          <kbd>esc</kbd> {t('search.close', locale)}
+        </div>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<script>
+  function initAISearch(): void {
+    const trigger = document.querySelector('[data-search-trigger]') as HTMLButtonElement;
+    const dialog = document.querySelector('[data-search-dialog]') as HTMLDialogElement;
+    const input = document.querySelector('[data-search-input]') as HTMLInputElement;
+    const closeBtn = document.querySelector('[data-search-close]') as HTMLButtonElement;
+    const resultsContainer = document.querySelector('[data-search-results]') as HTMLElement;
+
+    if (!trigger || !dialog || !input || !closeBtn || !resultsContainer) return;
+
+    // Open dialog
+    const openDialog = (): void => {
+      dialog.showModal();
+      input.focus();
+    };
+
+    // Close dialog
+    const closeDialog = (): void => {
+      dialog.close();
+      input.value = '';
+      resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">Start typing to search...</p></div>';
+    };
+
+    // Keyboard shortcut (Cmd/Ctrl + K)
+    document.addEventListener('keydown', (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        openDialog();
+      }
+      if (e.key === 'Escape' && dialog.open) {
+        closeDialog();
+      }
+    });
+
+    trigger.addEventListener('click', openDialog);
+    closeBtn.addEventListener('click', closeDialog);
+
+    // Close on backdrop click
+    dialog.addEventListener('click', (e: MouseEvent) => {
+      if (e.target === dialog) {
+        closeDialog();
+      }
+    });
+
+    // Search functionality
+    let debounceTimer: number;
+    input.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = window.setTimeout(async () => {
+        const query = input.value.trim();
+        
+        if (!query) {
+          resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">Start typing to search...</p></div>';
+          return;
+        }
+
+        // Show loading
+        resultsContainer.innerHTML = '<div class="ai-search__loading"><div class="ai-search__spinner"></div><p>Searching with AI...</p></div>';
+
+        try {
+          // TODO: Replace with actual Cloudflare AI Search endpoint
+          // For now, this is a placeholder that will be replaced when you enable AI Search in Cloudflare
+          const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+          
+          if (!response.ok) {
+            throw new Error('Search failed');
+          }
+
+          const results = await response.json();
+          
+          if (results.length === 0) {
+            resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">No results found</p></div>';
+            return;
+          }
+
+          // Render results
+          resultsContainer.innerHTML = results.map((result: any) => `
+            <a href="${result.url}" class="ai-search__result">
+              <div class="ai-search__result-header">
+                <h3 class="ai-search__result-title">${result.title}</h3>
+                ${result.score ? `<span class="ai-search__result-score">${Math.round(result.score * 100)}% match</span>` : ''}
+              </div>
+              <p class="ai-search__result-excerpt">${result.excerpt}</p>
+              <span class="ai-search__result-url">${result.url}</span>
+            </a>
+          `).join('');
+        } catch (error) {
+          console.error('Search error:', error);
+          resultsContainer.innerHTML = '<div class="ai-search__error"><p>Search is not yet configured. Please enable Cloudflare AI Search in your dashboard.</p></div>';
+        }
+      }, 300);
+    });
+  }
+
+  // Initialize on load
+  initAISearch();
+
+  // Re-initialize after view transitions
+  document.addEventListener('astro:after-swap', initAISearch);
+</script>
+
+<style>
+  .ai-search__trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .ai-search__trigger:hover {
+    border-color: #0a1f44;
+    color: #0a1f44;
+  }
+
+  .ai-search__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ai-search__text {
+    color: #9ca3af;
+  }
+
+  .ai-search__kbd {
+    padding: 0.125rem 0.375rem;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: #6b7280;
+  }
+
+  .ai-search__dialog {
+    max-width: 640px;
+    width: 90vw;
+    max-height: 80vh;
+    padding: 0;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: white;
+  }
+
+  .ai-search__dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+
+  .ai-search__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .ai-search__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .ai-search__header-icon {
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+    flex-shrink: 0;
+  }
+
+  .ai-search__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #0a1f44;
+  }
+
+  .ai-search__input::placeholder {
+    color: #9ca3af;
+  }
+
+  .ai-search__close {
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+  }
+
+  .ai-search__close:hover {
+    background: #f3f4f6;
+    color: #0a1f44;
+  }
+
+  .ai-search__results {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+
+  .ai-search__empty,
+  .ai-search__loading,
+  .ai-search__error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #6b7280;
+  }
+
+  .ai-search__empty-icon {
+    margin-bottom: 1rem;
+    color: #d1d5db;
+  }
+
+  .ai-search__spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f4f6;
+    border-top-color: #0a1f44;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .ai-search__result {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease;
+  }
+
+  .ai-search__result:hover {
+    background: #f9fafb;
+  }
+
+  .ai-search__result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .ai-search__result-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0a1f44;
+    margin: 0;
+  }
+
+  .ai-search__result-score {
+    padding: 0.125rem 0.5rem;
+    background: #10b981;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .ai-search__result-excerpt {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5;
+  }
+
+  .ai-search__result-url {
+    font-size: 0.75rem;
+    color: #9ca3af;
+  }
+
+  .ai-search__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+
+  .ai-search__powered strong {
+    color: #0a1f44;
+  }
+
+  .ai-search__shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .ai-search__shortcuts kbd {
+    padding: 0.125rem 0.375rem;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    font-family: monospace;
+  }
+
+  @media (max-width: 640px) {
+    .ai-search__dialog {
+      width: 100vw;
+      max-width: 100vw;
+      height: 100vh;
+      max-height: 100vh;
+      border-radius: 0;
+    }
+
+    .ai-search__kbd {
+      display: none;
+    }
+  }
+</style>
