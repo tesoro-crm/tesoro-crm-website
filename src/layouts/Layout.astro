@@ -74,6 +74,16 @@ const {
 		
 		<!-- Cloudflare NLWeb AI Search -->
 		<link rel="stylesheet" href="https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.css">
+		<style>
+			/* Fix NLWeb z-index so search is clickable */
+			#docs-search-container {
+				position: relative;
+				z-index: 9999 !important;
+			}
+			#docs-search-container * {
+				z-index: 9999 !important;
+			}
+		</style>
 		
 		<!-- Structured Data Component -->
 		<StructuredData locale={locale} siteUrl={siteUrl} />
