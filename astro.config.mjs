@@ -2,11 +2,25 @@
 import { defineConfig, fontProviders } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import spotlight from '@spotlightjs/astro';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || 'https://tesoro-crm-website.pages.dev',
-  integrations: [tailwind(), spotlight()],
+  integrations: [
+    tailwind(), 
+    spotlight(),
+    sitemap({
+      i18n: {
+        defaultLocale: 'es',
+        locales: {
+          es: 'es',
+          en: 'en',
+          nl: 'nl',
+        },
+      },
+    }),
+  ],
   build: {
     inlineStylesheets: 'always', // Force inline all CSS to eliminate render-blocking
   },
