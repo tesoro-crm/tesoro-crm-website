@@ -73,6 +73,142 @@ const {
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json" set:html={
+			JSON.stringify({
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": `${siteUrl}#organization`,
+						"name": "Tesoro CRM",
+						"alternateName": "Tesoro",
+						"description": locale === 'nl' 
+							? "Intelligente leadgeneratie voor vastgoedprofessionals met AI-powered CRM"
+							: locale === 'en'
+							? "Intelligent lead generation for real estate professionals with AI-powered CRM"
+							: "Captación inteligente para profesionales inmobiliarios con CRM impulsado por IA",
+						"url": siteUrl,
+						"logo": {
+							"@type": "ImageObject",
+							"url": `${siteUrl}/assets/tesoro-logo.svg`,
+							"width": 200,
+							"height": 60
+						},
+						"foundingDate": "2025",
+						"sameAs": [
+							"https://linkedin.com/company/tesoro-crm",
+							"https://twitter.com/tesoro_crm"
+						],
+						"contactPoint": {
+							"@type": "ContactPoint",
+							"telephone": "+31-20-123-4567",
+							"contactType": "customer service",
+							"availableLanguage": ["Dutch", "English", "Spanish"],
+							"areaServed": ["NL", "BE", "ES", "GB"]
+						},
+						"address": {
+							"@type": "PostalAddress",
+							"addressCountry": "NL",
+							"addressLocality": "Amsterdam"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": `${siteUrl}#website`,
+						"url": siteUrl,
+						"name": "Tesoro CRM",
+						"description": locale === 'nl'
+							? "Intelligente leadgeneratie voor vastgoedprofessionals"
+							: locale === 'en'
+							? "Intelligent lead generation for real estate professionals"
+							: "Captación inteligente para profesionales inmobiliarios",
+						"publisher": { "@id": `${siteUrl}#organization` },
+						"inLanguage": locale,
+						"potentialAction": {
+							"@type": "SearchAction",
+							"target": `${siteUrl}/search?q={search_term_string}`,
+							"query-input": "required name=search_term_string"
+						}
+					},
+					{
+						"@type": "SoftwareApplication",
+						"@id": `${siteUrl}#software`,
+						"name": "Tesoro CRM",
+						"description": locale === 'nl'
+							? "AI-powered CRM voor vastgoed leadgeneratie met automatische matching"
+							: locale === 'en'
+							? "AI-powered CRM for real estate lead generation with automatic matching"
+							: "CRM impulsado por IA para generación de leads inmobiliarios con matching automático",
+						"url": siteUrl,
+						"applicationCategory": "BusinessApplication",
+						"operatingSystem": "Web Browser",
+						"offers": {
+							"@type": "Offer",
+							"price": "99",
+							"priceCurrency": "EUR",
+							"description": locale === 'nl'
+								? "Vanaf €99/maand voor individuele makelaars"
+								: locale === 'en'
+								? "From €99/month for individual agents"
+								: "Desde €99/mes para agentes individuales",
+							"seller": { "@id": `${siteUrl}#organization` }
+						},
+						"featureList": [
+							"AI-powered lead generation",
+							"MLS integration",
+							"Automated compliance",
+							"Real-time matching",
+							"Customer portal",
+							"Multi-language support"
+						]
+					},
+					{
+						"@type": "Service",
+						"@id": `${siteUrl}#service`,
+						"name": "AI-Powered Real Estate CRM",
+						"description": locale === 'nl'
+							? "Intelligente CRM oplossing voor vastgoedprofessionals met automatische lead matching"
+							: locale === 'en'
+							? "Intelligent CRM solution for real estate professionals with automatic lead matching"
+							: "Solución CRM inteligente para profesionales inmobiliarios con matching automático de leads",
+						"provider": { "@id": `${siteUrl}#organization` },
+						"serviceType": "CRM Software",
+						"areaServed": {
+							"@type": "Country",
+							"name": ["Netherlands", "Belgium", "Spain", "United Kingdom"]
+						},
+						"hasOfferCatalog": {
+							"@type": "OfferCatalog",
+							"name": "Tesoro CRM Pricing",
+							"itemListElement": [
+								{
+									"@type": "Offer",
+									"itemOffered": {
+										"@type": "Service",
+										"name": "Starter Plan",
+										"description": "Perfect for individual agents"
+									},
+									"price": "99",
+									"priceCurrency": "EUR",
+									"priceSpecification": {
+										"@type": "UnitPriceSpecification",
+										"price": "99",
+										"priceCurrency": "EUR",
+										"referenceQuantity": {
+											"@type": "QuantitativeValue",
+											"value": "1",
+											"unitText": "month"
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			})
+		}></script>
+		
 		<!-- View Transitions -->
 		<ViewTransitions />
 	</head>

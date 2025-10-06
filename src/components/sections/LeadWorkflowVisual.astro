@@ -141,7 +141,7 @@ const {
             <p>📍 {emailInterest}</p>
             <p>💰 {emailBudget}</p>
           </div>
-          <button class="mockup-email__cta">{emailCta}</button>
+          <button type="button" class="mockup-email__cta" aria-label="View lead in Tesoro">{emailCta}</button>
         </div>
       </div>
     </div>
@@ -153,8 +153,8 @@ const {
           <h3>Jan Jansen</h3>
           <span class="mockup-call__status">{callStatus}</span>
         </div>
-        <button class="mockup-call__button">
-          <span class="mockup-call__icon">📞</span>
+        <button type="button" class="mockup-call__button" aria-label="Call lead">
+          <span class="mockup-call__icon" aria-hidden="true">📞</span>
           <span class="mockup-call__text">{callButton}</span>
         </button>
         <div class="mockup-call__recording">
@@ -173,17 +173,17 @@ const {
           <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
         </div>
         <div class="mockup-template__dropdown" data-template-dropdown>
-          <button class="mockup-template__select" data-template-button>
+          <button type="button" class="mockup-template__select" data-template-button aria-label="Select email template" aria-haspopup="listbox" aria-expanded="false">
             <span class="mockup-template__select-text">{templatePlaceholder}</span>
-            <span class="mockup-template__select-arrow">▼</span>
+            <span class="mockup-template__select-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="mockup-template__options" data-template-options>
-            <div class="mockup-template__option" data-option="1">{templateOption1}</div>
-            <div class="mockup-template__option" data-option="2">{templateOption2}</div>
-            <div class="mockup-template__option" data-option="3">{templateOption3}</div>
+          <div class="mockup-template__options" data-template-options role="listbox">
+            <div class="mockup-template__option" data-option="1" role="option">{templateOption1}</div>
+            <div class="mockup-template__option" data-option="2" role="option">{templateOption2}</div>
+            <div class="mockup-template__option" data-option="3" role="option">{templateOption3}</div>
           </div>
         </div>
-        <button class="mockup-template__send">{templateSend}</button>
+        <button type="button" class="mockup-template__send" aria-label="Send follow-up email">{templateSend}</button>
       </div>
     </div>
 
