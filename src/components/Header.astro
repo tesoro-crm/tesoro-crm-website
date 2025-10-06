@@ -3,7 +3,6 @@ import Button from './ui/Button.astro';
 import { getLocale, getLocalizedPath, loadTranslations, t } from '../i18n/utils';
 import { languages, languageFlags } from '../i18n/config';
 import type { Language } from '../i18n/config';
-import logo from '../assets/tesoro-logo-full-color-rgb-1500px-w-300ppi.png';
 
 const currentPath = Astro.url.pathname;
 const locale: Language = getLocale(Astro.currentLocale, Astro.url);
@@ -18,7 +17,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
-        <img src={logo.src} alt="Tesoro CRM" class="h-8" />
+        <img src="/assets/tesoro-logo.svg" alt="Tesoro CRM" class="h-8" width="200" height="60" />
       </a>
 
       <!-- Desktop Navigation -->
