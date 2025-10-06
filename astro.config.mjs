@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import spotlight from '@spotlightjs/astro';
 
@@ -9,6 +9,22 @@ export default defineConfig({
   integrations: [tailwind(), spotlight()],
   build: {
     inlineStylesheets: 'always', // Force inline all CSS to eliminate render-blocking
+  },
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.fontsource(),
+        name: 'Inter',
+        cssVariable: '--font-inter',
+        weights: [400, 500, 600, 700],
+      },
+      {
+        provider: fontProviders.fontsource(),
+        name: 'Poppins',
+        cssVariable: '--font-poppins',
+        weights: [600, 700],
+      },
+    ],
   },
   i18n: {
     defaultLocale: 'es',
