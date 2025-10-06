@@ -178,10 +178,10 @@ const {
             <span class="mockup-template__select-text">{templatePlaceholder}</span>
             <span class="mockup-template__select-arrow" aria-hidden="true">▼</span>
           </button>
-          <div class="mockup-template__options" data-template-options role="listbox">
-            <div class="mockup-template__option" data-option="1" role="option">{templateOption1}</div>
-            <div class="mockup-template__option" data-option="2" role="option">{templateOption2}</div>
-            <div class="mockup-template__option" data-option="3" role="option">{templateOption3}</div>
+          <div class="mockup-template__options" data-template-options role="listbox" aria-label="Email template options">
+            <div class="mockup-template__option" data-option="1" role="option" aria-label="{templateOption1}">{templateOption1}</div>
+            <div class="mockup-template__option" data-option="2" role="option" aria-label="{templateOption2}">{templateOption2}</div>
+            <div class="mockup-template__option" data-option="3" role="option" aria-label="{templateOption3}">{templateOption3}</div>
           </div>
         </div>
         <button type="button" class="mockup-template__send" aria-label="Send follow-up email">{templateSend}</button>
