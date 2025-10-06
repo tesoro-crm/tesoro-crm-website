@@ -75,6 +75,11 @@ const {
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
+		<!-- Preload critical fonts for faster LCP -->
+		<link rel="preload" href="/_astro/inter-latin-400-normal.Yt3aPRUw.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/_astro/inter-latin-600-normal.LgqL8muc.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/_astro/poppins-latin-600-normal.zEkxB9Mr.woff2" as="font" type="font/woff2" crossorigin />
+		
 		<!-- Structured Data Component -->
 		<StructuredData locale={locale} siteUrl={siteUrl} />
 		
