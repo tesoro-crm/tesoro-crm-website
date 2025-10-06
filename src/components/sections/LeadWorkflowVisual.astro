@@ -173,7 +173,8 @@ const {
           <img src="/assets/google-logo.svg" alt="Google" class="mockup-template__logo" />
         </div>
         <div class="mockup-template__dropdown" data-template-dropdown>
-          <button type="button" class="mockup-template__select" data-template-button aria-label="Select email template" aria-haspopup="listbox" aria-expanded="false">
+          <label id="template-select-label" class="sr-only">Select email template</label>
+          <button type="button" id="template-select-button" class="mockup-template__select" data-template-button aria-labelledby="template-select-label" aria-haspopup="listbox" aria-expanded="false">
             <span class="mockup-template__select-text">{templatePlaceholder}</span>
             <span class="mockup-template__select-arrow" aria-hidden="true">▼</span>
           </button>
@@ -819,6 +820,18 @@ const {
   .mockup-template__send:hover {
     background: #f59e0b;
     transform: translateY(-2px);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 
   /* History mockup */
