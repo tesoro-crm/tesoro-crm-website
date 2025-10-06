@@ -72,6 +72,9 @@ const {
 		<Font cssVariable="--font-inter" preload />
 		<Font cssVariable="--font-poppins" preload />
 		
+		<!-- Cloudflare NLWeb AI Search -->
+		<link rel="stylesheet" href="https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.css">
+		
 		<!-- Structured Data Component -->
 		<StructuredData locale={locale} siteUrl={siteUrl} />
 		
@@ -79,10 +82,25 @@ const {
 		<ViewTransitions />
 	</head>
 	<body class="font-sans text-neutral-800 antialiased overflow-x-hidden">
+		<!-- Cloudflare NLWeb AI Search Container -->
+		<div id="docs-search-container"></div>
+		
 		<Header />
 		<main class="overflow-x-hidden">
 			<slot />
 		</main>
 		<Footer />
+		
+		<!-- Cloudflare NLWeb AI Search Script -->
+		<script type="module">
+			import { NLWebDropdownChat } from 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.js';
+			
+			const chat = new NLWebDropdownChat({
+				containerId: 'docs-search-container',
+				site: 'https://new.tesorohq.io',
+				placeholder: 'Search for docs...',
+				endpoint: 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev'
+			});
+		</script>
 	</body>
 </html>

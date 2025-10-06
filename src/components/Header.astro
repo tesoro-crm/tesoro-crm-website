@@ -53,9 +53,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         </li>
       </ul>
 
-      <!-- AI Search, Language Selector & CTA -->
+      <!-- Language Selector & CTA -->
       <div class="hidden md:flex items-center gap-4">
-        <AISearch locale={locale} />
+        <!-- Custom AISearch temporarily disabled, using NLWeb instead -->
+        <!-- <AISearch locale={locale} /> -->
         <div class="relative">
           <button 
             id="language-button"
