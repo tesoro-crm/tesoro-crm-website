@@ -100,7 +100,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           </a>
         </li>
         <li class="border-t border-neutral-200 pt-2 mt-2">
-          <p class="text-xs text-neutral-500 mb-2 px-2">{t('nav.language', locale)}</p>
+          <p class="text-xs text-neutral-600 mb-2 px-2">{t('nav.language', locale)}</p>
           {Object.entries(languages).map(([lang, name]) => (
             <a 
               href={getLocalizedPath(basePath, lang as Language)} 
