@@ -7,6 +7,9 @@ import spotlight from '@spotlightjs/astro';
 export default defineConfig({
   site: process.env.SITE_URL || 'https://tesoro-crm-website.pages.dev',
   integrations: [tailwind(), spotlight()],
+  build: {
+    inlineStylesheets: 'auto', // Inline small CSS files to reduce render-blocking requests
+  },
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en', 'nl'],
