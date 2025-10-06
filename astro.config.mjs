@@ -8,7 +8,7 @@ export default defineConfig({
   site: process.env.SITE_URL || 'https://tesoro-crm-website.pages.dev',
   integrations: [tailwind(), spotlight()],
   build: {
-    inlineStylesheets: 'auto', // Inline small CSS files to reduce render-blocking requests
+    inlineStylesheets: 'always', // Force inline all CSS to eliminate render-blocking
   },
   i18n: {
     defaultLocale: 'es',
