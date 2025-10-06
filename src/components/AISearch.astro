@@ -136,6 +136,7 @@ const { locale } = Astro.props;
 
         try {
           // Call our Cloudflare Worker proxy (no CORS issues, token stays secure)
+          console.log('Searching for:', query);
           const response = await fetch('/api/search', {
             method: 'POST',
             headers: {
@@ -144,11 +145,16 @@ const { locale } = Astro.props;
             body: JSON.stringify({ query }),
           });
           
+          console.log('Response status:', response.status);
+          
           if (!response.ok) {
-            throw new Error('Search failed');
+            const errorText = await response.text();
+            console.error('API error:', errorText);
+            throw new Error(`Search failed: ${response.status} - ${errorText}`);
           }
 
           const data = await response.json();
+          console.log('Search results:', data);
           const results = data.result?.results || [];
           
           if (results.length === 0) {
@@ -169,7 +175,8 @@ const { locale } = Astro.props;
           `).join('');
         } catch (error) {
           console.error('Search error:', error);
-          resultsContainer.innerHTML = '<div class="ai-search__error"><p>Search is not yet configured. Please enable Cloudflare AI Search in your dashboard.</p></div>';
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          resultsContainer.innerHTML = `<div class="ai-search__error"><p><strong>Search error:</strong> ${errorMessage}</p><p class="text-sm mt-2">Check browser console for details.</p></div>`;
         }
       }, 300);
     });
