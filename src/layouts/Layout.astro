@@ -93,14 +93,20 @@ const {
 		
 		<!-- Cloudflare NLWeb AI Search Script -->
 		<script type="module">
-			import { NLWebDropdownChat } from 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.js';
-			
-			const chat = new NLWebDropdownChat({
-				containerId: 'docs-search-container',
-				site: 'https://new.tesorohq.io',
-				placeholder: 'Search for docs...',
-				endpoint: 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev'
-			});
+			try {
+				const { NLWebDropdownChat } = await import('https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.js');
+				
+				const chat = new NLWebDropdownChat({
+					containerId: 'docs-search-container',
+					site: 'https://new.tesorohq.io',
+					placeholder: 'Zoek in Tesoro CRM...',
+					endpoint: 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev'
+				});
+				
+				console.log('NLWeb AI Search loaded successfully');
+			} catch (error) {
+				console.error('Failed to load NLWeb AI Search:', error);
+			}
 		</script>
 	</body>
 </html>
