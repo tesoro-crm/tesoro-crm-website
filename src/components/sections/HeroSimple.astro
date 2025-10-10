@@ -1,17 +1,33 @@
 ---
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
 interface Props {
-  readonly headline: string;
-  readonly subheadline: string;
-  readonly ctaPrimary: string;
-  readonly ctaSecondary: string;
-  readonly trust: readonly string[];
-  readonly kanbanProposed: string;
-  readonly kanbanInterested: string;
-  readonly kanbanRejected: string;
-  readonly properties: readonly string[];
+  locale: Language;
 }
 
-const { headline, subheadline, ctaPrimary, ctaSecondary, trust, kanbanProposed, kanbanInterested, kanbanRejected, properties } = Astro.props;
+const { locale } = Astro.props;
+
+const headline = t('home.hero.headline', locale);
+const subheadline = t('home.hero.subheadline', locale);
+const ctaPrimary = t('home.hero.cta_primary', locale);
+const ctaSecondary = t('home.hero.cta_secondary', locale);
+const trust = [
+  t('home.hero.trust_pricing', locale),
+  t('home.hero.trust_integration', locale),
+  t('home.hero.trust_commitment', locale),
+];
+const kanbanProposed = t('home.hero.kanban_proposed', locale);
+const kanbanInterested = t('home.hero.kanban_interested', locale);
+const kanbanRejected = t('home.hero.kanban_rejected', locale);
+const properties = [
+  t('home.hero.property_1', locale),
+  t('home.hero.property_2', locale),
+  t('home.hero.property_3', locale),
+  t('home.hero.property_4', locale),
+  t('home.hero.property_5', locale),
+  t('home.hero.property_6', locale),
+];
 ---
 
 <section class="hero-simple">

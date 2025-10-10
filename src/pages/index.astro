@@ -24,100 +24,13 @@ import type { Language } from '../i18n/config';
 
 const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
-
-const heroTrust: readonly string[] = [
-  t('home.hero.trust_pricing', locale),
-  t('home.hero.trust_integration', locale),
-  t('home.hero.trust_commitment', locale),
-  t('home.hero.trust_ai', locale),
-  t('home.hero.trust_realtime', locale),
-  t('home.hero.trust_portal', locale),
-];
-
-const features = [
-  {
-    title: t('home.features.feature_1_title', locale),
-    description: t('home.features.feature_1_description', locale),
-    icon: t('home.features.feature_1_icon', locale),
-  },
-  {
-    title: t('home.features.feature_2_title', locale),
-    description: t('home.features.feature_2_description', locale),
-    icon: t('home.features.feature_2_icon', locale),
-  },
-  {
-    title: t('home.features.feature_3_title', locale),
-    description: t('home.features.feature_3_description', locale),
-    icon: t('home.features.feature_3_icon', locale),
-  },
-];
-
-const testimonials = [
-  {
-    quote: t('home.testimonials.testimonial_1_quote', locale),
-    author: t('home.testimonials.testimonial_1_author', locale),
-    role: t('home.testimonials.testimonial_1_role', locale),
-    company: t('home.testimonials.testimonial_1_company', locale),
-    image: t('home.testimonials.testimonial_1_image', locale),
-  },
-  {
-    quote: t('home.testimonials.testimonial_2_quote', locale),
-    author: t('home.testimonials.testimonial_2_author', locale),
-    role: t('home.testimonials.testimonial_2_role', locale),
-    company: t('home.testimonials.testimonial_2_company', locale),
-    image: t('home.testimonials.testimonial_2_image', locale),
-  },
-  {
-    quote: t('home.testimonials.testimonial_3_quote', locale),
-    author: t('home.testimonials.testimonial_3_author', locale),
-    role: t('home.testimonials.testimonial_3_role', locale),
-    company: t('home.testimonials.testimonial_3_company', locale),
-    image: t('home.testimonials.testimonial_3_image', locale),
-  },
-];
-
-const faqs = [
-  {
-    question: t('home.faq.question_1', locale),
-    answer: t('home.faq.answer_1', locale),
-  },
-  {
-    question: t('home.faq.question_2', locale),
-    answer: t('home.faq.answer_2', locale),
-  },
-  {
-    question: t('home.faq.question_3', locale),
-    answer: t('home.faq.answer_3', locale),
-  },
-  {
-    question: t('home.faq.question_4', locale),
-    answer: t('home.faq.answer_4', locale),
-  },
-];
 ---
 
 <Layout 
   title={t('meta.home_title', locale)}
   description={t('meta.home_description', locale)}
 >
-  <HeroSimple 
-    headline={t('home.hero.headline', locale)}
-    subheadline={t('home.hero.subheadline', locale)}
-    ctaPrimary={t('home.hero.cta_primary', locale)}
-    ctaSecondary={t('home.hero.cta_secondary', locale)}
-    trust={heroTrust}
-    kanbanProposed={t('home.hero.kanban_proposed', locale)}
-    kanbanInterested={t('home.hero.kanban_interested', locale)}
-    kanbanRejected={t('home.hero.kanban_rejected', locale)}
-    properties={[
-      t('home.hero.property_1', locale),
-      t('home.hero.property_2', locale),
-      t('home.hero.property_3', locale),
-      t('home.hero.property_4', locale),
-      t('home.hero.property_5', locale),
-      t('home.hero.property_6', locale)
-    ]}
-  />
+  <HeroSimple locale={locale} />
 
   <LeadWorkflowSection 
     title={t('home.lead_workflow.title', locale)}
