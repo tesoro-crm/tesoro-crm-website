@@ -51,6 +51,33 @@ export function t(key: TranslationKey, lang: Language = defaultLang): string {
 }
 
 /**
+ * Detect browser language from Accept-Language header
+ */
+export function detectBrowserLanguage(acceptLanguage: string | null): Language {
+  if (!acceptLanguage) return defaultLang;
+  
+  // Parse Accept-Language header (e.g., "nl-NL,nl;q=0.9,en;q=0.8")
+  const languages = acceptLanguage
+    .split(',')
+    .map(lang => {
+      const [code, qValue] = lang.trim().split(';q=');
+      const langCode = code.split('-')[0].toLowerCase();
+      const quality = qValue ? parseFloat(qValue) : 1.0;
+      return { code: langCode, quality };
+    })
+    .sort((a, b) => b.quality - a.quality);
+  
+  // Find first supported language
+  for (const { code } of languages) {
+    if (code === 'nl' || code === 'en' || code === 'es') {
+      return code;
+    }
+  }
+  
+  return defaultLang;
+}
+
+/**
  * Get current locale from Astro or URL
  */
 export function getLocale(astroLocale: string | undefined, url?: URL): Language {
