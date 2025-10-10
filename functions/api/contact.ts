@@ -3,10 +3,9 @@
  */
 
 interface Env {
-  TURNSTILE_SECRET_KEY: string;
-  MAILGUN_API_KEY: string;
-  MAILGUN_DOMAIN: string;
-  MAILGUN_REGION: string;
+  SECRETS: {
+    get(key: string): Promise<string | null>;
+  };
 }
 
 interface TurnstileResponse {
@@ -16,6 +15,19 @@ interface TurnstileResponse {
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
+    // Get secrets from Cloudflare Secret Store
+    const turnstileSecret = await context.env.SECRETS.get('TURNSTILE_SECRET_KEY');
+    const mailgunApiKey = await context.env.SECRETS.get('MAILGUN_API_KEY');
+    const mailgunDomain = await context.env.SECRETS.get('MAILGUN_DOMAIN');
+    const mailgunRegion = await context.env.SECRETS.get('MAILGUN_REGION');
+
+    if (!turnstileSecret || !mailgunApiKey || !mailgunDomain || !mailgunRegion) {
+      return new Response(JSON.stringify({ error: 'Server configuration error' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     const formData = await context.request.formData();
     
     const firstName = formData.get('firstName') as string;
@@ -39,7 +51,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          secret: context.env.TURNSTILE_SECRET_KEY,
+          secret: turnstileSecret,
           response: turnstileToken,
         }),
       }
@@ -55,8 +67,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // Send email via Mailgun
-    const mailgunRegion = context.env.MAILGUN_REGION === 'eu' ? 'api.eu.mailgun.net' : 'api.mailgun.net';
-    const mailgunUrl = `https://${mailgunRegion}/v3/${context.env.MAILGUN_DOMAIN}/messages`;
+    const mailgunApiUrl = mailgunRegion === 'eu' ? 'api.eu.mailgun.net' : 'api.mailgun.net';
+    const mailgunUrl = `https://${mailgunApiUrl}/v3/${mailgunDomain}/messages`;
 
     const emailBody = `
 New Contact Form Submission
@@ -74,7 +86,7 @@ IP Address: ${context.request.headers.get('cf-connecting-ip') || 'Unknown'}
     `.trim();
 
     const mailgunFormData = new FormData();
-    mailgunFormData.append('from', `Tesoro CRM Website <noreply@${context.env.MAILGUN_DOMAIN}>`);
+    mailgunFormData.append('from', `Tesoro CRM Website <noreply@${mailgunDomain}>`);
     mailgunFormData.append('to', 'sales@tesoro.estate');
     mailgunFormData.append('subject', `📧 New Contact from ${firstName} ${lastName}`);
     mailgunFormData.append('text', emailBody);
@@ -83,7 +95,7 @@ IP Address: ${context.request.headers.get('cf-connecting-ip') || 'Unknown'}
     const mailgunResponse = await fetch(mailgunUrl, {
       method: 'POST',
       headers: {
-        Authorization: `Basic ${btoa(`api:${context.env.MAILGUN_API_KEY}`)}`,
+        Authorization: `Basic ${btoa(`api:${mailgunApiKey}`)}`,
       },
       body: mailgunFormData,
     });

@@ -2,28 +2,57 @@
 
 ## Overview
 
-All forms on the website are protected by Cloudflare Turnstile and send notifications via Mailgun.
+All forms use **Cloudflare Secret Store** for secure credential management, Turnstile for spam protection, and Mailgun for email notifications.
 
-## Environment Variables
+## Cloudflare Secret Store Setup
 
-Add these to your .env file locally and Cloudflare Pages environment variables in production.
+The project uses Secret Store ID: `f232fb5497684c778c9082dab1308c64`
 
-## Mailgun Setup
+### Add Secrets via Wrangler CLI:
 
-1. Go to Mailgun Dashboard
-2. Navigate to Sending > Domain Settings
-3. Copy your API Key from API Keys section
-4. Copy your Domain (e.g., mg.tesoro.estate)
-5. Note your Region (EU or US)
+```bash
+# Add Turnstile Secret
+wrangler secret:bulk put --secret-store f232fb5497684c778c9082dab1308c64 <<EOF
+TURNSTILE_SECRET_KEY=0x4AAAAAAB543YohbkgJerNoWvs4uo22olE
+EOF
 
-## Configure Email Recipient
+# Add Mailgun Secrets
+wrangler secret:bulk put --secret-store f232fb5497684c778c9082dab1308c64 <<EOF
+MAILGUN_API_KEY=your-mailgun-api-key
+MAILGUN_DOMAIN=mg.tesoro.estate
+MAILGUN_REGION=eu
+NOTIFICATION_EMAIL=sales@tesoro.estate
+EOF
+```
 
-Edit the email recipient in functions/api/demo.ts and functions/api/contact.ts
+### Or via Cloudflare Dashboard:
 
-Change sales@tesoro.estate to your actual email address.
+1. Go to: https://dash.cloudflare.com → Workers & Pages → Secret Store
+2. Find store ID: `f232fb5497684c778c9082dab1308c64`
+3. Add these secrets:
+   - `TURNSTILE_SECRET_KEY`: `0x4AAAAAAB543YohbkgJerNoWvs4uo22olE`
+   - `MAILGUN_API_KEY`: Your Mailgun API key
+   - `MAILGUN_DOMAIN`: `mg.tesoro.estate`
+   - `MAILGUN_REGION`: `eu`
+   - `NOTIFICATION_EMAIL`: `sales@tesoro.estate`
+
+## Email Functionality
+
+The forms send **two emails**:
+
+1. **Notification email** (to Tesoro team)
+   - Recipient: Value from `NOTIFICATION_EMAIL` secret
+   - Contains all form data + metadata (IP, referrer)
+   - Professional HTML design with gradient header
+
+2. **Confirmation email** (to customer)
+   - Recipient: Customer's email address
+   - Confirms their request was received
+   - Professional HTML design matching brand
+   - Includes their submitted information
+
+Both emails use beautiful HTML templates with inline CSS for maximum compatibility.
 
 ## Deployment
 
-Add environment variables in Cloudflare Pages Settings > Environment Variables
-
-Deploy your site and test the forms.
+Secrets are automatically available to all deployments (production & preview) via the binding in `wrangler.toml`.
