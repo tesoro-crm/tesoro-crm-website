@@ -32,48 +32,7 @@ await loadTranslations(locale);
 >
   <HeroSimple locale={locale} />
 
-  <LeadWorkflowSection 
-    title={t('home.lead_workflow.title', locale)}
-    subtitle={t('home.lead_workflow.subtitle', locale)}
-    bullets={[
-      t('home.lead_workflow.bullet_1', locale),
-      t('home.lead_workflow.bullet_2', locale),
-      t('home.lead_workflow.bullet_3', locale),
-      t('home.lead_workflow.bullet_4', locale)
-    ]}
-    ctaLabel={t('home.lead_workflow.cta', locale)}
-    ctaHref="#lead-demo"
-    step1Title={t('home.lead_workflow.step1_title', locale)}
-    step1Text={t('home.lead_workflow.step1_text', locale)}
-    step2Title={t('home.lead_workflow.step2_title', locale)}
-    step2Text={t('home.lead_workflow.step2_text', locale)}
-    step3Title={t('home.lead_workflow.step3_title', locale)}
-    step3Text={t('home.lead_workflow.step3_text', locale)}
-    step4Title={t('home.lead_workflow.step4_title', locale)}
-    step4Text={t('home.lead_workflow.step4_text', locale)}
-    inboxLabel={t('home.lead_workflow.inbox_label', locale)}
-    newBadge={t('home.lead_workflow.new_badge', locale)}
-    emailSubject={t('home.lead_workflow.email_subject', locale)}
-    emailSource={t('home.lead_workflow.email_source', locale)}
-    emailInterest={t('home.lead_workflow.email_interest', locale)}
-    emailBudget={t('home.lead_workflow.email_budget', locale)}
-    emailCta={t('home.lead_workflow.email_cta', locale)}
-    callStatus={t('home.lead_workflow.call_status', locale)}
-    callButton={t('home.lead_workflow.call_button', locale)}
-    callRecording={t('home.lead_workflow.call_recording', locale)}
-    templateHeader={t('home.lead_workflow.template_header', locale)}
-    templatePlaceholder={t('home.lead_workflow.template_placeholder', locale)}
-    templateOption1={t('home.lead_workflow.template_option1', locale)}
-    templateOption2={t('home.lead_workflow.template_option2', locale)}
-    templateOption3={t('home.lead_workflow.template_option3', locale)}
-    templateSend={t('home.lead_workflow.template_send', locale)}
-    historyHeader={t('home.lead_workflow.history_header', locale)}
-    historyEmail={t('home.lead_workflow.history_email', locale)}
-    historyCall={t('home.lead_workflow.history_call', locale)}
-    historyReceived={t('home.lead_workflow.history_received', locale)}
-    timeNow={t('home.lead_workflow.time_now', locale)}
-    timeToday={t('home.lead_workflow.time_today', locale)}
-  />
+  <LeadWorkflowSection locale={locale} />
 
   <CoCreated locale={locale} />
   <FeaturesGrid locale={locale} />

@@ -1,91 +1,54 @@
 ---
-// src/components/sections/LeadWorkflowSection.astro
 import LeadWorkflowVisual from './LeadWorkflowVisual.astro';
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
 
-/** @typedef {{
-  title?: string; 
-  subtitle?: string; 
-  bullets?: readonly string[]; 
-  ctaLabel?: string; 
-  ctaHref?: string;
-  step1Title?: string;
-  step1Text?: string;
-  step2Title?: string;
-  step2Text?: string;
-  step3Title?: string;
-  step3Text?: string;
-  step4Title?: string;
-  step4Text?: string;
-  inboxLabel?: string;
-  newBadge?: string;
-  emailSubject?: string;
-  emailSource?: string;
-  emailInterest?: string;
-  emailBudget?: string;
-  emailCta?: string;
-  callStatus?: string;
-  callButton?: string;
-  callRecording?: string;
-  templateHeader?: string;
-  templatePlaceholder?: string;
-  templateOption1?: string;
-  templateOption2?: string;
-  templateOption3?: string;
-  templateSend?: string;
-  historyHeader?: string;
-  historyEmail?: string;
-  historyCall?: string;
-  historyReceived?: string;
-  timeNow?: string;
-  timeToday?: string;
-}} LeadSectionProps */
+interface Props {
+  locale: Language;
+}
 
-/**
- * Lead Workflow sectie.
- * @param {LeadSectionProps} Astro.props
- */
-const {
-  title = "U verliest kostbare leads omdat ze niet goed worden opgevolgd.",
-  subtitle = "Met Tesoro krijgt u direct een e-mail zodra er een nieuwe lead binnenkomt – en kunt u in één klik bellen, het gesprek opnemen en meteen een follow-up-mail sturen.",
-  bullets = [
-    "Directe melding: een e-mail met een link naar de lead in Tesoro.",
-    "Eén-klik bellen: start het gesprek vanuit Tesoro; de opname wordt automatisch opgeslagen bij de lead.",
-    "Altijd een backup: als de opname niet beschikbaar is, kunt u in drie klikken een gepersonaliseerde e-mail versturen via Office 365 of Google Business.",
-    "Volledige historie: alle telefoongesprekken en e-mails staan onder één lead, zodat er niets verloren gaat."
-  ],
-  ctaLabel = "Bekijk de demo",
-  ctaHref = "#lead-demo",
-  step1Title,
-  step1Text,
-  step2Title,
-  step2Text,
-  step3Title,
-  step3Text,
-  step4Title,
-  step4Text,
-  inboxLabel,
-  newBadge,
-  emailSubject,
-  emailSource,
-  emailInterest,
-  emailBudget,
-  emailCta,
-  callStatus,
-  callButton,
-  callRecording,
-  templateHeader,
-  templatePlaceholder,
-  templateOption1,
-  templateOption2,
-  templateOption3,
-  templateSend,
-  historyHeader,
-  historyEmail,
-  historyCall,
-  historyReceived,
-  timeNow,
-  timeToday
-} = Astro.props;
+const { locale } = Astro.props;
+
+const title = t('home.lead_workflow.title', locale);
+const subtitle = t('home.lead_workflow.subtitle', locale);
+const bullets = [
+  t('home.lead_workflow.bullet_1', locale),
+  t('home.lead_workflow.bullet_2', locale),
+  t('home.lead_workflow.bullet_3', locale),
+  t('home.lead_workflow.bullet_4', locale),
+];
+const ctaLabel = t('home.lead_workflow.cta', locale);
+const ctaHref = "#lead-demo";
+const step1Title = t('home.lead_workflow.step1_title', locale);
+const step1Text = t('home.lead_workflow.step1_text', locale);
+const step2Title = t('home.lead_workflow.step2_title', locale);
+const step2Text = t('home.lead_workflow.step2_text', locale);
+const step3Title = t('home.lead_workflow.step3_title', locale);
+const step3Text = t('home.lead_workflow.step3_text', locale);
+const step4Title = t('home.lead_workflow.step4_title', locale);
+const step4Text = t('home.lead_workflow.step4_text', locale);
+const inboxLabel = t('home.lead_workflow.inbox_label', locale);
+const newBadge = t('home.lead_workflow.new_badge', locale);
+const emailSubject = t('home.lead_workflow.email_subject', locale);
+const emailSource = t('home.lead_workflow.email_source', locale);
+const emailInterest = t('home.lead_workflow.email_interest', locale);
+const emailBudget = t('home.lead_workflow.email_budget', locale);
+const emailCta = t('home.lead_workflow.email_cta', locale);
+const callStatus = t('home.lead_workflow.call_status', locale);
+const callButton = t('home.lead_workflow.call_button', locale);
+const callRecording = t('home.lead_workflow.call_recording', locale);
+const templateHeader = t('home.lead_workflow.template_header', locale);
+const templatePlaceholder = t('home.lead_workflow.template_placeholder', locale);
+const templateOption1 = t('home.lead_workflow.template_option1', locale);
+const templateOption2 = t('home.lead_workflow.template_option2', locale);
+const templateOption3 = t('home.lead_workflow.template_option3', locale);
+const templateSend = t('home.lead_workflow.template_send', locale);
+const historyHeader = t('home.lead_workflow.history_header', locale);
+const historyEmail = t('home.lead_workflow.history_email', locale);
+const historyCall = t('home.lead_workflow.history_call', locale);
+const historyReceived = t('home.lead_workflow.history_received', locale);
+const timeNow = t('home.lead_workflow.time_now', locale);
+const timeToday = t('home.lead_workflow.time_today', locale);
 ---
 <section class="lead-workflow">
   <div class="lead-workflow__container">
