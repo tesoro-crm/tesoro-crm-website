@@ -7,6 +7,7 @@ import Input from '../components/ui/Input.astro';
 import DemoModal from '../components/modals/DemoModal.astro';
 import ContactModal from '../components/modals/ContactModal.astro';
 import SuccessModal from '../components/modals/SuccessModal.astro';
+import SignupModal from '../components/modals/SignupModal.astro';
 import VideoModal from '../components/ui/VideoModal.astro';
 import FormHandler from '../components/scripts/FormHandler.astro';
 import Modal from '../components/ui/Modal.astro';
@@ -173,33 +174,7 @@ const faqs = [
 <DemoModal locale={locale} />
 <ContactModal locale={locale} />
 <SuccessModal locale={locale} />
-
-<!-- Signup Modal -->
-<Modal id="signup-modal" title={t('home.modals.signup.title', locale)} size="md">
-  <div class="text-center space-y-6">
-    <div>
-      <h3 class="text-xl font-semibold text-neutral-900 mb-2">
-        {t('home.modals.signup.heading', locale)}
-      </h3>
-      <p class="text-neutral-600">
-        {t('home.modals.signup.description', locale)}
-      </p>
-    </div>
-
-    <div class="flex flex-col sm:flex-row gap-3 justify-center">
-      <Button variant="primary" size="lg" href="https://crm.tesoro.estate/auth/signup">
-        {t('home.modals.signup.cta', locale)}
-      </Button>
-      <Button variant="outline" size="lg" data-modal-close>
-        {t('home.modals.signup.cancel', locale)}
-      </Button>
-    </div>
-
-    <div class="text-sm text-neutral-500">
-      {t('home.modals.signup.security', locale)}
-    </div>
-  </div>
-</Modal>
+<SignupModal locale={locale} />
 
 <VideoModal 
   id="video-modal" 
