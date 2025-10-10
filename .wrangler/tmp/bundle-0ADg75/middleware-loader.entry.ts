@@ -3,12 +3,12 @@
 // export dynamically through wrangler, or we can potentially let users directly
 // add them as a sort of "plugin" system.
 
-import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-kNDdEz/middleware-insertion-facade.js";
+import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-0ADg75/middleware-insertion-facade.js";
 import { __facade_invoke__, __facade_register__, Dispatcher } from "/Users/johnstevens/.nvm/versions/node/v22.19.0/lib/node_modules/wrangler/templates/middleware/common.ts";
-import type { WorkerEntrypointConstructor } from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-kNDdEz/middleware-insertion-facade.js";
+import type { WorkerEntrypointConstructor } from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-0ADg75/middleware-insertion-facade.js";
 
 // Preserve all the exports from the worker
-export * from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-kNDdEz/middleware-insertion-facade.js";
+export * from "/Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/.wrangler/tmp/bundle-0ADg75/middleware-insertion-facade.js";
 
 class __Facade_ScheduledController__ implements ScheduledController {
 	readonly #noRetry: ScheduledController["noRetry"];

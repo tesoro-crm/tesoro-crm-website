@@ -2,24 +2,6 @@ name = "tesoro-crm-website"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "./dist"
 
-# Cloudflare Secret Store binding
-[[unsafe.bindings]]
-name = "SECRETS"
-type = "secret_store"
-id = "f232fb5497684c778c9082dab1308c64"
-
-[env.preview]
-name = "tesoro-crm-website-preview"
-
-[[env.preview.unsafe.bindings]]
-name = "SECRETS"
-type = "secret_store"
-id = "f232fb5497684c778c9082dab1308c64"
-
-[env.production]
-name = "tesoro-crm-website-production"
-
-[[env.production.unsafe.bindings]]
-name = "SECRETS"
-type = "secret_store"
-id = "f232fb5497684c778c9082dab1308c64"
+# Note: Secret Store bindings for Pages are configured via Cloudflare Dashboard
+# Go to: Pages Project → Settings → Functions → Bindings
+# Add Secret Store binding with name "SECRETS" and ID "f232fb5497684c778c9082dab1308c64"
