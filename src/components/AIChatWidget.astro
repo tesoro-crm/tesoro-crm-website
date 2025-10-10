@@ -75,6 +75,7 @@ const { locale } = Astro.props;
 
     <div class="ai-chat-widget__footer">
       <span class="ai-chat-widget__powered">Powered by <strong>Cloudflare AI</strong></span>
+      <a href="/ai-knowledge" class="ai-chat-widget__knowledge-link" target="_blank">📚 Knowledge Base</a>
     </div>
   </div>
 </div>
@@ -532,13 +533,26 @@ const { locale } = Astro.props;
   .ai-chat-widget__footer {
     padding: 12px 20px;
     border-top: 1px solid #e5e7eb;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 12px;
     color: #9ca3af;
   }
 
   .ai-chat-widget__powered strong {
     color: #667eea;
+  }
+
+  .ai-chat-widget__knowledge-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+
+  .ai-chat-widget__knowledge-link:hover {
+    opacity: 0.7;
   }
 
   @media (max-width: 640px) {
