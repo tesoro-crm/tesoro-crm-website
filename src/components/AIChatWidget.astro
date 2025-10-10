@@ -139,17 +139,69 @@ const { locale } = Astro.props;
       messages.scrollTop = messages.scrollHeight;
 
       try {
-        // Call AI Search API
-        const response = await fetch('/api/search', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query }),
-        });
+        // Simple keyword-based responses for common questions
+        const lowerQuery = query.toLowerCase();
+        let response = null;
 
-        if (!response.ok) throw new Error('Search failed');
+        // Check for common questions
+        if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price')) {
+          response = {
+            text: 'Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!',
+            link: '/pricing',
+            linkText: 'Bekijk alle prijzen'
+          };
+        } else if (lowerQuery.includes('lead') || lowerQuery.includes('workflow')) {
+          response = {
+            text: 'Tesoro houdt je scherp tijdens het hele proces. Van lead kwalificeren tot deal sluiten. Je wordt gewaarschuwd als je iets op zijn beloop laat - zo verlies je geen leads meer!',
+            link: '/#lead-workflow',
+            linkText: 'Lees meer over lead management'
+          };
+        } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial')) {
+          response = {
+            text: 'Je kunt Tesoro CRM 14 dagen gratis proberen! Geen creditcard nodig. Wil je een persoonlijke demo? Klik hieronder om een afspraak in te plannen.',
+            link: '#',
+            linkText: 'Plan een demo',
+            action: 'demo'
+          };
+        } else if (lowerQuery.includes('feature') || lowerQuery.includes('functie') || lowerQuery.includes('wat kan')) {
+          response = {
+            text: 'Tesoro CRM biedt AI-powered matching, automatische lead kwalificatie, deal management, email/telefoon integratie, klanten portal en veel meer!',
+            link: '/features',
+            linkText: 'Alle features bekijken'
+          };
+        } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp') || lowerQuery.includes('vraag')) {
+          response = {
+            text: 'Heb je een specifieke vraag? Neem contact met ons op! We helpen je graag verder.',
+            link: '#',
+            linkText: 'Neem contact op',
+            action: 'contact'
+          };
+        } else {
+          // Try AI Search API as fallback
+          try {
+            const apiResponse = await fetch('/api/search', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ query }),
+            });
 
-        const data = await response.json();
-        const results = data.result?.results || [];
+            if (apiResponse.ok) {
+              const data = await apiResponse.json();
+              const results = data.result?.results || [];
+              
+              if (results.length > 0) {
+                const topResult = results[0];
+                response = {
+                  text: topResult.excerpt || topResult.title,
+                  link: topResult.url,
+                  linkText: 'Lees meer'
+                };
+              }
+            }
+          } catch (apiError) {
+            console.log('AI Search not available, using fallback');
+          }
+        }
 
         // Remove loading message
         loadingMsg.remove();
@@ -158,7 +210,7 @@ const { locale } = Astro.props;
         const botMsg = document.createElement('div');
         botMsg.className = 'ai-chat-widget__message ai-chat-widget__message--bot';
         
-        if (results.length === 0) {
+        if (!response) {
           botMsg.innerHTML = `
             <div class="ai-chat-widget__message-avatar">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -166,11 +218,16 @@ const { locale } = Astro.props;
               </svg>
             </div>
             <div class="ai-chat-widget__message-content">
-              <p>Sorry, ik kon geen informatie vinden over "${query}". Probeer een andere vraag!</p>
+              <p>Interessante vraag! Ik kan je helpen met vragen over prijzen, features, demo's of lead management. Probeer bijvoorbeeld: "Wat kost Tesoro?" of "Hoe werkt lead management?"</p>
             </div>
           `;
         } else {
-          const topResult = results[0];
+          const linkHtml = response.action === 'demo' 
+            ? `<button data-modal-target="demo-modal" class="ai-chat-widget__link">${response.linkText} →</button>`
+            : response.action === 'contact'
+            ? `<button data-modal-target="contact-modal" class="ai-chat-widget__link">${response.linkText} →</button>`
+            : `<a href="${response.link}" class="ai-chat-widget__link">${response.linkText} →</a>`;
+          
           botMsg.innerHTML = `
             <div class="ai-chat-widget__message-avatar">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -178,8 +235,8 @@ const { locale } = Astro.props;
               </svg>
             </div>
             <div class="ai-chat-widget__message-content">
-              <p>${topResult.excerpt || topResult.title}</p>
-              <a href="${topResult.url}" class="ai-chat-widget__link">Lees meer →</a>
+              <p>${response.text}</p>
+              ${linkHtml}
             </div>
           `;
         }
@@ -198,7 +255,7 @@ const { locale } = Astro.props;
             </svg>
           </div>
           <div class="ai-chat-widget__message-content">
-            <p>Sorry, er ging iets mis. Probeer het later opnieuw.</p>
+            <p>Sorry, er ging iets mis. Probeer een vraag zoals: "Wat kost Tesoro?" of "Hoe werkt lead management?"</p>
           </div>
         `;
         messages.appendChild(errorMsg);
