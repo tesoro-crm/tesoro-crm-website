@@ -148,13 +148,13 @@ const { locale } = Astro.props;
         if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price')) {
           response = {
             text: 'Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!',
-            link: '/pricing',
+            link: '/ai-knowledge#prijzen',
             linkText: 'Bekijk alle prijzen'
           };
-        } else if (lowerQuery.includes('lead') || lowerQuery.includes('workflow')) {
+        } else if (lowerQuery.includes('lead') || lowerQuery.includes('workflow') || lowerQuery.includes('verlies')) {
           response = {
             text: 'Tesoro houdt je scherp tijdens het hele proces. Van lead kwalificeren tot deal sluiten. Je wordt gewaarschuwd als je iets op zijn beloop laat - zo verlies je geen leads meer!',
-            link: '/#lead-workflow',
+            link: '/ai-knowledge#lead-management',
             linkText: 'Lees meer over lead management'
           };
         } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial')) {
@@ -167,7 +167,7 @@ const { locale } = Astro.props;
         } else if (lowerQuery.includes('feature') || lowerQuery.includes('functie') || lowerQuery.includes('wat kan')) {
           response = {
             text: 'Tesoro CRM biedt AI-powered matching, automatische lead kwalificatie, deal management, email/telefoon integratie, klanten portal en veel meer!',
-            link: '/features',
+            link: '/ai-knowledge#features',
             linkText: 'Alle features bekijken'
           };
         } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp') || lowerQuery.includes('vraag')) {
