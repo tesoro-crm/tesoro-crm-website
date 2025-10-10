@@ -1,0 +1,60 @@
+---
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+export interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
+
+const faqs = [
+  {
+    question: t('home.faq.question_1', locale),
+    answer: t('home.faq.answer_1', locale),
+  },
+  {
+    question: t('home.faq.question_2', locale),
+    answer: t('home.faq.answer_2', locale),
+  },
+  {
+    question: t('home.faq.question_3', locale),
+    answer: t('home.faq.answer_3', locale),
+  },
+  {
+    question: t('home.faq.question_4', locale),
+    answer: t('home.faq.answer_4', locale),
+  },
+];
+---
+
+<section class="py-16 lg:py-24 bg-neutral-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+        {t('home.faq.title', locale)}
+      </h2>
+      <p class="text-lg text-neutral-600">
+        {t('home.faq.subtitle', locale)}
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+          <p class="text-neutral-700">{faq.answer}</p>
+        </Card>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
+      <Button variant="outline" data-modal-target="contact-modal">
+        {t('home.faq.contact_cta', locale)}
+      </Button>
+    </div>
+  </div>
+</section>
