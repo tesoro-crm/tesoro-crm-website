@@ -1,0 +1,188 @@
+---
+export interface Props {
+  id: string;
+  title: string;
+  videoId?: string;
+  customerCode?: string;
+}
+
+const { id, title, videoId, customerCode } = Astro.props;
+
+// Cloudflare Stream iframe URL with autoplay
+const streamUrl = videoId && customerCode 
+  ? `https://customer-${customerCode}.cloudflarestream.com/${videoId}/iframe?autoplay=true`
+  : `https://iframe.videodelivery.net/${videoId}?autoplay=true`;
+---
+
+<div
+  id={id}
+  class="video-modal fixed inset-0 z-[9999] overflow-y-auto hidden"
+  aria-labelledby={`${id}-title`}
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+    <!-- Background overlay -->
+    <div
+      class="video-modal-overlay fixed inset-0 bg-neutral-900 bg-opacity-90 transition-opacity"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Modal panel -->
+    <div class="video-modal-panel inline-block align-bottom bg-black rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-5xl w-full">
+      <!-- Header -->
+      <div class="flex items-center justify-between px-6 py-4 bg-neutral-900 border-b border-neutral-800">
+        <h3 id={`${id}-title`} class="text-lg font-display font-semibold text-white">
+          {title}
+        </h3>
+        <button
+          type="button"
+          class="video-modal-close text-neutral-400 hover:text-white transition-colors"
+          aria-label="Close video"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Video Container -->
+      <div class="video-container bg-black" style="aspect-ratio: 16 / 9;">
+        {videoId ? (
+          <iframe
+            id={`${id}-iframe`}
+            src={streamUrl}
+            class="w-full h-full"
+            style="border: none;"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+            allowfullscreen
+          ></iframe>
+        ) : (
+          <div class="flex items-center justify-center h-full text-neutral-400">
+            <p>No video configured</p>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .video-modal {
+    animation: modal-fade-in 0.2s ease-out;
+  }
+
+  .video-modal-panel {
+    animation: modal-slide-in 0.3s ease-out;
+  }
+
+  @keyframes modal-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes modal-slide-in {
+    from {
+      opacity: 0;
+      transform: translate(0, -50px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+</style>
+
+<script>
+  // Video Modal functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle video modal triggers
+    document.querySelectorAll('[data-video-modal-target]').forEach(trigger => {
+      (trigger as HTMLElement).addEventListener('click', function(e) {
+        e.preventDefault();
+        const modalId = this.getAttribute('data-video-modal-target');
+        const modal = document.getElementById(modalId!);
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('block');
+          document.body.style.overflow = 'hidden';
+          // Hide header when modal is open
+          const header = document.querySelector('header');
+          if (header) {
+            header.style.display = 'none';
+          }
+        }
+      });
+    });
+
+    // Handle video modal close buttons
+    document.querySelectorAll('.video-modal-close, [data-video-modal-close]').forEach(closeBtn => {
+      (closeBtn as HTMLElement).addEventListener('click', function() {
+        const modal = this.closest('.video-modal') as HTMLElement;
+        if (modal) {
+          closeVideoModal(modal);
+        }
+      });
+    });
+
+    // Handle overlay clicks
+    document.querySelectorAll('.video-modal-overlay').forEach(overlay => {
+      (overlay as HTMLElement).addEventListener('click', function() {
+        const modal = this.closest('.video-modal') as HTMLElement;
+        if (modal) {
+          closeVideoModal(modal);
+        }
+      });
+    });
+
+    // Handle escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const openModal = document.querySelector('.video-modal.block') as HTMLElement;
+        if (openModal) {
+          closeVideoModal(openModal);
+        }
+      }
+    });
+  });
+
+  function closeVideoModal(modal: HTMLElement) {
+    modal.classList.remove('block');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    // Show header when modal is closed
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.display = '';
+    }
+    
+    // Stop video playback by reloading iframe
+    const iframe = modal.querySelector('iframe');
+    if (iframe && iframe.src) {
+      const src = iframe.src;
+      iframe.src = '';
+      iframe.src = src;
+    }
+  }
+
+  // Global functions for programmatic modal control
+  (window as any).openVideoModal = function(modalId: string) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('block');
+      document.body.style.overflow = 'hidden';
+      const header = document.querySelector('header');
+      if (header) {
+        header.style.display = 'none';
+      }
+    }
+  };
+
+  (window as any).closeVideoModal = function(modalId: string) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      closeVideoModal(modal);
+    }
+  };
+</script>

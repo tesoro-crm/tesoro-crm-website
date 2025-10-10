@@ -1,0 +1,165 @@
+---
+export interface Props {
+  id: string;
+  title: string;
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  show?: boolean;
+}
+
+const { id, title, size = 'md', show = false } = Astro.props;
+
+const sizeClasses = {
+  sm: 'max-w-md',
+  md: 'max-w-lg',
+  lg: 'max-w-2xl',
+  xl: 'max-w-4xl'
+};
+---
+
+<div
+  id={id}
+  class={`modal fixed inset-0 z-[9999] overflow-y-auto ${show ? 'block' : 'hidden'}`}
+  aria-labelledby={`${id}-title`}
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+    <!-- Background overlay -->
+    <div
+      class="modal-overlay fixed inset-0 bg-neutral-900 bg-opacity-75 transition-opacity"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Modal panel -->
+    <div class={`modal-panel inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle ${sizeClasses[size]} w-full`}>
+      <!-- Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-neutral-200">
+        <h3 id={`${id}-title`} class="text-lg font-display font-semibold text-neutral-900">
+          {title}
+        </h3>
+        <button
+          type="button"
+          class="modal-close text-neutral-400 hover:text-neutral-600 transition-colors"
+          aria-label="Sluit modal"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Content -->
+      <div class="modal-content px-6 py-4">
+        <slot />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .modal {
+    animation: modal-fade-in 0.2s ease-out;
+  }
+
+  .modal-panel {
+    animation: modal-slide-in 0.3s ease-out;
+  }
+
+  @keyframes modal-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes modal-slide-in {
+    from {
+      opacity: 0;
+      transform: translate(0, -50px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+</style>
+
+<script>
+  // Modal functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle modal triggers
+    document.querySelectorAll('[data-modal-target]').forEach(trigger => {
+      (trigger as HTMLElement).addEventListener('click', function(e) {
+        e.preventDefault();
+        const modalId = this.getAttribute('data-modal-target');
+        const modal = document.getElementById(modalId!);
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('block');
+          document.body.style.overflow = 'hidden';
+          // Hide header when modal is open
+          const header = document.querySelector('header');
+          if (header) {
+            header.style.display = 'none';
+          }
+        }
+      });
+    });
+
+    // Handle modal close buttons
+    document.querySelectorAll('.modal-close, [data-modal-close]').forEach(closeBtn => {
+      (closeBtn as HTMLElement).addEventListener('click', function() {
+        const modal = this.closest('.modal') as HTMLElement;
+        if (modal) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // Handle overlay clicks
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      (overlay as HTMLElement).addEventListener('click', function() {
+        const modal = this.closest('.modal') as HTMLElement;
+        if (modal) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // Handle escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const openModal = document.querySelector('.modal.block') as HTMLElement;
+        if (openModal) {
+          closeModal(openModal);
+        }
+      }
+    });
+  });
+
+  function closeModal(modal: HTMLElement) {
+    modal.classList.remove('block');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    // Show header when modal is closed
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.display = '';
+    }
+  }
+
+  // Global functions for programmatic modal control
+  (window as any).openModal = function(modalId: string) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('block');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  (window as any).closeModal = function(modalId: string) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      closeModal(modal);
+    }
+  };
+</script>

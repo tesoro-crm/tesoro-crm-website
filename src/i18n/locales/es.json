@@ -248,6 +248,59 @@
       "description": "Únase a 500+ agentes exitosos que han automatizado su flujo de trabajo con Tesoro CRM.",
       "cta_primary": "Comenzar Prueba Gratuita",
       "cta_secondary": "Ver Precios"
+    },
+    "modals": {
+      "demo": {
+        "title": "Reserva tu demo gratuita",
+        "description": "Descubre cómo Tesoro CRM puede transformar tu flujo de trabajo. Elige un momento que te convenga.",
+        "section_personal": "Datos personales",
+        "section_company": "Datos de la empresa",
+        "section_schedule": "Programa tu demo",
+        "label_first_name": "Nombre",
+        "label_last_name": "Apellidos",
+        "label_email": "Correo electrónico",
+        "label_phone": "Teléfono",
+        "label_company": "Nombre de la empresa",
+        "label_date": "Fecha preferida",
+        "label_time": "Hora preferida",
+        "label_notes": "Comentarios (opcional)",
+        "placeholder_first_name": "Juan",
+        "placeholder_last_name": "García",
+        "placeholder_email": "juan.garcia@empresa.es",
+        "placeholder_phone": "+34 600 123 456",
+        "placeholder_company": "Inmobiliaria García",
+        "placeholder_notes": "¿Tienes preguntas específicas o temas que quieras discutir?",
+        "time_select": "Selecciona una hora",
+        "privacy_text": "Acepto la",
+        "privacy_link": "política de privacidad",
+        "privacy_text_end": "y doy mi consentimiento para ser contactado.",
+        "submit": "Reservar Demo",
+        "trust_1": "30 minutos",
+        "trust_2": "Sin compromiso",
+        "trust_3": "Demo personalizada"
+      },
+      "contact": {
+        "title": "Contacta con Nosotros",
+        "description": "¿Tienes preguntas sobre Tesoro CRM? Estaremos encantados de ayudarte.",
+        "label_first_name": "Nombre",
+        "label_last_name": "Apellidos",
+        "label_email": "Correo electrónico",
+        "label_phone": "Teléfono",
+        "label_message": "Mensaje",
+        "placeholder_message": "Cuéntanos cómo podemos ayudarte...",
+        "submit": "Enviar Mensaje",
+        "alternative": "O contacta directamente:",
+        "email": "Email",
+        "call": "Llamar"
+      },
+      "signup": {
+        "title": "Comenzar Prueba Gratuita",
+        "heading": "Comienza tu prueba gratuita",
+        "description": "Ve a nuestra aplicación para crear tu cuenta y empezar de inmediato.",
+        "cta": "Ir a Página de Registro",
+        "cancel": "Cancelar",
+        "security": "Conexión segura a crm.tesoro.estate"
+      }
     }
   },
   "pricing": {

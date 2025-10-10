@@ -1,0 +1,295 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Input from '../components/ui/Input.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
+await loadTranslations(locale);
+
+const planFeatures = {
+  starter: [
+    '50 leads per maand',
+    '1 MLS integratie',
+    'Basis compliance dashboard',
+    'Email support',
+    '5GB opslag',
+    'Mobiele app'
+  ],
+  professional: [
+    '200 leads per maand',
+    '5 MLS integraties',
+    'Geavanceerd compliance dashboard',
+    '24/7 support',
+    '50GB opslag',
+    'Team collaboration tools',
+    'Gepersonaliseerde branding',
+    'API toegang'
+  ]
+};
+---
+
+<Layout
+  title="Gratis Proefperiode Starten - Tesoro CRM"
+  description="Start je gratis 14-daagse proefperiode van Tesoro CRM. Geen creditcard nodig, geen verplichtingen."
+>
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="text-center mb-16">
+        <Badge variant="primary" size="md" class="mb-4">
+          🚀 14 Dagen Gratis
+        </Badge>
+        <h1 class="text-4xl lg:text-5xl font-display font-bold text-neutral-900 mb-6">
+          Start je gratis proefperiode
+        </h1>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          Meld je aan voor een gratis 14-daagse proefperiode. Geen creditcard nodig, geen verplichtingen. Ontdek hoe Tesoro CRM je helpt.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Plan Selection -->
+        <div class="lg:col-span-2">
+          <Card variant="default" padding="lg">
+            <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
+              Kies je plan
+            </h2>
+
+            <form action="/api/signup" method="POST" class="space-y-6">
+              <!-- Plan Selection -->
+              <div>
+                <label class="block text-sm font-medium text-neutral-700 mb-3">
+                  Selecteer een plan <span class="text-error">*</span>
+                </label>
+                <div class="space-y-3">
+                  <label class="flex items-center gap-3 p-4 border border-neutral-200 rounded-lg hover:border-primary cursor-pointer transition-colors">
+                    <input
+                      type="radio"
+                      name="plan"
+                      value="starter"
+                      class="text-primary focus:ring-primary"
+                      required
+                    />
+                    <div>
+                      <div class="font-semibold text-neutral-900">Starter - €99/maand</div>
+                      <div class="text-sm text-neutral-600">Perfect voor individuele makelaars</div>
+                    </div>
+                  </label>
+
+                  <label class="flex items-center gap-3 p-4 border-2 border-primary rounded-lg bg-primary/5 cursor-pointer transition-colors">
+                    <input
+                      type="radio"
+                      name="plan"
+                      value="professional"
+                      class="text-primary focus:ring-primary"
+                      checked
+                    />
+                    <div>
+                      <div class="font-semibold text-neutral-900">Professional - €249/maand</div>
+                      <div class="text-sm text-neutral-600">Voor groeiende makelaarskantoren</div>
+                      <div class="text-xs text-success font-medium mt-1">Meest gekozen</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Account Information -->
+              <div class="border-t pt-6">
+                <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+                  Account informatie
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input
+                    name="firstName"
+                    label="Voornaam"
+                    placeholder="Jan"
+                    required
+                  />
+                  <Input
+                    name="lastName"
+                    label="Achternaam"
+                    placeholder="Jansen"
+                    required
+                  />
+                </div>
+
+                <Input
+                  type="email"
+                  name="email"
+                  label="E-mailadres"
+                  placeholder="jan.jansen@bedrijf.nl"
+                  required
+                />
+
+                <Input
+                  type="password"
+                  name="password"
+                  label="Wachtwoord"
+                  placeholder="Minimaal 8 karakters"
+                  required
+                  helperText="Gebruik minimaal 8 karakters met een cijfer en hoofdletter"
+                />
+
+                <Input
+                  type="password"
+                  name="confirmPassword"
+                  label="Wachtwoord bevestigen"
+                  placeholder="Herhaal wachtwoord"
+                  required
+                />
+              </div>
+
+              <!-- Company Information -->
+              <div class="border-t pt-6">
+                <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+                  Bedrijfsgegevens
+                </h3>
+
+                <Input
+                  name="companyName"
+                  label="Bedrijfsnaam"
+                  placeholder="Makelaardij Jansen"
+                  required
+                />
+
+                <Input
+                  type="tel"
+                  name="phone"
+                  label="Telefoonnummer"
+                  placeholder="+31 6 1234 5678"
+                  required
+                />
+
+                <div>
+                  <label class="block text-sm font-medium text-neutral-700 mb-2">
+                    Bedrijfstype
+                  </label>
+                  <select
+                    name="companyType"
+                    class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200"
+                    required
+                  >
+                    <option value="">Selecteer type</option>
+                    <option value="independent">Onafhankelijk makelaar</option>
+                    <option value="small_office">Klein kantoor (2-5 personen)</option>
+                    <option value="medium_office">Middelgroot kantoor (6-20 personen)</option>
+                    <option value="large_office">Groot kantoor (20+ personen)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Legal -->
+              <div class="border-t pt-6 space-y-4">
+                <div class="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    class="mt-1"
+                    required
+                  />
+                  <label for="terms" class="text-sm text-neutral-600">
+                    Ik ga akkoord met de <a href="/terms" class="text-primary hover:underline">algemene voorwaarden</a>.
+                  </label>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    id="privacy"
+                    class="mt-1"
+                    required
+                  />
+                  <label for="privacy" class="text-sm text-neutral-600">
+                    Ik ga akkoord met het <a href="/privacy" class="text-primary hover:underline">privacybeleid</a> en geef toestemming voor contact.
+                  </label>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    name="marketing"
+                    id="marketing"
+                    class="mt-1"
+                  />
+                  <label for="marketing" class="text-sm text-neutral-600">
+                    Ik wil graag marketing updates ontvangen over nieuwe features en tips.
+                  </label>
+                </div>
+              </div>
+
+              <Button variant="primary" size="lg" type="submit" fullWidth>
+                Gratis Proefperiode Starten
+              </Button>
+            </form>
+          </Card>
+        </div>
+
+        <!-- Plan Preview -->
+        <div class="space-y-6">
+          <Card variant="elevated" padding="lg">
+            <h3 class="text-lg font-display font-bold text-neutral-900 mb-4">
+              Professional Plan
+            </h3>
+            <div class="text-3xl font-bold text-primary mb-1">€249<span class="text-base font-normal text-neutral-600">/maand</span></div>
+            <div class="text-sm text-neutral-600 mb-6">Na gratis proefperiode</div>
+
+            <div class="space-y-3">
+              {planFeatures.professional.map((feature) => (
+                <div class="flex items-center gap-3">
+                  <div class="text-success text-sm">✓</div>
+                  <div class="text-sm text-neutral-700">{feature}</div>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          <Card variant="outline" padding="lg">
+            <h4 class="font-semibold text-neutral-900 mb-2">
+              💳 Geen creditcard nodig
+            </h4>
+            <p class="text-sm text-neutral-600">
+              Start je gratis proefperiode zonder betalingsgegevens. Je wordt 7 dagen van tevoren herinnerd aan het einde van de proefperiode.
+            </p>
+          </Card>
+
+          <Card variant="outline" padding="lg">
+            <h4 class="font-semibold text-neutral-900 mb-2">
+              🔒 Beveiligd & AVG-compliant
+            </h4>
+            <p class="text-sm text-neutral-600">
+              Je gegevens zijn veilig bij ons. We gebruiken end-to-end encryptie en voldoen aan alle AVG eisen.
+            </p>
+          </Card>
+        </div>
+      </div>
+
+      <!-- Trust Signals -->
+      <Card variant="default" padding="lg" class="text-center">
+        <div class="flex flex-wrap justify-center items-center gap-8 text-sm text-neutral-600">
+          <div class="flex items-center gap-2">
+            <div class="text-success">✓</div>
+            <span>14 dagen gratis</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="text-success">✓</div>
+            <span>Geen creditcard</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="text-success">✓</div>
+            <span>Annuleren wanneer je wilt</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="text-success">✓</div>
+            <span>24/7 support</span>
+          </div>
+        </div>
+      </Card>
+    </div>
+  </section>
+</Layout>

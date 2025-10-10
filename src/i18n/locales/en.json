@@ -247,6 +247,59 @@
       "description": "Join 500+ successful agents who have automated their workflow with Tesoro CRM.",
       "cta_primary": "Start Free Trial",
       "cta_secondary": "View Pricing"
+    },
+    "modals": {
+      "demo": {
+        "title": "Schedule your free demo",
+        "description": "Discover how Tesoro CRM can transform your workflow. Choose a time that works for you.",
+        "section_personal": "Personal information",
+        "section_company": "Company information",
+        "section_schedule": "Schedule your demo",
+        "label_first_name": "First name",
+        "label_last_name": "Last name",
+        "label_email": "Email address",
+        "label_phone": "Phone number",
+        "label_company": "Company name",
+        "label_date": "Preferred date",
+        "label_time": "Preferred time",
+        "label_notes": "Notes (optional)",
+        "placeholder_first_name": "John",
+        "placeholder_last_name": "Smith",
+        "placeholder_email": "john.smith@company.com",
+        "placeholder_phone": "+1 555 123 4567",
+        "placeholder_company": "Smith Real Estate",
+        "placeholder_notes": "Do you have specific questions or topics you'd like to discuss?",
+        "time_select": "Select a time",
+        "privacy_text": "I agree to the",
+        "privacy_link": "privacy policy",
+        "privacy_text_end": "and give consent to be contacted.",
+        "submit": "Schedule Demo",
+        "trust_1": "30 minutes",
+        "trust_2": "No commitment",
+        "trust_3": "Personalized demo"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "Have questions about Tesoro CRM? We're happy to help.",
+        "label_first_name": "First name",
+        "label_last_name": "Last name",
+        "label_email": "Email address",
+        "label_phone": "Phone number",
+        "label_message": "Message",
+        "placeholder_message": "Tell us how we can help you...",
+        "submit": "Send Message",
+        "alternative": "Or contact us directly:",
+        "email": "Email",
+        "call": "Call"
+      },
+      "signup": {
+        "title": "Start Free Trial",
+        "heading": "Start your free trial",
+        "description": "Go to our application to create your account and get started immediately.",
+        "cta": "Go to Signup Page",
+        "cancel": "Cancel",
+        "security": "Secure connection to crm.tesoro.estate"
+      }
     }
   },
   "pricing": {

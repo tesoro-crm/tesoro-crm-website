@@ -248,6 +248,59 @@
       "description": "Sluit je aan bij 500+ succesvolle makelaars die hun workflow hebben geautomatiseerd met Tesoro CRM.",
       "cta_primary": "Start Gratis Trial",
       "cta_secondary": "Bekijk Prijzen"
+    },
+    "modals": {
+      "demo": {
+        "title": "Plan je gratis demo",
+        "description": "Ontdek hoe Tesoro CRM jouw workflow kan transformeren. Kies een moment dat jou uitkomt.",
+        "section_personal": "Persoonlijke gegevens",
+        "section_company": "Bedrijfsgegevens",
+        "section_schedule": "Plan je demo",
+        "label_first_name": "Voornaam",
+        "label_last_name": "Achternaam",
+        "label_email": "E-mailadres",
+        "label_phone": "Telefoonnummer",
+        "label_company": "Bedrijfsnaam",
+        "label_date": "Voorkeursdatum",
+        "label_time": "Voorkeurstijd",
+        "label_notes": "Opmerkingen (optioneel)",
+        "placeholder_first_name": "Jan",
+        "placeholder_last_name": "Jansen",
+        "placeholder_email": "jan.jansen@bedrijf.nl",
+        "placeholder_phone": "+31 6 1234 5678",
+        "placeholder_company": "Makelaardij Jansen",
+        "placeholder_notes": "Heb je specifieke vragen of onderwerpen die je wilt bespreken?",
+        "time_select": "Selecteer een tijd",
+        "privacy_text": "Ik ga akkoord met het",
+        "privacy_link": "privacybeleid",
+        "privacy_text_end": "en geef toestemming voor contact.",
+        "submit": "Demo Inplannen",
+        "trust_1": "30 minuten",
+        "trust_2": "Geen verplichtingen",
+        "trust_3": "Persoonlijke demo"
+      },
+      "contact": {
+        "title": "Neem Contact Op",
+        "description": "Heb je vragen over Tesoro CRM? We helpen je graag verder.",
+        "label_first_name": "Voornaam",
+        "label_last_name": "Achternaam",
+        "label_email": "E-mailadres",
+        "label_phone": "Telefoonnummer",
+        "label_message": "Bericht",
+        "placeholder_message": "Vertel ons waar we je mee kunnen helpen...",
+        "submit": "Verstuur Bericht",
+        "alternative": "Of neem direct contact op:",
+        "email": "Email",
+        "call": "Bellen"
+      },
+      "signup": {
+        "title": "Start Gratis Proefperiode",
+        "heading": "Start je gratis proefperiode",
+        "description": "Ga naar onze applicatie om je account aan te maken en direct te beginnen.",
+        "cta": "Naar Signup Pagina",
+        "cancel": "Annuleren",
+        "security": "Veilige verbinding naar crm.tesoro.estate"
+      }
     }
   },
   "pricing": {

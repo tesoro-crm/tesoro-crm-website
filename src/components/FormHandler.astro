@@ -1,0 +1,91 @@
+---
+export interface Props {
+  formId: string;
+  successMessage?: string;
+  errorMessage?: string;
+}
+
+const { formId, successMessage = "Bedankt! We nemen snel contact op.", errorMessage = "Er is iets misgegaan. Probeer het opnieuw." } = Astro.props;
+---
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('{formId}');
+    if (!form) return;
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton?.textContent || 'Versturen';
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Bezig met versturen...';
+      }
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          // Show success message
+          showNotification('{successMessage}', 'success');
+
+          // Reset form
+          form.reset();
+
+          // Optional: redirect after success
+          if (result.redirect) {
+            setTimeout(() => {
+              window.location.href = result.redirect;
+            }, 2000);
+          }
+        } else {
+          // Show error message
+          showNotification(result.error || '{errorMessage}', 'error');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        showNotification('{errorMessage}', 'error');
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      }
+    });
+  });
+
+  function showNotification(message, type) {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.form-notification');
+    existingNotifications.forEach(notification => notification.remove());
+
+    // Create new notification
+    const notification = document.createElement('div');
+    notification.className = `form-notification fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg ${
+      type === 'success' ? 'bg-success text-white' : 'bg-error text-white'
+    }`;
+    notification.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span>${message}</span>
+        <button onclick="this.parentElement.parentElement.remove()" class="ml-4 hover:opacity-75">×</button>
+      </div>
+    `;
+
+    document.body.appendChild(notification);
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+      if (notification.parentElement) {
+        notification.remove();
+      }
+    }, 5000);
+  }
+</script>

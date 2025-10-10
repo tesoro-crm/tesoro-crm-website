@@ -40,8 +40,11 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} 
 
 const Component = href ? 'a' : 'button';
 const componentProps = href ? { href } : { type, disabled };
+
+// Get all other props to pass through (like data-modal-target)
+const { variant: _, size: __, href: ___, type: ____, disabled: _____, fullWidth: ______, class: _______, ...restProps } = Astro.props;
 ---
 
-<Component class={classes} {...componentProps}>
+<Component class={classes} {...componentProps} {...restProps}>
   <slot />
 </Component>
