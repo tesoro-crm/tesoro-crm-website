@@ -4,6 +4,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StructuredData from '../components/StructuredData.astro';
+import AIChatWidget from '../components/AIChatWidget.astro';
 import { getLocale, getAlternateLinks } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
@@ -72,19 +73,6 @@ const {
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
 		
-		<!-- Cloudflare NLWeb AI Search -->
-		<link rel="stylesheet" href="https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.css">
-		<style>
-			/* Fix NLWeb z-index so search is clickable */
-			#docs-search-container {
-				position: relative;
-				z-index: 9999 !important;
-			}
-			#docs-search-container * {
-				z-index: 9999 !important;
-			}
-		</style>
-		
 		<!-- Structured Data Component -->
 		<StructuredData locale={locale} siteUrl={siteUrl} />
 		
@@ -95,31 +83,13 @@ const {
 		<ViewTransitions />
 	</head>
 	<body class="font-sans text-neutral-800 antialiased overflow-x-hidden">
-		<!-- Cloudflare NLWeb AI Search Container -->
-		<div id="docs-search-container"></div>
-		
 		<Header />
 		<main class="overflow-x-hidden">
 			<slot />
 		</main>
 		<Footer />
 		
-		<!-- Cloudflare NLWeb AI Search Script -->
-		<script type="module">
-			try {
-				const { NLWebDropdownChat } = await import('https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.js');
-				
-				const chat = new NLWebDropdownChat({
-					containerId: 'docs-search-container',
-					site: 'https://new.tesorohq.io',
-					placeholder: 'Zoek in Tesoro CRM...',
-					endpoint: 'https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev'
-				});
-				
-				console.log('NLWeb AI Search loaded successfully');
-			} catch (error) {
-				console.error('Failed to load NLWeb AI Search:', error);
-			}
-		</script>
+		<!-- AI Chat Widget (Bottom Right) -->
+		<AIChatWidget locale={locale} />
 	</body>
 </html>

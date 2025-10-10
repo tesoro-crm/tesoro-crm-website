@@ -1,0 +1,499 @@
+---
+// AI Chat Widget - Bottom right corner
+// Combines search and chat functionality
+import { t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
+---
+
+<!-- Chat Widget Button (Bottom Right) -->
+<div class="ai-chat-widget">
+  <button 
+    class="ai-chat-widget__button" 
+    aria-label="Open AI Assistant"
+    data-chat-toggle
+  >
+    <svg class="ai-chat-widget__icon ai-chat-widget__icon--chat" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg class="ai-chat-widget__icon ai-chat-widget__icon--close" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="ai-chat-widget__window" data-chat-window>
+    <div class="ai-chat-widget__header">
+      <div class="ai-chat-widget__header-content">
+        <div class="ai-chat-widget__avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="ai-chat-widget__title">Tesoro AI Assistent</h3>
+          <p class="ai-chat-widget__subtitle">Stel een vraag of zoek informatie</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-chat-widget__messages" data-chat-messages>
+      <div class="ai-chat-widget__message ai-chat-widget__message--bot">
+        <div class="ai-chat-widget__message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="ai-chat-widget__message-content">
+          <p>Hallo! 👋 Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-chat-widget__input-container">
+      <input 
+        type="text" 
+        class="ai-chat-widget__input" 
+        placeholder="Stel een vraag..."
+        data-chat-input
+      />
+      <button 
+        class="ai-chat-widget__send" 
+        aria-label="Verstuur bericht"
+        data-chat-send
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-chat-widget__footer">
+      <span class="ai-chat-widget__powered">Powered by <strong>Cloudflare AI</strong></span>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initChatWidget() {
+    const toggle = document.querySelector('[data-chat-toggle]') as HTMLButtonElement;
+    const window = document.querySelector('[data-chat-window]') as HTMLElement;
+    const input = document.querySelector('[data-chat-input]') as HTMLInputElement;
+    const send = document.querySelector('[data-chat-send]') as HTMLButtonElement;
+    const messages = document.querySelector('[data-chat-messages]') as HTMLElement;
+
+    if (!toggle || !window || !input || !send || !messages) return;
+
+    let isOpen = false;
+
+    // Toggle chat window
+    toggle.addEventListener('click', () => {
+      isOpen = !isOpen;
+      window.classList.toggle('ai-chat-widget__window--open', isOpen);
+      toggle.classList.toggle('ai-chat-widget__button--open', isOpen);
+      
+      if (isOpen) {
+        input.focus();
+      }
+    });
+
+    // Send message
+    const sendMessage = async () => {
+      const query = input.value.trim();
+      if (!query) return;
+
+      // Add user message
+      const userMsg = document.createElement('div');
+      userMsg.className = 'ai-chat-widget__message ai-chat-widget__message--user';
+      userMsg.innerHTML = `
+        <div class="ai-chat-widget__message-content">
+          <p>${query}</p>
+        </div>
+      `;
+      messages.appendChild(userMsg);
+      messages.scrollTop = messages.scrollHeight;
+
+      input.value = '';
+
+      // Add loading message
+      const loadingMsg = document.createElement('div');
+      loadingMsg.className = 'ai-chat-widget__message ai-chat-widget__message--bot ai-chat-widget__message--loading';
+      loadingMsg.innerHTML = `
+        <div class="ai-chat-widget__message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="ai-chat-widget__message-content">
+          <div class="ai-chat-widget__typing">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      `;
+      messages.appendChild(loadingMsg);
+      messages.scrollTop = messages.scrollHeight;
+
+      try {
+        // Call AI Search API
+        const response = await fetch('/api/search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query }),
+        });
+
+        if (!response.ok) throw new Error('Search failed');
+
+        const data = await response.json();
+        const results = data.result?.results || [];
+
+        // Remove loading message
+        loadingMsg.remove();
+
+        // Add bot response
+        const botMsg = document.createElement('div');
+        botMsg.className = 'ai-chat-widget__message ai-chat-widget__message--bot';
+        
+        if (results.length === 0) {
+          botMsg.innerHTML = `
+            <div class="ai-chat-widget__message-avatar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="ai-chat-widget__message-content">
+              <p>Sorry, ik kon geen informatie vinden over "${query}". Probeer een andere vraag!</p>
+            </div>
+          `;
+        } else {
+          const topResult = results[0];
+          botMsg.innerHTML = `
+            <div class="ai-chat-widget__message-avatar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="ai-chat-widget__message-content">
+              <p>${topResult.excerpt || topResult.title}</p>
+              <a href="${topResult.url}" class="ai-chat-widget__link">Lees meer →</a>
+            </div>
+          `;
+        }
+
+        messages.appendChild(botMsg);
+        messages.scrollTop = messages.scrollHeight;
+      } catch (error) {
+        loadingMsg.remove();
+        
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'ai-chat-widget__message ai-chat-widget__message--bot';
+        errorMsg.innerHTML = `
+          <div class="ai-chat-widget__message-avatar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="ai-chat-widget__message-content">
+            <p>Sorry, er ging iets mis. Probeer het later opnieuw.</p>
+          </div>
+        `;
+        messages.appendChild(errorMsg);
+        messages.scrollTop = messages.scrollHeight;
+      }
+    };
+
+    send.addEventListener('click', sendMessage);
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+  }
+
+  initChatWidget();
+  document.addEventListener('astro:after-swap', initChatWidget);
+</script>
+
+<style>
+  .ai-chat-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+  }
+
+  .ai-chat-widget__button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .ai-chat-widget__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+  }
+
+  .ai-chat-widget__icon {
+    transition: all 0.2s ease;
+  }
+
+  .ai-chat-widget__icon--close {
+    display: none;
+    position: absolute;
+  }
+
+  .ai-chat-widget__button--open .ai-chat-widget__icon--chat {
+    display: none;
+  }
+
+  .ai-chat-widget__button--open .ai-chat-widget__icon--close {
+    display: block;
+  }
+
+  .ai-chat-widget__window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 380px;
+    max-width: calc(100vw - 48px);
+    height: 600px;
+    max-height: calc(100vh - 120px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ai-chat-widget__window--open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: all;
+  }
+
+  .ai-chat-widget__header {
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .ai-chat-widget__header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-chat-widget__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ai-chat-widget__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .ai-chat-widget__subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+    margin: 2px 0 0 0;
+  }
+
+  .ai-chat-widget__messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-chat-widget__message {
+    display: flex;
+    gap: 8px;
+    animation: slideIn 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .ai-chat-widget__message--user {
+    flex-direction: row-reverse;
+  }
+
+  .ai-chat-widget__message-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .ai-chat-widget__message--user .ai-chat-widget__message-avatar {
+    background: #e5e7eb;
+    color: #6b7280;
+  }
+
+  .ai-chat-widget__message-content {
+    background: #f3f4f6;
+    padding: 12px 16px;
+    border-radius: 12px;
+    max-width: 75%;
+  }
+
+  .ai-chat-widget__message--user .ai-chat-widget__message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .ai-chat-widget__message-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .ai-chat-widget__link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #667eea;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .ai-chat-widget__link:hover {
+    text-decoration: underline;
+  }
+
+  .ai-chat-widget__typing {
+    display: flex;
+    gap: 4px;
+    padding: 4px 0;
+  }
+
+  .ai-chat-widget__typing span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #9ca3af;
+    animation: typing 1.4s infinite;
+  }
+
+  .ai-chat-widget__typing span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .ai-chat-widget__typing span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes typing {
+    0%, 60%, 100% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    30% {
+      transform: translateY(-8px);
+      opacity: 1;
+    }
+  }
+
+  .ai-chat-widget__input-container {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .ai-chat-widget__input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .ai-chat-widget__input:focus {
+    border-color: #667eea;
+  }
+
+  .ai-chat-widget__send {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+
+  .ai-chat-widget__send:hover {
+    transform: scale(1.1);
+  }
+
+  .ai-chat-widget__footer {
+    padding: 12px 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+  }
+
+  .ai-chat-widget__powered strong {
+    color: #667eea;
+  }
+
+  @media (max-width: 640px) {
+    .ai-chat-widget {
+      bottom: 16px;
+      right: 16px;
+    }
+
+    .ai-chat-widget__window {
+      width: calc(100vw - 32px);
+      height: calc(100vh - 100px);
+      bottom: 70px;
+    }
+  }
+</style>
