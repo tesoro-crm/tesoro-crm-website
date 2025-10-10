@@ -1,0 +1,19 @@
+---
+import Modal from '../ui/Modal.astro';
+---
+
+<Modal id="success-modal" title="✅ Bedankt!" size="md">
+  <div class="text-center py-6">
+    <div class="mb-6">
+      <div class="mx-auto w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mb-4">
+        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-neutral-900 mb-2">Hartelijk dank voor uw bericht!</h3>
+      <p class="text-neutral-600 mb-4">We hebben uw aanvraag ontvangen en nemen zo snel mogelijk contact met u op.</p>
+      <p class="text-sm text-neutral-500">U ontvangt ook een bevestigingsmail.</p>
+    </div>
+    <button data-modal-close class="btn btn-primary">Sluiten</button>
+  </div>
+</Modal>
