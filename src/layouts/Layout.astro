@@ -1,7 +1,6 @@
 ---
 // @ts-check
 import { ViewTransitions } from 'astro:transitions';
-import { Font } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StructuredData from '../components/StructuredData.astro';
@@ -68,9 +67,10 @@ const {
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
-		<!-- Optimized fonts with automatic preloading -->
-		<Font cssVariable="--font-inter" preload />
-		<Font cssVariable="--font-poppins" preload />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
 		
 		<!-- Cloudflare NLWeb AI Search -->
 		<link rel="stylesheet" href="https://tesoro-crm-hq-search-nlweb.tesorocrm.workers.dev/nlweb-dropdown-chat.css">
