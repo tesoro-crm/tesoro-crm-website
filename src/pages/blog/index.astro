@@ -2,19 +2,21 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { getLocale } from '../../i18n/utils';
-import type { Language } from '../../i18n/config';
+import type { Language } from '../../types/blog';
 
-const posts = await getCollection('blog', ({ data }) => !data.draft);
-const locale: Language = getLocale(Astro.currentLocale, Astro.url);
+const posts = await getCollection('blog', ({ data }) => !data.meta.draft);
+const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
 
 // Sort posts by date (newest first)
-const sortedPosts = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const sortedPosts = posts.sort((a, b) => 
+  new Date(b.data.hero.publishDate).getTime() - new Date(a.data.hero.publishDate).getTime()
+);
 
 // Get featured posts
-const featuredPosts = sortedPosts.filter(post => post.data.featured);
+const featuredPosts = sortedPosts.filter(post => post.data.meta.featured);
 
 // Get categories
-const categories = [...new Set(posts.map(post => post.data.category))];
+const categories = [...new Set(posts.map(post => post.data.meta.category))];
 
 // Get current page from URL
 const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
@@ -24,24 +26,34 @@ const paginatedPosts = sortedPosts.slice(
   (currentPage - 1) * postsPerPage,
   currentPage * postsPerPage
 );
+
+// Localized texts
+const pageTitle = locale === 'nl' ? 'Tesoro CRM Blog - Inzichten & Verhalen' : locale === 'es' ? 'Blog de Tesoro CRM - Perspectivas e Historias' : 'Tesoro CRM Blog - Insights & Stories';
+const pageDescription = locale === 'nl' 
+  ? 'Ontdek de laatste inzichten over CRM, vastgoedmarketing en bedrijfsgroei van Tesoro CRM experts.'
+  : locale === 'es'
+  ? 'Descubre las últimas perspectivas sobre CRM, marketing inmobiliario y crecimiento empresarial de los expertos de Tesoro CRM.'
+  : 'Discover the latest insights on CRM, real estate marketing, and business growth from Tesoro CRM experts.';
+const allPostsText = locale === 'nl' ? 'Alle Posts' : locale === 'es' ? 'Todas las Publicaciones' : 'All Posts';
+const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es' ? 'Artículos Destacados' : 'Featured Articles';
 ---
 
 <Layout
-  title="Tesoro CRM Blog - Insights & Stories"
-  description="Discover the latest insights on CRM, real estate marketing, and business growth from Tesoro CRM experts."
+  title={pageTitle}
+  description={pageDescription}
 >
   <section class="blog-index">
     <div class="blog-index__container">
       <header class="blog-index__header">
         <h1 class="blog-index__title">Tesoro CRM Blog</h1>
         <p class="blog-index__description">
-          Insights, stories, and expert advice on CRM, real estate marketing, and business growth.
+          {pageDescription}
         </p>
 
         <!-- Category Filter -->
         <div class="blog-index__filters">
           <a href="/blog" class={`blog-index__filter ${!Astro.url.searchParams.get('category') ? 'blog-index__filter--active' : ''}`}>
-            All Posts
+            {allPostsText}
           </a>
           {categories.map(category => (
             <a
@@ -57,46 +69,50 @@ const paginatedPosts = sortedPosts.slice(
       <!-- Featured Posts -->
       {featuredPosts.length > 0 && (
         <section class="blog-index__featured">
-          <h2 class="blog-index__section-title">Featured Articles</h2>
+          <h2 class="blog-index__section-title">{featuredText}</h2>
           <div class="blog-index__featured-grid">
-            {featuredPosts.slice(0, 3).map(post => (
-              <article class="blog-index__featured-card">
-                {post.data.heroImage && (
+            {featuredPosts.slice(0, 3).map(post => {
+              const postData = post.data;
+              const title = postData.hero.title[locale];
+              const description = postData.hero.description[locale];
+              const heroImage = postData.hero.image;
+              const publishDate = new Date(postData.hero.publishDate);
+              
+              return (
+                <article class="blog-index__featured-card">
                   <img
                     class="blog-index__featured-image"
-                    src={post.data.heroImage}
-                    alt={post.data.title}
+                    src={heroImage.src}
+                    alt={heroImage.alt[locale]}
                     loading="lazy"
                   />
-                )}
-                <div class="blog-index__featured-content">
-                  <div class="blog-index__featured-meta">
-                    <span class="blog-index__featured-category">{post.data.category}</span>
-                    <time class="blog-index__featured-date" datetime={post.data.pubDate.toISOString()}>
-                      {post.data.pubDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
-                        month: 'short',
-                        day: 'numeric'
-                      })}
-                    </time>
+                  <div class="blog-index__featured-content">
+                    <div class="blog-index__featured-meta">
+                      <span class="blog-index__featured-category">{postData.meta.category}</span>
+                      <time class="blog-index__featured-date" datetime={postData.hero.publishDate}>
+                        {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </time>
                   </div>
                   <h3 class="blog-index__featured-title">
-                    <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                    <a href={`/blog/${postData.meta.id}`}>{title}</a>
                   </h3>
-                  <p class="blog-index__featured-description">{post.data.description}</p>
+                  <p class="blog-index__featured-description">{description}</p>
                   <div class="blog-index__featured-author">
-                    {post.data.authorImage && (
-                      <img
-                        class="blog-index__featured-author-avatar"
-                        src={post.data.authorImage}
-                        alt={post.data.author}
-                        loading="lazy"
-                      />
-                    )}
-                    <span class="blog-index__featured-author-name">{post.data.author}</span>
+                    <img
+                      class="blog-index__featured-author-avatar"
+                      src={postData.meta.author.image}
+                      alt={postData.meta.author.name}
+                      loading="lazy"
+                    />
+                    <span class="blog-index__featured-author-name">{postData.meta.author.name}</span>
                   </div>
                 </div>
               </article>
-            ))}
+            );
+            })}
           </div>
         </section>
       )}
@@ -106,64 +122,68 @@ const paginatedPosts = sortedPosts.slice(
         <div class="blog-index__posts-header">
           <h2 class="blog-index__section-title">
             {Astro.url.searchParams.get('category')
-              ? `${Astro.url.searchParams.get('category')} Articles`
-              : 'Latest Articles'
+              ? `${Astro.url.searchParams.get('category')} ${locale === 'nl' ? 'Artikelen' : locale === 'es' ? 'Artículos' : 'Articles'}`
+              : locale === 'nl' ? 'Laatste Artikelen' : locale === 'es' ? 'Últimos Artículos' : 'Latest Articles'
             }
           </h2>
           <div class="blog-index__posts-count">
-            {sortedPosts.length} articles
+            {sortedPosts.length} {locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artículos' : 'articles'}
           </div>
         </div>
 
         <div class="blog-index__grid">
-          {paginatedPosts.map(post => (
-            <article class="blog-index__card">
-              {post.data.heroImage && (
+          {paginatedPosts.map(post => {
+            const postData = post.data;
+            const title = postData.hero.title[locale];
+            const description = postData.hero.description[locale];
+            const heroImage = postData.hero.image;
+            const publishDate = new Date(postData.hero.publishDate);
+            
+            return (
+              <article class="blog-index__card">
                 <img
                   class="blog-index__card-image"
-                  src={post.data.heroImage}
-                  alt={post.data.title}
+                  src={heroImage.src}
+                  alt={heroImage.alt[locale]}
                   loading="lazy"
                 />
-              )}
               <div class="blog-index__card-content">
                 <div class="blog-index__card-meta">
-                  <span class="blog-index__card-category">{post.data.category}</span>
-                  <time class="blog-index__card-date" datetime={post.data.pubDate.toISOString()}>
-                    {post.data.pubDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
+                  <span class="blog-index__card-category">{postData.meta.category}</span>
+                  <time class="blog-index__card-date" datetime={postData.hero.publishDate}>
+                    {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
                       month: 'short',
                       day: 'numeric'
                     })}
                   </time>
-                  {post.data.readingTime && (
-                    <span class="blog-index__card-reading-time">{post.data.readingTime} min</span>
+                  {postData.meta.readingTime && (
+                    <span class="blog-index__card-reading-time">{postData.meta.readingTime} min</span>
                   )}
                 </div>
                 <h3 class="blog-index__card-title">
-                  <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                  <a href={`/blog/${postData.meta.id}`}>{title}</a>
                 </h3>
-                <p class="blog-index__card-description">{post.data.description}</p>
+                <p class="blog-index__card-description">{description}</p>
                 <div class="blog-index__card-footer">
                   <div class="blog-index__card-author">
-                    {post.data.authorImage && (
-                      <img
-                        class="blog-index__card-author-avatar"
-                        src={post.data.authorImage}
-                        alt={post.data.author}
-                        loading="lazy"
-                      />
-                    )}
-                    <span class="blog-index__card-author-name">{post.data.author}</span>
+                    <img
+                      class="blog-index__card-author-avatar"
+                      src={postData.meta.author.image}
+                      alt={postData.meta.author.name}
+                      loading="lazy"
+                    />
+                    <span class="blog-index__card-author-name">{postData.meta.author.name}</span>
                   </div>
                   <div class="blog-index__card-tags">
-                    {post.data.tags.slice(0, 2).map(tag => (
+                    {postData.meta.tags.slice(0, 2).map((tag: string) => (
                       <span class="blog-index__card-tag">#{tag}</span>
                     ))}
                   </div>
                 </div>
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
 
         <!-- Pagination -->
