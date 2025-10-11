@@ -1,0 +1,39 @@
+---
+import type { IntroductionSection, Language } from '../../../types/blog';
+
+interface Props {
+  section: IntroductionSection;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const content = section.content[lang];
+---
+
+<section class="blog-section blog-section--introduction" id={section.id}>
+  <div class="blog-section__content">
+    <div class="blog-section__text" set:html={content.text} />
+  </div>
+</section>
+
+<style>
+  .blog-section--introduction {
+    margin-bottom: 3rem;
+  }
+
+  .blog-section__content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #1e293b;
+  }
+
+  .blog-section__text :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-section__text :global(p:first-child) {
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: 500;
+  }
+</style>

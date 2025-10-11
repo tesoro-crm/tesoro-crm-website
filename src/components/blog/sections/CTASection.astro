@@ -1,0 +1,138 @@
+---
+import type { CTASection, Language } from '../../../types/blog';
+
+interface Props {
+  section: CTASection;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const title = section.title?.[lang];
+const content = section.content[lang];
+---
+
+<section class="blog-section blog-section--cta" id={section.id}>
+  <div class="cta-box">
+    {title && <h2 class="cta-box__title">{title}</h2>}
+    <div class="cta-box__content" set:html={content.text} />
+    
+    <div class="cta-box__buttons">
+      {section.buttons.map((button) => (
+        <a 
+          href={button.url} 
+          class={`cta-button cta-button--${button.style}`}
+        >
+          {button.text[lang]}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .blog-section--cta {
+    margin: 4rem 0 3rem;
+  }
+
+  .cta-box {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .cta-box__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .cta-box__content {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+
+  .cta-box__content :global(p) {
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-box__content :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .cta-box__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+  }
+
+  .cta-button--primary {
+    background: white;
+    color: #0f172a;
+  }
+
+  .cta-button--primary:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .cta-button--secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+  }
+
+  .cta-button--secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .cta-button--outline {
+    background: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .cta-button--outline:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  @media (max-width: 640px) {
+    .cta-box {
+      padding: 2rem 1.5rem;
+    }
+
+    .cta-box__title {
+      font-size: 1.5rem;
+    }
+
+    .cta-box__buttons {
+      flex-direction: column;
+    }
+
+    .cta-button {
+      width: 100%;
+    }
+  }
+</style>

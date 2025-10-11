@@ -1,0 +1,89 @@
+---
+import type { ProblemSection, Language } from '../../../types/blog';
+
+interface Props {
+  section: ProblemSection;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const content = section.content[lang];
+const title = section.title?.[lang];
+const highlights = section.highlights?.map(h => h[lang]);
+---
+
+<section class="blog-section blog-section--problem" id={section.id}>
+  {title && <h2 class="blog-section__title">{title}</h2>}
+  
+  <div class="blog-section__content">
+    <div class="blog-section__text" set:html={content.text} />
+    
+    {highlights && highlights.length > 0 && (
+      <div class="blog-section__highlights">
+        <ul class="highlights-list">
+          {highlights.map(highlight => (
+            <li class="highlights-list__item">{highlight}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .blog-section--problem {
+    margin-bottom: 3rem;
+  }
+
+  .blog-section__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .blog-section__content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #1e293b;
+  }
+
+  .blog-section__text :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-section__highlights {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #fef2f2;
+    border-left: 4px solid #dc2626;
+    border-radius: 8px;
+  }
+
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .highlights-list__item {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #7f1d1d;
+    font-weight: 500;
+  }
+
+  .highlights-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .highlights-list__item::before {
+    content: '⚠️';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+</style>

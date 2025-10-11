@@ -1,0 +1,38 @@
+---
+import type { Section, Language } from '../../types/blog';
+import IntroductionSection from './sections/IntroductionSection.astro';
+import ProblemSection from './sections/ProblemSection.astro';
+import SolutionSection from './sections/SolutionSection.astro';
+import ResultsSection from './sections/ResultsSection.astro';
+import QuoteSection from './sections/QuoteSection.astro';
+import TakeawaysSection from './sections/TakeawaysSection.astro';
+import CTASection from './sections/CTASection.astro';
+
+interface Props {
+  section: Section;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+
+// Map section types to components
+const componentMap = {
+  introduction: IntroductionSection,
+  problem: ProblemSection,
+  solution: SolutionSection,
+  results: ResultsSection,
+  quote: QuoteSection,
+  takeaways: TakeawaysSection,
+  cta: CTASection,
+  // Add more as needed
+  technical: IntroductionSection, // Fallback for now
+  'faq-section': IntroductionSection, // Fallback for now
+  'image-gallery': IntroductionSection, // Fallback for now
+  comparison: IntroductionSection, // Fallback for now
+  timeline: IntroductionSection, // Fallback for now
+};
+
+const Component = componentMap[section.type];
+---
+
+{Component && <Component section={section as any} lang={lang} />}
