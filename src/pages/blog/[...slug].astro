@@ -28,143 +28,168 @@ const locale: Language = getLocale(Astro.currentLocale, Astro.url);
   title={`${post.data.title} | Tesoro CRM Blog`}
   description={post.data.description}
 >
-  <article class="blog-post">
-    <header class="blog-post__header">
-      <div class="blog-post__meta">
-        <span class="blog-post__category">{post.data.category}</span>
-        <time class="blog-post__date" datetime={post.data.pubDate.toISOString()}>
-          {post.data.pubDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
-        </time>
-        {post.data.readingTime && (
-          <span class="blog-post__reading-time">{post.data.readingTime} min read</span>
-        )}
-      </div>
-
-      <h1 class="blog-post__title">{post.data.title}</h1>
-      <p class="blog-post__description">{post.data.description}</p>
-
-      {post.data.heroImage && (
-        <img
-          class="blog-post__hero"
-          src={post.data.heroImage}
-          alt={post.data.title}
-          loading="eager"
-        />
-      )}
-
-      <div class="blog-post__author">
-        {post.data.authorImage && (
-          <img
-            class="blog-post__author-avatar"
-            src={post.data.authorImage}
-            alt={post.data.author}
-            loading="eager"
-          />
-        )}
-        <div class="blog-post__author-info">
-          <div class="blog-post__author-name">{post.data.author}</div>
-          {post.data.authorBio && (
-            <div class="blog-post__author-bio">{post.data.authorBio}</div>
+  <article class="blog-article">
+    <div class="blog-article__container">
+      <header class="blog-article__header">
+        <div class="blog-article__meta">
+          <span class="blog-article__category">{post.data.category}</span>
+          <time class="blog-article__date" datetime={post.data.pubDate.toISOString()}>
+            {post.data.pubDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+          {post.data.readingTime && (
+            <span class="blog-article__reading-time">{post.data.readingTime} min read</span>
           )}
         </div>
+
+        <h1 class="blog-article__title">{post.data.title}</h1>
+        <p class="blog-article__description">{post.data.description}</p>
+
+        {post.data.heroImage && (
+          <div class="blog-article__hero">
+            <img
+              class="blog-article__hero-image"
+              src={post.data.heroImage}
+              alt={post.data.title}
+              loading="eager"
+              width="800"
+              height="400"
+            />
+          </div>
+        )}
+
+        <div class="blog-article__author">
+          {post.data.authorImage && (
+            <img
+              class="blog-article__author-avatar"
+              src={post.data.authorImage}
+              alt={post.data.author}
+              loading="eager"
+              width="48"
+              height="48"
+            />
+          )}
+          <div class="blog-article__author-info">
+            <div class="blog-article__author-name">{post.data.author}</div>
+            {post.data.authorBio && (
+              <div class="blog-article__author-bio">{post.data.authorBio}</div>
+            )}
+          </div>
+        </div>
+
+        {post.data.aiGenerated && (
+          <div class="blog-article__ai-badge" role="note" aria-label="AI generated content">
+            🤖 AI-Generated Content
+            {post.data.aiPrompt && (
+              <details class="blog-article__ai-details">
+                <summary>View AI Prompt</summary>
+                <code>{post.data.aiPrompt}</code>
+              </details>
+            )}
+          </div>
+        )}
+      </header>
+
+      <div class="blog-article__content-wrapper">
+        <main class="blog-article__main">
+          <div class="blog-article__content">
+            <Content />
+          </div>
+        </main>
+
+        <aside class="blog-article__sidebar">
+          <nav class="blog-article__toc" aria-labelledby="toc-heading">
+            <h2 id="toc-heading" class="blog-article__toc-title">Inhoudsopgave</h2>
+            <ol class="blog-article__toc-list">
+              {headings
+                .filter(heading => heading.depth <= 3)
+                .map(heading => (
+                  <li class={`blog-article__toc-item blog-article__toc-item--${heading.depth}`}>
+                    <a href={`#${heading.slug}`} class="blog-article__toc-link">{heading.text}</a>
+                  </li>
+                ))}
+            </ol>
+          </nav>
+        </aside>
       </div>
 
-      {post.data.aiGenerated && (
-        <div class="blog-post__ai-badge">
-          🤖 AI-Generated Content
-          {post.data.aiPrompt && (
-            <details class="blog-post__ai-details">
-              <summary>View AI Prompt</summary>
-              <code>{post.data.aiPrompt}</code>
-            </details>
-          )}
-        </div>
-      )}
-    </header>
+      <RelatedPosts currentPost={post} />
 
-    <nav class="blog-post__toc">
-      <h3>Table of Contents</h3>
-      <ol>
-        {headings
-          .filter(heading => heading.depth <= 3)
-          .map(heading => (
-            <li class={`blog-post__toc-item blog-post__toc-item--${heading.depth}`}>
-              <a href={`#${heading.slug}`}>{heading.text}</a>
-            </li>
+      <footer class="blog-article__footer">
+        <div class="blog-article__tags" aria-label="Article tags">
+          {post.data.tags.map(tag => (
+            <span class="blog-article__tag">#{tag}</span>
           ))}
-      </ol>
-    </nav>
-
-    <div class="blog-post__content">
-      <Content />
-    </div>
-
-    <RelatedPosts currentPost={post} />
-
-
-    <footer class="blog-post__footer">
-      <div class="blog-post__tags">
-        {post.data.tags.map(tag => (
-          <span class="blog-post__tag">#{tag}</span>
-        ))}
-      </div>
-
-      <div class="blog-post__share">
-        <h4>Share this post</h4>
-        <div class="blog-post__share-buttons">
-          <a
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.href)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="blog-post__share-button blog-post__share-button--twitter"
-          >
-            🐦 Twitter
-          </a>
-          <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="blog-post__share-button blog-post__share-button--linkedin"
-          >
-            💼 LinkedIn
-          </a>
-          <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="blog-post__share-button blog-post__share-button--facebook"
-          >
-            📘 Facebook
-          </a>
-          <button
-            class="blog-post__share-button blog-post__share-button--copy"
-            onclick={`navigator.clipboard.writeText('${Astro.url.href}')`}
-          >
-            📋 Copy Link
-          </button>
         </div>
-      </div>
 
-      <div class="blog-post__newsletter">
-        <h4>Stay updated</h4>
-        <p>Get the latest insights on CRM and real estate marketing</p>
-        <form class="blog-post__newsletter-form" data-newsletter-form>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            required
-            class="blog-post__newsletter-input"
-          />
-          <button type="submit" class="blog-post__newsletter-submit">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </footer>
+        <div class="blog-article__share" aria-label="Share this article">
+          <h3 class="blog-article__share-title">Deel dit artikel</h3>
+          <div class="blog-article__share-buttons">
+            <a
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.href)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="blog-article__share-button blog-article__share-button--twitter"
+              aria-label="Deel op Twitter"
+            >
+              🐦 Twitter
+            </a>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="blog-article__share-button blog-article__share-button--linkedin"
+              aria-label="Deel op LinkedIn"
+            >
+              💼 LinkedIn
+            </a>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="blog-article__share-button blog-article__share-button--facebook"
+              aria-label="Deel op Facebook"
+            >
+              📘 Facebook
+            </a>
+            <button
+              class="blog-article__share-button blog-article__share-button--copy"
+              onclick={`navigator.clipboard.writeText('${Astro.url.href}')`}
+              aria-label="Kopieer link"
+            >
+              📋 Kopieer Link
+            </button>
+          </div>
+        </div>
+
+        <div class="blog-article__newsletter" aria-labelledby="newsletter-heading">
+          <h3 id="newsletter-heading" class="blog-article__newsletter-title">Blijf op de hoogte</h3>
+          <p class="blog-article__newsletter-description">
+            Krijg de laatste inzichten over CRM en vastgoedmarketing in je inbox.
+          </p>
+          <form class="blog-article__newsletter-form" data-newsletter-form aria-label="Nieuwsbrief aanmelden">
+            <label for="newsletter-email" class="sr-only">Email adres</label>
+            <input
+              id="newsletter-email"
+              type="email"
+              placeholder="Jouw email adres"
+              required
+              class="blog-article__newsletter-input"
+              aria-describedby="newsletter-description"
+            />
+            <button type="submit" class="blog-article__newsletter-submit">
+              Abonneren
+            </button>
+          </form>
+          <p id="newsletter-description" class="blog-article__newsletter-privacy">
+            We respecteren je privacy. Afmelden kan altijd.
+          </p>
+        </div>
+      </footer>
+    </div>
   </article>
 </Layout>
 
@@ -200,29 +225,37 @@ const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 </script>
 
 <style>
-  .blog-post {
-    max-width: 800px;
+  /* Base article layout */
+  .blog-article {
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 2rem 0;
+  }
+
+  .blog-article__container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 0 1.5rem;
   }
 
-  .blog-post__header {
-    margin-bottom: 3rem;
+  /* Header styles */
+  .blog-article__header {
+    margin-bottom: 4rem;
   }
 
-  .blog-post__meta {
+  .blog-article__meta {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 0.875rem;
     color: #6b7280;
   }
 
-  .blog-post__category {
+  .blog-article__category {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 0.25rem 0.75rem;
+    padding: 0.375rem 1rem;
     border-radius: 9999px;
     font-weight: 600;
     text-transform: uppercase;
@@ -230,348 +263,649 @@ const locale: Language = getLocale(Astro.currentLocale, Astro.url);
     font-size: 0.75rem;
   }
 
-  .blog-post__title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #0f172a;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  .blog-article__date {
+    color: #6b7280;
   }
 
-  .blog-post__description {
+  .blog-article__reading-time {
+    color: #6b7280;
+  }
+
+  .blog-article__title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .blog-article__description {
     font-size: 1.25rem;
     color: #64748b;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
   }
 
-  .blog-post__hero {
+  .blog-article__hero {
+    margin-bottom: 3rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-article__hero-image {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 2rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
   }
 
-  .blog-post__author {
+  .blog-article__hero:hover .blog-article__hero-image {
+    transform: scale(1.02);
+  }
+
+  .blog-article__author {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #f8fafc;
-    border-radius: 12px;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
     border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
   }
 
-  .blog-post__author-avatar {
-    width: 48px;
-    height: 48px;
+  .blog-article__author-avatar {
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #f1f5f9;
   }
 
-  .blog-post__ai-badge {
+  .blog-article__author-info {
+    flex: 1;
+  }
+
+  .blog-article__author-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
+
+  .blog-article__author-bio {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  .blog-article__ai-badge {
     background: #f0f9ff;
     border: 1px solid #0ea5e9;
     color: #0ea5e9;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
     font-size: 0.875rem;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  .blog-post__ai-details {
-    margin-top: 0.5rem;
+  .blog-article__ai-details {
+    margin-left: auto;
   }
 
-  .blog-post__ai-details code {
+  .blog-article__ai-details summary {
+    cursor: pointer;
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+
+  .blog-article__ai-details code {
     background: #1e293b;
     color: #f1f5f9;
-    padding: 0.5rem;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border-radius: 8px;
     font-size: 0.75rem;
     word-break: break-all;
+    margin-top: 0.5rem;
+    display: block;
   }
 
-  .blog-post__toc {
-    background: #f8fafc;
+  /* Content wrapper - main content + sidebar */
+  .blog-article__content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .blog-article__main {
+    min-height: 600px;
+  }
+
+  .blog-article__content {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
     border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .blog-post__toc h3 {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     font-size: 1.125rem;
-    font-weight: 600;
-    color: #0f172a;
-    margin-bottom: 1rem;
-  }
-
-  .blog-post__toc ol {
-    list-style: none;
-    padding: 0;
-  }
-
-  .blog-post__toc-item {
-    margin-bottom: 0.5rem;
-  }
-
-  .blog-post__toc-item--1 {
-    font-weight: 600;
-    color: #0f172a;
-  }
-
-  .blog-post__toc-item--2 {
-    margin-left: 1rem;
+    line-height: 1.75;
     color: #374151;
   }
 
-  .blog-post__toc-item--3 {
-    margin-left: 2rem;
-    color: #6b7280;
-    font-size: 0.875rem;
-  }
-
-  .blog-post__toc a {
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .blog-post__toc a:hover {
-    color: #667eea;
-  }
-
-  .blog-post__content {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    color: #374151;
-  }
-
-  .blog-post__content h1,
-  .blog-post__content h2,
-  .blog-post__content h3,
-  .blog-post__content h4,
-  .blog-post__content h5,
-  .blog-post__content h6 {
+  /* Typography improvements for readability */
+  .blog-article__content h1,
+  .blog-article__content h2,
+  .blog-article__content h3,
+  .blog-article__content h4,
+  .blog-article__content h5,
+  .blog-article__content h6 {
     color: #0f172a;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 
-  .blog-post__content h1 {
-    font-size: 2rem;
+  .blog-article__content h1 {
+    font-size: 2.25rem;
+    margin-top: 0;
   }
 
-  .blog-post__content h2 {
-    font-size: 1.75rem;
+  .blog-article__content h2 {
+    font-size: 1.875rem;
   }
 
-  .blog-post__content h3 {
+  .blog-article__content h3 {
     font-size: 1.5rem;
   }
 
-  .blog-post__content p {
-    margin-bottom: 1.5rem;
+  .blog-article__content h4 {
+    font-size: 1.25rem;
   }
 
-  .blog-post__content blockquote {
+  .blog-article__content p {
+    margin-bottom: 1.75rem;
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
+  }
+
+  .blog-article__content ul,
+  .blog-article__content ol {
+    margin-bottom: 1.75rem;
+    padding-left: 2rem;
+  }
+
+  .blog-article__content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .blog-article__content blockquote {
     border-left: 4px solid #667eea;
-    padding-left: 1rem;
-    margin: 2rem 0;
+    padding-left: 2rem;
+    margin: 3rem 0;
     font-style: italic;
     color: #4b5563;
+    background: #f8fafc;
+    padding: 2rem 2rem 2rem 3rem;
+    border-radius: 0 8px 8px 0;
+    position: relative;
   }
 
-  .blog-post__content code {
+  .blog-article__content blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: #667eea;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    opacity: 0.3;
+  }
+
+  .blog-article__content code {
     background: #f1f5f9;
-    padding: 0.125rem 0.25rem;
-    border-radius: 4px;
-    font-size: 0.875em;
+    padding: 0.125rem 0.375rem;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   }
 
-  .blog-post__content pre {
+  .blog-article__content pre {
     background: #1e293b;
     color: #f1f5f9;
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     overflow-x: auto;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    border: 1px solid #334155;
   }
 
-  .blog-post__content img {
+  .blog-article__content pre code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .blog-article__content img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin: 1.5rem 0;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
   }
 
-  .blog-post__footer {
-    border-top: 1px solid #e2e8f0;
-    padding-top: 3rem;
-    margin-top: 3rem;
-  }
-
-  .blog-post__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  .blog-article__content figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: -1rem;
     margin-bottom: 2rem;
   }
 
-  .blog-post__tag {
-    background: #f1f5f9;
-    color: #475569;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
+  /* Sidebar with Table of Contents */
+  .blog-article__sidebar {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
   }
 
-  .blog-post__share h4 {
+  .blog-article__toc {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-article__toc-title {
     font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+  }
+
+  .blog-article__toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .blog-article__toc-item {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .blog-article__toc-item--1 {
     font-weight: 600;
     color: #0f172a;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
 
-  .blog-post__share-buttons {
+  .blog-article__toc-item--2 {
+    margin-left: 1rem;
+    color: #374151;
+    font-size: 0.85rem;
+  }
+
+  .blog-article__toc-item--3 {
+    margin-left: 2rem;
+    color: #6b7280;
+    font-size: 0.8rem;
+  }
+
+  .blog-article__toc-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    display: block;
+    padding: 0.25rem 0;
+    border-radius: 4px;
+  }
+
+  .blog-article__toc-link:hover {
+    color: #667eea;
+    background: #f1f5f9;
+    padding-left: 0.5rem;
+  }
+
+  /* Footer */
+  .blog-article__footer {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-article__tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
-  .blog-post__share-button {
+  .blog-article__tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .blog-article__tag:hover {
+    background: #e2e8f0;
+    color: #334155;
+  }
+
+  .blog-article__share {
+    margin-bottom: 3rem;
+  }
+
+  .blog-article__share-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-article__share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .blog-article__share-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
+    padding: 0.875rem 1.25rem;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875rem;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
   }
 
-  .blog-post__share-button--twitter {
+  .blog-article__share-button--twitter {
     background: #1da1f2;
     color: white;
   }
 
-  .blog-post__share-button--twitter:hover {
+  .blog-article__share-button--twitter:hover {
     background: #1a91da;
+    transform: translateY(-2px);
   }
 
-  .blog-post__share-button--linkedin {
+  .blog-article__share-button--linkedin {
     background: #0077b5;
     color: white;
   }
 
-  .blog-post__share-button--linkedin:hover {
+  .blog-article__share-button--linkedin:hover {
     background: #005885;
+    transform: translateY(-2px);
   }
 
-  .blog-post__share-button--facebook {
+  .blog-article__share-button--facebook {
     background: #4267b2;
     color: white;
   }
 
-  .blog-post__share-button--facebook:hover {
+  .blog-article__share-button--facebook:hover {
     background: #365899;
+    transform: translateY(-2px);
   }
 
-  .blog-post__share-button--copy {
+  .blog-article__share-button--copy {
     background: #f1f5f9;
     color: #475569;
-    border: 1px solid #e2e8f0;
+    border-color: #e2e8f0;
   }
 
-  .blog-post__share-button--copy:hover {
+  .blog-article__share-button--copy:hover {
     background: #e2e8f0;
+    color: #334155;
+    transform: translateY(-2px);
   }
 
-  .blog-post__newsletter {
+  .blog-article__newsletter {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 3rem;
+    border-radius: 16px;
     text-align: center;
   }
 
-  .blog-post__newsletter h4 {
-    font-size: 1.25rem;
+  .blog-article__newsletter-title {
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  .blog-post__newsletter p {
-    margin-bottom: 1.5rem;
+  .blog-article__newsletter-description {
+    margin-bottom: 2rem;
     opacity: 0.9;
+    font-size: 1.125rem;
+    line-height: 1.6;
   }
 
-  .blog-post__newsletter-form {
+  .blog-article__newsletter-form {
     display: flex;
-    gap: 0.75rem;
-    max-width: 400px;
-    margin: 0 auto;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
   }
 
-  .blog-post__newsletter-input {
+  .blog-article__newsletter-input {
     flex: 1;
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
   }
 
-  .blog-post__newsletter-submit {
+  .blog-article__newsletter-input::placeholder {
+    color: #64748b;
+  }
+
+  .blog-article__newsletter-input:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+
+  .blog-article__newsletter-submit {
     background: white;
     color: #667eea;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
   }
 
-  .blog-post__newsletter-submit:hover {
+  .blog-article__newsletter-submit:hover {
     background: #f8fafc;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .blog-article__newsletter-privacy {
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+
+  /* Screen reader only content */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Focus management for accessibility */
+  .blog-article__toc-link:focus,
+  .blog-article__share-button:focus,
+  .blog-article__newsletter-input:focus,
+  .blog-article__newsletter-submit:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+
+  /* Skip link for screen readers */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #667eea;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    z-index: 1000;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .blog-article__content-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .blog-article__sidebar {
+      position: static;
+      order: -1;
+    }
+
+    .blog-article__toc {
+      padding: 1.5rem;
+    }
   }
 
   @media (max-width: 768px) {
-    .blog-post {
-      padding: 1rem;
+    .blog-article {
+      padding: 1rem 0;
     }
 
-    .blog-post__title {
-      font-size: 2rem;
+    .blog-article__container {
+      padding: 0 1rem;
     }
 
-    .blog-post__hero {
-      height: 250px;
+    .blog-article__title {
+      font-size: clamp(2rem, 8vw, 2.5rem);
     }
 
-    .blog-post__author {
+    .blog-article__content {
+      padding: 2rem 1.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .blog-article__content p {
+      text-align: left;
+      hyphens: none;
+    }
+
+    .blog-article__author {
       flex-direction: column;
       text-align: center;
-      gap: 0.75rem;
+      gap: 1rem;
+      padding: 1.5rem;
     }
 
-    .blog-post__share-buttons {
+    .blog-article__share-buttons {
       justify-content: center;
     }
 
-    .blog-post__newsletter-form {
+    .blog-article__newsletter-form {
       flex-direction: column;
     }
 
-    .blog-post__newsletter-input,
-    .blog-post__newsletter-submit {
+    .blog-article__newsletter-input,
+    .blog-article__newsletter-submit {
       width: 100%;
+    }
+
+    .blog-article__footer {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .blog-article__meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .blog-article__hero {
+      margin-bottom: 2rem;
+    }
+
+    .blog-article__hero-image {
+      border-radius: 12px;
+    }
+
+    .blog-article__content blockquote {
+      padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    }
+
+    .blog-article__content blockquote::before {
+      font-size: 3rem;
+      left: 0.75rem;
+    }
+  }
+
+  /* Print styles */
+  @media print {
+    .blog-article {
+      background: white;
+      padding: 0;
+    }
+
+    .blog-article__container {
+      max-width: none;
+      padding: 0;
+    }
+
+    .blog-article__sidebar,
+    .blog-article__share,
+    .blog-article__newsletter {
+      display: none;
+    }
+
+    .blog-article__content {
+      box-shadow: none;
+      border: none;
+      padding: 0;
     }
   }
 </style>
