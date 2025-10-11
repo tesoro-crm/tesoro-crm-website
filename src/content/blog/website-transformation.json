@@ -1,0 +1,375 @@
+{
+  "meta": {
+    "id": "website-transformation",
+    "version": "2.0.0",
+    "publishDate": "2024-01-15",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-10-11T14:00:00Z",
+    "authorId": "maria-perez",
+    "category": "case-study",
+    "tags": ["wordpress", "crm", "real-estate", "website", "transformation", "javea", "costa-blanca"],
+    "featured": true,
+    "draft": false,
+    "readingTime": 12,
+    "aiGenerated": false
+  },
+  
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop",
+    "keywords": ["makelaar website Javea", "CRM integratie", "WordPress transformatie", "vastgoed website Costa Blanca", "luxury villa website"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Van Offline naar Online Succes: Een Makelaar Transformatie in Javea",
+      "en": "From Offline to Online Success: A Real Estate Agent Transformation in Javea",
+      "es": "De Offline a Éxito Online: Una Transformación Inmobiliaria en Jávea"
+    },
+    "description": {
+      "nl": "Hoe een vastgoedmakelaar in Javea haar verouderde WordPress site transformeerde naar een moderne website met slimme filters en automatische XML imports - en daarmee nieuwe samenwerkingen én klanten voor Tesoro genereerde.",
+      "en": "How a real estate agent in Javea transformed her outdated WordPress site into a modern website with smart filters and automatic XML imports - generating new partnerships and clients for Tesoro.",
+      "es": "Cómo una agente inmobiliaria en Jávea transformó su sitio WordPress obsoleto en un sitio web moderno con filtros inteligentes e importaciones XML automáticas, generando nuevas asociaciones y clientes para Tesoro."
+    },
+    "image": {
+      "src": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=600&fit=crop",
+      "alt": {
+        "nl": "Luxe villa in Javea met moderne website interface",
+        "en": "Luxury villa in Javea with modern website interface",
+        "es": "Villa de lujo en Jávea con interfaz de sitio web moderno"
+      },
+      "width": 1200,
+      "height": 600
+    }
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Javea, Costa Blanca. Azuurblauwe zee, witte stranden, en villa's die dromen waarmaken. Dit is de wereld waarin onze klant al jaren opereert - een vastgoedmakelaar gespecialiseerd in luxe villa's vanaf €600.000.</p><p>Ze kent elke straat, elke ontwikkelaar, en heeft een netwerk opgebouwd waar menig collega jaloers op is. Maar er was één probleem: haar website vertelde een heel ander verhaal.</p><p>Dit is het verhaal van een transformatie die niet alleen haar business veranderde, maar ook nieuwe deuren opende voor Tesoro zelf. Een echte win-win situatie.</p>"
+        },
+        "en": {
+          "text": "<p>Javea, Costa Blanca. Azure blue sea, white beaches, and villas that make dreams come true. This is the world our client has been operating in for years - a real estate agent specialized in luxury villas from €600,000.</p><p>She knows every street, every developer, and has built a network many colleagues envy. But there was one problem: her website told a very different story.</p><p>This is the story of a transformation that not only changed her business, but also opened new doors for Tesoro itself. A true win-win situation.</p>"
+        },
+        "es": {
+          "text": "<p>Jávea, Costa Blanca. Mar azul celeste, playas blancas y villas que hacen realidad los sueños. Este es el mundo en el que nuestra clienta ha estado operando durante años: una agente inmobiliaria especializada en villas de lujo desde €600.000.</p><p>Conoce cada calle, cada promotor y ha construido una red que muchos colegas envidian. Pero había un problema: su sitio web contaba una historia muy diferente.</p><p>Esta es la historia de una transformación que no solo cambió su negocio, sino que también abrió nuevas puertas para Tesoro. Una verdadera situación win-win.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "het-probleem",
+      "title": {
+        "nl": "Wanneer je website je grootste vijand wordt",
+        "en": "When your website becomes your biggest enemy",
+        "es": "Cuando tu sitio web se convierte en tu mayor enemigo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>\"Het viel gewoon stil,\" vertelt ze tijdens ons eerste gesprek. \"De bezoekers vielen weg, de traffic daalde, en op een gegeven moment was de website zelfs compleet onbereikbaar.\"</p><p>De ergste technische fout? De website die offline ging. Precies op het moment dat potentiële kopers zochten naar hun droomvilla aan de Costa Blanca. Leads die nooit binnenkwamen. Kansen die verloren gingen.</p><p>Maar het ging verder dan technische problemen. Het handmatige werk - het updaten van properties, het synchroniseren met portals, het beheren van XML feeds - nam zoveel tijd in beslag dat ze het uiteindelijk gewoon opgaf.</p><p>\"Ik raakte gedemotiveerd,\" geeft ze toe. \"Elke week uren bezig met de website, terwijl ik huizen zou moeten verkopen.\"</p>"
+        },
+        "en": {
+          "text": "<p>\"It just went silent,\" she tells us during our first conversation. \"Visitors dropped off, traffic declined, and at one point the website was completely unreachable.\"</p><p>The worst technical error? The website going offline. Right when potential buyers were searching for their dream villa on the Costa Blanca. Leads that never came in. Opportunities that were lost.</p><p>But it went beyond technical problems. The manual work - updating properties, synchronizing with portals, managing XML feeds - took so much time that she eventually just gave up.</p><p>\"I became demotivated,\" she admits. \"Every week hours busy with the website, when I should be selling houses.\"</p>"
+        },
+        "es": {
+          "text": "<p>\"Simplemente se quedó en silencio,\" nos cuenta durante nuestra primera conversación. \"Los visitantes cayeron, el tráfico disminuyó y en un momento el sitio web era completamente inaccesible.\"</p><p>¿El peor error técnico? El sitio web quedándose offline. Justo cuando los compradores potenciales buscaban su villa de ensueño en la Costa Blanca. Clientes potenciales que nunca llegaron. Oportunidades que se perdieron.</p><p>Pero fue más allá de los problemas técnicos. El trabajo manual - actualizar propiedades, sincronizar con portales, gestionar feeds XML - tomaba tanto tiempo que finalmente simplemente se rindió.</p><p>\"Me desmotivé,\" admite. \"Cada semana horas ocupada con el sitio web, cuando debería estar vendiendo casas.\"</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "problemen-highlights",
+      "variant": "danger",
+      "title": {
+        "nl": "De Pijnpunten",
+        "en": "The Pain Points",
+        "es": "Los Puntos de Dolor"
+      },
+      "items": [
+        {
+          "nl": "Website regelmatig offline - gemiste leads en verloren kansen",
+          "en": "Website regularly offline - missed leads and lost opportunities",
+          "es": "Sitio web regularmente offline - clientes potenciales perdidos y oportunidades perdidas"
+        },
+        {
+          "nl": "Dalende traffic door technische problemen en slechte UX",
+          "en": "Declining traffic due to technical problems and poor UX",
+          "es": "Tráfico decreciente debido a problemas técnicos y mala UX"
+        },
+        {
+          "nl": "Uren per week aan handmatig werk - tijd die niet aan verkopen besteed werd",
+          "en": "Hours per week of manual work - time not spent on sales",
+          "es": "Horas por semana de trabajo manual - tiempo no dedicado a ventas"
+        },
+        {
+          "nl": "Complete demotivatie - opgeven van website onderhoud",
+          "en": "Complete demotivation - giving up on website maintenance",
+          "es": "Desmotivación completa - renunciar al mantenimiento del sitio web"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "de-transformatie",
+      "title": {
+        "nl": "6 Weken Maatwerk: Een Gezamenlijk Proces",
+        "en": "6 Weeks Custom Work: A Collaborative Process",
+        "es": "6 Semanas de Trabajo Personalizado: Un Proceso Colaborativo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>\"We hebben er uiteindelijk zes weken aan gewerkt,\" vertelt het Tesoro team. \"Maar dit was geen standaard template project. We hebben een volledig maatwerk ontwerp gemaakt, samen met de klant.\"</p><p>Het was een proces van luisteren, ontwerpen, feedback, en verfijnen. Elke week nieuwe iteraties, elke keer dichter bij de perfecte oplossing.</p><p>Het resultaat? Een website die niet alleen mooi is, maar ook écht werkt voor haar business.</p>"
+        },
+        "en": {
+          "text": "<p>\"We ultimately worked on it for six weeks,\" the Tesoro team tells us. \"But this wasn't a standard template project. We created a fully custom design, together with the client.\"</p><p>It was a process of listening, designing, feedback, and refining. New iterations every week, each time closer to the perfect solution.</p><p>The result? A website that's not only beautiful, but also really works for her business.</p>"
+        },
+        "es": {
+          "text": "<p>\"Finalmente trabajamos en ello durante seis semanas,\" nos cuenta el equipo de Tesoro. \"Pero este no fue un proyecto de plantilla estándar. Creamos un diseño completamente personalizado, junto con el cliente.\"</p><p>Fue un proceso de escuchar, diseñar, retroalimentación y refinar. Nuevas iteraciones cada semana, cada vez más cerca de la solución perfecta.</p><p>¿El resultado? Un sitio web que no solo es hermoso, sino que también funciona realmente para su negocio.</p>"
+        }
+      },
+      "subsections": [
+        {
+          "id": "slimme-filters",
+          "title": {
+            "nl": "Slimme Filters die Onthouden",
+            "en": "Smart Filters that Remember",
+            "es": "Filtros Inteligentes que Recuerdan"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>\"De feature die ze het meest waardevol vindt? De presentatie van de huizen, de filtermogelijkheden, en vooral: het onthouden van je filterinstellingen.\"</p><p>Stel je voor: een bezoeker zoekt villa's met zeezicht, 4 slaapkamers, zwembad, tussen €800k-€1.2M. Ze bekijkt een paar properties, gaat terug naar het overzicht, en... alle filters staan nog ingesteld.</p><p>Geen gefrustreerd opnieuw instellen. Geen verloren bezoekers. Gewoon een vloeiende ervaring die converteert.</p>"
+            },
+            "en": {
+              "text": "<p>\"The feature she finds most valuable? The presentation of the houses, the filter options, and especially: remembering your filter settings.\"</p><p>Imagine: a visitor searches for villas with sea view, 4 bedrooms, pool, between €800k-€1.2M. They view a few properties, go back to the overview, and... all filters are still set.</p><p>No frustrated resetting. No lost visitors. Just a smooth experience that converts.</p>"
+            },
+            "es": {
+              "text": "<p>\"¿La característica que encuentra más valiosa? La presentación de las casas, las opciones de filtro y especialmente: recordar tu configuración de filtros.\"</p><p>Imagina: un visitante busca villas con vista al mar, 4 dormitorios, piscina, entre €800k-€1.2M. Ven algunas propiedades, vuelven a la vista general y... todos los filtros siguen configurados.</p><p>Sin restablecimiento frustrante. Sin visitantes perdidos. Solo una experiencia fluida que convierte.</p>"
+            }
+          }
+        },
+        {
+          "id": "automatische-xml",
+          "title": {
+            "nl": "Automatische XML Imports: Nooit Meer Handmatig Werk",
+            "en": "Automatic XML Imports: Never Manual Work Again",
+            "es": "Importaciones XML Automáticas: Nunca Más Trabajo Manual"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>De koppeling met Tesoro CRM veranderde alles. XML imports van collega-makelaars worden automatisch verwerkt. Huizen die niet meer beschikbaar zijn? Automatisch van de site gehaald.</p><p>\"De lijst is eigenlijk te lang om allemaal te benoemen,\" lacht ze. \"Maar het belangrijkste is: ik hoef er niet meer naar om te kijken. Het werkt gewoon.\"</p><p>Van uren per week handmatig werk naar volledige automatisering. Tijd die ze nu besteedt aan wat ze het beste kan: huizen verkopen.</p>"
+            },
+            "en": {
+              "text": "<p>The connection with Tesoro CRM changed everything. XML imports from colleague agents are automatically processed. Houses that are no longer available? Automatically removed from the site.</p><p>\"The list is actually too long to name everything,\" she laughs. \"But the most important thing is: I don't have to look at it anymore. It just works.\"</p><p>From hours per week of manual work to complete automation. Time she now spends on what she does best: selling houses.</p>"
+            },
+            "es": {
+              "text": "<p>La conexión con Tesoro CRM lo cambió todo. Las importaciones XML de agentes colegas se procesan automáticamente. ¿Casas que ya no están disponibles? Eliminadas automáticamente del sitio.</p><p>\"La lista es realmente demasiado larga para nombrar todo,\" se ríe. \"Pero lo más importante es: ya no tengo que mirarlo. Simplemente funciona.\"</p><p>De horas por semana de trabajo manual a automatización completa. Tiempo que ahora dedica a lo que mejor hace: vender casas.</p>"
+            }
+          }
+        },
+        {
+          "id": "leadformulieren",
+          "title": {
+            "nl": "Directe CRM Koppeling: Geen Lead Gaat Verloren",
+            "en": "Direct CRM Connection: No Lead Gets Lost",
+            "es": "Conexión CRM Directa: Ningún Cliente Potencial se Pierde"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Elke lead die binnenkomt via een property pagina gaat direct naar Tesoro CRM. Automatische follow-ups worden getriggerd. Klantgeschiedenis is direct beschikbaar.</p><p>Van handmatig kopiëren en plakken tussen systemen naar één geïntegreerd platform. Geen gemiste leads meer. Geen verloren kansen.</p>"
+            },
+            "en": {
+              "text": "<p>Every lead that comes in via a property page goes directly to Tesoro CRM. Automatic follow-ups are triggered. Client history is immediately available.</p><p>From manual copying and pasting between systems to one integrated platform. No more missed leads. No lost opportunities.</p>"
+            },
+            "es": {
+              "text": "<p>Cada cliente potencial que entra a través de una página de propiedad va directamente a Tesoro CRM. Los seguimientos automáticos se activan. El historial del cliente está disponible inmediatamente.</p><p>De copiar y pegar manual entre sistemas a una plataforma integrada. No más clientes potenciales perdidos. No más oportunidades perdidas.</p>"
+            }
+          },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
+            "alt": {
+              "nl": "CRM dashboard met automatische lead tracking",
+              "en": "CRM dashboard with automatic lead tracking",
+              "es": "Panel CRM con seguimiento automático de clientes potenciales"
+            },
+            "caption": {
+              "nl": "Tesoro CRM: Alle leads op één plek, automatisch verwerkt",
+              "en": "Tesoro CRM: All leads in one place, automatically processed",
+              "es": "Tesoro CRM: Todos los clientes potenciales en un solo lugar, procesados automáticamente"
+            },
+            "width": 1200,
+            "height": 800
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "de-resultaten",
+      "title": {
+        "nl": "Een Win-Win voor Iedereen",
+        "en": "A Win-Win for Everyone",
+        "es": "Un Win-Win para Todos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>\"Het heeft haar zeker meer samenwerking opgeleverd,\" vertelt het Tesoro team. \"Maar het heeft Tesoro ook nieuwe klanten opgeleverd. Het is een echte win-win situatie.\"</p><p>De makelaar kan zich nu focussen op wat ze het beste kan. Haar website werkt 24/7 als haar beste verkoper. En Tesoro? Die heeft een showcase case die laat zien wat er mogelijk is.</p><p>Nieuwe samenwerkingen. Nieuwe klanten. Nieuwe mogelijkheden. Allemaal voortgekomen uit één succesvolle transformatie.</p>"
+        },
+        "en": {
+          "text": "<p>\"It certainly brought her more collaboration,\" the Tesoro team tells us. \"But it also brought Tesoro new clients. It's a real win-win situation.\"</p><p>The agent can now focus on what she does best. Her website works 24/7 as her best salesperson. And Tesoro? They have a showcase case that shows what's possible.</p><p>New partnerships. New clients. New opportunities. All stemming from one successful transformation.</p>"
+        },
+        "es": {
+          "text": "<p>\"Ciertamente le trajo más colaboración,\" nos cuenta el equipo de Tesoro. \"Pero también trajo nuevos clientes a Tesoro. Es una verdadera situación win-win.\"</p><p>La agente ahora puede enfocarse en lo que mejor hace. Su sitio web funciona 24/7 como su mejor vendedor. ¿Y Tesoro? Tienen un caso de muestra que demuestra lo que es posible.</p><p>Nuevas asociaciones. Nuevos clientes. Nuevas oportunidades. Todo derivado de una transformación exitosa.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "key-features",
+      "variant": "success",
+      "title": {
+        "nl": "De Game-Changers",
+        "en": "The Game-Changers",
+        "es": "Los Cambios de Juego"
+      },
+      "items": [
+        {
+          "nl": "Slimme filters die bezoekersinstellingen onthouden - geen frustratie meer",
+          "en": "Smart filters that remember visitor settings - no more frustration",
+          "es": "Filtros inteligentes que recuerdan la configuración del visitante - no más frustración"
+        },
+        {
+          "nl": "Automatische XML imports van collega's - huizen altijd up-to-date",
+          "en": "Automatic XML imports from colleagues - properties always up-to-date",
+          "es": "Importaciones XML automáticas de colegas - propiedades siempre actualizadas"
+        },
+        {
+          "nl": "Directe CRM koppeling - elke lead automatisch verwerkt",
+          "en": "Direct CRM connection - every lead automatically processed",
+          "es": "Conexión CRM directa - cada cliente potencial procesado automáticamente"
+        },
+        {
+          "nl": "Professionele property presentatie - villa's komen tot leven",
+          "en": "Professional property presentation - villas come to life",
+          "es": "Presentación profesional de propiedades - las villas cobran vida"
+        },
+        {
+          "nl": "Van uren handmatig werk naar volledige automatisering",
+          "en": "From hours of manual work to complete automation",
+          "es": "De horas de trabajo manual a automatización completa"
+        }
+      ]
+    },
+
+    {
+      "type": "quote",
+      "id": "testimonial",
+      "quote": {
+        "nl": "De lijst met features is eigenlijk te lang om allemaal te benoemen. Maar het belangrijkste is: ik hoef er niet meer naar om te kijken. Het werkt gewoon. Nu kan ik me focussen op wat ik het beste kan: huizen verkopen.",
+        "en": "The list of features is actually too long to name everything. But the most important thing is: I don't have to look at it anymore. It just works. Now I can focus on what I do best: selling houses.",
+        "es": "La lista de características es realmente demasiado larga para nombrar todo. Pero lo más importante es: ya no tengo que mirarlo. Simplemente funciona. Ahora puedo concentrarme en lo que mejor hago: vender casas."
+      },
+      "author": "Makelaar Javea",
+      "role": {
+        "nl": "Luxe Villa Specialist, Costa Blanca",
+        "en": "Luxury Villa Specialist, Costa Blanca",
+        "es": "Especialista en Villas de Lujo, Costa Blanca"
+      }
+    },
+
+    {
+      "type": "cta",
+      "id": "conclusion",
+      "title": {
+        "nl": "Klaar voor Jouw Transformatie?",
+        "en": "Ready for Your Transformation?",
+        "es": "¿Listo para Tu Transformación?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Herken je jezelf in dit verhaal? Verlies jij ook tijd aan handmatig werk? Is jouw website meer een last dan een hulp?</p><p>Tesoro helpt vastgoedprofessionals met moderne, CRM-geïntegreerde websites die écht werken. Maatwerk oplossingen die passen bij jouw business.</p><p>Vraag een gratis demo aan en ontdek wat Tesoro voor jou kan betekenen.</p>"
+        },
+        "en": {
+          "text": "<p>Do you recognize yourself in this story? Are you also losing time on manual work? Is your website more of a burden than a help?</p><p>Tesoro helps real estate professionals with modern, CRM-integrated websites that really work. Custom solutions that fit your business.</p><p>Request a free demo and discover what Tesoro can mean for you.</p>"
+        },
+        "es": {
+          "text": "<p>¿Te reconoces en esta historia? ¿También estás perdiendo tiempo en trabajo manual? ¿Tu sitio web es más una carga que una ayuda?</p><p>Tesoro ayuda a profesionales inmobiliarios con sitios web modernos integrados con CRM que realmente funcionan. Soluciones personalizadas que se adaptan a tu negocio.</p><p>Solicita una demo gratuita y descubre lo que Tesoro puede significar para ti.</p>"
+        }
+      },
+      "buttons": [
+        {
+          "text": {
+            "nl": "Vraag een Demo Aan",
+            "en": "Request a Demo",
+            "es": "Solicitar una Demo"
+          },
+          "url": "/contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ],
+
+  "relatedPosts": [
+    "crm-integratie-voor-makelaars",
+    "moderne-vastgoed-website-2024",
+    "xml-feeds-automatiseren"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe lang duurt zo'n maatwerk website transformatie?",
+        "en": "How long does such a custom website transformation take?",
+        "es": "¿Cuánto tiempo lleva una transformación de sitio web personalizada?"
+      },
+      "answer": {
+        "nl": "Gemiddeld 4-6 weken voor een volledig maatwerk ontwerp. We werken samen met je in een iteratief proces: intake, design, feedback, verfijning, en lancering. De exacte duur hangt af van de complexiteit en het aantal properties.",
+        "en": "On average 4-6 weeks for a fully custom design. We work together with you in an iterative process: intake, design, feedback, refinement, and launch. The exact duration depends on complexity and number of properties.",
+        "es": "En promedio 4-6 semanas para un diseño completamente personalizado. Trabajamos junto contigo en un proceso iterativo: admisión, diseño, retroalimentación, refinamiento y lanzamiento. La duración exacta depende de la complejidad y el número de propiedades."
+      }
+    },
+    {
+      "question": {
+        "nl": "Werken de slimme filters ook op mobiel?",
+        "en": "Do the smart filters also work on mobile?",
+        "es": "¿Los filtros inteligentes también funcionan en móvil?"
+      },
+      "answer": {
+        "nl": "Ja, absoluut! De filters zijn volledig responsive en werken perfect op alle devices. Je filterinstellingen worden ook op mobiel onthouden, zodat bezoekers een vloeiende ervaring hebben ongeacht het apparaat.",
+        "en": "Yes, absolutely! The filters are fully responsive and work perfectly on all devices. Your filter settings are also remembered on mobile, so visitors have a smooth experience regardless of device.",
+        "es": "¡Sí, absolutamente! Los filtros son totalmente responsive y funcionan perfectamente en todos los dispositivos. Tu configuración de filtros también se recuerda en móvil, para que los visitantes tengan una experiencia fluida independientemente del dispositivo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe werkt de automatische XML import precies?",
+        "en": "How does the automatic XML import work exactly?",
+        "es": "¿Cómo funciona exactamente la importación XML automática?"
+      },
+      "answer": {
+        "nl": "Tesoro CRM synchroniseert automatisch met XML feeds van collega-makelaars en portals. Nieuwe properties worden automatisch toegevoegd, updates worden doorgevoerd, en verkochte/verhuuurde woningen worden automatisch van je site verwijderd. Alles gebeurt in real-time zonder dat je er naar om hoeft te kijken.",
+        "en": "Tesoro CRM automatically synchronizes with XML feeds from colleague agents and portals. New properties are automatically added, updates are applied, and sold/rented properties are automatically removed from your site. Everything happens in real-time without you having to look at it.",
+        "es": "Tesoro CRM se sincroniza automáticamente con feeds XML de agentes colegas y portales. Las nuevas propiedades se agregan automáticamente, las actualizaciones se aplican y las propiedades vendidas/alquiladas se eliminan automáticamente de tu sitio. Todo sucede en tiempo real sin que tengas que mirarlo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik mijn bestaande properties behouden?",
+        "en": "Can I keep my existing properties?",
+        "es": "¿Puedo mantener mis propiedades existentes?"
+      },
+      "answer": {
+        "nl": "Ja! We migreren al je bestaande content, properties en media automatisch naar het nieuwe systeem. Je verliest niets en alles wordt geoptimaliseerd voor de nieuwe website. Foto's, beschrijvingen, kenmerken - alles komt mee.",
+        "en": "Yes! We automatically migrate all your existing content, properties and media to the new system. You lose nothing and everything is optimized for the new website. Photos, descriptions, features - everything comes along.",
+        "es": "¡Sí! Migramos automáticamente todo tu contenido existente, propiedades y medios al nuevo sistema. No pierdes nada y todo se optimiza para el nuevo sitio web. Fotos, descripciones, características: todo viene incluido."
+      }
+    }
+  ]
+}

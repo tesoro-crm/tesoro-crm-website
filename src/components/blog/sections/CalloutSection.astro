@@ -1,0 +1,69 @@
+---
+/**
+ * Callout Section - Highlighted box for important points, tips, warnings
+ * Variants: info (blue), success (green), warning (yellow), danger (red), tip (purple)
+ */
+import type { Language } from '../../../types/blog';
+
+interface Props {
+  section: any;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const title = section.title?.[lang];
+const items = section.items?.map((item: any) => item[lang]) || section.highlights?.map((h: any) => h[lang]);
+const variant = section.variant || 'info';
+
+// Tailwind classes per variant
+const variantStyles = {
+  info: {
+    box: 'bg-blue-50 border-blue-500',
+    text: 'text-blue-900',
+    icon: '💡'
+  },
+  success: {
+    box: 'bg-green-50 border-green-500',
+    text: 'text-green-900',
+    icon: '✅'
+  },
+  warning: {
+    box: 'bg-yellow-50 border-yellow-500',
+    text: 'text-yellow-900',
+    icon: '⚠️'
+  },
+  danger: {
+    box: 'bg-red-50 border-red-500',
+    text: 'text-red-900',
+    icon: '🚨'
+  },
+  tip: {
+    box: 'bg-purple-50 border-purple-500',
+    text: 'text-purple-900',
+    icon: '💡'
+  }
+};
+
+const styles = variantStyles[variant as keyof typeof variantStyles];
+---
+
+<section class="mb-12" id={section.id}>
+  {title && (
+    <h2 class="font-[family-name:var(--font-decorative)] text-[1.75rem] font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+      {title}
+    </h2>
+  )}
+  
+  {items && items.length > 0 && (
+    <div class={`p-6 md:p-8 rounded-lg border-l-4 ${styles.box}`}>
+      <ul class="space-y-4">
+        {items.map((item: string) => (
+          <li class={`relative pl-8 font-medium text-[1.0625rem] leading-relaxed ${styles.text}`}>
+            <span class="absolute left-0 top-0 text-xl">{styles.icon}</span>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</section>

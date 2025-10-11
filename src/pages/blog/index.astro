@@ -1,16 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ImageWithFallback from '../../components/blog/ImageWithFallback.astro';
 import { getCollection } from 'astro:content';
 import { getLocale } from '../../i18n/utils';
 import type { Language } from '../../types/blog';
+import { getAuthor } from '../../utils/authors';
 
 const posts = await getCollection('blog', ({ data }) => !data.meta.draft);
 const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
 
 // Sort posts by date (newest first)
-const sortedPosts = posts.sort((a, b) => 
-  new Date(b.data.hero.publishDate).getTime() - new Date(a.data.hero.publishDate).getTime()
-);
+const sortedPosts = posts.sort((a, b) => {
+  const dateA = (a.data.meta as any).publishDate || (a.data.hero as any).publishDate;
+  const dateB = (b.data.meta as any).publishDate || (b.data.hero as any).publishDate;
+  return new Date(dateB).getTime() - new Date(dateA).getTime();
+});
 
 // Get featured posts
 const featuredPosts = sortedPosts.filter(post => post.data.meta.featured);
@@ -76,20 +80,27 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
               const title = postData.hero.title[locale];
               const description = postData.hero.description[locale];
               const heroImage = postData.hero.image;
-              const publishDate = new Date(postData.hero.publishDate);
+              const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
+              const publishDate = new Date(publishDateString);
+              const authorId = (postData.meta as any).authorId || (postData.meta as any).author?.id || 'maria-perez';
+              const author = getAuthor(authorId);
               
               return (
                 <article class="blog-index__featured-card">
-                  <img
-                    class="blog-index__featured-image"
+                  <ImageWithFallback
                     src={heroImage.src}
                     alt={heroImage.alt[locale]}
+                    width={heroImage.width || 800}
+                    height={heroImage.height || 450}
                     loading="lazy"
+                    class="blog-index__featured-image"
+                    aspectRatio="16/9"
+                    clickable={false}
                   />
                   <div class="blog-index__featured-content">
                     <div class="blog-index__featured-meta">
                       <span class="blog-index__featured-category">{postData.meta.category}</span>
-                      <time class="blog-index__featured-date" datetime={postData.hero.publishDate}>
+                      <time class="blog-index__featured-date" datetime={publishDateString}>
                         {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
                           month: 'short',
                           day: 'numeric'
@@ -100,15 +111,21 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
                     <a href={`/blog/${postData.meta.id}`}>{title}</a>
                   </h3>
                   <p class="blog-index__featured-description">{description}</p>
-                  <div class="blog-index__featured-author">
-                    <img
-                      class="blog-index__featured-author-avatar"
-                      src={postData.meta.author.image}
-                      alt={postData.meta.author.name}
-                      loading="lazy"
-                    />
-                    <span class="blog-index__featured-author-name">{postData.meta.author.name}</span>
-                  </div>
+                  {author && (
+                    <div class="blog-index__featured-author">
+                      <ImageWithFallback
+                        src={author.image}
+                        alt={author.name}
+                        width={40}
+                        height={40}
+                        loading="eager"
+                        class="blog-index__featured-author-avatar"
+                        aspectRatio="1/1"
+                        clickable={false}
+                      />
+                      <span class="blog-index__featured-author-name">{author.name}</span>
+                    </div>
+                  )}
                 </div>
               </article>
             );
@@ -137,20 +154,27 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
             const title = postData.hero.title[locale];
             const description = postData.hero.description[locale];
             const heroImage = postData.hero.image;
-            const publishDate = new Date(postData.hero.publishDate);
+            const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
+            const publishDate = new Date(publishDateString);
+            const authorId = (postData.meta as any).authorId || (postData.meta as any).author?.id || 'maria-perez';
+            const author = getAuthor(authorId);
             
             return (
               <article class="blog-index__card">
-                <img
-                  class="blog-index__card-image"
+                <ImageWithFallback
                   src={heroImage.src}
                   alt={heroImage.alt[locale]}
-                  loading="lazy"
+                  width={heroImage.width || 800}
+                  height={heroImage.height || 400}
+                  loading="eager"
+                  class="blog-index__featured-image"
+                  aspectRatio="2/1"
+                  clickable={false}
                 />
               <div class="blog-index__card-content">
                 <div class="blog-index__card-meta">
                   <span class="blog-index__card-category">{postData.meta.category}</span>
-                  <time class="blog-index__card-date" datetime={postData.hero.publishDate}>
+                  <time class="blog-index__card-date" datetime={publishDateString}>
                     {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
                       month: 'short',
                       day: 'numeric'
@@ -165,15 +189,21 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
                 </h3>
                 <p class="blog-index__card-description">{description}</p>
                 <div class="blog-index__card-footer">
-                  <div class="blog-index__card-author">
-                    <img
-                      class="blog-index__card-author-avatar"
-                      src={postData.meta.author.image}
-                      alt={postData.meta.author.name}
-                      loading="lazy"
-                    />
-                    <span class="blog-index__card-author-name">{postData.meta.author.name}</span>
-                  </div>
+                  {author && (
+                    <div class="blog-index__card-author">
+                      <ImageWithFallback
+                        src={author.image}
+                        alt={author.name}
+                        width={32}
+                        height={32}
+                        loading="lazy"
+                        class="blog-index__card-author-avatar"
+                        aspectRatio="1/1"
+                        clickable={false}
+                      />
+                      <span class="blog-index__card-author-name">{author.name}</span>
+                    </div>
+                  )}
                   <div class="blog-index__card-tags">
                     {postData.meta.tags.slice(0, 2).map((tag: string) => (
                       <span class="blog-index__card-tag">#{tag}</span>
@@ -251,12 +281,14 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
 <script>
   // Newsletter signup
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('[data-newsletter-form]');
+    const form = document.querySelector<HTMLFormElement>('[data-newsletter-form]');
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const email = form.querySelector('input[type="email"]').value;
+      const emailInput = form.querySelector<HTMLInputElement>('input[type="email"]');
+      if (!emailInput) return;
+      const email = emailInput.value;
 
       try {
         const response = await fetch('/api/newsletter', {
@@ -369,8 +401,7 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
 
   .blog-index__featured-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    /* Height managed by aspect-ratio in ImageWithFallback */
   }
 
   .blog-index__featured-content {
@@ -428,11 +459,17 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
     gap: 0.75rem;
   }
 
+  /* Fix ImageWithFallback wrapper in author section */
+  .blog-index__featured-author .image-with-fallback {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+
   .blog-index__featured-author-avatar {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    object-fit: cover;
   }
 
   .blog-index__featured-author-name {
@@ -475,8 +512,7 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
 
   .blog-index__card-image {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    /* Height managed by aspect-ratio in ImageWithFallback */
   }
 
   .blog-index__card-content {
@@ -545,11 +581,17 @@ const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es'
     gap: 0.5rem;
   }
 
+  /* Fix ImageWithFallback wrapper in card author section */
+  .blog-index__card-author .image-with-fallback {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+  }
+
   .blog-index__card-author-avatar {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    object-fit: cover;
   }
 
   .blog-index__card-author-name {

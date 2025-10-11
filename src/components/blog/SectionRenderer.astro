@@ -1,11 +1,16 @@
 ---
+/**
+ * Section Renderer - Maps section types to generic components
+ * Generic blokkendoos system for flexible blog content
+ */
 import type { Section, Language } from '../../types/blog';
-import IntroductionSection from './sections/IntroductionSection.astro';
-import ProblemSection from './sections/ProblemSection.astro';
-import SolutionSection from './sections/SolutionSection.astro';
-import ResultsSection from './sections/ResultsSection.astro';
+import TextSection from './sections/TextSection.astro';
+import CalloutSection from './sections/CalloutSection.astro';
+import StatsGridSection from './sections/StatsGridSection.astro';
+import ComparisonSection from './sections/ComparisonSection.astro';
+import StepsSection from './sections/StepsSection.astro';
+import VideoSection from './sections/VideoSection.astro';
 import QuoteSection from './sections/QuoteSection.astro';
-import TakeawaysSection from './sections/TakeawaysSection.astro';
 import CTASection from './sections/CTASection.astro';
 
 interface Props {
@@ -15,24 +20,29 @@ interface Props {
 
 const { section, lang } = Astro.props;
 
-// Map section types to components
+// Map section types to generic components
 const componentMap = {
-  introduction: IntroductionSection,
-  problem: ProblemSection,
-  solution: SolutionSection,
-  results: ResultsSection,
+  // Generic components
+  text: TextSection,
+  callout: CalloutSection,
+  stats: StatsGridSection,
+  comparison: ComparisonSection,
+  steps: StepsSection,
+  video: VideoSection,
   quote: QuoteSection,
-  takeaways: TakeawaysSection,
   cta: CTASection,
-  // Add more as needed
-  technical: IntroductionSection, // Fallback for now
-  'faq-section': IntroductionSection, // Fallback for now
-  'image-gallery': IntroductionSection, // Fallback for now
-  comparison: IntroductionSection, // Fallback for now
-  timeline: IntroductionSection, // Fallback for now
+  
+  // Backwards compatibility (old names)
+  introduction: TextSection,
+  problem: TextSection,
+  solution: TextSection,
+  takeaways: TextSection,
+  highlights: CalloutSection,
+  results: StatsGridSection,
+  'results-cards': StatsGridSection,
 };
 
-const Component = componentMap[section.type];
+const Component = componentMap[section.type] || TextSection;
 ---
 
 {Component && <Component section={section as any} lang={lang} />}

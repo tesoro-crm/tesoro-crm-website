@@ -1,0 +1,49 @@
+---
+/**
+ * Steps Section - Step-by-step process or timeline
+ * Generic component for tutorials, processes, roadmaps
+ */
+import type { Language } from '../../../types/blog';
+
+interface Props {
+  section: any;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const title = section.title?.[lang];
+const steps = section.steps || [];
+---
+
+<section class="mb-12" id={section.id}>
+  {title && (
+    <h2 class="font-[family-name:var(--font-decorative)] text-[1.75rem] font-bold text-gray-900 mb-8 leading-tight tracking-tight">
+      {title}
+    </h2>
+  )}
+  
+  <div class="space-y-8">
+    {steps.map((step: any, index: number) => {
+      const stepTitle = step.title[lang];
+      const stepContent = step.content?.[lang];
+      const icon = step.icon || '✓';
+      
+      return (
+        <div class="relative pl-12 pb-8 border-l-2 border-slate-200 last:border-l-0 last:pb-0">
+          {/* Step number/icon */}
+          <div class="absolute left-0 top-0 -translate-x-1/2 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
+            {icon === '✓' ? index + 1 : icon}
+          </div>
+          
+          <h3 class="font-[family-name:var(--font-decorative)] text-xl font-bold text-gray-900 mb-3">
+            {stepTitle}
+          </h3>
+          
+          {stepContent && (
+            <div class="prose prose-sm max-w-none text-gray-700" set:html={stepContent.text} />
+          )}
+        </div>
+      );
+    })}
+  </div>
+</section>

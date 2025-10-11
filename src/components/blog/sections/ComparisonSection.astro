@@ -1,0 +1,74 @@
+---
+/**
+ * Comparison Section - Side-by-side comparison (Before/After, Old/New, etc.)
+ * Generic 2-column comparison layout
+ */
+import type { Language } from '../../../types/blog';
+import ImageWithFallback from '../ImageWithFallback.astro';
+
+interface Props {
+  section: any;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const title = section.title?.[lang];
+const leftColumn = section.left;
+const rightColumn = section.right;
+---
+
+<section class="mb-12" id={section.id}>
+  {title && (
+    <h2 class="font-[family-name:var(--font-decorative)] text-[1.75rem] font-bold text-gray-900 mb-8 leading-tight tracking-tight">
+      {title}
+    </h2>
+  )}
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left Column -->
+    <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+      {leftColumn.label && (
+        <h3 class="font-[family-name:var(--font-decorative)] text-xl font-bold text-gray-900 mb-4">
+          {leftColumn.label[lang]}
+        </h3>
+      )}
+      
+      {leftColumn.content && (
+        <div class="prose prose-sm max-w-none text-gray-700 mb-4" set:html={leftColumn.content[lang].text} />
+      )}
+      
+      {leftColumn.image && (
+        <ImageWithFallback
+          src={leftColumn.image.src}
+          alt={leftColumn.image.alt[lang]}
+          width={leftColumn.image.width || 400}
+          height={leftColumn.image.height || 300}
+          loading="lazy"
+        />
+      )}
+    </div>
+    
+    <!-- Right Column -->
+    <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+      {rightColumn.label && (
+        <h3 class="font-[family-name:var(--font-decorative)] text-xl font-bold text-gray-900 mb-4">
+          {rightColumn.label[lang]}
+        </h3>
+      )}
+      
+      {rightColumn.content && (
+        <div class="prose prose-sm max-w-none text-gray-700 mb-4" set:html={rightColumn.content[lang].text} />
+      )}
+      
+      {rightColumn.image && (
+        <ImageWithFallback
+          src={rightColumn.image.src}
+          alt={rightColumn.image.alt[lang]}
+          width={rightColumn.image.width || 400}
+          height={rightColumn.image.height || 300}
+          loading="lazy"
+        />
+      )}
+    </div>
+  </div>
+</section>

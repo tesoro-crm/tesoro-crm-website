@@ -1,0 +1,79 @@
+---
+/**
+ * Video Section - Embed videos (YouTube, Vimeo, or self-hosted)
+ * Supports responsive aspect ratios
+ */
+import type { Language } from '../../../types/blog';
+
+interface Props {
+  section: any;
+  lang: Language;
+}
+
+const { section, lang } = Astro.props;
+const title = section.title?.[lang];
+const description = section.description?.[lang];
+const videoUrl = section.videoUrl;
+const videoType = section.videoType || 'youtube'; // youtube, vimeo, or custom
+const aspectRatio = section.aspectRatio || '16/9';
+const caption = section.caption?.[lang];
+
+// Extract video ID from URL
+const getVideoId = (url: string, type: string) => {
+  if (type === 'youtube') {
+    const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+    return match ? match[1] : null;
+  }
+  if (type === 'vimeo') {
+    const match = url.match(/vimeo\.com\/(\d+)/);
+    return match ? match[1] : null;
+  }
+  return null;
+};
+
+const videoId = getVideoId(videoUrl, videoType);
+
+// Generate embed URL
+const getEmbedUrl = () => {
+  if (videoType === 'youtube' && videoId) {
+    return `https://www.youtube.com/embed/${videoId}`;
+  }
+  if (videoType === 'vimeo' && videoId) {
+    return `https://player.vimeo.com/video/${videoId}`;
+  }
+  return videoUrl; // Custom/self-hosted
+};
+
+const embedUrl = getEmbedUrl();
+---
+
+<section class="mb-12" id={section.id}>
+  {title && (
+    <h2 class="font-[family-name:var(--font-decorative)] text-[1.75rem] font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+      {title}
+    </h2>
+  )}
+  
+  {description && (
+    <p class="text-gray-700 mb-6 leading-relaxed">
+      {description}
+    </p>
+  )}
+  
+  <div class="relative rounded-lg overflow-hidden shadow-lg bg-slate-900" style={`aspect-ratio: ${aspectRatio};`}>
+    <iframe
+      src={embedUrl}
+      title={title || 'Video'}
+      class="absolute inset-0 w-full h-full"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  
+  {caption && (
+    <p class="mt-3 text-sm text-gray-500 text-center italic">
+      {caption}
+    </p>
+  )}
+</section>

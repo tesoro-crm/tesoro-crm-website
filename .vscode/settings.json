@@ -1,0 +1,15 @@
+{
+  // Disable markdown validation
+  "markdownlint.config": {
+    "default": false
+  },
+  // Exclude markdown files from problems
+  "files.exclude": {
+    "**/*.md": false
+  },
+  // Disable markdown linting entirely
+  "markdownlint.run": "onSave",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  }
+}

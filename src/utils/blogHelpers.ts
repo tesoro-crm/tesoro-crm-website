@@ -6,6 +6,13 @@
 import type { BlogPost, Section, Language, LocalizedText } from '../types/blog';
 
 /**
+ * Generate canonical URL from blog post ID
+ */
+export function getCanonicalUrl(postId: string, baseUrl: string = 'https://tesorohq.io'): string {
+  return `${baseUrl}/blog/${postId}`;
+}
+
+/**
  * Calculate reading time based on word count
  * Average reading speed: 200 words per minute
  */

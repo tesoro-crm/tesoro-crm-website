@@ -80,17 +80,26 @@ export interface Metric {
 
 // Section Types
 export type SectionType = 
+  // New generic types
+  | 'text'
+  | 'callout'
+  | 'stats'
+  | 'comparison'
+  | 'steps'
+  | 'video'
+  | 'quote'
+  | 'cta'
+  // Legacy types (backwards compatibility)
   | 'introduction'
   | 'problem'
   | 'solution'
   | 'results'
-  | 'quote'
+  | 'results-cards'
   | 'takeaways'
+  | 'highlights'
   | 'technical'
   | 'faq-section'
-  | 'cta'
   | 'image-gallery'
-  | 'comparison'
   | 'timeline';
 
 export interface BaseSection {
