@@ -45,6 +45,14 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         </li>
         <li>
           <a 
+            href="/blog" 
+            class={`text-sm font-medium transition-colors ${currentPath.startsWith('/blog') ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a 
             href="/pricing" 
             class={`text-sm font-medium transition-colors ${currentPath === '/pricing' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
@@ -107,6 +115,11 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         <li>
           <a href="/features" class="block py-2 text-neutral-700 hover:text-primary">
             {t('nav.features', locale)}
+          </a>
+        </li>
+        <li>
+          <a href="/blog" class="block py-2 text-neutral-700 hover:text-primary">
+            Blog
           </a>
         </li>
         <li>

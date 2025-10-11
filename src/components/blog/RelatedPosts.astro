@@ -1,0 +1,133 @@
+---
+// Related Posts Component
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  currentPost: CollectionEntry<'blog'>;
+  limit?: number;
+}
+
+const { currentPost, limit = 3 } = Astro.props;
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const relatedPosts = allPosts
+  .filter(post =>
+    post.slug !== currentPost.slug &&
+    (post.data.category === currentPost.data.category ||
+     post.data.tags.some(tag => currentPost.data.tags.includes(tag)))
+  )
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, limit);
+---
+
+{relatedPosts.length > 0 && (
+  <section class="related-posts">
+    <h3 class="related-posts__title">Gerelateerde artikelen</h3>
+    <div class="related-posts__grid">
+      {relatedPosts.map(post => (
+        <article class="related-posts__card">
+          {post.data.heroImage && (
+            <img
+              class="related-posts__image"
+              src={post.data.heroImage}
+              alt={post.data.title}
+              loading="lazy"
+            />
+          )}
+          <div class="related-posts__content">
+            <h4 class="related-posts__card-title">
+              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+            </h4>
+            <p class="related-posts__description">{post.data.description}</p>
+            <time class="related-posts__date" datetime={post.data.pubDate.toISOString()}>
+              {post.data.pubDate.toLocaleDateString('nl-NL', {
+                month: 'short',
+                day: 'numeric'
+              })}
+            </time>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-posts {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .related-posts__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2rem;
+  }
+
+  .related-posts__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .related-posts__card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .related-posts__card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .related-posts__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .related-posts__content {
+    padding: 1.5rem;
+  }
+
+  .related-posts__card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .related-posts__card-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .related-posts__card-title a:hover {
+    color: #667eea;
+  }
+
+  .related-posts__description {
+    color: #64748b;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .related-posts__date {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+
+  @media (max-width: 768px) {
+    .related-posts__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

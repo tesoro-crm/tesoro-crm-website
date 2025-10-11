@@ -13,9 +13,12 @@
     "deploy:production": "npm run build && wrangler pages deploy dist --branch main"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.7",
+    "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.6.0",
     "@spotlightjs/astro": "^3.2.6",
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "reading-time": "^1.5.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",

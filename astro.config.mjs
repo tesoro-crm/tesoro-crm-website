@@ -3,13 +3,15 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import spotlight from '@spotlightjs/astro';
 import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL || 'https://new.tesorohq.io',
   integrations: [
-    tailwind(), 
+    tailwind(),
     spotlight(),
+    mdx(),
     sitemap({
       i18n: {
         defaultLocale: 'es',
