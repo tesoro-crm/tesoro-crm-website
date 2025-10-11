@@ -279,7 +279,7 @@ const { locale } = Astro.props;
   document.addEventListener('astro:after-swap', initChatWidget);
 </script>
 
-<style>
+<style is:global>
   .ai-chat-widget {
     position: fixed;
     bottom: 24px;
