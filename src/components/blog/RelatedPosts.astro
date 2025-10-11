@@ -1,54 +1,69 @@
 ---
-// Related Posts Component
+// Related Posts Component for JSON-based blog posts
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import type { Language } from '../../types/blog';
 
 interface Props {
   currentPost: CollectionEntry<'blog'>;
+  locale: Language;
   limit?: number;
 }
 
-const { currentPost, limit = 3 } = Astro.props;
+const { currentPost, locale, limit = 3 } = Astro.props;
+const blogData = currentPost.data;
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+// Get all published posts
+const allPosts = await getCollection('blog', ({ data }) => !data.meta.draft);
+
+// Filter related posts by category or tags
 const relatedPosts = allPosts
   .filter(post =>
-    post.slug !== currentPost.slug &&
-    (post.data.category === currentPost.data.category ||
-     post.data.tags.some(tag => currentPost.data.tags.includes(tag)))
+    post.data.meta.id !== blogData.meta.id &&
+    (post.data.meta.category === blogData.meta.category ||
+     post.data.meta.tags.some((tag: string) => blogData.meta.tags.includes(tag)))
   )
-  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .sort((a, b) => new Date(b.data.hero.publishDate).getTime() - new Date(a.data.hero.publishDate).getTime())
   .slice(0, limit);
+
+// Localized title
+const sectionTitle = locale === 'nl' ? 'Gerelateerde artikelen' : locale === 'es' ? 'Artículos relacionados' : 'Related articles';
 ---
 
 {relatedPosts.length > 0 && (
   <section class="related-posts">
-    <h3 class="related-posts__title">Gerelateerde artikelen</h3>
+    <h3 class="related-posts__title">{sectionTitle}</h3>
     <div class="related-posts__grid">
-      {relatedPosts.map(post => (
-        <article class="related-posts__card">
-          {post.data.heroImage && (
+      {relatedPosts.map(post => {
+        const postData = post.data;
+        const title = postData.hero.title[locale];
+        const description = postData.hero.description[locale];
+        const heroImage = postData.hero.image;
+        const publishDate = new Date(postData.hero.publishDate);
+        
+        return (
+          <article class="related-posts__card">
             <img
               class="related-posts__image"
-              src={post.data.heroImage}
-              alt={post.data.title}
+              src={heroImage.src}
+              alt={heroImage.alt[locale]}
               loading="lazy"
             />
-          )}
-          <div class="related-posts__content">
-            <h4 class="related-posts__card-title">
-              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
-            </h4>
-            <p class="related-posts__description">{post.data.description}</p>
-            <time class="related-posts__date" datetime={post.data.pubDate.toISOString()}>
-              {post.data.pubDate.toLocaleDateString('nl-NL', {
-                month: 'short',
-                day: 'numeric'
-              })}
-            </time>
-          </div>
-        </article>
-      ))}
+            <div class="related-posts__content">
+              <h4 class="related-posts__card-title">
+                <a href={`/blog/${postData.meta.id}`}>{title}</a>
+              </h4>
+              <p class="related-posts__description">{description}</p>
+              <time class="related-posts__date" datetime={postData.hero.publishDate}>
+                {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
+                  month: 'short',
+                  day: 'numeric'
+                })}
+              </time>
+            </div>
+          </article>
+        );
+      })}
     </div>
   </section>
 )}
