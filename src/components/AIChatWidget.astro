@@ -112,6 +112,11 @@ const { locale } = Astro.props;
       const userMsg = document.createElement('div');
       userMsg.className = 'ai-chat-widget__message ai-chat-widget__message--user';
       userMsg.innerHTML = `
+        <div class="ai-chat-widget__message-avatar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <div class="ai-chat-widget__message-content">
           <p>${query}</p>
         </div>
