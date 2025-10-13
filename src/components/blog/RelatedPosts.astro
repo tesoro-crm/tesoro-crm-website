@@ -3,6 +3,7 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Language } from '../../types/blog';
+import { getLocalizedPath } from '../../i18n/utils';
 
 interface Props {
   currentPost: CollectionEntry<'blog'>;
@@ -51,7 +52,7 @@ const sectionTitle = locale === 'nl' ? 'Gerelateerde artikelen' : locale === 'es
             />
             <div class="related-posts__content">
               <h4 class="related-posts__card-title">
-                <a href={`/blog/${postData.meta.id}`}>{title}</a>
+                <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)}>{title}</a>
               </h4>
               <p class="related-posts__description">{description}</p>
               <time class="related-posts__date" datetime={postData.hero.publishDate}>
@@ -125,7 +126,7 @@ const sectionTitle = locale === 'nl' ? 'Gerelateerde artikelen' : locale === 'es
   }
 
   .related-posts__card-title a:hover {
-    color: #667eea;
+    color: var(--accent-primary);
   }
 
   .related-posts__description {

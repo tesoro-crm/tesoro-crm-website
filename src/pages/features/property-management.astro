@@ -1,0 +1,512 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const managementFeatures = [
+  {
+    title: 'Complete Property Database',
+    description: 'Uitgebreide database met alle property details, foto\'s, documenten en geschiedenis.',
+  },
+  {
+    title: 'MLS XML Import/Export',
+    description: 'Automatische synchronisatie met MLS systemen via XML feeds. Real-time updates.',
+  },
+  {
+    title: 'Listing Management',
+    description: 'Publiceer automatisch naar vastgoedportals zoals Funda, Idealista en internationale sites.',
+  },
+  {
+    title: 'Property-Klant Tracking',
+    description: 'Volg welke klanten interesse hebben getoond in welke properties en wanneer.',
+  },
+];
+
+const benefits = [
+  {
+    metric: '70%',
+    description: 'minder tijd aan property administratie',
+  },
+  {
+    metric: '5+',
+    description: 'portals automatisch bijgewerkt',
+  },
+  {
+    metric: '100%',
+    description: 'synchronisatie tussen platforms',
+  },
+];
+
+const mlsIntegrations = [
+  {
+    name: 'Funda',
+    description: 'Nederlandse marktleider voor vastgoed',
+    features: ['Automatische sync', 'Photo management', 'Status updates', 'Lead tracking'],
+  },
+  {
+    name: 'Idealista',
+    description: 'Spaanse vastgoedportal',
+    features: ['Multi-language', 'Auto translation', 'Price tracking', 'Market analysis'],
+  },
+  {
+    name: 'Kyero',
+    description: 'Internationaal vastgoed Spanje',
+    features: ['International reach', 'Multi-currency', 'Tourist market', 'Holiday rentals'],
+  },
+  {
+    name: 'Custom MLS',
+    description: 'Eigen MLS systemen via API',
+    features: ['XML import', 'REST API', 'Custom fields', 'Bulk operations'],
+  },
+];
+
+const propertyFields = [
+  {
+    category: 'Basis Informatie',
+    fields: ['Adres & locatie', 'Prijs & kosten', 'Oppervlakte (m²)', 'Aantal kamers', 'Type woning', 'Bouwjaar'],
+  },
+  {
+    category: 'Property Details',
+    fields: ['Energielabel', 'Staat van onderhoud', 'Tuin/balkon', 'Garage/parkeren', 'Verwarming', 'Isolatie'],
+  },
+  {
+    category: 'Locatie & Omgeving',
+    fields: ['Buurt informatie', 'Voorzieningen', 'Openbaar vervoer', 'Scholen & winkels', 'Uitvalswegen', 'Buurtprofiel'],
+  },
+  {
+    category: 'Media & Documenten',
+    fields: ['Foto\'s (onbeperkt)', 'Floorplans', 'Brochures', 'Legale documenten', 'Taxatie rapporten', 'Video tours'],
+  },
+];
+
+const workflow = [
+  {
+    step: '1',
+    title: 'Property Toevoegen',
+    description: 'Voeg nieuwe property toe via formulier, import of MLS sync.',
+  },
+  {
+    step: '2',
+    title: 'Details Invullen',
+    description: 'Vul alle property details in met custom fields per property type.',
+  },
+  {
+    step: '3',
+    title: 'Media Uploaden',
+    description: 'Upload foto\'s, floorplans en documenten met drag & drop.',
+  },
+  {
+    step: '4',
+    title: 'Automatisch Publiceren',
+    description: 'Property wordt automatisch gepubliceerd naar geselecteerde portals.',
+  },
+  {
+    step: '5',
+    title: 'Klant Matching',
+    description: 'Smart matching vindt automatisch interessante klanten voor deze property.',
+  },
+  {
+    step: '6',
+    title: 'Status Tracking',
+    description: 'Volg interesse, bezichtigingen en status updates real-time.',
+  },
+];
+
+const analytics = [
+  {
+    metric: 'Gemiddelde Tijd op Markt',
+    value: '45 dagen',
+    change: '-15% vs vorig kwartaal',
+    trend: 'down',
+  },
+  {
+    metric: 'Properties Verkocht',
+    value: '23',
+    change: '+12% vs vorige maand',
+    trend: 'up',
+  },
+  {
+    metric: 'Gemiddelde Verkoopprijs',
+    value: '€425.000',
+    change: '+8% vs marktgemiddelde',
+    trend: 'up',
+  },
+  {
+    metric: 'Bezichtigingen per Property',
+    value: '7.2',
+    change: '+23% vs vorig jaar',
+    trend: 'up',
+  },
+];
+---
+
+<Layout 
+  title={t('feature_pages.property_management.meta_title', locale)}
+  description={t('feature_pages.property_management.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <Badge variant="primary" size="md" class="mb-6">
+            {t('feature_pages.property_management.hero.badge', locale)}
+          </Badge>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+            {t('feature_pages.property_management.hero.title', locale)}
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-neutral-700 mb-8">
+            {t('feature_pages.property_management.hero.description', locale)}
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <Button variant="primary" size="lg" href={getLocalizedPath('/signup', locale)}>
+              {t('feature_pages.property_management.cta.primary', locale)}
+            </Button>
+            <Button variant="outline" size="lg" href={getLocalizedPath('/demo', locale)}>
+              {t('feature_pages.property_management.cta.secondary', locale)}
+            </Button>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            {benefits.map((benefit) => (
+              <div class="text-center">
+                <div class="text-2xl mb-1">{benefit.icon}</div>
+                <div class="text-2xl font-bold text-primary mb-1">{benefit.metric}</div>
+                <div class="text-sm text-neutral-600">{benefit.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="bg-white rounded-2xl shadow-xl p-6">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="font-semibold text-neutral-900">Property Portfolio</h3>
+              <Badge variant="secondary" size="sm">47 Properties</Badge>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex gap-4 p-4 bg-success/5 border border-success/20 rounded-lg">
+                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-2xl">
+                  🏠
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-neutral-900">Villa Marbella</h4>
+                  <p class="text-sm text-neutral-600">€450.000 • 4 kamers • 180m²</p>
+                  <div class="flex gap-2 mt-2">
+                    <Badge variant="success" size="xs">Funda</Badge>
+                    <Badge variant="secondary" size="xs">Idealista</Badge>
+                    <Badge variant="outline" size="xs">Kyero</Badge>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-success font-semibold text-sm">Live</div>
+                  <div class="text-xs text-neutral-500">3 interested</div>
+                </div>
+              </div>
+              
+              <div class="flex gap-4 p-4 bg-warning/5 border border-warning/20 rounded-lg">
+                <div class="w-16 h-16 bg-gradient-to-br from-secondary to-warning rounded-lg flex items-center justify-center text-2xl">
+                  🏡
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-neutral-900">Apartment Centro</h4>
+                  <p class="text-sm text-neutral-600">€380.000 • 3 kamers • 140m²</p>
+                  <div class="flex gap-2 mt-2">
+                    <Badge variant="warning" size="xs">Publishing</Badge>
+                    <Badge variant="outline" size="xs">Queue</Badge>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-warning font-semibold text-sm">Sync</div>
+                  <div class="text-xs text-neutral-500">2 min</div>
+                </div>
+              </div>
+              
+              <div class="flex gap-4 p-4 bg-neutral-50 rounded-lg">
+                <div class="w-16 h-16 bg-gradient-to-br from-neutral-300 to-neutral-400 rounded-lg flex items-center justify-center text-2xl">
+                  🏢
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-neutral-900">Penthouse Valencia</h4>
+                  <p class="text-sm text-neutral-600">€625.000 • 5 kamers • 220m²</p>
+                  <div class="flex gap-2 mt-2">
+                    <Badge variant="neutral" size="xs">Draft</Badge>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-neutral-500 font-semibold text-sm">Draft</div>
+                  <div class="text-xs text-neutral-500">Incomplete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Management Features -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Complete Property Management
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Alles wat je nodig hebt om je property portfolio professioneel te beheren.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {managementFeatures.map((feature) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {feature.title}
+            </h3>
+            <p class="text-neutral-700">
+              {feature.description}
+            </p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- MLS Integrations -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          MLS & Portal Integraties
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Automatische synchronisatie met alle belangrijke vastgoedportals en MLS systemen.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {mlsIntegrations.map((integration) => (
+          <Card variant="default" padding="lg" class="h-full text-center">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+              {integration.name}
+            </h3>
+            <p class="text-sm text-neutral-600 mb-4">
+              {integration.description}
+            </p>
+            
+            <ul class="space-y-1 text-xs text-neutral-600">
+              {integration.features.map((feature) => (
+                <li class="flex items-center justify-center gap-1">
+                  <span class="text-success">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Fields -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Uitgebreide Property Velden
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Alle informatie die je nodig hebt om properties professioneel te presenteren.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {propertyFields.map((category) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-4">
+              {category.category}
+            </h3>
+            <ul class="space-y-2">
+              {category.fields.map((field) => (
+                <li class="text-neutral-700 flex items-center gap-2">
+                  <span class="text-primary">•</span>
+                  {field}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Van Property tot Verkoop in 6 Stappen
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Gestroomlijnde workflow van het toevoegen van properties tot aan de verkoop.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {workflow.map((step, index) => (
+          <div class="relative">
+            <Card variant="default" padding="lg" class="h-full">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                  {step.step}
+                </div>
+                <div class="text-2xl">{step.icon}</div>
+              </div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+                {step.title}
+              </h3>
+              <p class="text-neutral-700">
+                {step.description}
+              </p>
+            </Card>
+            
+            {index < workflow.length - 1 && index % 3 !== 2 && (
+              <div class="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/30 transform -translate-y-1/2"></div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytics Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+            Property Analytics
+          </h2>
+          
+          <p class="text-lg text-neutral-700 mb-8">
+            Krijg inzicht in je property performance met uitgebreide analytics en rapportages. 
+            Zie welke properties het beste presteren en waar verbeteringen mogelijk zijn.
+          </p>
+          
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">Inzichten die Helpen</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  <span>Tijd op markt per property type</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  <span>Portal performance vergelijking</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  <span>Bezichtigingen en interesse tracking</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  <span>Prijsstrategie optimalisatie</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  <span>Markt trend analyse</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Property Metrics</h3>
+          
+          <div class="space-y-6">
+            {analytics.map((metric) => (
+              <div class="border-b border-neutral-200 pb-4 last:border-b-0">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-neutral-700 text-sm">{metric.metric}</span>
+                  <span class={`text-xs px-2 py-1 rounded ${metric.trend === 'up' ? 'bg-success/10 text-success' : 'bg-primary/10 text-primary'}`}>
+                    {metric.change}
+                  </span>
+                </div>
+                <div class="text-2xl font-bold text-neutral-900">{metric.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Integreert met je Volledige Workflow
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Property management werkt naadloos samen met alle andere Tesoro CRM features.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Smart Matching</h3>
+          <p class="text-neutral-700">
+            Nieuwe properties worden automatisch gematched met interessante klanten.
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Deal Pipeline</h3>
+          <p class="text-neutral-700">
+            Property interesse wordt automatisch als deal toegevoegd aan je pipeline.
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">E-mail Integratie</h3>
+          <p class="text-neutral-700">
+            Property updates en brochures worden automatisch naar klanten verstuurd.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('feature_pages.property_management.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('feature_pages.property_management.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
+          {t('feature_pages.property_management.cta.primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/features', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          Alle Features
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,617 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../types/knowledge-base';
+import KnowledgeBaseSectionRenderer from '../../components/knowledge-base/KnowledgeBaseSectionRenderer.astro';
+import { getAuthor } from '../../utils/authors';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('knowledge-base');
+
+  return articles.map(article => ({
+    params: { slug: article.data.meta.id },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const { slug } = Astro.params;
+const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
+
+// Get article data
+const articleData = article.data;
+const author = getAuthor(articleData.meta.authorId);
+
+// Localized content
+const title = articleData.hero.title[locale];
+const description = articleData.hero.description[locale];
+
+// Generate TOC from sections
+const tocItems = articleData.sections
+  .filter(section => section.title)
+  .map(section => ({
+    id: section.id,
+    title: section.title![locale] // We know title exists because we filtered
+  }));
+
+// Page metadata
+const pageTitle = `${title} - Tesoro CRM Knowledge Base`;
+const pageDescription = description;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <article class="kb-article">
+    <!-- Hero Section -->
+    <header class="kb-article__hero">
+      <div class="kb-article__container">
+        <nav class="kb-article__breadcrumb">
+          <a href={getLocalizedPath('/knowledge-base', locale)} class="kb-article__breadcrumb-link">
+            {locale === 'nl' ? 'Kennisbank' : locale === 'es' ? 'Base de Conocimientos' : 'Knowledge Base'}
+          </a>
+          <span class="kb-article__breadcrumb-separator">›</span>
+          <span class="kb-article__breadcrumb-current">{title}</span>
+        </nav>
+
+        <div class="kb-article__hero-content">
+          <div class="kb-article__meta">
+            <span class="kb-article__category">{articleData.meta.category}</span>
+            <span class="kb-article__difficulty kb-article__difficulty--{articleData.meta.difficulty}">
+              {articleData.meta.difficulty}
+            </span>
+            {articleData.meta.readingTime && (
+              <span class="kb-article__reading-time">
+                ⏱️ {articleData.meta.readingTime} {locale === 'nl' ? 'min' : 'min'}
+              </span>
+            )}
+          </div>
+
+          <h1 class="kb-article__title">
+            {articleData.hero.icon && <span class="kb-article__icon">{articleData.hero.icon}</span>}
+            {title}
+          </h1>
+
+          <p class="kb-article__description">{description}</p>
+
+          {author && (
+            <div class="kb-article__author">
+              <img
+                src={author.image}
+                alt={author.name}
+                class="kb-article__author-avatar"
+                width="40"
+                height="40"
+              />
+              <div class="kb-article__author-info">
+                <span class="kb-article__author-name">{author.name}</span>
+                <span class="kb-article__author-bio">{author.bio[locale]}</span>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="kb-article__container">
+      <div class="kb-article__content-wrapper">
+        <!-- Table of Contents - Desktop -->
+        {tocItems.length > 0 && (
+          <aside class="kb-article__toc">
+            <div class="kb-article__toc-sticky">
+              <h3 class="kb-article__toc-title">
+                {locale === 'nl' ? 'Inhoudsopgave' : locale === 'es' ? 'Tabla de Contenidos' : 'Table of Contents'}
+              </h3>
+              <nav class="kb-article__toc-nav">
+                <ul class="kb-article__toc-list">
+                  {tocItems.map(item => (
+                    <li class="kb-article__toc-item">
+                      <a href={`#${item.id}`} class="kb-article__toc-link">
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        )}
+
+        <!-- Article Content -->
+        <main class="kb-article__content">
+          {articleData.sections.map(section => (
+            <KnowledgeBaseSectionRenderer section={section} lang={locale} />
+          ))}
+
+          <!-- Related Articles -->
+          {articleData.relatedArticles && articleData.relatedArticles.length > 0 && (
+            <section class="kb-article__related">
+              <h2 class="kb-article__related-title">
+                {locale === 'nl' ? 'Gerelateerde Artikelen' : locale === 'es' ? 'Artículos Relacionados' : 'Related Articles'}
+              </h2>
+              <div class="kb-article__related-grid">
+                {articleData.relatedArticles.map(relatedId => {
+                  // In a real implementation, you'd fetch the related articles
+                  // For now, just show the IDs as placeholders
+                  return (
+                    <a href={getLocalizedPath(`/knowledge-base/${relatedId}`, locale)} class="kb-article__related-card">
+                      <h3>{relatedId}</h3>
+                    </a>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          <!-- FAQ Section -->
+          {articleData.faq && articleData.faq.length > 0 && (
+            <section class="kb-article__faq">
+              <h2 class="kb-article__faq-title">
+                {locale === 'nl' ? 'Veelgestelde Vragen' : locale === 'es' ? 'Preguntas Frecuentes' : 'Frequently Asked Questions'}
+              </h2>
+              <div class="kb-article__faq-list">
+                {articleData.faq.map(item => (
+                  <details class="kb-article__faq-item">
+                    <summary class="kb-article__faq-question">{item.question[locale]}</summary>
+                    <div class="kb-article__faq-answer" set:html={item.answer[locale].text} />
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <!-- Article Footer -->
+          <footer class="kb-article__footer">
+            <div class="kb-article__footer-content">
+              <p class="kb-article__footer-help">
+                {locale === 'nl' ? 'Vond je dit artikel nuttig?' : locale === 'es' ? '¿Te resultó útil este artículo?' : 'Did you find this article helpful?'}
+              </p>
+              <div class="kb-article__footer-actions">
+                <button class="kb-article__footer-btn kb-article__footer-btn--positive">
+                  👍 {locale === 'nl' ? 'Ja' : locale === 'es' ? 'Sí' : 'Yes'}
+                </button>
+                <button class="kb-article__footer-btn kb-article__footer-btn--negative">
+                  👎 {locale === 'nl' ? 'Nee' : locale === 'es' ? 'No' : 'No'}
+                </button>
+              </div>
+            </div>
+
+            <div class="kb-article__footer-navigation">
+              <a href={getLocalizedPath('/knowledge-base', locale)} class="kb-article__back-link">
+                ← {locale === 'nl' ? 'Terug naar Kennisbank' : locale === 'es' ? 'Volver a Base de Conocimientos' : 'Back to Knowledge Base'}
+              </a>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .kb-article {
+    min-height: 100vh;
+    background: #ffffff;
+  }
+
+  .kb-article__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Hero Section */
+  .kb-article__hero {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    color: white;
+    padding: 3rem 0 2rem;
+  }
+
+  .kb-article__breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .kb-article__breadcrumb-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+  }
+
+  .kb-article__breadcrumb-link:hover {
+    color: white;
+  }
+
+  .kb-article__breadcrumb-separator {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .kb-article__breadcrumb-current {
+    color: white;
+  }
+
+  .kb-article__hero-content {
+    max-width: 800px;
+  }
+
+  .kb-article__meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .kb-article__category {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .kb-article__difficulty {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .kb-article__difficulty--beginner {
+    background: rgba(209, 250, 229, 0.2);
+    color: #d1fae5;
+  }
+
+  .kb-article__difficulty--intermediate {
+    background: rgba(254, 243, 199, 0.2);
+    color: #fef3c7;
+  }
+
+  .kb-article__difficulty--advanced {
+    background: rgba(254, 226, 226, 0.2);
+    color: #fee2e2;
+  }
+
+  .kb-article__reading-time {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+  }
+
+  .kb-article__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .kb-article__icon {
+    font-size: 3rem;
+  }
+
+  .kb-article__description {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .kb-article__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  }
+
+  .kb-article__author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .kb-article__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kb-article__author-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .kb-article__author-bio {
+    font-size: 0.75rem;
+    opacity: 0.9;
+  }
+
+  /* Content Layout */
+  .kb-article__content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+
+  /* Table of Contents */
+  .kb-article__toc {
+    position: relative;
+  }
+
+  .kb-article__toc-sticky {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .kb-article__toc-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+  }
+
+  .kb-article__toc-nav {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .kb-article__toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .kb-article__toc-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .kb-article__toc-link {
+    display: block;
+    padding: 0.5rem 0;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .kb-article__toc-link:hover {
+    color: var(--accent-primary);
+    background: rgba(102, 126, 234, 0.1);
+  }
+
+  /* Article Content */
+  .kb-article__content {
+    max-width: none;
+  }
+
+  /* Related Articles */
+  .kb-article__related {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .kb-article__related-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+  }
+
+  .kb-article__related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .kb-article__related-card {
+    display: block;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+  }
+
+  .kb-article__related-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* FAQ Section */
+  .kb-article__faq {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .kb-article__faq-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+  }
+
+  .kb-article__faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kb-article__faq-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.2s;
+  }
+
+  .kb-article__faq-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .kb-article__faq-item[open] {
+    background: white;
+    border-color: var(--accent-primary);
+  }
+
+  .kb-article__faq-question {
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .kb-article__faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .kb-article__faq-question::before {
+    content: '▶';
+    font-size: 0.75rem;
+    color: var(--accent-primary);
+    transition: transform 0.2s;
+  }
+
+  .kb-article__faq-item[open] .kb-article__faq-question::before {
+    transform: rotate(90deg);
+  }
+
+  .kb-article__faq-answer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  /* Article Footer */
+  .kb-article__footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2e8f0;
+  }
+
+  .kb-article__footer-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .kb-article__footer-help {
+    font-size: 1.125rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+  }
+
+  .kb-article__footer-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .kb-article__footer-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .kb-article__footer-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+  }
+
+  .kb-article__footer-btn--positive:hover {
+    background: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+  }
+
+  .kb-article__footer-btn--negative:hover {
+    background: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+  }
+
+  .kb-article__footer-navigation {
+    text-align: center;
+  }
+
+  .kb-article__back-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .kb-article__back-link:hover {
+    color: #4f46e5;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .kb-article__content-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .kb-article__toc {
+      order: -1;
+    }
+
+    .kb-article__toc-sticky {
+      position: static;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .kb-article__hero {
+      padding: 2rem 0 1.5rem;
+    }
+
+    .kb-article__title {
+      font-size: 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .kb-article__icon {
+      font-size: 2rem;
+    }
+
+    .kb-article__description {
+      font-size: 1.125rem;
+    }
+
+    .kb-article__author {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
+    }
+
+    .kb-article__footer-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

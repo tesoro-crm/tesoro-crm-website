@@ -4,7 +4,7 @@ import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Input from '../components/ui/Input.astro';
 import Badge from '../components/ui/Badge.astro';
-import { getLocale, loadTranslations, t } from '../i18n/utils';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
 const locale: Language = getLocale(Astro.currentLocale, Astro.url);
@@ -129,7 +129,7 @@ const contactMethods = [
                 required
               />
               <label for="privacy" class="text-sm text-neutral-600">
-                Ik ga akkoord met het <a href="/privacy" class="text-primary hover:underline">privacybeleid</a> en geef toestemming voor contact.
+                Ik ga akkoord met het <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline">privacybeleid</a> en geef toestemming voor contact.
               </label>
             </div>
 

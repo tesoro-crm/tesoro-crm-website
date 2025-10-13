@@ -1,0 +1,543 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const reportingFeatures = [
+  {
+    title: 'Deal Analytics Dashboard',
+    description: 'Real-time overzicht van je sales pipeline, conversie rates en deal performance.',
+  },
+  {
+    title: 'Team Performance Tracking',
+    description: 'Vergelijk prestaties van teamleden en identificeer top performers en verbeterpunten.',
+  },
+  {
+    title: 'Revenue Forecasting',
+    description: 'Voorspel toekomstige omzet op basis van je huidige pipeline en historische data.',
+  },
+  {
+    title: 'Klant Engagement Analyse',
+    description: 'Track klantbetrokkenheid, response tijden en satisfaction scores.',
+  },
+];
+
+const benefits = [
+  {
+    metric: '43%',
+    description: 'betere sales forecasting',
+  },
+  {
+    metric: '2.5x',
+    description: 'snellere identificatie van knelpunten',
+  },
+  {
+    metric: '67%',
+    description: 'van makelaars verhoogt omzet',
+  },
+];
+
+const dashboardMetrics = [
+  {
+    category: 'Sales Performance',
+    metrics: [
+      { name: 'Total Revenue', value: '€156.500', change: '+23% vs vorige maand', trend: 'up' },
+      { name: 'Deals Closed', value: '7', change: '+40% vs vorige maand', trend: 'up' },
+      { name: 'Average Deal Size', value: '€22.357', change: '+12% vs vorige maand', trend: 'up' },
+      { name: 'Sales Cycle Length', value: '34 dagen', change: '-8 dagen vs gemiddeld', trend: 'up' },
+    ]
+  },
+  {
+    category: 'Pipeline Health',
+    metrics: [
+      { name: 'Active Deals', value: '23', change: '+5 nieuwe deze week', trend: 'up' },
+      { name: 'Conversion Rate', value: '31%', change: '+4% vs vorig kwartaal', trend: 'up' },
+      { name: 'Lead Response Time', value: '1.2 uur', change: '-45 min vs vorige maand', trend: 'up' },
+      { name: 'Deal Velocity', value: '€4.2K/dag', change: '+15% vs target', trend: 'up' },
+    ]
+  }
+];
+
+const reportTypes = [
+  {
+    name: 'Weekly Sales Report',
+    description: 'Overzicht van deals, activiteiten en performance van de afgelopen week',
+    frequency: 'Elke maandag automatisch',
+  },
+  {
+    name: 'Monthly Business Review',
+    description: 'Uitgebreide analyse van sales performance, trends en forecasting',
+    frequency: 'Eerste werkdag van de maand',
+  },
+  {
+    name: 'Quarterly Strategy Report',
+    description: 'Strategische analyse met markt trends, competitive insights en aanbevelingen',
+    frequency: 'Per kwartaal',
+  },
+  {
+    name: 'Custom Analytics Report',
+    description: 'Maatwerk rapporten op basis van jouw specifieke KPI\'s en doelstellingen',
+    frequency: 'Op aanvraag',
+  },
+];
+
+const kpiCategories = [
+  {
+    category: 'Sales KPIs',
+    kpis: [
+      'Revenue per periode',
+      'Deals gesloten',
+      'Gemiddelde deal waarde',
+      'Sales cycle lengte',
+      'Win rate percentage',
+      'Quota attainment'
+    ]
+  },
+  {
+    category: 'Marketing KPIs',
+    kpis: [
+      'Lead generation',
+      'Cost per lead',
+      'Lead to customer rate',
+      'Marketing ROI',
+      'Channel performance',
+      'Campaign effectiveness'
+    ]
+  },
+  {
+    category: 'Customer KPIs',
+    kpis: [
+      'Customer satisfaction',
+      'Response time',
+      'Engagement rate',
+      'Referral rate',
+      'Repeat business',
+      'Customer lifetime value'
+    ]
+  },
+  {
+    category: 'Property KPIs',
+    kpis: [
+      'Time on market',
+      'Price per m²',
+      'Listing performance',
+      'Photo engagement',
+      'Viewing conversion',
+      'Portal effectiveness'
+    ]
+  }
+];
+
+const insights = [
+  {
+    title: 'Properties €300K-€400K verkopen 40% sneller',
+    description: 'Data toont aan dat properties in dit prijssegment gemiddeld 40% sneller verkopen',
+    action: 'Focus meer marketing budget op dit segment',
+    category: 'Property Insights'
+  },
+  {
+    title: 'E-mail response rate hoger op dinsdag/woensdag',
+    description: 'Klanten reageren 67% vaker op e-mails verstuurd op dinsdag en woensdag',
+    action: 'Plan belangrijke communicatie op deze dagen',
+    category: 'Communication'
+  },
+  {
+    title: 'Klanten met portaal toegang 3x meer betrokken',
+    description: 'Klanten met toegang tot het portaal tonen significant meer betrokkenheid',
+    action: 'Activeer portaal voor alle nieuwe klanten',
+    category: 'Customer Engagement'
+  },
+  {
+    title: 'Bezichtigingen na 17:00 leiden tot 23% meer deals',
+    description: 'Bezichtigingen na kantooruren hebben hogere conversie naar deal',
+    action: 'Bied meer avond bezichtigingen aan',
+    category: 'Scheduling'
+  }
+];
+
+const integrationBenefits = [
+  {
+    feature: 'Real-time Data Sync',
+    description: 'Alle data wordt real-time geüpdatet vanuit je CRM activiteiten',
+  },
+  {
+    feature: 'Automated Reports',
+    description: 'Rapporten worden automatisch gegenereerd en naar je e-mail verstuurd',
+  },
+  {
+    feature: 'Mobile Dashboard',
+    description: 'Bekijk je belangrijkste metrics onderweg via mobiele app',
+  },
+  {
+    feature: 'Team Collaboration',
+    description: 'Deel rapporten en insights eenvoudig met je team en management',
+  }
+];
+---
+
+<Layout 
+  title={t('feature_pages.reporting_analytics.meta_title', locale)}
+  description="Real-time sales analytics, team performance tracking en revenue forecasting. Automated reporting en AI-powered insights voor vastgoedprofessionals."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <Badge variant="primary" size="md" class="mb-6">
+            {t('feature_pages.reporting_analytics.hero.badge', locale)}
+          </Badge>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+            {t('feature_pages.reporting_analytics.hero.title', locale)}
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-neutral-700 mb-8">
+            {t('feature_pages.reporting_analytics.hero.description', locale)}
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <Button variant="primary" size="lg" href={getLocalizedPath('/signup', locale)}>
+              {t('feature_pages.reporting_analytics.cta.primary', locale)}
+            </Button>
+            <Button variant="outline" size="lg" href={getLocalizedPath('/demo', locale)}>
+              {t('feature_pages.reporting_analytics.cta.secondary', locale)}
+            </Button>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            {benefits.map((benefit) => (
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary mb-1">{benefit.metric}</div>
+                <div class="text-sm text-neutral-600">{benefit.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="bg-white rounded-2xl shadow-xl p-6">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="font-semibold text-neutral-900">Sales Dashboard</h3>
+              <Badge variant="success" size="sm">Live</Badge>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="text-center p-4 bg-primary/5 rounded-lg">
+                <div class="text-2xl font-bold text-primary">€156K</div>
+                <div class="text-xs text-neutral-600">Revenue deze maand</div>
+                <div class="text-xs text-success">+23%</div>
+              </div>
+              <div class="text-center p-4 bg-secondary/5 rounded-lg">
+                <div class="text-2xl font-bold text-secondary">31%</div>
+                <div class="text-xs text-neutral-600">Conversie rate</div>
+                <div class="text-xs text-success">+4%</div>
+              </div>
+            </div>
+            
+            <div class="space-y-3">
+              <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+                <span class="text-sm font-medium">Active Deals</span>
+                <span class="text-lg font-bold text-primary">23</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+                <span class="text-sm font-medium">Avg Deal Size</span>
+                <span class="text-lg font-bold text-secondary">€22K</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-neutral-50 rounded-lg">
+                <span class="text-sm font-medium">Sales Cycle</span>
+                <span class="text-lg font-bold text-success">34 dagen</span>
+              </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="font-semibold text-neutral-900">AI Insight</span>
+              </div>
+              <p class="text-sm text-neutral-700">
+                Je performance is 15% boven target. Focus op properties €300K-€400K voor optimale resultaten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reporting Features -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Krachtige Analytics Features
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Alles wat je nodig hebt om je sales performance te meten, analyseren en optimaliseren.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {reportingFeatures.map((feature) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {feature.title}
+            </h3>
+            <p class="text-neutral-700">
+              {feature.description}
+            </p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Metrics -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Real-time Dashboard Metrics
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Alle belangrijke KPI's in één overzichtelijk dashboard.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {dashboardMetrics.map((category) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-6">
+              {category.category}
+            </h3>
+            <div class="space-y-4">
+              {category.metrics.map((metric) => (
+                <div class="flex justify-between items-start border-b border-neutral-100 pb-3 last:border-b-0">
+                  <div class="flex-1">
+                    <div class="font-medium text-neutral-900">{metric.name}</div>
+                    <div class={`text-xs ${metric.trend === 'up' ? 'text-success' : 'text-neutral-600'}`}>
+                      {metric.change}
+                    </div>
+                  </div>
+                  <div class="text-xl font-bold text-primary">{metric.value}</div>
+                </div>
+              ))}
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Report Types -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Automated Reporting
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Ontvang automatisch gegenereerde rapporten die je helpen bij strategische beslissingen.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {reportTypes.map((report) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {report.name}
+            </h3>
+            <p class="text-neutral-700 mb-4">
+              {report.description}
+            </p>
+            <Badge variant="outline" size="sm">
+              {report.frequency}
+            </Badge>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- KPI Categories -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Alle Belangrijke KPI's
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Track de metrics die er echt toe doen voor je vastgoedbusiness.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {kpiCategories.map((category) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+              {category.category}
+            </h3>
+            <ul class="space-y-2">
+              {category.kpis.map((kpi) => (
+                <li class="text-sm text-neutral-700 flex items-center gap-2">
+                  <span class="text-primary">•</span>
+                  {kpi}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Insights -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          AI-Powered Insights
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Ontdek automatisch patronen en opportunities in je data met AI-gedreven inzichten.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {insights.map((insight) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <div class="mb-4">
+              <Badge variant="outline" size="xs" class="mb-2">
+                {insight.category}
+              </Badge>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {insight.title}
+              </h3>
+            </div>
+            <p class="text-neutral-700 mb-4">
+              {insight.description}
+            </p>
+            <div class="p-3 bg-primary/5 rounded-lg">
+              <div class="text-sm font-medium text-neutral-900 mb-1">Aanbeveling</div>
+              <div class="text-sm text-neutral-700">{insight.action}</div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Benefits -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Naadloze Integratie
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Analytics werkt automatisch met alle data uit je Tesoro CRM.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {integrationBenefits.map((benefit) => (
+          <Card variant="default" padding="lg" class="h-full text-center">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+              {benefit.feature}
+            </h3>
+            <p class="text-neutral-700 text-sm">
+              {benefit.description}
+            </p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Story -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+            Success Story
+          </h2>
+          
+          <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+            <blockquote class="text-lg font-medium text-neutral-900 mb-4">
+              "Met Tesoro's analytics dashboard zag ik direct waar ik tijd verloor. 
+              In 3 maanden verhoogde ik mijn conversie met 40% door data-gedreven beslissingen."
+            </blockquote>
+            <div class="text-sm text-neutral-600">
+              - Maria Rodriguez, Makelaar uit Valencia
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mt-6">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary">+40%</div>
+                <div class="text-sm text-neutral-600">Conversie rate</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-secondary">€45K</div>
+                <div class="text-sm text-neutral-600">Extra omzet/maand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Wat Analytics je Oplevert</h3>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-primary pl-4">
+              <div class="text-2xl font-bold text-primary">43%</div>
+              <div class="text-neutral-700">betere revenue forecasting accuracy</div>
+            </div>
+            
+            <div class="border-l-4 border-secondary pl-4">
+              <div class="text-2xl font-bold text-secondary">2.5 uur</div>
+              <div class="text-neutral-700">per week bespaard op rapportages</div>
+            </div>
+            
+            <div class="border-l-4 border-success pl-4">
+              <div class="text-2xl font-bold text-success">67%</div>
+              <div class="text-neutral-700">van makelaars verhoogt omzet</div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <Button variant="primary" href={getLocalizedPath('/signup', locale)} class="w-full">
+              Begin met Analytics
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('feature_pages.reporting_analytics.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        Begin vandaag nog met advanced analytics en reporting. 
+        Verhoog je omzet met inzichten die echt werken.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
+          {t('feature_pages.reporting_analytics.cta.primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/features', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('feature_pages.reporting_analytics.cta.secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

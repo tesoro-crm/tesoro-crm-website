@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "id": "add-contact",
+    "version": "1.0.0",
+    "publishDate": "2024-10-11",
+    "updatedAt": "2024-10-11T17:00:00Z",
+    "authorId": "maria-perez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "basics", "getting-started", "crm"],
+    "featured": true,
+    "readingTime": 3,
+    "videoIncluded": true,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
+    "keywords": ["contact toevoegen", "CRM contact", "lead toevoegen", "Tesoro CRM", "contactbeheer"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "VEROUDERD: Zie 'Stop met Verliezen van €15.000 Deals'",
+      "en": "DEPRECATED: See 'Stop Losing €15,000 Deals' Article",
+      "es": "OBSOLETO: Ver Artículo 'Deja de Perder €15,000 Deals'"
+    },
+    "description": {
+      "nl": "⚠️ Dit artikel is vervangen door enterprise-focused content. Klik op 'Stop Losing Deals Through Contact Management' voor business-impact focused training.",
+      "en": "⚠️ This article has been replaced with enterprise-focused content. Click 'Stop Losing Deals Through Contact Management' for business-impact focused training.",
+      "es": "⚠️ Este artículo ha sido reemplazado con contenido enfocado en empresas. Haz clic en 'Deja de Perder Deals por Gestión de Contactos' para entrenamiento enfocado en impacto empresarial."
+    },
+    "icon": "⚠️"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Contacten zijn de kern van je CRM. Of het nu gaat om potentiële kopers, verkopers, of samenwerkingspartners - het correct toevoegen en beheren van contacten is essentieel voor je succes.</p><p>In deze gids leer je stap voor stap hoe je een nieuw contact toevoegt aan Tesoro CRM.</p>"
+        },
+        "en": {
+          "text": "<p>Contacts are the core of your CRM. Whether it's potential buyers, sellers, or partners - correctly adding and managing contacts is essential for your success.</p><p>In this guide, you'll learn step by step how to add a new contact to Tesoro CRM.</p>"
+        },
+        "es": {
+          "text": "<p>Los contactos son el núcleo de tu CRM. Ya sean compradores potenciales, vendedores o socios - agregar y gestionar contactos correctamente es esencial para tu éxito.</p><p>En esta guía, aprenderás paso a paso cómo agregar un nuevo contacto a Tesoro CRM.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "tutorial-video",
+      "title": {
+        "nl": "Video Tutorial",
+        "en": "Video Tutorial",
+        "es": "Tutorial en Video"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "Bekijk deze 2-minuten video voor een snelle walkthrough",
+        "en": "Watch this 2-minute video for a quick walkthrough",
+        "es": "Mira este video de 2 minutos para un recorrido rápido"
+      },
+      "duration": "2:15"
+    },
+
+    {
+      "type": "steps",
+      "id": "add-contact-steps",
+      "title": {
+        "nl": "Stappen om een Contact Toe te Voegen",
+        "en": "Steps to Add a Contact",
+        "es": "Pasos para Agregar un Contacto"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar Contacten",
+            "en": "Navigate to Contacts",
+            "es": "Navega a Contactos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik in het hoofdmenu op <strong>Contacten</strong>. Je ziet nu een overzicht van al je bestaande contacten.</p>"
+            },
+            "en": {
+              "text": "<p>Click on <strong>Contacts</strong> in the main menu. You'll now see an overview of all your existing contacts.</p>"
+            },
+            "es": {
+              "text": "<p>Haz clic en <strong>Contactos</strong> en el menú principal. Ahora verás una descripción general de todos tus contactos existentes.</p>"
+            }
+          },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+            "alt": {
+              "nl": "Contacten menu in Tesoro CRM",
+              "en": "Contacts menu in Tesoro CRM",
+              "es": "Menú de contactos en Tesoro CRM"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Klik op 'Nieuw Contact'",
+            "en": "Click 'New Contact'",
+            "es": "Haz clic en 'Nuevo Contacto'"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Rechtsboven zie je een blauwe knop met <strong>+ Nieuw Contact</strong>. Klik hierop om het formulier te openen.</p>"
+            },
+            "en": {
+              "text": "<p>In the top right, you'll see a blue button with <strong>+ New Contact</strong>. Click it to open the form.</p>"
+            },
+            "es": {
+              "text": "<p>En la parte superior derecha, verás un botón azul con <strong>+ Nuevo Contacto</strong>. Haz clic en él para abrir el formulario.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Vul de Basisgegevens In",
+            "en": "Fill in Basic Information",
+            "es": "Completa la Información Básica"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Vul minimaal de volgende velden in:</p><ul><li><strong>Voornaam</strong> (verplicht)</li><li><strong>Achternaam</strong> (verplicht)</li><li><strong>Email</strong> (verplicht)</li><li><strong>Telefoonnummer</strong> (optioneel maar aanbevolen)</li><li><strong>Type</strong>: Koper, Verkoper, of Partner</li></ul>"
+            },
+            "en": {
+              "text": "<p>Fill in at least the following fields:</p><ul><li><strong>First Name</strong> (required)</li><li><strong>Last Name</strong> (required)</li><li><strong>Email</strong> (required)</li><li><strong>Phone Number</strong> (optional but recommended)</li><li><strong>Type</strong>: Buyer, Seller, or Partner</li></ul>"
+            },
+            "es": {
+              "text": "<p>Completa al menos los siguientes campos:</p><ul><li><strong>Nombre</strong> (obligatorio)</li><li><strong>Apellido</strong> (obligatorio)</li><li><strong>Correo electrónico</strong> (obligatorio)</li><li><strong>Número de teléfono</strong> (opcional pero recomendado)</li><li><strong>Tipo</strong>: Comprador, Vendedor o Socio</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "tip-duplicate-check",
+      "variant": "tip",
+      "title": {
+        "nl": "💡 Tip: Duplicaat Controle",
+        "en": "💡 Tip: Duplicate Check",
+        "es": "💡 Consejo: Verificación de Duplicados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM controleert automatisch op duplicaten op basis van email en telefoonnummer. Als er een match wordt gevonden, krijg je een melding met de optie om het bestaande contact te bekijken of toch een nieuw contact aan te maken.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM automatically checks for duplicates based on email and phone number. If a match is found, you'll get a notification with the option to view the existing contact or create a new one anyway.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM verifica automáticamente duplicados basándose en el correo electrónico y el número de teléfono. Si se encuentra una coincidencia, recibirás una notificación con la opción de ver el contacto existente o crear uno nuevo de todos modos.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "stop-losing-deals-contact-management",
+    "why-enterprise-choose-tesoro", 
+    "roi-calculator-tesoro-vs-competition"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik meerdere contacten tegelijk toevoegen?",
+        "en": "Can I add multiple contacts at once?",
+        "es": "¿Puedo agregar múltiples contactos a la vez?"
+      },
+      "answer": {
+        "nl": "Ja! Gebruik de import functie om contacten in bulk toe te voegen via CSV of Excel. Zie ons artikel 'Contacten Importeren' voor meer informatie.",
+        "en": "Yes! Use the import function to add contacts in bulk via CSV or Excel. See our article 'Importing Contacts' for more information.",
+        "es": "¡Sí! Usa la función de importación para agregar contactos en masa a través de CSV o Excel. Consulta nuestro artículo 'Importar Contactos' para más información."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik een verkeerd emailadres invoer?",
+        "en": "What happens if I enter a wrong email address?",
+        "es": "¿Qué sucede si ingreso una dirección de correo electrónico incorrecta?"
+      },
+      "answer": {
+        "nl": "Je kunt het emailadres altijd aanpassen door het contact te openen en op 'Bewerken' te klikken. Let op: emails die al verzonden zijn kunnen niet worden teruggehaald.",
+        "en": "You can always edit the email address by opening the contact and clicking 'Edit'. Note: emails that have already been sent cannot be recalled.",
+        "es": "Siempre puedes editar la dirección de correo electrónico abriendo el contacto y haciendo clic en 'Editar'. Nota: los correos electrónicos que ya se han enviado no se pueden recuperar."
+      }
+    }
+  ]
+}

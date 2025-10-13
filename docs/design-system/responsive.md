@@ -2,7 +2,7 @@
 
 ## Breakpoints
 
-Tesoro CRM gebruikt een mobile-first responsive strategie met de volgende breakpoints:
+Tesoro CRM uses a mobile-first responsive strategy with the following breakpoints:
 
 | Name | Width | Tailwind | Usage |
 |------|-------|----------|-------|

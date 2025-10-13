@@ -2,7 +2,7 @@
 import Modal from '../ui/Modal.astro';
 import Input from '../ui/Input.astro';
 import Button from '../ui/Button.astro';
-import { t } from '../../i18n/utils';
+import { t, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
 
 export interface Props {
@@ -145,7 +145,7 @@ const { locale } = Astro.props;
           required
         />
         <label for="privacy" class="text-sm text-neutral-600">
-          {t('home.modals.demo.privacy_text', locale)} <a href="/privacy" class="text-primary hover:underline font-medium">{t('home.modals.demo.privacy_link', locale)}</a> {t('home.modals.demo.privacy_text_end', locale)}
+          {t('home.modals.demo.privacy_text', locale)} <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline font-medium">{t('home.modals.demo.privacy_link', locale)}</a> {t('home.modals.demo.privacy_text_end', locale)}
         </label>
       </div>
 

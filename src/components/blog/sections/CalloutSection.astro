@@ -15,32 +15,49 @@ const title = section.title?.[lang];
 const items = section.items?.map((item: any) => item[lang]) || section.highlights?.map((h: any) => h[lang]);
 const variant = section.variant || 'info';
 
-// Tailwind classes per variant
+// Tesoro brand color callout variants
 const variantStyles = {
   info: {
-    box: 'bg-blue-50 border-blue-500',
-    text: 'text-blue-900',
+    box: 'bg-blue-50',
+    text: 'text-blue-900', 
+    border: 'var(--tesoro-blue-light)',
     icon: '💡'
   },
   success: {
-    box: 'bg-green-50 border-green-500',
-    text: 'text-green-900',
+    box: 'bg-emerald-50',
+    text: 'text-emerald-900',
+    border: 'var(--accent-success)',
     icon: '✅'
   },
   warning: {
-    box: 'bg-yellow-50 border-yellow-500',
+    box: 'bg-yellow-50',
     text: 'text-yellow-900',
+    border: 'var(--tesoro-yellow)',
     icon: '⚠️'
   },
   danger: {
-    box: 'bg-red-50 border-red-500',
+    box: 'bg-red-50',
     text: 'text-red-900',
+    border: 'var(--tesoro-red)',
     icon: '🚨'
   },
   tip: {
-    box: 'bg-purple-50 border-purple-500',
-    text: 'text-purple-900',
+    box: 'bg-orange-50',
+    text: 'text-orange-900',
+    border: 'var(--tesoro-orange)',
     icon: '💡'
+  },
+  insight: {
+    box: 'bg-purple-50',
+    text: 'text-purple-900',
+    border: 'var(--tesoro-purple)',
+    icon: '🎯'
+  },
+  update: {
+    box: 'bg-pink-50',
+    text: 'text-pink-900',
+    border: 'var(--tesoro-pink)',
+    icon: '🆕'
   }
 };
 
@@ -55,7 +72,10 @@ const styles = variantStyles[variant as keyof typeof variantStyles];
   )}
   
   {items && items.length > 0 && (
-    <div class={`p-6 md:p-8 rounded-lg border-l-4 ${styles.box}`}>
+    <div 
+      class={`p-6 md:p-8 rounded-lg border-l-4 ${styles.box}`}
+      style={`border-left-color: ${styles.border};`}
+    >
       <ul class="space-y-4">
         {items.map((item: string) => (
           <li class={`relative pl-8 font-medium text-[1.0625rem] leading-relaxed ${styles.text}`}>

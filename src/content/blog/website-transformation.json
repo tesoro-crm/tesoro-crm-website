@@ -5,7 +5,15 @@
     "publishDate": "2024-01-15",
     "createdAt": "2024-01-15T10:00:00Z",
     "updatedAt": "2024-10-11T14:00:00Z",
-    "authorId": "maria-perez",
+    "author": {
+      "name": "Maria Pérez",
+      "image": "/images/authors/maria-perez.jpg",
+      "bio": {
+        "nl": "Content Strategist bij Tesoro CRM met een passie voor vastgoedmarketing en digitale transformatie.",
+        "en": "Content Strategist at Tesoro CRM with a passion for real estate marketing and digital transformation.",
+        "es": "Estratega de Contenido en Tesoro CRM con pasión por el marketing inmobiliario y la transformación digital."
+      }
+    },
     "category": "case-study",
     "tags": ["wordpress", "crm", "real-estate", "website", "transformation", "javea", "costa-blanca"],
     "featured": true,
@@ -13,13 +21,15 @@
     "readingTime": 12,
     "aiGenerated": false
   },
-  
+
   "seo": {
+    "canonicalURL": "https://tesorocrm.com/blog/website-transformation",
     "socialImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop",
     "keywords": ["makelaar website Javea", "CRM integratie", "WordPress transformatie", "vastgoed website Costa Blanca", "luxury villa website"]
   },
 
   "hero": {
+    "publishDate": "2024-01-15",
     "title": {
       "nl": "Van Offline naar Online Succes: Een Makelaar Transformatie in Javea",
       "en": "From Offline to Online Success: A Real Estate Agent Transformation in Javea",
@@ -28,7 +38,7 @@
     "description": {
       "nl": "Hoe een vastgoedmakelaar in Javea haar verouderde WordPress site transformeerde naar een moderne website met slimme filters en automatische XML imports - en daarmee nieuwe samenwerkingen én klanten voor Tesoro genereerde.",
       "en": "How a real estate agent in Javea transformed her outdated WordPress site into a modern website with smart filters and automatic XML imports - generating new partnerships and clients for Tesoro.",
-      "es": "Cómo una agente inmobiliaria en Jávea transformó su sitio WordPress obsoleto en un sitio web moderno con filtros inteligentes e importaciones XML automáticas, generando nuevas asociaciones y clientes para Tesoro."
+      "es": "Cómo una agente inmobiliaria in Jávea transformó su sitio WordPress obsoleto en un sitio web moderno con filtros inteligentes e importaciones XML automáticas, generando nuevas asociaciones y clientes para Tesoro."
     },
     "image": {
       "src": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=600&fit=crop",

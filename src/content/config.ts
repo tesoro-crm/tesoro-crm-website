@@ -156,6 +156,50 @@ const blog = defineCollection({
   }),
 });
 
+// Knowledge Base collection schema
+const knowledgeBase = defineCollection({
+  type: 'data', // For JSON files
+  schema: z.object({
+    meta: z.object({
+      id: z.string(),
+      version: z.string(),
+      publishDate: z.string(),
+      updatedAt: z.string(),
+      authorId: z.string(),
+      category: z.enum([
+        'getting-started',
+        'contacts',
+        'properties',
+        'communication',
+        'integrations',
+        'reports',
+        'settings',
+        'troubleshooting',
+        'best-practices',
+      ]),
+      difficulty: z.enum(['beginner', 'intermediate', 'advanced']),
+      tags: z.array(z.string()),
+      featured: z.boolean(),
+      readingTime: z.number(),
+      videoIncluded: z.boolean(),
+      aiGenerated: z.boolean(),
+    }),
+    seo: z.object({
+      socialImage: z.string().optional(),
+      keywords: z.array(z.string()),
+    }),
+    hero: z.object({
+      title: localizedTextSchema,
+      description: localizedTextSchema,
+      icon: z.string().optional(), // emoji or icon name
+    }),
+    sections: z.array(sectionSchema),
+    relatedArticles: z.array(z.string()).optional(),
+    faq: z.array(faqSchema).optional(),
+  }),
+});
+
 export const collections = {
   blog,
+  'knowledge-base': knowledgeBase,
 };

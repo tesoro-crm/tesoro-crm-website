@@ -20,9 +20,9 @@ const config: Config = {
           light: '#FF8FB3',
         },
         accent: {
-          DEFAULT: '#FF9F43', // Orange (CTA buttons)
-          dark: '#E58A2E',
-          light: '#FFB366',
+          DEFAULT: '#F59E0B', // Amber (matches --accent-primary)
+          dark: '#F97316', // Orange (matches --accent-secondary)  
+          light: '#FBD38D',
         },
         neutral: {
           50: '#F9FAFB',
@@ -37,7 +37,7 @@ const config: Config = {
           900: '#111827',
         },
         success: '#10B981',
-        warning: '#F59E0B',
+        warning: '#FBBF24', // Different amber shade to avoid conflict
         error: '#EF4444',
         info: '#3B82F6',
       },

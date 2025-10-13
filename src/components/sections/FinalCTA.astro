@@ -1,6 +1,6 @@
 ---
 import Button from '../ui/Button.astro';
-import { t } from '../../i18n/utils';
+import { t, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
 
 export interface Props {
@@ -22,7 +22,7 @@ const { locale } = Astro.props;
       <Button variant="secondary" size="lg" data-modal-target="signup-modal">
         {t('home.final_cta.cta_primary', locale)}
       </Button>
-      <Button variant="ghost" size="lg" href="/pricing" class="border-2 border-white hover:bg-white hover:text-primary">
+      <Button variant="ghost" size="lg" href={getLocalizedPath('/pricing', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
         {t('home.final_cta.cta_secondary', locale)}
       </Button>
     </div>

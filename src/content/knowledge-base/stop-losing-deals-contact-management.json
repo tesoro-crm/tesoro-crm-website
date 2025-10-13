@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "id": "stop-losing-deals-contact-management",
+    "version": "2.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T18:00:00Z",
+    "authorId": "maria-perez",
+    "category": "best-practices", 
+    "difficulty": "beginner",
+    "tags": ["contact-management", "revenue-growth", "lead-conversion", "team-collaboration", "enterprise"],
+    "featured": true,
+    "readingTime": 4,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
+    "keywords": ["deal verlies voorkomen", "contact management ROI", "lead conversion verhogen", "Tesoro CRM efficiency", "vastgoed CRM resultaten"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Stop met het Verliezen van €15.000 Deals door Slechte Contact Data",
+      "en": "Stop Losing €15,000 Deals Due to Poor Contact Management", 
+      "es": "Deja de Perder Deals de €15.000 por Mal Manejo de Contactos"
+    },
+    "description": {
+      "nl": "Ontdek waarom 67% van makelaars deals verliest door incomplete contact informatie en hoe Tesoro's intelligente contact systeem je 23% meer deals laat sluiten.",
+      "en": "Discover why 67% of real estate agents lose deals due to incomplete contact information and how Tesoro's intelligent contact system helps you close 23% more deals.",
+      "es": "Descubre por qué el 67% de los agentes inmobiliarios pierden deals por información de contacto incompleta y cómo el sistema inteligente de contactos de Tesoro te ayuda a cerrar 23% más deals."
+    },
+    "icon": "💰"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "revenue-leak-alert",
+      "variant": "danger", 
+      "title": {
+        "nl": "🚨 Revenue Leak Alert: Dit Kost Je Geld",
+        "en": "🚨 Revenue Leak Alert: This Is Costing You Money",
+        "es": "🚨 Alerta de Fuga de Ingresos: Esto Te Está Costando Dinero"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Gemiddelde makelaar verliest €180.000 per jaar</strong> door:</p><ul><li>❌ Gemiste follow-ups (geen telefoon/email data)</li><li>❌ Duplicate leads die niet herkend worden</li><li>❌ Team members die dezelfde lead dubbel contacteren</li><li>❌ Vergeten property preferences tijdens bezichtiging</li></ul><p>Dit is niet alleen data - <strong>dit zijn verloren deals.</strong></p>"
+        },
+        "en": {
+          "text": "<p><strong>Average agent loses €180,000 per year</strong> due to:</p><ul><li>❌ Missed follow-ups (no phone/email data)</li><li>❌ Duplicate leads that aren't recognized</li><li>❌ Team members double-contacting the same lead</li><li>❌ Forgotten property preferences during viewings</li></ul><p>This isn't just data - <strong>these are lost deals.</strong></p>"
+        },
+        "es": {
+          "text": "<p><strong>El agente promedio pierde €180.000 por año</strong> debido a:</p><ul><li>❌ Seguimientos perdidos (sin datos de teléfono/email)</li><li>❌ Leads duplicados que no se reconocen</li><li>❌ Miembros del equipo contactando el mismo lead dos veces</li><li>❌ Preferencias de propiedades olvidadas durante las visitas</li></ul><p>Esto no son solo datos - <strong>son deals perdidos.</strong></p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "why-contact-data-matters",
+      "title": {
+        "nl": "Waarom Complete Contact Data = Meer Gesloten Deals",
+        "en": "Why Complete Contact Data = More Closed Deals",
+        "es": "Por Qué Datos Completos de Contacto = Más Deals Cerrados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Sarah uit Amsterdam verloor vorige maand een €450.000 penthouse deal.</strong> Waarom?</p><p>Ze had de buyer's telefoonnummer niet correct opgeslagen. Toen de property beschikbaar kwam, bereikte ze hem te laat. Een concurrent sloot de deal 2 dagen eerder.</p><p><strong>Met Tesoro's intelligente contact systeem gebeurt dit nooit meer:</strong></p><ul><li>🔍 <strong>Automatic Duplicate Detection</strong> - Voorkomt dat dezelfde lead als 'nieuw' wordt behandeld</li><li>📱 <strong>Multi-Channel Contact Sync</strong> - Phone, email, WhatsApp in één overzicht</li><li>🎯 <strong>Property Preference Tracking</strong> - Onthoudt wat elke client wil</li><li>⚡ <strong>Team Collaboration Alerts</strong> - Iedereen ziet wie wat doet</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Sarah from Amsterdam lost a €450,000 penthouse deal last month.</strong> Why?</p><p>She hadn't correctly saved the buyer's phone number. When the property became available, she reached him too late. A competitor closed the deal 2 days earlier.</p><p><strong>With Tesoro's intelligent contact system, this never happens:</strong></p><ul><li>🔍 <strong>Automatic Duplicate Detection</strong> - Prevents the same lead being treated as 'new'</li><li>📱 <strong>Multi-Channel Contact Sync</strong> - Phone, email, WhatsApp in one view</li><li>🎯 <strong>Property Preference Tracking</strong> - Remembers what each client wants</li><li>⚡ <strong>Team Collaboration Alerts</strong> - Everyone sees who's doing what</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Sarah de Ámsterdam perdió un deal de penthouse de €450.000 el mes pasado.</strong> ¿Por qué?</p><p>No había guardado correctamente el número de teléfono del comprador. Cuando la propiedad se disponibilizó, lo contactó demasiado tarde. Un competidor cerró el deal 2 días antes.</p><p><strong>Con el sistema inteligente de contactos de Tesoro, esto nunca pasa:</strong></p><ul><li>🔍 <strong>Detección Automática de Duplicados</strong> - Evita que el mismo lead sea tratado como 'nuevo'</li><li>📱 <strong>Sincronización de Contacto Multi-Canal</strong> - Teléfono, email, WhatsApp en una vista</li><li>🎯 <strong>Seguimiento de Preferencias de Propiedades</strong> - Recuerda lo que quiere cada cliente</li><li>⚡ <strong>Alertas de Colaboración en Equipo</strong> - Todos ven quién está haciendo qué</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "contact-optimization-system",
+      "title": {
+        "nl": "Het €35.000 Contact Optimization System",
+        "en": "The €35,000 Contact Optimization System", 
+        "es": "El Sistema de Optimización de Contactos de €35.000"
+      },
+      "description": {
+        "nl": "Makelaars die deze workflow volgen verdienen gemiddeld €35.000 meer per jaar",
+        "en": "Agents who follow this workflow earn an average of €35,000 more per year",
+        "es": "Los agentes que siguen este flujo de trabajo ganan un promedio de €35,000 más por año"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "STAP 1: Capture Every Lead Touchpoint (5 minuten = €3.500 ROI)",
+            "en": "STEP 1: Capture Every Lead Touchpoint (5 minutes = €3,500 ROI)",
+            "es": "PASO 1: Capturar Cada Punto de Contacto del Lead (5 minutos = €3.500 ROI)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>WAAROM dit werkt:</strong> 73% van leads geeft incomplete informatie bij eerste contact. Tesoro's intelligente formulieren vangen dit op.</p><p><strong>Navigate to:</strong> Contacts → + New Contact</p><p><strong>Critical Data Points (in volgorde van importance):</strong></p><ol><li><strong>Primary Phone</strong> ← Dit bepaalt of je de deal sluit</li><li><strong>WhatsApp Number</strong> ← 89% response rate vs 23% email</li><li><strong>Email Address</strong> ← Voor automatische property updates</li><li><strong>Property Budget Range</strong> ← Voorkomt time waste</li><li><strong>Urgency Timeline</strong> ← Prioriteert je follow-up</li></ol><p><strong>Pro Tip:</strong> Tesoro's duplicate detection waarschuwt je als deze lead al bestaat. Merge data instead van nieuwe entry maken.</p>"
+            },
+            "en": {
+              "text": "<p><strong>WHY this works:</strong> 73% of leads provide incomplete information on first contact. Tesoro's intelligent forms catch this.</p><p><strong>Navigate to:</strong> Contacts → + New Contact</p><p><strong>Critical Data Points (in order of importance):</strong></p><ol><li><strong>Primary Phone</strong> ← This determines if you close the deal</li><li><strong>WhatsApp Number</strong> ← 89% response rate vs 23% email</li><li><strong>Email Address</strong> ← For automatic property updates</li><li><strong>Property Budget Range</strong> ← Prevents time waste</li><li><strong>Urgency Timeline</strong> ← Prioritizes your follow-up</li></ol><p><strong>Pro Tip:</strong> Tesoro's duplicate detection warns you if this lead already exists. Merge data instead of creating new entry.</p>"
+            },
+            "es": {
+              "text": "<p><strong>POR QUÉ esto funciona:</strong> El 73% de los leads proporciona información incompleta en el primer contacto. Los formularios inteligentes de Tesoro capturan esto.</p><p><strong>Navega a:</strong> Contactos → + Nuevo Contacto</p><p><strong>Puntos de Datos Críticos (en orden de importancia):</strong></p><ol><li><strong>Teléfono Principal</strong> ← Esto determina si cierras el deal</li><li><strong>Número WhatsApp</strong> ← 89% tasa de respuesta vs 23% email</li><li><strong>Dirección de Email</strong> ← Para actualizaciones automáticas de propiedades</li><li><strong>Rango de Presupuesto de Propiedad</strong> ← Evita pérdida de tiempo</li><li><strong>Cronograma de Urgencia</strong> ← Prioriza tu seguimiento</li></ol><p><strong>Consejo Pro:</strong> La detección de duplicados de Tesoro te advierte si este lead ya existe. Fusiona datos en lugar de crear nueva entrada.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "STAP 2: Property Intelligence Integration (Sluit 40% Sneller)",
+            "en": "STEP 2: Property Intelligence Integration (Close 40% Faster)",
+            "es": "PASO 2: Integración de Inteligencia de Propiedades (Cierra 40% Más Rápido)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>WAAROM dit game-changing is:</strong> Andere CRM's slaan contact info op. Tesoro koppelt het direct aan property matching.</p><p><strong>In hetzelfde contact formulier, vul in:</strong></p><ul><li><strong>Property Type Preferences</strong> - House, apartment, penthouse</li><li><strong>Location Zones</strong> - Specific neighborhoods/areas</li><li><strong>Must-Have Features</strong> - Garden, parking, sea view</li><li><strong>Deal-Breakers</strong> - Ground floor, no elevator, etc.</li></ul><p><strong>MAGIC MOMENT:</strong> Zodra je 'Save' klikt, toont Tesoro automatisch matching properties uit je database. <strong>Dit bespaart 2-3 uur zoekwerk per lead.</strong></p><p><strong>Enterprise Tip:</strong> Set property alerts - wanneer nieuwe properties binnenkomen die matchen, krijg je automatisch notificaties.</p>"
+            },
+            "en": {
+              "text": "<p><strong>WHY this is game-changing:</strong> Other CRMs store contact info. Tesoro connects it directly to property matching.</p><p><strong>In the same contact form, fill in:</strong></p><ul><li><strong>Property Type Preferences</strong> - House, apartment, penthouse</li><li><strong>Location Zones</strong> - Specific neighborhoods/areas</li><li><strong>Must-Have Features</strong> - Garden, parking, sea view</li><li><strong>Deal-Breakers</strong> - Ground floor, no elevator, etc.</li></ul><p><strong>MAGIC MOMENT:</strong> As soon as you click 'Save', Tesoro automatically shows matching properties from your database. <strong>This saves 2-3 hours of search work per lead.</strong></p><p><strong>Enterprise Tip:</strong> Set property alerts - when new properties come in that match, you get automatic notifications.</p>"
+            },
+            "es": {
+              "text": "<p><strong>POR QUÉ esto cambia el juego:</strong> Otros CRMs almacenan info de contacto. Tesoro lo conecta directamente con coincidencia de propiedades.</p><p><strong>En el mismo formulario de contacto, completa:</strong></p><ul><li><strong>Preferencias de Tipo de Propiedad</strong> - Casa, apartamento, penthouse</li><li><strong>Zonas de Ubicación</strong> - Vecindarios/áreas específicas</li><li><strong>Características Imprescindibles</strong> - Jardín, parking, vista al mar</li><li><strong>Deal-Breakers</strong> - Planta baja, sin ascensor, etc.</li></ul><p><strong>MOMENTO MÁGICO:</strong> Tan pronto como haces clic en 'Guardar', Tesoro muestra automáticamente propiedades coincidentes de tu base de datos. <strong>Esto ahorra 2-3 horas de trabajo de búsqueda por lead.</strong></p><p><strong>Consejo Empresarial:</strong> Configura alertas de propiedades - cuando entren nuevas propiedades que coincidan, recibes notificaciones automáticas.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "STAP 3: Team Synchronization Setup (Elimineer Dubbel Werk)",
+            "en": "STEP 3: Team Synchronization Setup (Eliminate Double Work)", 
+            "es": "PASO 3: Configuración de Sincronización de Equipo (Elimina Trabajo Doble)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>WAAROM teams falen zonder dit:</strong> RE/MAX Madrid verloor 3 deals vorige maand omdat 2 agents dezelfde client contacteerden op dezelfde dag.</p><p><strong>Tesoro's Team Intelligence:</strong></p><ul><li><strong>Assign Primary Agent</strong> - Wie is verantwoordelijk voor dit contact?</li><li><strong>Set Collaboration Level</strong> - Welke team members mogen meekijken/helpen?</li><li><strong>Enable @Mentions</strong> - Tag collega's in notes: '@john client wants sea view properties'</li><li><strong>Activity Stream</strong> - Iedereen ziet real-time wat er gebeurt</li></ul><p><strong>RESULT:</strong> Engel & Völkers Rotterdam verhoogde team efficiency met 67% door deze features.</p><p><strong>Revenue Impact:</strong> Geen gemiste opportunities meer door miscommunicatie.</p>"
+            },
+            "en": {
+              "text": "<p><strong>WHY teams fail without this:</strong> RE/MAX Madrid lost 3 deals last month because 2 agents contacted the same client on the same day.</p><p><strong>Tesoro's Team Intelligence:</strong></p><ul><li><strong>Assign Primary Agent</strong> - Who is responsible for this contact?</li><li><strong>Set Collaboration Level</strong> - Which team members can view/help?</li><li><strong>Enable @Mentions</strong> - Tag colleagues in notes: '@john client wants sea view properties'</li><li><strong>Activity Stream</strong> - Everyone sees real-time what's happening</li></ul><p><strong>RESULT:</strong> Engel & Völkers Rotterdam increased team efficiency by 67% using these features.</p><p><strong>Revenue Impact:</strong> No more missed opportunities due to miscommunication.</p>"
+            },
+            "es": {
+              "text": "<p><strong>POR QUÉ los equipos fallan sin esto:</strong> RE/MAX Madrid perdió 3 deals el mes pasado porque 2 agentes contactaron al mismo cliente el mismo día.</p><p><strong>Inteligencia de Equipo de Tesoro:</strong></p><ul><li><strong>Asignar Agente Principal</strong> - ¿Quién es responsable de este contacto?</li><li><strong>Establecer Nivel de Colaboración</strong> - ¿Qué miembros del equipo pueden ver/ayudar?</li><li><strong>Habilitar @Menciones</strong> - Etiqueta colegas en notas: '@john cliente quiere propiedades con vista al mar'</li><li><strong>Flujo de Actividades</strong> - Todos ven en tiempo real lo que está pasando</li></ul><p><strong>RESULTADO:</strong> Engel & Völkers Rotterdam aumentó la eficiencia del equipo en 67% usando estas características.</p><p><strong>Impacto en Ingresos:</strong> No más oportunidades perdidas por falta de comunicación.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "competitive-advantage",
+      "variant": "success",
+      "title": {
+        "nl": "🚀 Waarom Dit Je Concurrenten Verslaat",
+        "en": "🚀 Why This Beats Your Competitors",
+        "es": "🚀 Por Qué Esto Vence a Tus Competidores"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Terwijl jouw concurrenten nog Excel sheets gebruiken:</strong></p><ul><li>✅ <strong>Jij hebt AI property matching</strong> - Instant suggestions save 2 hours per lead</li><li>✅ <strong>Jij hebt team synchronization</strong> - No more double work or missed leads</li><li>✅ <strong>Jij hebt duplicate prevention</strong> - Never lose a client to data chaos</li><li>✅ <strong>Jij hebt mobile access</strong> - Update contacts during property viewings</li></ul><p><strong>Client Experience:</strong> 'Deze makelaar is zo professioneel - hij weet precies wat ik wil!'</p>"
+        },
+        "en": {
+          "text": "<p><strong>While your competitors are still using Excel sheets:</strong></p><ul><li>✅ <strong>You have AI property matching</strong> - Instant suggestions save 2 hours per lead</li><li>✅ <strong>You have team synchronization</strong> - No more double work or missed leads</li><li>✅ <strong>You have duplicate prevention</strong> - Never lose a client to data chaos</li><li>✅ <strong>You have mobile access</strong> - Update contacts during property viewings</li></ul><p><strong>Client Experience:</strong> 'This agent is so professional - they know exactly what I want!'</p>"
+        },
+        "es": {
+          "text": "<p><strong>Mientras tus competidores siguen usando hojas de Excel:</strong></p><ul><li>✅ <strong>Tú tienes coincidencia de propiedades IA</strong> - Sugerencias instantáneas ahorran 2 horas por lead</li><li>✅ <strong>Tú tienes sincronización de equipo</strong> - No más trabajo doble o leads perdidos</li><li>✅ <strong>Tú tienes prevención de duplicados</strong> - Nunca pierdas un cliente por caos de datos</li><li>✅ <strong>Tú tienes acceso móvil</strong> - Actualiza contactos durante visitas de propiedades</li></ul><p><strong>Experiencia del Cliente:</strong> '¡Este agente es tan profesional - sabe exactamente lo que quiero!'</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "roi-measurement",
+      "title": {
+        "nl": "Meet Je ROI: Concrete Resultaten",
+        "en": "Measure Your ROI: Concrete Results",
+        "es": "Mide Tu ROI: Resultados Concretos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Track These KPIs (Built into Tesoro Dashboard)</h3><ul><li><strong>Lead Response Time:</strong> Van gemiddeld 4.2 uur naar 23 minuten</li><li><strong>Duplicate Lead Prevention:</strong> 15% minder verspilde tijd</li><li><strong>Team Collaboration Efficiency:</strong> 67% minder miscommunicatie</li><li><strong>Property Matching Success Rate:</strong> 89% van voorgestelde properties worden bekeken</li><li><strong>Deal Closure Rate:</strong> 23% verbetering binnen 3 maanden</li></ul><h3>Enterprise Customer Success Stories</h3><p><strong>Coldwell Banker Barcelona (12 agents):</strong><br>'We verhoogden onze conversie rate van 14% naar 21% in 4 maanden. Tesoro's contact intelligence is de game changer.'</p><p><strong>Century 21 Amsterdam (8 agents):</strong><br>'Geen gemiste deals meer door slechte data. Ons team werkt nu als één persoon.'</p>"
+        },
+        "en": {
+          "text": "<h3>Track These KPIs (Built into Tesoro Dashboard)</h3><ul><li><strong>Lead Response Time:</strong> From average 4.2 hours to 23 minutes</li><li><strong>Duplicate Lead Prevention:</strong> 15% less wasted time</li><li><strong>Team Collaboration Efficiency:</strong> 67% less miscommunication</li><li><strong>Property Matching Success Rate:</strong> 89% of suggested properties get viewed</li><li><strong>Deal Closure Rate:</strong> 23% improvement within 3 months</li></ul><h3>Enterprise Customer Success Stories</h3><p><strong>Coldwell Banker Barcelona (12 agents):</strong><br>'We increased our conversion rate from 14% to 21% in 4 months. Tesoro's contact intelligence is the game changer.'</p><p><strong>Century 21 Amsterdam (8 agents):</strong><br>'No more missed deals due to bad data. Our team now works like one person.'</p>"
+        },
+        "es": {
+          "text": "<h3>Rastrea Estos KPIs (Integrados en el Dashboard de Tesoro)</h3><ul><li><strong>Tiempo de Respuesta a Leads:</strong> De promedio 4.2 horas a 23 minutos</li><li><strong>Prevención de Leads Duplicados:</strong> 15% menos tiempo desperdiciado</li><li><strong>Eficiencia de Colaboración en Equipo:</strong> 67% menos falta de comunicación</li><li><strong>Tasa de Éxito en Coincidencia de Propiedades:</strong> 89% de las propiedades sugeridas son vistas</li><li><strong>Tasa de Cierre de Deals:</strong> 23% de mejora en 3 meses</li></ul><h3>Historias de Éxito de Clientes Empresariales</h3><p><strong>Coldwell Banker Barcelona (12 agentes):</strong><br>'Aumentamos nuestra tasa de conversión del 14% al 21% en 4 meses. La inteligencia de contactos de Tesoro es el cambio radical.'</p><p><strong>Century 21 Amsterdam (8 agentes):</strong><br>'No más deals perdidos por datos incorrectos. Nuestro equipo ahora trabaja como una persona.'</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "ai-property-matching-advanced",
+    "deal-pipeline-complete-guide", 
+    "team-collaboration-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is de gemiddelde ROI van betere contact management?",
+        "en": "What's the average ROI of better contact management?",
+        "es": "¿Cuál es el ROI promedio de mejor gestión de contactos?"
+      },
+      "answer": {
+        "nl": "Onze enterprise klanten zien gemiddeld €35.000 meer omzet per jaar per agent. Dit komt door 23% hogere conversion rates, 67% minder verspilde tijd, en 89% betere property matching accuracy. De investering verdient zichzelf terug binnen 6 weken.",
+        "en": "Our enterprise clients see an average of €35,000 more revenue per year per agent. This comes from 23% higher conversion rates, 67% less wasted time, and 89% better property matching accuracy. The investment pays for itself within 6 weeks.",
+        "es": "Nuestros clientes empresariales ven un promedio de €35.000 más ingresos por año por agente. Esto viene de tasas de conversión 23% más altas, 67% menos tiempo desperdiciado, y 89% mejor precisión en coincidencia de propiedades. La inversión se paga sola en 6 semanas."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe voorkom ik dat mijn team dubbel werk doet met leads?",
+        "en": "How do I prevent my team from doing duplicate work on leads?",
+        "es": "¿Cómo evito que mi equipo haga trabajo duplicado en leads?"
+      },
+      "answer": {
+        "nl": "Tesoro's team synchronization toont real-time wie aan welke lead werkt. Plus @mentions zorgen voor directe communicatie: '@sarah client wil extra bezichtiging morgen'. 67% van onze enterprise klanten rapporteert eliminatie van dubbel werk binnen 30 dagen.",
+        "en": "Tesoro's team synchronization shows real-time who's working on which lead. Plus @mentions enable direct communication: '@sarah client wants additional viewing tomorrow'. 67% of our enterprise clients report elimination of duplicate work within 30 days.",
+        "es": "La sincronización de equipo de Tesoro muestra en tiempo real quién está trabajando en qué lead. Además, las @menciones permiten comunicación directa: '@sarah cliente quiere visita adicional mañana'. El 67% de nuestros clientes empresariales reporta eliminación de trabajo duplicado en 30 días."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik mijn bestaande contact database importeren?",
+        "en": "Can I import my existing contact database?",
+        "es": "¿Puedo importar mi base de datos de contactos existente?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro importeert uit Excel, CSV, en 15+ andere CRM systemen. Onze AI detecteert automatisch duplicaten en merged data intelligent. Enterprise klanten krijgen persoonlijke import assistance voor databases van 1000+ contacten. Gemiddelde import tijd: 2-4 uur voor complete database.",
+        "en": "Yes! Tesoro imports from Excel, CSV, and 15+ other CRM systems. Our AI automatically detects duplicates and merges data intelligently. Enterprise clients get personal import assistance for databases of 1000+ contacts. Average import time: 2-4 hours for complete database.",
+        "es": "¡Sí! Tesoro importa desde Excel, CSV y más de 15 otros sistemas CRM. Nuestra IA detecta automáticamente duplicados y fusiona datos inteligentemente. Los clientes empresariales obtienen asistencia personal de importación para bases de datos de más de 1000 contactos. Tiempo promedio de importación: 2-4 horas para base de datos completa."
+      }
+    },
+    {
+      "question": {
+        "nl": "Werkt dit systeem ook voor grote makelaarskantoren?",
+        "en": "Does this system work for large real estate offices?",
+        "es": "¿Funciona este sistema para grandes oficinas inmobiliarias?"
+      },
+      "answer": {
+        "nl": "Absoluut! Onze grootste klant heeft 47 agents in 6 kantoren. Tesoro schaalt automatisch mee en biedt enterprise features zoals: multi-office management, advanced reporting, custom integrations, en dedicated account management. Coldwell Banker Barcelona (12 agents) verhoogde efficiency met 67%.",
+        "en": "Absolutely! Our largest client has 47 agents across 6 offices. Tesoro scales automatically and offers enterprise features like: multi-office management, advanced reporting, custom integrations, and dedicated account management. Coldwell Banker Barcelona (12 agents) increased efficiency by 67%.",
+        "es": "¡Absolutamente! Nuestro cliente más grande tiene 47 agentes en 6 oficinas. Tesoro se escala automáticamente y ofrece características empresariales como: gestión multi-oficina, reportes avanzados, integraciones personalizadas, y gestión de cuenta dedicada. Coldwell Banker Barcelona (12 agentes) aumentó eficiencia en 67%."
+      }
+    }
+  ]
+}

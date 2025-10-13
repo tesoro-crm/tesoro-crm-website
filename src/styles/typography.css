@@ -24,10 +24,59 @@
   --text-muted: #64748b;
   --text-light: #94a3b8;
 
-  /* Accent Colors */
-  --accent-primary: #F59E0B;
-  --accent-secondary: #F97316;
+  /* Tesoro Brand Colors - Complete Palette */
+  
+  /* Warm Colors (Energy & Action) */
+  --tesoro-yellow: #FCC72C;
+  --tesoro-orange-light: #F8B131;
+  --tesoro-coral: #EE7461;
+  --tesoro-orange: #ED6E19;
+  --tesoro-orange-dark: #F18407;
+  --tesoro-red: #E84847;
+  
+  /* Cool Colors (Trust & Stability) */
+  --tesoro-pink: #E94A93;
+  --tesoro-pink-dark: #CF1D5B;
+  --tesoro-burgundy: #B6154A;
+  --tesoro-red-bright: #E2071E;
+  --tesoro-pink-light: #EE8BB6;
+  --tesoro-purple-light: #8C6DAC;
+  
+  /* Blue Family (Professional) */
+  --tesoro-purple: #7C61A7;
+  --tesoro-blue-dark: #3B529F;
+  --tesoro-blue-navy: #36398D;
+  --tesoro-blue-light: #57AEE3;
+  
+  /* Legacy accent colors (keeping for backward compatibility) */
+  --accent-primary: var(--tesoro-orange);
+  --accent-secondary: var(--tesoro-orange-dark);
   --accent-success: #10B981;
+
+  /* Creative Color Mappings for Blog Categories */
+  --category-case-study: var(--tesoro-orange);
+  --category-case-study-bg: #FFF4E6;
+  
+  --category-crm-tips: var(--tesoro-blue-dark);
+  --category-crm-tips-bg: #EFF6FF;
+  
+  --category-success-stories: var(--tesoro-pink);
+  --category-success-stories-bg: #FDF2F8;
+  
+  --category-real-estate: var(--tesoro-purple);
+  --category-real-estate-bg: #F5F3FF;
+  
+  --category-integrations: var(--tesoro-blue-light);
+  --category-integrations-bg: #F0F9FF;
+  
+  --category-tutorials: var(--tesoro-yellow);
+  --category-tutorials-bg: #FEFCE8;
+  
+  --category-updates: var(--tesoro-coral);
+  --category-updates-bg: #FEF2F2;
+  
+  --category-insights: var(--tesoro-purple-light);
+  --category-insights-bg: #FAF5FF;
 
   /* Background Colors */
   --bg-primary: #ffffff;

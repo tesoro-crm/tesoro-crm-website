@@ -1,0 +1,240 @@
+name: Tesoro CRM - Design Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+    paths:
+      - 'src/components/**'
+      - 'src/styles/**'
+      - 'tailwind.config.ts'
+      - 'src/layouts/**'
+      - 'src/pages/**/*.astro'
+      - 'docs/design-system/**'
+
+jobs:
+  design-review:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+      id-token: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Analyze design changes
+        id: design-scope
+        run: |
+          changed_files=$(git diff --name-only HEAD^ HEAD)
+          
+          ui_components=false
+          layout_changes=false
+          styling_changes=false
+          design_tokens=false
+          page_templates=false
+          
+          if echo "$changed_files" | grep -E 'src/components/ui/' | wc -l | grep -q -v '^0$'; then
+            ui_components=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'src/layouts/' | wc -l | grep -q -v '^0$'; then
+            layout_changes=true
+          fi
+          
+          if echo "$changed_files" | grep -E '(src/styles/|\.css$)' | wc -l | grep -q -v '^0$'; then
+            styling_changes=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'tailwind\.config\.ts' | wc -l | grep -q -v '^0$'; then
+            design_tokens=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'src/pages/.*\.astro$' | wc -l | grep -q -v '^0$'; then
+            page_templates=true
+          fi
+          
+          echo "ui_components=$ui_components" >> $GITHUB_OUTPUT
+          echo "layout_changes=$layout_changes" >> $GITHUB_OUTPUT
+          echo "styling_changes=$styling_changes" >> $GITHUB_OUTPUT
+          echo "design_tokens=$design_tokens" >> $GITHUB_OUTPUT
+          echo "page_templates=$page_templates" >> $GITHUB_OUTPUT
+
+      - name: Run Design System Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          track_progress: true
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR NUMBER: ${{ github.event.pull_request.number }}
+            
+            🎨 **TESORO CRM DESIGN REVIEW**
+            
+            You are conducting a design-focused review for Tesoro CRM's interface changes.
+            
+            **DESIGN SCOPE ANALYSIS:**
+            - UI Components: ${{ steps.design-scope.outputs.ui_components }}
+            - Layout Changes: ${{ steps.design-scope.outputs.layout_changes }}
+            - Styling Changes: ${{ steps.design-scope.outputs.styling_changes }}
+            - Design Tokens: ${{ steps.design-scope.outputs.design_tokens }}
+            - Page Templates: ${{ steps.design-scope.outputs.page_templates }}
+            
+            ## 🎯 DESIGN SYSTEM REVIEW FOCUS
+            
+            ### 1. **Brand Compliance**
+            Reference: `docs/product/brand-identity.md`
+            
+            **Colors:**
+            - ✅ Primary Blue `#003366` for hero sections, primary CTAs, navigation
+            - ✅ Primary Accent `#4BA3FF` for hover states, highlights, interactive elements
+            - ✅ Secondary Gold `#F5B400` for secondary CTAs, badges, success states
+            - ✅ Semantic colors: Success `#10B981`, Warning `#F59E0B`, Error `#EF4444`
+            - ✅ Proper contrast ratios (4.5:1 for normal text, 3:1 for large text)
+            
+            **Typography:**
+            - ✅ Poppins (600, 700) for headings and brand elements
+            - ✅ Inter (400, 500, 600) for body text and UI elements
+            - ✅ JetBrains Mono (400) for code snippets
+            - ✅ Proper type scale and line heights
+            - ✅ Semantic heading hierarchy (H1 → H2 → H3)
+            
+            **Spacing:**
+            - ✅ 4px base grid system (4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 96px)
+            - ✅ Consistent component padding and margins
+            - ✅ Proper vertical rhythm between elements
+            
+            ### 2. **Component Library Consistency**
+            Reference: `docs/design-system/components.md`
+            
+            **UI Components:**
+            - ✅ Button variants: primary, secondary, outline, ghost
+            - ✅ Button sizes: sm (12px padding), md (16px padding), lg (20px padding)
+            - ✅ Card variants: default, feature, bordered, elevated
+            - ✅ Input states: default, focus, error, disabled
+            - ✅ Badge variants with proper color usage
+            
+            **Component Props:**
+            - ✅ TypeScript interfaces defined for all props
+            - ✅ Consistent prop naming conventions
+            - ✅ Default values specified appropriately
+            - ✅ Accessibility props included (aria-label, etc.)
+            
+            ### 3. **Layout & Responsive Design**
+            Reference: `docs/design-system/responsive.md`
+            
+            **Grid System:**
+            - ✅ Max container width: 1280px
+            - ✅ 12-column grid system
+            - ✅ Proper gutters: 24px (desktop), 16px (mobile)
+            - ✅ Margins: 48px (desktop), 24px (tablet), 16px (mobile)
+            
+            **Responsive Behavior:**
+            - ✅ Mobile-first approach
+            - ✅ Proper breakpoint usage (sm, md, lg, xl)
+            - ✅ Touch-friendly tap targets (min 44px)
+            - ✅ Readable text sizes on all devices
+            
+            ### 4. **Accessibility (WCAG 2.1 AA)**
+            Reference: `docs/operations/accessibility.md`
+            
+            **Visual Accessibility:**
+            - ✅ Color contrast compliance
+            - ✅ Focus indicators visible and consistent
+            - ✅ Information not conveyed solely through color
+            - ✅ Text scalable to 200% without horizontal scroll
+            
+            **Interaction Accessibility:**
+            - ✅ Keyboard navigation support
+            - ✅ Screen reader compatibility
+            - ✅ Proper ARIA attributes
+            - ✅ Semantic HTML structure
+            
+            ### 5. **Performance Optimization**
+            
+            **CSS Efficiency:**
+            - ✅ Proper use of Tailwind utilities
+            - ✅ Minimal custom CSS
+            - ✅ No unused styles
+            - ✅ Efficient selector usage
+            
+            **Asset Optimization:**
+            - ✅ Image optimization (WebP, proper sizing)
+            - ✅ Font loading optimization
+            - ✅ Critical CSS inlined
+            - ✅ Bundle size impact minimal
+            
+            ### 6. **Design Token Usage**
+            Reference: `docs/design-system/tokens.md`
+            
+            **Tailwind Configuration:**
+            - ✅ Custom colors defined in `tailwind.config.ts`
+            - ✅ Typography scale properly configured
+            - ✅ Spacing scale consistent with design system
+            - ✅ Shadow and radius tokens used consistently
+            
+            ## 🔍 DESIGN QUALITY CHECKLIST
+            
+            ### Visual Design
+            - [ ] Consistent visual hierarchy
+            - [ ] Proper white space usage
+            - [ ] Balanced proportions
+            - [ ] Clear information architecture
+            - [ ] Brand personality reflected
+            
+            ### Interaction Design
+            - [ ] Intuitive user flows
+            - [ ] Clear call-to-action hierarchy
+            - [ ] Consistent interaction patterns
+            - [ ] Proper feedback for user actions
+            - [ ] Error states handled gracefully
+            
+            ### Technical Implementation
+            - [ ] Clean, maintainable code
+            - [ ] Proper component composition
+            - [ ] Reusable patterns identified
+            - [ ] Performance considerations
+            - [ ] Cross-browser compatibility
+            
+            ## 🎨 REVIEW APPROACH
+            
+            1. **Examine visual changes** using screenshots or preview links
+            2. **Check code implementation** against design system guidelines
+            3. **Verify accessibility** compliance and keyboard navigation
+            4. **Test responsive behavior** across different screen sizes
+            5. **Validate brand compliance** with color, typography, spacing
+            6. **Assess component reusability** and consistency
+            
+            ## 💬 FEEDBACK GUIDELINES
+            
+            **Structure your review:**
+            - **Visual Quality** - Overall design assessment
+            - **Brand Compliance** - Adherence to brand guidelines
+            - **Component Consistency** - Design system alignment
+            - **Accessibility** - WCAG compliance and usability
+            - **Technical Implementation** - Code quality and patterns
+            
+            **Be specific:**
+            - Reference exact design system guidelines
+            - Suggest specific improvements with examples
+            - Link to relevant documentation
+            - Highlight both issues and good practices
+            
+            ## 🎯 APPROVAL CRITERIA
+            
+            Approve when:
+            ✅ All brand guidelines followed
+            ✅ Component library consistency maintained
+            ✅ Accessibility requirements met
+            ✅ Responsive design working properly
+            ✅ Performance impact acceptable
+            ✅ Code quality meets standards
+            
+            **Use `gh pr comment` to post your design review when complete.**
+          
+          claude_args: '--model claude-sonnet-4-20250514 --allowed-tools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Grep,Glob"'

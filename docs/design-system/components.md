@@ -2,7 +2,7 @@
 
 ## Overview
 
-De Tesoro CRM component library biedt herbruikbare UI-componenten gebouwd met Astro en Tailwind CSS, volledig aligned met de design tokens en brand guidelines.
+The Tesoro CRM component library provides reusable UI components built with Astro and Tailwind CSS, fully aligned with the design tokens and brand guidelines.
 
 ## Core Components
 
@@ -11,10 +11,10 @@ De Tesoro CRM component library biedt herbruikbare UI-componenten gebouwd met As
 **File**: `src/components/ui/Button.astro`
 
 **Variants**:
-- `primary`: Hoofdacties (signup, submit)
-- `secondary`: Secundaire acties (learn more, contact)
-- `outline`: Tertiaire acties (cancel, back)
-- `ghost`: Subtiele acties (close, dismiss)
+- `primary`: Main actions (signup, submit)
+- `secondary`: Secondary actions (learn more, contact)
+- `outline`: Tertiary actions (cancel, back)
+- `ghost`: Subtle actions (close, dismiss)
 
 **Sizes**:
 - `sm`: Compact buttons (12px padding)

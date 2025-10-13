@@ -1,0 +1,476 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const emailProviders = [
+  {
+    name: 'Gmail',
+    description: 'Volledige bidirectionele sync via Gmail API',
+    features: ['Automatische sync', 'Labels behouden', 'Bijlagen support', 'OAuth 2.0 beveiliging'],
+  },
+  {
+    name: 'Outlook/Office 365',
+    description: 'Microsoft Graph API integratie',
+    features: ['Exchange sync', 'Agenda integratie', 'Teams integratie', 'Corporate beveiliging'],
+  },
+];
+
+const integrationFeatures = [
+  {
+    title: 'Bidirectionele Synchronisatie',
+    description: 'E-mails verzonden vanuit Tesoro verschijnen in je Gmail/Outlook. E-mails ontvangen worden automatisch gekoppeld.',
+  },
+  {
+    title: 'Automatische Deal Koppeling',
+    description: 'Alle communicatie wordt automatisch gekoppeld aan de juiste deal en klant in je CRM.',
+  },
+  {
+    title: 'E-mail Templates',
+    description: 'Vooraf geconfigureerde templates voor veelvoorkomende situaties in de vastgoedsector.',
+  },
+  {
+    title: 'Verzendgeschiedenis',
+    description: 'Complete overzicht van alle e-mailcommunicatie per klant en deal in je CRM.',
+  },
+];
+
+const benefits = [
+  {
+    metric: '100%',
+    description: 'van communicatie wordt bijgehouden',
+  },
+  {
+    metric: '0',
+    description: 'e-mails vallen tussen de mazen',
+  },
+  {
+    metric: '2 min',
+    description: 'setup tijd per e-mail account',
+  },
+];
+
+const workflow = [
+  {
+    step: '1',
+    title: 'E-mail Account Koppelen',
+    description: 'Verbind je Gmail of Outlook account veilig via OAuth 2.0.',
+  },
+  {
+    step: '2',
+    title: 'Automatische Sync Start',
+    description: 'Tesoro begint automatisch met het synchroniseren van je e-mails.',
+  },
+  {
+    step: '3',
+    title: 'E-mails Worden Gekoppeld',
+    description: 'Bestaande en nieuwe e-mails worden automatisch aan deals gekoppeld.',
+  },
+  {
+    step: '4',
+    title: 'Verzenden vanuit CRM',
+    description: 'Stuur e-mails direct vanuit Tesoro met je professionele e-mail adres.',
+  },
+  {
+    step: '5',
+    title: 'Templates Gebruiken',
+    description: 'Gebruik vooraf geconfigureerde templates voor snellere communicatie.',
+  },
+  {
+    step: '6',
+    title: 'Volledige Geschiedenis',
+    description: 'Bekijk alle communicatie per klant en deal in één overzicht.',
+  },
+];
+
+const templates = [
+  {
+    name: 'Nieuwe Property Voorstellen',
+    description: 'Template voor het voorstellen van nieuwe properties aan klanten',
+    usage: '89% van makelaars gebruikt dit',
+  },
+  {
+    name: 'Bezichtiging Bevestigen',
+    description: 'Automatische bevestiging en details voor geplande bezichtigingen',
+    usage: '76% tijdsbesparing',
+  },
+  {
+    name: 'Follow-up na Bezichtiging',
+    description: 'Standaard follow-up e-mail met feedback vraag',
+    usage: '45% meer responses',
+  },
+  {
+    name: 'Contractvoorstel',
+    description: 'Professionele template voor het versturen van contractvoorstellen',
+    usage: '67% snellere afhandeling',
+  },
+];
+
+const security = [
+  {
+    feature: 'OAuth 2.0 Authenticatie',
+    description: 'Veilige verbinding zonder wachtwoorden op te slaan',
+  },
+  {
+    feature: 'End-to-End Encryptie',
+    description: 'Alle communicatie wordt versleuteld verzonden',
+  },
+  {
+    feature: 'GDPR Compliance',
+    description: 'Volledig conform Europese privacy wetgeving',
+  },
+  {
+    feature: 'Selectieve Sync',
+    description: 'Kies welke mappen en labels gesynchroniseerd worden',
+  },
+];
+---
+
+<Layout 
+  title={t('feature_pages.email_integration.meta_title', locale)}
+  description={t('feature_pages.email_integration.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <Badge variant="primary" size="md" class="mb-6">
+            {t('feature_pages.email_integration.hero.badge', locale)}
+          </Badge>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+            {t('feature_pages.email_integration.hero.title', locale)}
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-neutral-700 mb-8">
+            {t('feature_pages.email_integration.hero.description', locale)}
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <Button variant="primary" size="lg" href={getLocalizedPath('/signup', locale)}>
+              {t('feature_pages.email_integration.cta.primary', locale)}
+            </Button>
+            <Button variant="outline" size="lg" href={getLocalizedPath('/demo', locale)}>
+              {t('feature_pages.email_integration.cta.secondary', locale)}
+            </Button>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            {benefits.map((benefit) => (
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary mb-1">{benefit.metric}</div>
+                <div class="text-sm text-neutral-600">{benefit.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="bg-white rounded-2xl shadow-xl p-6">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="font-semibold text-neutral-900">E-mail Integratie</h3>
+              <Badge variant="success" size="sm">Actief</Badge>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 p-4 bg-success/5 border border-success/20 rounded-lg">
+                <div class="flex-1">
+                  <div class="font-semibold text-neutral-900">Gmail</div>
+                  <div class="text-sm text-neutral-600">makelaar@example.com</div>
+                  <div class="text-xs text-success">Gesynchroniseerd</div>
+                </div>
+                <div class="text-success font-bold">✓</div>
+              </div>
+              
+              <div class="p-4 border-2 border-dashed border-neutral-200 rounded-lg text-center">
+                <div class="text-sm text-neutral-600">Outlook Integratie</div>
+                <Button variant="outline" size="sm" class="mt-2">
+                  Verbinden
+                </Button>
+              </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-neutral-50 rounded-lg">
+              <div class="text-sm font-medium text-neutral-900 mb-2">Recente Sync</div>
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <span>E-mails ontvangen</span>
+                  <span class="text-primary font-medium">12 nieuw</span>
+                </div>
+                <div class="flex justify-between text-xs">
+                  <span>Auto-gekoppeld aan deals</span>
+                  <span class="text-success font-medium">8 gekoppeld</span>
+                </div>
+                <div class="flex justify-between text-xs">
+                  <span>Laatste sync</span>
+                  <span class="text-neutral-600">2 min geleden</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Providers -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Ondersteunde E-mail Providers
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Tesoro integreert naadloos met de meest gebruikte e-mail providers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {emailProviders.map((provider) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {provider.name}
+            </h3>
+            <p class="text-neutral-700 mb-6">
+              {provider.description}
+            </p>
+            
+            <ul class="space-y-2">
+              {provider.features.map((feature) => (
+                <li class="text-sm text-neutral-600 flex items-center gap-2">
+                  <span class="text-success">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Features -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Krachtige Integratie Features
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Meer dan alleen e-mail synchronisatie - complete communicatie management.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {integrationFeatures.map((feature) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {feature.title}
+            </h3>
+            <p class="text-neutral-700">
+              {feature.description}
+            </p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Setup in 6 Eenvoudige Stappen
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Van setup tot volledige integratie in minder dan 5 minuten.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {workflow.map((step, index) => (
+          <div class="relative">
+            <Card variant="default" padding="lg" class="h-full">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                  {step.step}
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+                {step.title}
+              </h3>
+              <p class="text-neutral-700">
+                {step.description}
+              </p>
+            </Card>
+            
+            {index < workflow.length - 1 && index % 3 !== 2 && (
+              <div class="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/30 transform -translate-y-1/2"></div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Templates -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Professionele E-mail Templates
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          Vooraf geconfigureerde templates speciaal voor vastgoedprofessionals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {templates.map((template) => (
+          <Card variant="default" padding="lg" class="h-full">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+              {template.name}
+            </h3>
+            <p class="text-neutral-700 mb-4">
+              {template.description}
+            </p>
+            <Badge variant="secondary" size="sm">
+              {template.usage}
+            </Badge>
+          </Card>
+        ))}
+      </div>
+      
+      <div class="text-center mt-12">
+        <p class="text-neutral-700 mb-4">Alle templates zijn aanpasbaar naar je eigen stijl en branding</p>
+        <Button variant="outline" href={getLocalizedPath('/demo', locale)}>
+          Bekijk Template Voorbeelden
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+            Veiligheid & Privacy
+          </h2>
+          
+          <p class="text-lg text-neutral-700 mb-8">
+            Je e-mail data blijft volledig veilig en privé. 
+            We gebruiken industry-standard beveiligingsprotocollen.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {security.map((item) => (
+              <div class="flex items-start gap-3">
+                <div>
+                  <h3 class="font-semibold text-neutral-900 mb-1">{item.feature}</h3>
+                  <p class="text-sm text-neutral-700">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">E-mail Statistieken</h3>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-primary pl-4">
+              <div class="text-2xl font-bold text-primary">98%</div>
+              <div class="text-neutral-700">minder gemiste communicatie</div>
+            </div>
+            
+            <div class="border-l-4 border-secondary pl-4">
+              <div class="text-2xl font-bold text-secondary">45 min</div>
+              <div class="text-neutral-700">tijdsbesparing per dag</div>
+            </div>
+            
+            <div class="border-l-4 border-success pl-4">
+              <div class="text-2xl font-bold text-success">100%</div>
+              <div class="text-neutral-700">van communicatie wordt bijgehouden</div>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-4 bg-white rounded-lg">
+            <div class="text-center">
+              <div class="text-lg font-semibold text-neutral-900 mb-2">
+                "Geen enkele e-mail valt meer tussen de mazen"
+              </div>
+              <div class="text-sm text-neutral-600">- Makelaar uit Amsterdam</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          Integreert met je Volledige Workflow
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          E-mail integratie werkt naadloos samen met alle andere Tesoro CRM features.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Smart Matching</h3>
+          <p class="text-neutral-700">
+            Verstuur nieuwe matches automatisch via e-mail naar klanten.
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Deal Pipeline</h3>
+          <p class="text-neutral-700">
+            E-mail communicatie wordt automatisch gekoppeld aan de juiste deal.
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Klantportaal</h3>
+          <p class="text-neutral-700">
+            Notificaties en updates worden automatisch naar klanten verstuurd.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('feature_pages.email_integration.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('feature_pages.email_integration.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
+          {t('feature_pages.email_integration.cta.primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/features', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('feature_pages.email_integration.cta.secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

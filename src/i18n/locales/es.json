@@ -452,6 +452,223 @@
       }
     }
   },
+  "feature_pages": {
+    "smart_matching": {
+      "meta_title": "Matching Inteligente Propiedad-Cliente | Tesoro CRM",
+      "meta_description": "Matching automático entre propiedades y clientes basado en preferencias, presupuesto y ubicación. Aumenta tu tasa de conversión con matching inteligente con IA.",
+      "hero": {
+        "badge": "Smart Matching",
+        "title": "Matching Inteligente Propiedad-Cliente",
+        "description": "Matching automático entre propiedades y clientes basado en preferencias, presupuesto y ubicación. El algoritmo inteligente aprende de cada interacción y mejora los matches."
+      },
+      "benefits": {
+        "title": "Por qué funciona el Smart Matching",
+        "benefit_1_title": "96% de Precisión",
+        "benefit_1_description": "Nuestro algoritmo de IA logra un 96% de precisión en hacer match de propiedades con los clientes correctos",
+        "benefit_2_title": "3x Ventas Más Rápidas",
+        "benefit_2_description": "Los clientes encuentran su propiedad ideal 3x más rápido a través del matching inteligente",
+        "benefit_3_title": "Mayor Satisfacción",
+        "benefit_3_description": "Tanto clientes como agentes reportan mayor satisfacción con las propiedades matched"
+      },
+      "workflow": {
+        "title": "Cómo Funciona el Smart Matching",
+        "step_1_title": "Importar Propiedades",
+        "step_1_description": "Añade propiedades manualmente o sincroniza automáticamente desde tus sistemas existentes",
+        "step_2_title": "Perfil del Cliente",
+        "step_2_description": "Los clientes completan sus preferencias: presupuesto, ubicación, tipo de propiedad y deseos",
+        "step_3_title": "Matching con IA",
+        "step_3_description": "Nuestro algoritmo analiza todos los datos y crea matches inteligentes en tiempo real",
+        "step_4_title": "Notificaciones Instantáneas",
+        "step_4_description": "Tú y el cliente recibís inmediatamente notificaciones de nuevos matches"
+      },
+      "cta": {
+        "title": "¿Listo para trabajar más inteligentemente?",
+        "description": "Descubre cómo el matching inteligente puede transformar tu proceso de ventas",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "deal_pipeline": {
+      "meta_title": "Gestión de Pipeline de Deals | Tesoro CRM",
+      "meta_description": "Gestión avanzada de pipeline de deals con etapas automatizadas, seguimiento de progreso y recordatorios inteligentes. Nunca pierdas un deal otra vez.",
+      "hero": {
+        "badge": "Deal Pipeline",
+        "title": "Gestión Avanzada de Pipeline de Deals",
+        "description": "Mantén el control de todos tus deals desde el primer contacto hasta el cierre. Etapas automatizadas, recordatorios inteligentes y vista clara aseguran que nunca se te escape nada."
+      },
+      "benefits": {
+        "title": "Nunca Pierdas un Deal Otra Vez",
+        "benefit_1_title": "Vista Clara",
+        "benefit_1_description": "Pipeline visual con todos los deals en diferentes etapas, desde lead hasta cierre",
+        "benefit_2_title": "Recordatorios Automatizados",
+        "benefit_2_description": "Recordatorios inteligentes para seguimientos, citas y fechas límite importantes",
+        "benefit_3_title": "Analytics de Rendimiento",
+        "benefit_3_description": "Insights detallados sobre tus tasas de conversión y cuellos de botella por etapa"
+      },
+      "workflow": {
+        "title": "De Lead a Cierre",
+        "step_1_title": "Cualificación de Leads",
+        "step_1_description": "Puntúa y cualifica automáticamente leads entrantes basado en presupuesto e interés",
+        "step_2_title": "Visitas de Propiedades",
+        "step_2_description": "Programa visitas y rastrea feedback del cliente y nivel de interés",
+        "step_3_title": "Negociaciones de Ofertas",
+        "step_3_description": "Gestiona ofertas, contraofertas y negociaciones con herramientas de comunicación integradas",
+        "step_4_title": "Contrato y Cierre",
+        "step_4_description": "Maneja contratos, firma de documentos y pasos finales de cierre"
+      },
+      "cta": {
+        "title": "Cierra más deals",
+        "description": "Ve cómo la gestión avanzada de pipeline aumenta tu tasa de éxito",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "customer_portal": {
+      "meta_title": "Portal de Clientes | Tesoro CRM",
+      "meta_description": "Da a tus clientes su propio portal donde pueden ver propiedades, dar feedback y seguir el progreso. Mejora la satisfacción del cliente y ahorra tiempo.",
+      "hero": {
+        "badge": "Portal de Clientes",
+        "title": "Portal Personal de Clientes",
+        "description": "Da a tus clientes su propio portal donde pueden ver propiedades matched, dar feedback y seguir el progreso de su búsqueda. Moderno, fácil de usar y optimizado para móvil."
+      },
+      "benefits": {
+        "title": "Clientes Felices, Menos Trabajo",
+        "benefit_1_title": "Acceso 24/7",
+        "benefit_1_description": "Los clientes pueden ver nuevos matches y detalles de propiedades en cualquier momento, en cualquier lugar",
+        "benefit_2_title": "Feedback Instantáneo",
+        "benefit_2_description": "Los clientes pueden indicar inmediatamente interés o rechazo con un clic",
+        "benefit_3_title": "Auto-Servicio",
+        "benefit_3_description": "Reduce preguntas y llamadas a través de funcionalidad de auto-servicio en el portal"
+      },
+      "workflow": {
+        "title": "Cómo Funciona el Portal de Clientes",
+        "step_1_title": "Dashboard Personal",
+        "step_1_description": "Cada cliente obtiene su propio dashboard seguro con vista general de matches",
+        "step_2_title": "Detalles de Propiedades",
+        "step_2_description": "Información completa de propiedades con fotos, planos e info del barrio",
+        "step_3_title": "Sistema de Feedback",
+        "step_3_description": "Sistema simple de feedback: interesado, no interesado, o solicitar más info",
+        "step_4_title": "Hub de Comunicación",
+        "step_4_description": "Toda la comunicación con el agente en un lugar, incluyendo citas y documentos"
+      },
+      "cta": {
+        "title": "Proporciona mejor experiencia al cliente",
+        "description": "Descubre cómo el portal de clientes mejora la satisfacción y ahorra tiempo",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "email_integration": {
+      "meta_title": "Integración de Email | Tesoro CRM",
+      "meta_description": "Integración perfecta con Gmail, Outlook y otros sistemas de email. Toda la comunicación automáticamente guardada en el archivo del cliente.",
+      "hero": {
+        "badge": "Integración de Email",
+        "title": "Integración Perfecta de Email",
+        "description": "Integración completa con Gmail, Outlook y otros sistemas de email. Toda tu comunicación se guarda automáticamente en el archivo correcto del cliente, así nunca pierdes el hilo de la conversación."
+      },
+      "benefits": {
+        "title": "Nunca Busques Emails Otra Vez",
+        "benefit_1_title": "Auto-Sync",
+        "benefit_1_description": "Todos los emails se vinculan automáticamente a los clientes y propiedades correctos",
+        "benefit_2_title": "Historial Completo",
+        "benefit_2_description": "Historial completo de comunicación por cliente en una vista clara",
+        "benefit_3_title": "Plantillas de Email",
+        "benefit_3_description": "Plantillas profesionales de email para cada etapa del proceso de ventas"
+      },
+      "workflow": {
+        "title": "Cómo Funciona la Integración de Email",
+        "step_1_title": "Conectar Email",
+        "step_1_description": "Conecta tu cuenta existente de Gmail, Outlook u otro email con un clic",
+        "step_2_title": "Reconocimiento Automático",
+        "step_2_description": "Tesoro reconoce direcciones de email y vincula mensajes al cliente correcto",
+        "step_3_title": "Organización Inteligente",
+        "step_3_description": "Los emails se organizan automáticamente por cliente y propiedad en tu CRM",
+        "step_4_title": "Librería de Plantillas",
+        "step_4_description": "Usa plantillas profesionales para seguimientos, ofertas y confirmaciones"
+      },
+      "cta": {
+        "title": "Trabaja más eficientemente",
+        "description": "Ve cómo la integración de email agiliza tu comunicación",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "property_management": {
+      "meta_title": "Gestión de Propiedades | Tesoro CRM",
+      "meta_description": "Sistema completo de gestión de propiedades con gestión de fotos, documentos, planificación de visitas y seguimiento de estado.",
+      "hero": {
+        "badge": "Gestión de Propiedades",
+        "title": "Gestión Completa de Propiedades",
+        "description": "Gestiona todas tus propiedades en un sistema central. Desde fotos y descripciones hasta horarios de visitas y gestión de documentos - todo organizado y fácilmente accesible."
+      },
+      "benefits": {
+        "title": "Todas las Propiedades Bajo Control",
+        "benefit_1_title": "Base de Datos Central",
+        "benefit_1_description": "Toda la información de propiedades, fotos y documentos en un sistema buscable",
+        "benefit_2_title": "Organización Inteligente",
+        "benefit_2_description": "Categorización automática por tipo, ubicación, rango de precio y estado",
+        "benefit_3_title": "Compartir Rápido",
+        "benefit_3_description": "Comparte instantáneamente detalles de propiedades con clientes vía portal o email"
+      },
+      "workflow": {
+        "title": "Gestión de Propiedades Hecha Fácil",
+        "step_1_title": "Añadir Propiedades",
+        "step_1_description": "Añade propiedades manualmente o importa automáticamente desde sistemas MLS",
+        "step_2_title": "Perfiles Completos",
+        "step_2_description": "Añade fotos, descripciones, planos y todos los detalles relevantes",
+        "step_3_title": "Seguimiento de Estado",
+        "step_3_description": "Rastrea estado: disponible, en opción, vendido, con actualizaciones automáticas",
+        "step_4_title": "Distribución Inteligente",
+        "step_4_description": "Comparte automáticamente con clientes matching vía portal y email"
+      },
+      "cta": {
+        "title": "Organiza tus propiedades",
+        "description": "Descubre cómo la gestión inteligente de propiedades ahorra tiempo y mejora el servicio",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "reporting_analytics": {
+      "meta_title": "Reportes y Analytics | Tesoro CRM",
+      "meta_description": "Reportes extensivos y analytics sobre tu rendimiento, tasas de conversión e ingresos. Toma decisiones basadas en datos.",
+      "hero": {
+        "badge": "Reportes y Analytics",
+        "title": "Insights Basados en Datos",
+        "description": "Reportes extensivos y analytics sobre tu rendimiento, tasas de conversión e ingresos. Dashboards en tiempo real y reportes automatizados te dan insight sobre qué funciona y qué no."
+      },
+      "benefits": {
+        "title": "Toma Decisiones Inteligentes",
+        "benefit_1_title": "Dashboards en Tiempo Real",
+        "benefit_1_description": "Vista en vivo de tu rendimiento, leads, conversiones e ingresos",
+        "benefit_2_title": "Reportes Automatizados",
+        "benefit_2_description": "Reportes semanales y mensuales automáticamente en tu bandeja de entrada",
+        "benefit_3_title": "Analytics Predictivo",
+        "benefit_3_description": "Predicciones de IA sobre tendencias del mercado y oportunidades"
+      },
+      "workflow": {
+        "title": "De Datos a Insight",
+        "step_1_title": "Recolección de Datos",
+        "step_1_description": "Todas las actividades, comunicaciones y resultados se rastrean automáticamente",
+        "step_2_title": "Análisis Inteligente",
+        "step_2_description": "La IA analiza patrones y tendencias en tu proceso de ventas",
+        "step_3_title": "Reportes Claros",
+        "step_3_description": "Reportes fáciles de entender con recomendaciones accionables",
+        "step_4_title": "Acciones Estratégicas",
+        "step_4_description": "Usa insights para optimizar tu estrategia y mejorar resultados"
+      },
+      "cta": {
+        "title": "Toma mejores decisiones",
+        "description": "Ve cómo los insights basados en datos mejoran tus resultados",
+        "primary": "Solicitar Demo",
+        "secondary": "Ver Precios"
+      }
+    },
+    "common": {
+      "workflow_title": "Cómo Funciona",
+      "benefits_title": "Beneficios",
+      "cta_section": "¿Listo para comenzar?"
+    }
+  },
   "search": {
     "open": "Abrir búsqueda",
     "close": "Cerrar",

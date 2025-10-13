@@ -1,0 +1,476 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../types/knowledge-base';
+import { getAuthor } from '../../utils/authors';
+
+const articles = await getCollection('knowledge-base');
+const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
+
+// Sort by date (newest first)
+const sortedArticles = articles.sort((a, b) => {
+  const dateA = new Date(a.data.meta.publishDate).getTime();
+  const dateB = new Date(b.data.meta.publishDate).getTime();
+  return dateB - dateA;
+});
+
+// Group by category
+const categories: Record<string, { nl: string; en: string; es: string; icon: string }> = {
+  'getting-started': {
+    nl: '🚀 Aan de Slag',
+    en: '🚀 Getting Started',
+    es: '🚀 Primeros Pasos',
+    icon: '🚀'
+  },
+  'contacts': {
+    nl: '👥 Contacten & Leads',
+    en: '👥 Contacts & Leads',
+    es: '👥 Contactos y Clientes Potenciales',
+    icon: '👥'
+  },
+  'properties': {
+    nl: '🏠 Properties',
+    en: '🏠 Properties',
+    es: '🏠 Propiedades',
+    icon: '🏠'
+  },
+  'communication': {
+    nl: '📧 Communicatie',
+    en: '📧 Communication',
+    es: '📧 Comunicación',
+    icon: '📧'
+  },
+  'integrations': {
+    nl: '🔗 Integraties',
+    en: '🔗 Integrations',
+    es: '🔗 Integraciones',
+    icon: '🔗'
+  },
+  'reports': {
+    nl: '📊 Rapportages',
+    en: '📊 Reports',
+    es: '📊 Informes',
+    icon: '📊'
+  },
+  'settings': {
+    nl: '⚙️ Instellingen',
+    en: '⚙️ Settings',
+    es: '⚙️ Configuración',
+    icon: '⚙️'
+  },
+  'troubleshooting': {
+    nl: '🆘 Troubleshooting',
+    en: '🆘 Troubleshooting',
+    es: '🆘 Solución de Problemas',
+    icon: '🆘'
+  },
+  'best-practices': {
+    nl: '💡 Best Practices',
+    en: '💡 Best Practices',
+    es: '💡 Mejores Prácticas',
+    icon: '💡'
+  },
+};
+
+const groupedArticles = Object.keys(categories).reduce((acc, cat) => {
+  acc[cat] = sortedArticles.filter(a => a.data.meta.category === cat);
+  return acc;
+}, {} as Record<string, typeof sortedArticles>);
+
+// Featured articles
+const featuredArticles = sortedArticles.filter(a => a.data.meta.featured).slice(0, 3);
+
+// Localized texts
+const pageTitle = locale === 'nl' ? 'Tesoro CRM Kennisbank' : locale === 'es' ? 'Base de Conocimientos de Tesoro CRM' : 'Tesoro CRM Knowledge Base';
+const pageDescription = locale === 'nl'
+  ? 'Vind antwoorden, leer nieuwe features, en word een Tesoro CRM expert.'
+  : locale === 'es'
+  ? 'Encuentra respuestas, aprende nuevas funciones y conviértete en un experto de Tesoro CRM.'
+  : 'Find answers, learn new features, and become a Tesoro CRM expert.';
+const searchPlaceholder = locale === 'nl' ? 'Zoek in de knowledge-base...' : locale === 'es' ? 'Buscar en la base de conocimientos...' : 'Search knowledge base...';
+const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es' ? 'Artículos Destacados' : 'Featured Articles';
+const allCategoriesText = locale === 'nl' ? 'Alle Categorieën' : locale === 'es' ? 'Todas las Categorías' : 'All Categories';
+const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <div class="knowledge-base">
+    <!-- Hero Section -->
+    <section class="knowledge-base__hero">
+      <div class="knowledge-base__container">
+        <h1 class="knowledge-base__title">{pageTitle}</h1>
+        <p class="knowledge-base__description">{pageDescription}</p>
+
+        <!-- Search Bar -->
+        <div class="knowledge-base__search">
+          <svg class="knowledge-base__search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input
+            type="search"
+            placeholder={searchPlaceholder}
+            class="knowledge-base__search-input"
+            id="kb-search"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="knowledge-base__container">
+      <!-- Featured Articles -->
+      {featuredArticles.length > 0 && (
+        <section class="knowledge-base__featured">
+          <h2 class="knowledge-base__section-title">{featuredText}</h2>
+          <div class="knowledge-base__featured-grid">
+            {featuredArticles.map(article => {
+              const data = article.data;
+              const author = getAuthor(data.meta.authorId);
+
+              return (
+                <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="kb-card kb-card--featured">
+                  <div class="kb-card__icon">{data.hero.icon || '📄'}</div>
+                  <div class="kb-card__content">
+                    <div class="kb-card__meta">
+                      <span class="kb-card__category">{categories[data.meta.category][locale]}</span>
+                      <span class="kb-card__difficulty kb-card__difficulty--{data.meta.difficulty}">
+                        {data.meta.difficulty}
+                      </span>
+                    </div>
+                    <h3 class="kb-card__title">{data.hero.title[locale]}</h3>
+                    <p class="kb-card__description">{data.hero.description[locale]}</p>
+                    <div class="kb-card__footer">
+                      <span class="kb-card__reading-time">
+                        ⏱️ {data.meta.readingTime} {minutesText}
+                      </span>
+                      {data.meta.videoIncluded && (
+                        <span class="kb-card__video">🎥 Video</span>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <!-- All Categories -->
+      <section class="knowledge-base__categories">
+        <h2 class="knowledge-base__section-title">{allCategoriesText}</h2>
+
+        {Object.entries(groupedArticles).map(([cat, arts]) => {
+          if (arts.length === 0) return null;
+
+          return (
+            <div class="kb-category">
+              <h3 class="kb-category__title">
+                <span class="kb-category__icon">{categories[cat].icon}</span>
+                {categories[cat][locale]}
+                <span class="kb-category__count">({arts.length})</span>
+              </h3>
+              <div class="kb-category__grid">
+                {arts.map(article => {
+                  const data = article.data;
+
+                  return (
+                    <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="kb-card">
+                      <div class="kb-card__header">
+                        <span class="kb-card__icon-small">{data.hero.icon || '📄'}</span>
+                        <span class="kb-card__difficulty kb-card__difficulty--{data.meta.difficulty}">
+                          {data.meta.difficulty}
+                        </span>
+                      </div>
+                      <h4 class="kb-card__title-small">{data.hero.title[locale]}</h4>
+                      <p class="kb-card__description-small">{data.hero.description[locale]}</p>
+                      <div class="kb-card__footer-small">
+                        <span>⏱️ {data.meta.readingTime} {minutesText}</span>
+                        {data.meta.videoIncluded && <span>🎥</span>}
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .knowledge-base {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f8fafc 0%, white 100%);
+  }
+
+  .knowledge-base__hero {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+
+  .knowledge-base__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .knowledge-base__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .knowledge-base__description {
+    font-size: 1.125rem;
+    opacity: 0.95;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Search Bar */
+  .knowledge-base__search {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .knowledge-base__search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+  }
+
+  .knowledge-base__search-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .knowledge-base__search-input:focus {
+    outline: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Sections */
+  .knowledge-base__featured,
+  .knowledge-base__categories {
+    margin-top: 3rem;
+  }
+
+  .knowledge-base__section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Featured Grid */
+  .knowledge-base__featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Cards */
+  .kb-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+    display: block;
+  }
+
+  .kb-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-primary);
+  }
+
+  .kb-card--featured {
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .kb-card__icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+  }
+
+  .kb-card__content {
+    flex: 1;
+  }
+
+  .kb-card__meta {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .kb-card__category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .kb-card__difficulty {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .kb-card__difficulty--beginner {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .kb-card__difficulty--intermediate {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .kb-card__difficulty--advanced {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .kb-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+  }
+
+  .kb-card__description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .kb-card__footer {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+
+  /* Category Sections */
+  .kb-category {
+    margin-bottom: 3rem;
+  }
+
+  .kb-category__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .kb-category__icon {
+    font-size: 1.75rem;
+  }
+
+  .kb-category__count {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 400;
+  }
+
+  .kb-category__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Small Cards */
+  .kb-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .kb-card__icon-small {
+    font-size: 1.5rem;
+  }
+
+  .kb-card__title-small {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+  }
+
+  .kb-card__description-small {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .kb-card__footer-small {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
+
+  @media (max-width: 768px) {
+    .knowledge-base__title {
+      font-size: 2rem;
+    }
+
+    .kb-card--featured {
+      flex-direction: column;
+    }
+
+    .kb-category__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Simple search functionality
+  document.getElementById('kb-search')?.addEventListener('input', (e) => {
+    const query = (e.target as HTMLInputElement).value.toLowerCase();
+    const cards = document.querySelectorAll('.kb-card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('.kb-card__title, .kb-card__title-small')?.textContent?.toLowerCase() || '';
+      const description = card.querySelector('.kb-card__description, .kb-card__description-small')?.textContent?.toLowerCase() || '';
+
+      if (title.includes(query) || description.includes(query)) {
+        (card as HTMLElement).style.display = '';
+      } else {
+        (card as HTMLElement).style.display = 'none';
+      }
+    });
+  });
+</script>

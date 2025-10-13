@@ -1,0 +1,342 @@
+---
+/**
+ * Interactive Tesoro Brand Color Palette Component
+ * Shows all brand colors with hex codes and usage examples
+ */
+
+const warmColors = [
+  { name: 'Yellow', var: '--tesoro-yellow', hex: '#FCC72C', usage: 'Tutorials, Attention' },
+  { name: 'Orange Light', var: '--tesoro-orange-light', hex: '#F8B131', usage: 'Friendly CTAs' },
+  { name: 'Coral', var: '--tesoro-coral', hex: '#EE7461', usage: 'Updates, News' },
+  { name: 'Orange', var: '--tesoro-orange', hex: '#ED6E19', usage: 'Primary CTAs' },
+  { name: 'Orange Dark', var: '--tesoro-orange-dark', hex: '#F18407', usage: 'Hover States' },
+  { name: 'Red', var: '--tesoro-red', hex: '#E84847', usage: 'Alerts, Urgency' },
+];
+
+const coolColors = [
+  { name: 'Pink', var: '--tesoro-pink', hex: '#E94A93', usage: 'Success Stories' },
+  { name: 'Pink Dark', var: '--tesoro-pink-dark', hex: '#CF1D5B', usage: 'Emphasis' },
+  { name: 'Burgundy', var: '--tesoro-burgundy', hex: '#B6154A', usage: 'Premium' },
+  { name: 'Red Bright', var: '--tesoro-red-bright', hex: '#E2071E', usage: 'Warnings' },
+  { name: 'Pink Light', var: '--tesoro-pink-light', hex: '#EE8BB6', usage: 'Soft Accents' },
+  { name: 'Purple Light', var: '--tesoro-purple-light', hex: '#8C6DAC', usage: 'Insights' },
+];
+
+const blueFamily = [
+  { name: 'Purple', var: '--tesoro-purple', hex: '#7C61A7', usage: 'Real Estate' },
+  { name: 'Blue Dark', var: '--tesoro-blue-dark', hex: '#3B529F', usage: 'CRM Tips' },
+  { name: 'Blue Navy', var: '--tesoro-blue-navy', hex: '#36398D', usage: 'Professional' },
+  { name: 'Blue Light', var: '--tesoro-blue-light', hex: '#57AEE3', usage: 'Integrations' },
+];
+---
+
+<div class="color-palette">
+  <div class="color-palette__header">
+    <h2 class="color-palette__title">Tesoro Brand Colors</h2>
+    <p class="color-palette__subtitle">Complete color system with usage guidelines</p>
+  </div>
+
+  <!-- Warm Colors -->
+  <section class="color-palette__section">
+    <h3 class="color-palette__section-title">Warm Colors (Energy & Action)</h3>
+    <div class="color-palette__grid">
+      {warmColors.map(color => (
+        <div class="color-palette__item">
+          <div 
+            class="color-palette__swatch"
+            style={`background-color: ${color.hex};`}
+            data-color={color.hex}
+          ></div>
+          <div class="color-palette__info">
+            <h4 class="color-palette__name">{color.name}</h4>
+            <code class="color-palette__hex">{color.hex}</code>
+            <code class="color-palette__var">var({color.var})</code>
+            <p class="color-palette__usage">{color.usage}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Cool Colors -->
+  <section class="color-palette__section">
+    <h3 class="color-palette__section-title">Cool Colors (Trust & Stability)</h3>
+    <div class="color-palette__grid">
+      {coolColors.map(color => (
+        <div class="color-palette__item">
+          <div 
+            class="color-palette__swatch"
+            style={`background-color: ${color.hex};`}
+            data-color={color.hex}
+          ></div>
+          <div class="color-palette__info">
+            <h4 class="color-palette__name">{color.name}</h4>
+            <code class="color-palette__hex">{color.hex}</code>
+            <code class="color-palette__var">var({color.var})</code>
+            <p class="color-palette__usage">{color.usage}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Blue Family -->
+  <section class="color-palette__section">
+    <h3 class="color-palette__section-title">Blue Family (Professional)</h3>
+    <div class="color-palette__grid">
+      {blueFamily.map(color => (
+        <div class="color-palette__item">
+          <div 
+            class="color-palette__swatch"
+            style={`background-color: ${color.hex};`}
+            data-color={color.hex}
+          ></div>
+          <div class="color-palette__info">
+            <h4 class="color-palette__name">{color.name}</h4>
+            <code class="color-palette__hex">{color.hex}</code>
+            <code class="color-palette__var">var({color.var})</code>
+            <p class="color-palette__usage">{color.usage}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Usage Examples -->
+  <section class="color-palette__examples">
+    <h3 class="color-palette__section-title">Usage Examples</h3>
+    
+    <div class="color-palette__example-group">
+      <h4>Blog Categories</h4>
+      <div class="color-palette__tags">
+        <span class="color-palette__tag" style="background: var(--tesoro-orange); color: white;">Case Study</span>
+        <span class="color-palette__tag" style="background: var(--tesoro-blue-dark); color: white;">CRM Tips</span>
+        <span class="color-palette__tag" style="background: var(--tesoro-pink); color: white;">Success Stories</span>
+        <span class="color-palette__tag" style="background: var(--tesoro-purple); color: white;">Real Estate</span>
+        <span class="color-palette__tag" style="background: var(--tesoro-blue-light); color: white;">Integrations</span>
+        <span class="color-palette__tag" style="background: var(--tesoro-yellow); color: white;">Tutorials</span>
+      </div>
+    </div>
+
+    <div class="color-palette__example-group">
+      <h4>Callout Variants</h4>
+      <div class="color-palette__callouts">
+        <div class="color-palette__callout" style="border-left-color: var(--tesoro-blue-light); background: #f0f9ff;">
+          💡 Info callout with blue accent
+        </div>
+        <div class="color-palette__callout" style="border-left-color: var(--tesoro-orange); background: #fff7ed;">
+          💡 Tip callout with orange accent
+        </div>
+        <div class="color-palette__callout" style="border-left-color: var(--tesoro-purple); background: #faf5ff;">
+          🎯 Insight callout with purple accent
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Copy color to clipboard functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const swatches = document.querySelectorAll('.color-palette__swatch');
+    
+    swatches.forEach(swatch => {
+      swatch.addEventListener('click', async () => {
+        const color = swatch.dataset.color;
+        try {
+          await navigator.clipboard.writeText(color);
+          
+          // Show feedback
+          const item = swatch.closest('.color-palette__item');
+          const originalContent = item.innerHTML;
+          item.innerHTML = `<div class="color-palette__copied">Copied ${color}!</div>`;
+          
+          setTimeout(() => {
+            item.innerHTML = originalContent;
+          }, 1000);
+        } catch (err) {
+          console.log('Failed to copy color:', err);
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .color-palette {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: var(--font-body);
+  }
+
+  .color-palette__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .color-palette__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .color-palette__subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+  }
+
+  .color-palette__section {
+    margin-bottom: 3rem;
+  }
+
+  .color-palette__section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--tesoro-orange);
+    padding-bottom: 0.5rem;
+  }
+
+  .color-palette__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .color-palette__item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .color-palette__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .color-palette__swatch {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .color-palette__swatch:hover {
+    transform: scale(1.05);
+  }
+
+  .color-palette__name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .color-palette__hex,
+  .color-palette__var {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background: #f8fafc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+  }
+
+  .color-palette__usage {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .color-palette__examples {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+  }
+
+  .color-palette__example-group {
+    margin-bottom: 2rem;
+  }
+
+  .color-palette__example-group h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .color-palette__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .color-palette__tag {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .color-palette__callouts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .color-palette__callout {
+    padding: 1rem 1.5rem;
+    border-left: 4px solid;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+  .color-palette__copied {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: var(--tesoro-orange);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    animation: pulse 0.3s ease;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @media (max-width: 768px) {
+    .color-palette {
+      padding: 1rem;
+    }
+
+    .color-palette__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .color-palette__tags {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .color-palette__callouts {
+      gap: 0.75rem;
+    }
+  }
+</style>

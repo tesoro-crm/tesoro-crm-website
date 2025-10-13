@@ -463,6 +463,223 @@
       }
     }
   },
+  "feature_pages": {
+    "smart_matching": {
+      "meta_title": "Smart Property-Customer Matching | Tesoro CRM",
+      "meta_description": "Automatic matching between properties and customers based on preferences, budget and location. Increase your conversion rate with AI-powered smart matching.",
+      "hero": {
+        "badge": "Smart Matching",
+        "title": "Smart Property-Customer Matching",
+        "description": "Automatic matching between properties and customers based on preferences, budget and location. The smart algorithm learns from every interaction and improves the matches."
+      },
+      "benefits": {
+        "title": "Why Smart Matching Works",
+        "benefit_1_title": "96% Accuracy",
+        "benefit_1_description": "Our AI algorithm achieves 96% accuracy in matching properties with the right customers",
+        "benefit_2_title": "3x Faster Sales",
+        "benefit_2_description": "Customers find their ideal property 3x faster through smart matching",
+        "benefit_3_title": "Higher Satisfaction",
+        "benefit_3_description": "Both customers and agents report higher satisfaction with matched properties"
+      },
+      "workflow": {
+        "title": "How Smart Matching Works",
+        "step_1_title": "Import Properties",
+        "step_1_description": "Add properties manually or sync automatically from your existing systems",
+        "step_2_title": "Customer Profile",
+        "step_2_description": "Customers fill in their preferences: budget, location, property type, and wishes",
+        "step_3_title": "AI Matching",
+        "step_3_description": "Our algorithm analyzes all data and creates smart matches in real-time",
+        "step_4_title": "Instant Notifications",
+        "step_4_description": "You and the customer immediately receive notifications of new matches"
+      },
+      "cta": {
+        "title": "Ready to work smarter?",
+        "description": "Discover how smart matching can transform your sales process",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "deal_pipeline": {
+      "meta_title": "Deal Pipeline Management | Tesoro CRM",
+      "meta_description": "Advanced deal pipeline management with automated stages, progress tracking and smart reminders. Never lose a deal again.",
+      "hero": {
+        "badge": "Deal Pipeline",
+        "title": "Advanced Deal Pipeline Management",
+        "description": "Keep track of all your deals from first contact to closing. Automated stages, smart reminders and clear overview ensure you never drop the ball again."
+      },
+      "benefits": {
+        "title": "Never Lose a Deal Again",
+        "benefit_1_title": "Clear Overview",
+        "benefit_1_description": "Visual pipeline with all deals at different stages, from lead to closing",
+        "benefit_2_title": "Automated Reminders",
+        "benefit_2_description": "Smart reminders for follow-ups, appointments and important deadlines",
+        "benefit_3_title": "Performance Analytics",
+        "benefit_3_description": "Detailed insights into your conversion rates and bottlenecks per stage"
+      },
+      "workflow": {
+        "title": "From Lead to Closing",
+        "step_1_title": "Lead Qualification",
+        "step_1_description": "Automatically score and qualify incoming leads based on budget and interest",
+        "step_2_title": "Property Viewings",
+        "step_2_description": "Schedule viewings and track customer feedback and interest level",
+        "step_3_title": "Offer Negotiations",
+        "step_3_description": "Manage offers, counteroffers and negotiations with built-in communication tools",
+        "step_4_title": "Contract & Closing",
+        "step_4_description": "Handle contracts, document signing and final closing steps"
+      },
+      "cta": {
+        "title": "Close more deals",
+        "description": "See how advanced pipeline management increases your success rate",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "customer_portal": {
+      "meta_title": "Customer Portal | Tesoro CRM",
+      "meta_description": "Give your customers their own portal where they can view properties, provide feedback and track progress. Improve customer satisfaction and save time.",
+      "hero": {
+        "badge": "Customer Portal",
+        "title": "Personal Customer Portal",
+        "description": "Give your customers their own portal where they can view matched properties, provide feedback and track the progress of their search. Modern, user-friendly and mobile-optimized."
+      },
+      "benefits": {
+        "title": "Happy Customers, Less Work",
+        "benefit_1_title": "24/7 Access",
+        "benefit_1_description": "Customers can view new matches and property details anytime, anywhere",
+        "benefit_2_title": "Instant Feedback",
+        "benefit_2_description": "Customers can immediately indicate interest or rejection with one click",
+        "benefit_3_title": "Self-Service",
+        "benefit_3_description": "Reduce questions and calls through self-service functionality in the portal"
+      },
+      "workflow": {
+        "title": "How the Customer Portal Works",
+        "step_1_title": "Personal Dashboard",
+        "step_1_description": "Each customer gets their own secure dashboard with overview of matches",
+        "step_2_title": "Property Details",
+        "step_2_description": "Complete property information with photos, floor plans and neighborhood info",
+        "step_3_title": "Feedback System",
+        "step_3_description": "Simple feedback system: interested, not interested, or request more info",
+        "step_4_title": "Communication Hub",
+        "step_4_description": "All communication with the agent in one place, including appointments and documents"
+      },
+      "cta": {
+        "title": "Provide better customer experience",
+        "description": "Discover how the customer portal improves satisfaction and saves time",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "email_integration": {
+      "meta_title": "Email Integration | Tesoro CRM",
+      "meta_description": "Seamless integration with Gmail, Outlook and other email systems. All communication automatically stored in the customer file.",
+      "hero": {
+        "badge": "Email Integration",
+        "title": "Seamless Email Integration",
+        "description": "Complete integration with Gmail, Outlook and other email systems. All your communication is automatically stored in the right customer file, so you never lose track of the conversation."
+      },
+      "benefits": {
+        "title": "Never Search for Emails Again",
+        "benefit_1_title": "Auto-Sync",
+        "benefit_1_description": "All emails are automatically linked to the right customers and properties",
+        "benefit_2_title": "Complete History",
+        "benefit_2_description": "Complete communication history per customer in one clear overview",
+        "benefit_3_title": "Email Templates",
+        "benefit_3_description": "Professional email templates for every stage of the sales process"
+      },
+      "workflow": {
+        "title": "How Email Integration Works",
+        "step_1_title": "Connect Email",
+        "step_1_description": "Connect your existing Gmail, Outlook or other email account with one click",
+        "step_2_title": "Automatic Recognition",
+        "step_2_description": "Tesoro recognizes email addresses and links messages to the right customer",
+        "step_3_title": "Smart Organization",
+        "step_3_description": "Emails are automatically organized per customer and property in your CRM",
+        "step_4_title": "Template Library",
+        "step_4_description": "Use professional templates for follow-ups, offers and confirmations"
+      },
+      "cta": {
+        "title": "Work more efficiently",
+        "description": "See how email integration streamlines your communication",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "property_management": {
+      "meta_title": "Property Management | Tesoro CRM",
+      "meta_description": "Complete property management system with photo management, documents, viewing planning and status tracking.",
+      "hero": {
+        "badge": "Property Management",
+        "title": "Complete Property Management",
+        "description": "Manage all your properties in one central system. From photos and descriptions to viewing schedules and document management - everything organized and easily accessible."
+      },
+      "benefits": {
+        "title": "All Properties Under Control",
+        "benefit_1_title": "Central Database",
+        "benefit_1_description": "All property information, photos and documents in one searchable system",
+        "benefit_2_title": "Smart Organization",
+        "benefit_2_description": "Automatic categorization by type, location, price range and status",
+        "benefit_3_title": "Quick Sharing",
+        "benefit_3_description": "Instantly share property details with customers via portal or email"
+      },
+      "workflow": {
+        "title": "Property Management Made Easy",
+        "step_1_title": "Add Properties",
+        "step_1_description": "Add properties manually or import automatically from MLS systems",
+        "step_2_title": "Complete Profiles",
+        "step_2_description": "Add photos, descriptions, floor plans and all relevant details",
+        "step_3_title": "Status Tracking",
+        "step_3_description": "Track status: available, under option, sold, with automatic updates",
+        "step_4_title": "Smart Distribution",
+        "step_4_description": "Automatically share with matching customers via the portal and email"
+      },
+      "cta": {
+        "title": "Organize your properties",
+        "description": "Discover how smart property management saves time and improves service",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "reporting_analytics": {
+      "meta_title": "Reporting & Analytics | Tesoro CRM",
+      "meta_description": "Extensive reports and analytics about your performance, conversion rates, and revenue. Make data-driven decisions.",
+      "hero": {
+        "badge": "Reporting & Analytics",
+        "title": "Data-Driven Insights",
+        "description": "Extensive reports and analytics about your performance, conversion rates, and revenue. Real-time dashboards and automated reports give you insight into what works and what doesn't."
+      },
+      "benefits": {
+        "title": "Make Smart Decisions",
+        "benefit_1_title": "Real-time Dashboards",
+        "benefit_1_description": "Live overview of your performance, leads, conversions and revenue",
+        "benefit_2_title": "Automated Reports",
+        "benefit_2_description": "Weekly and monthly reports automatically in your inbox",
+        "benefit_3_title": "Predictive Analytics",
+        "benefit_3_description": "AI predictions about market trends and opportunities"
+      },
+      "workflow": {
+        "title": "From Data to Insight",
+        "step_1_title": "Data Collection",
+        "step_1_description": "All activities, communications and results are automatically tracked",
+        "step_2_title": "Smart Analysis",
+        "step_2_description": "AI analyzes patterns and trends in your sales process",
+        "step_3_title": "Clear Reports",
+        "step_3_description": "Easy-to-understand reports with actionable recommendations",
+        "step_4_title": "Strategic Actions",
+        "step_4_description": "Use insights to optimize your strategy and improve results"
+      },
+      "cta": {
+        "title": "Make better decisions",
+        "description": "See how data-driven insights improve your results",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "common": {
+      "workflow_title": "How It Works",
+      "benefits_title": "Benefits",
+      "cta_section": "Ready to get started?"
+    }
+  },
   "search": {
     "open": "Open search",
     "close": "Close",

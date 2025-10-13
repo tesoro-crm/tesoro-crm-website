@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
 import Badge from '../components/ui/Badge.astro';
-import { getLocale, loadTranslations, t } from '../i18n/utils';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
 const locale: Language = getLocale(Astro.currentLocale);
@@ -194,7 +194,7 @@ const faqs = [
               variant={plan.highlighted ? 'primary' : 'outline'} 
               size="lg" 
               fullWidth
-              href="/signup"
+              href={getLocalizedPath('/signup', locale)}
             >
               {plan.cta}
             </Button>
@@ -206,7 +206,7 @@ const faqs = [
         <p class="text-neutral-700 mb-4">
           Bespaar 20% met jaarlijkse betaling
         </p>
-        <Button variant="ghost" href="/contact">
+        <Button variant="ghost" href={getLocalizedPath('/contact', locale)}>
           Vragen over Enterprise? Neem contact op
         </Button>
       </div>
@@ -265,7 +265,7 @@ const faqs = [
                 <span>€12K extra omzet gemiddeld</span>
               </li>
             </ul>
-            <Button variant="secondary" size="lg" href="/roi-calculator">
+            <Button variant="secondary" size="lg" href={getLocalizedPath('/roi-calculator', locale)}>
               {t('pricing_page.roi_cta', locale)}
             </Button>
           </div>
@@ -303,7 +303,7 @@ const faqs = [
 
       <div class="text-center mt-12">
         <p class="text-neutral-700 mb-4">{t('pricing_page.more_questions', locale)}</p>
-        <Button variant="outline" href="/contact">
+        <Button variant="outline" href={getLocalizedPath('/contact', locale)}>
           {t('cta.contact', locale)}
         </Button>
       </div>
@@ -320,10 +320,10 @@ const faqs = [
         {t('pricing.cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button variant="secondary" size="lg" href="/signup">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
           {t('pricing.cta.cta_primary', locale)}
         </Button>
-        <Button variant="ghost" size="lg" href="/demo" class="border-2 border-white hover:bg-white hover:text-primary">
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/demo', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
           {t('pricing.cta.cta_secondary', locale)}
         </Button>
       </div>

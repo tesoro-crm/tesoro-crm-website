@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "id": "system-architecture-overview",
+    "version": "1.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T15:00:00Z",
+    "authorId": "maria-perez", 
+    "category": "getting-started",
+    "difficulty": "intermediate",
+    "tags": ["architecture", "system-overview", "modules", "enterprise"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop",
+    "keywords": ["Tesoro CRM architectuur", "systeem overzicht", "modules", "enterprise CRM", "real estate platform"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Tesoro CRM Systeem Architectuur - Complete Gids",
+      "en": "Tesoro CRM System Architecture - Complete Guide", 
+      "es": "Arquitectura del Sistema Tesoro CRM - Guía Completa"
+    },
+    "description": {
+      "nl": "Ontdek de complete architectuur van Tesoro CRM: 8 core modules, 118+ pagina's, en enterprise-level functionaliteiten voor moderne makelaars.",
+      "en": "Discover the complete architecture of Tesoro CRM: 8 core modules, 118+ pages, and enterprise-level functionality for modern real estate professionals.",
+      "es": "Descubre la arquitectura completa de Tesoro CRM: 8 módulos principales, más de 118 páginas y funcionalidades de nivel empresarial para profesionales inmobiliarios modernos."
+    },
+    "icon": "🏗️"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM helpt je meer deals sluiten door alle aspecten van je vastgoed business te automatiseren en te optimaliseren. Van lead capture tot deal sluiting - alles werkt samen om je productiviteit te maximaliseren.</p><p>Deze gids laat zien hoe je elke module gebruikt om meer omzet te genereren en klanten beter te bedienen.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM helps you close more deals by automating and optimizing every aspect of your real estate business. From lead capture to deal closing - everything works together to maximize your productivity.</p><p>This guide shows you how to use each module to generate more revenue and better serve your clients.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM te ayuda a cerrar más deals automatizando y optimizando cada aspecto de tu negocio inmobiliario. Desde la captura de leads hasta el cierre de deals - todo trabaja en conjunto para maximizar tu productividad.</p><p>Esta guía te muestra cómo usar cada módulo para generar más ingresos y servir mejor a tus clientes.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "core-modules",
+      "title": {
+        "nl": "8 Core Business Modules",
+        "en": "8 Core Business Modules",
+        "es": "8 Módulos de Negocio Principales"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM is opgebouwd rond 8 primaire resource modules die de complete vastgoed workflow ondersteunen:</p><ol><li><strong>LEADS</strong> - Lead capture en kwalificatie systeem</li><li><strong>CONTACTS</strong> - Complete contactbeheer met property matching</li><li><strong>DEALS</strong> - 9-stage sales pipeline met real-time collaboration</li><li><strong>PROPERTIES</strong> - Geavanceerd property management met 69+ attributen</li><li><strong>PROJECTS</strong> - Project management voor grote ontwikkelingen</li><li><strong>RELATIONS</strong> - B2B relationship management</li><li><strong>EMAILS</strong> - Thread-based email management met AI</li><li><strong>ACTIVITIES</strong> - Complete activity tracking en analytics</li></ol>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM is built around 8 primary resource modules that support the complete real estate workflow:</p><ol><li><strong>LEADS</strong> - Lead capture and qualification system</li><li><strong>CONTACTS</strong> - Complete contact management with property matching</li><li><strong>DEALS</strong> - 9-stage sales pipeline with real-time collaboration</li><li><strong>PROPERTIES</strong> - Advanced property management with 69+ attributes</li><li><strong>PROJECTS</strong> - Project management for large developments</li><li><strong>RELATIONS</strong> - B2B relationship management</li><li><strong>EMAILS</strong> - Thread-based email management with AI</li><li><strong>ACTIVITIES</strong> - Complete activity tracking and analytics</li></ol>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM está construido alrededor de 8 módulos de recursos principales que respaldan el flujo de trabajo completo de bienes raíces:</p><ol><li><strong>LEADS</strong> - Sistema de captura y calificación de leads</li><li><strong>CONTACTOS</strong> - Gestión completa de contactos con coincidencia de propiedades</li><li><strong>DEALS</strong> - Pipeline de ventas de 9 etapas con colaboración en tiempo real</li><li><strong>PROPIEDADES</strong> - Gestión avanzada de propiedades con más de 69 atributos</li><li><strong>PROYECTOS</strong> - Gestión de proyectos para grandes desarrollos</li><li><strong>RELACIONES</strong> - Gestión de relaciones B2B</li><li><strong>EMAILS</strong> - Gestión de emails basada en hilos con IA</li><li><strong>ACTIVIDADES</strong> - Seguimiento completo de actividades y análisis</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "unified-architecture", 
+      "variant": "info",
+      "title": {
+        "nl": "💡 Unified Component Architecture",
+        "en": "💡 Unified Component Architecture", 
+        "es": "💡 Arquitectura de Componentes Unificada"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro gebruikt een intelligente unified architecture waarbij leads en contacts DEZELFDE component delen (ResourceContactOverview) met alleen een status parameter. Dit zorgt voor consistentie en minder code duplicatie.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro uses an intelligent unified architecture where leads and contacts share the SAME component (ResourceContactOverview) with only a status parameter. This ensures consistency and reduces code duplication.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro utiliza una arquitectura unificada inteligente donde los leads y contactos comparten el MISMO componente (ResourceContactOverview) con solo un parámetro de estado. Esto garantiza consistencia y reduce la duplicación de código.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "detailed-modules",
+      "title": {
+        "nl": "Gedetailleerde Module Analyse",
+        "en": "Detailed Module Analysis",
+        "es": "Análisis Detallado de Módulos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basis contactinformatie en preferences</li><li><strong>DEAL</strong> - Gekoppelde deals en pipeline status</li><li><strong>EMAILS</strong> - Complete email geschiedenis met threading</li><li><strong>CALLS</strong> - Call logs met Twilio integratie</li><li><strong>MEETINGS</strong> - Meeting historie en scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>NOTES</strong> - Notes met @mentions en AI translation</li><li><strong>SMS</strong> - SMS communicatie historie</li><li><strong>WHATSAPP</strong> - WhatsApp Business integratie</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>Het property systeem bevat <strong>69+ enum types</strong> voor complete property characterisatie: van basic types (status, type, contactType) tot geavanceerde features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integratie voor 13 talen en 3 landen.</p>"
+        },
+        "en": {
+          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basic contact information and preferences</li><li><strong>DEAL</strong> - Associated deals and pipeline status</li><li><strong>EMAILS</strong> - Complete email history with threading</li><li><strong>CALLS</strong> - Call logs with Twilio integration</li><li><strong>MEETINGS</strong> - Meeting history and scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>NOTES</strong> - Notes with @mentions and AI translation</li><li><strong>SMS</strong> - SMS communication history</li><li><strong>WHATSAPP</strong> - WhatsApp Business integration</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>The property system contains <strong>69+ enum types</strong> for complete property characterization: from basic types (status, type, contactType) to advanced features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integration for 13 languages and 3 countries.</p>"
+        },
+        "es": {
+          "text": "<h3>Sub-Módulos de Contacto/Lead (10 Pestañas por Contacto)</h3><ul><li><strong>INFO</strong> - Información básica de contacto y preferencias</li><li><strong>DEAL</strong> - Deals asociados y estado del pipeline</li><li><strong>EMAILS</strong> - Historial completo de emails con hilos</li><li><strong>CALLS</strong> - Registros de llamadas con integración Twilio</li><li><strong>MEETINGS</strong> - Historial de reuniones y programación</li><li><strong>TASKS</strong> - Gestión de tareas por contacto</li><li><strong>NOTES</strong> - Notas con @menciones y traducción IA</li><li><strong>SMS</strong> - Historial de comunicación SMS</li><li><strong>WHATSAPP</strong> - Integración WhatsApp Business</li><li><strong>ATTACHMENTS</strong> - Gestión de archivos por contacto</li></ul><h3>Sistema de Propiedades Avanzado</h3><p>El sistema de propiedades contiene <strong>más de 69 tipos de enum</strong> para caracterización completa de propiedades: desde tipos básicos (estado, tipo, contactType) hasta características avanzadas (energyRatingType, swimmingPoolType, windowsMaterialType). Además de integración Kyero MLS para 13 idiomas y 3 países.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "communication-systems",
+      "title": {
+        "nl": "Communication Ecosystem",
+        "en": "Communication Ecosystem", 
+        "es": "Ecosistema de Comunicación"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integreert alle communicatiekanalen in één systeem:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony met real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, en IMAP/SMTP integratie</li><li><strong>WhatsApp Business</strong> - Template-based messaging met pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS verzending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels voor live data sync</li><li><strong>@Mentions System</strong> - Tag team members in notes, emails, deals</li><li><strong>Audio Notifications</strong> - Sound alerts voor critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all team members</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integrates all communication channels into one system:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony with real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, and IMAP/SMTP integration</li><li><strong>WhatsApp Business</strong> - Template-based messaging with pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS sending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels for live data sync</li><li><strong>@Mentions System</strong> - Tag team members in notes, emails, deals</li><li><strong>Audio Notifications</strong> - Sound alerts for critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all team members</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Hub de Comunicación Multi-Canal</h3><p>Tesoro integra todos los canales de comunicación en un sistema:</p><ul><li><strong>Llamadas Twilio</strong> - Telefonía empresarial con eventos de llamadas en tiempo real a través de Pusher WebSockets</li><li><strong>Hilos de Email</strong> - Integración Gmail API, Outlook API e IMAP/SMTP</li><li><strong>WhatsApp Business</strong> - Mensajería basada en plantillas con templates de negocio pre-aprobados</li><li><strong>Integración SMS</strong> - Envío directo de SMS a través del proveedor</li></ul><h3>Colaboración en Tiempo Real</h3><ul><li><strong>Pusher WebSockets</strong> - Canales por usuario para sincronización de datos en vivo</li><li><strong>Sistema @Menciones</strong> - Etiqueta miembros del equipo en notas, emails, deals</li><li><strong>Notificaciones de Audio</strong> - Alertas de sonido para eventos críticos</li><li><strong>Actualizaciones en Vivo</strong> - Actualización en tiempo real para todos los miembros del equipo</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "ai-automation",
+      "title": {
+        "nl": "AI & Automatisering",
+        "en": "AI & Automation",
+        "es": "IA y Automatización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>OpenAI Integration</h3><ul><li><strong>Multi-Language Translation</strong> - Context-aware translation via OpenAI API</li><li><strong>Custom AI Prompts</strong> - Template systeem voor verschillende business operaties</li><li><strong>Property Descriptions</strong> - AI-powered content generation per taal</li></ul><h3>Smart Matching Algorithms</h3><ul><li><strong>Property-Deal Matching</strong> - AI matcht properties aan deal requirements</li><li><strong>Interest Scoring</strong> - Engagement-based property ranking</li><li><strong>Reverse Matching</strong> - Find deals voor specific properties</li></ul><h3>Business Process Automation</h3><ul><li><strong>Deal Pipeline</strong> - Automated status transitions met business rules</li><li><strong>Communication Templates</strong> - Automated WhatsApp en email templates</li><li><strong>Lead Qualification</strong> - Automatic lead scoring en routing</li></ul>"
+        },
+        "en": {
+          "text": "<h3>OpenAI Integration</h3><ul><li><strong>Multi-Language Translation</strong> - Context-aware translation via OpenAI API</li><li><strong>Custom AI Prompts</strong> - Template system for various business operations</li><li><strong>Property Descriptions</strong> - AI-powered content generation per language</li></ul><h3>Smart Matching Algorithms</h3><ul><li><strong>Property-Deal Matching</strong> - AI matches properties to deal requirements</li><li><strong>Interest Scoring</strong> - Engagement-based property ranking</li><li><strong>Reverse Matching</strong> - Find deals for specific properties</li></ul><h3>Business Process Automation</h3><ul><li><strong>Deal Pipeline</strong> - Automated status transitions with business rules</li><li><strong>Communication Templates</strong> - Automated WhatsApp and email templates</li><li><strong>Lead Qualification</strong> - Automatic lead scoring and routing</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Integración OpenAI</h3><ul><li><strong>Traducción Multi-Idioma</strong> - Traducción consciente del contexto a través de la API OpenAI</li><li><strong>Prompts de IA Personalizados</strong> - Sistema de plantillas para varias operaciones comerciales</li><li><strong>Descripciones de Propiedades</strong> - Generación de contenido impulsado por IA por idioma</li></ul><h3>Algoritmos de Coincidencia Inteligente</h3><ul><li><strong>Coincidencia Propiedad-Deal</strong> - La IA hace coincidir propiedades con requisitos de deal</li><li><strong>Puntuación de Interés</strong> - Clasificación de propiedades basada en engagement</li><li><strong>Coincidencia Inversa</strong> - Encuentra deals para propiedades específicas</li></ul><h3>Automatización de Procesos de Negocio</h3><ul><li><strong>Pipeline de Deals</strong> - Transiciones de estado automatizadas con reglas de negocio</li><li><strong>Plantillas de Comunicación</strong> - Plantillas automatizadas de WhatsApp y email</li><li><strong>Calificación de Leads</strong> - Puntuación automática de leads y enrutamiento</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "enterprise-features",
+      "variant": "success",
+      "title": {
+        "nl": "🚀 Enterprise Infrastructure",
+        "en": "🚀 Enterprise Infrastructure",
+        "es": "🚀 Infraestructura Empresarial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Modern Tech Stack:</strong> Nuxt 3, Vue 3, TypeScript, MongoDB, Yii2 PHP</p><p><strong>Real-Time System:</strong> Pusher WebSockets voor live data sync</p><p><strong>Security:</strong> Role-based access, subscription validation, GDPR compliance</p><p><strong>Scalability:</strong> Cloud-ready architecture met AWS S3 integration</p>"
+        },
+        "en": {
+          "text": "<p><strong>Modern Tech Stack:</strong> Nuxt 3, Vue 3, TypeScript, MongoDB, Yii2 PHP</p><p><strong>Real-Time System:</strong> Pusher WebSockets for live data sync</p><p><strong>Security:</strong> Role-based access, subscription validation, GDPR compliance</p><p><strong>Scalability:</strong> Cloud-ready architecture with AWS S3 integration</p>"
+        },
+        "es": {
+          "text": "<p><strong>Stack Tecnológico Moderno:</strong> Nuxt 3, Vue 3, TypeScript, MongoDB, Yii2 PHP</p><p><strong>Sistema en Tiempo Real:</strong> Pusher WebSockets para sincronización de datos en vivo</p><p><strong>Seguridad:</strong> Acceso basado en roles, validación de suscripción, cumplimiento GDPR</p><p><strong>Escalabilidad:</strong> Arquitectura lista para la nube con integración AWS S3</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-guide", 
+    "property-management-advanced",
+    "ai-translation-features"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel pagina's heeft Tesoro CRM in totaal?",
+        "en": "How many pages does Tesoro CRM have in total?",
+        "es": "¿Cuántas páginas tiene Tesoro CRM en total?"
+      },
+      "answer": {
+        "nl": "Tesoro CRM heeft meer dan 118 pagina's, opgebouwd uit 747+ Vue componenten. Dit omvat alle modules, sub-pagina's, instellingen, en gedetailleerde views per resource.",
+        "en": "Tesoro CRM has over 118 pages, built from 747+ Vue components. This includes all modules, sub-pages, settings, and detailed views per resource.",
+        "es": "Tesoro CRM tiene más de 118 páginas, construidas a partir de 747+ componentes Vue. Esto incluye todos los módulos, sub-páginas, configuraciones y vistas detalladas por recurso."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat maakt Tesoro CRM anders dan andere CRM systemen?",
+        "en": "What makes Tesoro CRM different from other CRM systems?",
+        "es": "¿Qué hace que Tesoro CRM sea diferente de otros sistemas CRM?"
+      },
+      "answer": {
+        "nl": "Tesoro is speciaal gebouwd voor vastgoed met AI-powered property matching, unified communication hub, real-time collaboration, en 69+ property attributen. Plus native OpenAI integratie voor multi-language support.",
+        "en": "Tesoro is specifically built for real estate with AI-powered property matching, unified communication hub, real-time collaboration, and 69+ property attributes. Plus native OpenAI integration for multi-language support.",
+        "es": "Tesoro está específicamente construido para bienes raíces con coincidencia de propiedades impulsada por IA, hub de comunicación unificado, colaboración en tiempo real, y más de 69 atributos de propiedades. Además de integración nativa OpenAI para soporte multi-idioma."
+      }
+    }
+  ]
+}

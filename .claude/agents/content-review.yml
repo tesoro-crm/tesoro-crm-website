@@ -1,0 +1,275 @@
+name: Tesoro CRM - Content Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+    paths:
+      - 'src/content/**'
+      - 'docs/**/*.md'
+      - 'README.md'
+      - 'src/pages/**/*.astro'
+      - 'src/utils/authors.ts'
+
+jobs:
+  content-review:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+      id-token: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Analyze content changes
+        id: content-scope
+        run: |
+          changed_files=$(git diff --name-only HEAD^ HEAD)
+          
+          blog_content=false
+          kb_content=false
+          documentation=false
+          page_content=false
+          author_data=false
+          
+          if echo "$changed_files" | grep -E 'src/content/blog/' | wc -l | grep -q -v '^0$'; then
+            blog_content=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'src/content/knowledge-base/' | wc -l | grep -q -v '^0$'; then
+            kb_content=true
+          fi
+          
+          if echo "$changed_files" | grep -E '\.md$' | wc -l | grep -q -v '^0$'; then
+            documentation=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'src/pages/.*\.astro$' | wc -l | grep -q -v '^0$'; then
+            page_content=true
+          fi
+          
+          if echo "$changed_files" | grep -E 'src/utils/authors\.ts' | wc -l | grep -q -v '^0$'; then
+            author_data=true
+          fi
+          
+          echo "blog_content=$blog_content" >> $GITHUB_OUTPUT
+          echo "kb_content=$kb_content" >> $GITHUB_OUTPUT
+          echo "documentation=$documentation" >> $GITHUB_OUTPUT
+          echo "page_content=$page_content" >> $GITHUB_OUTPUT
+          echo "author_data=$author_data" >> $GITHUB_OUTPUT
+
+      - name: Run Content Quality Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          track_progress: true
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR NUMBER: ${{ github.event.pull_request.number }}
+            
+            ✍️ **TESORO CRM CONTENT REVIEW**
+            
+            You are reviewing content changes for Tesoro CRM, focusing on quality, brand compliance, and user value.
+            
+            **CONTENT SCOPE ANALYSIS:**
+            - Blog Content: ${{ steps.content-scope.outputs.blog_content }}
+            - Knowledge Base: ${{ steps.content-scope.outputs.kb_content }}
+            - Documentation: ${{ steps.content-scope.outputs.documentation }}
+            - Page Content: ${{ steps.content-scope.outputs.page_content }}
+            - Author Data: ${{ steps.content-scope.outputs.author_data }}
+            
+            ## 🎯 CONTENT REVIEW FOCUS
+            
+            ### 1. **Brand Voice & Messaging**
+            Reference: `docs/product/brand-identity.md`
+            
+            **Tone of Voice:**
+            - ✅ Professional but accessible (no corporate jargon)
+            - ✅ Helpful advisor, not salesperson
+            - ✅ Human and approachable with empathy
+            - ✅ Technical accuracy without complexity
+            
+            **Key Messages Consistency:**
+            - ✅ "Don't wait for leads — Tesoro searches and matches for you"
+            - ✅ "All your communication and deal process in one clear system"
+            - ✅ "Build relationships AND close deals — Tesoro supports both"
+            - ✅ "Integrations with tools you already use (Gmail, Outlook)"
+            
+            **Language-Specific Adaptations:**
+            - ✅ **Dutch**: Direct, practical, focus on efficiency ("U" formal, "je" tutorials)
+            - ✅ **English**: Professional, benefit-focused, global perspective
+            - ✅ **Spanish**: Friendly, detailed explanations, passionate about solutions
+            
+            ### 2. **Product Information Accuracy**
+            Reference: `docs/product/product-specs.md`
+            
+            **Pricing Accuracy:**
+            - ✅ €99/month up to 10 users (excluding VAT)
+            - ✅ €10/month per additional user beyond 10
+            - ✅ Custom development: €1,000 - €5,000 depending on scope
+            - ✅ No email hosting included (integrates with Gmail/Outlook)
+            
+            **Feature Descriptions:**
+            - ✅ Smart property-customer matching (2x per day)
+            - ✅ Customer portal with feedback loop
+            - ✅ Visual Kanban deal management
+            - ✅ Native email integration (Gmail/Outlook)
+            - ✅ Real estate-focused features (MLS, property management)
+            
+            **Target Audience:**
+            - ✅ Real estate agents and professionals
+            - ✅ Focus on active sales vs. passive lead management
+            - ✅ Spanish market primary, international expansion planned
+            
+            ### 3. **Content Structure & Quality**
+            
+            **Blog Posts** (if applicable):
+            Reference: `docs/content/blog/ai-guidelines.md`
+            - ✅ Required sections: Hero, Introduction, Problem, Solution, Results, Takeaways, CTA
+            - ✅ Reading time: 5-12 minutes (1,500-3,500 words)
+            - ✅ SEO optimization: 50-60 char titles, 150-160 char descriptions
+            - ✅ Category colors and consistent taxonomy
+            
+            **Knowledge Base** (if applicable):
+            Reference: `docs/content/knowledge-base/ai-instructions.md`
+            - ✅ English slugs for cross-language consistency
+            - ✅ Proper category assignment (getting-started, contacts, etc.)
+            - ✅ Difficulty level appropriate (beginner, intermediate, advanced)
+            - ✅ Step-by-step structure with screenshots
+            
+            **Documentation** (if applicable):
+            - ✅ Clear, actionable information
+            - ✅ Proper markdown formatting and hierarchy
+            - ✅ Internal linking and cross-references
+            - ✅ Up-to-date information aligned with current features
+            
+            ### 4. **Multilingual Implementation**
+            
+            **JSON Structure Validation:**
+            - ✅ All text fields have nl, en, es keys
+            - ✅ Translations complete and culturally appropriate
+            - ✅ Consistent terminology across languages
+            - ✅ Proper character encoding and special characters
+            
+            **Content Localization:**
+            - ✅ Cultural adaptation where needed
+            - ✅ Local examples and references
+            - ✅ Currency and date format consistency
+            - ✅ Market-specific information accuracy
+            
+            ### 5. **SEO & Discoverability**
+            Reference: `docs/operations/seo.md`
+            
+            **Meta Information:**
+            - ✅ Title tags 50-60 characters with primary keywords
+            - ✅ Meta descriptions 150-160 characters with CTA
+            - ✅ Keywords naturally integrated in content
+            - ✅ Proper heading hierarchy (H1 → H2 → H3)
+            
+            **Content Optimization:**
+            - ✅ Primary keywords in first 200 words
+            - ✅ Internal linking to related content
+            - ✅ Image alt text descriptive and keyword-rich
+            - ✅ URL structure clean and descriptive
+            
+            ### 6. **User Experience & Value**
+            
+            **Content Value:**
+            - ✅ Solves real user problems
+            - ✅ Actionable information provided
+            - ✅ Clear next steps or CTAs
+            - ✅ Appropriate depth for target audience
+            
+            **Readability:**
+            - ✅ Clear, concise writing
+            - ✅ Logical flow and structure
+            - ✅ Proper use of headings and bullet points
+            - ✅ Examples and explanations where needed
+            
+            ### 7. **Technical Implementation**
+            
+            **Schema Compliance:**
+            - ✅ JSON structure matches Zod schema (src/content/config.ts)
+            - ✅ All required fields populated
+            - ✅ Proper data types and formats
+            - ✅ Valid image URLs and alt text
+            
+            **Content Assets:**
+            - ✅ Images optimized for web (WebP, proper sizing)
+            - ✅ Screenshots current and high quality
+            - ✅ Videos properly embedded and accessible
+            - ✅ External links working and appropriate
+            
+            ## 📝 CONTENT QUALITY CHECKLIST
+            
+            ### Writing Quality
+            - [ ] Clear, engaging, and valuable to target audience
+            - [ ] Grammar and spelling error-free
+            - [ ] Consistent voice and tone throughout
+            - [ ] Appropriate length and depth
+            - [ ] Logical flow and structure
+            
+            ### Brand Compliance
+            - [ ] Messaging aligned with brand voice
+            - [ ] Product information accurate and current
+            - [ ] Visual style consistent with brand guidelines
+            - [ ] Target audience properly addressed
+            - [ ] Value proposition clearly communicated
+            
+            ### Technical Accuracy
+            - [ ] All technical information correct
+            - [ ] Code examples working and current
+            - [ ] Screenshots and visuals up-to-date
+            - [ ] Links and references functional
+            - [ ] Accessibility considerations met
+            
+            ### SEO & Discoverability
+            - [ ] Keywords naturally integrated
+            - [ ] Meta information optimized
+            - [ ] Internal linking strategic
+            - [ ] Search intent addressed
+            - [ ] Content structure SEO-friendly
+            
+            ## 🌍 MULTILINGUAL REVIEW
+            
+            **If multilingual content:**
+            1. **Check translation completeness** - All language variants present
+            2. **Verify cultural adaptation** - Content appropriate for each market
+            3. **Validate terminology consistency** - Same terms used across languages
+            4. **Test reading flow** - Natural language flow in each variant
+            5. **Confirm technical accuracy** - Features and pricing consistent
+            
+            ## 💬 FEEDBACK APPROACH
+            
+            **Structure your review:**
+            - **Content Quality** - Writing, value, and user experience
+            - **Brand Compliance** - Voice, messaging, and product accuracy
+            - **Technical Implementation** - Schema, SEO, and accessibility
+            - **Multilingual Quality** - Translation and localization (if applicable)
+            
+            **Be constructive:**
+            - Highlight both strengths and areas for improvement
+            - Provide specific suggestions with examples
+            - Reference relevant guidelines and documentation
+            - Consider the content's purpose and target audience
+            
+            ## ✅ APPROVAL CRITERIA
+            
+            Approve when:
+            ✅ Content provides clear value to target audience
+            ✅ Brand voice and messaging consistent
+            ✅ Product information accurate and current
+            ✅ Technical implementation correct
+            ✅ SEO optimization appropriate
+            ✅ Multilingual requirements met (if applicable)
+            ✅ Quality meets Tesoro CRM standards
+            
+            **Use `gh pr comment` to post your content review when complete.**
+          
+          claude_args: '--model claude-sonnet-4-20250514 --allowed-tools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Grep,Glob"'

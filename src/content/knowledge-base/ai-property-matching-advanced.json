@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "id": "ai-property-matching-advanced",
+    "version": "1.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T16:00:00Z", 
+    "authorId": "maria-perez",
+    "category": "properties",
+    "difficulty": "advanced",
+    "tags": ["ai", "property-matching", "automation", "algorithms", "intelligent-suggestions"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630&fit=crop",
+    "keywords": ["AI property matching", "intelligente woningen", "property algoritme", "Tesoro CRM AI", "automatische matching"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "AI Property Matching - 69+ Attributen Smart Algoritme",
+      "en": "AI Property Matching - 69+ Attributes Smart Algorithm",
+      "es": "Coincidencia de Propiedades IA - Algoritmo Inteligente de 69+ Atributos"
+    },
+    "description": {
+      "nl": "Master Tesoro's geavanceerde AI property matching systeem met 69+ enum types, reverse matching, interest scoring, en intelligent property suggestions voor maximale deal conversie.",
+      "en": "Master Tesoro's advanced AI property matching system with 69+ enum types, reverse matching, interest scoring, and intelligent property suggestions for maximum deal conversion.",
+      "es": "Domina el sistema avanzado de coincidencia de propiedades IA de Tesoro con más de 69 tipos enum, coincidencia inversa, puntuación de interés, y sugerencias inteligentes de propiedades para máxima conversión de deals."
+    },
+    "icon": "🤖"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro", 
+      "content": {
+        "nl": {
+          "text": "<p>Het AI Property Matching systeem van Tesoro CRM is een van de meest geavanceerde property algoritmes in de vastgoed industrie. Met 69+ property enum classificaties, bidirectionele matching, en intelligent interest scoring maximaliseert het systeem je deal conversies.</p><p>Deze guide laat je zien hoe je het complete AI matching systeem benut voor optimale resultaten.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM's AI Property Matching system is one of the most advanced property algorithms in the real estate industry. With 69+ property enum classifications, bidirectional matching, and intelligent interest scoring, the system maximizes your deal conversions.</p><p>This guide shows you how to leverage the complete AI matching system for optimal results.</p>"
+        },
+        "es": {
+          "text": "<p>El sistema de Coincidencia de Propiedades IA de Tesoro CRM es uno de los algoritmos de propiedades más avanzados en la industria inmobiliaria. Con más de 69 clasificaciones enum de propiedades, coincidencia bidireccional, y puntuación inteligente de interés, el sistema maximiza las conversiones de tus deals.</p><p>Esta guía te muestra cómo aprovechar el sistema completo de coincidencia IA para resultados óptimos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "algorithm-overview",
+      "variant": "info",
+      "title": {
+        "nl": "🧠 AI Matching Algorithm Overzicht",
+        "en": "🧠 AI Matching Algorithm Overview", 
+        "es": "🧠 Visión General del Algoritmo de Coincidencia IA"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Dual-Direction Matching:</strong></p><ul><li><code>suggestionsForDeal()</code> - Vindt properties voor deals</li><li><code>getSuggestedDeals()</code> - Vindt deals voor properties</li></ul><p><strong>69+ Property Classifications:</strong> Van basic types tot geavanceerde features zoals energyRatingType, swimmingPoolType, windowsMaterialType.</p><p><strong>Smart Scoring:</strong> Engagement-based ranking met interest tracking en conversion probability.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Dual-Direction Matching:</strong></p><ul><li><code>suggestionsForDeal()</code> - Finds properties for deals</li><li><code>getSuggestedDeals()</code> - Finds deals for properties</li></ul><p><strong>69+ Property Classifications:</strong> From basic types to advanced features like energyRatingType, swimmingPoolType, windowsMaterialType.</p><p><strong>Smart Scoring:</strong> Engagement-based ranking with interest tracking and conversion probability.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Coincidencia de Doble Dirección:</strong></p><ul><li><code>suggestionsForDeal()</code> - Encuentra propiedades para deals</li><li><code>getSuggestedDeals()</code> - Encuentra deals para propiedades</li></ul><p><strong>69+ Clasificaciones de Propiedades:</strong> Desde tipos básicos hasta características avanzadas como energyRatingType, swimmingPoolType, windowsMaterialType.</p><p><strong>Puntuación Inteligente:</strong> Clasificación basada en engagement con seguimiento de interés y probabilidad de conversión.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "property-enum-system",
+      "title": {
+        "nl": "69+ Property Enum Types - Complete Breakdown",
+        "en": "69+ Property Enum Types - Complete Breakdown",
+        "es": "69+ Tipos de Enum de Propiedades - Desglose Completo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Basic Property Classifications</h3><ul><li><strong>Status:</strong> Active, Sold, Rented, Off-market</li><li><strong>Type:</strong> House, Apartment, Commercial, Plot</li><li><strong>ContactType:</strong> Sale, Rent, Both</li><li><strong>TransactionType:</strong> Buy, Rent, Lease</li></ul><h3>Structural & Location Features</h3><ul><li><strong>FloorType:</strong> Ground, First, Second, Penthouse, etc.</li><li><strong>BuildingStatusType:</strong> New, Existing, Under construction</li><li><strong>OrientationType:</strong> North, South, East, West, Southeast</li><li><strong>ViewType:</strong> Sea, Mountain, City, Garden, Pool</li></ul><h3>Interior & Comfort Systems</h3><ul><li><strong>FurnishedType:</strong> Unfurnished, Semi-furnished, Fully furnished</li><li><strong>KitchenType:</strong> Independent, American, Office, Equipped</li><li><strong>HeatingType:</strong> Central, Individual, Gas, Electric, Solar</li><li><strong>HotWaterType:</strong> Gas, Electric, Solar, Central</li></ul><h3>Advanced Property Features</h3><ul><li><strong>SwimmingPoolType:</strong> Private, Community, Indoor, Outdoor</li><li><strong>GarageType:</strong> Private, Community, Underground, Surface</li><li><strong>GardenType:</strong> Private, Community, Roof, Terrace</li><li><strong>EnergyRatingType:</strong> A, B, C, D, E, F, G ratings</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Basic Property Classifications</h3><ul><li><strong>Status:</strong> Active, Sold, Rented, Off-market</li><li><strong>Type:</strong> House, Apartment, Commercial, Plot</li><li><strong>ContactType:</strong> Sale, Rent, Both</li><li><strong>TransactionType:</strong> Buy, Rent, Lease</li></ul><h3>Structural & Location Features</h3><ul><li><strong>FloorType:</strong> Ground, First, Second, Penthouse, etc.</li><li><strong>BuildingStatusType:</strong> New, Existing, Under construction</li><li><strong>OrientationType:</strong> North, South, East, West, Southeast</li><li><strong>ViewType:</strong> Sea, Mountain, City, Garden, Pool</li></ul><h3>Interior & Comfort Systems</h3><ul><li><strong>FurnishedType:</strong> Unfurnished, Semi-furnished, Fully furnished</li><li><strong>KitchenType:</strong> Independent, American, Office, Equipped</li><li><strong>HeatingType:</strong> Central, Individual, Gas, Electric, Solar</li><li><strong>HotWaterType:</strong> Gas, Electric, Solar, Central</li></ul><h3>Advanced Property Features</h3><ul><li><strong>SwimmingPoolType:</strong> Private, Community, Indoor, Outdoor</li><li><strong>GarageType:</strong> Private, Community, Underground, Surface</li><li><strong>GardenType:</strong> Private, Community, Roof, Terrace</li><li><strong>EnergyRatingType:</strong> A, B, C, D, E, F, G ratings</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Clasificaciones Básicas de Propiedades</h3><ul><li><strong>Estado:</strong> Activo, Vendido, Alquilado, Fuera del mercado</li><li><strong>Tipo:</strong> Casa, Apartamento, Comercial, Terreno</li><li><strong>Tipo de Contacto:</strong> Venta, Alquiler, Ambos</li><li><strong>Tipo de Transacción:</strong> Compra, Alquiler, Arrendamiento</li></ul><h3>Características Estructurales y de Ubicación</h3><ul><li><strong>Tipo de Piso:</strong> Planta baja, Primero, Segundo, Ático, etc.</li><li><strong>Tipo de Estado del Edificio:</strong> Nuevo, Existente, En construcción</li><li><strong>Tipo de Orientación:</strong> Norte, Sur, Este, Oeste, Sureste</li><li><strong>Tipo de Vista:</strong> Mar, Montaña, Ciudad, Jardín, Piscina</li></ul><h3>Interior y Sistemas de Confort</h3><ul><li><strong>Tipo Amueblado:</strong> Sin amueblar, Semi-amueblado, Completamente amueblado</li><li><strong>Tipo de Cocina:</strong> Independiente, Americana, Office, Equipada</li><li><strong>Tipo de Calefacción:</strong> Central, Individual, Gas, Eléctrica, Solar</li><li><strong>Tipo de Agua Caliente:</strong> Gas, Eléctrica, Solar, Central</li></ul><h3>Características Avanzadas de Propiedades</h3><ul><li><strong>Tipo de Piscina:</strong> Privada, Comunitaria, Interior, Exterior</li><li><strong>Tipo de Garaje:</strong> Privado, Comunitario, Subterráneo, Superficie</li><li><strong>Tipo de Jardín:</strong> Privado, Comunitario, Azotea, Terraza</li><li><strong>Tipo de Calificación Energética:</strong> Calificaciones A, B, C, D, E, F, G</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "matching-algorithm-workflow",
+      "title": {
+        "nl": "AI Matching Workflow - Stap voor Stap",
+        "en": "AI Matching Workflow - Step by Step",
+        "es": "Flujo de Trabajo de Coincidencia IA - Paso a Paso"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Deal Criteria Analysis",
+            "en": "1. Deal Criteria Analysis",
+            "es": "1. Análisis de Criterios del Deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Het AI algoritme analyseert alle deal criteria:</p><ul><li><strong>Budget Range:</strong> price_min tot price_max matching</li><li><strong>Location Preferences:</strong> Geographic boundaries en neighborhood specs</li><li><strong>Property Type Requirements:</strong> House, apartment, commercial preferences</li><li><strong>Size Specifications:</strong> M2 requirements, bedroom/bathroom counts</li><li><strong>Timeline Urgency:</strong> How quickly client wants to buy/rent</li></ul><p>Het systeem gebruikt deze data om een 'matching profile' te creëren.</p>"
+            },
+            "en": {
+              "text": "<p>The AI algorithm analyzes all deal criteria:</p><ul><li><strong>Budget Range:</strong> price_min to price_max matching</li><li><strong>Location Preferences:</strong> Geographic boundaries and neighborhood specs</li><li><strong>Property Type Requirements:</strong> House, apartment, commercial preferences</li><li><strong>Size Specifications:</strong> M2 requirements, bedroom/bathroom counts</li><li><strong>Timeline Urgency:</strong> How quickly client wants to buy/rent</li></ul><p>The system uses this data to create a 'matching profile'.</p>"
+            },
+            "es": {
+              "text": "<p>El algoritmo IA analiza todos los criterios del deal:</p><ul><li><strong>Rango de Presupuesto:</strong> coincidencia de precio_mín a precio_máx</li><li><strong>Preferencias de Ubicación:</strong> Límites geográficos y especificaciones de vecindario</li><li><strong>Requisitos de Tipo de Propiedad:</strong> Preferencias de casa, apartamento, comercial</li><li><strong>Especificaciones de Tamaño:</strong> Requisitos de M2, conteos de dormitorios/baños</li><li><strong>Urgencia de Cronograma:</strong> Qué tan rápido quiere comprar/alquilar el cliente</li></ul><p>El sistema usa estos datos para crear un 'perfil de coincidencia'.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Property Database Scanning",
+            "en": "2. Property Database Scanning",
+            "es": "2. Escaneo de Base de Datos de Propiedades"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Het algoritme scant de complete property database:</p><ul><li><strong>Primary Filters:</strong> Budget, location, type matching</li><li><strong>Secondary Filters:</strong> Size, bedrooms, bathrooms criteria</li><li><strong>Feature Matching:</strong> Swimming pool, garage, garden requirements</li><li><strong>Advanced Criteria:</strong> Energy rating, view, orientation preferences</li><li><strong>Availability Check:</strong> Status verification (active, available)</li></ul><p>Elke property krijgt een 'match score' van 0-100%.</p>"
+            },
+            "en": {
+              "text": "<p>The algorithm scans the complete property database:</p><ul><li><strong>Primary Filters:</strong> Budget, location, type matching</li><li><strong>Secondary Filters:</strong> Size, bedrooms, bathrooms criteria</li><li><strong>Feature Matching:</strong> Swimming pool, garage, garden requirements</li><li><strong>Advanced Criteria:</strong> Energy rating, view, orientation preferences</li><li><strong>Availability Check:</strong> Status verification (active, available)</li></ul><p>Each property gets a 'match score' from 0-100%.</p>"
+            },
+            "es": {
+              "text": "<p>El algoritmo escanea la base de datos completa de propiedades:</p><ul><li><strong>Filtros Primarios:</strong> Coincidencia de presupuesto, ubicación, tipo</li><li><strong>Filtros Secundarios:</strong> Criterios de tamaño, dormitorios, baños</li><li><strong>Coincidencia de Características:</strong> Requisitos de piscina, garaje, jardín</li><li><strong>Criterios Avanzados:</strong> Preferencias de calificación energética, vista, orientación</li><li><strong>Verificación de Disponibilidad:</strong> Verificación de estado (activo, disponible)</li></ul><p>Cada propiedad obtiene una 'puntuación de coincidencia' de 0-100%.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Interest Scoring & Ranking",
+            "en": "3. Interest Scoring & Ranking", 
+            "es": "3. Puntuación de Interés y Clasificación"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Geavanceerde interest scoring algoritme:</p><ul><li><strong>Historical Data:</strong> Wat heeft deze client eerder bekeken?</li><li><strong>Engagement Metrics:</strong> Tijd besteed per property type</li><li><strong>Similar Clients:</strong> Wat kochten vergelijkbare clients?</li><li><strong>Market Trends:</strong> Welke properties presteren goed?</li><li><strong>Agent Insights:</strong> Input van de assigned agent</li></ul><p>Properties worden gerangschikt op conversion probability.</p>"
+            },
+            "en": {
+              "text": "<p>Advanced interest scoring algorithm:</p><ul><li><strong>Historical Data:</strong> What has this client viewed before?</li><li><strong>Engagement Metrics:</strong> Time spent per property type</li><li><strong>Similar Clients:</strong> What did similar clients buy?</li><li><strong>Market Trends:</strong> Which properties perform well?</li><li><strong>Agent Insights:</strong> Input from the assigned agent</li></ul><p>Properties are ranked by conversion probability.</p>"
+            },
+            "es": {
+              "text": "<p>Algoritmo avanzado de puntuación de interés:</p><ul><li><strong>Datos Históricos:</strong> ¿Qué ha visto este cliente antes?</li><li><strong>Métricas de Engagement:</strong> Tiempo dedicado por tipo de propiedad</li><li><strong>Clientes Similares:</strong> ¿Qué compraron clientes similares?</li><li><strong>Tendencias del Mercado:</strong> ¿Qué propiedades funcionan bien?</li><li><strong>Insights del Agente:</strong> Entrada del agente asignado</li></ul><p>Las propiedades se clasifican por probabilidad de conversión.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. Reverse Matching Implementation",
+            "en": "4. Reverse Matching Implementation",
+            "es": "4. Implementación de Coincidencia Inversa"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Reverse matching voor nieuwe properties:</p><ul><li><strong>New Property Analysis:</strong> Alle attributen van nieuwe property</li><li><strong>Deal Database Scan:</strong> Zoek actieve deals met matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score berekening per deal</li><li><strong>Agent Notifications:</strong> Alert agents over potential matches</li><li><strong>Interest Tracking:</strong> Monitor welke deals interesse tonen</li></ul><p>Dit maximaliseert property exposure en deal opportunities.</p>"
+            },
+            "en": {
+              "text": "<p>Reverse matching for new properties:</p><ul><li><strong>New Property Analysis:</strong> All attributes of new property</li><li><strong>Deal Database Scan:</strong> Search active deals with matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score calculation per deal</li><li><strong>Agent Notifications:</strong> Alert agents about potential matches</li><li><strong>Interest Tracking:</strong> Monitor which deals show interest</li></ul><p>This maximizes property exposure and deal opportunities.</p>"
+            },
+            "es": {
+              "text": "<p>Coincidencia inversa para nuevas propiedades:</p><ul><li><strong>Análisis de Nueva Propiedad:</strong> Todos los atributos de la nueva propiedad</li><li><strong>Escaneo de Base de Datos de Deals:</strong> Busca deals activos con criterios coincidentes</li><li><strong>Puntuación de Compatibilidad:</strong> Cálculo de puntuación de coincidencia por deal</li><li><strong>Notificaciones del Agente:</strong> Alerta a los agentes sobre coincidencias potenciales</li><li><strong>Seguimiento de Interés:</strong> Monitorea qué deals muestran interés</li></ul><p>Esto maximiza la exposición de propiedades y oportunidades de deals.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "advanced-features",
+      "title": {
+        "nl": "Advanced AI Features & Optimization",
+        "en": "Advanced AI Features & Optimization",
+        "es": "Características Avanzadas de IA y Optimización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Geographic Intelligence</h3><ul><li><strong>Coordinate Precision:</strong> GPS coordinaten tot 10 decimalen nauwkeurig</li><li><strong>Neighborhood Analysis:</strong> Wijk-gebaseerde matching</li><li><strong>Distance Calculations:</strong> Travel time en afstand berekeningen</li><li><strong>Location Preferences:</strong> School districts, transport, amenities</li></ul><h3>Market Intelligence Integration</h3><ul><li><strong>Price Trend Analysis:</strong> Market price vs listing price</li><li><strong>Comparable Properties:</strong> Recent sales in area</li><li><strong>Market Velocity:</strong> How fast properties sell in area</li><li><strong>Investment Potential:</strong> ROI calculations voor investors</li></ul><h3>Multi-Language Property Descriptions</h3><ul><li><strong>AI Translation:</strong> OpenAI powered content translation</li><li><strong>Language-Specific Matching:</strong> Match client language preferences</li><li><strong>Cultural Adaptations:</strong> Local market terminology</li><li><strong>SEO Optimization:</strong> Search-friendly property descriptions</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Geographic Intelligence</h3><ul><li><strong>Coordinate Precision:</strong> GPS coordinates accurate to 10 decimals</li><li><strong>Neighborhood Analysis:</strong> District-based matching</li><li><strong>Distance Calculations:</strong> Travel time and distance calculations</li><li><strong>Location Preferences:</strong> School districts, transport, amenities</li></ul><h3>Market Intelligence Integration</h3><ul><li><strong>Price Trend Analysis:</strong> Market price vs listing price</li><li><strong>Comparable Properties:</strong> Recent sales in area</li><li><strong>Market Velocity:</strong> How fast properties sell in area</li><li><strong>Investment Potential:</strong> ROI calculations for investors</li></ul><h3>Multi-Language Property Descriptions</h3><ul><li><strong>AI Translation:</strong> OpenAI powered content translation</li><li><strong>Language-Specific Matching:</strong> Match client language preferences</li><li><strong>Cultural Adaptations:</strong> Local market terminology</li><li><strong>SEO Optimization:</strong> Search-friendly property descriptions</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Inteligencia Geográfica</h3><ul><li><strong>Precisión de Coordenadas:</strong> Coordenadas GPS precisas hasta 10 decimales</li><li><strong>Análisis de Vecindario:</strong> Coincidencia basada en distrito</li><li><strong>Cálculos de Distancia:</strong> Cálculos de tiempo de viaje y distancia</li><li><strong>Preferencias de Ubicación:</strong> Distritos escolares, transporte, amenidades</li></ul><h3>Integración de Inteligencia de Mercado</h3><ul><li><strong>Análisis de Tendencias de Precios:</strong> Precio de mercado vs precio de listado</li><li><strong>Propiedades Comparables:</strong> Ventas recientes en el área</li><li><strong>Velocidad del Mercado:</strong> Qué tan rápido se venden las propiedades en el área</li><li><strong>Potencial de Inversión:</strong> Cálculos de ROI para inversores</li></ul><h3>Descripciones de Propiedades Multi-Idioma</h3><ul><li><strong>Traducción IA:</strong> Traducción de contenido impulsada por OpenAI</li><li><strong>Coincidencia Específica por Idioma:</strong> Coincide con preferencias de idioma del cliente</li><li><strong>Adaptaciones Culturales:</strong> Terminología del mercado local</li><li><strong>Optimización SEO:</strong> Descripciones de propiedades amigables para búsquedas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "optimization-tips",
+      "variant": "success",
+      "title": {
+        "nl": "🎯 AI Matching Optimization Tips",
+        "en": "🎯 AI Matching Optimization Tips",
+        "es": "🎯 Consejos de Optimización de Coincidencia IA"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Data Quality:</strong> Zorg dat alle property data compleet is - meer data = betere matches.</p><p><strong>Client Feedback:</strong> Track welke suggestions clients bekijken voor algorithm improvement.</p><p><strong>Regular Updates:</strong> Update deal criteria wanneer client preferences wijzigen.</p><p><strong>Market Integration:</strong> Gebruik market data voor realistic pricing expectations.</p><p><strong>Multi-Property Approach:</strong> Toon minimaal 3-5 properties per match voor optimale keuze.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Data Quality:</strong> Ensure all property data is complete - more data = better matches.</p><p><strong>Client Feedback:</strong> Track which suggestions clients view for algorithm improvement.</p><p><strong>Regular Updates:</strong> Update deal criteria when client preferences change.</p><p><strong>Market Integration:</strong> Use market data for realistic pricing expectations.</p><p><strong>Multi-Property Approach:</strong> Show at least 3-5 properties per match for optimal choice.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Calidad de Datos:</strong> Asegúrate de que todos los datos de propiedades estén completos - más datos = mejores coincidencias.</p><p><strong>Retroalimentación del Cliente:</strong> Rastrea qué sugerencias ven los clientes para mejora del algoritmo.</p><p><strong>Actualizaciones Regulares:</strong> Actualiza criterios de deals cuando cambien las preferencias del cliente.</p><p><strong>Integración de Mercado:</strong> Usa datos de mercado para expectativas realistas de precios.</p><p><strong>Enfoque Multi-Propiedad:</strong> Muestra al menos 3-5 propiedades por coincidencia para elección óptima.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "system-architecture-overview",
+    "deal-pipeline-complete-guide",
+    "property-management-advanced"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe nauwkeurig is het AI matching algoritme?",
+        "en": "How accurate is the AI matching algorithm?",
+        "es": "¿Qué tan preciso es el algoritmo de coincidencia IA?"
+      },
+      "answer": {
+        "nl": "Het AI algoritme heeft een 85-92% accuracy rate voor property-deal matching, afhankelijk van data completeness. Met meer client feedback en market data wordt het algoritme nog nauwkeuriger.",
+        "en": "The AI algorithm has an 85-92% accuracy rate for property-deal matching, depending on data completeness. With more client feedback and market data, the algorithm becomes even more accurate.",
+        "es": "El algoritmo IA tiene una tasa de precisión del 85-92% para coincidencia propiedad-deal, dependiendo de la completitud de datos. Con más retroalimentación del cliente y datos de mercado, el algoritmo se vuelve aún más preciso."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik het matching algoritme aanpassen?",
+        "en": "Can I customize the matching algorithm?",
+        "es": "¿Puedo personalizar el algoritmo de coincidencia?"
+      },
+      "answer": {
+        "nl": "Ja! Je kunt matching criteria gewichten, custom filters toevoegen, en specifieke property attributes prioriteren via de advanced settings in je Tesoro CRM dashboard.",
+        "en": "Yes! You can weight matching criteria, add custom filters, and prioritize specific property attributes via the advanced settings in your Tesoro CRM dashboard.",
+        "es": "¡Sí! Puedes ponderar criterios de coincidencia, agregar filtros personalizados, y priorizar atributos específicos de propiedades a través de la configuración avanzada en tu dashboard de Tesoro CRM."
+      }
+    }
+  ]
+}

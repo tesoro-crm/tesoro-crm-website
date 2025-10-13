@@ -472,5 +472,133 @@
     "empty": "Begin met typen om te zoeken...",
     "navigate": "navigeren",
     "select": "selecteren"
+  },
+  "feature_pages": {
+    "smart_matching": {
+      "meta_title": "Slimme Property-Klant Matching | Tesoro CRM",
+      "meta_description": "Automatische matching tussen properties en klanten 2x per dag. AI leert van je keuzes. Bespaar 3+ uur per dag en verhoog je conversie met 40%.",
+      "hero": {
+        "badge": "Smart Matching",
+        "title": "Slimme Property-Klant Matching",
+        "description": "Automatische matching tussen properties en klanten, 2x per dag. AI leert van je keuzes en verbetert voortdurend de suggesties.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "time_saved": "3+ uur",
+        "time_saved_desc": "bespaard per dag door automatische matching",
+        "conversion": "40%",
+        "conversion_desc": "hogere conversie door betere matches",
+        "satisfaction": "85%",
+        "satisfaction_desc": "van makelaars zegt meer tijd te hebben voor klanten"
+      }
+    },
+    "deal_pipeline": {
+      "meta_title": "Visuele Deal Pipeline | Tesoro CRM",
+      "meta_description": "Kanban-stijl deal pipeline met drag & drop functionaliteit. Geautomatiseerde alerts en team overzicht. Geen deals meer tussen de mazen.",
+      "hero": {
+        "badge": "Deal Pipeline",
+        "title": "Visuele Deal Pipeline Management",
+        "description": "Overzichtelijke Kanban-stijl pipeline van Proposed tot Closed. Drag & drop functionaliteit en geautomatiseerde alerts zorgen ervoor dat geen deal tussen de mazen valt.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "speed": "65%",
+        "speed_desc": "sneller van lead naar closing",
+        "missed_deals": "0",
+        "missed_deals_desc": "deals die tussen de mazen vallen",
+        "overview": "90%",
+        "overview_desc": "van makelaars heeft beter overzicht"
+      }
+    },
+    "customer_portal": {
+      "meta_title": "Klantportaal met Real-time Feedback | Tesoro CRM",
+      "meta_description": "Beveiligde klantportaal waar klanten properties kunnen bekijken en direct feedback geven. Real-time sync met je CRM. 89% hogere klantbetrokkenheid.",
+      "hero": {
+        "badge": "Klantportaal",
+        "title": "Klantportaal met Real-time Feedback",
+        "description": "Geef klanten hun eigen beveiligde portaal waar ze properties kunnen bekijken en direct feedback geven. Real-time synchronisatie met je CRM.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "availability": "24/7",
+        "availability_desc": "klanten kunnen properties bekijken",
+        "engagement": "89%",
+        "engagement_desc": "hogere klantbetrokkenheid",
+        "feedback_speed": "3x",
+        "feedback_speed_desc": "sneller feedback van klanten"
+      }
+    },
+    "email_integration": {
+      "meta_title": "E-mail Integratie Gmail & Outlook | Tesoro CRM",
+      "meta_description": "Volledige bidirectionele sync met Gmail en Outlook. Automatische deal koppeling, e-mail templates en complete communicatie geschiedenis.",
+      "hero": {
+        "badge": "E-mail Integratie",
+        "title": "Naadloze E-mail Integratie",
+        "description": "Volledige bidirectionele sync met Gmail en Outlook. Alle communicatie automatisch gekoppeld aan deals en klanten.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "tracking": "100%",
+        "tracking_desc": "van communicatie wordt bijgehouden",
+        "missed_emails": "0",
+        "missed_emails_desc": "e-mails vallen tussen de mazen",
+        "setup_time": "2 min",
+        "setup_time_desc": "setup tijd per e-mail account"
+      }
+    },
+    "property_management": {
+      "meta_title": "Property Management & MLS Integratie | Tesoro CRM",
+      "meta_description": "Complete property database met MLS XML import/export. Automatisch publiceren naar Funda, Idealista en andere vastgoedportals. 70% minder administratie.",
+      "hero": {
+        "badge": "Property Management",
+        "title": "Complete Property Management",
+        "description": "Uitgebreide property database met MLS integraties en automatisch publiceren naar alle belangrijke vastgoedportals. Minder administratie, meer verkopen.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "time_saved": "70%",
+        "time_saved_desc": "minder tijd aan property administratie",
+        "portals": "5+",
+        "portals_desc": "portals automatisch bijgewerkt",
+        "sync": "100%",
+        "sync_desc": "synchronisatie tussen platforms"
+      }
+    },
+    "reporting_analytics": {
+      "meta_title": "Rapportages & Analytics Dashboard | Tesoro CRM",
+      "meta_description": "Real-time sales analytics, team performance tracking en revenue forecasting. Automated reporting en AI-powered insights voor vastgoedprofessionals.",
+      "hero": {
+        "badge": "Analytics & Reporting",
+        "title": "Rapportages & Analytics Dashboard",
+        "description": "Real-time inzicht in je sales performance, team prestaties en revenue forecasting. Maak data-gedreven beslissingen die je omzet verhogen.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "forecasting": "43%",
+        "forecasting_desc": "betere sales forecasting",
+        "bottlenecks": "2.5x",
+        "bottlenecks_desc": "snellere identificatie van knelpunten",
+        "revenue_increase": "67%",
+        "revenue_increase_desc": "van makelaars verhoogt omzet"
+      }
+    },
+    "common": {
+      "cta_section": {
+        "title": "Klaar voor {feature_name}?",
+        "description": "Begin vandaag nog met de 14-dagen gratis trial. Geen creditcard vereist.",
+        "cta_primary": "Start Gratis Trial",
+        "cta_secondary": "Alle Features"
+      },
+      "integration_section": {
+        "title": "Integreert met je Volledige Workflow",
+        "description": "{feature_name} werkt naadloos samen met alle andere Tesoro CRM features."
+      }
+    }
   }
 }

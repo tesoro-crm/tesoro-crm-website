@@ -1,25 +1,25 @@
 ## Pull Request Checklist
 
 - **Branch hygiene**
-  - Branch name volgt `feature/ISSUE-xxx-short-description`.
-  - Rebase uitgevoerd op `develop`; geen merge commits.
+  - Branch name follows `feature/ISSUE-xxx-short-description`.
+  - Rebase performed on `develop`; no merge commits.
 - **Scope & context**
-  - Description bevat samenvatting, linked issues, screenshots/recording indien UI-impact.
-  - Checklist met risico's/rollback plan toegevoegd.
+  - Description contains summary, linked issues, screenshots/recording if UI impact.
+  - Checklist with risks/rollback plan added.
 - **Tests & QA**
-  - `npm test` en `npm run lint` lokaal uitgevoerd.
-  - Storybook/visual regression (indien van toepassing) gedraaid.
-  - Edge cases beschreven.
+  - `npm test` and `npm run lint` executed locally.
+  - Storybook/visual regression (if applicable) run.
+  - Edge cases described.
 - **Docs & translations**
-  - Relevante docs/MD bestanden bijgewerkt (bijv. `SETUP.md`, `docs/design-system/*`).
-  - Meertalige copy gecontroleerd (NL/EN/ES) of taak aangemaakt voor vertaling.
+  - Relevant docs/MD files updated (e.g., `SETUP.md`, `docs/design-system/*`).
+  - Multilingual copy checked (NL/EN/ES) or task created for translation.
 - **Security & compliance**
-  - Secrets/keys verwijderd of geanonimiseerd.
-  - GDPR/AVG implicaties gecheckt bij nieuwe tracking.
-- **Review voorbereiding**
-  - Preview deploy link toegevoegd.
-  - Toegewezen reviewers (engineering + betrokken discipline). 
-  - Labels (scope, epic) toegevoegd in tracker.
-- **Definition of Done bevestigen**
-  - Acceptance criteria van story/issue afgevinkt.
-  - Checklist in `project-tracker/epics/**/issue.md` geüpdatet.
+  - Secrets/keys removed or anonymized.
+  - GDPR/AVG implications checked for new tracking.
+- **Review preparation**
+  - Preview deploy link added.
+  - Assigned reviewers (engineering + involved discipline).
+  - Labels (scope, epic) added in tracker.
+- **Definition of Done confirm**
+  - Acceptance criteria of story/issue checked.
+  - Checklist in `project-tracker/epics/**/issue.md` updated.

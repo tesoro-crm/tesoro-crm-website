@@ -1,7 +1,7 @@
 ---
 // AI Chat Widget - Bottom right corner
 // Combines search and chat functionality
-import { t } from '../i18n/utils';
+import { t, getLocalizedPath } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
 interface Props {
@@ -75,7 +75,7 @@ const { locale } = Astro.props;
 
     <div class="ai-chat-widget__footer">
       <span class="ai-chat-widget__powered">Powered by <strong>Cloudflare AI</strong></span>
-      <a href="/ai-knowledge" class="ai-chat-widget__knowledge-link" target="_blank">📚 Knowledge Base</a>
+      <a href={getLocalizedPath('/ai-knowledge', locale)} class="ai-chat-widget__knowledge-link" target="_blank">📚 Knowledge Base</a>
     </div>
   </div>
 </div>
@@ -291,7 +291,7 @@ const { locale } = Astro.props;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     border: none;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     cursor: pointer;
@@ -351,7 +351,7 @@ const { locale } = Astro.props;
 
   .ai-chat-widget__header {
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     color: white;
     border-radius: 16px 16px 0 0;
   }
@@ -419,7 +419,7 @@ const { locale } = Astro.props;
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,7 +453,7 @@ const { locale } = Astro.props;
   .ai-chat-widget__link {
     display: inline-block;
     margin-top: 8px;
-    color: #667eea;
+    color: var(--accent-primary);
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
@@ -514,14 +514,14 @@ const { locale } = Astro.props;
   }
 
   .ai-chat-widget__input:focus {
-    border-color: #667eea;
+    border-color: var(--accent-primary);
   }
 
   .ai-chat-widget__send {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     border: none;
     color: white;
     cursor: pointer;
@@ -546,11 +546,11 @@ const { locale } = Astro.props;
   }
 
   .ai-chat-widget__powered strong {
-    color: #667eea;
+    color: var(--accent-primary);
   }
 
   .ai-chat-widget__knowledge-link {
-    color: #667eea;
+    color: var(--accent-primary);
     text-decoration: none;
     font-weight: 600;
     transition: opacity 0.2s;
