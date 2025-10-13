@@ -15,7 +15,7 @@ export async function GET(context: APIContext) {
       pubDate: post.data.pubDate,
       link: `/blog/${post.slug}/`,
       author: post.data.author,
-      categories: [post.data.category, ...post.data.tags],
+      categories: [post.data.category, ...(Array.isArray(post.data.tags) ? post.data.tags : [])],
       ...(post.data.heroImage && {
         enclosure: {
           url: new URL(post.data.heroImage, context.site || 'https://new.tesorohq.io').toString(),
