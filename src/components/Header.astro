@@ -53,13 +53,13 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                 <!-- Column 1 - Core Features -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {locale === 'nl' ? 'Kernfuncties' : locale === 'es' ? 'Funciones Principales' : 'Core Features'}
+                    {t('nav.mega_menu.core_features_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {locale === 'nl' ? 'Ontdek de krachtige functies van Tesoro.' : locale === 'es' ? 'Descubre las potentes funciones de Tesoro.' : 'Discover Tesoro\'s powerful features.'}
+                    {t('nav.mega_menu.core_features_description', locale)}
                   </p>
                   <a href={getLocalizedPath('/features', locale)} class="text-sm text-primary hover:underline mb-4 inline-block">
-                    {locale === 'nl' ? 'Alle functies bekijken →' : locale === 'es' ? 'Ver todas las funciones →' : 'View all features →'}
+                    {t('nav.mega_menu.core_features_all', locale)}
                   </a>
                   <div class="space-y-2">
                     <a href={getLocalizedPath('/features/smart-matching', locale)} class="flex items-start gap-2 group/item">
@@ -67,15 +67,15 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Slimme Matching' : locale === 'es' ? 'Coincidencia Inteligente' : 'Smart Matching'}
+                        {t('nav.mega_menu.smart_matching', locale)}
                       </span>
                     </a>
-                    <a href={getLocalizedPath('/features/customer-portal', locale)} class="flex items-start gap-2 group/item">
+                    <a href={getLocalizedPath('/features/client-portal', locale)} class="flex items-start gap-2 group/item">
                       <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Klanten Portal' : locale === 'es' ? 'Portal de Clientes' : 'Customer Portal'}
+                        {t('nav.mega_menu.client_portal', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features/deal-pipeline', locale)} class="flex items-start gap-2 group/item">
@@ -83,7 +83,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Deal Pipeline' : locale === 'es' ? 'Pipeline de Ventas' : 'Deal Pipeline'}
+                        {t('nav.mega_menu.deal_pipeline', locale)}
                       </span>
                     </a>
                   </div>
@@ -92,10 +92,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                 <!-- Column 2 - Real Estate Tools -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {locale === 'nl' ? 'Voor Makelaars' : locale === 'es' ? 'Para Agentes' : 'For Real Estate'}
+                    {t('nav.mega_menu.real_estate_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {locale === 'nl' ? 'Tools voor vastgoedprofessionals.' : locale === 'es' ? 'Herramientas para profesionales inmobiliarios.' : 'Tools built for real estate professionals.'}
+                    {t('nav.mega_menu.real_estate_description', locale)}
                   </p>
                   <div class="space-y-2">
                     <a href={getLocalizedPath('/features/property-management', locale)} class="flex items-start gap-2 group/item">
@@ -103,7 +103,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Property Management' : locale === 'es' ? 'Gestión de Propiedades' : 'Property Management'}
+                        {t('nav.mega_menu.property_management', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features/email-integration', locale)} class="flex items-start gap-2 group/item">
@@ -111,7 +111,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'E-mail Integratie' : locale === 'es' ? 'Integración Email' : 'Email Integration'}
+                        {t('nav.mega_menu.email_integration', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features/reporting-analytics', locale)} class="flex items-start gap-2 group/item">
@@ -119,7 +119,15 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Rapportages & Analytics' : locale === 'es' ? 'Reportes y Analíticas' : 'Reporting & Analytics'}
+                        {t('nav.mega_menu.reporting_analytics', locale)}
+                      </span>
+                    </a>
+                    <a href={getLocalizedPath('/website-api', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.website_api', locale)}
                       </span>
                     </a>
                   </div>
@@ -128,10 +136,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                 <!-- Column 3 - Automation -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {locale === 'nl' ? 'Automatisering' : locale === 'es' ? 'Automatización' : 'Automation'}
+                    {t('nav.mega_menu.automation_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {locale === 'nl' ? 'Bespaar tijd met automatisering.' : locale === 'es' ? 'Ahorra tiempo con automatización.' : 'Save time with automation.'}
+                    {t('nav.mega_menu.automation_description', locale)}
                   </p>
                   <div class="space-y-2">
                     <a href={getLocalizedPath('/features#workflow-automation', locale)} class="flex items-start gap-2 group/item">
@@ -139,7 +147,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Workflow Automatisering' : locale === 'es' ? 'Automatización de Flujos' : 'Workflow Automation'}
+                        {t('nav.mega_menu.workflow_automation', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features#email-campaigns', locale)} class="flex items-start gap-2 group/item">
@@ -147,7 +155,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Email Campagnes' : locale === 'es' ? 'Campañas Email' : 'Email Campaigns'}
+                        {t('nav.mega_menu.email_campaigns', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features#xml-feeds', locale)} class="flex items-start gap-2 group/item">
@@ -155,7 +163,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'XML Feed Sync' : locale === 'es' ? 'Sincronización XML' : 'XML Feed Sync'}
+                        {t('nav.mega_menu.xml_feeds', locale)}
                       </span>
                     </a>
                   </div>
@@ -164,10 +172,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                 <!-- Column 4 - Integrations -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {locale === 'nl' ? 'Integraties' : locale === 'es' ? 'Integraciones' : 'Integrations'}
+                    {t('nav.mega_menu.integrations_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {locale === 'nl' ? 'Verbind met je favoriete tools.' : locale === 'es' ? 'Conecta con tus herramientas favoritas.' : 'Connect with your favorite tools.'}
+                    {t('nav.mega_menu.integrations_description', locale)}
                   </p>
                   <div class="space-y-2">
                     <a href={getLocalizedPath('/integrations#email', locale)} class="flex items-start gap-2 group/item">
@@ -175,7 +183,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Email Providers' : locale === 'es' ? 'Proveedores Email' : 'Email Providers'}
+                        {t('nav.mega_menu.email_providers', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/integrations#calendar', locale)} class="flex items-start gap-2 group/item">
@@ -183,7 +191,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Agenda Apps' : locale === 'es' ? 'Apps de Calendario' : 'Calendar Apps'}
+                        {t('nav.mega_menu.calendar_apps', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/integrations#portals', locale)} class="flex items-start gap-2 group/item">
@@ -191,7 +199,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {locale === 'nl' ? 'Woningportals' : locale === 'es' ? 'Portales Inmobiliarios' : 'Property Portals'}
+                        {t('nav.mega_menu.property_portals', locale)}
                       </span>
                     </a>
                   </div>
@@ -215,7 +223,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
             href={getLocalizedPath('/knowledge-base', locale)}
             class={`text-sm font-medium transition-colors py-1 ${currentPath.startsWith('/knowledge-base') || currentPath.startsWith(`/${locale}/knowledge-base`) ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            {locale === 'nl' ? 'Kennisbank' : locale === 'es' ? 'Base de Conocimientos' : 'Knowledge Base'}
+            {t('nav.knowledge_base', locale)}
           </a>
         </li>
         <li>
@@ -223,7 +231,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
             href={getLocalizedPath('/blog', locale)}
             class={`text-sm font-medium transition-colors py-1 ${currentPath.startsWith('/blog') || currentPath.startsWith(`/${locale}/blog`) ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
-            Blog
+            {t('nav.blog', locale)}
           </a>
         </li>
       </ul>
@@ -275,7 +283,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           href={getLocalizedPath('/login', locale)}
           class="text-sm font-medium text-neutral-700 hover:text-primary transition-colors"
         >
-          {locale === 'nl' ? 'Aanmelden' : locale === 'es' ? 'Iniciar sesión' : 'Login'}
+          {t('nav.login', locale)}
         </a>
 
         <!-- CTA Button -->
@@ -306,12 +314,12 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         </li>
         <li>
           <a href={getLocalizedPath('/knowledge-base', locale)} class="block py-2 text-neutral-700 hover:text-primary">
-            {locale === 'nl' ? 'Kennisbank' : locale === 'es' ? 'Base de Conocimientos' : 'Knowledge Base'}
+            {t('nav.knowledge_base', locale)}
           </a>
         </li>
         <li>
           <a href={getLocalizedPath('/blog', locale)} class="block py-2 text-neutral-700 hover:text-primary">
-            Blog
+            {t('nav.blog', locale)}
           </a>
         </li>
         <li>

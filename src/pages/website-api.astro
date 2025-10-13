@@ -1,0 +1,606 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const techStack = [
+  {
+    name: 'Astro.Build',
+    logo: '/logos/astro-icon-dark.svg',
+    title: t('website_api.tech_stack.astro_title', locale),
+    description: t('website_api.tech_stack.astro_description', locale),
+    benefits: [
+      t('website_api.tech_stack.astro_benefit_1', locale),
+      t('website_api.tech_stack.astro_benefit_2', locale),
+      t('website_api.tech_stack.astro_benefit_3', locale),
+    ],
+  },
+  {
+    name: 'PayloadCMS',
+    logo: 'https://payloadcms.com/images/payload-logo-light.svg',
+    title: t('website_api.tech_stack.payload_title', locale),
+    description: t('website_api.tech_stack.payload_description', locale),
+    benefits: [
+      t('website_api.tech_stack.payload_benefit_1', locale),
+      t('website_api.tech_stack.payload_benefit_2', locale),
+      t('website_api.tech_stack.payload_benefit_3', locale),
+    ],
+  },
+  {
+    name: 'Cloudflare',
+    logo: '/logos/cloudflare-logo-dark.svg',
+    title: t('website_api.tech_stack.cloudflare_title', locale),
+    description: t('website_api.tech_stack.cloudflare_description', locale),
+    benefits: [
+      t('website_api.tech_stack.cloudflare_benefit_1', locale),
+      t('website_api.tech_stack.cloudflare_benefit_2', locale),
+      t('website_api.tech_stack.cloudflare_benefit_3', locale),
+    ],
+  },
+];
+
+const flexibilityFeatures = [
+  {
+    icon: 'tune',
+    title: t('website_api.flexibility.feature_1_title', locale),
+    description: t('website_api.flexibility.feature_1_description', locale),
+  },
+  {
+    icon: 'sync',
+    title: t('website_api.flexibility.feature_2_title', locale),
+    description: t('website_api.flexibility.feature_2_description', locale),
+  },
+  {
+    icon: 'trending_up',
+    title: t('website_api.flexibility.feature_3_title', locale),
+    description: t('website_api.flexibility.feature_3_description', locale),
+  },
+  {
+    icon: 'language',
+    title: t('website_api.flexibility.feature_4_title', locale),
+    description: t('website_api.flexibility.feature_4_description', locale),
+  },
+  {
+    icon: 'phone_iphone',
+    title: t('website_api.flexibility.feature_5_title', locale),
+    description: t('website_api.flexibility.feature_5_description', locale),
+  },
+  {
+    icon: 'search',
+    title: t('website_api.flexibility.feature_6_title', locale),
+    description: t('website_api.flexibility.feature_6_description', locale),
+  },
+];
+
+const apiFeatures = [
+  {
+    icon: 'home_work',
+    title: t('website_api.website_api.feature_1_title', locale),
+    description: t('website_api.website_api.feature_1_description', locale),
+  },
+  {
+    icon: 'filter_list',
+    title: t('website_api.website_api.feature_2_title', locale),
+    description: t('website_api.website_api.feature_2_description', locale),
+  },
+  {
+    icon: 'contact_mail',
+    title: t('website_api.website_api.feature_3_title', locale),
+    description: t('website_api.website_api.feature_3_description', locale),
+  },
+  {
+    icon: 'image',
+    title: t('website_api.website_api.feature_4_title', locale),
+    description: t('website_api.website_api.feature_4_description', locale),
+  },
+  {
+    icon: 'api',
+    title: t('website_api.website_api.feature_5_title', locale),
+    description: t('website_api.website_api.feature_5_description', locale),
+  },
+  {
+    icon: 'webhook',
+    title: t('website_api.website_api.feature_6_title', locale),
+    description: t('website_api.website_api.feature_6_description', locale),
+  },
+];
+
+const developerFeatures = [
+  {
+    icon: 'menu_book',
+    title: t('website_api.developer_friendly.feature_1_title', locale),
+    description: t('website_api.developer_friendly.feature_1_description', locale),
+  },
+  {
+    icon: 'code',
+    title: t('website_api.developer_friendly.feature_2_title', locale),
+    description: t('website_api.developer_friendly.feature_2_description', locale),
+  },
+  {
+    icon: 'science',
+    title: t('website_api.developer_friendly.feature_3_title', locale),
+    description: t('website_api.developer_friendly.feature_3_description', locale),
+  },
+  {
+    icon: 'speed',
+    title: t('website_api.developer_friendly.feature_4_title', locale),
+    description: t('website_api.developer_friendly.feature_4_description', locale),
+  },
+];
+
+const useCases = [
+  {
+    icon: 'public',
+    title: t('website_api.use_cases.case_1_title', locale),
+    description: t('website_api.use_cases.case_1_description', locale),
+  },
+  {
+    icon: 'phone_android',
+    title: t('website_api.use_cases.case_2_title', locale),
+    description: t('website_api.use_cases.case_2_description', locale),
+  },
+  {
+    icon: 'widgets',
+    title: t('website_api.use_cases.case_3_title', locale),
+    description: t('website_api.use_cases.case_3_description', locale),
+  },
+  {
+    icon: 'web',
+    title: t('website_api.use_cases.case_4_title', locale),
+    description: t('website_api.use_cases.case_4_description', locale),
+  },
+  {
+    icon: 'smart_toy',
+    title: t('website_api.use_cases.case_5_title', locale),
+    description: t('website_api.use_cases.case_5_description', locale),
+  },
+  {
+    icon: 'analytics',
+    title: t('website_api.use_cases.case_6_title', locale),
+    description: t('website_api.use_cases.case_6_description', locale),
+  },
+];
+
+const pricing = [
+  {
+    title: t('website_api.pricing_section.website_build_title', locale),
+    price: t('website_api.pricing_section.website_build_price', locale),
+    description: t('website_api.pricing_section.website_build_description', locale),
+    features: [
+      t('website_api.pricing_section.website_build_feature_1', locale),
+      t('website_api.pricing_section.website_build_feature_2', locale),
+      t('website_api.pricing_section.website_build_feature_3', locale),
+      t('website_api.pricing_section.website_build_feature_4', locale),
+    ],
+  },
+  {
+    title: t('website_api.pricing_section.api_access_title', locale),
+    price: t('website_api.pricing_section.api_access_price', locale),
+    description: t('website_api.pricing_section.api_access_description', locale),
+    features: [
+      t('website_api.pricing_section.api_access_feature_1', locale),
+      t('website_api.pricing_section.api_access_feature_2', locale),
+      t('website_api.pricing_section.api_access_feature_3', locale),
+      t('website_api.pricing_section.api_access_feature_4', locale),
+    ],
+    highlight: true,
+  },
+  {
+    title: t('website_api.pricing_section.api_upgrade_title', locale),
+    price: t('website_api.pricing_section.api_upgrade_price', locale),
+    description: t('website_api.pricing_section.api_upgrade_description', locale),
+    features: [
+      t('website_api.pricing_section.api_upgrade_feature_1', locale),
+      t('website_api.pricing_section.api_upgrade_feature_2', locale),
+      t('website_api.pricing_section.api_upgrade_feature_3', locale),
+      t('website_api.pricing_section.api_upgrade_feature_4', locale),
+    ],
+  },
+];
+
+const securityFeatures = [
+  {
+    icon: 'shield',
+    title: t('website_api.security.feature_1_title', locale),
+    description: t('website_api.security.feature_1_description', locale),
+  },
+  {
+    icon: 'lock',
+    title: t('website_api.security.feature_2_title', locale),
+    description: t('website_api.security.feature_2_description', locale),
+  },
+  {
+    icon: 'security',
+    title: t('website_api.security.feature_3_title', locale),
+    description: t('website_api.security.feature_3_description', locale),
+  },
+  {
+    icon: 'speed',
+    title: t('website_api.security.feature_4_title', locale),
+    description: t('website_api.security.feature_4_description', locale),
+  },
+  {
+    icon: 'verified_user',
+    title: t('website_api.security.feature_5_title', locale),
+    description: t('website_api.security.feature_5_description', locale),
+  },
+  {
+    icon: 'verified',
+    title: t('website_api.security.feature_6_title', locale),
+    description: t('website_api.security.feature_6_description', locale),
+  },
+];
+
+const faqs = [
+  {
+    question: t('website_api.faq.question_1', locale),
+    answer: t('website_api.faq.answer_1', locale),
+  },
+  {
+    question: t('website_api.faq.question_2', locale),
+    answer: t('website_api.faq.answer_2', locale),
+  },
+  {
+    question: t('website_api.faq.question_3', locale),
+    answer: t('website_api.faq.answer_3', locale),
+  },
+  {
+    question: t('website_api.faq.question_4', locale),
+    answer: t('website_api.faq.answer_4', locale),
+  },
+  {
+    question: t('website_api.faq.question_5', locale),
+    answer: t('website_api.faq.answer_5', locale),
+  },
+  {
+    question: t('website_api.faq.question_6', locale),
+    answer: t('website_api.faq.answer_6', locale),
+  },
+  {
+    question: t('website_api.faq.question_7', locale),
+    answer: t('website_api.faq.answer_7', locale),
+  },
+  {
+    question: t('website_api.faq.question_8', locale),
+    answer: t('website_api.faq.answer_8', locale),
+  },
+];
+---
+
+<Layout
+  title={t('website_api.meta_title', locale)}
+  description={t('website_api.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('website_api.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('website_api.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('website_api.hero.description', locale)}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="primary" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('website_api.hero.cta_primary', locale)}
+        </Button>
+        <Button variant="outline" size="lg" href="#api-documentation">
+          {t('website_api.hero.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.tech_stack.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.tech_stack.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {techStack.map((tech) => (
+          <Card variant="default" padding="lg" class="text-center">
+            <div class="flex justify-center mb-6">
+              <img
+                src={tech.logo}
+                alt={tech.name}
+                class="h-12 w-auto"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">{tech.title}</h3>
+            <p class="text-neutral-700 mb-4">{tech.description}</p>
+            <ul class="space-y-2 text-left">
+              {tech.benefits.map((benefit) => (
+                <li class="flex items-start gap-2 text-sm text-neutral-700">
+                  <span class="icon icon-sm text-success flex-shrink-0">check_circle</span>
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexibility Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.flexibility.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.flexibility.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {flexibilityFeatures.map((feature) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <span class="icon icon-lg text-primary flex-shrink-0">{feature.icon}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900 mb-2">{feature.title}</h3>
+                <p class="text-sm text-neutral-700">{feature.description}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- API Features Section -->
+  <section id="api-documentation" class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.website_api.features_title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.website_api.features_description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {apiFeatures.map((feature) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <span class="icon icon-lg text-primary flex-shrink-0">{feature.icon}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900 mb-2">{feature.title}</h3>
+                <p class="text-sm text-neutral-700">{feature.description}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Friendly Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.developer_friendly.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.developer_friendly.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {developerFeatures.map((feature) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <span class="icon icon-lg text-primary flex-shrink-0">{feature.icon}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900 mb-2">{feature.title}</h3>
+                <p class="text-sm text-neutral-700">{feature.description}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.use_cases.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.use_cases.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {useCases.map((useCase) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <span class="icon icon-lg text-primary flex-shrink-0">{useCase.icon}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900 mb-2">{useCase.title}</h3>
+                <p class="text-sm text-neutral-700">{useCase.description}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.pricing_section.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.pricing_section.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {pricing.map((plan) => (
+          <Card
+            variant={plan.highlight ? 'bordered' : 'default'}
+            padding="lg"
+            class={plan.highlight ? 'ring-2 ring-primary shadow-xl' : ''}
+          >
+            {plan.highlight && (
+              <Badge variant="primary" size="sm" class="mb-4">
+                {t('website_api.pricing_section.popular', locale)}
+              </Badge>
+            )}
+            <h3 class="text-xl font-semibold text-neutral-900 mb-2">{plan.title}</h3>
+            <p class="text-3xl font-bold text-primary mb-3">{plan.price}</p>
+            <p class="text-sm text-neutral-700 mb-6">{plan.description}</p>
+            <ul class="space-y-2 mb-6">
+              {plan.features.map((feature) => (
+                <li class="flex items-start gap-2 text-sm text-neutral-700">
+                  <span class="icon icon-sm text-success flex-shrink-0">check_circle</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <Button
+              variant={plan.highlight ? 'primary' : 'outline'}
+              size="md"
+              fullWidth
+              href={getLocalizedPath('/contact', locale)}
+            >
+              {t('website_api.pricing_section.cta', locale)}
+            </Button>
+          </Card>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-sm text-neutral-600">
+          {t('website_api.pricing_section.enterprise_note', locale)}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & Performance Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.security.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_api.security.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {securityFeatures.map((feature) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <span class="icon icon-lg text-primary flex-shrink-0">{feature.icon}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900 mb-2">{feature.title}</h3>
+                <p class="text-sm text-neutral-700">{feature.description}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <!-- Performance Metrics -->
+      <div class="mt-12 bg-gradient-to-r from-primary to-primary-accent rounded-2xl p-8 lg:p-12 text-white">
+        <h3 class="text-2xl lg:text-3xl font-display font-bold text-center mb-8">
+          {t('website_api.performance.title', locale)}
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="text-4xl font-display font-bold text-secondary mb-2">
+              {t('website_api.performance.metric_1_value', locale)}
+            </div>
+            <p class="text-white/90">{t('website_api.performance.metric_1_label', locale)}</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-display font-bold text-secondary mb-2">
+              {t('website_api.performance.metric_2_value', locale)}
+            </div>
+            <p class="text-white/90">{t('website_api.performance.metric_2_label', locale)}</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-display font-bold text-secondary mb-2">
+              {t('website_api.performance.metric_3_value', locale)}
+            </div>
+            <p class="text-white/90">{t('website_api.performance.metric_3_label', locale)}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.faq.title', locale)}
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <Card variant="default" padding="lg">
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+            <p class="text-neutral-700">{faq.answer}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('website_api.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('website_api.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('website_api.cta.cta_primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/signup', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('website_api.cta.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>
