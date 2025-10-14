@@ -63,6 +63,7 @@
   "footer": {
     "tagline": "Captación inteligente voor professionals",
     "product": "Product",
+    "resources": "Bronnen",
     "company": "Company",
     "copyright": "© 2025 Tesoro CRM. All rights reserved."
   },
@@ -735,6 +736,8 @@
       "kanban_view": {
         "title": "Kanban View met Context",
         "description": "Alle deals in overzichtelijke kanban lanes. Sleep cards tussen stages. Open een card en zie complete context.",
+        "filter_title": "Filters en views",
+        "filter_description": "Krachtige filters om door de bomen het bos te zien",
         "benefit_1": "Visueel overzicht van alle deals per stage",
         "benefit_2": "Drag & drop om deals te verplaatsen",
         "benefit_3": "Complete context per card",
@@ -755,6 +758,8 @@
       "cta": {
         "title": "Klaar voor Real Estate-Specifieke Deal Management?",
         "description": "Geen generieke sales pipeline maar twee workflows gebouwd voor real estate met complete context per deal.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo",
         "cta_primary": "Start 14 Dagen Gratis",
         "cta_secondary": "Bekijk Demo"
       }
@@ -889,6 +894,12 @@
         "missed_emails_desc": "e-mails vallen tussen de mazen",
         "setup_time": "2 min",
         "setup_time_desc": "setup tijd per e-mail account"
+      },
+      "cta": {
+        "title": "Klaar voor naadloze e-mail integratie?",
+        "description": "Integreer Gmail of Outlook in 2 minuten en track alle communicatie automatisch.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
       }
     },
     "property_management": {
@@ -908,6 +919,12 @@
         "portals_desc": "portals automatisch bijgewerkt",
         "sync": "100%",
         "sync_desc": "synchronisatie tussen platforms"
+      },
+      "cta": {
+        "title": "Klaar voor geautomatiseerd property management?",
+        "description": "Bespaar 70% van je tijd aan property administratie met automatische synchronisatie en publicatie.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
       }
     },
     "reporting_analytics": {
@@ -927,6 +944,12 @@
         "bottlenecks_desc": "snellere identificatie van knelpunten",
         "revenue_increase": "67%",
         "revenue_increase_desc": "van makelaars verhoogt omzet"
+      },
+      "cta": {
+        "title": "Klaar voor data-gedreven beslissingen?",
+        "description": "Krijg real-time inzicht in je sales performance en verhoog je omzet met 67%.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
       }
     },
     "common": {

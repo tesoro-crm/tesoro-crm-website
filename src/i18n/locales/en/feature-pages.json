@@ -1,0 +1,418 @@
+{
+  "feature_pages": {
+    "smart_matching": {
+      "meta_title": "Smart Property-Customer Matching | Tesoro CRM",
+      "meta_description": "Real-time AI matching between properties and customers. Matches appear instantly when parameters change. Save 3+ hours per day and increase your conversion by 40%.",
+      "hero": {
+        "badge": "Smart Matching",
+        "title": "Smart Property-Customer Matching",
+        "description": "Real-time AI matching between properties and customers. Matches appear instantly when deal parameters change or new properties arrive. You select what to propose, customers receive an email 2x per day with your approved suggestions.",
+        "cta_primary": "Start Free Trial",
+        "cta_secondary": "View Demo"
+      },
+      "benefits": {
+        "title": "Why Smart Matching Works",
+        "time_saved": "85%",
+        "time_saved_desc": "Time saved",
+        "conversion": "3x",
+        "conversion_desc": "Higher conversion",
+        "satisfaction": "94%",
+        "satisfaction_desc": "Client satisfaction",
+        "benefit_1_title": "96% Accuracy",
+        "benefit_1_description": "Our AI algorithm achieves 96% accuracy in matching properties with the right customers",
+        "benefit_2_title": "3x Faster Sales",
+        "benefit_2_description": "Customers find their ideal property 3x faster through smart matching",
+        "benefit_3_title": "Higher Satisfaction",
+        "benefit_3_description": "Both customers and agents report higher satisfaction with matched properties"
+      },
+      "workflow": {
+        "title": "How Smart Matching Works",
+        "step_1_title": "Import Properties",
+        "step_1_description": "Add properties manually or sync automatically from your existing systems",
+        "step_2_title": "Customer Profile",
+        "step_2_description": "Customers fill in their preferences: budget, location, property type, and wishes",
+        "step_3_title": "AI Matching",
+        "step_3_description": "Our algorithm analyzes all data and creates smart matches in real-time",
+        "step_4_title": "Instant Notifications",
+        "step_4_description": "You and the customer immediately receive notifications of new matches"
+      },
+      "cta": {
+        "title": "Ready to work smarter?",
+        "description": "Discover how smart matching can transform your sales process",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "deal_pipeline": {
+      "meta_title": "Real Estate Deal Pipeline - Seller & Buyer Deals | Tesoro CRM",
+      "meta_description": "Two distinct pipelines: Seller Deals (sale) and Buyer Deals (purchase) with complete context. Matching happens IN the buyer deal. Momentum-driven philosophy.",
+      "hero": {
+        "badge": "Deal Pipeline",
+        "title": "Real Estate Deal Pipeline - Where Money Is Made",
+        "description": "Two distinct deal types for real estate: Seller Deals (owner wants to sell) and Buyer Deals (searching houses for buyer). Each deal has complete context with all communication, stakeholders and documents in one card."
+      },
+      "benefits": {
+        "deal_types": "2",
+        "deal_types_desc": "distinct workflows (Seller & Buyer)",
+        "context": "100%",
+        "context_desc": "complete context per deal card",
+        "momentum": "Momentum",
+        "momentum_desc": "philosophy - stagnation = problem"
+      },
+      "intro": {
+        "title": "Deals - The Core of Real Estate CRM",
+        "description": "In real estate everything revolves around two things: Finding leads and closing deals. A Deal is where you make money. Tesoro has two main types:",
+        "seller_title": "Seller Deal (Sale)",
+        "seller_description": "Owner wants to sell their house. Agent appraises, lists the property, puts it online and on portals, runs social media campaign. Generates leads who are interested.",
+        "buyer_title": "Buyer Deal (Purchase)",
+        "buyer_description": "Buyer is looking for a house. This is where matching happens! Agent doesn't search for buyers but for houses for the buyer. Complete workflow from knowing property to signing deed."
+      },
+      "seller_deal": {
+        "title": "Seller Deal Pipeline",
+        "description": "From mandate to won/lost - complete workflow for sale deals with all stakeholders and communication in one overview.",
+        "stage_1_name": "Mandate",
+        "stage_1_description": "Owner gives assignment to sell house. Agent appraises and makes agreements.",
+        "stage_2_name": "Online",
+        "stage_2_description": "Property is online on portals (Funda, Idealista, etc.). Photos, description, floor plans. Marketing campaign starts.",
+        "stage_3_name": "Visits",
+        "stage_3_description": "Interested buyers schedule viewings. Agent shows the house and collects feedback.",
+        "stage_4_name": "Offer",
+        "stage_4_description": "Buyer makes an offer. Negotiations begin. Back and forth until agreement or buyer walks away.",
+        "stage_5_name": "Reservation",
+        "stage_5_description": "Agreement reached! Property reserved for buyer. Off the market. Buyer arranges financing.",
+        "stage_6_name": "Deposit",
+        "stage_6_description": "Buyer pays 10% deposit. Contracts signed. Commitment from both sides.",
+        "stage_7_name": "Won",
+        "stage_7_description": "Notary appointment. Deed signed. Money transferred. Deal successfully closed!",
+        "stage_8_name": "Lost",
+        "stage_8_description": "Deal fell through. Financing not approved, or buyer or seller pulled out. Learn from it for next time."
+      },
+      "buyer_deal": {
+        "title": "Buyer Deal Pipeline - The Most Important One",
+        "description": "This is where matching happens! From knowing property to signing deed. Momentum is crucial - stagnation means problem in the relationship.",
+        "stage_1_name": "Knowing Property",
+        "stage_1_description": "You know exactly what client is looking for. Budget, location, property type, wishes. Matching system gets activated.",
+        "stage_1_philosophy": "This must QUICKLY move to First Visit. If this gets stuck, something is wrong with the relationship building!",
+        "stage_2_name": "First Visit",
+        "stage_2_description": "Client has viewed the property once. First impression. Notes during viewing. 5-star rating in portal.",
+        "stage_2_philosophy": "If First Visit gets stuck and doesn't move to Multiple Visits, something is also going on. More contact = stronger bond!",
+        "stage_3_name": "Multiple Visits",
+        "stage_3_description": "Client has been back 2-3 times. Seriously interested. Brings partner, parents or advisor along.",
+        "stage_4_name": "Offer",
+        "stage_4_description": "Client makes an offer on the property. Negotiations with seller. Often back and forth.",
+        "stage_5_name": "Reservation",
+        "stage_5_description": "Offer accepted! Property reserved. Now financing must be arranged.",
+        "stage_6_name": "10% Contract",
+        "stage_6_description": "Financing approved. 10% deposit paid. Contracts signed. This is commitment!",
+        "stage_7_name": "Signing Deed",
+        "stage_7_description": "Notary appointment scheduled. Final inspection done. Deed signing approaches.",
+        "stage_8_name": "Won",
+        "stage_8_description": "Keys handed over! Client is now owner. Deal successfully closed. Commission earned!",
+        "stage_9_name": "Lost",
+        "stage_9_description": "Deal fell through. Financing not approved, structural issues found, or client pulled out. Learn from it."
+      },
+      "complete_context": {
+        "title": "Everything in One Deal Card",
+        "description": "When you open a deal card, you see everything related to that deal. Complete context without having to search.",
+        "feature_1_title": "Activities Tab",
+        "feature_1_description": "All activities: emails, calls, WhatsApp, meetings. Complete timeline of what happened.",
+        "feature_2_title": "Details Tab",
+        "feature_2_description": "All deal details: price, conditions, deadlines, financing status. Everything in one place.",
+        "feature_3_title": "Contacts Tab",
+        "feature_3_description": "Not just the seller/buyer, but also architect, energy label specialist, lawyer, notary, other agents - everyone involved with this deal.",
+        "feature_4_title": "Tasks Tab",
+        "feature_4_description": "All tasks related to this deal. Schedule viewing, call financing, send documents.",
+        "feature_5_title": "Notes Tab",
+        "feature_5_description": "All notes about this deal. What was discussed? What needs to happen? Everything saved.",
+        "feature_6_title": "Emails Tab",
+        "feature_6_description": "All emails related to this deal. Automatic sync with Gmail/Outlook. Complete history.",
+        "feature_7_title": "Calls Tab",
+        "feature_7_description": "All phone calls. Who called whom? When? What was discussed? Notes per call.",
+        "feature_8_title": "WhatsApp Tab",
+        "feature_8_description": "WhatsApp integration. All messages about this deal. Complete communication history.",
+        "feature_9_title": "Meetings Tab",
+        "feature_9_description": "All viewings and meetings. When? Where? Who was there? What was discussed?",
+        "feature_10_title": "Documents Tab",
+        "feature_10_description": "All documents: contracts, IDs, appraisal reports, financing documents. Everything in one place."
+      },
+      "buyer_deal_special": {
+        "title": "Buyer Deal - Properties Tab",
+        "description": "In a Buyer Deal there's an extra tab that doesn't exist in Seller Deals: the Properties tab. This is where magic happens.",
+        "matching_title": "Matching Happens IN the Deal",
+        "matching_description": "In the Properties tab of a Buyer Deal you see the matching system. All matched properties appear there. Preselect lane, Propose lane - everything happens within the deal context.",
+        "integration_title": "Complete Integration",
+        "integration_description": "Matching is not a separate feature but integrated IN the buyer deal. You see immediately which properties fit this client. All within the same deal card.",
+        "philosophy_title": "Momentum is Crucial",
+        "philosophy_description": "Knowing Property → First Visit must happen QUICKLY. First Visit → Multiple Visits = more contact = stronger bond. Stagnation = problem."
+      },
+      "stakeholders": {
+        "title": "Stakeholder Management",
+        "description": "A real estate deal involves many parties. Not just buyer and seller, but also:",
+        "seller_deal_stakeholders": "Selling party, architect, energy label specialist, lawyer, notary, other agents with clients",
+        "buyer_deal_stakeholders": "Buying party, mortgage advisor, building inspector, notary, lawyer"
+      },
+      "philosophy": {
+        "title": "The Momentum Philosophy",
+        "description": "In real estate CRM, momentum is everything. A deal that gets stuck is a deal at risk.",
+        "principle_1_title": "Knowing → First Visit = FAST",
+        "principle_1_description": "As soon as you know what client wants, the first visit must happen quickly. If this gets stuck, something is wrong with the relationship.",
+        "principle_2_title": "First Visit → Multiple Visits",
+        "principle_2_description": "If client was there once but doesn't come back, there's also something going on. More contact = stronger bond!",
+        "principle_3_title": "Stagnation = Problem",
+        "principle_3_description": "If a deal doesn't move, red flags go up. Call the client. What's going on? Are there doubts? Act proactively.",
+        "quote": "More contact = stronger bond. Momentum is key in real estate."
+      },
+      "kanban_view": {
+        "title": "Visual Kanban View",
+        "description": "All your deals in a clear kanban board. Drag & drop between stages.",
+        "filter_title": "Powerful Filters",
+        "filter_description": "Filter on agent, property type, price range, status. See through the forest. Find exactly the deal you're looking for."
+      },
+      "vs_competition": {
+        "title": "Why Tesoro Deals Are Different",
+        "description": "Most CRMs have one generic pipeline. Tesoro has two distinct types for real estate:",
+        "difference_1_title": "Two Distinct Types",
+        "difference_1_description": "Seller Deal and Buyer Deal each have their own workflow and stages. Not generic but real estate-specific.",
+        "difference_2_title": "Complete Context",
+        "difference_2_description": "Everything in one deal card: 10 tabs with all communication, stakeholders, documents. Nothing gets lost.",
+        "difference_3_title": "Matching Integration",
+        "difference_3_description": "Matching is not separate but integrated IN the buyer deal. Properties tab shows all matches.",
+        "difference_4_title": "Momentum-Driven",
+        "difference_4_description": "Philosophy built in: Knowing → First Visit = fast. Stagnation = problem. The system warns you."
+      },
+      "cta": {
+        "title": "Ready to Close More Deals?",
+        "description": "Discover how Tesoro's real estate-specific deal pipeline increases your success rate.",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "client_portal": {
+      "meta_title": "Client Portal - The Must-Have Tool for House Hunting | Tesoro CRM",
+      "meta_description": "Portal for ALL visited properties with photo uploads, private notes and 5-star ratings. Clients never lose overview with 20+ viewings per week. Creates loyalty.",
+      "hero": {
+        "badge": "Client Portal",
+        "title": "The Must-Have Tool for Complete House Hunting",
+        "description": "A portal for ALL properties your client visits - not just Tesoro proposals. With photo uploads, private notes and 5-star ratings. So your client maintains overview with 20+ viewings per week. And stays loyal to you.",
+        "cta_primary": "Start 14 Days Free",
+        "cta_secondary": "View Demo"
+      },
+      "benefits": {
+        "houses_tracked": "ALL",
+        "houses_tracked_desc": "visited properties in one overview",
+        "loyalty": "78%",
+        "loyalty_desc": "clients stay with the same agent",
+        "overview": "20+",
+        "overview_desc": "properties per week no problem"
+      },
+      "problem": {
+        "title": "The Problem with Other CRMs",
+        "description": "We did research with 100+ agents. What did we find? Other CRMs automatically send emails to clients as soon as there's a match - without consulting the agent.",
+        "pain_1_title": "Client Frustration",
+        "pain_1_description": "Clients see properties that don't fit in terms of architecture or location. Match on budget and rooms, but not on details from conversations.",
+        "pain_2_title": "No Tracking",
+        "pain_2_description": "Via email you don't know what the client thinks. No insight into interest, no overview of visited properties.",
+        "pain_3_title": "No Control",
+        "pain_3_description": "Agent has no control over what goes to client. System sends everything automatically."
+      },
+      "solution": {
+        "title": "The Tesoro Solution: Portal as Must-Have Tool",
+        "description": "We don't send automatic emails. Instead, your client gets a portal they can't do without during their house hunt.",
+        "benefit_1_title": "ALL Visited Properties",
+        "benefit_1_description": "Not just Tesoro proposals - all properties the client visits go in their portal. If they stay with you, they have complete history.",
+        "benefit_2_title": "Photos & Notes During Viewing",
+        "benefit_2_description": "Client takes photos during viewing, adds private notes. Only for them, not shared with agent.",
+        "benefit_3_title": "5-Star Rating System",
+        "benefit_3_description": "Client rates each property 1-5 stars. Agent sees ratings (not notes/photos). After 20 viewings, client still knows exactly what they thought of each property."
+      },
+      "client_perspective": {
+        "title": "Why Clients Can't Do Without the Portal",
+        "description": "A client views an average of 20 properties per week. On Friday they don't remember what they saw on Monday or what they thought of it.",
+        "feature_1_title": "Complete Overview",
+        "feature_1_description": "All visited properties in one place. With photos, notes, ratings. Sort by 5-star properties.",
+        "feature_2_title": "During Viewing",
+        "feature_2_description": "Upload photos and make notes directly while walking through the property. Never forget important details again.",
+        "feature_3_title": "Easy Comparison",
+        "feature_3_description": "Which property had that nice garden? Which was too dark? Check your notes and photos. Re-evaluate.",
+        "quote": "On Friday I don't remember what I viewed on Monday. Now I do - with complete photos, notes and my own ratings.",
+        "quote_author": "Typical client feedback"
+      },
+      "loyalty": {
+        "title": "Creates Loyalty",
+        "description": "This is why clients stay with you:",
+        "reason_1_title": "Don't Want to Switch",
+        "reason_1_description": "Client doesn't want to go to another agent because they'll lose their portal with complete viewing history.",
+        "reason_2_title": "Everything in One Place",
+        "reason_2_description": "All properties they view through you come in their portal. That strengthens the bond with your office.",
+        "reason_3_title": "Personal Tool",
+        "reason_3_description": "The portal becomes their personal house-hunting tool with all their photos, notes and ratings.",
+        "stat": "78% of clients stay with the same agent because of portal history"
+      },
+      "makelaar_benefits": {
+        "title": "Benefits for Agent",
+        "benefit_1_title": "You Maintain Control",
+        "benefit_1_description": "No automatic emails. You choose what goes in propose lane. Client gets email 2x per day with link to portal.",
+        "benefit_2_title": "See Client Interest",
+        "benefit_2_description": "Agent sees the 5-star ratings client gives. Know exactly which properties client really finds interesting.",
+        "benefit_3_title": "Client Privacy Respected",
+        "benefit_3_description": "Notes and photos remain private for client. This builds trust. You do see ratings.",
+        "benefit_4_title": "Client Retention",
+        "benefit_4_description": "Portal with complete history creates loyalty. Client doesn't want to switch and lose their data."
+      },
+      "workflow": {
+        "title": "How It Works",
+        "step_1_title": "Agent Selects",
+        "step_1_description": "You move matches to propose lane. Only what you approve goes to client.",
+        "step_2_title": "Email 2x per Day",
+        "step_2_description": "Clients with portal account receive email 2x per day with link to new proposals in portal.",
+        "step_3_title": "Client Views in Portal",
+        "step_3_description": "Client views properties in portal. Marks interesting (viewing + 3 dates) or not interesting (with reason).",
+        "step_4_title": "Client Visits Property",
+        "step_4_description": "During viewing: client takes photos, writes notes, gives 5-star rating.",
+        "step_5_title": "Everything Stays Saved",
+        "step_5_description": "All visited properties stay in portal. With photos (private), notes (private), ratings (agent sees these).",
+        "step_6_title": "Easy Comparison",
+        "step_6_description": "Client can later compare all properties. Filter on 5-stars. Check Monday's notes. Perfect overview."
+      },
+      "features_grid": {
+        "title": "Portal Features",
+        "feature_1_title": "ALL Visited Properties",
+        "feature_1_description": "Not just Tesoro proposals - all properties client visits through you.",
+        "feature_2_title": "Photo Uploads",
+        "feature_2_description": "Client uploads photos during viewing. Stay private, only visible to client.",
+        "feature_3_title": "Private Notes",
+        "feature_3_description": "Notes like 'garden too small' or 'perfect for home office'. Only for client.",
+        "feature_4_title": "5-Star Ratings",
+        "feature_4_description": "Rate each property 1-5 stars. Agent sees ratings, client maintains overview.",
+        "feature_5_title": "Complete History",
+        "feature_5_description": "All viewings saved. Also rejected properties with reason why.",
+        "feature_6_title": "Easy Search",
+        "feature_6_description": "Filter on 5-stars, search by location, view only interesting properties.",
+        "feature_7_title": "Request Viewing",
+        "feature_7_description": "For interesting property: request viewing with 3 proposed dates.",
+        "feature_8_title": "Deal Status Tracking",
+        "feature_8_description": "Follow status: proposed → viewed → offer → closed."
+      },
+      "cta": {
+        "title": "Give Your Clients the Portal They Can't Do Without",
+        "description": "Create loyalty by helping your clients maintain overview during their house hunt.",
+        "cta_primary": "Start 14 Days Free",
+        "cta_secondary": "View Demo"
+      }
+    },
+    "email_integration": {
+      "meta_title": "Email Integration | Tesoro CRM",
+      "meta_description": "Seamless integration with Gmail, Outlook and other email systems. All communication automatically stored in the customer file.",
+      "hero": {
+        "badge": "Email Integration",
+        "title": "Seamless Email Integration",
+        "description": "Complete integration with Gmail, Outlook and other email systems. All your communication is automatically stored in the right customer file, so you never lose track of the conversation."
+      },
+      "benefits": {
+        "title": "Never Search for Emails Again",
+        "benefit_1_title": "Auto-Sync",
+        "benefit_1_description": "All emails are automatically linked to the right customers and properties",
+        "benefit_2_title": "Complete History",
+        "benefit_2_description": "Complete communication history per customer in one clear overview",
+        "benefit_3_title": "Email Templates",
+        "benefit_3_description": "Professional email templates for every stage of the sales process"
+      },
+      "workflow": {
+        "title": "How Email Integration Works",
+        "step_1_title": "Connect Email",
+        "step_1_description": "Connect your existing Gmail, Outlook or other email account with one click",
+        "step_2_title": "Automatic Recognition",
+        "step_2_description": "Tesoro recognizes email addresses and links messages to the right customer",
+        "step_3_title": "Smart Organization",
+        "step_3_description": "Emails are automatically organized per customer and property in your CRM",
+        "step_4_title": "Template Library",
+        "step_4_description": "Use professional templates for follow-ups, offers and confirmations"
+      },
+      "cta": {
+        "title": "Work more efficiently",
+        "description": "See how email integration streamlines your communication",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "property_management": {
+      "meta_title": "Property Management | Tesoro CRM",
+      "meta_description": "Complete property management system with photo management, documents, viewing planning and status tracking.",
+      "hero": {
+        "badge": "Property Management",
+        "title": "Complete Property Management",
+        "description": "Manage all your properties in one central system. From photos and descriptions to viewing schedules and document management - everything organized and easily accessible."
+      },
+      "benefits": {
+        "title": "All Properties Under Control",
+        "benefit_1_title": "Central Database",
+        "benefit_1_description": "All property information, photos and documents in one searchable system",
+        "benefit_2_title": "Smart Organization",
+        "benefit_2_description": "Automatic categorization by type, location, price range and status",
+        "benefit_3_title": "Quick Sharing",
+        "benefit_3_description": "Instantly share property details with customers via portal or email"
+      },
+      "workflow": {
+        "title": "Property Management Made Easy",
+        "step_1_title": "Add Properties",
+        "step_1_description": "Add properties manually or import automatically from MLS systems",
+        "step_2_title": "Complete Profiles",
+        "step_2_description": "Add photos, descriptions, floor plans and all relevant details",
+        "step_3_title": "Status Tracking",
+        "step_3_description": "Track status: available, under option, sold, with automatic updates",
+        "step_4_title": "Smart Distribution",
+        "step_4_description": "Automatically share with matching customers via the portal and email"
+      },
+      "cta": {
+        "title": "Organize your properties",
+        "description": "Discover how smart property management saves time and improves service",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "reporting_analytics": {
+      "meta_title": "Reporting & Analytics | Tesoro CRM",
+      "meta_description": "Extensive reports and analytics about your performance, conversion rates, and revenue. Make data-driven decisions.",
+      "hero": {
+        "badge": "Reporting & Analytics",
+        "title": "Data-Driven Insights",
+        "description": "Extensive reports and analytics about your performance, conversion rates, and revenue. Real-time dashboards and automated reports give you insight into what works and what doesn't."
+      },
+      "benefits": {
+        "title": "Make Smart Decisions",
+        "benefit_1_title": "Real-time Dashboards",
+        "benefit_1_description": "Live overview of your performance, leads, conversions and revenue",
+        "benefit_2_title": "Automated Reports",
+        "benefit_2_description": "Weekly and monthly reports automatically in your inbox",
+        "benefit_3_title": "Predictive Analytics",
+        "benefit_3_description": "AI predictions about market trends and opportunities"
+      },
+      "workflow": {
+        "title": "From Data to Insight",
+        "step_1_title": "Data Collection",
+        "step_1_description": "All activities, communications and results are automatically tracked",
+        "step_2_title": "Smart Analysis",
+        "step_2_description": "AI analyzes patterns and trends in your sales process",
+        "step_3_title": "Clear Reports",
+        "step_3_description": "Easy-to-understand reports with actionable recommendations",
+        "step_4_title": "Strategic Actions",
+        "step_4_description": "Use insights to optimize your strategy and improve results"
+      },
+      "cta": {
+        "title": "Make better decisions",
+        "description": "See how data-driven insights improve your results",
+        "primary": "Request Demo",
+        "secondary": "View Pricing"
+      }
+    },
+    "common": {
+      "workflow_title": "How It Works",
+      "benefits_title": "Benefits",
+      "cta_section": "Ready to get started?",
+      "integration_section": {
+        "title": "{feature_name} integrates seamlessly",
+        "description": "{feature_name} works alongside the tools you already use to maximize your efficiency."
+      }
+    }
+  }
+}

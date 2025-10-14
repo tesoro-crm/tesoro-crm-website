@@ -1,0 +1,376 @@
+{
+  "feature_pages": {
+    "smart_matching": {
+      "meta_title": "Slimme Property-Klant Matching | Tesoro CRM",
+      "meta_description": "Real-time AI matching tussen properties en klanten. Matches verschijnen direct wanneer parameters wijzigen. Bespaar 3+ uur per dag en verhoog je conversie met 40%.",
+      "hero": {
+        "badge": "Smart Matching",
+        "title": "Slimme Property-Klant Matching",
+        "description": "Real-time AI matching tussen properties en klanten. Matches verschijnen direct wanneer deal parameters wijzigen of nieuwe huizen binnenkomen. Jij selecteert wat voorgesteld wordt, klanten ontvangen 2x per dag een email met je goedgekeurde voorstellen.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "time_saved": "3+ uur",
+        "time_saved_desc": "bespaard per dag door automatische matching",
+        "conversion": "40%",
+        "conversion_desc": "hogere conversie door betere matches",
+        "satisfaction": "85%",
+        "satisfaction_desc": "van makelaars zegt meer tijd te hebben voor klanten"
+      }
+    },
+    "deal_pipeline": {
+      "meta_title": "Real Estate Deal Pipeline - Seller & Buyer Deals | Tesoro CRM",
+      "meta_description": "Twee distincte pipelines: Seller Deals (verkoop) en Buyer Deals (koop) met complete context. Matching gebeurt IN de buyer deal. Momentum-driven filosofie.",
+      "hero": {
+        "badge": "Deal Pipeline",
+        "title": "Real estate deal pipeline - waar geld verdiend wordt",
+        "description": "Twee distincte deal types voor real estate: seller deals (eigenaar wil verkopen) en buyer deals (huizen zoeken voor koper). Elke deal heeft complete context met alle communicatie, stakeholders en documenten in één card.",
+        "cta_primary": "Start 14 dagen gratis",
+        "cta_secondary": "Bekijk demo"
+      },
+      "benefits": {
+        "deal_types": "2",
+        "deal_types_desc": "distincte workflows (Seller & Buyer)",
+        "context": "100%",
+        "context_desc": "complete context per deal card",
+        "momentum": "Momentum",
+        "momentum_desc": "filosofie - stilstand = probleem"
+      },
+      "intro": {
+        "title": "Deals - de kern van real estate CRM",
+        "description": "In real estate draait alles om twee dingen: leads vinden en deals sluiten. Een deal is waar je geld mee verdient. Tesoro heeft twee hoofdtypes:",
+        "seller_title": "Seller deal (verkoop)",
+        "seller_description": "Eigenaar wil zijn huis verkopen. Makelaar taxeert, list het huis, zet het online en op portals, voert sociale media campagne. Genereert leads die geïnteresseerd zijn.",
+        "buyer_title": "Buyer deal (koop)",
+        "buyer_description": "Koper zoekt een huis. Hier gebeurt de matching! Makelaar zoekt niet naar kopers maar naar huizen voor de koper. Complete workflow van knowing property tot signing deed."
+      },
+      "seller_deal": {
+        "title": "Seller deal pipeline",
+        "description": "Van mandate tot won/lost - complete workflow voor verkoopdeals met alle stakeholders en communicatie in één overzicht.",
+        "stage_1_name": "Mandate",
+        "stage_1_description": "Eigenaar geeft opdracht om huis te verkopen. Makelaar taxeert en maakt afspraken.",
+        "stage_2_name": "Online",
+        "stage_2_description": "Huis staat online op website en portals. Sociale media campagne actief.",
+        "stage_3_name": "Visits",
+        "stage_3_description": "Bezichtigingen worden gepland en uitgevoerd. Leads komen kijken.",
+        "stage_4_name": "Offer",
+        "stage_4_description": "Een of meerdere biedingen zijn gedaan op het huis.",
+        "stage_5_name": "Reservation",
+        "stage_5_description": "Huis is gereserveerd voor koper. Voorwaarden worden besproken.",
+        "stage_6_name": "Deposit",
+        "stage_6_description": "Aanbetaling is gedaan. Contract wordt voorbereid.",
+        "stage_7_name": "Won",
+        "stage_7_description": "Deal succesvol afgerond. Commissie kan worden bijgeschreven.",
+        "stage_8_name": "Lost",
+        "stage_8_description": "Deal niet doorgegaan. Verkoper trekt opdracht terug of kiest andere makelaar."
+      },
+      "buyer_deal": {
+        "title": "Buyer deal pipeline - de belangrijkste",
+        "description": "Hier gebeurt de matching! Van knowing property tot signing deed. Momentum is cruciaal - stilstand betekent probleem in de relatie.",
+        "stage_1_name": "Knowing Property",
+        "stage_1_description": "Je weet wat klant precies zoekt. Budget, locatie, type woning, wensen. Matching systeem wordt geactiveerd.",
+        "stage_1_philosophy": "Dit moet SNEL naar First Visit. Als dit blijft hangen gaat er iets mis in de relatieopbouw!",
+        "stage_2_name": "First Visit",
+        "stage_2_description": "Eerste bezichtiging heeft plaatsgevonden. Cruciale fase voor het opbouwen van vertrouwen.",
+        "stage_2_philosophy": "Als First Visit blijft hangen en niet naar Multiple Visits gaat, is er ook iets aan de hand. Meer contact = sterkere band!",
+        "stage_3_name": "Multiple Visits",
+        "stage_3_description": "Meerdere bezichtigingen. Band wordt sterker. Klant is serieus en actief zoekende.",
+        "stage_4_name": "Offer",
+        "stage_4_description": "Klant doet bieding op een huis. Onderhandelingen starten.",
+        "stage_5_name": "Reservation",
+        "stage_5_description": "Huis is gereserveerd. Voorwaarden worden uitgewerkt.",
+        "stage_6_name": "10% Contract",
+        "stage_6_description": "Aanbetalingsfase. 10% contract getekend.",
+        "stage_7_name": "Signing Deed",
+        "stage_7_description": "Bij notaris officieel getekend. Deal bijna afgerond.",
+        "stage_8_name": "Won",
+        "stage_8_description": "Deal succesvol afgesloten. Commissie kan worden bijgeschreven.",
+        "stage_9_name": "Lost",
+        "stage_9_description": "Deal niet doorgegaan. Zo min mogelijk hier terecht."
+      },
+      "complete_context": {
+        "title": "Alles in één deal card",
+        "description": "Als je een deal card opent, zie je alles wat speelt rondom die deal. Complete context zonder te hoeven zoeken.",
+        "feature_1_title": "Activiteiten tab",
+        "feature_1_description": "Alle activiteiten die gaande zijn. Complete tijdlijn van wat er gebeurt.",
+        "feature_2_title": "Details tab",
+        "feature_2_description": "Alle deal details, waarden, stages, belangrijke data en mijlpalen.",
+        "feature_3_title": "Contactpersonen tab",
+        "feature_3_description": "Niet alleen de verkoper/koper, maar ook architect, energie label specialist, advocaat, notaris, andere makelaars - iedereen die met deze deal te maken heeft.",
+        "feature_4_title": "Taken tab",
+        "feature_4_description": "Alle taken die rondom deze deal plaatsvinden. Wie doet wat en wanneer.",
+        "feature_5_title": "Notities tab",
+        "feature_5_description": "Notities die gemaakt moeten worden. Complete geschiedenis van opmerkingen.",
+        "feature_6_title": "E-mails tab",
+        "feature_6_description": "Alle e-mails gestuurd naar verkopende partij, koper, én stakeholders. Complete communicatie historie.",
+        "feature_7_title": "Calls tab",
+        "feature_7_description": "Alle telefoongesprekken die gemaakt zijn rondom deze deal.",
+        "feature_8_title": "WhatsApp tab",
+        "feature_8_description": "WhatsApp communicatie gekoppeld aan deze deal.",
+        "feature_9_title": "Meetings tab",
+        "feature_9_description": "Alle meetings, bezichtigingen en afspraken gerelateerd aan deze deal.",
+        "feature_10_title": "Documenten tab",
+        "feature_10_description": "Alle documenten en attachments. Contracten, foto's, plattegronden, taxaties."
+      },
+      "buyer_deal_special": {
+        "title": "Buyer deal - properties tab",
+        "description": "Dit is wat buyer deals echt speciaal maakt:",
+        "matching_title": "Matching gebeurt IN de deal",
+        "matching_description": "In de properties tab van een buyer deal zie je het matching systeem. Daar komen alle matched properties. Preselect lane, propose lane - alles gebeurt binnen de deal context.",
+        "integration_title": "Complete integratie",
+        "integration_description": "Matching is geen losstaande feature maar geïntegreerd in de buyer deal workflow. Zo zie je precies welke huizen zijn voorgesteld, welke feedback er is, en wat de volgende stappen zijn.",
+        "philosophy_title": "Momentum is cruciaal",
+        "philosophy_description": "De workflow is ontworpen rond momentum. Knowing property → first visit moet snel. First visit → multiple visits betekent sterke relatie. Stilstand in een fase? Dan is er een probleem."
+      },
+      "stakeholders": {
+        "title": "Stakeholder management",
+        "description": "Real estate deals hebben veel betrokken partijen. In de contactinfo tab zie je iedereen:",
+        "seller_deal_stakeholders": "Verkopende partij, architect, energie label specialist, advocaat, notaris, andere makelaars met klanten",
+        "buyer_deal_stakeholders": "Kopende partij, hypotheekadviseur, bouwkundige inspecteur, notaris, advocaat",
+        "benefit": "Alle contacten op één plek per deal. Je weet precies met wie je te maken hebt."
+      },
+      "philosophy": {
+        "title": "De Momentum Filosofie",
+        "description": "Tesoro's deal pipeline is gebouwd rond een fundamentele filosofie over relaties:",
+        "principle_1_title": "Knowing → First Visit = SNEL",
+        "principle_1_description": "Als een buyer deal lang in Knowing Property blijft hangen zonder First Visit, gaat er iets mis in de relatieopbouw. Dit moet snel gebeuren.",
+        "principle_2_title": "First Visit → Multiple Visits",
+        "principle_2_description": "Als First Visit blijft hangen, is er ook iets aan de hand. Hoe meer contact je hebt met een klant, en als je het goed doet, wordt die band steeds sterker.",
+        "principle_3_title": "Stilstand = Probleem",
+        "principle_3_description": "Elke fase waar een deal te lang blijft hangen, is een signaal. Tesoro waarschuwt je proactief zodat je actie kunt ondernemen.",
+        "quote": "Meer contact = sterkere band. Momentum is key in real estate."
+      },
+      "kanban_view": {
+        "title": "Kanban View met Context",
+        "description": "Alle deals in overzichtelijke kanban lanes. Sleep cards tussen stages. Open een card en zie complete context.",
+        "filter_title": "Filters en views",
+        "filter_description": "Krachtige filters om door de bomen het bos te zien",
+        "benefit_1": "Visueel overzicht van alle deals per stage",
+        "benefit_2": "Drag & drop om deals te verplaatsen",
+        "benefit_3": "Complete context per card",
+        "benefit_4": "Filters en views om door bomen bos te zien"
+      },
+      "vs_competition": {
+        "title": "Waarom Tesoro Deals Anders Zijn",
+        "description": "De meeste CRMs kopiëren generieke sales pipelines. Tesoro is gebouwd voor real estate:",
+        "difference_1_title": "Twee Distincte Types",
+        "difference_1_description": "Seller en Buyer deals hebben verschillende workflows. Niet één generieke pipeline.",
+        "difference_2_title": "Complete Context",
+        "difference_2_description": "Alles wat je nodig hebt in één card. Geen zoeken door verschillende schermen.",
+        "difference_3_title": "Matching Integratie",
+        "difference_3_description": "Matching gebeurt IN de buyer deal. Niet als losse feature maar geïntegreerd in workflow.",
+        "difference_4_title": "Momentum-Driven",
+        "difference_4_description": "Gebouwd rond filosofie dat momentum cruciaal is. Proactieve waarschuwingen bij stilstand."
+      },
+      "cta": {
+        "title": "Klaar voor Real Estate-Specifieke Deal Management?",
+        "description": "Geen generieke sales pipeline maar twee workflows gebouwd voor real estate met complete context per deal.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      }
+    },
+    "client_portal": {
+      "meta_title": "Klantportaal - De Onmisbare Tool voor Huizenjacht | Tesoro CRM",
+      "meta_description": "Portal voor ALLE bezochte huizen met foto uploads, privé notities en 5-sterren ratings. Klanten verliezen geen overzicht meer bij 20+ bezichtigingen per week. Creëert loyaliteit.",
+      "hero": {
+        "badge": "Klantportaal",
+        "title": "De Onmisbare Tool voor Complete Huizenjacht",
+        "description": "Een portal voor ALLE huizen die je klant bezoekt - niet alleen Tesoro voorstellen. Met foto uploads, privé notities en 5-sterren ratings. Zo houdt je klant overzicht bij 20+ bezichtigingen per week. En blijft hij loyaal aan jou.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "houses_tracked": "ALLE",
+        "houses_tracked_desc": "bezochte huizen in één overzicht",
+        "loyalty": "78%",
+        "loyalty_desc": "klanten blijven bij dezelfde makelaar",
+        "overview": "20+",
+        "overview_desc": "huizen per week geen probleem meer"
+      },
+      "problem": {
+        "title": "Het Probleem met Andere CRMs",
+        "description": "Wij hebben research gedaan bij 100+ makelaars. Wat bleek? Andere CRMs sturen automatisch mails naar klanten zodra er een match is - zonder overleg met de makelaar.",
+        "pain_1_title": "Klant Irritatie",
+        "pain_1_description": "Klanten krijgen huizen te zien die niet passen qua bouwstijl of locatie. Match op budget en kamers, maar niet op details uit gesprekken.",
+        "pain_2_title": "Geen Tracking",
+        "pain_2_description": "Via email weet je niet wat klant ervan vindt. Geen inzicht in interesse, geen overzicht van bezochte huizen.",
+        "pain_3_title": "Geen Controle",
+        "pain_3_description": "Makelaar heeft geen controle over wat naar klant gaat. Systeem stuurt alles automatisch."
+      },
+      "solution": {
+        "title": "De Tesoro Oplossing: Portal als Must-Have Tool",
+        "description": "Wij versturen geen automatische mails. In plaats daarvan krijgt je klant een portal die hij niet kan missen bij zijn huizenjacht.",
+        "benefit_1_title": "ALLE Bezochte Huizen",
+        "benefit_1_description": "Niet alleen Tesoro voorstellen - alle huizen die klant bezoekt komen in zijn portal. Als hij bij jou blijft, heeft hij complete historie.",
+        "benefit_2_title": "Foto's & Notities Tijdens Bezichtiging",
+        "benefit_2_description": "Klant maakt foto's tijdens bezichtiging, voegt privé notities toe. Alleen voor hem, niet gedeeld met makelaar.",
+        "benefit_3_title": "5-Sterren Rating Systeem",
+        "benefit_3_description": "Klant geeft elk huis 1-5 sterren. Makelaar ziet ratings (niet notities/foto's). Na 20 bezichtigingen weet klant nog precies wat hij van elk huis vond."
+      },
+      "client_perspective": {
+        "title": "Waarom Klanten de Portal Niet Kunnen Missen",
+        "description": "Een klant bekijkt gemiddeld 20 huizen per week. Op vrijdag weet hij niet meer wat hij maandag zag of wat hij ervan vond.",
+        "feature_1_title": "Compleet Overzicht",
+        "feature_1_description": "Alle bezochte huizen op één plek. Met foto's, notities, ratings. Sorteer op 5-sterren huizen.",
+        "feature_2_title": "Tijdens Bezichtiging",
+        "feature_2_description": "Direct foto's uploaden en notities maken terwijl je door het huis loopt. Vergeet nooit meer belangrijke details.",
+        "feature_3_title": "Gemakkelijk Vergelijken",
+        "feature_3_description": "Welk huis had die mooie tuin? Welke was te donker? Check je notities en foto's. Beoordeel opnieuw.",
+        "quote": "Op vrijdag weet ik niet meer wat ik maandag heb bekeken. Nu wel - met complete foto's, notities en mijn eigen ratings.",
+        "quote_author": "Typische klant feedback"
+      },
+      "loyalty": {
+        "title": "Creëert Loyaliteit",
+        "description": "Dit is waarom klanten bij jou blijven:",
+        "reason_1_title": "Niet Willen Switchen",
+        "reason_1_description": "Klant wil niet naar andere makelaar want dan verliest hij zijn portal met complete bezichtiging historie.",
+        "reason_2_title": "Alles op Één Plek",
+        "reason_2_description": "Alle huizen die hij bekijkt via jou komen in zijn portal. Dat versterkt de band met jouw kantoor.",
+        "reason_3_title": "Persoonlijke Tool",
+        "reason_3_description": "De portal wordt zijn persoonlijke huizenjacht tool met al zijn foto's, notities en ratings.",
+        "stat": "78% van klanten blijft bij dezelfde makelaar door de portal historie"
+      },
+      "makelaar_benefits": {
+        "title": "Voordelen voor Makelaar",
+        "benefit_1_title": "Jij Behoudt Controle",
+        "benefit_1_description": "Geen automatische mails. Jij kiest wat in propose lane gaat. 2x per dag krijgt klant email met link naar portal.",
+        "benefit_2_title": "Zie Klant Interesse",
+        "benefit_2_description": "Makelaar ziet de 5-sterren ratings die klant geeft. Weet precies welke huizen klant echt interessant vindt.",
+        "benefit_3_title": "Klant Privacy Gerespecteerd",
+        "benefit_3_description": "Notities en foto's blijven privé voor klant. Dit versterkt vertrouwen. Ratings zie je wel.",
+        "benefit_4_title": "Klantenbinding",
+        "benefit_4_description": "Portal met complete historie creëert loyaliteit. Klant wil niet switchen en zijn data kwijtraken."
+      },
+      "workflow": {
+        "title": "Hoe Het Werkt",
+        "step_1_title": "Makelaar Selecteert",
+        "step_1_description": "Jij verplaatst matches naar propose lane. Alleen wat jij goedkeurt gaat naar klant.",
+        "step_2_title": "Email 2x per Dag",
+        "step_2_description": "Klanten met portal account ontvangen 2x per dag email met link naar nieuwe voorstellen in portal.",
+        "step_3_title": "Klant Bekijkt in Portal",
+        "step_3_description": "Klant bekijkt huizen in portal. Markeert interessant (viewing + 3 data) of niet interessant (met reden).",
+        "step_4_title": "Klant Bezoekt Huis",
+        "step_4_description": "Tijdens bezichtiging: klant maakt foto's, schrijft notities, geeft 5-sterren rating.",
+        "step_5_title": "Alles Blijft Bewaard",
+        "step_5_description": "Alle bezochte huizen blijven in portal. Met foto's (privé), notities (privé), ratings (makelaar ziet deze).",
+        "step_6_title": "Gemakkelijk Vergelijken",
+        "step_6_description": "Klant kan later alle huizen vergelijken. Filter op 5-sterren. Check notities van maandag. Perfect overzicht."
+      },
+      "features_grid": {
+        "title": "Portal Features",
+        "feature_1_title": "ALLE Bezochte Huizen",
+        "feature_1_description": "Niet alleen Tesoro voorstellen - alle huizen die klant bezoekt via jou.",
+        "feature_2_title": "Foto Uploads",
+        "feature_2_description": "Klant uploadt foto's tijdens bezichtiging. Blijven privé, alleen voor klant zichtbaar.",
+        "feature_3_title": "Privé Notities",
+        "feature_3_description": "Notities zoals 'tuin te klein' of 'perfect voor thuiswerken'. Alleen voor klant.",
+        "feature_4_title": "5-Sterren Ratings",
+        "feature_4_description": "Geef elk huis 1-5 sterren. Makelaar ziet ratings, klant behoudt overzicht.",
+        "feature_5_title": "Complete Historie",
+        "feature_5_description": "Alle bezichtigingen bewaard. Ook afgewezen huizen met reden waarom.",
+        "feature_6_title": "Gemakkelijk Zoeken",
+        "feature_6_description": "Filter op 5-sterren, zoek op locatie, bekijk alleen interessante huizen.",
+        "feature_7_title": "Bezichtiging Aanvragen",
+        "feature_7_description": "Bij interessant huis: viewing aanvragen met 3 voorgestelde data.",
+        "feature_8_title": "Deal Status Tracking",
+        "feature_8_description": "Volg status: voorgesteld → bezichtigd → bieding → closed."
+      },
+      "cta": {
+        "title": "Geef Je Klanten de Portal Die Ze Niet Kunnen Missen",
+        "description": "Creëer loyaliteit door je klanten te helpen overzicht te houden bij hun huizenjacht.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      }
+    },
+    "email_integration": {
+      "meta_title": "E-mail Integratie Gmail & Outlook | Tesoro CRM",
+      "meta_description": "Volledige bidirectionele sync met Gmail en Outlook. Automatische deal koppeling, e-mail templates en complete communicatie geschiedenis.",
+      "hero": {
+        "badge": "E-mail Integratie",
+        "title": "Naadloze E-mail Integratie",
+        "description": "Volledige bidirectionele sync met Gmail en Outlook. Alle communicatie automatisch gekoppeld aan deals en klanten.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "tracking": "100%",
+        "tracking_desc": "van communicatie wordt bijgehouden",
+        "missed_emails": "0",
+        "missed_emails_desc": "e-mails vallen tussen de mazen",
+        "setup_time": "2 min",
+        "setup_time_desc": "setup tijd per e-mail account"
+      },
+      "cta": {
+        "title": "Klaar voor naadloze e-mail integratie?",
+        "description": "Integreer Gmail of Outlook in 2 minuten en track alle communicatie automatisch.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
+      }
+    },
+    "property_management": {
+      "meta_title": "Property Management & MLS Integratie | Tesoro CRM",
+      "meta_description": "Complete property database met MLS XML import/export. Automatisch publiceren naar Funda, Idealista en andere vastgoedportals. 70% minder administratie.",
+      "hero": {
+        "badge": "Property Management",
+        "title": "Complete Property Management",
+        "description": "Uitgebreide property database met MLS integraties en automatisch publiceren naar alle belangrijke vastgoedportals. Minder administratie, meer verkopen.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "time_saved": "70%",
+        "time_saved_desc": "minder tijd aan property administratie",
+        "portals": "5+",
+        "portals_desc": "portals automatisch bijgewerkt",
+        "sync": "100%",
+        "sync_desc": "synchronisatie tussen platforms"
+      },
+      "cta": {
+        "title": "Klaar voor geautomatiseerd property management?",
+        "description": "Bespaar 70% van je tijd aan property administratie met automatische synchronisatie en publicatie.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
+      }
+    },
+    "reporting_analytics": {
+      "meta_title": "Rapportages & Analytics Dashboard | Tesoro CRM",
+      "meta_description": "Real-time sales analytics, team performance tracking en revenue forecasting. Automated reporting en AI-powered insights voor vastgoedprofessionals.",
+      "hero": {
+        "badge": "Analytics & Reporting",
+        "title": "Rapportages & Analytics Dashboard",
+        "description": "Real-time inzicht in je sales performance, team prestaties en revenue forecasting. Maak data-gedreven beslissingen die je omzet verhogen.",
+        "cta_primary": "Start 14 Dagen Gratis",
+        "cta_secondary": "Bekijk Demo"
+      },
+      "benefits": {
+        "forecasting": "43%",
+        "forecasting_desc": "betere sales forecasting",
+        "bottlenecks": "2.5x",
+        "bottlenecks_desc": "snellere identificatie van knelpunten",
+        "revenue_increase": "67%",
+        "revenue_increase_desc": "van makelaars verhoogt omzet"
+      },
+      "cta": {
+        "title": "Klaar voor data-gedreven beslissingen?",
+        "description": "Krijg real-time inzicht in je sales performance en verhoog je omzet met 67%.",
+        "primary": "Start 14 Dagen Gratis",
+        "secondary": "Bekijk Demo"
+      }
+    },
+    "common": {
+      "cta_section": {
+        "title": "Klaar voor {feature_name}?",
+        "description": "Begin vandaag nog met de 14-dagen gratis trial. Geen creditcard vereist.",
+        "cta_primary": "Start Gratis Trial",
+        "cta_secondary": "Alle Features"
+      },
+      "integration_section": {
+        "title": "Integreert met je Volledige Workflow",
+        "description": "{feature_name} werkt naadloos samen met alle andere Tesoro CRM features."
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint . --ext .js,.ts,.tsx,.astro",
+    "validate:i18n": "node scripts/validate-translations.js",
     "test": "echo 'No tests defined yet' && exit 0",
     "deploy:preview": "npm run build && wrangler pages deploy dist --branch preview",
     "deploy:production": "npm run build && wrangler pages deploy dist --branch main"

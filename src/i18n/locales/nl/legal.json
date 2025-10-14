@@ -1,0 +1,114 @@
+{
+  "fair_use_policy": {
+    "meta_title": "Fair Use Policy - Tesoro CRM",
+    "meta_description": "Transparante Fair Use Policy voor Tesoro CRM. Ontdek de redelijke gebruikslimieten voor AI matching, storage, email sending en meer.",
+    "hero": {
+      "badge": "Fair Use Policy",
+      "title": "Eerlijk gebruik voor iedereen",
+      "description": "Onze Fair Use Policy zorgt ervoor dat alle klanten optimale prestaties ervaren. Hieronder vind je duidelijke limieten en richtlijnen voor elk onderdeel van Tesoro CRM."
+    },
+    "intro": {
+      "title": "Waarom fair use?",
+      "description": "Bij normale dagelijkse gebruik kom je deze limieten niet tegen. De Fair Use Policy voorkomt dat excessief gebruik door één klant de service voor anderen beïnvloedt. Wij zijn transparant over onze limieten zodat je precies weet waar je aan toe bent.",
+      "benefit_1": "Optimale prestaties voor alle klanten",
+      "benefit_2": "Voorspelbare kosten zonder verrassingen",
+      "benefit_3": "Eerlijke verdeling van resources"
+    },
+    "limits": {
+      "title": "Gebruikslimieten per feature",
+      "ai_matching_title": "AI-powered smart matching",
+      "ai_matching_limit": "5.000 matching berekeningen per maand",
+      "ai_matching_description": "Dit betekent dat je tot 5.000 keer per maand automatische matches kunt laten berekenen tussen properties en klanten. Bij normaal gebruik (10-50 matches per dag) kom je hier ruim binnen.",
+      "ai_matching_typical": "Typisch gebruik: 500-1.500 per maand",
+      "storage_title": "Document & foto opslag",
+      "storage_limit": "50 GB totale opslag per kantoor",
+      "storage_description": "Voldoende voor duizenden properties met foto's, contracten, ID's en andere documenten. Properties kunnen foto's bevatten van gemiddeld 5-10 MB per property.",
+      "storage_typical": "Typisch gebruik: 10-25 GB",
+      "email_title": "Email integratie & verzending",
+      "email_limit": "10.000 emails per maand",
+      "email_description": "Inclusief inkomende sync, uitgaande emails vanuit CRM en automatische notificaties. Ruim voldoende voor dagelijkse communicatie met leads en klanten.",
+      "email_typical": "Typisch gebruik: 1.000-3.000 per maand",
+      "api_title": "API requests",
+      "api_limit": "50.000 requests per maand",
+      "api_description": "Voor externe integraties, MLS synchronisaties en custom workflows. Dit aantal wordt alleen relevant bij custom integraties.",
+      "api_typical": "Typisch gebruik: 5.000-15.000 per maand",
+      "users_title": "Gebruikers & logins",
+      "users_limit": "10 actieve gebruikers per kantoor",
+      "users_description": "Tot 10 teamleden kunnen tegelijkertijd inloggen en het CRM gebruiken. Voor meer gebruikers bieden we maatwerk pricing.",
+      "users_note": "Meer nodig? Vraag offerte aan",
+      "portal_title": "Klantportaal toegang",
+      "portal_limit": "Onbeperkt aantal klanten",
+      "portal_description": "Alle klanten kunnen een portal account krijgen. Er is geen limiet op het aantal klant-portals dat je kunt aanmaken.",
+      "portal_note": "Volledig inclusief in €99/maand"
+    },
+    "examples": {
+      "title": "Normaal vs. excessief gebruik",
+      "normal_title": "Normaal gebruik",
+      "normal_description": "Dit is hoe de meeste klanten Tesoro CRM gebruiken:",
+      "normal_1": "50-100 nieuwe properties per maand toevoegen",
+      "normal_2": "500-1.000 AI matching berekeningen per maand",
+      "normal_3": "1.000-2.000 emails versturen per maand",
+      "normal_4": "20-30 GB storage gebruiken voor foto's en documenten",
+      "normal_5": "5-8 actieve teamleden die dagelijks inloggen",
+      "excessive_title": "Excessief gebruik",
+      "excessive_description": "Deze patronen worden beschouwd als excessief gebruik:",
+      "excessive_1": "Automatische scripts die elk uur nieuwe matches triggeren",
+      "excessive_2": "Bulk email verzending naar duizenden niet-CRM contacten",
+      "excessive_3": "Uploaden van niet-relevante bestanden (films, grote backups)",
+      "excessive_4": "API misbruik door externe applicaties zonder rate limiting",
+      "excessive_5": "Account sharing met meer dan 10 actieve gebruikers"
+    },
+    "monitoring": {
+      "title": "Hoe we monitoren",
+      "description": "We houden je gebruik bij om ervoor te zorgen dat iedereen een goede ervaring heeft.",
+      "transparency_title": "Volledige transparantie",
+      "transparency_description": "In je account dashboard zie je real-time je huidige gebruik per categorie. Je krijgt een waarschuwing als je 80% van een limiet bereikt.",
+      "notifications_title": "Proactieve notificaties",
+      "notifications_description": "Bij 80% krijg je een waarschuwing per email. Bij 95% krijg je een reminder. Je wordt nooit verrast door een blokkade.",
+      "grace_title": "Grace Period",
+      "grace_description": "Als je een limiet overschrijdt, krijg je 7 dagen om het gebruik te reduceren of een upgrade aan te vragen. We blokkeren niet direct."
+    },
+    "overage": {
+      "title": "Wat Gebeurt Er Bij Overschrijding?",
+      "step_1_title": "1. Automatische Waarschuwing",
+      "step_1_description": "Je ontvangt een email bij 80% en 95% gebruik van een limiet.",
+      "step_2_title": "2. Persoonlijk Contact",
+      "step_2_description": "Ons team neemt contact op om te kijken of een upgrade nodig is of dat je gebruik kunt optimaliseren.",
+      "step_3_title": "3. Upgrade Optie",
+      "step_3_description": "We bieden een maatwerk oplossing aan met hogere limieten voor jouw specifieke situatie.",
+      "step_4_title": "4. Grace Period",
+      "step_4_description": "Je krijgt 7 dagen om te upgraden of gebruik te reduceren voordat er beperkingen worden toegepast.",
+      "no_surprise": "Geen verrassingen - we werken samen aan een oplossing"
+    },
+    "upgrade": {
+      "title": "Meer Nodig?",
+      "description": "Voor kantoren die meer gebruikers of hogere limieten nodig hebben, bieden we maatwerk pricing aan.",
+      "benefit_1": "Hogere limieten op alle features",
+      "benefit_2": "Dedicated account manager",
+      "benefit_3": "Priority support met SLA garantie",
+      "benefit_4": "Custom integraties mogelijk",
+      "cta": "Vraag Maatwerk Offerte Aan"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "question_1": "Waarom zijn er limieten?",
+      "answer_1": "Limieten zorgen ervoor dat alle klanten optimale prestaties ervaren. Ze voorkomen dat excessief gebruik door één klant de service voor anderen beïnvloedt. Bij normaal gebruik kom je deze limieten niet tegen.",
+      "question_2": "Kan ik zien hoeveel ik gebruik?",
+      "answer_2": "Ja, in je account dashboard zie je real-time je huidige gebruik per categorie. Je ziet ook hoeveel % van elke limiet je hebt gebruikt.",
+      "question_3": "Wat als ik een limiet overschrijd?",
+      "answer_3": "Je krijgt proactieve waarschuwingen bij 80% en 95%. Bij overschrijding nemen we contact op en krijg je 7 dagen grace period om te upgraden of gebruik te reduceren. We blokkeren niet direct.",
+      "question_4": "Zijn de limieten per maand?",
+      "answer_4": "Ja, alle limieten resetten aan het begin van elke maand. Unused capacity wordt niet overgedragen naar de volgende maand.",
+      "question_5": "Kan ik tijdelijk meer gebruiken?",
+      "answer_5": "Ja, neem contact op als je tijdelijk meer capacity nodig hebt (bijv. bij een grote marketing campagne). We kunnen tijdelijke verhogingen activeren.",
+      "question_6": "Wat kost een upgrade?",
+      "answer_6": "Dit hangt af van je specifieke behoeften. Neem contact op voor een maatwerk offerte. Gemiddeld betalen klanten met >10 gebruikers €150-250/maand."
+    },
+    "cta": {
+      "title": "Vragen over Fair Use?",
+      "description": "Ons team helpt je graag met vragen over gebruikslimieten en upgrade opties.",
+      "cta_primary": "Neem Contact Op",
+      "cta_secondary": "Bekijk Prijzen"
+    }
+  }
+}

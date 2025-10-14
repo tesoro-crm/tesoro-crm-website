@@ -1,6 +1,6 @@
-import type nlTranslations from './locales/nl.json';
+import type { Translations } from './locales/nl/index.d.ts';
 
-export type TranslationKeys = typeof nlTranslations;
+export type TranslationKeys = Translations;
 
 export type NestedKeyOf<ObjectType extends object> = {
   [Key in keyof ObjectType & (string | number)]: ObjectType[Key] extends object

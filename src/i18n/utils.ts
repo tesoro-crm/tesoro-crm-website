@@ -11,12 +11,31 @@ const translations: Record<Language, Translations> = {
 };
 
 /**
- * Load translations for a specific language
+ * Load translations for a specific language from multiple modules
  */
 export async function loadTranslations(lang: Language): Promise<void> {
   try {
-    const module = await import(`./locales/${lang}.json`);
-    translations[lang] = module.default;
+    // Load all translation modules
+    const modules = [
+      'common',
+      'pages',
+      'feature-pages',
+      'website-api',
+      'legal',
+    ];
+
+    const loadedTranslations: Record<string, unknown> = {};
+
+    for (const module of modules) {
+      try {
+        const moduleData = await import(`./locales/${lang}/${module}.json`);
+        Object.assign(loadedTranslations, moduleData.default);
+      } catch (error) {
+        console.warn(`Failed to load ${module}.json for ${lang}:`, error);
+      }
+    }
+
+    translations[lang] = loadedTranslations;
   } catch (error) {
     console.error(`Failed to load translations for ${lang}:`, error);
     translations[lang] = {};

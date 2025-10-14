@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2025-10-14",
     "lastUpdated": "2025-10-14",
-    "totalAssets": 144,
+    "totalAssets": 159,
     "totalVideos": 4,
-    "totalScreenshots": 140
+    "totalScreenshots": 155
   },
   "videos": [
     {
@@ -613,6 +613,111 @@
       "category": "crm-modules",
       "module": "notifications",
       "description": "Notifications dropdown panel with list of all notifications and mark as read option",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "dashboard-user-profile-menu.png",
+      "category": "crm-modules",
+      "module": "user-profile",
+      "description": "User profile dropdown menu with Profile and Logout options",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "leads-view-dropdown-all-filters.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "View dropdown showing favorites section with New! Work on it, Hot leads, My Active Leads, Website and Create view button",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "leads-create-lead-form-full.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Complete lead creation form with all sections: Lead information, Address information, Property Details, and Timing",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "leads-detail-lead-info-tab.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead Info tab showing lead details, notes section, and property details",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "leads-detail-emails-tab-empty.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Emails tab with filter options (All, Inbox, Sent, Refresh) and Create Email button",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-creation-form-overview.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Complete property creation form with all sections: Essential Info, Views, Amenities, Description, Images, Video, Energy Rating, Pricing, Location",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-status-dropdown-all-options.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property status dropdown showing 16 options: Draft, In Progress, Pending Approval, Active, Sold, Rented, Under Offer, Cancelled, Off Market, Negotiating, Under Contract, Open House, Key Ready, Under construction, Reserved, Removed by feed",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-transaction-type-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Transaction Type dropdown showing 4 options: For sale, For rent, Transfer, Rental with option of purchase",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-type-dropdown-all-options.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property type dropdown showing 18 options: Apartment, Townhouse, Detached House, Semi-Detached House, Finca, Villa, Duplex, Penthouse, Commercial Property, Plot/Land, Bungalow, Flat, Chalet, Local Commercial, Residential Store, Commercial Mezzanine, Parking Space, Storage Room",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-condition-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property Condition dropdown showing 3 options: New, Good condition, Needs renovation",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-floor-type-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Floor Type dropdown showing 3 options: Top floor, Middle floor, Ground floor",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-assign-to-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Assign to dropdown showing 6 user options: Taofiq Animashaun, Brigitte Schwarz (selected), Cristina Crego, Bart van Maarse, tesorosoftware+bhleo, tesoro.crm.academy+d",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-windows-location-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Windows Location dropdown showing 2 options: Internal, External",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-video-platform-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Video Platform dropdown showing 2 options: Youtube, Vimeo",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "property-energy-certification-consumption-dropdown.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Energy Certification (Consumption) dropdown showing 9 options: A, B, C, D, E, F, G, X, In Process",
       "created": "2025-10-14"
     }
   ],

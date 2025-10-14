@@ -63,6 +63,7 @@
   "footer": {
     "tagline": "Intelligent lead generation for professionals",
     "product": "Product",
+    "resources": "Resources",
     "company": "Company",
     "copyright": "© 2025 Tesoro CRM. All rights reserved."
   },
@@ -1098,19 +1099,8 @@
       },
       "features_description": "All tools you need to build a custom website that seamlessly integrates with Tesoro CRM."
     },
-    "developer_friendly": {
-      "title": "Developer-Friendly",
-      "description": "Our API is built for developers by developers.",
-      "feature_1_title": "Extensive Documentation",
-      "feature_1_description": "Complete API docs with code examples for all endpoints. Get started in minutes.",
-      "feature_2_title": "SDKs & Libraries",
-      "feature_2_description": "Ready-to-use SDKs for JavaScript, Python, PHP. TypeScript support included.",
-      "feature_3_title": "Sandbox Environment",
-      "feature_3_description": "Test all API features in our sandbox environment before going live.",
-      "feature_4_title": "Rate Limiting",
-      "feature_4_description": "Fair usage limits: 50,000 requests/month included. Upgrade available."
-    },
     "use_cases": {
+      "description": "From simple property websites to advanced mobile apps - our API gives you unlimited possibilities.",
       "title": "What Can You Build?",
       "case_1_title": "Custom Property Portal",
       "case_1_description": "Build your own property listing website with advanced filters, map views and lead capture.",
@@ -1127,18 +1117,34 @@
     },
     "pricing_section": {
       "title": "Website Services Pricing",
+      "description": "Transparent pricing for website development and API access. Choose what fits your business.",
+      "popular": "Most Popular",
+      "cta": "Get Started",
+      "enterprise_note": "Need more? Contact us for enterprise pricing and custom solutions.",
       "website_build_title": "Website Development",
       "website_build_price": "From €2,500",
       "website_build_description": "Custom website design and development with Astro.Build and PayloadCMS. Including CRM integration and SEO optimization.",
       "website_build_includes": "Includes: Custom design, Astro development, PayloadCMS setup, property sync, lead forms, Cloudflare hosting setup, 3 months support",
+      "website_build_feature_1": "Custom design & branding",
+      "website_build_feature_2": "Astro.Build development",
+      "website_build_feature_3": "PayloadCMS integration",
+      "website_build_feature_4": "3 months support included",
       "api_access_title": "Website API Access",
       "api_access_price": "Free",
       "api_access_description": "Full API access included with every Tesoro CRM subscription. No extra costs.",
       "api_access_includes": "Includes: 50,000 requests/month, RESTful & GraphQL, Webhooks, SDKs, documentation, sandbox environment",
+      "api_access_feature_1": "50,000 requests/month",
+      "api_access_feature_2": "RESTful & GraphQL API",
+      "api_access_feature_3": "Complete documentation",
+      "api_access_feature_4": "Sandbox environment",
       "api_upgrade_title": "API Upgrade",
       "api_upgrade_price": "€99/month",
       "api_upgrade_description": "For websites with high traffic. Higher rate limits and priority support.",
       "api_upgrade_includes": "Includes: 500,000 requests/month, priority support, dedicated account manager, custom webhooks",
+      "api_upgrade_feature_1": "500,000 requests/month",
+      "api_upgrade_feature_2": "Priority support",
+      "api_upgrade_feature_3": "Dedicated account manager",
+      "api_upgrade_feature_4": "Custom webhooks",
       "enterprise_title": "Enterprise",
       "enterprise_price": "On request",
       "enterprise_description": "For large offices with specific requirements. Custom solutions and dedicated infrastructure.",
@@ -1184,13 +1190,31 @@
       "question_5": "How fast is the property sync?",
       "answer_5": "Real-time! As soon as you add/modify a property in Tesoro CRM, it's live on your website within seconds via the API.",
       "question_6": "What does Cloudflare hosting cost?",
-      "answer_6": "Cloudflare hosting is included with website development. No extra costs. Unlimited bandwidth."
+      "answer_6": "Cloudflare hosting is included with website development. No extra costs. Unlimited bandwidth.",
+      "question_7": "Do I need technical knowledge to use the API?",
+      "answer_7": "Basic programming knowledge is required. But with our extensive documentation, code examples and SDKs, even developers with limited API experience can get started quickly.",
+      "question_8": "Can I test the API before committing?",
+      "answer_8": "Yes! We provide a full sandbox environment where you can test all API features with dummy data before going live. No commitment required."
+    },
+    "developer_friendly": {
+      "title": "Developer-Friendly API",
+      "description": "Built for developers, by developers. Everything you need to integrate Tesoro CRM with your custom website.",
+      "feature_1_title": "Extensive Documentation",
+      "feature_1_description": "Complete API docs with code examples for all endpoints. Get started in minutes.",
+      "feature_2_title": "SDKs & Libraries",
+      "feature_2_description": "Ready-to-use SDKs for JavaScript, Python, PHP. TypeScript support included.",
+      "feature_3_title": "Sandbox Environment",
+      "feature_3_description": "Test all API features in our sandbox environment before going live.",
+      "feature_4_title": "Fair Rate Limiting",
+      "feature_4_description": "50,000 requests/month included. Upgrade available for high-traffic sites."
     },
     "cta": {
       "title": "Ready for a Blazingly Fast Website?",
       "description": "Contact us for a no-obligation conversation about your website plans.",
       "primary": "Schedule Demo",
-      "secondary": "View API Documentation"
+      "secondary": "View API Documentation",
+      "cta_primary": "Contact Us",
+      "cta_secondary": "View API Docs"
     }
   },
   "roi_calculator": {
@@ -1271,6 +1295,9 @@
     "intro": {
       "title": "Why Fair Use?",
       "description": "Tesoro CRM offers unlimited users, properties and deals. But some features have limits to prevent abuse and ensure optimal performance for all customers.",
+      "benefit_1": "No hidden costs or pay-per-use fees",
+      "benefit_2": "Unlimited portal users included",
+      "benefit_3": "Fair, transparent limits for all features",
       "benefit_1_title": "Optimal Performance",
       "benefit_1_description": "Limits ensure that all customers have fast and reliable service.",
       "benefit_2_title": "Transparent",
@@ -1301,21 +1328,25 @@
       "users_limit": "10 active users per office",
       "users_description": "The number of team members who can use Tesoro CRM in your office.",
       "users_typical": "Standard subscription includes up to 10 users",
+      "users_note": "Need more than 10 users? Contact us",
       "portal_title": "Client Portal Access",
       "portal_limit": "Unlimited number of clients",
       "portal_description": "All your clients can use the portal. There are no limits on the number of client accounts.",
-      "portal_typical": "Unlimited - no restrictions"
+      "portal_typical": "Unlimited - no restrictions",
+      "portal_note": "Truly unlimited - no hidden limits"
     },
     "examples": {
       "title": "Normal vs. Excessive Usage",
       "description": "Examples of normal professional usage compared to abuse of the system.",
       "normal_title": "Normal Professional Usage",
+      "normal_description": "Using Tesoro CRM as intended for daily real estate business operations. This is what normal professional usage looks like:",
       "normal_1": "Adding 50-100 new properties per month",
       "normal_2": "Updating buyer profiles when preferences change",
       "normal_3": "Sending proposals to clients 2x per day",
       "normal_4": "Using integrations for daily workflow",
       "normal_5": "Storing property photos and documents",
       "excessive_title": "Excessive Usage (Abuse)",
+      "excessive_description": "Using Tesoro CRM in ways that abuse the system or negatively impact other customers. These behaviors violate our Fair Use Policy:",
       "excessive_1": "Automated scripts that trigger new matches every hour",
       "excessive_2": "Mass emailing outside client base (spam)",
       "excessive_3": "Using API for data mining or scraping",
@@ -1329,6 +1360,8 @@
       "transparency_description": "You can always see your current usage in the Tesoro dashboard. No surprises.",
       "notifications_title": "Proactive Notifications",
       "notifications_description": "If you approach 80% of a limit, you'll receive a notification. So you can take action in time.",
+      "grace_title": "Grace Period",
+      "grace_description": "7 days to resolve before restrictions apply",
       "grace_period_title": "Grace Period",
       "grace_period_description": "If you exceed a limit, you have 7 days to resolve it before restrictions apply."
     },
@@ -1342,11 +1375,16 @@
       "step_3_title": "Support Contact",
       "step_3_description": "Our support team will contact you to discuss options and find a solution.",
       "step_4_title": "Temporary Restriction",
-      "step_4_description": "Only if no solution is found after 7 days, the specific feature will be temporarily restricted until usage is reduced."
+      "step_4_description": "Only if no solution is found after 7 days, the specific feature will be temporarily restricted until usage is reduced.",
+      "no_surprise": "No surprise charges - we always notify you first and work with you to find a solution"
     },
     "upgrade": {
       "title": "Need More?",
       "description": "If you consistently exceed limits, it may be time to upgrade to a custom plan.",
+      "benefit_1": "Custom limits tailored to your needs",
+      "benefit_2": "Add unlimited users to your office",
+      "benefit_3": "Priority support with dedicated account manager",
+      "benefit_4": "Flexible pricing based on actual usage",
       "benefit_1_title": "Higher Limits",
       "benefit_1_description": "Custom limits for AI matching, storage, email and API.",
       "benefit_2_title": "More Users",
