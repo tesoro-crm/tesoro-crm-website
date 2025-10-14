@@ -375,11 +375,11 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
     background: radial-gradient(ellipse at top, #f0f9ff 0%, #ffffff 100%);
   }
 
-  /* REVENUE-FOCUSED HERO SECTION */
+  /* CLEAN MODERN HERO SECTION */
   .hero {
-    background: linear-gradient(135deg, #003366 0%, #F5B400 100%);
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
     color: white;
-    padding: 4rem 0;
+    padding: 6rem 0 8rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -392,8 +392,10 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
+    background:
+      radial-gradient(circle at 20% 50%, rgba(245, 180, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    opacity: 1;
   }
 
   .hero__container {
@@ -549,7 +551,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .onboarding__title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 0.5rem;
     text-align: center;
   }
@@ -562,7 +564,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
 
   /* FOUNDATION PATH */
   .foundation-path {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    background: white;
     border-radius: 24px;
     padding: 3rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -577,8 +579,8 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #003366 0%, #F5B400 100%);
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
   }
 
   .path-header {
@@ -589,13 +591,13 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .path-title {
     font-size: 2rem;
     font-weight: 800;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 0.5rem;
   }
 
   .path-subtitle {
     font-size: 1.125rem;
-    color: #F5B400;
+    color: #3b82f6;
     font-weight: 700;
     margin-bottom: 1rem;
   }
@@ -628,14 +630,14 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
     top: 4rem;
     bottom: -1.5rem;
     width: 2px;
-    background: linear-gradient(to bottom, #003366, transparent);
-    opacity: 0.3;
+    background: linear-gradient(to bottom, #cbd5e1, transparent);
+    opacity: 0.6;
   }
 
   .step-number {
     width: 3.5rem;
     height: 3.5rem;
-    background: linear-gradient(135deg, #003366 0%, #F5B400 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -644,7 +646,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
     font-weight: 900;
     font-size: 1.25rem;
     flex-shrink: 0;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
   }
 
   .step-content {
@@ -658,8 +660,8 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
 
   .step-content:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    border-color: #003366;
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
   }
 
   .step-link {
@@ -685,7 +687,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .step-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 0.75rem;
     line-height: 1.3;
   }
@@ -703,7 +705,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   }
 
   .step-video {
-    color: #F5B400;
+    color: #8b5cf6;
     font-weight: 600;
     font-size: 0.875rem;
     display: inline-flex;
@@ -712,7 +714,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   }
 
   .step-arrow {
-    color: #003366;
+    color: #3b82f6;
     display: inline-flex;
     align-items: center;
   }
@@ -736,7 +738,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .section-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -768,19 +770,19 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
 
   .featured-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 2rem;
     text-decoration: none;
     color: inherit;
     border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   }
 
   .featured-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border-color: #003366;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #3b82f6;
   }
 
   .featured-meta {
@@ -793,7 +795,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .featured-category {
     font-size: 0.75rem;
     font-weight: 700;
-    color: #003366;
+    color: #3b82f6;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -801,7 +803,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .featured-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 0.75rem;
     line-height: 1.3;
   }
@@ -828,8 +830,8 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   }
 
   .video-badge, .impact-badge {
-    background: #F5B400;
-    color: #92400e;
+    background: #f3f4f6;
+    color: #4b5563;
     padding: 0.25rem 0.75rem;
     border-radius: 12px;
     font-weight: 600;
@@ -839,7 +841,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   }
 
   .impact-badge {
-    background: #003366;
+    background: #3b82f6;
     color: white;
   }
 
@@ -856,22 +858,22 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
 
   .path-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 2rem;
     border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   }
 
   .path-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    border-color: #003366;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
   }
 
   .path-card[data-priority="1"] {
-    border-color: #F5B400;
-    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+    border-color: #3b82f6;
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
   }
 
   .path-card-header {
@@ -881,7 +883,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
   .path-name {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #003366;
+    color: #0f172a;
     margin-bottom: 0.5rem;
   }
 
@@ -920,7 +922,7 @@ const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale
 
   .preview-title {
     font-weight: 600;
-    color: #003366;
+    color: #0f172a;
     font-size: 0.875rem;
     line-height: 1.3;
     display: block;
