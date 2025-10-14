@@ -37,7 +37,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
       <ul class="hidden lg:flex items-center gap-6">
         <li class="group">
           <button
-            class={`flex items-center gap-1 text-sm font-medium transition-colors py-1 ${currentPath === '/features' || currentPath === `/${locale}/features` ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+            class={`flex items-center gap-1 text-sm font-medium transition-colors py-1 pb-4 ${currentPath === '/features' || currentPath === `/${locale}/features` ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
             {t('nav.features', locale)}
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           </button>
 
           <!-- Mega Menu - Features -->
-          <div class="hidden group-hover:block absolute left-0 right-0 top-full z-50">
+          <div class="hidden group-hover:block absolute left-0 right-0 top-full z-50 -mt-3">
             <div class="bg-white shadow-xl border-t border-neutral-200">
               <div class="px-4 sm:px-6 lg:px-8 py-10">
                 <div class="grid grid-cols-4 gap-8">
