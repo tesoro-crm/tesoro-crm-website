@@ -8,12 +8,16 @@ import AIChatWidget from '../components/AIChatWidget.astro';
 import { getLocale, getAlternateLinks } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
-// Import fonts locally for better performance
-import '@fontsource-variable/inter';
+// Import fonts locally for better performance with font-display: swap
+import '@fontsource-variable/inter/index.css';
+import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
-import '@fontsource-variable/jetbrains-mono';
+import '@fontsource-variable/jetbrains-mono/index.css';
+
+// Import font configuration (ensures font-display: swap and browser compatibility)
+import '../styles/fonts.css';
 
 // Import typography styles
 import '../styles/typography.css';
@@ -81,6 +85,10 @@ const {
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
+		<!-- Preload critical fonts for better performance -->
+		<link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin />
+
 		<!-- Fonts loaded locally via @fontsource for better performance -->
 		<!-- Ledger font from Google Fonts (no @fontsource package available) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />

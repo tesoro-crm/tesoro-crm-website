@@ -1,0 +1,59 @@
+/**
+ * Font Loading Configuration
+ *
+ * Ensures proper font-display strategy and browser compatibility
+ * All @fontsource packages are configured with font-display: swap
+ */
+
+/* Override any default font-display values to ensure swap behavior */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: local('Inter'), local('Inter-Variable');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: local('Poppins');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: local('JetBrains Mono'), local('JetBrainsMono');
+}
+
+@font-face {
+  font-family: 'Ledger';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Ledger');
+}
+
+/* Ensure Material Symbols also uses swap */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
