@@ -1048,7 +1048,19 @@
       "benefit_5_title": "Mobile-First",
       "benefit_5_description": "60% of your visitors come via mobile. Our websites are optimized for every screen.",
       "benefit_6_title": "SEO Optimized",
-      "benefit_6_description": "Server-side rendering, structured data, Core Web Vitals - everything for top Google rankings."
+      "benefit_6_description": "Server-side rendering, structured data, Core Web Vitals - everything for top Google rankings.",
+      "feature_1_title": "Fully Custom",
+      "feature_1_description": "Every website is custom built for your specific needs. No templates, no limitations.",
+      "feature_2_title": "Real-time Property Sync",
+      "feature_2_description": "Your properties from Tesoro CRM sync automatically to your website. Always up to date.",
+      "feature_3_title": "Scalable",
+      "feature_3_description": "From 10 to 10,000 properties - performance stays constant. Cloudflare scales automatically.",
+      "feature_4_title": "Multilingual",
+      "feature_4_description": "Dutch, English, Spanish - as many languages as you want. Built-in i18n support.",
+      "feature_5_title": "Mobile-First",
+      "feature_5_description": "60% of your visitors come via mobile. Our websites are optimized for every screen.",
+      "feature_6_title": "SEO Optimized",
+      "feature_6_description": "Server-side rendering, structured data, Core Web Vitals - everything for top Google rankings."
     },
     "website_api": {
       "title": "Website API for Third Parties",
@@ -1074,8 +1086,29 @@
         "point_2": "SDKs for JavaScript, Python, PHP",
         "point_3": "Sandbox environment for testing",
         "point_4": "Rate limiting - 50,000 requests/month",
-        "point_5": "Postman collections available"
-      }
+        "point_5": "Postman collections available",
+        "feature_1_title": "Extensive Documentation",
+        "feature_1_description": "Complete API docs with code examples for all endpoints. Get started in minutes.",
+        "feature_2_title": "SDKs & Libraries",
+        "feature_2_description": "Ready-to-use SDKs for JavaScript, Python, PHP. TypeScript support included.",
+        "feature_3_title": "Sandbox Environment",
+        "feature_3_description": "Test all API features in our sandbox environment before going live.",
+        "feature_4_title": "Rate Limiting",
+        "feature_4_description": "Fair usage limits: 50,000 requests/month included. Upgrade available."
+      },
+      "features_description": "All tools you need to build a custom website that seamlessly integrates with Tesoro CRM."
+    },
+    "developer_friendly": {
+      "title": "Developer-Friendly",
+      "description": "Our API is built for developers by developers.",
+      "feature_1_title": "Extensive Documentation",
+      "feature_1_description": "Complete API docs with code examples for all endpoints. Get started in minutes.",
+      "feature_2_title": "SDKs & Libraries",
+      "feature_2_description": "Ready-to-use SDKs for JavaScript, Python, PHP. TypeScript support included.",
+      "feature_3_title": "Sandbox Environment",
+      "feature_3_description": "Test all API features in our sandbox environment before going live.",
+      "feature_4_title": "Rate Limiting",
+      "feature_4_description": "Fair usage limits: 50,000 requests/month included. Upgrade available."
     },
     "use_cases": {
       "title": "What Can You Build?",

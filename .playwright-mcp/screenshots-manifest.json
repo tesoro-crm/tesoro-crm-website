@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2025-10-14",
     "lastUpdated": "2025-10-14",
-    "totalAssets": 140,
+    "totalAssets": 144,
     "totalVideos": 4,
-    "totalScreenshots": 136
+    "totalScreenshots": 140
   },
   "videos": [
     {
@@ -586,6 +586,34 @@
       "module": "search",
       "description": "Global search results view",
       "created": "2025-10-13"
+    },
+    {
+      "filename": "dashboard-overview-full.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Full page dashboard with all widgets KPIs and tables",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "dashboard-date-filter-dropdown.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Date range filter dropdown showing all time period options",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "dashboard-date-filter-today.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Dashboard with Today filter selected showing 0 deals and 0 leads",
+      "created": "2025-10-14"
+    },
+    {
+      "filename": "dashboard-notifications-dropdown-open.png",
+      "category": "crm-modules",
+      "module": "notifications",
+      "description": "Notifications dropdown panel with list of all notifications and mark as read option",
+      "created": "2025-10-14"
     }
   ],
   "marketingWebsiteScreenshots": [
