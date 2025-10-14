@@ -197,4 +197,25 @@ title: 'Hardcoded Title'
 1. Define all translation keys in i18n files first
 2. Use t() function calls for ALL text content
 3. Test all three language versions work correctly
+
+### Title Case Rules by Language
+
+**CRITICAL: Title capitalization differs by language!**
+
+- ✅ **English**: Use Title Case (Every Major Word Capitalized)
+  - Example: "What Can You Build?"
+  - Example: "Flexibility Your Business Needs"
+
+- ❌ **Dutch & Spanish**: Use Sentence case (Only First Word Capitalized)
+  - Dutch: "Wat kun je bouwen?" (NOT "Wat Kun Je Bouwen?")
+  - Dutch: "Flexibiliteit die jouw business nodig heeft" (NOT "Flexibiliteit Die Jouw Business Nodig Heeft")
+  - Spanish: "¿Qué puedes construir?" (NOT "¿Qué Puedes Construir?")
+
+**When Writing Translations:**
+- English headings: Capitalize All Major Words (Title Case)
+- Dutch/Spanish headings: Only capitalize the first word and proper nouns (Sentence case)
+- This applies to ALL headings (h1, h2, h3), section titles, feature titles, and button text
+- Exception: Brand names and proper nouns always capitalized (e.g., "Tesoro CRM")
+
 - ik ben geen fan van alle toegepaste icons. Verminder deze tot het minimum.
+- We gaan gebruikmaken van Google’s Material Symbols als icon library. Kies de Outlined stijl (dus geen volle iconen). Zorg dat alle iconen consistent zijn qua lijngewicht, grootte en kleur, en dat we only de iconen laden die we echt gebruiken (niet de hele bibliotheek). Gebruik currentColor voor kleur zodat de iconen automatisch meekleuren met tekst/thema. Ik stuur je de lijst met icon-namen die we nodig hebben + de CSS/HTML snippet.
