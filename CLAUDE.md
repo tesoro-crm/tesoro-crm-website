@@ -16,6 +16,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Note**: No test framework is currently configured (package.json shows placeholder test command).
 
+## Environment URLs
+
+- **Local Development**: http://localhost:4321/
+- **Production**: https://new.tesorohq.io/
+
+Use these URLs when:
+- Testing changes locally with `npm run dev`
+- Verifying deployed changes with Playwright
+- Sharing links to the live website
+
 ## Architecture Overview
 
 This is an **Astro v5.14.1** website for Tesoro CRM, built as a multilingual (es/en/nl) marketing site with a JSON-based content management system.
@@ -159,10 +169,10 @@ You MUST use Playwright to verify changes when modifying:
 
 4. **Use Playwright to visually verify**
    ```bash
-   # Navigate to the page
-   mcp__playwright__browser_navigate("https://your-preview-url.pages.dev")
-   # OR
-   mcp__playwright__browser_navigate("http://localhost:4323")
+   # Navigate to production
+   mcp__playwright__browser_navigate("https://new.tesorohq.io/")
+   # OR navigate to local dev server
+   mcp__playwright__browser_navigate("http://localhost:4321/")
 
    # Interact with elements (hover, click, etc.)
    mcp__playwright__browser_hover(element, ref)
