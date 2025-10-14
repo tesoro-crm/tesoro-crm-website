@@ -199,7 +199,50 @@ const knowledgeBase = defineCollection({
   }),
 });
 
+// Academy collection schema (Business guides, ROI content, success stories)
+const academy = defineCollection({
+  type: 'data', // For JSON files
+  schema: z.object({
+    meta: z.object({
+      id: z.string(),
+      version: z.string(),
+      publishDate: z.string(),
+      updatedAt: z.string(),
+      authorId: z.string(),
+      category: z.enum([
+        'foundation',           // Getting started with success (why-tesoro, roi-calculator)
+        'revenue-mastery',      // Revenue-focused guides (contact-optimization, ai-matching)
+        'success-stories',      // Case studies & examples (first-5k-deal, fast-sales)
+        'advanced-strategies',  // Power user tactics (enterprise-workflows, automation)
+      ]),
+      difficulty: z.enum(['beginner', 'intermediate', 'advanced']),
+      tags: z.array(z.string()),
+      featured: z.boolean(),
+      readingTime: z.number(),
+      videoIncluded: z.boolean(),
+      aiGenerated: z.boolean(),
+      // Academy-specific fields
+      roiImpact: z.string().optional(), // e.g., "€35,000/year per agent"
+      timeToValue: z.string().optional(), // e.g., "14 days"
+      customerType: z.enum(['individual', 'team', 'enterprise']).optional(),
+    }),
+    seo: z.object({
+      socialImage: z.string().optional(),
+      keywords: z.array(z.string()),
+    }),
+    hero: z.object({
+      title: localizedTextSchema,
+      description: localizedTextSchema,
+      icon: z.string().optional(), // emoji or icon name
+    }),
+    sections: z.array(sectionSchema),
+    relatedArticles: z.array(z.string()).optional(),
+    faq: z.array(faqSchema).optional(),
+  }),
+});
+
 export const collections = {
   blog,
   'knowledge-base': knowledgeBase,
+  academy,
 };
