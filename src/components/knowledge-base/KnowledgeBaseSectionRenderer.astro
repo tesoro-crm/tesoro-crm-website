@@ -75,7 +75,10 @@ const { section, lang } = Astro.props;
     <div class="faq-list">
       {section.items.map((item: any) => (
         <details class="faq-item">
-          <summary class="faq-question">{item.question[lang]}</summary>
+          <summary class="faq-question">
+            <span class="icon faq-icon">chevron_right</span>
+            <span>{item.question[lang]}</span>
+          </summary>
           <div class="faq-answer" set:html={item.answer[lang].text} />
         </details>
       ))}
@@ -180,15 +183,16 @@ const { section, lang } = Astro.props;
     display: none;
   }
 
-  .faq-question::before {
-    content: '▶';
-    font-size: 0.75rem;
-    color: var(--accent-primary);
+  .faq-icon {
+    font-size: 0.875rem;
+    color: #64748b;
     transition: transform 0.2s;
+    flex-shrink: 0;
   }
 
-  .faq-item[open] .faq-question::before {
+  .faq-item[open] .faq-icon {
     transform: rotate(90deg);
+    color: var(--accent-primary);
   }
 
   .faq-answer {

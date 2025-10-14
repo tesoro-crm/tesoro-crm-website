@@ -50,32 +50,24 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
             <div class="bg-white shadow-xl border-t border-neutral-200">
               <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-10">
                 <div class="grid grid-cols-4 gap-8">
-                <!-- Column 1 - Core Features -->
+                <!-- Column 1 - Voor jouw werk -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {t('nav.mega_menu.core_features_title', locale)}
+                    {t('nav.mega_menu.your_work_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {t('nav.mega_menu.core_features_description', locale)}
+                    {t('nav.mega_menu.your_work_description', locale)}
                   </p>
                   <a href={getLocalizedPath('/features', locale)} class="text-sm text-primary hover:underline mb-4 inline-block">
-                    {t('nav.mega_menu.core_features_all', locale)}
+                    {t('nav.mega_menu.view_all_features', locale)}
                   </a>
                   <div class="space-y-2">
-                    <a href={getLocalizedPath('/features/smart-matching', locale)} class="flex items-start gap-2 group/item">
+                    <a href={getLocalizedPath('/features/lead-management', locale)} class="flex items-start gap-2 group/item">
                       <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.smart_matching', locale)}
-                      </span>
-                    </a>
-                    <a href={getLocalizedPath('/features/client-portal', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.client_portal', locale)}
+                        {t('nav.mega_menu.lead_management', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/features/deal-pipeline', locale)} class="flex items-start gap-2 group/item">
@@ -86,16 +78,52 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         {t('nav.mega_menu.deal_pipeline', locale)}
                       </span>
                     </a>
+                    <a href={getLocalizedPath('/features/smart-matching', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.smart_matching', locale)}
+                      </span>
+                    </a>
                   </div>
                 </div>
 
-                <!-- Column 2 - Real Estate Tools -->
+                <!-- Column 2 - Voor je klanten -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {t('nav.mega_menu.real_estate_title', locale)}
+                    {t('nav.mega_menu.your_clients_title', locale)}
                   </h3>
                   <p class="text-sm text-neutral-600 mb-3">
-                    {t('nav.mega_menu.real_estate_description', locale)}
+                    {t('nav.mega_menu.your_clients_description', locale)}
+                  </p>
+                  <div class="space-y-2">
+                    <a href={getLocalizedPath('/features/email-integration', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.communication', locale)}
+                      </span>
+                    </a>
+                    <a href={getLocalizedPath('/features/client-portal', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.client_portal', locale)}
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Column 3 - Voor je business -->
+                <div>
+                  <h3 class="text-sm font-bold text-neutral-900 mb-2">
+                    {t('nav.mega_menu.your_business_title', locale)}
+                  </h3>
+                  <p class="text-sm text-neutral-600 mb-3">
+                    {t('nav.mega_menu.your_business_description', locale)}
                   </p>
                   <div class="space-y-2">
                     <a href={getLocalizedPath('/features/property-management', locale)} class="flex items-start gap-2 group/item">
@@ -106,20 +134,12 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         {t('nav.mega_menu.property_management', locale)}
                       </span>
                     </a>
-                    <a href={getLocalizedPath('/features/email-integration', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.email_integration', locale)}
-                      </span>
-                    </a>
                     <a href={getLocalizedPath('/features/reporting-analytics', locale)} class="flex items-start gap-2 group/item">
                       <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.reporting_analytics', locale)}
+                        {t('nav.mega_menu.reporting', locale)}
                       </span>
                     </a>
                     <a href={getLocalizedPath('/website-api', locale)} class="flex items-start gap-2 group/item">
@@ -127,49 +147,13 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.website_api', locale)}
+                        {t('nav.mega_menu.website_integration', locale)}
                       </span>
                     </a>
                   </div>
                 </div>
 
-                <!-- Column 3 - Automation -->
-                <div>
-                  <h3 class="text-sm font-bold text-neutral-900 mb-2">
-                    {t('nav.mega_menu.automation_title', locale)}
-                  </h3>
-                  <p class="text-sm text-neutral-600 mb-3">
-                    {t('nav.mega_menu.automation_description', locale)}
-                  </p>
-                  <div class="space-y-2">
-                    <a href={getLocalizedPath('/features#workflow-automation', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.workflow_automation', locale)}
-                      </span>
-                    </a>
-                    <a href={getLocalizedPath('/features#email-campaigns', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.email_campaigns', locale)}
-                      </span>
-                    </a>
-                    <a href={getLocalizedPath('/features#xml-feeds', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.xml_feeds', locale)}
-                      </span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Column 4 - Integrations -->
+                <!-- Column 4 - Integraties -->
                 <div>
                   <h3 class="text-sm font-bold text-neutral-900 mb-2">
                     {t('nav.mega_menu.integrations_title', locale)}

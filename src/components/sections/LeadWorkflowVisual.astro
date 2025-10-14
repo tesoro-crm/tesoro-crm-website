@@ -76,7 +76,7 @@ const {
   <div class="lead-visual__timeline">
     <div class="lead-visual__step" data-step="1">
       <div class="lead-visual__step-number">1</div>
-      <div class="lead-visual__step-icon">⚡</div>
+      <div class="lead-visual__step-icon"><span class="icon" style="font-size: 2rem;">bolt</span></div>
       <div class="lead-visual__step-content">
         <h3 class="lead-visual__step-title">{step1Title}</h3>
         <p class="lead-visual__step-text">{step1Text}</p>
@@ -85,7 +85,7 @@ const {
 
     <div class="lead-visual__step" data-step="2">
       <div class="lead-visual__step-number">2</div>
-      <div class="lead-visual__step-icon">📞</div>
+      <div class="lead-visual__step-icon"><span class="icon" style="font-size: 2rem;">call</span></div>
       <div class="lead-visual__step-content">
         <h3 class="lead-visual__step-title">{step2Title}</h3>
         <p class="lead-visual__step-text">{step2Text}</p>
@@ -94,7 +94,7 @@ const {
 
     <div class="lead-visual__step" data-step="3">
       <div class="lead-visual__step-number">3</div>
-      <div class="lead-visual__step-icon">✉️</div>
+      <div class="lead-visual__step-icon"><span class="icon" style="font-size: 2rem;">email</span></div>
       <div class="lead-visual__step-content">
         <h3 class="lead-visual__step-title">{step3Title}</h3>
         <p class="lead-visual__step-text">{step3Text}</p>
@@ -103,7 +103,7 @@ const {
 
     <div class="lead-visual__step" data-step="4">
       <div class="lead-visual__step-number">4</div>
-      <div class="lead-visual__step-icon">✓</div>
+      <div class="lead-visual__step-icon"><span class="icon" style="font-size: 2rem;">check</span></div>
       <div class="lead-visual__step-content">
         <h3 class="lead-visual__step-title">{step4Title}</h3>
         <p class="lead-visual__step-text">{step4Text}</p>
@@ -117,7 +117,7 @@ const {
       <div class="mockup-email">
         <div class="mockup-email__toolbar">
           <div class="mockup-email__toolbar-left">
-            <span class="mockup-email__toolbar-icon">📥</span>
+            <span class="icon mockup-email__toolbar-icon">inbox</span>
             <span class="mockup-email__toolbar-title">{inboxLabel}</span>
           </div>
           <div class="mockup-email__toolbar-right">
@@ -137,9 +137,9 @@ const {
           </div>
           <div class="mockup-email__subject">{emailSubject}</div>
           <div class="mockup-email__body">
-            <p>📧 {emailSource}</p>
-            <p>📍 {emailInterest}</p>
-            <p>💰 {emailBudget}</p>
+            <p><span class="icon icon-sm">email</span> {emailSource}</p>
+            <p><span class="icon icon-sm">location_on</span> {emailInterest}</p>
+            <p><span class="icon icon-sm">payments</span> {emailBudget}</p>
           </div>
           <button type="button" class="mockup-email__cta" aria-label="View lead in Tesoro">{emailCta}</button>
         </div>
@@ -154,11 +154,11 @@ const {
           <span class="mockup-call__status">{callStatus}</span>
         </div>
         <button type="button" class="mockup-call__button" aria-label="Call lead">
-          <span class="mockup-call__icon" aria-hidden="true">📞</span>
+          <span class="icon mockup-call__icon" aria-hidden="true">call</span>
           <span class="mockup-call__text">{callButton}</span>
         </button>
         <div class="mockup-call__recording">
-          <span class="mockup-call__recording-icon">🔴</span>
+          <span class="icon mockup-call__recording-icon" style="color: #ef4444;">fiber_manual_record</span>
           {callRecording}
         </div>
       </div>
@@ -176,7 +176,7 @@ const {
           <label id="template-select-label" class="sr-only">Select email template</label>
           <button type="button" id="template-select-button" class="mockup-template__select" data-template-button aria-labelledby="template-select-label" aria-haspopup="listbox" aria-expanded="false">
             <span class="mockup-template__select-text">{templatePlaceholder}</span>
-            <span class="mockup-template__select-arrow" aria-hidden="true">▼</span>
+            <span class="icon mockup-template__select-arrow" aria-hidden="true">expand_more</span>
           </button>
           <div class="mockup-template__options" data-template-options role="listbox" aria-label="Email template options">
             <div class="mockup-template__option" data-option="1" role="option" aria-label="{templateOption1}">{templateOption1}</div>
@@ -194,21 +194,21 @@ const {
         <div class="mockup-history__header">{historyHeader}</div>
         <div class="mockup-history__list">
           <div class="mockup-history__item">
-            <span class="mockup-history__icon">📧</span>
+            <span class="icon mockup-history__icon">email</span>
             <div class="mockup-history__content">
               <strong>{historyEmail}</strong>
               <span class="mockup-history__time">{timeToday}, 14:32</span>
             </div>
           </div>
           <div class="mockup-history__item">
-            <span class="mockup-history__icon">📞</span>
+            <span class="icon mockup-history__icon">call</span>
             <div class="mockup-history__content">
               <strong>{historyCall}</strong>
               <span class="mockup-history__time">{timeToday}, 14:15</span>
             </div>
           </div>
           <div class="mockup-history__item">
-            <span class="mockup-history__icon">⚡</span>
+            <span class="icon mockup-history__icon">bolt</span>
             <div class="mockup-history__content">
               <strong>{historyReceived}</strong>
               <span class="mockup-history__time">{timeToday}, 14:10</span>

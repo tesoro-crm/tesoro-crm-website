@@ -177,7 +177,7 @@ await loadTranslations(locale);
             {(stage === 1 || stage === 2) && (
               <div class="mt-4 p-3 bg-warning/10 rounded-lg border border-warning/30">
                 <p class="text-xs font-medium text-warning-dark">
-                  ⚡ {t(`feature_pages.deal_pipeline.buyer_deal.stage_${stage}_philosophy`, locale)}
+                  <span class="icon icon-xs">bolt</span> {t(`feature_pages.deal_pipeline.buyer_deal.stage_${stage}_philosophy`, locale)}
                 </p>
               </div>
             )}
@@ -426,7 +426,7 @@ await loadTranslations(locale);
         {[1, 2, 3, 4].map((diff) => (
           <Card variant="default" padding="lg" class="border-2 border-success/30 bg-success/5">
             <div class="w-10 h-10 bg-success/20 rounded-full flex items-center justify-center mb-4">
-              <span class="text-xl font-bold text-success">✓</span>
+              <span class="icon text-xl font-bold text-success">check</span>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 mb-3">
               {t(`feature_pages.deal_pipeline.vs_competition.difference_${diff}_title`, locale)}

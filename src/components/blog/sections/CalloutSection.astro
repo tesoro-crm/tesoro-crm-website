@@ -19,45 +19,45 @@ const variant = section.variant || 'info';
 const variantStyles = {
   info: {
     box: 'bg-blue-50',
-    text: 'text-blue-900', 
+    text: 'text-blue-900',
     border: 'var(--tesoro-blue-light)',
-    icon: '💡'
+    icon: 'lightbulb'
   },
   success: {
     box: 'bg-emerald-50',
     text: 'text-emerald-900',
     border: 'var(--accent-success)',
-    icon: '✅'
+    icon: 'check_circle'
   },
   warning: {
     box: 'bg-yellow-50',
     text: 'text-yellow-900',
     border: 'var(--tesoro-yellow)',
-    icon: '⚠️'
+    icon: 'warning'
   },
   danger: {
     box: 'bg-red-50',
     text: 'text-red-900',
     border: 'var(--tesoro-red)',
-    icon: '🚨'
+    icon: 'error'
   },
   tip: {
     box: 'bg-orange-50',
     text: 'text-orange-900',
     border: 'var(--tesoro-orange)',
-    icon: '💡'
+    icon: 'lightbulb'
   },
   insight: {
     box: 'bg-purple-50',
     text: 'text-purple-900',
     border: 'var(--tesoro-purple)',
-    icon: '🎯'
+    icon: 'ads_click'
   },
   update: {
     box: 'bg-pink-50',
     text: 'text-pink-900',
     border: 'var(--tesoro-pink)',
-    icon: '🆕'
+    icon: 'new_releases'
   }
 };
 
@@ -79,7 +79,7 @@ const styles = variantStyles[variant as keyof typeof variantStyles];
       <ul class="space-y-4">
         {items.map((item: string) => (
           <li class={`relative pl-8 font-medium text-[1.0625rem] leading-relaxed ${styles.text}`}>
-            <span class="absolute left-0 top-0 text-xl">{styles.icon}</span>
+            <span class="icon absolute left-0 top-0 text-xl">{styles.icon}</span>
             {item}
           </li>
         ))}

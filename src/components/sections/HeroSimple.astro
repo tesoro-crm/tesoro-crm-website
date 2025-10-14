@@ -51,7 +51,7 @@ const properties = [
           <div class="hero-simple__trust-column">
             {trust.slice(0, 3).map((item) => (
               <div class="hero-simple__trust-item">
-                <span class="hero-simple__trust-icon">✓</span>
+                <span class="icon hero-simple__trust-icon">check</span>
                 <span class="hero-simple__trust-text">{item}</span>
               </div>
             ))}
@@ -59,7 +59,7 @@ const properties = [
           <div class="hero-simple__trust-column">
             {trust.slice(3, 6).map((item) => (
               <div class="hero-simple__trust-item">
-                <span class="hero-simple__trust-icon">✓</span>
+                <span class="icon hero-simple__trust-icon">check</span>
                 <span class="hero-simple__trust-text">{item}</span>
               </div>
             ))}
@@ -502,7 +502,8 @@ const properties = [
   }
 
   .hero-simple__property-image::after {
-    content: '🏠';
+    content: 'home';
+    font-family: 'Material Symbols Outlined';
     position: absolute;
     inset: 0;
     display: grid;

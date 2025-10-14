@@ -186,7 +186,7 @@ const security = [
                   <div class="text-sm text-neutral-600">makelaar@example.com</div>
                   <div class="text-xs text-success">Gesynchroniseerd</div>
                 </div>
-                <div class="text-success font-bold">✓</div>
+                <span class="icon text-success font-bold">check</span>
               </div>
               
               <div class="p-4 border-2 border-dashed border-neutral-200 rounded-lg text-center">
@@ -245,7 +245,7 @@ const security = [
             <ul class="space-y-2">
               {provider.features.map((feature) => (
                 <li class="text-sm text-neutral-600 flex items-center gap-2">
-                  <span class="text-success">✓</span>
+                  <span class="icon icon-sm text-success">check</span>
                   {feature}
                 </li>
               ))}

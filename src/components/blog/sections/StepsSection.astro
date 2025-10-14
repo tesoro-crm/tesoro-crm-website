@@ -26,13 +26,13 @@ const steps = section.steps || [];
     {steps.map((step: any, index: number) => {
       const stepTitle = step.title[lang];
       const stepContent = step.content?.[lang];
-      const icon = step.icon || '✓';
-      
+      const icon = step.icon || null;
+
       return (
         <div class="relative pl-12 pb-8 border-l-2 border-slate-200 last:border-l-0 last:pb-0">
           {/* Step number/icon */}
           <div class="absolute left-0 top-0 -translate-x-1/2 w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
-            {icon === '✓' ? index + 1 : icon}
+            {icon ? icon : index + 1}
           </div>
           
           <h3 class="font-[family-name:var(--font-decorative)] text-xl font-bold text-gray-900 mb-3">

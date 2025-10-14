@@ -9,15 +9,16 @@ import type { Language } from '../i18n/config';
 const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
 
-// Feature definitions with hrefs (kept minimal, only structure)
+// Feature definitions with hrefs in workflow order (from realtor perspective)
 const featureHrefs = [
-  '/features/smart-matching',
-  '/features/deal-pipeline',
-  '/features/client-portal',
-  '/features/email-integration',
-  '/features/property-management',
-  '/features/reporting-analytics',
-  '/website-api',
+  '/features/lead-management',      // 1. Hier begint alles
+  '/features/deal-pipeline',         // 2. Belangrijkste - deals sluiten
+  '/features/smart-matching',        // 3. AI matching bespaart tijd
+  '/features/email-integration',     // 4. Communicatie (was: Email Integration)
+  '/features/client-portal',         // 5. Voor je klanten
+  '/features/property-management',   // 6. Vastgoed beheer
+  '/features/reporting-analytics',   // 7. Rapportages & inzichten
+  '/website-api',                    // 8. Website koppeling
 ];
 ---
 
@@ -64,7 +65,7 @@ const featureHrefs = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {[1, 2, 3, 4, 5, 6, 7].map((num, index) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((num, index) => (
           <Card variant="default" padding="lg" class="h-full hover:shadow-lg transition-shadow group">
             <h3 class="text-xl font-semibold text-neutral-900 mb-3">
               {t(`features_overview.features_grid.feature_${num}_title`, locale)}
@@ -76,7 +77,7 @@ const featureHrefs = [
             <ul class="space-y-2 mb-6">
               {[1, 2, 3].map((benefitNum) => (
                 <li class="text-sm text-neutral-600 flex items-center gap-2">
-                  <span class="text-success">✓</span>
+                  <span class="icon icon-sm text-success">check</span>
                   {t(`features_overview.features_grid.feature_${num}_benefit_${benefitNum}`, locale)}
                 </li>
               ))}
@@ -159,7 +160,7 @@ const featureHrefs = [
           <div class="space-y-3">
             {[1, 2, 3, 4, 5].map((num) => (
               <div class="flex items-center gap-3">
-                <span class="text-success">✓</span>
+                <span class="icon icon-sm text-success">check</span>
                 <span>{t(`features_overview.value_proposition.package_feature_${num}`, locale)}</span>
               </div>
             ))}

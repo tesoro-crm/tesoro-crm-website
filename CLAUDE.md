@@ -567,5 +567,100 @@ Screenshots should use descriptive names:
 - This applies to ALL headings (h1, h2, h3), section titles, feature titles, and button text
 - Exception: Brand names and proper nouns always capitalized (e.g., "Tesoro CRM")
 
-- ik ben geen fan van alle toegepaste icons. Verminder deze tot het minimum.
-- We gaan gebruikmaken van Google’s Material Symbols als icon library. Kies de Outlined stijl (dus geen volle iconen). Zorg dat alle iconen consistent zijn qua lijngewicht, grootte en kleur, en dat we only de iconen laden die we echt gebruiken (niet de hele bibliotheek). Gebruik currentColor voor kleur zodat de iconen automatisch meekleuren met tekst/thema. Ik stuur je de lijst met icon-namen die we nodig hebben + de CSS/HTML snippet.
+**IMPORTANT: No Colons in Titles/Headings**
+- ❌ Avoid using colons (:) in titles, headings, and section names
+- ✅ Instead: Split text into main heading and smaller subtitle
+  - Bad: "Foundation: €0 → €5K Deal"
+  - Good: "Foundation" (main heading) + "€0 → €5K Deal" (smaller subtitle below)
+- Apply this rule to:
+  - Page titles (h1, h2, h3)
+  - Category names
+  - Section headings
+  - Card titles
+  - Navigation labels
+- Use separate elements with different font sizes for primary and secondary text
+- Subtitle should be smaller font size and lighter color than main heading
+
+## Icon & Emoji Guidelines
+
+**CRITICAL: No Emojis - Use Material Symbols Only**
+
+- ❌ **DO NOT use emojis** in any part of the UI
+  - No emojis in headings, titles, buttons, labels, or UI elements
+  - No emojis in content (blog posts, knowledge base articles, etc.)
+  - No emojis in navigation or menus
+  - Exception: User-generated content only (if applicable)
+
+- ✅ **USE Google Material Symbols** for all icons
+  - Icon library: [Google Material Symbols](https://fonts.google.com/icons)
+  - Style: **Outlined only** (not Filled, Rounded, or Sharp)
+  - Load only the specific icons needed (not the entire library)
+  - Use `currentColor` for icon color to inherit from parent text/theme
+  - Ensure consistency in line weight, size, and color across all icons
+  - Minimize icon usage - only use when truly necessary
+
+**Implementation Pattern:**
+```html
+<!-- ✅ Correct: Material Symbol -->
+<span class="icon">search</span>
+
+<!-- ❌ Wrong: Emoji -->
+<span>🔍</span>
+```
+
+**CSS Setup:**
+```css
+.icon {
+  font-family: 'Material Symbols Outlined';
+  color: currentColor;
+  font-size: inherit;
+}
+```
+
+## ✓ Bulletpoint & List Alignment Rule
+
+**CRITICAL: Bulletpoints and checklists must ALWAYS be left-aligned, NEVER centered.**
+
+This is a fundamental UX principle: lists are meant to be scanned vertically, and centering them makes reading significantly harder.
+
+- ❌ **NEVER** center align bulletpoint lists or checklist items
+  - Don't use `text-center` on containers with `<ul>` or `<li>` elements
+  - Don't use `justify-center` in flexbox layouts containing list items
+  - Don't center checkmark lists or feature lists
+
+- ✅ **ALWAYS** left-align bulletpoint lists and checklists
+  - Lists should use `flex items-center` with default `justify-start`
+  - Checkmarks/bullets should align to the left edge
+  - Text should flow naturally from left to right
+
+**Pattern to Follow:**
+```html
+<!-- ✅ CORRECT: Left-aligned list -->
+<Card variant="default" padding="lg">
+  <h3 class="text-center">Feature Name</h3>
+  <p class="text-center">Feature description</p>
+
+  <!-- List is LEFT-aligned, even if title/description are centered -->
+  <ul class="space-y-1">
+    <li class="flex items-center gap-1">
+      <span class="icon">check_circle</span>
+      Feature detail
+    </li>
+  </ul>
+</Card>
+
+<!-- ❌ WRONG: Centered list -->
+<Card variant="default" padding="lg" class="text-center">
+  <ul>
+    <li class="flex items-center justify-center gap-1">
+      <span class="icon">check_circle</span>
+      Feature detail
+    </li>
+  </ul>
+</Card>
+```
+
+**Key Rule:**
+- Title and description MAY be centered
+- Bulletpoints and checklists MUST be left-aligned
+- These are independent layout decisions

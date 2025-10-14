@@ -50,7 +50,7 @@ const { locale } = Astro.props;
           </svg>
         </div>
         <div class="ai-chat-widget__message-content">
-          <p>Hallo! 👋 Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.</p>
+          <p>Hallo! Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.</p>
         </div>
       </div>
     </div>
@@ -75,7 +75,9 @@ const { locale } = Astro.props;
 
     <div class="ai-chat-widget__footer">
       <span class="ai-chat-widget__powered">Powered by <strong>Cloudflare AI</strong></span>
-      <a href={getLocalizedPath('/ai-knowledge', locale)} class="ai-chat-widget__knowledge-link" target="_blank">📚 Knowledge Base</a>
+      <a href={getLocalizedPath('/ai-knowledge', locale)} class="ai-chat-widget__knowledge-link" target="_blank">
+        <span class="icon icon-sm">menu_book</span> Knowledge Base
+      </a>
     </div>
   </div>
 </div>

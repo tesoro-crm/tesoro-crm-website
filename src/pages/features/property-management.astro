@@ -20,7 +20,7 @@ const managementFeatures = [
   },
   {
     title: 'Listing Management',
-    description: 'Publiceer automatisch naar vastgoedportals zoals Funda, Idealista en internationale sites.',
+    description: 'Publiceer automatisch naar vastgoedportals zoals Idealista, Fotocasa en internationale sites.',
   },
   {
     title: 'Property-Klant Tracking',
@@ -45,43 +45,28 @@ const benefits = [
 
 const mlsIntegrations = [
   {
-    name: 'Funda',
-    description: 'Nederlandse marktleider voor vastgoed',
-    features: ['Automatische sync', 'Photo management', 'Status updates', 'Lead tracking'],
-  },
-  {
     name: 'Idealista',
-    description: 'Spaanse vastgoedportal',
+    description: 'Líder del mercado español',
+    logo: '/images/portals/idealista-logo.png',
     features: ['Multi-language', 'Auto translation', 'Price tracking', 'Market analysis'],
   },
   {
+    name: 'Fotocasa',
+    description: 'Portal inmobiliario de referencia',
+    logo: '/images/portals/fotocasa-logo.png',
+    features: ['Automatische sync', 'Photo management', 'Status updates', 'Lead tracking'],
+  },
+  {
     name: 'Kyero',
-    description: 'Internationaal vastgoed Spanje',
+    description: 'Mercado internacional España',
+    logo: '/images/portals/kyero-logo.png',
     features: ['International reach', 'Multi-currency', 'Tourist market', 'Holiday rentals'],
   },
   {
     name: 'Custom MLS',
-    description: 'Eigen MLS systemen via API',
+    description: 'Sistemas MLS propios vía API',
+    logo: null,
     features: ['XML import', 'REST API', 'Custom fields', 'Bulk operations'],
-  },
-];
-
-const propertyFields = [
-  {
-    category: 'Basis Informatie',
-    fields: ['Adres & locatie', 'Prijs & kosten', 'Oppervlakte (m²)', 'Aantal kamers', 'Type woning', 'Bouwjaar'],
-  },
-  {
-    category: 'Property Details',
-    fields: ['Energielabel', 'Staat van onderhoud', 'Tuin/balkon', 'Garage/parkeren', 'Verwarming', 'Isolatie'],
-  },
-  {
-    category: 'Locatie & Omgeving',
-    fields: ['Buurt informatie', 'Voorzieningen', 'Openbaar vervoer', 'Scholen & winkels', 'Uitvalswegen', 'Buurtprofiel'],
-  },
-  {
-    category: 'Media & Documenten',
-    fields: ['Foto\'s (onbeperkt)', 'Floorplans', 'Brochures', 'Legale documenten', 'Taxatie rapporten', 'Video tours'],
   },
 ];
 
@@ -203,8 +188,8 @@ const analytics = [
                   <h4 class="font-semibold text-neutral-900">Villa Marbella</h4>
                   <p class="text-sm text-neutral-600">€450.000 • 4 kamers • 180m²</p>
                   <div class="flex gap-2 mt-2">
-                    <Badge variant="success" size="xs">Funda</Badge>
-                    <Badge variant="secondary" size="xs">Idealista</Badge>
+                    <Badge variant="success" size="xs">Idealista</Badge>
+                    <Badge variant="secondary" size="xs">Fotocasa</Badge>
                     <Badge variant="outline" size="xs">Kyero</Badge>
                   </div>
                 </div>
@@ -296,51 +281,32 @@ const analytics = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {mlsIntegrations.map((integration) => (
-          <Card variant="default" padding="lg" class="h-full text-center">
-            <h3 class="text-lg font-semibold text-neutral-900 mb-2">
-              {integration.name}
-            </h3>
-            <p class="text-sm text-neutral-600 mb-4">
+          <Card variant="default" padding="lg" class="h-full">
+            {integration.logo && (
+              <div class="mb-4 flex justify-center">
+                <img
+                  src={integration.logo}
+                  alt={`${integration.name} logo`}
+                  class="h-12 w-auto object-contain"
+                />
+              </div>
+            )}
+
+            {!integration.logo && (
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2 text-center">
+                {integration.name}
+              </h3>
+            )}
+
+            <p class="text-sm text-neutral-600 mb-4 text-center">
               {integration.description}
             </p>
-            
+
             <ul class="space-y-1 text-xs text-neutral-600">
               {integration.features.map((feature) => (
-                <li class="flex items-center justify-center gap-1">
+                <li class="flex items-center gap-1">
                   <span class="icon icon-xs text-success">check_circle</span>
                   {feature}
-                </li>
-              ))}
-            </ul>
-          </Card>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Property Fields -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Uitgebreide Property Velden
-        </h2>
-        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Alle informatie die je nodig hebt om properties professioneel te presenteren.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {propertyFields.map((category) => (
-          <Card variant="default" padding="lg" class="h-full">
-            <h3 class="text-xl font-semibold text-neutral-900 mb-4">
-              {category.category}
-            </h3>
-            <ul class="space-y-2">
-              {category.fields.map((field) => (
-                <li class="text-neutral-700 flex items-center gap-2">
-                  <span class="text-primary">•</span>
-                  {field}
                 </li>
               ))}
             </ul>

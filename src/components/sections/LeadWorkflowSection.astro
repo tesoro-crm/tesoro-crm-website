@@ -93,7 +93,10 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     <div class="lead-workflow__benefits">
       <ul class="lead-workflow__list">
         {bullets.map((b: string) => (
-          <li class="lead-workflow__item">{b}</li>
+          <li class="lead-workflow__item">
+            <span class="icon lead-workflow__icon">check</span>
+            <span>{b}</span>
+          </li>
         ))}
       </ul>
     </div>
@@ -170,8 +173,7 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     overflow: hidden;
   }
 
-  .lead-workflow__item::before {
-    content: '✓';
+  .lead-workflow__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +208,7 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     border-color: rgba(255, 159, 67, 0.3);
   }
 
-  .lead-workflow__item:hover::before {
+  .lead-workflow__item:hover .lead-workflow__icon {
     transform: scale(1.1) rotate(10deg);
     box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
   }

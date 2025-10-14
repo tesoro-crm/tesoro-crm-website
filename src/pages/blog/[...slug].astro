@@ -116,7 +116,7 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
 
             {blogData.meta.aiGenerated && (
               <div class="blog-article__ai-badge" role="note" aria-label="AI generated content">
-                🤖 {locale === 'nl' ? 'AI-Gegenereerde Content' : locale === 'es' ? 'Contenido Generado por IA' : 'AI-Generated Content'}
+                <span class="icon icon-sm">smart_toy</span> {locale === 'nl' ? 'AI-Gegenereerde Content' : locale === 'es' ? 'Contenido Generado por IA' : 'AI-Generated Content'}
                 {blogData.meta.aiPrompt && (
                   <details class="blog-article__ai-details">
                     <summary>{locale === 'nl' ? 'Bekijk AI Prompt' : locale === 'es' ? 'Ver Prompt de IA' : 'View AI Prompt'}</summary>
@@ -172,7 +172,7 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
               class="blog-article__share-button blog-article__share-button--twitter"
               aria-label={locale === 'nl' ? 'Deel op Twitter' : locale === 'es' ? 'Compartir en Twitter' : 'Share on Twitter'}
             >
-              🐦 Twitter
+              Twitter
             </a>
             <a
               href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`}
@@ -181,7 +181,7 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
               class="blog-article__share-button blog-article__share-button--linkedin"
               aria-label={locale === 'nl' ? 'Deel op LinkedIn' : locale === 'es' ? 'Compartir en LinkedIn' : 'Share on LinkedIn'}
             >
-              💼 LinkedIn
+              LinkedIn
             </a>
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
@@ -190,14 +190,14 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
               class="blog-article__share-button blog-article__share-button--facebook"
               aria-label={locale === 'nl' ? 'Deel op Facebook' : locale === 'es' ? 'Compartir en Facebook' : 'Share on Facebook'}
             >
-              📘 Facebook
+              Facebook
             </a>
             <button
               class="blog-article__share-button blog-article__share-button--copy"
               onclick={`navigator.clipboard.writeText('${Astro.url.href}')`}
               aria-label={locale === 'nl' ? 'Kopieer link' : locale === 'es' ? 'Copiar enlace' : 'Copy link'}
             >
-              📋 {locale === 'nl' ? 'Kopieer Link' : locale === 'es' ? 'Copiar Enlace' : 'Copy Link'}
+              {locale === 'nl' ? 'Kopieer Link' : locale === 'es' ? 'Copiar Enlace' : 'Copy Link'}
             </button>
           </div>
         </div>

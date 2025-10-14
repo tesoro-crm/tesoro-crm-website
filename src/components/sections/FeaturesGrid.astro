@@ -23,7 +23,7 @@ const { locale } = Astro.props;
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <Card variant="default" padding="lg" class="text-center">
-        <div class="text-4xl mb-4">🎯</div>
+        <div class="text-4xl mb-4"><span class="icon" style="font-size: 4rem;">ads_click</span></div>
         <h3 class="text-xl font-semibold text-neutral-900 mb-3">
           {t('home.features.feature_1_title', locale)}
         </h3>
@@ -33,7 +33,7 @@ const { locale } = Astro.props;
       </Card>
 
       <Card variant="default" padding="lg" class="text-center">
-        <div class="text-4xl mb-4">🔄</div>
+        <div class="text-4xl mb-4"><span class="icon" style="font-size: 4rem;">sync</span></div>
         <h3 class="text-xl font-semibold text-neutral-900 mb-3">
           {t('home.features.feature_2_title', locale)}
         </h3>
@@ -43,7 +43,7 @@ const { locale } = Astro.props;
       </Card>
 
       <Card variant="default" padding="lg" class="text-center">
-        <div class="text-4xl mb-4">✓</div>
+        <div class="text-4xl mb-4"><span class="icon" style="font-size: 4rem;">check</span></div>
         <h3 class="text-xl font-semibold text-neutral-900 mb-3">
           {t('home.features.feature_3_title', locale)}
         </h3>

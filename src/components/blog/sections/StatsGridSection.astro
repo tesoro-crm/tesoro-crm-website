@@ -26,12 +26,12 @@ const stats = section.stats || [];
     {stats.map((stat: any) => {
       const statLabel = stat.label[lang];
       const statValue = stat.value[lang] || stat.value;
-      const icon = stat.icon || '📊';
+      const icon = stat.icon || null;
       const description = stat.description?.[lang];
-      
+
       return (
         <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
-          <div class="text-4xl mb-3">{icon}</div>
+          {icon && <div class="text-4xl mb-3">{icon}</div>}
           
           <div class="text-3xl font-bold text-gray-900 mb-2">
             {statValue}
