@@ -198,6 +198,79 @@ title: 'Hardcoded Title'
 2. Use t() function calls for ALL text content
 3. Test all three language versions work correctly
 
+## 📸 Screenshot & Video Guidelines
+
+### Screenshot Management
+
+**Screenshot Tracking System**: All screenshots and videos are tracked in `.playwright-mcp/screenshots-manifest.json` to prevent duplicates.
+
+**Before Creating New Screenshots:**
+```bash
+# Always check if screenshot already exists
+cd .playwright-mcp
+node screenshot-helper.cjs exists <module> "<description>"
+node screenshot-helper.cjs list <module>
+```
+
+**After Creating Screenshots:**
+```bash
+# Register new screenshots in manifest
+node screenshot-helper.cjs add "filename.png" "category" "module" "Description"
+```
+
+See `.playwright-mcp/README.md` for complete documentation.
+
+### Video Recording Rules
+
+**CRITICAL: DO NOT create video files from static screenshots.**
+
+Videos should ONLY be created when there is actual dynamic behavior to demonstrate:
+
+✅ **When to Use Video (MP4):**
+- User interactions with visible animations (dropdowns opening, modals appearing)
+- Drag-and-drop operations
+- Real-time data updates or loading states
+- Multi-step workflows with transitions
+- Hover effects and interactive elements
+- Scrolling through large datasets with dynamic loading
+
+❌ **When NOT to Use Video:**
+- Static page views (use PNG screenshot instead)
+- Single form states without interaction
+- Dashboard views without animation
+- Static content that doesn't change
+- Any scenario where a screenshot would suffice
+
+**Bad Example (what was done before):**
+```bash
+# ❌ WRONG - Creating "video" from static screenshots
+ffmpeg -loop 1 -i screenshot.png -t 5 output.mp4
+# This creates a 5-second video of a still image - pointless!
+```
+
+**Good Example:**
+```bash
+# ✅ CORRECT - Static view = PNG screenshot
+playwright screenshot dashboard.png
+
+# ✅ CORRECT - Real interaction = screen recording
+playwright video-record opening-property-modal.mp4
+# Records actual user clicking button, modal animating in, content loading
+```
+
+### File Format Guidelines
+
+- **Static views**: PNG (preferred) or JPG
+- **Dynamic interactions**: MP4 (only with actual movement)
+- **UI mockups**: PNG with transparency if needed
+- **Documentation screenshots**: PNG (better quality for text)
+
+### Naming Conventions
+
+Screenshots should use descriptive names:
+- `{module}-{view}-{detail}.png` (e.g., `dashboard-overview-with-kpis.png`)
+- `{workflow}-{step-number}-{action}.png` (e.g., `signup-03-company-details.png`)
+
 ### Title Case Rules by Language
 
 **CRITICAL: Title capitalization differs by language!**
