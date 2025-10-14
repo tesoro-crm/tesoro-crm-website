@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `npm run build` | Build production site to ./dist/ |
 | `npm run preview` | Preview production build locally |
 | `npm run lint` | Run ESLint on codebase |
+| `npm run validate:i18n` | Validate all translation keys exist in all language files |
 | `npm run deploy:preview` | Deploy to Cloudflare Pages preview environment |
 | `npm run deploy:production` | Deploy to Cloudflare Pages production |
 
@@ -121,6 +122,117 @@ Default locale is Spanish with fallback routing configured.
 
 Always run `npm run build` to verify the build succeeds before committing changes, as this project has strict TypeScript and Astro validation.
 
+## 🎭 MANDATORY: Visual Verification with Playwright
+
+**CRITICAL: ALL design changes MUST be visually verified with Playwright BEFORE committing.**
+
+### When Visual Verification is REQUIRED
+
+You MUST use Playwright to verify changes when modifying:
+- ✅ CSS files (styles, layouts, spacing, colors)
+- ✅ Component positioning (navigation, menus, modals)
+- ✅ Responsive design (breakpoints, mobile layouts)
+- ✅ Visual elements (buttons, cards, images, icons)
+- ✅ Typography (font sizes, weights, line heights)
+- ✅ Animations and transitions
+- ✅ Any file in src/components/ that affects visual rendering
+
+### Verification Workflow
+
+**MANDATORY STEPS - DO NOT SKIP:**
+
+1. **Make your code changes**
+   - Edit CSS/components as needed
+   - Save files
+
+2. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+3. **Deploy to preview OR use dev server**
+   ```bash
+   npm run deploy:preview
+   # OR use local dev server
+   npm run dev
+   ```
+
+4. **Use Playwright to visually verify**
+   ```bash
+   # Navigate to the page
+   mcp__playwright__browser_navigate("https://your-preview-url.pages.dev")
+   # OR
+   mcp__playwright__browser_navigate("http://localhost:4323")
+
+   # Interact with elements (hover, click, etc.)
+   mcp__playwright__browser_hover(element, ref)
+
+   # Take screenshot to verify alignment/styling
+   mcp__playwright__browser_take_screenshot("verification-screenshot.png")
+   ```
+
+5. **Analyze the screenshot**
+   - Check alignment is correct
+   - Verify spacing matches design
+   - Confirm colors and typography are correct
+   - Test responsive behavior if applicable
+
+6. **ONLY AFTER VISUAL CONFIRMATION: Commit and deploy**
+   ```bash
+   git add .
+   git commit -m "fix: your message"
+   git push
+   npm run deploy:production
+   ```
+
+### Why This Matters
+
+Without visual verification:
+- ❌ Changes may look wrong in production
+- ❌ User catches bugs that should have been caught earlier
+- ❌ Wasted time rolling back broken deployments
+- ❌ Loss of user trust
+
+With Playwright verification:
+- ✅ Catch visual bugs BEFORE they reach production
+- ✅ Verify fixes actually work as intended
+- ✅ Build user confidence through quality
+- ✅ Professional development workflow
+
+### Real Example
+
+**BAD (what happened before):**
+```bash
+# ❌ WRONG - Committed without verification
+1. Edit Header.astro (mega menu positioning)
+2. git add . && git commit && git push
+3. npm run deploy:production
+4. User reports: "It doesn't work, here's a screenshot"
+5. Scramble to fix and redeploy
+```
+
+**GOOD (required workflow):**
+```bash
+# ✅ CORRECT - Verify first, then commit
+1. Edit Header.astro (mega menu positioning)
+2. npm run build (check for errors)
+3. npm run deploy:preview
+4. Use Playwright to navigate and hover over menu
+5. Take screenshot and verify alignment is correct
+6. ONLY THEN: git add . && git commit && git push
+7. npm run deploy:production (with confidence)
+```
+
+### Exception: Non-Visual Changes
+
+You may skip Playwright verification ONLY when:
+- Changes are purely backend/API (no UI impact)
+- Modifying configuration files (astro.config.mjs, tsconfig.json)
+- Documentation updates (README.md, CLAUDE.md)
+- Content-only changes (blog JSON, i18n translations)
+
+**When in doubt: VERIFY. Better safe than sorry.**
+
 ## Documentation Structure
 
 This project has comprehensive documentation organized in the docs/ folder:
@@ -196,30 +308,162 @@ title: 'Hardcoded Title'
 ### Before Creating New Pages
 1. Define all translation keys in i18n files first
 2. Use t() function calls for ALL text content
-3. **ALWAYS verify translation keys exist** before using them in pages:
-   ```bash
-   # Check if key exists in all language files
-   grep -r "key_name" src/i18n/locales/
-   ```
-4. Test all three language versions work correctly
+3. Test all three language versions work correctly
+4. **ALWAYS run validation before committing** (see below)
 
-### Translation Key Verification Protocol
+### Translation Key Validation Protocol
 
-**CRITICAL: Always verify translation keys exist before using them!**
+**CRITICAL: Always validate translation keys exist before committing!**
 
-When using `t('section.subsection.key', locale)` in your code:
+This project includes an automated validation script that prevents missing translation keys from reaching production.
 
-1. **Before writing the code**, verify the key exists in ALL three language files (en.json, es.json, nl.json)
-2. Use grep to search: `grep -A2 -B2 "key_name" src/i18n/locales/*.json`
-3. If the key doesn't exist, add it to all three files FIRST
-4. Never assume a key exists just because it makes logical sense - verify!
+#### Automated Validation Script
 
-**Common mistake:** Using `t('page.hero.cta_primary', locale)` when only `page.hero.title` exists.
+Run the validation script **before every commit** that touches .astro files or i18n JSON files:
 
-**Prevention:**
-- Read the relevant section of the i18n file before adding t() calls
-- Cross-check all three language files have matching key structure
-- Build and test immediately after adding new translation keys
+```bash
+npm run validate:i18n
+```
+
+This script will:
+- Scan all .astro files for t() function calls
+- Extract all translation keys used in the codebase
+- Verify each key exists in ALL three language files (en.json, es.json, nl.json)
+- Report any missing keys with file location and line number
+
+#### Workflow Integration
+
+**When to Run:**
+1. ✅ Before committing changes to .astro files
+2. ✅ After adding new translation keys to any language file
+3. ✅ Before creating a pull request
+4. ✅ As part of your pre-deployment checklist
+
+**Expected Output:**
+
+✅ **Success (all keys valid):**
+```
+🔍 Scanning for translation keys...
+Found 62 .astro files
+Found 783 translation key usages (757 unique keys)
+
+✅ All keys present in en.json
+✅ All keys present in es.json
+✅ All keys present in nl.json
+
+✅ All translation keys are valid!
+```
+
+❌ **Failure (missing keys):**
+```
+❌ Missing keys in en.json (3):
+   website_api.hero.cta_primary
+   → Used in: /src/pages/website-api.astro:25
+
+   website_api.hero.cta_secondary
+   → Used in: /src/pages/website-api.astro:28
+```
+
+#### Fixing Missing Keys
+
+When the validation script reports missing keys:
+
+1. **Identify the pattern:** Look at the key structure (e.g., `website_api.hero.cta_primary`)
+2. **Add to ALL language files:** Open en.json, es.json, and nl.json
+3. **Maintain consistency:** Ensure the key structure matches across all files
+4. **Translate properly:** Don't just copy English text - translate appropriately
+5. **Re-run validation:** `npm run validate:i18n` to confirm fixes
+
+#### Common Mistakes to Avoid
+
+❌ **Wrong:** Using a key before it exists
+```astro
+// ❌ Code uses key that doesn't exist yet
+<h1>{t('new_page.hero.title', locale)}</h1>
+```
+
+✅ **Correct:** Add key to all language files first
+```json
+// en.json, es.json, nl.json
+{
+  "new_page": {
+    "hero": {
+      "title": "..."
+    }
+  }
+}
+```
+
+❌ **Wrong:** Adding key to only one language file
+```json
+// Only added to en.json - WRONG!
+```
+
+✅ **Correct:** Add to ALL three files (en.json, es.json, nl.json)
+
+❌ **Wrong:** Naming mismatch between code and JSON
+```astro
+// Code expects: feature_1_title
+t('section.feature_1_title', locale)
+```
+```json
+// JSON has: benefit_1_title - MISMATCH!
+{ "section": { "benefit_1_title": "..." } }
+```
+
+✅ **Correct:** Exact match between code and all JSON files
+
+#### Pre-Commit Checklist
+
+Before every commit that touches i18n or .astro files:
+
+- [ ] Run `npm run validate:i18n`
+- [ ] Fix any reported missing keys
+- [ ] Test pages in all three languages (es, en, nl)
+- [ ] Verify build succeeds: `npm run build`
+- [ ] Commit only after validation passes
+
+#### Why This Matters
+
+Missing translation keys cause:
+- ❌ Raw key names displayed to users (e.g., "website_api.hero.title" instead of actual text)
+- ❌ Broken user experience in production
+- ❌ Time wasted debugging why translations don't show
+- ❌ Inconsistent multilingual experience
+
+The validation script catches these issues **before** they reach production.
+
+#### Optional: Git Pre-Commit Hook
+
+For extra protection, you can set up a git pre-commit hook that automatically runs validation:
+
+```bash
+# Create/edit .git/hooks/pre-commit
+cat > .git/hooks/pre-commit << 'EOF'
+#!/bin/sh
+
+# Run i18n validation before allowing commit
+echo "Running i18n validation..."
+npm run validate:i18n
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Commit blocked: Translation validation failed"
+  echo "Fix the missing keys and try again"
+  exit 1
+fi
+
+echo "✅ Translation validation passed"
+exit 0
+EOF
+
+# Make it executable
+chmod +x .git/hooks/pre-commit
+```
+
+With this hook, git will automatically run validation before every commit and block the commit if validation fails.
+
+**Note:** This is optional but highly recommended for developers who frequently work with i18n.
 
 ## 📸 Screenshot & Video Guidelines
 
