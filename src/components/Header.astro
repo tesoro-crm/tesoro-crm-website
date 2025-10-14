@@ -16,7 +16,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 ---
 
 <header class="sticky top-0 z-[100] bg-white border-b border-neutral-200">
-  <nav class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
     <div class="flex items-center justify-between h-16 gap-8">
       <!-- Logo -->
       <a href={getLocalizedPath('/', locale)} class="flex items-center hover:opacity-80 transition-opacity flex-shrink-0">
@@ -35,7 +35,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 
       <!-- Desktop Navigation -->
       <ul class="hidden lg:flex items-center gap-6">
-        <li class="relative group">
+        <li class="group">
           <button
             class={`flex items-center gap-1 text-sm font-medium transition-colors py-1 ${currentPath === '/features' || currentPath === `/${locale}/features` ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
           >
@@ -46,7 +46,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           </button>
 
           <!-- Mega Menu - Features -->
-          <div class="hidden group-hover:block absolute left-1/2 top-full z-50 w-full -translate-x-1/2" style="max-width: 1280px;">
+          <div class="hidden group-hover:block absolute left-0 right-0 top-full z-50">
             <div class="bg-white shadow-xl border-t border-neutral-200">
               <div class="px-4 sm:px-6 lg:px-8 py-10">
                 <div class="grid grid-cols-4 gap-8">
