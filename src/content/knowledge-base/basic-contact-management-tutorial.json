@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "id": "basic-contact-management-tutorial",
+    "version": "1.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T21:00:00Z",
+    "authorId": "maria-perez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["contacts", "tutorial", "basic-features", "contact-management", "crm-basics"],
+    "featured": true,
+    "readingTime": 4,
+    "videoIncluded": true,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&h=630&fit=crop",
+    "keywords": ["contact toevoegen Tesoro", "CRM contact beheer", "contacten organiseren", "Tesoro CRM tutorial", "contact informatie"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contact Management in Tesoro CRM: Complete Beginner Tutorial",
+      "en": "Contact Management in Tesoro CRM: Complete Beginner Tutorial",
+      "es": "Gestión de Contactos en Tesoro CRM: Tutorial Completo para Principiantes"
+    },
+    "description": {
+      "nl": "Leer stap-voor-stap hoe je contacten toevoegt, organiseert en beheert in Tesoro CRM. Van basis contact toevoegen tot geavanceerde organisatie technieken.",
+      "en": "Learn step-by-step how to add, organize and manage contacts in Tesoro CRM. From basic contact creation to advanced organization techniques.",
+      "es": "Aprende paso a paso cómo agregar, organizar y gestionar contactos en Tesoro CRM. Desde la creación básica de contactos hasta técnicas de organización avanzadas."
+    },
+    "icon": "👥"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "tutorial-overview",
+      "variant": "info",
+      "title": {
+        "nl": "📋 Wat je leert in deze tutorial",
+        "en": "📋 What you'll learn in this tutorial",
+        "es": "📋 Qué aprenderás en este tutorial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Na het voltooien van deze tutorial kun je:</p><ul><li>✅ Nieuwe contacten toevoegen aan Tesoro CRM</li><li>✅ Contact informatie bewerken en bijwerken</li><li>✅ Contacten organiseren met tags en categorieën</li><li>✅ Contact geschiedenis bekijken en beheren</li><li>✅ Contacten importeren en exporteren</li><li>✅ Duplicaat contacten voorkomen en oplossen</li></ul><p><strong>Tijd nodig:</strong> Ongeveer 15-20 minuten hands-on practice</p>"
+        },
+        "en": {
+          "text": "<p>After completing this tutorial you can:</p><ul><li>✅ Add new contacts to Tesoro CRM</li><li>✅ Edit and update contact information</li><li>✅ Organize contacts with tags and categories</li><li>✅ View and manage contact history</li><li>✅ Import and export contacts</li><li>✅ Prevent and resolve duplicate contacts</li></ul><p><strong>Time needed:</strong> About 15-20 minutes hands-on practice</p>"
+        },
+        "es": {
+          "text": "<p>Después de completar este tutorial puedes:</p><ul><li>✅ Agregar nuevos contactos a Tesoro CRM</li><li>✅ Editar y actualizar información de contactos</li><li>✅ Organizar contactos con tags y categorías</li><li>✅ Ver y gestionar historial de contactos</li><li>✅ Importar y exportar contactos</li><li>✅ Prevenir y resolver contactos duplicados</li></ul><p><strong>Tiempo necesario:</strong> Aproximadamente 15-20 minutos de práctica</p>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "contact-management-overview",
+      "title": {
+        "nl": "🎥 Contact Management Overview",
+        "en": "🎥 Contact Management Overview",
+        "es": "🎥 Resumen de Gestión de Contactos"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "5-minuten overzicht van alle contact management functies in Tesoro CRM",
+        "en": "5-minute overview of all contact management features in Tesoro CRM",
+        "es": "Resumen de 5 minutos de todas las funciones de gestión de contactos en Tesoro CRM"
+      },
+      "duration": "5:12"
+    },
+
+    {
+      "type": "steps",
+      "id": "add-new-contact",
+      "title": {
+        "nl": "➕ Stap 1: Je Eerste Contact Toevoegen",
+        "en": "➕ Step 1: Adding Your First Contact",
+        "es": "➕ Paso 1: Agregar tu Primer Contacto"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Open het Contact Menu",
+            "en": "Open the Contact Menu",
+            "es": "Abrir el Menú de Contactos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Ga naar het hoofdmenu aan de linkerkant van je scherm</p><p>2. Klik op <strong>\"Contacten\"</strong> (het icoon met twee personen)</p><p>3. Je ziet nu het contact overzicht met eventuele bestaande contacten</p><p><strong>💡 Tip:</strong> Je kunt ook de sneltoets <code>Ctrl + C</code> (Windows) of <code>Cmd + C</code> (Mac) gebruiken om direct naar contacten te gaan.</p>"
+            },
+            "en": {
+              "text": "<p>1. Go to the main menu on the left side of your screen</p><p>2. Click on <strong>\"Contacts\"</strong> (the icon with two people)</p><p>3. You'll now see the contact overview with any existing contacts</p><p><strong>💡 Tip:</strong> You can also use the shortcut <code>Ctrl + C</code> (Windows) or <code>Cmd + C</code> (Mac) to go directly to contacts.</p>"
+            },
+            "es": {
+              "text": "<p>1. Ve al menú principal en el lado izquierdo de tu pantalla</p><p>2. Haz clic en <strong>\"Contactos\"</strong> (el ícono con dos personas)</p><p>3. Ahora verás el resumen de contactos con cualquier contacto existente</p><p><strong>💡 Tip:</strong> También puedes usar el atajo <code>Ctrl + C</code> (Windows) o <code>Cmd + C</code> (Mac) para ir directamente a contactos.</p>"
+            }
+          },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&h=400&fit=crop",
+            "alt": {
+              "nl": "Contact menu in Tesoro CRM interface",
+              "en": "Contact menu in Tesoro CRM interface",
+              "es": "Menú de contactos en la interfaz de Tesoro CRM"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Klik op 'Nieuw Contact'",
+            "en": "Click 'New Contact'",
+            "es": "Hacer clic en 'Nuevo Contacto'"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Zoek de blauwe knop <strong>\"+ Nieuw Contact\"</strong> rechtsboven in het scherm</p><p>2. Klik op deze knop om het contact formulier te openen</p><p>3. Het formulier opent in een popup venster of nieuwe pagina</p><p><strong>⚠️ Let op:</strong> Als je de knop niet ziet, controleer of je de juiste rechten hebt. Neem contact op met je systeem administrator als de knop ontbreekt.</p>"
+            },
+            "en": {
+              "text": "<p>1. Look for the blue button <strong>\"+ New Contact\"</strong> in the top right of the screen</p><p>2. Click this button to open the contact form</p><p>3. The form opens in a popup window or new page</p><p><strong>⚠️ Note:</strong> If you don't see the button, check if you have the right permissions. Contact your system administrator if the button is missing.</p>"
+            },
+            "es": {
+              "text": "<p>1. Busca el botón azul <strong>\"+ Nuevo Contacto\"</strong> en la parte superior derecha de la pantalla</p><p>2. Haz clic en este botón para abrir el formulario de contacto</p><p>3. El formulario se abre en una ventana emergente o nueva página</p><p><strong>⚠️ Nota:</strong> Si no ves el botón, verifica si tienes los permisos correctos. Contacta a tu administrador del sistema si falta el botón.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Vul de Basis Informatie In",
+            "en": "Fill in Basic Information",
+            "es": "Completar Información Básica"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Verplichte velden (gemarkeerd met *):</strong></p><ul><li><strong>Voornaam*:</strong> De voornaam van je contact</li><li><strong>Achternaam*:</strong> De achternaam van je contact</li><li><strong>Email*:</strong> Het primaire emailadres</li></ul><p><strong>Optionele maar aanbevolen velden:</strong></p><ul><li><strong>Telefoonnummer:</strong> Mobiel of vast nummer</li><li><strong>Contact Type:</strong> Kies uit Koper, Verkoper, of Partner</li><li><strong>Bedrijf:</strong> Als het een zakelijk contact betreft</li><li><strong>Adres:</strong> Volledig adres voor bezichtigingen</li></ul><p><strong>💡 Pro Tip:</strong> Hoe meer informatie je invult, hoe beter Tesoro je kan helpen met automatische matching en suggesties.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Required fields (marked with *):</strong></p><ul><li><strong>First Name*:</strong> Your contact's first name</li><li><strong>Last Name*:</strong> Your contact's last name</li><li><strong>Email*:</strong> The primary email address</li></ul><p><strong>Optional but recommended fields:</strong></p><ul><li><strong>Phone Number:</strong> Mobile or landline number</li><li><strong>Contact Type:</strong> Choose from Buyer, Seller, or Partner</li><li><strong>Company:</strong> If it's a business contact</li><li><strong>Address:</strong> Full address for viewings</li></ul><p><strong>💡 Pro Tip:</strong> The more information you fill in, the better Tesoro can help you with automatic matching and suggestions.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Campos obligatorios (marcados con *):</strong></p><ul><li><strong>Nombre*:</strong> El nombre de tu contacto</li><li><strong>Apellido*:</strong> El apellido de tu contacto</li><li><strong>Email*:</strong> La dirección de correo principal</li></ul><p><strong>Campos opcionales pero recomendados:</strong></p><ul><li><strong>Número de Teléfono:</strong> Número móvil o fijo</li><li><strong>Tipo de Contacto:</strong> Elige entre Comprador, Vendedor o Socio</li><li><strong>Empresa:</strong> Si es un contacto comercial</li><li><strong>Dirección:</strong> Dirección completa para visitas</li></ul><p><strong>💡 Consejo Pro:</strong> Cuanta más información completes, mejor puede ayudarte Tesoro con matching automático y sugerencias.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Sla het Contact Op",
+            "en": "Save the Contact",
+            "es": "Guardar el Contacto"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Controleer of alle informatie correct is ingevuld</p><p>2. Klik op de <strong>\"Opslaan\"</strong> knop onderaan het formulier</p><p>3. Je ziet een bevestigingsmelding: \"Contact succesvol toegevoegd\"</p><p>4. Het nieuwe contact verschijnt nu in je contactenlijst</p><p><strong>🔍 Verificatie:</strong> Zoek je nieuwe contact op in de lijst om te controleren of alles correct is opgeslagen.</p>"
+            },
+            "en": {
+              "text": "<p>1. Check that all information is filled in correctly</p><p>2. Click the <strong>\"Save\"</strong> button at the bottom of the form</p><p>3. You'll see a confirmation message: \"Contact successfully added\"</p><p>4. The new contact now appears in your contact list</p><p><strong>🔍 Verification:</strong> Search for your new contact in the list to check that everything is saved correctly.</p>"
+            },
+            "es": {
+              "text": "<p>1. Verifica que toda la información esté completada correctamente</p><p>2. Haz clic en el botón <strong>\"Guardar\"</strong> en la parte inferior del formulario</p><p>3. Verás un mensaje de confirmación: \"Contacto agregado exitosamente\"</p><p>4. El nuevo contacto ahora aparece en tu lista de contactos</p><p><strong>🔍 Verificación:</strong> Busca tu nuevo contacto en la lista para verificar que todo esté guardado correctamente.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "duplicate-prevention",
+      "variant": "warning",
+      "title": {
+        "nl": "🛡️ Duplicaat Preventie",
+        "en": "🛡️ Duplicate Prevention",
+        "es": "🛡️ Prevención de Duplicados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM controleert automatisch op mogelijke duplicaten wanneer je een contact toevoegt:</p><ul><li><strong>Email Match:</strong> Waarschuwing als hetzelfde emailadres al bestaat</li><li><strong>Naam + Telefoonnummer:</strong> Suggestie bij vergelijkbare combinaties</li><li><strong>Bedrijf Match:</strong> Melding bij bestaande contacten van hetzelfde bedrijf</li></ul><p><strong>Wat te doen bij een duplicaat waarschuwing:</strong></p><ol><li>Klik op \"Bekijk bestaand contact\" om te vergelijken</li><li>Kies \"Samenvoegen\" om informatie te combineren</li><li>Of kies \"Toch toevoegen\" als het een ander persoon is</li></ol>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM automatically checks for possible duplicates when you add a contact:</p><ul><li><strong>Email Match:</strong> Warning if the same email address already exists</li><li><strong>Name + Phone Number:</strong> Suggestion for similar combinations</li><li><strong>Company Match:</strong> Notification for existing contacts from the same company</li></ul><p><strong>What to do with a duplicate warning:</strong></p><ol><li>Click \"View existing contact\" to compare</li><li>Choose \"Merge\" to combine information</li><li>Or choose \"Add anyway\" if it's a different person</li></ol>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM verifica automáticamente posibles duplicados cuando agregas un contacto:</p><ul><li><strong>Coincidencia de Email:</strong> Advertencia si la misma dirección de correo ya existe</li><li><strong>Nombre + Número de Teléfono:</strong> Sugerencia para combinaciones similares</li><li><strong>Coincidencia de Empresa:</strong> Notificación para contactos existentes de la misma empresa</li></ul><p><strong>Qué hacer con una advertencia de duplicado:</strong></p><ol><li>Haz clic en \"Ver contacto existente\" para comparar</li><li>Elige \"Fusionar\" para combinar información</li><li>O elige \"Agregar de todas formas\" si es una persona diferente</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "edit-contact",
+      "title": {
+        "nl": "✏️ Stap 2: Contact Informatie Bewerken",
+        "en": "✏️ Step 2: Editing Contact Information",
+        "es": "✏️ Paso 2: Editar Información de Contacto"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Contact Openen voor Bewerking",
+            "en": "Open Contact for Editing",
+            "es": "Abrir Contacto para Edición"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Methode 1: Via Contact Detail Pagina</strong></p><ol><li>Klik op een contact in de lijst</li><li>Contact details openen in nieuwe pagina</li><li>Klik op \"Bewerken\" rechtsboven</li></ol><p><strong>Methode 2: Direct Bewerken (Quick Edit)</strong></p><ol><li>Hover over een contact in de lijst</li><li>Klik op het potlood icoon (✏️) dat verschijnt</li><li>Formulier opent direct voor bewerking</li></ol><p><strong>💡 Tip:</strong> Quick Edit is sneller voor kleine aanpassingen, Detail Pagina is beter voor uitgebreide wijzigingen.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Method 1: Via Contact Detail Page</strong></p><ol><li>Click on a contact in the list</li><li>Contact details open in new page</li><li>Click \"Edit\" in the top right</li></ol><p><strong>Method 2: Direct Edit (Quick Edit)</strong></p><ol><li>Hover over a contact in the list</li><li>Click on the pencil icon (✏️) that appears</li><li>Form opens directly for editing</li></ol><p><strong>💡 Tip:</strong> Quick Edit is faster for small changes, Detail Page is better for extensive modifications.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Método 1: A través de Página de Detalle de Contacto</strong></p><ol><li>Haz clic en un contacto en la lista</li><li>Los detalles del contacto se abren en nueva página</li><li>Haz clic en \"Editar\" en la parte superior derecha</li></ol><p><strong>Método 2: Edición Directa (Quick Edit)</strong></p><ol><li>Pasa el cursor sobre un contacto en la lista</li><li>Haz clic en el ícono de lápiz (✏️) que aparece</li><li>El formulario se abre directamente para edición</li></ol><p><strong>💡 Tip:</strong> Quick Edit es más rápido para pequeños cambios, la Página de Detalle es mejor para modificaciones extensas.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Wijzigingen Aanbrengen",
+            "en": "Making Changes",
+            "es": "Realizar Cambios"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Veelgemaakte wijzigingen:</strong></p><ul><li><strong>Contact informatie bijwerken:</strong> Nieuwe telefoon, email, adres</li><li><strong>Contact type aanpassen:</strong> Van prospect naar klant</li><li><strong>Notities toevoegen:</strong> Belangrijke informatie over voorkeuren</li><li><strong>Tags aanpassen:</strong> Voor betere organisatie</li></ul><p><strong>⚠️ Let op bij wijzigen:</strong></p><ul><li>Email wijzigingen kunnen invloed hebben op automatische koppelingen</li><li>Adres wijzigingen updaten ook locatie-gebaseerde matches</li><li>Status wijzigingen kunnen workflow automations triggeren</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Common changes:</strong></p><ul><li><strong>Update contact info:</strong> New phone, email, address</li><li><strong>Adjust contact type:</strong> From prospect to client</li><li><strong>Add notes:</strong> Important information about preferences</li><li><strong>Modify tags:</strong> For better organization</li></ul><p><strong>⚠️ Be careful when changing:</strong></p><ul><li>Email changes may affect automatic linkages</li><li>Address changes also update location-based matches</li><li>Status changes may trigger workflow automations</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Cambios comunes:</strong></p><ul><li><strong>Actualizar info de contacto:</strong> Nuevo teléfono, email, dirección</li><li><strong>Ajustar tipo de contacto:</strong> De prospecto a cliente</li><li><strong>Agregar notas:</strong> Información importante sobre preferencias</li><li><strong>Modificar tags:</strong> Para mejor organización</li></ul><p><strong>⚠️ Ten cuidado al cambiar:</strong></p><ul><li>Los cambios de email pueden afectar enlaces automáticos</li><li>Los cambios de dirección también actualizan matches basados en ubicación</li><li>Los cambios de estado pueden activar automatizaciones de workflow</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "organize-contacts",
+      "title": {
+        "nl": "🏷️ Stap 3: Contacten Organiseren met Tags",
+        "en": "🏷️ Step 3: Organizing Contacts with Tags",
+        "es": "🏷️ Paso 3: Organizar Contactos con Tags"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Tags Toevoegen aan Contacten",
+            "en": "Adding Tags to Contacts",
+            "es": "Agregar Tags a Contactos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Wat zijn tags?</strong> Labels die je kunt toekennen aan contacten voor organisatie en filtering</p><p><strong>Hoe tags toevoegen:</strong></p><ol><li>Open een contact voor bewerking</li><li>Zoek het \"Tags\" veld (meestal onderaan het formulier)</li><li>Type een nieuwe tag of kies uit bestaande tags</li><li>Druk Enter om de tag toe te voegen</li><li>Voeg meerdere tags toe door het proces te herhalen</li></ol><p><strong>📝 Aanbevolen tag categorieën:</strong></p><ul><li><strong>Status:</strong> hot-lead, cold-lead, klant, oud-klant</li><li><strong>Interesse:</strong> koper, verkoper, huurder, verhuurder</li><li><strong>Locatie:</strong> amsterdam, utrecht, den-haag</li><li><strong>Budget:</strong> 0-200k, 200-400k, 400k+</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>What are tags?</strong> Labels you can assign to contacts for organization and filtering</p><p><strong>How to add tags:</strong></p><ol><li>Open a contact for editing</li><li>Find the \"Tags\" field (usually at the bottom of the form)</li><li>Type a new tag or choose from existing tags</li><li>Press Enter to add the tag</li><li>Add multiple tags by repeating the process</li></ol><p><strong>📝 Recommended tag categories:</strong></p><ul><li><strong>Status:</strong> hot-lead, cold-lead, client, former-client</li><li><strong>Interest:</strong> buyer, seller, tenant, landlord</li><li><strong>Location:</strong> amsterdam, utrecht, the-hague</li><li><strong>Budget:</strong> 0-200k, 200-400k, 400k+</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>¿Qué son los tags?</strong> Etiquetas que puedes asignar a contactos para organización y filtrado</p><p><strong>Cómo agregar tags:</strong></p><ol><li>Abre un contacto para edición</li><li>Encuentra el campo \"Tags\" (generalmente en la parte inferior del formulario)</li><li>Escribe un nuevo tag o elige de tags existentes</li><li>Presiona Enter para agregar el tag</li><li>Agrega múltiples tags repitiendo el proceso</li></ol><p><strong>📝 Categorías de tags recomendadas:</strong></p><ul><li><strong>Estado:</strong> hot-lead, cold-lead, cliente, ex-cliente</li><li><strong>Interés:</strong> comprador, vendedor, inquilino, propietario</li><li><strong>Ubicación:</strong> amsterdam, utrecht, la-haya</li><li><strong>Presupuesto:</strong> 0-200k, 200-400k, 400k+</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Contacten Filteren op Tags",
+            "en": "Filtering Contacts by Tags",
+            "es": "Filtrar Contactos por Tags"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Tags gebruiken voor filtering:</strong></p><ol><li>Ga naar je contacten overzicht</li><li>Zoek de \"Filter\" optie bovenaan de lijst</li><li>Klik op \"Filter op Tags\"</li><li>Selecteer één of meerdere tags om te filteren</li><li>De lijst toont nu alleen contacten met die tags</li></ol><p><strong>Geavanceerde filter opties:</strong></p><ul><li><strong>EN filtering:</strong> Contacten die ALLE geselecteerde tags hebben</li><li><strong>OF filtering:</strong> Contacten die MINIMAAL één van de tags hebben</li><li><strong>NIET filtering:</strong> Contacten die bepaalde tags NIET hebben</li></ul><p><strong>💡 Pro Tip:</strong> Combineer tag filtering met andere filters (locatie, datum, type) voor zeer specifieke lijsten.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Using tags for filtering:</strong></p><ol><li>Go to your contacts overview</li><li>Look for the \"Filter\" option at the top of the list</li><li>Click on \"Filter by Tags\"</li><li>Select one or more tags to filter by</li><li>The list now shows only contacts with those tags</li></ol><p><strong>Advanced filter options:</strong></p><ul><li><strong>AND filtering:</strong> Contacts that have ALL selected tags</li><li><strong>OR filtering:</strong> Contacts that have AT LEAST one of the tags</li><li><strong>NOT filtering:</strong> Contacts that do NOT have certain tags</li></ul><p><strong>💡 Pro Tip:</strong> Combine tag filtering with other filters (location, date, type) for very specific lists.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Usar tags para filtrado:</strong></p><ol><li>Ve a tu resumen de contactos</li><li>Busca la opción \"Filtro\" en la parte superior de la lista</li><li>Haz clic en \"Filtrar por Tags\"</li><li>Selecciona uno o más tags para filtrar</li><li>La lista ahora muestra solo contactos con esos tags</li></ol><p><strong>Opciones de filtro avanzadas:</strong></p><ul><li><strong>Filtrado Y:</strong> Contactos que tienen TODOS los tags seleccionados</li><li><strong>Filtrado O:</strong> Contactos que tienen AL MENOS uno de los tags</li><li><strong>Filtrado NO:</strong> Contactos que NO tienen ciertos tags</li></ul><p><strong>💡 Consejo Pro:</strong> Combina el filtrado por tags con otros filtros (ubicación, fecha, tipo) para listas muy específicas.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "next-steps",
+      "title": {
+        "nl": "🚀 Volgende Stappen",
+        "en": "🚀 Next Steps",
+        "es": "🚀 Próximos Pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je de basis van contact management onder de knie hebt, kun je verder gaan met:</p><h5>Gerelateerde Tutorials:</h5><ul><li><strong>Property Listing Aanmaken:</strong> Leer hoe je properties toevoegt en koppelt aan contacten</li><li><strong>Client Portal Setup:</strong> Geef klanten toegang tot hun persoonlijke portal</li><li><strong>Email Integratie:</strong> Koppel je email en automatiseer communicatie</li><li><strong>Rapportages:</strong> Genereer overzichten van je contact activiteiten</li></ul><h5>Geavanceerde Features om te Ontdekken:</h5><ul><li>Bulk contact import via CSV</li><li>Automatische tag toekenning op basis van gedrag</li><li>Contact scoring en lead prioritering</li><li>Geautomatiseerde follow-up sequences</li></ul>"
+        },
+        "en": {
+          "text": "<p>Now that you've mastered the basics of contact management, you can continue with:</p><h5>Related Tutorials:</h5><ul><li><strong>Creating Property Listings:</strong> Learn how to add properties and link them to contacts</li><li><strong>Client Portal Setup:</strong> Give clients access to their personal portal</li><li><strong>Email Integration:</strong> Connect your email and automate communication</li><li><strong>Reporting:</strong> Generate overviews of your contact activities</li></ul><h5>Advanced Features to Discover:</h5><ul><li>Bulk contact import via CSV</li><li>Automatic tag assignment based on behavior</li><li>Contact scoring and lead prioritization</li><li>Automated follow-up sequences</li></ul>"
+        },
+        "es": {
+          "text": "<p>Ahora que has dominado lo básico de la gestión de contactos, puedes continuar con:</p><h5>Tutorials Relacionados:</h5><ul><li><strong>Crear Listados de Propiedades:</strong> Aprende cómo agregar propiedades y vincularlas a contactos</li><li><strong>Configuración del Portal del Cliente:</strong> Da acceso a clientes a su portal personal</li><li><strong>Integración de Email:</strong> Conecta tu email y automatiza la comunicación</li><li><strong>Reportes:</strong> Genera resúmenes de tus actividades de contacto</li></ul><h5>Funciones Avanzadas para Descubrir:</h5><ul><li>Importación masiva de contactos vía CSV</li><li>Asignación automática de tags basada en comportamiento</li><li>Puntuación de contactos y priorización de leads</li><li>Secuencias de seguimiento automatizadas</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-listing-creation-tutorial",
+    "client-portal-setup-guide",
+    "email-integration-setup"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik contacten importeren uit andere systemen?",
+        "en": "Can I import contacts from other systems?",
+        "es": "¿Puedo importar contactos de otros sistemas?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro CRM ondersteunt CSV import. Ga naar Contacten → Import → Upload CSV. Zorg ervoor dat je CSV de juiste kolomnamen heeft (Voornaam, Achternaam, Email, etc.). Er is ook een template beschikbaar om te downloaden.",
+        "en": "Yes! Tesoro CRM supports CSV import. Go to Contacts → Import → Upload CSV. Make sure your CSV has the correct column names (First Name, Last Name, Email, etc.). There's also a template available to download.",
+        "es": "¡Sí! Tesoro CRM soporta importación CSV. Ve a Contactos → Importar → Subir CSV. Asegúrate de que tu CSV tenga los nombres de columna correctos (Nombre, Apellido, Email, etc.). También hay una plantilla disponible para descargar."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe verwijder ik een contact?",
+        "en": "How do I delete a contact?",
+        "es": "¿Cómo elimino un contacto?"
+      },
+      "answer": {
+        "nl": "Open het contact → Klik op de drie puntjes (⋯) rechtsboven → Kies 'Verwijderen' → Bevestig de actie. Let op: Verwijderde contacten kunnen niet hersteld worden. Overweeg in plaats daarvan een 'Inactief' tag toe te voegen.",
+        "en": "Open the contact → Click the three dots (⋯) in the top right → Choose 'Delete' → Confirm the action. Note: Deleted contacts cannot be restored. Consider adding an 'Inactive' tag instead.",
+        "es": "Abre el contacto → Haz clic en los tres puntos (⋯) en la parte superior derecha → Elige 'Eliminar' → Confirma la acción. Nota: Los contactos eliminados no se pueden restaurar. Considera agregar un tag 'Inactivo' en su lugar."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kunnen meerdere gebruikers hetzelfde contact bewerken?",
+        "en": "Can multiple users edit the same contact?",
+        "es": "¿Pueden múltiples usuarios editar el mismo contacto?"
+      },
+      "answer": {
+        "nl": "Ja, maar Tesoro voorkomt conflicten door real-time sync. Als iemand anders het contact bewerkt, zie je een melding. Je laatste wijziging wordt opgeslagen, maar je krijgt de mogelijkheid om conflicterende wijzigingen te vergelijken.",
+        "en": "Yes, but Tesoro prevents conflicts through real-time sync. If someone else is editing the contact, you'll see a notification. Your latest change is saved, but you get the option to compare conflicting changes.",
+        "es": "Sí, pero Tesoro previene conflictos a través de sincronización en tiempo real. Si alguien más está editando el contacto, verás una notificación. Tu último cambio se guarda, pero obtienes la opción de comparar cambios conflictivos."
+      }
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "id": "account-registration-complete-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-13",
+    "updatedAt": "2025-10-13T21:50:00Z",
+    "authorId": "tesoro-team",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["registration", "getting-started", "account", "setup", "onboarding"],
+    "featured": true,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro crm registratie", "account aanmaken", "tesoro inloggen", "crm account setup", "nieuwe gebruiker"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Account Aanmaken: Volledige Stap-voor-Stap Handleiding",
+      "en": "Account Registration: Complete Step-by-Step Guide",
+      "es": "Registro de Cuenta: Guía Completa Paso a Paso"
+    },
+    "description": {
+      "nl": "Leer hoe je in 5 minuten je Tesoro CRM account aanmaakt en klaar bent om te starten met je eerste deals.",
+      "en": "Learn how to create your Tesoro CRM account in 5 minutes and be ready to start with your first deals.",
+      "es": "Aprende cómo crear tu cuenta de Tesoro CRM en 5 minutos y estar listo para comenzar con tus primeros deals."
+    },
+    "icon": "🎯"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "quick-overview",
+      "variant": "info",
+      "title": {
+        "nl": "📋 Wat je nodig hebt",
+        "en": "📋 What you need",
+        "es": "📋 Qué necesitas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voordat je begint:</strong></p><ul><li>✅ Een geldig emailadres (bij voorkeur zakelijk)</li><li>✅ Je persoonlijke gegevens (voor- en achternaam)</li><li>✅ Je functietitel en bedrijfsnaam</li><li>✅ Een sterk wachtwoord (min. 8 karakters)</li><li>✅ Toegang tot je email voor verificatie</li></ul><p><strong>Tijdsinvestering:</strong> 5 minuten</p>"
+        },
+        "en": {
+          "text": "<p><strong>Before you start:</strong></p><ul><li>✅ A valid email address (preferably business)</li><li>✅ Your personal details (first and last name)</li><li>✅ Your job title and company name</li><li>✅ A strong password (min. 8 characters)</li><li>✅ Access to your email for verification</li></ul><p><strong>Time investment:</strong> 5 minutes</p>"
+        },
+        "es": {
+          "text": "<p><strong>Antes de comenzar:</strong></p><ul><li>✅ Una dirección de email válida (preferiblemente empresarial)</li><li>✅ Tus datos personales (nombre y apellido)</li><li>✅ Tu título de trabajo y nombre de empresa</li><li>✅ Una contraseña fuerte (mín. 8 caracteres)</li><li>✅ Acceso a tu email para verificación</li></ul><p><strong>Inversión de tiempo:</strong> 5 minutos</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "registration-process",
+      "title": {
+        "nl": "Het Registratieproces",
+        "en": "The Registration Process",
+        "es": "El Proceso de Registro"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Persoonlijke Informatie",
+            "en": "Step 1: Personal Information",
+            "es": "Paso 1: Información Personal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Ga naar <strong>app.tesorohq.io/register</strong> en vul in:</p><ul><li><strong>First name:</strong> Je voornaam</li><li><strong>Last name:</strong> Je achternaam</li><li><strong>Email:</strong> Je zakelijke emailadres</li></ul><p><strong>💡 Tip:</strong> Gebruik je zakelijke email - je kunt dit later niet meer wijzigen zonder support hulp.</p><p>Klik op <strong>'Next'</strong> om door te gaan.</p>"
+            },
+            "en": {
+              "text": "<p>Go to <strong>app.tesorohq.io/register</strong> and fill in:</p><ul><li><strong>First name:</strong> Your first name</li><li><strong>Last name:</strong> Your last name</li><li><strong>Email:</strong> Your business email address</li></ul><p><strong>💡 Tip:</strong> Use your business email - you cannot change this later without support help.</p><p>Click <strong>'Next'</strong> to continue.</p>"
+            },
+            "es": {
+              "text": "<p>Ve a <strong>app.tesorohq.io/register</strong> y completa:</p><ul><li><strong>First name:</strong> Tu nombre</li><li><strong>Last name:</strong> Tu apellido</li><li><strong>Email:</strong> Tu dirección de email empresarial</li></ul><p><strong>💡 Tip:</strong> Usa tu email empresarial - no puedes cambiar esto más tarde sin ayuda de soporte.</p><p>Haz clic en <strong>'Next'</strong> para continuar.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Kies Je Rol",
+            "en": "Step 2: Choose Your Role",
+            "es": "Paso 2: Elige Tu Rol"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Vul je functietitel in, bijvoorbeeld:</p><ul><li>Real Estate Agent</li><li>Property Manager</li><li>CEO / Director</li><li>Administrator</li><li>Sales Representative</li></ul><p><strong>Waarom dit belangrijk is:</strong> Tesoro past de interface aan op basis van je rol en toont relevante features.</p>"
+            },
+            "en": {
+              "text": "<p>Enter your job title, for example:</p><ul><li>Real Estate Agent</li><li>Property Manager</li><li>CEO / Director</li><li>Administrator</li><li>Sales Representative</li></ul><p><strong>Why this matters:</strong> Tesoro adapts the interface based on your role and shows relevant features.</p>"
+            },
+            "es": {
+              "text": "<p>Ingresa tu título de trabajo, por ejemplo:</p><ul><li>Real Estate Agent</li><li>Property Manager</li><li>CEO / Director</li><li>Administrator</li><li>Sales Representative</li></ul><p><strong>Por qué esto importa:</strong> Tesoro adapta la interfaz según tu rol y muestra características relevantes.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Bedrijfsinformatie",
+            "en": "Step 3: Company Information",
+            "es": "Paso 3: Información de la Empresa"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Vul je bedrijfsnaam in. Deze naam:</p><ul><li>Wordt gebruikt in communicatie met klanten</li><li>Verschijnt in het klantportaal</li><li>Staat op documenten en rapporten</li></ul><p><strong>Tip:</strong> Je kunt dit later aanpassen in Settings als dat nodig is.</p>"
+            },
+            "en": {
+              "text": "<p>Enter your company name. This name:</p><ul><li>Is used in communication with clients</li><li>Appears in the client portal</li><li>Is shown on documents and reports</li></ul><p><strong>Tip:</strong> You can change this later in Settings if needed.</p>"
+            },
+            "es": {
+              "text": "<p>Ingresa el nombre de tu empresa. Este nombre:</p><ul><li>Se utiliza en la comunicación con clientes</li><li>Aparece en el portal del cliente</li><li>Se muestra en documentos e informes</li></ul><p><strong>Tip:</strong> Puedes cambiar esto más tarde en Settings si es necesario.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Email Verificatie",
+            "en": "Step 4: Email Verification",
+            "es": "Paso 4: Verificación de Email"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Je ontvangt direct een email met een <strong>6-cijferige verificatiecode</strong>.</p><p><strong>De code invoeren:</strong></p><ol><li>Check je inbox (en spam folder!)</li><li>Email subject: 'Account registration at Tesoro'</li><li>Kopieer de 6-cijferige code</li><li>Vul deze in op het verificatiescherm</li><li>Klik 'Verify'</li></ol><p><strong>⏱️ Geen email ontvangen?</strong> Wacht 2-3 minuten en klik dan op 'Resend code'.</p>"
+            },
+            "en": {
+              "text": "<p>You'll immediately receive an email with a <strong>6-digit verification code</strong>.</p><p><strong>Entering the code:</strong></p><ol><li>Check your inbox (and spam folder!)</li><li>Email subject: 'Account registration at Tesoro'</li><li>Copy the 6-digit code</li><li>Enter it on the verification screen</li><li>Click 'Verify'</li></ol><p><strong>⏱️ No email received?</strong> Wait 2-3 minutes and then click 'Resend code'.</p>"
+            },
+            "es": {
+              "text": "<p>Recibirás inmediatamente un email con un <strong>código de verificación de 6 dígitos</strong>.</p><p><strong>Ingresando el código:</strong></p><ol><li>Revisa tu bandeja de entrada (¡y carpeta de spam!)</li><li>Asunto del email: 'Account registration at Tesoro'</li><li>Copia el código de 6 dígitos</li><li>Ingrésalo en la pantalla de verificación</li><li>Haz clic en 'Verify'</li></ol><p><strong>⏱️ ¿No recibiste el email?</strong> Espera 2-3 minutos y luego haz clic en 'Resend code'.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Wachtwoord Instellen",
+            "en": "Step 5: Set Password",
+            "es": "Paso 5: Establecer Contraseña"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Wachtwoordeisen:</strong></p><ul><li>Minimaal 8 karakters</li><li>Minimaal 1 kleine letter (a-z)</li><li>Minimaal 1 hoofdletter (A-Z)</li><li>Minimaal 1 speciaal teken (!@#$%^&*)</li><li>Minimaal 1 cijfer (0-9)</li></ul><p><strong>Veilige voorbeelden:</strong></p><ul><li>✅ TesoroStart2025!</li><li>✅ MyHouse#123</li><li>✅ RealEstate@Pro</li><li>❌ password123 (te zwak)</li></ul><p>Vul je wachtwoord twee keer in en klik op <strong>'Register'</strong>.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Password requirements:</strong></p><ul><li>Minimum 8 characters</li><li>At least 1 lowercase letter (a-z)</li><li>At least 1 uppercase letter (A-Z)</li><li>At least 1 special character (!@#$%^&*)</li><li>At least 1 number (0-9)</li></ul><p><strong>Safe examples:</strong></p><ul><li>✅ TesoroStart2025!</li><li>✅ MyHouse#123</li><li>✅ RealEstate@Pro</li><li>❌ password123 (too weak)</li></ul><p>Enter your password twice and click <strong>'Register'</strong>.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Requisitos de contraseña:</strong></p><ul><li>Mínimo 8 caracteres</li><li>Al menos 1 letra minúscula (a-z)</li><li>Al menos 1 letra mayúscula (A-Z)</li><li>Al menos 1 carácter especial (!@#$%^&*)</li><li>Al menos 1 número (0-9)</li></ul><p><strong>Ejemplos seguros:</strong></p><ul><li>✅ TesoroStart2025!</li><li>✅ MyHouse#123</li><li>✅ RealEstate@Pro</li><li>❌ password123 (demasiado débil)</li></ul><p>Ingresa tu contraseña dos veces y haz clic en <strong>'Register'</strong>.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "success-message",
+      "variant": "success",
+      "title": {
+        "nl": "🎉 Gefeliciteerd!",
+        "en": "🎉 Congratulations!",
+        "es": "🎉 ¡Felicitaciones!"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Je account is succesvol aangemaakt!</strong></p><p>Je wordt automatisch doorgestuurd naar het login scherm op <strong>app.tesorohq.io</strong></p><p><strong>Volgende stappen:</strong></p><ul><li>Log in met je emailadres en wachtwoord</li><li>Volg de onboarding tour</li><li>Voeg je eerste contacten toe</li><li>Bekijk de kennisbank voor meer tutorials</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Your account has been successfully created!</strong></p><p>You'll be automatically redirected to the login screen on <strong>app.tesorohq.io</strong></p><p><strong>Next steps:</strong></p><ul><li>Log in with your email and password</li><li>Follow the onboarding tour</li><li>Add your first contacts</li><li>Check the knowledge base for more tutorials</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>¡Tu cuenta ha sido creada exitosamente!</strong></p><p>Serás redirigido automáticamente a la pantalla de inicio de sesión en <strong>app.tesorohq.io</strong></p><p><strong>Próximos pasos:</strong></p><ul><li>Inicia sesión con tu email y contraseña</li><li>Sigue el tour de incorporación</li><li>Agrega tus primeros contactos</li><li>Consulta la base de conocimientos para más tutoriales</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "troubleshooting",
+      "title": {
+        "nl": "🔧 Veelvoorkomende Problemen",
+        "en": "🔧 Common Issues",
+        "es": "🔧 Problemas Comunes"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Geen verificatiecode ontvangen?</strong></p><ol><li>Check je spam/junk folder</li><li>Wacht 2-3 minuten (emails kunnen vertraagd zijn)</li><li>Klik op 'Resend code'</li><li>Controleer of je emailadres correct is gespeld</li></ol><p><strong>Wachtwoord voldoet niet aan eisen?</strong></p><p>Zorg ervoor dat je wachtwoord alle vereiste karakters bevat. Gebruik een combinatie van hoofdletters, kleine letters, cijfers EN speciale tekens.</p><p><strong>Registratie knop reageert niet?</strong></p><p>Dit gebeurt als niet alle velden correct zijn ingevuld. Controleer of:</p><ul><li>Alle verplichte velden (*) zijn ingevuld</li><li>Je emailadres geldig is</li><li>Beide wachtwoorden identiek zijn</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>No verification code received?</strong></p><ol><li>Check your spam/junk folder</li><li>Wait 2-3 minutes (emails can be delayed)</li><li>Click 'Resend code'</li><li>Verify your email address is spelled correctly</li></ol><p><strong>Password doesn't meet requirements?</strong></p><p>Make sure your password contains all required characters. Use a combination of uppercase, lowercase, numbers AND special characters.</p><p><strong>Registration button not responding?</strong></p><p>This happens when not all fields are filled correctly. Check if:</p><ul><li>All required fields (*) are filled in</li><li>Your email address is valid</li><li>Both passwords are identical</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>¿No recibiste el código de verificación?</strong></p><ol><li>Revisa tu carpeta de spam/correo no deseado</li><li>Espera 2-3 minutos (los emails pueden retrasarse)</li><li>Haz clic en 'Resend code'</li><li>Verifica que tu dirección de email esté escrita correctamente</li></ol><p><strong>¿La contraseña no cumple los requisitos?</strong></p><p>Asegúrate de que tu contraseña contenga todos los caracteres requeridos. Usa una combinación de mayúsculas, minúsculas, números Y caracteres especiales.</p><p><strong>¿El botón de registro no responde?</strong></p><p>Esto sucede cuando no todos los campos están completados correctamente. Verifica si:</p><ul><li>Todos los campos obligatorios (*) están completados</li><li>Tu dirección de email es válida</li><li>Ambas contraseñas son idénticas</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "basic-contact-management-tutorial",
+    "property-management-tutorial",
+    "your-first-5k-deal-7-days"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik mijn emailadres later wijzigen?",
+        "en": "Can I change my email address later?",
+        "es": "¿Puedo cambiar mi dirección de email más tarde?"
+      },
+      "answer": {
+        "nl": "Ja, maar dit vereist hulp van support. Neem contact op via support@tesorohq.io met je oude en nieuwe emailadres.",
+        "en": "Yes, but this requires support help. Contact us via support@tesorohq.io with your old and new email address.",
+        "es": "Sí, pero esto requiere ayuda de soporte. Contáctanos vía support@tesorohq.io con tu dirección de email antigua y nueva."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik mijn wachtwoord vergeet?",
+        "en": "What if I forget my password?",
+        "es": "¿Qué pasa si olvido mi contraseña?"
+      },
+      "answer": {
+        "nl": "Klik op 'Forgot password?' op de loginpagina. Je ontvangt een reset link die 1 uur geldig is.",
+        "en": "Click 'Forgot password?' on the login page. You'll receive a reset link valid for 1 hour.",
+        "es": "Haz clic en 'Forgot password?' en la página de inicio de sesión. Recibirás un enlace de restablecimiento válido por 1 hora."
+      }
+    },
+    {
+      "question": {
+        "nl": "Is mijn data veilig tijdens registratie?",
+        "en": "Is my data safe during registration?",
+        "es": "¿Están seguros mis datos durante el registro?"
+      },
+      "answer": {
+        "nl": "Ja, we gebruiken SSL/TLS encryptie voor alle data. Je wachtwoord wordt gehasht en nooit in platte tekst opgeslagen. We voldoen aan GDPR.",
+        "en": "Yes, we use SSL/TLS encryption for all data. Your password is hashed and never stored in plain text. We comply with GDPR.",
+        "es": "Sí, usamos encriptación SSL/TLS para todos los datos. Tu contraseña es hasheada y nunca se almacena en texto plano. Cumplimos con GDPR."
+      }
+    }
+  ]
+}

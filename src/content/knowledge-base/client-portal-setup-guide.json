@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "id": "client-portal-setup-guide",
+    "version": "1.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T22:00:00Z",
+    "authorId": "maria-perez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["client-portal", "tutorial", "client-communication", "setup-guide", "crm-basics"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": true,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop",
+    "keywords": ["client portal setup", "klanten portal Tesoro", "client toegang CRM", "portal configuratie", "client communicatie"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Client Portal Setup in Tesoro CRM: Complete Configuratie Gids",
+      "en": "Client Portal Setup in Tesoro CRM: Complete Configuration Guide",
+      "es": "Configuración del Portal del Cliente en Tesoro CRM: Guía Completa de Configuración"
+    },
+    "description": {
+      "nl": "Leer stap-voor-stap hoe je de client portal configureert, klanten toegang geeft, en de portal optimaliseert voor betere client ervaring en communicatie.",
+      "en": "Learn step-by-step how to configure the client portal, give clients access, and optimize the portal for better client experience and communication.",
+      "es": "Aprende paso a paso cómo configurar el portal del cliente, dar acceso a clientes, y optimizar el portal para mejor experiencia del cliente y comunicación."
+    },
+    "icon": "🌐"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "tutorial-overview",
+      "variant": "info",
+      "title": {
+        "nl": "📋 Wat je leert in deze tutorial",
+        "en": "📋 What you'll learn in this tutorial",
+        "es": "📋 Qué aprenderás en este tutorial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Na het voltooien van deze tutorial kun je:</p><ul><li>✅ De client portal activeren en configureren</li><li>✅ Portal branding en styling aanpassen</li><li>✅ Klanten toegang geven tot hun persoonlijke portal</li><li>✅ Portal content en documenten beheren</li><li>✅ Communicatie via de portal faciliteren</li><li>✅ Portal gebruiksstatistieken bekijken</li><li>✅ Veelvoorkomende portal problemen oplossen</li></ul><p><strong>Tijd nodig:</strong> Ongeveer 25-30 minuten configuratie tijd</p><p><strong>Vereisten:</strong> Admin rechten in Tesoro CRM, minimaal 1 actieve client contact</p>"
+        },
+        "en": {
+          "text": "<p>After completing this tutorial you can:</p><ul><li>✅ Activate and configure the client portal</li><li>✅ Customize portal branding and styling</li><li>✅ Give clients access to their personal portal</li><li>✅ Manage portal content and documents</li><li>✅ Facilitate communication through the portal</li><li>✅ View portal usage statistics</li><li>✅ Troubleshoot common portal issues</li></ul><p><strong>Time needed:</strong> About 25-30 minutes configuration time</p><p><strong>Prerequisites:</strong> Admin rights in Tesoro CRM, at least 1 active client contact</p>"
+        },
+        "es": {
+          "text": "<p>Después de completar este tutorial puedes:</p><ul><li>✅ Activar y configurar el portal del cliente</li><li>✅ Personalizar branding y estilo del portal</li><li>✅ Dar acceso a clientes a su portal personal</li><li>✅ Gestionar contenido y documentos del portal</li><li>✅ Facilitar comunicación a través del portal</li><li>✅ Ver estadísticas de uso del portal</li><li>✅ Solucionar problemas comunes del portal</li></ul><p><strong>Tiempo necesario:</strong> Aproximadamente 25-30 minutos de tiempo de configuración</p><p><strong>Prerrequisitos:</strong> Derechos de admin en Tesoro CRM, al menos 1 contacto de cliente activo</p>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "client-portal-overview",
+      "title": {
+        "nl": "🎥 Client Portal Overzicht & Voordelen",
+        "en": "🎥 Client Portal Overview & Benefits",
+        "es": "🎥 Resumen del Portal del Cliente y Beneficios"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "7-minuten introductie: Wat is de client portal en waarom je het wilt gebruiken",
+        "en": "7-minute introduction: What is the client portal and why you want to use it",
+        "es": "Introducción de 7 minutos: Qué es el portal del cliente y por qué quieres usarlo"
+      },
+      "duration": "7:24"
+    },
+
+    {
+      "type": "text",
+      "id": "what-is-client-portal",
+      "title": {
+        "nl": "🌐 Wat is de Tesoro Client Portal?",
+        "en": "🌐 What is the Tesoro Client Portal?",
+        "es": "🌐 ¿Qué es el Portal del Cliente de Tesoro?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De Tesoro Client Portal is een beveiligde, gepersonaliseerde webomgeving waar je klanten:</p><ul><li><strong>📄 Documenten kunnen bekijken:</strong> Contracten, rapporten, foto's</li><li><strong>🏠 Property updates ontvangen:</strong> Status wijzigingen, nieuwe foto's, bezichtigingen</li><li><strong>💬 Direct kunnen communiceren:</strong> Berichten sturen zonder email</li><li><strong>📅 Afspraken kunnen inzien:</strong> Bezichtigingen, meetings, deadlines</li><li><strong>📊 Voortgang kunnen volgen:</strong> Deal status, proces stappen</li></ul><h4>Voordelen voor jou als makelaar:</h4><ul><li><strong>⏰ Tijdsbesparing:</strong> Minder telefoontjes en emails</li><li><strong>🔄 Automatische updates:</strong> Klanten zijn altijd op de hoogte</li><li><strong>💼 Professionele uitstraling:</strong> Modern en gebruiksvriendelijk platform</li><li><strong>📈 Betere client satisfaction:</strong> Transparantie en toegankelijkheid</li></ul><h4>Voordelen voor je klanten:</h4><ul><li><strong>🔍 Altijd toegang:</strong> 24/7 inzicht in hun deal</li><li><strong>📱 Mobile friendly:</strong> Werkt op alle apparaten</li><li><strong>🔒 Veilig:</strong> Persoonlijke login en encryptie</li><li><strong>📋 Overzichtelijk:</strong> Alle info op één plek</li></ul>"
+        },
+        "en": {
+          "text": "<p>The Tesoro Client Portal is a secure, personalized web environment where your clients can:</p><ul><li><strong>📄 View documents:</strong> Contracts, reports, photos</li><li><strong>🏠 Receive property updates:</strong> Status changes, new photos, viewings</li><li><strong>💬 Communicate directly:</strong> Send messages without email</li><li><strong>📅 View appointments:</strong> Viewings, meetings, deadlines</li><li><strong>📊 Track progress:</strong> Deal status, process steps</li></ul><h4>Benefits for you as an agent:</h4><ul><li><strong>⏰ Time saving:</strong> Fewer phone calls and emails</li><li><strong>🔄 Automatic updates:</strong> Clients are always informed</li><li><strong>💼 Professional appearance:</strong> Modern and user-friendly platform</li><li><strong>📈 Better client satisfaction:</strong> Transparency and accessibility</li></ul><h4>Benefits for your clients:</h4><ul><li><strong>🔍 Always access:</strong> 24/7 insight into their deal</li><li><strong>📱 Mobile friendly:</strong> Works on all devices</li><li><strong>🔒 Secure:</strong> Personal login and encryption</li><li><strong>📋 Clear overview:</strong> All info in one place</li></ul>"
+        },
+        "es": {
+          "text": "<p>El Portal del Cliente de Tesoro es un entorno web seguro y personalizado donde tus clientes pueden:</p><ul><li><strong>📄 Ver documentos:</strong> Contratos, reportes, fotos</li><li><strong>🏠 Recibir actualizaciones de propiedades:</strong> Cambios de estado, nuevas fotos, visitas</li><li><strong>💬 Comunicarse directamente:</strong> Enviar mensajes sin email</li><li><strong>📅 Ver citas:</strong> Visitas, reuniones, fechas límite</li><li><strong>📊 Hacer seguimiento del progreso:</strong> Estado del deal, pasos del proceso</li></ul><h4>Beneficios para ti como agente:</h4><ul><li><strong>⏰ Ahorro de tiempo:</strong> Menos llamadas telefónicas y emails</li><li><strong>🔄 Actualizaciones automáticas:</strong> Los clientes siempre están informados</li><li><strong>💼 Apariencia profesional:</strong> Plataforma moderna y amigable</li><li><strong>📈 Mejor satisfacción del cliente:</strong> Transparencia y accesibilidad</li></ul><h4>Beneficios para tus clientes:</h4><ul><li><strong>🔍 Acceso siempre:</strong> Visión 24/7 de su deal</li><li><strong>📱 Amigable para móviles:</strong> Funciona en todos los dispositivos</li><li><strong>🔒 Seguro:</strong> Login personal y encriptación</li><li><strong>📋 Vista clara:</strong> Toda la info en un lugar</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "portal-activation",
+      "title": {
+        "nl": "🚀 Stap 1: Client Portal Activeren",
+        "en": "🚀 Step 1: Activating Client Portal",
+        "es": "🚀 Paso 1: Activar Portal del Cliente"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Ga naar Portal Instellingen",
+            "en": "Go to Portal Settings",
+            "es": "Ir a Configuración del Portal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Klik op je profiel foto rechtsboven in Tesoro CRM</p><p>2. Selecteer <strong>\"Instellingen\"</strong> uit het dropdown menu</p><p>3. Ga naar de <strong>\"Client Portal\"</strong> sectie in het linker menu</p><p>4. Je ziet nu het portal overzicht dashboard</p><p><strong>🔐 Admin Rechten Vereist:</strong> Als je de Client Portal optie niet ziet, neem dan contact op met je account administrator om de juiste rechten te krijgen.</p><p><strong>📊 Dashboard Overzicht:</strong> Hier zie je statistieken zoals aantal actieve portals, laatste logins, en populaire content.</p>"
+            },
+            "en": {
+              "text": "<p>1. Click on your profile photo in the top right of Tesoro CRM</p><p>2. Select <strong>\"Settings\"</strong> from the dropdown menu</p><p>3. Go to the <strong>\"Client Portal\"</strong> section in the left menu</p><p>4. You now see the portal overview dashboard</p><p><strong>🔐 Admin Rights Required:</strong> If you don't see the Client Portal option, contact your account administrator to get the right permissions.</p><p><strong>📊 Dashboard Overview:</strong> Here you see statistics like number of active portals, last logins, and popular content.</p>"
+            },
+            "es": {
+              "text": "<p>1. Haz clic en tu foto de perfil en la parte superior derecha de Tesoro CRM</p><p>2. Selecciona <strong>\"Configuración\"</strong> del menú dropdown</p><p>3. Ve a la sección <strong>\"Portal del Cliente\"</strong> en el menú izquierdo</p><p>4. Ahora ves el dashboard de resumen del portal</p><p><strong>🔐 Derechos de Admin Requeridos:</strong> Si no ves la opción de Portal del Cliente, contacta a tu administrador de cuenta para obtener los permisos correctos.</p><p><strong>📊 Resumen del Dashboard:</strong> Aquí ves estadísticas como número de portales activos, últimos logins, y contenido popular.</p>"
+            }
+          },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
+            "alt": {
+              "nl": "Client Portal instellingen pagina in Tesoro CRM",
+              "en": "Client Portal settings page in Tesoro CRM",
+              "es": "Página de configuración del Portal del Cliente en Tesoro CRM"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Portal Functionaliteit Inschakelen",
+            "en": "Enable Portal Functionality",
+            "es": "Habilitar Funcionalidad del Portal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Klik op de <strong>\"Client Portal Activeren\"</strong> schakelaar bovenaan de pagina</p><p>2. De schakelaar wordt groen en toont \"Actief\"</p><p>3. Er verschijnt een bevestiging popup met je portal URL</p><p>4. Noteer deze URL - dit is het adres waar klanten inloggen</p><p><strong>🌐 Je Portal URL:</strong> Typisch iets als <code>portal.tesoro-crm.nl/jouwbedrijf</code></p><p><strong>⚠️ Belangrijke Note:</strong> Eenmaal geactiveerd krijg je een 14-dagen trial periode. Daarna zijn er kosten verbonden aan het aantal actieve portal gebruikers.</p><p><strong>🎨 Eerste Configuratie:</strong> Na activatie wordt automatisch een basis portal setup aangemaakt met je bedrijfsgegevens.</p>"
+            },
+            "en": {
+              "text": "<p>1. Click on the <strong>\"Activate Client Portal\"</strong> toggle at the top of the page</p><p>2. The toggle turns green and shows \"Active\"</p><p>3. A confirmation popup appears with your portal URL</p><p>4. Note this URL - this is the address where clients log in</p><p><strong>🌐 Your Portal URL:</strong> Typically something like <code>portal.tesoro-crm.nl/yourcompany</code></p><p><strong>⚠️ Important Note:</strong> Once activated you get a 14-day trial period. After that there are costs associated with the number of active portal users.</p><p><strong>🎨 Initial Configuration:</strong> After activation, a basic portal setup is automatically created with your company details.</p>"
+            },
+            "es": {
+              "text": "<p>1. Haz clic en el interruptor <strong>\"Activar Portal del Cliente\"</strong> en la parte superior de la página</p><p>2. El interruptor se vuelve verde y muestra \"Activo\"</p><p>3. Aparece un popup de confirmación con tu URL del portal</p><p>4. Anota esta URL - esta es la dirección donde los clientes inician sesión</p><p><strong>🌐 Tu URL del Portal:</strong> Típicamente algo como <code>portal.tesoro-crm.nl/tuempresa</code></p><p><strong>⚠️ Nota Importante:</strong> Una vez activado obtienes un período de prueba de 14 días. Después hay costos asociados con el número de usuarios activos del portal.</p><p><strong>🎨 Configuración Inicial:</strong> Después de la activación, se crea automáticamente una configuración básica del portal con los detalles de tu empresa.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Basis Configuratie Controleren",
+            "en": "Check Basic Configuration",
+            "es": "Verificar Configuración Básica"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na activatie controleert Tesoro automatisch of je basis gegevens compleet zijn:</p><p><strong>✅ Automatisch Ingevuld:</strong></p><ul><li><strong>Bedrijfsnaam:</strong> Uit je account profiel</li><li><strong>Contact informatie:</strong> Email en telefoon</li><li><strong>Logo:</strong> Als je dit hebt geüpload in je profiel</li><li><strong>Kleuren:</strong> Standaard Tesoro branding</li></ul><p><strong>🔧 Handmatig Aan Te Vullen:</strong></p><ul><li><strong>Welkom bericht:</strong> Persoonlijke boodschap voor klanten</li><li><strong>Support contactgegevens:</strong> Wie klanten kunnen contact bij vragen</li><li><strong>Portal naam:</strong> Hoe je portal heet (bijv. \"Mijn Property Portal\")</li></ul><p><strong>💡 Tip:</strong> Klik op \"Voorbeeld Bekijken\" om te zien hoe je portal er voor klanten uit ziet.</p>"
+            },
+            "en": {
+              "text": "<p>After activation Tesoro automatically checks if your basic information is complete:</p><p><strong>✅ Automatically Filled:</strong></p><ul><li><strong>Company name:</strong> From your account profile</li><li><strong>Contact information:</strong> Email and phone</li><li><strong>Logo:</strong> If you've uploaded this in your profile</li><li><strong>Colors:</strong> Default Tesoro branding</li></ul><p><strong>🔧 To Fill Manually:</strong></p><ul><li><strong>Welcome message:</strong> Personal message for clients</li><li><strong>Support contact details:</strong> Who clients can contact with questions</li><li><strong>Portal name:</strong> What your portal is called (e.g. \"My Property Portal\")</li></ul><p><strong>💡 Tip:</strong> Click \"View Preview\" to see how your portal looks to clients.</p>"
+            },
+            "es": {
+              "text": "<p>Después de la activación Tesoro verifica automáticamente si tu información básica está completa:</p><p><strong>✅ Completado Automáticamente:</strong></p><ul><li><strong>Nombre de la empresa:</strong> De tu perfil de cuenta</li><li><strong>Información de contacto:</strong> Email y teléfono</li><li><strong>Logo:</strong> Si lo has subido en tu perfil</li><li><strong>Colores:</strong> Branding predeterminado de Tesoro</li></ul><p><strong>🔧 Para Completar Manualmente:</strong></p><ul><li><strong>Mensaje de bienvenida:</strong> Mensaje personal para clientes</li><li><strong>Detalles de contacto de soporte:</strong> A quién pueden contactar los clientes con preguntas</li><li><strong>Nombre del portal:</strong> Cómo se llama tu portal (ej. \"Mi Portal de Propiedades\")</li></ul><p><strong>💡 Tip:</strong> Haz clic en \"Ver Vista Previa\" para ver cómo se ve tu portal para los clientes.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "portal-branding",
+      "title": {
+        "nl": "🎨 Stap 2: Portal Branding en Styling",
+        "en": "🎨 Step 2: Portal Branding and Styling",
+        "es": "🎨 Paso 2: Branding y Estilo del Portal"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Logo en Bedrijfsgegevens Aanpassen",
+            "en": "Customize Logo and Company Details",
+            "es": "Personalizar Logo y Detalles de la Empresa"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Ga naar <strong>\"Branding\"</strong> tab in de portal instellingen</p><p>2. Klik op <strong>\"Upload Logo\"</strong> om je bedrijfslogo toe te voegen</p><p>3. Update je bedrijfsgegevens als deze niet correct zijn:</p><ul><li><strong>Bedrijfsnaam:</strong> Zoals klanten je kennen</li><li><strong>Tagline:</strong> Korte beschrijving van je service</li><li><strong>Contact informatie:</strong> Hoofd telefoon en email</li><li><strong>Adres:</strong> Bedrijfsadres voor vertrouwen</li></ul><p><strong>📏 Logo Specificaties:</strong></p><ul><li><strong>Format:</strong> PNG, JPG, of SVG</li><li><strong>Grootte:</strong> Minimaal 200x80 pixels, maximaal 800x200 pixels</li><li><strong>Achtergrond:</strong> Bij voorkeur transparant (PNG)</li><li><strong>Kleur:</strong> Zorg dat het goed leesbaar is op lichte achtergrond</li></ul>"
+            },
+            "en": {
+              "text": "<p>1. Go to <strong>\"Branding\"</strong> tab in portal settings</p><p>2. Click on <strong>\"Upload Logo\"</strong> to add your company logo</p><p>3. Update your company details if they're not correct:</p><ul><li><strong>Company name:</strong> As clients know you</li><li><strong>Tagline:</strong> Short description of your service</li><li><strong>Contact information:</strong> Main phone and email</li><li><strong>Address:</strong> Business address for trust</li></ul><p><strong>📏 Logo Specifications:</strong></p><ul><li><strong>Format:</strong> PNG, JPG, or SVG</li><li><strong>Size:</strong> Minimum 200x80 pixels, maximum 800x200 pixels</li><li><strong>Background:</strong> Preferably transparent (PNG)</li><li><strong>Color:</strong> Ensure it's readable on light background</li></ul>"
+            },
+            "es": {
+              "text": "<p>1. Ve a la pestaña <strong>\"Branding\"</strong> en la configuración del portal</p><p>2. Haz clic en <strong>\"Subir Logo\"</strong> para agregar el logo de tu empresa</p><p>3. Actualiza los detalles de tu empresa si no son correctos:</p><ul><li><strong>Nombre de la empresa:</strong> Como te conocen los clientes</li><li><strong>Tagline:</strong> Descripción corta de tu servicio</li><li><strong>Información de contacto:</strong> Teléfono y email principal</li><li><strong>Dirección:</strong> Dirección comercial para confianza</li></ul><p><strong>📏 Especificaciones del Logo:</strong></p><ul><li><strong>Formato:</strong> PNG, JPG, o SVG</li><li><strong>Tamaño:</strong> Mínimo 200x80 píxeles, máximo 800x200 píxeles</li><li><strong>Fondo:</strong> Preferiblemente transparente (PNG)</li><li><strong>Color:</strong> Asegúrate de que sea legible en fondo claro</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Kleuren en Styling Kiezen",
+            "en": "Choose Colors and Styling",
+            "es": "Elegir Colores y Estilo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Kleur Opties:</strong></p><ol><li>Kies <strong>\"Primaire Kleur\"</strong> - gebruikt voor knoppen en links</li><li>Kies <strong>\"Secundaire Kleur\"</strong> - gebruikt voor accenten</li><li>Kies <strong>\"Header Achtergrond\"</strong> - kleur van de bovenkant</li></ol><p><strong>🎨 Vooraf Ingestelde Thema's:</strong></p><ul><li><strong>Professional Blauw:</strong> Traditioneel en vertrouwd</li><li><strong>Modern Groen:</strong> Fris en milieuvriendelijk</li><li><strong>Elegante Grijs:</strong> Strak en tijdloos</li><li><strong>Luxe Goud:</strong> Premium en exclusief</li><li><strong>Custom:</strong> Je eigen kleuren kiezen</li></ul><p><strong>💡 Tips voor Kleurkeuze:</strong></p><ul><li>Gebruik maximaal 3 hoofdkleuren</li><li>Zorg voor voldoende contrast voor leesbaarheid</li><li>Test hoe het eruit ziet op verschillende apparaten</li><li>Houd rekening met je bestaande marketing materiaal</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Color Options:</strong></p><ol><li>Choose <strong>\"Primary Color\"</strong> - used for buttons and links</li><li>Choose <strong>\"Secondary Color\"</strong> - used for accents</li><li>Choose <strong>\"Header Background\"</strong> - color of the top section</li></ol><p><strong>🎨 Preset Themes:</strong></p><ul><li><strong>Professional Blue:</strong> Traditional and trusted</li><li><strong>Modern Green:</strong> Fresh and eco-friendly</li><li><strong>Elegant Grey:</strong> Sleek and timeless</li><li><strong>Luxury Gold:</strong> Premium and exclusive</li><li><strong>Custom:</strong> Choose your own colors</li></ul><p><strong>💡 Tips for Color Choice:</strong></p><ul><li>Use maximum 3 main colors</li><li>Ensure sufficient contrast for readability</li><li>Test how it looks on different devices</li><li>Consider your existing marketing materials</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Opciones de Color:</strong></p><ol><li>Elige <strong>\"Color Primario\"</strong> - usado para botones y enlaces</li><li>Elige <strong>\"Color Secundario\"</strong> - usado para acentos</li><li>Elige <strong>\"Fondo del Header\"</strong> - color de la sección superior</li></ol><p><strong>🎨 Temas Preestablecidos:</strong></p><ul><li><strong>Azul Profesional:</strong> Tradicional y confiable</li><li><strong>Verde Moderno:</strong> Fresco y eco-amigable</li><li><strong>Gris Elegante:</strong> Elegante y atemporal</li><li><strong>Oro Luxury:</strong> Premium y exclusivo</li><li><strong>Personalizado:</strong> Elige tus propios colores</li></ul><p><strong>💡 Consejos para Elección de Color:</strong></p><ul><li>Usa máximo 3 colores principales</li><li>Asegura suficiente contraste para legibilidad</li><li>Prueba cómo se ve en diferentes dispositivos</li><li>Considera tus materiales de marketing existentes</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Welkom Bericht Personaliseren",
+            "en": "Personalize Welcome Message",
+            "es": "Personalizar Mensaje de Bienvenida"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom een welkom bericht belangrijk is:</strong> Het is het eerste wat klanten zien en zet de toon voor hun ervaring.</p><p><strong>Welkom Bericht Aanpassen:</strong></p><ol><li>Ga naar de <strong>\"Content\"</strong> tab</li><li>Klik in het <strong>\"Welkom Bericht\"</strong> veld</li><li>Schrijf een persoonlijke, warme boodschap</li><li>Gebruik de rich text editor voor opmaak</li></ol><p><strong>📝 Voorbeeld Welkom Berichten:</strong></p><div class=\"example-content\"><h6>Voor Verkoop:</h6><p>\"Welkom bij je persoonlijke property portal! Hier vind je alle informatie over de verkoop van je woning. Van foto updates tot contracten - alles op één plek. Bij vragen ben ik altijd bereikbaar.\"</p><h6>Voor Aankoop:</h6><p>\"Welkom in je property zoektocht portal! Hier delen we alle bezichtigingen, rapporten en informatie over woningen die perfect bij je passen. Laten we samen je droomhuis vinden!\"</p></div><p><strong>💡 Best Practices:</strong></p><ul><li>Houd het kort maar persoonlijk (50-150 woorden)</li><li>Vermeld wat ze in de portal kunnen verwachten</li><li>Geef duidelijk aan hoe ze contact kunnen opnemen</li><li>Gebruik een enthousiaste maar professionele toon</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Why a welcome message is important:</strong> It's the first thing clients see and sets the tone for their experience.</p><p><strong>Customize Welcome Message:</strong></p><ol><li>Go to the <strong>\"Content\"</strong> tab</li><li>Click in the <strong>\"Welcome Message\"</strong> field</li><li>Write a personal, warm message</li><li>Use the rich text editor for formatting</li></ol><p><strong>📝 Example Welcome Messages:</strong></p><div class=\"example-content\"><h6>For Sales:</h6><p>\"Welcome to your personal property portal! Here you'll find all information about selling your home. From photo updates to contracts - everything in one place. If you have questions, I'm always available.\"</p><h6>For Purchase:</h6><p>\"Welcome to your property search portal! Here we share all viewings, reports and information about homes that perfectly match your needs. Let's find your dream home together!\"</p></div><p><strong>💡 Best Practices:</strong></p><ul><li>Keep it short but personal (50-150 words)</li><li>Mention what they can expect in the portal</li><li>Clearly state how they can get in touch</li><li>Use an enthusiastic but professional tone</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué un mensaje de bienvenida es importante:</strong> Es lo primero que ven los clientes y establece el tono para su experiencia.</p><p><strong>Personalizar Mensaje de Bienvenida:</strong></p><ol><li>Ve a la pestaña <strong>\"Contenido\"</strong></li><li>Haz clic en el campo <strong>\"Mensaje de Bienvenida\"</strong></li><li>Escribe un mensaje personal y cálido</li><li>Usa el editor de texto enriquecido para formato</li></ol><p><strong>📝 Ejemplos de Mensajes de Bienvenida:</strong></p><div class=\"example-content\"><h6>Para Venta:</h6><p>\"¡Bienvenido a tu portal personal de propiedades! Aquí encontrarás toda la información sobre la venta de tu casa. Desde actualizaciones de fotos hasta contratos - todo en un lugar. Si tienes preguntas, siempre estoy disponible.\"</p><h6>Para Compra:</h6><p>\"¡Bienvenido a tu portal de búsqueda de propiedades! Aquí compartimos todas las visitas, reportes e información sobre casas que se ajustan perfectamente a tus necesidades. ¡Encontremos juntos la casa de tus sueños!\"</p></div><p><strong>💡 Mejores Prácticas:</strong></p><ul><li>Manténlo corto pero personal (50-150 palabras)</li><li>Menciona qué pueden esperar en el portal</li><li>Indica claramente cómo pueden ponerse en contacto</li><li>Usa un tono entusiasta pero profesional</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "client-access",
+      "title": {
+        "nl": "👥 Stap 3: Klanten Toegang Geven",
+        "en": "👥 Step 3: Giving Clients Access",
+        "es": "👥 Paso 3: Dar Acceso a Clientes"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Selecteer Klant Contact",
+            "en": "Select Client Contact",
+            "es": "Seleccionar Contacto del Cliente"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Ga terug naar <strong>\"Client Portal\"</strong> hoofdpagina</p><p>2. Klik op <strong>\"+ Nieuwe Portal Toegang\"</strong></p><p>3. Zoek en selecteer het contact dat toegang moet krijgen</p><p>4. Het contact moet al bestaan in je CRM contactenlijst</p><p><strong>📋 Vereisten voor Portal Toegang:</strong></p><ul><li><strong>Geldig email adres:</strong> Vereist voor login credentials</li><li><strong>Contact type:</strong> Moet ingesteld zijn als 'Klant' of 'Actieve Lead'</li><li><strong>Complete naam:</strong> Voor en achternaam moeten ingevuld zijn</li><li><strong>Gekoppeld aan property:</strong> Aanbevolen maar niet verplicht</li></ul><p><strong>💡 Tip:</strong> Als je contact er niet tussen staat, ga dan eerst naar Contacten om de basisgegevens compleet te maken.</p>"
+            },
+            "en": {
+              "text": "<p>1. Go back to <strong>\"Client Portal\"</strong> main page</p><p>2. Click on <strong>\"+ New Portal Access\"</strong></p><p>3. Search and select the contact that should get access</p><p>4. The contact must already exist in your CRM contact list</p><p><strong>📋 Requirements for Portal Access:</strong></p><ul><li><strong>Valid email address:</strong> Required for login credentials</li><li><strong>Contact type:</strong> Must be set as 'Client' or 'Active Lead'</li><li><strong>Complete name:</strong> First and last name must be filled in</li><li><strong>Linked to property:</strong> Recommended but not required</li></ul><p><strong>💡 Tip:</strong> If your contact isn't listed, first go to Contacts to complete the basic information.</p>"
+            },
+            "es": {
+              "text": "<p>1. Regresa a la página principal del <strong>\"Portal del Cliente\"</strong></p><p>2. Haz clic en <strong>\"+ Nuevo Acceso al Portal\"</strong></p><p>3. Busca y selecciona el contacto que debe obtener acceso</p><p>4. El contacto ya debe existir en tu lista de contactos CRM</p><p><strong>📋 Requisitos para Acceso al Portal:</strong></p><ul><li><strong>Dirección de email válida:</strong> Requerida para credenciales de login</li><li><strong>Tipo de contacto:</strong> Debe estar configurado como 'Cliente' o 'Lead Activo'</li><li><strong>Nombre completo:</strong> Nombre y apellido deben estar completados</li><li><strong>Vinculado a propiedad:</strong> Recomendado pero no requerido</li></ul><p><strong>💡 Tip:</strong> Si tu contacto no está listado, primero ve a Contactos para completar la información básica.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Portal Rechten Configureren",
+            "en": "Configure Portal Rights",
+            "es": "Configurar Derechos del Portal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Toegang Niveau Kiezen:</strong></p><ul><li><strong>🟢 Basis Toegang:</strong> Documenten bekijken, berichten ontvangen</li><li><strong>🟡 Standaard Toegang:</strong> + Berichten sturen, afspraken inzien</li><li><strong>🔴 Uitgebreide Toegang:</strong> + Documenten uploaden, notities toevoegen</li></ul><p><strong>Specifieke Rechten Instellen:</strong></p><ol><li><strong>Documenten:</strong> Welke documenten mag de klant zien?</li><li><strong>Properties:</strong> Welke properties zijn relevant?</li><li><strong>Communicatie:</strong> Mogen ze direct berichten sturen?</li><li><strong>Agenda:</strong> Mogen ze afspraken zien/plannen?</li></ol><p><strong>🔒 Privacy Instellingen:</strong></p><ul><li><strong>Data Retentie:</strong> Hoe lang blijft data beschikbaar?</li><li><strong>Download Rechten:</strong> Mogen ze documenten downloaden?</li><li><strong>Contact Zichtbaarheid:</strong> Mogen ze andere contacten zien?</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Choose Access Level:</strong></p><ul><li><strong>🟢 Basic Access:</strong> View documents, receive messages</li><li><strong>🟡 Standard Access:</strong> + Send messages, view appointments</li><li><strong>🔴 Extended Access:</strong> + Upload documents, add notes</li></ul><p><strong>Set Specific Rights:</strong></p><ol><li><strong>Documents:</strong> Which documents may the client see?</li><li><strong>Properties:</strong> Which properties are relevant?</li><li><strong>Communication:</strong> May they send direct messages?</li><li><strong>Calendar:</strong> May they see/schedule appointments?</li></ol><p><strong>🔒 Privacy Settings:</strong></p><ul><li><strong>Data Retention:</strong> How long does data remain available?</li><li><strong>Download Rights:</strong> May they download documents?</li><li><strong>Contact Visibility:</strong> May they see other contacts?</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Elegir Nivel de Acceso:</strong></p><ul><li><strong>🟢 Acceso Básico:</strong> Ver documentos, recibir mensajes</li><li><strong>🟡 Acceso Estándar:</strong> + Enviar mensajes, ver citas</li><li><strong>🔴 Acceso Extendido:</strong> + Subir documentos, agregar notas</li></ul><p><strong>Establecer Derechos Específicos:</strong></p><ol><li><strong>Documentos:</strong> ¿Qué documentos puede ver el cliente?</li><li><strong>Propiedades:</strong> ¿Qué propiedades son relevantes?</li><li><strong>Comunicación:</strong> ¿Pueden enviar mensajes directos?</li><li><strong>Calendario:</strong> ¿Pueden ver/programar citas?</li></ol><p><strong>🔒 Configuraciones de Privacidad:</strong></p><ul><li><strong>Retención de Datos:</strong> ¿Cuánto tiempo permanecen disponibles los datos?</li><li><strong>Derechos de Descarga:</strong> ¿Pueden descargar documentos?</li><li><strong>Visibilidad de Contactos:</strong> ¿Pueden ver otros contactos?</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Login Uitnodiging Versturen",
+            "en": "Send Login Invitation",
+            "es": "Enviar Invitación de Login"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Automatische Uitnodiging:</strong></p><ol><li>Controleer het email adres van de klant</li><li>Klik <strong>\"Verstuur Uitnodiging\"</strong></li><li>Tesoro stuurt automatisch een persoonlijke email</li><li>De klant ontvangt login instructies en een tijdelijke wachtwoord</li></ol><p><strong>📧 Wat de Klant Ontvangt:</strong></p><ul><li><strong>Welkom email:</strong> Met portal URL en login gegevens</li><li><strong>Tijdelijk wachtwoord:</strong> Moet bij eerste login gewijzigd worden</li><li><strong>Instructies:</strong> Hoe in te loggen en rond te navigeren</li><li><strong>Support contact:</strong> Jouw gegevens voor vragen</li></ul><p><strong>🔄 Handmatige Opties:</strong></p><p>Als automatische email niet werkt:</p><ol><li>Kopieer de portal URL en login gegevens</li><li>Verstuur deze handmatig via je eigen email</li><li>Of bel de klant en loop samen door het login proces</li></ol><p><strong>⏰ Eerste Login:</strong> Uitnodigingen zijn 72 uur geldig. Daarna moet je een nieuwe versturen.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Automatic Invitation:</strong></p><ol><li>Check the client's email address</li><li>Click <strong>\"Send Invitation\"</strong></li><li>Tesoro automatically sends a personal email</li><li>The client receives login instructions and a temporary password</li></ol><p><strong>📧 What the Client Receives:</strong></p><ul><li><strong>Welcome email:</strong> With portal URL and login details</li><li><strong>Temporary password:</strong> Must be changed on first login</li><li><strong>Instructions:</strong> How to log in and navigate</li><li><strong>Support contact:</strong> Your details for questions</li></ul><p><strong>🔄 Manual Options:</strong></p><p>If automatic email doesn't work:</p><ol><li>Copy the portal URL and login details</li><li>Send these manually via your own email</li><li>Or call the client and walk through the login process together</li></ol><p><strong>⏰ First Login:</strong> Invitations are valid for 72 hours. After that you need to send a new one.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Invitación Automática:</strong></p><ol><li>Verifica la dirección de email del cliente</li><li>Haz clic en <strong>\"Enviar Invitación\"</strong></li><li>Tesoro envía automáticamente un email personal</li><li>El cliente recibe instrucciones de login y una contraseña temporal</li></ol><p><strong>📧 Lo que Recibe el Cliente:</strong></p><ul><li><strong>Email de bienvenida:</strong> Con URL del portal y detalles de login</li><li><strong>Contraseña temporal:</strong> Debe cambiarse en el primer login</li><li><strong>Instrucciones:</strong> Cómo iniciar sesión y navegar</li><li><strong>Contacto de soporte:</strong> Tus detalles para preguntas</li></ul><p><strong>🔄 Opciones Manuales:</strong></p><p>Si el email automático no funciona:</p><ol><li>Copia la URL del portal y detalles de login</li><li>Envía estos manualmente vía tu propio email</li><li>O llama al cliente y recorre juntos el proceso de login</li></ol><p><strong>⏰ Primer Login:</strong> Las invitaciones son válidas por 72 horas. Después necesitas enviar una nueva.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "client-experience-tips",
+      "variant": "tip",
+      "title": {
+        "nl": "💡 Tips voor Optimale Client Ervaring",
+        "en": "💡 Tips for Optimal Client Experience",
+        "es": "💡 Consejos para Experiencia Óptima del Cliente"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Portal Content Best Practices:</h5><ul><li><strong>Houd content actueel:</strong> Upload regelmatig nieuwe foto's en updates</li><li><strong>Gebruik duidelijke bestandsnamen:</strong> \"Contract_Verkoop_Jansen_2024.pdf\" i.p.v. \"document1.pdf\"</li><li><strong>Groepeer gerelateerde documenten:</strong> Maak mappen per onderwerp</li><li><strong>Voeg context toe:</strong> Korte beschrijving bij elk document</li></ul><h5>Communicatie Tips:</h5><ul><li><strong>Reageer binnen 24 uur:</strong> Op berichten via de portal</li><li><strong>Gebruik de portal actief:</strong> Stuur updates via het systeem</li><li><strong>Leg uit waarom:</strong> Bij status wijzigingen altijd uitleggen wat er gebeurt</li><li><strong>Persoonlijk blijven:</strong> Ook via de portal een warme, persoonlijke toon</li></ul><h5>Technische Tips:</h5><ul><li><strong>Test regelmatig:</strong> Log zelf in om te controleren hoe alles werkt</li><li><strong>Mobile check:</strong> Controleer hoe het eruit ziet op telefoon/tablet</li><li><strong>Browser compatibility:</strong> Test in verschillende browsers</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Portal Content Best Practices:</h5><ul><li><strong>Keep content current:</strong> Upload new photos and updates regularly</li><li><strong>Use clear filenames:</strong> \"Contract_Sale_Johnson_2024.pdf\" instead of \"document1.pdf\"</li><li><strong>Group related documents:</strong> Create folders per topic</li><li><strong>Add context:</strong> Short description with each document</li></ul><h5>Communication Tips:</h5><ul><li><strong>Respond within 24 hours:</strong> To messages via the portal</li><li><strong>Use the portal actively:</strong> Send updates through the system</li><li><strong>Explain why:</strong> Always explain what's happening with status changes</li><li><strong>Stay personal:</strong> Keep a warm, personal tone even via portal</li></ul><h5>Technical Tips:</h5><ul><li><strong>Test regularly:</strong> Log in yourself to check how everything works</li><li><strong>Mobile check:</strong> Check how it looks on phone/tablet</li><li><strong>Browser compatibility:</strong> Test in different browsers</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Mejores Prácticas de Contenido del Portal:</h5><ul><li><strong>Mantén contenido actual:</strong> Sube nuevas fotos y actualizaciones regularmente</li><li><strong>Usa nombres de archivo claros:</strong> \"Contrato_Venta_García_2024.pdf\" en lugar de \"documento1.pdf\"</li><li><strong>Agrupa documentos relacionados:</strong> Crea carpetas por tema</li><li><strong>Agrega contexto:</strong> Descripción corta con cada documento</li></ul><h5>Consejos de Comunicación:</h5><ul><li><strong>Responde en 24 horas:</strong> A mensajes vía el portal</li><li><strong>Usa el portal activamente:</strong> Envía actualizaciones a través del sistema</li><li><strong>Explica por qué:</strong> Siempre explica qué está pasando con cambios de estado</li><li><strong>Mantente personal:</strong> Conserva un tono cálido y personal incluso vía portal</li></ul><h5>Consejos Técnicos:</h5><ul><li><strong>Prueba regularmente:</strong> Inicia sesión tú mismo para verificar cómo funciona todo</li><li><strong>Verificación móvil:</strong> Verifica cómo se ve en teléfono/tablet</li><li><strong>Compatibilidad de navegador:</strong> Prueba en diferentes navegadores</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "next-steps",
+      "title": {
+        "nl": "🚀 Volgende Stappen",
+        "en": "🚀 Next Steps",
+        "es": "🚀 Próximos Pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je client portal is geconfigureerd en je eerste klanten toegang hebt gegeven, kun je verder gaan met:</p><h5>Gerelateerde Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectief documenten organiseren en delen</li><li><strong>Portal Analytics:</strong> Client engagement tracking en optimalisatie</li><li><strong>Automated Workflows:</strong> Portal updates automatiseren</li><li><strong>Advanced Communication:</strong> Messaging en notificatie systemen</li></ul><h5>Geavanceerde Portal Features:</h5><ul><li>White-label portal met eigen domein</li><li>Custom portal pagina's en content</li><li>Integration met externe document systemen</li><li>Geautomatiseerde client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimalisatie Mogelijkheden:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics en improvement insights</li><li>A/B testing van portal content</li><li>Mobiele app integratie</li><li>API toegang voor custom ontwikkelingen</li></ul><p><strong>📈 Succes Meten:</strong> Monitor client login frequentie, document downloads, en message response rates om de effectiviteit van je portal te meten.</p>"
+        },
+        "en": {
+          "text": "<p>Now that your client portal is configured and you've given your first clients access, you can continue with:</p><h5>Related Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectively organize and share documents</li><li><strong>Portal Analytics:</strong> Client engagement tracking and optimization</li><li><strong>Automated Workflows:</strong> Automate portal updates</li><li><strong>Advanced Communication:</strong> Messaging and notification systems</li></ul><h5>Advanced Portal Features:</h5><ul><li>White-label portal with own domain</li><li>Custom portal pages and content</li><li>Integration with external document systems</li><li>Automated client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimization Opportunities:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics and improvement insights</li><li>A/B testing of portal content</li><li>Mobile app integration</li><li>API access for custom developments</li></ul><p><strong>📈 Measuring Success:</strong> Monitor client login frequency, document downloads, and message response rates to measure your portal's effectiveness.</p>"
+        },
+        "es": {
+          "text": "<p>Ahora que tu portal del cliente está configurado y has dado acceso a tus primeros clientes, puedes continuar con:</p><h5>Tutorials Relacionados:</h5><ul><li><strong>Gestión de Documentos:</strong> Organizar y compartir documentos efectivamente</li><li><strong>Analytics del Portal:</strong> Seguimiento de engagement del cliente y optimización</li><li><strong>Workflows Automatizados:</strong> Automatizar actualizaciones del portal</li><li><strong>Comunicación Avanzada:</strong> Sistemas de mensajería y notificaciones</li></ul><h5>Funciones Avanzadas del Portal:</h5><ul><li>Portal white-label con dominio propio</li><li>Páginas de portal personalizadas y contenido</li><li>Integración con sistemas de documentos externos</li><li>Flujos de onboarding automatizados de clientes</li><li>Soporte multi-idioma del portal</li></ul><h5>Oportunidades de Optimización:</h5><ul><li>Encuestas de satisfacción del cliente vía portal</li><li>Analytics de uso e insights de mejora</li><li>Pruebas A/B de contenido del portal</li><li>Integración de app móvil</li><li>Acceso API para desarrollos personalizados</li></ul><p><strong>📈 Midiendo el Éxito:</strong> Monitorea la frecuencia de login del cliente, descargas de documentos, y tasas de respuesta de mensajes para medir la efectividad de tu portal.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "basic-contact-management-tutorial",
+    "property-management-tutorial",
+    "email-integration-setup"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen klanten hun eigen wachtwoord instellen?",
+        "en": "Can clients set their own password?",
+        "es": "¿Pueden los clientes establecer su propia contraseña?"
+      },
+      "answer": {
+        "nl": "Ja! Bij de eerste login moeten klanten het tijdelijke wachtwoord wijzigen naar hun eigen keuze. Daarna kunnen ze dit altijd wijzigen via 'Mijn Profiel' in de portal. Als ze hun wachtwoord vergeten, kunnen ze via de portal een reset aanvragen.",
+        "en": "Yes! On first login clients must change the temporary password to their own choice. After that they can always change it via 'My Profile' in the portal. If they forget their password, they can request a reset via the portal.",
+        "es": "¡Sí! En el primer login los clientes deben cambiar la contraseña temporal a su propia elección. Después pueden cambiarla siempre vía 'Mi Perfil' en el portal. Si olvidan su contraseña, pueden solicitar un reset vía el portal."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel klanten kunnen toegang krijgen tot de portal?",
+        "en": "How many clients can get access to the portal?",
+        "es": "¿Cuántos clientes pueden obtener acceso al portal?"
+      },
+      "answer": {
+        "nl": "Er is geen technische limiet op het aantal portal gebruikers. Je betaalt per actieve gebruiker per maand. Inactieve accounts (>90 dagen geen login) worden niet meegerekend. Je kunt altijd gebruikers deactiveren om kosten te besparen.",
+        "en": "There's no technical limit on the number of portal users. You pay per active user per month. Inactive accounts (>90 days no login) are not counted. You can always deactivate users to save costs.",
+        "es": "No hay límite técnico en el número de usuarios del portal. Pagas por usuario activo por mes. Las cuentas inactivas (>90 días sin login) no se cuentan. Siempre puedes desactivar usuarios para ahorrar costos."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kunnen klanten documenten uploaden naar de portal?",
+        "en": "Can clients upload documents to the portal?",
+        "es": "¿Pueden los clientes subir documentos al portal?"
+      },
+      "answer": {
+        "nl": "Ja, maar alleen als je hen 'Uitgebreide Toegang' geeft. Ze kunnen dan documenten uploaden in een speciale 'Client Upload' map die alleen jij kunt zien. Je krijgt een notificatie bij elke upload en kunt besluiten om het te delen of privé te houden.",
+        "en": "Yes, but only if you give them 'Extended Access'. They can then upload documents to a special 'Client Upload' folder that only you can see. You get a notification for every upload and can decide to share it or keep it private.",
+        "es": "Sí, pero solo si les das 'Acceso Extendido'. Entonces pueden subir documentos a una carpeta especial 'Subida del Cliente' que solo tú puedes ver. Recibes una notificación por cada subida y puedes decidir compartirla o mantenerla privada."
+      }
+    }
+  ]
+}

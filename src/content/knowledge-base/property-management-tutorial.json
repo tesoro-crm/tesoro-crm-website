@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "id": "property-management-tutorial",
+    "version": "1.0.0",
+    "publishDate": "2024-10-13",
+    "updatedAt": "2024-10-13T21:30:00Z",
+    "authorId": "maria-perez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "tutorial", "property-listing", "property-management", "crm-basics"],
+    "featured": true,
+    "readingTime": 6,
+    "videoIncluded": true,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property toevoegen Tesoro", "property listing CRM", "property management tutorial", "Tesoro CRM properties", "vastgoed beheer"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property Management in Tesoro CRM: Complete Tutorial voor Beginners",
+      "en": "Property Management in Tesoro CRM: Complete Beginner Tutorial",
+      "es": "Gestión de Propiedades en Tesoro CRM: Tutorial Completo para Principiantes"
+    },
+    "description": {
+      "nl": "Leer stap-voor-stap hoe je properties toevoegt, beheert en organiseert in Tesoro CRM. Van je eerste listing tot geavanceerde property organisatie.",
+      "en": "Learn step-by-step how to add, manage and organize properties in Tesoro CRM. From your first listing to advanced property organization.",
+      "es": "Aprende paso a paso cómo agregar, gestionar y organizar propiedades en Tesoro CRM. Desde tu primer listado hasta organización avanzada de propiedades."
+    },
+    "icon": "🏠"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "tutorial-overview",
+      "variant": "info",
+      "title": {
+        "nl": "📋 Wat je leert in deze tutorial",
+        "en": "📋 What you'll learn in this tutorial",
+        "es": "📋 Qué aprenderás en este tutorial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Na het voltooien van deze tutorial kun je:</p><ul><li>✅ Nieuwe properties toevoegen aan Tesoro CRM</li><li>✅ Property informatie beheren en bijwerken</li><li>✅ Foto's uploaden en organiseren</li><li>✅ Properties koppelen aan contacten</li><li>✅ Property status en beschikbaarheid bijhouden</li><li>✅ Properties zoeken en filteren</li><li>✅ Property documenten beheren</li></ul><p><strong>Tijd nodig:</strong> Ongeveer 20-25 minuten hands-on practice</p><p><strong>Vereisten:</strong> Basiskennis van Tesoro CRM navigatie (zie Contact Management Tutorial)</p>"
+        },
+        "en": {
+          "text": "<p>After completing this tutorial you can:</p><ul><li>✅ Add new properties to Tesoro CRM</li><li>✅ Manage and update property information</li><li>✅ Upload and organize photos</li><li>✅ Link properties to contacts</li><li>✅ Track property status and availability</li><li>✅ Search and filter properties</li><li>✅ Manage property documents</li></ul><p><strong>Time needed:</strong> About 20-25 minutes hands-on practice</p><p><strong>Prerequisites:</strong> Basic knowledge of Tesoro CRM navigation (see Contact Management Tutorial)</p>"
+        },
+        "es": {
+          "text": "<p>Después de completar este tutorial puedes:</p><ul><li>✅ Agregar nuevas propiedades a Tesoro CRM</li><li>✅ Gestionar y actualizar información de propiedades</li><li>✅ Subir y organizar fotos</li><li>✅ Vincular propiedades a contactos</li><li>✅ Hacer seguimiento del estado y disponibilidad de propiedades</li><li>✅ Buscar y filtrar propiedades</li><li>✅ Gestionar documentos de propiedades</li></ul><p><strong>Tiempo necesario:</strong> Aproximadamente 20-25 minutos de práctica</p><p><strong>Prerrequisitos:</strong> Conocimiento básico de navegación de Tesoro CRM (ver Tutorial de Gestión de Contactos)</p>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "property-management-overview",
+      "title": {
+        "nl": "🎥 Property Management Overzicht",
+        "en": "🎥 Property Management Overview",
+        "es": "🎥 Resumen de Gestión de Propiedades"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "6-minuten overzicht van alle property management functies in Tesoro CRM",
+        "en": "6-minute overview of all property management features in Tesoro CRM",
+        "es": "Resumen de 6 minutos de todas las funciones de gestión de propiedades en Tesoro CRM"
+      },
+      "duration": "6:18"
+    },
+
+    {
+      "type": "steps",
+      "id": "add-new-property",
+      "title": {
+        "nl": "🏠 Stap 1: Je Eerste Property Toevoegen",
+        "en": "🏠 Step 1: Adding Your First Property",
+        "es": "🏠 Paso 1: Agregar tu Primera Propiedad"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Open het Property Menu",
+            "en": "Open the Property Menu",
+            "es": "Abrir el Menú de Propiedades"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Ga naar het hoofdmenu aan de linkerkant van je scherm</p><p>2. Klik op <strong>\"Properties\"</strong> (het huis icoon 🏠)</p><p>3. Je ziet nu het property overzicht met eventuele bestaande listings</p><p><strong>💡 Sneltoets:</strong> Je kunt ook <code>Ctrl + P</code> (Windows) of <code>Cmd + P</code> (Mac) gebruiken om direct naar properties te gaan.</p><p><strong>📊 Dashboard Info:</strong> Bovenaan zie je statistieken zoals totaal aantal properties, beschikbare properties, en verkochte properties deze maand.</p>"
+            },
+            "en": {
+              "text": "<p>1. Go to the main menu on the left side of your screen</p><p>2. Click on <strong>\"Properties\"</strong> (the house icon 🏠)</p><p>3. You'll now see the property overview with any existing listings</p><p><strong>💡 Shortcut:</strong> You can also use <code>Ctrl + P</code> (Windows) or <code>Cmd + P</code> (Mac) to go directly to properties.</p><p><strong>📊 Dashboard Info:</strong> At the top you see statistics like total properties, available properties, and properties sold this month.</p>"
+            },
+            "es": {
+              "text": "<p>1. Ve al menú principal en el lado izquierdo de tu pantalla</p><p>2. Haz clic en <strong>\"Propiedades\"</strong> (el ícono de casa 🏠)</p><p>3. Ahora verás el resumen de propiedades con cualquier listado existente</p><p><strong>💡 Atajo:</strong> También puedes usar <code>Ctrl + P</code> (Windows) o <code>Cmd + P</code> (Mac) para ir directamente a propiedades.</p><p><strong>📊 Info del Dashboard:</strong> En la parte superior ves estadísticas como propiedades totales, propiedades disponibles, y propiedades vendidas este mes.</p>"
+            }
+          },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+            "alt": {
+              "nl": "Property dashboard in Tesoro CRM",
+              "en": "Property dashboard in Tesoro CRM",
+              "es": "Dashboard de propiedades en Tesoro CRM"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Klik op 'Nieuwe Property'",
+            "en": "Click 'New Property'",
+            "es": "Hacer clic en 'Nueva Propiedad'"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Zoek de groene knop <strong>\"+ Nieuwe Property\"</strong> rechtsboven in het scherm</p><p>2. Klik op deze knop om het property formulier te openen</p><p>3. Het formulier opent in een nieuwe pagina met verschillende tabs voor verschillende soorten informatie</p><p><strong>📝 Formulier Structuur:</strong></p><ul><li><strong>Basis Info:</strong> Adres, type, prijs</li><li><strong>Details:</strong> Kamers, oppervlakte, bouwjaar</li><li><strong>Media:</strong> Foto's en documenten</li><li><strong>Beschrijving:</strong> Uitgebreide beschrijving en kenmerken</li></ul>"
+            },
+            "en": {
+              "text": "<p>1. Look for the green button <strong>\"+ New Property\"</strong> in the top right of the screen</p><p>2. Click this button to open the property form</p><p>3. The form opens in a new page with different tabs for different types of information</p><p><strong>📝 Form Structure:</strong></p><ul><li><strong>Basic Info:</strong> Address, type, price</li><li><strong>Details:</strong> Rooms, surface area, build year</li><li><strong>Media:</strong> Photos and documents</li><li><strong>Description:</strong> Extended description and features</li></ul>"
+            },
+            "es": {
+              "text": "<p>1. Busca el botón verde <strong>\"+ Nueva Propiedad\"</strong> en la parte superior derecha de la pantalla</p><p>2. Haz clic en este botón para abrir el formulario de propiedad</p><p>3. El formulario se abre en una nueva página con diferentes pestañas para diferentes tipos de información</p><p><strong>📝 Estructura del Formulario:</strong></p><ul><li><strong>Info Básica:</strong> Dirección, tipo, precio</li><li><strong>Detalles:</strong> Habitaciones, superficie, año de construcción</li><li><strong>Media:</strong> Fotos y documentos</li><li><strong>Descripción:</strong> Descripción extendida y características</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Vul de Basis Informatie In",
+            "en": "Fill in Basic Information",
+            "es": "Completar Información Básica"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Verplichte velden (gemarkeerd met *):</strong></p><ul><li><strong>Adres*:</strong> Volledig adres inclusief postcode</li><li><strong>Property Type*:</strong> Appartement, Woning, Kantoor, etc.</li><li><strong>Status*:</strong> Te Koop, Te Huur, Verkocht, Verhuurd</li><li><strong>Prijs*:</strong> Vraagprijs in euro's</li></ul><p><strong>Aanbevolen basis velden:</strong></p><ul><li><strong>Aantal Slaapkamers:</strong> Voor woonproperty</li><li><strong>Aantal Badkamers:</strong> Belangrijk voor kopers</li><li><strong>Oppervlakte:</strong> In vierkante meters</li><li><strong>Bouwjaar:</strong> Voor historische context</li><li><strong>Eigenaar Contact:</strong> Koppel aan bestaand contact</li></ul><p><strong>🎯 Tip:</strong> Tesoro's adres-lookup functie vult automatisch postcodes en wijkinformatie aan.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Required fields (marked with *):</strong></p><ul><li><strong>Address*:</strong> Full address including postal code</li><li><strong>Property Type*:</strong> Apartment, House, Office, etc.</li><li><strong>Status*:</strong> For Sale, For Rent, Sold, Rented</li><li><strong>Price*:</strong> Asking price in euros</li></ul><p><strong>Recommended basic fields:</strong></p><ul><li><strong>Number of Bedrooms:</strong> For residential property</li><li><strong>Number of Bathrooms:</strong> Important for buyers</li><li><strong>Surface Area:</strong> In square meters</li><li><strong>Build Year:</strong> For historical context</li><li><strong>Owner Contact:</strong> Link to existing contact</li></ul><p><strong>🎯 Tip:</strong> Tesoro's address-lookup function automatically fills in postal codes and neighborhood information.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Campos obligatorios (marcados con *):</strong></p><ul><li><strong>Dirección*:</strong> Dirección completa incluyendo código postal</li><li><strong>Tipo de Propiedad*:</strong> Apartamento, Casa, Oficina, etc.</li><li><strong>Estado*:</strong> En Venta, En Alquiler, Vendida, Alquilada</li><li><strong>Precio*:</strong> Precio solicitado en euros</li></ul><p><strong>Campos básicos recomendados:</strong></p><ul><li><strong>Número de Dormitorios:</strong> Para propiedad residencial</li><li><strong>Número de Baños:</strong> Importante para compradores</li><li><strong>Superficie:</strong> En metros cuadrados</li><li><strong>Año de Construcción:</strong> Para contexto histórico</li><li><strong>Contacto del Propietario:</strong> Vincular a contacto existente</li></ul><p><strong>🎯 Tip:</strong> La función de búsqueda de dirección de Tesoro llena automáticamente códigos postales e información del barrio.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Property Details Toevoegen",
+            "en": "Add Property Details",
+            "es": "Agregar Detalles de Propiedad"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik op de <strong>\"Details\"</strong> tab om meer specifieke informatie toe te voegen:</p><p><strong>🏠 Woning Specifiek:</strong></p><ul><li><strong>Woonoppervlakte:</strong> Gebruiksoppervlakte in m²</li><li><strong>Perceeloppervlakte:</strong> Als er een tuin/erf bij hoort</li><li><strong>Aantal Verdiepingen:</strong> Inclusief begane grond</li><li><strong>Garage/Parkeren:</strong> Type parkeergelegenheid</li><li><strong>Tuin:</strong> Aanwezigheid en ligging (noord/zuid/oost/west)</li></ul><p><strong>🏢 Commercieel Specifiek:</strong></p><ul><li><strong>Kantooreenheden:</strong> Aantal aparte units</li><li><strong>Parkeerplaatsen:</strong> Aantal beschikbare plekken</li><li><strong>Laadmogelijkheden:</strong> Voor elektrische auto's</li></ul><p><strong>💡 Pro Tip:</strong> Gebruik de \"Kopieer van vergelijkbare property\" functie om snel standaard details over te nemen.</p>"
+            },
+            "en": {
+              "text": "<p>Click on the <strong>\"Details\"</strong> tab to add more specific information:</p><p><strong>🏠 Residential Specific:</strong></p><ul><li><strong>Living Area:</strong> Usable surface in m²</li><li><strong>Plot Area:</strong> If there's a garden/yard included</li><li><strong>Number of Floors:</strong> Including ground floor</li><li><strong>Garage/Parking:</strong> Type of parking facility</li><li><strong>Garden:</strong> Presence and orientation (north/south/east/west)</li></ul><p><strong>🏢 Commercial Specific:</strong></p><ul><li><strong>Office Units:</strong> Number of separate units</li><li><strong>Parking Spaces:</strong> Number of available spots</li><li><strong>Charging Options:</strong> For electric cars</li></ul><p><strong>💡 Pro Tip:</strong> Use the \"Copy from similar property\" function to quickly adopt standard details.</p>"
+            },
+            "es": {
+              "text": "<p>Haz clic en la pestaña <strong>\"Detalles\"</strong> para agregar información más específica:</p><p><strong>🏠 Específico Residencial:</strong></p><ul><li><strong>Área de Vivienda:</strong> Superficie útil en m²</li><li><strong>Área del Lote:</strong> Si hay jardín/patio incluido</li><li><strong>Número de Pisos:</strong> Incluyendo planta baja</li><li><strong>Garaje/Estacionamiento:</strong> Tipo de instalación de estacionamiento</li><li><strong>Jardín:</strong> Presencia y orientación (norte/sur/este/oeste)</li></ul><p><strong>🏢 Específico Comercial:</strong></p><ul><li><strong>Unidades de Oficina:</strong> Número de unidades separadas</li><li><strong>Plazas de Estacionamiento:</strong> Número de espacios disponibles</li><li><strong>Opciones de Carga:</strong> Para autos eléctricos</li></ul><p><strong>💡 Consejo Pro:</strong> Usa la función \"Copiar de propiedad similar\" para adoptar rápidamente detalles estándar.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "upload-photos",
+      "title": {
+        "nl": "📸 Stap 2: Foto's Uploaden en Organiseren",
+        "en": "📸 Step 2: Uploading and Organizing Photos",
+        "es": "📸 Paso 2: Subir y Organizar Fotos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Ga naar de Media Tab",
+            "en": "Go to the Media Tab",
+            "es": "Ir a la Pestaña de Medios"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>1. Klik op de <strong>\"Media\"</strong> tab in het property formulier</p><p>2. Je ziet een overzicht met verschillende secties:</p><ul><li><strong>Hoofdfoto:</strong> De primaire foto voor listings</li><li><strong>Interior Foto's:</strong> Foto's van binnen</li><li><strong>Exterior Foto's:</strong> Foto's van buiten</li><li><strong>Documenten:</strong> PDF's, plattegronden, etc.</li></ul><p><strong>📱 Ondersteunde Formaten:</strong></p><ul><li><strong>Foto's:</strong> JPG, PNG, WEBP (max 10MB per foto)</li><li><strong>Documenten:</strong> PDF, DOC, DOCX (max 25MB per document)</li></ul>"
+            },
+            "en": {
+              "text": "<p>1. Click on the <strong>\"Media\"</strong> tab in the property form</p><p>2. You see an overview with different sections:</p><ul><li><strong>Main Photo:</strong> The primary photo for listings</li><li><strong>Interior Photos:</strong> Photos from inside</li><li><strong>Exterior Photos:</strong> Photos from outside</li><li><strong>Documents:</strong> PDFs, floor plans, etc.</li></ul><p><strong>📱 Supported Formats:</strong></p><ul><li><strong>Photos:</strong> JPG, PNG, WEBP (max 10MB per photo)</li><li><strong>Documents:</strong> PDF, DOC, DOCX (max 25MB per document)</li></ul>"
+            },
+            "es": {
+              "text": "<p>1. Haz clic en la pestaña <strong>\"Medios\"</strong> en el formulario de propiedad</p><p>2. Ves un resumen con diferentes secciones:</p><ul><li><strong>Foto Principal:</strong> La foto primaria para listados</li><li><strong>Fotos Interiores:</strong> Fotos del interior</li><li><strong>Fotos Exteriores:</strong> Fotos del exterior</li><li><strong>Documentos:</strong> PDFs, planos, etc.</li></ul><p><strong>📱 Formatos Soportados:</strong></p><ul><li><strong>Fotos:</strong> JPG, PNG, WEBP (máx 10MB por foto)</li><li><strong>Documentos:</strong> PDF, DOC, DOCX (máx 25MB por documento)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Upload je Hoofdfoto",
+            "en": "Upload Your Main Photo",
+            "es": "Subir tu Foto Principal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom de hoofdfoto belangrijk is:</strong> Dit is de eerste foto die potentiële kopers zien in overzichten en zoekresultaten.</p><p><strong>Upload proces:</strong></p><ol><li>Klik op de <strong>\"Upload Hoofdfoto\"</strong> knop</li><li>Selecteer een foto van je computer of sleep deze naar het upload gebied</li><li>Wacht tot de upload compleet is (groene vinkje)</li><li>De foto verschijnt direct als preview</li></ol><p><strong>📷 Tips voor goede hoofdfoto's:</strong></p><ul><li><strong>Buitenfoto:</strong> Toon de complete voorgevel bij daglicht</li><li><strong>Hoge resolutie:</strong> Minimaal 1200x800 pixels</li><li><strong>Goed gecentreerd:</strong> Property centraal in beeld</li><li><strong>Geen tekst/watermerken:</strong> Tesoro voegt automatisch branding toe</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Why the main photo is important:</strong> This is the first photo potential buyers see in overviews and search results.</p><p><strong>Upload process:</strong></p><ol><li>Click the <strong>\"Upload Main Photo\"</strong> button</li><li>Select a photo from your computer or drag it to the upload area</li><li>Wait for the upload to complete (green checkmark)</li><li>The photo appears directly as preview</li></ol><p><strong>📷 Tips for good main photos:</strong></p><ul><li><strong>Exterior photo:</strong> Show the complete front facade in daylight</li><li><strong>High resolution:</strong> Minimum 1200x800 pixels</li><li><strong>Well centered:</strong> Property central in view</li><li><strong>No text/watermarks:</strong> Tesoro automatically adds branding</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué la foto principal es importante:</strong> Esta es la primera foto que los compradores potenciales ven en resúmenes y resultados de búsqueda.</p><p><strong>Proceso de subida:</strong></p><ol><li>Haz clic en el botón <strong>\"Subir Foto Principal\"</strong></li><li>Selecciona una foto de tu computadora o arrástrala al área de subida</li><li>Espera a que la subida se complete (marca verde)</li><li>La foto aparece directamente como vista previa</li></ol><p><strong>📷 Consejos para buenas fotos principales:</strong></p><ul><li><strong>Foto exterior:</strong> Muestra la fachada frontal completa con luz del día</li><li><strong>Alta resolución:</strong> Mínimo 1200x800 píxeles</li><li><strong>Bien centrada:</strong> Propiedad central en la vista</li><li><strong>Sin texto/marcas de agua:</strong> Tesoro agrega automáticamente branding</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg Meer Foto's Toe",
+            "en": "Add More Photos",
+            "es": "Agregar Más Fotos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Interior Foto's Toevoegen:</strong></p><ol><li>Scroll naar de \"Interior Foto's\" sectie</li><li>Klik \"Upload Interior Foto's\" of sleep meerdere foto's tegelijk</li><li>Tesoro organiseert automatisch per kamer type</li><li>Je kunt foto's handmatig herordenen door te slepen</li></ol><p><strong>📋 Aanbevolen foto volgorde:</strong></p><ol><li><strong>Woonkamer:</strong> Ruimtelijk overzicht</li><li><strong>Keuken:</strong> Complete keuken en details</li><li><strong>Slaapkamers:</strong> Elke slaapkamer apart</li><li><strong>Badkamers:</strong> Alle sanitair</li><li><strong>Speciale ruimtes:</strong> Zolder, kelder, bijkeuken</li></ol><p><strong>🔄 Automatische Optimalisatie:</strong> Tesoro comprimeert foto's automatisch voor snelle loading zonder kwaliteitsverlies.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Adding Interior Photos:</strong></p><ol><li>Scroll to the \"Interior Photos\" section</li><li>Click \"Upload Interior Photos\" or drag multiple photos at once</li><li>Tesoro automatically organizes by room type</li><li>You can manually reorder photos by dragging</li></ol><p><strong>📋 Recommended photo order:</strong></p><ol><li><strong>Living Room:</strong> Spatial overview</li><li><strong>Kitchen:</strong> Complete kitchen and details</li><li><strong>Bedrooms:</strong> Each bedroom separately</li><li><strong>Bathrooms:</strong> All sanitary facilities</li><li><strong>Special rooms:</strong> Attic, basement, utility room</li></ol><p><strong>🔄 Automatic Optimization:</strong> Tesoro automatically compresses photos for fast loading without quality loss.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Agregar Fotos Interiores:</strong></p><ol><li>Desplázate a la sección \"Fotos Interiores\"</li><li>Haz clic en \"Subir Fotos Interiores\" o arrastra múltiples fotos a la vez</li><li>Tesoro organiza automáticamente por tipo de habitación</li><li>Puedes reordenar fotos manualmente arrastrando</li></ol><p><strong>📋 Orden de fotos recomendado:</strong></p><ol><li><strong>Sala de Estar:</strong> Vista espacial general</li><li><strong>Cocina:</strong> Cocina completa y detalles</li><li><strong>Dormitorios:</strong> Cada dormitorio por separado</li><li><strong>Baños:</strong> Todas las instalaciones sanitarias</li><li><strong>Habitaciones especiales:</strong> Ático, sótano, cuarto de servicio</li></ol><p><strong>🔄 Optimización Automática:</strong> Tesoro comprime automáticamente las fotos para carga rápida sin pérdida de calidad.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "photo-quality-tips",
+      "variant": "tip",
+      "title": {
+        "nl": "📷 Foto Kwaliteit Best Practices",
+        "en": "📷 Photo Quality Best Practices",
+        "es": "📷 Mejores Prácticas de Calidad de Fotos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Technische Vereisten:</h5><ul><li><strong>Resolutie:</strong> Minimaal 1200x800px voor hoofdfoto, 800x600px voor overige</li><li><strong>Bestandsgrootte:</strong> 2-10MB per foto voor optimale kwaliteit</li><li><strong>Belichting:</strong> Geen overbelichte ramen, goede balans binnen/buiten licht</li></ul><h5>Compositie Tips:</h5><ul><li><strong>Horizontaal:</strong> Altijd landscape mode, geen portrait foto's</li><li><strong>Recht:</strong> Gebruik statief of zorg voor rechte lijnen</li><li><strong>Ruimte tonen:</strong> Fotografeer vanuit hoeken om ruimte te maximaliseren</li><li><strong>Opgeruimd:</strong> Verwijder persoonlijke spullen en rommel</li></ul><p><strong>🚫 Vermijd:</strong> Foto's met personen, huisdieren, of persoonlijke items zichtbaar.</p>"
+        },
+        "en": {
+          "text": "<h5>Technical Requirements:</h5><ul><li><strong>Resolution:</strong> Minimum 1200x800px for main photo, 800x600px for others</li><li><strong>File size:</strong> 2-10MB per photo for optimal quality</li><li><strong>Lighting:</strong> No overexposed windows, good balance indoor/outdoor light</li></ul><h5>Composition Tips:</h5><ul><li><strong>Horizontal:</strong> Always landscape mode, no portrait photos</li><li><strong>Straight:</strong> Use tripod or ensure straight lines</li><li><strong>Show space:</strong> Photograph from corners to maximize space</li><li><strong>Tidy:</strong> Remove personal items and clutter</li></ul><p><strong>🚫 Avoid:</strong> Photos with people, pets, or visible personal items.</p>"
+        },
+        "es": {
+          "text": "<h5>Requisitos Técnicos:</h5><ul><li><strong>Resolución:</strong> Mínimo 1200x800px para foto principal, 800x600px para otras</li><li><strong>Tamaño de archivo:</strong> 2-10MB por foto para calidad óptima</li><li><strong>Iluminación:</strong> Sin ventanas sobreexpuestas, buen balance luz interior/exterior</li></ul><h5>Consejos de Composición:</h5><ul><li><strong>Horizontal:</strong> Siempre modo paisaje, no fotos verticales</li><li><strong>Recto:</strong> Usa trípode o asegura líneas rectas</li><li><strong>Mostrar espacio:</strong> Fotografía desde esquinas para maximizar espacio</li><li><strong>Ordenado:</strong> Remueve artículos personales y desorden</li></ul><p><strong>🚫 Evita:</strong> Fotos con personas, mascotas, o artículos personales visibles.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "link-contacts",
+      "title": {
+        "nl": "🔗 Stap 3: Properties Koppelen aan Contacten",
+        "en": "🔗 Step 3: Linking Properties to Contacts",
+        "es": "🔗 Paso 3: Vincular Propiedades a Contactos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Eigenaar Contact Koppelen",
+            "en": "Link Owner Contact",
+            "es": "Vincular Contacto del Propietario"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom koppelen belangrijk is:</strong> Automatische updates, communicatie tracking, en complete deal overview.</p><p><strong>Eigenaar Koppelen:</strong></p><ol><li>Scroll naar de \"Contact Informatie\" sectie in het property formulier</li><li>Klik op het \"Eigenaar\" veld</li><li>Type de naam van een bestaand contact of email adres</li><li>Selecteer het juiste contact uit de suggesties</li><li>Tesoro toont direct contact details ter bevestiging</li></ol><p><strong>💡 Nieuwe Eigenaar Toevoegen:</strong></p><p>Als de eigenaar nog niet bestaat als contact:</p><ol><li>Klik \"+ Nieuw Contact\" naast het eigenaar veld</li><li>Vul snel de basis informatie in</li><li>Het contact wordt automatisch gekoppeld aan de property</li></ol>"
+            },
+            "en": {
+              "text": "<p><strong>Why linking is important:</strong> Automatic updates, communication tracking, and complete deal overview.</p><p><strong>Linking Owner:</strong></p><ol><li>Scroll to the \"Contact Information\" section in the property form</li><li>Click on the \"Owner\" field</li><li>Type the name of an existing contact or email address</li><li>Select the correct contact from suggestions</li><li>Tesoro immediately shows contact details for confirmation</li></ol><p><strong>💡 Adding New Owner:</strong></p><p>If the owner doesn't exist as contact yet:</p><ol><li>Click \"+ New Contact\" next to the owner field</li><li>Quickly fill in basic information</li><li>The contact is automatically linked to the property</li></ol>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué es importante vincular:</strong> Actualizaciones automáticas, seguimiento de comunicación, y vista completa del deal.</p><p><strong>Vincular Propietario:</strong></p><ol><li>Desplázate a la sección \"Información de Contacto\" en el formulario de propiedad</li><li>Haz clic en el campo \"Propietario\"</li><li>Escribe el nombre de un contacto existente o dirección de correo</li><li>Selecciona el contacto correcto de las sugerencias</li><li>Tesoro muestra inmediatamente detalles del contacto para confirmación</li></ol><p><strong>💡 Agregar Nuevo Propietario:</strong></p><p>Si el propietario no existe como contacto aún:</p><ol><li>Haz clic en \"+ Nuevo Contacto\" junto al campo de propietario</li><li>Completa rápidamente la información básica</li><li>El contacto se vincula automáticamente a la propiedad</li></ol>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Geïnteresseerde Kopers Toevoegen",
+            "en": "Add Interested Buyers",
+            "es": "Agregar Compradores Interesados"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Geïnteresseerden Tracking:</strong> Houd bij wie interesse heeft getoond in deze property.</p><p><strong>Buyer Toevoegen:</strong></p><ol><li>Scroll naar \"Geïnteresseerde Partijen\"</li><li>Klik \"+ Voeg Geïnteresseerde Toe\"</li><li>Selecteer contact uit bestaande lijst</li><li>Kies interesse niveau: Bezichtiging, Serieus, Bod Gedaan</li><li>Voeg notitie toe over hun specifieke interesse</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overzicht:</strong> Zie direct alle geïnteresseerden per property</li><li><strong>Follow-up:</strong> Automatische herinneringen voor contact</li><li><strong>Analytics:</strong> Track welke properties populair zijn</li><li><strong>Matching:</strong> Tesoro kan vergelijkbare properties voorstellen</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Interest Tracking:</strong> Keep track of who has shown interest in this property.</p><p><strong>Adding Buyer:</strong></p><ol><li>Scroll to \"Interested Parties\"</li><li>Click \"+ Add Interested Party\"</li><li>Select contact from existing list</li><li>Choose interest level: Viewing, Serious, Offer Made</li><li>Add note about their specific interest</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overview:</strong> See all interested parties per property directly</li><li><strong>Follow-up:</strong> Automatic reminders for contact</li><li><strong>Analytics:</strong> Track which properties are popular</li><li><strong>Matching:</strong> Tesoro can suggest similar properties</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Seguimiento de Interés:</strong> Mantén registro de quién ha mostrado interés en esta propiedad.</p><p><strong>Agregar Comprador:</strong></p><ol><li>Desplázate a \"Partes Interesadas\"</li><li>Haz clic en \"+ Agregar Parte Interesada\"</li><li>Selecciona contacto de la lista existente</li><li>Elige nivel de interés: Visita, Serio, Oferta Hecha</li><li>Agrega nota sobre su interés específico</li></ol><p><strong>📊 Beneficios del Seguimiento de Interés:</strong></p><ul><li><strong>Vista General:</strong> Ve todas las partes interesadas por propiedad directamente</li><li><strong>Seguimiento:</strong> Recordatorios automáticos para contacto</li><li><strong>Analytics:</strong> Rastrea qué propiedades son populares</li><li><strong>Matching:</strong> Tesoro puede sugerir propiedades similares</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "property-status-management",
+      "title": {
+        "nl": "📊 Stap 4: Property Status en Beschikbaarheid Beheren",
+        "en": "📊 Step 4: Managing Property Status and Availability",
+        "es": "📊 Paso 4: Gestionar Estado y Disponibilidad de Propiedades"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Status Updates",
+            "en": "Status Updates",
+            "es": "Actualizaciones de Estado"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Beschikbare Status Opties:</strong></p><ul><li><strong>🟢 Beschikbaar:</strong> Actief te koop/huur</li><li><strong>🟡 Onder Bod:</strong> Bod ontvangen, nog niet verkocht</li><li><strong>🔴 Verkocht/Verhuurd:</strong> Deal gesloten</li><li><strong>⚫ Offline:</strong> Tijdelijk niet beschikbaar</li><li><strong>🟣 Optie:</strong> Optie genomen door koper</li></ul><p><strong>Status Wijzigen:</strong></p><ol><li>Open de property voor bewerking</li><li>Klik op het huidige status label bovenaan</li><li>Selecteer nieuwe status uit dropdown</li><li>Voeg reden voor wijziging toe (optioneel)</li><li>Sla wijzigingen op</li></ol><p><strong>🔔 Automatische Notificaties:</strong> Tesoro stuurt automatisch updates naar geïnteresseerde partijen bij status wijzigingen.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Available Status Options:</strong></p><ul><li><strong>🟢 Available:</strong> Active for sale/rent</li><li><strong>🟡 Under Offer:</strong> Offer received, not yet sold</li><li><strong>🔴 Sold/Rented:</strong> Deal closed</li><li><strong>⚫ Offline:</strong> Temporarily unavailable</li><li><strong>🟣 Option:</strong> Option taken by buyer</li></ul><p><strong>Changing Status:</strong></p><ol><li>Open the property for editing</li><li>Click on the current status label at the top</li><li>Select new status from dropdown</li><li>Add reason for change (optional)</li><li>Save changes</li></ol><p><strong>🔔 Automatic Notifications:</strong> Tesoro automatically sends updates to interested parties when status changes.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Opciones de Estado Disponibles:</strong></p><ul><li><strong>🟢 Disponible:</strong> Activa para venta/alquiler</li><li><strong>🟡 Bajo Oferta:</strong> Oferta recibida, aún no vendida</li><li><strong>🔴 Vendida/Alquilada:</strong> Deal cerrado</li><li><strong>⚫ Fuera de línea:</strong> Temporalmente no disponible</li><li><strong>🟣 Opción:</strong> Opción tomada por comprador</li></ul><p><strong>Cambiar Estado:</strong></p><ol><li>Abre la propiedad para edición</li><li>Haz clic en la etiqueta de estado actual en la parte superior</li><li>Selecciona nuevo estado del dropdown</li><li>Agrega razón para el cambio (opcional)</li><li>Guarda cambios</li></ol><p><strong>🔔 Notificaciones Automáticas:</strong> Tesoro envía automáticamente actualizaciones a partes interesadas cuando el estado cambia.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Geschiedenis Bijhouden",
+            "en": "Keep History",
+            "es": "Mantener Historial"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Automatische Geschiedenis:</strong> Tesoro houdt automatisch bij:</p><ul><li>Status wijzigingen met tijdstempel</li><li>Prijs aanpassingen</li><li>Bezichtigingen en afspraken</li><li>Communicatie met eigenaar en geïnteresseerden</li><li>Foto en document uploads</li></ul><p><strong>Geschiedenis Bekijken:</strong></p><ol><li>Open property detail pagina</li><li>Klik op \"Geschiedenis\" tab</li><li>Bekijk chronologisch overzicht van alle activiteiten</li><li>Filter op type activiteit indien gewenst</li></ol><p><strong>📝 Handmatige Notities Toevoegen:</strong></p><p>Voor belangrijke events die niet automatisch getracked worden:</p><ol><li>Ga naar \"Geschiedenis\" tab</li><li>Klik \"+ Voeg Notitie Toe\"</li><li>Beschrijf wat er gebeurd is</li><li>Sla op - verschijnt in timeline</li></ol>"
+            },
+            "en": {
+              "text": "<p><strong>Automatic History:</strong> Tesoro automatically tracks:</p><ul><li>Status changes with timestamp</li><li>Price adjustments</li><li>Viewings and appointments</li><li>Communication with owner and interested parties</li><li>Photo and document uploads</li></ul><p><strong>Viewing History:</strong></p><ol><li>Open property detail page</li><li>Click on \"History\" tab</li><li>View chronological overview of all activities</li><li>Filter by activity type if desired</li></ol><p><strong>📝 Adding Manual Notes:</strong></p><p>For important events not automatically tracked:</p><ol><li>Go to \"History\" tab</li><li>Click \"+ Add Note\"</li><li>Describe what happened</li><li>Save - appears in timeline</li></ol>"
+            },
+            "es": {
+              "text": "<p><strong>Historial Automático:</strong> Tesoro rastrea automáticamente:</p><ul><li>Cambios de estado con marca de tiempo</li><li>Ajustes de precio</li><li>Visitas y citas</li><li>Comunicación con propietario y partes interesadas</li><li>Subidas de fotos y documentos</li></ul><p><strong>Ver Historial:</strong></p><ol><li>Abre página de detalle de propiedad</li><li>Haz clic en la pestaña \"Historial\"</li><li>Ve resumen cronológico de todas las actividades</li><li>Filtra por tipo de actividad si deseas</li></ol><p><strong>📝 Agregar Notas Manuales:</strong></p><p>Para eventos importantes no rastreados automáticamente:</p><ol><li>Ve a la pestaña \"Historial\"</li><li>Haz clic en \"+ Agregar Nota\"</li><li>Describe qué pasó</li><li>Guarda - aparece en línea de tiempo</li></ol>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "next-steps",
+      "title": {
+        "nl": "🚀 Volgende Stappen",
+        "en": "🚀 Next Steps",
+        "es": "🚀 Próximos Pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je property management onder de knie hebt, kun je verder gaan met:</p><h5>Gerelateerde Tutorials:</h5><ul><li><strong>Geavanceerd Zoeken & Filteren:</strong> Vind snel de juiste properties</li><li><strong>Property Matching:</strong> Automatisch properties matchen aan contacten</li><li><strong>Bezichtigingen Plannen:</strong> Agenda integratie en planning</li><li><strong>Property Rapportages:</strong> Performance tracking en analytics</li></ul><h5>Geavanceerde Property Features:</h5><ul><li>Bulk property import via CSV</li><li>360° foto integratie</li><li>Automatische marktwaarde tracking</li><li>Property website integratie</li><li>Virtual tour embedding</li></ul><h5>Workflow Optimalisatie:</h5><ul><li>Property status automation triggers</li><li>Geautomatiseerde eigenaar communicatie</li><li>Lead qualification op basis van property interesse</li><li>Cross-selling vergelijkbare properties</li></ul>"
+        },
+        "en": {
+          "text": "<p>Now that you've mastered property management, you can continue with:</p><h5>Related Tutorials:</h5><ul><li><strong>Advanced Search & Filter:</strong> Find the right properties quickly</li><li><strong>Property Matching:</strong> Automatically match properties to contacts</li><li><strong>Schedule Viewings:</strong> Calendar integration and planning</li><li><strong>Property Reports:</strong> Performance tracking and analytics</li></ul><h5>Advanced Property Features:</h5><ul><li>Bulk property import via CSV</li><li>360° photo integration</li><li>Automatic market value tracking</li><li>Property website integration</li><li>Virtual tour embedding</li></ul><h5>Workflow Optimization:</h5><ul><li>Property status automation triggers</li><li>Automated owner communication</li><li>Lead qualification based on property interest</li><li>Cross-selling similar properties</li></ul>"
+        },
+        "es": {
+          "text": "<p>Ahora que has dominado la gestión de propiedades, puedes continuar con:</p><h5>Tutorials Relacionados:</h5><ul><li><strong>Búsqueda y Filtro Avanzado:</strong> Encuentra las propiedades correctas rápidamente</li><li><strong>Property Matching:</strong> Empareja automáticamente propiedades con contactos</li><li><strong>Programar Visitas:</strong> Integración de calendario y planificación</li><li><strong>Reportes de Propiedades:</strong> Seguimiento de rendimiento y analytics</li></ul><h5>Funciones Avanzadas de Propiedades:</h5><ul><li>Importación masiva de propiedades vía CSV</li><li>Integración de fotos 360°</li><li>Seguimiento automático del valor de mercado</li><li>Integración de sitio web de propiedades</li><li>Incorporación de tours virtuales</li></ul><h5>Optimización de Workflow:</h5><ul><li>Triggers de automatización de estado de propiedades</li><li>Comunicación automatizada con propietarios</li><li>Calificación de leads basada en interés de propiedades</li><li>Cross-selling de propiedades similares</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "basic-contact-management-tutorial",
+    "client-portal-setup-guide",
+    "advanced-search-filtering-tutorial"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik properties importeren uit andere systemen?",
+        "en": "Can I import properties from other systems?",
+        "es": "¿Puedo importar propiedades de otros sistemas?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro ondersteunt CSV import voor properties. Ga naar Properties → Import → Upload CSV. Er is een template beschikbaar met alle vereiste velden. Let op dat foto's apart geüpload moeten worden na de import.",
+        "en": "Yes! Tesoro supports CSV import for properties. Go to Properties → Import → Upload CSV. There's a template available with all required fields. Note that photos need to be uploaded separately after import.",
+        "es": "¡Sí! Tesoro soporta importación CSV para propiedades. Ve a Propiedades → Importar → Subir CSV. Hay una plantilla disponible con todos los campos requeridos. Nota que las fotos necesitan ser subidas por separado después de la importación."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel foto's kan ik per property uploaden?",
+        "en": "How many photos can I upload per property?",
+        "es": "¿Cuántas fotos puedo subir por propiedad?"
+      },
+      "answer": {
+        "nl": "Er is geen hard limiet, maar we raden aan: 1 hoofdfoto + 10-15 interior foto's + 3-5 exterior foto's. Meer dan 25 foto's kan de loading tijd beïnvloeden. Focus op kwaliteit boven kwantiteit.",
+        "en": "There's no hard limit, but we recommend: 1 main photo + 10-15 interior photos + 3-5 exterior photos. More than 25 photos can affect loading time. Focus on quality over quantity.",
+        "es": "No hay límite estricto, pero recomendamos: 1 foto principal + 10-15 fotos interiores + 3-5 fotos exteriores. Más de 25 fotos puede afectar el tiempo de carga. Enfócate en calidad sobre cantidad."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een property koppelen aan meerdere eigenaren?",
+        "en": "Can I link a property to multiple owners?",
+        "es": "¿Puedo vincular una propiedad a múltiples propietarios?"
+      },
+      "answer": {
+        "nl": "Ja! In het contact veld kun je meerdere eigenaren toevoegen. Dit is handy bij gezamenlijke eigendom, bedrijfspanden, of bij scheiding/erfenis situaties. Elke eigenaar ontvangt relevante updates.",
+        "en": "Yes! In the contact field you can add multiple owners. This is handy for joint ownership, commercial properties, or in divorce/inheritance situations. Each owner receives relevant updates.",
+        "es": "¡Sí! En el campo de contacto puedes agregar múltiples propietarios. Esto es útil para propiedad conjunta, propiedades comerciales, o en situaciones de divorcio/herencia. Cada propietario recibe actualizaciones relevantes."
+      }
+    }
+  ]
+}
