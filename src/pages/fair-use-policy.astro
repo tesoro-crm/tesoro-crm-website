@@ -1,0 +1,524 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+---
+
+<Layout
+  title={t('fair_use_policy.meta_title', locale)}
+  description={t('fair_use_policy.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('fair_use_policy.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('fair_use_policy.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 max-w-3xl mx-auto">
+        {t('fair_use_policy.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Card variant="bordered" padding="lg" class="mb-12">
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+          {t('fair_use_policy.intro.title', locale)}
+        </h2>
+        <p class="text-neutral-700 mb-6">
+          {t('fair_use_policy.intro.description', locale)}
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="flex items-start gap-3">
+            <span class="icon text-success flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('fair_use_policy.intro.benefit_1', locale)}</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="icon text-success flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('fair_use_policy.intro.benefit_2', locale)}</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="icon text-success flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('fair_use_policy.intro.benefit_3', locale)}</span>
+          </div>
+        </div>
+      </Card>
+
+      <!-- Usage Limits -->
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8">
+        {t('fair_use_policy.limits.title', locale)}
+      </h2>
+
+      <div class="space-y-6">
+        <!-- AI Matching -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-primary flex-shrink-0">psychology</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.ai_matching_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-primary mb-3">
+                {t('fair_use_policy.limits.ai_matching_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.ai_matching_description', locale)}
+              </p>
+              <Badge variant="success" size="sm">
+                {t('fair_use_policy.limits.ai_matching_typical', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Storage -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-primary flex-shrink-0">cloud_upload</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.storage_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-primary mb-3">
+                {t('fair_use_policy.limits.storage_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.storage_description', locale)}
+              </p>
+              <Badge variant="success" size="sm">
+                {t('fair_use_policy.limits.storage_typical', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Email -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-primary flex-shrink-0">email</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.email_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-primary mb-3">
+                {t('fair_use_policy.limits.email_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.email_description', locale)}
+              </p>
+              <Badge variant="success" size="sm">
+                {t('fair_use_policy.limits.email_typical', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
+        <!-- API -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-primary flex-shrink-0">api</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.api_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-primary mb-3">
+                {t('fair_use_policy.limits.api_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.api_description', locale)}
+              </p>
+              <Badge variant="success" size="sm">
+                {t('fair_use_policy.limits.api_typical', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Users -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-primary flex-shrink-0">people</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.users_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-primary mb-3">
+                {t('fair_use_policy.limits.users_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.users_description', locale)}
+              </p>
+              <Badge variant="warning" size="sm">
+                {t('fair_use_policy.limits.users_note', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Portal -->
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <span class="icon text-2xl text-success flex-shrink-0">groups</span>
+            <div class="flex-grow">
+              <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.limits.portal_title', locale)}
+              </h3>
+              <p class="text-2xl font-bold text-success mb-3">
+                {t('fair_use_policy.limits.portal_limit', locale)}
+              </p>
+              <p class="text-sm text-neutral-700 mb-2">
+                {t('fair_use_policy.limits.portal_description', locale)}
+              </p>
+              <Badge variant="success" size="sm">
+                {t('fair_use_policy.limits.portal_note', locale)}
+              </Badge>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8 text-center">
+        {t('fair_use_policy.examples.title', locale)}
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Normal Usage -->
+        <Card variant="bordered" padding="lg" class="border-success">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="icon text-2xl text-success">thumb_up</span>
+            <h3 class="text-xl font-semibold text-neutral-900">
+              {t('fair_use_policy.examples.normal_title', locale)}
+            </h3>
+          </div>
+          <p class="text-sm text-neutral-700 mb-4">
+            {t('fair_use_policy.examples.normal_description', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-success flex-shrink-0">check</span>
+              <span>{t('fair_use_policy.examples.normal_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-success flex-shrink-0">check</span>
+              <span>{t('fair_use_policy.examples.normal_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-success flex-shrink-0">check</span>
+              <span>{t('fair_use_policy.examples.normal_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-success flex-shrink-0">check</span>
+              <span>{t('fair_use_policy.examples.normal_4', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-success flex-shrink-0">check</span>
+              <span>{t('fair_use_policy.examples.normal_5', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Excessive Usage -->
+        <Card variant="bordered" padding="lg" class="border-danger">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="icon text-2xl text-danger">warning</span>
+            <h3 class="text-xl font-semibold text-neutral-900">
+              {t('fair_use_policy.examples.excessive_title', locale)}
+            </h3>
+          </div>
+          <p class="text-sm text-neutral-700 mb-4">
+            {t('fair_use_policy.examples.excessive_description', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-danger flex-shrink-0">close</span>
+              <span>{t('fair_use_policy.examples.excessive_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-danger flex-shrink-0">close</span>
+              <span>{t('fair_use_policy.examples.excessive_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-danger flex-shrink-0">close</span>
+              <span>{t('fair_use_policy.examples.excessive_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-danger flex-shrink-0">close</span>
+              <span>{t('fair_use_policy.examples.excessive_4', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-neutral-700">
+              <span class="icon icon-sm text-danger flex-shrink-0">close</span>
+              <span>{t('fair_use_policy.examples.excessive_5', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monitoring Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8">
+        {t('fair_use_policy.monitoring.title', locale)}
+      </h2>
+      <p class="text-lg text-neutral-700 mb-8">
+        {t('fair_use_policy.monitoring.description', locale)}
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card variant="default" padding="lg">
+          <span class="icon text-3xl text-primary mb-3">visibility</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('fair_use_policy.monitoring.transparency_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('fair_use_policy.monitoring.transparency_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon text-3xl text-primary mb-3">notifications</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('fair_use_policy.monitoring.notifications_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('fair_use_policy.monitoring.notifications_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon text-3xl text-primary mb-3">schedule</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('fair_use_policy.monitoring.grace_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('fair_use_policy.monitoring.grace_description', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overage Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8">
+        {t('fair_use_policy.overage.title', locale)}
+      </h2>
+
+      <div class="space-y-4 mb-8">
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.overage.step_1_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700">
+                {t('fair_use_policy.overage.step_1_description', locale)}
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.overage.step_2_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700">
+                {t('fair_use_policy.overage.step_2_description', locale)}
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.overage.step_3_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700">
+                {t('fair_use_policy.overage.step_3_description', locale)}
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-4">
+            <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+              4
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('fair_use_policy.overage.step_4_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700">
+                {t('fair_use_policy.overage.step_4_description', locale)}
+              </p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <div class="bg-primary-50 border border-primary-200 rounded-lg p-6 text-center">
+        <p class="text-lg font-semibold text-primary-900">
+          {t('fair_use_policy.overage.no_surprise', locale)}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upgrade CTA -->
+  <section class="py-16 lg:py-24 bg-gradient-to-r from-primary to-primary-accent text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-display font-bold mb-4">
+          {t('fair_use_policy.upgrade.title', locale)}
+        </h2>
+        <p class="text-lg text-white/90 mb-8">
+          {t('fair_use_policy.upgrade.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="flex items-start gap-3">
+          <span class="icon text-secondary flex-shrink-0">check_circle</span>
+          <span class="text-white/90">{t('fair_use_policy.upgrade.benefit_1', locale)}</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="icon text-secondary flex-shrink-0">check_circle</span>
+          <span class="text-white/90">{t('fair_use_policy.upgrade.benefit_2', locale)}</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="icon text-secondary flex-shrink-0">check_circle</span>
+          <span class="text-white/90">{t('fair_use_policy.upgrade.benefit_3', locale)}</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="icon text-secondary flex-shrink-0">check_circle</span>
+          <span class="text-white/90">{t('fair_use_policy.upgrade.benefit_4', locale)}</span>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('fair_use_policy.upgrade.cta', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8">
+        {t('fair_use_policy.faq.title', locale)}
+      </h2>
+
+      <div class="space-y-4">
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_1', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_1', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_2', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_2', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_3', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_3', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_4', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_4', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_5', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_5', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+            {t('fair_use_policy.faq.question_6', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('fair_use_policy.faq.answer_6', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-4">
+        {t('fair_use_policy.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-neutral-700 mb-8">
+        {t('fair_use_policy.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="primary" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('fair_use_policy.cta.cta_primary', locale)}
+        </Button>
+        <Button variant="outline" size="lg" href={getLocalizedPath('/pricing', locale)}>
+          {t('fair_use_policy.cta.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

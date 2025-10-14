@@ -1,0 +1,404 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import Input from '../components/ui/Input.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+---
+
+<Layout
+  title={t('roi_calculator.meta_title', locale)}
+  description={t('roi_calculator.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('roi_calculator.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('roi_calculator.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('roi_calculator.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Input Form -->
+        <Card variant="bordered" padding="lg">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
+            {t('roi_calculator.form.title', locale)}
+          </h2>
+
+          <form id="roi-form" class="space-y-6">
+            <div>
+              <label for="agents" class="block text-sm font-medium text-neutral-700 mb-2">
+                {t('roi_calculator.form.agents_label', locale)}
+              </label>
+              <Input
+                id="agents"
+                type="number"
+                min="1"
+                max="100"
+                value="5"
+                placeholder={t('roi_calculator.form.agents_placeholder', locale)}
+              />
+            </div>
+
+            <div>
+              <label for="deals" class="block text-sm font-medium text-neutral-700 mb-2">
+                {t('roi_calculator.form.deals_label', locale)}
+              </label>
+              <Input
+                id="deals"
+                type="number"
+                min="0"
+                max="1000"
+                value="15"
+                placeholder={t('roi_calculator.form.deals_placeholder', locale)}
+              />
+            </div>
+
+            <div>
+              <label for="dealValue" class="block text-sm font-medium text-neutral-700 mb-2">
+                {t('roi_calculator.form.deal_value_label', locale)}
+              </label>
+              <Input
+                id="dealValue"
+                type="number"
+                min="0"
+                max="100000"
+                value="5000"
+                placeholder={t('roi_calculator.form.deal_value_placeholder', locale)}
+              />
+            </div>
+
+            <div>
+              <label for="adminHours" class="block text-sm font-medium text-neutral-700 mb-2">
+                {t('roi_calculator.form.admin_hours_label', locale)}
+              </label>
+              <Input
+                id="adminHours"
+                type="number"
+                min="0"
+                max="168"
+                value="20"
+                placeholder={t('roi_calculator.form.admin_hours_placeholder', locale)}
+              />
+            </div>
+
+            <div>
+              <label for="currentCrm" class="block text-sm font-medium text-neutral-700 mb-2">
+                {t('roi_calculator.form.current_crm_label', locale)}
+              </label>
+              <Input
+                id="currentCrm"
+                type="number"
+                min="0"
+                max="10000"
+                value="0"
+                placeholder={t('roi_calculator.form.current_crm_placeholder', locale)}
+              />
+            </div>
+
+            <Button
+              type="button"
+              id="calculate-btn"
+              variant="primary"
+              size="lg"
+              fullWidth
+            >
+              {t('roi_calculator.form.calculate_button', locale)}
+            </Button>
+          </form>
+        </Card>
+
+        <!-- Results -->
+        <div id="results" class="space-y-6">
+          <Card variant="elevated" padding="lg" class="bg-gradient-to-br from-primary to-primary-accent text-white">
+            <h2 class="text-2xl font-display font-bold mb-6">
+              {t('roi_calculator.results.title', locale)}
+            </h2>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div class="text-3xl font-display font-bold mb-1" id="timeSaved">13.4</div>
+                <div class="text-sm text-white/80">{t('roi_calculator.results.time_saved_per_week', locale)}</div>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div class="text-3xl font-display font-bold mb-1" id="extraDeals">33</div>
+                <div class="text-sm text-white/80">{t('roi_calculator.results.extra_deals_per_month', locale)}</div>
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-6">
+              <h3 class="text-lg font-semibold mb-2">{t('roi_calculator.results.extra_revenue_title', locale)}</h3>
+              <div class="text-4xl font-display font-bold mb-1" id="extraRevenueMonth">€165,000</div>
+              <div class="text-sm text-white/80">{t('roi_calculator.results.extra_revenue_per_month', locale)}</div>
+              <div class="text-2xl font-semibold mt-3" id="extraRevenueYear">€1,980,000</div>
+              <div class="text-sm text-white/80">{t('roi_calculator.results.extra_revenue_per_year', locale)}</div>
+            </div>
+
+            <div class="bg-secondary/20 backdrop-blur-sm rounded-lg p-6">
+              <h3 class="text-lg font-semibold mb-2">{t('roi_calculator.results.net_benefit_title', locale)}</h3>
+              <div class="text-4xl font-display font-bold mb-1" id="netBenefitMonth">€164,901</div>
+              <div class="text-sm text-white/80">{t('roi_calculator.results.net_benefit_per_month', locale)}</div>
+              <div class="text-2xl font-semibold mt-3" id="netBenefitYear">€1,978,812</div>
+              <div class="text-sm text-white/80">{t('roi_calculator.results.net_benefit_per_year', locale)}</div>
+              <div class="mt-4 pt-4 border-t border-white/20">
+                <div class="text-sm font-semibold">{t('roi_calculator.results.payback_period', locale)}</div>
+                <div class="text-2xl font-bold mt-1" id="roiPercentage">166,651%</div>
+                <div class="text-sm text-white/80">{t('roi_calculator.results.roi_percentage', locale)}</div>
+              </div>
+            </div>
+          </Card>
+
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-3 mb-4">
+              <span class="icon text-primary text-2xl">info</span>
+              <div>
+                <p class="text-sm text-neutral-700">{t('roi_calculator.results.time_saved_description', locale)}</p>
+                <p class="text-sm text-neutral-700 mt-2">{t('roi_calculator.results.extra_deals_description', locale)}</p>
+                <p class="text-sm text-neutral-700 mt-2">{t('roi_calculator.results.extra_revenue_description', locale)}</p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakdown Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-8 text-center">
+        {t('roi_calculator.breakdown.title', locale)}
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card variant="default" padding="lg">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">
+            {t('roi_calculator.breakdown.current_situation', locale)}
+          </h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.monthly_deals', locale)}</span>
+              <span class="font-semibold text-neutral-900" id="currentDeals">15</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.monthly_revenue', locale)}</span>
+              <span class="font-semibold text-neutral-900" id="currentRevenue">€75,000</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.admin_time', locale)}</span>
+              <span class="font-semibold text-neutral-900" id="currentAdminTime">20h</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.crm_costs', locale)}</span>
+              <span class="font-semibold text-neutral-900" id="currentCrmCost">€0</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-neutral-100 rounded-lg px-3 mt-2">
+              <span class="font-semibold text-neutral-900">{t('roi_calculator.breakdown.total_monthly', locale)}</span>
+              <span class="font-bold text-lg text-neutral-900" id="currentTotal">€75,000</span>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg" class="ring-2 ring-success">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">
+            {t('roi_calculator.breakdown.with_tesoro', locale)}
+          </h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.monthly_deals', locale)}</span>
+              <span class="font-semibold text-success" id="tesoroDeals">48</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.monthly_revenue', locale)}</span>
+              <span class="font-semibold text-success" id="tesoroRevenue">€240,000</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.admin_time', locale)}</span>
+              <span class="font-semibold text-success" id="tesoroAdminTime">6.6h</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-200">
+              <span class="text-sm text-neutral-700">{t('roi_calculator.breakdown.crm_costs', locale)}</span>
+              <span class="font-semibold text-neutral-900" id="tesoroCrmCost">€99</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-success/10 rounded-lg px-3 mt-2">
+              <span class="font-semibold text-neutral-900">{t('roi_calculator.breakdown.total_monthly', locale)}</span>
+              <span class="font-bold text-lg text-success" id="tesoroTotal">€239,901</span>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assumptions Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Card variant="default" padding="lg">
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
+          {t('roi_calculator.assumptions.title', locale)}
+        </h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('roi_calculator.assumptions.assumption_1', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('roi_calculator.assumptions.assumption_2', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('roi_calculator.assumptions.assumption_3', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+            <span class="text-sm text-neutral-700">{t('roi_calculator.assumptions.assumption_4', locale)}</span>
+          </li>
+        </ul>
+        <div class="mt-6 p-4 bg-neutral-50 rounded-lg">
+          <p class="text-xs text-neutral-600">
+            {t('roi_calculator.assumptions.note', locale)}
+          </p>
+        </div>
+      </Card>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('roi_calculator.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('roi_calculator.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
+          {t('roi_calculator.cta.primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/demo', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('roi_calculator.cta.secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  function calculateROI() {
+    // Get form values
+    const agents = parseInt((document.getElementById('agents') as HTMLInputElement)?.value || '5');
+    const dealsPerMonth = parseInt((document.getElementById('deals') as HTMLInputElement)?.value || '15');
+    const dealValue = parseInt((document.getElementById('dealValue') as HTMLInputElement)?.value || '5000');
+    const adminHours = parseInt((document.getElementById('adminHours') as HTMLInputElement)?.value || '20');
+    const currentCrmCost = parseInt((document.getElementById('currentCrm') as HTMLInputElement)?.value || '0');
+
+    // Constants based on Tesoro metrics
+    const TIME_SAVINGS_PERCENT = 0.67; // 67% time savings
+    const CONVERSION_MULTIPLIER = 3.2; // 3.2x more deals
+    const HOURLY_RATE = 75; // €75 per hour
+    const TESORO_COST = 99; // €99 per month
+
+    // Calculations
+    const timeSavedPerWeek = adminHours * TIME_SAVINGS_PERCENT;
+    const extraDealsPerMonth = Math.round(dealsPerMonth * (CONVERSION_MULTIPLIER - 1));
+    const totalDealsWithTesoro = dealsPerMonth + extraDealsPerMonth;
+
+    const currentMonthlyRevenue = dealsPerMonth * dealValue;
+    const extraRevenueMonth = extraDealsPerMonth * dealValue;
+    const totalRevenueWithTesoro = totalDealsWithTesoro * dealValue;
+    const extraRevenueYear = extraRevenueMonth * 12;
+
+    const timeSavingsValue = (timeSavedPerWeek * 4.33 * HOURLY_RATE); // Monthly value of time saved
+    const netBenefitMonth = extraRevenueMonth + timeSavingsValue - TESORO_COST + currentCrmCost;
+    const netBenefitYear = netBenefitMonth * 12;
+
+    const totalInvestment = TESORO_COST * 12;
+    const roiPercentage = ((netBenefitYear / totalInvestment) * 100).toFixed(0);
+
+    // Format currency
+    const formatCurrency = (value: number) => {
+      return new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(value);
+    };
+
+    // Update results
+    (document.getElementById('timeSaved') as HTMLElement).textContent = timeSavedPerWeek.toFixed(1);
+    (document.getElementById('extraDeals') as HTMLElement).textContent = extraDealsPerMonth.toString();
+    (document.getElementById('extraRevenueMonth') as HTMLElement).textContent = formatCurrency(extraRevenueMonth);
+    (document.getElementById('extraRevenueYear') as HTMLElement).textContent = formatCurrency(extraRevenueYear);
+    (document.getElementById('netBenefitMonth') as HTMLElement).textContent = formatCurrency(netBenefitMonth);
+    (document.getElementById('netBenefitYear') as HTMLElement).textContent = formatCurrency(netBenefitYear);
+    (document.getElementById('roiPercentage') as HTMLElement).textContent = roiPercentage + '%';
+
+    // Update breakdown - Current
+    (document.getElementById('currentDeals') as HTMLElement).textContent = dealsPerMonth.toString();
+    (document.getElementById('currentRevenue') as HTMLElement).textContent = formatCurrency(currentMonthlyRevenue);
+    (document.getElementById('currentAdminTime') as HTMLElement).textContent = adminHours + 'h';
+    (document.getElementById('currentCrmCost') as HTMLElement).textContent = formatCurrency(currentCrmCost);
+    (document.getElementById('currentTotal') as HTMLElement).textContent = formatCurrency(currentMonthlyRevenue - currentCrmCost);
+
+    // Update breakdown - Tesoro
+    (document.getElementById('tesoroDeals') as HTMLElement).textContent = totalDealsWithTesoro.toString();
+    (document.getElementById('tesoroRevenue') as HTMLElement).textContent = formatCurrency(totalRevenueWithTesoro);
+    (document.getElementById('tesoroAdminTime') as HTMLElement).textContent = (adminHours - timeSavedPerWeek).toFixed(1) + 'h';
+    (document.getElementById('tesoroCrmCost') as HTMLElement).textContent = formatCurrency(TESORO_COST);
+    (document.getElementById('tesoroTotal') as HTMLElement).textContent = formatCurrency(totalRevenueWithTesoro - TESORO_COST);
+  }
+
+  // Calculate on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    calculateROI();
+
+    // Add event listeners to all inputs
+    const inputs = ['agents', 'deals', 'dealValue', 'adminHours', 'currentCrm'];
+    inputs.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.addEventListener('input', calculateROI);
+      }
+    });
+
+    // Add click handler for button
+    const calcButton = document.getElementById('calculate-btn');
+    if (calcButton) {
+      calcButton.addEventListener('click', calculateROI);
+    }
+  });
+
+  // Recalculate on Astro page transitions
+  document.addEventListener('astro:after-swap', () => {
+    calculateROI();
+
+    const inputs = ['agents', 'deals', 'dealValue', 'adminHours', 'currentCrm'];
+    inputs.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.addEventListener('input', calculateROI);
+      }
+    });
+
+    const calcButton = document.getElementById('calculate-btn');
+    if (calcButton) {
+      calcButton.addEventListener('click', calculateROI);
+    }
+  });
+</script>
