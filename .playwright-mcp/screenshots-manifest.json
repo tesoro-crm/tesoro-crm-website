@@ -2,9 +2,9 @@
   "metadata": {
     "created": "2025-10-14",
     "lastUpdated": "2025-10-14",
-    "totalAssets": 159,
+    "totalAssets": 160,
     "totalVideos": 4,
-    "totalScreenshots": 155
+    "totalScreenshots": 156
   },
   "videos": [
     {
@@ -1187,6 +1187,13 @@
       "module": "unknown",
       "description": "Timestamped page screenshot",
       "created": "2025-10-13"
+    },
+    {
+      "filename": "mega-menu-full-width-verification.png",
+      "category": "navigation",
+      "module": "mega-menu",
+      "description": "Mega menu with 100% viewport width and centered content",
+      "created": "2025-10-14"
     }
   ]
 }
