@@ -196,7 +196,30 @@ title: 'Hardcoded Title'
 ### Before Creating New Pages
 1. Define all translation keys in i18n files first
 2. Use t() function calls for ALL text content
-3. Test all three language versions work correctly
+3. **ALWAYS verify translation keys exist** before using them in pages:
+   ```bash
+   # Check if key exists in all language files
+   grep -r "key_name" src/i18n/locales/
+   ```
+4. Test all three language versions work correctly
+
+### Translation Key Verification Protocol
+
+**CRITICAL: Always verify translation keys exist before using them!**
+
+When using `t('section.subsection.key', locale)` in your code:
+
+1. **Before writing the code**, verify the key exists in ALL three language files (en.json, es.json, nl.json)
+2. Use grep to search: `grep -A2 -B2 "key_name" src/i18n/locales/*.json`
+3. If the key doesn't exist, add it to all three files FIRST
+4. Never assume a key exists just because it makes logical sense - verify!
+
+**Common mistake:** Using `t('page.hero.cta_primary', locale)` when only `page.hero.title` exists.
+
+**Prevention:**
+- Read the relevant section of the i18n file before adding t() calls
+- Cross-check all three language files have matching key structure
+- Build and test immediately after adding new translation keys
 
 ## 📸 Screenshot & Video Guidelines
 
