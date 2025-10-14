@@ -1,0 +1,1059 @@
+{
+  "metadata": {
+    "created": "2025-10-14",
+    "lastUpdated": "2025-10-14",
+    "totalAssets": 140,
+    "totalVideos": 4,
+    "totalScreenshots": 136
+  },
+  "videos": [
+    {
+      "filename": "videos/01-ai-property-matching.mp4",
+      "category": "crm-workflows",
+      "module": "deals",
+      "description": "AI property matching workflow showing Kanban → Deal detail → Properties preselect → Property modal",
+      "duration": "15s",
+      "size": "351KB",
+      "frames": 4,
+      "frameDirectory": "videos/01-ai-matching-frames/",
+      "created": "2025-10-14",
+      "purpose": "Marketing video demonstrating AI-powered property matching feature"
+    },
+    {
+      "filename": "videos/02-deal-pipeline.mp4",
+      "category": "crm-workflows",
+      "module": "deals",
+      "description": "Full 9-stage Kanban board overview showing €14.9M+ in active deals",
+      "duration": "5s",
+      "size": "244KB",
+      "frames": 1,
+      "frameDirectory": "videos/02-deal-pipeline-frames/",
+      "created": "2025-10-14",
+      "purpose": "Marketing video showcasing complete deal pipeline"
+    },
+    {
+      "filename": "videos/03-contact-management.mp4",
+      "category": "crm-workflows",
+      "module": "contacts",
+      "description": "Contact database list showing 58 contacts",
+      "duration": "5s",
+      "size": "147KB",
+      "frames": 1,
+      "frameDirectory": "videos/03-contact-mgmt-frames/",
+      "created": "2025-10-14",
+      "purpose": "Marketing video demonstrating contact management interface"
+    },
+    {
+      "filename": "videos/04-properties-management.mp4",
+      "category": "crm-workflows",
+      "module": "properties",
+      "description": "Properties list showing 1,085 properties",
+      "duration": "5s",
+      "size": "248KB",
+      "frames": 1,
+      "frameDirectory": "videos/04-properties-mgmt-frames/",
+      "created": "2025-10-14",
+      "purpose": "Marketing video showcasing property inventory management"
+    }
+  ],
+  "comprehensiveScreenshots": [
+    {
+      "filename": "videos/comprehensive-screenshots/01-dashboard-overview.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Dashboard with KPIs, alerts, pipeline metrics",
+      "created": "2025-10-14",
+      "purpose": "Documentation - main CRM dashboard view"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/02-activities-list.png",
+      "category": "crm-modules",
+      "module": "activities",
+      "description": "Activities module overview",
+      "created": "2025-10-14",
+      "purpose": "Documentation - activities list view"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/03-leads-list.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Leads table showing 4 active leads",
+      "created": "2025-10-14",
+      "purpose": "Documentation - leads list view"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/04-lead-detail-activities.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead detail page with call recordings, notes, timeline (Kees de Boer lead)",
+      "created": "2025-10-14",
+      "purpose": "Documentation - lead detail with activity timeline"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/05-deals-kanban-full.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Full Kanban board with all 9 deal stages",
+      "created": "2025-10-14",
+      "purpose": "Documentation - complete deal pipeline view"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/06-deal-detail-overview.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal detail with contact info, property summary (Jim Hendricks deal)",
+      "created": "2025-10-14",
+      "purpose": "Documentation - deal detail page overview"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/07-properties-list-table.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Properties table view showing 1,085 properties",
+      "created": "2025-10-14",
+      "purpose": "Documentation - properties table view"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/08-properties-grid-view.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Properties grid/card view with image thumbnails",
+      "created": "2025-10-14",
+      "purpose": "Documentation - properties grid layout"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/09-settings-personal.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Personal settings with user profile (Brigitte Schwarz)",
+      "created": "2025-10-14",
+      "purpose": "Documentation - user settings page"
+    },
+    {
+      "filename": "videos/comprehensive-screenshots/10-calendar-week-view.png",
+      "category": "crm-modules",
+      "module": "calendar",
+      "description": "Calendar week view (Oct 13-19, 2025)",
+      "created": "2025-10-14",
+      "purpose": "Documentation - calendar interface"
+    }
+  ],
+  "crmModuleScreenshots": [
+    {
+      "filename": "crm-tesoro-dashboard-01.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Main dashboard view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-dashboard-detailed-01.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Detailed dashboard with metrics",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-dashboard-business-intelligence-01.png",
+      "category": "crm-modules",
+      "module": "dashboard",
+      "description": "Business intelligence dashboard view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-leads-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Leads module main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-leads-overview-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Leads overview table",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-lead-detail-info-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead detail information tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-lead-detail-activities-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead detail activities timeline",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-modal-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Create new lead modal form",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-dropdown-leadtype-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead type dropdown options",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-dropdown-leadstage-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead stage dropdown options",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-dropdown-leadsource-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Lead source dropdown options",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-dropdown-lookingto-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Looking to (buy/rent) dropdown",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-lead-dropdown-propertytype-01.png",
+      "category": "crm-modules",
+      "module": "leads",
+      "description": "Property type dropdown options",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deals-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deals Kanban board main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-details-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal detail overview tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-properties-workflow-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal properties matching workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-tasks-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal tasks tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-notes-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal notes tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-emails-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal emails tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-whatsapp-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal WhatsApp messages tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-deal-attachments-01.png",
+      "category": "crm-modules",
+      "module": "deals",
+      "description": "Deal attachments tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-contacts-01.png",
+      "category": "crm-modules",
+      "module": "contacts",
+      "description": "Contacts list main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-relations-01.png",
+      "category": "crm-modules",
+      "module": "relations",
+      "description": "Relations/companies list view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-properties-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Properties list main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-properties-list-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Properties list table view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-properties-table-overview-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Properties table with filters",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-detail-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property detail page main tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-detail-02.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property detail page additional view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-detail-overview-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property detail overview tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-house-details-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property house details section",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-all-house-details-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property complete house details",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-photo-gallery-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property photo gallery tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-connections-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property connections/relationships tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-connections-attachments-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property attachments in connections tab",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-property-seo-social-media-01.png",
+      "category": "crm-modules",
+      "module": "properties",
+      "description": "Property SEO and social media settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-projects-01.png",
+      "category": "crm-modules",
+      "module": "projects",
+      "description": "Projects module main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-projects-overview-01.png",
+      "category": "crm-modules",
+      "module": "projects",
+      "description": "Projects overview list",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-projects-create-edit-form-01.png",
+      "category": "crm-modules",
+      "module": "projects",
+      "description": "Create/edit project form",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-projects-property-types-dropdown-01.png",
+      "category": "crm-modules",
+      "module": "projects",
+      "description": "Project property types dropdown",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-projects-availability-dropdown-01.png",
+      "category": "crm-modules",
+      "module": "projects",
+      "description": "Project availability status dropdown",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-activities-01.png",
+      "category": "crm-modules",
+      "module": "activities",
+      "description": "Activities main view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-activities-list-01.png",
+      "category": "crm-modules",
+      "module": "activities",
+      "description": "Activities list view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-activities-board-01.png",
+      "category": "crm-modules",
+      "module": "activities",
+      "description": "Activities board/Kanban view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-create-task-modal-01.png",
+      "category": "crm-modules",
+      "module": "activities",
+      "description": "Create new task modal",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-calendar-week-view-01.png",
+      "category": "crm-modules",
+      "module": "calendar",
+      "description": "Calendar week view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-calendar-create-event-modal-01.png",
+      "category": "crm-modules",
+      "module": "calendar",
+      "description": "Create calendar event modal",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-calendar-duration-dropdown-01.png",
+      "category": "crm-modules",
+      "module": "calendar",
+      "description": "Event duration dropdown options",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-personal-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Personal settings page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-company-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Company settings page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-users-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "User management settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-ai-settings-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "AI configuration settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-ai-prompts-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "AI prompt templates settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-call-twilio-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Twilio call integration settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-company-email-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Company email settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-transactional-email-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Transactional email settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-client-portal-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Client portal configuration",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-watermark-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Watermark settings for PDFs",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-mask-verification-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Mask verification settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-tags-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Tags system management",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-threshold-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Threshold configuration settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-reference-numbers-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "Reference numbers configuration",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-settings-api-keys-01.png",
+      "category": "crm-modules",
+      "module": "settings",
+      "description": "API keys management",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-login-01.png",
+      "category": "crm-auth",
+      "module": "authentication",
+      "description": "CRM login page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "crm-tesoro-search-results-01.png",
+      "category": "crm-features",
+      "module": "search",
+      "description": "Global search results view",
+      "created": "2025-10-13"
+    }
+  ],
+  "marketingWebsiteScreenshots": [
+    {
+      "filename": "01-tesoro-homepage.png",
+      "category": "marketing-website",
+      "module": "homepage",
+      "description": "Tesoro website homepage",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "01-tesoro-crm-homepage.png",
+      "category": "marketing-website",
+      "module": "homepage",
+      "description": "Alternative homepage screenshot",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "02-signup-page.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "04-login-page.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Login page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "05-signup-page-step1.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 1",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "06-signup-form-filled-step1.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 1 filled",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "07-signup-step2-job-title.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 2 job title",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "08-signup-step2-filled.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 2 filled",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "09-signup-step3-company.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 3 company",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "10-signup-step3-filled.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Signup flow - step 3 filled",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "11-verification-code-screen.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Email verification code screen",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "12-mailinator-empty-inbox.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Mailinator empty inbox (test email)",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "13-mailinator-email-received.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Mailinator email received",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "14-verification-email-with-code.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Verification email showing code",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "15-verification-code-entered.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Verification code entered in form",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "16-set-password-page.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Set password page",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "17-password-filled.png",
+      "category": "marketing-website",
+      "module": "authentication",
+      "description": "Password filled in form",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "homepage-navigation-fixed.png",
+      "category": "marketing-website",
+      "module": "navigation",
+      "description": "Homepage navigation fixed layout",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "mega-menu-fixed-spanish.png",
+      "category": "marketing-website",
+      "module": "navigation",
+      "description": "Mega menu fixed Spanish version",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "logo-check.png",
+      "category": "marketing-website",
+      "module": "branding",
+      "description": "Logo verification check",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "pricing-page-emojis.png",
+      "category": "marketing-website",
+      "module": "pricing",
+      "description": "Pricing page with emoji icons",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "smart-matching-translations-fixed.png",
+      "category": "marketing-website",
+      "module": "features",
+      "description": "Smart matching feature with fixed translations",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "website-api-verification-01.png",
+      "category": "marketing-website",
+      "module": "api-page",
+      "description": "API page verification screenshot 1",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "website-api-verification-02-developer-section.png",
+      "category": "marketing-website",
+      "module": "api-page",
+      "description": "API page developer section",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "website-api-verification-03-developer-fixed.png",
+      "category": "marketing-website",
+      "module": "api-page",
+      "description": "API page developer section fixed",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "website-api-03-flexibility-section.png",
+      "category": "marketing-website",
+      "module": "api-page",
+      "description": "API page flexibility section",
+      "created": "2025-10-13"
+    }
+  ],
+  "knowledgeBaseScreenshots": [
+    {
+      "filename": ".playwright-mcp/kb-page-opmaak.png",
+      "category": "knowledge-base",
+      "module": "layout",
+      "description": "Knowledge base page layout issue (before fix)",
+      "created": "2025-10-14",
+      "purpose": "Bug documentation - grid column reversed"
+    },
+    {
+      "filename": ".playwright-mcp/kb-page-fixed-layout.png",
+      "category": "knowledge-base",
+      "module": "layout",
+      "description": "Knowledge base page layout fixed",
+      "created": "2025-10-14",
+      "purpose": "Bug fix verification - correct grid layout"
+    }
+  ],
+  "crmWorkflowScreenshots": [
+    {
+      "filename": "02-dashboard-main-view.png",
+      "category": "crm-workflows",
+      "module": "dashboard",
+      "description": "Dashboard main view from workflow capture",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "03-dashboard-bottom-section.png",
+      "category": "crm-workflows",
+      "module": "dashboard",
+      "description": "Dashboard bottom section with charts",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "03-already-logged-in-dashboard.png",
+      "category": "crm-workflows",
+      "module": "dashboard",
+      "description": "Already logged in dashboard view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "04-activities-list-view.png",
+      "category": "crm-workflows",
+      "module": "activities",
+      "description": "Activities list view from workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "05-activities-board-view.png",
+      "category": "crm-workflows",
+      "module": "activities",
+      "description": "Activities board view from workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "06-leads-list-view.png",
+      "category": "crm-workflows",
+      "module": "leads",
+      "description": "Leads list view from workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "07-deals-kanban-board.png",
+      "category": "crm-workflows",
+      "module": "deals",
+      "description": "Deals Kanban board from workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "08-deal-detail-property-matching-summary.png",
+      "category": "crm-workflows",
+      "module": "deals",
+      "description": "Deal detail showing property matching summary",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "09-deal-property-matching-ai-preselect.png",
+      "category": "crm-workflows",
+      "module": "deals",
+      "description": "Deal property matching with AI preselection",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "10-properties-management-1085-listings.png",
+      "category": "crm-workflows",
+      "module": "properties",
+      "description": "Properties management showing 1,085 listings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "11-contacts-management-58-total.png",
+      "category": "crm-workflows",
+      "module": "contacts",
+      "description": "Contacts management with 58 total contacts",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "12-contact-detail-adrian-prueba.png",
+      "category": "crm-workflows",
+      "module": "contacts",
+      "description": "Contact detail page - Adrian Prueba",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "13-relations-management-7-total.png",
+      "category": "crm-workflows",
+      "module": "relations",
+      "description": "Relations management with 7 companies",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "14-projects-module-1-active.png",
+      "category": "crm-workflows",
+      "module": "projects",
+      "description": "Projects module with 1 active project",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "15-project-detail-finestrat-paradise.png",
+      "category": "crm-workflows",
+      "module": "projects",
+      "description": "Project detail - Finestrat Paradise",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "16-project-property-variants.png",
+      "category": "crm-workflows",
+      "module": "projects",
+      "description": "Project property variants view",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "17-calendar-week-view.png",
+      "category": "crm-workflows",
+      "module": "calendar",
+      "description": "Calendar week view from workflow",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "18-settings-overview-sidebar.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "Settings overview with sidebar navigation",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "19-ai-prompt-templates.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "AI prompt templates configuration",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "20-ai-settings-openai-gpt4o-mini.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "AI settings showing OpenAI GPT-4o-mini",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "21-twilio-settings-integration.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "Twilio integration settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "22-client-portal-settings.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "Client portal configuration settings",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "23-tags-system-7-tags.png",
+      "category": "crm-workflows",
+      "module": "settings",
+      "description": "Tags system showing 7 configured tags",
+      "created": "2025-10-13"
+    }
+  ],
+  "videoSequenceScreenshots": [
+    {
+      "filename": ".playwright-mcp/video-sequences/01-ai-property-matching/01-deals-kanban-full.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "AI property matching sequence - frame 1: Deals Kanban",
+      "created": "2025-10-13",
+      "videoFile": "videos/01-ai-property-matching.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/01-ai-property-matching/02-deal-detail-overview.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "AI property matching sequence - frame 2: Deal detail",
+      "created": "2025-10-13",
+      "videoFile": "videos/01-ai-property-matching.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/01-ai-property-matching/03-property-matching-full-preselect.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "AI property matching sequence - frame 3: Properties preselect",
+      "created": "2025-10-13",
+      "videoFile": "videos/01-ai-property-matching.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/01-ai-property-matching/04-property-detail-modal.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "AI property matching sequence - frame 4: Property modal",
+      "created": "2025-10-13",
+      "videoFile": "videos/01-ai-property-matching.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/01-ai-property-matching/05-deal-summary-17-preselected.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "AI property matching sequence - frame 5: Deal summary with 17 preselected",
+      "created": "2025-10-13",
+      "videoFile": "videos/01-ai-property-matching.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/02-deal-pipeline/01-complete-pipeline-kanban.png",
+      "category": "video-sequences",
+      "module": "deals",
+      "description": "Deal pipeline sequence - frame 1: Complete Kanban",
+      "created": "2025-10-13",
+      "videoFile": "videos/02-deal-pipeline.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/03-contact-management/01-contacts-list-58-total.png",
+      "category": "video-sequences",
+      "module": "contacts",
+      "description": "Contact management sequence - frame 1: Contacts list",
+      "created": "2025-10-13",
+      "videoFile": "videos/03-contact-management.mp4"
+    },
+    {
+      "filename": ".playwright-mcp/video-sequences/04-properties-management/01-properties-list-1085-total.png",
+      "category": "video-sequences",
+      "module": "properties",
+      "description": "Properties management sequence - frame 1: Properties list",
+      "created": "2025-10-13",
+      "videoFile": "videos/04-properties-management.mp4"
+    }
+  ],
+  "miscellaneousScreenshots": [
+    {
+      "filename": "page-2025-10-13T21-19-26-930Z.png",
+      "category": "misc",
+      "module": "unknown",
+      "description": "Timestamped page screenshot",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "page-2025-10-13T21-19-44-958Z.png",
+      "category": "misc",
+      "module": "unknown",
+      "description": "Timestamped page screenshot",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "page-2025-10-13T21-25-00-207Z.png",
+      "category": "misc",
+      "module": "unknown",
+      "description": "Timestamped page screenshot",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "page-2025-10-13T22-31-08-990Z.png",
+      "category": "misc",
+      "module": "unknown",
+      "description": "Timestamped page screenshot",
+      "created": "2025-10-13"
+    },
+    {
+      "filename": "page-2025-10-13T22-31-22-106Z.png",
+      "category": "misc",
+      "module": "unknown",
+      "description": "Timestamped page screenshot",
+      "created": "2025-10-13"
+    }
+  ]
+}
