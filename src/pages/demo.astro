@@ -37,7 +37,7 @@ const timeSlots = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <Badge variant="primary" size="md" class="mb-4">
-          🎥 Gratis Demo
+          Gratis Demo
         </Badge>
         <h1 class="text-4xl lg:text-5xl font-display font-bold text-neutral-900 mb-6">
           Zie Tesoro CRM in actie
@@ -166,7 +166,7 @@ const timeSlots = [
             <div class="space-y-4">
               {demoFeatures.map((feature) => (
                 <div class="flex items-start gap-3">
-                  <div class="text-success text-lg mt-0.5">✓</div>
+                  <span class="icon icon-sm text-success mt-0.5">check_circle</span>
                   <div class="text-neutral-700">{feature}</div>
                 </div>
               ))}
@@ -174,8 +174,9 @@ const timeSlots = [
           </Card>
 
           <Card variant="elevated" padding="lg">
-            <h4 class="font-semibold text-neutral-900 mb-2">
-              📅 Wanneer past het jou?
+            <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+              <span class="icon icon-sm text-primary">calendar_month</span>
+              Wanneer past het jou?
             </h4>
             <p class="text-sm text-neutral-600 mb-4">
               We plannen demo's in op werkdagen tussen 9:00 en 17:00. Niet de juiste tijd beschikbaar? Neem contact op voor alternatieven.
@@ -189,8 +190,9 @@ const timeSlots = [
           </Card>
 
           <Card variant="outline" padding="lg">
-            <h4 class="font-semibold text-neutral-900 mb-2">
-              📞 Liever direct bellen?
+            <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+              <span class="icon icon-sm text-primary">phone</span>
+              Liever direct bellen?
             </h4>
             <p class="text-sm text-neutral-600 mb-4">
               Voor urgente vragen kun je ons altijd bellen op +31 20 123 4567.

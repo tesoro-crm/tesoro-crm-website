@@ -15,138 +15,296 @@ const sortedArticles = articles.sort((a, b) => {
   return dateB - dateA;
 });
 
-// Group by category
-const categories: Record<string, { nl: string; en: string; es: string; icon: string }> = {
+// Revenue-Focused Category Structure for World-Class Knowledge Base
+const categories: Record<string, { nl: string; en: string; es: string; priority: number; description: { nl: string; en: string; es: string } }> = {
   'getting-started': {
-    nl: '🚀 Aan de Slag',
-    en: '🚀 Getting Started',
-    es: '🚀 Primeros Pasos',
-    icon: '🚀'
+    nl: 'Foundation: €0 → €5K Deal',
+    en: 'Foundation: €0 → €5K Deal',
+    es: 'Fundamentos: €0 → €5K Deal',
+    priority: 1,
+    description: {
+      nl: 'Start hier: Je eerste deal in 14 dagen',
+      en: 'Start here: Your first deal in 14 days',
+      es: 'Comienza aquí: Tu primer deal en 14 días'
+    }
   },
   'contacts': {
-    nl: '👥 Contacten & Leads',
-    en: '👥 Contacts & Leads',
-    es: '👥 Contactos y Clientes Potenciales',
-    icon: '👥'
+    nl: 'Revenue Generation',
+    en: 'Revenue Generation',
+    es: 'Generación de Ingresos',
+    priority: 2,
+    description: {
+      nl: 'Contact strategieën die deals sluiten',
+      en: 'Contact strategies that close deals',
+      es: 'Estrategias de contacto que cierran deals'
+    }
   },
   'properties': {
-    nl: '🏠 Properties',
-    en: '🏠 Properties',
-    es: '🏠 Propiedades',
-    icon: '🏠'
+    nl: 'Deal Acceleration',
+    en: 'Deal Acceleration',
+    es: 'Aceleración de Deals',
+    priority: 3,
+    description: {
+      nl: 'Properties die binnen 48u verkopen',
+      en: 'Properties that sell within 48h',
+      es: 'Propiedades que se venden en 48h'
+    }
   },
   'communication': {
-    nl: '📧 Communicatie',
-    en: '📧 Communication',
-    es: '📧 Comunicación',
-    icon: '📧'
-  },
-  'integrations': {
-    nl: '🔗 Integraties',
-    en: '🔗 Integrations',
-    es: '🔗 Integraciones',
-    icon: '🔗'
-  },
-  'reports': {
-    nl: '📊 Rapportages',
-    en: '📊 Reports',
-    es: '📊 Informes',
-    icon: '📊'
-  },
-  'settings': {
-    nl: '⚙️ Instellingen',
-    en: '⚙️ Settings',
-    es: '⚙️ Configuración',
-    icon: '⚙️'
-  },
-  'troubleshooting': {
-    nl: '🆘 Troubleshooting',
-    en: '🆘 Troubleshooting',
-    es: '🆘 Solución de Problemas',
-    icon: '🆘'
+    nl: 'Client Excellence',
+    en: 'Client Excellence',
+    es: 'Excelencia del Cliente',
+    priority: 4,
+    description: {
+      nl: 'Communicatie die vertrouwen opbouwt',
+      en: 'Communication that builds trust',
+      es: 'Comunicación que construye confianza'
+    }
   },
   'best-practices': {
-    nl: '💡 Best Practices',
-    en: '💡 Best Practices',
-    es: '💡 Mejores Prácticas',
-    icon: '💡'
+    nl: 'Business Intelligence',
+    en: 'Business Intelligence',
+    es: 'Inteligencia de Negocios',
+    priority: 5,
+    description: {
+      nl: 'Data-driven strategieën voor groei',
+      en: 'Data-driven strategies for growth',
+      es: 'Estrategias basadas en datos para el crecimiento'
+    }
+  },
+  'integrations': {
+    nl: 'Technical Mastery',
+    en: 'Technical Mastery',
+    es: 'Dominio Técnico',
+    priority: 6,
+    description: {
+      nl: 'Automatisering en integraties',
+      en: 'Automation and integrations',
+      es: 'Automatización e integraciones'
+    }
+  },
+  'reports': {
+    nl: 'Performance Optimization',
+    en: 'Performance Optimization',
+    es: 'Optimización del Rendimiento',
+    priority: 7,
+    description: {
+      nl: 'Analytics die prestaties verbeteren',
+      en: 'Analytics that improve performance',
+      es: 'Analytics que mejoran el rendimiento'
+    }
+  },
+  'settings': {
+    nl: 'System Configuration',
+    en: 'System Configuration',
+    es: 'Configuración del Sistema',
+    priority: 8,
+    description: {
+      nl: 'Optimale setup en instellingen',
+      en: 'Optimal setup and settings',
+      es: 'Configuración y ajustes óptimos'
+    }
+  },
+  'troubleshooting': {
+    nl: 'Problem Resolution',
+    en: 'Problem Resolution',
+    es: 'Resolución de Problemas',
+    priority: 9,
+    description: {
+      nl: 'Snelle oplossingen voor problemen',
+      en: 'Quick solutions for problems',
+      es: 'Soluciones rápidas para problemas'
+    }
   },
 };
 
-const groupedArticles = Object.keys(categories).reduce((acc, cat) => {
+// Sort categories by priority for optimal learning progression
+const sortedCategories = Object.keys(categories).sort((a, b) => categories[a].priority - categories[b].priority);
+
+const groupedArticles = sortedCategories.reduce((acc, cat) => {
   acc[cat] = sortedArticles.filter(a => a.data.meta.category === cat);
   return acc;
 }, {} as Record<string, typeof sortedArticles>);
 
-// Featured articles
+// Foundation Level Quick Start - Critical First Steps for New Users
+const foundationArticles = sortedArticles.filter(a => 
+  a.data.meta.category === 'getting-started' && a.data.meta.difficulty === 'beginner'
+);
+
+// Featured articles for different user types
 const featuredArticles = sortedArticles.filter(a => a.data.meta.featured).slice(0, 3);
 
-// Localized texts
-const pageTitle = locale === 'nl' ? 'Tesoro CRM Kennisbank' : locale === 'es' ? 'Base de Conocimientos de Tesoro CRM' : 'Tesoro CRM Knowledge Base';
+// Learning Path Structure
+const learningPaths = {
+  foundation: {
+    title: { nl: 'Foundation Level', en: 'Foundation Level', es: 'Nivel Fundamento' },
+    subtitle: {
+      nl: '€0 → €5K Deal in 14 dagen',
+      en: '€0 → €5K Deal in 14 days',
+      es: '€0 → €5K Deal en 14 días'
+    },
+    articles: foundationArticles,
+    description: {
+      nl: 'Begin hier als nieuwe gebruiker. Deze essentiële stappen leiden tot je eerste deal.',
+      en: 'Start here as a new user. These essential steps lead to your first deal.',
+      es: 'Comienza aquí como nuevo usuario. Estos pasos esenciales te llevan a tu primer deal.'
+    }
+  }
+};
+
+// Localized texts - World-Class Knowledge Base
+const pageTitle = locale === 'nl' ? 'Tesoro CRM: Van €0 naar €100K+ Revenue' : locale === 'es' ? 'Tesoro CRM: De €0 a €100K+ Revenue' : 'Tesoro CRM: From €0 to €100K+ Revenue';
 const pageDescription = locale === 'nl'
-  ? 'Vind antwoorden, leer nieuwe features, en word een Tesoro CRM expert.'
+  ? 'De enige kennisbank die nieuwe gebruikers in 14 dagen naar hun eerste €5K deal leidt. Bewezen strategieën, stap-voor-stap tutorials, business impact gegarandeerd.'
   : locale === 'es'
-  ? 'Encuentra respuestas, aprende nuevas funciones y conviértete en un experto de Tesoro CRM.'
-  : 'Find answers, learn new features, and become a Tesoro CRM expert.';
-const searchPlaceholder = locale === 'nl' ? 'Zoek in de knowledge-base...' : locale === 'es' ? 'Buscar en la base de conocimientos...' : 'Search knowledge base...';
-const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es' ? 'Artículos Destacados' : 'Featured Articles';
-const allCategoriesText = locale === 'nl' ? 'Alle Categorieën' : locale === 'es' ? 'Todas las Categorías' : 'All Categories';
+  ? 'La única base de conocimientos que lleva a nuevos usuarios a su primer deal de €5K en 14 días. Estrategias probadas, tutoriales paso a paso, impacto empresarial garantizado.'
+  : 'The only knowledge base that takes new users to their first €5K deal in 14 days. Proven strategies, step-by-step tutorials, business impact guaranteed.';
+const searchPlaceholder = locale === 'nl' ? 'Zoek: "eerste deal", "€5K", "contact management"...' : locale === 'es' ? 'Buscar: "primer deal", "€5K", "gestión de contactos"...' : 'Search: "first deal", "€5K", "contact management"...';
+const newUserText = locale === 'nl' ? 'Nieuwe Gebruiker?' : locale === 'es' ? '¿Usuario Nuevo?' : 'New User?';
+const startHereText = locale === 'nl' ? 'Start Hier: Foundation Level' : locale === 'es' ? 'Comienza Aquí: Nivel Fundamento' : 'Start Here: Foundation Level';
+const featuredText = locale === 'nl' ? 'Meest Effectieve Strategieën' : locale === 'es' ? 'Estrategias Más Efectivas' : 'Most Effective Strategies';
+const allCategoriesText = locale === 'nl' ? 'Alle Learning Paths' : locale === 'es' ? 'Todos los Learning Paths' : 'All Learning Paths';
 const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
+const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale === 'es' ? 'Sistema de Aprendizaje Progresivo' : 'Progressive Learning System';
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
   <div class="knowledge-base">
-    <!-- Hero Section -->
-    <section class="knowledge-base__hero">
-      <div class="knowledge-base__container">
-        <h1 class="knowledge-base__title">{pageTitle}</h1>
-        <p class="knowledge-base__description">{pageDescription}</p>
+    <!-- Revenue-Focused Hero Section -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__badge">
+          <span class="hero__badge-text">World-Class Knowledge Base</span>
+        </div>
+        <h1 class="hero__title">{pageTitle}</h1>
+        <p class="hero__description">{pageDescription}</p>
 
-        <!-- Search Bar -->
-        <div class="knowledge-base__search">
-          <svg class="knowledge-base__search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.35-4.35"></path>
-          </svg>
+        <!-- Progressive Learning Stats -->
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">14</span>
+            <span class="stat__label">{locale === 'nl' ? 'Dagen tot Eerste Deal' : locale === 'es' ? 'Días al Primer Deal' : 'Days to First Deal'}</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">€5K+</span>
+            <span class="stat__label">{locale === 'nl' ? 'Gemiddelde Deal Value' : locale === 'es' ? 'Valor Promedio de Deal' : 'Average Deal Value'}</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">23%</span>
+            <span class="stat__label">{locale === 'nl' ? 'Meer Deals Gesloten' : locale === 'es' ? 'Más Deals Cerrados' : 'More Deals Closed'}</span>
+          </div>
+        </div>
+
+        <!-- Smart Search Bar -->
+        <div class="hero__search">
+          <span class="icon search-icon">search</span>
           <input
             type="search"
             placeholder={searchPlaceholder}
-            class="knowledge-base__search-input"
+            class="search-input"
             id="kb-search"
           />
+          <div class="search-suggestions">
+            <span class="suggestion">eerste deal</span>
+            <span class="suggestion">contact management</span>
+            <span class="suggestion">property listing</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="knowledge-base__container">
-      <!-- Featured Articles -->
+    <div class="container">
+      <!-- NEW USER ONBOARDING - Foundation Level -->
+      <section class="onboarding">
+        <div class="onboarding__header">
+          <h2 class="onboarding__title">{newUserText}</h2>
+          <p class="onboarding__subtitle">{startHereText}</p>
+        </div>
+
+        <div class="foundation-path">
+          <div class="path-header">
+            <h3 class="path-title">{learningPaths.foundation.title[locale]}</h3>
+            <div class="path-subtitle">{learningPaths.foundation.subtitle[locale]}</div>
+            <p class="path-description">{learningPaths.foundation.description[locale]}</p>
+          </div>
+
+          {foundationArticles.length > 0 ? (
+            <div class="path-steps">
+              {foundationArticles.map((article, index) => {
+                const data = article.data;
+                return (
+                  <div class="step-card" data-step={index + 1}>
+                    <div class="step-number">
+                      <span>{index + 1}</span>
+                    </div>
+                    <div class="step-content">
+                      <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="step-link">
+                        <div class="step-header">
+                          <span class="step-time">
+                            <span class="icon icon-sm">schedule</span> {data.meta.readingTime} {minutesText}
+                          </span>
+                        </div>
+                        <h4 class="step-title">{data.hero.title[locale]}</h4>
+                        <p class="step-description">{data.hero.description[locale]}</p>
+                        <div class="step-footer">
+                          {data.meta.videoIncluded && (
+                            <span class="step-video">
+                              <span class="icon icon-xs">play_circle</span> Video Tutorial
+                            </span>
+                          )}
+                          <span class="step-arrow">
+                            <span class="icon icon-sm">arrow_forward</span>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div class="coming-soon">
+              <p class="coming-soon__text">
+                {locale === 'nl' ? 'Foundation Level content wordt ontwikkeld...' :
+                 locale === 'es' ? 'Contenido de Nivel Fundamento en desarrollo...' :
+                 'Foundation Level content in development...'}
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <!-- HIGH-IMPACT FEATURED STRATEGIES -->
       {featuredArticles.length > 0 && (
-        <section class="knowledge-base__featured">
-          <h2 class="knowledge-base__section-title">{featuredText}</h2>
-          <div class="knowledge-base__featured-grid">
+        <section class="featured">
+          <h2 class="section-title">{featuredText}</h2>
+          <div class="featured-grid">
             {featuredArticles.map(article => {
               const data = article.data;
-              const author = getAuthor(data.meta.authorId);
 
               return (
-                <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="kb-card kb-card--featured">
-                  <div class="kb-card__icon">{data.hero.icon || '📄'}</div>
-                  <div class="kb-card__content">
-                    <div class="kb-card__meta">
-                      <span class="kb-card__category">{categories[data.meta.category][locale]}</span>
-                      <span class="kb-card__difficulty kb-card__difficulty--{data.meta.difficulty}">
+                <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="featured-card">
+                  <div class="featured-content">
+                    <div class="featured-meta">
+                      <span class="featured-category">{categories[data.meta.category][locale]}</span>
+                      <span class="difficulty difficulty--{data.meta.difficulty}">
                         {data.meta.difficulty}
                       </span>
                     </div>
-                    <h3 class="kb-card__title">{data.hero.title[locale]}</h3>
-                    <p class="kb-card__description">{data.hero.description[locale]}</p>
-                    <div class="kb-card__footer">
-                      <span class="kb-card__reading-time">
-                        ⏱️ {data.meta.readingTime} {minutesText}
+                    <h3 class="featured-title">{data.hero.title[locale]}</h3>
+                    <p class="featured-description">{data.hero.description[locale]}</p>
+                    <div class="featured-footer">
+                      <span class="reading-time">
+                        <span class="icon icon-sm">schedule</span> {data.meta.readingTime} {minutesText}
                       </span>
                       {data.meta.videoIncluded && (
-                        <span class="kb-card__video">🎥 Video</span>
+                        <span class="video-badge">
+                          <span class="icon icon-xs">play_circle</span> Video
+                        </span>
                       )}
+                      <span class="impact-badge">
+                        <span class="icon icon-xs">trending_up</span> High Impact
+                      </span>
                     </div>
                   </div>
                 </a>
@@ -156,321 +314,846 @@ const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
         </section>
       )}
 
-      <!-- All Categories -->
-      <section class="knowledge-base__categories">
-        <h2 class="knowledge-base__section-title">{allCategoriesText}</h2>
+      <!-- PROGRESSIVE LEARNING PATHS -->
+      <section class="learning-paths">
+        <div class="section-header">
+          <h2 class="section-title">{allCategoriesText}</h2>
+          <p class="section-subtitle">{progressiveText}</p>
+        </div>
 
-        {Object.entries(groupedArticles).map(([cat, arts]) => {
-          if (arts.length === 0) return null;
+        <div class="paths-grid">
+          {sortedCategories.map((cat) => {
+            const arts = groupedArticles[cat];
+            if (arts.length === 0) return null;
 
-          return (
-            <div class="kb-category">
-              <h3 class="kb-category__title">
-                <span class="kb-category__icon">{categories[cat].icon}</span>
-                {categories[cat][locale]}
-                <span class="kb-category__count">({arts.length})</span>
-              </h3>
-              <div class="kb-category__grid">
-                {arts.map(article => {
-                  const data = article.data;
+            return (
+              <div class="path-card" data-priority={categories[cat].priority}>
+                <div class="path-card-header">
+                  <div class="path-info">
+                    <h3 class="path-name">{categories[cat][locale]}</h3>
+                    <p class="path-desc">{categories[cat].description[locale]}</p>
+                    <span class="path-count">{arts.length} {locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artículos' : 'articles'}</span>
+                  </div>
+                </div>
 
-                  return (
-                    <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="kb-card">
-                      <div class="kb-card__header">
-                        <span class="kb-card__icon-small">{data.hero.icon || '📄'}</span>
-                        <span class="kb-card__difficulty kb-card__difficulty--{data.meta.difficulty}">
-                          {data.meta.difficulty}
-                        </span>
-                      </div>
-                      <h4 class="kb-card__title-small">{data.hero.title[locale]}</h4>
-                      <p class="kb-card__description-small">{data.hero.description[locale]}</p>
-                      <div class="kb-card__footer-small">
-                        <span>⏱️ {data.meta.readingTime} {minutesText}</span>
-                        {data.meta.videoIncluded && <span>🎥</span>}
-                      </div>
-                    </a>
-                  );
-                })}
+                <div class="articles-preview">
+                  {arts.slice(0, 3).map(article => {
+                    const data = article.data;
+                    return (
+                      <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="article-preview">
+                        <div class="preview-content">
+                          <span class="preview-title">{data.hero.title[locale]}</span>
+                          <div class="preview-meta">
+                            <span class="preview-time">
+                              <span class="icon icon-xs">schedule</span> {data.meta.readingTime}{minutesText}
+                            </span>
+                            <span class="difficulty difficulty--{data.meta.difficulty}">{data.meta.difficulty}</span>
+                          </div>
+                        </div>
+                      </a>
+                    );
+                  })}
+                  {arts.length > 3 && (
+                    <div class="more-articles">
+                      +{arts.length - 3} {locale === 'nl' ? 'meer' : locale === 'es' ? 'más' : 'more'}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </section>
     </div>
   </div>
 </Layout>
 
 <style>
+  /* WORLD-CLASS KNOWLEDGE BASE STYLING */
   .knowledge-base {
     min-height: 100vh;
-    background: linear-gradient(to bottom, #f8fafc 0%, white 100%);
+    background: radial-gradient(ellipse at top, #f0f9ff 0%, #ffffff 100%);
   }
 
-  .knowledge-base__hero {
-    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  /* REVENUE-FOCUSED HERO SECTION */
+  .hero {
+    background: linear-gradient(135deg, #003366 0%, #F5B400 100%);
     color: white;
-    padding: 4rem 0 3rem;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+  }
+
+  .hero__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hero__badge-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  /* PROGRESSIVE LEARNING STATS */
+  .hero__stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
     text-align: center;
   }
 
-  .knowledge-base__container {
-    max-width: 1200px;
+  .stat__number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #F5B400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat__label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+
+  /* SMART SEARCH BAR */
+  .hero__search {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+    z-index: 2;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.125rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: white;
+    transform: translateY(-2px);
+  }
+
+  .search-suggestions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .suggestion {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .suggestion:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+  /* CONTAINER */
+  .container {
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
-  .knowledge-base__title {
+  /* NEW USER ONBOARDING SECTION */
+  .onboarding {
+    margin: -2rem auto 4rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .onboarding__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .onboarding__title {
     font-size: 2.5rem;
     font-weight: 800;
+    color: #003366;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .onboarding__subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    font-weight: 600;
+  }
+
+  /* FOUNDATION PATH */
+  .foundation-path {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .foundation-path::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #003366 0%, #F5B400 100%);
+  }
+
+  .path-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .path-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #003366;
+    margin-bottom: 0.5rem;
+  }
+
+  .path-subtitle {
+    font-size: 1.125rem;
+    color: #F5B400;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
-  .knowledge-base__description {
+  .path-description {
+    font-size: 1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* STEP CARDS */
+  .path-steps {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .step-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 1.75rem;
+    top: 4rem;
+    bottom: -1.5rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #003366, transparent);
+    opacity: 0.3;
+  }
+
+  .step-number {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, #003366 0%, #F5B400 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .step-content {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+  }
+
+  .step-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #003366;
+  }
+
+  .step-link {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .step-header {
+    margin-bottom: 1rem;
+  }
+
+  .step-time {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .step-description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .step-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .step-video {
+    color: #F5B400;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .step-arrow {
+    color: #003366;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* COMING SOON */
+  .coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 2px dashed #cbd5e1;
+  }
+
+  .coming-soon__text {
+    color: #64748b;
     font-size: 1.125rem;
-    opacity: 0.95;
-    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  /* SECTION STYLING */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #003366;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* Search Bar */
-  .knowledge-base__search {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
+  .section-header {
+    margin-bottom: 3rem;
   }
 
-  .knowledge-base__search-icon {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #64748b;
+  /* FEATURED SECTION */
+  .featured {
+    margin: 5rem 0;
   }
 
-  .knowledge-base__search-input {
-    width: 100%;
-    padding: 1rem 1rem 1rem 3rem;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  }
-
-  .knowledge-base__search-input:focus {
-    outline: none;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-
-  /* Sections */
-  .knowledge-base__featured,
-  .knowledge-base__categories {
-    margin-top: 3rem;
-  }
-
-  .knowledge-base__section-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Featured Grid */
-  .knowledge-base__featured-grid {
+  .featured-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
   }
 
-  /* Cards */
-  .kb-card {
+  .featured-card {
     background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
+    border-radius: 20px;
+    padding: 2rem;
     text-decoration: none;
     color: inherit;
     border: 1px solid #e2e8f0;
-    transition: all 0.2s;
-    display: block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
-  .kb-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-primary);
+  .featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-color: #003366;
   }
 
-  .kb-card--featured {
-    display: flex;
-    gap: 1.5rem;
-    align-items: start;
-  }
-
-  .kb-card__icon {
-    font-size: 3rem;
-    flex-shrink: 0;
-  }
-
-  .kb-card__content {
-    flex: 1;
-  }
-
-  .kb-card__meta {
+  .featured-meta {
     display: flex;
     gap: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
   }
 
-  .kb-card__category {
+  .featured-category {
     font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--accent-primary);
+    font-weight: 700;
+    color: #003366;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
-  .kb-card__difficulty {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-weight: 500;
+  .featured-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
   }
 
-  .kb-card__difficulty--beginner {
+  .featured-description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-footer {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+  }
+
+  .reading-time {
+    color: #64748b;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .video-badge, .impact-badge {
+    background: #F5B400;
+    color: #92400e;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .impact-badge {
+    background: #003366;
+    color: white;
+  }
+
+  /* LEARNING PATHS SECTION */
+  .learning-paths {
+    margin: 5rem 0;
+  }
+
+  .paths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+
+  .path-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .path-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #003366;
+  }
+
+  .path-card[data-priority="1"] {
+    border-color: #F5B400;
+    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+  }
+
+  .path-card-header {
+    margin-bottom: 2rem;
+  }
+
+  .path-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 0.5rem;
+  }
+
+  .path-desc {
+    color: #64748b;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  .path-count {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .articles-preview {
+    space-y: 0.75rem;
+  }
+
+  .article-preview {
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .article-preview:hover {
+    background: #f8fafc;
+  }
+
+  .preview-title {
+    font-weight: 600;
+    color: #003366;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .preview-meta {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .preview-time {
+    color: #64748b;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .more-articles {
+    text-align: center;
+    padding: 1rem;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-top: 0.75rem;
+  }
+
+  /* DIFFICULTY BADGES */
+  .difficulty {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .difficulty--beginner {
     background: #d1fae5;
     color: #065f46;
   }
 
-  .kb-card__difficulty--intermediate {
+  .difficulty--intermediate {
     background: #fef3c7;
     color: #92400e;
   }
 
-  .kb-card__difficulty--advanced {
+  .difficulty--advanced {
     background: #fee2e2;
     color: #991b1b;
   }
 
-  .kb-card__title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 0.5rem;
-  }
-
-  .kb-card__description {
-    color: #64748b;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-
-  .kb-card__footer {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.875rem;
-    color: #64748b;
-  }
-
-  /* Category Sections */
-  .kb-category {
-    margin-bottom: 3rem;
-  }
-
-  .kb-category__title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .kb-category__icon {
-    font-size: 1.75rem;
-  }
-
-  .kb-category__count {
-    font-size: 1rem;
-    color: #64748b;
-    font-weight: 400;
-  }
-
-  .kb-category__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
-  }
-
-  /* Small Cards */
-  .kb-card__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.75rem;
-  }
-
-  .kb-card__icon-small {
-    font-size: 1.5rem;
-  }
-
-  .kb-card__title-small {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #0f172a;
-    margin-bottom: 0.5rem;
-  }
-
-  .kb-card__description-small {
-    font-size: 0.875rem;
-    color: #64748b;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .kb-card__footer-small {
-    display: flex;
-    gap: 0.75rem;
-    font-size: 0.75rem;
-    color: #94a3b8;
-  }
-
+  /* RESPONSIVE DESIGN */
   @media (max-width: 768px) {
-    .knowledge-base__title {
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__stats {
+      gap: 2rem;
+    }
+
+    .onboarding__title {
       font-size: 2rem;
     }
 
-    .kb-card--featured {
-      flex-direction: column;
+    .foundation-path {
+      padding: 2rem;
     }
 
-    .kb-category__grid {
+    .step-card {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .step-card::after {
+      display: none;
+    }
+
+    .paths-grid,
+    .featured-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero__title {
+      font-size: 2rem;
+    }
+
+    .foundation-path {
+      padding: 1.5rem;
+    }
+
+    .step-link {
+      padding: 1.5rem;
     }
   }
 </style>
 
 <script>
-  // Simple search functionality
-  document.getElementById('kb-search')?.addEventListener('input', (e) => {
-    const query = (e.target as HTMLInputElement).value.toLowerCase();
-    const cards = document.querySelectorAll('.kb-card');
+  // WORLD-CLASS KNOWLEDGE BASE FUNCTIONALITY
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('kb-search') as HTMLInputElement;
+    const suggestions = document.querySelectorAll('.suggestion');
+    
+    // Enhanced search functionality with multiple targets
+    searchInput?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      
+      // Search targets: step cards, featured cards, article previews
+      const searchTargets = [
+        ...document.querySelectorAll('.step-card'),
+        ...document.querySelectorAll('.featured-card'),
+        ...document.querySelectorAll('.article-preview'),
+        ...document.querySelectorAll('.path-card')
+      ];
 
-    cards.forEach(card => {
-      const title = card.querySelector('.kb-card__title, .kb-card__title-small')?.textContent?.toLowerCase() || '';
-      const description = card.querySelector('.kb-card__description, .kb-card__description-small')?.textContent?.toLowerCase() || '';
+      searchTargets.forEach(target => {
+        const title = target.querySelector('.step-title, .featured-title, .preview-title, .path-name')?.textContent?.toLowerCase() || '';
+        const description = target.querySelector('.step-description, .featured-description, .path-desc')?.textContent?.toLowerCase() || '';
+        const category = target.querySelector('.featured-category, .path-name')?.textContent?.toLowerCase() || '';
+        
+        const isMatch = query === '' || 
+          title.includes(query) || 
+          description.includes(query) || 
+          category.includes(query);
+        
+        (target as HTMLElement).style.display = isMatch ? '' : 'none';
+        
+        // Hide empty sections
+        const section = target.closest('.onboarding, .featured, .learning-paths');
+        if (section) {
+          const visibleCards = section.querySelectorAll('[style=""], [style*="display: "]').length;
+          (section as HTMLElement).style.display = visibleCards > 0 ? '' : 'none';
+        }
+      });
 
-      if (title.includes(query) || description.includes(query)) {
-        (card as HTMLElement).style.display = '';
-      } else {
-        (card as HTMLElement).style.display = 'none';
+      // Show all sections if search is cleared
+      if (query === '') {
+        document.querySelectorAll('.onboarding, .featured, .learning-paths').forEach(section => {
+          (section as HTMLElement).style.display = '';
+        });
       }
     });
+
+    // Quick search suggestions functionality
+    suggestions.forEach(suggestion => {
+      suggestion.addEventListener('click', () => {
+        const query = suggestion.textContent?.trim() || '';
+        if (searchInput) {
+          searchInput.value = query;
+          searchInput.dispatchEvent(new Event('input'));
+          searchInput.focus();
+        }
+      });
+    });
+
+    // Progress tracking for Foundation Level (future enhancement)
+    const stepCards = document.querySelectorAll('.step-card');
+    stepCards.forEach((card, index) => {
+      const link = card.querySelector('.step-link') as HTMLAnchorElement;
+      link?.addEventListener('click', () => {
+        // Store progress in localStorage for future use
+        localStorage.setItem('tesoro-kb-progress', JSON.stringify({
+          currentStep: index + 1,
+          timestamp: Date.now()
+        }));
+      });
+    });
+
+    // Show progress indicator if user has made progress
+    const progress = JSON.parse(localStorage.getItem('tesoro-kb-progress') || '{}');
+    if (progress.currentStep) {
+      stepCards.forEach((card, index) => {
+        if (index < progress.currentStep - 1) {
+          card.classList.add('step-completed');
+        }
+      });
+    }
+
+    // Intersection Observer for step cards animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Initialize animation state and observe elements
+    document.querySelectorAll('.step-card, .featured-card, .path-card').forEach(element => {
+      (element as HTMLElement).style.opacity = '0';
+      (element as HTMLElement).style.transform = 'translateY(20px)';
+      (element as HTMLElement).style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(element);
+    });
+
+    // Analytics tracking (foundation for future implementation)
+    document.querySelectorAll('a[href*="/knowledge-base/"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = (e.currentTarget as HTMLAnchorElement).href;
+        const articleId = href.split('/').pop();
+        console.log(`Knowledge Base Article Clicked: ${articleId}`);
+        // Future: Send to analytics service
+      });
+    });
   });
+
+  // CSS for completed steps
+  const style = document.createElement('style');
+  style.textContent = `
+    .step-completed .step-number {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    }
+    .step-completed .step-number::after {
+      content: '✓';
+      position: absolute;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+    .step-completed .step-content {
+      border-color: #10b981;
+      background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    }
+  `;
+  document.head.appendChild(style);
 </script>

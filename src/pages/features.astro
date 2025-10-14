@@ -9,89 +9,43 @@ import type { Language } from '../i18n/config';
 const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
 
-const coreFeatures = [
-  {
-    title: 'Slimme Property-Klant Matching',
-    description: 'Geautomatiseerde matching 2x per dag. AI leert van je keuzes en verbetert suggesties.',
-    icon: '🎯',
-    href: '/features/smart-matching',
-    benefits: ['Bespaart 3+ uur per dag', 'AI-gestuurde suggesties', 'Zelf controleren welke properties'],
-  },
-  {
-    title: 'Visuele Deal Pipeline',
-    description: 'Kanban-stijl pipeline van Proposed naar Closed. Drag & drop functionaliteit.',
-    icon: '📋',
-    href: '/features/deal-pipeline',
-    benefits: ['Overzichtelijke deal tracking', 'Geautomatiseerde alerts', 'Intuïtieve interface'],
-  },
-  {
-    title: 'Klantportaal met Feedback',
-    description: 'Klanten kunnen properties markeren als interessant. Real-time sync met CRM.',
-    icon: '👥',
-    href: '/features/customer-portal',
-    benefits: ['Real-time klantfeedback', 'Beveiligde klantentoegang', 'Automatische status updates'],
-  },
-  {
-    title: 'E-mail Integratie',
-    description: 'Volledige sync met Gmail en Outlook. Alle communicatie gekoppeld aan deals.',
-    icon: '📧',
-    href: '/features/email-integration',
-    benefits: ['Gmail & Outlook sync', 'E-mails verzenden vanuit CRM', 'Communicatie geschiedenis'],
-  },
-  {
-    title: 'Property Management',
-    description: 'Complete property database met MLS import/export en listing management.',
-    icon: '🏠',
-    href: '/features/property-management',
-    benefits: ['MLS XML integratie', 'Automatisch publiceren', 'Property-klant tracking'],
-  },
-  {
-    title: 'Rapportages & Analytics',
-    description: 'Deal analytics, conversie rates en performance metrics voor je team.',
-    icon: '📊',
-    href: '/features/reporting-analytics',
-    benefits: ['Conversie analyse', 'Performance tracking', 'Revenue forecasting'],
-  },
-];
-
-const integrations = [
-  { name: 'Gmail', logo: '📧', category: 'Email' },
-  { name: 'Outlook', logo: '📨', category: 'Email' },
-  { name: 'MLS Systems', logo: '🏠', category: 'Properties' },
-  { name: 'Funda', logo: '🏡', category: 'Properties' },
-  { name: 'Idealista', logo: '🏘️', category: 'Properties' },
-  { name: 'WhatsApp', logo: '💬', category: 'Messaging' },
-  { name: 'Google Calendar', logo: '📅', category: 'Calendar' },
-  { name: 'Microsoft 365', logo: '💼', category: 'Productivity' },
+// Feature definitions with hrefs (kept minimal, only structure)
+const featureHrefs = [
+  '/features/smart-matching',
+  '/features/deal-pipeline',
+  '/features/client-portal',
+  '/features/email-integration',
+  '/features/property-management',
+  '/features/reporting-analytics',
+  '/website-api',
 ];
 ---
 
-<Layout 
-  title="Tesoro CRM Features - Complete Overzicht"
-  description="Ontdek alle krachtige features van Tesoro CRM: slimme matching, deal pipeline, klantportaal, e-mail integratie en meer."
+<Layout
+  title={t('features_overview.meta_title', locale)}
+  description={t('features_overview.meta_description', locale)}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <Badge variant="primary" size="md" class="mb-6">
-        Alle Features
+        {t('features_overview.hero.badge', locale)}
       </Badge>
-      
+
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
-        Krachtige Tools voor<br>Vastgoedprofessionals
+        {t('features_overview.hero.title', locale)}
       </h1>
-      
+
       <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
-        Van automatische property matching tot complete deal management - 
-        ontdek hoe Tesoro CRM je workflow automatiseert en je verkoop verhoogt.
+        {t('features_overview.hero.description', locale)}
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="primary" size="lg" href={getLocalizedPath('/signup', locale)}>
-          Start 14 Dagen Gratis
+          {t('features_overview.hero.cta_primary', locale)}
         </Button>
         <Button variant="outline" size="lg" href={getLocalizedPath('/demo', locale)}>
-          Bekijk Demo
+          {t('features_overview.hero.cta_secondary', locale)}
         </Button>
       </div>
     </div>
@@ -102,35 +56,34 @@ const integrations = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Zes Krachtige Features
+          {t('features_overview.features_grid.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Alles wat je nodig hebt om je vastgoedverkoop te automatiseren en te optimaliseren.
+          {t('features_overview.features_grid.description', locale)}
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {coreFeatures.map((feature) => (
+        {[1, 2, 3, 4, 5, 6, 7].map((num, index) => (
           <Card variant="default" padding="lg" class="h-full hover:shadow-lg transition-shadow group">
-            <div class="text-4xl mb-4">{feature.icon}</div>
             <h3 class="text-xl font-semibold text-neutral-900 mb-3">
-              {feature.title}
+              {t(`features_overview.features_grid.feature_${num}_title`, locale)}
             </h3>
             <p class="text-neutral-700 mb-4 flex-grow">
-              {feature.description}
+              {t(`features_overview.features_grid.feature_${num}_description`, locale)}
             </p>
-            
+
             <ul class="space-y-2 mb-6">
-              {feature.benefits.map((benefit) => (
+              {[1, 2, 3].map((benefitNum) => (
                 <li class="text-sm text-neutral-600 flex items-center gap-2">
                   <span class="text-success">✓</span>
-                  {benefit}
+                  {t(`features_overview.features_grid.feature_${num}_benefit_${benefitNum}`, locale)}
                 </li>
               ))}
             </ul>
-            
-            <Button variant="outline" href={getLocalizedPath(feature.href, locale)} class="w-full group-hover:bg-primary group-hover:text-white transition-colors">
-              Meer Info
+
+            <Button variant="outline" href={getLocalizedPath(featureHrefs[index], locale)} class="w-full group-hover:bg-primary group-hover:text-white transition-colors">
+              {t('features_overview.features_grid.cta_button', locale)}
             </Button>
           </Card>
         ))}
@@ -143,28 +96,30 @@ const integrations = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Naadloze Integraties
+          {t('features_overview.integrations.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Tesoro integreert met je bestaande tools en workflows. 
-          Geen gedoe met data migratie of nieuwe accounts.
+          {t('features_overview.integrations.description', locale)}
         </p>
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-        {integrations.map((integration) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
           <Card variant="default" padding="md" class="text-center hover:shadow-lg transition-shadow">
-            <div class="text-4xl mb-2">{integration.logo}</div>
-            <div class="font-semibold text-sm text-neutral-900">{integration.name}</div>
-            <div class="text-xs text-neutral-700">{integration.category}</div>
+            <div class="font-semibold text-sm text-neutral-900 mb-1">
+              {t(`features_overview.integrations.integration_${num}_name`, locale)}
+            </div>
+            <div class="text-xs text-neutral-700">
+              {t(`features_overview.integrations.integration_${num}_category`, locale)}
+            </div>
           </Card>
         ))}
       </div>
 
       <div class="text-center">
-        <p class="text-neutral-700 mb-4">Mis je een integratie?</p>
+        <p class="text-neutral-700 mb-4">{t('features_overview.integrations.missing_question', locale)}</p>
         <Button variant="outline" href={getLocalizedPath('/contact', locale)}>
-          Vraag Integratie Aan
+          {t('features_overview.integrations.missing_cta', locale)}
         </Button>
       </div>
     </div>
@@ -176,71 +131,49 @@ const integrations = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Waarom Tesoro CRM?
+            {t('features_overview.value_proposition.title', locale)}
           </h2>
           <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="bg-primary/10 rounded-lg p-2 flex-shrink-0">
-                <span class="text-primary text-xl">⏰</span>
+            {[1, 2, 3].map((num) => (
+              <div class="flex items-start gap-4">
+                <div class="bg-primary/10 rounded-lg p-3 flex-shrink-0">
+                  <div class="w-6 h-6 bg-primary rounded-full"></div>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-neutral-900 mb-2">
+                    {t(`features_overview.value_proposition.benefit_${num}_title`, locale)}
+                  </h3>
+                  <p class="text-neutral-700">
+                    {t(`features_overview.value_proposition.benefit_${num}_description`, locale)}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 class="font-semibold text-neutral-900 mb-2">Bespaar 3+ uur per dag</h3>
-                <p class="text-neutral-700">Automatische matching en workflow automation zorgen ervoor dat je meer tijd hebt voor klanten.</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start gap-4">
-              <div class="bg-primary/10 rounded-lg p-2 flex-shrink-0">
-                <span class="text-primary text-xl">📈</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-neutral-900 mb-2">Verhoog je conversie met 40%</h3>
-                <p class="text-neutral-700">Door betere matching en klantfeedback sluit je meer deals en maak je klanten blijer.</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start gap-4">
-              <div class="bg-primary/10 rounded-lg p-2 flex-shrink-0">
-                <span class="text-primary text-xl">🎯</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-neutral-900 mb-2">Focus op verkopen, niet op administratie</h3>
-                <p class="text-neutral-700">Alle data en communicatie wordt automatisch bijgehouden en gekoppeld.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-        
+
         <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-6 text-center">Complete Package</h3>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6 text-center">
+            {t('features_overview.value_proposition.package_title', locale)}
+          </h3>
           <div class="space-y-3">
-            <div class="flex items-center gap-3">
-              <span class="text-success">✓</span>
-              <span>Alle 6 core features inbegrepen</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="text-success">✓</span>
-              <span>Tot 10 gebruikers</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="text-success">✓</span>
-              <span>Alle integraties included</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="text-success">✓</span>
-              <span>Onbeperkte properties en deals</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="text-success">✓</span>
-              <span>Nederlandse ondersteuning</span>
-            </div>
+            {[1, 2, 3, 4, 5].map((num) => (
+              <div class="flex items-center gap-3">
+                <span class="text-success">✓</span>
+                <span>{t(`features_overview.value_proposition.package_feature_${num}`, locale)}</span>
+              </div>
+            ))}
           </div>
-          
+
           <div class="text-center mt-8">
-            <div class="text-3xl font-bold text-primary mb-2">€99/maand</div>
-            <p class="text-neutral-600 mb-4">Voor het complete pakket</p>
+            <div class="text-3xl font-bold text-primary mb-2">
+              {t('features_overview.value_proposition.package_price', locale)}
+            </div>
+            <p class="text-neutral-600 mb-4">
+              {t('features_overview.value_proposition.package_price_description', locale)}
+            </p>
             <Button variant="primary" href={getLocalizedPath('/pricing', locale)} class="w-full">
-              Bekijk Prijzen
+              {t('features_overview.value_proposition.package_cta', locale)}
             </Button>
           </div>
         </div>
@@ -252,18 +185,17 @@ const integrations = [
   <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar om je verkoop te automatiseren?
+        {t('features_overview.final_cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Start vandaag nog met de 14-dagen gratis trial. 
-        Geen creditcard nodig, opzeggen kan altijd.
+        {t('features_overview.final_cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
-          Start Gratis Trial
+          {t('features_overview.final_cta.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href={getLocalizedPath('/demo', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
-          Bekijk Demo
+          {t('features_overview.final_cta.cta_secondary', locale)}
         </Button>
       </div>
     </div>

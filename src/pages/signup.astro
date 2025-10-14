@@ -40,7 +40,7 @@ const planFeatures = {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <Badge variant="primary" size="md" class="mb-4">
-          🚀 14 Dagen Gratis
+          14 Dagen Gratis
         </Badge>
         <h1 class="text-4xl lg:text-5xl font-display font-bold text-neutral-900 mb-6">
           Start je gratis proefperiode
@@ -242,7 +242,7 @@ const planFeatures = {
             <div class="space-y-3">
               {planFeatures.professional.map((feature) => (
                 <div class="flex items-center gap-3">
-                  <div class="text-success text-sm">✓</div>
+                  <span class="icon icon-xs text-success">check_circle</span>
                   <div class="text-sm text-neutral-700">{feature}</div>
                 </div>
               ))}
@@ -250,8 +250,9 @@ const planFeatures = {
           </Card>
 
           <Card variant="outline" padding="lg">
-            <h4 class="font-semibold text-neutral-900 mb-2">
-              💳 Geen creditcard nodig
+            <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+              <span class="icon icon-sm text-primary">credit_card_off</span>
+              Geen creditcard nodig
             </h4>
             <p class="text-sm text-neutral-600">
               Start je gratis proefperiode zonder betalingsgegevens. Je wordt 7 dagen van tevoren herinnerd aan het einde van de proefperiode.
@@ -259,8 +260,9 @@ const planFeatures = {
           </Card>
 
           <Card variant="outline" padding="lg">
-            <h4 class="font-semibold text-neutral-900 mb-2">
-              🔒 Beveiligd & AVG-compliant
+            <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+              <span class="icon icon-sm text-success">lock</span>
+              Beveiligd & AVG-compliant
             </h4>
             <p class="text-sm text-neutral-600">
               Je gegevens zijn veilig bij ons. We gebruiken end-to-end encryptie en voldoen aan alle AVG eisen.
@@ -273,19 +275,19 @@ const planFeatures = {
       <Card variant="default" padding="lg" class="text-center">
         <div class="flex flex-wrap justify-center items-center gap-8 text-sm text-neutral-600">
           <div class="flex items-center gap-2">
-            <div class="text-success">✓</div>
+            <span class="icon icon-sm text-success">check_circle</span>
             <span>14 dagen gratis</span>
           </div>
           <div class="flex items-center gap-2">
-            <div class="text-success">✓</div>
+            <span class="icon icon-sm text-success">check_circle</span>
             <span>Geen creditcard</span>
           </div>
           <div class="flex items-center gap-2">
-            <div class="text-success">✓</div>
+            <span class="icon icon-sm text-success">check_circle</span>
             <span>Annuleren wanneer je wilt</span>
           </div>
           <div class="flex items-center gap-2">
-            <div class="text-success">✓</div>
+            <span class="icon icon-sm text-success">check_circle</span>
             <span>24/7 support</span>
           </div>
         </div>

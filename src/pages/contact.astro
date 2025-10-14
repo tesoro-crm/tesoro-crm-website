@@ -12,19 +12,19 @@ await loadTranslations(locale);
 
 const contactMethods = [
   {
-    icon: '📧',
+    icon: 'mail',
     title: 'Email',
     description: 'sales@tesoro-crm.nl',
     action: 'mailto:sales@tesoro-crm.nl'
   },
   {
-    icon: '📱',
+    icon: 'chat',
     title: 'WhatsApp',
     description: '+31 6 1234 5678',
     action: 'https://wa.me/31612345678'
   },
   {
-    icon: '📞',
+    icon: 'phone',
     title: 'Telefoon',
     description: '+31 20 123 4567',
     action: 'tel:+31201234567'
@@ -155,7 +155,7 @@ const contactMethods = [
                   href={method.action}
                   class="flex items-center gap-4 p-4 rounded-lg border border-neutral-200 hover:border-primary hover:bg-primary/5 transition-all duration-200 group"
                 >
-                  <div class="text-2xl">{method.icon}</div>
+                  <span class="icon icon-lg text-primary">{method.icon}</span>
                   <div>
                     <div class="font-semibold text-neutral-900 group-hover:text-primary">
                       {method.title}
@@ -164,9 +164,7 @@ const contactMethods = [
                       {method.description}
                     </div>
                   </div>
-                  <div class="ml-auto text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    →
-                  </div>
+                  <span class="ml-auto icon text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
                 </a>
               ))}
             </div>

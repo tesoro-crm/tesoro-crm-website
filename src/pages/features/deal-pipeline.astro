@@ -8,101 +8,9 @@ import type { Language } from '../../i18n/config';
 
 const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
-
-const pipelineStages = [
-  {
-    name: 'Proposed',
-    description: 'Properties voorgesteld aan klant',
-    color: 'bg-blue-100 text-blue-800',
-    count: '12',
-  },
-  {
-    name: 'Pending',
-    description: 'Wachten op klantreactie',
-    color: 'bg-yellow-100 text-yellow-800',
-    count: '8',
-  },
-  {
-    name: 'Interesting',
-    description: 'Klant heeft interesse getoond',
-    color: 'bg-green-100 text-green-800',
-    count: '5',
-  },
-  {
-    name: 'Viewing',
-    description: 'Bezichtiging gepland of uitgevoerd',
-    color: 'bg-purple-100 text-purple-800',
-    count: '3',
-  },
-  {
-    name: 'Offer',
-    description: 'Bod gedaan op de property',
-    color: 'bg-orange-100 text-orange-800',
-    count: '2',
-  },
-  {
-    name: 'Closed',
-    description: 'Deal succesvol afgesloten',
-    color: 'bg-emerald-100 text-emerald-800',
-    count: '1',
-  },
-];
-
-const features = [
-  {
-    title: 'Drag & Drop Interface',
-    description: 'Sleep deals eenvoudig tussen kolommen. Intuïtieve interface die iedereen meteen begrijpt.',
-  },
-  {
-    title: 'Geautomatiseerde Alerts',
-    description: 'Krijg meldingen wanneer deals te lang in één stadium blijven steken.',
-  },
-  {
-    title: 'Deal Geschiedenis',
-    description: 'Volledige tijdlijn van alle acties en communicatie per deal.',
-  },
-  {
-    title: 'Team Overzicht',
-    description: 'Zie in één oogopslag hoe je team presteert en waar knelpunten zitten.',
-  },
-];
-
-const benefits = [
-  {
-    metric: '65%',
-    description: 'sneller van lead naar closing',
-  },
-  {
-    metric: '0',
-    description: 'deals die tussen de mazen vallen',
-  },
-  {
-    metric: '90%',
-    description: 'van makelaars heeft beter overzicht',
-  },
-];
-
-const automation = [
-  {
-    trigger: 'Klant markeert property als interessant',
-    action: 'Deal verplaatst automatisch naar "Interesting"',
-  },
-  {
-    trigger: 'Bezichtiging gepland in agenda',
-    action: 'Deal verplaatst automatisch naar "Viewing"',
-  },
-  {
-    trigger: 'Deal 7 dagen in zelfde stadium',
-    action: 'Automatische reminder naar makelaar',
-  },
-  {
-    trigger: 'Contract getekend',
-    action: 'Deal verplaatst automatisch naar "Closed"',
-  },
-];
 ---
 
-<Layout 
+<Layout
   title={t('feature_pages.deal_pipeline.meta_title', locale)}
   description={t('feature_pages.deal_pipeline.meta_description', locale)}
 >
@@ -114,84 +22,59 @@ const automation = [
           <Badge variant="primary" size="md" class="mb-6">
             {t('feature_pages.deal_pipeline.hero.badge', locale)}
           </Badge>
-          
+
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
             {t('feature_pages.deal_pipeline.hero.title', locale)}
           </h1>
-          
+
           <p class="text-lg sm:text-xl text-neutral-700 mb-8">
             {t('feature_pages.deal_pipeline.hero.description', locale)}
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 mb-8">
-            <Button variant="primary" size="lg" href={getLocalizedPath('/signup', locale)}>
-              {t('feature_pages.deal_pipeline.cta.primary', locale)}
-            </Button>
-            <Button variant="outline" size="lg" href={getLocalizedPath('/demo', locale)}>
-              {t('feature_pages.deal_pipeline.cta.secondary', locale)}
-            </Button>
-          </div>
-
-          <div class="grid grid-cols-3 gap-4">
-            {benefits.map((benefit) => (
-              <div class="text-center">
-                <div class="text-2xl font-bold text-primary mb-1">{benefit.metric}</div>
-                <div class="text-sm text-neutral-600">{benefit.description}</div>
+          <div class="grid grid-cols-3 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-1">
+                {t('feature_pages.deal_pipeline.benefits.deal_types', locale)}
               </div>
-            ))}
+              <div class="text-sm text-neutral-600">
+                {t('feature_pages.deal_pipeline.benefits.deal_types_desc', locale)}
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-1">
+                {t('feature_pages.deal_pipeline.benefits.context', locale)}
+              </div>
+              <div class="text-sm text-neutral-600">
+                {t('feature_pages.deal_pipeline.benefits.context_desc', locale)}
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary mb-1">
+                {t('feature_pages.deal_pipeline.benefits.momentum', locale)}
+              </div>
+              <div class="text-sm text-neutral-600">
+                {t('feature_pages.deal_pipeline.benefits.momentum_desc', locale)}
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="relative">
-          <div class="bg-white rounded-2xl shadow-xl p-6 overflow-hidden">
-            <div class="flex items-center justify-between mb-6">
-              <h3 class="font-semibold text-neutral-900">Pipeline Overzicht</h3>
-              <Badge variant="secondary" size="sm">Live</Badge>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Pipeline Types</h3>
+          <div class="space-y-4">
+            <div class="border-2 border-primary/30 bg-primary/5 rounded-lg p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <Badge variant="primary" size="sm">Seller</Badge>
+                <span class="text-sm font-semibold">8 stages</span>
+              </div>
+              <p class="text-sm text-neutral-700">Mandate → Online → Visits → Offer → Reservation → Deposit → Won/Lost</p>
             </div>
-            
-            <div class="grid grid-cols-3 gap-3">
-              {pipelineStages.slice(0, 3).map((stage) => (
-                <div class="bg-neutral-50 rounded-lg p-3">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-semibold text-neutral-700 uppercase tracking-wide">{stage.name}</span>
-                    <span class={`text-xs px-2 py-1 rounded-full ${stage.color}`}>{stage.count}</span>
-                  </div>
-                  
-                  <div class="space-y-2">
-                    <div class="bg-white rounded p-2 shadow-sm">
-                      <div class="text-xs font-medium">Villa Marbella</div>
-                      <div class="text-xs text-neutral-600">Familie Jansen</div>
-                    </div>
-                    
-                    {stage.count !== '1' && (
-                      <div class="bg-white rounded p-2 shadow-sm">
-                        <div class="text-xs font-medium">Apartment Centro</div>
-                        <div class="text-xs text-neutral-600">Hr. Bakker</div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div class="grid grid-cols-3 gap-3 mt-3">
-              {pipelineStages.slice(3, 6).map((stage) => (
-                <div class="bg-neutral-50 rounded-lg p-3">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-semibold text-neutral-700 uppercase tracking-wide">{stage.name}</span>
-                    <span class={`text-xs px-2 py-1 rounded-full ${stage.color}`}>{stage.count}</span>
-                  </div>
-                  
-                  <div class="space-y-2">
-                    {stage.count !== '0' && (
-                      <div class="bg-white rounded p-2 shadow-sm">
-                        <div class="text-xs font-medium">Penthouse Valencia</div>
-                        <div class="text-xs text-neutral-600">Fam. Rodriguez</div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
+            <div class="border-2 border-secondary/30 bg-secondary/5 rounded-lg p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <Badge variant="secondary" size="sm">Buyer</Badge>
+                <span class="text-sm font-semibold">9 stages</span>
+              </div>
+              <p class="text-sm text-neutral-700">Knowing Property → First Visit → Multiple Visits → Offer → Reservation → 10% Contract → Signing Deed → Won/Lost</p>
             </div>
           </div>
         </div>
@@ -199,66 +82,66 @@ const automation = [
     </div>
   </section>
 
-  <!-- Pipeline Stages Detail -->
+  <!-- Intro Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          {t('feature_pages.deal_pipeline.workflow.title', locale)}
+          {t('feature_pages.deal_pipeline.intro.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          {t('feature_pages.deal_pipeline.hero.description', locale)}
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {pipelineStages.map((stage, index) => (
-          <Card variant="default" padding="lg" class="relative">
-            <div class="flex items-center justify-between mb-4">
-              <div class={`px-3 py-1 rounded-full text-sm font-medium ${stage.color}`}>
-                {stage.name}
-              </div>
-              <div class="text-2xl font-bold text-neutral-400">
-                {index + 1}
-              </div>
-            </div>
-            
-            <h3 class="text-lg font-semibold text-neutral-900 mb-2">
-              Stage {index + 1}: {stage.name}
-            </h3>
-            <p class="text-neutral-700">
-              {stage.description}
-            </p>
-            
-            {index < pipelineStages.length - 1 && (
-              <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-neutral-300"></div>
-            )}
-          </Card>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Grid -->
-  <section class="py-16 lg:py-24 bg-neutral-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          {t('feature_pages.deal_pipeline.benefits.title', locale)}
-        </h2>
-        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          {t('feature_pages.deal_pipeline.benefits.title', locale)}
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto mb-12">
+          {t('feature_pages.deal_pipeline.intro.description', locale)}
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {features.map((feature) => (
-          <Card variant="default" padding="lg" class="h-full">
-            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
-              {feature.title}
+        <Card variant="default" padding="lg" class="border-2 border-primary/30">
+          <Badge variant="primary" size="sm" class="mb-4">Seller Deal</Badge>
+          <h3 class="text-2xl font-semibold text-neutral-900 mb-3">
+            {t('feature_pages.deal_pipeline.intro.seller_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('feature_pages.deal_pipeline.intro.seller_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="border-2 border-secondary/30">
+          <Badge variant="secondary" size="sm" class="mb-4">Buyer Deal</Badge>
+          <h3 class="text-2xl font-semibold text-neutral-900 mb-3">
+            {t('feature_pages.deal_pipeline.intro.buyer_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('feature_pages.deal_pipeline.intro.buyer_description', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seller Deal Pipeline Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <Badge variant="primary" size="md" class="mb-4">Seller Deal</Badge>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('feature_pages.deal_pipeline.seller_deal.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.seller_deal.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((stage) => (
+          <Card variant="default" padding="lg" class="relative">
+            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl font-bold text-primary">{stage}</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+              {t(`feature_pages.deal_pipeline.seller_deal.stage_${stage}_name`, locale)}
             </h3>
-            <p class="text-neutral-700">
-              {feature.description}
+            <p class="text-sm text-neutral-700">
+              {t(`feature_pages.deal_pipeline.seller_deal.stage_${stage}_description`, locale)}
             </p>
           </Card>
         ))}
@@ -266,125 +149,146 @@ const automation = [
     </div>
   </section>
 
-  <!-- Automation Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <!-- Buyer Deal Pipeline Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-secondary/5 to-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12">
+        <Badge variant="secondary" size="md" class="mb-4">Buyer Deal - Most Important</Badge>
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Automatische Pipeline Updates
+          {t('feature_pages.deal_pipeline.buyer_deal.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Deals verplaatsen zich automatisch op basis van klantacties en gebeurtenissen.
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.buyer_deal.description', locale)}
         </p>
       </div>
 
-      <div class="space-y-6">
-        {automation.map((item, index) => (
-          <Card variant="default" padding="lg">
-            <div class="flex items-center gap-6">
-              
-              <div class="flex-1">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <h3 class="font-semibold text-neutral-900 mb-2">Trigger</h3>
-                    <p class="text-neutral-700">{item.trigger}</p>
-                  </div>
-                  
-                  <div>
-                    <h3 class="font-semibold text-neutral-900 mb-2">Automatische Actie</h3>
-                    <p class="text-neutral-700">{item.action}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="text-primary flex-shrink-0">
-                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span class="text-sm font-bold">{index + 1}</span>
-                </div>
-              </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((stage) => (
+          <Card variant="default" padding="lg" class={stage <= 2 ? "border-2 border-warning/50 bg-warning/5" : ""}>
+            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl font-bold text-secondary">{stage}</span>
             </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+              {t(`feature_pages.deal_pipeline.buyer_deal.stage_${stage}_name`, locale)}
+            </h3>
+            <p class="text-sm text-neutral-700 mb-3">
+              {t(`feature_pages.deal_pipeline.buyer_deal.stage_${stage}_description`, locale)}
+            </p>
+            {(stage === 1 || stage === 2) && (
+              <div class="mt-4 p-3 bg-warning/10 rounded-lg border border-warning/30">
+                <p class="text-xs font-medium text-warning-dark">
+                  ⚡ {t(`feature_pages.deal_pipeline.buyer_deal.stage_${stage}_philosophy`, locale)}
+                </p>
+              </div>
+            )}
+          </Card>
+        ))}
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 border-2 border-warning/30">
+        <h3 class="text-2xl font-bold text-neutral-900 mb-4">
+          {t('feature_pages.deal_pipeline.philosophy.title', locale)}
+        </h3>
+        <p class="text-neutral-700 mb-6">
+          {t('feature_pages.deal_pipeline.philosophy.description', locale)}
+        </p>
+        <blockquote class="border-l-4 border-secondary pl-4 italic text-lg text-neutral-700">
+          "{t('feature_pages.deal_pipeline.philosophy.quote', locale)}"
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Context Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('feature_pages.deal_pipeline.complete_context.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.complete_context.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((feature) => (
+          <Card variant="default" padding="md" class="text-center">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-xl font-bold text-primary">{feature}</span>
+            </div>
+            <h4 class="text-sm font-semibold text-neutral-900 mb-2">
+              {t(`feature_pages.deal_pipeline.complete_context.feature_${feature}_title`, locale)}
+            </h4>
+            <p class="text-xs text-neutral-600">
+              {t(`feature_pages.deal_pipeline.complete_context.feature_${feature}_description`, locale)}
+            </p>
           </Card>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- Analytics Section -->
-  <section class="py-16 lg:py-24 bg-neutral-50">
+  <!-- Buyer Deal Special Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-secondary/10 to-primary/10">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
+          <Badge variant="secondary" size="md" class="mb-6">Properties Tab</Badge>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Pipeline Analytics
+            {t('feature_pages.deal_pipeline.buyer_deal_special.title', locale)}
           </h2>
-          
+          <p class="text-lg text-neutral-700 mb-8">
+            {t('feature_pages.deal_pipeline.buyer_deal_special.description', locale)}
+          </p>
+
           <div class="space-y-6">
             <div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-3">Inzichten die Helpen</h3>
-              <ul class="space-y-2">
-                <li class="flex items-center gap-2">
-                  <span class="text-success">✓</span>
-                  <span>Gemiddelde tijd per pipeline stage</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-success">✓</span>
-                  <span>Conversie rates tussen stages</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-success">✓</span>
-                  <span>Knelpunten in je sales proces</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-success">✓</span>
-                  <span>Team performance vergelijking</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-success">✓</span>
-                  <span>Revenue forecasting</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-3">Actie-gerichte Rapporten</h3>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+                {t('feature_pages.deal_pipeline.buyer_deal_special.matching_title', locale)}
+              </h3>
               <p class="text-neutral-700">
-                Krijg wekelijkse rapporten met concrete aanbevelingen om je 
-                conversie te verhogen en je sales cyclus te verkorten.
+                {t('feature_pages.deal_pipeline.buyer_deal_special.matching_description', locale)}
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+                {t('feature_pages.deal_pipeline.buyer_deal_special.integration_title', locale)}
+              </h3>
+              <p class="text-neutral-700">
+                {t('feature_pages.deal_pipeline.buyer_deal_special.integration_description', locale)}
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+                {t('feature_pages.deal_pipeline.buyer_deal_special.philosophy_title', locale)}
+              </h3>
+              <p class="text-neutral-700">
+                {t('feature_pages.deal_pipeline.buyer_deal_special.philosophy_description', locale)}
               </p>
             </div>
           </div>
         </div>
-        
-        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Pipeline Metrics</h3>
-          
-          <div class="space-y-6">
-            <div class="flex justify-between items-center border-b border-neutral-200 pb-3">
-              <span class="text-neutral-700">Proposed → Interesting</span>
-              <span class="text-2xl font-bold text-primary">23%</span>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+          <div class="space-y-4">
+            <div class="border-l-4 border-secondary pl-4">
+              <h4 class="font-semibold text-neutral-900 mb-1">Preselect Lane</h4>
+              <p class="text-sm text-neutral-600">Matched properties before agent approval</p>
             </div>
-            
-            <div class="flex justify-between items-center border-b border-neutral-200 pb-3">
-              <span class="text-neutral-700">Interesting → Viewing</span>
-              <span class="text-2xl font-bold text-secondary">67%</span>
+            <div class="border-l-4 border-primary pl-4">
+              <h4 class="font-semibold text-neutral-900 mb-1">Propose Lane</h4>
+              <p class="text-sm text-neutral-600">Agent-approved properties ready for client</p>
             </div>
-            
-            <div class="flex justify-between items-center border-b border-neutral-200 pb-3">
-              <span class="text-neutral-700">Viewing → Offer</span>
-              <span class="text-2xl font-bold text-success">45%</span>
+            <div class="border-l-4 border-success pl-4">
+              <h4 class="font-semibold text-neutral-900 mb-1">Interested</h4>
+              <p class="text-sm text-neutral-600">Client marked property as interesting</p>
             </div>
-            
-            <div class="flex justify-between items-center">
-              <span class="text-neutral-700">Offer → Closed</span>
-              <span class="text-2xl font-bold text-emerald-600">78%</span>
-            </div>
-          </div>
-          
-          <div class="mt-8 p-4 bg-white rounded-lg">
-            <div class="text-center">
-              <div class="text-3xl font-bold text-primary mb-2">5.2%</div>
-              <div class="text-neutral-700">Overall conversie rate</div>
-              <div class="text-sm text-success mt-1">↑ 40% sinds vorige maand</div>
+            <div class="border-l-4 border-neutral-400 pl-4">
+              <h4 class="font-semibold text-neutral-900 mb-1">Rejected</h4>
+              <p class="text-sm text-neutral-600">Client not interested with reason</p>
             </div>
           </div>
         </div>
@@ -392,39 +296,146 @@ const automation = [
     </div>
   </section>
 
-  <!-- Integration Section -->
+  <!-- Stakeholders Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Integreert met je Hele Workflow
+          {t('feature_pages.deal_pipeline.stakeholders.title', locale)}
         </h2>
-        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          De pipeline werkt naadloos samen met alle andere Tesoro CRM features.
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.stakeholders.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Card variant="default" padding="lg" class="border-2 border-primary/30">
+          <Badge variant="primary" size="sm" class="mb-4">Seller Deal Stakeholders</Badge>
+          <p class="text-neutral-700">
+            {t('feature_pages.deal_pipeline.stakeholders.seller_deal_stakeholders', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="border-2 border-secondary/30">
+          <Badge variant="secondary" size="sm" class="mb-4">Buyer Deal Stakeholders</Badge>
+          <p class="text-neutral-700">
+            {t('feature_pages.deal_pipeline.stakeholders.buyer_deal_stakeholders', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-warning/10 to-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <Badge variant="warning" size="md" class="mb-4">Philosophy</Badge>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('feature_pages.deal_pipeline.philosophy.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.philosophy.description', locale)}
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Smart Matching</h3>
-          <p class="text-neutral-700">
-            Nieuwe matches worden automatisch als deals toegevoegd aan de pipeline.
-          </p>
-        </Card>
+        {[1, 2, 3].map((principle) => (
+          <Card variant="default" padding="lg" class="border-2 border-warning/30 bg-white">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {t(`feature_pages.deal_pipeline.philosophy.principle_${principle}_title`, locale)}
+            </h3>
+            <p class="text-neutral-700">
+              {t(`feature_pages.deal_pipeline.philosophy.principle_${principle}_description`, locale)}
+            </p>
+          </Card>
+        ))}
+      </div>
 
-        <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Klantportaal</h3>
-          <p class="text-neutral-700">
-            Klantfeedback verplaatst deals automatisch naar de juiste pipeline stage.
-          </p>
-        </Card>
+      <div class="mt-12 bg-warning/5 rounded-2xl p-8 border-2 border-warning/30">
+        <blockquote class="text-center text-2xl font-semibold text-neutral-900">
+          "{t('feature_pages.deal_pipeline.philosophy.quote', locale)}"
+        </blockquote>
+      </div>
+    </div>
+  </section>
 
-        <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">E-mail Integratie</h3>
-          <p class="text-neutral-700">
-            Alle communicatie wordt automatisch gekoppeld aan de juiste deal.
+  <!-- Kanban View Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="bg-gradient-to-br from-neutral-100 to-neutral-50 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Kanban Board Preview</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg p-3">
+              <div class="text-xs font-semibold text-neutral-700 mb-2">Mandate</div>
+              <div class="space-y-2">
+                <div class="bg-primary/5 rounded p-2 text-xs">Villa Costa Blanca</div>
+                <div class="bg-primary/5 rounded p-2 text-xs">Apartment Centro</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <div class="text-xs font-semibold text-neutral-700 mb-2">Online</div>
+              <div class="space-y-2">
+                <div class="bg-secondary/5 rounded p-2 text-xs">Penthouse Madrid</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <div class="text-xs font-semibold text-neutral-700 mb-2">Visits</div>
+              <div class="space-y-2">
+                <div class="bg-success/5 rounded p-2 text-xs">Loft Barcelona</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+            {t('feature_pages.deal_pipeline.kanban_view.title', locale)}
+          </h2>
+          <p class="text-lg text-neutral-700 mb-8">
+            {t('feature_pages.deal_pipeline.kanban_view.description', locale)}
           </p>
-        </Card>
+
+          <div>
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {t('feature_pages.deal_pipeline.kanban_view.filter_title', locale)}
+            </h3>
+            <p class="text-neutral-700">
+              {t('feature_pages.deal_pipeline.kanban_view.filter_description', locale)}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vs Competition Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('feature_pages.deal_pipeline.vs_competition.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('feature_pages.deal_pipeline.vs_competition.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[1, 2, 3, 4].map((diff) => (
+          <Card variant="default" padding="lg" class="border-2 border-success/30 bg-success/5">
+            <div class="w-10 h-10 bg-success/20 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl font-bold text-success">✓</span>
+            </div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-3">
+              {t(`feature_pages.deal_pipeline.vs_competition.difference_${diff}_title`, locale)}
+            </h3>
+            <p class="text-sm text-neutral-700">
+              {t(`feature_pages.deal_pipeline.vs_competition.difference_${diff}_description`, locale)}
+            </p>
+          </Card>
+        ))}
       </div>
     </div>
   </section>
@@ -442,7 +453,7 @@ const automation = [
         <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
           {t('feature_pages.deal_pipeline.cta.primary', locale)}
         </Button>
-        <Button variant="ghost" size="lg" href={getLocalizedPath('/features', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/pricing', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
           {t('feature_pages.deal_pipeline.cta.secondary', locale)}
         </Button>
       </div>

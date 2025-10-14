@@ -9,82 +9,52 @@ import type { Language } from '../i18n/config';
 const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
 
-const plans = [
-  {
-    name: t('pricing.plans.starter.name', locale),
-    price: t('pricing.plans.starter.price', locale),
-    period: t('pricing.plans.starter.period', locale),
-    description: t('pricing.plans.starter.description', locale),
-    features: [
-      t('pricing.plans.starter.feature_1', locale),
-      t('pricing.plans.starter.feature_2', locale),
-      t('pricing.plans.starter.feature_3', locale),
-      t('pricing.plans.starter.feature_4', locale),
-      t('pricing.plans.starter.feature_5', locale),
-      t('pricing.plans.starter.feature_6', locale),
-    ],
-    cta: t('pricing.plans.starter.cta', locale),
-    highlighted: false,
-  },
-  {
-    name: t('pricing.plans.professional.name', locale),
-    price: t('pricing.plans.professional.price', locale),
-    period: t('pricing.plans.professional.period', locale),
-    description: t('pricing.plans.professional.description', locale),
-    features: [
-      t('pricing.plans.professional.feature_1', locale),
-      t('pricing.plans.professional.feature_2', locale),
-      t('pricing.plans.professional.feature_3', locale),
-      t('pricing.plans.professional.feature_4', locale),
-      t('pricing.plans.professional.feature_5', locale),
-      t('pricing.plans.professional.feature_6', locale),
-      t('pricing.plans.professional.feature_7', locale),
-      t('pricing.plans.professional.feature_8', locale),
-    ],
-    cta: t('pricing.plans.professional.cta', locale),
-    highlighted: true,
-    badge: t('pricing.plans.professional.badge', locale),
-  },
-  {
-    name: t('pricing.plans.enterprise.name', locale),
-    price: t('pricing.plans.enterprise.price', locale),
-    period: t('pricing.plans.enterprise.period', locale),
-    description: t('pricing.plans.enterprise.description', locale),
-    features: [
-      t('pricing.plans.enterprise.feature_1', locale),
-      t('pricing.plans.enterprise.feature_2', locale),
-      t('pricing.plans.enterprise.feature_3', locale),
-      t('pricing.plans.enterprise.feature_4', locale),
-      t('pricing.plans.enterprise.feature_5', locale),
-      t('pricing.plans.enterprise.feature_6', locale),
-      t('pricing.plans.enterprise.feature_7', locale),
-      t('pricing.plans.enterprise.feature_8', locale),
-    ],
-    cta: t('pricing.plans.enterprise.cta', locale),
-    highlighted: false,
-  },
-];
+const mainPlan = {
+  name: t('pricing.main_plan.name', locale),
+  price: t('pricing.main_plan.price', locale),
+  period: t('pricing.main_plan.period', locale),
+  description: t('pricing.main_plan.description', locale),
+  cta: t('pricing.main_plan.cta', locale),
+  users: t('pricing.main_plan.users', locale),
+  usersNote: t('pricing.main_plan.users_note', locale),
+  features: [
+    t('pricing.main_plan.feature_1', locale),
+    t('pricing.main_plan.feature_2', locale),
+    t('pricing.main_plan.feature_3', locale),
+    t('pricing.main_plan.feature_4', locale),
+    t('pricing.main_plan.feature_5', locale),
+    t('pricing.main_plan.feature_6', locale),
+    t('pricing.main_plan.feature_7', locale),
+    t('pricing.main_plan.feature_8', locale),
+    t('pricing.main_plan.feature_9', locale),
+    t('pricing.main_plan.feature_10', locale),
+  ],
+};
 
-const addons = [
+const services = [
   {
-    name: t('pricing.addons.addon_1_name', locale),
-    price: t('pricing.addons.addon_1_price', locale),
-    description: t('pricing.addons.addon_1_description', locale),
+    title: t('pricing.services.onboarding_title', locale),
+    price: t('pricing.services.onboarding_price', locale),
+    description: t('pricing.services.onboarding_description', locale),
+    includes: t('pricing.services.onboarding_includes', locale),
   },
   {
-    name: t('pricing.addons.addon_2_name', locale),
-    price: t('pricing.addons.addon_2_price', locale),
-    description: t('pricing.addons.addon_2_description', locale),
+    title: t('pricing.services.website_title', locale),
+    price: t('pricing.services.website_price', locale),
+    description: t('pricing.services.website_description', locale),
+    includes: t('pricing.services.website_includes', locale),
   },
   {
-    name: t('pricing.addons.addon_3_name', locale),
-    price: t('pricing.addons.addon_3_price', locale),
-    description: t('pricing.addons.addon_3_description', locale),
+    title: t('pricing.services.training_title', locale),
+    price: t('pricing.services.training_price', locale),
+    description: t('pricing.services.training_description', locale),
+    includes: t('pricing.services.training_includes', locale),
   },
   {
-    name: t('pricing.addons.addon_4_name', locale),
-    price: t('pricing.addons.addon_4_price', locale),
-    description: t('pricing.addons.addon_4_description', locale),
+    title: t('pricing.services.support_title', locale),
+    price: t('pricing.services.support_price', locale),
+    description: t('pricing.services.support_description', locale),
+    includes: t('pricing.services.support_includes', locale),
   },
 ];
 
@@ -113,10 +83,26 @@ const faqs = [
     question: t('pricing.faq.question_6', locale),
     answer: t('pricing.faq.answer_6', locale),
   },
+  {
+    question: t('pricing.faq.question_7', locale),
+    answer: t('pricing.faq.answer_7', locale),
+  },
+  {
+    question: t('pricing.faq.question_8', locale),
+    answer: t('pricing.faq.answer_8', locale),
+  },
+  {
+    question: t('pricing.faq.question_9', locale),
+    answer: t('pricing.faq.answer_9', locale),
+  },
+  {
+    question: t('pricing.faq.question_10', locale),
+    answer: t('pricing.faq.answer_10', locale),
+  },
 ];
 ---
 
-<Layout 
+<Layout
   title={t('meta.pricing_title', locale)}
   description={t('meta.pricing_description', locale)}
 >
@@ -126,113 +112,130 @@ const faqs = [
       <Badge variant="primary" size="md" class="mb-6">
         {t('pricing.hero.badge', locale)}
       </Badge>
-      
+
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
         {t('pricing.hero.title', locale)}
       </h1>
-      
+
       <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
         {t('pricing.hero.description', locale)}
       </p>
 
       <div class="flex items-center justify-center gap-4 text-sm text-neutral-700">
         <span class="flex items-center gap-2">
-          <span class="text-success text-xl">✓</span>
+          <span class="icon icon-sm text-success">check_circle</span>
           {t('pricing.hero.trust_1', locale)}
         </span>
         <span class="flex items-center gap-2">
-          <span class="text-success text-xl">✓</span>
+          <span class="icon icon-sm text-success">check_circle</span>
           {t('pricing.hero.trust_2', locale)}
         </span>
         <span class="flex items-center gap-2">
-          <span class="text-success text-xl">✓</span>
+          <span class="icon icon-sm text-success">check_circle</span>
           {t('pricing.hero.trust_3', locale)}
         </span>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Cards -->
+  <!-- Main Plan Card -->
   <section class="py-16 lg:py-24 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {plans.map((plan) => (
-          <Card 
-            variant={plan.highlighted ? 'bordered' : 'default'} 
-            padding="lg"
-            class={`flex flex-col relative ${plan.highlighted ? 'ring-2 ring-primary shadow-xl scale-105' : ''}`}
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Card
+        variant="bordered"
+        padding="lg"
+        class="ring-2 ring-primary shadow-2xl"
+      >
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-display font-bold text-neutral-900 mb-3">
+            {mainPlan.name}
+          </h2>
+          <div class="flex items-baseline justify-center gap-1 mb-3">
+            <span class="text-5xl font-display font-bold text-primary">{mainPlan.price}</span>
+            <span class="text-neutral-700">{mainPlan.period}</span>
+          </div>
+          <p class="text-lg text-neutral-700 mb-2">{mainPlan.description}</p>
+          <Badge variant="success" size="sm">
+            {mainPlan.users}
+          </Badge>
+        </div>
+
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">
+            {t('pricing.main_plan.included_title', locale)}
+          </h3>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {mainPlan.features.map((feature) => (
+              <li class="flex items-start gap-2 text-sm">
+                <span class="icon icon-sm text-success flex-shrink-0">check_circle</span>
+                <span class="text-neutral-700">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-neutral-50 -mx-8 px-8 py-6 mb-8">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('pricing.main_plan.fair_use_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700 mb-3">
+            {t('pricing.main_plan.fair_use_description', locale)}
+          </p>
+          <a href={getLocalizedPath('/fair-use-policy', locale)} class="text-primary hover:text-primary-accent text-sm font-medium inline-flex items-center gap-1">
+            {t('pricing.main_plan.fair_use_link', locale)}
+            <span class="icon icon-sm">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="text-center mb-8">
+          <Button
+            variant="primary"
+            size="lg"
+            fullWidth
+            href={getLocalizedPath('/signup', locale)}
           >
-            {plan.badge && (
-              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                <Badge variant="primary" size="sm">
-                  {plan.badge}
-                </Badge>
-              </div>
-            )}
-            
-            <div class="text-center mb-6">
-              <h3 class="text-2xl font-display font-bold text-neutral-900 mb-2">
-                {plan.name}
-              </h3>
-              <div class="flex items-baseline justify-center gap-1 mb-3">
-                <span class="text-4xl font-display font-bold text-primary">{plan.price}</span>
-                {plan.period && <span class="text-neutral-700">{plan.period}</span>}
-              </div>
-              <p class="text-sm text-neutral-700">{plan.description}</p>
-            </div>
+            {mainPlan.cta}
+          </Button>
+        </div>
 
-            <ul class="space-y-3 mb-8 flex-grow">
-              {plan.features.map((feature) => (
-                <li class="flex items-start gap-2 text-sm">
-                  <span class="text-success text-lg flex-shrink-0">✓</span>
-                  <span class="text-neutral-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
+        <div class="border-t border-neutral-200 pt-6 text-center">
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('pricing.main_plan.upgrade_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700 mb-4">
+            {t('pricing.main_plan.upgrade_description', locale)}
+          </p>
+          <Button variant="outline" size="md" href={getLocalizedPath('/contact', locale)}>
+            {t('pricing.main_plan.upgrade_cta', locale)}
+          </Button>
+        </div>
+      </Card>
 
-            <Button 
-              variant={plan.highlighted ? 'primary' : 'outline'} 
-              size="lg" 
-              fullWidth
-              href={getLocalizedPath('/signup', locale)}
-            >
-              {plan.cta}
-            </Button>
-          </Card>
-        ))}
-      </div>
-
-      <div class="text-center mt-12">
-        <p class="text-neutral-700 mb-4">
-          Bespaar 20% met jaarlijkse betaling
-        </p>
-        <Button variant="ghost" href={getLocalizedPath('/contact', locale)}>
-          Vragen over Enterprise? Neem contact op
-        </Button>
-      </div>
+      <p class="text-center text-sm text-neutral-600 mt-6">
+        {mainPlan.usersNote}
+      </p>
     </div>
   </section>
 
-  <!-- Add-ons Section -->
+  <!-- Services Section -->
   <section class="py-16 lg:py-24 bg-neutral-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          {t('pricing.addons.title', locale)}
+          {t('pricing.services.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          {t('pricing.addons.description', locale)}
+          {t('pricing.services.description', locale)}
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        {addons.map((addon) => (
-          <Card variant="default" padding="lg" class="flex items-start gap-4">
-            <div class="flex-grow">
-              <h3 class="text-lg font-semibold text-neutral-900 mb-2">{addon.name}</h3>
-              <p class="text-sm text-neutral-700 mb-3">{addon.description}</p>
-              <p class="text-primary font-semibold">{addon.price}</p>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {services.map((service) => (
+          <Card variant="default" padding="lg">
+            <h3 class="text-xl font-semibold text-neutral-900 mb-2">{service.title}</h3>
+            <p class="text-2xl font-bold text-primary mb-3">{service.price}</p>
+            <p class="text-sm text-neutral-700 mb-4">{service.description}</p>
+            <p class="text-xs text-neutral-600 leading-relaxed">{service.includes}</p>
           </Card>
         ))}
       </div>
@@ -253,15 +256,15 @@ const faqs = [
             </p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2">
-                <span class="text-secondary text-xl">✓</span>
+                <span class="icon icon-sm text-secondary">check_circle</span>
                 <span>3.2x meer captaties per maand</span>
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-secondary text-xl">✓</span>
+                <span class="icon icon-sm text-secondary">check_circle</span>
                 <span>67% tijdsbesparing op administratie</span>
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-secondary text-xl">✓</span>
+                <span class="icon icon-sm text-secondary">check_circle</span>
                 <span>€12K extra omzet gemiddeld</span>
               </li>
             </ul>
@@ -272,7 +275,7 @@ const faqs = [
           <div class="hidden lg:block">
             <Card variant="elevated" class="bg-white/10 backdrop-blur-sm border-white/20 p-8">
               <div class="text-center">
-                <div class="text-6xl mb-4">📈</div>
+                <span class="icon icon-2xl text-secondary mb-4" style="font-size: 4rem;">trending_up</span>
                 <div class="text-4xl font-display font-bold text-secondary mb-2">€12,450</div>
                 <p class="text-white/80">Gemiddelde extra omzet per maand</p>
               </div>
@@ -323,7 +326,7 @@ const faqs = [
         <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
           {t('pricing.cta.cta_primary', locale)}
         </Button>
-        <Button variant="ghost" size="lg" href={getLocalizedPath('/demo', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/contact', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
           {t('pricing.cta.cta_secondary', locale)}
         </Button>
       </div>
