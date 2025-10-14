@@ -13,15 +13,13 @@ const { locale } = Astro.props;
 ---
 
 <div class="ai-search">
-  <button 
-    type="button" 
+  <button
+    type="button"
     class="ai-search__trigger"
     aria-label={t('search.open', locale)}
     data-search-trigger
   >
-    <svg class="ai-search__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <span class="icon icon-sm">search</span>
     <span class="ai-search__text">{t('search.placeholder', locale)}</span>
     <kbd class="ai-search__kbd">⌘K</kbd>
   </button>
@@ -29,33 +27,27 @@ const { locale } = Astro.props;
   <dialog class="ai-search__dialog" data-search-dialog>
     <div class="ai-search__container">
       <div class="ai-search__header">
-        <svg class="ai-search__header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <input 
-          type="search" 
+        <span class="icon icon-sm ai-search__header-icon">search</span>
+        <input
+          type="search"
           class="ai-search__input"
           placeholder={t('search.placeholder', locale)}
           aria-label={t('search.label', locale)}
           data-search-input
         />
-        <button 
-          type="button" 
+        <button
+          type="button"
           class="ai-search__close"
           aria-label={t('search.close', locale)}
           data-search-close
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <span class="icon icon-sm">close</span>
         </button>
       </div>
 
       <div class="ai-search__results" data-search-results>
         <div class="ai-search__empty">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon">
-            <path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <span class="icon icon-2xl ai-search__empty-icon">search</span>
           <p class="ai-search__empty-text">{t('search.empty', locale)}</p>
         </div>
       </div>
@@ -95,7 +87,7 @@ const { locale } = Astro.props;
     const closeDialog = (): void => {
       dialog.close();
       input.value = '';
-      resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">Start typing to search...</p></div>';
+      resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">Start typing to search...</p></div>';
     };
 
     // Keyboard shortcut (Cmd/Ctrl + K)
@@ -127,7 +119,7 @@ const { locale } = Astro.props;
         const query = input.value.trim();
         
         if (!query) {
-          resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">Start typing to search...</p></div>';
+          resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">Start typing to search...</p></div>';
           return;
         }
 
@@ -158,7 +150,7 @@ const { locale } = Astro.props;
           const results = data.result?.results || [];
           
           if (results.length === 0) {
-            resultsContainer.innerHTML = '<div class="ai-search__empty"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="ai-search__empty-icon"><path d="M21 38a17 17 0 1 0 0-34 17 17 0 0 0 0 34zM42 42l-8.7-8.7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="ai-search__empty-text">No results found</p></div>';
+            resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">No results found</p></div>';
             return;
           }
 
@@ -209,9 +201,8 @@ const { locale } = Astro.props;
     color: #0a1f44;
   }
 
-  .ai-search__icon {
-    width: 18px;
-    height: 18px;
+  .ai-search__trigger .icon {
+    font-size: 1.125rem; /* 18px */
   }
 
   .ai-search__text {
@@ -259,8 +250,6 @@ const { locale } = Astro.props;
   }
 
   .ai-search__header-icon {
-    width: 20px;
-    height: 20px;
     color: #6b7280;
     flex-shrink: 0;
   }
