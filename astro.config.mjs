@@ -4,6 +4,10 @@ import tailwind from '@astrojs/tailwind';
 import spotlight from '@spotlightjs/astro';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+import partytown from '@astrojs/partytown';
+import compress from '@playform/compress';
+import robotsTxt from 'astro-robots-txt';
+import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,9 +26,34 @@ export default defineConfig({
         },
       },
     }),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'], // For Google Analytics/Tag Manager (if needed)
+        // Cloudflare Web Analytics works automatically via type="text/partytown"
+      },
+    }),
+    compress({
+      CSS: true,
+      HTML: true,
+      Image: true,
+      JavaScript: true,
+      SVG: true,
+    }),
+    robotsTxt({
+      sitemap: true, // Automatically add sitemap reference
+    }),
+    icon({
+      include: {
+        'material-symbols': ['*'], // Include all Material Symbols
+      },
+    }),
   ],
   build: {
     inlineStylesheets: 'always', // Force inline all CSS to eliminate render-blocking
+  },
+  prefetch: {
+    prefetchAll: true, // Automatically prefetch all internal links
+    defaultStrategy: 'hover', // Prefetch on hover (can also be 'viewport', 'load', or 'tap')
   },
   experimental: {
     fonts: [

@@ -146,8 +146,9 @@ const properties = [
     function initKanbanAnimation() {
       // Simple Kanban animation: Proposed → Interested → Rejected → Reset
       const kanban = document.querySelector('[data-kanban]');
-      
-      if (!kanban || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+      // Disable animations on mobile (< 1024px) or if user prefers reduced motion
+      if (!kanban || window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(max-width: 1023px)').matches) {
         return;
       }
       const mainCard = kanban.querySelector('[data-property-card="main"]') as HTMLElement | null;
@@ -549,32 +550,95 @@ const properties = [
 
   @media (max-width: 1023px) {
     .hero-simple {
-      padding: 2rem 0;
+      padding: 3rem 0 2rem;
       min-height: auto;
     }
 
-    .hero-simple__kanban {
-      grid-template-columns: 1fr;
-      max-width: 400px;
+    /* Disable animated background on mobile */
+    .hero-simple__background {
+      animation: none;
+      opacity: 0.5;
     }
 
-    .hero-simple__kanban-stage {
-      min-height: 180px;
+    .hero-simple__container {
+      padding: 0 1rem;
+    }
+
+    .hero-simple__content {
+      gap: 1.5rem;
+    }
+
+    .hero-simple__headline {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      line-height: 1.25;
+    }
+
+    .hero-simple__subheadline {
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     .hero-simple__visual {
       order: -1;
+      padding: 0.5rem;
+    }
+
+    /* Simplify kanban on mobile - remove animations */
+    .hero-simple__kanban {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      height: auto;
+      min-height: 300px;
+      padding: 1rem;
+    }
+
+    .hero-simple__kanban-stage {
+      min-height: auto;
+    }
+
+    /* Hide extra cards on mobile to reduce clutter */
+    .hero-simple__kanban-stage:nth-child(2),
+    .hero-simple__kanban-stage:nth-child(3) {
+      display: none;
+    }
+
+    /* Make remaining cards larger and clearer */
+    .hero-simple__property-card {
+      font-size: 0.9rem;
+    }
+
+    .hero-simple__property-name {
+      font-size: 0.85rem;
+    }
+
+    /* Disable glow effect on mobile */
+    .hero-simple__glow {
+      display: none;
     }
   }
 
   @media (max-width: 640px) {
-    .hero-simple__cta {
-      width: 100%;
+    .hero-simple {
+      padding: 2rem 0 1.5rem;
     }
 
-    .hero-simple__trust {
-      flex-direction: column;
-      align-items: flex-start;
+    .hero-simple__cta {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .hero-simple__trust-grid {
+      grid-template-columns: 1fr;
+      gap: 0.5rem 0;
+    }
+
+    .hero-simple__trust-item {
+      font-size: 0.95rem;
+    }
+
+    .hero-simple__trust-text {
+      line-height: 1.5;
     }
   }
 </style>

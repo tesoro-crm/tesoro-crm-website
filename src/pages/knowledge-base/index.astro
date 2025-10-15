@@ -197,21 +197,47 @@ const learningPaths = {
   }
 };
 
-// Localized texts - World-Class Knowledge Base
-const pageTitle = locale === 'nl' ? 'Tesoro CRM: Van €0 naar €100K+ Revenue' : locale === 'es' ? 'Tesoro CRM: De €0 a €100K+ Revenue' : 'Tesoro CRM: From €0 to €100K+ Revenue';
+// Localized texts - Phased Documentation Home
+const pageTitle = locale === 'nl' ? 'Tesoro Documentatie' : locale === 'es' ? 'Documentación Tesoro' : 'Tesoro Documentation';
 const pageDescription = locale === 'nl'
-  ? 'De enige kennisbank die nieuwe gebruikers in 14 dagen naar hun eerste €5K deal leidt. Bewezen strategieën, stap-voor-stap tutorials, business impact gegarandeerd.'
+  ? 'Vind direct wat je nodig hebt - onboarding, documentatie of geavanceerde tips.'
   : locale === 'es'
-  ? 'La única base de conocimientos que lleva a nuevos usuarios a su primer deal de €5K en 14 días. Estrategias probadas, tutoriales paso a paso, impacto empresarial garantizado.'
-  : 'The only knowledge base that takes new users to their first €5K deal in 14 days. Proven strategies, step-by-step tutorials, business impact guaranteed.';
-const searchPlaceholder = locale === 'nl' ? 'Zoek: "eerste deal", "€5K", "contact management"...' : locale === 'es' ? 'Buscar: "primer deal", "€5K", "gestión de contactos"...' : 'Search: "first deal", "€5K", "contact management"...';
-const newUserText = locale === 'nl' ? 'Nieuwe Gebruiker?' : locale === 'es' ? '¿Usuario Nuevo?' : 'New User?';
-const startHereMainText = locale === 'nl' ? 'Start hier' : locale === 'es' ? 'Comienza aquí' : 'Start here';
-const startHereSubText = locale === 'nl' ? 'Foundation Level' : locale === 'es' ? 'Nivel Fundamento' : 'Foundation Level';
-const featuredText = locale === 'nl' ? 'Meest Effectieve Strategieën' : locale === 'es' ? 'Estrategias Más Efectivas' : 'Most Effective Strategies';
-const allCategoriesText = locale === 'nl' ? 'Alle Learning Paths' : locale === 'es' ? 'Todos los Learning Paths' : 'All Learning Paths';
+  ? 'Encuentra directamente lo que necesitas - onboarding, documentación o consejos avanzados.'
+  : 'Find exactly what you need - onboarding, documentation or advanced tips.';
+
+const heroQuestion = locale === 'nl' ? 'Waar ben je in je Tesoro-reis?' : locale === 'es' ? '¿Dónde estás en tu viaje con Tesoro?' : 'Where are you in your Tesoro journey?';
+const heroSubtitle = locale === 'nl' ? 'Kies de beste startplek voor jou' : locale === 'es' ? 'Elige el mejor punto de partida para ti' : 'Choose the best starting point for you';
+
+// Path 1: New users
+const path1Title = locale === 'nl' ? 'Nieuw bij Tesoro' : locale === 'es' ? 'Nuevo en Tesoro' : 'New to Tesoro';
+const path1Desc = locale === 'nl'
+  ? 'Stap-voor-stap onboarding. Account aanmaken, medewerkers uitnodigen, email instellen en je eerste deals.'
+  : locale === 'es'
+  ? 'Onboarding paso a paso. Crear cuenta, invitar compañeros, configurar email y tus primeros deals.'
+  : 'Step-by-step onboarding. Create account, invite team, setup email and your first deals.';
+const path1Cta = locale === 'nl' ? 'Start onboarding' : locale === 'es' ? 'Comenzar onboarding' : 'Start onboarding';
+
+// Path 2: Documentation search
+const path2Title = locale === 'nl' ? 'Doorzoek documentatie' : locale === 'es' ? 'Buscar documentación' : 'Search documentation';
+const path2Desc = locale === 'nl'
+  ? 'Zoek in alle handleidingen, features, interfaces en configuraties. Vind snel technische antwoorden.'
+  : locale === 'es'
+  ? 'Busca en todas las guías, características, interfaces y configuraciones. Encuentra respuestas técnicas rápidamente.'
+  : 'Search all guides, features, interfaces and configurations. Find technical answers quickly.';
+const path2Cta = locale === 'nl' ? 'Bekijk documentatie' : locale === 'es' ? 'Ver documentación' : 'View documentation';
+
+// Path 3: Power users
+const path3Title = locale === 'nl' ? 'Power-user tips' : locale === 'es' ? 'Tips para expertos' : 'Power-user tips';
+const path3Desc = locale === 'nl'
+  ? 'Geavanceerde workflows, slimme filters, AI-prompts, email templates en expert-scenario\'s.'
+  : locale === 'es'
+  ? 'Flujos de trabajo avanzados, filtros inteligentes, prompts de IA, plantillas de email y escenarios expertos.'
+  : 'Advanced workflows, smart filters, AI prompts, email templates and expert scenarios.';
+const path3Cta = locale === 'nl' ? 'Expert tips' : locale === 'es' ? 'Consejos expertos' : 'Expert tips';
+
+const searchPlaceholder = locale === 'nl' ? 'Zoek in documentatie...' : locale === 'es' ? 'Buscar en documentación...' : 'Search documentation...';
 const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
-const progressiveText = locale === 'nl' ? 'Progressive Learning System' : locale === 'es' ? 'Sistema de Aprendizaje Progresivo' : 'Progressive Learning System';
+const stepText = locale === 'nl' ? 'Stap' : locale === 'es' ? 'Paso' : 'Step';
 
 // Search suggestions based on actual KB content
 const searchSuggestions = locale === 'nl'
@@ -222,442 +248,908 @@ const searchSuggestions = locale === 'nl'
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <div class="knowledge-base">
-    <!-- Revenue-Focused Hero Section -->
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__badge">
-          <span class="hero__badge-text">World-Class Knowledge Base</span>
-        </div>
-        <h1 class="hero__title">{pageTitle}</h1>
-        <p class="hero__description">{pageDescription}</p>
-
-        <!-- Progressive Learning Stats -->
-        <div class="hero__stats">
-          <div class="stat">
-            <span class="stat__number">14</span>
-            <span class="stat__label">{locale === 'nl' ? 'Dagen tot Eerste Deal' : locale === 'es' ? 'Días al Primer Deal' : 'Days to First Deal'}</span>
-          </div>
-          <div class="stat">
-            <span class="stat__number">€5K+</span>
-            <span class="stat__label">{locale === 'nl' ? 'Gemiddelde Deal Value' : locale === 'es' ? 'Valor Promedio de Deal' : 'Average Deal Value'}</span>
-          </div>
-          <div class="stat">
-            <span class="stat__number">23%</span>
-            <span class="stat__label">{locale === 'nl' ? 'Meer Deals Gesloten' : locale === 'es' ? 'Más Deals Cerrados' : 'More Deals Closed'}</span>
-          </div>
-        </div>
-
-        <!-- Smart Search Bar -->
-        <div class="hero__search">
-          <input
-            type="search"
-            placeholder={searchPlaceholder}
-            class="search-input"
-            id="kb-search"
-          />
-          <div class="search-suggestions">
-            {searchSuggestions.map(suggestion => (
-              <span class="suggestion" data-query={suggestion}>{suggestion}</span>
-            ))}
-          </div>
-        </div>
+  <div class="kb">
+    <!-- PHASED HERO -->
+    <section class="kb-hero">
+      <div class="kb-hero__container">
+        <h1 class="kb-hero__title">{heroQuestion}</h1>
+        <p class="kb-hero__subtitle">{heroSubtitle}</p>
       </div>
     </section>
 
-    <div class="container">
-      <!-- NEW USER ONBOARDING - Foundation Level -->
-      <section class="onboarding">
-        <div class="onboarding__header">
-          <h2 class="onboarding__title">{newUserText}</h2>
-          <p class="onboarding__subtitle">
-            {startHereMainText}
-            <span class="onboarding__subtitle-sub">{startHereSubText}</span>
-          </p>
-        </div>
-
-        <div class="foundation-path">
-          <div class="path-header">
-            <h3 class="path-title">{learningPaths.foundation.title[locale]}</h3>
-            <div class="path-subtitle">{learningPaths.foundation.subtitle[locale]}</div>
-            <p class="path-description">{learningPaths.foundation.description[locale]}</p>
+    <div class="kb-container">
+      <!-- THREE PATHS -->
+      <section class="journey-paths">
+        <div class="paths-grid">
+          <!-- Path 1: New Users -->
+          <div class="path-card" data-path="new">
+            <div class="path-card__icon">
+              <span class="icon">rocket_launch</span>
+            </div>
+            <h2 class="path-card__title">{path1Title}</h2>
+            <p class="path-card__desc">{path1Desc}</p>
+            <button class="path-card__cta" data-path-select="new">
+              {path1Cta} <span class="icon">arrow_forward</span>
+            </button>
           </div>
 
-          {foundationArticles.length > 0 ? (
-            <div class="path-steps">
-              {foundationArticles.map((article, index) => {
-                const data = article.data;
-                return (
-                  <div class="step-card" data-step={index + 1}>
-                    <div class="step-number">
-                      <span>{index + 1}</span>
-                    </div>
-                    <div class="step-content">
-                      <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="step-link">
-                        <div class="step-header">
-                          <span class="step-time">
-                            <span class="icon icon-sm">schedule</span> {data.meta.readingTime} {minutesText}
-                          </span>
-                        </div>
-                        <h4 class="step-title">{data.hero.title[locale]}</h4>
-                        <p class="step-description">{data.hero.description[locale]}</p>
-                        <div class="step-footer">
-                          {data.meta.videoIncluded && (
-                            <span class="step-video">
-                              <span class="icon icon-xs">play_circle</span> Video Tutorial
-                            </span>
-                          )}
-                          <span class="step-arrow">
-                            <span class="icon icon-sm">arrow_forward</span>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                );
-              })}
+          <!-- Path 2: Documentation -->
+          <div class="path-card" data-path="docs">
+            <div class="path-card__icon">
+              <span class="icon">menu_book</span>
             </div>
-          ) : (
-            <div class="coming-soon">
-              <p class="coming-soon__text">
-                {locale === 'nl' ? 'Foundation Level content wordt ontwikkeld...' :
-                 locale === 'es' ? 'Contenido de Nivel Fundamento en desarrollo...' :
-                 'Foundation Level content in development...'}
-              </p>
+            <h2 class="path-card__title">{path2Title}</h2>
+            <p class="path-card__desc">{path2Desc}</p>
+            <button class="path-card__cta" data-path-select="docs">
+              {path2Cta} <span class="icon">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- Path 3: Power Users -->
+          <div class="path-card" data-path="power">
+            <div class="path-card__icon">
+              <span class="icon">bolt</span>
             </div>
-          )}
+            <h2 class="path-card__title">{path3Title}</h2>
+            <p class="path-card__desc">{path3Desc}</p>
+            <button class="path-card__cta" data-path-select="power">
+              {path3Cta} <span class="icon">arrow_forward</span>
+            </button>
+          </div>
         </div>
       </section>
 
-      <!-- HIGH-IMPACT FEATURED STRATEGIES -->
-      {featuredArticles.length > 0 && (
-        <section class="featured">
-          <h2 class="section-title">{featuredText}</h2>
-          <div class="featured-grid">
-            {featuredArticles.map(article => {
-              const data = article.data;
+      <!-- CONTENT SECTIONS (shown based on path selection) -->
 
+      <!-- NEW USER PATH CONTENT -->
+      <div class="path-content" id="path-new" style="display: none;">
+        <button class="path-back-btn" data-path-back>
+          <span class="icon">arrow_back</span>
+          {locale === 'nl' ? 'Andere optie kiezen' : locale === 'es' ? 'Elegir otra opción' : 'Choose another option'}
+        </button>
+        {foundationArticles.length > 0 && (
+          <section class="steps-carousel">
+          <div class="steps-carousel__wrapper" id="carousel-wrapper">
+            {foundationArticles.slice(0, 4).map((article, index) => {
+              const data = article.data;
               return (
-                <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="featured-card">
-                  <div class="featured-content">
-                    <div class="featured-meta">
-                      <span class="featured-category">
-                        {categories[data.meta.category][locale]}
-                        {categories[data.meta.category].subtitle[locale] && (
-                          <span class="featured-category-subtitle">{categories[data.meta.category].subtitle[locale]}</span>
-                        )}
-                      </span>
-                      <span class="difficulty difficulty--{data.meta.difficulty}">
-                        {data.meta.difficulty}
-                      </span>
-                    </div>
-                    <h3 class="featured-title">{data.hero.title[locale]}</h3>
-                    <p class="featured-description">{data.hero.description[locale]}</p>
-                    <div class="featured-footer">
-                      <span class="reading-time">
-                        <span class="icon icon-sm">schedule</span> {data.meta.readingTime} {minutesText}
+                <div class="steps-carousel__slide" data-slide={index}>
+                  <div class="steps-carousel__number">{index + 1}</div>
+                  <h3 class="steps-carousel__title">{data.hero.title[locale]}</h3>
+                  <p class="steps-carousel__desc">{data.hero.description[locale]}</p>
+                  <a
+                    href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)}
+                    class="steps-carousel__link"
+                  >
+                    {locale === 'nl' ? 'Start deze stap' : locale === 'es' ? 'Iniciar este paso' : 'Start this step'}
+                    <span class="icon">arrow_forward</span>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+          <div class="steps-carousel__dots" id="carousel-dots">
+            {foundationArticles.slice(0, 4).map((_, index) => (
+              <button
+                class={`steps-carousel__dot ${index === 0 ? 'steps-carousel__dot--active' : ''}`}
+                data-slide-index={index}
+                aria-label={`${locale === 'nl' ? 'Stap' : locale === 'es' ? 'Paso' : 'Step'} ${index + 1}`}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- 4 CLEAR STEPS -->
+      <section class="quick-start">
+        {foundationArticles.length > 0 ? (
+          <div class="steps">
+            {foundationArticles.slice(0, 4).map((article, index) => {
+              const data = article.data;
+              return (
+                <a
+                  href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)}
+                  class="step"
+                  data-step-id={index + 1}
+                >
+                  <div class="step__number">{index + 1}</div>
+                  <div class="step__content">
+                    <h3 class="step__title">{data.hero.title[locale]}</h3>
+                    <p class="step__desc">{data.hero.description[locale]}</p>
+                    <div class="step__meta">
+                      <span class="step__time">
+                        <span class="icon icon-xs">schedule</span> {data.meta.readingTime} {minutesText}
                       </span>
                       {data.meta.videoIncluded && (
-                        <span class="video-badge">
+                        <span class="step__video">
                           <span class="icon icon-xs">play_circle</span> Video
                         </span>
                       )}
-                      <span class="impact-badge">
-                        <span class="icon icon-xs">trending_up</span> High Impact
-                      </span>
                     </div>
+                  </div>
+                  <div class="step__arrow">
+                    <span class="icon">arrow_forward</span>
                   </div>
                 </a>
               );
             })}
           </div>
-        </section>
-      )}
+        ) : (
+          <div class="steps-empty">
+            <p>{locale === 'nl' ? 'Content wordt ontwikkeld...' : locale === 'es' ? 'Contenido en desarrollo...' : 'Content in development...'}</p>
+          </div>
+        )}
+      </section>
 
-      <!-- PROGRESSIVE LEARNING PATHS -->
-      <section class="learning-paths">
-        <div class="section-header">
-          <h2 class="section-title">{allCategoriesText}</h2>
-          <p class="section-subtitle">{progressiveText}</p>
-        </div>
-
-        <div class="paths-grid">
-          {sortedCategories.map((cat) => {
-            const arts = groupedArticles[cat];
-            if (arts.length === 0) return null;
-
-            return (
-              <div class="path-card" data-priority={categories[cat].priority}>
-                <div class="path-card-header">
-                  <div class="path-info">
-                    <h3 class="path-name">
-                      {categories[cat][locale]}
-                      {categories[cat].subtitle[locale] && (
-                        <span class="path-subtitle">{categories[cat].subtitle[locale]}</span>
-                      )}
-                    </h3>
-                    <p class="path-desc">{categories[cat].description[locale]}</p>
-                    <span class="path-count">{arts.length} {locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artículos' : 'articles'}</span>
-                  </div>
-                </div>
-
-                <div class="articles-preview">
-                  {arts.slice(0, 3).map(article => {
-                    const data = article.data;
-                    return (
-                      <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="article-preview">
-                        <div class="preview-content">
-                          <span class="preview-title">{data.hero.title[locale]}</span>
-                          <div class="preview-meta">
-                            <span class="preview-time">
-                              <span class="icon icon-xs">schedule</span> {data.meta.readingTime}{minutesText}
-                            </span>
-                            <span class="difficulty difficulty--{data.meta.difficulty}">{data.meta.difficulty}</span>
-                          </div>
-                        </div>
-                      </a>
-                    );
-                  })}
-                  {arts.length > 3 && (
-                    <div class="more-articles">
-                      +{arts.length - 3} {locale === 'nl' ? 'meer' : locale === 'es' ? 'más' : 'more'}
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+      <!-- SEARCH -->
+      <section class="kb-search">
+        <div class="kb-search__box">
+          <span class="icon kb-search__icon">search</span>
+          <input
+            type="search"
+            placeholder={searchPlaceholder}
+            class="kb-search__input"
+            id="kb-search"
+          />
         </div>
       </section>
+
+      </div>
+
+      <!-- DOCUMENTATION PATH CONTENT -->
+      <div class="path-content" id="path-docs" style="display: none;">
+        <button class="path-back-btn" data-path-back>
+          <span class="icon">arrow_back</span>
+          {locale === 'nl' ? 'Andere optie kiezen' : locale === 'es' ? 'Elegir otra opción' : 'Choose another option'}
+        </button>
+        <!-- SEARCH -->
+        <section class="kb-search">
+          <h2 class="section-title">{searchPlaceholder}</h2>
+          <div class="kb-search__box">
+            <span class="icon kb-search__icon">search</span>
+            <input
+              type="search"
+              placeholder={searchPlaceholder}
+              class="kb-search__input"
+              id="kb-search-docs"
+            />
+          </div>
+        </section>
+
+        <!-- ALL DOCUMENTATION (COLLAPSED) -->
+        <section class="more-help">
+          <div class="guides-grid" style="display: grid;">
+            {sortedCategories.map((cat) => {
+              const arts = groupedArticles[cat];
+              if (arts.length === 0) return null;
+
+              return (
+                <div class="guide-category">
+                  <h3 class="guide-category__title">{categories[cat][locale]}</h3>
+                  <p class="guide-category__desc">{categories[cat].description[locale]}</p>
+                  <div class="guide-list">
+                    {arts.map(article => {
+                      const data = article.data;
+                      return (
+                        <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="guide-item">
+                          <span class="guide-item__title">{data.hero.title[locale]}</span>
+                          <span class="guide-item__time">{data.meta.readingTime}{minutesText}</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+
+      <!-- POWER USER PATH CONTENT -->
+      <div class="path-content" id="path-power" style="display: none;">
+        <button class="path-back-btn" data-path-back>
+          <span class="icon">arrow_back</span>
+          {locale === 'nl' ? 'Andere optie kiezen' : locale === 'es' ? 'Elegir otra opción' : 'Choose another option'}
+        </button>
+        <section class="power-user-content">
+          <h2 class="section-title">
+            {locale === 'nl' ? 'Geavanceerde Scenarios' : locale === 'es' ? 'Escenarios Avanzados' : 'Advanced Scenarios'}
+          </h2>
+          <p class="section-subtitle">
+            {locale === 'nl' ? 'Expert tips en workflows komen binnenkort beschikbaar' : locale === 'es' ? 'Consejos expertos y flujos de trabajo próximamente' : 'Expert tips and workflows coming soon'}
+          </p>
+
+          <!-- Placeholder for power-user content -->
+          <div class="guides-grid">
+            {sortedCategories.filter(cat => ['best-practices', 'integrations', 'reports'].includes(cat)).map((cat) => {
+              const arts = groupedArticles[cat];
+              if (arts.length === 0) return null;
+
+              return (
+                <div class="guide-category">
+                  <h3 class="guide-category__title">{categories[cat][locale]}</h3>
+                  <p class="guide-category__desc">{categories[cat].description[locale]}</p>
+                  <div class="guide-list">
+                    {arts.map(article => {
+                      const data = article.data;
+                      return (
+                        <a href={getLocalizedPath(`/knowledge-base/${data.meta.id}`, locale)} class="guide-item">
+                          <span class="guide-item__title">{data.hero.title[locale]}</span>
+                          <span class="guide-item__time">{data.meta.readingTime}{minutesText}</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </Layout>
 
 <style>
-  /* MINIMALIST KNOWLEDGE BASE STYLING */
-  .knowledge-base {
+  /* BEGINNER-FIRST KNOWLEDGE BASE */
+  .kb {
     min-height: 100vh;
-    background: #fafafa;
+    background: #f8f9fa;
   }
 
-  /* CLEAN MINIMALIST HERO SECTION */
-  .hero {
-    background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+  /* SIMPLE HERO */
+  .kb-hero {
+    background: linear-gradient(135deg, #0a1f44 0%, #1e3a5f 100%);
     color: white;
-    padding: 5rem 0 6rem;
+    padding: 4rem 0 3rem;
     text-align: center;
     position: relative;
-    overflow: hidden;
   }
 
-  .hero::before {
+  .kb-hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-      radial-gradient(circle at 30% 40%, rgba(245, 180, 0, 0.08) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 40%, rgba(245, 180, 0, 0.08) 0%, transparent 50%);
     opacity: 1;
   }
 
-  .hero__container {
-    max-width: 1200px;
+  .kb-hero__container {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
     position: relative;
     z-index: 1;
   }
 
-  .hero__badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.375rem 1rem;
-    border-radius: 6px;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-  .hero__badge-text {
-    font-size: 0.8125rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.075em;
-    opacity: 0.95;
-  }
-
-  .hero__title {
-    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  .kb-hero__title {
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
 
-  .hero__description {
+  .kb-hero__subtitle {
     font-size: 1.125rem;
     opacity: 0.92;
-    margin-bottom: 2.5rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.65;
+    margin-bottom: 2rem;
+    line-height: 1.5;
     font-weight: 400;
   }
 
-  /* MINIMALIST STATS */
-  .hero__stats {
+  /* PROGRESS BAR */
+  .progress-bar {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .progress-bar__track {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-bar__fill {
+    height: 100%;
+    background: linear-gradient(90deg, #F5B400 0%, #FFD700 100%);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+
+  .progress-bar__label {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    opacity: 0.85;
+    font-weight: 600;
+  }
+
+  /* CONTAINER */
+  .kb-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  /* VISUAL STEPS CAROUSEL */
+  .steps-carousel {
+    margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+  }
+
+  .steps-carousel__wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .steps-carousel__slide {
+    min-width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .steps-carousel__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 16px;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 51, 102, 0.3);
+  }
+
+  .steps-carousel__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .steps-carousel__desc {
+    font-size: 1.125rem;
+    color: #475569;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .steps-carousel__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 1rem 2rem;
+    background: #003366;
+    color: white;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+  }
+
+  .steps-carousel__link:hover {
+    background: #004080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 51, 102, 0.4);
+  }
+
+  .steps-carousel__link .icon {
+    transition: transform 0.25s ease;
+  }
+
+  .steps-carousel__link:hover .icon {
+    transform: translateX(4px);
+  }
+
+  .steps-carousel__dots {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
   }
 
-  .stat {
-    text-align: center;
+  .steps-carousel__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 51, 102, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 0;
   }
 
-  .stat__number {
-    display: block;
-    font-size: 2.25rem;
+  .steps-carousel__dot--active {
+    background: #003366;
+    width: 32px;
+    border-radius: 6px;
+  }
+
+  .steps-carousel__dot:hover:not(.steps-carousel__dot--active) {
+    background: rgba(0, 51, 102, 0.5);
+    transform: scale(1.2);
+  }
+
+  /* QUICK START STEPS */
+  .quick-start {
+    margin-bottom: 3rem;
+  }
+
+  .steps {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 1.75rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+
+  .step:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .step__number {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.2);
+  }
+
+  .step__content {
+    flex: 1;
+  }
+
+  .step__title {
+    font-size: 1.25rem;
     font-weight: 600;
-    color: #F5B400;
-    margin-bottom: 0.25rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
   }
 
-  .stat__label {
-    font-size: 0.8125rem;
-    opacity: 0.85;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  .step__desc {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-size: 0.9375rem;
+  }
+
+  .step__meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .step__time,
+  .step__video {
+    color: #64748b;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
   }
 
-  /* CLEAN SEARCH BAR */
-  .hero__search {
+  .step__video {
+    color: #003366;
+    font-weight: 600;
+  }
+
+  .step__arrow {
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .step:hover .step__arrow {
+    color: #003366;
+    transform: translateX(4px);
+  }
+
+  .steps-empty {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+    color: #64748b;
+    font-size: 1rem;
+  }
+
+  /* SEARCH */
+  .kb-search {
+    margin-bottom: 3rem;
+  }
+
+  .kb-search__box {
     position: relative;
     max-width: 600px;
     margin: 0 auto;
   }
 
-  .search-input {
+  .kb-search__icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none;
+  }
+
+  .kb-search__input {
     width: 100%;
-    padding: 0.875rem 1rem;
-    border: none;
-    border-radius: 8px;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
     font-size: 1rem;
     background: white;
     color: #1e293b;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.2s ease;
   }
 
-  .search-input::placeholder {
+  .kb-search__input::placeholder {
     color: #94a3b8;
   }
 
-  .search-input:focus {
+  .kb-search__input:focus {
     outline: none;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-color: #F5B400;
+    border-color: #003366;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
   }
 
-  .search-suggestions {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
+  /* MORE HELP SECTION */
+  .more-help {
+    margin-bottom: 3rem;
   }
 
-  .suggestion {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 0.375rem 0.875rem;
-    border-radius: 6px;
-    font-size: 0.8125rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+  .more-help__toggle {
+    width: 100%;
+    padding: 1.5rem;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
-  .suggestion:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
+  .more-help__toggle:hover {
+    border-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   }
 
-  /* CONTAINER */
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  .more-help__toggle[aria-expanded="true"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: #f8f9fa;
   }
 
-  /* MINIMALIST ONBOARDING SECTION */
-  .onboarding {
-    margin: 3rem auto 5rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .onboarding__header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-  }
-
-  .onboarding__title {
-    font-size: 2.25rem;
+  .more-help__title {
+    font-size: 1.25rem;
     font-weight: 600;
     color: #1e293b;
-    margin-bottom: 0.625rem;
-    text-align: center;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .more-help__subtitle {
+    font-size: 0.875rem;
+    color: #64748b;
+    display: block;
+  }
+
+  .more-help__icon {
+    color: #94a3b8;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .more-help__toggle[aria-expanded="true"] .more-help__icon {
+    transform: rotate(180deg);
+  }
+
+  .more-help__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .more-help__content[aria-hidden="false"] {
+    max-height: 5000px;
+    padding: 2rem;
+  }
+
+  /* GUIDES GRID */
+  .guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .guide-category {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+
+  .guide-category__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.375rem;
     letter-spacing: -0.01em;
   }
 
-  .onboarding__subtitle {
-    font-size: 1.125rem;
+  .guide-category__desc {
+    font-size: 0.875rem;
     color: #64748b;
-    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.5;
   }
 
-  .onboarding__subtitle-sub {
-    display: block;
-    font-size: 0.9375rem;
-    color: #94a3b8;
-    font-weight: 400;
-    margin-top: 0.25rem;
+  .guide-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  /* MINIMALIST FOUNDATION PATH */
-  .foundation-path {
+  .guide-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
     background: white;
-    border-radius: 12px;
-    padding: 2.5rem;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
     border: 1px solid #e2e8f0;
+  }
+
+  .guide-item:hover {
+    border-color: #003366;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .guide-item__title {
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+  }
+
+  .guide-item__time {
+    color: #94a3b8;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  /* STEP COMPLETED STATES */
+  .step[data-completed="true"] {
+    border-color: #10b981;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  }
+
+  .step[data-completed="true"] .step__number {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  }
+
+  .step[data-completed="true"] .step__number::after {
+    content: '✓';
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+
+  /* PATH SELECTION */
+  .journey-paths {
+    margin-bottom: 3rem;
+  }
+
+  .paths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .path-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
-  .foundation-path::before {
+  .path-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #003366 0%, #F5B400 100%);
+    height: 4px;
+    background: linear-gradient(90deg, #003366 0%, #004080 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
 
-  .path-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
+  .path-card:hover {
+    border-color: #003366;
+    box-shadow: 0 12px 24px rgba(0, 51, 102, 0.15);
+    transform: translateY(-4px);
   }
 
-  .path-title {
+  .path-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .path-card__icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .path-card__icon .icon {
+    font-size: 4rem;
+    color: #003366;
+    display: block;
+  }
+
+  .path-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .path-card__desc {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .path-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    background: #003366;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+  }
+
+  .path-card__cta:hover {
+    background: #004080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 51, 102, 0.4);
+  }
+
+  .path-card__cta .icon {
+    transition: transform 0.25s ease;
+  }
+
+  .path-card__cta:hover .icon {
+    transform: translateX(4px);
+  }
+
+  /* PATH CONTENT SECTIONS */
+  .path-content {
+    animation: fadeIn 0.4s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* BACK BUTTON */
+  .path-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 2rem;
+  }
+
+  .path-back-btn:hover {
+    color: #003366;
+    border-color: #003366;
+    background: #f8f9fa;
+  }
+
+  .path-back-btn .icon {
+    transition: transform 0.2s ease;
+  }
+
+  .path-back-btn:hover .icon {
+    transform: translateX(-4px);
+  }
+
+  /* SECTION TITLES */
+  .section-title {
     font-size: 1.75rem;
     font-weight: 600;
     color: #1e293b;
@@ -665,546 +1157,361 @@ const searchSuggestions = locale === 'nl'
     letter-spacing: -0.01em;
   }
 
-  .path-subtitle {
-    font-size: 1rem;
-    color: #003366;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  .path-description {
-    font-size: 0.9375rem;
-    color: #64748b;
-    max-width: 550px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-
-  /* STEP CARDS */
-  .path-steps {
-    display: grid;
-    gap: 1.5rem;
-  }
-
-  .step-card {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    position: relative;
-  }
-
-  .step-card:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    left: 1.5rem;
-    top: 3.5rem;
-    bottom: -1.5rem;
-    width: 1px;
-    background: #e2e8f0;
-    opacity: 1;
-  }
-
-  .step-number {
-    width: 3rem;
-    height: 3rem;
-    background: #003366;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 600;
-    font-size: 1.125rem;
-    flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .step-content {
-    flex: 1;
-    background: #fafafa;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
-  }
-
-  .step-content:hover {
-    background: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-color: #cbd5e1;
-  }
-
-  .step-link {
-    display: block;
-    padding: 1.5rem;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .step-header {
-    margin-bottom: 1rem;
-  }
-
-  .step-time {
-    color: #64748b;
-    font-size: 0.875rem;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .step-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-  }
-
-  .step-description {
-    color: #64748b;
-    line-height: 1.65;
-    margin-bottom: 1.25rem;
-    font-size: 0.9375rem;
-  }
-
-  .step-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .step-video {
-    color: #003366;
-    font-weight: 500;
-    font-size: 0.8125rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-  }
-
-  .step-arrow {
-    color: #64748b;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  /* COMING SOON */
-  .coming-soon {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: #f8fafc;
-    border-radius: 16px;
-    border: 2px dashed #cbd5e1;
-  }
-
-  .coming-soon__text {
-    color: #64748b;
-    font-size: 1.125rem;
-    font-weight: 600;
-  }
-
-  /* MINIMALIST SECTION STYLING */
-  .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 0.75rem;
-    text-align: center;
-    letter-spacing: -0.01em;
-  }
-
   .section-subtitle {
-    text-align: center;
-    color: #64748b;
     font-size: 1rem;
-    margin-bottom: 2.5rem;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section-header {
-    margin-bottom: 3rem;
-  }
-
-  /* FEATURED SECTION */
-  .featured {
-    margin: 5rem 0;
-  }
-
-  .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-  }
-
-  .featured-card {
-    background: white;
-    border-radius: 10px;
-    padding: 1.75rem;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-
-  .featured-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-color: #cbd5e1;
-  }
-
-  .featured-meta {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .featured-category {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #3b82f6;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-  }
-
-  .featured-category-subtitle {
-    font-size: 0.625rem;
-    font-weight: 500;
     color: #64748b;
-    text-transform: none;
-    letter-spacing: normal;
-  }
-
-  .featured-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 0.625rem;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-  }
-
-  .featured-description {
-    color: #64748b;
-    line-height: 1.65;
-    margin-bottom: 1.25rem;
-    font-size: 0.9375rem;
-  }
-
-  .featured-footer {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.875rem;
-    flex-wrap: wrap;
-  }
-
-  .reading-time {
-    color: #64748b;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .video-badge, .impact-badge {
-    background: #f3f4f6;
-    color: #4b5563;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .impact-badge {
-    background: #003366;
-    color: white;
-  }
-
-  /* MINIMALIST LEARNING PATHS SECTION */
-  .learning-paths {
-    margin: 5rem 0;
-  }
-
-  .paths-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .path-card {
-    background: white;
-    border-radius: 10px;
-    padding: 1.75rem;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-
-  .path-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-color: #cbd5e1;
-  }
-
-  .path-card[data-priority="1"] {
-    border-color: #003366;
-    border-width: 2px;
-  }
-
-  .path-card-header {
     margin-bottom: 2rem;
-  }
-
-  .path-name {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.01em;
-  }
-
-  .path-subtitle {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #64748b;
-    margin-top: 0.25rem;
-  }
-
-  .path-desc {
-    color: #64748b;
-    font-size: 0.875rem;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
   }
 
-  .path-count {
-    font-size: 0.75rem;
-    color: #94a3b8;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .articles-preview {
-    space-y: 0.75rem;
-  }
-
-  .article-preview {
-    padding: 0.75rem;
-    border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-    margin-bottom: 0.75rem;
-    display: block;
-  }
-
-  .article-preview:hover {
-    background: #f8fafc;
-  }
-
-  .preview-title {
-    font-weight: 600;
-    color: #0f172a;
-    font-size: 0.875rem;
-    line-height: 1.3;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
-  .preview-meta {
-    display: flex;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-  }
-
-  .preview-time {
-    color: #64748b;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .more-articles {
-    text-align: center;
-    padding: 1rem;
-    color: #64748b;
-    font-size: 0.875rem;
-    font-weight: 600;
-    background: #f8fafc;
-    border-radius: 8px;
-    margin-top: 0.75rem;
-  }
-
-  /* MINIMALIST DIFFICULTY BADGES */
-  .difficulty {
-    font-size: 0.6875rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-weight: 500;
-    text-transform: capitalize;
-  }
-
-  .difficulty--beginner {
-    background: #ecfdf5;
-    color: #047857;
-    border: 1px solid #d1fae5;
-  }
-
-  .difficulty--intermediate {
-    background: #fffbeb;
-    color: #b45309;
-    border: 1px solid #fef3c7;
-  }
-
-  .difficulty--advanced {
-    background: #fef2f2;
-    color: #dc2626;
-    border: 1px solid #fee2e2;
+  .power-user-content {
+    margin-bottom: 3rem;
   }
 
   /* RESPONSIVE DESIGN */
   @media (max-width: 768px) {
-    .hero__title {
-      font-size: 2.5rem;
+    .kb-hero {
+      padding: 3rem 0 2rem;
     }
 
-    .hero__stats {
-      gap: 2rem;
+    .kb-hero__title {
+      font-size: 1.75rem;
     }
 
-    .onboarding__title {
+    .kb-hero__subtitle {
+      font-size: 1rem;
+    }
+
+    .kb-container {
+      padding: 2rem 1rem;
+    }
+
+    .steps-carousel {
+      padding: 2rem 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .steps-carousel__slide {
+      padding: 1rem;
+    }
+
+    .steps-carousel__number {
+      width: 4rem;
+      height: 4rem;
       font-size: 2rem;
     }
 
-    .foundation-path {
-      padding: 2rem;
+    .steps-carousel__title {
+      font-size: 1.5rem;
     }
 
-    .step-card {
+    .steps-carousel__desc {
+      font-size: 1rem;
+    }
+
+    .steps-carousel__link {
+      padding: 0.875rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .step {
       flex-direction: column;
       gap: 1rem;
+      padding: 1.25rem;
     }
 
-    .step-card::after {
-      display: none;
+    .step__number {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.25rem;
     }
 
-    .paths-grid,
-    .featured-grid {
+    .step__arrow {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+
+    .guides-grid {
       grid-template-columns: 1fr;
+    }
+
+    .paths-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .path-card {
+      padding: 1.5rem;
+    }
+
+    .path-card__icon .icon {
+      font-size: 3rem;
+    }
+
+    .path-card__title {
+      font-size: 1.25rem;
     }
   }
 
   @media (max-width: 480px) {
-    .hero__title {
-      font-size: 2rem;
+    .kb-hero {
+      padding: 2rem 0 1.5rem;
     }
 
-    .foundation-path {
-      padding: 1.5rem;
+    .kb-container {
+      padding: 1.5rem 0.75rem;
     }
 
-    .step-link {
-      padding: 1.5rem;
+    .step {
+      padding: 1rem;
+    }
+
+    .more-help__toggle {
+      padding: 1rem;
+    }
+
+    .guide-category {
+      padding: 1rem;
     }
   }
 </style>
 
 <script>
-  // WORLD-CLASS KNOWLEDGE BASE FUNCTIONALITY
+  // BEGINNER-FIRST KNOWLEDGE BASE FUNCTIONALITY
   document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('kb-search') as HTMLInputElement;
-    const suggestions = document.querySelectorAll('.suggestion');
-    
-    // Enhanced search functionality with multiple targets
-    searchInput?.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase().trim();
-      
-      // Search targets: step cards, featured cards, article previews
-      const searchTargets = [
-        ...document.querySelectorAll('.step-card'),
-        ...document.querySelectorAll('.featured-card'),
-        ...document.querySelectorAll('.article-preview'),
-        ...document.querySelectorAll('.path-card')
-      ];
+    // PATH SELECTION FUNCTIONALITY
+    const journeyPaths = document.querySelector('.journey-paths') as HTMLElement;
+    const pathButtons = document.querySelectorAll('[data-path-select]');
+    const pathContents = document.querySelectorAll('.path-content') as NodeListOf<HTMLElement>;
 
-      searchTargets.forEach(target => {
-        const title = target.querySelector('.step-title, .featured-title, .preview-title, .path-name')?.textContent?.toLowerCase() || '';
-        const description = target.querySelector('.step-description, .featured-description, .path-desc')?.textContent?.toLowerCase() || '';
-        const category = target.querySelector('.featured-category, .path-name')?.textContent?.toLowerCase() || '';
-        
-        const isMatch = query === '' || 
-          title.includes(query) || 
-          description.includes(query) || 
-          category.includes(query);
-        
-        (target as HTMLElement).style.display = isMatch ? '' : 'none';
-        
-        // Hide empty sections
-        const section = target.closest('.onboarding, .featured, .learning-paths');
-        if (section) {
-          const visibleCards = section.querySelectorAll('[style=""], [style*="display: "]').length;
-          (section as HTMLElement).style.display = visibleCards > 0 ? '' : 'none';
-        }
+    const showPath = (pathName: string): void => {
+      // Hide all path content sections
+      pathContents.forEach(content => {
+        content.style.display = 'none';
       });
 
-      // Show all sections if search is cleared
-      if (query === '') {
-        document.querySelectorAll('.onboarding, .featured, .learning-paths').forEach(section => {
-          (section as HTMLElement).style.display = '';
-        });
+      // Show selected path content
+      const selectedContent = document.getElementById(`path-${pathName}`) as HTMLElement;
+      if (selectedContent) {
+        selectedContent.style.display = 'block';
       }
-    });
 
-    // Quick search suggestions functionality
-    suggestions.forEach(suggestion => {
-      suggestion.addEventListener('click', () => {
-        const query = suggestion.textContent?.trim() || '';
-        if (searchInput) {
-          searchInput.value = query;
-          searchInput.dispatchEvent(new Event('input'));
-          searchInput.focus();
+      // Hide path selection cards
+      if (journeyPaths) {
+        journeyPaths.style.display = 'none';
+      }
+
+      // Save to localStorage
+      localStorage.setItem('tesoro-docs-path', pathName);
+    };
+
+    // Path selection button clicks
+    pathButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const selectedPath = (e.currentTarget as HTMLElement).dataset.pathSelect;
+        if (selectedPath) {
+          showPath(selectedPath);
         }
       });
     });
 
-    // Progress tracking for Foundation Level (future enhancement)
-    const stepCards = document.querySelectorAll('.step-card');
-    stepCards.forEach((card, index) => {
-      const link = card.querySelector('.step-link') as HTMLAnchorElement;
-      link?.addEventListener('click', () => {
-        // Store progress in localStorage for future use
-        localStorage.setItem('tesoro-kb-progress', JSON.stringify({
-          currentStep: index + 1,
-          timestamp: Date.now()
-        }));
+    // Back button clicks - return to path selection
+    const backButtons = document.querySelectorAll('[data-path-back]');
+    backButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Hide all path content
+        pathContents.forEach(content => {
+          content.style.display = 'none';
+        });
+
+        // Show path selection
+        if (journeyPaths) {
+          journeyPaths.style.display = 'block';
+        }
+
+        // Clear localStorage so it shows path selection on next visit
+        localStorage.removeItem('tesoro-docs-path');
       });
     });
 
-    // Show progress indicator if user has made progress
-    const progress = JSON.parse(localStorage.getItem('tesoro-kb-progress') || '{}');
-    if (progress.currentStep) {
-      stepCards.forEach((card, index) => {
-        if (index < progress.currentStep - 1) {
-          card.classList.add('step-completed');
+    // Check for saved path on page load
+    const savedPath = localStorage.getItem('tesoro-docs-path');
+    if (savedPath) {
+      // Automatically show the saved path
+      showPath(savedPath);
+    }
+    // Otherwise show path selection (default state)
+
+    // Carousel functionality
+    const carouselWrapper = document.getElementById('carousel-wrapper') as HTMLElement;
+    const carouselDots = document.querySelectorAll('.steps-carousel__dot');
+    let currentSlide = 0;
+    let carouselInterval: number | null = null;
+
+    const goToSlide = (index: number): void => {
+      if (!carouselWrapper) return;
+
+      currentSlide = index;
+      carouselWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // Update dots
+      carouselDots.forEach((dot, i) => {
+        if (i === currentSlide) {
+          dot.classList.add('steps-carousel__dot--active');
+        } else {
+          dot.classList.remove('steps-carousel__dot--active');
         }
       });
+    };
+
+    const nextSlide = (): void => {
+      const totalSlides = carouselDots.length;
+      const next = (currentSlide + 1) % totalSlides;
+      goToSlide(next);
+    };
+
+    const startCarousel = (): void => {
+      // Auto-advance every 5 seconds
+      carouselInterval = window.setInterval(nextSlide, 5000);
+    };
+
+    const stopCarousel = (): void => {
+      if (carouselInterval) {
+        clearInterval(carouselInterval);
+        carouselInterval = null;
+      }
+    };
+
+    // Dot navigation
+    carouselDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        stopCarousel();
+        goToSlide(index);
+        // Restart after 10 seconds
+        setTimeout(startCarousel, 10000);
+      });
+    });
+
+    // Start carousel if it exists
+    if (carouselWrapper && carouselDots.length > 0) {
+      startCarousel();
+
+      // Pause on hover
+      const carousel = document.querySelector('.steps-carousel') as HTMLElement;
+      if (carousel) {
+        carousel.addEventListener('mouseenter', stopCarousel);
+        carousel.addEventListener('mouseleave', startCarousel);
+      }
     }
 
-    // Intersection Observer for step cards animation
+    // Progress tracking
+    const steps = document.querySelectorAll('.step');
+    const progressFill = document.getElementById('progress-fill') as HTMLElement;
+    const progressLabel = document.getElementById('progress-label') as HTMLElement;
+
+    // Load progress from localStorage
+    const loadProgress = (): number[] => {
+      const saved = localStorage.getItem('tesoro-kb-completed-steps');
+      return saved ? JSON.parse(saved) : [];
+    };
+
+    const saveProgress = (completedSteps: number[]): void => {
+      localStorage.setItem('tesoro-kb-completed-steps', JSON.stringify(completedSteps));
+    };
+
+    const updateProgressBar = (): void => {
+      const completedSteps = loadProgress();
+      const totalSteps = steps.length;
+      const percentage = totalSteps > 0 ? (completedSteps.length / totalSteps) * 100 : 0;
+
+      if (progressFill) {
+        progressFill.style.width = `${percentage}%`;
+      }
+      if (progressLabel) {
+        progressLabel.textContent = `${Math.round(percentage)}% ${progressLabel.textContent?.split(' ').slice(1).join(' ') || ''}`;
+      }
+
+      // Mark steps as completed visually
+      steps.forEach((step, index) => {
+        if (completedSteps.includes(index + 1)) {
+          step.setAttribute('data-completed', 'true');
+        }
+      });
+    };
+
+    // Track step clicks
+    steps.forEach((step, index) => {
+      step.addEventListener('click', () => {
+        const completedSteps = loadProgress();
+        const stepId = index + 1;
+
+        if (!completedSteps.includes(stepId)) {
+          completedSteps.push(stepId);
+          saveProgress(completedSteps);
+          updateProgressBar();
+        }
+      });
+    });
+
+    // Initialize progress on load
+    updateProgressBar();
+
+    // More Help toggle
+    const moreHelpToggle = document.getElementById('more-help-toggle');
+    const moreHelpContent = document.getElementById('more-help-content');
+
+    if (moreHelpToggle && moreHelpContent) {
+      moreHelpToggle.addEventListener('click', () => {
+        const isExpanded = moreHelpToggle.getAttribute('aria-expanded') === 'true';
+        moreHelpToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+        moreHelpContent.setAttribute('aria-hidden', isExpanded.toString());
+      });
+
+      // Initialize
+      moreHelpToggle.setAttribute('aria-expanded', 'false');
+      moreHelpContent.setAttribute('aria-hidden', 'true');
+    }
+
+    // Search functionality - handle both search inputs
+    const setupSearch = (searchInputId: string): void => {
+      const searchInput = document.getElementById(searchInputId) as HTMLInputElement;
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+          // Search in steps
+          steps.forEach(step => {
+            const title = step.querySelector('.step__title')?.textContent?.toLowerCase() || '';
+            const desc = step.querySelector('.step__desc')?.textContent?.toLowerCase() || '';
+            const isMatch = query === '' || title.includes(query) || desc.includes(query);
+            (step as HTMLElement).style.display = isMatch ? '' : 'none';
+          });
+
+          // Search in guide items (when more help is expanded)
+          const guideItems = document.querySelectorAll('.guide-item');
+          const guideCategories = document.querySelectorAll('.guide-category');
+
+          guideItems.forEach(item => {
+            const title = item.querySelector('.guide-item__title')?.textContent?.toLowerCase() || '';
+            const isMatch = query === '' || title.includes(query);
+            (item as HTMLElement).style.display = isMatch ? '' : 'none';
+          });
+
+          // Hide empty categories
+          guideCategories.forEach(category => {
+            const visibleItems = category.querySelectorAll('.guide-item[style=""]').length;
+            (category as HTMLElement).style.display = visibleItems > 0 || query === '' ? '' : 'none';
+          });
+        });
+      }
+    };
+
+    // Setup both search inputs
+    setupSearch('kb-search');
+    setupSearch('kb-search-docs');
+
+    // Fade-in animation for steps
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -1213,47 +1520,18 @@ const searchSuggestions = locale === 'nl'
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+          (entry.target as HTMLElement).style.opacity = '1';
+          (entry.target as HTMLElement).style.transform = 'translateY(0)';
         }
       });
     }, observerOptions);
 
-    // Initialize animation state and observe elements
-    document.querySelectorAll('.step-card, .featured-card, .path-card').forEach(element => {
-      (element as HTMLElement).style.opacity = '0';
-      (element as HTMLElement).style.transform = 'translateY(20px)';
-      (element as HTMLElement).style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(element);
-    });
-
-    // Analytics tracking (foundation for future implementation)
-    document.querySelectorAll('a[href*="/knowledge-base/"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const href = (e.currentTarget as HTMLAnchorElement).href;
-        const articleId = href.split('/').pop();
-        console.log(`Knowledge Base Article Clicked: ${articleId}`);
-        // Future: Send to analytics service
-      });
+    // Initialize animation state
+    steps.forEach((step) => {
+      (step as HTMLElement).style.opacity = '0';
+      (step as HTMLElement).style.transform = 'translateY(20px)';
+      (step as HTMLElement).style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(step);
     });
   });
-
-  // CSS for completed steps
-  const style = document.createElement('style');
-  style.textContent = `
-    .step-completed .step-number {
-      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
-    }
-    .step-completed .step-number::after {
-      content: '✓';
-      position: absolute;
-      font-size: 1rem;
-      font-weight: 900;
-    }
-    .step-completed .step-content {
-      border-color: #10b981;
-      background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
-    }
-  `;
-  document.head.appendChild(style);
 </script>

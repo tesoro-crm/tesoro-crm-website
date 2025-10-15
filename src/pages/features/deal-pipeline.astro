@@ -450,7 +450,7 @@ await loadTranslations(locale);
         {t('feature_pages.deal_pipeline.cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button variant="secondary" size="lg" href={getLocalizedPath('/signup', locale)}>
+        <Button variant="secondary" size="lg" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
           {t('feature_pages.deal_pipeline.cta.primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href={getLocalizedPath('/pricing', locale)} class="border-2 border-white hover:bg-white hover:text-primary">

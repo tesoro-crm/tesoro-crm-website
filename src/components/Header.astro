@@ -233,14 +233,16 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 
         <!-- Login Link -->
         <a
-          href={getLocalizedPath('/login', locale)}
+          href="https://crm.tesoro.estate/auth/signin"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-sm font-medium text-neutral-700 hover:text-primary transition-colors"
         >
           {t('nav.login', locale)}
         </a>
 
         <!-- CTA Button -->
-        <Button variant="primary" size="sm" href={getLocalizedPath('/signup', locale)}>
+        <Button variant="primary" size="sm" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
           {t('nav.cta', locale)}
         </Button>
 
@@ -319,7 +321,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           ))}
         </li>
         <li class="pt-2">
-          <Button variant="primary" size="sm" href={getLocalizedPath('/signup', locale)} fullWidth>
+          <Button variant="primary" size="sm" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer" fullWidth>
             {t('nav.cta', locale)}
           </Button>
         </li>

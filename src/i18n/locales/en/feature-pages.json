@@ -301,36 +301,100 @@
       }
     },
     "email_integration": {
-      "meta_title": "Email Integration | Tesoro CRM",
-      "meta_description": "Seamless integration with Gmail, Outlook and other email systems. All communication automatically stored in the customer file.",
+      "meta_title": "Email Integration - Gmail & Outlook | Tesoro CRM",
+      "meta_description": "Integration with Gmail and Outlook. Your emails stay with your trusted provider, not in the CRM. Security, freedom and perfect organization per deal and contact.",
       "hero": {
         "badge": "Email Integration",
-        "title": "Seamless Email Integration",
-        "description": "Complete integration with Gmail, Outlook and other email systems. All your communication is automatically stored in the right customer file, so you never lose track of the conversation."
+        "title": "Integration With Your Email, Not Own Service",
+        "description": "We connect with Gmail and Outlook. Your emails stay where they belong: with your trusted provider. No vendor lock-in, maximum security and perfect organization per deal and contact."
       },
       "benefits": {
-        "title": "Never Search for Emails Again",
-        "benefit_1_title": "Auto-Sync",
-        "benefit_1_description": "All emails are automatically linked to the right customers and properties",
-        "benefit_2_title": "Complete History",
-        "benefit_2_description": "Complete communication history per customer in one clear overview",
-        "benefit_3_title": "Email Templates",
-        "benefit_3_description": "Professional email templates for every stage of the sales process"
+        "title": "Why Integration Is Better Than Own Service",
+        "benefit_1_title": "No Vendor Lock-In",
+        "benefit_1_description": "Your emails stay in Gmail/Outlook. If you change CRM, your communication stays intact",
+        "benefit_2_title": "Maximum Security",
+        "benefit_2_description": "Google and Microsoft offer better spam protection than any proprietary CRM",
+        "benefit_3_title": "More Functionality",
+        "benefit_3_description": "Office 365 and Google Workspace offer much more than a simple email service in CRM"
+      },
+      "why_integration": {
+        "title": "Why Do We Integrate Instead of Offering Our Own Service?",
+        "description": "Other CRMs offer their own email service included in the price. We deliberately choose to integrate with Gmail and Outlook. Here's why:",
+        "reason_1_title": "Freedom and Flexibility",
+        "reason_1_description": "Email is too important to be tied to a CRM. If you decide to switch provider, your communication should continue working without migrating thousands of emails.",
+        "reason_2_title": "Superior in Functionality",
+        "reason_2_description": "Office 365 and Google Workspace offer much more than the simple email service that comes with other CRMs. Calendars, drive, collaboration - all integrated.",
+        "reason_3_title": "Security and Deliverability",
+        "reason_3_description": "Email is a constant target for spammers. It requires enormous resources, security and technology to offer worry-free experience. That's not our core business.",
+        "reason_4_title": "Integration Better Than Separation",
+        "reason_4_description": "Integration is easy, works perfectly and is more secure. Emails are sent from your authorized server, not from unknown CRM server."
+      },
+      "context_organization": {
+        "title": "Smart Organization by Context",
+        "description": "Emails don't just sync - they're organized intelligently based on the context they were sent from.",
+        "feature_1_title": "Emails in Specific Deals",
+        "feature_1_description": "If you send an email from within a deal, that email is linked to that specific deal. Multiple deals with the same client? Each email goes to the right deal.",
+        "feature_2_title": "Complete View at Contact Level",
+        "feature_2_description": "At contact level you see ALL emails, regardless of which deal they were sent from. Complete communication history with that client.",
+        "feature_3_title": "Smart Automatic Sync",
+        "feature_3_description": "Tesoro looks for email addresses it knows, connects to your mail server and automatically syncs all emails from those contacts."
+      },
+      "templates": {
+        "title": "Templates With Placeholders",
+        "description": "Create professional email templates with placeholders that fill automatically. Faster and more consistent than writing from your email client.",
+        "benefit_1_title": "Smart Placeholders",
+        "benefit_1_description": "Use {client_name}, {property_address}, {price} and more. They fill automatically with correct data.",
+        "benefit_2_title": "Templates per Stage",
+        "benefit_2_description": "Different templates for each stage: first contact, follow-up after viewing, offer confirmation, etc.",
+        "benefit_3_title": "Sent From Authorized Server",
+        "benefit_3_description": "All emails are sent from your Gmail/Outlook server, not from unknown server. Maximum deliverability and trust."
+      },
+      "tracking": {
+        "title": "Email Tracking",
+        "description": "Know exactly what happens with your emails after sending them.",
+        "feature_1_title": "Tracking Pixel",
+        "feature_1_description": "See when a client opens your email. Useful for follow-up timing.",
+        "feature_2_title": "Link Click Tracking",
+        "feature_2_description": "We register clicks on links in your emails. Know which properties generate most interest.",
+        "disclaimer": "Note: Tracking works best with emails from templates. Not all email clients allow tracking pixels."
       },
       "workflow": {
-        "title": "How Email Integration Works",
-        "step_1_title": "Connect Email",
-        "step_1_description": "Connect your existing Gmail, Outlook or other email account with one click",
-        "step_2_title": "Automatic Recognition",
-        "step_2_description": "Tesoro recognizes email addresses and links messages to the right customer",
-        "step_3_title": "Smart Organization",
-        "step_3_description": "Emails are automatically organized per customer and property in your CRM",
-        "step_4_title": "Template Library",
-        "step_4_description": "Use professional templates for follow-ups, offers and confirmations"
+        "title": "How It Works",
+        "step_1_title": "Connect in One Click",
+        "step_1_description": "Authorize access to your Gmail or Outlook account. Tesoro never stores your password.",
+        "step_2_title": "Automatic Synchronization",
+        "step_2_description": "Tesoro looks for email addresses it knows and syncs those emails automatically from your server.",
+        "step_3_title": "Organization by Context",
+        "step_3_description": "Emails are organized by deal and contact. Complete context always visible.",
+        "step_4_title": "Send With Templates",
+        "step_4_description": "Use templates with placeholders. Sent from your authorized server with tracking."
+      },
+      "team_collaboration": {
+        "title": "Team Collaboration - Coming Q1 2026",
+        "description": "We're working on collaboration features that make team communication even more efficient.",
+        "feature_1_title": "Comments on Emails",
+        "feature_1_description": "Add internal comments to any email. Visible only to your team, not to the client. Perfect for coordinating follow-up.",
+        "feature_2_title": "Mentions for Colleagues",
+        "feature_2_description": "Use @name to mention colleagues in comments. They receive immediate notification. Internal communication without CC or BCC.",
+        "feature_3_title": "Shared Emails",
+        "feature_3_description": "No need to share or CC colleagues. If they have access to the contact or deal, they can view the emails. Total team transparency.",
+        "availability": "Available Q1 2026"
+      },
+      "security": {
+        "title": "Security and Reliability",
+        "description": "Integration with Gmail and Outlook offers important advantages over own email service.",
+        "benefit_1_title": "Emails Stay on Your Server",
+        "benefit_1_description": "Your emails are in Gmail/Outlook. Tesoro only syncs copies of emails from known contacts. You maintain full control.",
+        "benefit_2_title": "Better Deliverability",
+        "benefit_2_description": "Emails are sent from your authorized server with SPF/DKIM configured. Not from unknown CRM server that might be marked as spam.",
+        "benefit_3_title": "No Configuration Problems",
+        "benefit_3_description": "No need to configure SPF records, DKIM, DMARC, etc. Everything is already configured in your Gmail/Outlook.",
+        "benefit_4_title": "Professional Spam Protection",
+        "benefit_4_description": "Google and Microsoft invest millions in spam and phishing protection. Much better than what any CRM can offer."
       },
       "cta": {
-        "title": "Work more efficiently",
-        "description": "See how email integration streamlines your communication",
+        "title": "Perfect Integration, No Complications",
+        "description": "Discover how our email integration gives you the best of both worlds: freedom and organization",
         "primary": "Request Demo",
         "secondary": "View Pricing"
       }

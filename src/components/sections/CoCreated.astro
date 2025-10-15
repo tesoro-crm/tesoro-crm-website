@@ -26,18 +26,6 @@ const partners: readonly Partner[] = [
     company: t('home.cocreated.partner_3_company', locale),
     feature: t('home.cocreated.partner_3_feature', locale),
   },
-  {
-    company: t('home.cocreated.partner_4_company', locale),
-    feature: t('home.cocreated.partner_4_feature', locale),
-  },
-  {
-    company: t('home.cocreated.partner_5_company', locale),
-    feature: t('home.cocreated.partner_5_feature', locale),
-  },
-  {
-    company: t('home.cocreated.partner_6_company', locale),
-    feature: t('home.cocreated.partner_6_feature', locale),
-  },
 ];
 ---
 
@@ -316,9 +304,12 @@ const partners: readonly Partner[] = [
 
   .cocreated__partners {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cocreated__partner-card {
@@ -733,14 +724,75 @@ const partners: readonly Partner[] = [
   @media (max-width: 768px) {
     .cocreated {
       padding: 3rem 0;
+      margin: 2rem 0;
+    }
+
+    /* Disable animated gradients on mobile for performance */
+    .cocreated::before,
+    .cocreated::after {
+      animation: none;
+      opacity: 0.6;
+    }
+
+    .cocreated__container {
+      padding: 0 1rem;
+    }
+
+    .cocreated__header {
+      margin-bottom: 2.5rem;
     }
 
     .cocreated__headline {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      line-height: 1.25;
+    }
+
+    .cocreated__subheadline {
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     .cocreated__partners {
       grid-template-columns: 1fr;
+      max-width: 100%;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .cocreated__partner-card {
+      padding: 1.25rem;
+    }
+
+    /* Disable hover effects on mobile */
+    .cocreated__partner-card:hover {
+      transform: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .cocreated__drawer-content {
+      max-width: 100%;
+      padding: 1.5rem;
+      padding-top: calc(3rem + 64px);
+    }
+
+    .cocreated__drawer-close {
+      top: calc(64px + 0.75rem);
+      right: 0.75rem;
+    }
+
+    .cocreated__drawer-company-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.25rem;
+      margin: -1.5rem -1.5rem 0 -1.5rem;
+    }
+
+    .cocreated__drawer-main-title {
+      font-size: 1.25rem;
+    }
+
+    .cocreated__drawer-subtitle {
+      font-size: 1rem;
     }
 
     .cocreated__timeline-section {
@@ -749,6 +801,30 @@ const partners: readonly Partner[] = [
 
     .cocreated__comparison {
       grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .cocreated__comparison-item {
+      padding: 1.5rem;
+    }
+
+    .cocreated__cta-button {
+      width: 100%;
+      padding: 1.125rem 2rem;
+      font-size: 1rem;
+    }
+
+    /* Disable hover effects on mobile */
+    .cocreated__cta-button:hover {
+      transform: none;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .cocreated__partners {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
     }
   }
 </style>

@@ -239,4 +239,53 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     box-shadow: 0 20px 30px rgba(245, 158, 11, 0.35);
     background: var(--accent-secondary);
   }
+
+  /* Mobile improvements */
+  @media (max-width: 767px) {
+    .lead-workflow {
+      padding: 3rem 0;
+    }
+
+    .lead-workflow__header {
+      margin-bottom: 2rem;
+    }
+
+    .lead-workflow__title {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      margin-bottom: 0.75rem;
+    }
+
+    .lead-workflow__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .lead-workflow__benefits {
+      margin: 2rem 0;
+    }
+
+    .lead-workflow__item {
+      padding: 1.25rem;
+    }
+
+    /* Disable hover animations on mobile */
+    .lead-workflow__item:hover {
+      transform: none;
+      box-shadow: 0 4px 12px rgba(10, 31, 68, 0.06);
+    }
+
+    .lead-workflow__item:hover .lead-workflow__icon {
+      transform: none;
+    }
+
+    .lead-workflow__cta {
+      width: 100%;
+      padding: 1.125rem 2rem;
+      font-size: 1rem;
+    }
+
+    .lead-workflow__cta-wrapper {
+      margin-top: 2rem;
+    }
+  }
 </style>

@@ -1,0 +1,287 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Tesoro CRM" [ref=e5] [cursor=pointer]:
+          - /url: /nl
+          - img "Tesoro CRM" [ref=e6]
+        - button "Menu" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e13]:
+        - heading "Waar ben je in je Tesoro-reis?" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Kies de beste startplek voor jou
+      - generic [ref=e18]:
+        - generic [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 🚀
+          - heading "Nieuw bij Tesoro" [level=2] [ref=e21]
+          - paragraph [ref=e22]: Stap-voor-stap onboarding. Account aanmaken, medewerkers uitnodigen, email instellen en je eerste deals.
+          - button "Start onboarding arrow_forward" [ref=e23]:
+            - text: Start onboarding
+            - generic [ref=e24]: arrow_forward
+        - generic [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: 📚
+          - heading "Doorzoek documentatie" [level=2] [ref=e27]
+          - paragraph [ref=e28]: Zoek in alle handleidingen, features, interfaces en configuraties. Vind snel technische antwoorden.
+          - button "Bekijk documentatie arrow_forward" [ref=e29]:
+            - text: Bekijk documentatie
+            - generic [ref=e30]: arrow_forward
+        - generic [ref=e31] [cursor=pointer]:
+          - generic [ref=e32]: ⚡
+          - heading "Power-user tips" [level=2] [ref=e33]
+          - paragraph [ref=e34]: Geavanceerde workflows, slimme filters, AI-prompts, email templates en expert-scenario's.
+          - button "Expert tips arrow_forward" [ref=e35]:
+            - text: Expert tips
+            - generic [ref=e36]: arrow_forward
+  - contentinfo [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - link "Tesoro CRM" [ref=e42] [cursor=pointer]:
+            - /url: /nl
+            - img "Tesoro CRM" [ref=e43]
+          - paragraph [ref=e44]: Intelligente lead generatie voor makelaars
+          - generic [ref=e45]:
+            - heading "Nieuwsbrief" [level=4] [ref=e46]
+            - paragraph [ref=e47]: Ontvang de laatste updates en vastgoed inzichten
+            - generic [ref=e48]:
+              - textbox "Vul je email in" [ref=e49]
+              - button "send" [ref=e50] [cursor=pointer]:
+                - generic [ref=e51]: send
+            - paragraph [ref=e52]: We respecteren je privacy. Uitschrijven kan altijd.
+          - generic [ref=e53]:
+            - heading "Volg Ons" [level=4] [ref=e54]
+            - generic [ref=e55]:
+              - link "LinkedIn" [ref=e56] [cursor=pointer]:
+                - /url: https://linkedin.com/company/tesoro-crm
+                - img [ref=e57]
+              - link "Twitter" [ref=e59] [cursor=pointer]:
+                - /url: https://twitter.com/tesoro_crm
+                - img [ref=e60]
+              - link "Instagram" [ref=e62] [cursor=pointer]:
+                - /url: https://instagram.com/tesoro.crm
+                - img [ref=e63]
+              - link "YouTube" [ref=e65] [cursor=pointer]:
+                - /url: https://youtube.com/@tesoro-crm
+                - img [ref=e66]
+        - generic [ref=e68]:
+          - heading "Product" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - link "Features" [ref=e72] [cursor=pointer]:
+                - /url: /nl/features
+            - listitem [ref=e73]:
+              - link "Pricing" [ref=e74] [cursor=pointer]:
+                - /url: /nl/pricing
+            - listitem [ref=e75]:
+              - link "Integrations" [ref=e76] [cursor=pointer]:
+                - /url: /nl/integrations
+            - listitem [ref=e77]:
+              - link "Website & API" [ref=e78] [cursor=pointer]:
+                - /url: /nl/website-api
+        - generic [ref=e79]:
+          - heading "Bronnen" [level=4] [ref=e80]
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "Knowledge Base" [ref=e83] [cursor=pointer]:
+                - /url: /nl/knowledge-base
+            - listitem [ref=e84]:
+              - link "Blog" [ref=e85] [cursor=pointer]:
+                - /url: /nl/blog
+            - listitem [ref=e86]:
+              - link "Support" [ref=e87] [cursor=pointer]:
+                - /url: /nl/support
+            - listitem [ref=e88]:
+              - link "Documentation" [ref=e89] [cursor=pointer]:
+                - /url: /nl/docs
+        - generic [ref=e90]:
+          - heading "Bedrijf" [level=4] [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "About" [ref=e94] [cursor=pointer]:
+                - /url: /nl/about
+            - listitem [ref=e95]:
+              - link "Contact" [ref=e96] [cursor=pointer]:
+                - /url: /nl/contact
+            - listitem [ref=e97]:
+              - link "Privacy" [ref=e98] [cursor=pointer]:
+                - /url: /nl/privacy
+            - listitem [ref=e99]:
+              - link "Terms" [ref=e100] [cursor=pointer]:
+                - /url: /nl/terms
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: verified_user
+            - generic [ref=e105]: AVG/GDPR Compliant
+          - generic [ref=e106]:
+            - generic [ref=e107]: security
+            - generic [ref=e108]: SOC 2 Type II
+          - generic [ref=e109]:
+            - generic [ref=e110]: cloud
+            - generic [ref=e111]: EU Hosting
+          - generic [ref=e112]:
+            - generic [ref=e113]: lock
+            - generic [ref=e114]: 256-bit SSL
+        - paragraph [ref=e115]: © 2025 Tesoro CRM. Alle rechten voorbehouden.
+  - generic [ref=e116]:
+    - button "Open AI Assistant" [ref=e117] [cursor=pointer]:
+      - img [ref=e118]
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - heading "Tesoro AI Assistent" [level=3]
+            - paragraph: Stel een vraag of zoek informatie
+      - generic:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - paragraph: Hallo! Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.
+      - generic:
+        - textbox "Stel een vraag..."
+        - button "Verstuur bericht":
+          - img
+      - generic:
+        - generic:
+          - text: Powered by
+          - strong: Cloudflare AI
+        - link "menu_book Knowledge Base":
+          - /url: /nl/ai-knowledge
+          - generic: menu_book
+          - text: Knowledge Base
+  - generic [ref=e122]:
+    - button "Menu" [ref=e123]:
+      - img [ref=e125]
+      - generic: Menu
+    - button "Inspect" [ref=e129]:
+      - img [ref=e131]
+      - generic: Inspect
+    - button "Audit" [ref=e133]:
+      - generic [ref=e134]:
+        - img [ref=e135]
+        - img [ref=e138]
+      - generic: Audit
+    - button "Spotlight by Sentry" [ref=e141]:
+      - img [ref=e143]
+      - generic: Spotlight by Sentry
+    - button "Settings" [ref=e149]:
+      - img [ref=e151]
+      - generic: Settings
+  - generic [ref=e156]:
+    - generic [ref=e157]:
+      - checkbox "Use dark theme" [ref=e158]
+      - generic [ref=e159] [cursor=pointer]:
+        - img [ref=e160]
+        - img [ref=e164]
+        - generic [ref=e168]: Use dark theme
+    - banner [ref=e169]:
+      - generic [ref=e170]:
+        - heading "NoMatchingStaticPathFound" [level=2] [ref=e171]
+        - heading "No static path found for requested path." [level=1] [ref=e172]
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - img [ref=e176]
+        - generic [ref=e178]:
+          - text: A
+          - code [ref=e179]: getStaticPaths()
+          - text: route pattern was matched, but no matching static path was found for requested path
+          - code [ref=e180]: /knowledge-base/your-first-5k-deal-7-days
+          - text: .
+        - link "See Docs Reference" [ref=e182] [cursor=pointer]:
+          - /url: https://docs.astro.build/en/reference/errors/no-matching-static-path-found/
+          - text: See Docs Reference
+          - img [ref=e183]
+      - generic [ref=e186]:
+        - img [ref=e188]
+        - generic [ref=e190]: "Possible dynamic routes being matched: src/pages/knowledge-base/[...slug].astro."
+    - generic [ref=e191]:
+      - generic [ref=e192]:
+        - heading "render/params-and-props.js:25:11" [level=2] [ref=e193]
+        - button "Open in editor" [ref=e195]:
+          - text: Open in editor
+          - img [ref=e196]
+      - code [ref=e201]:
+        - generic [ref=e202]: "import { DEFAULT_404_COMPONENT } from \"../constants.js\";"
+        - generic [ref=e203]: "import { AstroError, AstroErrorData } from \"../errors/index.js\";"
+        - generic [ref=e204]: "import { routeIsFallback } from \"../redirects/helpers.js\";"
+        - generic [ref=e205]: "import { routeIsRedirect } from \"../redirects/index.js\";"
+        - generic [ref=e206]: "import { callGetStaticPaths, findPathItemByKey } from \"./route-cache.js\";"
+        - generic [ref=e207]: "async function getProps(opts) {"
+        - generic [ref=e208]: "const { logger, mod, routeData: route, routeCache, pathname, serverLike, base } = opts;"
+        - generic [ref=e209]: "if (!route || route.pathname) {"
+        - generic [ref=e210]: "return {};"
+        - generic [ref=e211]: "}"
+        - generic [ref=e212]: "if (routeIsRedirect(route) || routeIsFallback(route) || route.component === DEFAULT_404_COMPONENT) {"
+        - generic [ref=e213]: "return {};"
+        - generic [ref=e214]: "}"
+        - generic [ref=e215]: "const staticPaths = await callGetStaticPaths({"
+        - generic [ref=e216]: mod,
+        - generic [ref=e217]: route,
+        - generic [ref=e218]: routeCache,
+        - generic [ref=e219]: logger,
+        - generic [ref=e220]: "ssr: serverLike,"
+        - generic [ref=e221]: base
+        - generic [ref=e222]: "});"
+        - generic [ref=e223]: const params = getParams(route, pathname);
+        - generic [ref=e224]: const matchedStaticPath = findPathItemByKey(staticPaths, params, route, logger);
+        - generic [ref=e225]: "if (!matchedStaticPath && (serverLike ? route.prerender : true)) {"
+        - generic [ref=e226]: "throw new AstroError({"
+        - generic [ref=e227]: ^
+        - generic [ref=e228]: ...AstroErrorData.NoMatchingStaticPathFound,
+        - generic [ref=e229]: "message: AstroErrorData.NoMatchingStaticPathFound.message(pathname),"
+        - generic [ref=e230]: "hint: AstroErrorData.NoMatchingStaticPathFound.hint([route.component])"
+        - generic [ref=e231]: "});"
+        - generic [ref=e232]: "}"
+        - generic [ref=e233]: "if (mod) {"
+        - generic [ref=e234]: validatePrerenderEndpointCollision(route, mod, params);
+        - generic [ref=e235]: "}"
+        - generic [ref=e236]: "const props = matchedStaticPath?.props ? { ...matchedStaticPath.props } : {};"
+        - generic [ref=e237]: return props;
+        - generic [ref=e238]: "}"
+        - generic [ref=e239]: "function getParams(route, pathname) {"
+        - generic [ref=e240]: "if (!route.params.length) return {};"
+        - generic [ref=e241]: const paramsMatch = route.pattern.exec(pathname) || route.fallbackRoutes.map((fallbackRoute) => fallbackRoute.pattern.exec(pathname)).find((x) => x);
+        - generic [ref=e242]: "if (!paramsMatch) return {};"
+        - generic [ref=e243]: "const params = {};"
+        - generic [ref=e244]: "route.params.forEach((key, i) => {"
+        - generic [ref=e245]: "if (key.startsWith(\"...\")) {"
+        - generic [ref=e246]: "params[key.slice(3)] = paramsMatch[i + 1] ? paramsMatch[i + 1] : void 0;"
+        - generic [ref=e247]: "} else {"
+        - generic [ref=e248]: params[key] = paramsMatch[i + 1];
+        - generic [ref=e249]: "}"
+        - generic [ref=e250]: "});"
+        - generic [ref=e251]: return params;
+        - generic [ref=e252]: "}"
+        - generic [ref=e253]: "function validatePrerenderEndpointCollision(route, mod, params) {"
+        - generic [ref=e254]: "if (route.type === \"endpoint\" && mod.getStaticPaths) {"
+        - generic [ref=e255]: const lastSegment = route.segments[route.segments.length - 1];
+        - generic [ref=e256]: const paramValues = Object.values(params);
+        - generic [ref=e257]: const lastParam = paramValues[paramValues.length - 1];
+        - generic [ref=e258]: "if (lastSegment.length === 1 && lastSegment[0].dynamic && lastParam === void 0) {"
+        - generic [ref=e259]: "throw new AstroError({"
+        - generic [ref=e260]: ...AstroErrorData.PrerenderDynamicEndpointPathCollide,
+        - generic [ref=e261]: "message: AstroErrorData.PrerenderDynamicEndpointPathCollide.message(route.route),"
+        - generic [ref=e262]: "hint: AstroErrorData.PrerenderDynamicEndpointPathCollide.hint(route.component),"
+        - generic [ref=e263]: "location: {"
+        - generic [ref=e264]: "file: route.component"
+        - generic [ref=e265]: "}"
+        - generic [ref=e266]: "});"
+        - generic [ref=e267]: "}"
+        - generic [ref=e268]: "}"
+        - generic [ref=e269]: "}"
+        - generic [ref=e270]: "export {"
+        - generic [ref=e271]: getParams,
+        - generic [ref=e272]: getProps
+        - generic [ref=e273]: "};"
+    - generic [ref=e275]:
+      - heading "Stack Trace" [level=2] [ref=e276]
+      - generic [ref=e277]: "NoMatchingStaticPathFound: A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/knowledge-base/your-first-5k-deal-7-days`. at getProps (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/render/params-and-props.js:25:11) at process.processTicksAndRejections (node:internal/process/task_queues:105:5) at async RenderContext.render (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/render-context.js:116:69) at async #executeRewrite (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/render-context.js:296:12) at async Object.rewrite (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/render-context.js:303:14) at async file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/i18n/index.js:261:18 at async callMiddleware (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/middleware/callMiddleware.js:11:10) at async RenderContext.render (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/core/render-context.js:235:22) at async handleRoute (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/vite-plugin-astro-server/route.js:180:16) at async run (file:///Volumes/2TB/Tesoro/Marketing/Tesoro-crm-website/node_modules/astro/dist/vite-plugin-astro-server/request.js:46:14)"
+```

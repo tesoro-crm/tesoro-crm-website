@@ -1,0 +1,593 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getLocale, loadTranslations } from '../../../i18n/utils';
+import type { Language } from '../../../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
+await loadTranslations(locale);
+
+const competitors = [
+  {
+    name: 'Sooprema',
+    logo: '📊',
+    price: '€29-99/mes',
+    priceNote: '+ €299 setup website',
+    marketShare: '650+ agencias',
+    interface: 'Excel-like (2015)',
+    portal: '❌ Sin portal real',
+    email: '⚠️ Básico',
+    whatsapp: '❌ No',
+    matching: 'Manual',
+    ui: 'Anticuada',
+  },
+  {
+    name: 'Inmovilla',
+    logo: '🏢',
+    price: '€79-119/mes',
+    priceNote: 'según usuarios',
+    marketShare: '2000+ agencias',
+    interface: 'Tradicional (2018)',
+    portal: '⚠️ Portal básico',
+    email: '⚠️ Limitado',
+    whatsapp: '⚠️ Parcial',
+    matching: 'Manual',
+    ui: 'Funcional pero anticuada',
+  },
+  {
+    name: 'eGO Real Estate',
+    logo: '🌍',
+    price: '€89-149/mes',
+    priceNote: 'según funcionalidades',
+    marketShare: '3000+ agencias',
+    interface: 'Compleja (2019)',
+    portal: '⚠️ Portal sin engagement',
+    email: '✅ Bueno',
+    whatsapp: '✅ Sí',
+    matching: 'Manual básico',
+    ui: 'Sobrecargada',
+  },
+];
+---
+
+<Layout
+  title="Alternativa a Sooprema CRM | Tesoro vs Sooprema"
+  description="Comparación honesta entre Tesoro CRM y Sooprema. Descubre las diferencias reales en UI, portal de clientes, integraciones y pricing."
+>
+  <div class="alternatives-page">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Comparación Honesta</span>
+        <h1>¿Por qué agencias cambian de Sooprema a Tesoro?</h1>
+        <p class="subtitle">
+          No porque Sooprema sea malo. Sino porque Tesoro tiene UI más moderna, desarrollo más rápido, y pricing transparente sin sorpresas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Comparison Table -->
+    <section class="comparison-table">
+      <div class="container">
+        <h2>Comparación rápida</h2>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="highlight">Tesoro CRM</th>
+                <th>Sooprema</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Interfaz</strong></td>
+                <td class="highlight">✅ Kanban 2024<br><small>Drag & drop visual</small></td>
+                <td>❌ Excel-like<br><small>"Like an Excel sheet"</small></td>
+              </tr>
+              <tr>
+                <td><strong>Portal Cliente</strong></td>
+                <td class="highlight">✅ Real-time feedback<br><small>Clientes marcan interés</small></td>
+                <td>❌ Sin portal</td>
+              </tr>
+              <tr>
+                <td><strong>Email Integration</strong></td>
+                <td class="highlight">✅ Gmail + Outlook<br><small>OAuth native sync</small></td>
+                <td>⚠️ Básico<br><small>IMAP/SMTP</small></td>
+              </tr>
+              <tr>
+                <td><strong>WhatsApp</strong></td>
+                <td class="highlight">✅ Integrado</td>
+                <td>❌ No</td>
+              </tr>
+              <tr>
+                <td><strong>Property Matching</strong></td>
+                <td class="highlight">✅ Visual + inteligente<br><small>🚀 AI en roadmap Q2 2025</small></td>
+                <td>⚠️ Manual básico</td>
+              </tr>
+              <tr>
+                <td><strong>Pricing</strong></td>
+                <td class="highlight">✅ €99 all-in<br><small>Sin sorpresas</small></td>
+                <td>⚠️ €29-99 + €299<br><small>Website aparte</small></td>
+              </tr>
+              <tr>
+                <td><strong>Development</strong></td>
+                <td class="highlight">✅ Features en 2 semanas<br><small>Co-creado con agentes</small></td>
+                <td>⚠️ Lento<br><small>Meses/años</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Competitor Card -->
+    <section class="competitor-details">
+      <div class="container">
+        <h2>Análisis detallado de Sooprema</h2>
+
+        <div class="competitor-grid">
+          <!-- Sooprema -->
+          <div class="competitor-card sooprema-focus">
+            <div class="competitor-header">
+              <span class="logo">📊</span>
+              <div>
+                <h3>Sooprema</h3>
+                <p class="market">650+ agencias en España</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h4>❌ Lo que falta en Sooprema</h4>
+              <ul>
+                <li><strong>Interfaz anticuada:</strong> Los propios usuarios dicen "too much like an Excel sheet"</li>
+                <li><strong>Sin portal de clientes:</strong> Tus clientes no pueden dar feedback directo</li>
+                <li><strong>Matching manual básico:</strong> Sin herramientas visuales para emparejar propiedades</li>
+                <li><strong>Pricing confuso:</strong> €29-99/mes + €299 setup website + extras</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h4>✅ Lo bueno de Sooprema</h4>
+              <ul>
+                <li>Precio inicial bajo (€29)</li>
+                <li>Integraciones portales (Idealista, Fotocasa)</li>
+                <li>Soporte en español</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h4>🎯 Sooprema es mejor para</h4>
+              <p>Agencias muy pequeñas (<3 usuarios) con presupuesto limitado que solo necesitan gestión básica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Tesoro -->
+    <section class="why-tesoro">
+      <div class="container">
+        <h2>¿Por qué entonces Tesoro?</h2>
+        <p class="intro">Porque hacemos las cosas de forma diferente.</p>
+
+        <div class="reasons-grid">
+          <div class="reason">
+            <span class="icon">🎨</span>
+            <h3>UI moderna 2024</h3>
+            <p>No es solo "bonita". Es <strong>Kanban visual con drag & drop</strong> que hace tu trabajo más rápido. Ningún competidor tiene esto.</p>
+          </div>
+
+          <div class="reason">
+            <span class="icon">👥</span>
+            <h3>Portal de clientes que funciona</h3>
+            <p>Tus clientes <strong>marcan "interesante" o "descartar" en tiempo real</strong>. Tú ves quién está activo. Otros CRMs solo muestran propiedades.</p>
+          </div>
+
+          <div class="reason">
+            <span class="icon">📧</span>
+            <h3>Email + WhatsApp integrados de verdad</h3>
+            <p><strong>Gmail y Outlook sync nativo</strong> (OAuth), más WhatsApp. Todo en un sitio. Otros tienen integraciones básicas o parciales.</p>
+          </div>
+
+          <div class="reason">
+            <span class="icon">💰</span>
+            <h3>Pricing sin sorpresas</h3>
+            <p><strong>€99/mes todo incluido</strong>. Sin setup fees (Sooprema cobra €299), sin costes por website, sin escalado confuso. Un precio, todo incluido.</p>
+          </div>
+
+          <div class="reason">
+            <span class="icon">⚡</span>
+            <h3>Development rápido</h3>
+            <p><strong>Features en 2 semanas, no 18 meses</strong>. Co-creamos con agentes españoles. Tu feedback se convierte en features reales.</p>
+          </div>
+
+          <div class="reason">
+            <span class="icon">🚀</span>
+            <h3>Roadmap transparente</h3>
+            <p>Ahora: matching visual manual. <strong>Q2 2025: AI matching automático</strong>. Sabemos dónde vamos y te lo contamos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Migration CTA -->
+    <section class="migration-cta">
+      <div class="container">
+        <h2>Cambiar desde Sooprema es fácil (y gratis)</h2>
+        <p>Migramos tus datos de Sooprema sin coste adicional.</p>
+
+        <div class="migration-steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h4>Exportas</h4>
+            <p>Tu data actual (CSV o acceso temporal)</p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h4>Migramos</h4>
+            <p>Contactos, propiedades y deals (1-2 días)</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h4>Listo</h4>
+            <p>Empiezas a trabajar, sin pérdida de data</p>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="/contact" class="btn btn-primary">Hablar con Migraciones</a>
+          <a href="/" class="btn btn-secondary">Ver Tesoro en Acción</a>
+        </div>
+
+        <p class="guarantee">💚 Garantía: Si no funciona en 14 días, te devolvemos todo y te ayudamos a volver.</p>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .alternatives-page {
+    padding-top: 80px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #003366, #0a4a7a);
+    color: white;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Comparison Table */
+  .comparison-table {
+    padding: 4rem 0;
+    background: white;
+  }
+
+  .comparison-table h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 3rem;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  thead {
+    background: linear-gradient(135deg, #003366, #0a4a7a);
+    color: white;
+  }
+
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  th {
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+
+  .highlight {
+    background: linear-gradient(135deg, rgba(245, 180, 0, 0.1), rgba(245, 180, 0, 0.05));
+    font-weight: 600;
+  }
+
+  td small {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+
+  /* Competitor Details */
+  .competitor-details {
+    padding: 4rem 0;
+    background: #f8f9fa;
+  }
+
+  .competitor-details h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 3rem;
+  }
+
+  .competitor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .competitor-card.sooprema-focus {
+    border: 2px solid #F5B400;
+  }
+
+  .competitor-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .competitor-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f3f4f6;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .competitor-header h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin: 0;
+  }
+
+  .market {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin: 0.25rem 0 0;
+  }
+
+  .section {
+    margin-bottom: 1.5rem;
+  }
+
+  .section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+  }
+
+  .section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section li {
+    padding: 0.5rem 0;
+    color: #4b5563;
+    line-height: 1.5;
+  }
+
+  /* Why Tesoro */
+  .why-tesoro {
+    padding: 4rem 0;
+    background: white;
+  }
+
+  .why-tesoro h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #64748b;
+    margin-bottom: 3rem;
+  }
+
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .reason {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .reason .icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .reason h3 {
+    font-size: 1.25rem;
+    color: #003366;
+    margin-bottom: 0.75rem;
+  }
+
+  .reason p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+
+  /* Migration CTA */
+  .migration-cta {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #003366, #0a4a7a);
+    color: white;
+    text-align: center;
+  }
+
+  .migration-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .migration-cta > .container > p {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+  }
+
+  .migration-steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .step-number {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: #F5B400;
+    color: #003366;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .step h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step p {
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .btn-primary {
+    background: #F5B400;
+    color: #003366;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(245, 180, 0, 0.3);
+  }
+
+  .btn-secondary {
+    background: white;
+    color: #003366;
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+  }
+
+  .guarantee {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.875rem;
+    }
+
+    .comparison-table h2,
+    .competitor-details h2,
+    .why-tesoro h2,
+    .migration-cta h2 {
+      font-size: 1.5rem;
+    }
+
+    .competitor-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .migration-steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

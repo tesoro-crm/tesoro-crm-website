@@ -258,6 +258,10 @@ const {
     };
 
     const startAutoPlay = (): void => {
+      // Disable auto-play on mobile
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        return;
+      }
       if (autoPlayInterval) clearInterval(autoPlayInterval);
       autoPlayInterval = window.setInterval(nextStep, 3000);
     };
@@ -888,6 +892,11 @@ const {
 
   /* Mobile adjustments */
   @media (max-width: 767px) {
+    .lead-visual {
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+
     .lead-visual__timeline::before {
       left: 1.5rem;
     }
@@ -899,20 +908,69 @@ const {
     }
 
     .lead-visual__step-icon {
-      font-size: 1.5rem;
+      display: none; /* Hide icons on mobile for clarity */
     }
 
     .lead-visual__step-title {
       font-size: 1.1rem;
     }
 
+    .lead-visual__step-text {
+      font-size: 0.9rem;
+    }
+
+    /* Simplify mockup on mobile */
+    .lead-visual__mockup {
+      min-height: 320px;
+      border-radius: 0.75rem;
+    }
+
+    .lead-visual__screen {
+      padding: 1.5rem;
+    }
+
+    .mockup-email {
+      max-width: 100%;
+    }
+
     .mockup-call__button {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
 
     .mockup-call__icon {
-      font-size: 2rem;
+      font-size: 1.75rem;
+    }
+
+    .mockup-call__text {
+      font-size: 1rem;
+    }
+
+    .mockup-template,
+    .mockup-history {
+      max-width: 100%;
+    }
+
+    .mockup-template__logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Disable pulse animations on mobile for performance */
+    .lead-visual__step.active .lead-visual__step-number {
+      animation: none;
+    }
+
+    .mockup-call__button {
+      animation: none;
+    }
+
+    .mockup-email__badge {
+      animation: none;
+    }
+
+    .mockup-call__recording-icon {
+      animation: none;
     }
   }
 </style>

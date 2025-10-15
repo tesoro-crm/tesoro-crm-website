@@ -286,26 +286,102 @@
       }
     },
     "email_integration": {
-      "meta_title": "E-mail Integratie Gmail & Outlook | Tesoro CRM",
-      "meta_description": "Volledige bidirectionele sync met Gmail en Outlook. Automatische deal koppeling, e-mail templates en complete communicatie geschiedenis.",
+      "meta_title": "E-mail integratie - Gmail & Outlook | Tesoro CRM",
+      "meta_description": "Integratie met Gmail en Outlook. Je e-mails blijven bij je vertrouwde provider, niet in de CRM. Veiligheid, vrijheid en perfecte organisatie per deal en contact.",
       "hero": {
-        "badge": "E-mail Integratie",
-        "title": "Naadloze e-mail integratie",
-        "description": "Volledige bidirectionele sync met Gmail en Outlook. Alle communicatie automatisch gekoppeld aan deals en klanten.",
+        "badge": "E-mail integratie",
+        "title": "Integratie met je e-mail, geen eigen service",
+        "description": "Wij verbinden met Gmail en Outlook. Je e-mails blijven waar ze horen: bij je vertrouwde provider. Geen vendor lock-in, maximale veiligheid en perfecte organisatie per deal en contact.",
         "cta_primary": "Start 14 dagen gratis",
         "cta_secondary": "Bekijk demo"
       },
       "benefits": {
-        "tracking": "100%",
-        "tracking_desc": "van communicatie wordt bijgehouden",
-        "missed_emails": "0",
-        "missed_emails_desc": "e-mails vallen tussen de mazen",
-        "setup_time": "2 min",
-        "setup_time_desc": "setup tijd per e-mail account"
+        "title": "Waarom integratie beter is dan eigen service",
+        "benefit_1_title": "Geen vendor lock-in",
+        "benefit_1_description": "Je e-mails blijven in Gmail/Outlook. Als je van CRM wisselt, blijft je communicatie intact",
+        "benefit_2_title": "Maximale veiligheid",
+        "benefit_2_description": "Google en Microsoft bieden betere spambescherming dan welke eigen CRM ook",
+        "benefit_3_title": "Meer functionaliteit",
+        "benefit_3_description": "Office 365 en Google Workspace bieden veel meer dan een simpele e-mail service in CRM"
+      },
+      "why_integration": {
+        "title": "Waarom integreren wij in plaats van eigen service aan te bieden?",
+        "description": "Andere CRMs bieden hun eigen e-mail service inclusief de prijs. Wij kiezen bewust voor integratie met Gmail en Outlook. Dit is waarom:",
+        "reason_1_title": "Vrijheid en flexibiliteit",
+        "reason_1_description": "E-mail is te belangrijk om aan een CRM vast te zitten. Als je besluit van provider te wisselen, moet je communicatie gewoon blijven werken zonder duizenden e-mails te migreren.",
+        "reason_2_title": "Superieur in functionaliteit",
+        "reason_2_description": "Office 365 en Google Workspace bieden veel meer dan de simpele e-mail service die bij andere CRMs komt. Agenda's, drive, samenwerking - alles geïntegreerd.",
+        "reason_3_title": "Veiligheid en deliverability",
+        "reason_3_description": "E-mail is constant doelwit van spammers. Het vergt enorme resources, beveiliging en techniek om zorgeloze ervaring te bieden. Dat is niet onze core business.",
+        "reason_4_title": "Integratie beter dan scheiding",
+        "reason_4_description": "Integratie is eenvoudig, werkt perfect en is veiliger. E-mails worden verstuurd vanaf je geautoriseerde server, niet vanaf onbekende CRM server."
+      },
+      "context_organization": {
+        "title": "Slimme organisatie op context",
+        "description": "E-mails worden niet alleen gesynchroniseerd - ze worden slim georganiseerd op basis van de context waarin ze zijn verstuurd.",
+        "feature_1_title": "E-mails in specifieke deals",
+        "feature_1_description": "Als je een e-mail verstuurt vanuit een deal, wordt die e-mail aan die specifieke deal gekoppeld. Meerdere deals met dezelfde klant? Elke e-mail gaat naar de juiste deal.",
+        "feature_2_title": "Compleet overzicht op contactniveau",
+        "feature_2_description": "Op contactniveau zie je ALLE e-mails, ongeacht vanuit welke deal ze zijn verstuurd. Complete communicatie historie met die klant.",
+        "feature_3_title": "Slimme automatische sync",
+        "feature_3_description": "Tesoro zoekt naar e-mailadressen die het kent, maakt verbinding met je mailserver en synchroniseert automatisch alle e-mails van die contacten."
+      },
+      "templates": {
+        "title": "Templates met placeholders",
+        "description": "Maak professionele e-mail templates met placeholders die automatisch worden ingevuld. Sneller en consistenter dan schrijven vanuit je e-mail client.",
+        "benefit_1_title": "Slimme placeholders",
+        "benefit_1_description": "Gebruik {klant_naam}, {property_adres}, {prijs} en meer. Ze worden automatisch ingevuld met correcte data.",
+        "benefit_2_title": "Templates per fase",
+        "benefit_2_description": "Verschillende templates voor elke fase: eerste contact, opvolging na bezichtiging, bevestiging bieding, etc.",
+        "benefit_3_title": "Verstuurd vanaf geautoriseerde server",
+        "benefit_3_description": "Alle e-mails worden verstuurd vanaf je Gmail/Outlook server, niet vanaf onbekende server. Maximale deliverability en vertrouwen."
+      },
+      "tracking": {
+        "title": "E-mail tracking",
+        "description": "Weet precies wat er gebeurt met je e-mails nadat je ze verstuurt.",
+        "feature_1_title": "Tracking pixel",
+        "feature_1_description": "Zie wanneer een klant je e-mail opent. Handig voor timing van opvolging.",
+        "feature_2_title": "Link click tracking",
+        "feature_2_description": "We registreren clicks op links in je e-mails. Weet welke properties de meeste interesse wekken.",
+        "disclaimer": "Let op: Tracking werkt het beste met e-mails vanuit templates. Niet alle e-mail clients staan tracking pixels toe."
+      },
+      "workflow": {
+        "title": "Hoe het werkt",
+        "step_1_title": "Verbind met één klik",
+        "step_1_description": "Autoriseer toegang tot je Gmail of Outlook account. Tesoro slaat nooit je wachtwoord op.",
+        "step_2_title": "Automatische synchronisatie",
+        "step_2_description": "Tesoro zoekt naar e-mailadressen die het kent en synchroniseert die e-mails automatisch vanaf je server.",
+        "step_3_title": "Organisatie op context",
+        "step_3_description": "E-mails worden georganiseerd per deal en contact. Complete context altijd zichtbaar.",
+        "step_4_title": "Verstuur met templates",
+        "step_4_description": "Gebruik templates met placeholders. Verstuurd vanaf je geautoriseerde server met tracking."
+      },
+      "team_collaboration": {
+        "title": "Team samenwerking - binnenkort Q1 2026",
+        "description": "We werken aan samenwerkingsfuncties die team communicatie nog efficiënter maken.",
+        "feature_1_title": "Comments op e-mails",
+        "feature_1_description": "Voeg interne comments toe aan elke e-mail. Alleen zichtbaar voor je team, niet voor de klant. Perfect voor coördinatie van opvolging.",
+        "feature_2_title": "Mentions voor collega's",
+        "feature_2_description": "Gebruik @naam om collega's te vermelden in comments. Ze ontvangen directe notificatie. Interne communicatie zonder CC of BCC.",
+        "feature_3_title": "Gedeelde e-mails",
+        "feature_3_description": "Geen noodzaak om te delen of CC naar collega's. Als ze toegang hebben tot het contact of deal, kunnen ze de e-mails bekijken. Totale team transparantie.",
+        "availability": "Beschikbaar Q1 2026"
+      },
+      "security": {
+        "title": "Veiligheid en betrouwbaarheid",
+        "description": "Integratie met Gmail en Outlook biedt belangrijke voordelen boven eigen e-mail service.",
+        "benefit_1_title": "E-mails blijven op je server",
+        "benefit_1_description": "Je e-mails staan in Gmail/Outlook. Tesoro synchroniseert alleen kopieën van e-mails van bekende contacten. Jij behoudt volledige controle.",
+        "benefit_2_title": "Betere deliverability",
+        "benefit_2_description": "E-mails worden verstuurd vanaf je geautoriseerde server met SPF/DKIM geconfigureerd. Niet vanaf onbekende CRM server die als spam kan worden gemarkeerd.",
+        "benefit_3_title": "Geen configuratie problemen",
+        "benefit_3_description": "Geen noodzaak om SPF records, DKIM, DMARC, etc. te configureren. Alles is al geconfigureerd in je Gmail/Outlook.",
+        "benefit_4_title": "Professionele spambescherming",
+        "benefit_4_description": "Google en Microsoft investeren miljoenen in spam en phishing bescherming. Veel beter dan wat welke CRM ook kan bieden."
       },
       "cta": {
-        "title": "Klaar voor naadloze e-mail integratie?",
-        "description": "Integreer Gmail of Outlook in 2 minuten en track alle communicatie automatisch.",
+        "title": "Perfecte integratie, geen complicaties",
+        "description": "Ontdek hoe onze e-mail integratie je het beste van beide werelden geeft: vrijheid en organisatie",
         "primary": "Start 14 dagen gratis",
         "secondary": "Bekijk demo"
       }

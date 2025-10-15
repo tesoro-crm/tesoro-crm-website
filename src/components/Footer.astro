@@ -6,42 +6,429 @@ const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 ---
 
-<footer class="bg-neutral-900 text-white py-12">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-      <div>
-        <h3 class="text-xl font-display font-bold mb-4">Tesoro CRM</h3>
-        <p class="text-neutral-400 text-sm">
+<footer class="footer">
+  <div class="footer-gradient"></div>
+
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-grid">
+      <!-- Logo & Newsletter Column -->
+      <div class="footer-brand">
+        <a href={getLocalizedPath('/', locale)} class="footer-logo">
+          <img src="/logos/tesoro-logo-white-rgb.svg" alt="Tesoro CRM" />
+        </a>
+        <p class="footer-tagline">
           {t('footer.tagline', locale)}
         </p>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+          <h4 class="newsletter-title">{t('footer.newsletter', locale)}</h4>
+          <p class="newsletter-description">{t('footer.newsletter_description', locale)}</p>
+          <form class="newsletter-form" action="/api/newsletter" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder={t('footer.newsletter_placeholder', locale)}
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="newsletter-button">
+              <span class="icon">send</span>
+            </button>
+          </form>
+          <p class="newsletter-privacy">{t('footer.newsletter_privacy', locale)}</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h4 class="social-title">{t('footer.follow_us', locale)}</h4>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/tesoro-crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/tesoro_crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/tesoro.crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@tesoro-crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4 class="font-semibold mb-4">{t('footer.product', locale)}</h4>
-        <ul class="space-y-2 text-sm text-neutral-400">
-          <li><a href={getLocalizedPath('/features', locale)} class="hover:text-white transition-colors">Features</a></li>
-          <li><a href={getLocalizedPath('/pricing', locale)} class="hover:text-white transition-colors">Pricing</a></li>
-          <li><a href={getLocalizedPath('/integrations', locale)} class="hover:text-white transition-colors">Integrations</a></li>
+
+      <!-- Product Column -->
+      <div class="footer-links">
+        <h4 class="footer-links-title">{t('footer.product', locale)}</h4>
+        <ul class="footer-links-list">
+          <li><a href={getLocalizedPath('/features', locale)}>Features</a></li>
+          <li><a href={getLocalizedPath('/pricing', locale)}>Pricing</a></li>
+          <li><a href={getLocalizedPath('/integrations', locale)}>Integrations</a></li>
+          <li><a href={getLocalizedPath('/website-api', locale)}>Web & API</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-semibold mb-4">{t('footer.resources', locale)}</h4>
-        <ul class="space-y-2 text-sm text-neutral-400">
-          <li><a href={getLocalizedPath('/docs', locale)} class="hover:text-white transition-colors">Documentation</a></li>
-          <li><a href={getLocalizedPath('/blog', locale)} class="hover:text-white transition-colors">Blog</a></li>
-          <li><a href={getLocalizedPath('/support', locale)} class="hover:text-white transition-colors">Support</a></li>
+
+      <!-- Resources Column -->
+      <div class="footer-links">
+        <h4 class="footer-links-title">{t('footer.resources', locale)}</h4>
+        <ul class="footer-links-list">
+          <li><a href={getLocalizedPath('/knowledge-base', locale)}>Knowledge Base</a></li>
+          <li><a href={getLocalizedPath('/blog', locale)}>Blog</a></li>
+          <li><a href={getLocalizedPath('/support', locale)}>Support</a></li>
+          <li><a href={getLocalizedPath('/docs', locale)}>Documentation</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-semibold mb-4">{t('footer.company', locale)}</h4>
-        <ul class="space-y-2 text-sm text-neutral-400">
-          <li><a href={getLocalizedPath('/about', locale)} class="hover:text-white transition-colors">About</a></li>
-          <li><a href={getLocalizedPath('/contact', locale)} class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href={getLocalizedPath('/privacy', locale)} class="hover:text-white transition-colors">Privacy</a></li>
+
+      <!-- Company Column -->
+      <div class="footer-links">
+        <h4 class="footer-links-title">{t('footer.company', locale)}</h4>
+        <ul class="footer-links-list">
+          <li><a href={getLocalizedPath('/about', locale)}>About</a></li>
+          <li><a href={getLocalizedPath('/contact', locale)}>Contact</a></li>
+          <li><a href={getLocalizedPath('/privacy', locale)}>Privacy</a></li>
+          <li><a href={getLocalizedPath('/terms', locale)}>Terms</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-400">
-      {t('footer.copyright', locale)}
+
+    <!-- Trust Badges & Copyright -->
+    <div class="footer-bottom">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <span class="icon">verified_user</span>
+          <span>{t('footer.trust_gdpr', locale)}</span>
+        </div>
+        <div class="trust-badge">
+          <span class="icon">security</span>
+          <span>{t('footer.trust_soc2', locale)}</span>
+        </div>
+        <div class="trust-badge">
+          <span class="icon">cloud</span>
+          <span>{t('footer.trust_eu_hosting', locale)}</span>
+        </div>
+        <div class="trust-badge">
+          <span class="icon">lock</span>
+          <span>{t('footer.trust_ssl', locale)}</span>
+        </div>
+      </div>
+
+      <p class="footer-copyright">
+        {t('footer.copyright', locale)}
+      </p>
     </div>
   </div>
 </footer>
+
+<style>
+  /* Material Symbols */
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+  .icon {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .footer {
+    position: relative;
+    background: linear-gradient(135deg, #0a1f44 0%, #1a2f54 50%, #0a1f44 100%);
+    color: white;
+    padding: 4rem 0 2rem;
+    overflow: hidden;
+  }
+
+  .footer-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      #ff6b9d 20%,
+      #e84b93 50%,
+      #ff6b9d 80%,
+      transparent 100%
+    );
+  }
+
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Logo & Brand */
+  .footer-brand {
+    max-width: 400px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: opacity 0.2s;
+  }
+
+  .footer-logo:hover {
+    opacity: 0.8;
+  }
+
+  .footer-logo img {
+    height: 32px;
+    width: auto;
+  }
+
+  .footer-tagline {
+    color: #cbd5e1;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    margin-bottom: 2.5rem;
+  }
+
+  .newsletter-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .newsletter-description {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .newsletter-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+  }
+
+  .newsletter-input::placeholder {
+    color: #94a3b8;
+  }
+
+  .newsletter-input:focus {
+    outline: none;
+    border-color: #ff6b9d;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .newsletter-button {
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #ff6b9d 0%, #e84b93 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 107, 157, 0.3);
+  }
+
+  .newsletter-button:active {
+    transform: translateY(0);
+  }
+
+  .newsletter-privacy {
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
+
+  /* Social Media */
+  .footer-social {
+    margin-top: 2rem;
+  }
+
+  .social-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    transition: all 0.2s;
+  }
+
+  .social-link:hover {
+    background: rgba(255, 107, 157, 0.2);
+    color: #ff6b9d;
+    transform: translateY(-2px);
+  }
+
+  .social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Footer Links */
+  .footer-links-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: white;
+  }
+
+  .footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-links-list a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .footer-links-list a:hover {
+    color: #ff6b9d;
+    transform: translateX(4px);
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    color: #cbd5e1;
+  }
+
+  .trust-badge .icon {
+    color: #10b981;
+    font-size: 18px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer {
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-brand {
+      grid-column: 1;
+    }
+
+    .trust-badges {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.75rem;
+    }
+
+    .trust-badge {
+      justify-content: center;
+    }
+  }
+</style>

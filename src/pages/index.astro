@@ -12,6 +12,7 @@ import VideoModal from '../components/ui/VideoModal.astro';
 import FormHandler from '../components/scripts/FormHandler.astro';
 import Modal from '../components/ui/Modal.astro';
 import HeroSimple from '../components/sections/HeroSimple.astro';
+import WebsiteShowcase from '../components/sections/WebsiteShowcase.astro';
 import LeadWorkflowSection from '../components/sections/LeadWorkflowSection.astro';
 import CoCreated from '../components/sections/CoCreated.astro';
 import FeaturesGrid from '../components/sections/FeaturesGrid.astro';
@@ -31,6 +32,8 @@ await loadTranslations(locale);
   description={t('meta.home_description', locale)}
 >
   <HeroSimple locale={locale} />
+
+  <WebsiteShowcase locale={locale} />
 
   <LeadWorkflowSection locale={locale} />
 

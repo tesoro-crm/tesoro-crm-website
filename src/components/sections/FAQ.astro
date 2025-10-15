@@ -1,6 +1,4 @@
 ---
-import Card from '../ui/Card.astro';
-import Button from '../ui/Button.astro';
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
 
@@ -10,7 +8,12 @@ export interface Props {
 
 const { locale } = Astro.props;
 
-const faqs = [
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const faqs: FAQ[] = [
   {
     question: t('home.faq.question_1', locale),
     answer: t('home.faq.answer_1', locale),
@@ -27,34 +30,341 @@ const faqs = [
     question: t('home.faq.question_4', locale),
     answer: t('home.faq.answer_4', locale),
   },
+  {
+    question: t('home.faq.question_5', locale),
+    answer: t('home.faq.answer_5', locale),
+  },
+  {
+    question: t('home.faq.question_6', locale),
+    answer: t('home.faq.answer_6', locale),
+  },
+  {
+    question: t('home.faq.question_7', locale),
+    answer: t('home.faq.answer_7', locale),
+  },
+  {
+    question: t('home.faq.question_8', locale),
+    answer: t('home.faq.answer_8', locale),
+  },
 ];
+
+// Schema.org JSON-LD for Google Rich Results
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
 
-<section class="py-16 lg:py-24 bg-neutral-50">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-        {t('home.faq.title', locale)}
-      </h2>
-      <p class="text-lg text-neutral-600">
-        {t('home.faq.subtitle', locale)}
-      </p>
+<!-- Schema.org structured data for Google -->
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<section class="faq-section">
+  <div class="faq-container">
+    <!-- Header -->
+    <div class="faq-header">
+      <h2 class="faq-title">{t('home.faq.title', locale)}</h2>
+      <p class="faq-subtitle">{t('home.faq.subtitle', locale)}</p>
     </div>
 
-    <div class="space-y-4">
-      {faqs.map((faq) => (
-        <Card variant="default" padding="lg">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">{faq.question}</h3>
-          <p class="text-neutral-700">{faq.answer}</p>
-        </Card>
+    <!-- FAQ Accordion -->
+    <div class="faq-accordion" itemscope itemtype="https://schema.org/FAQPage">
+      {faqs.map((faq, index) => (
+        <div
+          class={`faq-item ${index === 0 ? 'faq-item--open' : ''}`}
+          itemscope
+          itemprop="mainEntity"
+          itemtype="https://schema.org/Question"
+        >
+          <button
+            class="faq-question"
+            aria-expanded={index === 0 ? "true" : "false"}
+            aria-controls={`faq-answer-${index}`}
+            data-faq-toggle
+          >
+            <span class="faq-question-text" itemprop="name">{faq.question}</span>
+            <span class="icon faq-icon" aria-hidden="true">{index === 0 ? 'expand_less' : 'expand_more'}</span>
+          </button>
+
+          <div
+            class="faq-answer-wrapper"
+            id={`faq-answer-${index}`}
+            role="region"
+            aria-labelledby={`faq-question-${index}`}
+            itemscope
+            itemprop="acceptedAnswer"
+            itemtype="https://schema.org/Answer"
+          >
+            <div class="faq-answer" itemprop="text">
+              {faq.answer}
+            </div>
+          </div>
+        </div>
       ))}
     </div>
 
-    <div class="text-center mt-12">
-      <p class="text-neutral-600 mb-4">{t('home.faq.more_questions', locale)}</p>
-      <Button variant="outline" data-modal-target="contact-modal">
+    <!-- CTA Footer -->
+    <div class="faq-footer">
+      <p class="faq-footer-text">{t('home.faq.more_questions', locale)}</p>
+      <button
+        class="faq-cta-button"
+        data-modal-target="contact-modal"
+      >
         {t('home.faq.contact_cta', locale)}
-      </Button>
+      </button>
     </div>
   </div>
 </section>
+
+<script>
+  function initFAQ() {
+    const faqToggles = document.querySelectorAll('[data-faq-toggle]');
+
+    // Set initial max-height for the first item (which is open by default)
+    const firstItem = document.querySelector('.faq-item--open');
+    if (firstItem) {
+      const firstAnswer = firstItem.querySelector('.faq-answer-wrapper');
+      if (firstAnswer) {
+        firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
+      }
+    }
+
+    faqToggles.forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        const answerId = toggle.getAttribute('aria-controls');
+        const answer = document.getElementById(answerId!);
+        const icon = toggle.querySelector('.faq-icon');
+        const faqItem = toggle.closest('.faq-item');
+
+        if (!answer || !icon || !faqItem) return;
+
+        // Close all other items
+        document.querySelectorAll('.faq-item').forEach((item) => {
+          if (item !== faqItem) {
+            item.classList.remove('faq-item--open');
+            const otherToggle = item.querySelector('[data-faq-toggle]');
+            const otherAnswer = item.querySelector('.faq-answer-wrapper');
+            const otherIcon = item.querySelector('.faq-icon');
+
+            if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+            if (otherAnswer) otherAnswer.style.maxHeight = '0px';
+            if (otherIcon) otherIcon.textContent = 'expand_more';
+          }
+        });
+
+        // Toggle current item
+        if (isExpanded) {
+          // Close
+          toggle.setAttribute('aria-expanded', 'false');
+          answer.style.maxHeight = '0px';
+          icon.textContent = 'expand_more';
+          faqItem.classList.remove('faq-item--open');
+        } else {
+          // Open
+          toggle.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.textContent = 'expand_less';
+          faqItem.classList.add('faq-item--open');
+        }
+      });
+    });
+  }
+
+  initFAQ();
+  document.addEventListener('astro:after-swap', initFAQ);
+</script>
+
+<style>
+  .faq-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 5rem 0;
+  }
+
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Header */
+  .faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .faq-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .faq-subtitle {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Accordion */
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .faq-item {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .faq-item:hover {
+    border-color: #cbd5e1;
+  }
+
+  .faq-item--open {
+    border-color: #ff6b9d;
+    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.1);
+  }
+
+  .faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s;
+  }
+
+  .faq-question:hover {
+    background: #f8f9fa;
+  }
+
+  .faq-item--open .faq-question {
+    background: linear-gradient(135deg, #fff5f7 0%, #ffffff 100%);
+  }
+
+  .faq-question-text {
+    flex: 1;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #0a1f44;
+    line-height: 1.5;
+  }
+
+  .faq-icon {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    color: #64748b;
+    transition: transform 0.3s, color 0.2s;
+  }
+
+  .faq-item--open .faq-icon {
+    color: #ff6b9d;
+  }
+
+  /* Answer */
+  .faq-answer-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .faq-answer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+  }
+
+  /* Footer */
+  .faq-footer {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: white;
+    border-radius: 16px;
+    border: 2px solid #e5e7eb;
+  }
+
+  .faq-footer-text {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 1.25rem;
+  }
+
+  .faq-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: #0a1f44;
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border: 2px solid #0a1f44;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+  }
+
+  .faq-cta-button:hover {
+    background: #0a1f44;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(10, 31, 68, 0.2);
+  }
+
+  .faq-cta-button:active {
+    transform: translateY(0);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 3rem 0;
+    }
+
+    .faq-title {
+      font-size: 1.875rem;
+    }
+
+    .faq-subtitle {
+      font-size: 1rem;
+    }
+
+    .faq-question {
+      padding: 1rem 1.25rem;
+    }
+
+    .faq-question-text {
+      font-size: 1rem;
+    }
+
+    .faq-answer {
+      padding: 0 1.25rem 1.25rem 1.25rem;
+      font-size: 0.875rem;
+    }
+
+    .faq-footer {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>

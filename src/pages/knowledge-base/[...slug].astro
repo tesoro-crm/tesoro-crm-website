@@ -23,6 +23,20 @@ const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language)
 const articleData = article.data;
 const author = getAuthor(articleData.meta.authorId);
 
+// Get foundation articles for next step navigation
+const allArticles = await getCollection('knowledge-base');
+const foundationArticles = allArticles
+  .filter(a => a.data.meta.category === 'getting-started' && a.data.meta.difficulty === 'beginner')
+  .sort((a, b) => new Date(a.data.meta.publishDate).getTime() - new Date(b.data.meta.publishDate).getTime())
+  .slice(0, 4);
+
+// Find current step and next step
+const currentStepIndex = foundationArticles.findIndex(a => a.data.meta.id === articleData.meta.id);
+const isFoundationStep = currentStepIndex !== -1;
+const nextStep = isFoundationStep && currentStepIndex < foundationArticles.length - 1
+  ? foundationArticles[currentStepIndex + 1]
+  : null;
+
 // Localized content
 const title = articleData.hero.title[locale];
 const description = articleData.hero.description[locale];
@@ -165,6 +179,31 @@ const pageDescription = description;
                     <div class="kb-article__faq-answer" set:html={item.answer[locale].text} />
                   </details>
                 ))}
+              </div>
+            </section>
+          )}
+
+          <!-- Next Step CTA (for foundation articles) -->
+          {nextStep && (
+            <section class="kb-article__next-step">
+              <div class="kb-article__next-step-content">
+                <div class="kb-article__next-step-label">
+                  <span class="icon">arrow_forward</span>
+                  {locale === 'nl' ? 'Volgende stap' : locale === 'es' ? 'Siguiente paso' : 'Next step'}
+                </div>
+                <h3 class="kb-article__next-step-title">
+                  {locale === 'nl' ? 'Stap' : locale === 'es' ? 'Paso' : 'Step'} {currentStepIndex + 2}: {nextStep.data.hero.title[locale]}
+                </h3>
+                <p class="kb-article__next-step-desc">
+                  {nextStep.data.hero.description[locale]}
+                </p>
+                <a
+                  href={getLocalizedPath(`/knowledge-base/${nextStep.data.meta.id}`, locale)}
+                  class="kb-article__next-step-btn"
+                >
+                  {locale === 'nl' ? 'Begin met stap' : locale === 'es' ? 'Comenzar paso' : 'Start step'} {currentStepIndex + 2}
+                  <span class="icon">arrow_forward</span>
+                </a>
               </div>
             </section>
           )}
@@ -526,6 +565,92 @@ const pageDescription = description;
     line-height: 1.6;
   }
 
+  /* Next Step CTA */
+  .kb-article__next-step {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+    border-radius: 16px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kb-article__next-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(245, 180, 0, 0.15) 0%, transparent 50%);
+    opacity: 1;
+  }
+
+  .kb-article__next-step-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+
+  .kb-article__next-step-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .kb-article__next-step-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .kb-article__next-step-desc {
+    font-size: 1.0625rem;
+    opacity: 0.92;
+    margin-bottom: 1.75rem;
+    line-height: 1.6;
+  }
+
+  .kb-article__next-step-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.875rem 1.75rem;
+    background: #F5B400;
+    color: #0a1f44;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(245, 180, 0, 0.3);
+  }
+
+  .kb-article__next-step-btn:hover {
+    background: #FFD700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(245, 180, 0, 0.4);
+  }
+
+  .kb-article__next-step-btn .icon {
+    transition: transform 0.25s ease;
+  }
+
+  .kb-article__next-step-btn:hover .icon {
+    transform: translateX(4px);
+  }
+
   /* Clean Article Footer */
   .kb-article__footer {
     margin-top: 4rem;
@@ -634,6 +759,23 @@ const pageDescription = description;
       flex-direction: column;
       text-align: center;
       gap: 0.75rem;
+    }
+
+    .kb-article__next-step {
+      padding: 1.75rem;
+    }
+
+    .kb-article__next-step-title {
+      font-size: 1.5rem;
+    }
+
+    .kb-article__next-step-desc {
+      font-size: 1rem;
+    }
+
+    .kb-article__next-step-btn {
+      width: 100%;
+      justify-content: center;
     }
 
     .kb-article__footer-actions {

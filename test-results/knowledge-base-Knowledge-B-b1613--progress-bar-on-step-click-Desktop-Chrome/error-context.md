@@ -1,0 +1,200 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Tesoro CRM" [ref=e5] [cursor=pointer]:
+          - /url: /nl
+          - img "Tesoro CRM" [ref=e6]
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - button "Features" [ref=e9] [cursor=pointer]:
+              - text: Features
+              - img [ref=e10]
+          - listitem [ref=e12]:
+            - link "Prijzen" [ref=e13] [cursor=pointer]:
+              - /url: /nl/pricing
+          - listitem [ref=e14]:
+            - link "Kennisbank" [ref=e15] [cursor=pointer]:
+              - /url: /nl/knowledge-base
+          - listitem [ref=e16]:
+            - link "Blog" [ref=e17] [cursor=pointer]:
+              - /url: /nl/blog
+        - generic [ref=e18]:
+          - button "Search" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: search
+          - link "Aanmelden" [ref=e21] [cursor=pointer]:
+            - /url: https://crm.tesoro.estate/auth/signin
+          - link "Start Gratis Trial" [ref=e22] [cursor=pointer]:
+            - /url: https://crm.tesoro.estate/auth/signup
+          - button "Select language" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25]: nl
+            - img [ref=e26]
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - heading "Waar ben je in je Tesoro-reis?" [level=1] [ref=e32]
+        - paragraph [ref=e33]: Kies de beste startplek voor jou
+      - generic [ref=e36]:
+        - generic [ref=e37] [cursor=pointer]:
+          - generic [ref=e38]: 🚀
+          - heading "Nieuw bij Tesoro" [level=2] [ref=e39]
+          - paragraph [ref=e40]: Stap-voor-stap onboarding. Account aanmaken, medewerkers uitnodigen, email instellen en je eerste deals.
+          - button "Start onboarding arrow_forward" [ref=e41]:
+            - text: Start onboarding
+            - generic [ref=e42]: arrow_forward
+        - generic [ref=e43] [cursor=pointer]:
+          - generic [ref=e44]: 📚
+          - heading "Doorzoek documentatie" [level=2] [ref=e45]
+          - paragraph [ref=e46]: Zoek in alle handleidingen, features, interfaces en configuraties. Vind snel technische antwoorden.
+          - button "Bekijk documentatie arrow_forward" [ref=e47]:
+            - text: Bekijk documentatie
+            - generic [ref=e48]: arrow_forward
+        - generic [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: ⚡
+          - heading "Power-user tips" [level=2] [ref=e51]
+          - paragraph [ref=e52]: Geavanceerde workflows, slimme filters, AI-prompts, email templates en expert-scenario's.
+          - button "Expert tips arrow_forward" [ref=e53]:
+            - text: Expert tips
+            - generic [ref=e54]: arrow_forward
+  - contentinfo [ref=e55]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - link "Tesoro CRM" [ref=e60] [cursor=pointer]:
+            - /url: /nl
+            - img "Tesoro CRM" [ref=e61]
+          - paragraph [ref=e62]: Intelligente lead generatie voor makelaars
+          - generic [ref=e63]:
+            - heading "Nieuwsbrief" [level=4] [ref=e64]
+            - paragraph [ref=e65]: Ontvang de laatste updates en vastgoed inzichten
+            - generic [ref=e66]:
+              - textbox "Vul je email in" [ref=e67]
+              - button "send" [ref=e68] [cursor=pointer]:
+                - generic [ref=e69]: send
+            - paragraph [ref=e70]: We respecteren je privacy. Uitschrijven kan altijd.
+          - generic [ref=e71]:
+            - heading "Volg Ons" [level=4] [ref=e72]
+            - generic [ref=e73]:
+              - link "LinkedIn" [ref=e74] [cursor=pointer]:
+                - /url: https://linkedin.com/company/tesoro-crm
+                - img [ref=e75]
+              - link "Twitter" [ref=e77] [cursor=pointer]:
+                - /url: https://twitter.com/tesoro_crm
+                - img [ref=e78]
+              - link "Instagram" [ref=e80] [cursor=pointer]:
+                - /url: https://instagram.com/tesoro.crm
+                - img [ref=e81]
+              - link "YouTube" [ref=e83] [cursor=pointer]:
+                - /url: https://youtube.com/@tesoro-crm
+                - img [ref=e84]
+        - generic [ref=e86]:
+          - heading "Product" [level=4] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Features" [ref=e90] [cursor=pointer]:
+                - /url: /nl/features
+            - listitem [ref=e91]:
+              - link "Pricing" [ref=e92] [cursor=pointer]:
+                - /url: /nl/pricing
+            - listitem [ref=e93]:
+              - link "Integrations" [ref=e94] [cursor=pointer]:
+                - /url: /nl/integrations
+            - listitem [ref=e95]:
+              - link "Website & API" [ref=e96] [cursor=pointer]:
+                - /url: /nl/website-api
+        - generic [ref=e97]:
+          - heading "Bronnen" [level=4] [ref=e98]
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - link "Knowledge Base" [ref=e101] [cursor=pointer]:
+                - /url: /nl/knowledge-base
+            - listitem [ref=e102]:
+              - link "Blog" [ref=e103] [cursor=pointer]:
+                - /url: /nl/blog
+            - listitem [ref=e104]:
+              - link "Support" [ref=e105] [cursor=pointer]:
+                - /url: /nl/support
+            - listitem [ref=e106]:
+              - link "Documentation" [ref=e107] [cursor=pointer]:
+                - /url: /nl/docs
+        - generic [ref=e108]:
+          - heading "Bedrijf" [level=4] [ref=e109]
+          - list [ref=e110]:
+            - listitem [ref=e111]:
+              - link "About" [ref=e112] [cursor=pointer]:
+                - /url: /nl/about
+            - listitem [ref=e113]:
+              - link "Contact" [ref=e114] [cursor=pointer]:
+                - /url: /nl/contact
+            - listitem [ref=e115]:
+              - link "Privacy" [ref=e116] [cursor=pointer]:
+                - /url: /nl/privacy
+            - listitem [ref=e117]:
+              - link "Terms" [ref=e118] [cursor=pointer]:
+                - /url: /nl/terms
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: verified_user
+            - generic [ref=e123]: AVG/GDPR Compliant
+          - generic [ref=e124]:
+            - generic [ref=e125]: security
+            - generic [ref=e126]: SOC 2 Type II
+          - generic [ref=e127]:
+            - generic [ref=e128]: cloud
+            - generic [ref=e129]: EU Hosting
+          - generic [ref=e130]:
+            - generic [ref=e131]: lock
+            - generic [ref=e132]: 256-bit SSL
+        - paragraph [ref=e133]: © 2025 Tesoro CRM. Alle rechten voorbehouden.
+  - generic [ref=e134]:
+    - button "Open AI Assistant" [ref=e135] [cursor=pointer]:
+      - img [ref=e136]
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - heading "Tesoro AI Assistent" [level=3]
+            - paragraph: Stel een vraag of zoek informatie
+      - generic:
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - paragraph: Hallo! Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.
+      - generic:
+        - textbox "Stel een vraag..."
+        - button "Verstuur bericht":
+          - img
+      - generic:
+        - generic:
+          - text: Powered by
+          - strong: Cloudflare AI
+        - link "menu_book Knowledge Base":
+          - /url: /nl/ai-knowledge
+          - generic: menu_book
+          - text: Knowledge Base
+  - generic [ref=e140]:
+    - button "Menu" [ref=e141]:
+      - img [ref=e143]
+      - generic: Menu
+    - button "Inspect" [ref=e147]:
+      - img [ref=e149]
+      - generic: Inspect
+    - button "Audit" [ref=e151]:
+      - generic [ref=e152]:
+        - img [ref=e153]
+        - img [ref=e156]
+      - generic: Audit
+    - button "Spotlight by Sentry" [ref=e159]:
+      - img [ref=e161]
+      - generic: Spotlight by Sentry
+    - button "Settings" [ref=e167]:
+      - img [ref=e169]
+      - generic: Settings
+```

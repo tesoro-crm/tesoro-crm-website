@@ -65,7 +65,14 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description || defaultMeta[locale].description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 		
@@ -103,7 +110,14 @@ const {
 		
 		<!-- Cloudflare Turnstile -->
 		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-		
+
+		<!-- Cloudflare Web Analytics (Privacy-friendly, no cookies, no GDPR banner needed) -->
+		{import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN && (
+			<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+			        data-cf-beacon={JSON.stringify({ token: import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN })}
+			        type="text/partytown"></script>
+		)}
+
 		<!-- View Transitions -->
 		<ViewTransitions />
 	</head>

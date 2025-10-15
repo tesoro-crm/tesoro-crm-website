@@ -1,0 +1,245 @@
+---
+import Button from '../ui/Button.astro';
+import Card from '../ui/Card.astro';
+import Badge from '../ui/Badge.astro';
+import { t, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+export interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
+---
+
+<section class="py-16 lg:py-24 bg-gradient-to-br from-neutral-50 via-white to-neutral-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <Badge variant="secondary" size="md" class="mb-4">
+        {t('home.website_showcase.badge', locale)}
+      </Badge>
+      <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+        {t('home.website_showcase.title', locale)}
+      </h2>
+      <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+        {t('home.website_showcase.description', locale)}
+      </p>
+    </div>
+
+    <!-- Split Layout: Visual + Benefits -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+      <!-- Left: Visual Preview -->
+      <div class="relative">
+        <!-- Browser Mockup -->
+        <div class="bg-white rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden">
+          <!-- Browser Chrome -->
+          <div class="bg-neutral-100 px-4 py-3 border-b border-neutral-200 flex items-center gap-2">
+            <div class="flex gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-400"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-md px-3 py-1 text-xs text-neutral-500 mx-4">
+              jouwmakelaarskantoor.nl
+            </div>
+          </div>
+
+          <!-- Website Preview Content -->
+          <div class="bg-gradient-to-br from-primary to-primary-accent p-8 text-white aspect-[16/10]">
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <div class="text-xs font-semibold mb-2 opacity-90">JOUW AGENCY</div>
+                <h3 class="text-2xl font-display font-bold mb-4">
+                  {t('home.website_showcase.preview_headline', locale)}
+                </h3>
+                <p class="text-white/90 text-sm mb-6">
+                  {t('home.website_showcase.preview_subheadline', locale)}
+                </p>
+                <div class="inline-flex items-center gap-2 bg-secondary text-neutral-900 px-4 py-2 rounded-lg text-sm font-semibold">
+                  <span>{t('home.website_showcase.preview_cta', locale)}</span>
+                  <span class="icon text-sm">arrow_forward</span>
+                </div>
+              </div>
+
+              <!-- Property Cards Mockup -->
+              <div class="grid grid-cols-3 gap-2">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Performance Badge -->
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl border-2 border-secondary p-4 lg:p-6">
+          <div class="text-center">
+            <div class="text-4xl font-display font-bold text-success mb-1">100</div>
+            <div class="text-xs text-neutral-600 font-semibold uppercase tracking-wide">Lighthouse Score</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Key Benefits -->
+      <div class="space-y-6">
+        {[1, 2, 3, 4].map((num) => (
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-primary-accent rounded-xl flex items-center justify-center shadow-lg">
+              <span class="icon benefit-icon !text-white text-xl">
+                {num === 1 ? 'palette' : num === 2 ? 'speed' : num === 3 ? 'shield' : 'devices'}
+              </span>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t(`home.website_showcase.benefit_${num}_title`, locale)}
+              </h3>
+              <p class="text-sm text-neutral-700">
+                {t(`home.website_showcase.benefit_${num}_description`, locale)}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Tech Stack Pills with Animated Gradient -->
+    <div class="tech-stack-container mb-8">
+      <div class="tech-stack-wrapper">
+        {[
+          { key: 'astro', name: 'Astro', icon: 'rocket_launch' },
+          { key: 'payload', name: 'PayloadCMS', icon: 'edit_note' },
+          { key: 'cloudflare', name: 'Cloudflare', icon: 'cloud' },
+          { key: 'speed', name: '100/100 Speed', icon: 'speed' },
+          { key: 'seo', name: 'SEO Optimized', icon: 'search' },
+        ].map((tech, index) => (
+          <div class="tech-pill-wrapper" style={`animation-delay: ${index * 0.2}s`}>
+            <div class="tech-pill">
+              <span class="icon text-sm">{tech.icon}</span>
+              <span class="text-sm font-medium">{tech.name}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <Button variant="primary" size="lg" href={getLocalizedPath('/website-api', locale)}>
+        {t('home.website_showcase.cta_button', locale)}
+        <span class="icon">arrow_forward</span>
+      </Button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Subtle animation for preview */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .relative:hover {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Tech Stack Pills Animation */
+  .tech-stack-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+
+  .tech-stack-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    position: relative;
+  }
+
+  .tech-pill-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+
+  .tech-pill-wrapper:hover {
+    z-index: 1000;
+  }
+
+  .tech-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(90deg,
+        #D4A5A5 0%,
+        #E8B4B4 25%,
+        #F5B400 50%,
+        #ff9500 75%,
+        #D4A5A5 100%
+      ) border-box;
+    background-size: 300% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
+    box-shadow: 0 2px 8px rgba(212, 165, 165, 0.15);
+    cursor: pointer;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .tech-pill .icon {
+    color: #003366;
+    transition: all 0.3s ease;
+  }
+
+  .tech-pill:hover {
+    transform: scale(1.1);
+    border-color: #003366;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.25);
+  }
+
+  .tech-pill:hover .icon {
+    color: #F5B400;
+    transform: rotate(360deg);
+  }
+
+  /* Benefit Icons - Ensure white color */
+  .benefit-icon {
+    color: white !important;
+  }
+
+  /* Responsive: stack on mobile */
+  @media (max-width: 640px) {
+    .tech-stack-wrapper {
+      gap: 0.5rem;
+    }
+
+    .tech-pill {
+      font-size: 0.875rem;
+      padding: 0.375rem 0.875rem;
+    }
+  }
+</style>
