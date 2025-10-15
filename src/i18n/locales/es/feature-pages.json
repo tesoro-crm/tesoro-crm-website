@@ -12,18 +12,93 @@
       },
       "benefits": {
         "title": "Por qué funciona el smart matching",
-        "time_saved": "85%",
-        "time_saved_desc": "Tiempo ahorrado",
-        "conversion": "3x",
-        "conversion_desc": "Mayor conversión",
-        "satisfaction": "94%",
-        "satisfaction_desc": "Satisfacción del cliente",
-        "benefit_1_title": "96% de precisión",
-        "benefit_1_description": "Nuestro algoritmo de IA logra un 96% de precisión en hacer match de propiedades con los clientes correctos",
-        "benefit_2_title": "3x ventas más rápidas",
-        "benefit_2_description": "Los clientes encuentran su propiedad ideal 3x más rápido a través del matching inteligente",
-        "benefit_3_title": "Mayor satisfacción",
-        "benefit_3_description": "Tanto clientes como agentes reportan mayor satisfacción con las propiedades matched"
+        "time_saved": "3+ horas",
+        "time_saved_desc": "ahorradas por día con matching automático",
+        "conversion": "40%",
+        "conversion_desc": "mayor conversión con mejores matches",
+        "satisfaction": "85%",
+        "satisfaction_desc": "de agentes dice tener más tiempo para clientes"
+      },
+      "features": {
+        "feature_1_title": "Matching en tiempo real",
+        "feature_1_description": "Los matches aparecen instantáneamente cuando los parámetros del deal cambian o llegan nuevas propiedades. Sin esperas, sin retrasos.",
+        "feature_2_title": "Seguimiento completo de feedback",
+        "feature_2_description": "Rastrea todo el feedback del cliente: cuándo el cliente abre una propiedad (cola pending), marca interesante/no interesante, y por qué no. Todo el feedback visible en tiempo real.",
+        "feature_3_title": "Control del agente",
+        "feature_3_description": "Tú decides qué propiedades llegan realmente a los clientes. Preselección a cola de propuestas - tienes control completo.",
+        "feature_4_title": "Filtros inteligentes",
+        "feature_4_description": "Considera presupuesto, ubicación, tipo de propiedad, número de habitaciones, superficie y deseos especiales de los clientes."
+      },
+      "workflow": {
+        "step_1_title": "Ingresar perfil del cliente",
+        "step_1_description": "Añade un nuevo cliente con presupuesto, preferencia de ubicación, tipo de propiedad y deseos especiales.",
+        "step_2_title": "Matching en tiempo real",
+        "step_2_description": "El matching en tiempo real encuentra propiedades coincidentes instantáneamente cuando los parámetros cambian o llegan nuevas propiedades.",
+        "step_3_title": "El agente selecciona",
+        "step_3_description": "Revisa matches en la cola de preselección. Rechaza o mueve a la cola de propuestas para envío.",
+        "step_4_title": "Email al cliente (2x/día)",
+        "step_4_description": "Las propiedades en la cola de propuestas se envían automáticamente por email a los clientes 2x al día con enlace al portal.",
+        "step_5_title": "Cliente revisa en portal",
+        "step_5_description": "Cliente abre propiedad (→ pending), marca interesante/no interesante, puede solicitar visita con 3 fechas propuestas.",
+        "step_6_title": "Seguimiento de feedback",
+        "step_6_description": "Rastrea todo el feedback: pending (visto), interesting (quiere visitar), rejected (no interesante + razón). Visible en tiempo real en CRM."
+      },
+      "matching_results": {
+        "title": "Resultados de matching",
+        "timestamp": "Hoy 14:30"
+      },
+      "how_it_works": {
+        "title": "Cómo funciona el smart matching",
+        "description": "Descubre las potentes funciones que hacen posible el matching inteligente"
+      },
+      "matching_process": {
+        "title": "El proceso de matching",
+        "description": "Del perfil del cliente a matches inteligentes basados en criterios en 6 pasos"
+      },
+      "technical_details": {
+        "title": "Detalles técnicos",
+        "matching_criteria_title": "Criterios de matching",
+        "criterion_1": "Rango de presupuesto (mín/máx)",
+        "criterion_2": "Preferencias de ubicación (ciudades, barrios)",
+        "criterion_3": "Tipo de propiedad (villa, apartamento, etc.)",
+        "criterion_4": "Número de habitaciones y superficie",
+        "criterion_5": "Deseos especiales (jardín, garaje, etc.)",
+        "feedback_tracking_title": "Seguimiento de feedback",
+        "feedback_tracking_description": "Transparencia completa en el interés del cliente: ve cuándo los clientes abren propiedades (cola pending), cuáles encuentran interesantes con solicitud de visita (cola interesting), y cuáles no son interesantes incluyendo razón (rechazadas). El agente siempre tiene control completo y visión de todo el feedback del cliente en tiempo real."
+      },
+      "results": {
+        "title": "Resultados",
+        "stat_1_value": "73%",
+        "stat_1_description": "de agentes ve mayor satisfacción del cliente",
+        "stat_2_value": "2.5x",
+        "stat_2_description": "más rápido de lead a visita",
+        "stat_3_value": "€15.000",
+        "stat_3_description": "comisión extra promedio por mes",
+        "cta": "Prueba smart matching"
+      },
+      "integration": {
+        "card_1_title": "Integración de email",
+        "card_1_description": "Los matches se envían automáticamente a través de tu email profesional.",
+        "card_2_title": "Portal de clientes",
+        "card_2_description": "Los clientes ven matches en su portal personal y pueden dar feedback directamente.",
+        "card_3_title": "Pipeline de deals",
+        "card_3_description": "Los matches interesantes se añaden automáticamente como deals a tu pipeline."
+      },
+      "roadmap": {
+        "badge": "En el roadmap",
+        "title": "Próximamente: algoritmo de aprendizaje IA",
+        "description": "Estamos trabajando en funciones avanzadas de machine learning que harán el matching aún más inteligente",
+        "ai_title": "Aprendizaje con IA",
+        "ai_badge": "Q2 2026",
+        "ai_description": "El algoritmo de IA aprenderá automáticamente de tus elecciones como agente, feedback del cliente desde el portal y transacciones exitosas. Así los matches mejoran cada semana y obtienes sugerencias cada vez más relevantes para tus clientes.",
+        "ai_feature_1": "Aprende de selecciones y rechazos del agente",
+        "ai_feature_2": "Analiza patrones de feedback del cliente",
+        "ai_feature_3": "Predice preferencias del cliente basándose en historial"
+      },
+      "cta": {
+        "title": "¿Listo para smart matching?",
+        "description": "Comienza hoy con la prueba gratuita de 14 días. No se requiere tarjeta de crédito.",
+        "secondary": "Todas las funciones"
       },
       "workflow": {
         "title": "Cómo funciona el smart matching",

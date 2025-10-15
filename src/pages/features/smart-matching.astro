@@ -10,19 +10,19 @@ const locale: Language = getLocale(Astro.currentLocale);
 await loadTranslations(locale);
 
 const features = [
-  'Real-time Matching',
-  'Complete Feedback Tracking',
-  'Makelaar Controle',
-  'Slimme Filters',
+  { title: t('feature_pages.smart_matching.features.feature_1_title', locale), description: t('feature_pages.smart_matching.features.feature_1_description', locale) },
+  { title: t('feature_pages.smart_matching.features.feature_2_title', locale), description: t('feature_pages.smart_matching.features.feature_2_description', locale) },
+  { title: t('feature_pages.smart_matching.features.feature_3_title', locale), description: t('feature_pages.smart_matching.features.feature_3_description', locale) },
+  { title: t('feature_pages.smart_matching.features.feature_4_title', locale), description: t('feature_pages.smart_matching.features.feature_4_description', locale) },
 ];
 
 const workflow = [
-  'Klantprofiel Invoeren',
-  'Real-time Matching',
-  'Makelaar Selecteert',
-  'Email naar Klant (2x/dag)',
-  'Klant Bekijkt in Portal',
-  'Feedback Tracking',
+  { title: t('feature_pages.smart_matching.workflow.step_1_title', locale), description: t('feature_pages.smart_matching.workflow.step_1_description', locale) },
+  { title: t('feature_pages.smart_matching.workflow.step_2_title', locale), description: t('feature_pages.smart_matching.workflow.step_2_description', locale) },
+  { title: t('feature_pages.smart_matching.workflow.step_3_title', locale), description: t('feature_pages.smart_matching.workflow.step_3_description', locale) },
+  { title: t('feature_pages.smart_matching.workflow.step_4_title', locale), description: t('feature_pages.smart_matching.workflow.step_4_description', locale) },
+  { title: t('feature_pages.smart_matching.workflow.step_5_title', locale), description: t('feature_pages.smart_matching.workflow.step_5_description', locale) },
+  { title: t('feature_pages.smart_matching.workflow.step_6_title', locale), description: t('feature_pages.smart_matching.workflow.step_6_description', locale) },
 ];
 ---
 
@@ -87,8 +87,8 @@ const workflow = [
         <div class="relative">
           <div class="bg-white rounded-2xl shadow-xl p-6">
             <div class="flex items-center justify-between mb-4">
-              <h3 class="font-semibold text-neutral-900">Matching Results</h3>
-              <Badge variant="secondary" size="sm">Vandaag 14:30</Badge>
+              <h3 class="font-semibold text-neutral-900">{t('feature_pages.smart_matching.matching_results.title', locale)}</h3>
+              <Badge variant="secondary" size="sm">{t('feature_pages.smart_matching.matching_results.timestamp', locale)}</Badge>
             </div>
 
             <div class="space-y-3">
@@ -136,10 +136,10 @@ const workflow = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Hoe Smart Matching Werkt
+          {t('feature_pages.smart_matching.how_it_works.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Ontdek de krachtige features die slim matchen mogelijk maken
+          {t('feature_pages.smart_matching.how_it_works.description', locale)}
         </p>
       </div>
 
@@ -147,13 +147,10 @@ const workflow = [
         {features.map((feature) => (
           <Card variant="default" padding="lg" class="h-full">
             <h3 class="text-xl font-semibold text-neutral-900 mb-3">
-              {feature}
+              {feature.title}
             </h3>
             <p class="text-neutral-700">
-              {feature === 'Real-time Matching' ? 'Matches verschijnen direct wanneer deal parameters wijzigen of nieuwe huizen binnenkomen. Geen wachten, geen vertragingen.' :
-               feature === 'Complete Feedback Tracking' ? 'Track volledige klantfeedback: wanneer klant huis opent (pending lane), interessant/niet interessant markeert, en waarom niet. Alle feedback realtime zichtbaar.' :
-               feature === 'Makelaar Controle' ? 'Jij bepaalt welke properties daadwerkelijk naar klanten gaan. Preselect naar propose lane - jij hebt volledige controle.' :
-               'Rekening houden met budget, locatie, type woning, aantal kamers, oppervlakte en speciale wensen van klanten.'}
+              {feature.description}
             </p>
           </Card>
         ))}
@@ -166,10 +163,10 @@ const workflow = [
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Het Matching Proces
+          {t('feature_pages.smart_matching.matching_process.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          Van klantprofiel tot slimme matches op basis van criteria in 6 stappen
+          {t('feature_pages.smart_matching.matching_process.description', locale)}
         </p>
       </div>
 
@@ -182,16 +179,11 @@ const workflow = [
                   {index + 1}
                 </div>
                 <h3 class="text-lg font-semibold text-neutral-900">
-                  {step}
+                  {step.title}
                 </h3>
               </div>
               <p class="text-neutral-700">
-                {index === 0 ? 'Voeg een nieuwe klant toe met budget, locatie voorkeur, woningtype en speciale wensen.' :
-                 index === 1 ? 'Real-time matching vindt direct passende properties wanneer parameters wijzigen of nieuwe huizen binnenkomen.' :
-                 index === 2 ? 'Bekijk matches in preselect lane. Keur af of verplaats naar propose lane voor verzending.' :
-                 index === 3 ? 'Properties in propose lane worden 2x per dag automatisch per email naar klanten gestuurd met link naar portal.' :
-                 index === 4 ? 'Klant opent huis (→ pending), markeert interessant/niet interessant, kan bezichtiging aanvragen met 3 voorgestelde data.' :
-                 'Track alle feedback: pending (bekeken), interesting (wil bezichtigen), rejected (niet interessant + reden waarom). Realtime zichtbaar in CRM.'}
+                {step.description}
               </p>
             </Card>
 
@@ -210,71 +202,68 @@ const workflow = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
-            Technische Details
+            {t('feature_pages.smart_matching.technical_details.title', locale)}
           </h2>
 
           <div class="space-y-6">
             <div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-3">Matching Criteria</h3>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">{t('feature_pages.smart_matching.technical_details.matching_criteria_title', locale)}</h3>
               <ul class="space-y-2">
                 <li class="flex items-center gap-2">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Budget range (min/max)</span>
+                  <span>{t('feature_pages.smart_matching.technical_details.criterion_1', locale)}</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Locatie voorkeuren (steden, wijken)</span>
+                  <span>{t('feature_pages.smart_matching.technical_details.criterion_2', locale)}</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Woningtype (villa, appartement, etc.)</span>
+                  <span>{t('feature_pages.smart_matching.technical_details.criterion_3', locale)}</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Aantal kamers en oppervlakte</span>
+                  <span>{t('feature_pages.smart_matching.technical_details.criterion_4', locale)}</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Speciale wensen (tuin, garage, etc.)</span>
+                  <span>{t('feature_pages.smart_matching.technical_details.criterion_5', locale)}</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 class="text-xl font-semibold text-neutral-900 mb-3">Feedback Tracking</h3>
+              <h3 class="text-xl font-semibold text-neutral-900 mb-3">{t('feature_pages.smart_matching.technical_details.feedback_tracking_title', locale)}</h3>
               <p class="text-neutral-700">
-                Volledige transparantie in klantinteresse: zie wanneer klanten huizen openen (pending lane),
-                welke ze interessant vinden met bezichtiging aanvraag (interesting lane), en welke
-                niet interessant zijn inclusief reden waarom (rejected). Makelaar heeft altijd volledige
-                controle en zicht op alle klantfeedback in realtime.
+                {t('feature_pages.smart_matching.technical_details.feedback_tracking_description', locale)}
               </p>
             </div>
           </div>
         </div>
 
         <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-6">Resultaten</h3>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-6">{t('feature_pages.smart_matching.results.title', locale)}</h3>
 
           <div class="space-y-6">
             <div class="border-l-4 border-primary pl-4">
-              <div class="text-2xl font-bold text-primary">73%</div>
-              <div class="text-neutral-700">van makelaars ziet verhoogde klantentevredenheid</div>
+              <div class="text-2xl font-bold text-primary">{t('feature_pages.smart_matching.results.stat_1_value', locale)}</div>
+              <div class="text-neutral-700">{t('feature_pages.smart_matching.results.stat_1_description', locale)}</div>
             </div>
 
             <div class="border-l-4 border-secondary pl-4">
-              <div class="text-2xl font-bold text-secondary">2.5x</div>
-              <div class="text-neutral-700">sneller van lead naar bezichtiging</div>
+              <div class="text-2xl font-bold text-secondary">{t('feature_pages.smart_matching.results.stat_2_value', locale)}</div>
+              <div class="text-neutral-700">{t('feature_pages.smart_matching.results.stat_2_description', locale)}</div>
             </div>
 
             <div class="border-l-4 border-success pl-4">
-              <div class="text-2xl font-bold text-success">€15.000</div>
-              <div class="text-neutral-700">gemiddelde extra commissie per maand</div>
+              <div class="text-2xl font-bold text-success">{t('feature_pages.smart_matching.results.stat_3_value', locale)}</div>
+              <div class="text-neutral-700">{t('feature_pages.smart_matching.results.stat_3_description', locale)}</div>
             </div>
           </div>
 
           <div class="mt-8">
             <Button variant="primary" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer" class="w-full">
-              Probeer Smart Matching
+              {t('feature_pages.smart_matching.results.cta', locale)}
             </Button>
           </div>
         </div>
@@ -296,23 +285,23 @@ const workflow = [
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">E-mail Integratie</h3>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">{t('feature_pages.smart_matching.integration.card_1_title', locale)}</h3>
           <p class="text-neutral-700">
-            Matches worden automatisch verstuurd via jouw professionele e-mail.
+            {t('feature_pages.smart_matching.integration.card_1_description', locale)}
           </p>
         </Card>
 
         <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Klantportaal</h3>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">{t('feature_pages.smart_matching.integration.card_2_title', locale)}</h3>
           <p class="text-neutral-700">
-            Klanten zien matches in hun persoonlijke portaal en kunnen direct feedback geven.
+            {t('feature_pages.smart_matching.integration.card_2_description', locale)}
           </p>
         </Card>
 
         <Card variant="default" padding="lg" class="text-center">
-          <h3 class="text-lg font-semibold text-neutral-900 mb-3">Deal Pipeline</h3>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-3">{t('feature_pages.smart_matching.integration.card_3_title', locale)}</h3>
           <p class="text-neutral-700">
-            Interessante matches worden automatisch als deals toegevoegd aan je pipeline.
+            {t('feature_pages.smart_matching.integration.card_3_description', locale)}
           </p>
         </Card>
       </div>
@@ -323,12 +312,12 @@ const workflow = [
   <section class="py-16 lg:py-24 bg-gradient-to-br from-neutral-50 to-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center mb-12">
-        <Badge variant="primary" size="md" class="mb-4">Op de Roadmap</Badge>
+        <Badge variant="primary" size="md" class="mb-4">{t('feature_pages.smart_matching.roadmap.badge', locale)}</Badge>
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-          Binnenkort: AI Learning Algoritme
+          {t('feature_pages.smart_matching.roadmap.title', locale)}
         </h2>
         <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
-          We werken aan geavanceerde machine learning features die matchen nog slimmer maken
+          {t('feature_pages.smart_matching.roadmap.description', locale)}
         </p>
       </div>
 
@@ -340,26 +329,24 @@ const workflow = [
             </div>
             <div class="flex-1">
               <div class="flex items-center gap-3 mb-3">
-                <h3 class="text-xl font-semibold text-neutral-900">AI-Powered Learning</h3>
-                <Badge variant="secondary" size="sm">Q2 2026</Badge>
+                <h3 class="text-xl font-semibold text-neutral-900">{t('feature_pages.smart_matching.roadmap.ai_title', locale)}</h3>
+                <Badge variant="secondary" size="sm">{t('feature_pages.smart_matching.roadmap.ai_badge', locale)}</Badge>
               </div>
               <p class="text-neutral-700 mb-4">
-                Het AI algoritme gaat automatisch leren van jouw keuzes als makelaar, klantfeedback uit het portaal,
-                en succesvolle transacties. Hierdoor worden matches elke week beter en krijg je steeds relevantere
-                suggesties voor je klanten.
+                {t('feature_pages.smart_matching.roadmap.ai_description', locale)}
               </p>
               <div class="space-y-2">
                 <div class="flex items-center gap-2 text-sm text-neutral-600">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Leert van makelaar selecties en afwijzingen</span>
+                  <span>{t('feature_pages.smart_matching.roadmap.ai_feature_1', locale)}</span>
                 </div>
                 <div class="flex items-center gap-2 text-sm text-neutral-600">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Analyseert klantfeedback patronen</span>
+                  <span>{t('feature_pages.smart_matching.roadmap.ai_feature_2', locale)}</span>
                 </div>
                 <div class="flex items-center gap-2 text-sm text-neutral-600">
                   <span class="icon icon-sm text-success">check</span>
-                  <span>Voorspelt klantvoorkeuren op basis van historie</span>
+                  <span>{t('feature_pages.smart_matching.roadmap.ai_feature_3', locale)}</span>
                 </div>
               </div>
             </div>
@@ -373,17 +360,17 @@ const workflow = [
   <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 lg:py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
       <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
-        Klaar voor Smart Matching?
+        {t('feature_pages.smart_matching.cta.title', locale)}
       </h2>
       <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-        Begin vandaag nog met de 14-dagen gratis trial. Geen creditcard vereist.
+        {t('feature_pages.smart_matching.cta.description', locale)}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
           {t('feature_pages.smart_matching.hero.cta_primary', locale)}
         </Button>
         <Button variant="ghost" size="lg" href={getLocalizedPath('/features', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
-          Alle Features
+          {t('feature_pages.smart_matching.cta.secondary', locale)}
         </Button>
       </div>
     </div>

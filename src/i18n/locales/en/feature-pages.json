@@ -12,18 +12,93 @@
       },
       "benefits": {
         "title": "Why Smart Matching Works",
-        "time_saved": "85%",
-        "time_saved_desc": "Time saved",
-        "conversion": "3x",
-        "conversion_desc": "Higher conversion",
-        "satisfaction": "94%",
-        "satisfaction_desc": "Client satisfaction",
-        "benefit_1_title": "96% Accuracy",
-        "benefit_1_description": "Our AI algorithm achieves 96% accuracy in matching properties with the right customers",
-        "benefit_2_title": "3x Faster Sales",
-        "benefit_2_description": "Customers find their ideal property 3x faster through smart matching",
-        "benefit_3_title": "Higher Satisfaction",
-        "benefit_3_description": "Both customers and agents report higher satisfaction with matched properties"
+        "time_saved": "3+ hours",
+        "time_saved_desc": "saved per day with automatic matching",
+        "conversion": "40%",
+        "conversion_desc": "higher conversion with better matches",
+        "satisfaction": "85%",
+        "satisfaction_desc": "of agents say they have more time for clients"
+      },
+      "features": {
+        "feature_1_title": "Real-time matching",
+        "feature_1_description": "Matches appear instantly when deal parameters change or new properties arrive. No waiting, no delays.",
+        "feature_2_title": "Complete feedback tracking",
+        "feature_2_description": "Track full customer feedback: when customer opens property (pending lane), marks interesting/not interesting, and why not. All feedback visible in real-time.",
+        "feature_3_title": "Agent control",
+        "feature_3_description": "You decide which properties actually go to customers. Preselect to propose lane - you have full control.",
+        "feature_4_title": "Smart filters",
+        "feature_4_description": "Takes into account budget, location, property type, number of rooms, surface area and special wishes of customers."
+      },
+      "workflow": {
+        "step_1_title": "Enter customer profile",
+        "step_1_description": "Add a new customer with budget, location preference, property type and special wishes.",
+        "step_2_title": "Real-time matching",
+        "step_2_description": "Real-time matching finds matching properties instantly when parameters change or new properties arrive.",
+        "step_3_title": "Agent selects",
+        "step_3_description": "Review matches in preselect lane. Reject or move to propose lane for sending.",
+        "step_4_title": "Email to customer (2x/day)",
+        "step_4_description": "Properties in propose lane are automatically sent by email to customers 2x per day with link to portal.",
+        "step_5_title": "Customer reviews in portal",
+        "step_5_description": "Customer opens property (→ pending), marks interesting/not interesting, can request viewing with 3 proposed dates.",
+        "step_6_title": "Feedback tracking",
+        "step_6_description": "Track all feedback: pending (viewed), interesting (wants to visit), rejected (not interesting + reason why). Visible in real-time in CRM."
+      },
+      "matching_results": {
+        "title": "Matching results",
+        "timestamp": "Today 14:30"
+      },
+      "how_it_works": {
+        "title": "How smart matching works",
+        "description": "Discover the powerful features that make smart matching possible"
+      },
+      "matching_process": {
+        "title": "The matching process",
+        "description": "From customer profile to smart matches based on criteria in 6 steps"
+      },
+      "technical_details": {
+        "title": "Technical details",
+        "matching_criteria_title": "Matching criteria",
+        "criterion_1": "Budget range (min/max)",
+        "criterion_2": "Location preferences (cities, neighborhoods)",
+        "criterion_3": "Property type (villa, apartment, etc.)",
+        "criterion_4": "Number of rooms and surface area",
+        "criterion_5": "Special wishes (garden, garage, etc.)",
+        "feedback_tracking_title": "Feedback tracking",
+        "feedback_tracking_description": "Full transparency in customer interest: see when customers open properties (pending lane), which they find interesting with viewing request (interesting lane), and which are not interesting including reason why (rejected). Agent always has full control and visibility of all customer feedback in real-time."
+      },
+      "results": {
+        "title": "Results",
+        "stat_1_value": "73%",
+        "stat_1_description": "of agents see increased customer satisfaction",
+        "stat_2_value": "2.5x",
+        "stat_2_description": "faster from lead to viewing",
+        "stat_3_value": "€15,000",
+        "stat_3_description": "average extra commission per month",
+        "cta": "Try smart matching"
+      },
+      "integration": {
+        "card_1_title": "Email integration",
+        "card_1_description": "Matches are automatically sent via your professional email.",
+        "card_2_title": "Customer portal",
+        "card_2_description": "Customers see matches in their personal portal and can give feedback directly.",
+        "card_3_title": "Deal pipeline",
+        "card_3_description": "Interesting matches are automatically added as deals to your pipeline."
+      },
+      "roadmap": {
+        "badge": "On the roadmap",
+        "title": "Coming soon: AI learning algorithm",
+        "description": "We're working on advanced machine learning features that make matching even smarter",
+        "ai_title": "AI-powered learning",
+        "ai_badge": "Q2 2026",
+        "ai_description": "The AI algorithm will automatically learn from your choices as an agent, customer feedback from the portal, and successful transactions. This way matches get better every week and you get increasingly relevant suggestions for your customers.",
+        "ai_feature_1": "Learns from agent selections and rejections",
+        "ai_feature_2": "Analyzes customer feedback patterns",
+        "ai_feature_3": "Predicts customer preferences based on history"
+      },
+      "cta": {
+        "title": "Ready for smart matching?",
+        "description": "Start today with the 14-day free trial. No credit card required.",
+        "secondary": "All features"
       },
       "workflow": {
         "title": "How Smart Matching Works",

@@ -17,6 +17,87 @@
         "conversion_desc": "hogere conversie door betere matches",
         "satisfaction": "85%",
         "satisfaction_desc": "van makelaars zegt meer tijd te hebben voor klanten"
+      },
+      "features": {
+        "feature_1_title": "Real-time matching",
+        "feature_1_description": "Matches verschijnen direct wanneer deal parameters wijzigen of nieuwe huizen binnenkomen. Geen wachten, geen vertragingen.",
+        "feature_2_title": "Complete feedback tracking",
+        "feature_2_description": "Track volledige klantfeedback: wanneer klant huis opent (pending lane), interessant/niet interessant markeert, en waarom niet. Alle feedback realtime zichtbaar.",
+        "feature_3_title": "Makelaar controle",
+        "feature_3_description": "Jij bepaalt welke properties daadwerkelijk naar klanten gaan. Preselect naar propose lane - jij hebt volledige controle.",
+        "feature_4_title": "Slimme filters",
+        "feature_4_description": "Rekening houden met budget, locatie, type woning, aantal kamers, oppervlakte en speciale wensen van klanten."
+      },
+      "workflow": {
+        "step_1_title": "Klantprofiel invoeren",
+        "step_1_description": "Voeg een nieuwe klant toe met budget, locatie voorkeur, woningtype en speciale wensen.",
+        "step_2_title": "Real-time matching",
+        "step_2_description": "Real-time matching vindt direct passende properties wanneer parameters wijzigen of nieuwe huizen binnenkomen.",
+        "step_3_title": "Makelaar selecteert",
+        "step_3_description": "Bekijk matches in preselect lane. Keur af of verplaats naar propose lane voor verzending.",
+        "step_4_title": "Email naar klant (2x/dag)",
+        "step_4_description": "Properties in propose lane worden 2x per dag automatisch per email naar klanten gestuurd met link naar portal.",
+        "step_5_title": "Klant bekijkt in portal",
+        "step_5_description": "Klant opent huis (→ pending), markeert interessant/niet interessant, kan bezichtiging aanvragen met 3 voorgestelde data.",
+        "step_6_title": "Feedback tracking",
+        "step_6_description": "Track alle feedback: pending (bekeken), interesting (wil bezichtigen), rejected (niet interessant + reden waarom). Realtime zichtbaar in CRM."
+      },
+      "matching_results": {
+        "title": "Matching resultaten",
+        "timestamp": "Vandaag 14:30"
+      },
+      "how_it_works": {
+        "title": "Hoe smart matching werkt",
+        "description": "Ontdek de krachtige features die slim matchen mogelijk maken"
+      },
+      "matching_process": {
+        "title": "Het matching proces",
+        "description": "Van klantprofiel tot slimme matches op basis van criteria in 6 stappen"
+      },
+      "technical_details": {
+        "title": "Technische details",
+        "matching_criteria_title": "Matching criteria",
+        "criterion_1": "Budget range (min/max)",
+        "criterion_2": "Locatie voorkeuren (steden, wijken)",
+        "criterion_3": "Woningtype (villa, appartement, etc.)",
+        "criterion_4": "Aantal kamers en oppervlakte",
+        "criterion_5": "Speciale wensen (tuin, garage, etc.)",
+        "feedback_tracking_title": "Feedback tracking",
+        "feedback_tracking_description": "Volledige transparantie in klantinteresse: zie wanneer klanten huizen openen (pending lane), welke ze interessant vinden met bezichtiging aanvraag (interesting lane), en welke niet interessant zijn inclusief reden waarom (rejected). Makelaar heeft altijd volledige controle en zicht op alle klantfeedback in realtime."
+      },
+      "results": {
+        "title": "Resultaten",
+        "stat_1_value": "73%",
+        "stat_1_description": "van makelaars ziet verhoogde klantentevredenheid",
+        "stat_2_value": "2.5x",
+        "stat_2_description": "sneller van lead naar bezichtiging",
+        "stat_3_value": "€15.000",
+        "stat_3_description": "gemiddelde extra commissie per maand",
+        "cta": "Probeer smart matching"
+      },
+      "integration": {
+        "card_1_title": "E-mail integratie",
+        "card_1_description": "Matches worden automatisch verstuurd via jouw professionele e-mail.",
+        "card_2_title": "Klantportaal",
+        "card_2_description": "Klanten zien matches in hun persoonlijke portaal en kunnen direct feedback geven.",
+        "card_3_title": "Deal pipeline",
+        "card_3_description": "Interessante matches worden automatisch als deals toegevoegd aan je pipeline."
+      },
+      "roadmap": {
+        "badge": "Op de roadmap",
+        "title": "Binnenkort: AI learning algoritme",
+        "description": "We werken aan geavanceerde machine learning features die matchen nog slimmer maken",
+        "ai_title": "AI-powered learning",
+        "ai_badge": "Q2 2026",
+        "ai_description": "Het AI algoritme gaat automatisch leren van jouw keuzes als makelaar, klantfeedback uit het portaal, en succesvolle transacties. Hierdoor worden matches elke week beter en krijg je steeds relevantere suggesties voor je klanten.",
+        "ai_feature_1": "Leert van makelaar selecties en afwijzingen",
+        "ai_feature_2": "Analyseert klantfeedback patronen",
+        "ai_feature_3": "Voorspelt klantvoorkeuren op basis van historie"
+      },
+      "cta": {
+        "title": "Klaar voor smart matching?",
+        "description": "Begin vandaag nog met de 14-dagen gratis trial. Geen creditcard vereist.",
+        "secondary": "Alle features"
       }
     },
     "deal_pipeline": {
