@@ -8,9 +8,12 @@ import partytown from '@astrojs/partytown';
 import compress from '@playform/compress';
 import robotsTxt from 'astro-robots-txt';
 import icon from 'astro-icon';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
+  adapter: cloudflare(),
   site: process.env.SITE_URL || 'https://new.tesorohq.io',
   integrations: [
     tailwind(),

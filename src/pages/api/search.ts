@@ -15,6 +15,18 @@ import type { APIRoute } from 'astro';
 // Mark as server-rendered to enable POST requests
 export const prerender = false;
 
+interface SearchResult {
+  metadata?: {
+    title?: string;
+    url?: string;
+  };
+  title?: string;
+  url?: string;
+  content?: string;
+  excerpt?: string;
+  score?: number;
+}
+
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
     // Parse request body with error handling
@@ -22,7 +34,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     try {
       const body = await request.json();
       query = body.query;
-    } catch (parseError) {
+    } catch {
       return new Response(
         JSON.stringify({
           success: false,
@@ -50,7 +62,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     // Check if AI Search binding exists
-    // @ts-ignore - Runtime binding
+    // @ts-expect-error - Runtime binding from Cloudflare Pages
     if (!locals?.runtime?.env?.AI_SEARCH) {
       console.error('AI Search binding not found. Please configure it in Cloudflare Dashboard.');
 
@@ -70,14 +82,14 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     // Call Cloudflare AI Search
-    // @ts-ignore - Runtime binding
+    // @ts-expect-error - Runtime binding from Cloudflare Pages
     const searchResponse = await locals.runtime.env.AI_SEARCH.search(query, {
       limit: 5, // Return top 5 results
       returnMetadata: true, // Include metadata like title, url, etc.
     });
 
     // Transform the response for the chat widget
-    const results = searchResponse.results?.map((result: any) => ({
+    const results = searchResponse.results?.map((result: SearchResult) => ({
       title: result.metadata?.title || result.title || 'Untitled',
       url: result.metadata?.url || result.url || '#',
       excerpt: result.content || result.excerpt || '',
