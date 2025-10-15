@@ -21,7 +21,7 @@ const caption = section.caption?.[lang];
 // Extract video ID from URL
 const getVideoId = (url: string, type: string) => {
   if (type === 'youtube') {
-    const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+    const match = url.match(/(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/);
     return match ? match[1] : null;
   }
   if (type === 'vimeo') {

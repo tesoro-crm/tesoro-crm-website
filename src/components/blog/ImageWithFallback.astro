@@ -97,8 +97,7 @@ const themeColor = getThemeColor(alt);
   </div>
 </div>
 
-{clickable && (
-  <!-- Modal for expanded image -->
+{clickable && (<>
   <div id={modalId} class="image-modal" onclick={`if(event.target.id==='${modalId}')document.getElementById('${modalId}').style.display='none'`}>
     <button class="image-modal__close" onclick={`document.getElementById('${modalId}').style.display='none'`} aria-label="Sluiten">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -108,7 +107,7 @@ const themeColor = getThemeColor(alt);
     </button>
     <img src={src} alt={alt} class="image-modal__img" />
   </div>
-)}
+</>)}
 
 <script>
   // Check all images on page load
