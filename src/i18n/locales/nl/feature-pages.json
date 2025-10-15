@@ -376,6 +376,131 @@
         "cta_primary": "Start 14 dagen gratis",
         "cta_secondary": "Bekijk demo"
       },
+      "page_content": {
+        "providers": {
+          "section_title": "Ondersteunde E-mail Providers",
+          "section_description": "Tesoro integreert naadloos met de meest gebruikte e-mail providers.",
+          "gmail": {
+            "name": "Gmail",
+            "description": "Volledige bidirectionele sync via Gmail API",
+            "feature_1": "Automatische sync",
+            "feature_2": "Labels behouden",
+            "feature_3": "Bijlagen support",
+            "feature_4": "OAuth 2.0 beveiliging"
+          },
+          "outlook": {
+            "name": "Outlook/Office 365",
+            "description": "Microsoft Graph API integratie",
+            "feature_1": "Exchange sync",
+            "feature_2": "Agenda integratie",
+            "feature_3": "Teams integratie",
+            "feature_4": "Corporate beveiliging"
+          }
+        },
+        "integration_features": {
+          "section_title": "Krachtige Integratie Features",
+          "section_description": "Meer dan alleen e-mail synchronisatie - complete communicatie management.",
+          "feature_1_title": "Bidirectionele Synchronisatie",
+          "feature_1_description": "E-mails verzonden vanuit Tesoro verschijnen in je Gmail/Outlook. E-mails ontvangen worden automatisch gekoppeld.",
+          "feature_2_title": "Automatische Deal Koppeling",
+          "feature_2_description": "Alle communicatie wordt automatisch gekoppeld aan de juiste deal en klant in je CRM.",
+          "feature_3_title": "E-mail Templates",
+          "feature_3_description": "Vooraf geconfigureerde templates voor veelvoorkomende situaties in de vastgoedsector.",
+          "feature_4_title": "Verzendgeschiedenis",
+          "feature_4_description": "Complete overzicht van alle e-mailcommunicatie per klant en deal in je CRM."
+        },
+        "benefits_metrics": {
+          "metric_1_value": "100%",
+          "metric_1_description": "van communicatie wordt bijgehouden",
+          "metric_2_value": "0",
+          "metric_2_description": "e-mails vallen tussen de mazen",
+          "metric_3_value": "2 min",
+          "metric_3_description": "setup tijd per e-mail account"
+        },
+        "workflow_setup": {
+          "section_title": "Setup in 6 Eenvoudige Stappen",
+          "section_description": "Van setup tot volledige integratie in minder dan 5 minuten.",
+          "step_1_title": "E-mail Account Koppelen",
+          "step_1_description": "Verbind je Gmail of Outlook account veilig via OAuth 2.0.",
+          "step_2_title": "Automatische Sync Start",
+          "step_2_description": "Tesoro begint automatisch met het synchroniseren van je e-mails.",
+          "step_3_title": "E-mails Worden Gekoppeld",
+          "step_3_description": "Bestaande en nieuwe e-mails worden automatisch aan deals gekoppeld.",
+          "step_4_title": "Verzenden vanuit CRM",
+          "step_4_description": "Stuur e-mails direct vanuit Tesoro met je professionele e-mail adres.",
+          "step_5_title": "Templates Gebruiken",
+          "step_5_description": "Gebruik vooraf geconfigureerde templates voor snellere communicatie.",
+          "step_6_title": "Volledige Geschiedenis",
+          "step_6_description": "Bekijk alle communicatie per klant en deal in één overzicht."
+        },
+        "templates_list": {
+          "section_title": "Professionele E-mail Templates",
+          "section_description": "Vooraf geconfigureerde templates speciaal voor vastgoedprofessionals.",
+          "cta_note": "Alle templates zijn aanpasbaar naar je eigen stijl en branding",
+          "cta_button": "Bekijk Template Voorbeelden",
+          "template_1_name": "Nieuwe Property Voorstellen",
+          "template_1_description": "Template voor het voorstellen van nieuwe properties aan klanten",
+          "template_1_usage": "89% van makelaars gebruikt dit",
+          "template_2_name": "Bezichtiging Bevestigen",
+          "template_2_description": "Automatische bevestiging en details voor geplande bezichtigingen",
+          "template_2_usage": "76% tijdsbesparing",
+          "template_3_name": "Follow-up na Bezichtiging",
+          "template_3_description": "Standaard follow-up e-mail met feedback vraag",
+          "template_3_usage": "45% meer responses",
+          "template_4_name": "Contractvoorstel",
+          "template_4_description": "Professionele template voor het versturen van contractvoorstellen",
+          "template_4_usage": "67% snellere afhandeling"
+        },
+        "security_features": {
+          "section_title": "Veiligheid & Privacy",
+          "section_description": "Je e-mail data blijft volledig veilig en privé. We gebruiken industry-standard beveiligingsprotocollen.",
+          "feature_1_title": "OAuth 2.0 Authenticatie",
+          "feature_1_description": "Veilige verbinding zonder wachtwoorden op te slaan",
+          "feature_2_title": "End-to-End Encryptie",
+          "feature_2_description": "Alle communicatie wordt versleuteld verzonden",
+          "feature_3_title": "GDPR Compliance",
+          "feature_3_description": "Volledig conform Europese privacy wetgeving",
+          "feature_4_title": "Selectieve Sync",
+          "feature_4_description": "Kies welke mappen en labels gesynchroniseerd worden"
+        },
+        "statistics": {
+          "section_title": "E-mail Statistieken",
+          "stat_1_value": "98%",
+          "stat_1_description": "minder gemiste communicatie",
+          "stat_2_value": "45 min",
+          "stat_2_description": "tijdsbesparing per dag",
+          "stat_3_value": "100%",
+          "stat_3_description": "van communicatie wordt bijgehouden",
+          "testimonial_quote": "Geen enkele e-mail valt meer tussen de mazen",
+          "testimonial_author": "Makelaar uit Amsterdam"
+        },
+        "integration_cards": {
+          "section_title": "Integreert met je Volledige Workflow",
+          "section_description": "E-mail integratie werkt naadloos samen met alle andere Tesoro CRM features.",
+          "card_1_title": "Smart Matching",
+          "card_1_description": "Verstuur nieuwe matches automatisch via e-mail naar klanten.",
+          "card_2_title": "Deal Pipeline",
+          "card_2_description": "E-mail communicatie wordt automatisch gekoppeld aan de juiste deal.",
+          "card_3_title": "Klantportaal",
+          "card_3_description": "Notificaties en updates worden automatisch naar klanten verstuurd."
+        },
+        "demo_card": {
+          "title": "E-mail Integratie",
+          "status_badge": "Actief",
+          "gmail_provider": "Gmail",
+          "gmail_email": "makelaar@example.com",
+          "gmail_status": "Gesynchroniseerd",
+          "outlook_label": "Outlook Integratie",
+          "outlook_button": "Verbinden",
+          "recent_sync_title": "Recente Sync",
+          "emails_received": "E-mails ontvangen",
+          "emails_received_value": "12 nieuw",
+          "auto_linked": "Auto-gekoppeld aan deals",
+          "auto_linked_value": "8 gekoppeld",
+          "last_sync": "Laatste sync",
+          "last_sync_value": "2 min geleden"
+        }
+      },
       "benefits": {
         "title": "Waarom integratie beter is dan eigen service",
         "benefit_1_title": "Geen vendor lock-in",

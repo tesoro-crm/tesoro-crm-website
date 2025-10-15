@@ -383,6 +383,131 @@
         "title": "Integration With Your Email, Not Own Service",
         "description": "We connect with Gmail and Outlook. Your emails stay where they belong: with your trusted provider. No vendor lock-in, maximum security and perfect organization per deal and contact."
       },
+      "page_content": {
+        "providers": {
+          "section_title": "Supported Email Providers",
+          "section_description": "Tesoro integrates seamlessly with the most commonly used email providers.",
+          "gmail": {
+            "name": "Gmail",
+            "description": "Full bidirectional sync via Gmail API",
+            "feature_1": "Automatic sync",
+            "feature_2": "Preserve labels",
+            "feature_3": "Attachment support",
+            "feature_4": "OAuth 2.0 security"
+          },
+          "outlook": {
+            "name": "Outlook/Office 365",
+            "description": "Microsoft Graph API integration",
+            "feature_1": "Exchange sync",
+            "feature_2": "Calendar integration",
+            "feature_3": "Teams integration",
+            "feature_4": "Corporate security"
+          }
+        },
+        "integration_features": {
+          "section_title": "Powerful Integration Features",
+          "section_description": "More than just email synchronization - complete communication management.",
+          "feature_1_title": "Bidirectional Synchronization",
+          "feature_1_description": "Emails sent from Tesoro appear in your Gmail/Outlook. Received emails are automatically linked.",
+          "feature_2_title": "Automatic Deal Linking",
+          "feature_2_description": "All communication is automatically linked to the right deal and customer in your CRM.",
+          "feature_3_title": "Email Templates",
+          "feature_3_description": "Pre-configured templates for common situations in the real estate sector.",
+          "feature_4_title": "Send History",
+          "feature_4_description": "Complete overview of all email communication per customer and deal in your CRM."
+        },
+        "benefits_metrics": {
+          "metric_1_value": "100%",
+          "metric_1_description": "of communication is tracked",
+          "metric_2_value": "0",
+          "metric_2_description": "emails fall through the cracks",
+          "metric_3_value": "2 min",
+          "metric_3_description": "setup time per email account"
+        },
+        "workflow_setup": {
+          "section_title": "Setup in 6 Simple Steps",
+          "section_description": "From setup to full integration in less than 5 minutes.",
+          "step_1_title": "Connect Email Account",
+          "step_1_description": "Connect your Gmail or Outlook account securely via OAuth 2.0.",
+          "step_2_title": "Automatic Sync Starts",
+          "step_2_description": "Tesoro automatically starts synchronizing your emails.",
+          "step_3_title": "Emails Are Linked",
+          "step_3_description": "Existing and new emails are automatically linked to deals.",
+          "step_4_title": "Send From CRM",
+          "step_4_description": "Send emails directly from Tesoro with your professional email address.",
+          "step_5_title": "Use Templates",
+          "step_5_description": "Use pre-configured templates for faster communication.",
+          "step_6_title": "Complete History",
+          "step_6_description": "View all communication per customer and deal in one overview."
+        },
+        "templates_list": {
+          "section_title": "Professional Email Templates",
+          "section_description": "Pre-configured templates specifically for real estate professionals.",
+          "cta_note": "All templates are customizable to your own style and branding",
+          "cta_button": "View Template Examples",
+          "template_1_name": "Propose New Property",
+          "template_1_description": "Template for proposing new properties to customers",
+          "template_1_usage": "89% of agents use this",
+          "template_2_name": "Confirm Viewing",
+          "template_2_description": "Automatic confirmation and details for scheduled viewings",
+          "template_2_usage": "76% time savings",
+          "template_3_name": "Follow-up After Viewing",
+          "template_3_description": "Standard follow-up email with feedback question",
+          "template_3_usage": "45% more responses",
+          "template_4_name": "Contract Proposal",
+          "template_4_description": "Professional template for sending contract proposals",
+          "template_4_usage": "67% faster processing"
+        },
+        "security_features": {
+          "section_title": "Security & Privacy",
+          "section_description": "Your email data remains completely safe and private. We use industry-standard security protocols.",
+          "feature_1_title": "OAuth 2.0 Authentication",
+          "feature_1_description": "Secure connection without storing passwords",
+          "feature_2_title": "End-to-End Encryption",
+          "feature_2_description": "All communication is sent encrypted",
+          "feature_3_title": "GDPR Compliance",
+          "feature_3_description": "Fully compliant with European privacy legislation",
+          "feature_4_title": "Selective Sync",
+          "feature_4_description": "Choose which folders and labels to synchronize"
+        },
+        "statistics": {
+          "section_title": "Email Statistics",
+          "stat_1_value": "98%",
+          "stat_1_description": "less missed communication",
+          "stat_2_value": "45 min",
+          "stat_2_description": "time savings per day",
+          "stat_3_value": "100%",
+          "stat_3_description": "of communication is tracked",
+          "testimonial_quote": "Not a single email falls through the cracks anymore",
+          "testimonial_author": "Agent from Amsterdam"
+        },
+        "integration_cards": {
+          "section_title": "Integrates With Your Complete Workflow",
+          "section_description": "Email integration works seamlessly with all other Tesoro CRM features.",
+          "card_1_title": "Smart Matching",
+          "card_1_description": "Send new matches automatically via email to customers.",
+          "card_2_title": "Deal Pipeline",
+          "card_2_description": "Email communication is automatically linked to the right deal.",
+          "card_3_title": "Client Portal",
+          "card_3_description": "Notifications and updates are automatically sent to customers."
+        },
+        "demo_card": {
+          "title": "Email Integration",
+          "status_badge": "Active",
+          "gmail_provider": "Gmail",
+          "gmail_email": "agent@example.com",
+          "gmail_status": "Synchronized",
+          "outlook_label": "Outlook Integration",
+          "outlook_button": "Connect",
+          "recent_sync_title": "Recent Sync",
+          "emails_received": "Emails received",
+          "emails_received_value": "12 new",
+          "auto_linked": "Auto-linked to deals",
+          "auto_linked_value": "8 linked",
+          "last_sync": "Last sync",
+          "last_sync_value": "2 min ago"
+        }
+      },
       "benefits": {
         "title": "Why Integration Is Better Than Own Service",
         "benefit_1_title": "No Vendor Lock-In",

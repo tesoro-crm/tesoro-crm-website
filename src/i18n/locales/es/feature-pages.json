@@ -366,6 +366,131 @@
         "title": "Integración con tu email, no servicio propio",
         "description": "Conectamos con Gmail y Outlook. Tus emails permanecen donde pertenecen: en tu proveedor de confianza. Sin vendor lock-in, máxima seguridad y perfecta organización por deal y contacto."
       },
+      "page_content": {
+        "providers": {
+          "section_title": "Proveedores de email soportados",
+          "section_description": "Tesoro integra perfectamente con los proveedores de email más utilizados.",
+          "gmail": {
+            "name": "Gmail",
+            "description": "Sincronización bidireccional completa vía Gmail API",
+            "feature_1": "Sincronización automática",
+            "feature_2": "Mantiene etiquetas",
+            "feature_3": "Soporte de adjuntos",
+            "feature_4": "Seguridad OAuth 2.0"
+          },
+          "outlook": {
+            "name": "Outlook/Office 365",
+            "description": "Integración Microsoft Graph API",
+            "feature_1": "Sincronización Exchange",
+            "feature_2": "Integración de calendario",
+            "feature_3": "Integración Teams",
+            "feature_4": "Seguridad corporativa"
+          }
+        },
+        "integration_features": {
+          "section_title": "Características de integración potentes",
+          "section_description": "Más que solo sincronización de email - gestión completa de comunicación.",
+          "feature_1_title": "Sincronización bidireccional",
+          "feature_1_description": "Emails enviados desde Tesoro aparecen en tu Gmail/Outlook. Emails recibidos se vinculan automáticamente.",
+          "feature_2_title": "Vinculación automática a deals",
+          "feature_2_description": "Toda la comunicación se vincula automáticamente al deal y cliente correcto en tu CRM.",
+          "feature_3_title": "Plantillas de email",
+          "feature_3_description": "Plantillas preconfiguradas para situaciones comunes en el sector inmobiliario.",
+          "feature_4_title": "Historial de envíos",
+          "feature_4_description": "Vista completa de toda la comunicación por email por cliente y deal en tu CRM."
+        },
+        "benefits_metrics": {
+          "metric_1_value": "100%",
+          "metric_1_description": "de comunicación se rastrea",
+          "metric_2_value": "0",
+          "metric_2_description": "emails caen entre las grietas",
+          "metric_3_value": "2 min",
+          "metric_3_description": "tiempo de configuración por cuenta de email"
+        },
+        "workflow_setup": {
+          "section_title": "Configuración en 6 pasos sencillos",
+          "section_description": "De configuración a integración completa en menos de 5 minutos.",
+          "step_1_title": "Conectar cuenta de email",
+          "step_1_description": "Conecta tu cuenta de Gmail o Outlook de forma segura vía OAuth 2.0.",
+          "step_2_title": "Inicio de sincronización automática",
+          "step_2_description": "Tesoro comienza automáticamente a sincronizar tus emails.",
+          "step_3_title": "Los emails se vinculan",
+          "step_3_description": "Emails existentes y nuevos se vinculan automáticamente a deals.",
+          "step_4_title": "Enviar desde CRM",
+          "step_4_description": "Envía emails directamente desde Tesoro con tu dirección de email profesional.",
+          "step_5_title": "Usar plantillas",
+          "step_5_description": "Usa plantillas preconfiguradas para comunicación más rápida.",
+          "step_6_title": "Historial completo",
+          "step_6_description": "Ver toda la comunicación por cliente y deal en una vista general."
+        },
+        "templates_list": {
+          "section_title": "Plantillas de email profesionales",
+          "section_description": "Plantillas preconfiguradas especialmente para profesionales inmobiliarios.",
+          "cta_note": "Todas las plantillas son personalizables según tu estilo y marca",
+          "cta_button": "Ver ejemplos de plantillas",
+          "template_1_name": "Proponer nueva propiedad",
+          "template_1_description": "Plantilla para proponer nuevas propiedades a clientes",
+          "template_1_usage": "89% de agentes lo usa",
+          "template_2_name": "Confirmar visita",
+          "template_2_description": "Confirmación automática y detalles para visitas programadas",
+          "template_2_usage": "76% ahorro de tiempo",
+          "template_3_name": "Seguimiento después de visita",
+          "template_3_description": "Email de seguimiento estándar con pregunta de feedback",
+          "template_3_usage": "45% más respuestas",
+          "template_4_name": "Propuesta de contrato",
+          "template_4_description": "Plantilla profesional para enviar propuestas de contrato",
+          "template_4_usage": "67% procesamiento más rápido"
+        },
+        "security_features": {
+          "section_title": "Seguridad y privacidad",
+          "section_description": "Tus datos de email permanecen completamente seguros y privados. Usamos protocolos de seguridad estándar de la industria.",
+          "feature_1_title": "Autenticación OAuth 2.0",
+          "feature_1_description": "Conexión segura sin almacenar contraseñas",
+          "feature_2_title": "Encriptación end-to-end",
+          "feature_2_description": "Toda la comunicación se envía encriptada",
+          "feature_3_title": "Cumplimiento GDPR",
+          "feature_3_description": "Totalmente conforme con la legislación de privacidad europea",
+          "feature_4_title": "Sincronización selectiva",
+          "feature_4_description": "Elige qué carpetas y etiquetas sincronizar"
+        },
+        "statistics": {
+          "section_title": "Estadísticas de email",
+          "stat_1_value": "98%",
+          "stat_1_description": "menos comunicación perdida",
+          "stat_2_value": "45 min",
+          "stat_2_description": "ahorro de tiempo por día",
+          "stat_3_value": "100%",
+          "stat_3_description": "de comunicación se rastrea",
+          "testimonial_quote": "Ningún email cae entre las grietas nunca más",
+          "testimonial_author": "Agente de Ámsterdam"
+        },
+        "integration_cards": {
+          "section_title": "Integra con tu flujo de trabajo completo",
+          "section_description": "La integración de email funciona perfectamente con todas las demás características de Tesoro CRM.",
+          "card_1_title": "Smart Matching",
+          "card_1_description": "Envía nuevos matches automáticamente por email a clientes.",
+          "card_2_title": "Deal Pipeline",
+          "card_2_description": "La comunicación por email se vincula automáticamente al deal correcto.",
+          "card_3_title": "Portal de clientes",
+          "card_3_description": "Notificaciones y actualizaciones se envían automáticamente a clientes."
+        },
+        "demo_card": {
+          "title": "Integración de email",
+          "status_badge": "Activo",
+          "gmail_provider": "Gmail",
+          "gmail_email": "agente@example.com",
+          "gmail_status": "Sincronizado",
+          "outlook_label": "Integración Outlook",
+          "outlook_button": "Conectar",
+          "recent_sync_title": "Sincronización reciente",
+          "emails_received": "Emails recibidos",
+          "emails_received_value": "12 nuevo",
+          "auto_linked": "Auto-vinculado a deals",
+          "auto_linked_value": "8 vinculado",
+          "last_sync": "Última sincronización",
+          "last_sync_value": "hace 2 min"
+        }
+      },
       "benefits": {
         "title": "Por qué integración es mejor que servicio propio",
         "benefit_1_title": "Sin vendor lock-in",
