@@ -12,7 +12,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'hybrid',
   adapter: cloudflare(),
   site: process.env.SITE_URL || 'https://new.tesorohq.io',
   integrations: [

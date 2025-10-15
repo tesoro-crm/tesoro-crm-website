@@ -23,6 +23,8 @@ export async function getStaticPaths() {
   return paths;
 }
 
+export const prerender = true;
+
 const { post } = Astro.props;
 const blogData = post.data;
 const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
