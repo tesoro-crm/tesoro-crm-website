@@ -13,7 +13,13 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    routes: {
+      strategy: 'include',
+      include: ['/*'],
+      exclude: ['/_astro/*', '/_worker.js/*', '/favicon.ico', '/robots.txt', '/sitemap-*.xml', '/*.png', '/*.jpg', '/*.jpeg', '/*.webp', '/*.svg', '/*.ico', '/*.woff', '/*.woff2', '/*.ttf', '/*.eot']
+    }
+  }),
   site: process.env.SITE_URL || 'https://new.tesorohq.io',
   integrations: [
     tailwind(),
