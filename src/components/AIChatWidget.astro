@@ -1,7 +1,7 @@
 ---
 // AI Chat Widget - Bottom right corner
 // Combines search and chat functionality
-import { t, getLocalizedPath } from '../i18n/utils';
+import { t, getLocalizedPath, loadTranslations } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
 interface Props {
@@ -9,13 +9,28 @@ interface Props {
 }
 
 const { locale } = Astro.props;
+await loadTranslations(locale);
 ---
 
 <!-- Chat Widget Button (Bottom Right) -->
-<div class="ai-chat-widget">
-  <button 
-    class="ai-chat-widget__button" 
-    aria-label="Open AI Assistant"
+<div class="ai-chat-widget"
+  data-locale={locale}
+  data-found-info={t('ai_chat.found_info', locale)}
+  data-read-more={t('ai_chat.read_more', locale)}
+  data-view-pricing={t('ai_chat.view_pricing', locale)}
+  data-pricing-response={t('ai_chat.pricing_response', locale)}
+  data-trial-response={t('ai_chat.trial_response', locale)}
+  data-schedule-demo={t('ai_chat.schedule_demo', locale)}
+  data-contact-response={t('ai_chat.contact_response', locale)}
+  data-contact-us={t('ai_chat.contact_us', locale)}
+  data-also-interesting={t('ai_chat.also_interesting', locale)}
+  data-no-results={t('ai_chat.no_results', locale)}
+  data-go-to-kb={t('ai_chat.go_to_kb', locale)}
+  data-error-message={t('ai_chat.error_message', locale)}
+>
+  <button
+    class="ai-chat-widget__button"
+    aria-label={t('ai_chat.button_label', locale)}
     data-chat-toggle
   >
     <svg class="ai-chat-widget__icon ai-chat-widget__icon--chat" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -36,8 +51,8 @@ const { locale } = Astro.props;
           </svg>
         </div>
         <div>
-          <h3 class="ai-chat-widget__title">Tesoro AI Assistent</h3>
-          <p class="ai-chat-widget__subtitle">Stel een vraag of zoek informatie</p>
+          <h3 class="ai-chat-widget__title">{t('ai_chat.title', locale)}</h3>
+          <p class="ai-chat-widget__subtitle">{t('ai_chat.subtitle', locale)}</p>
         </div>
       </div>
     </div>
@@ -50,21 +65,21 @@ const { locale } = Astro.props;
           </svg>
         </div>
         <div class="ai-chat-widget__message-content">
-          <p>Hallo! Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.</p>
+          <p>{t('ai_chat.welcome_message', locale)}</p>
         </div>
       </div>
     </div>
 
     <div class="ai-chat-widget__input-container">
-      <input 
-        type="text" 
-        class="ai-chat-widget__input" 
-        placeholder="Stel een vraag..."
+      <input
+        type="text"
+        class="ai-chat-widget__input"
+        placeholder={t('ai_chat.input_placeholder', locale)}
         data-chat-input
       />
-      <button 
-        class="ai-chat-widget__send" 
-        aria-label="Verstuur bericht"
+      <button
+        class="ai-chat-widget__send"
+        aria-label={t('ai_chat.send_label', locale)}
         data-chat-send
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -74,9 +89,9 @@ const { locale } = Astro.props;
     </div>
 
     <div class="ai-chat-widget__footer">
-      <span class="ai-chat-widget__powered">Powered by <strong>Cloudflare AI</strong></span>
-      <a href={getLocalizedPath('/ai-knowledge', locale)} class="ai-chat-widget__knowledge-link" target="_blank">
-        <span class="icon icon-sm">menu_book</span> Knowledge Base
+      <span class="ai-chat-widget__powered">{t('ai_chat.powered_by', locale)} <strong>Cloudflare AI</strong></span>
+      <a href={getLocalizedPath('/knowledge-base', locale)} class="ai-chat-widget__knowledge-link" target="_blank">
+        <span class="icon icon-sm">menu_book</span> {t('ai_chat.knowledge_base', locale)}
       </a>
     </div>
   </div>
@@ -84,13 +99,30 @@ const { locale } = Astro.props;
 
 <script>
   function initChatWidget() {
+    const widget = document.querySelector('.ai-chat-widget') as HTMLElement;
     const toggle = document.querySelector('[data-chat-toggle]') as HTMLButtonElement;
     const window = document.querySelector('[data-chat-window]') as HTMLElement;
     const input = document.querySelector('[data-chat-input]') as HTMLInputElement;
     const send = document.querySelector('[data-chat-send]') as HTMLButtonElement;
     const messages = document.querySelector('[data-chat-messages]') as HTMLElement;
 
-    if (!toggle || !window || !input || !send || !messages) return;
+    if (!widget || !toggle || !window || !input || !send || !messages) return;
+
+    // Get translations from data attributes
+    const translations = {
+      foundInfo: widget.dataset.foundInfo || '',
+      readMore: widget.dataset.readMore || '',
+      viewPricing: widget.dataset.viewPricing || '',
+      pricingResponse: widget.dataset.pricingResponse || '',
+      trialResponse: widget.dataset.trialResponse || '',
+      scheduleDemo: widget.dataset.scheduleDemo || '',
+      contactResponse: widget.dataset.contactResponse || '',
+      contactUs: widget.dataset.contactUs || '',
+      alsoInteresting: widget.dataset.alsoInteresting || '',
+      noResults: widget.dataset.noResults || '',
+      goToKb: widget.dataset.goToKb || '',
+      errorMessage: widget.dataset.errorMessage || ''
+    };
 
     let isOpen = false;
 
@@ -163,9 +195,9 @@ const { locale } = Astro.props;
             if (data.success && data.results && data.results.length > 0) {
               const topResult = data.results[0];
               response = {
-                text: topResult.excerpt || topResult.title || 'Ik heb informatie gevonden die je vraag beantwoordt.',
+                text: topResult.excerpt || topResult.title || translations.foundInfo,
                 link: topResult.url,
-                linkText: 'Lees meer',
+                linkText: translations.readMore,
                 searchResults: data.results.slice(1, 3) // Include 2 more results
               };
             }
@@ -178,24 +210,24 @@ const { locale } = Astro.props;
         if (!response) {
           const lowerQuery = query.toLowerCase();
 
-          if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price')) {
+          if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price') || lowerQuery.includes('precio') || lowerQuery.includes('cost')) {
             response = {
-              text: 'Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!',
+              text: translations.pricingResponse,
               link: '/pricing',
-              linkText: 'Bekijk alle prijzen'
+              linkText: translations.viewPricing
             };
-          } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial')) {
+          } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial') || lowerQuery.includes('probar')) {
             response = {
-              text: 'Je kunt Tesoro CRM 14 dagen gratis proberen! Geen creditcard nodig. Wil je een persoonlijke demo? Klik hieronder om een afspraak in te plannen.',
+              text: translations.trialResponse,
               link: '#',
-              linkText: 'Plan een demo',
+              linkText: translations.scheduleDemo,
               action: 'demo'
             };
-          } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp')) {
+          } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp') || lowerQuery.includes('help') || lowerQuery.includes('ayuda') || lowerQuery.includes('contacto')) {
             response = {
-              text: 'Heb je een specifieke vraag? Neem contact met ons op! We helpen je graag verder.',
+              text: translations.contactResponse,
               link: '#',
-              linkText: 'Neem contact op',
+              linkText: translations.contactUs,
               action: 'contact'
             };
           }
@@ -216,8 +248,8 @@ const { locale } = Astro.props;
               </svg>
             </div>
             <div class="ai-chat-widget__message-content">
-              <p>Ik kon geen specifiek antwoord vinden op je vraag. Probeer het anders te formuleren, of bekijk de Knowledge Base voor alle informatie over Tesoro CRM.</p>
-              <a href="/knowledge-base" class="ai-chat-widget__link">Naar Knowledge Base →</a>
+              <p>${translations.noResults}</p>
+              <a href="/knowledge-base" class="ai-chat-widget__link">${translations.goToKb}</a>
             </div>
           `;
         } else {
@@ -230,7 +262,7 @@ const { locale } = Astro.props;
           // Build additional results HTML if available
           let additionalResultsHtml = '';
           if (response.searchResults && response.searchResults.length > 0) {
-            additionalResultsHtml = '<div class="ai-chat-widget__additional-results"><p class="ai-chat-widget__additional-title">Mogelijk ook interessant:</p>';
+            additionalResultsHtml = `<div class="ai-chat-widget__additional-results"><p class="ai-chat-widget__additional-title">${translations.alsoInteresting}</p>`;
             response.searchResults.forEach((result: any) => {
               additionalResultsHtml += `<a href="${result.url}" class="ai-chat-widget__additional-link" target="_blank">→ ${result.title}</a>`;
             });
@@ -265,7 +297,7 @@ const { locale } = Astro.props;
             </svg>
           </div>
           <div class="ai-chat-widget__message-content">
-            <p>Sorry, er ging iets mis. Probeer een vraag zoals: "Wat kost Tesoro?" of "Hoe werkt lead management?"</p>
+            <p>${translations.errorMessage}</p>
           </div>
         `;
         messages.appendChild(errorMsg);

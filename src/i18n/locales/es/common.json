@@ -68,5 +68,42 @@
     "empty": "Empieza a escribir para buscar...",
     "navigate": "navegar",
     "select": "seleccionar"
+  },
+  "ai_chat": {
+    "button_label": "Abrir Asistente IA",
+    "title": "Asistente IA de Tesoro",
+    "subtitle": "Haz una pregunta o busca información",
+    "welcome_message": "¡Hola! Soy el asistente IA de Tesoro. Hazme una pregunta sobre nuestro CRM o busca información.",
+    "input_placeholder": "Haz una pregunta...",
+    "send_label": "Enviar mensaje",
+    "powered_by": "Powered by",
+    "knowledge_base": "Base de Conocimientos",
+    "read_more": "Leer más",
+    "view_pricing": "Ver todos los precios",
+    "schedule_demo": "Agendar una demo",
+    "contact_us": "Contactar",
+    "also_interesting": "También podría interesarte:",
+    "no_results": "No pude encontrar una respuesta específica a tu pregunta. Intenta reformularla, o consulta la Base de Conocimientos para toda la información sobre Tesoro CRM.",
+    "go_to_kb": "Ir a Base de Conocimientos →",
+    "error_message": "Lo siento, algo salió mal. Intenta una pregunta como: \"¿Cuánto cuesta Tesoro?\" o \"¿Cómo funciona la gestión de leads?\"",
+    "pricing_response": "Tesoro CRM cuesta €99 al mes para hasta 10 usuarios. Sin costos de configuración, sin compromiso. ¡Puedes probarlo gratis durante 14 días!",
+    "trial_response": "¡Puedes probar Tesoro CRM gratis durante 14 días! No se requiere tarjeta de crédito. ¿Quieres una demo personalizada? Haz clic abajo para agendar una cita.",
+    "contact_response": "¿Tienes una pregunta específica? ¡Contáctanos! Estaremos encantados de ayudarte.",
+    "found_info": "Encontré información que responde tu pregunta."
+  },
+  "components": {
+    "image": {
+      "click_to_enlarge": "Haz clic para ampliar la imagen",
+      "close": "Cerrar"
+    },
+    "form": {
+      "success": "¡Gracias! Te contactaremos pronto.",
+      "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+      "submit": "Enviar",
+      "submitting": "Enviando..."
+    },
+    "modal": {
+      "close": "Cerrar modal"
+    }
   }
 }

@@ -3,6 +3,8 @@
  * Image component with automatic fallback to placeholder
  * Maintains aspect ratio and prevents layout shift
  */
+import { t, getLocale } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
 
 interface Props {
   src: string;
@@ -13,6 +15,7 @@ interface Props {
   class?: string;
   aspectRatio?: string; // e.g., "16/9", "4/3", "1/1"
   clickable?: boolean; // Enable/disable modal zoom (default: true)
+  locale?: Language;
 }
 
 const {
@@ -24,6 +27,7 @@ const {
   class: className = '',
   aspectRatio,
   clickable = true,
+  locale = getLocale(Astro.currentLocale),
 } = Astro.props;
 
 // Calculate aspect ratio
@@ -48,10 +52,10 @@ const themeColor = getThemeColor(alt);
 
 <div class="image-with-fallback" style={`aspect-ratio: ${calculatedAspectRatio};`}>
   {clickable ? (
-    <button 
+    <button
       class="image-with-fallback__button"
       onclick={`document.getElementById('${modalId}').style.display='flex'`}
-      aria-label="Klik om afbeelding te vergroten"
+      aria-label={t('components.image.click_to_enlarge', locale)}
     >
       <img
         id={imageId}
@@ -99,7 +103,7 @@ const themeColor = getThemeColor(alt);
 
 {clickable && (<>
   <div id={modalId} class="image-modal" onclick={`if(event.target.id==='${modalId}')document.getElementById('${modalId}').style.display='none'`}>
-    <button class="image-modal__close" onclick={`document.getElementById('${modalId}').style.display='none'`} aria-label="Sluiten">
+    <button class="image-modal__close" onclick={`document.getElementById('${modalId}').style.display='none'`} aria-label={t('components.image.close', locale)}>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>

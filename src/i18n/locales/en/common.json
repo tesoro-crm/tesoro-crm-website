@@ -68,5 +68,42 @@
     "empty": "Start typing to search...",
     "navigate": "navigate",
     "select": "select"
+  },
+  "ai_chat": {
+    "button_label": "Open AI Assistant",
+    "title": "Tesoro AI Assistant",
+    "subtitle": "Ask a question or search for information",
+    "welcome_message": "Hello! I'm the Tesoro AI assistant. Ask me a question about our CRM or search for information.",
+    "input_placeholder": "Ask a question...",
+    "send_label": "Send message",
+    "powered_by": "Powered by",
+    "knowledge_base": "Knowledge Base",
+    "read_more": "Read more",
+    "view_pricing": "View all pricing",
+    "schedule_demo": "Schedule a demo",
+    "contact_us": "Contact us",
+    "also_interesting": "You might also find interesting:",
+    "no_results": "I couldn't find a specific answer to your question. Try rephrasing it, or check the Knowledge Base for all information about Tesoro CRM.",
+    "go_to_kb": "Go to Knowledge Base →",
+    "error_message": "Sorry, something went wrong. Try a question like: \"What does Tesoro cost?\" or \"How does lead management work?\"",
+    "pricing_response": "Tesoro CRM costs €99 per month for up to 10 users. No setup fees, no commitment. You can try it free for 14 days!",
+    "trial_response": "You can try Tesoro CRM free for 14 days! No credit card required. Want a personal demo? Click below to schedule an appointment.",
+    "contact_response": "Have a specific question? Contact us! We're happy to help.",
+    "found_info": "I found information that answers your question."
+  },
+  "components": {
+    "image": {
+      "click_to_enlarge": "Click to enlarge image",
+      "close": "Close"
+    },
+    "form": {
+      "success": "Thank you! We'll contact you soon.",
+      "error": "Something went wrong. Please try again.",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "modal": {
+      "close": "Close modal"
+    }
   }
 }

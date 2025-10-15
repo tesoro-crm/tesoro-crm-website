@@ -1,27 +1,41 @@
 ---
+import { t, getLocale } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
 export interface Props {
   formId: string;
   successMessage?: string;
   errorMessage?: string;
+  locale?: Language;
 }
 
-const { formId, successMessage = "Bedankt! We nemen snel contact op.", errorMessage = "Er is iets misgegaan. Probeer het opnieuw." } = Astro.props;
+const {
+  formId,
+  successMessage,
+  errorMessage,
+  locale = getLocale(Astro.currentLocale)
+} = Astro.props;
+
+const defaultSuccessMessage = successMessage || t('components.form.success', locale);
+const defaultErrorMessage = errorMessage || t('components.form.error', locale);
+const submitText = t('components.form.submit', locale);
+const submittingText = t('components.form.submitting', locale);
 ---
 
-<script>
+<script define:vars={{ formId, defaultSuccessMessage, defaultErrorMessage, submitText, submittingText }}>
   document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('{formId}');
+    const form = document.getElementById(formId);
     if (!form) return;
 
     const submitButton = form.querySelector('button[type="submit"]');
-    const originalButtonText = submitButton?.textContent || 'Versturen';
+    const originalButtonText = submitButton?.textContent || submitText;
 
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
 
       if (submitButton) {
         submitButton.disabled = true;
-        submitButton.textContent = 'Bezig met versturen...';
+        submitButton.textContent = submittingText;
       }
 
       try {
@@ -35,7 +49,7 @@ const { formId, successMessage = "Bedankt! We nemen snel contact op.", errorMess
 
         if (result.success) {
           // Show success message
-          showNotification('{successMessage}', 'success');
+          showNotification(defaultSuccessMessage, 'success');
 
           // Reset form
           form.reset();
@@ -48,11 +62,11 @@ const { formId, successMessage = "Bedankt! We nemen snel contact op.", errorMess
           }
         } else {
           // Show error message
-          showNotification(result.error || '{errorMessage}', 'error');
+          showNotification(result.error || defaultErrorMessage, 'error');
         }
       } catch (error) {
         console.error('Form submission error:', error);
-        showNotification('{errorMessage}', 'error');
+        showNotification(defaultErrorMessage, 'error');
       } finally {
         if (submitButton) {
           submitButton.disabled = false;

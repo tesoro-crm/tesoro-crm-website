@@ -68,5 +68,42 @@
     "empty": "Begin met typen om te zoeken...",
     "navigate": "navigeren",
     "select": "selecteren"
+  },
+  "ai_chat": {
+    "button_label": "Open AI Assistent",
+    "title": "Tesoro AI Assistent",
+    "subtitle": "Stel een vraag of zoek informatie",
+    "welcome_message": "Hallo! Ik ben de Tesoro AI assistent. Stel me een vraag over ons CRM of zoek naar informatie.",
+    "input_placeholder": "Stel een vraag...",
+    "send_label": "Verstuur bericht",
+    "powered_by": "Powered by",
+    "knowledge_base": "Kennisbank",
+    "read_more": "Lees meer",
+    "view_pricing": "Bekijk alle prijzen",
+    "schedule_demo": "Plan een demo",
+    "contact_us": "Neem contact op",
+    "also_interesting": "Mogelijk ook interessant:",
+    "no_results": "Ik kon geen specifiek antwoord vinden op je vraag. Probeer het anders te formuleren, of bekijk de Kennisbank voor alle informatie over Tesoro CRM.",
+    "go_to_kb": "Naar Kennisbank →",
+    "error_message": "Sorry, er ging iets mis. Probeer een vraag zoals: \"Wat kost Tesoro?\" of \"Hoe werkt lead management?\"",
+    "pricing_response": "Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!",
+    "trial_response": "Je kunt Tesoro CRM 14 dagen gratis proberen! Geen creditcard nodig. Wil je een persoonlijke demo? Klik hieronder om een afspraak in te plannen.",
+    "contact_response": "Heb je een specifieke vraag? Neem contact met ons op! We helpen je graag verder.",
+    "found_info": "Ik heb informatie gevonden die je vraag beantwoordt."
+  },
+  "components": {
+    "image": {
+      "click_to_enlarge": "Klik om afbeelding te vergroten",
+      "close": "Sluiten"
+    },
+    "form": {
+      "success": "Bedankt! We nemen snel contact op.",
+      "error": "Er is iets misgegaan. Probeer het opnieuw.",
+      "submit": "Versturen",
+      "submitting": "Bezig met versturen..."
+    },
+    "modal": {
+      "close": "Sluit modal"
+    }
   }
 }

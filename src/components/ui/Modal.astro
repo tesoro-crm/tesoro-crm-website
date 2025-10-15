@@ -1,12 +1,16 @@
 ---
+import { t, getLocale } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
 export interface Props {
   id: string;
   title: string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
   show?: boolean;
+  locale?: Language;
 }
 
-const { id, title, size = 'md', show = false } = Astro.props;
+const { id, title, size = 'md', show = false, locale = getLocale(Astro.currentLocale) } = Astro.props;
 
 const sizeClasses = {
   sm: 'max-w-md',
@@ -40,7 +44,7 @@ const sizeClasses = {
         <button
           type="button"
           class="modal-close text-neutral-400 hover:text-neutral-600 transition-colors"
-          aria-label="Sluit modal"
+          aria-label={t('components.modal.close', locale)}
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
