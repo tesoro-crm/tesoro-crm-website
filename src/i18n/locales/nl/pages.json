@@ -54,7 +54,7 @@
     "website_showcase": {
       "badge": "Jouw Unieke Website",
       "title": "Een website die echt bij jouw agency past",
-      "description": "Snel, veilig en mooi. Met Tesoro krijg je een professionele makelaar website die perfect aansluit bij de identiteit van jouw kantoor.",
+      "description": "Snel, veilig en mooi. Met Tesoro krijg je een professionele website die perfect aansluit bij de identiteit van jouw vastgoedkantoor.",
       "preview_headline": "Jouw Droomhuis Wacht",
       "preview_subheadline": "Ontdek unieke panden in heel Spanje",
       "preview_cta": "Bekijk Woningen",
@@ -75,7 +75,7 @@
     },
     "competitor_comparison": {
       "badge": "Vergelijking",
-      "title": "Waarom makelaars switchen van Sooprema naar Tesoro?",
+      "title": "Waarom vastgoedkantoren switchen van Sooprema naar Tesoro?",
       "subtitle": "Niet omdat Sooprema slecht is. Maar omdat Tesoro modernere UI heeft, snellere ontwikkeling, en transparante prijsstelling.",
       "feature_1_icon": "view_kanban",
       "feature_1_title": "Visueel Kanban (geen verkapte Excel)",
@@ -125,7 +125,7 @@
       "drawer_case_study_title": "Case study: feature request",
       "drawer_section_title_request": "De aanvraag",
       "drawer_section_title_why": "Waarom dit belangrijk was",
-      "drawer_section_text_why": "Deze feature was cruciaal omdat het makelaars tijd bespaart en de workflow verbetert. Het lost een dagelijks probleem op waar veel klanten tegenaan liepen.",
+      "drawer_section_text_why": "Deze feature was cruciaal omdat het vastgoedkantoren tijd bespaart en de workflow verbetert. Het lost een dagelijks probleem op waar veel klanten tegenaan liepen.",
       "drawer_section_title_solution": "Wat we hebben gebouwd",
       "drawer_section_text_solution": "We hebben een volledig geïntegreerde oplossing gebouwd die naadloos werkt binnen de bestaande workflow. De feature is nu live en wordt dagelijks gebruikt door onze klanten.",
       "drawer_timeline_heading": "Ontwikkeltraject",
@@ -145,7 +145,7 @@
       "omzet": "Extra omzet/maand"
     },
     "social_proof": {
-      "title": "Vertrouwd door 500+ makelaars in Nederland, België en Spanje"
+      "title": "Nieuw sinds januari 2025 - Gebouwd voor vastgoedkantoren in Nederland, België en Spanje"
     },
     "features": {
       "title": "Alles wat je nodig hebt voor succesvolle captación",
@@ -161,8 +161,8 @@
       "feature_3_description": "Automatische AVG/GDPR checks en documentbeheer voor zorgeloze naleving."
     },
     "testimonials": {
-      "title": "Wat onze klanten zeggen",
-      "subtitle": "500+ makelaars vertrouwen op Tesoro CRM voor hun dagelijkse captación workflow",
+      "title": "Gebouwd voor vastgoedkantoren",
+      "subtitle": "Tesoro CRM is nieuw op de markt sinds januari 2025. We werken nauw samen met early adopters om het beste CRM voor vastgoedkantoren te bouwen",
       "testimonial_1_image": "",
       "testimonial_1_quote": "Tesoro CRM heeft onze captatie-ratio verdrievoudigd. De AI identificeert kansrijke woningen voordat ze op de markt komen.",
       "testimonial_1_author": "Maria González",
@@ -250,8 +250,8 @@
       "time_today": "Vandaag"
     },
     "final_cta": {
-      "title": "Klaar om je captatie te verdrievoudigen?",
-      "description": "Sluit je aan bij 500+ succesvolle makelaars die hun workflow hebben geautomatiseerd met Tesoro CRM.",
+      "title": "Klaar om je workflow te automatiseren?",
+      "description": "Word early adopter van Tesoro CRM en help ons het beste makelaar CRM te bouwen.",
       "cta_primary": "Start Gratis Trial",
       "cta_secondary": "Bekijk Prijzen"
     },
@@ -567,11 +567,33 @@
   "features_page": {
     "integrations_title": "Tesoro CRM integreert naadloos met 50+ platforms die je al gebruikt",
     "comparison_title": "Hoe Tesoro CRM zich verhoudt tot de concurrentie",
-    "comparison_subtitle": "Zie waarom 500+ makelaars kiezen voor Tesoro CRM",
+    "comparison_subtitle": "Moderne features voor makelaars die vooruit willen",
     "comparison_tesoro": "Tesoro CRM",
     "comparison_competitor_a": "Concurrent A",
     "comparison_competitor_b": "Concurrent B",
-    "final_cta_title": "Kies voor de Beste - Start Gratis",
-    "final_cta_description": "Sluit je aan bij 500+ succesvolle makelaars die hun captación hebben verdrievoudigd met Tesoro CRM."
+    "final_cta_title": "Klaar voor Modern Makelaar CRM?",
+    "final_cta_description": "Word early adopter en help ons het beste makelaar CRM te bouwen. Gelanceerd januari 2025."
+  },
+  "website_api": {
+    "openapi_coming_soon": {
+      "badge": "OpenAPI - Binnenkort",
+      "title": "Onbeperkte automatisering met onze API",
+      "description": "Over een paar weken lanceren we volledige OpenAPI. Verbind je Tesoro data met elke tool die je gebruikt. Automatiseer processen, bouw custom integraties en creëer workflows precies zoals jij ze nodig hebt.",
+      "benefit_1_title": "Totale automatisering",
+      "benefit_1_description": "Verbind Tesoro met Zapier, Make, n8n of je eigen code om elk proces te automatiseren.",
+      "benefit_2_title": "Custom integraties",
+      "benefit_2_description": "Bouw integraties met je interne tools, legacy CRM's of branche-specifieke systemen.",
+      "benefit_3_title": "Volledige data controle",
+      "benefit_3_description": "Complete toegang tot je contacten, properties, deals en activiteiten via veilige REST endpoints.",
+      "use_case_1": "Klanten automatisch synchroniseren met je boekhoudsysteem",
+      "use_case_2": "Custom rapporten maken in Google Sheets of Excel",
+      "use_case_3": "Notificaties naar Slack sturen wanneer een deal sluit",
+      "use_case_4": "Verbinden met marketing tools voor geautomatiseerde campagnes",
+      "launch_info": "De eerste versie van OpenAPI wordt de komende weken gelanceerd. Volledige documentatie komt beschikbaar zodra het operationeel is.",
+      "notify_label": "Krijg een melding wanneer het beschikbaar is",
+      "notify_placeholder": "jouw@email.nl",
+      "notify_button": "Laat het me weten",
+      "notify_privacy": "We contacteren je alleen over de OpenAPI lancering. Geen spam."
+    }
   }
 }

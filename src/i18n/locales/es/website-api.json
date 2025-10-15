@@ -189,6 +189,26 @@
       "question_8": "¿Puedo probar la API antes de comprometerme?",
       "answer_8": "¡Sí! Proporcionamos un entorno sandbox completo donde puedes probar todas las características de la API con datos de prueba antes de lanzar. Sin compromiso requerido."
     },
+    "openapi_coming_soon": {
+      "badge": "OpenAPI - Próximamente",
+      "title": "Conecta Tesoro con Zapier, Make, n8n y más",
+      "description": "En unas semanas lanzamos OpenAPI completo. Conecta Tesoro con 5000+ herramientas vía Zapier, Make y n8n. Automatiza todo - desde facturas hasta campañas de marketing - sin escribir una sola línea de código.",
+      "benefit_1_title": "Integraciones Zapier, Make & n8n",
+      "benefit_1_description": "Conecta Tesoro con Gmail, Slack, Google Sheets, Mailchimp y miles de otras herramientas. Workflows drag & drop sin programar.",
+      "benefit_2_title": "Integraciones personalizadas",
+      "benefit_2_description": "Construye integraciones con tus herramientas internas, CRMs antiguos o sistemas específicos del sector.",
+      "benefit_3_title": "Control completo de datos",
+      "benefit_3_description": "Acceso total a tus contactos, propiedades, deals y actividades a través de endpoints REST seguros.",
+      "use_case_1": "Sincronizar clientes automáticamente con tu sistema de contabilidad",
+      "use_case_2": "Crear informes personalizados en Google Sheets o Excel",
+      "use_case_3": "Enviar notificaciones a Slack cuando se cierra un deal",
+      "use_case_4": "Conectar con herramientas de marketing para campañas automatizadas",
+      "launch_info": "La primera versión de OpenAPI se lanzará en las próximas semanas. La documentación completa estará disponible cuando esté operativo.",
+      "notify_label": "Recibe un aviso cuando esté disponible",
+      "notify_placeholder": "tu@email.com",
+      "notify_button": "Avísame",
+      "notify_privacy": "Solo te contactaremos sobre el lanzamiento de OpenAPI. Sin spam."
+    },
     "cta": {
       "title": "¿Listo para un sitio web ultrarrápido?",
       "description": "Contáctanos para una conversación sin compromiso sobre tus planes de sitio web.",
@@ -264,7 +284,7 @@
     },
     "assumptions": {
       "title": "Suposiciones subyacentes",
-      "assumption_1": "67% de ahorro de tiempo en tareas administrativas (promedio de 500+ clientes)",
+      "assumption_1": "67% de ahorro de tiempo en tareas administrativas (benchmark de la industria para automatización CRM)",
       "assumption_2": "3.2x más conversión mediante matching con IA y mejor seguimiento",
       "assumption_3": "Valor promedio por hora: €75 (estándar para agentes inmobiliarios)",
       "assumption_4": "Tesoro CRM: €99/mes para hasta 10 usuarios",

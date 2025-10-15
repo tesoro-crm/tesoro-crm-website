@@ -436,6 +436,91 @@
         "secondary": "Bekijk demo"
       }
     },
+    "lead_management": {
+      "meta_title": "Gecentraliseerd vastgoed leadbeheer | Tesoro CRM",
+      "meta_description": "Leg leads automatisch vast vanaf je website, vastgoedportals en social media. Reactie binnen 5 minuten. Verlies nooit meer een lead.",
+      "hero": {
+        "badge": "Leadbeheer",
+        "title": "Leg elke lead vast en beheer ze",
+        "description": "Alle leads van je website, vastgoedportals (Funda, Pararius) en social media stromen automatisch naar Tesoro. Reageer binnen 5 minuten. Verlies nooit meer een lead.",
+        "cta_primary": "Start 14 dagen gratis",
+        "cta_secondary": "Bekijk demo",
+        "sources_title": "Verbonden leadbronnen",
+        "source_website": "Website",
+        "source_website_desc": "Contactformulieren automatisch geïntegreerd",
+        "source_portals": "Vastgoedportals",
+        "source_portals_desc": "Funda, Pararius, Kyero en meer",
+        "source_social": "Social media",
+        "source_social_desc": "Facebook, Instagram Ads met volledige tracking"
+      },
+      "stats": {
+        "response_time": "<5 min",
+        "response_time_desc": "gemiddelde reactietijd",
+        "no_lead_lost": "0",
+        "no_lead_lost_desc": "leads verloren",
+        "channels": "5+",
+        "channels_desc": "verbonden kanalen"
+      },
+      "problem": {
+        "badge": "Het probleem",
+        "title": "Waarom gaan leads verloren?",
+        "description": "De meeste vastgoedmakelaars verliezen 40% van hun leads omdat ze via verschillende kanalen binnenkomen en er geen centraal systeem is om ze te beheren.",
+        "issue_1_title": "Meerdere ingangspunten",
+        "issue_1_description": "Leads komen binnen via website, Funda, Pararius, Facebook, email. Zonder centraal systeem raken dingen kwijt.",
+        "issue_2_title": "Trage reactie",
+        "issue_2_description": "Als je 1 uur later reageert, heeft de lead al contact gehad met een andere makelaar. Snelheid is belangrijk.",
+        "issue_3_title": "Geen tracking",
+        "issue_3_description": "Welke lead kwam waar vandaan? In welke woning waren ze geïnteresseerd? Zonder tracking vlieg je blind.",
+        "issue_4_title": "Handmatig werk",
+        "issue_4_description": "Handmatig leads kopiëren van emails en webformulieren naar je CRM. Tijdrovend en veroorzaakt fouten."
+      },
+      "solution": {
+        "badge": "De oplossing",
+        "title": "Geautomatiseerd leadbeheer",
+        "description": "Tesoro legt automatisch leads vast van alle kanalen, organiseert ze en meldt het je direct. Je reageert snel en verliest nooit een lead.",
+        "feature_1_title": "Automatische vastlegging",
+        "feature_1_description": "Leads van website, vastgoedportals en social media stromen automatisch naar Tesoro. Geen handmatige invoer.",
+        "feature_2_title": "Directe melding",
+        "feature_2_description": "Push notificatie op je telefoon wanneer een nieuwe lead binnenkomt. Je reageert binnen 5 minuten.",
+        "feature_3_title": "Complete context",
+        "feature_3_description": "Zie direct: in welke woning waren ze geïnteresseerd? Van welk kanaal kwamen ze? Welke informatie gaven ze? Alles in één oogopslag.",
+        "feature_4_title": "Automatische verdeling",
+        "feature_4_description": "Leads worden automatisch toegewezen aan de juiste makelaar op basis van locatie, woningtype of rotatieschema. Flexibele regels."
+      },
+      "workflow": {
+        "title": "Hoe leadopvang werkt",
+        "description": "Van opvang tot eerste reactie in minder dan 5 minuten. Volledig geautomatiseerd.",
+        "step_1_title": "Lead komt binnen",
+        "step_1_description": "Klant vult formulier in op website of vastgoedportal. Of klikt op Facebook advertentie.",
+        "step_1_timing": "0 minuten",
+        "step_2_title": "Automatische vastlegging",
+        "step_2_description": "Tesoro legt de lead vast, extraheert alle informatie en maakt automatisch contactrecord en deal aan.",
+        "step_2_timing": "< 30 seconden",
+        "step_3_title": "Directe melding",
+        "step_3_description": "Je ontvangt push notificatie op telefoon en email. Met complete context: welke woning, welk kanaal, welke informatie.",
+        "step_3_timing": "< 1 minuut",
+        "step_4_title": "Snelle reactie",
+        "step_4_description": "Je opent Tesoro, ziet complete context en reageert direct. Templates en sneltoetsen maken dit supersnell.",
+        "step_4_timing": "< 5 minuten"
+      },
+      "integration": {
+        "title": "Integreer al je leadkanalen",
+        "description": "Tesoro verbindt met alle kanalen waar je leads binnenkomen. Eén centraal platform voor alle leads.",
+        "channels_title": "Verbonden kanalen",
+        "feature_1_title": "Website",
+        "feature_1_description": "Contactformulieren met API integratie. De lead stroomt automatisch naar Tesoro. Werkt met elk CMS.",
+        "feature_2_title": "Vastgoedportals",
+        "feature_2_description": "Funda, Pararius, Kyero en andere portals. Leads van portalreacties stromen direct naar Tesoro.",
+        "feature_3_title": "Social media integratie",
+        "feature_3_description": "Facebook Lead Ads en Instagram. Leads van je social media advertenties automatisch in Tesoro."
+      },
+      "cta": {
+        "title": "Verlies nooit meer een lead",
+        "description": "Start vandaag met automatische leadopvang en snelle reactie. 14 dagen gratis proberen.",
+        "primary": "Start 14 dagen gratis",
+        "secondary": "Bekijk demo"
+      }
+    },
     "common": {
       "cta_section": {
         "title": "Klaar voor {feature_name}?",

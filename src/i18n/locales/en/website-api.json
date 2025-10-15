@@ -201,6 +201,26 @@
       "feature_4_title": "Fair Rate Limiting",
       "feature_4_description": "50,000 requests/month included. Upgrade available for high-traffic sites."
     },
+    "openapi_coming_soon": {
+      "badge": "OpenAPI - Coming Soon",
+      "title": "Connect Tesoro with Zapier, Make, n8n and More",
+      "description": "In a few weeks we're launching complete OpenAPI. Connect Tesoro with 5000+ tools via Zapier, Make and n8n. Automate everything - from invoices to marketing campaigns - without writing a single line of code.",
+      "benefit_1_title": "Zapier, Make & n8n Integrations",
+      "benefit_1_description": "Connect Tesoro with Gmail, Slack, Google Sheets, Mailchimp and thousands of other tools. Drag & drop workflows without coding.",
+      "benefit_2_title": "Custom Integrations",
+      "benefit_2_description": "Build integrations with your internal tools, legacy CRMs or industry-specific systems.",
+      "benefit_3_title": "Complete Data Control",
+      "benefit_3_description": "Full access to your contacts, properties, deals and activities through secure REST endpoints.",
+      "use_case_1": "Automatically sync customers with your accounting system",
+      "use_case_2": "Create custom reports in Google Sheets or Excel",
+      "use_case_3": "Send notifications to Slack when a deal closes",
+      "use_case_4": "Connect with marketing tools for automated campaigns",
+      "launch_info": "The first version of OpenAPI will be released in the coming weeks. Complete documentation will be available when operational.",
+      "notify_label": "Get notified when it's available",
+      "notify_placeholder": "you@email.com",
+      "notify_button": "Notify Me",
+      "notify_privacy": "We'll only contact you about the OpenAPI launch. No spam."
+    },
     "cta": {
       "title": "Ready for a Blazingly Fast Website?",
       "description": "Contact us for a no-obligation conversation about your website plans.",
@@ -264,7 +284,7 @@
     },
     "assumptions": {
       "title": "Underlying Assumptions",
-      "assumption_1": "67% time savings on administrative tasks (average from 500+ customers)",
+      "assumption_1": "67% time savings on administrative tasks (industry benchmark for CRM automation)",
       "assumption_2": "3.2x more conversion through AI-powered matching and better follow-up",
       "assumption_3": "Average value per hour: €75 (standard for real estate agents)",
       "assumption_4": "Tesoro CRM: €99/month for up to 10 users",

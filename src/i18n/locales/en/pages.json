@@ -145,7 +145,7 @@
       "omzet": "Extra revenue/month"
     },
     "social_proof": {
-      "title": "Trusted by 500+ agents in the Netherlands, Belgium and Spain"
+      "title": "New since January 2025 - Built for agents in Netherlands, Belgium and Spain"
     },
     "features": {
       "title": "Everything you need for successful lead generation",
@@ -161,8 +161,8 @@
       "feature_3_description": "Automatic GDPR checks and document management for worry-free compliance."
     },
     "testimonials": {
-      "title": "What our customers say",
-      "subtitle": "500+ agents trust Tesoro CRM for their daily lead generation workflow",
+      "title": "Built for real estate agents",
+      "subtitle": "Tesoro CRM is new on the market since January 2025. We work closely with early adopters to build the best agent CRM",
       "testimonial_1_image": "",
       "testimonial_1_quote": "Tesoro CRM has tripled our acquisition ratio. The AI identifies promising properties before they come on the market.",
       "testimonial_1_author": "Maria González",
@@ -250,8 +250,8 @@
       "time_today": "Today"
     },
     "final_cta": {
-      "title": "Ready to triple your lead generation?",
-      "description": "Join 500+ successful agents who have automated their workflow with Tesoro CRM.",
+      "title": "Ready to automate your workflow?",
+      "description": "Become an early adopter of Tesoro CRM and help us build the best agent CRM.",
       "cta_primary": "Start Free Trial",
       "cta_secondary": "View Pricing"
     },
@@ -567,11 +567,33 @@
   "features_page": {
     "integrations_title": "Tesoro CRM integrates seamlessly with 50+ platforms you already use",
     "comparison_title": "How Tesoro CRM compares to the competition",
-    "comparison_subtitle": "See why 500+ agents choose Tesoro CRM",
+    "comparison_subtitle": "Modern features for agents who want to move forward",
     "comparison_tesoro": "Tesoro CRM",
     "comparison_competitor_a": "Competitor A",
     "comparison_competitor_b": "Competitor B",
     "final_cta_title": "Choose the Best - Start Free",
-    "final_cta_description": "Join 500+ successful agents who have tripled their lead generation with Tesoro CRM."
+    "final_cta_description": "Become an early adopter and help us build the best agent CRM. Launched January 2025."
+  },
+  "website_api": {
+    "openapi_coming_soon": {
+      "badge": "OpenAPI - Coming Soon",
+      "title": "Unlimited Automation with Our API",
+      "description": "In a few weeks we're launching complete OpenAPI. Connect your Tesoro data with any tool you use. Automate processes, build custom integrations and create workflows exactly how you need them.",
+      "benefit_1_title": "Total Automation",
+      "benefit_1_description": "Connect Tesoro with Zapier, Make, n8n or your own code to automate any process.",
+      "benefit_2_title": "Custom Integrations",
+      "benefit_2_description": "Build integrations with your internal tools, legacy CRMs or industry-specific systems.",
+      "benefit_3_title": "Complete Data Control",
+      "benefit_3_description": "Full access to your contacts, properties, deals and activities through secure REST endpoints.",
+      "use_case_1": "Automatically sync customers with your accounting system",
+      "use_case_2": "Create custom reports in Google Sheets or Excel",
+      "use_case_3": "Send notifications to Slack when a deal closes",
+      "use_case_4": "Connect with marketing tools for automated campaigns",
+      "launch_info": "The first version of OpenAPI will be released in the coming weeks. Complete documentation will be available when operational.",
+      "notify_label": "Get notified when it's available",
+      "notify_placeholder": "you@email.com",
+      "notify_button": "Notify Me",
+      "notify_privacy": "We'll only contact you about the OpenAPI launch. No spam."
+    }
   }
 }

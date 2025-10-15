@@ -147,67 +147,57 @@ const { locale } = Astro.props;
       messages.scrollTop = messages.scrollHeight;
 
       try {
-        // Simple keyword-based responses for common questions
-        const lowerQuery = query.toLowerCase();
         let response = null;
 
-        // Check for common questions
-        if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price')) {
-          response = {
-            text: 'Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!',
-            link: '/ai-knowledge#prijzen',
-            linkText: 'Bekijk alle prijzen'
-          };
-        } else if (lowerQuery.includes('lead') || lowerQuery.includes('workflow') || lowerQuery.includes('verlies')) {
-          response = {
-            text: 'Tesoro houdt je scherp tijdens het hele proces. Van lead kwalificeren tot deal sluiten. Je wordt gewaarschuwd als je iets op zijn beloop laat - zo verlies je geen leads meer!',
-            link: '/ai-knowledge#lead-management',
-            linkText: 'Lees meer over lead management'
-          };
-        } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial')) {
-          response = {
-            text: 'Je kunt Tesoro CRM 14 dagen gratis proberen! Geen creditcard nodig. Wil je een persoonlijke demo? Klik hieronder om een afspraak in te plannen.',
-            link: '#',
-            linkText: 'Plan een demo',
-            action: 'demo'
-          };
-        } else if (lowerQuery.includes('feature') || lowerQuery.includes('functie') || lowerQuery.includes('wat kan')) {
-          response = {
-            text: 'Tesoro CRM biedt AI-powered matching, automatische lead kwalificatie, deal management, email/telefoon integratie, klanten portal en veel meer!',
-            link: '/ai-knowledge#features',
-            linkText: 'Alle features bekijken'
-          };
-        } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp') || lowerQuery.includes('vraag')) {
-          response = {
-            text: 'Heb je een specifieke vraag? Neem contact met ons op! We helpen je graag verder.',
-            link: '#',
-            linkText: 'Neem contact op',
-            action: 'contact'
-          };
-        } else {
-          // Try AI Search API as fallback
-          try {
-            const apiResponse = await fetch('/api/search', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ query }),
-            });
+        // Try AI Search API first
+        try {
+          const apiResponse = await fetch('/api/search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query }),
+          });
 
-            if (apiResponse.ok) {
-              const data = await apiResponse.json();
-              const results = data.result?.results || [];
-              
-              if (results.length > 0) {
-                const topResult = results[0];
-                response = {
-                  text: topResult.excerpt || topResult.title,
-                  link: topResult.url,
-                  linkText: 'Lees meer'
-                };
-              }
+          if (apiResponse.ok) {
+            const data = await apiResponse.json();
+
+            if (data.success && data.results && data.results.length > 0) {
+              const topResult = data.results[0];
+              response = {
+                text: topResult.excerpt || topResult.title || 'Ik heb informatie gevonden die je vraag beantwoordt.',
+                link: topResult.url,
+                linkText: 'Lees meer',
+                searchResults: data.results.slice(1, 3) // Include 2 more results
+              };
             }
-          } catch (apiError) {
-            console.log('AI Search not available, using fallback');
+          }
+        } catch (apiError) {
+          console.log('AI Search API error, using keyword fallback:', apiError);
+        }
+
+        // Fallback to keyword-based responses only if AI Search fails
+        if (!response) {
+          const lowerQuery = query.toLowerCase();
+
+          if (lowerQuery.includes('prijs') || lowerQuery.includes('kost') || lowerQuery.includes('price')) {
+            response = {
+              text: 'Tesoro CRM kost €99 per maand voor tot 10 gebruikers. Geen setup kosten, geen binding. Je kunt het 14 dagen gratis proberen!',
+              link: '/pricing',
+              linkText: 'Bekijk alle prijzen'
+            };
+          } else if (lowerQuery.includes('demo') || lowerQuery.includes('proberen') || lowerQuery.includes('trial')) {
+            response = {
+              text: 'Je kunt Tesoro CRM 14 dagen gratis proberen! Geen creditcard nodig. Wil je een persoonlijke demo? Klik hieronder om een afspraak in te plannen.',
+              link: '#',
+              linkText: 'Plan een demo',
+              action: 'demo'
+            };
+          } else if (lowerQuery.includes('contact') || lowerQuery.includes('hulp')) {
+            response = {
+              text: 'Heb je een specifieke vraag? Neem contact met ons op! We helpen je graag verder.',
+              link: '#',
+              linkText: 'Neem contact op',
+              action: 'contact'
+            };
           }
         }
 
@@ -226,16 +216,27 @@ const { locale } = Astro.props;
               </svg>
             </div>
             <div class="ai-chat-widget__message-content">
-              <p>Interessante vraag! Ik kan je helpen met vragen over prijzen, features, demo's of lead management. Probeer bijvoorbeeld: "Wat kost Tesoro?" of "Hoe werkt lead management?"</p>
+              <p>Ik kon geen specifiek antwoord vinden op je vraag. Probeer het anders te formuleren, of bekijk de Knowledge Base voor alle informatie over Tesoro CRM.</p>
+              <a href="/knowledge-base" class="ai-chat-widget__link">Naar Knowledge Base →</a>
             </div>
           `;
         } else {
-          const linkHtml = response.action === 'demo' 
+          const linkHtml = response.action === 'demo'
             ? `<button data-modal-target="demo-modal" class="ai-chat-widget__link">${response.linkText} →</button>`
             : response.action === 'contact'
             ? `<button data-modal-target="contact-modal" class="ai-chat-widget__link">${response.linkText} →</button>`
-            : `<a href="${response.link}" class="ai-chat-widget__link">${response.linkText} →</a>`;
-          
+            : `<a href="${response.link}" class="ai-chat-widget__link" target="_blank">${response.linkText} →</a>`;
+
+          // Build additional results HTML if available
+          let additionalResultsHtml = '';
+          if (response.searchResults && response.searchResults.length > 0) {
+            additionalResultsHtml = '<div class="ai-chat-widget__additional-results"><p class="ai-chat-widget__additional-title">Mogelijk ook interessant:</p>';
+            response.searchResults.forEach((result: any) => {
+              additionalResultsHtml += `<a href="${result.url}" class="ai-chat-widget__additional-link" target="_blank">→ ${result.title}</a>`;
+            });
+            additionalResultsHtml += '</div>';
+          }
+
           botMsg.innerHTML = `
             <div class="ai-chat-widget__message-avatar">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -245,6 +246,7 @@ const { locale } = Astro.props;
             <div class="ai-chat-widget__message-content">
               <p>${response.text}</p>
               ${linkHtml}
+              ${additionalResultsHtml}
             </div>
           `;
         }
@@ -462,6 +464,34 @@ const { locale } = Astro.props;
   }
 
   .ai-chat-widget__link:hover {
+    text-decoration: underline;
+  }
+
+  .ai-chat-widget__additional-results {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .ai-chat-widget__additional-title {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+  }
+
+  .ai-chat-widget__additional-link {
+    display: block;
+    margin: 4px 0;
+    color: var(--accent-primary);
+    font-size: 12px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .ai-chat-widget__additional-link:hover {
+    opacity: 1;
     text-decoration: underline;
   }
 

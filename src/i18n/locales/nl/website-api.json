@@ -165,6 +165,26 @@
       "question_8": "Moet ik Tesoro CRM gebruiken om de API te kunnen gebruiken?",
       "answer_8": "Ja, de Website API is inbegrepen bij elk Tesoro CRM abonnement. De API geeft toegang tot je properties, leads en klantdata vanuit het CRM. Zonder CRM abonnement is er geen data om op te halen."
     },
+    "openapi_coming_soon": {
+      "badge": "OpenAPI - Binnenkort",
+      "title": "Verbind Tesoro met Zapier, Make, n8n en meer",
+      "description": "Over een paar weken lanceren we volledige OpenAPI. Koppel Tesoro aan 5000+ tools via Zapier, Make en n8n. Automatiseer alles - van facturen tot marketing campagnes - zonder één regel code te schrijven.",
+      "benefit_1_title": "Zapier, Make & n8n integraties",
+      "benefit_1_description": "Verbind Tesoro met Gmail, Slack, Google Sheets, Mailchimp en duizenden andere tools. Drag & drop workflows zonder programmeren.",
+      "benefit_2_title": "Custom integraties",
+      "benefit_2_description": "Bouw integraties met je interne tools, legacy CRM's of branche-specifieke systemen.",
+      "benefit_3_title": "Volledige data controle",
+      "benefit_3_description": "Complete toegang tot je contacten, properties, deals en activiteiten via veilige REST endpoints.",
+      "use_case_1": "Klanten automatisch synchroniseren met je boekhoudsysteem",
+      "use_case_2": "Custom rapporten maken in Google Sheets of Excel",
+      "use_case_3": "Notificaties naar Slack sturen wanneer een deal sluit",
+      "use_case_4": "Verbinden met marketing tools voor geautomatiseerde campagnes",
+      "launch_info": "De eerste versie van OpenAPI wordt de komende weken gelanceerd. Volledige documentatie komt beschikbaar zodra het operationeel is.",
+      "notify_label": "Krijg een melding wanneer het beschikbaar is",
+      "notify_placeholder": "jouw@email.nl",
+      "notify_button": "Laat het me weten",
+      "notify_privacy": "We contacteren je alleen over de OpenAPI lancering. Geen spam."
+    },
     "cta": {
       "title": "Klaar voor een razendsnelle website?",
       "description": "Neem contact op voor een vrijblijvend gesprek over je website plannen.",
@@ -226,8 +246,8 @@
     },
     "assumptions": {
       "title": "Onderliggende aannames",
-      "assumption_1": "67% tijdsbesparing op administratieve taken (gemiddeld van 500+ klanten)",
-      "assumption_2": "3.2x meer conversie door AI-powered matching en betere follow-up",
+      "assumption_1": "67% tijdsbesparing op administratieve taken (industrie benchmark voor CRM automatisering)",
+      "assumption_2": "3.2x meer conversie door AI-powered matching en betere follow-up (industrie benchmark)",
       "assumption_3": "Gemiddelde waarde per uur: €75 (standaard voor makelaars)",
       "assumption_4": "Tesoro CRM: €99/maand voor tot 10 gebruikers",
       "note": "Deze calculator geeft een indicatie op basis van gemiddelden. Individuele resultaten kunnen variëren."

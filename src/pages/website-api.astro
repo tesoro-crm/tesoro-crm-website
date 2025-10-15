@@ -303,6 +303,126 @@ const faqs = [
     </div>
   </section>
 
+  <!-- OpenAPI Coming Soon Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-white border-y border-primary/10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <Badge variant="primary" size="lg" class="mb-6 px-6 py-3 text-lg font-bold animate-pulse shadow-xl bg-gradient-to-r from-purple-600 to-pink-600 border-none text-white">
+          {t('website_api.openapi_coming_soon.badge', locale)}
+        </Badge>
+
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_api.openapi_coming_soon.title', locale)}
+        </h2>
+
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto mb-8">
+          {t('website_api.openapi_coming_soon.description', locale)}
+        </p>
+
+        <!-- Platform Logos -->
+        <div class="flex flex-wrap items-center justify-center gap-8 mb-12 opacity-70">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary">Zapier</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary">Make</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary">n8n</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-neutral-400">+5000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <Card variant="default" padding="lg" class="text-center">
+          <span class="icon icon-2xl text-primary mb-4 mx-auto">rocket_launch</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('website_api.openapi_coming_soon.benefit_1_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('website_api.openapi_coming_soon.benefit_1_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <span class="icon icon-2xl text-primary mb-4 mx-auto">extension</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('website_api.openapi_coming_soon.benefit_2_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('website_api.openapi_coming_soon.benefit_2_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <span class="icon icon-2xl text-primary mb-4 mx-auto">database</span>
+          <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+            {t('website_api.openapi_coming_soon.benefit_3_title', locale)}
+          </h3>
+          <p class="text-sm text-neutral-700">
+            {t('website_api.openapi_coming_soon.benefit_3_description', locale)}
+          </p>
+        </Card>
+      </div>
+
+      <!-- Use Cases -->
+      <div class="max-w-3xl mx-auto mb-12">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-6 text-center">
+          {t('website_api.use_cases.title', locale)}
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-success flex-shrink-0 mt-0.5">check_circle</span>
+            <span class="text-neutral-700">{t('website_api.openapi_coming_soon.use_case_1', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-success flex-shrink-0 mt-0.5">check_circle</span>
+            <span class="text-neutral-700">{t('website_api.openapi_coming_soon.use_case_2', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-success flex-shrink-0 mt-0.5">check_circle</span>
+            <span class="text-neutral-700">{t('website_api.openapi_coming_soon.use_case_3', locale)}</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="icon icon-sm text-success flex-shrink-0 mt-0.5">check_circle</span>
+            <span class="text-neutral-700">{t('website_api.openapi_coming_soon.use_case_4', locale)}</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Launch Info -->
+      <Card variant="bordered" padding="lg" class="max-w-2xl mx-auto text-center bg-white/50 backdrop-blur-sm">
+        <p class="text-neutral-700 mb-6">
+          {t('website_api.openapi_coming_soon.launch_info', locale)}
+        </p>
+
+        <!-- Email Notification Form -->
+        <div class="space-y-4">
+          <label class="text-sm font-medium text-neutral-900 block">
+            {t('website_api.openapi_coming_soon.notify_label', locale)}
+          </label>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder={t('website_api.openapi_coming_soon.notify_placeholder', locale)}
+              class="flex-1 px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            />
+            <Button variant="primary" size="md">
+              {t('website_api.openapi_coming_soon.notify_button', locale)}
+            </Button>
+          </div>
+          <p class="text-xs text-neutral-600">
+            {t('website_api.openapi_coming_soon.notify_privacy', locale)}
+          </p>
+        </div>
+      </Card>
+    </div>
+  </section>
+
   <!-- Tech Stack Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
