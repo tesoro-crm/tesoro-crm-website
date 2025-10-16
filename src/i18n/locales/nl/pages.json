@@ -1015,13 +1015,15 @@
     },
     "philosophy": {
       "title": "Waarom je website los staat van het CRM",
-      "description": "Wij geloven in vrijheid. Jouw website is van jou, niet van ons. Daarom houden we je site gescheiden van het CRM.",
-      "freedom_title": "Totale vrijheid",
-      "freedom_description": "Als je ooit van CRM wilt wisselen, blijft je website van jou. Je verliest niet je online aanwezigheid of SEO rankings.",
-      "ownership_title": "Jij bent eigenaar",
-      "ownership_description": "De code, het design en de content zijn volledig van jou. Geen afhankelijkheden, geen vendor lock-in.",
+      "description": "Wij geven je vrijheid van keuze. Jij bepaalt zelf hoe je zichtbaar wilt zijn online.",
+      "freedom_title": "Vrijheid van keuze",
+      "freedom_description": "Je bepaalt zelf hoe je zichtbaar wilt zijn: met onze templates, custom ontwikkeling, of je eigen site via API.",
+      "template_model_title": "Template model",
+      "template_model_description": "De template is eigendom van Tesoro. Jij past de uitstraling aan: kleuren, logo, fonts, content. Denk aan lease: jij bepaalt de uitstraling, wij onderhouden de basis.",
+      "custom_model_title": "Custom model",
+      "custom_model_description": "Volledige eigendom: code, design én structuur zijn van jou. Wij bouwen, jij bezit - inclusief broncode.",
       "api_title": "Flexibele verbinding",
-      "api_description": "Onze API verbindt je site met Tesoro CRM, maar je kunt ook met andere systemen verbinden wanneer nodig."
+      "api_description": "Onze API verbindt data, maar jij hebt controle over je eigen website."
     },
     "tech": {
       "title": "Moderne technologie, uitzonderlijke prestaties",
@@ -1042,19 +1044,19 @@
     "option_1": {
       "title": "Template personalisatie",
       "price": "€495 - €1.000",
-      "description": "We beginnen met onze professionele template en passen deze volledig aan naar jouw merk en identiteit.",
-      "feature_1": "Kies uit alle Google Fonts en stel je merkkleueren in",
+      "description": "Gebruik onze professionele template als basis en pas de uitstraling volledig aan naar jouw merk.",
+      "feature_1": "Pas uiterlijk aan: kleuren, logo, fonts, content",
       "feature_2": "Bepaal zelf de volgorde van blokken en secties",
-      "feature_3": "Volledig responsive en mobiel-geoptimaliseerd",
+      "feature_3": "Onderliggende code blijft eigendom van TesoroCRM",
       "feature_4": "Cloudflare hosting inbegrepen (waarde €250/jaar)"
     },
     "option_2": {
       "title": "Custom design",
       "price": "Vanaf €2.500",
-      "description": "Volledig maatwerk design afgestemd op jouw visie en behoeften. Van concept tot lancering.",
+      "description": "Volledige eigendom: code, design én structuur zijn van jou. Wij bouwen, jij bezit - inclusief broncode.",
       "feature_1": "Uniek design speciaal gemaakt voor jouw kantoor",
       "feature_2": "Custom functionaliteiten op basis van jouw eisen",
-      "feature_3": "Volledige integratie met Tesoro CRM via API",
+      "feature_3": "Dit is de enige optie met volledige eigendom",
       "feature_4": "Cloudflare hosting inbegrepen (waarde €250/jaar)"
     },
     "option_3": {

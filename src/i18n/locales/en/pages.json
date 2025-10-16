@@ -1015,13 +1015,15 @@
     },
     "philosophy": {
       "title": "Why Your Website Is Separate From the CRM",
-      "description": "We believe in freedom. Your website is yours, not ours. That's why we keep your site separate from the CRM.",
-      "freedom_title": "Total Freedom",
-      "freedom_description": "If you ever want to switch CRMs, your website remains yours. You don't lose your online presence or SEO rankings.",
-      "ownership_title": "You Own It",
-      "ownership_description": "The code, design, and content are completely yours. No dependencies, no vendor lock-in.",
+      "description": "We give you freedom of choice. You decide how you want to be visible online.",
+      "freedom_title": "Freedom of Choice",
+      "freedom_description": "You choose how you want to be visible online: with our templates, custom development, or your own site via API.",
+      "template_model_title": "Template Model",
+      "template_model_description": "The template is Tesoro's property. You customize the appearance: colors, logo, fonts, content. Think of it like leasing: you decide the look, we maintain the foundation.",
+      "custom_model_title": "Custom Model",
+      "custom_model_description": "Full ownership: code, design and structure are yours. We build, you own - including source code.",
       "api_title": "Flexible Connection",
-      "api_description": "Our API connects your site to Tesoro CRM, but you can also connect to other systems when needed."
+      "api_description": "Our API connects data, but you have total control of your own website."
     },
     "tech": {
       "title": "Modern Technology, Exceptional Performance",
@@ -1042,19 +1044,19 @@
     "option_1": {
       "title": "Template Customization",
       "price": "€495 - €1,000",
-      "description": "We start with our professional template and fully customize it to match your brand and identity.",
-      "feature_1": "Choose from all Google Fonts and configure your brand colors",
+      "description": "Use our professional template as a foundation and customize the appearance completely to match your brand.",
+      "feature_1": "Customize appearance: colors, logo, fonts, content",
       "feature_2": "Determine the order of blocks and sections yourself",
-      "feature_3": "Fully responsive and mobile-optimized",
+      "feature_3": "Underlying code remains Tesoro's property",
       "feature_4": "Cloudflare hosting included (€250/year value)"
     },
     "option_2": {
       "title": "Custom Design",
       "price": "From €2,500",
-      "description": "Fully custom design tailored to your vision and needs. From concept to launch.",
+      "description": "Full ownership: code, design and structure are yours. We build, you own - including source code.",
       "feature_1": "Unique design created specifically for your agency",
       "feature_2": "Custom functionalities based on your requirements",
-      "feature_3": "Full integration with Tesoro CRM via API",
+      "feature_3": "This is the only option with full ownership",
       "feature_4": "Cloudflare hosting included (€250/year value)"
     },
     "option_3": {
