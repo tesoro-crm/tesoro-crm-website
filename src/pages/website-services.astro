@@ -34,24 +34,19 @@ const techCards = [
 
 const philosophyPoints = [
   {
+    icon: 'bolt',
+    title: t('website_services.philosophy.speed_title', locale),
+    description: t('website_services.philosophy.speed_description', locale),
+  },
+  {
+    icon: 'tune',
+    title: t('website_services.philosophy.custom_title', locale),
+    description: t('website_services.philosophy.custom_description', locale),
+  },
+  {
     icon: 'flight_takeoff',
     title: t('website_services.philosophy.freedom_title', locale),
     description: t('website_services.philosophy.freedom_description', locale),
-  },
-  {
-    icon: 'content_paste',
-    title: t('website_services.philosophy.template_model_title', locale),
-    description: t('website_services.philosophy.template_model_description', locale),
-  },
-  {
-    icon: 'verified_user',
-    title: t('website_services.philosophy.custom_model_title', locale),
-    description: t('website_services.philosophy.custom_model_description', locale),
-  },
-  {
-    icon: 'sync',
-    title: t('website_services.philosophy.api_title', locale),
-    description: t('website_services.philosophy.api_description', locale),
   },
 ];
 
@@ -144,7 +139,7 @@ const hostingBenefits = [
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {philosophyPoints.map((point) => (
           <Card variant="default" padding="lg" class="text-center">
             <span class="icon icon-2xl text-primary mb-4 mx-auto">{point.icon}</span>

@@ -17,6 +17,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# Claude Code MCP configuration (contains API tokens)
+.claude/mcp.json
+
 # macOS-specific files
 .DS_Store
 
