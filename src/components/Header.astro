@@ -98,20 +98,28 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                     {t('nav.mega_menu.your_clients_description', locale)}
                   </p>
                   <div class="space-y-2">
-                    <a href={getLocalizedPath('/features/email-integration', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.communication', locale)}
-                      </span>
-                    </a>
                     <a href={getLocalizedPath('/features/client-portal', locale)} class="flex items-start gap-2 group/item">
                       <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
                         {t('nav.mega_menu.client_portal', locale)}
+                      </span>
+                    </a>
+                    <a href={getLocalizedPath('/website-api', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.website_integration', locale)}
+                      </span>
+                    </a>
+                    <a href={getLocalizedPath('/features/email-integration', locale)} class="flex items-start gap-2 group/item">
+                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
+                        {t('nav.mega_menu.communication', locale)}
                       </span>
                     </a>
                   </div>
@@ -140,14 +148,6 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                       </svg>
                       <span class="text-sm text-neutral-700 group-hover/item:text-primary">
                         {t('nav.mega_menu.reporting', locale)}
-                      </span>
-                    </a>
-                    <a href={getLocalizedPath('/website-api', locale)} class="flex items-start gap-2 group/item">
-                      <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                      <span class="text-sm text-neutral-700 group-hover/item:text-primary">
-                        {t('nav.mega_menu.website_integration', locale)}
                       </span>
                     </a>
                   </div>
