@@ -1,0 +1,299 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale, Astro.url);
+await loadTranslations(locale);
+
+const popularPages = [
+  {
+    key: 'home',
+    path: getLocalizedPath('/', locale),
+    icon: 'home'
+  },
+  {
+    key: 'features',
+    path: getLocalizedPath('/features', locale),
+    icon: 'star'
+  },
+  {
+    key: 'pricing',
+    path: getLocalizedPath('/pricing', locale),
+    icon: 'payments'
+  },
+  {
+    key: 'knowledge_base',
+    path: getLocalizedPath('/knowledge-base', locale),
+    icon: 'library_books'
+  },
+  {
+    key: 'contact',
+    path: getLocalizedPath('/contact', locale),
+    icon: 'mail'
+  },
+  {
+    key: 'integrations',
+    path: getLocalizedPath('/integrations', locale),
+    icon: 'extension'
+  },
+  {
+    key: 'support',
+    path: getLocalizedPath('/support', locale),
+    icon: 'support_agent'
+  },
+  {
+    key: 'docs',
+    path: getLocalizedPath('/docs', locale),
+    icon: 'menu_book'
+  }
+];
+---
+
+<Layout
+  title={t('error_404.meta_title', locale)}
+  description={t('error_404.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="py-16 lg:py-24 bg-gradient-to-b from-neutral-50 to-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+      <Badge variant="error" size="md" class="mb-4">
+        {t('error_404.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('error_404.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg lg:text-xl text-neutral-600 mb-12 max-w-2xl mx-auto">
+        {t('error_404.hero.description', locale)}
+      </p>
+
+      <!-- Search Section -->
+      <div class="max-w-2xl mx-auto mb-16">
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
+          {t('error_404.search.title', locale)}
+        </h2>
+
+        <form id="search-form" class="flex gap-2">
+          <div class="flex-1 relative">
+            <span class="icon absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">search</span>
+            <input
+              type="text"
+              id="search-input"
+              placeholder={t('error_404.search.placeholder', locale)}
+              class="w-full pl-12 pr-4 py-4 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 text-lg"
+            />
+          </div>
+          <Button variant="primary" size="lg" type="submit">
+            {t('error_404.search.button', locale)}
+          </Button>
+        </form>
+
+        <!-- Search Results (hidden by default) -->
+        <div id="search-results" class="mt-6 hidden">
+          <div id="results-container" class="space-y-3"></div>
+          <div id="no-results" class="hidden text-center py-8">
+            <span class="icon text-6xl text-neutral-300 mb-4">search_off</span>
+            <p class="text-lg text-neutral-600 mb-2">{t('error_404.search.no_results', locale)}</p>
+            <p class="text-sm text-neutral-500">{t('error_404.search.try_again', locale)}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Pages Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <h2 class="text-3xl font-display font-bold text-neutral-900 mb-8 text-center">
+        {t('error_404.suggestions.title', locale)}
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {popularPages.map((page) => (
+          <a
+            href={page.path}
+            class="group p-6 rounded-lg border border-neutral-200 hover:border-primary hover:bg-primary/5 transition-all duration-200"
+          >
+            <span class="icon text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform duration-200">
+              {page.icon}
+            </span>
+            <div class="font-semibold text-neutral-900 group-hover:text-primary transition-colors">
+              {t(`error_404.suggestions.${page.key}`, locale)}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Help Section -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Card variant="elevated" padding="lg" class="text-center">
+        <span class="icon text-5xl text-primary mb-4 inline-block">support_agent</span>
+        <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+          {t('error_404.help.title', locale)}
+        </h2>
+        <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
+          {t('error_404.help.description', locale)}
+        </p>
+        <Button variant="primary" size="lg" href={getLocalizedPath('/support', locale)}>
+          {t('error_404.help.cta', locale)}
+        </Button>
+      </Card>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Simple client-side search functionality
+  const searchForm = document.getElementById('search-form') as HTMLFormElement;
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const searchResults = document.getElementById('search-results') as HTMLDivElement;
+  const resultsContainer = document.getElementById('results-container') as HTMLDivElement;
+  const noResults = document.getElementById('no-results') as HTMLDivElement;
+
+  // Define searchable pages with keywords
+  const searchablePages = [
+    {
+      title: 'Home',
+      path: '/',
+      keywords: ['home', 'inicio', 'start', 'main', 'principal']
+    },
+    {
+      title: 'Features',
+      path: '/features',
+      keywords: ['features', 'características', 'functies', 'functionality', 'funcionalidad', 'smart matching', 'email integration', 'client portal']
+    },
+    {
+      title: 'Pricing',
+      path: '/pricing',
+      keywords: ['pricing', 'precios', 'prijzen', 'price', 'cost', 'plan', 'subscription', 'suscripción']
+    },
+    {
+      title: 'Knowledge Base',
+      path: '/knowledge-base',
+      keywords: ['knowledge', 'base', 'conocimientos', 'kennisbank', 'help', 'ayuda', 'tutorial', 'guide', 'guía']
+    },
+    {
+      title: 'Contact',
+      path: '/contact',
+      keywords: ['contact', 'contacto', 'email', 'support', 'soporte', 'help', 'ayuda']
+    },
+    {
+      title: 'Blog',
+      path: '/blog',
+      keywords: ['blog', 'articles', 'artículos', 'news', 'noticias']
+    },
+    {
+      title: 'Integrations',
+      path: '/integrations',
+      keywords: ['integrations', 'integraciones', 'integraties', 'gmail', 'outlook', 'whatsapp', 'calendar', 'mls']
+    },
+    {
+      title: 'Support',
+      path: '/support',
+      keywords: ['support', 'soporte', 'ondersteuning', 'help', 'ayuda', 'faq']
+    },
+    {
+      title: 'Documentation',
+      path: '/docs',
+      keywords: ['documentation', 'documentación', 'documentatie', 'docs', 'api', 'guide']
+    },
+    {
+      title: 'About',
+      path: '/about',
+      keywords: ['about', 'acerca', 'over', 'company', 'empresa', 'mission', 'misión']
+    },
+    {
+      title: 'Privacy Policy',
+      path: '/privacy',
+      keywords: ['privacy', 'privacidad', 'gdpr', 'rgpd', 'data', 'datos']
+    },
+    {
+      title: 'Terms & Conditions',
+      path: '/terms',
+      keywords: ['terms', 'términos', 'voorwaarden', 'conditions', 'condiciones', 'legal']
+    },
+    {
+      title: 'Smart Matching',
+      path: '/features/smart-matching',
+      keywords: ['smart', 'matching', 'ai', 'intelligent', 'inteligente', 'property', 'propiedad']
+    },
+    {
+      title: 'Email Integration',
+      path: '/features/email-integration',
+      keywords: ['email', 'gmail', 'outlook', 'integration', 'integración', 'sync']
+    },
+    {
+      title: 'Client Portal',
+      path: '/features/client-portal',
+      keywords: ['client', 'portal', 'cliente', 'customer', 'feedback']
+    },
+    {
+      title: 'Deal Pipeline',
+      path: '/features/deal-pipeline',
+      keywords: ['deal', 'pipeline', 'kanban', 'sales', 'ventas']
+    },
+    {
+      title: 'Property Management',
+      path: '/features/property-management',
+      keywords: ['property', 'propiedad', 'management', 'gestión', 'mls']
+    },
+    {
+      title: 'Reporting & Analytics',
+      path: '/features/reporting-analytics',
+      keywords: ['reporting', 'analytics', 'informes', 'análisis', 'dashboard', 'metrics']
+    }
+  ];
+
+  searchForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const query = searchInput.value.toLowerCase().trim();
+
+    if (!query) {
+      searchResults.classList.add('hidden');
+      return;
+    }
+
+    // Filter pages by query
+    const results = searchablePages.filter((page) => {
+      return page.title.toLowerCase().includes(query) ||
+             page.keywords.some(keyword => keyword.includes(query));
+    }).slice(0, 5); // Limit to 5 results
+
+    // Show results
+    searchResults.classList.remove('hidden');
+
+    if (results.length === 0) {
+      resultsContainer.innerHTML = '';
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+      resultsContainer.innerHTML = results.map((result) => `
+        <a
+          href="${result.path}"
+          class="flex items-center gap-4 p-4 rounded-lg border border-neutral-200 hover:border-primary hover:bg-primary/5 transition-all duration-200 group"
+        >
+          <span class="icon text-primary">arrow_forward</span>
+          <div class="flex-1">
+            <div class="font-semibold text-neutral-900 group-hover:text-primary">${result.title}</div>
+            <div class="text-sm text-neutral-600">${result.path}</div>
+          </div>
+        </a>
+      `).join('');
+    }
+  });
+
+  // Hide results when clearing input
+  searchInput?.addEventListener('input', (e) => {
+    if ((e.target as HTMLInputElement).value === '') {
+      searchResults.classList.add('hidden');
+    }
+  });
+</script>

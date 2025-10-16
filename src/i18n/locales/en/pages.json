@@ -970,5 +970,37 @@
       "address_label": "Address:",
       "address": "Tesoro CRM B.V., Amsterdam, Netherlands"
     }
+  },
+  "error_404": {
+    "meta_title": "Page Not Found - Tesoro CRM",
+    "meta_description": "The page you're looking for doesn't exist. Use our search to find what you need.",
+    "hero": {
+      "badge": "Error 404",
+      "title": "Oops... This Page Doesn't Exist",
+      "description": "The page you're looking for couldn't be found. It may have been moved or deleted."
+    },
+    "search": {
+      "title": "Search Tesoro CRM",
+      "placeholder": "Search pages, features or help...",
+      "button": "Search",
+      "no_results": "No results found",
+      "try_again": "Try different search terms"
+    },
+    "suggestions": {
+      "title": "Popular Pages",
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "knowledge_base": "Knowledge Base",
+      "contact": "Contact",
+      "integrations": "Integrations",
+      "support": "Support",
+      "docs": "Documentation"
+    },
+    "help": {
+      "title": "Need Help?",
+      "description": "If you can't find what you're looking for, our team is here to help.",
+      "cta": "Contact Support"
+    }
   }
 }
