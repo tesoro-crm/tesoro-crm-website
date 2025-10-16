@@ -1,0 +1,313 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const techCards = [
+  {
+    icon: 'rocket_launch',
+    title: t('website_services.tech.astro_title', locale),
+    description: t('website_services.tech.astro_description', locale),
+  },
+  {
+    icon: 'edit_note',
+    title: t('website_services.tech.payload_title', locale),
+    description: t('website_services.tech.payload_description', locale),
+  },
+  {
+    icon: 'cloud',
+    title: t('website_services.tech.cloudflare_title', locale),
+    description: t('website_services.tech.cloudflare_description', locale),
+  },
+  {
+    icon: 'groups',
+    title: t('website_services.tech.team_title', locale),
+    description: t('website_services.tech.team_description', locale),
+  },
+];
+
+const philosophyPoints = [
+  {
+    icon: 'flight_takeoff',
+    title: t('website_services.philosophy.freedom_title', locale),
+    description: t('website_services.philosophy.freedom_description', locale),
+  },
+  {
+    icon: 'verified_user',
+    title: t('website_services.philosophy.ownership_title', locale),
+    description: t('website_services.philosophy.ownership_description', locale),
+  },
+  {
+    icon: 'sync',
+    title: t('website_services.philosophy.api_title', locale),
+    description: t('website_services.philosophy.api_description', locale),
+  },
+];
+
+const options = [
+  {
+    title: t('website_services.option_1.title', locale),
+    price: t('website_services.option_1.price', locale),
+    description: t('website_services.option_1.description', locale),
+    features: [
+      t('website_services.option_1.feature_1', locale),
+      t('website_services.option_1.feature_2', locale),
+      t('website_services.option_1.feature_3', locale),
+      t('website_services.option_1.feature_4', locale),
+    ],
+    highlight: false,
+  },
+  {
+    title: t('website_services.option_2.title', locale),
+    price: t('website_services.option_2.price', locale),
+    description: t('website_services.option_2.description', locale),
+    features: [
+      t('website_services.option_2.feature_1', locale),
+      t('website_services.option_2.feature_2', locale),
+      t('website_services.option_2.feature_3', locale),
+      t('website_services.option_2.feature_4', locale),
+    ],
+    highlight: true,
+  },
+  {
+    title: t('website_services.option_3.title', locale),
+    price: t('website_services.option_3.price', locale),
+    description: t('website_services.option_3.description', locale),
+    features: [
+      t('website_services.option_3.feature_1', locale),
+      t('website_services.option_3.feature_2', locale),
+      t('website_services.option_3.feature_3', locale),
+      t('website_services.option_3.feature_4', locale),
+    ],
+    highlight: false,
+  },
+];
+
+const hostingBenefits = [
+  t('website_services.hosting.benefit_1', locale),
+  t('website_services.hosting.benefit_2', locale),
+  t('website_services.hosting.benefit_3', locale),
+  t('website_services.hosting.benefit_4', locale),
+];
+---
+
+<Layout
+  title={t('website_services.meta_title', locale)}
+  description={t('website_services.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('website_services.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('website_services.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('website_services.hero.description', locale)}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="primary" size="lg" href="#options">
+          {t('website_services.hero.cta_primary', locale)}
+        </Button>
+        <Button variant="outline" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('website_services.hero.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_services.philosophy.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_services.philosophy.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {philosophyPoints.map((point) => (
+          <Card variant="default" padding="lg" class="text-center">
+            <span class="icon icon-2xl text-primary mb-4 mx-auto">{point.icon}</span>
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">{point.title}</h3>
+            <p class="text-neutral-700">{point.description}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_services.tech.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_services.tech.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {techCards.map((tech) => (
+          <Card variant="default" padding="lg" class="text-center">
+            <span class="icon icon-2xl text-primary mb-4 mx-auto">{tech.icon}</span>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2">{tech.title}</h3>
+            <p class="text-sm text-neutral-700">{tech.description}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Options Section -->
+  <section id="options" class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_services.options.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_services.options.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {options.map((option) => (
+          <Card
+            variant={option.highlight ? 'bordered' : 'default'}
+            padding="lg"
+            class={option.highlight ? 'ring-2 ring-primary shadow-xl' : ''}
+          >
+            {option.highlight && (
+              <Badge variant="primary" size="sm" class="mb-4">
+                {t('pricing.main_plan.users', locale)}
+              </Badge>
+            )}
+            <h3 class="text-2xl font-semibold text-neutral-900 mb-3">{option.title}</h3>
+            <p class="text-3xl font-bold text-primary mb-4">{option.price}</p>
+            <p class="text-neutral-700 mb-6">{option.description}</p>
+            <ul class="space-y-3 mb-8">
+              {option.features.map((feature) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <span class="icon icon-sm text-success flex-shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-neutral-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <Button
+              variant={option.highlight ? 'primary' : 'outline'}
+              size="md"
+              fullWidth
+              href={getLocalizedPath('/contact', locale)}
+            >
+              {t('website_services.hero.cta_secondary', locale)}
+            </Button>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Hosting & Performance Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_services.hosting.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_services.hosting.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+        {hostingBenefits.map((benefit) => (
+          <div class="flex items-start gap-3">
+            <span class="icon icon-sm text-success flex-shrink-0 mt-1">check_circle</span>
+            <span class="text-neutral-700">{benefit}</span>
+          </div>
+        ))}
+      </div>
+
+      <Card variant="bordered" padding="lg" class="max-w-3xl mx-auto text-center bg-gradient-to-r from-primary/5 to-secondary/5">
+        <span class="icon icon-2xl text-primary mb-4">savings</span>
+        <p class="text-lg font-semibold text-neutral-900">
+          {t('website_services.hosting.value_note', locale)}
+        </p>
+      </Card>
+    </div>
+  </section>
+
+  <!-- Results Showcase -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('website_services.showcase.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('website_services.showcase.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <Card variant="default" padding="lg" class="text-center">
+          <div class="text-5xl font-display font-bold text-primary mb-2">
+            {t('website_services.showcase.quality', locale)}
+          </div>
+          <p class="text-neutral-700">Lighthouse Score</p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <div class="text-5xl font-display font-bold text-primary mb-2">
+            {t('website_services.showcase.speed', locale)}
+          </div>
+          <p class="text-neutral-700">Tiempo de carga</p>
+        </Card>
+
+        <Card variant="default" padding="lg" class="text-center">
+          <div class="text-5xl font-display font-bold text-primary mb-2">
+            {t('website_services.showcase.conversion', locale)}
+          </div>
+          <p class="text-neutral-700">Mejora conversión</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('website_services.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('website_services.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href={getLocalizedPath('/contact', locale)}>
+          {t('website_services.cta.cta_primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href="#options" class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('website_services.cta.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

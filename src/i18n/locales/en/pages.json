@@ -1002,5 +1002,91 @@
       "description": "If you can't find what you're looking for, our team is here to help.",
       "cta": "Contact Support"
     }
+  },
+  "website_services": {
+    "meta_title": "Website Services for Real Estate Agencies - Tesoro CRM",
+    "meta_description": "Blazingly fast websites for real estate agencies built with Astro and Cloudflare. Professional design, perfect performance, and total freedom.",
+    "hero": {
+      "badge": "Website Services",
+      "title": "Your Website, Your Freedom",
+      "description": "We create beautiful, blazingly fast websites for real estate agencies. You choose: template customization, custom design, or your own site with API.",
+      "cta_primary": "View Options",
+      "cta_secondary": "Talk to the Team"
+    },
+    "philosophy": {
+      "title": "Why Your Website Is Separate From the CRM",
+      "description": "We believe in freedom. Your website is yours, not ours. That's why we keep your site separate from the CRM.",
+      "freedom_title": "Total Freedom",
+      "freedom_description": "If you ever want to switch CRMs, your website remains yours. You don't lose your online presence or SEO rankings.",
+      "ownership_title": "You Own It",
+      "ownership_description": "The code, design, and content are completely yours. No dependencies, no vendor lock-in.",
+      "api_title": "Flexible Connection",
+      "api_description": "Our API connects your site to Tesoro CRM, but you can also connect to other systems when needed."
+    },
+    "tech": {
+      "title": "Modern Technology, Exceptional Performance",
+      "description": "We use the best tools in the industry to build sites that are fast, secure, and easy to manage.",
+      "astro_title": "Astro.Build",
+      "astro_description": "Static site generator that creates ultra-fast websites. Perfect 100/100 Lighthouse score.",
+      "payload_title": "PayloadCMS",
+      "payload_description": "Modern CMS with visual editor. Manage your content without technical knowledge.",
+      "cloudflare_title": "Cloudflare Pages",
+      "cloudflare_description": "Global CDN for instant loading worldwide. Free SSL and DDoS protection included.",
+      "team_title": "Experienced Team",
+      "team_description": "Our team has years of experience in web development for real estate. We know what works."
+    },
+    "options": {
+      "title": "Three Options for Your Website",
+      "description": "Choose the option that best fits your needs and budget."
+    },
+    "option_1": {
+      "title": "Template Customization",
+      "price": "€495 - €1,000",
+      "description": "We start with our professional template and fully customize it to match your brand and identity.",
+      "feature_1": "Choose from all Google Fonts and configure your brand colors",
+      "feature_2": "Determine the order of blocks and sections yourself",
+      "feature_3": "Fully responsive and mobile-optimized",
+      "feature_4": "Cloudflare hosting included (€250/year value)"
+    },
+    "option_2": {
+      "title": "Custom Design",
+      "price": "From €2,500",
+      "description": "Fully custom design tailored to your vision and needs. From concept to launch.",
+      "feature_1": "Unique design created specifically for your agency",
+      "feature_2": "Custom functionalities based on your requirements",
+      "feature_3": "Full integration with Tesoro CRM via API",
+      "feature_4": "Cloudflare hosting included (€250/year value)"
+    },
+    "option_3": {
+      "title": "Your Own Site With API",
+      "price": "Free API Access",
+      "description": "Already have your own website or development team? Connect your site to Tesoro CRM through our API.",
+      "feature_1": "Full access to our REST API for properties and contacts",
+      "feature_2": "Complete documentation and code examples",
+      "feature_3": "Maintain full control of your existing website",
+      "feature_4": "No additional costs, API included in your subscription"
+    },
+    "hosting": {
+      "title": "Professional Hosting Included",
+      "description": "With options 1 and 2 you get professional hosting on Cloudflare Pages. €250/year value, included in the service.",
+      "benefit_1": "Global CDN for ultra-fast loading worldwide",
+      "benefit_2": "Free SSL certificates and automatic renewal",
+      "benefit_3": "DDoS protection and web application firewall",
+      "benefit_4": "Daily backups and disaster recovery",
+      "value_note": "All this for just the cost of the development service - no additional hosting fees"
+    },
+    "showcase": {
+      "title": "Results You Can Measure",
+      "description": "Our sites aren't just beautiful, they also perform. These are the results you can expect.",
+      "quality": "100/100",
+      "speed": "< 1s",
+      "conversion": "+40%"
+    },
+    "cta": {
+      "title": "Ready for a Professional Website?",
+      "description": "Let's talk about what you need. No commitment, no pressure. Just an honest conversation about your website.",
+      "cta_primary": "Schedule Call",
+      "cta_secondary": "View Examples"
+    }
   }
 }

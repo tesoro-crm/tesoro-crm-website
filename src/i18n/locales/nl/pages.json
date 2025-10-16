@@ -1002,5 +1002,91 @@
       "description": "Als je niet kunt vinden wat je zoekt, staat ons team klaar om te helpen.",
       "cta": "Contact opnemen met support"
     }
+  },
+  "website_services": {
+    "meta_title": "Website services voor vastgoedkantoren - Tesoro CRM",
+    "meta_description": "Razendsnel websites voor vastgoedkantoren gebouwd met Astro en Cloudflare. Professioneel design, perfecte performance en volledige vrijheid.",
+    "hero": {
+      "badge": "Website services",
+      "title": "Jouw website, jouw vrijheid",
+      "description": "We maken mooie, razendsnelle websites voor vastgoedkantoren. Jij kiest: template personalisatie, custom design of je eigen site met API.",
+      "cta_primary": "Bekijk opties",
+      "cta_secondary": "Praat met het team"
+    },
+    "philosophy": {
+      "title": "Waarom je website los staat van het CRM",
+      "description": "Wij geloven in vrijheid. Jouw website is van jou, niet van ons. Daarom houden we je site gescheiden van het CRM.",
+      "freedom_title": "Totale vrijheid",
+      "freedom_description": "Als je ooit van CRM wilt wisselen, blijft je website van jou. Je verliest niet je online aanwezigheid of SEO rankings.",
+      "ownership_title": "Jij bent eigenaar",
+      "ownership_description": "De code, het design en de content zijn volledig van jou. Geen afhankelijkheden, geen vendor lock-in.",
+      "api_title": "Flexibele verbinding",
+      "api_description": "Onze API verbindt je site met Tesoro CRM, maar je kunt ook met andere systemen verbinden wanneer nodig."
+    },
+    "tech": {
+      "title": "Moderne technologie, uitzonderlijke prestaties",
+      "description": "We gebruiken de beste tools in de sector om sites te bouwen die snel, veilig en makkelijk te beheren zijn.",
+      "astro_title": "Astro.Build",
+      "astro_description": "Static site generator die ultra-snelle websites creëert. Perfecte 100/100 Lighthouse score.",
+      "payload_title": "PayloadCMS",
+      "payload_description": "Moderne CMS met visuele editor. Beheer je content zonder technische kennis.",
+      "cloudflare_title": "Cloudflare Pages",
+      "cloudflare_description": "Wereldwijde CDN voor instant laden overal ter wereld. Gratis SSL en DDoS bescherming inbegrepen.",
+      "team_title": "Ervaren team",
+      "team_description": "Ons team heeft jaren ervaring in webontwikkeling voor vastgoed. We weten wat werkt."
+    },
+    "options": {
+      "title": "Drie opties voor je website",
+      "description": "Kies de optie die het beste bij jouw behoeften en budget past."
+    },
+    "option_1": {
+      "title": "Template personalisatie",
+      "price": "€495 - €1.000",
+      "description": "We beginnen met onze professionele template en passen deze volledig aan naar jouw merk en identiteit.",
+      "feature_1": "Kies uit alle Google Fonts en stel je merkkleueren in",
+      "feature_2": "Bepaal zelf de volgorde van blokken en secties",
+      "feature_3": "Volledig responsive en mobiel-geoptimaliseerd",
+      "feature_4": "Cloudflare hosting inbegrepen (waarde €250/jaar)"
+    },
+    "option_2": {
+      "title": "Custom design",
+      "price": "Vanaf €2.500",
+      "description": "Volledig maatwerk design afgestemd op jouw visie en behoeften. Van concept tot lancering.",
+      "feature_1": "Uniek design speciaal gemaakt voor jouw kantoor",
+      "feature_2": "Custom functionaliteiten op basis van jouw eisen",
+      "feature_3": "Volledige integratie met Tesoro CRM via API",
+      "feature_4": "Cloudflare hosting inbegrepen (waarde €250/jaar)"
+    },
+    "option_3": {
+      "title": "Je eigen site met API",
+      "price": "Gratis API toegang",
+      "description": "Heb je al een eigen website of ontwikkelteam? Verbind je site met Tesoro CRM via onze API.",
+      "feature_1": "Volledige toegang tot onze REST API voor properties en contacten",
+      "feature_2": "Complete documentatie en code voorbeelden",
+      "feature_3": "Behoud volledige controle over je bestaande website",
+      "feature_4": "Geen extra kosten, API inbegrepen in je abonnement"
+    },
+    "hosting": {
+      "title": "Professionele hosting inbegrepen",
+      "description": "Met opties 1 en 2 krijg je professionele hosting op Cloudflare Pages. Waarde €250/jaar, inbegrepen in de service.",
+      "benefit_1": "Wereldwijde CDN voor ultra-snel laden overal ter wereld",
+      "benefit_2": "Gratis SSL certificaten en automatische vernieuwing",
+      "benefit_3": "DDoS bescherming en web application firewall",
+      "benefit_4": "Dagelijkse backups en disaster recovery",
+      "value_note": "Dit alles voor enkel de kosten van de development service - geen extra hosting kosten"
+    },
+    "showcase": {
+      "title": "Resultaten die je kunt meten",
+      "description": "Onze sites zijn niet alleen mooi, ze presteren ook. Dit zijn de resultaten die je kunt verwachten.",
+      "quality": "100/100",
+      "speed": "< 1s",
+      "conversion": "+40%"
+    },
+    "cta": {
+      "title": "Klaar voor een professionele website?",
+      "description": "Laten we praten over wat je nodig hebt. Geen verplichtingen, geen druk. Gewoon een eerlijk gesprek over je website.",
+      "cta_primary": "Plan gesprek",
+      "cta_secondary": "Bekijk voorbeelden"
+    }
   }
 }

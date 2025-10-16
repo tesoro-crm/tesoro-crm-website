@@ -990,5 +990,91 @@
       "description": "Si no encuentras lo que buscas, nuestro equipo está aquí para ayudarte.",
       "cta": "Contactar soporte"
     }
+  },
+  "website_services": {
+    "meta_title": "Servicios web para inmobiliarias - Tesoro CRM",
+    "meta_description": "Sitios web ultrarrápidos para agencias inmobiliarias construidos con Astro y Cloudflare. Diseño profesional, rendimiento perfecto y total libertad.",
+    "hero": {
+      "badge": "Servicios web",
+      "title": "Tu sitio web, tu libertad",
+      "description": "Creamos sitios web hermosos y ultrarrápidos para agencias inmobiliarias. Tú elijes: personalización de plantilla, diseño a medida o tu propio sitio con API.",
+      "cta_primary": "Ver opciones",
+      "cta_secondary": "Hablar con el equipo"
+    },
+    "philosophy": {
+      "title": "Por qué tu sitio web está separado del CRM",
+      "description": "Creemos en la libertad. Tu sitio web es tuyo, no nuestro. Por eso mantenemos tu sitio separado del CRM.",
+      "freedom_title": "Total libertad",
+      "freedom_description": "Si algún día quieres cambiar de CRM, tu sitio web sigue siendo tuyo. No pierdes tu presencia online ni tu posicionamiento SEO.",
+      "ownership_title": "Eres el propietario",
+      "ownership_description": "El código, el diseño y el contenido son completamente tuyos. Ninguna dependencia, ningún bloqueo de proveedor.",
+      "api_title": "Conexión flexible",
+      "api_description": "Nuestra API conecta tu sitio con Tesoro CRM, pero también puedes conectar con otros sistemas cuando lo necesites."
+    },
+    "tech": {
+      "title": "Tecnología moderna, rendimiento excepcional",
+      "description": "Utilizamos las mejores herramientas del sector para construir sitios que son rápidos, seguros y fáciles de gestionar.",
+      "astro_title": "Astro.Build",
+      "astro_description": "Generador de sitios estáticos que crea webs ultrarrápidas. Puntuación perfecta 100/100 en Lighthouse.",
+      "payload_title": "PayloadCMS",
+      "payload_description": "CMS moderno con editor visual. Gestiona tu contenido sin conocimientos técnicos.",
+      "cloudflare_title": "Cloudflare Pages",
+      "cloudflare_description": "CDN global para carga instantánea en todo el mundo. SSL gratuito y protección DDoS incluida.",
+      "team_title": "Equipo experimentado",
+      "team_description": "Nuestro equipo tiene años de experiencia en desarrollo web para inmobiliarias. Sabemos qué funciona."
+    },
+    "options": {
+      "title": "Tres opciones para tu sitio web",
+      "description": "Elige la opción que mejor se adapte a tus necesidades y presupuesto."
+    },
+    "option_1": {
+      "title": "Personalización de plantilla",
+      "price": "€495 - €1.000",
+      "description": "Comenzamos con nuestra plantilla profesional y la personalizamos completamente según tu marca e identidad.",
+      "feature_1": "Elige entre todas las fuentes de Google y configura tus colores de marca",
+      "feature_2": "Determina tú mismo el orden de los bloques y secciones",
+      "feature_3": "Completamente responsive y optimizado para móviles",
+      "feature_4": "Hosting incluido en Cloudflare (valor €250/año)"
+    },
+    "option_2": {
+      "title": "Diseño personalizado",
+      "price": "Desde €2.500",
+      "description": "Diseño completamente a medida adaptado a tu visión y necesidades. Desde el concepto hasta el lanzamiento.",
+      "feature_1": "Diseño único creado específicamente para tu agencia",
+      "feature_2": "Funcionalidades personalizadas según tus requisitos",
+      "feature_3": "Integración completa con Tesoro CRM vía API",
+      "feature_4": "Hosting incluido en Cloudflare (valor €250/año)"
+    },
+    "option_3": {
+      "title": "Tu propio sitio con API",
+      "price": "Acceso API gratuito",
+      "description": "¿Ya tienes tu propio sitio web o equipo de desarrollo? Conecta tu sitio con Tesoro CRM mediante nuestra API.",
+      "feature_1": "Acceso completo a nuestra API REST para propiedades y contactos",
+      "feature_2": "Documentación completa y ejemplos de código",
+      "feature_3": "Mantén el control total de tu sitio web existente",
+      "feature_4": "Sin costes adicionales, API incluida en tu suscripción"
+    },
+    "hosting": {
+      "title": "Hosting profesional incluido",
+      "description": "Con las opciones 1 y 2 obtienes hosting profesional en Cloudflare Pages. Valor €250/año, incluido en el servicio.",
+      "benefit_1": "CDN global para carga ultrarrápida en todo el mundo",
+      "benefit_2": "Certificados SSL gratuitos y renovación automática",
+      "benefit_3": "Protección DDoS y firewall de aplicaciones web",
+      "benefit_4": "Copias de seguridad diarias y recuperación ante desastres",
+      "value_note": "Todo esto por solo el coste del servicio de desarrollo - sin costes de hosting adicionales"
+    },
+    "showcase": {
+      "title": "Resultados que puedes medir",
+      "description": "Nuestros sitios no solo son bonitos, también funcionan. Estos son los resultados que puedes esperar.",
+      "quality": "100/100",
+      "speed": "< 1s",
+      "conversion": "+40%"
+    },
+    "cta": {
+      "title": "¿Listo para un sitio web profesional?",
+      "description": "Hablemos de lo que necesitas. Sin compromiso, sin presión. Solo una conversación honesta sobre tu sitio web.",
+      "cta_primary": "Programar llamada",
+      "cta_secondary": "Ver ejemplos"
+    }
   }
 }
