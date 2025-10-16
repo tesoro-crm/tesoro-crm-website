@@ -194,7 +194,7 @@
       "question_1": "¿Cuánto tiempo lleva la implementación?",
       "answer_1": "La mayoría de los clientes están operativos en 24 horas. Nuestro asistente de incorporación importa sus datos existentes y configura todo automáticamente.",
       "question_2": "¿Qué plataformas MLS son compatibles?",
-      "answer_2": "Nos integramos con todas las principales plataformas: Funda, Idealista, Kyero, Fotocasa y más de 20 otras. Las integraciones personalizadas son posibles.",
+      "answer_2": "Nos integramos con todas las principales plataformas: Idealista, Kyero, Fotocasa y más de 20 otras. Las integraciones personalizadas son posibles.",
       "question_3": "¿Están seguros mis datos?",
       "answer_3": "Absolutamente. Cumplimos con GDPR, usamos cifrado de extremo a extremo y alojamos en centros de datos de la UE. Certificado SOC 2 Tipo II.",
       "question_4": "¿Puedo cancelar en cualquier momento?",
@@ -429,7 +429,7 @@
         "feature_1_title": "Sincronización en Tiempo Real",
         "feature_1_description": "Sincronización automática de listados, actualizaciones y datos del mercado",
         "feature_2_title": "Soporte Multi-Plataforma",
-        "feature_2_description": "Integración con Funda, Idealista, Kyero, Fotocasa y más de 20 plataformas",
+        "feature_2_description": "Integración con Idealista, Kyero, Fotocasa y más de 20 plataformas",
         "feature_3_title": "Detección de Duplicados",
         "feature_3_description": "Detección automática y fusión de listados duplicados"
       },
@@ -514,10 +514,8 @@
       "integration_2_category": "Email",
       "integration_3_name": "Sistemas MLS",
       "integration_3_category": "Propiedades",
-      "integration_4_name": "Funda",
+      "integration_4_name": "Idealista",
       "integration_4_category": "Propiedades",
-      "integration_5_name": "Idealista",
-      "integration_5_category": "Propiedades",
       "integration_6_name": "WhatsApp",
       "integration_6_category": "Mensajería",
       "integration_7_name": "Google Calendar",
@@ -582,6 +580,383 @@
       "notify_placeholder": "tu@email.com",
       "notify_button": "Avísame",
       "notify_privacy": "Solo te contactaremos sobre el lanzamiento de OpenAPI. Sin spam."
+    }
+  },
+  "integrations": {
+    "meta_title": "Integraciones de Tesoro CRM - Conecta tus herramientas",
+    "meta_description": "Conecta Tesoro CRM con Gmail, Outlook, WhatsApp, sistemas MLS y más. Integraciones sin problemas con todas las principales plataformas inmobiliarias.",
+    "hero": {
+      "badge": "Integraciones",
+      "title": "Conecta con las herramientas que ya usas",
+      "description": "Tesoro CRM se integra perfectamente con tus herramientas y plataformas favoritas. Trabaja de forma más inteligente, no más dura."
+    },
+    "categories": {
+      "email": "Email",
+      "messaging": "Mensajería",
+      "calendar": "Calendario",
+      "portals": "Portales inmobiliarios",
+      "mls": "Sistemas MLS"
+    },
+    "gmail_description": "Sincronización completa con Gmail. Todos los emails se rastrean y vinculan automáticamente a contactos y deals.",
+    "outlook_description": "Integración nativa con Outlook. Envía y recibe emails directamente desde Tesoro CRM.",
+    "whatsapp_description": "Integración con WhatsApp Business para comunicación con clientes y actualizaciones de deals.",
+    "google_calendar_description": "Sincroniza citas y visitas con Google Calendar automáticamente.",
+    "idealista_description": "Sincroniza propiedades con Idealista automáticamente. Actualizaciones en tiempo real.",
+    "kyero_description": "Conecta con Kyero para exposición internacional de propiedades.",
+    "mls_description": "Importa y exporta propiedades vía MLS XML. Compatible con todos los sistemas principales.",
+    "missing_question": "¿Falta una integración?",
+    "missing_cta": "Solicitar integración",
+    "benefits": {
+      "title": "¿Por qué integrar?",
+      "description": "Ahorra tiempo y reduce el trabajo manual con integraciones sin problemas.",
+      "benefit_1_title": "Ahorra tiempo",
+      "benefit_1_description": "Automatiza la entrada de datos y sincronización en todas tus herramientas.",
+      "benefit_2_title": "Mantente sincronizado",
+      "benefit_2_description": "Las actualizaciones en tiempo real aseguran que todos tus sistemas estén siempre sincronizados.",
+      "benefit_3_title": "Trabaja desde un solo lugar",
+      "benefit_3_description": "Accede a todo desde Tesoro CRM sin cambiar entre herramientas."
+    },
+    "cta": {
+      "title": "¿Listo para conectar tus herramientas?",
+      "description": "Comienza tu prueba gratuita e integra con todas tus plataformas favoritas.",
+      "cta_primary": "Comenzar prueba gratuita",
+      "cta_secondary": "Ver precios"
+    }
+  },
+  "support": {
+    "meta_title": "Soporte de Tesoro CRM - Obtén ayuda",
+    "meta_description": "Obtén ayuda con Tesoro CRM. Accede a nuestra base de conocimientos, contacta con soporte, o mejora a soporte premium para asistencia prioritaria.",
+    "hero": {
+      "badge": "Soporte",
+      "title": "Estamos aquí para ayudarte",
+      "description": "Obtén la ayuda que necesitas para aprovechar al máximo Tesoro CRM. Múltiples canales de soporte disponibles."
+    },
+    "resources": {
+      "knowledge_base_title": "Base de conocimientos",
+      "knowledge_base_description": "Navega por nuestras guías completas y tutoriales para obtener respuestas rápidamente.",
+      "knowledge_base_cta": "Explorar artículos",
+      "email_title": "Soporte por email",
+      "email_description": "Envíanos un email y te responderemos en un plazo de 24 horas.",
+      "chat_title": "Chat en vivo",
+      "chat_description": "Chatea con nuestro equipo de soporte en tiempo real durante el horario de atención.",
+      "chat_cta": "Iniciar chat"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a preguntas comunes sobre el uso de Tesoro CRM.",
+      "question_1": "¿Cómo restablezco mi contraseña?",
+      "answer_1": "Haz clic en 'Olvidé mi contraseña' en la página de inicio de sesión. Recibirás un enlace de restablecimiento por email en minutos.",
+      "question_2": "¿Cómo añado nuevos usuarios a mi cuenta?",
+      "answer_2": "Ve a Configuración > Equipo > Añadir usuario. Puedes añadir hasta 10 usuarios en el plan estándar.",
+      "question_3": "¿Cómo importo mis contactos existentes?",
+      "answer_3": "Usa la herramienta de importación en Contactos. Soportamos CSV, Excel e importaciones directas desde la mayoría de sistemas CRM.",
+      "question_4": "¿Cómo conecto mi email?",
+      "answer_4": "Ve a Configuración > Integraciones > Email. Sigue los pasos para conectar Gmail u Outlook con OAuth2.",
+      "question_5": "¿Cómo cancelo mi suscripción?",
+      "answer_5": "Ve a Configuración > Facturación > Cancelar suscripción. Puedes cancelar en cualquier momento y exportar tus datos primero.",
+      "question_6": "¿Ofrecen asistencia con la migración de datos?",
+      "answer_6": "Sí, nuestro servicio de onboarding incluye migración de datos desde tu CRM actual. Contáctanos para conocer los precios.",
+      "more_questions": "¿Todavía tienes preguntas?",
+      "contact_cta": "Contactar soporte"
+    },
+    "premium": {
+      "badge": "Soporte premium",
+      "title": "¿Necesitas soporte prioritario?",
+      "description": "Actualiza a soporte premium para tiempos de respuesta más rápidos y asistencia dedicada.",
+      "feature_1": "Tiempo de respuesta menor a 1 hora",
+      "feature_2": "Gestor de cuenta dedicado",
+      "feature_3": "Llamadas de revisión mensuales",
+      "feature_4": "Solicitudes de funcionalidades prioritarias",
+      "price": "€249",
+      "price_period": "/mes",
+      "cta": "Actualizar a premium"
+    },
+    "cta": {
+      "title": "¿Listo para comenzar?",
+      "description": "Comienza tu prueba gratuita y experimenta Tesoro CRM con soporte completo incluido.",
+      "cta_primary": "Comenzar prueba gratuita"
+    }
+  },
+  "docs": {
+    "meta_title": "Documentación de Tesoro CRM - Aprende a usar Tesoro",
+    "meta_description": "Documentación completa para Tesoro CRM. Guías, tutoriales y referencia de API para ayudarte a aprovechar al máximo la plataforma.",
+    "hero": {
+      "badge": "Documentación",
+      "title": "Todo lo que necesitas saber",
+      "description": "Guías completas y tutoriales para ayudarte a dominar Tesoro CRM.",
+      "cta": "Explorar documentación"
+    },
+    "categories": {
+      "title": "Categorías de documentación",
+      "description": "Encuentra la información que necesitas organizada por tema.",
+      "getting_started_title": "Primeros pasos",
+      "getting_started_description": "¿Nuevo en Tesoro? Comienza aquí con guías de configuración y tutoriales básicos.",
+      "contacts_title": "Gestión de contactos",
+      "contacts_description": "Aprende a gestionar contactos, leads y relaciones con clientes.",
+      "properties_title": "Gestión de propiedades",
+      "properties_description": "Añade, edita y gestiona propiedades. Aprende sobre integración MLS.",
+      "deals_title": "Pipeline de deals",
+      "deals_description": "Domina el pipeline de deals y cierra más ventas eficientemente.",
+      "matching_title": "Matching inteligente",
+      "matching_description": "Usa el matching con IA para conectar propiedades con los clientes correctos.",
+      "integrations_title": "Integraciones",
+      "integrations_description": "Conecta Tesoro con Gmail, Outlook, WhatsApp y más."
+    },
+    "quick_links": {
+      "title": "Enlaces rápidos",
+      "quickstart_title": "Guía de inicio rápido",
+      "quickstart_description": "Ponte en marcha con Tesoro CRM en 15 minutos.",
+      "quickstart_cta": "Iniciar guía",
+      "api_title": "Referencia de API",
+      "api_description": "Construye integraciones personalizadas con nuestra API REST.",
+      "api_cta": "Ver documentación de API",
+      "integrations_title": "Guías de integración",
+      "integrations_description": "Guías paso a paso para conectar tus herramientas favoritas.",
+      "integrations_cta": "Ver integraciones",
+      "support_title": "Obtener soporte",
+      "support_description": "¿No encuentras lo que buscas? Contacta con nuestro equipo de soporte.",
+      "support_cta": "Contactar soporte"
+    },
+    "note": {
+      "title": "Documentación completa en la base de conocimientos",
+      "description": "Toda nuestra documentación está disponible en la base de conocimientos con artículos buscables, tutoriales en vídeo y guías paso a paso.",
+      "cta": "Visitar base de conocimientos"
+    },
+    "cta": {
+      "title": "¿Listo para comenzar?",
+      "description": "Pon en práctica tus conocimientos. Comienza tu prueba gratuita hoy.",
+      "cta_primary": "Comenzar prueba gratuita"
+    }
+  },
+  "about": {
+    "meta_title": "Acerca de Tesoro CRM - Nuestra misión y valores",
+    "meta_description": "Conoce Tesoro CRM. Lanzado en enero 2025, estamos construyendo el mejor CRM para agencias inmobiliarias mediante co-creación con profesionales.",
+    "hero": {
+      "badge": "Acerca de nosotros",
+      "title": "Construyendo el mejor CRM para inmobiliarias",
+      "description": "Tesoro CRM se lanzó en enero 2025 con la misión de transformar cómo trabajan las agencias inmobiliarias."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "description": "Estamos construyendo un CRM que a los profesionales inmobiliarios realmente les encanta usar. Al trabajar estrechamente con agentes y agencias, creamos funcionalidades que resuelven problemas reales y entregan resultados medibles."
+    },
+    "story": {
+      "badge": "Nuestra historia",
+      "title": "Nuevo en el mercado, construido con experiencia",
+      "paragraph_1": "Tesoro CRM se lanzó en enero 2025, pero nuestro equipo aporta décadas de experiencia en tecnología inmobiliaria y desarrollo de CRM.",
+      "paragraph_2": "Vimos que los CRMs existentes eran demasiado complejos, demasiado caros, o carecían de funcionalidades críticas que los profesionales inmobiliarios necesitan. Así que decidimos construir algo mejor.",
+      "paragraph_3": "Al trabajar directamente con agencias inmobiliarias desde el primer día, estamos creando un CRM que resuelve problemas reales y se integra perfectamente en tu flujo de trabajo.",
+      "stat_1_value": "Ene 2025",
+      "stat_1_label": "Lanzado",
+      "stat_2_value": "20+",
+      "stat_2_label": "Agencias early adopter",
+      "stat_3_value": "3 países",
+      "stat_3_label": "España, Países Bajos, Bélgica"
+    },
+    "cocreation": {
+      "title": "Construido mediante co-creación",
+      "description": "No construimos en aislamiento. Cada funcionalidad se desarrolla con input de profesionales inmobiliarios que usan Tesoro diariamente.",
+      "benefit_1_title": "Tu voz importa",
+      "benefit_1_description": "Las solicitudes de funcionalidades se convierten en realidad en semanas, no meses. Escuchamos y actuamos rápido.",
+      "benefit_2_title": "Desarrollo rápido",
+      "benefit_2_description": "Actualizaciones semanales y nuevas funcionalidades basadas en feedback real de usuarios reales.",
+      "benefit_3_title": "Crece con nosotros",
+      "benefit_3_description": "Los early adopters dan forma a la hoja de ruta del producto y obtienen beneficios exclusivos."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "description": "Los principios que guían cómo construimos y apoyamos Tesoro CRM.",
+      "value_1_title": "Cliente primero",
+      "value_1_description": "Cada decisión comienza con lo que es mejor para nuestros clientes. Tu éxito es nuestro éxito.",
+      "value_2_title": "Muévete rápido",
+      "value_2_description": "Lanzamos actualizaciones semanalmente, no anualmente. Las buenas ideas se convierten en funcionalidades en semanas.",
+      "value_3_title": "Precios transparentes",
+      "value_3_description": "Un precio simple, todo incluido. Sin costos ocultos ni cargos sorpresa.",
+      "value_4_title": "Construido para inmobiliarias",
+      "value_4_description": "No construimos un CRM genérico. Cada funcionalidad está diseñada específicamente para profesionales inmobiliarios."
+    },
+    "cta": {
+      "title": "Únete a nuestra creciente comunidad",
+      "description": "Conviértete en early adopter y ayuda a dar forma al futuro del CRM inmobiliario.",
+      "cta_primary": "Comenzar prueba gratuita",
+      "cta_secondary": "Contáctanos"
+    }
+  },
+  "privacy": {
+    "meta_title": "Política de privacidad - Tesoro CRM",
+    "meta_description": "Política de privacidad de Tesoro CRM. Aprende cómo recopilamos, usamos y protegemos tus datos en cumplimiento con el RGPD.",
+    "hero": {
+      "badge": "Legal",
+      "title": "Política de privacidad",
+      "last_updated": "Última actualización: 16 de enero de 2025",
+      "description": "Esta política de privacidad explica cómo Tesoro recopila, usa y protege tus datos personales."
+    },
+    "section_1": {
+      "title": "Introducción",
+      "paragraph_1": "Tesoro CRM ('nosotros', 'nuestro') está comprometido a proteger tu privacidad y datos personales. Esta política de privacidad explica cómo recopilamos, usamos, almacenamos y protegemos tu información cuando usas nuestros servicios.",
+      "paragraph_2": "Al usar Tesoro CRM, aceptas la recopilación y uso de información de acuerdo con esta política."
+    },
+    "section_2": {
+      "title": "Responsable del tratamiento de datos",
+      "paragraph_1": "El responsable del tratamiento de datos responsable de tus datos personales es:",
+      "company_name": "Tesoro CRM B.V.",
+      "email": "Email: privacy@tesoro.estate",
+      "address": "Dirección: Ámsterdam, Países Bajos"
+    },
+    "section_3": {
+      "title": "Datos que recopilamos",
+      "paragraph_1": "Recopilamos los siguientes tipos de datos personales:",
+      "subsection_1_title": "Información de la cuenta",
+      "item_1": "Nombre, dirección de email, número de teléfono",
+      "item_2": "Nombre y dirección de la empresa",
+      "item_3": "Información de pago (procesada de forma segura por nuestro proveedor de pagos)",
+      "item_4": "Credenciales de cuenta y datos de autenticación",
+      "subsection_2_title": "Datos de uso",
+      "item_5": "Datos de registro (dirección IP, tipo de navegador, páginas visitadas)",
+      "item_6": "Información del dispositivo (tipo de dispositivo, sistema operativo)",
+      "item_7": "Cookies y tecnologías de rastreo similares"
+    },
+    "section_4": {
+      "title": "Cómo usamos tus datos",
+      "paragraph_1": "Usamos tus datos personales para los siguientes propósitos:",
+      "item_1": "Proporcionar y mantener nuestro servicio CRM",
+      "item_2": "Procesar pagos y gestionar suscripciones",
+      "item_3": "Comunicarnos contigo sobre actualizaciones del servicio y soporte",
+      "item_4": "Mejorar y optimizar nuestra plataforma",
+      "item_5": "Cumplir con obligaciones legales"
+    },
+    "section_5": {
+      "title": "Almacenamiento y seguridad de datos",
+      "paragraph_1": "Tus datos se almacenan de forma segura en centros de datos de la UE con cifrado estándar de la industria y medidas de seguridad.",
+      "paragraph_2": "Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos contra acceso no autorizado, alteración, divulgación o destrucción.",
+      "paragraph_3": "Retenemos tus datos solo el tiempo necesario para proporcionar nuestros servicios y cumplir con obligaciones legales."
+    },
+    "section_6": {
+      "title": "Compartir datos",
+      "paragraph_1": "No vendemos tus datos personales. Podemos compartir tus datos con:",
+      "item_1": "Proveedores de servicios que nos ayudan a operar nuestra plataforma (hosting, procesamiento de pagos)",
+      "item_2": "Autoridades policiales o regulatorias cuando lo requiera la ley",
+      "item_3": "Terceros con tu consentimiento explícito"
+    },
+    "section_7": {
+      "title": "Tus derechos (RGPD)",
+      "paragraph_1": "Bajo el RGPD, tienes los siguientes derechos:",
+      "item_1": "Derecho de acceso a tus datos personales",
+      "item_2": "Derecho de rectificación de datos inexactos",
+      "item_3": "Derecho al olvido ('derecho a ser olvidado')",
+      "item_4": "Derecho a restringir el procesamiento",
+      "item_5": "Derecho a la portabilidad de datos",
+      "item_6": "Derecho a oponerse al procesamiento"
+    },
+    "section_8": {
+      "title": "Cookies",
+      "paragraph_1": "Usamos cookies y tecnologías de rastreo similares para mejorar tu experiencia en nuestra plataforma. Puedes controlar las cookies a través de la configuración de tu navegador.",
+      "paragraph_2": "Las cookies esenciales son necesarias para que la plataforma funcione. Las cookies analíticas nos ayudan a entender cómo los usuarios interactúan con nuestro servicio."
+    },
+    "section_9": {
+      "title": "Cambios a esta política",
+      "paragraph_1": "Podemos actualizar esta política de privacidad de vez en cuando. Te notificaremos de cualquier cambio significativo por email o a través de nuestra plataforma."
+    },
+    "section_10": {
+      "title": "Contáctanos",
+      "paragraph_1": "Si tienes preguntas sobre esta política de privacidad o quieres ejercer tus derechos, contáctanos:",
+      "email_label": "Email:",
+      "address_label": "Dirección:",
+      "address": "Tesoro CRM B.V., Ámsterdam, Países Bajos"
+    }
+  },
+  "terms": {
+    "meta_title": "Términos y condiciones - Tesoro CRM",
+    "meta_description": "Términos y condiciones para usar Tesoro CRM. Lee sobre los términos del servicio, derechos de uso, pago y políticas de cancelación.",
+    "hero": {
+      "badge": "Legal",
+      "title": "Términos y condiciones",
+      "last_updated": "Última actualización: 16 de enero de 2025",
+      "description": "Estos términos y condiciones rigen tu uso de los servicios de Tesoro CRM."
+    },
+    "section_1": {
+      "title": "Aceptación de los términos",
+      "paragraph_1": "Al acceder o usar Tesoro CRM, aceptas estar sujeto a estos términos y condiciones y a nuestra política de privacidad.",
+      "paragraph_2": "Si no aceptas estos términos, no puedes acceder o usar nuestros servicios."
+    },
+    "section_2": {
+      "title": "Descripción del servicio",
+      "paragraph_1": "Tesoro CRM proporciona una plataforma de gestión de relaciones con clientes basada en la nube para profesionales inmobiliarios, que incluye:",
+      "item_1": "Gestión de contactos y leads",
+      "item_2": "Gestión de propiedades y matching",
+      "item_3": "Pipeline de deals y automatización de flujo de trabajo",
+      "item_4": "Integraciones de email y calendario"
+    },
+    "section_3": {
+      "title": "Cuentas de usuario",
+      "paragraph_1": "Eres responsable de mantener la confidencialidad de las credenciales de tu cuenta y de todas las actividades que ocurran bajo tu cuenta.",
+      "paragraph_2": "Debes proporcionar información precisa y completa al crear tu cuenta y mantener esta información actualizada.",
+      "paragraph_3": "Debes notificarnos inmediatamente de cualquier acceso no autorizado a tu cuenta."
+    },
+    "section_4": {
+      "title": "Uso aceptable",
+      "paragraph_1": "Aceptas no usar Tesoro CRM para:",
+      "item_1": "Violar cualquier ley o regulación",
+      "item_2": "Infringir derechos de propiedad intelectual",
+      "item_3": "Transmitir código malicioso o virus",
+      "item_4": "Intentar obtener acceso no autorizado a nuestros sistemas",
+      "item_5": "Usar el servicio para cualquier propósito fraudulento o ilegal"
+    },
+    "section_5": {
+      "title": "Términos de pago",
+      "paragraph_1": "Tesoro CRM se ofrece mediante suscripción a €99 por mes por oficina (hasta 10 usuarios).",
+      "paragraph_2": "Las suscripciones se facturan mensualmente por adelantado. Los pagos se procesan de forma segura a través de nuestro proveedor de pagos.",
+      "paragraph_3": "Todas las tarifas no son reembolsables excepto según lo requiera la ley o como se indique expresamente en estos términos.",
+      "paragraph_4": "Nos reservamos el derecho de cambiar nuestros precios con 30 días de aviso a los clientes existentes."
+    },
+    "section_6": {
+      "title": "Prueba gratuita",
+      "paragraph_1": "Ofrecemos una prueba gratuita de 14 días para nuevos clientes. No se requiere tarjeta de crédito para iniciar la prueba.",
+      "paragraph_2": "Al final del período de prueba, tu cuenta se convertirá automáticamente en una suscripción de pago a menos que canceles."
+    },
+    "section_7": {
+      "title": "Cancelación y reembolsos",
+      "paragraph_1": "Puedes cancelar tu suscripción en cualquier momento. La cancelación tiene efecto al final de tu período de facturación actual.",
+      "paragraph_2": "Conservarás el acceso al servicio hasta el final de tu período pagado. No se proporcionan reembolsos por meses parciales."
+    },
+    "section_8": {
+      "title": "Disponibilidad del servicio",
+      "paragraph_1": "Nos esforzamos por mantener un 99.9% de tiempo de actividad pero no garantizamos acceso ininterrumpido al servicio.",
+      "paragraph_2": "Podemos realizar mantenimiento programado con aviso previo cuando sea posible."
+    },
+    "section_9": {
+      "title": "Propiedad y exportación de datos",
+      "paragraph_1": "Conservas todos los derechos sobre los datos que ingresas en Tesoro CRM. No reclamamos propiedad de los datos de tus clientes, contactos o propiedades.",
+      "paragraph_2": "Puedes exportar tus datos en cualquier momento en formato CSV o JSON."
+    },
+    "section_10": {
+      "title": "Limitación de responsabilidad",
+      "paragraph_1": "Tesoro CRM se proporciona 'tal cual' sin garantías de ningún tipo. No somos responsables de ningún daño indirecto, incidental o consecuente.",
+      "paragraph_2": "Nuestra responsabilidad total hacia ti por cualquier reclamación relacionada con el servicio está limitada a la cantidad que nos pagaste en los 12 meses previos a la reclamación."
+    },
+    "section_11": {
+      "title": "Indemnización",
+      "paragraph_1": "Aceptas indemnizar y eximir de responsabilidad a Tesoro CRM de cualquier reclamación, daño o gasto que surja de tu uso del servicio o violación de estos términos."
+    },
+    "section_12": {
+      "title": "Terminación",
+      "paragraph_1": "Podemos suspender o terminar tu cuenta si violas estos términos o participas en actividad fraudulenta.",
+      "paragraph_2": "Al terminar, perderás el acceso al servicio y tus datos pueden ser eliminados después de 30 días."
+    },
+    "section_13": {
+      "title": "Cambios a los términos",
+      "paragraph_1": "Podemos modificar estos términos en cualquier momento. Te notificaremos de cambios significativos por email o a través de nuestra plataforma. El uso continuado del servicio después de los cambios constituye aceptación de los nuevos términos."
+    },
+    "section_14": {
+      "title": "Ley aplicable",
+      "paragraph_1": "Estos términos se rigen por las leyes de los Países Bajos. Cualquier disputa se resolverá en los tribunales de Ámsterdam."
+    },
+    "section_15": {
+      "title": "Información de contacto",
+      "paragraph_1": "Si tienes preguntas sobre estos términos, contáctanos:",
+      "email_label": "Email:",
+      "address_label": "Dirección:",
+      "address": "Tesoro CRM B.V., Ámsterdam, Países Bajos"
     }
   }
 }

@@ -1,0 +1,181 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const integrations = [
+  {
+    name: 'Gmail',
+    category: t('integrations.categories.email', locale),
+    description: t('integrations.gmail_description', locale),
+    icon: 'email'
+  },
+  {
+    name: 'Outlook',
+    category: t('integrations.categories.email', locale),
+    description: t('integrations.outlook_description', locale),
+    icon: 'mail'
+  },
+  {
+    name: 'WhatsApp',
+    category: t('integrations.categories.messaging', locale),
+    description: t('integrations.whatsapp_description', locale),
+    icon: 'chat'
+  },
+  {
+    name: 'Google Calendar',
+    category: t('integrations.categories.calendar', locale),
+    description: t('integrations.google_calendar_description', locale),
+    icon: 'calendar_today'
+  },
+  {
+    name: 'Idealista',
+    category: t('integrations.categories.portals', locale),
+    description: t('integrations.idealista_description', locale),
+    icon: 'apartment'
+  },
+  {
+    name: 'Kyero',
+    category: t('integrations.categories.portals', locale),
+    description: t('integrations.kyero_description', locale),
+    icon: 'villa'
+  },
+  {
+    name: 'MLS Systems',
+    category: t('integrations.categories.mls', locale),
+    description: t('integrations.mls_description', locale),
+    icon: 'sync'
+  }
+];
+---
+
+<Layout
+  title={t('integrations.meta_title', locale)}
+  description={t('integrations.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('integrations.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('integrations.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('integrations.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Integrations Grid -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {integrations.map((integration) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                <span class="icon text-primary">{integration.icon}</span>
+              </div>
+              <div class="flex-1">
+                <Badge variant="neutral" size="sm" class="mb-2">
+                  {integration.category}
+                </Badge>
+                <h3 class="text-xl font-semibold text-neutral-900 mb-2">
+                  {integration.name}
+                </h3>
+                <p class="text-sm text-neutral-700">
+                  {integration.description}
+                </p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-lg text-neutral-700 mb-4">
+          {t('integrations.missing_question', locale)}
+        </p>
+        <Button variant="outline" href={getLocalizedPath('/contact', locale)}>
+          {t('integrations.missing_cta', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('integrations.benefits.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('integrations.benefits.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">speed</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('integrations.benefits.benefit_1_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('integrations.benefits.benefit_1_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">sync</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('integrations.benefits.benefit_2_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('integrations.benefits.benefit_2_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">hub</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('integrations.benefits.benefit_3_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('integrations.benefits.benefit_3_description', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('integrations.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('integrations.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
+          {t('integrations.cta.cta_primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/pricing', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('integrations.cta.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

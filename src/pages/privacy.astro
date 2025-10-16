@@ -1,0 +1,276 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+---
+
+<Layout
+  title={t('privacy.meta_title', locale)}
+  description={t('privacy.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Badge variant="neutral" size="md" class="mb-6">
+        {t('privacy.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('privacy.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg text-neutral-700 mb-4">
+        {t('privacy.hero.last_updated', locale)}
+      </p>
+
+      <p class="text-lg text-neutral-700">
+        {t('privacy.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="prose prose-lg max-w-none">
+        <!-- Section 1: Introduction -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_1.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_1.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('privacy.section_1.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 2: Data Controller -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_2.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_2.paragraph_1', locale)}
+          </p>
+          <div class="bg-neutral-50 p-4 rounded-lg">
+            <p class="text-sm text-neutral-700 mb-2">
+              <strong>{t('privacy.section_2.company_name', locale)}</strong>
+            </p>
+            <p class="text-sm text-neutral-700 mb-2">
+              {t('privacy.section_2.email', locale)}
+            </p>
+            <p class="text-sm text-neutral-700">
+              {t('privacy.section_2.address', locale)}
+            </p>
+          </div>
+        </Card>
+
+        <!-- Section 3: Data Collection -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_3.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_3.paragraph_1', locale)}
+          </p>
+
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('privacy.section_3.subsection_1_title', locale)}
+          </h3>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_4', locale)}</span>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('privacy.section_3.subsection_2_title', locale)}
+          </h3>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_5', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_6', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_3.item_7', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 4: Data Usage -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_4.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_4.paragraph_1', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_4.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_4.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_4.item_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_4.item_4', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_4.item_5', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 5: Data Storage -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_5.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_5.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_5.paragraph_2', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('privacy.section_5.paragraph_3', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 6: Data Sharing -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_6.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_6.paragraph_1', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_6.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_6.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_6.item_3', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 7: Your Rights -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_7.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_7.paragraph_1', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_4', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_5', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('privacy.section_7.item_6', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 8: Cookies -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_8.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_8.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('privacy.section_8.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 9: Changes -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_9.title', locale)}
+          </h2>
+          <p class="text-neutral-700">
+            {t('privacy.section_9.paragraph_1', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 10: Contact -->
+        <Card variant="default" padding="lg">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('privacy.section_10.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('privacy.section_10.paragraph_1', locale)}
+          </p>
+          <div class="bg-neutral-50 p-4 rounded-lg">
+            <p class="text-sm text-neutral-700 mb-2">
+              <strong>{t('privacy.section_10.email_label', locale)}</strong> <a href="mailto:privacy@tesoro.estate" class="text-primary hover:text-primary-accent">privacy@tesoro.estate</a>
+            </p>
+            <p class="text-sm text-neutral-700">
+              <strong>{t('privacy.section_10.address_label', locale)}</strong> {t('privacy.section_10.address', locale)}
+            </p>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+</Layout>

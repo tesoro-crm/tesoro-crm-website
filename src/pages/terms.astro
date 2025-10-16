@@ -1,0 +1,277 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+---
+
+<Layout
+  title={t('terms.meta_title', locale)}
+  description={t('terms.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Badge variant="neutral" size="md" class="mb-6">
+        {t('terms.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('terms.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg text-neutral-700 mb-4">
+        {t('terms.hero.last_updated', locale)}
+      </p>
+
+      <p class="text-lg text-neutral-700">
+        {t('terms.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="prose prose-lg max-w-none">
+        <!-- Section 1: Agreement -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_1.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_1.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_1.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 2: Service Description -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_2.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_2.paragraph_1', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('terms.section_2.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('terms.section_2.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('terms.section_2.item_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-primary flex-shrink-0">check_circle</span>
+              <span class="text-neutral-700">{t('terms.section_2.item_4', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 3: User Accounts -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_3.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_3.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_3.paragraph_2', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_3.paragraph_3', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 4: Usage Rights -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_4.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_4.paragraph_1', locale)}
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-error flex-shrink-0">cancel</span>
+              <span class="text-neutral-700">{t('terms.section_4.item_1', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-error flex-shrink-0">cancel</span>
+              <span class="text-neutral-700">{t('terms.section_4.item_2', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-error flex-shrink-0">cancel</span>
+              <span class="text-neutral-700">{t('terms.section_4.item_3', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-error flex-shrink-0">cancel</span>
+              <span class="text-neutral-700">{t('terms.section_4.item_4', locale)}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="icon icon-sm text-error flex-shrink-0">cancel</span>
+              <span class="text-neutral-700">{t('terms.section_4.item_5', locale)}</span>
+            </li>
+          </ul>
+        </Card>
+
+        <!-- Section 5: Payment Terms -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_5.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_5.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_5.paragraph_2', locale)}
+          </p>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_5.paragraph_3', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_5.paragraph_4', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 6: Free Trial -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_6.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_6.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_6.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 7: Cancellation -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_7.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_7.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_7.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 8: Service Availability -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_8.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_8.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_8.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 9: Data Ownership -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_9.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_9.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_9.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 10: Limitations of Liability -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_10.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_10.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_10.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 11: Indemnification -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_11.title', locale)}
+          </h2>
+          <p class="text-neutral-700">
+            {t('terms.section_11.paragraph_1', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 12: Termination -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_12.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_12.paragraph_1', locale)}
+          </p>
+          <p class="text-neutral-700">
+            {t('terms.section_12.paragraph_2', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 13: Changes to Terms -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_13.title', locale)}
+          </h2>
+          <p class="text-neutral-700">
+            {t('terms.section_13.paragraph_1', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 14: Governing Law -->
+        <Card variant="default" padding="lg" class="mb-8">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_14.title', locale)}
+          </h2>
+          <p class="text-neutral-700">
+            {t('terms.section_14.paragraph_1', locale)}
+          </p>
+        </Card>
+
+        <!-- Section 15: Contact -->
+        <Card variant="default" padding="lg">
+          <h2 class="text-2xl font-display font-bold text-neutral-900 mb-4">
+            {t('terms.section_15.title', locale)}
+          </h2>
+          <p class="text-neutral-700 mb-4">
+            {t('terms.section_15.paragraph_1', locale)}
+          </p>
+          <div class="bg-neutral-50 p-4 rounded-lg">
+            <p class="text-sm text-neutral-700 mb-2">
+              <strong>{t('terms.section_15.email_label', locale)}</strong> <a href="mailto:legal@tesoro.estate" class="text-primary hover:text-primary-accent">legal@tesoro.estate</a>
+            </p>
+            <p class="text-sm text-neutral-700">
+              <strong>{t('terms.section_15.address_label', locale)}</strong> {t('terms.section_15.address', locale)}
+            </p>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -194,7 +194,7 @@
       "question_1": "How long does implementation take?",
       "answer_1": "Most customers are operational within 24 hours. Our onboarding wizard imports your existing data and configures everything automatically.",
       "question_2": "Which MLS platforms are supported?",
-      "answer_2": "We integrate with all major platforms: Funda, Idealista, Kyero, Fotocasa, and 20+ others. Custom integrations are possible.",
+      "answer_2": "We integrate with all major platforms: Idealista, Kyero, Fotocasa, and 20+ others. Custom integrations are possible.",
       "question_3": "Is my data safe?",
       "answer_3": "Absolutely. We are GDPR-compliant, use end-to-end encryption and host in EU data centers. SOC 2 Type II certified.",
       "question_4": "Can I cancel at any time?",
@@ -434,7 +434,7 @@
         "feature_1_description": "Automatic synchronization of listings, updates and market data",
         "feature_2_icon": "",
         "feature_2_title": "Multi-Platform Support",
-        "feature_2_description": "Integration with Funda, Idealista, Kyero, Fotocasa and 20+ other platforms",
+        "feature_2_description": "Integration with Idealista, Kyero, Fotocasa and 20+ other platforms",
         "feature_3_icon": "",
         "feature_3_title": "Duplicate Detection",
         "feature_3_description": "Automatic detection and merging of duplicate listings"
@@ -526,10 +526,8 @@
       "integration_2_category": "Email",
       "integration_3_name": "MLS Systems",
       "integration_3_category": "Properties",
-      "integration_4_name": "Funda",
+      "integration_4_name": "Idealista",
       "integration_4_category": "Properties",
-      "integration_5_name": "Idealista",
-      "integration_5_category": "Properties",
       "integration_6_name": "WhatsApp",
       "integration_6_category": "Messaging",
       "integration_7_name": "Google Calendar",
@@ -594,6 +592,383 @@
       "notify_placeholder": "you@email.com",
       "notify_button": "Notify Me",
       "notify_privacy": "We'll only contact you about the OpenAPI launch. No spam."
+    }
+  },
+  "integrations": {
+    "meta_title": "Tesoro CRM Integrations - Connect Your Tools",
+    "meta_description": "Connect Tesoro CRM with Gmail, Outlook, WhatsApp, MLS systems and more. Seamless integrations with all major real estate platforms.",
+    "hero": {
+      "badge": "Integrations",
+      "title": "Connect With the Tools You Already Use",
+      "description": "Tesoro CRM integrates seamlessly with your favorite tools and platforms. Work smarter, not harder."
+    },
+    "categories": {
+      "email": "Email",
+      "messaging": "Messaging",
+      "calendar": "Calendar",
+      "portals": "Property Portals",
+      "mls": "MLS Systems"
+    },
+    "gmail_description": "Full sync with Gmail. All emails automatically tracked and linked to contacts and deals.",
+    "outlook_description": "Native Outlook integration. Send and receive emails directly from Tesoro CRM.",
+    "whatsapp_description": "WhatsApp Business integration for customer communication and deal updates.",
+    "google_calendar_description": "Sync appointments and viewings with Google Calendar automatically.",
+    "idealista_description": "Sync properties with Idealista automatically. Real-time updates.",
+    "kyero_description": "Connect with Kyero for international property exposure.",
+    "mls_description": "Import and export properties via MLS XML. Compatible with all major systems.",
+    "missing_question": "Missing an integration?",
+    "missing_cta": "Request Integration",
+    "benefits": {
+      "title": "Why Integrate?",
+      "description": "Save time and reduce manual work with seamless integrations.",
+      "benefit_1_title": "Save Time",
+      "benefit_1_description": "Automate data entry and synchronization across all your tools.",
+      "benefit_2_title": "Stay Synchronized",
+      "benefit_2_description": "Real-time updates ensure all your systems are always in sync.",
+      "benefit_3_title": "Work From One Place",
+      "benefit_3_description": "Access everything from Tesoro CRM without switching between tools."
+    },
+    "cta": {
+      "title": "Ready to Connect Your Tools?",
+      "description": "Start your free trial and integrate with all your favorite platforms.",
+      "cta_primary": "Start Free Trial",
+      "cta_secondary": "View Pricing"
+    }
+  },
+  "support": {
+    "meta_title": "Tesoro CRM Support - Get Help",
+    "meta_description": "Get help with Tesoro CRM. Access our knowledge base, contact support, or upgrade to premium support for priority assistance.",
+    "hero": {
+      "badge": "Support",
+      "title": "We're Here to Help",
+      "description": "Get the help you need to make the most of Tesoro CRM. Multiple support channels available."
+    },
+    "resources": {
+      "knowledge_base_title": "Knowledge Base",
+      "knowledge_base_description": "Browse our comprehensive guides and tutorials to get answers quickly.",
+      "knowledge_base_cta": "Browse Articles",
+      "email_title": "Email Support",
+      "email_description": "Send us an email and we'll get back to you within 24 hours.",
+      "chat_title": "Live Chat",
+      "chat_description": "Chat with our support team in real-time during business hours.",
+      "chat_cta": "Start Chat"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Quick answers to common questions about using Tesoro CRM.",
+      "question_1": "How do I reset my password?",
+      "answer_1": "Click 'Forgot Password' on the login page. You'll receive a reset link via email within minutes.",
+      "question_2": "How do I add new users to my account?",
+      "answer_2": "Go to Settings > Team > Add User. You can add up to 10 users on the standard plan.",
+      "question_3": "How do I import my existing contacts?",
+      "answer_3": "Use the Import tool under Contacts. We support CSV, Excel, and direct imports from most CRM systems.",
+      "question_4": "How do I connect my email?",
+      "answer_4": "Go to Settings > Integrations > Email. Follow the steps to connect Gmail or Outlook with OAuth2.",
+      "question_5": "How do I cancel my subscription?",
+      "answer_5": "Go to Settings > Billing > Cancel Subscription. You can cancel anytime and export your data first.",
+      "question_6": "Do you offer data migration assistance?",
+      "answer_6": "Yes, our onboarding service includes data migration from your current CRM. Contact us for pricing.",
+      "more_questions": "Still have questions?",
+      "contact_cta": "Contact Support"
+    },
+    "premium": {
+      "badge": "Premium Support",
+      "title": "Need Priority Support?",
+      "description": "Upgrade to premium support for faster response times and dedicated assistance.",
+      "feature_1": "Response time under 1 hour",
+      "feature_2": "Dedicated account manager",
+      "feature_3": "Monthly review calls",
+      "feature_4": "Priority feature requests",
+      "price": "€249",
+      "price_period": "/month",
+      "cta": "Upgrade to Premium"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Start your free trial and experience Tesoro CRM with full support included.",
+      "cta_primary": "Start Free Trial"
+    }
+  },
+  "docs": {
+    "meta_title": "Tesoro CRM Documentation - Learn How to Use Tesoro",
+    "meta_description": "Complete documentation for Tesoro CRM. Guides, tutorials, and API reference to help you get the most out of the platform.",
+    "hero": {
+      "badge": "Documentation",
+      "title": "Everything You Need to Know",
+      "description": "Comprehensive guides and tutorials to help you master Tesoro CRM.",
+      "cta": "Browse Documentation"
+    },
+    "categories": {
+      "title": "Documentation Categories",
+      "description": "Find the information you need organized by topic.",
+      "getting_started_title": "Getting Started",
+      "getting_started_description": "New to Tesoro? Start here with setup guides and basic tutorials.",
+      "contacts_title": "Contact Management",
+      "contacts_description": "Learn how to manage contacts, leads, and customer relationships.",
+      "properties_title": "Property Management",
+      "properties_description": "Add, edit, and manage properties. Learn about MLS integration.",
+      "deals_title": "Deal Pipeline",
+      "deals_description": "Master the deal pipeline and close more sales efficiently.",
+      "matching_title": "Smart Matching",
+      "matching_description": "Use AI-powered matching to connect properties with the right clients.",
+      "integrations_title": "Integrations",
+      "integrations_description": "Connect Tesoro with Gmail, Outlook, WhatsApp, and more."
+    },
+    "quick_links": {
+      "title": "Quick Links",
+      "quickstart_title": "Quick Start Guide",
+      "quickstart_description": "Get up and running with Tesoro CRM in 15 minutes.",
+      "quickstart_cta": "Start Guide",
+      "api_title": "API Reference",
+      "api_description": "Build custom integrations with our REST API.",
+      "api_cta": "View API Docs",
+      "integrations_title": "Integration Guides",
+      "integrations_description": "Step-by-step guides for connecting your favorite tools.",
+      "integrations_cta": "View Integrations",
+      "support_title": "Get Support",
+      "support_description": "Can't find what you're looking for? Contact our support team.",
+      "support_cta": "Contact Support"
+    },
+    "note": {
+      "title": "Complete Documentation in Knowledge Base",
+      "description": "All our documentation is available in the Knowledge Base with searchable articles, video tutorials, and step-by-step guides.",
+      "cta": "Visit Knowledge Base"
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Put your knowledge to work. Start your free trial today.",
+      "cta_primary": "Start Free Trial"
+    }
+  },
+  "about": {
+    "meta_title": "About Tesoro CRM - Our Mission and Values",
+    "meta_description": "Learn about Tesoro CRM. Launched January 2025, we're building the best CRM for real estate agencies through co-creation with professionals.",
+    "hero": {
+      "badge": "About Us",
+      "title": "Building the Best CRM for Real Estate",
+      "description": "Tesoro CRM launched in January 2025 with a mission to transform how real estate agencies work."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We're building a CRM that real estate professionals actually love to use. By working closely with agents and agencies, we create features that solve real problems and deliver measurable results."
+    },
+    "story": {
+      "badge": "Our Story",
+      "title": "New on the Market, Built With Experience",
+      "paragraph_1": "Tesoro CRM launched in January 2025, but our team brings decades of experience in real estate technology and CRM development.",
+      "paragraph_2": "We saw that existing CRMs were either too complex, too expensive, or missing critical features that real estate professionals need. So we decided to build something better.",
+      "paragraph_3": "By working directly with real estate agencies from day one, we're creating a CRM that solves real problems and fits seamlessly into your workflow.",
+      "stat_1_value": "Jan 2025",
+      "stat_1_label": "Launched",
+      "stat_2_value": "20+",
+      "stat_2_label": "Early adopter agencies",
+      "stat_3_value": "3 countries",
+      "stat_3_label": "Spain, Netherlands, Belgium"
+    },
+    "cocreation": {
+      "title": "Built Through Co-Creation",
+      "description": "We don't build in isolation. Every feature is developed with input from real estate professionals who use Tesoro daily.",
+      "benefit_1_title": "Your Voice Matters",
+      "benefit_1_description": "Feature requests become reality in weeks, not months. We listen and act fast.",
+      "benefit_2_title": "Rapid Development",
+      "benefit_2_description": "Weekly updates and new features based on real feedback from real users.",
+      "benefit_3_title": "Grow With Us",
+      "benefit_3_description": "Early adopters shape the product roadmap and get exclusive benefits."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide how we build and support Tesoro CRM.",
+      "value_1_title": "Customer First",
+      "value_1_description": "Every decision starts with what's best for our customers. Your success is our success.",
+      "value_2_title": "Move Fast",
+      "value_2_description": "We ship updates weekly, not yearly. Good ideas become features within weeks.",
+      "value_3_title": "Transparent Pricing",
+      "value_3_description": "One simple price, everything included. No hidden fees or surprise charges.",
+      "value_4_title": "Built for Real Estate",
+      "value_4_description": "We don't build a generic CRM. Every feature is designed specifically for real estate professionals."
+    },
+    "cta": {
+      "title": "Join Our Growing Community",
+      "description": "Become an early adopter and help shape the future of real estate CRM.",
+      "cta_primary": "Start Free Trial",
+      "cta_secondary": "Contact Us"
+    }
+  },
+  "privacy": {
+    "meta_title": "Privacy Policy - Tesoro CRM",
+    "meta_description": "Privacy policy for Tesoro CRM. Learn how we collect, use, and protect your data in compliance with GDPR.",
+    "hero": {
+      "badge": "Legal",
+      "title": "Privacy Policy",
+      "last_updated": "Last updated: January 16, 2025",
+      "description": "This privacy policy explains how Tesoro collects, uses, and protects your personal data."
+    },
+    "section_1": {
+      "title": "Introduction",
+      "paragraph_1": "Tesoro CRM ('we', 'us', 'our') is committed to protecting your privacy and personal data. This privacy policy explains how we collect, use, store, and protect your information when you use our services.",
+      "paragraph_2": "By using Tesoro CRM, you agree to the collection and use of information in accordance with this policy."
+    },
+    "section_2": {
+      "title": "Data Controller",
+      "paragraph_1": "The data controller responsible for your personal data is:",
+      "company_name": "Tesoro CRM B.V.",
+      "email": "Email: privacy@tesoro.estate",
+      "address": "Address: Amsterdam, Netherlands"
+    },
+    "section_3": {
+      "title": "Data We Collect",
+      "paragraph_1": "We collect the following types of personal data:",
+      "subsection_1_title": "Account Information",
+      "item_1": "Name, email address, phone number",
+      "item_2": "Company name and address",
+      "item_3": "Payment information (processed securely by our payment provider)",
+      "item_4": "Account credentials and authentication data",
+      "subsection_2_title": "Usage Data",
+      "item_5": "Log data (IP address, browser type, pages visited)",
+      "item_6": "Device information (device type, operating system)",
+      "item_7": "Cookies and similar tracking technologies"
+    },
+    "section_4": {
+      "title": "How We Use Your Data",
+      "paragraph_1": "We use your personal data for the following purposes:",
+      "item_1": "To provide and maintain our CRM service",
+      "item_2": "To process payments and manage subscriptions",
+      "item_3": "To communicate with you about service updates and support",
+      "item_4": "To improve and optimize our platform",
+      "item_5": "To comply with legal obligations"
+    },
+    "section_5": {
+      "title": "Data Storage and Security",
+      "paragraph_1": "Your data is stored securely in EU data centers with industry-standard encryption and security measures.",
+      "paragraph_2": "We implement appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.",
+      "paragraph_3": "We retain your data only as long as necessary to provide our services and comply with legal obligations."
+    },
+    "section_6": {
+      "title": "Data Sharing",
+      "paragraph_1": "We do not sell your personal data. We may share your data with:",
+      "item_1": "Service providers who help us operate our platform (hosting, payment processing)",
+      "item_2": "Law enforcement or regulatory authorities when required by law",
+      "item_3": "Third parties with your explicit consent"
+    },
+    "section_7": {
+      "title": "Your Rights (GDPR)",
+      "paragraph_1": "Under GDPR, you have the following rights:",
+      "item_1": "Right to access your personal data",
+      "item_2": "Right to rectification of inaccurate data",
+      "item_3": "Right to erasure ('right to be forgotten')",
+      "item_4": "Right to restrict processing",
+      "item_5": "Right to data portability",
+      "item_6": "Right to object to processing"
+    },
+    "section_8": {
+      "title": "Cookies",
+      "paragraph_1": "We use cookies and similar tracking technologies to improve your experience on our platform. You can control cookies through your browser settings.",
+      "paragraph_2": "Essential cookies are necessary for the platform to function. Analytics cookies help us understand how users interact with our service."
+    },
+    "section_9": {
+      "title": "Changes to This Policy",
+      "paragraph_1": "We may update this privacy policy from time to time. We will notify you of any significant changes via email or through our platform."
+    },
+    "section_10": {
+      "title": "Contact Us",
+      "paragraph_1": "If you have questions about this privacy policy or want to exercise your rights, contact us:",
+      "email_label": "Email:",
+      "address_label": "Address:",
+      "address": "Tesoro CRM B.V., Amsterdam, Netherlands"
+    }
+  },
+  "terms": {
+    "meta_title": "Terms and Conditions - Tesoro CRM",
+    "meta_description": "Terms and conditions for using Tesoro CRM. Read about service terms, usage rights, payment, and cancellation policies.",
+    "hero": {
+      "badge": "Legal",
+      "title": "Terms and Conditions",
+      "last_updated": "Last updated: January 16, 2025",
+      "description": "These terms and conditions govern your use of Tesoro CRM services."
+    },
+    "section_1": {
+      "title": "Agreement to Terms",
+      "paragraph_1": "By accessing or using Tesoro CRM, you agree to be bound by these Terms and Conditions and our Privacy Policy.",
+      "paragraph_2": "If you do not agree to these terms, you may not access or use our services."
+    },
+    "section_2": {
+      "title": "Service Description",
+      "paragraph_1": "Tesoro CRM provides a cloud-based customer relationship management platform for real estate professionals, including:",
+      "item_1": "Contact and lead management",
+      "item_2": "Property management and matching",
+      "item_3": "Deal pipeline and workflow automation",
+      "item_4": "Email and calendar integrations"
+    },
+    "section_3": {
+      "title": "User Accounts",
+      "paragraph_1": "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.",
+      "paragraph_2": "You must provide accurate and complete information when creating your account and keep this information up to date.",
+      "paragraph_3": "You must notify us immediately of any unauthorized access to your account."
+    },
+    "section_4": {
+      "title": "Acceptable Use",
+      "paragraph_1": "You agree not to use Tesoro CRM to:",
+      "item_1": "Violate any laws or regulations",
+      "item_2": "Infringe on intellectual property rights",
+      "item_3": "Transmit malicious code or viruses",
+      "item_4": "Attempt to gain unauthorized access to our systems",
+      "item_5": "Use the service for any fraudulent or illegal purpose"
+    },
+    "section_5": {
+      "title": "Payment Terms",
+      "paragraph_1": "Tesoro CRM is offered on a subscription basis at €99 per month per office (up to 10 users).",
+      "paragraph_2": "Subscriptions are billed monthly in advance. Payments are processed securely through our payment provider.",
+      "paragraph_3": "All fees are non-refundable except as required by law or as expressly stated in these terms.",
+      "paragraph_4": "We reserve the right to change our pricing with 30 days notice to existing customers."
+    },
+    "section_6": {
+      "title": "Free Trial",
+      "paragraph_1": "We offer a 14-day free trial for new customers. No credit card is required to start the trial.",
+      "paragraph_2": "At the end of the trial period, your account will be automatically converted to a paid subscription unless you cancel."
+    },
+    "section_7": {
+      "title": "Cancellation and Refunds",
+      "paragraph_1": "You may cancel your subscription at any time. Cancellation takes effect at the end of your current billing period.",
+      "paragraph_2": "You will retain access to the service until the end of your paid period. No refunds are provided for partial months."
+    },
+    "section_8": {
+      "title": "Service Availability",
+      "paragraph_1": "We strive to maintain 99.9% uptime but do not guarantee uninterrupted access to the service.",
+      "paragraph_2": "We may perform scheduled maintenance with advance notice when possible."
+    },
+    "section_9": {
+      "title": "Data Ownership and Export",
+      "paragraph_1": "You retain all rights to the data you input into Tesoro CRM. We do not claim ownership of your customer data, contacts, or properties.",
+      "paragraph_2": "You may export your data at any time in CSV or JSON format."
+    },
+    "section_10": {
+      "title": "Limitation of Liability",
+      "paragraph_1": "Tesoro CRM is provided 'as is' without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages.",
+      "paragraph_2": "Our total liability to you for any claims related to the service is limited to the amount you paid us in the 12 months prior to the claim."
+    },
+    "section_11": {
+      "title": "Indemnification",
+      "paragraph_1": "You agree to indemnify and hold Tesoro CRM harmless from any claims, damages, or expenses arising from your use of the service or violation of these terms."
+    },
+    "section_12": {
+      "title": "Termination",
+      "paragraph_1": "We may suspend or terminate your account if you violate these terms or engage in fraudulent activity.",
+      "paragraph_2": "Upon termination, you will lose access to the service and your data may be deleted after 30 days."
+    },
+    "section_13": {
+      "title": "Changes to Terms",
+      "paragraph_1": "We may modify these terms at any time. We will notify you of significant changes via email or through our platform. Continued use of the service after changes constitutes acceptance of the new terms."
+    },
+    "section_14": {
+      "title": "Governing Law",
+      "paragraph_1": "These terms are governed by the laws of the Netherlands. Any disputes will be resolved in the courts of Amsterdam."
+    },
+    "section_15": {
+      "title": "Contact Information",
+      "paragraph_1": "If you have questions about these terms, contact us:",
+      "email_label": "Email:",
+      "address_label": "Address:",
+      "address": "Tesoro CRM B.V., Amsterdam, Netherlands"
     }
   }
 }

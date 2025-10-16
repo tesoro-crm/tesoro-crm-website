@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const values = [
+  {
+    title: t('about.values.value_1_title', locale),
+    description: t('about.values.value_1_description', locale),
+    icon: 'handshake'
+  },
+  {
+    title: t('about.values.value_2_title', locale),
+    description: t('about.values.value_2_description', locale),
+    icon: 'speed'
+  },
+  {
+    title: t('about.values.value_3_title', locale),
+    description: t('about.values.value_3_description', locale),
+    icon: 'transparency'
+  },
+  {
+    title: t('about.values.value_4_title', locale),
+    description: t('about.values.value_4_description', locale),
+    icon: 'psychology'
+  }
+];
+---
+
+<Layout
+  title={t('about.meta_title', locale)}
+  description={t('about.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('about.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('about.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('about.hero.description', locale)}
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+          {t('about.mission.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 leading-relaxed">
+          {t('about.mission.description', locale)}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <Badge variant="primary" size="sm" class="mb-4">
+            {t('about.story.badge', locale)}
+          </Badge>
+          <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+            {t('about.story.title', locale)}
+          </h2>
+          <div class="space-y-4 text-neutral-700">
+            <p>{t('about.story.paragraph_1', locale)}</p>
+            <p>{t('about.story.paragraph_2', locale)}</p>
+            <p>{t('about.story.paragraph_3', locale)}</p>
+          </div>
+        </div>
+        <div>
+          <Card variant="elevated" padding="lg" class="bg-gradient-to-br from-primary/10 to-primary-accent/10">
+            <div class="space-y-6">
+              <div>
+                <div class="text-4xl font-display font-bold text-primary mb-2">
+                  {t('about.story.stat_1_value', locale)}
+                </div>
+                <p class="text-neutral-700">{t('about.story.stat_1_label', locale)}</p>
+              </div>
+              <div>
+                <div class="text-4xl font-display font-bold text-primary mb-2">
+                  {t('about.story.stat_2_value', locale)}
+                </div>
+                <p class="text-neutral-700">{t('about.story.stat_2_label', locale)}</p>
+              </div>
+              <div>
+                <div class="text-4xl font-display font-bold text-primary mb-2">
+                  {t('about.story.stat_3_value', locale)}
+                </div>
+                <p class="text-neutral-700">{t('about.story.stat_3_label', locale)}</p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Co-Creation Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-6">
+          {t('about.cocreation.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+          {t('about.cocreation.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">forum</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('about.cocreation.benefit_1_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('about.cocreation.benefit_1_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">speed</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('about.cocreation.benefit_2_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('about.cocreation.benefit_2_description', locale)}
+          </p>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <span class="icon icon-lg text-primary mb-4">groups</span>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+            {t('about.cocreation.benefit_3_title', locale)}
+          </h3>
+          <p class="text-neutral-700">
+            {t('about.cocreation.benefit_3_description', locale)}
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('about.values.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('about.values.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {values.map((value) => (
+          <Card variant="default" padding="lg">
+            <div class="flex items-start gap-4">
+              <div class="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                <span class="icon text-primary">{value.icon}</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+                  {value.title}
+                </h3>
+                <p class="text-neutral-700">
+                  {value.description}
+                </p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('about.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('about.cta.description', locale)}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
+          {t('about.cta.cta_primary', locale)}
+        </Button>
+        <Button variant="ghost" size="lg" href={getLocalizedPath('/contact', locale)} class="border-2 border-white hover:bg-white hover:text-primary">
+          {t('about.cta.cta_secondary', locale)}
+        </Button>
+      </div>
+    </div>
+  </section>
+</Layout>

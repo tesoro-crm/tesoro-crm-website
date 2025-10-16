@@ -1,0 +1,234 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
+import type { Language } from '../i18n/config';
+
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+const categories = [
+  {
+    title: t('docs.categories.getting_started_title', locale),
+    description: t('docs.categories.getting_started_description', locale),
+    icon: 'rocket_launch',
+    link: getLocalizedPath('/knowledge-base?category=getting-started', locale)
+  },
+  {
+    title: t('docs.categories.contacts_title', locale),
+    description: t('docs.categories.contacts_description', locale),
+    icon: 'contacts',
+    link: getLocalizedPath('/knowledge-base?category=contacts', locale)
+  },
+  {
+    title: t('docs.categories.properties_title', locale),
+    description: t('docs.categories.properties_description', locale),
+    icon: 'home',
+    link: getLocalizedPath('/knowledge-base?category=properties', locale)
+  },
+  {
+    title: t('docs.categories.deals_title', locale),
+    description: t('docs.categories.deals_description', locale),
+    icon: 'handshake',
+    link: getLocalizedPath('/knowledge-base?category=deals', locale)
+  },
+  {
+    title: t('docs.categories.matching_title', locale),
+    description: t('docs.categories.matching_description', locale),
+    icon: 'psychology',
+    link: getLocalizedPath('/knowledge-base?category=matching', locale)
+  },
+  {
+    title: t('docs.categories.integrations_title', locale),
+    description: t('docs.categories.integrations_description', locale),
+    icon: 'extension',
+    link: getLocalizedPath('/knowledge-base?category=integrations', locale)
+  }
+];
+---
+
+<Layout
+  title={t('docs.meta_title', locale)}
+  description={t('docs.meta_description', locale)}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-neutral-50 to-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <Badge variant="primary" size="md" class="mb-6">
+        {t('docs.hero.badge', locale)}
+      </Badge>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-neutral-900 mb-6">
+        {t('docs.hero.title', locale)}
+      </h1>
+
+      <p class="text-lg sm:text-xl text-neutral-700 mb-8 max-w-3xl mx-auto">
+        {t('docs.hero.description', locale)}
+      </p>
+
+      <Button variant="primary" size="lg" href={getLocalizedPath('/knowledge-base', locale)}>
+        {t('docs.hero.cta', locale)}
+      </Button>
+    </div>
+  </section>
+
+  <!-- Documentation Categories -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('docs.categories.title', locale)}
+        </h2>
+        <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+          {t('docs.categories.description', locale)}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map((category) => (
+          <a href={category.link} class="group">
+            <Card variant="default" padding="lg" class="h-full transition-shadow hover:shadow-lg">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary/10 p-3 rounded-lg flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <span class="icon text-primary">{category.icon}</span>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-semibold text-neutral-900 mb-2 group-hover:text-primary transition-colors">
+                    {category.title}
+                  </h3>
+                  <p class="text-sm text-neutral-700">
+                    {category.description}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="py-16 lg:py-24 bg-neutral-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
+          {t('docs.quick_links.title', locale)}
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-3">
+            <span class="icon text-primary flex-shrink-0">bolt</span>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('docs.quick_links.quickstart_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700 mb-3">
+                {t('docs.quick_links.quickstart_description', locale)}
+              </p>
+              <a href={getLocalizedPath('/knowledge-base?category=getting-started', locale)} class="text-primary hover:text-primary-accent text-sm font-medium inline-flex items-center gap-1">
+                {t('docs.quick_links.quickstart_cta', locale)}
+                <span class="icon icon-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-3">
+            <span class="icon text-primary flex-shrink-0">api</span>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('docs.quick_links.api_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700 mb-3">
+                {t('docs.quick_links.api_description', locale)}
+              </p>
+              <a href={getLocalizedPath('/website-api', locale)} class="text-primary hover:text-primary-accent text-sm font-medium inline-flex items-center gap-1">
+                {t('docs.quick_links.api_cta', locale)}
+                <span class="icon icon-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-3">
+            <span class="icon text-primary flex-shrink-0">integration_instructions</span>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('docs.quick_links.integrations_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700 mb-3">
+                {t('docs.quick_links.integrations_description', locale)}
+              </p>
+              <a href={getLocalizedPath('/integrations', locale)} class="text-primary hover:text-primary-accent text-sm font-medium inline-flex items-center gap-1">
+                {t('docs.quick_links.integrations_cta', locale)}
+                <span class="icon icon-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="default" padding="lg">
+          <div class="flex items-start gap-3">
+            <span class="icon text-primary flex-shrink-0">support_agent</span>
+            <div>
+              <h3 class="text-lg font-semibold text-neutral-900 mb-2">
+                {t('docs.quick_links.support_title', locale)}
+              </h3>
+              <p class="text-sm text-neutral-700 mb-3">
+                {t('docs.quick_links.support_description', locale)}
+              </p>
+              <a href={getLocalizedPath('/support', locale)} class="text-primary hover:text-primary-accent text-sm font-medium inline-flex items-center gap-1">
+                {t('docs.quick_links.support_cta', locale)}
+                <span class="icon icon-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Note Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <Card variant="bordered" padding="lg" class="bg-blue-50 border-blue-200">
+        <div class="flex items-start gap-4">
+          <span class="icon icon-lg text-blue-600 flex-shrink-0">info</span>
+          <div>
+            <h3 class="text-xl font-semibold text-neutral-900 mb-3">
+              {t('docs.note.title', locale)}
+            </h3>
+            <p class="text-neutral-700 mb-4">
+              {t('docs.note.description', locale)}
+            </p>
+            <Button variant="outline" href={getLocalizedPath('/knowledge-base', locale)}>
+              {t('docs.note.cta', locale)}
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-primary to-primary-accent text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-6">
+        {t('docs.cta.title', locale)}
+      </h2>
+      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+        {t('docs.cta.description', locale)}
+      </p>
+      <Button variant="secondary" size="lg" href="https://crm.tesoro.estate/auth/signup" target="_blank" rel="noopener noreferrer">
+        {t('docs.cta.cta_primary', locale)}
+      </Button>
+    </div>
+  </section>
+</Layout>

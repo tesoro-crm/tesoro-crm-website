@@ -194,7 +194,7 @@
       "question_1": "Hoe lang duurt de implementatie?",
       "answer_1": "De meeste klanten zijn binnen 24 uur operationeel. Onze onboarding wizard importeert je bestaande data en configureert alles automatisch.",
       "question_2": "Welke MLS-platforms worden ondersteund?",
-      "answer_2": "We integreren met alle grote platforms: Funda, Idealista, Kyero, Fotocasa, en 20+ andere. Custom integraties zijn mogelijk.",
+      "answer_2": "We integreren met alle grote platforms: Idealista, Kyero, Fotocasa, en 20+ andere. Custom integraties zijn mogelijk.",
       "question_3": "Is mijn data veilig?",
       "answer_3": "Absoluut. We zijn GDPR-compliant, gebruiken end-to-end encryptie en hosten in EU datacenters. SOC 2 Type II gecertificeerd.",
       "question_4": "Kan ik op elk moment opzeggen?",
@@ -434,7 +434,7 @@
         "feature_1_description": "Automatische synchronisatie van listings, updates en marktdata",
         "feature_2_icon": "",
         "feature_2_title": "Multi-Platform Support",
-        "feature_2_description": "Integratie met Funda, Idealista, Kyero, Fotocasa en 20+ andere platforms",
+        "feature_2_description": "Integratie met Idealista, Kyero, Fotocasa en 20+ andere platforms",
         "feature_3_icon": "",
         "feature_3_title": "Duplicate Detection",
         "feature_3_description": "Automatische detectie en merge van dubbele listings"
@@ -526,10 +526,8 @@
       "integration_2_category": "Email",
       "integration_3_name": "MLS Systems",
       "integration_3_category": "Properties",
-      "integration_4_name": "Funda",
+      "integration_4_name": "Idealista",
       "integration_4_category": "Properties",
-      "integration_5_name": "Idealista",
-      "integration_5_category": "Properties",
       "integration_6_name": "WhatsApp",
       "integration_6_category": "Messaging",
       "integration_7_name": "Google Calendar",
@@ -594,6 +592,383 @@
       "notify_placeholder": "jouw@email.nl",
       "notify_button": "Laat het me weten",
       "notify_privacy": "We contacteren je alleen over de OpenAPI lancering. Geen spam."
+    }
+  },
+  "integrations": {
+    "meta_title": "Tesoro CRM Integraties - Verbind je tools",
+    "meta_description": "Verbind Tesoro CRM met Gmail, Outlook, WhatsApp, MLS systemen en meer. Naadloze integraties met alle grote vastgoedplatforms.",
+    "hero": {
+      "badge": "Integraties",
+      "title": "Verbind met de tools die je al gebruikt",
+      "description": "Tesoro CRM integreert naadloos met je favoriete tools en platforms. Werk slimmer, niet harder."
+    },
+    "categories": {
+      "email": "Email",
+      "messaging": "Berichten",
+      "calendar": "Agenda",
+      "portals": "Vastgoedportalen",
+      "mls": "MLS systemen"
+    },
+    "gmail_description": "Volledige sync met Gmail. Alle e-mails automatisch getrackt en gekoppeld aan contacten en deals.",
+    "outlook_description": "Native Outlook integratie. Verstuur en ontvang e-mails direct vanuit Tesoro CRM.",
+    "whatsapp_description": "WhatsApp Business integratie voor klantcommunicatie en deal updates.",
+    "google_calendar_description": "Synchroniseer afspraken en bezichtigingen automatisch met Google Calendar.",
+    "idealista_description": "Synchroniseer properties automatisch met Idealista. Real-time updates.",
+    "kyero_description": "Verbind met Kyero voor internationale property exposure.",
+    "mls_description": "Import en export properties via MLS XML. Compatibel met alle grote systemen.",
+    "missing_question": "Mis je een integratie?",
+    "missing_cta": "Vraag integratie aan",
+    "benefits": {
+      "title": "Waarom integreren?",
+      "description": "Bespaar tijd en verminder handmatig werk met naadloze integraties.",
+      "benefit_1_title": "Bespaar tijd",
+      "benefit_1_description": "Automatiseer data-invoer en synchronisatie tussen al je tools.",
+      "benefit_2_title": "Blijf gesynchroniseerd",
+      "benefit_2_description": "Real-time updates zorgen ervoor dat al je systemen altijd up-to-date zijn.",
+      "benefit_3_title": "Werk vanuit één plek",
+      "benefit_3_description": "Toegang tot alles vanuit Tesoro CRM zonder tussen tools te wisselen."
+    },
+    "cta": {
+      "title": "Klaar om je tools te verbinden?",
+      "description": "Start je gratis trial en integreer met al je favoriete platforms.",
+      "cta_primary": "Start gratis trial",
+      "cta_secondary": "Bekijk prijzen"
+    }
+  },
+  "support": {
+    "meta_title": "Tesoro CRM Support - Hulp nodig?",
+    "meta_description": "Krijg hulp met Tesoro CRM. Toegang tot onze kennisbank, neem contact op met support, of upgrade naar premium support voor prioritaire hulp.",
+    "hero": {
+      "badge": "Support",
+      "title": "We staan voor je klaar",
+      "description": "Krijg de hulp die je nodig hebt om het meeste uit Tesoro CRM te halen. Meerdere supportkanalen beschikbaar."
+    },
+    "resources": {
+      "knowledge_base_title": "Kennisbank",
+      "knowledge_base_description": "Blader door onze uitgebreide gidsen en tutorials voor snelle antwoorden.",
+      "knowledge_base_cta": "Bekijk artikelen",
+      "email_title": "Email support",
+      "email_description": "Stuur ons een email en we nemen binnen 24 uur contact met je op.",
+      "chat_title": "Live chat",
+      "chat_description": "Chat in real-time met ons supportteam tijdens kantooruren.",
+      "chat_cta": "Start chat"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "description": "Snelle antwoorden op veelvoorkomende vragen over het gebruik van Tesoro CRM.",
+      "question_1": "Hoe reset ik mijn wachtwoord?",
+      "answer_1": "Klik op 'Wachtwoord vergeten' op de login pagina. Je ontvangt binnen enkele minuten een reset link via email.",
+      "question_2": "Hoe voeg ik nieuwe gebruikers toe aan mijn account?",
+      "answer_2": "Ga naar Instellingen > Team > Gebruiker toevoegen. Je kunt tot 10 gebruikers toevoegen op het standaard plan.",
+      "question_3": "Hoe importeer ik mijn bestaande contacten?",
+      "answer_3": "Gebruik de Import tool onder Contacten. We ondersteunen CSV, Excel, en directe imports vanuit de meeste CRM systemen.",
+      "question_4": "Hoe verbind ik mijn email?",
+      "answer_4": "Ga naar Instellingen > Integraties > Email. Volg de stappen om Gmail of Outlook te verbinden met OAuth2.",
+      "question_5": "Hoe zeg ik mijn abonnement op?",
+      "answer_5": "Ga naar Instellingen > Facturering > Abonnement opzeggen. Je kunt altijd opzeggen en eerst je data exporteren.",
+      "question_6": "Bieden jullie hulp bij data migratie?",
+      "answer_6": "Ja, onze onboarding service omvat data migratie vanuit je huidige CRM. Neem contact op voor prijzen.",
+      "more_questions": "Nog meer vragen?",
+      "contact_cta": "Neem contact op"
+    },
+    "premium": {
+      "badge": "Premium support",
+      "title": "Prioritaire support nodig?",
+      "description": "Upgrade naar premium support voor snellere responstijden en toegewijde assistentie.",
+      "feature_1": "Responstijd onder 1 uur",
+      "feature_2": "Dedicated account manager",
+      "feature_3": "Maandelijkse review gesprekken",
+      "feature_4": "Prioriteit bij feature requests",
+      "price": "€249",
+      "price_period": "/maand",
+      "cta": "Upgrade naar premium"
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "description": "Start je gratis trial en ervaar Tesoro CRM met volledige support inbegrepen.",
+      "cta_primary": "Start gratis trial"
+    }
+  },
+  "docs": {
+    "meta_title": "Tesoro CRM Documentatie - Leer Tesoro gebruiken",
+    "meta_description": "Complete documentatie voor Tesoro CRM. Gidsen, tutorials en API referentie om het meeste uit het platform te halen.",
+    "hero": {
+      "badge": "Documentatie",
+      "title": "Alles wat je moet weten",
+      "description": "Uitgebreide gidsen en tutorials om je te helpen Tesoro CRM onder de knie te krijgen.",
+      "cta": "Bekijk documentatie"
+    },
+    "categories": {
+      "title": "Documentatie categorieën",
+      "description": "Vind de informatie die je nodig hebt, georganiseerd per onderwerp.",
+      "getting_started_title": "Aan de slag",
+      "getting_started_description": "Nieuw bij Tesoro? Begin hier met setup gidsen en basis tutorials.",
+      "contacts_title": "Contact management",
+      "contacts_description": "Leer hoe je contacten, leads en klantrelaties beheert.",
+      "properties_title": "Property management",
+      "properties_description": "Toevoegen, bewerken en beheren van properties. Leer over MLS integratie.",
+      "deals_title": "Deal pipeline",
+      "deals_description": "Beheers de deal pipeline en sluit efficiënter meer verkopen.",
+      "matching_title": "Smart matching",
+      "matching_description": "Gebruik AI-powered matching om properties te verbinden met de juiste klanten.",
+      "integrations_title": "Integraties",
+      "integrations_description": "Verbind Tesoro met Gmail, Outlook, WhatsApp en meer."
+    },
+    "quick_links": {
+      "title": "Snelle links",
+      "quickstart_title": "Snelstart gids",
+      "quickstart_description": "Ga in 15 minuten aan de slag met Tesoro CRM.",
+      "quickstart_cta": "Start gids",
+      "api_title": "API referentie",
+      "api_description": "Bouw custom integraties met onze REST API.",
+      "api_cta": "Bekijk API docs",
+      "integrations_title": "Integratie gidsen",
+      "integrations_description": "Stap-voor-stap gidsen voor het verbinden van je favoriete tools.",
+      "integrations_cta": "Bekijk integraties",
+      "support_title": "Krijg support",
+      "support_description": "Kan je niet vinden wat je zoekt? Neem contact op met ons supportteam.",
+      "support_cta": "Neem contact op"
+    },
+    "note": {
+      "title": "Complete documentatie in kennisbank",
+      "description": "Al onze documentatie is beschikbaar in de kennisbank met doorzoekbare artikelen, video tutorials en stap-voor-stap gidsen.",
+      "cta": "Ga naar kennisbank"
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "description": "Zet je kennis in de praktijk. Start vandaag nog je gratis trial.",
+      "cta_primary": "Start gratis trial"
+    }
+  },
+  "about": {
+    "meta_title": "Over Tesoro CRM - Onze missie en waarden",
+    "meta_description": "Leer meer over Tesoro CRM. Gelanceerd in januari 2025, bouwen we het beste CRM voor vastgoedkantoren door co-creatie met professionals.",
+    "hero": {
+      "badge": "Over ons",
+      "title": "Het beste CRM voor vastgoed bouwen",
+      "description": "Tesoro CRM is gelanceerd in januari 2025 met de missie om te transformeren hoe vastgoedkantoren werken."
+    },
+    "mission": {
+      "title": "Onze missie",
+      "description": "We bouwen een CRM waar vastgoedprofessionals écht van houden. Door nauw samen te werken met makelaars en kantoren, creëren we features die echte problemen oplossen en meetbare resultaten leveren."
+    },
+    "story": {
+      "badge": "Ons verhaal",
+      "title": "Nieuw op de markt, gebouwd met ervaring",
+      "paragraph_1": "Tesoro CRM is gelanceerd in januari 2025, maar ons team heeft decennia aan ervaring in vastgoedtechnologie en CRM ontwikkeling.",
+      "paragraph_2": "We zagen dat bestaande CRM's ofwel te complex, te duur, of misten cruciale features die vastgoedprofessionals nodig hebben. Dus besloten we iets beters te bouwen.",
+      "paragraph_3": "Door vanaf dag één direct samen te werken met vastgoedkantoren, creëren we een CRM dat echte problemen oplost en naadloos past in je workflow.",
+      "stat_1_value": "Jan 2025",
+      "stat_1_label": "Gelanceerd",
+      "stat_2_value": "20+",
+      "stat_2_label": "Early adopter kantoren",
+      "stat_3_value": "3 landen",
+      "stat_3_label": "Spanje, Nederland, België"
+    },
+    "cocreation": {
+      "title": "Gebouwd door co-creatie",
+      "description": "We bouwen niet in isolatie. Elke feature wordt ontwikkeld met input van vastgoedprofessionals die Tesoro dagelijks gebruiken.",
+      "benefit_1_title": "Jouw stem telt",
+      "benefit_1_description": "Feature requests worden realiteit in weken, niet maanden. We luisteren en handelen snel.",
+      "benefit_2_title": "Snelle ontwikkeling",
+      "benefit_2_description": "Wekelijkse updates en nieuwe features gebaseerd op echte feedback van echte gebruikers.",
+      "benefit_3_title": "Groei met ons mee",
+      "benefit_3_description": "Early adopters bepalen de product roadmap en krijgen exclusieve voordelen."
+    },
+    "values": {
+      "title": "Onze waarden",
+      "description": "De principes die bepalen hoe we Tesoro CRM bouwen en ondersteunen.",
+      "value_1_title": "Klant eerst",
+      "value_1_description": "Elke beslissing begint met wat het beste is voor onze klanten. Jouw succes is ons succes.",
+      "value_2_title": "Snel bewegen",
+      "value_2_description": "We verzenden wekelijks updates, niet jaarlijks. Goede ideeën worden binnen weken features.",
+      "value_3_title": "Transparante prijzen",
+      "value_3_description": "Eén simpele prijs, alles inbegrepen. Geen verborgen kosten of verrassingen.",
+      "value_4_title": "Gebouwd voor vastgoed",
+      "value_4_description": "We bouwen geen generiek CRM. Elke feature is specifiek ontworpen voor vastgoedprofessionals."
+    },
+    "cta": {
+      "title": "Word lid van onze groeiende community",
+      "description": "Word early adopter en help de toekomst van vastgoed CRM vormgeven.",
+      "cta_primary": "Start gratis trial",
+      "cta_secondary": "Neem contact op"
+    }
+  },
+  "privacy": {
+    "meta_title": "Privacybeleid - Tesoro CRM",
+    "meta_description": "Privacybeleid voor Tesoro CRM. Leer hoe we jouw gegevens verzamelen, gebruiken en beschermen in overeenstemming met de AVG.",
+    "hero": {
+      "badge": "Juridisch",
+      "title": "Privacybeleid",
+      "last_updated": "Laatst bijgewerkt: 16 januari 2025",
+      "description": "Dit privacybeleid legt uit hoe Tesoro je persoonsgegevens verzamelt, gebruikt en beschermt."
+    },
+    "section_1": {
+      "title": "Inleiding",
+      "paragraph_1": "Tesoro CRM ('wij', 'ons', 'onze') zet zich in voor de bescherming van jouw privacy en persoonsgegevens. Dit privacybeleid legt uit hoe we jouw informatie verzamelen, gebruiken, opslaan en beschermen wanneer je onze diensten gebruikt.",
+      "paragraph_2": "Door gebruik te maken van Tesoro CRM, ga je akkoord met het verzamelen en gebruiken van informatie in overeenstemming met dit beleid."
+    },
+    "section_2": {
+      "title": "Verwerkingsverantwoordelijke",
+      "paragraph_1": "De verwerkingsverantwoordelijke voor jouw persoonsgegevens is:",
+      "company_name": "Tesoro CRM B.V.",
+      "email": "Email: privacy@tesoro.estate",
+      "address": "Adres: Amsterdam, Nederland"
+    },
+    "section_3": {
+      "title": "Gegevens die we verzamelen",
+      "paragraph_1": "We verzamelen de volgende soorten persoonsgegevens:",
+      "subsection_1_title": "Account informatie",
+      "item_1": "Naam, e-mailadres, telefoonnummer",
+      "item_2": "Bedrijfsnaam en adres",
+      "item_3": "Betalingsinformatie (veilig verwerkt door onze betalingsprovider)",
+      "item_4": "Account credentials en authenticatiegegevens",
+      "subsection_2_title": "Gebruiksgegevens",
+      "item_5": "Loggegevens (IP-adres, browsertype, bezochte pagina's)",
+      "item_6": "Apparaatinformatie (apparaattype, besturingssysteem)",
+      "item_7": "Cookies en vergelijkbare tracking technologieën"
+    },
+    "section_4": {
+      "title": "Hoe we jouw gegevens gebruiken",
+      "paragraph_1": "We gebruiken jouw persoonsgegevens voor de volgende doeleinden:",
+      "item_1": "Om onze CRM service te leveren en te onderhouden",
+      "item_2": "Om betalingen te verwerken en abonnementen te beheren",
+      "item_3": "Om met je te communiceren over service updates en support",
+      "item_4": "Om ons platform te verbeteren en optimaliseren",
+      "item_5": "Om te voldoen aan wettelijke verplichtingen"
+    },
+    "section_5": {
+      "title": "Gegevensopslag en beveiliging",
+      "paragraph_1": "Jouw gegevens worden veilig opgeslagen in EU datacenters met industrie-standaard encryptie en beveiligingsmaatregelen.",
+      "paragraph_2": "We implementeren passende technische en organisatorische maatregelen om jouw gegevens te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging.",
+      "paragraph_3": "We bewaren jouw gegevens alleen zo lang als nodig is om onze diensten te leveren en te voldoen aan wettelijke verplichtingen."
+    },
+    "section_6": {
+      "title": "Gegevens delen",
+      "paragraph_1": "We verkopen jouw persoonsgegevens niet. We kunnen jouw gegevens delen met:",
+      "item_1": "Serviceproviders die ons helpen ons platform te bedienen (hosting, betalingsverwerking)",
+      "item_2": "Wetshandhavings- of regelgevende autoriteiten wanneer wettelijk vereist",
+      "item_3": "Derde partijen met jouw expliciete toestemming"
+    },
+    "section_7": {
+      "title": "Jouw rechten (AVG)",
+      "paragraph_1": "Onder de AVG heb je de volgende rechten:",
+      "item_1": "Recht op toegang tot je persoonsgegevens",
+      "item_2": "Recht op rectificatie van onjuiste gegevens",
+      "item_3": "Recht op verwijdering ('recht om vergeten te worden')",
+      "item_4": "Recht op beperking van verwerking",
+      "item_5": "Recht op gegevensoverdraagbaarheid",
+      "item_6": "Recht op bezwaar tegen verwerking"
+    },
+    "section_8": {
+      "title": "Cookies",
+      "paragraph_1": "We gebruiken cookies en vergelijkbare tracking technologieën om je ervaring op ons platform te verbeteren. Je kunt cookies beheren via je browserinstellingen.",
+      "paragraph_2": "Essentiële cookies zijn noodzakelijk voor het functioneren van het platform. Analytics cookies helpen ons begrijpen hoe gebruikers omgaan met onze service."
+    },
+    "section_9": {
+      "title": "Wijzigingen in dit beleid",
+      "paragraph_1": "We kunnen dit privacybeleid van tijd tot tijd bijwerken. We zullen je op de hoogte stellen van belangrijke wijzigingen via email of via ons platform."
+    },
+    "section_10": {
+      "title": "Neem contact op",
+      "paragraph_1": "Als je vragen hebt over dit privacybeleid of je rechten wilt uitoefenen, neem dan contact met ons op:",
+      "email_label": "Email:",
+      "address_label": "Adres:",
+      "address": "Tesoro CRM B.V., Amsterdam, Nederland"
+    }
+  },
+  "terms": {
+    "meta_title": "Algemene voorwaarden - Tesoro CRM",
+    "meta_description": "Algemene voorwaarden voor het gebruik van Tesoro CRM. Lees over servicevoorwaarden, gebruiksrechten, betaling en opzegbeleid.",
+    "hero": {
+      "badge": "Juridisch",
+      "title": "Algemene voorwaarden",
+      "last_updated": "Laatst bijgewerkt: 16 januari 2025",
+      "description": "Deze algemene voorwaarden regelen jouw gebruik van Tesoro CRM diensten."
+    },
+    "section_1": {
+      "title": "Akkoord met voorwaarden",
+      "paragraph_1": "Door toegang te krijgen tot of gebruik te maken van Tesoro CRM, ga je akkoord met deze algemene voorwaarden en ons privacybeleid.",
+      "paragraph_2": "Als je niet akkoord gaat met deze voorwaarden, mag je onze diensten niet gebruiken."
+    },
+    "section_2": {
+      "title": "Service beschrijving",
+      "paragraph_1": "Tesoro CRM biedt een cloud-based customer relationship management platform voor vastgoedprofessionals, inclusief:",
+      "item_1": "Contact- en leadbeheer",
+      "item_2": "Property management en matching",
+      "item_3": "Deal pipeline en workflow automation",
+      "item_4": "Email en agenda integraties"
+    },
+    "section_3": {
+      "title": "Gebruikersaccounts",
+      "paragraph_1": "Je bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van je accountgegevens en voor alle activiteiten die plaatsvinden onder je account.",
+      "paragraph_2": "Je moet nauwkeurige en volledige informatie verstrekken bij het aanmaken van je account en deze informatie up-to-date houden.",
+      "paragraph_3": "Je moet ons onmiddellijk op de hoogte stellen van ongeautoriseerde toegang tot je account."
+    },
+    "section_4": {
+      "title": "Acceptabel gebruik",
+      "paragraph_1": "Je gaat ermee akkoord Tesoro CRM niet te gebruiken om:",
+      "item_1": "Wetten of regelgeving te overtreden",
+      "item_2": "Inbreuk te maken op intellectuele eigendomsrechten",
+      "item_3": "Kwaadaardige code of virussen te verzenden",
+      "item_4": "Te proberen ongeautoriseerde toegang te krijgen tot onze systemen",
+      "item_5": "De service te gebruiken voor frauduleuze of illegale doeleinden"
+    },
+    "section_5": {
+      "title": "Betalingsvoorwaarden",
+      "paragraph_1": "Tesoro CRM wordt aangeboden op abonnementsbasis voor €99 per maand per kantoor (tot 10 gebruikers).",
+      "paragraph_2": "Abonnementen worden maandelijks vooraf gefactureerd. Betalingen worden veilig verwerkt door onze betalingsprovider.",
+      "paragraph_3": "Alle kosten zijn niet-restitueerbaar, behalve zoals vereist door de wet of zoals expliciet vermeld in deze voorwaarden.",
+      "paragraph_4": "We behouden ons het recht voor om onze prijzen te wijzigen met 30 dagen kennisgeving aan bestaande klanten."
+    },
+    "section_6": {
+      "title": "Gratis proefperiode",
+      "paragraph_1": "We bieden een gratis proefperiode van 14 dagen voor nieuwe klanten. Er is geen creditcard nodig om de trial te starten.",
+      "paragraph_2": "Aan het einde van de proefperiode wordt je account automatisch omgezet naar een betaald abonnement, tenzij je opzegt."
+    },
+    "section_7": {
+      "title": "Opzegging en terugbetalingen",
+      "paragraph_1": "Je kunt je abonnement op elk moment opzeggen. Opzegging gaat in aan het einde van je huidige factureringsperiode.",
+      "paragraph_2": "Je behoudt toegang tot de service tot het einde van je betaalde periode. Er worden geen terugbetalingen verstrekt voor gedeeltelijke maanden."
+    },
+    "section_8": {
+      "title": "Service beschikbaarheid",
+      "paragraph_1": "We streven naar 99,9% uptime maar garanderen geen ononderbroken toegang tot de service.",
+      "paragraph_2": "We kunnen gepland onderhoud uitvoeren met voorafgaande kennisgeving wanneer mogelijk."
+    },
+    "section_9": {
+      "title": "Data eigendom en export",
+      "paragraph_1": "Je behoudt alle rechten op de gegevens die je invoert in Tesoro CRM. We claimen geen eigendom van je klantgegevens, contacten of properties.",
+      "paragraph_2": "Je kunt je gegevens op elk moment exporteren in CSV of JSON formaat."
+    },
+    "section_10": {
+      "title": "Beperking van aansprakelijkheid",
+      "paragraph_1": "Tesoro CRM wordt aangeboden 'zoals het is' zonder garanties van welke aard dan ook. We zijn niet aansprakelijk voor indirecte, incidentele of gevolgschade.",
+      "paragraph_2": "Onze totale aansprakelijkheid jegens jou voor claims gerelateerd aan de service is beperkt tot het bedrag dat je ons hebt betaald in de 12 maanden voorafgaand aan de claim."
+    },
+    "section_11": {
+      "title": "Vrijwaring",
+      "paragraph_1": "Je stemt ermee in Tesoro CRM te vrijwaren en schadeloos te stellen voor claims, schade of kosten die voortvloeien uit jouw gebruik van de service of schending van deze voorwaarden."
+    },
+    "section_12": {
+      "title": "Beëindiging",
+      "paragraph_1": "We kunnen je account opschorten of beëindigen als je deze voorwaarden schendt of frauduleuze activiteiten uitvoert.",
+      "paragraph_2": "Bij beëindiging verlies je toegang tot de service en kunnen je gegevens na 30 dagen worden verwijderd."
+    },
+    "section_13": {
+      "title": "Wijzigingen in voorwaarden",
+      "paragraph_1": "We kunnen deze voorwaarden op elk moment wijzigen. We zullen je op de hoogte stellen van belangrijke wijzigingen via email of via ons platform. Voortgezet gebruik van de service na wijzigingen betekent acceptatie van de nieuwe voorwaarden."
+    },
+    "section_14": {
+      "title": "Toepasselijk recht",
+      "paragraph_1": "Deze voorwaarden worden beheerst door de wetten van Nederland. Eventuele geschillen worden beslecht door de rechtbanken van Amsterdam."
+    },
+    "section_15": {
+      "title": "Contactgegevens",
+      "paragraph_1": "Als je vragen hebt over deze voorwaarden, neem dan contact met ons op:",
+      "email_label": "Email:",
+      "address_label": "Adres:",
+      "address": "Tesoro CRM B.V., Amsterdam, Nederland"
     }
   }
 }
