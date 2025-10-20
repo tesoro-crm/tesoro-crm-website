@@ -260,7 +260,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
           </button>
           <div
             id="language-menu"
-            class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 z-50"
+            class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 z-50 overflow-hidden"
           >
             {Object.entries(languages).map(([lang, name]) => (
               <a
