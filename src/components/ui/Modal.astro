@@ -88,9 +88,30 @@ const sizeClasses = {
 
 <script>
   // Modal functionality
-  document.addEventListener('DOMContentLoaded', function() {
+  function closeModal(modal: HTMLElement) {
+    modal.classList.remove('block');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    // Show header when modal is closed
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.display = '';
+    }
+  }
+
+  function initModals() {
+    // Remove existing listeners to prevent duplicates
+    const existingTriggers = document.querySelectorAll('[data-modal-target][data-listener="true"]');
+    existingTriggers.forEach(trigger => {
+      trigger.removeAttribute('data-listener');
+    });
+
     // Handle modal triggers
     document.querySelectorAll('[data-modal-target]').forEach(trigger => {
+      // Skip if already has listener
+      if (trigger.hasAttribute('data-listener')) return;
+      trigger.setAttribute('data-listener', 'true');
+
       (trigger as HTMLElement).addEventListener('click', function(e) {
         e.preventDefault();
         const modalId = this.getAttribute('data-modal-target');
@@ -128,27 +149,30 @@ const sizeClasses = {
       });
     });
 
-    // Handle escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        const openModal = document.querySelector('.modal.block') as HTMLElement;
-        if (openModal) {
-          closeModal(openModal);
+    // Handle escape key (only attach once)
+    if (!(window as any).modalEscapeListenerAttached) {
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          const openModal = document.querySelector('.modal.block') as HTMLElement;
+          if (openModal) {
+            closeModal(openModal);
+          }
         }
-      }
-    });
-  });
-
-  function closeModal(modal: HTMLElement) {
-    modal.classList.remove('block');
-    modal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-    // Show header when modal is closed
-    const header = document.querySelector('header');
-    if (header) {
-      (header as HTMLElement).style.display = '';
+      });
+      (window as any).modalEscapeListenerAttached = true;
     }
   }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initModals);
+  } else {
+    // DOM is already loaded
+    initModals();
+  }
+
+  // Re-initialize after Astro page transitions
+  document.addEventListener('astro:page-load', initModals);
 
   // Global functions for programmatic modal control
   (window as any).openModal = function(modalId: string) {

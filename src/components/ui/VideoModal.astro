@@ -95,9 +95,38 @@ const streamUrl = videoId && customerCode
 
 <script>
   // Video Modal functionality
-  document.addEventListener('DOMContentLoaded', function() {
+  function closeVideoModal(modal: HTMLElement) {
+    modal.classList.remove('block');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    // Show header when modal is closed
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.display = '';
+    }
+
+    // Stop video playback by reloading iframe
+    const iframe = modal.querySelector('iframe');
+    if (iframe && iframe.src) {
+      const src = iframe.src;
+      iframe.src = '';
+      iframe.src = src;
+    }
+  }
+
+  function initVideoModals() {
+    // Remove existing listeners to prevent duplicates
+    const existingTriggers = document.querySelectorAll('[data-video-modal-target][data-video-listener="true"]');
+    existingTriggers.forEach(trigger => {
+      trigger.removeAttribute('data-video-listener');
+    });
+
     // Handle video modal triggers
     document.querySelectorAll('[data-video-modal-target]').forEach(trigger => {
+      // Skip if already has listener
+      if (trigger.hasAttribute('data-video-listener')) return;
+      trigger.setAttribute('data-video-listener', 'true');
+
       (trigger as HTMLElement).addEventListener('click', function(e) {
         e.preventDefault();
         const modalId = this.getAttribute('data-video-modal-target');
@@ -135,35 +164,30 @@ const streamUrl = videoId && customerCode
       });
     });
 
-    // Handle escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        const openModal = document.querySelector('.video-modal.block') as HTMLElement;
-        if (openModal) {
-          closeVideoModal(openModal);
+    // Handle escape key (only attach once)
+    if (!(window as any).videoModalEscapeListenerAttached) {
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          const openModal = document.querySelector('.video-modal.block') as HTMLElement;
+          if (openModal) {
+            closeVideoModal(openModal);
+          }
         }
-      }
-    });
-  });
-
-  function closeVideoModal(modal: HTMLElement) {
-    modal.classList.remove('block');
-    modal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-    // Show header when modal is closed
-    const header = document.querySelector('header');
-    if (header) {
-      (header as HTMLElement).style.display = '';
-    }
-    
-    // Stop video playback by reloading iframe
-    const iframe = modal.querySelector('iframe');
-    if (iframe && iframe.src) {
-      const src = iframe.src;
-      iframe.src = '';
-      iframe.src = src;
+      });
+      (window as any).videoModalEscapeListenerAttached = true;
     }
   }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVideoModals);
+  } else {
+    // DOM is already loaded
+    initVideoModals();
+  }
+
+  // Re-initialize after Astro page transitions
+  document.addEventListener('astro:page-load', initVideoModals);
 
   // Global functions for programmatic modal control
   (window as any).openVideoModal = function(modalId: string) {
