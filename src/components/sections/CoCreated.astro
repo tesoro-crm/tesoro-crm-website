@@ -436,6 +436,7 @@ const partners: readonly Partner[] = [
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 2rem;
     padding-top: calc(4rem + 64px); /* 2rem base + 64px header height */
   }
@@ -529,6 +530,14 @@ const partners: readonly Partner[] = [
   /* Content Body */
   .cocreated__drawer-content-body {
     padding: 2.5rem 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #drawer-body {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .cocreated__drawer-main-title {
