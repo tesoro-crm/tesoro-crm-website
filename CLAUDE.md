@@ -128,9 +128,104 @@ const localizedText = {
 
 Default locale is Spanish with fallback routing configured.
 
+### Git Workflow and Branch Strategy
+
+**CRITICAL: ALL new features and fixes MUST be developed in feature branches, NOT directly in main.**
+
+#### Branch Workflow
+
+**For every new task/feature/fix:**
+
+1. **Create a feature branch** from main:
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/descriptive-name
+   # OR for bugs:
+   git checkout -b fix/descriptive-name
+   ```
+
+2. **Develop and test** in the feature branch:
+   ```bash
+   # Make your changes
+   npm run build  # Verify build succeeds
+   npm run validate:i18n  # If touching i18n or .astro files
+   # Use Playwright for visual verification if needed
+   ```
+
+3. **Commit changes** in the feature branch:
+   ```bash
+   git add .
+   git commit -m "feat: your feature description"
+   # OR
+   git commit -m "fix: your bug fix description"
+   ```
+
+4. **Test thoroughly** before merging:
+   ```bash
+   npm run build  # Final build check
+   npm run deploy:preview  # Deploy to preview environment
+   # Test the preview deployment
+   ```
+
+5. **Merge to main** only after successful testing:
+   ```bash
+   git checkout main
+   git pull origin main
+   git merge feature/your-branch-name
+   git push origin main
+   ```
+
+6. **Deploy to production**:
+   ```bash
+   npm run deploy:production
+   ```
+
+7. **Clean up** the feature branch:
+   ```bash
+   git branch -d feature/your-branch-name
+   ```
+
+#### Branch Naming Conventions
+
+- **Features**: `feature/short-description` (e.g., `feature/modal-cta-fix`)
+- **Bug fixes**: `fix/short-description` (e.g., `fix/language-selector-hover`)
+- **SEO improvements**: `seo/short-description` (e.g., `seo/brand-name-optimization`)
+- **Content updates**: `content/short-description` (e.g., `content/blog-post-announcement`)
+- **Documentation**: `docs/short-description` (e.g., `docs/update-workflow`)
+
+#### Why Feature Branches Matter
+
+- ✅ **Isolation**: Work on features independently without affecting main
+- ✅ **Testing**: Thoroughly test changes in preview before production
+- ✅ **Rollback**: Easy to revert if something goes wrong
+- ✅ **Code Review**: Allows for review before merging to main
+- ✅ **Collaboration**: Multiple developers can work on different features simultaneously
+
+#### Exception: Emergency Hotfixes
+
+Only in true emergencies (production is broken) may you commit directly to main:
+
+```bash
+# Emergency hotfix - use with caution
+git checkout main
+# Fix the critical issue
+git add .
+git commit -m "hotfix: critical production issue"
+git push origin main
+npm run deploy:production
+```
+
+After the hotfix, document what happened and why the normal workflow was skipped.
+
 ### Before Committing
 
-Always run `npm run build` to verify the build succeeds before committing changes, as this project has strict TypeScript and Astro validation.
+Always run these checks before committing:
+
+1. **Build verification**: `npm run build` - Ensures TypeScript and Astro validation passes
+2. **i18n validation**: `npm run validate:i18n` - If touching .astro or i18n files
+3. **Visual verification**: Use Playwright for any UI changes
+4. **Test locally**: `npm run dev` and manually test the changes
 
 ## 🎭 MANDATORY: Visual Verification with Playwright
 
