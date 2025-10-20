@@ -13,6 +13,7 @@ const { locale } = Astro.props;
 ---
 
 <Modal id="demo-modal" title={t('home.modals.demo.title', locale)} size="xl">
+  <!-- Scrollable content -->
   <div class="space-y-6">
     <!-- Header with description -->
     <div class="text-center pb-4 border-b border-neutral-200">
@@ -21,7 +22,7 @@ const { locale } = Astro.props;
       </p>
     </div>
 
-    <form id="demo-form" action="/api/demo" method="POST" class="space-y-6">
+    <form id="demo-form" action="/api/demo" method="POST" class="space-y-6" novalidate>
       <!-- Personal Information -->
       <div class="space-y-4">
         <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wide">{t('home.modals.demo.section_personal', locale)}</h3>
@@ -151,39 +152,90 @@ const { locale } = Astro.props;
 
       <!-- Cloudflare Turnstile -->
       <div class="cf-turnstile" data-sitekey={import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || "0x4AAAAAAB543ddl4o3MhkKO"}></div>
-
-      <!-- Submit Button -->
-      <div class="pt-2">
-        <Button variant="primary" size="lg" type="submit" fullWidth>
-          {t('home.modals.demo.submit', locale)}
-        </Button>
-      </div>
     </form>
+  </div>
 
+  <!-- Sticky Footer with submit button -->
+  <div slot="footer" class="modal-footer border-t border-neutral-200 px-6 py-4 bg-neutral-50 flex-shrink-0 rounded-b-lg">
     <!-- Trust indicators -->
-    <div class="text-center pt-4 border-t border-neutral-200">
-      <div class="flex items-center justify-center gap-6 text-sm text-neutral-500">
-        <span class="flex items-center gap-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+    <div class="text-center mb-4">
+      <div class="flex items-center justify-center gap-4 text-xs text-neutral-500 flex-wrap">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
           </svg>
           {t('home.modals.demo.trust_1', locale)}
         </span>
-        <span class="hidden sm:block">•</span>
-        <span class="flex items-center gap-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <span class="hidden sm:inline">•</span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
           </svg>
           {t('home.modals.demo.trust_2', locale)}
         </span>
-        <span class="hidden sm:block">•</span>
-        <span class="flex items-center gap-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <span class="hidden sm:inline">•</span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/>
           </svg>
           {t('home.modals.demo.trust_3', locale)}
         </span>
       </div>
     </div>
+
+    <!-- Submit Button -->
+    <Button variant="primary" size="lg" type="submit" fullWidth form="demo-form">
+      {t('home.modals.demo.submit', locale)}
+    </Button>
   </div>
 </Modal>
+
+<script>
+  // Handle form validation and scroll to first error
+  function initDemoFormValidation() {
+    const form = document.getElementById('demo-form') as HTMLFormElement;
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      // Let browser do native validation first
+      if (!form.checkValidity()) {
+        e.preventDefault();
+
+        // Find first invalid field
+        const firstInvalid = form.querySelector(':invalid') as HTMLElement;
+        if (firstInvalid) {
+          // Scroll the modal body to the invalid field
+          const modalBody = firstInvalid.closest('.modal-body');
+          if (modalBody) {
+            const fieldTop = firstInvalid.getBoundingClientRect().top;
+            const modalBodyTop = modalBody.getBoundingClientRect().top;
+            const scrollOffset = fieldTop - modalBodyTop - 20; // 20px extra margin
+
+            modalBody.scrollBy({
+              top: scrollOffset,
+              behavior: 'smooth'
+            });
+          }
+
+          // Focus the field after scroll
+          setTimeout(() => {
+            firstInvalid.focus();
+          }, 300);
+        }
+
+        // Show native validation messages
+        form.reportValidity();
+      }
+    });
+  }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDemoFormValidation);
+  } else {
+    initDemoFormValidation();
+  }
+
+  // Re-initialize after Astro page transitions
+  document.addEventListener('astro:page-load', initDemoFormValidation);
+</script>

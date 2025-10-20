@@ -13,6 +13,7 @@ const { locale } = Astro.props;
 ---
 
 <Modal id="contact-modal" title={t('home.modals.contact.title', locale)} size="lg">
+  <!-- Scrollable content -->
   <div class="space-y-8">
     <!-- Header -->
     <div class="text-center">
@@ -22,7 +23,7 @@ const { locale } = Astro.props;
     </div>
 
     <!-- Form -->
-    <form id="contact-form" action="/api/contact" method="POST" class="space-y-6">
+    <form id="contact-form" action="/api/contact" method="POST" class="space-y-6" novalidate>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="space-y-2">
           <label class="block text-sm font-medium text-neutral-700">
@@ -84,10 +85,63 @@ const { locale } = Astro.props;
 
       <!-- Cloudflare Turnstile -->
       <div class="cf-turnstile" data-sitekey={import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || "0x4AAAAAAB543ddl4o3MhkKO"}></div>
-
-      <Button variant="primary" size="lg" type="submit" fullWidth>
-        {t('home.modals.contact.submit', locale)}
-      </Button>
     </form>
   </div>
+
+  <!-- Sticky Footer with submit button -->
+  <div slot="footer" class="modal-footer border-t border-neutral-200 px-6 py-4 bg-neutral-50 flex-shrink-0 rounded-b-lg">
+    <Button variant="primary" size="lg" type="submit" fullWidth form="contact-form">
+      {t('home.modals.contact.submit', locale)}
+    </Button>
+  </div>
 </Modal>
+
+<script>
+  // Handle form validation and scroll to first error
+  function initContactFormValidation() {
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      // Let browser do native validation first
+      if (!form.checkValidity()) {
+        e.preventDefault();
+
+        // Find first invalid field
+        const firstInvalid = form.querySelector(':invalid') as HTMLElement;
+        if (firstInvalid) {
+          // Scroll the modal body to the invalid field
+          const modalBody = firstInvalid.closest('.modal-body');
+          if (modalBody) {
+            const fieldTop = firstInvalid.getBoundingClientRect().top;
+            const modalBodyTop = modalBody.getBoundingClientRect().top;
+            const scrollOffset = fieldTop - modalBodyTop - 20; // 20px extra margin
+
+            modalBody.scrollBy({
+              top: scrollOffset,
+              behavior: 'smooth'
+            });
+          }
+
+          // Focus the field after scroll
+          setTimeout(() => {
+            firstInvalid.focus();
+          }, 300);
+        }
+
+        // Show native validation messages
+        form.reportValidity();
+      }
+    });
+  }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initContactFormValidation);
+  } else {
+    initContactFormValidation();
+  }
+
+  // Re-initialize after Astro page transitions
+  document.addEventListener('astro:page-load', initContactFormValidation);
+</script>
