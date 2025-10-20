@@ -244,7 +244,7 @@ const properties = [
   }
   .hero-simple__background {
     position: absolute;
-    inset: -30%;
+    inset: 0;
     background: radial-gradient(circle at 0% 0%, rgba(255, 155, 67, 0.45), transparent 45%),
       radial-gradient(circle at 90% 10%, rgba(255, 107, 157, 0.4), transparent 50%),
       radial-gradient(circle at 50% 90%, rgba(10, 31, 68, 0.2), transparent 55%);
@@ -252,6 +252,7 @@ const properties = [
     animation: hero-gradient 18s ease-in-out infinite;
     opacity: 0.85;
     pointer-events: none;
+    overflow: hidden;
   }
 
   .hero-simple__container {
