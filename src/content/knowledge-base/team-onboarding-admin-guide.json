@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "id": "team-onboarding-admin-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-21",
+    "updatedAt": "2025-10-21T10:00:00Z",
+    "authorId": "tesoro-team",
+    "category": "settings",
+    "difficulty": "intermediate",
+    "tags": ["team", "onboarding", "admin", "setup", "management"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["team onboarding", "tesoro admin", "crm team setup", "gebruikers beheer", "team training"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Team onboarding handleiding voor admins",
+      "en": "Team Onboarding Guide for Admins",
+      "es": "Guía de incorporación de equipo para admins"
+    },
+    "description": {
+      "nl": "Complete handleiding voor admins om hun team succesvol te onboarden op Tesoro CRM. Van eerste invite tot volledige adoptie in 14 dagen.",
+      "en": "Complete guide for admins to successfully onboard their team to Tesoro CRM. From first invite to full adoption in 14 days.",
+      "es": "Guía completa para admins para incorporar exitosamente a su equipo en Tesoro CRM. Desde la primera invitación hasta la adopción completa en 14 días."
+    }
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "admin-responsibility",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom team onboarding kritiek is",
+        "en": "Why Team Onboarding Is Critical",
+        "es": "Por qué la incorporación de equipo es crítica"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Onderzoek toont dat <strong>70% van CRM implementaties faalt</strong> - niet vanwege slechte software, maar vanwege slechte team adoptie.</p><p><strong>Jouw rol als admin is cruciaal voor succes:</strong></p><ul><li>Je bent de 'Tesoro expert' voor je team</li><li>Je zorgt voor consistente data kwaliteit</li><li>Je faciliteert samenwerking tussen team members</li><li>Je monitort adoptie en lost blokkades op</li></ul><p>Deze guide geeft je een proven framework om je team binnen 14 dagen volledig productief te krijgen.</p><p><strong>Success rate met gestructureerde onboarding:</strong> 94% (gebaseerd op 200+ Tesoro teams)</p>"
+        },
+        "en": {
+          "text": "<p>Research shows that <strong>70% of CRM implementations fail</strong> - not because of bad software, but because of poor team adoption.</p><p><strong>Your role as admin is crucial for success:</strong></p><ul><li>You're the 'Tesoro expert' for your team</li><li>You ensure consistent data quality</li><li>You facilitate collaboration between team members</li><li>You monitor adoption and resolve blockers</li></ul><p>This guide gives you a proven framework to get your team fully productive within 14 days.</p><p><strong>Success rate with structured onboarding:</strong> 94% (based on 200+ Tesoro teams)</p>"
+        },
+        "es": {
+          "text": "<p>La investigación muestra que <strong>el 70% de las implementaciones de CRM fallan</strong> - no por software malo, sino por mala adopción del equipo.</p><p><strong>Tu rol como admin es crucial para el éxito:</strong></p><ul><li>Eres el 'experto en Tesoro' para tu equipo</li><li>Aseguras calidad consistente de datos</li><li>Facilitas la colaboración entre miembros del equipo</li><li>Monitoreas la adopción y resuelves bloqueos</li></ul><p>Esta guía te da un marco probado para hacer que tu equipo sea completamente productivo en 14 días.</p><p><strong>Tasa de éxito con incorporación estructurada:</strong> 94% (basado en más de 200 equipos de Tesoro)</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "phase-1-preparation",
+      "title": {
+        "nl": "Fase 1: Voorbereiding (Dag 1-3)",
+        "en": "Phase 1: Preparation (Day 1-3)",
+        "es": "Fase 1: Preparación (Día 1-3)"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Definieer je team structuur",
+            "en": "Step 1: Define Your Team Structure",
+            "es": "Paso 1: Define tu estructura de equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voordat je iemand uitnodigt, plan je team structuur:</p><p><strong>Identificeer rollen:</strong></p><ul><li><strong>Admins</strong> - Volledige toegang, kunnen settings wijzigen (1-2 personen)</li><li><strong>Agents</strong> - Kunnen deals maken, contacten beheren (meeste team members)</li><li><strong>Viewers</strong> - Read-only toegang voor management/support (optioneel)</li></ul><p><strong>Definieer verantwoordelijkheden:</strong></p><ul><li>Wie is eigenaar van welke deals?</li><li>Wie beheert property listings?</li><li>Wie is backup voor kritieke taken?</li><li>Hoe verdelen jullie nieuwe leads?</li></ul><p><strong>Document je beslissingen</strong> in een simpel spreadsheet of doc. Dit voorkomt verwarring later.</p>"
+            },
+            "en": {
+              "text": "<p>Before you invite anyone, plan your team structure:</p><p><strong>Identify roles:</strong></p><ul><li><strong>Admins</strong> - Full access, can change settings (1-2 people)</li><li><strong>Agents</strong> - Can create deals, manage contacts (most team members)</li><li><strong>Viewers</strong> - Read-only access for management/support (optional)</li></ul><p><strong>Define responsibilities:</strong></p><ul><li>Who owns which deals?</li><li>Who manages property listings?</li><li>Who is backup for critical tasks?</li><li>How do you distribute new leads?</li></ul><p><strong>Document your decisions</strong> in a simple spreadsheet or doc. This prevents confusion later.</p>"
+            },
+            "es": {
+              "text": "<p>Antes de invitar a nadie, planea tu estructura de equipo:</p><p><strong>Identifica roles:</strong></p><ul><li><strong>Admins</strong> - Acceso completo, pueden cambiar configuración (1-2 personas)</li><li><strong>Agentes</strong> - Pueden crear deals, gestionar contactos (mayoría de miembros del equipo)</li><li><strong>Visualizadores</strong> - Acceso de solo lectura para gestión/soporte (opcional)</li></ul><p><strong>Define responsabilidades:</strong></p><ul><li>¿Quién es dueño de qué deals?</li><li>¿Quién gestiona los listados de propiedades?</li><li>¿Quién es respaldo para tareas críticas?</li><li>¿Cómo distribuyen los nuevos leads?</li></ul><p><strong>Documenta tus decisiones</strong> en una hoja de cálculo simple o documento. Esto previene confusión más adelante.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Configureer basis settings voor het team",
+            "en": "Step 2: Configure Basic Settings for the Team",
+            "es": "Paso 2: Configura ajustes básicos para el equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Setup algemene instellingen VOORDAT je team members uitnodigt:</p><p><strong>Settings → Team → Defaults:</strong></p><ul><li><strong>Default language:</strong> NL, EN, of ES voor hele team</li><li><strong>Timezone:</strong> Lokale tijdzone (belangrijk voor calendar sync)</li><li><strong>Working hours:</strong> Standaard kantooruren (voor availability)</li><li><strong>Currency:</strong> EUR, USD, etc.</li></ul><p><strong>Settings → Deals → Pipeline:</strong></p><ul><li>Review de deal stages (Lead, Viewing, Offer, etc.)</li><li>Pas aan indien nodig voor jullie proces</li><li>Configureer auto-assignment rules (round-robin of manual)</li></ul><p><strong>Settings → Email Templates:</strong></p><ul><li>Pas templates aan met jullie branding</li><li>Voeg company logo toe aan email footer</li><li>Configureer 'from' email address (noreply@jouwdomein.nl)</li></ul><p>Deze settings zijn 'global' en gelden voor alle team members.</p>"
+            },
+            "en": {
+              "text": "<p>Setup general settings BEFORE you invite team members:</p><p><strong>Settings → Team → Defaults:</strong></p><ul><li><strong>Default language:</strong> NL, EN, or ES for entire team</li><li><strong>Timezone:</strong> Local timezone (important for calendar sync)</li><li><strong>Working hours:</strong> Standard office hours (for availability)</li><li><strong>Currency:</strong> EUR, USD, etc.</li></ul><p><strong>Settings → Deals → Pipeline:</strong></p><ul><li>Review the deal stages (Lead, Viewing, Offer, etc.)</li><li>Adjust if needed for your process</li><li>Configure auto-assignment rules (round-robin or manual)</li></ul><p><strong>Settings → Email Templates:</strong></p><ul><li>Customize templates with your branding</li><li>Add company logo to email footer</li><li>Configure 'from' email address (noreply@yourdomain.com)</li></ul><p>These settings are 'global' and apply to all team members.</p>"
+            },
+            "es": {
+              "text": "<p>Configura ajustes generales ANTES de invitar a miembros del equipo:</p><p><strong>Configuración → Equipo → Predeterminados:</strong></p><ul><li><strong>Idioma predeterminado:</strong> NL, EN o ES para todo el equipo</li><li><strong>Zona horaria:</strong> Zona horaria local (importante para sincronización de calendario)</li><li><strong>Horario laboral:</strong> Horario de oficina estándar (para disponibilidad)</li><li><strong>Moneda:</strong> EUR, USD, etc.</li></ul><p><strong>Configuración → Deals → Pipeline:</strong></p><ul><li>Revisa las etapas de deal (Lead, Visita, Oferta, etc.)</li><li>Ajusta si es necesario para tu proceso</li><li>Configura reglas de asignación automática (rotación o manual)</li></ul><p><strong>Configuración → Plantillas de Email:</strong></p><ul><li>Personaliza plantillas con tu marca</li><li>Agrega logo de empresa al pie de página del email</li><li>Configura dirección de email 'de' (noreply@tudominio.com)</li></ul><p>Estos ajustes son 'globales' y se aplican a todos los miembros del equipo.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Creëer onboarding materialen",
+            "en": "Step 3: Create Onboarding Materials",
+            "es": "Paso 3: Crear materiales de incorporación"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Maak het je team makkelijk met duidelijke onboarding documentatie:</p><p><strong>Minimale onboarding kit (30 min werk):</strong></p><ul><li><strong>Welcome email template</strong> - Wat ze moeten weten op dag 1</li><li><strong>Quick start video</strong> - 5 min screen recording van jouw Tesoro setup</li><li><strong>Login credentials doc</strong> - URL, email addresses, first login tips</li><li><strong>FAQ document</strong> - Antwoorden op meest gestelde vragen</li></ul><p><strong>Optioneel maar aanbevolen:</strong></p><ul><li>Loom video's van specifieke workflows (deal creatie, property toevoegen)</li><li>Screenshot guide van jullie specifieke setup</li><li>Lijst van 'house rules' (naming conventions, tagging, etc.)</li></ul><p><strong>Bewaar alles in een gedeelde map</strong> (Google Drive, Dropbox) zodat team members altijd toegang hebben.</p>"
+            },
+            "en": {
+              "text": "<p>Make it easy for your team with clear onboarding documentation:</p><p><strong>Minimum onboarding kit (30 min work):</strong></p><ul><li><strong>Welcome email template</strong> - What they need to know on day 1</li><li><strong>Quick start video</strong> - 5 min screen recording of your Tesoro setup</li><li><strong>Login credentials doc</strong> - URL, email addresses, first login tips</li><li><strong>FAQ document</strong> - Answers to most common questions</li></ul><p><strong>Optional but recommended:</strong></p><ul><li>Loom videos of specific workflows (deal creation, adding property)</li><li>Screenshot guide of your specific setup</li><li>List of 'house rules' (naming conventions, tagging, etc.)</li></ul><p><strong>Save everything in a shared folder</strong> (Google Drive, Dropbox) so team members always have access.</p>"
+            },
+            "es": {
+              "text": "<p>Facilita a tu equipo con documentación clara de incorporación:</p><p><strong>Kit mínimo de incorporación (30 min de trabajo):</strong></p><ul><li><strong>Plantilla de email de bienvenida</strong> - Lo que necesitan saber el día 1</li><li><strong>Video de inicio rápido</strong> - Grabación de pantalla de 5 min de tu configuración de Tesoro</li><li><strong>Documento de credenciales de acceso</strong> - URL, direcciones de email, consejos de primer inicio de sesión</li><li><strong>Documento de FAQ</strong> - Respuestas a preguntas más comunes</li></ul><p><strong>Opcional pero recomendado:</strong></p><ul><li>Videos Loom de flujos de trabajo específicos (creación de deal, agregar propiedad)</li><li>Guía de capturas de pantalla de tu configuración específica</li><li>Lista de 'reglas de la casa' (convenciones de nomenclatura, etiquetado, etc.)</li></ul><p><strong>Guarda todo en una carpeta compartida</strong> (Google Drive, Dropbox) para que los miembros del equipo siempre tengan acceso.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "phase-2-invitation",
+      "title": {
+        "nl": "Fase 2: Team uitnodigen en eerste login (Dag 4-7)",
+        "en": "Phase 2: Invite Team and First Login (Day 4-7)",
+        "es": "Fase 2: Invitar equipo y primer inicio de sesión (Día 4-7)"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 4: Team members uitnodigen",
+            "en": "Step 4: Invite Team Members",
+            "es": "Paso 4: Invitar miembros del equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Nu je voorbereid bent, nodig je team uit:</p><p><strong>Settings → Team → Invite Members:</strong></p><ol><li>Klik 'Invite New Member'</li><li>Vul email address in</li><li>Selecteer rol (Admin/Agent/Viewer)</li><li>Voeg persoonlijk welkomst bericht toe (optioneel maar aanbevolen)</li><li>Klik 'Send Invitation'</li></ol><p><strong>Ze ontvangen een email met:</strong></p><ul><li>Invitation link (geldig 7 dagen)</li><li>Instructies om account te activeren</li><li>Link naar onboarding resources</li></ul><p><strong>Pro tip: Nodig niet iedereen tegelijk uit.</strong> Start met 2-3 'early adopters' die enthousiast zijn. Zij kunnen later helpen met onboarding van de rest.</p><p><strong>Stagger de invites:</strong></p><ul><li>Week 1: 2-3 early adopters</li><li>Week 2: Volgende 5-10 team members</li><li>Week 3+: Remaining team</li></ul>"
+            },
+            "en": {
+              "text": "<p>Now that you're prepared, invite your team:</p><p><strong>Settings → Team → Invite Members:</strong></p><ol><li>Click 'Invite New Member'</li><li>Enter email address</li><li>Select role (Admin/Agent/Viewer)</li><li>Add personal welcome message (optional but recommended)</li><li>Click 'Send Invitation'</li></ol><p><strong>They receive an email with:</strong></p><ul><li>Invitation link (valid 7 days)</li><li>Instructions to activate account</li><li>Link to onboarding resources</li></ul><p><strong>Pro tip: Don't invite everyone at once.</strong> Start with 2-3 'early adopters' who are enthusiastic. They can later help with onboarding the rest.</p><p><strong>Stagger the invites:</strong></p><ul><li>Week 1: 2-3 early adopters</li><li>Week 2: Next 5-10 team members</li><li>Week 3+: Remaining team</li></ul>"
+            },
+            "es": {
+              "text": "<p>Ahora que estás preparado, invita a tu equipo:</p><p><strong>Configuración → Equipo → Invitar Miembros:</strong></p><ol><li>Haz clic en 'Invitar Nuevo Miembro'</li><li>Ingresa dirección de email</li><li>Selecciona rol (Admin/Agente/Visualizador)</li><li>Agrega mensaje de bienvenida personal (opcional pero recomendado)</li><li>Haz clic en 'Enviar Invitación'</li></ol><p><strong>Reciben un email con:</strong></p><ul><li>Enlace de invitación (válido 7 días)</li><li>Instrucciones para activar cuenta</li><li>Enlace a recursos de incorporación</li></ul><p><strong>Consejo pro: No invites a todos a la vez.</strong> Comienza con 2-3 'adoptadores tempranos' que estén entusiasmados. Ellos pueden ayudar después con la incorporación del resto.</p><p><strong>Escalonar las invitaciones:</strong></p><ul><li>Semana 1: 2-3 adoptadores tempranos</li><li>Semana 2: Siguientes 5-10 miembros del equipo</li><li>Semana 3+: Equipo restante</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Begeleid eerste login sessies",
+            "en": "Step 5: Guide First Login Sessions",
+            "es": "Paso 5: Guiar sesiones de primer inicio de sesión"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Plan een <strong>30-minuten live walkthrough</strong> met elke nieuwe team member (of in kleine groepen van 2-3).</p><p><strong>Agenda voor eerste sessie:</strong></p><ul><li><strong>0-5 min:</strong> Login samen, laat ze wachtwoord instellen</li><li><strong>5-15 min:</strong> Tour door dashboard, laat ze zien waar alles staat</li><li><strong>15-25 min:</strong> Voeg samen eerste contact en woning toe</li><li><strong>25-30 min:</strong> Q&A en verwachtingen voor eerste week</li></ul><p><strong>Waarom live sessions werken:</strong></p><ul><li>Vragen worden direct beantwoord</li><li>Je ziet waar mensen vastlopen</li><li>Team voelt zich supported, niet 'gedumpt'</li><li>Bouwt vertrouwen in de tool vanaf dag 1</li></ul><p><strong>Kan niet live?</strong> Record een Loom video en plan 15-min async Q&A later.</p>"
+            },
+            "en": {
+              "text": "<p>Schedule a <strong>30-minute live walkthrough</strong> with each new team member (or in small groups of 2-3).</p><p><strong>Agenda for first session:</strong></p><ul><li><strong>0-5 min:</strong> Login together, let them set password</li><li><strong>5-15 min:</strong> Tour through dashboard, show them where everything is</li><li><strong>15-25 min:</strong> Add first contact and property together</li><li><strong>25-30 min:</strong> Q&A and expectations for first week</li></ul><p><strong>Why live sessions work:</strong></p><ul><li>Questions are answered immediately</li><li>You see where people get stuck</li><li>Team feels supported, not 'dumped'</li><li>Builds confidence in the tool from day 1</li></ul><p><strong>Can't do live?</strong> Record a Loom video and schedule 15-min async Q&A later.</p>"
+            },
+            "es": {
+              "text": "<p>Programa un <strong>recorrido en vivo de 30 minutos</strong> con cada nuevo miembro del equipo (o en grupos pequeños de 2-3).</p><p><strong>Agenda para primera sesión:</strong></p><ul><li><strong>0-5 min:</strong> Inicien sesión juntos, déjalos configurar contraseña</li><li><strong>5-15 min:</strong> Tour por el dashboard, muéstrales dónde está todo</li><li><strong>15-25 min:</strong> Agreguen primer contacto y propiedad juntos</li><li><strong>25-30 min:</strong> Preguntas y respuestas y expectativas para la primera semana</li></ul><p><strong>Por qué las sesiones en vivo funcionan:</strong></p><ul><li>Las preguntas se responden inmediatamente</li><li>Ves dónde la gente se atasca</li><li>El equipo se siente apoyado, no 'abandonado'</li><li>Construye confianza en la herramienta desde el día 1</li></ul><p><strong>¿No puedes hacerlo en vivo?</strong> Graba un video Loom y programa 15 min de preguntas y respuestas asíncronas más tarde.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 6: Stel week 1 doelen",
+            "en": "Step 6: Set Week 1 Goals",
+            "es": "Paso 6: Establecer objetivos de la semana 1"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Geef elk team member duidelijke, haalbare doelen voor hun eerste week:</p><p><strong>Minimum doelen (iedereen moet behalen):</strong></p><ul><li>Volledig profiel ingevuld</li><li>Minimaal 5 contacten toegevoegd</li><li>Minimaal 2 woningen toegevoegd (voor agents)</li><li>Eerste deal aangemaakt en door pipeline bewogen</li><li>Minimaal 1 email verstuurd naar een klant</li></ul><p><strong>Stretch doelen (voor snelle learners):</strong></p><ul><li>10+ contacten met volledige property preferences</li><li>5+ woningen met complete details en foto's</li><li>Minimaal 3 AI matches gevonden en naar klanten gestuurd</li><li>Email templates gepersonaliseerd</li><li>Calendar geïntegreerd</li></ul><p><strong>Track progress:</strong> Check na dag 3 en 7 hoe iedereen ervoor staat. Bied extra support aan wie achterblijft.</p>"
+            },
+            "en": {
+              "text": "<p>Give each team member clear, achievable goals for their first week:</p><p><strong>Minimum goals (everyone must achieve):</strong></p><ul><li>Complete profile filled in</li><li>At least 5 contacts added</li><li>At least 2 properties added (for agents)</li><li>First deal created and moved through pipeline</li><li>At least 1 email sent to a client</li></ul><p><strong>Stretch goals (for fast learners):</strong></p><ul><li>10+ contacts with complete property preferences</li><li>5+ properties with complete details and photos</li><li>At least 3 AI matches found and sent to clients</li><li>Email templates personalized</li><li>Calendar integrated</li></ul><p><strong>Track progress:</strong> Check after day 3 and 7 how everyone is doing. Offer extra support to those falling behind.</p>"
+            },
+            "es": {
+              "text": "<p>Da a cada miembro del equipo objetivos claros y alcanzables para su primera semana:</p><p><strong>Objetivos mínimos (todos deben lograr):</strong></p><ul><li>Perfil completo completado</li><li>Al menos 5 contactos agregados</li><li>Al menos 2 propiedades agregadas (para agentes)</li><li>Primer deal creado y movido a través del pipeline</li><li>Al menos 1 email enviado a un cliente</li></ul><p><strong>Objetivos extendidos (para aprendices rápidos):</strong></p><ul><li>Más de 10 contactos con preferencias de propiedad completas</li><li>Más de 5 propiedades con detalles completos y fotos</li><li>Al menos 3 coincidencias de IA encontradas y enviadas a clientes</li><li>Plantillas de email personalizadas</li><li>Calendario integrado</li></ul><p><strong>Seguimiento del progreso:</strong> Verifica después del día 3 y 7 cómo les va a todos. Ofrece soporte adicional a quienes se queden atrás.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "phase-3-adoption",
+      "title": {
+        "nl": "Fase 3: Volledige adoptie en optimalisatie (Dag 8-14)",
+        "en": "Phase 3: Full Adoption and Optimization (Day 8-14)",
+        "es": "Fase 3: Adopción completa y optimización (Día 8-14)"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 7: Monitor team activiteit",
+            "en": "Step 7: Monitor Team Activity",
+            "es": "Paso 7: Monitorear actividad del equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Als admin heb je toegang tot team analytics om adoptie te monitoren:</p><p><strong>Reports → Team Activity:</strong></p><ul><li><strong>Login frequency:</strong> Wie logt dagelijks in? Wie niet?</li><li><strong>Actions per user:</strong> Contacten toegevoegd, deals gecreëerd, emails verstuurd</li><li><strong>Data quality:</strong> Percentage incomplete profiles, missing data</li><li><strong>Feature usage:</strong> Wie gebruikt AI matching? Wie niet?</li></ul><p><strong>Red flags om naar te kijken:</strong></p><ul><li>Team member heeft in 3+ dagen niet ingelogd</li><li>Geen nieuwe contacten of deals toegevoegd</li><li>Alleen basic features gebruikt (geen AI, geen automation)</li><li>Veel incomplete data (suggests they don't understand fields)</li></ul><p><strong>Actie bij red flags:</strong> Schedule een 1-on-1 call om te begrijpen wat de blokkade is.</p>"
+            },
+            "en": {
+              "text": "<p>As admin you have access to team analytics to monitor adoption:</p><p><strong>Reports → Team Activity:</strong></p><ul><li><strong>Login frequency:</strong> Who logs in daily? Who doesn't?</li><li><strong>Actions per user:</strong> Contacts added, deals created, emails sent</li><li><strong>Data quality:</strong> Percentage incomplete profiles, missing data</li><li><strong>Feature usage:</strong> Who uses AI matching? Who doesn't?</li></ul><p><strong>Red flags to watch for:</strong></p><ul><li>Team member hasn't logged in for 3+ days</li><li>No new contacts or deals added</li><li>Only basic features used (no AI, no automation)</li><li>Lots of incomplete data (suggests they don't understand fields)</li></ul><p><strong>Action on red flags:</strong> Schedule a 1-on-1 call to understand what the blocker is.</p>"
+            },
+            "es": {
+              "text": "<p>Como admin tienes acceso a análisis de equipo para monitorear la adopción:</p><p><strong>Reportes → Actividad del Equipo:</strong></p><ul><li><strong>Frecuencia de inicio de sesión:</strong> ¿Quién inicia sesión diariamente? ¿Quién no?</li><li><strong>Acciones por usuario:</strong> Contactos agregados, deals creados, emails enviados</li><li><strong>Calidad de datos:</strong> Porcentaje de perfiles incompletos, datos faltantes</li><li><strong>Uso de características:</strong> ¿Quién usa matching de IA? ¿Quién no?</li></ul><p><strong>Señales de alerta a buscar:</strong></p><ul><li>Miembro del equipo no ha iniciado sesión en 3+ días</li><li>No se agregaron nuevos contactos o deals</li><li>Solo características básicas usadas (sin IA, sin automatización)</li><li>Muchos datos incompletos (sugiere que no entienden los campos)</li></ul><p><strong>Acción ante señales de alerta:</strong> Programa una llamada 1-a-1 para entender cuál es el bloqueo.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 8: Organiseer team training sessies",
+            "en": "Step 8: Organize Team Training Sessions",
+            "es": "Paso 8: Organizar sesiones de entrenamiento de equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Plan <strong>2x per week 30-min team training sessions</strong> in week 2:</p><p><strong>Sessie 1: Advanced Contact & Property Management</strong></p><ul><li>Property preferences in detail invullen voor betere AI matches</li><li>Bulk import gebruiken voor efficiency</li><li>Tags en custom fields voor segmentatie</li><li>Best practices voor data kwaliteit</li></ul><p><strong>Sessie 2: Deal Pipeline Mastery</strong></p><ul><li>Complete deal workflow van Lead tot Close</li><li>Documents uploaden en delen</li><li>Notes en communication history bijhouden</li><li>Team collaboration (@mentions, reassignment)</li></ul><p><strong>Format:</strong></p><ul><li>15 min: Live demo van topic</li><li>10 min: Team doet mee (hands-on practice)</li><li>5 min: Q&A en tips van early adopters</li></ul><p><strong>Record elke sessie</strong> zodat nieuwe team members later kunnen terugkijken.</p>"
+            },
+            "en": {
+              "text": "<p>Schedule <strong>2x per week 30-min team training sessions</strong> in week 2:</p><p><strong>Session 1: Advanced Contact & Property Management</strong></p><ul><li>Fill in property preferences in detail for better AI matches</li><li>Use bulk import for efficiency</li><li>Tags and custom fields for segmentation</li><li>Best practices for data quality</li></ul><p><strong>Session 2: Deal Pipeline Mastery</strong></p><ul><li>Complete deal workflow from Lead to Close</li><li>Upload and share documents</li><li>Keep notes and communication history</li><li>Team collaboration (@mentions, reassignment)</li></ul><p><strong>Format:</strong></p><ul><li>15 min: Live demo of topic</li><li>10 min: Team participates (hands-on practice)</li><li>5 min: Q&A and tips from early adopters</li></ul><p><strong>Record each session</strong> so new team members can watch later.</p>"
+            },
+            "es": {
+              "text": "<p>Programa <strong>2 veces por semana sesiones de entrenamiento de equipo de 30 min</strong> en la semana 2:</p><p><strong>Sesión 1: Gestión Avanzada de Contactos y Propiedades</strong></p><ul><li>Completa preferencias de propiedad en detalle para mejores coincidencias de IA</li><li>Usa importación masiva para eficiencia</li><li>Etiquetas y campos personalizados para segmentación</li><li>Mejores prácticas para calidad de datos</li></ul><p><strong>Sesión 2: Dominio del Pipeline de Deals</strong></p><ul><li>Flujo de trabajo completo de deal desde Lead hasta Cierre</li><li>Sube y comparte documentos</li><li>Mantén notas e historial de comunicación</li><li>Colaboración de equipo (@menciones, reasignación)</li></ul><p><strong>Formato:</strong></p><ul><li>15 min: Demo en vivo del tema</li><li>10 min: El equipo participa (práctica práctica)</li><li>5 min: Preguntas y respuestas y consejos de adoptadores tempranos</li></ul><p><strong>Graba cada sesión</strong> para que nuevos miembros del equipo puedan verlas más tarde.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 9: Implementeer team workflows",
+            "en": "Step 9: Implement Team Workflows",
+            "es": "Paso 9: Implementar flujos de trabajo de equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Standaardiseer hoe jullie team samenwerkt in Tesoro:</p><p><strong>Definieer workflows voor:</strong></p><ul><li><strong>Lead distribution:</strong> Hoe worden nieuwe leads verdeeld? Round-robin, by expertise, by region?</li><li><strong>Deal handoff:</strong> Wat gebeurt er als agent A een deal overdraagt aan agent B?</li><li><strong>Property approval:</strong> Moeten nieuwe listings goedgekeurd worden voor ze live gaan?</li><li><strong>Client communication:</strong> Wie communiceert met klant in welke deal stage?</li></ul><p><strong>Configureer in Tesoro:</strong></p><ul><li>Settings → Automation → Auto-assignment rules</li><li>Settings → Workflows → Approval processes</li><li>Settings → Notifications → Who gets notified when</li></ul><p><strong>Document als 'team playbook':</strong> 1-pager die nieuwe team members direct kunnen lezen.</p>"
+            },
+            "en": {
+              "text": "<p>Standardize how your team collaborates in Tesoro:</p><p><strong>Define workflows for:</strong></p><ul><li><strong>Lead distribution:</strong> How are new leads distributed? Round-robin, by expertise, by region?</li><li><strong>Deal handoff:</strong> What happens when agent A transfers a deal to agent B?</li><li><strong>Property approval:</strong> Do new listings need approval before going live?</li><li><strong>Client communication:</strong> Who communicates with client in which deal stage?</li></ul><p><strong>Configure in Tesoro:</strong></p><ul><li>Settings → Automation → Auto-assignment rules</li><li>Settings → Workflows → Approval processes</li><li>Settings → Notifications → Who gets notified when</li></ul><p><strong>Document as 'team playbook':</strong> 1-pager that new team members can read immediately.</p>"
+            },
+            "es": {
+              "text": "<p>Estandariza cómo colabora tu equipo en Tesoro:</p><p><strong>Define flujos de trabajo para:</strong></p><ul><li><strong>Distribución de leads:</strong> ¿Cómo se distribuyen los nuevos leads? ¿Rotación, por experiencia, por región?</li><li><strong>Transferencia de deal:</strong> ¿Qué sucede cuando el agente A transfiere un deal al agente B?</li><li><strong>Aprobación de propiedad:</strong> ¿Los nuevos listados necesitan aprobación antes de salir en vivo?</li><li><strong>Comunicación con cliente:</strong> ¿Quién se comunica con el cliente en qué etapa de deal?</li></ul><p><strong>Configura en Tesoro:</strong></p><ul><li>Configuración → Automatización → Reglas de asignación automática</li><li>Configuración → Flujos de Trabajo → Procesos de aprobación</li><li>Configuración → Notificaciones → Quién es notificado cuándo</li></ul><p><strong>Documenta como 'manual del equipo':</strong> 1 página que los nuevos miembros del equipo puedan leer de inmediato.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "success-metrics",
+      "variant": "success",
+      "title": {
+        "nl": "Success metrics na 14 dagen",
+        "en": "Success Metrics After 14 Days",
+        "es": "Métricas de éxito después de 14 días"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Als je deze guide hebt gevolgd, zou je na 14 dagen moeten zien:</strong></p><p><strong>Adoptie metrics:</strong></p><ul><li>90%+ team logt dagelijks in</li><li>Elke agent heeft minimaal 10+ contacten toegevoegd</li><li>Elke agent heeft minimaal 5+ deals in pipeline</li><li>AI matching wordt actief gebruikt (50+ matches per week)</li><li>Email templates gebruikt voor 80%+ client communicatie</li></ul><p><strong>Data kwaliteit:</strong></p><ul><li>80%+ contacten hebben volledige property preferences</li><li>90%+ woningen hebben complete details en foto's</li><li>Consistent gebruik van tags en categorieën</li></ul><p><strong>Team collaboration:</strong></p><ul><li>Deals worden correct toegewezen en ge-reassigned</li><li>Team gebruikt comments en @mentions actief</li><li>Calendar sync werkt voor 100% van team</li></ul><p><strong>Niet waar je wilde zijn?</strong> Gebruik Reports → Team Activity om te zien waar de gaps zijn en plan follow-up training.</p>"
+        },
+        "en": {
+          "text": "<p><strong>If you've followed this guide, after 14 days you should see:</strong></p><p><strong>Adoption metrics:</strong></p><ul><li>90%+ team logs in daily</li><li>Each agent has added at least 10+ contacts</li><li>Each agent has at least 5+ deals in pipeline</li><li>AI matching actively used (50+ matches per week)</li><li>Email templates used for 80%+ client communication</li></ul><p><strong>Data quality:</strong></p><ul><li>80%+ contacts have complete property preferences</li><li>90%+ properties have complete details and photos</li><li>Consistent use of tags and categories</li></ul><p><strong>Team collaboration:</strong></p><ul><li>Deals are correctly assigned and reassigned</li><li>Team actively uses comments and @mentions</li><li>Calendar sync works for 100% of team</li></ul><p><strong>Not where you wanted to be?</strong> Use Reports → Team Activity to see where the gaps are and plan follow-up training.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Si has seguido esta guía, después de 14 días deberías ver:</strong></p><p><strong>Métricas de adopción:</strong></p><ul><li>Más del 90% del equipo inicia sesión diariamente</li><li>Cada agente ha agregado al menos más de 10 contactos</li><li>Cada agente tiene al menos más de 5 deals en el pipeline</li><li>Matching de IA usado activamente (más de 50 coincidencias por semana)</li><li>Plantillas de email usadas para más del 80% de comunicación con clientes</li></ul><p><strong>Calidad de datos:</strong></p><ul><li>Más del 80% de contactos tienen preferencias de propiedad completas</li><li>Más del 90% de propiedades tienen detalles completos y fotos</li><li>Uso consistente de etiquetas y categorías</li></ul><p><strong>Colaboración de equipo:</strong></p><ul><li>Deals se asignan y reasignan correctamente</li><li>El equipo usa activamente comentarios y @menciones</li><li>Sincronización de calendario funciona para el 100% del equipo</li></ul><p><strong>¿No estás donde querías estar?</strong> Usa Reportes → Actividad del Equipo para ver dónde están las brechas y planea entrenamiento de seguimiento.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "ongoing-support",
+      "variant": "info",
+      "title": {
+        "nl": "Doorlopende support en training",
+        "en": "Ongoing Support and Training",
+        "es": "Soporte y entrenamiento continuo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Onboarding stopt niet na 14 dagen. Plan voor continue verbetering:</strong></p><p><strong>Maandelijks:</strong></p><ul><li>Team check-in meeting (30 min) - Wat werkt? Wat niet?</li><li>Review team metrics en celebrate wins</li><li>Feature spotlight - Leer 1 nieuwe Tesoro feature per maand</li></ul><p><strong>Per kwartaal:</strong></p><ul><li>Advanced training sessie voor power users</li><li>Review en optimize workflows</li><li>Cleanup van oude/incomplete data</li></ul><p><strong>Bij nieuwe team members:</strong></p><ul><li>Assign een 'buddy' uit huidige team</li><li>Gebruik je recorded training videos</li><li>Follow hetzelfde 14-dagen framework</li></ul><p><strong>Resources voor continue learning:</strong></p><ul><li>Tesoro Knowledge Base (updates monthly)</li><li>Community forum voor best practices</li><li>Monthly webinars met Tesoro team</li><li>Direct support via chat/email</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Onboarding doesn't stop after 14 days. Plan for continuous improvement:</strong></p><p><strong>Monthly:</strong></p><ul><li>Team check-in meeting (30 min) - What works? What doesn't?</li><li>Review team metrics and celebrate wins</li><li>Feature spotlight - Learn 1 new Tesoro feature per month</li></ul><p><strong>Quarterly:</strong></p><ul><li>Advanced training session for power users</li><li>Review and optimize workflows</li><li>Cleanup of old/incomplete data</li></ul><p><strong>For new team members:</strong></p><ul><li>Assign a 'buddy' from current team</li><li>Use your recorded training videos</li><li>Follow same 14-day framework</li></ul><p><strong>Resources for continuous learning:</strong></p><ul><li>Tesoro Knowledge Base (updates monthly)</li><li>Community forum for best practices</li><li>Monthly webinars with Tesoro team</li><li>Direct support via chat/email</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>La incorporación no se detiene después de 14 días. Planea para mejora continua:</strong></p><p><strong>Mensualmente:</strong></p><ul><li>Reunión de verificación de equipo (30 min) - ¿Qué funciona? ¿Qué no?</li><li>Revisa métricas del equipo y celebra victorias</li><li>Foco en características - Aprende 1 nueva característica de Tesoro por mes</li></ul><p><strong>Trimestralmente:</strong></p><ul><li>Sesión de entrenamiento avanzado para usuarios avanzados</li><li>Revisa y optimiza flujos de trabajo</li><li>Limpieza de datos antiguos/incompletos</li></ul><p><strong>Para nuevos miembros del equipo:</strong></p><ul><li>Asigna un 'compañero' del equipo actual</li><li>Usa tus videos de entrenamiento grabados</li><li>Sigue el mismo marco de 14 días</li></ul><p><strong>Recursos para aprendizaje continuo:</strong></p><ul><li>Base de Conocimiento de Tesoro (actualizaciones mensuales)</li><li>Foro de comunidad para mejores prácticas</li><li>Webinars mensuales con el equipo de Tesoro</li><li>Soporte directo vía chat/email</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "essential-setup-checklist",
+    "first-login-dashboard-tour",
+    "basic-contact-management-tutorial",
+    "deal-pipeline-complete-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel tijd moet ik als admin investeren in team onboarding?",
+        "en": "How much time should I as admin invest in team onboarding?",
+        "es": "¿Cuánto tiempo debo invertir como admin en la incorporación del equipo?"
+      },
+      "answer": {
+        "nl": "Plan minimaal 5-7 uur in de eerste 2 weken: 2 uur voorbereiding, 30 min per team member voor eerste walkthrough, 2x 30 min training sessies, en ad-hoc support. Dit is een investering die zich terugbetaalt door hogere adoptie en minder problemen later.",
+        "en": "Plan at least 5-7 hours in the first 2 weeks: 2 hours preparation, 30 min per team member for first walkthrough, 2x 30 min training sessions, and ad-hoc support. This is an investment that pays back through higher adoption and fewer problems later.",
+        "es": "Planea al menos 5-7 horas en las primeras 2 semanas: 2 horas de preparación, 30 min por miembro del equipo para primer recorrido, 2x 30 min sesiones de entrenamiento, y soporte ad-hoc. Esta es una inversión que se recupera a través de mayor adopción y menos problemas más tarde."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als sommige team members weigeren Tesoro te gebruiken?",
+        "en": "What if some team members refuse to use Tesoro?",
+        "es": "¿Qué pasa si algunos miembros del equipo se niegan a usar Tesoro?"
+      },
+      "answer": {
+        "nl": "Resistance komt meestal van onzekerheid of gebrek aan begrip. Plan een 1-on-1 om te begrijpen waarom. Vaak helpt het om te laten zien hoeveel tijd Tesoro bespaart voor HUN specifieke werk. Early adopters kunnen ook helpen door hun successen te delen. Als laatste optie: maak Tesoro usage onderdeel van performance metrics.",
+        "en": "Resistance usually comes from uncertainty or lack of understanding. Schedule a 1-on-1 to understand why. Often it helps to show how much time Tesoro saves for THEIR specific work. Early adopters can also help by sharing their successes. Last option: make Tesoro usage part of performance metrics.",
+        "es": "La resistencia generalmente proviene de la incertidumbre o falta de comprensión. Programa una reunión 1-a-1 para entender por qué. A menudo ayuda mostrar cuánto tiempo ahorra Tesoro para SU trabajo específico. Los adoptadores tempranos también pueden ayudar compartiendo sus éxitos. Última opción: haz que el uso de Tesoro sea parte de las métricas de rendimiento."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik externe consultants inhuren voor team training?",
+        "en": "Can I hire external consultants for team training?",
+        "es": "¿Puedo contratar consultores externos para entrenamiento del equipo?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro heeft een netwerk van gecertificeerde trainers die team onboarding kunnen faciliteren. Contact support@tesorohq.io voor pricing en beschikbaarheid. Dit is vooral handig voor grote teams (15+ personen) of als je zelf geen tijd hebt.",
+        "en": "Yes! Tesoro has a network of certified trainers who can facilitate team onboarding. Contact support@tesorohq.io for pricing and availability. This is especially useful for large teams (15+ people) or if you don't have time yourself.",
+        "es": "¡Sí! Tesoro tiene una red de entrenadores certificados que pueden facilitar la incorporación del equipo. Contacta support@tesorohq.io para precios y disponibilidad. Esto es especialmente útil para equipos grandes (más de 15 personas) o si no tienes tiempo tú mismo."
+      }
+    }
+  ]
+}

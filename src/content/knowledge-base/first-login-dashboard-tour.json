@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "first-login-dashboard-tour",
+    "version": "1.0.0",
+    "publishDate": "2025-10-21",
+    "updatedAt": "2025-10-21T10:00:00Z",
+    "authorId": "tesoro-team",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["onboarding", "getting-started", "dashboard", "first-login", "navigation"],
+    "featured": true,
+    "readingTime": 4,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro eerste login", "dashboard uitleg", "crm navigatie", "tesoro interface", "nieuwe gebruiker"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Je eerste login en dashboard tour",
+      "en": "Your First Login and Dashboard Tour",
+      "es": "Tu primer inicio de sesión y tour del dashboard"
+    },
+    "description": {
+      "nl": "Ontdek wat je ziet bij je eerste login in Tesoro CRM en leer de belangrijkste onderdelen van je dashboard kennen.",
+      "en": "Discover what you see on your first login to Tesoro CRM and learn the key components of your dashboard.",
+      "es": "Descubre qué ves en tu primer inicio de sesión en Tesoro CRM y aprende los componentes clave de tu dashboard."
+    }
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "welcome-message",
+      "variant": "success",
+      "title": {
+        "nl": "Welkom bij Tesoro CRM",
+        "en": "Welcome to Tesoro CRM",
+        "es": "Bienvenido a Tesoro CRM"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Je hebt succesvol je account aangemaakt! In deze tour leren we je kennis maken met je nieuwe werkplek. We nemen je stap voor stap mee door de interface zodat je binnen 10 minuten vertrouwd bent met de belangrijkste functies.</p><p><strong>Wat je leert:</strong></p><ul><li>Dashboard layout en navigatie</li><li>Belangrijkste menu onderdelen</li><li>Quick actions en snelkoppelingen</li><li>Waar je moet beginnen</li></ul>"
+        },
+        "en": {
+          "text": "<p>You've successfully created your account! In this tour, we'll help you get familiar with your new workspace. We'll guide you step by step through the interface so you'll be comfortable with the key features within 10 minutes.</p><p><strong>What you'll learn:</strong></p><ul><li>Dashboard layout and navigation</li><li>Main menu sections</li><li>Quick actions and shortcuts</li><li>Where to start</li></ul>"
+        },
+        "es": {
+          "text": "<p>¡Has creado tu cuenta exitosamente! En este tour, te ayudaremos a familiarizarte con tu nuevo espacio de trabajo. Te guiaremos paso a paso a través de la interfaz para que te sientas cómodo con las funciones clave en 10 minutos.</p><p><strong>Lo que aprenderás:</strong></p><ul><li>Diseño del dashboard y navegación</li><li>Secciones del menú principal</li><li>Acciones rápidas y atajos</li><li>Por dónde empezar</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "first-login-experience",
+      "title": {
+        "nl": "Je eerste login stap voor stap",
+        "en": "Your First Login Step by Step",
+        "es": "Tu primer inicio de sesión paso a paso"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Inloggen op Tesoro CRM",
+            "en": "Step 1: Logging Into Tesoro CRM",
+            "es": "Paso 1: Iniciar sesión en Tesoro CRM"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Ga naar <strong>app.tesorohq.io</strong> en log in met:</p><ul><li>Het emailadres dat je tijdens registratie hebt gebruikt</li><li>Je gekozen wachtwoord</li></ul><p><strong>Tip:</strong> Bookmark deze URL in je browser voor snelle toegang. Je kunt ook de webapp installeren als desktop app via de browser instellingen.</p><p>Na het inloggen zie je een welkomstscherm met een korte intro video (optioneel). Je kunt deze overslaan of later terugkijken.</p>"
+            },
+            "en": {
+              "text": "<p>Go to <strong>app.tesorohq.io</strong> and log in with:</p><ul><li>The email address you used during registration</li><li>Your chosen password</li></ul><p><strong>Tip:</strong> Bookmark this URL in your browser for quick access. You can also install the webapp as a desktop app via your browser settings.</p><p>After logging in, you'll see a welcome screen with a short intro video (optional). You can skip it or watch it later.</p>"
+            },
+            "es": {
+              "text": "<p>Ve a <strong>app.tesorohq.io</strong> e inicia sesión con:</p><ul><li>La dirección de email que usaste durante el registro</li><li>Tu contraseña elegida</li></ul><p><strong>Tip:</strong> Marca esta URL en tu navegador para acceso rápido. También puedes instalar la webapp como aplicación de escritorio a través de la configuración de tu navegador.</p><p>Después de iniciar sesión, verás una pantalla de bienvenida con un video de introducción corto (opcional). Puedes omitirlo o verlo más tarde.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Dashboard overzicht",
+            "en": "Step 2: Dashboard Overview",
+            "es": "Paso 2: Visión general del dashboard"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Het dashboard is je centrale werkplek. Hier vind je:</p><p><strong>Bovenbalk (top navigation):</strong></p><ul><li>Zoekbalk - Snel zoeken naar contacten, woningen, deals</li><li>Notificaties - Belangrijke updates en alerts</li><li>Profiel menu - Instellingen en account opties</li></ul><p><strong>Zijbalk (side navigation):</strong></p><ul><li>Dashboard - Je huidige overzicht</li><li>Contacts - Alle contacten en relaties</li><li>Properties - Woningportfolio</li><li>Deals - Verkoop pipeline</li><li>Calendar - Afspraken en taken</li><li>Reports - Statistieken en analyses</li></ul><p><strong>Centrale workspace:</strong></p><ul><li>KPI cards - Belangrijkste metrics</li><li>Recent activity - Laatste acties</li><li>Quick actions - Veelgebruikte functies</li><li>Upcoming tasks - Aankomende to-do's</li></ul>"
+            },
+            "en": {
+              "text": "<p>The dashboard is your central workspace. Here you'll find:</p><p><strong>Top navigation bar:</strong></p><ul><li>Search bar - Quickly find contacts, properties, deals</li><li>Notifications - Important updates and alerts</li><li>Profile menu - Settings and account options</li></ul><p><strong>Side navigation:</strong></p><ul><li>Dashboard - Your current overview</li><li>Contacts - All contacts and relationships</li><li>Properties - Property portfolio</li><li>Deals - Sales pipeline</li><li>Calendar - Appointments and tasks</li><li>Reports - Statistics and analytics</li></ul><p><strong>Central workspace:</strong></p><ul><li>KPI cards - Key metrics</li><li>Recent activity - Latest actions</li><li>Quick actions - Frequently used functions</li><li>Upcoming tasks - To-do's coming up</li></ul>"
+            },
+            "es": {
+              "text": "<p>El dashboard es tu espacio de trabajo central. Aquí encontrarás:</p><p><strong>Barra de navegación superior:</strong></p><ul><li>Barra de búsqueda - Encuentra rápidamente contactos, propiedades, deals</li><li>Notificaciones - Actualizaciones importantes y alertas</li><li>Menú de perfil - Configuración y opciones de cuenta</li></ul><p><strong>Navegación lateral:</strong></p><ul><li>Dashboard - Tu vista general actual</li><li>Contactos - Todos los contactos y relaciones</li><li>Propiedades - Portafolio de propiedades</li><li>Deals - Pipeline de ventas</li><li>Calendario - Citas y tareas</li><li>Reportes - Estadísticas y análisis</li></ul><p><strong>Espacio de trabajo central:</strong></p><ul><li>Tarjetas KPI - Métricas clave</li><li>Actividad reciente - Últimas acciones</li><li>Acciones rápidas - Funciones frecuentemente usadas</li><li>Tareas próximas - Tareas pendientes</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: KPI cards begrijpen",
+            "en": "Step 3: Understanding KPI Cards",
+            "es": "Paso 3: Entender las tarjetas KPI"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>De KPI cards bovenaan je dashboard tonen je belangrijkste metrics in real-time:</p><p><strong>Total Contacts:</strong></p><ul><li>Totaal aantal contacten in je database</li><li>Groei percentage ten opzichte van vorige maand</li><li>Klik om direct naar contacten te gaan</li></ul><p><strong>Active Deals:</strong></p><ul><li>Aantal deals in je pipeline</li><li>Totale waarde van actieve deals</li><li>Deals die aandacht nodig hebben (rood)</li></ul><p><strong>Properties Listed:</strong></p><ul><li>Aantal woningen in portfolio</li><li>Actieve vs. verkochte woningen</li><li>Woningen zonder matches (oranje)</li></ul><p><strong>Revenue This Month:</strong></p><ul><li>Omzet deze maand</li><li>Vergelijking met vorige maand</li><li>Projected revenue voor rest van maand</li></ul><p><strong>Tip:</strong> Deze metrics updaten automatisch wanneer je contacten toevoegt, deals sluit, of woningen lijst.</p>"
+            },
+            "en": {
+              "text": "<p>The KPI cards at the top of your dashboard show your key metrics in real-time:</p><p><strong>Total Contacts:</strong></p><ul><li>Total number of contacts in your database</li><li>Growth percentage compared to last month</li><li>Click to go directly to contacts</li></ul><p><strong>Active Deals:</strong></p><ul><li>Number of deals in your pipeline</li><li>Total value of active deals</li><li>Deals that need attention (red)</li></ul><p><strong>Properties Listed:</strong></p><ul><li>Number of properties in portfolio</li><li>Active vs. sold properties</li><li>Properties without matches (orange)</li></ul><p><strong>Revenue This Month:</strong></p><ul><li>Revenue this month</li><li>Comparison with last month</li><li>Projected revenue for rest of month</li></ul><p><strong>Tip:</strong> These metrics update automatically when you add contacts, close deals, or list properties.</p>"
+            },
+            "es": {
+              "text": "<p>Las tarjetas KPI en la parte superior de tu dashboard muestran tus métricas clave en tiempo real:</p><p><strong>Total de contactos:</strong></p><ul><li>Número total de contactos en tu base de datos</li><li>Porcentaje de crecimiento comparado con el mes pasado</li><li>Haz clic para ir directamente a contactos</li></ul><p><strong>Deals activos:</strong></p><ul><li>Número de deals en tu pipeline</li><li>Valor total de deals activos</li><li>Deals que necesitan atención (rojo)</li></ul><p><strong>Propiedades listadas:</strong></p><ul><li>Número de propiedades en portafolio</li><li>Propiedades activas vs. vendidas</li><li>Propiedades sin coincidencias (naranja)</li></ul><p><strong>Ingresos este mes:</strong></p><ul><li>Ingresos este mes</li><li>Comparación con el mes pasado</li><li>Ingresos proyectados para el resto del mes</li></ul><p><strong>Tip:</strong> Estas métricas se actualizan automáticamente cuando agregas contactos, cierras deals o listas propiedades.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Quick actions gebruiken",
+            "en": "Step 4: Using Quick Actions",
+            "es": "Paso 4: Usar acciones rápidas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>De Quick Actions sectie geeft je directe toegang tot veelgebruikte functies. Je ziet grote knoppen voor:</p><ul><li><strong>Add Contact</strong> - Voeg nieuwe lead of klant toe</li><li><strong>Add Property</strong> - Lijst nieuwe woning</li><li><strong>Create Deal</strong> - Start nieuwe verkoop</li><li><strong>Schedule Viewing</strong> - Plan bezichtiging</li></ul><p><strong>Sneltoetsen:</strong></p><ul><li>Ctrl/Cmd + K - Open command palette (snel zoeken)</li><li>Ctrl/Cmd + N - Nieuw contact</li><li>Ctrl/Cmd + P - Nieuwe woning</li><li>Ctrl/Cmd + D - Nieuwe deal</li></ul><p>Deze knoppen zijn altijd beschikbaar, ongeacht op welke pagina je bent.</p>"
+            },
+            "en": {
+              "text": "<p>The Quick Actions section gives you direct access to frequently used functions. You'll see large buttons for:</p><ul><li><strong>Add Contact</strong> - Add new lead or client</li><li><strong>Add Property</strong> - List new property</li><li><strong>Create Deal</strong> - Start new sale</li><li><strong>Schedule Viewing</strong> - Plan viewing appointment</li></ul><p><strong>Keyboard shortcuts:</strong></p><ul><li>Ctrl/Cmd + K - Open command palette (quick search)</li><li>Ctrl/Cmd + N - New contact</li><li>Ctrl/Cmd + P - New property</li><li>Ctrl/Cmd + D - New deal</li></ul><p>These buttons are always available, regardless of which page you're on.</p>"
+            },
+            "es": {
+              "text": "<p>La sección de acciones rápidas te da acceso directo a funciones frecuentemente usadas. Verás botones grandes para:</p><ul><li><strong>Agregar contacto</strong> - Agrega nuevo lead o cliente</li><li><strong>Agregar propiedad</strong> - Lista nueva propiedad</li><li><strong>Crear deal</strong> - Comienza nueva venta</li><li><strong>Programar visita</strong> - Planea cita de visita</li></ul><p><strong>Atajos de teclado:</strong></p><ul><li>Ctrl/Cmd + K - Abrir paleta de comandos (búsqueda rápida)</li><li>Ctrl/Cmd + N - Nuevo contacto</li><li>Ctrl/Cmd + P - Nueva propiedad</li><li>Ctrl/Cmd + D - Nuevo deal</li></ul><p>Estos botones están siempre disponibles, sin importar en qué página estés.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Recent activity bekijken",
+            "en": "Step 5: Viewing Recent Activity",
+            "es": "Paso 5: Ver actividad reciente"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>De Recent Activity feed toont een chronologisch overzicht van alles wat er gebeurt in je CRM:</p><ul><li>Nieuwe contacten toegevoegd door je team</li><li>Deals die van status zijn veranderd</li><li>Inkomende emails en berichten</li><li>Geplande bezichtigingen</li><li>AI property matches</li><li>Documenten geüpload</li></ul><p><strong>Filters:</strong></p><ul><li>All Activity - Toon alles</li><li>My Activity - Alleen jouw acties</li><li>Team Activity - Alleen team acties</li><li>System Updates - Automatische updates</li></ul><p>Klik op een activity item om meer details te zien of direct naar dat record te gaan.</p>"
+            },
+            "en": {
+              "text": "<p>The Recent Activity feed shows a chronological overview of everything happening in your CRM:</p><ul><li>New contacts added by your team</li><li>Deals that changed status</li><li>Incoming emails and messages</li><li>Scheduled viewings</li><li>AI property matches</li><li>Documents uploaded</li></ul><p><strong>Filters:</strong></p><ul><li>All Activity - Show everything</li><li>My Activity - Only your actions</li><li>Team Activity - Only team actions</li><li>System Updates - Automatic updates</li></ul><p>Click on an activity item to see more details or go directly to that record.</p>"
+            },
+            "es": {
+              "text": "<p>El feed de actividad reciente muestra una vista cronológica de todo lo que sucede en tu CRM:</p><ul><li>Nuevos contactos agregados por tu equipo</li><li>Deals que cambiaron de estado</li><li>Emails y mensajes entrantes</li><li>Visitas programadas</li><li>Coincidencias de propiedades por IA</li><li>Documentos subidos</li></ul><p><strong>Filtros:</strong></p><ul><li>Toda la actividad - Mostrar todo</li><li>Mi actividad - Solo tus acciones</li><li>Actividad del equipo - Solo acciones del equipo</li><li>Actualizaciones del sistema - Actualizaciones automáticas</li></ul><p>Haz clic en un elemento de actividad para ver más detalles o ir directamente a ese registro.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "next-steps",
+      "variant": "info",
+      "title": {
+        "nl": "Volgende stappen",
+        "en": "Next Steps",
+        "es": "Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je bekend bent met het dashboard, is het tijd om je CRM in te richten:</p><ol><li><strong>Lees: Quick Start - 5 Minutes to First Value</strong><br/>Voeg je eerste contact en woning toe</li><li><strong>Lees: Essential Setup Checklist</strong><br/>Volledige setup voor je eerste week</li><li><strong>Bekijk video tutorials</strong><br/>In het Help menu (rechtsboven)</li></ol><p>Nog vragen? Gebruik de chat support rechtsonder voor directe hulp van ons team.</p>"
+        },
+        "en": {
+          "text": "<p>Now that you're familiar with the dashboard, it's time to set up your CRM:</p><ol><li><strong>Read: Quick Start - 5 Minutes to First Value</strong><br/>Add your first contact and property</li><li><strong>Read: Essential Setup Checklist</strong><br/>Complete setup for your first week</li><li><strong>Watch video tutorials</strong><br/>In the Help menu (top right)</li></ol><p>Still have questions? Use the chat support at the bottom right for direct help from our team.</p>"
+        },
+        "es": {
+          "text": "<p>Ahora que estás familiarizado con el dashboard, es hora de configurar tu CRM:</p><ol><li><strong>Lee: Inicio rápido - 5 minutos para el primer valor</strong><br/>Agrega tu primer contacto y propiedad</li><li><strong>Lee: Lista de verificación de configuración esencial</strong><br/>Configuración completa para tu primera semana</li><li><strong>Mira tutoriales en video</strong><br/>En el menú de ayuda (arriba a la derecha)</li></ol><p>¿Todavía tienes preguntas? Usa el soporte de chat en la parte inferior derecha para ayuda directa de nuestro equipo.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "account-registration-complete-guide",
+    "quick-start-first-value",
+    "essential-setup-checklist"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik het dashboard aanpassen aan mijn voorkeuren?",
+        "en": "Can I customize the dashboard to my preferences?",
+        "es": "¿Puedo personalizar el dashboard según mis preferencias?"
+      },
+      "answer": {
+        "nl": "Ja! Klik op het tandwiel icoon rechtsboven in het dashboard. Je kunt KPI cards verbergen/tonen, de layout aanpassen, en widgets toevoegen die relevant zijn voor jouw rol.",
+        "en": "Yes! Click the gear icon at the top right of the dashboard. You can hide/show KPI cards, adjust the layout, and add widgets that are relevant to your role.",
+        "es": "¡Sí! Haz clic en el icono de engranaje en la parte superior derecha del dashboard. Puedes ocultar/mostrar tarjetas KPI, ajustar el diseño y agregar widgets que sean relevantes para tu rol."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik geen data zie op mijn dashboard?",
+        "en": "What if I don't see any data on my dashboard?",
+        "es": "¿Qué pasa si no veo datos en mi dashboard?"
+      },
+      "answer": {
+        "nl": "Dit is normaal bij een nieuwe account! Het dashboard toont data zodra je contacten, woningen en deals toevoegt. Volg de 'Quick Start' guide om binnen 5 minuten je eerste data te zien.",
+        "en": "This is normal for a new account! The dashboard shows data as soon as you add contacts, properties, and deals. Follow the 'Quick Start' guide to see your first data within 5 minutes.",
+        "es": "¡Esto es normal para una cuenta nueva! El dashboard muestra datos tan pronto como agregas contactos, propiedades y deals. Sigue la guía de 'Inicio Rápido' para ver tus primeros datos en 5 minutos."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe wissel ik tussen donkere en lichte modus?",
+        "en": "How do I switch between dark and light mode?",
+        "es": "¿Cómo cambio entre modo oscuro y claro?"
+      },
+      "answer": {
+        "nl": "Klik op je profiel icoon rechtsboven → Settings → Appearance. Kies tussen Light, Dark, of Auto (volgt je systeem instellingen).",
+        "en": "Click your profile icon at the top right → Settings → Appearance. Choose between Light, Dark, or Auto (follows your system settings).",
+        "es": "Haz clic en tu icono de perfil en la parte superior derecha → Configuración → Apariencia. Elige entre Claro, Oscuro o Auto (sigue la configuración de tu sistema)."
+      }
+    }
+  ]
+}

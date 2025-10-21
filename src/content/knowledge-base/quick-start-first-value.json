@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "id": "quick-start-first-value",
+    "version": "1.0.0",
+    "publishDate": "2025-10-21",
+    "updatedAt": "2025-10-21T10:00:00Z",
+    "authorId": "tesoro-team",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["onboarding", "quick-start", "getting-started", "first-steps", "setup"],
+    "featured": true,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro quick start", "crm snel starten", "eerste stappen tesoro", "crm setup guide", "tesoro beginnen"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Quick start: 5 minuten naar je eerste resultaat",
+      "en": "Quick Start: 5 Minutes to First Value",
+      "es": "Inicio rápido: 5 minutos para tu primer resultado"
+    },
+    "description": {
+      "nl": "De snelste manier om met Tesoro CRM te starten. Voeg je eerste contact en woning toe en zie direct de kracht van AI-powered property matching.",
+      "en": "The fastest way to get started with Tesoro CRM. Add your first contact and property and immediately see the power of AI-powered property matching.",
+      "es": "La forma más rápida de comenzar con Tesoro CRM. Agrega tu primer contacto y propiedad y ve inmediatamente el poder del matching de propiedades impulsado por IA."
+    }
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "time-to-value",
+      "variant": "success",
+      "title": {
+        "nl": "Waarom deze guide?",
+        "en": "Why This Guide?",
+        "es": "¿Por qué esta guía?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De meeste CRM systemen vereisen uren van setup voordat je iets ziet gebeuren. <strong>Niet Tesoro.</strong></p><p>Deze guide toont je de absolute minimum stappen om binnen 5 minuten je eerste 'wow moment' te ervaren: een perfect AI-gegenereerde property match.</p><p><strong>Wat je gaat doen:</strong></p><ul><li>1 contact toevoegen (2 minuten)</li><li>1 woning toevoegen (2 minuten)</li><li>AI match bekijken (1 minuut)</li></ul><p><strong>Resultaat:</strong> Je begrijpt direct hoe Tesoro je dagelijks werk automatiseert en versimpelt.</p>"
+        },
+        "en": {
+          "text": "<p>Most CRM systems require hours of setup before you see anything happen. <strong>Not Tesoro.</strong></p><p>This guide shows you the absolute minimum steps to experience your first 'wow moment' within 5 minutes: a perfect AI-generated property match.</p><p><strong>What you'll do:</strong></p><ul><li>Add 1 contact (2 minutes)</li><li>Add 1 property (2 minutes)</li><li>View AI match (1 minute)</li></ul><p><strong>Result:</strong> You immediately understand how Tesoro automates and simplifies your daily work.</p>"
+        },
+        "es": {
+          "text": "<p>La mayoría de los sistemas CRM requieren horas de configuración antes de que veas algo suceder. <strong>No Tesoro.</strong></p><p>Esta guía te muestra los pasos mínimos absolutos para experimentar tu primer 'momento wow' en 5 minutos: una coincidencia perfecta de propiedades generada por IA.</p><p><strong>Lo que harás:</strong></p><ul><li>Agregar 1 contacto (2 minutos)</li><li>Agregar 1 propiedad (2 minutos)</li><li>Ver coincidencia de IA (1 minuto)</li></ul><p><strong>Resultado:</strong> Entiendes inmediatamente cómo Tesoro automatiza y simplifica tu trabajo diario.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "quick-start-steps",
+      "title": {
+        "nl": "De 3-stappen quick start",
+        "en": "The 3-Step Quick Start",
+        "es": "El inicio rápido de 3 pasos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Voeg je eerste contact toe (2 minuten)",
+            "en": "Step 1: Add Your First Contact (2 Minutes)",
+            "es": "Paso 1: Agrega tu primer contacto (2 minutos)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik op <strong>'Add Contact'</strong> in je dashboard of gebruik de sneltoets Cmd/Ctrl + N.</p><p><strong>Vul ALLEEN deze velden in (de rest is optioneel):</strong></p><ul><li><strong>First Name:</strong> Bijvoorbeeld 'Maria'</li><li><strong>Last Name:</strong> Bijvoorbeeld 'Rodriguez'</li><li><strong>Email:</strong> Bijvoorbeeld 'maria@example.com'</li><li><strong>Phone:</strong> Bijvoorbeeld '+34 600 123 456'</li></ul><p><strong>Property Preferences (belangrijk voor AI matching!):</strong></p><ul><li><strong>Type:</strong> Selecteer 'Apartment'</li><li><strong>Budget:</strong> Vul in '€250,000 - €350,000'</li><li><strong>Location:</strong> Vul in 'Barcelona, Spain'</li><li><strong>Bedrooms:</strong> Selecteer '2-3'</li><li><strong>Min m²:</strong> Vul in '80'</li></ul><p>Klik op <strong>'Save Contact'</strong>. Klaar! Je eerste contact staat in het systeem.</p><p><strong>Tip:</strong> Gebruik een echt contact als je wilt, of een fictief voorbeeld zoals hierboven. Het doel is om de flow te begrijpen.</p>"
+            },
+            "en": {
+              "text": "<p>Click <strong>'Add Contact'</strong> on your dashboard or use the shortcut Cmd/Ctrl + N.</p><p><strong>Fill in ONLY these fields (the rest is optional):</strong></p><ul><li><strong>First Name:</strong> For example 'Maria'</li><li><strong>Last Name:</strong> For example 'Rodriguez'</li><li><strong>Email:</strong> For example 'maria@example.com'</li><li><strong>Phone:</strong> For example '+34 600 123 456'</li></ul><p><strong>Property Preferences (important for AI matching!):</strong></p><ul><li><strong>Type:</strong> Select 'Apartment'</li><li><strong>Budget:</strong> Enter '€250,000 - €350,000'</li><li><strong>Location:</strong> Enter 'Barcelona, Spain'</li><li><strong>Bedrooms:</strong> Select '2-3'</li><li><strong>Min m²:</strong> Enter '80'</li></ul><p>Click <strong>'Save Contact'</strong>. Done! Your first contact is in the system.</p><p><strong>Tip:</strong> Use a real contact if you want, or a fictional example like above. The goal is to understand the flow.</p>"
+            },
+            "es": {
+              "text": "<p>Haz clic en <strong>'Agregar Contacto'</strong> en tu dashboard o usa el atajo Cmd/Ctrl + N.</p><p><strong>Completa SOLO estos campos (el resto es opcional):</strong></p><ul><li><strong>Nombre:</strong> Por ejemplo 'Maria'</li><li><strong>Apellido:</strong> Por ejemplo 'Rodriguez'</li><li><strong>Email:</strong> Por ejemplo 'maria@example.com'</li><li><strong>Teléfono:</strong> Por ejemplo '+34 600 123 456'</li></ul><p><strong>Preferencias de Propiedad (¡importante para el matching de IA!):</strong></p><ul><li><strong>Tipo:</strong> Selecciona 'Apartamento'</li><li><strong>Presupuesto:</strong> Ingresa '€250,000 - €350,000'</li><li><strong>Ubicación:</strong> Ingresa 'Barcelona, España'</li><li><strong>Dormitorios:</strong> Selecciona '2-3'</li><li><strong>Min m²:</strong> Ingresa '80'</li></ul><p>Haz clic en <strong>'Guardar Contacto'</strong>. ¡Listo! Tu primer contacto está en el sistema.</p><p><strong>Tip:</strong> Usa un contacto real si quieres, o un ejemplo ficticio como el de arriba. El objetivo es entender el flujo.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Voeg je eerste woning toe (2 minuten)",
+            "en": "Step 2: Add Your First Property (2 Minutes)",
+            "es": "Paso 2: Agrega tu primera propiedad (2 minutos)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik op <strong>'Add Property'</strong> in je dashboard of gebruik Cmd/Ctrl + P.</p><p><strong>Vul deze essentiële velden in:</strong></p><ul><li><strong>Title:</strong> Bijvoorbeeld 'Modern Apartment in Eixample'</li><li><strong>Type:</strong> Selecteer 'Apartment' (hetzelfde als je contact!)</li><li><strong>Price:</strong> Vul in '€295,000' (binnen budget van je contact)</li><li><strong>Location:</strong> Vul in 'Eixample, Barcelona, Spain'</li><li><strong>Bedrooms:</strong> Selecteer '2'</li><li><strong>Bathrooms:</strong> Selecteer '1'</li><li><strong>Size (m²):</strong> Vul in '85'</li><li><strong>Status:</strong> Selecteer 'Available'</li></ul><p><strong>Optioneel maar aanbevolen:</strong></p><ul><li><strong>Description:</strong> 'Beautiful 2-bedroom apartment in the heart of Eixample with natural light and modern finishes.'</li><li><strong>Features:</strong> Selecteer 'Balcony', 'Elevator', 'Air Conditioning'</li></ul><p>Klik op <strong>'Save Property'</strong>.</p><p><strong>Wat gebeurt er nu? De AI matching engine analyseert deze woning en vergelijkt automatisch met alle contacten in je database.</strong></p>"
+            },
+            "en": {
+              "text": "<p>Click <strong>'Add Property'</strong> on your dashboard or use Cmd/Ctrl + P.</p><p><strong>Fill in these essential fields:</strong></p><ul><li><strong>Title:</strong> For example 'Modern Apartment in Eixample'</li><li><strong>Type:</strong> Select 'Apartment' (same as your contact!)</li><li><strong>Price:</strong> Enter '€295,000' (within your contact's budget)</li><li><strong>Location:</strong> Enter 'Eixample, Barcelona, Spain'</li><li><strong>Bedrooms:</strong> Select '2'</li><li><strong>Bathrooms:</strong> Select '1'</li><li><strong>Size (m²):</strong> Enter '85'</li><li><strong>Status:</strong> Select 'Available'</li></ul><p><strong>Optional but recommended:</strong></p><ul><li><strong>Description:</strong> 'Beautiful 2-bedroom apartment in the heart of Eixample with natural light and modern finishes.'</li><li><strong>Features:</strong> Select 'Balcony', 'Elevator', 'Air Conditioning'</li></ul><p>Click <strong>'Save Property'</strong>.</p><p><strong>What happens now? The AI matching engine analyzes this property and automatically compares it with all contacts in your database.</strong></p>"
+            },
+            "es": {
+              "text": "<p>Haz clic en <strong>'Agregar Propiedad'</strong> en tu dashboard o usa Cmd/Ctrl + P.</p><p><strong>Completa estos campos esenciales:</strong></p><ul><li><strong>Título:</strong> Por ejemplo 'Apartamento Moderno en Eixample'</li><li><strong>Tipo:</strong> Selecciona 'Apartamento' (¡igual que tu contacto!)</li><li><strong>Precio:</strong> Ingresa '€295,000' (dentro del presupuesto de tu contacto)</li><li><strong>Ubicación:</strong> Ingresa 'Eixample, Barcelona, España'</li><li><strong>Dormitorios:</strong> Selecciona '2'</li><li><strong>Baños:</strong> Selecciona '1'</li><li><strong>Tamaño (m²):</strong> Ingresa '85'</li><li><strong>Estado:</strong> Selecciona 'Disponible'</li></ul><p><strong>Opcional pero recomendado:</strong></p><ul><li><strong>Descripción:</strong> 'Hermoso apartamento de 2 dormitorios en el corazón de Eixample con luz natural y acabados modernos.'</li><li><strong>Características:</strong> Selecciona 'Balcón', 'Ascensor', 'Aire Acondicionado'</li></ul><p>Haz clic en <strong>'Guardar Propiedad'</strong>.</p><p><strong>¿Qué sucede ahora? El motor de matching de IA analiza esta propiedad y la compara automáticamente con todos los contactos en tu base de datos.</strong></p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Bekijk je eerste AI match (1 minuut)",
+            "en": "Step 3: View Your First AI Match (1 Minute)",
+            "es": "Paso 3: Ve tu primera coincidencia de IA (1 minuto)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Zodra je de woning opslaat, gebeuren er drie dingen automatisch:</p><p><strong>1. Notificatie verschijnt:</strong></p><ul><li>Rechtsboven zie je een notificatie: '1 New Property Match'</li><li>Klik erop om de details te bekijken</li></ul><p><strong>2. Match score wordt berekend:</strong></p><ul><li>Je ziet een percentage (waarschijnlijk 85-95% voor dit voorbeeld)</li><li>De AI heeft 69+ attributen vergeleken</li><li>Groen = excellent match, Oranje = good match, Rood = poor match</li></ul><p><strong>3. Geautomatiseerde email (optioneel):</strong></p><ul><li>Als je auto-notify hebt ingeschakeld in Settings</li><li>Wordt Maria automatisch geïnformeerd over deze nieuwe woning</li><li>Met een mooie property preview en 'Schedule Viewing' knop</li></ul><p><strong>Probeer dit:</strong></p><ul><li>Ga naar je contact 'Maria Rodriguez'</li><li>Klik op de tab 'Matched Properties'</li><li>Je ziet de apartment met match score en waarom het een match is</li><li>Klik op 'Send to Client' om een gepersonaliseerde email te sturen</li></ul><p><strong>Dit is de kracht van Tesoro CRM!</strong> Binnen 5 minuten heb je een volledig werkende AI matching systeem dat uren werk bespaart.</p>"
+            },
+            "en": {
+              "text": "<p>As soon as you save the property, three things happen automatically:</p><p><strong>1. Notification appears:</strong></p><ul><li>Top right you'll see a notification: '1 New Property Match'</li><li>Click it to view the details</li></ul><p><strong>2. Match score is calculated:</strong></p><ul><li>You'll see a percentage (likely 85-95% for this example)</li><li>The AI has compared 69+ attributes</li><li>Green = excellent match, Orange = good match, Red = poor match</li></ul><p><strong>3. Automated email (optional):</strong></p><ul><li>If you've enabled auto-notify in Settings</li><li>Maria is automatically informed about this new property</li><li>With a beautiful property preview and 'Schedule Viewing' button</li></ul><p><strong>Try this:</strong></p><ul><li>Go to your contact 'Maria Rodriguez'</li><li>Click on the 'Matched Properties' tab</li><li>You'll see the apartment with match score and why it's a match</li><li>Click 'Send to Client' to send a personalized email</li></ul><p><strong>This is the power of Tesoro CRM!</strong> Within 5 minutes you have a fully working AI matching system that saves hours of work.</p>"
+            },
+            "es": {
+              "text": "<p>Tan pronto como guardes la propiedad, suceden tres cosas automáticamente:</p><p><strong>1. Aparece notificación:</strong></p><ul><li>En la parte superior derecha verás una notificación: '1 Nueva Coincidencia de Propiedad'</li><li>Haz clic para ver los detalles</li></ul><p><strong>2. Se calcula la puntuación de coincidencia:</strong></p><ul><li>Verás un porcentaje (probablemente 85-95% para este ejemplo)</li><li>La IA ha comparado más de 69 atributos</li><li>Verde = excelente coincidencia, Naranja = buena coincidencia, Rojo = coincidencia pobre</li></ul><p><strong>3. Email automatizado (opcional):</strong></p><ul><li>Si has habilitado auto-notificar en Configuración</li><li>Maria es informada automáticamente sobre esta nueva propiedad</li><li>Con una hermosa vista previa de la propiedad y botón 'Programar Visita'</li></ul><p><strong>Prueba esto:</strong></p><ul><li>Ve a tu contacto 'Maria Rodriguez'</li><li>Haz clic en la pestaña 'Propiedades Coincidentes'</li><li>Verás el apartamento con puntuación de coincidencia y por qué es una coincidencia</li><li>Haz clic en 'Enviar a Cliente' para enviar un email personalizado</li></ul><p><strong>¡Este es el poder de Tesoro CRM!</strong> En 5 minutos tienes un sistema de matching de IA completamente funcional que ahorra horas de trabajo.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "wow-moment",
+      "variant": "success",
+      "title": {
+        "nl": "Je eerste 'wow moment'",
+        "en": "Your First 'Wow Moment'",
+        "es": "Tu primer 'momento wow'"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Gefeliciteerd! Je hebt zojuist ervaren waarom Tesoro anders is:</strong></p><ul><li>Geen uren van setup - direct aan de slag</li><li>AI doet het zware werk - niet jij</li><li>Automatische matches - geen handmatig zoeken</li><li>Professionele communicatie - met één klik</li></ul><p>Dit is wat je nu elke dag bespaart met Tesoro voor elk contact en elke woning.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Congratulations! You just experienced why Tesoro is different:</strong></p><ul><li>No hours of setup - get started immediately</li><li>AI does the heavy lifting - not you</li><li>Automatic matches - no manual searching</li><li>Professional communication - with one click</li></ul><p>This is what you now save every day with Tesoro for every contact and every property.</p>"
+        },
+        "es": {
+          "text": "<p><strong>¡Felicitaciones! Acabas de experimentar por qué Tesoro es diferente:</strong></p><ul><li>Sin horas de configuración - comienza de inmediato</li><li>La IA hace el trabajo pesado - no tú</li><li>Coincidencias automáticas - sin búsqueda manual</li><li>Comunicación profesional - con un clic</li></ul><p>Esto es lo que ahora ahorras cada día con Tesoro para cada contacto y cada propiedad.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "next-steps",
+      "variant": "info",
+      "title": {
+        "nl": "Volgende stappen",
+        "en": "Next Steps",
+        "es": "Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je de basis begrijpt, tijd om Tesoro echt in te richten voor dagelijks gebruik:</p><ol><li><strong>Import je bestaande contacten</strong><br/>Settings → Import → Upload CSV met al je contacten</li><li><strong>Voeg meer woningen toe</strong><br/>Of synchroniseer met je bestaande listing platform</li><li><strong>Configureer email templates</strong><br/>Settings → Email Templates → Personaliseer je communicatie</li><li><strong>Nodig je team uit</strong><br/>Settings → Team → Add team members</li><li><strong>Lees de Essential Setup Checklist</strong><br/>Voor complete first-week setup</li></ol><p><strong>Vragen?</strong> Chat met ons team (rechtsonder) of bekijk video tutorials in het Help menu.</p>"
+        },
+        "en": {
+          "text": "<p>Now that you understand the basics, time to really set up Tesoro for daily use:</p><ol><li><strong>Import your existing contacts</strong><br/>Settings → Import → Upload CSV with all your contacts</li><li><strong>Add more properties</strong><br/>Or sync with your existing listing platform</li><li><strong>Configure email templates</strong><br/>Settings → Email Templates → Personalize your communication</li><li><strong>Invite your team</strong><br/>Settings → Team → Add team members</li><li><strong>Read the Essential Setup Checklist</strong><br/>For complete first-week setup</li></ol><p><strong>Questions?</strong> Chat with our team (bottom right) or watch video tutorials in the Help menu.</p>"
+        },
+        "es": {
+          "text": "<p>Ahora que entiendes lo básico, es hora de configurar Tesoro realmente para uso diario:</p><ol><li><strong>Importa tus contactos existentes</strong><br/>Configuración → Importar → Sube CSV con todos tus contactos</li><li><strong>Agrega más propiedades</strong><br/>O sincroniza con tu plataforma de listados existente</li><li><strong>Configura plantillas de email</strong><br/>Configuración → Plantillas de Email → Personaliza tu comunicación</li><li><strong>Invita a tu equipo</strong><br/>Configuración → Equipo → Agregar miembros del equipo</li><li><strong>Lee la lista de verificación de configuración esencial</strong><br/>Para configuración completa de la primera semana</li></ol><p><strong>¿Preguntas?</strong> Chatea con nuestro equipo (abajo a la derecha) o mira tutoriales en video en el menú de Ayuda.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "first-login-dashboard-tour",
+    "essential-setup-checklist",
+    "basic-contact-management-tutorial",
+    "property-management-tutorial",
+    "ai-property-matching-advanced"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat als mijn contact en woning niet matchen?",
+        "en": "What if my contact and property don't match?",
+        "es": "¿Qué pasa si mi contacto y propiedad no coinciden?"
+      },
+      "answer": {
+        "nl": "Dat is oké! De AI matching werkt alleen als er overlap is tussen property preferences en property details. Probeer een woning toe te voegen die binnen het budget en locatie voorkeuren van je contact valt. Of voeg een nieuw contact toe met andere voorkeuren.",
+        "en": "That's okay! AI matching only works if there's overlap between property preferences and property details. Try adding a property that falls within your contact's budget and location preferences. Or add a new contact with different preferences.",
+        "es": "¡Está bien! El matching de IA solo funciona si hay superposición entre las preferencias de propiedad y los detalles de la propiedad. Intenta agregar una propiedad que esté dentro del presupuesto y las preferencias de ubicación de tu contacto. O agrega un nuevo contacto con preferencias diferentes."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik echte contacten en woningen gebruiken?",
+        "en": "Can I use real contacts and properties?",
+        "es": "¿Puedo usar contactos y propiedades reales?"
+      },
+      "answer": {
+        "nl": "Absoluut! Deze guide gebruikt voorbeelden, maar je kunt direct je eigen data invoeren. Alle data die je toevoegt blijft privé en secure binnen je eigen Tesoro account.",
+        "en": "Absolutely! This guide uses examples, but you can directly enter your own data. All data you add stays private and secure within your own Tesoro account.",
+        "es": "¡Absolutamente! Esta guía usa ejemplos, pero puedes ingresar directamente tus propios datos. Todos los datos que agregues permanecen privados y seguros dentro de tu propia cuenta de Tesoro."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel tijd bespaar ik echt met AI matching?",
+        "en": "How much time do I really save with AI matching?",
+        "es": "¿Cuánto tiempo realmente ahorro con el matching de IA?"
+      },
+      "answer": {
+        "nl": "Gemiddeld 2-3 uur per dag. Zonder AI zou je handmatig door je woningen moeten scrollen, criteria vergelijken, en contacten bellen. Tesoro doet dit automatisch voor elke nieuwe woning en elk nieuw contact. Bij 10+ nieuwe listings per week bespaar je 20-30 uur per maand.",
+        "en": "On average 2-3 hours per day. Without AI, you'd manually scroll through your properties, compare criteria, and call contacts. Tesoro does this automatically for every new property and every new contact. With 10+ new listings per week, you save 20-30 hours per month.",
+        "es": "En promedio 2-3 horas por día. Sin IA, tendrías que desplazarte manualmente por tus propiedades, comparar criterios y llamar a contactos. Tesoro hace esto automáticamente para cada nueva propiedad y cada nuevo contacto. Con más de 10 nuevos listados por semana, ahorras 20-30 horas por mes."
+      }
+    }
+  ]
+}

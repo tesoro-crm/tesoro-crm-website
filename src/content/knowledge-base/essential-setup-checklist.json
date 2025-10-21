@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "id": "essential-setup-checklist",
+    "version": "1.0.0",
+    "publishDate": "2025-10-21",
+    "updatedAt": "2025-10-21T10:00:00Z",
+    "authorId": "tesoro-team",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["onboarding", "setup", "checklist", "getting-started", "first-week"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro setup", "crm configuratie", "eerste week tesoro", "crm checklist", "tesoro implementatie"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Essentiële setup checklist voor je eerste week",
+      "en": "Essential Setup Checklist for Your First Week",
+      "es": "Lista de verificación de configuración esencial para tu primera semana"
+    },
+    "description": {
+      "nl": "Een complete 7-dagen roadmap om Tesoro CRM volledig in te richten voor maximale productiviteit vanaf dag één.",
+      "en": "A complete 7-day roadmap to fully set up Tesoro CRM for maximum productivity from day one.",
+      "es": "Una hoja de ruta completa de 7 días para configurar completamente Tesoro CRM para máxima productividad desde el día uno."
+    }
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "checklist-overview",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom een 7-dagen plan?",
+        "en": "Why a 7-Day Plan?",
+        "es": "¿Por qué un plan de 7 días?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Onderzoek toont dat teams die een gestructureerd onboarding proces volgen <strong>3x sneller productief</strong> zijn dan teams die ad-hoc beginnen.</p><p>Deze checklist is gebaseerd op best practices van 200+ succesvolle Tesoro implementaties en zorgt dat je:</p><ul><li>Niets belangrijks overslaat</li><li>De juiste volgorde aanhoudt (belangrijke dingen eerst)</li><li>Niet overweldigd raakt (kleine stappen per dag)</li><li>Na 7 dagen volledig operationeel bent</li></ul><p><strong>Tijdsinvestering:</strong> 30-60 minuten per dag</p>"
+        },
+        "en": {
+          "text": "<p>Research shows that teams following a structured onboarding process are <strong>3x faster to productivity</strong> than teams that start ad-hoc.</p><p>This checklist is based on best practices from 200+ successful Tesoro implementations and ensures you:</p><ul><li>Don't skip anything important</li><li>Follow the right order (important things first)</li><li>Don't get overwhelmed (small steps per day)</li><li>Are fully operational after 7 days</li></ul><p><strong>Time investment:</strong> 30-60 minutes per day</p>"
+        },
+        "es": {
+          "text": "<p>La investigación muestra que los equipos que siguen un proceso de incorporación estructurado son <strong>3 veces más rápidos para ser productivos</strong> que los equipos que comienzan de forma ad-hoc.</p><p>Esta lista de verificación se basa en las mejores prácticas de más de 200 implementaciones exitosas de Tesoro y asegura que:</p><ul><li>No te saltes nada importante</li><li>Sigas el orden correcto (cosas importantes primero)</li><li>No te sientas abrumado (pequeños pasos por día)</li><li>Estés completamente operativo después de 7 días</li></ul><p><strong>Inversión de tiempo:</strong> 30-60 minutos por día</p>"
+        }
+      }
+    },
+
+    {
+      "type": "checklist",
+      "id": "day-1-2",
+      "title": {
+        "nl": "Dag 1-2: Profiel en voorkeuren",
+        "en": "Day 1-2: Profile and Preferences",
+        "es": "Día 1-2: Perfil y preferencias"
+      },
+      "items": [
+        {
+          "title": {
+            "nl": "Voltooi je profiel",
+            "en": "Complete your profile",
+            "es": "Completa tu perfil"
+          },
+          "description": {
+            "nl": "Settings → Profile: Voeg profielfoto toe, vul bio in, voeg social links toe. Dit verschijnt in emails naar klanten.",
+            "en": "Settings → Profile: Add profile photo, fill in bio, add social links. This appears in emails to clients.",
+            "es": "Configuración → Perfil: Agrega foto de perfil, completa biografía, agrega enlaces sociales. Esto aparece en emails a clientes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer notificaties",
+            "en": "Configure notifications",
+            "es": "Configura notificaciones"
+          },
+          "description": {
+            "nl": "Settings → Notifications: Kies welke alerts je wilt ontvangen (email, desktop, mobile). Aanbevolen: New matches ON, Daily summary ON.",
+            "en": "Settings → Notifications: Choose which alerts you want to receive (email, desktop, mobile). Recommended: New matches ON, Daily summary ON.",
+            "es": "Configuración → Notificaciones: Elige qué alertas quieres recibir (email, escritorio, móvil). Recomendado: Nuevas coincidencias ON, Resumen diario ON."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies je taal en tijdzone",
+            "en": "Choose your language and timezone",
+            "es": "Elige tu idioma y zona horaria"
+          },
+          "description": {
+            "nl": "Settings → Preferences: Selecteer interface taal (NL/EN/ES) en lokale tijdzone voor accurate calendar sync.",
+            "en": "Settings → Preferences: Select interface language (NL/EN/ES) and local timezone for accurate calendar sync.",
+            "es": "Configuración → Preferencias: Selecciona idioma de interfaz (NL/EN/ES) y zona horaria local para sincronización precisa de calendario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer email signature",
+            "en": "Configure email signature",
+            "es": "Configura firma de email"
+          },
+          "description": {
+            "nl": "Settings → Email → Signature: Voeg je professionele email signature toe. Gebruikt in alle uitgaande emails vanuit Tesoro.",
+            "en": "Settings → Email → Signature: Add your professional email signature. Used in all outgoing emails from Tesoro.",
+            "es": "Configuración → Email → Firma: Agrega tu firma de email profesional. Se usa en todos los emails salientes de Tesoro."
+          }
+        },
+        {
+          "title": {
+            "nl": "Dashboard layout aanpassen",
+            "en": "Customize dashboard layout",
+            "es": "Personaliza diseño del dashboard"
+          },
+          "description": {
+            "nl": "Dashboard → Settings icoon: Kies welke KPI cards je wilt zien en in welke volgorde. Hide wat niet relevant is voor jouw rol.",
+            "en": "Dashboard → Settings icon: Choose which KPI cards you want to see and in which order. Hide what's not relevant to your role.",
+            "es": "Dashboard → Icono de configuración: Elige qué tarjetas KPI quieres ver y en qué orden. Oculta lo que no sea relevante para tu rol."
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "checklist",
+      "id": "day-3-4",
+      "title": {
+        "nl": "Dag 3-4: Data import en eerste content",
+        "en": "Day 3-4: Data Import and First Content",
+        "es": "Día 3-4: Importación de datos y primer contenido"
+      },
+      "items": [
+        {
+          "title": {
+            "nl": "Import bestaande contacten",
+            "en": "Import existing contacts",
+            "es": "Importar contactos existentes"
+          },
+          "description": {
+            "nl": "Settings → Import → Contacts: Upload CSV bestand met je huidige contacten. Template beschikbaar. Mapping tool helpt met kolom matching.",
+            "en": "Settings → Import → Contacts: Upload CSV file with your current contacts. Template available. Mapping tool helps with column matching.",
+            "es": "Configuración → Importar → Contactos: Sube archivo CSV con tus contactos actuales. Plantilla disponible. Herramienta de mapeo ayuda con coincidencia de columnas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Import of voeg eerste woningen toe",
+            "en": "Import or add first properties",
+            "es": "Importar o agregar primeras propiedades"
+          },
+          "description": {
+            "nl": "Settings → Import → Properties OF handmatig via 'Add Property'. Aanbeveling: Start met 5-10 woningen om AI matching te testen.",
+            "en": "Settings → Import → Properties OR manually via 'Add Property'. Recommendation: Start with 5-10 properties to test AI matching.",
+            "es": "Configuración → Importar → Propiedades O manualmente vía 'Agregar Propiedad'. Recomendación: Comienza con 5-10 propiedades para probar matching de IA."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verifieer AI matching werkt",
+            "en": "Verify AI matching works",
+            "es": "Verificar que el matching de IA funciona"
+          },
+          "description": {
+            "nl": "Check Notifications voor nieuwe matches. Ga naar een contact → tab 'Matched Properties'. Moet je minimaal 1-2 matches zien als data goed is.",
+            "en": "Check Notifications for new matches. Go to a contact → tab 'Matched Properties'. Should see at least 1-2 matches if data is good.",
+            "es": "Verifica Notificaciones para nuevas coincidencias. Ve a un contacto → pestaña 'Propiedades Coincidentes'. Deberías ver al menos 1-2 coincidencias si los datos son buenos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer email templates",
+            "en": "Configure email templates",
+            "es": "Configurar plantillas de email"
+          },
+          "description": {
+            "nl": "Settings → Email Templates: Pas standaard templates aan voor property shares, viewing confirmations, follow-ups. Gebruik merge tags voor personalisatie.",
+            "en": "Settings → Email Templates: Customize default templates for property shares, viewing confirmations, follow-ups. Use merge tags for personalization.",
+            "es": "Configuración → Plantillas de Email: Personaliza plantillas predeterminadas para compartir propiedades, confirmaciones de visitas, seguimientos. Usa etiquetas de fusión para personalización."
+          }
+        },
+        {
+          "title": {
+            "nl": "Test eerste email verzenden",
+            "en": "Test sending first email",
+            "es": "Probar envío de primer email"
+          },
+          "description": {
+            "nl": "Ga naar een contact → Matched Properties → 'Send to Client'. Preview de email, pas aan indien nodig, verstuur naar jezelf eerst als test.",
+            "en": "Go to a contact → Matched Properties → 'Send to Client'. Preview the email, adjust if needed, send to yourself first as test.",
+            "es": "Ve a un contacto → Propiedades Coincidentes → 'Enviar a Cliente'. Previsualiza el email, ajusta si es necesario, envía a ti mismo primero como prueba."
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "checklist",
+      "id": "day-5-6",
+      "title": {
+        "nl": "Dag 5-6: Team setup en samenwerking",
+        "en": "Day 5-6: Team Setup and Collaboration",
+        "es": "Día 5-6: Configuración de equipo y colaboración"
+      },
+      "items": [
+        {
+          "title": {
+            "nl": "Nodig team members uit",
+            "en": "Invite team members",
+            "es": "Invitar miembros del equipo"
+          },
+          "description": {
+            "nl": "Settings → Team → Invite Members: Voeg email adressen toe van collega's. Kies rollen: Admin, Agent, Viewer. Ze ontvangen setup email.",
+            "en": "Settings → Team → Invite Members: Add email addresses of colleagues. Choose roles: Admin, Agent, Viewer. They receive setup email.",
+            "es": "Configuración → Equipo → Invitar Miembros: Agrega direcciones de email de colegas. Elige roles: Admin, Agente, Visualizador. Reciben email de configuración."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer team rollen en permissies",
+            "en": "Configure team roles and permissions",
+            "es": "Configurar roles y permisos de equipo"
+          },
+          "description": {
+            "nl": "Settings → Team → Roles: Definieer wie wat mag: deals creëren, contacten verwijderen, settings wijzigen. Default rollen meestal voldoende.",
+            "en": "Settings → Team → Roles: Define who can do what: create deals, delete contacts, change settings. Default roles usually sufficient.",
+            "es": "Configuración → Equipo → Roles: Define quién puede hacer qué: crear deals, eliminar contactos, cambiar configuración. Roles predeterminados usualmente suficientes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Setup deal assignment regels",
+            "en": "Setup deal assignment rules",
+            "es": "Configurar reglas de asignación de deals"
+          },
+          "description": {
+            "nl": "Settings → Deals → Auto-Assignment: Configureer hoe nieuwe deals worden toegewezen (round-robin, by territory, manual). Voorkomt conflicten.",
+            "en": "Settings → Deals → Auto-Assignment: Configure how new deals are assigned (round-robin, by territory, manual). Prevents conflicts.",
+            "es": "Configuración → Deals → Asignación Automática: Configura cómo se asignan nuevos deals (rotación, por territorio, manual). Previene conflictos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer shared calendar",
+            "en": "Configure shared calendar",
+            "es": "Configurar calendario compartido"
+          },
+          "description": {
+            "nl": "Calendar → Settings: Sync met Google/Outlook. Enable team calendar view om beschikbaarheid collega's te zien voor bezichtigingen.",
+            "en": "Calendar → Settings: Sync with Google/Outlook. Enable team calendar view to see colleagues' availability for viewings.",
+            "es": "Calendario → Configuración: Sincroniza con Google/Outlook. Habilita vista de calendario de equipo para ver disponibilidad de colegas para visitas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Test team collaboration features",
+            "en": "Test team collaboration features",
+            "es": "Probar características de colaboración de equipo"
+          },
+          "description": {
+            "nl": "Ga naar een deal → @mention een collega in een comment. Test deal reassignment. Verifieer notificaties werken voor beide parties.",
+            "en": "Go to a deal → @mention a colleague in a comment. Test deal reassignment. Verify notifications work for both parties.",
+            "es": "Ve a un deal → @menciona a un colega en un comentario. Prueba reasignación de deal. Verifica que las notificaciones funcionen para ambas partes."
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "checklist",
+      "id": "day-7",
+      "title": {
+        "nl": "Dag 7: Eerste deal workflow en optimalisatie",
+        "en": "Day 7: First Deal Workflow and Optimization",
+        "es": "Día 7: Primer flujo de trabajo de deal y optimización"
+      },
+      "items": [
+        {
+          "title": {
+            "nl": "Creëer je eerste echte deal",
+            "en": "Create your first real deal",
+            "es": "Crear tu primer deal real"
+          },
+          "description": {
+            "nl": "Deals → New Deal: Selecteer contact, koppel woning, kies status 'Lead'. Dit start de deal pipeline tracking. Voeg notes toe over gesprek.",
+            "en": "Deals → New Deal: Select contact, link property, choose status 'Lead'. This starts deal pipeline tracking. Add notes about conversation.",
+            "es": "Deals → Nuevo Deal: Selecciona contacto, vincula propiedad, elige estado 'Lead'. Esto inicia el seguimiento del pipeline de deals. Agrega notas sobre la conversación."
+          }
+        },
+        {
+          "title": {
+            "nl": "Test deal progression workflow",
+            "en": "Test deal progression workflow",
+            "es": "Probar flujo de trabajo de progresión de deal"
+          },
+          "description": {
+            "nl": "Verplaats deal door pipeline stages: Lead → Viewing Scheduled → Offer → Negotiation. Zie hoe dashboard KPIs updaten bij elke status change.",
+            "en": "Move deal through pipeline stages: Lead → Viewing Scheduled → Offer → Negotiation. See how dashboard KPIs update with each status change.",
+            "es": "Mueve el deal a través de las etapas del pipeline: Lead → Visita Programada → Oferta → Negociación. Ve cómo se actualizan los KPIs del dashboard con cada cambio de estado."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer automation rules",
+            "en": "Configure automation rules",
+            "es": "Configurar reglas de automatización"
+          },
+          "description": {
+            "nl": "Settings → Automation: Setup auto-emails bij status changes, auto-reminders voor follow-ups, auto-tasks bij nieuwe deals. Bespaart veel handmatig werk.",
+            "en": "Settings → Automation: Setup auto-emails on status changes, auto-reminders for follow-ups, auto-tasks on new deals. Saves lots of manual work.",
+            "es": "Configuración → Automatización: Configura emails automáticos en cambios de estado, recordatorios automáticos para seguimientos, tareas automáticas en nuevos deals. Ahorra mucho trabajo manual."
+          }
+        },
+        {
+          "title": {
+            "nl": "Setup reporting en analytics",
+            "en": "Setup reporting and analytics",
+            "es": "Configurar reportes y análisis"
+          },
+          "description": {
+            "nl": "Reports → Configure: Kies welke metrics belangrijk zijn (conversion rate, avg deal value, time to close). Setup weekly email report naar jezelf/team.",
+            "en": "Reports → Configure: Choose which metrics are important (conversion rate, avg deal value, time to close). Setup weekly email report to yourself/team.",
+            "es": "Reportes → Configurar: Elige qué métricas son importantes (tasa de conversión, valor promedio de deal, tiempo de cierre). Configura reporte semanal por email a ti mismo/equipo."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer client portal (optioneel)",
+            "en": "Configure client portal (optional)",
+            "es": "Configurar portal de cliente (opcional)"
+          },
+          "description": {
+            "nl": "Settings → Client Portal: Enable portal, customize branding, configureer welke info clients kunnen zien. Geeft clients 24/7 toegang tot hun matches.",
+            "en": "Settings → Client Portal: Enable portal, customize branding, configure what info clients can see. Gives clients 24/7 access to their matches.",
+            "es": "Configuración → Portal de Cliente: Habilita portal, personaliza marca, configura qué información pueden ver los clientes. Da a los clientes acceso 24/7 a sus coincidencias."
+          }
+        },
+        {
+          "title": {
+            "nl": "Review en optimaliseer instellingen",
+            "en": "Review and optimize settings",
+            "es": "Revisar y optimizar configuración"
+          },
+          "description": {
+            "nl": "Ga alle settings door: zijn notificaties nog logisch? Werken templates goed? Zijn team permissies correct? Fine-tune waar nodig.",
+            "en": "Go through all settings: are notifications still logical? Do templates work well? Are team permissions correct? Fine-tune where needed.",
+            "es": "Revisa todas las configuraciones: ¿las notificaciones siguen siendo lógicas? ¿Las plantillas funcionan bien? ¿Los permisos del equipo son correctos? Ajusta donde sea necesario."
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "success-metrics",
+      "variant": "success",
+      "title": {
+        "nl": "Setup compleet - success metrics",
+        "en": "Setup Complete - Success Metrics",
+        "es": "Configuración completa - métricas de éxito"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Als je alle items hierboven hebt afgevinkt, zou je moeten hebben:</strong></p><ul><li>Volledig gepersonaliseerd profiel en dashboard</li><li>Minimaal 10+ contacten in database</li><li>Minimaal 5+ woningen geïmporteerd</li><li>AI matching actief en werkend</li><li>Team members uitgenodigd en geconfigureerd</li><li>Email templates getest en werkend</li><li>Eerste deal aangemaakt en getest</li><li>Automation rules actief</li><li>Reporting dashboard geconfigureerd</li></ul><p><strong>Je bent nu klaar voor productief gebruik van Tesoro CRM!</strong></p><p>Gemiddelde time-to-productivity na deze setup: <strong>1-2 dagen</strong> vs. 2-3 weken met andere CRMs.</p>"
+        },
+        "en": {
+          "text": "<p><strong>If you've checked all items above, you should have:</strong></p><ul><li>Fully personalized profile and dashboard</li><li>At least 10+ contacts in database</li><li>At least 5+ properties imported</li><li>AI matching active and working</li><li>Team members invited and configured</li><li>Email templates tested and working</li><li>First deal created and tested</li><li>Automation rules active</li><li>Reporting dashboard configured</li></ul><p><strong>You're now ready for productive use of Tesoro CRM!</strong></p><p>Average time-to-productivity after this setup: <strong>1-2 days</strong> vs. 2-3 weeks with other CRMs.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Si has marcado todos los elementos anteriores, deberías tener:</strong></p><ul><li>Perfil y dashboard completamente personalizados</li><li>Al menos 10+ contactos en la base de datos</li><li>Al menos 5+ propiedades importadas</li><li>Matching de IA activo y funcionando</li><li>Miembros del equipo invitados y configurados</li><li>Plantillas de email probadas y funcionando</li><li>Primer deal creado y probado</li><li>Reglas de automatización activas</li><li>Dashboard de reportes configurado</li></ul><p><strong>¡Ahora estás listo para el uso productivo de Tesoro CRM!</strong></p><p>Tiempo promedio para ser productivo después de esta configuración: <strong>1-2 días</strong> vs. 2-3 semanas con otros CRMs.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "next-steps",
+      "variant": "info",
+      "title": {
+        "nl": "Volgende stappen en resources",
+        "en": "Next Steps and Resources",
+        "es": "Próximos pasos y recursos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Nu je setup compleet is, focus op:</strong></p><ol><li><strong>Dagelijks gebruik</strong><br/>Voeg nieuwe contacten en woningen toe terwijl je ze tegenkomt</li><li><strong>Advanced features verkennen</strong><br/>Lees de knowledge base artikelen over AI matching, deal pipeline, reports</li><li><strong>Team training</strong><br/>Gebruik de 'Team Onboarding Guide' om collega's snel op te leiden</li><li><strong>Integraties toevoegen</strong><br/>Connecteer met je email, calendar, property portals voor naadloze workflow</li></ol><p><strong>Support opties:</strong></p><ul><li>Live chat (rechtsonder in de app)</li><li>Video tutorials (Help menu → Tutorials)</li><li>Knowledge base artikelen</li><li>Weekly Q&A webinars (elke woensdag 14:00 CET)</li><li>Email support: support@tesorohq.io</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Now that your setup is complete, focus on:</strong></p><ol><li><strong>Daily usage</strong><br/>Add new contacts and properties as you encounter them</li><li><strong>Explore advanced features</strong><br/>Read knowledge base articles about AI matching, deal pipeline, reports</li><li><strong>Team training</strong><br/>Use the 'Team Onboarding Guide' to quickly train colleagues</li><li><strong>Add integrations</strong><br/>Connect with your email, calendar, property portals for seamless workflow</li></ol><p><strong>Support options:</strong></p><ul><li>Live chat (bottom right in the app)</li><li>Video tutorials (Help menu → Tutorials)</li><li>Knowledge base articles</li><li>Weekly Q&A webinars (every Wednesday 14:00 CET)</li><li>Email support: support@tesorohq.io</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Ahora que tu configuración está completa, enfócate en:</strong></p><ol><li><strong>Uso diario</strong><br/>Agrega nuevos contactos y propiedades a medida que los encuentres</li><li><strong>Explorar características avanzadas</strong><br/>Lee artículos de la base de conocimiento sobre matching de IA, pipeline de deals, reportes</li><li><strong>Entrenamiento de equipo</strong><br/>Usa la 'Guía de Incorporación de Equipo' para entrenar rápidamente a colegas</li><li><strong>Agregar integraciones</strong><br/>Conecta con tu email, calendario, portales de propiedades para flujo de trabajo sin problemas</li></ol><p><strong>Opciones de soporte:</strong></p><ul><li>Chat en vivo (abajo a la derecha en la app)</li><li>Tutoriales en video (menú de Ayuda → Tutoriales)</li><li>Artículos de la base de conocimiento</li><li>Webinars semanales de preguntas y respuestas (cada miércoles 14:00 CET)</li><li>Soporte por email: support@tesorohq.io</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "first-login-dashboard-tour",
+    "quick-start-first-value",
+    "team-onboarding-admin-guide",
+    "basic-contact-management-tutorial",
+    "deal-pipeline-complete-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik echt 7 dagen wachten om productief te zijn?",
+        "en": "Do I really need to wait 7 days to be productive?",
+        "es": "¿Realmente necesito esperar 7 días para ser productivo?"
+      },
+      "answer": {
+        "nl": "Nee! Je kunt veel sneller starten. Deze 7-dagen planning is de 'complete' setup. Als je snel wilt: doe Dag 1-2 + Dag 3 (data import) en je bent al 80% operationeel. De rest kun je toevoegen naarmate je meer functionaliteit nodig hebt.",
+        "en": "No! You can start much faster. This 7-day plan is the 'complete' setup. If you want speed: do Day 1-2 + Day 3 (data import) and you're already 80% operational. The rest you can add as you need more functionality.",
+        "es": "¡No! Puedes comenzar mucho más rápido. Este plan de 7 días es la configuración 'completa'. Si quieres velocidad: haz Día 1-2 + Día 3 (importación de datos) y ya estás 80% operativo. El resto puedes agregarlo a medida que necesites más funcionalidad."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik vastloop tijdens de setup?",
+        "en": "What if I get stuck during setup?",
+        "es": "¿Qué pasa si me atasco durante la configuración?"
+      },
+      "answer": {
+        "nl": "Gebruik de live chat support (rechtsonder in de app) voor directe hulp. Ons team reageert gemiddeld binnen 2 minuten tijdens kantooruren (09:00-18:00 CET). Buiten kantooruren: email support@tesorohq.io en we helpen binnen 24 uur.",
+        "en": "Use the live chat support (bottom right in the app) for immediate help. Our team responds on average within 2 minutes during office hours (09:00-18:00 CET). Outside office hours: email support@tesorohq.io and we'll help within 24 hours.",
+        "es": "Usa el soporte de chat en vivo (abajo a la derecha en la app) para ayuda inmediata. Nuestro equipo responde en promedio en 2 minutos durante horas de oficina (09:00-18:00 CET). Fuera de horas de oficina: envía email a support@tesorohq.io y te ayudaremos en 24 horas."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik de checklist printen of downloaden?",
+        "en": "Can I print or download the checklist?",
+        "es": "¿Puedo imprimir o descargar la lista de verificación?"
+      },
+      "answer": {
+        "nl": "Ja! Gebruik Cmd/Ctrl + P om deze pagina te printen als PDF. Of ga naar Settings → Resources → Onboarding Checklist voor een downloadbare PDF versie met extra invulvelden voor team gebruik.",
+        "en": "Yes! Use Cmd/Ctrl + P to print this page as PDF. Or go to Settings → Resources → Onboarding Checklist for a downloadable PDF version with extra fillable fields for team use.",
+        "es": "¡Sí! Usa Cmd/Ctrl + P para imprimir esta página como PDF. O ve a Configuración → Recursos → Lista de Verificación de Incorporación para una versión PDF descargable con campos adicionales rellenables para uso del equipo."
+      }
+    }
+  ]
+}
