@@ -107,7 +107,14 @@
       "hero": {
         "badge": "Deal Pipeline",
         "title": "Pipeline de deals inmobiliarios - donde se hace el dinero",
-        "description": "Dos tipos distintos de deals para inmobiliaria: deals de vendedor (propietario quiere vender) y deals de comprador (buscar casas para comprador). Cada deal tiene contexto completo con toda la comunicación, stakeholders y documentos en una tarjeta."
+        "description": "Dos tipos distintos de deals para inmobiliaria: deals de vendedor (propietario quiere vender) y deals de comprador (buscar casas para comprador). Cada deal tiene contexto completo con toda la comunicación, stakeholders y documentos en una tarjeta.",
+        "pipeline_types_title": "Tipos de pipeline",
+        "seller_badge": "Vendedor",
+        "buyer_badge": "Comprador",
+        "seller_stages_count": "8 etapas",
+        "buyer_stages_count": "9 etapas",
+        "seller_flow": "Mandato → Online → Visitas → Oferta → Reserva → Depósito → Ganado/Perdido",
+        "buyer_flow": "Conociendo propiedad → Primera visita → Múltiples visitas → Oferta → Reserva → Contrato del 10% → Firmar escritura → Ganado/Perdido"
       },
       "benefits": {
         "deal_types": "2",
@@ -120,12 +127,15 @@
       "intro": {
         "title": "Deals - el núcleo del CRM inmobiliario",
         "description": "En inmobiliaria todo gira en torno a dos cosas: encontrar leads y cerrar deals. Un deal es donde ganas dinero. Tesoro tiene dos tipos principales:",
+        "seller_badge": "Deal de vendedor",
         "seller_title": "Deal de vendedor (venta)",
         "seller_description": "El propietario quiere vender su casa. El agente tasa, lista la propiedad, la pone online y en portales, ejecuta campaña de redes sociales. Genera leads interesados.",
+        "buyer_badge": "Deal de comprador",
         "buyer_title": "Deal de comprador (compra)",
         "buyer_description": "Comprador busca una casa. ¡Aquí es donde ocurre el matching! El agente no busca compradores sino casas para el comprador. Flujo de trabajo completo desde conocer propiedad hasta firmar escritura."
       },
       "seller_deal": {
+        "badge": "Deal de vendedor",
         "title": "Pipeline de deal de vendedor",
         "description": "De mandato a ganado/perdido - flujo de trabajo completo para deals de venta con todos los stakeholders y comunicación en una vista general.",
         "stage_1_name": "Mandato",
@@ -146,6 +156,7 @@
         "stage_8_description": "Deal se cayó. Financiación no aprobada, o comprador o vendedor se retiraron. Aprende de ello para la próxima vez."
       },
       "buyer_deal": {
+        "badge": "Deal de comprador - El más importante",
         "title": "Pipeline de deal de comprador - el más importante",
         "description": "¡Aquí es donde ocurre el matching! De conocer propiedad a firmar escritura. Momentum es crucial - estancamiento significa problema en la relación.",
         "stage_1_name": "Conociendo propiedad",
@@ -194,6 +205,7 @@
         "feature_10_description": "Todos los documentos: contratos, IDs, informes de tasación, documentos de financiación. Todo en un lugar."
       },
       "buyer_deal_special": {
+        "badge": "Pestaña de propiedades",
         "title": "Deal de comprador - pestaña de propiedades",
         "description": "En un deal de comprador hay una pestaña extra que no existe en deals de vendedor: la pestaña de propiedades. Aquí es donde ocurre la magia.",
         "matching_title": "Matching ocurre DENTRO del deal",
@@ -201,15 +213,26 @@
         "integration_title": "Integración completa",
         "integration_description": "Matching no es una funcionalidad separada sino integrada EN el deal del comprador. Ves inmediatamente qué propiedades encajan con este cliente. Todo dentro de la misma tarjeta de deal.",
         "philosophy_title": "Momentum es crucial",
-        "philosophy_description": "Conociendo propiedad → primera visita debe ocurrir RÁPIDO. Primera visita → múltiples visitas = más contacto = vínculo más fuerte. Estancamiento = problema."
+        "philosophy_description": "Conociendo propiedad → primera visita debe ocurrir RÁPIDO. Primera visita → múltiples visitas = más contacto = vínculo más fuerte. Estancamiento = problema.",
+        "preselect_lane_title": "Cola de preselección",
+        "preselect_lane_desc": "Propiedades matched antes de la aprobación del agente",
+        "propose_lane_title": "Cola de propuestas",
+        "propose_lane_desc": "Propiedades aprobadas por el agente listas para el cliente",
+        "interested_title": "Interesado",
+        "interested_desc": "Cliente marcó la propiedad como interesante",
+        "rejected_title": "Rechazado",
+        "rejected_desc": "Cliente no interesado con motivo"
       },
       "stakeholders": {
         "title": "Gestión de stakeholders",
         "description": "Un deal inmobiliario involucra muchas partes. No solo comprador y vendedor, sino también:",
+        "seller_badge": "Stakeholders del deal de vendedor",
         "seller_deal_stakeholders": "Parte vendedora, arquitecto, especialista en etiqueta energética, abogado, notario, otros agentes con clientes",
+        "buyer_badge": "Stakeholders del deal de comprador",
         "buyer_deal_stakeholders": "Parte compradora, asesor hipotecario, inspector de construcción, notario, abogado"
       },
       "philosophy": {
+        "badge": "Filosofía",
         "title": "La filosofía del momentum",
         "description": "En CRM inmobiliario, momentum lo es todo. Un deal que se atasca es un deal en riesgo.",
         "principle_1_title": "Conociendo → primera visita = RÁPIDO",
@@ -221,6 +244,10 @@
         "quote": "Más contacto = vínculo más fuerte. Momentum es clave en inmobiliaria."
       },
       "kanban_view": {
+        "preview_title": "Vista previa del tablero kanban",
+        "stage_mandate": "Mandato",
+        "stage_online": "Online",
+        "stage_visits": "Visitas",
         "title": "Vista kanban visual",
         "description": "Todos tus deals en un tablero kanban claro. Arrastra y suelta entre etapas.",
         "filter_title": "Filtros potentes",

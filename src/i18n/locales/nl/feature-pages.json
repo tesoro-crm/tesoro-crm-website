@@ -107,6 +107,13 @@
         "badge": "Deal Pipeline",
         "title": "Real estate deal pipeline - waar geld verdiend wordt",
         "description": "Twee distincte deal types voor real estate: seller deals (eigenaar wil verkopen) en buyer deals (huizen zoeken voor koper). Elke deal heeft complete context met alle communicatie, stakeholders en documenten in één card.",
+        "pipeline_types_title": "Pipeline types",
+        "seller_badge": "Seller",
+        "buyer_badge": "Buyer",
+        "seller_stages_count": "8 stages",
+        "buyer_stages_count": "9 stages",
+        "seller_flow": "Mandate → Online → Visits → Offer → Reservation → Deposit → Won/Lost",
+        "buyer_flow": "Knowing Property → First Visit → Multiple Visits → Offer → Reservation → 10% Contract → Signing Deed → Won/Lost",
         "cta_primary": "Start 14 dagen gratis",
         "cta_secondary": "Bekijk demo"
       },
@@ -121,12 +128,15 @@
       "intro": {
         "title": "Deals - de kern van real estate CRM",
         "description": "In real estate draait alles om twee dingen: leads vinden en deals sluiten. Een deal is waar je geld mee verdient. Tesoro heeft twee hoofdtypes:",
+        "seller_badge": "Seller deal",
         "seller_title": "Seller deal (verkoop)",
         "seller_description": "Eigenaar wil zijn huis verkopen. Makelaar taxeert, list het huis, zet het online en op portals, voert sociale media campagne. Genereert leads die geïnteresseerd zijn.",
+        "buyer_badge": "Buyer deal",
         "buyer_title": "Buyer deal (koop)",
         "buyer_description": "Koper zoekt een huis. Hier gebeurt de matching! Makelaar zoekt niet naar kopers maar naar huizen voor de koper. Complete workflow van knowing property tot signing deed."
       },
       "seller_deal": {
+        "badge": "Seller deal",
         "title": "Seller deal pipeline",
         "description": "Van mandate tot won/lost - complete workflow voor verkoopdeals met alle stakeholders en communicatie in één overzicht.",
         "stage_1_name": "Mandate",
@@ -147,6 +157,7 @@
         "stage_8_description": "Deal niet doorgegaan. Verkoper trekt opdracht terug of kiest andere makelaar."
       },
       "buyer_deal": {
+        "badge": "Buyer deal - Belangrijkste",
         "title": "Buyer deal pipeline - de belangrijkste",
         "description": "Hier gebeurt de matching! Van knowing property tot signing deed. Momentum is cruciaal - stilstand betekent probleem in de relatie.",
         "stage_1_name": "Knowing Property",
@@ -195,6 +206,7 @@
         "feature_10_description": "Alle documenten en attachments. Contracten, foto's, plattegronden, taxaties."
       },
       "buyer_deal_special": {
+        "badge": "Properties tab",
         "title": "Buyer deal - properties tab",
         "description": "Dit is wat buyer deals echt speciaal maakt:",
         "matching_title": "Matching gebeurt IN de deal",
@@ -202,16 +214,27 @@
         "integration_title": "Complete integratie",
         "integration_description": "Matching is geen losstaande feature maar geïntegreerd in de buyer deal workflow. Zo zie je precies welke huizen zijn voorgesteld, welke feedback er is, en wat de volgende stappen zijn.",
         "philosophy_title": "Momentum is cruciaal",
-        "philosophy_description": "De workflow is ontworpen rond momentum. Knowing property → first visit moet snel. First visit → multiple visits betekent sterke relatie. Stilstand in een fase? Dan is er een probleem."
+        "philosophy_description": "De workflow is ontworpen rond momentum. Knowing property → first visit moet snel. First visit → multiple visits betekent sterke relatie. Stilstand in een fase? Dan is er een probleem.",
+        "preselect_lane_title": "Preselect lane",
+        "preselect_lane_desc": "Matched properties voor goedkeuring door makelaar",
+        "propose_lane_title": "Propose lane",
+        "propose_lane_desc": "Door makelaar goedgekeurde properties klaar voor klant",
+        "interested_title": "Interested",
+        "interested_desc": "Klant markeerde property als interessant",
+        "rejected_title": "Rejected",
+        "rejected_desc": "Klant niet geïnteresseerd met reden"
       },
       "stakeholders": {
         "title": "Stakeholder management",
         "description": "Real estate deals hebben veel betrokken partijen. In de contactinfo tab zie je iedereen:",
+        "seller_badge": "Seller deal stakeholders",
         "seller_deal_stakeholders": "Verkopende partij, architect, energie label specialist, advocaat, notaris, andere makelaars met klanten",
+        "buyer_badge": "Buyer deal stakeholders",
         "buyer_deal_stakeholders": "Kopende partij, hypotheekadviseur, bouwkundige inspecteur, notaris, advocaat",
         "benefit": "Alle contacten op één plek per deal. Je weet precies met wie je te maken hebt."
       },
       "philosophy": {
+        "badge": "Filosofie",
         "title": "De momentum filosofie",
         "description": "Tesoro's deal pipeline is gebouwd rond een fundamentele filosofie over relaties:",
         "principle_1_title": "Knowing → first visit = SNEL",
@@ -223,6 +246,10 @@
         "quote": "Meer contact = sterkere band. Momentum is key in real estate."
       },
       "kanban_view": {
+        "preview_title": "Kanban board preview",
+        "stage_mandate": "Mandate",
+        "stage_online": "Online",
+        "stage_visits": "Visits",
         "title": "Kanban view met context",
         "description": "Alle deals in overzichtelijke kanban lanes. Sleep cards tussen stages. Open een card en zie complete context.",
         "filter_title": "Filters en views",

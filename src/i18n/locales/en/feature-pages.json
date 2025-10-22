@@ -124,7 +124,14 @@
       "hero": {
         "badge": "Deal Pipeline",
         "title": "Real Estate Deal Pipeline - Where Money Is Made",
-        "description": "Two distinct deal types for real estate: Seller Deals (owner wants to sell) and Buyer Deals (searching houses for buyer). Each deal has complete context with all communication, stakeholders and documents in one card."
+        "description": "Two distinct deal types for real estate: Seller Deals (owner wants to sell) and Buyer Deals (searching houses for buyer). Each deal has complete context with all communication, stakeholders and documents in one card.",
+        "pipeline_types_title": "Pipeline Types",
+        "seller_badge": "Seller",
+        "buyer_badge": "Buyer",
+        "seller_stages_count": "8 stages",
+        "buyer_stages_count": "9 stages",
+        "seller_flow": "Mandate → Online → Visits → Offer → Reservation → Deposit → Won/Lost",
+        "buyer_flow": "Knowing Property → First Visit → Multiple Visits → Offer → Reservation → 10% Contract → Signing Deed → Won/Lost"
       },
       "benefits": {
         "deal_types": "2",
@@ -137,12 +144,15 @@
       "intro": {
         "title": "Deals - The Core of Real Estate CRM",
         "description": "In real estate everything revolves around two things: Finding leads and closing deals. A Deal is where you make money. Tesoro has two main types:",
+        "seller_badge": "Seller Deal",
         "seller_title": "Seller Deal (Sale)",
         "seller_description": "Owner wants to sell their house. Agent appraises, lists the property, puts it online and on portals, runs social media campaign. Generates leads who are interested.",
+        "buyer_badge": "Buyer Deal",
         "buyer_title": "Buyer Deal (Purchase)",
         "buyer_description": "Buyer is looking for a house. This is where matching happens! Agent doesn't search for buyers but for houses for the buyer. Complete workflow from knowing property to signing deed."
       },
       "seller_deal": {
+        "badge": "Seller Deal",
         "title": "Seller Deal Pipeline",
         "description": "From mandate to won/lost - complete workflow for sale deals with all stakeholders and communication in one overview.",
         "stage_1_name": "Mandate",
@@ -163,6 +173,7 @@
         "stage_8_description": "Deal fell through. Financing not approved, or buyer or seller pulled out. Learn from it for next time."
       },
       "buyer_deal": {
+        "badge": "Buyer Deal - Most Important",
         "title": "Buyer Deal Pipeline - The Most Important One",
         "description": "This is where matching happens! From knowing property to signing deed. Momentum is crucial - stagnation means problem in the relationship.",
         "stage_1_name": "Knowing Property",
@@ -211,6 +222,7 @@
         "feature_10_description": "All documents: contracts, IDs, appraisal reports, financing documents. Everything in one place."
       },
       "buyer_deal_special": {
+        "badge": "Properties Tab",
         "title": "Buyer Deal - Properties Tab",
         "description": "In a Buyer Deal there's an extra tab that doesn't exist in Seller Deals: the Properties tab. This is where magic happens.",
         "matching_title": "Matching Happens IN the Deal",
@@ -218,15 +230,26 @@
         "integration_title": "Complete Integration",
         "integration_description": "Matching is not a separate feature but integrated IN the buyer deal. You see immediately which properties fit this client. All within the same deal card.",
         "philosophy_title": "Momentum is Crucial",
-        "philosophy_description": "Knowing Property → First Visit must happen QUICKLY. First Visit → Multiple Visits = more contact = stronger bond. Stagnation = problem."
+        "philosophy_description": "Knowing Property → First Visit must happen QUICKLY. First Visit → Multiple Visits = more contact = stronger bond. Stagnation = problem.",
+        "preselect_lane_title": "Preselect Lane",
+        "preselect_lane_desc": "Matched properties before agent approval",
+        "propose_lane_title": "Propose Lane",
+        "propose_lane_desc": "Agent-approved properties ready for client",
+        "interested_title": "Interested",
+        "interested_desc": "Client marked property as interesting",
+        "rejected_title": "Rejected",
+        "rejected_desc": "Client not interested with reason"
       },
       "stakeholders": {
         "title": "Stakeholder Management",
         "description": "A real estate deal involves many parties. Not just buyer and seller, but also:",
+        "seller_badge": "Seller Deal Stakeholders",
         "seller_deal_stakeholders": "Selling party, architect, energy label specialist, lawyer, notary, other agents with clients",
+        "buyer_badge": "Buyer Deal Stakeholders",
         "buyer_deal_stakeholders": "Buying party, mortgage advisor, building inspector, notary, lawyer"
       },
       "philosophy": {
+        "badge": "Philosophy",
         "title": "The Momentum Philosophy",
         "description": "In real estate CRM, momentum is everything. A deal that gets stuck is a deal at risk.",
         "principle_1_title": "Knowing → First Visit = FAST",
@@ -238,6 +261,10 @@
         "quote": "More contact = stronger bond. Momentum is key in real estate."
       },
       "kanban_view": {
+        "preview_title": "Kanban Board Preview",
+        "stage_mandate": "Mandate",
+        "stage_online": "Online",
+        "stage_visits": "Visits",
         "title": "Visual Kanban View",
         "description": "All your deals in a clear kanban board. Drag & drop between stages.",
         "filter_title": "Powerful Filters",
