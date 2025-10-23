@@ -13,19 +13,19 @@ await loadTranslations(locale);
 const contactMethods = [
   {
     icon: 'mail',
-    title: 'Email',
+    title: t('contact.method_email_title', locale),
     description: 'sales@tesoro-crm.nl',
     action: 'mailto:sales@tesoro-crm.nl'
   },
   {
     icon: 'chat',
-    title: 'WhatsApp',
+    title: t('contact.method_whatsapp_title', locale),
     description: '+31 6 1234 5678',
     action: 'https://wa.me/31612345678'
   },
   {
     icon: 'phone',
-    title: 'Telefoon',
+    title: t('contact.method_phone_title', locale),
     description: '+31 20 123 4567',
     action: 'tel:+31201234567'
   }
@@ -33,20 +33,20 @@ const contactMethods = [
 ---
 
 <Layout
-  title="Contact - Tesoro CRM"
-  description="Neem contact op met ons team voor vragen over Tesoro CRM. Demo aanvragen, support of algemene informatie."
+  title={t('contact.meta_title', locale)}
+  description={t('contact.meta_description', locale)}
 >
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <Badge variant="primary" size="md" class="mb-4">
-          Neem Contact Op
+          {t('contact.hero_badge', locale)}
         </Badge>
         <h1 class="text-4xl lg:text-5xl font-display font-bold text-neutral-900 mb-6">
-          Klaar om te beginnen?
+          {t('contact.hero_title', locale)}
         </h1>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Heb je vragen over Tesoro CRM? Wil je een demo boeken of meer weten over onze prijzen? Ons team helpt je graag verder.
+          {t('contact.hero_description', locale)}
         </p>
       </div>
 
@@ -54,21 +54,21 @@ const contactMethods = [
         <!-- Contact Form -->
         <Card variant="default" padding="lg">
           <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
-            Stuur ons een bericht
+            {t('contact.form_title', locale)}
           </h2>
 
           <form action="/api/contact" method="POST" class="space-y-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Input
                 name="firstName"
-                label="Voornaam"
-                placeholder="Jan"
+                label={t('contact.label_first_name', locale)}
+                placeholder={t('contact.placeholder_first_name', locale)}
                 required
               />
               <Input
                 name="lastName"
-                label="Achternaam"
-                placeholder="Jansen"
+                label={t('contact.label_last_name', locale)}
+                placeholder={t('contact.placeholder_last_name', locale)}
                 required
               />
             </div>
@@ -76,46 +76,46 @@ const contactMethods = [
             <Input
               type="email"
               name="email"
-              label="E-mailadres"
-              placeholder="jan.jansen@bedrijf.nl"
+              label={t('contact.label_email', locale)}
+              placeholder={t('contact.placeholder_email', locale)}
               required
             />
 
             <Input
               type="tel"
               name="phone"
-              label="Telefoonnummer"
-              placeholder="+31 6 1234 5678"
+              label={t('contact.label_phone', locale)}
+              placeholder={t('contact.placeholder_phone', locale)}
             />
 
             <div>
               <label class="block text-sm font-medium text-neutral-700 mb-2">
-                Onderwerp
+                {t('contact.label_subject', locale)}
               </label>
               <select
                 name="subject"
                 class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200"
                 required
               >
-                <option value="">Selecteer een onderwerp</option>
-                <option value="demo">Demo aanvragen</option>
-                <option value="pricing">Vragen over prijzen</option>
-                <option value="support">Technische support</option>
-                <option value="partnership">Partnerschap</option>
-                <option value="other">Anders</option>
+                <option value="">{t('contact.subject_select', locale)}</option>
+                <option value="demo">{t('contact.subject_demo', locale)}</option>
+                <option value="pricing">{t('contact.subject_pricing', locale)}</option>
+                <option value="support">{t('contact.subject_support', locale)}</option>
+                <option value="partnership">{t('contact.subject_partnership', locale)}</option>
+                <option value="other">{t('contact.subject_other', locale)}</option>
               </select>
             </div>
 
             <div>
               <label for="message" class="block text-sm font-medium text-neutral-700 mb-2">
-                Bericht <span class="text-error">*</span>
+                {t('contact.label_message', locale)} <span class="text-error">*</span>
               </label>
               <textarea
                 name="message"
                 id="message"
                 rows="5"
                 class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
-                placeholder="Vertel ons meer over je vraag..."
+                placeholder={t('contact.placeholder_message', locale)}
                 required
               ></textarea>
             </div>
@@ -129,12 +129,12 @@ const contactMethods = [
                 required
               />
               <label for="privacy" class="text-sm text-neutral-600">
-                Ik ga akkoord met het <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline">privacybeleid</a> en geef toestemming voor contact.
+                {t('contact.privacy_text', locale)} <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline">{t('contact.privacy_link', locale)}</a> {t('contact.privacy_text_end', locale)}
               </label>
             </div>
 
             <Button variant="primary" size="lg" type="submit" fullWidth>
-              Bericht Versturen
+              {t('contact.submit_button', locale)}
             </Button>
           </form>
         </Card>
@@ -143,10 +143,10 @@ const contactMethods = [
         <div class="space-y-6">
           <Card variant="default" padding="lg">
             <h3 class="text-xl font-display font-bold text-neutral-900 mb-4">
-              Andere manieren om contact op te nemen
+              {t('contact.methods_title', locale)}
             </h3>
             <p class="text-neutral-600 mb-6">
-              Liever direct contact? Hier vind je onze contactgegevens.
+              {t('contact.methods_description', locale)}
             </p>
 
             <div class="space-y-4">
@@ -172,10 +172,10 @@ const contactMethods = [
 
           <Card variant="elevated" padding="lg">
             <h4 class="font-semibold text-neutral-900 mb-2">
-              Snel antwoord gegarandeerd
+              {t('contact.response_title', locale)}
             </h4>
             <p class="text-sm text-neutral-600">
-              We streven ernaar om binnen 24 uur te reageren op al je vragen. Voor urgente zaken kun je ons altijd bellen.
+              {t('contact.response_description', locale)}
             </p>
           </Card>
         </div>

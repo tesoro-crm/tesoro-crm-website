@@ -59,6 +59,167 @@ async function getZohoAccessToken(
 }
 
 /**
+ * Book appointment in Zoho Bookings
+ */
+async function bookZohoAppointment(
+  accessToken: string,
+  datacenter: string,
+  serviceId: string,
+  staffId: string,
+  appointmentData: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    date: string; // YYYY-MM-DD format
+    time: string; // HH:MM - HH:MM format (e.g., "14:00 - 15:00")
+    notes: string;
+  }
+): Promise<string | null> {
+  const apiUrl = `https://www.zohoapis.${datacenter}/bookings/v1/json/appointment`;
+
+  // Parse the time slot (e.g., "14:00 - 15:00" → start time: 14:00)
+  const startTime = appointmentData.time.split(' - ')[0].trim();
+
+  // Convert date from YYYY-MM-DD to dd-MMM-yyyy format
+  const date = new Date(appointmentData.date);
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+
+  // Format: "dd-MMM-yyyy HH:mm:ss" (e.g., "24-Oct-2025 14:00:00")
+  const fromTime = `${day}-${month}-${year} ${startTime}:00`;
+
+  // Prepare customer details as JSON
+  const customerDetails = {
+    name: `${appointmentData.firstName} ${appointmentData.lastName}`,
+    email: appointmentData.email,
+    phone_number: appointmentData.phone,
+  };
+
+  // Create FormData for the booking request
+  const formData = new FormData();
+  formData.append('service_id', serviceId);
+  formData.append('staff_id', staffId);
+  formData.append('from_time', fromTime);
+  formData.append('customer_details', JSON.stringify(customerDetails));
+  formData.append('notes', appointmentData.notes);
+  formData.append('timezone', 'Europe/Amsterdam');
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Zoho-oauthtoken ${accessToken}`,
+      },
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Zoho Bookings appointment error:', response.status, errorText);
+      // Don't throw - just log the error and continue
+      return null;
+    }
+
+    const result = await response.json();
+
+    // Check for successful booking
+    if (result.response?.returnvalue?.data?.booking_id) {
+      const bookingId = result.response.returnvalue.data.booking_id;
+      console.log('✅ Zoho Bookings appointment created successfully:', bookingId);
+      return bookingId;
+    }
+
+    console.warn('Zoho Bookings appointment creation returned no ID:', result);
+    return null;
+  } catch (error) {
+    console.error('Zoho Bookings appointment error:', error);
+    // Don't fail the whole request if booking fails
+    return null;
+  }
+}
+
+/**
+ * Create calendar event in Zoho CRM for the demo appointment
+ */
+async function createZohoCalendarEvent(
+  accessToken: string,
+  datacenter: string,
+  eventData: {
+    leadId: string;
+    title: string;
+    date: string; // YYYY-MM-DD format
+    time: string; // HH:MM - HH:MM format (e.g., "14:00 - 15:00")
+    attendees: string; // Email of attendee
+    description: string;
+  }
+): Promise<string | null> {
+  const apiUrl = `https://www.zohoapis.${datacenter}/crm/v6/Events`;
+
+  // Parse time range (e.g., "14:00 - 15:00" → start: 14:00, end: 15:00)
+  const [startTime, endTime] = eventData.time.split(' - ').map(t => t.trim());
+
+  // Combine date and time for ISO format
+  const startDateTime = `${eventData.date}T${startTime}:00`;
+  const endDateTime = `${eventData.date}T${endTime}:00`;
+
+  const zohoEvent = {
+    data: [
+      {
+        Event_Title: eventData.title,
+        Start_DateTime: startDateTime,
+        End_DateTime: endDateTime,
+        Description: eventData.description,
+        Participants: [
+          {
+            type: 'email',
+            participant: eventData.attendees
+          }
+        ],
+        // Link event to the lead
+        What_Id: eventData.leadId,
+        // Set as meeting type
+        $se_module: 'Leads',
+      },
+    ],
+  };
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Zoho-oauthtoken ${accessToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(zohoEvent),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Zoho Calendar API error:', response.status, errorText);
+      // Don't throw - just log the error and continue
+      return null;
+    }
+
+    const result = await response.json();
+
+    if (result.data && result.data[0] && result.data[0].code === 'SUCCESS') {
+      console.log('✅ Calendar event created successfully:', result.data[0].details.id);
+      return result.data[0].details.id;
+    }
+
+    console.warn('Calendar event creation returned no ID:', result);
+    return null;
+  } catch (error) {
+    console.error('Calendar event creation error:', error);
+    // Don't fail the whole request if calendar fails
+    return null;
+  }
+}
+
+/**
  * Create lead in Zoho CRM
  */
 async function createZohoLead(
@@ -74,9 +235,18 @@ async function createZohoLead(
     preferredDate: string;
     preferredTime: string;
     notes: string;
+    language: string;
   }
 ): Promise<string | null> {
   const apiUrl = `https://www.zohoapis.${datacenter}/crm/v6/Leads`;
+
+  // Determine lead owner based on language
+  // NL → John Stevens (j.stevens@codificamos.es)
+  // EN/ES → Cristina Crego (cristina@tesorohq.io)
+  const JOHN_USER_ID = '210082000000033001';
+  const CRISTINA_USER_ID = '210082000065023001';
+
+  const ownerId = leadData.language === 'nl' ? JOHN_USER_ID : CRISTINA_USER_ID;
 
   const zohoLead = {
     data: [
@@ -88,9 +258,14 @@ async function createZohoLead(
         Company: leadData.company,
         Lead_Source: 'Website - Demo Request',
         Lead_Status: 'Not Contacted',
-        Description: `Pain Point: ${leadData.painPoint}\n\nPreferred Date: ${leadData.preferredDate}\nPreferred Time: ${leadData.preferredTime}\n\nNotes: ${leadData.notes || 'N/A'}`,
-        // Custom field for pain point (requires Pain_Point field in Zoho CRM)
+        // Description now only contains scheduling and notes info (Pain_Point is in separate field)
+        Description: `Preferred Demo Date: ${leadData.preferredDate}\nPreferred Demo Time: ${leadData.preferredTime}\n\nAdditional Notes:\n${leadData.notes || 'No additional notes provided'}`,
+        // Custom fields
         Pain_Point: leadData.painPoint,
+        Language: leadData.language.toUpperCase(), // Store as ES, EN, or NL
+        Owner: {
+          id: ownerId
+        },
       },
     ],
   };
@@ -150,30 +325,44 @@ export const POST: APIRoute = async ({ request, locals }) => {
     const zohoRefreshToken = env.ZOHO_REFRESH_TOKEN;
     const zohoDatacenter = env.ZOHO_DATACENTER || 'com'; // Default to US
 
-    if (!turnstileSecret || !mailgunApiKey || !mailgunDomain || !mailgunRegion) {
-      console.error('Missing required environment variables:');
-      console.error('- TURNSTILE_SECRET_KEY:', !!turnstileSecret);
-      console.error('- MAILGUN_API_KEY:', !!mailgunApiKey);
-      console.error('- MAILGUN_DOMAIN:', !!mailgunDomain);
-      console.error('- MAILGUN_REGION:', !!mailgunRegion);
+    // Zoho Bookings environment variables (optional)
+    const serviceId = env.ZOHO_BOOKINGS_SERVICE_ID;
+    const staffId = env.ZOHO_BOOKINGS_STAFF_ID;
+
+    // Check if at least Zoho is configured (for testing)
+    // Mailgun and Turnstile are optional for now
+    const hasZoho = zohoClientId && zohoClientSecret && zohoRefreshToken;
+
+    if (!hasZoho) {
+      console.error('Missing required Zoho environment variables');
+      console.error('- ZOHO_CLIENT_ID:', !!zohoClientId);
+      console.error('- ZOHO_CLIENT_SECRET:', !!zohoClientSecret);
+      console.error('- ZOHO_REFRESH_TOKEN:', !!zohoRefreshToken);
 
       return new Response(JSON.stringify({
-        error: 'Server configuration error',
+        error: 'Server configuration error - Zoho CRM not configured',
         debug: {
           hasRuntime: !!runtime,
           hasEnv: !!env,
           envKeys: Object.keys(env),
           missingVars: {
-            turnstile: !turnstileSecret,
-            mailgun: !mailgunApiKey,
-            domain: !mailgunDomain,
-            region: !mailgunRegion
+            zohoClientId: !zohoClientId,
+            zohoClientSecret: !zohoClientSecret,
+            zohoRefreshToken: !zohoRefreshToken,
           }
         }
       }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
       });
+    }
+
+    // Warn if optional services are not configured
+    if (!turnstileSecret) {
+      console.warn('TURNSTILE_SECRET_KEY not configured - skipping bot protection');
+    }
+    if (!mailgunApiKey) {
+      console.warn('MAILGUN_API_KEY not configured - skipping email notifications');
     }
 
     const formData = await request.formData();
@@ -190,6 +379,16 @@ export const POST: APIRoute = async ({ request, locals }) => {
     const notes = formData.get('notes') as string;
     const turnstileToken = formData.get('cf-turnstile-response') as string;
 
+    // Detect language from Referer header (URL contains /nl/, /en/, or default to /es/)
+    const referer = request.headers.get('referer') || '';
+    let language = 'es'; // Default to Spanish
+    if (referer.includes('/nl/') || referer.includes('/nl')) {
+      language = 'nl';
+    } else if (referer.includes('/en/') || referer.includes('/en')) {
+      language = 'en';
+    }
+    console.log('Detected language from referer:', language, '(', referer, ')');
+
     // Validate required fields
     if (!painPoint || !firstName || !lastName || !email || !phone || !company || !preferredDate || !preferredTime) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -198,34 +397,52 @@ export const POST: APIRoute = async ({ request, locals }) => {
       });
     }
 
-    // Verify Turnstile token
-    const turnstileVerification = await fetch(
-      'https://challenges.cloudflare.com/turnstile/v0/siteverify',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          secret: turnstileSecret,
-          response: turnstileToken,
-        }),
+    // Verify Turnstile token (only if configured)
+    // NOTE: Currently in soft-fail mode - logs warnings but doesn't block submissions
+    // Change to hard-fail once Turnstile is properly configured
+    if (turnstileSecret && turnstileToken) {
+      try {
+        const turnstileVerification = await fetch(
+          'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              secret: turnstileSecret,
+              response: turnstileToken,
+            }),
+          }
+        );
+
+        const turnstileResult: TurnstileResponse = await turnstileVerification.json();
+
+        if (!turnstileResult.success) {
+          console.warn('⚠️ Turnstile verification FAILED but allowing submission (soft-fail mode)');
+          console.warn('Error codes:', turnstileResult['error-codes']);
+          // SOFT FAIL: Log warning but continue processing
+          // To enable hard fail, uncomment the lines below:
+          // return new Response(JSON.stringify({ error: 'Turnstile verification failed' }), {
+          //   status: 403,
+          //   headers: { 'Content-Type': 'application/json' },
+          // });
+        } else {
+          console.log('✅ Turnstile verification successful');
+        }
+      } catch (error) {
+        console.error('Turnstile verification error:', error);
+        // Continue anyway in soft-fail mode
       }
-    );
-
-    const turnstileResult: TurnstileResponse = await turnstileVerification.json();
-
-    if (!turnstileResult.success) {
-      return new Response(JSON.stringify({ error: 'Turnstile verification failed' }), {
-        status: 403,
-        headers: { 'Content-Type': 'application/json' },
-      });
+    } else {
+      console.warn('Turnstile verification skipped - not configured or no token provided');
     }
 
-    // Send emails via Mailgun
-    const mailgunApiUrl = mailgunRegion === 'eu' ? 'api.eu.mailgun.net' : 'api.mailgun.net';
-    const mailgunUrl = `https://${mailgunApiUrl}/v3/${mailgunDomain}/messages`;
+    // Send emails via Mailgun (only if configured)
+    if (mailgunApiKey && mailgunDomain && mailgunRegion) {
+      const mailgunApiUrl = mailgunRegion === 'eu' ? 'api.eu.mailgun.net' : 'api.mailgun.net';
+      const mailgunUrl = `https://${mailgunApiUrl}/v3/${mailgunDomain}/messages`;
 
-    // 1. Send notification email to Tesoro
-    const notificationHtml = `
+      // 1. Send notification email to Tesoro
+      const notificationHtml = `
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"></head>
@@ -259,24 +476,24 @@ export const POST: APIRoute = async ({ request, locals }) => {
 </body>
 </html>`;
 
-    const notificationFormData = new FormData();
-    notificationFormData.append('from', `Tesoro CRM <noreply@${mailgunDomain}>`);
-    notificationFormData.append('to', notificationEmail);
-    notificationFormData.append('subject', `🎯 Nieuwe Demo Aanvraag van ${firstName} ${lastName}`);
-    notificationFormData.append('html', notificationHtml);
+      const notificationFormData = new FormData();
+      notificationFormData.append('from', `Tesoro CRM <noreply@${mailgunDomain}>`);
+      notificationFormData.append('to', notificationEmail);
+      notificationFormData.append('subject', `🎯 Nieuwe Demo Aanvraag van ${firstName} ${lastName}`);
+      notificationFormData.append('html', notificationHtml);
 
-    const notificationResponse = await fetch(mailgunUrl, {
-      method: 'POST',
-      headers: { Authorization: `Basic ${btoa(`api:${mailgunApiKey}`)}` },
-      body: notificationFormData,
-    });
+      const notificationResponse = await fetch(mailgunUrl, {
+        method: 'POST',
+        headers: { Authorization: `Basic ${btoa(`api:${mailgunApiKey}`)}` },
+        body: notificationFormData,
+      });
 
-    if (!notificationResponse.ok) {
-      console.error('Mailgun notification error:', await notificationResponse.text());
-    }
+      if (!notificationResponse.ok) {
+        console.error('Mailgun notification error:', await notificationResponse.text());
+      }
 
-    // 2. Send confirmation email to customer
-    const confirmationHtml = `
+      // 2. Send confirmation email to customer
+      const confirmationHtml = `
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"></head>
@@ -305,24 +522,29 @@ export const POST: APIRoute = async ({ request, locals }) => {
 </body>
 </html>`;
 
-    const confirmationFormData = new FormData();
-    confirmationFormData.append('from', `Tesoro CRM <noreply@${mailgunDomain}>`);
-    confirmationFormData.append('to', email);
-    confirmationFormData.append('subject', '✅ Je demo aanvraag is ontvangen - Tesoro CRM');
-    confirmationFormData.append('html', confirmationHtml);
+      const confirmationFormData = new FormData();
+      confirmationFormData.append('from', `Tesoro CRM <noreply@${mailgunDomain}>`);
+      confirmationFormData.append('to', email);
+      confirmationFormData.append('subject', '✅ Je demo aanvraag is ontvangen - Tesoro CRM');
+      confirmationFormData.append('html', confirmationHtml);
 
-    const confirmationResponse = await fetch(mailgunUrl, {
-      method: 'POST',
-      headers: { Authorization: `Basic ${btoa(`api:${mailgunApiKey}`)}` },
-      body: confirmationFormData,
-    });
+      const confirmationResponse = await fetch(mailgunUrl, {
+        method: 'POST',
+        headers: { Authorization: `Basic ${btoa(`api:${mailgunApiKey}`)}` },
+        body: confirmationFormData,
+      });
 
-    if (!confirmationResponse.ok) {
-      console.error('Mailgun confirmation error:', await confirmationResponse.text());
+      if (!confirmationResponse.ok) {
+        console.error('Mailgun confirmation error:', await confirmationResponse.text());
+      }
+    } else {
+      console.log('Mailgun email notifications skipped - not configured');
     }
 
-    // 3. Create lead in Zoho CRM (optional - only if credentials are configured)
+    // 3. Create lead in Zoho CRM and book appointment
     let zohoLeadId: string | null = null;
+    let zohoEventId: string | null = null;
+    let zohoBookingId: string | null = null;
     if (zohoClientId && zohoClientSecret && zohoRefreshToken) {
       try {
         const accessToken = await getZohoAccessToken(
@@ -332,6 +554,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
           zohoDatacenter
         );
 
+        // Create the lead
         zohoLeadId = await createZohoLead(accessToken, zohoDatacenter, {
           painPoint,
           firstName,
@@ -342,10 +565,57 @@ export const POST: APIRoute = async ({ request, locals }) => {
           preferredDate,
           preferredTime,
           notes,
+          language,
         });
 
         if (zohoLeadId) {
-          console.log('Zoho CRM lead created successfully:', zohoLeadId);
+          console.log('✅ Zoho CRM lead created successfully:', zohoLeadId);
+          console.log('   - Language:', language.toUpperCase());
+          console.log('   - Owner:', language === 'nl' ? 'John Stevens' : 'Cristina Crego');
+
+          // Create calendar event for the demo appointment
+          zohoEventId = await createZohoCalendarEvent(accessToken, zohoDatacenter, {
+            leadId: zohoLeadId,
+            title: `Demo Tesoro CRM - ${firstName} ${lastName}`,
+            date: preferredDate,
+            time: preferredTime,
+            attendees: email,
+            description: `Demo appointment with ${firstName} ${lastName} from ${company}\n\nPain Point:\n${painPoint}\n\nAdditional Notes:\n${notes || 'None'}`,
+          });
+
+          if (zohoEventId) {
+            console.log('✅ Calendar event created successfully:', zohoEventId);
+          } else {
+            console.warn('⚠️  Calendar event creation failed (non-critical)');
+          }
+
+          // Book appointment in Zoho Bookings (if configured)
+          if (serviceId && staffId) {
+            const bookingNotes = `Pain Point: ${painPoint}\n\nAdditional Notes: ${notes || 'None'}`;
+            zohoBookingId = await bookZohoAppointment(
+              accessToken,
+              zohoDatacenter,
+              serviceId,
+              staffId,
+              {
+                firstName,
+                lastName,
+                email,
+                phone,
+                date: preferredDate,
+                time: preferredTime,
+                notes: bookingNotes,
+              }
+            );
+
+            if (zohoBookingId) {
+              console.log('✅ Zoho Bookings appointment created successfully:', zohoBookingId);
+            } else {
+              console.warn('⚠️  Zoho Bookings appointment creation failed (non-critical)');
+            }
+          } else {
+            console.log('Zoho Bookings integration skipped - service/staff IDs not configured');
+          }
         } else {
           console.warn('Zoho CRM lead creation returned no ID');
         }
@@ -362,6 +632,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
       success: true,
       message: 'Demo request submitted successfully',
       zohoLeadId: zohoLeadId || undefined,
+      zohoEventId: zohoEventId || undefined,
+      zohoBookingId: zohoBookingId || undefined,
+      language: language,
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },

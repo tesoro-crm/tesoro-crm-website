@@ -14,27 +14,27 @@ const { locale } = Astro.props;
 
 <Modal id="demo-modal" title={t('home.modals.demo.title', locale)} size="xl">
   <!-- Scrollable content -->
-  <div class="space-y-6">
+  <div class="space-y-4">
     <!-- Header with description -->
-    <div class="text-center px-6 py-5 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border-2 border-amber-200">
-      <p class="text-lg font-medium text-neutral-900 leading-relaxed">
+    <div class="text-center px-4 py-3 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border-2 border-amber-200">
+      <p class="text-base font-medium text-neutral-900 leading-relaxed">
         {t('home.modals.demo.description', locale)}
       </p>
     </div>
 
-    <form id="demo-form" action="/api/demo" method="POST" class="space-y-6" novalidate>
+    <form id="demo-form" action="/api/demo" method="POST" class="space-y-4" novalidate>
       <!-- Your Challenge -->
-      <div class="space-y-4">
+      <div class="space-y-3">
         <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wide">{t('home.modals.demo.section_challenge', locale)}</h3>
-        <div class="space-y-2">
+        <div class="space-y-1.5">
           <label for="painPoint" class="block text-sm font-medium text-neutral-700">
             {t('home.modals.demo.label_pain_point', locale)} <span class="text-error">*</span>
           </label>
           <textarea
             name="painPoint"
             id="painPoint"
-            rows="4"
-            class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
+            rows="3"
+            class="w-full px-3 py-2 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
             placeholder={t('home.modals.demo.placeholder_pain_point', locale)}
             required
           ></textarea>
@@ -43,10 +43,10 @@ const { locale } = Astro.props;
       </div>
 
       <!-- Personal Information -->
-      <div class="space-y-4">
+      <div class="space-y-3">
         <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wide">{t('home.modals.demo.section_personal', locale)}</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="space-y-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="space-y-1.5">
             <label class="block text-sm font-medium text-neutral-700">
               {t('home.modals.demo.label_first_name', locale)} <span class="text-error">*</span>
             </label>
@@ -56,7 +56,7 @@ const { locale } = Astro.props;
               required
             />
           </div>
-          <div class="space-y-2">
+          <div class="space-y-1.5">
             <label class="block text-sm font-medium text-neutral-700">
               {t('home.modals.demo.label_last_name', locale)} <span class="text-error">*</span>
             </label>
@@ -67,7 +67,7 @@ const { locale } = Astro.props;
             />
           </div>
         </div>
-        <div class="space-y-2">
+        <div class="space-y-1.5">
           <label class="block text-sm font-medium text-neutral-700">
             {t('home.modals.demo.label_email', locale)} <span class="text-error">*</span>
           </label>
@@ -78,7 +78,7 @@ const { locale } = Astro.props;
             required
           />
         </div>
-        <div class="space-y-2">
+        <div class="space-y-1.5">
           <label class="block text-sm font-medium text-neutral-700">
             {t('home.modals.demo.label_phone', locale)} <span class="text-error">*</span>
           </label>
@@ -92,9 +92,9 @@ const { locale } = Astro.props;
       </div>
 
       <!-- Company Information -->
-      <div class="space-y-4 pt-4 border-t border-neutral-200">
+      <div class="space-y-3 pt-3 border-t border-neutral-200">
         <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wide">{t('home.modals.demo.section_company', locale)}</h3>
-        <div class="space-y-2">
+        <div class="space-y-1.5">
           <label class="block text-sm font-medium text-neutral-700">
             {t('home.modals.demo.label_company', locale)} <span class="text-error">*</span>
           </label>
@@ -107,61 +107,60 @@ const { locale } = Astro.props;
       </div>
 
       <!-- Scheduling -->
-      <div class="space-y-4 pt-4 border-t border-neutral-200">
+      <div class="space-y-3 pt-3 border-t border-neutral-200">
         <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wide">{t('home.modals.demo.section_schedule', locale)}</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="space-y-2">
-            <label class="block text-sm font-medium text-neutral-700">
-              {t('home.modals.demo.label_date', locale)} <span class="text-error">*</span>
-            </label>
-            <Input
-              type="date"
-              name="preferredDate"
-              required
-            />
-          </div>
-          <div class="space-y-2">
-            <label class="block text-sm font-medium text-neutral-700">
-              {t('home.modals.demo.label_time', locale)} <span class="text-error">*</span>
-            </label>
-            <select
-              name="preferredTime"
-              class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 bg-white"
-              required
-            >
-              <option value="">{t('home.modals.demo.time_select', locale)}</option>
-              <option value="09:00 - 10:00">09:00 - 10:00</option>
-              <option value="10:00 - 11:00">10:00 - 11:00</option>
-              <option value="11:00 - 12:00">11:00 - 12:00</option>
-              <option value="13:00 - 14:00">13:00 - 14:00</option>
-              <option value="14:00 - 15:00">14:00 - 15:00</option>
-              <option value="15:00 - 16:00">15:00 - 16:00</option>
-              <option value="16:00 - 17:00">16:00 - 17:00</option>
-            </select>
-          </div>
+
+        <!-- Date Selection -->
+        <div class="space-y-1.5">
+          <label class="block text-sm font-medium text-neutral-700">
+            {t('home.modals.demo.label_date', locale)} <span class="text-error">*</span>
+          </label>
+          <Input
+            type="date"
+            name="preferredDate"
+            id="preferredDate"
+            required
+          />
         </div>
 
-        <div class="space-y-2">
+        <!-- Time Slots (loaded dynamically) -->
+        <div id="time-slots-container" class="space-y-1.5" style="display: none;">
+          <label class="block text-sm font-medium text-neutral-700">
+            {t('home.modals.demo.label_time', locale)} <span class="text-error">*</span>
+          </label>
+          <div id="time-slots-loading" class="text-center py-3" style="display: none;">
+            <div class="inline-block animate-spin rounded-full h-5 w-5 border-b-2 border-primary"></div>
+            <p class="text-sm text-neutral-500 mt-1.5">Beschikbare tijdslots laden...</p>
+          </div>
+          <div id="time-slots-grid" class="grid grid-cols-3 sm:grid-cols-4 gap-2"></div>
+          <input type="hidden" name="preferredTime" id="selectedTimeSlot" required />
+          <p id="time-slots-error" class="text-sm text-error" style="display: none;"></p>
+        </div>
+      </div>
+
+      <!-- Notes Section -->
+      <div class="space-y-3 pt-3">
+        <div class="space-y-1.5">
           <label for="notes" class="block text-sm font-medium text-neutral-700">
             {t('home.modals.demo.label_notes', locale)}
           </label>
           <textarea
             name="notes"
             id="notes"
-            rows="3"
-            class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
+            rows="2"
+            class="w-full px-3 py-2 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
             placeholder={t('home.modals.demo.placeholder_notes', locale)}
           ></textarea>
         </div>
       </div>
 
       <!-- Privacy -->
-      <div class="flex items-start gap-3 p-4 bg-neutral-50 rounded-lg">
+      <div class="flex items-start gap-2.5 p-3 bg-neutral-50 rounded-lg">
         <input
           type="checkbox"
           name="privacy"
           id="privacy"
-          class="mt-1 w-4 h-4 text-primary border-neutral-300 rounded focus:ring-primary"
+          class="mt-0.5 w-4 h-4 text-primary border-neutral-300 rounded focus:ring-primary"
           required
         />
         <label for="privacy" class="text-sm text-neutral-600">
@@ -175,9 +174,9 @@ const { locale } = Astro.props;
   </div>
 
   <!-- Sticky Footer with submit button -->
-  <div slot="footer" class="modal-footer border-t border-neutral-200 px-6 py-4 bg-neutral-50 flex-shrink-0 rounded-b-lg">
+  <div slot="footer" class="modal-footer border-t border-neutral-200 px-4 py-3 bg-neutral-50 flex-shrink-0 rounded-b-lg">
     <!-- Trust indicators -->
-    <div class="text-center mb-4">
+    <div class="text-center mb-3">
       <div class="flex items-center justify-center gap-4 text-xs text-neutral-500 flex-wrap">
         <span class="flex items-center gap-1.5">
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
@@ -203,20 +202,167 @@ const { locale } = Astro.props;
     </div>
 
     <!-- Submit Button -->
-    <Button variant="primary" size="lg" type="submit" fullWidth form="demo-form">
-      {t('home.modals.demo.submit', locale)}
+    <Button variant="primary" size="lg" type="submit" fullWidth form="demo-form" id="demo-submit-btn">
+      <span id="submit-btn-text">{t('home.modals.demo.submit', locale)}</span>
+      <span id="submit-btn-spinner" style="display: none;" class="inline-flex items-center gap-2">
+        <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Verzenden...
+      </span>
     </Button>
   </div>
 </Modal>
 
 <script>
+  // Store the submit handler so we can remove it if needed
+  let currentSubmitHandler: ((e: Event) => Promise<void>) | null = null;
+
+  // Flag to prevent double submissions
+  let isSubmitting = false;
+
+  // Convert 12-hour time format (AM/PM) to 24-hour format
+  function convertTo24Hour(time12h: string): string {
+    const [time, modifier] = time12h.trim().split(' ');
+    let [hours, minutes] = time.split(':');
+
+    if (modifier === 'PM' && hours !== '12') {
+      hours = String(parseInt(hours, 10) + 12);
+    } else if (modifier === 'AM' && hours === '12') {
+      hours = '00';
+    }
+
+    return `${hours.padStart(2, '0')}:${minutes}`;
+  }
+
+  // Handle time slot loading
+  async function loadAvailableSlots(date: string) {
+    const container = document.getElementById('time-slots-container');
+    const grid = document.getElementById('time-slots-grid');
+    const loading = document.getElementById('time-slots-loading');
+    const error = document.getElementById('time-slots-error');
+
+    if (!container || !grid || !loading || !error) return;
+
+    // Show container and loading state
+    container.style.display = 'block';
+    loading.style.display = 'block';
+    grid.innerHTML = '';
+    error.style.display = 'none';
+
+    try {
+      const response = await fetch(`/api/available-slots?date=${date}`);
+      const data = await response.json();
+
+      loading.style.display = 'none';
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Failed to load slots');
+      }
+
+      const slots = data.slots || [];
+
+      if (slots.length === 0) {
+        error.textContent = 'Geen beschikbare tijdslots voor deze datum.';
+        error.style.display = 'block';
+        return;
+      }
+
+      // Create slot buttons
+      slots.forEach((slot: string) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        // Show 24-hour format to user, but keep original for API
+        button.textContent = convertTo24Hour(slot);
+        button.className = 'px-3 py-2 text-sm border border-neutral-300 rounded-lg hover:border-primary hover:bg-primary hover:text-white transition-all duration-200';
+        button.dataset.slot = slot; // Keep original format for API
+
+        button.addEventListener('click', function() {
+          // Remove selected class from all buttons
+          grid.querySelectorAll('button').forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-white', 'border-primary');
+            btn.classList.add('border-neutral-300');
+          });
+
+          // Add selected class to clicked button
+          button.classList.add('bg-primary', 'text-white', 'border-primary');
+          button.classList.remove('border-neutral-300');
+
+          // Set hidden input value
+          const hiddenInput = document.getElementById('selectedTimeSlot') as HTMLInputElement;
+          if (hiddenInput) {
+            hiddenInput.value = slot;
+          }
+        });
+
+        grid.appendChild(button);
+      });
+
+    } catch (err) {
+      loading.style.display = 'none';
+      error.textContent = 'Fout bij het laden van tijdslots. Probeer het opnieuw.';
+      error.style.display = 'block';
+      console.error('Error loading slots:', err);
+    }
+  }
+
   // Handle form validation and async submission
   function initDemoFormValidation() {
     const form = document.getElementById('demo-form') as HTMLFormElement;
     if (!form) return;
 
-    form.addEventListener('submit', async function(e) {
+    // Setup date change listener for loading slots
+    const dateInput = document.getElementById('preferredDate') as HTMLInputElement;
+    if (dateInput) {
+      // Set minimum date to tomorrow
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const minDate = tomorrow.toISOString().split('T')[0];
+      dateInput.min = minDate;
+
+      // Set maximum date to 30 days from now
+      const maxDate = new Date();
+      maxDate.setDate(maxDate.getDate() + 30);
+      dateInput.max = maxDate.toISOString().split('T')[0];
+
+      // Make entire date field clickable
+      dateInput.style.cursor = 'pointer';
+      dateInput.addEventListener('click', function(e) {
+        // For date inputs, show the picker on any click
+        if (dateInput.showPicker) {
+          try {
+            dateInput.showPicker();
+          } catch (err) {
+            // Fallback: focus the input if showPicker fails
+            dateInput.focus();
+          }
+        } else {
+          dateInput.focus();
+        }
+      });
+
+      dateInput.addEventListener('change', function() {
+        if (dateInput.value) {
+          loadAvailableSlots(dateInput.value);
+        }
+      });
+    }
+
+    // Remove previous listener if it exists
+    if (currentSubmitHandler) {
+      form.removeEventListener('submit', currentSubmitHandler);
+    }
+
+    // Create new submit handler
+    currentSubmitHandler = async function(e: Event) {
       e.preventDefault(); // Always prevent default form submission
+
+      // Prevent double submissions
+      if (isSubmitting) {
+        console.log('Form already submitting, ignoring duplicate click');
+        return;
+      }
 
       // Let browser do native validation first
       if (!form.checkValidity()) {
@@ -247,15 +393,22 @@ const { locale } = Astro.props;
         return;
       }
 
+      // Set submitting flag
+      isSubmitting = true;
+
       // Form is valid, submit via fetch
-      const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-      const originalButtonText = submitButton?.textContent || '';
+      const submitButton = document.getElementById('demo-submit-btn') as HTMLButtonElement;
+      const buttonText = document.getElementById('submit-btn-text');
+      const buttonSpinner = document.getElementById('submit-btn-spinner');
 
       try {
-        // Disable submit button
-        if (submitButton) {
+        // Show spinner and disable button
+        if (submitButton && buttonText && buttonSpinner) {
           submitButton.disabled = true;
-          submitButton.textContent = 'Verzenden...';
+          submitButton.style.opacity = '0.7';
+          submitButton.style.cursor = 'not-allowed';
+          buttonText.style.display = 'none';
+          buttonSpinner.style.display = 'inline-flex';
         }
 
         // Submit form data
@@ -275,11 +428,20 @@ const { locale } = Astro.props;
             document.body.style.overflow = '';
           }
 
-          // Show success notification
-          alert('✅ Bedankt! Je aanvraag is ontvangen. We nemen binnen 24 uur contact met je op.');
+          // Show success modal
+          const successModal = document.getElementById('success-modal');
+          if (successModal) {
+            successModal.classList.remove('hidden');
+          }
 
           // Reset form
           form.reset();
+
+          // Hide time slots container after reset
+          const timeSlotsContainer = document.getElementById('time-slots-container');
+          if (timeSlotsContainer) {
+            timeSlotsContainer.style.display = 'none';
+          }
         } else {
           // Show error message
           alert('❌ ' + (result.error || 'Er is iets misgegaan. Probeer het later opnieuw.'));
@@ -289,12 +451,19 @@ const { locale } = Astro.props;
         alert('❌ Er is iets misgegaan. Probeer het later opnieuw.');
       } finally {
         // Re-enable submit button
-        if (submitButton) {
+        isSubmitting = false;
+        if (submitButton && buttonText && buttonSpinner) {
           submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
+          submitButton.style.opacity = '1';
+          submitButton.style.cursor = 'pointer';
+          buttonText.style.display = 'inline';
+          buttonSpinner.style.display = 'none';
         }
       }
-    });
+    };
+
+    // Add the new listener
+    form.addEventListener('submit', currentSubmitHandler);
   }
 
   // Initialize on DOM ready
