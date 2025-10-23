@@ -1,0 +1,466 @@
+---
+// Visual for last activity tracking
+---
+
+<div class="last-activity">
+  <div class="pipeline-header">
+    <div class="header-title">
+      <span class="icon">insights</span>
+      <span>Pipeline Overzicht</span>
+    </div>
+    <div class="sort-toggle">
+      <span class="icon">sort</span>
+      <span>Laatste activiteit</span>
+    </div>
+  </div>
+
+  <div class="pipeline-stages">
+    <div class="stage">
+      <div class="stage-header">
+        <div class="stage-name">Leads</div>
+        <div class="stage-count">8</div>
+      </div>
+      <div class="stage-cards">
+        <div class="deal-card stale">
+          <div class="card-header">
+            <div class="client-name">Maria Smit</div>
+            <div class="activity-badge critical">
+              <span class="icon">history</span>
+              <span>18d</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-detail">
+              <span class="icon">home</span>
+              <span>Appartement</span>
+            </div>
+            <div class="card-detail">
+              <span class="icon">payments</span>
+              <span>€350K</span>
+            </div>
+          </div>
+          <div class="warning-bar">
+            <span class="icon">warning</span>
+            <span>Geen activiteit - risico!</span>
+          </div>
+        </div>
+
+        <div class="deal-card">
+          <div class="card-header">
+            <div class="client-name">Jan Bakker</div>
+            <div class="activity-badge recent">
+              <span class="icon">history</span>
+              <span>2d</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-detail">
+              <span class="icon">home</span>
+              <span>Villa</span>
+            </div>
+            <div class="card-detail">
+              <span class="icon">payments</span>
+              <span>€850K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-header">
+        <div class="stage-name">Viewing</div>
+        <div class="stage-count">5</div>
+      </div>
+      <div class="stage-cards">
+        <div class="deal-card">
+          <div class="card-header">
+            <div class="client-name">Pieter Vos</div>
+            <div class="activity-badge recent">
+              <span class="icon">history</span>
+              <span>1d</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-detail">
+              <span class="icon">home</span>
+              <span>Penthouse</span>
+            </div>
+            <div class="card-detail">
+              <span class="icon">payments</span>
+              <span>€1.2M</span>
+            </div>
+          </div>
+          <div class="activity-note">
+            <span class="icon">event</span>
+            <span>Bezichtiging morgen 14:00</span>
+          </div>
+        </div>
+
+        <div class="deal-card attention">
+          <div class="card-header">
+            <div class="client-name">Lisa de Jong</div>
+            <div class="activity-badge warning">
+              <span class="icon">history</span>
+              <span>8d</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-detail">
+              <span class="icon">home</span>
+              <span>Huis</span>
+            </div>
+            <div class="card-detail">
+              <span class="icon">payments</span>
+              <span>€650K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-header">
+        <div class="stage-name">Negotiation</div>
+        <div class="stage-count">3</div>
+      </div>
+      <div class="stage-cards">
+        <div class="deal-card">
+          <div class="card-header">
+            <div class="client-name">Tom Hendriks</div>
+            <div class="activity-badge active">
+              <span class="icon">history</span>
+              <span>3u</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-detail">
+              <span class="icon">home</span>
+              <span>Loft</span>
+            </div>
+            <div class="card-detail">
+              <span class="icon">payments</span>
+              <span>€425K</span>
+            </div>
+          </div>
+          <div class="activity-note success">
+            <span class="icon">phone</span>
+            <span>Gebeld: bod verhoogd</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insights-banner">
+    <span class="icon">lightbulb</span>
+    <span><strong>2 deals</strong> hebben deze week geen activiteit gehad</span>
+  </div>
+</div>
+
+<style>
+  .last-activity {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px rgba(10, 31, 68, 0.12);
+    border: 1px solid rgba(10, 31, 68, 0.08);
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .pipeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #0a1f44;
+    font-size: 1.125rem;
+  }
+
+  .header-title .icon {
+    font-size: 1.5rem;
+    color: #003366;
+  }
+
+  .sort-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #f3f4f6;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .sort-toggle:hover {
+    background: #e5e7eb;
+  }
+
+  .sort-toggle .icon {
+    font-size: 1rem;
+  }
+
+  .pipeline-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    border-radius: 0.5rem;
+  }
+
+  .stage-name {
+    font-weight: 600;
+    color: #0a1f44;
+    font-size: 0.875rem;
+  }
+
+  .stage-count {
+    background: #003366;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .stage-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .deal-card {
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    animation: slideIn 0.5s ease-out backwards;
+  }
+
+  .deal-card:nth-child(1) { animation-delay: 0.1s; }
+  .deal-card:nth-child(2) { animation-delay: 0.2s; }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .deal-card.stale {
+    border-color: #fca5a5;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    animation: shake 0.5s ease-out 0.3s;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+
+  .deal-card.attention {
+    border-color: #fcd34d;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  }
+
+  .deal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(10, 31, 68, 0.1);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .client-name {
+    font-weight: 600;
+    color: #0a1f44;
+    font-size: 0.875rem;
+  }
+
+  .activity-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .activity-badge.critical {
+    background: linear-gradient(135deg, #fca5a5, #f87171);
+    color: #7f1d1d;
+    animation: pulse 2s infinite;
+  }
+
+  .activity-badge.warning {
+    background: linear-gradient(135deg, #fcd34d, #fbbf24);
+    color: #78350f;
+  }
+
+  .activity-badge.recent {
+    background: linear-gradient(135deg, #93c5fd, #60a5fa);
+    color: #1e3a8a;
+  }
+
+  .activity-badge.active {
+    background: linear-gradient(135deg, #86efac, #4ade80);
+    color: #14532d;
+  }
+
+  .activity-badge .icon {
+    font-size: 0.875rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+
+  .card-detail .icon {
+    font-size: 0.875rem;
+  }
+
+  .warning-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(135deg, #fecaca, #fca5a5);
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #991b1b;
+    animation: pulse 2s infinite;
+  }
+
+  .warning-bar .icon {
+    font-size: 1rem;
+  }
+
+  .activity-note {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    color: #1e40af;
+  }
+
+  .activity-note.success {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #065f46;
+  }
+
+  .activity-note .icon {
+    font-size: 0.875rem;
+  }
+
+  .insights-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-radius: 0.75rem;
+    border: 1px solid #fbbf24;
+    color: #78350f;
+    font-size: 0.875rem;
+    animation: fadeIn 0.8s ease-out 0.4s backwards;
+  }
+
+  .insights-banner .icon {
+    font-size: 1.25rem;
+    color: #f59e0b;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .last-activity {
+      padding: 1rem;
+    }
+
+    .pipeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .pipeline-stages {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .deal-card {
+      padding: 0.75rem;
+    }
+
+    .insights-banner {
+      font-size: 0.75rem;
+      padding: 0.75rem;
+    }
+  }
+</style>

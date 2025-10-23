@@ -4,7 +4,7 @@
       "badge": "Lancering Januari 2025",
       "headline": "Tesoro CRM: Het CRM dat automatisch panden matcht",
       "subheadline": "Tesoro matcht real-time nieuwe panden met jouw klanten. Zodra je een property toevoegt, zie je direct welke klanten interesse hebben. Jij beslist wat je toont.",
-      "cta_primary": "Vraag een Waardebewijs aan",
+      "cta_primary": "Vraag Gratis Waardecheck aan",
       "cta_secondary": "Bekijk Hoe Het Werkt",
       "cta_video": "Bekijk korte video",
       "kanban_proposed": "Voorgesteld",
@@ -179,14 +179,34 @@
       "testimonial_3_role": "Compliance Officer",
       "testimonial_3_company": "Brussels Real Estate Group"
     },
+    "pain_points": {
+      "callback": {
+        "question": "Je belt niet op tijd terug. Concurrent wel.",
+        "description": "Je wilde die klant terugbellen. Maar het schoot erbij in door de drukte. Ondertussen heeft je concurrent wél direct contact opgenomen. De deal is weg.",
+        "solution": "Tesoro laat direct zien welke klanten al dagen geen aandacht hebben gehad (\"Niet gecontacteerd in 10+ dagen\"). Plus automatische reminders voordat je een klant kwijtraakt.",
+        "cta": "Boek gratis waardecheck"
+      },
+      "follow_up": {
+        "question": "3 weken geen contact. Klant denkt dat je niet geïnteresseerd bent.",
+        "description": "Je hebt een goede eerste afspraak gehad. Maar daarna ben je het uit het oog verloren. Nu heeft die klant al bij een ander makelaar getekend.",
+        "solution": "Met Tesoro vergeet je nooit een follow-up. Het systeem waarschuwt je automatisch (\"Call reminder: Jan Jansen - 7 dagen sinds laatste contact\") voordat de relatie breekt.",
+        "cta": "Boek gratis waardecheck"
+      },
+      "lost_deal": {
+        "question": "Die klant had van mij moeten zijn.",
+        "description": "Je had eerste contact. Maar de concurrent bouwde een sterkere relatie. Zij blijven beter in beeld, jij raakt de klant kwijt in de chaos.",
+        "solution": "Tesoro houdt je scherp met last activity tracking, lead stages, en proactieve reminders. Zodat jij altijd weet wie aandacht nodig heeft.",
+        "cta": "Boek gratis waardecheck"
+      }
+    },
     "demo": {
-      "badge": "Waardebewijs",
+      "badge": "Gratis Waardecheck",
       "title": "Zie Tesoro CRM in actie",
       "description": "Ontdek hoe onze AI-powered captación tools je helpen om meer woningen te vinden, sneller deals te sluiten en compliant te blijven.",
       "feature_1": "AI lead scoring en predictive analytics",
       "feature_2": "Realtime MLS synchronisatie",
       "feature_3": "Geautomatiseerde compliance checks",
-      "cta": "Boek een Waardebewijs"
+      "cta": "Boek Gratis Waardecheck"
     },
     "faq": {
       "title": "Veelgestelde vragen",
@@ -217,7 +237,7 @@
       "bullet_2": " Lead converteren: Automatische reminder om gekwalificeerde leads om te zetten naar deals.",
       "bullet_3": "Deal management: Blijf op de hoogte van wat er speelt in elke dealsfase.",
       "bullet_4": "Niets laten liggen: Proactieve waarschuwingen als je iets op zijn beloop laat.",
-      "cta": "Bekijk het Waardebewijs",
+      "cta": "Boek Gratis Waardecheck",
       "step1_title": "Lead kwalificeren",
       "step1_text": "Waarschuwing als lead niet gekwalificeerd",
       "step2_title": "Lead converteren",
@@ -258,11 +278,11 @@
     },
     "modals": {
       "demo": {
-        "title": "Plan je gratis Waardebewijs",
-        "description": "Ontdek hoe Tesoro CRM jouw workflow kan transformeren. Kies een moment dat jou uitkomt.",
+        "title": "Plan je gratis waardecheck",
+        "description": "Waar lig je 's nachts wakker van als makelaar? We nemen 30 minuten om jouw situatie te begrijpen en te laten zien hoe Tesoro helpt. Jij bepaalt of het de moeite waard is.",
         "section_personal": "Persoonlijke gegevens",
         "section_company": "Bedrijfsgegevens",
-        "section_schedule": "Plan je Waardebewijs",
+        "section_schedule": "Plan je waardecheck",
         "label_first_name": "Voornaam",
         "label_last_name": "Achternaam",
         "label_email": "E-mailadres",
@@ -276,15 +296,15 @@
         "placeholder_email": "jan.jansen@bedrijf.nl",
         "placeholder_phone": "+31 6 1234 5678",
         "placeholder_company": "Makelaardij Jansen",
-        "placeholder_notes": "Heb je specifieke vragen of onderwerpen die je wilt bespreken?",
+        "placeholder_notes": "Waar lig je 's nachts wakker van? Vertel ons wat jou frustreert in je dagelijkse werk...",
         "time_select": "Selecteer een tijd",
         "privacy_text": "Ik ga akkoord met het",
         "privacy_link": "privacybeleid",
         "privacy_text_end": "en geef toestemming voor contact.",
-        "submit": "Waardebewijs Inplannen",
+        "submit": "Plan Waardecheck",
         "trust_1": "30 minuten",
         "trust_2": "Geen verplichtingen",
-        "trust_3": "Persoonlijk Waardebewijs"
+        "trust_3": "Jij bepaalt de waarde"
       },
       "contact": {
         "title": "Neem Contact Op",

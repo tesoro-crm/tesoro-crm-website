@@ -14,6 +14,7 @@
   inboxLabel?: string;
   newBadge?: string;
   emailSubject?: string;
+  leadName?: string;
   emailSource?: string;
   emailInterest?: string;
   emailBudget?: string;
@@ -51,6 +52,7 @@ const {
   inboxLabel = "Inbox",
   newBadge = "NIEUW",
   emailSubject = "Nieuwe lead: Jan Jansen",
+  leadName = "Jan Jansen",
   emailSource = "Lead ontvangen via Instagram",
   emailInterest = "Interesse: Villa in Marbella",
   emailBudget = "Budget: €500.000 - €750.000",
@@ -150,7 +152,7 @@ const {
     <div class="lead-visual__screen" data-screen="2">
       <div class="mockup-call">
         <div class="mockup-call__header">
-          <h3>Jan Jansen</h3>
+          <h3>{leadName}</h3>
           <span class="mockup-call__status">{callStatus}</span>
         </div>
         <button type="button" class="mockup-call__button" aria-label="Call lead">

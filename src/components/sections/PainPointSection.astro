@@ -1,0 +1,227 @@
+---
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+import InactiveContactsVisual from '../visuals/InactiveContactsVisual.astro';
+import CallReminderVisual from '../visuals/CallReminderVisual.astro';
+import LastActivityVisual from '../visuals/LastActivityVisual.astro';
+
+interface Props {
+  locale: Language;
+  painKey: string;
+  reverse?: boolean;
+}
+
+const { locale, painKey, reverse = false } = Astro.props;
+
+const question = t(`home.pain_points.${painKey}.question`, locale);
+const description = t(`home.pain_points.${painKey}.description`, locale);
+const solution = t(`home.pain_points.${painKey}.solution`, locale);
+const ctaLabel = t(`home.pain_points.${painKey}.cta`, locale);
+---
+
+<section class={`pain-point ${reverse ? 'pain-point--reverse' : ''}`}>
+  <div class="pain-point__container">
+    <div class="pain-point__content">
+      <h2 class="pain-point__question">{question}</h2>
+      <p class="pain-point__description">{description}</p>
+      <div class="pain-point__solution">
+        <span class="icon pain-point__check">check_circle</span>
+        <p>{solution}</p>
+      </div>
+      <button
+        class="pain-point__cta"
+        data-demo-modal-target="demo-modal"
+      >
+        {ctaLabel}
+      </button>
+    </div>
+
+    <div class="pain-point__visual">
+      {painKey === 'callback' && <InactiveContactsVisual />}
+      {painKey === 'follow_up' && <CallReminderVisual />}
+      {painKey === 'lost_deal' && <LastActivityVisual />}
+    </div>
+  </div>
+</section>
+
+<style>
+  .pain-point {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #faf9f7 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pain-point::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 40%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 159, 67, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .pain-point__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 768px) {
+    .pain-point__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .pain-point--reverse .pain-point__container {
+      direction: rtl;
+    }
+
+    .pain-point--reverse .pain-point__content {
+      direction: ltr;
+    }
+
+    .pain-point--reverse .pain-point__visual {
+      direction: ltr;
+    }
+  }
+
+  .pain-point__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pain-point__question {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #0a1f44;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .pain-point__description {
+    font-size: 1.125rem;
+    color: rgba(10, 31, 68, 0.7);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .pain-point__solution {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    border-radius: 1rem;
+    border: 2px solid #10b981;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+  }
+
+  .pain-point__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  }
+
+  .pain-point__solution p {
+    margin: 0;
+    font-size: 1.0625rem;
+    color: #0a1f44;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .pain-point__cta {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--accent-primary);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    align-self: flex-start;
+  }
+
+  .pain-point__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px rgba(245, 158, 11, 0.35);
+    background: var(--accent-secondary);
+  }
+
+  .pain-point__visual {
+    position: relative;
+  }
+
+  .pain-point__image-wrapper {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(10, 31, 68, 0.12);
+    background: white;
+    border: 1px solid rgba(10, 31, 68, 0.08);
+  }
+
+  .pain-point__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Mobile improvements */
+  @media (max-width: 767px) {
+    .pain-point {
+      padding: 3rem 0;
+    }
+
+    .pain-point__question {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .pain-point__description {
+      font-size: 1rem;
+    }
+
+    .pain-point__solution {
+      padding: 1.25rem;
+    }
+
+    .pain-point__solution p {
+      font-size: 1rem;
+    }
+
+    .pain-point__cta {
+      width: 100%;
+      text-align: center;
+      padding: 1.125rem 2rem;
+    }
+
+    /* Disable hover on mobile */
+    .pain-point__cta:hover {
+      transform: none;
+      box-shadow: 0 10px 20px rgba(245, 158, 11, 0.25);
+    }
+  }
+</style>
