@@ -16,125 +16,151 @@ const sortedPosts = posts.sort((a, b) => {
   return new Date(dateB).getTime() - new Date(dateA).getTime();
 });
 
-// Get featured posts
-const featuredPosts = sortedPosts.filter(post => post.data.meta.featured);
+// Get featured post (most recent)
+const featuredPost = sortedPosts[0];
+
+// Get remaining posts for grid
+const gridPosts = sortedPosts.slice(1);
 
 // Get categories
 const categories = [...new Set(posts.map(post => post.data.meta.category))];
 
-// Category color mapping function
-function getCategoryStyle(category: string) {
-  const categoryKey = category.toLowerCase().replace(/\s+/g, '-');
-  return {
-    color: `var(--category-${categoryKey}, var(--tesoro-orange))`,
-    backgroundColor: `var(--category-${categoryKey}-bg, #FFF4E6)`
-  };
-}
-
-// Get current page from URL
+// Pagination
 const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
 const postsPerPage = 9;
-
-// Get all posts (don't exclude featured from grid)
-const allPostsForGrid = sortedPosts;
-const totalPages = Math.ceil(allPostsForGrid.length / postsPerPage);
-const paginatedPosts = allPostsForGrid.slice(
+const totalPages = Math.ceil(gridPosts.length / postsPerPage);
+const paginatedPosts = gridPosts.slice(
   (currentPage - 1) * postsPerPage,
   currentPage * postsPerPage
 );
 
 // Localized texts
-const pageTitle = locale === 'nl' ? 'Tesoro CRM Blog - Inzichten & Verhalen' : locale === 'es' ? 'Blog de Tesoro CRM - Perspectivas e Historias' : 'Tesoro CRM Blog - Insights & Stories';
+const pageTitle = locale === 'nl' ? 'Tesoro CRM Blog' : locale === 'es' ? 'Blog de Tesoro CRM' : 'Tesoro CRM Blog';
 const pageDescription = locale === 'nl'
-  ? 'Ontdek de laatste inzichten over CRM, vastgoedmarketing en bedrijfsgroei van Tesoro CRM experts.'
+  ? 'Ontdek de laatste inzichten over CRM, vastgoedmarketing en bedrijfsgroei.'
   : locale === 'es'
-  ? 'Descubre las últimas perspectivas sobre CRM, marketing inmobiliario y crecimiento empresarial de los expertos de Tesoro CRM.'
-  : 'Discover the latest insights on CRM, real estate marketing, and business growth from Tesoro CRM experts.';
-const allPostsText = locale === 'nl' ? 'Alle Posts' : locale === 'es' ? 'Todas las Publicaciones' : 'All Posts';
-const featuredText = locale === 'nl' ? 'Uitgelichte Artikelen' : locale === 'es' ? 'Artículos Destacados' : 'Featured Articles';
-const readTimeText = locale === 'nl' ? 'min lezen' : locale === 'es' ? 'min de lectura' : 'min read';
+  ? 'Descubre las últimas perspectivas sobre CRM, marketing inmobiliario y crecimiento empresarial.'
+  : 'Discover the latest insights on CRM, real estate marketing, and business growth.';
+const latestText = locale === 'nl' ? 'Laatste' : locale === 'es' ? 'Último' : 'Latest';
+const allPostsText = locale === 'nl' ? 'Alle Artikelen' : locale === 'es' ? 'Todos los Artículos' : 'All Articles';
+const categoriesText = locale === 'nl' ? 'Categorieën' : locale === 'es' ? 'Categorías' : 'Categories';
+const readMoreText = locale === 'nl' ? 'Lees meer' : locale === 'es' ? 'Leer más' : 'Read more';
 ---
 
 <Layout
   title={pageTitle}
   description={pageDescription}
 >
-  <section class="blog-index">
-    <div class="blog-index__container">
-      <!-- Hero Featured Post - Magazine Style -->
-      {featuredPosts.length > 0 && (() => {
-        const postData = featuredPosts[0].data;
-        const title = postData.hero.title[locale];
-        const description = postData.hero.description[locale];
-        const heroImage = postData.hero.image;
-        const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
-        const publishDate = new Date(publishDateString);
-        const authorId = (postData.meta as any).authorId || (postData.meta as any).author?.id || 'maria-perez';
-        const author = getAuthor(authorId);
+  <!-- Magazine Style Blog -->
+  <div class="magazine">
+    <!-- Header Section -->
+    <header class="magazine__header">
+      <div class="magazine__container">
+        <h1 class="magazine__title">Blog</h1>
+        <p class="magazine__subtitle">{pageDescription}</p>
+      </div>
+    </header>
 
-        return (
-          <article class="blog-index__hero">
-            <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)} class="blog-index__hero-link">
-              <div class="blog-index__hero-image-container">
-                <ImageWithFallback
-                  src={heroImage.src}
-                  alt={heroImage.alt[locale]}
-                  width={heroImage.width || 1600}
-                  height={heroImage.height || 900}
-                  loading="eager"
-                  class="blog-index__hero-image"
-                  aspectRatio="16/9"
-                  clickable={false}
-                />
-                <div class="blog-index__hero-gradient"></div>
+    <!-- Featured Hero Post -->
+    {featuredPost && (() => {
+      const postData = featuredPost.data;
+      const title = postData.hero.title[locale];
+      const description = postData.hero.description[locale];
+      const heroImage = postData.hero.image;
+      const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
+      const publishDate = new Date(publishDateString);
+      const authorId = (postData.meta as any).authorId || (postData.meta as any).author?.id || 'maria-perez';
+      const author = getAuthor(authorId);
 
-                {/* Content overlaid on image */}
-                <div class="blog-index__hero-content">
-                  <div class="blog-index__hero-meta">
-                    <span class="blog-index__hero-category">{postData.meta.category}</span>
-                    <span class="blog-index__hero-divider">·</span>
-                    <time datetime={publishDateString}>
-                      {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
-                        month: 'long',
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
-                    </time>
-                  </div>
-                  <h1 class="blog-index__hero-title">{title}</h1>
-                  <p class="blog-index__hero-description">{description}</p>
-                  {author && (
-                    <div class="blog-index__hero-author">
-                      <ImageWithFallback
-                        src={author.image}
-                        alt={author.name}
-                        width={32}
-                        height={32}
-                        loading="eager"
-                        class="blog-index__hero-author-avatar"
-                        aspectRatio="1/1"
-                        clickable={false}
-                      />
-                      <span class="blog-index__hero-author-name">{author.name}</span>
-                    </div>
-                  )}
+      return (
+        <section class="magazine__featured">
+          <div class="magazine__container">
+            <span class="magazine__label">{latestText}</span>
+            <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)} class="magazine__featured-link">
+              <article class="magazine__featured-card">
+                <div class="magazine__featured-image">
+                  <ImageWithFallback
+                    src={heroImage.src}
+                    alt={heroImage.alt[locale]}
+                    width={1200}
+                    height={600}
+                    loading="eager"
+                    class="magazine__featured-img"
+                    aspectRatio="2/1"
+                    clickable={false}
+                  />
                 </div>
-              </div>
+                <div class="magazine__featured-content">
+                  <span class="magazine__category magazine__category--large">{postData.meta.category}</span>
+                  <h2 class="magazine__featured-title">{title}</h2>
+                  <p class="magazine__featured-description">{description}</p>
+                  <div class="magazine__featured-meta">
+                    {author && (
+                      <div class="magazine__author">
+                        <ImageWithFallback
+                          src={author.image}
+                          alt={author.name}
+                          width={48}
+                          height={48}
+                          loading="eager"
+                          class="magazine__author-avatar"
+                          aspectRatio="1/1"
+                          clickable={false}
+                        />
+                        <div class="magazine__author-info">
+                          <span class="magazine__author-name">{author.name}</span>
+                          <time class="magazine__date" datetime={publishDateString}>
+                            {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
+                              month: 'long',
+                              day: 'numeric',
+                              year: 'numeric'
+                            })}
+                          </time>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </article>
             </a>
-          </article>
-        );
-      })()}
-
-      <!-- Bento Box Featured Posts -->
-      {featuredPosts.length > 1 && (
-        <div class="blog-index__bento">
-          <div class="blog-index__bento-header">
-            <span class="blog-index__section-label">{featuredText}</span>
           </div>
-          <div class="blog-index__bento-grid">
-            {featuredPosts.slice(1, 4).map((post, index) => {
+        </section>
+      );
+    })()}
+
+    <!-- Main Content Grid -->
+    <section class="magazine__main">
+      <div class="magazine__container magazine__container--grid">
+        <!-- Posts Grid -->
+        <div class="magazine__posts">
+          <div class="magazine__posts-header">
+            <h2 class="magazine__section-title">{allPostsText}</h2>
+
+            <!-- Category Filters -->
+            <div class="magazine__filters">
+              <a
+                href={getLocalizedPath('/blog', locale)}
+                class={`magazine__filter ${!Astro.url.searchParams.get('category') ? 'magazine__filter--active' : ''}`}
+              >
+                {allPostsText}
+              </a>
+              {categories.map(category => (
+                <a
+                  href={getLocalizedPath(`/blog?category=${encodeURIComponent(category)}`, locale)}
+                  class={`magazine__filter ${Astro.url.searchParams.get('category') === category ? 'magazine__filter--active' : ''}`}
+                >
+                  {category}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <!-- Posts Grid -->
+          <div class="magazine__grid">
+            {paginatedPosts.map((post, index) => {
               const postData = post.data;
               const title = postData.hero.title[locale];
+              const description = postData.hero.description[locale];
               const heroImage = postData.hero.image;
               const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
               const publishDate = new Date(publishDateString);
@@ -142,45 +168,45 @@ const readTimeText = locale === 'nl' ? 'min lezen' : locale === 'es' ? 'min de l
               const author = getAuthor(authorId);
 
               return (
-                <article class={`blog-index__bento-card blog-index__bento-card--${index + 1}`}>
-                  <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)} class="blog-index__bento-link">
-                    <div class="blog-index__bento-image-wrapper">
+                <article class={`magazine__card ${index === 0 ? 'magazine__card--large' : ''}`}>
+                  <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)} class="magazine__card-link">
+                    <div class="magazine__card-image">
                       <ImageWithFallback
                         src={heroImage.src}
                         alt={heroImage.alt[locale]}
-                        width={heroImage.width || 800}
-                        height={heroImage.height || 600}
+                        width={600}
+                        height={400}
                         loading="lazy"
-                        class="blog-index__bento-image"
-                        aspectRatio="4/3"
+                        class="magazine__card-img"
+                        aspectRatio="3/2"
                         clickable={false}
                       />
-                      <div class="blog-index__bento-overlay"></div>
+                      <span class="magazine__category magazine__category--overlay">{postData.meta.category}</span>
                     </div>
-                    <div class="blog-index__bento-content">
-                      <span class="blog-index__bento-category">{postData.meta.category}</span>
-                      <h3 class="blog-index__bento-title">{title}</h3>
-                      <div class="blog-index__bento-meta">
+                    <div class="magazine__card-content">
+                      <h3 class="magazine__card-title">{title}</h3>
+                      <p class="magazine__card-description">{description}</p>
+                      <div class="magazine__card-footer">
                         {author && (
-                          <>
+                          <div class="magazine__card-author">
                             <ImageWithFallback
                               src={author.image}
                               alt={author.name}
-                              width={24}
-                              height={24}
+                              width={32}
+                              height={32}
                               loading="lazy"
-                              class="blog-index__bento-author-avatar"
+                              class="magazine__card-avatar"
                               aspectRatio="1/1"
                               clickable={false}
                             />
-                            <span class="blog-index__bento-author-name">{author.name}</span>
-                            <span class="blog-index__bento-divider">·</span>
-                          </>
+                            <span class="magazine__card-author-name">{author.name}</span>
+                          </div>
                         )}
-                        <time datetime={publishDateString}>
+                        <time class="magazine__card-date" datetime={publishDateString}>
                           {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
                             month: 'short',
-                            day: 'numeric'
+                            day: 'numeric',
+                            year: 'numeric'
                           })}
                         </time>
                       </div>
@@ -190,772 +216,646 @@ const readTimeText = locale === 'nl' ? 'min lezen' : locale === 'es' ? 'min de l
               );
             })}
           </div>
-        </div>
-      )}
 
-      <!-- All Posts -->
-      <section class="blog-index__all-posts">
-        <div class="blog-index__all-posts-header">
-          <h2 class="blog-index__all-posts-title">
-            <span class="blog-index__section-label">
-              {Astro.url.searchParams.get('category')
-                ? `${Astro.url.searchParams.get('category')} ${locale === 'nl' ? 'Artikelen' : locale === 'es' ? 'Artículos' : 'Articles'}`
-                : locale === 'nl' ? 'Laatste Artikelen' : locale === 'es' ? 'Últimos Artículos' : 'Latest Articles'
-              }
-            </span>
-          </h2>
-          <!-- Category Filter -->
-          <div class="blog-index__filters">
-            <a href={getLocalizedPath('/blog', locale)} class={`blog-index__filter ${!Astro.url.searchParams.get('category') ? 'blog-index__filter--active' : ''}`}>
-              {allPostsText}
-            </a>
-            {categories.map(category => (
-              <a
-                href={getLocalizedPath(`/blog?category=${encodeURIComponent(category)}`, locale)}
-                class={`blog-index__filter ${Astro.url.searchParams.get('category') === category ? 'blog-index__filter--active' : ''}`}
-              >
-                {category}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <div class="blog-index__posts-grid">
-          {paginatedPosts.map(post => {
-            const postData = post.data;
-            const title = postData.hero.title[locale];
-            const description = postData.hero.description[locale];
-            const heroImage = postData.hero.image;
-            const publishDateString = (postData.meta as any).publishDate || (postData.hero as any).publishDate;
-            const publishDate = new Date(publishDateString);
-            const authorId = (postData.meta as any).authorId || (postData.meta as any).author?.id || 'maria-perez';
-            const author = getAuthor(authorId);
-
-            return (
-              <article class="blog-index__post-card">
-                <a href={getLocalizedPath(`/blog/${postData.meta.id}`, locale)} class="blog-index__post-link">
-                  <div class="blog-index__post-image-wrapper">
-                    <ImageWithFallback
-                      src={heroImage.src}
-                      alt={heroImage.alt[locale]}
-                      width={heroImage.width || 800}
-                      height={heroImage.height || 500}
-                      loading="lazy"
-                      class="blog-index__post-image"
-                      aspectRatio="8/5"
-                      clickable={false}
-                    />
-                  </div>
-                  <div class="blog-index__post-content">
-                    <span class="blog-index__post-category">{postData.meta.category}</span>
-                    <h3 class="blog-index__post-title">{title}</h3>
-                    <p class="blog-index__post-description">{description}</p>
-                    <div class="blog-index__post-meta">
-                      {author && (
-                        <>
-                          <ImageWithFallback
-                            src={author.image}
-                            alt={author.name}
-                            width={32}
-                            height={32}
-                            loading="lazy"
-                            class="blog-index__post-author-avatar"
-                            aspectRatio="1/1"
-                            clickable={false}
-                          />
-                          <span class="blog-index__post-author-name">{author.name}</span>
-                          <span class="blog-index__post-divider">·</span>
-                        </>
-                      )}
-                      <time datetime={publishDateString}>
-                        {publishDate.toLocaleDateString(locale === 'nl' ? 'nl-NL' : locale === 'es' ? 'es-ES' : 'en-US', {
-                          month: 'short',
-                          day: 'numeric',
-                          year: 'numeric'
-                        })}
-                      </time>
-                    </div>
-                  </div>
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <!-- Pagination -->
-        {totalPages > 1 && (
-          <nav class="blog-index__pagination">
-            {currentPage > 1 && (
-              <a
-                href={getLocalizedPath(`/blog?page=${currentPage - 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
-                class="blog-index__pagination-link blog-index__pagination-link--prev"
-              >
-                ← {locale === 'nl' ? 'Vorige' : locale === 'es' ? 'Anterior' : 'Previous'}
-              </a>
-            )}
-
-            <div class="blog-index__pagination-numbers">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+          <!-- Pagination -->
+          {totalPages > 1 && (
+            <nav class="magazine__pagination">
+              {currentPage > 1 && (
                 <a
-                  href={getLocalizedPath(`/blog?page=${page}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
-                  class={`blog-index__pagination-number ${page === currentPage ? 'blog-index__pagination-number--active' : ''}`}
+                  href={getLocalizedPath(`/blog?page=${currentPage - 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
+                  class="magazine__pagination-btn magazine__pagination-btn--prev"
                 >
-                  {page}
+                  ← {locale === 'nl' ? 'Vorige' : locale === 'es' ? 'Anterior' : 'Previous'}
                 </a>
-              ))}
-            </div>
-
-            {currentPage < totalPages && (
-              <a
-                href={getLocalizedPath(`/blog?page=${currentPage + 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
-                class="blog-index__pagination-link blog-index__pagination-link--next"
-              >
-                {locale === 'nl' ? 'Volgende' : locale === 'es' ? 'Siguiente' : 'Next'} →
-              </a>
-            )}
-          </nav>
-        )}
-      </section>
-
-      <!-- Newsletter -->
-      <section class="blog-index__newsletter">
-        <div class="blog-index__newsletter-content">
-          <span class="blog-index__newsletter-label">Newsletter</span>
-          <h2 class="blog-index__newsletter-title">
-            {locale === 'nl' ? 'Blijf op de hoogte' : locale === 'es' ? 'Mantente informado' : 'Stay in the loop'}
-          </h2>
-          <p class="blog-index__newsletter-description">
-            {pageDescription}
-          </p>
-          <form class="blog-index__newsletter-form" data-newsletter-form>
-            <input
-              type="email"
-              placeholder={locale === 'nl' ? 'Jouw e-mailadres' : locale === 'es' ? 'Tu correo electrónico' : 'Your email address'}
-              required
-              class="blog-index__newsletter-input"
-            />
-            <button type="submit" class="blog-index__newsletter-submit">
-              {locale === 'nl' ? 'Aanmelden' : locale === 'es' ? 'Suscribirse' : 'Subscribe'}
-            </button>
-          </form>
+              )}
+              <span class="magazine__pagination-info">
+                {locale === 'nl' ? 'Pagina' : locale === 'es' ? 'Página' : 'Page'} {currentPage} {locale === 'nl' ? 'van' : locale === 'es' ? 'de' : 'of'} {totalPages}
+              </span>
+              {currentPage < totalPages && (
+                <a
+                  href={getLocalizedPath(`/blog?page=${currentPage + 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
+                  class="magazine__pagination-btn magazine__pagination-btn--next"
+                >
+                  {locale === 'nl' ? 'Volgende' : locale === 'es' ? 'Siguiente' : 'Next'} →
+                </a>
+              )}
+            </nav>
+          )}
         </div>
-      </section>
-    </div>
-  </section>
+
+        <!-- Sidebar -->
+        <aside class="magazine__sidebar">
+          <!-- Categories Widget -->
+          <div class="magazine__widget">
+            <h3 class="magazine__widget-title">{categoriesText}</h3>
+            <ul class="magazine__widget-list">
+              <li>
+                <a
+                  href={getLocalizedPath('/blog', locale)}
+                  class="magazine__widget-link"
+                >
+                  {allPostsText}
+                </a>
+              </li>
+              {categories.map(category => (
+                <li>
+                  <a
+                    href={getLocalizedPath(`/blog?category=${encodeURIComponent(category)}`, locale)}
+                    class="magazine__widget-link"
+                  >
+                    {category}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Newsletter Widget -->
+          <div class="magazine__widget magazine__widget--highlight">
+            <h3 class="magazine__widget-title">Newsletter</h3>
+            <p class="magazine__widget-text">
+              {locale === 'nl'
+                ? 'Ontvang de laatste blog posts in je inbox.'
+                : locale === 'es'
+                ? 'Recibe los últimos artículos en tu correo.'
+                : 'Get the latest blog posts in your inbox.'}
+            </p>
+            <form class="magazine__newsletter-form">
+              <input
+                type="email"
+                placeholder={locale === 'nl' ? 'Je email' : locale === 'es' ? 'Tu correo' : 'Your email'}
+                class="magazine__newsletter-input"
+                required
+              />
+              <button type="submit" class="magazine__newsletter-btn">
+                {locale === 'nl' ? 'Abonneren' : locale === 'es' ? 'Suscribirse' : 'Subscribe'}
+              </button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
 </Layout>
 
-<script>
-  // Newsletter signup
-  document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector<HTMLFormElement>('[data-newsletter-form]');
-    if (!form) return;
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const emailInput = form.querySelector<HTMLInputElement>('input[type="email"]');
-      if (!emailInput) return;
-      const email = emailInput.value;
-
-      try {
-        const response = await fetch('/api/newsletter', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email }),
-        });
-
-        if (response.ok) {
-          alert('Thanks for subscribing! Check your email for confirmation.');
-          form.reset();
-        } else {
-          alert('Something went wrong. Please try again.');
-        }
-      } catch (error) {
-        alert('Something went wrong. Please try again.');
-      }
-    });
-  });
-</script>
-
 <style>
-  /* Modern Magazine-Style Blog */
-  .blog-index {
+  /* Magazine Layout */
+  .magazine {
     min-height: 100vh;
-    background: #fafafa;
-    padding-top: 80px;
+    background: #f8f9fa;
   }
 
-  .blog-index__container {
-    max-width: 1280px;
+  .magazine__container {
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 0 2rem;
   }
 
-  /* Hero - Clean Card Style */
-  .blog-index__hero {
-    margin-bottom: 4rem;
+  .magazine__container--grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 4rem;
+    align-items: start;
   }
 
-  .blog-index__hero-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .blog-index__hero-image-container {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    height: 500px;
+  /* Header */
+  .magazine__header {
     background: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 4rem 0 3rem;
   }
 
-  .blog-index__hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .blog-index__hero-link:hover .blog-index__hero-image {
-    transform: scale(1.05);
-  }
-
-  .blog-index__hero-gradient {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-  }
-
-  .blog-index__hero-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-    color: white;
-    z-index: 10;
-  }
-
-  .blog-index__hero-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .blog-index__hero-category {
-    background: #F5B400;
-    color: #003366;
-    padding: 0.375rem 0.875rem;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.7rem;
-  }
-
-  .blog-index__hero-divider {
-    opacity: 0.7;
-  }
-
-  .blog-index__hero-title {
-    font-size: 2rem;
+  .magazine__title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 0.75rem;
-    max-width: 800px;
+    color: #111827;
+    margin: 0 0 1rem;
+    letter-spacing: -0.03em;
   }
 
-  .blog-index__hero-description {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    max-width: 700px;
-    opacity: 0.95;
+  .magazine__subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin: 0;
+    max-width: 600px;
   }
 
-  .blog-index__hero-author {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
+  /* Featured Post */
+  .magazine__featured {
+    background: white;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .blog-index__hero-author-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 2px solid white;
-  }
-
-  .blog-index__hero-author-name {
-    font-size: 0.875rem;
-    font-weight: 600;
-  }
-
-  /* Bento Box Grid */
-  .blog-index__bento {
-    margin-bottom: 6rem;
-  }
-
-  .blog-index__bento-header {
-    margin-bottom: 2rem;
-  }
-
-  .blog-index__section-label {
+  .magazine__label {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: #003366;
-    color: white;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    border-radius: 4px;
-  }
-
-  .blog-index__bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .blog-index__bento-card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    background: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .blog-index__bento-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  }
-
-  /* Asymmetric sizing */
-  .blog-index__bento-card--1 {
-    grid-column: span 2;
-  }
-
-  .blog-index__bento-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .blog-index__bento-image-wrapper {
-    position: relative;
-    aspect-ratio: 4/3;
-    overflow: hidden;
-  }
-
-  .blog-index__bento-card--1 .blog-index__bento-image-wrapper {
-    aspect-ratio: 16/9;
-  }
-
-  .blog-index__bento-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .blog-index__bento-link:hover .blog-index__bento-image {
-    transform: scale(1.05);
-  }
-
-  .blog-index__bento-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
-  }
-
-  .blog-index__bento-content {
-    padding: 1.5rem;
-  }
-
-  .blog-index__bento-card--1 .blog-index__bento-content {
-    padding: 2rem;
-  }
-
-  .blog-index__bento-category {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #003366;
-    margin-bottom: 0.75rem;
-  }
-
-  .blog-index__bento-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #0f172a;
-    margin-bottom: 1rem;
-  }
-
-  .blog-index__bento-card--1 .blog-index__bento-title {
-    font-size: 2rem;
-  }
-
-  .blog-index__bento-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #64748b;
-  }
-
-  .blog-index__bento-author-avatar {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-  }
-
-  .blog-index__bento-author-name {
-    font-weight: 600;
-  }
-
-  .blog-index__bento-divider {
-    opacity: 0.5;
-  }
-
-  /* All Posts Section */
-  .blog-index__all-posts {
-    margin-bottom: 6rem;
-  }
-
-  .blog-index__all-posts-header {
-    margin-bottom: 3rem;
-  }
-
-  .blog-index__all-posts-title {
+    color: #ef4444;
     margin-bottom: 2rem;
   }
 
-  .blog-index__filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .blog-index__filter {
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.875rem;
-    color: #64748b;
-    background: white;
-    border: 2px solid #e5e7eb;
-    transition: all 0.2s ease;
-  }
-
-  .blog-index__filter:hover {
-    color: #003366;
-    border-color: #003366;
-  }
-
-  .blog-index__filter--active {
-    background: #003366;
-    color: white;
-    border-color: #003366;
-  }
-
-  .blog-index__posts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  .blog-index__post-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .blog-index__post-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-  }
-
-  .blog-index__post-link {
-    display: block;
+  .magazine__featured-link {
     text-decoration: none;
     color: inherit;
   }
 
-  .blog-index__post-image-wrapper {
+  .magazine__featured-card {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .magazine__featured-image {
     position: relative;
-    aspect-ratio: 8/5;
-    overflow: hidden;
-  }
-
-  .blog-index__post-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .blog-index__post-link:hover .blog-index__post-image {
-    transform: scale(1.05);
-  }
-
-  .blog-index__post-content {
-    padding: 1.5rem;
-  }
-
-  .blog-index__post-category {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #003366;
-    margin-bottom: 0.75rem;
-  }
-
-  .blog-index__post-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #0f172a;
-    margin-bottom: 0.75rem;
-  }
-
-  .blog-index__post-description {
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    color: #64748b;
-    margin-bottom: 1rem;
-  }
-
-  .blog-index__post-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
-    font-size: 0.875rem;
-    color: #64748b;
-  }
-
-  .blog-index__post-author-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-  }
-
-  .blog-index__post-author-name {
-    font-weight: 600;
-  }
-
-  .blog-index__post-divider {
-    opacity: 0.5;
-  }
-
-  /* Pagination */
-  .blog-index__pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .blog-index__pagination-link {
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #003366;
-    background: white;
-    border: 2px solid #e5e7eb;
-    transition: all 0.2s ease;
-  }
-
-  .blog-index__pagination-link:hover {
-    background: #003366;
-    color: white;
-    border-color: #003366;
-  }
-
-  .blog-index__pagination-numbers {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .blog-index__pagination-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #64748b;
-    background: white;
-    border: 2px solid #e5e7eb;
-    transition: all 0.2s ease;
-  }
-
-  .blog-index__pagination-number:hover {
-    color: #003366;
-    border-color: #003366;
-  }
-
-  .blog-index__pagination-number--active {
-    background: #003366;
-    color: white;
-    border-color: #003366;
-  }
-
-  /* Newsletter */
-  .blog-index__newsletter {
-    background: linear-gradient(135deg, #003366 0%, #00509e 100%);
     border-radius: 16px;
-    padding: 5rem 4rem;
-    text-align: center;
-    color: white;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
   }
 
-  .blog-index__newsletter-label {
+  .magazine__featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .magazine__featured-link:hover .magazine__featured-img {
+    transform: scale(1.05);
+  }
+
+  .magazine__featured-content {
+    padding: 1rem 0;
+  }
+
+  .magazine__category {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: rgba(255, 255, 255, 0.2);
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 0.875rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    color: white;
+    background: #111827;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     margin-bottom: 1.5rem;
   }
 
-  .blog-index__newsletter-title {
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
+  .magazine__category--large {
+    font-size: 0.9375rem;
+    padding: 0.625rem 1.25rem;
   }
 
-  .blog-index__newsletter-description {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  .magazine__category--overlay {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
   }
 
-  .blog-index__newsletter-form {
-    display: flex;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .blog-index__newsletter-input {
-    flex: 1;
-    padding: 1.25rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    background: white;
-    color: #0f172a;
-  }
-
-  .blog-index__newsletter-submit {
-    padding: 1.25rem 2.5rem;
-    border: none;
-    border-radius: 8px;
+  .magazine__featured-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
     font-weight: 700;
-    font-size: 1rem;
-    background: #F5B400;
-    color: #003366;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
+    color: #111827;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    letter-spacing: -0.02em;
   }
 
-  .blog-index__newsletter-submit:hover {
-    background: #ffc933;
-    transform: translateY(-2px);
+  .magazine__featured-description {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+  }
+
+  .magazine__featured-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .magazine__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .magazine__author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .magazine__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .magazine__author-name {
+    font-weight: 600;
+    color: #111827;
+    font-size: 1rem;
+  }
+
+  .magazine__date {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  /* Main Content */
+  .magazine__main {
+    padding: 4rem 0 6rem;
+  }
+
+  .magazine__posts {
+    min-width: 0;
+  }
+
+  .magazine__posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .magazine__section-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+  }
+
+  /* Filters */
+  .magazine__filters {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .magazine__filter {
+    padding: 0.625rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4b5563;
+    background: white;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+  }
+
+  .magazine__filter:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+  }
+
+  .magazine__filter--active {
+    background: #111827;
+    color: white;
+    border-color: #111827;
+  }
+
+  /* Posts Grid */
+  .magazine__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .magazine__card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .magazine__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .magazine__card--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .magazine__card--large .magazine__card-content {
+    padding: 2rem;
+  }
+
+  .magazine__card--large .magazine__card-title {
+    font-size: 1.75rem;
+  }
+
+  .magazine__card--large .magazine__card-description {
+    display: block;
+  }
+
+  .magazine__card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .magazine__card-image {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+
+  .magazine__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .magazine__card:hover .magazine__card-img {
+    transform: scale(1.1);
+  }
+
+  .magazine__card-content {
+    padding: 1.5rem;
+  }
+
+  .magazine__card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.3;
+    margin: 0 0 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .magazine__card-description {
+    display: none;
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .magazine__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #f3f4f6;
+  }
+
+  .magazine__card-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .magazine__card-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .magazine__card-author-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+  }
+
+  .magazine__card-date {
+    font-size: 0.875rem;
+    color: #9ca3af;
+  }
+
+  /* Sidebar */
+  .magazine__sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .magazine__widget {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .magazine__widget--highlight {
+    background: #111827;
+    color: white;
+  }
+
+  .magazine__widget-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+  }
+
+  .magazine__widget--highlight .magazine__widget-title {
+    color: white;
+  }
+
+  .magazine__widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .magazine__widget-list li {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .magazine__widget-list li:last-child {
+    border-bottom: none;
+  }
+
+  .magazine__widget-link {
+    display: block;
+    padding: 0.875rem 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .magazine__widget-link:hover {
+    color: #111827;
+  }
+
+  .magazine__widget-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    opacity: 0.9;
+  }
+
+  .magazine__newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .magazine__newsletter-input {
+    padding: 0.875rem 1rem;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    background: #1f2937;
+    color: white;
+  }
+
+  .magazine__newsletter-input::placeholder {
+    color: #9ca3af;
+  }
+
+  .magazine__newsletter-input:focus {
+    outline: none;
+    border-color: white;
+  }
+
+  .magazine__newsletter-btn {
+    padding: 0.875rem 1.5rem;
+    background: white;
+    color: #111827;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .magazine__newsletter-btn:hover {
+    background: #f3f4f6;
+  }
+
+  /* Pagination */
+  .magazine__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .magazine__pagination-btn {
+    padding: 0.875rem 1.75rem;
+    background: white;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .magazine__pagination-btn:hover {
+    background: #111827;
+    color: white;
+    border-color: #111827;
+  }
+
+  .magazine__pagination-info {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    font-weight: 500;
   }
 
   /* Responsive */
+  @media (max-width: 1200px) {
+    .magazine__container--grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .magazine__sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
   @media (max-width: 1024px) {
-    .blog-index__bento-grid {
+    .magazine__grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .blog-index__bento-card--1 {
+    .magazine__card--large {
       grid-column: span 2;
+      grid-row: span 1;
     }
 
-    .blog-index__posts-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .magazine__featured-card {
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   }
 
   @media (max-width: 768px) {
-    .blog-index__container {
-      padding: 2rem 1rem;
+    .magazine__title {
+      font-size: 2.5rem;
     }
 
-    .blog-index__hero-image-container {
-      height: 400px;
+    .magazine__subtitle {
+      font-size: 1.125rem;
     }
 
-    .blog-index__hero-content {
-      padding: 1.5rem;
+    .magazine__header {
+      padding: 3rem 0 2rem;
     }
 
-    .blog-index__hero-title {
-      font-size: 1.5rem;
+    .magazine__container {
+      padding: 0 1.5rem;
     }
 
-    .blog-index__hero-description {
-      font-size: 0.9375rem;
+    .magazine__posts-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
     }
 
-    .blog-index__bento-grid {
+    .magazine__grid {
       grid-template-columns: 1fr;
     }
 
-    .blog-index__bento-card--1 {
+    .magazine__card--large {
       grid-column: span 1;
     }
 
-    .blog-index__posts-grid {
+    .magazine__sidebar {
       grid-template-columns: 1fr;
     }
 
-    .blog-index__newsletter {
-      padding: 3rem 2rem;
+    .magazine__featured-title {
+      font-size: 1.75rem;
     }
 
-    .blog-index__newsletter-title {
-      font-size: 2rem;
-    }
-
-    .blog-index__newsletter-form {
-      flex-direction: column;
-    }
-
-    .blog-index__pagination {
-      flex-wrap: wrap;
+    .magazine__featured-description {
+      font-size: 1rem;
     }
   }
 </style>

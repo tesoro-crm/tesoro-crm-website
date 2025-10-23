@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "id": "marketing-trends-2025",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "createdAt": "2025-10-23T14:00:00Z",
+    "updatedAt": "2025-10-23T14:00:00Z",
+    "author": {
+      "name": "Sofia López",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop",
+      "bio": {
+        "nl": "Marketing specialist bij Tesoro CRM met focus op digitale strategieën en lead generatie voor vastgoedprofessionals",
+        "en": "Marketing Specialist at Tesoro CRM focusing on digital strategies and lead generation for real estate professionals",
+        "es": "Especialista en Marketing en Tesoro CRM enfocada en estrategias digitales y generación de leads para profesionales inmobiliarios"
+      }
+    },
+    "category": "marketing",
+    "tags": ["marketing-trends", "video-marketing", "digital-advertising", "social-media", "2025"],
+    "featured": true,
+    "draft": false,
+    "readingTime": 10,
+    "aiGenerated": true,
+    "aiPrompt": "Create comprehensive blog post about 2025 real estate marketing trends based on RE/MAX research, showing how Tesoro CRM enables implementation"
+  },
+
+  "seo": {
+    "canonicalURL": "https://tesorocrm.com/blog/marketing-trends-2025",
+    "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    "keywords": ["real estate marketing 2025", "video marketing real estate", "digital advertising strategies", "social media marketing", "real estate lead generation", "CRM marketing tools"]
+  },
+
+  "hero": {
+    "publishDate": "2025-10-23",
+    "title": {
+      "nl": "5 Marketingtrends die elke Spaanse makelaar in 2025 moet beheersen",
+      "en": "5 Marketing Trends Every Spanish Real Estate Agent Must Master in 2025",
+      "es": "5 tendencias de marketing que todo agente inmobiliario español debe dominar en 2025"
+    },
+    "description": {
+      "nl": "Van short-form video tot AI-gedreven personalisatie: ontdek de 5 marketing trends die het verschil maken tussen groeien en achterblijven in 2025. Plus: hoe Tesoro CRM je helpt om elke trend om te zetten in concrete leads.",
+      "en": "From short-form video to AI-driven personalization: discover the 5 marketing trends that make the difference between growing and falling behind in 2025. Plus: how Tesoro CRM helps you turn each trend into concrete leads.",
+      "es": "Desde videos cortos hasta personalización impulsada por IA: descubre las 5 tendencias de marketing que marcan la diferencia entre crecer y quedarse atrás en 2025. Además: cómo Tesoro CRM te ayuda a convertir cada tendencia en leads concretos."
+    },
+    "image": {
+      "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+      "alt": {
+        "nl": "Digitale marketing strategie op laptop scherm met analytics",
+        "en": "Digital marketing strategy on laptop screen with analytics",
+        "es": "Estrategia de marketing digital en pantalla de laptop con analíticas"
+      },
+      "width": 1200,
+      "height": 600
+    }
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Een makelaar in Marbella post elke dag een 30-seconden video op Instagram Reels. Zijn concurrent vertrouwt nog steeds op Idealista listings en een Facebook pagina die niet geüpdatet is sinds 2022.</p><p>Raad eens wie meer internationale kopers binnenhaalt?</p><p>De vastgoedmarkt groeit met 19,7%, buitenlandse vraag is op recordhoogte, en de concurrentie om deze kopers wordt elke dag sterker. Maar hier is het probleem: <strong>traditionele marketing werkt niet meer</strong>.</p><p>Kopers scrollen niet meer door pagina's met property listings. Ze willen video's zien. Ze verwachten gepersonaliseerde aanbevelingen. Ze zoeken op hun telefoon en verwachten instant antwoorden.</p><p>Als je marketing strategie er in 2025 hetzelfde uitziet als in 2022, verlies je.</p><p>Dit zijn de 5 trends die de game veranderen - en hoe je ze implementeert met de juiste tools.</p>"
+        },
+        "en": {
+          "text": "<p>A real estate agent in Marbella posts a 30-second video on Instagram Reels every day. His competitor still relies on Idealista listings and a Facebook page that hasn't been updated since 2022.</p><p>Guess who's bringing in more international buyers?</p><p>The real estate market is growing by 19.7%, foreign demand is at record highs, and the competition for these buyers gets stronger every day. But here's the problem: <strong>traditional marketing no longer works</strong>.</p><p>Buyers don't scroll through pages of property listings anymore. They want to see videos. They expect personalized recommendations. They search on their phones and expect instant answers.</p><p>If your marketing strategy in 2025 looks the same as in 2022, you're losing.</p><p>These are the 5 trends that are changing the game - and how to implement them with the right tools.</p>"
+        },
+        "es": {
+          "text": "<p>Un agente inmobiliario en Marbella publica un video de 30 segundos en Instagram Reels todos los días. Su competidor todavía confía en listados de Idealista y una página de Facebook que no se ha actualizado desde 2022.</p><p>¿Adivina quién está atrayendo más compradores internacionales?</p><p>El mercado inmobiliario crece un 19,7%, la demanda extranjera está en máximos históricos y la competencia por estos compradores se vuelve más fuerte cada día. Pero aquí está el problema: <strong>el marketing tradicional ya no funciona</strong>.</p><p>Los compradores ya no navegan por páginas de listados de propiedades. Quieren ver videos. Esperan recomendaciones personalizadas. Buscan en sus teléfonos y esperan respuestas instantáneas.</p><p>Si tu estrategia de marketing en 2025 se ve igual que en 2022, estás perdiendo.</p><p>Estas son las 5 tendencias que están cambiando el juego, y cómo implementarlas con las herramientas adecuadas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "reality-check",
+      "variant": "warning",
+      "title": {
+        "nl": "De harde realiteit",
+        "en": "The hard reality",
+        "es": "La dura realidad"
+      },
+      "items": [
+        {
+          "nl": "60% van property searches gebeurt op mobile - maar de meeste makelaarwebsites zijn niet mobile-optimized",
+          "en": "60% of property searches happen on mobile - but most agent websites aren't mobile-optimized",
+          "es": "El 60% de las búsquedas de propiedades ocurren en móvil, pero la mayoría de los sitios web de agentes no están optimizados para móvil"
+        },
+        {
+          "nl": "Internationale kopers verwachten video tours voordat ze een viewing boeken - maar de meeste listings hebben alleen foto's",
+          "en": "International buyers expect video tours before booking a viewing - but most listings only have photos",
+          "es": "Los compradores internacionales esperan tours en video antes de reservar una visita, pero la mayoría de los listados solo tienen fotos"
+        },
+        {
+          "nl": "Leads verwachten follow-up binnen 5 minuten - maar de meeste makelaars reageren pas uren later",
+          "en": "Leads expect follow-up within 5 minutes - but most agents don't respond until hours later",
+          "es": "Los leads esperan seguimiento en 5 minutos, pero la mayoría de los agentes no responden hasta horas después"
+        },
+        {
+          "nl": "Social media advertenties leveren 3x meer ROI dan traditionele portals - maar weinig makelaars gebruiken ze effectief",
+          "en": "Social media ads deliver 3x more ROI than traditional portals - but few agents use them effectively",
+          "es": "Los anuncios en redes sociales ofrecen 3 veces más ROI que los portales tradicionales, pero pocos agentes los usan efectivamente"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "trend-1",
+      "title": {
+        "nl": "Trend 1: Short-form video domineert alles",
+        "en": "Trend 1: Short-form video dominates everything",
+        "es": "Trend 1: El video corto domina todo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>TikTok, Instagram Reels, YouTube Shorts. Als je niet op deze platforms zit, besta je niet voor een groot deel van je target audience.</p><p>Maar het gaat niet alleen om aanwezig zijn. Het gaat om <strong>hoe</strong> je video gebruikt:</p><h4>Wat werkt in 2025:</h4><ul><li><strong>Property tours onder 60 seconden:</strong> Geen lange, saaie rondleidingen. Quick cuts, dynamische camera bewegingen, focus op de highlights.</li><li><strong>Behind-the-scenes content:</strong> Laat zien hoe je werkt. Negotiations, viewings, closing deals. Mensen kopen van mensen.</li><li><strong>Market insights in bite-sized format:</strong> \"3 redenen waarom deze buurt in waarde stijgt\" - 45 seconden, straight to the point.</li><li><strong>Trending sounds en hashtags:</strong> De algoritmes belonen dit. Een goed gekozen trending sound kan je bereik met 10x verhogen.</li></ul><h4>De Spaanse context:</h4><p>Costa del Sol, Barcelona, en Madrid zijn visueel stunning. Gebruik dat. Een 30-seconden Reel van een sunset view vanaf een balkon in Málaga presteert beter dan elke geschreven listing.</p><p>En vergeet niet: internationale kopers zitten op deze platforms. Ze scrollen, ze ontdekken, ze reageren. Als jouw properties daar niet verschijnen, gaan ze naar een concurrent.</p>"
+        },
+        "en": {
+          "text": "<p>TikTok, Instagram Reels, YouTube Shorts. If you're not on these platforms, you don't exist for a large part of your target audience.</p><p>But it's not just about being present. It's about <strong>how</strong> you use video:</p><h4>What works in 2025:</h4><ul><li><strong>Property tours under 60 seconds:</strong> No long, boring walkthroughs. Quick cuts, dynamic camera movements, focus on the highlights.</li><li><strong>Behind-the-scenes content:</strong> Show how you work. Negotiations, viewings, closing deals. People buy from people.</li><li><strong>Market insights in bite-sized format:</strong> \"3 reasons why this neighborhood is increasing in value\" - 45 seconds, straight to the point.</li><li><strong>Trending sounds and hashtags:</strong> The algorithms reward this. A well-chosen trending sound can increase your reach by 10x.</li></ul><h4>The Spanish context:</h4><p>Costa del Sol, Barcelona, and Madrid are visually stunning. Use that. A 30-second Reel of a sunset view from a balcony in Málaga performs better than any written listing.</p><p>And don't forget: international buyers are on these platforms. They scroll, they discover, they engage. If your properties don't appear there, they go to a competitor.</p>"
+        },
+        "es": {
+          "text": "<p>TikTok, Instagram Reels, YouTube Shorts. Si no estás en estas plataformas, no existes para una gran parte de tu público objetivo.</p><p>Pero no se trata solo de estar presente. Se trata de <strong>cómo</strong> usas el video:</p><h4>Qué funciona en 2025:</h4><ul><li><strong>Tours de propiedades de menos de 60 segundos:</strong> No recorridos largos y aburridos. Cortes rápidos, movimientos de cámara dinámicos, enfoque en los puntos destacados.</li><li><strong>Contenido detrás de escenas:</strong> Muestra cómo trabajas. Negociaciones, visitas, cierre de tratos. La gente compra a personas.</li><li><strong>Insights del mercado en formato breve:</strong> \"3 razones por las que este barrio está aumentando de valor\", 45 segundos, directo al grano.</li><li><strong>Sonidos y hashtags de tendencia:</strong> Los algoritmos recompensan esto. Un sonido de tendencia bien elegido puede aumentar tu alcance 10 veces.</li></ul><h4>El contexto español:</h4><p>Costa del Sol, Barcelona y Madrid son visualmente impresionantes. Usa eso. Un Reel de 30 segundos de una vista al atardecer desde un balcón en Málaga funciona mejor que cualquier listado escrito.</p><p>Y no olvides: los compradores internacionales están en estas plataformas. Hacen scroll, descubren, se enganchan. Si tus propiedades no aparecen allí, se van a un competidor.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "tesoro-video-support",
+      "variant": "success",
+      "title": {
+        "nl": "Hoe Tesoro video marketing mogelijk maakt",
+        "en": "How Tesoro enables video marketing",
+        "es": "Cómo Tesoro habilita el marketing de video"
+      },
+      "items": [
+        {
+          "nl": "Property pagina's geoptimaliseerd voor video embeds - YouTube, Vimeo, direct uploads",
+          "en": "Property pages optimized for video embeds - YouTube, Vimeo, direct uploads",
+          "es": "Páginas de propiedades optimizadas para inserción de videos: YouTube, Vimeo, cargas directas"
+        },
+        {
+          "nl": "Social media integratie - deel properties direct naar Instagram, Facebook vanuit CRM",
+          "en": "Social media integration - share properties directly to Instagram, Facebook from CRM",
+          "es": "Integración de redes sociales: comparte propiedades directamente en Instagram, Facebook desde el CRM"
+        },
+        {
+          "nl": "Track welke video's de meeste leads genereren met ingebouwde analytics",
+          "en": "Track which videos generate the most leads with built-in analytics",
+          "es": "Rastrea qué videos generan más leads con analíticas integradas"
+        },
+        {
+          "nl": "Video view tracking - zie welke properties het meest bekeken worden",
+          "en": "Video view tracking - see which properties are viewed most",
+          "es": "Seguimiento de vistas de video: ve qué propiedades se ven más"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "trend-2",
+      "title": {
+        "nl": "Trend 2: Virtual Reality en Augmented Reality worden mainstream",
+        "en": "Trend 2: Virtual Reality and Augmented Reality go mainstream",
+        "es": "Trend 2: La Realidad Virtual y la Realidad Aumentada se vuelven mainstream"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>VR en AR zijn niet meer \"toekomst\" - ze zijn <strong>nu</strong>.</p><p>Internationale kopers willen niet meer een vliegticket boeken voor elke viewing. Ze willen eerst virtueel door de property lopen. Ze willen zien hoe hun eigen meubels eruitzien in de ruimte. Ze willen renovaties visualiseren voordat ze een bod doen.</p><h4>Concrete toepassingen:</h4><p><strong>VR voor remote exploration:</strong> Een koper in New York kan door een villa in Valencia lopen alsof hij ter plaatse is. Perfect voor luxury listings en internationale kopers die een shortlist willen maken voordat ze naar Spanje komen.</p><p><strong>AR voor staging:</strong> Lege properties zijn moeilijk te verkopen. Met AR kun je laten zien hoe een ruimte eruit ziet met meubels, zonder fysiek te hoeven stagen. Kopers kunnen ook visualiseren hoe renovaties eruit zouden zien.</p><p><strong>Virtual open houses:</strong> Host een live virtual tour voor internationale kopers in verschillende tijdzones. Één tour, tientallen potentiële kopers.</p><h4>Het resultaat:</h4><p>Minder tijdverspilling aan unqualified viewings. Meer qualified leads die al verliefd zijn op de property voordat ze langskomen. Hogere conversie omdat kopers al weten wat ze krijgen.</p>"
+        },
+        "en": {
+          "text": "<p>VR and AR are no longer \"future\" - they are <strong>now</strong>.</p><p>International buyers no longer want to book a flight for every viewing. They want to walk through the property virtually first. They want to see how their own furniture looks in the space. They want to visualize renovations before making an offer.</p><h4>Concrete applications:</h4><p><strong>VR for remote exploration:</strong> A buyer in New York can walk through a villa in Valencia as if he's there. Perfect for luxury listings and international buyers who want to shortlist before coming to Spain.</p><p><strong>AR for staging:</strong> Empty properties are hard to sell. With AR you can show what a space looks like with furniture, without having to physically stage. Buyers can also visualize what renovations would look like.</p><p><strong>Virtual open houses:</strong> Host a live virtual tour for international buyers in different time zones. One tour, dozens of potential buyers.</p><h4>The result:</h4><p>Less time wasted on unqualified viewings. More qualified leads who are already in love with the property before they visit. Higher conversion because buyers already know what they're getting.</p>"
+        },
+        "es": {
+          "text": "<p>VR y AR ya no son \"futuro\", son <strong>ahora</strong>.</p><p>Los compradores internacionales ya no quieren reservar un vuelo para cada visita. Quieren recorrer la propiedad virtualmente primero. Quieren ver cómo se ven sus propios muebles en el espacio. Quieren visualizar renovaciones antes de hacer una oferta.</p><h4>Aplicaciones concretas:</h4><p><strong>VR para exploración remota:</strong> Un comprador en Nueva York puede recorrer una villa en Valencia como si estuviera allí. Perfecto para listados de lujo y compradores internacionales que quieren hacer una lista corta antes de venir a España.</p><p><strong>AR para staging:</strong> Las propiedades vacías son difíciles de vender. Con AR puedes mostrar cómo se ve un espacio con muebles, sin tener que hacer staging físico. Los compradores también pueden visualizar cómo se verían las renovaciones.</p><p><strong>Open houses virtuales:</strong> Organiza un tour virtual en vivo para compradores internacionales en diferentes zonas horarias. Un tour, docenas de compradores potenciales.</p><h4>El resultado:</h4><p>Menos tiempo perdido en visitas no cualificadas. Más leads cualificados que ya están enamorados de la propiedad antes de visitarla. Mayor conversión porque los compradores ya saben lo que están obteniendo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "tesoro-vr-ar",
+      "variant": "success",
+      "title": {
+        "nl": "Tesoro's VR/AR ondersteuning",
+        "en": "Tesoro's VR/AR support",
+        "es": "Soporte VR/AR de Tesoro"
+      },
+      "items": [
+        {
+          "nl": "Virtual tour embeds op property pages - Matterport, 360° tours, en meer",
+          "en": "Virtual tour embeds on property pages - Matterport, 360° tours, and more",
+          "es": "Inserciones de tours virtuales en páginas de propiedades: Matterport, tours de 360° y más"
+        },
+        {
+          "nl": "Customer portal met 360° tour access - kopers kunnen properties verkennen op hun eigen tijd",
+          "en": "Customer portal with 360° tour access - buyers can explore properties at their own time",
+          "es": "Portal de clientes con acceso a tours de 360°: los compradores pueden explorar propiedades en su propio tiempo"
+        },
+        {
+          "nl": "Reduceer tijdverspilling aan unqualified viewings met virtual pre-screening",
+          "en": "Reduce time waste on unqualified viewings with virtual pre-screening",
+          "es": "Reduce el tiempo perdido en visitas no cualificadas con preselección virtual"
+        },
+        {
+          "nl": "Internationale kopers kunnen remote touren voordat ze naar Spanje komen",
+          "en": "International buyers can tour remotely before coming to Spain",
+          "es": "Los compradores internacionales pueden hacer tours de forma remota antes de venir a España"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "trend-3",
+      "title": {
+        "nl": "Trend 3: Gepersonaliseerde digitale advertising verslaat generieke campagnes",
+        "en": "Trend 3: Personalized digital advertising beats generic campaigns",
+        "es": "Trend 3: La publicidad digital personalizada vence a las campañas genéricas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Hier is de harde waarheid: niemand wil meer \"Nieuw Appartement Te Koop\" advertenties zien.</p><p>Kopers verwachten advertenties die <strong>specifiek relevant zijn voor hun situatie</strong>. Een first-time buyer wil andere informatie zien dan een expat investor. Een Duitse pensionado heeft andere behoeften dan een Britse digital nomad.</p><h4>Data-driven targeting in actie:</h4><p><strong>Segmenteer je audience:</strong></p><ul><li>First-time buyers: Focus op betaalbaarheid, financieringsopties, starter homes</li><li>Investors: ROI, rental yields, market appreciation data</li><li>Expats: Lifestyle, internationale scholen, expat communities</li><li>Luxury buyers: Exclusiviteit, privacy, premium features</li></ul><p><strong>Retargeting op basis van gedrag:</strong></p><p>Iemand heeft 5 villas in Marbella bekeken maar geen contact opgenomen? Stuur hem een advertentie met vergelijkbare properties + een market report over waarom nu het juiste moment is om te kopen.</p><p><strong>A/B testing van ad performance:</strong></p><p>Test verschillende headlines, visuals, calls-to-action. Data vertelt je wat werkt. Een makelaar in Valencia ontdekte dat \"Escape to Mediterranean lifestyle\" 3x beter presteerde dan \"Villa for sale\" bij UK kopers.</p>"
+        },
+        "en": {
+          "text": "<p>Here's the hard truth: nobody wants to see \"New Apartment For Sale\" ads anymore.</p><p>Buyers expect ads that are <strong>specifically relevant to their situation</strong>. A first-time buyer wants to see different information than an expat investor. A German retiree has different needs than a British digital nomad.</p><h4>Data-driven targeting in action:</h4><p><strong>Segment your audience:</strong></p><ul><li>First-time buyers: Focus on affordability, financing options, starter homes</li><li>Investors: ROI, rental yields, market appreciation data</li><li>Expats: Lifestyle, international schools, expat communities</li><li>Luxury buyers: Exclusivity, privacy, premium features</li></ul><p><strong>Retargeting based on behavior:</strong></p><p>Someone viewed 5 villas in Marbella but didn't contact you? Send them an ad with similar properties + a market report on why now is the right time to buy.</p><p><strong>A/B testing of ad performance:</strong></p><p>Test different headlines, visuals, calls-to-action. Data tells you what works. An agent in Valencia discovered that \"Escape to Mediterranean lifestyle\" performed 3x better than \"Villa for sale\" with UK buyers.</p>"
+        },
+        "es": {
+          "text": "<p>Aquí está la dura verdad: nadie quiere ver anuncios de \"Nuevo Apartamento en Venta\" nunca más.</p><p>Los compradores esperan anuncios que sean <strong>específicamente relevantes para su situación</strong>. Un comprador primerizo quiere ver información diferente a un inversor expatriado. Un jubilado alemán tiene necesidades diferentes a un nómada digital británico.</p><h4>Targeting basado en datos en acción:</h4><p><strong>Segmenta tu audiencia:</strong></p><ul><li>Compradores primerizos: Enfócate en asequibilidad, opciones de financiación, viviendas iniciales</li><li>Inversores: ROI, rendimientos de alquiler, datos de apreciación del mercado</li><li>Expatriados: Estilo de vida, escuelas internacionales, comunidades de expatriados</li><li>Compradores de lujo: Exclusividad, privacidad, características premium</li></ul><p><strong>Retargeting basado en comportamiento:</strong></p><p>¿Alguien vio 5 villas en Marbella pero no se puso en contacto? Envíale un anuncio con propiedades similares + un informe de mercado sobre por qué ahora es el momento adecuado para comprar.</p><p><strong>A/B testing del rendimiento de anuncios:</strong></p><p>Prueba diferentes titulares, visuales, llamadas a la acción. Los datos te dicen qué funciona. Un agente en Valencia descubrió que \"Escape to Mediterranean lifestyle\" funcionó 3 veces mejor que \"Villa en venta\" con compradores del Reino Unido.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "tesoro-personalization",
+      "variant": "success",
+      "title": {
+        "nl": "Tesoro's personalisatie-engine",
+        "en": "Tesoro's personalization engine",
+        "es": "Motor de personalización de Tesoro"
+      },
+      "items": [
+        {
+          "nl": "Lead segmentatie per buyer type - first-time, investor, expat, luxury",
+          "en": "Lead segmentation by buyer type - first-time, investor, expat, luxury",
+          "es": "Segmentación de leads por tipo de comprador: primerizo, inversor, expatriado, lujo"
+        },
+        {
+          "nl": "Geautomatiseerde campagnes op basis van preferences - toon properties die matchen met hun criteria",
+          "en": "Automated campaigns based on preferences - show properties that match their criteria",
+          "es": "Campañas automatizadas basadas en preferencias: muestra propiedades que coincidan con sus criterios"
+        },
+        {
+          "nl": "Property matching algoritme - de juiste properties naar de juiste kopers",
+          "en": "Property matching algorithm - the right properties to the right buyers",
+          "es": "Algoritmo de coincidencia de propiedades: las propiedades correctas para los compradores correctos"
+        },
+        {
+          "nl": "Gedragstracking - welke properties bekeken ze, hoelang, wat zijn hun interesses",
+          "en": "Behavior tracking - which properties they viewed, how long, what are their interests",
+          "es": "Seguimiento de comportamiento: qué propiedades vieron, por cuánto tiempo, cuáles son sus intereses"
+        },
+        {
+          "nl": "Custom email templates per segment voor gepersonaliseerde outreach",
+          "en": "Custom email templates per segment for personalized outreach",
+          "es": "Plantillas de correo electrónico personalizadas por segmento para alcance personalizado"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "trend-4",
+      "title": {
+        "nl": "Trend 4: Mobile-first is niet optioneel, het is verplicht",
+        "en": "Trend 4: Mobile-first is not optional, it's mandatory",
+        "es": "Trend 4: Mobile-first no es opcional, es obligatorio"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>60% van alle property searches gebeurt op mobile. Als je website niet mobile-optimized is, verlies je letterlijk meer dan de helft van je potentiële klanten.</p><p>Maar mobile-first gaat verder dan alleen een responsive design:</p><h4>Wat mobile-first betekent in 2025:</h4><p><strong>Fast-loading property pages:</strong> Een pagina die 3 seconden duurt om te laden verliest 53% van mobile bezoekers. Speed is niet alleen een nice-to-have, het is essentieel.</p><p><strong>One-click contact from mobile:</strong> Geen ingewikkelde formulieren. Één tap om te bellen, één tap om WhatsApp te openen, één tap om een viewing te boeken.</p><p><strong>WhatsApp integratie:</strong> In Spanje is WhatsApp dé communicatie-tool. Internationale kopers verwachten dit ook. Als je niet direct via WhatsApp beschikbaar bent, gaat de lead naar iemand anders.</p><p><strong>Mobile-optimized property filters:</strong> Grote knoppen, eenvoudige swipe-acties, voorkeursinstellingen die onthouden worden. De mobile experience moet even goed zijn als desktop.</p><h4>De Spaanse context:</h4><p>Toeristen en internationale kopers browsen op hun telefoon terwijl ze al in Spanje zijn. Ze zitten op het strand in Málaga en zoeken naar properties in de buurt. Als jouw mobile experience slecht is, boeken ze een viewing bij een concurrent.</p>"
+        },
+        "en": {
+          "text": "<p>60% of all property searches happen on mobile. If your website isn't mobile-optimized, you're literally losing more than half of your potential customers.</p><p>But mobile-first goes beyond just responsive design:</p><h4>What mobile-first means in 2025:</h4><p><strong>Fast-loading property pages:</strong> A page that takes 3 seconds to load loses 53% of mobile visitors. Speed isn't just nice-to-have, it's essential.</p><p><strong>One-click contact from mobile:</strong> No complicated forms. One tap to call, one tap to open WhatsApp, one tap to book a viewing.</p><p><strong>WhatsApp integration:</strong> In Spain, WhatsApp is the communication tool. International buyers expect this too. If you're not directly available via WhatsApp, the lead goes to someone else.</p><p><strong>Mobile-optimized property filters:</strong> Large buttons, simple swipe actions, preference settings that are remembered. The mobile experience must be as good as desktop.</p><h4>The Spanish context:</h4><p>Tourists and international buyers browse on their phones while already in Spain. They're sitting on the beach in Málaga searching for properties nearby. If your mobile experience is poor, they book a viewing with a competitor.</p>"
+        },
+        "es": {
+          "text": "<p>El 60% de todas las búsquedas de propiedades ocurren en móvil. Si tu sitio web no está optimizado para móvil, literalmente estás perdiendo más de la mitad de tus clientes potenciales.</p><p>Pero mobile-first va más allá del diseño responsive:</p><h4>Qué significa mobile-first en 2025:</h4><p><strong>Páginas de propiedades de carga rápida:</strong> Una página que tarda 3 segundos en cargar pierde el 53% de los visitantes móviles. La velocidad no es solo algo agradable de tener, es esencial.</p><p><strong>Contacto con un clic desde móvil:</strong> No formularios complicados. Un toque para llamar, un toque para abrir WhatsApp, un toque para reservar una visita.</p><p><strong>Integración de WhatsApp:</strong> En España, WhatsApp es la herramienta de comunicación. Los compradores internacionales también lo esperan. Si no estás disponible directamente por WhatsApp, el lead se va a otra persona.</p><p><strong>Filtros de propiedades optimizados para móvil:</strong> Botones grandes, acciones de deslizamiento simples, configuraciones de preferencias que se recuerdan. La experiencia móvil debe ser tan buena como la de escritorio.</p><h4>El contexto español:</h4><p>Los turistas y compradores internacionales navegan en sus teléfonos mientras ya están en España. Están sentados en la playa en Málaga buscando propiedades cercanas. Si tu experiencia móvil es mala, reservan una visita con un competidor.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "tesoro-mobile",
+      "variant": "success",
+      "title": {
+        "nl": "Tesoro's mobile-first aanpak",
+        "en": "Tesoro's mobile-first approach",
+        "es": "Enfoque mobile-first de Tesoro"
+      },
+      "items": [
+        {
+          "nl": "Volledig responsive website included - perfect op alle devices",
+          "en": "Fully responsive website included - perfect on all devices",
+          "es": "Sitio web totalmente responsive incluido: perfecto en todos los dispositivos"
+        },
+        {
+          "nl": "Mobile CRM app voor agents - beheer je business vanaf je telefoon",
+          "en": "Mobile CRM app for agents - manage your business from your phone",
+          "es": "Aplicación CRM móvil para agentes: gestiona tu negocio desde tu teléfono"
+        },
+        {
+          "nl": "WhatsApp integratie built-in - instant communication met leads",
+          "en": "WhatsApp integration built-in - instant communication with leads",
+          "es": "Integración de WhatsApp incorporada: comunicación instantánea con leads"
+        },
+        {
+          "nl": "One-tap calling van property listings",
+          "en": "One-tap calling from property listings",
+          "es": "Llamada con un toque desde listados de propiedades"
+        },
+        {
+          "nl": "Mobile-optimized search filters - grote knoppen, eenvoudige interface",
+          "en": "Mobile-optimized search filters - large buttons, simple interface",
+          "es": "Filtros de búsqueda optimizados para móvil: botones grandes, interfaz simple"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "trend-5",
+      "title": {
+        "nl": "Trend 5: Multi-platform management of sterven in chaos",
+        "en": "Trend 5: Multi-platform management or die in chaos",
+        "es": "Trend 5: Gestión multiplataforma o morir en el caos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Instagram. Facebook. Google Ads. Idealista. Fotocasa. Kyero. LinkedIn.</p><p>Als je op serieus op meerdere platforms actief bent (en dat moet je), heb je één van twee dingen nodig: een team van 5 mensen, of de juiste technologie.</p><h4>De uitdaging:</h4><p>Elke platform heeft zijn eigen interface, zijn eigen analytics, zijn eigen lead management. Zonder coördinatie verlies je overzicht. Je mist leads. Je dubbelt advertenties. Je verspilt budget aan underperforming campagnes omdat je de data niet ziet.</p><h4>Wat je nodig hebt:</h4><p><strong>Gecentraliseerd platform management:</strong> Alle je listings op één plek beheren en automatisch synchroniseren naar alle platforms.</p><p><strong>Cross-platform analytics:</strong> Zie in één dashboard welke platforms de meeste leads genereren, wat de cost-per-lead is, en waar je ROI het hoogst is.</p><p><strong>Lead source tracking:</strong> Weten waar elke lead vandaan komt - Instagram, Google, Idealista, referral - zodat je je marketing budget effectief kunt alloceren.</p><p><strong>Consistente branding:</strong> Je visual identity, messaging, en tone of voice moeten consistent zijn over alle platforms. Professionele kopers merken inconsistenties direct op.</p><h4>Het resultaat:</h4><p>Meer visibility met minder werk. Data-driven beslissingen over waar je adverteert. Hogere ROI omdat je focust op wat werkt en afbouwt wat niet werkt.</p>"
+        },
+        "en": {
+          "text": "<p>Instagram. Facebook. Google Ads. Idealista. Fotocasa. Kyero. LinkedIn.</p><p>If you're seriously active on multiple platforms (and you must be), you need one of two things: a team of 5 people, or the right technology.</p><h4>The challenge:</h4><p>Each platform has its own interface, its own analytics, its own lead management. Without coordination you lose overview. You miss leads. You duplicate ads. You waste budget on underperforming campaigns because you don't see the data.</p><h4>What you need:</h4><p><strong>Centralized platform management:</strong> Manage all your listings in one place and automatically sync to all platforms.</p><p><strong>Cross-platform analytics:</strong> See in one dashboard which platforms generate the most leads, what the cost-per-lead is, and where your ROI is highest.</p><p><strong>Lead source tracking:</strong> Know where each lead comes from - Instagram, Google, Idealista, referral - so you can effectively allocate your marketing budget.</p><p><strong>Consistent branding:</strong> Your visual identity, messaging, and tone of voice must be consistent across all platforms. Professional buyers notice inconsistencies immediately.</p><h4>The result:</h4><p>More visibility with less work. Data-driven decisions about where you advertise. Higher ROI because you focus on what works and phase out what doesn't.</p>"
+        },
+        "es": {
+          "text": "<p>Instagram. Facebook. Google Ads. Idealista. Fotocasa. Kyero. LinkedIn.</p><p>Si estás activo seriamente en múltiples plataformas (y debes estarlo), necesitas una de dos cosas: un equipo de 5 personas o la tecnología adecuada.</p><h4>El desafío:</h4><p>Cada plataforma tiene su propia interfaz, sus propias analíticas, su propia gestión de leads. Sin coordinación pierdes la visión general. Pierdes leads. Duplicas anuncios. Desperdicias presupuesto en campañas de bajo rendimiento porque no ves los datos.</p><h4>Lo que necesitas:</h4><p><strong>Gestión centralizada de plataformas:</strong> Gestiona todos tus listados en un solo lugar y sincroniza automáticamente con todas las plataformas.</p><p><strong>Analíticas multiplataforma:</strong> Ve en un solo panel qué plataformas generan más leads, cuál es el costo por lead y dónde es más alto tu ROI.</p><p><strong>Seguimiento de fuente de leads:</strong> Saber de dónde viene cada lead (Instagram, Google, Idealista, referido) para que puedas asignar efectivamente tu presupuesto de marketing.</p><p><strong>Branding consistente:</strong> Tu identidad visual, mensajería y tono de voz deben ser consistentes en todas las plataformas. Los compradores profesionales notan las inconsistencias de inmediato.</p><h4>El resultado:</h4><p>Más visibilidad con menos trabajo. Decisiones basadas en datos sobre dónde anunciar. Mayor ROI porque te enfocas en lo que funciona y eliminas lo que no.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "tesoro-multi-platform",
+      "variant": "success",
+      "title": {
+        "nl": "Tesoro's multi-platform command center",
+        "en": "Tesoro's multi-platform command center",
+        "es": "Centro de comando multiplataforma de Tesoro"
+      },
+      "items": [
+        {
+          "nl": "Track leads by source - Instagram, Facebook, Google, website, en meer",
+          "en": "Track leads by source - Instagram, Facebook, Google, website, and more",
+          "es": "Rastrea leads por fuente: Instagram, Facebook, Google, sitio web y más"
+        },
+        {
+          "nl": "Zie welke platforms de meeste conversies genereren met cross-platform analytics",
+          "en": "See which platforms generate the most conversions with cross-platform analytics",
+          "es": "Ve qué plataformas generan más conversiones con analíticas multiplataforma"
+        },
+        {
+          "nl": "ROI berekening per marketing channel - weet waar je budget naartoe moet",
+          "en": "ROI calculation per marketing channel - know where your budget should go",
+          "es": "Cálculo de ROI por canal de marketing: sabe dónde debe ir tu presupuesto"
+        },
+        {
+          "nl": "Integratie met Facebook Pixel en Google Analytics voor advanced tracking",
+          "en": "Integration with Facebook Pixel and Google Analytics for advanced tracking",
+          "es": "Integración con Facebook Pixel y Google Analytics para seguimiento avanzado"
+        },
+        {
+          "nl": "Property listing performance over alle platforms - één dashboard, alle data",
+          "en": "Property listing performance across all platforms - one dashboard, all data",
+          "es": "Rendimiento de listados de propiedades en todas las plataformas: un panel, todos los datos"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "success-story",
+      "title": {
+        "nl": "Casestudy: Van traditionele makelaar naar digital leader",
+        "en": "Case study: From traditional agent to digital leader",
+        "es": "Caso de estudio: De agente tradicional a líder digital"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Makelaar:</strong> Boutique agency in Marbella, 2 agents, focus op mid-to-high segment</p><p><strong>Situatie voor:</strong> Volledig afhankelijk van Idealista en walk-ins. Website was een basic WordPress template uit 2019. Geen social media presence. Internationale kopers werden gemist.</p><p><strong>Wat ze implementeerden:</strong></p><ul><li>Started met daily Instagram Reels - property tours, market insights, lifestyle content</li><li>Matterport 360° tours voor alle mid-to-high listings</li><li>Tesoro CRM voor lead segmentatie en automated follow-up</li><li>Meertalige website met mobile-first design</li><li>Facebook/Instagram ads gericht op UK en Nederlandse expats</li></ul><p><strong>Resultaten na 6 maanden:</strong></p><ul><li>Instagram following groeide van 200 naar 4.800 (hoofdzakelijk internationale audience)</li><li>32% van leads kwam via social media (vs 0% voorheen)</li><li>Virtual tours reduceerden unqualified viewings met 65%</li><li>Average deal value steeg met €47k door betere targeting van luxury segment</li><li>Lead-to-client conversie verbeterde van 8% naar 23% door automated follow-up</li></ul><p><strong>Hun quote:</strong> \"We dachten dat video marketing iets was voor grote kantoren. Nu realiseren we dat het juist ons voordeel is als small agency - we kunnen sneller bewegen, authentieker zijn, en persoonlijke content maken die luxury kopers waarderen.\"</p>"
+        },
+        "en": {
+          "text": "<p><strong>Agent:</strong> Boutique agency in Marbella, 2 agents, focus on mid-to-high segment</p><p><strong>Situation before:</strong> Completely dependent on Idealista and walk-ins. Website was a basic WordPress template from 2019. No social media presence. International buyers were being missed.</p><p><strong>What they implemented:</strong></p><ul><li>Started with daily Instagram Reels - property tours, market insights, lifestyle content</li><li>Matterport 360° tours for all mid-to-high listings</li><li>Tesoro CRM for lead segmentation and automated follow-up</li><li>Multilingual website with mobile-first design</li><li>Facebook/Instagram ads targeting UK and Dutch expats</li></ul><p><strong>Results after 6 months:</strong></p><ul><li>Instagram following grew from 200 to 4,800 (mainly international audience)</li><li>32% of leads came via social media (vs 0% previously)</li><li>Virtual tours reduced unqualified viewings by 65%</li><li>Average deal value increased by €47k through better targeting of luxury segment</li><li>Lead-to-client conversion improved from 8% to 23% through automated follow-up</li></ul><p><strong>Their quote:</strong> \"We thought video marketing was something for big offices. Now we realize it's actually our advantage as a small agency - we can move faster, be more authentic, and create personal content that luxury buyers appreciate.\"</p>"
+        },
+        "es": {
+          "text": "<p><strong>Agente:</strong> Agencia boutique en Marbella, 2 agentes, enfoque en segmento medio-alto</p><p><strong>Situación antes:</strong> Completamente dependiente de Idealista y visitas directas. El sitio web era una plantilla básica de WordPress de 2019. Sin presencia en redes sociales. Se estaban perdiendo compradores internacionales.</p><p><strong>Lo que implementaron:</strong></p><ul><li>Comenzaron con Instagram Reels diarios: tours de propiedades, insights del mercado, contenido de estilo de vida</li><li>Tours de 360° Matterport para todos los listados medio-altos</li><li>Tesoro CRM para segmentación de leads y seguimiento automatizado</li><li>Sitio web multilingüe con diseño mobile-first</li><li>Anuncios de Facebook/Instagram dirigidos a expatriados del Reino Unido y Holanda</li></ul><p><strong>Resultados después de 6 meses:</strong></p><ul><li>Los seguidores de Instagram crecieron de 200 a 4.800 (principalmente audiencia internacional)</li><li>El 32% de los leads llegaron por redes sociales (vs 0% antes)</li><li>Los tours virtuales redujeron las visitas no cualificadas en un 65%</li><li>El valor promedio del trato aumentó en 47.000 € gracias a un mejor targeting del segmento de lujo</li><li>La conversión de lead a cliente mejoró del 8% al 23% mediante seguimiento automatizado</li></ul><p><strong>Su cita:</strong> \"Pensábamos que el marketing de video era algo para grandes oficinas. Ahora nos damos cuenta de que en realidad es nuestra ventaja como agencia pequeña: podemos movernos más rápido, ser más auténticos y crear contenido personal que los compradores de lujo aprecian\".</p>"
+        }
+      }
+    },
+
+    {
+      "type": "quote",
+      "id": "market-quote",
+      "quote": {
+        "nl": "De makelaars die in 2025 groeien zijn niet degenen met het grootste kantoor of het meeste budget. Het zijn degenen die de juiste technologie gebruiken om sneller, slimmer, en gepersonaliseerder te werken dan de concurrentie.",
+        "en": "The agents who grow in 2025 aren't those with the biggest office or the most budget. They're those who use the right technology to work faster, smarter, and more personalized than the competition.",
+        "es": "Los agentes que crecen en 2025 no son aquellos con la oficina más grande o el mayor presupuesto. Son aquellos que usan la tecnología adecuada para trabajar más rápido, más inteligente y de forma más personalizada que la competencia."
+      },
+      "author": "Sofia López",
+      "role": {
+        "nl": "Marketing Specialist, Tesoro CRM",
+        "en": "Marketing Specialist, Tesoro CRM",
+        "es": "Especialista en Marketing, Tesoro CRM"
+      }
+    },
+
+    {
+      "type": "cta",
+      "id": "conclusion",
+      "title": {
+        "nl": "Krijg de tools om te concurreren in 2025's markt",
+        "en": "Get the tools to compete in 2025's market",
+        "es": "Obtén las herramientas para competir en el mercado de 2025"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De 5 trends zijn duidelijk. De vraag is: heb jij de tools om ze te implementeren?</p><p>Tesoro CRM is gebouwd voor moderne makelaars die internationale kopers willen bereiken:</p><ul><li><strong>Video-ready property pages</strong> met embeds voor YouTube, Vimeo, Matterport</li><li><strong>Lead segmentatie en personalisatie</strong> - de juiste properties naar de juiste kopers</li><li><strong>Mobile-first website</strong> included - fully responsive, WhatsApp integration, one-click contact</li><li><strong>Multi-platform analytics</strong> - track ROI per channel, optimize je marketing budget</li><li><strong>Automated follow-up</strong> - geen enkele lead valt meer door de mazen</li></ul><p>Je concurrenten investeren al in deze tools. Wacht niet tot je marktaandeel krimpt.</p><p>Vraag vandaag een gratis demo aan en zie hoe Tesoro je helpt om de marketing trends van 2025 om te zetten in concrete leads en deals.</p>"
+        },
+        "en": {
+          "text": "<p>The 5 trends are clear. The question is: do you have the tools to implement them?</p><p>Tesoro CRM is built for modern agents who want to reach international buyers:</p><ul><li><strong>Video-ready property pages</strong> with embeds for YouTube, Vimeo, Matterport</li><li><strong>Lead segmentation and personalization</strong> - the right properties to the right buyers</li><li><strong>Mobile-first website</strong> included - fully responsive, WhatsApp integration, one-click contact</li><li><strong>Multi-platform analytics</strong> - track ROI per channel, optimize your marketing budget</li><li><strong>Automated follow-up</strong> - no lead falls through the cracks anymore</li></ul><p>Your competitors are already investing in these tools. Don't wait until your market share shrinks.</p><p>Request a free demo today and see how Tesoro helps you turn the marketing trends of 2025 into concrete leads and deals.</p>"
+        },
+        "es": {
+          "text": "<p>Las 5 tendencias están claras. La pregunta es: ¿tienes las herramientas para implementarlas?</p><p>Tesoro CRM está diseñado para agentes modernos que quieren llegar a compradores internacionales:</p><ul><li><strong>Páginas de propiedades listas para video</strong> con inserciones para YouTube, Vimeo, Matterport</li><li><strong>Segmentación y personalización de leads</strong>: las propiedades correctas para los compradores correctos</li><li><strong>Sitio web mobile-first</strong> incluido: totalmente responsive, integración de WhatsApp, contacto con un clic</li><li><strong>Analíticas multiplataforma</strong>: rastrea ROI por canal, optimiza tu presupuesto de marketing</li><li><strong>Seguimiento automatizado</strong>: ningún lead se cae por las grietas</li></ul><p>Tus competidores ya están invirtiendo en estas herramientas. No esperes hasta que tu cuota de mercado se reduzca.</p><p>Solicita una demo gratuita hoy y ve cómo Tesoro te ayuda a convertir las tendencias de marketing de 2025 en leads y tratos concretos.</p>"
+        }
+      },
+      "buttons": [
+        {
+          "text": {
+            "nl": "Vraag een Gratis Demo Aan",
+            "en": "Request a Free Demo",
+            "es": "Solicitar una Demo Gratuita"
+          },
+          "url": "/contact",
+          "style": "primary"
+        },
+        {
+          "text": {
+            "nl": "Bekijk Alle Features",
+            "en": "View All Features",
+            "es": "Ver Todas las Funciones"
+          },
+          "url": "/product",
+          "style": "secondary"
+        }
+      ]
+    }
+  ],
+
+  "relatedPosts": [
+    "spanish-market-trends-2025",
+    "website-transformation"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik echt op TikTok als vastgoedmakelaar?",
+        "en": "Do I really need to be on TikTok as a real estate agent?",
+        "es": "¿Realmente necesito estar en TikTok como agente inmobiliario?"
+      },
+      "answer": {
+        "nl": "Het hangt af van je target audience. Als je voornamelijk 50+ kopers hebt, is Facebook/Instagram belangrijker. Maar als je expats, digital nomads, of younger buyers wilt bereiken, is TikTok immens waardevol. De sleutel is niet om op alle platforms te zijn, maar om op de juiste platforms te zijn voor jouw target market. Start met Instagram Reels en YouTube Shorts - die hebben een bredere demographic en zijn makkelijker te integreren in je bestaande workflow.",
+        "en": "It depends on your target audience. If you mainly have 50+ buyers, Facebook/Instagram is more important. But if you want to reach expats, digital nomads, or younger buyers, TikTok is immensely valuable. The key isn't to be on all platforms, but to be on the right platforms for your target market. Start with Instagram Reels and YouTube Shorts - they have a broader demographic and are easier to integrate into your existing workflow.",
+        "es": "Depende de tu público objetivo. Si principalmente tienes compradores de más de 50 años, Facebook/Instagram es más importante. Pero si quieres llegar a expatriados, nómadas digitales o compradores más jóvenes, TikTok es inmensamente valioso. La clave no es estar en todas las plataformas, sino estar en las plataformas correctas para tu mercado objetivo. Comienza con Instagram Reels y YouTube Shorts: tienen una demografía más amplia y son más fáciles de integrar en tu flujo de trabajo existente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Zijn VR tours te duur voor kleinere makelaars?",
+        "en": "Are VR tours too expensive for smaller agents?",
+        "es": "¿Los tours de VR son demasiado caros para agentes más pequeños?"
+      },
+      "answer": {
+        "nl": "Niet meer! Matterport-achtige 360° cameras zijn nu beschikbaar vanaf €300-500. Je kunt ook starten met simpelere oplossingen: een goede smartphone met 360° camera app kan al verrassend goede resultaten geven. De sleutel is om selectief te zijn - gebruik VR/360° tours voor je mid-to-high en luxury listings waar de ROI het hoogst is. Voor starter homes zijn professionele foto's en korte video tours vaak voldoende. Tesoro's platform ondersteunt alle formats, van eenvoudige video embeds tot volledige Matterport integratie.",
+        "en": "Not anymore! Matterport-like 360° cameras are now available from €300-500. You can also start with simpler solutions: a good smartphone with 360° camera app can already give surprisingly good results. The key is to be selective - use VR/360° tours for your mid-to-high and luxury listings where ROI is highest. For starter homes, professional photos and short video tours are often sufficient. Tesoro's platform supports all formats, from simple video embeds to full Matterport integration.",
+        "es": "¡Ya no! Las cámaras de 360° tipo Matterport ahora están disponibles desde 300-500 €. También puedes comenzar con soluciones más simples: un buen smartphone con una aplicación de cámara de 360° ya puede dar resultados sorprendentemente buenos. La clave es ser selectivo: usa tours de VR/360° para tus listados medio-altos y de lujo donde el ROI es más alto. Para viviendas iniciales, las fotos profesionales y los tours en video cortos suelen ser suficientes. La plataforma de Tesoro admite todos los formatos, desde inserciones de video simples hasta integración completa con Matterport."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe meet ik of mijn marketing inspanningen werken?",
+        "en": "How do I measure if my marketing efforts are working?",
+        "es": "¿Cómo mido si mis esfuerzos de marketing están funcionando?"
+      },
+      "answer": {
+        "nl": "Track 3 key metrics: (1) Lead source - waar komt elke lead vandaan? (2) Cost per lead - hoeveel kost het om één lead te genereren per channel? (3) Conversion rate - hoeveel leads worden daadwerkelijk klanten per source? Tesoro CRM tracked dit automatisch. Je ziet in één dashboard dat bijvoorbeeld Instagram €12 per lead kost met 18% conversion, terwijl Google Ads €45 per lead kost met 8% conversion. Dan weet je waar je budget naartoe moet. De meeste makelaars gokken met hun marketing budget - succesvolle makelaars maken data-driven beslissingen.",
+        "en": "Track 3 key metrics: (1) Lead source - where does each lead come from? (2) Cost per lead - how much does it cost to generate one lead per channel? (3) Conversion rate - how many leads actually become clients per source? Tesoro CRM tracks this automatically. You see in one dashboard that for example Instagram costs €12 per lead with 18% conversion, while Google Ads costs €45 per lead with 8% conversion. Then you know where your budget should go. Most agents gamble with their marketing budget - successful agents make data-driven decisions.",
+        "es": "Rastrea 3 métricas clave: (1) Fuente de leads: ¿de dónde viene cada lead? (2) Costo por lead: ¿cuánto cuesta generar un lead por canal? (3) Tasa de conversión: ¿cuántos leads se convierten realmente en clientes por fuente? Tesoro CRM rastrea esto automáticamente. Ves en un solo panel que, por ejemplo, Instagram cuesta 12 € por lead con una conversión del 18%, mientras que Google Ads cuesta 45 € por lead con una conversión del 8%. Entonces sabes dónde debe ir tu presupuesto. La mayoría de los agentes apuestan con su presupuesto de marketing; los agentes exitosos toman decisiones basadas en datos."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik geen tijd heb voor social media?",
+        "en": "What if I don't have time for social media?",
+        "es": "¿Qué pasa si no tengo tiempo para las redes sociales?"
+      },
+      "answer": {
+        "nl": "Batch je content. Besteed 2-3 uur per maand aan het maken van 20-30 korte video's (property highlights, market tips, FAQ's). Schedule ze met tools zoals Later of Buffer. Dat geeft je daily content voor een maand. De truc is om perfectie los te laten - een authentieke 30-seconden video op je telefoon presteert vaak beter dan een overproduced commercial. Focus op consistency over quality in het begin. Als je groeit, kun je overwegen om een VA of content creator in te huren voor €200-400/maand die je content managed terwijl jij focust op deals.",
+        "en": "Batch your content. Spend 2-3 hours per month creating 20-30 short videos (property highlights, market tips, FAQs). Schedule them with tools like Later or Buffer. That gives you daily content for a month. The trick is to let go of perfection - an authentic 30-second video on your phone often performs better than an overproduced commercial. Focus on consistency over quality in the beginning. As you grow, you can consider hiring a VA or content creator for €200-400/month who manages your content while you focus on deals.",
+        "es": "Agrupa tu contenido en lotes. Dedica 2-3 horas al mes a crear 20-30 videos cortos (aspectos destacados de propiedades, consejos del mercado, preguntas frecuentes). Prográmalos con herramientas como Later o Buffer. Eso te da contenido diario durante un mes. El truco es dejar ir la perfección: un video auténtico de 30 segundos en tu teléfono a menudo funciona mejor que un comercial sobreproducido. Enfócate en la consistencia sobre la calidad al principio. A medida que crezcas, puedes considerar contratar a un asistente virtual o creador de contenido por 200-400 €/mes que administre tu contenido mientras tú te enfocas en los tratos."
+      }
+    }
+  ]
+}

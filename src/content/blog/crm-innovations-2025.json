@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "id": "crm-innovations-2025",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "createdAt": "2025-10-23T14:00:00Z",
+    "updatedAt": "2025-10-23T14:00:00Z",
+    "author": {
+      "name": "Carlos Martínez",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+      "bio": {
+        "nl": "Tech specialist bij Tesoro CRM met expertise in AI-gestuurde automatisering en PropTech innovaties voor de vastgoedsector",
+        "en": "Tech specialist at Tesoro CRM with expertise in AI-driven automation and PropTech innovations for the real estate sector",
+        "es": "Especialista en tecnología en Tesoro CRM con experiencia en automatización basada en IA e innovaciones PropTech para el sector inmobiliario"
+      }
+    },
+    "category": "technology",
+    "tags": ["crm-innovation", "ai", "automation", "real-estate-tech", "2025-trends"],
+    "featured": true,
+    "draft": false,
+    "readingTime": 12,
+    "aiGenerated": true,
+    "aiPrompt": "Create comprehensive blog post about CRM innovations for 2025, positioning Tesoro CRM as innovative solution for Spanish real estate agencies"
+  },
+
+  "seo": {
+    "canonicalURL": "https://tesorocrm.com/blog/crm-innovations-2025",
+    "socialImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop",
+    "keywords": ["CRM innovations 2025", "AI-powered CRM", "real estate technology", "PropTech trends", "CRM automation", "predictive analytics", "real estate CRM Spain"]
+  },
+
+  "hero": {
+    "publishDate": "2025-10-23",
+    "title": {
+      "nl": "5 CRM-innovaties die Vastgoed in 2025 Zullen Bepalen",
+      "en": "5 CRM Innovations That Will Define Real Estate in 2025",
+      "es": "5 innovaciones CRM que definirán el sector inmobiliario en 2025"
+    },
+    "description": {
+      "nl": "Van AI-gestuurde automatisering tot predictieve analytics - ontdek hoe de CRM-systemen van 2025 de vastgoedsector transformeren en waarom traditionele systemen niet langer volstaan voor competitieve makelaars.",
+      "en": "From AI-driven automation to predictive analytics - discover how 2025's CRM systems are transforming real estate and why traditional systems no longer suffice for competitive agents.",
+      "es": "Desde automatización impulsada por IA hasta analítica predictiva: descubre cómo los sistemas CRM de 2025 están transformando el sector inmobiliario y por qué los sistemas tradicionales ya no son suficientes para agentes competitivos."
+    },
+    "image": {
+      "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
+      "alt": {
+        "nl": "Futuristische AI-interface voor vastgoed CRM systeem",
+        "en": "Futuristic AI interface for real estate CRM system",
+        "es": "Interfaz AI futurista para sistema CRM inmobiliario"
+      },
+      "width": 1200,
+      "height": 600
+    }
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Spreadsheets. Handmatige follow-ups. Gemiste leads omdat je vergat terug te bellen.</p><p>Als dit nog steeds jouw dagelijkse realiteit is als vastgoedmakelaar, verlies je niet alleen tijd - je verliest deals aan concurrenten die wel geïnvesteerd hebben in moderne CRM-systemen.</p><p>De vastgoedsector staat aan de vooravond van een technologische revolutie. AI-gestuurde automatisering, predictieve analytics en cloud-gebaseerde infrastructuur zijn niet langer luxe features voor grote makelaars - het zijn de minimum requirements om competitief te blijven.</p><p>In dit artikel nemen we je mee door de 5 grootste CRM-innovaties van 2025 en laten we zien hoe Tesoro CRM deze technologieën implementeert voor Spaanse vastgoedprofessionals.</p>"
+        },
+        "en": {
+          "text": "<p>Spreadsheets. Manual follow-ups. Missed leads because you forgot to call back.</p><p>If this is still your daily reality as a real estate agent, you're not just losing time - you're losing deals to competitors who have invested in modern CRM systems.</p><p>The real estate sector stands on the brink of a technological revolution. AI-driven automation, predictive analytics, and cloud-based infrastructure are no longer luxury features for large agencies - they're the minimum requirements to stay competitive.</p><p>In this article, we'll walk you through the 5 biggest CRM innovations of 2025 and show you how Tesoro CRM implements these technologies for Spanish real estate professionals.</p>"
+        },
+        "es": {
+          "text": "<p>Hojas de cálculo. Seguimientos manuales. Clientes potenciales perdidos porque olvidaste devolver la llamada.</p><p>Si esta sigue siendo tu realidad diaria como agente inmobiliario, no solo estás perdiendo tiempo, estás perdiendo negocios frente a competidores que han invertido en sistemas CRM modernos.</p><p>El sector inmobiliario está al borde de una revolución tecnológica. La automatización impulsada por IA, la analítica predictiva y la infraestructura basada en la nube ya no son características de lujo para grandes agencias: son los requisitos mínimos para seguir siendo competitivo.</p><p>En este artículo, te guiaremos a través de las 5 mayores innovaciones CRM de 2025 y te mostraremos cómo Tesoro CRM implementa estas tecnologías para profesionales inmobiliarios españoles.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "the-shift",
+      "title": {
+        "nl": "Waarom traditionele CRM-systemen niet meer werken",
+        "en": "Why traditional CRM systems no longer work",
+        "es": "Por qué los sistemas CRM tradicionales ya no funcionan"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Laten we eerlijk zijn: de meeste CRM-systemen zijn gebouwd voor <em>algemene</em> sales teams, niet voor vastgoedprofessionals.</p><p>Je krijgt een database om contacten op te slaan, misschien wat basis automatisering voor emails, en een pipeline view die er indrukwekkend uitziet maar niet aansluit op hoe vastgoedtransacties écht werken.</p><p>Het resultaat? Makelaars gebruiken hun CRM als een glorified contactenlijst, terwijl ze eigenlijk spreadsheets en WhatsApp gebruiken voor hun echte werk.</p><h4>De drie fundamentele problemen:</h4><ul><li><strong>Geen vastgoed-specifieke workflows:</strong> Woningverkoop is niet hetzelfde als een SaaS deal. Je hebt viewings, tweede viewings, hypotheek-afhankelijke deals, notaris afspraken, en vaak meerdere partijen betrokken (kopers, verkopers, hypotheekadviseurs, notarissen).</li><li><strong>Gemiste internationale kansen:</strong> 18% van Spaanse vastgoedtransacties gaat naar buitenlandse kopers - maar de meeste CRMs zijn niet gebouwd voor meertalige communicatie of internationale lead flows.</li><li><strong>Data in silo's:</strong> Je properties zitten in één systeem, je contacten in een ander, je website is los, en je portals (Idealista, Fotocasa) synchroniseren niet. Alles handmatig dupliceren kost uren per week.</li></ul><p>De CRM-systemen van 2025 lossen deze problemen fundamenteel anders op.</p>"
+        },
+        "en": {
+          "text": "<p>Let's be honest: most CRM systems are built for <em>generic</em> sales teams, not for real estate professionals.</p><p>You get a database to store contacts, maybe some basic email automation, and a pipeline view that looks impressive but doesn't align with how real estate transactions actually work.</p><p>The result? Agents use their CRM as a glorified contact list, while actually using spreadsheets and WhatsApp for their real work.</p><h4>The three fundamental problems:</h4><ul><li><strong>No real estate-specific workflows:</strong> Selling homes isn't the same as a SaaS deal. You have viewings, second viewings, mortgage-dependent deals, notary appointments, and often multiple parties involved (buyers, sellers, mortgage advisors, notaries).</li><li><strong>Missed international opportunities:</strong> 18% of Spanish real estate transactions go to foreign buyers - but most CRMs aren't built for multilingual communication or international lead flows.</li><li><strong>Data in silos:</strong> Your properties are in one system, your contacts in another, your website is separate, and your portals (Idealista, Fotocasa) don't sync. Manually duplicating everything costs hours per week.</li></ul><p>The CRM systems of 2025 solve these problems fundamentally differently.</p>"
+        },
+        "es": {
+          "text": "<p>Seamos honestos: la mayoría de los sistemas CRM están construidos para equipos de ventas <em>genéricos</em>, no para profesionales inmobiliarios.</p><p>Obtienes una base de datos para almacenar contactos, quizás algo de automatización básica de correo electrónico y una vista de pipeline que se ve impresionante pero no se alinea con cómo funcionan realmente las transacciones inmobiliarias.</p><p>¿El resultado? Los agentes usan su CRM como una lista de contactos glorificada, mientras que en realidad usan hojas de cálculo y WhatsApp para su trabajo real.</p><h4>Los tres problemas fundamentales:</h4><ul><li><strong>Sin flujos de trabajo específicos para inmobiliario:</strong> Vender viviendas no es lo mismo que cerrar un negocio SaaS. Tienes visitas, segundas visitas, negocios dependientes de hipotecas, citas con notarios y, a menudo, múltiples partes involucradas (compradores, vendedores, asesores hipotecarios, notarios).</li><li><strong>Oportunidades internacionales perdidas:</strong> El 18% de las transacciones inmobiliarias españolas van a compradores extranjeros, pero la mayoría de los CRM no están construidos para comunicación multilingüe o flujos de leads internacionales.</li><li><strong>Datos en silos:</strong> Tus propiedades están en un sistema, tus contactos en otro, tu sitio web está separado y tus portales (Idealista, Fotocasa) no se sincronizan. Duplicar todo manualmente cuesta horas por semana.</li></ul><p>Los sistemas CRM de 2025 resuelven estos problemas de manera fundamentalmente diferente.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "traditional-vs-modern",
+      "variant": "info",
+      "title": {
+        "nl": "Traditioneel vs modern CRM",
+        "en": "Traditional vs Modern CRM",
+        "es": "CRM tradicional vs moderno"
+      },
+      "items": [
+        {
+          "nl": "Traditioneel: Handmatige data entry, vergeten follow-ups, spreadsheet chaos",
+          "en": "Traditional: Manual data entry, forgotten follow-ups, spreadsheet chaos",
+          "es": "Tradicional: Entrada manual de datos, seguimientos olvidados, caos de hojas de cálculo"
+        },
+        {
+          "nl": "Modern 2025: AI-gestuurde automatisering, predictieve analytics, unified data platform",
+          "en": "Modern 2025: AI-driven automation, predictive analytics, unified data platform",
+          "es": "Moderno 2025: Automatización impulsada por IA, analítica predictiva, plataforma de datos unificada"
+        },
+        {
+          "nl": "Traditioneel: Eén taal, lokale focus, handmatige property syndication",
+          "en": "Traditional: One language, local focus, manual property syndication",
+          "es": "Tradicional: Un idioma, enfoque local, sindicación manual de propiedades"
+        },
+        {
+          "nl": "Modern 2025: Meertalig, internationale leads, geautomatiseerde portal sync",
+          "en": "Modern 2025: Multilingual, international leads, automated portal sync",
+          "es": "Moderno 2025: Multilingüe, leads internacionales, sincronización automática de portales"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "innovation-1-ai",
+      "title": {
+        "nl": "Innovatie 1: AI-gestuurde automatisering",
+        "en": "Innovation 1: AI-Powered Automation",
+        "es": "Innovación 1: Automatización impulsada por IA"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De grootste verandering in CRM-technologie is de verschuiving van simpele if-then automatisering naar <strong>echte AI-gestuurde beslissingen</strong>.</p><h4>Wat AI in moderne CRM-systemen doet:</h4><p><strong>1. Intelligente chatbots die klanten begrijpen</strong></p><p>Niet langer simpele FAQ bots. De nieuwe generatie AI-chatbots kan:</p><ul><li>Begrijpen wat een klant zoekt (\"3-slaapkamer appartement in Barcelona voor onder €400k met zeezicht\")</li><li>Relevante properties voorstellen gebaseerd op eerdere interacties</li><li>Sentiment detecteren (is deze lead gefrustreerd? Enthousiast? Aan het onderzoeken?)</li><li>Automatisch escaleren naar een menselijke agent op het juiste moment</li></ul><p><strong>2. Sentiment analysis in communicatie</strong></p><p>AI scant emails en berichten voor emotionele signalen:</p><ul><li>\"We zijn erg geïnteresseerd maar...\" → Detecteert aarzeling, triggert nurture sequence</li><li>\"We willen dit weekend graag bekijken\" → Detecteert urgentie, prioriteert lead</li><li>\"De prijs is te hoog\" → Triggert automatisch prijsvergelijkingen en marktdata</li></ul><p><strong>3. Automatische case escalatie</strong></p><p>AI leert wanneer een situatie menselijke aandacht nodig heeft. Een lead die drie keer een viewing heeft afgebroken? Automatisch geëscaleerd naar senior makelaar. Een klant die negatieve sentimenten laat zien na een viewing? Directe melding voor opvolging.</p><h4>Hoe Tesoro dit implementeert voor vastgoed:</h4><p><strong>Smart Lead Matching:</strong> Upload een nieuwe property, en Tesoro's AI scant automatisch je contact database voor matches. \"Deze 12 contacten hebben recent gezocht naar 3-slaapkamer appartementen in deze wijk\" - instant qualified leads voor je nieuwe listing.</p><p><strong>Geautomatiseerde follow-up sequences:</strong> Een koper bekijkt een property op je website maar neemt geen contact op? Tesoro stuurt automatisch een gepersonaliseerde email met vergelijkbare properties en relevante marktinfo. Opent de email maar klikt niet? Triggert een WhatsApp reminder. Klikt door naar 3+ properties? Notificatie naar jou: \"Deze lead is hot.\"</p><p><strong>AI-gegenereerde property descriptions:</strong> Upload foto's en basis specs, en Tesoro's AI genereert professionele, SEO-geoptimaliseerde property descriptions in meerdere talen. Bespaart 30 minuten per listing.</p>"
+        },
+        "en": {
+          "text": "<p>The biggest change in CRM technology is the shift from simple if-then automation to <strong>true AI-driven decisions</strong>.</p><h4>What AI does in modern CRM systems:</h4><p><strong>1. Intelligent chatbots that understand customers</strong></p><p>No longer simple FAQ bots. The new generation of AI chatbots can:</p><ul><li>Understand what a customer is looking for (\"3-bedroom apartment in Barcelona under €400k with sea view\")</li><li>Suggest relevant properties based on previous interactions</li><li>Detect sentiment (is this lead frustrated? Enthusiastic? Researching?)</li><li>Automatically escalate to a human agent at the right moment</li></ul><p><strong>2. Sentiment analysis in communication</strong></p><p>AI scans emails and messages for emotional signals:</p><ul><li>\"We're very interested but...\" → Detects hesitation, triggers nurture sequence</li><li>\"We'd like to view this weekend\" → Detects urgency, prioritizes lead</li><li>\"The price is too high\" → Automatically triggers price comparisons and market data</li></ul><p><strong>3. Automatic case escalation</strong></p><p>AI learns when a situation needs human attention. A lead who's cancelled three viewings? Automatically escalated to senior agent. A client showing negative sentiment after a viewing? Direct notification for follow-up.</p><h4>How Tesoro implements this for real estate:</h4><p><strong>Smart Lead Matching:</strong> Upload a new property, and Tesoro's AI automatically scans your contact database for matches. \"These 12 contacts recently searched for 3-bedroom apartments in this neighborhood\" - instant qualified leads for your new listing.</p><p><strong>Automated follow-up sequences:</strong> A buyer views a property on your website but doesn't contact you? Tesoro automatically sends a personalized email with similar properties and relevant market info. Opens the email but doesn't click? Triggers a WhatsApp reminder. Clicks through to 3+ properties? Notification to you: \"This lead is hot.\"</p><p><strong>AI-generated property descriptions:</strong> Upload photos and basic specs, and Tesoro's AI generates professional, SEO-optimized property descriptions in multiple languages. Saves 30 minutes per listing.</p>"
+        },
+        "es": {
+          "text": "<p>El mayor cambio en la tecnología CRM es el cambio de la automatización simple de \"si-entonces\" a <strong>decisiones verdaderamente impulsadas por IA</strong>.</p><h4>Qué hace la IA en los sistemas CRM modernos:</h4><p><strong>1. Chatbots inteligentes que entienden a los clientes</strong></p><p>Ya no son simples bots de preguntas frecuentes. La nueva generación de chatbots de IA puede:</p><ul><li>Entender lo que un cliente está buscando (\"apartamento de 3 dormitorios en Barcelona por menos de 400.000 € con vista al mar\")</li><li>Sugerir propiedades relevantes basadas en interacciones previas</li><li>Detectar sentimientos (¿este lead está frustrado? ¿Entusiasmado? ¿Investigando?)</li><li>Escalar automáticamente a un agente humano en el momento adecuado</li></ul><p><strong>2. Análisis de sentimiento en la comunicación</strong></p><p>La IA escanea correos electrónicos y mensajes en busca de señales emocionales:</p><ul><li>\"Estamos muy interesados pero...\" → Detecta dudas, activa secuencia de nutrición</li><li>\"Nos gustaría ver esto este fin de semana\" → Detecta urgencia, prioriza el lead</li><li>\"El precio es demasiado alto\" → Activa automáticamente comparaciones de precios y datos de mercado</li></ul><p><strong>3. Escalación automática de casos</strong></p><p>La IA aprende cuándo una situación necesita atención humana. ¿Un lead que ha cancelado tres visitas? Escalado automáticamente a agente senior. ¿Un cliente mostrando sentimiento negativo después de una visita? Notificación directa para seguimiento.</p><h4>Cómo Tesoro implementa esto para el sector inmobiliario:</h4><p><strong>Emparejamiento inteligente de leads:</strong> Sube una nueva propiedad y la IA de Tesoro escanea automáticamente tu base de datos de contactos en busca de coincidencias. \"Estos 12 contactos buscaron recientemente apartamentos de 3 dormitorios en este barrio\": leads calificados instantáneos para tu nuevo listado.</p><p><strong>Secuencias de seguimiento automatizadas:</strong> ¿Un comprador ve una propiedad en tu sitio web pero no te contacta? Tesoro envía automáticamente un correo electrónico personalizado con propiedades similares e información relevante del mercado. ¿Abre el correo pero no hace clic? Activa un recordatorio de WhatsApp. ¿Hace clic en más de 3 propiedades? Notificación para ti: \"Este lead está caliente\".</p><p><strong>Descripciones de propiedades generadas por IA:</strong> Sube fotos y especificaciones básicas, y la IA de Tesoro genera descripciones de propiedades profesionales y optimizadas para SEO en varios idiomas. Ahorra 30 minutos por listado.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "innovation-2-predictive",
+      "title": {
+        "nl": "Innovatie 2: Predictieve analytics",
+        "en": "Innovation 2: Predictive Analytics",
+        "es": "Innovación 2: Analítica predictiva"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Stel je voor dat je CRM je vertelt: \"Deze 5 klanten hebben 85% kans om binnen 30 dagen te stoppen met zoeken\" of \"Dit lead heeft 92% kans om binnen 2 weken een bod te plaatsen.\"</p><p>Dat is de kracht van predictieve analytics. Niet achteraf kijken naar wat er gebeurd is, maar vooruit kijken naar wat er gaat gebeuren.</p><h4>Wat moderne CRM-systemen voorspellen:</h4><p><strong>1. Customer churn prediction (85% nauwkeurigheid)</strong></p><p>Machine learning analyseert gedragspatronen:</p><ul><li>Lead die eerst 3x per week inlogde, nu 1x per maand → Hoog churn risico</li><li>Klant die viewing requests deed maar laatste 2 afzegde → Interesse afnemend</li><li>Contact die prices vergelijkt met andere regio's → Mogelijk aan het afwegen</li></ul><p>Je CRM waarschuwt je voordat je een hot lead verliest, zodat je proactief kunt bijsturen.</p><p><strong>2. Externe data integratie</strong></p><p>Moderne CRMs trekken data uit meerdere bronnen:</p><ul><li><strong>Social media signals:</strong> \"Deze lead volgt 5 vastgoed accounts op Instagram en interacteert met luxury properties\" → Verhoogde lead score</li><li><strong>Markt data:</strong> \"Properties in deze wijk zijn 12% gestegen laatste 6 maanden\" → Automatisch toegevoegd aan sales pitches</li><li><strong>Portal activiteit:</strong> \"Deze lead heeft 15 vergelijkbare properties bekeken op Idealista\" → Zeer geïnteresseerd, hoge prioriteit</li></ul><p><strong>3. Proactieve retentie vs reactieve responses</strong></p><p>Oude aanpak: Wachten tot een klant zegt \"We hebben iets anders gevonden\" en dan proberen te redden.</p><p>Nieuwe aanpak: Je CRM detecteert gedragsveranderingen en triggert automatisch retention flows voordat je de lead verliest.</p><h4>Hoe Tesoro dit implementeert voor vastgoed:</h4><p><strong>Lead scoring en prioritering:</strong> Niet alle leads zijn gelijk. Tesoro geeft automatisch scores gebaseerd op gedrag: website visits, email opens, viewing attendance, property preferences. Je weet meteen: \"Focus op deze 8 leads deze week - ze zijn het meest waarschijnlijk om te converteren.\"</p><p><strong>Churn prediction voor kopers:</strong> Koper die actief was maar nu silent? Tesoro detecteert dit en triggert automatisch een \"We hebben nieuwe properties die perfect bij je wensen passen\" email met fresh listings.</p><p><strong>Property performance analytics:</strong> Welke listings krijgen meest engagement? Welke prijzen converteren best? Welke foto's krijgen meeste clicks? Tesoro analyseert alles en geeft concrete aanbevelingen: \"Verlaag prijs met 5% voor 23% hogere viewing rate\" of \"Voeg drone foto's toe - listings met drone shots converteren 34% sneller.\"</p><p><strong>Sales pipeline forecasting:</strong> Voorspel je revenue 3 maanden vooruit gebaseerd op huidige pipeline status, historische conversie rates, en seizoenspatronen. Essentieel voor planning en budgeting.</p>"
+        },
+        "en": {
+          "text": "<p>Imagine your CRM tells you: \"These 5 clients have an 85% chance of stopping their search within 30 days\" or \"This lead has a 92% chance of making an offer within 2 weeks.\"</p><p>That's the power of predictive analytics. Not looking back at what happened, but looking forward at what will happen.</p><h4>What modern CRM systems predict:</h4><p><strong>1. Customer churn prediction (85% accuracy)</strong></p><p>Machine learning analyzes behavioral patterns:</p><ul><li>Lead who logged in 3x per week, now 1x per month → High churn risk</li><li>Client who requested viewings but cancelled last 2 → Interest declining</li><li>Contact comparing prices with other regions → Possibly weighing options</li></ul><p>Your CRM warns you before you lose a hot lead, so you can proactively adjust.</p><p><strong>2. External data integration</strong></p><p>Modern CRMs pull data from multiple sources:</p><ul><li><strong>Social media signals:</strong> \"This lead follows 5 real estate accounts on Instagram and interacts with luxury properties\" → Increased lead score</li><li><strong>Market data:</strong> \"Properties in this neighborhood increased 12% in last 6 months\" → Automatically added to sales pitches</li><li><strong>Portal activity:</strong> \"This lead viewed 15 similar properties on Idealista\" → Very interested, high priority</li></ul><p><strong>3. Proactive retention vs reactive responses</strong></p><p>Old approach: Wait until a client says \"We found something else\" and then try to save it.</p><p>New approach: Your CRM detects behavioral changes and automatically triggers retention flows before you lose the lead.</p><h4>How Tesoro implements this for real estate:</h4><p><strong>Lead scoring and prioritization:</strong> Not all leads are equal. Tesoro automatically scores based on behavior: website visits, email opens, viewing attendance, property preferences. You know immediately: \"Focus on these 8 leads this week - they're most likely to convert.\"</p><p><strong>Churn prediction for buyers:</strong> Buyer who was active but now silent? Tesoro detects this and automatically triggers a \"We have new properties that perfectly match your preferences\" email with fresh listings.</p><p><strong>Property performance analytics:</strong> Which listings get most engagement? Which prices convert best? Which photos get most clicks? Tesoro analyzes everything and gives concrete recommendations: \"Lower price by 5% for 23% higher viewing rate\" or \"Add drone photos - listings with drone shots convert 34% faster.\"</p><p><strong>Sales pipeline forecasting:</strong> Predict your revenue 3 months ahead based on current pipeline status, historical conversion rates, and seasonal patterns. Essential for planning and budgeting.</p>"
+        },
+        "es": {
+          "text": "<p>Imagina que tu CRM te dice: \"Estos 5 clientes tienen un 85% de posibilidades de dejar de buscar en 30 días\" o \"Este lead tiene un 92% de posibilidades de hacer una oferta en 2 semanas\".</p><p>Ese es el poder de la analítica predictiva. No mirar atrás a lo que sucedió, sino mirar hacia adelante a lo que sucederá.</p><h4>Qué predicen los sistemas CRM modernos:</h4><p><strong>1. Predicción de pérdida de clientes (85% de precisión)</strong></p><p>El aprendizaje automático analiza patrones de comportamiento:</p><ul><li>Lead que iniciaba sesión 3 veces por semana, ahora 1 vez al mes → Alto riesgo de pérdida</li><li>Cliente que solicitó visitas pero canceló las últimas 2 → Interés en declive</li><li>Contacto que compara precios con otras regiones → Posiblemente sopesando opciones</li></ul><p>Tu CRM te advierte antes de que pierdas un lead caliente, para que puedas ajustar de forma proactiva.</p><p><strong>2. Integración de datos externos</strong></p><p>Los CRM modernos extraen datos de múltiples fuentes:</p><ul><li><strong>Señales de redes sociales:</strong> \"Este lead sigue 5 cuentas inmobiliarias en Instagram e interactúa con propiedades de lujo\" → Puntuación de lead aumentada</li><li><strong>Datos de mercado:</strong> \"Las propiedades en este barrio han aumentado un 12% en los últimos 6 meses\" → Agregado automáticamente a presentaciones de ventas</li><li><strong>Actividad en portales:</strong> \"Este lead vio 15 propiedades similares en Idealista\" → Muy interesado, alta prioridad</li></ul><p><strong>3. Retención proactiva vs respuestas reactivas</strong></p><p>Enfoque antiguo: Esperar hasta que un cliente diga \"Encontramos otra cosa\" y luego intentar salvarlo.</p><p>Enfoque nuevo: Tu CRM detecta cambios de comportamiento y activa automáticamente flujos de retención antes de que pierdas el lead.</p><h4>Cómo Tesoro implementa esto para el sector inmobiliario:</h4><p><strong>Puntuación y priorización de leads:</strong> No todos los leads son iguales. Tesoro puntúa automáticamente según el comportamiento: visitas al sitio web, aperturas de correo electrónico, asistencia a visitas, preferencias de propiedades. Sabes inmediatamente: \"Concéntrate en estos 8 leads esta semana: son los más propensos a convertir\".</p><p><strong>Predicción de pérdida para compradores:</strong> ¿Comprador que estaba activo pero ahora está en silencio? Tesoro detecta esto y activa automáticamente un correo electrónico \"Tenemos nuevas propiedades que coinciden perfectamente con tus preferencias\" con listados frescos.</p><p><strong>Analítica de rendimiento de propiedades:</strong> ¿Qué listados obtienen más engagement? ¿Qué precios convierten mejor? ¿Qué fotos obtienen más clics? Tesoro analiza todo y da recomendaciones concretas: \"Reduce el precio un 5% para una tasa de visitas un 23% más alta\" o \"Agrega fotos de dron: los listados con tomas de dron convierten un 34% más rápido\".</p><p><strong>Pronóstico de pipeline de ventas:</strong> Predice tus ingresos con 3 meses de anticipación basándote en el estado actual del pipeline, tasas de conversión históricas y patrones estacionales. Esencial para planificación y presupuesto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "predictive-power",
+      "variant": "success",
+      "title": {
+        "nl": "De kracht van voorspellingen",
+        "en": "The Power of Predictions",
+        "es": "El poder de las predicciones"
+      },
+      "items": [
+        {
+          "nl": "85% nauwkeurigheid in voorspellen van customer churn - weet wie je gaat verliezen voordat het gebeurt",
+          "en": "85% accuracy in predicting customer churn - know who you're losing before it happens",
+          "es": "85% de precisión al predecir la pérdida de clientes: sabe a quién vas a perder antes de que suceda"
+        },
+        {
+          "nl": "Lead scoring bespaart 40% tijd door focus op high-probability leads",
+          "en": "Lead scoring saves 40% time by focusing on high-probability leads",
+          "es": "La puntuación de leads ahorra un 40% de tiempo al centrarse en leads de alta probabilidad"
+        },
+        {
+          "nl": "Property performance analytics verhogen viewing rates met gemiddeld 23%",
+          "en": "Property performance analytics increase viewing rates by average 23%",
+          "es": "La analítica de rendimiento de propiedades aumenta las tasas de visita en un promedio del 23%"
+        },
+        {
+          "nl": "Revenue forecasting met 3 maanden vooruitkijk helpt bij planning en budgeting",
+          "en": "Revenue forecasting with 3-month outlook helps with planning and budgeting",
+          "es": "El pronóstico de ingresos con perspectiva de 3 meses ayuda con la planificación y el presupuesto"
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "innovation-3-cloud",
+      "title": {
+        "nl": "Innovatie 3: Cloud infrastructuur en collaboration",
+        "en": "Innovation 3: Cloud Infrastructure and Collaboration",
+        "es": "Innovación 3: Infraestructura en la nube y colaboración"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>On-premise servers. IT-afdelingen. Dure hardware upgrades. Back-ups op externe harddrives.</p><p>Dit was de realiteit van CRM-systemen 10 jaar geleden. In 2025 is dit niet alleen ouderwets - het is een competitief nadeel.</p><h4>Waarom cloud-infrastructuur transformatief is:</h4><p><strong>1. Geen dure hardware meer nodig</strong></p><p>Alles draait in de cloud. Betekent:</p><ul><li>Geen servers in je kantoor die onderhouden moeten worden</li><li>Geen IT-personeel nodig voor updates en beveiliging</li><li>Geen kapitaalinvestering - pay-as-you-go model</li><li>Automatische back-ups en disaster recovery</li></ul><p><strong>2. Real-time samenwerking voor distributed teams</strong></p><p>Vastgoed is niet langer een kantoor-gebaseerd bedrijf. Je bent bij viewings, bij notarissen, onderweg tussen afspraken. Je team werkt vanuit verschillende locaties.</p><p>Cloud CRM betekent:</p><ul><li>Alle data altijd up-to-date, overal toegankelijk</li><li>Agent A boekt een viewing op locatie → Agent B ziet het direct in de agenda</li><li>Updates aan property info → Direct live op website en alle portals</li><li>Team chat en notes direct bij contacten en properties</li></ul><p><strong>3. Edge computing voor reduced latency</strong></p><p>Data wordt opgeslagen \"aan de rand\" van het netwerk, dicht bij waar het gebruikt wordt. Resultaat: bliksemsnelle response times, zelfs met grote property foto libraries en video tours.</p><p><strong>4. Kritiek voor internationale operaties</strong></p><p>Als je internationale klanten hebt (en 18% van Spaanse transacties is internationaal), heb je een systeem nodig dat:</p><ul><li>Overal ter wereld snel werkt</li><li>Multiple time zones ondersteunt</li><li>Meertalige content seamless afhandelt</li><li>GDPR-compliant is voor EU klanten</li></ul><h4>Hoe Tesoro dit implementeert voor vastgoed:</h4><p><strong>Werk vanaf overal:</strong> Kantoor, viewings, thuis, op vakantie - maakt niet uit. Tesoro werkt op elke device: desktop, laptop, tablet, smartphone. Je volledige CRM in je zak.</p><p><strong>Real-time team updates:</strong> Collaborative notes bij elk contact en property. Team members kunnen elkaar taggen: \"@Maria kun jij deze viewing doen? Ik ben bij notaris.\" Iedereen ziet dezelfde info, geen miscommunicatie meer.</p><p><strong>Mobile app voor agents on the go:</strong> Tijdens een viewing checkt een buyer zijn WhatsApp en vraagt om meer info. Trek je telefoon, open Tesoro app, stuur direct vergelijkbare properties. No delay.</p><p><strong>Geen IT-infrastructure nodig:</strong> Tesoro regelt alles: hosting, beveiliging, back-ups, updates. Jij focust op vastgoed verkopen, niet op servers beheren.</p>"
+        },
+        "en": {
+          "text": "<p>On-premise servers. IT departments. Expensive hardware upgrades. Backups on external hard drives.</p><p>This was the reality of CRM systems 10 years ago. In 2025, this is not just outdated - it's a competitive disadvantage.</p><h4>Why cloud infrastructure is transformative:</h4><p><strong>1. No expensive hardware needed</strong></p><p>Everything runs in the cloud. Means:</p><ul><li>No servers in your office that need maintenance</li><li>No IT staff needed for updates and security</li><li>No capital investment - pay-as-you-go model</li><li>Automatic backups and disaster recovery</li></ul><p><strong>2. Real-time collaboration for distributed teams</strong></p><p>Real estate is no longer an office-based business. You're at viewings, at notaries, on the road between appointments. Your team works from different locations.</p><p>Cloud CRM means:</p><ul><li>All data always up-to-date, accessible everywhere</li><li>Agent A books a viewing on location → Agent B sees it immediately in calendar</li><li>Updates to property info → Immediately live on website and all portals</li><li>Team chat and notes directly at contacts and properties</li></ul><p><strong>3. Edge computing for reduced latency</strong></p><p>Data is stored \"at the edge\" of the network, close to where it's used. Result: lightning-fast response times, even with large property photo libraries and video tours.</p><p><strong>4. Critical for international operations</strong></p><p>If you have international clients (and 18% of Spanish transactions are international), you need a system that:</p><ul><li>Works fast anywhere in the world</li><li>Supports multiple time zones</li><li>Handles multilingual content seamlessly</li><li>Is GDPR-compliant for EU customers</li></ul><h4>How Tesoro implements this for real estate:</h4><p><strong>Work from anywhere:</strong> Office, viewings, home, on vacation - doesn't matter. Tesoro works on any device: desktop, laptop, tablet, smartphone. Your complete CRM in your pocket.</p><p><strong>Real-time team updates:</strong> Collaborative notes at every contact and property. Team members can tag each other: \"@Maria can you do this viewing? I'm at the notary.\" Everyone sees the same info, no more miscommunication.</p><p><strong>Mobile app for agents on the go:</strong> During a viewing a buyer checks his WhatsApp and asks for more info. Pull out your phone, open Tesoro app, send similar properties directly. No delay.</p><p><strong>No IT infrastructure needed:</strong> Tesoro handles everything: hosting, security, backups, updates. You focus on selling real estate, not managing servers.</p>"
+        },
+        "es": {
+          "text": "<p>Servidores locales. Departamentos de TI. Actualizaciones costosas de hardware. Copias de seguridad en discos duros externos.</p><p>Esta era la realidad de los sistemas CRM hace 10 años. En 2025, esto no solo está desactualizado: es una desventaja competitiva.</p><h4>Por qué la infraestructura en la nube es transformadora:</h4><p><strong>1. No se necesita hardware costoso</strong></p><p>Todo funciona en la nube. Significa:</p><ul><li>No hay servidores en tu oficina que necesiten mantenimiento</li><li>No se necesita personal de TI para actualizaciones y seguridad</li><li>No hay inversión de capital: modelo de pago por uso</li><li>Copias de seguridad automáticas y recuperación ante desastres</li></ul><p><strong>2. Colaboración en tiempo real para equipos distribuidos</strong></p><p>El sector inmobiliario ya no es un negocio basado en oficinas. Estás en visitas, en notarías, en el camino entre citas. Tu equipo trabaja desde diferentes ubicaciones.</p><p>CRM en la nube significa:</p><ul><li>Todos los datos siempre actualizados, accesibles en todas partes</li><li>El agente A reserva una visita en la ubicación → El agente B lo ve inmediatamente en el calendario</li><li>Actualizaciones a la información de la propiedad → Inmediatamente en vivo en el sitio web y todos los portales</li><li>Chat de equipo y notas directamente en contactos y propiedades</li></ul><p><strong>3. Edge computing para latencia reducida</strong></p><p>Los datos se almacenan \"en el borde\" de la red, cerca de donde se usan. Resultado: tiempos de respuesta ultrarrápidos, incluso con grandes bibliotecas de fotos de propiedades y tours en video.</p><p><strong>4. Crítico para operaciones internacionales</strong></p><p>Si tienes clientes internacionales (y el 18% de las transacciones españolas son internacionales), necesitas un sistema que:</p><ul><li>Funcione rápido en cualquier parte del mundo</li><li>Admita múltiples zonas horarias</li><li>Maneje contenido multilingüe sin problemas</li><li>Sea compatible con GDPR para clientes de la UE</li></ul><h4>Cómo Tesoro implementa esto para el sector inmobiliario:</h4><p><strong>Trabaja desde cualquier lugar:</strong> Oficina, visitas, casa, de vacaciones, no importa. Tesoro funciona en cualquier dispositivo: escritorio, portátil, tableta, smartphone. Tu CRM completo en tu bolsillo.</p><p><strong>Actualizaciones de equipo en tiempo real:</strong> Notas colaborativas en cada contacto y propiedad. Los miembros del equipo pueden etiquetarse entre sí: \"@María, ¿puedes hacer esta visita? Estoy en la notaría\". Todos ven la misma información, no más falta de comunicación.</p><p><strong>Aplicación móvil para agentes en movimiento:</strong> Durante una visita, un comprador revisa su WhatsApp y pide más información. Saca tu teléfono, abre la aplicación Tesoro, envía propiedades similares directamente. Sin demoras.</p><p><strong>No se necesita infraestructura de TI:</strong> Tesoro maneja todo: alojamiento, seguridad, copias de seguridad, actualizaciones. Tú te concentras en vender propiedades, no en administrar servidores.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "innovation-4-api",
+      "title": {
+        "nl": "Innovatie 4: API-first architectuur en integraties",
+        "en": "Innovation 4: API-First Architecture and Integrations",
+        "es": "Innovación 4: Arquitectura API-first e integraciones"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het probleem met traditionele CRM-systemen: ze zijn <em>eilanden</em>. Je data zit opgesloten in het CRM, en alles daarbuiten moet handmatig worden gekoppeld (of erger: handmatig worden gedupliceerd).</p><p>API-first architectuur lost dit fundamenteel op door het CRM het <strong>centrale zenuwstelsel</strong> te maken van je hele tech stack.</p><h4>Wat API-first betekent in de praktijk:</h4><p><strong>1. Seamless integraties met alles</strong></p><p>Een moderne CRM praat automatisch met:</p><ul><li><strong>Portals:</strong> Idealista, Fotocasa, Kyero - properties automatisch gesynchroniseerd, leads direct in CRM</li><li><strong>Email:</strong> Gmail, Outlook - alle communicatie getrackt, automatische follow-ups</li><li><strong>Social media:</strong> Facebook, Instagram leads direct in pipeline</li><li><strong>Websites:</strong> Je eigen website is direct geïntegreerd, nieuwe property? Instant live</li><li><strong>Accounting:</strong> Facturen, commissies, betalingen - alles gesynchroniseerd</li></ul><p><strong>2. 360-graden klantbeeld</strong></p><p>Omdat alles connected is, zie je het volledige verhaal:</p><ul><li>Waar kwam deze lead vandaan? (Google ad, Instagram, referral, portal inquiry)</li><li>Welke properties hebben ze bekeken op je website?</li><li>Welke emails heb je gestuurd en welke hebben ze geopend?</li><li>Wanneer was de laatste WhatsApp conversatie?</li><li>Welke viewings hebben ze bijgewoond?</li><li>Wat is hun budget, timeline, en must-haves?</li></ul><p>Alles in één scherm. Geen switchen tussen systemen meer.</p><p><strong>3. Alle touchpoints unified</strong></p><p>Een lead kan je op 10 verschillende manieren contacteren: website form, WhatsApp, email, phone, Instagram DM, portal inquiry, walk-in, referral...</p><p>API-first CRM captuurt alles en unified het in één customer journey. Je mist nooit meer een conversatie.</p><p><strong>4. Data flows automatisch tussen systemen</strong></p><p>Geen handmatige exports/imports meer. Data stroomt automatisch:</p><ul><li>Nieuwe property in CRM → Automatisch op website, portals, social media</li><li>Lead inquiry van portal → Direct in CRM met volledige context</li><li>Viewing booked → Automatisch in je Google Calendar</li><li>Deal closed → Automatisch factuur gegenereerd in accounting systeem</li></ul><h4>Hoe Tesoro dit implementeert voor vastgoed:</h4><p><strong>XML imports van portals:</strong> Idealista, Fotocasa, Kyero - automatic sync. Upload een property één keer, het verschijnt overal. Update een prijs, het update overal. Lead komt binnen van portal? Direct in Tesoro met volledige conversation history.</p><p><strong>Email integratie (Gmail, Outlook):</strong> Elke email naar/van een contact wordt automatisch getrackt. Geen handmatig BCC'en of copy-pasten meer. Open Tesoro, zie volledige email thread. Reply direct vanuit CRM.</p><p><strong>WhatsApp integratie:</strong> WhatsApp is dé communicatie tool voor Spaanse vastgoed. Tesoro integreert: stuur WhatsApp berichten direct vanuit CRM, zie conversation history, automatische templates voor veelvoorkomende vragen.</p><p><strong>Website integratie:</strong> Je website is niet los - het is onderdeel van Tesoro. Tweetalige property listings (Spaans/Engels of meer), automatic SEO optimization, lead capture forms die direct in CRM komen, property search filters die preferences onthouden.</p><p><strong>Calendar sync:</strong> Je viewings, afspraken, deadlines - alles sync met Google Calendar of Outlook. Team members zien elkaars agenda's voor betere coördinatie.</p>"
+        },
+        "en": {
+          "text": "<p>The problem with traditional CRM systems: they're <em>islands</em>. Your data is locked in the CRM, and everything outside must be manually connected (or worse: manually duplicated).</p><p>API-first architecture fundamentally solves this by making the CRM the <strong>central nervous system</strong> of your entire tech stack.</p><h4>What API-first means in practice:</h4><p><strong>1. Seamless integrations with everything</strong></p><p>A modern CRM automatically talks to:</p><ul><li><strong>Portals:</strong> Idealista, Fotocasa, Kyero - properties automatically synced, leads directly in CRM</li><li><strong>Email:</strong> Gmail, Outlook - all communication tracked, automatic follow-ups</li><li><strong>Social media:</strong> Facebook, Instagram leads directly in pipeline</li><li><strong>Websites:</strong> Your own website is directly integrated, new property? Instantly live</li><li><strong>Accounting:</strong> Invoices, commissions, payments - everything synchronized</li></ul><p><strong>2. 360-degree customer view</strong></p><p>Because everything is connected, you see the complete story:</p><ul><li>Where did this lead come from? (Google ad, Instagram, referral, portal inquiry)</li><li>Which properties did they view on your website?</li><li>Which emails did you send and which did they open?</li><li>When was the last WhatsApp conversation?</li><li>Which viewings did they attend?</li><li>What's their budget, timeline, and must-haves?</li></ul><p>Everything in one screen. No more switching between systems.</p><p><strong>3. All touchpoints unified</strong></p><p>A lead can contact you in 10 different ways: website form, WhatsApp, email, phone, Instagram DM, portal inquiry, walk-in, referral...</p><p>API-first CRM captures everything and unifies it into one customer journey. You never miss a conversation again.</p><p><strong>4. Data flows automatically between systems</strong></p><p>No more manual exports/imports. Data flows automatically:</p><ul><li>New property in CRM → Automatically on website, portals, social media</li><li>Lead inquiry from portal → Directly in CRM with full context</li><li>Viewing booked → Automatically in your Google Calendar</li><li>Deal closed → Automatically invoice generated in accounting system</li></ul><h4>How Tesoro implements this for real estate:</h4><p><strong>XML imports from portals:</strong> Idealista, Fotocasa, Kyero - automatic sync. Upload a property once, it appears everywhere. Update a price, it updates everywhere. Lead comes in from portal? Directly in Tesoro with full conversation history.</p><p><strong>Email integration (Gmail, Outlook):</strong> Every email to/from a contact is automatically tracked. No more manual BCC'ing or copy-pasting. Open Tesoro, see full email thread. Reply directly from CRM.</p><p><strong>WhatsApp integration:</strong> WhatsApp is the communication tool for Spanish real estate. Tesoro integrates: send WhatsApp messages directly from CRM, see conversation history, automatic templates for common questions.</p><p><strong>Website integration:</strong> Your website isn't separate - it's part of Tesoro. Bilingual property listings (Spanish/English or more), automatic SEO optimization, lead capture forms that go directly into CRM, property search filters that remember preferences.</p><p><strong>Calendar sync:</strong> Your viewings, appointments, deadlines - everything syncs with Google Calendar or Outlook. Team members see each other's calendars for better coordination.</p>"
+        },
+        "es": {
+          "text": "<p>El problema con los sistemas CRM tradicionales: son <em>islas</em>. Tus datos están bloqueados en el CRM, y todo lo externo debe conectarse manualmente (o peor: duplicarse manualmente).</p><p>La arquitectura API-first resuelve esto fundamentalmente al hacer del CRM el <strong>sistema nervioso central</strong> de toda tu pila tecnológica.</p><h4>Qué significa API-first en la práctica:</h4><p><strong>1. Integraciones perfectas con todo</strong></p><p>Un CRM moderno se comunica automáticamente con:</p><ul><li><strong>Portales:</strong> Idealista, Fotocasa, Kyero: propiedades sincronizadas automáticamente, leads directamente en CRM</li><li><strong>Correo electrónico:</strong> Gmail, Outlook: toda la comunicación rastreada, seguimientos automáticos</li><li><strong>Redes sociales:</strong> Leads de Facebook, Instagram directamente en pipeline</li><li><strong>Sitios web:</strong> Tu propio sitio web está integrado directamente, ¿nueva propiedad? Instantáneamente en vivo</li><li><strong>Contabilidad:</strong> Facturas, comisiones, pagos: todo sincronizado</li></ul><p><strong>2. Vista de cliente de 360 grados</strong></p><p>Porque todo está conectado, ves la historia completa:</p><ul><li>¿De dónde vino este lead? (Anuncio de Google, Instagram, referencia, consulta de portal)</li><li>¿Qué propiedades vieron en tu sitio web?</li><li>¿Qué correos electrónicos enviaste y cuáles abrieron?</li><li>¿Cuándo fue la última conversación de WhatsApp?</li><li>¿A qué visitas asistieron?</li><li>¿Cuál es su presupuesto, cronograma y requisitos imprescindibles?</li></ul><p>Todo en una pantalla. No más cambios entre sistemas.</p><p><strong>3. Todos los puntos de contacto unificados</strong></p><p>Un lead puede contactarte de 10 maneras diferentes: formulario web, WhatsApp, correo electrónico, teléfono, DM de Instagram, consulta de portal, visita directa, referencia...</p><p>El CRM API-first captura todo y lo unifica en un solo recorrido del cliente. Nunca más te pierdes una conversación.</p><p><strong>4. Los datos fluyen automáticamente entre sistemas</strong></p><p>No más exportaciones/importaciones manuales. Los datos fluyen automáticamente:</p><ul><li>Nueva propiedad en CRM → Automáticamente en el sitio web, portales, redes sociales</li><li>Consulta de lead del portal → Directamente en CRM con contexto completo</li><li>Visita reservada → Automáticamente en tu Google Calendar</li><li>Negocio cerrado → Factura generada automáticamente en sistema de contabilidad</li></ul><h4>Cómo Tesoro implementa esto para el sector inmobiliario:</h4><p><strong>Importaciones XML de portales:</strong> Idealista, Fotocasa, Kyero: sincronización automática. Sube una propiedad una vez, aparece en todas partes. Actualiza un precio, se actualiza en todas partes. ¿Llega un lead del portal? Directamente en Tesoro con historial de conversación completo.</p><p><strong>Integración de correo electrónico (Gmail, Outlook):</strong> Cada correo electrónico hacia/desde un contacto se rastrea automáticamente. No más BCC manual o copiar y pegar. Abre Tesoro, ve el hilo completo de correo electrónico. Responde directamente desde CRM.</p><p><strong>Integración de WhatsApp:</strong> WhatsApp es la herramienta de comunicación para el sector inmobiliario español. Tesoro se integra: envía mensajes de WhatsApp directamente desde CRM, ve el historial de conversaciones, plantillas automáticas para preguntas comunes.</p><p><strong>Integración de sitio web:</strong> Tu sitio web no está separado: es parte de Tesoro. Listados de propiedades bilingües (español/inglés o más), optimización SEO automática, formularios de captura de leads que van directamente al CRM, filtros de búsqueda de propiedades que recuerdan preferencias.</p><p><strong>Sincronización de calendario:</strong> Tus visitas, citas, plazos: todo se sincroniza con Google Calendar u Outlook. Los miembros del equipo ven los calendarios de los demás para una mejor coordinación.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "innovation-5-emerging",
+      "title": {
+        "nl": "Innovatie 5: Emerging technologies - AR, VR en blockchain",
+        "en": "Innovation 5: Emerging Technologies - AR, VR and Blockchain",
+        "es": "Innovación 5: Tecnologías emergentes: RA, RV y blockchain"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De laatste golf innovaties komt uit de hoek van emerging tech - technologieën die vandaag nog experimenteel zijn, maar over 2-3 jaar mainstream zullen zijn in vastgoed.</p><h4>1. Blockchain voor transactie security</h4><p>Smart contracts en blockchain-gebaseerde property registers maken transacties:</p><ul><li><strong>Transparanter:</strong> Volledige ownership history onveranderbaar vastgelegd</li><li><strong>Veiliger:</strong> Fraude vrijwel onmogelijk door gedecentraliseerde verificatie</li><li><strong>Sneller:</strong> Minder tussenpersonen, snellere afwikkeling</li></ul><p>Spanje experimenteert al met blockchain-based land registers in bepaalde regio's.</p><h4>2. AR/VR voor immersive property tours</h4><p>Virtual reality is niet langer science fiction - het is praktisch:</p><ul><li><strong>VR property tours:</strong> Internationale kopers kunnen properties \"bezoeken\" zonder vliegticket</li><li><strong>AR staging:</strong> Leeg appartement? Gebruik AR om het virtueel in te richten tijdens viewings</li><li><strong>Remote demonstrations:</strong> Toon properties aan klanten op afstand alsof ze er fysiek zijn</li></ul><p>Dit is <em>kritiek</em> voor internationale sales waar buyers vaak niet fysiek aanwezig kunnen zijn voor elke viewing.</p><h4>3. IoT integration voor smart properties</h4><p>Properties worden steeds \"slimmer\" met IoT devices:</p><ul><li>Smart thermostats, locks, security systems</li><li>Energy monitoring en efficiency data</li><li>Maintenance alerts voor verkopers/verhuurders</li></ul><p>Moderne CRMs kunnen deze data integreren en delen met potentiële kopers.</p><h4>Hoe Tesoro dit implementeert (en voorbereidt):</h4><p><strong>Customer portal voor buyers:</strong> Kopers krijgen een persoonlijke portal waar ze hun buyer journey kunnen tracken: shortlisted properties, viewing schedules, document uploads (NIE, proof of funds), offer status. Volledig transparant proces.</p><p><strong>Virtual property tour integratie:</strong> Embed 360° virtual tours en video walkthroughs direct in property listings. Share links met internationale kopers. Track wie tours bekeken heeft en hoe lang - valuable sales intelligence.</p><p><strong>Document management voor complex transactions:</strong> Spaanse vastgoedtransacties vereisen veel documentatie: NIE numbers, escrituras, nota simples, hypotheek documentatie, etc. Tesoro centraliseert alles met automatic reminders voor missing documents.</p><p><strong>Multi-currency support:</strong> Internationale kopers denken in hun eigen valuta. Tesoro toont properties in €, £, $, etc. met real-time conversie rates. Maakt price comparisons makkelijker voor buyers.</p>"
+        },
+        "en": {
+          "text": "<p>The latest wave of innovations comes from emerging tech - technologies that are still experimental today, but will be mainstream in real estate in 2-3 years.</p><h4>1. Blockchain for transaction security</h4><p>Smart contracts and blockchain-based property registers make transactions:</p><ul><li><strong>More transparent:</strong> Complete ownership history immutably recorded</li><li><strong>More secure:</strong> Fraud virtually impossible through decentralized verification</li><li><strong>Faster:</strong> Fewer intermediaries, faster settlement</li></ul><p>Spain is already experimenting with blockchain-based land registers in certain regions.</p><h4>2. AR/VR for immersive property tours</h4><p>Virtual reality is no longer science fiction - it's practical:</p><ul><li><strong>VR property tours:</strong> International buyers can \"visit\" properties without a plane ticket</li><li><strong>AR staging:</strong> Empty apartment? Use AR to virtually furnish it during viewings</li><li><strong>Remote demonstrations:</strong> Show properties to remote clients as if they're physically there</li></ul><p>This is <em>critical</em> for international sales where buyers often can't be physically present for every viewing.</p><h4>3. IoT integration for smart properties</h4><p>Properties are becoming \"smarter\" with IoT devices:</p><ul><li>Smart thermostats, locks, security systems</li><li>Energy monitoring and efficiency data</li><li>Maintenance alerts for sellers/landlords</li></ul><p>Modern CRMs can integrate and share this data with potential buyers.</p><h4>How Tesoro implements this (and prepares):</h4><p><strong>Customer portal for buyers:</strong> Buyers get a personal portal where they can track their buyer journey: shortlisted properties, viewing schedules, document uploads (NIE, proof of funds), offer status. Fully transparent process.</p><p><strong>Virtual property tour integration:</strong> Embed 360° virtual tours and video walkthroughs directly in property listings. Share links with international buyers. Track who viewed tours and for how long - valuable sales intelligence.</p><p><strong>Document management for complex transactions:</strong> Spanish real estate transactions require lots of documentation: NIE numbers, escrituras, nota simples, mortgage documentation, etc. Tesoro centralizes everything with automatic reminders for missing documents.</p><p><strong>Multi-currency support:</strong> International buyers think in their own currency. Tesoro shows properties in €, £, $, etc. with real-time conversion rates. Makes price comparisons easier for buyers.</p>"
+        },
+        "es": {
+          "text": "<p>La última ola de innovaciones proviene de tecnologías emergentes: tecnologías que aún son experimentales hoy, pero que serán mainstream en el sector inmobiliario en 2-3 años.</p><h4>1. Blockchain para seguridad de transacciones</h4><p>Los contratos inteligentes y los registros de propiedades basados en blockchain hacen que las transacciones sean:</p><ul><li><strong>Más transparentes:</strong> Historial completo de propiedad registrado de forma inmutable</li><li><strong>Más seguras:</strong> Fraude prácticamente imposible mediante verificación descentralizada</li><li><strong>Más rápidas:</strong> Menos intermediarios, liquidación más rápida</li></ul><p>España ya está experimentando con registros de tierras basados en blockchain en ciertas regiones.</p><h4>2. RA/RV para tours inmersivos de propiedades</h4><p>La realidad virtual ya no es ciencia ficción, es práctica:</p><ul><li><strong>Tours de propiedades en RV:</strong> Los compradores internacionales pueden \"visitar\" propiedades sin un boleto de avión</li><li><strong>Staging con RA:</strong> ¿Apartamento vacío? Usa RA para amueblarlo virtualmente durante las visitas</li><li><strong>Demostraciones remotas:</strong> Muestra propiedades a clientes remotos como si estuvieran físicamente allí</li></ul><p>Esto es <em>crítico</em> para ventas internacionales donde los compradores a menudo no pueden estar físicamente presentes en cada visita.</p><h4>3. Integración de IoT para propiedades inteligentes</h4><p>Las propiedades se están volviendo \"más inteligentes\" con dispositivos IoT:</p><ul><li>Termostatos inteligentes, cerraduras, sistemas de seguridad</li><li>Monitoreo de energía y datos de eficiencia</li><li>Alertas de mantenimiento para vendedores/propietarios</li></ul><p>Los CRM modernos pueden integrar y compartir estos datos con compradores potenciales.</p><h4>Cómo Tesoro implementa esto (y se prepara):</h4><p><strong>Portal del cliente para compradores:</strong> Los compradores obtienen un portal personal donde pueden rastrear su recorrido de compra: propiedades preseleccionadas, horarios de visitas, cargas de documentos (NIE, prueba de fondos), estado de oferta. Proceso completamente transparente.</p><p><strong>Integración de tours virtuales de propiedades:</strong> Incrusta tours virtuales de 360° y recorridos en video directamente en los listados de propiedades. Comparte enlaces con compradores internacionales. Rastrea quién vio los tours y por cuánto tiempo: inteligencia de ventas valiosa.</p><p><strong>Gestión de documentos para transacciones complejas:</strong> Las transacciones inmobiliarias españolas requieren mucha documentación: números NIE, escrituras, notas simples, documentación hipotecaria, etc. Tesoro centraliza todo con recordatorios automáticos para documentos faltantes.</p><p><strong>Soporte multidivisa:</strong> Los compradores internacionales piensan en su propia moneda. Tesoro muestra propiedades en €, £, $, etc. con tasas de conversión en tiempo real. Facilita las comparaciones de precios para los compradores.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "tesoro-leads",
+      "title": {
+        "nl": "Waarom Tesoro CRM deze innovaties leidt",
+        "en": "Why Tesoro CRM leads these innovations",
+        "es": "Por qué Tesoro CRM lidera estas innovaciones"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het verschil tussen Tesoro en generieke CRM-systemen? <strong>Tesoro is gebouwd voor Spaanse vastgoedprofessionals, vanaf dag één.</strong></p><p>Dat betekent niet alleen dat de features matchen met je workflow - het betekent dat we begrijpen welke innovaties <em>praktisch relevant</em> zijn voor jouw business.</p><h4>Concrete voorbeelden van Tesoro's voorsprong:</h4><p><strong>1. Smart lead matching die begrijpt vastgoed</strong></p><p>Andere CRMs: \"Deze lead heeft interest in product X\"</p><p>Tesoro: \"Deze 8 leads zoeken een 3-slaapkamer appartement binnen 5km van Barcelona centrum, budget €350-450k, beschikbaar binnen 3 maanden, en ze hebben vorige week soortgelijke properties bekeken op je website. Prioriteit: Hoog.\"</p><p><strong>2. Automatisering die vastgoedtransacties snapt</strong></p><p>Andere CRMs: Basis email sequences</p><p>Tesoro: Complexe workflows die begrijpen dat een property sale 6-12 touchpoints heeft (first inquiry, info package, viewing, second viewing, offer, negotiation, hypotheek approval, escritura, notaris afspraak). Elke stap heeft specifieke automatisering en templates.</p><p><strong>3. Meertalig vanaf de basis</strong></p><p>Andere CRMs: \"Add translation plugin\"</p><p>Tesoro: Native support voor Spaans, Engels, Nederlands - de drie belangrijkste talen voor Spaanse vastgoed. Property descriptions, emails, website content - alles meertalig zonder extra configuratie.</p><p><strong>4. Integraties die er toe doen</strong></p><p>Andere CRMs: Generic integrations (Salesforce, HubSpot, etc.)</p><p>Tesoro: Directe integratie met Idealista, Fotocasa, Kyero, WhatsApp, Spanish notaris workflows, NIE documentation flows - de tools die Spaanse makelaars écht gebruiken.</p>"
+        },
+        "en": {
+          "text": "<p>The difference between Tesoro and generic CRM systems? <strong>Tesoro is built for Spanish real estate professionals, from day one.</strong></p><p>That means not just that features match your workflow - it means we understand which innovations are <em>practically relevant</em> for your business.</p><h4>Concrete examples of Tesoro's advantage:</h4><p><strong>1. Smart lead matching that understands real estate</strong></p><p>Other CRMs: \"This lead has interest in product X\"</p><p>Tesoro: \"These 8 leads are looking for a 3-bedroom apartment within 5km of Barcelona center, budget €350-450k, available within 3 months, and they viewed similar properties on your website last week. Priority: High.\"</p><p><strong>2. Automation that understands real estate transactions</strong></p><p>Other CRMs: Basic email sequences</p><p>Tesoro: Complex workflows that understand a property sale has 6-12 touchpoints (first inquiry, info package, viewing, second viewing, offer, negotiation, mortgage approval, escritura, notary appointment). Each step has specific automation and templates.</p><p><strong>3. Multilingual from the ground up</strong></p><p>Other CRMs: \"Add translation plugin\"</p><p>Tesoro: Native support for Spanish, English, Dutch - the three most important languages for Spanish real estate. Property descriptions, emails, website content - everything multilingual without extra configuration.</p><p><strong>4. Integrations that matter</strong></p><p>Other CRMs: Generic integrations (Salesforce, HubSpot, etc.)</p><p>Tesoro: Direct integration with Idealista, Fotocasa, Kyero, WhatsApp, Spanish notary workflows, NIE documentation flows - the tools Spanish agents actually use.</p>"
+        },
+        "es": {
+          "text": "<p>¿La diferencia entre Tesoro y los sistemas CRM genéricos? <strong>Tesoro está construido para profesionales inmobiliarios españoles, desde el primer día.</strong></p><p>Eso significa no solo que las características coinciden con tu flujo de trabajo, sino que entendemos qué innovaciones son <em>prácticamente relevantes</em> para tu negocio.</p><h4>Ejemplos concretos de la ventaja de Tesoro:</h4><p><strong>1. Emparejamiento inteligente de leads que entiende el sector inmobiliario</strong></p><p>Otros CRM: \"Este lead tiene interés en el producto X\"</p><p>Tesoro: \"Estos 8 leads buscan un apartamento de 3 dormitorios a menos de 5 km del centro de Barcelona, presupuesto de 350.000-450.000 €, disponible en 3 meses, y vieron propiedades similares en tu sitio web la semana pasada. Prioridad: Alta\".</p><p><strong>2. Automatización que entiende las transacciones inmobiliarias</strong></p><p>Otros CRM: Secuencias básicas de correo electrónico</p><p>Tesoro: Flujos de trabajo complejos que entienden que una venta de propiedad tiene 6-12 puntos de contacto (primera consulta, paquete de información, visita, segunda visita, oferta, negociación, aprobación de hipoteca, escritura, cita con notario). Cada paso tiene automatización y plantillas específicas.</p><p><strong>3. Multilingüe desde la base</strong></p><p>Otros CRM: \"Agregar plugin de traducción\"</p><p>Tesoro: Soporte nativo para español, inglés, holandés: los tres idiomas más importantes para el sector inmobiliario español. Descripciones de propiedades, correos electrónicos, contenido del sitio web: todo multilingüe sin configuración adicional.</p><p><strong>4. Integraciones que importan</strong></p><p>Otros CRM: Integraciones genéricas (Salesforce, HubSpot, etc.)</p><p>Tesoro: Integración directa con Idealista, Fotocasa, Kyero, WhatsApp, flujos de trabajo de notarios españoles, flujos de documentación NIE: las herramientas que los agentes españoles realmente usan.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "competitive-edge",
+      "variant": "warning",
+      "title": {
+        "nl": "De competitieve realiteit",
+        "en": "The Competitive Reality",
+        "es": "La realidad competitiva"
+      },
+      "items": [
+        {
+          "nl": "Makelaars met moderne CRM-systemen sluiten 34% meer deals per year",
+          "en": "Agents with modern CRM systems close 34% more deals per year",
+          "es": "Los agentes con sistemas CRM modernos cierran un 34% más de negocios por año"
+        },
+        {
+          "nl": "AI-gestuurde lead scoring bespaart gemiddeld 12 uren per week aan onnodige follow-ups",
+          "en": "AI-driven lead scoring saves average 12 hours per week on unnecessary follow-ups",
+          "es": "La puntuación de leads impulsada por IA ahorra un promedio de 12 horas por semana en seguimientos innecesarios"
+        },
+        {
+          "nl": "Makelaars zonder meertalige systemen missen 18% van de Spaanse markt (buitenlandse kopers)",
+          "en": "Agents without multilingual systems miss 18% of the Spanish market (foreign buyers)",
+          "es": "Los agentes sin sistemas multilingües pierden el 18% del mercado español (compradores extranjeros)"
+        },
+        {
+          "nl": "Handmatige property syndication kost gemiddeld 8 uren per week die geautomatiseerd kan worden",
+          "en": "Manual property syndication costs average 8 hours per week that can be automated",
+          "es": "La sindicación manual de propiedades cuesta un promedio de 8 horas por semana que se pueden automatizar"
+        }
+      ]
+    },
+
+    {
+      "type": "quote",
+      "id": "innovation-quote",
+      "quote": {
+        "nl": "De vastgoedsector staat niet op de rand van verandering - de verandering is al gaande. De vraag is niet of je gaat investeren in moderne CRM-technologie, maar of je het doet voordat je concurrenten je voorbij zijn.",
+        "en": "The real estate sector isn't on the brink of change - the change is already happening. The question isn't whether you'll invest in modern CRM technology, but whether you'll do it before your competitors pass you by.",
+        "es": "El sector inmobiliario no está al borde del cambio: el cambio ya está sucediendo. La pregunta no es si invertirás en tecnología CRM moderna, sino si lo harás antes de que tus competidores te dejen atrás."
+      },
+      "author": "Carlos Martínez",
+      "role": {
+        "nl": "Tech Specialist, Tesoro CRM",
+        "en": "Tech Specialist, Tesoro CRM",
+        "es": "Especialista en Tecnología, Tesoro CRM"
+      }
+    },
+
+    {
+      "type": "cta",
+      "id": "conclusion",
+      "title": {
+        "nl": "Zie de toekomst van vastgoed CRM in actie",
+        "en": "See the future of real estate CRM in action",
+        "es": "Ve el futuro del CRM inmobiliario en acción"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De 5 innovaties die we besproken hebben - AI-automatisering, predictieve analytics, cloud infrastructuur, API-first architectuur, en emerging tech - zijn geen science fiction. Ze zijn beschikbaar nu, in Tesoro CRM.</p><p>Gebouwd specifiek voor Spaanse vastgoedprofessionals. Geoptimaliseerd voor internationale sales. Geïntegreerd met de tools die je al gebruikt.</p><p>Vraag een gratis demo aan en ontdek hoe Tesoro je helpt om:</p><ul><li>Meer leads te converteren met AI-gestuurde matching en automatisering</li><li>Tijd te besparen met geautomatiseerde workflows en portal sync</li><li>Internationale klanten te bereiken met meertalige websites en content</li><li>Vooruit te blijven met predictieve analytics en sales forecasting</li></ul><p>De toekomst van vastgoed CRM is hier. Ben je er klaar voor?</p>"
+        },
+        "en": {
+          "text": "<p>The 5 innovations we discussed - AI automation, predictive analytics, cloud infrastructure, API-first architecture, and emerging tech - aren't science fiction. They're available now, in Tesoro CRM.</p><p>Built specifically for Spanish real estate professionals. Optimized for international sales. Integrated with the tools you already use.</p><p>Request a free demo and discover how Tesoro helps you:</p><ul><li>Convert more leads with AI-driven matching and automation</li><li>Save time with automated workflows and portal sync</li><li>Reach international clients with multilingual websites and content</li><li>Stay ahead with predictive analytics and sales forecasting</li></ul><p>The future of real estate CRM is here. Are you ready?</p>"
+        },
+        "es": {
+          "text": "<p>Las 5 innovaciones que discutimos (automatización de IA, analítica predictiva, infraestructura en la nube, arquitectura API-first y tecnologías emergentes) no son ciencia ficción. Están disponibles ahora, en Tesoro CRM.</p><p>Construido específicamente para profesionales inmobiliarios españoles. Optimizado para ventas internacionales. Integrado con las herramientas que ya usas.</p><p>Solicita una demo gratuita y descubre cómo Tesoro te ayuda a:</p><ul><li>Convertir más leads con emparejamiento y automatización impulsados por IA</li><li>Ahorrar tiempo con flujos de trabajo automatizados y sincronización de portales</li><li>Llegar a clientes internacionales con sitios web y contenido multilingüe</li><li>Mantenerte a la vanguardia con analítica predictiva y pronóstico de ventas</li></ul><p>El futuro del CRM inmobiliario está aquí. ¿Estás listo?</p>"
+        }
+      },
+      "buttons": [
+        {
+          "text": {
+            "nl": "Vraag een Demo Aan",
+            "en": "Request a Demo",
+            "es": "Solicitar una Demo"
+          },
+          "url": "/contact",
+          "style": "primary"
+        },
+        {
+          "text": {
+            "nl": "Bekijk Alle Features",
+            "en": "View All Features",
+            "es": "Ver Todas las Características"
+          },
+          "url": "/product",
+          "style": "secondary"
+        }
+      ]
+    }
+  ],
+
+  "relatedPosts": [
+    "spanish-market-trends-2025",
+    "website-transformation"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe verschilt AI in Tesoro van simpele automatisering?",
+        "en": "How does AI in Tesoro differ from simple automation?",
+        "es": "¿En qué se diferencia la IA en Tesoro de la automatización simple?"
+      },
+      "answer": {
+        "nl": "Simpele automatisering volgt if-then regels die jij opstelt. AI in Tesoro leert van gedrag en maakt beslissingen: welke leads zijn hot, wanneer is het beste moment voor follow-up, welke properties matchen met welke kopers. Het verschil is dat AI zich aanpast aan jouw specifieke business en steeds slimmer wordt.",
+        "en": "Simple automation follows if-then rules you set up. AI in Tesoro learns from behavior and makes decisions: which leads are hot, when is the best time for follow-up, which properties match which buyers. The difference is that AI adapts to your specific business and gets smarter over time.",
+        "es": "La automatización simple sigue reglas de si-entonces que configuras. La IA en Tesoro aprende del comportamiento y toma decisiones: qué leads están calientes, cuál es el mejor momento para el seguimiento, qué propiedades coinciden con qué compradores. La diferencia es que la IA se adapta a tu negocio específico y se vuelve más inteligente con el tiempo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Werkt Tesoro ook voor kleine makelaars of alleen voor grote kantoren?",
+        "en": "Does Tesoro work for small agents or only for large offices?",
+        "es": "¿Tesoro funciona para agentes pequeños o solo para oficinas grandes?"
+      },
+      "answer": {
+        "nl": "Tesoro is ontworpen voor elke schaal - van individuele makelaars tot grote teams. De pricing begint bij €99/maand (tot 10 users), en alle features zijn beschikbaar vanaf dag één. Kleine makelaars hebben juist vaak het meeste voordeel: ze kunnen met Tesoro concurreren met grote kantoren zonder grote IT-investeringen.",
+        "en": "Tesoro is designed for any scale - from individual agents to large teams. Pricing starts at €99/month (up to 10 users), and all features are available from day one. Small agents often benefit most: they can compete with large offices using Tesoro without major IT investments.",
+        "es": "Tesoro está diseñado para cualquier escala, desde agentes individuales hasta equipos grandes. El precio comienza en 99 €/mes (hasta 10 usuarios) y todas las características están disponibles desde el primer día. Los agentes pequeños a menudo se benefician más: pueden competir con grandes oficinas usando Tesoro sin grandes inversiones en TI."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe lang duurt het om Tesoro te implementeren?",
+        "en": "How long does it take to implement Tesoro?",
+        "es": "¿Cuánto tiempo lleva implementar Tesoro?"
+      },
+      "answer": {
+        "nl": "De basis setup duurt letterlijk minuten: account aanmaken, eerste properties uploaden, team uitnodigen. Voor volledige implementatie met portal integraties, website setup, en data migratie rekenen we op 1-2 weken. We bieden gratis onboarding en training, zodat je team snel productief is.",
+        "en": "Basic setup literally takes minutes: create account, upload first properties, invite team. For full implementation with portal integrations, website setup, and data migration, we estimate 1-2 weeks. We offer free onboarding and training, so your team is productive quickly.",
+        "es": "La configuración básica literalmente lleva minutos: crear cuenta, subir primeras propiedades, invitar al equipo. Para la implementación completa con integraciones de portales, configuración del sitio web y migración de datos, estimamos 1-2 semanas. Ofrecemos onboarding y capacitación gratuitos, para que tu equipo sea productivo rápidamente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Welke portals integreert Tesoro?",
+        "en": "Which portals does Tesoro integrate with?",
+        "es": "¿Con qué portales se integra Tesoro?"
+      },
+      "answer": {
+        "nl": "Tesoro integreert met de belangrijkste Spaanse portals: Idealista, Fotocasa, en Kyero. Daarnaast ook met internationale portals zoals Rightmove (UK). Properties worden automatisch gesynchroniseerd via XML feeds - upload één keer, publish overal. Updates (prijs, status, foto's) synchroniseren automatisch.",
+        "en": "Tesoro integrates with the main Spanish portals: Idealista, Fotocasa, and Kyero. Additionally with international portals like Rightmove (UK). Properties are automatically synced via XML feeds - upload once, publish everywhere. Updates (price, status, photos) sync automatically.",
+        "es": "Tesoro se integra con los principales portales españoles: Idealista, Fotocasa y Kyero. Además, con portales internacionales como Rightmove (UK). Las propiedades se sincronizan automáticamente mediante feeds XML: sube una vez, publica en todas partes. Las actualizaciones (precio, estado, fotos) se sincronizan automáticamente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Is mijn data veilig in de cloud?",
+        "en": "Is my data safe in the cloud?",
+        "es": "¿Están seguros mis datos en la nube?"
+      },
+      "answer": {
+        "nl": "Ja. Tesoro gebruikt enterprise-grade cloud hosting met automatische backups, encryptie, en GDPR-compliance. Je data is vaak veiliger in de cloud dan op je eigen computer - we hebben dedicated security teams, automatic updates, en redundante storage. Plus: als je laptop crasht, is je data niet weg.",
+        "en": "Yes. Tesoro uses enterprise-grade cloud hosting with automatic backups, encryption, and GDPR compliance. Your data is often safer in the cloud than on your own computer - we have dedicated security teams, automatic updates, and redundant storage. Plus: if your laptop crashes, your data isn't lost.",
+        "es": "Sí. Tesoro utiliza alojamiento en la nube de nivel empresarial con copias de seguridad automáticas, cifrado y cumplimiento de GDPR. Tus datos suelen estar más seguros en la nube que en tu propia computadora: tenemos equipos de seguridad dedicados, actualizaciones automáticas y almacenamiento redundante. Además: si tu laptop falla, tus datos no se pierden."
+      }
+    }
+  ]
+}
