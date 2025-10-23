@@ -9,6 +9,8 @@ import type { Language } from '../../types/blog';
 import { formatDate, getSectionTitle, generateStructuredData, generateFAQStructuredData, getCanonicalUrl } from '../../utils/blogHelpers';
 import { getAuthor } from '../../utils/authors';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
