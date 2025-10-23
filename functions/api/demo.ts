@@ -1,6 +1,6 @@
 /**
  * Cloudflare Pages Function for Demo Form Submission
- * Handles form validation, Turnstile verification, and sends email via Mailgun
+ * Handles form validation, Turnstile verification, sends email via Mailgun, and creates lead in Zoho CRM
  */
 
 interface Env {
@@ -9,9 +9,118 @@ interface Env {
   };
 }
 
+interface ZohoTokenResponse {
+  access_token: string;
+  expires_in: number;
+  api_domain: string;
+  token_type: string;
+}
+
+interface ZohoLeadResponse {
+  data: Array<{
+    code: string;
+    details: {
+      id: string;
+    };
+    message: string;
+    status: string;
+  }>;
+}
+
 interface TurnstileResponse {
   success: boolean;
   'error-codes'?: string[];
+}
+
+/**
+ * Get Zoho CRM access token using refresh token
+ */
+async function getZohoAccessToken(
+  clientId: string,
+  clientSecret: string,
+  refreshToken: string,
+  datacenter: string
+): Promise<string> {
+  const tokenUrl = `https://accounts.zoho.${datacenter}/oauth/v2/token`;
+
+  const params = new URLSearchParams({
+    refresh_token: refreshToken,
+    client_id: clientId,
+    client_secret: clientSecret,
+    grant_type: 'refresh_token',
+  });
+
+  const response = await fetch(`${tokenUrl}?${params.toString()}`, {
+    method: 'POST',
+  });
+
+  if (!response.ok) {
+    throw new Error(`Zoho token request failed: ${response.status}`);
+  }
+
+  const data: ZohoTokenResponse = await response.json();
+  return data.access_token;
+}
+
+/**
+ * Create lead in Zoho CRM
+ */
+async function createZohoLead(
+  accessToken: string,
+  datacenter: string,
+  leadData: {
+    painPoint: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    company: string;
+    preferredDate: string;
+    preferredTime: string;
+    notes: string;
+  }
+): Promise<string | null> {
+  const apiUrl = `https://www.zohoapis.${datacenter}/crm/v6/Leads`;
+
+  const zohoLead = {
+    data: [
+      {
+        First_Name: leadData.firstName,
+        Last_Name: leadData.lastName,
+        Email: leadData.email,
+        Phone: leadData.phone,
+        Company: leadData.company,
+        Lead_Source: 'Website - Demo Request',
+        Lead_Status: 'Not Contacted',
+        Description: `Pain Point: ${leadData.painPoint}\n\nPreferred Date: ${leadData.preferredDate}\nPreferred Time: ${leadData.preferredTime}\n\nNotes: ${leadData.notes || 'N/A'}`,
+        // Custom field for pain point (requires Pain_Point field in Zoho CRM)
+        Pain_Point: leadData.painPoint,
+      },
+    ],
+  };
+
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Zoho-oauthtoken ${accessToken}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(zohoLead),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    console.error('Zoho CRM API error:', response.status, errorText);
+    throw new Error(`Zoho CRM API failed: ${response.status}`);
+  }
+
+  const result: ZohoLeadResponse = await response.json();
+
+  if (result.data && result.data[0] && result.data[0].code === 'SUCCESS') {
+    return result.data[0].details.id;
+  }
+
+  return null;
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
@@ -22,6 +131,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     const mailgunDomain = await context.env.SECRETS.get('MAILGUN_DOMAIN');
     const mailgunRegion = await context.env.SECRETS.get('MAILGUN_REGION');
     const notificationEmail = await context.env.SECRETS.get('NOTIFICATION_EMAIL') || 'sales@tesoro.estate';
+
+    // Zoho CRM secrets (optional - only needed if Zoho integration is enabled)
+    const zohoClientId = await context.env.SECRETS.get('ZOHO_CLIENT_ID');
+    const zohoClientSecret = await context.env.SECRETS.get('ZOHO_CLIENT_SECRET');
+    const zohoRefreshToken = await context.env.SECRETS.get('ZOHO_REFRESH_TOKEN');
+    const zohoDatacenter = await context.env.SECRETS.get('ZOHO_DATACENTER') || 'eu'; // Default to EU
 
     if (!turnstileSecret || !mailgunApiKey || !mailgunDomain || !mailgunRegion) {
       return new Response(JSON.stringify({ error: 'Server configuration error' }), {
@@ -175,8 +290,48 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       console.error('Mailgun confirmation error:', await confirmationResponse.text());
     }
 
+    // 3. Create lead in Zoho CRM (optional - only if credentials are configured)
+    let zohoLeadId: string | null = null;
+    if (zohoClientId && zohoClientSecret && zohoRefreshToken) {
+      try {
+        const accessToken = await getZohoAccessToken(
+          zohoClientId,
+          zohoClientSecret,
+          zohoRefreshToken,
+          zohoDatacenter
+        );
+
+        zohoLeadId = await createZohoLead(accessToken, zohoDatacenter, {
+          painPoint,
+          firstName,
+          lastName,
+          email,
+          phone,
+          company,
+          preferredDate,
+          preferredTime,
+          notes,
+        });
+
+        if (zohoLeadId) {
+          console.log('Zoho CRM lead created successfully:', zohoLeadId);
+        } else {
+          console.warn('Zoho CRM lead creation returned no ID');
+        }
+      } catch (zohoError) {
+        // Log error but don't fail the request - emails are more important
+        console.error('Zoho CRM integration error:', zohoError);
+      }
+    } else {
+      console.log('Zoho CRM integration skipped - credentials not configured');
+    }
+
     // Return success response
-    return new Response(JSON.stringify({ success: true, message: 'Demo request submitted successfully' }), {
+    return new Response(JSON.stringify({
+      success: true,
+      message: 'Demo request submitted successfully',
+      zohoLeadId: zohoLeadId || undefined,
+    }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
