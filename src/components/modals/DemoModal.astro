@@ -210,16 +210,16 @@ const { locale } = Astro.props;
 </Modal>
 
 <script>
-  // Handle form validation and scroll to first error
+  // Handle form validation and async submission
   function initDemoFormValidation() {
     const form = document.getElementById('demo-form') as HTMLFormElement;
     if (!form) return;
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault(); // Always prevent default form submission
+
       // Let browser do native validation first
       if (!form.checkValidity()) {
-        e.preventDefault();
-
         // Find first invalid field
         const firstInvalid = form.querySelector(':invalid') as HTMLElement;
         if (firstInvalid) {
@@ -244,6 +244,55 @@ const { locale } = Astro.props;
 
         // Show native validation messages
         form.reportValidity();
+        return;
+      }
+
+      // Form is valid, submit via fetch
+      const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+      const originalButtonText = submitButton?.textContent || '';
+
+      try {
+        // Disable submit button
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Verzenden...';
+        }
+
+        // Submit form data
+        const formData = new FormData(form);
+        const response = await fetch('/api/demo', {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          // Success! Close modal and show success message
+          const modal = document.getElementById('demo-modal');
+          if (modal) {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+          }
+
+          // Show success notification
+          alert('✅ Bedankt! Je aanvraag is ontvangen. We nemen binnen 24 uur contact met je op.');
+
+          // Reset form
+          form.reset();
+        } else {
+          // Show error message
+          alert('❌ ' + (result.error || 'Er is iets misgegaan. Probeer het later opnieuw.'));
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        alert('❌ Er is iets misgegaan. Probeer het later opnieuw.');
+      } finally {
+        // Re-enable submit button
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
       }
     });
   }
