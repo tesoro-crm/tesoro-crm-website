@@ -3,6 +3,18 @@
  * Handles form validation, Turnstile verification, sends email via Mailgun, and creates lead in Zoho CRM
  */
 
+// @ts-ignore - Cloudflare Pages Function types
+type PagesFunction<Env = unknown> = (context: EventContext<Env, any, Record<string, unknown>>) => Response | Promise<Response>;
+
+interface EventContext<Env, CfHostMetadata, Data> {
+  request: Request;
+  env: Env;
+  params: Record<string, string>;
+  data: Data;
+  waitUntil(promise: Promise<any>): void;
+  next(input?: Request | string, init?: RequestInit): Promise<Response>;
+}
+
 interface Env {
   SECRETS: {
     get(key: string): Promise<string | null>;
