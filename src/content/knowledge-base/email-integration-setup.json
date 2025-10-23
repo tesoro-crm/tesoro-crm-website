@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "id": "email-integration-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T12:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "communication",
+    "difficulty": "intermediate",
+    "tags": ["email", "gmail", "outlook", "oauth", "integration", "setup"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["gmail integration tesoro", "outlook crm sync", "email oauth setup", "connect email to crm", "gmail oauth"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Email integratie instellen: Gmail en Outlook",
+      "en": "Setting Up Email Integration: Gmail and Outlook",
+      "es": "Configurar integración de email: Gmail y Outlook"
+    },
+    "description": {
+      "nl": "Verbind je Gmail of Outlook account met Tesoro via veilige OAuth authenticatie.",
+      "en": "Connect your Gmail or Outlook account to Tesoro via secure OAuth authentication.",
+      "es": "Conecta tu cuenta de Gmail u Outlook a Tesoro vía autenticación OAuth segura."
+    },
+    "icon": "sync"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "oauth-authentication-explained",
+      "title": {
+        "nl": "Wat is OAuth authenticatie?",
+        "en": "What is OAuth authentication?",
+        "es": "¿Qué es la autenticación OAuth?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>OAuth is een veilige authenticatiemethode waarbij je Tesoro toestemming geeft om emails te lezen en versturen <strong>zonder je wachtwoord te delen</strong>.</p><h3>Waarom OAuth Gebruiken?</h3><ul><li><strong>Veiliger:</strong> Geen wachtwoorden opgeslagen in Tesoro</li><li><strong>Granulaire controle:</strong> Bepaal welke rechten Tesoro krijgt</li><li><strong>Gemakkelijk in te trekken:</strong> Verbinding verwijderen wanneer je wilt</li><li><strong>Two-factor compatible:</strong> Werkt met 2FA/MFA</li><li><strong>Enterprise ready:</strong> Werkt met Google Workspace en Microsoft 365</li></ul><h3>Wat Kan Tesoro Doen?</h3><p>Met OAuth toestemming kan Tesoro:</p><ul><li><strong>Emails lezen:</strong> Inkomende berichten koppelen aan contacten</li><li><strong>Emails versturen:</strong> Vanuit CRM verzenden via jouw account</li><li><strong>Email geschiedenis:</strong> Synchroniseren met CRM</li></ul><p><strong>Tesoro kan NIET:</strong></p><ul><li>Je wachtwoord zien of opslaan</li><li>Emails verwijderen zonder jouw actie</li><li>Account instellingen wijzigen</li></ul>"
+        },
+        "en": {
+          "text": "<p>OAuth is a secure authentication method where you give Tesoro permission to read and send emails <strong>without sharing your password</strong>.</p><h3>Why Use OAuth?</h3><ul><li><strong>More secure:</strong> No passwords stored in Tesoro</li><li><strong>Granular control:</strong> Determine which permissions Tesoro gets</li><li><strong>Easy to revoke:</strong> Remove connection whenever you want</li><li><strong>Two-factor compatible:</strong> Works with 2FA/MFA</li><li><strong>Enterprise ready:</strong> Works with Google Workspace and Microsoft 365</li></ul><h3>What Can Tesoro Do?</h3><p>With OAuth permission, Tesoro can:</p><ul><li><strong>Read emails:</strong> Link incoming messages to contacts</li><li><strong>Send emails:</strong> Send from CRM via your account</li><li><strong>Email history:</strong> Sync with CRM</li></ul><p><strong>Tesoro CANNOT:</strong></p><ul><li>See or store your password</li><li>Delete emails without your action</li><li>Change account settings</li></ul>"
+        },
+        "es": {
+          "text": "<p>OAuth es un método de autenticación seguro donde le das permiso a Tesoro para leer y enviar emails <strong>sin compartir tu contraseña</strong>.</p><h3>¿Por qué usar OAuth?</h3><ul><li><strong>Más seguro:</strong> No se almacenan contraseñas en Tesoro</li><li><strong>Control granular:</strong> Determina qué permisos obtiene Tesoro</li><li><strong>Fácil de revocar:</strong> Elimina la conexión cuando quieras</li><li><strong>Compatible con dos factores:</strong> Funciona con 2FA/MFA</li><li><strong>Listo para empresas:</strong> Funciona con Google Workspace y Microsoft 365</li></ul><h3>¿Qué puede hacer Tesoro?</h3><p>Con permiso OAuth, Tesoro puede:</p><ul><li><strong>Leer emails:</strong> Vincular mensajes entrantes a contactos</li><li><strong>Enviar emails:</strong> Enviar desde CRM vía tu cuenta</li><li><strong>Historial de email:</strong> Sincronizar con CRM</li></ul><p><strong>Tesoro NO puede:</strong></p><ul><li>Ver o almacenar tu contraseña</li><li>Eliminar emails sin tu acción</li><li>Cambiar configuraciones de cuenta</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "gmail-setup-guide",
+      "title": {
+        "nl": "Gmail integratie instellen",
+        "en": "Setting up Gmail integration",
+        "es": "Configurar integración de Gmail"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Stap 1: Start Gmail Verbinding</h3><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings > Integrations > Email Accounts</strong></li><li>Klik op <strong>+ Connect Gmail</strong> knop</li><li>Je wordt doorgestuurd naar Google inlogscherm</li></ol><h3>Stap 2: Google Account Selecteren</h3><ol><li>Selecteer het Gmail account dat je wilt verbinden</li><li>Of klik <strong>\"Use another account\"</strong> om in te loggen</li><li>Voer je Google wachtwoord in (indien gevraagd)</li><li>Voer 2FA code in als je dit hebt ingeschakeld</li></ol><h3>Stap 3: Toestemming Verlenen</h3><p>Google vraagt om toestemming voor:</p><ul><li><strong>View email messages:</strong> Inkomende emails lezen</li><li><strong>Send email on your behalf:</strong> Emails versturen</li><li><strong>Manage email drafts:</strong> Concepten opslaan</li></ul><p>Klik <strong>\"Allow\"</strong> om door te gaan.</p><h3>Stap 4: Verbinding Verifiëren</h3><ol><li>Je wordt teruggeleid naar Tesoro</li><li>Tesoro test de verbinding automatisch</li><li>Groen vinkje = verbinding succesvol</li><li>Je Gmail is nu geïntegreerd</li></ol><h3>Stap 5: Email Instellingen Configureren</h3><p>Personaliseer je email instellingen:</p><ul><li><strong>Signature:</strong> Automatische handtekening</li><li><strong>Default subject:</strong> Standaard onderwerp prefix</li><li><strong>Auto-sync frequency:</strong> Elk 1 min / 5 min / 15 min</li><li><strong>Sync history:</strong> Hoeveel oude emails importeren</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Step 1: Start Gmail Connection</h3><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings > Integrations > Email Accounts</strong></li><li>Click <strong>+ Connect Gmail</strong> button</li><li>You'll be redirected to Google login screen</li></ol><h3>Step 2: Select Google Account</h3><ol><li>Select the Gmail account you want to connect</li><li>Or click <strong>\"Use another account\"</strong> to log in</li><li>Enter your Google password (if asked)</li><li>Enter 2FA code if you have this enabled</li></ol><h3>Step 3: Grant Permission</h3><p>Google asks permission for:</p><ul><li><strong>View email messages:</strong> Read incoming emails</li><li><strong>Send email on your behalf:</strong> Send emails</li><li><strong>Manage email drafts:</strong> Save drafts</li></ul><p>Click <strong>\"Allow\"</strong> to continue.</p><h3>Step 4: Verify Connection</h3><ol><li>You'll be redirected back to Tesoro</li><li>Tesoro tests the connection automatically</li><li>Green checkmark = connection successful</li><li>Your Gmail is now integrated</li></ol><h3>Step 5: Configure Email Settings</h3><p>Personalize your email settings:</p><ul><li><strong>Signature:</strong> Automatic signature</li><li><strong>Default subject:</strong> Default subject prefix</li><li><strong>Auto-sync frequency:</strong> Every 1 min / 5 min / 15 min</li><li><strong>Sync history:</strong> How many old emails to import</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Paso 1: Iniciar conexión de Gmail</h3><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings > Integrations > Email Accounts</strong></li><li>Haz clic en el botón <strong>+ Connect Gmail</strong></li><li>Serás redirigido a la pantalla de inicio de sesión de Google</li></ol><h3>Paso 2: Seleccionar cuenta de Google</h3><ol><li>Selecciona la cuenta de Gmail que deseas conectar</li><li>O haz clic en <strong>\"Use another account\"</strong> para iniciar sesión</li><li>Ingresa tu contraseña de Google (si se solicita)</li><li>Ingresa el código 2FA si lo tienes habilitado</li></ol><h3>Paso 3: Otorgar permiso</h3><p>Google solicita permiso para:</p><ul><li><strong>View email messages:</strong> Leer emails entrantes</li><li><strong>Send email on your behalf:</strong> Enviar emails</li><li><strong>Manage email drafts:</strong> Guardar borradores</li></ul><p>Haz clic en <strong>\"Allow\"</strong> para continuar.</p><h3>Paso 4: Verificar conexión</h3><ol><li>Serás redirigido de vuelta a Tesoro</li><li>Tesoro prueba la conexión automáticamente</li><li>Marca verde = conexión exitosa</li><li>Tu Gmail ahora está integrado</li></ol><h3>Paso 5: Configurar ajustes de email</h3><p>Personaliza tus ajustes de email:</p><ul><li><strong>Signature:</strong> Firma automática</li><li><strong>Default subject:</strong> Prefijo de asunto predeterminado</li><li><strong>Auto-sync frequency:</strong> Cada 1 min / 5 min / 15 min</li><li><strong>Sync history:</strong> Cuántos emails antiguos importar</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "outlook-setup-guide",
+      "title": {
+        "nl": "Outlook integratie instellen",
+        "en": "Setting up Outlook integration",
+        "es": "Configurar integración de Outlook"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Stap 1: Start Outlook Verbinding</h3><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings > Integrations > Email Accounts</strong></li><li>Klik op <strong>+ Connect Outlook</strong> knop</li><li>Je wordt doorgestuurd naar Microsoft inlogscherm</li></ol><h3>Stap 2: Microsoft Account Selecteren</h3><ol><li>Voer je Outlook/Microsoft email adres in</li><li>Klik <strong>Next</strong></li><li>Voer je Microsoft wachtwoord in</li><li>Voer 2FA code in als je dit hebt ingeschakeld</li></ol><h3>Stap 3: Toestemming Verlenen</h3><p>Microsoft vraagt om toestemming voor:</p><ul><li><strong>Read your email:</strong> Inkomende emails lezen</li><li><strong>Send mail as you:</strong> Emails versturen</li><li><strong>Maintain access to data:</strong> Continue synchronisatie</li></ul><p>Klik <strong>\"Accept\"</strong> om door te gaan.</p><h3>Stap 4: Verbinding Verifiëren</h3><ol><li>Je wordt teruggeleid naar Tesoro</li><li>Tesoro test de verbinding automatisch</li><li>Groen vinkje = verbinding succesvol</li><li>Je Outlook is nu geïntegreerd</li></ol><h3>Microsoft 365 Enterprise</h3><p>Voor bedrijfsaccounts:</p><ul><li>Mogelijk moet je IT admin toestemming vragen</li><li>Admin moet Tesoro goedkeuren in Microsoft 365 admin center</li><li>Na goedkeuring kun je verbinding maken</li></ul><p><strong>Voor IT Admins:</strong></p><ol><li>Ga naar Microsoft 365 admin center</li><li>Navigeer naar <strong>Settings > Integrated apps</strong></li><li>Zoek naar \"Tesoro CRM\" en approve</li><li>Of voeg Tesoro toe via App ID: <code>[contact support]</code></li></ol>"
+        },
+        "en": {
+          "text": "<h3>Step 1: Start Outlook Connection</h3><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings > Integrations > Email Accounts</strong></li><li>Click <strong>+ Connect Outlook</strong> button</li><li>You'll be redirected to Microsoft login screen</li></ol><h3>Step 2: Select Microsoft Account</h3><ol><li>Enter your Outlook/Microsoft email address</li><li>Click <strong>Next</strong></li><li>Enter your Microsoft password</li><li>Enter 2FA code if you have this enabled</li></ol><h3>Step 3: Grant Permission</h3><p>Microsoft asks permission for:</p><ul><li><strong>Read your email:</strong> Read incoming emails</li><li><strong>Send mail as you:</strong> Send emails</li><li><strong>Maintain access to data:</strong> Continuous synchronization</li></ul><p>Click <strong>\"Accept\"</strong> to continue.</p><h3>Step 4: Verify Connection</h3><ol><li>You'll be redirected back to Tesoro</li><li>Tesoro tests the connection automatically</li><li>Green checkmark = connection successful</li><li>Your Outlook is now integrated</li></ol><h3>Microsoft 365 Enterprise</h3><p>For business accounts:</p><ul><li>You may need to request IT admin permission</li><li>Admin must approve Tesoro in Microsoft 365 admin center</li><li>After approval you can connect</li></ul><p><strong>For IT Admins:</strong></p><ol><li>Go to Microsoft 365 admin center</li><li>Navigate to <strong>Settings > Integrated apps</strong></li><li>Search for \"Tesoro CRM\" and approve</li><li>Or add Tesoro via App ID: <code>[contact support]</code></li></ol>"
+        },
+        "es": {
+          "text": "<h3>Paso 1: Iniciar conexión de Outlook</h3><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings > Integrations > Email Accounts</strong></li><li>Haz clic en el botón <strong>+ Connect Outlook</strong></li><li>Serás redirigido a la pantalla de inicio de sesión de Microsoft</li></ol><h3>Paso 2: Seleccionar cuenta de Microsoft</h3><ol><li>Ingresa tu dirección de email de Outlook/Microsoft</li><li>Haz clic en <strong>Next</strong></li><li>Ingresa tu contraseña de Microsoft</li><li>Ingresa el código 2FA si lo tienes habilitado</li></ol><h3>Paso 3: Otorgar permiso</h3><p>Microsoft solicita permiso para:</p><ul><li><strong>Read your email:</strong> Leer emails entrantes</li><li><strong>Send mail as you:</strong> Enviar emails</li><li><strong>Maintain access to data:</strong> Sincronización continua</li></ul><p>Haz clic en <strong>\"Accept\"</strong> para continuar.</p><h3>Paso 4: Verificar conexión</h3><ol><li>Serás redirigido de vuelta a Tesoro</li><li>Tesoro prueba la conexión automáticamente</li><li>Marca verde = conexión exitosa</li><li>Tu Outlook ahora está integrado</li></ol><h3>Microsoft 365 Enterprise</h3><p>Para cuentas empresariales:</p><ul><li>Puede que necesites solicitar permiso del admin de TI</li><li>El admin debe aprobar Tesoro en el centro de administración de Microsoft 365</li><li>Después de la aprobación puedes conectar</li></ul><p><strong>Para Admins de TI:</strong></p><ol><li>Ve al centro de administración de Microsoft 365</li><li>Navega a <strong>Settings > Integrated apps</strong></li><li>Busca \"Tesoro CRM\" y aprueba</li><li>O agrega Tesoro vía App ID: <code>[contactar soporte]</code></li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "troubleshooting-oauth",
+      "variant": "warning",
+      "title": {
+        "nl": "Veelvoorkomende Problemen Oplossen",
+        "en": "Troubleshooting Common Issues",
+        "es": "Solución de problemas comunes"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>\"Access Denied\" Error</h3><ul><li><strong>Oplossing:</strong> Zorg dat je klikt op \"Allow\" bij toestemmingsscherm</li><li>Check of je admin toestemming nodig hebt (enterprise accounts)</li></ul><h3>\"Connection Failed\" Error</h3><ul><li><strong>Oplossing:</strong> Verwijder verbinding en probeer opnieuw</li><li>Controleer of 2FA correct is ingevoerd</li><li>Check firewall instellingen</li></ul><h3>Emails Niet Synchroniseren</h3><ul><li><strong>Oplossing:</strong> Ga naar Settings > Email Accounts</li><li>Klik <strong>Re-sync Now</strong> knop</li><li>Check sync frequency instellingen</li></ul><h3>\"Quota Exceeded\" Waarschuwing</h3><ul><li><strong>Gmail:</strong> Max 500 emails per dag via API</li><li><strong>Outlook:</strong> Max 10,000 requests per dag</li><li><strong>Oplossing:</strong> Spreek bulk emails over meerdere dagen</li></ul>"
+        },
+        "en": {
+          "text": "<h3>\"Access Denied\" Error</h3><ul><li><strong>Solution:</strong> Make sure you click \"Allow\" on permission screen</li><li>Check if you need admin permission (enterprise accounts)</li></ul><h3>\"Connection Failed\" Error</h3><ul><li><strong>Solution:</strong> Remove connection and try again</li><li>Verify 2FA was entered correctly</li><li>Check firewall settings</li></ul><h3>Emails Not Syncing</h3><ul><li><strong>Solution:</strong> Go to Settings > Email Accounts</li><li>Click <strong>Re-sync Now</strong> button</li><li>Check sync frequency settings</li></ul><h3>\"Quota Exceeded\" Warning</h3><ul><li><strong>Gmail:</strong> Max 500 emails per day via API</li><li><strong>Outlook:</strong> Max 10,000 requests per day</li><li><strong>Solution:</strong> Spread bulk emails over multiple days</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Error \"Access Denied\"</h3><ul><li><strong>Solución:</strong> Asegúrate de hacer clic en \"Allow\" en la pantalla de permisos</li><li>Verifica si necesitas permiso del admin (cuentas empresariales)</li></ul><h3>Error \"Connection Failed\"</h3><ul><li><strong>Solución:</strong> Elimina la conexión e intenta de nuevo</li><li>Verifica que el 2FA se ingresó correctamente</li><li>Verifica configuraciones de firewall</li></ul><h3>Emails no se sincronizan</h3><ul><li><strong>Solución:</strong> Ve a Settings > Email Accounts</li><li>Haz clic en el botón <strong>Re-sync Now</strong></li><li>Verifica configuraciones de frecuencia de sincronización</li></ul><h3>Advertencia \"Quota Exceeded\"</h3><ul><li><strong>Gmail:</strong> Máx. 500 emails por día vía API</li><li><strong>Outlook:</strong> Máx. 10,000 solicitudes por día</li><li><strong>Solución:</strong> Distribuye emails masivos en varios días</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "managing-email-connections",
+      "title": {
+        "nl": "Email verbindingen beheren",
+        "en": "Managing email connections",
+        "es": "Gestionar conexiones de email"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Verbinding Status Controleren</h3><ol><li>Ga naar <strong>Settings > Integrations > Email Accounts</strong></li><li>Zie lijst van verbonden accounts</li><li>Status indicatoren:  <ul><li><strong>Groen:</strong> Actief en synchroniserend</li><li><strong>Geel:</strong> Waarschuwing (rate limit bijna bereikt)</li><li><strong>Rood:</strong> Verbinding verbroken (herautorisatie nodig)</li></ul></li></ol><h3>Verbinding Vernieuwen</h3><p>Als OAuth token verloopt:</p><ol><li>Klik op <strong>Re-authorize</strong> knop bij account</li><li>Log opnieuw in bij Google/Microsoft</li><li>Bevestig toestemming</li><li>Verbinding is hersteld</li></ol><h3>Verbinding Verwijderen</h3><p>Om email integratie te verwijderen:</p><ol><li>Klik op <strong>...</strong> menu bij account</li><li>Selecteer <strong>Disconnect</strong></li><li>Bevestig met <strong>\"Yes, disconnect\"</strong></li><li>Account is ontkoppeld</li></ol><p><strong>Let op:</strong> Oude email geschiedenis blijft in CRM, maar nieuwe emails worden niet meer gesynchroniseerd.</p><h3>Meerdere Email Accounts</h3><p>Je kunt meerdere email accounts verbinden:</p><ul><li>Gmail + Outlook tegelijk mogelijk</li><li>Meerdere Gmail accounts (bijv. persoonlijk + werk)</li><li>Kies per email welk account te gebruiken</li><li>Standaard account instellen in Settings</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Check Connection Status</h3><ol><li>Go to <strong>Settings > Integrations > Email Accounts</strong></li><li>See list of connected accounts</li><li>Status indicators:  <ul><li><strong>Green:</strong> Active and syncing</li><li><strong>Yellow:</strong> Warning (rate limit almost reached)</li><li><strong>Red:</strong> Connection broken (reauthorization needed)</li></ul></li></ol><h3>Refresh Connection</h3><p>If OAuth token expires:</p><ol><li>Click <strong>Re-authorize</strong> button next to account</li><li>Log in again to Google/Microsoft</li><li>Confirm permission</li><li>Connection is restored</li></ol><h3>Remove Connection</h3><p>To remove email integration:</p><ol><li>Click <strong>...</strong> menu next to account</li><li>Select <strong>Disconnect</strong></li><li>Confirm with <strong>\"Yes, disconnect\"</strong></li><li>Account is disconnected</li></ol><p><strong>Note:</strong> Old email history remains in CRM, but new emails will no longer sync.</p><h3>Multiple Email Accounts</h3><p>You can connect multiple email accounts:</p><ul><li>Gmail + Outlook simultaneously possible</li><li>Multiple Gmail accounts (e.g., personal + work)</li><li>Choose which account to use per email</li><li>Set default account in Settings</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Verificar estado de conexión</h3><ol><li>Ve a <strong>Settings > Integrations > Email Accounts</strong></li><li>Ver lista de cuentas conectadas</li><li>Indicadores de estado:  <ul><li><strong>Verde:</strong> Activo y sincronizando</li><li><strong>Amarillo:</strong> Advertencia (límite de tasa casi alcanzado)</li><li><strong>Rojo:</strong> Conexión rota (reautorización necesaria)</li></ul></li></ol><h3>Actualizar conexión</h3><p>Si el token OAuth expira:</p><ol><li>Haz clic en el botón <strong>Re-authorize</strong> junto a la cuenta</li><li>Inicia sesión nuevamente en Google/Microsoft</li><li>Confirma el permiso</li><li>La conexión está restaurada</li></ol><h3>Eliminar conexión</h3><p>Para eliminar la integración de email:</p><ol><li>Haz clic en el menú <strong>...</strong> junto a la cuenta</li><li>Selecciona <strong>Disconnect</strong></li><li>Confirma con <strong>\"Yes, disconnect\"</strong></li><li>La cuenta está desconectada</li></ol><p><strong>Nota:</strong> El historial de email antiguo permanece en el CRM, pero los nuevos emails ya no se sincronizarán.</p><h3>Múltiples cuentas de email</h3><p>Puedes conectar múltiples cuentas de email:</p><ul><li>Gmail + Outlook simultáneamente posible</li><li>Múltiples cuentas de Gmail (ej., personal + trabajo)</li><li>Elegir qué cuenta usar por email</li><li>Configurar cuenta predeterminada en Settings</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "communication-center-overview",
+    "email-templates-guide",
+    "email-tracking-analytics",
+    "automated-follow-ups"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Is OAuth veiliger dan SMTP/IMAP?",
+        "en": "Is OAuth more secure than SMTP/IMAP?",
+        "es": "¿Es OAuth más seguro que SMTP/IMAP?"
+      },
+      "answer": {
+        "nl": "Ja, OAuth is aanzienlijk veiliger omdat je wachtwoord nooit wordt gedeeld. Als je account wordt gecompromitteerd, kun je de OAuth toegang intrekken zonder je wachtwoord te wijzigen.",
+        "en": "Yes, OAuth is significantly more secure because your password is never shared. If your account is compromised, you can revoke OAuth access without changing your password.",
+        "es": "Sí, OAuth es significativamente más seguro porque tu contraseña nunca se comparte. Si tu cuenta se ve comprometida, puedes revocar el acceso OAuth sin cambiar tu contraseña."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik mijn email wachtwoord wijzig?",
+        "en": "What happens if I change my email password?",
+        "es": "¿Qué sucede si cambio mi contraseña de email?"
+      },
+      "answer": {
+        "nl": "Met OAuth blijft de verbinding gewoon werken. OAuth tokens zijn onafhankelijk van je wachtwoord. Bij SMTP/IMAP moet je wel je wachtwoord bijwerken in Tesoro.",
+        "en": "With OAuth, the connection continues to work. OAuth tokens are independent of your password. With SMTP/IMAP you do need to update your password in Tesoro.",
+        "es": "Con OAuth, la conexión continúa funcionando. Los tokens OAuth son independientes de tu contraseña. Con SMTP/IMAP sí necesitas actualizar tu contraseña en Tesoro."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik de OAuth verbinding intrekken?",
+        "en": "Can I revoke the OAuth connection?",
+        "es": "¿Puedo revocar la conexión OAuth?"
+      },
+      "answer": {
+        "nl": "Ja, op twee manieren: (1) Via Tesoro Settings > Email Accounts > Disconnect, of (2) Via je Google/Microsoft account security settings waar je third-party app toegang kunt intrekken.",
+        "en": "Yes, in two ways: (1) Via Tesoro Settings > Email Accounts > Disconnect, or (2) Via your Google/Microsoft account security settings where you can revoke third-party app access.",
+        "es": "Sí, de dos maneras: (1) Vía Tesoro Settings > Email Accounts > Disconnect, o (2) Vía la configuración de seguridad de tu cuenta de Google/Microsoft donde puedes revocar el acceso de aplicaciones de terceros."
+      }
+    }
+  ]
+}

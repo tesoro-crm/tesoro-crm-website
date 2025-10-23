@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "id": "deal-forecasting",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T12:30:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop",
+    "keywords": ["revenue forecasting", "sales forecasting", "pipeline value", "deal forecasting", "sales prediction"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Revenue forecasting en pipeline value",
+      "en": "Revenue Forecasting and Pipeline Value",
+      "es": "Pronóstico de ingresos y valor del pipeline"
+    },
+    "description": {
+      "nl": "Leer hoe je accurate revenue forecasts maakt, pipeline value berekent, en data gebruikt voor better business planning.",
+      "en": "Learn how to create accurate revenue forecasts, calculate pipeline value, and use data for better business planning.",
+      "es": "Aprende cómo crear pronósticos precisos de ingresos, calcular valor del pipeline y usar datos para mejor planificación empresarial."
+    },
+    "icon": "trending_up"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Accurate revenue forecasting is essentieel voor business planning, resource allocation, en financial management. Tesoro CRM provides tools voor data-driven forecasting based op pipeline value, stage confidence, en historical conversion data.</p>"
+        },
+        "en": {
+          "text": "<p>Accurate revenue forecasting is essential for business planning, resource allocation, and financial management. Tesoro CRM provides tools for data-driven forecasting based on pipeline value, stage confidence, and historical conversion data.</p>"
+        },
+        "es": {
+          "text": "<p>El pronóstico preciso de ingresos es esencial para planificación empresarial, asignación de recursos y gestión financiera. Tesoro CRM proporciona herramientas para pronósticos basados en datos según valor del pipeline, confianza de etapa y datos históricos de conversión.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "forecasting-methods",
+      "title": {
+        "nl": "Forecasting methodologieën",
+        "en": "Forecasting Methodologies",
+        "es": "Metodologías de pronóstico"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum van alle active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (not all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based op actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
+        },
+        "en": {
+          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum of all active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (not all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based on actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
+        },
+        "es": {
+          "text": "<p><strong>1. Valor simple del pipeline:</strong></p><p>Suma total de todos los valores de deals activos:</p><code>Pipeline Total = Suma de todos los valores de deals</code><p>Pro: Simple, fácil de entender<br>Con: Sobreestima ingresos (no todos los deals cierran)</p><p><strong>2. Valor ponderado del pipeline:</strong></p><p>Multiplicar valor del deal × porcentaje de confianza de etapa:</p><code>Valor Ponderado = Valor del Deal × % de Confianza de Etapa</code><p>Ejemplo de confianza de etapa:</p><ul><li>Lead: 10%</li><li>Calificación: 20%</li><li>Visita: 40%</li><li>Negociación: 70%</li><li>Cierre: 90%</li></ul><p>Pro: Pronóstico más realista<br>Con: Requiere datos precisos de confianza de etapa</p><p><strong>3. Pronóstico de conversión histórica:</strong></p><p>Basado en tasas de ganancia reales por etapa:</p><code>Pronóstico = Valor del Pipeline × Tasa Histórica de Ganancia</code><p>Pro: Basado en datos, mejora con el tiempo<br>Con: Requiere datos históricos</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "using-forecasting",
+      "title": {
+        "nl": "Forecasting tools gebruiken",
+        "en": "Using Forecasting Tools",
+        "es": "Usando herramientas de pronóstico"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Access forecast dashboard",
+            "en": "1. Access Forecast Dashboard",
+            "es": "1. Acceder al panel de pronóstico"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Navigate to <strong>Dashboard > Revenue Forecast</strong>:</p><ul><li>View current pipeline value</li><li>See weighted forecast</li><li>Review forecast by period (month, quarter)</li><li>Compare to actual won revenue</li></ul>"
+            },
+            "en": {
+              "text": "<p>Navigate to <strong>Dashboard > Revenue Forecast</strong>:</p><ul><li>View current pipeline value</li><li>See weighted forecast</li><li>Review forecast by period (month, quarter)</li><li>Compare to actual won revenue</li></ul>"
+            },
+            "es": {
+              "text": "<p>Navega a <strong>Dashboard > Pronóstico de Ingresos</strong>:</p><ul><li>Ver valor actual del pipeline</li><li>Ver pronóstico ponderado</li><li>Revisar pronóstico por período (mes, trimestre)</li><li>Comparar con ingresos ganados reales</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Configure forecast parameters",
+            "en": "2. Configure Forecast Parameters",
+            "es": "2. Configurar parámetros de pronóstico"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Customize forecast settings:</p><ul><li>Set stage confidence percentages</li><li>Define forecasting period</li><li>Choose methodology (simple, weighted, historical)</li><li>Filter by agent, team, deal type</li></ul>"
+            },
+            "en": {
+              "text": "<p>Customize forecast settings:</p><ul><li>Set stage confidence percentages</li><li>Define forecasting period</li><li>Choose methodology (simple, weighted, historical)</li><li>Filter by agent, team, deal type</li></ul>"
+            },
+            "es": {
+              "text": "<p>Personaliza configuración de pronóstico:</p><ul><li>Establecer porcentajes de confianza de etapa</li><li>Definir período de pronóstico</li><li>Elegir metodología (simple, ponderada, histórica)</li><li>Filtrar por agente, equipo, tipo de deal</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Monitor forecast accuracy",
+            "en": "3. Monitor Forecast Accuracy",
+            "es": "3. Monitorear precisión del pronóstico"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate forecast accuracy percentage</li><li>Adjust confidence percentages based op accuracy</li><li>Refine methodology over time</li></ul>"
+            },
+            "en": {
+              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate forecast accuracy percentage</li><li>Adjust confidence percentages based on accuracy</li><li>Refine methodology over time</li></ul>"
+            },
+            "es": {
+              "text": "<p>Rastrea pronóstico vs real:</p><ul><li>Compara ingresos pronosticados con ganados reales</li><li>Calcula porcentaje de precisión del pronóstico</li><li>Ajusta porcentajes de confianza basado en precisión</li><li>Refina metodología con el tiempo</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "practical-example",
+      "title": {
+        "nl": "Praktisch forecasting voorbeeld",
+        "en": "Practical Forecasting Example",
+        "es": "Ejemplo práctico de pronóstico"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Current pipeline:</strong></p><ul><li>5 deals in Lead stage: 5 × €200K × 10% = €100K</li><li>3 deals in Qualification: 3 × €250K × 20% = €150K</li><li>4 deals in Viewing: 4 × €300K × 40% = €480K</li><li>2 deals in Negotiation: 2 × €350K × 70% = €490K</li><li>1 deal in Closing: 1 × €400K × 90% = €360K</li></ul><p><strong>Weighted forecast = €1,580K</strong></p><p>Met historical win rate van 25%:<br><strong>Historical forecast = (€2.5M total pipeline) × 25% = €625K</strong></p><p>Recommendation: Use average van both methods voor balanced forecast: <strong>~€1.1M</strong></p>"
+        },
+        "en": {
+          "text": "<p><strong>Current pipeline:</strong></p><ul><li>5 deals in Lead stage: 5 × €200K × 10% = €100K</li><li>3 deals in Qualification: 3 × €250K × 20% = €150K</li><li>4 deals in Viewing: 4 × €300K × 40% = €480K</li><li>2 deals in Negotiation: 2 × €350K × 70% = €490K</li><li>1 deal in Closing: 1 × €400K × 90% = €360K</li></ul><p><strong>Weighted forecast = €1,580K</strong></p><p>With historical win rate of 25%:<br><strong>Historical forecast = (€2.5M total pipeline) × 25% = €625K</strong></p><p>Recommendation: Use average of both methods for balanced forecast: <strong>~€1.1M</strong></p>"
+        },
+        "es": {
+          "text": "<p><strong>Pipeline actual:</strong></p><ul><li>5 deals en etapa Lead: 5 × €200K × 10% = €100K</li><li>3 deals en Calificación: 3 × €250K × 20% = €150K</li><li>4 deals en Visita: 4 × €300K × 40% = €480K</li><li>2 deals en Negociación: 2 × €350K × 70% = €490K</li><li>1 deal en Cierre: 1 × €400K × 90% = €360K</li></ul><p><strong>Pronóstico ponderado = €1,580K</strong></p><p>Con tasa histórica de ganancia del 25%:<br><strong>Pronóstico histórico = (€2.5M pipeline total) × 25% = €625K</strong></p><p>Recomendación: Usa promedio de ambos métodos para pronóstico equilibrado: <strong>~€1.1M</strong></p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Forecasting best practices",
+        "en": "Forecasting Best Practices",
+        "es": "Mejores prácticas de pronóstico"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Update regularly:</strong> Refresh forecasts weekly</li><li><strong>Be conservative:</strong> Better to under-promise, over-deliver</li><li><strong>Use multiple methods:</strong> Combine weighted en historical</li><li><strong>Track accuracy:</strong> Monitor forecast vs actual monthly</li><li><strong>Adjust confidence:</strong> Refine stage percentages based op data</li><li><strong>Document assumptions:</strong> Note factors affecting forecast</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Update regularly:</strong> Refresh forecasts weekly</li><li><strong>Be conservative:</strong> Better to under-promise, over-deliver</li><li><strong>Use multiple methods:</strong> Combine weighted and historical</li><li><strong>Track accuracy:</strong> Monitor forecast vs actual monthly</li><li><strong>Adjust confidence:</strong> Refine stage percentages based on data</li><li><strong>Document assumptions:</strong> Note factors affecting forecast</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza pronósticos semanalmente</li><li><strong>Ser conservador:</strong> Mejor prometer menos, entregar más</li><li><strong>Usar múltiples métodos:</strong> Combina ponderado e histórico</li><li><strong>Rastrear precisión:</strong> Monitorea pronóstico vs real mensualmente</li><li><strong>Ajustar confianza:</strong> Refina porcentajes de etapa basado en datos</li><li><strong>Documentar suposiciones:</strong> Nota factores que afectan pronóstico</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-reporting-metrics",
+    "deal-value-commission-tracking",
+    "deal-pipeline-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe accurate zijn revenue forecasts?",
+        "en": "How accurate are revenue forecasts?",
+        "es": "¿Qué tan precisos son los pronósticos de ingresos?"
+      },
+      "answer": {
+        "nl": "Met accurate data en refined stage confidence, forecasts kunnen 80-90% accurate zijn binnen quarterly timeframes. Accuracy improves over time als je historical data verzamelt en confidence percentages adjusted.",
+        "en": "With accurate data and refined stage confidence, forecasts can be 80-90% accurate within quarterly timeframes. Accuracy improves over time as you collect historical data and adjust confidence percentages.",
+        "es": "Con datos precisos y confianza de etapa refinada, los pronósticos pueden ser 80-90% precisos dentro de marcos de tiempo trimestrales. La precisión mejora con el tiempo a medida que recopilas datos históricos y ajustas porcentajes de confianza."
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "id": "navigation-basics",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["navigation", "getting-started", "basics", "sidebar", "search"],
+    "featured": true,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro navigation", "crm navigation", "sidebar menu", "quick actions", "search"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Navigatie basics: vind snel wat je zoekt",
+      "en": "Navigation Basics: Find What You Need Fast",
+      "es": "Conceptos básicos de navegación: encuentra lo que necesitas rápido"
+    },
+    "description": {
+      "nl": "Leer hoe je efficiënt door Tesoro navigeert met de sidebar, zoekfunctie en snelkoppelingen.",
+      "en": "Learn how to navigate Tesoro efficiently using the sidebar, search function and shortcuts.",
+      "es": "Aprende a navegar por Tesoro de manera eficiente usando la barra lateral, función de búsqueda y atajos."
+    },
+    "icon": "menu"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Efficiënte navigatie is cruciaal voor productiviteit. Tesoro is ontworpen om je snel naar de juiste plek te brengen met minimale klikken. Deze gids laat je zien hoe je het systeem optimaal gebruikt.</p>"
+        },
+        "en": {
+          "text": "<p>Efficient navigation is crucial for productivity. Tesoro is designed to get you to the right place quickly with minimal clicks. This guide shows you how to use the system optimally.</p>"
+        },
+        "es": {
+          "text": "<p>La navegación eficiente es crucial para la productividad. Tesoro está diseñado para llevarte al lugar correcto rápidamente con clics mínimos. Esta guía te muestra cómo usar el sistema de manera óptima.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "sidebar-navigation",
+      "title": {
+        "nl": "Sidebar navigatie",
+        "en": "Sidebar Navigation",
+        "es": "Navegación de barra lateral"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De sidebar aan de linkerkant is je hoofdnavigatie. Hier vind je alle modules:</p><h4>Hoofdmodules</h4><ul><li><strong>Dashboard</strong> - Je overzicht en controlecentrum</li><li><strong>Leads</strong> - Nieuwe prospects en opportunities</li><li><strong>Deals</strong> - Actieve sales pipeline met Kanban board</li><li><strong>Contacts</strong> - Alle personen in je netwerk</li><li><strong>Relations</strong> - Bedrijven en organisaties</li><li><strong>Properties</strong> - Je volledige property inventory</li><li><strong>Projects</strong> - Ontwikkelprojecten en nieuwbouw</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Agenda en planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuratie en instellingen (onderaan sidebar)</li><li><strong>Help</strong> - Kennisbank en support (? icoon)</li><li><strong>Notifications</strong> - Bell icoon rechtsboven</li><li><strong>User Menu</strong> - Profile foto rechtsboven</li></ul><h4>Sidebar Tips</h4><ul><li>Klik op het <strong>hamburger menu</strong> om de sidebar in/uit te klappen (meer schermruimte)</li><li>Hover over icons om labels te zien als sidebar is ingeklapt</li><li>Actieve pagina is <strong>gemarkeerd</strong> met blauwe accentkleur</li><li>Badge cijfers tonen aantal ongelezen items (bijv. nieuwe leads)</li></ul>"
+        },
+        "en": {
+          "text": "<p>The sidebar on the left is your main navigation. Here you'll find all modules:</p><h4>Main Modules</h4><ul><li><strong>Dashboard</strong> - Your overview and control center</li><li><strong>Leads</strong> - New prospects and opportunities</li><li><strong>Deals</strong> - Active sales pipeline with Kanban board</li><li><strong>Contacts</strong> - All people in your network</li><li><strong>Relations</strong> - Companies and organizations</li><li><strong>Properties</strong> - Your complete property inventory</li><li><strong>Projects</strong> - Development projects and new construction</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Schedule and planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuration and settings (bottom of sidebar)</li><li><strong>Help</strong> - Knowledge base and support (? icon)</li><li><strong>Notifications</strong> - Bell icon top right</li><li><strong>User Menu</strong> - Profile photo top right</li></ul><h4>Sidebar Tips</h4><ul><li>Click the <strong>hamburger menu</strong> to collapse/expand sidebar (more screen space)</li><li>Hover over icons to see labels when sidebar is collapsed</li><li>Active page is <strong>highlighted</strong> with blue accent color</li><li>Badge numbers show unread items count (e.g. new leads)</li></ul>"
+        },
+        "es": {
+          "text": "<p>La barra lateral a la izquierda es tu navegación principal. Aquí encontrarás todos los módulos:</p><h4>Módulos principales</h4><ul><li><strong>Dashboard</strong> - Tu vista general y centro de control</li><li><strong>Leads</strong> - Nuevos prospectos y oportunidades</li><li><strong>Deals</strong> - Pipeline de ventas activo con tablero Kanban</li><li><strong>Contacts</strong> - Todas las personas en tu red</li><li><strong>Relations</strong> - Empresas y organizaciones</li><li><strong>Properties</strong> - Tu inventario completo de propiedades</li><li><strong>Projects</strong> - Proyectos de desarrollo y construcción nueva</li><li><strong>Activities</strong> - Tareas, llamadas, reuniones, seguimientos</li><li><strong>Calendar</strong> - Agenda y planificación</li></ul><h4>Configuración y herramientas</h4><ul><li><strong>Settings</strong> - Configuración y ajustes (parte inferior de la barra lateral)</li><li><strong>Help</strong> - Base de conocimientos y soporte (ícono ?)</li><li><strong>Notifications</strong> - Ícono de campana arriba a la derecha</li><li><strong>User Menu</strong> - Foto de perfil arriba a la derecha</li></ul><h4>Consejos para barra lateral</h4><ul><li>Haz clic en el <strong>menú hamburguesa</strong> para colapsar/expandir la barra lateral (más espacio en pantalla)</li><li>Pasa el cursor sobre los íconos para ver las etiquetas cuando la barra lateral está colapsada</li><li>La página activa está <strong>resaltada</strong> con color de acento azul</li><li>Los números de insignia muestran el recuento de elementos no leídos (ej. nuevos leads)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "global-search",
+      "title": {
+        "nl": "Global search: vind alles in seconden",
+        "en": "Global Search: Find Everything in Seconds",
+        "es": "Búsqueda global: encuentra todo en segundos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De global search is je krachtigste navigatie tool. Druk <strong>Cmd+K</strong> (Mac) of <strong>Ctrl+K</strong> (Windows) vanaf elke pagina.</p><h4>Wat kun je zoeken?</h4><ul><li><strong>Contacten</strong> - Naam, email, telefoonnummer</li><li><strong>Properties</strong> - Adres, referentienummer, postcode</li><li><strong>Deals</strong> - Deal naam, contact naam, property adres</li><li><strong>Leads</strong> - Naam, email, telefoonnummer</li><li><strong>Companies</strong> - Bedrijfsnaam</li></ul><h4>Search Tips</h4><ul><li><strong>Partial matches werken</strong> - Type 'John Sm' vindt 'John Smith'</li><li><strong>Search by type</strong> - Type '@' voor email, '#' voor referentienummers</li><li><strong>Recent searches</strong> - Je laatste zoekopdrachten worden bewaard</li><li><strong>Keyboard navigation</strong> - Gebruik pijltjestoetsen om door resultaten te bladeren</li><li><strong>Quick preview</strong> - Hover over resultaat voor preview zonder te openen</li></ul><h4>Advanced Search</h4><p>Klik op 'Advanced' in de search bar voor filters:</p><ul><li>Filter op <strong>module</strong> (alleen contacts, alleen properties, etc.)</li><li>Filter op <strong>datum</strong> (created last week, updated today, etc.)</li><li>Filter op <strong>status</strong> (active deals, sold properties, etc.)</li><li>Filter op <strong>assigned to</strong> (mijn items, team items, etc.)</li></ul>"
+        },
+        "en": {
+          "text": "<p>Global search is your most powerful navigation tool. Press <strong>Cmd+K</strong> (Mac) or <strong>Ctrl+K</strong> (Windows) from any page.</p><h4>What Can You Search?</h4><ul><li><strong>Contacts</strong> - Name, email, phone number</li><li><strong>Properties</strong> - Address, reference number, postal code</li><li><strong>Deals</strong> - Deal name, contact name, property address</li><li><strong>Leads</strong> - Name, email, phone number</li><li><strong>Companies</strong> - Company name</li></ul><h4>Search Tips</h4><ul><li><strong>Partial matches work</strong> - Type 'John Sm' finds 'John Smith'</li><li><strong>Search by type</strong> - Type '@' for email, '#' for reference numbers</li><li><strong>Recent searches</strong> - Your last searches are saved</li><li><strong>Keyboard navigation</strong> - Use arrow keys to browse results</li><li><strong>Quick preview</strong> - Hover over result for preview without opening</li></ul><h4>Advanced Search</h4><p>Click 'Advanced' in the search bar for filters:</p><ul><li>Filter by <strong>module</strong> (contacts only, properties only, etc.)</li><li>Filter by <strong>date</strong> (created last week, updated today, etc.)</li><li>Filter by <strong>status</strong> (active deals, sold properties, etc.)</li><li>Filter by <strong>assigned to</strong> (my items, team items, etc.)</li></ul>"
+        },
+        "es": {
+          "text": "<p>La búsqueda global es tu herramienta de navegación más poderosa. Presiona <strong>Cmd+K</strong> (Mac) o <strong>Ctrl+K</strong> (Windows) desde cualquier página.</p><h4>¿Qué puedes buscar?</h4><ul><li><strong>Contactos</strong> - Nombre, email, número de teléfono</li><li><strong>Propiedades</strong> - Dirección, número de referencia, código postal</li><li><strong>Deals</strong> - Nombre del deal, nombre del contacto, dirección de propiedad</li><li><strong>Leads</strong> - Nombre, email, número de teléfono</li><li><strong>Empresas</strong> - Nombre de empresa</li></ul><h4>Consejos de búsqueda</h4><ul><li><strong>Las coincidencias parciales funcionan</strong> - Escribe 'John Sm' encuentra 'John Smith'</li><li><strong>Buscar por tipo</strong> - Escribe '@' para email, '#' para números de referencia</li><li><strong>Búsquedas recientes</strong> - Tus últimas búsquedas se guardan</li><li><strong>Navegación por teclado</strong> - Usa las teclas de flecha para explorar resultados</li><li><strong>Vista previa rápida</strong> - Pasa el cursor sobre el resultado para vista previa sin abrir</li></ul><h4>Búsqueda avanzada</h4><p>Haz clic en 'Advanced' en la barra de búsqueda para filtros:</p><ul><li>Filtrar por <strong>módulo</strong> (solo contactos, solo propiedades, etc.)</li><li>Filtrar por <strong>fecha</strong> (creado la semana pasada, actualizado hoy, etc.)</li><li>Filtrar por <strong>estado</strong> (deals activos, propiedades vendidas, etc.)</li><li>Filtrar por <strong>asignado a</strong> (mis elementos, elementos del equipo, etc.)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "pro-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Pro tip: Gebruik keyboard shortcuts",
+        "en": "Pro Tip: Use Keyboard Shortcuts",
+        "es": "Consejo pro: Usa atajos de teclado"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Power users gebruiken vrijwel nooit de muis. Leer deze shortcuts:</p><ul><li><strong>Cmd/Ctrl + K</strong> - Global search</li><li><strong>Cmd/Ctrl + N</strong> - New (contact/property/deal afhankelijk van pagina)</li><li><strong>G + D</strong> - Go to Dashboard</li><li><strong>G + L</strong> - Go to Leads</li><li><strong>G + D</strong> - Go to Deals</li><li><strong>G + C</strong> - Go to Contacts</li><li><strong>G + P</strong> - Go to Properties</li><li><strong>?</strong> - Toon alle keyboard shortcuts</li></ul><p>Zie het volledige overzicht in ons <strong>Keyboard Shortcuts</strong> artikel.</p>"
+        },
+        "en": {
+          "text": "<p>Power users almost never use the mouse. Learn these shortcuts:</p><ul><li><strong>Cmd/Ctrl + K</strong> - Global search</li><li><strong>Cmd/Ctrl + N</strong> - New (contact/property/deal depending on page)</li><li><strong>G + D</strong> - Go to Dashboard</li><li><strong>G + L</strong> - Go to Leads</li><li><strong>G + D</strong> - Go to Deals</li><li><strong>G + C</strong> - Go to Contacts</li><li><strong>G + P</strong> - Go to Properties</li><li><strong>?</strong> - Show all keyboard shortcuts</li></ul><p>See the complete overview in our <strong>Keyboard Shortcuts</strong> article.</p>"
+        },
+        "es": {
+          "text": "<p>Los usuarios avanzados casi nunca usan el mouse. Aprende estos atajos:</p><ul><li><strong>Cmd/Ctrl + K</strong> - Búsqueda global</li><li><strong>Cmd/Ctrl + N</strong> - Nuevo (contacto/propiedad/deal según la página)</li><li><strong>G + D</strong> - Ir a Dashboard</li><li><strong>G + L</strong> - Ir a Leads</li><li><strong>G + D</strong> - Ir a Deals</li><li><strong>G + C</strong> - Ir a Contacts</li><li><strong>G + P</strong> - Ir a Properties</li><li><strong>?</strong> - Mostrar todos los atajos de teclado</li></ul><p>Ve el resumen completo en nuestro artículo <strong>Keyboard Shortcuts</strong>.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "quick-actions",
+      "title": {
+        "nl": "Quick actions menu",
+        "en": "Quick Actions Menu",
+        "es": "Menú de acciones rápidas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het <strong>+ icoon</strong> rechtsboven geeft toegang tot quick actions:</p><h4>Create New Items</h4><ul><li><strong>New Contact</strong> - Voeg snel een contact toe</li><li><strong>New Lead</strong> - Creëer lead vanuit elk scherm</li><li><strong>New Deal</strong> - Start een nieuwe deal</li><li><strong>New Property</strong> - Voeg property toe</li><li><strong>New Task</strong> - Maak taak aan</li><li><strong>New Meeting</strong> - Plan een afspraak</li></ul><h4>Import Actions</h4><ul><li><strong>Import Contacts</strong> - CSV upload voor bulk contacts</li><li><strong>Import Properties</strong> - Bulk property import</li><li><strong>Sync MLS</strong> - Trigger manual MLS sync</li></ul><p>Het quick actions menu past zich aan op basis van je rechten en de pagina waar je bent.</p>"
+        },
+        "en": {
+          "text": "<p>The <strong>+ icon</strong> in the top right gives access to quick actions:</p><h4>Create New Items</h4><ul><li><strong>New Contact</strong> - Quickly add a contact</li><li><strong>New Lead</strong> - Create lead from any screen</li><li><strong>New Deal</strong> - Start a new deal</li><li><strong>New Property</strong> - Add property</li><li><strong>New Task</strong> - Create task</li><li><strong>New Meeting</strong> - Schedule an appointment</li></ul><h4>Import Actions</h4><ul><li><strong>Import Contacts</strong> - CSV upload for bulk contacts</li><li><strong>Import Properties</strong> - Bulk property import</li><li><strong>Sync MLS</strong> - Trigger manual MLS sync</li></ul><p>The quick actions menu adapts based on your permissions and the page you're on.</p>"
+        },
+        "es": {
+          "text": "<p>El <strong>ícono +</strong> en la parte superior derecha da acceso a acciones rápidas:</p><h4>Crear nuevos elementos</h4><ul><li><strong>New Contact</strong> - Agrega rápidamente un contacto</li><li><strong>New Lead</strong> - Crea lead desde cualquier pantalla</li><li><strong>New Deal</strong> - Inicia un nuevo deal</li><li><strong>New Property</strong> - Agrega propiedad</li><li><strong>New Task</strong> - Crea tarea</li><li><strong>New Meeting</strong> - Programa una cita</li></ul><h4>Acciones de importación</h4><ul><li><strong>Import Contacts</strong> - Carga CSV para contactos masivos</li><li><strong>Import Properties</strong> - Importación masiva de propiedades</li><li><strong>Sync MLS</strong> - Activa sincronización MLS manual</li></ul><p>El menú de acciones rápidas se adapta según tus permisos y la página en la que estés.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "breadcrumbs",
+      "title": {
+        "nl": "Breadcrumbs en page context",
+        "en": "Breadcrumbs and Page Context",
+        "es": "Breadcrumbs y contexto de página"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Bovenaan elke pagina zie je <strong>breadcrumbs</strong> die je pad tonen:</p><p><code>Dashboard / Deals / Jim Hendricks Deal / Properties</code></p><p>Klik op elk element om terug te gaan. Dit is vooral handig bij:</p><ul><li><strong>Deal detail pages</strong> - Spring terug naar Kanban board</li><li><strong>Property detail pages</strong> - Terug naar properties list</li><li><strong>Contact detail pages</strong> - Terug naar contacts</li></ul><h4>Page Title & Actions</h4><p>Direct onder breadcrumbs vind je:</p><ul><li><strong>Page Title</strong> - Waar je nu bent</li><li><strong>Primary Actions</strong> - Belangrijkste acties voor deze pagina (Edit, Delete, etc.)</li><li><strong>View Options</strong> - Switch tussen list/grid/kanban views</li><li><strong>Filters</strong> - Filter de data op deze pagina</li></ul>"
+        },
+        "en": {
+          "text": "<p>At the top of each page you see <strong>breadcrumbs</strong> showing your path:</p><p><code>Dashboard / Deals / Jim Hendricks Deal / Properties</code></p><p>Click any element to go back. This is especially useful for:</p><ul><li><strong>Deal detail pages</strong> - Jump back to Kanban board</li><li><strong>Property detail pages</strong> - Back to properties list</li><li><strong>Contact detail pages</strong> - Back to contacts</li></ul><h4>Page Title & Actions</h4><p>Directly under breadcrumbs you'll find:</p><ul><li><strong>Page Title</strong> - Where you are now</li><li><strong>Primary Actions</strong> - Main actions for this page (Edit, Delete, etc.)</li><li><strong>View Options</strong> - Switch between list/grid/kanban views</li><li><strong>Filters</strong> - Filter the data on this page</li></ul>"
+        },
+        "es": {
+          "text": "<p>En la parte superior de cada página ves <strong>breadcrumbs</strong> que muestran tu ruta:</p><p><code>Dashboard / Deals / Jim Hendricks Deal / Properties</code></p><p>Haz clic en cualquier elemento para volver. Esto es especialmente útil para:</p><ul><li><strong>Páginas de detalle de deal</strong> - Salta de vuelta al tablero Kanban</li><li><strong>Páginas de detalle de propiedad</strong> - Volver a lista de propiedades</li><li><strong>Páginas de detalle de contacto</strong> - Volver a contactos</li></ul><h4>Título de página y acciones</h4><p>Directamente debajo de breadcrumbs encontrarás:</p><ul><li><strong>Título de página</strong> - Dónde estás ahora</li><li><strong>Acciones principales</strong> - Acciones principales para esta página (Edit, Delete, etc.)</li><li><strong>Opciones de vista</strong> - Cambiar entre vistas de lista/cuadrícula/kanban</li><li><strong>Filtros</strong> - Filtrar los datos en esta página</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "dashboard-overview",
+    "keyboard-shortcuts",
+    "quick-start-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik de sidebar volgorde aanpassen?",
+        "en": "Can I customize the sidebar order?",
+        "es": "¿Puedo personalizar el orden de la barra lateral?"
+      },
+      "answer": {
+        "nl": "Momenteel niet, maar we werken aan een feature waarmee je modules kunt slepen om je eigen volgorde te maken. Laat het ons weten in de feedback welke modules jij het belangrijkst vindt!",
+        "en": "Currently not, but we're working on a feature where you can drag modules to create your own order. Let us know in the feedback which modules you find most important!",
+        "es": "Actualmente no, pero estamos trabajando en una función donde puedes arrastrar módulos para crear tu propio orden. ¡Haznos saber en los comentarios qué módulos encuentras más importantes!"
+      }
+    },
+    {
+      "question": {
+        "nl": "Werkt global search ook met non-Latin karakters?",
+        "en": "Does global search work with non-Latin characters?",
+        "es": "¿La búsqueda global funciona con caracteres no latinos?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro ondersteunt volledig Unicode search. Je kunt zoeken in Spaans (ñ, á, etc.), Nederlands, en andere talen zonder problemen.",
+        "en": "Yes! Tesoro fully supports Unicode search. You can search in Spanish (ñ, á, etc.), Dutch, and other languages without problems.",
+        "es": "¡Sí! Tesoro admite completamente la búsqueda Unicode. Puedes buscar en español (ñ, á, etc.), holandés y otros idiomas sin problemas."
+      }
+    }
+  ]
+}

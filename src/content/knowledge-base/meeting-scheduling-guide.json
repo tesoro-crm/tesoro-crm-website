@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "id": "meeting-scheduling-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["calendar", "meetings", "scheduling", "clients", "collaboration"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
+    "keywords": ["meeting scheduling", "client meetings", "tesoro meetings", "schedule appointments", "real estate meetings"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Vergaderingen plannen met klanten",
+      "en": "Scheduling Meetings With Clients",
+      "es": "Programar reuniones con clientes"
+    },
+    "description": {
+      "nl": "Leer hoe je effectief vergaderingen plant met klanten, locaties instelt, agenda's deelt en je vergaderingen voor- en nabewerkt.",
+      "en": "Learn how to effectively schedule meetings with clients, set locations, share agendas, and prepare for and follow up on your meetings.",
+      "es": "Aprende a programar efectivamente reuniones con clientes, establecer ubicaciones, compartir agendas y prepararte y dar seguimiento a tus reuniones."
+    },
+    "icon": "groups"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Vergaderingen met klanten zijn kritieke momenten in het vastgoedproces - of het nu gaat om een eerste consultatiegesprek, contract bespreking of afsluiting. Tesoro helpt je deze vergaderingen professioneel te beheren met geïntegreerde planning, automatische herinneringen en gestructureerde follow-up tools. Deze gids laat je zien hoe je effectieve vergaderingen plant en beheert die leiden tot betere klantrelaties en meer deals.",
+        "en": "Client meetings are critical moments in the real estate process - whether it's an initial consultation, contract discussion, or closing. Tesoro helps you manage these meetings professionally with integrated scheduling, automatic reminders, and structured follow-up tools. This guide will show you how to schedule and manage effective meetings that lead to better client relationships and more deals.",
+        "es": "Las reuniones con clientes son momentos críticos en el proceso inmobiliario - ya sea una consulta inicial, discusión de contrato o cierre. Tesoro te ayuda a gestionar estas reuniones profesionalmente con programación integrada, recordatorios automáticos y herramientas de seguimiento estructuradas. Esta guía te mostrará cómo programar y gestionar reuniones efectivas que conducen a mejores relaciones con clientes y más negocios."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "creating-meeting",
+      "title": {
+        "nl": "Een vergadering aanmaken",
+        "en": "Creating a Meeting",
+        "es": "Crear una reunión"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Start een nieuwe vergadering",
+            "en": "Start a New Meeting",
+            "es": "Iniciar una nueva reunión"
+          },
+          "description": {
+            "nl": "Klik op een tijdslot in je kalender en selecteer 'Nieuwe vergadering', of ga naar een contactpagina en klik op 'Vergadering plannen'. Je kunt ook vanuit een deal of pand een vergadering aanmaken, waardoor alle relevante informatie automatisch wordt gekoppeld.",
+            "en": "Click a time slot in your calendar and select 'New Meeting', or go to a contact page and click 'Schedule Meeting'. You can also create a meeting from a deal or property, which automatically links all relevant information.",
+            "es": "Haz clic en un intervalo de tiempo en tu calendario y selecciona 'Nueva reunión', o ve a una página de contacto y haz clic en 'Programar reunión'. También puedes crear una reunión desde un negocio o propiedad, lo que vincula automáticamente toda la información relevante."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer vergadertype",
+            "en": "Select Meeting Type",
+            "es": "Seleccionar tipo de reunión"
+          },
+          "description": {
+            "nl": "Kies uit voorgedefinieerde vergadertypes: Eerste consultatiegesprek (60 min), Contract bespreking (45 min), Voortgangsgesprek (30 min), Afsluiting (90 min), of Aangepast. Elk type heeft een standaard duur en agenda sjabloon die je kunt aanpassen.",
+            "en": "Choose from predefined meeting types: Initial Consultation (60 min), Contract Discussion (45 min), Progress Check-in (30 min), Closing (90 min), or Custom. Each type has a default duration and agenda template you can customize.",
+            "es": "Elige entre tipos de reunión predefinidos: Consulta inicial (60 min), Discusión de contrato (45 min), Revisión de progreso (30 min), Cierre (90 min), o Personalizado. Cada tipo tiene una duración predeterminada y una plantilla de agenda que puedes personalizar."
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg deelnemers toe",
+            "en": "Add Attendees",
+            "es": "Agregar asistentes"
+          },
+          "description": {
+            "nl": "Zoek en selecteer de contacten die zullen deelnemen. Je kunt meerdere klanten toevoegen (bijvoorbeeld kopers en verkopers voor een dubbele transactie) en collega's van je team. Markeer optionele vs verplichte deelnemers om verwachtingen duidelijk te maken.",
+            "en": "Search and select the contacts who will attend. You can add multiple clients (for example, buyers and sellers for a dual transaction) and colleagues from your team. Mark optional vs required attendees to set clear expectations.",
+            "es": "Busca y selecciona los contactos que asistirán. Puedes agregar múltiples clientes (por ejemplo, compradores y vendedores para una transacción dual) y colegas de tu equipo. Marca asistentes opcionales vs requeridos para establecer expectativas claras."
+          }
+        },
+        {
+          "title": {
+            "nl": "Stel locatie in",
+            "en": "Set Location",
+            "es": "Establecer ubicación"
+          },
+          "description": {
+            "nl": "Kies je vergaderlocatie: Je kantoor (adres automatisch ingevuld), Klant locatie (voeg adres toe), Video call (Google Meet of Zoom link wordt automatisch gegenereerd), of Telefonisch. Voor video calls maakt Tesoro automatisch een meeting room aan en voegt de link toe aan de uitnodiging.",
+            "en": "Choose your meeting location: Your office (address auto-filled), Client location (add address), Video call (Google Meet or Zoom link is automatically generated), or Phone call. For video calls, Tesoro automatically creates a meeting room and adds the link to the invitation.",
+            "es": "Elige tu ubicación de reunión: Tu oficina (dirección autocompletada), Ubicación del cliente (agregar dirección), Videollamada (se genera automáticamente enlace de Google Meet o Zoom), o Llamada telefónica. Para videollamadas, Tesoro crea automáticamente una sala de reuniones y agrega el enlace a la invitación."
+          }
+        },
+        {
+          "title": {
+            "nl": "Maak een agenda (aanbevolen)",
+            "en": "Create an Agenda (Recommended)",
+            "es": "Crear una agenda (recomendado)"
+          },
+          "description": {
+            "nl": "Voeg agendapunten toe om de vergadering gestructureerd te houden. Voor eerste consultatiegesprekken laadt Tesoro automatisch een sjabloon met: Kennismaking (5 min), Behoeften analyse (15 min), Markt overzicht (20 min), Volgende stappen (10 min). Je kunt items toevoegen, verwijderen of aanpassen. De agenda wordt gedeeld met deelnemers in de uitnodiging.",
+            "en": "Add agenda items to keep the meeting structured. For initial consultations, Tesoro automatically loads a template with: Introduction (5 min), Needs Analysis (15 min), Market Overview (20 min), Next Steps (10 min). You can add, remove, or adjust items. The agenda is shared with attendees in the invitation.",
+            "es": "Agrega elementos de agenda para mantener la reunión estructurada. Para consultas iniciales, Tesoro carga automáticamente una plantilla con: Introducción (5 min), Análisis de necesidades (15 min), Visión general del mercado (20 min), Próximos pasos (10 min). Puedes agregar, eliminar o ajustar elementos. La agenda se comparte con los asistentes en la invitación."
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg documenten toe",
+            "en": "Attach Documents",
+            "es": "Adjuntar documentos"
+          },
+          "description": {
+            "nl": "Upload documenten die je tijdens de vergadering wilt bespreken: contracten, market analyses, pand brochures. Deelnemers kunnen deze documenten downloaden vanuit hun uitnodiging e-mail zodat ze zich kunnen voorbereiden. Documenten worden ook gekoppeld aan het contact- en dealrecord.",
+            "en": "Upload documents you want to discuss during the meeting: contracts, market analyses, property brochures. Attendees can download these documents from their invitation email so they can prepare. Documents are also linked to the contact and deal record.",
+            "es": "Sube documentos que quieras discutir durante la reunión: contratos, análisis de mercado, folletos de propiedades. Los asistentes pueden descargar estos documentos desde su correo electrónico de invitación para poder prepararse. Los documentos también se vinculan al registro de contacto y negocio."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verstuur uitnodigingen",
+            "en": "Send Invitations",
+            "es": "Enviar invitaciones"
+          },
+          "description": {
+            "nl": "Klik op 'Vergadering maken en versturen'. Alle deelnemers ontvangen een professionele uitnodiging met: vergaderdetails en agenda, locatie of video call link, je contactinformatie, knop om toe te voegen aan hun kalender, bijgevoegde documenten. De vergadering verschijnt in ieders kalender en synchroniseert automatisch met Google Agenda.",
+            "en": "Click 'Create Meeting and Send'. All attendees receive a professional invitation with: meeting details and agenda, location or video call link, your contact information, button to add to their calendar, attached documents. The meeting appears in everyone's calendar and automatically syncs to Google Calendar.",
+            "es": "Haz clic en 'Crear reunión y enviar'. Todos los asistentes reciben una invitación profesional con: detalles de la reunión y agenda, ubicación o enlace de videollamada, tu información de contacto, botón para agregar a su calendario, documentos adjuntos. La reunión aparece en el calendario de todos y se sincroniza automáticamente con Google Calendar."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "video-call-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Video call tip",
+        "en": "Video Call Tip",
+        "es": "Consejo de videollamada"
+      },
+      "content": {
+        "nl": "Voor klanten die minder tech-savvy zijn, kies je 'Telefonisch' als back-up locatie naast video call. Voeg beide opties toe aan de vergadernotities: 'We ontmoeten via video call (link in de uitnodiging), maar je kunt ook bellen naar [je nummer] als je problemen hebt met de technologie.' Dit voorkomt gemiste vergaderingen.",
+        "en": "For clients who are less tech-savvy, choose 'Phone call' as a backup location alongside video call. Add both options to the meeting notes: 'We'll meet via video call (link in invitation), but you can also call [your number] if you have technology issues.' This prevents missed meetings.",
+        "es": "Para clientes menos familiarizados con la tecnología, elige 'Llamada telefónica' como ubicación de respaldo junto con videollamada. Agrega ambas opciones a las notas de la reunión: 'Nos reuniremos por videollamada (enlace en la invitación), pero también puedes llamar al [tu número] si tienes problemas con la tecnología.' Esto previene reuniones perdidas."
+      }
+    },
+    {
+      "type": "text",
+      "id": "meeting-preparation",
+      "title": {
+        "nl": "Vergadering voorbereiding",
+        "en": "Meeting Preparation",
+        "es": "Preparación de reunión"
+      },
+      "content": {
+        "nl": "Goede voorbereiding maakt het verschil tussen een productieve vergadering en verspilde tijd. Tesoro helpt je je voorbereiden met geautomatiseerde checklists en snelle toegang tot alle relevante informatie.",
+        "en": "Good preparation makes the difference between a productive meeting and wasted time. Tesoro helps you prepare with automated checklists and quick access to all relevant information.",
+        "es": "Una buena preparación marca la diferencia entre una reunión productiva y tiempo perdido. Tesoro te ayuda a prepararte con listas de verificación automatizadas y acceso rápido a toda la información relevante."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "preparation-steps",
+      "title": {
+        "nl": "Voorbereidingsstappen",
+        "en": "Preparation Steps",
+        "es": "Pasos de preparación"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Bekijk contact geschiedenis",
+            "en": "Review Contact History",
+            "es": "Revisar historial de contacto"
+          },
+          "description": {
+            "nl": "Klik op de vergadering en selecteer 'Contact geschiedenis bekijken' om snel alle eerdere interacties te zien: vorige vergaderingen, bezichtigingen, e-mails, notities. Dit helpt je de conversatie te personaliseren en laat je klant zien dat je hun voorkeuren onthoudt.",
+            "en": "Click the meeting and select 'View Contact History' to quickly see all previous interactions: past meetings, viewings, emails, notes. This helps you personalize the conversation and shows your client you remember their preferences.",
+            "es": "Haz clic en la reunión y selecciona 'Ver historial de contacto' para ver rápidamente todas las interacciones previas: reuniones pasadas, visitas, correos electrónicos, notas. Esto te ayuda a personalizar la conversación y muestra a tu cliente que recuerdas sus preferencias."
+          }
+        },
+        {
+          "title": {
+            "nl": "Controleer voorbereiding checklist",
+            "en": "Check Preparation Checklist",
+            "es": "Verificar lista de preparación"
+          },
+          "description": {
+            "nl": "24 uur voor de vergadering verschijnt een voorbereidingschecklist in je dashboard. Voor contract besprekingen bijvoorbeeld: Contract gecontroleerd op juistheid, Financieringsdetails geverifieerd, Inspectierapporten bekeken, Antwoorden voorbereid op veelgestelde vragen. Vink items af terwijl je je voorbereidt.",
+            "en": "24 hours before the meeting, a preparation checklist appears in your dashboard. For contract discussions for example: Contract reviewed for accuracy, Financing details verified, Inspection reports reviewed, Answers prepared for common questions. Check off items as you prepare.",
+            "es": "24 horas antes de la reunión, aparece una lista de verificación de preparación en tu panel. Para discusiones de contrato por ejemplo: Contrato revisado para precisión, Detalles de financiamiento verificados, Informes de inspección revisados, Respuestas preparadas para preguntas comunes. Marca los elementos mientras te preparas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bereid presentatiematerialen voor",
+            "en": "Prepare Presentation Materials",
+            "es": "Preparar materiales de presentación"
+          },
+          "description": {
+            "nl": "Als je een marktanalyse of pand vergelijking wilt tonen, maak je deze van tevoren. Upload ze naar de vergadering zodat ze beschikbaar zijn op al je apparaten. Voor video calls kun je je scherm delen direct vanuit Tesoro om door documenten te navigeren.",
+            "en": "If you'll be showing a market analysis or property comparison, create these in advance. Upload them to the meeting so they're available on all your devices. For video calls, you can share your screen directly from Tesoro to walk through documents.",
+            "es": "Si vas a mostrar un análisis de mercado o comparación de propiedades, créalos con anticipación. Súbelos a la reunión para que estén disponibles en todos tus dispositivos. Para videollamadas, puedes compartir tu pantalla directamente desde Tesoro para revisar documentos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Stel herinneringen in",
+            "en": "Set Reminders",
+            "es": "Establecer recordatorios"
+          },
+          "description": {
+            "nl": "Tesoro stuurt standaard herinneringen naar klanten 24 uur en 1 uur van tevoren. Voor belangrijke vergaderingen (zoals afsluitingen) kun je extra herinneringen toevoegen of de timing aanpassen. Je kunt ook een reminder instellen om jezelf 15 minuten van tevoren voor te bereiden.",
+            "en": "Tesoro sends default reminders to clients 24 hours and 1 hour in advance. For important meetings (like closings), you can add extra reminders or adjust the timing. You can also set a reminder for yourself to prepare 15 minutes beforehand.",
+            "es": "Tesoro envía recordatorios predeterminados a los clientes 24 horas y 1 hora antes. Para reuniones importantes (como cierres), puedes agregar recordatorios adicionales o ajustar el horario. También puedes establecer un recordatorio para ti mismo para prepararte 15 minutos antes."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "during-meeting",
+      "title": {
+        "nl": "Tijdens de vergadering",
+        "en": "During the Meeting",
+        "es": "Durante la reunión"
+      },
+      "content": {
+        "nl": "Gebruik Tesoro tijdens de vergadering om georganiseerd te blijven en belangrijke informatie vast te leggen zonder de flow te verstoren.",
+        "en": "Use Tesoro during the meeting to stay organized and capture important information without disrupting the flow.",
+        "es": "Usa Tesoro durante la reunión para mantenerte organizado y capturar información importante sin interrumpir el flujo."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "meeting-tools",
+      "title": {
+        "nl": "Vergadering tools",
+        "en": "Meeting Tools",
+        "es": "Herramientas de reunión"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Maak snelle notities",
+            "en": "Take Quick Notes",
+            "es": "Tomar notas rápidas"
+          },
+          "description": {
+            "nl": "Open de vergadering in de mobiele app of op je tablet en gebruik het notities veld om belangrijke punten vast te leggen. Tesoro synchroniseert deze automatisch naar het contactrecord. Gebruik sneltoetsen: '@' om een taak te creëren, '#' om een tag toe te voegen, of '[naam]' om een contact te vermelden.",
+            "en": "Open the meeting in the mobile app or on your tablet and use the notes field to capture key points. Tesoro automatically syncs these to the contact record. Use shortcuts: '@' to create a task, '#' to add a tag, or '[name]' to mention a contact.",
+            "es": "Abre la reunión en la aplicación móvil o en tu tableta y usa el campo de notas para capturar puntos clave. Tesoro sincroniza automáticamente estos con el registro de contacto. Usa atajos: '@' para crear una tarea, '#' para agregar una etiqueta, o '[nombre]' para mencionar un contacto."
+          }
+        },
+        {
+          "title": {
+            "nl": "Volg de agenda",
+            "en": "Follow the Agenda",
+            "es": "Seguir la agenda"
+          },
+          "description": {
+            "nl": "De agenda die je hebt gemaakt is zichtbaar tijdens de vergadering. Vink items af terwijl je ze bespreekt om de vergadering op schema te houden. Je kunt ook spontaan nieuwe items toevoegen als de conversatie nieuwe onderwerpen opent.",
+            "en": "The agenda you created is visible during the meeting. Check off items as you discuss them to keep the meeting on track. You can also spontaneously add new items if the conversation opens new topics.",
+            "es": "La agenda que creaste es visible durante la reunión. Marca los elementos mientras los discutes para mantener la reunión en curso. También puedes agregar espontáneamente nuevos elementos si la conversación abre nuevos temas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Deel je scherm",
+            "en": "Share Your Screen",
+            "es": "Compartir tu pantalla"
+          },
+          "description": {
+            "nl": "Voor video calls kun je je scherm delen om samen door panden, contracten of analyses te lopen. Tesoro's schermdeel functie werkt naadloos met zowel Google Meet als Zoom. Je kunt specifieke panden of documenten delen zonder je hele scherm te laten zien.",
+            "en": "For video calls, you can share your screen to walk through properties, contracts, or analyses together. Tesoro's screen sharing works seamlessly with both Google Meet and Zoom. You can share specific properties or documents without showing your entire screen.",
+            "es": "Para videollamadas, puedes compartir tu pantalla para revisar juntos propiedades, contratos o análisis. La función de compartir pantalla de Tesoro funciona perfectamente con Google Meet y Zoom. Puedes compartir propiedades o documentos específicos sin mostrar toda tu pantalla."
+          }
+        },
+        {
+          "title": {
+            "nl": "Plan volgende stappen",
+            "en": "Schedule Next Steps",
+            "es": "Programar próximos pasos"
+          },
+          "description": {
+            "nl": "Voordat de vergadering eindigt, gebruik je de 'Volgende stappen' sectie om follow-up acties vast te leggen. Je kunt direct een volgende vergadering plannen, een bezichtiging inplannen, of taken creëren voor jezelf of teamleden. Dit zorgt ervoor dat niets tussen de cracks valt.",
+            "en": "Before the meeting ends, use the 'Next Steps' section to capture follow-up actions. You can directly schedule a next meeting, book a viewing, or create tasks for yourself or team members. This ensures nothing falls through the cracks.",
+            "es": "Antes de que termine la reunión, usa la sección 'Próximos pasos' para capturar acciones de seguimiento. Puedes programar directamente una próxima reunión, reservar una visita o crear tareas para ti o miembros del equipo. Esto asegura que nada se pierda."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "recording-note",
+      "variant": "warning",
+      "title": {
+        "nl": "Privacy waarschuwing",
+        "en": "Privacy Warning",
+        "es": "Advertencia de privacidad"
+      },
+      "content": {
+        "nl": "Als je video calls wilt opnemen, vraag dan altijd eerst toestemming van alle deelnemers. Tesoro heeft een ingebouwde opname functie die automatisch een disclaimer toont wanneer opname start. Opnames worden veilig opgeslagen in je Tesoro account en gekoppeld aan de vergadering voor toekomstige referentie.",
+        "en": "If you want to record video calls, always ask permission from all attendees first. Tesoro has a built-in recording feature that automatically shows a disclaimer when recording starts. Recordings are securely stored in your Tesoro account and linked to the meeting for future reference.",
+        "es": "Si quieres grabar videollamadas, siempre pide permiso a todos los asistentes primero. Tesoro tiene una función de grabación integrada que muestra automáticamente un descargo de responsabilidad cuando comienza la grabación. Las grabaciones se almacenan de forma segura en tu cuenta de Tesoro y se vinculan a la reunión para referencia futura."
+      }
+    },
+    {
+      "type": "text",
+      "id": "meeting-followup",
+      "title": {
+        "nl": "Vergadering follow-up",
+        "en": "Meeting Follow-up",
+        "es": "Seguimiento de reunión"
+      },
+      "content": {
+        "nl": "De follow-up na een vergadering is net zo belangrijk als de vergadering zelf. Tesoro automatiseert veel van dit proces terwijl je toch een persoonlijke touch behoudt.",
+        "en": "Following up after a meeting is just as important as the meeting itself. Tesoro automates much of this process while still maintaining a personal touch.",
+        "es": "El seguimiento después de una reunión es tan importante como la reunión misma. Tesoro automatiza gran parte de este proceso mientras mantiene un toque personal."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "followup-steps",
+      "title": {
+        "nl": "Follow-up stappen",
+        "en": "Follow-up Steps",
+        "es": "Pasos de seguimiento"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Markeer als voltooid en vat samen",
+            "en": "Mark as Completed and Summarize",
+            "es": "Marcar como completada y resumir"
+          },
+          "description": {
+            "nl": "Direct na de vergadering, klik je op 'Markeer als voltooid' en voeg je een samenvatting toe: belangrijkste beslissingen, klant sentiment, bezwaren of vragen die opkwamen, volgende stappen. Deze samenvatting wordt toegevoegd aan de contactgeschiedenis en is doorzoekbaar voor toekomstige referentie.",
+            "en": "Right after the meeting, click 'Mark as Completed' and add a summary: key decisions made, client sentiment, objections or questions that came up, next steps. This summary is added to the contact history and is searchable for future reference.",
+            "es": "Justo después de la reunión, haz clic en 'Marcar como completada' y agrega un resumen: decisiones clave tomadas, sentimiento del cliente, objeciones o preguntas que surgieron, próximos pasos. Este resumen se agrega al historial de contacto y es buscable para referencia futura."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verstuur follow-up e-mail",
+            "en": "Send Follow-up Email",
+            "es": "Enviar correo de seguimiento"
+          },
+          "description": {
+            "nl": "Tesoro genereert automatisch een follow-up e-mail concept op basis van je vergadersamenvatting. De e-mail bevat: bedankt voor je tijd, samenvatting van wat is besproken, beloofde documenten of informatie als bijlagen, duidelijke volgende stappen, datum/tijd van volgende vergadering als gepland. Personaliseer en verstuur binnen 2 uur na de vergadering.",
+            "en": "Tesoro automatically generates a follow-up email draft based on your meeting summary. The email includes: thank you for your time, summary of what was discussed, promised documents or information as attachments, clear next steps, date/time of next meeting if scheduled. Personalize and send within 2 hours of the meeting.",
+            "es": "Tesoro genera automáticamente un borrador de correo de seguimiento basado en tu resumen de reunión. El correo incluye: gracias por tu tiempo, resumen de lo discutido, documentos o información prometida como adjuntos, próximos pasos claros, fecha/hora de la próxima reunión si está programada. Personaliza y envía dentro de 2 horas de la reunión."
+          }
+        },
+        {
+          "title": {
+            "nl": "Creëer follow-up taken",
+            "en": "Create Follow-up Tasks",
+            "es": "Crear tareas de seguimiento"
+          },
+          "description": {
+            "nl": "Voor acties die je tijdens de vergadering hebt beloofd (marktanalyse opstellen, contracten sturen, extra panden zoeken), creëer je taken met deadlines. Wijs deze taken toe aan jezelf of teamleden. Taken worden gekoppeld aan het contact en verschijnen in ieders dashboard.",
+            "en": "For actions you promised during the meeting (prepare market analysis, send contracts, find additional properties), create tasks with deadlines. Assign these tasks to yourself or team members. Tasks are linked to the contact and appear in everyone's dashboard.",
+            "es": "Para acciones que prometiste durante la reunión (preparar análisis de mercado, enviar contratos, encontrar propiedades adicionales), crea tareas con plazos. Asigna estas tareas a ti mismo o miembros del equipo. Las tareas se vinculan al contacto y aparecen en el panel de todos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Update deal status",
+            "en": "Update Deal Status",
+            "es": "Actualizar estado del negocio"
+          },
+          "description": {
+            "nl": "Als de vergadering de deal status heeft veranderd (van Lead naar Qualified, van Negotiation naar Contract), update dan de deal pipeline. Dit houdt je sales forecast actueel en zorgt ervoor dat je team op de hoogte is van vooruitgang.",
+            "en": "If the meeting changed the deal status (from Lead to Qualified, from Negotiation to Contract), update the deal pipeline. This keeps your sales forecast current and ensures your team is aware of progress.",
+            "es": "Si la reunión cambió el estado del negocio (de Prospecto a Calificado, de Negociación a Contrato), actualiza el pipeline del negocio. Esto mantiene tu pronóstico de ventas actualizado y asegura que tu equipo esté al tanto del progreso."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "followup-timing",
+      "variant": "tip",
+      "title": {
+        "nl": "Follow-up timing",
+        "en": "Follow-up Timing",
+        "es": "Momento del seguimiento"
+      },
+      "content": {
+        "nl": "Onderzoek toont dat follow-up binnen 2 uur na een vergadering de hoogste respons rate heeft. Tesoro toont een notificatie na elke vergadering die je herinnert om follow-up te doen. Maak het een gewoonte om 15 minuten na elke vergadering te reserveren voor directe follow-up - het maakt een enorm verschil in conversieratio's.",
+        "en": "Research shows follow-up within 2 hours of a meeting has the highest response rate. Tesoro shows a notification after each meeting reminding you to follow up. Make it a habit to block 15 minutes after each meeting for immediate follow-up - it makes a huge difference in conversion rates.",
+        "es": "La investigación muestra que el seguimiento dentro de 2 horas de una reunión tiene la tasa de respuesta más alta. Tesoro muestra una notificación después de cada reunión recordándote hacer seguimiento. Haz un hábito de bloquear 15 minutos después de cada reunión para seguimiento inmediato - hace una enorme diferencia en las tasas de conversión."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik een vergadering plannen met iemand die geen Tesoro gebruikt?",
+            "en": "Can I schedule a meeting with someone who doesn't use Tesoro?",
+            "es": "¿Puedo programar una reunión con alguien que no usa Tesoro?"
+          },
+          "answer": {
+            "nl": "Ja! Wanneer je een vergadering maakt, ontvangen alle deelnemers een standaard kalender uitnodiging (.ics bestand) die werkt met elke kalender app (Google Calendar, Outlook, Apple Calendar, etc.). Ze hoeven Tesoro niet te gebruiken om deel te nemen - ze ontvangen gewoon een e-mail met alle details en een knop om toe te voegen aan hun kalender.",
+            "en": "Yes! When you create a meeting, all attendees receive a standard calendar invitation (.ics file) that works with any calendar app (Google Calendar, Outlook, Apple Calendar, etc.). They don't need to use Tesoro to participate - they simply receive an email with all details and a button to add to their calendar.",
+            "es": "¡Sí! Cuando creas una reunión, todos los asistentes reciben una invitación de calendario estándar (archivo .ics) que funciona con cualquier aplicación de calendario (Google Calendar, Outlook, Apple Calendar, etc.). No necesitan usar Tesoro para participar - simplemente reciben un correo electrónico con todos los detalles y un botón para agregar a su calendario."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe deel ik mijn beschikbaarheid zodat klanten zelf kunnen plannen?",
+            "en": "How do I share my availability so clients can self-schedule?",
+            "es": "¿Cómo comparto mi disponibilidad para que los clientes puedan autoprogramarse?"
+          },
+          "answer": {
+            "nl": "Ga naar Instellingen > Planningslinks en maak een persoonlijke plannings link. Je kunt verschillende links maken voor verschillende vergadertypes (bijv. één voor eerste consultatiegesprekken, één voor voortgangsgesprekken). Stel je beschikbare uren en minimale opzegtermijn in. Deel de link via e-mail of op je website. Klanten kiezen een beschikbare tijd en de vergadering wordt automatisch gemaakt.",
+            "en": "Go to Settings > Scheduling Links and create a personal scheduling link. You can create different links for different meeting types (e.g., one for initial consultations, one for progress check-ins). Set your available hours and minimum notice period. Share the link via email or on your website. Clients choose an available time and the meeting is automatically created.",
+            "es": "Ve a Configuración > Enlaces de programación y crea un enlace de programación personal. Puedes crear diferentes enlaces para diferentes tipos de reunión (por ejemplo, uno para consultas iniciales, uno para revisiones de progreso). Establece tus horas disponibles y período mínimo de aviso. Comparte el enlace por correo electrónico o en tu sitio web. Los clientes eligen un horario disponible y la reunión se crea automáticamente."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat als ik een vergadering moet herplannen op het laatste moment?",
+            "en": "What if I need to reschedule a meeting at the last minute?",
+            "es": "¿Qué pasa si necesito reprogramar una reunión en el último minuto?"
+          },
+          "answer": {
+            "nl": "Klik op de vergadering in je kalender, selecteer 'Bewerken', kies een nieuwe tijd en klik op 'Update versturen'. Alle deelnemers ontvangen onmiddellijk een e-mail met de wijziging en een bijgewerkte kalender uitnodiging. Voor noodsituaties kun je ook SMS notificaties sturen. Probeer te herplannen met minimaal 4 uur opzegtermijn om professioneel over te komen.",
+            "en": "Click the meeting in your calendar, select 'Edit', choose a new time, and click 'Send Update'. All attendees immediately receive an email with the change and an updated calendar invitation. For emergencies, you can also send SMS notifications. Try to reschedule with at least 4 hours notice to maintain professionalism.",
+            "es": "Haz clic en la reunión en tu calendario, selecciona 'Editar', elige un nuevo horario y haz clic en 'Enviar actualización'. Todos los asistentes reciben inmediatamente un correo electrónico con el cambio y una invitación de calendario actualizada. Para emergencias, también puedes enviar notificaciones SMS. Intenta reprogramar con al menos 4 horas de anticipación para mantener el profesionalismo."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik terugkerende vergaderingen instellen voor regelmatige check-ins?",
+            "en": "Can I set up recurring meetings for regular check-ins?",
+            "es": "¿Puedo configurar reuniones recurrentes para revisiones regulares?"
+          },
+          "answer": {
+            "nl": "Ja. Bij het maken van een vergadering, vink je 'Herhalen' aan en kies je je patroon: wekelijks, tweewekelijks, maandelijks, of aangepast. Dit is handig voor: wekelijkse teamvergaderingen, maandelijkse klant check-ins, of kwartaal voortgangsgesprekken. Elke instantie van de terugkerende vergadering kan apart worden bewerkt of geannuleerd.",
+            "en": "Yes. When creating a meeting, check 'Repeat' and choose your pattern: weekly, biweekly, monthly, or custom. This is useful for: weekly team meetings, monthly client check-ins, or quarterly progress reviews. Each instance of the recurring meeting can be edited or cancelled separately.",
+            "es": "Sí. Al crear una reunión, marca 'Repetir' y elige tu patrón: semanal, quincenal, mensual o personalizado. Esto es útil para: reuniones de equipo semanales, revisiones mensuales con clientes o revisiones de progreso trimestrales. Cada instancia de la reunión recurrente puede editarse o cancelarse por separado."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "calendar-overview-guide",
+    "scheduling-property-viewings",
+    "contact-management-basics",
+    "email-templates-creation"
+  ]
+}

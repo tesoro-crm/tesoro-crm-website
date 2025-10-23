@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "id": "whatsapp-business-api",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "advanced",
+    "tags": ["integrations", "whatsapp", "messaging", "communication", "whatsapp-business"],
+    "featured": false,
+    "readingTime": 11,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["whatsapp business api", "whatsapp crm integration", "whatsapp automation", "real estate whatsapp", "whatsapp messaging"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "WhatsApp Business API: professionele messaging integratie",
+      "en": "WhatsApp Business API: Professional Messaging Integration",
+      "es": "API de WhatsApp Business: integración de mensajería profesional"
+    },
+    "description": {
+      "nl": "Integreer WhatsApp Business API met Tesoro CRM voor professionele messaging. Verstuur property details, bevestig viewings en communiceer met leads via het populairste messaging platform.",
+      "en": "Integrate WhatsApp Business API with Tesoro CRM for professional messaging. Send property details, confirm viewings, and communicate with leads via the most popular messaging platform.",
+      "es": "Integra la API de WhatsApp Business con Tesoro CRM para mensajería profesional. Envía detalles de propiedades, confirma visitas y comunícate con leads mediante la plataforma de mensajería más popular."
+    },
+    "icon": "chat"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "whatsapp-intro",
+      "title": {
+        "nl": "Waarom WhatsApp Business API?",
+        "en": "Why WhatsApp Business API?",
+        "es": "¿Por qué API de WhatsApp Business?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>WhatsApp is het meest gebruikte messaging platform in Spanje en Nederland met 90%+ penetratie. Door WhatsApp Business API te integreren met Tesoro CRM kun je professioneel communiceren met leads en klanten via hun favoriete platform.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Verstuur WhatsApp berichten vanuit Tesoro CRM</li><li>Two-way messaging - ontvang en beantwoord berichten</li><li>Rich media support - verstuur foto's, PDF's, locaties</li><li>Message templates voor geautomatiseerde notificaties</li><li>Verified Business Account - groene vinkje voor professionaliteit</li><li>98% open rate (veel hoger dan email)</li><li>Snellere response times dan email of SMS</li></ul><p><strong>Use cases voor vastgoed:</strong></p><ul><li>Property viewing confirmaties met locatie pin</li><li>Verstuur property details met foto's en brochures</li><li>Virtual tour links delen</li><li>Document ondertekening via WhatsApp</li><li>Lead qualification via chatbots</li><li>Open house reminders</li></ul><p><strong>Let op:</strong> WhatsApp Business API is anders dan de gratis WhatsApp Business App. De API is bedoeld voor bedrijven en vereist goedkeuring van Meta (Facebook).</p>"
+        },
+        "en": {
+          "text": "<p>WhatsApp is the most used messaging platform in Spain and the Netherlands with 90%+ penetration. By integrating WhatsApp Business API with Tesoro CRM, you can professionally communicate with leads and customers via their favorite platform.</p><p><strong>Key benefits:</strong></p><ul><li>Send WhatsApp messages from Tesoro CRM</li><li>Two-way messaging - receive and reply to messages</li><li>Rich media support - send photos, PDFs, locations</li><li>Message templates for automated notifications</li><li>Verified Business Account - green checkmark for professionalism</li><li>98% open rate (much higher than email)</li><li>Faster response times than email or SMS</li></ul><p><strong>Real estate use cases:</strong></p><ul><li>Property viewing confirmations with location pin</li><li>Send property details with photos and brochures</li><li>Share virtual tour links</li><li>Document signing via WhatsApp</li><li>Lead qualification via chatbots</li><li>Open house reminders</li></ul><p><strong>Note:</strong> WhatsApp Business API is different from the free WhatsApp Business App. The API is intended for businesses and requires approval from Meta (Facebook).</p>"
+        },
+        "es": {
+          "text": "<p>WhatsApp es la plataforma de mensajería más utilizada en España y los Países Bajos con más del 90% de penetración. Al integrar la API de WhatsApp Business con Tesoro CRM, puedes comunicarte profesionalmente con leads y clientes mediante su plataforma favorita.</p><p><strong>Beneficios clave:</strong></p><ul><li>Envía mensajes de WhatsApp desde Tesoro CRM</li><li>Mensajería bidireccional - recibe y responde mensajes</li><li>Soporte de medios enriquecidos - envía fotos, PDFs, ubicaciones</li><li>Plantillas de mensajes para notificaciones automatizadas</li><li>Cuenta comercial verificada - marca de verificación verde para profesionalismo</li><li>98% de tasa de apertura (mucho mayor que email)</li><li>Tiempos de respuesta más rápidos que email o SMS</li></ul><p><strong>Casos de uso para inmobiliarias:</strong></p><ul><li>Confirmaciones de visitas de propiedades con pin de ubicación</li><li>Enviar detalles de propiedades con fotos y folletos</li><li>Compartir enlaces de tours virtuales</li><li>Firma de documentos mediante WhatsApp</li><li>Calificación de leads mediante chatbots</li><li>Recordatorios de jornadas de puertas abiertas</li></ul><p><strong>Nota:</strong> La API de WhatsApp Business es diferente de la aplicación gratuita WhatsApp Business. La API está destinada a empresas y requiere aprobación de Meta (Facebook).</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "whatsapp-setup",
+      "title": {
+        "nl": "WhatsApp Business API configureren",
+        "en": "Configuring WhatsApp Business API",
+        "es": "Configurar API de WhatsApp Business"
+      },
+      "subsections": [
+        {
+          "id": "step-1-meta-approval",
+          "title": {
+            "nl": "Stap 1: Meta Business Account en API goedkeuring",
+            "en": "Step 1: Meta Business Account and API Approval",
+            "es": "Paso 1: cuenta comercial de Meta y aprobación de API"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>WhatsApp Business API vereist goedkeuring van Meta. Dit proces duurt 1-7 dagen.</p><h4>Vereisten voor API toegang:</h4><ul><li>Geldig bedrijf met KVK nummer (of equivalent)</li><li>Zakelijk telefoonnummer (mag nog niet geregistreerd zijn op WhatsApp)</li><li>Meta Business Manager account</li><li>Geverifieerd Facebook Business Page (optioneel maar aanbevolen)</li></ul><h4>Meta Business Account aanmaken:</h4><ol><li>Ga naar <a href=\"https://business.facebook.com\" target=\"_blank\">business.facebook.com</a></li><li>Klik <strong>Create Account</strong></li><li>Vul bedrijfsgegevens in:  <ul><li>Bedrijfsnaam</li><li>Je naam</li><li>Zakelijk email adres</li></ul></li><li>Verifieer email adres</li><li>Voeg bedrijfsinformatie toe in Business Settings</li></ol><h4>WhatsApp Business API aanvragen (via Tesoro):</h4><p>Tesoro werkt samen met officiële WhatsApp Business Solution Providers om het aanvraag proces te vereenvoudigen:</p><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings → Integrations → WhatsApp</strong></li><li>Klik <strong>Apply for WhatsApp Business API</strong></li><li>Je wordt doorgestuurd naar onze partner's aanvraag portal</li><li>Vul bedrijfsgegevens in:  <ul><li>Bedrijfsnaam en KVK nummer</li><li>Website URL</li><li>Business beschrijving</li><li>WhatsApp telefoonnummer</li><li>Use case beschrijving</li></ul></li><li>Upload documenten:  <ul><li>KVK uittreksel of business registration</li><li>Identiteitsbewijs</li><li>Proof of address</li></ul></li><li>Klik <strong>Submit Application</strong></li></ol><p>Meta beoordeelt je aanvraag binnen 1-7 werkdagen. Je ontvangt email met goedkeuring of eventuele vragen.</p>"
+            },
+            "en": {
+              "text": "<p>WhatsApp Business API requires approval from Meta. This process takes 1-7 days.</p><h4>Requirements for API access:</h4><ul><li>Valid business with registration number</li><li>Business phone number (must not be registered on WhatsApp yet)</li><li>Meta Business Manager account</li><li>Verified Facebook Business Page (optional but recommended)</li></ul><h4>Creating Meta Business Account:</h4><ol><li>Go to <a href=\"https://business.facebook.com\" target=\"_blank\">business.facebook.com</a></li><li>Click <strong>Create Account</strong></li><li>Fill in business details:  <ul><li>Business name</li><li>Your name</li><li>Business email address</li></ul></li><li>Verify email address</li><li>Add business information in Business Settings</li></ol><h4>Applying for WhatsApp Business API (via Tesoro):</h4><p>Tesoro partners with official WhatsApp Business Solution Providers to simplify the application process:</p><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings → Integrations → WhatsApp</strong></li><li>Click <strong>Apply for WhatsApp Business API</strong></li><li>You'll be redirected to our partner's application portal</li><li>Fill in business details:  <ul><li>Business name and registration number</li><li>Website URL</li><li>Business description</li><li>WhatsApp phone number</li><li>Use case description</li></ul></li><li>Upload documents:  <ul><li>Business registration certificate</li><li>ID proof</li><li>Proof of address</li></ul></li><li>Click <strong>Submit Application</strong></li></ol><p>Meta reviews your application within 1-7 business days. You'll receive email with approval or any questions.</p>"
+            },
+            "es": {
+              "text": "<p>La API de WhatsApp Business requiere aprobación de Meta. Este proceso toma de 1 a 7 días.</p><h4>Requisitos para acceso a API:</h4><ul><li>Empresa válida con número de registro</li><li>Número de teléfono comercial (no debe estar registrado en WhatsApp todavía)</li><li>Cuenta de Meta Business Manager</li><li>Página de Facebook Business verificada (opcional pero recomendado)</li></ul><h4>Crear cuenta comercial de Meta:</h4><ol><li>Ve a <a href=\"https://business.facebook.com\" target=\"_blank\">business.facebook.com</a></li><li>Haz clic en <strong>Create Account</strong></li><li>Completa los detalles comerciales:  <ul><li>Nombre de la empresa</li><li>Tu nombre</li><li>Dirección de correo electrónico comercial</li></ul></li><li>Verifica la dirección de correo electrónico</li><li>Agrega información comercial en Business Settings</li></ol><h4>Solicitar API de WhatsApp Business (mediante Tesoro):</h4><p>Tesoro se asocia con proveedores oficiales de soluciones comerciales de WhatsApp para simplificar el proceso de solicitud:</p><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings → Integrations → WhatsApp</strong></li><li>Haz clic en <strong>Apply for WhatsApp Business API</strong></li><li>Serás redirigido al portal de solicitud de nuestro socio</li><li>Completa los detalles comerciales:  <ul><li>Nombre de la empresa y número de registro</li><li>URL del sitio web</li><li>Descripción del negocio</li><li>Número de teléfono de WhatsApp</li><li>Descripción del caso de uso</li></ul></li><li>Sube documentos:  <ul><li>Certificado de registro comercial</li><li>Prueba de identidad</li><li>Comprobante de domicilio</li></ul></li><li>Haz clic en <strong>Submit Application</strong></li></ol><p>Meta revisa tu solicitud en 1-7 días hábiles. Recibirás un correo electrónico con aprobación o cualquier pregunta.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-2-connect-tesoro",
+          "title": {
+            "nl": "Stap 2: WhatsApp verbinden met Tesoro",
+            "en": "Step 2: Connect WhatsApp to Tesoro",
+            "es": "Paso 2: conectar WhatsApp a Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na Meta goedkeuring kun je WhatsApp verbinden met Tesoro CRM.</p><h4>Verbinding activeren:</h4><ol><li>Je ontvangt email van Meta met goedkeuring</li><li>Onze partner stuurt je <strong>API credentials</strong>:  <ul><li>Phone Number ID</li><li>WhatsApp Business Account ID</li><li>Access Token</li></ul></li><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings → Integrations → WhatsApp</strong></li><li>Klik <strong>Connect WhatsApp Business</strong></li><li>Vul credentials in die je hebt ontvangen</li><li>Configureer instellingen:  <ul><li><strong>Display Name:</strong> Bedrijfsnaam (verschijnt in WhatsApp)</li><li><strong>Profile Photo:</strong> Upload bedrijfslogo</li><li><strong>Business Description:</strong> Korte beschrijving</li><li><strong>Address:</strong> Bedrijfsadres</li><li><strong>Website:</strong> Website URL</li></ul></li><li>Klik <strong>Test Connection</strong></li><li>Verstuur test bericht naar je eigen WhatsApp</li><li>Klik <strong>Save & Activate</strong></li></ol><p>Je WhatsApp Business Account is nu actief in Tesoro.</p>"
+            },
+            "en": {
+              "text": "<p>After Meta approval, you can connect WhatsApp to Tesoro CRM.</p><h4>Activating connection:</h4><ol><li>You receive email from Meta with approval</li><li>Our partner sends you <strong>API credentials</strong>:  <ul><li>Phone Number ID</li><li>WhatsApp Business Account ID</li><li>Access Token</li></ul></li><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings → Integrations → WhatsApp</strong></li><li>Click <strong>Connect WhatsApp Business</strong></li><li>Fill in credentials you received</li><li>Configure settings:  <ul><li><strong>Display Name:</strong> Business name (appears in WhatsApp)</li><li><strong>Profile Photo:</strong> Upload business logo</li><li><strong>Business Description:</strong> Short description</li><li><strong>Address:</strong> Business address</li><li><strong>Website:</strong> Website URL</li></ul></li><li>Click <strong>Test Connection</strong></li><li>Send test message to your own WhatsApp</li><li>Click <strong>Save & Activate</strong></li></ol><p>Your WhatsApp Business Account is now active in Tesoro.</p>"
+            },
+            "es": {
+              "text": "<p>Después de la aprobación de Meta, puedes conectar WhatsApp a Tesoro CRM.</p><h4>Activar conexión:</h4><ol><li>Recibes correo electrónico de Meta con aprobación</li><li>Nuestro socio te envía <strong>credenciales de API</strong>:  <ul><li>Phone Number ID</li><li>WhatsApp Business Account ID</li><li>Access Token</li></ul></li><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings → Integrations → WhatsApp</strong></li><li>Haz clic en <strong>Connect WhatsApp Business</strong></li><li>Completa las credenciales que recibiste</li><li>Configura ajustes:  <ul><li><strong>Display Name:</strong> Nombre del negocio (aparece en WhatsApp)</li><li><strong>Profile Photo:</strong> Sube logo del negocio</li><li><strong>Business Description:</strong> Descripción breve</li><li><strong>Address:</strong> Dirección del negocio</li><li><strong>Website:</strong> URL del sitio web</li></ul></li><li>Haz clic en <strong>Test Connection</strong></li><li>Envía mensaje de prueba a tu propio WhatsApp</li><li>Haz clic en <strong>Save & Activate</strong></li></ol><p>Tu cuenta de WhatsApp Business ahora está activa en Tesoro.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-3-templates",
+          "title": {
+            "nl": "Stap 3: Message templates aanmaken en goedkeuren",
+            "en": "Step 3: Create and Approve Message Templates",
+            "es": "Paso 3: crear y aprobar plantillas de mensajes"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>WhatsApp vereist goedgekeurde templates voor geautomatiseerde berichten die je als eerste verstuurt naar een contact (binnen 24 uur).</p><h4>Message template aanmaken:</h4><ol><li>In Tesoro: <strong>Settings → WhatsApp → Message Templates</strong></li><li>Klik <strong>+ New Template</strong></li><li>Vul template in:  <ul><li><strong>Template Name:</strong> Intern reference (bijv. 'viewing_confirmation')</li><li><strong>Category:</strong> Kies type:    <ul><li><strong>Marketing:</strong> Promotional berichten</li><li><strong>Utility:</strong> Transactionele berichten (viewings, confirmaties)</li><li><strong>Authentication:</strong> Verificatie codes</li></ul></li><li><strong>Language:</strong> nl, en, of es</li><li><strong>Header:</strong> Optioneel (tekst, afbeelding of video)</li><li><strong>Body:</strong> Hoofd bericht tekst (max 1024 karakters)</li><li><strong>Footer:</strong> Optionele footer tekst</li><li><strong>Buttons:</strong> Optionele actie buttons (Call, URL, Quick Reply)</li></ul></li><li>Gebruik variabelen: {{1}}, {{2}}, etc. voor personalisatie</li><li>Klik <strong>Submit for Approval</strong></li></ol><h4>Voorbeeld template - Viewing Confirmation:</h4><pre>**Category:** Utility\n**Language:** es\n**Body:**\nHola {{1}},\n\nTu visita a la propiedad en {{2}} está confirmada para {{3}}.\n\n📍 Ubicación: {{4}}\n⏰ Hora: {{5}}\n\n¡Nos vemos pronto!\n\n**Footer:**\nTesoro Inmobiliaria\n\n**Button:** Call +34612345678</pre><h4>Goedkeuring proces:</h4><ul><li>Meta beoordeelt templates binnen 24-48 uur</li><li>Status: Pending → Approved of Rejected</li><li>Bij rejection: zie feedback en pas aan</li><li>Approved templates kun je direct gebruiken</li></ul><p><strong>Tip:</strong> Maak templates aan voor veelvoorkomende use cases (viewings, welcome, follow-up) om te voorkomen dat je moet wachten op goedkeuring.</p>"
+            },
+            "en": {
+              "text": "<p>WhatsApp requires approved templates for automated messages you send first to a contact (within 24 hours).</p><h4>Creating message template:</h4><ol><li>In Tesoro: <strong>Settings → WhatsApp → Message Templates</strong></li><li>Click <strong>+ New Template</strong></li><li>Fill in template:  <ul><li><strong>Template Name:</strong> Internal reference (e.g., 'viewing_confirmation')</li><li><strong>Category:</strong> Choose type:    <ul><li><strong>Marketing:</strong> Promotional messages</li><li><strong>Utility:</strong> Transactional messages (viewings, confirmations)</li><li><strong>Authentication:</strong> Verification codes</li></ul></li><li><strong>Language:</strong> nl, en, or es</li><li><strong>Header:</strong> Optional (text, image, or video)</li><li><strong>Body:</strong> Main message text (max 1024 characters)</li><li><strong>Footer:</strong> Optional footer text</li><li><strong>Buttons:</strong> Optional action buttons (Call, URL, Quick Reply)</li></ul></li><li>Use variables: {{1}}, {{2}}, etc. for personalization</li><li>Click <strong>Submit for Approval</strong></li></ol><h4>Example template - Viewing Confirmation:</h4><pre>**Category:** Utility\n**Language:** en\n**Body:**\nHi {{1}},\n\nYour viewing at the property on {{2}} is confirmed for {{3}}.\n\n📍 Location: {{4}}\n⏰ Time: {{5}}\n\nSee you soon!\n\n**Footer:**\nTesoro Real Estate\n\n**Button:** Call +34612345678</pre><h4>Approval process:</h4><ul><li>Meta reviews templates within 24-48 hours</li><li>Status: Pending → Approved or Rejected</li><li>On rejection: see feedback and adjust</li><li>Approved templates can be used immediately</li></ul><p><strong>Tip:</strong> Create templates for common use cases (viewings, welcome, follow-up) to avoid waiting for approval.</p>"
+            },
+            "es": {
+              "text": "<p>WhatsApp requiere plantillas aprobadas para mensajes automatizados que envías primero a un contacto (dentro de 24 horas).</p><h4>Crear plantilla de mensaje:</h4><ol><li>En Tesoro: <strong>Settings → WhatsApp → Message Templates</strong></li><li>Haz clic en <strong>+ New Template</strong></li><li>Completa la plantilla:  <ul><li><strong>Template Name:</strong> Referencia interna (ej., 'viewing_confirmation')</li><li><strong>Category:</strong> Elige tipo:    <ul><li><strong>Marketing:</strong> Mensajes promocionales</li><li><strong>Utility:</strong> Mensajes transaccionales (visitas, confirmaciones)</li><li><strong>Authentication:</strong> Códigos de verificación</li></ul></li><li><strong>Language:</strong> nl, en o es</li><li><strong>Header:</strong> Opcional (texto, imagen o video)</li><li><strong>Body:</strong> Texto del mensaje principal (máx 1024 caracteres)</li><li><strong>Footer:</strong> Texto de pie de página opcional</li><li><strong>Buttons:</strong> Botones de acción opcionales (Call, URL, Quick Reply)</li></ul></li><li>Usa variables: {{1}}, {{2}}, etc. para personalización</li><li>Haz clic en <strong>Submit for Approval</strong></li></ol><h4>Plantilla de ejemplo - Confirmación de visita:</h4><pre>**Category:** Utility\n**Language:** es\n**Body:**\nHola {{1}},\n\nTu visita a la propiedad en {{2}} está confirmada para {{3}}.\n\n📍 Ubicación: {{4}}\n⏰ Hora: {{5}}\n\n¡Nos vemos pronto!\n\n**Footer:**\nTesoro Inmobiliaria\n\n**Button:** Call +34612345678</pre><h4>Proceso de aprobación:</h4><ul><li>Meta revisa las plantillas en 24-48 horas</li><li>Estado: Pending → Approved o Rejected</li><li>En caso de rechazo: ver comentarios y ajustar</li><li>Las plantillas aprobadas se pueden usar inmediatamente</li></ul><p><strong>Consejo:</strong> Crea plantillas para casos de uso comunes (visitas, bienvenida, seguimiento) para evitar esperar la aprobación.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "sending-messages",
+      "title": {
+        "nl": "WhatsApp berichten versturen vanuit Tesoro",
+        "en": "Sending WhatsApp Messages from Tesoro",
+        "es": "Enviar mensajes de WhatsApp desde Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Template bericht versturen (first contact):</h4><p>Als je voor het eerst contact opneemt (of >24 uur geen conversatie):</p><ol><li>Open contact in Tesoro</li><li>Klik <strong>Send WhatsApp</strong></li><li>Selecteer <strong>Use Template</strong></li><li>Kies een goedgekeurde template</li><li>Vul variabelen in (naam, adres, datum, etc.)</li><li>Preview bericht</li><li>Klik <strong>Send</strong></li></ol><h4>Freeform bericht (active conversation):</h4><p>Als je binnen 24 uur na laatste bericht van contact antwoordt:</p><ol><li>Open WhatsApp conversatie in Tesoro</li><li>Type je bericht (geen template vereist)</li><li>Optioneel:  <ul><li>Upload <strong>foto's</strong> (properties, documents)</li><li>Verstuur <strong>PDF's</strong> (brochures, contracts)</li><li>Deel <strong>locatie</strong> (property address)</li><li>Verstuur <strong>contact card</strong></li></ul></li><li>Klik <strong>Send</strong></li></ol><h4>Rich media versturen:</h4><p><strong>Property foto's delen:</strong></p><ul><li>Klik attachment icon</li><li>Selecteer foto's van property</li><li>Voeg caption toe</li><li>Verstuur tot 10 foto's per bericht</li></ul><p><strong>PDF brochure versturen:</strong></p><ul><li>Upload PDF (max 100MB)</li><li>WhatsApp toont preview</li><li>Contact kan downloaden</li></ul><p><strong>Locatie delen:</strong></p><ul><li>Klik location icon</li><li>Selecteer property address</li><li>WhatsApp toont map met pin</li><li>Contact kan navigatie openen</li></ul><h4>Antwoorden ontvangen:</h4><ul><li>Contact antwoorden verschijnen in <strong>WhatsApp Inbox</strong> in Tesoro</li><li>Automatisch gekoppeld aan contact</li><li>Real-time notifications</li><li>Je hebt 24 uur om te antwoorden zonder template</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Sending template message (first contact):</h4><p>When contacting for the first time (or >24 hours no conversation):</p><ol><li>Open contact in Tesoro</li><li>Click <strong>Send WhatsApp</strong></li><li>Select <strong>Use Template</strong></li><li>Choose an approved template</li><li>Fill in variables (name, address, date, etc.)</li><li>Preview message</li><li>Click <strong>Send</strong></li></ol><h4>Freeform message (active conversation):</h4><p>If you reply within 24 hours of contact's last message:</p><ol><li>Open WhatsApp conversation in Tesoro</li><li>Type your message (no template required)</li><li>Optional:  <ul><li>Upload <strong>photos</strong> (properties, documents)</li><li>Send <strong>PDFs</strong> (brochures, contracts)</li><li>Share <strong>location</strong> (property address)</li><li>Send <strong>contact card</strong></li></ul></li><li>Click <strong>Send</strong></li></ol><h4>Sending rich media:</h4><p><strong>Sharing property photos:</strong></p><ul><li>Click attachment icon</li><li>Select photos of property</li><li>Add caption</li><li>Send up to 10 photos per message</li></ul><p><strong>Sending PDF brochure:</strong></p><ul><li>Upload PDF (max 100MB)</li><li>WhatsApp shows preview</li><li>Contact can download</li></ul><p><strong>Sharing location:</strong></p><ul><li>Click location icon</li><li>Select property address</li><li>WhatsApp shows map with pin</li><li>Contact can open navigation</li></ul><h4>Receiving replies:</h4><ul><li>Contact replies appear in <strong>WhatsApp Inbox</strong> in Tesoro</li><li>Automatically linked to contact</li><li>Real-time notifications</li><li>You have 24 hours to reply without template</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Enviar mensaje de plantilla (primer contacto):</h4><p>Al contactar por primera vez (o >24 horas sin conversación):</p><ol><li>Abre el contacto en Tesoro</li><li>Haz clic en <strong>Send WhatsApp</strong></li><li>Selecciona <strong>Use Template</strong></li><li>Elige una plantilla aprobada</li><li>Completa las variables (nombre, dirección, fecha, etc.)</li><li>Vista previa del mensaje</li><li>Haz clic en <strong>Send</strong></li></ol><h4>Mensaje de forma libre (conversación activa):</h4><p>Si respondes dentro de las 24 horas del último mensaje del contacto:</p><ol><li>Abre la conversación de WhatsApp en Tesoro</li><li>Escribe tu mensaje (no se requiere plantilla)</li><li>Opcional:  <ul><li>Sube <strong>fotos</strong> (propiedades, documentos)</li><li>Envía <strong>PDFs</strong> (folletos, contratos)</li><li>Comparte <strong>ubicación</strong> (dirección de propiedad)</li><li>Envía <strong>tarjeta de contacto</strong></li></ul></li><li>Haz clic en <strong>Send</strong></li></ol><h4>Enviar medios enriquecidos:</h4><p><strong>Compartir fotos de propiedades:</strong></p><ul><li>Haz clic en el icono de adjunto</li><li>Selecciona fotos de la propiedad</li><li>Agrega subtítulo</li><li>Envía hasta 10 fotos por mensaje</li></ul><p><strong>Enviar folleto en PDF:</strong></p><ul><li>Sube PDF (máx 100MB)</li><li>WhatsApp muestra vista previa</li><li>El contacto puede descargar</li></ul><p><strong>Compartir ubicación:</strong></p><ul><li>Haz clic en el icono de ubicación</li><li>Selecciona dirección de propiedad</li><li>WhatsApp muestra mapa con pin</li><li>El contacto puede abrir navegación</li></ul><h4>Recibir respuestas:</h4><ul><li>Las respuestas del contacto aparecen en <strong>WhatsApp Inbox</strong> en Tesoro</li><li>Automáticamente vinculado al contacto</li><li>Notificaciones en tiempo real</li><li>Tienes 24 horas para responder sin plantilla</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "whatsapp-rules",
+      "variant": "warning",
+      "title": {
+        "nl": "WhatsApp regels en beperkingen",
+        "en": "WhatsApp Rules and Limitations",
+        "es": "Reglas y limitaciones de WhatsApp"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Belangrijke regels die je MOET volgen:</strong></p><ul><li><strong>24-uur regel:</strong> Je kunt alleen freeform berichten versturen binnen 24 uur na laatste bericht van contact. Daarna MOET je een goedgekeurde template gebruiken.</li><li><strong>Opt-in vereist:</strong> Contact moet expliciet toestemming hebben gegeven voor WhatsApp berichten (GDPR)</li><li><strong>Geen spam:</strong> Meta blokkeert accounts die spam versturen. Kwaliteit > kwantiteit.</li><li><strong>Response rate:</strong> Hoge block/report rate kan leiden tot account restrictie</li><li><strong>Template limiet:</strong> Max 250 unieke templates per account</li></ul><p><strong>Kosten:</strong></p><ul><li>Conversation-based pricing (niet per bericht)</li><li>Business-initiated conversation: ~€0.05-€0.15 per 24-uur sessie</li><li>User-initiated conversation: Gratis (contact start conversatie)</li><li>Kosten variëren per land</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Important rules you MUST follow:</strong></p><ul><li><strong>24-hour rule:</strong> You can only send freeform messages within 24 hours of contact's last message. After that you MUST use an approved template.</li><li><strong>Opt-in required:</strong> Contact must have explicitly given permission for WhatsApp messages (GDPR)</li><li><strong>No spam:</strong> Meta blocks accounts that send spam. Quality > quantity.</li><li><strong>Response rate:</strong> High block/report rate can lead to account restriction</li><li><strong>Template limit:</strong> Max 250 unique templates per account</li></ul><p><strong>Costs:</strong></p><ul><li>Conversation-based pricing (not per message)</li><li>Business-initiated conversation: ~€0.05-€0.15 per 24-hour session</li><li>User-initiated conversation: Free (contact starts conversation)</li><li>Costs vary by country</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Reglas importantes que DEBES seguir:</strong></p><ul><li><strong>Regla de 24 horas:</strong> Solo puedes enviar mensajes de forma libre dentro de las 24 horas del último mensaje del contacto. Después DEBES usar una plantilla aprobada.</li><li><strong>Opt-in requerido:</strong> El contacto debe haber dado permiso explícito para mensajes de WhatsApp (GDPR)</li><li><strong>Sin spam:</strong> Meta bloquea cuentas que envían spam. Calidad > cantidad.</li><li><strong>Tasa de respuesta:</strong> Una alta tasa de bloqueo/reporte puede llevar a la restricción de la cuenta</li><li><strong>Límite de plantillas:</strong> Máx 250 plantillas únicas por cuenta</li></ul><p><strong>Costos:</strong></p><ul><li>Precios basados en conversaciones (no por mensaje)</li><li>Conversación iniciada por empresa: ~€0.05-€0.15 por sesión de 24 horas</li><li>Conversación iniciada por usuario: Gratis (el contacto inicia la conversación)</li><li>Los costos varían por país</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "troubleshooting-whatsapp",
+      "title": {
+        "nl": "Problemen oplossen",
+        "en": "Troubleshooting",
+        "es": "Solución de problemas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>Bericht kan niet worden verstuurd - 'Template required':</strong></p><ul><li>Je probeert een freeform bericht te versturen buiten 24-uur window</li><li>Gebruik een goedgekeurde template</li><li>Of wacht tot contact antwoordt om 24-uur window te openen</li></ul><p><strong>Template wordt rejected door Meta:</strong></p><ul><li>Lees rejection reason zorgvuldig</li><li>Veelvoorkomende redenen:  <ul><li>Te veel variabelen of placeholder tekst</li><li>Promotional content in Utility template</li><li>Grammatica/spelling fouten</li><li>Ontbrekende opt-out instructies in Marketing templates</li></ul></li><li>Pas template aan en submit opnieuw</li></ul><p><strong>'Phone number not registered' error:</strong></p><ul><li>Telefoonnummer is nog niet geverifieerd bij Meta</li><li>Check of nummer correct is in WhatsApp settings</li><li>Verifieer dat nummer niet al in gebruik is op reguliere WhatsApp</li></ul><p><strong>Berichten worden niet afgeleverd:</strong></p><ul><li>Contact heeft je geblokkeerd of WhatsApp verwijderd</li><li>Nummer is niet (meer) actief</li><li>Check delivery status in message log</li></ul><p><strong>Account restricted door Meta:</strong></p><ul><li>Te veel block/report van contacts</li><li>Spam complaints</li><li>Violatie van WhatsApp policies</li><li>Neem contact op met WhatsApp support via Meta Business</li><li>Review je messaging strategy - focus op kwaliteit</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Common issues:</h4><p><strong>Message cannot be sent - 'Template required':</strong></p><ul><li>You're trying to send a freeform message outside 24-hour window</li><li>Use an approved template</li><li>Or wait for contact to reply to open 24-hour window</li></ul><p><strong>Template is rejected by Meta:</strong></p><ul><li>Read rejection reason carefully</li><li>Common reasons:  <ul><li>Too many variables or placeholder text</li><li>Promotional content in Utility template</li><li>Grammar/spelling errors</li><li>Missing opt-out instructions in Marketing templates</li></ul></li><li>Adjust template and submit again</li></ul><p><strong>'Phone number not registered' error:</strong></p><ul><li>Phone number is not yet verified with Meta</li><li>Check if number is correct in WhatsApp settings</li><li>Verify that number is not already in use on regular WhatsApp</li></ul><p><strong>Messages are not delivered:</strong></p><ul><li>Contact has blocked you or deleted WhatsApp</li><li>Number is not (anymore) active</li><li>Check delivery status in message log</li></ul><p><strong>Account restricted by Meta:</strong></p><ul><li>Too many blocks/reports from contacts</li><li>Spam complaints</li><li>Violation of WhatsApp policies</li><li>Contact WhatsApp support via Meta Business</li><li>Review your messaging strategy - focus on quality</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Problemas comunes:</h4><p><strong>No se puede enviar mensaje - 'Template required':</strong></p><ul><li>Estás intentando enviar un mensaje de forma libre fuera de la ventana de 24 horas</li><li>Usa una plantilla aprobada</li><li>O espera a que el contacto responda para abrir la ventana de 24 horas</li></ul><p><strong>Meta rechaza la plantilla:</strong></p><ul><li>Lee la razón del rechazo cuidadosamente</li><li>Razones comunes:  <ul><li>Demasiadas variables o texto de marcador de posición</li><li>Contenido promocional en plantilla de Utility</li><li>Errores gramaticales/ortográficos</li><li>Instrucciones de exclusión faltantes en plantillas de Marketing</li></ul></li><li>Ajusta la plantilla y envía nuevamente</li></ul><p><strong>Error 'Phone number not registered':</strong></p><ul><li>El número de teléfono aún no está verificado con Meta</li><li>Verifica que el número sea correcto en la configuración de WhatsApp</li><li>Verifica que el número no esté ya en uso en WhatsApp regular</li></ul><p><strong>Los mensajes no se entregan:</strong></p><ul><li>El contacto te ha bloqueado o ha eliminado WhatsApp</li><li>El número no está (ya) activo</li><li>Verifica el estado de entrega en el registro de mensajes</li></ul><p><strong>Cuenta restringida por Meta:</strong></p><ul><li>Demasiados bloqueos/reportes de contactos</li><li>Quejas de spam</li><li>Violación de políticas de WhatsApp</li><li>Contacta al soporte de WhatsApp mediante Meta Business</li><li>Revisa tu estrategia de mensajería - enfócate en calidad</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "twilio-sms-integration",
+    "gmail-oauth-complete-setup",
+    "api-webhooks-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen WhatsApp Business App en WhatsApp Business API?",
+        "en": "What is the difference between WhatsApp Business App and WhatsApp Business API?",
+        "es": "¿Cuál es la diferencia entre WhatsApp Business App y WhatsApp Business API?"
+      },
+      "answer": {
+        "nl": "De gratis WhatsApp Business App is voor kleine bedrijven en wordt beheerd via je telefoon. De WhatsApp Business API is voor middelgrote/grote bedrijven, integreert met CRM systemen zoals Tesoro, en vereist goedkeuring van Meta. API biedt automatisering, meerdere gebruikers en betere analytics.",
+        "en": "The free WhatsApp Business App is for small businesses and is managed via your phone. The WhatsApp Business API is for medium/large businesses, integrates with CRM systems like Tesoro, and requires Meta approval. API offers automation, multiple users, and better analytics.",
+        "es": "La aplicación gratuita WhatsApp Business es para pequeñas empresas y se gestiona mediante tu teléfono. La API de WhatsApp Business es para empresas medianas/grandes, se integra con sistemas CRM como Tesoro y requiere aprobación de Meta. La API ofrece automatización, múltiples usuarios y mejores análisis."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe lang duurt het Meta approval proces?",
+        "en": "How long does the Meta approval process take?",
+        "es": "¿Cuánto tiempo toma el proceso de aprobación de Meta?"
+      },
+      "answer": {
+        "nl": "Typisch 1-7 werkdagen voor WhatsApp Business API toegang. Template approvals duren 24-48 uur. Bij incomplete documentatie kan het langer duren.",
+        "en": "Typically 1-7 business days for WhatsApp Business API access. Template approvals take 24-48 hours. With incomplete documentation it may take longer.",
+        "es": "Típicamente 1-7 días hábiles para acceso a la API de WhatsApp Business. Las aprobaciones de plantillas toman 24-48 horas. Con documentación incompleta puede tomar más tiempo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel kost WhatsApp Business API?",
+        "en": "How much does WhatsApp Business API cost?",
+        "es": "¿Cuánto cuesta la API de WhatsApp Business?"
+      },
+      "answer": {
+        "nl": "Conversation-based pricing: ~€0.05-€0.15 per business-initiated 24-uur sessie (varieert per land). User-initiated conversaties zijn gratis. Geen maandelijkse kosten - alleen pay-per-conversation.",
+        "en": "Conversation-based pricing: ~€0.05-€0.15 per business-initiated 24-hour session (varies by country). User-initiated conversations are free. No monthly fees - only pay-per-conversation.",
+        "es": "Precios basados en conversaciones: ~€0.05-€0.15 por sesión de 24 horas iniciada por empresa (varía por país). Las conversaciones iniciadas por usuario son gratis. Sin tarifas mensuales - solo pago por conversación."
+      }
+    }
+  ]
+}

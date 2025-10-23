@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "id": "email-templates-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T12:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["email", "templates", "productivity", "automation", "communication"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["email templates crm", "email automation", "personalized email templates", "crm email shortcuts", "tesoro templates"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Email templates: Sneller reageren met herbruikbare inhoud",
+      "en": "Email Templates: Respond Faster with Reusable Content",
+      "es": "Plantillas de email: Responde más rápido con contenido reutilizable"
+    },
+    "description": {
+      "nl": "Maak, beheer en gebruik email templates met dynamische variabelen voor gepersonaliseerde communicatie.",
+      "en": "Create, manage and use email templates with dynamic variables for personalized communication.",
+      "es": "Crea, gestiona y usa plantillas de email con variables dinámicas para comunicación personalizada."
+    },
+    "icon": "draft"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "email-templates-intro",
+      "title": {
+        "nl": "Wat zijn email templates?",
+        "en": "What are email templates?",
+        "es": "¿Qué son las plantillas de email?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Email templates zijn vooraf opgestelde email berichten die je kunt hergebruiken met dynamische variabelen voor personalisatie. Ideaal voor veelvoorkomende communicatie zoals:</p><ul><li><strong>Welkomstmails:</strong> Voor nieuwe klanten</li><li><strong>Property alerts:</strong> Nieuwe woningen die matchen</li><li><strong>Follow-ups:</strong> Na bezichtiging of meeting</li><li><strong>Statusupdates:</strong> Deal progressie</li><li><strong>Bedank emails:</strong> Na een transactie</li></ul><h3>Voordelen van Templates</h3><ul><li><strong>Tijdsbesparing:</strong> Geen herhaling van dezelfde emails</li><li><strong>Consistentie:</strong> Uniforme communicatie naar klanten</li><li><strong>Personalisatie:</strong> Automatische naam, property, deal invulling</li><li><strong>Schaalbaarheid:</strong> Efficient bij veel klanten</li><li><strong>Kwaliteitsborging:</strong> Gecontroleerde teksten zonder typefouten</li></ul>"
+        },
+        "en": {
+          "text": "<p>Email templates are pre-written email messages that you can reuse with dynamic variables for personalization. Ideal for common communications like:</p><ul><li><strong>Welcome emails:</strong> For new customers</li><li><strong>Property alerts:</strong> New properties that match</li><li><strong>Follow-ups:</strong> After viewing or meeting</li><li><strong>Status updates:</strong> Deal progress</li><li><strong>Thank you emails:</strong> After a transaction</li></ul><h3>Benefits of Templates</h3><ul><li><strong>Time savings:</strong> No repetition of the same emails</li><li><strong>Consistency:</strong> Uniform communication to customers</li><li><strong>Personalization:</strong> Automatic name, property, deal filling</li><li><strong>Scalability:</strong> Efficient with many customers</li><li><strong>Quality assurance:</strong> Controlled texts without typos</li></ul>"
+        },
+        "es": {
+          "text": "<p>Las plantillas de email son mensajes de correo preescritos que puedes reutilizar con variables dinámicas para personalización. Ideal para comunicaciones comunes como:</p><ul><li><strong>Emails de bienvenida:</strong> Para nuevos clientes</li><li><strong>Alertas de propiedades:</strong> Nuevas propiedades que coinciden</li><li><strong>Seguimientos:</strong> Después de visita o reunión</li><li><strong>Actualizaciones de estado:</strong> Progreso de trato</li><li><strong>Emails de agradecimiento:</strong> Después de una transacción</li></ul><h3>Beneficios de las plantillas</h3><ul><li><strong>Ahorro de tiempo:</strong> Sin repetición de los mismos emails</li><li><strong>Consistencia:</strong> Comunicación uniforme a clientes</li><li><strong>Personalización:</strong> Llenado automático de nombre, propiedad, trato</li><li><strong>Escalabilidad:</strong> Eficiente con muchos clientes</li><li><strong>Aseguramiento de calidad:</strong> Textos controlados sin errores tipográficos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "creating-email-templates",
+      "title": {
+        "nl": "Email templates aanmaken",
+        "en": "Creating email templates",
+        "es": "Crear plantillas de email"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Nieuwe Template Maken</h3><ol><li>Ga naar <strong>Settings > Communication > Email Templates</strong></li><li>Klik <strong>+ New Template</strong></li><li>Vul in:  <ul><li><strong>Template Name:</strong> Beschrijvende naam (bijv. \"Welkomstmail Nieuwe Klant\")</li><li><strong>Category:</strong> Lead, Property, Deal, Follow-up, etc.</li><li><strong>Subject:</strong> Email onderwerp (met variabelen)</li><li><strong>Body:</strong> Email inhoud (rich text editor)</li></ul></li><li>Klik <strong>Save Template</strong></li></ol><h3>Rich Text Editor</h3><p>De editor ondersteunt:</p><ul><li><strong>Formatting:</strong> Bold, italic, underline, lists</li><li><strong>Links:</strong> Voeg URLs toe</li><li><strong>Images:</strong> Upload of embed afbeeldingen</li><li><strong>Variables:</strong> Dynamische placeholders</li><li><strong>Tables:</strong> Voor gestructureerde data</li></ul><h3>Template Variabelen</h3><p>Gebruik variabelen voor personalisatie:</p><ul><li><code>{{contact.firstName}}</code> → Voornaam</li><li><code>{{contact.lastName}}</code> → Achternaam</li><li><code>{{contact.email}}</code> → Email adres</li><li><code>{{contact.phone}}</code> → Telefoonnummer</li><li><code>{{property.address}}</code> → Property adres</li><li><code>{{property.price}}</code> → Prijs</li><li><code>{{deal.value}}</code> → Deal waarde</li><li><code>{{agent.name}}</code> → Jouw naam</li><li><code>{{agent.phone}}</code> → Jouw telefoonnummer</li><li><code>{{company.name}}</code> → Bedrijfsnaam</li></ul><h3>Voorbeeld Template</h3><pre><code>Subject: Welkom bij {{company.name}}, {{contact.firstName}}!\n\nHallo {{contact.firstName}},\n\nLeuk dat je contact hebt opgenomen! Ik ben {{agent.name}} en ik ga je helpen met het vinden van je droomhuis.\n\nIk zie dat je geïnteresseerd bent in properties rond {{contact.preferences.location}} met een budget van ongeveer {{contact.preferences.budget}}.\n\nIk neem binnen 24 uur contact met je op om je wensen te bespreken.\n\nMet vriendelijke groet,\n{{agent.name}}\n{{agent.phone}}\n</code></pre>"
+        },
+        "en": {
+          "text": "<h3>Create New Template</h3><ol><li>Go to <strong>Settings > Communication > Email Templates</strong></li><li>Click <strong>+ New Template</strong></li><li>Fill in:  <ul><li><strong>Template Name:</strong> Descriptive name (e.g., \"Welcome Email New Customer\")</li><li><strong>Category:</strong> Lead, Property, Deal, Follow-up, etc.</li><li><strong>Subject:</strong> Email subject (with variables)</li><li><strong>Body:</strong> Email content (rich text editor)</li></ul></li><li>Click <strong>Save Template</strong></li></ol><h3>Rich Text Editor</h3><p>The editor supports:</p><ul><li><strong>Formatting:</strong> Bold, italic, underline, lists</li><li><strong>Links:</strong> Add URLs</li><li><strong>Images:</strong> Upload or embed images</li><li><strong>Variables:</strong> Dynamic placeholders</li><li><strong>Tables:</strong> For structured data</li></ul><h3>Template Variables</h3><p>Use variables for personalization:</p><ul><li><code>{{contact.firstName}}</code> → First name</li><li><code>{{contact.lastName}}</code> → Last name</li><li><code>{{contact.email}}</code> → Email address</li><li><code>{{contact.phone}}</code> → Phone number</li><li><code>{{property.address}}</code> → Property address</li><li><code>{{property.price}}</code> → Price</li><li><code>{{deal.value}}</code> → Deal value</li><li><code>{{agent.name}}</code> → Your name</li><li><code>{{agent.phone}}</code> → Your phone number</li><li><code>{{company.name}}</code> → Company name</li></ul><h3>Example Template</h3><pre><code>Subject: Welcome to {{company.name}}, {{contact.firstName}}!\n\nHello {{contact.firstName}},\n\nGreat that you've reached out! I'm {{agent.name}} and I'll help you find your dream home.\n\nI see you're interested in properties around {{contact.preferences.location}} with a budget of approximately {{contact.preferences.budget}}.\n\nI'll contact you within 24 hours to discuss your wishes.\n\nBest regards,\n{{agent.name}}\n{{agent.phone}}\n</code></pre>"
+        },
+        "es": {
+          "text": "<h3>Crear nueva plantilla</h3><ol><li>Ve a <strong>Settings > Communication > Email Templates</strong></li><li>Haz clic en <strong>+ New Template</strong></li><li>Completa:  <ul><li><strong>Template Name:</strong> Nombre descriptivo (ej., \"Email de Bienvenida Nuevo Cliente\")</li><li><strong>Category:</strong> Lead, Propiedad, Trato, Seguimiento, etc.</li><li><strong>Subject:</strong> Asunto del email (con variables)</li><li><strong>Body:</strong> Contenido del email (editor de texto enriquecido)</li></ul></li><li>Haz clic en <strong>Save Template</strong></li></ol><h3>Editor de texto enriquecido</h3><p>El editor soporta:</p><ul><li><strong>Formato:</strong> Negrita, cursiva, subrayado, listas</li><li><strong>Enlaces:</strong> Agregar URLs</li><li><strong>Imágenes:</strong> Subir o incrustar imágenes</li><li><strong>Variables:</strong> Marcadores de posición dinámicos</li><li><strong>Tablas:</strong> Para datos estructurados</li></ul><h3>Variables de plantilla</h3><p>Usa variables para personalización:</p><ul><li><code>{{contact.firstName}}</code> → Nombre</li><li><code>{{contact.lastName}}</code> → Apellido</li><li><code>{{contact.email}}</code> → Dirección de email</li><li><code>{{contact.phone}}</code> → Número de teléfono</li><li><code>{{property.address}}</code> → Dirección de propiedad</li><li><code>{{property.price}}</code> → Precio</li><li><code>{{deal.value}}</code> → Valor del trato</li><li><code>{{agent.name}}</code> → Tu nombre</li><li><code>{{agent.phone}}</code> → Tu número de teléfono</li><li><code>{{company.name}}</code> → Nombre de la empresa</li></ul><h3>Ejemplo de plantilla</h3><pre><code>Subject: Bienvenido a {{company.name}}, {{contact.firstName}}!\n\nHola {{contact.firstName}},\n\n¡Genial que te hayas puesto en contacto! Soy {{agent.name}} y te ayudaré a encontrar tu casa soñada.\n\nVeo que estás interesado en propiedades alrededor de {{contact.preferences.location}} con un presupuesto de aproximadamente {{contact.preferences.budget}}.\n\nMe pondré en contacto contigo dentro de 24 horas para discutir tus deseos.\n\nSaludos cordiales,\n{{agent.name}}\n{{agent.phone}}\n</code></pre>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "using-email-templates",
+      "title": {
+        "nl": "Templates gebruiken bij emails versturen",
+        "en": "Using templates when sending emails",
+        "es": "Usar plantillas al enviar emails"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Template Toepassen bij Nieuwe Email</h3><ol><li>Open een contact</li><li>Klik <strong>Send Email</strong></li><li>In compose window, klik <strong>Templates</strong> dropdown</li><li>Selecteer een template</li><li>Template wordt ingevuld met alle variabelen</li><li>Controleer en pas aan indien nodig</li><li>Klik <strong>Send</strong></li></ol><h3>Template Voorbeeldweergave</h3><p>Tesoro toont preview van template met echte data:</p><ul><li>Variabelen zijn ingevuld met contact data</li><li>Zie hoe email eruit ziet voor ontvanger</li><li>Controleer personalisatie voordat je verstuurt</li></ul><h3>Snelle Template Invoeging</h3><p>Gebruik shortcuts:</p><ul><li>Type <code>/</code> in email body → template menu opent</li><li>Type <code>/wel</code> → filter op \"welkom\" templates</li><li>Druk <code>Enter</code> → template wordt ingevoegd</li></ul><h3>Template Aanpassen voor Specifieke Email</h3><p>Je kunt altijd wijzigen na invoegen:</p><ul><li>Voeg extra alinea's toe</li><li>Wijzig variabele waarden</li><li>Voeg attachments toe</li><li>Aanpassingen gelden alleen voor deze email</li><li>Originele template blijft ongewijzigd</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Apply Template to New Email</h3><ol><li>Open a contact</li><li>Click <strong>Send Email</strong></li><li>In compose window, click <strong>Templates</strong> dropdown</li><li>Select a template</li><li>Template is filled with all variables</li><li>Review and adjust if needed</li><li>Click <strong>Send</strong></li></ol><h3>Template Preview</h3><p>Tesoro shows preview of template with real data:</p><ul><li>Variables are filled with contact data</li><li>See how email looks for recipient</li><li>Check personalization before sending</li></ul><h3>Quick Template Insertion</h3><p>Use shortcuts:</p><ul><li>Type <code>/</code> in email body → template menu opens</li><li>Type <code>/wel</code> → filter on \"welcome\" templates</li><li>Press <code>Enter</code> → template is inserted</li></ul><h3>Customize Template for Specific Email</h3><p>You can always modify after insertion:</p><ul><li>Add extra paragraphs</li><li>Change variable values</li><li>Add attachments</li><li>Changes apply only to this email</li><li>Original template remains unchanged</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Aplicar plantilla a nuevo email</h3><ol><li>Abre un contacto</li><li>Haz clic en <strong>Send Email</strong></li><li>En la ventana de composición, haz clic en el menú <strong>Templates</strong></li><li>Selecciona una plantilla</li><li>La plantilla se completa con todas las variables</li><li>Revisa y ajusta si es necesario</li><li>Haz clic en <strong>Send</strong></li></ol><h3>Vista previa de plantilla</h3><p>Tesoro muestra vista previa de plantilla con datos reales:</p><ul><li>Las variables se completan con datos del contacto</li><li>Ve cómo se ve el email para el destinatario</li><li>Verifica la personalización antes de enviar</li></ul><h3>Inserción rápida de plantilla</h3><p>Usa atajos:</p><ul><li>Escribe <code>/</code> en el cuerpo del email → se abre el menú de plantillas</li><li>Escribe <code>/bien</code> → filtra plantillas de \"bienvenida\"</li><li>Presiona <code>Enter</code> → la plantilla se inserta</li></ul><h3>Personalizar plantilla para email específico</h3><p>Siempre puedes modificar después de insertar:</p><ul><li>Agrega párrafos adicionales</li><li>Cambia valores de variables</li><li>Agrega adjuntos</li><li>Los cambios se aplican solo a este email</li><li>La plantilla original permanece sin cambios</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "template-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Template Best Practices",
+        "en": "Template Best Practices",
+        "es": "Mejores prácticas de plantillas"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Houd het persoonlijk:</strong> Gebruik voornaam en context variabelen</li><li><strong>Korte onderwerpregel:</strong> Max 60 karakters</li><li><strong>Duidelijke call-to-action:</strong> Wat moet klant doen?</li><li><strong>Mobiel-vriendelijk:</strong> Test hoe email eruit ziet op telefoon</li><li><strong>Voeg handtekening toe:</strong> Gebruik {{agent}} variabelen</li><li><strong>A/B test:</strong> Maak varianten en meet response rates</li><li><strong>Update regelmatig:</strong> Verouderde templates verwijderen</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Keep it personal:</strong> Use first name and context variables</li><li><strong>Short subject line:</strong> Max 60 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Mobile-friendly:</strong> Test how email looks on phone</li><li><strong>Add signature:</strong> Use {{agent}} variables</li><li><strong>A/B test:</strong> Create variants and measure response rates</li><li><strong>Update regularly:</strong> Remove outdated templates</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Manténlo personal:</strong> Usa nombre y variables de contexto</li><li><strong>Línea de asunto corta:</strong> Máx. 60 caracteres</li><li><strong>Llamado a la acción claro:</strong> ¿Qué debe hacer el cliente?</li><li><strong>Amigable para móvil:</strong> Prueba cómo se ve el email en teléfono</li><li><strong>Agrega firma:</strong> Usa variables {{agent}}</li><li><strong>Prueba A/B:</strong> Crea variantes y mide tasas de respuesta</li><li><strong>Actualiza regularmente:</strong> Elimina plantillas desactualizadas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "managing-templates",
+      "title": {
+        "nl": "Templates beheren en organiseren",
+        "en": "Managing and organizing templates",
+        "es": "Gestionar y organizar plantillas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Template Bibliotheek</h3><p>Organiseer templates voor overzicht:</p><ul><li><strong>Categorieën:</strong> Lead, Property, Deal, Follow-up, General</li><li><strong>Tags:</strong> Voeg labels toe voor filtering (bijv. \"urgent\", \"introductie\")</li><li><strong>Favorieten:</strong> Ster je meest gebruikte templates</li><li><strong>Zoeken:</strong> Zoek op naam of inhoud</li></ul><h3>Template Statistieken</h3><p>Tesoro houdt bij:</p><ul><li><strong>Usage count:</strong> Hoe vaak is template gebruikt</li><li><strong>Open rate:</strong> % van ontvangers die email opent</li><li><strong>Click rate:</strong> % die op links klikt</li><li><strong>Response rate:</strong> % die reageert</li><li><strong>Last used:</strong> Wanneer laatst gebruikt</li></ul><h3>Templates Dupliceren</h3><ol><li>Open template in bibliotheek</li><li>Klik <strong>Duplicate</strong></li><li>Nieuwe kopie wordt gemaakt</li><li>Pas aan voor andere use case</li></ol><h3>Templates Delen met Team</h3><p>Voor team collaboratie:</p><ul><li><strong>Shared templates:</strong> Zichtbaar voor hele team</li><li><strong>Personal templates:</strong> Alleen jij ziet ze</li><li>Klik <strong>Share with team</strong> om te delen</li><li>Team members kunnen gebruiken maar niet wijzigen</li></ul><h3>Templates Verwijderen</h3><ol><li>Open template</li><li>Klik <strong>...</strong> menu</li><li>Selecteer <strong>Delete</strong></li><li>Bevestig met <strong>\"Yes, delete\"</strong></li></ol><p><strong>Let op:</strong> Verzonden emails met deze template blijven behouden.</p>"
+        },
+        "en": {
+          "text": "<h3>Template Library</h3><p>Organize templates for overview:</p><ul><li><strong>Categories:</strong> Lead, Property, Deal, Follow-up, General</li><li><strong>Tags:</strong> Add labels for filtering (e.g., \"urgent\", \"introduction\")</li><li><strong>Favorites:</strong> Star your most used templates</li><li><strong>Search:</strong> Search by name or content</li></ul><h3>Template Statistics</h3><p>Tesoro tracks:</p><ul><li><strong>Usage count:</strong> How often template is used</li><li><strong>Open rate:</strong> % of recipients who open email</li><li><strong>Click rate:</strong> % who click on links</li><li><strong>Response rate:</strong> % who respond</li><li><strong>Last used:</strong> When last used</li></ul><h3>Duplicate Templates</h3><ol><li>Open template in library</li><li>Click <strong>Duplicate</strong></li><li>New copy is created</li><li>Adjust for other use case</li></ol><h3>Share Templates with Team</h3><p>For team collaboration:</p><ul><li><strong>Shared templates:</strong> Visible to entire team</li><li><strong>Personal templates:</strong> Only you see them</li><li>Click <strong>Share with team</strong> to share</li><li>Team members can use but not modify</li></ul><h3>Delete Templates</h3><ol><li>Open template</li><li>Click <strong>...</strong> menu</li><li>Select <strong>Delete</strong></li><li>Confirm with <strong>\"Yes, delete\"</strong></li></ol><p><strong>Note:</strong> Sent emails with this template are preserved.</p>"
+        },
+        "es": {
+          "text": "<h3>Biblioteca de plantillas</h3><p>Organiza plantillas para tener una vista general:</p><ul><li><strong>Categorías:</strong> Lead, Propiedad, Trato, Seguimiento, General</li><li><strong>Etiquetas:</strong> Agrega etiquetas para filtrado (ej., \"urgente\", \"introducción\")</li><li><strong>Favoritos:</strong> Marca con estrella tus plantillas más usadas</li><li><strong>Buscar:</strong> Busca por nombre o contenido</li></ul><h3>Estadísticas de plantilla</h3><p>Tesoro rastrea:</p><ul><li><strong>Conteo de uso:</strong> Con qué frecuencia se usa la plantilla</li><li><strong>Tasa de apertura:</strong> % de destinatarios que abren email</li><li><strong>Tasa de clics:</strong> % que hace clic en enlaces</li><li><strong>Tasa de respuesta:</strong> % que responde</li><li><strong>Último uso:</strong> Cuándo se usó por última vez</li></ul><h3>Duplicar plantillas</h3><ol><li>Abre plantilla en biblioteca</li><li>Haz clic en <strong>Duplicate</strong></li><li>Se crea una nueva copia</li><li>Ajusta para otro caso de uso</li></ol><h3>Compartir plantillas con equipo</h3><p>Para colaboración en equipo:</p><ul><li><strong>Plantillas compartidas:</strong> Visibles para todo el equipo</li><li><strong>Plantillas personales:</strong> Solo tú las ves</li><li>Haz clic en <strong>Share with team</strong> para compartir</li><li>Los miembros del equipo pueden usar pero no modificar</li></ul><h3>Eliminar plantillas</h3><ol><li>Abre plantilla</li><li>Haz clic en el menú <strong>...</strong></li><li>Selecciona <strong>Delete</strong></li><li>Confirma con <strong>\"Yes, delete\"</strong></li></ol><p><strong>Nota:</strong> Los emails enviados con esta plantilla se conservan.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "communication-center-overview",
+    "email-integration-setup",
+    "automated-follow-ups",
+    "communication-templates"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik templates maken in meerdere talen?",
+        "en": "Can I create templates in multiple languages?",
+        "es": "¿Puedo crear plantillas en múltiples idiomas?"
+      },
+      "answer": {
+        "nl": "Ja, maak aparte templates per taal en gebruik tags om ze te labelen (bijv. \"EN\", \"NL\", \"ES\"). Je kunt ook een taal variabele gebruiken om automatisch de juiste taal te selecteren.",
+        "en": "Yes, create separate templates per language and use tags to label them (e.g., \"EN\", \"NL\", \"ES\"). You can also use a language variable to automatically select the right language.",
+        "es": "Sí, crea plantillas separadas por idioma y usa etiquetas para etiquetarlas (ej., \"EN\", \"NL\", \"ES\"). También puedes usar una variable de idioma para seleccionar automáticamente el idioma correcto."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als een variabele geen waarde heeft?",
+        "en": "What happens if a variable has no value?",
+        "es": "¿Qué sucede si una variable no tiene valor?"
+      },
+      "answer": {
+        "nl": "Tesoro toont een waarschuwing voordat je verstuurt. Je kunt dan de lege variabele handmatig invullen of een fallback waarde instellen in template instellingen.",
+        "en": "Tesoro shows a warning before you send. You can then manually fill the empty variable or set a fallback value in template settings.",
+        "es": "Tesoro muestra una advertencia antes de enviar. Luego puedes completar manualmente la variable vacía o establecer un valor de respaldo en la configuración de la plantilla."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kunnen klanten zien dat ik een template gebruik?",
+        "en": "Can customers see that I'm using a template?",
+        "es": "¿Los clientes pueden ver que estoy usando una plantilla?"
+      },
+      "answer": {
+        "nl": "Nee, de ontvanger ziet alleen de uiteindelijke email met alle variabelen ingevuld. Het ziet eruit als een persoonlijk geschreven email.",
+        "en": "No, the recipient only sees the final email with all variables filled in. It looks like a personally written email.",
+        "es": "No, el destinatario solo ve el email final con todas las variables completadas. Se ve como un email escrito personalmente."
+      }
+    }
+  ]
+}

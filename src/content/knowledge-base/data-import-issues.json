@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "id": "data-import-issues",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "intermediate",
+    "tags": ["import", "csv", "data", "migration", "troubleshooting"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["data import", "csv import", "import problems", "migration issues", "tesoro import"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Data import problemen oplossen",
+      "en": "Resolving Data Import Issues",
+      "es": "Resolver problemas de importación de datos"
+    },
+    "description": {
+      "nl": "Los problemen op met CSV/XML imports: formatting errors, duplicate detection en field mapping.",
+      "en": "Fix problems with CSV/XML imports: formatting errors, duplicate detection and field mapping.",
+      "es": "Soluciona problemas con importaciones CSV/XML: errores de formato, detección de duplicados y mapeo de campos."
+    },
+    "icon": "upload_file"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "common-import-errors",
+      "title": {
+        "nl": "Veelvoorkomende import errors",
+        "en": "Common Import Errors",
+        "es": "Errores comunes de importación"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Ondersteunde formats:</strong></p><ul><li>CSV (.csv) - Aanbevolen</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try opnieuw</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields voor Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (minimaal één)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save en reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correcte date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Aanbevolen</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Oplossing:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save en reimport</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Supported formats:</strong></p><ul><li>CSV (.csv) - Recommended</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solution:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try again</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields for Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (at least one)</li></ul><p><strong>Solution:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save and reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correct date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recommended</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Solution:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save and reimport</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Formatos soportados:</strong></p><ul><li>CSV (.csv) - Recomendado</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solución:</strong></p><ol><li>Verifica extensión del archivo</li><li>Abre en Excel → Guardar Como → CSV UTF-8</li><li>Intenta de nuevo</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Campos requeridos para Contactos:</strong></p><ul><li>Nombre (First + Last) O Company Name</li><li>Email O Phone (al menos uno)</li></ul><p><strong>Solución:</strong></p><ol><li>Abre CSV en Excel</li><li>Agrega columnas faltantes</li><li>Completa datos requeridos</li><li>Guarda y reimporta</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Formatos de fecha correctos:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recomendado</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - formato US</li></ul><p><strong>Solución:</strong></p><ol><li>Formatea todas las columnas de fecha en Excel</li><li>Selecciona columna → Formato de Celdas → Fecha → YYYY-MM-DD</li><li>Guarda y reimporta</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "field-mapping",
+      "title": {
+        "nl": "Field mapping problemen",
+        "en": "Field Mapping Problems",
+        "es": "Problemas de mapeo de campos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>CSV columns naar Tesoro fields mappen:</h4><p><strong>Import wizard stappen:</strong></p><ol><li>Upload CSV file</li><li>Tesoro toont column preview</li><li>Map elke column naar Tesoro field:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (split automatisch)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Preview mapping</li><li>Click Import</li></ol><h4>Custom fields mappen:</h4><p>Als je custom CSV columns hebt:</p><ol><li>Create custom field in Tesoro first (Settings → Custom Fields)</li><li>During import: Map column to custom field</li><li>Data wordt geïmporteerd naar custom field</li></ol><h4>Skip ongewenste columns:</h4><ul><li>Columns die je niet wilt importeren: Selecteer \"Skip\" in mapping dropdown</li><li>Bijv. internal IDs, notes, etc.</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Map CSV columns to Tesoro fields:</h4><p><strong>Import wizard steps:</strong></p><ol><li>Upload CSV file</li><li>Tesoro shows column preview</li><li>Map each column to Tesoro field:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (splits automatically)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Preview mapping</li><li>Click Import</li></ol><h4>Map custom fields:</h4><p>If you have custom CSV columns:</p><ol><li>Create custom field in Tesoro first (Settings → Custom Fields)</li><li>During import: Map column to custom field</li><li>Data will be imported to custom field</li></ol><h4>Skip unwanted columns:</h4><ul><li>Columns you don't want to import: Select \"Skip\" in mapping dropdown</li><li>E.g. internal IDs, notes, etc.</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Mapea columnas CSV a campos de Tesoro:</h4><p><strong>Pasos del asistente de importación:</strong></p><ol><li>Sube archivo CSV</li><li>Tesoro muestra vista previa de columnas</li><li>Mapea cada columna a campo de Tesoro:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (divide automáticamente)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Vista previa de mapeo</li><li>Haz clic en Import</li></ol><h4>Mapear campos personalizados:</h4><p>Si tienes columnas CSV personalizadas:</p><ol><li>Crea campo personalizado en Tesoro primero (Settings → Custom Fields)</li><li>Durante importación: Mapea columna a campo personalizado</li><li>Los datos se importarán a campo personalizado</li></ol><h4>Omitir columnas no deseadas:</h4><ul><li>Columnas que no quieres importar: Selecciona \"Skip\" en dropdown de mapeo</li><li>Ej. IDs internos, notas, etc.</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "duplicate-handling",
+      "variant": "warning",
+      "title": {
+        "nl": "Duplicate detectie en handling",
+        "en": "Duplicate Detection and Handling",
+        "es": "Detección y manejo de duplicados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Tesoro detecteert automatisch duplicates based on:</strong></p><ul><li>Email match (primary)</li><li>Phone match (secondary)</li><li>Name + Company match (fallback)</li></ul><p><strong>Opties bij duplicate gevonden:</strong></p><ol><li><strong>Skip:</strong> Importeer duplicate niet (keep existing)</li><li><strong>Update:</strong> Update existing contact met nieuwe data</li><li><strong>Create new:</strong> Maak nieuwe contact aan (duplicates allowed)</li></ol><p><strong>Aanbevolen:</strong> Use \"Update\" voor data refresh, \"Skip\" voor clean import.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Tesoro automatically detects duplicates based on:</strong></p><ul><li>Email match (primary)</li><li>Phone match (secondary)</li><li>Name + Company match (fallback)</li></ul><p><strong>Options when duplicate found:</strong></p><ol><li><strong>Skip:</strong> Don't import duplicate (keep existing)</li><li><strong>Update:</strong> Update existing contact with new data</li><li><strong>Create new:</strong> Create new contact (duplicates allowed)</li></ol><p><strong>Recommended:</strong> Use \"Update\" for data refresh, \"Skip\" for clean import.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Tesoro detecta automáticamente duplicados basándose en:</strong></p><ul><li>Coincidencia de email (primaria)</li><li>Coincidencia de teléfono (secundaria)</li><li>Coincidencia de nombre + empresa (respaldo)</li></ul><p><strong>Opciones cuando se encuentra duplicado:</strong></p><ol><li><strong>Skip:</strong> No importar duplicado (mantener existente)</li><li><strong>Update:</strong> Actualizar contacto existente con nuevos datos</li><li><strong>Create new:</strong> Crear nuevo contacto (duplicados permitidos)</li></ol><p><strong>Recomendado:</strong> Usa \"Update\" para actualización de datos, \"Skip\" para importación limpia.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-bulk-import",
+    "contact-merge-duplicates",
+    "common-issues-solutions"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel records kan ik tegelijk importeren?",
+        "en": "How many records can I import at once?",
+        "es": "¿Cuántos registros puedo importar a la vez?"
+      },
+      "answer": {
+        "nl": "Max 5000 records per import. Voor grotere files: Split in batches van 5000. Import gebeurt in background, je kunt doorwerken.",
+        "en": "Max 5000 records per import. For larger files: Split in batches of 5000. Import happens in background, you can continue working.",
+        "es": "Máx 5000 registros por importación. Para archivos más grandes: Divide en lotes de 5000. La importación ocurre en segundo plano, puedes continuar trabajando."
+      }
+    }
+  ]
+}

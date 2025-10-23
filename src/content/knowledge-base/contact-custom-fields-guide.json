@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "id": "contact-custom-fields-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:15:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "custom-fields", "configuration", "advanced", "organization"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro custom fields", "contact custom fields", "crm customization", "add fields", "custom contact data"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Aangepaste Velden: Contacten Personaliseren voor je Business",
+      "en": "Custom Fields: Personalizing Contacts for Your Business",
+      "es": "Campos Personalizados: Personalizar Contactos para tu Negocio"
+    },
+    "description": {
+      "nl": "Leer hoe je aangepaste velden toevoegt aan contacten om sector-specifieke informatie op te slaan die uniek is voor jouw business.",
+      "en": "Learn how to add custom fields to contacts to store industry-specific information that's unique to your business.",
+      "es": "Aprende cómo agregar campos personalizados a contactos para almacenar información específica del sector que es única para tu negocio."
+    },
+    "icon": "tune"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "what-are-custom-fields",
+      "title": {
+        "nl": "Wat zijn Aangepaste Velden?",
+        "en": "What are Custom Fields?",
+        "es": "¿Qué son los Campos Personalizados?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM biedt 30+ standaard velden voor contacten. Maar elke business is uniek - misschien wil je bijhouden:</p><ul><li>Preferred investment type (luxe, budget, commercial)</li><li>Language preference (English, Spanish, Dutch)</li><li>Referral source details</li><li>Client lifetime value</li><li>VIP status level</li><li>Special requests or preferences</li></ul><p>Aangepaste velden laten je deze informatie gestructureerd opslaan zonder notities te gebruiken.</p><h3>Voordelen van Custom Fields</h3><ul><li><strong>Betere organisatie:</strong> Vaste velden in plaats van vrije tekst notities</li><li><strong>Filtering & segmentatie:</strong> Zoek en filter op custom field waarden</li><li><strong>Rapportage:</strong> Genereer rapporten op basis van custom data</li><li><strong>Workflow automatie:</strong> Trigger acties op custom field waarden</li><li><strong>API integratie:</strong> Sync custom fields met andere systemen</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM offers 30+ standard fields for contacts. But every business is unique - maybe you want to track:</p><ul><li>Preferred investment type (luxury, budget, commercial)</li><li>Language preference (English, Spanish, Dutch)</li><li>Referral source details</li><li>Client lifetime value</li><li>VIP status level</li><li>Special requests or preferences</li></ul><p>Custom fields let you store this information in a structured way without using notes.</p><h3>Benefits of Custom Fields</h3><ul><li><strong>Better organization:</strong> Fixed fields instead of free-text notes</li><li><strong>Filtering & segmentation:</strong> Search and filter on custom field values</li><li><strong>Reporting:</strong> Generate reports based on custom data</li><li><strong>Workflow automation:</strong> Trigger actions on custom field values</li><li><strong>API integration:</strong> Sync custom fields with other systems</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM ofrece más de 30 campos estándar para contactos. Pero cada negocio es único - tal vez quieras seguir:</p><ul><li>Tipo de inversión preferido (lujo, presupuesto, comercial)</li><li>Preferencia de idioma (inglés, español, holandés)</li><li>Detalles de fuente de referencia</li><li>Valor de vida del cliente</li><li>Nivel de estado VIP</li><li>Solicitudes o preferencias especiales</li></ul><p>Los campos personalizados te permiten almacenar esta información de manera estructurada sin usar notas.</p><h3>Beneficios de los Campos Personalizados</h3><ul><li><strong>Mejor organización:</strong> Campos fijos en lugar de notas de texto libre</li><li><strong>Filtrado y segmentación:</strong> Buscar y filtrar por valores de campo personalizado</li><li><strong>Reportes:</strong> Generar informes basados en datos personalizados</li><li><strong>Automatización de flujo de trabajo:</strong> Activar acciones en valores de campo personalizado</li><li><strong>Integración API:</strong> Sincronizar campos personalizados con otros sistemas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "creating-custom-fields",
+      "title": {
+        "nl": "Aangepaste Velden Aanmaken",
+        "en": "Creating Custom Fields",
+        "es": "Crear Campos Personalizados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Ga naar Settings",
+            "en": "Step 1: Go to Settings",
+            "es": "Paso 1: Ir a Settings"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Alleen beheerders kunnen custom fields aanmaken:</p><ol><li>Klik op het <strong>tandwiel icoon</strong> (Settings) linksonder</li><li>Kies <strong>Custom Fields</strong> uit het settings menu</li><li>Selecteer <strong>Contacts</strong> als resource type</li></ol><p>Je ziet nu een lijst van alle bestaande custom fields voor contacten.</p>"
+            },
+            "en": {
+              "text": "<p>Only administrators can create custom fields:</p><ol><li>Click the <strong>gear icon</strong> (Settings) in the bottom left</li><li>Choose <strong>Custom Fields</strong> from the settings menu</li><li>Select <strong>Contacts</strong> as resource type</li></ol><p>You'll now see a list of all existing custom fields for contacts.</p>"
+            },
+            "es": {
+              "text": "<p>Solo los administradores pueden crear campos personalizados:</p><ol><li>Haz clic en el <strong>icono de engranaje</strong> (Settings) en la parte inferior izquierda</li><li>Elige <strong>Custom Fields</strong> del menú de configuración</li><li>Selecciona <strong>Contacts</strong> como tipo de recurso</li></ol><p>Ahora verás una lista de todos los campos personalizados existentes para contactos.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Voeg een Nieuw Veld Toe",
+            "en": "Step 2: Add a New Field",
+            "es": "Paso 2: Agregar un Nuevo Campo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik op <strong>+ Add Custom Field</strong>:</p><p><strong>Vul in:</strong></p><ul><li><strong>Field Name:</strong> Intern naam (bijv. 'language_preference')</li><li><strong>Field Label:</strong> Weergavenaam (bijv. 'Language Preference')</li><li><strong>Field Type:</strong> Kies uit Text, Number, Date, Dropdown, Checkbox</li><li><strong>Required:</strong> Is dit veld verplicht?</li><li><strong>Default value:</strong> Standaardwaarde (optioneel)</li></ul><p><strong>Field Types Uitgelegd:</strong></p><ul><li><strong>Text:</strong> Vrije tekst (bijv. referral details)</li><li><strong>Number:</strong> Numeriek (bijv. client lifetime value)</li><li><strong>Date:</strong> Datum selectie (bijv. preferred move-in date)</li><li><strong>Dropdown:</strong> Keuzelijst (bijv. VIP level: Bronze, Silver, Gold)</li><li><strong>Checkbox:</strong> Ja/Nee (bijv. Newsletter subscription)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Click <strong>+ Add Custom Field</strong>:</p><p><strong>Fill in:</strong></p><ul><li><strong>Field Name:</strong> Internal name (e.g., 'language_preference')</li><li><strong>Field Label:</strong> Display name (e.g., 'Language Preference')</li><li><strong>Field Type:</strong> Choose from Text, Number, Date, Dropdown, Checkbox</li><li><strong>Required:</strong> Is this field required?</li><li><strong>Default value:</strong> Default value (optional)</li></ul><p><strong>Field Types Explained:</strong></p><ul><li><strong>Text:</strong> Free text (e.g., referral details)</li><li><strong>Number:</strong> Numeric (e.g., client lifetime value)</li><li><strong>Date:</strong> Date selection (e.g., preferred move-in date)</li><li><strong>Dropdown:</strong> Selection list (e.g., VIP level: Bronze, Silver, Gold)</li><li><strong>Checkbox:</strong> Yes/No (e.g., Newsletter subscription)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Haz clic en <strong>+ Add Custom Field</strong>:</p><p><strong>Completa:</strong></p><ul><li><strong>Field Name:</strong> Nombre interno (ej., 'language_preference')</li><li><strong>Field Label:</strong> Nombre de visualización (ej., 'Language Preference')</li><li><strong>Field Type:</strong> Elige entre Text, Number, Date, Dropdown, Checkbox</li><li><strong>Required:</strong> ¿Es este campo obligatorio?</li><li><strong>Default value:</strong> Valor predeterminado (opcional)</li></ul><p><strong>Tipos de Campo Explicados:</strong></p><ul><li><strong>Text:</strong> Texto libre (ej., detalles de referencia)</li><li><strong>Number:</strong> Numérico (ej., valor de vida del cliente)</li><li><strong>Date:</strong> Selección de fecha (ej., fecha de mudanza preferida)</li><li><strong>Dropdown:</strong> Lista de selección (ej., nivel VIP: Bronze, Silver, Gold)</li><li><strong>Checkbox:</strong> Sí/No (ej., suscripción a newsletter)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Configureer Dropdown Opties (indien van toepassing)",
+            "en": "Step 3: Configure Dropdown Options (if applicable)",
+            "es": "Paso 3: Configurar Opciones de Dropdown (si aplica)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Als je een Dropdown field type kiest, moet je de opties definiëren:</p><p><strong>Voorbeeld: VIP Level dropdown</strong></p><ol><li>Field Type: <strong>Dropdown</strong></li><li>Klik op <strong>Add Option</strong></li><li>Voeg opties toe: 'Standard', 'Bronze', 'Silver', 'Gold', 'Platinum'</li><li>Kies een default optie (bijv. 'Standard')</li></ol><p><strong>Tips voor Dropdown opties:</strong></p><ul><li>Houd de lijst kort (max 10-15 opties)</li><li>Gebruik duidelijke labels</li><li>Sorteer logisch (alfabetisch of op prioriteit)</li><li>Vermijd overlap tussen opties</li></ul>"
+            },
+            "en": {
+              "text": "<p>If you choose a Dropdown field type, you need to define the options:</p><p><strong>Example: VIP Level dropdown</strong></p><ol><li>Field Type: <strong>Dropdown</strong></li><li>Click <strong>Add Option</strong></li><li>Add options: 'Standard', 'Bronze', 'Silver', 'Gold', 'Platinum'</li><li>Choose a default option (e.g., 'Standard')</li></ol><p><strong>Tips for Dropdown options:</strong></p><ul><li>Keep the list short (max 10-15 options)</li><li>Use clear labels</li><li>Sort logically (alphabetically or by priority)</li><li>Avoid overlap between options</li></ul>"
+            },
+            "es": {
+              "text": "<p>Si eliges un tipo de campo Dropdown, necesitas definir las opciones:</p><p><strong>Ejemplo: dropdown de Nivel VIP</strong></p><ol><li>Field Type: <strong>Dropdown</strong></li><li>Haz clic en <strong>Add Option</strong></li><li>Agrega opciones: 'Standard', 'Bronze', 'Silver', 'Gold', 'Platinum'</li><li>Elige una opción predeterminada (ej., 'Standard')</li></ol><p><strong>Consejos para opciones de Dropdown:</strong></p><ul><li>Mantén la lista corta (máx 10-15 opciones)</li><li>Usa etiquetas claras</li><li>Ordena lógicamente (alfabéticamente o por prioridad)</li><li>Evita superposición entre opciones</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Gebruik de Custom Fields",
+            "en": "Step 4: Use the Custom Fields",
+            "es": "Paso 4: Usar los Campos Personalizados"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Zodra je een custom field hebt aangemaakt, verschijnt deze automatisch:</p><ul><li><strong>In het contact formulier:</strong> Bij het aanmaken/bewerken van contacten</li><li><strong>In de contact detail pagina:</strong> Als apart veld zichtbaar</li><li><strong>In filters:</strong> Je kunt nu filteren op deze waarde</li><li><strong>In exports:</strong> Custom fields worden meegenomen in CSV exports</li><li><strong>In de API:</strong> Custom fields zijn toegankelijk via de API</li></ul><p><strong>Custom field waarden invullen:</strong></p><ol><li>Open een contact (bestaand of nieuw)</li><li>Scroll naar beneden naar <strong>Custom Fields</strong> sectie</li><li>Vul de waarde in</li><li>Klik <strong>Save</strong></li></ol>"
+            },
+            "en": {
+              "text": "<p>Once you've created a custom field, it automatically appears:</p><ul><li><strong>In the contact form:</strong> When creating/editing contacts</li><li><strong>In the contact detail page:</strong> Visible as a separate field</li><li><strong>In filters:</strong> You can now filter by this value</li><li><strong>In exports:</strong> Custom fields are included in CSV exports</li><li><strong>In the API:</strong> Custom fields are accessible via the API</li></ul><p><strong>Filling in custom field values:</strong></p><ol><li>Open a contact (existing or new)</li><li>Scroll down to <strong>Custom Fields</strong> section</li><li>Fill in the value</li><li>Click <strong>Save</strong></li></ol>"
+            },
+            "es": {
+              "text": "<p>Una vez que has creado un campo personalizado, aparece automáticamente:</p><ul><li><strong>En el formulario de contacto:</strong> Al crear/editar contactos</li><li><strong>En la página de detalles del contacto:</strong> Visible como un campo separado</li><li><strong>En filtros:</strong> Ahora puedes filtrar por este valor</li><li><strong>En exportaciones:</strong> Los campos personalizados se incluyen en exportaciones CSV</li><li><strong>En la API:</strong> Los campos personalizados son accesibles vía API</li></ul><p><strong>Completar valores de campo personalizado:</strong></p><ol><li>Abre un contacto (existente o nuevo)</li><li>Desplázate hacia abajo a la sección <strong>Custom Fields</strong></li><li>Completa el valor</li><li>Haz clic en <strong>Save</strong></li></ol>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best Practices voor Custom Fields",
+        "en": "Best Practices for Custom Fields",
+        "es": "Mejores Prácticas para Campos Personalizados"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Plan vooruit:</strong> Bedenk welke data je echt nodig hebt voordat je velden aanmaakt</li><li><strong>Consistente naming:</strong> Gebruik duidelijke namen zoals 'vip_level' niet 'field1'</li><li><strong>Beperk het aantal:</strong> Teveel custom fields maken het formulier onoverzichtelijk</li><li><strong>Gebruik dropdowns:</strong> Voor gestandaardiseerde waarden (beter dan vrije tekst)</li><li><strong>Documenteer:</strong> Houd bij wat elk custom field betekent en hoe het gebruikt wordt</li><li><strong>Test eerst:</strong> Maak een test field aan voordat je het breed uitrolt</li><li><strong>Review regelmatig:</strong> Verwijder custom fields die niet meer gebruikt worden</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Plan ahead:</strong> Think about what data you really need before creating fields</li><li><strong>Consistent naming:</strong> Use clear names like 'vip_level' not 'field1'</li><li><strong>Limit the number:</strong> Too many custom fields make the form cluttered</li><li><strong>Use dropdowns:</strong> For standardized values (better than free text)</li><li><strong>Document:</strong> Keep track of what each custom field means and how it's used</li><li><strong>Test first:</strong> Create a test field before rolling it out broadly</li><li><strong>Review regularly:</strong> Remove custom fields that are no longer used</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Planifica con anticipación:</strong> Piensa qué datos realmente necesitas antes de crear campos</li><li><strong>Nomenclatura consistente:</strong> Usa nombres claros como 'vip_level' no 'field1'</li><li><strong>Limita el número:</strong> Demasiados campos personalizados desordenan el formulario</li><li><strong>Usa dropdowns:</strong> Para valores estandarizados (mejor que texto libre)</li><li><strong>Documenta:</strong> Mantén registro de qué significa cada campo personalizado y cómo se usa</li><li><strong>Prueba primero:</strong> Crea un campo de prueba antes de implementarlo ampliamente</li><li><strong>Revisa regularmente:</strong> Elimina campos personalizados que ya no se usan</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "creating-contacts-step-by-step",
+    "contact-tags-organization",
+    "contact-advanced-search"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een custom field later verwijderen?",
+        "en": "Can I delete a custom field later?",
+        "es": "¿Puedo eliminar un campo personalizado más tarde?"
+      },
+      "answer": {
+        "nl": "Ja, maar wees voorzichtig. Als je een custom field verwijdert, gaat alle data in dat veld verloren voor alle contacten. Het is beter om een veld te 'hiden' als je het niet meer wilt gebruiken.",
+        "en": "Yes, but be careful. If you delete a custom field, all data in that field is lost for all contacts. It's better to 'hide' a field if you no longer want to use it.",
+        "es": "Sí, pero ten cuidado. Si eliminas un campo personalizado, todos los datos en ese campo se pierden para todos los contactos. Es mejor 'ocultar' un campo si ya no quieres usarlo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel custom fields kan ik aanmaken?",
+        "en": "How many custom fields can I create?",
+        "es": "¿Cuántos campos personalizados puedo crear?"
+      },
+      "answer": {
+        "nl": "Er is geen hard limiet, maar we raden aan om maximaal 10-15 custom fields per resource type te gebruiken voor overzichtelijkheid.",
+        "en": "There's no hard limit, but we recommend using a maximum of 10-15 custom fields per resource type for clarity.",
+        "es": "No hay un límite estricto, pero recomendamos usar un máximo de 10-15 campos personalizados por tipo de recurso para mayor claridad."
+      }
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "id": "creating-deals-guide",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T10:15:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop",
+    "keywords": ["create deal", "new deal", "link contacts", "link properties", "deal creation"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deals creëren en linken van contacts en properties",
+      "en": "Creating Deals and Linking Contacts and Properties",
+      "es": "Creando deals y vinculando contactos y propiedades"
+    },
+    "description": {
+      "nl": "Stapsgewijze gids voor het creëren van nieuwe deals, het linken van contacts en properties, en het configureren van deal parameters voor optimale tracking.",
+      "en": "Step-by-step guide to creating new deals, linking contacts and properties, and configuring deal parameters for optimal tracking.",
+      "es": "Guía paso a paso para crear nuevos deals, vincular contactos y propiedades, y configurar parámetros del deal para un seguimiento óptimo."
+    },
+    "icon": "add_circle"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het creëren van een nieuwe deal in Tesoro CRM is het startpunt van je sales journey. Dit proces koppelt een gekwalificeerde contact aan relevante properties en initialiseert tracking van alle sales activities.</p><p>Deze guide laat je zien hoe je effectief nieuwe deals creëert met de juiste contacts, properties, en configuratie voor maximum conversie kans.</p>"
+        },
+        "en": {
+          "text": "<p>Creating a new deal in Tesoro CRM is the starting point of your sales journey. This process connects a qualified contact to relevant properties and initializes tracking of all sales activities.</p><p>This guide shows you how to effectively create new deals with the right contacts, properties, and configuration for maximum conversion chances.</p>"
+        },
+        "es": {
+          "text": "<p>Crear un nuevo deal en Tesoro CRM es el punto de partida de tu viaje de ventas. Este proceso conecta un contacto calificado con propiedades relevantes e inicializa el seguimiento de todas las actividades de ventas.</p><p>Esta guía te muestra cómo crear efectivamente nuevos deals con los contactos, propiedades y configuración correctos para máximas posibilidades de conversión.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "create-deal-process",
+      "title": {
+        "nl": "Deal creatie workflow",
+        "en": "Deal Creation Workflow",
+        "es": "Flujo de trabajo de creación de deal"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Navigeer naar deals sectie",
+            "en": "1. Navigate to Deals Section",
+            "es": "1. Navegar a la sección de Deals"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Open het hoofdmenu en selecteer <strong>Deals</strong>. Je ziet de deal pipeline overview met alle actieve deals.</p><p>Click op de <strong>+ New Deal</strong> button rechtsboven om het deal creation formulier te openen.</p>"
+            },
+            "en": {
+              "text": "<p>Open the main menu and select <strong>Deals</strong>. You'll see the deal pipeline overview with all active deals.</p><p>Click on the <strong>+ New Deal</strong> button in the top right to open the deal creation form.</p>"
+            },
+            "es": {
+              "text": "<p>Abre el menú principal y selecciona <strong>Deals</strong>. Verás la descripción general del pipeline de deals con todos los deals activos.</p><p>Haz clic en el botón <strong>+ Nuevo Deal</strong> en la parte superior derecha para abrir el formulario de creación de deal.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Selecteer primary contact",
+            "en": "2. Select Primary Contact",
+            "es": "2. Seleccionar contacto principal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Selecteer de primary contact voor deze deal. Dit is meestal de buyer of seller met wie je direct communiceert.</p><p><strong>Contact zoeken:</strong></p><ul><li>Type naam of email in search field</li><li>Systeem toont matching contacts uit je database</li><li>Selecteer de juiste contact</li><li>System auto-populates contact details en preferences</li></ul><p><strong>Contact qualification check:</strong> Zorg dat contact minimaal heeft:</p><ul><li>Naam en email (required)</li><li>Phone number (aanbevolen)</li><li>Property preferences (type, budget, locatie)</li><li>Timeline informatie</li></ul>"
+            },
+            "en": {
+              "text": "<p>Select the primary contact for this deal. This is usually the buyer or seller you're directly communicating with.</p><p><strong>Search contact:</strong></p><ul><li>Type name or email in search field</li><li>System shows matching contacts from your database</li><li>Select the correct contact</li><li>System auto-populates contact details and preferences</li></ul><p><strong>Contact qualification check:</strong> Ensure contact has at minimum:</p><ul><li>Name and email (required)</li><li>Phone number (recommended)</li><li>Property preferences (type, budget, location)</li><li>Timeline information</li></ul>"
+            },
+            "es": {
+              "text": "<p>Selecciona el contacto principal para este deal. Este es usualmente el comprador o vendedor con quien te estás comunicando directamente.</p><p><strong>Buscar contacto:</strong></p><ul><li>Escribe nombre o email en el campo de búsqueda</li><li>El sistema muestra contactos coincidentes de tu base de datos</li><li>Selecciona el contacto correcto</li><li>El sistema auto-completa detalles y preferencias del contacto</li></ul><p><strong>Verificación de calificación del contacto:</strong> Asegúrate de que el contacto tenga como mínimo:</p><ul><li>Nombre y email (obligatorio)</li><li>Número de teléfono (recomendado)</li><li>Preferencias de propiedades (tipo, presupuesto, ubicación)</li><li>Información de cronograma</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Configureer deal parameters",
+            "en": "3. Configure Deal Parameters",
+            "es": "3. Configurar parámetros del deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Vul de basis deal informatie in:</p><ul><li><strong>Deal name:</strong> Descriptive name (bijv. 'Villa purchase - John Smith')</li><li><strong>Deal type:</strong> Sale, Rent, Lease, of Commercial</li><li><strong>Contact type:</strong> Buyer, Seller, Investor, Developer, Landlord</li><li><strong>Deal value:</strong> Expected transaction value (optioneel)</li><li><strong>Commission %:</strong> Your commission percentage (optioneel)</li><li><strong>Closing date:</strong> Expected closing date (optioneel maar aanbevolen)</li><li><strong>Owner:</strong> Primaire agent responsible voor deze deal</li><li><strong>Status:</strong> Initial status (meestal 'Lead' of 'Qualified')</li></ul><p><strong>Tip:</strong> Vul minimaal deal name, type, en owner in. Andere velden kun je later updaten.</p>"
+            },
+            "en": {
+              "text": "<p>Fill in the basic deal information:</p><ul><li><strong>Deal name:</strong> Descriptive name (e.g., 'Villa purchase - John Smith')</li><li><strong>Deal type:</strong> Sale, Rent, Lease, or Commercial</li><li><strong>Contact type:</strong> Buyer, Seller, Investor, Developer, Landlord</li><li><strong>Deal value:</strong> Expected transaction value (optional)</li><li><strong>Commission %:</strong> Your commission percentage (optional)</li><li><strong>Closing date:</strong> Expected closing date (optional but recommended)</li><li><strong>Owner:</strong> Primary agent responsible for this deal</li><li><strong>Status:</strong> Initial status (usually 'Lead' or 'Qualified')</li></ul><p><strong>Tip:</strong> Fill in at least deal name, type, and owner. Other fields can be updated later.</p>"
+            },
+            "es": {
+              "text": "<p>Completa la información básica del deal:</p><ul><li><strong>Nombre del deal:</strong> Nombre descriptivo (ej., 'Compra de villa - John Smith')</li><li><strong>Tipo de deal:</strong> Venta, Alquiler, Arrendamiento, o Comercial</li><li><strong>Tipo de contacto:</strong> Comprador, Vendedor, Inversor, Desarrollador, Propietario</li><li><strong>Valor del deal:</strong> Valor de transacción esperado (opcional)</li><li><strong>% de comisión:</strong> Tu porcentaje de comisión (opcional)</li><li><strong>Fecha de cierre:</strong> Fecha de cierre esperada (opcional pero recomendado)</li><li><strong>Propietario:</strong> Agente principal responsable de este deal</li><li><strong>Estado:</strong> Estado inicial (usualmente 'Lead' o 'Calificado')</li></ul><p><strong>Consejo:</strong> Completa al menos nombre del deal, tipo y propietario. Otros campos pueden actualizarse después.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. AI property suggestions gebruiken",
+            "en": "4. Use AI Property Suggestions",
+            "es": "4. Usar sugerencias de propiedades IA"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na het selecteren van contact, activeert het systeem automatisch de AI property matching engine.</p><p><strong>Viewing AI suggestions:</strong></p><ul><li>Click op <strong>Suggest Properties</strong> tab/button</li><li>System analyseert contact preferences en beschikbare inventory</li><li>AI toont ranked list van matching properties met match score</li><li>Review property details, images, en specifications</li></ul><p><strong>Match criteria:</strong></p><ul><li>Price range (buyer budget vs property price)</li><li>Location (preferred areas vs property location)</li><li>Property type (preferences vs actual type)</li><li>Size requirements (bedrooms, bathrooms, m²)</li><li>Features (pool, garage, garden, etc.)</li><li>Availability (timeline match)</li></ul><p><strong>Tip:</strong> Selecteer minimaal 3-5 properties om buyer options te geven.</p>"
+            },
+            "en": {
+              "text": "<p>After selecting the contact, the system automatically activates the AI property matching engine.</p><p><strong>Viewing AI suggestions:</strong></p><ul><li>Click on <strong>Suggest Properties</strong> tab/button</li><li>System analyzes contact preferences and available inventory</li><li>AI shows ranked list of matching properties with match score</li><li>Review property details, images, and specifications</li></ul><p><strong>Match criteria:</strong></p><ul><li>Price range (buyer budget vs property price)</li><li>Location (preferred areas vs property location)</li><li>Property type (preferences vs actual type)</li><li>Size requirements (bedrooms, bathrooms, m²)</li><li>Features (pool, garage, garden, etc.)</li><li>Availability (timeline match)</li></ul><p><strong>Tip:</strong> Select at least 3-5 properties to give buyer options.</p>"
+            },
+            "es": {
+              "text": "<p>Después de seleccionar el contacto, el sistema activa automáticamente el motor de coincidencia de propiedades IA.</p><p><strong>Viendo sugerencias IA:</strong></p><ul><li>Haz clic en la pestaña/botón <strong>Sugerir Propiedades</strong></li><li>El sistema analiza las preferencias del contacto y el inventario disponible</li><li>La IA muestra una lista clasificada de propiedades coincidentes con puntuación de coincidencia</li><li>Revisa detalles, imágenes y especificaciones de las propiedades</li></ul><p><strong>Criterios de coincidencia:</strong></p><ul><li>Rango de precio (presupuesto del comprador vs precio de la propiedad)</li><li>Ubicación (áreas preferidas vs ubicación de la propiedad)</li><li>Tipo de propiedad (preferencias vs tipo real)</li><li>Requisitos de tamaño (dormitorios, baños, m²)</li><li>Características (piscina, garaje, jardín, etc.)</li><li>Disponibilidad (coincidencia de cronograma)</li></ul><p><strong>Consejo:</strong> Selecciona al menos 3-5 propiedades para dar opciones al comprador.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "5. Properties handmatig toevoegen",
+            "en": "5. Add Properties Manually",
+            "es": "5. Agregar propiedades manualmente"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Naast AI suggestions kun je ook handmatig properties toevoegen:</p><p><strong>Manual property selection:</strong></p><ul><li>Click op <strong>Add Property</strong> button</li><li>Use search field om properties te vinden (naam, reference, locatie)</li><li>Filter properties met advanced filters (type, price, location)</li><li>Select property en add to deal</li></ul><p><strong>Property offer status:</strong> Bij toevoegen kun je per property instellen:</p><ul><li><strong>Interested:</strong> Property is interesting voor buyer</li><li><strong>Offered:</strong> Je hebt property officially offered aan buyer</li><li><strong>Accepted:</strong> Buyer heeft interesse confirmed</li><li><strong>Rejected:</strong> Buyer heeft property declined (met reason)</li><li><strong>Viewing scheduled:</strong> Viewing appointment is set</li></ul>"
+            },
+            "en": {
+              "text": "<p>In addition to AI suggestions, you can also manually add properties:</p><p><strong>Manual property selection:</strong></p><ul><li>Click on <strong>Add Property</strong> button</li><li>Use search field to find properties (name, reference, location)</li><li>Filter properties with advanced filters (type, price, location)</li><li>Select property and add to deal</li></ul><p><strong>Property offer status:</strong> When adding, you can set per property:</p><ul><li><strong>Interested:</strong> Property is interesting for buyer</li><li><strong>Offered:</strong> You've officially offered property to buyer</li><li><strong>Accepted:</strong> Buyer has confirmed interest</li><li><strong>Rejected:</strong> Buyer has declined property (with reason)</li><li><strong>Viewing scheduled:</strong> Viewing appointment is set</li></ul>"
+            },
+            "es": {
+              "text": "<p>Además de las sugerencias IA, también puedes agregar propiedades manualmente:</p><p><strong>Selección manual de propiedades:</strong></p><ul><li>Haz clic en el botón <strong>Agregar Propiedad</strong></li><li>Usa el campo de búsqueda para encontrar propiedades (nombre, referencia, ubicación)</li><li>Filtra propiedades con filtros avanzados (tipo, precio, ubicación)</li><li>Selecciona la propiedad y agrégala al deal</li></ul><p><strong>Estado de oferta de propiedad:</strong> Al agregar, puedes establecer por propiedad:</p><ul><li><strong>Interesado:</strong> La propiedad es interesante para el comprador</li><li><strong>Ofrecida:</strong> Has ofrecido oficialmente la propiedad al comprador</li><li><strong>Aceptada:</strong> El comprador ha confirmado interés</li><li><strong>Rechazada:</strong> El comprador ha declinado la propiedad (con razón)</li><li><strong>Visita programada:</strong> Se ha establecido cita de visita</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "6. Additional contacts toevoegen",
+            "en": "6. Add Additional Contacts",
+            "es": "6. Agregar contactos adicionales"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Deals kunnen meerdere participants hebben naast de primary contact:</p><p><strong>Adding participants:</strong></p><ul><li>Click op <strong>Add Contact</strong> in contacts sectie</li><li>Search en select additional contact</li><li>Assign role: Co-buyer, Legal advisor, Bank representative, etc.</li><li>Set notification preferences voor deze contact</li></ul><p><strong>Common additional contacts:</strong></p><ul><li><strong>Co-buyer:</strong> Partner of family member in purchase</li><li><strong>Seller representative:</strong> Bij negotiation</li><li><strong>Legal advisor:</strong> Lawyer handling paperwork</li><li><strong>Bank representative:</strong> Mortgage officer</li><li><strong>Notary:</strong> Voor contract signing</li></ul>"
+            },
+            "en": {
+              "text": "<p>Deals can have multiple participants besides the primary contact:</p><p><strong>Adding participants:</strong></p><ul><li>Click on <strong>Add Contact</strong> in contacts section</li><li>Search and select additional contact</li><li>Assign role: Co-buyer, Legal advisor, Bank representative, etc.</li><li>Set notification preferences for this contact</li></ul><p><strong>Common additional contacts:</strong></p><ul><li>Co-buyer:</strong> Partner or family member in purchase</li><li><strong>Seller representative:</strong> In negotiation</li><li><strong>Legal advisor:</strong> Lawyer handling paperwork</li><li><strong>Bank representative:</strong> Mortgage officer</li><li><strong>Notary:</strong> For contract signing</li></ul>"
+            },
+            "es": {
+              "text": "<p>Los deals pueden tener múltiples participantes además del contacto principal:</p><p><strong>Agregando participantes:</strong></p><ul><li>Haz clic en <strong>Agregar Contacto</strong> en la sección de contactos</li><li>Busca y selecciona contacto adicional</li><li>Asigna rol: Co-comprador, Asesor legal, Representante bancario, etc.</li><li>Establece preferencias de notificación para este contacto</li></ul><p><strong>Contactos adicionales comunes:</strong></p><ul><li><strong>Co-comprador:</strong> Pareja o familiar en la compra</li><li><strong>Representante del vendedor:</strong> En negociación</li><li><strong>Asesor legal:</strong> Abogado manejando documentación</li><li><strong>Representante bancario:</strong> Oficial de hipoteca</li><li><strong>Notario:</strong> Para firma de contrato</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "7. Save en activate deal",
+            "en": "7. Save and Activate Deal",
+            "es": "7. Guardar y activar deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Review alle informatie en save de deal:</p><p><strong>Pre-save checklist:</strong></p><ul><li>Primary contact selected</li><li>Deal name en type ingevuld</li><li>Owner assigned</li><li>Minimaal 1 property linked (optioneel maar aanbevolen)</li><li>Initial status set</li></ul><p>Click <strong>Create Deal</strong> om deal te activeren. Het systeem:</p><ul><li>Creëert deal in pipeline met specified status</li><li>Links alle selected properties en contacts</li><li>Initializes activity tracking</li><li>Sends notifications naar assigned owner</li><li>Toont deal in Kanban board en list views</li></ul><p><strong>Post-creation:</strong> Je kunt direct beginnen met:</p><ul><li>Adding notes en comments</li><li>Scheduling viewings</li><li>Creating tasks</li><li>Sending emails via integrated inbox</li></ul>"
+            },
+            "en": {
+              "text": "<p>Review all information and save the deal:</p><p><strong>Pre-save checklist:</strong></p><ul><li>Primary contact selected</li><li>Deal name and type filled in</li><li>Owner assigned</li><li>At least 1 property linked (optional but recommended)</li><li>Initial status set</li></ul><p>Click <strong>Create Deal</strong> to activate deal. The system:</p><ul><li>Creates deal in pipeline with specified status</li><li>Links all selected properties and contacts</li><li>Initializes activity tracking</li><li>Sends notifications to assigned owner</li><li>Shows deal in Kanban board and list views</li></ul><p><strong>Post-creation:</strong> You can immediately start:</p><ul><li>Adding notes and comments</li><li>Scheduling viewings</li><li>Creating tasks</li><li>Sending emails via integrated inbox</li></ul>"
+            },
+            "es": {
+              "text": "<p>Revisa toda la información y guarda el deal:</p><p><strong>Lista de verificación previa al guardado:</strong></p><ul><li>Contacto principal seleccionado</li><li>Nombre y tipo de deal completados</li><li>Propietario asignado</li><li>Al menos 1 propiedad vinculada (opcional pero recomendado)</li><li>Estado inicial establecido</li></ul><p>Haz clic en <strong>Crear Deal</strong> para activar el deal. El sistema:</p><ul><li>Crea deal en pipeline con estado especificado</li><li>Vincula todas las propiedades y contactos seleccionados</li><li>Inicializa seguimiento de actividades</li><li>Envía notificaciones al propietario asignado</li><li>Muestra deal en tablero Kanban y vistas de lista</li></ul><p><strong>Post-creación:</strong> Puedes comenzar inmediatamente:</p><ul><li>Agregando notas y comentarios</li><li>Programando visitas</li><li>Creando tareas</li><li>Enviando emails vía bandeja de entrada integrada</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "quick-create",
+      "variant": "info",
+      "title": {
+        "nl": "Quick create vs full create",
+        "en": "Quick Create vs Full Create",
+        "es": "Creación rápida vs creación completa"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Quick create:</strong> Voor snelle deal creation met minimale informatie (contact, name, type). Ideaal voor initial lead capture.</p><p><strong>Full create:</strong> Complete deal setup met all properties, contacts, values, en configuration. Best voor qualified opportunities.</p><p>Je kunt altijd beginnen met quick create en later upgraden naar full details.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Quick create:</strong> For fast deal creation with minimal information (contact, name, type). Ideal for initial lead capture.</p><p><strong>Full create:</strong> Complete deal setup with all properties, contacts, values, and configuration. Best for qualified opportunities.</p><p>You can always start with quick create and later upgrade to full details.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Creación rápida:</strong> Para creación rápida de deals con información mínima (contacto, nombre, tipo). Ideal para captura inicial de leads.</p><p><strong>Creación completa:</strong> Configuración completa del deal con todas las propiedades, contactos, valores y configuración. Mejor para oportunidades calificadas.</p><p>Siempre puedes comenzar con creación rápida y luego actualizar a detalles completos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor deal creation",
+        "en": "Best Practices for Deal Creation",
+        "es": "Mejores prácticas para creación de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Qualify first:</strong> Ensure contact is qualified (budget, timeline, motivation) voor deal creation</li><li><strong>Use AI suggestions:</strong> Laat AI minimaal 3-5 properties suggereren voor better buyer choice</li><li><strong>Set realistic dates:</strong> Add realistic closing dates voor accurate forecasting</li><li><strong>Document criteria:</strong> Add notes met buyer preferences en requirements</li><li><strong>Assign ownership:</strong> Altijd primaire owner toewijzen voor accountability</li><li><strong>Link immediately:</strong> Link properties direct bij creation voor tracking continuity</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Qualify first:</strong> Ensure contact is qualified (budget, timeline, motivation) before deal creation</li><li><strong>Use AI suggestions:</strong> Let AI suggest at least 3-5 properties for better buyer choice</li><li><strong>Set realistic dates:</strong> Add realistic closing dates for accurate forecasting</li><li><strong>Document criteria:</strong> Add notes with buyer preferences and requirements</li><li><strong>Assign ownership:</strong> Always assign primary owner for accountability</li><li><strong>Link immediately:</strong> Link properties directly at creation for tracking continuity</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Calificar primero:</strong> Asegúrate de que el contacto esté calificado (presupuesto, cronograma, motivación) antes de crear el deal</li><li><strong>Usar sugerencias IA:</strong> Deja que la IA sugiera al menos 3-5 propiedades para mejor elección del comprador</li><li><strong>Establecer fechas realistas:</strong> Agrega fechas de cierre realistas para pronósticos precisos</li><li><strong>Documentar criterios:</strong> Agrega notas con preferencias y requisitos del comprador</li><li><strong>Asignar propiedad:</strong> Siempre asigna propietario principal para responsabilidad</li><li><strong>Vincular inmediatamente:</strong> Vincula propiedades directamente en la creación para continuidad de seguimiento</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-stages-explained",
+    "ai-property-matching-advanced"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een deal creëren zonder properties?",
+        "en": "Can I create a deal without properties?",
+        "es": "¿Puedo crear un deal sin propiedades?"
+      },
+      "answer": {
+        "nl": "Ja, je kunt deals creëren zonder properties. Dit is useful voor early-stage leads waar je nog property preferences aan het bepalen bent. Je kunt properties later toevoegen via AI suggestions of manual selection.",
+        "en": "Yes, you can create deals without properties. This is useful for early-stage leads where you're still determining property preferences. You can add properties later via AI suggestions or manual selection.",
+        "es": "Sí, puedes crear deals sin propiedades. Esto es útil para leads en etapa temprana donde aún estás determinando preferencias de propiedades. Puedes agregar propiedades después mediante sugerencias IA o selección manual."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel properties kan ik aan één deal toevoegen?",
+        "en": "How many properties can I add to one deal?",
+        "es": "¿Cuántas propiedades puedo agregar a un deal?"
+      },
+      "answer": {
+        "nl": "Er is geen limiet op het aantal properties per deal. Je kunt zoveel properties toevoegen als relevant voor de buyer. Best practice is 3-5 properties om buyer options te geven zonder overwhelming.",
+        "en": "There is no limit on the number of properties per deal. You can add as many properties as relevant for the buyer. Best practice is 3-5 properties to give buyer options without overwhelming.",
+        "es": "No hay límite en el número de propiedades por deal. Puedes agregar tantas propiedades como sean relevantes para el comprador. La mejor práctica es 3-5 propiedades para dar opciones al comprador sin abrumar."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik een verkeerde contact link?",
+        "en": "What happens if I link the wrong contact?",
+        "es": "¿Qué pasa si vinculo el contacto incorrecto?"
+      },
+      "answer": {
+        "nl": "Je kunt altijd de primary contact wijzigen of additional contacts toevoegen/verwijderen in de deal detail view. Alle activities en history blijven behouden bij contact changes.",
+        "en": "You can always change the primary contact or add/remove additional contacts in the deal detail view. All activities and history are preserved during contact changes.",
+        "es": "Siempre puedes cambiar el contacto principal o agregar/eliminar contactos adicionales en la vista de detalles del deal. Todas las actividades e historial se preservan durante cambios de contacto."
+      }
+    }
+  ]
+}

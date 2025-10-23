@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "id": "property-status-workflow",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T14:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "status", "workflow", "lifecycle"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property status", "property workflow", "available sold rented", "property lifecycle"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property status en workflow beheer",
+      "en": "Property Status and Workflow Management",
+      "es": "Gestión de estado y workflow de propiedades"
+    },
+    "description": {
+      "nl": "Leer hoe je property statussen (available, sold, reserved, rented) beheert en automatische workflows configureert voor efficiënt property management.",
+      "en": "Learn how to manage property statuses (available, sold, reserved, rented) and configure automatic workflows for efficient property management.",
+      "es": "Aprende cómo gestionar estados de propiedades (disponible, vendida, reservada, alquilada) y configurar workflows automáticos para gestión eficiente de propiedades."
+    },
+    "icon": "autorenew"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "status-overview",
+      "title": {
+        "nl": "Property status lifecycle",
+        "en": "Property status lifecycle",
+        "es": "Ciclo de vida del estado de la propiedad"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Elke property in Tesoro CRM heeft een status die zijn huidige lifecycle fase aangeeft. Het correct beheren van statussen is essentieel voor:</p><ul><li>Accurate inventory tracking</li><li>Portal synchronisatie</li><li>Rapportage en analytics</li><li>Team communicatie</li><li>Client portal zichtbaarheid</li></ul><h5>Beschikbare statussen</h5><p><strong>Active:</strong> Property is beschikbaar voor verkoop of verhuur. Dit is de default status voor nieuwe listings die klaar zijn voor marketing.</p><p><strong>Inactive:</strong> Property is tijdelijk offline gehaald. Gebruik dit wanneer de eigenaar een pauze wil of renovaties plaatsvinden.</p><p><strong>Sold:</strong> Property is verkocht. Deal is gesloten en eigendom is overgedragen.</p><p><strong>Rented:</strong> Property is verhuurd. Huurcontract is getekend en property is bezet.</p><p><strong>Draft:</strong> Property is in voorbereiding. Gebruik dit voor incomplete listings die nog niet gepubliceerd mogen worden.</p>"
+        },
+        "en": {
+          "text": "<p>Every property in Tesoro CRM has a status indicating its current lifecycle phase. Correctly managing statuses is essential for:</p><ul><li>Accurate inventory tracking</li><li>Portal synchronization</li><li>Reporting and analytics</li><li>Team communication</li><li>Client portal visibility</li></ul><h5>Available statuses</h5><p><strong>Active:</strong> Property is available for sale or rent. This is the default status for new listings ready for marketing.</p><p><strong>Inactive:</strong> Property is temporarily taken offline. Use this when the owner wants a pause or renovations are taking place.</p><p><strong>Sold:</strong> Property is sold. Deal is closed and ownership has been transferred.</p><p><strong>Rented:</strong> Property is rented. Rental contract is signed and property is occupied.</p><p><strong>Draft:</strong> Property is in preparation. Use this for incomplete listings that should not be published yet.</p>"
+        },
+        "es": {
+          "text": "<p>Cada propiedad en Tesoro CRM tiene un estado que indica su fase actual del ciclo de vida. Gestionar correctamente los estados es esencial para:</p><ul><li>Seguimiento preciso del inventario</li><li>Sincronización de portales</li><li>Informes y analytics</li><li>Comunicación del equipo</li><li>Visibilidad en el portal del cliente</li></ul><h5>Estados disponibles</h5><p><strong>Activa:</strong> La propiedad está disponible para venta o alquiler. Este es el estado predeterminado para nuevos listados listos para marketing.</p><p><strong>Inactiva:</strong> La propiedad se ha sacado temporalmente de línea. Usa esto cuando el propietario quiere una pausa o se están realizando renovaciones.</p><p><strong>Vendida:</strong> La propiedad está vendida. El deal está cerrado y la propiedad ha sido transferida.</p><p><strong>Alquilada:</strong> La propiedad está alquilada. El contrato de alquiler está firmado y la propiedad está ocupada.</p><p><strong>Borrador:</strong> La propiedad está en preparación. Usa esto para listados incompletos que aún no deben publicarse.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "change-status",
+      "title": {
+        "nl": "Status wijzigen",
+        "en": "Changing status",
+        "es": "Cambiar estado"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Enkele property status wijzigen",
+            "en": "Change single property status",
+            "es": "Cambiar estado de una sola propiedad"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Methode 1: Via property detail pagina</strong></p><ol><li>Open de property die je wilt wijzigen</li><li>Klik op het status label bovenaan de pagina</li><li>Selecteer de nieuwe status uit het dropdown menu</li><li>Voeg optioneel een reden voor wijziging toe</li><li>Klik \"Opslaan\"</li></ol><p><strong>Methode 2: Via property overzicht</strong></p><ol><li>Ga naar Properties overzicht</li><li>Hover over de property in de lijst</li><li>Klik op het status icoon</li><li>Selecteer nieuwe status - wijziging is direct</li></ol><p><strong>Automatische acties bij status wijziging:</strong></p><ul><li>Portal sync wordt getriggerd (Active/Inactive)</li><li>Geïnteresseerde contacten krijgen notificatie</li><li>Wijziging wordt gelogd in activity history</li><li>Deal status wordt bijgewerkt indien gekoppeld</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Method 1: Via property detail page</strong></p><ol><li>Open the property you want to change</li><li>Click on the status label at the top of the page</li><li>Select the new status from the dropdown menu</li><li>Optionally add a reason for change</li><li>Click \"Save\"</li></ol><p><strong>Method 2: Via property overview</strong></p><ol><li>Go to Properties overview</li><li>Hover over the property in the list</li><li>Click on the status icon</li><li>Select new status - change is immediate</li></ol><p><strong>Automatic actions on status change:</strong></p><ul><li>Portal sync is triggered (Active/Inactive)</li><li>Interested contacts receive notification</li><li>Change is logged in activity history</li><li>Deal status is updated if linked</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Método 1: a través de la página de detalle de la propiedad</strong></p><ol><li>Abre la propiedad que deseas cambiar</li><li>Haz clic en la etiqueta de estado en la parte superior de la página</li><li>Selecciona el nuevo estado del menú desplegable</li><li>Opcionalmente agrega una razón para el cambio</li><li>Haz clic en \"Guardar\"</li></ol><p><strong>Método 2: a través del resumen de propiedades</strong></p><ol><li>Ve al resumen de Propiedades</li><li>Pasa el cursor sobre la propiedad en la lista</li><li>Haz clic en el ícono de estado</li><li>Selecciona nuevo estado - el cambio es inmediato</li></ol><p><strong>Acciones automáticas al cambiar estado:</strong></p><ul><li>Se activa la sincronización de portal (Activa/Inactiva)</li><li>Los contactos interesados reciben notificación</li><li>El cambio se registra en el historial de actividades</li><li>El estado del deal se actualiza si está vinculado</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Bulk status updates",
+            "en": "Bulk status updates",
+            "es": "Actualizaciones de estado en lote"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voor het updaten van meerdere properties tegelijk:</p><ol><li>Ga naar Properties overzicht</li><li>Selecteer multiple properties door checkboxes aan te vinken</li><li>Klik op \"Bulk Actions\" knop bovenaan</li><li>Selecteer \"Update Status\"</li><li>Kies de nieuwe status voor alle geselecteerde properties</li><li>Bevestig de actie</li></ol><p><strong>Use cases voor bulk updates:</strong></p><ul><li>Seizoens-closing: Alle vakantiehuizen op Inactive zetten</li><li>Project verkocht: Alle units van een development op Sold zetten</li><li>Portfolio overname: Bulk import gevolgd door status update</li><li>Einde huurcontract: Meerdere properties van Rented naar Active</li></ul><p><strong>Belangrijk:</strong> Bulk status changes triggeren ook automatische portal sync en notificaties voor alle betrokken properties.</p>"
+            },
+            "en": {
+              "text": "<p>For updating multiple properties at once:</p><ol><li>Go to Properties overview</li><li>Select multiple properties by checking checkboxes</li><li>Click on \"Bulk Actions\" button at the top</li><li>Select \"Update Status\"</li><li>Choose the new status for all selected properties</li><li>Confirm the action</li></ol><p><strong>Use cases for bulk updates:</strong></p><ul><li>Seasonal closing: Set all vacation homes to Inactive</li><li>Project sold: Set all units of a development to Sold</li><li>Portfolio takeover: Bulk import followed by status update</li><li>End of rental contract: Multiple properties from Rented to Active</li></ul><p><strong>Important:</strong> Bulk status changes also trigger automatic portal sync and notifications for all involved properties.</p>"
+            },
+            "es": {
+              "text": "<p>Para actualizar múltiples propiedades a la vez:</p><ol><li>Ve al resumen de Propiedades</li><li>Selecciona múltiples propiedades marcando las casillas de verificación</li><li>Haz clic en el botón \"Acciones en lote\" en la parte superior</li><li>Selecciona \"Actualizar Estado\"</li><li>Elige el nuevo estado para todas las propiedades seleccionadas</li><li>Confirma la acción</li></ol><p><strong>Casos de uso para actualizaciones en lote:</strong></p><ul><li>Cierre estacional: Establecer todas las casas de vacaciones como Inactivas</li><li>Proyecto vendido: Establecer todas las unidades de un desarrollo como Vendidas</li><li>Adquisición de cartera: Importación masiva seguida de actualización de estado</li><li>Fin de contrato de alquiler: Múltiples propiedades de Alquilada a Activa</li></ul><p><strong>Importante:</strong> Los cambios de estado en lote también activan la sincronización automática de portal y notificaciones para todas las propiedades involucradas.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "workflow-automation",
+      "title": {
+        "nl": "Workflow automatisering",
+        "en": "Workflow automation",
+        "es": "Automatización de workflow"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Automatische triggers bij status wijziging</h5><p>Tesoro CRM voert automatisch verschillende acties uit wanneer je een property status wijzigt:</p><p><strong>Draft → Active:</strong></p><ul><li>Property wordt zichtbaar op client portal</li><li>Portal sync naar Idealista/Fotocasa start</li><li>AI matching algoritme activeert</li><li>Property verschijnt in website property feed</li></ul><p><strong>Active → Sold:</strong></p><ul><li>Property wordt verwijderd van alle portals</li><li>Geïnteresseerde contacten ontvangen notificatie</li><li>Deal status wordt bijgewerkt naar \"Won\"</li><li>Property wordt toegevoegd aan verkoop statistieken</li><li>Commission calculation wordt getriggerd</li></ul><p><strong>Active → Inactive:</strong></p><ul><li>Property wordt verwijderd van portals (maar data blijft bewaard)</li><li>Property blijft zichtbaar in CRM voor intern gebruik</li><li>Scheduled viewings blijven actief</li></ul><p><strong>Inactive → Active:</strong></p><ul><li>Property wordt opnieuw gepubliceerd op portals</li><li>Media en beschrijvingen worden opnieuw gesynchroniseerd</li></ul><h5>Custom workflow configuratie</h5><p>Admins kunnen custom workflows configureren:</p><ul><li>Email templates voor status wijzigingen</li><li>Task creation bij specifieke status changes</li><li>Team notificatie preferences</li><li>Custom status fields voor specifieke markets</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Automatic triggers on status change</h5><p>Tesoro CRM automatically performs various actions when you change a property status:</p><p><strong>Draft → Active:</strong></p><ul><li>Property becomes visible on client portal</li><li>Portal sync to Idealista/Fotocasa starts</li><li>AI matching algorithm activates</li><li>Property appears in website property feed</li></ul><p><strong>Active → Sold:</strong></p><ul><li>Property is removed from all portals</li><li>Interested contacts receive notification</li><li>Deal status is updated to \"Won\"</li><li>Property is added to sales statistics</li><li>Commission calculation is triggered</li></ul><p><strong>Active → Inactive:</strong></p><ul><li>Property is removed from portals (but data remains saved)</li><li>Property remains visible in CRM for internal use</li><li>Scheduled viewings remain active</li></ul><p><strong>Inactive → Active:</strong></p><ul><li>Property is republished on portals</li><li>Media and descriptions are re-synchronized</li></ul><h5>Custom workflow configuration</h5><p>Admins can configure custom workflows:</p><ul><li>Email templates for status changes</li><li>Task creation on specific status changes</li><li>Team notification preferences</li><li>Custom status fields for specific markets</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Triggers automáticos al cambiar estado</h5><p>Tesoro CRM ejecuta automáticamente varias acciones cuando cambias el estado de una propiedad:</p><p><strong>Borrador → Activa:</strong></p><ul><li>La propiedad se vuelve visible en el portal del cliente</li><li>Comienza la sincronización de portal a Idealista/Fotocasa</li><li>Se activa el algoritmo de matching con IA</li><li>La propiedad aparece en el feed de propiedades del sitio web</li></ul><p><strong>Activa → Vendida:</strong></p><ul><li>La propiedad se elimina de todos los portales</li><li>Los contactos interesados reciben notificación</li><li>El estado del deal se actualiza a \"Ganado\"</li><li>La propiedad se agrega a las estadísticas de ventas</li><li>Se activa el cálculo de comisión</li></ul><p><strong>Activa → Inactiva:</strong></p><ul><li>La propiedad se elimina de los portales (pero los datos permanecen guardados)</li><li>La propiedad permanece visible en el CRM para uso interno</li><li>Las visitas programadas permanecen activas</li></ul><p><strong>Inactiva → Activa:</strong></p><ul><li>La propiedad se vuelve a publicar en portales</li><li>Los medios y descripciones se vuelven a sincronizar</li></ul><h5>Configuración de workflow personalizado</h5><p>Los administradores pueden configurar workflows personalizados:</p><ul><li>Plantillas de correo electrónico para cambios de estado</li><li>Creación de tareas en cambios de estado específicos</li><li>Preferencias de notificación del equipo</li><li>Campos de estado personalizados para mercados específicos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "status-best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor status management",
+        "en": "Best practices for status management",
+        "es": "Mejores prácticas para gestión de estado"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Algemene richtlijnen:</strong></p><ul><li>Update status zo snel mogelijk na een deal closing</li><li>Gebruik Draft voor incomplete properties (zonder foto's of beschrijving)</li><li>Gebruik Inactive in plaats van Delete voor tijdelijke pauzes</li><li>Voeg altijd een reden toe bij status wijzigingen (voor team transparantie)</li><li>Check regelmatig oude Active properties en update indien nodig</li></ul><p><strong>Team communicatie:</strong></p><ul><li>Informeer team members over belangrijke status wijzigingen</li><li>Gebruik notities veld voor context bij status updates</li><li>Review wekelijks properties die lang op Active staan</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>General guidelines:</strong></p><ul><li>Update status as quickly as possible after a deal closing</li><li>Use Draft for incomplete properties (without photos or description)</li><li>Use Inactive instead of Delete for temporary pauses</li><li>Always add a reason when changing status (for team transparency)</li><li>Regularly check old Active properties and update if needed</li></ul><p><strong>Team communication:</strong></p><ul><li>Inform team members about important status changes</li><li>Use notes field for context in status updates</li><li>Review weekly properties that have been Active for a long time</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Directrices generales:</strong></p><ul><li>Actualiza el estado lo más rápido posible después de un cierre de deal</li><li>Usa Borrador para propiedades incompletas (sin fotos o descripción)</li><li>Usa Inactiva en lugar de Eliminar para pausas temporales</li><li>Siempre agrega una razón al cambiar estado (para transparencia del equipo)</li><li>Verifica regularmente propiedades antiguas Activas y actualiza si es necesario</li></ul><p><strong>Comunicación del equipo:</strong></p><ul><li>Informa a los miembros del equipo sobre cambios de estado importantes</li><li>Usa el campo de notas para contexto en actualizaciones de estado</li><li>Revisa semanalmente propiedades que han estado Activas durante mucho tiempo</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "property-history-tracking",
+    "property-portal-integration"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat gebeurt er met geïnteresseerde contacten wanneer ik een property op Sold zet?",
+        "en": "What happens to interested contacts when I set a property to Sold?",
+        "es": "¿Qué pasa con los contactos interesados cuando establezco una propiedad como Vendida?"
+      },
+      "answer": {
+        "nl": "Geïnteresseerde contacten ontvangen automatisch een notificatie dat de property verkocht is. Je kunt in de settings configureren of je vergelijkbare properties wilt voorstellen. De contact history blijft bewaard voor toekomstige reference.",
+        "en": "Interested contacts automatically receive a notification that the property is sold. You can configure in settings whether you want to suggest similar properties. Contact history is preserved for future reference.",
+        "es": "Los contactos interesados reciben automáticamente una notificación de que la propiedad está vendida. Puedes configurar en ajustes si deseas sugerir propiedades similares. El historial de contacto se conserva para referencia futura."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een verkochte property terug zetten naar Active?",
+        "en": "Can I set a sold property back to Active?",
+        "es": "¿Puedo establecer una propiedad vendida de vuelta a Activa?"
+      },
+      "answer": {
+        "nl": "Ja, dit is mogelijk (bijvoorbeeld als een deal onverwacht niet doorgaat). De property wordt dan opnieuw gepubliceerd op portals en AI matching wordt opnieuw geactiveerd. De volledige history blijft bewaard.",
+        "en": "Yes, this is possible (for example if a deal unexpectedly falls through). The property is then republished on portals and AI matching is reactivated. The complete history is preserved.",
+        "es": "Sí, esto es posible (por ejemplo, si un deal inesperadamente se cancela). La propiedad se vuelve a publicar en portales y el matching con IA se reactiva. El historial completo se conserva."
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "id": "deal-reporting-metrics",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T12:15:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["deal reports", "sales metrics", "conversion rate", "pipeline health", "sales analytics"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deal reporting en key metrics",
+      "en": "Deal Reporting and Key Metrics",
+      "es": "Reportes de deals y métricas clave"
+    },
+    "description": {
+      "nl": "Leer welke deal metrics belangrijk zijn, hoe je reports genereert, en hoe je data gebruikt voor better business decisions.",
+      "en": "Learn which deal metrics matter, how to generate reports, and how to use data for better business decisions.",
+      "es": "Aprende qué métricas de deals importan, cómo generar reportes y cómo usar datos para mejores decisiones empresariales."
+    },
+    "icon": "bar_chart"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Data-driven decision making is essentieel voor sales success. Tesoro CRM provides comprehensive reporting tools om pipeline health te monitoren, performance te tracken, en opportunities te identificeren.</p>"
+        },
+        "en": {
+          "text": "<p>Data-driven decision making is essential for sales success. Tesoro CRM provides comprehensive reporting tools to monitor pipeline health, track performance, and identify opportunities.</p>"
+        },
+        "es": {
+          "text": "<p>La toma de decisiones basada en datos es esencial para el éxito en ventas. Tesoro CRM proporciona herramientas completas de reportes para monitorear salud del pipeline, rastrear rendimiento e identificar oportunidades.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "key-metrics",
+      "title": {
+        "nl": "Essential deal metrics",
+        "en": "Essential Deal Metrics",
+        "es": "Métricas esenciales de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>1. Pipeline value metrics:</strong></p><ul><li><strong>Total pipeline value:</strong> Sum van all active deal values</li><li><strong>Weighted pipeline:</strong> Value × stage confidence percentage</li><li><strong>Pipeline by stage:</strong> Value distribution across stages</li><li><strong>Average deal size:</strong> Mean deal value</li></ul><p><strong>2. Conversion metrics:</strong></p><ul><li><strong>Overall win rate:</strong> Won deals / Total deals</li><li><strong>Stage conversion rates:</strong> Conversion per stage transition</li><li><strong>Lead-to-won rate:</strong> New leads that close</li><li><strong>Time to close:</strong> Average days from creation to won</li></ul><p><strong>3. Activity metrics:</strong></p><ul><li><strong>Deals created:</strong> New deals per period</li><li><strong>Deals won:</strong> Closed deals per period</li><li><strong>Deals lost:</strong> Lost deals per period</li><li><strong>Pipeline velocity:</strong> Speed deals move through stages</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>1. Pipeline value metrics:</strong></p><ul><li><strong>Total pipeline value:</strong> Sum of all active deal values</li><li><strong>Weighted pipeline:</strong> Value × stage confidence percentage</li><li><strong>Pipeline by stage:</strong> Value distribution across stages</li><li><strong>Average deal size:</strong> Mean deal value</li></ul><p><strong>2. Conversion metrics:</strong></p><ul><li><strong>Overall win rate:</strong> Won deals / Total deals</li><li><strong>Stage conversion rates:</strong> Conversion per stage transition</li><li><strong>Lead-to-won rate:</strong> New leads that close</li><li><strong>Time to close:</strong> Average days from creation to won</li></ul><p><strong>3. Activity metrics:</strong></p><ul><li><strong>Deals created:</strong> New deals per period</li><li><strong>Deals won:</strong> Closed deals per period</li><li><strong>Deals lost:</strong> Lost deals per period</li><li><strong>Pipeline velocity:</strong> Speed deals move through stages</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>1. Métricas de valor de pipeline:</strong></p><ul><li><strong>Valor total del pipeline:</strong> Suma de todos los valores de deals activos</li><li><strong>Pipeline ponderado:</strong> Valor × porcentaje de confianza de etapa</li><li><strong>Pipeline por etapa:</strong> Distribución de valor a través de etapas</li><li><strong>Tamaño promedio de deal:</strong> Valor medio del deal</li></ul><p><strong>2. Métricas de conversión:</strong></p><ul><li><strong>Tasa de ganancia general:</strong> Deals ganados / Total de deals</li><li><strong>Tasas de conversión por etapa:</strong> Conversión por transición de etapa</li><li><strong>Tasa lead-a-ganado:</strong> Nuevos leads que cierran</li><li><strong>Tiempo de cierre:</strong> Días promedio desde creación hasta ganado</li></ul><p><strong>3. Métricas de actividad:</strong></p><ul><li><strong>Deals creados:</strong> Nuevos deals por período</li><li><strong>Deals ganados:</strong> Deals cerrados por período</li><li><strong>Deals perdidos:</strong> Deals perdidos por período</li><li><strong>Velocidad del pipeline:</strong> Velocidad con que los deals se mueven a través de etapas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "accessing-reports",
+      "title": {
+        "nl": "Reports genereren",
+        "en": "Generating Reports",
+        "es": "Generando reportes"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Access reports via <strong>Dashboard > Deal Reports</strong>:</p><p><strong>Available reports:</strong></p><ul><li><strong>Pipeline overview:</strong> Current pipeline status en value</li><li><strong>Won/Lost analysis:</strong> Closed deals en loss reasons</li><li><strong>Conversion funnel:</strong> Conversion rates per stage</li><li><strong>Agent performance:</strong> Individual en team metrics</li><li><strong>Time-to-close analysis:</strong> Deal duration patterns</li></ul><p><strong>Filtering options:</strong></p><ul><li>Date range (this month, quarter, year, custom)</li><li>By agent or team</li><li>By deal type (sale, rent, commercial)</li><li>By property type</li><li>By value range</li></ul><p><strong>Export options:</strong> PDF, Excel, CSV</p>"
+        },
+        "en": {
+          "text": "<p>Access reports via <strong>Dashboard > Deal Reports</strong>:</p><p><strong>Available reports:</strong></p><ul><li><strong>Pipeline overview:</strong> Current pipeline status and value</li><li><strong>Won/Lost analysis:</strong> Closed deals and loss reasons</li><li><strong>Conversion funnel:</strong> Conversion rates per stage</li><li><strong>Agent performance:</strong> Individual and team metrics</li><li><strong>Time-to-close analysis:</strong> Deal duration patterns</li></ul><p><strong>Filtering options:</strong></p><ul><li>Date range (this month, quarter, year, custom)</li><li>By agent or team</li><li>By deal type (sale, rent, commercial)</li><li>By property type</li><li>By value range</li></ul><p><strong>Export options:</strong> PDF, Excel, CSV</p>"
+        },
+        "es": {
+          "text": "<p>Accede a reportes mediante <strong>Dashboard > Reportes de Deals</strong>:</p><p><strong>Reportes disponibles:</strong></p><ul><li><strong>Visión general del pipeline:</strong> Estado y valor actual del pipeline</li><li><strong>Análisis ganado/perdido:</strong> Deals cerrados y razones de pérdida</li><li><strong>Embudo de conversión:</strong> Tasas de conversión por etapa</li><li><strong>Rendimiento del agente:</strong> Métricas individuales y de equipo</li><li><strong>Análisis tiempo-a-cierre:</strong> Patrones de duración de deals</li></ul><p><strong>Opciones de filtrado:</strong></p><ul><li>Rango de fecha (este mes, trimestre, año, personalizado)</li><li>Por agente o equipo</li><li>Por tipo de deal (venta, alquiler, comercial)</li><li>Por tipo de propiedad</li><li>Por rango de valor</li></ul><p><strong>Opciones de exportación:</strong> PDF, Excel, CSV</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "pipeline-health",
+      "title": {
+        "nl": "Pipeline health indicators",
+        "en": "Pipeline Health Indicators",
+        "es": "Indicadores de salud del pipeline"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Healthy pipeline signs:</strong></p><ul><li>Balanced distribution across stages (niet all in one stage)</li><li>Consistent new deal flow</li><li>Good stage-to-stage conversion (>30%)</li><li>Minimal stagnant deals (>14 days in stage)</li><li>Win rate > 20%</li></ul><p><strong>Warning signs:</strong></p><ul><li>Too many deals in early stages (qualification bottleneck)</li><li>Long time in Negotiation (pricing issues)</li><li>High loss rate at specific stage (process problem)</li><li>Decreasing new deal creation (lead generation issue)</li><li>Low pipeline value (need more high-value opportunities)</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Healthy pipeline signs:</strong></p><ul><li>Balanced distribution across stages (not all in one stage)</li><li>Consistent new deal flow</li><li>Good stage-to-stage conversion (>30%)</li><li>Minimal stagnant deals (>14 days in stage)</li><li>Win rate > 20%</li></ul><p><strong>Warning signs:</strong></p><ul><li>Too many deals in early stages (qualification bottleneck)</li><li>Long time in Negotiation (pricing issues)</li><li>High loss rate at specific stage (process problem)</li><li>Decreasing new deal creation (lead generation issue)</li><li>Low pipeline value (need more high-value opportunities)</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Señales de pipeline saludable:</strong></p><ul><li>Distribución equilibrada a través de etapas (no todos en una etapa)</li><li>Flujo consistente de nuevos deals</li><li>Buena conversión etapa-a-etapa (>30%)</li><li>Mínimos deals estancados (>14 días en etapa)</li><li>Tasa de ganancia > 20%</li></ul><p><strong>Señales de advertencia:</strong></p><ul><li>Demasiados deals en etapas tempranas (cuello de botella de calificación)</li><li>Tiempo largo en Negociación (problemas de precios)</li><li>Alta tasa de pérdida en etapa específica (problema de proceso)</li><li>Disminución de creación de nuevos deals (problema de generación de leads)</li><li>Bajo valor del pipeline (necesidad de más oportunidades de alto valor)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Reporting best practices",
+        "en": "Reporting Best Practices",
+        "es": "Mejores prácticas de reportes"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Weekly review:</strong> Check pipeline health weekly</li><li><strong>Monthly deep dive:</strong> Analyze trends en patterns monthly</li><li><strong>Compare periods:</strong> Track month-over-month changes</li><li><strong>Set targets:</strong> Define win rate en value goals</li><li><strong>Share with team:</strong> Transparent reporting voor all</li><li><strong>Act on insights:</strong> Use data to improve processes</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Weekly review:</strong> Check pipeline health weekly</li><li><strong>Monthly deep dive:</strong> Analyze trends and patterns monthly</li><li><strong>Compare periods:</strong> Track month-over-month changes</li><li><strong>Set targets:</strong> Define win rate and value goals</li><li><strong>Share with team:</strong> Transparent reporting for all</li><li><strong>Act on insights:</strong> Use data to improve processes</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Revisión semanal:</strong> Revisa salud del pipeline semanalmente</li><li><strong>Análisis profundo mensual:</strong> Analiza tendencias y patrones mensualmente</li><li><strong>Comparar períodos:</strong> Rastrea cambios mes a mes</li><li><strong>Establecer objetivos:</strong> Define metas de tasa de ganancia y valor</li><li><strong>Compartir con equipo:</strong> Reportes transparentes para todos</li><li><strong>Actuar sobre insights:</strong> Usa datos para mejorar procesos</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-forecasting",
+    "deal-won-lost-analysis",
+    "deal-pipeline-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is een goede win rate?",
+        "en": "What is a good win rate?",
+        "es": "¿Qué es una buena tasa de ganancia?"
+      },
+      "answer": {
+        "nl": "In real estate is een win rate van 20-30% generally considered good. Higher rates (>40%) excellent. Under 20% indicates need voor improvement in qualification of process.",
+        "en": "In real estate, a win rate of 20-30% is generally considered good. Higher rates (>40%) are excellent. Under 20% indicates need for improvement in qualification or process.",
+        "es": "En bienes raíces, una tasa de ganancia del 20-30% se considera generalmente buena. Tasas más altas (>40%) son excelentes. Menos del 20% indica necesidad de mejora en calificación o proceso."
+      }
+    }
+  ]
+}

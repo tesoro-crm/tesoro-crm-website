@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "id": "deal-stages-explained",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T10:30:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": false,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop",
+    "keywords": ["deal stages", "pipeline stages", "sales stages", "deal progression", "when to move deals"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deal stages uitgelegd: wanneer deals te verplaatsen",
+      "en": "Deal Stages Explained: When to Move Deals",
+      "es": "Etapas de deals explicadas: cuándo mover deals"
+    },
+    "description": {
+      "nl": "Leer alle deal pipeline stages, de criteria voor elke stage, en wanneer je deals moet verplaatsen voor optimale conversie tracking.",
+      "en": "Learn all deal pipeline stages, the criteria for each stage, and when to move deals for optimal conversion tracking.",
+      "es": "Aprende todas las etapas del pipeline de deals, los criterios para cada etapa y cuándo mover deals para un seguimiento óptimo de conversión."
+    },
+    "icon": "stairs"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het deal pipeline systeem van Tesoro CRM gebruikt een stage-based approach om je sales proces te structureren. Elke stage representeert een specific fase in de buyer journey van initial interest tot successful closing.</p><p>Het correct gebruiken van stages is cruciaal voor accurate sales forecasting, team coordination, en conversie optimization.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM's deal pipeline system uses a stage-based approach to structure your sales process. Each stage represents a specific phase in the buyer journey from initial interest to successful closing.</p><p>Using stages correctly is crucial for accurate sales forecasting, team coordination, and conversion optimization.</p>"
+        },
+        "es": {
+          "text": "<p>El sistema de pipeline de deals de Tesoro CRM usa un enfoque basado en etapas para estructurar tu proceso de ventas. Cada etapa representa una fase específica en el viaje del comprador desde el interés inicial hasta el cierre exitoso.</p><p>Usar las etapas correctamente es crucial para pronósticos de ventas precisos, coordinación del equipo y optimización de conversión.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-lead",
+      "title": {
+        "nl": "Stage 1: Lead - initial contact",
+        "en": "Stage 1: Lead - Initial Contact",
+        "es": "Etapa 1: Lead - contacto inicial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doel:</strong> Initial contact captured, basic information collected.</p><p><strong>Entry criteria:</strong></p><ul><li>Contact heeft interest getoond in real estate services</li><li>Basic contact informatie is beschikbaar (naam, email/phone)</li><li>Source is geïdentificeerd (website, referral, event, etc.)</li></ul><p><strong>Activities in deze stage:</strong></p><ul><li>First contact maken (phone call of email)</li><li>Basic needs assessment</li><li>Property preferences vragen</li><li>Budget range bepalen</li><li>Timeline requirements begrijpen</li></ul><p><strong>Move to next stage wanneer:</strong></p><ul><li>Contact heeft gerespondeerd op initial outreach</li><li>Budget range is geïdentificeerd</li><li>Property type preferences zijn bekend</li><li>Contact toont genuine buying/selling intent</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Purpose:</strong> Initial contact captured, basic information collected.</p><p><strong>Entry criteria:</strong></p><ul><li>Contact has shown interest in real estate services</li><li>Basic contact information is available (name, email/phone)</li><li>Source is identified (website, referral, event, etc.)</li></ul><p><strong>Activities in this stage:</strong></p><ul><li>Make first contact (phone call or email)</li><li>Basic needs assessment</li><li>Ask property preferences</li><li>Determine budget range</li><li>Understand timeline requirements</li></ul><p><strong>Move to next stage when:</strong></p><ul><li>Contact has responded to initial outreach</li><li>Budget range is identified</li><li>Property type preferences are known</li><li>Contact shows genuine buying/selling intent</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Propósito:</strong> Contacto inicial capturado, información básica recopilada.</p><p><strong>Criterios de entrada:</strong></p><ul><li>El contacto ha mostrado interés en servicios inmobiliarios</li><li>La información básica del contacto está disponible (nombre, email/teléfono)</li><li>Se identifica la fuente (sitio web, referencia, evento, etc.)</li></ul><p><strong>Actividades en esta etapa:</strong></p><ul><li>Hacer primer contacto (llamada telefónica o email)</li><li>Evaluación básica de necesidades</li><li>Preguntar preferencias de propiedades</li><li>Determinar rango de presupuesto</li><li>Entender requisitos de cronograma</li></ul><p><strong>Mover a siguiente etapa cuando:</strong></p><ul><li>El contacto ha respondido al alcance inicial</li><li>El rango de presupuesto está identificado</li><li>Las preferencias de tipo de propiedad son conocidas</li><li>El contacto muestra intención genuina de compra/venta</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-qualification",
+      "title": {
+        "nl": "Stage 2: Qualification - budget en timeline verified",
+        "en": "Stage 2: Qualification - Budget and Timeline Verified",
+        "es": "Etapa 2: Calificación - presupuesto y cronograma verificados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doel:</strong> Verify buyer is qualified met realistic budget en timeline.</p><p><strong>Entry criteria:</strong></p><ul><li>Initial contact is established</li><li>Basic property preferences zijn bekend</li><li>Contact is responsive en engaged</li></ul><p><strong>Activities in deze stage:</strong></p><ul><li>Detailed budget discussion (financing pre-approval indien applicable)</li><li>Timeline verification (urgency, constraints)</li><li>Property criteria refinement (must-haves vs nice-to-haves)</li><li>Location preferences detailing</li><li>AI property matching initiëren</li><li>Present initial property suggestions</li></ul><p><strong>Move to next stage wanneer:</strong></p><ul><li>Budget is confirmed en realistic</li><li>Timeline is clear en achievable</li><li>Property criteria zijn well-defined</li><li>Contact heeft eerste properties reviewed</li><li>Viewing interesse is confirmed</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Purpose:</strong> Verify buyer is qualified with realistic budget and timeline.</p><p><strong>Entry criteria:</strong></p><ul><li>Initial contact is established</li><li>Basic property preferences are known</li><li>Contact is responsive and engaged</li></ul><p><strong>Activities in this stage:</strong></p><ul><li>Detailed budget discussion (financing pre-approval if applicable)</li><li>Timeline verification (urgency, constraints)</li><li>Property criteria refinement (must-haves vs nice-to-haves)</li><li>Location preferences detailing</li><li>Initiate AI property matching</li><li>Present initial property suggestions</li></ul><p><strong>Move to next stage when:</strong></p><ul><li>Budget is confirmed and realistic</li><li>Timeline is clear and achievable</li><li>Property criteria are well-defined</li><li>Contact has reviewed first properties</li><li>Viewing interest is confirmed</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Propósito:</strong> Verificar que el comprador esté calificado con presupuesto y cronograma realistas.</p><p><strong>Criterios de entrada:</strong></p><ul><li>El contacto inicial está establecido</li><li>Las preferencias básicas de propiedades son conocidas</li><li>El contacto es receptivo y comprometido</li></ul><p><strong>Actividades en esta etapa:</strong></p><ul><li>Discusión detallada de presupuesto (pre-aprobación de financiamiento si aplica)</li><li>Verificación de cronograma (urgencia, restricciones)</li><li>Refinamiento de criterios de propiedad (imprescindibles vs deseables)</li><li>Detalle de preferencias de ubicación</li><li>Iniciar coincidencia de propiedades IA</li><li>Presentar sugerencias iniciales de propiedades</li></ul><p><strong>Mover a siguiente etapa cuando:</strong></p><ul><li>El presupuesto está confirmado y es realista</li><li>El cronograma está claro y es alcanzable</li><li>Los criterios de propiedad están bien definidos</li><li>El contacto ha revisado primeras propiedades</li><li>El interés en visita está confirmado</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-viewing",
+      "title": {
+        "nl": "Stage 3: Viewing - property viewings actief",
+        "en": "Stage 3: Viewing - Property Viewings Active",
+        "es": "Etapa 3: Visita - visitas de propiedades activas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doel:</strong> Schedule en conduct property viewings, gather buyer feedback.</p><p><strong>Entry criteria:</strong></p><ul><li>Buyer is qualified</li><li>Properties zijn geïdentificeerd</li><li>Viewing appointments zijn scheduled of uitgevoerd</li></ul><p><strong>Activities in deze stage:</strong></p><ul><li>Schedule property viewings</li><li>Conduct viewings met buyer</li><li>Gather detailed feedback per property</li><li>Update property offer status (interested, rejected, viewing scheduled)</li><li>Suggest additional properties based op feedback</li><li>Address buyer questions en concerns</li></ul><p><strong>Move to next stage wanneer:</strong></p><ul><li>Buyer heeft 1+ properties viewed</li><li>Strong interest in specific property is expressed</li><li>Buyer is ready om offer te discussen</li><li>Negotiation kan beginnen</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Purpose:</strong> Schedule and conduct property viewings, gather buyer feedback.</p><p><strong>Entry criteria:</strong></p><ul><li>Buyer is qualified</li><li>Properties are identified</li><li>Viewing appointments are scheduled or completed</li></ul><p><strong>Activities in this stage:</strong></p><ul><li>Schedule property viewings</li><li>Conduct viewings with buyer</li><li>Gather detailed feedback per property</li><li>Update property offer status (interested, rejected, viewing scheduled)</li><li>Suggest additional properties based on feedback</li><li>Address buyer questions and concerns</li></ul><p><strong>Move to next stage when:</strong></p><ul><li>Buyer has viewed 1+ properties</li><li>Strong interest in specific property is expressed</li><li>Buyer is ready to discuss offer</li><li>Negotiation can begin</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Propósito:</strong> Programar y realizar visitas de propiedades, recopilar retroalimentación del comprador.</p><p><strong>Criterios de entrada:</strong></p><ul><li>El comprador está calificado</li><li>Las propiedades están identificadas</li><li>Las citas de visita están programadas o completadas</li></ul><p><strong>Actividades en esta etapa:</strong></p><ul><li>Programar visitas de propiedades</li><li>Realizar visitas con el comprador</li><li>Recopilar retroalimentación detallada por propiedad</li><li>Actualizar estado de oferta de propiedad (interesado, rechazado, visita programada)</li><li>Sugerir propiedades adicionales basadas en retroalimentación</li><li>Abordar preguntas y preocupaciones del comprador</li></ul><p><strong>Mover a siguiente etapa cuando:</strong></p><ul><li>El comprador ha visto 1+ propiedades</li><li>Se expresa fuerte interés en propiedad específica</li><li>El comprador está listo para discutir oferta</li><li>La negociación puede comenzar</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-negotiation",
+      "title": {
+        "nl": "Stage 4: Negotiation - offer onderhandeling",
+        "en": "Stage 4: Negotiation - Offer Negotiation",
+        "es": "Etapa 4: Negociación - negociación de oferta"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doel:</strong> Negotiate offer terms, price, en conditions tussen buyer en seller.</p><p><strong>Entry criteria:</strong></p><ul><li>Buyer heeft specific property interest expressed</li><li>Viewings zijn completed</li><li>Buyer is ready to make offer</li></ul><p><strong>Activities in deze stage:</strong></p><ul><li>Prepare offer proposal</li><li>Present offer aan seller (of seller's agent)</li><li>Negotiate price, terms, en conditions</li><li>Handle counter-offers</li><li>Coordinate met financial institutions (indien applicable)</li><li>Draft preliminary agreements</li></ul><p><strong>Move to next stage wanneer:</strong></p><ul><li>Offer is accepted door seller</li><li>Terms zijn agreed upon</li><li>Both parties zijn ready voor contract preparation</li><li>Closing process kan starten</li></ul><p><strong>Alternative outcomes:</strong></p><ul><li><strong>Lost:</strong> Negotiations break down, deal falls through</li><li><strong>On Hold:</strong> Negotiations paused, waiting for conditions</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Purpose:</strong> Negotiate offer terms, price, and conditions between buyer and seller.</p><p><strong>Entry criteria:</strong></p><ul><li>Buyer has expressed specific property interest</li><li>Viewings are completed</li><li>Buyer is ready to make offer</li></ul><p><strong>Activities in this stage:</strong></p><ul><li>Prepare offer proposal</li><li>Present offer to seller (or seller's agent)</li><li>Negotiate price, terms, and conditions</li><li>Handle counter-offers</li><li>Coordinate with financial institutions (if applicable)</li><li>Draft preliminary agreements</li></ul><p><strong>Move to next stage when:</strong></p><ul><li>Offer is accepted by seller</li><li>Terms are agreed upon</li><li>Both parties are ready for contract preparation</li><li>Closing process can start</li></ul><p><strong>Alternative outcomes:</strong></p><ul><li><strong>Lost:</strong> Negotiations break down, deal falls through</li><li><strong>On Hold:</strong> Negotiations paused, waiting for conditions</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Propósito:</strong> Negociar términos de oferta, precio y condiciones entre comprador y vendedor.</p><p><strong>Criterios de entrada:</strong></p><ul><li>El comprador ha expresado interés específico en propiedad</li><li>Las visitas están completadas</li><li>El comprador está listo para hacer oferta</li></ul><p><strong>Actividades en esta etapa:</strong></p><ul><li>Preparar propuesta de oferta</li><li>Presentar oferta al vendedor (o agente del vendedor)</li><li>Negociar precio, términos y condiciones</li><li>Manejar contra-ofertas</li><li>Coordinar con instituciones financieras (si aplica)</li><li>Redactar acuerdos preliminares</li></ul><p><strong>Mover a siguiente etapa cuando:</strong></p><ul><li>La oferta es aceptada por el vendedor</li><li>Los términos están acordados</li><li>Ambas partes están listas para preparación de contrato</li><li>El proceso de cierre puede iniciar</li></ul><p><strong>Resultados alternativos:</strong></p><ul><li><strong>Perdido:</strong> Las negociaciones se rompen, el deal fracasa</li><li><strong>En espera:</strong> Negociaciones pausadas, esperando condiciones</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-closing",
+      "title": {
+        "nl": "Stage 5: Closing - contract preparation en signing",
+        "en": "Stage 5: Closing - Contract Preparation and Signing",
+        "es": "Etapa 5: Cierre - preparación y firma de contrato"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doel:</strong> Finalize contract, handle paperwork, en complete transaction.</p><p><strong>Entry criteria:</strong></p><ul><li>Offer is accepted</li><li>Terms zijn agreed upon</li><li>Both parties committed to closing</li></ul><p><strong>Activities in deze stage:</strong></p><ul><li>Prepare final contract documents</li><li>Coordinate met legal advisors, notary</li><li>Arrange financing finalization (indien applicable)</li><li>Schedule signing appointment</li><li>Conduct final property inspection (indien applicable)</li><li>Handle deposit en payment arrangements</li><li>Prepare closing statement en commission invoice</li></ul><p><strong>Move to Won wanneer:</strong></p><ul><li>Contract is signed door all parties</li><li>Payment is processed/arranged</li><li>Keys zijn exchanged (indien applicable)</li><li>Transaction is officially completed</li></ul><p><strong>Alternative outcome:</strong></p><ul><li><strong>Lost:</strong> Deal falls through at closing (financing issues, inspection problems, etc.)</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Purpose:</strong> Finalize contract, handle paperwork, and complete transaction.</p><p><strong>Entry criteria:</strong></p><ul><li>Offer is accepted</li><li>Terms are agreed upon</li><li>Both parties committed to closing</li></ul><p><strong>Activities in this stage:</strong></p><ul><li>Prepare final contract documents</li><li>Coordinate with legal advisors, notary</li><li>Arrange financing finalization (if applicable)</li><li>Schedule signing appointment</li><li>Conduct final property inspection (if applicable)</li><li>Handle deposit and payment arrangements</li><li>Prepare closing statement and commission invoice</li></ul><p><strong>Move to Won when:</strong></p><ul><li>Contract is signed by all parties</li><li>Payment is processed/arranged</li><li>Keys are exchanged (if applicable)</li><li>Transaction is officially completed</li></ul><p><strong>Alternative outcome:</strong></p><ul><li><strong>Lost:</strong> Deal falls through at closing (financing issues, inspection problems, etc.)</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Propósito:</strong> Finalizar contrato, manejar documentación y completar transacción.</p><p><strong>Criterios de entrada:</strong></p><ul><li>La oferta está aceptada</li><li>Los términos están acordados</li><li>Ambas partes comprometidas al cierre</li></ul><p><strong>Actividades en esta etapa:</strong></p><ul><li>Preparar documentos finales de contrato</li><li>Coordinar con asesores legales, notario</li><li>Arreglar finalización de financiamiento (si aplica)</li><li>Programar cita de firma</li><li>Realizar inspección final de propiedad (si aplica)</li><li>Manejar depósito y arreglos de pago</li><li>Preparar declaración de cierre y factura de comisión</li></ul><p><strong>Mover a Ganado cuando:</strong></p><ul><li>El contrato está firmado por todas las partes</li><li>El pago está procesado/arreglado</li><li>Las llaves están intercambiadas (si aplica)</li><li>La transacción está oficialmente completada</li></ul><p><strong>Resultado alternativo:</strong></p><ul><li><strong>Perdido:</strong> El deal fracasa en el cierre (problemas de financiamiento, problemas de inspección, etc.)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "stage-won-lost",
+      "title": {
+        "nl": "Final stages: Won en Lost",
+        "en": "Final Stages: Won and Lost",
+        "es": "Etapas finales: Ganado y Perdido"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Won - deal successfully closed:</strong></p><ul><li>Transaction is completed</li><li>Commission is earned en invoiced</li><li>Client satisfaction follow-up</li><li>Request referrals en testimonials</li><li>Add to success metrics en reporting</li></ul><p><strong>Lost - deal did not close:</strong></p><ul><li>Document reason for loss (financing, competition, timing, etc.)</li><li>Add notes voor learning en future reference</li><li>Consider follow-up timing voor future opportunities</li><li>Maintain contact relationship voor potential future deals</li><li>Analyze loss reasons voor process improvement</li></ul><p><strong>Additional stage: On Hold</strong></p><p>Deals kunnen ook 'On Hold' worden gezet wanneer:</p><ul><li>Buyer needs meer tijd (personal circumstances)</li><li>Financing is delayed</li><li>Property issues need resolving</li><li>Market conditions require waiting</li></ul><p>On Hold deals kunnen later reactivated worden naar appropriate stage.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Won - deal successfully closed:</strong></p><ul><li>Transaction is completed</li><li>Commission is earned and invoiced</li><li>Client satisfaction follow-up</li><li>Request referrals and testimonials</li><li>Add to success metrics and reporting</li></ul><p><strong>Lost - deal did not close:</strong></p><ul><li>Document reason for loss (financing, competition, timing, etc.)</li><li>Add notes for learning and future reference</li><li>Consider follow-up timing for future opportunities</li><li>Maintain contact relationship for potential future deals</li><li>Analyze loss reasons for process improvement</li></ul><p><strong>Additional stage: On Hold</strong></p><p>Deals can also be set 'On Hold' when:</p><ul><li>Buyer needs more time (personal circumstances)</li><li>Financing is delayed</li><li>Property issues need resolving</li><li>Market conditions require waiting</li></ul><p>On Hold deals can be reactivated later to appropriate stage.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Ganado - deal cerrado exitosamente:</strong></p><ul><li>La transacción está completada</li><li>La comisión está ganada y facturada</li><li>Seguimiento de satisfacción del cliente</li><li>Solicitar referencias y testimonios</li><li>Agregar a métricas de éxito y reportes</li></ul><p><strong>Perdido - deal no cerrado:</strong></p><ul><li>Documentar razón de pérdida (financiamiento, competencia, timing, etc.)</li><li>Agregar notas para aprendizaje y referencia futura</li><li>Considerar timing de seguimiento para oportunidades futuras</li><li>Mantener relación de contacto para potenciales deals futuros</li><li>Analizar razones de pérdida para mejora de proceso</li></ul><p><strong>Etapa adicional: En espera</strong></p><p>Los deals también pueden ponerse 'En Espera' cuando:</p><ul><li>El comprador necesita más tiempo (circunstancias personales)</li><li>El financiamiento está retrasado</li><li>Los problemas de propiedad necesitan resolverse</li><li>Las condiciones del mercado requieren espera</li></ul><p>Los deals En Espera pueden reactivarse después a etapa apropiada.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor stage management",
+        "en": "Best Practices for Stage Management",
+        "es": "Mejores prácticas para gestión de etapas"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Update promptly:</strong> Move deals binnen 24 uur na belangrijke milestones</li><li><strong>Document reasons:</strong> Add notes bij elke stage transition met explanation</li><li><strong>Follow criteria:</strong> Gebruik entry criteria om premature moves te voorkomen</li><li><strong>Track activities:</strong> Log alle relevante activities in elke stage</li><li><strong>Review regularly:</strong> Weekly pipeline review om stagnant deals te identificeren</li><li><strong>Learn from Lost:</strong> Analyze lost deals om process te improven</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Update promptly:</strong> Move deals within 24 hours of important milestones</li><li><strong>Document reasons:</strong> Add notes for each stage transition with explanation</li><li><strong>Follow criteria:</strong> Use entry criteria to prevent premature moves</li><li><strong>Track activities:</strong> Log all relevant activities in each stage</li><li><strong>Review regularly:</strong> Weekly pipeline review to identify stagnant deals</li><li><strong>Learn from Lost:</strong> Analyze lost deals to improve process</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Actualizar rápidamente:</strong> Mueve deals dentro de 24 horas de hitos importantes</li><li><strong>Documentar razones:</strong> Agrega notas para cada transición de etapa con explicación</li><li><strong>Seguir criterios:</strong> Usa criterios de entrada para prevenir movimientos prematuros</li><li><strong>Rastrear actividades:</strong> Registra todas las actividades relevantes en cada etapa</li><li><strong>Revisar regularmente:</strong> Revisión semanal del pipeline para identificar deals estancados</li><li><strong>Aprender de Perdidos:</strong> Analiza deals perdidos para mejorar proceso</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-kanban-board-guide",
+    "deal-won-lost-analysis"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik stages skippen in de pipeline?",
+        "en": "Can I skip stages in the pipeline?",
+        "es": "¿Puedo saltar etapas en el pipeline?"
+      },
+      "answer": {
+        "nl": "Technisch gezien kun je deals direct naar elke stage verplaatsen, maar het wordt niet aanbevolen. Het volgen van de sequential stages zorgt voor accurate tracking en forecasting. In uitzonderlijke gevallen (bijv. returning client) kun je stages skippen, maar documenteer altijd de reason.",
+        "en": "Technically you can move deals directly to any stage, but it's not recommended. Following sequential stages ensures accurate tracking and forecasting. In exceptional cases (e.g., returning client) you can skip stages, but always document the reason.",
+        "es": "Técnicamente puedes mover deals directamente a cualquier etapa, pero no se recomienda. Seguir las etapas secuenciales asegura seguimiento y pronóstico precisos. En casos excepcionales (ej., cliente recurrente) puedes saltar etapas, pero siempre documenta la razón."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als een deal lang in één stage blijft?",
+        "en": "What if a deal stays in one stage for too long?",
+        "es": "¿Qué pasa si un deal permanece en una etapa por mucho tiempo?"
+      },
+      "answer": {
+        "nl": "Review de deal om de reason te identificeren. Het kan zijn dat: buyer heeft meer tijd nodig (On Hold), er zijn obstacles (document in notes), of deal is eigenlijk Lost maar niet gemarkeerd. Set reminders en proactively follow up om momentum te behouden.",
+        "en": "Review the deal to identify the reason. It could be: buyer needs more time (On Hold), there are obstacles (document in notes), or deal is actually Lost but not marked. Set reminders and proactively follow up to maintain momentum.",
+        "es": "Revisa el deal para identificar la razón. Podría ser: el comprador necesita más tiempo (En Espera), hay obstáculos (documentar en notas), o el deal está realmente Perdido pero no marcado. Establece recordatorios y haz seguimiento proactivo para mantener momentum."
+      }
+    }
+  ]
+}

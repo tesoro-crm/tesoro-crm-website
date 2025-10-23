@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "id": "contact-tags-organization",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:20:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "tags", "hashtags", "organization", "segmentation"],
+    "featured": false,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro tags", "contact organization", "hashtags crm", "contact segmentation", "label contacts"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contacten Organiseren met Tags en Hashtags",
+      "en": "Organizing Contacts with Tags and Hashtags",
+      "es": "Organizar Contactos con Etiquetas y Hashtags"
+    },
+    "description": {
+      "nl": "Leer hoe je tags en hashtags gebruikt om je contacten effectief te organiseren, segmenteren en terug te vinden.",
+      "en": "Learn how to use tags and hashtags to effectively organize, segment and find your contacts.",
+      "es": "Aprende cómo usar etiquetas y hashtags para organizar, segmentar y encontrar efectivamente tus contactos."
+    },
+    "icon": "label"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "why-use-tags",
+      "title": {
+        "nl": "Waarom Tags Gebruiken?",
+        "en": "Why Use Tags?",
+        "es": "¿Por qué Usar Etiquetas?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tags zijn flexibele labels die je aan contacten kunt toekennen voor snelle organisatie en filtering. In tegenstelling tot vaste velden zoals 'Status' of 'Role', kun je met tags je eigen categorieën maken.</p><h3>Voordelen van Tags</h3><ul><li><strong>Flexible categorisatie:</strong> Maak je eigen organisatiesysteem</li><li><strong>Meerdere tags per contact:</strong> Een contact kan 'VIP', 'Hot Lead' én 'Luxury Buyer' zijn</li><li><strong>Snelle filtering:</strong> Klik op een tag om alle contacten met die tag te zien</li><li><strong>Bulk operaties:</strong> Voer acties uit op alle contacten met een specifieke tag</li><li><strong>Visuele organisatie:</strong> Tags hebben kleuren voor snelle herkenning</li></ul><h3>Tag vs Status vs Custom Field</h3><ul><li><strong>Status:</strong> Vaste keuzes (Active, Inactive, Won, Lost)</li><li><strong>Custom Field:</strong> Gestructureerde data met vaste types</li><li><strong>Tags:</strong> Vrije labels, meerdere mogelijk, eenvoudig te wijzigen</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tags are flexible labels you can assign to contacts for quick organization and filtering. Unlike fixed fields like 'Status' or 'Role', you can create your own categories with tags.</p><h3>Benefits of Tags</h3><ul><li><strong>Flexible categorization:</strong> Create your own organization system</li><li><strong>Multiple tags per contact:</strong> A contact can be 'VIP', 'Hot Lead' AND 'Luxury Buyer'</li><li><strong>Quick filtering:</strong> Click on a tag to see all contacts with that tag</li><li><strong>Bulk operations:</strong> Perform actions on all contacts with a specific tag</li><li><strong>Visual organization:</strong> Tags have colors for quick recognition</li></ul><h3>Tag vs Status vs Custom Field</h3><ul><li><strong>Status:</strong> Fixed choices (Active, Inactive, Won, Lost)</li><li><strong>Custom Field:</strong> Structured data with fixed types</li><li><strong>Tags:</strong> Free labels, multiple possible, easy to change</li></ul>"
+        },
+        "es": {
+          "text": "<p>Las etiquetas son etiquetas flexibles que puedes asignar a contactos para organización y filtrado rápido. A diferencia de campos fijos como 'Status' o 'Role', puedes crear tus propias categorías con etiquetas.</p><h3>Beneficios de las Etiquetas</h3><ul><li><strong>Categorización flexible:</strong> Crea tu propio sistema de organización</li><li><strong>Múltiples etiquetas por contacto:</strong> Un contacto puede ser 'VIP', 'Hot Lead' Y 'Luxury Buyer'</li><li><strong>Filtrado rápido:</strong> Haz clic en una etiqueta para ver todos los contactos con esa etiqueta</li><li><strong>Operaciones masivas:</strong> Realiza acciones en todos los contactos con una etiqueta específica</li><li><strong>Organización visual:</strong> Las etiquetas tienen colores para reconocimiento rápido</li></ul><h3>Etiqueta vs Estado vs Campo Personalizado</h3><ul><li><strong>Status:</strong> Opciones fijas (Active, Inactive, Won, Lost)</li><li><strong>Custom Field:</strong> Datos estructurados con tipos fijos</li><li><strong>Tags:</strong> Etiquetas libres, múltiples posibles, fáciles de cambiar</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "adding-tags",
+      "title": {
+        "nl": "Tags Toevoegen aan Contacten",
+        "en": "Adding Tags to Contacts",
+        "es": "Agregar Etiquetas a Contactos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Methode 1: Direct in Contact Formulier",
+            "en": "Method 1: Directly in Contact Form",
+            "es": "Método 1: Directamente en Formulario de Contacto"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Open een contact (of maak een nieuw contact aan)</li><li>Scroll naar het <strong>Tags</strong> veld</li><li>Begin te typen - je ziet suggesties van bestaande tags</li><li>Kies een bestaande tag OF druk Enter om een nieuwe tag aan te maken</li><li>Voeg meerdere tags toe door blijven typen</li><li>Klik <strong>Save</strong></li></ol><p><strong>Tip:</strong> Tags worden automatisch opgeslagen in het systeem zodra je ze aanmaakt.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Open a contact (or create a new contact)</li><li>Scroll to the <strong>Tags</strong> field</li><li>Start typing - you'll see suggestions of existing tags</li><li>Choose an existing tag OR press Enter to create a new tag</li><li>Add multiple tags by continuing to type</li><li>Click <strong>Save</strong></li></ol><p><strong>Tip:</strong> Tags are automatically saved in the system as soon as you create them.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Abre un contacto (o crea un nuevo contacto)</li><li>Desplázate al campo <strong>Tags</strong></li><li>Comienza a escribir - verás sugerencias de etiquetas existentes</li><li>Elige una etiqueta existente O presiona Enter para crear una nueva etiqueta</li><li>Agrega múltiples etiquetas continuando escribiendo</li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Tip:</strong> Las etiquetas se guardan automáticamente en el sistema tan pronto como las creas.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Methode 2: Bulk Tags Toevoegen",
+            "en": "Method 2: Bulk Add Tags",
+            "es": "Método 2: Agregar Etiquetas en Masa"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voeg dezelfde tag toe aan meerdere contacten tegelijk:</p><ol><li>Ga naar de <strong>Contacts</strong> lijst</li><li>Selecteer meerdere contacten (checkboxes)</li><li>Klik op <strong>Bulk Actions</strong></li><li>Kies <strong>Add Tags</strong></li><li>Typ de tag naam</li><li>Klik <strong>Apply</strong></li></ol><p>Alle geselecteerde contacten krijgen nu deze tag toegewezen.</p>"
+            },
+            "en": {
+              "text": "<p>Add the same tag to multiple contacts at once:</p><ol><li>Go to the <strong>Contacts</strong> list</li><li>Select multiple contacts (checkboxes)</li><li>Click <strong>Bulk Actions</strong></li><li>Choose <strong>Add Tags</strong></li><li>Type the tag name</li><li>Click <strong>Apply</strong></li></ol><p>All selected contacts will now have this tag assigned.</p>"
+            },
+            "es": {
+              "text": "<p>Agrega la misma etiqueta a múltiples contactos a la vez:</p><ol><li>Ve a la lista de <strong>Contacts</strong></li><li>Selecciona múltiples contactos (casillas de verificación)</li><li>Haz clic en <strong>Bulk Actions</strong></li><li>Elige <strong>Add Tags</strong></li><li>Escribe el nombre de la etiqueta</li><li>Haz clic en <strong>Apply</strong></li></ol><p>Todos los contactos seleccionados ahora tendrán esta etiqueta asignada.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Methode 3: Tags Beheren in Settings",
+            "en": "Method 3: Manage Tags in Settings",
+            "es": "Método 3: Gestionar Etiquetas en Settings"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Creëer en beheer tags centraal:</p><ol><li>Ga naar <strong>Settings</strong> (tandwiel icoon)</li><li>Kies <strong>Tags</strong></li><li>Klik <strong>+ Create Tag</strong></li><li>Vul in: Tag naam, kleur, beschrijving</li><li>Klik <strong>Save</strong></li></ol><p><strong>Voordelen van centraal tags beheren:</strong></p><ul><li>Consistente naming conventions</li><li>Kleuren toekennen voor visuele organisatie</li><li>Beschrijvingen toevoegen voor teamleden</li><li>Inactieve tags archiveren</li><li>Tag gebruik statistieken zien</li></ul>"
+            },
+            "en": {
+              "text": "<p>Create and manage tags centrally:</p><ol><li>Go to <strong>Settings</strong> (gear icon)</li><li>Choose <strong>Tags</strong></li><li>Click <strong>+ Create Tag</strong></li><li>Fill in: Tag name, color, description</li><li>Click <strong>Save</strong></li></ol><p><strong>Benefits of managing tags centrally:</strong></p><ul><li>Consistent naming conventions</li><li>Assign colors for visual organization</li><li>Add descriptions for team members</li><li>Archive inactive tags</li><li>See tag usage statistics</li></ul>"
+            },
+            "es": {
+              "text": "<p>Crea y gestiona etiquetas centralmente:</p><ol><li>Ve a <strong>Settings</strong> (icono de engranaje)</li><li>Elige <strong>Tags</strong></li><li>Haz clic en <strong>+ Create Tag</strong></li><li>Completa: Nombre de etiqueta, color, descripción</li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Beneficios de gestionar etiquetas centralmente:</strong></p><ul><li>Convenciones de nomenclatura consistentes</li><li>Asignar colores para organización visual</li><li>Agregar descripciones para miembros del equipo</li><li>Archivar etiquetas inactivas</li><li>Ver estadísticas de uso de etiquetas</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "tag-system-examples",
+      "variant": "info",
+      "title": {
+        "nl": "Voorbeeld Tag Systemen",
+        "en": "Example Tag Systems",
+        "es": "Sistemas de Etiquetas de Ejemplo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Lead Kwalificatie Tags:</strong></p><ul><li>Hot Lead (urgent, budget confirmed)</li><li>Warm Lead (interested, needs follow-up)</li><li>Cold Lead (low interest or engagement)</li></ul><p><strong>Client Type Tags:</strong></p><ul><li>First-time Buyer</li><li>Luxury Buyer</li><li>Investor</li><li>Seller</li><li>Landlord</li></ul><p><strong>Property Interest Tags:</strong></p><ul><li>Beach Property</li><li>City Center</li><li>Countryside</li><li>New Construction</li><li>Resale</li></ul><p><strong>Status Tags:</strong></p><ul><li>VIP Client</li><li>Repeat Customer</li><li>Referral Source</li><li>Newsletter Subscriber</li></ul><p><strong>Follow-up Tags:</strong></p><ul><li>Needs Follow-up</li><li>Waiting for Documents</li><li>Viewing Scheduled</li><li>Offer Submitted</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Lead Qualification Tags:</strong></p><ul><li>Hot Lead (urgent, budget confirmed)</li><li>Warm Lead (interested, needs follow-up)</li><li>Cold Lead (low interest or engagement)</li></ul><p><strong>Client Type Tags:</strong></p><ul><li>First-time Buyer</li><li>Luxury Buyer</li><li>Investor</li><li>Seller</li><li>Landlord</li></ul><p><strong>Property Interest Tags:</strong></p><ul><li>Beach Property</li><li>City Center</li><li>Countryside</li><li>New Construction</li><li>Resale</li></ul><p><strong>Status Tags:</strong></p><ul><li>VIP Client</li><li>Repeat Customer</li><li>Referral Source</li><li>Newsletter Subscriber</li></ul><p><strong>Follow-up Tags:</strong></p><ul><li>Needs Follow-up</li><li>Waiting for Documents</li><li>Viewing Scheduled</li><li>Offer Submitted</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Etiquetas de Calificación de Lead:</strong></p><ul><li>Hot Lead (urgente, presupuesto confirmado)</li><li>Warm Lead (interesado, necesita seguimiento)</li><li>Cold Lead (bajo interés o compromiso)</li></ul><p><strong>Etiquetas de Tipo de Cliente:</strong></p><ul><li>First-time Buyer</li><li>Luxury Buyer</li><li>Investor</li><li>Seller</li><li>Landlord</li></ul><p><strong>Etiquetas de Interés en Propiedad:</strong></p><ul><li>Beach Property</li><li>City Center</li><li>Countryside</li><li>New Construction</li><li>Resale</li></ul><p><strong>Etiquetas de Estado:</strong></p><ul><li>VIP Client</li><li>Repeat Customer</li><li>Referral Source</li><li>Newsletter Subscriber</li></ul><p><strong>Etiquetas de Seguimiento:</strong></p><ul><li>Needs Follow-up</li><li>Waiting for Documents</li><li>Viewing Scheduled</li><li>Offer Submitted</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "filtering-by-tags",
+      "title": {
+        "nl": "Filteren op Tags",
+        "en": "Filtering by Tags",
+        "es": "Filtrar por Etiquetas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tags zijn krachtig voor filtering en segmentatie:</p><h3>Filter Opties</h3><ol><li><strong>Klik op tag badge:</strong> In de contactenlijst, klik op een tag om alle contacten met die tag te zien</li><li><strong>Gebruik advanced filters:</strong> Ga naar Contacts > Filters > Tags en selecteer één of meerdere tags</li><li><strong>Combineer filters:</strong> Gebruik tags in combinatie met status, location, of andere filters</li></ol><h3>Saved Views met Tags</h3><p>Maak saved views voor veelgebruikte tag combinaties:</p><ul><li>'Hot Leads VIP' (tags: Hot Lead + VIP Client)</li><li>'Luxury Beach Buyers' (tags: Luxury Buyer + Beach Property)</li><li>'Follow-up This Week' (tags: Needs Follow-up)</li></ul><p>Saved views verschijnen in het snelmenu voor instant access.</p>"
+        },
+        "en": {
+          "text": "<p>Tags are powerful for filtering and segmentation:</p><h3>Filter Options</h3><ol><li><strong>Click on tag badge:</strong> In the contacts list, click on a tag to see all contacts with that tag</li><li><strong>Use advanced filters:</strong> Go to Contacts > Filters > Tags and select one or multiple tags</li><li><strong>Combine filters:</strong> Use tags in combination with status, location, or other filters</li></ol><h3>Saved Views with Tags</h3><p>Create saved views for frequently used tag combinations:</p><ul><li>'Hot Leads VIP' (tags: Hot Lead + VIP Client)</li><li>'Luxury Beach Buyers' (tags: Luxury Buyer + Beach Property)</li><li>'Follow-up This Week' (tags: Needs Follow-up)</li></ul><p>Saved views appear in the quick menu for instant access.</p>"
+        },
+        "es": {
+          "text": "<p>Las etiquetas son poderosas para filtrado y segmentación:</p><h3>Opciones de Filtro</h3><ol><li><strong>Haz clic en insignia de etiqueta:</strong> En la lista de contactos, haz clic en una etiqueta para ver todos los contactos con esa etiqueta</li><li><strong>Usa filtros avanzados:</strong> Ve a Contacts > Filters > Tags y selecciona una o múltiples etiquetas</li><li><strong>Combina filtros:</strong> Usa etiquetas en combinación con estado, ubicación u otros filtros</li></ol><h3>Vistas Guardadas con Etiquetas</h3><p>Crea vistas guardadas para combinaciones de etiquetas frecuentemente usadas:</p><ul><li>'Hot Leads VIP' (etiquetas: Hot Lead + VIP Client)</li><li>'Luxury Beach Buyers' (etiquetas: Luxury Buyer + Beach Property)</li><li>'Follow-up This Week' (etiquetas: Needs Follow-up)</li></ul><p>Las vistas guardadas aparecen en el menú rápido para acceso instantáneo.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-advanced-search",
+    "contact-custom-fields-guide",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen tags en hashtags in Tesoro?",
+        "en": "What's the difference between tags and hashtags in Tesoro?",
+        "es": "¿Cuál es la diferencia entre tags y hashtags en Tesoro?"
+      },
+      "answer": {
+        "nl": "In Tesoro zijn 'tags' en 'hashtags' hetzelfde - beide termen verwijzen naar dezelfde functionaliteit. Je kunt ze gebruiken met of zonder # symbool.",
+        "en": "In Tesoro, 'tags' and 'hashtags' are the same - both terms refer to the same functionality. You can use them with or without the # symbol.",
+        "es": "En Tesoro, 'tags' y 'hashtags' son lo mismo - ambos términos se refieren a la misma funcionalidad. Puedes usarlos con o sin el símbolo #."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een tag hernoemen zonder data te verliezen?",
+        "en": "Can I rename a tag without losing data?",
+        "es": "¿Puedo renombrar una etiqueta sin perder datos?"
+      },
+      "answer": {
+        "nl": "Ja, ga naar Settings > Tags, selecteer de tag en klik Edit. Wijzig de naam en alle contacten met deze tag blijven de nieuwe naam automatisch gebruiken.",
+        "en": "Yes, go to Settings > Tags, select the tag and click Edit. Change the name and all contacts with this tag will automatically use the new name.",
+        "es": "Sí, ve a Settings > Tags, selecciona la etiqueta y haz clic en Edit. Cambia el nombre y todos los contactos con esta etiqueta usarán automáticamente el nuevo nombre."
+      }
+    }
+  ]
+}

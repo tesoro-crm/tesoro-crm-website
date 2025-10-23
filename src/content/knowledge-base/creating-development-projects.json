@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "id": "creating-development-projects",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "projects",
+    "difficulty": "intermediate",
+    "tags": ["projects", "developments", "setup", "construction", "tutorial"],
+    "featured": false,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=630&fit=crop",
+    "keywords": ["create project", "development setup", "construction project", "tesoro projects", "new development"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Development projecten aanmaken: stap-voor-stap",
+      "en": "Creating Development Projects: Step-by-Step",
+      "es": "Crear proyectos de desarrollo: paso a paso"
+    },
+    "description": {
+      "nl": "Complete handleiding voor het opzetten van een nieuw development project in Tesoro: van basis informatie tot units en marketing.",
+      "en": "Complete guide to setting up a new development project in Tesoro: from basic information to units and marketing.",
+      "es": "Guía completa para configurar un nuevo proyecto de desarrollo en Tesoro: desde información básica hasta unidades y marketing."
+    },
+    "icon": "construction"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het aanmaken van een development project in Tesoro is een <strong>5-step process</strong> die 15-20 minuten duurt. Deze gids leidt je door elke stap met concrete voorbeelden.</p><p><strong>Wat je nodig hebt voordat je begint:</strong></p><ul><li>Project naam en developer informatie</li><li>Construction timeline (start + completion dates)</li><li>List of units (hoeveel apartments/houses/etc.)</li><li>Marketing materials (optioneel: brochures, renders)</li><li>Pricing strategy (price per unit)</li></ul><p><strong>Tip:</strong> Als je nog geen complete info hebt, kun je toch starten en later aanvullen. Je kunt het project altijd updaten.</p>"
+        },
+        "en": {
+          "text": "<p>Creating a development project in Tesoro is a <strong>5-step process</strong> that takes 15-20 minutes. This guide walks you through each step with concrete examples.</p><p><strong>What you need before starting:</strong></p><ul><li>Project name and developer information</li><li>Construction timeline (start + completion dates)</li><li>List of units (how many apartments/houses/etc.)</li><li>Marketing materials (optional: brochures, renders)</li><li>Pricing strategy (price per unit)</li></ul><p><strong>Tip:</strong> If you don't have complete info yet, you can still start and fill in later. You can always update the project.</p>"
+        },
+        "es": {
+          "text": "<p>Crear un proyecto de desarrollo en Tesoro es un <strong>proceso de 5 pasos</strong> que toma 15-20 minutos. Esta guía te lleva a través de cada paso con ejemplos concretos.</p><p><strong>Lo que necesitas antes de comenzar:</strong></p><ul><li>Nombre del proyecto e información del desarrollador</li><li>Cronograma de construcción (fechas de inicio + finalización)</li><li>Lista de unidades (cuántos apartamentos/casas/etc.)</li><li>Materiales de marketing (opcional: folletos, renders)</li><li>Estrategia de precios (precio por unidad)</li></ul><p><strong>Consejo:</strong> Si aún no tienes información completa, puedes comenzar y completar más tarde. Siempre puedes actualizar el proyecto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "creation-steps",
+      "title": {
+        "nl": "Stap-voor-stap: Project aanmaken",
+        "en": "Step-by-Step: Creating a Project",
+        "es": "Paso a paso: crear un proyecto"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Basis project informatie",
+            "en": "Step 1: Basic Project Information",
+            "es": "Paso 1: Información básica del proyecto"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Ga naar <strong>Projects</strong> in de sidebar</li><li>Klik rechtsboven op <strong>+ New Project</strong></li><li>Vul de basis informatie in:</li></ol><h4>Required fields:</h4><ul><li><strong>Project Name:</strong> De official naam (bijv. \"Marina Bay Residences\")</li><li><strong>Developer:</strong> Naam van de developer/builder</li><li><strong>Location:</strong> Address of general area</li><li><strong>Project Type:</strong> <ul><li>Residential (Apartments, Townhouses, Villas)</li><li>Commercial (Offices, Retail)</li><li>Mixed-Use (Residential + Commercial)</li></ul></li></ul><h4>Optional but recommended:</h4><ul><li><strong>Architect:</strong> Naam van het architecture firm</li><li><strong>Description:</strong> Short pitch (2-3 sentences) over het project</li><li><strong>Website:</strong> Project website URL (if exists)</li></ul><p><strong>Voorbeeld:</strong></p><pre>Project Name: Sunset Gardens Valencia\nDeveloper: Inmobiliaria Costa Azul SL\nLocation: Avenida del Puerto 45, Valencia\nProject Type: Residential - Apartments\nArchitect: Studio García & Partners\nDescription: Modern 3-building residential complex with 72 units, Mediterranean design, rooftop pool and gym.\n</pre><p>Klik <strong>Next</strong> om naar stap 2 te gaan.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Go to <strong>Projects</strong> in the sidebar</li><li>Click top right on <strong>+ New Project</strong></li><li>Fill in the basic information:</li></ol><h4>Required fields:</h4><ul><li><strong>Project Name:</strong> The official name (e.g. \"Marina Bay Residences\")</li><li><strong>Developer:</strong> Name of the developer/builder</li><li><strong>Location:</strong> Address or general area</li><li><strong>Project Type:</strong> <ul><li>Residential (Apartments, Townhouses, Villas)</li><li>Commercial (Offices, Retail)</li><li>Mixed-Use (Residential + Commercial)</li></ul></li></ul><h4>Optional but recommended:</h4><ul><li><strong>Architect:</strong> Name of the architecture firm</li><li><strong>Description:</strong> Short pitch (2-3 sentences) about the project</li><li><strong>Website:</strong> Project website URL (if exists)</li></ul><p><strong>Example:</strong></p><pre>Project Name: Sunset Gardens Valencia\nDeveloper: Inmobiliaria Costa Azul SL\nLocation: Avenida del Puerto 45, Valencia\nProject Type: Residential - Apartments\nArchitect: Studio García & Partners\nDescription: Modern 3-building residential complex with 72 units, Mediterranean design, rooftop pool and gym.\n</pre><p>Click <strong>Next</strong> to go to step 2.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Ve a <strong>Projects</strong> en la barra lateral</li><li>Haz clic arriba a la derecha en <strong>+ New Project</strong></li><li>Completa la información básica:</li></ol><h4>Campos requeridos:</h4><ul><li><strong>Project Name:</strong> El nombre oficial (ej. \"Marina Bay Residences\")</li><li><strong>Developer:</strong> Nombre del desarrollador/constructor</li><li><strong>Location:</strong> Dirección o área general</li><li><strong>Project Type:</strong> <ul><li>Residential (Apartamentos, Townhouses, Villas)</li><li>Commercial (Oficinas, Retail)</li><li>Mixed-Use (Residencial + Comercial)</li></ul></li></ul><h4>Opcional pero recomendado:</h4><ul><li><strong>Architect:</strong> Nombre de la firma de arquitectura</li><li><strong>Description:</strong> Pitch corto (2-3 oraciones) sobre el proyecto</li><li><strong>Website:</strong> URL del sitio web del proyecto (si existe)</li></ul><p><strong>Ejemplo:</strong></p><pre>Project Name: Sunset Gardens Valencia\nDeveloper: Inmobiliaria Costa Azul SL\nLocation: Avenida del Puerto 45, Valencia\nProject Type: Residential - Apartments\nArchitect: Studio García & Partners\nDescription: Complejo residencial moderno de 3 edificios con 72 unidades, diseño mediterráneo, piscina en azotea y gimnasio.\n</pre><p>Haz clic en <strong>Next</strong> para ir al paso 2.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Construction timeline en milestones",
+            "en": "Step 2: Construction Timeline and Milestones",
+            "es": "Paso 2: Cronograma de construcción y milestones"
+          },
+          "content": {
+            "nl": {
+              "text": "<h4>Timeline dates:</h4><ul><li><strong>Construction Start Date:</strong> Wanneer is de bouw begonnen (of gaat beginnen)?</li><li><strong>Expected Completion:</strong> Wanneer is oplevering gepland?</li><li><strong>Sales Start Date:</strong> Wanneer begin je met verkopen? (Can be before construction)</li></ul><p><strong>Voorbeeld:</strong></p><pre>Construction Start: January 15, 2024\nExpected Completion: June 30, 2025 (18 months)\nSales Start: November 1, 2023 (pre-sales 2 months voor start)\n</pre><h4>Construction Milestones (optioneel maar aanbevolen):</h4><p>Voeg key milestones toe die je wilt tracken en communiceren naar buyers:</p><ul><li><strong>Foundation Complete</strong> - 3 months (April 2024)</li><li><strong>Structure Complete</strong> - 9 months (October 2024)</li><li><strong>Windows & Doors Installed</strong> - 12 months (January 2025)</li><li><strong>Interior Finishes</strong> - 15 months (April 2025)</li><li><strong>Final Inspection & Handover</strong> - 18 months (June 2025)</li></ul><p><strong>Waarom milestones belangrijk zijn:</strong></p><ul><li>Buyers kunnen zien dat het project on track is</li><li>Automatische notifications wanneer milestones bereikt zijn</li><li>Progress updates in client portal</li><li>Marketing content (\"Foundation complete!\" social posts)</li></ul><p>Klik <strong>Next</strong> naar stap 3.</p>"
+            },
+            "en": {
+              "text": "<h4>Timeline dates:</h4><ul><li><strong>Construction Start Date:</strong> When did construction start (or will start)?</li><li><strong>Expected Completion:</strong> When is delivery scheduled?</li><li><strong>Sales Start Date:</strong> When do you start selling? (Can be before construction)</li></ul><p><strong>Example:</strong></p><pre>Construction Start: January 15, 2024\nExpected Completion: June 30, 2025 (18 months)\nSales Start: November 1, 2023 (pre-sales 2 months before start)\n</pre><h4>Construction Milestones (optional but recommended):</h4><p>Add key milestones you want to track and communicate to buyers:</p><ul><li><strong>Foundation Complete</strong> - 3 months (April 2024)</li><li><strong>Structure Complete</strong> - 9 months (October 2024)</li><li><strong>Windows & Doors Installed</strong> - 12 months (January 2025)</li><li><strong>Interior Finishes</strong> - 15 months (April 2025)</li><li><strong>Final Inspection & Handover</strong> - 18 months (June 2025)</li></ul><p><strong>Why milestones are important:</strong></p><ul><li>Buyers can see the project is on track</li><li>Automatic notifications when milestones are reached</li><li>Progress updates in client portal</li><li>Marketing content (\"Foundation complete!\" social posts)</li></ul><p>Click <strong>Next</strong> to step 3.</p>"
+            },
+            "es": {
+              "text": "<h4>Fechas del cronograma:</h4><ul><li><strong>Construction Start Date:</strong> ¿Cuándo comenzó la construcción (o comenzará)?</li><li><strong>Expected Completion:</strong> ¿Cuándo está programada la entrega?</li><li><strong>Sales Start Date:</strong> ¿Cuándo comienzas a vender? (Puede ser antes de construcción)</li></ul><p><strong>Ejemplo:</strong></p><pre>Construction Start: 15 de enero, 2024\nExpected Completion: 30 de junio, 2025 (18 meses)\nSales Start: 1 de noviembre, 2023 (pre-ventas 2 meses antes del inicio)\n</pre><h4>Milestones de construcción (opcional pero recomendado):</h4><p>Agrega milestones clave que quieres rastrear y comunicar a compradores:</p><ul><li><strong>Foundation Complete</strong> - 3 meses (Abril 2024)</li><li><strong>Structure Complete</strong> - 9 meses (Octubre 2024)</li><li><strong>Windows & Doors Installed</strong> - 12 meses (Enero 2025)</li><li><strong>Interior Finishes</strong> - 15 meses (Abril 2025)</li><li><strong>Final Inspection & Handover</strong> - 18 meses (Junio 2025)</li></ul><p><strong>Por qué los milestones son importantes:</strong></p><ul><li>Los compradores pueden ver que el proyecto va en camino</li><li>Notificaciones automáticas cuando se alcanzan milestones</li><li>Actualizaciones de progreso en portal del cliente</li><li>Contenido de marketing (posts en redes \"¡Fundación completa!\")</li></ul><p>Haz clic en <strong>Next</strong> al paso 3.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Units definiëren",
+            "en": "Step 3: Define Units",
+            "es": "Paso 3: Definir unidades"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Nu definieer je hoeveel units het project heeft en hun types.</p><h4>Optie A: Quick Setup (aanbevolen voor start)</h4><p>Vul simpel het <strong>totaal aantal units</strong> in:</p><pre>Total Units: 72\n</pre><p>Je maakt later de individuele Properties aan en linkt ze aan dit project. Dit is sneller als je nu gewoon het project wilt opzetten.</p><h4>Optie B: Detailed Setup (als je nu tijd hebt)</h4><p>Definieer unit types en hoeveel van elk:</p><table><thead><tr><th>Unit Type</th><th>Count</th><th>Bedrooms</th><th>Bathrooms</th><th>Size (m²)</th><th>Price Range</th></tr></thead><tbody><tr><td>Type A</td><td>24</td><td>1</td><td>1</td><td>55-60</td><td>€180K - €200K</td></tr><tr><td>Type B</td><td>30</td><td>2</td><td>1</td><td>75-80</td><td>€250K - €280K</td></tr><tr><td>Type C</td><td>12</td><td>2</td><td>2</td><td>90-95</td><td>€320K - €350K</td></tr><tr><td>Penthouse</td><td>6</td><td>3</td><td>2</td><td>120-130</td><td>€450K - €500K</td></tr></tbody></table><p>Tesoro zal automatisch Properties aanmaken voor elk unit type.</p><h4>Phases (optioneel):</h4><p>Als je units in phases released:</p><ul><li><strong>Phase 1:</strong> Building A - 24 units (Release Nov 2023)</li><li><strong>Phase 2:</strong> Building B - 24 units (Release Mar 2024)</li><li><strong>Phase 3:</strong> Building C - 24 units (Release Aug 2024)</li></ul><p>Klik <strong>Next</strong> naar stap 4.</p>"
+            },
+            "en": {
+              "text": "<p>Now define how many units the project has and their types.</p><h4>Option A: Quick Setup (recommended for start)</h4><p>Simply fill in the <strong>total number of units</strong>:</p><pre>Total Units: 72\n</pre><p>You'll create the individual Properties later and link them to this project. This is faster if you just want to set up the project now.</p><h4>Option B: Detailed Setup (if you have time now)</h4><p>Define unit types and how many of each:</p><table><thead><tr><th>Unit Type</th><th>Count</th><th>Bedrooms</th><th>Bathrooms</th><th>Size (m²)</th><th>Price Range</th></tr></thead><tbody><tr><td>Type A</td><td>24</td><td>1</td><td>1</td><td>55-60</td><td>€180K - €200K</td></tr><tr><td>Type B</td><td>30</td><td>2</td><td>1</td><td>75-80</td><td>€250K - €280K</td></tr><tr><td>Type C</td><td>12</td><td>2</td><td>2</td><td>90-95</td><td>€320K - €350K</td></tr><tr><td>Penthouse</td><td>6</td><td>3</td><td>2</td><td>120-130</td><td>€450K - €500K</td></tr></tbody></table><p>Tesoro will automatically create Properties for each unit type.</p><h4>Phases (optional):</h4><p>If you're releasing units in phases:</p><ul><li><strong>Phase 1:</strong> Building A - 24 units (Release Nov 2023)</li><li><strong>Phase 2:</strong> Building B - 24 units (Release Mar 2024)</li><li><strong>Phase 3:</strong> Building C - 24 units (Release Aug 2024)</li></ul><p>Click <strong>Next</strong> to step 4.</p>"
+            },
+            "es": {
+              "text": "<p>Ahora define cuántas unidades tiene el proyecto y sus tipos.</p><h4>Opción A: Configuración rápida (recomendado para inicio)</h4><p>Simplemente completa el <strong>número total de unidades</strong>:</p><pre>Total Units: 72\n</pre><p>Crearás las Properties individuales más tarde y las vincularás a este proyecto. Esto es más rápido si solo quieres configurar el proyecto ahora.</p><h4>Opción B: Configuración detallada (si tienes tiempo ahora)</h4><p>Define tipos de unidad y cuántas de cada una:</p><table><thead><tr><th>Tipo de unidad</th><th>Cantidad</th><th>Dormitorios</th><th>Baños</th><th>Tamaño (m²)</th><th>Rango de precio</th></tr></thead><tbody><tr><td>Tipo A</td><td>24</td><td>1</td><td>1</td><td>55-60</td><td>€180K - €200K</td></tr><tr><td>Tipo B</td><td>30</td><td>2</td><td>1</td><td>75-80</td><td>€250K - €280K</td></tr><tr><td>Tipo C</td><td>12</td><td>2</td><td>2</td><td>90-95</td><td>€320K - €350K</td></tr><tr><td>Penthouse</td><td>6</td><td>3</td><td>2</td><td>120-130</td><td>€450K - €500K</td></tr></tbody></table><p>Tesoro creará automáticamente Properties para cada tipo de unidad.</p><h4>Fases (opcional):</h4><p>Si estás lanzando unidades en fases:</p><ul><li><strong>Fase 1:</strong> Edificio A - 24 unidades (Lanzamiento Nov 2023)</li><li><strong>Fase 2:</strong> Edificio B - 24 unidades (Lanzamiento Mar 2024)</li><li><strong>Fase 3:</strong> Edificio C - 24 unidades (Lanzamiento Ago 2024)</li></ul><p>Haz clic en <strong>Next</strong> al paso 4.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Marketing materials en amenities",
+            "en": "Step 4: Marketing Materials and Amenities",
+            "es": "Paso 4: Materiales de marketing y amenidades"
+          },
+          "content": {
+            "nl": {
+              "text": "<h4>Project Photos & Media:</h4><p>Upload master materials die voor het hele project gelden:</p><ul><li><strong>Renders/CGI:</strong> Exterior renders, interior visualizations</li><li><strong>Site Plans:</strong> Master plan, floor plans per unit type</li><li><strong>Brochures:</strong> PDF brochures (max 10MB per file)</li><li><strong>Videos:</strong> Walkthrough videos, drone footage</li></ul><p><strong>Tip:</strong> Deze materials verschijnen automatisch in client portal en kunnen gebruikt worden in property listings.</p><h4>Shared Amenities & Features:</h4><p>Vul in welke amenities alle buyers krijgen:</p><ul><li>Rooftop pool</li><li>Fitness center</li><li>24/7 security</li><li>Underground parking (2 spaces per unit)</li><li>Electric car charging</li><li>Coworking spaces</li><li>Kids playground</li><li>Mediterranean gardens</li></ul><h4>Neighborhood & Location Highlights:</h4><ul><li>5 min walk to Malvarrosa beach</li><li>Metro station 200m</li><li>Shopping center nearby</li><li>International schools within 2km</li></ul><p>Klik <strong>Next</strong> naar de laatste stap.</p>"
+            },
+            "en": {
+              "text": "<h4>Project Photos & Media:</h4><p>Upload master materials that apply to the entire project:</p><ul><li><strong>Renders/CGI:</strong> Exterior renders, interior visualizations</li><li><strong>Site Plans:</strong> Master plan, floor plans per unit type</li><li><strong>Brochures:</strong> PDF brochures (max 10MB per file)</li><li><strong>Videos:</strong> Walkthrough videos, drone footage</li></ul><p><strong>Tip:</strong> These materials automatically appear in client portal and can be used in property listings.</p><h4>Shared Amenities & Features:</h4><p>Fill in which amenities all buyers get:</p><ul><li>Rooftop pool</li><li>Fitness center</li><li>24/7 security</li><li>Underground parking (2 spaces per unit)</li><li>Electric car charging</li><li>Coworking spaces</li><li>Kids playground</li><li>Mediterranean gardens</li></ul><h4>Neighborhood & Location Highlights:</h4><ul><li>5 min walk to Malvarrosa beach</li><li>Metro station 200m</li><li>Shopping center nearby</li><li>International schools within 2km</li></ul><p>Click <strong>Next</strong> to the final step.</p>"
+            },
+            "es": {
+              "text": "<h4>Fotos y medios del proyecto:</h4><p>Sube materiales maestros que se aplican a todo el proyecto:</p><ul><li><strong>Renders/CGI:</strong> Renders exteriores, visualizaciones interiores</li><li><strong>Planos del sitio:</strong> Plan maestro, planos de piso por tipo de unidad</li><li><strong>Folletos:</strong> Folletos PDF (máx 10MB por archivo)</li><li><strong>Videos:</strong> Videos de recorrido, grabación con dron</li></ul><p><strong>Consejo:</strong> Estos materiales aparecen automáticamente en el portal del cliente y pueden usarse en listados de propiedades.</p><h4>Amenidades y características compartidas:</h4><p>Completa qué amenidades obtienen todos los compradores:</p><ul><li>Piscina en azotea</li><li>Centro de fitness</li><li>Seguridad 24/7</li><li>Estacionamiento subterráneo (2 espacios por unidad)</li><li>Carga para autos eléctricos</li><li>Espacios de coworking</li><li>Parque infantil</li><li>Jardines mediterráneos</li></ul><h4>Aspectos destacados del vecindario y ubicación:</h4><ul><li>5 min caminando a playa Malvarrosa</li><li>Estación de metro a 200m</li><li>Centro comercial cercano</li><li>Escuelas internacionales dentro de 2km</li></ul><p>Haz clic en <strong>Next</strong> al paso final.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Review en launch",
+            "en": "Step 5: Review and Launch",
+            "es": "Paso 5: Revisar y lanzar"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Review alle informatie die je hebt ingevoerd:</p><h4>Project Summary:</h4><pre>Project: Sunset Gardens Valencia\nDeveloper: Inmobiliaria Costa Azul SL\nType: Residential - Apartments\nLocation: Valencia, Spain\nUnits: 72 (24 x 1BR, 30 x 2BR, 12 x 2BR Deluxe, 6 x 3BR Penthouse)\nTimeline: Jan 2024 - Jun 2025 (18 months)\nSales Start: Nov 2023\nAmenities: Pool, Gym, Security, Parking, Gardens\n</pre><h4>Pre-launch checklist:</h4><ul><li>✅ Basic info complete</li><li>✅ Timeline set</li><li>✅ Units defined</li><li>✅ Marketing materials uploaded</li><li>✅ Amenities listed</li></ul><p><strong>Status opties:</strong></p><ul><li><strong>Draft:</strong> Project niet zichtbaar, je kunt nog werken aan setup</li><li><strong>Active:</strong> Project is live, sales team kan units verkopen</li><li><strong>On Hold:</strong> Tijdelijk gestopt (bijv. construction delays)</li></ul><p>Selecteer <strong>Active</strong> als je klaar bent om te gaan verkopen.</p><p>Klik <strong>Create Project</strong> om af te ronden!</p><h4>Wat gebeurt er nu?</h4><ul><li>Project wordt zichtbaar in Projects dashboard</li><li>Je kunt nu Properties aanmaken en linken</li><li>Client portal is beschikbaar voor buyers</li><li>Marketing materials zijn klaar voor gebruik</li></ul>"
+            },
+            "en": {
+              "text": "<p>Review all information you've entered:</p><h4>Project Summary:</h4><pre>Project: Sunset Gardens Valencia\nDeveloper: Inmobiliaria Costa Azul SL\nType: Residential - Apartments\nLocation: Valencia, Spain\nUnits: 72 (24 x 1BR, 30 x 2BR, 12 x 2BR Deluxe, 6 x 3BR Penthouse)\nTimeline: Jan 2024 - Jun 2025 (18 months)\nSales Start: Nov 2023\nAmenities: Pool, Gym, Security, Parking, Gardens\n</pre><h4>Pre-launch checklist:</h4><ul><li>✅ Basic info complete</li><li>✅ Timeline set</li><li>✅ Units defined</li><li>✅ Marketing materials uploaded</li><li>✅ Amenities listed</li></ul><p><strong>Status options:</strong></p><ul><li><strong>Draft:</strong> Project not visible, you can still work on setup</li><li><strong>Active:</strong> Project is live, sales team can sell units</li><li><strong>On Hold:</strong> Temporarily stopped (e.g. construction delays)</li></ul><p>Select <strong>Active</strong> when you're ready to start selling.</p><p>Click <strong>Create Project</strong> to finish!</p><h4>What happens now?</h4><ul><li>Project becomes visible in Projects dashboard</li><li>You can now create and link Properties</li><li>Client portal is available for buyers</li><li>Marketing materials are ready for use</li></ul>"
+            },
+            "es": {
+              "text": "<p>Revisa toda la información que has ingresado:</p><h4>Resumen del proyecto:</h4><pre>Proyecto: Sunset Gardens Valencia\nDesarrollador: Inmobiliaria Costa Azul SL\nTipo: Residential - Apartamentos\nUbicación: Valencia, España\nUnidades: 72 (24 x 1BR, 30 x 2BR, 12 x 2BR Deluxe, 6 x 3BR Penthouse)\nCronograma: Ene 2024 - Jun 2025 (18 meses)\nInicio de ventas: Nov 2023\nAmenidades: Piscina, Gimnasio, Seguridad, Estacionamiento, Jardines\n</pre><h4>Checklist pre-lanzamiento:</h4><ul><li>✅ Información básica completa</li><li>✅ Cronograma establecido</li><li>✅ Unidades definidas</li><li>✅ Materiales de marketing subidos</li><li>✅ Amenidades listadas</li></ul><p><strong>Opciones de estado:</strong></p><ul><li><strong>Draft:</strong> Proyecto no visible, aún puedes trabajar en configuración</li><li><strong>Active:</strong> Proyecto está en vivo, equipo de ventas puede vender unidades</li><li><strong>On Hold:</strong> Temporalmente detenido (ej. retrasos de construcción)</li></ul><p>Selecciona <strong>Active</strong> cuando estés listo para comenzar a vender.</p><p>¡Haz clic en <strong>Create Project</strong> para finalizar!</p><h4>¿Qué sucede ahora?</h4><ul><li>El proyecto se vuelve visible en el dashboard de Projects</li><li>Ahora puedes crear y vincular Properties</li><li>El portal del cliente está disponible para compradores</li><li>Los materiales de marketing están listos para usar</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "post-creation",
+      "variant": "success",
+      "title": {
+        "nl": "Project aangemaakt! Volgende stappen",
+        "en": "Project Created! Next Steps",
+        "es": "¡Proyecto creado! Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Je project is live! Hier is wat je nu moet doen:</strong></p><ol><li><strong>Create Properties:</strong> Maak individuele units aan en link ze aan dit project</li><li><strong>Set Pricing:</strong> Bepaal prijs per unit (kan later adjusted worden)</li><li><strong>Start Marketing:</strong> Share project brochure, social posts, website</li><li><strong>Train Team:</strong> Zorg dat je sales team het project kent</li><li><strong>Setup Automation:</strong> Automatische emails voor milestone updates</li></ol><p>Lees de volgende guides:</p><ul><li><strong>Linking Properties to Projects</strong> - Units toevoegen</li><li><strong>Project Progress Tracking</strong> - Milestones updaten</li><li><strong>Project Client Portal</strong> - Buyers toegang geven</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Your project is live! Here's what to do now:</strong></p><ol><li><strong>Create Properties:</strong> Create individual units and link them to this project</li><li><strong>Set Pricing:</strong> Set price per unit (can be adjusted later)</li><li><strong>Start Marketing:</strong> Share project brochure, social posts, website</li><li><strong>Train Team:</strong> Make sure your sales team knows the project</li><li><strong>Setup Automation:</strong> Automatic emails for milestone updates</li></ol><p>Read the next guides:</p><ul><li><strong>Linking Properties to Projects</strong> - Adding units</li><li><strong>Project Progress Tracking</strong> - Updating milestones</li><li><strong>Project Client Portal</strong> - Giving buyers access</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>¡Tu proyecto está en vivo! Esto es lo que debes hacer ahora:</strong></p><ol><li><strong>Crear Properties:</strong> Crea unidades individuales y vincúlalas a este proyecto</li><li><strong>Establecer precios:</strong> Establece precio por unidad (puede ajustarse más tarde)</li><li><strong>Comenzar marketing:</strong> Comparte folleto del proyecto, posts en redes, sitio web</li><li><strong>Capacitar equipo:</strong> Asegúrate de que tu equipo de ventas conozca el proyecto</li><li><strong>Configurar automatización:</strong> Emails automáticos para actualizaciones de milestones</li></ol><p>Lee las siguientes guías:</p><ul><li><strong>Linking Properties to Projects</strong> - Agregar unidades</li><li><strong>Project Progress Tracking</strong> - Actualizar milestones</li><li><strong>Project Client Portal</strong> - Dar acceso a compradores</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "projects-overview-guide",
+    "linking-properties-to-projects",
+    "project-progress-tracking",
+    "adding-properties-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik project details later wijzigen?",
+        "en": "Can I change project details later?",
+        "es": "¿Puedo cambiar los detalles del proyecto más tarde?"
+      },
+      "answer": {
+        "nl": "Ja! Alle project informatie kan later worden aangepast: timeline, units, amenities, marketing materials, etc. Ga naar Projects → [Your Project] → Edit.",
+        "en": "Yes! All project information can be changed later: timeline, units, amenities, marketing materials, etc. Go to Projects → [Your Project] → Edit.",
+        "es": "¡Sí! Toda la información del proyecto puede cambiarse más tarde: cronograma, unidades, amenidades, materiales de marketing, etc. Ve a Projects → [Tu Proyecto] → Edit."
+      }
+    },
+    {
+      "question": {
+        "nl": "Moet ik alle units tegelijk aanmaken?",
+        "en": "Do I have to create all units at once?",
+        "es": "¿Tengo que crear todas las unidades a la vez?"
+      },
+      "answer": {
+        "nl": "Nee. Je kunt het project eerst aanmaken met alleen het totaal aantal units, en later Properties toevoegen. Dit is handig als je phase-based released: maak Phase 1 units nu, Phase 2 later.",
+        "en": "No. You can first create the project with just the total number of units, and add Properties later. This is useful for phase-based releases: create Phase 1 units now, Phase 2 later.",
+        "es": "No. Puedes crear primero el proyecto con solo el número total de unidades y agregar Properties más tarde. Esto es útil para lanzamientos basados en fases: crea unidades de Fase 1 ahora, Fase 2 más tarde."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als construction wordt vertraagd?",
+        "en": "What happens if construction is delayed?",
+        "es": "¿Qué sucede si la construcción se retrasa?"
+      },
+      "answer": {
+        "nl": "Update gewoon de Expected Completion date in project settings. Tesoro zal automatisch buyers notificeren van de nieuwe timeline als je dat hebt ingesteld. Je kunt ook een note toevoegen om de reden te verklaren.",
+        "en": "Just update the Expected Completion date in project settings. Tesoro will automatically notify buyers of the new timeline if you have that set up. You can also add a note to explain the reason.",
+        "es": "Simplemente actualiza la fecha de Expected Completion en configuración del proyecto. Tesoro notificará automáticamente a compradores de la nueva línea de tiempo si tienes eso configurado. También puedes agregar una nota para explicar la razón."
+      }
+    }
+  ]
+}

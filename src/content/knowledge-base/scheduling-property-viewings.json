@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "id": "scheduling-property-viewings",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["calendar", "viewings", "properties", "scheduling", "clients"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property viewing scheduling", "real estate showings", "schedule property tours", "tesoro viewings", "client property appointments"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Bezichtigingen plannen en beheren",
+      "en": "Scheduling and Managing Property Viewings",
+      "es": "Programar y gestionar visitas a propiedades"
+    },
+    "description": {
+      "nl": "Leer hoe je efficiënt pand bezichtigingen plant, klanten uitnodigt en je showings organiseert voor maximale productiviteit.",
+      "en": "Learn how to efficiently schedule property viewings, invite clients, and organize your showings for maximum productivity.",
+      "es": "Aprende a programar eficientemente visitas a propiedades, invitar clientes y organizar tus presentaciones para máxima productividad."
+    },
+    "icon": "home"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Het plannen van pand bezichtigingen is een van de meest tijdrovende taken voor vastgoedmakelaars. Tesoro stroomlijnt dit proces door bezichtigingen direct te koppelen aan panden en contacten, automatische herinneringen te versturen en je kalender te optimaliseren om reistijd tussen locaties te minimaliseren. Deze gids laat je zien hoe je bezichtigingen zo efficiënt mogelijk plant en beheert.",
+        "en": "Scheduling property viewings is one of the most time-consuming tasks for real estate agents. Tesoro streamlines this process by linking viewings directly to properties and contacts, sending automatic reminders, and optimizing your calendar to minimize travel time between locations. This guide will show you how to schedule and manage viewings as efficiently as possible.",
+        "es": "Programar visitas a propiedades es una de las tareas que más tiempo consumen para los agentes inmobiliarios. Tesoro agiliza este proceso vinculando las visitas directamente con propiedades y contactos, enviando recordatorios automáticos y optimizando tu calendario para minimizar el tiempo de viaje entre ubicaciones. Esta guía te mostrará cómo programar y gestionar visitas de la manera más eficiente posible."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "creating-viewing",
+      "title": {
+        "nl": "Een bezichtiging aanmaken",
+        "en": "Creating a Viewing",
+        "es": "Crear una visita"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Start vanuit de kalender of pand",
+            "en": "Start From Calendar or Property",
+            "es": "Comenzar desde calendario o propiedad"
+          },
+          "description": {
+            "nl": "Je kunt een bezichtiging op twee manieren aanmaken: Klik op een tijdslot in je kalender en selecteer 'Nieuwe bezichtiging', of ga naar een pand pagina en klik op 'Bezichtiging plannen'. De pand methode vult automatisch het pand in, terwijl de kalender methode je laat kiezen uit je actieve listings.",
+            "en": "You can create a viewing in two ways: Click a time slot in your calendar and select 'New Viewing', or go to a property page and click 'Schedule Viewing'. The property method automatically fills in the property, while the calendar method lets you choose from your active listings.",
+            "es": "Puedes crear una visita de dos maneras: Haz clic en un intervalo de tiempo en tu calendario y selecciona 'Nueva visita', o ve a una página de propiedad y haz clic en 'Programar visita'. El método de propiedad llena automáticamente la propiedad, mientras que el método de calendario te permite elegir entre tus listados activos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer het pand",
+            "en": "Select the Property",
+            "es": "Seleccionar la propiedad"
+          },
+          "description": {
+            "nl": "Begin met het typen van het pand adres of referentienummer. Tesoro filtert je actieve listings terwijl je typt. Als het pand niet verschijnt, zorg er dan voor dat het status 'Beschikbaar' of 'In verkoop' heeft - panden met status 'Verkocht' of 'Ingetrokken' verschijnen niet in de selectie.",
+            "en": "Start typing the property address or reference number. Tesoro filters your active listings as you type. If the property doesn't appear, make sure it has status 'Available' or 'Under Contract' - properties marked 'Sold' or 'Withdrawn' won't appear in the selection.",
+            "es": "Comienza escribiendo la dirección de la propiedad o número de referencia. Tesoro filtra tus listados activos mientras escribes. Si la propiedad no aparece, asegúrate de que tenga el estado 'Disponible' o 'Bajo contrato' - las propiedades marcadas como 'Vendidas' o 'Retiradas' no aparecerán en la selección."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies datum en tijd",
+            "en": "Choose Date and Time",
+            "es": "Elegir fecha y hora"
+          },
+          "description": {
+            "nl": "Selecteer de bezichtigingsdatum en starttijd. Tesoro toont je beschikbaarheid en waarschuwt je voor conflicten met bestaande afspraken. De standaard duur is 30 minuten, maar je kunt dit aanpassen naar 15, 45 of 60 minuten afhankelijk van de pand grootte.",
+            "en": "Select the viewing date and start time. Tesoro shows your availability and warns you about conflicts with existing appointments. The default duration is 30 minutes, but you can adjust this to 15, 45, or 60 minutes depending on property size.",
+            "es": "Selecciona la fecha y hora de inicio de la visita. Tesoro muestra tu disponibilidad y te advierte sobre conflictos con citas existentes. La duración predeterminada es de 30 minutos, pero puedes ajustar esto a 15, 45 o 60 minutos según el tamaño de la propiedad."
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg klanten toe",
+            "en": "Add Clients",
+            "es": "Agregar clientes"
+          },
+          "description": {
+            "nl": "Zoek en selecteer de contacten die de bezichtiging zullen bijwonen. Je kunt meerdere contacten toevoegen (bijvoorbeeld een koppel). Als de klant nog niet bestaat in je CRM, klik dan op 'Nieuw contact' om ze snel toe te voegen zonder de bezichtiging formulier te verlaten.",
+            "en": "Search and select the contacts who will attend the viewing. You can add multiple contacts (for example, a couple). If the client doesn't exist in your CRM yet, click 'New Contact' to quickly add them without leaving the viewing form.",
+            "es": "Busca y selecciona los contactos que asistirán a la visita. Puedes agregar múltiples contactos (por ejemplo, una pareja). Si el cliente aún no existe en tu CRM, haz clic en 'Nuevo contacto' para agregarlos rápidamente sin salir del formulario de visita."
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg notities toe (optioneel)",
+            "en": "Add Notes (Optional)",
+            "es": "Agregar notas (opcional)"
+          },
+          "description": {
+            "nl": "Gebruik het notities veld voor belangrijke details: toegangsinstructies, wat te laten zien, klant voorkeuren, of speciale verzoeken. Deze notities zijn alleen voor jou - klanten zien ze niet. Ze verschijnen in je kalender quick-view om je snel te herinneren voordat de bezichtiging.",
+            "en": "Use the notes field for important details: access instructions, what to highlight, client preferences, or special requests. These notes are for your eyes only - clients won't see them. They appear in your calendar quick-view to remind you quickly before the viewing.",
+            "es": "Usa el campo de notas para detalles importantes: instrucciones de acceso, qué destacar, preferencias del cliente o solicitudes especiales. Estas notas son solo para ti - los clientes no las verán. Aparecen en tu vista rápida del calendario para recordarte rápidamente antes de la visita."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer herinneringen",
+            "en": "Configure Reminders",
+            "es": "Configurar recordatorios"
+          },
+          "description": {
+            "nl": "Tesoro stuurt standaard herinneringen 24 uur en 1 uur voor de bezichtiging naar zowel jou als je klanten. Je kunt deze timing aanpassen of extra herinneringen toevoegen. Klanten ontvangen herinneringen via e-mail en SMS (als telefoonnummer opgegeven).",
+            "en": "Tesoro sends default reminders 24 hours and 1 hour before the viewing to both you and your clients. You can adjust this timing or add additional reminders. Clients receive reminders via email and SMS (if phone number provided).",
+            "es": "Tesoro envía recordatorios predeterminados 24 horas y 1 hora antes de la visita tanto a ti como a tus clientes. Puedes ajustar este horario o agregar recordatorios adicionales. Los clientes reciben recordatorios por correo electrónico y SMS (si se proporciona número de teléfono)."
+          }
+        },
+        {
+          "title": {
+            "nl": "Opslaan en verzenden",
+            "en": "Save and Send",
+            "es": "Guardar y enviar"
+          },
+          "description": {
+            "nl": "Klik op 'Bezichtiging maken en versturen'. Klanten ontvangen onmiddellijk een uitnodiging e-mail met: bezichtigingsdetails, pand adres met kaart link, je contactinformatie, en knop om toe te voegen aan hun kalender. De bezichtiging verschijnt in je Tesoro kalender en synchroniseert met Google Agenda als verbonden.",
+            "en": "Click 'Create Viewing and Send'. Clients immediately receive an invitation email with: viewing details, property address with map link, your contact information, and button to add to their calendar. The viewing appears in your Tesoro calendar and syncs to Google Calendar if connected.",
+            "es": "Haz clic en 'Crear visita y enviar'. Los clientes reciben inmediatamente un correo electrónico de invitación con: detalles de la visita, dirección de la propiedad con enlace al mapa, tu información de contacto y botón para agregar a su calendario. La visita aparece en tu calendario de Tesoro y se sincroniza con Google Calendar si está conectado."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "efficiency-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Efficiëntie tip",
+        "en": "Efficiency Tip",
+        "es": "Consejo de eficiencia"
+      },
+      "content": {
+        "nl": "Plan meerdere bezichtigingen op dezelfde dag in dezelfde buurt om reistijd te minimaliseren. Tesoro kan automatisch routes suggereren om je planning te optimaliseren. Gebruik de kaartweergave om te zien welke panden dicht bij elkaar liggen en plan ze opeenvolgend.",
+        "en": "Schedule multiple viewings on the same day in the same neighborhood to minimize travel time. Tesoro can automatically suggest routes to optimize your schedule. Use the map view to see which properties are close together and schedule them consecutively.",
+        "es": "Programa múltiples visitas el mismo día en el mismo vecindario para minimizar el tiempo de viaje. Tesoro puede sugerir automáticamente rutas para optimizar tu agenda. Usa la vista de mapa para ver qué propiedades están cerca y prográmalas consecutivamente."
+      }
+    },
+    {
+      "type": "text",
+      "id": "managing-viewings",
+      "title": {
+        "nl": "Bezichtigingen beheren",
+        "en": "Managing Viewings",
+        "es": "Gestionar visitas"
+      },
+      "content": {
+        "nl": "Nadat een bezichtiging is gepland, moet je deze mogelijk wijzigen, verplaatsen of annuleren. Tesoro maakt deze wijzigingen eenvoudig terwijl alle betrokken partijen automatisch op de hoogte worden gehouden.",
+        "en": "After a viewing is scheduled, you may need to modify, reschedule, or cancel it. Tesoro makes these changes easy while automatically keeping all involved parties informed.",
+        "es": "Después de programar una visita, es posible que necesites modificarla, reprogramarla o cancelarla. Tesoro facilita estos cambios mientras mantiene automáticamente informadas a todas las partes involucradas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "modifying-viewings",
+      "title": {
+        "nl": "Bezichtigingen wijzigen",
+        "en": "Modifying Viewings",
+        "es": "Modificar visitas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Bezichtiging verplaatsen",
+            "en": "Reschedule a Viewing",
+            "es": "Reprogramar una visita"
+          },
+          "description": {
+            "nl": "Om een bezichtiging te verplaatsen, sleep je deze gewoon naar een nieuwe tijd in de kalender, of klik op de bezichtiging en selecteer 'Bewerken' om een specifieke nieuwe tijd te kiezen. Tesoro vraagt of je een update wilt sturen naar klanten. Kies 'Ja' en klanten ontvangen een e-mail met de nieuwe tijd plus een bijgewerkte kalender uitnodiging.",
+            "en": "To reschedule a viewing, simply drag it to a new time in the calendar, or click the viewing and select 'Edit' to choose a specific new time. Tesoro asks if you want to send an update to clients. Choose 'Yes' and clients receive an email with the new time plus an updated calendar invitation.",
+            "es": "Para reprogramar una visita, simplemente arrástrala a una nueva hora en el calendario, o haz clic en la visita y selecciona 'Editar' para elegir una nueva hora específica. Tesoro pregunta si quieres enviar una actualización a los clientes. Elige 'Sí' y los clientes reciben un correo electrónico con la nueva hora más una invitación de calendario actualizada."
+          }
+        },
+        {
+          "title": {
+            "nl": "Extra klanten toevoegen",
+            "en": "Add Additional Clients",
+            "es": "Agregar clientes adicionales"
+          },
+          "description": {
+            "nl": "Als een klant een vriend of familielid wil meebrengen, klik dan op de bezichtiging en selecteer 'Deelnemers bewerken'. Voeg het nieuwe contact toe en kies of ze een uitnodiging moeten ontvangen. Dit is handig wanneer klanten op het laatste moment beslissen extra mensen mee te brengen.",
+            "en": "If a client wants to bring a friend or family member, click the viewing and select 'Edit Attendees'. Add the new contact and choose whether they should receive an invitation. This is useful when clients decide at the last minute to bring additional people.",
+            "es": "Si un cliente quiere traer a un amigo o familiar, haz clic en la visita y selecciona 'Editar asistentes'. Agrega el nuevo contacto y elige si deben recibir una invitación. Esto es útil cuando los clientes deciden en el último minuto traer personas adicionales."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bezichtiging annuleren",
+            "en": "Cancel a Viewing",
+            "es": "Cancelar una visita"
+          },
+          "description": {
+            "nl": "Klik op de bezichtiging en selecteer 'Annuleren'. Tesoro vraagt om een annuleringsreden (optioneel maar aanbevolen voor je records). Klanten ontvangen een annulerings e-mail, en de bezichtiging wordt verwijderd uit ieders kalender. De bezichtigingshistorie blijft bewaard in het contact- en pandrecord.",
+            "en": "Click the viewing and select 'Cancel'. Tesoro asks for a cancellation reason (optional but recommended for your records). Clients receive a cancellation email, and the viewing is removed from everyone's calendar. The viewing history is preserved in the contact and property record.",
+            "es": "Haz clic en la visita y selecciona 'Cancelar'. Tesoro solicita un motivo de cancelación (opcional pero recomendado para tus registros). Los clientes reciben un correo electrónico de cancelación, y la visita se elimina del calendario de todos. El historial de visitas se conserva en el registro de contacto y propiedad."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bezichtiging markeren als voltooid",
+            "en": "Mark Viewing as Completed",
+            "es": "Marcar visita como completada"
+          },
+          "description": {
+            "nl": "Na afloop van de bezichtiging, klik je op de bezichtiging en selecteer je 'Markeer als voltooid'. Voeg een samenvatting toe van hoe het ging: klant interesse niveau, feedback, volgende stappen. Deze informatie verschijnt in de contactgeschiedenis en helpt je je follow-up te personaliseren.",
+            "en": "After the viewing is done, click the viewing and select 'Mark as Completed'. Add a summary of how it went: client interest level, feedback, next steps. This information appears in the contact history and helps you personalize your follow-up.",
+            "es": "Después de que termine la visita, haz clic en la visita y selecciona 'Marcar como completada'. Agrega un resumen de cómo fue: nivel de interés del cliente, comentarios, próximos pasos. Esta información aparece en el historial de contacto y te ayuda a personalizar tu seguimiento."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "no-show-protocol",
+      "variant": "info",
+      "title": {
+        "nl": "No-show protocol",
+        "en": "No-Show Protocol",
+        "es": "Protocolo de no presentación"
+      },
+      "content": {
+        "nl": "Als een klant niet komt opdagen, wacht dan 10 minuten en markeer vervolgens de bezichtiging als 'No-show' in plaats van Voltooid. Tesoro houdt no-show statistieken bij per contact, wat je helpt prioriteit te geven aan serieuze kopers. Het systeem kan automatisch een follow-up e-mail sturen waarin gevraagd wordt of ze willen herplannen.",
+        "en": "If a client doesn't show up, wait 10 minutes then mark the viewing as 'No-show' instead of Completed. Tesoro tracks no-show statistics per contact, which helps you prioritize serious buyers. The system can automatically send a follow-up email asking if they'd like to reschedule.",
+        "es": "Si un cliente no se presenta, espera 10 minutos y luego marca la visita como 'No se presentó' en lugar de Completada. Tesoro rastrea estadísticas de no presentación por contacto, lo que te ayuda a priorizar compradores serios. El sistema puede enviar automáticamente un correo electrónico de seguimiento preguntando si les gustaría reprogramar."
+      }
+    },
+    {
+      "type": "text",
+      "id": "batch-viewings",
+      "title": {
+        "nl": "Groepsbezichtigingen en open huizen",
+        "en": "Group Viewings and Open Houses",
+        "es": "Visitas grupales y casas abiertas"
+      },
+      "content": {
+        "nl": "Naast individuele bezichtigingen ondersteunt Tesoro ook groepsbezichtigingen en open huis evenementen waar meerdere potentiële kopers tegelijkertijd een pand bekijken.",
+        "en": "In addition to individual viewings, Tesoro also supports group viewings and open house events where multiple potential buyers view a property at the same time.",
+        "es": "Además de las visitas individuales, Tesoro también admite visitas grupales y eventos de casa abierta donde múltiples compradores potenciales ven una propiedad al mismo tiempo."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "group-viewings",
+      "title": {
+        "nl": "Groepsbezichtigingen organiseren",
+        "en": "Organizing Group Viewings",
+        "es": "Organizar visitas grupales"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Maak een open huis evenement",
+            "en": "Create an Open House Event",
+            "es": "Crear un evento de casa abierta"
+          },
+          "description": {
+            "nl": "Klik op een tijdslot in je kalender en selecteer 'Open huis' in plaats van 'Nieuwe bezichtiging'. Kies het pand, datum en tijdsduur (meestal 2-3 uur). Open huis evenementen hebben geen limiet op het aantal deelnemers.",
+            "en": "Click a time slot in your calendar and select 'Open House' instead of 'New Viewing'. Choose the property, date, and duration (typically 2-3 hours). Open house events have no limit on number of attendees.",
+            "es": "Haz clic en un intervalo de tiempo en tu calendario y selecciona 'Casa abierta' en lugar de 'Nueva visita'. Elige la propiedad, fecha y duración (típicamente 2-3 horas). Los eventos de casa abierta no tienen límite en el número de asistentes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Deel de open huis link",
+            "en": "Share the Open House Link",
+            "es": "Compartir el enlace de casa abierta"
+          },
+          "description": {
+            "nl": "Tesoro genereert een unieke registratie link voor je open huis. Deel deze link via e-mail, social media of op je website. Geïnteresseerde kopers kunnen zich zelf registreren en je krijgt een melding voor elke nieuwe aanmelding.",
+            "en": "Tesoro generates a unique registration link for your open house. Share this link via email, social media, or on your website. Interested buyers can self-register and you'll receive a notification for each new signup.",
+            "es": "Tesoro genera un enlace de registro único para tu casa abierta. Comparte este enlace por correo electrónico, redes sociales o en tu sitio web. Los compradores interesados pueden autoregistrarse y recibirás una notificación por cada nueva inscripción."
+          }
+        },
+        {
+          "title": {
+            "nl": "Aanwezigheid bijhouden",
+            "en": "Track Attendance",
+            "es": "Rastrear asistencia"
+          },
+          "description": {
+            "nl": "Gebruik de Tesoro mobiele app tijdens het open huis om bezoekers in te checken terwijl ze aankomen. Dit houdt je deelnemerslijst actueel en helpt je te zien wie wel en niet kwam. Je kunt ook snel notities toevoegen over elke bezoeker.",
+            "en": "Use the Tesoro mobile app during the open house to check in visitors as they arrive. This keeps your attendee list current and helps you see who did and didn't come. You can also quickly add notes about each visitor.",
+            "es": "Usa la aplicación móvil de Tesoro durante la casa abierta para registrar visitantes a medida que llegan. Esto mantiene tu lista de asistentes actualizada y te ayuda a ver quién vino y quién no. También puedes agregar rápidamente notas sobre cada visitante."
+          }
+        },
+        {
+          "title": {
+            "nl": "Follow-up na open huis",
+            "en": "Open House Follow-up",
+            "es": "Seguimiento después de casa abierta"
+          },
+          "description": {
+            "nl": "Na het evenement stuurt Tesoro automatisch een bedank e-mail naar alle deelnemers met een link naar meer informatie over het pand. Je kunt deze e-mail personaliseren met je eigen boodschap. Alle open huis deelnemers worden toegevoegd aan het pand als geïnteresseerde kopers.",
+            "en": "After the event, Tesoro automatically sends a thank you email to all attendees with a link to more information about the property. You can personalize this email with your own message. All open house attendees are added to the property as interested buyers.",
+            "es": "Después del evento, Tesoro envía automáticamente un correo electrónico de agradecimiento a todos los asistentes con un enlace a más información sobre la propiedad. Puedes personalizar este correo electrónico con tu propio mensaje. Todos los asistentes a la casa abierta se agregan a la propiedad como compradores interesados."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "calendar-optimization",
+      "variant": "tip",
+      "title": {
+        "nl": "Kalender optimalisatie",
+        "en": "Calendar Optimization",
+        "es": "Optimización de calendario"
+      },
+      "content": {
+        "nl": "Schakel 'Slimme planning' in bij Tesoro instellingen om automatische suggesties te krijgen voor de beste tijden om bezichtigingen te plannen op basis van je historische data, klant voorkeuren en reistijd tussen panden. Dit kan je wekelijks uren besparen aan planning.",
+        "en": "Enable 'Smart Scheduling' in Tesoro settings to get automatic suggestions for the best times to schedule viewings based on your historical data, client preferences, and travel time between properties. This can save you hours of scheduling time each week.",
+        "es": "Habilita 'Programación inteligente' en la configuración de Tesoro para obtener sugerencias automáticas de los mejores momentos para programar visitas basadas en tus datos históricos, preferencias del cliente y tiempo de viaje entre propiedades. Esto puede ahorrarte horas de tiempo de programación cada semana."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kunnen klanten zelf bezichtigingen plannen?",
+            "en": "Can clients schedule viewings themselves?",
+            "es": "¿Pueden los clientes programar visitas ellos mismos?"
+          },
+          "answer": {
+            "nl": "Ja! Je kunt een persoonlijke plannings link delen met klanten die verbonden is met je Tesoro kalender. Klanten zien je beschikbare tijdslots en kunnen zelf een bezichtiging boeken. Je ontvangt een melding en kunt de bezichtiging goedkeuren of een alternatieve tijd voorstellen. Deze functie is beschikbaar in Instellingen > Planningslinks.",
+            "en": "Yes! You can share a personal scheduling link with clients that's connected to your Tesoro calendar. Clients see your available time slots and can book a viewing themselves. You'll receive a notification and can approve the viewing or suggest an alternative time. This feature is available in Settings > Scheduling Links.",
+            "es": "¡Sí! Puedes compartir un enlace de programación personal con los clientes que está conectado a tu calendario de Tesoro. Los clientes ven tus intervalos de tiempo disponibles y pueden reservar una visita ellos mismos. Recibirás una notificación y podrás aprobar la visita o sugerir una hora alternativa. Esta función está disponible en Configuración > Enlaces de programación."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat als het pand een toegangscode of sleutel nodig heeft?",
+            "en": "What if the property requires an access code or key?",
+            "es": "¿Qué pasa si la propiedad requiere un código de acceso o llave?"
+          },
+          "answer": {
+            "nl": "Voeg toegangsinstructies toe aan het pand record onder 'Toegangsdetails'. Deze informatie verschijnt automatisch in je bezichtigingsnotities wanneer je een bezichtiging voor dat pand plant. Je kunt ook kiezen om toegangsinstructies op te nemen in de klant bevestiging e-mail voor zelfbezichtigingen.",
+            "en": "Add access instructions to the property record under 'Access Details'. This information automatically appears in your viewing notes when you schedule a viewing for that property. You can also choose to include access instructions in the client confirmation email for self-guided viewings.",
+            "es": "Agrega instrucciones de acceso al registro de la propiedad bajo 'Detalles de acceso'. Esta información aparece automáticamente en tus notas de visita cuando programas una visita para esa propiedad. También puedes elegir incluir instrucciones de acceso en el correo electrónico de confirmación del cliente para visitas autoguiadas."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik buffer tijd toevoegen tussen bezichtigingen?",
+            "en": "Can I add buffer time between viewings?",
+            "es": "¿Puedo agregar tiempo de búfer entre visitas?"
+          },
+          "answer": {
+            "nl": "Ja. Ga naar Instellingen > Kalendervoorkeuren en stel je standaard buffer tijd in (bijvoorbeeld 15 of 30 minuten). Tesoro voorkomt automatisch dat bezichtigingen worden gepland binnen deze buffer periode. Je kunt ook aangepaste buffer tijd instellen per pand op basis van locatie of verwachte reistijd.",
+            "en": "Yes. Go to Settings > Calendar Preferences and set your default buffer time (for example, 15 or 30 minutes). Tesoro automatically prevents viewings from being scheduled within this buffer period. You can also set custom buffer time per property based on location or expected travel time.",
+            "es": "Sí. Ve a Configuración > Preferencias de calendario y establece tu tiempo de búfer predeterminado (por ejemplo, 15 o 30 minutos). Tesoro previene automáticamente que las visitas se programen dentro de este período de búfer. También puedes establecer tiempo de búfer personalizado por propiedad basado en la ubicación o tiempo de viaje esperado."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe herinner ik klanten die geen reactie geven op bezichtigingsuitnodigingen?",
+            "en": "How do I remind clients who don't respond to viewing invitations?",
+            "es": "¿Cómo recuerdo a los clientes que no responden a las invitaciones de visita?"
+          },
+          "answer": {
+            "nl": "Tesoro stuurt automatisch een herinnering 24 uur voor de bezichtiging naar klanten die nog niet hebben bevestigd. Je kunt handmatig een herinnering sturen door op de bezichtiging te klikken en 'Herinneringsmail versturen' te selecteren. Voor belangrijke bezichtigingen kun je ook een persoonlijke SMS sturen direct vanuit Tesoro.",
+            "en": "Tesoro automatically sends a reminder 24 hours before the viewing to clients who haven't confirmed yet. You can manually send a reminder by clicking the viewing and selecting 'Send Reminder Email'. For important viewings, you can also send a personal SMS directly from Tesoro.",
+            "es": "Tesoro envía automáticamente un recordatorio 24 horas antes de la visita a los clientes que aún no han confirmado. Puedes enviar manualmente un recordatorio haciendo clic en la visita y seleccionando 'Enviar correo de recordatorio'. Para visitas importantes, también puedes enviar un SMS personal directamente desde Tesoro."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "calendar-overview-guide",
+    "calendar-availability-management",
+    "contact-management-basics",
+    "property-listing-management"
+  ]
+}

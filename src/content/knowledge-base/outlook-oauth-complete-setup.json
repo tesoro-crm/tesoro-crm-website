@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "id": "outlook-oauth-complete-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "intermediate",
+    "tags": ["integrations", "outlook", "oauth", "email", "microsoft", "office365", "communication"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["outlook oauth setup", "connect outlook tesoro", "office 365 integration", "microsoft email crm", "outlook sync"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Outlook OAuth integratie: complete setup guide",
+      "en": "Outlook OAuth Integration: Complete Setup Guide",
+      "es": "Integración OAuth de Outlook: guía completa de configuración"
+    },
+    "description": {
+      "nl": "Verbind je Outlook of Office 365 account veilig met Tesoro via OAuth 2.0. Verstuur en ontvang emails direct vanuit je CRM met volledige Microsoft integratie.",
+      "en": "Securely connect your Outlook or Office 365 account to Tesoro via OAuth 2.0. Send and receive emails directly from your CRM with full Microsoft integration.",
+      "es": "Conecta de forma segura tu cuenta de Outlook u Office 365 a Tesoro mediante OAuth 2.0. Envía y recibe emails directamente desde tu CRM con integración completa de Microsoft."
+    },
+    "icon": "mail"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "outlook-oauth-intro",
+      "title": {
+        "nl": "Waarom Outlook OAuth integratie?",
+        "en": "Why Outlook OAuth Integration?",
+        "es": "¿Por qué integración OAuth de Outlook?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De Outlook OAuth integratie maakt het mogelijk om je Microsoft email account veilig te verbinden met Tesoro CRM. Of je nu Outlook.com, Hotmail of Office 365 gebruikt, via OAuth 2.0 wordt je account verbonden zonder wachtwoord te delen.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Verstuur emails vanuit Tesoro met je Outlook/Office 365 account</li><li>Bi-directionele email synchronisatie met Outlook folders</li><li>Automatische email tracking en history</li><li>Ondersteuning voor Outlook.com, Hotmail en Office 365</li><li>Veilige OAuth 2.0 authenticatie - geen wachtwoorden</li><li>Kalender en contacts sync (optioneel)</li></ul><p>Deze guide leidt je door het complete setup proces voor Outlook en Office 365 accounts.</p>"
+        },
+        "en": {
+          "text": "<p>The Outlook OAuth integration allows you to securely connect your Microsoft email account to Tesoro CRM. Whether you use Outlook.com, Hotmail, or Office 365, your account is connected via OAuth 2.0 without sharing your password.</p><p><strong>Key benefits:</strong></p><ul><li>Send emails from Tesoro with your Outlook/Office 365 account</li><li>Bi-directional email synchronization with Outlook folders</li><li>Automatic email tracking and history</li><li>Support for Outlook.com, Hotmail, and Office 365</li><li>Secure OAuth 2.0 authentication - no passwords</li><li>Calendar and contacts sync (optional)</li></ul><p>This guide walks you through the complete setup process for Outlook and Office 365 accounts.</p>"
+        },
+        "es": {
+          "text": "<p>La integración OAuth de Outlook te permite conectar de forma segura tu cuenta de correo electrónico de Microsoft a Tesoro CRM. Ya sea que uses Outlook.com, Hotmail u Office 365, tu cuenta se conecta mediante OAuth 2.0 sin compartir tu contraseña.</p><p><strong>Beneficios clave:</strong></p><ul><li>Envía emails desde Tesoro con tu cuenta de Outlook/Office 365</li><li>Sincronización bidireccional de emails con carpetas de Outlook</li><li>Seguimiento automático de emails e historial</li><li>Soporte para Outlook.com, Hotmail y Office 365</li><li>Autenticación segura OAuth 2.0 - sin contraseñas</li><li>Sincronización de calendario y contactos (opcional)</li></ul><p>Esta guía te lleva a través del proceso completo de configuración para cuentas de Outlook y Office 365.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "outlook-setup-steps",
+      "title": {
+        "nl": "Outlook OAuth configureren: stap voor stap",
+        "en": "Configuring Outlook OAuth: Step by Step",
+        "es": "Configurar OAuth de Outlook: paso a paso"
+      },
+      "subsections": [
+        {
+          "id": "step-1-account-prep",
+          "title": {
+            "nl": "Stap 1: Microsoft account voorbereiden",
+            "en": "Step 1: Prepare Microsoft Account",
+            "es": "Paso 1: preparar cuenta de Microsoft"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voordat je de OAuth setup start, controleer deze vereisten:</p><h4>Ondersteunde account types:</h4><ul><li><strong>Outlook.com:</strong> Gratis Microsoft email accounts (@outlook.com, @hotmail.com, @live.com)</li><li><strong>Office 365:</strong> Zakelijke Microsoft 365 accounts (je bedrijfsdomein)</li><li><strong>Exchange Online:</strong> Microsoft Exchange hosted email</li></ul><h4>Account vereisten:</h4><ul><li>Actief Microsoft account</li><li>2FA aanbevolen voor extra beveiliging</li><li>Voor Office 365: admin rechten OF approval van IT admin</li><li>Moderne browser (Chrome, Edge, Firefox, Safari)</li></ul><h4>Office 365 Business gebruikers:</h4><p>Als je een zakelijk Office 365 account hebt:</p><ol><li>Controleer of je IT admin <strong>OAuth apps</strong> heeft toegestaan</li><li>Sommige organisaties vereisen admin approval voor third-party apps</li><li>Ga naar <a href=\"https://portal.office.com\" target=\"_blank\">portal.office.com</a> → <strong>Settings → Org settings → Services</strong></li><li>Verifieer dat 'Let users connect third-party apps' is enabled</li></ol><p><strong>Let op:</strong> Als je organisatie strikt security beleid heeft, vraag je IT admin om Tesoro CRM goed te keuren.</p>"
+            },
+            "en": {
+              "text": "<p>Before starting the OAuth setup, check these requirements:</p><h4>Supported account types:</h4><ul><li><strong>Outlook.com:</strong> Free Microsoft email accounts (@outlook.com, @hotmail.com, @live.com)</li><li><strong>Office 365:</strong> Business Microsoft 365 accounts (your company domain)</li><li><strong>Exchange Online:</strong> Microsoft Exchange hosted email</li></ul><h4>Account requirements:</h4><ul><li>Active Microsoft account</li><li>2FA recommended for extra security</li><li>For Office 365: admin rights OR IT admin approval</li><li>Modern browser (Chrome, Edge, Firefox, Safari)</li></ul><h4>Office 365 Business users:</h4><p>If you have a business Office 365 account:</p><ol><li>Check if your IT admin has allowed <strong>OAuth apps</strong></li><li>Some organizations require admin approval for third-party apps</li><li>Go to <a href=\"https://portal.office.com\" target=\"_blank\">portal.office.com</a> → <strong>Settings → Org settings → Services</strong></li><li>Verify that 'Let users connect third-party apps' is enabled</li></ol><p><strong>Note:</strong> If your organization has strict security policy, ask your IT admin to approve Tesoro CRM.</p>"
+            },
+            "es": {
+              "text": "<p>Antes de comenzar la configuración de OAuth, verifica estos requisitos:</p><h4>Tipos de cuenta soportados:</h4><ul><li><strong>Outlook.com:</strong> Cuentas de email de Microsoft gratuitas (@outlook.com, @hotmail.com, @live.com)</li><li><strong>Office 365:</strong> Cuentas de Microsoft 365 empresariales (tu dominio de empresa)</li><li><strong>Exchange Online:</strong> Email alojado en Microsoft Exchange</li></ul><h4>Requisitos de cuenta:</h4><ul><li>Cuenta de Microsoft activa</li><li>2FA recomendado para seguridad adicional</li><li>Para Office 365: derechos de administrador O aprobación del administrador de TI</li><li>Navegador moderno (Chrome, Edge, Firefox, Safari)</li></ul><h4>Usuarios de Office 365 Business:</h4><p>Si tienes una cuenta de Office 365 empresarial:</p><ol><li>Verifica si tu administrador de TI ha permitido <strong>OAuth apps</strong></li><li>Algunas organizaciones requieren aprobación del administrador para aplicaciones de terceros</li><li>Ve a <a href=\"https://portal.office.com\" target=\"_blank\">portal.office.com</a> → <strong>Settings → Org settings → Services</strong></li><li>Verifica que 'Let users connect third-party apps' esté habilitado</li></ol><p><strong>Nota:</strong> Si tu organización tiene una política de seguridad estricta, solicita a tu administrador de TI que apruebe Tesoro CRM.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-2-connect-outlook",
+          "title": {
+            "nl": "Stap 2: Outlook verbinden met Tesoro",
+            "en": "Step 2: Connect Outlook to Tesoro",
+            "es": "Paso 2: conectar Outlook a Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Start het OAuth verbindingsproces vanuit Tesoro CRM.</p><h4>Verbindingsstappen:</h4><ol><li>Log in op Tesoro CRM</li><li>Klik op je <strong>avatar rechts boven</strong></li><li>Ga naar <strong>Settings → Email Accounts</strong></li><li>Klik <strong>+ Connect Email Account</strong></li><li>Selecteer <strong>Outlook/Office 365</strong></li><li>Klik <strong>Connect with Microsoft</strong></li></ol><p>Je wordt doorgestuurd naar Microsoft's OAuth login scherm.</p><h4>Microsoft OAuth autorisatie:</h4><ol><li>Selecteer je Microsoft account  <ul><li>Voor Outlook.com: je @outlook.com / @hotmail.com account</li><li>Voor Office 365: je zakelijke email account</li></ul></li><li>Microsoft toont welke permissies Tesoro vraagt:  <ul><li>Read and write access to your mail</li><li>Send mail as you</li><li>Access your mailbox via IMAP or POP</li><li>Maintain access to data you have given it access to</li></ul></li><li>Lees de permissies zorgvuldig</li><li>Klik <strong>Accept</strong> om Tesoro toegang te geven</li><li>Je wordt teruggestuurd naar Tesoro</li></ol><h4>Office 365 admin approval (indien nodig):</h4><p>Als je organisatie admin approval vereist:</p><ol><li>Je ziet: 'Approval required - Contact your admin'</li><li>Klik <strong>Request Approval</strong></li><li>Je IT admin ontvangt een notification</li><li>Na approval: herhaal stap 2 opnieuw</li></ol>"
+            },
+            "en": {
+              "text": "<p>Start the OAuth connection process from Tesoro CRM.</p><h4>Connection steps:</h4><ol><li>Log in to Tesoro CRM</li><li>Click your <strong>avatar in the top right</strong></li><li>Go to <strong>Settings → Email Accounts</strong></li><li>Click <strong>+ Connect Email Account</strong></li><li>Select <strong>Outlook/Office 365</strong></li><li>Click <strong>Connect with Microsoft</strong></li></ol><p>You will be redirected to Microsoft's OAuth login screen.</p><h4>Microsoft OAuth authorization:</h4><ol><li>Select your Microsoft account  <ul><li>For Outlook.com: your @outlook.com / @hotmail.com account</li><li>For Office 365: your business email account</li></ul></li><li>Microsoft shows which permissions Tesoro requests:  <ul><li>Read and write access to your mail</li><li>Send mail as you</li><li>Access your mailbox via IMAP or POP</li><li>Maintain access to data you have given it access to</li></ul></li><li>Read the permissions carefully</li><li>Click <strong>Accept</strong> to grant Tesoro access</li><li>You will be redirected back to Tesoro</li></ol><h4>Office 365 admin approval (if needed):</h4><p>If your organization requires admin approval:</p><ol><li>You see: 'Approval required - Contact your admin'</li><li>Click <strong>Request Approval</strong></li><li>Your IT admin receives a notification</li><li>After approval: repeat step 2 again</li></ol>"
+            },
+            "es": {
+              "text": "<p>Inicia el proceso de conexión OAuth desde Tesoro CRM.</p><h4>Pasos de conexión:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Haz clic en tu <strong>avatar en la parte superior derecha</strong></li><li>Ve a <strong>Settings → Email Accounts</strong></li><li>Haz clic en <strong>+ Connect Email Account</strong></li><li>Selecciona <strong>Outlook/Office 365</strong></li><li>Haz clic en <strong>Connect with Microsoft</strong></li></ol><p>Serás redirigido a la pantalla de inicio de sesión OAuth de Microsoft.</p><h4>Autorización OAuth de Microsoft:</h4><ol><li>Selecciona tu cuenta de Microsoft  <ul><li>Para Outlook.com: tu cuenta @outlook.com / @hotmail.com</li><li>Para Office 365: tu cuenta de correo empresarial</li></ul></li><li>Microsoft muestra qué permisos solicita Tesoro:  <ul><li>Acceso de lectura y escritura a tu correo</li><li>Enviar correo como tú</li><li>Acceder a tu buzón mediante IMAP o POP</li><li>Mantener acceso a datos a los que le has dado acceso</li></ul></li><li>Lee los permisos cuidadosamente</li><li>Haz clic en <strong>Accept</strong> para otorgar acceso a Tesoro</li><li>Serás redirigido de vuelta a Tesoro</li></ol><h4>Aprobación del administrador de Office 365 (si es necesario):</h4><p>Si tu organización requiere aprobación del administrador:</p><ol><li>Ves: 'Approval required - Contact your admin'</li><li>Haz clic en <strong>Request Approval</strong></li><li>Tu administrador de TI recibe una notificación</li><li>Después de la aprobación: repite el paso 2 nuevamente</li></ol>"
+            }
+          }
+        },
+        {
+          "id": "step-3-config-verify",
+          "title": {
+            "nl": "Stap 3: Configureren en verifiëren",
+            "en": "Step 3: Configure and Verify",
+            "es": "Paso 3: configurar y verificar"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na succesvolle OAuth autorisatie, configureer en verifieer je Outlook integratie.</p><h4>Verificatie:</h4><ol><li>Je wordt teruggestuurd naar <strong>Settings → Email Accounts</strong></li><li>Je Outlook account verschijnt in de lijst:  <ul><li><strong>Status:</strong> Connected (groen)</li><li><strong>Email:</strong> je Outlook/Office 365 adres</li><li><strong>Provider:</strong> Microsoft Outlook (OAuth 2.0)</li><li><strong>Mailbox Size:</strong> Huidige mailbox grootte</li></ul></li><li>Klik op account voor details en configuratie</li></ol><h4>Configuratie instellingen:</h4><ul><li><strong>Default Account:</strong> Maak dit je standaard verzend account</li><li><strong>Signature:</strong> Voeg automatische email signature toe</li><li><strong>Sync Folders:</strong> Kies welke Outlook folders te synchroniseren  <ul><li>Inbox (aanbevolen)</li><li>Sent Items (aanbevolen)</li><li>Drafts</li><li>Custom folders</li></ul></li><li><strong>Sync Frequency:</strong> Hoe vaak emails syncen (standaard: 5 minuten)</li><li><strong>Email Tracking:</strong> Enable open/click tracking</li><li><strong>Calendar Sync:</strong> Synchroniseer Outlook calendar (optioneel)</li><li><strong>Contacts Sync:</strong> Synchroniseer Outlook contacts naar Tesoro (optioneel)</li></ul><p>Klik <strong>Save Settings</strong>.</p><h4>Test verbinding:</h4><ol><li>Klik <strong>Send Test Email</strong></li><li>Verstuur test email naar jezelf</li><li>Verifieer email aankomt in Outlook inbox</li><li>Check of email zichtbaar is in Tesoro email history</li><li>Controleer of email in Outlook 'Sent Items' staat</li></ol>"
+            },
+            "en": {
+              "text": "<p>After successful OAuth authorization, configure and verify your Outlook integration.</p><h4>Verification:</h4><ol><li>You are redirected back to <strong>Settings → Email Accounts</strong></li><li>Your Outlook account appears in the list:  <ul><li><strong>Status:</strong> Connected (green)</li><li><strong>Email:</strong> your Outlook/Office 365 address</li><li><strong>Provider:</strong> Microsoft Outlook (OAuth 2.0)</li><li><strong>Mailbox Size:</strong> Current mailbox size</li></ul></li><li>Click on account for details and configuration</li></ol><h4>Configuration settings:</h4><ul><li><strong>Default Account:</strong> Make this your default sending account</li><li><strong>Signature:</strong> Add automatic email signature</li><li><strong>Sync Folders:</strong> Choose which Outlook folders to synchronize  <ul><li>Inbox (recommended)</li><li>Sent Items (recommended)</li><li>Drafts</li><li>Custom folders</li></ul></li><li><strong>Sync Frequency:</strong> How often to sync emails (default: 5 minutes)</li><li><strong>Email Tracking:</strong> Enable open/click tracking</li><li><strong>Calendar Sync:</strong> Synchronize Outlook calendar (optional)</li><li><strong>Contacts Sync:</strong> Synchronize Outlook contacts to Tesoro (optional)</li></ul><p>Click <strong>Save Settings</strong>.</p><h4>Test connection:</h4><ol><li>Click <strong>Send Test Email</strong></li><li>Send test email to yourself</li><li>Verify email arrives in Outlook inbox</li><li>Check if email is visible in Tesoro email history</li><li>Verify email is in Outlook 'Sent Items'</li></ol>"
+            },
+            "es": {
+              "text": "<p>Después de la autorización OAuth exitosa, configura y verifica tu integración de Outlook.</p><h4>Verificación:</h4><ol><li>Serás redirigido de vuelta a <strong>Settings → Email Accounts</strong></li><li>Tu cuenta de Outlook aparece en la lista:  <ul><li><strong>Estado:</strong> Connected (verde)</li><li><strong>Email:</strong> tu dirección de Outlook/Office 365</li><li><strong>Proveedor:</strong> Microsoft Outlook (OAuth 2.0)</li><li><strong>Mailbox Size:</strong> Tamaño actual del buzón</li></ul></li><li>Haz clic en la cuenta para detalles y configuración</li></ol><h4>Configuraciones:</h4><ul><li><strong>Default Account:</strong> Haz de esta tu cuenta de envío predeterminada</li><li><strong>Signature:</strong> Agregar firma de email automática</li><li><strong>Sync Folders:</strong> Elige qué carpetas de Outlook sincronizar  <ul><li>Inbox (recomendado)</li><li>Sent Items (recomendado)</li><li>Drafts</li><li>Carpetas personalizadas</li></ul></li><li><strong>Sync Frequency:</strong> Con qué frecuencia sincronizar emails (predeterminado: 5 minutos)</li><li><strong>Email Tracking:</strong> Habilitar seguimiento de aperturas/clics</li><li><strong>Calendar Sync:</strong> Sincronizar calendario de Outlook (opcional)</li><li><strong>Contacts Sync:</strong> Sincronizar contactos de Outlook a Tesoro (opcional)</li></ul><p>Haz clic en <strong>Save Settings</strong>.</p><h4>Probar conexión:</h4><ol><li>Haz clic en <strong>Send Test Email</strong></li><li>Envía un email de prueba a ti mismo</li><li>Verifica que el email llega a la bandeja de entrada de Outlook</li><li>Verifica que el email sea visible en el historial de emails de Tesoro</li><li>Verifica que el email esté en 'Sent Items' de Outlook</li></ol>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "outlook-features",
+      "title": {
+        "nl": "Outlook specifieke features",
+        "en": "Outlook Specific Features",
+        "es": "Características específicas de Outlook"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Outlook Calendar synchronisatie:</h4><p>Synchroniseer je Outlook calendar met Tesoro voor unified scheduling:</p><ol><li>In <strong>Email Account Settings</strong> → enable <strong>Calendar Sync</strong></li><li>Kies synchronisatie richting:  <ul><li><strong>One-way (Tesoro → Outlook):</strong> Tesoro meetings verschijnen in Outlook</li><li><strong>Two-way:</strong> Bi-directionele sync (aanbevolen)</li></ul></li><li>Selecteer welke calendar:  <ul><li>Primary calendar</li><li>Specifieke sub-calendar</li></ul></li><li>Klik <strong>Enable Calendar Sync</strong></li></ol><p>Nu worden Tesoro meetings automatisch toegevoegd aan je Outlook calendar en vice versa.</p><h4>Outlook Contacts synchronisatie:</h4><p>Importeer je Outlook contacts naar Tesoro:</p><ol><li>Enable <strong>Contacts Sync</strong> in account settings</li><li>Kies import opties:  <ul><li><strong>One-time import:</strong> Eenmalige import van alle contacts</li><li><strong>Continuous sync:</strong> Blijvende sync van contact wijzigingen</li></ul></li><li>Map Outlook fields naar Tesoro fields</li><li>Klik <strong>Start Import</strong></li></ol><h4>Outlook Rules en Folders:</h4><p>Tesoro respecteert je Outlook folder structuur:</p><ul><li>Emails blijven in dezelfde folders</li><li>Outlook rules worden niet overschreven</li><li>Tesoro voegt eigen labels toe (niet zichtbaar in Outlook)</li><li>Verwijderde emails in Outlook worden ook verwijderd in Tesoro</li></ul><h4>Shared Mailboxes (Office 365):</h4><p>Verbind shared mailboxes voor team email:</p><ol><li>Ga naar <strong>Email Accounts → + Add Shared Mailbox</strong></li><li>Selecteer shared mailbox uit je Office 365</li><li>Alle team members met toegang kunnen emails versturen via shared mailbox</li></ol>"
+        },
+        "en": {
+          "text": "<h4>Outlook Calendar synchronization:</h4><p>Synchronize your Outlook calendar with Tesoro for unified scheduling:</p><ol><li>In <strong>Email Account Settings</strong> → enable <strong>Calendar Sync</strong></li><li>Choose sync direction:  <ul><li><strong>One-way (Tesoro → Outlook):</strong> Tesoro meetings appear in Outlook</li><li><strong>Two-way:</strong> Bi-directional sync (recommended)</li></ul></li><li>Select which calendar:  <ul><li>Primary calendar</li><li>Specific sub-calendar</li></ul></li><li>Click <strong>Enable Calendar Sync</strong></li></ol><p>Now Tesoro meetings are automatically added to your Outlook calendar and vice versa.</p><h4>Outlook Contacts synchronization:</h4><p>Import your Outlook contacts to Tesoro:</p><ol><li>Enable <strong>Contacts Sync</strong> in account settings</li><li>Choose import options:  <ul><li><strong>One-time import:</strong> One-time import of all contacts</li><li><strong>Continuous sync:</strong> Continuous sync of contact changes</li></ul></li><li>Map Outlook fields to Tesoro fields</li><li>Click <strong>Start Import</strong></li></ol><h4>Outlook Rules and Folders:</h4><p>Tesoro respects your Outlook folder structure:</p><ul><li>Emails remain in the same folders</li><li>Outlook rules are not overwritten</li><li>Tesoro adds its own labels (not visible in Outlook)</li><li>Deleted emails in Outlook are also deleted in Tesoro</li></ul><h4>Shared Mailboxes (Office 365):</h4><p>Connect shared mailboxes for team email:</p><ol><li>Go to <strong>Email Accounts → + Add Shared Mailbox</strong></li><li>Select shared mailbox from your Office 365</li><li>All team members with access can send emails via shared mailbox</li></ol>"
+        },
+        "es": {
+          "text": "<h4>Sincronización de calendario de Outlook:</h4><p>Sincroniza tu calendario de Outlook con Tesoro para programación unificada:</p><ol><li>En <strong>Email Account Settings</strong> → habilita <strong>Calendar Sync</strong></li><li>Elige dirección de sincronización:  <ul><li><strong>One-way (Tesoro → Outlook):</strong> Las reuniones de Tesoro aparecen en Outlook</li><li><strong>Two-way:</strong> Sincronización bidireccional (recomendado)</li></ul></li><li>Selecciona qué calendario:  <ul><li>Calendario principal</li><li>Sub-calendario específico</li></ul></li><li>Haz clic en <strong>Enable Calendar Sync</strong></li></ol><p>Ahora las reuniones de Tesoro se agregan automáticamente a tu calendario de Outlook y viceversa.</p><h4>Sincronización de contactos de Outlook:</h4><p>Importa tus contactos de Outlook a Tesoro:</p><ol><li>Habilita <strong>Contacts Sync</strong> en configuración de cuenta</li><li>Elige opciones de importación:  <ul><li><strong>One-time import:</strong> Importación única de todos los contactos</li><li><strong>Continuous sync:</strong> Sincronización continua de cambios de contactos</li></ul></li><li>Mapea campos de Outlook a campos de Tesoro</li><li>Haz clic en <strong>Start Import</strong></li></ol><h4>Reglas y carpetas de Outlook:</h4><p>Tesoro respeta tu estructura de carpetas de Outlook:</p><ul><li>Los emails permanecen en las mismas carpetas</li><li>Las reglas de Outlook no se sobrescriben</li><li>Tesoro agrega sus propias etiquetas (no visibles en Outlook)</li><li>Los emails eliminados en Outlook también se eliminan en Tesoro</li></ul><h4>Buzones compartidos (Office 365):</h4><p>Conecta buzones compartidos para email de equipo:</p><ol><li>Ve a <strong>Email Accounts → + Add Shared Mailbox</strong></li><li>Selecciona buzón compartido de tu Office 365</li><li>Todos los miembros del equipo con acceso pueden enviar emails mediante buzón compartido</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "office365-tips",
+      "variant": "tip",
+      "title": {
+        "nl": "Office 365 best practices",
+        "en": "Office 365 Best Practices",
+        "es": "Mejores prácticas de Office 365"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor Office 365 Business gebruikers:</strong></p><ul><li><strong>Gebruik je zakelijke email:</strong> Verbind je @company.com account voor professionaliteit</li><li><strong>Shared mailboxes:</strong> Gebruik shared mailboxes voor team emails (bijv. sales@company.com)</li><li><strong>Compliance:</strong> Emails in Tesoro voldoen aan je organisatie's retention policies</li><li><strong>Security:</strong> Enable Conditional Access policies in Azure AD voor extra beveiliging</li><li><strong>Audit logs:</strong> Alle email activiteit wordt gelogd voor compliance</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>For Office 365 Business users:</strong></p><ul><li><strong>Use your business email:</strong> Connect your @company.com account for professionalism</li><li><strong>Shared mailboxes:</strong> Use shared mailboxes for team emails (e.g., sales@company.com)</li><li><strong>Compliance:</strong> Emails in Tesoro comply with your organization's retention policies</li><li><strong>Security:</strong> Enable Conditional Access policies in Azure AD for extra security</li><li><strong>Audit logs:</strong> All email activity is logged for compliance</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Para usuarios de Office 365 Business:</strong></p><ul><li><strong>Usa tu email empresarial:</strong> Conecta tu cuenta @company.com para profesionalismo</li><li><strong>Buzones compartidos:</strong> Usa buzones compartidos para emails de equipo (ej., sales@company.com)</li><li><strong>Cumplimiento:</strong> Los emails en Tesoro cumplen con las políticas de retención de tu organización</li><li><strong>Seguridad:</strong> Habilita políticas de acceso condicional en Azure AD para seguridad adicional</li><li><strong>Registros de auditoría:</strong> Toda la actividad de email se registra para cumplimiento</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "troubleshooting-outlook",
+      "title": {
+        "nl": "Problemen oplossen",
+        "en": "Troubleshooting",
+        "es": "Solución de problemas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>OAuth authorization fails met 'Admin approval required':</strong></p><ul><li>Je organisatie vereist IT admin approval</li><li>Klik <strong>Request Approval</strong> en wacht op admin goedkeuring</li><li>Neem contact op met IT admin als approval lang duurt</li><li>Alternative: vraag admin om Tesoro CRM toe te voegen aan approved apps lijst</li></ul><p><strong>Emails worden niet gesynchroniseerd:</strong></p><ul><li>Check of <strong>Sync Folders</strong> correct zijn geconfigureerd</li><li>Verifieer dat Outlook mailbox niet vol is (quota)</li><li>Klik <strong>Force Sync</strong> voor handmatige synchronisatie</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>'Mailbox unavailable' error:</strong></p><ul><li>Outlook mailbox is tijdelijk niet beschikbaar</li><li>Controleer of je Outlook account actief is</li><li>Verifieer dat Office 365 licentie niet is verlopen</li><li>Probeer <strong>Reconnect Account</strong></li></ul><p><strong>Shared mailbox kan niet worden verbonden:</strong></p><ul><li>Verifieer dat je toegang hebt tot de shared mailbox</li><li>Check of shared mailbox enabled is in Office 365 admin</li><li>Gebruik 'Add as Delegate' in plaats van 'Connect Account'</li></ul><p><strong>Calendar sync werkt niet:</strong></p><ul><li>Check of Calendar permissions correct zijn ingesteld</li><li>Verifieer dat calendar niet read-only is</li><li>Klik <strong>Re-authorize Calendar Access</strong></li></ul>"
+        },
+        "en": {
+          "text": "<h4>Common issues:</h4><p><strong>OAuth authorization fails with 'Admin approval required':</strong></p><ul><li>Your organization requires IT admin approval</li><li>Click <strong>Request Approval</strong> and wait for admin approval</li><li>Contact IT admin if approval takes long</li><li>Alternative: ask admin to add Tesoro CRM to approved apps list</li></ul><p><strong>Emails are not synchronized:</strong></p><ul><li>Check if <strong>Sync Folders</strong> are configured correctly</li><li>Verify that Outlook mailbox is not full (quota)</li><li>Click <strong>Force Sync</strong> for manual synchronization</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>'Mailbox unavailable' error:</strong></p><ul><li>Outlook mailbox is temporarily unavailable</li><li>Check if your Outlook account is active</li><li>Verify that Office 365 license hasn't expired</li><li>Try <strong>Reconnect Account</strong></li></ul><p><strong>Shared mailbox cannot be connected:</strong></p><ul><li>Verify that you have access to the shared mailbox</li><li>Check if shared mailbox is enabled in Office 365 admin</li><li>Use 'Add as Delegate' instead of 'Connect Account'</li></ul><p><strong>Calendar sync doesn't work:</strong></p><ul><li>Check if Calendar permissions are set correctly</li><li>Verify that calendar is not read-only</li><li>Click <strong>Re-authorize Calendar Access</strong></li></ul>"
+        },
+        "es": {
+          "text": "<h4>Problemas comunes:</h4><p><strong>La autorización OAuth falla con 'Admin approval required':</strong></p><ul><li>Tu organización requiere aprobación del administrador de TI</li><li>Haz clic en <strong>Request Approval</strong> y espera la aprobación del administrador</li><li>Contacta al administrador de TI si la aprobación tarda mucho</li><li>Alternativa: pide al administrador que agregue Tesoro CRM a la lista de aplicaciones aprobadas</li></ul><p><strong>Los emails no se sincronizan:</strong></p><ul><li>Verifica que las <strong>Sync Folders</strong> estén configuradas correctamente</li><li>Verifica que el buzón de Outlook no esté lleno (cuota)</li><li>Haz clic en <strong>Force Sync</strong> para sincronización manual</li><li>Verifica errores de sincronización en <strong>Sync Logs</strong></li></ul><p><strong>Error 'Mailbox unavailable':</strong></p><ul><li>El buzón de Outlook no está disponible temporalmente</li><li>Verifica que tu cuenta de Outlook esté activa</li><li>Verifica que la licencia de Office 365 no haya expirado</li><li>Intenta <strong>Reconnect Account</strong></li></ul><p><strong>No se puede conectar el buzón compartido:</strong></p><ul><li>Verifica que tengas acceso al buzón compartido</li><li>Verifica que el buzón compartido esté habilitado en el administrador de Office 365</li><li>Usa 'Add as Delegate' en lugar de 'Connect Account'</li></ul><p><strong>La sincronización del calendario no funciona:</strong></p><ul><li>Verifica que los permisos del calendario estén configurados correctamente</li><li>Verifica que el calendario no sea de solo lectura</li><li>Haz clic en <strong>Re-authorize Calendar Access</strong></li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "gmail-oauth-complete-setup",
+    "google-calendar-sync",
+    "contact-email-integration"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen Outlook.com en Office 365 integratie?",
+        "en": "What is the difference between Outlook.com and Office 365 integration?",
+        "es": "¿Cuál es la diferencia entre la integración de Outlook.com y Office 365?"
+      },
+      "answer": {
+        "nl": "Technisch werken ze hetzelfde via OAuth 2.0. Office 365 accounts hebben extra features zoals shared mailboxes, advanced calendar sync en compliance features.",
+        "en": "Technically they work the same via OAuth 2.0. Office 365 accounts have additional features like shared mailboxes, advanced calendar sync, and compliance features.",
+        "es": "Técnicamente funcionan igual mediante OAuth 2.0. Las cuentas de Office 365 tienen características adicionales como buzones compartidos, sincronización avanzada de calendario y características de cumplimiento."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik zowel Gmail als Outlook verbinden?",
+        "en": "Can I connect both Gmail and Outlook?",
+        "es": "¿Puedo conectar tanto Gmail como Outlook?"
+      },
+      "answer": {
+        "nl": "Ja, je kunt onbeperkt email accounts verbinden (Gmail, Outlook, of beide). Je kiest per email van welk account je wilt verzenden.",
+        "en": "Yes, you can connect unlimited email accounts (Gmail, Outlook, or both). You choose which account to send from for each email.",
+        "es": "Sí, puedes conectar cuentas de correo ilimitadas (Gmail, Outlook o ambas). Eliges desde qué cuenta enviar para cada email."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden mijn Outlook folders en regels overschreven?",
+        "en": "Are my Outlook folders and rules overwritten?",
+        "es": "¿Mis carpetas y reglas de Outlook se sobrescriben?"
+      },
+      "answer": {
+        "nl": "Nee, Tesoro respecteert je Outlook folder structuur en rules volledig. Emails blijven in dezelfde folders en rules blijven actief.",
+        "en": "No, Tesoro fully respects your Outlook folder structure and rules. Emails remain in the same folders and rules stay active.",
+        "es": "No, Tesoro respeta completamente tu estructura de carpetas y reglas de Outlook. Los emails permanecen en las mismas carpetas y las reglas se mantienen activas."
+      }
+    }
+  ]
+}

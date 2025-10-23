@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "id": "quick-start-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["getting-started", "tutorial", "quick-start", "basics", "walkthrough"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro quick start", "crm tutorial", "getting started", "tesoro guide", "real estate crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Quick start gids: 15 minuten naar je eerste deal",
+      "en": "Quick Start Guide: 15 Minutes to Your First Deal",
+      "es": "Guía de inicio rápido: 15 minutos hasta tu primer deal"
+    },
+    "description": {
+      "nl": "Een praktische hands-on tutorial die je in 15 minuten door de complete workflow leidt: van contact tot gesloten deal.",
+      "en": "A practical hands-on tutorial that guides you through the complete workflow in 15 minutes: from contact to closed deal.",
+      "es": "Un tutorial práctico que te guía por el flujo de trabajo completo en 15 minutos: desde contacto hasta deal cerrado."
+    },
+    "icon": "rocket_launch"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Wil je Tesoro leren kennen door het te gebruiken? Deze gids neemt je mee door een volledige workflow: we gaan een buyer contact toevoegen, hun voorkeuren vastleggen, matching properties vinden met AI, en de deal door de pipeline bewegen.</p><p><strong>Wat je leert:</strong></p><ul><li>Contact management basics</li><li>Deal creation en tracking</li><li>AI-powered property matching</li><li>Pipeline management met Kanban</li><li>Communication binnen een deal</li></ul><p><strong>Tijd:</strong> 15 minuten<br><strong>Wat je nodig hebt:</strong> Je Tesoro account + minimaal 2-3 properties in je systeem</p>"
+        },
+        "en": {
+          "text": "<p>Want to learn Tesoro by using it? This guide takes you through a complete workflow: we'll add a buyer contact, capture their preferences, find matching properties with AI, and move the deal through the pipeline.</p><p><strong>What you'll learn:</strong></p><ul><li>Contact management basics</li><li>Deal creation and tracking</li><li>AI-powered property matching</li><li>Pipeline management with Kanban</li><li>Communication within a deal</li></ul><p><strong>Time:</strong> 15 minutes<br><strong>What you need:</strong> Your Tesoro account + at least 2-3 properties in your system</p>"
+        },
+        "es": {
+          "text": "<p>¿Quieres aprender Tesoro usándolo? Esta guía te lleva por un flujo de trabajo completo: agregaremos un contacto comprador, capturaremos sus preferencias, encontraremos propiedades coincidentes con IA y moveremos el deal por el pipeline.</p><p><strong>Lo que aprenderás:</strong></p><ul><li>Conceptos básicos de gestión de contactos</li><li>Creación y seguimiento de deals</li><li>Matching de propiedades impulsado por IA</li><li>Gestión de pipeline con Kanban</li><li>Comunicación dentro de un deal</li></ul><p><strong>Tiempo:</strong> 15 minutos<br><strong>Lo que necesitas:</strong> Tu cuenta Tesoro + al menos 2-3 propiedades en tu sistema</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "tutorial-steps",
+      "title": {
+        "nl": "Stap-voor-stap tutorial",
+        "en": "Step-by-Step Tutorial",
+        "es": "Tutorial paso a paso"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Scenario: Nieuwe buyer komt binnen",
+            "en": "Scenario: New Buyer Comes In",
+            "es": "Escenario: Nuevo comprador llega"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>De situatie:</strong> Je ontvangt een email van Sarah Johnson. Ze zoekt een 2-bedroom apartment in Barcelona, budget €300K, wil dichtbij metro station.</p><p><strong>Stap 1: Maak het contact aan</strong></p><ol><li>Klik rechtsboven op <strong>+ Contact</strong></li><li>Vul in: <ul><li>First Name: Sarah</li><li>Last Name: Johnson</li><li>Email: sarah.johnson@example.com</li><li>Phone: +34 612 345 678</li><li>Type: Buyer</li></ul></li><li>Klik <strong>Save</strong></li></ol><p><strong>Resultaat:</strong> Sarah is nu in je database. Tijd om een deal te starten!</p>"
+            },
+            "en": {
+              "text": "<p><strong>The situation:</strong> You receive an email from Sarah Johnson. She's looking for a 2-bedroom apartment in Barcelona, budget €300K, wants close to metro station.</p><p><strong>Step 1: Create the contact</strong></p><ol><li>Click top right on <strong>+ Contact</strong></li><li>Fill in: <ul><li>First Name: Sarah</li><li>Last Name: Johnson</li><li>Email: sarah.johnson@example.com</li><li>Phone: +34 612 345 678</li><li>Type: Buyer</li></ul></li><li>Click <strong>Save</strong></li></ol><p><strong>Result:</strong> Sarah is now in your database. Time to start a deal!</p>"
+            },
+            "es": {
+              "text": "<p><strong>La situación:</strong> Recibes un email de Sarah Johnson. Está buscando un apartamento de 2 dormitorios en Barcelona, presupuesto €300K, quiere cerca de estación de metro.</p><p><strong>Paso 1: Crear el contacto</strong></p><ol><li>Haz clic arriba a la derecha en <strong>+ Contact</strong></li><li>Completa: <ul><li>First Name: Sarah</li><li>Last Name: Johnson</li><li>Email: sarah.johnson@example.com</li><li>Phone: +34 612 345 678</li><li>Type: Buyer</li></ul></li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Resultado:</strong> Sarah está ahora en tu base de datos. ¡Tiempo de comenzar un deal!</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Deal aanmaken en voorkeuren vastleggen",
+            "en": "Create Deal and Capture Preferences",
+            "es": "Crear deal y capturar preferencias"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Stap 2: Start de deal</strong></p><ol><li>Klik in Sarah's contact pagina op <strong>Create Deal</strong> (of + Deal rechtsboven)</li><li>Vul in:<ul><li>Deal Name: \"Sarah Johnson - Barcelona Apartment\"</li><li>Stage: \"First Contact\" (eerste fase)</li><li>Expected Value: €300,000</li><li>Expected Close Date: Over 2 maanden</li></ul></li><li>Klik <strong>Save & Continue</strong></li></ol><p><strong>Stap 3: Capture property requirements</strong></p><p>In het deal detail scherm, ga naar <strong>Requirements</strong> tabblad:</p><ul><li>Property Type: Apartment</li><li>Bedrooms: 2</li><li>Bathrooms: 1-2</li><li>Budget Min: €250K</li><li>Budget Max: €350K</li><li>Location: Barcelona (add specific neighborhoods if you know)</li><li>Must-haves: Near metro, Modern kitchen</li></ul><p>Klik <strong>Save Requirements</strong></p>"
+            },
+            "en": {
+              "text": "<p><strong>Step 2: Start the deal</strong></p><ol><li>Click in Sarah's contact page on <strong>Create Deal</strong> (or + Deal top right)</li><li>Fill in:<ul><li>Deal Name: \"Sarah Johnson - Barcelona Apartment\"</li><li>Stage: \"First Contact\" (first phase)</li><li>Expected Value: €300,000</li><li>Expected Close Date: In 2 months</li></ul></li><li>Click <strong>Save & Continue</strong></li></ol><p><strong>Step 3: Capture property requirements</strong></p><p>In the deal detail screen, go to <strong>Requirements</strong> tab:</p><ul><li>Property Type: Apartment</li><li>Bedrooms: 2</li><li>Bathrooms: 1-2</li><li>Budget Min: €250K</li><li>Budget Max: €350K</li><li>Location: Barcelona (add specific neighborhoods if you know)</li><li>Must-haves: Near metro, Modern kitchen</li></ul><p>Click <strong>Save Requirements</strong></p>"
+            },
+            "es": {
+              "text": "<p><strong>Paso 2: Iniciar el deal</strong></p><ol><li>Haz clic en la página de contacto de Sarah en <strong>Create Deal</strong> (o + Deal arriba a la derecha)</li><li>Completa:<ul><li>Deal Name: \"Sarah Johnson - Barcelona Apartment\"</li><li>Stage: \"First Contact\" (primera fase)</li><li>Expected Value: €300,000</li><li>Expected Close Date: En 2 meses</li></ul></li><li>Haz clic en <strong>Save & Continue</strong></li></ol><p><strong>Paso 3: Capturar requisitos de propiedad</strong></p><p>En la pantalla de detalle del deal, ve a la pestaña <strong>Requirements</strong>:</p><ul><li>Property Type: Apartment</li><li>Bedrooms: 2</li><li>Bathrooms: 1-2</li><li>Budget Min: €250K</li><li>Budget Max: €350K</li><li>Location: Barcelona (agrega vecindarios específicos si sabes)</li><li>Must-haves: Near metro, Modern kitchen</li></ul><p>Haz clic en <strong>Save Requirements</strong></p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "AI matching: Vind perfecte properties",
+            "en": "AI Matching: Find Perfect Properties",
+            "es": "Matching de IA: Encuentra propiedades perfectas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Stap 4: Laat AI de werk doen</strong></p><ol><li>In het deal detail, ga naar <strong>Properties</strong> tabblad</li><li>Klik de grote blauwe knop: <strong>AI Match Properties</strong></li><li>Wacht 2-3 seconden terwijl AI je inventory scant</li></ol><p><strong>Wat je ziet:</strong></p><p>Een lijst van matching properties, gesorteerd op match percentage:</p><ul><li><strong>92% match</strong> - 2bed apartment, €295K, Eixample, 50m from metro</li><li><strong>87% match</strong> - 2bed apartment, €320K, Gracia, near metro</li><li><strong>81% match</strong> - 2bed apartment, €285K, Poblenou, renovated</li></ul><p><strong>Stap 5: Selecteer top candidates</strong></p><ol><li>Klik checkbox bij de top 3-5 properties</li><li>Klik <strong>Add Selected to Deal</strong></li><li>Properties worden toegevoegd aan de deal</li></ol><p><strong>Pro tip:</strong> Klik op een property om details te zien voordat je toevoegt. Check photo's, floor plans, description.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Step 4: Let AI do the work</strong></p><ol><li>In the deal detail, go to <strong>Properties</strong> tab</li><li>Click the big blue button: <strong>AI Match Properties</strong></li><li>Wait 2-3 seconds while AI scans your inventory</li></ol><p><strong>What you see:</strong></p><p>A list of matching properties, sorted by match percentage:</p><ul><li><strong>92% match</strong> - 2bed apartment, €295K, Eixample, 50m from metro</li><li><strong>87% match</strong> - 2bed apartment, €320K, Gracia, near metro</li><li><strong>81% match</strong> - 2bed apartment, €285K, Poblenou, renovated</li></ul><p><strong>Step 5: Select top candidates</strong></p><ol><li>Click checkbox on the top 3-5 properties</li><li>Click <strong>Add Selected to Deal</strong></li><li>Properties are added to the deal</li></ol><p><strong>Pro tip:</strong> Click on a property to see details before adding. Check photos, floor plans, description.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Paso 4: Deja que la IA haga el trabajo</strong></p><ol><li>En el detalle del deal, ve a la pestaña <strong>Properties</strong></li><li>Haz clic en el botón azul grande: <strong>AI Match Properties</strong></li><li>Espera 2-3 segundos mientras la IA escanea tu inventario</li></ol><p><strong>Lo que ves:</strong></p><p>Una lista de propiedades coincidentes, ordenadas por porcentaje de match:</p><ul><li><strong>92% match</strong> - apartamento 2 dormitorios, €295K, Eixample, 50m del metro</li><li><strong>87% match</strong> - apartamento 2 dormitorios, €320K, Gracia, cerca del metro</li><li><strong>81% match</strong> - apartamento 2 dormitorios, €285K, Poblenou, renovado</li></ul><p><strong>Paso 5: Seleccionar mejores candidatos</strong></p><ol><li>Haz clic en checkbox en las 3-5 propiedades principales</li><li>Haz clic en <strong>Add Selected to Deal</strong></li><li>Las propiedades se agregan al deal</li></ol><p><strong>Consejo pro:</strong> Haz clic en una propiedad para ver detalles antes de agregar. Verifica fotos, planos, descripción.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Send properties naar client",
+            "en": "Send Properties to Client",
+            "es": "Enviar propiedades al cliente"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Stap 6: Email met property selection</strong></p><ol><li>Met de 3-5 properties geselecteerd, klik <strong>Send to Client</strong></li><li>Kies email template: \"Property Selection\"</li><li>Preview de email - zie hoe properties er mooi uitzien met foto's en details</li><li>Pas de message aan (optioneel): \"Hi Sarah, based on your requirements, here are my top picks...\"</li><li>Klik <strong>Send Email</strong></li></ol><p><strong>Wat Sarah ontvangt:</strong></p><ul><li>Professionele email met jouw branding</li><li>Mooie property cards met foto's</li><li>Key details (prijs, bedrooms, locatie)</li><li>Link naar Client Portal voor meer info</li><li>Call-to-action: \"Schedule a viewing\"</li></ul><p><strong>Email tracking:</strong> Je ziet automatisch wanneer Sarah de email opent en op welke properties ze klikt!</p>"
+            },
+            "en": {
+              "text": "<p><strong>Step 6: Email with property selection</strong></p><ol><li>With 3-5 properties selected, click <strong>Send to Client</strong></li><li>Choose email template: \"Property Selection\"</li><li>Preview the email - see how properties look beautiful with photos and details</li><li>Adjust the message (optional): \"Hi Sarah, based on your requirements, here are my top picks...\"</li><li>Click <strong>Send Email</strong></li></ol><p><strong>What Sarah receives:</strong></p><ul><li>Professional email with your branding</li><li>Beautiful property cards with photos</li><li>Key details (price, bedrooms, location)</li><li>Link to Client Portal for more info</li><li>Call-to-action: \"Schedule a viewing\"</li></ul><p><strong>Email tracking:</strong> You automatically see when Sarah opens the email and which properties she clicks!</p>"
+            },
+            "es": {
+              "text": "<p><strong>Paso 6: Email con selección de propiedades</strong></p><ol><li>Con 3-5 propiedades seleccionadas, haz clic en <strong>Send to Client</strong></li><li>Elige plantilla de email: \"Property Selection\"</li><li>Vista previa del email - ve cómo las propiedades se ven hermosas con fotos y detalles</li><li>Ajusta el mensaje (opcional): \"Hi Sarah, based on your requirements, here are my top picks...\"</li><li>Haz clic en <strong>Send Email</strong></li></ol><p><strong>Lo que Sarah recibe:</strong></p><ul><li>Email profesional con tu branding</li><li>Hermosas tarjetas de propiedad con fotos</li><li>Detalles clave (precio, dormitorios, ubicación)</li><li>Enlace al Portal del Cliente para más información</li><li>Llamada a la acción: \"Schedule a viewing\"</li></ul><p><strong>Seguimiento de email:</strong> ¡Ves automáticamente cuándo Sarah abre el email y en qué propiedades hace clic!</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Move deal door pipeline",
+            "en": "Move Deal Through Pipeline",
+            "es": "Mover deal por el pipeline"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Stap 7: Track progress met Kanban</strong></p><ol><li>Ga naar <strong>Deals</strong> in de sidebar</li><li>Je ziet het Kanban board met alle deal stages</li><li>Vind Sarah's deal in de \"First Contact\" kolom</li></ol><p><strong>Stap 8: Move to next stage</strong></p><p>Als Sarah reageert \"I love #2! Can we schedule viewing?\", tijd om de deal te verplaatsen:</p><ol><li>Sleep Sarah's deal card van \"First Contact\" naar \"Viewing Scheduled\"</li><li>Een modal opent: vul viewing datum/tijd in</li><li>Voeg een note toe: \"Sarah interested in Gracia apartment\"</li><li>Klik <strong>Save & Move</strong></li></ol><p><strong>Wat gebeurt er automatisch:</strong></p><ul><li>Deal stage update wordt gelogd in timeline</li><li>Viewing wordt toegevoegd aan je Calendar</li><li>Sarah krijgt automatisch viewing confirmation email</li><li>Je dashboard metrics updaten real-time</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Step 7: Track progress with Kanban</strong></p><ol><li>Go to <strong>Deals</strong> in the sidebar</li><li>You see the Kanban board with all deal stages</li><li>Find Sarah's deal in the \"First Contact\" column</li></ol><p><strong>Step 8: Move to next stage</strong></p><p>When Sarah responds \"I love #2! Can we schedule viewing?\", time to move the deal:</p><ol><li>Drag Sarah's deal card from \"First Contact\" to \"Viewing Scheduled\"</li><li>A modal opens: fill in viewing date/time</li><li>Add a note: \"Sarah interested in Gracia apartment\"</li><li>Click <strong>Save & Move</strong></li></ol><p><strong>What happens automatically:</strong></p><ul><li>Deal stage update is logged in timeline</li><li>Viewing is added to your Calendar</li><li>Sarah automatically gets viewing confirmation email</li><li>Your dashboard metrics update real-time</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Paso 7: Rastrear progreso con Kanban</strong></p><ol><li>Ve a <strong>Deals</strong> en la barra lateral</li><li>Ves el tablero Kanban con todas las etapas de deals</li><li>Encuentra el deal de Sarah en la columna \"First Contact\"</li></ol><p><strong>Paso 8: Mover a siguiente etapa</strong></p><p>Cuando Sarah responde \"I love #2! Can we schedule viewing?\", tiempo de mover el deal:</p><ol><li>Arrastra la tarjeta del deal de Sarah de \"First Contact\" a \"Viewing Scheduled\"</li><li>Se abre un modal: completa fecha/hora de la visita</li><li>Agrega una nota: \"Sarah interested in Gracia apartment\"</li><li>Haz clic en <strong>Save & Move</strong></li></ol><p><strong>Lo que sucede automáticamente:</strong></p><ul><li>La actualización de etapa del deal se registra en la línea de tiempo</li><li>La visita se agrega a tu Calendar</li><li>Sarah recibe automáticamente email de confirmación de visita</li><li>Las métricas de tu dashboard se actualizan en tiempo real</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Close the deal!",
+            "en": "Close the Deal!",
+            "es": "¡Cerrar el deal!"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Fast forward: Na viewing en negotiation...</strong></p><p>Sarah besluit de Gracia apartment te kopen voor €315K. Tijd om te sluiten!</p><p><strong>Stap 9: Mark deal as Won</strong></p><ol><li>Open Sarah's deal</li><li>Update stage naar \"Negotiation\" → \"Contract Sent\" → \"Signed\"</li><li>In de \"Signed\" stage, klik <strong>Mark as Won</strong></li><li>Vul in:<ul><li>Final Price: €315,000</li><li>Close Date: Vandaag</li><li>Commission: Automatisch berekend</li></ul></li><li>Klik <strong>Close Deal</strong></li></ol><p><strong>Gefeliciteerd!</strong> Je hebt je eerste deal in Tesoro gesloten.</p><p><strong>Wat er nu gebeurt:</strong></p><ul><li>Deal verdwijnt van Kanban board (nu in \"Won\" archief)</li><li>Property status update naar \"Sold\"</li><li>Dashboard metrics tonen +1 deal, +€315K revenue</li><li>Sarah krijgt automatisch \"Thank you\" email</li><li>Je kunt een review vragen (Settings → Automations)</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Fast forward: After viewing and negotiation...</strong></p><p>Sarah decides to buy the Gracia apartment for €315K. Time to close!</p><p><strong>Step 9: Mark deal as Won</strong></p><ol><li>Open Sarah's deal</li><li>Update stage to \"Negotiation\" → \"Contract Sent\" → \"Signed\"</li><li>In the \"Signed\" stage, click <strong>Mark as Won</strong></li><li>Fill in:<ul><li>Final Price: €315,000</li><li>Close Date: Today</li><li>Commission: Automatically calculated</li></ul></li><li>Click <strong>Close Deal</strong></li></ol><p><strong>Congratulations!</strong> You've closed your first deal in Tesoro.</p><p><strong>What happens now:</strong></p><ul><li>Deal disappears from Kanban board (now in \"Won\" archive)</li><li>Property status updates to \"Sold\"</li><li>Dashboard metrics show +1 deal, +€315K revenue</li><li>Sarah automatically gets \"Thank you\" email</li><li>You can request a review (Settings → Automations)</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Avance rápido: Después de la visita y negociación...</strong></p><p>Sarah decide comprar el apartamento de Gracia por €315K. ¡Tiempo de cerrar!</p><p><strong>Paso 9: Marcar deal como Won</strong></p><ol><li>Abre el deal de Sarah</li><li>Actualiza la etapa a \"Negotiation\" → \"Contract Sent\" → \"Signed\"</li><li>En la etapa \"Signed\", haz clic en <strong>Mark as Won</strong></li><li>Completa:<ul><li>Final Price: €315,000</li><li>Close Date: Hoy</li><li>Commission: Calculado automáticamente</li></ul></li><li>Haz clic en <strong>Close Deal</strong></li></ol><p><strong>¡Felicitaciones!</strong> Has cerrado tu primer deal en Tesoro.</p><p><strong>Lo que sucede ahora:</strong></p><ul><li>El deal desaparece del tablero Kanban (ahora en archivo \"Won\")</li><li>El estado de la propiedad se actualiza a \"Sold\"</li><li>Las métricas del dashboard muestran +1 deal, +€315K de ingresos</li><li>Sarah recibe automáticamente email de \"Thank you\"</li><li>Puedes solicitar una reseña (Settings → Automations)</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "tutorial-complete",
+      "variant": "success",
+      "title": {
+        "nl": "Tutorial voltooid!",
+        "en": "Tutorial Complete!",
+        "es": "¡Tutorial completado!"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Je hebt nu de complete Tesoro workflow geleerd:</strong></p><ul><li>✅ Contact toevoegen</li><li>✅ Deal aanmaken met requirements</li><li>✅ AI property matching gebruiken</li><li>✅ Properties naar client sturen</li><li>✅ Deal door pipeline bewegen</li><li>✅ Deal sluiten als Won</li></ul><p><strong>Volgende stappen:</strong></p><ul><li>Repeat dit process met echte clients!</li><li>Verken geavanceerde features (WhatsApp, SMS, Reports)</li><li>Lees specifieke module guides voor diepere kennis</li><li>Join onze community voor tips van andere users</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>You've now learned the complete Tesoro workflow:</strong></p><ul><li>✅ Add contact</li><li>✅ Create deal with requirements</li><li>✅ Use AI property matching</li><li>✅ Send properties to client</li><li>✅ Move deal through pipeline</li><li>✅ Close deal as Won</li></ul><p><strong>Next steps:</strong></p><ul><li>Repeat this process with real clients!</li><li>Explore advanced features (WhatsApp, SMS, Reports)</li><li>Read specific module guides for deeper knowledge</li><li>Join our community for tips from other users</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Ahora has aprendido el flujo de trabajo completo de Tesoro:</strong></p><ul><li>✅ Agregar contacto</li><li>✅ Crear deal con requisitos</li><li>✅ Usar matching de propiedades con IA</li><li>✅ Enviar propiedades al cliente</li><li>✅ Mover deal por el pipeline</li><li>✅ Cerrar deal como Won</li></ul><p><strong>Próximos pasos:</strong></p><ul><li>¡Repite este proceso con clientes reales!</li><li>Explora características avanzadas (WhatsApp, SMS, Reports)</li><li>Lee guías de módulos específicos para conocimiento más profundo</li><li>Únete a nuestra comunidad para consejos de otros usuarios</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "first-steps-checklist",
+    "deal-pipeline-complete-guide",
+    "ai-property-matching-advanced",
+    "basic-contact-management-tutorial"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik deze tutorial met echte data doen?",
+        "en": "Should I do this tutorial with real data?",
+        "es": "¿Debo hacer este tutorial con datos reales?"
+      },
+      "answer": {
+        "nl": "Je kunt oefenen met test data eerst als je wilt, maar we raden aan om het direct met echte data te doen. Zo bouw je meteen je database op terwijl je leert. Je kunt test contacts/deals altijd later verwijderen.",
+        "en": "You can practice with test data first if you want, but we recommend doing it with real data directly. This way you immediately build your database while learning. You can always delete test contacts/deals later.",
+        "es": "Puedes practicar con datos de prueba primero si quieres, pero recomendamos hacerlo con datos reales directamente. De esta manera construyes inmediatamente tu base de datos mientras aprendes. Siempre puedes eliminar contactos/deals de prueba más tarde."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als AI matching geen goede results geeft?",
+        "en": "What if AI matching doesn't give good results?",
+        "es": "¿Qué pasa si el matching de IA no da buenos resultados?"
+      },
+      "answer": {
+        "nl": "AI matching werkt beter naarmate je meer detail hebt in contact requirements EN property data. Vul minimaal price range, bedrooms, location en type in. Als results nog niet goed zijn, kun je altijd handmatig properties toevoegen.",
+        "en": "AI matching works better as you have more detail in contact requirements AND property data. Fill in at least price range, bedrooms, location and type. If results still aren't good, you can always manually add properties.",
+        "es": "El matching de IA funciona mejor a medida que tienes más detalle en los requisitos del contacto Y datos de propiedad. Completa al menos rango de precio, dormitorios, ubicación y tipo. Si los resultados aún no son buenos, siempre puedes agregar propiedades manualmente."
+      }
+    }
+  ]
+}

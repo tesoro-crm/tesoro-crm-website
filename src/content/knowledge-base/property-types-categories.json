@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "id": "property-types-categories",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T14:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "property-types", "categories", "classification"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property types", "property categories", "apartment house commercial", "property classification"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property types en categorieën in Tesoro CRM",
+      "en": "Property Types and Categories in Tesoro CRM",
+      "es": "Tipos y categorías de propiedades en Tesoro CRM"
+    },
+    "description": {
+      "nl": "Begrijp de verschillende property types (huis, appartement, land, commercial) en hoe je ze correct classificeert voor optimale zoekresultaten en matching.",
+      "en": "Understand the different property types (house, apartment, land, commercial) and how to classify them correctly for optimal search results and matching.",
+      "es": "Comprende los diferentes tipos de propiedades (casa, apartamento, terreno, comercial) y cómo clasificarlos correctamente para resultados de búsqueda y matching óptimos."
+    },
+    "icon": "category"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "property-types-overview",
+      "title": {
+        "nl": "Overzicht van property types",
+        "en": "Property types overview",
+        "es": "Resumen de tipos de propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM ondersteunt alle gangbare property types voor de vastgoedmarkt. De correcte classificatie is belangrijk voor:</p><ul><li>Accurate zoekresultaten voor kopers</li><li>AI matching algoritme effectiviteit</li><li>Portal synchronisatie (Idealista, Fotocasa)</li><li>Marktanalyse en rapportages</li></ul><p>Elk property type heeft specifieke velden en kenmerken die relevant zijn voor dat type.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM supports all common property types for the real estate market. Correct classification is important for:</p><ul><li>Accurate search results for buyers</li><li>AI matching algorithm effectiveness</li><li>Portal synchronization (Idealista, Fotocasa)</li><li>Market analysis and reporting</li></ul><p>Each property type has specific fields and characteristics relevant to that type.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM soporta todos los tipos de propiedades comunes para el mercado inmobiliario. La clasificación correcta es importante para:</p><ul><li>Resultados de búsqueda precisos para compradores</li><li>Efectividad del algoritmo de matching con IA</li><li>Sincronización de portales (Idealista, Fotocasa)</li><li>Análisis de mercado e informes</li></ul><p>Cada tipo de propiedad tiene campos y características específicas relevantes para ese tipo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "residential-properties",
+      "title": {
+        "nl": "Residentieel vastgoed",
+        "en": "Residential properties",
+        "es": "Propiedades residenciales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Apartment</h5><p>Wooneenheden in een appartementsgebouw of complex.</p><p><strong>Subtypes:</strong></p><ul><li><strong>Studio:</strong> Eénkamer woonruimte (0 slaapkamers)</li><li><strong>Flat:</strong> Meerdere kamers op één verdieping</li><li><strong>Duplex/Maisonette:</strong> Over meerdere verdiepingen</li><li><strong>Penthouse:</strong> Bovenste verdieping met premium features</li></ul><p><strong>Specifieke velden:</strong></p><ul><li>Verdieping nummer</li><li>Lift aanwezig</li><li>Gemeenschappelijke ruimtes</li><li>VvE/community fees</li></ul><h5>House</h5><p>Vrijstaande of geschakelde woningen op grondniveau.</p><p><strong>Subtypes:</strong></p><ul><li><strong>Eengezinswoning:</strong> Vrijstaand huis</li><li><strong>Rijtjeshuis:</strong> Aaneengeschakelde woningen</li><li><strong>Hoekwoning:</strong> Op de hoek van een rij</li><li><strong>Twee-onder-één-kap:</strong> Twee woningen met gedeelde muur</li></ul><p><strong>Specifieke velden:</strong></p><ul><li>Perceeloppervlakte</li><li>Tuin (voor/achter/zij, oriëntatie)</li><li>Garage/parkeren</li><li>Aantal verdiepingen</li></ul><h5>Villa</h5><p>Luxe vrijstaande woningen met premium kenmerken.</p><p><strong>Kenmerken:</strong></p><ul><li>Groot perceel</li><li>Luxe afwerking</li><li>Premium locatie</li><li>Extra amenities (pool, tennis court, etc.)</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Apartment</h5><p>Housing units in an apartment building or complex.</p><p><strong>Subtypes:</strong></p><ul><li><strong>Studio:</strong> One-room living space (0 bedrooms)</li><li><strong>Flat:</strong> Multiple rooms on one floor</li><li><strong>Duplex/Maisonette:</strong> Over multiple floors</li><li><strong>Penthouse:</strong> Top floor with premium features</li></ul><p><strong>Specific fields:</strong></p><ul><li>Floor number</li><li>Elevator present</li><li>Common areas</li><li>HOA/community fees</li></ul><h5>House</h5><p>Detached or attached homes at ground level.</p><p><strong>Subtypes:</strong></p><ul><li><strong>Single-family home:</strong> Detached house</li><li><strong>Townhouse:</strong> Connected homes</li><li><strong>Corner house:</strong> On the corner of a row</li><li><strong>Semi-detached:</strong> Two homes with shared wall</li></ul><p><strong>Specific fields:</strong></p><ul><li>Plot area</li><li>Garden (front/back/side, orientation)</li><li>Garage/parking</li><li>Number of floors</li></ul><h5>Villa</h5><p>Luxury detached homes with premium features.</p><p><strong>Characteristics:</strong></p><ul><li>Large plot</li><li>Luxury finishes</li><li>Premium location</li><li>Extra amenities (pool, tennis court, etc.)</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Apartamento</h5><p>Unidades de vivienda en un edificio de apartamentos o complejo.</p><p><strong>Subtipos:</strong></p><ul><li><strong>Estudio:</strong> Espacio de vivienda de una habitación (0 dormitorios)</li><li><strong>Piso:</strong> Múltiples habitaciones en un piso</li><li><strong>Dúplex/Maisonette:</strong> En múltiples plantas</li><li><strong>Penthouse:</strong> Última planta con características premium</li></ul><p><strong>Campos específicos:</strong></p><ul><li>Número de piso</li><li>Ascensor presente</li><li>Áreas comunes</li><li>Cuotas de HOA/comunidad</li></ul><h5>Casa</h5><p>Viviendas independientes o adosadas a nivel del suelo.</p><p><strong>Subtipos:</strong></p><ul><li><strong>Casa unifamiliar:</strong> Casa independiente</li><li><strong>Casa adosada:</strong> Viviendas conectadas</li><li><strong>Casa esquinera:</strong> En la esquina de una fila</li><li><strong>Pareada:</strong> Dos viviendas con pared compartida</li></ul><p><strong>Campos específicos:</strong></p><ul><li>Área de parcela</li><li><strong>Jardín (delantero/trasero/lateral, orientación)</li><li>Garaje/estacionamiento</li><li>Número de plantas</li></ul><h5>Villa</h5><p>Viviendas independientes de lujo con características premium.</p><p><strong>Características:</strong></p><ul><li>Parcela grande</li><li>Acabados de lujo</li><li>Ubicación premium</li><li>Amenidades extra (piscina, cancha de tenis, etc.)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "commercial-properties",
+      "title": {
+        "nl": "Commercieel vastgoed",
+        "en": "Commercial properties",
+        "es": "Propiedades comerciales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Kantoorruimte</h5><p>Bedrijfspanden voor kantoor- en administratief werk.</p><p><strong>Types:</strong></p><ul><li>Stand-alone kantoorgebouw</li><li>Kantoorruimte in complex</li><li>Business center / co-working</li><li>Flex-kantoor</li></ul><p><strong>Belangrijke velden:</strong></p><ul><li>Aantal werkplekken</li><li>Meeting rooms</li><li>Parkeerplaatsen ratio</li><li>Openbaar vervoer bereikbaarheid</li></ul><h5>Retail/Winkel</h5><p>Commerciële ruimtes voor detailhandel.</p><p><strong>Types:</strong></p><ul><li>Winkelstraat locatie</li><li>Shopping center unit</li><li>Stand-alone winkel</li><li>Horecagelegenheid</li></ul><p><strong>Belangrijke velden:</strong></p><ul><li>Etalage breedte</li><li>Loopstraat/hoofd locatie</li><li>Magazijn/opslagruimte</li><li>Terras mogelijkheden</li></ul><h5>Industrieel</h5><p>Productie-, opslag- en distributiefaciliteiten.</p><p><strong>Types:</strong></p><ul><li>Bedrijfshal</li><li>Warehouse/distributiecentrum</li><li>Productieruimte</li><li>Mixed-use (kantoor + hal)</li></ul><p><strong>Belangrijke velden:</strong></p><ul><li>Vrije hoogte</li><li>Laad-/loskavels</li><li>Heftruckvermogen</li><li>Drie-fase stroom</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Office space</h5><p>Business premises for office and administrative work.</p><p><strong>Types:</strong></p><ul><li>Stand-alone office building</li><li>Office space in complex</li><li>Business center / co-working</li><li>Flex-office</li></ul><p><strong>Important fields:</strong></p><ul><li>Number of workplaces</li><li>Meeting rooms</li><li>Parking spaces ratio</li><li>Public transport accessibility</li></ul><h5>Retail/Shop</h5><p>Commercial spaces for retail.</p><p><strong>Types:</strong></p><ul><li>High street location</li><li>Shopping center unit</li><li>Stand-alone shop</li><li>Hospitality venue</li></ul><p><strong>Important fields:</strong></p><ul><li>Shop window width</li><li>Main street/prime location</li><li>Warehouse/storage space</li><li>Terrace possibilities</li></ul><h5>Industrial</h5><p>Production, storage and distribution facilities.</p><p><strong>Types:</strong></p><ul><li>Industrial hall</li><li>Warehouse/distribution center</li><li>Production space</li><li>Mixed-use (office + hall)</li></ul><p><strong>Important fields:</strong></p><ul><li>Free height</li><li>Loading/unloading bays</li><li>Forklift capacity</li><li>Three-phase power</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Espacio de oficina</h5><p>Locales comerciales para trabajo de oficina y administrativo.</p><p><strong>Tipos:</strong></p><ul><li>Edificio de oficinas independiente</li><li>Espacio de oficina en complejo</li><li>Business center / co-working</li><li>Oficina flexible</li></ul><p><strong>Campos importantes:</strong></p><ul><li>Número de puestos de trabajo</li><li>Salas de reuniones</li><li>Proporción de plazas de estacionamiento</li><li>Accesibilidad al transporte público</li></ul><h5>Retail/Tienda</h5><p>Espacios comerciales para comercio minorista.</p><p><strong>Tipos:</strong></p><ul><li>Ubicación en calle principal</li><li>Unidad en centro comercial</li><li>Tienda independiente</li><li>Local de hostelería</li></ul><p><strong>Campos importantes:</strong></p><ul><li>Ancho de escaparate</li><li>Calle principal/ubicación premium</li><li>Almacén/espacio de almacenamiento</li><li>Posibilidades de terraza</li></ul><h5>Industrial</h5><p>Instalaciones de producción, almacenamiento y distribución.</p><p><strong>Tipos:</strong></p><ul><li>Nave industrial</li><li>Almacén/centro de distribución</li><li>Espacio de producción</li><li>Uso mixto (oficina + nave)</li></ul><p><strong>Campos importantes:</strong></p><ul><li>Altura libre</li><li>Muelles de carga/descarga</li><li>Capacidad de montacargas</li><li>Corriente trifásica</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "land-properties",
+      "title": {
+        "nl": "Grond en ontwikkeling",
+        "en": "Land and development",
+        "es": "Terrenos y desarrollo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Bouwgrond</h5><p>Percelen voor nieuwe ontwikkeling.</p><p><strong>Types:</strong></p><ul><li>Residentieel bouwkavel</li><li>Commercieel bouwterrein</li><li>Mixed-use ontwikkeling</li></ul><p><strong>Belangrijke informatie:</strong></p><ul><li>Bebouwingspercentage</li><li>Maximale bouwhoogte</li><li>Bestemmingsplan status</li><li>Voorzieningen (water, elektra, riolering)</li><li>Bodemkwaliteit</li></ul><h5>Agrarische grond</h5><p>Landbouwgrond zonder bouwbestemming.</p><p><strong>Details:</strong></p><ul><li>Grondsoort en kwaliteit</li><li>Huidige gebruik (akkerbouw, veeteelt, etc.)</li><li>Waterbeschikbaarheid</li><li>Toegangswegen</li></ul><h5>Recreatie grond</h5><p>Grond met recreatieve bestemming.</p><p><strong>Mogelijkheden:</strong></p><ul><li>Camping/bungalowpark</li><li>Natuurgebied</li><li>Manège/paardenfaciliteit</li><li>Sportvelden</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Building land</h5><p>Plots for new development.</p><p><strong>Types:</strong></p><ul><li>Residential building plot</li><li>Commercial building site</li><li>Mixed-use development</li></ul><p><strong>Important information:</strong></p><ul><li>Building percentage</li><li>Maximum building height</li><li>Zoning plan status</li><li>Utilities (water, electricity, sewerage)</li><li>Soil quality</li></ul><h5>Agricultural land</h5><p>Farmland without building designation.</p><p><strong>Details:</strong></p><ul><li>Soil type and quality</li><li>Current use (arable farming, livestock, etc.)</li><li>Water availability</li><li>Access roads</li></ul><h5>Recreation land</h5><p>Land with recreational designation.</p><p><strong>Possibilities:</strong></p><ul><li>Camping/bungalow park</li><li>Nature area</li><li>Horse riding facility</li><li>Sports fields</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Terreno edificable</h5><p>Parcelas para nuevo desarrollo.</p><p><strong>Tipos:</strong></p><ul><li>Parcela edificable residencial</li><li>Sitio de construcción comercial</li><li>Desarrollo de uso mixto</li></ul><p><strong>Información importante:</strong></p><ul><li>Porcentaje de construcción</li><li>Altura máxima de construcción</li><li>Estado del plan de zonificación</li><li>Servicios públicos (agua, electricidad, alcantarillado)</li><li>Calidad del suelo</li></ul><h5>Tierra agrícola</h5><p>Tierra de cultivo sin designación de construcción.</p><p><strong>Detalles:</strong></p><ul><li>Tipo y calidad del suelo</li><li>Uso actual (agricultura de cultivo, ganadería, etc.)</li><li>Disponibilidad de agua</li><li>Caminos de acceso</li></ul><h5>Tierra de recreación</h5><p>Tierra con designación recreativa.</p><p><strong>Posibilidades:</strong></p><ul><li>Camping/parque de bungalows</li><li>Área natural</li><li>Instalación ecuestre</li><li>Campos deportivos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "classification-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor classificatie",
+        "en": "Best practices for classification",
+        "es": "Mejores prácticas para clasificación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Algemene richtlijnen:</strong></p><ul><li>Kies het meest specifieke type dat van toepassing is</li><li>Bij twijfel tussen twee types: kies degene waar de meeste kopers naar zoeken</li><li>Gebruik de beschrijving voor subtypes (bijv. \"Penthouse\" in beschrijving, type = Apartment)</li><li>Wees consistent in je classificatie voor vergelijkbaarheid</li></ul><p><strong>Voor portal sync:</strong></p><ul><li>Idealista en Fotocasa verwachten specifieke property types</li><li>Tesoro mapt automatisch naar de juiste portal categorieën</li><li>Controleer de mapping in portal settings</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>General guidelines:</strong></p><ul><li>Choose the most specific type that applies</li><li>When in doubt between two types: choose the one most buyers search for</li><li>Use the description for subtypes (e.g. \"Penthouse\" in description, type = Apartment)</li><li>Be consistent in your classification for comparability</li></ul><p><strong>For portal sync:</strong></p><ul><li>Idealista and Fotocasa expect specific property types</li><li>Tesoro automatically maps to the correct portal categories</li><li>Check the mapping in portal settings</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Directrices generales:</strong></p><ul><li>Elige el tipo más específico que se aplique</li><li>En caso de duda entre dos tipos: elige el que más compradores buscan</li><li>Usa la descripción para subtipos (ej. \"Penthouse\" en descripción, tipo = Apartamento)</li><li>Sé consistente en tu clasificación para comparabilidad</li></ul><p><strong>Para sincronización de portal:</strong></p><ul><li>Idealista y Fotocasa esperan tipos de propiedades específicos</li><li>Tesoro mapea automáticamente a las categorías correctas del portal</li><li>Verifica el mapeo en configuración de portales</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "adding-properties-guide",
+    "property-features-amenities",
+    "property-portal-integration"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik het property type later wijzigen?",
+        "en": "Can I change the property type later?",
+        "es": "¿Puedo cambiar el tipo de propiedad después?"
+      },
+      "answer": {
+        "nl": "Ja, je kunt het property type altijd wijzigen. Let op dat dit invloed kan hebben op beschikbare velden en portal synchronisatie. Bij wijziging worden de relevante velden automatisch aangepast.",
+        "en": "Yes, you can always change the property type. Note that this can affect available fields and portal synchronization. When changing, relevant fields are automatically adjusted.",
+        "es": "Sí, siempre puedes cambiar el tipo de propiedad. Ten en cuenta que esto puede afectar los campos disponibles y la sincronización de portales. Al cambiar, los campos relevantes se ajustan automáticamente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als mijn property niet in een standaard categorie past?",
+        "en": "What if my property doesn't fit in a standard category?",
+        "es": "¿Qué pasa si mi propiedad no encaja en una categoría estándar?"
+      },
+      "answer": {
+        "nl": "Kies de meest nabije categorie en gebruik custom fields en uitgebreide beschrijvingen voor specifieke details. Voor zeer unieke properties kun je contact opnemen met support voor custom categorieën.",
+        "en": "Choose the closest category and use custom fields and extended descriptions for specific details. For very unique properties you can contact support for custom categories.",
+        "es": "Elige la categoría más cercana y usa campos personalizados y descripciones extendidas para detalles específicos. Para propiedades muy únicas puedes contactar a soporte para categorías personalizadas."
+      }
+    }
+  ]
+}

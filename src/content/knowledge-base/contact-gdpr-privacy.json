@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "contact-gdpr-privacy",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:05:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "gdpr", "privacy", "data-protection", "compliance"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["gdpr tesoro", "contact privacy", "data protection", "gdpr compliance", "contact data security"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "GDPR en Privacy: Contactgegevens Beschermen",
+      "en": "GDPR and Privacy: Protecting Contact Data",
+      "es": "GDPR y Privacidad: Proteger Datos de Contacto"
+    },
+    "description": {
+      "nl": "Begrijp hoe Tesoro je helpt om GDPR-compliant te zijn en contactgegevens te beschermen.",
+      "en": "Understand how Tesoro helps you stay GDPR-compliant and protect contact data.",
+      "es": "Entiende cómo Tesoro te ayuda a cumplir con GDPR y proteger datos de contacto."
+    },
+    "icon": "shield"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "gdpr-overview",
+      "title": {
+        "nl": "GDPR Basics voor Contact Management",
+        "en": "GDPR Basics for Contact Management",
+        "es": "Fundamentos de GDPR para Gestión de Contactos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Wat is GDPR?</h3><p>General Data Protection Regulation - EU wet voor bescherming van persoonlijke data.</p><h3>Belangrijkste Principes</h3><p><strong>1. Lawful Basis:</strong></p><ul><li>Consent (toestemming van contact)</li><li>Contract (noodzakelijk voor service)</li><li>Legitimate interest (zakelijk belang)</li></ul><p><strong>2. Data Minimization:</strong></p><ul><li>Verzamel alleen noodzakelijke data</li><li>Niet meer velden invullen dan nodig</li></ul><p><strong>3. Purpose Limitation:</strong></p><ul><li>Gebruik data alleen voor aangegeven doel</li><li>Geen marketing emails zonder consent</li></ul><p><strong>4. Right to Access:</strong></p><ul><li>Contacten kunnen hun data opvragen</li><li>Export functie beschikbaar</li></ul><p><strong>5. Right to Erasure ('Right to be Forgotten'):</strong></p><ul><li>Contacten kunnen verwijdering vragen</li><li>Tesoro biedt permanent delete functie</li></ul>"
+        },
+        "en": {
+          "text": "<h3>What is GDPR?</h3><p>General Data Protection Regulation - EU law for protection of personal data.</p><h3>Key Principles</h3><p><strong>1. Lawful Basis:</strong></p><ul><li>Consent (permission from contact)</li><li>Contract (necessary for service)</li><li>Legitimate interest (business interest)</li></ul><p><strong>2. Data Minimization:</strong></p><ul><li>Collect only necessary data</li><li>Don't fill more fields than needed</li></ul><p><strong>3. Purpose Limitation:</strong></p><ul><li>Use data only for stated purpose</li><li>No marketing emails without consent</li></ul><p><strong>4. Right to Access:</strong></p><ul><li>Contacts can request their data</li><li>Export function available</li></ul><p><strong>5. Right to Erasure ('Right to be Forgotten'):</strong></p><ul><li>Contacts can request deletion</li><li>Tesoro offers permanent delete function</li></ul>"
+        },
+        "es": {
+          "text": "<h3>¿Qué es GDPR?</h3><p>Reglamento General de Protección de Datos - ley de la UE para protección de datos personales.</p><h3>Principios Clave</h3><p><strong>1. Base Legal:</strong></p><ul><li>Consentimiento (permiso del contacto)</li><li>Contrato (necesario para servicio)</li><li>Interés legítimo (interés comercial)</li></ul><p><strong>2. Minimización de Datos:</strong></p><ul><li>Recopilar solo datos necesarios</li><li>No completar más campos de los necesarios</li></ul><p><strong>3. Limitación de Propósito:</strong></p><ul><li>Usar datos solo para propósito indicado</li><li>No emails de marketing sin consentimiento</li></ul><p><strong>4. Derecho de Acceso:</strong></p><ul><li>Los contactos pueden solicitar sus datos</li><li>Función de exportación disponible</li></ul><p><strong>5. Derecho al Olvido:</strong></p><ul><li>Los contactos pueden solicitar eliminación</li><li>Tesoro ofrece función de eliminación permanente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "gdpr-compliance-tesoro",
+      "title": {
+        "nl": "GDPR Features in Tesoro",
+        "en": "GDPR Features in Tesoro",
+        "es": "Características GDPR en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Ingebouwde GDPR Tools</h3><p><strong>1. Consent Tracking:</strong></p><ul><li>Custom field 'Marketing Consent' (Yes/No)</li><li>Datum van consent bijhouden</li><li>Bron van consent documenteren</li></ul><p><strong>2. Data Export (Right to Access):</strong></p><ul><li>Export all contact data als CSV</li><li>Include activity history</li><li>Include communication history</li></ul><p><strong>3. Permanent Delete (Right to Erasure):</strong></p><ul><li>Delete contact → Confirm 'Permanent Delete'</li><li>Alle gekoppelde data wordt verwijderd</li><li>Irreversibel - niet te herstellen</li></ul><p><strong>4. Data Retention:</strong></p><ul><li>Auto-delete inactive contacts after X years (optional)</li><li>Compliance met data retention policies</li></ul><p><strong>5. Access Control:</strong></p><ul><li>Role-based permissions</li><li>Audit trail van wie data heeft bekeken</li><li>Field-level security</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Built-in GDPR Tools</h3><p><strong>1. Consent Tracking:</strong></p><ul><li>Custom field 'Marketing Consent' (Yes/No)</li><li>Track consent date</li><li>Document consent source</li></ul><p><strong>2. Data Export (Right to Access):</strong></p><ul><li>Export all contact data as CSV</li><li>Include activity history</li><li>Include communication history</li></ul><p><strong>3. Permanent Delete (Right to Erasure):</strong></p><ul><li>Delete contact → Confirm 'Permanent Delete'</li><li>All linked data is removed</li><li>Irreversible - cannot be recovered</li></ul><p><strong>4. Data Retention:</strong></p><ul><li>Auto-delete inactive contacts after X years (optional)</li><li>Compliance with data retention policies</li></ul><p><strong>5. Access Control:</strong></p><ul><li>Role-based permissions</li><li>Audit trail of who viewed data</li><li>Field-level security</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Herramientas GDPR Integradas</h3><p><strong>1. Seguimiento de Consentimiento:</strong></p><ul><li>Campo personalizado 'Marketing Consent' (Sí/No)</li><li>Rastrear fecha de consentimiento</li><li>Documentar fuente de consentimiento</li></ul><p><strong>2. Exportación de Datos (Derecho de Acceso):</strong></p><ul><li>Exportar todos los datos de contacto como CSV</li><li>Incluir historial de actividad</li><li>Incluir historial de comunicación</li></ul><p><strong>3. Eliminación Permanente (Derecho al Olvido):</strong></p><ul><li>Eliminar contacto → Confirmar 'Eliminación Permanente'</li><li>Todos los datos vinculados se eliminan</li><li>Irreversible - no se puede recuperar</li></ul><p><strong>4. Retención de Datos:</strong></p><ul><li>Auto-eliminar contactos inactivos después de X años (opcional)</li><li>Cumplimiento con políticas de retención de datos</li></ul><p><strong>5. Control de Acceso:</strong></p><ul><li>Permisos basados en roles</li><li>Registro de auditoría de quién vio los datos</li><li>Seguridad a nivel de campo</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "gdpr-best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "GDPR Best Practices",
+        "en": "GDPR Best Practices",
+        "es": "Mejores Prácticas GDPR"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Documenteer consent:</strong> Noteer wanneer en hoe je consent kreeg</li><li><strong>Privacy policy:</strong> Link naar je privacy policy in communicatie</li><li><strong>Opt-out optie:</strong> Maak het makkelijk om uit marketing te stappen</li><li><strong>Regular cleanup:</strong> Verwijder oude/inactieve contacten regelmatig</li><li><strong>Train je team:</strong> Zorg dat iedereen GDPR begrijpt</li><li><strong>Review permissions:</strong> Check regelmatig wie toegang heeft tot data</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Document consent:</strong> Note when and how you got consent</li><li><strong>Privacy policy:</strong> Link to your privacy policy in communications</li><li><strong>Opt-out option:</strong> Make it easy to opt out of marketing</li><li><strong>Regular cleanup:</strong> Delete old/inactive contacts regularly</li><li><strong>Train your team:</strong> Ensure everyone understands GDPR</li><li><strong>Review permissions:</strong> Regularly check who has access to data</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Documentar consentimiento:</strong> Anota cuándo y cómo obtuviste el consentimiento</li><li><strong>Política de privacidad:</strong> Enlaza a tu política de privacidad en comunicaciones</li><li><strong>Opción de exclusión:</strong> Facilita la exclusión del marketing</li><li><strong>Limpieza regular:</strong> Elimina contactos antiguos/inactivos regularmente</li><li><strong>Capacita a tu equipo:</strong> Asegúrate de que todos entiendan GDPR</li><li><strong>Revisar permisos:</strong> Verifica regularmente quién tiene acceso a datos</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-bulk-operations",
+    "contact-merge-duplicates",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe exporteer ik alle data van een contact (GDPR data request)?",
+        "en": "How do I export all data of a contact (GDPR data request)?",
+        "es": "¿Cómo exporto todos los datos de un contacto (solicitud de datos GDPR)?"
+      },
+      "answer": {
+        "nl": "Open het contact, klik op Actions > Export Data. Alle contact informatie, notes, emails, tasks en activity history worden geëxporteerd als CSV. Stuur dit bestand naar de persoon die het heeft aangevraagd.",
+        "en": "Open the contact, click Actions > Export Data. All contact information, notes, emails, tasks and activity history are exported as CSV. Send this file to the person who requested it.",
+        "es": "Abre el contacto, haz clic en Actions > Export Data. Toda la información de contacto, notas, emails, tareas e historial de actividad se exportan como CSV. Envía este archivo a la persona que lo solicitó."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe verwijder ik een contact permanent (Right to be Forgotten)?",
+        "en": "How do I permanently delete a contact (Right to be Forgotten)?",
+        "es": "¿Cómo elimino permanentemente un contacto (Derecho al Olvido)?"
+      },
+      "answer": {
+        "nl": "Open contact > Actions > Delete Contact. Kies 'Permanent Delete' (niet soft delete). Bevestig de actie. Het contact en alle gekoppelde data worden definitief verwijderd en kunnen niet worden hersteld.",
+        "en": "Open contact > Actions > Delete Contact. Choose 'Permanent Delete' (not soft delete). Confirm the action. The contact and all linked data are permanently deleted and cannot be recovered.",
+        "es": "Abrir contacto > Actions > Delete Contact. Elegir 'Eliminación Permanente' (no eliminación suave). Confirmar la acción. El contacto y todos los datos vinculados se eliminan permanentemente y no se pueden recuperar."
+      }
+    }
+  ]
+}

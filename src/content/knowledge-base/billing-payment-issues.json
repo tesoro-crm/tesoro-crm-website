@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "id": "billing-payment-issues",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "beginner",
+    "tags": ["billing", "payment", "subscription", "invoice", "troubleshooting"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
+    "keywords": ["billing issues", "payment problems", "subscription", "invoice", "tesoro billing"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Billing en payment problemen oplossen",
+      "en": "Solving Billing and Payment Issues",
+      "es": "Resolver problemas de facturación y pago"
+    },
+    "description": {
+      "nl": "Los problemen op met betalingen, facturen, subscription updates en billing errors.",
+      "en": "Fix problems with payments, invoices, subscription updates and billing errors.",
+      "es": "Soluciona problemas con pagos, facturas, actualizaciones de suscripción y errores de facturación."
+    },
+    "icon": "payment"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "payment-failures",
+      "title": {
+        "nl": "Payment failures oplossen",
+        "en": "Solving Payment Failures",
+        "es": "Resolver fallas de pago"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Payment failed: \"Card declined\"</h4><p><strong>Mogelijke oorzaken:</strong></p><ul><li>Insufficient funds</li><li>Card expired</li><li>Card blocked by bank (fraud protection)</li><li>Wrong CVV/security code</li><li>International payment blocked</li></ul><p><strong>Oplossingen:</strong></p><ol><li>Check card balance</li><li>Verify card expiry date</li><li>Contact bank om international payments te enablen</li><li>Try andere payment method</li><li>Update payment method in Settings → Billing</li></ol><h4>❌ Payment failed: \"3D Secure verification failed\"</h4><p><strong>Oplossing:</strong></p><ol><li>Check je phone for bank SMS verification</li><li>Retry payment en confirm SMS code</li><li>If no SMS: Contact bank to enable 3D Secure</li></ol><h4>Retry failed payment:</h4><ol><li>Settings → Billing → <strong>Retry Payment</strong></li><li>OR: Update payment method → Auto-retry</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Payment failed: \"Card declined\"</h4><p><strong>Possible causes:</strong></p><ul><li>Insufficient funds</li><li>Card expired</li><li>Card blocked by bank (fraud protection)</li><li>Wrong CVV/security code</li><li>International payment blocked</li></ul><p><strong>Solutions:</strong></p><ol><li>Check card balance</li><li>Verify card expiry date</li><li>Contact bank to enable international payments</li><li>Try other payment method</li><li>Update payment method in Settings → Billing</li></ol><h4>❌ Payment failed: \"3D Secure verification failed\"</h4><p><strong>Solution:</strong></p><ol><li>Check your phone for bank SMS verification</li><li>Retry payment and confirm SMS code</li><li>If no SMS: Contact bank to enable 3D Secure</li></ol><h4>Retry failed payment:</h4><ol><li>Settings → Billing → <strong>Retry Payment</strong></li><li>OR: Update payment method → Auto-retry</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Pago falló: \"Tarjeta rechazada\"</h4><p><strong>Posibles causas:</strong></p><ul><li>Fondos insuficientes</li><li>Tarjeta expirada</li><li>Tarjeta bloqueada por banco (protección contra fraude)</li><li>CVV/código de seguridad incorrecto</li><li>Pago internacional bloqueado</li></ul><p><strong>Soluciones:</strong></p><ol><li>Verifica saldo de tarjeta</li><li>Verifica fecha de expiración de tarjeta</li><li>Contacta banco para habilitar pagos internacionales</li><li>Prueba otro método de pago</li><li>Actualiza método de pago en Settings → Billing</li></ol><h4>❌ Pago falló: \"3D Secure verification failed\"</h4><p><strong>Solución:</strong></p><ol><li>Verifica tu teléfono para SMS de verificación del banco</li><li>Reintenta pago y confirma código SMS</li><li>Si no hay SMS: Contacta banco para habilitar 3D Secure</li></ol><h4>Reintentar pago fallido:</h4><ol><li>Settings → Billing → <strong>Retry Payment</strong></li><li>O: Actualiza método de pago → Auto-reintento</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "subscription-management",
+      "title": {
+        "nl": "Subscription management",
+        "en": "Subscription Management",
+        "es": "Gestión de suscripción"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optioneel)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select nieuwe plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: Je betaalt verschil pro-rata (meteen)</li><li>Downgrade: Credit toegepast op next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access blijft tot end of billing period</li></ol><p><strong>Note:</strong> Data blijft 30 dagen na cancellation, daarna permanent deleted.</p>"
+        },
+        "en": {
+          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optional)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select new plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: You pay difference pro-rata (immediately)</li><li>Downgrade: Credit applied to next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access remains until end of billing period</li></ol><p><strong>Note:</strong> Data remains 30 days after cancellation, then permanently deleted.</p>"
+        },
+        "es": {
+          "text": "<h4>Actualizar método de pago:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Haz clic en <strong>Add New Card</strong></li><li>Ingresa detalles de tarjeta (encriptado seguro)</li><li>Establece como predeterminado</li><li>Elimina tarjeta antigua (opcional)</li></ol><h4>Cambiar plan de suscripción:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Haz clic en <strong>Change Plan</strong></li><li>Selecciona nuevo plan (actualización/degradación)</li><li>Vista previa de cambio de precio</li><li>Confirma cambio</li></ol><p><strong>Facturación prorrateada:</strong></p><ul><li>Actualización: Pagas diferencia pro-rata (inmediatamente)</li><li>Degradación: Crédito aplicado a próxima factura</li></ul><h4>Cancelar suscripción:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Selecciona razón de cancelación (retroalimentación)</li><li>Confirma cancelación</li><li>El acceso permanece hasta el final del período de facturación</li></ol><p><strong>Nota:</strong> Los datos permanecen 30 días después de la cancelación, luego se eliminan permanentemente.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "invoices",
+      "title": {
+        "nl": "Invoices en receipts",
+        "en": "Invoices and Receipts",
+        "es": "Facturas y recibos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Download invoices:</h4><ol><li>Settings → Billing → <strong>Invoices</strong></li><li>View all past invoices (12 months)</li><li>Click <strong>Download PDF</strong></li></ol><h4>Update billing info (voor facturen):</h4><ol><li>Settings → Billing → <strong>Billing Information</strong></li><li>Update:<ul><li>Company name</li><li>VAT number</li><li>Billing address</li><li>Email for invoices</li></ul></li><li>Click <strong>Save</strong></li><li>Changes apply to next invoice</li></ol><h4>Request invoice correction:</h4><p>Email support@tesorohq.io with:</p><ul><li>Invoice number</li><li>What needs correction</li><li>Correct information</li></ul><p>We issue corrected invoice binnen 48 uur.</p>"
+        },
+        "en": {
+          "text": "<h4>Download invoices:</h4><ol><li>Settings → Billing → <strong>Invoices</strong></li><li>View all past invoices (12 months)</li><li>Click <strong>Download PDF</strong></li></ol><h4>Update billing info (for invoices):</h4><ol><li>Settings → Billing → <strong>Billing Information</strong></li><li>Update:<ul><li>Company name</li><li>VAT number</li><li>Billing address</li><li>Email for invoices</li></ul></li><li>Click <strong>Save</strong></li><li>Changes apply to next invoice</li></ol><h4>Request invoice correction:</h4><p>Email support@tesorohq.io with:</p><ul><li>Invoice number</li><li>What needs correction</li><li>Correct information</li></ul><p>We issue corrected invoice within 48 hours.</p>"
+        },
+        "es": {
+          "text": "<h4>Descargar facturas:</h4><ol><li>Settings → Billing → <strong>Invoices</strong></li><li>Ver todas las facturas pasadas (12 meses)</li><li>Haz clic en <strong>Download PDF</strong></li></ol><h4>Actualizar información de facturación (para facturas):</h4><ol><li>Settings → Billing → <strong>Billing Information</strong></li><li>Actualiza:<ul><li>Nombre de empresa</li><li>Número de IVA</li><li>Dirección de facturación</li><li>Email para facturas</li></ul></li><li>Haz clic en <strong>Save</strong></li><li>Los cambios se aplican a la próxima factura</li></ol><h4>Solicitar corrección de factura:</h4><p>Envía email a support@tesorohq.io con:</p><ul><li>Número de factura</li><li>Qué necesita corrección</li><li>Información correcta</li></ul><p>Emitimos factura corregida dentro de 48 horas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "billing-support",
+      "variant": "warning",
+      "title": {
+        "nl": "Contact billing support",
+        "en": "Contact Billing Support",
+        "es": "Contactar soporte de facturación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor billing/payment issues, email billing@tesorohq.io:</strong></p><ul><li>Subscription questions</li><li>Invoice corrections</li><li>VAT/tax queries</li><li>Refund requests</li><li>Payment disputes</li></ul><p><strong>Response time:</strong> Within 24 hours (business days)</p><p><strong>Include:</strong> Account email, invoice number (if applicable), detailed issue.</p>"
+        },
+        "en": {
+          "text": "<p><strong>For billing/payment issues, email billing@tesorohq.io:</strong></p><ul><li>Subscription questions</li><li>Invoice corrections</li><li>VAT/tax queries</li><li>Refund requests</li><li>Payment disputes</li></ul><p><strong>Response time:</strong> Within 24 hours (business days)</p><p><strong>Include:</strong> Account email, invoice number (if applicable), detailed issue.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Para problemas de facturación/pago, envía email a billing@tesorohq.io:</strong></p><ul><li>Preguntas de suscripción</li><li>Correcciones de factura</li><li>Consultas de IVA/impuestos</li><li>Solicitudes de reembolso</li><li>Disputas de pago</li></ul><p><strong>Tiempo de respuesta:</strong> Dentro de 24 horas (días laborables)</p><p><strong>Incluye:</strong> Email de cuenta, número de factura (si aplica), problema detallado.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "common-issues-solutions",
+    "getting-help-support"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Krijg ik refund als ik cancel?",
+        "en": "Do I get a refund if I cancel?",
+        "es": "¿Obtengo reembolso si cancelo?"
+      },
+      "answer": {
+        "nl": "Nee, subscriptions zijn non-refundable. Je behoud wel access tot end of je current billing period. Voor special cases (bijv. technical issues), contact billing@tesorohq.io.",
+        "en": "No, subscriptions are non-refundable. You retain access until end of your current billing period. For special cases (e.g. technical issues), contact billing@tesorohq.io.",
+        "es": "No, las suscripciones no son reembolsables. Retienes acceso hasta el final de tu período de facturación actual. Para casos especiales (ej. problemas técnicos), contacta billing@tesorohq.io."
+      }
+    }
+  ]
+}

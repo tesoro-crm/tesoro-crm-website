@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "id": "ical-export-integration",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "intermediate",
+    "tags": ["calendar", "ical", "export", "integration", "sync", "outlook"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=630&fit=crop",
+    "keywords": ["ical export", "calendar integration", "outlook sync", "apple calendar", "calendar feed", "tesoro export"]
+  },
+  "hero": {
+    "title": {
+      "nl": "iCal export en externe kalender integratie",
+      "en": "iCal Export and External Calendar Integration",
+      "es": "Exportación iCal e integración de calendario externo"
+    },
+    "description": {
+      "nl": "Leer hoe je je Tesoro kalender exporteert naar andere kalender apps zoals Outlook, Apple Calendar en meer via iCal feeds en export functies.",
+      "en": "Learn how to export your Tesoro calendar to other calendar apps like Outlook, Apple Calendar, and more via iCal feeds and export functions.",
+      "es": "Aprende a exportar tu calendario de Tesoro a otras aplicaciones de calendario como Outlook, Apple Calendar y más mediante feeds iCal y funciones de exportación."
+    },
+    "icon": "import_export"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Hoewel Tesoro een krachtig ingebouwd kalendersysteem heeft, begrijpen we dat je mogelijk je afspraken wilt zien in je favoriete kalender app. Of je nu Outlook gebruikt voor zakelijke integratie, Apple Calendar voor je iPhone, of een andere kalender app, Tesoro maakt het eenvoudig om je agenda te synchroniseren via standaard iCal formaten. Deze gids laat je zien hoe je je Tesoro kalender exporteert en synchroniseert met externe systemen.",
+        "en": "While Tesoro has a powerful built-in calendar system, we understand you may want to see your appointments in your favorite calendar app. Whether you use Outlook for business integration, Apple Calendar for your iPhone, or another calendar app, Tesoro makes it easy to sync your schedule via standard iCal formats. This guide will show you how to export and sync your Tesoro calendar with external systems.",
+        "es": "Aunque Tesoro tiene un poderoso sistema de calendario incorporado, entendemos que es posible que quieras ver tus citas en tu aplicación de calendario favorita. Ya sea que uses Outlook para integración empresarial, Apple Calendar para tu iPhone u otra aplicación de calendario, Tesoro facilita sincronizar tu agenda mediante formatos iCal estándar. Esta guía te mostrará cómo exportar y sincronizar tu calendario de Tesoro con sistemas externos."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "google-note",
+      "variant": "info",
+      "title": {
+        "nl": "Google Agenda gebruikers",
+        "en": "Google Calendar Users",
+        "es": "Usuarios de Google Calendar"
+      },
+      "content": {
+        "nl": "Als je Google Agenda gebruikt, raden we de native Google Agenda integratie aan in plaats van iCal export. De native integratie biedt bidirectionele synchronisatie en betere functionaliteit. Zie ons artikel 'Google Agenda synchronisatie instellen' voor meer informatie.",
+        "en": "If you use Google Calendar, we recommend the native Google Calendar integration instead of iCal export. The native integration offers bidirectional sync and better functionality. See our article 'Setting up Google Calendar sync' for details.",
+        "es": "Si usas Google Calendar, recomendamos la integración nativa de Google Calendar en lugar de la exportación iCal. La integración nativa ofrece sincronización bidireccional y mejor funcionalidad. Consulta nuestro artículo 'Configurar sincronización de Google Calendar' para más detalles."
+      }
+    },
+    {
+      "type": "text",
+      "id": "ical-explained",
+      "title": {
+        "nl": "Wat is iCal?",
+        "en": "What Is iCal?",
+        "es": "¿Qué es iCal?"
+      },
+      "content": {
+        "nl": "iCal (iCalendar) is een universeel standaard formaat voor het delen van kalendergegevens. Het werkt met bijna elke moderne kalender applicatie: Microsoft Outlook, Apple Calendar, Mozilla Thunderbird, en honderden anderen. Er zijn twee manieren om iCal te gebruiken met Tesoro: Eenmalige export (download een .ics bestand) en Live feed (continu synchroniserende URL). We behandelen beide methoden.",
+        "en": "iCal (iCalendar) is a universal standard format for sharing calendar data. It works with almost every modern calendar application: Microsoft Outlook, Apple Calendar, Mozilla Thunderbird, and hundreds of others. There are two ways to use iCal with Tesoro: One-time export (download a .ics file) and Live feed (continuously syncing URL). We'll cover both methods.",
+        "es": "iCal (iCalendar) es un formato estándar universal para compartir datos de calendario. Funciona con casi todas las aplicaciones de calendario modernas: Microsoft Outlook, Apple Calendar, Mozilla Thunderbird y cientos de otras. Hay dos formas de usar iCal con Tesoro: Exportación única (descargar un archivo .ics) y Feed en vivo (URL de sincronización continua). Cubriremos ambos métodos."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "onetime-export",
+      "title": {
+        "nl": "Eenmalige export",
+        "en": "One-Time Export",
+        "es": "Exportación única"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Export je kalender",
+            "en": "Export Your Calendar",
+            "es": "Exportar tu calendario"
+          },
+          "description": {
+            "nl": "Ga naar Kalender > Meer opties (drie stippen) > Export kalender. Kies je datumbereik (deze maand, dit kwartaal, dit jaar, of aangepast). Selecteer welke evenementtypen je wilt exporteren (alle, alleen bezichtigingen, alleen vergaderingen). Klik op 'Download .ics bestand'. Dit bestand bevat al je geselecteerde evenementen in een standaard formaat.",
+            "en": "Go to Calendar > More options (three dots) > Export calendar. Choose your date range (this month, this quarter, this year, or custom). Select which event types you want to export (all, only viewings, only meetings). Click 'Download .ics file'. This file contains all your selected events in a standard format.",
+            "es": "Ve a Calendario > Más opciones (tres puntos) > Exportar calendario. Elige tu rango de fechas (este mes, este trimestre, este año o personalizado). Selecciona qué tipos de eventos quieres exportar (todos, solo visitas, solo reuniones). Haz clic en 'Descargar archivo .ics'. Este archivo contiene todos tus eventos seleccionados en un formato estándar."
+          }
+        },
+        {
+          "title": {
+            "nl": "Importeer in Outlook",
+            "en": "Import into Outlook",
+            "es": "Importar en Outlook"
+          },
+          "description": {
+            "nl": "Open Microsoft Outlook. Ga naar Bestand > Openen en Exporteren > Kalender importeren. Blader naar het gedownloade .ics bestand en selecteer het. Kies of je de evenementen wilt toevoegen aan een bestaande kalender of een nieuwe maken. Klik op 'Importeren'. Alle Tesoro evenementen verschijnen nu in Outlook.",
+            "en": "Open Microsoft Outlook. Go to File > Open & Export > Import Calendar. Browse to the downloaded .ics file and select it. Choose whether to add the events to an existing calendar or create a new one. Click 'Import'. All Tesoro events now appear in Outlook.",
+            "es": "Abre Microsoft Outlook. Ve a Archivo > Abrir y Exportar > Importar calendario. Navega al archivo .ics descargado y selecciónalo. Elige si agregar los eventos a un calendario existente o crear uno nuevo. Haz clic en 'Importar'. Todos los eventos de Tesoro ahora aparecen en Outlook."
+          }
+        },
+        {
+          "title": {
+            "nl": "Importeer in Apple Calendar",
+            "en": "Import into Apple Calendar",
+            "es": "Importar en Apple Calendar"
+          },
+          "description": {
+            "nl": "Op Mac: dubbelklik op het gedownloade .ics bestand en het opent automatisch in Apple Calendar. Kies in welke kalender je de evenementen wilt importeren. Klik op 'OK'. Op iPhone/iPad: open het .ics bestand vanuit Mail of Bestanden, tik op 'Toevoegen' om te importeren in je standaard kalender.",
+            "en": "On Mac: double-click the downloaded .ics file and it automatically opens in Apple Calendar. Choose which calendar you want to import the events into. Click 'OK'. On iPhone/iPad: open the .ics file from Mail or Files, tap 'Add' to import into your default calendar.",
+            "es": "En Mac: haz doble clic en el archivo .ics descargado y se abre automáticamente en Apple Calendar. Elige en qué calendario quieres importar los eventos. Haz clic en 'OK'. En iPhone/iPad: abre el archivo .ics desde Mail o Archivos, toca 'Agregar' para importar en tu calendario predeterminado."
+          }
+        },
+        {
+          "title": {
+            "nl": "Beperkingen van eenmalige export",
+            "en": "Limitations of One-Time Export",
+            "es": "Limitaciones de exportación única"
+          },
+          "description": {
+            "nl": "Belangrijk: eenmalige export is een momentopname. Wijzigingen die je later maakt in Tesoro verschijnen niet automatisch in je externe kalender. Je moet opnieuw exporteren en importeren om updates te krijgen. Voor continue synchronisatie, gebruik in plaats daarvan een live feed (zie volgende sectie).",
+            "en": "Important: one-time export is a snapshot. Changes you make later in Tesoro don't automatically appear in your external calendar. You need to export and import again to get updates. For continuous sync, use a live feed instead (see next section).",
+            "es": "Importante: la exportación única es una instantánea. Los cambios que hagas más tarde en Tesoro no aparecen automáticamente en tu calendario externo. Necesitas exportar e importar nuevamente para obtener actualizaciones. Para sincronización continua, usa un feed en vivo en su lugar (ver siguiente sección)."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "live-feed",
+      "title": {
+        "nl": "Live iCal feed instellen",
+        "en": "Setting Up Live iCal Feed",
+        "es": "Configurar feed iCal en vivo"
+      },
+      "content": {
+        "nl": "Een live iCal feed is een speciale URL die automatisch je nieuwste Tesoro evenementen toont. Wanneer je een evenement toevoegt, wijzigt of verwijdert in Tesoro, wordt de wijziging automatisch weerspiegeld in je externe kalender binnen enkele uren. Dit is de aanbevolen methode voor continue synchronisatie.",
+        "en": "A live iCal feed is a special URL that automatically shows your latest Tesoro events. When you add, modify, or delete an event in Tesoro, the change is automatically reflected in your external calendar within a few hours. This is the recommended method for continuous sync.",
+        "es": "Un feed iCal en vivo es una URL especial que muestra automáticamente tus últimos eventos de Tesoro. Cuando agregas, modificas o eliminas un evento en Tesoro, el cambio se refleja automáticamente en tu calendario externo en unas pocas horas. Este es el método recomendado para sincronización continua."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "feed-setup",
+      "title": {
+        "nl": "Feed configuratie",
+        "en": "Feed Configuration",
+        "es": "Configuración de feed"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Genereer je persoonlijke feed URL",
+            "en": "Generate Your Personal Feed URL",
+            "es": "Generar tu URL de feed personal"
+          },
+          "description": {
+            "nl": "Ga naar Instellingen > Kalender > iCal feeds. Klik op 'Nieuwe feed aanmaken'. Kies wat je wilt delen: Alle evenementen (volledige kalender), Alleen bezichtigingen (voor collega's of assistenten), Alleen vergaderingen, Of aangepaste filter. Klik op 'Feed aanmaken'. Tesoro genereert een unieke, privé URL. Kopieer deze URL - dit is je feed link.",
+            "en": "Go to Settings > Calendar > iCal feeds. Click 'Create new feed'. Choose what you want to share: All events (full calendar), Only viewings (for colleagues or assistants), Only meetings, Or custom filter. Click 'Create feed'. Tesoro generates a unique, private URL. Copy this URL - this is your feed link.",
+            "es": "Ve a Configuración > Calendario > Feeds iCal. Haz clic en 'Crear nuevo feed'. Elige qué quieres compartir: Todos los eventos (calendario completo), Solo visitas (para colegas o asistentes), Solo reuniones, O filtro personalizado. Haz clic en 'Crear feed'. Tesoro genera una URL única y privada. Copia esta URL - este es tu enlace de feed."
+          }
+        },
+        {
+          "title": {
+            "nl": "Abonneren in Outlook",
+            "en": "Subscribe in Outlook",
+            "es": "Suscribirse en Outlook"
+          },
+          "description": {
+            "nl": "Open Outlook. Ga naar Bestand > Accountinstellingen > Accountinstellingen > Internet kalenders tab. Klik op 'Nieuw'. Plak je Tesoro feed URL. Klik op 'Toevoegen'. Geef de kalender een naam (bijvoorbeeld 'Tesoro - Bezichtigingen'). Klik op 'OK'. Outlook zal nu automatisch synchroniseren met je Tesoro kalender elke paar uur.",
+            "en": "Open Outlook. Go to File > Account Settings > Account Settings > Internet Calendars tab. Click 'New'. Paste your Tesoro feed URL. Click 'Add'. Give the calendar a name (for example, 'Tesoro - Viewings'). Click 'OK'. Outlook will now automatically sync with your Tesoro calendar every few hours.",
+            "es": "Abre Outlook. Ve a Archivo > Configuración de cuenta > Configuración de cuenta > pestaña Calendarios de Internet. Haz clic en 'Nuevo'. Pega tu URL de feed de Tesoro. Haz clic en 'Agregar'. Dale un nombre al calendario (por ejemplo, 'Tesoro - Visitas'). Haz clic en 'OK'. Outlook ahora se sincronizará automáticamente con tu calendario de Tesoro cada pocas horas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Abonneren in Apple Calendar",
+            "en": "Subscribe in Apple Calendar",
+            "es": "Suscribirse en Apple Calendar"
+          },
+          "description": {
+            "nl": "Open Apple Calendar. Ga naar Bestand > Nieuw kalenderabonnement (of Cmd+Shift+S). Plak je Tesoro feed URL. Klik op 'Abonneren'. Kies een naam en kleur voor de kalender. Stel vernieuwingsfrequentie in (aanbevolen: elk uur). Klik op 'OK'. Je Tesoro evenementen verschijnen nu in Apple Calendar en synchroniseren automatisch.",
+            "en": "Open Apple Calendar. Go to File > New Calendar Subscription (or Cmd+Shift+S). Paste your Tesoro feed URL. Click 'Subscribe'. Choose a name and color for the calendar. Set refresh frequency (recommended: every hour). Click 'OK'. Your Tesoro events now appear in Apple Calendar and sync automatically.",
+            "es": "Abre Apple Calendar. Ve a Archivo > Nueva suscripción de calendario (o Cmd+Shift+S). Pega tu URL de feed de Tesoro. Haz clic en 'Suscribirse'. Elige un nombre y color para el calendario. Establece frecuencia de actualización (recomendado: cada hora). Haz clic en 'OK'. Tus eventos de Tesoro ahora aparecen en Apple Calendar y se sincronizan automáticamente."
+          }
+        },
+        {
+          "title": {
+            "nl": "Synchronisatie op mobiele apparaten",
+            "en": "Sync on Mobile Devices",
+            "es": "Sincronizar en dispositivos móviles"
+          },
+          "description": {
+            "nl": "Als je je iCal feed hebt ingesteld in Outlook of Apple Calendar op je computer, synchroniseert het automatisch naar je mobiele apparaten als je hetzelfde account gebruikt. Voor directe mobiele setup: op iPhone/iPad ga je naar Instellingen > Kalender > Accounts > Account toevoegen > Andere > Kalenderabonnement toevoegen, en plak de feed URL.",
+            "en": "If you've set up your iCal feed in Outlook or Apple Calendar on your computer, it automatically syncs to your mobile devices if you use the same account. For direct mobile setup: on iPhone/iPad, go to Settings > Calendar > Accounts > Add Account > Other > Add Subscribed Calendar, and paste the feed URL.",
+            "es": "Si has configurado tu feed iCal en Outlook o Apple Calendar en tu computadora, se sincroniza automáticamente con tus dispositivos móviles si usas la misma cuenta. Para configuración móvil directa: en iPhone/iPad, ve a Configuración > Calendario > Cuentas > Agregar cuenta > Otro > Agregar calendario suscrito, y pega la URL del feed."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "security-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Beveiligingswaarschuwing",
+        "en": "Security Warning",
+        "es": "Advertencia de seguridad"
+      },
+      "content": {
+        "nl": "Je feed URL is privé en persoonlijk - iedereen met deze URL kan je kalender bekijken. Deel deze nooit publiekelijk. Als je denkt dat je URL gecompromitteerd is, ga dan naar Instellingen > iCal feeds en klik op 'Feed opnieuw genereren'. Dit creëert een nieuwe URL en maakt de oude ongeldig.",
+        "en": "Your feed URL is private and personal - anyone with this URL can view your calendar. Never share it publicly. If you think your URL has been compromised, go to Settings > iCal feeds and click 'Regenerate feed'. This creates a new URL and invalidates the old one.",
+        "es": "Tu URL de feed es privada y personal - cualquiera con esta URL puede ver tu calendario. Nunca la compartas públicamente. Si crees que tu URL ha sido comprometida, ve a Configuración > Feeds iCal y haz clic en 'Regenerar feed'. Esto crea una nueva URL e invalida la antigua."
+      }
+    },
+    {
+      "type": "text",
+      "id": "understanding-sync",
+      "title": {
+        "nl": "Synchronisatie begrijpen",
+        "en": "Understanding Sync",
+        "es": "Comprender la sincronización"
+      },
+      "content": {
+        "nl": "iCal feeds zijn één-richtings: van Tesoro naar je externe kalender. Wijzigingen die je maakt in je externe kalender worden niet teruggesynchroniseerd naar Tesoro. Dit is een belangrijk verschil met native integraties zoals Google Agenda.",
+        "en": "iCal feeds are one-way: from Tesoro to your external calendar. Changes you make in your external calendar don't sync back to Tesoro. This is an important difference from native integrations like Google Calendar.",
+        "es": "Los feeds iCal son unidireccionales: de Tesoro a tu calendario externo. Los cambios que hagas en tu calendario externo no se sincronizan de vuelta a Tesoro. Esta es una diferencia importante con integraciones nativas como Google Calendar."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "sync-behavior",
+      "title": {
+        "nl": "Synchronisatie gedrag",
+        "en": "Sync Behavior",
+        "es": "Comportamiento de sincronización"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Hoe vaak synchroniseert het?",
+            "en": "How Often Does It Sync?",
+            "es": "¿Con qué frecuencia se sincroniza?"
+          },
+          "description": {
+            "nl": "Tesoro update de feed onmiddellijk wanneer je een evenement wijzigt. Je externe kalender controleert de feed op een eigen schema: Outlook: elke 3 uur standaard (configureerbaar), Apple Calendar: elke uur standaard (configureerbaar), Andere apps: varieert. Je kunt meestal handmatig forceren om te verversen in je kalender app.",
+            "en": "Tesoro updates the feed immediately when you change an event. Your external calendar checks the feed on its own schedule: Outlook: every 3 hours by default (configurable), Apple Calendar: every hour by default (configurable), Other apps: varies. You can usually manually force refresh in your calendar app.",
+            "es": "Tesoro actualiza el feed inmediatamente cuando cambias un evento. Tu calendario externo verifica el feed en su propio horario: Outlook: cada 3 horas por defecto (configurable), Apple Calendar: cada hora por defecto (configurable), Otras aplicaciones: varía. Usualmente puedes forzar manualmente la actualización en tu aplicación de calendario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Wat wordt gesynchroniseerd?",
+            "en": "What Gets Synced?",
+            "es": "¿Qué se sincroniza?"
+          },
+          "description": {
+            "nl": "De feed bevat: evenementtitel, datum en tijd, locatie (adres), beschrijving (aangepast op basis van je privacy instellingen), deelnemerslijst (optioneel). Niet gesynchroniseerd: privé notities, interne tags, gekoppelde deals/contacten (tenzij je kiest om deze te delen), bijlagen.",
+            "en": "The feed contains: event title, date and time, location (address), description (adjusted based on your privacy settings), attendee list (optional). Not synced: private notes, internal tags, linked deals/contacts (unless you choose to share them), attachments.",
+            "es": "El feed contiene: título del evento, fecha y hora, ubicación (dirección), descripción (ajustada según tu configuración de privacidad), lista de asistentes (opcional). No sincronizado: notas privadas, etiquetas internas, negocios/contactos vinculados (a menos que elijas compartirlos), adjuntos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Lees-alleen status",
+            "en": "Read-Only Status",
+            "es": "Estado de solo lectura"
+          },
+          "description": {
+            "nl": "Evenementen van je iCal feed verschijnen als lees-alleen in je externe kalender. Je kunt ze niet bewerken - wijzigingen moeten in Tesoro worden gemaakt. Sommige kalender apps tonen een slotje icoon om aan te geven dat evenementen lees-alleen zijn. Dit voorkomt per ongeluk wijzigingen die verloren gaan.",
+            "en": "Events from your iCal feed appear as read-only in your external calendar. You can't edit them - changes must be made in Tesoro. Some calendar apps show a lock icon to indicate events are read-only. This prevents accidental changes that would be lost.",
+            "es": "Los eventos de tu feed iCal aparecen como solo lectura en tu calendario externo. No puedes editarlos - los cambios deben hacerse en Tesoro. Algunas aplicaciones de calendario muestran un icono de candado para indicar que los eventos son de solo lectura. Esto previene cambios accidentales que se perderían."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verwijderde evenementen",
+            "en": "Deleted Events",
+            "es": "Eventos eliminados"
+          },
+          "description": {
+            "nl": "Wanneer je een evenement verwijdert in Tesoro, verdwijnt het uit je externe kalender bij de volgende synchronisatie. Er is geen waarschuwing - het evenement wordt gewoon verwijderd. Dit is normaal gedrag voor iCal feeds.",
+            "en": "When you delete an event in Tesoro, it disappears from your external calendar on the next sync. There's no warning - the event is simply removed. This is normal behavior for iCal feeds.",
+            "es": "Cuando eliminas un evento en Tesoro, desaparece de tu calendario externo en la siguiente sincronización. No hay advertencia - el evento simplemente se elimina. Este es el comportamiento normal para feeds iCal."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "troubleshooting-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Probleemoplossing",
+        "en": "Troubleshooting",
+        "es": "Solución de problemas"
+      },
+      "content": {
+        "nl": "Als je feed niet synchroniseert: Controleer of de feed URL correct is (kopieer opnieuw vanuit Tesoro), Forceer handmatige verversing in je kalender app, Controleer je internetverbinding, Wacht minimaal 1 uur (sommige apps hebben vertraging), Als niks werkt: verwijder het abonnement en voeg opnieuw toe. Voor persistente problemen, genereer een nieuwe feed URL.",
+        "en": "If your feed isn't syncing: Check if the feed URL is correct (copy again from Tesoro), Force manual refresh in your calendar app, Check your internet connection, Wait at least 1 hour (some apps have delay), If nothing works: remove the subscription and add again. For persistent issues, generate a new feed URL.",
+        "es": "Si tu feed no se sincroniza: Verifica si la URL del feed es correcta (copia nuevamente desde Tesoro), Fuerza actualización manual en tu aplicación de calendario, Verifica tu conexión a internet, Espera al menos 1 hora (algunas aplicaciones tienen retraso), Si nada funciona: elimina la suscripción y agrégala nuevamente. Para problemas persistentes, genera una nueva URL de feed."
+      }
+    },
+    {
+      "type": "text",
+      "id": "multiple-feeds",
+      "title": {
+        "nl": "Meerdere feeds beheren",
+        "en": "Managing Multiple Feeds",
+        "es": "Gestionar múltiples feeds"
+      },
+      "content": {
+        "nl": "Je kunt meerdere iCal feeds aanmaken voor verschillende doeleinden. Dit is handig voor het delen van specifieke delen van je kalender met verschillende mensen.",
+        "en": "You can create multiple iCal feeds for different purposes. This is useful for sharing specific parts of your calendar with different people.",
+        "es": "Puedes crear múltiples feeds iCal para diferentes propósitos. Esto es útil para compartir partes específicas de tu calendario con diferentes personas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "multiple-feeds-use",
+      "title": {
+        "nl": "Meerdere feeds gebruik cases",
+        "en": "Multiple Feeds Use Cases",
+        "es": "Casos de uso de múltiples feeds"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Persoonlijke en werk kalenders",
+            "en": "Personal and Work Calendars",
+            "es": "Calendarios personales y de trabajo"
+          },
+          "description": {
+            "nl": "Maak twee feeds: één met alleen zakelijke afspraken (bezichtigingen, vergaderingen) die je synchroniseert naar je werk Outlook, en één met alle afspraken (inclusief persoonlijke blokkeertijd) die je synchroniseert naar je persoonlijke Apple Calendar. Dit houdt werk en privé gescheiden terwijl je overal je complete schema ziet.",
+            "en": "Create two feeds: one with only business appointments (viewings, meetings) that you sync to your work Outlook, and one with all appointments (including personal blocked time) that you sync to your personal Apple Calendar. This keeps work and personal separate while seeing your complete schedule everywhere.",
+            "es": "Crea dos feeds: uno con solo citas de negocios (visitas, reuniones) que sincronizas con tu Outlook de trabajo, y uno con todas las citas (incluyendo tiempo bloqueado personal) que sincronizas con tu Apple Calendar personal. Esto mantiene trabajo y personal separados mientras ves tu agenda completa en todas partes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Delen met assistenten",
+            "en": "Sharing With Assistants",
+            "es": "Compartir con asistentes"
+          },
+          "description": {
+            "nl": "Maak een feed met alleen je beschikbaarheid (bezet/vrij status) zonder details, en deel deze met je assistent. Ze kunnen zien wanneer je beschikbaar bent om nieuwe afspraken te plannen, maar zien geen gevoelige klantinformatie. Perfect voor het delegeren van planning zonder privacy in te leveren.",
+            "en": "Create a feed with only your availability (busy/free status) without details, and share it with your assistant. They can see when you're available to schedule new appointments, but don't see sensitive client information. Perfect for delegating scheduling without sacrificing privacy.",
+            "es": "Crea un feed con solo tu disponibilidad (estado ocupado/libre) sin detalles, y compártelo con tu asistente. Pueden ver cuándo estás disponible para programar nuevas citas, pero no ven información sensible del cliente. Perfecto para delegar programación sin sacrificar privacidad."
+          }
+        },
+        {
+          "title": {
+            "nl": "Team coördinatie",
+            "en": "Team Coordination",
+            "es": "Coordinación de equipo"
+          },
+          "description": {
+            "nl": "Maak een feed met alleen open huis evenementen en deel deze met je team. Iedereen kan zien wanneer open huizen zijn gepland zonder toegang te hebben tot je volledige kalender. Dit helpt bij het vermijden van conflicterende evenementen en het coördineren van team support.",
+            "en": "Create a feed with only open house events and share it with your team. Everyone can see when open houses are scheduled without having access to your full calendar. This helps avoid conflicting events and coordinate team support.",
+            "es": "Crea un feed con solo eventos de casa abierta y compártelo con tu equipo. Todos pueden ver cuándo están programadas las casas abiertas sin tener acceso a tu calendario completo. Esto ayuda a evitar eventos conflictivos y coordinar el apoyo del equipo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Wat is het verschil tussen iCal en Google Agenda integratie?",
+            "en": "What's the difference between iCal and Google Calendar integration?",
+            "es": "¿Cuál es la diferencia entre iCal e integración de Google Calendar?"
+          },
+          "answer": {
+            "nl": "Google Agenda integratie is bidirectioneel (wijzigingen synchroniseren in beide richtingen) en realtime. iCal is één-richting (alleen van Tesoro naar je kalender) en synchroniseert elke paar uur. Google Agenda is beter als je het gebruikt. iCal is goed voor Outlook, Apple Calendar, en andere apps, of als je een simpelere één-richtings synchronisatie wilt.",
+            "en": "Google Calendar integration is bidirectional (changes sync both ways) and real-time. iCal is one-way (only from Tesoro to your calendar) and syncs every few hours. Google Calendar is better if you use it. iCal is good for Outlook, Apple Calendar, and other apps, or if you want simpler one-way sync.",
+            "es": "La integración de Google Calendar es bidireccional (los cambios se sincronizan en ambas direcciones) y en tiempo real. iCal es unidireccional (solo de Tesoro a tu calendario) y se sincroniza cada pocas horas. Google Calendar es mejor si lo usas. iCal es bueno para Outlook, Apple Calendar y otras aplicaciones, o si quieres una sincronización unidireccional más simple."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik iCal gebruiken met meerdere apparaten?",
+            "en": "Can I use iCal with multiple devices?",
+            "es": "¿Puedo usar iCal con múltiples dispositivos?"
+          },
+          "answer": {
+            "nl": "Ja! Als je dezelfde kalender app gebruikt op meerdere apparaten (bijvoorbeeld Outlook op werk computer en laptop, of Apple Calendar op Mac en iPhone), zal de iCal feed automatisch synchroniseren naar alle apparaten. Je hoeft de feed maar één keer in te stellen en het werkt overal waar je die kalender app gebruikt.",
+            "en": "Yes! If you use the same calendar app on multiple devices (for example, Outlook on work computer and laptop, or Apple Calendar on Mac and iPhone), the iCal feed will automatically sync to all devices. You only need to set up the feed once and it works everywhere you use that calendar app.",
+            "es": "¡Sí! Si usas la misma aplicación de calendario en múltiples dispositivos (por ejemplo, Outlook en computadora de trabajo y portátil, o Apple Calendar en Mac e iPhone), el feed iCal se sincronizará automáticamente con todos los dispositivos. Solo necesitas configurar el feed una vez y funciona en todas partes donde uses esa aplicación de calendario."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er als ik mijn Tesoro abonnement opzeg?",
+            "en": "What happens if I cancel my Tesoro subscription?",
+            "es": "¿Qué pasa si cancelo mi suscripción de Tesoro?"
+          },
+          "answer": {
+            "nl": "Als je je Tesoro abonnement opzegt, stoppen je iCal feeds met werken. Evenementen die al gesynchroniseerd zijn naar je externe kalender blijven daar staan (als historische records), maar er komen geen nieuwe updates meer. Als je later opnieuw abonneert, kun je nieuwe feeds aanmaken.",
+            "en": "If you cancel your Tesoro subscription, your iCal feeds stop working. Events that have already synced to your external calendar remain there (as historical records), but no new updates will come through. If you resubscribe later, you can create new feeds.",
+            "es": "Si cancelas tu suscripción de Tesoro, tus feeds iCal dejan de funcionar. Los eventos que ya se sincronizaron con tu calendario externo permanecen allí (como registros históricos), pero no llegarán nuevas actualizaciones. Si te vuelves a suscribir más tarde, puedes crear nuevos feeds."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik ervoor zorgen dat iCal sneller synchroniseert?",
+            "en": "Can I make iCal sync faster?",
+            "es": "¿Puedo hacer que iCal se sincronice más rápido?"
+          },
+          "answer": {
+            "nl": "De synchronisatiesnelheid wordt bepaald door je externe kalender app, niet door Tesoro. In de meeste apps kun je de vernieuwingsfrequentie aanpassen: in Outlook rechtsklik je op de geïmporteerde kalender > Eigenschappen > Vernieuwingsinterval. In Apple Calendar klik je op de kalender > Bewerken > Vernieuwing. Stel in op 'elk uur' of '15 minuten' voor snellere updates. Let op: frequentere synchronisatie gebruikt meer batterij op mobiele apparaten.",
+            "en": "Sync speed is determined by your external calendar app, not by Tesoro. In most apps, you can adjust the refresh frequency: in Outlook, right-click the imported calendar > Properties > Refresh interval. In Apple Calendar, click the calendar > Edit > Refresh. Set to 'every hour' or '15 minutes' for faster updates. Note: more frequent sync uses more battery on mobile devices.",
+            "es": "La velocidad de sincronización está determinada por tu aplicación de calendario externa, no por Tesoro. En la mayoría de las aplicaciones, puedes ajustar la frecuencia de actualización: en Outlook, haz clic derecho en el calendario importado > Propiedades > Intervalo de actualización. En Apple Calendar, haz clic en el calendario > Editar > Actualizar. Configura en 'cada hora' o '15 minutos' para actualizaciones más rápidas. Nota: la sincronización más frecuente usa más batería en dispositivos móviles."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "google-calendar-sync-setup",
+    "calendar-overview-guide",
+    "email-integration-setup",
+    "mobile-app-setup"
+  ]
+}

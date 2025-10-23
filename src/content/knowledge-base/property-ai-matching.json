@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "id": "property-ai-matching",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T17:30:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "advanced",
+    "tags": ["properties", "ai", "matching", "algorithm", "leads", "automation"],
+    "featured": true,
+    "readingTime": 12,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop",
+    "keywords": ["AI matching", "property matching", "lead matching", "algorithm", "smart matching", "automated matching"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "AI-powered property matching in Tesoro CRM",
+      "en": "AI-Powered Property Matching in Tesoro CRM",
+      "es": "Matching de propiedades con IA en Tesoro CRM"
+    },
+    "description": {
+      "nl": "Leer hoe Tesoro's AI matching algoritme werkt, hoe matching scores worden berekend en hoe je properties automatisch koppelt aan geschikte leads.",
+      "en": "Learn how Tesoro's AI matching algorithm works, how matching scores are calculated and how to automatically link properties to suitable leads.",
+      "es": "Aprende cómo funciona el algoritmo de matching con IA de Tesoro, cómo se calculan las puntuaciones de matching y cómo vincular automáticamente propiedades a leads adecuados."
+    },
+    "icon": "psychology"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "ai-matching-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Wat is AI-powered matching?",
+        "en": "What is AI-powered matching?",
+        "es": "¿Qué es el matching con IA?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro's AI matching algoritme analyseert properties en leads om automatisch de beste matches te vinden op basis van type, location, prijs, features en voorkeuren.</p><p><strong>Key benefits:</strong></p><ul><li>Bespaar uren tijd op handmatige property matching</li><li>Match score (0-100) toont compatibility</li><li>Automatic suggestions bij nieuwe leads</li><li>Real-time updates bij property changes</li><li>Learning algorithm verbetert met gebruik</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro's AI matching algorithm analyzes properties and leads to automatically find the best matches based on type, location, price, features and preferences.</p><p><strong>Key benefits:</strong></p><ul><li>Save hours of time on manual property matching</li><li>Match score (0-100) shows compatibility</li><li>Automatic suggestions for new leads</li><li>Real-time updates on property changes</li><li>Learning algorithm improves with use</li></ul>"
+        },
+        "es": {
+          "text": "<p>El algoritmo de matching con IA de Tesoro analiza propiedades y leads para encontrar automáticamente las mejores coincidencias basadas en tipo, ubicación, precio, características y preferencias.</p><p><strong>Beneficios clave:</strong></p><ul><li>Ahorra horas de tiempo en matching manual de propiedades</li><li>Puntuación de match (0-100) muestra compatibilidad</li><li>Sugerencias automáticas para leads nuevos</li><li>Actualizaciones en tiempo real en cambios de propiedades</li><li>El algoritmo de aprendizaje mejora con el uso</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "matching-criteria",
+      "title": {
+        "nl": "Matching criteria en weging",
+        "en": "Matching criteria and weighting",
+        "es": "Criterios de matching y ponderación"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Property type matching (30% weging)</h5><p>Type match is de belangrijkste factor:</p><ul><li><strong>Perfect match:</strong> Lead zoekt \"Apartment\" → Property is \"Apartment\" = 30 points</li><li><strong>Partial match:</strong> Lead zoekt \"House OR Apartment\" → Property is \"Apartment\" = 20 points</li><li><strong>No match:</strong> Lead zoekt \"House\" → Property is \"Land\" = 0 points</li></ul><h5>Location matching (25% weging)</h5><p>Geographic proximity en preferred areas:</p><ul><li><strong>Exact area match:</strong> Lead prefers \"Eixample, Barcelona\" → Property in \"Eixample\" = 25 points</li><li><strong>City match:</strong> Lead prefers \"Barcelona\" → Property in \"Barcelona\" (andere wijk) = 15 points</li><li><strong>Radius match:</strong> Lead accepts \"within 10km\" → Property 7km away = 10 points</li><li><strong>Region match:</strong> Lead prefers \"Catalonia\" → Property in region = 5 points</li></ul><h5>Price range matching (20% weging)</h5><p>Price compatibility met lead budget:</p><ul><li><strong>Perfect fit:</strong> Property price binnen lead's min-max range = 20 points</li><li><strong>Slightly above:</strong> Property 5-10% boven max budget = 10 points</li><li><strong>Slightly below:</strong> Property < min budget maar in area = 5 points</li><li><strong>Too expensive:</strong> Property > 20% boven budget = 0 points</li></ul><h5>Size matching (15% weging)</h5><ul><li><strong>Bedroom match:</strong> Lead wants \"3 bedrooms\" → Property heeft 3 = 8 points</li><li><strong>Bathroom match:</strong> Lead wants \"2 bathrooms\" → Property heeft 2 = 4 points</li><li><strong>Area match:</strong> Property m² binnen desired range = 3 points</li></ul><h5>Features matching (10% weging)</h5><p>Specific amenities en features:</p><ul><li>Lead wants \"Pool\" → Property heeft pool = +2 points</li><li>Lead wants \"Parking\" → Property heeft garage = +2 points</li><li>Lead wants \"Terrace\" → Property heeft terrace = +1 point</li><li>Multiple feature matches = cumulative points (max 10)</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Property type matching (30% weighting)</h5><p>Type match is the most important factor:</p><ul><li><strong>Perfect match:</strong> Lead searches \"Apartment\" → Property is \"Apartment\" = 30 points</li><li><strong>Partial match:</strong> Lead searches \"House OR Apartment\" → Property is \"Apartment\" = 20 points</li><li><strong>No match:</strong> Lead searches \"House\" → Property is \"Land\" = 0 points</li></ul><h5>Location matching (25% weighting)</h5><p>Geographic proximity and preferred areas:</p><ul><li><strong>Exact area match:</strong> Lead prefers \"Eixample, Barcelona\" → Property in \"Eixample\" = 25 points</li><li><strong>City match:</strong> Lead prefers \"Barcelona\" → Property in \"Barcelona\" (other district) = 15 points</li><li><strong>Radius match:</strong> Lead accepts \"within 10km\" → Property 7km away = 10 points</li><li><strong>Region match:</strong> Lead prefers \"Catalonia\" → Property in region = 5 points</li></ul><h5>Price range matching (20% weighting)</h5><p>Price compatibility with lead budget:</p><ul><li><strong>Perfect fit:</strong> Property price within lead's min-max range = 20 points</li><li><strong>Slightly above:</strong> Property 5-10% above max budget = 10 points</li><li><strong>Slightly below:</strong> Property < min budget but in area = 5 points</li><li><strong>Too expensive:</strong> Property > 20% above budget = 0 points</li></ul><h5>Size matching (15% weighting)</h5><ul><li><strong>Bedroom match:</strong> Lead wants \"3 bedrooms\" → Property has 3 = 8 points</li><li><strong>Bathroom match:</strong> Lead wants \"2 bathrooms\" → Property has 2 = 4 points</li><li><strong>Area match:</strong> Property m² within desired range = 3 points</li></ul><h5>Features matching (10% weighting)</h5><p>Specific amenities and features:</p><ul><li>Lead wants \"Pool\" → Property has pool = +2 points</li><li>Lead wants \"Parking\" → Property has garage = +2 points</li><li>Lead wants \"Terrace\" → Property has terrace = +1 point</li><li>Multiple feature matches = cumulative points (max 10)</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Matching de tipo de propiedad (30% ponderación)</h5><p>El match de tipo es el factor más importante:</p><ul><li><strong>Match perfecto:</strong> Lead busca \"Apartment\" → Propiedad es \"Apartment\" = 30 puntos</li><li><strong>Match parcial:</strong> Lead busca \"House OR Apartment\" → Propiedad es \"Apartment\" = 20 puntos</li><li><strong>Sin match:</strong> Lead busca \"House\" → Propiedad es \"Land\" = 0 puntos</li></ul><h5>Matching de ubicación (25% ponderación)</h5><p>Proximidad geográfica y áreas preferidas:</p><ul><li><strong>Match exacto de área:</strong> Lead prefiere \"Eixample, Barcelona\" → Propiedad en \"Eixample\" = 25 puntos</li><li><strong>Match de ciudad:</strong> Lead prefiere \"Barcelona\" → Propiedad en \"Barcelona\" (otro distrito) = 15 puntos</li><li><strong>Match de radio:</strong> Lead acepta \"dentro de 10km\" → Propiedad a 7km = 10 puntos</li><li><strong>Match de región:</strong> Lead prefiere \"Cataluña\" → Propiedad en región = 5 puntos</li></ul><h5>Matching de rango de precio (20% ponderación)</h5><p>Compatibilidad de precio con presupuesto de lead:</p><ul><li><strong>Ajuste perfecto:</strong> Precio de propiedad dentro del rango mín-máx del lead = 20 puntos</li><li><strong>Ligeramente por encima:</strong> Propiedad 5-10% por encima del presupuesto máx = 10 puntos</li><li><strong>Ligeramente por debajo:</strong> Propiedad < presupuesto mín pero en área = 5 puntos</li><li><strong>Demasiado cara:</strong> Propiedad > 20% por encima del presupuesto = 0 puntos</li></ul><h5>Matching de tamaño (15% ponderación)</h5><ul><li><strong>Match de dormitorios:</strong> Lead quiere \"3 dormitorios\" → Propiedad tiene 3 = 8 puntos</li><li><strong>Match de baños:</strong> Lead quiere \"2 baños\" → Propiedad tiene 2 = 4 puntos</li><li><strong>Match de área:</strong> m² de propiedad dentro del rango deseado = 3 puntos</li></ul><h5>Matching de características (10% ponderación)</h5><p>Amenidades y características específicas:</p><ul><li>Lead quiere \"Piscina\" → Propiedad tiene piscina = +2 puntos</li><li>Lead quiere \"Estacionamiento\" → Propiedad tiene garaje = +2 puntos</li><li>Lead quiere \"Terraza\" → Propiedad tiene terraza = +1 punto</li><li>Múltiples matches de características = puntos acumulativos (máx. 10)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "match-score-calculation",
+      "title": {
+        "nl": "Match score berekening",
+        "en": "Match score calculation",
+        "es": "Cálculo de puntuación de match"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Score bereik en betekenis</h5><p>Match scores worden berekend op schaal van 0-100:</p><ul><li><strong>90-100 (Excellent match):</strong> Perfect match op alle criteria - highly recommend</li><li><strong>75-89 (Good match):</strong> Matches op most criteria - worth showing</li><li><strong>60-74 (Fair match):</strong> Partial match - consider showing if limited options</li><li><strong>40-59 (Poor match):</strong> Weak match - only show if buyer flexible</li><li><strong>0-39 (No match):</strong> Not suitable - don't recommend</li></ul><h5>Real-world examples</h5><p><strong>Example 1: Excellent match (Score: 95)</strong></p><ul><li>Lead wants: 3-bed apartment, Eixample Barcelona, €300-350k, pool preferred</li><li>Property: 3-bed apartment, Eixample, €320k, pool + parking<ul><li>Type match: 30 points ✓</li><li>Location match: 25 points ✓ (exact area)</li><li>Price match: 20 points ✓ (within range)</li><li>Bedroom match: 8 points ✓</li><li>Pool match: 2 points ✓</li><li>Bonus parking: +2 points</li><li>Total: 87 base + 8 bonus modifiers = 95</li></ul></li></ul><p><strong>Example 2: Fair match (Score: 68)</strong></p><ul><li>Lead wants: 2-bed house, Barcelona, €250-300k</li><li>Property: 2-bed apartment, Barcelona (different area), €280k<ul><li>Type mismatch: 0 points ✗ (house vs apartment)</li><li>Location partial: 15 points (city match only)</li><li>Price match: 20 points ✓</li><li>Bedroom match: 8 points ✓</li><li>Total: 43 points → Adjusted to 68 (algorithm considers flexibility)</li></ul></li></ul>"
+        },
+        "en": {
+          "text": "<h5>Score range and meaning</h5><p>Match scores are calculated on a scale of 0-100:</p><ul><li><strong>90-100 (Excellent match):</strong> Perfect match on all criteria - highly recommend</li><li><strong>75-89 (Good match):</strong> Matches on most criteria - worth showing</li><li><strong>60-74 (Fair match):</strong> Partial match - consider showing if limited options</li><li><strong>40-59 (Poor match):</strong> Weak match - only show if buyer flexible</li><li><strong>0-39 (No match):</strong> Not suitable - don't recommend</li></ul><h5>Real-world examples</h5><p><strong>Example 1: Excellent match (Score: 95)</strong></p><ul><li>Lead wants: 3-bed apartment, Eixample Barcelona, €300-350k, pool preferred</li><li>Property: 3-bed apartment, Eixample, €320k, pool + parking<ul><li>Type match: 30 points ✓</li><li>Location match: 25 points ✓ (exact area)</li><li>Price match: 20 points ✓ (within range)</li><li>Bedroom match: 8 points ✓</li><li>Pool match: 2 points ✓</li><li>Bonus parking: +2 points</li><li>Total: 87 base + 8 bonus modifiers = 95</li></ul></li></ul><p><strong>Example 2: Fair match (Score: 68)</strong></p><ul><li>Lead wants: 2-bed house, Barcelona, €250-300k</li><li>Property: 2-bed apartment, Barcelona (different area), €280k<ul><li>Type mismatch: 0 points ✗ (house vs apartment)</li><li>Location partial: 15 points (city match only)</li><li>Price match: 20 points ✓</li><li>Bedroom match: 8 points ✓</li><li>Total: 43 points → Adjusted to 68 (algorithm considers flexibility)</li></ul></li></ul>"
+        },
+        "es": {
+          "text": "<h5>Rango de puntuación y significado</h5><p>Las puntuaciones de match se calculan en una escala de 0-100:</p><ul><li><strong>90-100 (Match excelente):</strong> Match perfecto en todos los criterios - altamente recomendado</li><li><strong>75-89 (Buen match):</strong> Hace match en la mayoría de criterios - vale la pena mostrar</li><li><strong>60-74 (Match regular):</strong> Match parcial - considera mostrar si hay opciones limitadas</li><li><strong>40-59 (Match pobre):</strong> Match débil - solo mostrar si el comprador es flexible</li><li><strong>0-39 (Sin match):</strong> No adecuado - no recomendar</li></ul><h5>Ejemplos del mundo real</h5><p><strong>Ejemplo 1: Match excelente (Puntuación: 95)</strong></p><ul><li>Lead quiere: apartamento 3-dorm, Eixample Barcelona, €300-350k, piscina preferida</li><li>Propiedad: apartamento 3-dorm, Eixample, €320k, piscina + estacionamiento<ul><li>Match de tipo: 30 puntos ✓</li><li>Match de ubicación: 25 puntos ✓ (área exacta)</li><li>Match de precio: 20 puntos ✓ (dentro del rango)</li><li>Match de dormitorios: 8 puntos ✓</li><li>Match de piscina: 2 puntos ✓</li><li>Bonus estacionamiento: +2 puntos</li><li>Total: 87 base + 8 modificadores bonus = 95</li></ul></li></ul><p><strong>Ejemplo 2: Match regular (Puntuación: 68)</strong></p><ul><li>Lead quiere: casa 2-dorm, Barcelona, €250-300k</li><li>Propiedad: apartamento 2-dorm, Barcelona (área diferente), €280k<ul><li>Tipo no hace match: 0 puntos ✗ (casa vs apartamento)</li><li>Ubicación parcial: 15 puntos (solo match de ciudad)</li><li>Match de precio: 20 puntos ✓</li><li>Match de dormitorios: 8 puntos ✓</li><li>Total: 43 puntos → Ajustado a 68 (algoritmo considera flexibilidad)</li></ul></li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "using-ai-matching",
+      "title": {
+        "nl": "AI matching gebruiken in workflow",
+        "en": "Using AI matching in workflow",
+        "es": "Usar matching con IA en flujo de trabajo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Automatic property suggestions</h5><p>Wanneer je een new lead aanmaakt of opent:</p><ol><li>Tesoro analyseert lead criteria automatisch</li><li>'Suggested Properties' tab toont top matches</li><li>Properties gesorteerd op match score (highest first)</li><li>Click op property → view details + match breakdown</li><li>Add property to deal met één click</li></ol><h5>Deal-based matching</h5><p>Voor existing deals kun je matching gebruiken:</p><ol><li>Open deal detail page</li><li>Click 'Find Matching Properties'</li><li>AI scant 1085+ properties voor beste matches</li><li>Results tonen match score + compatibility details</li><li>Filter results (price, location, type)</li><li>Add multiple properties to deal offers</li></ol><h5>Reverse matching (lead suggestions)</h5><p>Voor een property kun je matching leads vinden:</p><ol><li>Open property detail</li><li>Click 'Suggest Deals'</li><li>Tesoro toont leads die mogelijk interested zijn</li><li>Match score gebaseerd op lead preferences</li><li>Contact lead direct vanuit suggestions</li></ol><h5>Bulk matching</h5><p>Voor efficient workflow met multiple leads:</p><ul><li>Select multiple leads (checkbox)</li><li>Click 'Batch Match Properties'</li><li>Tesoro genereert suggestions voor alle selected leads</li><li>Export match results to CSV</li><li>Review en action systematically</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Automatic property suggestions</h5><p>When you create or open a new lead:</p><ol><li>Tesoro analyzes lead criteria automatically</li><li>'Suggested Properties' tab shows top matches</li><li>Properties sorted by match score (highest first)</li><li>Click on property → view details + match breakdown</li><li>Add property to deal with one click</li></ol><h5>Deal-based matching</h5><p>For existing deals you can use matching:</p><ol><li>Open deal detail page</li><li>Click 'Find Matching Properties'</li><li>AI scans 1085+ properties for best matches</li><li>Results show match score + compatibility details</li><li>Filter results (price, location, type)</li><li>Add multiple properties to deal offers</li></ol><h5>Reverse matching (lead suggestions)</h5><p>For a property you can find matching leads:</p><ol><li>Open property detail</li><li>Click 'Suggest Deals'</li><li>Tesoro shows leads that may be interested</li><li>Match score based on lead preferences</li><li>Contact lead directly from suggestions</li></ol><h5>Bulk matching</h5><p>For efficient workflow with multiple leads:</p><ul><li>Select multiple leads (checkbox)</li><li>Click 'Batch Match Properties'</li><li>Tesoro generates suggestions for all selected leads</li><li>Export match results to CSV</li><li>Review and action systematically</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Sugerencias automáticas de propiedades</h5><p>Cuando creas o abres un lead nuevo:</p><ol><li>Tesoro analiza criterios de lead automáticamente</li><li>La pestaña 'Propiedades Sugeridas' muestra los mejores matches</li><li>Propiedades ordenadas por puntuación de match (más alto primero)</li><li>Haz clic en propiedad → ve detalles + desglose de match</li><li>Añade propiedad al deal con un clic</li></ol><h5>Matching basado en deals</h5><p>Para deals existentes puedes usar matching:</p><ol><li>Abre página de detalle de deal</li><li>Haz clic en 'Encontrar Propiedades Matching'</li><li>La IA escanea 1085+ propiedades para mejores matches</li><li>Los resultados muestran puntuación de match + detalles de compatibilidad</li><li>Filtra resultados (precio, ubicación, tipo)</li><li>Añade múltiples propiedades a ofertas de deal</li></ol><h5>Matching inverso (sugerencias de leads)</h5><p>Para una propiedad puedes encontrar leads matching:</p><ol><li>Abre detalle de propiedad</li><li>Haz clic en 'Sugerir Deals'</li><li>Tesoro muestra leads que pueden estar interesados</li><li>Puntuación de match basada en preferencias de lead</li><li>Contacta lead directamente desde sugerencias</li></ol><h5>Matching en lote</h5><p>Para flujo de trabajo eficiente con múltiples leads:</p><ul><li>Selecciona múltiples leads (checkbox)</li><li>Haz clic en 'Matching de Propiedades en Lote'</li><li>Tesoro genera sugerencias para todos los leads seleccionados</li><li>Exporta resultados de match a CSV</li><li>Revisa y actúa sistemáticamente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "optimizing-matching",
+      "title": {
+        "nl": "Matching performance optimaliseren",
+        "en": "Optimizing matching performance",
+        "es": "Optimizar rendimiento de matching"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Improve match quality</h5><p>Voor betere AI matching results:</p><ul><li><strong>Complete lead data:</strong> Vul alle lead preferences in (type, location, budget, bedrooms, features)</li><li><strong>Accurate property data:</strong> Ensure properties hebben complete information</li><li><strong>Update regularly:</strong> Update lead preferences als they change</li><li><strong>Use specific locations:</strong> \"Eixample, Barcelona\" geeft betere matches dan \"Spain\"</li><li><strong>Define price ranges:</strong> Give realistic min/max budget</li></ul><h5>Feedback loop (learning algorithm)</h5><p>Tesoro's AI leert van je actions:</p><ul><li><strong>Property accepted:</strong> Wanneer je suggested property toevoegt aan deal → algoritme leert \"this was good match\"</li><li><strong>Property rejected:</strong> Wanneer je suggestion ignoreert → score voor similar properties daalt</li><li><strong>Deal closed:</strong> Successful deals train algorithm wat werkt</li></ul><p>Over tijd worden suggestions meer accurate voor jouw specific market.</p><h5>Custom weighting (advanced)</h5><p>Admins kunnen matching criteria weging aanpassen:</p><ol><li>Settings → AI Matching → Criteria Weights</li><li>Adjust percentages per criteria:<ul><li>Increase 'Location' weight voor location-focused market</li><li>Increase 'Price' weight voor budget-conscious buyers</li><li>Increase 'Features' voor luxury market (pool, views)</li></ul></li><li>Save en test met sample leads</li><li>Iterate tot optimal results</li></ol>"
+        },
+        "en": {
+          "text": "<h5>Improve match quality</h5><p>For better AI matching results:</p><ul><li><strong>Complete lead data:</strong> Fill in all lead preferences (type, location, budget, bedrooms, features)</li><li><strong>Accurate property data:</strong> Ensure properties have complete information</li><li><strong>Update regularly:</strong> Update lead preferences as they change</li><li><strong>Use specific locations:</strong> \"Eixample, Barcelona\" gives better matches than \"Spain\"</li><li><strong>Define price ranges:</strong> Give realistic min/max budget</li></ul><h5>Feedback loop (learning algorithm)</h5><p>Tesoro's AI learns from your actions:</p><ul><li><strong>Property accepted:</strong> When you add suggested property to deal → algorithm learns \"this was good match\"</li><li><strong>Property rejected:</strong> When you ignore suggestion → score for similar properties drops</li><li><strong>Deal closed:</strong> Successful deals train algorithm what works</li></ul><p>Over time suggestions become more accurate for your specific market.</p><h5>Custom weighting (advanced)</h5><p>Admins can adjust matching criteria weighting:</p><ol><li>Settings → AI Matching → Criteria Weights</li><li>Adjust percentages per criteria:<ul><li>Increase 'Location' weight for location-focused market</li><li>Increase 'Price' weight for budget-conscious buyers</li><li>Increase 'Features' for luxury market (pool, views)</li></ul></li><li>Save and test with sample leads</li><li>Iterate until optimal results</li></ol>"
+        },
+        "es": {
+          "text": "<h5>Mejorar calidad de match</h5><p>Para mejores resultados de matching con IA:</p><ul><li><strong>Datos completos de lead:</strong> Rellena todas las preferencias de lead (tipo, ubicación, presupuesto, dormitorios, características)</li><li><strong>Datos precisos de propiedad:</strong> Asegúrate de que las propiedades tienen información completa</li><li><strong>Actualiza regularmente:</strong> Actualiza preferencias de lead a medida que cambian</li><li><strong>Usa ubicaciones específicas:</strong> \"Eixample, Barcelona\" da mejores matches que \"España\"</li><li><strong>Define rangos de precio:</strong> Da presupuesto mín/máx realista</li></ul><h5>Bucle de retroalimentación (algoritmo de aprendizaje)</h5><p>La IA de Tesoro aprende de tus acciones:</p><ul><li><strong>Propiedad aceptada:</strong> Cuando añades propiedad sugerida al deal → el algoritmo aprende \"esto fue buen match\"</li><li><strong>Propiedad rechazada:</strong> Cuando ignoras sugerencia → la puntuación para propiedades similares baja</li><li><strong>Deal cerrado:</strong> Deals exitosos entrenan al algoritmo sobre qué funciona</li></ul><p>Con el tiempo las sugerencias se vuelven más precisas para tu mercado específico.</p><h5>Ponderación personalizada (avanzado)</h5><p>Los admins pueden ajustar la ponderación de criterios de matching:</p><ol><li>Configuración → Matching con IA → Pesos de Criterios</li><li>Ajusta porcentajes por criterio:<ul><li>Aumenta peso de 'Ubicación' para mercado enfocado en ubicación</li><li>Aumenta peso de 'Precio' para compradores conscientes del presupuesto</li><li>Aumenta 'Características' para mercado de lujo (piscina, vistas)</li></ul></li><li>Guarda y prueba con leads de muestra</li><li>Itera hasta resultados óptimos</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "matching-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Pro tips voor AI matching",
+        "en": "Pro tips for AI matching",
+        "es": "Consejos profesionales para matching con IA"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Maximale matching efficiency:</strong></p><ol><li><strong>Review suggestions daily:</strong> Check nieuwe matches elke ochtend - early response verhoogt conversion.</li><li><strong>Trust the algorithm:</strong> Properties met score > 80 zijn usually very relevant - don't ignore them.</li><li><strong>Track match success:</strong> Note welke match scores leiden tot closed deals - dit helpt threshold instellen.</li><li><strong>Use match breakdown:</strong> Click 'View Match Details' om exact te zien waarom score high/low is.</li><li><strong>Update lead flexibility:</strong> Als lead accepts different type/location, update preferences → betere future matches.</li><li><strong>Combine with manual selection:</strong> AI is powerful maar gebruik ook je eigen market knowledge.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Maximum matching efficiency:</strong></p><ol><li><strong>Review suggestions daily:</strong> Check new matches every morning - early response increases conversion.</li><li><strong>Trust the algorithm:</strong> Properties with score > 80 are usually very relevant - don't ignore them.</li><li><strong>Track match success:</strong> Note which match scores lead to closed deals - this helps set threshold.</li><li><strong>Use match breakdown:</strong> Click 'View Match Details' to see exactly why score is high/low.</li><li><strong>Update lead flexibility:</strong> If lead accepts different type/location, update preferences → better future matches.</li><li><strong>Combine with manual selection:</strong> AI is powerful but use your own market knowledge too.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Máxima eficiencia de matching:</strong></p><ol><li><strong>Revisa sugerencias diariamente:</strong> Verifica nuevos matches cada mañana - respuesta temprana aumenta conversión.</li><li><strong>Confía en el algoritmo:</strong> Propiedades con puntuación > 80 son usualmente muy relevantes - no las ignores.</li><li><strong>Rastrea éxito de match:</strong> Anota qué puntuaciones de match llevan a deals cerrados - esto ayuda a establecer umbral.</li><li><strong>Usa desglose de match:</strong> Haz clic en 'Ver Detalles de Match' para ver exactamente por qué la puntuación es alta/baja.</li><li><strong>Actualiza flexibilidad de lead:</strong> Si el lead acepta tipo/ubicación diferente, actualiza preferencias → mejores matches futuros.</li><li><strong>Combina con selección manual:</strong> La IA es poderosa pero usa también tu propio conocimiento del mercado.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "property-search-filters",
+    "adding-properties-guide",
+    "property-client-portal"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe vaak worden property suggestions updated voor leads?",
+        "en": "How often are property suggestions updated for leads?",
+        "es": "¿Con qué frecuencia se actualizan las sugerencias de propiedades para leads?"
+      },
+      "answer": {
+        "nl": "Property suggestions worden real-time updated wanneer: 1) Nieuwe property wordt toegevoegd die matcht, 2) Lead preferences worden gewijzigd, 3) Property price of status changes. Je ziet automatisch een notification badge op 'Suggested Properties' tab wanneer nieuwe matches beschikbaar zijn. De AI re-scant ook nightly voor optimale matches.",
+        "en": "Property suggestions are updated real-time when: 1) New property is added that matches, 2) Lead preferences are changed, 3) Property price or status changes. You automatically see a notification badge on 'Suggested Properties' tab when new matches are available. The AI also re-scans nightly for optimal matches.",
+        "es": "Las sugerencias de propiedades se actualizan en tiempo real cuando: 1) Se añade nueva propiedad que hace match, 2) Se cambian preferencias de lead, 3) Cambia precio o estado de propiedad. Ves automáticamente una insignia de notificación en la pestaña 'Propiedades Sugeridas' cuando hay nuevos matches disponibles. La IA también re-escanea nocturnamente para matches óptimos."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik de matching criteria weging aanpassen per lead type?",
+        "en": "Can I adjust matching criteria weighting per lead type?",
+        "es": "¿Puedo ajustar la ponderación de criterios de matching por tipo de lead?"
+      },
+      "answer": {
+        "nl": "Momenteel is weging global (applies to all leads), maar je kunt wel per lead 'flexibility flags' instellen: 1) Open lead detail, 2) Enable 'Flexible on type/location/price', 3) AI past matching aan voor deze lead. Voor advanced customization, admins kunnen custom weighting profiles aanmaken in Settings → AI Matching voor verschillende lead segments (buyers, investors, etc.).",
+        "en": "Currently weighting is global (applies to all leads), but you can set 'flexibility flags' per lead: 1) Open lead detail, 2) Enable 'Flexible on type/location/price', 3) AI adjusts matching for this lead. For advanced customization, admins can create custom weighting profiles in Settings → AI Matching for different lead segments (buyers, investors, etc.).",
+        "es": "Actualmente la ponderación es global (se aplica a todos los leads), pero puedes establecer 'flags de flexibilidad' por lead: 1) Abre detalle de lead, 2) Activa 'Flexible en tipo/ubicación/precio', 3) La IA ajusta el matching para este lead. Para personalización avanzada, los admins pueden crear perfiles de ponderación personalizados en Configuración → Matching con IA para diferentes segmentos de leads (compradores, inversores, etc.)."
+      }
+    }
+  ]
+}

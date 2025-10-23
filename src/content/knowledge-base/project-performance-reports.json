@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "id": "project-performance-reports",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "projects",
+    "difficulty": "intermediate",
+    "tags": ["projects", "reports", "analytics", "sales", "performance"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    "keywords": ["project reports", "sales analytics", "development performance", "tesoro reporting", "project metrics"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Project performance en sales rapportage",
+      "en": "Project Performance and Sales Reporting",
+      "es": "Rendimiento de proyecto y reportes de ventas"
+    },
+    "description": {
+      "nl": "Analyseer sales velocity, revenue tracking en project performance met comprehensive rapportage tools.",
+      "en": "Analyze sales velocity, revenue tracking and project performance with comprehensive reporting tools.",
+      "es": "Analiza velocidad de ventas, seguimiento de ingresos y rendimiento del proyecto con herramientas de reporte comprehensivas."
+    },
+    "icon": "analytics"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Project rapportage in Tesoro geeft je real-time inzicht in sales performance, revenue, en unit availability. Perfect voor developers en agencies die meerdere projecten beheren.</p><p><strong>Key metrics die je kunt tracken:</strong></p><ul><li>Sales velocity (units sold per month)</li><li>Revenue vs target (actual vs projected)</li><li>Unit availability (sold/reserved/available)</li><li>Average price per unit type</li><li>Days on market per unit</li><li>Buyer demographics en sources</li></ul>"
+        },
+        "en": {
+          "text": "<p>Project reporting in Tesoro gives you real-time insight into sales performance, revenue, and unit availability. Perfect for developers and agencies managing multiple projects.</p><p><strong>Key metrics you can track:</strong></p><ul><li>Sales velocity (units sold per month)</li><li>Revenue vs target (actual vs projected)</li><li>Unit availability (sold/reserved/available)</li><li>Average price per unit type</li><li>Days on market per unit</li><li>Buyer demographics and sources</li></ul>"
+        },
+        "es": {
+          "text": "<p>Los reportes de proyecto en Tesoro te dan información en tiempo real sobre rendimiento de ventas, ingresos y disponibilidad de unidades. Perfecto para desarrolladores y agencias que gestionan múltiples proyectos.</p><p><strong>Métricas clave que puedes rastrear:</strong></p><ul><li>Velocidad de ventas (unidades vendidas por mes)</li><li>Ingresos vs objetivo (real vs proyectado)</li><li>Disponibilidad de unidades (vendidas/reservadas/disponibles)</li><li>Precio promedio por tipo de unidad</li><li>Días en el mercado por unidad</li><li>Demografía de compradores y fuentes</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "dashboard",
+      "title": {
+        "nl": "Project dashboard: key metrics",
+        "en": "Project Dashboard: Key Metrics",
+        "es": "Dashboard del proyecto: métricas clave"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Open Project → <strong>Dashboard</strong> voor real-time overview:</p><h4>Sales Overview:</h4><table><thead><tr><th>Metric</th><th>Value</th><th>Trend</th></tr></thead><tbody><tr><td>Total Units</td><td>72</td><td>-</td></tr><tr><td>Sold</td><td>29</td><td>40%</td></tr><tr><td>Reserved</td><td>15</td><td>21%</td></tr><tr><td>Available</td><td>28</td><td>39%</td></tr><tr><td>Sales Velocity</td><td>3.2/month</td><td>↑ +0.5</td></tr><tr><td>Avg Days to Sell</td><td>18 days</td><td>↓ -3</td></tr></tbody></table><h4>Revenue Tracking:</h4><ul><li><strong>Total Revenue:</strong> €7.85M</li><li><strong>Target Revenue:</strong> €18.2M</li><li><strong>Progress:</strong> 43% of target</li><li><strong>Average Price:</strong> €270K per unit</li><li><strong>Projected Final:</strong> €17.9M (98% of target)</li></ul><h4>Timeline Status:</h4><ul><li><strong>Construction:</strong> 55% complete</li><li><strong>On Schedule:</strong> Yes (+2 days ahead)</li><li><strong>Completion:</strong> June 30, 2025</li></ul>"
+        },
+        "en": {
+          "text": "<p>Open Project → <strong>Dashboard</strong> for real-time overview:</p><h4>Sales Overview:</h4><table><thead><tr><th>Metric</th><th>Value</th><th>Trend</th></tr></thead><tbody><tr><td>Total Units</td><td>72</td><td>-</td></tr><tr><td>Sold</td><td>29</td><td>40%</td></tr><tr><td>Reserved</td><td>15</td><td>21%</td></tr><tr><td>Available</td><td>28</td><td>39%</td></tr><tr><td>Sales Velocity</td><td>3.2/month</td><td>↑ +0.5</td></tr><tr><td>Avg Days to Sell</td><td>18 days</td><td>↓ -3</td></tr></tbody></table><h4>Revenue Tracking:</h4><ul><li><strong>Total Revenue:</strong> €7.85M</li><li><strong>Target Revenue:</strong> €18.2M</li><li><strong>Progress:</strong> 43% of target</li><li><strong>Average Price:</strong> €270K per unit</li><li><strong>Projected Final:</strong> €17.9M (98% of target)</li></ul><h4>Timeline Status:</h4><ul><li><strong>Construction:</strong> 55% complete</li><li><strong>On Schedule:</strong> Yes (+2 days ahead)</li><li><strong>Completion:</strong> June 30, 2025</li></ul>"
+        },
+        "es": {
+          "text": "<p>Abre Project → <strong>Dashboard</strong> para vista general en tiempo real:</p><h4>Resumen de ventas:</h4><table><thead><tr><th>Métrica</th><th>Valor</th><th>Tendencia</th></tr></thead><tbody><tr><td>Total de unidades</td><td>72</td><td>-</td></tr><tr><td>Vendidas</td><td>29</td><td>40%</td></tr><tr><td>Reservadas</td><td>15</td><td>21%</td></tr><tr><td>Disponibles</td><td>28</td><td>39%</td></tr><tr><td>Velocidad de ventas</td><td>3.2/mes</td><td>↑ +0.5</td></tr><tr><td>Promedio días para vender</td><td>18 días</td><td>↓ -3</td></tr></tbody></table><h4>Seguimiento de ingresos:</h4><ul><li><strong>Ingresos totales:</strong> €7.85M</li><li><strong>Ingresos objetivo:</strong> €18.2M</li><li><strong>Progreso:</strong> 43% del objetivo</li><li><strong>Precio promedio:</strong> €270K por unidad</li><li><strong>Proyección final:</strong> €17.9M (98% del objetivo)</li></ul><h4>Estado del cronograma:</h4><ul><li><strong>Construcción:</strong> 55% completo</li><li><strong>On Schedule:</strong> Sí (+2 días adelantado)</li><li><strong>Finalización:</strong> 30 de junio, 2025</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "sales-reports",
+      "title": {
+        "nl": "Sales performance rapporten",
+        "en": "Sales Performance Reports",
+        "es": "Reportes de rendimiento de ventas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Unit Type Performance:</h4><p>Zie welke unit types het beste verkopen:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) verkoop het snelst. Penthouses zijn slower maar higher value. Overweeg pricing adjustment voor Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (not released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Unit Type Performance:</h4><p>See which unit types sell best:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) sells fastest. Penthouses are slower but higher value. Consider pricing adjustment for Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (not released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Rendimiento por tipo de unidad:</h4><p>Ve qué tipos de unidad se venden mejor:</p><table><thead><tr><th>Tipo</th><th>Total</th><th>Vendidas</th><th>% Venta</th><th>Precio prom</th><th>Días para vender</th></tr></thead><tbody><tr><td>1BR (Tipo A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 días</td></tr><tr><td>2BR (Tipo B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 días</td></tr><tr><td>2BR Deluxe (Tipo C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 días</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 días</td></tr></tbody></table><p><strong>Insights:</strong> Tipo A (1BR) se vende más rápido. Los penthouses son más lentos pero de mayor valor. Considera ajuste de precio para Tipo C.</p><h4>Ventas por edificio/fase:</h4><ul><li><strong>Edificio A:</strong> 16/24 vendidas (67%) - Mejor rendimiento</li><li><strong>Edificio B:</strong> 10/24 vendidas (42%) - Promedio</li><li><strong>Edificio C:</strong> 3/24 vendidas (13%) - Lento (aún no lanzado)</li></ul><h4>Ventas por piso:</h4><ul><li>Pisos 5-7 se venden más rápido (vistas premium)</li><li>Planta baja se vende más lento (preocupaciones de privacidad)</li><li>Piso superior (8) se vende con premium (+15% vs pisos medios)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "export-reports",
+      "title": {
+        "nl": "Rapporten exporteren en delen",
+        "en": "Export and Share Reports",
+        "es": "Exportar y compartir reportes"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Deel project performance met stakeholders:</p><h4>Export opties:</h4><ol><li>Project → Reports → <strong>Export</strong></li><li>Kies format:<ul><li><strong>PDF:</strong> Visuele rapportage met charts en graphs</li><li><strong>Excel:</strong> Data voor eigen analysis</li><li><strong>PowerPoint:</strong> Ready-to-present slides</li></ul></li><li>Select metrics:<ul><li>Sales summary</li><li>Unit availability</li><li>Revenue tracking</li><li>Construction progress</li><li>Buyer demographics</li></ul></li><li>Klik <strong>Generate Report</strong></li></ol><h4>Scheduled Reports:</h4><p>Automateer monthly/quarterly reports:</p><ul><li>Project → Settings → <strong>Scheduled Reports</strong></li><li>Enable \"Monthly Performance Report\"</li><li>Add email recipients (developer, investors, team)</li><li>Choose day (bijv. 1st of month)</li><li>Tesoro stuurt automatically</li></ul>"
+        },
+        "en": {
+          "text": "<p>Share project performance with stakeholders:</p><h4>Export options:</h4><ol><li>Project → Reports → <strong>Export</strong></li><li>Choose format:<ul><li><strong>PDF:</strong> Visual reporting with charts and graphs</li><li><strong>Excel:</strong> Data for own analysis</li><li><strong>PowerPoint:</strong> Ready-to-present slides</li></ul></li><li>Select metrics:<ul><li>Sales summary</li><li>Unit availability</li><li>Revenue tracking</li><li>Construction progress</li><li>Buyer demographics</li></ul></li><li>Click <strong>Generate Report</strong></li></ol><h4>Scheduled Reports:</h4><p>Automate monthly/quarterly reports:</p><ul><li>Project → Settings → <strong>Scheduled Reports</strong></li><li>Enable \"Monthly Performance Report\"</li><li>Add email recipients (developer, investors, team)</li><li>Choose day (e.g. 1st of month)</li><li>Tesoro sends automatically</li></ul>"
+        },
+        "es": {
+          "text": "<p>Comparte rendimiento del proyecto con stakeholders:</p><h4>Opciones de exportación:</h4><ol><li>Project → Reports → <strong>Export</strong></li><li>Elige formato:<ul><li><strong>PDF:</strong> Reporte visual con gráficos y tablas</li><li><strong>Excel:</strong> Datos para análisis propio</li><li><strong>PowerPoint:</strong> Diapositivas listas para presentar</li></ul></li><li>Selecciona métricas:<ul><li>Resumen de ventas</li><li>Disponibilidad de unidades</li><li>Seguimiento de ingresos</li><li>Progreso de construcción</li><li>Demografía de compradores</li></ul></li><li>Haz clic en <strong>Generate Report</strong></li></ol><h4>Reportes programados:</h4><p>Automatiza reportes mensuales/trimestrales:</p><ul><li>Project → Settings → <strong>Scheduled Reports</strong></li><li>Habilita \"Monthly Performance Report\"</li><li>Agrega destinatarios de email (desarrollador, inversionistas, equipo)</li><li>Elige día (ej. 1 del mes)</li><li>Tesoro envía automáticamente</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "projects-overview-guide",
+    "creating-development-projects",
+    "project-progress-tracking",
+    "deal-reporting-metrics"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik meerdere projecten vergelijken?",
+        "en": "Can I compare multiple projects?",
+        "es": "¿Puedo comparar múltiples proyectos?"
+      },
+      "answer": {
+        "nl": "Ja! Ga naar Projects → Analytics → Multi-Project View. Selecteer 2-5 projecten om sales velocity, revenue en timeline side-by-side te vergelijken.",
+        "en": "Yes! Go to Projects → Analytics → Multi-Project View. Select 2-5 projects to compare sales velocity, revenue and timeline side-by-side.",
+        "es": "¡Sí! Ve a Projects → Analytics → Multi-Project View. Selecciona 2-5 proyectos para comparar velocidad de ventas, ingresos y cronograma lado a lado."
+      }
+    }
+  ]
+}

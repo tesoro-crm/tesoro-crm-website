@@ -170,6 +170,7 @@ const knowledgeBase = defineCollection({
         'getting-started',
         'contacts',
         'properties',
+        'projects',
         'communication',
         'integrations',
         'reports',

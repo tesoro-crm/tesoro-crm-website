@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "id": "property-pricing-valuation",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T15:30:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "intermediate",
+    "tags": ["properties", "pricing", "valuation", "market-value", "price-history"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
+    "keywords": ["property pricing", "valuation", "market value", "price history", "Tesoro pricing", "real estate pricing"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property pricing en valuation in Tesoro CRM",
+      "en": "Property Pricing and Valuation in Tesoro CRM",
+      "es": "Precios y valoración de propiedades en Tesoro CRM"
+    },
+    "description": {
+      "nl": "Leer hoe je prices instelt, market value tracked, price history beheert en automatische valuation gebruikt voor accurate property pricing.",
+      "en": "Learn how to set prices, track market value, manage price history and use automatic valuation for accurate property pricing.",
+      "es": "Aprende cómo establecer precios, rastrear valor de mercado, gestionar historial de precios y usar valoración automática para precios precisos de propiedades."
+    },
+    "icon": "payments"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "pricing-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom is accurate pricing cruciaal?",
+        "en": "Why is accurate pricing crucial?",
+        "es": "¿Por qué es crucial el precio preciso?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Property pricing is de belangrijkste factor voor succesvolle verkoop. Te hoog geprijsd = te lang op de markt. Te laag = gemiste revenue.</p><p><strong>Tesoro's pricing features helpen je:</strong></p><ul><li>Concurrerende prices instellen op basis van market data</li><li>Price changes automatisch tracken met complete history</li><li>Market value monitoring voor portfolio performance</li><li>Multi-currency support voor internationale kopers</li><li>Automatische sync naar alle portals (Idealista, Fotocasa)</li></ul>"
+        },
+        "en": {
+          "text": "<p>Property pricing is the most important factor for successful sales. Priced too high = too long on market. Too low = missed revenue.</p><p><strong>Tesoro's pricing features help you:</strong></p><ul><li>Set competitive prices based on market data</li><li>Automatically track price changes with complete history</li><li>Market value monitoring for portfolio performance</li><li>Multi-currency support for international buyers</li><li>Automatic sync to all portals (Idealista, Fotocasa)</li></ul>"
+        },
+        "es": {
+          "text": "<p>El precio de la propiedad es el factor más importante para ventas exitosas. Precio demasiado alto = demasiado tiempo en el mercado. Demasiado bajo = ingresos perdidos.</p><p><strong>Las características de precios de Tesoro te ayudan a:</strong></p><ul><li>Establecer precios competitivos basados en datos de mercado</li><li>Rastrear automáticamente cambios de precios con historial completo</li><li>Monitoreo de valor de mercado para rendimiento de cartera</li><li>Soporte multi-moneda para compradores internacionales</li><li>Sincronización automática a todos los portales (Idealista, Fotocasa)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "setting-prices",
+      "title": {
+        "nl": "Prices instellen en beheren",
+        "en": "Setting and managing prices",
+        "es": "Establecer y gestionar precios"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Basic price settings</h5><p>Elke property heeft een primary price field met de volgende opties:</p><ul><li><strong>Price amount:</strong> Het hoofdbedrag (bijvoorbeeld €350,000)</li><li><strong>Currency:</strong> EUR, USD, GBP of andere currencies</li><li><strong>Price frequency:</strong> One-time (verkoop) of monthly/yearly (huur)</li></ul><p><strong>Tip:</strong> Voor rental properties, specificeer altijd de frequency (monthly/yearly) voor duidelijkheid.</p><h5>Price types</h5><p>Tesoro ondersteunt verschillende price types voor flexibele pricing strategies:</p><ul><li><strong>Sale price:</strong> Verkoopprijs (default voor sale properties)</li><li><strong>Rental price:</strong> Huurprijs per maand of jaar</li><li><strong>Market price:</strong> Geschatte marktwaarde (voor interne tracking)</li><li><strong>Offer price:</strong> Prijs bij specifieke deal offers</li></ul><p>Deze worden automatisch berekend en getoond op basis van property type en status.</p><h5>Multi-currency pricing</h5><p>Voor internationale markets kun je prices in meerdere currencies tonen:</p><ul><li>Stel primary currency in (bijvoorbeeld EUR)</li><li>Voeg secondary currency toe (bijvoorbeeld USD)</li><li>Tesoro toont beide prices op portals en client portal</li></ul><p><strong>Let op:</strong> Currency conversie gebeurt at source - update handmatig bij grote wisselkoers wijzigingen.</p>"
+        },
+        "en": {
+          "text": "<h5>Basic price settings</h5><p>Each property has a primary price field with the following options:</p><ul><li><strong>Price amount:</strong> The main amount (e.g., €350,000)</li><li><strong>Currency:</strong> EUR, USD, GBP or other currencies</li><li><strong>Price frequency:</strong> One-time (sale) or monthly/yearly (rental)</li></ul><p><strong>Tip:</strong> For rental properties, always specify the frequency (monthly/yearly) for clarity.</p><h5>Price types</h5><p>Tesoro supports different price types for flexible pricing strategies:</p><ul><li><strong>Sale price:</strong> Sale price (default for sale properties)</li><li><strong>Rental price:</strong> Rental price per month or year</li><li><strong>Market price:</strong> Estimated market value (for internal tracking)</li><li><strong>Offer price:</strong> Price for specific deal offers</li></ul><p>These are automatically calculated and shown based on property type and status.</p><h5>Multi-currency pricing</h5><p>For international markets you can show prices in multiple currencies:</p><ul><li>Set primary currency (e.g., EUR)</li><li>Add secondary currency (e.g., USD)</li><li>Tesoro shows both prices on portals and client portal</li></ul><p><strong>Note:</strong> Currency conversion happens at source - update manually for large exchange rate changes.</p>"
+        },
+        "es": {
+          "text": "<h5>Configuración básica de precios</h5><p>Cada propiedad tiene un campo de precio principal con las siguientes opciones:</p><ul><li><strong>Monto del precio:</strong> El monto principal (ej., €350,000)</li><li><strong>Moneda:</strong> EUR, USD, GBP u otras monedas</li><li><strong>Frecuencia del precio:</strong> Una vez (venta) o mensual/anual (alquiler)</li></ul><p><strong>Consejo:</strong> Para propiedades de alquiler, especifica siempre la frecuencia (mensual/anual) para claridad.</p><h5>Tipos de precios</h5><p>Tesoro soporta diferentes tipos de precios para estrategias de precios flexibles:</p><ul><li><strong>Precio de venta:</strong> Precio de venta (predeterminado para propiedades en venta)</li><li><strong>Precio de alquiler:</strong> Precio de alquiler por mes o año</li><li><strong>Precio de mercado:</strong> Valor de mercado estimado (para seguimiento interno)</li><li><strong>Precio de oferta:</strong> Precio para ofertas de deal específicas</li></ul><p>Estos se calculan automáticamente y se muestran según el tipo de propiedad y estado.</p><h5>Precios multi-moneda</h5><p>Para mercados internacionales puedes mostrar precios en múltiples monedas:</p><ul><li>Establece moneda primaria (ej., EUR)</li><li>Añade moneda secundaria (ej., USD)</li><li>Tesoro muestra ambos precios en portales y portal de clientes</li></ul><p><strong>Nota:</strong> La conversión de moneda ocurre en origen - actualiza manualmente para grandes cambios de tipo de cambio.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "price-history",
+      "title": {
+        "nl": "Price history tracking",
+        "en": "Price history tracking",
+        "es": "Seguimiento de historial de precios"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Automatische price change tracking</h5><p>Tesoro houdt automatisch elke price wijziging bij met complete audit trail:</p><ul><li><strong>Old price:</strong> Vorige prijs</li><li><strong>New price:</strong> Nieuwe prijs</li><li><strong>Change date:</strong> Wanneer de wijziging plaatsvond</li><li><strong>Changed by:</strong> Welke user de wijziging deed</li><li><strong>Reason:</strong> Optionele reden voor price change</li></ul><p>Deze history is zichtbaar in de property detail view onder 'Price History' tab.</p><h5>Price reduction tracking</h5><p>Wanneer je een price verlaagt, wordt dit automatisch gemarkeerd:</p><ul><li>Percentage reduction berekend</li><li>\"Price reduced\" badge op portal listings</li><li>Notification naar interested leads (optioneel)</li><li>Dashboard alert voor grote reductions (> 10%)</li></ul><p><strong>Marketing tip:</strong> Price reductions worden highlighted op Idealista en Fotocasa om meer interesse te genereren.</p><h5>Time on market met price correlation</h5><p>Tesoro's Dashboard toont time-on-market alerts gekoppeld aan price history:</p><ul><li>Properties > 90 dagen zonder price change = alert</li><li>Suggestion: \"Consider price adjustment\"</li><li>Comparison met vergelijkbare properties (same type, location, size)</li></ul><p>Gebruik deze data om proactief price strategies aan te passen.</p>"
+        },
+        "en": {
+          "text": "<h5>Automatic price change tracking</h5><p>Tesoro automatically tracks every price change with complete audit trail:</p><ul><li><strong>Old price:</strong> Previous price</li><li><strong>New price:</strong> New price</li><li><strong>Change date:</strong> When the change occurred</li><li><strong>Changed by:</strong> Which user made the change</li><li><strong>Reason:</strong> Optional reason for price change</li></ul><p>This history is visible in the property detail view under 'Price History' tab.</p><h5>Price reduction tracking</h5><p>When you lower a price, this is automatically marked:</p><ul><li>Percentage reduction calculated</li><li>\"Price reduced\" badge on portal listings</li><li>Notification to interested leads (optional)</li><li>Dashboard alert for large reductions (> 10%)</li></ul><p><strong>Marketing tip:</strong> Price reductions are highlighted on Idealista and Fotocasa to generate more interest.</p><h5>Time on market with price correlation</h5><p>Tesoro's Dashboard shows time-on-market alerts linked to price history:</p><ul><li>Properties > 90 days without price change = alert</li><li>Suggestion: \"Consider price adjustment\"</li><li>Comparison with similar properties (same type, location, size)</li></ul><p>Use this data to proactively adjust price strategies.</p>"
+        },
+        "es": {
+          "text": "<h5>Seguimiento automático de cambios de precio</h5><p>Tesoro rastrea automáticamente cada cambio de precio con pista de auditoría completa:</p><ul><li><strong>Precio anterior:</strong> Precio previo</li><li><strong>Precio nuevo:</strong> Precio nuevo</li><li><strong>Fecha de cambio:</strong> Cuándo ocurrió el cambio</li><li><strong>Cambiado por:</strong> Qué usuario hizo el cambio</li><li><strong>Razón:</strong> Razón opcional para cambio de precio</li></ul><p>Este historial es visible en la vista de detalle de propiedad bajo la pestaña 'Historial de Precios'.</p><h5>Seguimiento de reducción de precios</h5><p>Cuando bajas un precio, esto se marca automáticamente:</p><ul><li>Porcentaje de reducción calculado</li><li>Insignia de \"Precio reducido\" en listados de portales</li><li>Notificación a leads interesados (opcional)</li><li>Alerta en dashboard para grandes reducciones (> 10%)</li></ul><p><strong>Consejo de marketing:</strong> Las reducciones de precio se destacan en Idealista y Fotocasa para generar más interés.</p><h5>Tiempo en mercado con correlación de precio</h5><p>El Dashboard de Tesoro muestra alertas de tiempo en mercado vinculadas al historial de precios:</p><ul><li>Propiedades > 90 días sin cambio de precio = alerta</li><li>Sugerencia: \"Considera ajuste de precio\"</li><li>Comparación con propiedades similares (mismo tipo, ubicación, tamaño)</li></ul><p>Usa estos datos para ajustar proactivamente estrategias de precios.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "market-valuation",
+      "title": {
+        "nl": "Market valuation en pricing strategies",
+        "en": "Market valuation and pricing strategies",
+        "es": "Valoración de mercado y estrategias de precios"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Market price estimation</h5><p>Tesoro helpt je om realistic market prices in te schatten op basis van:</p><ul><li><strong>Comparable properties:</strong> Analyse van vergelijkbare verkopen</li><li><strong>Location data:</strong> Gemiddelde prijzen per m² in de buurt</li><li><strong>Feature comparison:</strong> Hoe features (pool, garage, etc.) de prijs beïnvloeden</li><li><strong>Market trends:</strong> Stijgende of dalende markt in de regio</li></ul><p>Gebruik de 'Suggest Market Price' feature in property detail voor een estimate.</p><h5>Price per m² tracking</h5><p>Tesoro berekent automatisch price per m² voor elke property:</p><ul><li>Sale price ÷ total area = €/m²</li><li>Vergelijk met area average voor pricing validation</li><li>Dashboard widget toont portfolio average €/m²</li></ul><p><strong>Gebruik case:</strong> Snel zien of een property overpriced of underpriced is ten opzichte van vergelijkbare objecten.</p><h5>Pricing strategies</h5><p><strong>Premium pricing (10% boven markt):</strong></p><ul><li>Voor unique properties met high-end features</li><li>Prime locations (beachfront, city center)</li><li>Recent volledig gerenoveerd</li></ul><p><strong>Competitive pricing (markt gemiddelde):</strong></p><ul><li>Standard properties in populaire areas</li><li>Snelle verkoop gewenst</li><li>Veel vergelijkbare properties in de buurt</li></ul><p><strong>Value pricing (5-10% onder markt):</strong></p><ul><li>Properties die lang op markt staan</li><li>Seller heeft urgentie</li><li>Property needs minor renovations</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Market price estimation</h5><p>Tesoro helps you estimate realistic market prices based on:</p><ul><li><strong>Comparable properties:</strong> Analysis of comparable sales</li><li><strong>Location data:</strong> Average prices per m² in the area</li><li><strong>Feature comparison:</strong> How features (pool, garage, etc.) affect price</li><li><strong>Market trends:</strong> Rising or falling market in the region</li></ul><p>Use the 'Suggest Market Price' feature in property detail for an estimate.</p><h5>Price per m² tracking</h5><p>Tesoro automatically calculates price per m² for each property:</p><ul><li>Sale price ÷ total area = €/m²</li><li>Compare with area average for pricing validation</li><li>Dashboard widget shows portfolio average €/m²</li></ul><p><strong>Use case:</strong> Quickly see if a property is overpriced or underpriced compared to similar objects.</p><h5>Pricing strategies</h5><p><strong>Premium pricing (10% above market):</strong></p><ul><li>For unique properties with high-end features</li><li>Prime locations (beachfront, city center)</li><li>Recently fully renovated</li></ul><p><strong>Competitive pricing (market average):</strong></p><ul><li>Standard properties in popular areas</li><li>Quick sale desired</li><li>Many comparable properties nearby</li></ul><p><strong>Value pricing (5-10% below market):</strong></p><ul><li>Properties long on market</li><li>Seller has urgency</li><li>Property needs minor renovations</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Estimación de precio de mercado</h5><p>Tesoro te ayuda a estimar precios de mercado realistas basados en:</p><ul><li><strong>Propiedades comparables:</strong> Análisis de ventas comparables</li><li><strong>Datos de ubicación:</strong> Precios promedio por m² en el área</li><li><strong>Comparación de características:</strong> Cómo las características (piscina, garaje, etc.) afectan el precio</li><li><strong>Tendencias de mercado:</strong> Mercado en alza o bajada en la región</li></ul><p>Usa la característica 'Sugerir Precio de Mercado' en el detalle de propiedad para una estimación.</p><h5>Seguimiento de precio por m²</h5><p>Tesoro calcula automáticamente el precio por m² para cada propiedad:</p><ul><li>Precio de venta ÷ área total = €/m²</li><li>Compara con promedio de área para validación de precios</li><li>Widget de dashboard muestra promedio de cartera €/m²</li></ul><p><strong>Caso de uso:</strong> Ver rápidamente si una propiedad está sobrevalorada o infravalorada en comparación con objetos similares.</p><h5>Estrategias de precios</h5><p><strong>Precio premium (10% por encima del mercado):</strong></p><ul><li>Para propiedades únicas con características de alta gama</li><li>Ubicaciones prime (frente a la playa, centro de ciudad)</li><li>Recientemente completamente renovada</li></ul><p><strong>Precio competitivo (promedio de mercado):</strong></p><ul><li>Propiedades estándar en áreas populares</li><li>Venta rápida deseada</li><li>Muchas propiedades comparables cercanas</li></ul><p><strong>Precio de valor (5-10% por debajo del mercado):</strong></p><ul><li>Propiedades mucho tiempo en mercado</li><li>Vendedor tiene urgencia</li><li>Propiedad necesita renovaciones menores</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "batch-pricing",
+      "title": {
+        "nl": "Batch price updates en portal sync",
+        "en": "Batch price updates and portal sync",
+        "es": "Actualizaciones de precio en lote y sincronización de portales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Batch price adjustments</h5><p>Voor efficient portfolio management kun je prices in bulk aanpassen:</p><ol><li>Select multiple properties (checkbox in property list)</li><li>Click 'Batch Edit' → 'Update Prices'</li><li>Choose price adjustment method:<ul><li>Set fixed amount (alle properties krijgen dezelfde prijs)</li><li>Percentage increase/decrease (bijvoorbeeld -5% voor alle properties)</li><li>Price per m² adjustment</li></ul></li><li>Add optional reason voor audit trail</li><li>Confirm en execute batch update</li></ol><p><strong>Use case:</strong> Market correction - verlaag alle properties in een specifieke area met 3% vanwege market downturn.</p><h5>Automatic portal sync</h5><p>Wanneer je een price wijzigt in Tesoro, wordt dit automatisch gesynchroniseerd naar:</p><ul><li><strong>Idealista:</strong> Real-time price update via API</li><li><strong>Fotocasa:</strong> Direct price sync binnen 5 minuten</li><li><strong>Custom portals:</strong> Via XML/JSON feed updates</li><li><strong>Client portal:</strong> Onmiddellijk zichtbaar voor buyers</li></ul><p>Je kunt de sync status checken in Settings → Portal Integration.</p><h5>Price approval workflow (optioneel)</h5><p>Voor agencies met multiple agents kun je price approval instellen:</p><ul><li>Agent stelt new price voor</li><li>Admin ontvangt notification</li><li>Admin approves/rejects price change</li><li>Bij approval: automatische sync naar portals</li></ul><p>Configureer dit in Settings → User Roles → Permissions.</p>"
+        },
+        "en": {
+          "text": "<h5>Batch price adjustments</h5><p>For efficient portfolio management you can adjust prices in bulk:</p><ol><li>Select multiple properties (checkbox in property list)</li><li>Click 'Batch Edit' → 'Update Prices'</li><li>Choose price adjustment method:<ul><li>Set fixed amount (all properties get same price)</li><li>Percentage increase/decrease (e.g., -5% for all properties)</li><li>Price per m² adjustment</li></ul></li><li>Add optional reason for audit trail</li><li>Confirm and execute batch update</li></ol><p><strong>Use case:</strong> Market correction - lower all properties in a specific area by 3% due to market downturn.</p><h5>Automatic portal sync</h5><p>When you change a price in Tesoro, this is automatically synchronized to:</p><ul><li><strong>Idealista:</strong> Real-time price update via API</li><li><strong>Fotocasa:</strong> Direct price sync within 5 minutes</li><li><strong>Custom portals:</strong> Via XML/JSON feed updates</li><li><strong>Client portal:</strong> Immediately visible to buyers</li></ul><p>You can check the sync status in Settings → Portal Integration.</p><h5>Price approval workflow (optional)</h5><p>For agencies with multiple agents you can set up price approval:</p><ul><li>Agent proposes new price</li><li>Admin receives notification</li><li>Admin approves/rejects price change</li><li>On approval: automatic sync to portals</li></ul><p>Configure this in Settings → User Roles → Permissions.</p>"
+        },
+        "es": {
+          "text": "<h5>Ajustes de precio en lote</h5><p>Para gestión eficiente de cartera puedes ajustar precios en lote:</p><ol><li>Selecciona múltiples propiedades (checkbox en lista de propiedades)</li><li>Haz clic en 'Edición en Lote' → 'Actualizar Precios'</li><li>Elige método de ajuste de precio:<ul><li>Establecer monto fijo (todas las propiedades reciben el mismo precio)</li><li>Aumento/disminución porcentual (ej., -5% para todas las propiedades)</li><li>Ajuste de precio por m²</li></ul></li><li>Añade razón opcional para pista de auditoría</li><li>Confirma y ejecuta actualización en lote</li></ol><p><strong>Caso de uso:</strong> Corrección de mercado - baja todas las propiedades en un área específica en 3% debido a caída del mercado.</p><h5>Sincronización automática de portales</h5><p>Cuando cambias un precio en Tesoro, esto se sincroniza automáticamente a:</p><ul><li><strong>Idealista:</strong> Actualización de precio en tiempo real vía API</li><li><strong>Fotocasa:</strong> Sincronización de precio directa en 5 minutos</li><li><strong>Portales personalizados:</strong> Vía actualizaciones de feed XML/JSON</li><li><strong>Portal de clientes:</strong> Inmediatamente visible para compradores</li></ul><p>Puedes verificar el estado de sincronización en Configuración → Integración de Portales.</p><h5>Flujo de aprobación de precio (opcional)</h5><p>Para agencias con múltiples agentes puedes configurar aprobación de precio:</p><ul><li>Agente propone nuevo precio</li><li>Admin recibe notificación</li><li>Admin aprueba/rechaza cambio de precio</li><li>En aprobación: sincronización automática a portales</li></ul><p>Configura esto en Configuración → Roles de Usuario → Permisos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "pricing-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Pro tips voor effective pricing",
+        "en": "Pro tips for effective pricing",
+        "es": "Consejos profesionales para precios efectivos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Best practices voor optimal pricing:</strong></p><ol><li><strong>Review prices monthly:</strong> Market conditions veranderen - pas prices aan op basis van market trends en time-on-market data.</li><li><strong>Use comparative analysis:</strong> Check vergelijkbare properties in Tesoro's search voor realistic pricing.</li><li><strong>Document price changes:</strong> Voeg altijd een reason toe bij price wijzigingen voor future reference.</li><li><strong>Monitor portal performance:</strong> Kijk welke properties de meeste views krijgen - dit helpt pricing validation.</li><li><strong>Test price reductions strategically:</strong> Kleine reduction (3-5%) kan veel meer interesse genereren dan grote reduction later.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Best practices for optimal pricing:</strong></p><ol><li><strong>Review prices monthly:</strong> Market conditions change - adjust prices based on market trends and time-on-market data.</li><li><strong>Use comparative analysis:</strong> Check comparable properties in Tesoro's search for realistic pricing.</li><li><strong>Document price changes:</strong> Always add a reason for price changes for future reference.</li><li><strong>Monitor portal performance:</strong> See which properties get the most views - this helps pricing validation.</li><li><strong>Test price reductions strategically:</strong> Small reduction (3-5%) can generate much more interest than large reduction later.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Mejores prácticas para precios óptimos:</strong></p><ol><li><strong>Revisa precios mensualmente:</strong> Las condiciones de mercado cambian - ajusta precios basados en tendencias de mercado y datos de tiempo en mercado.</li><li><strong>Usa análisis comparativo:</strong> Verifica propiedades comparables en la búsqueda de Tesoro para precios realistas.</li><li><strong>Documenta cambios de precio:</strong> Añade siempre una razón para cambios de precio para referencia futura.</li><li><strong>Monitorea rendimiento de portales:</strong> Ve qué propiedades reciben más vistas - esto ayuda a validar precios.</li><li><strong>Prueba reducciones de precio estratégicamente:</strong> Pequeña reducción (3-5%) puede generar mucho más interés que reducción grande después.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "property-history-tracking",
+    "property-portal-integration",
+    "property-ai-matching"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe vaak moet ik property prices updaten?",
+        "en": "How often should I update property prices?",
+        "es": "¿Con qué frecuencia debo actualizar los precios de propiedades?"
+      },
+      "answer": {
+        "nl": "Best practice is om prices monthly te reviewen, vooral voor properties die > 60 dagen op de markt staan. Use Tesoro's time-on-market alerts om te zien welke properties mogelijk een price adjustment nodig hebben. Bij snel bewegende markets (stijgende prijzen) kun je quarterly reviews doen.",
+        "en": "Best practice is to review prices monthly, especially for properties that are > 60 days on market. Use Tesoro's time-on-market alerts to see which properties may need a price adjustment. In fast-moving markets (rising prices) you can do quarterly reviews.",
+        "es": "La mejor práctica es revisar precios mensualmente, especialmente para propiedades que están > 60 días en el mercado. Usa las alertas de tiempo en mercado de Tesoro para ver qué propiedades pueden necesitar ajuste de precio. En mercados de rápido movimiento (precios en alza) puedes hacer revisiones trimestrales."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden price changes onmiddellijk gesynchroniseerd naar Idealista en Fotocasa?",
+        "en": "Are price changes immediately synchronized to Idealista and Fotocasa?",
+        "es": "¿Los cambios de precio se sincronizan inmediatamente a Idealista y Fotocasa?"
+      },
+      "answer": {
+        "nl": "Ja, Idealista updates zijn real-time via API. Fotocasa sync gebeurt binnen 5-10 minuten. Je kunt de sync status checken in Settings → Portal Integration → Sync Log. Bij sync errors ontvang je een notification.",
+        "en": "Yes, Idealista updates are real-time via API. Fotocasa sync happens within 5-10 minutes. You can check the sync status in Settings → Portal Integration → Sync Log. For sync errors you receive a notification.",
+        "es": "Sí, las actualizaciones de Idealista son en tiempo real vía API. La sincronización de Fotocasa ocurre en 5-10 minutos. Puedes verificar el estado de sincronización en Configuración → Integración de Portales → Registro de Sync. Para errores de sincronización recibes una notificación."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik price history exporteren voor rapportage?",
+        "en": "Can I export price history for reporting?",
+        "es": "¿Puedo exportar historial de precios para informes?"
+      },
+      "answer": {
+        "nl": "Ja! Ga naar Property Detail → Price History tab en klik op 'Export to CSV'. Dit geeft je een spreadsheet met alle price changes, dates, users en reasons. Perfect voor portfolio performance analysis en owner reporting.",
+        "en": "Yes! Go to Property Detail → Price History tab and click 'Export to CSV'. This gives you a spreadsheet with all price changes, dates, users and reasons. Perfect for portfolio performance analysis and owner reporting.",
+        "es": "¡Sí! Ve a Detalle de Propiedad → pestaña Historial de Precios y haz clic en 'Exportar a CSV'. Esto te da una hoja de cálculo con todos los cambios de precio, fechas, usuarios y razones. Perfecto para análisis de rendimiento de cartera e informes de propietarios."
+      }
+    }
+  ]
+}

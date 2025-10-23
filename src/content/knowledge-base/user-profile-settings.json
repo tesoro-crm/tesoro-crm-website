@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "id": "user-profile-settings",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["settings", "profile", "preferences", "notifications", "getting-started"],
+    "featured": true,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro settings", "user profile", "preferences", "notifications", "crm settings"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Profiel en instellingen configureren",
+      "en": "Configuring Profile and Settings",
+      "es": "Configurar perfil y ajustes"
+    },
+    "description": {
+      "nl": "Leer hoe je je profiel instelt, voorkeuren aanpast en notificaties configureert voor een optimale Tesoro ervaring.",
+      "en": "Learn how to set up your profile, adjust preferences and configure notifications for an optimal Tesoro experience.",
+      "es": "Aprende a configurar tu perfil, ajustar preferencias y configurar notificaciones para una experiencia óptima de Tesoro."
+    },
+    "icon": "settings"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Je profiel en instellingen bepalen hoe Tesoro voor jou werkt. Door deze goed in te stellen vanaf het begin, maak je het systeem persoonlijk en efficiënt voor jouw workflow.</p>"
+        },
+        "en": {
+          "text": "<p>Your profile and settings determine how Tesoro works for you. By setting these up properly from the start, you make the system personal and efficient for your workflow.</p>"
+        },
+        "es": {
+          "text": "<p>Tu perfil y ajustes determinan cómo funciona Tesoro para ti. Al configurarlos correctamente desde el principio, haces que el sistema sea personal y eficiente para tu flujo de trabajo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "profile-setup",
+      "title": {
+        "nl": "Je profiel instellen",
+        "en": "Setting Up Your Profile",
+        "es": "Configurar tu perfil"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Open user settings",
+            "en": "Step 1: Open User Settings",
+            "es": "Paso 1: Abrir ajustes de usuario"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Klik rechtsboven op je <strong>profielfoto</strong> en selecteer <strong>Settings</strong>. Dit opent je persoonlijke settings pagina.</p>"
+            },
+            "en": {
+              "text": "<p>Click your <strong>profile photo</strong> in the top right and select <strong>Settings</strong>. This opens your personal settings page.</p>"
+            },
+            "es": {
+              "text": "<p>Haz clic en tu <strong>foto de perfil</strong> en la parte superior derecha y selecciona <strong>Settings</strong>. Esto abre tu página de ajustes personales.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Persoonlijke informatie",
+            "en": "Step 2: Personal Information",
+            "es": "Paso 2: Información personal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>In het <strong>Personal Info</strong> tabblad vul je in:</p><ul><li><strong>Profile Photo</strong> - Upload een professionele foto (gebruikt in emails en portaal)</li><li><strong>Display Name</strong> - Hoe je naam verschijnt in het systeem</li><li><strong>Job Title</strong> - Je functie (verschijnt in email signature)</li><li><strong>Phone Number</strong> - Voor client contact (optioneel)</li><li><strong>Mobile</strong> - Voor SMS notificaties (optioneel)</li><li><strong>Email Signature</strong> - Automatisch toegevoegd aan uitgaande emails</li></ul><p><strong>Tip:</strong> Een goede profielfoto en professionele signature maken je communicatie geloofwaardiger.</p>"
+            },
+            "en": {
+              "text": "<p>In the <strong>Personal Info</strong> tab you fill in:</p><ul><li><strong>Profile Photo</strong> - Upload a professional photo (used in emails and portal)</li><li><strong>Display Name</strong> - How your name appears in the system</li><li><strong>Job Title</strong> - Your function (appears in email signature)</li><li><strong>Phone Number</strong> - For client contact (optional)</li><li><strong>Mobile</strong> - For SMS notifications (optional)</li><li><strong>Email Signature</strong> - Automatically added to outgoing emails</li></ul><p><strong>Tip:</strong> A good profile photo and professional signature make your communication more credible.</p>"
+            },
+            "es": {
+              "text": "<p>En la pestaña <strong>Personal Info</strong> completas:</p><ul><li><strong>Profile Photo</strong> - Sube una foto profesional (usada en emails y portal)</li><li><strong>Display Name</strong> - Cómo aparece tu nombre en el sistema</li><li><strong>Job Title</strong> - Tu función (aparece en la firma de email)</li><li><strong>Phone Number</strong> - Para contacto con clientes (opcional)</li><li><strong>Mobile</strong> - Para notificaciones SMS (opcional)</li><li><strong>Email Signature</strong> - Agregado automáticamente a emails salientes</li></ul><p><strong>Tip:</strong> Una buena foto de perfil y firma profesional hacen tu comunicación más creíble.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Notificatie voorkeuren",
+            "en": "Step 3: Notification Preferences",
+            "es": "Paso 3: Preferencias de notificación"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Ga naar het <strong>Notifications</strong> tabblad en kies wat je wilt ontvangen:</p><h4>Email Notificaties</h4><ul><li>Nieuwe leads assigned aan jou</li><li>Deals veranderen van fase</li><li>Taken die binnenkort verlopen</li><li>Nieuwe berichten van clients</li><li>Wekelijkse performance summary</li></ul><h4>In-App Notificaties</h4><ul><li>Real-time updates (bell icoon)</li><li>Desktop notifications (browser permission nodig)</li><li>Sound alerts voor belangrijke events</li></ul><h4>SMS Notificaties (optioneel)</h4><ul><li>Urgent client requests</li><li>Meetings binnen 30 minuten</li><li>Hot leads die actie nodig hebben</li></ul><p><strong>Tip:</strong> Begin conservatief met notificaties. Je kunt altijd meer aanzetten als je weet wat je mist.</p>"
+            },
+            "en": {
+              "text": "<p>Go to the <strong>Notifications</strong> tab and choose what you want to receive:</p><h4>Email Notifications</h4><ul><li>New leads assigned to you</li><li>Deals changing stages</li><li>Tasks expiring soon</li><li>New messages from clients</li><li>Weekly performance summary</li></ul><h4>In-App Notifications</h4><ul><li>Real-time updates (bell icon)</li><li>Desktop notifications (browser permission needed)</li><li>Sound alerts for important events</li></ul><h4>SMS Notifications (optional)</h4><ul><li>Urgent client requests</li><li>Meetings within 30 minutes</li><li>Hot leads needing action</li></ul><p><strong>Tip:</strong> Start conservatively with notifications. You can always turn on more if you know what you're missing.</p>"
+            },
+            "es": {
+              "text": "<p>Ve a la pestaña <strong>Notifications</strong> y elige qué quieres recibir:</p><h4>Notificaciones por email</h4><ul><li>Nuevos leads asignados a ti</li><li>Deals cambiando etapas</li><li>Tareas que expiran pronto</li><li>Nuevos mensajes de clientes</li><li>Resumen de rendimiento semanal</li></ul><h4>Notificaciones en la app</h4><ul><li>Actualizaciones en tiempo real (ícono de campana)</li><li>Notificaciones de escritorio (permiso de navegador necesario)</li><li>Alertas de sonido para eventos importantes</li></ul><h4>Notificaciones SMS (opcional)</h4><ul><li>Solicitudes urgentes de clientes</li><li>Reuniones dentro de 30 minutos</li><li>Hot leads que necesitan acción</li></ul><p><strong>Tip:</strong> Comienza de forma conservadora con las notificaciones. Siempre puedes activar más si sabes lo que te estás perdiendo.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Taal en regio instellingen",
+            "en": "Step 4: Language and Region Settings",
+            "es": "Paso 4: Configuración de idioma y región"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>In het <strong>Preferences</strong> tabblad:</p><ul><li><strong>Language</strong> - Kies tussen Nederlands, English, Español</li><li><strong>Timezone</strong> - Belangrijk voor scheduling (auto-detect werkt meestal)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) of MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) of 1,000.00 (US/UK)</li></ul><p><strong>Belangrijke opmerking:</strong> Deze instellingen beïnvloeden alleen hoe JIJ data ziet. Clients zien content in hun eigen taal via de portal.</p>"
+            },
+            "en": {
+              "text": "<p>In the <strong>Preferences</strong> tab:</p><ul><li><strong>Language</strong> - Choose between Nederlands, English, Español</li><li><strong>Timezone</strong> - Important for scheduling (auto-detect usually works)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) or MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) or 1,000.00 (US/UK)</li></ul><p><strong>Important note:</strong> These settings only affect how YOU see data. Clients see content in their own language via the portal.</p>"
+            },
+            "es": {
+              "text": "<p>En la pestaña <strong>Preferences</strong>:</p><ul><li><strong>Language</strong> - Elige entre Nederlands, English, Español</li><li><strong>Timezone</strong> - Importante para programación (auto-detect generalmente funciona)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) o MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) o 1,000.00 (US/UK)</li></ul><p><strong>Nota importante:</strong> Estos ajustes solo afectan cómo TÚ ves los datos. Los clientes ven contenido en su propio idioma a través del portal.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Privacy en beveiliging",
+            "en": "Step 5: Privacy and Security",
+            "es": "Paso 5: Privacidad y seguridad"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>In het <strong>Security</strong> tabblad:</p><ul><li><strong>Change Password</strong> - Wijzig je wachtwoord (doe dit regelmatig)</li><li><strong>Two-Factor Authentication</strong> - Extra beveiliging via SMS of authenticator app (aangeraden!)</li><li><strong>Active Sessions</strong> - Zie waar je ingelogd bent, log uit op oude devices</li><li><strong>API Keys</strong> - Voor integraties (alleen als je dit nodig hebt)</li><li><strong>Data Export</strong> - Download je persoonlijke data (GDPR)</li></ul><p><strong>Beveiliging tip:</strong> Activeer 2FA voor extra bescherming, vooral als je met gevoelige client data werkt.</p>"
+            },
+            "en": {
+              "text": "<p>In the <strong>Security</strong> tab:</p><ul><li><strong>Change Password</strong> - Change your password (do this regularly)</li><li><strong>Two-Factor Authentication</strong> - Extra security via SMS or authenticator app (recommended!)</li><li><strong>Active Sessions</strong> - See where you're logged in, log out on old devices</li><li><strong>API Keys</strong> - For integrations (only if you need this)</li><li><strong>Data Export</strong> - Download your personal data (GDPR)</li></ul><p><strong>Security tip:</strong> Enable 2FA for extra protection, especially if you work with sensitive client data.</p>"
+            },
+            "es": {
+              "text": "<p>En la pestaña <strong>Security</strong>:</p><ul><li><strong>Change Password</strong> - Cambia tu contraseña (haz esto regularmente)</li><li><strong>Two-Factor Authentication</strong> - Seguridad extra vía SMS o app de autenticación (¡recomendado!)</li><li><strong>Active Sessions</strong> - Ve dónde has iniciado sesión, cierra sesión en dispositivos antiguos</li><li><strong>API Keys</strong> - Para integraciones (solo si necesitas esto)</li><li><strong>Data Export</strong> - Descarga tus datos personales (GDPR)</li></ul><p><strong>Consejo de seguridad:</strong> Activa 2FA para protección extra, especialmente si trabajas con datos sensibles de clientes.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "company-settings",
+      "variant": "info",
+      "title": {
+        "nl": "Company settings (voor admins)",
+        "en": "Company Settings (for Admins)",
+        "es": "Configuración de empresa (para admins)"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Als je <strong>admin rechten</strong> hebt, zie je ook Company Settings:</p><ul><li><strong>Company Profile</strong> - Bedrijfsnaam, logo, adres</li><li><strong>User Management</strong> - Team leden toevoegen/verwijderen</li><li><strong>AI Settings</strong> - AI matching configureren</li><li><strong>Email Integration</strong> - Gmail/Outlook koppelen</li><li><strong>MLS Feeds</strong> - Idealista, Fotocasa integraties</li><li><strong>Client Portal</strong> - Portal URL en branding</li><li><strong>Billing</strong> - Subscription en betalingen</li></ul><p>Deze settings beïnvloeden het hele team. Wees voorzichtig met wijzigingen hier!</p>"
+        },
+        "en": {
+          "text": "<p>If you have <strong>admin permissions</strong>, you also see Company Settings:</p><ul><li><strong>Company Profile</strong> - Company name, logo, address</li><li><strong>User Management</strong> - Add/remove team members</li><li><strong>AI Settings</strong> - Configure AI matching</li><li><strong>Email Integration</strong> - Connect Gmail/Outlook</li><li><strong>MLS Feeds</strong> - Idealista, Fotocasa integrations</li><li><strong>Client Portal</strong> - Portal URL and branding</li><li><strong>Billing</strong> - Subscription and payments</li></ul><p>These settings affect the entire team. Be careful with changes here!</p>"
+        },
+        "es": {
+          "text": "<p>Si tienes <strong>permisos de admin</strong>, también ves Company Settings:</p><ul><li><strong>Company Profile</strong> - Nombre de empresa, logo, dirección</li><li><strong>User Management</strong> - Agregar/eliminar miembros del equipo</li><li><strong>AI Settings</strong> - Configurar matching de IA</li><li><strong>Email Integration</strong> - Conectar Gmail/Outlook</li><li><strong>MLS Feeds</strong> - Integraciones Idealista, Fotocasa</li><li><strong>Client Portal</strong> - URL del portal y branding</li><li><strong>Billing</strong> - Suscripción y pagos</li></ul><p>Estos ajustes afectan a todo el equipo. ¡Ten cuidado con los cambios aquí!</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "best-practices",
+      "title": {
+        "nl": "Best practices voor instellingen",
+        "en": "Best Practices for Settings",
+        "es": "Mejores prácticas para ajustes"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Profiel Foto</h4><p>Gebruik een <strong>professionele headshot</strong> met neutrale achtergrond. Dit is wat clients zien in emails en het portal - het vormt je eerste indruk.</p><h4>Email Signature</h4><p>Include altijd:</p><ul><li>Je naam en functie</li><li>Telefoonnummer (direct of mobiel)</li><li>Email adres</li><li>Bedrijfsnaam en website</li><li>Optioneel: LinkedIn profiel, licentienummers</li></ul><h4>Notificaties</h4><p>Aanbevolen setup voor makelaars:</p><ul><li><strong>Email:</strong> Alleen dagelijkse summary (niet elke update)</li><li><strong>In-app:</strong> Nieuwe leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Alleen urgent (hot leads, meetings < 1 uur)</li></ul><h4>Privacy</h4><p>Check regelmatig je <strong>Active Sessions</strong>. Log uit op devices die je niet meer gebruikt (oude laptops, public computers).</p>"
+        },
+        "en": {
+          "text": "<h4>Profile Photo</h4><p>Use a <strong>professional headshot</strong> with neutral background. This is what clients see in emails and the portal - it forms your first impression.</p><h4>Email Signature</h4><p>Always include:</p><ul><li>Your name and function</li><li>Phone number (direct or mobile)</li><li>Email address</li><li>Company name and website</li><li>Optional: LinkedIn profile, license numbers</li></ul><h4>Notifications</h4><p>Recommended setup for agents:</p><ul><li><strong>Email:</strong> Only daily summary (not every update)</li><li><strong>In-app:</strong> New leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Only urgent (hot leads, meetings < 1 hour)</li></ul><h4>Privacy</h4><p>Regularly check your <strong>Active Sessions</strong>. Log out on devices you no longer use (old laptops, public computers).</p>"
+        },
+        "es": {
+          "text": "<h4>Foto de perfil</h4><p>Usa un <strong>retrato profesional</strong> con fondo neutral. Esto es lo que los clientes ven en emails y el portal - forma tu primera impresión.</p><h4>Firma de email</h4><p>Incluye siempre:</p><ul><li>Tu nombre y función</li><li>Número de teléfono (directo o móvil)</li><li>Dirección de email</li><li>Nombre de empresa y sitio web</li><li>Opcional: Perfil de LinkedIn, números de licencia</li></ul><h4>Notificaciones</h4><p>Configuración recomendada para agentes:</p><ul><li><strong>Email:</strong> Solo resumen diario (no cada actualización)</li><li><strong>En la app:</strong> Nuevos leads, cambios de etapa de deal, mensajes de clientes</li><li><strong>SMS:</strong> Solo urgente (hot leads, reuniones < 1 hora)</li></ul><h4>Privacidad</h4><p>Verifica regularmente tus <strong>Active Sessions</strong>. Cierra sesión en dispositivos que ya no usas (laptops antiguas, computadoras públicas).</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "account-registration-complete-guide",
+    "dashboard-overview",
+    "getting-help-support"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik mijn email adres wijzigen?",
+        "en": "Can I change my email address?",
+        "es": "¿Puedo cambiar mi dirección de email?"
+      },
+      "answer": {
+        "nl": "Ja, maar dit vereist support hulp omdat je email je login is. Neem contact op via support@tesorohq.io met je oude en nieuwe email. We verifiëren beide adressen voordat we de wijziging doorvoeren.",
+        "en": "Yes, but this requires support help because your email is your login. Contact us via support@tesorohq.io with your old and new email. We verify both addresses before making the change.",
+        "es": "Sí, pero esto requiere ayuda de soporte porque tu email es tu inicio de sesión. Contáctanos vía support@tesorohq.io con tu email antiguo y nuevo. Verificamos ambas direcciones antes de realizar el cambio."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er met mijn data als ik mijn account verwijder?",
+        "en": "What happens to my data if I delete my account?",
+        "es": "¿Qué sucede con mis datos si elimino mi cuenta?"
+      },
+      "answer": {
+        "nl": "Je data wordt binnen 30 dagen permanent verwijderd. Je kunt binnen die 30 dagen contact opnemen om je account te herstellen. Na 30 dagen is recovery niet meer mogelijk. We adviseren een data export te maken voordat je je account verwijdert.",
+        "en": "Your data is permanently deleted within 30 days. You can contact us within those 30 days to restore your account. After 30 days recovery is no longer possible. We advise making a data export before deleting your account.",
+        "es": "Tus datos se eliminan permanentemente en 30 días. Puedes contactarnos dentro de esos 30 días para restaurar tu cuenta. Después de 30 días la recuperación ya no es posible. Aconsejamos hacer una exportación de datos antes de eliminar tu cuenta."
+      }
+    },
+    {
+      "question": {
+        "nl": "Krijgen mijn teamleden mijn notificaties ook te zien?",
+        "en": "Do my team members also see my notifications?",
+        "es": "¿Mis compañeros de equipo también ven mis notificaciones?"
+      },
+      "answer": {
+        "nl": "Nee, notificatie instellingen zijn volledig persoonlijk. Wat jij ontvangt heeft geen invloed op wat anderen ontvangen. Elk teamlid configureert zijn eigen voorkeuren.",
+        "en": "No, notification settings are completely personal. What you receive doesn't affect what others receive. Each team member configures their own preferences.",
+        "es": "No, la configuración de notificaciones es completamente personal. Lo que recibes no afecta lo que otros reciben. Cada miembro del equipo configura sus propias preferencias."
+      }
+    }
+  ]
+}

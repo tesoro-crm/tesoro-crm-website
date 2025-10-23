@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "id": "keyboard-shortcuts",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["keyboard-shortcuts", "productivity", "power-user", "efficiency", "getting-started"],
+    "featured": false,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200&h=630&fit=crop",
+    "keywords": ["keyboard shortcuts", "tesoro shortcuts", "productivity", "power user", "efficiency"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Keyboard shortcuts: werk 2x sneller",
+      "en": "Keyboard Shortcuts: Work 2x Faster",
+      "es": "Atajos de teclado: trabaja 2x más rápido"
+    },
+    "description": {
+      "nl": "Leer de essentiële keyboard shortcuts om als een power user door Tesoro te navigeren zonder je muis aan te raken.",
+      "en": "Learn the essential keyboard shortcuts to navigate through Tesoro like a power user without touching your mouse.",
+      "es": "Aprende los atajos de teclado esenciales para navegar por Tesoro como un usuario avanzado sin tocar tu mouse."
+    },
+    "icon": "keyboard"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Power users gebruiken vrijwel nooit de muis. Met keyboard shortcuts navigeer je razendsnel door Tesoro en voer je acties uit in een fractie van de tijd. Deze gids bevat alle shortcuts die je nodig hebt.</p><p><strong>Tip:</strong> Druk <strong>?</strong> (Shift + /) op elke pagina in Tesoro om de shortcuts overlay te zien!</p>"
+        },
+        "en": {
+          "text": "<p>Power users almost never use the mouse. With keyboard shortcuts you navigate through Tesoro at lightning speed and perform actions in a fraction of the time. This guide contains all the shortcuts you need.</p><p><strong>Tip:</strong> Press <strong>?</strong> (Shift + /) on any page in Tesoro to see the shortcuts overlay!</p>"
+        },
+        "es": {
+          "text": "<p>Los usuarios avanzados casi nunca usan el mouse. Con atajos de teclado navegas por Tesoro a velocidad del rayo y realizas acciones en una fracción del tiempo. Esta guía contiene todos los atajos que necesitas.</p><p><strong>Tip:</strong> ¡Presiona <strong>?</strong> (Shift + /) en cualquier página de Tesoro para ver la superposición de atajos!</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "global-shortcuts",
+      "title": {
+        "nl": "Globale shortcuts (werken overal)",
+        "en": "Global Shortcuts (Work Everywhere)",
+        "es": "Atajos globales (funcionan en todas partes)"
+      },
+      "content": {
+        "nl": {
+          "text": "<table><thead><tr><th>Shortcut</th><th>Actie</th><th>Beschrijving</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Global Search</td><td>Open search modal, zoek alles</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>New</td><td>Nieuw item (afhankelijk van pagina)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Save</td><td>Opslaan (in forms/editors)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Command Palette</td><td>Open command palette voor snelle acties</td></tr><tr><td><code>?</code></td><td>Help/Shortcuts</td><td>Toon shortcuts overlay</td></tr><tr><td><code>Esc</code></td><td>Close/Cancel</td><td>Sluit modals, cancel edits</td></tr></tbody></table><p><strong>Opmerking:</strong> <code>Cmd</code> op Mac = <code>Ctrl</code> op Windows/Linux</p>"
+        },
+        "en": {
+          "text": "<table><thead><tr><th>Shortcut</th><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Global Search</td><td>Open search modal, search everything</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>New</td><td>New item (depending on page)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Save</td><td>Save (in forms/editors)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Command Palette</td><td>Open command palette for quick actions</td></tr><tr><td><code>?</code></td><td>Help/Shortcuts</td><td>Show shortcuts overlay</td></tr><tr><td><code>Esc</code></td><td>Close/Cancel</td><td>Close modals, cancel edits</td></tr></tbody></table><p><strong>Note:</strong> <code>Cmd</code> on Mac = <code>Ctrl</code> on Windows/Linux</p>"
+        },
+        "es": {
+          "text": "<table><thead><tr><th>Atajo</th><th>Acción</th><th>Descripción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Búsqueda global</td><td>Abrir modal de búsqueda, buscar todo</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>Nuevo</td><td>Nuevo elemento (dependiendo de la página)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Guardar</td><td>Guardar (en formularios/editores)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Paleta de comandos</td><td>Abrir paleta de comandos para acciones rápidas</td></tr><tr><td><code>?</code></td><td>Ayuda/Atajos</td><td>Mostrar superposición de atajos</td></tr><tr><td><code>Esc</code></td><td>Cerrar/Cancelar</td><td>Cerrar modales, cancelar ediciones</td></tr></tbody></table><p><strong>Nota:</strong> <code>Cmd</code> en Mac = <code>Ctrl</code> en Windows/Linux</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "navigation-shortcuts",
+      "title": {
+        "nl": "Navigatie shortcuts",
+        "en": "Navigation Shortcuts",
+        "es": "Atajos de navegación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Gebruik <strong>G</strong> (Go) gevolgd door een letter om naar modules te springen:</p><table><thead><tr><th>Shortcut</th><th>Bestemming</th></tr></thead><tbody><tr><td><code>G + D</code></td><td>Dashboard</td></tr><tr><td><code>G + L</code></td><td>Leads</td></tr><tr><td><code>G + D</code></td><td>Deals</td></tr><tr><td><code>G + C</code></td><td>Contacts</td></tr><tr><td><code>G + P</code></td><td>Properties</td></tr><tr><td><code>G + R</code></td><td>Relations</td></tr><tr><td><code>G + J</code></td><td>Projects</td></tr><tr><td><code>G + A</code></td><td>Activities</td></tr><tr><td><code>G + K</code></td><td>Calendar</td></tr><tr><td><code>G + S</code></td><td>Settings</td></tr></tbody></table><p><strong>Voorbeeld:</strong> Type snel <code>G</code> en dan <code>D</code> om naar Deals te gaan.</p>"
+        },
+        "en": {
+          "text": "<p>Use <strong>G</strong> (Go) followed by a letter to jump to modules:</p><table><thead><tr><th>Shortcut</th><th>Destination</th></tr></thead><tbody><tr><td><code>G + D</code></td><td>Dashboard</td></tr><tr><td><code>G + L</code></td><td>Leads</td></tr><tr><td><code>G + D</code></td><td>Deals</td></tr><tr><td><code>G + C</code></td><td>Contacts</td></tr><tr><td><code>G + P</code></td><td>Properties</td></tr><tr><td><code>G + R</code></td><td>Relations</td></tr><tr><td><code>G + J</code></td><td>Projects</td></tr><tr><td><code>G + A</code></td><td>Activities</td></tr><tr><td><code>G + K</code></td><td>Calendar</td></tr><tr><td><code>G + S</code></td><td>Settings</td></tr></tbody></table><p><strong>Example:</strong> Type quickly <code>G</code> then <code>D</code> to go to Deals.</p>"
+        },
+        "es": {
+          "text": "<p>Usa <strong>G</strong> (Go) seguido de una letra para saltar a módulos:</p><table><thead><tr><th>Atajo</th><th>Destino</th></tr></thead><tbody><tr><td><code>G + D</code></td><td>Dashboard</td></tr><tr><td><code>G + L</code></td><td>Leads</td></tr><tr><td><code>G + D</code></td><td>Deals</td></tr><tr><td><code>G + C</code></td><td>Contacts</td></tr><tr><td><code>G + P</code></td><td>Properties</td></tr><tr><td><code>G + R</code></td><td>Relations</td></tr><tr><td><code>G + J</code></td><td>Projects</td></tr><tr><td><code>G + A</code></td><td>Activities</td></tr><tr><td><code>G + K</code></td><td>Calendar</td></tr><tr><td><code>G + S</code></td><td>Settings</td></tr></tbody></table><p><strong>Ejemplo:</strong> Escribe rápidamente <code>G</code> y luego <code>D</code> para ir a Deals.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "list-shortcuts",
+      "title": {
+        "nl": "List view shortcuts",
+        "en": "List View Shortcuts",
+        "es": "Atajos de vista de lista"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>In list views (Contacts, Properties, Deals, etc.):</p><table><thead><tr><th>Shortcut</th><th>Actie</th></tr></thead><tbody><tr><td><code>↑ / ↓</code></td><td>Navigate door items</td></tr><tr><td><code>Enter</code></td><td>Open geselecteerd item</td></tr><tr><td><code>E</code></td><td>Edit geselecteerd item</td></tr><tr><td><code>Del / Backspace</code></td><td>Delete geselecteerd item</td></tr><tr><td><code>J / K</code></td><td>Next / Previous (zoals ↑ ↓)</td></tr><tr><td><code>Cmd/Ctrl + A</code></td><td>Select all</td></tr><tr><td><code>Cmd/Ctrl + Click</code></td><td>Multi-select items</td></tr><tr><td><code>Shift + Click</code></td><td>Select range</td></tr><tr><td><code>F</code></td><td>Focus filter/search</td></tr><tr><td><code>R</code></td><td>Refresh list</td></tr></tbody></table>"
+        },
+        "en": {
+          "text": "<p>In list views (Contacts, Properties, Deals, etc.):</p><table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td><code>↑ / ↓</code></td><td>Navigate through items</td></tr><tr><td><code>Enter</code></td><td>Open selected item</td></tr><tr><td><code>E</code></td><td>Edit selected item</td></tr><tr><td><code>Del / Backspace</code></td><td>Delete selected item</td></tr><tr><td><code>J / K</code></td><td>Next / Previous (like ↑ ↓)</td></tr><tr><td><code>Cmd/Ctrl + A</code></td><td>Select all</td></tr><tr><td><code>Cmd/Ctrl + Click</code></td><td>Multi-select items</td></tr><tr><td><code>Shift + Click</code></td><td>Select range</td></tr><tr><td><code>F</code></td><td>Focus filter/search</td></tr><tr><td><code>R</code></td><td>Refresh list</td></tr></tbody></table>"
+        },
+        "es": {
+          "text": "<p>En vistas de lista (Contacts, Properties, Deals, etc.):</p><table><thead><tr><th>Atajo</th><th>Acción</th></tr></thead><tbody><tr><td><code>↑ / ↓</code></td><td>Navegar por elementos</td></tr><tr><td><code>Enter</code></td><td>Abrir elemento seleccionado</td></tr><tr><td><code>E</code></td><td>Editar elemento seleccionado</td></tr><tr><td><code>Del / Backspace</code></td><td>Eliminar elemento seleccionado</td></tr><tr><td><code>J / K</code></td><td>Siguiente / Anterior (como ↑ ↓)</td></tr><tr><td><code>Cmd/Ctrl + A</code></td><td>Seleccionar todo</td></tr><tr><td><code>Cmd/Ctrl + Click</code></td><td>Multi-seleccionar elementos</td></tr><tr><td><code>Shift + Click</code></td><td>Seleccionar rango</td></tr><tr><td><code>F</code></td><td>Enfocar filtro/búsqueda</td></tr><tr><td><code>R</code></td><td>Actualizar lista</td></tr></tbody></table>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "deal-kanban-shortcuts",
+      "title": {
+        "nl": "Deal Kanban shortcuts",
+        "en": "Deal Kanban Shortcuts",
+        "es": "Atajos de Kanban de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<table><thead><tr><th>Shortcut</th><th>Actie</th></tr></thead><tbody><tr><td><code>← / →</code></td><td>Navigate tussen stages (columns)</td></tr><tr><td><code>↑ / ↓</code></td><td>Navigate tussen deals in column</td></tr><tr><td><code>Enter</code></td><td>Open selected deal</td></tr><tr><td><code>M</code></td><td>Move deal to andere stage</td></tr><tr><td><code>C</code></td><td>Create new deal in current stage</td></tr><tr><td><code>W</code></td><td>Mark deal as Won</td></tr><tr><td><code>L</code></td><td>Mark deal as Lost</td></tr><tr><td><code>1-9</code></td><td>Jump naar stage nummer (1 = eerste, 2 = tweede, etc.)</td></tr></tbody></table>"
+        },
+        "en": {
+          "text": "<table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td><code>← / →</code></td><td>Navigate between stages (columns)</td></tr><tr><td><code>↑ / ↓</code></td><td>Navigate between deals in column</td></tr><tr><td><code>Enter</code></td><td>Open selected deal</td></tr><tr><td><code>M</code></td><td>Move deal to other stage</td></tr><tr><td><code>C</code></td><td>Create new deal in current stage</td></tr><tr><td><code>W</code></td><td>Mark deal as Won</td></tr><tr><td><code>L</code></td><td>Mark deal as Lost</td></tr><tr><td><code>1-9</code></td><td>Jump to stage number (1 = first, 2 = second, etc.)</td></tr></tbody></table>"
+        },
+        "es": {
+          "text": "<table><thead><tr><th>Atajo</th><th>Acción</th></tr></thead><tbody><tr><td><code>← / →</code></td><td>Navegar entre etapas (columnas)</td></tr><tr><td><code>↑ / ↓</code></td><td>Navegar entre deals en columna</td></tr><tr><td><code>Enter</code></td><td>Abrir deal seleccionado</td></tr><tr><td><code>M</code></td><td>Mover deal a otra etapa</td></tr><tr><td><code>C</code></td><td>Crear nuevo deal en etapa actual</td></tr><tr><td><code>W</code></td><td>Marcar deal como Won</td></tr><tr><td><code>L</code></td><td>Marcar deal como Lost</td></tr><tr><td><code>1-9</code></td><td>Saltar a número de etapa (1 = primera, 2 = segunda, etc.)</td></tr></tbody></table>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "editor-shortcuts",
+      "title": {
+        "nl": "Editor shortcuts",
+        "en": "Editor Shortcuts",
+        "es": "Atajos de editor"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>In forms en text editors (Notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Actie</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
+        },
+        "en": {
+          "text": "<p>In forms and text editors (Notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
+        },
+        "es": {
+          "text": "<p>En formularios y editores de texto (Notes, Emails, etc.):</p><table><thead><tr><th>Atajo</th><th>Acción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Texto en negrita</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Texto en cursiva</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Subrayar texto</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insertar enlace</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Deshacer</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Rehacer</td></tr><tr><td><code>Tab</code></td><td>Siguiente campo / Sangría</td></tr><tr><td><code>Shift + Tab</code></td><td>Campo anterior / Quitar sangría</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Enviar formulario / Enviar email</td></tr></tbody></table>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "learning-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Leer shortcuts stapsgewijs",
+        "en": "Learn Shortcuts Step by Step",
+        "es": "Aprende atajos paso a paso"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Probeer niet alles tegelijk te leren!</strong> Begin met deze 5 essentials:</p><ol><li><code>Cmd/Ctrl + K</code> - Global search (meest gebruikt)</li><li><code>G + D / G + C / G + P</code> - Navigate naar Deals/Contacts/Properties</li><li><code>?</code> - Help reminder als je vast zit</li><li><code>Esc</code> - Close/Cancel</li><li><code>Cmd/Ctrl + N</code> - Create new</li></ol><p>Als je deze 5 onder de knie hebt, voeg er 1-2 nieuwe per week toe. Binnen een maand navigeer je als een pro!</p>"
+        },
+        "en": {
+          "text": "<p><strong>Don't try to learn everything at once!</strong> Start with these 5 essentials:</p><ol><li><code>Cmd/Ctrl + K</code> - Global search (most used)</li><li><code>G + D / G + C / G + P</code> - Navigate to Deals/Contacts/Properties</li><li><code>?</code> - Help reminder when stuck</li><li><code>Esc</code> - Close/Cancel</li><li><code>Cmd/Ctrl + N</code> - Create new</li></ol><p>Once you've mastered these 5, add 1-2 new ones per week. Within a month you'll navigate like a pro!</p>"
+        },
+        "es": {
+          "text": "<p><strong>¡No intentes aprender todo a la vez!</strong> Comienza con estos 5 esenciales:</p><ol><li><code>Cmd/Ctrl + K</code> - Búsqueda global (más usado)</li><li><code>G + D / G + C / G + P</code> - Navegar a Deals/Contacts/Properties</li><li><code>?</code> - Recordatorio de ayuda cuando estás atascado</li><li><code>Esc</code> - Cerrar/Cancelar</li><li><code>Cmd/Ctrl + N</code> - Crear nuevo</li></ol><p>Una vez que domines estos 5, agrega 1-2 nuevos por semana. ¡En un mes navegarás como un pro!</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "navigation-basics",
+    "quick-start-guide",
+    "dashboard-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik custom keyboard shortcuts instellen?",
+        "en": "Can I set custom keyboard shortcuts?",
+        "es": "¿Puedo establecer atajos de teclado personalizados?"
+      },
+      "answer": {
+        "nl": "Momenteel niet, maar we werken aan een feature waarmee je je eigen shortcuts kunt configureren. Laat het ons weten in de feedback welke shortcuts jij zou willen aanpassen!",
+        "en": "Currently not, but we're working on a feature where you can configure your own shortcuts. Let us know in the feedback which shortcuts you'd like to customize!",
+        "es": "Actualmente no, pero estamos trabajando en una función donde puedes configurar tus propios atajos. ¡Haznos saber en los comentarios qué atajos te gustaría personalizar!"
+      }
+    },
+    {
+      "question": {
+        "nl": "Werken shortcuts op mobiel?",
+        "en": "Do shortcuts work on mobile?",
+        "es": "¿Los atajos funcionan en móvil?"
+      },
+      "answer": {
+        "nl": "Nee, keyboard shortcuts werken alleen met fysieke keyboards (desktop, laptop, tablets met keyboard). Op mobiel gebruik je touch gestures (swipes, taps, long press).",
+        "en": "No, keyboard shortcuts only work with physical keyboards (desktop, laptop, tablets with keyboard). On mobile you use touch gestures (swipes, taps, long press).",
+        "es": "No, los atajos de teclado solo funcionan con teclados físicos (escritorio, laptop, tablets con teclado). En móvil usas gestos táctiles (deslizamientos, toques, presión prolongada)."
+      }
+    }
+  ]
+}

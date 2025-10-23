@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "id": "calendar-availability-management",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "intermediate",
+    "tags": ["calendar", "availability", "time-blocking", "productivity", "work-life-balance"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
+    "keywords": ["calendar availability", "time blocking", "schedule management", "work hours", "productivity scheduling"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Beschikbaarheid en tijdblokken beheren",
+      "en": "Managing Availability and Time Blocks",
+      "es": "Gestionar disponibilidad y bloques de tiempo"
+    },
+    "description": {
+      "nl": "Leer hoe je je beschikbaarheid instelt, werkuren definieert, tijdblokken creëert en je werk-privé balans beschermt met slimme kalenderfuncties.",
+      "en": "Learn how to set your availability, define work hours, create time blocks, and protect your work-life balance with smart calendar features.",
+      "es": "Aprende a establecer tu disponibilidad, definir horarios de trabajo, crear bloques de tiempo y proteger tu equilibrio trabajo-vida con funciones inteligentes de calendario."
+    },
+    "icon": "schedule"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Als vastgoedprofessional is je tijd je meest waardevolle bezit. Zonder duidelijke grenzen en gestructureerde beschikbaarheid kun je snel overweldigd raken door laatste-moment verzoeken en constant context switching. Tesoro's beschikbaarheidsbeheer tools helpen je controle te nemen over je agenda, focustijd te beschermen en toch responsief te blijven naar klanten. Deze gids laat je zien hoe je je kalender zo instelt dat die voor jou werkt, niet andersom.",
+        "en": "As a real estate professional, your time is your most valuable asset. Without clear boundaries and structured availability, you can quickly become overwhelmed by last-minute requests and constant context switching. Tesoro's availability management tools help you take control of your schedule, protect focus time, and still remain responsive to clients. This guide will show you how to set up your calendar to work for you, not against you.",
+        "es": "Como profesional inmobiliario, tu tiempo es tu activo más valioso. Sin límites claros y disponibilidad estructurada, puedes abrumarte rápidamente con solicitudes de último minuto y cambios constantes de contexto. Las herramientas de gestión de disponibilidad de Tesoro te ayudan a tomar control de tu agenda, proteger tiempo de concentración y aún permanecer receptivo a los clientes. Esta guía te mostrará cómo configurar tu calendario para que trabaje para ti, no en tu contra."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "setting-work-hours",
+      "title": {
+        "nl": "Werkuren instellen",
+        "en": "Setting Work Hours",
+        "es": "Establecer horario de trabajo"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Definieer je standaard werkuren",
+            "en": "Define Your Standard Work Hours",
+            "es": "Definir tu horario de trabajo estándar"
+          },
+          "description": {
+            "nl": "Ga naar Instellingen > Kalender > Werkuren. Stel je standaard werktijden in voor elke dag van de week. Bijvoorbeeld: Maandag-Vrijdag 9:00-18:00, Zaterdag 10:00-14:00, Zondag gesloten. Deze uren bepalen wanneer klanten bezichtigingen en vergaderingen kunnen boeken via je planningslinks.",
+            "en": "Go to Settings > Calendar > Work Hours. Set your standard working hours for each day of the week. For example: Monday-Friday 9:00-18:00, Saturday 10:00-14:00, Sunday closed. These hours determine when clients can book viewings and meetings through your scheduling links.",
+            "es": "Ve a Configuración > Calendario > Horario de trabajo. Establece tu horario de trabajo estándar para cada día de la semana. Por ejemplo: Lunes-Viernes 9:00-18:00, Sábado 10:00-14:00, Domingo cerrado. Estas horas determinan cuándo los clientes pueden reservar visitas y reuniones a través de tus enlaces de programación."
+          }
+        },
+        {
+          "title": {
+            "nl": "Stel beschikbaarheidstypen in",
+            "en": "Set Availability Types",
+            "es": "Establecer tipos de disponibilidad"
+          },
+          "description": {
+            "nl": "Binnen je werkuren kun je verschillende beschikbaarheidstypen definiëren: Volledig beschikbaar (voor alle types afspraken), Alleen vergaderingen (geen bezichtigingen), Alleen bezichtigingen (geen vergaderingen), of Alleen noodgevallen (voor belangrijke klanten). Dit helpt je je dag te structureren rond je meest productieve werkpatronen.",
+            "en": "Within your work hours, you can define different availability types: Fully available (for all appointment types), Meetings only (no viewings), Viewings only (no meetings), or Emergencies only (for VIP clients). This helps you structure your day around your most productive work patterns.",
+            "es": "Dentro de tu horario de trabajo, puedes definir diferentes tipos de disponibilidad: Totalmente disponible (para todos los tipos de citas), Solo reuniones (sin visitas), Solo visitas (sin reuniones), o Solo emergencias (para clientes VIP). Esto te ayuda a estructurar tu día alrededor de tus patrones de trabajo más productivos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer lunchpauzes",
+            "en": "Configure Lunch Breaks",
+            "es": "Configurar pausas para almorzar"
+          },
+          "description": {
+            "nl": "Blokkeer automatisch je lunchpauze elke dag. Kies je voorkeursperiode (bijvoorbeeld 12:30-13:30) en Tesoro voorkomt dat afspraken in deze tijd worden gepland. Je kunt 'Flexibele lunch' inschakelen, waardoor de lunchpauze automatisch verschuift als je een belangrijke bezichtiging moet plannen.",
+            "en": "Automatically block your lunch break each day. Choose your preferred period (for example, 12:30-13:30) and Tesoro prevents appointments from being scheduled during this time. You can enable 'Flexible lunch', which allows the lunch break to automatically shift if you need to schedule an important viewing.",
+            "es": "Bloquea automáticamente tu pausa para almorzar cada día. Elige tu período preferido (por ejemplo, 12:30-13:30) y Tesoro previene que se programen citas durante este tiempo. Puedes habilitar 'Almuerzo flexible', que permite que la pausa para almorzar se desplace automáticamente si necesitas programar una visita importante."
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg vakantie toe",
+            "en": "Add Time Off",
+            "es": "Agregar tiempo libre"
+          },
+          "description": {
+            "nl": "Plan je vakantiedagen en vrije dagen van tevoren. Ga naar Kalender > Tijd vrij en selecteer de datums. Tesoro markeert deze dagen automatisch als niet beschikbaar en stuurt automatische antwoorden naar planningsverzoeken tijdens je afwezigheid. Je kunt een collega aanwijzen die klanten kunnen contacteren terwijl je weg bent.",
+            "en": "Schedule your vacation days and time off in advance. Go to Calendar > Time Off and select the dates. Tesoro automatically marks these days as unavailable and sends automatic responses to scheduling requests during your absence. You can designate a colleague for clients to contact while you're away.",
+            "es": "Programa tus días de vacaciones y tiempo libre con anticipación. Ve a Calendario > Tiempo libre y selecciona las fechas. Tesoro marca automáticamente estos días como no disponibles y envía respuestas automáticas a solicitudes de programación durante tu ausencia. Puedes designar un colega para que los clientes contacten mientras estás fuera."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "boundary-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Grenzen stellen",
+        "en": "Setting Boundaries",
+        "es": "Establecer límites"
+      },
+      "content": {
+        "nl": "Wees realistisch maar beschermend met je werkuren. Onderzoek toont dat vastgoedprofessionals die duidelijke werkuren handhaven 30% hogere klanttevredenheid scoren omdat ze beter gefocust zijn tijdens werkuren. Klanten respecteren grenzen als je consequent bent - en je brandt minder snel op.",
+        "en": "Be realistic but protective with your work hours. Research shows real estate professionals who maintain clear work hours score 30% higher client satisfaction because they're better focused during work hours. Clients respect boundaries when you're consistent - and you'll avoid burnout.",
+        "es": "Sé realista pero protector con tu horario de trabajo. La investigación muestra que los profesionales inmobiliarios que mantienen horarios de trabajo claros obtienen un 30% más de satisfacción del cliente porque están mejor enfocados durante las horas de trabajo. Los clientes respetan los límites cuando eres consistente - y evitarás el agotamiento."
+      }
+    },
+    {
+      "type": "text",
+      "id": "time-blocking",
+      "title": {
+        "nl": "Tijd blokkeren voor focuswerk",
+        "en": "Time Blocking for Focus Work",
+        "es": "Bloques de tiempo para trabajo enfocado"
+      },
+      "content": {
+        "nl": "Tijd blokkeren is een krachtige techniek waarbij je specifieke tijdblokken reserveert voor bepaalde typen werk. Dit voorkomt fragmentatie van je dag en stelt je in staat om je beste werk te doen.",
+        "en": "Time blocking is a powerful technique where you reserve specific time blocks for certain types of work. This prevents fragmentation of your day and allows you to do your best work.",
+        "es": "El bloqueo de tiempo es una técnica poderosa donde reservas bloques de tiempo específicos para ciertos tipos de trabajo. Esto previene la fragmentación de tu día y te permite hacer tu mejor trabajo."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "creating-time-blocks",
+      "title": {
+        "nl": "Tijdblokken creëren",
+        "en": "Creating Time Blocks",
+        "es": "Crear bloques de tiempo"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Administratief blok",
+            "en": "Administrative Block",
+            "es": "Bloque administrativo"
+          },
+          "description": {
+            "nl": "Reserveer 1-2 uur per dag voor administratief werk: contracten verwerken, e-mails beantwoorden, CRM bijwerken. Veel agents blokkeren 8:00-9:00 's ochtends of 17:00-18:00 's avonds. Maak een terugkerend evenement 'Admin tijd' en markeer het als 'Bezet maar niet beschikbaar voor plannen'.",
+            "en": "Reserve 1-2 hours per day for administrative work: processing contracts, answering emails, updating CRM. Many agents block 8:00-9:00 in the morning or 17:00-18:00 in the evening. Create a recurring event 'Admin time' and mark it as 'Busy but not available for scheduling'.",
+            "es": "Reserva 1-2 horas por día para trabajo administrativo: procesar contratos, responder correos electrónicos, actualizar CRM. Muchos agentes bloquean 8:00-9:00 por la mañana o 17:00-18:00 por la tarde. Crea un evento recurrente 'Tiempo administrativo' y márcalo como 'Ocupado pero no disponible para programación'."
+          }
+        },
+        {
+          "title": {
+            "nl": "Prospecting blok",
+            "en": "Prospecting Block",
+            "es": "Bloque de prospección"
+          },
+          "description": {
+            "nl": "Wijd dagelijks tijd toe aan nieuwe business development: cold calling, netwerken, social media engagement. Veel succesvolle agents blokkeren 9:00-11:00 voor prospecting omdat energie en focus dan het hoogst zijn. Schakel notificaties uit tijdens dit blok voor maximale focus.",
+            "en": "Dedicate daily time to new business development: cold calling, networking, social media engagement. Many successful agents block 9:00-11:00 for prospecting because energy and focus are highest then. Turn off notifications during this block for maximum focus.",
+            "es": "Dedica tiempo diario al desarrollo de nuevos negocios: llamadas en frío, networking, participación en redes sociales. Muchos agentes exitosos bloquean 9:00-11:00 para prospección porque la energía y el enfoque son más altos entonces. Desactiva las notificaciones durante este bloque para máximo enfoque."
+          }
+        },
+        {
+          "title": {
+            "nl": "Deep work blok",
+            "en": "Deep Work Block",
+            "es": "Bloque de trabajo profundo"
+          },
+          "description": {
+            "nl": "Reserveer tijd voor complexe taken die ononderbroken focus vereisen: marktanalyses schrijven, presentaties voorbereiden, strategische planning. 2-3 uur blokken werken het beste. Communiceer deze tijd aan je team: 'Alleen storen voor noodgevallen'. Gebruik de Tesoro 'Do Not Disturb' modus om alle notificaties te pauzeren.",
+            "en": "Reserve time for complex tasks requiring uninterrupted focus: writing market analyses, preparing presentations, strategic planning. 2-3 hour blocks work best. Communicate this time to your team: 'Only interrupt for emergencies'. Use Tesoro's 'Do Not Disturb' mode to pause all notifications.",
+            "es": "Reserva tiempo para tareas complejas que requieren enfoque ininterrumpido: escribir análisis de mercado, preparar presentaciones, planificación estratégica. Bloques de 2-3 horas funcionan mejor. Comunica este tiempo a tu equipo: 'Solo interrumpir para emergencias'. Usa el modo 'No molestar' de Tesoro para pausar todas las notificaciones."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bezichtigingsblok",
+            "en": "Viewing Block",
+            "es": "Bloque de visitas"
+          },
+          "description": {
+            "nl": "Groepeer bezichtigingen in specifieke tijdblokken in plaats van ze door de hele dag te spreiden. Bijvoorbeeld: alle bezichtigingen tussen 14:00-17:00. Dit minimaliseert reistijd en mentale context switches. Gebruik Tesoro's route optimalisatie om bezichtigingen in het blok geografisch te ordenen.",
+            "en": "Group viewings into specific time blocks instead of spreading them throughout the day. For example: all viewings between 14:00-17:00. This minimizes travel time and mental context switches. Use Tesoro's route optimization to arrange viewings in the block geographically.",
+            "es": "Agrupa las visitas en bloques de tiempo específicos en lugar de dispersarlas durante todo el día. Por ejemplo: todas las visitas entre 14:00-17:00. Esto minimiza el tiempo de viaje y los cambios de contexto mental. Usa la optimización de rutas de Tesoro para organizar las visitas en el bloque geográficamente."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "time-blocking-science",
+      "variant": "info",
+      "title": {
+        "nl": "De wetenschap van tijd blokkeren",
+        "en": "The Science of Time Blocking",
+        "es": "La ciencia del bloqueo de tiempo"
+      },
+      "content": {
+        "nl": "Studies tonen dat het tot 23 minuten duurt om volledig te herstellen van een onderbreking. Door vergelijkbare taken te groeperen in tijdblokken, verminder je context switching en verhoog je productiviteit met gemiddeld 40%. De top 10% van vastgoedprofessionals gebruiken bijna allemaal een vorm van tijd blokkeren.",
+        "en": "Studies show it takes up to 23 minutes to fully recover from an interruption. By grouping similar tasks into time blocks, you reduce context switching and increase productivity by an average of 40%. The top 10% of real estate professionals almost all use some form of time blocking.",
+        "es": "Los estudios muestran que se necesitan hasta 23 minutos para recuperarse completamente de una interrupción. Al agrupar tareas similares en bloques de tiempo, reduces el cambio de contexto y aumentas la productividad en un promedio de 40%. El 10% superior de profesionales inmobiliarios casi todos usan alguna forma de bloqueo de tiempo."
+      }
+    },
+    {
+      "type": "text",
+      "id": "buffer-time",
+      "title": {
+        "nl": "Buffer tijd en reistijd",
+        "en": "Buffer Time and Travel Time",
+        "es": "Tiempo de búfer y tiempo de viaje"
+      },
+      "content": {
+        "nl": "Een van de meest voorkomende fouten in kalenderbeheer is het niet toevoegen van buffer tijd tussen afspraken. Dit leidt tot late aankomsten, stress en verminderde kwaliteit van interacties.",
+        "en": "One of the most common mistakes in calendar management is not adding buffer time between appointments. This leads to late arrivals, stress, and reduced quality of interactions.",
+        "es": "Uno de los errores más comunes en la gestión del calendario es no agregar tiempo de búfer entre citas. Esto conduce a llegadas tarde, estrés y reducción de la calidad de las interacciones."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "buffer-configuration",
+      "title": {
+        "nl": "Buffer configuratie",
+        "en": "Buffer Configuration",
+        "es": "Configuración de búfer"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Standaard buffer tussen afspraken",
+            "en": "Default Buffer Between Appointments",
+            "es": "Búfer predeterminado entre citas"
+          },
+          "description": {
+            "nl": "Ga naar Instellingen > Kalender > Buffer instellingen. Stel een minimale buffer in tussen alle afspraken. 15 minuten is een goed startpunt. Dit geeft je tijd om: notities te maken van de vorige afspraak, te reizen naar de volgende locatie, even te resetten mentaal, onverwachte vertragingen op te vangen.",
+            "en": "Go to Settings > Calendar > Buffer Settings. Set a minimum buffer between all appointments. 15 minutes is a good starting point. This gives you time to: take notes from the previous appointment, travel to the next location, mentally reset briefly, absorb unexpected delays.",
+            "es": "Ve a Configuración > Calendario > Configuración de búfer. Establece un búfer mínimo entre todas las citas. 15 minutos es un buen punto de partida. Esto te da tiempo para: tomar notas de la cita anterior, viajar a la siguiente ubicación, restablecer mentalmente brevemente, absorber retrasos inesperados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Automatische reistijd berekening",
+            "en": "Automatic Travel Time Calculation",
+            "es": "Cálculo automático de tiempo de viaje"
+          },
+          "description": {
+            "nl": "Schakel 'Slimme reistijd' in. Tesoro berekent automatisch reistijd tussen bezichtigingen op basis van werkelijke afstanden en verkeerscondities. Als een bezichtiging 30 minuten reizen vergt, wordt automatisch 30 minuten buffer toegevoegd. Je ziet de reistijd in je kalender als een apart blok gelabeld 'Reizen naar [adres]'.",
+            "en": "Enable 'Smart travel time'. Tesoro automatically calculates travel time between viewings based on actual distances and traffic conditions. If a viewing requires 30 minutes of travel, 30 minutes of buffer is automatically added. You see the travel time in your calendar as a separate block labeled 'Travel to [address]'.",
+            "es": "Habilita 'Tiempo de viaje inteligente'. Tesoro calcula automáticamente el tiempo de viaje entre visitas basado en distancias reales y condiciones de tráfico. Si una visita requiere 30 minutos de viaje, se agregan automáticamente 30 minutos de búfer. Ves el tiempo de viaje en tu calendario como un bloque separado etiquetado 'Viajar a [dirección]'."
+          }
+        },
+        {
+          "title": {
+            "nl": "Aangepaste buffer per evenementtype",
+            "en": "Custom Buffer Per Event Type",
+            "es": "Búfer personalizado por tipo de evento"
+          },
+          "description": {
+            "nl": "Verschillende evenementen vereisen verschillende buffer. Stel aangepaste buffers in: Bezichtigingen - 15 min voor, 10 min na (tijd voor aankomst en snelle notities). Vergaderingen - 10 min voor, 15 min na (voorbereiding en follow-up). Afsluitingen - 30 min voor, 30 min na (extra voorbereiding en documentatie). Open huizen - 60 min voor, 30 min na (setup en cleanup).",
+            "en": "Different events require different buffers. Set custom buffers: Viewings - 15 min before, 10 min after (time for arrival and quick notes). Meetings - 10 min before, 15 min after (preparation and follow-up). Closings - 30 min before, 30 min after (extra preparation and documentation). Open houses - 60 min before, 30 min after (setup and cleanup).",
+            "es": "Diferentes eventos requieren diferentes búfers. Establece búfers personalizados: Visitas - 15 min antes, 10 min después (tiempo para llegada y notas rápidas). Reuniones - 10 min antes, 15 min después (preparación y seguimiento). Cierres - 30 min antes, 30 min después (preparación extra y documentación). Casas abiertas - 60 min antes, 30 min después (preparación y limpieza)."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "late-tip",
+      "variant": "warning",
+      "title": {
+        "nl": "Te laat komen vermijden",
+        "en": "Avoiding Being Late",
+        "es": "Evitar llegar tarde"
+      },
+      "content": {
+        "nl": "Te laat komen voor afspraken is één van de top klachten over vastgoedprofessionals. Met correcte buffer tijd en reistijd berekening wordt dit bijna volledig vermeden. Als je consistent te laat bent, verhoog dan je standaard buffer met 5-10 minuten. Het is beter om vroeg aan te komen dan klanten te laten wachten.",
+        "en": "Being late for appointments is one of the top complaints about real estate professionals. With proper buffer time and travel time calculation, this is almost completely avoided. If you're consistently late, increase your default buffer by 5-10 minutes. It's better to arrive early than make clients wait.",
+        "es": "Llegar tarde a las citas es una de las principales quejas sobre los profesionales inmobiliarios. Con el tiempo de búfer apropiado y el cálculo del tiempo de viaje, esto se evita casi por completo. Si llegas tarde consistentemente, aumenta tu búfer predeterminado en 5-10 minutos. Es mejor llegar temprano que hacer esperar a los clientes."
+      }
+    },
+    {
+      "type": "text",
+      "id": "availability-exceptions",
+      "title": {
+        "nl": "Uitzonderingen op beschikbaarheid",
+        "en": "Availability Exceptions",
+        "es": "Excepciones de disponibilidad"
+      },
+      "content": {
+        "nl": "Soms moet je je standaard beschikbaarheid overrulen voor speciale situaties. Tesoro maakt dit eenvoudig zonder je hele schema te verstoren.",
+        "en": "Sometimes you need to override your standard availability for special situations. Tesoro makes this easy without disrupting your entire schedule.",
+        "es": "A veces necesitas anular tu disponibilidad estándar para situaciones especiales. Tesoro hace esto fácil sin interrumpir toda tu agenda."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "handling-exceptions",
+      "title": {
+        "nl": "Uitzonderingen beheren",
+        "en": "Handling Exceptions",
+        "es": "Manejar excepciones"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Eenmalige beschikbaarheid wijziging",
+            "en": "One-Time Availability Change",
+            "es": "Cambio de disponibilidad único"
+          },
+          "description": {
+            "nl": "Als je op een specifieke dag andere uren wilt werken, klik je op die dag in de kalender en selecteer je 'Werkuren voor deze dag aanpassen'. Bijvoorbeeld: werken tot 20:00 op een dinsdag voor een belangrijke afsluiting. Je standaard schema blijft ongewijzigd voor andere dagen.",
+            "en": "If you want to work different hours on a specific day, click that day in the calendar and select 'Adjust work hours for this day'. For example: working until 20:00 on a Tuesday for an important closing. Your default schedule remains unchanged for other days.",
+            "es": "Si quieres trabajar diferentes horas en un día específico, haz clic en ese día en el calendario y selecciona 'Ajustar horario de trabajo para este día'. Por ejemplo: trabajar hasta las 20:00 un martes para un cierre importante. Tu horario predeterminado permanece sin cambios para otros días."
+          }
+        },
+        {
+          "title": {
+            "nl": "VIP klant beschikbaarheid",
+            "en": "VIP Client Availability",
+            "es": "Disponibilidad de cliente VIP"
+          },
+          "description": {
+            "nl": "Voor high-value klanten kun je speciale beschikbaarheid instellen. Ga naar het contactrecord en schakel 'VIP status' in. VIP klanten kunnen buiten je normale werkuren plannen (als je dat toestaat) en krijgen prioriteit bij conflicten. Stel een maximaal aantal VIP klanten in om overcommitment te voorkomen.",
+            "en": "For high-value clients, you can set special availability. Go to the contact record and enable 'VIP status'. VIP clients can schedule outside your normal work hours (if you allow it) and get priority during conflicts. Set a maximum number of VIP clients to prevent overcommitment.",
+            "es": "Para clientes de alto valor, puedes establecer disponibilidad especial. Ve al registro de contacto y habilita 'Estado VIP'. Los clientes VIP pueden programar fuera de tu horario de trabajo normal (si lo permites) y obtienen prioridad durante conflictos. Establece un número máximo de clientes VIP para prevenir sobrecompromiso."
+          }
+        },
+        {
+          "title": {
+            "nl": "Noodbeschikbaarheid",
+            "en": "Emergency Availability",
+            "es": "Disponibilidad de emergencia"
+          },
+          "description": {
+            "nl": "Voor echte noodgevallen (contract deadlines, deal problemen) kun je 'Nood slot' creëren. Klik op een geblokkeerde tijd en selecteer 'Noodafspraak toestaan'. Tesoro waarschuwt je dat dit een beschermd blok overrulet, maar staat de boeking toe. Gebruik dit spaarzaam om je grenzen te beschermen.",
+            "en": "For true emergencies (contract deadlines, deal problems), you can create 'Emergency slot'. Click on a blocked time and select 'Allow emergency appointment'. Tesoro warns you that this overrides a protected block, but allows the booking. Use this sparingly to protect your boundaries.",
+            "es": "Para verdaderas emergencias (fechas límite de contrato, problemas de negocio), puedes crear 'Espacio de emergencia'. Haz clic en un tiempo bloqueado y selecciona 'Permitir cita de emergencia'. Tesoro te advierte que esto anula un bloque protegido, pero permite la reserva. Usa esto con moderación para proteger tus límites."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "consistency-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Consistentie is de sleutel",
+        "en": "Consistency Is Key",
+        "es": "La consistencia es clave"
+      },
+      "content": {
+        "nl": "Klanten en collega's wennen aan je beschikbaarheidspatronen. Als je consistent bent met je werkuren en beschikbaarheid, zullen ze minder vaak om uitzonderingen vragen. Wees consequent gedurende minimaal 3 maanden voordat je grote wijzigingen aanbrengt - dit geeft iedereen tijd om zich aan te passen.",
+        "en": "Clients and colleagues get used to your availability patterns. If you're consistent with your work hours and availability, they'll ask for exceptions less often. Be consistent for at least 3 months before making major changes - this gives everyone time to adjust.",
+        "es": "Los clientes y colegas se acostumbran a tus patrones de disponibilidad. Si eres consistente con tu horario de trabajo y disponibilidad, pedirán excepciones con menos frecuencia. Sé consistente durante al menos 3 meses antes de hacer cambios importantes - esto da tiempo a todos para ajustarse."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Hoe voorkom ik dat klanten buiten werkuren plannen?",
+            "en": "How do I prevent clients from scheduling outside work hours?",
+            "es": "¿Cómo evito que los clientes programen fuera del horario de trabajo?"
+          },
+          "answer": {
+            "nl": "Je werkuren in Instellingen > Kalender bepalen automatisch wanneer tijdslots beschikbaar zijn in je planningslinks. Klanten zien alleen tijden binnen je werkuren. Als iemand per e-mail vraagt om een afspraak buiten deze uren, stuur je een beleefde automatische antwoord (configureerbaar) die je werkuren herhaalt en alternatieve tijden voorstelt.",
+            "en": "Your work hours in Settings > Calendar automatically determine when time slots are available in your scheduling links. Clients only see times within your work hours. If someone asks via email for an appointment outside these hours, send a polite automatic response (configurable) that reiterates your work hours and suggests alternative times.",
+            "es": "Tu horario de trabajo en Configuración > Calendario determina automáticamente cuándo los intervalos de tiempo están disponibles en tus enlaces de programación. Los clientes solo ven horarios dentro de tu horario de trabajo. Si alguien pregunta por correo electrónico por una cita fuera de estas horas, envía una respuesta automática educada (configurable) que reitera tu horario de trabajo y sugiere horarios alternativos."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat als ik verschillende werkuren heb in verschillende seizoenen?",
+            "en": "What if I have different work hours in different seasons?",
+            "es": "¿Qué pasa si tengo diferentes horarios de trabajo en diferentes temporadas?"
+          },
+          "answer": {
+            "nl": "Je kunt meerdere werkuren schema's opslaan en schakelen tussen ze. Bijvoorbeeld: 'Zomer schema' (langere avonden) en 'Winter schema' (vroegere eindtijden). Ga naar Instellingen > Kalender > Schema's en creëer meerdere profielen. Schakel tussen ze met één klik wanneer het seizoen verandert.",
+            "en": "You can save multiple work hour schedules and switch between them. For example: 'Summer schedule' (longer evenings) and 'Winter schedule' (earlier end times). Go to Settings > Calendar > Schedules and create multiple profiles. Switch between them with one click when the season changes.",
+            "es": "Puedes guardar múltiples horarios de trabajo y cambiar entre ellos. Por ejemplo: 'Horario de verano' (tardes más largas) y 'Horario de invierno' (horarios de finalización más tempranos). Ve a Configuración > Calendario > Horarios y crea múltiples perfiles. Cambia entre ellos con un clic cuando cambia la temporada."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe communiceer ik mijn beschikbaarheid naar klanten?",
+            "en": "How do I communicate my availability to clients?",
+            "es": "¿Cómo comunico mi disponibilidad a los clientes?"
+          },
+          "answer": {
+            "nl": "Tesoro voegt automatisch je werkuren toe aan je e-mail handtekening en klant-facing documenten. Je kunt ook een 'Beschikbaarheidskaart' genereren om te delen op social media of je website. Wanneer klanten je planningslink gebruiken, zien ze visueel je beschikbare tijden wat verwachtingen meteen duidelijk maakt.",
+            "en": "Tesoro automatically adds your work hours to your email signature and client-facing documents. You can also generate an 'Availability card' to share on social media or your website. When clients use your scheduling link, they visually see your available times which immediately sets expectations.",
+            "es": "Tesoro agrega automáticamente tu horario de trabajo a tu firma de correo electrónico y documentos orientados al cliente. También puedes generar una 'Tarjeta de disponibilidad' para compartir en redes sociales o tu sitio web. Cuando los clientes usan tu enlace de programación, ven visualmente tus horarios disponibles lo que establece inmediatamente las expectativas."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik verschillende beschikbaarheid hebben voor bezichtigingen vs vergaderingen?",
+            "en": "Can I have different availability for viewings vs meetings?",
+            "es": "¿Puedo tener diferente disponibilidad para visitas vs reuniones?"
+          },
+          "answer": {
+            "nl": "Ja! Creëer verschillende planningslinks voor verschillende evenementtypen. Bijvoorbeeld: één link voor bezichtigingen (alleen beschikbaar 14:00-18:00) en één voor vergaderingen (beschikbaar 9:00-12:00 en 14:00-17:00). Elke link kan zijn eigen werkuren, buffer tijden en beschikbaarheidsregels hebben. Dit geeft je maximale flexibiliteit om je dag te structureren.",
+            "en": "Yes! Create different scheduling links for different event types. For example: one link for viewings (only available 14:00-18:00) and one for meetings (available 9:00-12:00 and 14:00-17:00). Each link can have its own work hours, buffer times, and availability rules. This gives you maximum flexibility to structure your day.",
+            "es": "¡Sí! Crea diferentes enlaces de programación para diferentes tipos de eventos. Por ejemplo: un enlace para visitas (solo disponible 14:00-18:00) y uno para reuniones (disponible 9:00-12:00 y 14:00-17:00). Cada enlace puede tener su propio horario de trabajo, tiempos de búfer y reglas de disponibilidad. Esto te da máxima flexibilidad para estructurar tu día."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "calendar-overview-guide",
+    "scheduling-property-viewings",
+    "meeting-scheduling-guide",
+    "productivity-tips-real-estate"
+  ]
+}

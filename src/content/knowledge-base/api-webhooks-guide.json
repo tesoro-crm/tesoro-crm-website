@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "id": "api-webhooks-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "advanced",
+    "tags": ["integrations", "api", "webhooks", "automation", "developers", "rest-api"],
+    "featured": true,
+    "readingTime": 12,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro api", "webhooks crm", "rest api integration", "api automation", "webhook setup"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Tesoro API en webhooks: complete developer guide",
+      "en": "Tesoro API and Webhooks: Complete Developer Guide",
+      "es": "API de Tesoro y webhooks: guía completa para desarrolladores"
+    },
+    "description": {
+      "nl": "Integreer Tesoro CRM met je eigen applicaties via REST API en webhooks. Automatiseer workflows, bouw custom integraties en synchroniseer data real-time.",
+      "en": "Integrate Tesoro CRM with your own applications via REST API and webhooks. Automate workflows, build custom integrations, and synchronize data in real-time.",
+      "es": "Integra Tesoro CRM con tus propias aplicaciones mediante REST API y webhooks. Automatiza flujos de trabajo, construye integraciones personalizadas y sincroniza datos en tiempo real."
+    },
+    "icon": "integration_instructions"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "api-intro",
+      "title": {
+        "nl": "Tesoro API en Webhooks overzicht",
+        "en": "Tesoro API and Webhooks Overview",
+        "es": "Resumen de API de Tesoro y webhooks"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM biedt een complete REST API en webhook systeem voor developers die custom integraties willen bouwen, workflows willen automatiseren of Tesoro willen verbinden met eigen applicaties.</p><p><strong>API mogelijkheden:</strong></p><ul><li>Complete CRUD operaties op contacts, properties, deals</li><li>Search en filtering met advanced queries</li><li>Bulk operations voor efficiënte data synchronisatie</li><li>File uploads (property foto's, documents)</li><li>Custom fields en metadata</li><li>Rate limiting: 1000 requests/minuut</li></ul><p><strong>Webhook mogelijkheden:</strong></p><ul><li>Real-time notifications van CRM events</li><li>Support voor 20+ event types</li><li>Retry logic met exponential backoff</li><li>Signature verification voor beveiliging</li><li>Custom webhook endpoints configureren</li></ul><p><strong>Use cases:</strong></p><ul><li>Website integratie (lead capture forms)</li><li>Custom mobile apps</li><li>Data synchronisatie met ERP/accounting systemen</li><li>Marketing automation platforms koppelen</li><li>Custom dashboards en reporting tools</li><li>AI/ML pipelines voor lead scoring</li></ul><p>Deze guide behandelt authentication, API endpoints, webhooks setup en best practices voor developers.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM offers a complete REST API and webhook system for developers who want to build custom integrations, automate workflows, or connect Tesoro with their own applications.</p><p><strong>API capabilities:</strong></p><ul><li>Complete CRUD operations on contacts, properties, deals</li><li>Search and filtering with advanced queries</li><li>Bulk operations for efficient data synchronization</li><li>File uploads (property photos, documents)</li><li>Custom fields and metadata</li><li>Rate limiting: 1000 requests/minute</li></ul><p><strong>Webhook capabilities:</strong></p><ul><li>Real-time notifications of CRM events</li><li>Support for 20+ event types</li><li>Retry logic with exponential backoff</li><li>Signature verification for security</li><li>Configure custom webhook endpoints</li></ul><p><strong>Use cases:</strong></p><ul><li>Website integration (lead capture forms)</li><li>Custom mobile apps</li><li>Data synchronization with ERP/accounting systems</li><li>Connect marketing automation platforms</li><li>Custom dashboards and reporting tools</li><li>AI/ML pipelines for lead scoring</li></ul><p>This guide covers authentication, API endpoints, webhooks setup, and best practices for developers.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM ofrece una API REST completa y sistema de webhooks para desarrolladores que desean construir integraciones personalizadas, automatizar flujos de trabajo o conectar Tesoro con sus propias aplicaciones.</p><p><strong>Capacidades de API:</strong></p><ul><li>Operaciones CRUD completas en contactos, propiedades, negocios</li><li>Búsqueda y filtrado con consultas avanzadas</li><li>Operaciones masivas para sincronización eficiente de datos</li><li>Cargas de archivos (fotos de propiedades, documentos)</li><li>Campos personalizados y metadatos</li><li>Limitación de velocidad: 1000 solicitudes/minuto</li></ul><p><strong>Capacidades de webhook:</strong></p><ul><li>Notificaciones en tiempo real de eventos CRM</li><li>Soporte para más de 20 tipos de eventos</li><li>Lógica de reintento con retroceso exponencial</li><li>Verificación de firma para seguridad</li><li>Configurar endpoints de webhook personalizados</li></ul><p><strong>Casos de uso:</strong></p><ul><li>Integración de sitio web (formularios de captura de leads)</li><li>Aplicaciones móviles personalizadas</li><li>Sincronización de datos con sistemas ERP/contabilidad</li><li>Conectar plataformas de automatización de marketing</li><li>Paneles de control personalizados y herramientas de informes</li><li>Pipelines de IA/ML para puntuación de leads</li></ul><p>Esta guía cubre autenticación, endpoints de API, configuración de webhooks y mejores prácticas para desarrolladores.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "api-setup",
+      "title": {
+        "nl": "API authenticatie en toegang",
+        "en": "API Authentication and Access",
+        "es": "Autenticación y acceso a API"
+      },
+      "subsections": [
+        {
+          "id": "step-1-api-key",
+          "title": {
+            "nl": "Stap 1: API key genereren",
+            "en": "Step 1: Generate API Key",
+            "es": "Paso 1: generar clave API"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Om de Tesoro API te gebruiken heb je een API key nodig voor authenticatie.</p><h4>API key aanmaken:</h4><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings → API & Integrations → API Keys</strong></li><li>Klik <strong>+ Generate New API Key</strong></li><li>Vul in:  <ul><li><strong>Key Name:</strong> Beschrijvende naam (bijv. 'Website Integration')</li><li><strong>Permissions:</strong> Selecteer toegangsrechten:    <ul><li><strong>Read:</strong> GET requests voor data ophalen</li><li><strong>Write:</strong> POST/PUT requests voor data aanmaken/wijzigen</li><li><strong>Delete:</strong> DELETE requests voor data verwijderen</li></ul></li><li><strong>Scope:</strong> Beperk tot specifieke resources (optioneel):    <ul><li>Contacts only</li><li>Properties only</li><li>Deals only</li><li>All resources (default)</li></ul></li><li><strong>IP Whitelist:</strong> Optionele IP restrictie voor extra beveiliging</li><li><strong>Expiry:</strong> Vervaldatum (aanbevolen: 1 jaar)</li></ul></li><li>Klik <strong>Generate Key</strong></li></ol><p>Je API key wordt getoond: <code>tsr_live_1234567890abcdef...</code></p><p><strong>Belangrijk:</strong> Kopieer en bewaar je API key veilig. Deze wordt maar één keer getoond. Behandel API keys als wachtwoorden.</p><h4>API key gebruiken:</h4><p>Voeg de API key toe aan je HTTP requests via de Authorization header:</p><pre>curl https://api.tesoro.estate/v1/contacts \\\n  -H \"Authorization: Bearer tsr_live_1234567890abcdef\" \\\n  -H \"Content-Type: application/json\"</pre>"
+            },
+            "en": {
+              "text": "<p>To use the Tesoro API, you need an API key for authentication.</p><h4>Creating API key:</h4><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings → API & Integrations → API Keys</strong></li><li>Click <strong>+ Generate New API Key</strong></li><li>Fill in:  <ul><li><strong>Key Name:</strong> Descriptive name (e.g., 'Website Integration')</li><li><strong>Permissions:</strong> Select access rights:    <ul><li><strong>Read:</strong> GET requests to retrieve data</li><li><strong>Write:</strong> POST/PUT requests to create/modify data</li><li><strong>Delete:</strong> DELETE requests to delete data</li></ul></li><li><strong>Scope:</strong> Limit to specific resources (optional):    <ul><li>Contacts only</li><li>Properties only</li><li>Deals only</li><li>All resources (default)</li></ul></li><li><strong>IP Whitelist:</strong> Optional IP restriction for extra security</li><li><strong>Expiry:</strong> Expiration date (recommended: 1 year)</li></ul></li><li>Click <strong>Generate Key</strong></li></ol><p>Your API key is shown: <code>tsr_live_1234567890abcdef...</code></p><p><strong>Important:</strong> Copy and store your API key securely. It's only shown once. Treat API keys like passwords.</p><h4>Using API key:</h4><p>Add the API key to your HTTP requests via the Authorization header:</p><pre>curl https://api.tesoro.estate/v1/contacts \\\n  -H \"Authorization: Bearer tsr_live_1234567890abcdef\" \\\n  -H \"Content-Type: application/json\"</pre>"
+            },
+            "es": {
+              "text": "<p>Para usar la API de Tesoro, necesitas una clave API para autenticación.</p><h4>Crear clave API:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings → API & Integrations → API Keys</strong></li><li>Haz clic en <strong>+ Generate New API Key</strong></li><li>Completa:  <ul><li><strong>Key Name:</strong> Nombre descriptivo (ej., 'Website Integration')</li><li><strong>Permissions:</strong> Selecciona derechos de acceso:    <ul><li><strong>Read:</strong> Solicitudes GET para obtener datos</li><li><strong>Write:</strong> Solicitudes POST/PUT para crear/modificar datos</li><li><strong>Delete:</strong> Solicitudes DELETE para eliminar datos</li></ul></li><li><strong>Scope:</strong> Limitar a recursos específicos (opcional):    <ul><li>Solo contactos</li><li>Solo propiedades</li><li>Solo negocios</li><li>Todos los recursos (predeterminado)</li></ul></li><li><strong>IP Whitelist:</strong> Restricción de IP opcional para seguridad adicional</li><li><strong>Expiry:</strong> Fecha de vencimiento (recomendado: 1 año)</li></ul></li><li>Haz clic en <strong>Generate Key</strong></li></ol><p>Se muestra tu clave API: <code>tsr_live_1234567890abcdef...</code></p><p><strong>Importante:</strong> Copia y guarda tu clave API de forma segura. Solo se muestra una vez. Trata las claves API como contraseñas.</p><h4>Usar clave API:</h4><p>Agrega la clave API a tus solicitudes HTTP mediante el encabezado de autorización:</p><pre>curl https://api.tesoro.estate/v1/contacts \\\n  -H \"Authorization: Bearer tsr_live_1234567890abcdef\" \\\n  -H \"Content-Type: application/json\"</pre>"
+            }
+          }
+        },
+        {
+          "id": "step-2-api-endpoints",
+          "title": {
+            "nl": "Stap 2: API endpoints en operations",
+            "en": "Step 2: API Endpoints and Operations",
+            "es": "Paso 2: endpoints y operaciones de API"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>De Tesoro API is georganiseerd rond resources. Hier zijn de belangrijkste endpoints:</p><h4>Contacts API:</h4><pre>GET    /v1/contacts           # List all contacts\nGET    /v1/contacts/{id}      # Get specific contact\nPOST   /v1/contacts           # Create new contact\nPUT    /v1/contacts/{id}      # Update contact\nDELETE /v1/contacts/{id}      # Delete contact\nGET    /v1/contacts/search    # Search contacts</pre><p><strong>Voorbeeld - Create contact:</strong></p><pre>POST https://api.tesoro.estate/v1/contacts\nAuthorization: Bearer tsr_live_...\nContent-Type: application/json\n\n{\n  \"firstName\": \"Maria\",\n  \"lastName\": \"Garcia\",\n  \"email\": \"maria@example.com\",\n  \"phone\": \"+34612345678\",\n  \"type\": \"buyer\",\n  \"source\": \"website\",\n  \"tags\": [\"hot-lead\"],\n  \"customFields\": {\n    \"budget\": \"250000\",\n    \"location_preference\": \"Barcelona\"\n  }\n}</pre><h4>Properties API:</h4><pre>GET    /v1/properties         # List all properties\nGET    /v1/properties/{id}    # Get specific property\nPOST   /v1/properties         # Create new property\nPUT    /v1/properties/{id}    # Update property\nDELETE /v1/properties/{id}    # Delete property\nPOST   /v1/properties/{id}/photos  # Upload photos</pre><p><strong>Voorbeeld - List properties met filtering:</strong></p><pre>GET https://api.tesoro.estate/v1/properties?\n  status=available&\n  type=apartment&\n  minPrice=200000&\n  maxPrice=400000&\n  city=Barcelona&\n  limit=50&\n  offset=0</pre><h4>Deals API:</h4><pre>GET    /v1/deals              # List all deals\nGET    /v1/deals/{id}         # Get specific deal\nPOST   /v1/deals              # Create new deal\nPUT    /v1/deals/{id}         # Update deal\nDELETE /v1/deals/{id}         # Delete deal\nPUT    /v1/deals/{id}/stage   # Move deal to different stage</pre><h4>Bulk Operations:</h4><pre>POST   /v1/contacts/bulk      # Bulk create contacts\nPUT    /v1/contacts/bulk      # Bulk update contacts\nPOST   /v1/properties/bulk    # Bulk create properties</pre><p>Bulk endpoints accepteren arrays en retourneren batch results met success/error details per item.</p>"
+            },
+            "en": {
+              "text": "<p>The Tesoro API is organized around resources. Here are the main endpoints:</p><h4>Contacts API:</h4><pre>GET    /v1/contacts           # List all contacts\nGET    /v1/contacts/{id}      # Get specific contact\nPOST   /v1/contacts           # Create new contact\nPUT    /v1/contacts/{id}      # Update contact\nDELETE /v1/contacts/{id}      # Delete contact\nGET    /v1/contacts/search    # Search contacts</pre><p><strong>Example - Create contact:</strong></p><pre>POST https://api.tesoro.estate/v1/contacts\nAuthorization: Bearer tsr_live_...\nContent-Type: application/json\n\n{\n  \"firstName\": \"Maria\",\n  \"lastName\": \"Garcia\",\n  \"email\": \"maria@example.com\",\n  \"phone\": \"+34612345678\",\n  \"type\": \"buyer\",\n  \"source\": \"website\",\n  \"tags\": [\"hot-lead\"],\n  \"customFields\": {\n    \"budget\": \"250000\",\n    \"location_preference\": \"Barcelona\"\n  }\n}</pre><h4>Properties API:</h4><pre>GET    /v1/properties         # List all properties\nGET    /v1/properties/{id}    # Get specific property\nPOST   /v1/properties         # Create new property\nPUT    /v1/properties/{id}    # Update property\nDELETE /v1/properties/{id}    # Delete property\nPOST   /v1/properties/{id}/photos  # Upload photos</pre><p><strong>Example - List properties with filtering:</strong></p><pre>GET https://api.tesoro.estate/v1/properties?\n  status=available&\n  type=apartment&\n  minPrice=200000&\n  maxPrice=400000&\n  city=Barcelona&\n  limit=50&\n  offset=0</pre><h4>Deals API:</h4><pre>GET    /v1/deals              # List all deals\nGET    /v1/deals/{id}         # Get specific deal\nPOST   /v1/deals              # Create new deal\nPUT    /v1/deals/{id}         # Update deal\nDELETE /v1/deals/{id}         # Delete deal\nPUT    /v1/deals/{id}/stage   # Move deal to different stage</pre><h4>Bulk Operations:</h4><pre>POST   /v1/contacts/bulk      # Bulk create contacts\nPUT    /v1/contacts/bulk      # Bulk update contacts\nPOST   /v1/properties/bulk    # Bulk create properties</pre><p>Bulk endpoints accept arrays and return batch results with success/error details per item.</p>"
+            },
+            "es": {
+              "text": "<p>La API de Tesoro está organizada alrededor de recursos. Aquí están los endpoints principales:</p><h4>API de contactos:</h4><pre>GET    /v1/contacts           # Listar todos los contactos\nGET    /v1/contacts/{id}      # Obtener contacto específico\nPOST   /v1/contacts           # Crear nuevo contacto\nPUT    /v1/contacts/{id}      # Actualizar contacto\nDELETE /v1/contacts/{id}      # Eliminar contacto\nGET    /v1/contacts/search    # Buscar contactos</pre><p><strong>Ejemplo - Crear contacto:</strong></p><pre>POST https://api.tesoro.estate/v1/contacts\nAuthorization: Bearer tsr_live_...\nContent-Type: application/json\n\n{\n  \"firstName\": \"Maria\",\n  \"lastName\": \"Garcia\",\n  \"email\": \"maria@example.com\",\n  \"phone\": \"+34612345678\",\n  \"type\": \"buyer\",\n  \"source\": \"website\",\n  \"tags\": [\"hot-lead\"],\n  \"customFields\": {\n    \"budget\": \"250000\",\n    \"location_preference\": \"Barcelona\"\n  }\n}</pre><h4>API de propiedades:</h4><pre>GET    /v1/properties         # Listar todas las propiedades\nGET    /v1/properties/{id}    # Obtener propiedad específica\nPOST   /v1/properties         # Crear nueva propiedad\nPUT    /v1/properties/{id}    # Actualizar propiedad\nDELETE /v1/properties/{id}    # Eliminar propiedad\nPOST   /v1/properties/{id}/photos  # Subir fotos</pre><p><strong>Ejemplo - Listar propiedades con filtrado:</strong></p><pre>GET https://api.tesoro.estate/v1/properties?\n  status=available&\n  type=apartment&\n  minPrice=200000&\n  maxPrice=400000&\n  city=Barcelona&\n  limit=50&\n  offset=0</pre><h4>API de negocios:</h4><pre>GET    /v1/deals              # Listar todos los negocios\nGET    /v1/deals/{id}         # Obtener negocio específico\nPOST   /v1/deals              # Crear nuevo negocio\nPUT    /v1/deals/{id}         # Actualizar negocio\nDELETE /v1/deals/{id}         # Eliminar negocio\nPUT    /v1/deals/{id}/stage   # Mover negocio a etapa diferente</pre><h4>Operaciones masivas:</h4><pre>POST   /v1/contacts/bulk      # Crear contactos masivamente\nPUT    /v1/contacts/bulk      # Actualizar contactos masivamente\nPOST   /v1/properties/bulk    # Crear propiedades masivamente</pre><p>Los endpoints masivos aceptan matrices y devuelven resultados por lotes con detalles de éxito/error por elemento.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-3-webhooks",
+          "title": {
+            "nl": "Stap 3: Webhooks configureren",
+            "en": "Step 3: Configure Webhooks",
+            "es": "Paso 3: configurar webhooks"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Webhooks sturen real-time notificaties naar je applicatie wanneer events plaatsvinden in Tesoro CRM.</p><h4>Webhook endpoint aanmaken:</h4><ol><li>In Tesoro: <strong>Settings → API & Integrations → Webhooks</strong></li><li>Klik <strong>+ Create Webhook</strong></li><li>Configureer:  <ul><li><strong>Endpoint URL:</strong> Je server URL (bijv. https://yourdomain.com/webhooks/tesoro)</li><li><strong>Events:</strong> Selecteer event types:    <ul><li>contact.created</li><li>contact.updated</li><li>contact.deleted</li><li>property.created</li><li>property.updated</li><li>property.status_changed</li><li>deal.created</li><li>deal.stage_changed</li><li>deal.won</li><li>deal.lost</li><li>viewing.scheduled</li><li>viewing.completed</li></ul></li><li><strong>Secret:</strong> Automatisch gegenereerd voor signature verification</li><li><strong>Active:</strong> Enabled</li></ul></li><li>Klik <strong>Save Webhook</strong></li></ol><h4>Webhook payload voorbeeld:</h4><pre>POST https://yourdomain.com/webhooks/tesoro\nX-Tesoro-Event: contact.created\nX-Tesoro-Signature: sha256=abc123...\nContent-Type: application/json\n\n{\n  \"event\": \"contact.created\",\n  \"timestamp\": \"2025-10-23T15:30:00Z\",\n  \"data\": {\n    \"id\": \"cnt_1234567890\",\n    \"firstName\": \"Maria\",\n    \"lastName\": \"Garcia\",\n    \"email\": \"maria@example.com\",\n    \"phone\": \"+34612345678\",\n    \"type\": \"buyer\",\n    \"source\": \"website\",\n    \"createdAt\": \"2025-10-23T15:30:00Z\"\n  }\n}</pre><h4>Webhook verifiëren (signature check):</h4><p>Verifieer altijd dat webhook van Tesoro komt:</p><pre>const crypto = require('crypto');\n\nfunction verifyWebhook(payload, signature, secret) {\n  const hash = crypto\n    .createHmac('sha256', secret)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  \n  return signature === `sha256=${hash}`;\n}\n\n// In je webhook handler:\nif (!verifyWebhook(req.body, req.headers['x-tesoro-signature'], webhookSecret)) {\n  return res.status(401).send('Invalid signature');\n}</pre><h4>Webhook retry logic:</h4><p>Tesoro probeert failed webhooks automatisch opnieuw:</p><ul><li>Immediate retry na 1 seconde</li><li>Retry na 5 seconden</li><li>Retry na 30 seconden</li><li>Retry na 5 minuten</li><li>Retry na 1 uur</li><li>Na 5 mislukte pogingen: webhook wordt disabled</li></ul><p>Return HTTP 200 binnen 5 seconden om retry te voorkomen.</p>"
+            },
+            "en": {
+              "text": "<p>Webhooks send real-time notifications to your application when events occur in Tesoro CRM.</p><h4>Creating webhook endpoint:</h4><ol><li>In Tesoro: <strong>Settings → API & Integrations → Webhooks</strong></li><li>Click <strong>+ Create Webhook</strong></li><li>Configure:  <ul><li><strong>Endpoint URL:</strong> Your server URL (e.g., https://yourdomain.com/webhooks/tesoro)</li><li><strong>Events:</strong> Select event types:    <ul><li>contact.created</li><li>contact.updated</li><li>contact.deleted</li><li>property.created</li><li>property.updated</li><li>property.status_changed</li><li>deal.created</li><li>deal.stage_changed</li><li>deal.won</li><li>deal.lost</li><li>viewing.scheduled</li><li>viewing.completed</li></ul></li><li><strong>Secret:</strong> Automatically generated for signature verification</li><li><strong>Active:</strong> Enabled</li></ul></li><li>Click <strong>Save Webhook</strong></li></ol><h4>Webhook payload example:</h4><pre>POST https://yourdomain.com/webhooks/tesoro\nX-Tesoro-Event: contact.created\nX-Tesoro-Signature: sha256=abc123...\nContent-Type: application/json\n\n{\n  \"event\": \"contact.created\",\n  \"timestamp\": \"2025-10-23T15:30:00Z\",\n  \"data\": {\n    \"id\": \"cnt_1234567890\",\n    \"firstName\": \"Maria\",\n    \"lastName\": \"Garcia\",\n    \"email\": \"maria@example.com\",\n    \"phone\": \"+34612345678\",\n    \"type\": \"buyer\",\n    \"source\": \"website\",\n    \"createdAt\": \"2025-10-23T15:30:00Z\"\n  }\n}</pre><h4>Verifying webhook (signature check):</h4><p>Always verify that webhook comes from Tesoro:</p><pre>const crypto = require('crypto');\n\nfunction verifyWebhook(payload, signature, secret) {\n  const hash = crypto\n    .createHmac('sha256', secret)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  \n  return signature === `sha256=${hash}`;\n}\n\n// In your webhook handler:\nif (!verifyWebhook(req.body, req.headers['x-tesoro-signature'], webhookSecret)) {\n  return res.status(401).send('Invalid signature');\n}</pre><h4>Webhook retry logic:</h4><p>Tesoro automatically retries failed webhooks:</p><ul><li>Immediate retry after 1 second</li><li>Retry after 5 seconds</li><li>Retry after 30 seconds</li><li>Retry after 5 minutes</li><li>Retry after 1 hour</li><li>After 5 failed attempts: webhook is disabled</li></ul><p>Return HTTP 200 within 5 seconds to prevent retry.</p>"
+            },
+            "es": {
+              "text": "<p>Los webhooks envían notificaciones en tiempo real a tu aplicación cuando ocurren eventos en Tesoro CRM.</p><h4>Crear endpoint de webhook:</h4><ol><li>En Tesoro: <strong>Settings → API & Integrations → Webhooks</strong></li><li>Haz clic en <strong>+ Create Webhook</strong></li><li>Configurar:  <ul><li><strong>Endpoint URL:</strong> URL de tu servidor (ej., https://yourdomain.com/webhooks/tesoro)</li><li><strong>Events:</strong> Seleccionar tipos de eventos:    <ul><li>contact.created</li><li>contact.updated</li><li>contact.deleted</li><li>property.created</li><li>property.updated</li><li>property.status_changed</li><li>deal.created</li><li>deal.stage_changed</li><li>deal.won</li><li>deal.lost</li><li>viewing.scheduled</li><li>viewing.completed</li></ul></li><li><strong>Secret:</strong> Generado automáticamente para verificación de firma</li><li><strong>Active:</strong> Habilitado</li></ul></li><li>Haz clic en <strong>Save Webhook</strong></li></ol><h4>Ejemplo de carga útil de webhook:</h4><pre>POST https://yourdomain.com/webhooks/tesoro\nX-Tesoro-Event: contact.created\nX-Tesoro-Signature: sha256=abc123...\nContent-Type: application/json\n\n{\n  \"event\": \"contact.created\",\n  \"timestamp\": \"2025-10-23T15:30:00Z\",\n  \"data\": {\n    \"id\": \"cnt_1234567890\",\n    \"firstName\": \"Maria\",\n    \"lastName\": \"Garcia\",\n    \"email\": \"maria@example.com\",\n    \"phone\": \"+34612345678\",\n    \"type\": \"buyer\",\n    \"source\": \"website\",\n    \"createdAt\": \"2025-10-23T15:30:00Z\"\n  }\n}</pre><h4>Verificar webhook (verificación de firma):</h4><p>Siempre verifica que el webhook proviene de Tesoro:</p><pre>const crypto = require('crypto');\n\nfunction verifyWebhook(payload, signature, secret) {\n  const hash = crypto\n    .createHmac('sha256', secret)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  \n  return signature === `sha256=${hash}`;\n}\n\n// En tu manejador de webhook:\nif (!verifyWebhook(req.body, req.headers['x-tesoro-signature'], webhookSecret)) {\n  return res.status(401).send('Invalid signature');\n}</pre><h4>Lógica de reintento de webhook:</h4><p>Tesoro reintenta automáticamente webhooks fallidos:</p><ul><li>Reintento inmediato después de 1 segundo</li><li>Reintento después de 5 segundos</li><li>Reintento después de 30 segundos</li><li>Reintento después de 5 minutos</li><li>Reintento después de 1 hora</li><li>Después de 5 intentos fallidos: el webhook se deshabilita</li></ul><p>Devuelve HTTP 200 en 5 segundos para evitar reintento.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "api-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "API best practices en beveiliging",
+        "en": "API Best Practices and Security",
+        "es": "Mejores prácticas de API y seguridad"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Beveiliging:</strong></p><ul><li><strong>API keys veilig opslaan:</strong> Nooit in frontend code of public repositories</li><li><strong>Environment variables:</strong> Gebruik .env files voor credentials</li><li><strong>HTTPS only:</strong> Alle API calls moeten via HTTPS</li><li><strong>Signature verification:</strong> Altijd webhook signatures verifiëren</li><li><strong>IP whitelisting:</strong> Beperk API toegang tot bekende IP's</li></ul><p><strong>Performance:</strong></p><ul><li><strong>Rate limiting:</strong> Max 1000 requests/minuut - spread requests over tijd</li><li><strong>Pagination:</strong> Gebruik limit/offset voor grote datasets</li><li><strong>Bulk operations:</strong> Gebruik bulk endpoints voor meerdere items (max 100 per request)</li><li><strong>Caching:</strong> Cache API responses waar mogelijk</li><li><strong>Webhooks > Polling:</strong> Gebruik webhooks in plaats van constant API polling</li></ul><p><strong>Error handling:</strong></p><ul><li>Implementeer exponential backoff bij rate limit errors</li><li>Log alle API errors voor debugging</li><li>Handle 4xx errors gracefully (bad request, not found, etc.)</li><li>Retry 5xx errors (server errors) met backoff</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Security:</strong></p><ul><li><strong>Store API keys securely:</strong> Never in frontend code or public repositories</li><li><strong>Environment variables:</strong> Use .env files for credentials</li><li><strong>HTTPS only:</strong> All API calls must be via HTTPS</li><li><strong>Signature verification:</strong> Always verify webhook signatures</li><li><strong>IP whitelisting:</strong> Limit API access to known IPs</li></ul><p><strong>Performance:</strong></p><ul><li><strong>Rate limiting:</strong> Max 1000 requests/minute - spread requests over time</li><li><strong>Pagination:</strong> Use limit/offset for large datasets</li><li><strong>Bulk operations:</strong> Use bulk endpoints for multiple items (max 100 per request)</li><li><strong>Caching:</strong> Cache API responses where possible</li><li><strong>Webhooks > Polling:</strong> Use webhooks instead of constant API polling</li></ul><p><strong>Error handling:</strong></p><ul><li>Implement exponential backoff on rate limit errors</li><li>Log all API errors for debugging</li><li>Handle 4xx errors gracefully (bad request, not found, etc.)</li><li>Retry 5xx errors (server errors) with backoff</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Seguridad:</strong></p><ul><li><strong>Almacenar claves API de forma segura:</strong> Nunca en código frontend o repositorios públicos</li><li><strong>Variables de entorno:</strong> Usa archivos .env para credenciales</li><li><strong>Solo HTTPS:</strong> Todas las llamadas API deben ser mediante HTTPS</li><li><strong>Verificación de firma:</strong> Siempre verifica las firmas de webhook</li><li><strong>Lista blanca de IP:</strong> Limita el acceso API a IPs conocidas</li></ul><p><strong>Rendimiento:</strong></p><ul><li><strong>Limitación de velocidad:</strong> Máx 1000 solicitudes/minuto - distribuye solicitudes en el tiempo</li><li><strong>Paginación:</strong> Usa limit/offset para conjuntos de datos grandes</li><li><strong>Operaciones masivas:</strong> Usa endpoints masivos para múltiples elementos (máx 100 por solicitud)</li><li><strong>Almacenamiento en caché:</strong> Almacena en caché las respuestas API donde sea posible</li><li><strong>Webhooks > Sondeo:</strong> Usa webhooks en lugar de sondeo constante de API</li></ul><p><strong>Manejo de errores:</strong></p><ul><li>Implementa retroceso exponencial en errores de límite de velocidad</li><li>Registra todos los errores API para depuración</li><li>Maneja errores 4xx con gracia (solicitud incorrecta, no encontrado, etc.)</li><li>Reintenta errores 5xx (errores de servidor) con retroceso</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "code-examples",
+      "title": {
+        "nl": "Code voorbeelden",
+        "en": "Code Examples",
+        "es": "Ejemplos de código"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>JavaScript/Node.js voorbeeld:</h4><pre>const axios = require('axios');\n\nconst API_KEY = process.env.TESORO_API_KEY;\nconst BASE_URL = 'https://api.tesoro.estate/v1';\n\n// Create contact\nasync function createContact(contactData) {\n  try {\n    const response = await axios.post(\n      `${BASE_URL}/contacts`,\n      contactData,\n      {\n        headers: {\n          'Authorization': `Bearer ${API_KEY}`,\n          'Content-Type': 'application/json'\n        }\n      }\n    );\n    return response.data;\n  } catch (error) {\n    console.error('Error creating contact:', error.response?.data);\n    throw error;\n  }\n}\n\n// Usage\nconst newContact = await createContact({\n  firstName: 'Maria',\n  lastName: 'Garcia',\n  email: 'maria@example.com',\n  phone: '+34612345678',\n  type: 'buyer'\n});</pre><h4>Python voorbeeld:</h4><pre>import requests\nimport os\n\nAPI_KEY = os.getenv('TESORO_API_KEY')\nBASE_URL = 'https://api.tesoro.estate/v1'\n\ndef create_contact(contact_data):\n    headers = {\n        'Authorization': f'Bearer {API_KEY}',\n        'Content-Type': 'application/json'\n    }\n    \n    response = requests.post(\n        f'{BASE_URL}/contacts',\n        json=contact_data,\n        headers=headers\n    )\n    response.raise_for_status()\n    return response.json()\n\n# Usage\nnew_contact = create_contact({\n    'firstName': 'Maria',\n    'lastName': 'Garcia',\n    'email': 'maria@example.com',\n    'phone': '+34612345678',\n    'type': 'buyer'\n})</pre><h4>Webhook handler voorbeeld (Express.js):</h4><pre>const express = require('express');\nconst crypto = require('crypto');\n\nconst app = express();\napp.use(express.json());\n\nconst WEBHOOK_SECRET = process.env.TESORO_WEBHOOK_SECRET;\n\nfunction verifySignature(payload, signature) {\n  const hash = crypto\n    .createHmac('sha256', WEBHOOK_SECRET)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  return signature === `sha256=${hash}`;\n}\n\napp.post('/webhooks/tesoro', (req, res) => {\n  const signature = req.headers['x-tesoro-signature'];\n  \n  if (!verifySignature(req.body, signature)) {\n    return res.status(401).send('Invalid signature');\n  }\n  \n  const { event, data } = req.body;\n  \n  switch (event) {\n    case 'contact.created':\n      console.log('New contact:', data);\n      // Your custom logic here\n      break;\n    case 'deal.won':\n      console.log('Deal won:', data);\n      // Trigger celebration automation\n      break;\n    default:\n      console.log('Unhandled event:', event);\n  }\n  \n  res.status(200).send('OK');\n});\n\napp.listen(3000);</pre>"
+        },
+        "en": {
+          "text": "<h4>JavaScript/Node.js example:</h4><pre>const axios = require('axios');\n\nconst API_KEY = process.env.TESORO_API_KEY;\nconst BASE_URL = 'https://api.tesoro.estate/v1';\n\n// Create contact\nasync function createContact(contactData) {\n  try {\n    const response = await axios.post(\n      `${BASE_URL}/contacts`,\n      contactData,\n      {\n        headers: {\n          'Authorization': `Bearer ${API_KEY}`,\n          'Content-Type': 'application/json'\n        }\n      }\n    );\n    return response.data;\n  } catch (error) {\n    console.error('Error creating contact:', error.response?.data);\n    throw error;\n  }\n}\n\n// Usage\nconst newContact = await createContact({\n  firstName: 'Maria',\n  lastName: 'Garcia',\n  email: 'maria@example.com',\n  phone: '+34612345678',\n  type: 'buyer'\n});</pre><h4>Python example:</h4><pre>import requests\nimport os\n\nAPI_KEY = os.getenv('TESORO_API_KEY')\nBASE_URL = 'https://api.tesoro.estate/v1'\n\ndef create_contact(contact_data):\n    headers = {\n        'Authorization': f'Bearer {API_KEY}',\n        'Content-Type': 'application/json'\n    }\n    \n    response = requests.post(\n        f'{BASE_URL}/contacts',\n        json=contact_data,\n        headers=headers\n    )\n    response.raise_for_status()\n    return response.json()\n\n# Usage\nnew_contact = create_contact({\n    'firstName': 'Maria',\n    'lastName': 'Garcia',\n    'email': 'maria@example.com',\n    'phone': '+34612345678',\n    'type': 'buyer'\n})</pre><h4>Webhook handler example (Express.js):</h4><pre>const express = require('express');\nconst crypto = require('crypto');\n\nconst app = express();\napp.use(express.json());\n\nconst WEBHOOK_SECRET = process.env.TESORO_WEBHOOK_SECRET;\n\nfunction verifySignature(payload, signature) {\n  const hash = crypto\n    .createHmac('sha256', WEBHOOK_SECRET)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  return signature === `sha256=${hash}`;\n}\n\napp.post('/webhooks/tesoro', (req, res) => {\n  const signature = req.headers['x-tesoro-signature'];\n  \n  if (!verifySignature(req.body, signature)) {\n    return res.status(401).send('Invalid signature');\n  }\n  \n  const { event, data } = req.body;\n  \n  switch (event) {\n    case 'contact.created':\n      console.log('New contact:', data);\n      // Your custom logic here\n      break;\n    case 'deal.won':\n      console.log('Deal won:', data);\n      // Trigger celebration automation\n      break;\n    default:\n      console.log('Unhandled event:', event);\n  }\n  \n  res.status(200).send('OK');\n});\n\napp.listen(3000);</pre>"
+        },
+        "es": {
+          "text": "<h4>Ejemplo de JavaScript/Node.js:</h4><pre>const axios = require('axios');\n\nconst API_KEY = process.env.TESORO_API_KEY;\nconst BASE_URL = 'https://api.tesoro.estate/v1';\n\n// Crear contacto\nasync function createContact(contactData) {\n  try {\n    const response = await axios.post(\n      `${BASE_URL}/contacts`,\n      contactData,\n      {\n        headers: {\n          'Authorization': `Bearer ${API_KEY}`,\n          'Content-Type': 'application/json'\n        }\n      }\n    );\n    return response.data;\n  } catch (error) {\n    console.error('Error creating contact:', error.response?.data);\n    throw error;\n  }\n}\n\n// Uso\nconst newContact = await createContact({\n  firstName: 'Maria',\n  lastName: 'Garcia',\n  email: 'maria@example.com',\n  phone: '+34612345678',\n  type: 'buyer'\n});</pre><h4>Ejemplo de Python:</h4><pre>import requests\nimport os\n\nAPI_KEY = os.getenv('TESORO_API_KEY')\nBASE_URL = 'https://api.tesoro.estate/v1'\n\ndef create_contact(contact_data):\n    headers = {\n        'Authorization': f'Bearer {API_KEY}',\n        'Content-Type': 'application/json'\n    }\n    \n    response = requests.post(\n        f'{BASE_URL}/contacts',\n        json=contact_data,\n        headers=headers\n    )\n    response.raise_for_status()\n    return response.json()\n\n# Uso\nnew_contact = create_contact({\n    'firstName': 'Maria',\n    'lastName': 'Garcia',\n    'email': 'maria@example.com',\n    'phone': '+34612345678',\n    'type': 'buyer'\n})</pre><h4>Ejemplo de manejador de webhook (Express.js):</h4><pre>const express = require('express');\nconst crypto = require('crypto');\n\nconst app = express();\napp.use(express.json());\n\nconst WEBHOOK_SECRET = process.env.TESORO_WEBHOOK_SECRET;\n\nfunction verifySignature(payload, signature) {\n  const hash = crypto\n    .createHmac('sha256', WEBHOOK_SECRET)\n    .update(JSON.stringify(payload))\n    .digest('hex');\n  return signature === `sha256=${hash}`;\n}\n\napp.post('/webhooks/tesoro', (req, res) => {\n  const signature = req.headers['x-tesoro-signature'];\n  \n  if (!verifySignature(req.body, signature)) {\n    return res.status(401).send('Invalid signature');\n  }\n  \n  const { event, data } = req.body;\n  \n  switch (event) {\n    case 'contact.created':\n      console.log('Nuevo contacto:', data);\n      // Tu lógica personalizada aquí\n      break;\n    case 'deal.won':\n      console.log('Negocio ganado:', data);\n      // Activar automatización de celebración\n      break;\n    default:\n      console.log('Evento no manejado:', event);\n  }\n  \n  res.status(200).send('OK');\n});\n\napp.listen(3000);</pre>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "idealista-integration-guide",
+    "fotocasa-integration-guide",
+    "whatsapp-business-api"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe krijg ik toegang tot de complete API documentatie?",
+        "en": "How do I access the complete API documentation?",
+        "es": "¿Cómo accedo a la documentación completa de la API?"
+      },
+      "answer": {
+        "nl": "De complete API docs zijn beschikbaar op https://api.tesoro.estate/docs met interactive API explorer, alle endpoints, request/response voorbeelden en postman collection download.",
+        "en": "Complete API docs are available at https://api.tesoro.estate/docs with interactive API explorer, all endpoints, request/response examples, and postman collection download.",
+        "es": "La documentación completa de la API está disponible en https://api.tesoro.estate/docs con explorador interactivo de API, todos los endpoints, ejemplos de solicitud/respuesta y descarga de colección de postman."
+      }
+    },
+    {
+      "question": {
+        "nl": "Zijn er kosten verbonden aan API gebruik?",
+        "en": "Are there costs associated with API usage?",
+        "es": "¿Hay costos asociados con el uso de la API?"
+      },
+      "answer": {
+        "nl": "API toegang is gratis inbegrepen bij alle Tesoro CRM plannen. Rate limit is 1000 requests/minuut. Voor hogere limits kun je enterprise plan overwegen.",
+        "en": "API access is free included with all Tesoro CRM plans. Rate limit is 1000 requests/minute. For higher limits, consider enterprise plan.",
+        "es": "El acceso a la API está incluido gratuitamente en todos los planes de Tesoro CRM. El límite de velocidad es de 1000 solicitudes/minuto. Para límites más altos, considera el plan empresarial."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik de API gebruiken om data te migreren van een ander CRM?",
+        "en": "Can I use the API to migrate data from another CRM?",
+        "es": "¿Puedo usar la API para migrar datos de otro CRM?"
+      },
+      "answer": {
+        "nl": "Ja, gebruik bulk endpoints (/v1/contacts/bulk, /v1/properties/bulk) voor data migratie. Max 100 items per request. Neem contact op met support voor hulp bij grote migraties (>10,000 records).",
+        "en": "Yes, use bulk endpoints (/v1/contacts/bulk, /v1/properties/bulk) for data migration. Max 100 items per request. Contact support for assistance with large migrations (>10,000 records).",
+        "es": "Sí, usa endpoints masivos (/v1/contacts/bulk, /v1/properties/bulk) para migración de datos. Máx 100 elementos por solicitud. Contacta al soporte para ayuda con migraciones grandes (>10,000 registros)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "id": "deal-pipeline-overview",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    "keywords": ["deal pipeline", "sales pipeline", "Tesoro deals", "real estate pipeline", "deal management"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Complete deal pipeline overzicht",
+      "en": "Complete Deal Pipeline Overview",
+      "es": "Visión general completa del pipeline de deals"
+    },
+    "description": {
+      "nl": "Leer hoe je het krachtige deal pipeline systeem van Tesoro CRM gebruikt om je sales proces te beheren van lead tot closing met AI-powered matching en real-time collaboration.",
+      "en": "Learn how to use Tesoro CRM's powerful deal pipeline system to manage your sales process from lead to closing with AI-powered matching and real-time collaboration.",
+      "es": "Aprende cómo usar el potente sistema de pipeline de deals de Tesoro CRM para gestionar tu proceso de ventas desde el lead hasta el cierre con coincidencia impulsada por IA y colaboración en tiempo real."
+    },
+    "icon": "timeline"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het deal pipeline systeem is het hart van je sales proces in Tesoro CRM. Het biedt een visuele, gestructureerde manier om alle actieve deals te volgen, van eerste contact tot successful closing.</p><p>Met geavanceerde features zoals AI-powered property matching, drag-and-drop Kanban boards, en real-time team collaboration, kun je je hele sales funnel effectief beheren en je conversie rates maximaliseren.</p>"
+        },
+        "en": {
+          "text": "<p>The deal pipeline system is the heart of your sales process in Tesoro CRM. It provides a visual, structured way to track all active deals from first contact to successful closing.</p><p>With advanced features like AI-powered property matching, drag-and-drop Kanban boards, and real-time team collaboration, you can effectively manage your entire sales funnel and maximize your conversion rates.</p>"
+        },
+        "es": {
+          "text": "<p>El sistema de pipeline de deals es el corazón de tu proceso de ventas en Tesoro CRM. Proporciona una forma visual y estructurada de rastrear todos los deals activos desde el primer contacto hasta el cierre exitoso.</p><p>Con características avanzadas como coincidencia de propiedades impulsada por IA, tableros Kanban de arrastrar y soltar, y colaboración en equipo en tiempo real, puedes gestionar efectivamente todo tu embudo de ventas y maximizar tus tasas de conversión.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "key-benefits",
+      "variant": "info",
+      "title": {
+        "nl": "Belangrijkste voordelen van deal pipeline",
+        "en": "Key Benefits of Deal Pipeline",
+        "es": "Beneficios clave del pipeline de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Visueel overzicht:</strong> Zie in één oogopslag waar elke deal zich bevindt</li><li><strong>AI-powered matching:</strong> Automatische property suggesties gebaseerd op buyer criteria</li><li><strong>Team collaboration:</strong> Real-time updates en shared ownership</li><li><strong>Customizable stages:</strong> Pas pipeline stages aan aan je sales proces</li><li><strong>Commission tracking:</strong> Automatische commissie berekeningen</li><li><strong>Activity history:</strong> Complete timeline van alle deal activiteiten</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Visual overview:</strong> See at a glance where every deal stands</li><li><strong>AI-powered matching:</strong> Automatic property suggestions based on buyer criteria</li><li><strong>Team collaboration:</strong> Real-time updates and shared ownership</li><li><strong>Customizable stages:</strong> Adapt pipeline stages to your sales process</li><li><strong>Commission tracking:</strong> Automatic commission calculations</li><li><strong>Activity history:</strong> Complete timeline of all deal activities</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Visión general visual:</strong> Ver de un vistazo dónde se encuentra cada deal</li><li><strong>Coincidencia impulsada por IA:</strong> Sugerencias automáticas de propiedades basadas en criterios del comprador</li><li><strong>Colaboración en equipo:</strong> Actualizaciones en tiempo real y propiedad compartida</li><li><strong>Etapas personalizables:</strong> Adapta las etapas del pipeline a tu proceso de ventas</li><li><strong>Seguimiento de comisiones:</strong> Cálculos automáticos de comisiones</li><li><strong>Historial de actividades:</strong> Línea de tiempo completa de todas las actividades del deal</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "pipeline-structure",
+      "title": {
+        "nl": "Pipeline structuur en stages",
+        "en": "Pipeline Structure and Stages",
+        "es": "Estructura y etapas del pipeline"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het Tesoro deal pipeline bestaat uit customizable stages die je sales proces weerspiegelen. De standaard pipeline bevat:</p><ol><li><strong>Lead:</strong> Initial contact, basic qualification</li><li><strong>Qualification:</strong> Budget en timeline verified</li><li><strong>Viewing:</strong> Property viewings scheduled en uitgevoerd</li><li><strong>Negotiation:</strong> Offer onderhandeling actief</li><li><strong>Closing:</strong> Contract voorbereiding en signing</li><li><strong>Won:</strong> Deal succesvol afgesloten</li><li><strong>Lost:</strong> Deal niet tot stand gekomen</li></ol><p>Elke stage kan aangepast worden aan je specifieke business proces, met custom naming en business rules.</p>"
+        },
+        "en": {
+          "text": "<p>The Tesoro deal pipeline consists of customizable stages that reflect your sales process. The default pipeline includes:</p><ol><li><strong>Lead:</strong> Initial contact, basic qualification</li><li><strong>Qualification:</strong> Budget and timeline verified</li><li><strong>Viewing:</strong> Property viewings scheduled and completed</li><li><strong>Negotiation:</strong> Offer negotiation active</li><li><strong>Closing:</strong> Contract preparation and signing</li><li><strong>Won:</strong> Deal successfully closed</li><li><strong>Lost:</strong> Deal did not close</li></ol><p>Each stage can be customized to your specific business process with custom naming and business rules.</p>"
+        },
+        "es": {
+          "text": "<p>El pipeline de deals de Tesoro consiste en etapas personalizables que reflejan tu proceso de ventas. El pipeline predeterminado incluye:</p><ol><li><strong>Lead:</strong> Contacto inicial, calificación básica</li><li><strong>Calificación:</strong> Presupuesto y cronograma verificados</li><li><strong>Visita:</strong> Visitas de propiedades programadas y completadas</li><li><strong>Negociación:</strong> Negociación de oferta activa</li><li><strong>Cierre:</strong> Preparación y firma de contrato</li><li><strong>Ganado:</strong> Deal cerrado exitosamente</li><li><strong>Perdido:</strong> Deal no cerrado</li></ol><p>Cada etapa puede personalizarse según tu proceso de negocio específico con nombres personalizados y reglas de negocio.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "using-pipeline",
+      "title": {
+        "nl": "Werken met de deal pipeline",
+        "en": "Working with the Deal Pipeline",
+        "es": "Trabajando con el pipeline de deals"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Navigeren naar deals",
+            "en": "1. Navigate to Deals",
+            "es": "1. Navegar a Deals"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Open de deals sectie vanuit het hoofdmenu. Je ziet direct de Kanban board view met alle actieve deals gegroepeerd per stage.</p><p><strong>View opties:</strong></p><ul><li><strong>Kanban view:</strong> Visual board met columns per stage</li><li><strong>List view:</strong> Table view met alle deal details</li><li><strong>Calendar view:</strong> Deals georganiseerd per closing date</li></ul>"
+            },
+            "en": {
+              "text": "<p>Open the deals section from the main menu. You'll immediately see the Kanban board view with all active deals grouped by stage.</p><p><strong>View options:</strong></p><ul><li><strong>Kanban view:</strong> Visual board with columns per stage</li><li><strong>List view:</strong> Table view with all deal details</li><li><strong>Calendar view:</strong> Deals organized by closing date</li></ul>"
+            },
+            "es": {
+              "text": "<p>Abre la sección de deals desde el menú principal. Verás inmediatamente la vista de tablero Kanban con todos los deals activos agrupados por etapa.</p><p><strong>Opciones de vista:</strong></p><ul><li><strong>Vista Kanban:</strong> Tablero visual con columnas por etapa</li><li><strong>Vista de lista:</strong> Vista de tabla con todos los detalles del deal</li><li><strong>Vista de calendario:</strong> Deals organizados por fecha de cierre</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Deal informatie bekijken",
+            "en": "2. View Deal Information",
+            "es": "2. Ver información del deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Click op een deal card om de detail view te openen. Hier zie je:</p><ul><li><strong>Contact info:</strong> Primary contact en additional participants</li><li><strong>Properties:</strong> Alle linked properties met offer status</li><li><strong>Deal value:</strong> Expected value en commission calculation</li><li><strong>Timeline:</strong> Activity history en upcoming tasks</li><li><strong>Notes & comments:</strong> Team communication en client notes</li><li><strong>Documents:</strong> Contracts, offers, en related files</li></ul>"
+            },
+            "en": {
+              "text": "<p>Click on a deal card to open the detail view. Here you'll see:</p><ul><li><strong>Contact info:</strong> Primary contact and additional participants</li><li><strong>Properties:</strong> All linked properties with offer status</li><li><strong>Deal value:</strong> Expected value and commission calculation</li><li><strong>Timeline:</strong> Activity history and upcoming tasks</li><li><strong>Notes & comments:</strong> Team communication and client notes</li><li><strong>Documents:</strong> Contracts, offers, and related files</li></ul>"
+            },
+            "es": {
+              "text": "<p>Haz clic en una tarjeta de deal para abrir la vista de detalles. Aquí verás:</p><ul><li><strong>Info de contacto:</strong> Contacto principal y participantes adicionales</li><li><strong>Propiedades:</strong> Todas las propiedades vinculadas con estado de oferta</li><li><strong>Valor del deal:</strong> Valor esperado y cálculo de comisión</li><li><strong>Línea de tiempo:</strong> Historial de actividades y tareas próximas</li><li><strong>Notas y comentarios:</strong> Comunicación del equipo y notas del cliente</li><li><strong>Documentos:</strong> Contratos, ofertas y archivos relacionados</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Deal status updaten",
+            "en": "3. Update Deal Status",
+            "es": "3. Actualizar estado del deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Move deals door de pipeline met drag-and-drop of via de status dropdown:</p><p><strong>Drag-and-drop method:</strong></p><ul><li>Sleep deal card naar nieuwe stage column</li><li>System valideert automatisch de transition</li><li>Team ontvangt real-time notification</li><li>Activity wordt automatisch gelogd</li></ul><p><strong>Status dropdown method:</strong></p><ul><li>Click op status dropdown in deal detail</li><li>Selecteer nieuwe status</li><li>Optioneel: voeg note toe over reason for change</li><li>Save en systeem update pipeline view</li></ul>"
+            },
+            "en": {
+              "text": "<p>Move deals through the pipeline with drag-and-drop or via the status dropdown:</p><p><strong>Drag-and-drop method:</strong></p><ul><li>Drag deal card to new stage column</li><li>System automatically validates the transition</li><li>Team receives real-time notification</li><li>Activity is automatically logged</li></ul><p><strong>Status dropdown method:</strong></p><ul><li>Click on status dropdown in deal detail</li><li>Select new status</li><li>Optional: add note about reason for change</li><li>Save and system updates pipeline view</li></ul>"
+            },
+            "es": {
+              "text": "<p>Mueve deals a través del pipeline con arrastrar y soltar o mediante el menú desplegable de estado:</p><p><strong>Método de arrastrar y soltar:</strong></p><ul><li>Arrastra la tarjeta del deal a la nueva columna de etapa</li><li>El sistema valida automáticamente la transición</li><li>El equipo recibe notificación en tiempo real</li><li>La actividad se registra automáticamente</li></ul><p><strong>Método de menú desplegable de estado:</strong></p><ul><li>Haz clic en el menú desplegable de estado en el detalle del deal</li><li>Selecciona nuevo estado</li><li>Opcional: agrega nota sobre el motivo del cambio</li><li>Guarda y el sistema actualiza la vista del pipeline</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "ai-matching",
+      "title": {
+        "nl": "AI-powered property matching",
+        "en": "AI-Powered Property Matching",
+        "es": "Coincidencia de propiedades impulsada por IA"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Een van de krachtigste features van het Tesoro deal systeem is de AI-powered property matching engine. Deze analyseert automatisch buyer preferences en suggest matching properties.</p><h3>Hoe AI matching werkt:</h3><ul><li><strong>Budget analysis:</strong> Matches properties binnen price range (min-max)</li><li><strong>Location preferences:</strong> Geographic en neighborhood matching</li><li><strong>Property type:</strong> Huis, appartement, villa, commercial, land</li><li><strong>Size requirements:</strong> Bedrooms, bathrooms, square meters</li><li><strong>Features matching:</strong> Pool, garage, garden, parking, etc.</li><li><strong>Market timing:</strong> Availability aligned met buyer timeline</li></ul><p>Het systeem berekent een match score (0-100%) voor elke property en rankt suggestions van high naar low compatibility.</p>"
+        },
+        "en": {
+          "text": "<p>One of the most powerful features of the Tesoro deal system is the AI-powered property matching engine. It automatically analyzes buyer preferences and suggests matching properties.</p><h3>How AI matching works:</h3><ul><li><strong>Budget analysis:</strong> Matches properties within price range (min-max)</li><li><strong>Location preferences:</strong> Geographic and neighborhood matching</li><li><strong>Property type:</strong> House, apartment, villa, commercial, land</li><li><strong>Size requirements:</strong> Bedrooms, bathrooms, square meters</li><li><strong>Features matching:</strong> Pool, garage, garden, parking, etc.</li><li><strong>Market timing:</strong> Availability aligned with buyer timeline</li></ul><p>The system calculates a match score (0-100%) for each property and ranks suggestions from high to low compatibility.</p>"
+        },
+        "es": {
+          "text": "<p>Una de las características más poderosas del sistema de deals de Tesoro es el motor de coincidencia de propiedades impulsado por IA. Analiza automáticamente las preferencias del comprador y sugiere propiedades coincidentes.</p><h3>Cómo funciona la coincidencia IA:</h3><ul><li><strong>Análisis de presupuesto:</strong> Coincide propiedades dentro del rango de precio (mín-máx)</li><li><strong>Preferencias de ubicación:</strong> Coincidencia geográfica y de vecindario</li><li><strong>Tipo de propiedad:</strong> Casa, apartamento, villa, comercial, terreno</li><li><strong>Requisitos de tamaño:</strong> Dormitorios, baños, metros cuadrados</li><li><strong>Coincidencia de características:</strong> Piscina, garaje, jardín, estacionamiento, etc.</li><li><strong>Timing de mercado:</strong> Disponibilidad alineada con cronograma del comprador</li></ul><p>El sistema calcula una puntuación de coincidencia (0-100%) para cada propiedad y clasifica las sugerencias de alta a baja compatibilidad.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor deal management",
+        "en": "Best Practices for Deal Management",
+        "es": "Mejores prácticas para la gestión de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Update regularly:</strong> Update deal status binnen 24 uur na belangrijke interactions</li><li><strong>Use AI suggestions:</strong> Laat systeem minimaal 3-5 properties suggereren per deal</li><li><strong>Document everything:</strong> Add notes bij elke status change met reasoning</li><li><strong>Track activities:</strong> Log alle calls, emails, viewings als activities</li><li><strong>Set closing dates:</strong> Voeg realistic closing dates toe voor accurate forecasting</li><li><strong>Assign ownership:</strong> Wijs primaire agent en team members toe voor accountability</li><li><strong>Monitor metrics:</strong> Review conversion rates wekelijks om bottlenecks te identificeren</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Update regularly:</strong> Update deal status within 24 hours of important interactions</li><li><strong>Use AI suggestions:</strong> Let system suggest at least 3-5 properties per deal</li><li><strong>Document everything:</strong> Add notes for every status change with reasoning</li><li><strong>Track activities:</strong> Log all calls, emails, viewings as activities</li><li><strong>Set closing dates:</strong> Add realistic closing dates for accurate forecasting</li><li><strong>Assign ownership:</strong> Assign primary agent and team members for accountability</li><li><strong>Monitor metrics:</strong> Review conversion rates weekly to identify bottlenecks</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza el estado del deal dentro de 24 horas de interacciones importantes</li><li><strong>Usar sugerencias IA:</strong> Deja que el sistema sugiera al menos 3-5 propiedades por deal</li><li><strong>Documentar todo:</strong> Agrega notas para cada cambio de estado con razonamiento</li><li><strong>Rastrear actividades:</strong> Registra todas las llamadas, emails, visitas como actividades</li><li><strong>Establecer fechas de cierre:</strong> Agrega fechas de cierre realistas para pronósticos precisos</li><li><strong>Asignar propiedad:</strong> Asigna agente principal y miembros del equipo para responsabilidad</li><li><strong>Monitorear métricas:</strong> Revisa tasas de conversión semanalmente para identificar cuellos de botella</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "next-steps",
+      "title": {
+        "nl": "Volgende stappen",
+        "en": "Next Steps",
+        "es": "Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je de basics van het deal pipeline systeem begrijpt, kun je dieper duiken in specifieke features:</p><ul><li>Leer hoe je <strong>nieuwe deals creëert</strong> en contacts en properties linkt</li><li>Ontdek de <strong>Kanban board interface</strong> voor visueel pipeline management</li><li>Master <strong>deal value en commission tracking</strong> voor accurate forecasting</li><li>Explore <strong>team collaboration features</strong> voor shared deal ownership</li><li>Set up <strong>automation workflows</strong> om repetitieve taken te elimineren</li></ul><p>Check de related articles hieronder voor gedetailleerde guides over elk van deze topics.</p>"
+        },
+        "en": {
+          "text": "<p>Now that you understand the basics of the deal pipeline system, you can dive deeper into specific features:</p><ul><li>Learn how to <strong>create new deals</strong> and link contacts and properties</li><li>Discover the <strong>Kanban board interface</strong> for visual pipeline management</li><li>Master <strong>deal value and commission tracking</strong> for accurate forecasting</li><li>Explore <strong>team collaboration features</strong> for shared deal ownership</li><li>Set up <strong>automation workflows</strong> to eliminate repetitive tasks</li></ul><p>Check the related articles below for detailed guides on each of these topics.</p>"
+        },
+        "es": {
+          "text": "<p>Ahora que entiendes los conceptos básicos del sistema de pipeline de deals, puedes profundizar en características específicas:</p><ul><li>Aprende cómo <strong>crear nuevos deals</strong> y vincular contactos y propiedades</li><li>Descubre la <strong>interfaz de tablero Kanban</strong> para gestión visual del pipeline</li><li>Domina el <strong>seguimiento de valor y comisión del deal</strong> para pronósticos precisos</li><li>Explora las <strong>características de colaboración en equipo</strong> para propiedad compartida de deals</li><li>Configura <strong>flujos de trabajo de automatización</strong> para eliminar tareas repetitivas</li></ul><p>Consulta los artículos relacionados a continuación para guías detalladas sobre cada uno de estos temas.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "creating-deals-guide",
+    "deal-kanban-board-guide",
+    "deal-value-commission-tracking"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel deals kan ik tegelijk actief hebben?",
+        "en": "How many deals can I have active at once?",
+        "es": "¿Cuántos deals puedo tener activos a la vez?"
+      },
+      "answer": {
+        "nl": "Tesoro CRM heeft geen limiet op het aantal actieve deals. Het systeem is gebouwd voor enterprise-level usage en schaalt automatisch mee met je business groei.",
+        "en": "Tesoro CRM has no limit on the number of active deals. The system is built for enterprise-level usage and automatically scales with your business growth.",
+        "es": "Tesoro CRM no tiene límite en el número de deals activos. El sistema está construido para uso de nivel empresarial y se escala automáticamente con el crecimiento de tu negocio."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik de pipeline stages aanpassen?",
+        "en": "Can I customize the pipeline stages?",
+        "es": "¿Puedo personalizar las etapas del pipeline?"
+      },
+      "answer": {
+        "nl": "Ja! De pipeline stages zijn volledig configureerbaar. Je kunt stages toevoegen, hernoemen, verwijderen en business rules instellen per stage om het systeem aan te passen aan je specifieke sales proces.",
+        "en": "Yes! The pipeline stages are fully configurable. You can add, rename, remove stages and set business rules per stage to adapt the system to your specific sales process.",
+        "es": "¡Sí! Las etapas del pipeline son completamente configurables. Puedes agregar, renombrar, eliminar etapas y establecer reglas de negocio por etapa para adaptar el sistema a tu proceso de ventas específico."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe accuraat is de AI property matching?",
+        "en": "How accurate is the AI property matching?",
+        "es": "¿Qué tan precisa es la coincidencia de propiedades IA?"
+      },
+      "answer": {
+        "nl": "De AI matching engine analyseert 10+ criteria (budget, locatie, type, grootte, features) en leert continu van user feedback. De accuracy verbetert naarmate je meer deals processed en feedback geeft op suggestions.",
+        "en": "The AI matching engine analyzes 10+ criteria (budget, location, type, size, features) and continuously learns from user feedback. Accuracy improves as you process more deals and provide feedback on suggestions.",
+        "es": "El motor de coincidencia IA analiza más de 10 criterios (presupuesto, ubicación, tipo, tamaño, características) y aprende continuamente de la retroalimentación del usuario. La precisión mejora a medida que procesas más deals y proporcionas retroalimentación sobre las sugerencias."
+      }
+    }
+  ]
+}

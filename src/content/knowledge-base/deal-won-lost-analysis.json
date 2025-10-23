@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "id": "deal-won-lost-analysis",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T12:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&h=630&fit=crop",
+    "keywords": ["won deals", "lost deals", "deal analysis", "loss reasons", "win rate"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Won en lost deal analysis",
+      "en": "Won and Lost Deal Analysis",
+      "es": "Análisis de deals ganados y perdidos"
+    },
+    "description": {
+      "nl": "Leer hoe je deals correct marked als won of lost, loss reasons tracked, en insights gebruikt voor process improvement.",
+      "en": "Learn how to correctly mark deals as won or lost, track loss reasons, and use insights for process improvement.",
+      "es": "Aprende cómo marcar correctamente deals como ganados o perdidos, rastrear razones de pérdida y usar insights para mejora de procesos."
+    },
+    "icon": "analytics"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het correct tracken van won en lost deals is cruciaal voor understanding je sales performance, identifying bottlenecks, en improving conversion rates. Complete en accurate data enables meaningful analysis.</p>"
+        },
+        "en": {
+          "text": "<p>Correctly tracking won and lost deals is crucial for understanding your sales performance, identifying bottlenecks, and improving conversion rates. Complete and accurate data enables meaningful analysis.</p>"
+        },
+        "es": {
+          "text": "<p>El seguimiento correcto de deals ganados y perdidos es crucial para entender tu rendimiento de ventas, identificar cuellos de botella y mejorar tasas de conversión. Los datos completos y precisos permiten análisis significativo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "won-deals",
+      "title": {
+        "nl": "Won deals afhandelen",
+        "en": "Handling Won Deals",
+        "es": "Manejando deals ganados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Mark deal als Won",
+            "en": "1. Mark Deal as Won",
+            "es": "1. Marcar deal como Ganado"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Wanneer contract is signed en deal closed:</p><ul><li>Move deal to <strong>Won</strong> stage</li><li>Verify final deal value (actual closing price)</li><li>Confirm commission amount</li><li>Set actual closing date</li><li>Add final notes over closing process</li></ul>"
+            },
+            "en": {
+              "text": "<p>When contract is signed and deal closed:</p><ul><li>Move deal to <strong>Won</strong> stage</li><li>Verify final deal value (actual closing price)</li><li>Confirm commission amount</li><li>Set actual closing date</li><li>Add final notes about closing process</li></ul>"
+            },
+            "es": {
+              "text": "<p>Cuando el contrato está firmado y el deal cerrado:</p><ul><li>Mueve deal a etapa <strong>Ganado</strong></li><li>Verifica valor final del deal (precio de cierre real)</li><li>Confirma monto de comisión</li><li>Establece fecha de cierre real</li><li>Agrega notas finales sobre proceso de cierre</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Post-closing activiteiten",
+            "en": "2. Post-Closing Activities",
+            "es": "2. Actividades post-cierre"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na successful closing:</p><ul><li>Generate commission invoice</li><li>Request client testimonial</li><li>Ask voor referrals</li><li>Send thank you email</li><li>Schedule follow-up (3-6 months)</li><li>Update property status to Sold/Rented</li></ul>"
+            },
+            "en": {
+              "text": "<p>After successful closing:</p><ul><li>Generate commission invoice</li><li>Request client testimonial</li><li>Ask for referrals</li><li>Send thank you email</li><li>Schedule follow-up (3-6 months)</li><li>Update property status to Sold/Rented</li></ul>"
+            },
+            "es": {
+              "text": "<p>Después del cierre exitoso:</p><ul><li>Generar factura de comisión</li><li>Solicitar testimonio del cliente</li><li>Pedir referencias</li><li>Enviar email de agradecimiento</li><li>Programar seguimiento (3-6 meses)</li><li>Actualizar estado de propiedad a Vendida/Alquilada</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "lost-deals",
+      "title": {
+        "nl": "Lost deals afhandelen",
+        "en": "Handling Lost Deals",
+        "es": "Manejando deals perdidos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Mark deal als Lost",
+            "en": "1. Mark Deal as Lost",
+            "es": "1. Marcar deal como Perdido"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Wanneer deal niet doorgaat:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (verplicht)</li><li>Add detailed notes explaining wat happened</li><li>Document competitor information (indien applicable)</li><li>Note lessons learned</li></ul>"
+            },
+            "en": {
+              "text": "<p>When deal doesn't close:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (required)</li><li>Add detailed notes explaining what happened</li><li>Document competitor information (if applicable)</li><li>Note lessons learned</li></ul>"
+            },
+            "es": {
+              "text": "<p>Cuando el deal no cierra:</p><ul><li>Mueve deal a etapa <strong>Perdido</strong></li><li>Selecciona razón de pérdida (obligatorio)</li><li>Agrega notas detalladas explicando qué pasó</li><li>Documenta información de competidor (si aplica)</li><li>Nota lecciones aprendidas</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Loss reasons categoriseren",
+            "en": "2. Categorize Loss Reasons",
+            "es": "2. Categorizar razones de pérdida"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Common loss reasons:</strong></p><ul><li><strong>Price:</strong> Too expensive, couldn't negotiate</li><li><strong>Competition:</strong> Chose another agent/property</li><li><strong>Financing:</strong> Mortgage denied, insufficient funds</li><li><strong>Timing:</strong> Not ready, circumstances changed</li><li><strong>Property:</strong> Issues discovered, didn't meet expectations</li><li><strong>Communication:</strong> Poor response, service issues</li><li><strong>Other:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Common loss reasons:</strong></p><ul><li><strong>Price:</strong> Too expensive, couldn't negotiate</li><li><strong>Competition:</strong> Chose another agent/property</li><li><strong>Financing:</strong> Mortgage denied, insufficient funds</li><li><strong>Timing:</strong> Not ready, circumstances changed</li><li><strong>Property:</strong> Issues discovered, didn't meet expectations</li><li><strong>Communication:</strong> Poor response, service issues</li><li><strong>Other:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Razones comunes de pérdida:</strong></p><ul><li><strong>Precio:</strong> Demasiado caro, no se pudo negociar</li><li><strong>Competencia:</strong> Eligió otro agente/propiedad</li><li><strong>Financiamiento:</strong> Hipoteca negada, fondos insuficientes</li><li><strong>Timing:</strong> No listo, circunstancias cambiaron</li><li><strong>Propiedad:</strong> Problemas descubiertos, no cumplió expectativas</li><li><strong>Comunicación:</strong> Mala respuesta, problemas de servicio</li><li><strong>Otro:</strong> Especificar en notas</li></ul><p>La categorización precisa permite análisis de patrones.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "analysis",
+      "title": {
+        "nl": "Won/Lost analysis gebruiken",
+        "en": "Using Won/Lost Analysis",
+        "es": "Usando análisis ganado/perdido"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Key metrics te monitoren:</strong></p><ul><li><strong>Win rate:</strong> % won deals van total</li><li><strong>Loss rate by reason:</strong> Welke reasons most common</li><li><strong>Win rate by stage:</strong> Waar deals meestal lost gaan</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long time-to-close: Streamline processes</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Key metrics to monitor:</strong></p><ul><li><strong>Win rate:</strong> % won deals of total</li><li><strong>Loss rate by reason:</strong> Which reasons most common</li><li><strong>Win rate by stage:</strong> Where deals usually get lost</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long time-to-close: Streamline processes</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Métricas clave a monitorear:</strong></p><ul><li><strong>Tasa de ganancia:</strong> % deals ganados del total</li><li><strong>Tasa de pérdida por razón:</strong> Qué razones son más comunes</li><li><strong>Tasa de ganancia por etapa:</strong> Dónde los deals usualmente se pierden</li><li><strong>Tiempo promedio de cierre:</strong> Deals ganados vs perdidos</li><li><strong>Tasa de ganancia por agente:</strong> Rendimiento individual</li></ul><p><strong>Insights accionables:</strong></p><ul><li>Si razón de pérdida = Precio: Revisar estrategia de precios</li><li>Si razón de pérdida = Competencia: Analizar ofertas de competidores</li><li>Si pérdida en Negociación: Mejorar preparación de oferta</li><li>Si tiempo de cierre largo: Optimizar procesos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices",
+        "en": "Best Practices",
+        "es": "Mejores prácticas"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Be honest:</strong> Accurate loss reasons, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes helpen future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Be honest:</strong> Accurate loss reasons, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes help future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Ser honesto:</strong> Razones de pérdida precisas, incluso si son incómodas</li><li><strong>El detalle importa:</strong> Las notas completas ayudan en decisiones futuras</li><li><strong>Revisar mensualmente:</strong> Analiza patrones ganado/perdido mensualmente</li><li><strong>Aprender de pérdidas:</strong> Cada deal perdido es oportunidad de aprendizaje</li><li><strong>Hacer seguimiento de perdidos:</strong> Algunos pueden volver en el futuro</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-reporting-metrics",
+    "deal-best-practices",
+    "deal-pipeline-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een lost deal reactiveren?",
+        "en": "Can I reactivate a lost deal?",
+        "es": "¿Puedo reactivar un deal perdido?"
+      },
+      "answer": {
+        "nl": "Ja, lost deals kunnen reactivated worden naar appropriate stage als client returns. All history blijft preserved, inclusief original loss reason.",
+        "en": "Yes, lost deals can be reactivated to appropriate stage if client returns. All history remains preserved, including original loss reason.",
+        "es": "Sí, los deals perdidos pueden reactivarse a etapa apropiada si el cliente regresa. Todo el historial se preserva, incluyendo razón de pérdida original."
+      }
+    }
+  ]
+}

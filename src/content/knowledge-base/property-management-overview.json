@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "id": "property-management-overview",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T14:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "overview", "property-management", "getting-started", "crm-basics"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": true,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property management", "real estate CRM", "property inventory", "Tesoro properties", "property database"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Complete gids voor property management in Tesoro CRM",
+      "en": "Complete Guide to Property Management in Tesoro CRM",
+      "es": "Guía completa para la gestión de propiedades en Tesoro CRM"
+    },
+    "description": {
+      "nl": "Beheer 1085+ properties met krachtige tools voor tracking, matching en automatisering. Leer alles over property management in Tesoro CRM.",
+      "en": "Manage 1085+ properties with powerful tools for tracking, matching and automation. Learn everything about property management in Tesoro CRM.",
+      "es": "Gestiona 1085+ propiedades con herramientas potentes para seguimiento, matching y automatización. Aprende todo sobre la gestión de propiedades en Tesoro CRM."
+    },
+    "icon": "home"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "overview-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Wat is property management in Tesoro?",
+        "en": "What is property management in Tesoro?",
+        "es": "¿Qué es la gestión de propiedades en Tesoro?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Property management is het hart van Tesoro CRM. Het systeem stelt je in staat om je complete vastgoed portfolio te beheren, van appartementen en huizen tot commercieel vastgoed en bouwgrond.</p><p><strong>Belangrijkste mogelijkheden:</strong></p><ul><li>Centrale database voor alle properties (1085+ supported)</li><li>30+ property features en amenities</li><li>Media management (foto's, video's, virtual tours)</li><li>Automatische portal sync (Idealista, Fotocasa)</li><li>AI-powered matching met leads</li><li>Complete activiteiten geschiedenis</li></ul>"
+        },
+        "en": {
+          "text": "<p>Property management is the heart of Tesoro CRM. The system allows you to manage your complete real estate portfolio, from apartments and houses to commercial properties and land.</p><p><strong>Key capabilities:</strong></p><ul><li>Central database for all properties (1085+ supported)</li><li>30+ property features and amenities</li><li>Media management (photos, videos, virtual tours)</li><li>Automatic portal sync (Idealista, Fotocasa)</li><li>AI-powered matching with leads</li><li>Complete activity history</li></ul>"
+        },
+        "es": {
+          "text": "<p>La gestión de propiedades es el corazón de Tesoro CRM. El sistema te permite gestionar tu cartera inmobiliaria completa, desde apartamentos y casas hasta propiedades comerciales y terrenos.</p><p><strong>Capacidades principales:</strong></p><ul><li>Base de datos central para todas las propiedades (1085+ soportadas)</li><li>30+ características y amenidades de propiedades</li><li>Gestión de medios (fotos, videos, tours virtuales)</li><li>Sincronización automática de portales (Idealista, Fotocasa)</li><li>Matching con IA con leads</li><li>Historial completo de actividades</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "property-overview-video",
+      "title": {
+        "nl": "Property management overzicht video",
+        "en": "Property management overview video",
+        "es": "Video general de gestión de propiedades"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "8-minuten overzicht van alle property management mogelijkheden",
+        "en": "8-minute overview of all property management capabilities",
+        "es": "Resumen de 8 minutos de todas las capacidades de gestión de propiedades"
+      },
+      "duration": "8:15"
+    },
+
+    {
+      "type": "text",
+      "id": "property-types",
+      "title": {
+        "nl": "Property types die je kunt beheren",
+        "en": "Property types you can manage",
+        "es": "Tipos de propiedades que puedes gestionar"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM ondersteunt alle gangbare property types voor de vastgoedmarkt:</p><h5>Residentieel vastgoed</h5><ul><li><strong>Appartement:</strong> Flats, studio's, penthouses</li><li><strong>Huis:</strong> Eengezinswoningen, rijtjeshuizen, villa's</li><li><strong>Land:</strong> Bouwkavels, agrarische grond</li></ul><h5>Commercieel vastgoed</h5><ul><li><strong>Kantoor:</strong> Kantoorruimtes, business centers</li><li><strong>Retail:</strong> Winkelpanden, horecagelegenheid</li><li><strong>Industrieel:</strong> Bedrijfshallen, opslagruimtes</li><li><strong>Mixed-use:</strong> Combinatie wonen/werken</li></ul><p>Elk property type heeft specifieke velden en kenmerken die relevant zijn voor dat type.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM supports all common property types for the real estate market:</p><h5>Residential real estate</h5><ul><li><strong>Apartment:</strong> Flats, studios, penthouses</li><li><strong>House:</strong> Single-family homes, townhouses, villas</li><li><strong>Land:</strong> Building plots, agricultural land</li></ul><h5>Commercial real estate</h5><ul><li><strong>Office:</strong> Office spaces, business centers</li><li><strong>Retail:</strong> Shops, hospitality venues</li><li><strong>Industrial:</strong> Warehouses, storage facilities</li><li><strong>Mixed-use:</strong> Combination living/working</li></ul><p>Each property type has specific fields and characteristics relevant to that type.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM soporta todos los tipos de propiedades comunes para el mercado inmobiliario:</p><h5>Inmuebles residenciales</h5><ul><li><strong>Apartamento:</strong> Pisos, estudios, penthouses</li><li><strong>Casa:</strong> Viviendas unifamiliares, casas adosadas, villas</li><li><strong>Terreno:</strong> Parcelas edificables, tierra agrícola</li></ul><h5>Inmuebles comerciales</h5><ul><li><strong>Oficina:</strong> Espacios de oficina, centros de negocios</li><li><strong>Retail:</strong> Locales comerciales, establecimientos de hostelería</li><li><strong>Industrial:</strong> Naves industriales, instalaciones de almacenamiento</li><li><strong>Uso mixto:</strong> Combinación vivienda/trabajo</li></ul><p>Cada tipo de propiedad tiene campos y características específicas relevantes para ese tipo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "core-features",
+      "title": {
+        "nl": "Kernfunctionaliteiten",
+        "en": "Core functionalities",
+        "es": "Funcionalidades principales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Basis property informatie</h5><p>Elke property bevat essentiële informatie zoals adres, prijs, oppervlakte, aantal kamers en status. Tesoro's adres-lookup met Mapbox zorgt voor automatische geocoding en kaartweergave.</p><h5>30+ property features</h5><p>Track gedetailleerde kenmerken:</p><ul><li><strong>Outdoor:</strong> Pool, tuin, patio, parking (garage/open/carport), terras</li><li><strong>Systemen:</strong> Verwarmingstype, warm water systeem, keukentype</li><li><strong>Ramen:</strong> Materiaal, locatie, type, oriëntatie</li><li><strong>Gebouw:</strong> Vloertype, conditie, renovatie niveau</li><li><strong>Inrichting:</strong> Gemeubileerd, semi-gemeubileerd, niet-gemeubileerd</li><li><strong>Energie:</strong> Energielabel (consumptie en emissies)</li></ul><h5>Media management</h5><p>Upload en organiseer onbeperkt foto's, video's en virtual tours. Cloudflare hosting zorgt voor snelle loading en automatische optimalisatie.</p><h5>Document beheer</h5><p>Bewaar alle property-gerelateerde documenten: contracten, certificaten, plattegronden, technische rapporten.</p>"
+        },
+        "en": {
+          "text": "<h5>Basic property information</h5><p>Each property contains essential information such as address, price, surface area, number of rooms and status. Tesoro's address-lookup with Mapbox provides automatic geocoding and map display.</p><h5>30+ property features</h5><p>Track detailed characteristics:</p><ul><li><strong>Outdoor:</strong> Pool, garden, patio, parking (garage/open/carport), terrace</li><li><strong>Systems:</strong> Heating type, hot water system, kitchen type</li><li><strong>Windows:</strong> Material, location, type, orientation</li><li><strong>Building:</strong> Floor type, condition, renovation level</li><li><strong>Furnishing:</strong> Furnished, semi-furnished, unfurnished</li><li><strong>Energy:</strong> Energy label (consumption and emissions)</li></ul><h5>Media management</h5><p>Upload and organize unlimited photos, videos and virtual tours. Cloudflare hosting ensures fast loading and automatic optimization.</p><h5>Document management</h5><p>Store all property-related documents: contracts, certificates, floor plans, technical reports.</p>"
+        },
+        "es": {
+          "text": "<h5>Información básica de la propiedad</h5><p>Cada propiedad contiene información esencial como dirección, precio, superficie, número de habitaciones y estado. La búsqueda de direcciones de Tesoro con Mapbox proporciona geocodificación automática y visualización en mapa.</p><h5>30+ características de propiedades</h5><p>Rastrea características detalladas:</p><ul><li><strong>Exterior:</strong> Piscina, jardín, patio, estacionamiento (garaje/abierto/cochera), terraza</li><li><strong>Sistemas:</strong> Tipo de calefacción, sistema de agua caliente, tipo de cocina</li><li><strong>Ventanas:</strong> Material, ubicación, tipo, orientación</li><li><strong>Edificio:</strong> Tipo de suelo, condición, nivel de renovación</li><li><strong>Mobiliario:</strong> Amueblado, semi-amueblado, sin amueblar</li><li><strong>Energía:</strong> Etiqueta energética (consumo y emisiones)</li></ul><h5>Gestión de medios</h5><p>Sube y organiza fotos, videos y tours virtuales ilimitados. El alojamiento en Cloudflare garantiza carga rápida y optimización automática.</p><h5>Gestión de documentos</h5><p>Almacena todos los documentos relacionados con la propiedad: contratos, certificados, planos, informes técnicos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "automation-features",
+      "title": {
+        "nl": "Automatisering en matching",
+        "en": "Automation and matching",
+        "es": "Automatización y matching"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>AI-powered lead matching</h5><p>Tesoro's intelligente matching algoritme koppelt automatisch properties aan geschikte leads op basis van:</p><ul><li>Property type matching</li><li>Locatie voorkeuren</li><li>Prijsklasse matching</li><li>Grootte en kamer vereisten</li><li>Specifieke features en amenities</li></ul><p>Het systeem berekent een match score (0-100) en rankt suggesties op compatibiliteit.</p><h5>Portal integratie</h5><p>Automatische sync met:</p><ul><li><strong>Idealista:</strong> Automatische property updates</li><li><strong>Fotocasa:</strong> Direct publishing en sync</li><li><strong>Custom portals:</strong> XML/JSON feed support</li></ul><p>Wijzigingen in Tesoro worden automatisch doorgevoerd naar alle gekoppelde portals.</p><h5>Client portal</h5><p>Genereer een publieke portal waar potentiële kopers:</p><ul><li>Available properties kunnen bekijken</li><li>Interesse kunnen tonen</li><li>Bezichtigingen kunnen aanvragen</li><li>Notities kunnen achterlaten</li></ul>"
+        },
+        "en": {
+          "text": "<h5>AI-powered lead matching</h5><p>Tesoro's intelligent matching algorithm automatically links properties to suitable leads based on:</p><ul><li>Property type matching</li><li>Location preferences</li><li>Price range matching</li><li>Size and room requirements</li><li>Specific features and amenities</li></ul><p>The system calculates a match score (0-100) and ranks suggestions by compatibility.</p><h5>Portal integration</h5><p>Automatic sync with:</p><ul><li><strong>Idealista:</strong> Automatic property updates</li><li><strong>Fotocasa:</strong> Direct publishing and sync</li><li><strong>Custom portals:</strong> XML/JSON feed support</li></ul><p>Changes in Tesoro are automatically applied to all connected portals.</p><h5>Client portal</h5><p>Generate a public portal where potential buyers can:</p><ul><li>View available properties</li><li>Show interest</li><li>Request viewings</li><li>Leave notes</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Matching con IA para leads</h5><p>El algoritmo inteligente de matching de Tesoro vincula automáticamente propiedades a leads adecuados basándose en:</p><ul><li>Tipo de propiedad matching</li><li>Preferencias de ubicación</li><li>Rango de precios matching</li><li>Requisitos de tamaño y habitaciones</li><li>Características y amenidades específicas</li></ul><p>El sistema calcula una puntuación de match (0-100) y clasifica sugerencias por compatibilidad.</p><h5>Integración de portales</h5><p>Sincronización automática con:</p><ul><li><strong>Idealista:</strong> Actualizaciones automáticas de propiedades</li><li><strong>Fotocasa:</strong> Publicación directa y sync</li><li><strong>Portales personalizados:</strong> Soporte para feed XML/JSON</li></ul><p>Los cambios en Tesoro se aplican automáticamente a todos los portales conectados.</p><h5>Portal del cliente</h5><p>Genera un portal público donde los compradores potenciales pueden:</p><ul><li>Ver propiedades disponibles</li><li>Mostrar interés</li><li>Solicitar visitas</li><li>Dejar notas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "workflow-management",
+      "title": {
+        "nl": "Workflow en status beheer",
+        "en": "Workflow and status management",
+        "es": "Gestión de workflow y estado"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Property statussen</h5><p>Track de lifecycle van elke property:</p><ul><li><strong>Active:</strong> Beschikbaar voor verkoop/verhuur</li><li><strong>Inactive:</strong> Tijdelijk offline</li><li><strong>Sold:</strong> Verkocht</li><li><strong>Rented:</strong> Verhuurd</li><li><strong>Draft:</strong> In voorbereiding</li></ul><h5>Complete geschiedenis tracking</h5><p>Tesoro houdt automatisch bij:</p><ul><li>Status wijzigingen met tijdstempel</li><li>Prijs aanpassingen</li><li>Bezichtigingen en meetings</li><li>Communicatie met eigenaren en kopers</li><li>Media uploads en document wijzigingen</li></ul><h5>Batch operaties</h5><p>Efficiënt werken met meerdere properties:</p><ul><li>Bulk status updates</li><li>Batch prijs aanpassingen</li><li>Groep property exports</li><li>Multi-property portal publishing</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Property statuses</h5><p>Track the lifecycle of each property:</p><ul><li><strong>Active:</strong> Available for sale/rent</li><li><strong>Inactive:</strong> Temporarily offline</li><li><strong>Sold:</strong> Sold</li><li><strong>Rented:</strong> Rented</li><li><strong>Draft:</strong> In preparation</li></ul><h5>Complete history tracking</h5><p>Tesoro automatically tracks:</p><ul><li>Status changes with timestamp</li><li>Price adjustments</li><li>Viewings and meetings</li><li>Communication with owners and buyers</li><li>Media uploads and document changes</li></ul><h5>Batch operations</h5><p>Work efficiently with multiple properties:</p><ul><li>Bulk status updates</li><li>Batch price adjustments</li><li>Group property exports</li><li>Multi-property portal publishing</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Estados de propiedades</h5><p>Rastrea el ciclo de vida de cada propiedad:</p><ul><li><strong>Activa:</strong> Disponible para venta/alquiler</li><li><strong>Inactiva:</strong> Temporalmente fuera de línea</li><li><strong>Vendida:</strong> Vendida</li><li><strong>Alquilada:</strong> Alquilada</li><li><strong>Borrador:</strong> En preparación</li></ul><h5>Seguimiento completo del historial</h5><p>Tesoro rastrea automáticamente:</p><ul><li>Cambios de estado con marca de tiempo</li><li>Ajustes de precios</li><li>Visitas y reuniones</li><li>Comunicación con propietarios y compradores</li><li>Subidas de medios y cambios de documentos</li></ul><h5>Operaciones en lote</h5><p>Trabaja eficientemente con múltiples propiedades:</p><ul><li>Actualizaciones de estado en lote</li><li>Ajustes de precios en lote</li><li>Exportaciones de propiedades en grupo</li><li>Publicación en portales de múltiples propiedades</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "getting-started",
+      "variant": "success",
+      "title": {
+        "nl": "Start met property management",
+        "en": "Get started with property management",
+        "es": "Comienza con la gestión de propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Volgende stappen:</strong></p><ol><li><strong>Voeg je eerste property toe:</strong> Lees de 'Adding Properties Guide' voor een stap-voor-stap handleiding</li><li><strong>Upload media:</strong> Leer hoe je foto's en documenten beheert in 'Property Media Management'</li><li><strong>Configureer portal sync:</strong> Zie 'Property Portal Integration' voor Idealista/Fotocasa setup</li><li><strong>Activeer AI matching:</strong> Bekijk 'Property AI Matching' voor automatische lead koppeling</li></ol><p>Met deze foundation kun je een krachtige property database opbouwen die je helpt om efficiënter te verkopen en verhuren.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Next steps:</strong></p><ol><li><strong>Add your first property:</strong> Read the 'Adding Properties Guide' for a step-by-step tutorial</li><li><strong>Upload media:</strong> Learn how to manage photos and documents in 'Property Media Management'</li><li><strong>Configure portal sync:</strong> See 'Property Portal Integration' for Idealista/Fotocasa setup</li><li><strong>Activate AI matching:</strong> Check 'Property AI Matching' for automatic lead linking</li></ol><p>With this foundation you can build a powerful property database that helps you sell and rent more efficiently.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Próximos pasos:</strong></p><ol><li><strong>Agrega tu primera propiedad:</strong> Lee la 'Guía de Agregar Propiedades' para un tutorial paso a paso</li><li><strong>Sube medios:</strong> Aprende cómo gestionar fotos y documentos en 'Gestión de Medios de Propiedades'</li><li><strong>Configura la sincronización de portales:</strong> Ve 'Integración de Portales de Propiedades' para la configuración de Idealista/Fotocasa</li><li><strong>Activa el matching con IA:</strong> Revisa 'Matching con IA de Propiedades' para vinculación automática de leads</li></ol><p>Con esta base puedes construir una poderosa base de datos de propiedades que te ayuda a vender y alquilar de manera más eficiente.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "adding-properties-guide",
+    "property-media-management",
+    "property-portal-integration",
+    "property-ai-matching"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel properties kan ik opslaan in Tesoro CRM?",
+        "en": "How many properties can I store in Tesoro CRM?",
+        "es": "¿Cuántas propiedades puedo almacenar en Tesoro CRM?"
+      },
+      "answer": {
+        "nl": "Tesoro CRM ondersteunt 1085+ properties zonder performance verlies. Er is geen hard limiet, maar we raden aan om inactieve of oude properties te archiveren voor optimale performance.",
+        "en": "Tesoro CRM supports 1085+ properties without performance loss. There is no hard limit, but we recommend archiving inactive or old properties for optimal performance.",
+        "es": "Tesoro CRM soporta 1085+ propiedades sin pérdida de rendimiento. No hay límite estricto, pero recomendamos archivar propiedades inactivas o antiguas para rendimiento óptimo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik properties importeren uit andere systemen?",
+        "en": "Can I import properties from other systems?",
+        "es": "¿Puedo importar propiedades de otros sistemas?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro ondersteunt CSV/Excel import, XML feeds (Idealista, Fotocasa), en custom JSON imports. Zie 'Property Bulk Import' voor details.",
+        "en": "Yes! Tesoro supports CSV/Excel import, XML feeds (Idealista, Fotocasa), and custom JSON imports. See 'Property Bulk Import' for details.",
+        "es": "¡Sí! Tesoro soporta importación CSV/Excel, feeds XML (Idealista, Fotocasa), e importaciones JSON personalizadas. Ve 'Importación Masiva de Propiedades' para detalles."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden property wijzigingen automatisch gesynchroniseerd met portals?",
+        "en": "Are property changes automatically synchronized with portals?",
+        "es": "¿Los cambios de propiedades se sincronizan automáticamente con los portales?"
+      },
+      "answer": {
+        "nl": "Ja, wanneer je portal integratie hebt ingesteld (Idealista, Fotocasa), worden alle wijzigingen in prijs, status, beschrijving of media automatisch gesynchroniseerd. Je kunt ook handmatige sync triggeren.",
+        "en": "Yes, when you have set up portal integration (Idealista, Fotocasa), all changes in price, status, description or media are automatically synchronized. You can also trigger manual sync.",
+        "es": "Sí, cuando has configurado la integración de portales (Idealista, Fotocasa), todos los cambios en precio, estado, descripción o medios se sincronizan automáticamente. También puedes activar la sincronización manual."
+      }
+    }
+  ]
+}

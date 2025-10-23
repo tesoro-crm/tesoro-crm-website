@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "id": "common-issues-solutions",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "beginner",
+    "tags": ["troubleshooting", "faq", "common-problems", "solutions", "support"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro problems", "common issues", "troubleshooting guide", "crm solutions", "faq"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Veelvoorkomende problemen en oplossingen",
+      "en": "Common Issues and Solutions",
+      "es": "Problemas comunes y soluciones"
+    },
+    "description": {
+      "nl": "Quick fixes voor de meest voorkomende problemen in Tesoro CRM. Los deze zelf op in een paar minuten.",
+      "en": "Quick fixes for the most common problems in Tesoro CRM. Solve these yourself in a few minutes.",
+      "es": "Soluciones rápidas para los problemas más comunes en Tesoro CRM. Resuelve estos tú mismo en unos minutos."
+    },
+    "icon": "help_center"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Deze gids bevat oplossingen voor de <strong>top 20 meest voorkomende problemen</strong> die Tesoro users tegenkomen. Voor de meeste issues kun je zelf binnen 5 minuten een fix vinden.</p><p><strong>Quick troubleshooting checklist:</strong></p><ul><li>Probeer eerst een <strong>hard refresh</strong>: Ctrl+Shift+R (Windows) of Cmd+Shift+R (Mac)</li><li>Check je <strong>internet connection</strong></li><li>Controleer of je de <strong>laatste browser versie</strong> hebt</li><li>Clear je <strong>browser cache</strong> als iets niet werkt</li></ul>"
+        },
+        "en": {
+          "text": "<p>This guide contains solutions for the <strong>top 20 most common problems</strong> that Tesoro users encounter. For most issues you can find a fix yourself within 5 minutes.</p><p><strong>Quick troubleshooting checklist:</strong></p><ul><li>First try a <strong>hard refresh</strong>: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li><li>Check your <strong>internet connection</strong></li><li>Verify you have the <strong>latest browser version</strong></li><li>Clear your <strong>browser cache</strong> if something doesn't work</li></ul>"
+        },
+        "es": {
+          "text": "<p>Esta guía contiene soluciones para los <strong>20 problemas más comunes</strong> que encuentran los usuarios de Tesoro. Para la mayoría de problemas puedes encontrar una solución tú mismo en 5 minutos.</p><p><strong>Lista de verificación rápida de solución de problemas:</strong></p><ul><li>Primero intenta un <strong>hard refresh</strong>: Ctrl+Shift+R (Windows) o Cmd+Shift+R (Mac)</li><li>Verifica tu <strong>conexión a internet</strong></li><li>Confirma que tienes la <strong>última versión del navegador</strong></li><li>Borra tu <strong>caché del navegador</strong> si algo no funciona</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "ui-issues",
+      "title": {
+        "nl": "UI en display problemen",
+        "en": "UI and Display Issues",
+        "es": "Problemas de UI y visualización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: Page loads niet of blijft loading</h4><p><strong>Oplossingen:</strong></p><ol><li>Check internet connection (test op andere website)</li><li>Hard refresh: Ctrl+Shift+R (Windows) of Cmd+Shift+R (Mac)</li><li>Clear browser cache:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Try een ander browser (Chrome aanbevolen)</li><li>Check Tesoro status: status.tesorohq.io</li></ol><h4>❌ Probleem: Layout ziet er broken uit</h4><p><strong>Oorzaak:</strong> Oude cached CSS/JS files</p><p><strong>Oplossing:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>Als nog steeds broken: Clear cache + cookies</li><li>Restart browser</li></ol><h4>❌ Probleem: Buttons doen niets bij klikken</h4><p><strong>Oplossingen:</strong></p><ol><li>Check console for errors (F12 → Console tab)</li><li>Disable browser extensions (AdBlock kan interferen)</li><li>Try in Incognito/Private mode</li><li>Update browser to latest version</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: Page doesn't load or keeps loading</h4><p><strong>Solutions:</strong></p><ol><li>Check internet connection (test on other website)</li><li>Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li><li>Clear browser cache:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Try another browser (Chrome recommended)</li><li>Check Tesoro status: status.tesorohq.io</li></ol><h4>❌ Problem: Layout looks broken</h4><p><strong>Cause:</strong> Old cached CSS/JS files</p><p><strong>Solution:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>If still broken: Clear cache + cookies</li><li>Restart browser</li></ol><h4>❌ Problem: Buttons don't work when clicked</h4><p><strong>Solutions:</strong></p><ol><li>Check console for errors (F12 → Console tab)</li><li>Disable browser extensions (AdBlock can interfere)</li><li>Try in Incognito/Private mode</li><li>Update browser to latest version</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: La página no carga o sigue cargando</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica conexión a internet (prueba en otro sitio web)</li><li>Hard refresh: Ctrl+Shift+R (Windows) o Cmd+Shift+R (Mac)</li><li>Borra caché del navegador:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Prueba otro navegador (Chrome recomendado)</li><li>Verifica estado de Tesoro: status.tesorohq.io</li></ol><h4>❌ Problema: El diseño se ve roto</h4><p><strong>Causa:</strong> Archivos CSS/JS antiguos en caché</p><p><strong>Solución:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>Si aún está roto: Borra caché + cookies</li><li>Reinicia navegador</li></ol><h4>❌ Problema: Los botones no funcionan al hacer clic</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica errores en consola (F12 → pestaña Console)</li><li>Desactiva extensiones del navegador (AdBlock puede interferir)</li><li>Prueba en modo Incognito/Privado</li><li>Actualiza navegador a última versión</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "data-issues",
+      "title": {
+        "nl": "Data en sync problemen",
+        "en": "Data and Sync Issues",
+        "es": "Problemas de datos y sincronización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: Changes worden niet saved</h4><p><strong>Diagnose:</strong></p><ol><li>Check for save confirmation (green checkmark/toast)</li><li>Look for error message (red banner)</li><li>Check if fields zijn required maar leeg</li></ol><p><strong>Oplossingen:</strong></p><ul><li>Vul alle required fields in (marked met *)</li><li>Check data format (email, phone, date correctness)</li><li>Reduce file size als je attachments upload (max 10MB)</li><li>Try opslaan zonder attachment eerst</li></ul><h4>❌ Probleem: Data synchroniseert niet tussen devices</h4><p><strong>Oorzaak:</strong> Browser cache of offline mode</p><p><strong>Oplossing:</strong></p><ol><li>Refresh page (F5)</li><li>Check internet connection</li><li>Log out + log in again</li><li>Clear browser data op oude device</li></ol><h4>❌ Probleem: Contacts/Properties verdwijnen</h4><p><strong>Mogelijke oorzaken:</strong></p><ol><li><strong>Filters actief:</strong> Check filter settings (reset all filters)</li><li><strong>Search actief:</strong> Clear search box</li><li><strong>Archived:</strong> Check \"Show Archived\" toggle</li><li><strong>Permissions:</strong> Ask admin als je geen toegang hebt</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: Changes are not saved</h4><p><strong>Diagnosis:</strong></p><ol><li>Check for save confirmation (green checkmark/toast)</li><li>Look for error message (red banner)</li><li>Check if fields are required but empty</li></ol><p><strong>Solutions:</strong></p><ul><li>Fill in all required fields (marked with *)</li><li>Check data format (email, phone, date correctness)</li><li>Reduce file size if uploading attachments (max 10MB)</li><li>Try saving without attachment first</li></ul><h4>❌ Problem: Data doesn't sync between devices</h4><p><strong>Cause:</strong> Browser cache or offline mode</p><p><strong>Solution:</strong></p><ol><li>Refresh page (F5)</li><li>Check internet connection</li><li>Log out + log in again</li><li>Clear browser data on old device</li></ol><h4>❌ Problem: Contacts/Properties disappear</h4><p><strong>Possible causes:</strong></p><ol><li><strong>Filters active:</strong> Check filter settings (reset all filters)</li><li><strong>Search active:</strong> Clear search box</li><li><strong>Archived:</strong> Check \"Show Archived\" toggle</li><li><strong>Permissions:</strong> Ask admin if you don't have access</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: Los cambios no se guardan</h4><p><strong>Diagnóstico:</strong></p><ol><li>Verifica confirmación de guardado (marca verde/toast)</li><li>Busca mensaje de error (banner rojo)</li><li>Verifica si los campos son requeridos pero están vacíos</li></ol><p><strong>Soluciones:</strong></p><ul><li>Completa todos los campos requeridos (marcados con *)</li><li>Verifica formato de datos (email, teléfono, fecha correcta)</li><li>Reduce tamaño de archivo si subes adjuntos (máx 10MB)</li><li>Intenta guardar sin adjunto primero</li></ul><h4>❌ Problema: Los datos no se sincronizan entre dispositivos</h4><p><strong>Causa:</strong> Caché del navegador o modo offline</p><p><strong>Solución:</strong></p><ol><li>Actualiza página (F5)</li><li>Verifica conexión a internet</li><li>Cierra sesión + vuelve a iniciar</li><li>Borra datos del navegador en dispositivo antiguo</li></ol><h4>❌ Problema: Contactos/Propiedades desaparecen</h4><p><strong>Posibles causas:</strong></p><ol><li><strong>Filtros activos:</strong> Verifica configuración de filtros (resetea todos los filtros)</li><li><strong>Búsqueda activa:</strong> Borra cuadro de búsqueda</li><li><strong>Archivado:</strong> Verifica toggle \"Show Archived\"</li><li><strong>Permisos:</strong> Pregunta al admin si no tienes acceso</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "notifications",
+      "title": {
+        "nl": "Email en notificaties problemen",
+        "en": "Email and Notification Issues",
+        "es": "Problemas de email y notificaciones"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: Emails worden niet verstuurd</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email not connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Probleem: Emails gaan naar spam</h4><p><strong>Preventie:</strong></p><ul><li>Use proper sender name (not \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Probleem: Geen notificaties ontvangen</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Enable desktop notifications (browser permission)</li><li>Enable email notifications</li><li>Choose notification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: Emails are not sent</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email not connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Problem: Emails go to spam</h4><p><strong>Prevention:</strong></p><ul><li>Use proper sender name (not \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Problem: Not receiving notifications</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Enable desktop notifications (browser permission)</li><li>Enable email notifications</li><li>Choose notification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: Los emails no se envían</h4><p><strong>Pasos de diagnóstico:</strong></p><ol><li>Verifica carpeta <strong>Sent</strong> en pestaña Communication</li><li>Busca mensaje de error en línea de tiempo del email</li><li>Verifica que la dirección de email sea correcta</li></ol><p><strong>Causas comunes + soluciones:</strong></p><ul><li><strong>Email rebotado:</strong> Email del destinatario inválido → Actualiza email del contacto</li><li><strong>Límite diario alcanzado:</strong> Máx 500 emails/día → Espera hasta mañana</li><li><strong>Email no conectado:</strong> Gmail/Outlook → Reconecta en Settings</li><li><strong>Error de plantilla:</strong> Verifica plantilla para campos faltantes</li></ul><h4>❌ Problema: Los emails van a spam</h4><p><strong>Prevención:</strong></p><ul><li>Usa nombre de remitente apropiado (no \"noreply\")</li><li>Evita palabras spam (GRATIS, URGENTE, HAZ CLIC AHORA)</li><li>Incluye enlace de cancelación de suscripción</li><li>Configura registros SPF/DKIM (pregunta a IT)</li><li>No envíes a listas antiguas/inactivas</li></ul><h4>❌ Problema: No recibo notificaciones</h4><p><strong>Verifica configuración:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Habilita notificaciones de escritorio (permiso del navegador)</li><li>Habilita notificaciones por email</li><li>Elige tipos de notificación (nuevo lead, actualización de deal, etc.)</li><li>Verifica carpeta de spam del email</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "when-contact-support",
+      "variant": "warning",
+      "title": {
+        "nl": "Wanneer support contacteren?",
+        "en": "When to Contact Support?",
+        "es": "¿Cuándo contactar soporte?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Contact support@tesorohq.io als:</strong></p><ul><li>Probleem blijft na alle troubleshooting steps</li><li>Error message die je niet begrijpt</li><li>Data loss of corruption</li><li>Account access problemen (password reset werkt niet)</li><li>Billing/subscription issues</li><li>Security concerns</li></ul><p><strong>Include in je support email:</strong></p><ul><li>Detailed description van het probleem</li><li>Screenshots van error messages</li><li>Steps to reproduce</li><li>Browser + OS version</li><li>When did it start?</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Contact support@tesorohq.io if:</strong></p><ul><li>Problem persists after all troubleshooting steps</li><li>Error message you don't understand</li><li>Data loss or corruption</li><li>Account access problems (password reset doesn't work)</li><li>Billing/subscription issues</li><li>Security concerns</li></ul><p><strong>Include in your support email:</strong></p><ul><li>Detailed description of the problem</li><li>Screenshots of error messages</li><li>Steps to reproduce</li><li>Browser + OS version</li><li>When did it start?</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Contacta support@tesorohq.io si:</strong></p><ul><li>El problema persiste después de todos los pasos de solución de problemas</li><li>Mensaje de error que no entiendes</li><li>Pérdida de datos o corrupción</li><li>Problemas de acceso a cuenta (reset de contraseña no funciona)</li><li>Problemas de facturación/suscripción</li><li>Preocupaciones de seguridad</li></ul><p><strong>Incluye en tu email de soporte:</strong></p><ul><li>Descripción detallada del problema</li><li>Capturas de pantalla de mensajes de error</li><li>Pasos para reproducir</li><li>Versión de navegador + OS</li><li>¿Cuándo comenzó?</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "email-sync-troubleshooting",
+    "login-access-troubleshooting",
+    "performance-optimization-tips",
+    "getting-help-support"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe kan ik bug reports indienen?",
+        "en": "How can I submit bug reports?",
+        "es": "¿Cómo puedo enviar reportes de bugs?"
+      },
+      "answer": {
+        "nl": "Email support@tesorohq.io met \"BUG:\" in subject line. Include screenshots, steps to reproduce en je browser info. We prioriteren bugs based op severity.",
+        "en": "Email support@tesorohq.io with \"BUG:\" in subject line. Include screenshots, steps to reproduce and your browser info. We prioritize bugs based on severity.",
+        "es": "Envía email a support@tesorohq.io con \"BUG:\" en línea de asunto. Incluye capturas de pantalla, pasos para reproducir e información de tu navegador. Priorizamos bugs basados en severidad."
+      }
+    }
+  ]
+}

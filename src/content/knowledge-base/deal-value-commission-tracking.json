@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "id": "deal-value-commission-tracking",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T11:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
+    "keywords": ["deal value", "commission tracking", "revenue forecasting", "deal commission", "sales tracking"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deal value en commissie tracking",
+      "en": "Deal Value and Commission Tracking",
+      "es": "Seguimiento de valor y comisión de deals"
+    },
+    "description": {
+      "nl": "Leer hoe je deal values tracked, commissies berekent, en accurate revenue forecasting doet voor betere business planning.",
+      "en": "Learn how to track deal values, calculate commissions, and do accurate revenue forecasting for better business planning.",
+      "es": "Aprende cómo rastrear valores de deals, calcular comisiones y hacer pronósticos precisos de ingresos para mejor planificación empresarial."
+    },
+    "icon": "payments"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Accurate deal value en commission tracking zijn essentieel voor revenue forecasting, agent performance measurement, en business planning. Tesoro CRM biedt comprehensive tools voor het tracken van deal values, automatische commission calculations, en real-time revenue reporting.</p>"
+        },
+        "en": {
+          "text": "<p>Accurate deal value and commission tracking are essential for revenue forecasting, agent performance measurement, and business planning. Tesoro CRM provides comprehensive tools for tracking deal values, automatic commission calculations, and real-time revenue reporting.</p>"
+        },
+        "es": {
+          "text": "<p>El seguimiento preciso de valor y comisión de deals es esencial para pronósticos de ingresos, medición de rendimiento de agentes y planificación empresarial. Tesoro CRM proporciona herramientas completas para rastrear valores de deals, cálculos automáticos de comisiones y reportes de ingresos en tiempo real.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "value-tracking",
+      "title": {
+        "nl": "Deal value instellen en tracken",
+        "en": "Setting and Tracking Deal Value",
+        "es": "Estableciendo y rastreando valor del deal"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Deal value toevoegen",
+            "en": "1. Add Deal Value",
+            "es": "1. Agregar valor del deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Open de deal detail view en scroll naar <strong>Deal Value</strong> section:</p><ul><li><strong>Expected value:</strong> Geschatte transaction value (property price of rent value)</li><li><strong>Currency:</strong> EUR, USD, GBP, etc.</li><li><strong>Frequency:</strong> One-time (sale) of recurring (monthly/yearly rent)</li></ul><p><strong>Tips voor accurate values:</strong></p><ul><li>Voor sales: gebruik asking price als starting value</li><li>Voor rentals: gebruik monthly rent × expected lease period</li><li>Update value tijdens negotiation als price changes</li><li>Track multiple scenarios (optimistic, realistic, pessimistic)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Open the deal detail view and scroll to <strong>Deal Value</strong> section:</p><ul><li><strong>Expected value:</strong> Estimated transaction value (property price or rent value)</li><li><strong>Currency:</strong> EUR, USD, GBP, etc.</li><li><strong>Frequency:</strong> One-time (sale) or recurring (monthly/yearly rent)</li></ul><p><strong>Tips for accurate values:</strong></p><ul><li>For sales: use asking price as starting value</li><li>For rentals: use monthly rent × expected lease period</li><li>Update value during negotiation if price changes</li><li>Track multiple scenarios (optimistic, realistic, pessimistic)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Abre la vista de detalles del deal y desplázate a la sección <strong>Valor del Deal</strong>:</p><ul><li><strong>Valor esperado:</strong> Valor de transacción estimado (precio de propiedad o valor de alquiler)</li><li><strong>Moneda:</strong> EUR, USD, GBP, etc.</li><li><strong>Frecuencia:</strong> Una vez (venta) o recurrente (alquiler mensual/anual)</li></ul><p><strong>Consejos para valores precisos:</strong></p><ul><li>Para ventas: usa precio de oferta como valor inicial</li><li>Para alquileres: usa alquiler mensual × período de arrendamiento esperado</li><li>Actualiza valor durante negociación si el precio cambia</li><li>Rastrea múltiples escenarios (optimista, realista, pesimista)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Commission percentage instellen",
+            "en": "2. Set Commission Percentage",
+            "es": "2. Establecer porcentaje de comisión"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Configureer commission structure voor de deal:</p><ul><li><strong>Commission %:</strong> Your commission percentage (bijv. 3%, 5%, etc.)</li><li><strong>Commission type:</strong> Percentage of value of fixed amount</li><li><strong>Split commission:</strong> Indien meerdere agents involved</li></ul><p><strong>Commission calculation:</strong></p><p>Systeem berekent automatisch:<br><code>Commission = Deal Value × Commission %</code></p><p><strong>Voorbeeld:</strong></p><ul><li>Deal value: €250,000</li><li>Commission %: 3%</li><li>Calculated commission: €7,500</li></ul>"
+            },
+            "en": {
+              "text": "<p>Configure commission structure for the deal:</p><ul><li><strong>Commission %:</strong> Your commission percentage (e.g., 3%, 5%, etc.)</li><li><strong>Commission type:</strong> Percentage of value or fixed amount</li><li><strong>Split commission:</strong> If multiple agents involved</li></ul><p><strong>Commission calculation:</strong></p><p>System automatically calculates:<br><code>Commission = Deal Value × Commission %</code></p><p><strong>Example:</strong></p><ul><li>Deal value: €250,000</li><li>Commission %: 3%</li><li>Calculated commission: €7,500</li></ul>"
+            },
+            "es": {
+              "text": "<p>Configura estructura de comisión para el deal:</p><ul><li><strong>% de comisión:</strong> Tu porcentaje de comisión (ej., 3%, 5%, etc.)</li><li><strong>Tipo de comisión:</strong> Porcentaje del valor o monto fijo</li><li><strong>Comisión dividida:</strong> Si múltiples agentes involucrados</li></ul><p><strong>Cálculo de comisión:</strong></p><p>El sistema calcula automáticamente:<br><code>Comisión = Valor del Deal × % de Comisión</code></p><p><strong>Ejemplo:</strong></p><ul><li>Valor del deal: €250,000</li><li>% de comisión: 3%</li><li>Comisión calculada: €7,500</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Commission split bij team deals",
+            "en": "3. Commission Split for Team Deals",
+            "es": "3. División de comisión para deals en equipo"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voor deals met meerdere agents kun je commission splitten:</p><p><strong>Split options:</strong></p><ul><li><strong>Equal split:</strong> Verdeel equally onder alle agents</li><li><strong>Custom split:</strong> Assign specific percentages per agent</li><li><strong>Role-based split:</strong> Different percentages voor lead agent vs support</li></ul><p><strong>Voorbeeld custom split:</strong></p><ul><li>Total commission: €7,500</li><li>Lead agent (60%): €4,500</li><li>Support agent (40%): €3,000</li></ul><p>Systeem tracked individual commission amounts per agent voor accurate performance reporting.</p>"
+            },
+            "en": {
+              "text": "<p>For deals with multiple agents, you can split commission:</p><p><strong>Split options:</strong></p><ul><li><strong>Equal split:</strong> Divide equally among all agents</li><li><strong>Custom split:</strong> Assign specific percentages per agent</li><li><strong>Role-based split:</strong> Different percentages for lead agent vs support</li></ul><p><strong>Example custom split:</strong></p><ul><li>Total commission: €7,500</li><li>Lead agent (60%): €4,500</li><li>Support agent (40%): €3,000</li></ul><p>System tracks individual commission amounts per agent for accurate performance reporting.</p>"
+            },
+            "es": {
+              "text": "<p>Para deals con múltiples agentes, puedes dividir la comisión:</p><p><strong>Opciones de división:</strong></p><ul><li><strong>División igual:</strong> Dividir igualmente entre todos los agentes</li><li><strong>División personalizada:</strong> Asignar porcentajes específicos por agente</li><li><strong>División basada en roles:</strong> Diferentes porcentajes para agente principal vs soporte</li></ul><p><strong>Ejemplo división personalizada:</strong></p><ul><li>Comisión total: €7,500</li><li>Agente principal (60%): €4,500</li><li>Agente de soporte (40%): €3,000</li></ul><p>El sistema rastrea montos de comisión individuales por agente para reportes precisos de rendimiento.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. Closing date en forecasting",
+            "en": "4. Closing Date and Forecasting",
+            "es": "4. Fecha de cierre y pronóstico"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Set expected closing date voor revenue forecasting:</p><ul><li><strong>Expected closing date:</strong> Wanneer je verwacht deal te closen</li><li><strong>Confidence level:</strong> Hoe zeker je bent (percentage)</li><li><strong>Weighted value:</strong> Deal value × confidence level</li></ul><p><strong>Forecasting voorbeeld:</strong></p><ul><li>Deal value: €250,000</li><li>Confidence: 70% (in Negotiation stage)</li><li>Weighted forecast: €175,000</li></ul><p>Systeem gebruikt weighted values voor realistic revenue forecasts, accounting voor deal stage en likelihood.</p>"
+            },
+            "en": {
+              "text": "<p>Set expected closing date for revenue forecasting:</p><ul><li><strong>Expected closing date:</strong> When you expect to close the deal</li><li><strong>Confidence level:</strong> How certain you are (percentage)</li><li><strong>Weighted value:</strong> Deal value × confidence level</li></ul><p><strong>Forecasting example:</strong></p><ul><li>Deal value: €250,000</li><li>Confidence: 70% (in Negotiation stage)</li><li>Weighted forecast: €175,000</li></ul><p>System uses weighted values for realistic revenue forecasts, accounting for deal stage and likelihood.</p>"
+            },
+            "es": {
+              "text": "<p>Establece fecha de cierre esperada para pronóstico de ingresos:</p><ul><li><strong>Fecha de cierre esperada:</strong> Cuándo esperas cerrar el deal</li><li><strong>Nivel de confianza:</strong> Qué tan seguro estás (porcentaje)</li><li><strong>Valor ponderado:</strong> Valor del deal × nivel de confianza</li></ul><p><strong>Ejemplo de pronóstico:</strong></p><ul><li>Valor del deal: €250,000</li><li>Confianza: 70% (en etapa de Negociación)</li><li>Pronóstico ponderado: €175,000</li></ul><p>El sistema usa valores ponderados para pronósticos de ingresos realistas, considerando etapa del deal y probabilidad.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "reporting",
+      "title": {
+        "nl": "Revenue en commission reporting",
+        "en": "Revenue and Commission Reporting",
+        "es": "Reportes de ingresos y comisiones"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Access comprehensive revenue reports via Dashboard:</p><p><strong>Available reports:</strong></p><ul><li><strong>Pipeline value:</strong> Total value van alle active deals per stage</li><li><strong>Weighted forecast:</strong> Realistic revenue forecast based op stage confidence</li><li><strong>Won deals revenue:</strong> Actual closed revenue per period</li><li><strong>Commission earned:</strong> Total commission per agent en team</li><li><strong>Average deal value:</strong> Mean value per deal type</li><li><strong>Conversion rate:</strong> Win rate per stage en overall</li></ul><p><strong>Filtering options:</strong></p><ul><li>By period (this month, quarter, year)</li><li>By agent or team</li><li>By deal type (sale vs rent)</li><li>By property type</li></ul>"
+        },
+        "en": {
+          "text": "<p>Access comprehensive revenue reports via Dashboard:</p><p><strong>Available reports:</strong></p><ul><li><strong>Pipeline value:</strong> Total value of all active deals per stage</li><li><strong>Weighted forecast:</strong> Realistic revenue forecast based on stage confidence</li><li><strong>Won deals revenue:</strong> Actual closed revenue per period</li><li><strong>Commission earned:</strong> Total commission per agent and team</li><li><strong>Average deal value:</strong> Mean value per deal type</li><li><strong>Conversion rate:</strong> Win rate per stage and overall</li></ul><p><strong>Filtering options:</strong></p><ul><li>By period (this month, quarter, year)</li><li>By agent or team</li><li>By deal type (sale vs rent)</li><li>By property type</li></ul>"
+        },
+        "es": {
+          "text": "<p>Accede a reportes completos de ingresos mediante Dashboard:</p><p><strong>Reportes disponibles:</strong></p><ul><li><strong>Valor del pipeline:</strong> Valor total de todos los deals activos por etapa</li><li><strong>Pronóstico ponderado:</strong> Pronóstico de ingresos realista basado en confianza de etapa</li><li><strong>Ingresos de deals ganados:</strong> Ingresos cerrados reales por período</li><li><strong>Comisión ganada:</strong> Comisión total por agente y equipo</li><li><strong>Valor promedio del deal:</strong> Valor medio por tipo de deal</li><li><strong>Tasa de conversión:</strong> Tasa de ganancia por etapa y general</li></ul><p><strong>Opciones de filtrado:</strong></p><ul><li>Por período (este mes, trimestre, año)</li><li>Por agente o equipo</li><li>Por tipo de deal (venta vs alquiler)</li><li>Por tipo de propiedad</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor value tracking",
+        "en": "Best Practices for Value Tracking",
+        "es": "Mejores prácticas para seguimiento de valor"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Update regularly:</strong> Update values bij price negotiations</li><li><strong>Be realistic:</strong> Use realistic expected values, not optimistic</li><li><strong>Set closing dates:</strong> Altijd closing date toevoegen voor forecasting</li><li><strong>Track confidence:</strong> Update confidence level als deal progresses</li><li><strong>Document changes:</strong> Add notes wanneer values veranderen</li><li><strong>Review forecasts:</strong> Weekly review van pipeline value en forecasts</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Update regularly:</strong> Update values during price negotiations</li><li><strong>Be realistic:</strong> Use realistic expected values, not optimistic</li><li><strong>Set closing dates:</strong> Always add closing date for forecasting</li><li><strong>Track confidence:</strong> Update confidence level as deal progresses</li><li><strong>Document changes:</strong> Add notes when values change</li><li><strong>Review forecasts:</strong> Weekly review of pipeline value and forecasts</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza valores durante negociaciones de precio</li><li><strong>Ser realista:</strong> Usa valores esperados realistas, no optimistas</li><li><strong>Establecer fechas de cierre:</strong> Siempre agrega fecha de cierre para pronósticos</li><li><strong>Rastrear confianza:</strong> Actualiza nivel de confianza a medida que el deal progresa</li><li><strong>Documentar cambios:</strong> Agrega notas cuando los valores cambien</li><li><strong>Revisar pronósticos:</strong> Revisión semanal de valor del pipeline y pronósticos</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-forecasting",
+    "deal-reporting-metrics"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe accurate zijn de revenue forecasts?",
+        "en": "How accurate are the revenue forecasts?",
+        "es": "¿Qué tan precisos son los pronósticos de ingresos?"
+      },
+      "answer": {
+        "nl": "Forecast accuracy hangt af van hoe goed je deal values en closing dates update. Met realistic values, accurate stage progression, en regular updates zijn forecasts typically 80-90% accurate binnen quarterly timeframes.",
+        "en": "Forecast accuracy depends on how well you update deal values and closing dates. With realistic values, accurate stage progression, and regular updates, forecasts are typically 80-90% accurate within quarterly timeframes.",
+        "es": "La precisión del pronóstico depende de qué tan bien actualices valores de deals y fechas de cierre. Con valores realistas, progresión precisa de etapas y actualizaciones regulares, los pronósticos son típicamente 80-90% precisos dentro de marcos de tiempo trimestrales."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik commission automatically invoicen?",
+        "en": "Can I automatically invoice commission?",
+        "es": "¿Puedo facturar comisión automáticamente?"
+      },
+      "answer": {
+        "nl": "Ja, bij deal status 'Won' kun je automatic commission invoice genereren. Het systeem gebruikt de calculated commission amount en company invoice template om professional invoices te creëren die je direct naar clients kunt sturen.",
+        "en": "Yes, when deal status becomes 'Won' you can generate automatic commission invoice. The system uses the calculated commission amount and company invoice template to create professional invoices you can send directly to clients.",
+        "es": "Sí, cuando el estado del deal se vuelve 'Ganado' puedes generar factura de comisión automática. El sistema usa el monto de comisión calculado y la plantilla de factura de la empresa para crear facturas profesionales que puedes enviar directamente a clientes."
+      }
+    }
+  ]
+}

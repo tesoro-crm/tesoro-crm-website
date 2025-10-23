@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "lead-source-analytics",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "reports",
+    "difficulty": "intermediate",
+    "tags": ["reports", "analytics", "lead source", "attribution", "marketing roi"],
+    "featured": false,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=1200&h=630&fit=crop",
+    "keywords": ["lead source tracking", "marketing attribution", "lead analytics", "marketing roi", "channel performance", "lead generation analytics"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Lead source tracking en attributie",
+      "en": "Lead Source Tracking And Attribution",
+      "es": "Seguimiento y atribución de fuentes de leads"
+    },
+    "description": {
+      "nl": "Ontdek welke marketing kanalen de meest waardevolle leads opleveren en optimaliseer je marketing budget met lead source analytics.",
+      "en": "Discover which marketing channels generate the most valuable leads and optimize your marketing budget with lead source analytics.",
+      "es": "Descubre qué canales de marketing generan los leads más valiosos y optimiza tu presupuesto de marketing con análisis de fuentes de leads."
+    },
+    "icon": "source"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "In vastgoed marketing is het begrijpen van welke lead sources je beste klanten opleveren essentieel voor het optimaliseren van je marketing budget en strategie. Tesoro CRM's lead source analytics geeft je gedetailleerde inzichten in welke kanalen - of het nu je website, social media, referrals, of advertenties zijn - de hoogste kwaliteit leads en beste ROI produceren. Met deze data kun je je marketing spend strategisch alloceren en dubbelen op wat werkt terwijl je onderpresterend kanalen elimineert.",
+        "en": "In real estate marketing, understanding which lead sources generate your best customers is essential for optimizing your marketing budget and strategy. Tesoro CRM's lead source analytics provides detailed insights into which channels - whether it's your website, social media, referrals, or advertising - produce the highest quality leads and best ROI. With this data, you can strategically allocate your marketing spend and double down on what works while eliminating underperforming channels.",
+        "es": "En el marketing inmobiliario, comprender qué fuentes de leads generan tus mejores clientes es esencial para optimizar tu presupuesto y estrategia de marketing. El análisis de fuentes de leads de Tesoro CRM proporciona información detallada sobre qué canales - ya sea tu sitio web, redes sociales, referencias o publicidad - producen los leads de mayor calidad y mejor ROI. Con estos datos, puedes asignar estratégicamente tu gasto de marketing y duplicar lo que funciona mientras eliminas los canales de bajo rendimiento."
+      }
+    },
+    {
+      "type": "text",
+      "id": "tracking-setup",
+      "content": {
+        "nl": "## Lead source tracking instellen\n\nVoordat je lead source data kunt analyseren, moet je ervoor zorgen dat je sources correct worden getrackt in je systeem:\n\n**Standaard lead sources** in Tesoro omvatten Website, Social Media (Facebook, Instagram, LinkedIn), Email Marketing, Referrals, Walk-ins, Advertising (Google Ads, Facebook Ads), Portals (vastgoed portals), Events, en Direct Mail. Elke lead moet een toegewezen source hebben.\n\n**Custom lead sources** kunnen worden toegevoegd voor specifieke campagnes of kanalen uniek aan jouw bedrijf. Bijvoorbeeld, als je een podcast sponsorship hebt, maak dan een 'Podcast' lead source om die acquisitie te tracken.\n\n**Source vs Campaign tracking** - Source is het brede kanaal (bijv. Social Media), terwijl Campaign specifieke initiatieven binnen dat kanaal is (bijv. 'Summer Seller Campaign'). Track beide voor granulaire inzichten.\n\n**UTM parameter integratie** - Voor digitale kanalen, gebruik UTM parameters in je URLs om automatisch lead sources te catchen. Tesoro kan UTM source, medium, en campaign parameters parsen van web forms om nauwkeurige attributie te garanderen.\n\n**Lead source regels** kunnen worden ingesteld om automatisch sources toe te wijzen gebaseerd op entry point. Bijvoorbeeld, alle leads van je contact form worden automatisch getagd als 'Website', terwijl email inquiry leads getagd worden als 'Email Marketing'.",
+        "en": "## Setting Up Lead Source Tracking\n\nBefore you can analyze lead source data, you need to ensure your sources are being tracked correctly in your system:\n\n**Default lead sources** in Tesoro include Website, Social Media (Facebook, Instagram, LinkedIn), Email Marketing, Referrals, Walk-ins, Advertising (Google Ads, Facebook Ads), Portals (real estate portals), Events, and Direct Mail. Every lead should have an assigned source.\n\n**Custom lead sources** can be added for specific campaigns or channels unique to your business. For example, if you sponsor a podcast, create a 'Podcast' lead source to track that acquisition.\n\n**Source vs Campaign tracking** - Source is the broad channel (e.g., Social Media), while Campaign is specific initiatives within that channel (e.g., 'Summer Seller Campaign'). Track both for granular insights.\n\n**UTM parameter integration** - For digital channels, use UTM parameters in your URLs to automatically capture lead sources. Tesoro can parse UTM source, medium, and campaign parameters from web forms to ensure accurate attribution.\n\n**Lead source rules** can be set up to automatically assign sources based on entry point. For example, all leads from your contact form are automatically tagged as 'Website', while email inquiry leads are tagged as 'Email Marketing'.",
+        "es": "## Configurar el seguimiento de fuentes de leads\n\nAntes de poder analizar los datos de fuentes de leads, debes asegurarte de que tus fuentes se estén rastreando correctamente en tu sistema:\n\n**Fuentes de leads predeterminadas** en Tesoro incluyen Sitio web, Redes sociales (Facebook, Instagram, LinkedIn), Email marketing, Referencias, Visitas directas, Publicidad (Google Ads, Facebook Ads), Portales (portales inmobiliarios), Eventos y Correo directo. Cada lead debe tener una fuente asignada.\n\n**Fuentes de leads personalizadas** se pueden agregar para campañas específicas o canales únicos de tu negocio. Por ejemplo, si patrocinas un podcast, crea una fuente de lead 'Podcast' para rastrear esa adquisición.\n\n**Seguimiento de fuente vs campaña** - La fuente es el canal amplio (por ejemplo, Redes sociales), mientras que la campaña son iniciativas específicas dentro de ese canal (por ejemplo, 'Campaña de vendedores de verano'). Rastrea ambos para obtener información granular.\n\n**Integración de parámetros UTM** - Para canales digitales, usa parámetros UTM en tus URLs para capturar automáticamente fuentes de leads. Tesoro puede analizar parámetros UTM de fuente, medio y campaña de formularios web para garantizar una atribución precisa.\n\n**Reglas de fuente de leads** se pueden configurar para asignar automáticamente fuentes según el punto de entrada. Por ejemplo, todos los leads de tu formulario de contacto se etiquetan automáticamente como 'Sitio web', mientras que los leads de consulta por correo electrónico se etiquetan como 'Email marketing'."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "analyze-sources",
+      "title": {
+        "nl": "Lead source performance analyseren",
+        "en": "Analyzing Lead Source Performance",
+        "es": "Analizar el rendimiento de fuentes de leads"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Open lead source rapport",
+            "en": "Open Lead Source Report",
+            "es": "Abrir informe de fuentes de leads"
+          },
+          "content": {
+            "nl": "Navigeer naar Reports > Lead Source Analytics. Dit opent het comprehensive lead source dashboard waar je alle source performance metrics kunt zien, inclusief lead volume, conversieratio's, en omzet attributie per kanaal.",
+            "en": "Navigate to Reports > Lead Source Analytics. This opens the comprehensive lead source dashboard where you can see all source performance metrics, including lead volume, conversion rates, and revenue attribution by channel.",
+            "es": "Navega a Informes > Análisis de fuentes de leads. Esto abre el dashboard completo de fuentes de leads donde puedes ver todas las métricas de rendimiento de fuentes, incluido el volumen de leads, tasas de conversión y atribución de ingresos por canal."
+          }
+        },
+        {
+          "title": {
+            "nl": "Review lead volume per source",
+            "en": "Review Lead Volume By Source",
+            "es": "Revisar volumen de leads por fuente"
+          },
+          "content": {
+            "nl": "Bekijk de 'Leads by Source' chart om te zien welke kanalen het meeste volume genereren. Let op zowel absolute numbers als trends over tijd. Een source die historisch goed heeft gepresteerd maar recent is gedaald vereist aandacht. Vergelijk huidige periode met vorige periode voor context.",
+            "en": "Review the 'Leads by Source' chart to see which channels are generating the most volume. Note both absolute numbers and trends over time. A source that has historically performed well but recently declined requires attention. Compare current period to previous period for context.",
+            "es": "Revisa el gráfico 'Leads por fuente' para ver qué canales están generando más volumen. Ten en cuenta tanto los números absolutos como las tendencias a lo largo del tiempo. Una fuente que históricamente ha tenido un buen rendimiento pero que recientemente ha disminuido requiere atención. Compara el período actual con el período anterior para obtener contexto."
+          }
+        },
+        {
+          "title": {
+            "nl": "Analyseer conversieratio's",
+            "en": "Analyze Conversion Rates",
+            "es": "Analizar tasas de conversión"
+          },
+          "content": {
+            "nl": "Kijk naar de 'Conversion Rate by Source' metric. Dit toont welk percentage leads van elke source uiteindelijk deals worden. High volume maar lage conversie sources kunnen je tijd verspillen. Low volume maar hoge conversie sources zijn misschien waar je meer in moet investeren. Referrals hebben typisch de hoogste conversieratio in vastgoed.",
+            "en": "Look at the 'Conversion Rate by Source' metric. This shows what percentage of leads from each source ultimately become deals. High volume but low conversion sources may be wasting your time. Low volume but high conversion sources may be where you should invest more. Referrals typically have the highest conversion rate in real estate.",
+            "es": "Mira la métrica 'Tasa de conversión por fuente'. Esto muestra qué porcentaje de leads de cada fuente finalmente se convierten en negocios. Las fuentes de alto volumen pero baja conversión pueden estar desperdiciando tu tiempo. Las fuentes de bajo volumen pero alta conversión pueden ser donde deberías invertir más. Las referencias típicamente tienen la tasa de conversión más alta en bienes raíces."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bereken cost per lead en ROI",
+            "en": "Calculate Cost Per Lead And ROI",
+            "es": "Calcular costo por lead y ROI"
+          },
+          "content": {
+            "nl": "Als je marketing kosten per kanaal tracked, voer deze in in de report parameters. Tesoro berekent automatisch Cost Per Lead (CPL) en Return on Investment (ROI) voor elke source. Dit vertelt je niet alleen welke kanalen werken, maar welke winstgevend zijn. Een kanaal met hoge conversie maar astronomische kosten is niet duurzaam.",
+            "en": "If you're tracking marketing costs by channel, enter these in the report parameters. Tesoro automatically calculates Cost Per Lead (CPL) and Return on Investment (ROI) for each source. This tells you not just which channels work, but which are profitable. A channel with high conversion but astronomical costs isn't sustainable.",
+            "es": "Si estás rastreando los costos de marketing por canal, ingrésalos en los parámetros del informe. Tesoro calcula automáticamente el Costo por lead (CPL) y el Retorno de la inversión (ROI) para cada fuente. Esto te dice no solo qué canales funcionan, sino cuáles son rentables. Un canal con alta conversión pero costos astronómicos no es sostenible."
+          }
+        },
+        {
+          "title": {
+            "nl": "Identificeer attributie patronen",
+            "en": "Identify Attribution Patterns",
+            "es": "Identificar patrones de atribución"
+          },
+          "content": {
+            "nl": "Gebruik de 'Attribution Timeline' view om te zien hoe leads typisch door multiple touchpoints bewegen voordat ze converteren. Veel vastgoed leads zien je eerst op social media, bezoeken dan je website, en boeken dan via email. Deze multi-touch attributie helpt je begrijpen de volledige customer journey, niet alleen de laatste touch.",
+            "en": "Use the 'Attribution Timeline' view to see how leads typically move through multiple touchpoints before converting. Many real estate leads see you first on social media, then visit your website, then book via email. This multi-touch attribution helps you understand the full customer journey, not just the last touch.",
+            "es": "Usa la vista 'Línea de tiempo de atribución' para ver cómo los leads típicamente se mueven a través de múltiples puntos de contacto antes de convertirse. Muchos leads inmobiliarios te ven primero en redes sociales, luego visitan tu sitio web y luego reservan por correo electrónico. Esta atribución multi-contacto te ayuda a comprender el recorrido completo del cliente, no solo el último contacto."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "optimization-strategies",
+      "content": {
+        "nl": "## Lead source optimalisatie strategieën\n\nZodra je begrijpt welke sources het beste presteren, is het tijd om je marketing te optimaliseren:\n\n**Scale wat werkt** - Als een bepaalde ad campaign of content type hoge kwaliteit leads genereert tegen lage kosten, verhoog dan budget daar. In marketing is het beter om te verdubbelen op successen dan alle kanalen gelijk te verdelen.\n\n**Fix of kill underperformers** - Voor sources met lage conversie, analyseer waarom. Is het poor lead quality, lange response tijd, of mismatch tussen verwachting en aanbod? Als het niet te fixen is na optimization pogingen, redirect dat budget naar beter presterende kanalen.\n\n**Test nieuwe variaties** - Voor goed presterende sources, test variaties. Als Facebook Ads werkt, test verschillende ad creatives, audiences, of offers om verder te optimaliseren. Gebruik A/B testing om incrementele verbeteringen te vinden.\n\n**Invest in referral programs** - Referrals hebben bijna altijd de hoogste conversieratio en laagste kosten. Als dit niet je top source is, investeer dan in een formeel referral program met incentives voor clients die je recommenden.\n\n**Optimize poor-converting sources** - Voordat je een kanaal afsluit, probeer de lead quality te verbeteren. Voor website leads, verbeter je qualification vragen. Voor ads, verfijn je targeting. Geef optimization 30-60 dagen voordat je de plug eruit trekt.\n\n**Track seasonal patterns** - Sommige sources presteren beter in bepaalde seizoenen. Bijvoorbeeld, open house events werken beter in de lente. Pas je channel mix aan gebaseerd op time of year.",
+        "en": "## Lead Source Optimization Strategies\n\nOnce you understand which sources perform best, it's time to optimize your marketing:\n\n**Scale what works** - If a particular ad campaign or content type is generating high-quality leads at low cost, increase budget there. In marketing, it's better to double down on winners than spread budget equally across all channels.\n\n**Fix or kill underperformers** - For sources with low conversion, analyze why. Is it poor lead quality, slow response time, or mismatch between expectation and offering? If it can't be fixed after optimization attempts, redirect that budget to better-performing channels.\n\n**Test new variations** - For well-performing sources, test variations. If Facebook Ads work, test different ad creatives, audiences, or offers to optimize further. Use A/B testing to find incremental improvements.\n\n**Invest in referral programs** - Referrals almost always have the highest conversion rate and lowest cost. If this isn't your top source, invest in a formal referral program with incentives for clients who recommend you.\n\n**Optimize poor-converting sources** - Before killing a channel, try improving lead quality. For website leads, improve your qualification questions. For ads, refine your targeting. Give optimization 30-60 days before pulling the plug.\n\n**Track seasonal patterns** - Some sources perform better in certain seasons. For example, open house events work better in spring. Adjust your channel mix based on time of year.",
+        "es": "## Estrategias de optimización de fuentes de leads\n\nUna vez que comprendas qué fuentes funcionan mejor, es hora de optimizar tu marketing:\n\n**Escala lo que funciona** - Si una campaña publicitaria o tipo de contenido en particular está generando leads de alta calidad a bajo costo, aumenta el presupuesto allí. En marketing, es mejor duplicar las apuestas en los ganadores que distribuir el presupuesto equitativamente en todos los canales.\n\n**Arregla o elimina los de bajo rendimiento** - Para fuentes con baja conversión, analiza por qué. ¿Es mala calidad de leads, tiempo de respuesta lento o falta de coincidencia entre expectativa y oferta? Si no se puede arreglar después de intentos de optimización, redirige ese presupuesto a canales de mejor rendimiento.\n\n**Prueba nuevas variaciones** - Para fuentes de buen rendimiento, prueba variaciones. Si los anuncios de Facebook funcionan, prueba diferentes creatividades de anuncios, audiencias u ofertas para optimizar aún más. Usa pruebas A/B para encontrar mejoras incrementales.\n\n**Invierte en programas de referencias** - Las referencias casi siempre tienen la tasa de conversión más alta y el costo más bajo. Si esta no es tu fuente principal, invierte en un programa formal de referencias con incentivos para clientes que te recomienden.\n\n**Optimiza fuentes de baja conversión** - Antes de matar un canal, intenta mejorar la calidad de los leads. Para leads del sitio web, mejora tus preguntas de calificación. Para anuncios, refina tu segmentación. Dale a la optimización 30-60 días antes de desconectar.\n\n**Rastrea patrones estacionales** - Algunas fuentes funcionan mejor en ciertas estaciones. Por ejemplo, los eventos de casa abierta funcionan mejor en primavera. Ajusta tu mezcla de canales según la época del año."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "multi-touch-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Begrijp multi-touch attributie",
+        "en": "Understand Multi-Touch Attribution",
+        "es": "Comprender la atribución multi-contacto"
+      },
+      "content": {
+        "nl": "De meeste vastgoed clients interacteren met je merk 7-13 keer voordat ze een deal sluiten. Last-touch attributie (alleen de laatste source crediten) onderwaardeert awareness kanalen zoals social media en content marketing. Gebruik Tesoro's multi-touch attributie model om alle touchpoints te zien die hebben bijgedragen aan een conversie. Dit geeft een eerlijker beeld van welke kanalen echt waarde toevoegen aan je sales funnel.",
+        "en": "Most real estate clients interact with your brand 7-13 times before closing a deal. Last-touch attribution (crediting only the final source) undervalues awareness channels like social media and content marketing. Use Tesoro's multi-touch attribution model to see all touchpoints that contributed to a conversion. This gives a fairer picture of which channels truly add value to your sales funnel.",
+        "es": "La mayoría de los clientes inmobiliarios interactúan con tu marca 7-13 veces antes de cerrar un trato. La atribución de último contacto (acreditar solo la fuente final) subvalora los canales de conciencia como las redes sociales y el marketing de contenido. Usa el modelo de atribución multi-contacto de Tesoro para ver todos los puntos de contacto que contribuyeron a una conversión. Esto da una imagen más justa de qué canales realmente agregan valor a tu embudo de ventas."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "data-quality-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Lead source data kwaliteit is cruciaal",
+        "en": "Lead Source Data Quality Is Critical",
+        "es": "La calidad de los datos de fuente de leads es crítica"
+      },
+      "content": {
+        "nl": "Je lead source analytics zijn alleen zo goed als je data kwaliteit. Zorg ervoor dat je team consequent lead sources correct registreert. 'Unknown' of 'Other' zou niet meer dan 5% van je leads moeten zijn. Implementeer required fields bij lead creation om ervoor te zorgen dat source altijd wordt vastgelegd. Review regelmatig leads met missing of incorrect source data en train je team op proper attribution practices. Garbage in, garbage out - slechte data leidt tot slechte beslissingen.",
+        "en": "Your lead source analytics are only as good as your data quality. Ensure your team consistently records lead sources correctly. 'Unknown' or 'Other' should be no more than 5% of your leads. Implement required fields on lead creation to ensure source is always captured. Regularly review leads with missing or incorrect source data and train your team on proper attribution practices. Garbage in, garbage out - bad data leads to bad decisions.",
+        "es": "Tus análisis de fuentes de leads son tan buenos como la calidad de tus datos. Asegúrate de que tu equipo registre consistentemente las fuentes de leads correctamente. 'Desconocido' u 'Otro' no debería ser más del 5% de tus leads. Implementa campos obligatorios en la creación de leads para asegurar que la fuente siempre se capture. Revisa regularmente los leads con datos de fuente faltantes o incorrectos y capacita a tu equipo en prácticas de atribución adecuadas. Basura entra, basura sale - los datos malos conducen a malas decisiones."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Wat is een goede conversieratio voor verschillende lead sources?",
+            "en": "What is a good conversion rate for different lead sources?",
+            "es": "¿Cuál es una buena tasa de conversión para diferentes fuentes de leads?"
+          },
+          "answer": {
+            "nl": "Conversieratio's variëren significant per source type. Referrals hebben typisch de hoogste conversie (30-50%) omdat ze komen met vertrouwen en voorqualificatie. Website contact forms converteren meestal 5-15%, afhankelijk van je qualification proces. Social media leads converteren lager (2-8%) omdat ze vaak minder committed zijn. Paid ads variëren wijd (3-20%) gebaseerd op targeting kwaliteit. Portal inquiries (bijv. Idealista, Funda) converteren typisch 8-18%. Focus niet alleen op percentages - een 5% conversieratio op 1000 leads is beter dan 50% op 20 leads.",
+            "en": "Conversion rates vary significantly by source type. Referrals typically have the highest conversion (30-50%) because they come with trust and pre-qualification. Website contact forms usually convert 5-15%, depending on your qualification process. Social media leads convert lower (2-8%) because they're often less committed. Paid ads vary widely (3-20%) based on targeting quality. Portal inquiries (e.g., Idealista, Funda) typically convert 8-18%. Don't focus only on percentages - a 5% conversion rate on 1000 leads is better than 50% on 20 leads.",
+            "es": "Las tasas de conversión varían significativamente según el tipo de fuente. Las referencias típicamente tienen la conversión más alta (30-50%) porque vienen con confianza y precalificación. Los formularios de contacto del sitio web generalmente convierten del 5-15%, dependiendo de tu proceso de calificación. Los leads de redes sociales convierten menos (2-8%) porque a menudo están menos comprometidos. Los anuncios pagados varían ampliamente (3-20%) según la calidad de la segmentación. Las consultas de portales (por ejemplo, Idealista, Funda) típicamente convierten del 8-18%. No te enfoques solo en porcentajes: una tasa de conversión del 5% en 1000 leads es mejor que el 50% en 20 leads."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe lang moet ik een lead source testen voordat ik besluit het te stoppen?",
+            "en": "How long should I test a lead source before deciding to stop it?",
+            "es": "¿Cuánto tiempo debo probar una fuente de leads antes de decidir detenerla?"
+          },
+          "answer": {
+            "nl": "Geef nieuwe lead sources minimaal 90 dagen om te presteren, idealiter een vol kwartaal om voor seizoenaliteit te compenseren. Voor paid channels, wacht tot je minimaal 50-100 leads hebt ontvangen voordat je conversieratio conclusies trekt - kleinere samples zijn statistisch niet betrouwbaar. Echter, als een channel duidelijk slechte kwaliteit leads genereert (geen response, fake contacts, irrelevante queries) na 30 dagen, is het OK om eerder te stoppen. Voor organische kanalen zoals SEO of content marketing, wees geduldig - deze nemen 6-12 maanden om volledig te maturen.",
+            "en": "Give new lead sources a minimum of 90 days to perform, ideally a full quarter to account for seasonality. For paid channels, wait until you've received at least 50-100 leads before drawing conversion rate conclusions - smaller samples aren't statistically reliable. However, if a channel is clearly generating poor quality leads (no response, fake contacts, irrelevant queries) after 30 days, it's OK to stop earlier. For organic channels like SEO or content marketing, be patient - these take 6-12 months to fully mature.",
+            "es": "Dale a las nuevas fuentes de leads un mínimo de 90 días para rendir, idealmente un trimestre completo para tener en cuenta la estacionalidad. Para canales pagados, espera hasta que hayas recibido al menos 50-100 leads antes de sacar conclusiones sobre la tasa de conversión: las muestras más pequeñas no son estadísticamente confiables. Sin embargo, si un canal está generando claramente leads de mala calidad (sin respuesta, contactos falsos, consultas irrelevantes) después de 30 días, está bien detenerlo antes. Para canales orgánicos como SEO o marketing de contenido, sé paciente: estos toman de 6 a 12 meses para madurar completamente."
+          }
+        },
+        {
+          "question": {
+            "nl": "Moet ik investeren in een lead source met hoge conversie maar laag volume?",
+            "en": "Should I invest in a lead source with high conversion but low volume?",
+            "es": "¿Debería invertir en una fuente de leads con alta conversión pero bajo volumen?"
+          },
+          "answer": {
+            "nl": "Absoluut - hoge conversie sources zijn goud, zelfs met laag volume. De eerste stap is begrijpen waarom het volume laag is. Is het inherent aan het kanaal (bijv. referrals zijn altijd beperkt) of is het omdat je er weinig aandacht aan hebt besteed? Als het schaalbaarheid heeft, investeer dan in groei. Bijvoorbeeld, als LinkedIn messaging hoge conversie heeft maar je stuurt er weinig, hire iemand om dat op te schalen. Als het inherent laag volume is (zoals premium events), optimaliseer dan voor maximale ROI binnen zijn grenzen. Hoge conversie channels verdienen investering zelfs als ze nooit je grootste volume bron worden.",
+            "en": "Absolutely - high conversion sources are gold, even with low volume. The first step is understanding why volume is low. Is it inherent to the channel (e.g., referrals are always limited) or is it because you've given it little attention? If it has scalability potential, invest in growth. For example, if LinkedIn messaging has high conversion but you're sending few messages, hire someone to scale that up. If it's inherently low volume (like premium events), optimize for maximum ROI within its constraints. High conversion channels deserve investment even if they never become your largest volume source.",
+            "es": "Absolutamente: las fuentes de alta conversión son oro, incluso con bajo volumen. El primer paso es comprender por qué el volumen es bajo. ¿Es inherente al canal (por ejemplo, las referencias siempre son limitadas) o es porque le has prestado poca atención? Si tiene potencial de escalabilidad, invierte en crecimiento. Por ejemplo, si la mensajería de LinkedIn tiene alta conversión pero estás enviando pocos mensajes, contrata a alguien para escalar eso. Si es inherentemente de bajo volumen (como eventos premium), optimiza para el máximo ROI dentro de sus limitaciones. Los canales de alta conversión merecen inversión incluso si nunca se convierten en tu fuente de mayor volumen."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe track ik offline lead sources zoals events of print advertising?",
+            "en": "How do I track offline lead sources like events or print advertising?",
+            "es": "¿Cómo rasteo fuentes de leads offline como eventos o publicidad impresa?"
+          },
+          "answer": {
+            "nl": "Voor offline channels, train je team om altijd te vragen 'Hoe heb je van ons gehoord?' tijdens eerste contact. Voor events, maak een unique lead source voor elk event (bijv. 'Property Expo Madrid 2025') zodat je performance per event kunt tracken. Voor print ads, gebruik unique phone numbers of URLs die automatisch de source tracken. Voor direct mail, include een unique discount code of landing page URL. In Tesoro kun je handmatig de lead source selecteren bij lead creation. De sleutel is consistentie - zorg ervoor dat iedereen in je team begrijpt hoe belangrijk accurate source tracking is en het tot gewoonte wordt.",
+            "en": "For offline channels, train your team to always ask 'How did you hear about us?' during first contact. For events, create a unique lead source for each event (e.g., 'Property Expo Madrid 2025') so you can track performance per event. For print ads, use unique phone numbers or URLs that automatically track the source. For direct mail, include a unique discount code or landing page URL. In Tesoro, you can manually select the lead source during lead creation. The key is consistency - ensure everyone on your team understands how important accurate source tracking is and makes it a habit.",
+            "es": "Para canales offline, capacita a tu equipo para que siempre pregunte '¿Cómo te enteraste de nosotros?' durante el primer contacto. Para eventos, crea una fuente de lead única para cada evento (por ejemplo, 'Expo de propiedades Madrid 2025') para que puedas rastrear el rendimiento por evento. Para anuncios impresos, usa números de teléfono únicos o URLs que rastreen automáticamente la fuente. Para correo directo, incluye un código de descuento único o URL de página de destino. En Tesoro, puedes seleccionar manualmente la fuente de lead durante la creación del lead. La clave es la consistencia: asegúrate de que todos en tu equipo comprendan la importancia del seguimiento preciso de fuentes y lo conviertan en un hábito."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "dashboard-kpis-overview",
+    "conversion-optimization-guide",
+    "deal-reporting-metrics"
+  ]
+}

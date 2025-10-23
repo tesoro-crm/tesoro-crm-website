@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "id": "welcome-to-tesoro",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["getting-started", "overview", "introduction", "basics"],
+    "featured": true,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro crm", "real estate crm", "getting started", "introduction", "crm overview"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Welkom bij Tesoro CRM",
+      "en": "Welcome to Tesoro CRM",
+      "es": "Bienvenido a Tesoro CRM"
+    },
+    "description": {
+      "nl": "Ontdek hoe Tesoro CRM je helpt meer deals te sluiten, je eigenschappen beter te beheren en je vastgoedactiviteiten te groeien.",
+      "en": "Discover how Tesoro CRM helps you close more deals, manage your properties better, and grow your real estate business.",
+      "es": "Descubre cómo Tesoro CRM te ayuda a cerrar más deals, gestionar mejor tus propiedades y hacer crecer tu negocio inmobiliario."
+    },
+    "icon": "home"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Welkom bij Tesoro CRM, het complete platform voor vastgoedprofessionals die hun business naar het volgende niveau willen tillen. Of je nu een individuele makelaar bent, deel uitmaakt van een team, of een hele afdeling leidt - Tesoro biedt alle tools die je nodig hebt om succesvol te zijn.</p><p>Deze gids geeft je een compleet overzicht van wat Tesoro voor jou kan doen en hoe je het beste kunt starten.</p>"
+        },
+        "en": {
+          "text": "<p>Welcome to Tesoro CRM, the complete platform for real estate professionals who want to take their business to the next level. Whether you're an individual agent, part of a team, or leading an entire department - Tesoro provides all the tools you need to succeed.</p><p>This guide gives you a complete overview of what Tesoro can do for you and how to get started best.</p>"
+        },
+        "es": {
+          "text": "<p>Bienvenido a Tesoro CRM, la plataforma completa para profesionales inmobiliarios que quieren llevar su negocio al siguiente nivel. Ya seas un agente individual, parte de un equipo o líder de un departamento completo - Tesoro proporciona todas las herramientas que necesitas para tener éxito.</p><p>Esta guía te da una visión completa de lo que Tesoro puede hacer por ti y cómo comenzar de la mejor manera.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "who-is-tesoro-for",
+      "title": {
+        "nl": "Voor wie is Tesoro CRM?",
+        "en": "Who Is Tesoro CRM For?",
+        "es": "¿Para quién es Tesoro CRM?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM is speciaal ontwikkeld voor:</p><ul><li><strong>Vastgoedmakelaars</strong> - Beheer je leads, contacten en deals op één plek</li><li><strong>Property Managers</strong> - Houd overzicht over al je properties en klanten</li><li><strong>Ontwikkelaars</strong> - Beheer grootschalige projecten en houd investeerders op de hoogte</li><li><strong>Makelaarkantoren</strong> - Coördineer je team en maximaliseer productiviteit</li><li><strong>Investeringsmaatschappijen</strong> - Track je portfolio en analyseer markttrends</li></ul><p>Met Tesoro krijg je alle functionaliteit die je nodig hebt voor €99/maand voor maximaal 10 gebruikers - geen verborgen kosten, geen dure add-ons.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM is specially designed for:</p><ul><li><strong>Real Estate Agents</strong> - Manage your leads, contacts and deals in one place</li><li><strong>Property Managers</strong> - Keep track of all your properties and clients</li><li><strong>Developers</strong> - Manage large-scale projects and keep investors informed</li><li><strong>Real Estate Agencies</strong> - Coordinate your team and maximize productivity</li><li><strong>Investment Firms</strong> - Track your portfolio and analyze market trends</li></ul><p>With Tesoro you get all the functionality you need for €99/month for up to 10 users - no hidden costs, no expensive add-ons.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM está especialmente diseñado para:</p><ul><li><strong>Agentes inmobiliarios</strong> - Gestiona tus leads, contactos y deals en un solo lugar</li><li><strong>Property Managers</strong> - Mantén el control de todas tus propiedades y clientes</li><li><strong>Desarrolladores</strong> - Gestiona proyectos a gran escala y mantén informados a los inversores</li><li><strong>Agencias inmobiliarias</strong> - Coordina tu equipo y maximiza la productividad</li><li><strong>Firmas de inversión</strong> - Rastrea tu portfolio y analiza tendencias del mercado</li></ul><p>Con Tesoro obtienes toda la funcionalidad que necesitas por €99/mes para hasta 10 usuarios - sin costos ocultos, sin add-ons costosos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "key-benefits",
+      "title": {
+        "nl": "De belangrijkste voordelen",
+        "en": "Key Benefits",
+        "es": "Beneficios clave"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Alles wat je nodig hebt, op één plek</h3><p><strong>Lead & Contact Management</strong><br>Verzamel leads van je website, MLS feeds en andere bronnen. Tesoro organiseert automatisch alle contactgegevens, voorkeuren en communicatiegeschiedenis.</p><p><strong>Deal Pipeline Visualisatie</strong><br>Zie in één oogopslag waar al je deals staan met de visuele Kanban board. Sleep deals van fase naar fase en krijg real-time updates over je sales pipeline.</p><p><strong>Property Management</strong><br>Beheer duizenden properties met gedetailleerde specificaties, foto's, video's en documenten. Automatische sync met MLS feeds zoals Idealista en Fotocasa.</p><p><strong>Multi-Channel Communicatie</strong><br>Email, SMS, WhatsApp en telefoongesprekken - alles geïntegreerd in één platform. Geen app-switching meer nodig.</p><p><strong>Client Portal</strong><br>Geef je klanten toegang tot hun eigen portal waar ze properties kunnen bekijken, documenten downloaden en met je communiceren.</p><p><strong>AI-Powered Matching</strong><br>Onze smart matching algoritme koppelt automatisch de beste properties aan je leads op basis van hun voorkeuren en budget.</p>"
+        },
+        "en": {
+          "text": "<h3>Everything You Need in One Place</h3><p><strong>Lead & Contact Management</strong><br>Collect leads from your website, MLS feeds and other sources. Tesoro automatically organizes all contact details, preferences and communication history.</p><p><strong>Deal Pipeline Visualization</strong><br>See at a glance where all your deals are with the visual Kanban board. Drag deals from stage to stage and get real-time updates on your sales pipeline.</p><p><strong>Property Management</strong><br>Manage thousands of properties with detailed specifications, photos, videos and documents. Automatic sync with MLS feeds like Idealista and Fotocasa.</p><p><strong>Multi-Channel Communication</strong><br>Email, SMS, WhatsApp and phone calls - all integrated in one platform. No more app-switching needed.</p><p><strong>Client Portal</strong><br>Give your clients access to their own portal where they can view properties, download documents and communicate with you.</p><p><strong>AI-Powered Matching</strong><br>Our smart matching algorithm automatically connects the best properties to your leads based on their preferences and budget.</p>"
+        },
+        "es": {
+          "text": "<h3>Todo lo que necesitas en un solo lugar</h3><p><strong>Gestión de leads & contactos</strong><br>Recopila leads de tu sitio web, feeds MLS y otras fuentes. Tesoro organiza automáticamente todos los detalles de contacto, preferencias e historial de comunicación.</p><p><strong>Visualización del pipeline de deals</strong><br>Ve de un vistazo dónde están todos tus deals con el tablero Kanban visual. Arrastra deals de etapa en etapa y obtén actualizaciones en tiempo real de tu pipeline de ventas.</p><p><strong>Gestión de propiedades</strong><br>Gestiona miles de propiedades con especificaciones detalladas, fotos, videos y documentos. Sincronización automática con feeds MLS como Idealista y Fotocasa.</p><p><strong>Comunicación multicanal</strong><br>Email, SMS, WhatsApp y llamadas telefónicas - todo integrado en una plataforma. Ya no necesitas cambiar entre apps.</p><p><strong>Portal del cliente</strong><br>Da a tus clientes acceso a su propio portal donde pueden ver propiedades, descargar documentos y comunicarse contigo.</p><p><strong>Matching impulsado por IA</strong><br>Nuestro algoritmo de matching inteligente conecta automáticamente las mejores propiedades con tus leads según sus preferencias y presupuesto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "quick-stats",
+      "variant": "info",
+      "title": {
+        "nl": "Tesoro in cijfers",
+        "en": "Tesoro in Numbers",
+        "es": "Tesoro en números"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>€99/maand</strong> - Tot 10 gebruikers included</li><li><strong>3 talen</strong> - Spaans, Engels, Nederlands</li><li><strong>Multi-currency</strong> - Werkt met EUR, USD, GBP en meer</li><li><strong>Onbeperkt</strong> - Contacten, properties en deals</li><li><strong>Cloud-based</strong> - Toegang vanaf elke locatie, elk device</li><li><strong>GDPR compliant</strong> - Je data is veilig en beschermd</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>€99/month</strong> - Up to 10 users included</li><li><strong>3 languages</strong> - Spanish, English, Dutch</li><li><strong>Multi-currency</strong> - Works with EUR, USD, GBP and more</li><li><strong>Unlimited</strong> - Contacts, properties and deals</li><li><strong>Cloud-based</strong> - Access from any location, any device</li><li><strong>GDPR compliant</strong> - Your data is safe and protected</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>€99/mes</strong> - Hasta 10 usuarios incluidos</li><li><strong>3 idiomas</strong> - Español, inglés, holandés</li><li><strong>Multi-moneda</strong> - Funciona con EUR, USD, GBP y más</li><li><strong>Ilimitado</strong> - Contactos, propiedades y deals</li><li><strong>Basado en la nube</strong> - Acceso desde cualquier ubicación, cualquier dispositivo</li><li><strong>Cumplimiento GDPR</strong> - Tus datos están seguros y protegidos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "main-modules",
+      "title": {
+        "nl": "De hoofdmodules",
+        "en": "Main Modules",
+        "es": "Módulos principales"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro bestaat uit verschillende modules die naadloos samenwerken:</p><h4>Dashboard</h4><p>Je controlecentrum met KPI's, recent activity, en belangrijke alerts. Zie in één oogopslag hoeveel deals je hebt, nieuwe leads, en waar je aandacht nodig is.</p><h4>Leads</h4><p>Verzamel en kwalificeer nieuwe prospects. Track lead source, status, en voorkeuren. Converteer gekwalificeerde leads naar deals met één klik.</p><h4>Deals</h4><p>Visueel Kanban board met alle deal stages. Zie precies waar elke deal staat en wat de volgende actie is. Track deal value, closing probability en verwachte sluitingsdatum.</p><h4>Contacts</h4><p>Centrale database met al je contacten. Buyers, sellers, investors, partners - iedereen op één plek met volledige communicatiegeschiedenis.</p><h4>Properties</h4><p>Beheer je volledige property inventory. Voeg properties toe via MLS feeds of handmatig. Inclusief foto's, video's, documenten en alle specificaties.</p><h4>Activities & Calendar</h4><p>Plan je viewings, meetings en follow-ups. Synchroniseert met Google Calendar en Outlook.</p><h4>Settings</h4><p>Pas Tesoro aan naar jouw wensen. Configureer email templates, AI settings, integraties en meer.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro consists of various modules that work seamlessly together:</p><h4>Dashboard</h4><p>Your control center with KPIs, recent activity, and important alerts. See at a glance how many deals you have, new leads, and where your attention is needed.</p><h4>Leads</h4><p>Collect and qualify new prospects. Track lead source, status, and preferences. Convert qualified leads to deals with one click.</p><h4>Deals</h4><p>Visual Kanban board with all deal stages. See exactly where each deal is and what the next action is. Track deal value, closing probability and expected closing date.</p><h4>Contacts</h4><p>Central database with all your contacts. Buyers, sellers, investors, partners - everyone in one place with complete communication history.</p><h4>Properties</h4><p>Manage your complete property inventory. Add properties via MLS feeds or manually. Including photos, videos, documents and all specifications.</p><h4>Activities & Calendar</h4><p>Schedule your viewings, meetings and follow-ups. Syncs with Google Calendar and Outlook.</p><h4>Settings</h4><p>Customize Tesoro to your needs. Configure email templates, AI settings, integrations and more.</p>"
+        },
+        "es": {
+          "text": "<p>Tesoro consta de varios módulos que funcionan perfectamente juntos:</p><h4>Dashboard</h4><p>Tu centro de control con KPIs, actividad reciente y alertas importantes. Ve de un vistazo cuántos deals tienes, nuevos leads y dónde se necesita tu atención.</p><h4>Leads</h4><p>Recopila y califica nuevos prospectos. Rastrea la fuente del lead, estado y preferencias. Convierte leads calificados en deals con un clic.</p><h4>Deals</h4><p>Tablero Kanban visual con todas las etapas de deals. Ve exactamente dónde está cada deal y cuál es la siguiente acción. Rastrea el valor del deal, probabilidad de cierre y fecha de cierre esperada.</p><h4>Contacts</h4><p>Base de datos central con todos tus contactos. Compradores, vendedores, inversores, socios - todos en un solo lugar con historial de comunicación completo.</p><h4>Properties</h4><p>Gestiona tu inventario completo de propiedades. Agrega propiedades a través de feeds MLS o manualmente. Incluye fotos, videos, documentos y todas las especificaciones.</p><h4>Activities & Calendar</h4><p>Programa tus visitas, reuniones y seguimientos. Se sincroniza con Google Calendar y Outlook.</p><h4>Settings</h4><p>Personaliza Tesoro según tus necesidades. Configura plantillas de email, ajustes de IA, integraciones y más.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "next-steps",
+      "variant": "success",
+      "title": {
+        "nl": "Volgende stappen",
+        "en": "Next Steps",
+        "es": "Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Klaar om te starten?</strong> Hier is wat je nu moet doen:</p><ol><li><strong>Account aanmaken</strong> - Lees onze complete registratie gids</li><li><strong>Dashboard verkennen</strong> - Raak vertrouwd met je controlecentrum</li><li><strong>Eerste contact toevoegen</strong> - Begin met je database opbouwen</li><li><strong>Property toevoegen</strong> - Voeg je eerste listing toe</li><li><strong>Deal aanmaken</strong> - Start met je eerste sales opportunity</li></ol><p>Volg onze <strong>Quick Start Guide</strong> voor een 15-minuten tutorial die je door alle basics leidt.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Ready to get started?</strong> Here's what you should do now:</p><ol><li><strong>Create Account</strong> - Read our complete registration guide</li><li><strong>Explore Dashboard</strong> - Get familiar with your control center</li><li><strong>Add First Contact</strong> - Start building your database</li><li><strong>Add Property</strong> - Add your first listing</li><li><strong>Create Deal</strong> - Start with your first sales opportunity</li></ol><p>Follow our <strong>Quick Start Guide</strong> for a 15-minute tutorial that walks you through all the basics.</p>"
+        },
+        "es": {
+          "text": "<p><strong>¿Listo para comenzar?</strong> Esto es lo que debes hacer ahora:</p><ol><li><strong>Crear cuenta</strong> - Lee nuestra guía completa de registro</li><li><strong>Explorar dashboard</strong> - Familiarízate con tu centro de control</li><li><strong>Agregar primer contacto</strong> - Comienza a construir tu base de datos</li><li><strong>Agregar propiedad</strong> - Agrega tu primer listing</li><li><strong>Crear deal</strong> - Comienza con tu primera oportunidad de venta</li></ol><p>Sigue nuestra <strong>Quick Start Guide</strong> para un tutorial de 15 minutos que te guiará por todos los conceptos básicos.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "account-registration-complete-guide",
+    "dashboard-overview",
+    "quick-start-guide",
+    "first-steps-checklist"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen Tesoro en andere CRM's?",
+        "en": "What's the difference between Tesoro and other CRMs?",
+        "es": "¿Cuál es la diferencia entre Tesoro y otros CRMs?"
+      },
+      "answer": {
+        "nl": "Tesoro is specifiek gebouwd voor vastgoed. Andere CRM's zijn algemeen en missen cruciale features zoals property management, MLS integraties, en AI-powered lead matching. Tesoro combineert alles wat je nodig hebt in één platform voor één vaste prijs.",
+        "en": "Tesoro is specifically built for real estate. Other CRMs are general and miss crucial features like property management, MLS integrations, and AI-powered lead matching. Tesoro combines everything you need in one platform for one fixed price.",
+        "es": "Tesoro está específicamente diseñado para bienes raíces. Otros CRMs son generales y carecen de características cruciales como gestión de propiedades, integraciones MLS y matching de leads impulsado por IA. Tesoro combina todo lo que necesitas en una plataforma por un precio fijo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik Tesoro eerst uitproberen?",
+        "en": "Can I try Tesoro first?",
+        "es": "¿Puedo probar Tesoro primero?"
+      },
+      "answer": {
+        "nl": "Ja! Je kunt een gratis demo aanvragen via onze website. We laten je zien hoe Tesoro werkt en beantwoorden al je vragen. Je kunt ook direct starten - de eerste maand is risico-vrij.",
+        "en": "Yes! You can request a free demo via our website. We'll show you how Tesoro works and answer all your questions. You can also start directly - the first month is risk-free.",
+        "es": "¡Sí! Puedes solicitar una demo gratuita a través de nuestro sitio web. Te mostraremos cómo funciona Tesoro y responderemos todas tus preguntas. También puedes comenzar directamente - el primer mes es sin riesgo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel tijd kost de implementatie?",
+        "en": "How much time does implementation take?",
+        "es": "¿Cuánto tiempo lleva la implementación?"
+      },
+      "answer": {
+        "nl": "Je kunt binnen 30 minuten starten. Account aanmaken duurt 5 minuten, eerste contacten en properties importeren nog eens 15-20 minuten. Voor volledige team onboarding reken je 1-2 dagen, afhankelijk van je teamgrootte.",
+        "en": "You can start within 30 minutes. Creating an account takes 5 minutes, importing first contacts and properties another 15-20 minutes. For full team onboarding, allow 1-2 days depending on your team size.",
+        "es": "Puedes comenzar en 30 minutos. Crear una cuenta toma 5 minutos, importar primeros contactos y propiedades otros 15-20 minutos. Para la incorporación completa del equipo, considera 1-2 días dependiendo del tamaño de tu equipo."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik data importeren uit mijn huidige systeem?",
+        "en": "Can I import data from my current system?",
+        "es": "¿Puedo importar datos de mi sistema actual?"
+      },
+      "answer": {
+        "nl": "Ja, Tesoro ondersteunt CSV imports voor contacten en properties. We kunnen je ook helpen met migratie vanaf andere CRM's. Neem contact op met support voor persoonlijke begeleiding bij grotere migraties.",
+        "en": "Yes, Tesoro supports CSV imports for contacts and properties. We can also help with migration from other CRMs. Contact support for personal guidance with larger migrations.",
+        "es": "Sí, Tesoro admite importaciones CSV para contactos y propiedades. También podemos ayudar con la migración desde otros CRMs. Contacta a soporte para orientación personal con migraciones más grandes."
+      }
+    }
+  ]
+}

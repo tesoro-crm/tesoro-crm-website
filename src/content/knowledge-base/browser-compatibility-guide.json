@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "id": "browser-compatibility-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "beginner",
+    "tags": ["browser", "compatibility", "support", "chrome", "firefox"],
+    "featured": false,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=1200&h=630&fit=crop",
+    "keywords": ["browser support", "compatibility", "chrome tesoro", "firefox tesoro", "supported browsers"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Browser compatibiliteit en ondersteunde browsers",
+      "en": "Browser Compatibility and Supported Browsers",
+      "es": "Compatibilidad de navegador y navegadores soportados"
+    },
+    "description": {
+      "nl": "Welke browsers werken met Tesoro, known issues en hoe je browser compatibility checkt.",
+      "en": "Which browsers work with Tesoro, known issues and how to check browser compatibility.",
+      "es": "Qué navegadores funcionan con Tesoro, problemas conocidos y cómo verificar compatibilidad de navegador."
+    },
+    "icon": "web"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "supported-browsers",
+      "title": {
+        "nl": "Ondersteunde browsers",
+        "en": "Supported Browsers",
+        "es": "Navegadores soportados"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>✅ Volledig ondersteund (aanbevolen):</h4><table><thead><tr><th>Browser</th><th>Min Versie</th><th>Performance</th><th>Notes</th></tr></thead><tbody><tr><td>Google Chrome</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Best choice</td></tr><tr><td>Microsoft Edge</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Chrome-based</td></tr><tr><td>Firefox</td><td>95+</td><td>⭐⭐⭐⭐</td><td>Goed</td></tr><tr><td>Safari</td><td>15+</td><td>⭐⭐⭐</td><td>Mac/iOS only</td></tr></tbody></table><h4>⚠️ Beperkt ondersteund:</h4><ul><li><strong>Safari < 15:</strong> Sommige features werken niet</li><li><strong>Brave, Vivaldi, Opera:</strong> Chrome-based, meestal OK</li></ul><h4>❌ Niet ondersteund:</h4><ul><li><strong>Internet Explorer:</strong> Alle versies (deprecated door Microsoft)</li><li><strong>Chrome < 100:</strong> Te oud, update aub</li></ul>"
+        },
+        "en": {
+          "text": "<h4>✅ Fully supported (recommended):</h4><table><thead><tr><th>Browser</th><th>Min Version</th><th>Performance</th><th>Notes</th></tr></thead><tbody><tr><td>Google Chrome</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Best choice</td></tr><tr><td>Microsoft Edge</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Chrome-based</td></tr><tr><td>Firefox</td><td>95+</td><td>⭐⭐⭐⭐</td><td>Good</td></tr><tr><td>Safari</td><td>15+</td><td>⭐⭐⭐</td><td>Mac/iOS only</td></tr></tbody></table><h4>⚠️ Limited support:</h4><ul><li><strong>Safari < 15:</strong> Some features don't work</li><li><strong>Brave, Vivaldi, Opera:</strong> Chrome-based, usually OK</li></ul><h4>❌ Not supported:</h4><ul><li><strong>Internet Explorer:</strong> All versions (deprecated by Microsoft)</li><li><strong>Chrome < 100:</strong> Too old, please update</li></ul>"
+        },
+        "es": {
+          "text": "<h4>✅ Totalmente soportado (recomendado):</h4><table><thead><tr><th>Navegador</th><th>Versión mín</th><th>Rendimiento</th><th>Notas</th></tr></thead><tbody><tr><td>Google Chrome</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Mejor opción</td></tr><tr><td>Microsoft Edge</td><td>100+</td><td>⭐⭐⭐⭐⭐</td><td>Basado en Chrome</td></tr><tr><td>Firefox</td><td>95+</td><td>⭐⭐⭐⭐</td><td>Bueno</td></tr><tr><td>Safari</td><td>15+</td><td>⭐⭐⭐</td><td>Solo Mac/iOS</td></tr></tbody></table><h4>⚠️ Soporte limitado:</h4><ul><li><strong>Safari < 15:</strong> Algunas características no funcionan</li><li><strong>Brave, Vivaldi, Opera:</strong> Basados en Chrome, usualmente OK</li></ul><h4>❌ No soportado:</h4><ul><li><strong>Internet Explorer:</strong> Todas las versiones (obsoleto por Microsoft)</li><li><strong>Chrome < 100:</strong> Demasiado antiguo, por favor actualiza</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "known-issues",
+      "title": {
+        "nl": "Known issues per browser",
+        "en": "Known Issues Per Browser",
+        "es": "Problemas conocidos por navegador"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Safari (Mac/iOS):</h4><ul><li><strong>File uploads > 10MB:</strong> Kan falen (Safari limiet)</li><li><strong>PDF preview:</strong> Werkt niet altijd, download instead</li><li><strong>Notifications:</strong> Require extra permissions</li></ul><p><strong>Workaround:</strong> Use Chrome op Mac voor beste experience.</p><h4>Firefox:</h4><ul><li><strong>Drag & drop:</strong> Kanban board kan soms laggy zijn</li><li><strong>WebRTC:</strong> Video calls require extra permissions</li></ul><h4>Mobile browsers:</h4><ul><li><strong>iOS Safari:</strong> Best mobile experience</li><li><strong>Android Chrome:</strong> Ook goed</li><li><strong>Limitations:</strong> Sommige features zijn desktop-only</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Safari (Mac/iOS):</h4><ul><li><strong>File uploads > 10MB:</strong> May fail (Safari limit)</li><li><strong>PDF preview:</strong> Doesn't always work, download instead</li><li><strong>Notifications:</strong> Require extra permissions</li></ul><p><strong>Workaround:</strong> Use Chrome on Mac for best experience.</p><h4>Firefox:</h4><ul><li><strong>Drag & drop:</strong> Kanban board can sometimes be laggy</li><li><strong>WebRTC:</strong> Video calls require extra permissions</li></ul><h4>Mobile browsers:</h4><ul><li><strong>iOS Safari:</strong> Best mobile experience</li><li><strong>Android Chrome:</strong> Also good</li><li><strong>Limitations:</strong> Some features are desktop-only</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Safari (Mac/iOS):</h4><ul><li><strong>Subidas de archivos > 10MB:</strong> Pueden fallar (límite de Safari)</li><li><strong>Vista previa de PDF:</strong> No siempre funciona, descarga en su lugar</li><li><strong>Notificaciones:</strong> Requieren permisos extra</li></ul><p><strong>Solución alternativa:</strong> Usa Chrome en Mac para mejor experiencia.</p><h4>Firefox:</h4><ul><li><strong>Arrastrar y soltar:</strong> El tablero Kanban puede ser a veces lento</li><li><strong>WebRTC:</strong> Las videollamadas requieren permisos extra</li></ul><h4>Navegadores móviles:</h4><ul><li><strong>iOS Safari:</strong> Mejor experiencia móvil</li><li><strong>Android Chrome:</strong> También bueno</li><li><strong>Limitaciones:</strong> Algunas características son solo de escritorio</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "check-compatibility",
+      "variant": "info",
+      "title": {
+        "nl": "Check je browser compatibility",
+        "en": "Check Your Browser Compatibility",
+        "es": "Verifica compatibilidad de tu navegador"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Snel check:</strong></p><ol><li>Login to Tesoro</li><li>Settings → System → <strong>Browser Info</strong></li><li>Check:<ul><li>Browser naam en versie</li><li>✅ Compatible (groen) of ⚠️ Oudated (oranje)</li><li>Recommended actions</li></ul></li></ol><p>Als oranje: Update je browser!</p>"
+        },
+        "en": {
+          "text": "<p><strong>Quick check:</strong></p><ol><li>Login to Tesoro</li><li>Settings → System → <strong>Browser Info</strong></li><li>Check:<ul><li>Browser name and version</li><li>✅ Compatible (green) or ⚠️ Outdated (orange)</li><li>Recommended actions</li></ul></li></ol><p>If orange: Update your browser!</p>"
+        },
+        "es": {
+          "text": "<p><strong>Verificación rápida:</strong></p><ol><li>Inicia sesión en Tesoro</li><li>Settings → System → <strong>Browser Info</strong></li><li>Verifica:<ul><li>Nombre y versión del navegador</li><li>✅ Compatible (verde) o ⚠️ Desactualizado (naranja)</li><li>Acciones recomendadas</li></ul></li></ol><p>Si es naranja: ¡Actualiza tu navegador!</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "performance-optimization-tips",
+    "common-issues-solutions",
+    "mobile-app-troubleshooting"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Werkt Tesoro op tablets?",
+        "en": "Does Tesoro work on tablets?",
+        "es": "¿Funciona Tesoro en tablets?"
+      },
+      "answer": {
+        "nl": "Ja! Tesoro is responsive en werkt op tablets (iPad, Android tablets). Voor beste ervaring: Use landscape mode en minimaal 10\" screen. Sommige advanced features werken beter op desktop.",
+        "en": "Yes! Tesoro is responsive and works on tablets (iPad, Android tablets). For best experience: Use landscape mode and at least 10\" screen. Some advanced features work better on desktop.",
+        "es": "¡Sí! Tesoro es responsive y funciona en tablets (iPad, tablets Android). Para mejor experiencia: Usa modo horizontal y pantalla de al menos 10\". Algunas características avanzadas funcionan mejor en escritorio."
+      }
+    }
+  ]
+}

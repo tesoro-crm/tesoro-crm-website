@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "id": "project-client-portal-access",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "projects",
+    "difficulty": "beginner",
+    "tags": ["projects", "client-portal", "buyers", "updates", "communication"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&h=630&fit=crop",
+    "keywords": ["client portal", "buyer access", "construction updates", "project portal", "tesoro portal"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Client portal: geef buyers toegang tot project updates",
+        "en": "Client Portal: Give Buyers Access to Project Updates",
+      "es": "Portal del cliente: dar acceso a compradores a actualizaciones del proyecto"
+    },
+    "description": {
+      "nl": "Stel buyers gerust met 24/7 toegang tot construction progress, milestones en project informatie via het client portal.",
+      "en": "Reassure buyers with 24/7 access to construction progress, milestones and project information via the client portal.",
+      "es": "Tranquiliza a compradores con acceso 24/7 a progreso de construcción, milestones e información del proyecto via el portal del cliente."
+    },
+    "icon": "dashboard"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het Tesoro Client Portal geeft buyers <strong>self-service toegang</strong> tot hun project informatie zonder dat ze contact met jou hoeven opnemen. Dit verhoogt buyer satisfaction en reduceert \"status update\" vragen.</p><p><strong>Wat buyers kunnen zien:</strong></p><ul><li>Construction progress percentage en milestones</li><li>Photo galleries van construction site</li><li>Their specific unit details en floor plan</li><li>Timeline en expected completion date</li><li>Project amenities en features</li><li>Contact info for questions</li></ul>"
+        },
+        "en": {
+          "text": "<p>The Tesoro Client Portal gives buyers <strong>self-service access</strong> to their project information without having to contact you. This increases buyer satisfaction and reduces \"status update\" questions.</p><p><strong>What buyers can see:</strong></p><ul><li>Construction progress percentage and milestones</li><li>Photo galleries of construction site</li><li>Their specific unit details and floor plan</li><li>Timeline and expected completion date</li><li>Project amenities and features</li><li>Contact info for questions</li></ul>"
+        },
+        "es": {
+          "text": "<p>El Portal del Cliente de Tesoro da a compradores <strong>acceso de autoservicio</strong> a su información del proyecto sin tener que contactarte. Esto aumenta la satisfacción del comprador y reduce preguntas de \"actualización de estado\".</p><p><strong>Lo que los compradores pueden ver:</strong></p><ul><li>Porcentaje de progreso de construcción y milestones</li><li>Galerías de fotos del sitio de construcción</li><li>Detalles de su unidad específica y plano de piso</li><li>Cronograma y fecha de finalización esperada</li><li>Amenidades y características del proyecto</li><li>Información de contacto para preguntas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "setup-access",
+      "title": {
+        "nl": "Buyers toegang geven tot client portal",
+        "en": "Give Buyers Access to Client Portal",
+        "es": "Dar acceso a compradores al portal del cliente"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Portal activeren voor project",
+            "en": "Step 1: Enable Portal for Project",
+            "es": "Paso 1: habilitar portal para proyecto"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Open Project → Settings → <strong>Client Portal</strong></li><li>Toggle <strong>Enable Portal</strong> ON</li><li>Kies wat buyers kunnen zien:<ul><li>✅ Construction progress (percentage + milestones)</li><li>✅ Photo galleries</li><li>✅ Unit details</li><li>✅ Project amenities</li><li>✅ Timeline</li><li>❌ Financial info (pricing, costs) - Usually OFF for privacy</li></ul></li><li>Klik <strong>Save Settings</strong></li></ol><p>Portal is nu actief voor dit project!</p>"
+            },
+            "en": {
+              "text": "<ol><li>Open Project → Settings → <strong>Client Portal</strong></li><li>Toggle <strong>Enable Portal</strong> ON</li><li>Choose what buyers can see:<ul><li>✅ Construction progress (percentage + milestones)</li><li>✅ Photo galleries</li><li>✅ Unit details</li><li>✅ Project amenities</li><li>✅ Timeline</li><li>❌ Financial info (pricing, costs) - Usually OFF for privacy</li></ul></li><li>Click <strong>Save Settings</strong></li></ol><p>Portal is now active for this project!</p>"
+            },
+            "es": {
+              "text": "<ol><li>Abre Project → Settings → <strong>Client Portal</strong></li><li>Activa <strong>Enable Portal</strong> ON</li><li>Elige qué pueden ver los compradores:<ul><li>✅ Progreso de construcción (porcentaje + milestones)</li><li>✅ Galerías de fotos</li><li>✅ Detalles de unidad</li><li>✅ Amenidades del proyecto</li><li>✅ Cronograma</li><li>❌ Información financiera (precios, costos) - Usualmente OFF por privacidad</li></ul></li><li>Haz clic en <strong>Save Settings</strong></li></ol><p>¡El portal está ahora activo para este proyecto!</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Buyers uitnodigen via deal",
+            "en": "Step 2: Invite Buyers via Deal",
+            "es": "Paso 2: invitar compradores via deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Automatisch: Wanneer je een deal maakt voor een unit in het project:</p><ol><li>Open de Deal voor een buyer</li><li>Als deal status → <strong>Contract Signed</strong> of later</li><li>Klik <strong>Send Portal Invite</strong></li><li>Buyer ontvangt email:<pre>Welcome to Sunset Gardens Valencia!\n\nYour unit: A-502 (2BR, Floor 5)\n\nAccess your Client Portal to:\n- View construction progress\n- See photo updates\n- Check timeline\n- View your unit details\n\n[Access Portal]\n\nLogin: buyer@email.com\nPassword: (set your own)\n</pre></li></ol><p>Buyer klikt link, set wachtwoord, en heeft nu toegang!</p>"
+            },
+            "en": {
+              "text": "<p>Automatically: When you create a deal for a unit in the project:</p><ol><li>Open the Deal for a buyer</li><li>When deal status → <strong>Contract Signed</strong> or later</li><li>Click <strong>Send Portal Invite</strong></li><li>Buyer receives email:<pre>Welcome to Sunset Gardens Valencia!\n\nYour unit: A-502 (2BR, Floor 5)\n\nAccess your Client Portal to:\n- View construction progress\n- See photo updates\n- Check timeline\n- View your unit details\n\n[Access Portal]\n\nLogin: buyer@email.com\nPassword: (set your own)\n</pre></li></ol><p>Buyer clicks link, sets password, and now has access!</p>"
+            },
+            "es": {
+              "text": "<p>Automáticamente: Cuando creas un deal para una unidad en el proyecto:</p><ol><li>Abre el Deal para un comprador</li><li>Cuando estado del deal → <strong>Contract Signed</strong> o posterior</li><li>Haz clic en <strong>Send Portal Invite</strong></li><li>El comprador recibe email:<pre>¡Bienvenido a Sunset Gardens Valencia!\n\nTu unidad: A-502 (2BR, Piso 5)\n\nAccede a tu Portal del Cliente para:\n- Ver progreso de construcción\n- Ver actualizaciones de fotos\n- Verificar cronograma\n- Ver detalles de tu unidad\n\n[Acceder al Portal]\n\nLogin: comprador@email.com\nContraseña: (establece la tuya)\n</pre></li></ol><p>¡El comprador hace clic en el enlace, establece contraseña y ahora tiene acceso!</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "buyer-view",
+      "title": {
+        "nl": "Wat buyers zien in het portal",
+        "en": "What Buyers See in the Portal",
+        "es": "Qué ven los compradores en el portal"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>1. Project Overview:</h4><ul><li>Project naam en developer</li><li>Location en neighborhood</li><li>Shared amenities (pool, gym, parking)</li><li>Overall construction progress (55% complete)</li></ul><h4>2. My Unit Details:</h4><ul><li>Unit number (A-502)</li><li>Type (2BR Apartment)</li><li>Size (75 m²)</li><li>Floor (5th floor)</li><li>Features (Balcony, Smart home, Sea view)</li><li>Floor plan (interactive PDF)</li></ul><h4>3. Construction Progress:</h4><ul><li><strong>Timeline:</strong> Jan 2024 - Jun 2025<ul><li>Elapsed: 10 months</li><li>Remaining: 8 months</li></ul></li><li><strong>Milestones:</strong><ul><li>✅ Foundation Complete (April 2024)</li><li>✅ Structure Complete (Oct 2024)</li><li>🔄 Windows & Doors (In Progress - 65%)</li><li>⏳ Interior Finishes (Upcoming)</li><li>⏳ Handover (June 2025)</li></ul></li></ul><h4>4. Photo Gallery:</h4><ul><li>Latest photos (updated weekly)</li><li>Organized by milestone</li><li>Before/after comparisons</li><li>Zoom en download options</li></ul><h4>5. Documents:</h4><ul><li>Project brochure</li><li>Unit floor plan</li><li>Amenities info</li><li>Contact info</li></ul>"
+        },
+        "en": {
+          "text": "<h4>1. Project Overview:</h4><ul><li>Project name and developer</li><li>Location and neighborhood</li><li>Shared amenities (pool, gym, parking)</li><li>Overall construction progress (55% complete)</li></ul><h4>2. My Unit Details:</h4><ul><li>Unit number (A-502)</li><li>Type (2BR Apartment)</li><li>Size (75 m²)</li><li>Floor (5th floor)</li><li>Features (Balcony, Smart home, Sea view)</li><li>Floor plan (interactive PDF)</li></ul><h4>3. Construction Progress:</h4><ul><li><strong>Timeline:</strong> Jan 2024 - Jun 2025<ul><li>Elapsed: 10 months</li><li>Remaining: 8 months</li></ul></li><li><strong>Milestones:</strong><ul><li>✅ Foundation Complete (April 2024)</li><li>✅ Structure Complete (Oct 2024)</li><li>🔄 Windows & Doors (In Progress - 65%)</li><li>⏳ Interior Finishes (Upcoming)</li><li>⏳ Handover (June 2025)</li></ul></li></ul><h4>4. Photo Gallery:</h4><ul><li>Latest photos (updated weekly)</li><li>Organized by milestone</li><li>Before/after comparisons</li><li>Zoom and download options</li></ul><h4>5. Documents:</h4><ul><li>Project brochure</li><li>Unit floor plan</li><li>Amenities info</li><li>Contact info</li></ul>"
+        },
+        "es": {
+          "text": "<h4>1. Resumen del proyecto:</h4><ul><li>Nombre del proyecto y desarrollador</li><li>Ubicación y vecindario</li><li>Amenidades compartidas (piscina, gimnasio, estacionamiento)</li><li>Progreso general de construcción (55% completo)</li></ul><h4>2. Detalles de mi unidad:</h4><ul><li>Número de unidad (A-502)</li><li>Tipo (Apartamento 2BR)</li><li>Tamaño (75 m²)</li><li>Piso (5to piso)</li><li>Características (Balcón, Smart home, Vista al mar)</li><li>Plano de piso (PDF interactivo)</li></ul><h4>3. Progreso de construcción:</h4><ul><li><strong>Cronograma:</strong> Ene 2024 - Jun 2025<ul><li>Transcurrido: 10 meses</li><li>Restante: 8 meses</li></ul></li><li><strong>Milestones:</strong><ul><li>✅ Foundation Complete (Abril 2024)</li><li>✅ Structure Complete (Oct 2024)</li><li>🔄 Windows & Doors (En progreso - 65%)</li><li>⏳ Interior Finishes (Próximo)</li><li>⏳ Handover (Junio 2025)</li></ul></li></ul><h4>4. Galería de fotos:</h4><ul><li>Últimas fotos (actualizadas semanalmente)</li><li>Organizadas por milestone</li><li>Comparaciones antes/después</li><li>Opciones de zoom y descarga</li></ul><h4>5. Documentos:</h4><ul><li>Folleto del proyecto</li><li>Plano de piso de unidad</li><li>Información de amenidades</li><li>Información de contacto</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "benefits",
+      "variant": "success",
+      "title": {
+        "nl": "Voordelen van client portal",
+        "en": "Benefits of Client Portal",
+        "es": "Beneficios del portal del cliente"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor buyers:</strong></p><ul><li>24/7 toegang tot project updates</li><li>Transparency en peace of mind</li><li>No need te wachten op email updates</li><li>Kan progress delen met family/friends</li></ul><p><strong>Voor jou:</strong></p><ul><li>Minder \"status update\" emails/calls</li><li>Professional image</li><li>Verhoogde buyer satisfaction</li><li>Minder tijd aan individual updates</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>For buyers:</strong></p><ul><li>24/7 access to project updates</li><li>Transparency and peace of mind</li><li>No need to wait for email updates</li><li>Can share progress with family/friends</li></ul><p><strong>For you:</strong></p><ul><li>Fewer \"status update\" emails/calls</li><li>Professional image</li><li>Increased buyer satisfaction</li><li>Less time on individual updates</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Para compradores:</strong></p><ul><li>Acceso 24/7 a actualizaciones del proyecto</li><li>Transparencia y tranquilidad</li><li>No necesitan esperar actualizaciones por email</li><li>Pueden compartir progreso con familia/amigos</li></ul><p><strong>Para ti:</strong></p><ul><li>Menos emails/llamadas de \"actualización de estado\"</li><li>Imagen profesional</li><li>Mayor satisfacción del comprador</li><li>Menos tiempo en actualizaciones individuales</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "projects-overview-guide",
+    "project-progress-tracking",
+    "client-portal-setup-guide",
+    "creating-development-projects"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen buyers alle units zien of alleen hun eigen?",
+        "en": "Can buyers see all units or only their own?",
+        "es": "¿Pueden los compradores ver todas las unidades o solo la suya?"
+      },
+      "answer": {
+        "nl": "Buyers zien alleen hun eigen unit details. Ze zien wel overall project progress en shared amenities, maar geen pricing/details van andere units (privacy).",
+        "en": "Buyers see only their own unit details. They see overall project progress and shared amenities, but no pricing/details of other units (privacy).",
+        "es": "Los compradores ven solo los detalles de su propia unidad. Ven el progreso general del proyecto y las amenidades compartidas, pero no precios/detalles de otras unidades (privacidad)."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik portal toegang intrekken?",
+        "en": "Can I revoke portal access?",
+        "es": "¿Puedo revocar el acceso al portal?"
+      },
+      "answer": {
+        "nl": "Ja. Open Deal → Client Portal → Revoke Access. Dit is handig als deal cancelled wordt. Buyer kan niet meer inloggen maar data blijft in systeem voor jou.",
+        "en": "Yes. Open Deal → Client Portal → Revoke Access. This is useful if deal is cancelled. Buyer can no longer log in but data remains in system for you.",
+        "es": "Sí. Abre Deal → Client Portal → Revoke Access. Esto es útil si el deal se cancela. El comprador ya no puede iniciar sesión pero los datos permanecen en el sistema para ti."
+      }
+    }
+  ]
+}

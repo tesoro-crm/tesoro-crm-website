@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "id": "contact-advanced-search",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:25:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "search", "filters", "advanced", "segmentation"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro advanced search", "contact filtering", "crm search", "find contacts", "contact segmentation"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Geavanceerd Zoeken en Filteren van Contacten",
+      "en": "Advanced Contact Search and Filtering",
+      "es": "Búsqueda y Filtrado Avanzado de Contactos"
+    },
+    "description": {
+      "nl": "Leer hoe je de krachtige zoek- en filterfuncties van Tesoro CRM gebruikt om exact de contacten te vinden die je nodig hebt.",
+      "en": "Learn how to use Tesoro CRM's powerful search and filter features to find exactly the contacts you need.",
+      "es": "Aprende cómo usar las potentes funciones de búsqueda y filtrado de Tesoro CRM para encontrar exactamente los contactos que necesitas."
+    },
+    "icon": "search"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "search-basics",
+      "title": {
+        "nl": "Basis Zoekfunctionaliteit",
+        "en": "Basic Search Functionality",
+        "es": "Funcionalidad de Búsqueda Básica"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro biedt drie manieren om contacten te zoeken:</p><h3>1. Global Search (Hoofdzoekbalk)</h3><p>De zoekbalk bovenaan zoekt door alle resources:</p><ul><li>Type een naam, email of telefoonnummer</li><li>Je ziet real-time suggesties terwijl je typt</li><li>Resultaten tonen Contacts, Leads, Deals, Properties</li><li>Klik op een resultaat om direct naar de detail pagina te gaan</li></ul><h3>2. Contact List Search</h3><p>In de Contacts module zelf:</p><ul><li>Bovenaan de lijst staat een search field</li><li>Deze zoekt alleen binnen contacten</li><li>Zoekt in: naam, email, telefoon, adres, tags</li><li>Resultaten filteren direct in de lijst</li></ul><h3>3. Advanced Filters</h3><p>Krachtige filters voor complexe zoekopdrachten:</p><ul><li>Combineer meerdere criteria</li><li>Sla zoekopdrachten op als 'Saved Views'</li><li>Gebruik operators zoals 'contains', 'equals', 'greater than'</li><li>Filter op 30+ velden tegelijk</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro offers three ways to search contacts:</p><h3>1. Global Search (Main Search Bar)</h3><p>The search bar at the top searches through all resources:</p><ul><li>Type a name, email or phone number</li><li>You see real-time suggestions as you type</li><li>Results show Contacts, Leads, Deals, Properties</li><li>Click on a result to go directly to the detail page</li></ul><h3>2. Contact List Search</h3><p>In the Contacts module itself:</p><ul><li>At the top of the list is a search field</li><li>This searches only within contacts</li><li>Searches in: name, email, phone, address, tags</li><li>Results filter directly in the list</li></ul><h3>3. Advanced Filters</h3><p>Powerful filters for complex queries:</p><ul><li>Combine multiple criteria</li><li>Save searches as 'Saved Views'</li><li>Use operators like 'contains', 'equals', 'greater than'</li><li>Filter on 30+ fields simultaneously</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro ofrece tres formas de buscar contactos:</p><h3>1. Búsqueda Global (Barra de Búsqueda Principal)</h3><p>La barra de búsqueda en la parte superior busca a través de todos los recursos:</p><ul><li>Escribe un nombre, email o número de teléfono</li><li>Ves sugerencias en tiempo real mientras escribes</li><li>Los resultados muestran Contacts, Leads, Deals, Properties</li><li>Haz clic en un resultado para ir directamente a la página de detalles</li></ul><h3>2. Búsqueda en Lista de Contactos</h3><p>En el módulo de Contactos mismo:</p><ul><li>En la parte superior de la lista hay un campo de búsqueda</li><li>Este busca solo dentro de contactos</li><li>Busca en: nombre, email, teléfono, dirección, etiquetas</li><li>Los resultados filtran directamente en la lista</li></ul><h3>3. Filtros Avanzados</h3><p>Filtros potentes para consultas complejas:</p><ul><li>Combina múltiples criterios</li><li>Guarda búsquedas como 'Saved Views'</li><li>Usa operadores como 'contiene', 'igual', 'mayor que'</li><li>Filtra en más de 30 campos simultáneamente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "using-advanced-filters",
+      "title": {
+        "nl": "Geavanceerde Filters Gebruiken",
+        "en": "Using Advanced Filters",
+        "es": "Usar Filtros Avanzados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Open Filter Panel",
+            "en": "Step 1: Open Filter Panel",
+            "es": "Paso 1: Abrir Panel de Filtros"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Ga naar <strong>Contacts</strong> lijst</li><li>Klik op <strong>Filter</strong> icoon (trechter) rechtsboven</li><li>Het filter panel schuift open aan de rechterkant</li></ol><p>Je ziet nu alle beschikbare filter opties gegroepeerd per categorie.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Go to <strong>Contacts</strong> list</li><li>Click the <strong>Filter</strong> icon (funnel) in the top right</li><li>The filter panel slides open on the right side</li></ol><p>You now see all available filter options grouped by category.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Ve a la lista de <strong>Contacts</strong></li><li>Haz clic en el icono <strong>Filter</strong> (embudo) en la parte superior derecha</li><li>El panel de filtros se desliza abierto en el lado derecho</li></ol><p>Ahora ves todas las opciones de filtro disponibles agrupadas por categoría.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Selecteer Filter Criteria",
+            "en": "Step 2: Select Filter Criteria",
+            "es": "Paso 2: Seleccionar Criterios de Filtro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Beschikbare Filter Categorieën:</strong></p><p><strong>Basic Info:</strong></p><ul><li>Name (contains, equals)</li><li>Email (contains, equals)</li><li>Phone (contains)</li></ul><p><strong>Status & Organization:</strong></p><ul><li>Status (Active, Inactive, Won, Lost)</li><li>Tags (select multiple)</li><li>Owner (assigned agent)</li></ul><p><strong>Location:</strong></p><ul><li>City (equals, contains)</li><li>Country</li><li>Address (contains)</li><li>Coordinates (within radius)</li></ul><p><strong>Dates:</strong></p><ul><li>Created date (before, after, between)</li><li>Updated date (before, after, between)</li><li>Last contact date</li></ul><p><strong>Custom Fields:</strong></p><ul><li>Alle custom fields die je hebt aangemaakt</li><li>Filter operators afhankelijk van field type</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Available Filter Categories:</strong></p><p><strong>Basic Info:</strong></p><ul><li>Name (contains, equals)</li><li>Email (contains, equals)</li><li>Phone (contains)</li></ul><p><strong>Status & Organization:</strong></p><ul><li>Status (Active, Inactive, Won, Lost)</li><li>Tags (select multiple)</li><li>Owner (assigned agent)</li></ul><p><strong>Location:</strong></p><ul><li>City (equals, contains)</li><li>Country</li><li>Address (contains)</li><li>Coordinates (within radius)</li></ul><p><strong>Dates:</strong></p><ul><li>Created date (before, after, between)</li><li>Updated date (before, after, between)</li><li>Last contact date</li></ul><p><strong>Custom Fields:</strong></p><ul><li>All custom fields you've created</li><li>Filter operators depending on field type</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Categorías de Filtro Disponibles:</strong></p><p><strong>Información Básica:</strong></p><ul><li>Nombre (contiene, igual)</li><li>Email (contiene, igual)</li><li>Teléfono (contiene)</li></ul><p><strong>Estado y Organización:</strong></p><ul><li>Estado (Active, Inactive, Won, Lost)</li><li>Etiquetas (seleccionar múltiples)</li><li>Propietario (agente asignado)</li></ul><p><strong>Ubicación:</strong></p><ul><li>Ciudad (igual, contiene)</li><li>País</li><li>Dirección (contiene)</li><li>Coordenadas (dentro del radio)</li></ul><p><strong>Fechas:</strong></p><ul><li>Fecha de creación (antes, después, entre)</li><li>Fecha de actualización (antes, después, entre)</li><li>Fecha de último contacto</li></ul><p><strong>Campos Personalizados:</strong></p><ul><li>Todos los campos personalizados que has creado</li><li>Operadores de filtro según el tipo de campo</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Filters Combineren (AND/OR Logic)",
+            "en": "Step 3: Combine Filters (AND/OR Logic)",
+            "es": "Paso 3: Combinar Filtros (Lógica AND/OR)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Tesoro ondersteunt geavanceerde filter logica:</p><p><strong>AND Logic (standaard):</strong></p><p>Contacten moeten aan ALLE criteria voldoen:</p><ul><li>Status = Active</li><li>AND Tags contains 'VIP'</li><li>AND City = 'Amsterdam'</li></ul><p>Resultaat: Alleen actieve VIP contacten in Amsterdam</p><p><strong>OR Logic:</strong></p><p>Contacten voldoen aan ÉÉN VAN de criteria:</p><ul><li>Tags contains 'Hot Lead'</li><li>OR Tags contains 'Warm Lead'</li></ul><p>Resultaat: Alle hot of warm leads</p><p><strong>Complexe Combinaties:</strong></p><p>Groepeer filters voor complexe queries:</p><ul><li>(Status = Active AND City = 'Amsterdam')</li><li>OR (Status = Active AND City = 'Rotterdam')</li></ul>"
+            },
+            "en": {
+              "text": "<p>Tesoro supports advanced filter logic:</p><p><strong>AND Logic (default):</strong></p><p>Contacts must meet ALL criteria:</p><ul><li>Status = Active</li><li>AND Tags contains 'VIP'</li><li>AND City = 'Amsterdam'</li></ul><p>Result: Only active VIP contacts in Amsterdam</p><p><strong>OR Logic:</strong></p><p>Contacts meet ONE OF the criteria:</p><ul><li>Tags contains 'Hot Lead'</li><li>OR Tags contains 'Warm Lead'</li></ul><p>Result: All hot or warm leads</p><p><strong>Complex Combinations:</strong></p><p>Group filters for complex queries:</p><ul><li>(Status = Active AND City = 'Amsterdam')</li><li>OR (Status = Active AND City = 'Rotterdam')</li></ul>"
+            },
+            "es": {
+              "text": "<p>Tesoro soporta lógica de filtro avanzada:</p><p><strong>Lógica AND (predeterminado):</strong></p><p>Los contactos deben cumplir TODOS los criterios:</p><ul><li>Estado = Active</li><li>AND Etiquetas contiene 'VIP'</li><li>AND Ciudad = 'Amsterdam'</li></ul><p>Resultado: Solo contactos VIP activos en Amsterdam</p><p><strong>Lógica OR:</strong></p><p>Los contactos cumplen UNO DE los criterios:</p><ul><li>Etiquetas contiene 'Hot Lead'</li><li>OR Etiquetas contiene 'Warm Lead'</li></ul><p>Resultado: Todos los leads calientes o tibios</p><p><strong>Combinaciones Complejas:</strong></p><p>Agrupa filtros para consultas complejas:</p><ul><li>(Estado = Active AND Ciudad = 'Amsterdam')</li><li>OR (Estado = Active AND Ciudad = 'Rotterdam')</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Sla je Zoekopdracht Op als Saved View",
+            "en": "Step 4: Save Your Search as Saved View",
+            "es": "Paso 4: Guardar tu Búsqueda como Vista Guardada"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Veelgebruikte filters kun je opslaan voor later:</p><ol><li>Stel je filters in zoals gewenst</li><li>Klik <strong>Save View</strong> onderaan het filter panel</li><li>Geef je view een naam (bijv. 'Amsterdam VIP Clients')</li><li>Klik <strong>Save</strong></li></ol><p><strong>Je saved view verschijnt nu:</strong></p><ul><li>In het snelmenu bovenaan de lijst</li><li>Als één-klik filter optie</li><li>Voor alle teamleden (als je wil)</li></ul><p><strong>Saved view beheren:</strong></p><ul><li>Edit view: Wijzig filters en klik 'Update View'</li><li>Rename view: Klik op het potlood icoon</li><li>Delete view: Klik op het prullenbak icoon</li><li>Set as default: Maak deze view je standaard weergave</li></ul>"
+            },
+            "en": {
+              "text": "<p>Save frequently used filters for later:</p><ol><li>Set up your filters as desired</li><li>Click <strong>Save View</strong> at the bottom of the filter panel</li><li>Give your view a name (e.g., 'Amsterdam VIP Clients')</li><li>Click <strong>Save</strong></li></ol><p><strong>Your saved view now appears:</strong></p><ul><li>In the quick menu at the top of the list</li><li>As a one-click filter option</li><li>For all team members (if you want)</li></ul><p><strong>Manage saved view:</strong></p><ul><li>Edit view: Change filters and click 'Update View'</li><li>Rename view: Click the pencil icon</li><li>Delete view: Click the trash icon</li><li>Set as default: Make this view your default display</li></ul>"
+            },
+            "es": {
+              "text": "<p>Guarda filtros frecuentemente usados para más tarde:</p><ol><li>Configura tus filtros como desees</li><li>Haz clic en <strong>Save View</strong> en la parte inferior del panel de filtros</li><li>Dale un nombre a tu vista (ej., 'Amsterdam VIP Clients')</li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Tu vista guardada ahora aparece:</strong></p><ul><li>En el menú rápido en la parte superior de la lista</li><li>Como una opción de filtro de un clic</li><li>Para todos los miembros del equipo (si quieres)</li></ul><p><strong>Gestionar vista guardada:</strong></p><ul><li>Editar vista: Cambia filtros y haz clic en 'Update View'</li><li>Renombrar vista: Haz clic en el icono de lápiz</li><li>Eliminar vista: Haz clic en el icono de papelera</li><li>Establecer como predeterminado: Hacer esta vista tu visualización predeterminada</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "power-user-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Power User Tips",
+        "en": "Power User Tips",
+        "es": "Consejos para Usuarios Avanzados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Veelgebruikte Saved Views:</strong></p><ul><li>'Hot Leads This Month' (Created date = this month + Tags = Hot Lead)</li><li>'VIP Clients Amsterdam' (Status = Active + Tags = VIP + City = Amsterdam)</li><li>'Needs Follow-up' (Tags = Follow-up + Last contact > 7 days ago)</li><li>'Luxury Buyers' (Tags = Luxury + Custom field 'Budget' > €500k)</li><li>'Newsletter Subscribers' (Custom field 'Newsletter' = Yes)</li></ul><p><strong>Keyboard Shortcuts:</strong></p><ul><li><strong>Ctrl+F:</strong> Focus op zoekbalk</li><li><strong>Ctrl+K:</strong> Open global search</li><li><strong>F:</strong> Toggle filter panel</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Frequently Used Saved Views:</strong></p><ul><li>'Hot Leads This Month' (Created date = this month + Tags = Hot Lead)</li><li>'VIP Clients Amsterdam' (Status = Active + Tags = VIP + City = Amsterdam)</li><li>'Needs Follow-up' (Tags = Follow-up + Last contact > 7 days ago)</li><li>'Luxury Buyers' (Tags = Luxury + Custom field 'Budget' > €500k)</li><li>'Newsletter Subscribers' (Custom field 'Newsletter' = Yes)</li></ul><p><strong>Keyboard Shortcuts:</strong></p><ul><li><strong>Ctrl+F:</strong> Focus on search bar</li><li><strong>Ctrl+K:</strong> Open global search</li><li><strong>F:</strong> Toggle filter panel</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Vistas Guardadas Frecuentemente Usadas:</strong></p><ul><li>'Hot Leads This Month' (Fecha de creación = este mes + Etiquetas = Hot Lead)</li><li>'VIP Clients Amsterdam' (Estado = Active + Etiquetas = VIP + Ciudad = Amsterdam)</li><li>'Needs Follow-up' (Etiquetas = Follow-up + Último contacto > hace 7 días)</li><li>'Luxury Buyers' (Etiquetas = Luxury + Campo personalizado 'Presupuesto' > €500k)</li><li>'Newsletter Subscribers' (Campo personalizado 'Newsletter' = Sí)</li></ul><p><strong>Atajos de Teclado:</strong></p><ul><li><strong>Ctrl+F:</strong> Enfocar en barra de búsqueda</li><li><strong>Ctrl+K:</strong> Abrir búsqueda global</li><li><strong>F:</strong> Alternar panel de filtros</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-tags-organization",
+    "contact-custom-fields-guide",
+    "contact-bulk-operations"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik zoeken op meerdere tags tegelijk?",
+        "en": "Can I search on multiple tags at once?",
+        "es": "¿Puedo buscar en múltiples etiquetas a la vez?"
+      },
+      "answer": {
+        "nl": "Ja, in het filter panel kun je meerdere tags selecteren. Standaard werkt dit als OR (contacten met tag A OF tag B). Voor AND logic (contacten met tag A EN tag B), gebruik de advanced filter builder.",
+        "en": "Yes, in the filter panel you can select multiple tags. By default this works as OR (contacts with tag A OR tag B). For AND logic (contacts with tag A AND tag B), use the advanced filter builder.",
+        "es": "Sí, en el panel de filtros puedes seleccionar múltiples etiquetas. Por defecto esto funciona como OR (contactos con etiqueta A O etiqueta B). Para lógica AND (contactos con etiqueta A Y etiqueta B), usa el constructor de filtros avanzado."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden saved views gedeeld met mijn team?",
+        "en": "Are saved views shared with my team?",
+        "es": "¿Se comparten las vistas guardadas con mi equipo?"
+      },
+      "answer": {
+        "nl": "Je kunt kiezen. Bij het opslaan van een view kun je aangeven of deze 'Private' (alleen jij) of 'Shared' (hele team) is. Admins kunnen alle views zien en beheren.",
+        "en": "You can choose. When saving a view you can indicate whether it's 'Private' (only you) or 'Shared' (entire team). Admins can see and manage all views.",
+        "es": "Puedes elegir. Al guardar una vista puedes indicar si es 'Private' (solo tú) o 'Shared' (todo el equipo). Los administradores pueden ver y gestionar todas las vistas."
+      }
+    }
+  ]
+}

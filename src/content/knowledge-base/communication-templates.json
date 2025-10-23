@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "id": "communication-templates",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T12:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["templates", "email", "sms", "whatsapp", "messaging", "productivity"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["communication templates", "message templates", "email sms whatsapp templates", "crm templates", "template library"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Communicatie templates voor email, SMS en WhatsApp",
+      "en": "Communication Templates for Email, SMS and WhatsApp",
+      "es": "Plantillas de comunicación para email, SMS y WhatsApp"
+    },
+    "description": {
+      "nl": "Bouw een bibliotheek van herbruikbare templates voor alle communicatiekanalen met slimme variabelen.",
+      "en": "Build a library of reusable templates for all communication channels with smart variables.",
+      "es": "Construye una biblioteca de plantillas reutilizables para todos los canales de comunicación con variables inteligentes."
+    },
+    "icon": "library_books"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "template-library-intro",
+      "title": {
+        "nl": "Template bibliotheek opbouwen",
+        "en": "Building template library",
+        "es": "Construir biblioteca de plantillas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Een sterke template bibliotheek is de basis voor efficiënte, consistente communicatie. Tesoro ondersteunt templates voor email, SMS en WhatsApp op één centrale plek.</p><h3>Template Types per Kanaal</h3><p><strong>Email Templates:</strong></p><ul><li>Lange content (geen limiet)</li><li>Rich formatting (HTML, images, links)</li><li>Attachments mogelijk</li><li>Ideaal voor: Informatieve berichten, brochures, propertylijsten</li></ul><p><strong>SMS Templates:</strong></p><ul><li>Kort (max 160 karakters)</li><li>Plain text only</li><li>Snel en direct</li><li>Ideaal voor: Herinneringen, confirmaties, quick updates</li></ul><p><strong>WhatsApp Templates:</strong></p><ul><li>Pre-approved door WhatsApp (voor business initiated)</li><li>Rich media support (images, videos, docs, locaties)</li><li>Interactive buttons mogelijk</li><li>Ideaal voor: Property alerts met foto's, viewing confirmaties</li></ul><h3>Template Categorieën</h3><p>Organiseer templates per use case:</p><ul><li><strong>Lead Generation:</strong> Welkomst, introductie, waardeaanbod</li><li><strong>Property Marketing:</strong> Nieuwe listing, price drop, open house</li><li><strong>Viewing Management:</strong> Confirmatie, herinnering, follow-up</li><li><strong>Deal Progression:</strong> Status updates, document requests, closing</li><li><strong>Customer Service:</strong> FAQ antwoorden, support, troubleshooting</li><li><strong>Post-Sale:</strong> Bedanken, reviews vragen, referrals</li></ul>"
+        },
+        "en": {
+          "text": "<p>A strong template library is the foundation for efficient, consistent communication. Tesoro supports templates for email, SMS and WhatsApp in one central place.</p><h3>Template Types per Channel</h3><p><strong>Email Templates:</strong></p><ul><li>Long content (no limit)</li><li>Rich formatting (HTML, images, links)</li><li>Attachments possible</li><li>Ideal for: Informative messages, brochures, property lists</li></ul><p><strong>SMS Templates:</strong></p><ul><li>Short (max 160 characters)</li><li>Plain text only</li><li>Fast and direct</li><li>Ideal for: Reminders, confirmations, quick updates</li></ul><p><strong>WhatsApp Templates:</strong></p><ul><li>Pre-approved by WhatsApp (for business initiated)</li><li>Rich media support (images, videos, docs, locations)</li><li>Interactive buttons possible</li><li>Ideal for: Property alerts with photos, viewing confirmations</li></ul><h3>Template Categories</h3><p>Organize templates by use case:</p><ul><li><strong>Lead Generation:</strong> Welcome, introduction, value proposition</li><li><strong>Property Marketing:</strong> New listing, price drop, open house</li><li><strong>Viewing Management:</strong> Confirmation, reminder, follow-up</li><li><strong>Deal Progression:</strong> Status updates, document requests, closing</li><li><strong>Customer Service:</strong> FAQ answers, support, troubleshooting</li><li><strong>Post-Sale:</strong> Thank you, ask for reviews, referrals</li></ul>"
+        },
+        "es": {
+          "text": "<p>Una biblioteca de plantillas sólida es la base para comunicación eficiente y consistente. Tesoro soporta plantillas para email, SMS y WhatsApp en un lugar central.</p><h3>Tipos de plantilla por canal</h3><p><strong>Plantillas de email:</strong></p><ul><li>Contenido largo (sin límite)</li><li>Formato enriquecido (HTML, imágenes, enlaces)</li><li>Adjuntos posibles</li><li>Ideal para: Mensajes informativos, folletos, listas de propiedades</li></ul><p><strong>Plantillas de SMS:</strong></p><ul><li>Corto (máx. 160 caracteres)</li><li>Solo texto plano</li><li>Rápido y directo</li><li>Ideal para: Recordatorios, confirmaciones, actualizaciones rápidas</li></ul><p><strong>Plantillas de WhatsApp:</strong></p><ul><li>Pre-aprobadas por WhatsApp (para iniciado por negocio)</li><li>Soporte de medios enriquecidos (imágenes, videos, docs, ubicaciones)</li><li>Botones interactivos posibles</li><li>Ideal para: Alertas de propiedad con fotos, confirmaciones de visita</li></ul><h3>Categorías de plantilla</h3><p>Organiza plantillas por caso de uso:</p><ul><li><strong>Generación de leads:</strong> Bienvenida, introducción, propuesta de valor</li><li><strong>Marketing de propiedades:</strong> Nuevo listado, caída de precio, casa abierta</li><li><strong>Gestión de visitas:</strong> Confirmación, recordatorio, seguimiento</li><li><strong>Progresión de trato:</strong> Actualizaciones de estado, solicitudes de documentos, cierre</li><li><strong>Servicio al cliente:</strong> Respuestas a FAQ, soporte, solución de problemas</li><li><strong>Post-venta:</strong> Agradecer, pedir reseñas, referencias</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "cross-channel-variables",
+      "title": {
+        "nl": "Cross-channel variabelen",
+        "en": "Cross-channel variables",
+        "es": "Variables entre canales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Universele Variabelen</h3><p>Dezelfde variabelen werken in email, SMS en WhatsApp:</p><h4>Contact Variabelen</h4><ul><li><code>{{contact.firstName}}</code> → Voornaam</li><li><code>{{contact.lastName}}</code> → Achternaam</li><li><code>{{contact.fullName}}</code> → Volledige naam</li><li><code>{{contact.email}}</code> → Email adres</li><li><code>{{contact.phone}}</code> → Telefoonnummer</li><li><code>{{contact.company}}</code> → Bedrijfsnaam</li><li><code>{{contact.type}}</code> → Buyer/Seller/Tenant</li></ul><h4>Agent Variabelen</h4><ul><li><code>{{agent.firstName}}</code> → Jouw voornaam</li><li><code>{{agent.fullName}}</code> → Jouw volledige naam</li><li><code>{{agent.email}}</code> → Jouw email</li><li><code>{{agent.phone}}</code> → Jouw telefoonnummer</li><li><code>{{agent.title}}</code> → Jouw functietitel</li></ul><h4>Company Variabelen</h4><ul><li><code>{{company.name}}</code> → Bedrijfsnaam</li><li><code>{{company.website}}</code> → Website URL</li><li><code>{{company.phone}}</code> → Kantoor telefoonnummer</li><li><code>{{company.address}}</code> → Kantoor adres</li></ul><h4>Property Variabelen</h4><ul><li><code>{{property.address}}</code> → Volledig adres</li><li><code>{{property.city}}</code> → Stad</li><li><code>{{property.price}}</code> → Prijs (formatted)</li><li><code>{{property.bedrooms}}</code> → Aantal slaapkamers</li><li><code>{{property.type}}</code> → Apartment/House/etc.</li><li><code>{{property.url}}</code> → Link naar listing</li></ul><h4>Deal Variabelen</h4><ul><li><code>{{deal.value}}</code> → Deal waarde</li><li><code>{{deal.stage}}</code> → Pipeline stage</li><li><code>{{deal.closeDate}}</code> → Verwachte sluitdatum</li></ul><h3>Conditional Variabelen</h3><p>Toon content alleen onder bepaalde condities:</p><pre><code>{{#if contact.type == \"Buyer\"}}\nZoek je nog een woning?\n{{else}}\nWil je je woning verkopen?\n{{/if}}\n</code></pre>"
+        },
+        "en": {
+          "text": "<h3>Universal Variables</h3><p>The same variables work in email, SMS and WhatsApp:</p><h4>Contact Variables</h4><ul><li><code>{{contact.firstName}}</code> → First name</li><li><code>{{contact.lastName}}</code> → Last name</li><li><code>{{contact.fullName}}</code> → Full name</li><li><code>{{contact.email}}</code> → Email address</li><li><code>{{contact.phone}}</code> → Phone number</li><li><code>{{contact.company}}</code> → Company name</li><li><code>{{contact.type}}</code> → Buyer/Seller/Tenant</li></ul><h4>Agent Variables</h4><ul><li><code>{{agent.firstName}}</code> → Your first name</li><li><code>{{agent.fullName}}</code> → Your full name</li><li><code>{{agent.email}}</code> → Your email</li><li><code>{{agent.phone}}</code> → Your phone number</li><li><code>{{agent.title}}</code> → Your job title</li></ul><h4>Company Variables</h4><ul><li><code>{{company.name}}</code> → Company name</li><li><code>{{company.website}}</code> → Website URL</li><li><code>{{company.phone}}</code> → Office phone number</li><li><code>{{company.address}}</code> → Office address</li></ul><h4>Property Variables</h4><ul><li><code>{{property.address}}</code> → Full address</li><li><code>{{property.city}}</code> → City</li><li><code>{{property.price}}</code> → Price (formatted)</li><li><code>{{property.bedrooms}}</code> → Number of bedrooms</li><li><code>{{property.type}}</code> → Apartment/House/etc.</li><li><code>{{property.url}}</code> → Link to listing</li></ul><h4>Deal Variables</h4><ul><li><code>{{deal.value}}</code> → Deal value</li><li><code>{{deal.stage}}</code> → Pipeline stage</li><li><code>{{deal.closeDate}}</code> → Expected close date</li></ul><h3>Conditional Variables</h3><p>Show content only under certain conditions:</p><pre><code>{{#if contact.type == \"Buyer\"}}\nStill looking for a property?\n{{else}}\nWant to sell your property?\n{{/if}}\n</code></pre>"
+        },
+        "es": {
+          "text": "<h3>Variables universales</h3><p>Las mismas variables funcionan en email, SMS y WhatsApp:</p><h4>Variables de contacto</h4><ul><li><code>{{contact.firstName}}</code> → Nombre</li><li><code>{{contact.lastName}}</code> → Apellido</li><li><code>{{contact.fullName}}</code> → Nombre completo</li><li><code>{{contact.email}}</code> → Dirección de email</li><li><code>{{contact.phone}}</code> → Número de teléfono</li><li><code>{{contact.company}}</code> → Nombre de empresa</li><li><code>{{contact.type}}</code> → Comprador/Vendedor/Inquilino</li></ul><h4>Variables de agente</h4><ul><li><code>{{agent.firstName}}</code> → Tu nombre</li><li><code>{{agent.fullName}}</code> → Tu nombre completo</li><li><code>{{agent.email}}</code> → Tu email</li><li><code>{{agent.phone}}</code> → Tu número de teléfono</li><li><code>{{agent.title}}</code> → Tu título de trabajo</li></ul><h4>Variables de empresa</h4><ul><li><code>{{company.name}}</code> → Nombre de empresa</li><li><code>{{company.website}}</code> → URL del sitio web</li><li><code>{{company.phone}}</code> → Número de teléfono de oficina</li><li><code>{{company.address}}</code> → Dirección de oficina</li></ul><h4>Variables de propiedad</h4><ul><li><code>{{property.address}}</code> → Dirección completa</li><li><code>{{property.city}}</code> → Ciudad</li><li><code>{{property.price}}</code> → Precio (formateado)</li><li><code>{{property.bedrooms}}</code> → Número de habitaciones</li><li><code>{{property.type}}</code> → Apartamento/Casa/etc.</li><li><code>{{property.url}}</code> → Enlace al listado</li></ul><h4>Variables de trato</h4><ul><li><code>{{deal.value}}</code> → Valor del trato</li><li><code>{{deal.stage}}</code> → Etapa del pipeline</li><li><code>{{deal.closeDate}}</code> → Fecha de cierre esperada</li></ul><h3>Variables condicionales</h3><p>Mostrar contenido solo bajo ciertas condiciones:</p><pre><code>{{#if contact.type == \"Buyer\"}}\n¿Todavía buscando una propiedad?\n{{else}}\n¿Quieres vender tu propiedad?\n{{/if}}\n</code></pre>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "example-templates",
+      "title": {
+        "nl": "Voorbeeld templates per kanaal",
+        "en": "Example templates per channel",
+        "es": "Plantillas de ejemplo por canal"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Email Template: Nieuwe Property Alert</h3><pre><code>Subject: Nieuwe woning in {{property.city}} - Precies wat je zoekt!\n\nHallo {{contact.firstName}},\n\nGoednieuws! Er is een nieuwe woning beschikbaar die perfect past bij jouw wensen:\n\n🏡 {{property.address}}\n💰 Prijs: €{{property.price}}\n🛏️ Slaapkamers: {{property.bedrooms}}\n📐 Oppervlakte: {{property.size}} m²\n\n[Foto's bekijken]\n\nDeze woning voldoet aan je voorkeuren:\n✓ Locatie: {{property.city}}\n✓ Type: {{property.type}}\n✓ Budget: Binnen jouw range\n\nInteresse in een bezichtiging? Reageer op deze email of bel me direct op {{agent.phone}}.\n\nIk hoor graag van je!\n\n{{agent.fullName}}\n{{agent.title}}\n{{company.name}}\n</code></pre><h3>SMS Template: Bezichtiging Herinnering</h3><pre><code>Hi {{contact.firstName}}, reminder: je bezichtiging voor {{property.address}} is morgen om {{appointment.time}}. Tot dan! - {{agent.firstName}}\n</code></pre><h3>WhatsApp Template: Property Interesse Follow-up</h3><pre><code>Hallo {{contact.firstName}},\n\nBedankt voor je interesse in {{property.address}}! 🏡\n\nIk heb nog meer informatie voor je:\n📄 [Brochure downloaden]\n📍 [Bekijk locatie]\n📅 [Plan bezichtiging]\n\nVragen? Stuur gerust een bericht!\n\nGroet,\n{{agent.firstName}}\n</code></pre><h3>Email Template: Post-Viewing Follow-up</h3><pre><code>Subject: Wat vond je van {{property.address}}?\n\nHi {{contact.firstName}},\n\nLeuk dat je langs kwam voor de bezichtiging van {{property.address}}!\n\nIk ben benieuwd naar je eerste indruk:\n• Voldoet de woning aan je verwachtingen?\n• Heb je nog vragen over de woning?\n• Wil je een tweede bezichtiging plannen?\n\nIk heb ook nog een paar andere woningen die mogelijk interessant zijn:\n[Link naar vergelijkbare properties]\n\nLaat me weten wat je ervan vindt!\n\nGroet,\n{{agent.fullName}}\n</code></pre>"
+        },
+        "en": {
+          "text": "<h3>Email Template: New Property Alert</h3><pre><code>Subject: New property in {{property.city}} - Exactly what you're looking for!\n\nHello {{contact.firstName}},\n\nGreat news! A new property is available that perfectly matches your wishes:\n\n🏡 {{property.address}}\n💰 Price: €{{property.price}}\n🛏️ Bedrooms: {{property.bedrooms}}\n📐 Size: {{property.size}} m²\n\n[View photos]\n\nThis property meets your preferences:\n✓ Location: {{property.city}}\n✓ Type: {{property.type}}\n✓ Budget: Within your range\n\nInterested in a viewing? Reply to this email or call me directly at {{agent.phone}}.\n\nI look forward to hearing from you!\n\n{{agent.fullName}}\n{{agent.title}}\n{{company.name}}\n</code></pre><h3>SMS Template: Viewing Reminder</h3><pre><code>Hi {{contact.firstName}}, reminder: your viewing for {{property.address}} is tomorrow at {{appointment.time}}. See you then! - {{agent.firstName}}\n</code></pre><h3>WhatsApp Template: Property Interest Follow-up</h3><pre><code>Hello {{contact.firstName}},\n\nThank you for your interest in {{property.address}}! 🏡\n\nI have more information for you:\n📄 [Download brochure]\n📍 [View location]\n📅 [Schedule viewing]\n\nQuestions? Feel free to send a message!\n\nRegards,\n{{agent.firstName}}\n</code></pre><h3>Email Template: Post-Viewing Follow-up</h3><pre><code>Subject: What did you think of {{property.address}}?\n\nHi {{contact.firstName}},\n\nGreat that you came by for the viewing of {{property.address}}!\n\nI'm curious about your first impression:\n• Does the property meet your expectations?\n• Do you have any questions about the property?\n• Would you like to schedule a second viewing?\n\nI also have a few other properties that might be interesting:\n[Link to similar properties]\n\nLet me know what you think!\n\nRegards,\n{{agent.fullName}}\n</code></pre>"
+        },
+        "es": {
+          "text": "<h3>Plantilla de email: Alerta de nueva propiedad</h3><pre><code>Asunto: Nueva propiedad en {{property.city}} - ¡Exactamente lo que buscas!\n\nHola {{contact.firstName}},\n\n¡Buenas noticias! Hay una nueva propiedad disponible que coincide perfectamente con tus deseos:\n\n🏡 {{property.address}}\n💰 Precio: €{{property.price}}\n🛏️ Habitaciones: {{property.bedrooms}}\n📐 Tamaño: {{property.size}} m²\n\n[Ver fotos]\n\nEsta propiedad cumple con tus preferencias:\n✓ Ubicación: {{property.city}}\n✓ Tipo: {{property.type}}\n✓ Presupuesto: Dentro de tu rango\n\n¿Interesado en una visita? Responde a este email o llámame directamente al {{agent.phone}}.\n\n¡Espero saber de ti!\n\n{{agent.fullName}}\n{{agent.title}}\n{{company.name}}\n</code></pre><h3>Plantilla de SMS: Recordatorio de visita</h3><pre><code>Hola {{contact.firstName}}, recordatorio: tu visita para {{property.address}} es mañana a las {{appointment.time}}. ¡Nos vemos! - {{agent.firstName}}\n</code></pre><h3>Plantilla de WhatsApp: Seguimiento de interés en propiedad</h3><pre><code>Hola {{contact.firstName}},\n\n¡Gracias por tu interés en {{property.address}}! 🏡\n\nTengo más información para ti:\n📄 [Descargar folleto]\n📍 [Ver ubicación]\n📅 [Programar visita]\n\n¿Preguntas? ¡Siéntete libre de enviar un mensaje!\n\nSaludos,\n{{agent.firstName}}\n</code></pre><h3>Plantilla de email: Seguimiento post-visita</h3><pre><code>Asunto: ¿Qué pensaste de {{property.address}}?\n\nHola {{contact.firstName}},\n\n¡Genial que viniste para la visita de {{property.address}}!\n\nTengo curiosidad sobre tu primera impresión:\n• ¿La propiedad cumple con tus expectativas?\n• ¿Tienes alguna pregunta sobre la propiedad?\n• ¿Te gustaría programar una segunda visita?\n\nTambién tengo algunas otras propiedades que podrían ser interesantes:\n[Enlace a propiedades similares]\n\n¡Déjame saber qué piensas!\n\nSaludos,\n{{agent.fullName}}\n</code></pre>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "template-tips",
+      "variant": "tip",
+      "title": {
+        "nl": "Template Writing Tips",
+        "en": "Template Writing Tips",
+        "es": "Consejos para escribir plantillas"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Conversational tone:</strong> Schrijf zoals je praat</li><li><strong>Kort en bondig:</strong> Max 200 woorden voor emails, 160 karakters voor SMS</li><li><strong>Duidelijke CTA:</strong> Wat moet ontvanger doen?</li><li><strong>Personaliseer:</strong> Gebruik minimaal {{firstName}}</li><li><strong>Test variabelen:</strong> Check of alles correct invult</li><li><strong>Mobile-first:</strong> Leesbaar op telefoon</li><li><strong>Consistente branding:</strong> Gebruik bedrijfsnaam en signature</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Conversational tone:</strong> Write like you talk</li><li><strong>Short and concise:</strong> Max 200 words for emails, 160 characters for SMS</li><li><strong>Clear CTA:</strong> What should recipient do?</li><li><strong>Personalize:</strong> Use at least {{firstName}}</li><li><strong>Test variables:</strong> Check if everything fills correctly</li><li><strong>Mobile-first:</strong> Readable on phone</li><li><strong>Consistent branding:</strong> Use company name and signature</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Tono conversacional:</strong> Escribe como hablas</li><li><strong>Corto y conciso:</strong> Máx. 200 palabras para emails, 160 caracteres para SMS</li><li><strong>CTA claro:</strong> ¿Qué debe hacer el destinatario?</li><li><strong>Personalizar:</strong> Usa al menos {{firstName}}</li><li><strong>Probar variables:</strong> Verifica que todo se complete correctamente</li><li><strong>Móvil primero:</strong> Legible en teléfono</li><li><strong>Marca consistente:</strong> Usa nombre de empresa y firma</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "template-management",
+      "title": {
+        "nl": "Template beheer en organisatie",
+        "en": "Template management and organization",
+        "es": "Gestión y organización de plantillas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Template Bibliotheek Structuur</h3><ol><li>Ga naar <strong>Settings > Templates</strong></li><li>Zie tabs per kanaal:  <ul><li><strong>Email Templates</strong></li><li><strong>SMS Templates</strong></li><li><strong>WhatsApp Templates</strong></li></ul></li><li>Filter op:  <ul><li><strong>Category:</strong> Lead, Property, Deal, etc.</li><li><strong>Language:</strong> NL, EN, ES</li><li><strong>Status:</strong> Active, Draft, Archived</li></ul></li></ol><h3>Template Folders</h3><p>Organiseer met folders:</p><ul><li><strong>📁 Lead Generation</strong>  <ul><li>Welkomst nieuwe lead</li><li>Introductie bedrijf</li><li>Waardeaanbod</li></ul></li><li><strong>📁 Property Marketing</strong>  <ul><li>Nieuwe listing alert</li><li>Price drop notificatie</li><li>Open house uitnodiging</li></ul></li><li><strong>📁 Viewing Management</strong>  <ul><li>Bezichtiging confirmatie</li><li>Herinnering dag ervoor</li><li>Post-viewing follow-up</li></ul></li></ul><h3>Team Templates vs Personal Templates</h3><ul><li><strong>Team templates:</strong> Zichtbaar voor hele team  <ul><li>Standaard responses</li><li>Bedrijfsbranding</li><li>Approved messaging</li></ul></li><li><strong>Personal templates:</strong> Alleen voor jou  <ul><li>Je eigen stijl</li><li>Specifieke workflows</li><li>Experimenten</li></ul></li></ul><h3>Template Versioning</h3><p>Bij belangrijke templates:</p><ul><li>Duplicate voor nieuwe versie</li><li>Label met versienummer (v1, v2, v3)</li><li>Noteer wijzigingen in description</li><li>Archive oude versies (niet verwijderen)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Template Library Structure</h3><ol><li>Go to <strong>Settings > Templates</strong></li><li>See tabs per channel:  <ul><li><strong>Email Templates</strong></li><li><strong>SMS Templates</strong></li><li><strong>WhatsApp Templates</strong></li></ul></li><li>Filter by:  <ul><li><strong>Category:</strong> Lead, Property, Deal, etc.</li><li><strong>Language:</strong> NL, EN, ES</li><li><strong>Status:</strong> Active, Draft, Archived</li></ul></li></ol><h3>Template Folders</h3><p>Organize with folders:</p><ul><li><strong>📁 Lead Generation</strong>  <ul><li>Welcome new lead</li><li>Company introduction</li><li>Value proposition</li></ul></li><li><strong>📁 Property Marketing</strong>  <ul><li>New listing alert</li><li>Price drop notification</li><li>Open house invitation</li></ul></li><li><strong>📁 Viewing Management</strong>  <ul><li>Viewing confirmation</li><li>Reminder day before</li><li>Post-viewing follow-up</li></ul></li></ul><h3>Team Templates vs Personal Templates</h3><ul><li><strong>Team templates:</strong> Visible to entire team  <ul><li>Standard responses</li><li>Company branding</li><li>Approved messaging</li></ul></li><li><strong>Personal templates:</strong> Only for you  <ul><li>Your own style</li><li>Specific workflows</li><li>Experiments</li></ul></li></ul><h3>Template Versioning</h3><p>For important templates:</p><ul><li>Duplicate for new version</li><li>Label with version number (v1, v2, v3)</li><li>Note changes in description</li><li>Archive old versions (don't delete)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Estructura de biblioteca de plantillas</h3><ol><li>Ve a <strong>Settings > Templates</strong></li><li>Ver pestañas por canal:  <ul><li><strong>Plantillas de email</strong></li><li><strong>Plantillas de SMS</strong></li><li><strong>Plantillas de WhatsApp</strong></li></ul></li><li>Filtrar por:  <ul><li><strong>Categoría:</strong> Lead, Propiedad, Trato, etc.</li><li><strong>Idioma:</strong> NL, EN, ES</li><li><strong>Estado:</strong> Activo, Borrador, Archivado</li></ul></li></ol><h3>Carpetas de plantillas</h3><p>Organizar con carpetas:</p><ul><li><strong>📁 Generación de Leads</strong>  <ul><li>Bienvenida nuevo lead</li><li>Introducción a empresa</li><li>Propuesta de valor</li></ul></li><li><strong>📁 Marketing de Propiedades</strong>  <ul><li>Alerta de nuevo listado</li><li>Notificación de caída de precio</li><li>Invitación a casa abierta</li></ul></li><li><strong>📁 Gestión de Visitas</strong>  <ul><li>Confirmación de visita</li><li>Recordatorio día anterior</li><li>Seguimiento post-visita</li></ul></li></ul><h3>Plantillas de equipo vs plantillas personales</h3><ul><li><strong>Plantillas de equipo:</strong> Visibles para todo el equipo  <ul><li>Respuestas estándar</li><li>Marca de empresa</li><li>Mensajería aprobada</li></ul></li><li><strong>Plantillas personales:</strong> Solo para ti  <ul><li>Tu propio estilo</li><li>Flujos de trabajo específicos</li><li>Experimentos</li></ul></li></ul><h3>Versionado de plantillas</h3><p>Para plantillas importantes:</p><ul><li>Duplicar para nueva versión</li><li>Etiquetar con número de versión (v1, v2, v3)</li><li>Notar cambios en descripción</li><li>Archivar versiones antiguas (no eliminar)</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "email-templates-guide",
+    "sms-messaging-guide",
+    "whatsapp-integration-guide",
+    "automated-follow-ups"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik templates importeren uit mijn vorige CRM?",
+        "en": "Can I import templates from my previous CRM?",
+        "es": "¿Puedo importar plantillas de mi CRM anterior?"
+      },
+      "answer": {
+        "nl": "Ja, via Settings > Templates > Import. Tesoro accepteert CSV format met kolommen: name, type, subject, content. Variabelen moeten worden aangepast naar Tesoro syntax {{variableName}}.",
+        "en": "Yes, via Settings > Templates > Import. Tesoro accepts CSV format with columns: name, type, subject, content. Variables must be adapted to Tesoro syntax {{variableName}}.",
+        "es": "Sí, vía Settings > Templates > Import. Tesoro acepta formato CSV con columnas: name, type, subject, content. Las variables deben adaptarse a la sintaxis de Tesoro {{variableName}}."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kunnen templates in meerdere talen tegelijk?",
+        "en": "Can templates be in multiple languages simultaneously?",
+        "es": "¿Las plantillas pueden estar en múltiples idiomas simultáneamente?"
+      },
+      "answer": {
+        "nl": "Tesoro ondersteunt momenteel één taal per template. Maak separate templates per taal en tag ze (bijv. \"NL\", \"EN\", \"ES\") voor gemakkelijk filteren.",
+        "en": "Tesoro currently supports one language per template. Create separate templates per language and tag them (e.g., \"NL\", \"EN\", \"ES\") for easy filtering.",
+        "es": "Tesoro actualmente soporta un idioma por plantilla. Crea plantillas separadas por idioma y etiquétalas (ej., \"NL\", \"EN\", \"ES\") para filtrado fácil."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als een variabele leeg is bij versturen?",
+        "en": "What if a variable is empty when sending?",
+        "es": "¿Qué pasa si una variable está vacía al enviar?"
+      },
+      "answer": {
+        "nl": "Tesoro toont een waarschuwing voordat je verstuurt. Je kunt: (1) Handmatig invullen, (2) Fallback waarde instellen in template (bijv. {{contact.firstName | \"daar\"}}), of (3) Template skippen en vrij bericht sturen.",
+        "en": "Tesoro shows a warning before sending. You can: (1) Fill in manually, (2) Set fallback value in template (e.g., {{contact.firstName | \"there\"}}), or (3) Skip template and send free message.",
+        "es": "Tesoro muestra una advertencia antes de enviar. Puedes: (1) Completar manualmente, (2) Establecer valor de respaldo en plantilla (ej., {{contact.firstName | \"ahí\"}}), o (3) Omitir plantilla y enviar mensaje libre."
+      }
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "meta": {
+    "id": "security-settings-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "intermediate",
+    "tags": ["settings", "security", "password", "2fa", "authentication"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=630&fit=crop",
+    "keywords": ["security", "password", "two-factor authentication", "2fa", "login", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Beveiligingsinstellingen en wachtwoordbeheer",
+      "en": "Security Settings and Password Management",
+      "es": "Configuración de seguridad y gestión de contraseñas"
+    },
+    "description": {
+      "nl": "Bescherm uw klantgegevens en CRM-toegang met sterke beveiligingsinstellingen, tweefactorauthenticatie en wachtwoordbeleid.",
+      "en": "Protect your customer data and CRM access with strong security settings, two-factor authentication, and password policies.",
+      "es": "Proteja sus datos de clientes y acceso al CRM con configuraciones de seguridad sólidas, autenticación de dos factores y políticas de contraseñas."
+    },
+    "icon": "shield"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Beveiliging is cruciaal wanneer u gevoelige klantgegevens beheert. Tesoro CRM biedt enterprise-grade beveiligingsfuncties om uw data te beschermen tegen ongeautoriseerde toegang, terwijl het gebruiksvriendelijk blijft voor uw team.\n\nVan wachtwoordbeleid tot tweefactorauthenticatie en sessie management - deze instellingen helpen u te voldoen aan AVG-vereisten en uw klanten te beschermen tegen datalekken.",
+        "en": "Security is crucial when managing sensitive customer data. Tesoro CRM offers enterprise-grade security features to protect your data from unauthorized access while remaining user-friendly for your team.\n\nFrom password policies to two-factor authentication and session management - these settings help you comply with GDPR requirements and protect your customers from data breaches.",
+        "es": "La seguridad es crucial al gestionar datos confidenciales de clientes. Tesoro CRM ofrece funciones de seguridad de nivel empresarial para proteger sus datos del acceso no autorizado mientras permanece fácil de usar para su equipo.\n\nDesde políticas de contraseñas hasta autenticación de dos factores y gestión de sesiones, estas configuraciones le ayudan a cumplir con los requisitos de GDPR y proteger a sus clientes de violaciones de datos."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "password-management",
+      "title": {
+        "nl": "Wachtwoordbeheer",
+        "en": "Password Management",
+        "es": "Gestión de contraseñas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Wachtwoord wijzigen",
+            "en": "Change Password",
+            "es": "Cambiar contraseña"
+          },
+          "description": {
+            "nl": "Ga naar Profiel > Beveiliging > Wachtwoord wijzigen. Voer uw huidige wachtwoord in en kies een nieuw wachtwoord dat voldoet aan:\n- Minimaal 12 tekens\n- Minimaal 1 hoofdletter\n- Minimaal 1 cijfer\n- Minimaal 1 speciaal teken (!@#$%^&*)\n- Mag niet uw naam of e-mailadres bevatten\n- Mag niet een van uw laatste 5 wachtwoorden zijn\n\nTip: Gebruik een wachtwoordmanager zoals 1Password of LastPass voor sterke, unieke wachtwoorden.",
+            "en": "Go to Profile > Security > Change Password. Enter your current password and choose a new password that meets:\n- Minimum 12 characters\n- At least 1 uppercase letter\n- At least 1 number\n- At least 1 special character (!@#$%^&*)\n- Cannot contain your name or email address\n- Cannot be one of your last 5 passwords\n\nTip: Use a password manager like 1Password or LastPass for strong, unique passwords.",
+            "es": "Vaya a Perfil > Seguridad > Cambiar contraseña. Ingrese su contraseña actual y elija una nueva contraseña que cumpla:\n- Mínimo 12 caracteres\n- Al menos 1 letra mayúscula\n- Al menos 1 número\n- Al menos 1 carácter especial (!@#$%^&*)\n- No puede contener su nombre o dirección de correo electrónico\n- No puede ser una de sus últimas 5 contraseñas\n\nConsejo: Use un administrador de contraseñas como 1Password o LastPass para contraseñas únicas y fuertes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Wachtwoord vergeten",
+            "en": "Forgot Password",
+            "es": "Olvidé la contraseña"
+          },
+          "description": {
+            "nl": "Als u uw wachtwoord bent vergeten, klik op 'Wachtwoord vergeten' op de loginpagina. Voer uw e-mailadres in en u ontvangt een resetlink die 1 uur geldig is. Klik op de link, stel een nieuw wachtwoord in en u kunt weer inloggen. Als u geen e-mail ontvangt, controleer uw spam map of neem contact op met uw beheerder.",
+            "en": "If you've forgotten your password, click 'Forgot Password' on the login page. Enter your email address and you'll receive a reset link valid for 1 hour. Click the link, set a new password, and you can log in again. If you don't receive an email, check your spam folder or contact your administrator.",
+            "es": "Si olvidó su contraseña, haga clic en 'Olvidé la contraseña' en la página de inicio de sesión. Ingrese su dirección de correo electrónico y recibirá un enlace de restablecimiento válido por 1 hora. Haga clic en el enlace, establezca una nueva contraseña y podrá iniciar sesión nuevamente. Si no recibe un correo electrónico, verifique su carpeta de spam o contacte a su administrador."
+          }
+        },
+        {
+          "title": {
+            "nl": "Wachtwoord verloopbeleid",
+            "en": "Password Expiration Policy",
+            "es": "Política de caducidad de contraseñas"
+          },
+          "description": {
+            "nl": "Beheerders kunnen een wachtwoordverloopbeleid instellen in Instellingen > Beveiliging > Wachtwoordbeleid. Opties:\n\n**Nooit verlopen**: Wachtwoorden blijven onbeperkt geldig (niet aanbevolen)\n\n**90 dagen**: Gebruikers moeten elke 3 maanden wachtwoord wijzigen (standaard)\n\n**60 dagen**: Strengere beveiliging voor compliance\n\n**180 dagen**: Minder streng voor kleinere teams\n\nGebruikers ontvangen herinneringen 7 en 3 dagen voordat hun wachtwoord verloopt.",
+            "en": "Administrators can set a password expiration policy in Settings > Security > Password Policy. Options:\n\n**Never expire**: Passwords remain valid indefinitely (not recommended)\n\n**90 days**: Users must change password every 3 months (default)\n\n**60 days**: Stricter security for compliance\n\n**180 days**: Less strict for smaller teams\n\nUsers receive reminders 7 and 3 days before their password expires.",
+            "es": "Los administradores pueden establecer una política de caducidad de contraseñas en Configuración > Seguridad > Política de contraseñas. Opciones:\n\n**Nunca caducar**: Las contraseñas permanecen válidas indefinidamente (no recomendado)\n\n**90 días**: Los usuarios deben cambiar la contraseña cada 3 meses (predeterminado)\n\n**60 días**: Seguridad más estricta para cumplimiento\n\n**180 días**: Menos estricto para equipos más pequeños\n\nLos usuarios reciben recordatorios 7 y 3 días antes de que caduque su contraseña."
+          }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "two-factor-auth",
+      "title": {
+        "nl": "Tweefactorauthenticatie instellen",
+        "en": "Setting Up Two-Factor Authentication",
+        "es": "Configurar autenticación de dos factores"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "2FA activeren",
+            "en": "Enable 2FA",
+            "es": "Habilitar 2FA"
+          },
+          "description": {
+            "nl": "Ga naar Profiel > Beveiliging > Tweefactorauthenticatie en klik op 'Activeren'. Tweefactorauthenticatie voegt een extra beveiligingslaag toe: naast uw wachtwoord heeft u ook een code nodig van uw telefoon. Dit beschermt uw account zelfs als iemand uw wachtwoord zou achterhalen.",
+            "en": "Go to Profile > Security > Two-Factor Authentication and click 'Enable'. Two-factor authentication adds an extra security layer: in addition to your password, you also need a code from your phone. This protects your account even if someone discovers your password.",
+            "es": "Vaya a Perfil > Seguridad > Autenticación de dos factores y haga clic en 'Habilitar'. La autenticación de dos factores agrega una capa adicional de seguridad: además de su contraseña, también necesita un código de su teléfono. Esto protege su cuenta incluso si alguien descubre su contraseña."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies 2FA methode",
+            "en": "Choose 2FA Method",
+            "es": "Elegir método 2FA"
+          },
+          "description": {
+            "nl": "Tesoro CRM ondersteunt twee 2FA methoden:\n\n**Authenticator app** (aanbevolen): Gebruik Google Authenticator, Microsoft Authenticator of Authy. Scan de QR code met de app en voer de 6-cijferige code in om te verifiëren.\n\n**SMS**: Ontvang codes via SMS op uw telefoon. Voer uw telefoonnummer in en verifieer met een testcode.\n\nAuthenticator apps zijn veiliger omdat SMS kan worden onderschept.",
+            "en": "Tesoro CRM supports two 2FA methods:\n\n**Authenticator app** (recommended): Use Google Authenticator, Microsoft Authenticator, or Authy. Scan the QR code with the app and enter the 6-digit code to verify.\n\n**SMS**: Receive codes via SMS on your phone. Enter your phone number and verify with a test code.\n\nAuthenticator apps are more secure because SMS can be intercepted.",
+            "es": "Tesoro CRM admite dos métodos 2FA:\n\n**Aplicación de autenticación** (recomendado): Use Google Authenticator, Microsoft Authenticator o Authy. Escanee el código QR con la aplicación e ingrese el código de 6 dígitos para verificar.\n\n**SMS**: Reciba códigos por SMS en su teléfono. Ingrese su número de teléfono y verifique con un código de prueba.\n\nLas aplicaciones de autenticación son más seguras porque los SMS pueden ser interceptados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bewaar backup codes",
+            "en": "Save Backup Codes",
+            "es": "Guardar códigos de respaldo"
+          },
+          "description": {
+            "nl": "Na het activeren van 2FA ontvangt u 10 backup codes. Bewaar deze op een veilige plek (wachtwoordmanager, kluis). Als u uw telefoon verliest of geen toegang heeft tot uw authenticator app, kunt u inloggen met een backup code. Elke code kan maar één keer worden gebruikt. U kunt nieuwe backup codes genereren in uw beveiligingsinstellingen.",
+            "en": "After enabling 2FA you'll receive 10 backup codes. Store these in a safe place (password manager, safe). If you lose your phone or don't have access to your authenticator app, you can log in with a backup code. Each code can only be used once. You can generate new backup codes in your security settings.",
+            "es": "Después de habilitar 2FA recibirá 10 códigos de respaldo. Guárdelos en un lugar seguro (administrador de contraseñas, caja fuerte). Si pierde su teléfono o no tiene acceso a su aplicación de autenticación, puede iniciar sesión con un código de respaldo. Cada código solo se puede usar una vez. Puede generar nuevos códigos de respaldo en su configuración de seguridad."
+          }
+        },
+        {
+          "title": {
+            "nl": "2FA afdwingen voor team",
+            "en": "Enforce 2FA for Team",
+            "es": "Hacer cumplir 2FA para el equipo"
+          },
+          "description": {
+            "nl": "Beheerders kunnen 2FA verplicht stellen voor alle gebruikers in Instellingen > Beveiliging > Tweefactorauthenticatie > 'Verplicht voor alle gebruikers'. Gebruikers krijgen 7 dagen om 2FA te activeren, daarna kunnen ze niet meer inloggen totdat ze 2FA hebben ingesteld. Dit is sterk aanbevolen voor naleving van beveiligingsstandaarden.",
+            "en": "Administrators can make 2FA mandatory for all users in Settings > Security > Two-Factor Authentication > 'Required for all users'. Users get 7 days to enable 2FA, after which they cannot log in until they've set up 2FA. This is strongly recommended for compliance with security standards.",
+            "es": "Los administradores pueden hacer obligatorio 2FA para todos los usuarios en Configuración > Seguridad > Autenticación de dos factores > 'Requerido para todos los usuarios'. Los usuarios tienen 7 días para habilitar 2FA, después de lo cual no pueden iniciar sesión hasta que hayan configurado 2FA. Esto se recomienda encarecidamente para el cumplimiento de los estándares de seguridad."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "2fa-recommendation",
+      "variant": "tip",
+      "title": {
+        "nl": "2FA is essentieel voor beheerders",
+        "en": "2FA Is Essential for Administrators",
+        "es": "2FA es esencial para administradores"
+      },
+      "content": {
+        "nl": "Alle gebruikers met beheerdersrechten moeten verplicht 2FA gebruiken. Een gecompromitteerd beheerdersaccount geeft toegang tot alle klantgegevens. De extra 30 seconden bij inloggen is een kleine prijs voor significante extra beveiliging.",
+        "en": "All users with administrator rights must use 2FA. A compromised administrator account gives access to all customer data. The extra 30 seconds at login is a small price for significant additional security.",
+        "es": "Todos los usuarios con derechos de administrador deben usar 2FA. Una cuenta de administrador comprometida da acceso a todos los datos de clientes. Los 30 segundos adicionales en el inicio de sesión es un pequeño precio por una seguridad adicional significativa."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "session-management",
+      "title": {
+        "nl": "Sessie en toegangsbeheer",
+        "en": "Session and Access Management",
+        "es": "Gestión de sesiones y acceso"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Actieve sessies bekijken",
+            "en": "View Active Sessions",
+            "es": "Ver sesiones activas"
+          },
+          "description": {
+            "nl": "In Profiel > Beveiliging > Actieve sessies ziet u alle apparaten waar u momenteel bent ingelogd. Voor elke sessie ziet u: apparaattype, browser, locatie (op basis van IP), en laatste activiteit. Als u een onbekende sessie ziet, beëindig deze onmiddellijk en wijzig uw wachtwoord.",
+            "en": "In Profile > Security > Active Sessions you see all devices where you're currently logged in. For each session you see: device type, browser, location (based on IP), and last activity. If you see an unknown session, terminate it immediately and change your password.",
+            "es": "En Perfil > Seguridad > Sesiones activas ve todos los dispositivos donde está actualmente conectado. Para cada sesión ve: tipo de dispositivo, navegador, ubicación (basada en IP) y última actividad. Si ve una sesión desconocida, termínela inmediatamente y cambie su contraseña."
+          }
+        },
+        {
+          "title": {
+            "nl": "Sessies beëindigen",
+            "en": "Terminate Sessions",
+            "es": "Terminar sesiones"
+          },
+          "description": {
+            "nl": "U kunt individuele sessies beëindigen of alle sessies behalve uw huidige. Dit is nuttig als:\n- U uw laptop of telefoon bent kwijtgeraakt\n- U zich heeft ingelogd op een publieke computer\n- U verdachte activiteit ziet\n- Een teamlid het bedrijf verlaat (voor beheerders)\n\nNa beëindiging moet er opnieuw worden ingelogd op dat apparaat.",
+            "en": "You can terminate individual sessions or all sessions except your current one. This is useful if:\n- You've lost your laptop or phone\n- You logged in on a public computer\n- You see suspicious activity\n- A team member leaves the company (for administrators)\n\nAfter termination, login is required again on that device.",
+            "es": "Puede terminar sesiones individuales o todas las sesiones excepto la actual. Esto es útil si:\n- Ha perdido su computadora portátil o teléfono\n- Inició sesión en una computadora pública\n- Ve actividad sospechosa\n- Un miembro del equipo deja la empresa (para administradores)\n\nDespués de la terminación, se requiere iniciar sesión nuevamente en ese dispositivo."
+          }
+        },
+        {
+          "title": {
+            "nl": "Automatische uitlog",
+            "en": "Automatic Logout",
+            "es": "Cierre de sesión automático"
+          },
+          "description": {
+            "nl": "Beheerders kunnen automatische uitlog configureren in Instellingen > Beveiliging. Opties:\n\n**Na inactiviteit**: Log gebruikers uit na 30, 60 of 120 minuten zonder activiteit\n\n**Dagelijks om**: Log alle gebruikers uit op een bepaald tijdstip (bijv. middernacht)\n\n**Nooit**: Sessies blijven actief totdat gebruiker uitlogt (niet aanbevolen)\n\nAutomatische uitlog beschermt tegen onbevoegde toegang op onbeheerde apparaten.",
+            "en": "Administrators can configure automatic logout in Settings > Security. Options:\n\n**After inactivity**: Log users out after 30, 60, or 120 minutes without activity\n\n**Daily at**: Log all users out at a specific time (e.g., midnight)\n\n**Never**: Sessions remain active until user logs out (not recommended)\n\nAutomatic logout protects against unauthorized access on unattended devices.",
+            "es": "Los administradores pueden configurar el cierre de sesión automático en Configuración > Seguridad. Opciones:\n\n**Después de inactividad**: Cerrar sesión de usuarios después de 30, 60 o 120 minutos sin actividad\n\n**Diariamente a las**: Cerrar sesión de todos los usuarios a una hora específica (por ejemplo, medianoche)\n\n**Nunca**: Las sesiones permanecen activas hasta que el usuario cierra sesión (no recomendado)\n\nEl cierre de sesión automático protege contra el acceso no autorizado en dispositivos desatendidos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "security-audit",
+      "variant": "warning",
+      "title": {
+        "nl": "Regelmatige beveiligingsaudits",
+        "en": "Regular Security Audits",
+        "es": "Auditorías de seguridad regulares"
+      },
+      "content": {
+        "nl": "Controleer maandelijks:\n- Actieve gebruikersaccounts (deactiveer vertrokken medewerkers)\n- Gebruikersrollen en machtigingen (principe van minimale privileges)\n- 2FA status voor alle beheerders\n- Recente loginactiviteit (zoek naar ongebruikelijke patronen)\n- Gedeelde gegevens en toegangsniveaus\n\nDocumenteer uw beveiligingscontroles voor compliance.",
+        "en": "Check monthly:\n- Active user accounts (deactivate departed employees)\n- User roles and permissions (principle of least privilege)\n- 2FA status for all administrators\n- Recent login activity (look for unusual patterns)\n- Shared data and access levels\n\nDocument your security checks for compliance.",
+        "es": "Verifique mensualmente:\n- Cuentas de usuario activas (desactive empleados que se fueron)\n- Roles de usuario y permisos (principio de privilegio mínimo)\n- Estado de 2FA para todos los administradores\n- Actividad de inicio de sesión reciente (busque patrones inusuales)\n- Datos compartidos y niveles de acceso\n\nDocumente sus controles de seguridad para cumplimiento."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Wat gebeurt er als ik mijn 2FA apparaat kwijtraak?",
+            "en": "What happens if I lose my 2FA device?",
+            "es": "¿Qué sucede si pierdo mi dispositivo 2FA?"
+          },
+          "answer": {
+            "nl": "Gebruik een van uw backup codes om in te loggen. Ga dan naar uw beveiligingsinstellingen en configureer 2FA opnieuw met uw nieuwe apparaat. Als u ook uw backup codes kwijt bent, moet een beheerder 2FA voor uw account resetten. Dit is waarom het belangrijk is om backup codes veilig te bewaren.",
+            "en": "Use one of your backup codes to log in. Then go to your security settings and reconfigure 2FA with your new device. If you've also lost your backup codes, an administrator must reset 2FA for your account. This is why it's important to store backup codes safely.",
+            "es": "Use uno de sus códigos de respaldo para iniciar sesión. Luego vaya a su configuración de seguridad y reconfigure 2FA con su nuevo dispositivo. Si también perdió sus códigos de respaldo, un administrador debe restablecer 2FA para su cuenta. Por eso es importante almacenar códigos de respaldo de forma segura."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik verschillende wachtwoorden hebben voor desktop en mobiel?",
+            "en": "Can I have different passwords for desktop and mobile?",
+            "es": "¿Puedo tener diferentes contraseñas para escritorio y móvil?"
+          },
+          "answer": {
+            "nl": "Nee, u heeft één account met één wachtwoord dat werkt op alle apparaten. Na het wijzigen van uw wachtwoord moet u opnieuw inloggen op alle apparaten. Dit zorgt voor consistente beveiliging en maakt wachtwoordbeheer eenvoudiger.",
+            "en": "No, you have one account with one password that works on all devices. After changing your password, you must log in again on all devices. This ensures consistent security and makes password management easier.",
+            "es": "No, tiene una cuenta con una contraseña que funciona en todos los dispositivos. Después de cambiar su contraseña, debe iniciar sesión nuevamente en todos los dispositivos. Esto garantiza seguridad consistente y facilita la gestión de contraseñas."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe vaak moet ik mijn wachtwoord wijzigen?",
+            "en": "How often should I change my password?",
+            "es": "¿Con qué frecuencia debo cambiar mi contraseña?"
+          },
+          "answer": {
+            "nl": "Als u 2FA gebruikt en een sterk, uniek wachtwoord heeft, is om de 90 dagen voldoende. Zonder 2FA, wijzig elke 60 dagen. Wijzig onmiddellijk als: u vermoedt dat uw account is gecompromitteerd, u dezelfde wachtwoord op andere sites gebruikt die zijn gehackt, of u uw wachtwoord met iemand heeft gedeeld.",
+            "en": "If you use 2FA and have a strong, unique password, every 90 days is sufficient. Without 2FA, change every 60 days. Change immediately if: you suspect your account is compromised, you use the same password on other sites that have been hacked, or you've shared your password with someone.",
+            "es": "Si usa 2FA y tiene una contraseña única y fuerte, cada 90 días es suficiente. Sin 2FA, cambie cada 60 días. Cambie inmediatamente si: sospecha que su cuenta está comprometida, usa la misma contraseña en otros sitios que han sido hackeados, o ha compartido su contraseña con alguien."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan een beheerder mijn wachtwoord zien?",
+            "en": "Can an administrator see my password?",
+            "es": "¿Puede un administrador ver mi contraseña?"
+          },
+          "answer": {
+            "nl": "Nee, wachtwoorden worden versleuteld opgeslagen en niemand, inclusief beheerders en Tesoro medewerkers, kan uw wachtwoord zien. Beheerders kunnen wel een wachtwoord reset link sturen of tijdelijke toegang verlenen, maar kunnen nooit uw actuele wachtwoord inzien. Dit beschermt uw privacy en security.",
+            "en": "No, passwords are stored encrypted and nobody, including administrators and Tesoro staff, can see your password. Administrators can send a password reset link or grant temporary access, but can never view your actual password. This protects your privacy and security.",
+            "es": "No, las contraseñas se almacenan encriptadas y nadie, incluidos los administradores y el personal de Tesoro, puede ver su contraseña. Los administradores pueden enviar un enlace de restablecimiento de contraseña u otorgar acceso temporal, pero nunca pueden ver su contraseña real. Esto protege su privacidad y seguridad."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "user-management-guide",
+    "company-profile-settings",
+    "gdpr-compliance-guide"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "id": "sms-messaging-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T12:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["sms", "messaging", "twilio", "communication", "mobile"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["sms messaging crm", "twilio integration", "text messaging crm", "sms automation", "bulk sms"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "SMS berichten versturen via Twilio integratie",
+      "en": "Sending SMS Messages via Twilio Integration",
+      "es": "Enviar mensajes SMS vía integración con Twilio"
+    },
+    "description": {
+      "nl": "Verstuur SMS berichten direct vanuit Tesoro CRM met Twilio integratie voor snelle klantcommunicatie.",
+      "en": "Send SMS messages directly from Tesoro CRM with Twilio integration for fast customer communication.",
+      "es": "Envía mensajes SMS directamente desde Tesoro CRM con integración Twilio para comunicación rápida con clientes."
+    },
+    "icon": "sms"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "sms-messaging-intro",
+      "title": {
+        "nl": "Waarom SMS gebruiken in CRM?",
+        "en": "Why use SMS in CRM?",
+        "es": "¿Por qué usar SMS en CRM?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>SMS (tekstberichten) zijn een krachtig communicatiekanaal voor direct contact met klanten. Ze hebben een <strong>98% open rate</strong> binnen 3 minuten na ontvangst.</p><h3>Wanneer SMS Gebruiken?</h3><ul><li><strong>Urgente berichten:</strong> \"Uw bezichtiging is bevestigd voor vandaag 15:00\"</li><li><strong>Korte updates:</strong> \"Nieuwe property beschikbaar in uw zoekgebied\"</li><li><strong>Herinneringen:</strong> \"Meeting morgen om 10:00 op ons kantoor\"</li><li><strong>Quick follow-ups:</strong> \"Bedankt voor de bezichtiging, vragen?\"</li><li><strong>Two-way conversations:</strong> Klant kan terugsturen</li></ul><h3>Voordelen van SMS</h3><ul><li><strong>Hoge open rate:</strong> Veel hoger dan email (~98% vs ~25%)</li><li><strong>Snelle response:</strong> Meestal binnen minuten</li><li><strong>Direct bereik:</strong> Geen spam filters</li><li><strong>Mobiel-first:</strong> Ideaal voor onderweg</li><li><strong>Persoonlijk:</strong> Voelt directer dan email</li></ul><h3>SMS Beperkingen</h3><ul><li><strong>160 karakters:</strong> Beperkte lengte (of betaal voor meerdere berichten)</li><li><strong>Geen rich content:</strong> Alleen tekst, geen afbeeldingen/videos</li><li><strong>Kosten per bericht:</strong> Niet gratis zoals email</li><li><strong>Toestemming vereist:</strong> Klant moet opt-in voor marketing SMS</li></ul>"
+        },
+        "en": {
+          "text": "<p>SMS (text messages) are a powerful communication channel for direct customer contact. They have a <strong>98% open rate</strong> within 3 minutes of receipt.</p><h3>When to Use SMS?</h3><ul><li><strong>Urgent messages:</strong> \"Your viewing is confirmed for today at 3pm\"</li><li><strong>Short updates:</strong> \"New property available in your search area\"</li><li><strong>Reminders:</strong> \"Meeting tomorrow at 10am at our office\"</li><li><strong>Quick follow-ups:</strong> \"Thanks for the viewing, any questions?\"</li><li><strong>Two-way conversations:</strong> Customer can text back</li></ul><h3>Benefits of SMS</h3><ul><li><strong>High open rate:</strong> Much higher than email (~98% vs ~25%)</li><li><strong>Fast response:</strong> Usually within minutes</li><li><strong>Direct reach:</strong> No spam filters</li><li><strong>Mobile-first:</strong> Ideal for on-the-go</li><li><strong>Personal:</strong> Feels more direct than email</li></ul><h3>SMS Limitations</h3><ul><li><strong>160 characters:</strong> Limited length (or pay for multiple messages)</li><li><strong>No rich content:</strong> Text only, no images/videos</li><li><strong>Cost per message:</strong> Not free like email</li><li><strong>Permission required:</strong> Customer must opt-in for marketing SMS</li></ul>"
+        },
+        "es": {
+          "text": "<p>Los SMS (mensajes de texto) son un canal de comunicación poderoso para contacto directo con clientes. Tienen una <strong>tasa de apertura del 98%</strong> dentro de 3 minutos de recibirse.</p><h3>¿Cuándo usar SMS?</h3><ul><li><strong>Mensajes urgentes:</strong> \"Su visita está confirmada para hoy a las 3pm\"</li><li><strong>Actualizaciones cortas:</strong> \"Nueva propiedad disponible en su área de búsqueda\"</li><li><strong>Recordatorios:</strong> \"Reunión mañana a las 10am en nuestra oficina\"</li><li><strong>Seguimientos rápidos:</strong> \"Gracias por la visita, ¿alguna pregunta?\"</li><li><strong>Conversaciones bidireccionales:</strong> El cliente puede responder</li></ul><h3>Beneficios del SMS</h3><ul><li><strong>Alta tasa de apertura:</strong> Mucho más alta que email (~98% vs ~25%)</li><li><strong>Respuesta rápida:</strong> Usualmente en minutos</li><li><strong>Alcance directo:</strong> Sin filtros de spam</li><li><strong>Móvil primero:</strong> Ideal para estar en movimiento</li><li><strong>Personal:</strong> Se siente más directo que email</li></ul><h3>Limitaciones del SMS</h3><ul><li><strong>160 caracteres:</strong> Longitud limitada (o paga por múltiples mensajes)</li><li><strong>Sin contenido enriquecido:</strong> Solo texto, sin imágenes/videos</li><li><strong>Costo por mensaje:</strong> No gratis como email</li><li><strong>Permiso requerido:</strong> El cliente debe optar por SMS de marketing</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "twilio-setup",
+      "title": {
+        "nl": "Twilio integratie instellen",
+        "en": "Setting up Twilio integration",
+        "es": "Configurar integración con Twilio"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Stap 1: Twilio Account Aanmaken</h3><ol><li>Ga naar <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Maak een gratis trial account</li><li>Verifieer je email en telefoonnummer</li><li>Je krijgt $15 trial credit</li></ol><h3>Stap 2: Telefoonnummer Verkrijgen</h3><ol><li>Log in op Twilio Console</li><li>Ga naar <strong>Phone Numbers > Buy a Number</strong></li><li>Kies land (Nederland, België, Spanje, etc.)</li><li>Selecteer een nummer met <strong>SMS capabilities</strong></li><li>Klik <strong>Buy</strong> (kosten: ~€1/maand)</li></ol><h3>Stap 3: API Credentials Vinden</h3><ol><li>In Twilio Console, ga naar <strong>Account > API keys & tokens</strong></li><li>Kopieer:  <ul><li><strong>Account SID:</strong> Unieke account identifier</li><li><strong>Auth Token:</strong> Geheime authenticatie token</li></ul></li><li>Bewaar deze veilig (niet delen!)</li></ol><h3>Stap 4: Verbinden met Tesoro</h3><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings > Integrations > SMS (Twilio)</strong></li><li>Klik <strong>+ Connect Twilio</strong></li><li>Vul in:  <ul><li><strong>Account SID:</strong> Van Twilio Console</li><li><strong>Auth Token:</strong> Van Twilio Console</li><li><strong>Phone Number:</strong> Je gekochte Twilio nummer</li></ul></li><li>Klik <strong>Test Connection</strong></li><li>Als test succesvol: <strong>Save</strong></li></ol><h3>Stap 5: SMS Testen</h3><ol><li>Verstuur test SMS naar je eigen nummer</li><li>Controleer of bericht aankomt</li><li>Check sender ID (Twilio nummer)</li><li>Integratie is klaar!</li></ol>"
+        },
+        "en": {
+          "text": "<h3>Step 1: Create Twilio Account</h3><ol><li>Go to <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Create a free trial account</li><li>Verify your email and phone number</li><li>You get $15 trial credit</li></ol><h3>Step 2: Get Phone Number</h3><ol><li>Log in to Twilio Console</li><li>Go to <strong>Phone Numbers > Buy a Number</strong></li><li>Choose country (Netherlands, Belgium, Spain, etc.)</li><li>Select a number with <strong>SMS capabilities</strong></li><li>Click <strong>Buy</strong> (cost: ~€1/month)</li></ol><h3>Step 3: Find API Credentials</h3><ol><li>In Twilio Console, go to <strong>Account > API keys & tokens</strong></li><li>Copy:  <ul><li><strong>Account SID:</strong> Unique account identifier</li><li><strong>Auth Token:</strong> Secret authentication token</li></ul></li><li>Store these safely (don't share!)</li></ol><h3>Step 4: Connect to Tesoro</h3><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings > Integrations > SMS (Twilio)</strong></li><li>Click <strong>+ Connect Twilio</strong></li><li>Fill in:  <ul><li><strong>Account SID:</strong> From Twilio Console</li><li><strong>Auth Token:</strong> From Twilio Console</li><li><strong>Phone Number:</strong> Your purchased Twilio number</li></ul></li><li>Click <strong>Test Connection</strong></li><li>If test successful: <strong>Save</strong></li></ol><h3>Step 5: Test SMS</h3><ol><li>Send test SMS to your own number</li><li>Check if message arrives</li><li>Check sender ID (Twilio number)</li><li>Integration is ready!</li></ol>"
+        },
+        "es": {
+          "text": "<h3>Paso 1: Crear cuenta de Twilio</h3><ol><li>Ve a <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Crea una cuenta de prueba gratuita</li><li>Verifica tu email y número de teléfono</li><li>Obtienes $15 de crédito de prueba</li></ol><h3>Paso 2: Obtener número de teléfono</h3><ol><li>Inicia sesión en Twilio Console</li><li>Ve a <strong>Phone Numbers > Buy a Number</strong></li><li>Elige país (Países Bajos, Bélgica, España, etc.)</li><li>Selecciona un número con <strong>SMS capabilities</strong></li><li>Haz clic en <strong>Buy</strong> (costo: ~€1/mes)</li></ol><h3>Paso 3: Encontrar credenciales de API</h3><ol><li>En Twilio Console, ve a <strong>Account > API keys & tokens</strong></li><li>Copia:  <ul><li><strong>Account SID:</strong> Identificador único de cuenta</li><li><strong>Auth Token:</strong> Token de autenticación secreto</li></ul></li><li>Guarda estos de forma segura (¡no compartas!)</li></ol><h3>Paso 4: Conectar a Tesoro</h3><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings > Integrations > SMS (Twilio)</strong></li><li>Haz clic en <strong>+ Connect Twilio</strong></li><li>Completa:  <ul><li><strong>Account SID:</strong> De Twilio Console</li><li><strong>Auth Token:</strong> De Twilio Console</li><li><strong>Phone Number:</strong> Tu número de Twilio comprado</li></ul></li><li>Haz clic en <strong>Test Connection</strong></li><li>Si la prueba es exitosa: <strong>Save</strong></li></ol><h3>Paso 5: Probar SMS</h3><ol><li>Envía SMS de prueba a tu propio número</li><li>Verifica si llega el mensaje</li><li>Verifica ID del remitente (número de Twilio)</li><li>¡La integración está lista!</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "sending-sms-messages",
+      "title": {
+        "nl": "SMS berichten versturen",
+        "en": "Sending SMS messages",
+        "es": "Enviar mensajes SMS"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Individueel SMS Versturen</h3><ol><li>Open een contact in Tesoro</li><li>Klik <strong>Send SMS</strong> knop</li><li>SMS compose window opent</li><li>Vul in:  <ul><li><strong>To:</strong> Contact telefoonnummer (automatisch ingevuld)</li><li><strong>Message:</strong> SMS tekst (max 160 karakters)</li><li>Karakter teller toont hoeveel je nog hebt</li></ul></li><li>Klik <strong>Send</strong></li></ol><h3>SMS Templates Gebruiken</h3><p>Voor snellere SMS:</p><ol><li>In compose window, klik <strong>Templates</strong></li><li>Selecteer SMS template</li><li>Template tekst wordt ingevuld met variabelen</li><li>Pas aan indien nodig</li><li>Verstuur</li></ol><h3>SMS Variabelen</h3><p>Personaliseer SMS met:</p><ul><li><code>{{firstName}}</code> → Contact voornaam</li><li><code>{{lastName}}</code> → Achternaam</li><li><code>{{propertyAddress}}</code> → Property adres (kort)</li><li><code>{{agentName}}</code> → Jouw naam</li><li><code>{{companyName}}</code> → Bedrijfsnaam</li></ul><h3>Voorbeeld SMS</h3><pre><code>Hallo {{firstName}}, je bezichtiging voor {{propertyAddress}} is bevestigd voor morgen 15:00. Tot dan! - {{agentName}}\n</code></pre><h3>Lange Berichten</h3><p>Als bericht > 160 karakters:</p><ul><li>Tesoro splitst automatisch in meerdere berichten</li><li>Je betaalt per 160 karakters segment</li><li>Ontvanger krijgt 1 samengevoegd bericht</li><li>Let op kosten bij lange berichten!</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Send Individual SMS</h3><ol><li>Open a contact in Tesoro</li><li>Click <strong>Send SMS</strong> button</li><li>SMS compose window opens</li><li>Fill in:  <ul><li><strong>To:</strong> Contact phone number (auto-filled)</li><li><strong>Message:</strong> SMS text (max 160 characters)</li><li>Character counter shows how many left</li></ul></li><li>Click <strong>Send</strong></li></ol><h3>Use SMS Templates</h3><p>For faster SMS:</p><ol><li>In compose window, click <strong>Templates</strong></li><li>Select SMS template</li><li>Template text is filled with variables</li><li>Adjust if needed</li><li>Send</li></ol><h3>SMS Variables</h3><p>Personalize SMS with:</p><ul><li><code>{{firstName}}</code> → Contact first name</li><li><code>{{lastName}}</code> → Last name</li><li><code>{{propertyAddress}}</code> → Property address (short)</li><li><code>{{agentName}}</code> → Your name</li><li><code>{{companyName}}</code> → Company name</li></ul><h3>Example SMS</h3><pre><code>Hi {{firstName}}, your viewing for {{propertyAddress}} is confirmed for tomorrow at 3pm. See you then! - {{agentName}}\n</code></pre><h3>Long Messages</h3><p>If message > 160 characters:</p><ul><li>Tesoro automatically splits into multiple messages</li><li>You pay per 160 character segment</li><li>Recipient gets 1 merged message</li><li>Watch costs for long messages!</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Enviar SMS individual</h3><ol><li>Abre un contacto en Tesoro</li><li>Haz clic en el botón <strong>Send SMS</strong></li><li>Se abre la ventana de composición de SMS</li><li>Completa:  <ul><li><strong>To:</strong> Número de teléfono del contacto (autocompletado)</li><li><strong>Message:</strong> Texto del SMS (máx. 160 caracteres)</li><li>Contador de caracteres muestra cuántos quedan</li></ul></li><li>Haz clic en <strong>Send</strong></li></ol><h3>Usar plantillas de SMS</h3><p>Para SMS más rápido:</p><ol><li>En ventana de composición, haz clic en <strong>Templates</strong></li><li>Selecciona plantilla de SMS</li><li>El texto de la plantilla se completa con variables</li><li>Ajusta si es necesario</li><li>Enviar</li></ol><h3>Variables de SMS</h3><p>Personaliza SMS con:</p><ul><li><code>{{firstName}}</code> → Nombre del contacto</li><li><code>{{lastName}}</code> → Apellido</li><li><code>{{propertyAddress}}</code> → Dirección de propiedad (corta)</li><li><code>{{agentName}}</code> → Tu nombre</li><li><code>{{companyName}}</code> → Nombre de empresa</li></ul><h3>Ejemplo de SMS</h3><pre><code>Hola {{firstName}}, tu visita para {{propertyAddress}} está confirmada para mañana a las 3pm. ¡Nos vemos! - {{agentName}}\n</code></pre><h3>Mensajes largos</h3><p>Si mensaje > 160 caracteres:</p><ul><li>Tesoro divide automáticamente en múltiples mensajes</li><li>Pagas por segmento de 160 caracteres</li><li>El destinatario recibe 1 mensaje fusionado</li><li>¡Ten cuidado con los costos de mensajes largos!</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "sms-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "SMS Best Practices",
+        "en": "SMS Best Practices",
+        "es": "Mejores prácticas de SMS"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Houd het kort:</strong> Ideaal < 160 karakters</li><li><strong>Duidelijke call-to-action:</strong> Wat moet klant doen?</li><li><strong>Include je naam:</strong> Zodat ontvanger weet wie stuurt</li><li><strong>Timing is belangrijk:</strong> Niet voor 9:00 of na 20:00</li><li><strong>Respect opt-outs:</strong> Stop direct bij \"STOP\" antwoord</li><li><strong>Gebruik afkortingen slim:</strong> \"ma\" voor maandag, \"max\" voor maximum</li><li><strong>Voeg link toe:</strong> Voor meer details (gebruik URL shortener)</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Keep it short:</strong> Ideal < 160 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Include your name:</strong> So recipient knows who's sending</li><li><strong>Timing matters:</strong> Not before 9am or after 8pm</li><li><strong>Respect opt-outs:</strong> Stop immediately at \"STOP\" reply</li><li><strong>Use abbreviations smartly:</strong> \"Mon\" for Monday, \"max\" for maximum</li><li><strong>Add link:</strong> For more details (use URL shortener)</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Manténlo corto:</strong> Ideal < 160 caracteres</li><li><strong>Llamado a la acción claro:</strong> ¿Qué debe hacer el cliente?</li><li><strong>Incluye tu nombre:</strong> Para que el destinatario sepa quién envía</li><li><strong>El tiempo importa:</strong> No antes de las 9am ni después de las 8pm</li><li><strong>Respeta las exclusiones:</strong> Detén inmediatamente al responder \"STOP\"</li><li><strong>Usa abreviaturas inteligentemente:</strong> \"Lun\" para lunes, \"máx\" para máximo</li><li><strong>Agrega enlace:</strong> Para más detalles (usa acortador de URL)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "bulk-sms-and-costs",
+      "title": {
+        "nl": "Bulk SMS en kosten",
+        "en": "Bulk SMS and costs",
+        "es": "SMS masivos y costos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Bulk SMS Versturen</h3><ol><li>Ga naar <strong>Contacts</strong></li><li>Gebruik filters om segment te selecteren</li><li>Selecteer meerdere contacten (checkbox)</li><li>Klik <strong>Bulk Actions > Send SMS</strong></li><li>Kies SMS template of schrijf nieuwe</li><li>Review preview met variabelen</li><li>Klik <strong>Send to All</strong> ({{count}} recipients)</li></ol><h3>SMS Kosten (Twilio Pricing)</h3><p>Prijzen variëren per land:</p><ul><li><strong>Nederland:</strong> €0.05 per SMS</li><li><strong>België:</strong> €0.06 per SMS</li><li><strong>Spanje:</strong> €0.04 per SMS</li><li><strong>Internationaal:</strong> €0.08-0.15 per SMS</li></ul><p><strong>Lange berichten:</strong></p><ul><li>161-320 karakters = 2x SMS = 2x kosten</li><li>321-480 karakters = 3x SMS = 3x kosten</li></ul><h3>Kosten Schatten</h3><p>Tesoro toont kostenschatting voordat je verstuurt:</p><ul><li>100 contacten x €0.05 = €5.00</li><li>50 contacten x 2 SMS (lang) = €5.00</li><li>Wordt afgetrokken van Twilio credit</li></ul><h3>SMS Credit Opwaarderen</h3><ol><li>Log in op Twilio Console</li><li>Ga naar <strong>Billing</strong></li><li>Klik <strong>Add Funds</strong></li><li>Kies bedrag (€20, €50, €100)</li><li>Betaal met creditcard</li></ol><h3>SMS Limiet Instellen</h3><p>Voorkom onverwachte kosten:</p><ol><li>In Tesoro: <strong>Settings > SMS > Spending Limit</strong></li><li>Stel max bedrag per dag/week/maand</li><li>Bij limiet krijg je alert</li><li>SMS worden gepauzeerd tot je limiet verhoogt</li></ol>"
+        },
+        "en": {
+          "text": "<h3>Send Bulk SMS</h3><ol><li>Go to <strong>Contacts</strong></li><li>Use filters to select segment</li><li>Select multiple contacts (checkbox)</li><li>Click <strong>Bulk Actions > Send SMS</strong></li><li>Choose SMS template or write new</li><li>Review preview with variables</li><li>Click <strong>Send to All</strong> ({{count}} recipients)</li></ol><h3>SMS Costs (Twilio Pricing)</h3><p>Prices vary by country:</p><ul><li><strong>Netherlands:</strong> €0.05 per SMS</li><li><strong>Belgium:</strong> €0.06 per SMS</li><li><strong>Spain:</strong> €0.04 per SMS</li><li><strong>International:</strong> €0.08-0.15 per SMS</li></ul><p><strong>Long messages:</strong></p><ul><li>161-320 characters = 2x SMS = 2x cost</li><li>321-480 characters = 3x SMS = 3x cost</li></ul><h3>Estimate Costs</h3><p>Tesoro shows cost estimate before sending:</p><ul><li>100 contacts x €0.05 = €5.00</li><li>50 contacts x 2 SMS (long) = €5.00</li><li>Deducted from Twilio credit</li></ul><h3>Top Up SMS Credit</h3><ol><li>Log in to Twilio Console</li><li>Go to <strong>Billing</strong></li><li>Click <strong>Add Funds</strong></li><li>Choose amount (€20, €50, €100)</li><li>Pay with credit card</li></ol><h3>Set SMS Limit</h3><p>Prevent unexpected costs:</p><ol><li>In Tesoro: <strong>Settings > SMS > Spending Limit</strong></li><li>Set max amount per day/week/month</li><li>At limit you get alert</li><li>SMS are paused until you raise limit</li></ol>"
+        },
+        "es": {
+          "text": "<h3>Enviar SMS masivos</h3><ol><li>Ve a <strong>Contacts</strong></li><li>Usa filtros para seleccionar segmento</li><li>Selecciona múltiples contactos (checkbox)</li><li>Haz clic en <strong>Bulk Actions > Send SMS</strong></li><li>Elige plantilla de SMS o escribe nueva</li><li>Revisa vista previa con variables</li><li>Haz clic en <strong>Send to All</strong> ({{count}} destinatarios)</li></ol><h3>Costos de SMS (Precios de Twilio)</h3><p>Los precios varían por país:</p><ul><li><strong>Países Bajos:</strong> €0.05 por SMS</li><li><strong>Bélgica:</strong> €0.06 por SMS</li><li><strong>España:</strong> €0.04 por SMS</li><li><strong>Internacional:</strong> €0.08-0.15 por SMS</li></ul><p><strong>Mensajes largos:</strong></p><ul><li>161-320 caracteres = 2x SMS = 2x costo</li><li>321-480 caracteres = 3x SMS = 3x costo</li></ul><h3>Estimar costos</h3><p>Tesoro muestra estimación de costo antes de enviar:</p><ul><li>100 contactos x €0.05 = €5.00</li><li>50 contactos x 2 SMS (largo) = €5.00</li><li>Se deduce del crédito de Twilio</li></ul><h3>Recargar crédito de SMS</h3><ol><li>Inicia sesión en Twilio Console</li><li>Ve a <strong>Billing</strong></li><li>Haz clic en <strong>Add Funds</strong></li><li>Elige cantidad (€20, €50, €100)</li><li>Paga con tarjeta de crédito</li></ol><h3>Establecer límite de SMS</h3><p>Prevenir costos inesperados:</p><ol><li>En Tesoro: <strong>Settings > SMS > Spending Limit</strong></li><li>Establece cantidad máxima por día/semana/mes</li><li>Al alcanzar el límite recibes alerta</li><li>Los SMS se pausan hasta que aumentes el límite</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "communication-center-overview",
+    "whatsapp-integration-guide",
+    "communication-templates",
+    "automated-follow-ups"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen klanten terugsturen naar mijn SMS?",
+        "en": "Can customers reply to my SMS?",
+        "es": "¿Los clientes pueden responder a mi SMS?"
+      },
+      "answer": {
+        "nl": "Ja, two-way SMS is mogelijk met Twilio. Antwoorden verschijnen automatisch in je Tesoro inbox onder het contact. Je kunt direct terugsturen vanuit het CRM.",
+        "en": "Yes, two-way SMS is possible with Twilio. Replies automatically appear in your Tesoro inbox under the contact. You can reply directly from the CRM.",
+        "es": "Sí, SMS bidireccional es posible con Twilio. Las respuestas aparecen automáticamente en tu bandeja de entrada de Tesoro bajo el contacto. Puedes responder directamente desde el CRM."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als iemand 'STOP' stuurt?",
+        "en": "What happens if someone sends 'STOP'?",
+        "es": "¿Qué sucede si alguien envía 'STOP'?"
+      },
+      "answer": {
+        "nl": "Twilio markeert het nummer automatisch als 'opted out'. Tesoro blokkeert toekomstige SMS naar dit contact. Dit is wettelijk verplicht. Je kunt handmatig weer inschakelen als klant later opnieuw toestemming geeft.",
+        "en": "Twilio automatically marks the number as 'opted out'. Tesoro blocks future SMS to this contact. This is legally required. You can manually re-enable if customer later gives permission again.",
+        "es": "Twilio marca automáticamente el número como 'opted out'. Tesoro bloquea futuros SMS a este contacto. Esto es legalmente requerido. Puedes reactivar manualmente si el cliente posteriormente da permiso nuevamente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik SMS plannen voor later?",
+        "en": "Can I schedule SMS for later?",
+        "es": "¿Puedo programar SMS para más tarde?"
+      },
+      "answer": {
+        "nl": "Ja, in de SMS compose window klik op 'Schedule' en kies datum/tijd. Handig voor herinneringen: plan nu een SMS voor morgen 9:00 \"Je bezichtiging is vandaag om 15:00\".",
+        "en": "Yes, in the SMS compose window click 'Schedule' and choose date/time. Useful for reminders: schedule now an SMS for tomorrow 9am \"Your viewing is today at 3pm\".",
+        "es": "Sí, en la ventana de composición de SMS haz clic en 'Schedule' y elige fecha/hora. Útil para recordatorios: programa ahora un SMS para mañana a las 9am \"Tu visita es hoy a las 3pm\"."
+      }
+    }
+  ]
+}

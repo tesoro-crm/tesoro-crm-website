@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "id": "deal-activities-timeline",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T11:15:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&h=630&fit=crop",
+    "keywords": ["deal activities", "activity timeline", "deal notes", "deal tracking", "activity log"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deal activiteiten en timeline tracking",
+      "en": "Deal Activities and Timeline Tracking",
+      "es": "Actividades de deals y seguimiento de línea de tiempo"
+    },
+    "description": {
+      "nl": "Leer hoe je alle deal activiteiten tracked, notes toevoegt, en een complete timeline maintained voor better client management.",
+      "en": "Learn how to track all deal activities, add notes, and maintain a complete timeline for better client management.",
+      "es": "Aprende cómo rastrear todas las actividades de deals, agregar notas y mantener una línea de tiempo completa para mejor gestión de clientes."
+    },
+    "icon": "timeline"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Elke interaction met een client moet gedocumenteerd worden voor continuity en accountability. Het activity timeline systeem van Tesoro CRM logged automatisch system events en laat je manual activities toevoegen voor een complete deal history.</p>"
+        },
+        "en": {
+          "text": "<p>Every interaction with a client should be documented for continuity and accountability. Tesoro CRM's activity timeline system automatically logs system events and lets you add manual activities for a complete deal history.</p>"
+        },
+        "es": {
+          "text": "<p>Cada interacción con un cliente debe documentarse para continuidad y responsabilidad. El sistema de línea de tiempo de actividades de Tesoro CRM registra automáticamente eventos del sistema y te permite agregar actividades manuales para un historial completo de deals.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "automatic-activities",
+      "title": {
+        "nl": "Automatische activity logging",
+        "en": "Automatic Activity Logging",
+        "es": "Registro automático de actividades"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het systeem logged automatisch:</p><ul><li><strong>Deal creation:</strong> Wie en wanneer deal created</li><li><strong>Status changes:</strong> Alle stage transitions met timestamps</li><li><strong>Property additions/removals:</strong> Properties linked/unlinked</li><li><strong>Contact changes:</strong> Primary contact of participants updated</li><li><strong>Value updates:</strong> Deal value of commission changes</li><li><strong>Email sent:</strong> Emails naar contact via systeem</li><li><strong>Viewing scheduled:</strong> Property viewing appointments</li><li><strong>Documents uploaded:</strong> Files attached to deal</li></ul><p>Alle automatic activities bevatten: timestamp, user who triggered, old/new values, en action type.</p>"
+        },
+        "en": {
+          "text": "<p>The system automatically logs:</p><ul><li><strong>Deal creation:</strong> Who and when deal was created</li><li><strong>Status changes:</strong> All stage transitions with timestamps</li><li><strong>Property additions/removals:</strong> Properties linked/unlinked</li><li><strong>Contact changes:</strong> Primary contact or participants updated</li><li><strong>Value updates:</strong> Deal value or commission changes</li><li><strong>Email sent:</strong> Emails to contact via system</li><li><strong>Viewing scheduled:</strong> Property viewing appointments</li><li><strong>Documents uploaded:</strong> Files attached to deal</li></ul><p>All automatic activities include: timestamp, user who triggered, old/new values, and action type.</p>"
+        },
+        "es": {
+          "text": "<p>El sistema registra automáticamente:</p><ul><li><strong>Creación de deal:</strong> Quién y cuándo se creó el deal</li><li><strong>Cambios de estado:</strong> Todas las transiciones de etapa con marcas de tiempo</li><li><strong>Adiciones/eliminaciones de propiedades:</strong> Propiedades vinculadas/desvinculadas</li><li><strong>Cambios de contacto:</strong> Contacto principal o participantes actualizados</li><li><strong>Actualizaciones de valor:</strong> Cambios de valor del deal o comisión</li><li><strong>Email enviado:</strong> Emails al contacto mediante sistema</li><li><strong>Visita programada:</strong> Citas de visita de propiedades</li><li><strong>Documentos subidos:</strong> Archivos adjuntos al deal</li></ul><p>Todas las actividades automáticas incluyen: marca de tiempo, usuario que activó, valores antiguos/nuevos y tipo de acción.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "manual-activities",
+      "title": {
+        "nl": "Manual activities toevoegen",
+        "en": "Adding Manual Activities",
+        "es": "Agregando actividades manuales"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Phone calls loggen",
+            "en": "1. Log Phone Calls",
+            "es": "1. Registrar llamadas telefónicas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Document phone conversations:</p><ul><li>Click <strong>+ Add Activity</strong> > <strong>Call</strong></li><li>Select call type: Inbound, Outbound, Missed</li><li>Set duration en date/time</li><li>Add call notes: wat discussed, next steps, concerns</li><li>Mark als completed of scheduled (future call)</li></ul><p><strong>Best practice:</strong> Log calls direct na conversation terwijl details fresh zijn.</p>"
+            },
+            "en": {
+              "text": "<p>Document phone conversations:</p><ul><li>Click <strong>+ Add Activity</strong> > <strong>Call</strong></li><li>Select call type: Inbound, Outbound, Missed</li><li>Set duration and date/time</li><li>Add call notes: what was discussed, next steps, concerns</li><li>Mark as completed or scheduled (future call)</li></ul><p><strong>Best practice:</strong> Log calls immediately after conversation while details are fresh.</p>"
+            },
+            "es": {
+              "text": "<p>Documenta conversaciones telefónicas:</p><ul><li>Haz clic en <strong>+ Agregar Actividad</strong> > <strong>Llamada</strong></li><li>Selecciona tipo de llamada: Entrante, Saliente, Perdida</li><li>Establece duración y fecha/hora</li><li>Agrega notas de llamada: qué se discutió, próximos pasos, preocupaciones</li><li>Marca como completada o programada (llamada futura)</li></ul><p><strong>Mejor práctica:</strong> Registra llamadas inmediatamente después de la conversación mientras los detalles están frescos.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Meetings en viewings",
+            "en": "2. Meetings and Viewings",
+            "es": "2. Reuniones y visitas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Schedule en log property viewings:</p><ul><li>Click <strong>+ Add Activity</strong> > <strong>Meeting</strong></li><li>Select meeting type: Property viewing, Office meeting, Virtual meeting</li><li>Link specific property (voor viewings)</li><li>Set date, time, location</li><li>Add participants (buyer, team members)</li><li>Post-meeting: Add outcome notes en buyer feedback</li></ul><p><strong>Viewing feedback template:</strong></p><ul><li>Property interest level (1-5 stars)</li><li>Positive aspects</li><li>Concerns of objections</li><li>Next steps</li></ul>"
+            },
+            "en": {
+              "text": "<p>Schedule and log property viewings:</p><ul><li>Click <strong>+ Add Activity</strong> > <strong>Meeting</strong></li><li>Select meeting type: Property viewing, Office meeting, Virtual meeting</li><li>Link specific property (for viewings)</li><li>Set date, time, location</li><li>Add participants (buyer, team members)</li><li>Post-meeting: Add outcome notes and buyer feedback</li></ul><p><strong>Viewing feedback template:</strong></p><ul><li>Property interest level (1-5 stars)</li><li>Positive aspects</li><li>Concerns or objections</li><li>Next steps</li></ul>"
+            },
+            "es": {
+              "text": "<p>Programa y registra visitas de propiedades:</p><ul><li>Haz clic en <strong>+ Agregar Actividad</strong> > <strong>Reunión</strong></li><li>Selecciona tipo de reunión: Visita de propiedad, Reunión en oficina, Reunión virtual</li><li>Vincula propiedad específica (para visitas)</li><li>Establece fecha, hora, ubicación</li><li>Agrega participantes (comprador, miembros del equipo)</li><li>Post-reunión: Agrega notas de resultado y retroalimentación del comprador</li></ul><p><strong>Plantilla de retroalimentación de visita:</strong></p><ul><li>Nivel de interés en propiedad (1-5 estrellas)</li><li>Aspectos positivos</li><li>Preocupaciones u objeciones</li><li>Próximos pasos</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Notes en comments",
+            "en": "3. Notes and Comments",
+            "es": "3. Notas y comentarios"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Add rich text notes voor context:</p><ul><li>Click <strong>+ Add Note</strong> in timeline</li><li>Use rich text editor voor formatting</li><li>@Mention team members voor collaboration</li><li>Pin important notes to top</li><li>Add tags voor easy filtering</li></ul><p><strong>When to add notes:</strong></p><ul><li>Buyer preferences changes</li><li>Important decisions made</li><li>External factors affecting deal (market, financing, etc.)</li><li>Follow-up reminders</li><li>Deal strategy adjustments</li></ul>"
+            },
+            "en": {
+              "text": "<p>Add rich text notes for context:</p><ul><li>Click <strong>+ Add Note</strong> in timeline</li><li>Use rich text editor for formatting</li><li>@Mention team members for collaboration</li><li>Pin important notes to top</li><li>Add tags for easy filtering</li></ul><p><strong>When to add notes:</strong></p><ul><li>Buyer preferences change</li><li>Important decisions made</li><li>External factors affecting deal (market, financing, etc.)</li><li>Follow-up reminders</li><li>Deal strategy adjustments</li></ul>"
+            },
+            "es": {
+              "text": "<p>Agrega notas de texto enriquecido para contexto:</p><ul><li>Haz clic en <strong>+ Agregar Nota</strong> en línea de tiempo</li><li>Usa editor de texto enriquecido para formato</li><li>@Menciona miembros del equipo para colaboración</li><li>Fija notas importantes arriba</li><li>Agrega etiquetas para filtrado fácil</li></ul><p><strong>Cuándo agregar notas:</strong></p><ul><li>Cambios de preferencias del comprador</li><li>Decisiones importantes tomadas</li><li>Factores externos afectando deal (mercado, financiamiento, etc.)</li><li>Recordatorios de seguimiento</li><li>Ajustes de estrategia del deal</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. Tasks en reminders",
+            "en": "4. Tasks and Reminders",
+            "es": "4. Tareas y recordatorios"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Create actionable tasks linked to deal:</p><ul><li>Click <strong>+ Add Task</strong></li><li>Set task title en description</li><li>Assign to team member</li><li>Set due date en priority</li><li>Link to specific property (indien applicable)</li><li>Set reminder notifications</li></ul><p><strong>Common deal tasks:</strong></p><ul><li>Follow up with buyer (date)</li><li>Send property brochure</li><li>Prepare offer document</li><li>Schedule second viewing</li><li>Contact bank voor financing</li><li>Prepare contract documents</li></ul>"
+            },
+            "en": {
+              "text": "<p>Create actionable tasks linked to deal:</p><ul><li>Click <strong>+ Add Task</strong></li><li>Set task title and description</li><li>Assign to team member</li><li>Set due date and priority</li><li>Link to specific property (if applicable)</li><li>Set reminder notifications</li></ul><p><strong>Common deal tasks:</strong></p><ul><li>Follow up with buyer (date)</li><li>Send property brochure</li><li>Prepare offer document</li><li>Schedule second viewing</li><li>Contact bank for financing</li><li>Prepare contract documents</li></ul>"
+            },
+            "es": {
+              "text": "<p>Crea tareas accionables vinculadas al deal:</p><ul><li>Haz clic en <strong>+ Agregar Tarea</strong></li><li>Establece título y descripción de tarea</li><li>Asigna a miembro del equipo</li><li>Establece fecha de vencimiento y prioridad</li><li>Vincula a propiedad específica (si aplica)</li><li>Establece notificaciones de recordatorio</li></ul><p><strong>Tareas comunes de deal:</strong></p><ul><li>Hacer seguimiento con comprador (fecha)</li><li>Enviar folleto de propiedad</li><li>Preparar documento de oferta</li><li>Programar segunda visita</li><li>Contactar banco para financiamiento</li><li>Preparar documentos de contrato</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "timeline-view",
+      "title": {
+        "nl": "Timeline view gebruiken",
+        "en": "Using Timeline View",
+        "es": "Usando vista de línea de tiempo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De timeline view toont chronological history van alle deal events:</p><p><strong>Timeline features:</strong></p><ul><li><strong>Chronological order:</strong> Newest first (reverse chronological)</li><li><strong>Activity grouping:</strong> Related activities grouped together</li><li><strong>Filter by type:</strong> Show only calls, meetings, notes, etc.</li><li><strong>Filter by user:</strong> See activities by specific team member</li><li><strong>Search:</strong> Find specific activities by keyword</li><li><strong>Export:</strong> Export timeline as PDF voor client records</li></ul><p><strong>Color coding:</strong></p><ul><li>Blue: System events (status changes, etc.)</li><li>Green: Completed activities (calls, meetings)</li><li>Orange: Pending tasks</li><li>Red: Overdue tasks</li></ul>"
+        },
+        "en": {
+          "text": "<p>The timeline view shows chronological history of all deal events:</p><p><strong>Timeline features:</strong></p><ul><li><strong>Chronological order:</strong> Newest first (reverse chronological)</li><li><strong>Activity grouping:</strong> Related activities grouped together</li><li><strong>Filter by type:</strong> Show only calls, meetings, notes, etc.</li><li><strong>Filter by user:</strong> See activities by specific team member</li><li><strong>Search:</strong> Find specific activities by keyword</li><li><strong>Export:</strong> Export timeline as PDF for client records</li></ul><p><strong>Color coding:</strong></p><ul><li>Blue: System events (status changes, etc.)</li><li>Green: Completed activities (calls, meetings)</li><li>Orange: Pending tasks</li><li>Red: Overdue tasks</li></ul>"
+        },
+        "es": {
+          "text": "<p>La vista de línea de tiempo muestra historial cronológico de todos los eventos del deal:</p><p><strong>Características de línea de tiempo:</strong></p><ul><li><strong>Orden cronológico:</strong> Más recientes primero (cronológico inverso)</li><li><strong>Agrupación de actividades:</strong> Actividades relacionadas agrupadas juntas</li><li><strong>Filtrar por tipo:</strong> Mostrar solo llamadas, reuniones, notas, etc.</li><li><strong>Filtrar por usuario:</strong> Ver actividades por miembro específico del equipo</li><li><strong>Buscar:</strong> Encontrar actividades específicas por palabra clave</li><li><strong>Exportar:</strong> Exportar línea de tiempo como PDF para registros de cliente</li></ul><p><strong>Codificación de colores:</strong></p><ul><li>Azul: Eventos del sistema (cambios de estado, etc.)</li><li>Verde: Actividades completadas (llamadas, reuniones)</li><li>Naranja: Tareas pendientes</li><li>Rojo: Tareas vencidas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor activity tracking",
+        "en": "Best Practices for Activity Tracking",
+        "es": "Mejores prácticas para seguimiento de actividades"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Log immediately:</strong> Document activities binnen uren na event</li><li><strong>Be detailed:</strong> Add specific details, niet alleen 'called client'</li><li><strong>Use @mentions:</strong> Tag team members voor collaboration</li><li><strong>Set reminders:</strong> Convert notes to tasks met due dates</li><li><strong>Review timeline:</strong> Before client calls, review timeline voor context</li><li><strong>Consistent format:</strong> Use consistent formatting voor notes</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Log immediately:</strong> Document activities within hours of event</li><li><strong>Be detailed:</strong> Add specific details, not just 'called client'</li><li><strong>Use @mentions:</strong> Tag team members for collaboration</li><li><strong>Set reminders:</strong> Convert notes to tasks with due dates</li><li><strong>Review timeline:</strong> Before client calls, review timeline for context</li><li><strong>Consistent format:</strong> Use consistent formatting for notes</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Registrar inmediatamente:</strong> Documenta actividades dentro de horas del evento</li><li><strong>Ser detallado:</strong> Agrega detalles específicos, no solo 'llamé al cliente'</li><li><strong>Usar @menciones:</strong> Etiqueta miembros del equipo para colaboración</li><li><strong>Establecer recordatorios:</strong> Convierte notas en tareas con fechas de vencimiento</li><li><strong>Revisar línea de tiempo:</strong> Antes de llamadas con cliente, revisa línea de tiempo para contexto</li><li><strong>Formato consistente:</strong> Usa formato consistente para notas</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-team-collaboration",
+    "creating-deals-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen team members elkaar's activities zien?",
+        "en": "Can team members see each other's activities?",
+        "es": "¿Pueden los miembros del equipo ver las actividades de los demás?"
+      },
+      "answer": {
+        "nl": "Ja, alle team members met access to deal kunnen alle activities zien. Dit zorgt voor transparency en continuity. Je kunt private notes maken die alleen jij kunt zien via de 'Private Note' option.",
+        "en": "Yes, all team members with access to deal can see all activities. This ensures transparency and continuity. You can create private notes that only you can see via the 'Private Note' option.",
+        "es": "Sí, todos los miembros del equipo con acceso al deal pueden ver todas las actividades. Esto asegura transparencia y continuidad. Puedes crear notas privadas que solo tú puedes ver mediante la opción 'Nota Privada'."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik activities verwijderen of editen?",
+        "en": "Can I delete or edit activities?",
+        "es": "¿Puedo eliminar o editar actividades?"
+      },
+      "answer": {
+        "nl": "Je kunt manual activities (notes, tasks) editen en verwijderen. Automatic system events kunnen niet gewijzigd worden voor audit trail integrity. Edit history wordt bijgehouden, dus je kunt zien wanneer notes gewijzigd zijn.",
+        "en": "You can edit and delete manual activities (notes, tasks). Automatic system events cannot be modified to maintain audit trail integrity. Edit history is tracked, so you can see when notes were modified.",
+        "es": "Puedes editar y eliminar actividades manuales (notas, tareas). Los eventos automáticos del sistema no pueden modificarse para mantener la integridad del registro de auditoría. El historial de edición se rastrea, por lo que puedes ver cuándo se modificaron las notas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "id": "property-history-tracking",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T19:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "history", "tracking", "audit-trail", "activity-log", "changelog"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop",
+    "keywords": ["property history", "activity tracking", "audit trail", "change history", "property updates"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property history tracking en activity log in Tesoro",
+      "en": "Property History Tracking and Activity Log in Tesoro",
+      "es": "Seguimiento de historial de propiedades y registro de actividad en Tesoro"
+    },
+    "description": {
+      "nl": "Leer hoe je price changes, status updates, activity log en complete change history tracked voor compliance en transparency.",
+      "en": "Learn how to track price changes, status updates, activity log and complete change history for compliance and transparency.",
+      "es": "Aprende cómo rastrear cambios de precios, actualizaciones de estado, registro de actividad e historial completo de cambios para cumplimiento y transparencia."
+    },
+    "icon": "history"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "history-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom history tracking belangrijk is",
+        "en": "Why history tracking is important",
+        "es": "Por qué es importante el seguimiento del historial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Complete history tracking is essentieel voor compliance, transparency en data-driven beslissingen.</p><p><strong>Wat wordt tracked:</strong></p><ul><li>Price changes met timestamps</li><li>Status transitions (draft → active → sold)</li><li>Property edits (field changes)</li><li>Portal sync events</li><li>User actions en ownership changes</li><li>Complete audit trail</li></ul>"
+        },
+        "en": {
+          "text": "<p>Complete history tracking is essential for compliance, transparency and data-driven decisions.</p><p><strong>What is tracked:</strong></p><ul><li>Price changes with timestamps</li><li>Status transitions (draft → active → sold)</li><li>Property edits (field changes)</li><li>Portal sync events</li><li>User actions and ownership changes</li><li>Complete audit trail</li></ul>"
+        },
+        "es": {
+          "text": "<p>El seguimiento completo del historial es esencial para cumplimiento, transparencia y decisiones basadas en datos.</p><p><strong>Qué se rastrea:</strong></p><ul><li>Cambios de precios con marcas de tiempo</li><li>Transiciones de estado (borrador → activa → vendida)</li><li>Ediciones de propiedad (cambios de campos)</li><li>Eventos de sincronización de portales</li><li>Acciones de usuario y cambios de propiedad</li><li>Pista de auditoría completa</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "price-history",
+      "title": {
+        "nl": "Price change history",
+        "en": "Price change history",
+        "es": "Historial de cambios de precio"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Automatic price tracking</h5><p>Elke price wijziging wordt automatisch gelogd met:</p><ul><li><strong>Old price:</strong> Previous price value</li><li><strong>New price:</strong> Updated price value</li><li><strong>Change date:</strong> Exact timestamp</li><li><strong>Changed by:</strong> User who made the change</li><li><strong>Reason:</strong> Optional change reason/notes</li><li><strong>% Change:</strong> Automatic percentage calculation</li></ul><h5>Price history view</h5><p>View complete price timeline:</p><ol><li>Open property detail</li><li>Click 'Price History' tab</li><li>See chronological list van alle price changes</li><li>Filter by date range</li><li>Export to CSV voor analysis</li></ol><h5>Price trend analysis</h5><p>Use price history voor insights:</p><ul><li><strong>Time on market:</strong> Hoelang bij each price point</li><li><strong>Price reductions:</strong> Count en magnitude van reductions</li><li><strong>Market position:</strong> Compare initial vs current price</li><li><strong>Performance metrics:</strong> Average days tussen price changes</li></ul><p>Dashboard widget toont properties met frequent price changes (possible overpricing indication).</p>"
+        },
+        "en": {
+          "text": "<h5>Automatic price tracking</h5><p>Every price change is automatically logged with:</p><ul><li><strong>Old price:</strong> Previous price value</li><li><strong>New price:</strong> Updated price value</li><li><strong>Change date:</strong> Exact timestamp</li><li><strong>Changed by:</strong> User who made the change</li><li><strong>Reason:</strong> Optional change reason/notes</li><li><strong>% Change:</strong> Automatic percentage calculation</li></ul><h5>Price history view</h5><p>View complete price timeline:</p><ol><li>Open property detail</li><li>Click 'Price History' tab</li><li>See chronological list of all price changes</li><li>Filter by date range</li><li>Export to CSV for analysis</li></ol><h5>Price trend analysis</h5><p>Use price history for insights:</p><ul><li><strong>Time on market:</strong> How long at each price point</li><li><strong>Price reductions:</strong> Count and magnitude of reductions</li><li><strong>Market position:</strong> Compare initial vs current price</li><li><strong>Performance metrics:</strong> Average days between price changes</li></ul><p>Dashboard widget shows properties with frequent price changes (possible overpricing indication).</p>"
+        },
+        "es": {
+          "text": "<h5>Seguimiento automático de precios</h5><p>Cada cambio de precio se registra automáticamente con:</p><ul><li><strong>Precio anterior:</strong> Valor de precio previo</li><li><strong>Precio nuevo:</strong> Valor de precio actualizado</li><li><strong>Fecha de cambio:</strong> Marca de tiempo exacta</li><li><strong>Cambiado por:</strong> Usuario que hizo el cambio</li><li><strong>Razón:</strong> Razón/notas de cambio opcional</li><li><strong>% Cambio:</strong> Cálculo automático de porcentaje</li></ul><h5>Vista de historial de precios</h5><p>Ve la línea de tiempo completa de precios:</p><ol><li>Abre detalle de propiedad</li><li>Haz clic en pestaña 'Historial de Precios'</li><li>Ve lista cronológica de todos los cambios de precio</li><li>Filtra por rango de fechas</li><li>Exporta a CSV para análisis</li></ol><h5>Análisis de tendencia de precios</h5><p>Usa historial de precios para insights:</p><ul><li><strong>Tiempo en mercado:</strong> Cuánto tiempo en cada punto de precio</li><li><strong>Reducciones de precio:</strong> Conteo y magnitud de reducciones</li><li><strong>Posición de mercado:</strong> Compara precio inicial vs actual</li><li><strong>Métricas de rendimiento:</strong> Promedio de días entre cambios de precio</li></ul><p>El widget de dashboard muestra propiedades con cambios frecuentes de precio (posible indicación de sobrevaloración).</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "status-history",
+      "title": {
+        "nl": "Status change tracking",
+        "en": "Status change tracking",
+        "es": "Seguimiento de cambios de estado"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Property lifecycle tracking</h5><p>Track status transitions door property lifecycle:</p><ul><li><strong>Draft → Active:</strong> When property goes live</li><li><strong>Active → Sold:</strong> Sale completion</li><li><strong>Active → Rented:</strong> Rental agreement signed</li><li><strong>Active → Inactive:</strong> Temporary offline (renovation, owner request)</li><li><strong>Inactive → Active:</strong> Return to market</li></ul><p>Elke status change logged met timestamp, user en optional notes.</p><h5>Status duration metrics</h5><p>Tesoro calculeert automatically:</p><ul><li><strong>Days in each status:</strong> How long property was Active, Inactive, etc.</li><li><strong>Total time on market:</strong> From Active to Sold/Rented</li><li><strong>Average market time:</strong> Compare met similar properties</li><li><strong>Status cycles:</strong> Count van Active → Inactive → Active cycles</li></ul><p>Use deze metrics voor performance analysis en pricing optimization.</p><h5>Status change notifications</h5><p>Configure alerts voor important status changes:</p><ul><li>Property sold → notify team + owner</li><li>Property inactive > 30 days → alert admin</li><li>Property returned to market → notify interested leads</li></ul><p>Settings → Notifications → Status Alerts</p>"
+        },
+        "en": {
+          "text": "<h5>Property lifecycle tracking</h5><p>Track status transitions through property lifecycle:</p><ul><li><strong>Draft → Active:</strong> When property goes live</li><li><strong>Active → Sold:</strong> Sale completion</li><li><strong>Active → Rented:</strong> Rental agreement signed</li><li><strong>Active → Inactive:</strong> Temporary offline (renovation, owner request)</li><li><strong>Inactive → Active:</strong> Return to market</li></ul><p>Each status change logged with timestamp, user and optional notes.</p><h5>Status duration metrics</h5><p>Tesoro calculates automatically:</p><ul><li><strong>Days in each status:</strong> How long property was Active, Inactive, etc.</li><li><strong>Total time on market:</strong> From Active to Sold/Rented</li><li><strong>Average market time:</strong> Compare with similar properties</li><li><strong>Status cycles:</strong> Count of Active → Inactive → Active cycles</li></ul><p>Use these metrics for performance analysis and pricing optimization.</p><h5>Status change notifications</h5><p>Configure alerts for important status changes:</p><ul><li>Property sold → notify team + owner</li><li>Property inactive > 30 days → alert admin</li><li>Property returned to market → notify interested leads</li></ul><p>Settings → Notifications → Status Alerts</p>"
+        },
+        "es": {
+          "text": "<h5>Seguimiento del ciclo de vida de propiedades</h5><p>Rastrea transiciones de estado a través del ciclo de vida de propiedades:</p><ul><li><strong>Borrador → Activa:</strong> Cuando la propiedad se pone en línea</li><li><strong>Activa → Vendida:</strong> Finalización de venta</li><li><strong>Activa → Alquilada:</strong> Acuerdo de alquiler firmado</li><li><strong>Activa → Inactiva:</strong> Temporalmente fuera de línea (renovación, solicitud de propietario)</li><li><strong>Inactiva → Activa:</strong> Regreso al mercado</li></ul><p>Cada cambio de estado se registra con marca de tiempo, usuario y notas opcionales.</p><h5>Métricas de duración de estado</h5><p>Tesoro calcula automáticamente:</p><ul><li><strong>Días en cada estado:</strong> Cuánto tiempo la propiedad estuvo Activa, Inactiva, etc.</li><li><strong>Tiempo total en mercado:</strong> Desde Activa hasta Vendida/Alquilada</li><li><strong>Tiempo promedio de mercado:</strong> Compara con propiedades similares</li><li><strong>Ciclos de estado:</strong> Conteo de ciclos Activa → Inactiva → Activa</li></ul><p>Usa estas métricas para análisis de rendimiento y optimización de precios.</p><h5>Notificaciones de cambio de estado</h5><p>Configura alertas para cambios importantes de estado:</p><ul><li>Propiedad vendida → notificar equipo + propietario</li><li>Propiedad inactiva > 30 días → alerta admin</li><li>Propiedad regresó al mercado → notificar leads interesados</li></ul><p>Configuración → Notificaciones → Alertas de Estado</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "activity-log",
+      "title": {
+        "nl": "Complete activity log",
+        "en": "Complete activity log",
+        "es": "Registro de actividad completo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>What activity log tracks</h5><p>Property 'Activity Log' tab toont ALL actions:</p><ul><li><strong>Property created:</strong> Who created, when</li><li><strong>Field updates:</strong> Any field change (before/after values)</li><li><strong>Media uploads:</strong> Images, documents added</li><li><strong>Portal sync:</strong> Sync events naar Idealista/Fotocasa</li><li><strong>Deal linkage:</strong> Property added to/removed from deals</li><li><strong>Meetings:</strong> Viewings scheduled</li><li><strong>Notes added:</strong> Team notes en comments</li><li><strong>Ownership changes:</strong> Assigned to different agent</li></ul><h5>Activity log filters</h5><p>Filter activity by:</p><ul><li><strong>Activity type:</strong> Only price changes, only status changes, etc.</li><li><strong>User:</strong> Actions by specific team member</li><li><strong>Date range:</strong> Last 7 days, last month, custom range</li><li><strong>Related resource:</strong> Activities linked to specific deal/contact</li></ul><h5>Audit trail export</h5><p>For compliance of owner reporting:</p><ol><li>Open property Activity Log</li><li>Apply filters (optional)</li><li>Click 'Export Activity Log'</li><li>Download PDF report met:<ul><li>Chronological timeline</li><li>User attribution</li><li>Before/after values</li><li>Timestamps</li></ul></li></ol><p>Perfect voor property owner updates of legal compliance.</p>"
+        },
+        "en": {
+          "text": "<h5>What activity log tracks</h5><p>Property 'Activity Log' tab shows ALL actions:</p><ul><li><strong>Property created:</strong> Who created, when</li><li><strong>Field updates:</strong> Any field change (before/after values)</li><li><strong>Media uploads:</strong> Images, documents added</li><li><strong>Portal sync:</strong> Sync events to Idealista/Fotocasa</li><li><strong>Deal linkage:</strong> Property added to/removed from deals</li><li><strong>Meetings:</strong> Viewings scheduled</li><li><strong>Notes added:</strong> Team notes and comments</li><li><strong>Ownership changes:</strong> Assigned to different agent</li></ul><h5>Activity log filters</h5><p>Filter activity by:</p><ul><li><strong>Activity type:</strong> Only price changes, only status changes, etc.</li><li><strong>User:</strong> Actions by specific team member</li><li><strong>Date range:</strong> Last 7 days, last month, custom range</li><li><strong>Related resource:</strong> Activities linked to specific deal/contact</li></ul><h5>Audit trail export</h5><p>For compliance or owner reporting:</p><ol><li>Open property Activity Log</li><li>Apply filters (optional)</li><li>Click 'Export Activity Log'</li><li>Download PDF report with:<ul><li>Chronological timeline</li><li>User attribution</li><li>Before/after values</li><li>Timestamps</li></ul></li></ol><p>Perfect for property owner updates or legal compliance.</p>"
+        },
+        "es": {
+          "text": "<h5>Qué rastrea el registro de actividad</h5><p>La pestaña 'Registro de Actividad' de propiedad muestra TODAS las acciones:</p><ul><li><strong>Propiedad creada:</strong> Quién creó, cuándo</li><li><strong>Actualizaciones de campos:</strong> Cualquier cambio de campo (valores antes/después)</li><li><strong>Subidas de medios:</strong> Imágenes, documentos añadidos</li><li><strong>Sincronización de portales:</strong> Eventos de sincronización a Idealista/Fotocasa</li><li><strong>Vinculación de deals:</strong> Propiedad añadida a/removida de deals</li><li><strong>Reuniones:</strong> Visitas programadas</li><li><strong>Notas añadidas:</strong> Notas del equipo y comentarios</li><li><strong>Cambios de propiedad:</strong> Asignado a diferente agente</li></ul><h5>Filtros de registro de actividad</h5><p>Filtra actividad por:</p><ul><li><strong>Tipo de actividad:</strong> Solo cambios de precio, solo cambios de estado, etc.</li><li><strong>Usuario:</strong> Acciones por miembro específico del equipo</li><li><strong>Rango de fechas:</strong> Últimos 7 días, último mes, rango personalizado</li><li><strong>Recurso relacionado:</strong> Actividades vinculadas a deal/contacto específico</li></ul><h5>Exportación de pista de auditoría</h5><p>Para cumplimiento o informes de propietarios:</p><ol><li>Abre Registro de Actividad de propiedad</li><li>Aplica filtros (opcional)</li><li>Haz clic en 'Exportar Registro de Actividad'</li><li>Descarga informe PDF con:<ul><li>Línea de tiempo cronológica</li><li>Atribución de usuario</li><li>Valores antes/después</li><li>Marcas de tiempo</li></ul></li></ol><p>Perfecto para actualizaciones de propietario o cumplimiento legal.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "history-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor history tracking",
+        "en": "Best practices for history tracking",
+        "es": "Mejores prácticas para seguimiento del historial"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Maximize value van history data:</strong></p><ol><li><strong>Add change reasons:</strong> Always add note bij price/status changes voor future reference.</li><li><strong>Review monthly:</strong> Check price history monthly voor properties > 60 days on market.</li><li><strong>Export voor owners:</strong> Share activity log PDF met property owners quarterly.</li><li><strong>Track patterns:</strong> Analyse which price reduction strategies work best.</li><li><strong>Use voor training:</strong> Review successful property histories to train new agents.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Maximize value of history data:</strong></p><ol><li><strong>Add change reasons:</strong> Always add note for price/status changes for future reference.</li><li><strong>Review monthly:</strong> Check price history monthly for properties > 60 days on market.</li><li><strong>Export for owners:</strong> Share activity log PDF with property owners quarterly.</li><li><strong>Track patterns:</strong> Analyze which price reduction strategies work best.</li><li><strong>Use for training:</strong> Review successful property histories to train new agents.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Maximiza el valor de los datos del historial:</strong></p><ol><li><strong>Añade razones de cambio:</strong> Siempre añade nota para cambios de precio/estado para referencia futura.</li><li><strong>Revisa mensualmente:</strong> Verifica historial de precios mensualmente para propiedades > 60 días en mercado.</li><li><strong>Exporta para propietarios:</strong> Comparte PDF de registro de actividad con propietarios trimestralmente.</li><li><strong>Rastrea patrones:</strong> Analiza qué estrategias de reducción de precio funcionan mejor.</li><li><strong>Usa para entrenamiento:</strong> Revisa historiales de propiedades exitosas para entrenar nuevos agentes.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-pricing-valuation",
+    "property-management-overview",
+    "property-status-workflow",
+    "property-portal-integration"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoelang wordt property history bewaard?",
+        "en": "How long is property history kept?",
+        "es": "¿Cuánto tiempo se conserva el historial de propiedades?"
+      },
+      "answer": {
+        "nl": "Complete property history wordt indefinitely bewaard, zelfs nadat property sold/rented is. Dit is belangrijk voor compliance en voor analysis van past transactions. Je kunt oude histories archiveren maar niet verwijderen. Als property wordt deleted, blijft history 30 dagen beschikbaar voor recovery.",
+        "en": "Complete property history is kept indefinitely, even after property is sold/rented. This is important for compliance and for analysis of past transactions. You can archive old histories but not delete them. If property is deleted, history remains available for 30 days for recovery.",
+        "es": "El historial completo de propiedades se conserva indefinidamente, incluso después de que la propiedad se vende/alquila. Esto es importante para cumplimiento y para análisis de transacciones pasadas. Puedes archivar historiales antiguos pero no eliminarlos. Si la propiedad se elimina, el historial permanece disponible por 30 días para recuperación."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik history exporteren voor alle properties tegelijk?",
+        "en": "Can I export history for all properties at once?",
+        "es": "¿Puedo exportar historial para todas las propiedades a la vez?"
+      },
+      "answer": {
+        "nl": "Ja! Ga naar Properties → Bulk Actions → Export History. Je kunt filter instellen (date range, property type, status) en complete history CSV downloaden voor alle matching properties. Perfect voor portfolio analysis, compliance reporting of year-end reviews. Export bevat: property ID, change type, old/new values, timestamp, user.",
+        "en": "Yes! Go to Properties → Bulk Actions → Export History. You can set filters (date range, property type, status) and download complete history CSV for all matching properties. Perfect for portfolio analysis, compliance reporting or year-end reviews. Export contains: property ID, change type, old/new values, timestamp, user.",
+        "es": "¡Sí! Ve a Propiedades → Acciones en Lote → Exportar Historial. Puedes establecer filtros (rango de fechas, tipo de propiedad, estado) y descargar CSV de historial completo para todas las propiedades matching. Perfecto para análisis de cartera, informes de cumplimiento o revisiones de fin de año. La exportación contiene: ID de propiedad, tipo de cambio, valores antiguo/nuevo, marca de tiempo, usuario."
+      }
+    }
+  ]
+}

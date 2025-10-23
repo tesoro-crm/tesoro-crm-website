@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "dashboard-kpis-overview",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "reports",
+    "difficulty": "beginner",
+    "tags": ["reports", "analytics", "kpis", "metrics", "dashboard"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["dashboard KPIs", "real estate metrics", "performance tracking", "CRM analytics", "key performance indicators", "sales dashboard"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Dashboard KPI's en metrics begrijpen",
+      "en": "Understanding Dashboard KPIs And Metrics",
+      "es": "Comprender los KPIs y métricas del dashboard"
+    },
+    "description": {
+      "nl": "Leer hoe je de belangrijkste prestatie-indicatoren op je dashboard kunt interpreteren om betere zakelijke beslissingen te nemen.",
+      "en": "Learn how to interpret the key performance indicators on your dashboard to make better business decisions.",
+      "es": "Aprende a interpretar los indicadores clave de rendimiento en tu dashboard para tomar mejores decisiones comerciales."
+    },
+    "icon": "analytics"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Het Tesoro CRM dashboard is je commandocentrum voor het monitoren van je vastgoedactiviteiten. Het biedt een realtime overzicht van je belangrijkste prestatie-indicatoren (KPI's) en metrics, zodat je snel zakelijke trends kunt identificeren en datagestuurde beslissingen kunt nemen. Dit artikel helpt je om elk dashboard metric te begrijpen en hoe je ze effectief kunt gebruiken voor je vastgoedbedrijf.",
+        "en": "The Tesoro CRM dashboard is your command center for monitoring your real estate business activities. It provides a real-time overview of your key performance indicators (KPIs) and metrics, allowing you to quickly identify business trends and make data-driven decisions. This article will help you understand each dashboard metric and how to use them effectively for your real estate business.",
+        "es": "El dashboard de Tesoro CRM es tu centro de control para monitorear las actividades de tu negocio inmobiliario. Proporciona una vista en tiempo real de tus indicadores clave de rendimiento (KPIs) y métricas, permitiéndote identificar rápidamente tendencias comerciales y tomar decisiones basadas en datos. Este artículo te ayudará a comprender cada métrica del dashboard y cómo utilizarlas de manera efectiva para tu negocio inmobiliario."
+      }
+    },
+    {
+      "type": "text",
+      "id": "core-kpis",
+      "content": {
+        "nl": "## Kern KPI's op het dashboard\n\nHet Tesoro dashboard toont verschillende categorieën van metrics die verschillende aspecten van je bedrijf volgen:\n\n**Verkoop metrics** meten je omzet en dealactiviteit. Dit omvat totale deals gesloten, gemiddelde dealwaarde, en transactievolume over geselecteerde tijdsperiodes.\n\n**Lead metrics** volgen je acquisitie en conversie funnel. Je ziet nieuwe leads deze maand, lead response tijd, en de totale leads in je pipeline.\n\n**Activiteit metrics** tonen je team's betrokkenheid met klanten. Dit omvat geplande afspraken, voltooide taken, en uitgaande communicatie.\n\n**Pipeline metrics** geven inzicht in je toekomstige omzet. Je ziet deals per fase, totale pipeline waarde, en geschatte sluitdata.\n\n**Prestatie metrics** benchmarken je succes. Dit omvat conversieratio's, tijd tot sluiting, en doelvoortgang.",
+        "en": "## Core KPIs On The Dashboard\n\nThe Tesoro dashboard displays several categories of metrics that track different aspects of your business:\n\n**Sales metrics** measure your revenue and deal activity. This includes total deals closed, average deal value, and transaction volume over selected time periods.\n\n**Lead metrics** track your acquisition and conversion funnel. You'll see new leads this month, lead response time, and total leads in your pipeline.\n\n**Activity metrics** show your team's engagement with clients. This includes scheduled appointments, completed tasks, and outbound communications.\n\n**Pipeline metrics** provide insight into your future revenue. You'll see deals by stage, total pipeline value, and estimated close dates.\n\n**Performance metrics** benchmark your success. This includes conversion rates, time to close, and goal progress.",
+        "es": "## KPIs principales en el dashboard\n\nEl dashboard de Tesoro muestra varias categorías de métricas que rastrean diferentes aspectos de tu negocio:\n\n**Métricas de ventas** miden tus ingresos y actividad de negociación. Esto incluye negocios totales cerrados, valor promedio de negocio y volumen de transacciones durante períodos de tiempo seleccionados.\n\n**Métricas de leads** rastrean tu embudo de adquisición y conversión. Verás nuevos leads este mes, tiempo de respuesta a leads y total de leads en tu pipeline.\n\n**Métricas de actividad** muestran el compromiso de tu equipo con los clientes. Esto incluye citas programadas, tareas completadas y comunicaciones salientes.\n\n**Métricas de pipeline** proporcionan información sobre tus ingresos futuros. Verás negocios por etapa, valor total del pipeline y fechas estimadas de cierre.\n\n**Métricas de rendimiento** comparan tu éxito. Esto incluye tasas de conversión, tiempo hasta el cierre y progreso de objetivos."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "accessing-dashboard",
+      "title": {
+        "nl": "Dashboard KPI's bekijken",
+        "en": "Accessing Dashboard KPIs",
+        "es": "Acceder a los KPIs del dashboard"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Open het dashboard",
+            "en": "Open The Dashboard",
+            "es": "Abrir el dashboard"
+          },
+          "content": {
+            "nl": "Log in op je Tesoro CRM account. Het dashboard is de eerste pagina die je ziet na inloggen, of klik op het 'Dashboard' icoon in de hoofdnavigatie.",
+            "en": "Log in to your Tesoro CRM account. The dashboard is the first page you see after logging in, or click the 'Dashboard' icon in the main navigation.",
+            "es": "Inicia sesión en tu cuenta de Tesoro CRM. El dashboard es la primera página que ves después de iniciar sesión, o haz clic en el icono 'Dashboard' en la navegación principal."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer tijdsperiode",
+            "en": "Select Time Period",
+            "es": "Seleccionar período de tiempo"
+          },
+          "content": {
+            "nl": "Gebruik de datum selector rechtsboven op het dashboard om je gewenste tijdsperiode te kiezen. Standaard opties zijn: Vandaag, Deze Week, Deze Maand, Dit Kwartaal, en Dit Jaar. Je kunt ook een aangepast datumbereik selecteren voor specifieke analyse.",
+            "en": "Use the date selector in the top right of the dashboard to choose your desired time period. Default options include: Today, This Week, This Month, This Quarter, and This Year. You can also select a custom date range for specific analysis.",
+            "es": "Usa el selector de fechas en la parte superior derecha del dashboard para elegir tu período de tiempo deseado. Las opciones predeterminadas incluyen: Hoy, Esta Semana, Este Mes, Este Trimestre y Este Año. También puedes seleccionar un rango de fechas personalizado para análisis específicos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Filter op team of agent",
+            "en": "Filter By Team Or Agent",
+            "es": "Filtrar por equipo o agente"
+          },
+          "content": {
+            "nl": "Als je een teamleider of manager bent, kun je de dashboard weergave filteren om specifieke teamleden of je hele team te zien. Gebruik de team filter dropdown om tussen individuele en team-brede metrics te schakelen.",
+            "en": "If you're a team leader or manager, you can filter the dashboard view to see specific team members or your entire team. Use the team filter dropdown to switch between individual and team-wide metrics.",
+            "es": "Si eres líder de equipo o gerente, puedes filtrar la vista del dashboard para ver miembros específicos del equipo o todo tu equipo. Usa el menú desplegable de filtro de equipo para cambiar entre métricas individuales y de todo el equipo."
+          }
+        },
+        {
+          "title": {
+            "nl": "Analyseer KPI trend grafieken",
+            "en": "Analyze KPI Trend Charts",
+            "es": "Analizar gráficos de tendencias de KPI"
+          },
+          "content": {
+            "nl": "Klik op elk KPI kaartje om een gedetailleerde trend grafiek te zien. Deze grafieken tonen hoe de metric in de loop van de tijd is veranderd, waardoor je patronen en seizoenstrends kunt identificeren. Hover over datapunten voor exacte waarden.",
+            "en": "Click on any KPI card to see a detailed trend chart. These charts show how the metric has changed over time, allowing you to identify patterns and seasonal trends. Hover over data points for exact values.",
+            "es": "Haz clic en cualquier tarjeta de KPI para ver un gráfico de tendencias detallado. Estos gráficos muestran cómo ha cambiado la métrica a lo largo del tiempo, permitiéndote identificar patrones y tendencias estacionales. Pasa el cursor sobre los puntos de datos para ver valores exactos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Export dashboard data",
+            "en": "Export Dashboard Data",
+            "es": "Exportar datos del dashboard"
+          },
+          "content": {
+            "nl": "Gebruik de 'Export' knop rechtsboven om je dashboard data te downloaden als CSV of Excel bestand. Dit is nuttig voor het maken van aangepaste rapporten of presentaties voor stakeholders.",
+            "en": "Use the 'Export' button in the top right to download your dashboard data as a CSV or Excel file. This is useful for creating custom reports or presentations for stakeholders.",
+            "es": "Usa el botón 'Exportar' en la parte superior derecha para descargar tus datos del dashboard como archivo CSV o Excel. Esto es útil para crear informes personalizados o presentaciones para las partes interesadas."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "interpreting-metrics",
+      "content": {
+        "nl": "## Metrics interpreteren voor actie\n\nHet begrijpen van je KPI's is maar de eerste stap. De echte waarde komt van het interpreteren van wat de numbers je vertellen en het nemen van actie:\n\n**Deals gesloten** zou idealiter maand over maand moeten groeien. Als je een daling ziet, kijk dan naar je lead kwaliteit en conversieproces. Een plotselinge piek kan seizoensgebonden zijn of het resultaat van een succesvolle marketingcampagne.\n\n**Gemiddelde deal waarde** helpt je te begrijpen of je hoger waarde properties target. Een stijgende trend duidt op upmarket verschuiving, terwijl een daling kan betekenen dat je meer entry-level properties verkoopt.\n\n**Lead response tijd** is cruciaal in vastgoed. Data toont aan dat het reageren binnen 5 minuten je kans op conversie met 400% verhoogt. Als je gemiddelde boven 15 minuten ligt, implementeer dan lead routing automatisering.\n\n**Conversieratio** (leads naar deals) benchmarkt je verkoop effectiviteit. Een goed conversiepercentage in vastgoed is 2-5%. Onder de 2% betekent lead kwaliteitsproblemen of sales proces hiaten.\n\n**Pipeline waarde** gedeeld door je gemiddelde sluitratio geeft je voorspelde omzet. Als je pipeline waarde dalend is terwijl je doelen stijgen, is het tijd om lead generatie op te schalen.",
+        "en": "## Interpreting Metrics For Action\n\nUnderstanding your KPIs is only the first step. The real value comes from interpreting what the numbers are telling you and taking action:\n\n**Deals closed** should ideally grow month over month. If you see a decline, examine your lead quality and conversion process. A sudden spike may be seasonal or the result of a successful marketing campaign.\n\n**Average deal value** helps you understand if you're targeting higher-value properties. An upward trend indicates upmarket shift, while a decline may mean you're selling more entry-level properties.\n\n**Lead response time** is critical in real estate. Data shows that responding within 5 minutes increases your conversion chance by 400%. If your average is above 15 minutes, implement lead routing automation.\n\n**Conversion rate** (leads to deals) benchmarks your sales effectiveness. A good conversion rate in real estate is 2-5%. Below 2% means lead quality issues or sales process gaps.\n\n**Pipeline value** divided by your average close rate gives you forecasted revenue. If your pipeline value is declining while your targets are rising, it's time to scale up lead generation.",
+        "es": "## Interpretar métricas para la acción\n\nComprender tus KPIs es solo el primer paso. El valor real proviene de interpretar lo que te dicen los números y tomar acción:\n\n**Negocios cerrados** idealmente deberían crecer mes tras mes. Si ves una disminución, examina la calidad de tus leads y el proceso de conversión. Un pico repentino puede ser estacional o el resultado de una campaña de marketing exitosa.\n\n**Valor promedio de negocio** te ayuda a entender si estás apuntando a propiedades de mayor valor. Una tendencia ascendente indica un cambio hacia el mercado superior, mientras que una disminución puede significar que estás vendiendo más propiedades de nivel inicial.\n\n**Tiempo de respuesta a leads** es crítico en bienes raíces. Los datos muestran que responder dentro de 5 minutos aumenta tu probabilidad de conversión en un 400%. Si tu promedio está por encima de 15 minutos, implementa automatización de enrutamiento de leads.\n\n**Tasa de conversión** (leads a negocios) compara la efectividad de tus ventas. Una buena tasa de conversión en bienes raíces es del 2-5%. Por debajo del 2% significa problemas de calidad de leads o brechas en el proceso de ventas.\n\n**Valor del pipeline** dividido por tu tasa promedio de cierre te da ingresos pronosticados. Si el valor de tu pipeline está disminuyendo mientras tus objetivos están aumentando, es hora de escalar la generación de leads."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "comparison-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Vergelijk met vorige periodes",
+        "en": "Compare With Previous Periods",
+        "es": "Comparar con períodos anteriores"
+      },
+      "content": {
+        "nl": "Gebruik de periode vergelijkingsfunctie om je huidige metrics naast vorige maand of hetzelfde kwartaal vorig jaar te plaatsen. Deze context helpt je seizoenspatronen te identificeren en realistische groeiverwachtingen te stellen. Kijk naar percentage verandering in plaats van absolute numbers voor betere inzichten.",
+        "en": "Use the period comparison feature to place your current metrics alongside last month or the same quarter last year. This context helps you identify seasonal patterns and set realistic growth expectations. Look at percentage change rather than absolute numbers for better insights.",
+        "es": "Usa la función de comparación de períodos para colocar tus métricas actuales junto al mes pasado o el mismo trimestre del año pasado. Este contexto te ayuda a identificar patrones estacionales y establecer expectativas de crecimiento realistas. Mira el cambio porcentual en lugar de números absolutos para obtener mejores perspectivas."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "goal-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Vermijd vanity metrics",
+        "en": "Avoid Vanity Metrics",
+        "es": "Evitar métricas de vanidad"
+      },
+      "content": {
+        "nl": "Niet alle KPI's zijn even belangrijk. Focus op metrics die direct correleren met omzet en winstgevendheid. Totale leads is minder waardevol dan gekwalificeerde leads. Website bezoeken zijn minder belangrijk dan geboekte afspraken. Prioriteer metrics die voorspellende waarde hebben voor je business resultaten.",
+        "en": "Not all KPIs are equally important. Focus on metrics that directly correlate with revenue and profitability. Total leads is less valuable than qualified leads. Website visits matter less than booked appointments. Prioritize metrics that have predictive value for your business outcomes.",
+        "es": "No todos los KPIs son igualmente importantes. Concéntrate en métricas que se correlacionen directamente con ingresos y rentabilidad. Los leads totales son menos valiosos que los leads calificados. Las visitas al sitio web importan menos que las citas reservadas. Prioriza métricas que tengan valor predictivo para los resultados de tu negocio."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Hoe vaak worden dashboard metrics bijgewerkt?",
+            "en": "How often are dashboard metrics updated?",
+            "es": "¿Con qué frecuencia se actualizan las métricas del dashboard?"
+          },
+          "answer": {
+            "nl": "De meeste dashboard KPI's worden in realtime bijgewerkt zodra activiteiten plaatsvinden in het systeem. Sommige complexe berekende metrics (zoals conversieratio's over langere periodes) worden elk uur bijgewerkt. Je ziet een timestamp onderaan het dashboard die aangeeft wanneer het laatst is ververst.",
+            "en": "Most dashboard KPIs are updated in real-time as activities occur in the system. Some complex calculated metrics (like conversion rates over extended periods) refresh hourly. You'll see a timestamp at the bottom of the dashboard indicating when it was last refreshed.",
+            "es": "La mayoría de los KPIs del dashboard se actualizan en tiempo real a medida que ocurren actividades en el sistema. Algunas métricas calculadas complejas (como tasas de conversión durante períodos prolongados) se actualizan cada hora. Verás una marca de tiempo en la parte inferior del dashboard que indica cuándo se actualizó por última vez."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik het dashboard layout aanpassen?",
+            "en": "Can I customize the dashboard layout?",
+            "es": "¿Puedo personalizar el diseño del dashboard?"
+          },
+          "answer": {
+            "nl": "Ja, je kunt KPI widgets verslepen om ze te herschikken volgens jouw voorkeur. Klik op het 'Customize' icoon rechtsboven om de edit modus te activeren. Je kunt ook widgets verbergen die niet relevant zijn voor je rol. Je aangepaste layout wordt automatisch opgeslagen voor toekomstige sessies.",
+            "en": "Yes, you can drag and drop KPI widgets to rearrange them according to your preference. Click the 'Customize' icon in the top right to enter edit mode. You can also hide widgets that aren't relevant to your role. Your custom layout is automatically saved for future sessions.",
+            "es": "Sí, puedes arrastrar y soltar widgets de KPI para reorganizarlos según tu preferencia. Haz clic en el icono 'Personalizar' en la parte superior derecha para entrar en modo de edición. También puedes ocultar widgets que no sean relevantes para tu rol. Tu diseño personalizado se guarda automáticamente para futuras sesiones."
+          }
+        },
+        {
+          "question": {
+            "nl": "Waarom komen mijn dashboard numbers niet overeen met mijn export?",
+            "en": "Why don't my dashboard numbers match my export?",
+            "es": "¿Por qué mis números del dashboard no coinciden con mi exportación?"
+          },
+          "answer": {
+            "nl": "Dit gebeurt meestal door een verschil in timezone settings of datumfilters. Zorg ervoor dat je hetzelfde datumbereik en timezone selecteert bij het exporteren als je dashboard view. Let ook op dat sommige exports alle records bevatten terwijl het dashboard gefilterd kan zijn op je toegewezen records. Check je filter instellingen voor consistentie.",
+            "en": "This usually happens due to a difference in timezone settings or date filters. Ensure you're selecting the same date range and timezone when exporting as your dashboard view. Also note that some exports include all records while the dashboard may be filtered to your assigned records. Check your filter settings for consistency.",
+            "es": "Esto generalmente ocurre debido a una diferencia en la configuración de zona horaria o filtros de fecha. Asegúrate de seleccionar el mismo rango de fechas y zona horaria al exportar como tu vista del dashboard. También ten en cuenta que algunas exportaciones incluyen todos los registros mientras que el dashboard puede estar filtrado a tus registros asignados. Verifica tu configuración de filtros para mayor consistencia."
+          }
+        },
+        {
+          "question": {
+            "nl": "Welke KPI's moet ik als makelaar het meest in de gaten houden?",
+            "en": "Which KPIs should I monitor most as a real estate agent?",
+            "es": "¿Qué KPIs debería monitorear más como agente inmobiliario?"
+          },
+          "answer": {
+            "nl": "De top 5 KPI's voor makelaars zijn: (1) Lead response tijd - snelheid is alles in vastgoed, (2) Conversieratio leads naar afspraken - meet je eerste contact effectiviteit, (3) Afspraken naar deals ratio - volgt je sluitingspercentage, (4) Gemiddelde deal waarde - helpt je hoger waarde opportunities te targeten, en (5) Pipeline waarde - voorspelt je toekomstige inkomsten. Monitor deze wekelijks voor beste resultaten.",
+            "en": "The top 5 KPIs for real estate agents are: (1) Lead response time - speed is everything in real estate, (2) Lead to appointment conversion rate - measures your initial contact effectiveness, (3) Appointment to deal ratio - tracks your closing percentage, (4) Average deal value - helps you target higher-value opportunities, and (5) Pipeline value - forecasts your future income. Monitor these weekly for best results.",
+            "es": "Los 5 KPIs principales para agentes inmobiliarios son: (1) Tiempo de respuesta a leads - la velocidad lo es todo en bienes raíces, (2) Tasa de conversión de leads a citas - mide la efectividad de tu contacto inicial, (3) Relación de citas a negocios - rastrea tu porcentaje de cierre, (4) Valor promedio de negocio - te ayuda a apuntar a oportunidades de mayor valor, y (5) Valor del pipeline - pronostica tus ingresos futuros. Monitorea estos semanalmente para obtener mejores resultados."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "dashboard-overview",
+    "deal-reporting-metrics",
+    "conversion-optimization-guide"
+  ]
+}

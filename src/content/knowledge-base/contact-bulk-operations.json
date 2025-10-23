@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "id": "contact-bulk-operations",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:30:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "bulk-operations", "import", "export", "efficiency"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["bulk operations tesoro", "import contacts", "export contacts", "batch edit", "mass update crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Bulk Operaties: Grote Aantallen Contacten Beheren",
+      "en": "Bulk Operations: Managing Large Numbers of Contacts",
+      "es": "Operaciones Masivas: Gestionar Grandes Cantidades de Contactos"
+    },
+    "description": {
+      "nl": "Leer hoe je efficiënt werkt met grote aantallen contacten via import, export en batch bewerkingen.",
+      "en": "Learn how to work efficiently with large numbers of contacts via import, export and batch operations.",
+      "es": "Aprende cómo trabajar eficientemente con grandes cantidades de contactos vía importación, exportación y operaciones en lote."
+    },
+    "icon": "upload_file"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "bulk-operations-overview",
+      "title": {
+        "nl": "Beschikbare Bulk Operaties",
+        "en": "Available Bulk Operations",
+        "es": "Operaciones Masivas Disponibles"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro ondersteunt verschillende bulk operaties om tijd te besparen:</p><h3>Import Operaties</h3><ul><li><strong>CSV Import:</strong> Upload contacten vanuit Excel/CSV</li><li><strong>Field Mapping:</strong> Koppel CSV kolommen aan Tesoro velden</li><li><strong>Duplicate Detection:</strong> Voorkom duplicaten tijdens import</li><li><strong>Validation:</strong> Check data kwaliteit voor import</li></ul><h3>Export Operaties</h3><ul><li><strong>CSV Export:</strong> Download contacten als Excel bestand</li><li><strong>Filtered Export:</strong> Export alleen gefilterde contacten</li><li><strong>Field Selection:</strong> Kies welke velden je wilt exporteren</li><li><strong>Full Export:</strong> Download complete database</li></ul><h3>Batch Edit Operaties</h3><ul><li><strong>Batch Update:</strong> Wijzig meerdere contacten tegelijk</li><li><strong>Batch Delete:</strong> Verwijder meerdere contacten</li><li><strong>Batch Tag:</strong> Voeg tags toe aan selectie</li><li><strong>Batch Status Change:</strong> Wijzig status van meerdere contacten</li><li><strong>Batch Owner Assignment:</strong> Wijs contacten toe aan agent</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro supports various bulk operations to save time:</p><h3>Import Operations</h3><ul><li><strong>CSV Import:</strong> Upload contacts from Excel/CSV</li><li><strong>Field Mapping:</strong> Map CSV columns to Tesoro fields</li><li><strong>Duplicate Detection:</strong> Prevent duplicates during import</li><li><strong>Validation:</strong> Check data quality before import</li></ul><h3>Export Operations</h3><ul><li><strong>CSV Export:</strong> Download contacts as Excel file</li><li><strong>Filtered Export:</strong> Export only filtered contacts</li><li><strong>Field Selection:</strong> Choose which fields to export</li><li><strong>Full Export:</strong> Download complete database</li></ul><h3>Batch Edit Operations</h3><ul><li><strong>Batch Update:</strong> Modify multiple contacts at once</li><li><strong>Batch Delete:</strong> Delete multiple contacts</li><li><strong>Batch Tag:</strong> Add tags to selection</li><li><strong>Batch Status Change:</strong> Change status of multiple contacts</li><li><strong>Batch Owner Assignment:</strong> Assign contacts to agent</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro soporta varias operaciones masivas para ahorrar tiempo:</p><h3>Operaciones de Importación</h3><ul><li><strong>Importación CSV:</strong> Cargar contactos desde Excel/CSV</li><li><strong>Mapeo de Campos:</strong> Mapear columnas CSV a campos de Tesoro</li><li><strong>Detección de Duplicados:</strong> Prevenir duplicados durante la importación</li><li><strong>Validación:</strong> Verificar calidad de datos antes de importar</li></ul><h3>Operaciones de Exportación</h3><ul><li><strong>Exportación CSV:</strong> Descargar contactos como archivo Excel</li><li><strong>Exportación Filtrada:</strong> Exportar solo contactos filtrados</li><li><strong>Selección de Campos:</strong> Elegir qué campos exportar</li><li><strong>Exportación Completa:</strong> Descargar base de datos completa</li></ul><h3>Operaciones de Edición en Lote</h3><ul><li><strong>Actualización en Lote:</strong> Modificar múltiples contactos a la vez</li><li><strong>Eliminación en Lote:</strong> Eliminar múltiples contactos</li><li><strong>Etiquetado en Lote:</strong> Agregar etiquetas a selección</li><li><strong>Cambio de Estado en Lote:</strong> Cambiar estado de múltiples contactos</li><li><strong>Asignación de Propietario en Lote:</strong> Asignar contactos a agente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "importing-contacts",
+      "title": {
+        "nl": "Contacten Importeren vanuit CSV/Excel",
+        "en": "Importing Contacts from CSV/Excel",
+        "es": "Importar Contactos desde CSV/Excel"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Bereid je CSV Bestand Voor",
+            "en": "Step 1: Prepare Your CSV File",
+            "es": "Paso 1: Preparar tu Archivo CSV"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Bestandsformaat:</strong></p><ul><li>CSV (.csv) of Excel (.xlsx, .xls)</li><li>Eerste rij moet kolomnamen bevatten</li><li>UTF-8 encoding aanbevolen voor speciale karakters</li></ul><p><strong>Aanbevolen kolommen:</strong></p><ul><li>first_name (verplicht)</li><li>last_name (verplicht)</li><li>email (verplicht)</li><li>phone</li><li>address</li><li>city</li><li>postal_code</li><li>country</li><li>status</li><li>tags (gescheiden door komma's)</li></ul><p><strong>Download template:</strong></p><p>Klik in Tesoro op <strong>Contacts > Import > Download Template</strong> voor een voorbeeld CSV met correcte kolomnamen.</p>"
+            },
+            "en": {
+              "text": "<p><strong>File format:</strong></p><ul><li>CSV (.csv) or Excel (.xlsx, .xls)</li><li>First row must contain column names</li><li>UTF-8 encoding recommended for special characters</li></ul><p><strong>Recommended columns:</strong></p><ul><li>first_name (required)</li><li>last_name (required)</li><li>email (required)</li><li>phone</li><li>address</li><li>city</li><li>postal_code</li><li>country</li><li>status</li><li>tags (separated by commas)</li></ul><p><strong>Download template:</strong></p><p>Click in Tesoro on <strong>Contacts > Import > Download Template</strong> for a sample CSV with correct column names.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Formato de archivo:</strong></p><ul><li>CSV (.csv) o Excel (.xlsx, .xls)</li><li>La primera fila debe contener nombres de columnas</li><li>Se recomienda codificación UTF-8 para caracteres especiales</li></ul><p><strong>Columnas recomendadas:</strong></p><ul><li>first_name (requerido)</li><li>last_name (requerido)</li><li>email (requerido)</li><li>phone</li><li>address</li><li>city</li><li>postal_code</li><li>country</li><li>status</li><li>tags (separados por comas)</li></ul><p><strong>Descargar plantilla:</strong></p><p>Haz clic en Tesoro en <strong>Contacts > Import > Download Template</strong> para un CSV de muestra con nombres de columna correctos.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Upload je Bestand",
+            "en": "Step 2: Upload Your File",
+            "es": "Paso 2: Cargar tu Archivo"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Ga naar <strong>Contacts > Import</strong></li><li>Klik <strong>Choose File</strong></li><li>Selecteer je CSV/Excel bestand</li><li>Klik <strong>Upload</strong></li></ol><p>Tesoro analyseert je bestand en toont een preview van de eerste 10 rijen.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Go to <strong>Contacts > Import</strong></li><li>Click <strong>Choose File</strong></li><li>Select your CSV/Excel file</li><li>Click <strong>Upload</strong></li></ol><p>Tesoro analyzes your file and shows a preview of the first 10 rows.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Ve a <strong>Contacts > Import</strong></li><li>Haz clic en <strong>Choose File</strong></li><li>Selecciona tu archivo CSV/Excel</li><li>Haz clic en <strong>Upload</strong></li></ol><p>Tesoro analiza tu archivo y muestra una vista previa de las primeras 10 filas.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Velden Koppelen (Field Mapping)",
+            "en": "Step 3: Map Fields (Field Mapping)",
+            "es": "Paso 3: Mapear Campos (Mapeo de Campos)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Koppel elke CSV kolom aan een Tesoro veld:</p><ul><li>Tesoro herkent automatisch standaard veldnamen</li><li>Controleer of de mapping correct is</li><li>Wijzig indien nodig (dropdown per kolom)</li><li>Negeer kolommen die je niet wilt importeren ('Skip column')</li></ul><p><strong>Voorbeeld mapping:</strong></p><ul><li>CSV 'Voornaam' → Tesoro 'First name'</li><li>CSV 'Achternaam' → Tesoro 'Last name'</li><li>CSV 'E-mail' → Tesoro 'Email'</li><li>CSV 'Telefoon' → Tesoro 'Phone'</li></ul>"
+            },
+            "en": {
+              "text": "<p>Map each CSV column to a Tesoro field:</p><ul><li>Tesoro automatically recognizes standard field names</li><li>Check if the mapping is correct</li><li>Change if necessary (dropdown per column)</li><li>Ignore columns you don't want to import ('Skip column')</li></ul><p><strong>Example mapping:</strong></p><ul><li>CSV 'Voornaam' → Tesoro 'First name'</li><li>CSV 'Achternaam' → Tesoro 'Last name'</li><li>CSV 'E-mail' → Tesoro 'Email'</li><li>CSV 'Telefoon' → Tesoro 'Phone'</li></ul>"
+            },
+            "es": {
+              "text": "<p>Mapea cada columna CSV a un campo de Tesoro:</p><ul><li>Tesoro reconoce automáticamente nombres de campos estándar</li><li>Verifica si el mapeo es correcto</li><li>Cambia si es necesario (menú desplegable por columna)</li><li>Ignora columnas que no quieres importar ('Skip column')</li></ul><p><strong>Ejemplo de mapeo:</strong></p><ul><li>CSV 'Voornaam' → Tesoro 'First name'</li><li>CSV 'Achternaam' → Tesoro 'Last name'</li><li>CSV 'E-mail' → Tesoro 'Email'</li><li>CSV 'Telefoon' → Tesoro 'Phone'</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Duplicaten Beheer",
+            "en": "Step 4: Manage Duplicates",
+            "es": "Paso 4: Gestionar Duplicados"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Kies hoe duplicaten moeten worden behandeld:</p><ul><li><strong>Skip duplicates:</strong> Sla contacten over die al bestaan (aanbevolen)</li><li><strong>Update existing:</strong> Overschrijf bestaande contacten met nieuwe data</li><li><strong>Create new:</strong> Maak altijd nieuwe contacten aan (kan duplicaten creëren)</li></ul><p><strong>Duplicate detection op basis van:</strong></p><ul><li>Email adres (primair)</li><li>Volledige naam + telefoon</li><li>Custom identifier (indien aanwezig)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Choose how to handle duplicates:</p><ul><li><strong>Skip duplicates:</strong> Skip contacts that already exist (recommended)</li><li><strong>Update existing:</strong> Overwrite existing contacts with new data</li><li><strong>Create new:</strong> Always create new contacts (may create duplicates)</li></ul><p><strong>Duplicate detection based on:</strong></p><ul><li>Email address (primary)</li><li>Full name + phone</li><li>Custom identifier (if present)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Elige cómo manejar duplicados:</p><ul><li><strong>Omitir duplicados:</strong> Omitir contactos que ya existen (recomendado)</li><li><strong>Actualizar existentes:</strong> Sobrescribir contactos existentes con nuevos datos</li><li><strong>Crear nuevos:</strong> Siempre crear nuevos contactos (puede crear duplicados)</li></ul><p><strong>Detección de duplicados basada en:</strong></p><ul><li>Dirección de email (primario)</li><li>Nombre completo + teléfono</li><li>Identificador personalizado (si está presente)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Start Import",
+            "en": "Step 5: Start Import",
+            "es": "Paso 5: Iniciar Importación"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Controleer de preview één laatste keer</li><li>Klik <strong>Start Import</strong></li><li>Tesoro valideert en importeert je contacten</li><li>Je ziet een progress bar tijdens import</li></ol><p><strong>Na de import:</strong></p><ul><li>Rapport toont aantal geïmporteerde contacten</li><li>Lijst van fouten/warnings (indien aanwezig)</li><li>Optie om foutieve rijen te downloaden en opnieuw te proberen</li></ul><p><strong>Tip:</strong> Voor grote imports (>1000 contacten), verdeel het bestand in kleinere batches voor betere controle.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Check the preview one last time</li><li>Click <strong>Start Import</strong></li><li>Tesoro validates and imports your contacts</li><li>You see a progress bar during import</li></ol><p><strong>After import:</strong></p><ul><li>Report shows number of imported contacts</li><li>List of errors/warnings (if present)</li><li>Option to download failed rows and try again</li></ul><p><strong>Tip:</strong> For large imports (>1000 contacts), split the file into smaller batches for better control.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Verifica la vista previa una última vez</li><li>Haz clic en <strong>Start Import</strong></li><li>Tesoro valida e importa tus contactos</li><li>Ves una barra de progreso durante la importación</li></ol><p><strong>Después de la importación:</strong></p><ul><li>El informe muestra el número de contactos importados</li><li>Lista de errores/advertencias (si está presente)</li><li>Opción para descargar filas fallidas e intentar nuevamente</li></ul><p><strong>Tip:</strong> Para importaciones grandes (>1000 contactos), divide el archivo en lotes más pequeños para mejor control.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "exporting-contacts",
+      "title": {
+        "nl": "Contacten Exporteren",
+        "en": "Exporting Contacts",
+        "es": "Exportar Contactos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Complete Database Export</h3><ol><li>Ga naar <strong>Contacts</strong></li><li>Klik <strong>Export</strong> (download icoon rechtsboven)</li><li>Kies <strong>All Contacts</strong> of <strong>Filtered Contacts</strong></li><li>Selecteer velden die je wilt exporteren</li><li>Klik <strong>Download CSV</strong></li></ol><h3>Filtered Export</h3><p>Exporteer alleen specifieke contacten:</p><ol><li>Stel filters in (bijv. Status = Active, City = Amsterdam)</li><li>Klik <strong>Export</strong></li><li>Kies <strong>Filtered Contacts</strong> (aantal contacten wordt getoond)</li><li>Download</li></ol><p>Perfect voor:</p><ul><li>Marketing campagnes (export nieuwsbrief subscribers)</li><li>Rapportage (export VIP clients voor management)</li><li>Data backup (export complete database)</li><li>Integraties (export voor externe systemen)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Complete Database Export</h3><ol><li>Go to <strong>Contacts</strong></li><li>Click <strong>Export</strong> (download icon top right)</li><li>Choose <strong>All Contacts</strong> or <strong>Filtered Contacts</strong></li><li>Select fields you want to export</li><li>Click <strong>Download CSV</strong></li></ol><h3>Filtered Export</h3><p>Export only specific contacts:</p><ol><li>Set up filters (e.g., Status = Active, City = Amsterdam)</li><li>Click <strong>Export</strong></li><li>Choose <strong>Filtered Contacts</strong> (number of contacts is shown)</li><li>Download</li></ol><p>Perfect for:</p><ul><li>Marketing campaigns (export newsletter subscribers)</li><li>Reporting (export VIP clients for management)</li><li>Data backup (export complete database)</li><li>Integrations (export for external systems)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Exportación Completa de Base de Datos</h3><ol><li>Ve a <strong>Contacts</strong></li><li>Haz clic en <strong>Export</strong> (icono de descarga arriba a la derecha)</li><li>Elige <strong>All Contacts</strong> o <strong>Filtered Contacts</strong></li><li>Selecciona campos que quieres exportar</li><li>Haz clic en <strong>Download CSV</strong></li></ol><h3>Exportación Filtrada</h3><p>Exporta solo contactos específicos:</p><ol><li>Configura filtros (ej., Estado = Active, Ciudad = Amsterdam)</li><li>Haz clic en <strong>Export</strong></li><li>Elige <strong>Filtered Contacts</strong> (se muestra el número de contactos)</li><li>Descargar</li></ol><p>Perfecto para:</p><ul><li>Campañas de marketing (exportar suscriptores de newsletter)</li><li>Reportes (exportar clientes VIP para gestión)</li><li>Respaldo de datos (exportar base de datos completa)</li><li>Integraciones (exportar para sistemas externos)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best Practices voor Bulk Operaties",
+        "en": "Best Practices for Bulk Operations",
+        "es": "Mejores Prácticas para Operaciones Masivas"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Test eerst met kleine batch:</strong> Importeer eerst 10 contacten om mapping te testen</li><li><strong>Maak een backup:</strong> Export je huidige database voor je grote import doet</li><li><strong>Valideer je data:</strong> Check op lege velden, ongeldige emails, duplicaten</li><li><strong>Gebruik consistente formatting:</strong> Zelfde format voor telefoon, data, etc.</li><li><strong>Plan import timing:</strong> Doe grote imports buiten piektijden</li><li><strong>Communiceer met team:</strong> Waarschuw teamleden bij grote wijzigingen</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Test first with small batch:</strong> Import 10 contacts first to test mapping</li><li><strong>Make a backup:</strong> Export your current database before doing large import</li><li><strong>Validate your data:</strong> Check for empty fields, invalid emails, duplicates</li><li><strong>Use consistent formatting:</strong> Same format for phone, dates, etc.</li><li><strong>Plan import timing:</strong> Do large imports outside peak hours</li><li><strong>Communicate with team:</strong> Warn team members of major changes</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Prueba primero con lote pequeño:</strong> Importa 10 contactos primero para probar mapeo</li><li><strong>Haz un respaldo:</strong> Exporta tu base de datos actual antes de hacer importación grande</li><li><strong>Valida tus datos:</strong> Verifica campos vacíos, emails inválidos, duplicados</li><li><strong>Usa formato consistente:</strong> Mismo formato para teléfono, fechas, etc.</li><li><strong>Planifica el momento de importación:</strong> Haz importaciones grandes fuera de horas pico</li><li><strong>Comunica con el equipo:</strong> Advierte a los miembros del equipo sobre cambios importantes</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "creating-contacts-step-by-step",
+    "contact-merge-duplicates",
+    "contact-advanced-search"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het maximale aantal contacten dat ik kan importeren?",
+        "en": "What's the maximum number of contacts I can import?",
+        "es": "¿Cuál es el número máximo de contactos que puedo importar?"
+      },
+      "answer": {
+        "nl": "Er is geen hard limiet, maar we raden aan om batches van max 5000 contacten per keer te gebruiken voor optimale performance. Voor grotere imports, verdeel je bestand in meerdere batches.",
+        "en": "There's no hard limit, but we recommend using batches of max 5000 contacts at a time for optimal performance. For larger imports, split your file into multiple batches.",
+        "es": "No hay un límite estricto, pero recomendamos usar lotes de máximo 5000 contactos a la vez para rendimiento óptimo. Para importaciones más grandes, divide tu archivo en múltiples lotes."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een import ongedaan maken?",
+        "en": "Can I undo an import?",
+        "es": "¿Puedo deshacer una importación?"
+      },
+      "answer": {
+        "nl": "Ja, direct na een import kun je op 'Undo Import' klikken om alle geïmporteerde contacten te verwijderen. Deze optie is 24 uur beschikbaar. Daarom is het belangrijk om eerst te testen met een kleine batch.",
+        "en": "Yes, immediately after an import you can click 'Undo Import' to remove all imported contacts. This option is available for 24 hours. That's why it's important to test first with a small batch.",
+        "es": "Sí, inmediatamente después de una importación puedes hacer clic en 'Undo Import' para eliminar todos los contactos importados. Esta opción está disponible durante 24 horas. Por eso es importante probar primero con un lote pequeño."
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "id": "google-calendar-sync-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["calendar", "google-calendar", "integration", "sync", "automation"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
+    "keywords": ["google calendar sync", "tesoro google integration", "calendar sync real estate", "crm calendar integration", "google workspace tesoro"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Google Agenda synchronisatie instellen",
+      "en": "Setting Up Google Calendar Sync",
+      "es": "Configurar la sincronización de Google Calendar"
+    },
+    "description": {
+      "nl": "Synchroniseer je Tesoro kalender met Google Agenda voor naadloze planning op al je apparaten en een uniforme agenda ervaring.",
+      "en": "Sync your Tesoro calendar with Google Calendar for seamless scheduling across all your devices and a unified calendar experience.",
+      "es": "Sincroniza tu calendario de Tesoro con Google Calendar para una programación fluida en todos tus dispositivos y una experiencia de calendario unificada."
+    },
+    "icon": "sync"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Google Agenda integratie is een van de meest populaire functies van Tesoro, waarmee vastgoedprofessionals al hun afspraken op één plek kunnen beheren. Met bidirectionele synchronisatie verschijnen evenementen die zijn gemaakt in Tesoro automatisch in Google Agenda, en evenementen die zijn gemaakt in Google Agenda worden weergegeven in Tesoro. Deze gids leidt je door het verbindingsproces en helpt je je synchronisatie-instellingen te optimaliseren.",
+        "en": "Google Calendar integration is one of Tesoro's most popular features, allowing real estate professionals to manage all their appointments in one place. With bidirectional sync, events created in Tesoro automatically appear in Google Calendar, and events created in Google Calendar show up in Tesoro. This guide will walk you through the connection process and help you optimize your sync settings.",
+        "es": "La integración con Google Calendar es una de las características más populares de Tesoro, permitiendo a los profesionales inmobiliarios gestionar todas sus citas en un solo lugar. Con sincronización bidireccional, los eventos creados en Tesoro aparecen automáticamente en Google Calendar, y los eventos creados en Google Calendar se muestran en Tesoro. Esta guía te guiará a través del proceso de conexión y te ayudará a optimizar tu configuración de sincronización."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "requirements",
+      "variant": "info",
+      "title": {
+        "nl": "Vereisten",
+        "en": "Requirements",
+        "es": "Requisitos"
+      },
+      "content": {
+        "nl": "Je hebt een Google-account nodig om deze integratie te gebruiken. Zowel persoonlijke Gmail-accounts als Google Workspace (voorheen G Suite) accounts worden ondersteund. Zorg ervoor dat je admin-toegang hebt tot je Google Agenda voordat je begint.",
+        "en": "You'll need a Google account to use this integration. Both personal Gmail accounts and Google Workspace (formerly G Suite) accounts are supported. Make sure you have admin access to your Google Calendar before starting.",
+        "es": "Necesitarás una cuenta de Google para usar esta integración. Se admiten tanto cuentas de Gmail personales como cuentas de Google Workspace (anteriormente G Suite). Asegúrate de tener acceso de administrador a tu Google Calendar antes de comenzar."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "initial-setup",
+      "title": {
+        "nl": "Eerste configuratie",
+        "en": "Initial Setup",
+        "es": "Configuración inicial"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar integraties",
+            "en": "Navigate to Integrations",
+            "es": "Navegar a integraciones"
+          },
+          "description": {
+            "nl": "Klik in Tesoro op het tandwielpictogram rechtsboven en selecteer 'Instellingen'. Kies in de linker zijbalk 'Integraties' en zoek naar 'Google Agenda' in de lijst met beschikbare integraties.",
+            "en": "In Tesoro, click the gear icon in the top right and select 'Settings'. In the left sidebar, choose 'Integrations' and look for 'Google Calendar' in the list of available integrations.",
+            "es": "En Tesoro, haz clic en el icono de engranaje en la parte superior derecha y selecciona 'Configuración'. En la barra lateral izquierda, elige 'Integraciones' y busca 'Google Calendar' en la lista de integraciones disponibles."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verbind je Google-account",
+            "en": "Connect Your Google Account",
+            "es": "Conectar tu cuenta de Google"
+          },
+          "description": {
+            "nl": "Klik op de knop 'Verbind met Google'. Je wordt doorgestuurd naar een Google-autorisatiescherm. Log in met je Google-account als je nog niet bent ingelogd. Google zal vragen om toestemming voor Tesoro om je kalender te lezen en te schrijven.",
+            "en": "Click the 'Connect to Google' button. You'll be redirected to a Google authorization screen. Sign in with your Google account if you're not already logged in. Google will ask for permission for Tesoro to read and write to your calendar.",
+            "es": "Haz clic en el botón 'Conectar con Google'. Serás redirigido a una pantalla de autorización de Google. Inicia sesión con tu cuenta de Google si aún no lo has hecho. Google pedirá permiso para que Tesoro lea y escriba en tu calendario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Machtigingen verlenen",
+            "en": "Grant Permissions",
+            "es": "Conceder permisos"
+          },
+          "description": {
+            "nl": "Controleer de gevraagde machtigingen. Tesoro heeft toegang nodig tot: kalender evenementen bekijken en bewerken, en kalenderdetails bekijken. Deze machtigingen zijn noodzakelijk voor bidirectionele synchronisatie. Klik op 'Toestaan' om door te gaan.",
+            "en": "Review the requested permissions. Tesoro needs access to: view and edit calendar events, and view calendar details. These permissions are necessary for bidirectional sync. Click 'Allow' to proceed.",
+            "es": "Revisa los permisos solicitados. Tesoro necesita acceso a: ver y editar eventos de calendario, y ver detalles del calendario. Estos permisos son necesarios para la sincronización bidireccional. Haz clic en 'Permitir' para continuar."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer kalenders om te synchroniseren",
+            "en": "Select Calendars to Sync",
+            "es": "Seleccionar calendarios para sincronizar"
+          },
+          "description": {
+            "nl": "Nadat je verbinding is gemaakt, zie je een lijst van al je Google Agendas. Selecteer welke kalenders je wilt synchroniseren met Tesoro. De meeste gebruikers synchroniseren hun primaire kalender en eventueel een werk- of teamkalender. Je kunt deze selectie later altijd wijzigen.",
+            "en": "After connecting, you'll see a list of all your Google Calendars. Select which calendars you want to sync with Tesoro. Most users sync their primary calendar and perhaps a work or team calendar. You can always change this selection later.",
+            "es": "Después de conectarte, verás una lista de todos tus Calendarios de Google. Selecciona qué calendarios quieres sincronizar con Tesoro. La mayoría de los usuarios sincronizan su calendario principal y quizás un calendario de trabajo o equipo. Siempre puedes cambiar esta selección más tarde."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies synchronisatie richting",
+            "en": "Choose Sync Direction",
+            "es": "Elegir dirección de sincronización"
+          },
+          "description": {
+            "nl": "Voor elke kalender, kies de synchronisatie richting: Bidirectioneel (aanbevolen) - Wijzigingen synchroniseren in beide richtingen. Van Tesoro naar Google - Alleen Tesoro evenementen exporteren naar Google. Van Google naar Tesoro - Alleen Google evenementen importeren naar Tesoro. Voor de meeste gebruikers is bidirectioneel de beste optie.",
+            "en": "For each calendar, choose the sync direction: Bidirectional (recommended) - Changes sync in both directions. Tesoro to Google - Only export Tesoro events to Google. Google to Tesoro - Only import Google events to Tesoro. For most users, bidirectional is the best choice.",
+            "es": "Para cada calendario, elige la dirección de sincronización: Bidireccional (recomendado) - Los cambios se sincronizan en ambas direcciones. De Tesoro a Google - Solo exportar eventos de Tesoro a Google. De Google a Tesoro - Solo importar eventos de Google a Tesoro. Para la mayoría de los usuarios, bidireccional es la mejor opción."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer eerste synchronisatie",
+            "en": "Configure Initial Sync",
+            "es": "Configurar sincronización inicial"
+          },
+          "description": {
+            "nl": "Beslis welke historische evenementen je wilt synchroniseren. Opties zijn: Geen eerdere evenementen (alleen toekomstig), Afgelopen 30 dagen, Afgelopen 90 dagen, of Alle evenementen. Voor nieuwe gebruikers wordt 'Alleen toekomstig' aanbevolen om duplicaten te voorkomen.",
+            "en": "Decide which historical events to sync. Options are: No past events (future only), Past 30 days, Past 90 days, or All events. For new users, 'Future only' is recommended to avoid duplicates.",
+            "es": "Decide qué eventos históricos sincronizar. Las opciones son: Sin eventos pasados (solo futuros), Últimos 30 días, Últimos 90 días, o Todos los eventos. Para nuevos usuarios, se recomienda 'Solo futuros' para evitar duplicados."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "sync-time",
+      "variant": "info",
+      "title": {
+        "nl": "Synchronisatie tijd",
+        "en": "Sync Time",
+        "es": "Tiempo de sincronización"
+      },
+      "content": {
+        "nl": "De eerste synchronisatie kan 5-15 minuten duren, afhankelijk van hoeveel evenementen je hebt. Na de eerste synchronisatie gebeuren updates bijna direct (binnen 1-2 minuten). Je hoeft niet te wachten tot de eerste synchronisatie is voltooid - je kunt Tesoro blijven gebruiken.",
+        "en": "The initial sync may take 5-15 minutes depending on how many events you have. After the initial sync, updates happen almost instantly (within 1-2 minutes). You don't need to wait for the initial sync to complete - you can continue using Tesoro.",
+        "es": "La sincronización inicial puede tardar 5-15 minutos dependiendo de cuántos eventos tengas. Después de la sincronización inicial, las actualizaciones ocurren casi al instante (dentro de 1-2 minutos). No necesitas esperar a que se complete la sincronización inicial - puedes seguir usando Tesoro."
+      }
+    },
+    {
+      "type": "text",
+      "id": "sync-settings",
+      "title": {
+        "nl": "Geavanceerde synchronisatie-instellingen",
+        "en": "Advanced Sync Settings",
+        "es": "Configuración avanzada de sincronización"
+      },
+      "content": {
+        "nl": "Tesoro biedt verschillende geavanceerde opties om je synchronisatie-ervaring aan te passen aan je workflow. Deze instellingen helpen je conflicten te voorkomen en zorgen ervoor dat je evenementen correct verschijnen in beide systemen.",
+        "en": "Tesoro offers several advanced options to customize your sync experience to match your workflow. These settings help you prevent conflicts and ensure your events appear correctly in both systems.",
+        "es": "Tesoro ofrece varias opciones avanzadas para personalizar tu experiencia de sincronización según tu flujo de trabajo. Estas configuraciones te ayudan a prevenir conflictos y aseguran que tus eventos aparezcan correctamente en ambos sistemas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "advanced-settings",
+      "title": {
+        "nl": "Geavanceerde opties configureren",
+        "en": "Configure Advanced Options",
+        "es": "Configurar opciones avanzadas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Evenementtype mapping",
+            "en": "Event Type Mapping",
+            "es": "Mapeo de tipo de evento"
+          },
+          "description": {
+            "nl": "Bepaal hoe Tesoro evenementtypen verschijnen in Google Agenda. Je kunt kiezen om bezichtigingen een specifieke kleur te geven, vergaderingen als 'Bezet' te markeren, en blokkeertijd als 'Niet beschikbaar' weer te geven. Deze visuele hints helpen je je agenda in één oogopslag te begrijpen.",
+            "en": "Determine how Tesoro event types appear in Google Calendar. You can choose to give viewings a specific color, mark meetings as 'Busy', and show blocked time as 'Out of Office'. These visual cues help you understand your schedule at a glance.",
+            "es": "Determina cómo aparecen los tipos de eventos de Tesoro en Google Calendar. Puedes elegir dar a las visitas un color específico, marcar las reuniones como 'Ocupado', y mostrar el tiempo bloqueado como 'Fuera de la oficina'. Estas señales visuales te ayudan a entender tu agenda de un vistazo."
+          }
+        },
+        {
+          "title": {
+            "nl": "Herinneringsvoorkeuren",
+            "en": "Reminder Preferences",
+            "es": "Preferencias de recordatorio"
+          },
+          "description": {
+            "nl": "Kies of Tesoro-herinneringen synchroniseren met Google Agenda. Je kunt ervoor kiezen om beide systemen onafhankelijke herinneringen te laten verzenden, of alleen Tesoro-herinneringen te gebruiken (aanbevolen om dubbele notificaties te voorkomen).",
+            "en": "Choose whether Tesoro reminders sync to Google Calendar. You can opt to have both systems send independent reminders, or use only Tesoro reminders (recommended to avoid duplicate notifications).",
+            "es": "Elige si los recordatorios de Tesoro se sincronizan con Google Calendar. Puedes optar por que ambos sistemas envíen recordatorios independientes, o usar solo recordatorios de Tesoro (recomendado para evitar notificaciones duplicadas)."
+          }
+        },
+        {
+          "title": {
+            "nl": "Contact en pand informatie",
+            "en": "Contact and Property Information",
+            "es": "Información de contacto y propiedad"
+          },
+          "description": {
+            "nl": "Configureer hoeveel details Tesoro toevoegt aan Google Agenda evenementen. Je kunt kiezen om contactnamen, pand adressen en dealdetails toe te voegen aan de evenementbeschrijving. Let op: deze informatie zal zichtbaar zijn voor iedereen met wie je je Google Agenda deelt.",
+            "en": "Configure how much detail Tesoro adds to Google Calendar events. You can choose to include contact names, property addresses, and deal details in the event description. Note: this information will be visible to anyone you share your Google Calendar with.",
+            "es": "Configura cuánto detalle agrega Tesoro a los eventos de Google Calendar. Puedes elegir incluir nombres de contactos, direcciones de propiedades y detalles del negocio en la descripción del evento. Nota: esta información será visible para cualquiera con quien compartas tu Google Calendar."
+          }
+        },
+        {
+          "title": {
+            "nl": "Conflict resolutie",
+            "en": "Conflict Resolution",
+            "es": "Resolución de conflictos"
+          },
+          "description": {
+            "nl": "Stel in hoe Tesoro moet omgaan met conflicten wanneer hetzelfde evenement in beide systemen is gewijzigd. Opties: Tesoro wint altijd, Google wint altijd, of Meest recente wijziging wint (aanbevolen). Dit voorkomt dat wijzigingen onverwacht worden overschreven.",
+            "en": "Set how Tesoro should handle conflicts when the same event has been modified in both systems. Options: Tesoro always wins, Google always wins, or Most recent change wins (recommended). This prevents changes from being unexpectedly overwritten.",
+            "es": "Establece cómo debe manejar Tesoro los conflictos cuando el mismo evento ha sido modificado en ambos sistemas. Opciones: Tesoro siempre gana, Google siempre gana, o El cambio más reciente gana (recomendado). Esto evita que los cambios sean sobrescritos inesperadamente."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "privacy-tip",
+      "variant": "warning",
+      "title": {
+        "nl": "Privacy overweging",
+        "en": "Privacy Consideration",
+        "es": "Consideración de privacidad"
+      },
+      "content": {
+        "nl": "Als je je Google Agenda deelt met familie of vrienden, overweeg dan om een aparte werk-agenda te maken voor Tesoro synchronisatie. Dit houdt klantinformatie privé terwijl je je persoonlijke schema kunt blijven delen. Je kunt meerdere Google Agendas hebben die elk op verschillende manieren synchroniseren.",
+        "en": "If you share your Google Calendar with family or friends, consider creating a separate work calendar for Tesoro sync. This keeps client information private while allowing you to continue sharing your personal schedule. You can have multiple Google Calendars that each sync differently.",
+        "es": "Si compartes tu Google Calendar con familia o amigos, considera crear un calendario de trabajo separado para la sincronización de Tesoro. Esto mantiene la información del cliente privada mientras te permite continuar compartiendo tu agenda personal. Puedes tener múltiples Calendarios de Google que cada uno sincronice de manera diferente."
+      }
+    },
+    {
+      "type": "text",
+      "id": "managing-sync",
+      "title": {
+        "nl": "Synchronisatie beheren",
+        "en": "Managing Your Sync",
+        "es": "Gestionar tu sincronización"
+      },
+      "content": {
+        "nl": "Nadat je synchronisatie is ingesteld, moet je die af en toe beheren. Hier zijn veelvoorkomende beheertaken en hoe je ze uitvoert.",
+        "en": "Once your sync is set up, you'll need to manage it occasionally. Here are common management tasks and how to perform them.",
+        "es": "Una vez configurada tu sincronización, necesitarás gestionarla ocasionalmente. Aquí hay tareas de gestión comunes y cómo realizarlas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "management-tasks",
+      "title": {
+        "nl": "Beheertaken",
+        "en": "Management Tasks",
+        "es": "Tareas de gestión"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Synchronisatiestatus controleren",
+            "en": "Check Sync Status",
+            "es": "Verificar estado de sincronización"
+          },
+          "description": {
+            "nl": "Ga naar Instellingen > Integraties > Google Agenda om de status van je synchronisatie te bekijken. Je ziet de laatste synchronisatietijd, eventuele fouten en het aantal gesynchroniseerde evenementen. Een groen vinkje betekent dat alles correct werkt.",
+            "en": "Go to Settings > Integrations > Google Calendar to view your sync status. You'll see the last sync time, any errors, and the count of synced events. A green checkmark means everything is working properly.",
+            "es": "Ve a Configuración > Integraciones > Google Calendar para ver el estado de tu sincronización. Verás la hora de la última sincronización, cualquier error y el recuento de eventos sincronizados. Una marca de verificación verde significa que todo funciona correctamente."
+          }
+        },
+        {
+          "title": {
+            "nl": "Synchronisatie handmatig forceren",
+            "en": "Manually Force Sync",
+            "es": "Forzar sincronización manualmente"
+          },
+          "description": {
+            "nl": "Hoewel synchronisatie automatisch gebeurt, kun je een handmatige synchronisatie forceren door op de 'Nu synchroniseren' knop te klikken op de Google Agenda integratiepagina. Dit is handig als je denkt dat een evenement niet correct is gesynchroniseerd.",
+            "en": "While sync happens automatically, you can force a manual sync by clicking the 'Sync Now' button on the Google Calendar integration page. This is useful if you suspect an event didn't sync properly.",
+            "es": "Aunque la sincronización ocurre automáticamente, puedes forzar una sincronización manual haciendo clic en el botón 'Sincronizar ahora' en la página de integración de Google Calendar. Esto es útil si sospechas que un evento no se sincronizó correctamente."
+          }
+        },
+        {
+          "title": {
+            "nl": "Extra kalenders toevoegen",
+            "en": "Add Additional Calendars",
+            "es": "Agregar calendarios adicionales"
+          },
+          "description": {
+            "nl": "Om meer Google Agendas toe te voegen aan je synchronisatie, ga je naar de integratiepagina en klik je op 'Kalenders beheren'. Selecteer extra kalenders uit de lijst en kies hun synchronisatie-instellingen. Wijzigingen worden onmiddellijk van kracht.",
+            "en": "To add more Google Calendars to your sync, go to the integration page and click 'Manage Calendars'. Select additional calendars from the list and choose their sync settings. Changes take effect immediately.",
+            "es": "Para agregar más Calendarios de Google a tu sincronización, ve a la página de integración y haz clic en 'Gestionar calendarios'. Selecciona calendarios adicionales de la lista y elige su configuración de sincronización. Los cambios tienen efecto inmediatamente."
+          }
+        },
+        {
+          "title": {
+            "nl": "Synchronisatie pauzeren",
+            "en": "Pause Sync",
+            "es": "Pausar sincronización"
+          },
+          "description": {
+            "nl": "Als je tijdelijk wilt stoppen met synchroniseren zonder de integratie te verbreken, klik je op de schakelaar 'Synchronisatie pauzeren' op de integratiepagina. Dit is handig wanneer je grote wijzigingen aan het maken bent en niet wilt dat ze onmiddellijk synchroniseren. Vergeet niet om de synchronisatie weer in te schakelen wanneer je klaar bent.",
+            "en": "If you need to temporarily stop syncing without disconnecting the integration, click the 'Pause Sync' toggle on the integration page. This is useful when you're making bulk changes and don't want them to sync immediately. Remember to re-enable sync when you're done.",
+            "es": "Si necesitas detener temporalmente la sincronización sin desconectar la integración, haz clic en el interruptor 'Pausar sincronización' en la página de integración. Esto es útil cuando estás haciendo cambios masivos y no quieres que se sincronicen inmediatamente. Recuerda volver a habilitar la sincronización cuando termines."
+          }
+        },
+        {
+          "title": {
+            "nl": "Verbinding verbreken",
+            "en": "Disconnect Integration",
+            "es": "Desconectar integración"
+          },
+          "description": {
+            "nl": "Om de Google Agenda integratie volledig te verwijderen, klik je op 'Integratie verbreken' onderaan de integratiepagina. Bestaande evenementen blijven in beide systemen bestaan, maar toekomstige wijzigingen zullen niet meer synchroniseren. Je kunt op elk moment opnieuw verbinden.",
+            "en": "To completely remove the Google Calendar integration, click 'Disconnect Integration' at the bottom of the integration page. Existing events will remain in both systems, but future changes will no longer sync. You can reconnect at any time.",
+            "es": "Para eliminar completamente la integración de Google Calendar, haz clic en 'Desconectar integración' en la parte inferior de la página de integración. Los eventos existentes permanecerán en ambos sistemas, pero los cambios futuros ya no se sincronizarán. Puedes reconectar en cualquier momento."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "troubleshooting-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Probleemoplossing tip",
+        "en": "Troubleshooting Tip",
+        "es": "Consejo de solución de problemas"
+      },
+      "content": {
+        "nl": "Als een evenement niet lijkt te synchroniseren, controleer eerst de synchronisatiestatus voor fouten. Veelvoorkomende problemen zijn: Google machtigingen ingetrokken (opnieuw verbinden), synchronisatie gepauzeerd (weer inschakelen), of netwerkproblemen (wacht en probeer het opnieuw). De meeste synchronisatieproblemen lossen zichzelf op binnen 5-10 minuten.",
+        "en": "If an event doesn't seem to be syncing, first check the sync status for errors. Common issues include: Google permissions revoked (reconnect), sync paused (re-enable), or network issues (wait and retry). Most sync issues resolve themselves within 5-10 minutes.",
+        "es": "Si un evento no parece estar sincronizándose, primero verifica el estado de sincronización para errores. Los problemas comunes incluyen: permisos de Google revocados (reconectar), sincronización pausada (volver a habilitar), o problemas de red (esperar y reintentar). La mayoría de los problemas de sincronización se resuelven solos en 5-10 minutos."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Zullen mijn persoonlijke Google Agenda evenementen verschijnen in Tesoro?",
+            "en": "Will my personal Google Calendar events show up in Tesoro?",
+            "es": "¿Aparecerán mis eventos personales de Google Calendar en Tesoro?"
+          },
+          "answer": {
+            "nl": "Ja, als je een kalender hebt geselecteerd voor synchronisatie, zullen alle evenementen in die kalender verschijnen in Tesoro. Dit helpt dubbele boekingen te voorkomen. Als je persoonlijke evenementen privé wilt houden, maak dan een aparte werk-kalender in Google en synchroniseer alleen die met Tesoro.",
+            "en": "Yes, if you've selected a calendar for sync, all events in that calendar will appear in Tesoro. This helps prevent double-bookings. If you want to keep personal events private, create a separate work calendar in Google and only sync that one with Tesoro.",
+            "es": "Sí, si has seleccionado un calendario para sincronización, todos los eventos en ese calendario aparecerán en Tesoro. Esto ayuda a prevenir reservas duplicadas. Si quieres mantener los eventos personales privados, crea un calendario de trabajo separado en Google y sincroniza solo ese con Tesoro."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik sommige Tesoro evenementen verbergen voor Google Agenda?",
+            "en": "Can I hide some Tesoro events from Google Calendar?",
+            "es": "¿Puedo ocultar algunos eventos de Tesoro de Google Calendar?"
+          },
+          "answer": {
+            "nl": "Ja. Bij het maken van een evenement in Tesoro, vink je 'Privé - Niet synchroniseren met Google' aan om dat specifieke evenement lokaal te houden in Tesoro. Dit is handig voor gevoelige vergaderingen of interne planning die je niet wilt delen.",
+            "en": "Yes. When creating an event in Tesoro, check the 'Private - Don't sync to Google' option to keep that specific event local to Tesoro. This is useful for sensitive meetings or internal planning you don't want to share.",
+            "es": "Sí. Al crear un evento en Tesoro, marca la opción 'Privado - No sincronizar con Google' para mantener ese evento específico local en Tesoro. Esto es útil para reuniones sensibles o planificación interna que no quieres compartir."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er als ik een evenement verwijder in Google Agenda?",
+            "en": "What happens if I delete an event in Google Calendar?",
+            "es": "¿Qué pasa si elimino un evento en Google Calendar?"
+          },
+          "answer": {
+            "nl": "Met bidirectionele synchronisatie zal het evenement ook worden verwijderd in Tesoro. Tesoro behoudt echter een 30-dagen verwijderde items geschiedenis, dus je kunt het herstellen vanuit Instellingen > Verwijderde items als het per ongeluk was.",
+            "en": "With bidirectional sync, the event will also be deleted in Tesoro. However, Tesoro maintains a 30-day deleted items history, so you can restore it from Settings > Deleted Items if it was accidental.",
+            "es": "Con sincronización bidireccional, el evento también se eliminará en Tesoro. Sin embargo, Tesoro mantiene un historial de elementos eliminados de 30 días, por lo que puedes restaurarlo desde Configuración > Elementos eliminados si fue accidental."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik meerdere Google-accounts synchroniseren?",
+            "en": "Can I sync multiple Google accounts?",
+            "es": "¿Puedo sincronizar múltiples cuentas de Google?"
+          },
+          "answer": {
+            "nl": "Ja! Tesoro ondersteunt synchronisatie met meerdere Google-accounts. Dit is handig als je zowel persoonlijke als werk Google-accounts hebt. Ga naar Instellingen > Integraties > Google Agenda en klik op 'Extra account toevoegen' om een tweede account te verbinden.",
+            "en": "Yes! Tesoro supports syncing with multiple Google accounts. This is useful if you have both personal and work Google accounts. Go to Settings > Integrations > Google Calendar and click 'Add Another Account' to connect a second account.",
+            "es": "¡Sí! Tesoro admite sincronización con múltiples cuentas de Google. Esto es útil si tienes cuentas de Google personales y de trabajo. Ve a Configuración > Integraciones > Google Calendar y haz clic en 'Agregar otra cuenta' para conectar una segunda cuenta."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe vaak synchroniseert Tesoro met Google Agenda?",
+            "en": "How often does Tesoro sync with Google Calendar?",
+            "es": "¿Con qué frecuencia sincroniza Tesoro con Google Calendar?"
+          },
+          "answer": {
+            "nl": "Tesoro synchroniseert bijna in realtime. Wanneer je een evenement maakt of wijzigt in Tesoro, verschijnt het binnen 1-2 minuten in Google Agenda. Wijzigingen gemaakt in Google Agenda worden ook binnen 1-2 minuten weergegeven in Tesoro. Er is geen actie van jou vereist - het gebeurt automatisch op de achtergrond.",
+            "en": "Tesoro syncs in near real-time. When you create or modify an event in Tesoro, it appears in Google Calendar within 1-2 minutes. Changes made in Google Calendar also show up in Tesoro within 1-2 minutes. There's no action required from you - it happens automatically in the background.",
+            "es": "Tesoro se sincroniza casi en tiempo real. Cuando creas o modificas un evento en Tesoro, aparece en Google Calendar en 1-2 minutos. Los cambios hechos en Google Calendar también aparecen en Tesoro en 1-2 minutos. No se requiere ninguna acción de tu parte - sucede automáticamente en segundo plano."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "calendar-overview-guide",
+    "ical-export-integration",
+    "calendar-reminders-notifications",
+    "email-integration-setup"
+  ]
+}

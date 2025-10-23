@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "id": "property-client-portal",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T19:30:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "client-portal", "buyer-portal", "self-service", "property-sharing"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    "keywords": ["client portal", "buyer portal", "property sharing", "self-service portal", "property access"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Client portal en property sharing in Tesoro",
+      "en": "Client Portal and Property Sharing in Tesoro",
+      "es": "Portal de clientes y compartir propiedades en Tesoro"
+    },
+    "description": {
+      "nl": "Leer hoe je de buyer portal configureert, properties shared met clients, access beheert en self-service buyer experience enables.",
+      "en": "Learn how to configure the buyer portal, share properties with clients, manage access and enable self-service buyer experience.",
+      "es": "Aprende cómo configurar el portal de compradores, compartir propiedades con clientes, gestionar acceso y habilitar experiencia de autoservicio para compradores."
+    },
+    "icon": "person"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "portal-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Wat is de client portal?",
+        "en": "What is the client portal?",
+        "es": "¿Qué es el portal de clientes?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De client portal is een self-service platform waar buyers properties kunnen bekijken, interest tonen en viewings aanvragen - zonder agent intervention.</p><p><strong>Portal features:</strong></p><ul><li>Property browsing met search en filters</li><li>Interactive maps met property locations</li><li>Save favorite properties</li><li>Request viewing appointments</li><li>Access shared documents (floor plans, brochures)</li><li>24/7 availability</li></ul>"
+        },
+        "en": {
+          "text": "<p>The client portal is a self-service platform where buyers can view properties, show interest and request viewings - without agent intervention.</p><p><strong>Portal features:</strong></p><ul><li>Property browsing with search and filters</li><li>Interactive maps with property locations</li><li>Save favorite properties</li><li>Request viewing appointments</li><li>Access shared documents (floor plans, brochures)</li><li>24/7 availability</li></ul>"
+        },
+        "es": {
+          "text": "<p>El portal de clientes es una plataforma de autoservicio donde los compradores pueden ver propiedades, mostrar interés y solicitar visitas - sin intervención del agente.</p><p><strong>Características del portal:</strong></p><ul><li>Exploración de propiedades con búsqueda y filtros</li><li>Mapas interactivos con ubicaciones de propiedades</li><li>Guardar propiedades favoritas</li><li>Solicitar citas para visitas</li><li>Acceder a documentos compartidos (planos, folletos)</li><li>Disponibilidad 24/7</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "portal-setup",
+      "title": {
+        "nl": "Portal configureren en activeren",
+        "en": "Configuring and activating portal",
+        "es": "Configurar y activar portal"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Portal activation</h5><ol><li>Settings → Client Portal → Enable Portal</li><li>Customize portal settings:<ul><li><strong>Portal URL:</strong> yourcompany.tesoro.app</li><li><strong>Branding:</strong> Upload logo, set colors</li><li><strong>Languages:</strong> Enable NL/EN/ES</li><li><strong>Property visibility:</strong> Which properties show on portal</li></ul></li><li>Configure watermark (optional - voor property images)</li><li>Set contact form preferences</li><li>Save and activate</li></ol><h5>Portal customization</h5><p><strong>Branding options:</strong></p><ul><li>Company logo (top left)</li><li>Brand colors (primary/secondary)</li><li>Custom header/footer text</li><li>Contact information</li><li>Social media links</li></ul><p><strong>Feature toggles:</strong></p><ul><li>Enable/disable map view</li><li>Show/hide price on portal</li><li>Allow/disallow viewing requests</li><li>Enable property comparison feature</li><li>Show/hide sold properties</li></ul><h5>Property visibility rules</h5><p>Control welke properties visible zijn:</p><ul><li><strong>All active properties:</strong> Default (alle Active properties)</li><li><strong>Selected properties only:</strong> Manually select per property</li><li><strong>Filtered by criteria:</strong> Auto-show properties meeting criteria (price > €200k, specific areas)</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Portal activation</h5><ol><li>Settings → Client Portal → Enable Portal</li><li>Customize portal settings:<ul><li><strong>Portal URL:</strong> yourcompany.tesoro.app</li><li><strong>Branding:</strong> Upload logo, set colors</li><li><strong>Languages:</strong> Enable NL/EN/ES</li><li><strong>Property visibility:</strong> Which properties show on portal</li></ul></li><li>Configure watermark (optional - for property images)</li><li>Set contact form preferences</li><li>Save and activate</li></ol><h5>Portal customization</h5><p><strong>Branding options:</strong></p><ul><li>Company logo (top left)</li><li>Brand colors (primary/secondary)</li><li>Custom header/footer text</li><li>Contact information</li><li>Social media links</li></ul><p><strong>Feature toggles:</strong></p><ul><li>Enable/disable map view</li><li>Show/hide price on portal</li><li>Allow/disallow viewing requests</li><li>Enable property comparison feature</li><li>Show/hide sold properties</li></ul><h5>Property visibility rules</h5><p>Control which properties are visible:</p><ul><li><strong>All active properties:</strong> Default (all Active properties)</li><li><strong>Selected properties only:</strong> Manually select per property</li><li><strong>Filtered by criteria:</strong> Auto-show properties meeting criteria (price > €200k, specific areas)</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Activación del portal</h5><ol><li>Configuración → Portal de Clientes → Activar Portal</li><li>Personaliza configuración del portal:<ul><li><strong>URL del portal:</strong> tuempresa.tesoro.app</li><li><strong>Marca:</strong> Sube logo, establece colores</li><li><strong>Idiomas:</strong> Activa NL/EN/ES</li><li><strong>Visibilidad de propiedades:</strong> Qué propiedades se muestran en el portal</li></ul></li><li>Configura marca de agua (opcional - para imágenes de propiedades)</li><li>Establece preferencias de formulario de contacto</li><li>Guardar y activar</li></ol><h5>Personalización del portal</h5><p><strong>Opciones de marca:</strong></p><ul><li>Logo de empresa (arriba izquierda)</li><li>Colores de marca (primario/secundario)</li><li>Texto personalizado de encabezado/pie de página</li><li>Información de contacto</li><li>Enlaces de redes sociales</li></ul><p><strong>Interruptores de características:</strong></p><ul><li>Activar/desactivar vista de mapa</li><li>Mostrar/ocultar precio en portal</li><li>Permitir/no permitir solicitudes de visita</li><li>Activar función de comparación de propiedades</li><li>Mostrar/ocultar propiedades vendidas</li></ul><h5>Reglas de visibilidad de propiedades</h5><p>Controla qué propiedades son visibles:</p><ul><li><strong>Todas las propiedades activas:</strong> Predeterminado (todas las propiedades Activas)</li><li><strong>Solo propiedades seleccionadas:</strong> Selección manual por propiedad</li><li><strong>Filtradas por criterios:</strong> Auto-mostrar propiedades que cumplen criterios (precio > €200k, áreas específicas)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "user-management",
+      "title": {
+        "nl": "Portal users en access management",
+        "en": "Portal users and access management",
+        "es": "Usuarios del portal y gestión de acceso"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Creating portal users</h5><p>Twee manieren om portal access te geven:</p><p><strong>Option 1: Convert existing contact</strong></p><ol><li>Open contact detail</li><li>Click 'Create Portal User'</li><li>Set password (auto-generated or custom)</li><li>Select access level:<ul><li>Full access (all portal properties)</li><li>Limited access (specific properties only)</li></ul></li><li>Send invitation email</li></ol><p><strong>Option 2: Public registration</strong></p><ul><li>Enable 'Allow self-registration' in portal settings</li><li>Buyers kunnen zichzelf registreren via portal</li><li>Admin approval required (optional)</li></ul><h5>Access levels</h5><p><strong>Full access users:</strong></p><ul><li>View all available properties on portal</li><li>Search en filter properties</li><li>Save favorites</li><li>Request viewings</li><li>Download public documents</li></ul><p><strong>Limited access users:</strong></p><ul><li>Only see specifically shared properties</li><li>Perfect voor VIP clients met exclusive properties</li><li>No access tot general property catalog</li></ul><h5>User activity tracking</h5><p>Track wat portal users doen:</p><ul><li><strong>Property views:</strong> Which properties they viewed</li><li><strong>Search history:</strong> What they searched for</li><li><strong>Favorites:</strong> Which properties they saved</li><li><strong>Viewing requests:</strong> Appointments requested</li><li><strong>Contact form submissions:</strong> Messages sent</li></ul><p>Use deze data voor better lead qualification en follow-up.</p>"
+        },
+        "en": {
+          "text": "<h5>Creating portal users</h5><p>Two ways to give portal access:</p><p><strong>Option 1: Convert existing contact</strong></p><ol><li>Open contact detail</li><li>Click 'Create Portal User'</li><li>Set password (auto-generated or custom)</li><li>Select access level:<ul><li>Full access (all portal properties)</li><li>Limited access (specific properties only)</li></ul></li><li>Send invitation email</li></ol><p><strong>Option 2: Public registration</strong></p><ul><li>Enable 'Allow self-registration' in portal settings</li><li>Buyers can self-register via portal</li><li>Admin approval required (optional)</li></ul><h5>Access levels</h5><p><strong>Full access users:</strong></p><ul><li>View all available properties on portal</li><li>Search and filter properties</li><li>Save favorites</li><li>Request viewings</li><li>Download public documents</li></ul><p><strong>Limited access users:</strong></p><ul><li>Only see specifically shared properties</li><li>Perfect for VIP clients with exclusive properties</li><li>No access to general property catalog</li></ul><h5>User activity tracking</h5><p>Track what portal users do:</p><ul><li><strong>Property views:</strong> Which properties they viewed</li><li><strong>Search history:</strong> What they searched for</li><li><strong>Favorites:</strong> Which properties they saved</li><li><strong>Viewing requests:</strong> Appointments requested</li><li><strong>Contact form submissions:</strong> Messages sent</li></ul><p>Use this data for better lead qualification and follow-up.</p>"
+        },
+        "es": {
+          "text": "<h5>Crear usuarios del portal</h5><p>Dos formas de dar acceso al portal:</p><p><strong>Opción 1: Convertir contacto existente</strong></p><ol><li>Abre detalle de contacto</li><li>Haz clic en 'Crear Usuario del Portal'</li><li>Establece contraseña (auto-generada o personalizada)</li><li>Selecciona nivel de acceso:<ul><li>Acceso completo (todas las propiedades del portal)</li><li>Acceso limitado (solo propiedades específicas)</li></ul></li><li>Enviar email de invitación</li></ol><p><strong>Opción 2: Registro público</strong></p><ul><li>Activa 'Permitir auto-registro' en configuración del portal</li><li>Los compradores pueden auto-registrarse vía portal</li><li>Aprobación de admin requerida (opcional)</li></ul><h5>Niveles de acceso</h5><p><strong>Usuarios con acceso completo:</strong></p><ul><li>Ver todas las propiedades disponibles en el portal</li><li>Buscar y filtrar propiedades</li><li>Guardar favoritas</li><li>Solicitar visitas</li><li>Descargar documentos públicos</li></ul><p><strong>Usuarios con acceso limitado:</strong></p><ul><li>Solo ven propiedades específicamente compartidas</li><li>Perfecto para clientes VIP con propiedades exclusivas</li><li>Sin acceso al catálogo general de propiedades</li></ul><h5>Seguimiento de actividad del usuario</h5><p>Rastrea qué hacen los usuarios del portal:</p><ul><li><strong>Vistas de propiedades:</strong> Qué propiedades vieron</li><li><strong>Historial de búsqueda:</strong> Qué buscaron</li><li><strong>Favoritas:</strong> Qué propiedades guardaron</li><li><strong>Solicitudes de visita:</strong> Citas solicitadas</li><li><strong>Envíos de formulario de contacto:</strong> Mensajes enviados</li></ul><p>Usa estos datos para mejor calificación de leads y seguimiento.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "property-sharing",
+      "title": {
+        "nl": "Properties delen met specific clients",
+        "en": "Sharing properties with specific clients",
+        "es": "Compartir propiedades con clientes específicos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Direct property sharing</h5><p>Share specific properties met individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link voor anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>Voor organized buyer journeys:</p><ol><li>Create deal voor buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer ziet curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'Not Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing voor multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections voor buyers:</p><ol><li>Create 'Collection' (bijvoorbeeld \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link met buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect voor presenting themed property selections.</p>"
+        },
+        "en": {
+          "text": "<h5>Direct property sharing</h5><p>Share specific properties with individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link for anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>For organized buyer journeys:</p><ol><li>Create deal for buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer sees curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'Not Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing for multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections for buyers:</p><ol><li>Create 'Collection' (e.g., \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link with buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect for presenting themed property selections.</p>"
+        },
+        "es": {
+          "text": "<h5>Compartir propiedades directamente</h5><p>Comparte propiedades específicas con clientes individuales:</p><ol><li>Abre detalle de propiedad</li><li>Haz clic en 'Compartir Propiedad'</li><li>Selecciona método de compartir:<ul><li><strong>Usuario del portal:</strong> Compartir a cuenta de usuario del portal existente</li><li><strong>Enlace por email:</strong> Enviar enlace compartible vía email</li><li><strong>Enlace público:</strong> Generar enlace para cualquiera</li></ul></li><li>Añade mensaje opcional</li><li>Enviar</li></ol><h5>Compartir basado en deals</h5><p>Para viajes organizados de compradores:</p><ol><li>Crea deal para comprador</li><li>Añade propiedades a ofertas de deal</li><li>Haz clic en 'Compartir Propiedades de Deal'</li><li>El comprador ve selección curada en el portal</li><li>Rastrea qué propiedades le gustan/rechaza el comprador</li></ol><p><strong>Características del portal de deals:</strong></p><ul><li>El comprador puede marcar propiedades como 'Interesado' o 'No Interesado'</li><li>Dejar notas en cada propiedad</li><li>Comparar propiedades lado a lado</li><li>Solicitar visita para múltiples propiedades</li></ul><h5>Compartir vía colecciones</h5><p>Agrupa propiedades en colecciones para compradores:</p><ol><li>Crea 'Colección' (ej., \"Frente a la Playa Barcelona\")</li><li>Añade propiedades relevantes</li><li>Comparte enlace de colección con comprador</li><li>El comprador explora selección curada</li></ol><p>Perfecto para presentar selecciones temáticas de propiedades.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "portal-analytics",
+      "title": {
+        "nl": "Portal analytics en insights",
+        "en": "Portal analytics and insights",
+        "es": "Análisis del portal e insights"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Portal performance metrics</h5><p>Track portal usage in Dashboard → Portal Analytics:</p><ul><li><strong>Active users:</strong> How many portal users</li><li><strong>Property views:</strong> Most viewed properties</li><li><strong>Search queries:</strong> What buyers are searching for</li><li><strong>Viewing requests:</strong> Appointment request rate</li><li><strong>Favorite properties:</strong> Most saved properties</li><li><strong>Conversion rate:</strong> Views → viewing requests → deals</li></ul><h5>User engagement tracking</h5><p>Per portal user kun je zien:</p><ul><li>Total property views</li><li>Favorite properties (saved)</li><li>Search history</li><li>Viewing requests submitted</li><li>Messages sent</li><li>Last login date</li></ul><p>Use voor lead scoring en prioritization.</p><h5>Popular properties analysis</h5><p>Identify which properties genereren most interest:</p><ul><li>Properties met most portal views</li><li>Most saved as favorites</li><li>Most viewing requests</li><li>Comparison activity (which properties buyers compare)</li></ul><p>This helps validate pricing en marketing strategy.</p>"
+        },
+        "en": {
+          "text": "<h5>Portal performance metrics</h5><p>Track portal usage in Dashboard → Portal Analytics:</p><ul><li><strong>Active users:</strong> How many portal users</li><li><strong>Property views:</strong> Most viewed properties</li><li><strong>Search queries:</strong> What buyers are searching for</li><li><strong>Viewing requests:</strong> Appointment request rate</li><li><strong>Favorite properties:</strong> Most saved properties</li><li><strong>Conversion rate:</strong> Views → viewing requests → deals</li></ul><h5>User engagement tracking</h5><p>Per portal user you can see:</p><ul><li>Total property views</li><li>Favorite properties (saved)</li><li>Search history</li><li>Viewing requests submitted</li><li>Messages sent</li><li>Last login date</li></ul><p>Use for lead scoring and prioritization.</p><h5>Popular properties analysis</h5><p>Identify which properties generate most interest:</p><ul><li>Properties with most portal views</li><li>Most saved as favorites</li><li>Most viewing requests</li><li>Comparison activity (which properties buyers compare)</li></ul><p>This helps validate pricing and marketing strategy.</p>"
+        },
+        "es": {
+          "text": "<h5>Métricas de rendimiento del portal</h5><p>Rastrea uso del portal en Dashboard → Análisis del Portal:</p><ul><li><strong>Usuarios activos:</strong> Cuántos usuarios del portal</li><li><strong>Vistas de propiedades:</strong> Propiedades más vistas</li><li><strong>Consultas de búsqueda:</strong> Qué buscan los compradores</li><li><strong>Solicitudes de visita:</strong> Tasa de solicitud de citas</li><li><strong>Propiedades favoritas:</strong> Propiedades más guardadas</li><li><strong>Tasa de conversión:</strong> Vistas → solicitudes de visita → deals</li></ul><h5>Seguimiento de compromiso del usuario</h5><p>Por usuario del portal puedes ver:</p><ul><li>Total de vistas de propiedades</li><li>Propiedades favoritas (guardadas)</li><li>Historial de búsqueda</li><li>Solicitudes de visita enviadas</li><li>Mensajes enviados</li><li>Fecha de último inicio de sesión</li></ul><p>Usa para puntuación de leads y priorización.</p><h5>Análisis de propiedades populares</h5><p>Identifica qué propiedades generan más interés:</p><ul><li>Propiedades con más vistas en portal</li><li>Más guardadas como favoritas</li><li>Más solicitudes de visita</li><li>Actividad de comparación (qué propiedades comparan los compradores)</li></ul><p>Esto ayuda a validar precios y estrategia de marketing.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "portal-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Pro tips voor client portal",
+        "en": "Pro tips for client portal",
+        "es": "Consejos profesionales para portal de clientes"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties hebben detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly welke properties buyers view most - adjust strategy.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours voor best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") voor better engagement.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties have detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly which properties buyers view most - adjust strategy.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours for best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") for better engagement.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Maximiza efectividad del portal:</strong></p><ol><li><strong>Mantén portal actualizado:</strong> Elimina propiedades vendidas/alquiladas rápidamente - listados obsoletos reducen confianza.</li><li><strong>Imágenes de alta calidad:</strong> Las propiedades del portal deben tener mín. 5 fotos profesionales.</li><li><strong>Descripciones completas:</strong> Asegúrate de que todas las propiedades visibles tengan descripciones detalladas en NL/EN/ES.</li><li><strong>Monitorea actividad del usuario:</strong> Verifica semanalmente qué propiedades ven más los compradores - ajusta estrategia.</li><li><strong>Seguimiento rápido:</strong> Responde a solicitudes de visita en 2 horas para mejor conversión.</li><li><strong>Usa colecciones:</strong> Crea colecciones temáticas (\"Nuevo esta semana\", \"Precio reducido\") para mejor compromiso.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "property-ai-matching",
+    "property-search-filters",
+    "property-documents-management"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen buyers direct afspraken maken via de portal?",
+        "en": "Can buyers directly book appointments via the portal?",
+        "es": "¿Pueden los compradores reservar citas directamente vía el portal?"
+      },
+      "answer": {
+        "nl": "Buyers kunnen viewing requests submitten via portal, maar finalisatie requires agent approval. Workflow: 1) Buyer clicks 'Request Viewing', 2) Selects preferred date/times, 3) Request gaat naar assigned agent, 4) Agent approves/modifies en sends confirmation. Je kunt ook direct calendar booking enablen (Settings → Portal → Allow Direct Booking) voor fully automated scheduling.",
+        "en": "Buyers can submit viewing requests via portal, but finalization requires agent approval. Workflow: 1) Buyer clicks 'Request Viewing', 2) Selects preferred date/times, 3) Request goes to assigned agent, 4) Agent approves/modifies and sends confirmation. You can also enable direct calendar booking (Settings → Portal → Allow Direct Booking) for fully automated scheduling.",
+        "es": "Los compradores pueden enviar solicitudes de visita vía portal, pero la finalización requiere aprobación del agente. Flujo de trabajo: 1) Comprador hace clic en 'Solicitar Visita', 2) Selecciona fecha/horas preferidas, 3) La solicitud va al agente asignado, 4) El agente aprueba/modifica y envía confirmación. También puedes habilitar reserva directa de calendario (Configuración → Portal → Permitir Reserva Directa) para programación completamente automatizada."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik verschillende portals maken voor verschillende buyer segments?",
+        "en": "Can I create different portals for different buyer segments?",
+        "es": "¿Puedo crear portales diferentes para diferentes segmentos de compradores?"
+      },
+      "answer": {
+        "nl": "Je hebt één main portal maar kunt segmentatie bereiken via: 1) Access levels - Full access users zien all properties, Limited users only selected ones, 2) Collections - Create themed collections per segment (\"Luxury\", \"Investment\", \"First-time buyers\"), 3) Custom landing pages - Generate custom URLs met pre-filtered views (alleen apartments, alleen €200k-400k, etc.). Voor complete separate branding contact support voor multi-portal setup.",
+        "en": "You have one main portal but can achieve segmentation via: 1) Access levels - Full access users see all properties, Limited users only selected ones, 2) Collections - Create themed collections per segment (\"Luxury\", \"Investment\", \"First-time buyers\"), 3) Custom landing pages - Generate custom URLs with pre-filtered views (apartments only, €200k-400k only, etc.). For complete separate branding contact support for multi-portal setup.",
+        "es": "Tienes un portal principal pero puedes lograr segmentación vía: 1) Niveles de acceso - Usuarios con acceso completo ven todas las propiedades, usuarios limitados solo las seleccionadas, 2) Colecciones - Crea colecciones temáticas por segmento (\"Lujo\", \"Inversión\", \"Compradores primerizos\"), 3) Páginas de destino personalizadas - Genera URLs personalizadas con vistas pre-filtradas (solo apartamentos, solo €200k-400k, etc.). Para marca completamente separada contacta soporte para configuración multi-portal."
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "custom-reports-builder",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "reports",
+    "difficulty": "advanced",
+    "tags": ["reports", "analytics", "custom reports", "report builder", "data visualization"],
+    "featured": false,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["custom reports", "report builder", "data visualization", "business intelligence", "custom analytics", "CRM reporting"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Aangepaste rapporten maken",
+      "en": "Creating Custom Reports",
+      "es": "Crear informes personalizados"
+    },
+    "description": {
+      "nl": "Bouw op maat gemaakte rapporten met Tesoro's report builder om specifieke business vragen te beantwoorden en unieke inzichten te onthullen.",
+      "en": "Build tailored reports with Tesoro's report builder to answer specific business questions and uncover unique insights.",
+      "es": "Construye informes personalizados con el creador de informes de Tesoro para responder preguntas comerciales específicas y descubrir perspectivas únicas."
+    },
+    "icon": "query_stats"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Terwijl Tesoro CRM tientallen pre-built rapporten biedt voor standaard analytics, heeft elk vastgoedbedrijf unieke vragen en metrics die belangrijk zijn voor hun specifieke markt, strategie, en operationele focus. De Custom Report Builder geeft je de flexibiliteit om exactly de data te visualiseren en analyseren die jij nodig hebt, zonder afhankelijk te zijn van technical teams of externe tools. Of je nu commission tracking per agent wilt, neighborhood performance analysis, of client source attribution - je kunt het bouwen met Tesoro's intuïtieve drag-and-drop interface.",
+        "en": "While Tesoro CRM provides dozens of pre-built reports for standard analytics, every real estate business has unique questions and metrics that matter for their specific market, strategy, and operational focus. The Custom Report Builder gives you the flexibility to visualize and analyze exactly the data you need, without depending on technical teams or external tools. Whether you want commission tracking per agent, neighborhood performance analysis, or client source attribution - you can build it with Tesoro's intuitive drag-and-drop interface.",
+        "es": "Aunque Tesoro CRM proporciona docenas de informes prediseñados para análisis estándar, cada negocio inmobiliario tiene preguntas y métricas únicas que importan para su mercado, estrategia y enfoque operativo específicos. El Creador de informes personalizados te brinda la flexibilidad para visualizar y analizar exactamente los datos que necesitas, sin depender de equipos técnicos o herramientas externas. Ya sea que desees seguimiento de comisiones por agente, análisis de rendimiento de vecindarios o atribución de fuente de clientes, puedes construirlo con la interfaz intuitiva de arrastrar y soltar de Tesoro."
+      }
+    },
+    {
+      "type": "text",
+      "id": "report-types",
+      "content": {
+        "nl": "## Types custom rapporten die je kunt bouwen\n\nDe Report Builder ondersteunt verschillende report types voor verschillende analysis behoeften:\n\n**Table Reports** tonen data in rows en columns, ideaal voor gedetailleerde data exploration en exports. Perfect voor lijsten van properties, contacts, of transactions met specifieke filters en custom columns. Je kunt sorteren, filteren, en groeperen om exact de view te krijgen die je nodig hebt.\n\n**Summary Reports** aggregeren data met group-by functionaliteit. Bijvoorbeeld, totale deals per agent per maand, of gemiddelde deal size per property type per neighborhood. Summary reports laten je trends over tijd zien en performance tussen categorieën vergelijken.\n\n**Chart Reports** visualiseren data met verschillende chart types: bar charts voor vergelijkingen, line charts voor trends, pie charts voor distribution, en scatter plots voor correlaties. Visual representations maken patronen onmiddellijk duidelijk die moeilijk te zien zijn in tabellen.\n\n**Dashboard Reports** combineren meerdere metrics en visualisaties op één scherm. Build je eigen executive dashboard met je most critical KPI's, of create team-specific dashboards die focus op hun unique priorities.\n\n**Matrix Reports** tonen two-dimensional aggregaties, zoals deals closed by agent (rows) and month (columns). Perfect voor het vergelijken van performance across multiple dimensions tegelijk.\n\n**Scheduled Reports** kunnen worden ingesteld om automatisch te genereren en te emailen op specifieke intervals. Bijvoorbeeld, wekelijkse team performance summary elke maandagochtend, of maandelijkse commission statement voor elke agent.",
+        "en": "## Types Of Custom Reports You Can Build\n\nThe Report Builder supports different report types for various analysis needs:\n\n**Table Reports** display data in rows and columns, ideal for detailed data exploration and exports. Perfect for lists of properties, contacts, or transactions with specific filters and custom columns. You can sort, filter, and group to get exactly the view you need.\n\n**Summary Reports** aggregate data with group-by functionality. For example, total deals per agent per month, or average deal size by property type by neighborhood. Summary reports let you see trends over time and compare performance across categories.\n\n**Chart Reports** visualize data with various chart types: bar charts for comparisons, line charts for trends, pie charts for distribution, and scatter plots for correlations. Visual representations make patterns immediately obvious that are hard to spot in tables.\n\n**Dashboard Reports** combine multiple metrics and visualizations on one screen. Build your own executive dashboard with your most critical KPIs, or create team-specific dashboards that focus on their unique priorities.\n\n**Matrix Reports** show two-dimensional aggregations, like deals closed by agent (rows) and month (columns). Perfect for comparing performance across multiple dimensions simultaneously.\n\n**Scheduled Reports** can be set to automatically generate and email on specific intervals. For example, weekly team performance summary every Monday morning, or monthly commission statement for each agent.",
+        "es": "## Tipos de informes personalizados que puedes construir\n\nEl Creador de informes admite diferentes tipos de informes para diversas necesidades de análisis:\n\n**Informes de tabla** muestran datos en filas y columnas, ideales para exploración detallada de datos y exportaciones. Perfectos para listas de propiedades, contactos o transacciones con filtros específicos y columnas personalizadas. Puedes ordenar, filtrar y agrupar para obtener exactamente la vista que necesitas.\n\n**Informes de resumen** agregan datos con funcionalidad de agrupar por. Por ejemplo, negocios totales por agente por mes, o tamaño promedio de negocio por tipo de propiedad por vecindario. Los informes de resumen te permiten ver tendencias a lo largo del tiempo y comparar el rendimiento entre categorías.\n\n**Informes de gráficos** visualizan datos con varios tipos de gráficos: gráficos de barras para comparaciones, gráficos de líneas para tendencias, gráficos circulares para distribución y diagramas de dispersión para correlaciones. Las representaciones visuales hacen que los patrones sean inmediatamente obvios, difíciles de detectar en tablas.\n\n**Informes de dashboard** combinan múltiples métricas y visualizaciones en una pantalla. Construye tu propio dashboard ejecutivo con tus KPIs más críticos, o crea dashboards específicos de equipo que se enfoquen en sus prioridades únicas.\n\n**Informes de matriz** muestran agregaciones bidimensionales, como negocios cerrados por agente (filas) y mes (columnas). Perfectos para comparar el rendimiento en múltiples dimensiones simultáneamente.\n\n**Informes programados** se pueden configurar para generar automáticamente y enviar por correo electrónico en intervalos específicos. Por ejemplo, resumen semanal de rendimiento del equipo cada lunes por la mañana, o estado de cuenta mensual de comisiones para cada agente."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "build-report",
+      "title": {
+        "nl": "Een custom rapport bouwen",
+        "en": "Building A Custom Report",
+        "es": "Construir un informe personalizado"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Open report builder",
+            "en": "Open Report Builder",
+            "es": "Abrir creador de informes"
+          },
+          "content": {
+            "nl": "Navigeer naar Reports > Custom Reports en klik 'Create New Report'. Je wordt gevraagd om te kiezen welk data object je wilt rapporteren op: Deals, Leads, Properties, Contacts, Activities, of andere. Selecteer het primaire object dat je business vraag addressed. Je kunt later related objects toevoegen via joins.",
+            "en": "Navigate to Reports > Custom Reports and click 'Create New Report'. You'll be prompted to choose which data object you want to report on: Deals, Leads, Properties, Contacts, Activities, or others. Select the primary object that addresses your business question. You can add related objects later via joins.",
+            "es": "Navega a Informes > Informes personalizados y haz clic en 'Crear nuevo informe'. Se te pedirá que elijas sobre qué objeto de datos deseas informar: Negocios, Leads, Propiedades, Contactos, Actividades u otros. Selecciona el objeto principal que aborda tu pregunta comercial. Puedes agregar objetos relacionados más tarde a través de uniones."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer fields en metrics",
+            "en": "Select Fields And Metrics",
+            "es": "Seleccionar campos y métricas"
+          },
+          "content": {
+            "nl": "Kies welke fields je in je rapport wilt includeren. Voor table reports, selecteer de columns die je wilt zien (bijv. Deal Name, Agent, Close Date, Deal Value). Voor summary reports, kies je grouping fields (bijv. Agent, Month) en je metrics (bijv. SUM of Deal Value, COUNT of Deals, AVERAGE of Deal Size). Gebruik de search functie om snel fields te vinden in grote object schemas.",
+            "en": "Choose which fields you want to include in your report. For table reports, select the columns you want to see (e.g., Deal Name, Agent, Close Date, Deal Value). For summary reports, choose your grouping fields (e.g., Agent, Month) and your metrics (e.g., SUM of Deal Value, COUNT of Deals, AVERAGE of Deal Size). Use the search function to quickly find fields in large object schemas.",
+            "es": "Elige qué campos deseas incluir en tu informe. Para informes de tabla, selecciona las columnas que deseas ver (por ejemplo, Nombre del negocio, Agente, Fecha de cierre, Valor del negocio). Para informes de resumen, elige tus campos de agrupación (por ejemplo, Agente, Mes) y tus métricas (por ejemplo, SUMA del valor del negocio, RECUENTO de negocios, PROMEDIO del tamaño del negocio). Usa la función de búsqueda para encontrar rápidamente campos en esquemas de objetos grandes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Pas filters toe",
+            "en": "Apply Filters",
+            "es": "Aplicar filtros"
+          },
+          "content": {
+            "nl": "Definieer filters om je data te narrowen naar relevante records. Bijvoorbeeld: Deal Stage = Closed Won, Close Date = This Quarter, Agent = specific team members. Je kunt meerdere filters combineren met AND/OR logic. Gebruik date filters voor time-based analysis en picklist filters voor categorische segmentation. Geavanceerde filters ondersteunen formulas en calculated fields.",
+            "en": "Define filters to narrow your data to relevant records. For example: Deal Stage = Closed Won, Close Date = This Quarter, Agent = specific team members. You can combine multiple filters with AND/OR logic. Use date filters for time-based analysis and picklist filters for categorical segmentation. Advanced filters support formulas and calculated fields.",
+            "es": "Define filtros para reducir tus datos a registros relevantes. Por ejemplo: Etapa del negocio = Cerrado ganado, Fecha de cierre = Este trimestre, Agente = miembros específicos del equipo. Puedes combinar múltiples filtros con lógica AND/OR. Usa filtros de fecha para análisis basado en tiempo y filtros de lista de selección para segmentación categórica. Los filtros avanzados admiten fórmulas y campos calculados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer visualisatie",
+            "en": "Configure Visualization",
+            "es": "Configurar visualización"
+          },
+          "content": {
+            "nl": "Kies hoe je data wordt gepresenteerd. Voor chart reports, selecteer chart type (bar, line, pie, scatter) en configureer axes. Bepaal welk field op de X-axis staat en welke metric op de Y-axis. Voor multiple series, group by een extra dimension. Customize colors, labels, en formatting om je rapport professional en leesbaar te maken. Preview je visualisatie real-time terwijl je aanpassingen maakt.",
+            "en": "Choose how your data is presented. For chart reports, select chart type (bar, line, pie, scatter) and configure axes. Determine which field goes on X-axis and which metric on Y-axis. For multiple series, group by an additional dimension. Customize colors, labels, and formatting to make your report professional and readable. Preview your visualization in real-time as you make adjustments.",
+            "es": "Elige cómo se presentan tus datos. Para informes de gráficos, selecciona el tipo de gráfico (barras, líneas, circular, dispersión) y configura los ejes. Determina qué campo va en el eje X y qué métrica en el eje Y. Para series múltiples, agrupa por una dimensión adicional. Personaliza colores, etiquetas y formato para hacer que tu informe sea profesional y legible. Previsualiza tu visualización en tiempo real mientras realizas ajustes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Sla op en deel",
+            "en": "Save And Share",
+            "es": "Guardar y compartir"
+          },
+          "content": {
+            "nl": "Geef je rapport een descriptive naam en optionele beschrijving. Kies visibility settings: Private (alleen jij), Team (je team members), of Company (iedereen). Sla het rapport op in een folder voor organisatie. Je kunt het rapport dan runnen on-demand, exporteren naar Excel/PDF, of schedulen voor automatische delivery. Share report links met stakeholders of embed het in je custom dashboards.",
+            "en": "Give your report a descriptive name and optional description. Choose visibility settings: Private (only you), Team (your team members), or Company (everyone). Save the report in a folder for organization. You can then run the report on-demand, export to Excel/PDF, or schedule for automatic delivery. Share report links with stakeholders or embed it in your custom dashboards.",
+            "es": "Dale a tu informe un nombre descriptivo y una descripción opcional. Elige la configuración de visibilidad: Privado (solo tú), Equipo (miembros de tu equipo) o Empresa (todos). Guarda el informe en una carpeta para organización. Luego puedes ejecutar el informe a pedido, exportar a Excel/PDF o programar para entrega automática. Comparte enlaces de informes con las partes interesadas o incrústalo en tus dashboards personalizados."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "advanced-features",
+      "content": {
+        "nl": "## Geavanceerde report builder functies\n\nVoor power users biedt de Report Builder geavanceerde capabilities:\n\n**Calculated Fields** laten je nieuwe metrics maken door bestaande fields te combineren. Bijvoorbeeld, maak een 'Days to Close' field door Close Date minus Create Date te berekenen. Of bereken 'Commission Amount' als Deal Value * Commission Rate. Calculated fields gebruiken Excel-achtige formulas met functies voor math, text, dates, en conditionals.\n\n**Cross-Object Reporting** via joins laat je data uit gerelateerde objects combineren. Bijvoorbeeld, rapport op Deals maar include Property details, Contact information, en Activity history. Tesoro's relationship mapping maakt joins intuïtief - selecteer simpelweg related objects en hun fields worden beschikbaar.\n\n**Filter Groups met AND/OR Logic** voor complexe criteria. Bijvoorbeeld: (Agent = Maria OR Agent = Carlos) AND (Deal Value > €100k) AND (Close Date = This Year). Nested filter groups geven unlimited flexibility voor precies de data subset die je nodig hebt.\n\n**Row-Level Formulas** voor conditional formatting en calculations. Bijvoorbeeld, highlight rows waar Deal Size > Team Average in groen, of waar Days on Market > 90 in rood. Formulas kunnen refereren naar andere fields in dezelfde row.\n\n**Grouping en Subtotals** in table reports. Group records by agent of month, met subtotals voor elke groep en grand totals aan het einde. Collapse/expand groups voor hierarchical data exploration.\n\n**Chart Drill-Down** laat users klikken op chart elementen om underlying data te zien. Bijvoorbeeld, klik op een bar in een 'Deals by Month' chart om alle deals van die maand in table format te zien.\n\n**Report Parameters** maken reports dynamic. Bijvoorbeeld, maak een 'Team Performance' rapport met parameter voor Team - users selecteren welk team bij runtime in plaats van separate rapporten per team.",
+        "en": "## Advanced Report Builder Features\n\nFor power users, the Report Builder offers advanced capabilities:\n\n**Calculated Fields** let you create new metrics by combining existing fields. For example, create a 'Days to Close' field by calculating Close Date minus Create Date. Or calculate 'Commission Amount' as Deal Value * Commission Rate. Calculated fields use Excel-like formulas with functions for math, text, dates, and conditionals.\n\n**Cross-Object Reporting** via joins lets you combine data from related objects. For example, report on Deals but include Property details, Contact information, and Activity history. Tesoro's relationship mapping makes joins intuitive - simply select related objects and their fields become available.\n\n**Filter Groups With AND/OR Logic** for complex criteria. For example: (Agent = Maria OR Agent = Carlos) AND (Deal Value > €100k) AND (Close Date = This Year). Nested filter groups provide unlimited flexibility for precisely the data subset you need.\n\n**Row-Level Formulas** for conditional formatting and calculations. For example, highlight rows where Deal Size > Team Average in green, or where Days on Market > 90 in red. Formulas can reference other fields in the same row.\n\n**Grouping And Subtotals** in table reports. Group records by agent or month, with subtotals for each group and grand totals at the end. Collapse/expand groups for hierarchical data exploration.\n\n**Chart Drill-Down** allows users to click on chart elements to see underlying data. For example, click on a bar in a 'Deals by Month' chart to see all deals from that month in table format.\n\n**Report Parameters** make reports dynamic. For example, create a 'Team Performance' report with parameter for Team - users select which team at runtime instead of separate reports per team.",
+        "es": "## Características avanzadas del creador de informes\n\nPara usuarios avanzados, el Creador de informes ofrece capacidades avanzadas:\n\n**Campos calculados** te permiten crear nuevas métricas combinando campos existentes. Por ejemplo, crea un campo 'Días hasta el cierre' calculando Fecha de cierre menos Fecha de creación. O calcula 'Monto de comisión' como Valor del negocio * Tasa de comisión. Los campos calculados usan fórmulas similares a Excel con funciones para matemáticas, texto, fechas y condicionales.\n\n**Informes entre objetos** a través de uniones te permite combinar datos de objetos relacionados. Por ejemplo, informa sobre Negocios pero incluye detalles de Propiedad, información de Contacto e historial de Actividad. El mapeo de relaciones de Tesoro hace que las uniones sean intuitivas: simplemente selecciona objetos relacionados y sus campos estarán disponibles.\n\n**Grupos de filtros con lógica AND/OR** para criterios complejos. Por ejemplo: (Agente = María O Agente = Carlos) Y (Valor del negocio > €100k) Y (Fecha de cierre = Este año). Los grupos de filtros anidados proporcionan flexibilidad ilimitada para precisamente el subconjunto de datos que necesitas.\n\n**Fórmulas a nivel de fila** para formato condicional y cálculos. Por ejemplo, resalta filas donde Tamaño del negocio > Promedio del equipo en verde, o donde Días en el mercado > 90 en rojo. Las fórmulas pueden hacer referencia a otros campos en la misma fila.\n\n**Agrupación y subtotales** en informes de tabla. Agrupa registros por agente o mes, con subtotales para cada grupo y totales generales al final. Contrae/expande grupos para exploración jerárquica de datos.\n\n**Desglose de gráficos** permite a los usuarios hacer clic en elementos del gráfico para ver datos subyacentes. Por ejemplo, haz clic en una barra en un gráfico 'Negocios por mes' para ver todos los negocios de ese mes en formato de tabla.\n\n**Parámetros de informe** hacen que los informes sean dinámicos. Por ejemplo, crea un informe de 'Rendimiento del equipo' con parámetro para Equipo: los usuarios seleccionan qué equipo en tiempo de ejecución en lugar de informes separados por equipo."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "performance-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Optimaliseer rapport performance",
+        "en": "Optimize Report Performance",
+        "es": "Optimizar el rendimiento del informe"
+      },
+      "content": {
+        "nl": "Grote rapporten met duizenden records kunnen traag laden. Voor betere performance: (1) Gebruik filters om de dataset te beperken - rapporteer op Recent data (bijv. This Year) in plaats van All Time tenzij nodig, (2) Limit het aantal columns in table reports - elke extra field verhoogt processing tijd, (3) Voor summary reports, aggregate op hogere levels (maand in plaats van dag) voor snellere results, (4) Schedule resource-intensive rapporten om te runnen tijdens off-peak hours (nachts) in plaats van on-demand tijdens business hours, (5) Cache frequently-used rapporten - Tesoro slaat recent report results op voor 15 minuten. Als performance een probleem blijft, contacteer support voor database indexing optimization.",
+        "en": "Large reports with thousands of records can load slowly. For better performance: (1) Use filters to limit the dataset - report on Recent data (e.g., This Year) instead of All Time unless needed, (2) Limit the number of columns in table reports - each additional field increases processing time, (3) For summary reports, aggregate at higher levels (month instead of day) for faster results, (4) Schedule resource-intensive reports to run during off-peak hours (nighttime) instead of on-demand during business hours, (5) Cache frequently-used reports - Tesoro stores recent report results for 15 minutes. If performance remains an issue, contact support for database indexing optimization.",
+        "es": "Los informes grandes con miles de registros pueden cargarse lentamente. Para un mejor rendimiento: (1) Usa filtros para limitar el conjunto de datos: informa sobre datos Recientes (por ejemplo, Este año) en lugar de Todo el tiempo a menos que sea necesario, (2) Limita el número de columnas en informes de tabla: cada campo adicional aumenta el tiempo de procesamiento, (3) Para informes de resumen, agrega en niveles más altos (mes en lugar de día) para resultados más rápidos, (4) Programa informes que requieren muchos recursos para ejecutarse durante horas de bajo uso (noche) en lugar de a pedido durante horas comerciales, (5) Almacena en caché informes de uso frecuente: Tesoro almacena resultados de informes recientes durante 15 minutos. Si el rendimiento sigue siendo un problema, contacta al soporte para optimización de indexación de base de datos."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "governance-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Let op data governance en privacy",
+        "en": "Mind Data Governance And Privacy",
+        "es": "Cuidado con la gobernanza de datos y la privacidad"
+      },
+      "content": {
+        "nl": "Wanneer je custom rapporten bouwt, wees je bewust van data security en privacy: (1) Commission en financiële data moet PRIVATE blijven - deel geen commission rapporten company-wide tenzij beleid dit toestaat, (2) Client personal information (phone numbers, emails, financial details) moet worden beschermd - gebruik aggregated rapporten in plaats van detail exports bij delen met externen, (3) Respecteer role-based access - agents moeten alleen hun eigen data zien, niet van andere agents (tenzij ze managers zijn), (4) GDPR/privacy compliance - wees voorzichtig met exporteren van client data buiten het systeem, vooral naar third-party tools, (5) Set appropriate visibility - gebruik Team visibility voor rapporten met team data, Private voor sensitive financial reports. Tesoro's permission system zorgt dat users alleen data kunnen zien die ze mogen, maar jij bent verantwoordelijk voor thoughtful report sharing practices.",
+        "en": "When building custom reports, be mindful of data security and privacy: (1) Commission and financial data should remain PRIVATE - don't share commission reports company-wide unless policy allows, (2) Client personal information (phone numbers, emails, financial details) must be protected - use aggregated reports instead of detail exports when sharing with externals, (3) Respect role-based access - agents should only see their own data, not other agents' (unless they're managers), (4) GDPR/privacy compliance - be careful exporting client data outside the system, especially to third-party tools, (5) Set appropriate visibility - use Team visibility for reports with team data, Private for sensitive financial reports. Tesoro's permission system ensures users only see data they're allowed to, but you're responsible for thoughtful report sharing practices.",
+        "es": "Al construir informes personalizados, ten en cuenta la seguridad y privacidad de los datos: (1) Los datos de comisiones y financieros deben permanecer PRIVADOS: no compartas informes de comisiones en toda la empresa a menos que la política lo permita, (2) La información personal del cliente (números de teléfono, correos electrónicos, detalles financieros) debe protegerse: usa informes agregados en lugar de exportaciones detalladas al compartir con externos, (3) Respeta el acceso basado en roles: los agentes solo deben ver sus propios datos, no los de otros agentes (a menos que sean gerentes), (4) Cumplimiento de GDPR/privacidad: ten cuidado al exportar datos de clientes fuera del sistema, especialmente a herramientas de terceros, (5) Establece la visibilidad apropiada: usa visibilidad de Equipo para informes con datos del equipo, Privado para informes financieros sensibles. El sistema de permisos de Tesoro garantiza que los usuarios solo vean los datos que se les permite, pero tú eres responsable de prácticas reflexivas de intercambio de informes."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik custom rapporten exporteren naar Excel met formulas en formatting?",
+            "en": "Can I export custom reports to Excel with formulas and formatting?",
+            "es": "¿Puedo exportar informes personalizados a Excel con fórmulas y formato?"
+          },
+          "answer": {
+            "nl": "Ja, Tesoro ondersteunt verschillende export formaten met verschillende capabilities. CSV export geeft raw data zonder formatting - ideaal voor import in andere systemen. Excel (.xlsx) export behoudt basic formatting zoals number formats, date formats, en column widths. Voor rapporten met calculated fields, de formulas worden geëvalueerd en resultaten geëxporteerd (niet de formulas zelf). Als je advanced Excel features nodig hebt (pivot tables, charts, complex formulas), exporteer dan naar CSV en process in Excel. Voor scheduled reports die naar stakeholders gaan, gebruik PDF export - dit behoudt alle visualisaties, formatting, en looks professional. Je kunt ook multiple formats tegelijk genereren bij scheduled delivery.",
+            "en": "Yes, Tesoro supports different export formats with varying capabilities. CSV export provides raw data without formatting - ideal for importing into other systems. Excel (.xlsx) export retains basic formatting like number formats, date formats, and column widths. For reports with calculated fields, the formulas are evaluated and results exported (not the formulas themselves). If you need advanced Excel features (pivot tables, charts, complex formulas), export to CSV and process in Excel. For scheduled reports going to stakeholders, use PDF export - this preserves all visualizations, formatting, and looks professional. You can also generate multiple formats simultaneously in scheduled delivery.",
+            "es": "Sí, Tesoro admite diferentes formatos de exportación con diferentes capacidades. La exportación de CSV proporciona datos sin procesar sin formato, ideal para importar a otros sistemas. La exportación de Excel (.xlsx) conserva el formato básico como formatos de número, formatos de fecha y anchos de columna. Para informes con campos calculados, las fórmulas se evalúan y los resultados se exportan (no las fórmulas en sí). Si necesitas funciones avanzadas de Excel (tablas dinámicas, gráficos, fórmulas complejas), exporta a CSV y procesa en Excel. Para informes programados que van a las partes interesadas, usa la exportación de PDF: esto preserva todas las visualizaciones, el formato y se ve profesional. También puedes generar múltiples formatos simultáneamente en la entrega programada."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe kan ik een rapport maken dat automatisch de vorige maand's data toont?",
+            "en": "How can I create a report that automatically shows last month's data?",
+            "es": "¿Cómo puedo crear un informe que muestre automáticamente los datos del mes pasado?"
+          },
+          "answer": {
+            "nl": "Gebruik dynamic date filters in plaats van hard-coded dates. In de Filter sectie van je rapport, wanneer je een date field selecteert (bijv. Close Date), kies 'Relative Date Range' in plaats van 'Specific Date'. Dan selecteer 'Last Month' uit de dropdown. Dit filter wordt automatisch updated - als je het rapport runned in november, toont het oktober data. Als je het in december runned, toont het november data. Andere useful relative dates zijn: This Month, This Quarter, This Year, Last Quarter, Last 30 Days, Last 90 Days. Voor meer controle, gebruik 'Custom Relative' waar je kunt specificeren bijv. 'Last 3 Months' of 'Next Quarter'. Relative dates zijn essentieel voor scheduled reports die consistent results moeten geven zonder manual updates.",
+            "en": "Use dynamic date filters instead of hard-coded dates. In the Filter section of your report, when you select a date field (e.g., Close Date), choose 'Relative Date Range' instead of 'Specific Date'. Then select 'Last Month' from the dropdown. This filter automatically updates - if you run the report in November, it shows October data. If you run it in December, it shows November data. Other useful relative dates are: This Month, This Quarter, This Year, Last Quarter, Last 30 Days, Last 90 Days. For more control, use 'Custom Relative' where you can specify e.g., 'Last 3 Months' or 'Next Quarter'. Relative dates are essential for scheduled reports that need to deliver consistent results without manual updates.",
+            "es": "Usa filtros de fecha dinámicos en lugar de fechas codificadas. En la sección Filtro de tu informe, cuando selecciones un campo de fecha (por ejemplo, Fecha de cierre), elige 'Rango de fecha relativo' en lugar de 'Fecha específica'. Luego selecciona 'Mes pasado' del menú desplegable. Este filtro se actualiza automáticamente: si ejecutas el informe en noviembre, muestra datos de octubre. Si lo ejecutas en diciembre, muestra datos de noviembre. Otras fechas relativas útiles son: Este mes, Este trimestre, Este año, Último trimestre, Últimos 30 días, Últimos 90 días. Para más control, usa 'Relativo personalizado' donde puedes especificar, por ejemplo, 'Últimos 3 meses' o 'Próximo trimestre'. Las fechas relativas son esenciales para informes programados que necesitan entregar resultados consistentes sin actualizaciones manuales."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik een rapport bouwen dat data van leads EN properties combineert?",
+            "en": "Can I build a report that combines data from leads AND properties?",
+            "es": "¿Puedo construir un informe que combine datos de leads Y propiedades?"
+          },
+          "answer": {
+            "nl": "Ja, via cross-object joins. Start je rapport op het primaire object (bijv. Leads), dan klik 'Add Related Object' en selecteer Properties. Tesoro's data model kent de relationships - als een Lead is linked aan een Property via een lookup field, kun je Property fields toevoegen aan je Lead rapport. Bijvoorbeeld, rapport op Leads met columns voor Lead Source, Lead Status, EN Property Address, Property Price, Property Type. Je kunt meerdere related objects toevoegen (bijv. Leads + Properties + Contacts + Activities). Let op: joins kunnen rapport performance beïnvloeden als er veel data is. Voor optimale performance, filter eerst op je primaire object voordat je related objects joined. Als objects geen directe relationship hebben, kun je mogelijk niet joinen - contacteer support als je denkt dat een relationship ontbreekt.",
+            "en": "Yes, via cross-object joins. Start your report on the primary object (e.g., Leads), then click 'Add Related Object' and select Properties. Tesoro's data model knows the relationships - if a Lead is linked to a Property via a lookup field, you can add Property fields to your Lead report. For example, report on Leads with columns for Lead Source, Lead Status, AND Property Address, Property Price, Property Type. You can add multiple related objects (e.g., Leads + Properties + Contacts + Activities). Note: joins can impact report performance if there's lots of data. For optimal performance, filter on your primary object first before joining related objects. If objects don't have a direct relationship, you may not be able to join - contact support if you think a relationship is missing.",
+            "es": "Sí, a través de uniones entre objetos. Inicia tu informe en el objeto principal (por ejemplo, Leads), luego haz clic en 'Agregar objeto relacionado' y selecciona Propiedades. El modelo de datos de Tesoro conoce las relaciones: si un Lead está vinculado a una Propiedad a través de un campo de búsqueda, puedes agregar campos de Propiedad a tu informe de Lead. Por ejemplo, informa sobre Leads con columnas para Fuente de lead, Estado del lead, Y Dirección de propiedad, Precio de propiedad, Tipo de propiedad. Puedes agregar múltiples objetos relacionados (por ejemplo, Leads + Propiedades + Contactos + Actividades). Nota: las uniones pueden afectar el rendimiento del informe si hay muchos datos. Para un rendimiento óptimo, filtra primero en tu objeto principal antes de unir objetos relacionados. Si los objetos no tienen una relación directa, es posible que no puedas unirlos: contacta al soporte si crees que falta una relación."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe kan ik voorkomen dat gebruikers mijn custom rapport aanpassen of verwijderen?",
+            "en": "How can I prevent users from modifying or deleting my custom report?",
+            "es": "¿Cómo puedo evitar que los usuarios modifiquen o eliminen mi informe personalizado?"
+          },
+          "answer": {
+            "nl": "Gebruik report permissions om te controleren wie kan view, edit, of delete. Bij het opslaan van je rapport, set de visibility op basis van wie het moet kunnen zien: Private (alleen jij), Team (je team kan viewen maar niet editten), of Company (iedereen kan viewen). Voor rapporten die je wilt sharen maar beschermen tegen wijzigingen: (1) Maak het rapport met alle gewenste configuratie, (2) Set visibility naar Team of Company voor viewing access, (3) Als admin, gebruik de 'Lock Report' optie - dit voorkomt dat non-admins het rapport kunnen editen of deleten. Users kunnen het nog steeds viewen en runnen, maar geen wijzigingen maken. Als users hun eigen version willen, kunnen ze het rapport 'Clone' - dit maakt een copy die ze kunnen aanpassen zonder het origineel te beïnvloeden. Voor enterprise deployments, contacteer support voor role-based report management waar je kunt definiëren welke roles rapporten kunnen maken versus alleen viewen.",
+            "en": "Use report permissions to control who can view, edit, or delete. When saving your report, set the visibility based on who should see it: Private (only you), Team (your team can view but not edit), or Company (everyone can view). For reports you want to share but protect from changes: (1) Create the report with all desired configuration, (2) Set visibility to Team or Company for viewing access, (3) As admin, use the 'Lock Report' option - this prevents non-admins from editing or deleting the report. Users can still view and run it, but can't make changes. If users want their own version, they can 'Clone' the report - this creates a copy they can modify without affecting the original. For enterprise deployments, contact support for role-based report management where you can define which roles can create reports versus only view.",
+            "es": "Usa permisos de informe para controlar quién puede ver, editar o eliminar. Al guardar tu informe, establece la visibilidad según quién debería verlo: Privado (solo tú), Equipo (tu equipo puede ver pero no editar) o Empresa (todos pueden ver). Para informes que deseas compartir pero proteger de cambios: (1) Crea el informe con toda la configuración deseada, (2) Establece la visibilidad en Equipo o Empresa para acceso de visualización, (3) Como administrador, usa la opción 'Bloquear informe': esto evita que los no administradores puedan editar o eliminar el informe. Los usuarios aún pueden verlo y ejecutarlo, pero no pueden hacer cambios. Si los usuarios quieren su propia versión, pueden 'Clonar' el informe: esto crea una copia que pueden modificar sin afectar el original. Para implementaciones empresariales, contacta al soporte para la gestión de informes basada en roles donde puedes definir qué roles pueden crear informes versus solo ver."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "dashboard-kpis-overview",
+    "data-export-options",
+    "sales-performance-reports"
+  ]
+}

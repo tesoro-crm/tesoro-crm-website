@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "id": "calendar-overview-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "sofia-lopez",
+    "category": "communication",
+    "difficulty": "beginner",
+    "tags": ["calendar", "overview", "scheduling", "time-management"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro calendar", "real estate scheduling", "crm calendar", "property viewing calendar", "meeting scheduler"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Kalender overzicht en navigatie",
+      "en": "Calendar Overview and Navigation",
+      "es": "Vista general del calendario y navegación"
+    },
+    "description": {
+      "nl": "Leer hoe je de Tesoro kalender gebruikt om je afspraken, bezichtigingen en vergaderingen efficiënt te beheren.",
+      "en": "Learn how to use the Tesoro calendar to efficiently manage your appointments, viewings, and meetings.",
+      "es": "Aprende a usar el calendario de Tesoro para gestionar eficientemente tus citas, visitas y reuniones."
+    },
+    "icon": "event"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "De Tesoro kalender is het centrale punt voor het beheren van al je vastgoedactiviteiten. Of je nu bezichtigingen plant, vergaderingen inplant met klanten of je beschikbaarheid beheert, de kalender biedt een overzichtelijke interface om je dag georganiseerd te houden. Deze gids laat je zien hoe je door de kalender navigeert en het meeste uit de verschillende weergaven haalt.",
+        "en": "The Tesoro calendar is your central hub for managing all your real estate activities. Whether you're scheduling property viewings, booking meetings with clients, or managing your availability, the calendar provides a clear interface to keep your day organized. This guide will show you how to navigate the calendar and make the most of its different views.",
+        "es": "El calendario de Tesoro es tu centro de control para gestionar todas tus actividades inmobiliarias. Ya sea que estés programando visitas a propiedades, agendando reuniones con clientes o gestionando tu disponibilidad, el calendario proporciona una interfaz clara para mantener tu día organizado. Esta guía te mostrará cómo navegar por el calendario y aprovechar al máximo sus diferentes vistas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "accessing-calendar",
+      "title": {
+        "nl": "Toegang tot de kalender",
+        "en": "Accessing the Calendar",
+        "es": "Acceder al calendario"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar de kalender",
+            "en": "Navigate to Calendar",
+            "es": "Navegar al calendario"
+          },
+          "description": {
+            "nl": "Klik op het kalender icoon in de hoofdnavigatie of gebruik de sneltoets Ctrl+K (Cmd+K op Mac) om direct naar de kalender te gaan.",
+            "en": "Click the calendar icon in the main navigation or use the keyboard shortcut Ctrl+K (Cmd+K on Mac) to jump directly to the calendar.",
+            "es": "Haz clic en el icono del calendario en la navegación principal o usa el atajo de teclado Ctrl+K (Cmd+K en Mac) para ir directamente al calendario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies je standaard weergave",
+            "en": "Choose Your Default View",
+            "es": "Elige tu vista predeterminada"
+          },
+          "description": {
+            "nl": "De kalender opent standaard in de weekweergave. Je kunt je voorkeursweergave instellen in je gebruikersinstellingen onder 'Kalendervoorkeuren'.",
+            "en": "The calendar opens in week view by default. You can set your preferred default view in your user settings under 'Calendar Preferences'.",
+            "es": "El calendario se abre en vista de semana por defecto. Puedes configurar tu vista predeterminada preferida en la configuración de usuario bajo 'Preferencias de calendario'."
+          }
+        },
+        {
+          "title": {
+            "nl": "Aanpassen aan je tijdzone",
+            "en": "Adjust to Your Timezone",
+            "es": "Ajustar a tu zona horaria"
+          },
+          "description": {
+            "nl": "Tesoro detecteert automatisch je tijdzone. Als je regelmatig in verschillende tijdzones werkt, kun je een secundaire tijdzone weergeven in de kalenderinstellingen.",
+            "en": "Tesoro automatically detects your timezone. If you regularly work across different timezones, you can display a secondary timezone in calendar settings.",
+            "es": "Tesoro detecta automáticamente tu zona horaria. Si trabajas regularmente en diferentes zonas horarias, puedes mostrar una zona horaria secundaria en la configuración del calendario."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "calendar-views",
+      "title": {
+        "nl": "Kalenderweergaven begrijpen",
+        "en": "Understanding Calendar Views",
+        "es": "Comprender las vistas del calendario"
+      },
+      "content": {
+        "nl": "Tesoro biedt vier verschillende kalenderweergaven, elk ontworpen voor verschillende planningsbehoeften. Wissel tussen weergaven met de knoppen bovenaan de kalender of gebruik sneltoetsen voor snelle toegang.",
+        "en": "Tesoro offers four different calendar views, each designed for different scheduling needs. Switch between views using the buttons at the top of the calendar or use keyboard shortcuts for quick access.",
+        "es": "Tesoro ofrece cuatro vistas de calendario diferentes, cada una diseñada para diferentes necesidades de programación. Cambia entre vistas usando los botones en la parte superior del calendario o usa atajos de teclado para acceso rápido."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "view-types",
+      "title": {
+        "nl": "Weergave typen",
+        "en": "View Types",
+        "es": "Tipos de vista"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Dagweergave",
+            "en": "Day View",
+            "es": "Vista de día"
+          },
+          "description": {
+            "nl": "Perfekt voor drukke dagen met veel afspraken. Toont één dag in detail met tijdslots van 15 minuten. Ideaal voor het zien van exacte tijden en het vermijden van dubbele boekingen. Sneltoets: D",
+            "en": "Perfect for busy days with multiple appointments. Shows one day in detail with 15-minute time slots. Ideal for seeing exact timings and avoiding double-bookings. Keyboard shortcut: D",
+            "es": "Perfecto para días ocupados con múltiples citas. Muestra un día en detalle con intervalos de tiempo de 15 minutos. Ideal para ver horarios exactos y evitar reservas duplicadas. Atajo de teclado: D"
+          }
+        },
+        {
+          "title": {
+            "nl": "Weekweergave",
+            "en": "Week View",
+            "es": "Vista de semana"
+          },
+          "description": {
+            "nl": "De meest populaire weergave voor vastgoedmakelaars. Toont een volledige werkweek (maandag-vrijdag) of 7 dagen afhankelijk van je voorkeuren. Geweldig voor het plannen van bezichtigingen en het balanceren van je werkbelasting. Sneltoets: W",
+            "en": "The most popular view for real estate agents. Shows a full work week (Monday-Friday) or 7 days depending on your preferences. Great for planning viewings and balancing your workload. Keyboard shortcut: W",
+            "es": "La vista más popular para agentes inmobiliarios. Muestra una semana laboral completa (lunes a viernes) o 7 días según tus preferencias. Excelente para planificar visitas y equilibrar tu carga de trabajo. Atajo de teclado: W"
+          }
+        },
+        {
+          "title": {
+            "nl": "Maandweergave",
+            "en": "Month View",
+            "es": "Vista de mes"
+          },
+          "description": {
+            "nl": "Hoogste niveau overzicht van je schema. Toont alle evenementen voor de hele maand. Handig voor langetermijnplanning en het identificeren van drukke periodes. Sneltoets: M",
+            "en": "Highest-level overview of your schedule. Shows all events for the entire month. Useful for long-term planning and identifying busy periods. Keyboard shortcut: M",
+            "es": "Vista general de más alto nivel de tu agenda. Muestra todos los eventos del mes completo. Útil para planificación a largo plazo e identificar períodos ocupados. Atajo de teclado: M"
+          }
+        },
+        {
+          "title": {
+            "nl": "Agendaweergave",
+            "en": "Agenda View",
+            "es": "Vista de agenda"
+          },
+          "description": {
+            "nl": "Lijst-gebaseerde weergave van aankomende evenementen in chronologische volgorde. Toont evenementdetails zonder tijdslots. Perfect voor het snel scannen van wat er aankomt. Sneltoets: A",
+            "en": "List-based view of upcoming events in chronological order. Shows event details without time slots. Perfect for quickly scanning what's coming up. Keyboard shortcut: A",
+            "es": "Vista de lista de eventos próximos en orden cronológico. Muestra detalles del evento sin intervalos de tiempo. Perfecto para escanear rápidamente lo que viene. Atajo de teclado: A"
+          }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "navigation-controls",
+      "title": {
+        "nl": "Navigatie besturingselementen",
+        "en": "Navigation Controls",
+        "es": "Controles de navegación"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Tijdnavigatie",
+            "en": "Time Navigation",
+            "es": "Navegación temporal"
+          },
+          "description": {
+            "nl": "Gebruik de pijl knoppen om vooruit of achteruit te gaan (een dag, week of maand afhankelijk van je huidige weergave). De 'Vandaag' knop brengt je onmiddellijk terug naar de huidige datum.",
+            "en": "Use the arrow buttons to move forward or backward (one day, week, or month depending on your current view). The 'Today' button instantly returns you to the current date.",
+            "es": "Usa los botones de flecha para avanzar o retroceder (un día, semana o mes según tu vista actual). El botón 'Hoy' te devuelve instantáneamente a la fecha actual."
+          }
+        },
+        {
+          "title": {
+            "nl": "Datumkiezer",
+            "en": "Date Picker",
+            "es": "Selector de fecha"
+          },
+          "description": {
+            "nl": "Klik op de huidige datumweergave om een kalender-popup te openen waar je naar elke datum kunt springen. Handig voor het bekijken van toekomstige beschikbaarheid of het vinden van oude afspraken.",
+            "en": "Click the current date display to open a calendar popup where you can jump to any date. Useful for viewing future availability or finding past appointments.",
+            "es": "Haz clic en la visualización de fecha actual para abrir un calendario emergente donde puedes saltar a cualquier fecha. Útil para ver disponibilidad futura o encontrar citas pasadas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Zoombesturingselementen",
+            "en": "Zoom Controls",
+            "es": "Controles de zoom"
+          },
+          "description": {
+            "nl": "In dag- en weekweergave kun je in- en uitzoomen om de tijdsloothoogte aan te passen. Zoom in voor meer detail of zoom uit om een groter tijdbereik te zien zonder scrollen.",
+            "en": "In day and week views, you can zoom in and out to adjust time slot height. Zoom in for more detail or zoom out to see a larger time range without scrolling.",
+            "es": "En las vistas de día y semana, puedes acercar y alejar para ajustar la altura del intervalo de tiempo. Acerca para más detalle o aleja para ver un rango de tiempo más amplio sin desplazarte."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "event-interactions",
+      "title": {
+        "nl": "Interactie met evenementen",
+        "en": "Interacting With Events",
+        "es": "Interactuar con eventos"
+      },
+      "content": {
+        "nl": "Kalender evenementen in Tesoro zijn interactief en geven je snelle toegang tot alle details die je nodig hebt. Verschillende soorten evenementen worden weergegeven met kleurcodering voor gemakkelijke identificatie.",
+        "en": "Calendar events in Tesoro are interactive and give you quick access to all the details you need. Different event types are displayed with color-coding for easy identification.",
+        "es": "Los eventos del calendario en Tesoro son interactivos y te dan acceso rápido a todos los detalles que necesitas. Diferentes tipos de eventos se muestran con códigos de color para fácil identificación."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "event-actions",
+      "title": {
+        "nl": "Evenement acties",
+        "en": "Event Actions",
+        "es": "Acciones de evento"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Evenement details bekijken",
+            "en": "View Event Details",
+            "es": "Ver detalles del evento"
+          },
+          "description": {
+            "nl": "Klik op een evenement om een quick-view popup te openen met alle details: tijd, locatie, deelnemers, gekoppelde contacten en eigendommen. Geen noodzaak om de kalenderweergave te verlaten.",
+            "en": "Click any event to open a quick-view popup with all details: time, location, attendees, linked contacts, and properties. No need to leave the calendar view.",
+            "es": "Haz clic en cualquier evento para abrir una ventana de vista rápida con todos los detalles: hora, ubicación, asistentes, contactos vinculados y propiedades. No es necesario salir de la vista del calendario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Evenementen bewerken",
+            "en": "Edit Events",
+            "es": "Editar eventos"
+          },
+          "description": {
+            "nl": "Sleep evenementen om ze naar een nieuwe tijd te verplaatsen. Sleep de randen om de duur aan te passen. Of gebruik het bewerkingspictogram in de quick-view voor gedetailleerde wijzigingen.",
+            "en": "Drag events to move them to a new time. Drag the edges to adjust duration. Or use the edit icon in the quick-view for detailed changes.",
+            "es": "Arrastra eventos para moverlos a una nueva hora. Arrastra los bordes para ajustar la duración. O usa el icono de edición en la vista rápida para cambios detallados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Evenementen kleurcodering",
+            "en": "Event Color Coding",
+            "es": "Código de colores de eventos"
+          },
+          "description": {
+            "nl": "Bezichtigingen worden blauw weergegeven, vergaderingen groen, blokkeertijd grijs en persoonlijke evenementen paars. Je kunt aangepaste kleuren instellen voor specifieke contacten of panden.",
+            "en": "Viewings appear in blue, meetings in green, blocked time in gray, and personal events in purple. You can set custom colors for specific contacts or properties.",
+            "es": "Las visitas aparecen en azul, las reuniones en verde, el tiempo bloqueado en gris y los eventos personales en morado. Puedes configurar colores personalizados para contactos o propiedades específicas."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "productivity-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Productiviteitstip",
+        "en": "Productivity Tip",
+        "es": "Consejo de productividad"
+      },
+      "content": {
+        "nl": "Gebruik de weekweergave als je primaire weergave voor dagelijkse planning. Wissel naar dagweergave op drukke dagen wanneer je nauwkeurige timing nodig hebt, en gebruik de maandweergave aan het begin van elke maand om je werkbelasting te plannen. Deze combinatie helpt je zowel gedetailleerd als overzicht te blijven.",
+        "en": "Use week view as your primary view for daily planning. Switch to day view on busy days when you need precise timing, and use month view at the start of each month to plan your workload. This combination keeps you both detailed and big-picture oriented.",
+        "es": "Usa la vista de semana como tu vista principal para planificación diaria. Cambia a vista de día en días ocupados cuando necesites horarios precisos, y usa la vista de mes al inicio de cada mes para planificar tu carga de trabajo. Esta combinación te mantiene tanto detallado como orientado al panorama general."
+      }
+    },
+    {
+      "type": "text",
+      "id": "filters-calendars",
+      "title": {
+        "nl": "Filters en kalenders",
+        "en": "Filters and Calendars",
+        "es": "Filtros y calendarios"
+      },
+      "content": {
+        "nl": "De linker zijbalk bevat filters en kalenderweergave opties om je te helpen focussen op wat belangrijk is. Je kunt meerdere kalenders tegelijk weergeven of filteren op evenementtype, contact of pand.",
+        "en": "The left sidebar contains filters and calendar display options to help you focus on what matters. You can display multiple calendars simultaneously or filter by event type, contact, or property.",
+        "es": "La barra lateral izquierda contiene filtros y opciones de visualización de calendario para ayudarte a enfocarte en lo importante. Puedes mostrar múltiples calendarios simultáneamente o filtrar por tipo de evento, contacto o propiedad."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "using-filters",
+      "title": {
+        "nl": "Filters gebruiken",
+        "en": "Using Filters",
+        "es": "Usar filtros"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Evenementtype filters",
+            "en": "Event Type Filters",
+            "es": "Filtros de tipo de evento"
+          },
+          "description": {
+            "nl": "Toon alleen bezichtigingen, vergaderingen of geblokkeerde tijd door de selectievakjes in de zijbalk aan/uit te zetten. Dit helpt je te focussen op één type activiteit per keer.",
+            "en": "Show only viewings, meetings, or blocked time by toggling the checkboxes in the sidebar. This helps you focus on one type of activity at a time.",
+            "es": "Muestra solo visitas, reuniones o tiempo bloqueado activando las casillas de verificación en la barra lateral. Esto te ayuda a enfocarte en un tipo de actividad a la vez."
+          }
+        },
+        {
+          "title": {
+            "nl": "Teamkalenders",
+            "en": "Team Calendars",
+            "es": "Calendarios de equipo"
+          },
+          "description": {
+            "nl": "Bekijk de kalenders van je teamleden naast de jouwe om vergaderingen te coördineren en gedeelde beschikbaarheid te vinden. Ideaal voor teams die samenwerken aan deals of dubbele bezichtigingen organiseren.",
+            "en": "View your team members' calendars alongside yours to coordinate meetings and find shared availability. Ideal for teams collaborating on deals or organizing double viewings.",
+            "es": "Ve los calendarios de los miembros de tu equipo junto al tuyo para coordinar reuniones y encontrar disponibilidad compartida. Ideal para equipos que colaboran en negocios u organizan visitas dobles."
+          }
+        },
+        {
+          "title": {
+            "nl": "Contact- en pandfilters",
+            "en": "Contact and Property Filters",
+            "es": "Filtros de contacto y propiedad"
+          },
+          "description": {
+            "nl": "Filter evenementen die gekoppeld zijn aan een specifiek contact of pand. Handig wanneer je je voorbereidt op een grote presentatie of alle activiteit rond een bepaalde deal wilt bekijken.",
+            "en": "Filter events linked to a specific contact or property. Useful when preparing for a big presentation or wanting to see all activity around a particular deal.",
+            "es": "Filtra eventos vinculados a un contacto o propiedad específica. Útil al prepararte para una gran presentación o cuando quieres ver toda la actividad relacionada con un negocio en particular."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "mobile-tip",
+      "variant": "info",
+      "title": {
+        "nl": "Mobiele app",
+        "en": "Mobile App",
+        "es": "Aplicación móvil"
+      },
+      "content": {
+        "nl": "De Tesoro mobiele app synchroniseert automatisch met je kalender, zodat je onderweg je schema kunt bekijken en afspraken kunt bijwerken. Perfect voor wanneer je tussen bezichtigingen zit of bij een klant bent.",
+        "en": "The Tesoro mobile app automatically syncs with your calendar, allowing you to view your schedule and update appointments on the go. Perfect for when you're between viewings or at a client's location.",
+        "es": "La aplicación móvil de Tesoro se sincroniza automáticamente con tu calendario, permitiéndote ver tu agenda y actualizar citas sobre la marcha. Perfecto para cuando estás entre visitas o en la ubicación de un cliente."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik mijn Google Agenda synchroniseren met Tesoro?",
+            "en": "Can I sync my Google Calendar with Tesoro?",
+            "es": "¿Puedo sincronizar mi Google Calendar con Tesoro?"
+          },
+          "answer": {
+            "nl": "Ja! Tesoro ondersteunt bidirectionele synchronisatie met Google Agenda. Evenementen die zijn gemaakt in Tesoro verschijnen in Google Agenda, en vice versa. Zie ons artikel over Google Agenda synchronisatie instellen voor configuratie-instructies.",
+            "en": "Yes! Tesoro supports bidirectional sync with Google Calendar. Events created in Tesoro appear in Google Calendar, and vice versa. See our article on setting up Google Calendar sync for configuration instructions.",
+            "es": "¡Sí! Tesoro admite sincronización bidireccional con Google Calendar. Los eventos creados en Tesoro aparecen en Google Calendar, y viceversa. Consulta nuestro artículo sobre configuración de sincronización de Google Calendar para instrucciones de configuración."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe voorkom ik dubbele boekingen?",
+            "en": "How do I prevent double-bookings?",
+            "es": "¿Cómo evito reservas duplicadas?"
+          },
+          "answer": {
+            "nl": "Tesoro waarschuwt je automatisch wanneer je probeert een evenement te maken dat overlapt met een bestaande afspraak. Je kunt ook 'buffer tijd' instellen tussen afspraken in je kalendervoorkeuren om reistijd tussen bezichtigingen te garanderen.",
+            "en": "Tesoro automatically alerts you when you try to create an event that overlaps with an existing appointment. You can also set 'buffer time' between appointments in your calendar preferences to ensure travel time between viewings.",
+            "es": "Tesoro te alerta automáticamente cuando intentas crear un evento que se superpone con una cita existente. También puedes configurar 'tiempo de búfer' entre citas en tus preferencias de calendario para asegurar tiempo de viaje entre visitas."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik terugkerende evenementen instellen?",
+            "en": "Can I set up recurring events?",
+            "es": "¿Puedo configurar eventos recurrentes?"
+          },
+          "answer": {
+            "nl": "Absoluut. Bij het maken van een evenement, klik op 'Herhalen' en kies je patroon: dagelijks, wekelijks, maandelijks of aangepast. Handig voor wekelijkse teamvergaderingen, maandelijkse open huis evenementen of dagelijkse blokkeertijd.",
+            "en": "Absolutely. When creating an event, click 'Repeat' and choose your pattern: daily, weekly, monthly, or custom. Useful for weekly team meetings, monthly open house events, or daily blocked time.",
+            "es": "Absolutamente. Al crear un evento, haz clic en 'Repetir' y elige tu patrón: diario, semanal, mensual o personalizado. Útil para reuniones de equipo semanales, eventos de casa abierta mensuales o tiempo bloqueado diario."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er met mijn kalender als ik tijdzones verander?",
+            "en": "What happens to my calendar when I change timezones?",
+            "es": "¿Qué pasa con mi calendario cuando cambio de zona horaria?"
+          },
+          "answer": {
+            "nl": "Tesoro slaat alle evenementen op in UTC en geeft ze weer in je huidige tijdzone. Wanneer je reist, passen je evenementen automatisch aan naar de lokale tijd. Je kunt ook een secundaire tijdzone weergeven om verwarring te voorkomen.",
+            "en": "Tesoro stores all events in UTC and displays them in your current timezone. When you travel, your events automatically adjust to local time. You can also display a secondary timezone to avoid confusion.",
+            "es": "Tesoro almacena todos los eventos en UTC y los muestra en tu zona horaria actual. Cuando viajas, tus eventos se ajustan automáticamente a la hora local. También puedes mostrar una zona horaria secundaria para evitar confusión."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "google-calendar-sync-setup",
+    "scheduling-property-viewings",
+    "meeting-scheduling-guide",
+    "calendar-availability-management"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "id": "time-management-tesoro",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T15:15:00Z",
+    "authorId": "sofia-lopez",
+    "category": "best-practices",
+    "difficulty": "intermediate",
+    "tags": ["productivity", "time-management", "workflow", "efficiency", "organization"],
+    "featured": false,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
+    "keywords": ["time management", "productivity tips", "workflow optimization", "daily routine", "real estate efficiency"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Tijdmanagement in Tesoro",
+      "en": "Time Management in Tesoro",
+      "es": "Gestión del tiempo en Tesoro"
+    },
+    "description": {
+      "nl": "Optimaliseer je dagelijkse workflow, werk efficiënter, en focus op activiteiten die daadwerkelijk deals sluiten.",
+      "en": "Optimize your daily workflow, work more efficiently, and focus on activities that actually close deals.",
+      "es": "Optimiza tu flujo de trabajo diario, trabaja más eficientemente y enfócate en actividades que realmente cierran deals."
+    },
+    "icon": "schedule"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Top-performing agents zijn niet harder working - ze're smarter working. Ze spenderen 60-70% van hun tijd aan revenue-generating activities (viewings, negotiations, lead follow-up) versus gemiddelde agents die 30-40% spenderen (de rest: admin, reactive tasks, time-wasters).</p><p>Deze guide toont je exact hoe je je tijd optimaliseert met Tesoro CRM.</p>"
+        },
+        "en": {
+          "text": "<p>Top-performing agents don't work harder - they work smarter. They spend 60-70% of their time on revenue-generating activities (viewings, negotiations, lead follow-up) versus average agents who spend 30-40% (the rest: admin, reactive tasks, time-wasters).</p><p>This guide shows you exactly how to optimize your time with Tesoro CRM.</p>"
+        },
+        "es": {
+          "text": "<p>Los agentes de alto rendimiento no trabajan más duro - trabajan más inteligentemente. Gastan 60-70% de su tiempo en actividades generadoras de ingresos (visitas, negociaciones, seguimiento de leads) versus agentes promedio que gastan 30-40% (el resto: admin, tareas reactivas, pérdidas de tiempo).</p><p>Esta guía te muestra exactamente cómo optimizar tu tiempo con Tesoro CRM.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "daily-routine",
+      "title": {
+        "nl": "De ideale dag in Tesoro",
+        "en": "The Ideal Day in Tesoro",
+        "es": "El día ideal en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Morning routine (8-10 AM): Planning & Priorities</h3><p><strong>8:00-8:30 - Pipeline review (30 min):</strong></p><ul><li>Open Tesoro Dashboard</li><li>Review KPIs: new leads, active deals, closing dates</li><li>Check Kanban board voor stagnating deals (>7 days in stage)</li><li>Review Today's tasks en scheduled activities</li><li>Prioritize top 3 MITs (Most Important Tasks) voor de dag</li></ul><p><strong>8:30-9:00 - Communication batch (30 min):</strong></p><ul><li>Respond to overnight emails/messages</li><li>Check voor urgent client requests</li><li>Review nieuwe leads van afgelopen 24 uur</li><li>Quick calls to hot leads (immediate response)</li></ul><p><strong>9:00-10:00 - Proactive outreach (60 min):</strong></p><ul><li>Call warm leads die follow-up nodig hebben</li><li>Send property updates naar qualified buyers</li><li>Schedule viewings voor de week</li><li>Run AI property matching voor nieuwe deals</li></ul><h3>Mid-day focus block (10 AM-1 PM): Revenue activities</h3><p><strong>10:00-1:00 - Viewings & meetings (3 hours):</strong></p><ul><li>Property viewings met buyers</li><li>Listing appointments met sellers</li><li>Negotiation calls</li><li>Valuation visits</li></ul><p><em>Protect this time - no admin, no internal meetings</em></p><h3>Afternoon workflow (2-5 PM): Mixed activities</h3><p><strong>2:00-3:00 - CRM updates & documentation (60 min):</strong></p><ul><li>Log morning's conversations en viewing feedback</li><li>Update deal statuses en next steps</li><li>Add detailed notes voor future reference</li><li>Create follow-up tasks</li></ul><p><strong>3:00-4:30 - Strategic work (90 min):</strong></p><ul><li>Create new property listings</li><li>Market research en comparables</li><li>Prepare presentations voor upcoming meetings</li><li>Email campaigns (property showcases, market updates)</li></ul><p><strong>4:30-5:00 - End-of-day review (30 min):</strong></p><ul><li>Review today's accomplishments vs goals</li><li>Complete any urgent tasks</li><li>Plan tomorrow's top 3 priorities</li><li>Set calendar voor next day</li></ul><h3>Evening (optional): Long-term growth</h3><ul><li>Network events (1-2x/week)</li><li>Learning/training (webinars, courses)</li><li>Content creation (blog, social media)</li><li>Client entertainment (dinners met VIPs)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Morning Routine (8-10 AM): Planning & Priorities</h3><p><strong>8:00-8:30 - Pipeline review (30 min):</strong></p><ul><li>Open Tesoro Dashboard</li><li>Review KPIs: new leads, active deals, closing dates</li><li>Check Kanban board for stagnating deals (>7 days in stage)</li><li>Review Today's tasks and scheduled activities</li><li>Prioritize top 3 MITs (Most Important Tasks) for the day</li></ul><p><strong>8:30-9:00 - Communication batch (30 min):</strong></p><ul><li>Respond to overnight emails/messages</li><li>Check for urgent client requests</li><li>Review new leads from past 24 hours</li><li>Quick calls to hot leads (immediate response)</li></ul><p><strong>9:00-10:00 - Proactive outreach (60 min):</strong></p><ul><li>Call warm leads who need follow-up</li><li>Send property updates to qualified buyers</li><li>Schedule viewings for the week</li><li>Run AI property matching for new deals</li></ul><h3>Mid-Day Focus Block (10 AM-1 PM): Revenue Activities</h3><p><strong>10:00-1:00 - Viewings & meetings (3 hours):</strong></p><ul><li>Property viewings with buyers</li><li>Listing appointments with sellers</li><li>Negotiation calls</li><li>Valuation visits</li></ul><p><em>Protect this time - no admin, no internal meetings</em></p><h3>Afternoon Workflow (2-5 PM): Mixed Activities</h3><p><strong>2:00-3:00 - CRM updates & documentation (60 min):</strong></p><ul><li>Log morning's conversations and viewing feedback</li><li>Update deal statuses and next steps</li><li>Add detailed notes for future reference</li><li>Create follow-up tasks</li></ul><p><strong>3:00-4:30 - Strategic work (90 min):</strong></p><ul><li>Create new property listings</li><li>Market research and comparables</li><li>Prepare presentations for upcoming meetings</li><li>Email campaigns (property showcases, market updates)</li></ul><p><strong>4:30-5:00 - End-of-day review (30 min):</strong></p><ul><li>Review today's accomplishments vs goals</li><li>Complete any urgent tasks</li><li>Plan tomorrow's top 3 priorities</li><li>Set calendar for next day</li></ul><h3>Evening (optional): Long-term Growth</h3><ul><li>Network events (1-2x/week)</li><li>Learning/training (webinars, courses)</li><li>Content creation (blog, social media)</li><li>Client entertainment (dinners with VIPs)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Rutina matutina (8-10 AM): planificación y prioridades</h3><p><strong>8:00-8:30 - Revisión de pipeline (30 min):</strong></p><ul><li>Abrir Dashboard de Tesoro</li><li>Revisar KPIs: nuevos leads, deals activos, fechas de cierre</li><li>Verificar tablero Kanban para deals estancados (>7 días en etapa)</li><li>Revisar tareas de hoy y actividades programadas</li><li>Priorizar top 3 MITs (Tareas más importantes) del día</li></ul><p><strong>8:30-9:00 - Lote de comunicación (30 min):</strong></p><ul><li>Responder a emails/mensajes de la noche</li><li>Verificar solicitudes urgentes de clientes</li><li>Revisar nuevos leads de últimas 24 horas</li><li>Llamadas rápidas a hot leads (respuesta inmediata)</li></ul><p><strong>9:00-10:00 - Alcance proactivo (60 min):</strong></p><ul><li>Llamar a warm leads que necesitan seguimiento</li><li>Enviar actualizaciones de propiedades a compradores calificados</li><li>Programar visitas para la semana</li><li>Ejecutar matching de propiedades IA para nuevos deals</li></ul><h3>Bloque de enfoque del mediodía (10 AM-1 PM): actividades de ingresos</h3><p><strong>10:00-1:00 - Visitas y reuniones (3 horas):</strong></p><ul><li>Visitas a propiedades con compradores</li><li>Citas de listado con vendedores</li><li>Llamadas de negociación</li><li>Visitas de valuación</li></ul><p><em>Protege este tiempo - sin admin, sin reuniones internas</em></p><h3>Flujo de trabajo de tarde (2-5 PM): actividades mixtas</h3><p><strong>2:00-3:00 - Actualizaciones CRM y documentación (60 min):</strong></p><ul><li>Registrar conversaciones de la mañana y feedback de visitas</li><li>Actualizar estados de deals y próximos pasos</li><li>Agregar notas detalladas para referencia futura</li><li>Crear tareas de seguimiento</li></ul><p><strong>3:00-4:30 - Trabajo estratégico (90 min):</strong></p><ul><li>Crear nuevos listados de propiedades</li><li>Investigación de mercado y comparables</li><li>Preparar presentaciones para próximas reuniones</li><li>Campañas de email (muestras de propiedades, actualizaciones de mercado)</li></ul><p><strong>4:30-5:00 - Revisión de fin de día (30 min):</strong></p><ul><li>Revisar logros de hoy vs objetivos</li><li>Completar tareas urgentes</li><li>Planificar top 3 prioridades de mañana</li><li>Establecer calendario para próximo día</li></ul><h3>Noche (opcional): crecimiento a largo plazo</h3><ul><li>Eventos de networking (1-2x/semana)</li><li>Aprendizaje/capacitación (webinars, cursos)</li><li>Creación de contenido (blog, redes sociales)</li><li>Entretenimiento de clientes (cenas con VIPs)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "tesoro-shortcuts",
+      "title": {
+        "nl": "Tesoro efficiëntie tips",
+        "en": "Tesoro Efficiency Tips",
+        "es": "Consejos de eficiencia de Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Dashboard shortcuts</h3><ul><li><strong>Quick add:</strong> Use '+' button voor fast contact/deal/property creation</li><li><strong>Global search:</strong> Cmd/Ctrl+K voor instant search anywhere</li><li><strong>Filters:</strong> Save custom filters voor frequent searches</li><li><strong>Bulk actions:</strong> Select multiple items voor batch operations</li></ul><h3>Time-saving automation</h3><p><strong>Email templates:</strong></p><ul><li>Create templates voor common scenarios</li><li>Welcome emails, property showcases, follow-ups</li><li>Use variables {{firstName}}, {{propertyAddress}}</li><li>One-click sending met personalisation</li></ul><p><strong>Task automation:</strong></p><ul><li>Auto-create follow-up tasks na deal stage change</li><li>Set reminders voor viewing follow-ups</li><li>Scheduled tasks voor periodic check-ins</li></ul><p><strong>AI property matching:</strong></p><ul><li>Run automatic matches voor new buyers</li><li>Schedule weekly property alerts</li><li>Let AI suggest best properties instead of manual searching</li></ul><h3>Mobile workflow</h3><ul><li><strong>On-the-go updates:</strong> Log notes immediately na viewings (voice-to-text)</li><li><strong>Quick property photos:</strong> Upload tijdens site visits</li><li><strong>Instant notifications:</strong> Never miss hot lead</li><li><strong>GPS check-ins:</strong> Track time spent at properties</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Dashboard Shortcuts</h3><ul><li><strong>Quick add:</strong> Use '+' button for fast contact/deal/property creation</li><li><strong>Global search:</strong> Cmd/Ctrl+K for instant search anywhere</li><li><strong>Filters:</strong> Save custom filters for frequent searches</li><li><strong>Bulk actions:</strong> Select multiple items for batch operations</li></ul><h3>Time-Saving Automation</h3><p><strong>Email templates:</strong></p><ul><li>Create templates for common scenarios</li><li>Welcome emails, property showcases, follow-ups</li><li>Use variables {{firstName}}, {{propertyAddress}}</li><li>One-click sending with personalization</li></ul><p><strong>Task automation:</strong></p><ul><li>Auto-create follow-up tasks after deal stage change</li><li>Set reminders for viewing follow-ups</li><li>Scheduled tasks for periodic check-ins</li></ul><p><strong>AI property matching:</strong></p><ul><li>Run automatic matches for new buyers</li><li>Schedule weekly property alerts</li><li>Let AI suggest best properties instead of manual searching</li></ul><h3>Mobile Workflow</h3><ul><li><strong>On-the-go updates:</strong> Log notes immediately after viewings (voice-to-text)</li><li><strong>Quick property photos:</strong> Upload during site visits</li><li><strong>Instant notifications:</strong> Never miss hot lead</li><li><strong>GPS check-ins:</strong> Track time spent at properties</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Atajos del dashboard</h3><ul><li><strong>Agregar rápido:</strong> Usa botón '+' para creación rápida de contacto/deal/propiedad</li><li><strong>Búsqueda global:</strong> Cmd/Ctrl+K para búsqueda instantánea en cualquier lugar</li><li><strong>Filtros:</strong> Guarda filtros personalizados para búsquedas frecuentes</li><li><strong>Acciones masivas:</strong> Selecciona múltiples elementos para operaciones por lotes</li></ul><h3>Automatización para ahorrar tiempo</h3><p><strong>Plantillas de email:</strong></p><ul><li>Crea plantillas para escenarios comunes</li><li>Emails de bienvenida, muestras de propiedades, seguimientos</li><li>Usa variables {{firstName}}, {{propertyAddress}}</li><li>Envío con un clic con personalización</li></ul><p><strong>Automatización de tareas:</strong></p><ul><li>Auto-crear tareas de seguimiento después de cambio de etapa de deal</li><li>Establecer recordatorios para seguimientos de visitas</li><li>Tareas programadas para verificaciones periódicas</li></ul><p><strong>Matching de propiedades IA:</strong></p><ul><li>Ejecutar coincidencias automáticas para nuevos compradores</li><li>Programar alertas de propiedades semanales</li><li>Dejar que IA sugiera mejores propiedades en lugar de búsqueda manual</li></ul><h3>Flujo de trabajo móvil</h3><ul><li><strong>Actualizaciones sobre la marcha:</strong> Registrar notas inmediatamente después de visitas (voz a texto)</li><li><strong>Fotos rápidas de propiedades:</strong> Subir durante visitas al sitio</li><li><strong>Notificaciones instantáneas:</strong> Nunca pierdas hot lead</li><li><strong>Check-ins GPS:</strong> Rastrear tiempo gastado en propiedades</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "time-wasters",
+      "title": {
+        "nl": "Veelvoorkomende time-wasters elimineren",
+        "en": "Eliminating Common Time-Wasters",
+        "es": "Eliminar pérdidas de tiempo comunes"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Top time-wasters in vastgoed</h3><p><strong>1. Constant email checking (saves 60-90 min/day)</strong></p><ul><li>❌ Wrong: Check email every 5 minutes</li><li>✅ Right: Batch process 3x/day (morning, lunch, end-of-day)</li><li>Turn off notifications tijdens focus blocks</li><li>Use filters voor urgent vs can-wait</li></ul><p><strong>2. Unqualified leads (saves 2-3 hours/week)</strong></p><ul><li>❌ Wrong: Spend equal time on alle leads</li><li>✅ Right: Quick qualification, prioritize hot leads</li><li>Use scoring system in Tesoro</li><li>Move cold leads naar nurture campaigns</li></ul><p><strong>3. Manual data entry (saves 45-60 min/day)</strong></p><ul><li>❌ Wrong: Manually typing everything</li><li>✅ Right: Use Tesoro's import tools, templates, bulk actions</li><li>Mobile app voor instant logging</li><li>Voice-to-text voor notes</li></ul><p><strong>4. Inefficient viewing scheduling (saves 30-45 min/day)</strong></p><ul><li>❌ Wrong: Scatter viewings throughout day</li><li>✅ Right: Block viewings in geographic clusters</li><li>2-3 viewings back-to-back in same area</li><li>Buffer time tussen viewings voor notes</li></ul><p><strong>5. Social media rabbit holes (saves 60-90 min/day)</strong></p><ul><li>❌ Wrong: \"Quickly check Instagram\" → 1 hour gone</li><li>✅ Right: Scheduled social media time (15 min, 2x/day)</li><li>Use website blockers tijdens work hours</li><li>Separate business en personal accounts</li></ul><p><strong>6. Perfectionism in non-critical tasks</strong></p><ul><li>❌ Wrong: Spend 2 hours perfecting routine email</li><li>✅ Right: 80/20 rule - good enough voor most tasks</li><li>Perfect only wat matters: client presentations, listings</li><li>Template everything else</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Top Time-Wasters in Real Estate</h3><p><strong>1. Constant Email Checking (saves 60-90 min/day)</strong></p><ul><li>❌ Wrong: Check email every 5 minutes</li><li>✅ Right: Batch process 3x/day (morning, lunch, end-of-day)</li><li>Turn off notifications during focus blocks</li><li>Use filters for urgent vs can-wait</li></ul><p><strong>2. Unqualified Leads (saves 2-3 hours/week)</strong></p><ul><li>❌ Wrong: Spend equal time on all leads</li><li>✅ Right: Quick qualification, prioritize hot leads</li><li>Use scoring system in Tesoro</li><li>Move cold leads to nurture campaigns</li></ul><p><strong>3. Manual Data Entry (saves 45-60 min/day)</strong></p><ul><li>❌ Wrong: Manually typing everything</li><li>✅ Right: Use Tesoro's import tools, templates, bulk actions</li><li>Mobile app for instant logging</li><li>Voice-to-text for notes</li></ul><p><strong>4. Inefficient Viewing Scheduling (saves 30-45 min/day)</strong></p><ul><li>❌ Wrong: Scatter viewings throughout day</li><li>✅ Right: Block viewings in geographic clusters</li><li>2-3 viewings back-to-back in same area</li><li>Buffer time between viewings for notes</li></ul><p><strong>5. Social Media Rabbit Holes (saves 60-90 min/day)</strong></p><ul><li>❌ Wrong: \"Quickly check Instagram\" → 1 hour gone</li><li>✅ Right: Scheduled social media time (15 min, 2x/day)</li><li>Use website blockers during work hours</li><li>Separate business and personal accounts</li></ul><p><strong>6. Perfectionism in Non-Critical Tasks</strong></p><ul><li>❌ Wrong: Spend 2 hours perfecting routine email</li><li>✅ Right: 80/20 rule - good enough for most tasks</li><li>Perfect only what matters: client presentations, listings</li><li>Template everything else</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Principales pérdidas de tiempo en bienes raíces</h3><p><strong>1. Verificación constante de email (ahorra 60-90 min/día)</strong></p><ul><li>❌ Incorrecto: Verificar email cada 5 minutos</li><li>✅ Correcto: Proceso por lotes 3x/día (mañana, almuerzo, fin de día)</li><li>Desactivar notificaciones durante bloques de enfoque</li><li>Usar filtros para urgente vs puede esperar</li></ul><p><strong>2. Leads no calificados (ahorra 2-3 horas/semana)</strong></p><ul><li>❌ Incorrecto: Gastar tiempo igual en todos los leads</li><li>✅ Correcto: Calificación rápida, priorizar hot leads</li><li>Usar sistema de puntuación en Tesoro</li><li>Mover cold leads a campañas de nutrir</li></ul><p><strong>3. Entrada manual de datos (ahorra 45-60 min/día)</strong></p><ul><li>❌ Incorrecto: Tipear manualmente todo</li><li>✅ Correcto: Usar herramientas de importación de Tesoro, plantillas, acciones masivas</li><li>App móvil para registro instantáneo</li><li>Voz a texto para notas</li></ul><p><strong>4. Programación ineficiente de visitas (ahorra 30-45 min/día)</strong></p><ul><li>❌ Incorrecto: Dispersar visitas a lo largo del día</li><li>✅ Correcto: Bloquear visitas en grupos geográficos</li><li>2-3 visitas consecutivas en misma área</li><li>Tiempo de buffer entre visitas para notas</li></ul><p><strong>5. Agujeros de redes sociales (ahorra 60-90 min/día)</strong></p><ul><li>❌ Incorrecto: \"Revisar Instagram rápidamente\" → 1 hora desaparecida</li><li>✅ Correcto: Tiempo programado de redes sociales (15 min, 2x/día)</li><li>Usar bloqueadores de sitios web durante horas de trabajo</li><li>Separar cuentas de negocio y personales</li></ul><p><strong>6. Perfeccionismo en tareas no críticas</strong></p><ul><li>❌ Incorrecto: Gastar 2 horas perfeccionando email de rutina</li><li>✅ Correcto: Regla 80/20 - suficientemente bueno para la mayoría de tareas</li><li>Perfeccionar solo lo que importa: presentaciones de clientes, listados</li><li>Plantilla para todo lo demás</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "weekly-review",
+      "variant": "success",
+      "title": {
+        "nl": "Wekelijkse time audit",
+        "en": "Weekly Time Audit",
+        "es": "Auditoría semanal de tiempo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Elke vrijdag, review je week:</strong></p><p><strong>Time tracking:</strong></p><ul><li>☐ Hoeveel uur besteed aan revenue activities? (target: 60-70%)</li><li>☐ Hoeveel viewings gehad? (target: 10-15/week)</li><li>☐ Hoeveel nieuwe leads contacted? (target: 20-30/week)</li><li>☐ Waar gingen meeste uren heen?</li></ul><p><strong>Productivity analysis:</strong></p><ul><li>☐ Welke activiteiten waren high-impact?</li><li>☐ Welke waren time-wasters?</li><li>☐ What can be delegated/automated?</li><li>☐ What should stop doing entirely?</li></ul><p><strong>Next week planning:</strong></p><ul><li>☐ Block high-value time slots</li><li>☐ Schedule key meetings/viewings</li><li>☐ Set top 3 goals</li><li>☐ Identify potential time conflicts</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Every Friday, review your week:</strong></p><p><strong>Time tracking:</strong></p><ul><li>☐ How many hours spent on revenue activities? (target: 60-70%)</li><li>☐ How many viewings conducted? (target: 10-15/week)</li><li>☐ How many new leads contacted? (target: 20-30/week)</li><li>☐ Where did most hours go?</li></ul><p><strong>Productivity analysis:</strong></p><ul><li>☐ Which activities were high-impact?</li><li>☐ Which were time-wasters?</li><li>☐ What can be delegated/automated?</li><li>☐ What should stop doing entirely?</li></ul><p><strong>Next week planning:</strong></p><ul><li>☐ Block high-value time slots</li><li>☐ Schedule key meetings/viewings</li><li>☐ Set top 3 goals</li><li>☐ Identify potential time conflicts</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Cada viernes, revisa tu semana:</strong></p><p><strong>Rastreo de tiempo:</strong></p><ul><li>☐ ¿Cuántas horas gastadas en actividades de ingresos? (objetivo: 60-70%)</li><li>☐ ¿Cuántas visitas realizadas? (objetivo: 10-15/semana)</li><li>☐ ¿Cuántos nuevos leads contactados? (objetivo: 20-30/semana)</li><li>☐ ¿Dónde fueron la mayoría de horas?</li></ul><p><strong>Análisis de productividad:</strong></p><ul><li>☐ ¿Qué actividades fueron de alto impacto?</li><li>☐ ¿Cuáles fueron pérdidas de tiempo?</li><li>☐ ¿Qué puede ser delegado/automatizado?</li><li>☐ ¿Qué debería dejar de hacer completamente?</li></ul><p><strong>Planificación de próxima semana:</strong></p><ul><li>☐ Bloquear espacios de tiempo de alto valor</li><li>☐ Programar reuniones/visitas clave</li><li>☐ Establecer top 3 objetivos</li><li>☐ Identificar potenciales conflictos de tiempo</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "dashboard-overview",
+    "keyboard-shortcuts",
+    "tesoro-on-mobile",
+    "deal-pipeline-optimization"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel tijd moet ik dagelijks aan CRM updates besteden?",
+        "en": "How much time should I spend daily on CRM updates?",
+        "es": "¿Cuánto tiempo debo gastar diariamente en actualizaciones CRM?"
+      },
+      "answer": {
+        "nl": "Target 45-60 minuten/dag total. Best practice: 15-20 min na morning calls, 30-40 min na viewings/meetings. Log notes immediately while fresh - wachten tot einde van dag = details vergeten. Use mobile app voor instant updates tijdens viewings. Quality notes nu = time saved later.",
+        "en": "Target 45-60 minutes/day total. Best practice: 15-20 min after morning calls, 30-40 min after viewings/meetings. Log notes immediately while fresh - waiting until end of day = forgotten details. Use mobile app for instant updates during viewings. Quality notes now = time saved later.",
+        "es": "Objetivo 45-60 minutos/día total. Mejor práctica: 15-20 min después de llamadas matutinas, 30-40 min después de visitas/reuniones. Registrar notas inmediatamente mientras están frescas - esperar hasta fin de día = detalles olvidados. Usar app móvil para actualizaciones instantáneas durante visitas. Notas de calidad ahora = tiempo ahorrado después."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "id": "property-location-mapping",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T16:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "location", "mapping", "mapbox", "geocoding", "coordinates"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=630&fit=crop",
+    "keywords": ["property location", "mapping", "Mapbox", "geocoding", "coordinates", "area information"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property location en mapping in Tesoro CRM",
+      "en": "Property Location and Mapping in Tesoro CRM",
+      "es": "Ubicación de propiedades y mapeo en Tesoro CRM"
+    },
+    "description": {
+      "nl": "Leer hoe je locations toevoegt, Mapbox integration gebruikt, nearby amenities beheert en accurate area information instelt voor properties.",
+      "en": "Learn how to add locations, use Mapbox integration, manage nearby amenities and set accurate area information for properties.",
+      "es": "Aprende cómo añadir ubicaciones, usar integración de Mapbox, gestionar amenidades cercanas y establecer información de área precisa para propiedades."
+    },
+    "icon": "location_on"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "location-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom is accurate location data cruciaal?",
+        "en": "Why is accurate location data crucial?",
+        "es": "¿Por qué son cruciales los datos de ubicación precisos?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Location is de belangrijkste factor bij property search. Buyers zoeken eerst op location, dan op type en prijs.</p><p><strong>Tesoro's location features:</strong></p><ul><li>Automatic geocoding met Mapbox (latitude/longitude)</li><li>Interactive maps op property detail pages</li><li>Location-based lead matching (preferred areas)</li><li>Nearby amenities tracking (metro, schools, shops)</li><li>Area information en neighborhood data</li><li>Portal sync met accurate coordinates</li></ul>"
+        },
+        "en": {
+          "text": "<p>Location is the most important factor in property search. Buyers search first by location, then by type and price.</p><p><strong>Tesoro's location features:</strong></p><ul><li>Automatic geocoding with Mapbox (latitude/longitude)</li><li>Interactive maps on property detail pages</li><li>Location-based lead matching (preferred areas)</li><li>Nearby amenities tracking (metro, schools, shops)</li><li>Area information and neighborhood data</li><li>Portal sync with accurate coordinates</li></ul>"
+        },
+        "es": {
+          "text": "<p>La ubicación es el factor más importante en la búsqueda de propiedades. Los compradores buscan primero por ubicación, luego por tipo y precio.</p><p><strong>Características de ubicación de Tesoro:</strong></p><ul><li>Geocodificación automática con Mapbox (latitud/longitud)</li><li>Mapas interactivos en páginas de detalle de propiedad</li><li>Matching de leads basado en ubicación (áreas preferidas)</li><li>Seguimiento de amenidades cercanas (metro, escuelas, tiendas)</li><li>Información de área y datos de vecindario</li><li>Sincronización de portales con coordenadas precisas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "adding-address",
+      "title": {
+        "nl": "Address toevoegen en geocoding",
+        "en": "Adding address and geocoding",
+        "es": "Añadir dirección y geocodificación"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Address invoeren</h5><p>Wanneer je een property toevoegt, start met het address field:</p><ol><li>Type het address in het address field</li><li>Tesoro's Mapbox integration suggereert automatisch addresses</li><li>Selecteer het correcte address uit de dropdown</li><li>Coordinates (latitude/longitude) worden automatisch toegevoegd</li><li>Map preview toont de exacte locatie</li></ol><p><strong>Address componenten:</strong></p><ul><li><strong>Street:</strong> Straatnaam en huisnummer</li><li><strong>City:</strong> Stad of gemeente</li><li><strong>State/Province:</strong> Provincie of regio</li><li><strong>Postal code:</strong> Postcode</li><li><strong>Country:</strong> Land (automatisch ingesteld)</li></ul><h5>Automatic geocoding</h5><p>Tesoro gebruikt Mapbox voor accurate geocoding:</p><ul><li>Type address → Mapbox vindt coordinates</li><li>Latitude en longitude worden opgeslagen in GeoJSON format</li><li>Map markers verschijnen automatisch op property detail</li><li>Portal sync stuurt coordinates naar Idealista/Fotocasa</li></ul><p><strong>Tip:</strong> Voor nieuwe constructions of rural properties zonder officieel address, kun je handmatig op de map klikken om coordinates te selecteren.</p>"
+        },
+        "en": {
+          "text": "<h5>Entering address</h5><p>When adding a property, start with the address field:</p><ol><li>Type the address in the address field</li><li>Tesoro's Mapbox integration automatically suggests addresses</li><li>Select the correct address from the dropdown</li><li>Coordinates (latitude/longitude) are automatically added</li><li>Map preview shows the exact location</li></ol><p><strong>Address components:</strong></p><ul><li><strong>Street:</strong> Street name and house number</li><li><strong>City:</strong> City or municipality</li><li><strong>State/Province:</strong> Province or region</li><li><strong>Postal code:</strong> Postal code</li><li><strong>Country:</strong> Country (automatically set)</li></ul><h5>Automatic geocoding</h5><p>Tesoro uses Mapbox for accurate geocoding:</p><ul><li>Type address → Mapbox finds coordinates</li><li>Latitude and longitude are stored in GeoJSON format</li><li>Map markers appear automatically on property detail</li><li>Portal sync sends coordinates to Idealista/Fotocasa</li></ul><p><strong>Tip:</strong> For new constructions or rural properties without official address, you can manually click on the map to select coordinates.</p>"
+        },
+        "es": {
+          "text": "<h5>Ingresar dirección</h5><p>Al añadir una propiedad, comienza con el campo de dirección:</p><ol><li>Escribe la dirección en el campo de dirección</li><li>La integración de Mapbox de Tesoro sugiere automáticamente direcciones</li><li>Selecciona la dirección correcta del menú desplegable</li><li>Las coordenadas (latitud/longitud) se añaden automáticamente</li><li>La vista previa del mapa muestra la ubicación exacta</li></ol><p><strong>Componentes de dirección:</strong></p><ul><li><strong>Calle:</strong> Nombre de calle y número de casa</li><li><strong>Ciudad:</strong> Ciudad o municipio</li><li><strong>Estado/Provincia:</strong> Provincia o región</li><li><strong>Código postal:</strong> Código postal</li><li><strong>País:</strong> País (configurado automáticamente)</li></ul><h5>Geocodificación automática</h5><p>Tesoro usa Mapbox para geocodificación precisa:</p><ul><li>Escribe dirección → Mapbox encuentra coordenadas</li><li>Latitud y longitud se almacenan en formato GeoJSON</li><li>Los marcadores de mapa aparecen automáticamente en detalle de propiedad</li><li>La sincronización de portales envía coordenadas a Idealista/Fotocasa</li></ul><p><strong>Consejo:</strong> Para construcciones nuevas o propiedades rurales sin dirección oficial, puedes hacer clic manualmente en el mapa para seleccionar coordenadas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "mapbox-integration",
+      "title": {
+        "nl": "Mapbox integration en map views",
+        "en": "Mapbox integration and map views",
+        "es": "Integración de Mapbox y vistas de mapa"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Interactive property maps</h5><p>Elke property heeft een interactive Mapbox map met:</p><ul><li><strong>Property marker:</strong> Exacte locatie van de property</li><li><strong>Zoom controls:</strong> In/out zoomen voor detail of overview</li><li><strong>Street view:</strong> Schakel tussen map en satellite view</li><li><strong>Nearby markers:</strong> Toon nearby properties (optioneel)</li></ul><p>Maps zijn zichtbaar op:</p><ul><li>Property detail page (large map)</li><li>Property list view (small map preview)</li><li>Client portal (voor buyers)</li><li>Public website (if enabled)</li></ul><h5>Map customization</h5><p>Je kunt map display aanpassen per property:</p><ul><li><strong>Hide exact location:</strong> Toon alleen neighborhood (voor privacy)</li><li><strong>Custom marker icon:</strong> Use property type icons</li><li><strong>Map style:</strong> Standard, satellite, or hybrid view</li><li><strong>Zoom level:</strong> Default zoom bij map load</li></ul><p><strong>Use case:</strong> Voor high-end properties kun je exact address verbergen tot een buyer serieuze interesse toont.</p><h5>Multi-property map view</h5><p>In property list view kun je een map view activeren die alle properties toont:</p><ul><li>Filters blijven actief (type, price, bedrooms)</li><li>Markers clusteren bij zoom out</li><li>Click op marker → property detail popup</li><li>Perfect voor location-based searches</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Interactive property maps</h5><p>Each property has an interactive Mapbox map with:</p><ul><li><strong>Property marker:</strong> Exact location of the property</li><li><strong>Zoom controls:</strong> Zoom in/out for detail or overview</li><li><strong>Street view:</strong> Switch between map and satellite view</li><li><strong>Nearby markers:</strong> Show nearby properties (optional)</li></ul><p>Maps are visible on:</p><ul><li>Property detail page (large map)</li><li>Property list view (small map preview)</li><li>Client portal (for buyers)</li><li>Public website (if enabled)</li></ul><h5>Map customization</h5><p>You can customize map display per property:</p><ul><li><strong>Hide exact location:</strong> Show only neighborhood (for privacy)</li><li><strong>Custom marker icon:</strong> Use property type icons</li><li><strong>Map style:</strong> Standard, satellite, or hybrid view</li><li><strong>Zoom level:</strong> Default zoom on map load</li></ul><p><strong>Use case:</strong> For high-end properties you can hide exact address until a buyer shows serious interest.</p><h5>Multi-property map view</h5><p>In property list view you can activate a map view that shows all properties:</p><ul><li>Filters remain active (type, price, bedrooms)</li><li>Markers cluster on zoom out</li><li>Click on marker → property detail popup</li><li>Perfect for location-based searches</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Mapas interactivos de propiedades</h5><p>Cada propiedad tiene un mapa interactivo de Mapbox con:</p><ul><li><strong>Marcador de propiedad:</strong> Ubicación exacta de la propiedad</li><li><strong>Controles de zoom:</strong> Acercar/alejar para detalle o vista general</li><li><strong>Vista de calle:</strong> Cambiar entre vista de mapa y satélite</li><li><strong>Marcadores cercanos:</strong> Mostrar propiedades cercanas (opcional)</li></ul><p>Los mapas son visibles en:</p><ul><li>Página de detalle de propiedad (mapa grande)</li><li>Vista de lista de propiedades (vista previa de mapa pequeño)</li><li>Portal de clientes (para compradores)</li><li>Sitio web público (si está habilitado)</li></ul><h5>Personalización de mapa</h5><p>Puedes personalizar la visualización del mapa por propiedad:</p><ul><li><strong>Ocultar ubicación exacta:</strong> Mostrar solo vecindario (para privacidad)</li><li><strong>Icono de marcador personalizado:</strong> Usar iconos de tipo de propiedad</li><li><strong>Estilo de mapa:</strong> Vista estándar, satélite o híbrida</li><li><strong>Nivel de zoom:</strong> Zoom predeterminado al cargar mapa</li></ul><p><strong>Caso de uso:</strong> Para propiedades de alta gama puedes ocultar dirección exacta hasta que un comprador muestre interés serio.</p><h5>Vista de mapa multi-propiedad</h5><p>En la vista de lista de propiedades puedes activar una vista de mapa que muestra todas las propiedades:</p><ul><li>Los filtros permanecen activos (tipo, precio, dormitorios)</li><li>Los marcadores se agrupan al alejar</li><li>Clic en marcador → ventana emergente de detalle de propiedad</li><li>Perfecto para búsquedas basadas en ubicación</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "area-information",
+      "title": {
+        "nl": "Area information en neighborhood data",
+        "en": "Area information and neighborhood data",
+        "es": "Información de área y datos de vecindario"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Neighborhood beschrijving</h5><p>Voor elke property kun je area information toevoegen:</p><ul><li><strong>Area name:</strong> Neighborhood of wijk naam (bijvoorbeeld \"Eixample\" in Barcelona)</li><li><strong>Area description:</strong> Korte beschrijving van de buurt</li><li><strong>Area type:</strong> Urban, suburban, rural, beachfront</li><li><strong>Popularity:</strong> Popular area, up-and-coming, established</li></ul><p>Deze info helpt bij lead matching wanneer buyers specifieke neighborhoods zoeken.</p><h5>Nearby amenities</h5><p>Track belangrijke amenities in de buurt:</p><ul><li><strong>Public transport:</strong><ul><li>Metro stations (naam + distance)</li><li>Bus stops</li><li>Train stations</li><li>Airport distance</li></ul></li><li><strong>Education:</strong><ul><li>Schools (primary, secondary)</li><li>Universities</li><li>International schools</li></ul></li><li><strong>Shopping & Services:</strong><ul><li>Supermarkets</li><li>Shopping centers</li><li>Restaurants & cafes</li><li>Banks & pharmacies</li></ul></li><li><strong>Recreation:</strong><ul><li>Parks & green spaces</li><li>Gyms & sports facilities</li><li>Beach distance</li><li>Golf courses</li></ul></li></ul><p><strong>Pro tip:</strong> Voor internationale buyers zijn international schools en airport distance zeer belangrijk - highlight deze in area description.</p>"
+        },
+        "en": {
+          "text": "<h5>Neighborhood description</h5><p>For each property you can add area information:</p><ul><li><strong>Area name:</strong> Neighborhood or district name (e.g., \"Eixample\" in Barcelona)</li><li><strong>Area description:</strong> Short description of the neighborhood</li><li><strong>Area type:</strong> Urban, suburban, rural, beachfront</li><li><strong>Popularity:</strong> Popular area, up-and-coming, established</li></ul><p>This info helps with lead matching when buyers search for specific neighborhoods.</p><h5>Nearby amenities</h5><p>Track important amenities in the area:</p><ul><li><strong>Public transport:</strong><ul><li>Metro stations (name + distance)</li><li>Bus stops</li><li>Train stations</li><li>Airport distance</li></ul></li><li><strong>Education:</strong><ul><li>Schools (primary, secondary)</li><li>Universities</li><li>International schools</li></ul></li><li><strong>Shopping & Services:</strong><ul><li>Supermarkets</li><li>Shopping centers</li><li>Restaurants & cafes</li><li>Banks & pharmacies</li></ul></li><li><strong>Recreation:</strong><ul><li>Parks & green spaces</li><li>Gyms & sports facilities</li><li>Beach distance</li><li>Golf courses</li></ul></li></ul><p><strong>Pro tip:</strong> For international buyers, international schools and airport distance are very important - highlight these in area description.</p>"
+        },
+        "es": {
+          "text": "<h5>Descripción del vecindario</h5><p>Para cada propiedad puedes añadir información de área:</p><ul><li><strong>Nombre de área:</strong> Nombre de vecindario o distrito (ej., \"Eixample\" en Barcelona)</li><li><strong>Descripción de área:</strong> Breve descripción del vecindario</li><li><strong>Tipo de área:</strong> Urbana, suburbana, rural, frente a la playa</li><li><strong>Popularidad:</strong> Área popular, emergente, establecida</li></ul><p>Esta información ayuda con el matching de leads cuando los compradores buscan vecindarios específicos.</p><h5>Amenidades cercanas</h5><p>Rastrea amenidades importantes en el área:</p><ul><li><strong>Transporte público:</strong><ul><li>Estaciones de metro (nombre + distancia)</li><li>Paradas de autobús</li><li>Estaciones de tren</li><li>Distancia al aeropuerto</li></ul></li><li><strong>Educación:</strong><ul><li>Escuelas (primaria, secundaria)</li><li>Universidades</li><li>Escuelas internacionales</li></ul></li><li><strong>Compras y servicios:</strong><ul><li>Supermercados</li><li>Centros comerciales</li><li>Restaurantes y cafés</li><li>Bancos y farmacias</li></ul></li><li><strong>Recreación:</strong><ul><li>Parques y espacios verdes</li><li>Gimnasios e instalaciones deportivas</li><li>Distancia a la playa</li><li>Campos de golf</li></ul></li></ul><p><strong>Consejo profesional:</strong> Para compradores internacionales, las escuelas internacionales y la distancia al aeropuerto son muy importantes - destaca esto en la descripción del área.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "location-matching",
+      "title": {
+        "nl": "Location-based matching en search",
+        "en": "Location-based matching and search",
+        "es": "Matching basado en ubicación y búsqueda"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Location matching met leads</h5><p>Tesoro's AI matching gebruikt location data om properties te matchen met leads:</p><ul><li><strong>Preferred areas:</strong> Lead specificeren gewenste neighborhoods</li><li><strong>Radius search:</strong> Match properties binnen X km van preferred location</li><li><strong>City matching:</strong> Automatische match op city level</li><li><strong>Province/region:</strong> Bredere geographic matching</li></ul><p>Example: Lead zoekt \"Eixample, Barcelona\" → Tesoro toont alle properties in Eixample + score op basis van andere criteria.</p><h5>Location search filters</h5><p>Buyers kunnen zoeken op location met advanced filters:</p><ul><li><strong>City search:</strong> Select one or multiple cities</li><li><strong>Area/neighborhood:</strong> Dropdown met alle neighborhoods</li><li><strong>Postal code:</strong> Specifieke postcode ranges</li><li><strong>Radius search:</strong> \"Show all properties within 5km of [location]\"</li><li><strong>Map-based search:</strong> Draw area on map → show properties</li></ul><h5>Location-based pricing insights</h5><p>Tesoro gebruikt location data voor pricing analysis:</p><ul><li>Average price per m² in area</li><li>Price trends in neighborhood (rising/falling)</li><li>Comparison met nearby properties</li><li>\"Hot areas\" identification (high demand)</li></ul><p>Deze data helpt je om competitive prices in te stellen op basis van location.</p>"
+        },
+        "en": {
+          "text": "<h5>Location matching with leads</h5><p>Tesoro's AI matching uses location data to match properties with leads:</p><ul><li><strong>Preferred areas:</strong> Leads specify desired neighborhoods</li><li><strong>Radius search:</strong> Match properties within X km of preferred location</li><li><strong>City matching:</strong> Automatic match on city level</li><li><strong>Province/region:</strong> Broader geographic matching</li></ul><p>Example: Lead searches \"Eixample, Barcelona\" → Tesoro shows all properties in Eixample + score based on other criteria.</p><h5>Location search filters</h5><p>Buyers can search by location with advanced filters:</p><ul><li><strong>City search:</strong> Select one or multiple cities</li><li><strong>Area/neighborhood:</strong> Dropdown with all neighborhoods</li><li><strong>Postal code:</strong> Specific postal code ranges</li><li><strong>Radius search:</strong> \"Show all properties within 5km of [location]\"</li><li><strong>Map-based search:</strong> Draw area on map → show properties</li></ul><h5>Location-based pricing insights</h5><p>Tesoro uses location data for pricing analysis:</p><ul><li>Average price per m² in area</li><li>Price trends in neighborhood (rising/falling)</li><li>Comparison with nearby properties</li><li>\"Hot areas\" identification (high demand)</li></ul><p>This data helps you set competitive prices based on location.</p>"
+        },
+        "es": {
+          "text": "<h5>Matching de ubicación con leads</h5><p>El matching con IA de Tesoro usa datos de ubicación para hacer match de propiedades con leads:</p><ul><li><strong>Áreas preferidas:</strong> Los leads especifican vecindarios deseados</li><li><strong>Búsqueda por radio:</strong> Hacer match de propiedades dentro de X km de ubicación preferida</li><li><strong>Matching de ciudad:</strong> Match automático a nivel de ciudad</li><li><strong>Provincia/región:</strong> Matching geográfico más amplio</li></ul><p>Ejemplo: Lead busca \"Eixample, Barcelona\" → Tesoro muestra todas las propiedades en Eixample + puntuación basada en otros criterios.</p><h5>Filtros de búsqueda de ubicación</h5><p>Los compradores pueden buscar por ubicación con filtros avanzados:</p><ul><li><strong>Búsqueda de ciudad:</strong> Seleccionar una o múltiples ciudades</li><li><strong>Área/vecindario:</strong> Menú desplegable con todos los vecindarios</li><li><strong>Código postal:</strong> Rangos de código postal específicos</li><li><strong>Búsqueda por radio:</strong> \"Mostrar todas las propiedades dentro de 5km de [ubicación]\"</li><li><strong>Búsqueda basada en mapa:</strong> Dibujar área en mapa → mostrar propiedades</li></ul><h5>Información de precios basada en ubicación</h5><p>Tesoro usa datos de ubicación para análisis de precios:</p><ul><li>Precio promedio por m² en área</li><li>Tendencias de precios en vecindario (subiendo/bajando)</li><li>Comparación con propiedades cercanas</li><li>Identificación de \"áreas calientes\" (alta demanda)</li></ul><p>Estos datos te ayudan a establecer precios competitivos basados en ubicación.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "location-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor location management",
+        "en": "Best practices for location management",
+        "es": "Mejores prácticas para gestión de ubicación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Optimale location data:</strong></p><ol><li><strong>Verify coordinates:</strong> Check de map preview om te zien of de marker op de juiste locatie staat.</li><li><strong>Complete address:</strong> Vul alle address fields in (street, city, postal code) voor accurate portal sync.</li><li><strong>Add area description:</strong> Schrijf een korte neighborhood description die unique selling points highlight.</li><li><strong>Track nearby amenities:</strong> Voeg belangrijke amenities toe (metro, schools, beach) - dit helpt bij lead matching.</li><li><strong>Use consistent naming:</strong> Use dezelfde area/neighborhood names voor alle properties in die area.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Optimal location data:</strong></p><ol><li><strong>Verify coordinates:</strong> Check the map preview to see if the marker is in the correct location.</li><li><strong>Complete address:</strong> Fill in all address fields (street, city, postal code) for accurate portal sync.</li><li><strong>Add area description:</strong> Write a short neighborhood description that highlights unique selling points.</li><li><strong>Track nearby amenities:</strong> Add important amenities (metro, schools, beach) - this helps with lead matching.</li><li><strong>Use consistent naming:</strong> Use the same area/neighborhood names for all properties in that area.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Datos de ubicación óptimos:</strong></p><ol><li><strong>Verifica coordenadas:</strong> Verifica la vista previa del mapa para ver si el marcador está en la ubicación correcta.</li><li><strong>Dirección completa:</strong> Rellena todos los campos de dirección (calle, ciudad, código postal) para sincronización precisa de portales.</li><li><strong>Añade descripción de área:</strong> Escribe una breve descripción del vecindario que destaque puntos de venta únicos.</li><li><strong>Rastrea amenidades cercanas:</strong> Añade amenidades importantes (metro, escuelas, playa) - esto ayuda con el matching de leads.</li><li><strong>Usa nombres consistentes:</strong> Usa los mismos nombres de área/vecindario para todas las propiedades en esa área.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "adding-properties-guide",
+    "property-search-filters",
+    "property-ai-matching"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat als Mapbox het address niet kan vinden?",
+        "en": "What if Mapbox cannot find the address?",
+        "es": "¿Qué pasa si Mapbox no puede encontrar la dirección?"
+      },
+      "answer": {
+        "nl": "Voor nieuwe constructions of rural properties zonder officieel address kun je: 1) Type het closest known address, 2) Klik op 'Manual location selection', 3) Klik op de map waar de property is, 4) Coordinates worden handmatig opgeslagen. Je kunt altijd later de coordinates aanpassen als het officiële address beschikbaar komt.",
+        "en": "For new constructions or rural properties without official address you can: 1) Type the closest known address, 2) Click 'Manual location selection', 3) Click on the map where the property is, 4) Coordinates are manually saved. You can always adjust the coordinates later when the official address becomes available.",
+        "es": "Para construcciones nuevas o propiedades rurales sin dirección oficial puedes: 1) Escribir la dirección conocida más cercana, 2) Hacer clic en 'Selección manual de ubicación', 3) Hacer clic en el mapa donde está la propiedad, 4) Las coordenadas se guardan manualmente. Siempre puedes ajustar las coordenadas más tarde cuando la dirección oficial esté disponible."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kunnen buyers properties op een map zien in de client portal?",
+        "en": "Can buyers see properties on a map in the client portal?",
+        "es": "¿Pueden los compradores ver propiedades en un mapa en el portal de clientes?"
+      },
+      "answer": {
+        "nl": "Ja! De client portal heeft een map view waar buyers alle beschikbare properties kunnen zien op een interactive Mapbox map. Ze kunnen zoomen, filteren en op markers klikken voor property details. Je kunt per property instellen of exact address getoond wordt of alleen neighborhood (Settings → Privacy).",
+        "en": "Yes! The client portal has a map view where buyers can see all available properties on an interactive Mapbox map. They can zoom, filter and click on markers for property details. You can set per property whether exact address is shown or only neighborhood (Settings → Privacy).",
+        "es": "¡Sí! El portal de clientes tiene una vista de mapa donde los compradores pueden ver todas las propiedades disponibles en un mapa interactivo de Mapbox. Pueden hacer zoom, filtrar y hacer clic en marcadores para detalles de propiedad. Puedes configurar por propiedad si se muestra la dirección exacta o solo el vecindario (Configuración → Privacidad)."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe update ik nearby amenities voor meerdere properties tegelijk?",
+        "en": "How do I update nearby amenities for multiple properties at once?",
+        "es": "¿Cómo actualizo amenidades cercanas para múltiples propiedades a la vez?"
+      },
+      "answer": {
+        "nl": "Voor properties in dezelfde area kun je batch edit gebruiken: 1) Select alle properties in die area (filter op neighborhood), 2) Click 'Batch Edit', 3) Update area information en nearby amenities, 4) Changes worden toegepast op alle selected properties. Perfect voor nieuwe neighborhoods waar je meerdere properties hebt.",
+        "en": "For properties in the same area you can use batch edit: 1) Select all properties in that area (filter by neighborhood), 2) Click 'Batch Edit', 3) Update area information and nearby amenities, 4) Changes are applied to all selected properties. Perfect for new neighborhoods where you have multiple properties.",
+        "es": "Para propiedades en la misma área puedes usar edición en lote: 1) Selecciona todas las propiedades en esa área (filtrar por vecindario), 2) Haz clic en 'Edición en Lote', 3) Actualiza información de área y amenidades cercanas, 4) Los cambios se aplican a todas las propiedades seleccionadas. Perfecto para vecindarios nuevos donde tienes múltiples propiedades."
+      }
+    }
+  ]
+}

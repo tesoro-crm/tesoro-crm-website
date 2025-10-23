@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "id": "getting-help-support",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["support", "help", "getting-started", "troubleshooting", "contact"],
+    "featured": true,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro support", "help", "customer support", "contact tesoro", "crm help"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Help en support krijgen",
+      "en": "Getting Help and Support",
+      "es": "Obtener ayuda y soporte"
+    },
+    "description": {
+      "nl": "Ontdek alle manieren om hulp te krijgen bij vragen, problemen of feedback over Tesoro CRM.",
+      "en": "Discover all ways to get help with questions, problems or feedback about Tesoro CRM.",
+      "es": "Descubre todas las formas de obtener ayuda con preguntas, problemas o comentarios sobre Tesoro CRM."
+    },
+    "icon": "support"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Je bent niet alleen! Het Tesoro team en community staan klaar om te helpen wanneer je vast zit, vragen hebt, of feedback wilt delen. Deze gids laat zien waar je terecht kunt voor elke situatie.</p>"
+        },
+        "en": {
+          "text": "<p>You're not alone! The Tesoro team and community are ready to help when you're stuck, have questions, or want to share feedback. This guide shows you where to go for every situation.</p>"
+        },
+        "es": {
+          "text": "<p>¡No estás solo! El equipo y la comunidad de Tesoro están listos para ayudar cuando estés atascado, tengas preguntas o quieras compartir comentarios. Esta guía te muestra a dónde ir para cada situación.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "self-service",
+      "title": {
+        "nl": "Zelf antwoorden vinden",
+        "en": "Finding Answers Yourself",
+        "es": "Encontrar respuestas por ti mismo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>1. In-App Help (? icoon)</h4><p>Klik rechtsboven op het <strong>?</strong> icoon voor:</p><ul><li><strong>Contextual Help</strong> - Tips specifiek voor de pagina waar je bent</li><li><strong>Quick Links</strong> - Directe links naar relevante guides</li><li><strong>Video Tutorials</strong> - Korte screencasts van features</li><li><strong>Keyboard Shortcuts</strong> - Druk ? om shortcuts overlay te zien</li></ul><h4>2. Knowledge Base</h4><p>De volledige kennisbank (waar je nu bent!) bevat:</p><ul><li><strong>Getting Started Guides</strong> - Voor nieuwe gebruikers</li><li><strong>Module Tutorials</strong> - Diepgaande handleidingen per feature</li><li><strong>Best Practices</strong> - Tips van ervaren gebruikers</li><li><strong>Troubleshooting</strong> - Oplossingen voor veelvoorkomende problemen</li></ul><p><strong>Zoeken:</strong> Gebruik de zoekbalk bovenaan de kennisbank. Type je vraag of zoekterm.</p><h4>3. In-App Search</h4><p>Druk <strong>Cmd/Ctrl + K</strong> om te zoeken in:</p><ul><li>Je eigen data (contacts, properties, deals)</li><li>Help articles</li><li>Settings</li><li>Recent actions</li></ul>"
+        },
+        "en": {
+          "text": "<h4>1. In-App Help (? icon)</h4><p>Click the <strong>?</strong> icon top right for:</p><ul><li><strong>Contextual Help</strong> - Tips specific to the page you're on</li><li><strong>Quick Links</strong> - Direct links to relevant guides</li><li><strong>Video Tutorials</strong> - Short screencasts of features</li><li><strong>Keyboard Shortcuts</strong> - Press ? to see shortcuts overlay</li></ul><h4>2. Knowledge Base</h4><p>The complete knowledge base (where you are now!) contains:</p><ul><li><strong>Getting Started Guides</strong> - For new users</li><li><strong>Module Tutorials</strong> - In-depth guides per feature</li><li><strong>Best Practices</strong> - Tips from experienced users</li><li><strong>Troubleshooting</strong> - Solutions for common problems</li></ul><p><strong>Search:</strong> Use the search bar at the top of the knowledge base. Type your question or search term.</p><h4>3. In-App Search</h4><p>Press <strong>Cmd/Ctrl + K</strong> to search in:</p><ul><li>Your own data (contacts, properties, deals)</li><li>Help articles</li><li>Settings</li><li>Recent actions</li></ul>"
+        },
+        "es": {
+          "text": "<h4>1. Ayuda en la app (ícono ?)</h4><p>Haz clic en el ícono <strong>?</strong> arriba a la derecha para:</p><ul><li><strong>Ayuda contextual</strong> - Consejos específicos para la página en la que estás</li><li><strong>Enlaces rápidos</strong> - Enlaces directos a guías relevantes</li><li><strong>Tutoriales en video</strong> - Screencasts cortos de características</li><li><strong>Atajos de teclado</strong> - Presiona ? para ver la superposición de atajos</li></ul><h4>2. Base de conocimientos</h4><p>La base de conocimientos completa (¡donde estás ahora!) contiene:</p><ul><li><strong>Guías de inicio</strong> - Para nuevos usuarios</li><li><strong>Tutoriales de módulos</strong> - Guías detalladas por característica</li><li><strong>Mejores prácticas</strong> - Consejos de usuarios experimentados</li><li><strong>Solución de problemas</strong> - Soluciones para problemas comunes</li></ul><p><strong>Buscar:</strong> Usa la barra de búsqueda en la parte superior de la base de conocimientos. Escribe tu pregunta o término de búsqueda.</p><h4>3. Búsqueda en la app</h4><p>Presiona <strong>Cmd/Ctrl + K</strong> para buscar en:</p><ul><li>Tus propios datos (contactos, propiedades, deals)</li><li>Artículos de ayuda</li><li>Configuración</li><li>Acciones recientes</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "contact-support",
+      "title": {
+        "nl": "Contact met support team",
+        "en": "Contact Support Team",
+        "es": "Contactar equipo de soporte"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Email Support</h4><p><strong>support@tesorohq.io</strong></p><ul><li><strong>Response tijd:</strong> Binnen 24 uur (werkdagen)</li><li><strong>Gebruik voor:</strong> Technische problemen, account vragen, bug reports</li><li><strong>Tip:</strong> Include screenshots en duidelijke stappen om het probleem te reproduceren</li></ul><h4>Live Chat (in-app)</h4><p>Klik het <strong>chat icoon</strong> rechtsonder in Tesoro:</p><ul><li><strong>Beschikbaar:</strong> Maandag-Vrijdag, 9:00-18:00 CET</li><li><strong>Average response:</strong> < 5 minuten</li><li><strong>Gebruik voor:</strong> Quick questions, snelle hulp bij features</li><li><strong>Taal:</strong> Nederlands, English, Español</li></ul><h4>Telefoon Support (Premium)</h4><p><strong>+31 (0)20 123 4567</strong></p><ul><li><strong>Alleen voor:</strong> Enterprise plans en urgente issues</li><li><strong>Beschikbaar:</strong> Maandag-Vrijdag, 9:00-17:00 CET</li><li><strong>Upgrade:</strong> Contact sales@tesorohq.io voor premium support</li></ul><h4>Video Call Support (op afspraak)</h4><p>Voor complexe setup, migraties, of training:</p><ul><li>Email naar <strong>support@tesorohq.io</strong></li><li>Subject: \"Video call request\"</li><li>Beschrijf je situatie</li><li>We plannen binnen 48 uur een 30-min video call</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Email Support</h4><p><strong>support@tesorohq.io</strong></p><ul><li><strong>Response time:</strong> Within 24 hours (business days)</li><li><strong>Use for:</strong> Technical problems, account questions, bug reports</li><li><strong>Tip:</strong> Include screenshots and clear steps to reproduce the problem</li></ul><h4>Live Chat (in-app)</h4><p>Click the <strong>chat icon</strong> bottom right in Tesoro:</p><ul><li><strong>Available:</strong> Monday-Friday, 9:00-18:00 CET</li><li><strong>Average response:</strong> < 5 minutes</li><li><strong>Use for:</strong> Quick questions, fast help with features</li><li><strong>Language:</strong> Nederlands, English, Español</li></ul><h4>Phone Support (Premium)</h4><p><strong>+31 (0)20 123 4567</strong></p><ul><li><strong>Only for:</strong> Enterprise plans and urgent issues</li><li><strong>Available:</strong> Monday-Friday, 9:00-17:00 CET</li><li><strong>Upgrade:</strong> Contact sales@tesorohq.io for premium support</li></ul><h4>Video Call Support (by appointment)</h4><p>For complex setup, migrations, or training:</p><ul><li>Email to <strong>support@tesorohq.io</strong></li><li>Subject: \"Video call request\"</li><li>Describe your situation</li><li>We schedule within 48 hours a 30-min video call</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Soporte por email</h4><p><strong>support@tesorohq.io</strong></p><ul><li><strong>Tiempo de respuesta:</strong> Dentro de 24 horas (días laborables)</li><li><strong>Usar para:</strong> Problemas técnicos, preguntas de cuenta, reportes de bugs</li><li><strong>Consejo:</strong> Incluye capturas de pantalla y pasos claros para reproducir el problema</li></ul><h4>Chat en vivo (en la app)</h4><p>Haz clic en el <strong>ícono de chat</strong> abajo a la derecha en Tesoro:</p><ul><li><strong>Disponible:</strong> Lunes-Viernes, 9:00-18:00 CET</li><li><strong>Respuesta promedio:</strong> < 5 minutos</li><li><strong>Usar para:</strong> Preguntas rápidas, ayuda rápida con características</li><li><strong>Idioma:</strong> Nederlands, English, Español</li></ul><h4>Soporte telefónico (Premium)</h4><p><strong>+31 (0)20 123 4567</strong></p><ul><li><strong>Solo para:</strong> Planes Enterprise y problemas urgentes</li><li><strong>Disponible:</strong> Lunes-Viernes, 9:00-17:00 CET</li><li><strong>Actualizar:</strong> Contacta sales@tesorohq.io para soporte premium</li></ul><h4>Soporte por videollamada (con cita)</h4><p>Para configuración compleja, migraciones o capacitación:</p><ul><li>Email a <strong>support@tesorohq.io</strong></li><li>Asunto: \"Video call request\"</li><li>Describe tu situación</li><li>Programamos dentro de 48 horas una videollamada de 30 min</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "feedback",
+      "variant": "info",
+      "title": {
+        "nl": "Feature requests en feedback",
+        "en": "Feature Requests and Feedback",
+        "es": "Solicitudes de características y comentarios"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>We horen graag van je!</strong></p><p>Heb je een idee voor een nieuwe feature? Of feedback over bestaande functionaliteit?</p><ul><li><strong>In-app feedback:</strong> Klik rechtsboven op je profile photo → \"Send Feedback\"</li><li><strong>Feature requests:</strong> Email naar <strong>product@tesorohq.io</strong></li><li><strong>Vote op features:</strong> Roadmap op <strong>roadmap.tesorohq.io</strong> (coming soon)</li></ul><p>We lezen alle feedback en laten vaak weten wanneer je suggestie wordt geïmplementeerd!</p>"
+        },
+        "en": {
+          "text": "<p><strong>We love to hear from you!</strong></p><p>Have an idea for a new feature? Or feedback about existing functionality?</p><ul><li><strong>In-app feedback:</strong> Click your profile photo top right → \"Send Feedback\"</li><li><strong>Feature requests:</strong> Email to <strong>product@tesorohq.io</strong></li><li><strong>Vote on features:</strong> Roadmap at <strong>roadmap.tesorohq.io</strong> (coming soon)</li></ul><p>We read all feedback and often let you know when your suggestion is implemented!</p>"
+        },
+        "es": {
+          "text": "<p><strong>¡Nos encanta saber de ti!</strong></p><p>¿Tienes una idea para una nueva característica? ¿O comentarios sobre funcionalidad existente?</p><ul><li><strong>Comentarios en la app:</strong> Haz clic en tu foto de perfil arriba a la derecha → \"Send Feedback\"</li><li><strong>Solicitudes de características:</strong> Email a <strong>product@tesorohq.io</strong></li><li><strong>Vota por características:</strong> Roadmap en <strong>roadmap.tesorohq.io</strong> (próximamente)</li></ul><p>¡Leemos todos los comentarios y a menudo te informamos cuando se implementa tu sugerencia!</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "emergency-support",
+      "title": {
+        "nl": "Nood support (business critical)",
+        "en": "Emergency Support (Business Critical)",
+        "es": "Soporte de emergencia (crítico para el negocio)"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Als je een <strong>business-critical probleem</strong> hebt (bijv. complete system down, data loss, security breach):</p><ol><li><strong>Email:</strong> support@tesorohq.io met subject \"URGENT\"</li><li><strong>Call:</strong> +31 (0)20 123 4567 (24/7 voor emergencies)</li><li><strong>Live Chat:</strong> Als beschikbaar, gebruik chat en mention \"URGENT\"</li></ol><p><strong>Wat is business-critical?</strong></p><ul><li>Tesoro is volledig niet bereikbaar</li><li>Data loss of corruptie</li><li>Security incident (ongeautoriseerde toegang)</li><li>Kritieke deals kunnen niet worden verwerkt</li></ul><p><strong>Wat is NIET business-critical?</strong></p><ul><li>Feature werkt niet zoals verwacht (gebruik normal support)</li><li>Vragen over hoe iets te gebruiken (gebruik kennisbank/chat)</li><li>Feature requests (gebruik feedback channels)</li></ul><p><strong>SLA voor emergencies:</strong></p><ul><li><strong>Standard plans:</strong> Response binnen 4 uur</li><li><strong>Enterprise plans:</strong> Response binnen 1 uur, 24/7</li></ul>"
+        },
+        "en": {
+          "text": "<p>If you have a <strong>business-critical problem</strong> (e.g. complete system down, data loss, security breach):</p><ol><li><strong>Email:</strong> support@tesorohq.io with subject \"URGENT\"</li><li><strong>Call:</strong> +31 (0)20 123 4567 (24/7 for emergencies)</li><li><strong>Live Chat:</strong> If available, use chat and mention \"URGENT\"</li></ol><p><strong>What is business-critical?</strong></p><ul><li>Tesoro is completely unreachable</li><li>Data loss or corruption</li><li>Security incident (unauthorized access)</li><li>Critical deals cannot be processed</li></ul><p><strong>What is NOT business-critical?</strong></p><ul><li>Feature doesn't work as expected (use normal support)</li><li>Questions about how to use something (use knowledge base/chat)</li><li>Feature requests (use feedback channels)</li></ul><p><strong>SLA for emergencies:</strong></p><ul><li><strong>Standard plans:</strong> Response within 4 hours</li><li><strong>Enterprise plans:</strong> Response within 1 hour, 24/7</li></ul>"
+        },
+        "es": {
+          "text": "<p>Si tienes un <strong>problema crítico para el negocio</strong> (ej. sistema completamente caído, pérdida de datos, brecha de seguridad):</p><ol><li><strong>Email:</strong> support@tesorohq.io con asunto \"URGENT\"</li><li><strong>Llamar:</strong> +31 (0)20 123 4567 (24/7 para emergencias)</li><li><strong>Chat en vivo:</strong> Si está disponible, usa chat y menciona \"URGENT\"</li></ol><p><strong>¿Qué es crítico para el negocio?</strong></p><ul><li>Tesoro es completamente inaccesible</li><li>Pérdida o corrupción de datos</li><li>Incidente de seguridad (acceso no autorizado)</li><li>Los deals críticos no se pueden procesar</li></ul><p><strong>¿Qué NO es crítico para el negocio?</strong></p><ul><li>La característica no funciona como se esperaba (usa soporte normal)</li><li>Preguntas sobre cómo usar algo (usa base de conocimientos/chat)</li><li>Solicitudes de características (usa canales de comentarios)</li></ul><p><strong>SLA para emergencias:</strong></p><ul><li><strong>Planes estándar:</strong> Respuesta dentro de 4 horas</li><li><strong>Planes Enterprise:</strong> Respuesta dentro de 1 hora, 24/7</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "community",
+      "title": {
+        "nl": "Community en resources",
+        "en": "Community and Resources",
+        "es": "Comunidad y recursos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Tesoro Community (coming soon)</h4><p>Verbind met andere Tesoro gebruikers:</p><ul><li><strong>Forum:</strong> community.tesorohq.io</li><li><strong>LinkedIn Group:</strong> Tesoro CRM Users</li><li><strong>Monthly Webinars:</strong> Live Q&A en feature demos</li></ul><h4>Educational Resources</h4><ul><li><strong>YouTube Channel:</strong> Video tutorials en tips</li><li><strong>Blog:</strong> blog.tesorohq.io - Best practices en case studies</li><li><strong>Newsletter:</strong> Monthly tips en product updates</li></ul><h4>Status & Updates</h4><ul><li><strong>Status Page:</strong> status.tesorohq.io - Real-time system status</li><li><strong>Changelog:</strong> In-app → Profile → \"What's New\"</li><li><strong>Maintenance Window:</strong> Announced 72h in advance via email</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Tesoro Community (coming soon)</h4><p>Connect with other Tesoro users:</p><ul><li><strong>Forum:</strong> community.tesorohq.io</li><li><strong>LinkedIn Group:</strong> Tesoro CRM Users</li><li><strong>Monthly Webinars:</strong> Live Q&A and feature demos</li></ul><h4>Educational Resources</h4><ul><li><strong>YouTube Channel:</strong> Video tutorials and tips</li><li><strong>Blog:</strong> blog.tesorohq.io - Best practices and case studies</li><li><strong>Newsletter:</strong> Monthly tips and product updates</li></ul><h4>Status & Updates</h4><ul><li><strong>Status Page:</strong> status.tesorohq.io - Real-time system status</li><li><strong>Changelog:</strong> In-app → Profile → \"What's New\"</li><li><strong>Maintenance Window:</strong> Announced 72h in advance via email</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Comunidad Tesoro (próximamente)</h4><p>Conecta con otros usuarios de Tesoro:</p><ul><li><strong>Foro:</strong> community.tesorohq.io</li><li><strong>Grupo LinkedIn:</strong> Tesoro CRM Users</li><li><strong>Webinars mensuales:</strong> Q&A en vivo y demos de características</li></ul><h4>Recursos educativos</h4><ul><li><strong>Canal de YouTube:</strong> Tutoriales en video y consejos</li><li><strong>Blog:</strong> blog.tesorohq.io - Mejores prácticas y estudios de caso</li><li><strong>Newsletter:</strong> Consejos mensuales y actualizaciones de producto</li></ul><h4>Estado y actualizaciones</h4><ul><li><strong>Página de estado:</strong> status.tesorohq.io - Estado del sistema en tiempo real</li><li><strong>Changelog:</strong> En la app → Profile → \"What's New\"</li><li><strong>Ventana de mantenimiento:</strong> Anunciada 72h antes por email</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "welcome-to-tesoro",
+    "tesoro-glossary",
+    "first-steps-checklist"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe snel krijg ik antwoord via email?",
+        "en": "How quickly do I get a response via email?",
+        "es": "¿Qué tan rápido obtengo una respuesta por email?"
+      },
+      "answer": {
+        "nl": "Binnen 24 uur op werkdagen (Ma-Vr). Voor urgente zaken gebruik je live chat (< 5 min response) of telefoon voor business-critical issues.",
+        "en": "Within 24 hours on business days (Mon-Fri). For urgent matters use live chat (< 5 min response) or phone for business-critical issues.",
+        "es": "Dentro de 24 horas en días laborables (Lun-Vie). Para asuntos urgentes usa chat en vivo (respuesta < 5 min) o teléfono para problemas críticos del negocio."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik support in mijn eigen taal krijgen?",
+        "en": "Can I get support in my own language?",
+        "es": "¿Puedo obtener soporte en mi propio idioma?"
+      },
+      "answer": {
+        "nl": "Ja! Ons support team spreekt Nederlands, English en Español. Kies je voorkeurstaal in Settings of mention het in je eerste bericht.",
+        "en": "Yes! Our support team speaks Nederlands, English and Español. Choose your preferred language in Settings or mention it in your first message.",
+        "es": "¡Sí! Nuestro equipo de soporte habla Nederlands, English y Español. Elige tu idioma preferido en Settings o menciónalo en tu primer mensaje."
+      }
+    },
+    {
+      "question": {
+        "nl": "Bieden jullie training/onboarding aan?",
+        "en": "Do you offer training/onboarding?",
+        "es": "¿Ofrecen capacitación/incorporación?"
+      },
+      "answer": {
+        "nl": "Ja! We bieden gratis onboarding calls aan voor alle nieuwe accounts. Voor teams > 5 users bieden we dedicated training sessions aan. Contact sales@tesorohq.io voor meer info.",
+        "en": "Yes! We offer free onboarding calls for all new accounts. For teams > 5 users we offer dedicated training sessions. Contact sales@tesorohq.io for more info.",
+        "es": "¡Sí! Ofrecemos llamadas de incorporación gratuitas para todas las cuentas nuevas. Para equipos > 5 usuarios ofrecemos sesiones de capacitación dedicadas. Contacta sales@tesorohq.io para más información."
+      }
+    }
+  ]
+}

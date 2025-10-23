@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "time-on-market-reports",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "reports",
+    "difficulty": "intermediate",
+    "tags": ["reports", "analytics", "time on market", "property metrics", "market analysis"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop",
+    "keywords": ["time on market", "property analytics", "days on market", "listing performance", "real estate metrics", "property velocity"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Property time-on-market analytics",
+      "en": "Property Time-On-Market Analytics",
+      "es": "Análisis de tiempo en el mercado de propiedades"
+    },
+    "description": {
+      "nl": "Analyseer hoe snel properties verkopen en identificeer factoren die verkoop snelheid beïnvloeden met time-on-market rapporten.",
+      "en": "Analyze how quickly properties sell and identify factors that influence sale velocity with time-on-market reports.",
+      "es": "Analiza qué tan rápido se venden las propiedades e identifica factores que influyen en la velocidad de venta con informes de tiempo en el mercado."
+    },
+    "icon": "schedule"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Time-on-market (TOM) analytics zijn essentiële metrics voor vastgoed professionals om de effectiviteit van hun listings, pricing strategie, en markt condities te begrijpen. Het aantal dagen dat een property op de markt staat voordat het verkoopt of verhuurd wordt is een directe indicator van hoe competitief je pricing is, hoe effectief je marketing is, en hoe goed je de juiste buyers of tenants matched. Tesoro CRM's time-on-market rapporten geven je gedetailleerde inzichten in property performance en helpen je je listing strategie te optimaliseren.",
+        "en": "Time-on-market (TOM) analytics are essential metrics for real estate professionals to understand the effectiveness of their listings, pricing strategy, and market conditions. The number of days a property sits on the market before selling or renting is a direct indicator of how competitive your pricing is, how effective your marketing is, and how well you're matching the right buyers or tenants. Tesoro CRM's time-on-market reports provide detailed insights into property performance and help you optimize your listing strategy.",
+        "es": "Los análisis de tiempo en el mercado (TOM) son métricas esenciales para los profesionales inmobiliarios para comprender la efectividad de sus listados, estrategia de precios y condiciones del mercado. El número de días que una propiedad permanece en el mercado antes de venderse o alquilarse es un indicador directo de qué tan competitivos son tus precios, qué tan efectivo es tu marketing y qué tan bien estás conectando a los compradores o inquilinos adecuados. Los informes de tiempo en el mercado de Tesoro CRM proporcionan información detallada sobre el rendimiento de las propiedades y te ayudan a optimizar tu estrategia de listado."
+      }
+    },
+    {
+      "type": "text",
+      "id": "understanding-tom",
+      "content": {
+        "nl": "## Time-on-market metrics begrijpen\n\nVerschillende TOM metrics vertellen verschillende verhalen over je property performance:\n\n**Average Days on Market (DOM)** is de meest gebruikte metric - het gemiddelde aantal dagen dat properties actief zijn voordat ze verkopen. In een gezonde markt ligt dit typisch tussen 30-60 dagen voor sales en 14-30 dagen voor rentals. Kortere DOM duidt op sterke vraag of competitive pricing, terwijl langere DOM prijsproblemen of marketingissues kan suggereren.\n\n**Median Days on Market** is vaak een betere metric dan gemiddelde omdat het niet beïnvloed wordt door outliers. Als je een paar properties hebt die 200+ dagen op de markt staan, trekt dat je gemiddelde omhoog, maar de mediaan geeft een realistischer beeld van typische performance.\n\n**Days on Market by Price Range** toont of bepaalde price segments sneller verkopen. Dit helpt je begrijpen waar markt demand het sterkst is en waar je je acquisitie inspanningen moet focussen.\n\n**Days on Market by Property Type** vergelijkt performance tussen apartments, houses, commercial properties, etc. Sommige property types hebben natuurlijk langere sales cycles.\n\n**Time to First Viewing** meet hoe snel je viewings boekt na listing activation. Dit is een vroege indicator van listing attractiveness en marketing effectiviteit.\n\n**Time from Last Price Reduction to Sale** toont hoe prijsaanpassingen verkoop snelheid beïnvloeden. Dit helpt je optimal pricing strategie te bepalen.",
+        "en": "## Understanding Time-On-Market Metrics\n\nDifferent TOM metrics tell different stories about your property performance:\n\n**Average Days on Market (DOM)** is the most commonly used metric - the average number of days properties are active before selling. In a healthy market, this typically ranges from 30-60 days for sales and 14-30 days for rentals. Shorter DOM indicates strong demand or competitive pricing, while longer DOM may suggest pricing issues or marketing problems.\n\n**Median Days on Market** is often a better metric than average because it's not influenced by outliers. If you have a few properties that sit for 200+ days, that pulls your average up, but the median gives a more realistic picture of typical performance.\n\n**Days on Market by Price Range** shows whether certain price segments are selling faster. This helps you understand where market demand is strongest and where to focus your acquisition efforts.\n\n**Days on Market by Property Type** compares performance between apartments, houses, commercial properties, etc. Some property types naturally have longer sales cycles.\n\n**Time to First Viewing** measures how quickly you're booking viewings after listing activation. This is an early indicator of listing attractiveness and marketing effectiveness.\n\n**Time from Last Price Reduction to Sale** shows how price adjustments influence sale velocity. This helps you determine optimal pricing strategy.",
+        "es": "## Comprender las métricas de tiempo en el mercado\n\nDiferentes métricas de TOM cuentan diferentes historias sobre el rendimiento de tu propiedad:\n\n**Días promedio en el mercado (DOM)** es la métrica más utilizada: el número promedio de días que las propiedades están activas antes de venderse. En un mercado saludable, esto típicamente varía de 30-60 días para ventas y 14-30 días para alquileres. Un DOM más corto indica una demanda fuerte o precios competitivos, mientras que un DOM más largo puede sugerir problemas de precios o problemas de marketing.\n\n**Días medianos en el mercado** a menudo es una mejor métrica que el promedio porque no está influenciada por valores atípicos. Si tienes algunas propiedades que permanecen 200+ días, eso eleva tu promedio, pero la mediana da una imagen más realista del rendimiento típico.\n\n**Días en el mercado por rango de precio** muestra si ciertos segmentos de precio se venden más rápido. Esto te ayuda a comprender dónde la demanda del mercado es más fuerte y dónde enfocar tus esfuerzos de adquisición.\n\n**Días en el mercado por tipo de propiedad** compara el rendimiento entre apartamentos, casas, propiedades comerciales, etc. Algunos tipos de propiedades naturalmente tienen ciclos de venta más largos.\n\n**Tiempo hasta la primera visualización** mide qué tan rápido estás reservando visualizaciones después de la activación del listado. Este es un indicador temprano del atractivo del listado y la efectividad del marketing.\n\n**Tiempo desde la última reducción de precio hasta la venta** muestra cómo los ajustes de precio influyen en la velocidad de venta. Esto te ayuda a determinar la estrategia de precios óptima."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "generate-tom-report",
+      "title": {
+        "nl": "Een time-on-market rapport genereren",
+        "en": "Generating A Time-On-Market Report",
+        "es": "Generar un informe de tiempo en el mercado"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar property reports",
+            "en": "Navigate To Property Reports",
+            "es": "Navegar a informes de propiedades"
+          },
+          "content": {
+            "nl": "Ga naar Reports > Property Analytics en selecteer 'Time on Market Analysis'. Dit opent de TOM reporting interface waar je comprehensive time-on-market metrics voor je property portfolio kunt genereren.",
+            "en": "Go to Reports > Property Analytics and select 'Time on Market Analysis'. This opens the TOM reporting interface where you can generate comprehensive time-on-market metrics for your property portfolio.",
+            "es": "Ve a Informes > Análisis de propiedades y selecciona 'Análisis de tiempo en el mercado'. Esto abre la interfaz de informes de TOM donde puedes generar métricas completas de tiempo en el mercado para tu cartera de propiedades."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer property criteria",
+            "en": "Select Property Criteria",
+            "es": "Seleccionar criterios de propiedad"
+          },
+          "content": {
+            "nl": "Kies welke properties je wilt includeren in je analyse. Filter op property type (sale vs rental), property category (apartment, house, commercial), price range, location, en status (active, sold, rented). Je kunt ook specifieke agents of teams selecteren om hun listing performance te analyseren.",
+            "en": "Choose which properties to include in your analysis. Filter by property type (sale vs rental), property category (apartment, house, commercial), price range, location, and status (active, sold, rented). You can also select specific agents or teams to analyze their listing performance.",
+            "es": "Elige qué propiedades incluir en tu análisis. Filtra por tipo de propiedad (venta vs alquiler), categoría de propiedad (apartamento, casa, comercial), rango de precio, ubicación y estado (activo, vendido, alquilado). También puedes seleccionar agentes o equipos específicos para analizar su rendimiento de listado."
+          }
+        },
+        {
+          "title": {
+            "nl": "Configureer tijdsperiode",
+            "en": "Configure Time Period",
+            "es": "Configurar período de tiempo"
+          },
+          "content": {
+            "nl": "Stel je analysis tijdsperiode in. Je kunt kiezen om properties te analyseren die in een specifieke periode zijn verkocht/verhuurd, of properties die momenteel actief zijn. Voor trend analysis, selecteer een langere periode (6-12 maanden) om seizoenspatronen te zien. Voor current performance, focus op recente activiteit (laatste 30-90 dagen).",
+            "en": "Set your analysis time period. You can choose to analyze properties that sold/rented during a specific period, or properties currently active. For trend analysis, select a longer period (6-12 months) to see seasonal patterns. For current performance, focus on recent activity (last 30-90 days).",
+            "es": "Establece tu período de análisis de tiempo. Puedes elegir analizar propiedades que se vendieron/alquilaron durante un período específico, o propiedades actualmente activas. Para el análisis de tendencias, selecciona un período más largo (6-12 meses) para ver patrones estacionales. Para el rendimiento actual, concéntrate en la actividad reciente (últimos 30-90 días)."
+          }
+        },
+        {
+          "title": {
+            "nl": "Review TOM metrics en visualisaties",
+            "en": "Review TOM Metrics And Visualizations",
+            "es": "Revisar métricas de TOM y visualizaciones"
+          },
+          "content": {
+            "nl": "Bekijk je time-on-market rapport met interactive charts en data tabellen. De overview dashboard toont key metrics zoals gemiddelde DOM, mediaan DOM, en DOM distribution. Gebruik de 'Breakdown' tabs om performance te segmenteren op price range, property type, location, of agent. Hover over chart elementen voor gedetailleerde data.",
+            "en": "Review your time-on-market report with interactive charts and data tables. The overview dashboard shows key metrics like average DOM, median DOM, and DOM distribution. Use the 'Breakdown' tabs to segment performance by price range, property type, location, or agent. Hover over chart elements for detailed data.",
+            "es": "Revisa tu informe de tiempo en el mercado con gráficos interactivos y tablas de datos. El dashboard general muestra métricas clave como DOM promedio, DOM mediano y distribución de DOM. Usa las pestañas 'Desglose' para segmentar el rendimiento por rango de precio, tipo de propiedad, ubicación o agente. Pasa el cursor sobre los elementos del gráfico para obtener datos detallados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Identificeer outliers en verbeteringen",
+            "en": "Identify Outliers And Improvements",
+            "es": "Identificar valores atípicos y mejoras"
+          },
+          "content": {
+            "nl": "Gebruik de 'Property Details' view om individual properties met abnormaal lange of korte TOM te identificeren. Voor properties die veel langer op de markt staan dan gemiddeld, klik door voor details om potentiële issues te identificeren (overpriced, poor marketing, property condition). Voor snelle verkopen, analyseer wat werkte om successen te repliceren.",
+            "en": "Use the 'Property Details' view to identify individual properties with abnormally long or short TOM. For properties sitting much longer than average, click through for details to identify potential issues (overpriced, poor marketing, property condition). For quick sales, analyze what worked to replicate successes.",
+            "es": "Usa la vista 'Detalles de propiedad' para identificar propiedades individuales con TOM anormalmente largo o corto. Para propiedades que permanecen mucho más tiempo que el promedio, haz clic para obtener detalles e identificar posibles problemas (sobrevalorado, marketing deficiente, condición de la propiedad). Para ventas rápidas, analiza qué funcionó para replicar éxitos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "optimization-insights",
+      "content": {
+        "nl": "## TOM data gebruiken voor optimalisatie\n\nTime-on-market analytics worden actionable wanneer je ze gebruikt om je listing en pricing strategie te verbeteren:\n\n**Pricing strategie** - Als je gemiddelde DOM significant hoger is dan markt mediaan, ben je waarschijnlijk te hoog geprijsd. Analyse toont dat properties geprijsd binnen 5% van markt waarde 3x sneller verkopen dan properties geprijsd 10%+ boven markt. Gebruik TOM data om sellers te overtuigen van realistische pricing.\n\n**Marketing effectiviteit** - Vergelijk Time to First Viewing tussen properties. Als sommige properties snel viewings genereren maar andere niet, analyseer dan wat anders is - photography quality, description copy, online presence. Replicate wat werkt bij snelle properties.\n\n**Seasonal timing** - TOM data onthult beste tijden om te listen. In de meeste markten verkopen properties 30-40% sneller in spring dan winter. Plan je listing launches strategisch gebaseerd op historische TOM patterns.\n\n**Property type specialisatie** - Als je TOM voor bepaalde property types consistent beter is, overweeg dan om je acquisitie en marketing te focussen op die specialisaties. Je reputatie voor snelle sales in specifieke niches trekt meer business aan.\n\n**Price reduction timing** - Analyse van succesvolle properties toont optimal timing voor prijsaanpassingen. Wachten te lang verhoogt TOM exponentieel. Data toont dat eerste price reduction meestal moet komen na 45-60 dagen als er geen offers zijn.\n\n**Agent performance** - Vergelijk TOM tussen agents om coaching opportunities te identificeren. Agents met consistent lagere TOM hebben waarschijnlijk betere pricing conversations, photography, of marketing skills die gedeeld kunnen worden met het team.",
+        "en": "## Using TOM Data For Optimization\n\nTime-on-market analytics become actionable when you use them to improve your listing and pricing strategy:\n\n**Pricing strategy** - If your average DOM is significantly higher than market median, you're likely overpricing. Analysis shows properties priced within 5% of market value sell 3x faster than properties priced 10%+ above market. Use TOM data to convince sellers of realistic pricing.\n\n**Marketing effectiveness** - Compare Time to First Viewing between properties. If some properties generate viewings quickly but others don't, analyze what's different - photography quality, description copy, online presence. Replicate what works with fast properties.\n\n**Seasonal timing** - TOM data reveals best times to list. In most markets, properties sell 30-40% faster in spring than winter. Plan your listing launches strategically based on historical TOM patterns.\n\n**Property type specialization** - If your TOM for certain property types is consistently better, consider focusing your acquisition and marketing on those specializations. Your reputation for quick sales in specific niches attracts more business.\n\n**Price reduction timing** - Analysis of successful properties shows optimal timing for price adjustments. Waiting too long increases TOM exponentially. Data shows first price reduction should usually come after 45-60 days if there are no offers.\n\n**Agent performance** - Compare TOM between agents to identify coaching opportunities. Agents with consistently lower TOM likely have better pricing conversations, photography, or marketing skills that can be shared with the team.",
+        "es": "## Usar datos de TOM para optimización\n\nLos análisis de tiempo en el mercado se vuelven accionables cuando los usas para mejorar tu estrategia de listado y precios:\n\n**Estrategia de precios** - Si tu DOM promedio es significativamente más alto que la mediana del mercado, probablemente estés sobrevalorado. El análisis muestra que las propiedades con precios dentro del 5% del valor de mercado se venden 3 veces más rápido que las propiedades con precios 10%+ por encima del mercado. Usa datos de TOM para convencer a los vendedores de precios realistas.\n\n**Efectividad del marketing** - Compara el tiempo hasta la primera visualización entre propiedades. Si algunas propiedades generan visualizaciones rápidamente pero otras no, analiza qué es diferente: calidad de la fotografía, copia de descripción, presencia en línea. Replica lo que funciona con propiedades rápidas.\n\n**Momento estacional** - Los datos de TOM revelan los mejores momentos para listar. En la mayoría de los mercados, las propiedades se venden 30-40% más rápido en primavera que en invierno. Planifica tus lanzamientos de listado estratégicamente según los patrones históricos de TOM.\n\n**Especialización por tipo de propiedad** - Si tu TOM para ciertos tipos de propiedades es consistentemente mejor, considera enfocarte en la adquisición y el marketing de esas especializaciones. Tu reputación por ventas rápidas en nichos específicos atrae más negocios.\n\n**Momento de reducción de precio** - El análisis de propiedades exitosas muestra el momento óptimo para ajustes de precio. Esperar demasiado aumenta el TOM exponencialmente. Los datos muestran que la primera reducción de precio generalmente debe llegar después de 45-60 días si no hay ofertas.\n\n**Rendimiento del agente** - Compara el TOM entre agentes para identificar oportunidades de coaching. Los agentes con TOM consistentemente más bajo probablemente tienen mejores conversaciones de precios, fotografía o habilidades de marketing que pueden compartirse con el equipo."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "benchmark-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Benchmark tegen markt gemiddeldes",
+        "en": "Benchmark Against Market Averages",
+        "es": "Comparar con promedios del mercado"
+      },
+      "content": {
+        "nl": "Je TOM metrics krijgen meer betekenis wanneer je ze vergelijkt met markt benchmarks. Research lokale markt data van MLS, property portals, of industry reports om te zien hoe je performance staat ten opzichte van concurrenten. Als je markt gemiddelde DOM 55 dagen is en jouw gemiddelde is 40 dagen, dat is een krachtig selling point voor nieuwe listings. Als je boven markt gemiddelde zit, gebruik die data om process verbeteringen te motiveren.",
+        "en": "Your TOM metrics gain more meaning when compared to market benchmarks. Research local market data from MLS, property portals, or industry reports to see how your performance stacks up against competitors. If your market average DOM is 55 days and your average is 40 days, that's a powerful selling point for new listings. If you're above market average, use that data to motivate process improvements.",
+        "es": "Tus métricas de TOM ganan más significado cuando se comparan con los puntos de referencia del mercado. Investiga los datos del mercado local de MLS, portales de propiedades o informes de la industria para ver cómo se compara tu rendimiento con el de los competidores. Si el DOM promedio de tu mercado es de 55 días y tu promedio es de 40 días, ese es un punto de venta poderoso para nuevos listados. Si estás por encima del promedio del mercado, usa esos datos para motivar mejoras en el proceso."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "active-listings-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Actieve listings vervormen gemiddeldes",
+        "en": "Active Listings Skew Averages",
+        "es": "Los listados activos distorsionan los promedios"
+      },
+      "content": {
+        "nl": "Wees voorzichtig bij het interpreteren van TOM voor actieve (nog niet verkochte) listings. Als je 'current days on market' includeert voor properties die nog steeds actief zijn, zijn je averages kunstmatig laag omdat long-tail properties nog niet zijn geteld. Voor accurate analysis, segment je rapporten: één voor 'Sold/Rented Properties' (compleet TOM data) en één voor 'Active Listings' (current DOM maar incomplete cycle). Dit geeft eerlijker inzicht in zowel historische performance als huidige pipeline.",
+        "en": "Be careful when interpreting TOM for active (not yet sold) listings. If you include 'current days on market' for properties still active, your averages are artificially low because long-tail properties haven't been counted yet. For accurate analysis, segment your reports: one for 'Sold/Rented Properties' (complete TOM data) and one for 'Active Listings' (current DOM but incomplete cycle). This gives fairer insight into both historical performance and current pipeline.",
+        "es": "Ten cuidado al interpretar TOM para listados activos (aún no vendidos). Si incluyes 'días actuales en el mercado' para propiedades aún activas, tus promedios son artificialmente bajos porque las propiedades de cola larga aún no se han contado. Para un análisis preciso, segmenta tus informes: uno para 'Propiedades vendidas/alquiladas' (datos completos de TOM) y uno para 'Listados activos' (DOM actual pero ciclo incompleto). Esto proporciona una visión más justa tanto del rendimiento histórico como del pipeline actual."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Wat is een gezonde average days on market voor vastgoed?",
+            "en": "What is a healthy average days on market for real estate?",
+            "es": "¿Cuál es un promedio saludable de días en el mercado para bienes raíces?"
+          },
+          "answer": {
+            "nl": "Een gezonde DOM varieert significant gebaseerd op markt type en property category. Voor residentiële sales ligt de ideale range tussen 30-60 dagen in een gebalanceerde markt. Onder de 30 dagen kan duiden op een seller's markt of aggressive pricing. Boven 90 dagen suggereert pricing issues of markt challenges. Voor rentals is de ideale DOM korter: 14-30 dagen. Luxury properties hebben natuurlijk langere cycles (60-120+ dagen) vanwege kleinere buyer pools. Commercial properties kunnen 90-180 dagen zijn. Het belangrijkste is om je TOM te vergelijken met lokale markt benchmarks voor je specifieke property types.",
+            "en": "A healthy DOM varies significantly based on market type and property category. For residential sales, the ideal range is 30-60 days in a balanced market. Below 30 days may indicate a seller's market or aggressive pricing. Above 90 days suggests pricing issues or market challenges. For rentals, ideal DOM is shorter: 14-30 days. Luxury properties naturally have longer cycles (60-120+ days) due to smaller buyer pools. Commercial properties can be 90-180 days. The key is comparing your TOM to local market benchmarks for your specific property types.",
+            "es": "Un DOM saludable varía significativamente según el tipo de mercado y la categoría de propiedad. Para ventas residenciales, el rango ideal es de 30-60 días en un mercado equilibrado. Por debajo de 30 días puede indicar un mercado de vendedores o precios agresivos. Por encima de 90 días sugiere problemas de precios o desafíos del mercado. Para alquileres, el DOM ideal es más corto: 14-30 días. Las propiedades de lujo naturalmente tienen ciclos más largos (60-120+ días) debido a grupos de compradores más pequeños. Las propiedades comerciales pueden ser de 90-180 días. La clave es comparar tu TOM con los puntos de referencia del mercado local para tus tipos específicos de propiedades."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe kan ik mijn gemiddelde time-on-market verlagen?",
+            "en": "How can I reduce my average time-on-market?",
+            "es": "¿Cómo puedo reducir mi tiempo promedio en el mercado?"
+          },
+          "answer": {
+            "nl": "De meest effectieve strategieën voor het verlagen van TOM zijn: (1) Accurate initial pricing - properties geprijsd op of net onder markt waarde verkopen 2-3x sneller. Gebruik comparative market analysis en weiger overpriced listings. (2) Professional photography en staging - hoogwaardige visuals verhogen viewing requests met 60-80%. Investeer in professionele fotografie voor alle listings. (3) Snelle response op inquiries - reageer op leads binnen 5 minuten om viewing conversie te maximaliseren. (4) Strategic marketing - list properties op alle relevante portals en promoot op social media. (5) Regular price reviews - als er geen viewings of offers zijn na 30-45 dagen, adviseer prijsaanpassing. (6) Kwalificatie van buyers - focus viewing tijd op serieuze, pre-qualified buyers in plaats van window shoppers.",
+            "en": "The most effective strategies for reducing TOM are: (1) Accurate initial pricing - properties priced at or just below market value sell 2-3x faster. Use comparative market analysis and refuse overpriced listings. (2) Professional photography and staging - high-quality visuals increase viewing requests by 60-80%. Invest in professional photography for all listings. (3) Quick response to inquiries - respond to leads within 5 minutes to maximize viewing conversion. (4) Strategic marketing - list properties on all relevant portals and promote on social media. (5) Regular price reviews - if there are no viewings or offers after 30-45 days, advise price adjustment. (6) Buyer qualification - focus viewing time on serious, pre-qualified buyers rather than window shoppers.",
+            "es": "Las estrategias más efectivas para reducir el TOM son: (1) Precios iniciales precisos - las propiedades con precios al valor de mercado o justo por debajo se venden 2-3 veces más rápido. Usa análisis de mercado comparativo y rechaza listados sobrevalorados. (2) Fotografía profesional y puesta en escena - las imágenes de alta calidad aumentan las solicitudes de visualización en un 60-80%. Invierte en fotografía profesional para todos los listados. (3) Respuesta rápida a consultas - responde a los leads en 5 minutos para maximizar la conversión de visualización. (4) Marketing estratégico - lista propiedades en todos los portales relevantes y promociona en redes sociales. (5) Revisiones regulares de precios - si no hay visualizaciones u ofertas después de 30-45 días, aconseja ajustar el precio. (6) Calificación de compradores - enfoca el tiempo de visualización en compradores serios y precalificados en lugar de curiosos."
+          }
+        },
+        {
+          "question": {
+            "nl": "Moet ik TOM herberekenen na een price reduction?",
+            "en": "Should I reset TOM after a price reduction?",
+            "es": "¿Debería restablecer el TOM después de una reducción de precio?"
+          },
+          "answer": {
+            "nl": "Nee, best practice is om TOM NIET te resetten na price reductions. Total days on market moet worden gemeten vanaf de oorspronkelijke listing datum, ongeacht prijswijzigingen. Dit geeft accurate markt inzicht en voorkomt inflatie van TOM statistieken. Echter, je kunt aanvullend 'Days Since Last Price Change' tracken als een secundaire metric om de impact van pricing adjustments te meten. Sommige markten en portals hebben verschillende standaarden, maar voor jouw interne analytics en transparantie met clients, gebruik totale cumulatieve TOM vanaf oorspronkelijke listing. Dit is ook eerlijker tegenover buyers die historische TOM gebruiken om negotiation leverage te evalueren.",
+            "en": "No, best practice is NOT to reset TOM after price reductions. Total days on market should be measured from the original listing date, regardless of price changes. This provides accurate market insight and prevents inflation of TOM statistics. However, you can additionally track 'Days Since Last Price Change' as a secondary metric to measure the impact of pricing adjustments. Some markets and portals have different standards, but for your internal analytics and transparency with clients, use total cumulative TOM from original listing. This is also fairer to buyers who use historical TOM to evaluate negotiation leverage.",
+            "es": "No, la mejor práctica es NO restablecer el TOM después de reducciones de precio. Los días totales en el mercado deben medirse desde la fecha de listado original, independientemente de los cambios de precio. Esto proporciona información precisa del mercado y evita la inflación de las estadísticas de TOM. Sin embargo, puedes rastrear adicionalmente 'Días desde el último cambio de precio' como una métrica secundaria para medir el impacto de los ajustes de precios. Algunos mercados y portales tienen diferentes estándares, pero para tus análisis internos y transparencia con los clientes, usa el TOM acumulativo total desde el listado original. Esto también es más justo para los compradores que usan el TOM histórico para evaluar el apalancamiento de negociación."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe gebruik ik TOM data in gesprekken met sellers?",
+            "en": "How do I use TOM data in conversations with sellers?",
+            "es": "¿Cómo uso los datos de TOM en conversaciones con vendedores?"
+          },
+          "answer": {
+            "nl": "TOM data is een krachtig tool voor het managen van seller verwachtingen en het winnen van listings. Bij initial consultation, presenteer je average TOM voor vergelijkbare properties in hun neighborhood en price range. Dit sets realistische verwachtingen. Als een seller op overpricing aandringt, laat zien hoe extended TOM hun net proceeds vermindert (carrying costs, market perception). Gebruik case studies van recente sales: 'Properties in dit segment geprijsd op €350k verkopen gemiddeld in 45 dagen, maar properties op €380k zitten 120+ dagen en verkopen uiteindelijk voor €345k na reductions.' Quantify de kosten van sitting: elke extra maand betekent extra hypotheek, utilities, en opportuniteitskosten. Positief, als je track record lage TOM laat zien, gebruik dat als differentiator: 'Onze gemiddelde is 38 dagen versus markt gemiddelde van 62 dagen omdat we...'",
+            "en": "TOM data is a powerful tool for managing seller expectations and winning listings. At initial consultation, present your average TOM for comparable properties in their neighborhood and price range. This sets realistic expectations. If a seller insists on overpricing, show how extended TOM reduces their net proceeds (carrying costs, market perception). Use case studies of recent sales: 'Properties in this segment priced at €350k sell in average 45 days, but properties at €380k sit for 120+ days and ultimately sell for €345k after reductions.' Quantify the cost of sitting: each extra month means additional mortgage, utilities, and opportunity costs. Positively, if your track record shows low TOM, use that as a differentiator: 'Our average is 38 days versus market average of 62 days because we...'",
+            "es": "Los datos de TOM son una herramienta poderosa para gestionar las expectativas de los vendedores y ganar listados. En la consulta inicial, presenta tu TOM promedio para propiedades comparables en su vecindario y rango de precio. Esto establece expectativas realistas. Si un vendedor insiste en sobrevalorar, muestra cómo el TOM extendido reduce sus ingresos netos (costos de mantenimiento, percepción del mercado). Usa estudios de caso de ventas recientes: 'Las propiedades en este segmento con precio de €350k se venden en promedio en 45 días, pero las propiedades a €380k permanecen 120+ días y finalmente se venden por €345k después de reducciones.' Cuantifica el costo de permanecer: cada mes adicional significa hipoteca adicional, servicios públicos y costos de oportunidad. Positivamente, si tu historial muestra un TOM bajo, úsalo como diferenciador: 'Nuestro promedio es de 38 días versus el promedio del mercado de 62 días porque...'"
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "dashboard-kpis-overview",
+    "deal-reporting-metrics",
+    "conversion-optimization-guide"
+  ]
+}

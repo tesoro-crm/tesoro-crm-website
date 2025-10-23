@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "id": "email-templates-management",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "intermediate",
+    "tags": ["settings", "email", "templates", "communication", "automation"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1200&h=630&fit=crop",
+    "keywords": ["email templates", "email automation", "communication", "templates", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "E-mailsjablonen maken en beheren",
+      "en": "Creating and Managing Email Templates",
+      "es": "Crear y gestionar plantillas de correo electrónico"
+    },
+    "description": {
+      "nl": "Automatiseer uw e-mailcommunicatie met professionele sjablonen die consistent zijn, tijd besparen en uw conversie verhogen.",
+      "en": "Automate your email communication with professional templates that are consistent, save time, and increase your conversion rate.",
+      "es": "Automatice su comunicación por correo electrónico con plantillas profesionales que son consistentes, ahorran tiempo y aumentan su tasa de conversión."
+    },
+    "icon": "email"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "E-mailsjablonen zijn essentieel voor efficiënte en professionele communicatie met uw klanten. Ze zorgen voor consistente branding, besparen tijd bij routinematige communicatie en helpen uw team om de juiste boodschap op het juiste moment te versturen.\n\nMet Tesoro CRM's sjabloonsysteem kunt u gepersonaliseerde e-mails versturen op schaal, compleet met dynamische velden die automatisch worden ingevuld met klant- en woninginformatie.",
+        "en": "Email templates are essential for efficient and professional communication with your customers. They ensure consistent branding, save time on routine communications, and help your team send the right message at the right time.\n\nWith Tesoro CRM's template system, you can send personalized emails at scale, complete with dynamic fields that automatically populate with customer and property information.",
+        "es": "Las plantillas de correo electrónico son esenciales para una comunicación eficiente y profesional con sus clientes. Garantizan una marca consistente, ahorran tiempo en comunicaciones rutinarias y ayudan a su equipo a enviar el mensaje correcto en el momento correcto.\n\nCon el sistema de plantillas de Tesoro CRM, puede enviar correos electrónicos personalizados a escala, completos con campos dinámicos que se completan automáticamente con información de clientes y propiedades."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "create-template",
+      "title": {
+        "nl": "Een e-mailsjabloon maken",
+        "en": "Creating an Email Template",
+        "es": "Crear una plantilla de correo electrónico"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Toegang tot sjablonen",
+            "en": "Access Templates",
+            "es": "Acceder a plantillas"
+          },
+          "description": {
+            "nl": "Navigeer naar Instellingen > Communicatie > E-mailsjablonen. Hier ziet u alle bestaande sjablonen georganiseerd per categorie zoals Welkom, Bezichtiging, Opvolging, Bod en Contract. Beheerders en Managers kunnen sjablonen maken en bewerken.",
+            "en": "Navigate to Settings > Communication > Email Templates. Here you'll see all existing templates organized by category such as Welcome, Viewing, Follow-up, Offer, and Contract. Administrators and Managers can create and edit templates.",
+            "es": "Navegue a Configuración > Comunicación > Plantillas de correo electrónico. Aquí verá todas las plantillas existentes organizadas por categoría como Bienvenida, Visualización, Seguimiento, Oferta y Contrato. Los administradores y gerentes pueden crear y editar plantillas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Klik op 'Nieuw sjabloon'",
+            "en": "Click 'New Template'",
+            "es": "Hacer clic en 'Nueva plantilla'"
+          },
+          "description": {
+            "nl": "Geef uw sjabloon een duidelijke, beschrijvende naam die aangeeft wanneer het gebruikt moet worden (bijvoorbeeld 'Bevestiging Bezichtiging - Verkoop' of 'Follow-up Na Bezichtiging'). Kies een categorie en tags om het sjabloon later gemakkelijk te vinden.",
+            "en": "Give your template a clear, descriptive name that indicates when it should be used (e.g., 'Viewing Confirmation - Sales' or 'Follow-up After Viewing'). Choose a category and tags to easily find the template later.",
+            "es": "Dé a su plantilla un nombre claro y descriptivo que indique cuándo debe usarse (por ejemplo, 'Confirmación de visualización - Ventas' o 'Seguimiento después de la visualización'). Elija una categoría y etiquetas para encontrar fácilmente la plantilla más tarde."
+          }
+        },
+        {
+          "title": {
+            "nl": "Schrijf een effectieve onderwerpregel",
+            "en": "Write an Effective Subject Line",
+            "es": "Escribir una línea de asunto efectiva"
+          },
+          "description": {
+            "nl": "De onderwerpregel bepaalt of uw e-mail wordt geopend. Maak deze specifiek, relevant en persoonlijk. Gebruik dynamische velden zoals {{contact.firstName}} of {{property.address}} voor personalisatie. Bijvoorbeeld: 'Bezichtiging {{property.address}} bevestigd voor {{appointment.date}}'.",
+            "en": "The subject line determines whether your email gets opened. Make it specific, relevant, and personal. Use dynamic fields like {{contact.firstName}} or {{property.address}} for personalization. For example: 'Viewing {{property.address}} confirmed for {{appointment.date}}'.",
+            "es": "La línea de asunto determina si se abre su correo electrónico. Hágala específica, relevante y personal. Use campos dinámicos como {{contact.firstName}} o {{property.address}} para personalización. Por ejemplo: 'Visualización {{property.address}} confirmada para {{appointment.date}}'."
+          }
+        },
+        {
+          "title": {
+            "nl": "Ontwerp de e-mailinhoud",
+            "en": "Design Email Content",
+            "es": "Diseñar contenido del correo electrónico"
+          },
+          "description": {
+            "nl": "Gebruik de visuele editor om uw e-mail op te maken. Begin met een persoonlijke begroeting, geef duidelijk de kernboodschap weer, en sluit af met een duidelijke call-to-action. Gebruik dynamische velden om de e-mail te personaliseren:\n\n{{contact.firstName}} - Voornaam van contact\n{{contact.lastName}} - Achternaam\n{{property.address}} - Woningadres\n{{property.price}} - Vraagprijs\n{{user.firstName}} - Uw voornaam\n{{user.phone}} - Uw telefoonnummer\n{{company.name}} - Bedrijfsnaam",
+            "en": "Use the visual editor to format your email. Start with a personal greeting, clearly state the core message, and end with a clear call-to-action. Use dynamic fields to personalize the email:\n\n{{contact.firstName}} - Contact's first name\n{{contact.lastName}} - Last name\n{{property.address}} - Property address\n{{property.price}} - Asking price\n{{user.firstName}} - Your first name\n{{user.phone}} - Your phone number\n{{company.name}} - Company name",
+            "es": "Use el editor visual para formatear su correo electrónico. Comience con un saludo personal, indique claramente el mensaje principal y termine con un llamado a la acción claro. Use campos dinámicos para personalizar el correo electrónico:\n\n{{contact.firstName}} - Nombre del contacto\n{{contact.lastName}} - Apellido\n{{property.address}} - Dirección de la propiedad\n{{property.price}} - Precio solicitado\n{{user.firstName}} - Su nombre\n{{user.phone}} - Su número de teléfono\n{{company.name}} - Nombre de la empresa"
+          }
+        },
+        {
+          "title": {
+            "nl": "Voeg handtekening toe",
+            "en": "Add Signature",
+            "es": "Agregar firma"
+          },
+          "description": {
+            "nl": "Uw e-mailhandtekening wordt automatisch toegevoegd aan het einde van elke e-mail. Deze bevat uw contactgegevens, bedrijfslogo en sociale media links zoals geconfigureerd in uw profiel- en bedrijfsinstellingen. U hoeft deze niet handmatig in elk sjabloon toe te voegen.",
+            "en": "Your email signature is automatically added to the end of each email. This includes your contact details, company logo, and social media links as configured in your profile and company settings. You don't need to manually add this to each template.",
+            "es": "Su firma de correo electrónico se agrega automáticamente al final de cada correo electrónico. Esto incluye sus datos de contacto, logotipo de la empresa y enlaces de redes sociales según se configuró en su perfil y configuración de empresa. No necesita agregar esto manualmente a cada plantilla."
+          }
+        },
+        {
+          "title": {
+            "nl": "Test het sjabloon",
+            "en": "Test the Template",
+            "es": "Probar la plantilla"
+          },
+          "description": {
+            "nl": "Voordat u het sjabloon in gebruik neemt, stuur een test-e-mail naar uzelf. Controleer of alle dynamische velden correct worden ingevuld, de opmaak er goed uitziet op desktop en mobiel, en alle links werken. Test met verschillende contacten om te zien hoe personalisatie werkt.",
+            "en": "Before using the template, send a test email to yourself. Check if all dynamic fields are correctly populated, the formatting looks good on desktop and mobile, and all links work. Test with different contacts to see how personalization works.",
+            "es": "Antes de usar la plantilla, envíese un correo electrónico de prueba. Verifique si todos los campos dinámicos se completan correctamente, el formato se ve bien en escritorio y móvil, y todos los enlaces funcionan. Pruebe con diferentes contactos para ver cómo funciona la personalización."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "personalization-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Personalisatie verhoogt conversie",
+        "en": "Personalization Increases Conversion",
+        "es": "La personalización aumenta la conversión"
+      },
+      "content": {
+        "nl": "E-mails met gepersonaliseerde onderwerpregels hebben 26% hogere open rates. Gebruik altijd minimaal de voornaam van de ontvanger en waar mogelijk specifieke woninginformatie. Mensen reageren beter op berichten die relevant en persoonlijk aanvoelen.",
+        "en": "Emails with personalized subject lines have 26% higher open rates. Always use at least the recipient's first name and where possible specific property information. People respond better to messages that feel relevant and personal.",
+        "es": "Los correos electrónicos con líneas de asunto personalizadas tienen tasas de apertura un 26% más altas. Use siempre al menos el nombre del destinatario y cuando sea posible información específica de la propiedad. Las personas responden mejor a mensajes que se sienten relevantes y personales."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "template-categories",
+      "title": {
+        "nl": "Essentiële sjablonen voor vastgoed",
+        "en": "Essential Templates for Real Estate",
+        "es": "Plantillas esenciales para bienes raíces"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Welkom en eerste contact",
+            "en": "Welcome and First Contact",
+            "es": "Bienvenida y primer contacto"
+          },
+          "description": {
+            "nl": "**Welkom nieuwe lead**: Bedank voor interesse, stel uzelf voor, leg uw proces uit\n\n**Eerste respons website**: Snelle reactie op websiteaanvraag binnen 1 uur\n\n**Intake vragenlijst**: Verzamel voorkeuren en budget informatie\n\n**Bedankt voor inschrijving nieuwsbrief**: Bevestig inschrijving en stel verwachtingen",
+            "en": "**Welcome new lead**: Thank for interest, introduce yourself, explain your process\n\n**Initial website response**: Quick response to website inquiry within 1 hour\n\n**Intake questionnaire**: Collect preferences and budget information\n\n**Thanks for newsletter signup**: Confirm subscription and set expectations",
+            "es": "**Bienvenida nuevo cliente potencial**: Agradezca el interés, preséntese, explique su proceso\n\n**Respuesta inicial del sitio web**: Respuesta rápida a consulta del sitio web dentro de 1 hora\n\n**Cuestionario de admisión**: Recopile preferencias e información de presupuesto\n\n**Gracias por suscribirse al boletín**: Confirme la suscripción y establezca expectativas"
+          }
+        },
+        {
+          "title": {
+            "nl": "Bezichtigingen",
+            "en": "Viewings",
+            "es": "Visualizaciones"
+          },
+          "description": {
+            "nl": "**Bevestiging bezichtiging**: Datum, tijd, adres en praktische informatie\n\n**Herinnering 24 uur voor bezichtiging**: Reminder met routebeschrijving\n\n**Follow-up na bezichtiging**: Vraag om feedback binnen 24 uur\n\n**Nieuwe woningen beschikbaar**: Stuur matches op basis van voorkeuren",
+            "en": "**Viewing confirmation**: Date, time, address and practical information\n\n**Reminder 24 hours before viewing**: Reminder with directions\n\n**Follow-up after viewing**: Ask for feedback within 24 hours\n\n**New properties available**: Send matches based on preferences",
+            "es": "**Confirmación de visualización**: Fecha, hora, dirección e información práctica\n\n**Recordatorio 24 horas antes de la visualización**: Recordatorio con direcciones\n\n**Seguimiento después de la visualización**: Solicite comentarios dentro de 24 horas\n\n**Nuevas propiedades disponibles**: Envíe coincidencias basadas en preferencias"
+          }
+        },
+        {
+          "title": {
+            "nl": "Biedingen en onderhandelingen",
+            "en": "Offers and Negotiations",
+            "es": "Ofertas y negociaciones"
+          },
+          "description": {
+            "nl": "**Bevestiging bod ontvangen**: Bevestig ontvangst en leg vervolgproces uit\n\n**Bod geaccepteerd**: Felicitaties en volgende stappen naar notaris\n\n**Bod afgewezen**: Leg uit waarom en stel alternatieven voor\n\n**Tegenbod ontvangen**: Communiceer nieuwe voorwaarden",
+            "en": "**Offer received confirmation**: Confirm receipt and explain follow-up process\n\n**Offer accepted**: Congratulations and next steps to notary\n\n**Offer rejected**: Explain why and suggest alternatives\n\n**Counter-offer received**: Communicate new conditions",
+            "es": "**Confirmación de oferta recibida**: Confirme la recepción y explique el proceso de seguimiento\n\n**Oferta aceptada**: Felicitaciones y próximos pasos hacia el notario\n\n**Oferta rechazada**: Explique por qué y sugiera alternativas\n\n**Contraoferta recibida**: Comunique las nuevas condiciones"
+          }
+        },
+        {
+          "title": {
+            "nl": "Contract en overdracht",
+            "en": "Contract and Transfer",
+            "es": "Contrato y transferencia"
+          },
+          "description": {
+            "nl": "**Notaris geselecteerd**: Introductie notaris en benodigde documenten\n\n**Koopakte klaar**: Uitnodiging voor ondertekening\n\n**Datum overdracht bevestigd**: Praktische zaken sleuteloverdracht\n\n**Gefeliciteerd met uw nieuwe huis**: Afsluiting deal en verzoek om review",
+            "en": "**Notary selected**: Introduction notary and required documents\n\n**Purchase deed ready**: Invitation for signing\n\n**Transfer date confirmed**: Practical matters key handover\n\n**Congratulations on your new home**: Deal closure and review request",
+            "es": "**Notario seleccionado**: Introducción del notario y documentos requeridos\n\n**Escritura de compra lista**: Invitación para firmar\n\n**Fecha de transferencia confirmada**: Asuntos prácticos entrega de llaves\n\n**Felicitaciones por su nuevo hogar**: Cierre del acuerdo y solicitud de revisión"
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "gdpr-compliance",
+      "variant": "warning",
+      "title": {
+        "nl": "Let op AVG-naleving in e-mails",
+        "en": "Watch Out for GDPR Compliance in Emails",
+        "es": "Tenga cuidado con el cumplimiento de GDPR en correos electrónicos"
+      },
+      "content": {
+        "nl": "Elke marketing e-mail moet:\n- Een duidelijke afmeldlink bevatten (automatisch toegevoegd door Tesoro CRM)\n- Uw bedrijfscontactgegevens vermelden (automatisch in handtekening)\n- Alleen worden verstuurd naar contacten die toestemming hebben gegeven\n- Eenvoudig afmelden mogelijk maken in één klik\n\nTransactionele e-mails (bevestigingen, herinneringen) zijn vrijgesteld van deze regels.",
+        "en": "Every marketing email must:\n- Include a clear unsubscribe link (automatically added by Tesoro CRM)\n- State your business contact details (automatic in signature)\n- Only be sent to contacts who have given permission\n- Enable easy one-click unsubscribe\n\nTransactional emails (confirmations, reminders) are exempt from these rules.",
+        "es": "Cada correo electrónico de marketing debe:\n- Incluir un enlace claro para darse de baja (agregado automáticamente por Tesoro CRM)\n- Indicar sus datos de contacto comerciales (automático en la firma)\n- Enviarse solo a contactos que han dado permiso\n- Permitir darse de baja fácilmente con un clic\n\nLos correos electrónicos transaccionales (confirmaciones, recordatorios) están exentos de estas reglas."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "template-automation",
+      "title": {
+        "nl": "Sjablonen automatiseren",
+        "en": "Automating Templates",
+        "es": "Automatizar plantillas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Trigger op deal fase",
+            "en": "Trigger on Deal Stage",
+            "es": "Activar en fase de acuerdo"
+          },
+          "description": {
+            "nl": "Stel in dat een specifiek sjabloon automatisch wordt verstuurd wanneer een deal een bepaalde fase bereikt. Bijvoorbeeld: verstuur 'Bod Geaccepteerd' sjabloon automatisch wanneer een deal naar de fase 'Geaccepteerd' wordt verplaatst. Dit zorgt voor consistente en tijdige communicatie.",
+            "en": "Set up a specific template to be automatically sent when a deal reaches a certain stage. For example: send 'Offer Accepted' template automatically when a deal is moved to the 'Accepted' stage. This ensures consistent and timely communication.",
+            "es": "Configure que una plantilla específica se envíe automáticamente cuando un acuerdo alcanza una cierta fase. Por ejemplo: envíe la plantilla 'Oferta aceptada' automáticamente cuando un acuerdo se mueve a la fase 'Aceptado'. Esto garantiza una comunicación consistente y oportuna."
+          }
+        },
+        {
+          "title": {
+            "nl": "Geplande follow-ups",
+            "en": "Scheduled Follow-ups",
+            "es": "Seguimientos programados"
+          },
+          "description": {
+            "nl": "Configureer automatische follow-up e-mails op basis van tijd. Bijvoorbeeld: 3 dagen na bezichtiging zonder reactie, verstuur 'Nog interesse?' sjabloon. Of 1 week na laatste contact, verstuur 'Nieuwe woningen' update. Automatische follow-ups zorgen dat geen enkele lead koud wordt.",
+            "en": "Configure automatic follow-up emails based on time. For example: 3 days after viewing without response, send 'Still interested?' template. Or 1 week after last contact, send 'New properties' update. Automatic follow-ups ensure no lead goes cold.",
+            "es": "Configure correos electrónicos de seguimiento automáticos basados en el tiempo. Por ejemplo: 3 días después de la visualización sin respuesta, envíe la plantilla '¿Todavía interesado?'. O 1 semana después del último contacto, envíe actualización de 'Nuevas propiedades'. Los seguimientos automáticos garantizan que ningún cliente potencial se enfríe."
+          }
+        },
+        {
+          "title": {
+            "nl": "Tag-gebaseerde triggers",
+            "en": "Tag-based Triggers",
+            "es": "Activadores basados en etiquetas"
+          },
+          "description": {
+            "nl": "Verstuur sjablonen automatisch wanneer een specifieke tag wordt toegevoegd. Bijvoorbeeld: wanneer tag 'Hot Lead' wordt toegevoegd, notificeer de manager en verstuur een prioriteits follow-up sjabloon. Of wanneer tag 'VIP' wordt toegevoegd, activeer een speciaal welkomstproces.",
+            "en": "Send templates automatically when a specific tag is added. For example: when 'Hot Lead' tag is added, notify the manager and send a priority follow-up template. Or when 'VIP' tag is added, activate a special welcome process.",
+            "es": "Envíe plantillas automáticamente cuando se agrega una etiqueta específica. Por ejemplo: cuando se agrega la etiqueta 'Cliente potencial caliente', notifique al gerente y envíe una plantilla de seguimiento prioritaria. O cuando se agrega la etiqueta 'VIP', active un proceso de bienvenida especial."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "template-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor e-mailsjablonen",
+        "en": "Email Template Best Practices",
+        "es": "Mejores prácticas para plantillas de correo electrónico"
+      },
+      "content": {
+        "nl": "**Kort en bondig**: 150-200 woorden is ideaal voor eerste e-mails\n\n**Mobiel-vriendelijk**: 60% van e-mails wordt op mobiel gelezen\n\n**Eén call-to-action**: Te veel opties verlammen besluitvorming\n\n**Test A/B**: Experimenteer met verschillende onderwerpregels\n\n**Update regelmatig**: Review en verbeter sjablonen elk kwartaal\n\n**Monitor statistieken**: Let op open rates en click-through rates",
+        "en": "**Short and concise**: 150-200 words is ideal for initial emails\n\n**Mobile-friendly**: 60% of emails are read on mobile\n\n**One call-to-action**: Too many options paralyze decision-making\n\n**A/B test**: Experiment with different subject lines\n\n**Update regularly**: Review and improve templates quarterly\n\n**Monitor statistics**: Pay attention to open rates and click-through rates",
+        "es": "**Corto y conciso**: 150-200 palabras es ideal para correos electrónicos iniciales\n\n**Amigable para móviles**: El 60% de los correos electrónicos se leen en dispositivos móviles\n\n**Un llamado a la acción**: Demasiadas opciones paralizan la toma de decisiones\n\n**Prueba A/B**: Experimente con diferentes líneas de asunto\n\n**Actualice regularmente**: Revise y mejore las plantillas trimestralmente\n\n**Monitoree estadísticas**: Preste atención a las tasas de apertura y las tasas de clics"
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik een sjabloon aanpassen voordat ik het verstuur?",
+            "en": "Can I modify a template before sending it?",
+            "es": "¿Puedo modificar una plantilla antes de enviarla?"
+          },
+          "answer": {
+            "nl": "Ja, wanneer u een sjabloon selecteert, kunt u altijd de inhoud aanpassen voordat u verzendt. Dit is handig voor het toevoegen van persoonlijke notities of aanpassen van details voor een specifieke situatie. Het originele sjabloon blijft ongewijzigd.",
+            "en": "Yes, when you select a template, you can always modify the content before sending. This is useful for adding personal notes or adjusting details for a specific situation. The original template remains unchanged.",
+            "es": "Sí, cuando selecciona una plantilla, siempre puede modificar el contenido antes de enviar. Esto es útil para agregar notas personales o ajustar detalles para una situación específica. La plantilla original permanece sin cambios."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er als een dynamisch veld leeg is?",
+            "en": "What happens if a dynamic field is empty?",
+            "es": "¿Qué sucede si un campo dinámico está vacío?"
+          },
+          "answer": {
+            "nl": "Als een dynamisch veld geen waarde heeft (bijvoorbeeld {{property.price}} maar de woning heeft geen prijs), wordt het veld niet weergegeven in de verzonden e-mail. Het systeem waarschuwt u bij het opstellen als essentiële velden ontbreken, zodat u deze kunt aanvullen of het sjabloon kunt aanpassen.",
+            "en": "If a dynamic field has no value (e.g., {{property.price}} but the property has no price), the field is not displayed in the sent email. The system warns you when composing if essential fields are missing, so you can fill them in or adjust the template.",
+            "es": "Si un campo dinámico no tiene valor (por ejemplo, {{property.price}} pero la propiedad no tiene precio), el campo no se muestra en el correo electrónico enviado. El sistema le advierte al redactar si faltan campos esenciales, para que pueda completarlos o ajustar la plantilla."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kunnen meerdere mensen hetzelfde sjabloon gebruiken?",
+            "en": "Can multiple people use the same template?",
+            "es": "¿Pueden varias personas usar la misma plantilla?"
+          },
+          "answer": {
+            "nl": "Ja, sjablonen zijn beschikbaar voor het hele team. Wanneer iemand een sjabloon gebruikt, worden {{user.firstName}}, {{user.phone}} etc. automatisch vervangen door hun eigen gegevens. Zo blijven sjablonen persoonlijk terwijl ze gedeeld worden.",
+            "en": "Yes, templates are available to the entire team. When someone uses a template, {{user.firstName}}, {{user.phone}} etc. are automatically replaced with their own data. This keeps templates personal while being shared.",
+            "es": "Sí, las plantillas están disponibles para todo el equipo. Cuando alguien usa una plantilla, {{user.firstName}}, {{user.phone}}, etc. se reemplazan automáticamente con sus propios datos. Esto mantiene las plantillas personales mientras se comparten."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik bijlagen toevoegen aan een sjabloon?",
+            "en": "Can I add attachments to a template?",
+            "es": "¿Puedo agregar archivos adjuntos a una plantilla?"
+          },
+          "answer": {
+            "nl": "Ja, u kunt standaard bijlagen toevoegen aan een sjabloon (zoals brochures, handleidingen). Deze worden automatisch meegestuurd bij elke e-mail vanuit dat sjabloon. Voor woningspecifieke documenten kunt u dynamische bijlagen configureren die automatisch de juiste bestanden toevoegen.",
+            "en": "Yes, you can add default attachments to a template (such as brochures, guides). These are automatically included with every email from that template. For property-specific documents, you can configure dynamic attachments that automatically add the right files.",
+            "es": "Sí, puede agregar archivos adjuntos predeterminados a una plantilla (como folletos, guías). Estos se incluyen automáticamente con cada correo electrónico de esa plantilla. Para documentos específicos de propiedades, puede configurar archivos adjuntos dinámicos que agreguen automáticamente los archivos correctos."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "workflow-automation-guide",
+    "company-profile-settings",
+    "email-integration-guide"
+  ]
+}

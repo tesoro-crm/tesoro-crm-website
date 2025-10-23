@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "id": "tags-taxonomy-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "beginner",
+    "tags": ["settings", "tags", "taxonomy", "organization", "categorization"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1200&h=630&fit=crop",
+    "keywords": ["tags", "taxonomy", "categorization", "organization", "labels", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Tags en taxonomie effectief instellen",
+      "en": "Setting Up Tags and Taxonomy Effectively",
+      "es": "Configurar etiquetas y taxonomía de manera efectiva"
+    },
+    "description": {
+      "nl": "Organiseer uw contacten, woningen en deals met een slim tagsysteem dat zoeken, filteren en segmentatie eenvoudiger maakt.",
+      "en": "Organize your contacts, properties, and deals with a smart tagging system that makes searching, filtering, and segmentation easier.",
+      "es": "Organice sus contactos, propiedades y acuerdos con un sistema de etiquetado inteligente que facilita la búsqueda, el filtrado y la segmentación."
+    },
+    "icon": "label"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Tags zijn een krachtig organisatiehulpmiddel in Tesoro CRM waarmee u flexibele categorieën kunt creëren voor al uw gegevens. In tegenstelling tot vaste velden kunnen tags worden toegevoegd en verwijderd zonder de database structuur te wijzigen, wat ze ideaal maakt voor het bijhouden van dynamische kenmerken en statuswaarden.\n\nEen goed doordacht tag-systeem maakt het verschil tussen chaotische gegevens en een goed georganiseerde CRM waar u snel de informatie vindt die u nodig heeft.",
+        "en": "Tags are a powerful organizational tool in Tesoro CRM that allow you to create flexible categories for all your data. Unlike fixed fields, tags can be added and removed without changing the database structure, making them ideal for tracking dynamic attributes and status values.\n\nA well-thought-out tag system makes the difference between chaotic data and a well-organized CRM where you can quickly find the information you need.",
+        "es": "Las etiquetas son una herramienta organizativa poderosa en Tesoro CRM que le permite crear categorías flexibles para todos sus datos. A diferencia de los campos fijos, las etiquetas se pueden agregar y eliminar sin cambiar la estructura de la base de datos, lo que las hace ideales para rastrear atributos dinámicos y valores de estado.\n\nUn sistema de etiquetas bien pensado marca la diferencia entre datos caóticos y un CRM bien organizado donde puede encontrar rápidamente la información que necesita."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "create-tags",
+      "title": {
+        "nl": "Tags aanmaken en beheren",
+        "en": "Creating and Managing Tags",
+        "es": "Crear y gestionar etiquetas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Toegang tot tagbeheer",
+            "en": "Access Tag Management",
+            "es": "Acceder a gestión de etiquetas"
+          },
+          "description": {
+            "nl": "Navigeer naar Instellingen > Organisatie > Tags. Hier ziet u alle bestaande tags, georganiseerd per categorie en objecttype (Contacten, Woningen, Deals). Beheerders en Managers kunnen tags aanmaken en bewerken.",
+            "en": "Navigate to Settings > Organization > Tags. Here you'll see all existing tags, organized by category and object type (Contacts, Properties, Deals). Administrators and Managers can create and edit tags.",
+            "es": "Navegue a Configuración > Organización > Etiquetas. Aquí verá todas las etiquetas existentes, organizadas por categoría y tipo de objeto (Contactos, Propiedades, Acuerdos). Los administradores y gerentes pueden crear y editar etiquetas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Nieuwe tag creëren",
+            "en": "Create New Tag",
+            "es": "Crear nueva etiqueta"
+          },
+          "description": {
+            "nl": "Klik op 'Nieuwe tag' en voer een duidelijke, beschrijvende naam in. Kies een kleur die helpt bij visuele herkenning (bijvoorbeeld groen voor 'Actief', rood voor 'Urgent'). Selecteer het objecttype waarop de tag van toepassing is. Goede tagnamen zijn kort (1-2 woorden), beschrijvend en consistent in naamgeving.",
+            "en": "Click 'New Tag' and enter a clear, descriptive name. Choose a color that aids visual recognition (e.g., green for 'Active', red for 'Urgent'). Select the object type the tag applies to. Good tag names are short (1-2 words), descriptive, and consistent in naming.",
+            "es": "Haga clic en 'Nueva etiqueta' e ingrese un nombre claro y descriptivo. Elija un color que ayude al reconocimiento visual (por ejemplo, verde para 'Activo', rojo para 'Urgente'). Seleccione el tipo de objeto al que se aplica la etiqueta. Los buenos nombres de etiquetas son cortos (1-2 palabras), descriptivos y consistentes en la nomenclatura."
+          }
+        },
+        {
+          "title": {
+            "nl": "Tags in categorieën organiseren",
+            "en": "Organize Tags Into Categories",
+            "es": "Organizar etiquetas en categorías"
+          },
+          "description": {
+            "nl": "Groepeer gerelateerde tags in categorieën zoals 'Status', 'Bron', 'Prioriteit' of 'Fase'. Categorieën maken het gemakkelijker om tags te vinden en zorgen voor een georganiseerde structuur. Bijvoorbeeld: categorie 'Status' bevat tags als 'Actief', 'Inactief', 'Prospect', 'Klant'.",
+            "en": "Group related tags into categories like 'Status', 'Source', 'Priority', or 'Stage'. Categories make it easier to find tags and ensure an organized structure. For example: 'Status' category contains tags like 'Active', 'Inactive', 'Prospect', 'Customer'.",
+            "es": "Agrupe etiquetas relacionadas en categorías como 'Estado', 'Fuente', 'Prioridad' o 'Fase'. Las categorías facilitan la búsqueda de etiquetas y garantizan una estructura organizada. Por ejemplo: la categoría 'Estado' contiene etiquetas como 'Activo', 'Inactivo', 'Prospecto', 'Cliente'."
+          }
+        },
+        {
+          "title": {
+            "nl": "Tags toepassen op records",
+            "en": "Apply Tags to Records",
+            "es": "Aplicar etiquetas a registros"
+          },
+          "description": {
+            "nl": "Open een contact, woning of deal en klik op het tagveld. Typ om te zoeken of selecteer uit de lijst. U kunt meerdere tags per record toevoegen. Tags kunnen ook bulksgewijs worden toegepast: selecteer meerdere records in een lijstweergave en kies 'Tags toevoegen' in het actiemenu.",
+            "en": "Open a contact, property, or deal and click on the tag field. Type to search or select from the list. You can add multiple tags per record. Tags can also be applied in bulk: select multiple records in a list view and choose 'Add Tags' from the action menu.",
+            "es": "Abra un contacto, propiedad o acuerdo y haga clic en el campo de etiqueta. Escriba para buscar o seleccione de la lista. Puede agregar múltiples etiquetas por registro. Las etiquetas también se pueden aplicar en masa: seleccione múltiples registros en una vista de lista y elija 'Agregar etiquetas' del menú de acción."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "taxonomy-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Ontwerp uw taxonomie vooraf",
+        "en": "Design Your Taxonomy in Advance",
+        "es": "Diseñe su taxonomía con anticipación"
+      },
+      "content": {
+        "nl": "Voordat u tags begint te maken, plan uw taxonomie. Documenteer welke categorieën u nodig heeft, welke tags binnen elke categorie vallen en wat elke tag betekent. Dit voorkomt een wildgroei van inconsistente tags en zorgt ervoor dat uw hele team dezelfde taal spreekt.",
+        "en": "Before you start creating tags, plan your taxonomy. Document which categories you need, which tags fall within each category, and what each tag means. This prevents a proliferation of inconsistent tags and ensures your entire team speaks the same language.",
+        "es": "Antes de comenzar a crear etiquetas, planifique su taxonomía. Documente qué categorías necesita, qué etiquetas caen dentro de cada categoría y qué significa cada etiqueta. Esto previene una proliferación de etiquetas inconsistentes y garantiza que todo su equipo hable el mismo idioma."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "tag-categories",
+      "title": {
+        "nl": "Effectieve tagcategorieën voor vastgoed",
+        "en": "Effective Tag Categories for Real Estate",
+        "es": "Categorías de etiquetas efectivas para bienes raíces"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Contactstatus tags",
+            "en": "Contact Status Tags",
+            "es": "Etiquetas de estado de contacto"
+          },
+          "description": {
+            "nl": "Track waar contacten zich bevinden in hun klanttraject: Nieuw Lead, Gekwalificeerd, Actief Zoekend, Bezichtiging Gepland, In Onderhandeling, Klant, Inactief. Deze tags helpen bij het segmenteren van uw database voor gerichte communicatie en opvolging.",
+            "en": "Track where contacts are in their customer journey: New Lead, Qualified, Actively Searching, Viewing Scheduled, In Negotiation, Customer, Inactive. These tags help segment your database for targeted communication and follow-up.",
+            "es": "Rastree dónde están los contactos en su viaje del cliente: Nuevo cliente potencial, Calificado, Búsqueda activa, Visualización programada, En negociación, Cliente, Inactivo. Estas etiquetas ayudan a segmentar su base de datos para comunicación dirigida y seguimiento."
+          }
+        },
+        {
+          "title": {
+            "nl": "Bron tags",
+            "en": "Source Tags",
+            "es": "Etiquetas de fuente"
+          },
+          "description": {
+            "nl": "Houd bij waar leads vandaan komen: Website, Funda, Social Media, Verwijzing, Walk-in, Open Dag, Google Ads, Facebook Ads. Dit helpt bij het meten van marketingeffectiviteit en het optimaliseren van uw acquisitiekanalen.",
+            "en": "Track where leads come from: Website, Funda, Social Media, Referral, Walk-in, Open House, Google Ads, Facebook Ads. This helps measure marketing effectiveness and optimize your acquisition channels.",
+            "es": "Rastree de dónde provienen los clientes potenciales: Sitio web, Funda, Redes sociales, Referencia, Visita directa, Casa abierta, Google Ads, Facebook Ads. Esto ayuda a medir la efectividad del marketing y optimizar sus canales de adquisición."
+          }
+        },
+        {
+          "title": {
+            "nl": "Vastgoedtype tags",
+            "en": "Property Type Tags",
+            "es": "Etiquetas de tipo de propiedad"
+          },
+          "description": {
+            "nl": "Categoriseer woningen verder dan standaardvelden: Starterswoning, Gezinswoning, Luxe Segment, Belegging, Nieuwbouw, Monumentaal, Duurzaam, Smart Home. Deze tags helpen bij het matchen van woningen aan de juiste kopers.",
+            "en": "Categorize properties beyond standard fields: Starter Home, Family Home, Luxury Segment, Investment, New Construction, Historic, Sustainable, Smart Home. These tags help match properties to the right buyers.",
+            "es": "Categorice propiedades más allá de los campos estándar: Casa inicial, Casa familiar, Segmento de lujo, Inversión, Construcción nueva, Histórica, Sostenible, Casa inteligente. Estas etiquetas ayudan a emparejar propiedades con los compradores adecuados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Prioriteit en urgentie tags",
+            "en": "Priority and Urgency Tags",
+            "es": "Etiquetas de prioridad y urgencia"
+          },
+          "description": {
+            "nl": "Markeer items die onmiddellijke aandacht nodig hebben: Hot Lead, Snelle Opvolging Nodig, VIP Klant, Spoedverkoop, Prijs Verlaagd, Bod Ontvangen. Deze tags helpen bij het prioriteren van uw dagelijkse werkzaamheden.",
+            "en": "Mark items needing immediate attention: Hot Lead, Quick Follow-up Needed, VIP Client, Urgent Sale, Price Reduced, Offer Received. These tags help prioritize your daily work.",
+            "es": "Marque elementos que necesitan atención inmediata: Cliente potencial caliente, Seguimiento rápido necesario, Cliente VIP, Venta urgente, Precio reducido, Oferta recibida. Estas etiquetas ayudan a priorizar su trabajo diario."
+          }
+        },
+        {
+          "title": {
+            "nl": "Communicatie voorkeuren tags",
+            "en": "Communication Preference Tags",
+            "es": "Etiquetas de preferencias de comunicación"
+          },
+          "description": {
+            "nl": "Respecteer klantvoorkeuren: E-mail Voorkeur, Telefoon Voorkeur, WhatsApp OK, Geen Marketing, Nederlands, Engels, Spaans. Dit zorgt voor gepersonaliseerde communicatie en naleving van privacy voorkeuren.",
+            "en": "Respect client preferences: Email Preference, Phone Preference, WhatsApp OK, No Marketing, Dutch, English, Spanish. This ensures personalized communication and compliance with privacy preferences.",
+            "es": "Respete las preferencias del cliente: Preferencia de correo electrónico, Preferencia de teléfono, WhatsApp OK, Sin marketing, Holandés, Inglés, Español. Esto garantiza comunicación personalizada y cumplimiento de preferencias de privacidad."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "color-coding",
+      "variant": "info",
+      "title": {
+        "nl": "Gebruik kleuren consistent",
+        "en": "Use Colors Consistently",
+        "es": "Use colores de manera consistente"
+      },
+      "content": {
+        "nl": "Pas een consistent kleurenschema toe voor uw tags: groen voor positieve status (actief, gekwalificeerd), geel voor aandacht nodig (follow-up, wachten), rood voor urgentie (hot lead, spoedverkoop), blauw voor informatief (bron, type). Consistent kleurgebruik maakt snelle visuele herkenning mogelijk.",
+        "en": "Apply a consistent color scheme for your tags: green for positive status (active, qualified), yellow for attention needed (follow-up, waiting), red for urgency (hot lead, urgent sale), blue for informational (source, type). Consistent color use enables quick visual recognition.",
+        "es": "Aplique un esquema de color consistente para sus etiquetas: verde para estado positivo (activo, calificado), amarillo para atención necesaria (seguimiento, esperando), rojo para urgencia (cliente potencial caliente, venta urgente), azul para informativo (fuente, tipo). El uso consistente de colores permite un reconocimiento visual rápido."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "tag-usage",
+      "title": {
+        "nl": "Tags effectief gebruiken",
+        "en": "Using Tags Effectively",
+        "es": "Usar etiquetas de manera efectiva"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Filteren op tags",
+            "en": "Filter by Tags",
+            "es": "Filtrar por etiquetas"
+          },
+          "description": {
+            "nl": "In alle lijstweergaven kunt u filteren op één of meerdere tags. Bijvoorbeeld: toon alle 'Actief Zoekend' contacten met bron 'Website' om gerichte e-mailcampagnes te sturen. Combineer tags met andere filters voor zeer specifieke segmenten.",
+            "en": "In all list views, you can filter by one or multiple tags. For example: show all 'Actively Searching' contacts with source 'Website' to send targeted email campaigns. Combine tags with other filters for very specific segments.",
+            "es": "En todas las vistas de lista, puede filtrar por una o varias etiquetas. Por ejemplo: muestre todos los contactos 'Búsqueda activa' con fuente 'Sitio web' para enviar campañas de correo electrónico dirigidas. Combine etiquetas con otros filtros para segmentos muy específicos."
+          }
+        },
+        {
+          "title": {
+            "nl": "Slimme lijsten maken",
+            "en": "Create Smart Lists",
+            "es": "Crear listas inteligentes"
+          },
+          "description": {
+            "nl": "Sla veelgebruikte tagfilters op als slimme lijsten die automatisch updaten. Bijvoorbeeld: 'Hot Leads Deze Week' met tags 'Hot Lead' + aangemaakt in laatste 7 dagen. Slimme lijsten zorgen ervoor dat u geen belangrijke leads mist.",
+            "en": "Save frequently used tag filters as smart lists that automatically update. For example: 'Hot Leads This Week' with tags 'Hot Lead' + created in last 7 days. Smart lists ensure you don't miss important leads.",
+            "es": "Guarde filtros de etiquetas usados frecuentemente como listas inteligentes que se actualizan automáticamente. Por ejemplo: 'Clientes potenciales calientes esta semana' con etiquetas 'Cliente potencial caliente' + creado en los últimos 7 días. Las listas inteligentes garantizan que no pierda clientes potenciales importantes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Automatisering met tags",
+            "en": "Automation with Tags",
+            "es": "Automatización con etiquetas"
+          },
+          "description": {
+            "nl": "Gebruik tags als triggers voor workflows. Bijvoorbeeld: wanneer tag 'Bezichtiging Gepland' wordt toegevoegd, stuur automatisch een bevestigingsmail en voeg een vervolgactiviteit toe. Tags maken krachtige automatisering mogelijk zonder complexe regels.",
+            "en": "Use tags as triggers for workflows. For example: when tag 'Viewing Scheduled' is added, automatically send a confirmation email and add a follow-up activity. Tags enable powerful automation without complex rules.",
+            "es": "Use etiquetas como activadores para flujos de trabajo. Por ejemplo: cuando se agrega la etiqueta 'Visualización programada', envíe automáticamente un correo electrónico de confirmación y agregue una actividad de seguimiento. Las etiquetas permiten una automatización poderosa sin reglas complejas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Rapportage per tag",
+            "en": "Reporting by Tag",
+            "es": "Informes por etiqueta"
+          },
+          "description": {
+            "nl": "Analyseer prestaties op basis van tags. Bijvoorbeeld: welke bron (tag) levert de meeste afgesloten deals? Welke vastgoedtype tags zijn het populairst? Tag-analyses helpen bij het optimaliseren van uw strategie.",
+            "en": "Analyze performance based on tags. For example: which source (tag) delivers the most closed deals? Which property type tags are most popular? Tag analytics help optimize your strategy.",
+            "es": "Analice el rendimiento basándose en etiquetas. Por ejemplo: ¿qué fuente (etiqueta) entrega la mayoría de los acuerdos cerrados? ¿Qué etiquetas de tipo de propiedad son más populares? Los análisis de etiquetas ayudan a optimizar su estrategia."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "tag-governance",
+      "variant": "warning",
+      "title": {
+        "nl": "Voorkom tag chaos met governance",
+        "en": "Prevent Tag Chaos with Governance",
+        "es": "Prevenir el caos de etiquetas con gobernanza"
+      },
+      "content": {
+        "nl": "Zonder duidelijke richtlijnen ontstaat snel tag chaos: duplicaten met kleine verschillen, inconsistente naamgeving, en te veel tags die niemand gebruikt. Documenteer uw tag taxonomie, train uw team, en laat één persoon de tag library beheren. Verwijder regelmatig ongebruikte tags.",
+        "en": "Without clear guidelines, tag chaos quickly emerges: duplicates with minor differences, inconsistent naming, and too many tags nobody uses. Document your tag taxonomy, train your team, and have one person manage the tag library. Regularly remove unused tags.",
+        "es": "Sin pautas claras, el caos de etiquetas surge rápidamente: duplicados con diferencias menores, nomenclatura inconsistente y demasiadas etiquetas que nadie usa. Documente su taxonomía de etiquetas, capacite a su equipo y haga que una persona administre la biblioteca de etiquetas. Elimine regularmente las etiquetas no utilizadas."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "tag-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor tagging",
+        "en": "Tagging Best Practices",
+        "es": "Mejores prácticas para etiquetar"
+      },
+      "content": {
+        "nl": "**Gebruik enkelvoud**: 'Klant' niet 'Klanten', 'Lead' niet 'Leads'\n\n**Wees specifiek maar niet te gedetailleerd**: 'Hot Lead' is beter dan 'Zeer Geïnteresseerd Potentiële Koper'\n\n**Vermijd duplicaten**: Check eerst of een tag al bestaat voordat u een nieuwe maakt\n\n**Beperk het aantal**: Houd tags per categorie tussen 5-15 voor overzichtelijkheid\n\n**Update regelmatig**: Verwijder tags die niet meer relevant zijn en voeg nieuwe toe wanneer nodig\n\n**Train uw team**: Zorg dat iedereen weet welke tags wanneer te gebruiken",
+        "en": "**Use singular form**: 'Customer' not 'Customers', 'Lead' not 'Leads'\n\n**Be specific but not too detailed**: 'Hot Lead' is better than 'Very Interested Potential Buyer'\n\n**Avoid duplicates**: Check if a tag already exists before creating a new one\n\n**Limit the number**: Keep tags per category between 5-15 for clarity\n\n**Update regularly**: Remove tags that are no longer relevant and add new ones when needed\n\n**Train your team**: Ensure everyone knows which tags to use when",
+        "es": "**Use forma singular**: 'Cliente' no 'Clientes', 'Prospecto' no 'Prospectos'\n\n**Sea específico pero no demasiado detallado**: 'Cliente potencial caliente' es mejor que 'Comprador potencial muy interesado'\n\n**Evite duplicados**: Verifique si una etiqueta ya existe antes de crear una nueva\n\n**Limite el número**: Mantenga las etiquetas por categoría entre 5-15 para mayor claridad\n\n**Actualice regularmente**: Elimine etiquetas que ya no sean relevantes y agregue nuevas cuando sea necesario\n\n**Capacite a su equipo**: Asegúrese de que todos sepan qué etiquetas usar cuándo"
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Wat is het verschil tussen tags en aangepaste velden?",
+            "en": "What's the difference between tags and custom fields?",
+            "es": "¿Cuál es la diferencia entre etiquetas y campos personalizados?"
+          },
+          "answer": {
+            "nl": "Aangepaste velden zijn voor gestructureerde gegevens die u wilt vastleggen en rapporteren (zoals 'Budget' of 'Energielabel'). Tags zijn voor flexibele categorisatie en segmentatie die kan veranderen over tijd (zoals 'Hot Lead' of 'VIP'). Gebruik velden voor permanente eigenschappen en tags voor status en categorieën.",
+            "en": "Custom fields are for structured data you want to capture and report on (like 'Budget' or 'Energy Label'). Tags are for flexible categorization and segmentation that can change over time (like 'Hot Lead' or 'VIP'). Use fields for permanent attributes and tags for status and categories.",
+            "es": "Los campos personalizados son para datos estructurados que desea capturar e informar (como 'Presupuesto' o 'Etiqueta energética'). Las etiquetas son para categorización y segmentación flexible que puede cambiar con el tiempo (como 'Cliente potencial caliente' o 'VIP'). Use campos para atributos permanentes y etiquetas para estado y categorías."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kunnen klanten tags zien in het klantportaal?",
+            "en": "Can customers see tags in the customer portal?",
+            "es": "¿Pueden los clientes ver etiquetas en el portal de clientes?"
+          },
+          "answer": {
+            "nl": "Nee, tags zijn alleen zichtbaar voor uw interne team. Klanten zien geen tags die aan hen of hun woningen zijn toegewezen. Dit betekent dat u vrijuit interne notities en statuswaarden kunt gebruiken zonder dat klanten deze zien.",
+            "en": "No, tags are only visible to your internal team. Customers don't see tags assigned to them or their properties. This means you can freely use internal notes and status values without customers seeing them.",
+            "es": "No, las etiquetas solo son visibles para su equipo interno. Los clientes no ven las etiquetas asignadas a ellos o sus propiedades. Esto significa que puede usar libremente notas internas y valores de estado sin que los clientes los vean."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik een tag hernoemen zonder gegevens te verliezen?",
+            "en": "Can I rename a tag without losing data?",
+            "es": "¿Puedo renombrar una etiqueta sin perder datos?"
+          },
+          "answer": {
+            "nl": "Ja, wanneer u een tag hernoemt, blijven alle toewijzingen aan contacten, woningen en deals behouden. Het systeem update automatisch alle referenties. Dit is veiliger dan een tag verwijderen en een nieuwe maken.",
+            "en": "Yes, when you rename a tag, all assignments to contacts, properties, and deals are preserved. The system automatically updates all references. This is safer than deleting a tag and creating a new one.",
+            "es": "Sí, cuando cambia el nombre de una etiqueta, se conservan todas las asignaciones a contactos, propiedades y acuerdos. El sistema actualiza automáticamente todas las referencias. Esto es más seguro que eliminar una etiqueta y crear una nueva."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoeveel tags kan ik aan één record toevoegen?",
+            "en": "How many tags can I add to one record?",
+            "es": "¿Cuántas etiquetas puedo agregar a un registro?"
+          },
+          "answer": {
+            "nl": "Er is geen technische limiet aan het aantal tags per record, maar voor overzichtelijkheid raden we aan om maximaal 5-7 tags per record te gebruiken. Als u merkt dat u veel meer tags nodig heeft, overweeg dan of sommige kunnen worden vervangen door aangepaste velden of betere categorisatie.",
+            "en": "There's no technical limit to the number of tags per record, but for clarity we recommend using a maximum of 5-7 tags per record. If you find you need many more tags, consider whether some can be replaced by custom fields or better categorization.",
+            "es": "No hay límite técnico para el número de etiquetas por registro, pero para mayor claridad recomendamos usar un máximo de 5-7 etiquetas por registro. Si encuentra que necesita muchas más etiquetas, considere si algunas pueden ser reemplazadas por campos personalizados o mejor categorización."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik zien wie een tag heeft toegevoegd aan een record?",
+            "en": "Can I see who added a tag to a record?",
+            "es": "¿Puedo ver quién agregó una etiqueta a un registro?"
+          },
+          "answer": {
+            "nl": "Ja, de activiteitengeschiedenis van een record toont wanneer tags zijn toegevoegd of verwijderd en door wie. Dit is nuttig voor audit doeleinden en om te begrijpen hoe records zich door uw pipeline bewegen.",
+            "en": "Yes, the activity history of a record shows when tags were added or removed and by whom. This is useful for audit purposes and understanding how records move through your pipeline.",
+            "es": "Sí, el historial de actividad de un registro muestra cuándo se agregaron o eliminaron etiquetas y por quién. Esto es útil para fines de auditoría y para comprender cómo los registros se mueven a través de su canal."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "custom-fields-setup",
+    "workflow-automation-guide",
+    "smart-lists-segments"
+  ]
+}

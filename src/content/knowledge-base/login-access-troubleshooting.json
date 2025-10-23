@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "id": "login-access-troubleshooting",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "beginner",
+    "tags": ["login", "access", "password", "authentication", "account"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=630&fit=crop",
+    "keywords": ["login problems", "password reset", "account access", "authentication issues", "tesoro login"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Login en toegangsproblemen oplossen",
+      "en": "Solving Login and Access Problems",
+      "es": "Resolver problemas de login y acceso"
+    },
+    "description": {
+      "nl": "Los problemen op met inloggen, wachtwoord reset, account locked, en toegangsrechten.",
+      "en": "Fix problems with logging in, password reset, locked accounts, and access permissions.",
+      "es": "Soluciona problemas con inicio de sesión, reset de contraseña, cuentas bloqueadas y permisos de acceso."
+    },
+    "icon": "lock_reset"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "login-problems",
+      "title": {
+        "nl": "Login problemen oplossen",
+        "en": "Solve Login Problems",
+        "es": "Resolver problemas de login"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: \"Email or password incorrect\"</h4><p><strong>Oplossingen:</strong></p><ol><li>Check Caps Lock is OFF</li><li>Verify email spelling (common: .com vs .nl)</li><li>Try copy-paste wachtwoord (no spaces!)</li><li>Use \"Forgot Password\" als unsure</li></ol><h4>❌ Probleem: Password reset email niet ontvangen</h4><p><strong>Check:</strong></p><ol><li><strong>Spam folder:</strong> Look for email from noreply@tesorohq.io</li><li><strong>Correct email:</strong> Use exact email van je account</li><li><strong>Wait 5 min:</strong> Email kan vertraagd zijn</li><li><strong>Try again:</strong> Click \"Resend\" link</li></ol><h4>❌ Probleem: Account locked \"Too many login attempts\"</h4><p><strong>Oplossing:</strong></p><ul><li><strong>Wait 15 minutes:</strong> Account unlocks automatisch</li><li><strong>OR:</strong> Use password reset om meteen in te loggen</li><li><strong>Contact support:</strong> Als urgent (sales call!)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: \"Email or password incorrect\"</h4><p><strong>Solutions:</strong></p><ol><li>Check Caps Lock is OFF</li><li>Verify email spelling (common: .com vs .nl)</li><li>Try copy-paste password (no spaces!)</li><li>Use \"Forgot Password\" if unsure</li></ol><h4>❌ Problem: Password reset email not received</h4><p><strong>Check:</strong></p><ol><li><strong>Spam folder:</strong> Look for email from noreply@tesorohq.io</li><li><strong>Correct email:</strong> Use exact email from your account</li><li><strong>Wait 5 min:</strong> Email may be delayed</li><li><strong>Try again:</strong> Click \"Resend\" link</li></ol><h4>❌ Problem: Account locked \"Too many login attempts\"</h4><p><strong>Solution:</strong></p><ul><li><strong>Wait 15 minutes:</strong> Account unlocks automatically</li><li><strong>OR:</strong> Use password reset to log in immediately</li><li><strong>Contact support:</strong> If urgent (sales call!)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: \"Email o contraseña incorrecta\"</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica que Caps Lock esté APAGADO</li><li>Verifica ortografía del email (común: .com vs .nl)</li><li>Intenta copiar-pegar contraseña (¡sin espacios!)</li><li>Usa \"Forgot Password\" si no estás seguro</li></ol><h4>❌ Problema: Email de reset de contraseña no recibido</h4><p><strong>Verifica:</strong></p><ol><li><strong>Carpeta de spam:</strong> Busca email de noreply@tesorohq.io</li><li><strong>Email correcto:</strong> Usa email exacto de tu cuenta</li><li><strong>Espera 5 min:</strong> El email puede estar retrasado</li><li><strong>Intenta de nuevo:</strong> Haz clic en enlace \"Resend\"</li></ol><h4>❌ Problema: Cuenta bloqueada \"Too many login attempts\"</h4><p><strong>Solución:</strong></p><ul><li><strong>Espera 15 minutos:</strong> La cuenta se desbloquea automáticamente</li><li><strong>O:</strong> Usa reset de contraseña para iniciar sesión inmediatamente</li><li><strong>Contacta soporte:</strong> Si es urgente (¡llamada de ventas!)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "password-management",
+      "title": {
+        "nl": "Wachtwoord beheer",
+        "en": "Password Management",
+        "es": "Gestión de contraseña"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Wachtwoord resetten:</h4><ol><li>Login page → <strong>Forgot Password</strong></li><li>Enter je email</li><li>Check email voor reset link (geldig 1 uur)</li><li>Click link, enter nieuwe wachtwoord (min 8 characters)</li><li>Login met nieuwe wachtwoord</li></ol><h4>Wachtwoord vereisten:</h4><ul><li>Minimaal 8 characters</li><li>1 hoofdletter</li><li>1 cijfer</li><li>Optioneel: Special character (!@#$%)</li></ul><h4>Wachtwoord wijzigen (preventief):</h4><ol><li>Settings → Account → <strong>Change Password</strong></li><li>Enter huidige wachtwoord</li><li>Enter nieuwe wachtwoord (2x)</li><li>Klik <strong>Save</strong></li></ol>"
+        },
+        "en": {
+          "text": "<h4>Reset password:</h4><ol><li>Login page → <strong>Forgot Password</strong></li><li>Enter your email</li><li>Check email for reset link (valid 1 hour)</li><li>Click link, enter new password (min 8 characters)</li><li>Login with new password</li></ol><h4>Password requirements:</h4><ul><li>Minimum 8 characters</li><li>1 uppercase letter</li><li>1 number</li><li>Optional: Special character (!@#$%)</li></ul><h4>Change password (preventive):</h4><ol><li>Settings → Account → <strong>Change Password</strong></li><li>Enter current password</li><li>Enter new password (2x)</li><li>Click <strong>Save</strong></li></ol>"
+        },
+        "es": {
+          "text": "<h4>Resetear contraseña:</h4><ol><li>Página de login → <strong>Forgot Password</strong></li><li>Ingresa tu email</li><li>Verifica email para enlace de reset (válido 1 hora)</li><li>Haz clic en enlace, ingresa nueva contraseña (mín 8 caracteres)</li><li>Inicia sesión con nueva contraseña</li></ol><h4>Requisitos de contraseña:</h4><ul><li>Mínimo 8 caracteres</li><li>1 letra mayúscula</li><li>1 número</li><li>Opcional: Carácter especial (!@#$%)</li></ul><h4>Cambiar contraseña (preventivo):</h4><ol><li>Settings → Account → <strong>Change Password</strong></li><li>Ingresa contraseña actual</li><li>Ingresa nueva contraseña (2x)</li><li>Haz clic en <strong>Save</strong></li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "security-tips",
+      "variant": "warning",
+      "title": {
+        "nl": "Security best practices",
+        "en": "Security Best Practices",
+        "es": "Mejores prácticas de seguridad"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Never share:</strong> Je wachtwoord met niemand (ook niet support!)</li><li><strong>Use unique password:</strong> Niet hetzelfde als andere accounts</li><li><strong>Password manager:</strong> Use 1Password, LastPass, etc.</li><li><strong>Two-factor auth:</strong> Enable in Settings (coming soon)</li><li><strong>Log out:</strong> Op gedeelde computers</li><li><strong>Suspicious activity:</strong> Contact support@tesorohq.io meteen</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Never share:</strong> Your password with anyone (not even support!)</li><li><strong>Use unique password:</strong> Not the same as other accounts</li><li><strong>Password manager:</strong> Use 1Password, LastPass, etc.</li><li><strong>Two-factor auth:</strong> Enable in Settings (coming soon)</li><li><strong>Log out:</strong> On shared computers</li><li><strong>Suspicious activity:</strong> Contact support@tesorohq.io immediately</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Nunca compartas:</strong> Tu contraseña con nadie (¡ni siquiera soporte!)</li><li><strong>Usa contraseña única:</strong> No la misma que otras cuentas</li><li><strong>Gestor de contraseñas:</strong> Usa 1Password, LastPass, etc.</li><li><strong>Autenticación de dos factores:</strong> Habilita en Settings (próximamente)</li><li><strong>Cerrar sesión:</strong> En computadoras compartidas</li><li><strong>Actividad sospechosa:</strong> Contacta support@tesorohq.io inmediatamente</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "common-issues-solutions",
+    "getting-help-support",
+    "user-profile-settings"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik mijn account email wijzigen?",
+        "en": "Can I change my account email?",
+        "es": "¿Puedo cambiar mi email de cuenta?"
+      },
+      "answer": {
+        "nl": "Ja, maar alleen via support. Email support@tesorohq.io met je oude email, nieuwe email, en account naam. We verificieren je identiteit en wijzigen het binnen 24 uur.",
+        "en": "Yes, but only via support. Email support@tesorohq.io with your old email, new email, and account name. We verify your identity and change it within 24 hours.",
+        "es": "Sí, pero solo via soporte. Envía email a support@tesorohq.io con tu email antiguo, nuevo email y nombre de cuenta. Verificamos tu identidad y lo cambiamos en 24 horas."
+      }
+    }
+  ]
+}

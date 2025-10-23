@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "id": "property-features-amenities",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T15:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "features", "amenities", "specifications", "equipment"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop",
+    "keywords": ["property features", "amenities", "specifications", "equipment", "Tesoro features", "property details"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Complete gids voor property features en amenities in Tesoro",
+      "en": "Complete Guide to Property Features and Amenities in Tesoro",
+      "es": "Guía completa de características y amenidades de propiedades en Tesoro"
+    },
+    "description": {
+      "nl": "Leer hoe je alle 30+ property features beheert: bedrooms, bathrooms, garage, pool, garden, terrace, elevator, AC, heating en meer.",
+      "en": "Learn how to manage all 30+ property features: bedrooms, bathrooms, garage, pool, garden, terrace, elevator, AC, heating and more.",
+      "es": "Aprende cómo gestionar todas las 30+ características de propiedades: dormitorios, baños, garaje, piscina, jardín, terraza, ascensor, AC, calefacción y más."
+    },
+    "icon": "tune"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "features-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom zijn property features belangrijk?",
+        "en": "Why are property features important?",
+        "es": "¿Por qué son importantes las características de propiedades?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Property features zijn essentieel voor nauwkeurige matching en effectieve marketing. Tesoro ondersteunt 30+ feature types die potentiële kopers direct kunnen zien en filteren.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Betere AI-matching met lead voorkeuren</li><li>Gedetailleerde zoekfilters (pool, parking, terrace, etc.)</li><li>Professionele property presentatie</li><li>Accurate portal sync (Idealista, Fotocasa)</li><li>Verhoogde conversion rates</li></ul>"
+        },
+        "en": {
+          "text": "<p>Property features are essential for accurate matching and effective marketing. Tesoro supports 30+ feature types that potential buyers can directly see and filter.</p><p><strong>Key benefits:</strong></p><ul><li>Better AI-matching with lead preferences</li><li>Detailed search filters (pool, parking, terrace, etc.)</li><li>Professional property presentation</li><li>Accurate portal sync (Idealista, Fotocasa)</li><li>Increased conversion rates</li></ul>"
+        },
+        "es": {
+          "text": "<p>Las características de propiedades son esenciales para matching preciso y marketing efectivo. Tesoro soporta 30+ tipos de características que los compradores potenciales pueden ver y filtrar directamente.</p><p><strong>Beneficios principales:</strong></p><ul><li>Mejor matching con IA con preferencias de leads</li><li>Filtros de búsqueda detallados (piscina, parking, terraza, etc.)</li><li>Presentación profesional de propiedades</li><li>Sincronización precisa de portales (Idealista, Fotocasa)</li><li>Tasas de conversión aumentadas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "basic-specifications",
+      "title": {
+        "nl": "Basis specificaties",
+        "en": "Basic specifications",
+        "es": "Especificaciones básicas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Bedrooms en bathrooms</h5><p>Het aantal bedrooms en bathrooms zijn de meest essentiële features voor property matching.</p><ul><li><strong>Bedrooms:</strong> Aantal slaapkamers (kan 0 zijn voor studio's)</li><li><strong>Bathrooms:</strong> Aantal badkamers (kan 0 zijn)</li><li><strong>Half bathrooms:</strong> Toiletruimtes zonder douche/bad</li></ul><p><strong>Matching impact:</strong> Leads kunnen specifiek zoeken op bedroom count (bijvoorbeeld \"3+ bedrooms\"), dus accurate input is cruciaal voor goede matching.</p><h5>Oppervlaktes</h5><ul><li><strong>Total area:</strong> Totale oppervlakte inclusief alle ruimtes</li><li><strong>Built area:</strong> Bebouwde oppervlakte</li><li><strong>Useful area:</strong> Gebruiksoppervlakte (excl. muren)</li><li><strong>Plot size:</strong> Kavelgrootte (voor huizen met tuin)</li></ul><p>Deze waarden worden gebruikt voor filtering en zijn zichtbaar op alle portals.</p>"
+        },
+        "en": {
+          "text": "<h5>Bedrooms and bathrooms</h5><p>The number of bedrooms and bathrooms are the most essential features for property matching.</p><ul><li><strong>Bedrooms:</strong> Number of bedrooms (can be 0 for studios)</li><li><strong>Bathrooms:</strong> Number of bathrooms (can be 0)</li><li><strong>Half bathrooms:</strong> Toilet rooms without shower/bath</li></ul><p><strong>Matching impact:</strong> Leads can specifically search for bedroom count (e.g., \"3+ bedrooms\"), so accurate input is crucial for good matching.</p><h5>Surface areas</h5><ul><li><strong>Total area:</strong> Total surface including all spaces</li><li><strong>Built area:</strong> Built surface area</li><li><strong>Useful area:</strong> Usable surface (excl. walls)</li><li><strong>Plot size:</strong> Plot size (for houses with garden)</li></ul><p>These values are used for filtering and are visible on all portals.</p>"
+        },
+        "es": {
+          "text": "<h5>Dormitorios y baños</h5><p>El número de dormitorios y baños son las características más esenciales para matching de propiedades.</p><ul><li><strong>Dormitorios:</strong> Número de dormitorios (puede ser 0 para estudios)</li><li><strong>Baños:</strong> Número de baños (puede ser 0)</li><li><strong>Medios baños:</strong> Aseos sin ducha/bañera</li></ul><p><strong>Impacto en matching:</strong> Los leads pueden buscar específicamente por número de dormitorios (ej., \"3+ dormitorios\"), por lo que la entrada precisa es crucial para buen matching.</p><h5>Superficies</h5><ul><li><strong>Área total:</strong> Superficie total incluyendo todos los espacios</li><li><strong>Área construida:</strong> Superficie construida</li><li><strong>Área útil:</strong> Superficie útil (excl. paredes)</li><li><strong>Tamaño de parcela:</strong> Tamaño de parcela (para casas con jardín)</li></ul><p>Estos valores se usan para filtrado y son visibles en todos los portales.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "outdoor-features",
+      "title": {
+        "nl": "Outdoor features",
+        "en": "Outdoor features",
+        "es": "Características exteriores"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Pool</h5><p>Eén van de meest gezochte features in vastgoed.</p><ul><li><strong>Pool aanwezig:</strong> Yes/No checkbox</li><li><strong>Pool type:</strong> Private, shared, community (optioneel)</li><li><strong>Pool size:</strong> Afmetingen (optioneel)</li></ul><h5>Garden en outdoor spaces</h5><ul><li><strong>Garden:</strong> Heeft de property een tuin?</li><li><strong>Patio:</strong> Binnenpatio of courtyard</li><li><strong>Terrace:</strong> Terras of balkon</li><li><strong>Balcony:</strong> Balkon specifiek</li></ul><p>Deze features zijn zichtbaar als filter in portal searches en zijn belangrijke matching criteria.</p><h5>Parking</h5><p>Parking is een essentieel feature voor stedelijke properties.</p><ul><li><strong>Garage:</strong> Afgesloten garage (capaciteit optioneel)</li><li><strong>Open parking:</strong> Niet-overdekte parkeerplaats</li><li><strong>Carport:</strong> Overdekte maar open parkeerplaats</li><li><strong>Street parking:</strong> Parkeren op straat</li></ul><p><strong>Tip:</strong> Specificeer altijd het aantal parkeerplekken voor accurate matching.</p>"
+        },
+        "en": {
+          "text": "<h5>Pool</h5><p>One of the most sought-after features in real estate.</p><ul><li><strong>Pool present:</strong> Yes/No checkbox</li><li><strong>Pool type:</strong> Private, shared, community (optional)</li><li><strong>Pool size:</strong> Dimensions (optional)</li></ul><h5>Garden and outdoor spaces</h5><ul><li><strong>Garden:</strong> Does the property have a garden?</li><li><strong>Patio:</strong> Inner patio or courtyard</li><li><strong>Terrace:</strong> Terrace or balcony</li><li><strong>Balcony:</strong> Balcony specifically</li></ul><p>These features are visible as filters in portal searches and are important matching criteria.</p><h5>Parking</h5><p>Parking is an essential feature for urban properties.</p><ul><li><strong>Garage:</strong> Enclosed garage (capacity optional)</li><li><strong>Open parking:</strong> Uncovered parking space</li><li><strong>Carport:</strong> Covered but open parking space</li><li><strong>Street parking:</strong> Street parking</li></ul><p><strong>Tip:</strong> Always specify the number of parking spaces for accurate matching.</p>"
+        },
+        "es": {
+          "text": "<h5>Piscina</h5><p>Una de las características más buscadas en bienes raíces.</p><ul><li><strong>Piscina presente:</strong> Checkbox Sí/No</li><li><strong>Tipo de piscina:</strong> Privada, compartida, comunitaria (opcional)</li><li><strong>Tamaño de piscina:</strong> Dimensiones (opcional)</li></ul><h5>Jardín y espacios exteriores</h5><ul><li><strong>Jardín:</strong> ¿La propiedad tiene jardín?</li><li><strong>Patio:</strong> Patio interior o patio</li><li><strong>Terraza:</strong> Terraza o balcón</li><li><strong>Balcón:</strong> Balcón específicamente</li></ul><p>Estas características son visibles como filtros en búsquedas de portales y son criterios importantes de matching.</p><h5>Estacionamiento</h5><p>El estacionamiento es una característica esencial para propiedades urbanas.</p><ul><li><strong>Garaje:</strong> Garaje cerrado (capacidad opcional)</li><li><strong>Estacionamiento abierto:</strong> Plaza de estacionamiento sin techo</li><li><strong>Cochera:</strong> Plaza de estacionamiento cubierta pero abierta</li><li><strong>Estacionamiento en calle:</strong> Estacionamiento en la calle</li></ul><p><strong>Consejo:</strong> Especifica siempre el número de plazas de estacionamiento para matching preciso.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "systems-equipment",
+      "title": {
+        "nl": "Systemen en uitrusting",
+        "en": "Systems and equipment",
+        "es": "Sistemas y equipamiento"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Heating systemen</h5><p>Verwarmingstype is vooral belangrijk in noordelijke markten.</p><ul><li><strong>Central heating:</strong> Centrale verwarming</li><li><strong>Gas heating:</strong> Gas verwarming</li><li><strong>Electric heating:</strong> Elektrische verwarming</li><li><strong>Underfloor heating:</strong> Vloerverwarming</li><li><strong>Heat pump:</strong> Warmtepomp</li><li><strong>Air conditioning:</strong> Airconditioning (verwarmen en koelen)</li><li><strong>No heating:</strong> Geen verwarming (voor warme klimaten)</li></ul><h5>Hot water systeem</h5><ul><li><strong>Electric boiler:</strong> Elektrische boiler</li><li><strong>Gas boiler:</strong> Gas boiler</li><li><strong>Solar panels:</strong> Zonnepanelen voor warm water</li><li><strong>Heat pump:</strong> Warmtepomp</li></ul><h5>Kitchen type</h5><ul><li><strong>Fully equipped:</strong> Volledig uitgeruste keuken</li><li><strong>Basic:</strong> Basis keuken</li><li><strong>American kitchen:</strong> Open keuken</li><li><strong>Independent:</strong> Aparte keuken</li><li><strong>No kitchen:</strong> Geen keuken</li></ul><p>Deze details helpen bij lead matching en zijn belangrijk voor internationale kopers.</p>"
+        },
+        "en": {
+          "text": "<h5>Heating systems</h5><p>Heating type is especially important in northern markets.</p><ul><li><strong>Central heating:</strong> Central heating</li><li><strong>Gas heating:</strong> Gas heating</li><li><strong>Electric heating:</strong> Electric heating</li><li><strong>Underfloor heating:</strong> Underfloor heating</li><li><strong>Heat pump:</strong> Heat pump</li><li><strong>Air conditioning:</strong> Air conditioning (heating and cooling)</li><li><strong>No heating:</strong> No heating (for warm climates)</li></ul><h5>Hot water system</h5><ul><li><strong>Electric boiler:</strong> Electric boiler</li><li><strong>Gas boiler:</strong> Gas boiler</li><li><strong>Solar panels:</strong> Solar panels for hot water</li><li><strong>Heat pump:</strong> Heat pump</li></ul><h5>Kitchen type</h5><ul><li><strong>Fully equipped:</strong> Fully equipped kitchen</li><li><strong>Basic:</strong> Basic kitchen</li><li><strong>American kitchen:</strong> Open kitchen</li><li><strong>Independent:</strong> Separate kitchen</li><li><strong>No kitchen:</strong> No kitchen</li></ul><p>These details help with lead matching and are important for international buyers.</p>"
+        },
+        "es": {
+          "text": "<h5>Sistemas de calefacción</h5><p>El tipo de calefacción es especialmente importante en mercados del norte.</p><ul><li><strong>Calefacción central:</strong> Calefacción central</li><li><strong>Calefacción de gas:</strong> Calefacción de gas</li><li><strong>Calefacción eléctrica:</strong> Calefacción eléctrica</li><li><strong>Suelo radiante:</strong> Suelo radiante</li><li><strong>Bomba de calor:</strong> Bomba de calor</li><li><strong>Aire acondicionado:</strong> Aire acondicionado (calefacción y refrigeración)</li><li><strong>Sin calefacción:</strong> Sin calefacción (para climas cálidos)</li></ul><h5>Sistema de agua caliente</h5><ul><li><strong>Caldera eléctrica:</strong> Caldera eléctrica</li><li><strong>Caldera de gas:</strong> Caldera de gas</li><li><strong>Paneles solares:</strong> Paneles solares para agua caliente</li><li><strong>Bomba de calor:</strong> Bomba de calor</li></ul><h5>Tipo de cocina</h5><ul><li><strong>Totalmente equipada:</strong> Cocina completamente equipada</li><li><strong>Básica:</strong> Cocina básica</li><li><strong>Cocina americana:</strong> Cocina abierta</li><li><strong>Independiente:</strong> Cocina separada</li><li><strong>Sin cocina:</strong> Sin cocina</li></ul><p>Estos detalles ayudan con el matching de leads y son importantes para compradores internacionales.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "building-features",
+      "title": {
+        "nl": "Building features en conditie",
+        "en": "Building features and condition",
+        "es": "Características del edificio y condición"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Windows en orientation</h5><ul><li><strong>Window material:</strong> Aluminium, PVC, hout, dubbel glas</li><li><strong>Window location:</strong> Internal, external, straatzijde</li><li><strong>Window type:</strong> Single, double, triple glazing</li><li><strong>Orientation:</strong> North, South, East, West (belangrijk voor zonlicht)</li></ul><h5>Floor type en conditie</h5><ul><li><strong>Floor type:</strong> Parket, tegels, marmer, laminaat, beton</li><li><strong>Floor number:</strong> Op welke verdieping (voor appartementen)</li><li><strong>Condition:</strong> Excellent, goed, te renoveren, nieuwbouw</li></ul><h5>Building status</h5><ul><li><strong>New construction:</strong> Nieuwbouw project</li><li><strong>Resale:</strong> Tweede hands</li><li><strong>Off-plan:</strong> Nog te bouwen</li><li><strong>Renovation level:</strong> Original, partly renovated, fully renovated</li></ul><h5>Additional building features</h5><ul><li><strong>Elevator:</strong> Lift aanwezig (ja/nee)</li><li><strong>Shutters:</strong> Rolluiken of shutters</li><li><strong>Storage room:</strong> Berging of opslagruimte</li><li><strong>Basement:</strong> Kelder</li><li><strong>Attic:</strong> Zolder</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Windows and orientation</h5><ul><li><strong>Window material:</strong> Aluminum, PVC, wood, double glazing</li><li><strong>Window location:</strong> Internal, external, street side</li><li><strong>Window type:</strong> Single, double, triple glazing</li><li><strong>Orientation:</strong> North, South, East, West (important for sunlight)</li></ul><h5>Floor type and condition</h5><ul><li><strong>Floor type:</strong> Parquet, tiles, marble, laminate, concrete</li><li><strong>Floor number:</strong> Which floor (for apartments)</li><li><strong>Condition:</strong> Excellent, good, to renovate, new construction</li></ul><h5>Building status</h5><ul><li><strong>New construction:</strong> New construction project</li><li><strong>Resale:</strong> Second hand</li><li><strong>Off-plan:</strong> Yet to be built</li><li><strong>Renovation level:</strong> Original, partly renovated, fully renovated</li></ul><h5>Additional building features</h5><ul><li><strong>Elevator:</strong> Elevator present (yes/no)</li><li><strong>Shutters:</strong> Shutters or blinds</li><li><strong>Storage room:</strong> Storage or storage space</li><li><strong>Basement:</strong> Basement</li><li><strong>Attic:</strong> Attic</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Ventanas y orientación</h5><ul><li><strong>Material de ventanas:</strong> Aluminio, PVC, madera, doble acristalamiento</li><li><strong>Ubicación de ventanas:</strong> Interna, externa, lado calle</li><li><strong>Tipo de ventanas:</strong> Acristalamiento simple, doble, triple</li><li><strong>Orientación:</strong> Norte, Sur, Este, Oeste (importante para luz solar)</li></ul><h5>Tipo de suelo y condición</h5><ul><li><strong>Tipo de suelo:</strong> Parquet, azulejos, mármol, laminado, concreto</li><li><strong>Número de piso:</strong> En qué piso (para apartamentos)</li><li><strong>Condición:</strong> Excelente, buena, a renovar, obra nueva</li></ul><h5>Estado del edificio</h5><ul><li><strong>Obra nueva:</strong> Proyecto de construcción nueva</li><li><strong>Reventa:</strong> Segunda mano</li><li><strong>Sobre plano:</strong> Aún por construir</li><li><strong>Nivel de renovación:</strong> Original, parcialmente renovado, totalmente renovado</li></ul><h5>Características adicionales del edificio</h5><ul><li><strong>Ascensor:</strong> Ascensor presente (sí/no)</li><li><strong>Persianas:</strong> Persianas o contraventanas</li><li><strong>Trastero:</strong> Trastero o espacio de almacenamiento</li><li><strong>Sótano:</strong> Sótano</li><li><strong>Ático:</strong> Ático</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "furnishing-energy",
+      "title": {
+        "nl": "Furnishing en energy labels",
+        "en": "Furnishing and energy labels",
+        "es": "Mobiliario y etiquetas energéticas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Furnishing level</h5><p>Het furnishing level bepaalt of een property direct bewoonbaar is.</p><ul><li><strong>Furnished:</strong> Volledig gemeubileerd met alle apparatuur</li><li><strong>Semi-furnished:</strong> Basis meubels (bed, tafel, stoelen)</li><li><strong>Unfurnished:</strong> Leeg, geen meubels</li></ul><p><strong>Matching impact:</strong> Veel internationale kopers zoeken specifiek naar furnished properties voor directe verhuur.</p><h5>Energy labels</h5><p>Energy labels zijn verplicht in de meeste Europese markten en belangrijk voor kopers.</p><ul><li><strong>Energy consumption:</strong> A+++ tot G (groen tot rood)</li><li><strong>Energy emissions:</strong> CO2 uitstoot rating</li><li><strong>Certificate number:</strong> Officieel certificaatnummer</li><li><strong>Valid until:</strong> Geldigheid van certificaat</li></ul><p>Deze informatie wordt automatisch meegestuurd naar Idealista en Fotocasa bij portal sync.</p><h5>Equipment en extras</h5><p>Tesoro ondersteunt custom equipment fields voor specifieke features:</p><ul><li>White goods (wasmachine, droger, vaatwasser)</li><li>Security (alarm, camera's, secure door)</li><li>Smart home features</li><li>Fiber internet</li><li>Community facilities (gym, concierge, security)</li></ul><p>Je kunt custom equipment toevoegen via Settings → Property Fields.</p>"
+        },
+        "en": {
+          "text": "<h5>Furnishing level</h5><p>The furnishing level determines whether a property is immediately habitable.</p><ul><li><strong>Furnished:</strong> Fully furnished with all equipment</li><li><strong>Semi-furnished:</strong> Basic furniture (bed, table, chairs)</li><li><strong>Unfurnished:</strong> Empty, no furniture</li></ul><p><strong>Matching impact:</strong> Many international buyers specifically search for furnished properties for immediate rental.</p><h5>Energy labels</h5><p>Energy labels are mandatory in most European markets and important for buyers.</p><ul><li><strong>Energy consumption:</strong> A+++ to G (green to red)</li><li><strong>Energy emissions:</strong> CO2 emissions rating</li><li><strong>Certificate number:</strong> Official certificate number</li><li><strong>Valid until:</strong> Certificate validity</li></ul><p>This information is automatically sent to Idealista and Fotocasa during portal sync.</p><h5>Equipment and extras</h5><p>Tesoro supports custom equipment fields for specific features:</p><ul><li>White goods (washing machine, dryer, dishwasher)</li><li>Security (alarm, cameras, secure door)</li><li>Smart home features</li><li>Fiber internet</li><li>Community facilities (gym, concierge, security)</li></ul><p>You can add custom equipment via Settings → Property Fields.</p>"
+        },
+        "es": {
+          "text": "<h5>Nivel de mobiliario</h5><p>El nivel de mobiliario determina si una propiedad es inmediatamente habitable.</p><ul><li><strong>Amueblado:</strong> Completamente amueblado con todo el equipamiento</li><li><strong>Semi-amueblado:</strong> Muebles básicos (cama, mesa, sillas)</li><li><strong>Sin amueblar:</strong> Vacío, sin muebles</li></ul><p><strong>Impacto en matching:</strong> Muchos compradores internacionales buscan específicamente propiedades amuebladas para alquiler inmediato.</p><h5>Etiquetas energéticas</h5><p>Las etiquetas energéticas son obligatorias en la mayoría de mercados europeos e importantes para compradores.</p><ul><li><strong>Consumo energético:</strong> A+++ a G (verde a rojo)</li><li><strong>Emisiones energéticas:</strong> Calificación de emisiones de CO2</li><li><strong>Número de certificado:</strong> Número de certificado oficial</li><li><strong>Válido hasta:</strong> Validez del certificado</li></ul><p>Esta información se envía automáticamente a Idealista y Fotocasa durante la sincronización de portales.</p><h5>Equipamiento y extras</h5><p>Tesoro soporta campos de equipamiento personalizados para características específicas:</p><ul><li>Electrodomésticos (lavadora, secadora, lavavajillas)</li><li>Seguridad (alarma, cámaras, puerta segura)</li><li>Características de hogar inteligente</li><li>Internet de fibra</li><li>Instalaciones comunitarias (gimnasio, conserje, seguridad)</li></ul><p>Puedes añadir equipamiento personalizado vía Configuración → Campos de Propiedades.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best practices voor features management",
+        "en": "Best practices for features management",
+        "es": "Mejores prácticas para gestión de características"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Volg deze richtlijnen voor optimale resultaten:</strong></p><ol><li><strong>Wees compleet:</strong> Vul alle relevante features in, zelfs als het \"No\" is (bijvoorbeeld \"Pool: No\"). Dit verbetert matching accuracy.</li><li><strong>Consistentie:</strong> Gebruik dezelfde terminologie voor alle properties (niet \"garage\" in één property en \"parking\" in een ander).</li><li><strong>Verify energy labels:</strong> Zorg dat energy certificates actueel en correct zijn voor compliance.</li><li><strong>Update regularly:</strong> Review features bij status changes (bijvoorbeeld na renovaties).</li><li><strong>Use custom fields wisely:</strong> Voor zeer specifieke features die niet in standaard lijst zitten.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Follow these guidelines for optimal results:</strong></p><ol><li><strong>Be complete:</strong> Fill in all relevant features, even if it's \"No\" (e.g., \"Pool: No\"). This improves matching accuracy.</li><li><strong>Consistency:</strong> Use the same terminology for all properties (not \"garage\" in one property and \"parking\" in another).</li><li><strong>Verify energy labels:</strong> Ensure energy certificates are current and correct for compliance.</li><li><strong>Update regularly:</strong> Review features during status changes (e.g., after renovations).</li><li><strong>Use custom fields wisely:</strong> For very specific features not in standard list.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Sigue estas pautas para resultados óptimos:</strong></p><ol><li><strong>Sé completo:</strong> Rellena todas las características relevantes, incluso si es \"No\" (ej., \"Piscina: No\"). Esto mejora la precisión del matching.</li><li><strong>Consistencia:</strong> Usa la misma terminología para todas las propiedades (no \"garaje\" en una propiedad y \"parking\" en otra).</li><li><strong>Verifica etiquetas energéticas:</strong> Asegúrate de que los certificados energéticos estén actualizados y sean correctos para cumplimiento.</li><li><strong>Actualiza regularmente:</strong> Revisa características durante cambios de estado (ej., después de renovaciones).</li><li><strong>Usa campos personalizados sabiamente:</strong> Para características muy específicas que no están en la lista estándar.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "adding-properties-guide",
+    "property-pricing-valuation",
+    "property-ai-matching"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik elke feature invullen voor elke property?",
+        "en": "Do I need to fill in every feature for each property?",
+        "es": "¿Necesito rellenar cada característica para cada propiedad?"
+      },
+      "answer": {
+        "nl": "Niet verplicht, maar aanbevolen. Hoe meer features je invult, hoe beter de AI-matching werkt en hoe gedetailleerder kopers kunnen filteren. Focus op de features die relevant zijn voor jouw market (bijvoorbeeld pool en AC in Spanje, heating in Nederland).",
+        "en": "Not required, but recommended. The more features you fill in, the better the AI-matching works and the more detailed buyers can filter. Focus on features relevant to your market (e.g., pool and AC in Spain, heating in Netherlands).",
+        "es": "No es obligatorio, pero recomendado. Cuantas más características rellenes, mejor funciona el matching con IA y más detallados pueden filtrar los compradores. Enfócate en características relevantes para tu mercado (ej., piscina y AC en España, calefacción en Holanda)."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik custom features toevoegen die niet in de standaard lijst staan?",
+        "en": "Can I add custom features that are not in the standard list?",
+        "es": "¿Puedo añadir características personalizadas que no están en la lista estándar?"
+      },
+      "answer": {
+        "nl": "Ja! Ga naar Settings → Property Fields en klik op 'Add Custom Field'. Je kunt daar specifieke equipment, conditions of amenities toevoegen die uniek zijn voor jouw market of property types.",
+        "en": "Yes! Go to Settings → Property Fields and click 'Add Custom Field'. You can add specific equipment, conditions or amenities that are unique to your market or property types.",
+        "es": "¡Sí! Ve a Configuración → Campos de Propiedades y haz clic en 'Añadir Campo Personalizado'. Puedes añadir equipamiento específico, condiciones o amenidades que sean únicas para tu mercado o tipos de propiedades."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden alle features automatisch gesynchroniseerd met Idealista en Fotocasa?",
+        "en": "Are all features automatically synchronized with Idealista and Fotocasa?",
+        "es": "¿Se sincronizan automáticamente todas las características con Idealista y Fotocasa?"
+      },
+      "answer": {
+        "nl": "Ja, standaard features worden automatisch gemapped naar de juiste velden op Idealista en Fotocasa. Custom fields moeten mogelijk handmatig gemapped worden via Settings → Idealista Integration. Check de field mapping om te zien welke features worden gesynchroniseerd.",
+        "en": "Yes, standard features are automatically mapped to the correct fields on Idealista and Fotocasa. Custom fields may need to be manually mapped via Settings → Idealista Integration. Check the field mapping to see which features are synchronized.",
+        "es": "Sí, las características estándar se mapean automáticamente a los campos correctos en Idealista y Fotocasa. Los campos personalizados pueden necesitar ser mapeados manualmente vía Configuración → Integración Idealista. Verifica el mapeo de campos para ver qué características se sincronizan."
+      }
+    }
+  ]
+}

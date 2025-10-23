@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "id": "custom-fields-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "intermediate",
+    "tags": ["settings", "custom fields", "configuration", "data", "customization"],
+    "featured": false,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop",
+    "keywords": ["custom fields", "field types", "data customization", "crm configuration", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Aangepaste velden maken en beheren",
+      "en": "Creating and Managing Custom Fields",
+      "es": "Crear y gestionar campos personalizados"
+    },
+    "description": {
+      "nl": "Pas Tesoro CRM aan uw specifieke bedrijfsbehoeften aan door aangepaste velden te creëren voor contacten, woningen en deals.",
+      "en": "Adapt Tesoro CRM to your specific business needs by creating custom fields for contacts, properties, and deals.",
+      "es": "Adapte Tesoro CRM a sus necesidades comerciales específicas creando campos personalizados para contactos, propiedades y acuerdos."
+    },
+    "icon": "tune"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Aangepaste velden stellen u in staat om Tesoro CRM aan te passen aan de unieke gegevensvereisten van uw vastgoedonderneming. Terwijl het systeem standaardvelden biedt voor veelvoorkomende informatie, kunt u aanvullende velden toevoegen om gespecialiseerde gegevens vast te leggen die belangrijk zijn voor uw workflow.\n\nVan energielabels voor duurzaam vastgoed tot specifieke klantvoorkeuren, aangepaste velden zorgen ervoor dat u alle informatie kunt bijhouden die u nodig heeft om uw klanten beter van dienst te zijn.",
+        "en": "Custom fields allow you to tailor Tesoro CRM to your real estate business's unique data requirements. While the system provides standard fields for common information, you can add additional fields to capture specialized data important to your workflow.\n\nFrom energy labels for sustainable real estate to specific client preferences, custom fields ensure you can track all the information you need to better serve your customers.",
+        "es": "Los campos personalizados le permiten adaptar Tesoro CRM a los requisitos de datos únicos de su negocio inmobiliario. Mientras el sistema proporciona campos estándar para información común, puede agregar campos adicionales para capturar datos especializados importantes para su flujo de trabajo.\n\nDesde etiquetas energéticas para bienes raíces sostenibles hasta preferencias específicas del cliente, los campos personalizados aseguran que pueda rastrear toda la información que necesita para servir mejor a sus clientes."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "planning-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Plan voordat u velden toevoegt",
+        "en": "Plan Before Adding Fields",
+        "es": "Planifique antes de agregar campos"
+      },
+      "content": {
+        "nl": "Voordat u aangepaste velden creëert, documenteer welke informatie u moet vastleggen en waarom. Te veel velden kunnen gebruikers overweldigen en gegevensinvoer vertragen. Focus op gegevens die echte waarde toevoegen aan uw proces.",
+        "en": "Before creating custom fields, document what information you need to capture and why. Too many fields can overwhelm users and slow down data entry. Focus on data that adds real value to your process.",
+        "es": "Antes de crear campos personalizados, documente qué información necesita capturar y por qué. Demasiados campos pueden abrumar a los usuarios y ralentizar la entrada de datos. Concéntrese en datos que agreguen valor real a su proceso."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "access-custom-fields",
+      "title": {
+        "nl": "Toegang tot aangepaste velden",
+        "en": "Accessing Custom Fields",
+        "es": "Acceder a campos personalizados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar veldconfiguratie",
+            "en": "Navigate to Field Configuration",
+            "es": "Navegar a configuración de campos"
+          },
+          "description": {
+            "nl": "Ga naar Instellingen > Aanpassen > Aangepaste velden. Hier ziet u alle standaardvelden en aangepaste velden die u heeft gemaakt, georganiseerd per objecttype (Contacten, Woningen, Deals). Alleen beheerders kunnen aangepaste velden maken en bewerken.",
+            "en": "Go to Settings > Customize > Custom Fields. Here you'll see all standard fields and custom fields you've created, organized by object type (Contacts, Properties, Deals). Only administrators can create and edit custom fields.",
+            "es": "Vaya a Configuración > Personalizar > Campos personalizados. Aquí verá todos los campos estándar y campos personalizados que ha creado, organizados por tipo de objeto (Contactos, Propiedades, Acuerdos). Solo los administradores pueden crear y editar campos personalizados."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer objecttype",
+            "en": "Select Object Type",
+            "es": "Seleccionar tipo de objeto"
+          },
+          "description": {
+            "nl": "Kies of u een veld wilt toevoegen aan Contacten, Woningen of Deals. Elk objecttype heeft zijn eigen set aangepaste velden. Denk na over waar de informatie het meest logisch thuishoort in uw workflow.",
+            "en": "Choose whether you want to add a field to Contacts, Properties, or Deals. Each object type has its own set of custom fields. Think about where the information most logically belongs in your workflow.",
+            "es": "Elija si desea agregar un campo a Contactos, Propiedades o Acuerdos. Cada tipo de objeto tiene su propio conjunto de campos personalizados. Piense dónde pertenece más lógicamente la información en su flujo de trabajo."
+          }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "create-field",
+      "title": {
+        "nl": "Een aangepast veld maken",
+        "en": "Creating a Custom Field",
+        "es": "Crear un campo personalizado"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Klik op 'Nieuw veld'",
+            "en": "Click 'New Field'",
+            "es": "Hacer clic en 'Nuevo campo'"
+          },
+          "description": {
+            "nl": "Klik op de knop 'Nieuw veld' rechtsboven. Een dialoogvenster wordt geopend waar u uw nieuwe veld kunt configureren. Het creëren van een goed gestructureerd veld begint met het kiezen van het juiste veldtype.",
+            "en": "Click the 'New Field' button in the top right. A dialog will open where you can configure your new field. Creating a well-structured field starts with choosing the right field type.",
+            "es": "Haga clic en el botón 'Nuevo campo' en la parte superior derecha. Se abrirá un cuadro de diálogo donde puede configurar su nuevo campo. Crear un campo bien estructurado comienza con elegir el tipo de campo correcto."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer veldtype",
+            "en": "Select Field Type",
+            "es": "Seleccionar tipo de campo"
+          },
+          "description": {
+            "nl": "Kies het juiste veldtype op basis van het soort gegevens dat u wilt vastleggen:\n\n**Tekst**: Voor korte tekstinvoer zoals namen of referenties (maximaal 255 tekens)\n\n**Lange tekst**: Voor beschrijvingen of opmerkingen (geen tekenlimiet)\n\n**Nummer**: Voor numerieke waarden zoals oppervlakte of bouwjaar\n\n**Geld**: Voor geldbedragen met valutasymbool\n\n**Datum**: Voor datums zoals beschikbaarheidsdatum\n\n**Selectie**: Voor keuzelijst met vooraf gedefinieerde opties\n\n**Meerkeuze**: Voor meerdere selecties uit een lijst\n\n**Checkbox**: Voor ja/nee of waar/onwaar waarden\n\n**URL**: Voor website links met automatische validatie",
+            "en": "Choose the appropriate field type based on the kind of data you want to capture:\n\n**Text**: For short text input like names or references (max 255 characters)\n\n**Long Text**: For descriptions or notes (no character limit)\n\n**Number**: For numeric values like area or year built\n\n**Currency**: For monetary amounts with currency symbol\n\n**Date**: For dates like availability date\n\n**Dropdown**: For selection list with predefined options\n\n**Multi-select**: For multiple selections from a list\n\n**Checkbox**: For yes/no or true/false values\n\n**URL**: For website links with automatic validation",
+            "es": "Elija el tipo de campo apropiado según el tipo de datos que desea capturar:\n\n**Texto**: Para entrada de texto corto como nombres o referencias (máximo 255 caracteres)\n\n**Texto largo**: Para descripciones o notas (sin límite de caracteres)\n\n**Número**: Para valores numéricos como área o año de construcción\n\n**Moneda**: Para cantidades monetarias con símbolo de moneda\n\n**Fecha**: Para fechas como fecha de disponibilidad\n\n**Desplegable**: Para lista de selección con opciones predefinidas\n\n**Selección múltiple**: Para múltiples selecciones de una lista\n\n**Casilla de verificación**: Para valores sí/no o verdadero/falso\n\n**URL**: Para enlaces de sitios web con validación automática"
+          }
+        },
+        {
+          "title": {
+            "nl": "Veldnaam en label instellen",
+            "en": "Set Field Name and Label",
+            "es": "Establecer nombre y etiqueta del campo"
+          },
+          "description": {
+            "nl": "**Veldnaam**: Een unieke technische naam zonder spaties (bijv. 'energie_label' of 'preferredViewingTime'). Deze wordt gebruikt in de database en API.\n\n**Veldlabel**: De gebruiksvriendelijke naam die gebruikers zien (bijv. 'Energielabel' of 'Gewenste bezichtigingstijd'). Maak dit duidelijk en beschrijvend.\n\nKies namen die duidelijk en consistent zijn met uw bestaande veldnamen.",
+            "en": "**Field Name**: A unique technical name without spaces (e.g., 'energy_label' or 'preferredViewingTime'). This is used in the database and API.\n\n**Field Label**: The user-friendly name that users see (e.g., 'Energy Label' or 'Preferred Viewing Time'). Make this clear and descriptive.\n\nChoose names that are clear and consistent with your existing field names.",
+            "es": "**Nombre del campo**: Un nombre técnico único sin espacios (por ejemplo, 'energy_label' o 'preferredViewingTime'). Esto se usa en la base de datos y la API.\n\n**Etiqueta del campo**: El nombre fácil de usar que ven los usuarios (por ejemplo, 'Etiqueta energética' o 'Hora de visualización preferida'). Haga que esto sea claro y descriptivo.\n\nElija nombres que sean claros y consistentes con los nombres de sus campos existentes."
+          }
+        },
+        {
+          "title": {
+            "nl": "Opties configureren",
+            "en": "Configure Options",
+            "es": "Configurar opciones"
+          },
+          "description": {
+            "nl": "Afhankelijk van het veldtype zijn er aanvullende configuratieopties:\n\n**Selectie/Meerkeuze**: Voeg opties toe door op 'Optie toevoegen' te klikken. Voer elk mogelijk antwoord in (bijv. voor energielabel: A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Nummer/Geld**: Stel minimum- en maximumwaarden in indien nodig\n\n**Tekst**: Stel een maximale lengte in of laat de standaard\n\n**Datum**: Kies of toekomstige/verleden datums zijn toegestaan",
+            "en": "Depending on the field type, there are additional configuration options:\n\n**Dropdown/Multi-select**: Add options by clicking 'Add Option'. Enter each possible answer (e.g., for energy label: A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Number/Currency**: Set minimum and maximum values if needed\n\n**Text**: Set a maximum length or leave default\n\n**Date**: Choose whether future/past dates are allowed",
+            "es": "Según el tipo de campo, hay opciones de configuración adicionales:\n\n**Desplegable/Selección múltiple**: Agregue opciones haciendo clic en 'Agregar opción'. Ingrese cada respuesta posible (por ejemplo, para etiqueta energética: A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Número/Moneda**: Establezca valores mínimos y máximos si es necesario\n\n**Texto**: Establezca una longitud máxima o deje el valor predeterminado\n\n**Fecha**: Elija si se permiten fechas futuras/pasadas"
+          }
+        },
+        {
+          "title": {
+            "nl": "Stel veldgedrag in",
+            "en": "Set Field Behavior",
+            "es": "Establecer comportamiento del campo"
+          },
+          "description": {
+            "nl": "Configureer hoe het veld zich gedraagt:\n\n**Verplicht**: Schakel in als het veld moet worden ingevuld voordat een record kan worden opgeslagen\n\n**Uniek**: Schakel in als elke waarde uniek moet zijn (bijvoorbeeld referentienummer)\n\n**Standaardwaarde**: Stel een standaardwaarde in die automatisch wordt ingevuld\n\n**Hulptekst**: Voeg een korte uitleg toe die verschijnt onder het veld om gebruikers te helpen",
+            "en": "Configure how the field behaves:\n\n**Required**: Enable if the field must be filled in before a record can be saved\n\n**Unique**: Enable if each value must be unique (e.g., reference number)\n\n**Default Value**: Set a default value that is automatically filled in\n\n**Help Text**: Add a short explanation that appears below the field to help users",
+            "es": "Configure cómo se comporta el campo:\n\n**Requerido**: Habilite si el campo debe completarse antes de que se pueda guardar un registro\n\n**Único**: Habilite si cada valor debe ser único (por ejemplo, número de referencia)\n\n**Valor predeterminado**: Establezca un valor predeterminado que se complete automáticamente\n\n**Texto de ayuda**: Agregue una breve explicación que aparece debajo del campo para ayudar a los usuarios"
+          }
+        },
+        {
+          "title": {
+            "nl": "Opslaan en publiceren",
+            "en": "Save and Publish",
+            "es": "Guardar y publicar"
+          },
+          "description": {
+            "nl": "Klik op 'Opslaan' om het veld te maken. Het nieuwe veld is onmiddellijk beschikbaar voor alle gebruikers. U kunt het veld later nog bewerken, maar wees voorzichtig met het wijzigen van het veldtype nadat gegevens zijn ingevoerd, omdat dit gegevensverlies kan veroorzaken.",
+            "en": "Click 'Save' to create the field. The new field is immediately available to all users. You can edit the field later, but be careful changing the field type after data has been entered, as this may cause data loss.",
+            "es": "Haga clic en 'Guardar' para crear el campo. El nuevo campo está disponible inmediatamente para todos los usuarios. Puede editar el campo más tarde, pero tenga cuidado al cambiar el tipo de campo después de que se hayan ingresado datos, ya que esto puede causar pérdida de datos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "field-limits",
+      "variant": "info",
+      "title": {
+        "nl": "Limieten voor aangepaste velden",
+        "en": "Custom Field Limits",
+        "es": "Límites de campos personalizados"
+      },
+      "content": {
+        "nl": "U kunt maximaal 50 aangepaste velden per objecttype creëren. Als u deze limiet bereikt en meer velden nodig heeft, overweeg dan of sommige velden kunnen worden gecombineerd of als tags kunnen worden gebruikt voor categorisatie in plaats van aparte velden.",
+        "en": "You can create up to 50 custom fields per object type. If you reach this limit and need more fields, consider whether some fields can be combined or if tags can be used for categorization instead of separate fields.",
+        "es": "Puede crear hasta 50 campos personalizados por tipo de objeto. Si alcanza este límite y necesita más campos, considere si algunos campos se pueden combinar o si se pueden usar etiquetas para la categorización en lugar de campos separados."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "manage-fields",
+      "title": {
+        "nl": "Aangepaste velden beheren",
+        "en": "Managing Custom Fields",
+        "es": "Gestionar campos personalizados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Velden bewerken",
+            "en": "Edit Fields",
+            "es": "Editar campos"
+          },
+          "description": {
+            "nl": "Klik op een bestaand veld om het te bewerken. U kunt het label, hulptekst en de meeste configuratie-instellingen wijzigen. Het wijzigen van het veldtype is beperkt na het invoeren van gegevens om gegevensintegriteit te beschermen. Als u het type moet wijzigen, exporteer dan eerst de gegevens.",
+            "en": "Click on an existing field to edit it. You can change the label, help text, and most configuration settings. Changing the field type is restricted after data has been entered to protect data integrity. If you must change the type, export the data first.",
+            "es": "Haga clic en un campo existente para editarlo. Puede cambiar la etiqueta, el texto de ayuda y la mayoría de las configuraciones. Cambiar el tipo de campo está restringido después de que se han ingresado datos para proteger la integridad de los datos. Si debe cambiar el tipo, exporte los datos primero."
+          }
+        },
+        {
+          "title": {
+            "nl": "Velden herordenen",
+            "en": "Reorder Fields",
+            "es": "Reordenar campos"
+          },
+          "description": {
+            "nl": "Sleep en zet velden neer om hun volgorde op formulieren te wijzigen. Plaats de belangrijkste velden bovenaan waar gebruikers ze het eerst zien. Groepeer gerelateerde velden bij elkaar voor een logische gegevensinvoer workflow.",
+            "en": "Drag and drop fields to change their order on forms. Place the most important fields at the top where users see them first. Group related fields together for a logical data entry workflow.",
+            "es": "Arrastre y suelte campos para cambiar su orden en los formularios. Coloque los campos más importantes en la parte superior donde los usuarios los vean primero. Agrupe campos relacionados para un flujo de trabajo de entrada de datos lógico."
+          }
+        },
+        {
+          "title": {
+            "nl": "Velden verbergen",
+            "en": "Hide Fields",
+            "es": "Ocultar campos"
+          },
+          "description": {
+            "nl": "Als een veld niet langer nuttig is maar nog gegevens bevat, kunt u het verbergen in plaats van verwijderen. Verborgen velden verschijnen niet op formulieren maar behouden hun gegevens. Dit is nuttig voor verouderde velden die u mogelijk later weer nodig heeft.",
+            "en": "If a field is no longer useful but still contains data, you can hide it instead of deleting it. Hidden fields don't appear on forms but retain their data. This is useful for deprecated fields you may need again later.",
+            "es": "Si un campo ya no es útil pero aún contiene datos, puede ocultarlo en lugar de eliminarlo. Los campos ocultos no aparecen en los formularios pero conservan sus datos. Esto es útil para campos obsoletos que puede necesitar nuevamente más tarde."
+          }
+        },
+        {
+          "title": {
+            "nl": "Velden verwijderen",
+            "en": "Delete Fields",
+            "es": "Eliminar campos"
+          },
+          "description": {
+            "nl": "Het verwijderen van een veld is permanent en verwijdert alle gegevens in dat veld voor alle records. Het systeem vraagt om bevestiging en toont hoeveel records worden beïnvloed. Exporteer eerst gegevens als u deze mogelijk later nodig heeft. Standaardvelden kunnen niet worden verwijderd.",
+            "en": "Deleting a field is permanent and removes all data in that field for all records. The system asks for confirmation and shows how many records are affected. Export data first if you may need it later. Standard fields cannot be deleted.",
+            "es": "Eliminar un campo es permanente y elimina todos los datos en ese campo para todos los registros. El sistema solicita confirmación y muestra cuántos registros se ven afectados. Exporte los datos primero si puede necesitarlos más tarde. Los campos estándar no se pueden eliminar."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "field-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor aangepaste velden",
+        "en": "Custom Field Best Practices",
+        "es": "Mejores prácticas para campos personalizados"
+      },
+      "content": {
+        "nl": "**Gebruik duidelijke namen**: Kies veldnamen die onmiddellijk duidelijk maken wat er moet worden ingevoerd.\n\n**Voeg hulptekst toe**: Leg uit wat moet worden ingevoerd, vooral voor technische of gespecialiseerde velden.\n\n**Beperk verplichte velden**: Te veel verplichte velden vertragen gegevensinvoer en frustreren gebruikers.\n\n**Gebruik selecties voor consistentie**: Gebruik dropdown/multi-select in plaats van vrije tekst wanneer er een beperkte set geldige antwoorden is.\n\n**Plan voor schaalbaarheid**: Denk na over hoe het veld zal werken wanneer u duizenden records heeft.\n\n**Documenteer aangepaste velden**: Houd een lijst bij van aangepaste velden, hun doel en wie ze heeft aangevraagd.",
+        "en": "**Use clear names**: Choose field names that immediately make clear what should be entered.\n\n**Add help text**: Explain what should be entered, especially for technical or specialized fields.\n\n**Limit required fields**: Too many required fields slow down data entry and frustrate users.\n\n**Use dropdowns for consistency**: Use dropdown/multi-select instead of free text when there's a limited set of valid answers.\n\n**Plan for scalability**: Think about how the field will work when you have thousands of records.\n\n**Document custom fields**: Keep a list of custom fields, their purpose, and who requested them.",
+        "es": "**Use nombres claros**: Elija nombres de campos que dejen claro inmediatamente qué se debe ingresar.\n\n**Agregue texto de ayuda**: Explique qué se debe ingresar, especialmente para campos técnicos o especializados.\n\n**Limite los campos requeridos**: Demasiados campos requeridos ralentizan la entrada de datos y frustran a los usuarios.\n\n**Use desplegables para consistencia**: Use desplegable/selección múltiple en lugar de texto libre cuando hay un conjunto limitado de respuestas válidas.\n\n**Planifique para escalabilidad**: Piense en cómo funcionará el campo cuando tenga miles de registros.\n\n**Documente campos personalizados**: Mantenga una lista de campos personalizados, su propósito y quién los solicitó."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "field-examples",
+      "title": {
+        "nl": "Praktische voorbeelden van aangepaste velden",
+        "en": "Practical Custom Field Examples",
+        "es": "Ejemplos prácticos de campos personalizados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Voor woningen",
+            "en": "For Properties",
+            "es": "Para propiedades"
+          },
+          "description": {
+            "nl": "**Energielabel**: Selectie (A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Parkeerplaatsen**: Nummer (min: 0, max: 10)\n\n**Huisdieren toegestaan**: Checkbox\n\n**Opleverdatum**: Datum\n\n**Bouwjaar**: Nummer (min: 1800, max: huidig jaar)\n\n**VvE bijdrage**: Geld (per maand)\n\n**Balkon/terras richting**: Selectie (Noord, Oost, Zuid, West)\n\n**Monumentenstatus**: Checkbox",
+            "en": "**Energy Label**: Dropdown (A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Parking Spaces**: Number (min: 0, max: 10)\n\n**Pets Allowed**: Checkbox\n\n**Delivery Date**: Date\n\n**Year Built**: Number (min: 1800, max: current year)\n\n**HOA Contribution**: Currency (per month)\n\n**Balcony/Terrace Direction**: Dropdown (North, East, South, West)\n\n**Monument Status**: Checkbox",
+            "es": "**Etiqueta energética**: Desplegable (A+++, A++, A+, A, B, C, D, E, F, G)\n\n**Plazas de estacionamiento**: Número (mín: 0, máx: 10)\n\n**Mascotas permitidas**: Casilla de verificación\n\n**Fecha de entrega**: Fecha\n\n**Año de construcción**: Número (mín: 1800, máx: año actual)\n\n**Contribución HOA**: Moneda (por mes)\n\n**Dirección de balcón/terraza**: Desplegable (Norte, Este, Sur, Oeste)\n\n**Estado de monumento**: Casilla de verificación"
+          }
+        },
+        {
+          "title": {
+            "nl": "Voor contacten",
+            "en": "For Contacts",
+            "es": "Para contactos"
+          },
+          "description": {
+            "nl": "**Gewenste bezichtigingstijd**: Selectie (Ochtend, Middag, Avond, Weekend)\n\n**Budget minimum**: Geld\n\n**Budget maximum**: Geld\n\n**Gewenste verhuisdatum**: Datum\n\n**Huidige huursituatie**: Selectie (Huurder, Eigenaar, Bij ouders, Anders)\n\n**Hypotheek pre-goedkeuring**: Checkbox\n\n**Aantal kinderen**: Nummer (min: 0)\n\n**Werkgever**: Tekst\n\n**LinkedIn profiel**: URL",
+            "en": "**Preferred Viewing Time**: Dropdown (Morning, Afternoon, Evening, Weekend)\n\n**Budget Minimum**: Currency\n\n**Budget Maximum**: Currency\n\n**Desired Move Date**: Date\n\n**Current Housing Situation**: Dropdown (Renter, Owner, With Parents, Other)\n\n**Mortgage Pre-approval**: Checkbox\n\n**Number of Children**: Number (min: 0)\n\n**Employer**: Text\n\n**LinkedIn Profile**: URL",
+            "es": "**Hora de visualización preferida**: Desplegable (Mañana, Tarde, Noche, Fin de semana)\n\n**Presupuesto mínimo**: Moneda\n\n**Presupuesto máximo**: Moneda\n\n**Fecha de mudanza deseada**: Fecha\n\n**Situación de vivienda actual**: Desplegable (Inquilino, Propietario, Con padres, Otro)\n\n**Pre-aprobación de hipoteca**: Casilla de verificación\n\n**Número de hijos**: Número (mín: 0)\n\n**Empleador**: Texto\n\n**Perfil de LinkedIn**: URL"
+          }
+        },
+        {
+          "title": {
+            "nl": "Voor deals",
+            "en": "For Deals",
+            "es": "Para acuerdos"
+          },
+          "description": {
+            "nl": "**Financieringstype**: Selectie (Hypotheek, Contant, Mix)\n\n**Ontbindende voorwaarden**: Meerkeuze (Financiering, Bouwkundig rapport, Verkoopwoning)\n\n**Notaris**: Tekst\n\n**Sleutels overgedragen**: Checkbox\n\n**Verkoopcommissie percentage**: Nummer (decimaal)\n\n**Verwijzingsbron**: Selectie (Website, Funda, Social media, Verwijzing, Walk-in)\n\n**Contractdatum**: Datum",
+            "en": "**Financing Type**: Dropdown (Mortgage, Cash, Mix)\n\n**Contingencies**: Multi-select (Financing, Building Inspection, Sale of Current Home)\n\n**Notary**: Text\n\n**Keys Transferred**: Checkbox\n\n**Commission Percentage**: Number (decimal)\n\n**Referral Source**: Dropdown (Website, Funda, Social Media, Referral, Walk-in)\n\n**Contract Date**: Date",
+            "es": "**Tipo de financiación**: Desplegable (Hipoteca, Efectivo, Mixto)\n\n**Contingencias**: Selección múltiple (Financiación, Inspección de construcción, Venta de casa actual)\n\n**Notario**: Texto\n\n**Llaves transferidas**: Casilla de verificación\n\n**Porcentaje de comisión**: Número (decimal)\n\n**Fuente de referencia**: Desplegable (Sitio web, Funda, Redes sociales, Referencia, Visita directa)\n\n**Fecha de contrato**: Fecha"
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "data-migration-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Wees voorzichtig bij het wijzigen van veldtypen",
+        "en": "Be Careful When Changing Field Types",
+        "es": "Tenga cuidado al cambiar tipos de campos"
+      },
+      "content": {
+        "nl": "Het wijzigen van een veldtype nadat gegevens zijn ingevoerd kan leiden tot gegevensverlies. Als u bijvoorbeeld een tekstveld wijzigt in een nummer, worden alle niet-numerieke waarden verwijderd. Exporteer altijd uw gegevens voordat u significante veldwijzigingen aanbrengt.",
+        "en": "Changing a field type after data has been entered can result in data loss. For example, if you change a text field to a number, all non-numeric values will be removed. Always export your data before making significant field changes.",
+        "es": "Cambiar un tipo de campo después de que se han ingresado datos puede resultar en pérdida de datos. Por ejemplo, si cambia un campo de texto a un número, todos los valores no numéricos se eliminarán. Siempre exporte sus datos antes de realizar cambios significativos en los campos."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik een aangepast veld gebruiken in filters en rapporten?",
+            "en": "Can I use a custom field in filters and reports?",
+            "es": "¿Puedo usar un campo personalizado en filtros e informes?"
+          },
+          "answer": {
+            "nl": "Ja, aangepaste velden werken precies zoals standaardvelden. U kunt erop filteren in lijstweergaven, ze gebruiken in geavanceerde zoekfuncties, ze opnemen in rapporten en ze gebruiken in workflow-automatisering. Ze zijn volledig geïntegreerd in het systeem.",
+            "en": "Yes, custom fields work exactly like standard fields. You can filter on them in list views, use them in advanced searches, include them in reports, and use them in workflow automation. They are fully integrated into the system.",
+            "es": "Sí, los campos personalizados funcionan exactamente como los campos estándar. Puede filtrar sobre ellos en las vistas de lista, usarlos en búsquedas avanzadas, incluirlos en informes y usarlos en la automatización del flujo de trabajo. Están completamente integrados en el sistema."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er met gegevens in een verborgen veld?",
+            "en": "What happens to data in a hidden field?",
+            "es": "¿Qué sucede con los datos en un campo oculto?"
+          },
+          "answer": {
+            "nl": "Gegevens in verborgen velden blijven volledig behouden en kunnen via de API worden geëxporteerd. Het veld verschijnt alleen niet meer op formulieren en detailpagina's voor gebruikers. Dit is anders dan verwijderen, wat permanent is en alle gegevens wist.",
+            "en": "Data in hidden fields is completely preserved and can be exported via the API. The field simply no longer appears on forms and detail pages for users. This is different from deleting, which is permanent and erases all data.",
+            "es": "Los datos en campos ocultos se conservan completamente y se pueden exportar a través de la API. El campo simplemente ya no aparece en formularios y páginas de detalles para los usuarios. Esto es diferente de eliminar, que es permanente y borra todos los datos."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kunnen Makelaars aangepaste velden maken?",
+            "en": "Can Agents create custom fields?",
+            "es": "¿Pueden los Agentes crear campos personalizados?"
+          },
+          "answer": {
+            "nl": "Nee, alleen gebruikers met de rol Beheerder kunnen aangepaste velden maken, bewerken of verwijderen. Dit voorkomt dat het systeem rommelig wordt met niet-gecoördineerde velden. Makelaars en Managers kunnen wel verzoeken indienen bij beheerders voor nieuwe velden.",
+            "en": "No, only users with the Administrator role can create, edit, or delete custom fields. This prevents the system from becoming cluttered with uncoordinated fields. Agents and Managers can submit requests to administrators for new fields.",
+            "es": "No, solo los usuarios con el rol de Administrador pueden crear, editar o eliminar campos personalizados. Esto evita que el sistema se llene de campos no coordinados. Los Agentes y Gerentes pueden enviar solicitudes a los administradores para nuevos campos."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik formules gebruiken in aangepaste velden?",
+            "en": "Can I use formulas in custom fields?",
+            "es": "¿Puedo usar fórmulas en campos personalizados?"
+          },
+          "answer": {
+            "nl": "Op dit moment ondersteunt Tesoro CRM geen formule-velden. Als u berekende waarden nodig heeft, kunt u deze automatiseren via workflow-regels die waarden bijwerken op basis van andere velden, of gebruik maken van de API voor complexere berekeningen buiten het systeem.",
+            "en": "Currently, Tesoro CRM does not support formula fields. If you need calculated values, you can automate these via workflow rules that update values based on other fields, or use the API for more complex calculations outside the system.",
+            "es": "Actualmente, Tesoro CRM no admite campos de fórmula. Si necesita valores calculados, puede automatizarlos a través de reglas de flujo de trabajo que actualizan valores según otros campos, o usar la API para cálculos más complejos fuera del sistema."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe voeg ik snelmassale gegevens toe aan een nieuw aangepast veld?",
+            "en": "How do I quickly add bulk data to a new custom field?",
+            "es": "¿Cómo agrego rápidamente datos masivos a un nuevo campo personalizado?"
+          },
+          "answer": {
+            "nl": "U kunt gegevens exporteren naar Excel, de nieuwe kolomwaarden toevoegen en de gegevens weer importeren. De import functie zal het nieuwe aangepaste veld herkennen en de waarden correct toewijzen. Dit is veel sneller dan honderden records handmatig bijwerken.",
+            "en": "You can export data to Excel, add the new column values, and re-import the data. The import function will recognize the new custom field and assign the values correctly. This is much faster than manually updating hundreds of records.",
+            "es": "Puede exportar datos a Excel, agregar los nuevos valores de columna y volver a importar los datos. La función de importación reconocerá el nuevo campo personalizado y asignará los valores correctamente. Esto es mucho más rápido que actualizar manualmente cientos de registros."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "tags-taxonomy-setup",
+    "data-import-export-settings",
+    "contact-management-best-practices"
+  ]
+}

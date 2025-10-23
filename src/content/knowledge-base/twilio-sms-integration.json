@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "id": "twilio-sms-integration",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "advanced",
+    "tags": ["integrations", "twilio", "sms", "messaging", "communication", "automation"],
+    "featured": false,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["twilio sms integration", "sms crm", "twilio setup", "automated sms", "sms marketing real estate"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Twilio SMS integratie: automatische sms communicatie",
+      "en": "Twilio SMS Integration: Automated SMS Communication",
+      "es": "Integración SMS de Twilio: comunicación SMS automatizada"
+    },
+    "description": {
+      "nl": "Integreer Twilio SMS met Tesoro CRM om geautomatiseerde sms berichten te versturen naar contacts, property viewings te bevestigen en leads sneller te converteren.",
+      "en": "Integrate Twilio SMS with Tesoro CRM to send automated SMS messages to contacts, confirm property viewings, and convert leads faster.",
+      "es": "Integra SMS de Twilio con Tesoro CRM para enviar mensajes SMS automatizados a contactos, confirmar visitas de propiedades y convertir leads más rápido."
+    },
+    "icon": "sms"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "twilio-intro",
+      "title": {
+        "nl": "Waarom Twilio SMS integratie?",
+        "en": "Why Twilio SMS Integration?",
+        "es": "¿Por qué integración SMS de Twilio?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Twilio is de toonaangevende platform voor programmeerbare communicatie. Door Twilio te integreren met Tesoro CRM kun je SMS berichten versturen direct vanuit je CRM, geautomatiseerde campaigns opzetten en real-time communiceren met leads en klanten.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Verstuur SMS berichten naar contacts vanuit Tesoro</li><li>Automatische SMS notificaties voor property viewings</li><li>SMS campaigns voor lead nurturing</li><li>Two-way SMS conversations - antwoorden worden gekoppeld aan contacts</li><li>SMS templates en personalisatie</li><li>Delivery tracking en analytics</li><li>Internationaal - verstuur SMS naar 180+ landen</li></ul><p><strong>Use cases voor vastgoed:</strong></p><ul><li>Property viewing confirmaties</li><li>Open house reminders</li><li>Lead follow-ups</li><li>Price drop notificaties</li><li>Document signing reminders</li></ul><p>Deze guide leidt je door het complete setup proces van Twilio SMS integratie met Tesoro CRM.</p>"
+        },
+        "en": {
+          "text": "<p>Twilio is the leading platform for programmable communication. By integrating Twilio with Tesoro CRM, you can send SMS messages directly from your CRM, set up automated campaigns, and communicate in real-time with leads and customers.</p><p><strong>Key benefits:</strong></p><ul><li>Send SMS messages to contacts from Tesoro</li><li>Automatic SMS notifications for property viewings</li><li>SMS campaigns for lead nurturing</li><li>Two-way SMS conversations - replies are linked to contacts</li><li>SMS templates and personalization</li><li>Delivery tracking and analytics</li><li>International - send SMS to 180+ countries</li></ul><p><strong>Real estate use cases:</strong></p><ul><li>Property viewing confirmations</li><li>Open house reminders</li><li>Lead follow-ups</li><li>Price drop notifications</li><li>Document signing reminders</li></ul><p>This guide walks you through the complete setup process of Twilio SMS integration with Tesoro CRM.</p>"
+        },
+        "es": {
+          "text": "<p>Twilio es la plataforma líder para comunicación programable. Al integrar Twilio con Tesoro CRM, puedes enviar mensajes SMS directamente desde tu CRM, configurar campañas automatizadas y comunicarte en tiempo real con leads y clientes.</p><p><strong>Beneficios clave:</strong></p><ul><li>Envía mensajes SMS a contactos desde Tesoro</li><li>Notificaciones SMS automáticas para visitas de propiedades</li><li>Campañas SMS para nutrición de leads</li><li>Conversaciones SMS bidireccionales - las respuestas se vinculan a contactos</li><li>Plantillas SMS y personalización</li><li>Seguimiento de entrega y análisis</li><li>Internacional - envía SMS a más de 180 países</li></ul><p><strong>Casos de uso para inmobiliarias:</strong></p><ul><li>Confirmaciones de visitas de propiedades</li><li>Recordatorios de jornadas de puertas abiertas</li><li>Seguimientos de leads</li><li>Notificaciones de reducción de precio</li><li>Recordatorios de firma de documentos</li></ul><p>Esta guía te lleva a través del proceso completo de configuración de la integración SMS de Twilio con Tesoro CRM.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "twilio-setup",
+      "title": {
+        "nl": "Twilio SMS integratie configureren",
+        "en": "Configuring Twilio SMS Integration",
+        "es": "Configurar integración SMS de Twilio"
+      },
+      "subsections": [
+        {
+          "id": "step-1-twilio-account",
+          "title": {
+            "nl": "Stap 1: Twilio account aanmaken en telefoonnummer verkrijgen",
+            "en": "Step 1: Create Twilio Account and Get Phone Number",
+            "es": "Paso 1: crear cuenta de Twilio y obtener número de teléfono"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Om SMS berichten te versturen via Twilio, heb je een Twilio account en een telefoonnummer nodig.</p><h4>Twilio account aanmaken:</h4><ol><li>Ga naar <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Klik <strong>Sign up</strong> en maak een gratis account aan</li><li>Vul je gegevens in (naam, email, wachtwoord)</li><li>Verifieer je email adres</li><li>Verifieer je telefoonnummer (Twilio stuurt verificatie code)</li></ol><p>Je krijgt <strong>$15 gratis credit</strong> om te testen.</p><h4>Twilio telefoonnummer kopen:</h4><ol><li>Log in op <a href=\"https://console.twilio.com\" target=\"_blank\">Twilio Console</a></li><li>Ga naar <strong>Phone Numbers → Buy a Number</strong></li><li>Selecteer je land (bijv. Spain, Netherlands)</li><li>Filter op <strong>SMS capabilities</strong> (enabled)</li><li>Kies een telefoonnummer:  <ul><li><strong>Local number:</strong> Lokaal nummer (aanbevolen voor betere deliverability)</li><li><strong>Toll-free number:</strong> Gratis nummer (0800/0900)</li><li><strong>Mobile number:</strong> Mobiel nummer</li></ul></li><li>Klik <strong>Buy</strong> (kost ca. $1-$2/maand)</li></ol><p><strong>Tip:</strong> Voor Spanje kies je een Spaans +34 nummer voor hogere open rates.</p><h4>Twilio API credentials verkrijgen:</h4><ol><li>In Twilio Console: ga naar <strong>Account → API keys & tokens</strong></li><li>Noteer je credentials:  <ul><li><strong>Account SID:</strong> Unieke account identifier</li><li><strong>Auth Token:</strong> Authenticatie token (klik 'Show' om te zien)</li><li><strong>Phone Number:</strong> Je gekochte Twilio nummer</li></ul></li><li>Bewaar deze credentials veilig - je hebt ze nodig voor Tesoro setup</li></ol>"
+            },
+            "en": {
+              "text": "<p>To send SMS messages via Twilio, you need a Twilio account and a phone number.</p><h4>Creating Twilio account:</h4><ol><li>Go to <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Click <strong>Sign up</strong> and create a free account</li><li>Fill in your details (name, email, password)</li><li>Verify your email address</li><li>Verify your phone number (Twilio sends verification code)</li></ol><p>You get <strong>$15 free credit</strong> to test with.</p><h4>Buying Twilio phone number:</h4><ol><li>Log in to <a href=\"https://console.twilio.com\" target=\"_blank\">Twilio Console</a></li><li>Go to <strong>Phone Numbers → Buy a Number</strong></li><li>Select your country (e.g., Spain, Netherlands)</li><li>Filter on <strong>SMS capabilities</strong> (enabled)</li><li>Choose a phone number:  <ul><li><strong>Local number:</strong> Local number (recommended for better deliverability)</li><li><strong>Toll-free number:</strong> Free number (0800/0900)</li><li><strong>Mobile number:</strong> Mobile number</li></ul></li><li>Click <strong>Buy</strong> (costs approx. $1-$2/month)</li></ol><p><strong>Tip:</strong> For Spain, choose a Spanish +34 number for higher open rates.</p><h4>Getting Twilio API credentials:</h4><ol><li>In Twilio Console: go to <strong>Account → API keys & tokens</strong></li><li>Note your credentials:  <ul><li><strong>Account SID:</strong> Unique account identifier</li><li><strong>Auth Token:</strong> Authentication token (click 'Show' to view)</li><li><strong>Phone Number:</strong> Your purchased Twilio number</li></ul></li><li>Save these credentials securely - you'll need them for Tesoro setup</li></ol>"
+            },
+            "es": {
+              "text": "<p>Para enviar mensajes SMS mediante Twilio, necesitas una cuenta de Twilio y un número de teléfono.</p><h4>Crear cuenta de Twilio:</h4><ol><li>Ve a <a href=\"https://www.twilio.com/try-twilio\" target=\"_blank\">twilio.com/try-twilio</a></li><li>Haz clic en <strong>Sign up</strong> y crea una cuenta gratuita</li><li>Completa tus detalles (nombre, email, contraseña)</li><li>Verifica tu dirección de email</li><li>Verifica tu número de teléfono (Twilio envía código de verificación)</li></ol><p>Obtienes <strong>$15 de crédito gratuito</strong> para probar.</p><h4>Comprar número de teléfono de Twilio:</h4><ol><li>Inicia sesión en <a href=\"https://console.twilio.com\" target=\"_blank\">Twilio Console</a></li><li>Ve a <strong>Phone Numbers → Buy a Number</strong></li><li>Selecciona tu país (ej., España, Países Bajos)</li><li>Filtra por <strong>SMS capabilities</strong> (habilitado)</li><li>Elige un número de teléfono:  <ul><li><strong>Local number:</strong> Número local (recomendado para mejor entregabilidad)</li><li><strong>Toll-free number:</strong> Número gratuito (0800/0900)</li><li><strong>Mobile number:</strong> Número móvil</li></ul></li><li>Haz clic en <strong>Buy</strong> (cuesta aprox. $1-$2/mes)</li></ol><p><strong>Consejo:</strong> Para España, elige un número español +34 para tasas de apertura más altas.</p><h4>Obtener credenciales API de Twilio:</h4><ol><li>En Twilio Console: ve a <strong>Account → API keys & tokens</strong></li><li>Anota tus credenciales:  <ul><li><strong>Account SID:</strong> Identificador único de cuenta</li><li><strong>Auth Token:</strong> Token de autenticación (haz clic en 'Show' para ver)</li><li><strong>Phone Number:</strong> Tu número de Twilio comprado</li></ul></li><li>Guarda estas credenciales de forma segura - las necesitarás para la configuración de Tesoro</li></ol>"
+            }
+          }
+        },
+        {
+          "id": "step-2-tesoro-config",
+          "title": {
+            "nl": "Stap 2: Twilio integratie activeren in Tesoro",
+            "en": "Step 2: Activate Twilio Integration in Tesoro",
+            "es": "Paso 2: activar integración de Twilio en Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Configureer de Twilio integratie in Tesoro om SMS functionaliteit te activeren.</p><h4>Integratie configureren:</h4><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings → Integrations → Communication</strong></li><li>Klik <strong>+ Add Integration</strong></li><li>Selecteer <strong>Twilio SMS</strong></li><li>Vul je Twilio credentials in:  <ul><li><strong>Account SID:</strong> Je Twilio Account SID</li><li><strong>Auth Token:</strong> Je Twilio Auth Token</li><li><strong>Phone Number:</strong> Je Twilio telefoonnummer (formaat: +34612345678)</li></ul></li><li>Configureer instellingen:  <ul><li><strong>Default Sender Name:</strong> Afzender naam (optioneel, bijv. 'Tesoro Immo')</li><li><strong>Enable Two-way SMS:</strong> Enabled (aanbevolen)</li><li><strong>Auto-link Replies:</strong> Enabled (koppelt antwoorden automatisch aan contacts)</li></ul></li><li>Klik <strong>Test Connection</strong></li><li>Verstuur test SMS naar je eigen nummer</li><li>Klik <strong>Save & Activate</strong></li></ol><p>De integratie is nu actief en je kunt SMS berichten versturen vanuit Tesoro.</p>"
+            },
+            "en": {
+              "text": "<p>Configure the Twilio integration in Tesoro to activate SMS functionality.</p><h4>Configuring integration:</h4><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings → Integrations → Communication</strong></li><li>Click <strong>+ Add Integration</strong></li><li>Select <strong>Twilio SMS</strong></li><li>Fill in your Twilio credentials:  <ul><li><strong>Account SID:</strong> Your Twilio Account SID</li><li><strong>Auth Token:</strong> Your Twilio Auth Token</li><li><strong>Phone Number:</strong> Your Twilio phone number (format: +34612345678)</li></ul></li><li>Configure settings:  <ul><li><strong>Default Sender Name:</strong> Sender name (optional, e.g., 'Tesoro Immo')</li><li><strong>Enable Two-way SMS:</strong> Enabled (recommended)</li><li><strong>Auto-link Replies:</strong> Enabled (automatically links replies to contacts)</li></ul></li><li>Click <strong>Test Connection</strong></li><li>Send test SMS to your own number</li><li>Click <strong>Save & Activate</strong></li></ol><p>The integration is now active and you can send SMS messages from Tesoro.</p>"
+            },
+            "es": {
+              "text": "<p>Configura la integración de Twilio en Tesoro para activar la funcionalidad SMS.</p><h4>Configurar integración:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings → Integrations → Communication</strong></li><li>Haz clic en <strong>+ Add Integration</strong></li><li>Selecciona <strong>Twilio SMS</strong></li><li>Completa tus credenciales de Twilio:  <ul><li><strong>Account SID:</strong> Tu Account SID de Twilio</li><li><strong>Auth Token:</strong> Tu Auth Token de Twilio</li><li><strong>Phone Number:</strong> Tu número de teléfono de Twilio (formato: +34612345678)</li></ul></li><li>Configura ajustes:  <ul><li><strong>Default Sender Name:</strong> Nombre del remitente (opcional, ej., 'Tesoro Immo')</li><li><strong>Enable Two-way SMS:</strong> Habilitado (recomendado)</li><li><strong>Auto-link Replies:</strong> Habilitado (vincula respuestas automáticamente a contactos)</li></ul></li><li>Haz clic en <strong>Test Connection</strong></li><li>Envía SMS de prueba a tu propio número</li><li>Haz clic en <strong>Save & Activate</strong></li></ol><p>La integración ahora está activa y puedes enviar mensajes SMS desde Tesoro.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-3-send-sms",
+          "title": {
+            "nl": "Stap 3: Je eerste SMS versturen vanuit Tesoro",
+            "en": "Step 3: Send Your First SMS from Tesoro",
+            "es": "Paso 3: enviar tu primer SMS desde Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Nu Twilio is verbonden, kun je SMS berichten versturen naar contacts.</p><h4>Handmatige SMS versturen:</h4><ol><li>Open een contact in Tesoro</li><li>Klik <strong>Send SMS</strong> knop (naast Send Email)</li><li>SMS compose window opent:  <ul><li><strong>To:</strong> Contact telefoonnummer (automatisch ingevuld)</li><li><strong>From:</strong> Je Twilio nummer</li><li><strong>Message:</strong> Type je bericht (max 160 karakters per segment)</li><li><strong>Character count:</strong> Real-time teller van karakters en segmenten</li></ul></li><li>Optioneel:  <ul><li>Selecteer een <strong>SMS Template</strong></li><li>Plan SMS voor later via <strong>Schedule</strong></li><li>Voeg <strong>personalisatie variabelen</strong> toe</li></ul></li><li>Klik <strong>Send</strong></li></ol><h4>SMS bevestiging:</h4><p>Na het versturen:</p><ul><li>SMS wordt verzonden via Twilio</li><li>Delivery status wordt getracked (Sent, Delivered, Failed)</li><li>SMS verschijnt in contact's <strong>Activity Timeline</strong></li><li>Je ziet SMS in <strong>SMS Inbox</strong></li></ul><h4>Antwoorden ontvangen:</h4><p>Als contact antwoordt op je SMS:</p><ul><li>Antwoord komt binnen in Tesoro SMS Inbox</li><li>Automatisch gekoppeld aan contact</li><li>Je ontvangt notification</li><li>Je kunt direct antwoorden vanuit Tesoro</li></ul>"
+            },
+            "en": {
+              "text": "<p>Now that Twilio is connected, you can send SMS messages to contacts.</p><h4>Sending manual SMS:</h4><ol><li>Open a contact in Tesoro</li><li>Click <strong>Send SMS</strong> button (next to Send Email)</li><li>SMS compose window opens:  <ul><li><strong>To:</strong> Contact phone number (automatically filled)</li><li><strong>From:</strong> Your Twilio number</li><li><strong>Message:</strong> Type your message (max 160 characters per segment)</li><li><strong>Character count:</strong> Real-time counter of characters and segments</li></ul></li><li>Optional:  <ul><li>Select an <strong>SMS Template</strong></li><li>Schedule SMS for later via <strong>Schedule</strong></li><li>Add <strong>personalization variables</strong></li></ul></li><li>Click <strong>Send</strong></li></ol><h4>SMS confirmation:</h4><p>After sending:</p><ul><li>SMS is sent via Twilio</li><li>Delivery status is tracked (Sent, Delivered, Failed)</li><li>SMS appears in contact's <strong>Activity Timeline</strong></li><li>You see SMS in <strong>SMS Inbox</strong></li></ul><h4>Receiving replies:</h4><p>If contact replies to your SMS:</p><ul><li>Reply comes in to Tesoro SMS Inbox</li><li>Automatically linked to contact</li><li>You receive notification</li><li>You can reply directly from Tesoro</li></ul>"
+            },
+            "es": {
+              "text": "<p>Ahora que Twilio está conectado, puedes enviar mensajes SMS a contactos.</p><h4>Enviar SMS manual:</h4><ol><li>Abre un contacto en Tesoro</li><li>Haz clic en el botón <strong>Send SMS</strong> (junto a Send Email)</li><li>Se abre la ventana de composición de SMS:  <ul><li><strong>To:</strong> Número de teléfono del contacto (completado automáticamente)</li><li><strong>From:</strong> Tu número de Twilio</li><li><strong>Message:</strong> Escribe tu mensaje (máx 160 caracteres por segmento)</li><li><strong>Character count:</strong> Contador en tiempo real de caracteres y segmentos</li></ul></li><li>Opcional:  <ul><li>Selecciona una <strong>SMS Template</strong></li><li>Programa SMS para más tarde mediante <strong>Schedule</strong></li><li>Agrega <strong>variables de personalización</strong></li></ul></li><li>Haz clic en <strong>Send</strong></li></ol><h4>Confirmación de SMS:</h4><p>Después de enviar:</p><ul><li>El SMS se envía mediante Twilio</li><li>El estado de entrega se rastrea (Sent, Delivered, Failed)</li><li>El SMS aparece en la <strong>Activity Timeline</strong> del contacto</li><li>Ves el SMS en <strong>SMS Inbox</strong></li></ul><h4>Recibir respuestas:</h4><p>Si el contacto responde a tu SMS:</p><ul><li>La respuesta llega a la bandeja de entrada SMS de Tesoro</li><li>Se vincula automáticamente al contacto</li><li>Recibes una notificación</li><li>Puedes responder directamente desde Tesoro</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "sms-templates-automation",
+      "title": {
+        "nl": "SMS templates en automatisering",
+        "en": "SMS Templates and Automation",
+        "es": "Plantillas SMS y automatización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>SMS templates maken:</h4><p>Bespaar tijd met herbruikbare SMS templates:</p><ol><li>Ga naar <strong>Settings → SMS Templates</strong></li><li>Klik <strong>+ New Template</strong></li><li>Vul in:  <ul><li><strong>Template Name:</strong> Beschrijvende naam (bijv. 'Viewing Confirmation')</li><li><strong>Message:</strong> Template tekst met variabelen</li><li><strong>Category:</strong> Viewing, Follow-up, Reminder, etc.</li></ul></li><li>Gebruik variabelen voor personalisatie:  <ul><li>{{contact.firstName}} - Voornaam</li><li>{{property.address}} - Property adres</li><li>{{viewing.date}} - Viewing datum</li><li>{{viewing.time}} - Viewing tijd</li><li>{{agent.name}} - Agent naam</li></ul></li><li>Klik <strong>Save Template</strong></li></ol><h4>Voorbeeld template - Viewing Confirmation:</h4><pre>Hola {{contact.firstName}},\n\nTu visita a {{property.address}} está confirmada para {{viewing.date}} a las {{viewing.time}}.\n\nNos vemos pronto!\n{{agent.name}}\nTesoro Inmobiliaria</pre><h4>Geautomatiseerde SMS triggers:</h4><p>Stel automatische SMS berichten in voor events:</p><ol><li>Ga naar <strong>Settings → Automations → SMS Triggers</strong></li><li>Klik <strong>+ New Trigger</strong></li><li>Configureer trigger:  <ul><li><strong>Event:</strong> Bijv. 'Property viewing scheduled'</li><li><strong>Delay:</strong> Direct, of X uur/dagen na event</li><li><strong>Template:</strong> Selecteer SMS template</li><li><strong>Condition:</strong> Optionele filters (bijv. alleen leads met status 'Hot')</li></ul></li><li>Klik <strong>Activate Trigger</strong></li></ol><h4>Veelgebruikte automations:</h4><ul><li><strong>Viewing reminder:</strong> 24 uur voor viewing</li><li><strong>New lead welcome:</strong> Direct na lead registratie</li><li><strong>Follow-up after viewing:</strong> 2 uur na viewing</li><li><strong>Price drop alert:</strong> Bij prijsverlaging van property</li><li><strong>Document reminder:</strong> 1 dag voor document deadline</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Creating SMS templates:</h4><p>Save time with reusable SMS templates:</p><ol><li>Go to <strong>Settings → SMS Templates</strong></li><li>Click <strong>+ New Template</strong></li><li>Fill in:  <ul><li><strong>Template Name:</strong> Descriptive name (e.g., 'Viewing Confirmation')</li><li><strong>Message:</strong> Template text with variables</li><li><strong>Category:</strong> Viewing, Follow-up, Reminder, etc.</li></ul></li><li>Use variables for personalization:  <ul><li>{{contact.firstName}} - First name</li><li>{{property.address}} - Property address</li><li>{{viewing.date}} - Viewing date</li><li>{{viewing.time}} - Viewing time</li><li>{{agent.name}} - Agent name</li></ul></li><li>Click <strong>Save Template</strong></li></ol><h4>Example template - Viewing Confirmation:</h4><pre>Hi {{contact.firstName}},\n\nYour viewing at {{property.address}} is confirmed for {{viewing.date}} at {{viewing.time}}.\n\nSee you soon!\n{{agent.name}}\nTesoro Real Estate</pre><h4>Automated SMS triggers:</h4><p>Set up automatic SMS messages for events:</p><ol><li>Go to <strong>Settings → Automations → SMS Triggers</strong></li><li>Click <strong>+ New Trigger</strong></li><li>Configure trigger:  <ul><li><strong>Event:</strong> E.g., 'Property viewing scheduled'</li><li><strong>Delay:</strong> Immediately, or X hours/days after event</li><li><strong>Template:</strong> Select SMS template</li><li><strong>Condition:</strong> Optional filters (e.g., only leads with 'Hot' status)</li></ul></li><li>Click <strong>Activate Trigger</strong></li></ol><h4>Common automations:</h4><ul><li><strong>Viewing reminder:</strong> 24 hours before viewing</li><li><strong>New lead welcome:</strong> Immediately after lead registration</li><li><strong>Follow-up after viewing:</strong> 2 hours after viewing</li><li><strong>Price drop alert:</strong> On property price reduction</li><li><strong>Document reminder:</strong> 1 day before document deadline</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Crear plantillas SMS:</h4><p>Ahorra tiempo con plantillas SMS reutilizables:</p><ol><li>Ve a <strong>Settings → SMS Templates</strong></li><li>Haz clic en <strong>+ New Template</strong></li><li>Completa:  <ul><li><strong>Template Name:</strong> Nombre descriptivo (ej., 'Confirmación de visita')</li><li><strong>Message:</strong> Texto de plantilla con variables</li><li><strong>Category:</strong> Viewing, Follow-up, Reminder, etc.</li></ul></li><li>Usa variables para personalización:  <ul><li>{{contact.firstName}} - Nombre</li><li>{{property.address}} - Dirección de propiedad</li><li>{{viewing.date}} - Fecha de visita</li><li>{{viewing.time}} - Hora de visita</li><li>{{agent.name}} - Nombre del agente</li></ul></li><li>Haz clic en <strong>Save Template</strong></li></ol><h4>Plantilla de ejemplo - Confirmación de visita:</h4><pre>Hola {{contact.firstName}},\n\nTu visita a {{property.address}} está confirmada para {{viewing.date}} a las {{viewing.time}}.\n\n¡Nos vemos pronto!\n{{agent.name}}\nTesoro Inmobiliaria</pre><h4>Disparadores SMS automatizados:</h4><p>Configura mensajes SMS automáticos para eventos:</p><ol><li>Ve a <strong>Settings → Automations → SMS Triggers</strong></li><li>Haz clic en <strong>+ New Trigger</strong></li><li>Configura disparador:  <ul><li><strong>Event:</strong> Ej., 'Visita de propiedad programada'</li><li><strong>Delay:</strong> Inmediatamente, o X horas/días después del evento</li><li><strong>Template:</strong> Selecciona plantilla SMS</li><li><strong>Condition:</strong> Filtros opcionales (ej., solo leads con estado 'Hot')</li></ul></li><li>Haz clic en <strong>Activate Trigger</strong></li></ol><h4>Automatizaciones comunes:</h4><ul><li><strong>Recordatorio de visita:</strong> 24 horas antes de la visita</li><li><strong>Bienvenida a nuevo lead:</strong> Inmediatamente después del registro del lead</li><li><strong>Seguimiento después de visita:</strong> 2 horas después de la visita</li><li><strong>Alerta de reducción de precio:</strong> Al reducir el precio de la propiedad</li><li><strong>Recordatorio de documento:</strong> 1 día antes de la fecha límite del documento</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "sms-best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "SMS best practices en compliance",
+        "en": "SMS Best Practices and Compliance",
+        "es": "Mejores prácticas SMS y cumplimiento"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Juridische compliance (GDPR):</strong></p><ul><li><strong>Opt-in vereist:</strong> Vraag altijd toestemming voordat je SMS berichten verstuurt</li><li><strong>Opt-out optie:</strong> Voeg 'Reply STOP to unsubscribe' toe aan marketing SMS</li><li><strong>Record keeping:</strong> Tesoro bewaart opt-in records automatisch</li><li><strong>Privacy:</strong> Deel geen gevoelige informatie via SMS (prijzen OK, financiële details niet)</li></ul><p><strong>Timing best practices:</strong></p><ul><li>Verstuur alleen tussen 9:00-20:00 (respect voor rusttijden)</li><li>Vermijd weekenden voor commercial SMS</li><li>Viewings/reminders: 24 uur van tevoren</li><li>Follow-ups: Binnen 2-4 uur na viewing</li></ul><p><strong>Content best practices:</strong></p><ul><li>Houd berichten kort en to-the-point (onder 160 karakters)</li><li>Gebruik duidelijke call-to-action</li><li>Personaliseer met naam en property details</li><li>Voeg je naam/bedrijf toe voor herkenbaarheid</li><li>Gebruik geen ALL CAPS (lijkt op spam)</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Legal compliance (GDPR):</strong></p><ul><li><strong>Opt-in required:</strong> Always ask permission before sending SMS messages</li><li><strong>Opt-out option:</strong> Add 'Reply STOP to unsubscribe' to marketing SMS</li><li><strong>Record keeping:</strong> Tesoro keeps opt-in records automatically</li><li><strong>Privacy:</strong> Don't share sensitive information via SMS (prices OK, financial details not)</li></ul><p><strong>Timing best practices:</strong></p><ul><li>Only send between 9:00-20:00 (respect for rest periods)</li><li>Avoid weekends for commercial SMS</li><li>Viewings/reminders: 24 hours in advance</li><li>Follow-ups: Within 2-4 hours after viewing</li></ul><p><strong>Content best practices:</strong></p><ul><li>Keep messages short and to-the-point (under 160 characters)</li><li>Use clear call-to-action</li><li>Personalize with name and property details</li><li>Add your name/company for recognition</li><li>Don't use ALL CAPS (looks like spam)</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Cumplimiento legal (GDPR):</strong></p><ul><li><strong>Opt-in requerido:</strong> Siempre pide permiso antes de enviar mensajes SMS</li><li><strong>Opción de exclusión:</strong> Agrega 'Responde STOP para cancelar suscripción' a SMS de marketing</li><li><strong>Mantenimiento de registros:</strong> Tesoro guarda registros de opt-in automáticamente</li><li><strong>Privacidad:</strong> No compartas información sensible mediante SMS (precios OK, detalles financieros no)</li></ul><p><strong>Mejores prácticas de tiempo:</strong></p><ul><li>Solo envía entre 9:00-20:00 (respeto por períodos de descanso)</li><li>Evita fines de semana para SMS comerciales</li><li>Visitas/recordatorios: 24 horas de antelación</li><li>Seguimientos: Dentro de 2-4 horas después de la visita</li></ul><p><strong>Mejores prácticas de contenido:</strong></p><ul><li>Mantén mensajes cortos y directos (menos de 160 caracteres)</li><li>Usa llamadas a la acción claras</li><li>Personaliza con nombre y detalles de propiedad</li><li>Agrega tu nombre/empresa para reconocimiento</li><li>No uses TODO EN MAYÚSCULAS (parece spam)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "analytics-troubleshooting",
+      "title": {
+        "nl": "Analytics en troubleshooting",
+        "en": "Analytics and Troubleshooting",
+        "es": "Análisis y solución de problemas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>SMS Analytics dashboard:</h4><p>Monitor je SMS performance:</p><ul><li>Ga naar <strong>Reports → SMS Analytics</strong></li><li>Bekijk metrics:  <ul><li><strong>Sent:</strong> Aantal verzonden SMS</li><li><strong>Delivered:</strong> Succesvol afgeleverd</li><li><strong>Failed:</strong> Mislukt (ongeldige nummers, etc.)</li><li><strong>Reply Rate:</strong> Percentage antwoorden</li><li><strong>Opt-out Rate:</strong> Percentage uitschrijvingen</li><li><strong>Cost per SMS:</strong> Gemiddelde kosten</li></ul></li><li>Filter op periode, template, agent, campaign</li></ul><h4>Kosten monitoring:</h4><p>Twilio SMS kosten variëren per land:</p><ul><li>Spanje: ca. €0.08 per SMS</li><li>Nederland: ca. €0.09 per SMS</li><li>Internationaal: €0.05-€0.15 per SMS</li></ul><p>Bekijk kosten in <strong>Settings → Integrations → Twilio → Billing</strong>.</p><h4>Veelvoorkomende problemen:</h4><p><strong>SMS wordt niet afgeleverd:</strong></p><ul><li>Controleer of telefoonnummer geldig is (inclusief landcode +34)</li><li>Verifieer dat contact niet heeft gekozen voor SMS opt-out</li><li>Check of Twilio account voldoende credit heeft</li><li>Bekijk delivery error in SMS log</li></ul><p><strong>Antwoorden komen niet binnen in Tesoro:</strong></p><ul><li>Verifieer dat 'Two-way SMS' is enabled in settings</li><li>Check of Twilio webhook URL correct is geconfigureerd</li><li>In Twilio Console: <strong>Phone Numbers → [your number] → Messaging → Webhook URL</strong> moet wijzen naar Tesoro</li></ul><p><strong>'Invalid phone number' error:</strong></p><ul><li>Zorg dat nummer juiste formaat heeft: +[landcode][nummer]</li><li>Voorbeeld correct: +34612345678</li><li>Voorbeeld fout: 0612345678 (geen landcode)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>SMS Analytics dashboard:</h4><p>Monitor your SMS performance:</p><ul><li>Go to <strong>Reports → SMS Analytics</strong></li><li>View metrics:  <ul><li><strong>Sent:</strong> Number of sent SMS</li><li><strong>Delivered:</strong> Successfully delivered</li><li><strong>Failed:</strong> Failed (invalid numbers, etc.)</li><li><strong>Reply Rate:</strong> Percentage of replies</li><li><strong>Opt-out Rate:</strong> Percentage of unsubscribes</li><li><strong>Cost per SMS:</strong> Average cost</li></ul></li><li>Filter by period, template, agent, campaign</li></ul><h4>Cost monitoring:</h4><p>Twilio SMS costs vary by country:</p><ul><li>Spain: approx. €0.08 per SMS</li><li>Netherlands: approx. €0.09 per SMS</li><li>International: €0.05-€0.15 per SMS</li></ul><p>View costs in <strong>Settings → Integrations → Twilio → Billing</strong>.</p><h4>Common issues:</h4><p><strong>SMS is not delivered:</strong></p><ul><li>Check if phone number is valid (including country code +34)</li><li>Verify that contact hasn't opted out of SMS</li><li>Check if Twilio account has sufficient credit</li><li>View delivery error in SMS log</li></ul><p><strong>Replies don't come in to Tesoro:</strong></p><ul><li>Verify that 'Two-way SMS' is enabled in settings</li><li>Check if Twilio webhook URL is configured correctly</li><li>In Twilio Console: <strong>Phone Numbers → [your number] → Messaging → Webhook URL</strong> must point to Tesoro</li></ul><p><strong>'Invalid phone number' error:</strong></p><ul><li>Ensure number has correct format: +[country code][number]</li><li>Example correct: +34612345678</li><li>Example wrong: 0612345678 (no country code)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Panel de análisis de SMS:</h4><p>Monitorea el rendimiento de tus SMS:</p><ul><li>Ve a <strong>Reports → SMS Analytics</strong></li><li>Ver métricas:  <ul><li><strong>Sent:</strong> Número de SMS enviados</li><li><strong>Delivered:</strong> Entregados exitosamente</li><li><strong>Failed:</strong> Fallidos (números inválidos, etc.)</li><li><strong>Reply Rate:</strong> Porcentaje de respuestas</li><li><strong>Opt-out Rate:</strong> Porcentaje de cancelaciones de suscripción</li><li><strong>Cost per SMS:</strong> Costo promedio</li></ul></li><li>Filtrar por período, plantilla, agente, campaña</li></ul><h4>Monitoreo de costos:</h4><p>Los costos de SMS de Twilio varían por país:</p><ul><li>España: aprox. €0.08 por SMS</li><li>Países Bajos: aprox. €0.09 por SMS</li><li>Internacional: €0.05-€0.15 por SMS</li></ul><p>Ver costos en <strong>Settings → Integrations → Twilio → Billing</strong>.</p><h4>Problemas comunes:</h4><p><strong>El SMS no se entrega:</strong></p><ul><li>Verifica que el número de teléfono sea válido (incluido código de país +34)</li><li>Verifica que el contacto no haya optado por exclusión de SMS</li><li>Verifica que la cuenta de Twilio tenga crédito suficiente</li><li>Ver error de entrega en registro de SMS</li></ul><p><strong>Las respuestas no llegan a Tesoro:</strong></p><ul><li>Verifica que 'Two-way SMS' esté habilitado en configuración</li><li>Verifica que la URL de webhook de Twilio esté configurada correctamente</li><li>En Twilio Console: <strong>Phone Numbers → [tu número] → Messaging → Webhook URL</strong> debe apuntar a Tesoro</li></ul><p><strong>Error 'Invalid phone number':</strong></p><ul><li>Asegúrate de que el número tenga el formato correcto: +[código de país][número]</li><li>Ejemplo correcto: +34612345678</li><li>Ejemplo incorrecto: 0612345678 (sin código de país)</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "whatsapp-business-api",
+    "gmail-oauth-complete-setup",
+    "api-webhooks-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel kost het versturen van SMS via Twilio?",
+        "en": "How much does sending SMS via Twilio cost?",
+        "es": "¿Cuánto cuesta enviar SMS mediante Twilio?"
+      },
+      "answer": {
+        "nl": "Kosten variëren per land. Spanje: ~€0.08/SMS, Nederland: ~€0.09/SMS. Je betaalt ook €1-2/maand voor het Twilio nummer. Geen maandelijkse kosten - alleen pay-per-use.",
+        "en": "Costs vary by country. Spain: ~€0.08/SMS, Netherlands: ~€0.09/SMS. You also pay €1-2/month for the Twilio number. No monthly fees - only pay-per-use.",
+        "es": "Los costos varían por país. España: ~€0.08/SMS, Países Bajos: ~€0.09/SMS. También pagas €1-2/mes por el número de Twilio. Sin tarifas mensuales - solo pago por uso."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik bulk SMS versturen naar meerdere contacts?",
+        "en": "Can I send bulk SMS to multiple contacts?",
+        "es": "¿Puedo enviar SMS masivos a múltiples contactos?"
+      },
+      "answer": {
+        "nl": "Ja, selecteer meerdere contacts in Tesoro en klik 'Bulk Actions → Send SMS'. Je kunt templates gebruiken met variabelen voor personalisatie. Let op GDPR opt-in vereisten.",
+        "en": "Yes, select multiple contacts in Tesoro and click 'Bulk Actions → Send SMS'. You can use templates with variables for personalization. Note GDPR opt-in requirements.",
+        "es": "Sí, selecciona múltiples contactos en Tesoro y haz clic en 'Bulk Actions → Send SMS'. Puedes usar plantillas con variables para personalización. Ten en cuenta los requisitos de opt-in de GDPR."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden antwoorden van contacts automatisch gekoppeld aan hun profiel?",
+        "en": "Are contact replies automatically linked to their profile?",
+        "es": "¿Las respuestas de contactos se vinculan automáticamente a su perfil?"
+      },
+      "answer": {
+        "nl": "Ja, als 'Two-way SMS' is enabled, worden antwoorden automatisch gekoppeld aan het contact dat antwoordde. Je ziet de volledige conversatie in de Activity Timeline.",
+        "en": "Yes, if 'Two-way SMS' is enabled, replies are automatically linked to the contact who replied. You see the full conversation in the Activity Timeline.",
+        "es": "Sí, si 'Two-way SMS' está habilitado, las respuestas se vinculan automáticamente al contacto que respondió. Ves la conversación completa en la Activity Timeline."
+      }
+    }
+  ]
+}

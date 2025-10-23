@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "id": "contact-complete-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "contact-management", "crm-basics", "getting-started", "tutorial"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro contact management", "crm contacts", "contact database", "managing contacts", "contact organization"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contactbeheer: Complete Gids voor Tesoro CRM",
+      "en": "Contact Management: Complete Guide for Tesoro CRM",
+      "es": "Gestión de Contactos: Guía Completa para Tesoro CRM"
+    },
+    "description": {
+      "nl": "Leer alles over contactbeheer in Tesoro CRM - van het toevoegen van contacten tot geavanceerde organisatie en communicatie.",
+      "en": "Learn everything about contact management in Tesoro CRM - from adding contacts to advanced organization and communication.",
+      "es": "Aprende todo sobre la gestión de contactos en Tesoro CRM - desde agregar contactos hasta la organización y comunicación avanzada."
+    },
+    "icon": "contacts"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "overview",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom contactbeheer belangrijk is",
+        "en": "Why contact management matters",
+        "es": "Por qué la gestión de contactos es importante"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Je contactendatabase is het hart van je vastgoed CRM. Elk contact - of het nu een potentiële koper, verkoper, huidige klant of zakelijke relatie is - vertegenwoordigt een mogelijkheid.</p><p><strong>Met Tesoro CRM kun je:</strong></p><ul><li>Alle contactinformatie centraal opslaan (30+ velden)</li><li>Communicatiegeschiedenis bijhouden (email, WhatsApp, SMS, calls)</li><li>Contacten koppelen aan woningen en deals</li><li>Tags en aangepaste velden gebruiken voor organisatie</li><li>Bulkbewerkingen uitvoeren voor efficiency</li></ul>"
+        },
+        "en": {
+          "text": "<p>Your contact database is the heart of your real estate CRM. Every contact - whether a potential buyer, seller, current client, or business relationship - represents an opportunity.</p><p><strong>With Tesoro CRM you can:</strong></p><ul><li>Store all contact information centrally (30+ fields)</li><li>Track communication history (email, WhatsApp, SMS, calls)</li><li>Link contacts to properties and deals</li><li>Use tags and custom fields for organization</li><li>Perform bulk operations for efficiency</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tu base de datos de contactos es el corazón de tu CRM inmobiliario. Cada contacto - ya sea un comprador potencial, vendedor, cliente actual o relación comercial - representa una oportunidad.</p><p><strong>Con Tesoro CRM puedes:</strong></p><ul><li>Almacenar toda la información de contacto centralmente (más de 30 campos)</li><li>Seguir el historial de comunicación (email, WhatsApp, SMS, llamadas)</li><li>Vincular contactos a propiedades y deals</li><li>Usar etiquetas y campos personalizados para organización</li><li>Realizar operaciones masivas para mayor eficiencia</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "contact-types",
+      "title": {
+        "nl": "Contacttypes in Tesoro",
+        "en": "Contact types in Tesoro",
+        "es": "Tipos de contactos en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro ondersteunt verschillende contacttypes voor flexibele organisatie:</p><h3>Leads</h3><p>Potentiële klanten die interesse hebben getoond maar nog niet gekwalificeerd zijn. Leads hebben extra velden zoals:</p><ul><li>Lead status (Prospect, Qualified, Negotiating, Won, Lost)</li><li>Lead bron (Website, Referral, MLS, Marketing)</li><li>Woning voorkeuren (type, locatie, budget)</li><li>Urgentie niveau</li></ul><h3>Contacts</h3><p>Alle personen in je database - kopers, verkopers, klanten, agenten. Dit is je hoofddatabase met volledige informatie:</p><ul><li>Persoonlijke details (naam, email, telefoon, adres)</li><li>Communicatie voorkeuren</li><li>Activiteiten geschiedenis</li><li>Gekoppelde deals en woningen</li></ul><h3>Relations</h3><p>Zakelijke partners zoals ontwikkelaars, makelaars, banken, leveranciers. Relations hebben specifieke velden voor:</p><ul><li>Bedrijfsinformatie</li><li>Betalingsvoorwaarden</li><li>Meerdere contactpersonen</li><li>Portaal toegang</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro supports different contact types for flexible organization:</p><h3>Leads</h3><p>Potential clients who have shown interest but aren't qualified yet. Leads have extra fields like:</p><ul><li>Lead status (Prospect, Qualified, Negotiating, Won, Lost)</li><li>Lead source (Website, Referral, MLS, Marketing)</li><li>Property preferences (type, location, budget)</li><li>Urgency level</li></ul><h3>Contacts</h3><p>All people in your database - buyers, sellers, clients, agents. This is your main database with complete information:</p><ul><li>Personal details (name, email, phone, address)</li><li>Communication preferences</li><li>Activity history</li><li>Linked deals and properties</li></ul><h3>Relations</h3><p>Business partners like developers, brokers, banks, vendors. Relations have specific fields for:</p><ul><li>Company information</li><li>Payment terms</li><li>Multiple contact persons</li><li>Portal access</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro soporta diferentes tipos de contactos para una organización flexible:</p><h3>Leads</h3><p>Clientes potenciales que han mostrado interés pero aún no están calificados. Los leads tienen campos adicionales como:</p><ul><li>Estado del lead (Prospect, Qualified, Negotiating, Won, Lost)</li><li>Fuente del lead (Website, Referral, MLS, Marketing)</li><li>Preferencias de propiedad (tipo, ubicación, presupuesto)</li><li>Nivel de urgencia</li></ul><h3>Contactos</h3><p>Todas las personas en tu base de datos - compradores, vendedores, clientes, agentes. Esta es tu base de datos principal con información completa:</p><ul><li>Detalles personales (nombre, email, teléfono, dirección)</li><li>Preferencias de comunicación</li><li>Historial de actividades</li><li>Deals y propiedades vinculadas</li></ul><h3>Relations</h3><p>Socios comerciales como desarrolladores, corredores, bancos, proveedores. Las relations tienen campos específicos para:</p><ul><li>Información de empresa</li><li>Términos de pago</li><li>Múltiples personas de contacto</li><li>Acceso al portal</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "contact-fields",
+      "title": {
+        "nl": "Belangrijkste velden uitgelegd",
+        "en": "Key fields explained",
+        "es": "Campos clave explicados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM biedt 30+ velden voor complete contactinformatie:</p><h3>Basis Informatie</h3><ul><li><strong>First name / Last name:</strong> Naam van het contact</li><li><strong>Salutation:</strong> Aanhef (Mr., Mrs., Dr., etc.)</li><li><strong>Email:</strong> Primair emailadres (verplicht voor portaal toegang)</li><li><strong>Phone:</strong> Telefoonnummer (internationaal formaat ondersteund)</li></ul><h3>Locatie & Adres</h3><ul><li><strong>Address:</strong> Volledig adres met Mapbox geocoding</li><li><strong>Coordinates:</strong> Automatisch berekende GPS coördinaten</li><li><strong>City / Country:</strong> Stad en land informatie</li></ul><h3>Zakelijke Informatie</h3><ul><li><strong>Role:</strong> Functie of rol (Agent, Manager, Buyer, etc.)</li><li><strong>Commission %:</strong> Commissie percentage voor makelaars</li><li><strong>Website URL:</strong> Persoonlijke of bedrijfswebsite</li></ul><h3>Organisatie & Status</h3><ul><li><strong>Status:</strong> Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Vrij te gebruiken labels voor organisatie</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp, SMS</li></ul><h3>Portaal Toegang</h3><ul><li><strong>Portal user:</strong> Converteren naar portaal gebruiker</li><li><strong>Portal access:</strong> Toegangsniveau tot klantportaal</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM offers 30+ fields for complete contact information:</p><h3>Basic Information</h3><ul><li><strong>First name / Last name:</strong> Contact's name</li><li><strong>Salutation:</strong> Title (Mr., Mrs., Dr., etc.)</li><li><strong>Email:</strong> Primary email address (required for portal access)</li><li><strong>Phone:</strong> Phone number (international format supported)</li></ul><h3>Location & Address</h3><ul><li><strong>Address:</strong> Full address with Mapbox geocoding</li><li><strong>Coordinates:</strong> Automatically calculated GPS coordinates</li><li><strong>City / Country:</strong> City and country information</li></ul><h3>Business Information</h3><ul><li><strong>Role:</strong> Function or role (Agent, Manager, Buyer, etc.)</li><li><strong>Commission %:</strong> Commission percentage for brokers</li><li><strong>Website URL:</strong> Personal or business website</li></ul><h3>Organization & Status</h3><ul><li><strong>Status:</strong> Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Free-form labels for organization</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp, SMS</li></ul><h3>Portal Access</h3><ul><li><strong>Portal user:</strong> Convert to portal user</li><li><strong>Portal access:</strong> Access level to client portal</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM ofrece más de 30 campos para información completa de contacto:</p><h3>Información Básica</h3><ul><li><strong>First name / Last name:</strong> Nombre del contacto</li><li><strong>Salutation:</strong> Título (Mr., Mrs., Dr., etc.)</li><li><strong>Email:</strong> Dirección de email principal (requerido para acceso al portal)</li><li><strong>Phone:</strong> Número de teléfono (formato internacional soportado)</li></ul><h3>Ubicación y Dirección</h3><ul><li><strong>Address:</strong> Dirección completa con geocodificación de Mapbox</li><li><strong>Coordinates:</strong> Coordenadas GPS calculadas automáticamente</li><li><strong>City / Country:</strong> Información de ciudad y país</li></ul><h3>Información Comercial</h3><ul><li><strong>Role:</strong> Función o rol (Agent, Manager, Buyer, etc.)</li><li><strong>Commission %:</strong> Porcentaje de comisión para corredores</li><li><strong>Website URL:</strong> Sitio web personal o empresarial</li></ul><h3>Organización y Estado</h3><ul><li><strong>Status:</strong> Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Etiquetas de formato libre para organización</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp, SMS</li></ul><h3>Acceso al Portal</h3><ul><li><strong>Portal user:</strong> Convertir a usuario de portal</li><li><strong>Portal access:</strong> Nivel de acceso al portal de cliente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best Practices",
+        "en": "Best Practices",
+        "es": "Mejores Prácticas"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Houd je contactdatabase schoon en up-to-date:</strong></p><ul><li>Vul minimaal naam, email en telefoon in bij elk contact</li><li>Gebruik tags voor snelle segmentatie (VIP, Hot Lead, Follow-up)</li><li>Update status regelmatig (Active → Won/Lost)</li><li>Voeg notities toe na elk gesprek of meeting</li><li>Koppel contacten aan deals en woningen voor volledige context</li><li>Gebruik aangepaste velden voor sector-specifieke informatie</li><li>Verwijder duplicaten regelmatig met de merge functie</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Keep your contact database clean and up-to-date:</strong></p><ul><li>Fill in at least name, email and phone for each contact</li><li>Use tags for quick segmentation (VIP, Hot Lead, Follow-up)</li><li>Update status regularly (Active → Won/Lost)</li><li>Add notes after each conversation or meeting</li><li>Link contacts to deals and properties for full context</li><li>Use custom fields for industry-specific information</li><li>Remove duplicates regularly with the merge function</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Mantén tu base de datos de contactos limpia y actualizada:</strong></p><ul><li>Completa al menos nombre, email y teléfono para cada contacto</li><li>Usa etiquetas para segmentación rápida (VIP, Hot Lead, Follow-up)</li><li>Actualiza el estado regularmente (Active → Won/Lost)</li><li>Agrega notas después de cada conversación o reunión</li><li>Vincula contactos a deals y propiedades para contexto completo</li><li>Usa campos personalizados para información específica del sector</li><li>Elimina duplicados regularmente con la función de fusión</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "creating-contacts-step-by-step",
+    "contact-types-explained",
+    "contact-tags-organization",
+    "contact-advanced-search"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel contacten kan ik opslaan in Tesoro?",
+        "en": "How many contacts can I store in Tesoro?",
+        "es": "¿Cuántos contactos puedo almacenar en Tesoro?"
+      },
+      "answer": {
+        "nl": "Er is geen hard limiet op het aantal contacten. De database is gebouwd om duizenden contacten efficiënt te beheren zonder performance problemen.",
+        "en": "There is no hard limit on the number of contacts. The database is built to efficiently manage thousands of contacts without performance issues.",
+        "es": "No hay un límite estricto en el número de contactos. La base de datos está construida para gestionar eficientemente miles de contactos sin problemas de rendimiento."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik contacten importeren vanuit Excel of CSV?",
+        "en": "Can I import contacts from Excel or CSV?",
+        "es": "¿Puedo importar contactos desde Excel o CSV?"
+      },
+      "answer": {
+        "nl": "Ja, Tesoro ondersteunt bulk import van contacten via CSV en Excel bestanden. Je kunt velden mappen en duplicaten detecteren tijdens het importproces.",
+        "en": "Yes, Tesoro supports bulk import of contacts via CSV and Excel files. You can map fields and detect duplicates during the import process.",
+        "es": "Sí, Tesoro soporta importación masiva de contactos vía archivos CSV y Excel. Puedes mapear campos y detectar duplicados durante el proceso de importación."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen Contacts en Leads?",
+        "en": "What's the difference between Contacts and Leads?",
+        "es": "¿Cuál es la diferencia entre Contactos y Leads?"
+      },
+      "answer": {
+        "nl": "Leads zijn ongekwalificeerde prospects met specifieke woning voorkeuren. Contacts zijn je volledige database met alle personen (kopers, verkopers, klanten). Je kunt een Lead converteren naar een Contact wanneer deze gekwalificeerd is.",
+        "en": "Leads are unqualified prospects with specific property preferences. Contacts are your complete database with all people (buyers, sellers, clients). You can convert a Lead to a Contact when qualified.",
+        "es": "Los Leads son prospectos no calificados con preferencias de propiedad específicas. Los Contactos son tu base de datos completa con todas las personas (compradores, vendedores, clientes). Puedes convertir un Lead a un Contacto cuando esté calificado."
+      }
+    }
+  ]
+}

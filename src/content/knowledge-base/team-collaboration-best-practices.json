@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "id": "team-collaboration-best-practices",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T15:30:00Z",
+    "authorId": "sofia-lopez",
+    "category": "best-practices",
+    "difficulty": "intermediate",
+    "tags": ["team", "collaboration", "communication", "workflow", "teamwork"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop",
+    "keywords": ["team collaboration", "teamwork best practices", "real estate team", "collaboration tools", "team communication"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Effectieve samenwerking in teams",
+      "en": "Effective Team Collaboration Best Practices",
+      "es": "Mejores prácticas de colaboración en equipo efectiva"
+    },
+    "description": {
+      "nl": "Leer hoe je naadloos samenwerkt met je team, kennis deelt, en samen meer deals sluit.",
+      "en": "Learn how to collaborate seamlessly with your team, share knowledge, and close more deals together.",
+      "es": "Aprende cómo colaborar sin problemas con tu equipo, compartir conocimiento y cerrar más deals juntos."
+    },
+    "icon": "groups"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Teams die effectief samenwerken sluiten 30-40% meer deals dan individuele agents. De reden? Gedeelde kennis, load balancing, en complementaire skills. Maar collaboration vereist duidelijke protocols en tools.</p><p>Deze guide toont je hoe je Tesoro CRM gebruikt voor naadloze team collaboration.</p>"
+        },
+        "en": {
+          "text": "<p>Teams that collaborate effectively close 30-40% more deals than individual agents. The reason? Shared knowledge, load balancing, and complementary skills. But collaboration requires clear protocols and tools.</p><p>This guide shows you how to use Tesoro CRM for seamless team collaboration.</p>"
+        },
+        "es": {
+          "text": "<p>Los equipos que colaboran efectivamente cierran 30-40% más deals que agentes individuales. ¿La razón? Conocimiento compartido, balance de carga y habilidades complementarias. Pero la colaboración requiere protocolos y herramientas claras.</p><p>Esta guía te muestra cómo usar Tesoro CRM para colaboración de equipo sin problemas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "deal-ownership",
+      "title": {
+        "nl": "Deal ownership en verantwoordelijkheden",
+        "en": "Deal Ownership and Responsibilities",
+        "es": "Propiedad de deals y responsabilidades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Clear ownership rules</h3><p><strong>Primary agent (Deal Owner):</strong></p><ul><li>First point of contact voor client</li><li>Responsible voor deal progression</li><li>Updates CRM status en notes</li><li>Coordinates viewings en negotiations</li><li>Receives primary commission</li></ul><p><strong>Supporting team members:</strong></p><ul><li>Assist met viewings indien owner niet available</li><li>Provide market insights en expertise</li><li>Cover tijdens vakantie/ziekte</li><li>Receive partial commission (pre-agreed %)</li></ul><p><strong>Team collaboration indicators:</strong></p><ul><li>Tag team members in Tesoro: @mention in notes</li><li>Add collaborators to deal</li><li>Define role: Assistant, Specialist, Manager oversight</li><li>Track contribution for commission split</li></ul><h3>When to involve team</h3><p><strong>High-value deals (>€500K):</strong></p><ul><li>Add manager for oversight en approval</li><li>Senior agent voor negotiations</li><li>Legal/financial specialist indien complex</li></ul><p><strong>Specialist expertise needed:</strong></p><ul><li>Luxury properties: Luxury specialist</li><li>Investment properties: ROI/financial expert</li><li>International buyers: Language specialist</li><li>Commercial properties: Commercial specialist</li></ul><p><strong>Coverage/capacity:</strong></p><ul><li>Multiple viewings same time</li><li>Agent on vacation</li><li>Overload of active deals</li><li>Urgent client need while in meeting</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Clear Ownership Rules</h3><p><strong>Primary Agent (Deal Owner):</strong></p><ul><li>First point of contact for client</li><li>Responsible for deal progression</li><li>Updates CRM status and notes</li><li>Coordinates viewings and negotiations</li><li>Receives primary commission</li></ul><p><strong>Supporting Team Members:</strong></p><ul><li>Assist with viewings if owner not available</li><li>Provide market insights and expertise</li><li>Cover during vacation/sickness</li><li>Receive partial commission (pre-agreed %)</li></ul><p><strong>Team Collaboration Indicators:</strong></p><ul><li>Tag team members in Tesoro: @mention in notes</li><li>Add collaborators to deal</li><li>Define role: Assistant, Specialist, Manager oversight</li><li>Track contribution for commission split</li></ul><h3>When to Involve Team</h3><p><strong>High-value deals (>€500K):</strong></p><ul><li>Add manager for oversight and approval</li><li>Senior agent for negotiations</li><li>Legal/financial specialist if complex</li></ul><p><strong>Specialist Expertise Needed:</strong></p><ul><li>Luxury properties: Luxury specialist</li><li>Investment properties: ROI/financial expert</li><li>International buyers: Language specialist</li><li>Commercial properties: Commercial specialist</li></ul><p><strong>Coverage/Capacity:</strong></p><ul><li>Multiple viewings same time</li><li>Agent on vacation</li><li>Overload of active deals</li><li>Urgent client need while in meeting</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Reglas claras de propiedad</h3><p><strong>Agente primario (propietario de deal):</strong></p><ul><li>Primer punto de contacto para cliente</li><li>Responsable de progresión de deal</li><li>Actualiza estado y notas en CRM</li><li>Coordina visitas y negociaciones</li><li>Recibe comisión primaria</li></ul><p><strong>Miembros del equipo de apoyo:</strong></p><ul><li>Asisten con visitas si propietario no está disponible</li><li>Proporcionan insights de mercado y experiencia</li><li>Cubren durante vacaciones/enfermedad</li><li>Reciben comisión parcial (% pre-acordado)</li></ul><p><strong>Indicadores de colaboración de equipo:</strong></p><ul><li>Etiquetar miembros del equipo en Tesoro: @mención en notas</li><li>Agregar colaboradores al deal</li><li>Definir rol: Asistente, Especialista, Supervisión de gerente</li><li>Rastrear contribución para división de comisión</li></ul><h3>Cuándo involucrar al equipo</h3><p><strong>Deals de alto valor (>€500K):</strong></p><ul><li>Agregar gerente para supervisión y aprobación</li><li>Agente senior para negociaciones</li><li>Especialista legal/financiero si es complejo</li></ul><p><strong>Experiencia especializada necesaria:</strong></p><ul><li>Propiedades de lujo: Especialista en lujo</li><li>Propiedades de inversión: Experto ROI/financiero</li><li>Compradores internacionales: Especialista en idiomas</li><li>Propiedades comerciales: Especialista comercial</li></ul><p><strong>Cobertura/capacidad:</strong></p><ul><li>Múltiples visitas al mismo tiempo</li><li>Agente de vacaciones</li><li>Sobrecarga de deals activos</li><li>Necesidad urgente de cliente mientras está en reunión</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "communication",
+      "title": {
+        "nl": "Team communicatie protocols",
+        "en": "Team Communication Protocols",
+        "es": "Protocolos de comunicación de equipo"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Daily stand-up (15 min, elke morning)</h3><ul><li><strong>Each team member shares:</strong> (2 min each)</li><li>Yesterday's wins/challenges</li><li>Today's top priorities</li><li>Where help is needed</li></ul><h3>Weekly team meeting (60 min, vrijdag)</h3><ul><li><strong>Pipeline review (20 min):</strong> Team KPIs, stuck deals</li><li><strong>Knowledge sharing (20 min):</strong> Market insights, best practices</li><li><strong>Planning (20 min):</strong> Next week's coordination, coverage</li></ul><h3>Communication channels</h3><p><strong>Tesoro CRM (primary):</strong></p><ul><li>All deal-related communication</li><li>@mentions voor specific requests</li><li>Shared notes visible to team</li><li>Task assignments with deadlines</li></ul><p><strong>Instant messaging (urgent only):</strong></p><ul><li>WhatsApp/Slack voor immediate needs</li><li>Client emergencies</li><li>Last-minute schedule changes</li></ul><p><strong>Email (formal/external):</strong></p><ul><li>External communications</li><li>Documentation requiring trail</li><li>Weekly summary reports</li></ul><p><strong>Phone calls (complex/sensitive):</strong></p><ul><li>Complex negotiations strategy</li><li>Sensitive client situations</li><li>Conflict resolution</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Daily Stand-up (15 min, every morning)</h3><ul><li><strong>Each team member shares:</strong> (2 min each)</li><li>Yesterday's wins/challenges</li><li>Today's top priorities</li><li>Where help is needed</li></ul><h3>Weekly Team Meeting (60 min, Friday)</h3><ul><li><strong>Pipeline review (20 min):</strong> Team KPIs, stuck deals</li><li><strong>Knowledge sharing (20 min):</strong> Market insights, best practices</li><li><strong>Planning (20 min):</strong> Next week's coordination, coverage</li></ul><h3>Communication Channels</h3><p><strong>Tesoro CRM (primary):</strong></p><ul><li>All deal-related communication</li><li>@mentions for specific requests</li><li>Shared notes visible to team</li><li>Task assignments with deadlines</li></ul><p><strong>Instant Messaging (urgent only):</strong></p><ul><li>WhatsApp/Slack for immediate needs</li><li>Client emergencies</li><li>Last-minute schedule changes</li></ul><p><strong>Email (formal/external):</strong></p><ul><li>External communications</li><li>Documentation requiring trail</li><li>Weekly summary reports</li></ul><p><strong>Phone Calls (complex/sensitive):</strong></p><ul><li>Complex negotiations strategy</li><li>Sensitive client situations</li><li>Conflict resolution</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Stand-up diario (15 min, cada mañana)</h3><ul><li><strong>Cada miembro del equipo comparte:</strong> (2 min cada uno)</li><li>Victorias/desafíos de ayer</li><li>Prioridades principales de hoy</li><li>Dónde se necesita ayuda</li></ul><h3>Reunión semanal de equipo (60 min, viernes)</h3><ul><li><strong>Revisión de pipeline (20 min):</strong> KPIs de equipo, deals atascados</li><li><strong>Compartir conocimiento (20 min):</strong> Insights de mercado, mejores prácticas</li><li><strong>Planificación (20 min):</strong> Coordinación de próxima semana, cobertura</li></ul><h3>Canales de comunicación</h3><p><strong>Tesoro CRM (primario):</strong></p><ul><li>Toda comunicación relacionada con deals</li><li>@menciones para solicitudes específicas</li><li>Notas compartidas visibles para equipo</li><li>Asignaciones de tareas con plazos</li></ul><p><strong>Mensajería instantánea (solo urgente):</strong></p><ul><li>WhatsApp/Slack para necesidades inmediatas</li><li>Emergencias de clientes</li><li>Cambios de horario de último minuto</li></ul><p><strong>Email (formal/externo):</strong></p><ul><li>Comunicaciones externas</li><li>Documentación que requiere seguimiento</li><li>Informes resumen semanales</li></ul><p><strong>Llamadas telefónicas (complejo/sensible):</strong></p><ul><li>Estrategia de negociaciones complejas</li><li>Situaciones sensibles de clientes</li><li>Resolución de conflictos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "collaboration-rules",
+      "variant": "warning",
+      "title": {
+        "nl": "Team collaboration golden rules",
+        "en": "Team Collaboration Golden Rules",
+        "es": "Reglas de oro de colaboración de equipo"
+      },
+      "content": {
+        "nl": {
+          "text": "<ol><li><strong>Document everything in Tesoro</strong> - If it's not in CRM, team can't help</li><li><strong>Update status daily</strong> - Keep team informed van deal progress</li><li><strong>Use @mentions</strong> - Tag specific people voor actions</li><li><strong>Respond within 4 hours</strong> - Team reliance requires responsiveness</li><li><strong>Share wins publicly</strong> - Celebrate team successes</li><li><strong>Share failures privately</strong> - Learn together without blame</li><li><strong>Respect ownership</strong> - Don't poach colleagues' clients</li><li><strong>Give credit</strong> - Acknowledge team contributions</li></ol>"
+        },
+        "en": {
+          "text": "<ol><li><strong>Document everything in Tesoro</strong> - If it's not in CRM, team can't help</li><li><strong>Update status daily</strong> - Keep team informed of deal progress</li><li><strong>Use @mentions</strong> - Tag specific people for actions</li><li><strong>Respond within 4 hours</strong> - Team reliance requires responsiveness</li><li><strong>Share wins publicly</strong> - Celebrate team successes</li><li><strong>Share failures privately</strong> - Learn together without blame</li><li><strong>Respect ownership</strong> - Don't poach colleagues' clients</li><li><strong>Give credit</strong> - Acknowledge team contributions</li></ol>"
+        },
+        "es": {
+          "text": "<ol><li><strong>Documentar todo en Tesoro</strong> - Si no está en CRM, equipo no puede ayudar</li><li><strong>Actualizar estado diariamente</strong> - Mantener equipo informado del progreso de deal</li><li><strong>Usar @menciones</strong> - Etiquetar personas específicas para acciones</li><li><strong>Responder dentro de 4 horas</strong> - Dependencia de equipo requiere capacidad de respuesta</li><li><strong>Compartir victorias públicamente</strong> - Celebrar éxitos de equipo</li><li><strong>Compartir fracasos privadamente</strong> - Aprender juntos sin culpa</li><li><strong>Respetar propiedad</strong> - No robar clientes de colegas</li><li><strong>Dar crédito</strong> - Reconocer contribuciones de equipo</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-team-collaboration",
+    "user-profile-settings",
+    "contact-tasks-reminders"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe splits ik commissie bij team deals?",
+        "en": "How do I split commission on team deals?",
+        "es": "¿Cómo divido la comisión en deals de equipo?"
+      },
+      "answer": {
+        "nl": "Define splits upfront en document in Tesoro. Common: Primary agent 70-80%, supporting agent 20-30%. Voor equal work: 50/50. Voor specialist input: 10-15%. Key: agree BEFORE work starts, document in deal notes, review samen bij closing. Transparantie voorkomt conflicts.",
+        "en": "Define splits upfront and document in Tesoro. Common: Primary agent 70-80%, supporting agent 20-30%. For equal work: 50/50. For specialist input: 10-15%. Key: agree BEFORE work starts, document in deal notes, review together at closing. Transparency prevents conflicts.",
+        "es": "Define divisiones por adelantado y documenta en Tesoro. Común: Agente primario 70-80%, agente de apoyo 20-30%. Para trabajo igual: 50/50. Para entrada de especialista: 10-15%. Clave: acordar ANTES de que comience el trabajo, documentar en notas de deal, revisar juntos al cierre. Transparencia previene conflictos."
+      }
+    }
+  ]
+}

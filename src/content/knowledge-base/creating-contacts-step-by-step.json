@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "id": "creating-contacts-step-by-step",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:05:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "create-contact", "tutorial", "getting-started", "basics"],
+    "featured": true,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["create contact tesoro", "add contact crm", "new contact", "contact creation", "tesoro tutorial"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contacten Toevoegen: Stap-voor-Stap Tutorial",
+      "en": "Creating Contacts: Step-by-Step Tutorial",
+      "es": "Crear Contactos: Tutorial Paso a Paso"
+    },
+    "description": {
+      "nl": "Leer hoe je snel en efficiënt nieuwe contacten toevoegt aan je Tesoro CRM database met deze complete handleiding.",
+      "en": "Learn how to quickly and efficiently add new contacts to your Tesoro CRM database with this complete guide.",
+      "es": "Aprende cómo agregar nuevos contactos de manera rápida y eficiente a tu base de datos de Tesoro CRM con esta guía completa."
+    },
+    "icon": "person_add"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "quick-start",
+      "variant": "info",
+      "title": {
+        "nl": "Snelle start",
+        "en": "Quick start",
+        "es": "Inicio rápido"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>In 3 stappen een contact toevoegen:</strong></p><ol><li>Klik op <strong>Contacts</strong> in het hoofdmenu</li><li>Klik op <strong>+ Create Contact</strong> knop</li><li>Vul minimaal <strong>naam en email</strong> in en klik <strong>Save</strong></li></ol><p>Dat is alles! Je hebt nu een basiscontact aangemaakt. Lees verder voor alle velden en geavanceerde opties.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Add a contact in 3 steps:</strong></p><ol><li>Click <strong>Contacts</strong> in the main menu</li><li>Click the <strong>+ Create Contact</strong> button</li><li>Fill in at least <strong>name and email</strong> and click <strong>Save</strong></li></ol><p>That's it! You've now created a basic contact. Read on for all fields and advanced options.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Agregar un contacto en 3 pasos:</strong></p><ol><li>Haz clic en <strong>Contacts</strong> en el menú principal</li><li>Haz clic en el botón <strong>+ Create Contact</strong></li><li>Completa al menos <strong>nombre y email</strong> y haz clic en <strong>Save</strong></li></ol><p>¡Eso es todo! Ahora has creado un contacto básico. Continúa leyendo para todos los campos y opciones avanzadas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "detailed-creation-process",
+      "title": {
+        "nl": "Gedetailleerd Creatie Proces",
+        "en": "Detailed Creation Process",
+        "es": "Proceso de Creación Detallado"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Open het Contact Formulier",
+            "en": "Step 1: Open the Contact Form",
+            "es": "Paso 1: Abrir el Formulario de Contacto"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Navigeer naar de Contacts module:</p><ul><li>Klik op <strong>Contacts</strong> in het linker navigatiemenu</li><li>Je ziet nu je contactenlijst (of een lege lijst als je net begint)</li><li>Klik op de blauwe <strong>+ Create Contact</strong> knop rechtsboven</li></ul><p>Het contact formulier opent zich als modal overlay met alle beschikbare velden.</p>"
+            },
+            "en": {
+              "text": "<p>Navigate to the Contacts module:</p><ul><li>Click <strong>Contacts</strong> in the left navigation menu</li><li>You'll now see your contact list (or an empty list if you're just starting)</li><li>Click the blue <strong>+ Create Contact</strong> button in the top right</li></ul><p>The contact form opens as a modal overlay with all available fields.</p>"
+            },
+            "es": {
+              "text": "<p>Navega al módulo de Contactos:</p><ul><li>Haz clic en <strong>Contacts</strong> en el menú de navegación izquierdo</li><li>Ahora verás tu lista de contactos (o una lista vacía si recién estás comenzando)</li><li>Haz clic en el botón azul <strong>+ Create Contact</strong> en la parte superior derecha</li></ul><p>El formulario de contacto se abre como una superposición modal con todos los campos disponibles.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Vul Basis Informatie In",
+            "en": "Step 2: Fill in Basic Information",
+            "es": "Paso 2: Completar Información Básica"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Verplichte velden (minimaal vereist):</strong></p><ul><li><strong>First name:</strong> Voornaam van het contact</li><li><strong>Last name:</strong> Achternaam van het contact</li><li><strong>Email:</strong> Primair emailadres (belangrijk voor communicatie)</li></ul><p><strong>Aanbevolen velden:</strong></p><ul><li><strong>Phone:</strong> Telefoonnummer (met landcode, bijv. +31 6 12345678)</li><li><strong>Salutation:</strong> Aanhef (Mr., Mrs., Dr., Prof.)</li><li><strong>Role:</strong> Functie (Buyer, Seller, Agent, Investor, etc.)</li></ul><p><strong>Tip:</strong> Hoe meer informatie je invult, hoe beter je dit contact later kunt terugvinden en segmenteren.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Required fields (minimum required):</strong></p><ul><li><strong>First name:</strong> Contact's first name</li><li><strong>Last name:</strong> Contact's last name</li><li><strong>Email:</strong> Primary email address (important for communication)</li></ul><p><strong>Recommended fields:</strong></p><ul><li><strong>Phone:</strong> Phone number (with country code, e.g., +31 6 12345678)</li><li><strong>Salutation:</strong> Title (Mr., Mrs., Dr., Prof.)</li><li><strong>Role:</strong> Function (Buyer, Seller, Agent, Investor, etc.)</li></ul><p><strong>Tip:</strong> The more information you fill in, the better you can find and segment this contact later.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Campos obligatorios (mínimo requerido):</strong></p><ul><li><strong>First name:</strong> Nombre del contacto</li><li><strong>Last name:</strong> Apellido del contacto</li><li><strong>Email:</strong> Dirección de email principal (importante para comunicación)</li></ul><p><strong>Campos recomendados:</strong></p><ul><li><strong>Phone:</strong> Número de teléfono (con código de país, ej., +31 6 12345678)</li><li><strong>Salutation:</strong> Título (Mr., Mrs., Dr., Prof.)</li><li><strong>Role:</strong> Función (Buyer, Seller, Agent, Investor, etc.)</li></ul><p><strong>Tip:</strong> Cuanta más información completes, mejor podrás encontrar y segmentar este contacto más tarde.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Locatie & Adresgegevens",
+            "en": "Step 3: Location & Address Details",
+            "es": "Paso 3: Ubicación y Detalles de Dirección"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Vul het adres in voor betere organisatie en mapping:</p><ul><li><strong>Address:</strong> Volledig adres (straat + nummer)</li><li><strong>City:</strong> Stad</li><li><strong>Postal code:</strong> Postcode</li><li><strong>Country:</strong> Land</li></ul><p><strong>Mapbox Geocoding:</strong></p><p>Tesoro gebruikt Mapbox om automatisch GPS coördinaten te berekenen. Dit is handig voor:</p><ul><li>Contacten op een kaart weergeven</li><li>Dichtstbijzijnde woningen suggereren</li><li>Locatie-gebaseerde filters</li></ul><p>Je ziet de coördinaten verschijnen zodra je een volledig adres invult.</p>"
+            },
+            "en": {
+              "text": "<p>Fill in the address for better organization and mapping:</p><ul><li><strong>Address:</strong> Full address (street + number)</li><li><strong>City:</strong> City</li><li><strong>Postal code:</strong> Postal code</li><li><strong>Country:</strong> Country</li></ul><p><strong>Mapbox Geocoding:</strong></p><p>Tesoro uses Mapbox to automatically calculate GPS coordinates. This is useful for:</p><ul><li>Displaying contacts on a map</li><li>Suggesting nearest properties</li><li>Location-based filters</li></ul><p>You'll see the coordinates appear as soon as you enter a complete address.</p>"
+            },
+            "es": {
+              "text": "<p>Completa la dirección para mejor organización y mapeo:</p><ul><li><strong>Address:</strong> Dirección completa (calle + número)</li><li><strong>City:</strong> Ciudad</li><li><strong>Postal code:</strong> Código postal</li><li><strong>Country:</strong> País</li></ul><p><strong>Geocodificación de Mapbox:</strong></p><p>Tesoro usa Mapbox para calcular automáticamente coordenadas GPS. Esto es útil para:</p><ul><li>Mostrar contactos en un mapa</li><li>Sugerir propiedades más cercanas</li><li>Filtros basados en ubicación</li></ul><p>Verás aparecer las coordenadas tan pronto como ingreses una dirección completa.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 4: Organisatie & Tags",
+            "en": "Step 4: Organization & Tags",
+            "es": "Paso 4: Organización y Etiquetas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Organiseer je contact voor eenvoudig terugvinden:</p><ul><li><strong>Status:</strong> Kies uit Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Voeg labels toe zoals 'VIP', 'Hot Lead', 'Follow-up'</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp of SMS</li></ul><p><strong>Tag Tips:</strong></p><ul><li>Gebruik tags voor segmentatie (bijv. 'Luxury Buyer', 'First-time Buyer')</li><li>Tags zijn vrij te kiezen - maak je eigen systeem</li><li>Je kunt meerdere tags per contact gebruiken</li><li>Tags zijn doorzoekbaar en filterbaar</li></ul>"
+            },
+            "en": {
+              "text": "<p>Organize your contact for easy retrieval:</p><ul><li><strong>Status:</strong> Choose from Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Add labels like 'VIP', 'Hot Lead', 'Follow-up'</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp or SMS</li></ul><p><strong>Tag Tips:</strong></p><ul><li>Use tags for segmentation (e.g., 'Luxury Buyer', 'First-time Buyer')</li><li>Tags are free-form - create your own system</li><li>You can use multiple tags per contact</li><li>Tags are searchable and filterable</li></ul>"
+            },
+            "es": {
+              "text": "<p>Organiza tu contacto para fácil recuperación:</p><ul><li><strong>Status:</strong> Elige entre Active, Inactive, Lost, Won</li><li><strong>Tags/Hashtags:</strong> Agrega etiquetas como 'VIP', 'Hot Lead', 'Follow-up'</li><li><strong>Preferred communication:</strong> Email, Phone, WhatsApp o SMS</li></ul><p><strong>Consejos de Etiquetas:</strong></p><ul><li>Usa etiquetas para segmentación (ej., 'Luxury Buyer', 'First-time Buyer')</li><li>Las etiquetas son de formato libre - crea tu propio sistema</li><li>Puedes usar múltiples etiquetas por contacto</li><li>Las etiquetas son buscables y filtrables</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 5: Opslaan & Koppelen",
+            "en": "Step 5: Save & Link",
+            "es": "Paso 5: Guardar y Vincular"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Finaliseer je contact:</p><ol><li>Controleer of alle verplichte velden zijn ingevuld</li><li>Klik op <strong>Save Contact</strong> onderaan het formulier</li><li>Je contact wordt opgeslagen en verschijnt in je contactenlijst</li></ol><p><strong>Direct na het opslaan kun je:</strong></p><ul><li>Het contact koppelen aan een deal (Create Deal)</li><li>Een woning toewijzen (Link Property)</li><li>Een taak toevoegen (Add Task)</li><li>Een notitie schrijven (Add Note)</li><li>Een email sturen (Send Email)</li></ul><p>Je contact krijgt automatisch een uniek ID en wordt toegevoegd aan je database.</p>"
+            },
+            "en": {
+              "text": "<p>Finalize your contact:</p><ol><li>Check that all required fields are filled in</li><li>Click <strong>Save Contact</strong> at the bottom of the form</li><li>Your contact is saved and appears in your contact list</li></ol><p><strong>Immediately after saving you can:</strong></p><ul><li>Link the contact to a deal (Create Deal)</li><li>Assign a property (Link Property)</li><li>Add a task (Add Task)</li><li>Write a note (Add Note)</li><li>Send an email (Send Email)</li></ul><p>Your contact automatically gets a unique ID and is added to your database.</p>"
+            },
+            "es": {
+              "text": "<p>Finaliza tu contacto:</p><ol><li>Verifica que todos los campos obligatorios estén completados</li><li>Haz clic en <strong>Save Contact</strong> en la parte inferior del formulario</li><li>Tu contacto se guarda y aparece en tu lista de contactos</li></ol><p><strong>Inmediatamente después de guardar puedes:</strong></p><ul><li>Vincular el contacto a un deal (Create Deal)</li><li>Asignar una propiedad (Link Property)</li><li>Agregar una tarea (Add Task)</li><li>Escribir una nota (Add Note)</li><li>Enviar un email (Send Email)</li></ul><p>Tu contacto obtiene automáticamente un ID único y se agrega a tu base de datos.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "advanced-fields",
+      "variant": "info",
+      "title": {
+        "nl": "Geavanceerde velden (optioneel)",
+        "en": "Advanced fields (optional)",
+        "es": "Campos avanzados (opcional)"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor makelaars en zakelijke contacten:</strong></p><ul><li><strong>Commission %:</strong> Commissie percentage voor samenwerking</li><li><strong>Website URL:</strong> Link naar persoonlijke of bedrijfswebsite</li><li><strong>Company:</strong> Bedrijfsnaam (als zakelijk contact)</li></ul><p><strong>Voor portaal toegang:</strong></p><ul><li><strong>Portal user:</strong> Converteer naar portaal gebruiker</li><li><strong>Access level:</strong> Wat mag deze gebruiker zien in het klantportaal</li></ul><p><strong>Custom fields:</strong></p><p>Je kunt ook aangepaste velden toevoegen in Settings > Custom Fields voor sector-specifieke informatie zoals:</p><ul><li>Preferred property type</li><li>Budget range</li><li>Move-in date</li><li>Source of referral</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>For brokers and business contacts:</strong></p><ul><li><strong>Commission %:</strong> Commission percentage for collaboration</li><li><strong>Website URL:</strong> Link to personal or business website</li><li><strong>Company:</strong> Company name (if business contact)</li></ul><p><strong>For portal access:</strong></p><ul><li><strong>Portal user:</strong> Convert to portal user</li><li><strong>Access level:</strong> What this user can see in the client portal</li></ul><p><strong>Custom fields:</strong></p><p>You can also add custom fields in Settings > Custom Fields for industry-specific information like:</p><ul><li>Preferred property type</li><li>Budget range</li><li>Move-in date</li><li>Source of referral</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Para corredores y contactos comerciales:</strong></p><ul><li><strong>Commission %:</strong> Porcentaje de comisión para colaboración</li><li><strong>Website URL:</strong> Enlace a sitio web personal o empresarial</li><li><strong>Company:</strong> Nombre de empresa (si es contacto comercial)</li></ul><p><strong>Para acceso al portal:</strong></p><ul><li><strong>Portal user:</strong> Convertir a usuario de portal</li><li><strong>Access level:</strong> Qué puede ver este usuario en el portal de cliente</li></ul><p><strong>Campos personalizados:</strong></p><p>También puedes agregar campos personalizados en Settings > Custom Fields para información específica del sector como:</p><ul><li>Tipo de propiedad preferida</li><li>Rango de presupuesto</li><li>Fecha de mudanza</li><li>Fuente de referencia</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-types-explained",
+    "contact-custom-fields-guide",
+    "contact-bulk-operations"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Welke velden zijn verplicht bij het aanmaken van een contact?",
+        "en": "Which fields are required when creating a contact?",
+        "es": "¿Qué campos son obligatorios al crear un contacto?"
+      },
+      "answer": {
+        "nl": "Minimaal first name, last name en email zijn verplicht. Alle andere velden zijn optioneel, maar hoe meer je invult, hoe beter je contacten kunt organiseren en terugvinden.",
+        "en": "At minimum, first name, last name, and email are required. All other fields are optional, but the more you fill in, the better you can organize and find contacts.",
+        "es": "Como mínimo, se requieren first name, last name y email. Todos los demás campos son opcionales, pero cuanto más completes, mejor podrás organizar y encontrar contactos."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een contact later bewerken?",
+        "en": "Can I edit a contact later?",
+        "es": "¿Puedo editar un contacto más tarde?"
+      },
+      "answer": {
+        "nl": "Ja, absoluut. Klik op een contact in de lijst om de detail pagina te openen. Daar zie je een 'Edit' knop om alle velden te wijzigen. Wijzigingen worden automatisch opgeslagen in de activity history.",
+        "en": "Yes, absolutely. Click on a contact in the list to open the detail page. There you'll see an 'Edit' button to modify all fields. Changes are automatically saved in the activity history.",
+        "es": "Sí, absolutamente. Haz clic en un contacto en la lista para abrir la página de detalles. Allí verás un botón 'Edit' para modificar todos los campos. Los cambios se guardan automáticamente en el historial de actividad."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe voeg ik meerdere contacten tegelijk toe?",
+        "en": "How do I add multiple contacts at once?",
+        "es": "¿Cómo agrego múltiples contactos a la vez?"
+      },
+      "answer": {
+        "nl": "Gebruik de bulk import functie. Ga naar Contacts > Import en upload een CSV of Excel bestand met je contacten. Je kunt velden mappen en duplicaten detecteren tijdens het importproces.",
+        "en": "Use the bulk import function. Go to Contacts > Import and upload a CSV or Excel file with your contacts. You can map fields and detect duplicates during the import process.",
+        "es": "Usa la función de importación masiva. Ve a Contacts > Import y carga un archivo CSV o Excel con tus contactos. Puedes mapear campos y detectar duplicados durante el proceso de importación."
+      }
+    }
+  ]
+}

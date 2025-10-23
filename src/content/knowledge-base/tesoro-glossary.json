@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "id": "tesoro-glossary",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["glossary", "terminology", "definitions", "getting-started", "vocabulary"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro glossary", "crm terminology", "real estate terms", "definitions", "vocabulary"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Tesoro woordenlijst: belangrijkste termen uitgelegd",
+      "en": "Tesoro Glossary: Key Terms Explained",
+      "es": "Glosario de Tesoro: términos clave explicados"
+    },
+    "description": {
+      "nl": "Een compleet overzicht van alle belangrijke termen, begrippen en jargon die je tegenkomt in Tesoro CRM.",
+      "en": "A complete overview of all important terms, concepts and jargon you encounter in Tesoro CRM.",
+      "es": "Una vista general completa de todos los términos importantes, conceptos y jerga que encuentras en Tesoro CRM."
+    },
+    "icon": "book"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Nieuw bij CRM's of vastgoed software? Deze woordenlijst legt alle belangrijke termen uit die je tegenkomt in Tesoro. Gebruik deze gids als naslagwerk wanneer je tegen onbekende begrippen aanloopt.</p>"
+        },
+        "en": {
+          "text": "<p>New to CRMs or real estate software? This glossary explains all important terms you encounter in Tesoro. Use this guide as a reference when you come across unfamiliar concepts.</p>"
+        },
+        "es": {
+          "text": "<p>¿Nuevo en CRMs o software inmobiliario? Este glosario explica todos los términos importantes que encuentras en Tesoro. Usa esta guía como referencia cuando encuentres conceptos desconocidos.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "core-concepts",
+      "title": {
+        "nl": "Kern concepten",
+        "en": "Core Concepts",
+        "es": "Conceptos básicos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Contact</h4><p>Een persoon in je netwerk. Kan zijn: buyer, seller, investor, partner, referral source. Elk contact heeft een profiel met contact details, voorkeuren, communicatie geschiedenis en gekoppelde deals.</p><h4>Lead</h4><p>Een potentiële client die interesse heeft getoond maar nog niet gekwalificeerd is als serious buyer/seller. Leads worden gekwalificeerd en omgezet naar Deals. Een lead heeft meestal minder informatie dan een volledig contact.</p><h4>Deal</h4><p>Een actieve sales opportunity. Een deal representeert een specifieke transactie die je probeert te sluiten (bijv. \"John Smith wil apartment kopen in Barcelona\"). Deals hebben stages, value, expected close date, en gekoppelde properties.</p><h4>Property</h4><p>Een vastgoedobject (apartment, villa, commercial space, land, etc.). Elke property heeft details zoals adres, prijs, specificaties, foto's, status (for sale, sold, etc.), en kan gekoppeld zijn aan meerdere deals.</p><h4>Deal Pipeline</h4><p>De visuele weergave van al je deals, georganiseerd in stages (bijv. First Contact → Viewing → Negotiation → Closed). Ook wel Sales Pipeline genoemd.</p><h4>Relations</h4><p>Organisaties/bedrijven in je netwerk. Bijv. development companies, investment firms, partner agencies. Relations kunnen meerdere contacts bevatten (employees van dat bedrijf).</p>"
+        },
+        "en": {
+          "text": "<h4>Contact</h4><p>A person in your network. Can be: buyer, seller, investor, partner, referral source. Each contact has a profile with contact details, preferences, communication history and linked deals.</p><h4>Lead</h4><p>A potential client who has shown interest but is not yet qualified as serious buyer/seller. Leads are qualified and converted to Deals. A lead usually has less information than a complete contact.</p><h4>Deal</h4><p>An active sales opportunity. A deal represents a specific transaction you're trying to close (e.g. \"John Smith wants to buy apartment in Barcelona\"). Deals have stages, value, expected close date, and linked properties.</p><h4>Property</h4><p>A real estate object (apartment, villa, commercial space, land, etc.). Each property has details like address, price, specifications, photos, status (for sale, sold, etc.), and can be linked to multiple deals.</p><h4>Deal Pipeline</h4><p>The visual representation of all your deals, organized in stages (e.g. First Contact → Viewing → Negotiation → Closed). Also called Sales Pipeline.</p><h4>Relations</h4><p>Organizations/companies in your network. E.g. development companies, investment firms, partner agencies. Relations can contain multiple contacts (employees of that company).</p>"
+        },
+        "es": {
+          "text": "<h4>Contacto</h4><p>Una persona en tu red. Puede ser: comprador, vendedor, inversor, socio, fuente de referencia. Cada contacto tiene un perfil con detalles de contacto, preferencias, historial de comunicación y deals vinculados.</p><h4>Lead</h4><p>Un cliente potencial que ha mostrado interés pero aún no está calificado como comprador/vendedor serio. Los leads se califican y convierten en Deals. Un lead generalmente tiene menos información que un contacto completo.</p><h4>Deal</h4><p>Una oportunidad de venta activa. Un deal representa una transacción específica que estás tratando de cerrar (ej. \"John Smith quiere comprar apartamento en Barcelona\"). Los deals tienen etapas, valor, fecha de cierre esperada y propiedades vinculadas.</p><h4>Propiedad</h4><p>Un objeto inmobiliario (apartamento, villa, espacio comercial, terreno, etc.). Cada propiedad tiene detalles como dirección, precio, especificaciones, fotos, estado (en venta, vendida, etc.) y puede estar vinculada a múltiples deals.</p><h4>Pipeline de deals</h4><p>La representación visual de todos tus deals, organizados en etapas (ej. First Contact → Viewing → Negotiation → Closed). También llamado Sales Pipeline.</p><h4>Relaciones</h4><p>Organizaciones/empresas en tu red. Ej. empresas de desarrollo, firmas de inversión, agencias asociadas. Las relaciones pueden contener múltiples contactos (empleados de esa empresa).</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "deal-terminology",
+      "title": {
+        "nl": "Deal terminologie",
+        "en": "Deal Terminology",
+        "es": "Terminología de deals"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Deal Stage</h4><p>De huidige fase waar een deal in zit. Standaard stages: First Contact, Needs Analysis, Viewing Scheduled, Viewed, Negotiation, Contract Sent, Signed, Closed Won/Lost. Je kunt custom stages maken in Settings.</p><h4>Deal Value</h4><p>De verwachte transactiewaarde (commission) die je verdient aan deze deal. Niet de property prijs, maar jouw earnings.</p><h4>Expected Close Date</h4><p>De datum waarop je verwacht de deal te sluiten. Gebruikt voor forecasting en pipeline metrics.</p><h4>Won Deal</h4><p>Een succesvol gesloten deal - de transactie is compleet, contract getekend, commission verdient.</p><h4>Lost Deal</h4><p>Een deal die niet doorgaat. Redenen kunnen zijn: client koopt elders, prijs te hoog, timing niet goed, etc. Lost deals blijven in je systeem voor analytics.</p><h4>Deal Probability</h4><p>Percentage kans dat deze deal succesvol wordt gesloten. Vaak gekoppeld aan stage (bijv. Viewing = 30%, Negotiation = 60%, Contract Sent = 80%).</p><h4>Pipeline Velocity</h4><p>Hoe snel deals door je pipeline bewegen. Gemeten in dagen per stage of totale cycle time.</p>"
+        },
+        "en": {
+          "text": "<h4>Deal Stage</h4><p>The current phase a deal is in. Standard stages: First Contact, Needs Analysis, Viewing Scheduled, Viewed, Negotiation, Contract Sent, Signed, Closed Won/Lost. You can create custom stages in Settings.</p><h4>Deal Value</h4><p>The expected transaction value (commission) you earn from this deal. Not the property price, but your earnings.</p><h4>Expected Close Date</h4><p>The date you expect to close the deal. Used for forecasting and pipeline metrics.</p><h4>Won Deal</h4><p>A successfully closed deal - the transaction is complete, contract signed, commission earned.</p><h4>Lost Deal</h4><p>A deal that doesn't go through. Reasons can be: client buys elsewhere, price too high, timing not right, etc. Lost deals stay in your system for analytics.</p><h4>Deal Probability</h4><p>Percentage chance this deal will be successfully closed. Often linked to stage (e.g. Viewing = 30%, Negotiation = 60%, Contract Sent = 80%).</p><h4>Pipeline Velocity</h4><p>How fast deals move through your pipeline. Measured in days per stage or total cycle time.</p>"
+        },
+        "es": {
+          "text": "<h4>Etapa de deal</h4><p>La fase actual en la que está un deal. Etapas estándar: First Contact, Needs Analysis, Viewing Scheduled, Viewed, Negotiation, Contract Sent, Signed, Closed Won/Lost. Puedes crear etapas personalizadas en Settings.</p><h4>Valor del deal</h4><p>El valor de transacción esperado (comisión) que ganas de este deal. No el precio de la propiedad, sino tus ganancias.</p><h4>Fecha de cierre esperada</h4><p>La fecha en que esperas cerrar el deal. Usado para pronósticos y métricas de pipeline.</p><h4>Deal ganado</h4><p>Un deal cerrado exitosamente - la transacción está completa, contrato firmado, comisión ganada.</p><h4>Deal perdido</h4><p>Un deal que no se concreta. Las razones pueden ser: cliente compra en otro lugar, precio demasiado alto, timing no correcto, etc. Los deals perdidos permanecen en tu sistema para análisis.</p><h4>Probabilidad de deal</h4><p>Porcentaje de probabilidad de que este deal se cierre exitosamente. A menudo vinculado a etapa (ej. Viewing = 30%, Negotiation = 60%, Contract Sent = 80%).</p><h4>Velocidad de pipeline</h4><p>Qué tan rápido se mueven los deals por tu pipeline. Medido en días por etapa o tiempo total de ciclo.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "property-terminology",
+      "title": {
+        "nl": "Property terminologie",
+        "en": "Property Terminology",
+        "es": "Terminología de propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Listing</h4><p>Een property die actief op de markt is (for sale of for rent). Ook wel \"active listing\" genoemd.</p><h4>Property Status</h4><p>De huidige staat van een property: Draft (niet klaar), Active (op markt), Under Offer (bod ontvangen), Sold/Rented (transactie compleet), Off Market (tijdelijk niet beschikbaar).</p><h4>MLS (Multiple Listing Service)</h4><p>Een platform waar properties worden gedeeld tussen makelaars. Tesoro integreert met MLS feeds zoals Idealista, Fotocasa voor automatische property imports.</p><h4>Property Type</h4><p>Het type vastgoed: Apartment, Villa, Townhouse, Commercial Property, Land, etc. Belangrijk voor matching met buyer preferences.</p><h4>Transaction Type</h4><p>Of de property for sale is, for rent, transfer, of rental with purchase option.</p><h4>Time on Market</h4><p>Hoe lang een property al actief te koop/huur staat. Belangrijke metric - lange time on market kan duiden op overpricing.</p><h4>Property Matching</h4><p>Het proces waarbij properties worden gekoppeld aan buyers/deals op basis van hun voorkeuren (budget, location, size, features). Tesoro doet dit automatisch met AI.</p>"
+        },
+        "en": {
+          "text": "<h4>Listing</h4><p>A property actively on the market (for sale or for rent). Also called \"active listing\".</p><h4>Property Status</h4><p>The current state of a property: Draft (not ready), Active (on market), Under Offer (bid received), Sold/Rented (transaction complete), Off Market (temporarily unavailable).</p><h4>MLS (Multiple Listing Service)</h4><p>A platform where properties are shared between agents. Tesoro integrates with MLS feeds like Idealista, Fotocasa for automatic property imports.</p><h4>Property Type</h4><p>The type of real estate: Apartment, Villa, Townhouse, Commercial Property, Land, etc. Important for matching with buyer preferences.</p><h4>Transaction Type</h4><p>Whether the property is for sale, for rent, transfer, or rental with purchase option.</p><h4>Time on Market</h4><p>How long a property has been actively for sale/rent. Important metric - long time on market can indicate overpricing.</p><h4>Property Matching</h4><p>The process where properties are linked to buyers/deals based on their preferences (budget, location, size, features). Tesoro does this automatically with AI.</p>"
+        },
+        "es": {
+          "text": "<h4>Listing</h4><p>Una propiedad activamente en el mercado (en venta o alquiler). También llamado \"active listing\".</p><h4>Estado de propiedad</h4><p>El estado actual de una propiedad: Draft (no lista), Active (en mercado), Under Offer (oferta recibida), Sold/Rented (transacción completa), Off Market (temporalmente no disponible).</p><h4>MLS (Multiple Listing Service)</h4><p>Una plataforma donde las propiedades se comparten entre agentes. Tesoro se integra con feeds MLS como Idealista, Fotocasa para importaciones automáticas de propiedades.</p><h4>Tipo de propiedad</h4><p>El tipo de bienes raíces: Apartment, Villa, Townhouse, Commercial Property, Land, etc. Importante para emparejar con preferencias del comprador.</p><h4>Tipo de transacción</h4><p>Si la propiedad está en venta, alquiler, transferencia o alquiler con opción de compra.</p><h4>Tiempo en el mercado</h4><p>Cuánto tiempo ha estado una propiedad activamente en venta/alquiler. Métrica importante - mucho tiempo en el mercado puede indicar sobreprecio.</p><h4>Matching de propiedades</h4><p>El proceso donde las propiedades se vinculan a compradores/deals según sus preferencias (presupuesto, ubicación, tamaño, características). Tesoro hace esto automáticamente con IA.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "features-terminology",
+      "title": {
+        "nl": "Features terminologie",
+        "en": "Features Terminology",
+        "es": "Terminología de características"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>AI Matching</h4><p>Tesoro's algoritme dat automatisch de beste properties vindt voor een deal/buyer op basis van hun requirements. Analyseert prijs, location, type, features en geeft match percentages.</p><h4>Client Portal</h4><p>Een beveiligde online portal waar clients kunnen inloggen om hun properties te bekijken, documenten te downloaden, en met je te communiceren. Elk contact kan portal access krijgen.</p><h4>Activity</h4><p>Een actie die uitgevoerd moet worden: task, call, meeting, follow-up. Activities hebben een due date en kunnen gekoppeld zijn aan contacts, deals, of properties.</p><h4>Timeline</h4><p>De chronologische geschiedenis van alles wat gebeurd is met een contact, deal, of property. Laat zien: emails, calls, notes, meetings, status changes.</p><h4>Tag</h4><p>Een label dat je aan contacts, properties of deals kunt toevoegen voor organisatie en filtering. Bijv. \"VIP\", \"Hot Lead\", \"Luxury\", \"First-time Buyer\".</p><h4>Custom Field</h4><p>Een extra veld dat je toevoegt aan contacts, properties of deals om specifieke informatie vast te leggen die niet in standaard velden past.</p><h4>Automation</h4><p>Een regel die automatisch acties uitvoert wanneer iets gebeurt. Bijv. \"Stuur welkom email wanneer nieuwe contact wordt toegevoegd\" of \"Maak task aan 3 dagen na viewing\".</p><h4>Template</h4><p>Een vooraf geschreven email, document, of contract die je hergebruikt met kleine aanpassingen. Templates hebben placeholders die automatisch worden ingevuld (bijv. {contact.name}).</p>"
+        },
+        "en": {
+          "text": "<h4>AI Matching</h4><p>Tesoro's algorithm that automatically finds the best properties for a deal/buyer based on their requirements. Analyzes price, location, type, features and gives match percentages.</p><h4>Client Portal</h4><p>A secure online portal where clients can log in to view their properties, download documents, and communicate with you. Each contact can get portal access.</p><h4>Activity</h4><p>An action that needs to be performed: task, call, meeting, follow-up. Activities have a due date and can be linked to contacts, deals, or properties.</p><h4>Timeline</h4><p>The chronological history of everything that happened with a contact, deal, or property. Shows: emails, calls, notes, meetings, status changes.</p><h4>Tag</h4><p>A label you can add to contacts, properties or deals for organization and filtering. E.g. \"VIP\", \"Hot Lead\", \"Luxury\", \"First-time Buyer\".</p><h4>Custom Field</h4><p>An extra field you add to contacts, properties or deals to capture specific information that doesn't fit in standard fields.</p><h4>Automation</h4><p>A rule that automatically performs actions when something happens. E.g. \"Send welcome email when new contact is added\" or \"Create task 3 days after viewing\".</p><h4>Template</h4><p>A pre-written email, document, or contract you reuse with small adjustments. Templates have placeholders that are automatically filled (e.g. {contact.name}).</p>"
+        },
+        "es": {
+          "text": "<h4>Matching de IA</h4><p>El algoritmo de Tesoro que encuentra automáticamente las mejores propiedades para un deal/comprador según sus requisitos. Analiza precio, ubicación, tipo, características y da porcentajes de coincidencia.</p><h4>Portal del cliente</h4><p>Un portal en línea seguro donde los clientes pueden iniciar sesión para ver sus propiedades, descargar documentos y comunicarse contigo. Cada contacto puede obtener acceso al portal.</p><h4>Actividad</h4><p>Una acción que debe realizarse: tarea, llamada, reunión, seguimiento. Las actividades tienen una fecha de vencimiento y pueden vincularse a contactos, deals o propiedades.</p><h4>Línea de tiempo</h4><p>El historial cronológico de todo lo que sucedió con un contacto, deal o propiedad. Muestra: emails, llamadas, notas, reuniones, cambios de estado.</p><h4>Etiqueta</h4><p>Una etiqueta que puedes agregar a contactos, propiedades o deals para organización y filtrado. Ej. \"VIP\", \"Hot Lead\", \"Luxury\", \"First-time Buyer\".</p><h4>Campo personalizado</h4><p>Un campo extra que agregas a contactos, propiedades o deals para capturar información específica que no encaja en campos estándar.</p><h4>Automatización</h4><p>Una regla que realiza acciones automáticamente cuando algo sucede. Ej. \"Enviar email de bienvenida cuando se agrega nuevo contacto\" o \"Crear tarea 3 días después de la visita\".</p><h4>Plantilla</h4><p>Un email, documento o contrato preescrito que reutilizas con pequeños ajustes. Las plantillas tienen marcadores de posición que se completan automáticamente (ej. {contact.name}).</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "metrics-terminology",
+      "title": {
+        "nl": "Metrics terminologie",
+        "en": "Metrics Terminology",
+        "es": "Terminología de métricas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>KPI (Key Performance Indicator)</h4><p>Een belangrijke metric die je prestaties meet. In Tesoro: aantal deals, deal value, conversion rate, time to close, etc.</p><h4>Conversion Rate</h4><p>Percentage van leads die deals worden, of deals die won worden. Bijv. als je 100 leads hebt en 20 worden deals = 20% conversion rate.</p><h4>Average Deal Value</h4><p>De gemiddelde waarde (commission) van je closed deals. Berekend als: Total deal value / Number of deals.</p><h4>Win Rate</h4><p>Percentage deals die won worden vs. lost. Bijv. 30 won deals en 10 lost deals = 75% win rate.</p><h4>Sales Cycle</h4><p>De gemiddelde tijd van first contact tot closed deal. Gemeten in dagen of weken.</p><h4>Pipeline Coverage</h4><p>De totale value van je active deals gedeeld door je sales target. Ideaal is 3x-4x coverage (€300K pipeline voor €100K target).</p><h4>Activity Rate</h4><p>Hoeveel activities (calls, emails, meetings) je per dag/week uitvoert. Hogere activity rate leidt vaak tot meer closed deals.</p>"
+        },
+        "en": {
+          "text": "<h4>KPI (Key Performance Indicator)</h4><p>An important metric that measures your performance. In Tesoro: number of deals, deal value, conversion rate, time to close, etc.</p><h4>Conversion Rate</h4><p>Percentage of leads that become deals, or deals that become won. E.g. if you have 100 leads and 20 become deals = 20% conversion rate.</p><h4>Average Deal Value</h4><p>The average value (commission) of your closed deals. Calculated as: Total deal value / Number of deals.</p><h4>Win Rate</h4><p>Percentage of deals that are won vs. lost. E.g. 30 won deals and 10 lost deals = 75% win rate.</p><h4>Sales Cycle</h4><p>The average time from first contact to closed deal. Measured in days or weeks.</p><h4>Pipeline Coverage</h4><p>The total value of your active deals divided by your sales target. Ideal is 3x-4x coverage (€300K pipeline for €100K target).</p><h4>Activity Rate</h4><p>How many activities (calls, emails, meetings) you perform per day/week. Higher activity rate often leads to more closed deals.</p>"
+        },
+        "es": {
+          "text": "<h4>KPI (Key Performance Indicator)</h4><p>Una métrica importante que mide tu desempeño. En Tesoro: número de deals, valor del deal, tasa de conversión, tiempo para cerrar, etc.</p><h4>Tasa de conversión</h4><p>Porcentaje de leads que se convierten en deals, o deals que se ganan. Ej. si tienes 100 leads y 20 se convierten en deals = 20% de tasa de conversión.</p><h4>Valor promedio de deal</h4><p>El valor promedio (comisión) de tus deals cerrados. Calculado como: Valor total de deal / Número de deals.</p><h4>Tasa de ganancia</h4><p>Porcentaje de deals que se ganan vs. se pierden. Ej. 30 deals ganados y 10 perdidos = 75% de tasa de ganancia.</p><h4>Ciclo de ventas</h4><p>El tiempo promedio desde el primer contacto hasta el deal cerrado. Medido en días o semanas.</p><h4>Cobertura de pipeline</h4><p>El valor total de tus deals activos dividido por tu objetivo de ventas. Lo ideal es una cobertura de 3x-4x (pipeline de €300K para objetivo de €100K).</p><h4>Tasa de actividad</h4><p>Cuántas actividades (llamadas, emails, reuniones) realizas por día/semana. Una tasa de actividad más alta a menudo conduce a más deals cerrados.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "welcome-to-tesoro",
+    "dashboard-overview",
+    "getting-help-support"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat is het verschil tussen een Lead en een Deal?",
+        "en": "What's the difference between a Lead and a Deal?",
+        "es": "¿Cuál es la diferencia entre un Lead y un Deal?"
+      },
+      "answer": {
+        "nl": "Een Lead is een potentiële client die interesse heeft getoond maar nog niet gekwalificeerd is. Een Deal is een actieve sales opportunity waar je actief aan werkt met concrete voorkeuren en property matching. Leads worden gekwalificeerd en omgezet naar Deals.",
+        "en": "A Lead is a potential client who has shown interest but is not yet qualified. A Deal is an active sales opportunity you're actively working on with concrete preferences and property matching. Leads are qualified and converted to Deals.",
+        "es": "Un Lead es un cliente potencial que ha mostrado interés pero aún no está calificado. Un Deal es una oportunidad de venta activa en la que estás trabajando activamente con preferencias concretas y matching de propiedades. Los Leads se califican y convierten en Deals."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat betekent 'Time on Market'?",
+        "en": "What does 'Time on Market' mean?",
+        "es": "¿Qué significa 'Time on Market'?"
+      },
+      "answer": {
+        "nl": "Time on Market is het aantal dagen dat een property actief te koop of te huur staat. Een lange Time on Market (bijv. > 90 dagen) kan duiden op overpricing of andere problemen. Een korte Time on Market suggereert dat de property goed geprijsd is.",
+        "en": "Time on Market is the number of days a property has been actively for sale or rent. A long Time on Market (e.g. > 90 days) may indicate overpricing or other issues. A short Time on Market suggests the property is well-priced.",
+        "es": "Time on Market es el número de días que una propiedad ha estado activamente en venta o alquiler. Un Time on Market largo (ej. > 90 días) puede indicar sobreprecio u otros problemas. Un Time on Market corto sugiere que la propiedad tiene buen precio."
+      }
+    }
+  ]
+}

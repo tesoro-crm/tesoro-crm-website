@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "id": "deal-automation-workflows",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T11:45:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop",
+    "keywords": ["deal automation", "workflow automation", "automated tasks", "deal workflows", "sales automation"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Deal automation en workflows",
+      "en": "Deal Automation and Workflows",
+      "es": "Automatización y flujos de trabajo de deals"
+    },
+    "description": {
+      "nl": "Leer hoe je repetitieve tasks automated, workflow triggers instelt, en efficiency maximized met Tesoro's automation features.",
+      "en": "Learn how to automate repetitive tasks, set up workflow triggers, and maximize efficiency with Tesoro's automation features.",
+      "es": "Aprende cómo automatizar tareas repetitivas, configurar activadores de flujo de trabajo y maximizar eficiencia con las características de automatización de Tesoro."
+    },
+    "icon": "auto_mode"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Automation elimineert repetitive manual tasks en zorgt voor consistency in je sales proces. Tesoro CRM biedt workflow automation voor status-based actions, automatic notifications, task creation, en email sequences.</p>"
+        },
+        "en": {
+          "text": "<p>Automation eliminates repetitive manual tasks and ensures consistency in your sales process. Tesoro CRM offers workflow automation for status-based actions, automatic notifications, task creation, and email sequences.</p>"
+        },
+        "es": {
+          "text": "<p>La automatización elimina tareas manuales repetitivas y asegura consistencia en tu proceso de ventas. Tesoro CRM ofrece automatización de flujo de trabajo para acciones basadas en estado, notificaciones automáticas, creación de tareas y secuencias de email.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "automation-types",
+      "title": {
+        "nl": "Types automation workflows",
+        "en": "Types of Automation Workflows",
+        "es": "Tipos de flujos de trabajo de automatización"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>1. Status-based automation:</strong></p><ul><li>Trigger actions when deal moves to specific stage</li><li>Auto-assign tasks to team members</li><li>Send templated emails to clients</li><li>Update deal fields automatically</li></ul><p><strong>2. Time-based automation:</strong></p><ul><li>Schedule follow-up tasks after X days</li><li>Send reminder emails before closing date</li><li>Escalate stagnant deals</li><li>Archive old deals automatically</li></ul><p><strong>3. Value-based automation:</strong></p><ul><li>High-value deal alerts to managers</li><li>Different workflows per deal type</li><li>Auto-approval for deals under threshold</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>1. Status-based automation:</strong></p><ul><li>Trigger actions when deal moves to specific stage</li><li>Auto-assign tasks to team members</li><li>Send templated emails to clients</li><li>Update deal fields automatically</li></ul><p><strong>2. Time-based automation:</strong></p><ul><li>Schedule follow-up tasks after X days</li><li>Send reminder emails before closing date</li><li>Escalate stagnant deals</li><li>Archive old deals automatically</li></ul><p><strong>3. Value-based automation:</strong></p><ul><li>High-value deal alerts to managers</li><li>Different workflows per deal type</li><li>Auto-approval for deals under threshold</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>1. Automatización basada en estado:</strong></p><ul><li>Activar acciones cuando el deal se mueve a etapa específica</li><li>Auto-asignar tareas a miembros del equipo</li><li>Enviar emails con plantilla a clientes</li><li>Actualizar campos de deal automáticamente</li></ul><p><strong>2. Automatización basada en tiempo:</strong></p><ul><li>Programar tareas de seguimiento después de X días</li><li>Enviar emails de recordatorio antes de fecha de cierre</li><li>Escalar deals estancados</li><li>Archivar deals antiguos automáticamente</li></ul><p><strong>3. Automatización basada en valor:</strong></p><ul><li>Alertas de deal de alto valor a gerentes</li><li>Diferentes flujos de trabajo por tipo de deal</li><li>Auto-aprobación para deals bajo umbral</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "setup-workflow",
+      "title": {
+        "nl": "Automation workflow instellen",
+        "en": "Setting Up Automation Workflow",
+        "es": "Configurando flujo de trabajo de automatización"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Define trigger",
+            "en": "1. Define Trigger",
+            "es": "1. Definir activador"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Bepaal wat automation start:</p><ul><li><strong>Status change:</strong> Deal moves to 'Negotiation'</li><li><strong>Time-based:</strong> 3 days in same stage</li><li><strong>Field update:</strong> Deal value exceeds €100K</li><li><strong>Task completion:</strong> All viewings completed</li></ul>"
+            },
+            "en": {
+              "text": "<p>Determine what starts automation:</p><ul><li><strong>Status change:</strong> Deal moves to 'Negotiation'</li><li><strong>Time-based:</strong> 3 days in same stage</li><li><strong>Field update:</strong> Deal value exceeds €100K</li><li><strong>Task completion:</strong> All viewings completed</li></ul>"
+            },
+            "es": {
+              "text": "<p>Determina qué inicia la automatización:</p><ul><li><strong>Cambio de estado:</strong> Deal se mueve a 'Negociación'</li><li><strong>Basado en tiempo:</strong> 3 días en misma etapa</li><li><strong>Actualización de campo:</strong> Valor del deal excede €100K</li><li><strong>Finalización de tarea:</strong> Todas las visitas completadas</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Define actions",
+            "en": "2. Define Actions",
+            "es": "2. Definir acciones"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Wat moet gebeuren when triggered:</p><ul><li><strong>Create task:</strong> 'Prepare offer document'</li><li><strong>Send email:</strong> Template email to client</li><li><strong>Assign team member:</strong> Add legal advisor</li><li><strong>Update field:</strong> Set priority to High</li><li><strong>Notify manager:</strong> Alert about high-value deal</li></ul>"
+            },
+            "en": {
+              "text": "<p>What should happen when triggered:</p><ul><li><strong>Create task:</strong> 'Prepare offer document'</li><li><strong>Send email:</strong> Template email to client</li><li><strong>Assign team member:</strong> Add legal advisor</li><li><strong>Update field:</strong> Set priority to High</li><li><strong>Notify manager:</strong> Alert about high-value deal</li></ul>"
+            },
+            "es": {
+              "text": "<p>Qué debe suceder cuando se activa:</p><ul><li><strong>Crear tarea:</strong> 'Preparar documento de oferta'</li><li><strong>Enviar email:</strong> Email con plantilla al cliente</li><li><strong>Asignar miembro del equipo:</strong> Agregar asesor legal</li><li><strong>Actualizar campo:</strong> Establecer prioridad a Alta</li><li><strong>Notificar gerente:</strong> Alerta sobre deal de alto valor</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "examples",
+      "variant": "info",
+      "title": {
+        "nl": "Voorbeeld workflows",
+        "en": "Example Workflows",
+        "es": "Flujos de trabajo de ejemplo"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>New Deal → Qualification:</strong></p><ul><li>Create task: 'Verify budget' (due in 2 days)</li><li>Send email: Welcome template to client</li><li>Notify team: New deal assigned</li></ul><p><strong>Qualification → Viewing:</strong></p><ul><li>Create task: 'Schedule property viewings'</li><li>Add AI property suggestions</li><li>Send email: Property brochures</li></ul><p><strong>Deal stagnant > 7 days:</strong></p><ul><li>Create task: 'Follow up with client'</li><li>Notify owner: Deal needs attention</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>New Deal → Qualification:</strong></p><ul><li>Create task: 'Verify budget' (due in 2 days)</li><li>Send email: Welcome template to client</li><li>Notify team: New deal assigned</li></ul><p><strong>Qualification → Viewing:</strong></p><ul><li>Create task: 'Schedule property viewings'</li><li>Add AI property suggestions</li><li>Send email: Property brochures</li></ul><p><strong>Deal stagnant > 7 days:</strong></p><ul><li>Create task: 'Follow up with client'</li><li>Notify owner: Deal needs attention</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Nuevo Deal → Calificación:</strong></p><ul><li>Crear tarea: 'Verificar presupuesto' (vence en 2 días)</li><li>Enviar email: Plantilla de bienvenida al cliente</li><li>Notificar equipo: Nuevo deal asignado</li></ul><p><strong>Calificación → Visita:</strong></p><ul><li>Crear tarea: 'Programar visitas de propiedades'</li><li>Agregar sugerencias de propiedades IA</li><li>Enviar email: Folletos de propiedades</li></ul><p><strong>Deal estancado > 7 días:</strong></p><ul><li>Crear tarea: 'Hacer seguimiento con cliente'</li><li>Notificar propietario: Deal necesita atención</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-stages-explained",
+    "deal-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik automation disablen voor specific deals?",
+        "en": "Can I disable automation for specific deals?",
+        "es": "¿Puedo desactivar automatización para deals específicos?"
+      },
+      "answer": {
+        "nl": "Ja, je kunt automation togglen on/off per deal via deal settings. Dit is useful voor custom scenarios die manual handling vereisen.",
+        "en": "Yes, you can toggle automation on/off per deal via deal settings. This is useful for custom scenarios requiring manual handling.",
+        "es": "Sí, puedes alternar automatización on/off por deal mediante configuración de deal. Esto es útil para escenarios personalizados que requieren manejo manual."
+      }
+    }
+  ]
+}

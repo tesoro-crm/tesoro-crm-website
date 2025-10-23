@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "id": "company-profile-settings",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "beginner",
+    "tags": ["settings", "configuration", "company", "branding"],
+    "featured": true,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop",
+    "keywords": ["company profile", "branding", "settings", "configuration", "company information", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Bedrijfsprofiel en branding instellen",
+      "en": "Setting Up Company Profile and Branding",
+      "es": "Configurar perfil de empresa y marca"
+    },
+    "description": {
+      "nl": "Configureer uw bedrijfsinformatie, logo en branding om een professionele uitstraling te creëren voor al uw klantcommunicatie.",
+      "en": "Configure your company information, logo, and branding to create a professional appearance for all your customer communications.",
+      "es": "Configure la información de su empresa, logotipo y marca para crear una apariencia profesional en todas sus comunicaciones con clientes."
+    },
+    "icon": "business"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Uw bedrijfsprofiel is de basis van uw Tesoro CRM-installatie. Het bepaalt hoe uw bedrijf wordt gepresenteerd aan klanten in e-mails, het klantportaal en andere communicatiekanalen. Een correct geconfigureerd profiel zorgt voor een professionele uitstraling en consistente branding.\n\nDeze instellingen zijn van invloed op alle gebruikers in uw organisatie en worden weergegeven in klantcommunicatie, documenten en het klantportaal.",
+        "en": "Your company profile is the foundation of your Tesoro CRM installation. It determines how your business is presented to customers in emails, the customer portal, and other communication channels. A properly configured profile ensures a professional appearance and consistent branding.\n\nThese settings affect all users in your organization and are displayed in customer communications, documents, and the customer portal.",
+        "es": "Su perfil de empresa es la base de su instalación de Tesoro CRM. Determina cómo se presenta su negocio a los clientes en correos electrónicos, el portal de clientes y otros canales de comunicación. Un perfil correctamente configurado garantiza una apariencia profesional y una marca consistente.\n\nEstas configuraciones afectan a todos los usuarios de su organización y se muestran en las comunicaciones con clientes, documentos y el portal de clientes."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "access-settings",
+      "title": {
+        "nl": "Toegang tot bedrijfsinstellingen",
+        "en": "Accessing Company Settings",
+        "es": "Acceder a la configuración de empresa"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Navigeer naar instellingen",
+            "en": "Navigate to Settings",
+            "es": "Navegar a configuración"
+          },
+          "description": {
+            "nl": "Klik op het tandwielpictogram in de rechterbovenhoek en selecteer 'Bedrijfsinstellingen' uit het menu. Deze optie is alleen beschikbaar voor beheerders en accounteigenaren.",
+            "en": "Click the gear icon in the top right corner and select 'Company Settings' from the menu. This option is only available to administrators and account owners.",
+            "es": "Haga clic en el icono de engranaje en la esquina superior derecha y seleccione 'Configuración de empresa' del menú. Esta opción solo está disponible para administradores y propietarios de cuentas."
+          }
+        },
+        {
+          "title": {
+            "nl": "Selecteer het tabblad 'Algemeen'",
+            "en": "Select the 'General' Tab",
+            "es": "Seleccionar la pestaña 'General'"
+          },
+          "description": {
+            "nl": "In het instellingenscherm vindt u verschillende tabbladen. Het tabblad 'Algemeen' bevat alle bedrijfsprofielinformatie en brandinginstellingen.",
+            "en": "In the settings screen, you'll find several tabs. The 'General' tab contains all company profile information and branding settings.",
+            "es": "En la pantalla de configuración, encontrará varias pestañas. La pestaña 'General' contiene toda la información del perfil de empresa y las configuraciones de marca."
+          }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "basic-info",
+      "title": {
+        "nl": "Basisinformatie configureren",
+        "en": "Configuring Basic Information",
+        "es": "Configurar información básica"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Bedrijfsnaam invoeren",
+            "en": "Enter Company Name",
+            "es": "Ingresar nombre de empresa"
+          },
+          "description": {
+            "nl": "Voer de officiële naam van uw bedrijf in. Deze naam verschijnt in e-mailhandtekeningen, het klantportaal en alle uitgaande communicatie. Zorg ervoor dat de naam correct gespeld is en overeenkomt met uw officiële bedrijfsregistratie.",
+            "en": "Enter your company's official name. This name appears in email signatures, the customer portal, and all outgoing communications. Ensure the name is correctly spelled and matches your official business registration.",
+            "es": "Ingrese el nombre oficial de su empresa. Este nombre aparece en las firmas de correo electrónico, el portal de clientes y todas las comunicaciones salientes. Asegúrese de que el nombre esté correctamente escrito y coincida con su registro comercial oficial."
+          }
+        },
+        {
+          "title": {
+            "nl": "Contactgegevens toevoegen",
+            "en": "Add Contact Information",
+            "es": "Agregar información de contacto"
+          },
+          "description": {
+            "nl": "Vul het hoofdtelefoonnummer, e-mailadres en fysieke adres van uw bedrijf in. Deze informatie wordt gebruikt voor klantcommunicatie en wettelijk verplichte informatie in e-mails. Controleer alle velden op nauwkeurigheid.",
+            "en": "Fill in your company's main phone number, email address, and physical address. This information is used for customer communications and legally required information in emails. Double-check all fields for accuracy.",
+            "es": "Complete el número de teléfono principal, dirección de correo electrónico y dirección física de su empresa. Esta información se utiliza para comunicaciones con clientes e información legalmente requerida en correos electrónicos. Verifique todos los campos para asegurar precisión."
+          }
+        },
+        {
+          "title": {
+            "nl": "Website en sociale media links",
+            "en": "Website and Social Media Links",
+            "es": "Enlaces de sitio web y redes sociales"
+          },
+          "description": {
+            "nl": "Voeg uw website-URL toe en links naar uw sociale mediaprofielen (LinkedIn, Facebook, Instagram). Deze links worden automatisch toegevoegd aan e-mailhandtekeningen en het klantportaal, waardoor klanten uw online aanwezigheid gemakkelijk kunnen vinden.",
+            "en": "Add your website URL and links to your social media profiles (LinkedIn, Facebook, Instagram). These links are automatically added to email signatures and the customer portal, making it easy for clients to find your online presence.",
+            "es": "Agregue la URL de su sitio web y enlaces a sus perfiles de redes sociales (LinkedIn, Facebook, Instagram). Estos enlaces se agregan automáticamente a las firmas de correo electrónico y al portal de clientes, facilitando que los clientes encuentren su presencia en línea."
+          }
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "branding-setup",
+      "title": {
+        "nl": "Branding en visuele identiteit instellen",
+        "en": "Setting Up Branding and Visual Identity",
+        "es": "Configurar marca e identidad visual"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Bedrijfslogo uploaden",
+            "en": "Upload Company Logo",
+            "es": "Cargar logotipo de empresa"
+          },
+          "description": {
+            "nl": "Upload uw bedrijfslogo in PNG-formaat met transparante achtergrond voor de beste resultaten. Aanbevolen afmetingen zijn 300x100 pixels of een vergelijkbare verhouding. Het logo verschijnt in het klantportaal, e-mailhandtekeningen en PDF-documenten. Zorg ervoor dat het logo duidelijk en professioneel is.",
+            "en": "Upload your company logo in PNG format with a transparent background for best results. Recommended dimensions are 300x100 pixels or similar ratio. The logo appears in the customer portal, email signatures, and PDF documents. Ensure the logo is clear and professional.",
+            "es": "Cargue el logotipo de su empresa en formato PNG con fondo transparente para obtener mejores resultados. Las dimensiones recomendadas son 300x100 píxeles o una proporción similar. El logotipo aparece en el portal de clientes, firmas de correo electrónico y documentos PDF. Asegúrese de que el logotipo sea claro y profesional."
+          }
+        },
+        {
+          "title": {
+            "nl": "Primaire merkkleur selecteren",
+            "en": "Select Primary Brand Color",
+            "es": "Seleccionar color de marca principal"
+          },
+          "description": {
+            "nl": "Kies uw primaire merkkleur met behulp van de kleurkiezer. Deze kleur wordt gebruikt voor knoppen, links en accentelementen in het klantportaal. Kies een kleur die past bij uw merkidentiteit en goed leesbaar is op witte en donkere achtergronden.",
+            "en": "Choose your primary brand color using the color picker. This color is used for buttons, links, and accent elements in the customer portal. Select a color that matches your brand identity and is readable on both white and dark backgrounds.",
+            "es": "Elija el color principal de su marca utilizando el selector de color. Este color se utiliza para botones, enlaces y elementos de acento en el portal de clientes. Seleccione un color que coincida con su identidad de marca y sea legible tanto en fondos blancos como oscuros."
+          }
+        },
+        {
+          "title": {
+            "nl": "Favicon instellen",
+            "en": "Set Favicon",
+            "es": "Configurar favicon"
+          },
+          "description": {
+            "nl": "Upload een favicon (16x16 of 32x32 pixels) dat wordt weergegeven in browsertabbladen wanneer klanten uw klantportaal bezoeken. Dit kleine detail draagt bij aan een professionele merkervaring.",
+            "en": "Upload a favicon (16x16 or 32x32 pixels) that displays in browser tabs when customers visit your customer portal. This small detail contributes to a professional brand experience.",
+            "es": "Cargue un favicon (16x16 o 32x32 píxeles) que se muestre en las pestañas del navegador cuando los clientes visiten su portal de clientes. Este pequeño detalle contribuye a una experiencia de marca profesional."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "branding-impact",
+      "variant": "info",
+      "title": {
+        "nl": "Brandingwijzigingen worden direct toegepast",
+        "en": "Branding Changes Apply Immediately",
+        "es": "Los cambios de marca se aplican de inmediato"
+      },
+      "content": {
+        "nl": "Wanneer u uw logo of merkkleur wijzigt, worden deze aanpassingen direct doorgevoerd in het klantportaal, e-mailsjablonen en alle nieuw gegenereerde documenten. Bestaande documenten behouden hun oorspronkelijke branding.",
+        "en": "When you change your logo or brand color, these updates are immediately reflected in the customer portal, email templates, and all newly generated documents. Existing documents retain their original branding.",
+        "es": "Cuando cambia su logotipo o color de marca, estas actualizaciones se reflejan inmediatamente en el portal de clientes, plantillas de correo electrónico y todos los documentos generados recientemente. Los documentos existentes conservan su marca original."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "advanced-settings",
+      "title": {
+        "nl": "Geavanceerde instellingen",
+        "en": "Advanced Settings",
+        "es": "Configuraciones avanzadas"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Tijdzone configureren",
+            "en": "Configure Time Zone",
+            "es": "Configurar zona horaria"
+          },
+          "description": {
+            "nl": "Stel de standaard tijdzone in voor uw organisatie. Dit beïnvloedt hoe datums en tijden worden weergegeven in het systeem. Individuele gebruikers kunnen hun eigen tijdzone instellen in hun profielinstellingen.",
+            "en": "Set the default time zone for your organization. This affects how dates and times are displayed throughout the system. Individual users can set their own time zone in their profile settings.",
+            "es": "Establezca la zona horaria predeterminada para su organización. Esto afecta cómo se muestran las fechas y horas en todo el sistema. Los usuarios individuales pueden establecer su propia zona horaria en la configuración de su perfil."
+          }
+        },
+        {
+          "title": {
+            "nl": "Valuta en getalnotatie",
+            "en": "Currency and Number Format",
+            "es": "Moneda y formato de números"
+          },
+          "description": {
+            "nl": "Selecteer uw standaard valuta (EUR, USD, GBP, etc.) en getalnotatie. Deze instellingen bepalen hoe prijzen, deals en financiële gegevens worden weergegeven. Zorg ervoor dat deze overeenkomt met uw boekhoudsysteem.",
+            "en": "Select your default currency (EUR, USD, GBP, etc.) and number format. These settings determine how prices, deals, and financial data are displayed. Ensure this matches your accounting system.",
+            "es": "Seleccione su moneda predeterminada (EUR, USD, GBP, etc.) y formato de números. Estas configuraciones determinan cómo se muestran los precios, acuerdos y datos financieros. Asegúrese de que coincida con su sistema contable."
+          }
+        },
+        {
+          "title": {
+            "nl": "Taalvoorkeuren",
+            "en": "Language Preferences",
+            "es": "Preferencias de idioma"
+          },
+          "description": {
+            "nl": "Stel de standaardtaal in voor systeemcommunicatie en het klantportaal. Tesoro CRM ondersteunt Nederlands, Engels en Spaans. Individuele gebruikers kunnen hun eigen taalvoorkeur instellen.",
+            "en": "Set the default language for system communications and the customer portal. Tesoro CRM supports Dutch, English, and Spanish. Individual users can set their own language preference.",
+            "es": "Establezca el idioma predeterminado para las comunicaciones del sistema y el portal de clientes. Tesoro CRM admite holandés, inglés y español. Los usuarios individuales pueden establecer su propia preferencia de idioma."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "permissions-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Alleen beheerders kunnen bedrijfsinstellingen wijzigen",
+        "en": "Only Administrators Can Modify Company Settings",
+        "es": "Solo los administradores pueden modificar la configuración de empresa"
+      },
+      "content": {
+        "nl": "De bedrijfsinstellingen zijn beperkt tot gebruikers met beheerdersrechten of accounteigenaren. Standaardgebruikers en makelaars kunnen deze instellingen bekijken maar niet wijzigen. Dit voorkomt onbedoelde wijzigingen die invloed hebben op de hele organisatie.",
+        "en": "Company settings are restricted to users with administrator rights or account owners. Standard users and agents can view these settings but cannot modify them. This prevents accidental changes that affect the entire organization.",
+        "es": "La configuración de empresa está restringida a usuarios con derechos de administrador o propietarios de cuentas. Los usuarios estándar y agentes pueden ver estas configuraciones pero no pueden modificarlas. Esto previene cambios accidentales que afectan a toda la organización."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor bedrijfsprofiel",
+        "en": "Company Profile Best Practices",
+        "es": "Mejores prácticas para perfil de empresa"
+      },
+      "content": {
+        "nl": "**Houd uw informatie actueel**: Controleer uw bedrijfsprofiel elk kwartaal om ervoor te zorgen dat alle contactgegevens en branding actueel zijn.\n\n**Consistente branding**: Gebruik dezelfde logo's en kleuren die u gebruikt op uw website en marketingmateriaal voor een consistente merkervaring.\n\n**Test e-mailweergave**: Stuur een teste-mail naar uzelf na het wijzigen van branding om te controleren hoe het eruit ziet bij klanten.\n\n**Documenteer wijzigingen**: Houd een logboek bij van belangrijke wijzigingen in bedrijfsinstellingen voor audit- en trainings doeleinden.",
+        "en": "**Keep information current**: Review your company profile quarterly to ensure all contact details and branding are up to date.\n\n**Consistent branding**: Use the same logos and colors you use on your website and marketing materials for a consistent brand experience.\n\n**Test email display**: Send a test email to yourself after changing branding to check how it appears to customers.\n\n**Document changes**: Keep a log of significant changes to company settings for audit and training purposes.",
+        "es": "**Mantenga la información actualizada**: Revise su perfil de empresa trimestralmente para asegurarse de que todos los detalles de contacto y marca estén actualizados.\n\n**Marca consistente**: Use los mismos logotipos y colores que utiliza en su sitio web y materiales de marketing para una experiencia de marca consistente.\n\n**Pruebe la visualización de correo electrónico**: Envíese un correo electrónico de prueba después de cambiar la marca para verificar cómo se ve para los clientes.\n\n**Documente los cambios**: Mantenga un registro de cambios significativos en la configuración de empresa para fines de auditoría y capacitación."
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik verschillende logo's gebruiken voor e-mail en het klantportaal?",
+            "en": "Can I use different logos for email and the customer portal?",
+            "es": "¿Puedo usar diferentes logotipos para correo electrónico y el portal de clientes?"
+          },
+          "answer": {
+            "nl": "Nee, het geüploade logo wordt gebruikt voor alle klantcommunicatie om consistente branding te waarborgen. Als u verschillende versies van uw logo heeft (bijvoorbeeld licht/donker), upload dan de versie die het beste werkt op zowel witte als gekleurde achtergronden.",
+            "en": "No, the uploaded logo is used across all customer communications to ensure consistent branding. If you have different versions of your logo (e.g., light/dark), upload the version that works best on both white and colored backgrounds.",
+            "es": "No, el logotipo cargado se utiliza en todas las comunicaciones con clientes para garantizar una marca consistente. Si tiene diferentes versiones de su logotipo (por ejemplo, claro/oscuro), cargue la versión que funcione mejor tanto en fondos blancos como de colores."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er met bestaande e-mails als ik mijn bedrijfsnaam wijzig?",
+            "en": "What happens to existing emails if I change my company name?",
+            "es": "¿Qué sucede con los correos electrónicos existentes si cambio el nombre de mi empresa?"
+          },
+          "answer": {
+            "nl": "Verzonden e-mails behouden de oorspronkelijke bedrijfsnaam. Alleen nieuwe e-mails en communicatie zullen de bijgewerkte bedrijfsnaam weergeven. Dit is belangrijk om in gedachten te houden bij grote rebrandingprojecten.",
+            "en": "Sent emails retain the original company name. Only new emails and communications will display the updated company name. This is important to keep in mind during major rebranding projects.",
+            "es": "Los correos electrónicos enviados conservan el nombre original de la empresa. Solo los nuevos correos electrónicos y comunicaciones mostrarán el nombre de empresa actualizado. Esto es importante tenerlo en cuenta durante proyectos importantes de cambio de marca."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik meerdere tijdzones hebben voor verschillende gebruikers?",
+            "en": "Can I have multiple time zones for different users?",
+            "es": "¿Puedo tener múltiples zonas horarias para diferentes usuarios?"
+          },
+          "answer": {
+            "nl": "Ja, hoewel u een standaard tijdzone voor het bedrijf instelt, kan elke gebruiker hun eigen tijdzone instellen in hun persoonlijke profielinstellingen. Dit is handig voor teams die in verschillende landen werken.",
+            "en": "Yes, while you set a default time zone for the company, each user can set their own time zone in their personal profile settings. This is useful for teams working across different countries.",
+            "es": "Sí, aunque establezca una zona horaria predeterminada para la empresa, cada usuario puede establecer su propia zona horaria en la configuración de su perfil personal. Esto es útil para equipos que trabajan en diferentes países."
+          }
+        },
+        {
+          "question": {
+            "nl": "Welk bestandsformaat is het beste voor mijn logo?",
+            "en": "What file format is best for my logo?",
+            "es": "¿Qué formato de archivo es mejor para mi logotipo?"
+          },
+          "answer": {
+            "nl": "PNG-formaat met transparante achtergrond geeft de beste resultaten omdat het scherp blijft bij verschillende groottes en goed werkt op verschillende achtergrondkleuren. Vermijd JPEG omdat het geen transparantie ondersteunt en kan resulteren in een witte achtergrond.",
+            "en": "PNG format with a transparent background provides the best results as it remains sharp at different sizes and works well on various background colors. Avoid JPEG as it doesn't support transparency and may result in a white background.",
+            "es": "El formato PNG con fondo transparente proporciona los mejores resultados ya que permanece nítido en diferentes tamaños y funciona bien en varios colores de fondo. Evite JPEG ya que no admite transparencia y puede resultar en un fondo blanco."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe vaak kan ik mijn bedrijfsinstellingen wijzigen?",
+            "en": "How often can I change my company settings?",
+            "es": "¿Con qué frecuencia puedo cambiar la configuración de mi empresa?"
+          },
+          "answer": {
+            "nl": "Er zijn geen beperkingen op hoe vaak u uw bedrijfsinstellingen kunt wijzigen. Echter, voor consistentie in klantcommunicatie raden we aan om alleen wijzigingen aan te brengen wanneer dat echt nodig is (bijvoorbeeld bij rebranding of verhuizing).",
+            "en": "There are no limitations on how often you can change your company settings. However, for consistency in customer communications, we recommend making changes only when truly necessary (e.g., during rebranding or relocation).",
+            "es": "No hay limitaciones sobre con qué frecuencia puede cambiar la configuración de su empresa. Sin embargo, para mantener consistencia en las comunicaciones con clientes, recomendamos hacer cambios solo cuando sea realmente necesario (por ejemplo, durante un cambio de marca o reubicación)."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "user-management-guide",
+    "email-templates-management",
+    "security-settings-guide"
+  ]
+}

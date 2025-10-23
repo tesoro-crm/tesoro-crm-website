@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "id": "communication-gdpr-compliance",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T12:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "communication",
+    "difficulty": "intermediate",
+    "tags": ["gdpr", "privacy", "compliance", "consent", "data protection", "opt-out"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["gdpr compliance crm", "email consent management", "data protection", "opt-out management", "privacy crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "GDPR compliance: Consent management en data bescherming",
+      "en": "GDPR Compliance: Consent Management and Data Protection",
+      "es": "Cumplimiento de GDPR: Gestión de consentimiento y protección de datos"
+    },
+    "description": {
+      "nl": "Beheer toestemming, opt-outs en databescherming volgens AVG/GDPR regelgeving voor veilige klantcommunicatie.",
+      "en": "Manage consent, opt-outs and data protection according to GDPR regulations for safe customer communication.",
+      "es": "Gestiona consentimiento, exclusiones y protección de datos según regulaciones GDPR para comunicación segura con clientes."
+    },
+    "icon": "security"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "gdpr-basics",
+      "title": {
+        "nl": "GDPR basics voor CRM communicatie",
+        "en": "GDPR basics for CRM communication",
+        "es": "Conceptos básicos de GDPR para comunicación CRM"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De Algemene Verordening Gegevensbescherming (AVG/GDPR) regelt hoe bedrijven met persoonlijke data omgaan. Voor CRM communicatie zijn deze regels cruciaal.</p><h3>Wat is GDPR?</h3><ul><li><strong>EU wetgeving:</strong> Sinds 25 mei 2018 van kracht</li><li><strong>Doel:</strong> Bescherming van persoonlijke data</li><li><strong>Geldt voor:</strong> Alle bedrijven die EU-burgers data verwerken</li><li><strong>Boetes:</strong> Tot €20 miljoen of 4% jaaromzet</li></ul><h3>GDPR Principes voor Communicatie</h3><ol><li><strong>Rechtmatigheid:</strong> Je moet een legale basis hebben (consent, contract, legitiem belang)</li><li><strong>Transparantie:</strong> Duidelijk communiceren waarom je data verzamelt</li><li><strong>Doelbinding:</strong> Data alleen gebruiken waarvoor toestemming is</li><li><strong>Minimalisatie:</strong> Niet meer data verzamelen dan nodig</li><li><strong>Juistheid:</strong> Data up-to-date houden</li><li><strong>Opslagbeperking:</strong> Niet langer bewaren dan noodzakelijk</li><li><strong>Integriteit:</strong> Beveiligd opslaan</li></ol><h3>GDPR voor Email, SMS, WhatsApp</h3><p><strong>Email Marketing:</strong></p><ul><li>Opt-in vereist voor marketing emails</li><li>Opt-out link verplicht in elke email</li><li>Duidelijke sender identificatie</li></ul><p><strong>SMS Marketing:</strong></p><ul><li>Expliciete toestemming nodig</li><li>\"STOP\" functionaliteit verplicht</li><li>Kosten transparant communiceren</li></ul><p><strong>WhatsApp Business:</strong></p><ul><li>Opt-in voor business initiated messages</li><li>Duidelijk doel communicatie</li><li>24h window voor vrije berichten</li></ul>"
+        },
+        "en": {
+          "text": "<p>The General Data Protection Regulation (GDPR) regulates how companies handle personal data. For CRM communication, these rules are crucial.</p><h3>What is GDPR?</h3><ul><li><strong>EU legislation:</strong> In effect since May 25, 2018</li><li><strong>Purpose:</strong> Protection of personal data</li><li><strong>Applies to:</strong> All companies processing EU citizen data</li><li><strong>Fines:</strong> Up to €20 million or 4% annual revenue</li></ul><h3>GDPR Principles for Communication</h3><ol><li><strong>Lawfulness:</strong> You must have a legal basis (consent, contract, legitimate interest)</li><li><strong>Transparency:</strong> Clearly communicate why you collect data</li><li><strong>Purpose limitation:</strong> Only use data for what permission was given</li><li><strong>Data minimization:</strong> Don't collect more data than necessary</li><li><strong>Accuracy:</strong> Keep data up-to-date</li><li><strong>Storage limitation:</strong> Don't retain longer than necessary</li><li><strong>Integrity:</strong> Store securely</li></ol><h3>GDPR for Email, SMS, WhatsApp</h3><p><strong>Email Marketing:</strong></p><ul><li>Opt-in required for marketing emails</li><li>Opt-out link mandatory in every email</li><li>Clear sender identification</li></ul><p><strong>SMS Marketing:</strong></p><ul><li>Explicit consent needed</li><li>\"STOP\" functionality mandatory</li><li>Costs transparently communicated</li></ul><p><strong>WhatsApp Business:</strong></p><ul><li>Opt-in for business initiated messages</li><li>Clear communication purpose</li><li>24h window for free messages</li></ul>"
+        },
+        "es": {
+          "text": "<p>El Reglamento General de Protección de Datos (GDPR) regula cómo las empresas manejan datos personales. Para comunicación CRM, estas reglas son cruciales.</p><h3>¿Qué es GDPR?</h3><ul><li><strong>Legislación de la UE:</strong> En vigor desde 25 de mayo de 2018</li><li><strong>Propósito:</strong> Protección de datos personales</li><li><strong>Se aplica a:</strong> Todas las empresas que procesan datos de ciudadanos de la UE</li><li><strong>Multas:</strong> Hasta €20 millones o 4% de ingresos anuales</li></ul><h3>Principios GDPR para comunicación</h3><ol><li><strong>Legalidad:</strong> Debes tener una base legal (consentimiento, contrato, interés legítimo)</li><li><strong>Transparencia:</strong> Comunicar claramente por qué recopilas datos</li><li><strong>Limitación de propósito:</strong> Solo usar datos para lo que se dio permiso</li><li><strong>Minimización de datos:</strong> No recopilar más datos de los necesarios</li><li><strong>Exactitud:</strong> Mantener datos actualizados</li><li><strong>Limitación de almacenamiento:</strong> No retener más tiempo del necesario</li><li><strong>Integridad:</strong> Almacenar de forma segura</li></ol><h3>GDPR para email, SMS, WhatsApp</h3><p><strong>Marketing por email:</strong></p><ul><li>Opt-in requerido para emails de marketing</li><li>Enlace de opt-out obligatorio en cada email</li><li>Identificación clara del remitente</li></ul><p><strong>Marketing por SMS:</strong></p><ul><li>Consentimiento explícito necesario</li><li>Funcionalidad \"STOP\" obligatoria</li><li>Costos comunicados transparentemente</li></ul><p><strong>WhatsApp Business:</strong></p><ul><li>Opt-in para mensajes iniciados por negocio</li><li>Propósito claro de comunicación</li><li>Ventana de 24h para mensajes libres</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "consent-management",
+      "title": {
+        "nl": "Consent management in Tesoro",
+        "en": "Consent management in Tesoro",
+        "es": "Gestión de consentimiento en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Consent Types Configureren</h3><ol><li>Ga naar <strong>Settings > Privacy > Consent Types</strong></li><li>Tesoro heeft standaard consent types:  <ul><li><strong>Email Marketing:</strong> Marketing emails ontvangen</li><li><strong>SMS Marketing:</strong> SMS berichten ontvangen</li><li><strong>WhatsApp Marketing:</strong> WhatsApp berichten ontvangen</li><li><strong>Phone Marketing:</strong> Telefonisch contact</li><li><strong>Data Processing:</strong> Verwerking persoonlijke data</li></ul></li><li>Pas aan of voeg custom types toe</li></ol><h3>Consent Vastleggen</h3><p><strong>Bij Contact Aanmaken:</strong></p><ol><li>Open nieuw contact formulier</li><li>Sectie <strong>Consent & Privacy</strong></li><li>Check per kanaal:  <ul><li>☑️ Email Marketing (opt-in)</li><li>☑️ SMS Marketing (opt-in)</li><li>☑️ WhatsApp (opt-in)</li></ul></li><li>Vul in:  <ul><li><strong>Consent Date:</strong> Wanneer toestemming gegeven</li><li><strong>Consent Method:</strong> Hoe (form, phone, in-person, etc.)</li><li><strong>Consent Source:</strong> Waar (website form, event, etc.)</li></ul></li><li>Save contact</li></ol><h3>Consent via Web Forms</h3><p>Voor online forms:</p><pre><code>&lt;form&gt;\n  &lt;input type=\"checkbox\" name=\"consent_email\" required&gt;\n  Ik ga akkoord met marketing emails\n  \n  &lt;input type=\"checkbox\" name=\"consent_sms\"&gt;\n  Ik ga akkoord met SMS berichten\n  \n  &lt;!-- Link naar privacy policy --&gt;\n  &lt;a href=\"/privacy\"&gt;Lees ons privacybeleid&lt;/a&gt;\n&lt;/form&gt;\n</code></pre><p>Tesoro slaat automatisch consent op bij form submission.</p><h3>Double Opt-in Email</h3><p>Voor extra zekerheid:</p><ol><li>Klant vult form in</li><li>Tesoro stuurt bevestiging email</li><li>Klant klikt <strong>\"Ja, schrijf me in\"</strong> link</li><li>Consent wordt geactiveerd</li><li>Klant komt in email lijst</li></ol><h3>Consent History</h3><p>Alle wijzigingen worden gelogd:</p><ul><li>2024-01-15: Email consent gegeven (via website form)</li><li>2024-02-20: SMS consent gegeven (via phone call)</li><li>2024-03-10: Email consent ingetrokken (via unsubscribe link)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Configure Consent Types</h3><ol><li>Go to <strong>Settings > Privacy > Consent Types</strong></li><li>Tesoro has default consent types:  <ul><li><strong>Email Marketing:</strong> Receive marketing emails</li><li><strong>SMS Marketing:</strong> Receive SMS messages</li><li><strong>WhatsApp Marketing:</strong> Receive WhatsApp messages</li><li><strong>Phone Marketing:</strong> Phone contact</li><li><strong>Data Processing:</strong> Processing personal data</li></ul></li><li>Adjust or add custom types</li></ol><h3>Record Consent</h3><p><strong>When Creating Contact:</strong></p><ol><li>Open new contact form</li><li>Section <strong>Consent & Privacy</strong></li><li>Check per channel:  <ul><li>☑️ Email Marketing (opt-in)</li><li>☑️ SMS Marketing (opt-in)</li><li>☑️ WhatsApp (opt-in)</li></ul></li><li>Fill in:  <ul><li><strong>Consent Date:</strong> When permission given</li><li><strong>Consent Method:</strong> How (form, phone, in-person, etc.)</li><li><strong>Consent Source:</strong> Where (website form, event, etc.)</li></ul></li><li>Save contact</li></ol><h3>Consent via Web Forms</h3><p>For online forms:</p><pre><code>&lt;form&gt;\n  &lt;input type=\"checkbox\" name=\"consent_email\" required&gt;\n  I agree to receive marketing emails\n  \n  &lt;input type=\"checkbox\" name=\"consent_sms\"&gt;\n  I agree to receive SMS messages\n  \n  &lt;!-- Link to privacy policy --&gt;\n  &lt;a href=\"/privacy\"&gt;Read our privacy policy&lt;/a&gt;\n&lt;/form&gt;\n</code></pre><p>Tesoro automatically saves consent on form submission.</p><h3>Double Opt-in Email</h3><p>For extra security:</p><ol><li>Customer fills in form</li><li>Tesoro sends confirmation email</li><li>Customer clicks <strong>\"Yes, sign me up\"</strong> link</li><li>Consent is activated</li><li>Customer enters email list</li></ol><h3>Consent History</h3><p>All changes are logged:</p><ul><li>2024-01-15: Email consent given (via website form)</li><li>2024-02-20: SMS consent given (via phone call)</li><li>2024-03-10: Email consent withdrawn (via unsubscribe link)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Configurar tipos de consentimiento</h3><ol><li>Ve a <strong>Settings > Privacy > Consent Types</strong></li><li>Tesoro tiene tipos de consentimiento predeterminados:  <ul><li><strong>Marketing por email:</strong> Recibir emails de marketing</li><li><strong>Marketing por SMS:</strong> Recibir mensajes SMS</li><li><strong>Marketing por WhatsApp:</strong> Recibir mensajes de WhatsApp</li><li><strong>Marketing telefónico:</strong> Contacto telefónico</li><li><strong>Procesamiento de datos:</strong> Procesamiento de datos personales</li></ul></li><li>Ajustar o agregar tipos personalizados</li></ol><h3>Registrar consentimiento</h3><p><strong>Al crear contacto:</strong></p><ol><li>Abrir formulario de nuevo contacto</li><li>Sección <strong>Consent & Privacy</strong></li><li>Marcar por canal:  <ul><li>☑️ Marketing por email (opt-in)</li><li>☑️ Marketing por SMS (opt-in)</li><li>☑️ WhatsApp (opt-in)</li></ul></li><li>Completar:  <ul><li><strong>Fecha de consentimiento:</strong> Cuándo se dio permiso</li><li><strong>Método de consentimiento:</strong> Cómo (formulario, teléfono, en persona, etc.)</li><li><strong>Fuente de consentimiento:</strong> Dónde (formulario del sitio web, evento, etc.)</li></ul></li><li>Guardar contacto</li></ol><h3>Consentimiento vía formularios web</h3><p>Para formularios en línea:</p><pre><code>&lt;form&gt;\n  &lt;input type=\"checkbox\" name=\"consent_email\" required&gt;\n  Acepto recibir emails de marketing\n  \n  &lt;input type=\"checkbox\" name=\"consent_sms\"&gt;\n  Acepto recibir mensajes SMS\n  \n  &lt;!-- Enlace a política de privacidad --&gt;\n  &lt;a href=\"/privacy\"&gt;Lee nuestra política de privacidad&lt;/a&gt;\n&lt;/form&gt;\n</code></pre><p>Tesoro guarda automáticamente el consentimiento al enviar el formulario.</p><h3>Email de doble opt-in</h3><p>Para seguridad extra:</p><ol><li>Cliente completa formulario</li><li>Tesoro envía email de confirmación</li><li>Cliente hace clic en enlace <strong>\"Sí, inscríbeme\"</strong></li><li>Se activa el consentimiento</li><li>Cliente entra en lista de email</li></ol><h3>Historial de consentimiento</h3><p>Todos los cambios se registran:</p><ul><li>2024-01-15: Consentimiento de email dado (vía formulario del sitio web)</li><li>2024-02-20: Consentimiento de SMS dado (vía llamada telefónica)</li><li>2024-03-10: Consentimiento de email retirado (vía enlace de desuscripción)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "opt-out-management",
+      "title": {
+        "nl": "Opt-out en unsubscribe management",
+        "en": "Opt-out and unsubscribe management",
+        "es": "Gestión de opt-out y desuscripción"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Automatische Opt-out Links</h3><p>Tesoro voegt automatisch unsubscribe links toe:</p><p><strong>Email Footer:</strong></p><pre><code>Wil je geen marketing emails meer ontvangen?\n[Uitschrijven] | [Voorkeuren aanpassen]\n\n{{company.name}}\n{{company.address}}\n</code></pre><p><strong>SMS Opt-out:</strong></p><pre><code>Reageer met STOP om geen SMS meer te ontvangen.\n</code></pre><h3>Opt-out Afhandeling</h3><p>Wanneer klant uitschrijft:</p><ol><li><strong>Direct verwerkt:</strong> Binnen seconden geregistreerd</li><li><strong>Consent ingetrokken:</strong> Email/SMS consent = false</li><li><strong>Suppressie lijst:</strong> Contact komt op do-not-contact lijst</li><li><strong>Sequences gestopt:</strong> Alle actieve sequences worden gepauzeerd</li><li><strong>Notification:</strong> Agent krijgt bericht</li></ol><h3>Preference Center</h3><p>Geef klanten controle:</p><ol><li>Link in email footer: <strong>\"Voorkeuren aanpassen\"</strong></li><li>Klant ziet form met opties:  <ul><li>☑️ Nieuwe property alerts</li><li>☐ Nieuwsbrief</li><li>☑️ Belangrijk nieuws</li><li>☐ Promoties en aanbiedingen</li></ul></li><li>Frequentie kiezen:  <ul><li>Dagelijks</li><li>Wekelijks</li><li>Maandelijks</li></ul></li><li>Sla voorkeuren op</li></ol><h3>Opt-out Reporting</h3><p>Track unsubscribe rates:</p><ul><li>Ga naar <strong>Reports > Consent & Privacy</strong></li><li>Dashboard toont:  <ul><li>Unsubscribe rate per email</li><li>Unsubscribe rate per sequence</li><li>Top redenen voor uitschrijven</li><li>Trend over tijd</li></ul></li></ul><h3>Re-engagement</h3><p>Contact die opt-out heeft gedaan:</p><ul><li><strong>Niet meer contacteren:</strong> Voor marketing</li><li><strong>Transactionele emails OK:</strong> Bijv. confirmaties, facturen</li><li><strong>Re-opt-in mogelijk:</strong> Via nieuwe form submission of expliciete vraag</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Automatic Opt-out Links</h3><p>Tesoro automatically adds unsubscribe links:</p><p><strong>Email Footer:</strong></p><pre><code>Don't want to receive marketing emails anymore?\n[Unsubscribe] | [Adjust preferences]\n\n{{company.name}}\n{{company.address}}\n</code></pre><p><strong>SMS Opt-out:</strong></p><pre><code>Reply STOP to no longer receive SMS.\n</code></pre><h3>Opt-out Handling</h3><p>When customer unsubscribes:</p><ol><li><strong>Processed immediately:</strong> Registered within seconds</li><li><strong>Consent withdrawn:</strong> Email/SMS consent = false</li><li><strong>Suppression list:</strong> Contact goes on do-not-contact list</li><li><strong>Sequences stopped:</strong> All active sequences are paused</li><li><strong>Notification:</strong> Agent gets message</li></ol><h3>Preference Center</h3><p>Give customers control:</p><ol><li>Link in email footer: <strong>\"Adjust preferences\"</strong></li><li>Customer sees form with options:  <ul><li>☑️ New property alerts</li><li>☐ Newsletter</li><li>☑️ Important news</li><li>☐ Promotions and offers</li></ul></li><li>Choose frequency:  <ul><li>Daily</li><li>Weekly</li><li>Monthly</li></ul></li><li>Save preferences</li></ol><h3>Opt-out Reporting</h3><p>Track unsubscribe rates:</p><ul><li>Go to <strong>Reports > Consent & Privacy</strong></li><li>Dashboard shows:  <ul><li>Unsubscribe rate per email</li><li>Unsubscribe rate per sequence</li><li>Top reasons for unsubscribing</li><li>Trend over time</li></ul></li></ul><h3>Re-engagement</h3><p>Contact who opted out:</p><ul><li><strong>No more contact:</strong> For marketing</li><li><strong>Transactional emails OK:</strong> E.g., confirmations, invoices</li><li><strong>Re-opt-in possible:</strong> Via new form submission or explicit request</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Enlaces automáticos de opt-out</h3><p>Tesoro agrega automáticamente enlaces de desuscripción:</p><p><strong>Pie de página de email:</strong></p><pre><code>¿Ya no quieres recibir emails de marketing?\n[Desuscribirse] | [Ajustar preferencias]\n\n{{company.name}}\n{{company.address}}\n</code></pre><p><strong>Opt-out de SMS:</strong></p><pre><code>Responde STOP para no recibir más SMS.\n</code></pre><h3>Manejo de opt-out</h3><p>Cuando el cliente se desuscribe:</p><ol><li><strong>Procesado inmediatamente:</strong> Registrado en segundos</li><li><strong>Consentimiento retirado:</strong> Consentimiento de email/SMS = false</li><li><strong>Lista de supresión:</strong> Contacto va a lista de no contactar</li><li><strong>Secuencias detenidas:</strong> Todas las secuencias activas se pausan</li><li><strong>Notificación:</strong> El agente recibe mensaje</li></ol><h3>Centro de preferencias</h3><p>Da control a los clientes:</p><ol><li>Enlace en pie de página de email: <strong>\"Ajustar preferencias\"</strong></li><li>Cliente ve formulario con opciones:  <ul><li>☑️ Alertas de nuevas propiedades</li><li>☐ Boletín</li><li>☑️ Noticias importantes</li><li>☐ Promociones y ofertas</li></ul></li><li>Elegir frecuencia:  <ul><li>Diario</li><li>Semanal</li><li>Mensual</li></ul></li><li>Guardar preferencias</li></ol><h3>Informes de opt-out</h3><p>Rastrear tasas de desuscripción:</p><ul><li>Ve a <strong>Reports > Consent & Privacy</strong></li><li>El panel muestra:  <ul><li>Tasa de desuscripción por email</li><li>Tasa de desuscripción por secuencia</li><li>Principales razones para desuscribirse</li><li>Tendencia a lo largo del tiempo</li></ul></li></ul><h3>Re-engagement</h3><p>Contacto que optó por salir:</p><ul><li><strong>No más contacto:</strong> Para marketing</li><li><strong>Emails transaccionales OK:</strong> Ej., confirmaciones, facturas</li><li><strong>Re-opt-in posible:</strong> Vía nuevo envío de formulario o solicitud explícita</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "gdpr-checklist",
+      "variant": "warning",
+      "title": {
+        "nl": "GDPR Compliance Checklist",
+        "en": "GDPR Compliance Checklist",
+        "es": "Lista de verificación de cumplimiento GDPR"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Verplichte Elementen</h3><ul><li>☑️ Privacy policy op website</li><li>☑️ Consent bij data verzameling</li><li>☑️ Unsubscribe link in elke marketing email</li><li>☑️ STOP functionaliteit voor SMS</li><li>☑️ Data processing agreement (DPA) met leveranciers</li><li>☑️ Data breach procedures</li><li>☑️ Right to access data (inzage verzoeken)</li><li>☑️ Right to deletion (verwijder verzoeken)</li><li>☑️ Data retention policy (bewaartermijnen)</li><li>☑️ Security measures (encryptie, access control)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Mandatory Elements</h3><ul><li>☑️ Privacy policy on website</li><li>☑️ Consent when collecting data</li><li>☑️ Unsubscribe link in every marketing email</li><li>☑️ STOP functionality for SMS</li><li>☑️ Data processing agreement (DPA) with suppliers</li><li>☑️ Data breach procedures</li><li>☑️ Right to access data (access requests)</li><li>☑️ Right to deletion (deletion requests)</li><li>☑️ Data retention policy (retention periods)</li><li>☑️ Security measures (encryption, access control)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Elementos obligatorios</h3><ul><li>☑️ Política de privacidad en sitio web</li><li>☑️ Consentimiento al recopilar datos</li><li>☑️ Enlace de desuscripción en cada email de marketing</li><li>☑️ Funcionalidad STOP para SMS</li><li>☑️ Acuerdo de procesamiento de datos (DPA) con proveedores</li><li>☑️ Procedimientos de violación de datos</li><li>☑️ Derecho de acceso a datos (solicitudes de acceso)</li><li>☑️ Derecho de eliminación (solicitudes de eliminación)</li><li>☑️ Política de retención de datos (períodos de retención)</li><li>☑️ Medidas de seguridad (encriptación, control de acceso)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "data-subject-requests",
+      "title": {
+        "nl": "Data subject requests afhandelen",
+        "en": "Handling data subject requests",
+        "es": "Manejar solicitudes de sujetos de datos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Types Data Subject Requests</h3><p>Onder GDPR hebben klanten rechten:</p><ol><li><strong>Right to Access (Inzage):</strong> Alle data over hen zien</li><li><strong>Right to Rectification (Correctie):</strong> Onjuiste data corrigeren</li><li><strong>Right to Erasure (Verwijdering):</strong> \"Recht om vergeten te worden\"</li><li><strong>Right to Restriction:</strong> Verwerking beperken</li><li><strong>Right to Data Portability:</strong> Data exporteren</li><li><strong>Right to Object:</strong> Bezwaar maken tegen verwerking</li></ol><h3>Request Afhandeling in Tesoro</h3><p><strong>Access Request (Inzage):</strong></p><ol><li>Klant stuurt email: \"Ik wil al mijn data zien\"</li><li>In Tesoro: Open contact → <strong>... menu → Export Data</strong></li><li>Kies format: <strong>PDF Report</strong> (voor klant) of <strong>JSON</strong> (technisch)</li><li>PDF bevat:  <ul><li>Contact details</li><li>Communication history (emails, SMS, calls)</li><li>Properties viewed</li><li>Deals</li><li>Consent history</li><li>Notes</li></ul></li><li>Verstuur binnen 30 dagen naar klant</li></ol><p><strong>Deletion Request (Verwijdering):</strong></p><ol><li>Klant stuurt email: \"Verwijder al mijn data\"</li><li>In Tesoro: Open contact → <strong>... menu → Delete Contact</strong></li><li>Tesoro toont confirmation:  <ul><li>\"Are you sure? This cannot be undone.\"</li><li>\"This will delete: Contact, Communication, Notes, Deals\"</li><li>\"Properties and Documents remain (legal obligation)\"</li></ul></li><li>Check <strong>GDPR Deletion Request</strong> (logging voor audit)</li><li>Klik <strong>Confirm Delete</strong></li><li>Bevestig verwijdering naar klant</li></ol><h3>Legal Holds</h3><p>Sommige data MOET bewaard blijven:</p><ul><li><strong>Accounting:</strong> Facturen 7 jaar (wettelijk)</li><li><strong>Contracts:</strong> Getekende overeenkomsten</li><li><strong>Legal disputes:</strong> Tijdens procedures</li></ul><p>Tesoro markeert deze data als <strong>\"Cannot be deleted (legal hold)\"</strong>.</p><h3>Request Logging</h3><p>Alle data subject requests worden gelogd:</p><ul><li>2024-03-15: Access request received</li><li>2024-03-20: Data export sent to customer</li><li>2024-04-10: Deletion request received</li><li>2024-04-11: Contact deleted (GDPR compliance)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Types of Data Subject Requests</h3><p>Under GDPR, customers have rights:</p><ol><li><strong>Right to Access:</strong> See all data about them</li><li><strong>Right to Rectification:</strong> Correct incorrect data</li><li><strong>Right to Erasure:</strong> \"Right to be forgotten\"</li><li><strong>Right to Restriction:</strong> Limit processing</li><li><strong>Right to Data Portability:</strong> Export data</li><li><strong>Right to Object:</strong> Object to processing</li></ol><h3>Request Handling in Tesoro</h3><p><strong>Access Request:</strong></p><ol><li>Customer sends email: \"I want to see all my data\"</li><li>In Tesoro: Open contact → <strong>... menu → Export Data</strong></li><li>Choose format: <strong>PDF Report</strong> (for customer) or <strong>JSON</strong> (technical)</li><li>PDF contains:  <ul><li>Contact details</li><li>Communication history (emails, SMS, calls)</li><li>Properties viewed</li><li>Deals</li><li>Consent history</li><li>Notes</li></ul></li><li>Send within 30 days to customer</li></ol><p><strong>Deletion Request:</strong></p><ol><li>Customer sends email: \"Delete all my data\"</li><li>In Tesoro: Open contact → <strong>... menu → Delete Contact</strong></li><li>Tesoro shows confirmation:  <ul><li>\"Are you sure? This cannot be undone.\"</li><li>\"This will delete: Contact, Communication, Notes, Deals\"</li><li>\"Properties and Documents remain (legal obligation)\"</li></ul></li><li>Check <strong>GDPR Deletion Request</strong> (logging for audit)</li><li>Click <strong>Confirm Delete</strong></li><li>Confirm deletion to customer</li></ol><h3>Legal Holds</h3><p>Some data MUST be retained:</p><ul><li><strong>Accounting:</strong> Invoices 7 years (statutory)</li><li><strong>Contracts:</strong> Signed agreements</li><li><strong>Legal disputes:</strong> During procedures</li></ul><p>Tesoro marks this data as <strong>\"Cannot be deleted (legal hold)\"</strong>.</p><h3>Request Logging</h3><p>All data subject requests are logged:</p><ul><li>2024-03-15: Access request received</li><li>2024-03-20: Data export sent to customer</li><li>2024-04-10: Deletion request received</li><li>2024-04-11: Contact deleted (GDPR compliance)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Tipos de solicitudes de sujetos de datos</h3><p>Bajo GDPR, los clientes tienen derechos:</p><ol><li><strong>Derecho de acceso:</strong> Ver todos los datos sobre ellos</li><li><strong>Derecho de rectificación:</strong> Corregir datos incorrectos</li><li><strong>Derecho de supresión:</strong> \"Derecho al olvido\"</li><li><strong>Derecho de restricción:</strong> Limitar procesamiento</li><li><strong>Derecho de portabilidad de datos:</strong> Exportar datos</li><li><strong>Derecho de objeción:</strong> Objetar procesamiento</li></ol><h3>Manejo de solicitudes en Tesoro</h3><p><strong>Solicitud de acceso:</strong></p><ol><li>Cliente envía email: \"Quiero ver todos mis datos\"</li><li>En Tesoro: Abrir contacto → <strong>menú ... → Export Data</strong></li><li>Elegir formato: <strong>PDF Report</strong> (para cliente) o <strong>JSON</strong> (técnico)</li><li>PDF contiene:  <ul><li>Detalles de contacto</li><li>Historial de comunicación (emails, SMS, llamadas)</li><li>Propiedades vistas</li><li>Tratos</li><li>Historial de consentimiento</li><li>Notas</li></ul></li><li>Enviar dentro de 30 días al cliente</li></ol><p><strong>Solicitud de eliminación:</strong></p><ol><li>Cliente envía email: \"Elimina todos mis datos\"</li><li>En Tesoro: Abrir contacto → <strong>menú ... → Delete Contact</strong></li><li>Tesoro muestra confirmación:  <ul><li>\"¿Estás seguro? Esto no se puede deshacer.\"</li><li>\"Esto eliminará: Contacto, Comunicación, Notas, Tratos\"</li><li>\"Propiedades y Documentos permanecen (obligación legal)\"</li></ul></li><li>Marcar <strong>GDPR Deletion Request</strong> (registro para auditoría)</li><li>Hacer clic en <strong>Confirm Delete</strong></li><li>Confirmar eliminación al cliente</li></ol><h3>Retenciones legales</h3><p>Algunos datos DEBEN retenerse:</p><ul><li><strong>Contabilidad:</strong> Facturas 7 años (estatutario)</li><li><strong>Contratos:</strong> Acuerdos firmados</li><li><strong>Disputas legales:</strong> Durante procedimientos</li></ul><p>Tesoro marca estos datos como <strong>\"Cannot be deleted (legal hold)\"</strong>.</p><h3>Registro de solicitudes</h3><p>Todas las solicitudes de sujetos de datos se registran:</p><ul><li>2024-03-15: Solicitud de acceso recibida</li><li>2024-03-20: Exportación de datos enviada al cliente</li><li>2024-04-10: Solicitud de eliminación recibida</li><li>2024-04-11: Contacto eliminado (cumplimiento GDPR)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "data-security",
+      "title": {
+        "nl": "Data beveiliging en privacy",
+        "en": "Data security and privacy",
+        "es": "Seguridad y privacidad de datos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Tesoro Security Measures</h3><p>Tesoro beveiligt je data met:</p><ul><li><strong>Encryption at rest:</strong> AES-256 database encryptie</li><li><strong>Encryption in transit:</strong> TLS 1.3 voor alle verbindingen</li><li><strong>Access control:</strong> Role-based permissions (RBAC)</li><li><strong>Two-factor authentication:</strong> 2FA voor alle accounts</li><li><strong>Audit logging:</strong> Alle data access wordt gelogd</li><li><strong>Regular backups:</strong> Dagelijkse encrypted backups</li><li><strong>Pen testing:</strong> Jaarlijkse security audits</li><li><strong>SOC 2 Type II:</strong> Certified compliance</li></ul><h3>User Permissions</h3><p>Beperk data access per teamlid:</p><ul><li><strong>Admin:</strong> Volledige toegang</li><li><strong>Manager:</strong> Team data + reports</li><li><strong>Agent:</strong> Eigen contacten + toegewezen</li><li><strong>Read-only:</strong> Alleen bekijken, niet wijzigen</li></ul><h3>Data Retention Policy</h3><p>Stel bewaartermijnen in:</p><ol><li>Ga naar <strong>Settings > Data Retention</strong></li><li>Configureer per data type:  <ul><li><strong>Inactive contacts:</strong> 3 jaar → automatisch verwijderen</li><li><strong>Email history:</strong> 2 jaar → archiveren</li><li><strong>Call logs:</strong> 1 jaar → verwijderen</li><li><strong>Closed deals:</strong> 7 jaar → legal hold</li></ul></li><li>Tesoro voert automatisch uit</li></ol><h3>Data Processing Agreement (DPA)</h3><p>Tesoro biedt GDPR-compliant DPA:</p><ul><li>Download via <strong>Settings > Legal > DPA</strong></li><li>Tekenen en uploaden</li><li>Vereist voor EU bedrijven</li><li>Beschrijft verantwoordelijkheden</li></ul><h3>Data Breach Protocol</h3><p>Als data breach gebeurt:</p><ol><li><strong>Detection:</strong> Tesoro detecteert breach</li><li><strong>Notification:</strong> Je krijgt binnen 24h bericht</li><li><strong>Assessment:</strong> Impact analyse</li><li><strong>Reporting:</strong> Indien nodig, melden bij autoriteit (binnen 72h)</li><li><strong>Mitigation:</strong> Maatregelen om schade te beperken</li><li><strong>Communication:</strong> Informeer betrokken klanten</li></ol>"
+        },
+        "en": {
+          "text": "<h3>Tesoro Security Measures</h3><p>Tesoro protects your data with:</p><ul><li><strong>Encryption at rest:</strong> AES-256 database encryption</li><li><strong>Encryption in transit:</strong> TLS 1.3 for all connections</li><li><strong>Access control:</strong> Role-based permissions (RBAC)</li><li><strong>Two-factor authentication:</strong> 2FA for all accounts</li><li><strong>Audit logging:</strong> All data access is logged</li><li><strong>Regular backups:</strong> Daily encrypted backups</li><li><strong>Pen testing:</strong> Annual security audits</li><li><strong>SOC 2 Type II:</strong> Certified compliance</li></ul><h3>User Permissions</h3><p>Limit data access per team member:</p><ul><li><strong>Admin:</strong> Full access</li><li><strong>Manager:</strong> Team data + reports</li><li><strong>Agent:</strong> Own contacts + assigned</li><li><strong>Read-only:</strong> View only, no editing</li></ul><h3>Data Retention Policy</h3><p>Set retention periods:</p><ol><li>Go to <strong>Settings > Data Retention</strong></li><li>Configure per data type:  <ul><li><strong>Inactive contacts:</strong> 3 years → automatically delete</li><li><strong>Email history:</strong> 2 years → archive</li><li><strong>Call logs:</strong> 1 year → delete</li><li><strong>Closed deals:</strong> 7 years → legal hold</li></ul></li><li>Tesoro executes automatically</li></ol><h3>Data Processing Agreement (DPA)</h3><p>Tesoro offers GDPR-compliant DPA:</p><ul><li>Download via <strong>Settings > Legal > DPA</strong></li><li>Sign and upload</li><li>Required for EU companies</li><li>Describes responsibilities</li></ul><h3>Data Breach Protocol</h3><p>If data breach occurs:</p><ol><li><strong>Detection:</strong> Tesoro detects breach</li><li><strong>Notification:</strong> You get message within 24h</li><li><strong>Assessment:</strong> Impact analysis</li><li><strong>Reporting:</strong> If necessary, report to authority (within 72h)</li><li><strong>Mitigation:</strong> Measures to limit damage</li><li><strong>Communication:</strong> Inform affected customers</li></ol>"
+        },
+        "es": {
+          "text": "<h3>Medidas de seguridad de Tesoro</h3><p>Tesoro protege tus datos con:</p><ul><li><strong>Encriptación en reposo:</strong> Encriptación de base de datos AES-256</li><li><strong>Encriptación en tránsito:</strong> TLS 1.3 para todas las conexiones</li><li><strong>Control de acceso:</strong> Permisos basados en roles (RBAC)</li><li><strong>Autenticación de dos factores:</strong> 2FA para todas las cuentas</li><li><strong>Registro de auditoría:</strong> Todo el acceso a datos se registra</li><li><strong>Respaldos regulares:</strong> Respaldos encriptados diarios</li><li><strong>Pruebas de penetración:</strong> Auditorías de seguridad anuales</li><li><strong>SOC 2 Tipo II:</strong> Cumplimiento certificado</li></ul><h3>Permisos de usuario</h3><p>Limitar acceso a datos por miembro del equipo:</p><ul><li><strong>Admin:</strong> Acceso completo</li><li><strong>Manager:</strong> Datos del equipo + informes</li><li><strong>Agente:</strong> Contactos propios + asignados</li><li><strong>Solo lectura:</strong> Solo ver, no editar</li></ul><h3>Política de retención de datos</h3><p>Establecer períodos de retención:</p><ol><li>Ve a <strong>Settings > Data Retention</strong></li><li>Configurar por tipo de datos:  <ul><li><strong>Contactos inactivos:</strong> 3 años → eliminar automáticamente</li><li><strong>Historial de email:</strong> 2 años → archivar</li><li><strong>Registros de llamadas:</strong> 1 año → eliminar</li><li><strong>Tratos cerrados:</strong> 7 años → retención legal</li></ul></li><li>Tesoro ejecuta automáticamente</li></ol><h3>Acuerdo de procesamiento de datos (DPA)</h3><p>Tesoro ofrece DPA conforme a GDPR:</p><ul><li>Descargar vía <strong>Settings > Legal > DPA</strong></li><li>Firmar y subir</li><li>Requerido para empresas de la UE</li><li>Describe responsabilidades</li></ul><h3>Protocolo de violación de datos</h3><p>Si ocurre violación de datos:</p><ol><li><strong>Detección:</strong> Tesoro detecta violación</li><li><strong>Notificación:</strong> Recibes mensaje dentro de 24h</li><li><strong>Evaluación:</strong> Análisis de impacto</li><li><strong>Reporte:</strong> Si es necesario, reportar a autoridad (dentro de 72h)</li><li><strong>Mitigación:</strong> Medidas para limitar daño</li><li><strong>Comunicación:</strong> Informar a clientes afectados</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "communication-center-overview",
+    "contact-gdpr-privacy",
+    "email-integration-setup",
+    "automated-follow-ups"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik toestemming vragen voor transactionele emails?",
+        "en": "Do I need consent for transactional emails?",
+        "es": "¿Necesito consentimiento para emails transaccionales?"
+      },
+      "answer": {
+        "nl": "Nee, transactionele emails (confirmaties, facturen, wachtwoord resets) vallen onder 'legitiem belang' en vereisen geen marketing consent. Wel moet je altijd je privacy policy vermelden.",
+        "en": "No, transactional emails (confirmations, invoices, password resets) fall under 'legitimate interest' and don't require marketing consent. You must always mention your privacy policy.",
+        "es": "No, los emails transaccionales (confirmaciones, facturas, restablecimientos de contraseña) caen bajo 'interés legítimo' y no requieren consentimiento de marketing. Siempre debes mencionar tu política de privacidad."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe lang mag ik contact data bewaren?",
+        "en": "How long can I retain contact data?",
+        "es": "¿Cuánto tiempo puedo retener datos de contactos?"
+      },
+      "answer": {
+        "nl": "Zolang er een legitieme reden is: actieve sales relatie, lopende deal, contractuele verplichtingen. Voor inactieve contacts zonder deals: maximaal 3 jaar. Daarna moet je data verwijderen tenzij klant hernieuwde toestemming geeft.",
+        "en": "As long as there's a legitimate reason: active sales relationship, ongoing deal, contractual obligations. For inactive contacts without deals: maximum 3 years. After that you must delete data unless customer gives renewed consent.",
+        "es": "Mientras haya una razón legítima: relación de ventas activa, trato en curso, obligaciones contractuales. Para contactos inactivos sin tratos: máximo 3 años. Después debes eliminar datos a menos que el cliente dé consentimiento renovado."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik per ongeluk een marketing email stuur naar iemand die opt-out heeft?",
+        "en": "What if I accidentally send a marketing email to someone who opted out?",
+        "es": "¿Qué pasa si accidentalmente envío un email de marketing a alguien que optó por salir?"
+      },
+      "answer": {
+        "nl": "Tesoro blokkeert automatisch verzending naar contacts met opt-out. Maar als het toch gebeurt: (1) Excuses aanbieden direct, (2) Bevestig dat ze op suppression lijst staan, (3) Documenteer incident. Eenmalige fout is meestal geen GDPR overtreding, maar systematisch wel.",
+        "en": "Tesoro automatically blocks sending to contacts with opt-out. But if it happens anyway: (1) Apologize immediately, (2) Confirm they're on suppression list, (3) Document incident. One-time error is usually not a GDPR violation, but systematic is.",
+        "es": "Tesoro bloquea automáticamente el envío a contactos con opt-out. Pero si sucede de todos modos: (1) Disculparse inmediatamente, (2) Confirmar que están en lista de supresión, (3) Documentar incidente. Un error único generalmente no es una violación de GDPR, pero sistemático sí."
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "id": "contact-types-explained",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:10:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "leads", "relations", "contact-types", "organization"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["tesoro contact types", "leads vs contacts", "buyer seller relation", "crm contact organization", "contact categories"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contacttypen Uitgelegd: Leads, Contacts en Relations",
+      "en": "Contact Types Explained: Leads, Contacts and Relations",
+      "es": "Tipos de Contactos Explicados: Leads, Contactos y Relations"
+    },
+    "description": {
+      "nl": "Begrijp het verschil tussen Leads, Contacts en Relations in Tesoro CRM en wanneer je elk type moet gebruiken.",
+      "en": "Understand the difference between Leads, Contacts and Relations in Tesoro CRM and when to use each type.",
+      "es": "Entiende la diferencia entre Leads, Contactos y Relations en Tesoro CRM y cuándo usar cada tipo."
+    },
+    "icon": "group"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "overview",
+      "title": {
+        "nl": "Drie Soorten Contacten in Tesoro",
+        "en": "Three Types of Contacts in Tesoro",
+        "es": "Tres Tipos de Contactos en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro CRM biedt drie verschillende manieren om mensen en bedrijven op te slaan, elk geoptimaliseerd voor een specifiek doel:</p><ol><li><strong>Leads:</strong> Ongekwalificeerde prospects met specifieke woning voorkeuren</li><li><strong>Contacts:</strong> Je volledige database met gekwalificeerde klanten</li><li><strong>Relations:</strong> Zakelijke partners (ontwikkelaars, makelaars, banken)</li></ol><p>Het kiezen van het juiste type helpt je om:</p><ul><li>Betere filtering en segmentatie te gebruiken</li><li>De juiste workflows te activeren</li><li>Relevante velden te zien</li><li>Effectiever te communiceren</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro CRM offers three different ways to store people and companies, each optimized for a specific purpose:</p><ol><li><strong>Leads:</strong> Unqualified prospects with specific property preferences</li><li><strong>Contacts:</strong> Your complete database with qualified clients</li><li><strong>Relations:</strong> Business partners (developers, brokers, banks)</li></ol><p>Choosing the right type helps you:</p><ul><li>Use better filtering and segmentation</li><li>Activate the right workflows</li><li>See relevant fields</li><li>Communicate more effectively</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro CRM ofrece tres formas diferentes de almacenar personas y empresas, cada una optimizada para un propósito específico:</p><ol><li><strong>Leads:</strong> Prospectos no calificados con preferencias de propiedad específicas</li><li><strong>Contactos:</strong> Tu base de datos completa con clientes calificados</li><li><strong>Relations:</strong> Socios comerciales (desarrolladores, corredores, bancos)</li></ol><p>Elegir el tipo correcto te ayuda a:</p><ul><li>Usar mejor filtrado y segmentación</li><li>Activar los flujos de trabajo correctos</li><li>Ver campos relevantes</li><li>Comunicarte más efectivamente</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "leads-explained",
+      "title": {
+        "nl": "Leads: Ongekwalificeerde Prospects",
+        "en": "Leads: Unqualified Prospects",
+        "es": "Leads: Prospectos No Calificados"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Wat zijn Leads?</h3><p>Leads zijn potentiële klanten die interesse hebben getoond maar nog niet gekwalificeerd zijn als serieuze koper of verkoper.</p><h3>Wanneer Gebruik je Leads?</h3><ul><li>Iemand vult een formulier in op je website</li><li>Je ontvangt een email met een vraag</li><li>Iemand belt voor informatie</li><li>Een referral van een bestaande klant</li><li>MLS inquiry of lead generation campagne</li></ul><h3>Lead-Specifieke Velden</h3><p><strong>Status tracking:</strong></p><ul><li>Prospect (eerste contact)</li><li>Qualified (geselecteerd als serieus)</li><li>Negotiating (in gesprek)</li><li>Won (geconverteerd naar klant)</li><li>Lost (niet geïnteresseerd)</li></ul><p><strong>Lead bron:</strong></p><ul><li>Website</li><li>Referral</li><li>MLS</li><li>Marketing campagne</li><li>Manual entry</li></ul><p><strong>Property preferences:</strong></p><ul><li>Property type (apartment, house, villa, land)</li><li>Preferred locations</li><li>Budget range (min/max price)</li><li>Size requirements (min/max area)</li><li>Bedrooms/bathrooms needed</li></ul><p><strong>Timing & urgency:</strong></p><ul><li>Urgency level (low, medium, high)</li><li>Expected timeframe</li><li>Move-in date preference</li></ul><h3>Van Lead naar Contact</h3><p>Wanneer een lead gekwalificeerd is (serieuze koper met budget), converteer je deze naar een Contact. De lead informatie blijft bewaard, maar je krijgt toegang tot meer geavanceerde contact features.</p>"
+        },
+        "en": {
+          "text": "<h3>What are Leads?</h3><p>Leads are potential clients who have shown interest but aren't yet qualified as serious buyers or sellers.</p><h3>When to Use Leads?</h3><ul><li>Someone fills out a form on your website</li><li>You receive an email with a question</li><li>Someone calls for information</li><li>A referral from an existing client</li><li>MLS inquiry or lead generation campaign</li></ul><h3>Lead-Specific Fields</h3><p><strong>Status tracking:</strong></p><ul><li>Prospect (first contact)</li><li>Qualified (selected as serious)</li><li>Negotiating (in discussion)</li><li>Won (converted to client)</li><li>Lost (not interested)</li></ul><p><strong>Lead source:</strong></p><ul><li>Website</li><li>Referral</li><li>MLS</li><li>Marketing campaign</li><li>Manual entry</li></ul><p><strong>Property preferences:</strong></p><ul><li>Property type (apartment, house, villa, land)</li><li>Preferred locations</li><li>Budget range (min/max price)</li><li>Size requirements (min/max area)</li><li>Bedrooms/bathrooms needed</li></ul><p><strong>Timing & urgency:</strong></p><ul><li>Urgency level (low, medium, high)</li><li>Expected timeframe</li><li>Move-in date preference</li></ul><h3>From Lead to Contact</h3><p>When a lead is qualified (serious buyer with budget), you convert them to a Contact. The lead information is preserved, but you get access to more advanced contact features.</p>"
+        },
+        "es": {
+          "text": "<h3>¿Qué son los Leads?</h3><p>Los leads son clientes potenciales que han mostrado interés pero aún no están calificados como compradores o vendedores serios.</p><h3>¿Cuándo Usar Leads?</h3><ul><li>Alguien completa un formulario en tu sitio web</li><li>Recibes un email con una pregunta</li><li>Alguien llama para información</li><li>Una referencia de un cliente existente</li><li>Consulta MLS o campaña de generación de leads</li></ul><h3>Campos Específicos de Lead</h3><p><strong>Seguimiento de estado:</strong></p><ul><li>Prospect (primer contacto)</li><li>Qualified (seleccionado como serio)</li><li>Negotiating (en discusión)</li><li>Won (convertido a cliente)</li><li>Lost (no interesado)</li></ul><p><strong>Fuente de lead:</strong></p><ul><li>Website</li><li>Referral</li><li>MLS</li><li>Campaña de marketing</li><li>Manual entry</li></ul><p><strong>Preferencias de propiedad:</strong></p><ul><li>Tipo de propiedad (apartamento, casa, villa, terreno)</li><li>Ubicaciones preferidas</li><li>Rango de presupuesto (precio mín/máx)</li><li>Requisitos de tamaño (área mín/máx)</li><li>Dormitorios/baños necesarios</li></ul><p><strong>Timing y urgencia:</strong></p><ul><li>Nivel de urgencia (bajo, medio, alto)</li><li>Marco de tiempo esperado</li><li>Preferencia de fecha de mudanza</li></ul><h3>De Lead a Contacto</h3><p>Cuando un lead está calificado (comprador serio con presupuesto), lo conviertes en un Contacto. La información del lead se conserva, pero obtienes acceso a características de contacto más avanzadas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "contacts-explained",
+      "title": {
+        "nl": "Contacts: Je Volledige Klantdatabase",
+        "en": "Contacts: Your Complete Client Database",
+        "es": "Contactos: Tu Base de Datos Completa de Clientes"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Wat zijn Contacts?</h3><p>Contacts zijn alle personen in je CRM - gekwalificeerde kopers, verkopers, huidige klanten, ex-klanten en potentiële klanten. Dit is je hoofddatabase.</p><h3>Wanneer Gebruik je Contacts?</h3><ul><li>Gekwalificeerde leads die serieus zijn</li><li>Bestaande klanten waarmee je werkt</li><li>Ex-klanten voor follow-up</li><li>Persoonlijke contacten in de vastgoed sector</li><li>Alle mensen die niet zakelijk partners zijn</li></ul><h3>Contact Capabilities</h3><p><strong>Complete informatie:</strong></p><ul><li>Persoonlijke gegevens (30+ velden)</li><li>Adres met GPS coördinaten</li><li>Meerdere telefoonnummers en emails</li><li>Communicatie voorkeuren</li><li>Custom fields voor extra informatie</li></ul><p><strong>Activiteiten & Historie:</strong></p><ul><li>Volledige communicatie geschiedenis</li><li>Emails, WhatsApp, SMS, calls</li><li>Meetings en afspraken</li><li>Notes en comments</li><li>Tasks en reminders</li></ul><p><strong>Koppelingen:</strong></p><ul><li>Deals (kooptrajecten)</li><li>Properties (woningen van interesse)</li><li>Projects (nieuwbouwprojecten)</li><li>Documents en bijlagen</li></ul><p><strong>Portal toegang:</strong></p><p>Je kunt een Contact converteren naar een Portal User. Dan kan deze persoon:</p><ul><li>Inloggen op het klantportaal</li><li>Woningen bekijken die je hebt toegewezen</li><li>Interesse aangeven in woningen</li><li>Notities achterlaten</li><li>Viewing aanvragen indienen</li></ul>"
+        },
+        "en": {
+          "text": "<h3>What are Contacts?</h3><p>Contacts are all people in your CRM - qualified buyers, sellers, current clients, former clients and potential clients. This is your main database.</p><h3>When to Use Contacts?</h3><ul><li>Qualified leads who are serious</li><li>Current clients you're working with</li><li>Former clients for follow-up</li><li>Personal contacts in the real estate sector</li><li>All people who aren't business partners</li></ul><h3>Contact Capabilities</h3><p><strong>Complete information:</strong></p><ul><li>Personal details (30+ fields)</li><li>Address with GPS coordinates</li><li>Multiple phone numbers and emails</li><li>Communication preferences</li><li>Custom fields for extra information</li></ul><p><strong>Activities & History:</strong></p><ul><li>Complete communication history</li><li>Emails, WhatsApp, SMS, calls</li><li>Meetings and appointments</li><li>Notes and comments</li><li>Tasks and reminders</li></ul><p><strong>Links:</strong></p><ul><li>Deals (sales processes)</li><li>Properties (properties of interest)</li><li>Projects (new development projects)</li><li>Documents and attachments</li></ul><p><strong>Portal access:</strong></p><p>You can convert a Contact to a Portal User. Then this person can:</p><ul><li>Log in to the client portal</li><li>View properties you've assigned</li><li>Express interest in properties</li><li>Leave notes</li><li>Submit viewing requests</li></ul>"
+        },
+        "es": {
+          "text": "<h3>¿Qué son los Contactos?</h3><p>Los Contactos son todas las personas en tu CRM - compradores calificados, vendedores, clientes actuales, ex-clientes y clientes potenciales. Esta es tu base de datos principal.</p><h3>¿Cuándo Usar Contactos?</h3><ul><li>Leads calificados que son serios</li><li>Clientes actuales con los que estás trabajando</li><li>Ex-clientes para seguimiento</li><li>Contactos personales en el sector inmobiliario</li><li>Todas las personas que no son socios comerciales</li></ul><h3>Capacidades de Contacto</h3><p><strong>Información completa:</strong></p><ul><li>Detalles personales (más de 30 campos)</li><li>Dirección con coordenadas GPS</li><li>Múltiples números de teléfono y emails</li><li>Preferencias de comunicación</li><li>Campos personalizados para información extra</li></ul><p><strong>Actividades e Historial:</strong></p><ul><li>Historial de comunicación completo</li><li>Emails, WhatsApp, SMS, llamadas</li><li>Reuniones y citas</li><li>Notas y comentarios</li><li>Tareas y recordatorios</li></ul><p><strong>Enlaces:</strong></p><ul><li>Deals (procesos de venta)</li><li>Properties (propiedades de interés)</li><li>Projects (proyectos de nueva construcción)</li><li>Documentos y adjuntos</li></ul><p><strong>Acceso al portal:</strong></p><p>Puedes convertir un Contacto en un Usuario de Portal. Entonces esta persona puede:</p><ul><li>Iniciar sesión en el portal de cliente</li><li>Ver propiedades que has asignado</li><li>Expresar interés en propiedades</li><li>Dejar notas</li><li>Enviar solicitudes de visita</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "relations-explained",
+      "title": {
+        "nl": "Relations: Zakelijke Partners",
+        "en": "Relations: Business Partners",
+        "es": "Relations: Socios Comerciales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Wat zijn Relations?</h3><p>Relations zijn bedrijven en organisaties waarmee je zakelijk samenwerkt - niet individuele klanten maar business partners.</p><h3>Wanneer Gebruik je Relations?</h3><ul><li><strong>Developers:</strong> Projectontwikkelaars met nieuwbouwprojecten</li><li><strong>Agencies:</strong> Andere makelaars voor samenwerking</li><li><strong>Banks:</strong> Financiële instellingen voor hypotheken</li><li><strong>Vendors:</strong> Leveranciers van diensten</li><li><strong>Competitors:</strong> Concurrenten (voor marktanalyse)</li><li><strong>Sponsors:</strong> Sponsoren van events</li></ul><h3>Relation-Specifieke Velden</h3><p><strong>Bedrijfsinformatie:</strong></p><ul><li>Company name</li><li>Type (developer, agency, bank, vendor)</li><li>Website URL</li><li>Social media links (Facebook, Twitter)</li></ul><p><strong>Business terms:</strong></p><ul><li>Credit terms (betalingsvoorwaarden)</li><li>Commission agreements</li><li>Contract details</li></ul><p><strong>Meerdere Contactpersonen:</strong></p><p>Bij Relations kun je meerdere individuele contactpersonen koppelen:</p><ul><li>Sales manager</li><li>Project manager</li><li>Finance contact</li><li>Support contact</li></ul><p>Elke contactpersoon heeft eigen gegevens maar hoort bij dezelfde Relation.</p><h3>Portal Toegang voor Relations</h3><p>Relations kunnen ook portal toegang krijgen. Handig voor:</p><ul><li>Developers die hun projecten kunnen bijwerken</li><li>Partners die woningen kunnen uploaden</li><li>Leveranciers die hun diensten kunnen beheren</li></ul>"
+        },
+        "en": {
+          "text": "<h3>What are Relations?</h3><p>Relations are companies and organizations you work with commercially - not individual clients but business partners.</p><h3>When to Use Relations?</h3><ul><li><strong>Developers:</strong> Property developers with new construction projects</li><li><strong>Agencies:</strong> Other brokers for collaboration</li><li><strong>Banks:</strong> Financial institutions for mortgages</li><li><strong>Vendors:</strong> Service providers</li><li><strong>Competitors:</strong> Competitors (for market analysis)</li><li><strong>Sponsors:</strong> Event sponsors</li></ul><h3>Relation-Specific Fields</h3><p><strong>Company information:</strong></p><ul><li>Company name</li><li>Type (developer, agency, bank, vendor)</li><li>Website URL</li><li>Social media links (Facebook, Twitter)</li></ul><p><strong>Business terms:</strong></p><ul><li>Credit terms (payment conditions)</li><li>Commission agreements</li><li>Contract details</li></ul><p><strong>Multiple Contact Persons:</strong></p><p>For Relations you can link multiple individual contact persons:</p><ul><li>Sales manager</li><li>Project manager</li><li>Finance contact</li><li>Support contact</li></ul><p>Each contact person has their own details but belongs to the same Relation.</p><h3>Portal Access for Relations</h3><p>Relations can also get portal access. Useful for:</p><ul><li>Developers who can update their projects</li><li>Partners who can upload properties</li><li>Vendors who can manage their services</li></ul>"
+        },
+        "es": {
+          "text": "<h3>¿Qué son las Relations?</h3><p>Las Relations son empresas y organizaciones con las que trabajas comercialmente - no clientes individuales sino socios comerciales.</p><h3>¿Cuándo Usar Relations?</h3><ul><li><strong>Developers:</strong> Desarrolladores de propiedades con proyectos de nueva construcción</li><li><strong>Agencies:</strong> Otros corredores para colaboración</li><li><strong>Banks:</strong> Instituciones financieras para hipotecas</li><li><strong>Vendors:</strong> Proveedores de servicios</li><li><strong>Competitors:</strong> Competidores (para análisis de mercado)</li><li><strong>Sponsors:</strong> Patrocinadores de eventos</li></ul><h3>Campos Específicos de Relation</h3><p><strong>Información de empresa:</strong></p><ul><li>Nombre de empresa</li><li>Tipo (developer, agency, bank, vendor)</li><li>URL del sitio web</li><li>Enlaces de redes sociales (Facebook, Twitter)</li></ul><p><strong>Términos comerciales:</strong></p><ul><li>Términos de crédito (condiciones de pago)</li><li>Acuerdos de comisión</li><li>Detalles de contrato</li></ul><p><strong>Múltiples Personas de Contacto:</strong></p><p>Para Relations puedes vincular múltiples personas de contacto individuales:</p><ul><li>Gerente de ventas</li><li>Gerente de proyecto</li><li>Contacto de finanzas</li><li>Contacto de soporte</li></ul><p>Cada persona de contacto tiene sus propios detalles pero pertenece a la misma Relation.</p><h3>Acceso al Portal para Relations</h3><p>Las Relations también pueden obtener acceso al portal. Útil para:</p><ul><li>Desarrolladores que pueden actualizar sus proyectos</li><li>Socios que pueden cargar propiedades</li><li>Proveedores que pueden gestionar sus servicios</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "decision-guide",
+      "variant": "success",
+      "title": {
+        "nl": "Welk type moet ik kiezen?",
+        "en": "Which type should I choose?",
+        "es": "¿Qué tipo debo elegir?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Gebruik Lead wanneer:</strong></p><ul><li>Eerste contact met ongekwalificeerd prospect</li><li>Je wil specifieke woning voorkeuren bijhouden</li><li>Lead scoring en matching wil gebruiken</li></ul><p><strong>Gebruik Contact wanneer:</strong></p><ul><li>Gekwalificeerde koper of verkoper</li><li>Bestaande klant of ex-klant</li><li>Volledige database met alle personen</li></ul><p><strong>Gebruik Relation wanneer:</strong></p><ul><li>Zakelijke partner (bedrijf, niet persoon)</li><li>Developer, bank, agency, leverancier</li><li>Meerdere contactpersonen bij één bedrijf</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Use Lead when:</strong></p><ul><li>First contact with unqualified prospect</li><li>You want to track specific property preferences</li><li>Want to use lead scoring and matching</li></ul><p><strong>Use Contact when:</strong></p><ul><li>Qualified buyer or seller</li><li>Existing client or former client</li><li>Complete database with all people</li></ul><p><strong>Use Relation when:</strong></p><ul><li>Business partner (company, not person)</li><li>Developer, bank, agency, vendor</li><li>Multiple contact persons at one company</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Usa Lead cuando:</strong></p><ul><li>Primer contacto con prospecto no calificado</li><li>Quieres seguir preferencias de propiedad específicas</li><li>Quieres usar puntuación y matching de leads</li></ul><p><strong>Usa Contacto cuando:</strong></p><ul><li>Comprador o vendedor calificado</li><li>Cliente existente o ex-cliente</li><li>Base de datos completa con todas las personas</li></ul><p><strong>Usa Relation cuando:</strong></p><ul><li>Socio comercial (empresa, no persona)</li><li>Desarrollador, banco, agencia, proveedor</li><li>Múltiples personas de contacto en una empresa</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "creating-contacts-step-by-step",
+    "contact-scoring-qualification",
+    "contact-relationships-linking"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een Lead converteren naar een Contact?",
+        "en": "Can I convert a Lead to a Contact?",
+        "es": "¿Puedo convertir un Lead en un Contacto?"
+      },
+      "answer": {
+        "nl": "Ja, wanneer een lead gekwalificeerd is kun je deze converteren. Alle lead informatie blijft bewaard en wordt overgenomen in het contact record.",
+        "en": "Yes, when a lead is qualified you can convert them. All lead information is preserved and transferred to the contact record.",
+        "es": "Sí, cuando un lead está calificado puedes convertirlo. Toda la información del lead se conserva y se transfiere al registro de contacto."
+      }
+    },
+    {
+      "question": {
+        "nl": "Moet ik voor elke persoon bij een bedrijf een aparte Relation aanmaken?",
+        "en": "Should I create a separate Relation for each person at a company?",
+        "es": "¿Debo crear una Relation separada para cada persona en una empresa?"
+      },
+      "answer": {
+        "nl": "Nee. Maak één Relation aan voor het bedrijf en koppel daar meerdere contactpersonen aan. Zo houd je alle mensen bij één bedrijf georganiseerd.",
+        "en": "No. Create one Relation for the company and link multiple contact persons to it. This keeps all people at one company organized.",
+        "es": "No. Crea una Relation para la empresa y vincula múltiples personas de contacto a ella. Esto mantiene organizadas a todas las personas en una empresa."
+      }
+    }
+  ]
+}

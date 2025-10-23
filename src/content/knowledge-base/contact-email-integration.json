@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "contact-email-integration",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:55:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "email", "communication", "gmail", "outlook"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["email integration tesoro", "send emails crm", "gmail integration", "outlook sync", "email tracking"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Email Integratie: Communiceer Direct vanuit je CRM",
+      "en": "Email Integration: Communicate Directly from Your CRM",
+      "es": "Integración de Email: Comunica Directamente desde tu CRM"
+    },
+    "description": {
+      "nl": "Verstuur en ontvang emails direct vanuit Tesoro met Gmail en Outlook integratie.",
+      "en": "Send and receive emails directly from Tesoro with Gmail and Outlook integration.",
+      "es": "Envía y recibe emails directamente desde Tesoro con integración de Gmail y Outlook."
+    },
+    "icon": "email"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "email-integration-overview",
+      "title": {
+        "nl": "Email Integratie Instellen",
+        "en": "Setting Up Email Integration",
+        "es": "Configurar Integración de Email"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Ondersteunde Email Providers</h3><ul><li><strong>Gmail:</strong> OAuth verbinding (aanbevolen)</li><li><strong>Outlook/Office 365:</strong> OAuth verbinding</li><li><strong>IMAP/SMTP:</strong> Elke email provider (custom)</li></ul><h3>Gmail Verbinden</h3><ol><li>Ga naar <strong>Settings > Email Accounts</strong></li><li>Klik <strong>+ Connect Gmail</strong></li><li>Log in met je Google account</li><li>Geef Tesoro toegang tot email</li><li>Je Gmail is nu verbonden</li></ol><h3>Outlook Verbinden</h3><ol><li>Ga naar <strong>Settings > Email Accounts</strong></li><li>Klik <strong>+ Connect Outlook</strong></li><li>Log in met je Microsoft account</li><li>Geef Tesoro toegang tot email</li><li>Je Outlook is nu verbonden</li></ol><h3>Custom SMTP/IMAP</h3><p>Voor andere providers:</p><ol><li>Ga naar <strong>Settings > Email Accounts > SMTP/IMAP</strong></li><li>Vul in:  <ul><li>SMTP server</li><li>SMTP port (meestal 587)</li><li>IMAP server</li><li>IMAP port (meestal 993)</li><li>Username & password</li></ul></li><li>Test verbinding</li><li>Klik <strong>Save</strong></li></ol>"
+        },
+        "en": {
+          "text": "<h3>Supported Email Providers</h3><ul><li><strong>Gmail:</strong> OAuth connection (recommended)</li><li><strong>Outlook/Office 365:</strong> OAuth connection</li><li><strong>IMAP/SMTP:</strong> Any email provider (custom)</li></ul><h3>Connecting Gmail</h3><ol><li>Go to <strong>Settings > Email Accounts</strong></li><li>Click <strong>+ Connect Gmail</strong></li><li>Log in with your Google account</li><li>Give Tesoro access to email</li><li>Your Gmail is now connected</li></ol><h3>Connecting Outlook</h3><ol><li>Go to <strong>Settings > Email Accounts</strong></li><li>Click <strong>+ Connect Outlook</strong></li><li>Log in with your Microsoft account</li><li>Give Tesoro access to email</li><li>Your Outlook is now connected</li></ol><h3>Custom SMTP/IMAP</h3><p>For other providers:</p><ol><li>Go to <strong>Settings > Email Accounts > SMTP/IMAP</strong></li><li>Fill in:  <ul><li>SMTP server</li><li>SMTP port (usually 587)</li><li>IMAP server</li><li>IMAP port (usually 993)</li><li>Username & password</li></ul></li><li>Test connection</li><li>Click <strong>Save</strong></li></ol>"
+        },
+        "es": {
+          "text": "<h3>Proveedores de Email Soportados</h3><ul><li><strong>Gmail:</strong> Conexión OAuth (recomendado)</li><li><strong>Outlook/Office 365:</strong> Conexión OAuth</li><li><strong>IMAP/SMTP:</strong> Cualquier proveedor de email (personalizado)</li></ul><h3>Conectar Gmail</h3><ol><li>Ve a <strong>Settings > Email Accounts</strong></li><li>Haz clic en <strong>+ Connect Gmail</strong></li><li>Inicia sesión con tu cuenta de Google</li><li>Dale acceso a Tesoro al email</li><li>Tu Gmail ahora está conectado</li></ol><h3>Conectar Outlook</h3><ol><li>Ve a <strong>Settings > Email Accounts</strong></li><li>Haz clic en <strong>+ Connect Outlook</strong></li><li>Inicia sesión con tu cuenta de Microsoft</li><li>Dale acceso a Tesoro al email</li><li>Tu Outlook ahora está conectado</li></ol><h3>SMTP/IMAP Personalizado</h3><p>Para otros proveedores:</p><ol><li>Ve a <strong>Settings > Email Accounts > SMTP/IMAP</strong></li><li>Completa:  <ul><li>Servidor SMTP</li><li>Puerto SMTP (generalmente 587)</li><li>Servidor IMAP</li><li>Puerto IMAP (generalmente 993)</li><li>Nombre de usuario y contraseña</li></ul></li><li>Probar conexión</li><li>Hacer clic en <strong>Save</strong></li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "sending-emails",
+      "title": {
+        "nl": "Emails Versturen vanuit Tesoro",
+        "en": "Sending Emails from Tesoro",
+        "es": "Enviar Emails desde Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Email Versturen naar Contact</h3><ol><li>Open een contact</li><li>Klik <strong>Send Email</strong> knop</li><li>Email compose window opent</li><li>Vul in:  <ul><li><strong>To:</strong> Automatisch ingevuld met contact email</li><li><strong>Subject:</strong> Onderwerp regel</li><li><strong>Body:</strong> Email inhoud (rich text)</li><li><strong>Attachments:</strong> Voeg bestanden toe</li></ul></li><li>Klik <strong>Send</strong></li></ol><h3>Email Templates Gebruiken</h3><p>Gebruik templates voor snelle emails:</p><ol><li>Klik in compose window op <strong>Templates</strong></li><li>Selecteer een template</li><li>Template inhoud wordt ingevuld</li><li>Pas aan indien nodig</li><li>Verstuur</li></ol><h3>Email Features</h3><ul><li><strong>CC/BCC:</strong> Voeg extra ontvangers toe</li><li><strong>Scheduling:</strong> Plan email voor later</li><li><strong>Read receipts:</strong> Track of email is gelezen</li><li><strong>Attachments:</strong> Tot 25MB per email</li><li><strong>Signatures:</strong> Automatische handtekening</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Sending Email to Contact</h3><ol><li>Open a contact</li><li>Click <strong>Send Email</strong> button</li><li>Email compose window opens</li><li>Fill in:  <ul><li><strong>To:</strong> Automatically filled with contact email</li><li><strong>Subject:</strong> Subject line</li><li><strong>Body:</strong> Email content (rich text)</li><li><strong>Attachments:</strong> Add files</li></ul></li><li>Click <strong>Send</strong></li></ol><h3>Using Email Templates</h3><p>Use templates for quick emails:</p><ol><li>Click <strong>Templates</strong> in compose window</li><li>Select a template</li><li>Template content is filled in</li><li>Adjust if needed</li><li>Send</li></ol><h3>Email Features</h3><ul><li><strong>CC/BCC:</strong> Add extra recipients</li><li><strong>Scheduling:</strong> Schedule email for later</li><li><strong>Read receipts:</strong> Track if email is read</li><li><strong>Attachments:</strong> Up to 25MB per email</li><li><strong>Signatures:</strong> Automatic signature</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Enviar Email a Contacto</h3><ol><li>Abrir un contacto</li><li>Hacer clic en botón <strong>Send Email</strong></li><li>Se abre ventana de composición de email</li><li>Completar:  <ul><li><strong>Para:</strong> Automáticamente completado con email del contacto</li><li><strong>Asunto:</strong> Línea de asunto</li><li><strong>Cuerpo:</strong> Contenido del email (texto enriquecido)</li><li><strong>Adjuntos:</strong> Agregar archivos</li></ul></li><li>Hacer clic en <strong>Send</strong></li></ol><h3>Usar Plantillas de Email</h3><p>Usar plantillas para emails rápidos:</p><ol><li>Hacer clic en <strong>Templates</strong> en ventana de composición</li><li>Seleccionar una plantilla</li><li>El contenido de la plantilla se completa</li><li>Ajustar si es necesario</li><li>Enviar</li></ol><h3>Características de Email</h3><ul><li><strong>CC/BCC:</strong> Agregar destinatarios adicionales</li><li><strong>Programación:</strong> Programar email para más tarde</li><li><strong>Recibos de lectura:</strong> Rastrear si el email es leído</li><li><strong>Adjuntos:</strong> Hasta 25MB por email</li><li><strong>Firmas:</strong> Firma automática</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "email-tracking",
+      "variant": "info",
+      "title": {
+        "nl": "Email Geschiedenis Tracking",
+        "en": "Email History Tracking",
+        "es": "Seguimiento de Historial de Email"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Alle emails worden automatisch bijgehouden:</strong></p><ul><li>Verzonden emails verschijnen in contact activity</li><li>Ontvangen emails worden gekoppeld aan contact</li><li>Email threads behouden context</li><li>Attachments worden opgeslagen</li><li>Timestamp en status tracking</li></ul><p><strong>Email History Bekijken:</strong></p><p>Open contact → <strong>Emails</strong> tab → Zie alle email communicatie</p>"
+        },
+        "en": {
+          "text": "<p><strong>All emails are automatically tracked:</strong></p><ul><li>Sent emails appear in contact activity</li><li>Received emails are linked to contact</li><li>Email threads maintain context</li><li>Attachments are saved</li><li>Timestamp and status tracking</li></ul><p><strong>Viewing Email History:</strong></p><p>Open contact → <strong>Emails</strong> tab → See all email communication</p>"
+        },
+        "es": {
+          "text": "<p><strong>Todos los emails se rastrean automáticamente:</strong></p><ul><li>Los emails enviados aparecen en actividad del contacto</li><li>Los emails recibidos se vinculan al contacto</li><li>Los hilos de email mantienen el contexto</li><li>Los adjuntos se guardan</li><li>Seguimiento de marca de tiempo y estado</li></ul><p><strong>Ver Historial de Email:</strong></p><p>Abrir contacto → pestaña <strong>Emails</strong> → Ver toda la comunicación por email</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-notes-history",
+    "contact-tasks-reminders",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Worden mijn emails ook gesynchroniseerd met Gmail/Outlook?",
+        "en": "Are my emails also synced with Gmail/Outlook?",
+        "es": "¿Mis emails también se sincronizan con Gmail/Outlook?"
+      },
+      "answer": {
+        "nl": "Ja, emails verzonden vanuit Tesoro verschijnen ook in je Gmail/Outlook 'Sent' folder. Ontvangen emails worden bi-directioneel gesynchroniseerd.",
+        "en": "Yes, emails sent from Tesoro also appear in your Gmail/Outlook 'Sent' folder. Received emails are bi-directionally synced.",
+        "es": "Sí, los emails enviados desde Tesoro también aparecen en tu carpeta 'Enviados' de Gmail/Outlook. Los emails recibidos se sincronizan bidireccionalmente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik bulk emails versturen naar meerdere contacten?",
+        "en": "Can I send bulk emails to multiple contacts?",
+        "es": "¿Puedo enviar emails masivos a múltiples contactos?"
+      },
+      "answer": {
+        "nl": "Ja, selecteer meerdere contacten in de lijst, klik Bulk Actions > Send Email. Je kunt een template gebruiken met variabelen voor personalisatie.",
+        "en": "Yes, select multiple contacts in the list, click Bulk Actions > Send Email. You can use a template with variables for personalization.",
+        "es": "Sí, selecciona múltiples contactos en la lista, haz clic en Bulk Actions > Send Email. Puedes usar una plantilla con variables para personalización."
+      }
+    }
+  ]
+}

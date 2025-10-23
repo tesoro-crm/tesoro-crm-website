@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "id": "deal-kanban-board-guide",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T10:45:00Z",
+    "authorId": "carlos-martinez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["deals", "pipeline", "sales"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
+    "keywords": ["kanban board", "drag and drop", "deal visualization", "pipeline management", "visual sales"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Kanban board guide: visueel deal management",
+      "en": "Kanban Board Guide: Visual Deal Management",
+      "es": "Guía de tablero Kanban: gestión visual de deals"
+    },
+    "description": {
+      "nl": "Leer hoe je de drag-and-drop Kanban board gebruikt voor intuïtief deal management, snelle status updates, en team visibility.",
+      "en": "Learn how to use the drag-and-drop Kanban board for intuitive deal management, quick status updates, and team visibility.",
+      "es": "Aprende cómo usar el tablero Kanban de arrastrar y soltar para gestión intuitiva de deals, actualizaciones rápidas de estado y visibilidad del equipo."
+    },
+    "icon": "view_kanban"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>De Kanban board view is een visuele, intuïtieve manier om je deal pipeline te managen. Met drag-and-drop functionaliteit kun je snel deals verplaatsen tussen stages, team workload overzien, en bottlenecks identificeren.</p><p>Deze guide toont je hoe je maximaal profiteert van de Kanban interface voor efficient deal management.</p>"
+        },
+        "en": {
+          "text": "<p>The Kanban board view is a visual, intuitive way to manage your deal pipeline. With drag-and-drop functionality, you can quickly move deals between stages, oversee team workload, and identify bottlenecks.</p><p>This guide shows you how to maximize the Kanban interface for efficient deal management.</p>"
+        },
+        "es": {
+          "text": "<p>La vista de tablero Kanban es una forma visual e intuitiva de gestionar tu pipeline de deals. Con funcionalidad de arrastrar y soltar, puedes mover rápidamente deals entre etapas, supervisar la carga de trabajo del equipo e identificar cuellos de botella.</p><p>Esta guía te muestra cómo maximizar la interfaz Kanban para una gestión eficiente de deals.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "using-kanban",
+      "title": {
+        "nl": "Werken met de Kanban board",
+        "en": "Working with the Kanban Board",
+        "es": "Trabajando con el tablero Kanban"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Kanban view openen",
+            "en": "1. Open Kanban View",
+            "es": "1. Abrir vista Kanban"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Navigeer naar <strong>Deals</strong> in het hoofdmenu. De Kanban view is de default view die direct toont.</p><p><strong>View layout:</strong></p><ul><li><strong>Columns:</strong> Elke column representeert een pipeline stage</li><li><strong>Cards:</strong> Elke card is een individual deal</li><li><strong>Headers:</strong> Column headers tonen stage name en deal count</li><li><strong>Colors:</strong> Optional color coding per deal priority of type</li></ul>"
+            },
+            "en": {
+              "text": "<p>Navigate to <strong>Deals</strong> in the main menu. The Kanban view is the default view that shows immediately.</p><p><strong>View layout:</strong></p><ul><li><strong>Columns:</strong> Each column represents a pipeline stage</li><li><strong>Cards:</strong> Each card is an individual deal</li><li><strong>Headers:</strong> Column headers show stage name and deal count</li><li><strong>Colors:</strong> Optional color coding per deal priority or type</li></ul>"
+            },
+            "es": {
+              "text": "<p>Navega a <strong>Deals</strong> en el menú principal. La vista Kanban es la vista predeterminada que se muestra inmediatamente.</p><p><strong>Diseño de vista:</strong></p><ul><li><strong>Columnas:</strong> Cada columna representa una etapa del pipeline</li><li><strong>Tarjetas:</strong> Cada tarjeta es un deal individual</li><li><strong>Encabezados:</strong> Los encabezados de columna muestran nombre de etapa y conteo de deals</li><li><strong>Colores:</strong> Codificación de color opcional por prioridad o tipo de deal</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Deal cards lezen",
+            "en": "2. Read Deal Cards",
+            "es": "2. Leer tarjetas de deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Elke deal card toont belangrijke informatie at-a-glance:</p><ul><li><strong>Deal name:</strong> Title van de deal</li><li><strong>Contact name:</strong> Primary buyer/seller</li><li><strong>Deal value:</strong> Expected transaction value</li><li><strong>Property count:</strong> Aantal linked properties</li><li><strong>Owner avatar:</strong> Assigned agent</li><li><strong>Closing date:</strong> Expected closing date (indien set)</li><li><strong>Days in stage:</strong> Hoe lang deal in current stage is</li></ul>"
+            },
+            "en": {
+              "text": "<p>Each deal card shows important information at-a-glance:</p><ul><li><strong>Deal name:</strong> Title of the deal</li><li><strong>Contact name:</strong> Primary buyer/seller</li><li><strong>Deal value:</strong> Expected transaction value</li><li><strong>Property count:</strong> Number of linked properties</li><li><strong>Owner avatar:</strong> Assigned agent</li><li><strong>Closing date:</strong> Expected closing date (if set)</li><li><strong>Days in stage:</strong> How long deal has been in current stage</li></ul>"
+            },
+            "es": {
+              "text": "<p>Cada tarjeta de deal muestra información importante de un vistazo:</p><ul><li><strong>Nombre del deal:</strong> Título del deal</li><li><strong>Nombre del contacto:</strong> Comprador/vendedor principal</li><li><strong>Valor del deal:</strong> Valor de transacción esperado</li><li><strong>Conteo de propiedades:</strong> Número de propiedades vinculadas</li><li><strong>Avatar del propietario:</strong> Agente asignado</li><li><strong>Fecha de cierre:</strong> Fecha de cierre esperada (si está establecida)</li><li><strong>Días en etapa:</strong> Cuánto tiempo el deal ha estado en etapa actual</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Drag-and-drop deals",
+            "en": "3. Drag-and-Drop Deals",
+            "es": "3. Arrastrar y soltar deals"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Move deals tussen stages met intuïtieve drag-and-drop:</p><p><strong>To move a deal:</strong></p><ol><li>Click en hold op deal card</li><li>Drag card naar nieuwe stage column</li><li>Drop card in target column</li><li>System updates deal status automatically</li><li>Team receives real-time notification</li></ol><p><strong>Visual feedback:</strong></p><ul><li>Card highlights tijdens drag</li><li>Drop zone indicators in columns</li><li>Smooth animation tijdens move</li><li>Toast notification bij successful update</li></ul>"
+            },
+            "en": {
+              "text": "<p>Move deals between stages with intuitive drag-and-drop:</p><p><strong>To move a deal:</strong></p><ol><li>Click and hold on deal card</li><li>Drag card to new stage column</li><li>Drop card in target column</li><li>System updates deal status automatically</li><li>Team receives real-time notification</li></ol><p><strong>Visual feedback:</strong></p><ul><li>Card highlights during drag</li><li>Drop zone indicators in columns</li><li>Smooth animation during move</li><li>Toast notification on successful update</li></ul>"
+            },
+            "es": {
+              "text": "<p>Mueve deals entre etapas con arrastrar y soltar intuitivo:</p><p><strong>Para mover un deal:</strong></p><ol><li>Haz clic y mantén en tarjeta de deal</li><li>Arrastra tarjeta a nueva columna de etapa</li><li>Suelta tarjeta en columna objetivo</li><li>El sistema actualiza el estado del deal automáticamente</li><li>El equipo recibe notificación en tiempo real</li></ol><p><strong>Retroalimentación visual:</strong></p><ul><li>La tarjeta se resalta durante el arrastre</li><li>Indicadores de zona de soltar en columnas</li><li>Animación suave durante el movimiento</li><li>Notificación toast en actualización exitosa</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. Card ordering binnen columns",
+            "en": "4. Card Ordering Within Columns",
+            "es": "4. Ordenación de tarjetas dentro de columnas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Binnen elke column kun je deals ook reorderen om priority te indiceren:</p><ul><li>Drag deals up/down binnen same column</li><li>Top position = highest priority</li><li>System remembers je preferred ordering</li><li>Ordering is per-user (team members zien hun eigen order)</li></ul><p><strong>Sorting options:</strong></p><ul><li><strong>Manual:</strong> Jouw custom drag-drop order</li><li><strong>By value:</strong> Highest value deals first</li><li><strong>By date:</strong> Oldest/newest deals first</li><li><strong>By closing date:</strong> Soonest closing first</li></ul>"
+            },
+            "en": {
+              "text": "<p>Within each column you can also reorder deals to indicate priority:</p><ul><li>Drag deals up/down within same column</li><li>Top position = highest priority</li><li>System remembers your preferred ordering</li><li>Ordering is per-user (team members see their own order)</li></ul><p><strong>Sorting options:</strong></p><ul><li><strong>Manual:</strong> Your custom drag-drop order</li><li><strong>By value:</strong> Highest value deals first</li><li><strong>By date:</strong> Oldest/newest deals first</li><li><strong>By closing date:</strong> Soonest closing first</li></ul>"
+            },
+            "es": {
+              "text": "<p>Dentro de cada columna también puedes reordenar deals para indicar prioridad:</p><ul><li>Arrastra deals arriba/abajo dentro de la misma columna</li><li>Posición superior = mayor prioridad</li><li>El sistema recuerda tu ordenación preferida</li><li>La ordenación es por usuario (los miembros del equipo ven su propio orden)</li></ul><p><strong>Opciones de ordenación:</strong></p><ul><li><strong>Manual:</strong> Tu orden personalizado de arrastrar y soltar</li><li><strong>Por valor:</strong> Deals de mayor valor primero</li><li><strong>Por fecha:</strong> Deals más antiguos/nuevos primero</li><li><strong>Por fecha de cierre:</strong> Cierre más próximo primero</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "5. Filtering en searching",
+            "en": "5. Filtering and Searching",
+            "es": "5. Filtrado y búsqueda"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Filter de Kanban view om focused te blijven:</p><p><strong>Filter options:</strong></p><ul><li><strong>By owner:</strong> Show alleen jouw deals of specific team member</li><li><strong>By value range:</strong> Filter op deal value (€50K-€100K, etc.)</li><li><strong>By closing date:</strong> Deals closing binnen specific timeframe</li><li><strong>By property type:</strong> Filter op linked property types</li></ul><p><strong>Search functionality:</strong></p><ul><li>Search by deal name, contact name, property reference</li><li>Real-time filtering als je typt</li><li>Highlighted matches in cards</li></ul>"
+            },
+            "en": {
+              "text": "<p>Filter the Kanban view to stay focused:</p><p><strong>Filter options:</strong></p><ul><li><strong>By owner:</strong> Show only your deals or specific team member</li><li><strong>By value range:</strong> Filter by deal value (€50K-€100K, etc.)</li><li><strong>By closing date:</strong> Deals closing within specific timeframe</li><li><strong>By property type:</strong> Filter by linked property types</li></ul><p><strong>Search functionality:</strong></p><ul><li>Search by deal name, contact name, property reference</li><li>Real-time filtering as you type</li><li>Highlighted matches in cards</li></ul>"
+            },
+            "es": {
+              "text": "<p>Filtra la vista Kanban para mantenerte enfocado:</p><p><strong>Opciones de filtro:</strong></p><ul><li><strong>Por propietario:</strong> Mostrar solo tus deals o miembro específico del equipo</li><li><strong>Por rango de valor:</strong> Filtrar por valor de deal (€50K-€100K, etc.)</li><li><strong>Por fecha de cierre:</strong> Deals cerrando dentro de marco de tiempo específico</li><li><strong>Por tipo de propiedad:</strong> Filtrar por tipos de propiedad vinculados</li></ul><p><strong>Funcionalidad de búsqueda:</strong></p><ul><li>Buscar por nombre de deal, nombre de contacto, referencia de propiedad</li><li>Filtrado en tiempo real mientras escribes</li><li>Coincidencias resaltadas en tarjetas</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "6. Quick actions van cards",
+            "en": "6. Quick Actions from Cards",
+            "es": "6. Acciones rápidas desde tarjetas"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Elke deal card heeft quick action buttons voor common tasks:</p><ul><li><strong>View details:</strong> Click card om full deal view te openen</li><li><strong>Edit:</strong> Quick edit icon voor fast updates</li><li><strong>Add note:</strong> Direct note toevoegen zonder full view</li><li><strong>Schedule viewing:</strong> Quick meeting scheduling</li><li><strong>Send email:</strong> Direct email naar contact</li><li><strong>More actions:</strong> Menu met additional options</li></ul><p><strong>Hover actions:</strong></p><ul><li>Hover over card voor quick preview</li><li>See recent activities</li><li>View linked properties</li><li>See team members</li></ul>"
+            },
+            "en": {
+              "text": "<p>Each deal card has quick action buttons for common tasks:</p><ul><li><strong>View details:</strong> Click card to open full deal view</li><li><strong>Edit:</strong> Quick edit icon for fast updates</li><li><strong>Add note:</strong> Add note directly without full view</li><li><strong>Schedule viewing:</strong> Quick meeting scheduling</li><li><strong>Send email:</strong> Direct email to contact</li><li><strong>More actions:</strong> Menu with additional options</li></ul><p><strong>Hover actions:</strong></p><ul><li>Hover over card for quick preview</li><li>See recent activities</li><li>View linked properties</li><li>See team members</li></ul>"
+            },
+            "es": {
+              "text": "<p>Cada tarjeta de deal tiene botones de acción rápida para tareas comunes:</p><ul><li><strong>Ver detalles:</strong> Haz clic en tarjeta para abrir vista completa de deal</li><li><strong>Editar:</strong> Icono de edición rápida para actualizaciones rápidas</li><li><strong>Agregar nota:</strong> Agregar nota directamente sin vista completa</li><li><strong>Programar visita:</strong> Programación rápida de reunión</li><li><strong>Enviar email:</strong> Email directo al contacto</li><li><strong>Más acciones:</strong> Menú con opciones adicionales</li></ul><p><strong>Acciones al pasar el ratón:</strong></p><ul><li>Pasa el ratón sobre la tarjeta para vista previa rápida</li><li>Ver actividades recientes</li><li>Ver propiedades vinculadas</li><li>Ver miembros del equipo</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "tips",
+      "variant": "success",
+      "title": {
+        "nl": "Pro tips voor Kanban efficiency",
+        "en": "Pro Tips for Kanban Efficiency",
+        "es": "Consejos pro para eficiencia Kanban"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Daily review:</strong> Start je dag met Kanban board review</li><li><strong>Prioritize top:</strong> Keep highest priority deals at top van columns</li><li><strong>Color coding:</strong> Use deal types of priority levels voor visual organization</li><li><strong>Limit WIP:</strong> Avoid too many deals in single stage (work-in-progress limits)</li><li><strong>Quick updates:</strong> Use drag-drop voor snelle status changes instead van opening full view</li><li><strong>Team visibility:</strong> Regularly check team members' workload via filter</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Daily review:</strong> Start your day with Kanban board review</li><li><strong>Prioritize top:</strong> Keep highest priority deals at top of columns</li><li><strong>Color coding:</strong> Use deal types or priority levels for visual organization</li><li><strong>Limit WIP:</strong> Avoid too many deals in single stage (work-in-progress limits)</li><li><strong>Quick updates:</strong> Use drag-drop for fast status changes instead of opening full view</li><li><strong>Team visibility:</strong> Regularly check team members' workload via filter</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Revisión diaria:</strong> Comienza tu día con revisión del tablero Kanban</li><li><strong>Priorizar arriba:</strong> Mantén deals de mayor prioridad en la parte superior de columnas</li><li><strong>Codificación de colores:</strong> Usa tipos de deal o niveles de prioridad para organización visual</li><li><strong>Limitar WIP:</strong> Evita demasiados deals en una sola etapa (límites de trabajo en progreso)</li><li><strong>Actualizaciones rápidas:</strong> Usa arrastrar y soltar para cambios rápidos de estado en lugar de abrir vista completa</li><li><strong>Visibilidad del equipo:</strong> Revisa regularmente la carga de trabajo de miembros del equipo mediante filtro</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "deal-pipeline-overview",
+    "deal-stages-explained",
+    "deal-team-collaboration"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik per ongeluk een deal move?",
+        "en": "What happens if I accidentally move a deal?",
+        "es": "¿Qué pasa si accidentalmente muevo un deal?"
+      },
+      "answer": {
+        "nl": "Je kunt de deal direct terug draggen naar de vorige stage. Het systeem tracked alle status changes in de activity log, dus je kunt altijd zien wat er gebeurd is en wanneer. Voor extra zekerheid kun je ook de undo functie gebruiken direct na de move.",
+        "en": "You can immediately drag the deal back to the previous stage. The system tracks all status changes in the activity log, so you can always see what happened and when. For extra safety, you can also use the undo function immediately after the move.",
+        "es": "Puedes inmediatamente arrastrar el deal de vuelta a la etapa anterior. El sistema rastrea todos los cambios de estado en el registro de actividades, por lo que siempre puedes ver qué pasó y cuándo. Para seguridad extra, también puedes usar la función deshacer inmediatamente después del movimiento."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik custom columns toevoegen?",
+        "en": "Can I add custom columns?",
+        "es": "¿Puedo agregar columnas personalizadas?"
+      },
+      "answer": {
+        "nl": "Ja! Je kunt custom pipeline stages toevoegen via Settings > Pipeline Configuration. Nieuwe stages verschijnen automatisch als columns in de Kanban view. Je kunt ook stages hernoemen, reorderen, en business rules instellen per stage.",
+        "en": "Yes! You can add custom pipeline stages via Settings > Pipeline Configuration. New stages automatically appear as columns in the Kanban view. You can also rename stages, reorder them, and set business rules per stage.",
+        "es": "¡Sí! Puedes agregar etapas de pipeline personalizadas mediante Configuración > Configuración de Pipeline. Las nuevas etapas aparecen automáticamente como columnas en la vista Kanban. También puedes renombrar etapas, reordenarlas y establecer reglas de negocio por etapa."
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "id": "email-sync-troubleshooting",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "intermediate",
+    "tags": ["email", "sync", "gmail", "outlook", "troubleshooting"],
+    "featured": false,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1200&h=630&fit=crop",
+    "keywords": ["email sync problems", "gmail integration", "outlook sync", "email troubleshooting", "tesoro email"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Email synchronisatie problemen oplossen",
+      "en": "Fixing Email Synchronization Problems",
+      "es": "Solucionar problemas de sincronización de email"
+    },
+    "description": {
+      "nl": "Los Gmail en Outlook sync problemen op: emails worden niet geïmporteerd, sync stopt, of oudere emails ontbreken.",
+      "en": "Fix Gmail and Outlook sync problems: emails not importing, sync stops, or older emails missing.",
+      "es": "Soluciona problemas de sincronización de Gmail y Outlook: emails no se importan, sync se detiene, o faltan emails antiguos."
+    },
+    "icon": "sync_problem"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "common-sync-issues",
+      "title": {
+        "nl": "Veelvoorkomende sync problemen",
+        "en": "Common Sync Issues",
+        "es": "Problemas comunes de sincronización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem 1: Emails worden niet meer gesynchroniseerd</h4><p><strong>Diagnose:</strong></p><ol><li>Check sync status: Settings → Email → Connection Status</li><li>Look for: \"Last synced: X minutes ago\" (Should be < 15 min)</li><li>Check for error message (red banner)</li></ol><p><strong>Oplossingen:</strong></p><ol><li><strong>Reconnect account:</strong><ul><li>Settings → Email → Disconnect</li><li>Wait 30 seconds</li><li>Click \"Connect Gmail\" or \"Connect Outlook\"</li><li>Re-authenticate (allow all permissions!)</li></ul></li><li><strong>Check permissions:</strong><ul><li>Gmail: Verify Tesoro has \"Read/Send\" permissions</li><li>Outlook: Check OAuth permissions in Microsoft account</li></ul></li><li><strong>Revoke + reconnect (nuclear option):</strong><ul><li>Gmail: myaccount.google.com → Security → Third-party apps → Remove Tesoro</li><li>Outlook: account.microsoft.com → Privacy → Apps → Remove Tesoro</li><li>In Tesoro: Reconnect email</li></ul></li></ol><h4>❌ Probleem 2: Oude emails ontbreken (only recent emails)</h4><p><strong>Oorzaak:</strong> Initial sync limiet (default: laatste 30 dagen)</p><p><strong>Oplossing:</strong></p><ol><li>Settings → Email → Sync Settings</li><li>Change \"Sync from\" date:<ul><li>Last 30 days (default)</li><li>Last 90 days</li><li>Last 1 year</li><li>All emails (warning: kan lang duren!)</li></ul></li><li>Click <strong>Resync</strong></li><li>Wait for sync to complete (check progress bar)</li></ol><h4>❌ Probleem 3: Sommige emails wel, andere niet</h4><p><strong>Mogelijke oorzaken:</strong></p><ul><li><strong>Filters actief:</strong> Settings → Email → Filters → Disable all</li><li><strong>Folders excluded:</strong> Check of alle folders zijn ingeschakeld (Inbox, Sent, etc.)</li><li><strong>Size limit:</strong> Emails > 20MB worden geskipped</li><li><strong>Spam folder:</strong> Spam emails worden niet gesynchroniseerd (intentional)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem 1: Emails are no longer synchronizing</h4><p><strong>Diagnosis:</strong></p><ol><li>Check sync status: Settings → Email → Connection Status</li><li>Look for: \"Last synced: X minutes ago\" (Should be < 15 min)</li><li>Check for error message (red banner)</li></ol><p><strong>Solutions:</strong></p><ol><li><strong>Reconnect account:</strong><ul><li>Settings → Email → Disconnect</li><li>Wait 30 seconds</li><li>Click \"Connect Gmail\" or \"Connect Outlook\"</li><li>Re-authenticate (allow all permissions!)</li></ul></li><li><strong>Check permissions:</strong><ul><li>Gmail: Verify Tesoro has \"Read/Send\" permissions</li><li>Outlook: Check OAuth permissions in Microsoft account</li></ul></li><li><strong>Revoke + reconnect (nuclear option):</strong><ul><li>Gmail: myaccount.google.com → Security → Third-party apps → Remove Tesoro</li><li>Outlook: account.microsoft.com → Privacy → Apps → Remove Tesoro</li><li>In Tesoro: Reconnect email</li></ul></li></ol><h4>❌ Problem 2: Old emails missing (only recent emails)</h4><p><strong>Cause:</strong> Initial sync limit (default: last 30 days)</p><p><strong>Solution:</strong></p><ol><li>Settings → Email → Sync Settings</li><li>Change \"Sync from\" date:<ul><li>Last 30 days (default)</li><li>Last 90 days</li><li>Last 1 year</li><li>All emails (warning: can take long!)</li></ul></li><li>Click <strong>Resync</strong></li><li>Wait for sync to complete (check progress bar)</li></ol><h4>❌ Problem 3: Some emails yes, others no</h4><p><strong>Possible causes:</strong></p><ul><li><strong>Filters active:</strong> Settings → Email → Filters → Disable all</li><li><strong>Folders excluded:</strong> Check if all folders are enabled (Inbox, Sent, etc.)</li><li><strong>Size limit:</strong> Emails > 20MB are skipped</li><li><strong>Spam folder:</strong> Spam emails are not synchronized (intentional)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema 1: Los emails ya no se sincronizan</h4><p><strong>Diagnóstico:</strong></p><ol><li>Verifica estado de sync: Settings → Email → Connection Status</li><li>Busca: \"Last synced: X minutos atrás\" (Debería ser < 15 min)</li><li>Verifica mensaje de error (banner rojo)</li></ol><p><strong>Soluciones:</strong></p><ol><li><strong>Reconectar cuenta:</strong><ul><li>Settings → Email → Disconnect</li><li>Espera 30 segundos</li><li>Haz clic en \"Connect Gmail\" o \"Connect Outlook\"</li><li>Re-autentica (¡permite todos los permisos!)</li></ul></li><li><strong>Verifica permisos:</strong><ul><li>Gmail: Verifica que Tesoro tiene permisos \"Read/Send\"</li><li>Outlook: Verifica permisos OAuth en cuenta de Microsoft</li></ul></li><li><strong>Revocar + reconectar (opción nuclear):</strong><ul><li>Gmail: myaccount.google.com → Security → Third-party apps → Remove Tesoro</li><li>Outlook: account.microsoft.com → Privacy → Apps → Remove Tesoro</li><li>En Tesoro: Reconecta email</li></ul></li></ol><h4>❌ Problema 2: Faltan emails antiguos (solo emails recientes)</h4><p><strong>Causa:</strong> Límite de sincronización inicial (default: últimos 30 días)</p><p><strong>Solución:</strong></p><ol><li>Settings → Email → Sync Settings</li><li>Cambia fecha \"Sync from\":<ul><li>Last 30 days (default)</li><li>Last 90 days</li><li>Last 1 year</li><li>All emails (advertencia: ¡puede tomar mucho tiempo!)</li></ul></li><li>Haz clic en <strong>Resync</strong></li><li>Espera a que se complete sync (verifica barra de progreso)</li></ol><h4>❌ Problema 3: Algunos emails sí, otros no</h4><p><strong>Posibles causas:</strong></p><ul><li><strong>Filtros activos:</strong> Settings → Email → Filters → Desactiva todos</li><li><strong>Carpetas excluidas:</strong> Verifica si todas las carpetas están habilitadas (Inbox, Sent, etc.)</li><li><strong>Límite de tamaño:</strong> Emails > 20MB se omiten</li><li><strong>Carpeta de spam:</strong> Los emails spam no se sincronizan (intencional)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "gmail-specific",
+      "title": {
+        "nl": "Gmail-specifieke problemen",
+        "en": "Gmail-Specific Problems",
+        "es": "Problemas específicos de Gmail"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: \"Less secure apps blocked\" error</h4><p><strong>Dit is OUDE Gmail - niet meer relevant sinds 2022</strong></p><p>Tesoro gebruikt <strong>OAuth 2.0</strong> (modern, secure). Als je deze error ziet:</p><ol><li>Disconnect oude connectie</li><li>Connect opnieuw (OAuth flow)</li><li>Allow all permissions</li></ol><h4>❌ Probleem: Gmail rate limit exceeded</h4><p><strong>Symptomen:</strong> Sync werkt, maar emails komen langzaam binnen</p><p><strong>Oorzaak:</strong> Gmail API limits (max 250 quota units/gebruiker/seconde)</p><p><strong>Oplossing:</strong></p><ul><li>Wait 1-2 hours, sync resumes automatisch</li><li>Voor grote mailbox: Sync in batches (eerst 30 days, dan 90, etc.)</li><li>Dit is temporary - Gmail verhoogt limits na tijd</li></ul><h4>❌ Probleem: Labels verdwijnen of zijn incorrect</h4><p><strong>Oplossing:</strong></p><ol><li>Settings → Email → Gmail Labels</li><li>Click <strong>Refresh Labels</strong></li><li>Map Gmail labels to Tesoro categories</li><li>Resync emails</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: \"Less secure apps blocked\" error</h4><p><strong>This is OLD Gmail - not relevant since 2022</strong></p><p>Tesoro uses <strong>OAuth 2.0</strong> (modern, secure). If you see this error:</p><ol><li>Disconnect old connection</li><li>Connect again (OAuth flow)</li><li>Allow all permissions</li></ol><h4>❌ Problem: Gmail rate limit exceeded</h4><p><strong>Symptoms:</strong> Sync works, but emails come in slowly</p><p><strong>Cause:</strong> Gmail API limits (max 250 quota units/user/second)</p><p><strong>Solution:</strong></p><ul><li>Wait 1-2 hours, sync resumes automatically</li><li>For large mailbox: Sync in batches (first 30 days, then 90, etc.)</li><li>This is temporary - Gmail increases limits over time</li></ul><h4>❌ Problem: Labels disappear or are incorrect</h4><p><strong>Solution:</strong></p><ol><li>Settings → Email → Gmail Labels</li><li>Click <strong>Refresh Labels</strong></li><li>Map Gmail labels to Tesoro categories</li><li>Resync emails</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: Error \"Less secure apps blocked\"</h4><p><strong>Esto es Gmail ANTIGUO - no relevante desde 2022</strong></p><p>Tesoro usa <strong>OAuth 2.0</strong> (moderno, seguro). Si ves este error:</p><ol><li>Desconecta conexión antigua</li><li>Conecta de nuevo (flujo OAuth)</li><li>Permite todos los permisos</li></ol><h4>❌ Problema: Límite de tasa de Gmail excedido</h4><p><strong>Síntomas:</strong> Sync funciona, pero los emails llegan lentamente</p><p><strong>Causa:</strong> Límites de API de Gmail (máx 250 unidades de cuota/usuario/segundo)</p><p><strong>Solución:</strong></p><ul><li>Espera 1-2 horas, sync se reanuda automáticamente</li><li>Para buzón grande: Sincroniza en lotes (primero 30 días, luego 90, etc.)</li><li>Esto es temporal - Gmail aumenta límites con el tiempo</li></ul><h4>❌ Problema: Las etiquetas desaparecen o son incorrectas</h4><p><strong>Solución:</strong></p><ol><li>Settings → Email → Gmail Labels</li><li>Haz clic en <strong>Refresh Labels</strong></li><li>Mapea etiquetas de Gmail a categorías de Tesoro</li><li>Resincroniza emails</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "outlook-specific",
+      "title": {
+        "nl": "Outlook-specifieke problemen",
+        "en": "Outlook-Specific Problems",
+        "es": "Problemas específicos de Outlook"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>❌ Probleem: Outlook sync failed after password change</h4><p><strong>Oplossing:</strong></p><ol><li>Settings → Email → Disconnect Outlook</li><li>Reconnect met nieuwe credentials</li><li>Re-authorize permissions</li></ol><h4>❌ Probleem: Office 365 admin blocked app</h4><p><strong>Symptomen:</strong> Error \"Admin consent required\"</p><p><strong>Oorzaak:</strong> Je bedrijf heeft third-party apps geblokkeerd</p><p><strong>Oplossing:</strong></p><ol><li>Contact je IT admin</li><li>Vraag om Tesoro CRM toe te voegen aan approved apps</li><li>Geef deze info aan IT:<ul><li>App name: Tesoro CRM</li><li>Required permissions: Mail.Read, Mail.Send, offline_access</li><li>Vendor: Tesoro (tesorohq.io)</li></ul></li></ol><h4>❌ Probleem: Shared mailbox niet synchronized</h4><p><strong>Oplossing:</strong></p><ol><li>Settings → Email → Outlook Settings</li><li>Enable \"Sync Shared Mailboxes\"</li><li>Select welke shared mailboxes</li><li>Klik Resync</li></ol>"
+        },
+        "en": {
+          "text": "<h4>❌ Problem: Outlook sync failed after password change</h4><p><strong>Solution:</strong></p><ol><li>Settings → Email → Disconnect Outlook</li><li>Reconnect with new credentials</li><li>Re-authorize permissions</li></ol><h4>❌ Problem: Office 365 admin blocked app</h4><p><strong>Symptoms:</strong> Error \"Admin consent required\"</p><p><strong>Cause:</strong> Your company has blocked third-party apps</p><p><strong>Solution:</strong></p><ol><li>Contact your IT admin</li><li>Ask to add Tesoro CRM to approved apps</li><li>Give this info to IT:<ul><li>App name: Tesoro CRM</li><li>Required permissions: Mail.Read, Mail.Send, offline_access</li><li>Vendor: Tesoro (tesorohq.io)</li></ul></li></ol><h4>❌ Problem: Shared mailbox not synchronized</h4><p><strong>Solution:</strong></p><ol><li>Settings → Email → Outlook Settings</li><li>Enable \"Sync Shared Mailboxes\"</li><li>Select which shared mailboxes</li><li>Click Resync</li></ol>"
+        },
+        "es": {
+          "text": "<h4>❌ Problema: Sync de Outlook falló después de cambio de contraseña</h4><p><strong>Solución:</strong></p><ol><li>Settings → Email → Disconnect Outlook</li><li>Reconecta con nuevas credenciales</li><li>Re-autoriza permisos</li></ol><h4>❌ Problema: Admin de Office 365 bloqueó app</h4><p><strong>Síntomas:</strong> Error \"Admin consent required\"</p><p><strong>Causa:</strong> Tu empresa ha bloqueado apps de terceros</p><p><strong>Solución:</strong></p><ol><li>Contacta a tu admin de IT</li><li>Pide agregar Tesoro CRM a apps aprobadas</li><li>Da esta información a IT:<ul><li>Nombre de app: Tesoro CRM</li><li>Permisos requeridos: Mail.Read, Mail.Send, offline_access</li><li>Vendor: Tesoro (tesorohq.io)</li></ul></li></ol><h4>❌ Problema: Buzón compartido no sincronizado</h4><p><strong>Solución:</strong></p><ol><li>Settings → Email → Outlook Settings</li><li>Habilita \"Sync Shared Mailboxes\"</li><li>Selecciona qué buzones compartidos</li><li>Haz clic en Resync</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "sync-best-practices",
+      "variant": "info",
+      "title": {
+        "nl": "Best practices voor email sync",
+        "en": "Best Practices for Email Sync",
+        "es": "Mejores prácticas para sincronización de email"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Initial sync:</strong> Start met 30 dagen, expand later naar meer</li><li><strong>Large mailboxes:</strong> Sync tijdens off-hours (night)</li><li><strong>Check sync weekly:</strong> Verify \"Last synced\" date</li><li><strong>Clean old emails:</strong> Archive emails > 2 years om mailbox klein te houden</li><li><strong>Reconnect quarterly:</strong> Fresh auth prevents issues</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Initial sync:</strong> Start with 30 days, expand later to more</li><li><strong>Large mailboxes:</strong> Sync during off-hours (night)</li><li><strong>Check sync weekly:</strong> Verify \"Last synced\" date</li><li><strong>Clean old emails:</strong> Archive emails > 2 years to keep mailbox small</li><li><strong>Reconnect quarterly:</strong> Fresh auth prevents issues</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Sincronización inicial:</strong> Comienza con 30 días, expande más tarde a más</li><li><strong>Buzones grandes:</strong> Sincroniza durante horas fuera de pico (noche)</li><li><strong>Verifica sync semanalmente:</strong> Verifica fecha \"Last synced\"</li><li><strong>Limpia emails antiguos:</strong> Archiva emails > 2 años para mantener buzón pequeño</li><li><strong>Reconecta trimestralmente:</strong> Autenticación fresca previene problemas</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "gmail-oauth-complete-setup",
+    "outlook-oauth-complete-setup",
+    "email-integration-setup",
+    "common-issues-solutions"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoelang duurt initial email sync?",
+        "en": "How long does initial email sync take?",
+        "es": "¿Cuánto tiempo toma la sincronización inicial de email?"
+      },
+      "answer": {
+        "nl": "Depends on mailbox size: 30 dagen ≈ 5-10 min, 1 jaar ≈ 30-60 min, All emails ≈ 1-3 hours. Sync gebeurt in background, je kunt gewoon doorwerken.",
+        "en": "Depends on mailbox size: 30 days ≈ 5-10 min, 1 year ≈ 30-60 min, All emails ≈ 1-3 hours. Sync happens in background, you can continue working.",
+        "es": "Depende del tamaño del buzón: 30 días ≈ 5-10 min, 1 año ≈ 30-60 min, Todos los emails ≈ 1-3 horas. La sincronización ocurre en segundo plano, puedes continuar trabajando."
+      }
+    }
+  ]
+}

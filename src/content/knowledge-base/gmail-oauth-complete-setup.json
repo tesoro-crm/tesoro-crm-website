@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "id": "gmail-oauth-complete-setup",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "intermediate",
+    "tags": ["integrations", "gmail", "oauth", "email", "google", "communication"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["gmail oauth setup", "connect gmail tesoro", "email integration", "google oauth", "gmail sync crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Gmail OAuth integratie: complete setup guide",
+      "en": "Gmail OAuth Integration: Complete Setup Guide",
+      "es": "Integración OAuth de Gmail: guía completa de configuración"
+    },
+    "description": {
+      "nl": "Verbind je Gmail account veilig met Tesoro via OAuth 2.0. Verstuur en ontvang emails direct vanuit je CRM met volledige synchronisatie en tracking.",
+      "en": "Securely connect your Gmail account to Tesoro via OAuth 2.0. Send and receive emails directly from your CRM with full synchronization and tracking.",
+      "es": "Conecta de forma segura tu cuenta de Gmail a Tesoro mediante OAuth 2.0. Envía y recibe emails directamente desde tu CRM con sincronización y seguimiento completos."
+    },
+    "icon": "mail"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "gmail-oauth-intro",
+      "title": {
+        "nl": "Waarom Gmail OAuth integratie?",
+        "en": "Why Gmail OAuth Integration?",
+        "es": "¿Por qué integración OAuth de Gmail?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De Gmail OAuth integratie stelt je in staat om je Gmail account veilig te verbinden met Tesoro CRM zonder je wachtwoord te delen. OAuth 2.0 is de moderne, veilige standaard voor email integratie die door Google wordt aanbevolen.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Verstuur emails direct vanuit Tesoro met je Gmail account</li><li>Alle verzonden emails worden automatisch opgeslagen in Gmail 'Sent' folder</li><li>Ontvangen emails worden bi-directioneel gesynchroniseerd</li><li>Email threads blijven gekoppeld aan contacts en deals</li><li>Geen wachtwoorden opslaan - OAuth tokens zijn veilig en kunnen op elk moment worden ingetrokken</li><li>Automatische email tracking en geschiedenis</li></ul><p>Deze guide leidt je door het complete setup proces, van Google account configuratie tot het versturen van je eerste email vanuit Tesoro.</p>"
+        },
+        "en": {
+          "text": "<p>The Gmail OAuth integration allows you to securely connect your Gmail account to Tesoro CRM without sharing your password. OAuth 2.0 is the modern, secure standard for email integration recommended by Google.</p><p><strong>Key benefits:</strong></p><ul><li>Send emails directly from Tesoro with your Gmail account</li><li>All sent emails are automatically saved to Gmail 'Sent' folder</li><li>Received emails are bi-directionally synchronized</li><li>Email threads remain linked to contacts and deals</li><li>No password storage - OAuth tokens are secure and can be revoked at any time</li><li>Automatic email tracking and history</li></ul><p>This guide walks you through the complete setup process, from Google account configuration to sending your first email from Tesoro.</p>"
+        },
+        "es": {
+          "text": "<p>La integración OAuth de Gmail te permite conectar de forma segura tu cuenta de Gmail a Tesoro CRM sin compartir tu contraseña. OAuth 2.0 es el estándar moderno y seguro para integración de correo electrónico recomendado por Google.</p><p><strong>Beneficios clave:</strong></p><ul><li>Envía emails directamente desde Tesoro con tu cuenta de Gmail</li><li>Todos los emails enviados se guardan automáticamente en la carpeta 'Enviados' de Gmail</li><li>Los emails recibidos se sincronizan bidireccionalmente</li><li>Los hilos de email permanecen vinculados a contactos y negocios</li><li>Sin almacenamiento de contraseña - los tokens OAuth son seguros y se pueden revocar en cualquier momento</li><li>Seguimiento automático de emails e historial</li></ul><p>Esta guía te lleva a través del proceso completo de configuración, desde la configuración de la cuenta de Google hasta el envío de tu primer email desde Tesoro.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "gmail-setup-steps",
+      "title": {
+        "nl": "Gmail OAuth configureren: stap voor stap",
+        "en": "Configuring Gmail OAuth: Step by Step",
+        "es": "Configurar OAuth de Gmail: paso a paso"
+      },
+      "subsections": [
+        {
+          "id": "step-1-google-requirements",
+          "title": {
+            "nl": "Stap 1: Google account vereisten controleren",
+            "en": "Step 1: Check Google Account Requirements",
+            "es": "Paso 1: verificar requisitos de cuenta de Google"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voordat je start met de OAuth setup, controleer deze vereisten:</p><h4>Account vereisten:</h4><ul><li><strong>Gmail account:</strong> Persoonlijke Gmail of Google Workspace account</li><li><strong>2FA aanbevolen:</strong> Twee-factor authenticatie voor extra beveiliging</li><li><strong>Toegangsrechten:</strong> Je moet eigenaar of admin zijn van het Google account</li><li><strong>Browser:</strong> Chrome, Firefox, Safari of Edge (laatste versie)</li></ul><h4>Google Workspace gebruikers:</h4><p>Als je een Google Workspace (G Suite) account hebt, controleer deze instellingen:</p><ol><li>Log in als admin op <a href=\"https://admin.google.com\" target=\"_blank\">admin.google.com</a></li><li>Ga naar <strong>Security → API Controls</strong></li><li>Verifieer dat <strong>Allow users to authorize apps</strong> is enabled</li><li>Check of Tesoro CRM in de whitelist staat (indien applicable)</li></ol><p><strong>Tip:</strong> Als je niet zeker bent of je account aan de vereisten voldoet, neem contact op met je Google Workspace admin.</p>"
+            },
+            "en": {
+              "text": "<p>Before starting the OAuth setup, check these requirements:</p><h4>Account requirements:</h4><ul><li><strong>Gmail account:</strong> Personal Gmail or Google Workspace account</li><li><strong>2FA recommended:</strong> Two-factor authentication for extra security</li><li><strong>Access rights:</strong> You must be owner or admin of the Google account</li><li><strong>Browser:</strong> Chrome, Firefox, Safari, or Edge (latest version)</li></ul><h4>Google Workspace users:</h4><p>If you have a Google Workspace (G Suite) account, check these settings:</p><ol><li>Log in as admin at <a href=\"https://admin.google.com\" target=\"_blank\">admin.google.com</a></li><li>Go to <strong>Security → API Controls</strong></li><li>Verify that <strong>Allow users to authorize apps</strong> is enabled</li><li>Check if Tesoro CRM is whitelisted (if applicable)</li></ol><p><strong>Tip:</strong> If you're unsure whether your account meets the requirements, contact your Google Workspace admin.</p>"
+            },
+            "es": {
+              "text": "<p>Antes de comenzar la configuración de OAuth, verifica estos requisitos:</p><h4>Requisitos de cuenta:</h4><ul><li><strong>Cuenta de Gmail:</strong> Cuenta de Gmail personal o Google Workspace</li><li><strong>2FA recomendado:</strong> Autenticación de dos factores para seguridad adicional</li><li><strong>Derechos de acceso:</strong> Debes ser propietario o administrador de la cuenta de Google</li><li><strong>Navegador:</strong> Chrome, Firefox, Safari o Edge (última versión)</li></ul><h4>Usuarios de Google Workspace:</h4><p>Si tienes una cuenta de Google Workspace (G Suite), verifica estas configuraciones:</p><ol><li>Inicia sesión como administrador en <a href=\"https://admin.google.com\" target=\"_blank\">admin.google.com</a></li><li>Ve a <strong>Security → API Controls</strong></li><li>Verifica que <strong>Allow users to authorize apps</strong> esté habilitado</li><li>Verifica si Tesoro CRM está en la lista blanca (si aplica)</li></ol><p><strong>Consejo:</strong> Si no estás seguro de si tu cuenta cumple con los requisitos, contacta a tu administrador de Google Workspace.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-2-connect-gmail",
+          "title": {
+            "nl": "Stap 2: Gmail verbinden met Tesoro",
+            "en": "Step 2: Connect Gmail to Tesoro",
+            "es": "Paso 2: conectar Gmail a Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Start het OAuth verbindingsproces vanuit Tesoro CRM.</p><h4>Verbindingsstappen:</h4><ol><li>Log in op Tesoro CRM</li><li>Klik op je <strong>avatar rechts boven</strong></li><li>Ga naar <strong>Settings → Email Accounts</strong></li><li>Klik <strong>+ Connect Email Account</strong></li><li>Selecteer <strong>Gmail</strong> uit de provider lijst</li><li>Klik <strong>Connect with Google</strong></li></ol><p>Je wordt nu doorgestuurd naar Google's OAuth login scherm.</p><h4>Google OAuth autorisatie:</h4><ol><li>Selecteer het Gmail account dat je wilt verbinden</li><li>Google toont welke permissies Tesoro vraagt:  <ul><li>Read, compose, send, and permanently delete all your email from Gmail</li><li>See, edit, create, and delete labels</li><li>Manage drafts and send emails</li></ul></li><li>Lees de permissies zorgvuldig door</li><li>Klik <strong>Allow</strong> om Tesoro toegang te geven</li><li>Je wordt teruggestuurd naar Tesoro</li></ol><p><strong>Beveiligingsmelding:</strong> Als Google een waarschuwing toont ('This app isn't verified'), klik <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. Dit is normaal voor OAuth apps en betekent niet dat Tesoro onveilig is.</p>"
+            },
+            "en": {
+              "text": "<p>Start the OAuth connection process from Tesoro CRM.</p><h4>Connection steps:</h4><ol><li>Log in to Tesoro CRM</li><li>Click your <strong>avatar in the top right</strong></li><li>Go to <strong>Settings → Email Accounts</strong></li><li>Click <strong>+ Connect Email Account</strong></li><li>Select <strong>Gmail</strong> from the provider list</li><li>Click <strong>Connect with Google</strong></li></ol><p>You will now be redirected to Google's OAuth login screen.</p><h4>Google OAuth authorization:</h4><ol><li>Select the Gmail account you want to connect</li><li>Google shows which permissions Tesoro requests:  <ul><li>Read, compose, send, and permanently delete all your email from Gmail</li><li>See, edit, create, and delete labels</li><li>Manage drafts and send emails</li></ul></li><li>Read the permissions carefully</li><li>Click <strong>Allow</strong> to grant Tesoro access</li><li>You will be redirected back to Tesoro</li></ol><p><strong>Security notice:</strong> If Google shows a warning ('This app isn't verified'), click <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. This is normal for OAuth apps and doesn't mean Tesoro is unsafe.</p>"
+            },
+            "es": {
+              "text": "<p>Inicia el proceso de conexión OAuth desde Tesoro CRM.</p><h4>Pasos de conexión:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Haz clic en tu <strong>avatar en la parte superior derecha</strong></li><li>Ve a <strong>Settings → Email Accounts</strong></li><li>Haz clic en <strong>+ Connect Email Account</strong></li><li>Selecciona <strong>Gmail</strong> de la lista de proveedores</li><li>Haz clic en <strong>Connect with Google</strong></li></ol><p>Ahora serás redirigido a la pantalla de inicio de sesión OAuth de Google.</p><h4>Autorización OAuth de Google:</h4><ol><li>Selecciona la cuenta de Gmail que deseas conectar</li><li>Google muestra qué permisos solicita Tesoro:  <ul><li>Leer, redactar, enviar y eliminar permanentemente todos tus correos electrónicos de Gmail</li><li>Ver, editar, crear y eliminar etiquetas</li><li>Gestionar borradores y enviar emails</li></ul></li><li>Lee los permisos cuidadosamente</li><li>Haz clic en <strong>Allow</strong> para otorgar acceso a Tesoro</li><li>Serás redirigido de vuelta a Tesoro</li></ol><p><strong>Aviso de seguridad:</strong> Si Google muestra una advertencia ('This app isn't verified'), haz clic en <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. Esto es normal para aplicaciones OAuth y no significa que Tesoro sea inseguro.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-3-verify-connection",
+          "title": {
+            "nl": "Stap 3: Verbinding verifiëren en configureren",
+            "en": "Step 3: Verify Connection and Configure",
+            "es": "Paso 3: verificar conexión y configurar"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na succesvolle OAuth autorisatie, verifieer en configureer je Gmail integratie.</p><h4>Verificatie:</h4><ol><li>Je wordt teruggestuurd naar <strong>Settings → Email Accounts</strong></li><li>Je Gmail account verschijnt nu in de lijst:  <ul><li><strong>Status:</strong> Connected (groen checkmark)</li><li><strong>Email:</strong> je Gmail adres</li><li><strong>Provider:</strong> Gmail (OAuth 2.0)</li><li><strong>Last Sync:</strong> Tijdstip van laatste synchronisatie</li></ul></li><li>Klik op je Gmail account om details te bekijken</li></ol><h4>Configuratie opties:</h4><p>Pas deze instellingen aan naar wens:</p><ul><li><strong>Default Account:</strong> Maak dit je standaard verzend account (toggle on)</li><li><strong>Signature:</strong> Voeg automatische email signature toe</li><li><strong>Sync Frequency:</strong> Hoe vaak emails worden gesynchroniseerd (standaard: elk 5 minuten)</li><li><strong>Track Opens:</strong> Enable email open tracking (aanbevolen)</li><li><strong>Track Links:</strong> Enable link click tracking</li><li><strong>Auto-Sync:</strong> Automatisch ontvangen emails importeren (aanbevolen: enabled)</li></ul><p>Klik <strong>Save Settings</strong> om wijzigingen op te slaan.</p><h4>Test je verbinding:</h4><ol><li>Klik <strong>Send Test Email</strong></li><li>Verstuur een test email naar jezelf</li><li>Controleer of email aankomt in je Gmail inbox</li><li>Verifieer dat email ook zichtbaar is in Tesoro email history</li></ol>"
+            },
+            "en": {
+              "text": "<p>After successful OAuth authorization, verify and configure your Gmail integration.</p><h4>Verification:</h4><ol><li>You are redirected back to <strong>Settings → Email Accounts</strong></li><li>Your Gmail account now appears in the list:  <ul><li><strong>Status:</strong> Connected (green checkmark)</li><li><strong>Email:</strong> your Gmail address</li><li><strong>Provider:</strong> Gmail (OAuth 2.0)</li><li><strong>Last Sync:</strong> Time of last synchronization</li></ul></li><li>Click on your Gmail account to view details</li></ol><h4>Configuration options:</h4><p>Adjust these settings as desired:</p><ul><li><strong>Default Account:</strong> Make this your default sending account (toggle on)</li><li><strong>Signature:</strong> Add automatic email signature</li><li><strong>Sync Frequency:</strong> How often emails are synchronized (default: every 5 minutes)</li><li><strong>Track Opens:</strong> Enable email open tracking (recommended)</li><li><strong>Track Links:</strong> Enable link click tracking</li><li><strong>Auto-Sync:</strong> Automatically import received emails (recommended: enabled)</li></ul><p>Click <strong>Save Settings</strong> to save changes.</p><h4>Test your connection:</h4><ol><li>Click <strong>Send Test Email</strong></li><li>Send a test email to yourself</li><li>Check if email arrives in your Gmail inbox</li><li>Verify that email is also visible in Tesoro email history</li></ol>"
+            },
+            "es": {
+              "text": "<p>Después de la autorización OAuth exitosa, verifica y configura tu integración de Gmail.</p><h4>Verificación:</h4><ol><li>Serás redirigido de vuelta a <strong>Settings → Email Accounts</strong></li><li>Tu cuenta de Gmail ahora aparece en la lista:  <ul><li><strong>Estado:</strong> Connected (marca de verificación verde)</li><li><strong>Email:</strong> tu dirección de Gmail</li><li><strong>Proveedor:</strong> Gmail (OAuth 2.0)</li><li><strong>Last Sync:</strong> Hora de la última sincronización</li></ul></li><li>Haz clic en tu cuenta de Gmail para ver detalles</li></ol><h4>Opciones de configuración:</h4><p>Ajusta estas configuraciones según lo deseado:</p><ul><li><strong>Default Account:</strong> Haz de esta tu cuenta de envío predeterminada (activar)</li><li><strong>Signature:</strong> Agregar firma de email automática</li><li><strong>Sync Frequency:</strong> Con qué frecuencia se sincronizan los emails (predeterminado: cada 5 minutos)</li><li><strong>Track Opens:</strong> Habilitar seguimiento de apertura de emails (recomendado)</li><li><strong>Track Links:</strong> Habilitar seguimiento de clics en enlaces</li><li><strong>Auto-Sync:</strong> Importar automáticamente emails recibidos (recomendado: habilitado)</li></ul><p>Haz clic en <strong>Save Settings</strong> para guardar cambios.</p><h4>Probar tu conexión:</h4><ol><li>Haz clic en <strong>Send Test Email</strong></li><li>Envía un email de prueba a ti mismo</li><li>Verifica si el email llega a tu bandeja de entrada de Gmail</li><li>Verifica que el email también sea visible en el historial de emails de Tesoro</li></ol>"
+            }
+          }
+        },
+        {
+          "id": "step-4-send-first-email",
+          "title": {
+            "nl": "Stap 4: Je eerste email versturen vanuit Tesoro",
+            "en": "Step 4: Send Your First Email from Tesoro",
+            "es": "Paso 4: enviar tu primer email desde Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Nu je Gmail is verbonden, kun je emails versturen vanuit Tesoro.</p><h4>Email versturen naar contact:</h4><ol><li>Open een contact in Tesoro</li><li>Klik <strong>Send Email</strong> knop (rechts boven)</li><li>Email compose window opent met:  <ul><li><strong>From:</strong> Je Gmail account (automatisch geselecteerd)</li><li><strong>To:</strong> Contact email (automatisch ingevuld)</li><li><strong>Subject:</strong> Vul onderwerp in</li><li><strong>Body:</strong> Type je bericht (rich text editor)</li></ul></li><li>Optioneel:  <ul><li>Voeg <strong>CC/BCC</strong> toe</li><li>Upload <strong>Attachments</strong> (max 25MB)</li><li>Selecteer een <strong>Template</strong> voor snelle emails</li><li>Plan email voor later via <strong>Schedule</strong></li></ul></li><li>Klik <strong>Send</strong></li></ol><h4>Verificatie:</h4><p>Na het versturen:</p><ul><li>Email wordt verzonden via je Gmail account</li><li>Email verschijnt in je Gmail 'Sent' folder</li><li>Email wordt automatisch gekoppeld aan contact in Tesoro</li><li>Je ziet email in contact's <strong>Activity Timeline</strong></li><li>Email tracking start (opens, clicks)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Now that Gmail is connected, you can send emails from Tesoro.</p><h4>Sending email to contact:</h4><ol><li>Open a contact in Tesoro</li><li>Click <strong>Send Email</strong> button (top right)</li><li>Email compose window opens with:  <ul><li><strong>From:</strong> Your Gmail account (automatically selected)</li><li><strong>To:</strong> Contact email (automatically filled)</li><li><strong>Subject:</strong> Fill in subject</li><li><strong>Body:</strong> Type your message (rich text editor)</li></ul></li><li>Optional:  <ul><li>Add <strong>CC/BCC</strong></li><li>Upload <strong>Attachments</strong> (max 25MB)</li><li>Select a <strong>Template</strong> for quick emails</li><li>Schedule email for later via <strong>Schedule</strong></li></ul></li><li>Click <strong>Send</strong></li></ol><h4>Verification:</h4><p>After sending:</p><ul><li>Email is sent via your Gmail account</li><li>Email appears in your Gmail 'Sent' folder</li><li>Email is automatically linked to contact in Tesoro</li><li>You see email in contact's <strong>Activity Timeline</strong></li><li>Email tracking starts (opens, clicks)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Ahora que Gmail está conectado, puedes enviar emails desde Tesoro.</p><h4>Enviar email a contacto:</h4><ol><li>Abre un contacto en Tesoro</li><li>Haz clic en el botón <strong>Send Email</strong> (arriba a la derecha)</li><li>Se abre la ventana de composición de email con:  <ul><li><strong>From:</strong> Tu cuenta de Gmail (seleccionada automáticamente)</li><li><strong>To:</strong> Email del contacto (completado automáticamente)</li><li><strong>Subject:</strong> Completa el asunto</li><li><strong>Body:</strong> Escribe tu mensaje (editor de texto enriquecido)</li></ul></li><li>Opcional:  <ul><li>Agregar <strong>CC/BCC</strong></li><li>Subir <strong>Attachments</strong> (máx 25MB)</li><li>Seleccionar una <strong>Template</strong> para emails rápidos</li><li>Programar email para más tarde mediante <strong>Schedule</strong></li></ul></li><li>Haz clic en <strong>Send</strong></li></ol><h4>Verificación:</h4><p>Después de enviar:</p><ul><li>El email se envía mediante tu cuenta de Gmail</li><li>El email aparece en tu carpeta 'Enviados' de Gmail</li><li>El email se vincula automáticamente al contacto en Tesoro</li><li>Ves el email en la <strong>Activity Timeline</strong> del contacto</li><li>Comienza el seguimiento del email (aperturas, clics)</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "security-best-practices",
+      "variant": "warning",
+      "title": {
+        "nl": "Beveiliging en privacy best practices",
+        "en": "Security and Privacy Best Practices",
+        "es": "Mejores prácticas de seguridad y privacidad"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Belangrijk om te weten:</strong></p><ul><li><strong>Geen wachtwoorden:</strong> Tesoro slaat nooit je Gmail wachtwoord op - alleen OAuth tokens</li><li><strong>Tokens intrekken:</strong> Je kunt toegang op elk moment intrekken via <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">Google Account Permissions</a></li><li><strong>Data encryptie:</strong> Alle email data wordt encrypted opgeslagen (AES-256)</li><li><strong>GDPR compliant:</strong> Email data wordt conform GDPR regelgeving beheerd</li><li><strong>Geen third-party sharing:</strong> Je emails worden nooit gedeeld met derden</li></ul><p><strong>Access intrekken:</strong></p><p>Als je de integratie wilt verbreken:</p><ol><li>In Tesoro: <strong>Settings → Email Accounts → Gmail → Disconnect</strong></li><li>In Google: <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">myaccount.google.com/permissions</a> → Tesoro CRM → <strong>Remove Access</strong></li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Important to know:</strong></p><ul><li><strong>No passwords:</strong> Tesoro never stores your Gmail password - only OAuth tokens</li><li><strong>Revoke tokens:</strong> You can revoke access at any time via <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">Google Account Permissions</a></li><li><strong>Data encryption:</strong> All email data is stored encrypted (AES-256)</li><li><strong>GDPR compliant:</strong> Email data is managed in accordance with GDPR regulations</li><li><strong>No third-party sharing:</strong> Your emails are never shared with third parties</li></ul><p><strong>Revoke access:</strong></p><p>If you want to disconnect the integration:</p><ol><li>In Tesoro: <strong>Settings → Email Accounts → Gmail → Disconnect</strong></li><li>In Google: <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">myaccount.google.com/permissions</a> → Tesoro CRM → <strong>Remove Access</strong></li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Importante saber:</strong></p><ul><li><strong>Sin contraseñas:</strong> Tesoro nunca almacena tu contraseña de Gmail - solo tokens OAuth</li><li><strong>Revocar tokens:</strong> Puedes revocar el acceso en cualquier momento mediante <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">Google Account Permissions</a></li><li><strong>Encriptación de datos:</strong> Todos los datos de email se almacenan encriptados (AES-256)</li><li><strong>Cumplimiento GDPR:</strong> Los datos de email se gestionan de acuerdo con las regulaciones GDPR</li><li><strong>Sin compartir con terceros:</strong> Tus emails nunca se comparten con terceros</li></ul><p><strong>Revocar acceso:</strong></p><p>Si deseas desconectar la integración:</p><ol><li>En Tesoro: <strong>Settings → Email Accounts → Gmail → Disconnect</strong></li><li>En Google: <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\">myaccount.google.com/permissions</a> → Tesoro CRM → <strong>Remove Access</strong></li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "advanced-features",
+      "title": {
+        "nl": "Geavanceerde features en tips",
+        "en": "Advanced Features and Tips",
+        "es": "Características avanzadas y consejos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Email templates gebruiken:</h4><p>Bespaar tijd met herbruikbare email templates:</p><ol><li>Ga naar <strong>Settings → Email Templates</strong></li><li>Klik <strong>+ New Template</strong></li><li>Vul in:  <ul><li><strong>Template Name:</strong> Beschrijvende naam</li><li><strong>Subject:</strong> Onderwerp (kan variabelen bevatten)</li><li><strong>Body:</strong> Email inhoud met variabelen (bijv. {{contact.firstName}})</li></ul></li><li>Gebruik variabelen voor personalisatie:  <ul><li>{{contact.firstName}} - Voornaam</li><li>{{contact.lastName}} - Achternaam</li><li>{{property.address}} - Property adres</li><li>{{deal.value}} - Deal waarde</li></ul></li><li>Klik <strong>Save Template</strong></li></ol><h4>Email scheduling:</h4><p>Plan emails voor optimale timing:</p><ul><li>Klik <strong>Schedule</strong> in compose window</li><li>Selecteer datum en tijd</li><li>Email wordt automatisch verzonden op gekozen moment</li><li>Je kunt scheduled emails bekijken/annuleren in <strong>Scheduled Emails</strong> overzicht</li></ul><h4>Bulk emailing:</h4><ol><li>Selecteer meerdere contacts in lijst</li><li>Klik <strong>Bulk Actions → Send Email</strong></li><li>Kies een template (aanbevolen voor consistentie)</li><li>Personalisatie variabelen worden automatisch ingevuld per contact</li><li>Klik <strong>Send to All</strong></li></ol><h4>Email tracking inzichten:</h4><p>Bekijk gedetailleerde email statistieken:</p><ul><li><strong>Open Rate:</strong> Percentage emails dat is geopend</li><li><strong>Click Rate:</strong> Percentage links dat is geklikt</li><li><strong>Reply Rate:</strong> Percentage emails met antwoord</li><li><strong>Best Time to Send:</strong> AI analyseert beste verzendtijd per contact</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Using email templates:</h4><p>Save time with reusable email templates:</p><ol><li>Go to <strong>Settings → Email Templates</strong></li><li>Click <strong>+ New Template</strong></li><li>Fill in:  <ul><li><strong>Template Name:</strong> Descriptive name</li><li><strong>Subject:</strong> Subject (can contain variables)</li><li><strong>Body:</strong> Email content with variables (e.g., {{contact.firstName}})</li></ul></li><li>Use variables for personalization:  <ul><li>{{contact.firstName}} - First name</li><li>{{contact.lastName}} - Last name</li><li>{{property.address}} - Property address</li><li>{{deal.value}} - Deal value</li></ul></li><li>Click <strong>Save Template</strong></li></ol><h4>Email scheduling:</h4><p>Schedule emails for optimal timing:</p><ul><li>Click <strong>Schedule</strong> in compose window</li><li>Select date and time</li><li>Email is automatically sent at chosen time</li><li>You can view/cancel scheduled emails in <strong>Scheduled Emails</strong> overview</li></ul><h4>Bulk emailing:</h4><ol><li>Select multiple contacts in list</li><li>Click <strong>Bulk Actions → Send Email</strong></li><li>Choose a template (recommended for consistency)</li><li>Personalization variables are automatically filled per contact</li><li>Click <strong>Send to All</strong></li></ol><h4>Email tracking insights:</h4><p>View detailed email statistics:</p><ul><li><strong>Open Rate:</strong> Percentage of emails opened</li><li><strong>Click Rate:</strong> Percentage of links clicked</li><li><strong>Reply Rate:</strong> Percentage of emails with reply</li><li><strong>Best Time to Send:</strong> AI analyzes best sending time per contact</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Usar plantillas de email:</h4><p>Ahorra tiempo con plantillas de email reutilizables:</p><ol><li>Ve a <strong>Settings → Email Templates</strong></li><li>Haz clic en <strong>+ New Template</strong></li><li>Completa:  <ul><li><strong>Template Name:</strong> Nombre descriptivo</li><li><strong>Subject:</strong> Asunto (puede contener variables)</li><li><strong>Body:</strong> Contenido del email con variables (ej., {{contact.firstName}})</li></ul></li><li>Usa variables para personalización:  <ul><li>{{contact.firstName}} - Nombre</li><li>{{contact.lastName}} - Apellido</li><li>{{property.address}} - Dirección de propiedad</li><li>{{deal.value}} - Valor del negocio</li></ul></li><li>Haz clic en <strong>Save Template</strong></li></ol><h4>Programación de emails:</h4><p>Programa emails para tiempo óptimo:</p><ul><li>Haz clic en <strong>Schedule</strong> en ventana de composición</li><li>Selecciona fecha y hora</li><li>El email se envía automáticamente en el momento elegido</li><li>Puedes ver/cancelar emails programados en resumen de <strong>Scheduled Emails</strong></li></ul><h4>Emails masivos:</h4><ol><li>Selecciona múltiples contactos en la lista</li><li>Haz clic en <strong>Bulk Actions → Send Email</strong></li><li>Elige una plantilla (recomendado para consistencia)</li><li>Las variables de personalización se completan automáticamente por contacto</li><li>Haz clic en <strong>Send to All</strong></li></ol><h4>Información de seguimiento de emails:</h4><p>Ver estadísticas detalladas de emails:</p><ul><li><strong>Open Rate:</strong> Porcentaje de emails abiertos</li><li><strong>Click Rate:</strong> Porcentaje de enlaces clicados</li><li><strong>Reply Rate:</strong> Porcentaje de emails con respuesta</li><li><strong>Best Time to Send:</strong> La IA analiza el mejor momento de envío por contacto</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "troubleshooting",
+      "title": {
+        "nl": "Problemen oplossen",
+        "en": "Troubleshooting",
+        "es": "Solución de problemas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>'Authorization failed' error tijdens OAuth:</strong></p><ul><li>Controleer of je de juiste Google account hebt geselecteerd</li><li>Verifieer dat je 'Allow' hebt geklikt (niet 'Deny')</li><li>Probeer opnieuw in incognito mode</li><li>Clear browser cookies en cache</li><li>Gebruik een andere browser</li></ul><p><strong>Emails worden niet verzonden:</strong></p><ul><li>Check of Gmail account status = 'Connected' (groen)</li><li>Klik <strong>Reconnect</strong> om OAuth token te vernieuwen</li><li>Verifieer dat Gmail account niet vol is (storage limit)</li><li>Check of Gmail account niet is geblokkeerd door Google</li></ul><p><strong>Emails verschijnen niet in Tesoro:</strong></p><ul><li>Check of <strong>Auto-Sync</strong> is enabled</li><li>Verlaag <strong>Sync Frequency</strong> naar 1 minuut voor snellere sync</li><li>Klik <strong>Sync Now</strong> voor handmatige sync</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>OAuth token expired:</strong></p><ul><li>Tokens verlopen na 7 dagen inactiviteit</li><li>Klik <strong>Reconnect Gmail</strong> om token te vernieuwen</li><li>Ga door OAuth flow opnieuw</li><li>Enable <strong>Auto-Refresh Tokens</strong> om automatische vernieuwing te activeren</li></ul><p><strong>Google Workspace admin blokkering:</strong></p><ul><li>Neem contact op met je Google Workspace admin</li><li>Vraag om Tesoro CRM toe te voegen aan whitelist</li><li>Admin moet API access enablen in Google Admin Console</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Common issues:</h4><p><strong>'Authorization failed' error during OAuth:</strong></p><ul><li>Check if you selected the correct Google account</li><li>Verify that you clicked 'Allow' (not 'Deny')</li><li>Try again in incognito mode</li><li>Clear browser cookies and cache</li><li>Use a different browser</li></ul><p><strong>Emails are not being sent:</strong></p><ul><li>Check if Gmail account status = 'Connected' (green)</li><li>Click <strong>Reconnect</strong> to refresh OAuth token</li><li>Verify that Gmail account is not full (storage limit)</li><li>Check if Gmail account is not blocked by Google</li></ul><p><strong>Emails don't appear in Tesoro:</strong></p><ul><li>Check if <strong>Auto-Sync</strong> is enabled</li><li>Lower <strong>Sync Frequency</strong> to 1 minute for faster sync</li><li>Click <strong>Sync Now</strong> for manual sync</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>OAuth token expired:</strong></p><ul><li>Tokens expire after 7 days of inactivity</li><li>Click <strong>Reconnect Gmail</strong> to refresh token</li><li>Go through OAuth flow again</li><li>Enable <strong>Auto-Refresh Tokens</strong> to activate automatic renewal</li></ul><p><strong>Google Workspace admin blocking:</strong></p><ul><li>Contact your Google Workspace admin</li><li>Request to add Tesoro CRM to whitelist</li><li>Admin must enable API access in Google Admin Console</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Problemas comunes:</h4><p><strong>Error 'Authorization failed' durante OAuth:</strong></p><ul><li>Verifica si seleccionaste la cuenta de Google correcta</li><li>Verifica que hayas hecho clic en 'Allow' (no 'Deny')</li><li>Intenta nuevamente en modo incógnito</li><li>Limpia las cookies y caché del navegador</li><li>Usa un navegador diferente</li></ul><p><strong>Los emails no se envían:</strong></p><ul><li>Verifica que el estado de la cuenta de Gmail = 'Connected' (verde)</li><li>Haz clic en <strong>Reconnect</strong> para actualizar el token OAuth</li><li>Verifica que la cuenta de Gmail no esté llena (límite de almacenamiento)</li><li>Verifica que la cuenta de Gmail no esté bloqueada por Google</li></ul><p><strong>Los emails no aparecen en Tesoro:</strong></p><ul><li>Verifica que <strong>Auto-Sync</strong> esté habilitado</li><li>Reduce <strong>Sync Frequency</strong> a 1 minuto para sincronización más rápida</li><li>Haz clic en <strong>Sync Now</strong> para sincronización manual</li><li>Verifica errores de sincronización en <strong>Sync Logs</strong></li></ul><p><strong>Token OAuth expirado:</strong></p><ul><li>Los tokens expiran después de 7 días de inactividad</li><li>Haz clic en <strong>Reconnect Gmail</strong> para actualizar el token</li><li>Pasa por el flujo OAuth nuevamente</li><li>Habilita <strong>Auto-Refresh Tokens</strong> para activar la renovación automática</li></ul><p><strong>Bloqueo del administrador de Google Workspace:</strong></p><ul><li>Contacta a tu administrador de Google Workspace</li><li>Solicita agregar Tesoro CRM a la lista blanca</li><li>El administrador debe habilitar el acceso API en Google Admin Console</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "outlook-oauth-complete-setup",
+    "contact-email-integration",
+    "api-webhooks-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik meerdere Gmail accounts verbinden met Tesoro?",
+        "en": "Can I connect multiple Gmail accounts to Tesoro?",
+        "es": "¿Puedo conectar múltiples cuentas de Gmail a Tesoro?"
+      },
+      "answer": {
+        "nl": "Ja, je kunt onbeperkt Gmail accounts verbinden. Je kunt per email kiezen van welk account je wilt verzenden.",
+        "en": "Yes, you can connect unlimited Gmail accounts. You can choose which account to send from for each email.",
+        "es": "Sí, puedes conectar cuentas de Gmail ilimitadas. Puedes elegir desde qué cuenta enviar para cada email."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden mijn oude emails geïmporteerd in Tesoro?",
+        "en": "Are my old emails imported into Tesoro?",
+        "es": "¿Mis emails antiguos se importan a Tesoro?"
+      },
+      "answer": {
+        "nl": "Nee, alleen emails verzonden na activering van de integratie worden gesynchroniseerd. Je kunt handmatig oude email threads koppelen aan contacts indien nodig.",
+        "en": "No, only emails sent after activating the integration are synchronized. You can manually link old email threads to contacts if needed.",
+        "es": "No, solo los emails enviados después de activar la integración se sincronizan. Puedes vincular manualmente hilos de email antiguos a contactos si es necesario."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan Google mijn emails in Tesoro zien?",
+        "en": "Can Google see my emails in Tesoro?",
+        "es": "¿Google puede ver mis emails en Tesoro?"
+      },
+      "answer": {
+        "nl": "Nee, Google heeft geen toegang tot je emails in Tesoro. OAuth geeft Tesoro alleen toegang tot je Gmail account - Google kan niet in Tesoro kijken.",
+        "en": "No, Google has no access to your emails in Tesoro. OAuth only gives Tesoro access to your Gmail account - Google cannot see into Tesoro.",
+        "es": "No, Google no tiene acceso a tus emails en Tesoro. OAuth solo otorga acceso a Tesoro a tu cuenta de Gmail - Google no puede ver dentro de Tesoro."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik mijn Gmail wachtwoord wijzig?",
+        "en": "What happens if I change my Gmail password?",
+        "es": "¿Qué pasa si cambio mi contraseña de Gmail?"
+      },
+      "answer": {
+        "nl": "OAuth tokens blijven werken na wachtwoord wijziging. Je hoeft niets opnieuw te configureren in Tesoro.",
+        "en": "OAuth tokens continue to work after password change. You don't need to reconfigure anything in Tesoro.",
+        "es": "Los tokens OAuth siguen funcionando después del cambio de contraseña. No necesitas reconfigurar nada en Tesoro."
+      }
+    }
+  ]
+}

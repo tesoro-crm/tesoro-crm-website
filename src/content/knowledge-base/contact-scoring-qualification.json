@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "id": "contact-scoring-qualification",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "lead-scoring", "qualification", "hot-leads", "prioritization"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["lead scoring tesoro", "qualify contacts", "hot leads", "contact prioritization", "lead qualification"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Lead Scoring en Kwalificatie",
+      "en": "Lead Scoring and Qualification",
+      "es": "Puntuación y Calificación de Leads"
+    },
+    "description": {
+      "nl": "Identificeer en prioriteer je meest veelbelovende contacten met lead scoring en kwalificatie.",
+      "en": "Identify and prioritize your most promising contacts with lead scoring and qualification.",
+      "es": "Identifica y prioriza tus contactos más prometedores con puntuación y calificación de leads."
+    },
+    "icon": "grade"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "lead-scoring-overview",
+      "title": {
+        "nl": "Wat is Lead Scoring?",
+        "en": "What is Lead Scoring?",
+        "es": "¿Qué es la Puntuación de Leads?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Lead scoring helpt je om contacten te prioriteren op basis van hun waarschijnlijkheid om klant te worden.</p><h3>Waarom Lead Scoring?</h3><ul><li><strong>Focus op kwaliteit:</strong> Werk met de beste prospects eerst</li><li><strong>Efficiëntie:</strong> Besteed tijd waar het het meeste oplevert</li><li><strong>Beter conversion:</strong> Hogere kans op succesvolle deals</li><li><strong>Team alignment:</strong> Iedereen weet welke leads prioriteit hebben</li></ul><h3>Scoring Factoren</h3><p>Tesoro gebruikt verschillende factoren voor scoring:</p><p><strong>Engagement Level:</strong></p><ul><li>Email opens/clicks</li><li>Website bezoeken</li><li>Property views</li><li>Response snelheid</li></ul><p><strong>Profile Completeness:</strong></p><ul><li>Budget confirmed</li><li>Timeline duidelijk</li><li>Specifieke voorkeuren bekend</li><li>Contactgegevens volledig</li></ul><p><strong>Behavior Signals:</strong></p><ul><li>Requested viewing</li><li>Asked for more info</li><li>Responded to outreach</li><li>Initiated contact</li></ul>"
+        },
+        "en": {
+          "text": "<p>Lead scoring helps you prioritize contacts based on their likelihood of becoming a customer.</p><h3>Why Lead Scoring?</h3><ul><li><strong>Focus on quality:</strong> Work with the best prospects first</li><li><strong>Efficiency:</strong> Spend time where it yields most</li><li><strong>Better conversion:</strong> Higher chance of successful deals</li><li><strong>Team alignment:</strong> Everyone knows which leads have priority</li></ul><h3>Scoring Factors</h3><p>Tesoro uses various factors for scoring:</p><p><strong>Engagement Level:</strong></p><ul><li>Email opens/clicks</li><li>Website visits</li><li>Property views</li><li>Response speed</li></ul><p><strong>Profile Completeness:</strong></p><ul><li>Budget confirmed</li><li>Timeline clear</li><li>Specific preferences known</li><li>Contact details complete</li></ul><p><strong>Behavior Signals:</strong></p><ul><li>Requested viewing</li><li>Asked for more info</li><li>Responded to outreach</li><li>Initiated contact</li></ul>"
+        },
+        "es": {
+          "text": "<p>La puntuación de leads te ayuda a priorizar contactos según su probabilidad de convertirse en cliente.</p><h3>¿Por qué Puntuación de Leads?</h3><ul><li><strong>Enfoque en calidad:</strong> Trabajar con los mejores prospectos primero</li><li><strong>Eficiencia:</strong> Gastar tiempo donde rinde más</li><li><strong>Mejor conversión:</strong> Mayor probabilidad de deals exitosos</li><li><strong>Alineación del equipo:</strong> Todos saben qué leads tienen prioridad</li></ul><h3>Factores de Puntuación</h3><p>Tesoro usa varios factores para puntuar:</p><p><strong>Nivel de Compromiso:</strong></p><ul><li>Aperturas/clics de email</li><li>Visitas al sitio web</li><li>Vistas de propiedad</li><li>Velocidad de respuesta</li></ul><p><strong>Completitud del Perfil:</strong></p><ul><li>Presupuesto confirmado</li><li>Línea de tiempo clara</li><li>Preferencias específicas conocidas</li><li>Detalles de contacto completos</li></ul><p><strong>Señales de Comportamiento:</strong></p><ul><li>Solicitó visita</li><li>Pidió más información</li><li>Respondió a contacto</li><li>Inició contacto</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "hot-warm-cold",
+      "title": {
+        "nl": "Hot, Warm en Cold Leads",
+        "en": "Hot, Warm and Cold Leads",
+        "es": "Leads Calientes, Tibios y Fríos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Lead Temperatuur Classificatie</h3><p><strong>Hot Leads (Score 80-100)</strong></p><ul><li>Urgency: Ready to buy within 1 month</li><li>Budget: Confirmed and sufficient</li><li>Engagement: Actively responding and viewing</li><li>Decision: Ready to make decision</li><li><strong>Actie:</strong> Immediate follow-up, schedule viewing, prepare offer</li></ul><p><strong>Warm Leads (Score 50-79)</strong></p><ul><li>Urgency: Buying within 3-6 months</li><li>Budget: Generally known but not final</li><li>Engagement: Interested, needs nurturing</li><li>Decision: Still comparing options</li><li><strong>Actie:</strong> Regular follow-up, provide information, build relationship</li></ul><p><strong>Cold Leads (Score 0-49)</strong></p><ul><li>Urgency: No immediate plans or vague timeline</li><li>Budget: Unknown or insufficient</li><li>Engagement: Low response or engagement</li><li>Decision: Just browsing, not serious yet</li><li><strong>Actie:</strong> Newsletter, occasional check-in, nurture campaign</li></ul><h3>Tags voor Temperatuur</h3><p>Gebruik tags om temperatuur bij te houden:</p><ul><li>Tag: 'Hot Lead' (rood)</li><li>Tag: 'Warm Lead' (oranje)</li><li>Tag: 'Cold Lead' (blauw)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Lead Temperature Classification</h3><p><strong>Hot Leads (Score 80-100)</strong></p><ul><li>Urgency: Ready to buy within 1 month</li><li>Budget: Confirmed and sufficient</li><li>Engagement: Actively responding and viewing</li><li>Decision: Ready to make decision</li><li><strong>Action:</strong> Immediate follow-up, schedule viewing, prepare offer</li></ul><p><strong>Warm Leads (Score 50-79)</strong></p><ul><li>Urgency: Buying within 3-6 months</li><li>Budget: Generally known but not final</li><li>Engagement: Interested, needs nurturing</li><li>Decision: Still comparing options</li><li><strong>Action:</strong> Regular follow-up, provide information, build relationship</li></ul><p><strong>Cold Leads (Score 0-49)</strong></p><ul><li>Urgency: No immediate plans or vague timeline</li><li>Budget: Unknown or insufficient</li><li>Engagement: Low response or engagement</li><li>Decision: Just browsing, not serious yet</li><li><strong>Action:</strong> Newsletter, occasional check-in, nurture campaign</li></ul><h3>Tags for Temperature</h3><p>Use tags to track temperature:</p><ul><li>Tag: 'Hot Lead' (red)</li><li>Tag: 'Warm Lead' (orange)</li><li>Tag: 'Cold Lead' (blue)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Clasificación de Temperatura de Leads</h3><p><strong>Leads Calientes (Puntuación 80-100)</strong></p><ul><li>Urgencia: Listos para comprar en 1 mes</li><li>Presupuesto: Confirmado y suficiente</li><li>Compromiso: Respondiendo y viendo activamente</li><li>Decisión: Listos para tomar decisión</li><li><strong>Acción:</strong> Seguimiento inmediato, programar visita, preparar oferta</li></ul><p><strong>Leads Tibios (Puntuación 50-79)</strong></p><ul><li>Urgencia: Comprando en 3-6 meses</li><li>Presupuesto: Generalmente conocido pero no final</li><li>Compromiso: Interesados, necesitan cultivo</li><li>Decisión: Aún comparando opciones</li><li><strong>Acción:</strong> Seguimiento regular, proporcionar información, construir relación</li></ul><p><strong>Leads Fríos (Puntuación 0-49)</strong></p><ul><li>Urgencia: Sin planes inmediatos o línea de tiempo vaga</li><li>Presupuesto: Desconocido o insuficiente</li><li>Compromiso: Baja respuesta o compromiso</li><li>Decisión: Solo navegando, aún no serio</li><li><strong>Acción:</strong> Newsletter, verificación ocasional, campaña de cultivo</li></ul><h3>Etiquetas para Temperatura</h3><p>Usar etiquetas para rastrear temperatura:</p><ul><li>Etiqueta: 'Hot Lead' (rojo)</li><li>Etiqueta: 'Warm Lead' (naranja)</li><li>Etiqueta: 'Cold Lead' (azul)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "qualification-checklist",
+      "variant": "success",
+      "title": {
+        "nl": "Lead Kwalificatie Checklist",
+        "en": "Lead Qualification Checklist",
+        "es": "Lista de Verificación de Calificación de Leads"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>BANT Methode (Budget, Authority, Need, Timeline):</strong></p><ul><li>✓ <strong>Budget:</strong> Heeft de lead voldoende budget?</li><li>✓ <strong>Authority:</strong> Kan deze persoon beslissingen nemen?</li><li>✓ <strong>Need:</strong> Heeft de lead een echte behoefte?</li><li>✓ <strong>Timeline:</strong> Wanneer wil de lead kopen?</li></ul><p><strong>Kwalificatie Vragen:</strong></p><ul><li>Wat is je budget range?</li><li>Wanneer wil je verhuizen?</li><li>Ben je nu actief aan het zoeken?</li><li>Is je huidige huis al verkocht?</li><li>Zijn er meerdere beslissers betrokken?</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>BANT Method (Budget, Authority, Need, Timeline):</strong></p><ul><li>✓ <strong>Budget:</strong> Does the lead have sufficient budget?</li><li>✓ <strong>Authority:</strong> Can this person make decisions?</li><li>✓ <strong>Need:</strong> Does the lead have a real need?</li><li>✓ <strong>Timeline:</strong> When does the lead want to buy?</li></ul><p><strong>Qualification Questions:</strong></p><ul><li>What is your budget range?</li><li>When do you want to move?</li><li>Are you actively searching now?</li><li>Is your current house already sold?</li><li>Are there multiple decision makers involved?</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Método BANT (Presupuesto, Autoridad, Necesidad, Línea de Tiempo):</strong></p><ul><li>✓ <strong>Presupuesto:</strong> ¿El lead tiene presupuesto suficiente?</li><li>✓ <strong>Autoridad:</strong> ¿Esta persona puede tomar decisiones?</li><li>✓ <strong>Necesidad:</strong> ¿El lead tiene una necesidad real?</li><li>✓ <strong>Línea de Tiempo:</strong> ¿Cuándo quiere comprar el lead?</li></ul><p><strong>Preguntas de Calificación:</strong></p><ul><li>¿Cuál es tu rango de presupuesto?</li><li>¿Cuándo quieres mudarte?</li><li>¿Estás buscando activamente ahora?</li><li>¿Tu casa actual ya está vendida?</li><li>¿Hay múltiples tomadores de decisiones involucrados?</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-types-explained",
+    "contact-tags-organization",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe vaak moet ik lead scores bijwerken?",
+        "en": "How often should I update lead scores?",
+        "es": "¿Con qué frecuencia debo actualizar las puntuaciones de leads?"
+      },
+      "answer": {
+        "nl": "Tesoro updated scores automatisch op basis van engagement. Je kunt manually tags updaten na belangrijke gesprekken of events (bijv. van Warm naar Hot na viewing).",
+        "en": "Tesoro updates scores automatically based on engagement. You can manually update tags after important conversations or events (e.g., from Warm to Hot after viewing).",
+        "es": "Tesoro actualiza puntuaciones automáticamente según el compromiso. Puedes actualizar etiquetas manualmente después de conversaciones o eventos importantes (ej., de Tibio a Caliente después de visita)."
+      }
+    }
+  ]
+}

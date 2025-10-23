@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "id": "first-steps-checklist",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["getting-started", "checklist", "onboarding", "setup", "first-steps"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro checklist", "getting started", "onboarding", "first steps", "crm setup"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Eerste stappen checklist: wat te doen na signup",
+      "en": "First Steps Checklist: What to Do After Signup",
+      "es": "Lista de verificación de primeros pasos: qué hacer después del registro"
+    },
+    "description": {
+      "nl": "Volg deze stap-voor-stap checklist om je Tesoro CRM optimaal in te richten en binnen 30 minuten productief te zijn.",
+      "en": "Follow this step-by-step checklist to optimally set up your Tesoro CRM and be productive within 30 minutes.",
+      "es": "Sigue esta lista de verificación paso a paso para configurar óptimamente tu Tesoro CRM y ser productivo en 30 minutos."
+    },
+    "icon": "checklist"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Je hebt je account aangemaakt - geweldig! Maar waar begin je nu? Deze checklist leidt je door de belangrijkste stappen om Tesoro klaar te maken voor dagelijks gebruik. Volg de items in volgorde voor het beste resultaat.</p><p><strong>Geschatte tijd:</strong> 30-45 minuten (afhankelijk van hoeveel data je importeert)</p>"
+        },
+        "en": {
+          "text": "<p>You've created your account - great! But where do you start now? This checklist guides you through the key steps to prepare Tesoro for daily use. Follow the items in order for the best result.</p><p><strong>Estimated time:</strong> 30-45 minutes (depending on how much data you import)</p>"
+        },
+        "es": {
+          "text": "<p>Has creado tu cuenta - ¡genial! Pero, ¿por dónde empiezas ahora? Esta lista de verificación te guía a través de los pasos clave para preparar Tesoro para uso diario. Sigue los elementos en orden para obtener el mejor resultado.</p><p><strong>Tiempo estimado:</strong> 30-45 minutos (dependiendo de cuántos datos importes)</p>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "setup-checklist",
+      "title": {
+        "nl": "Je setup checklist",
+        "en": "Your Setup Checklist",
+        "es": "Tu lista de verificación de configuración"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "1. Profiel compleet maken (5 min)",
+            "en": "1. Complete Your Profile (5 Min)",
+            "es": "1. Completar tu perfil (5 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Je profiel is wat clients zien in emails, het portal, en communicatie.</p><p><strong>Wat te doen:</strong></p><ul><li>Upload een professionele profielfoto</li><li>Vul je telefoonnummer in</li><li>Stel je email signature in</li><li>Kies je taal en timezone voorkeur</li><li>Configureer basis notificaties</li></ul><p><strong>Hoe:</strong> Klik rechtsboven op je foto → Settings → Personal Info</p><p><strong>Zie ook:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> Your profile is what clients see in emails, the portal, and communication.</p><p><strong>What to do:</strong></p><ul><li>Upload a professional profile photo</li><li>Fill in your phone number</li><li>Set up your email signature</li><li>Choose your language and timezone preference</li><li>Configure basic notifications</li></ul><p><strong>How:</strong> Click your photo top right → Settings → Personal Info</p><p><strong>See also:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> Tu perfil es lo que los clientes ven en emails, el portal y la comunicación.</p><p><strong>Qué hacer:</strong></p><ul><li>Sube una foto de perfil profesional</li><li>Completa tu número de teléfono</li><li>Configura tu firma de email</li><li>Elige tu preferencia de idioma y zona horaria</li><li>Configura notificaciones básicas</li></ul><p><strong>Cómo:</strong> Haz clic en tu foto arriba a la derecha → Settings → Personal Info</p><p><strong>Ver también:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "2. Voeg je eerste contacten toe (10 min)",
+            "en": "2. Add Your First Contacts (10 Min)",
+            "es": "2. Agregar tus primeros contactos (10 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Contacten zijn de basis van alles. Zonder contacten kun je geen deals maken.</p><p><strong>Keuzes:</strong></p><ul><li><strong>Handmatig toevoegen</strong> - Klik + Contact, vul details in (start met 3-5 belangrijke contacts)</li><li><strong>CSV import</strong> - Upload je bestaande database (Settings → Import → Contacts)</li><li><strong>Sync from email</strong> - Importeer uit Gmail/Outlook adresboek</li></ul><p><strong>Minimum vereist per contact:</strong></p><ul><li>Naam (voor- en achternaam)</li><li>Email of telefoonnummer</li><li>Type (Buyer/Seller/Investor/etc.)</li></ul><p><strong>Tip:</strong> Begin klein! Voeg eerst je actieve clients toe, importeer de rest later.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> Contacts are the foundation of everything. Without contacts you can't make deals.</p><p><strong>Choices:</strong></p><ul><li><strong>Manually add</strong> - Click + Contact, fill in details (start with 3-5 important contacts)</li><li><strong>CSV import</strong> - Upload your existing database (Settings → Import → Contacts)</li><li><strong>Sync from email</strong> - Import from Gmail/Outlook address book</li></ul><p><strong>Minimum required per contact:</strong></p><ul><li>Name (first and last name)</li><li>Email or phone number</li><li>Type (Buyer/Seller/Investor/etc.)</li></ul><p><strong>Tip:</strong> Start small! First add your active clients, import the rest later.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> Los contactos son la base de todo. Sin contactos no puedes hacer deals.</p><p><strong>Opciones:</strong></p><ul><li><strong>Agregar manualmente</strong> - Haz clic en + Contact, completa detalles (comienza con 3-5 contactos importantes)</li><li><strong>Importación CSV</strong> - Sube tu base de datos existente (Settings → Import → Contacts)</li><li><strong>Sincronizar desde email</strong> - Importa desde la libreta de direcciones de Gmail/Outlook</li></ul><p><strong>Mínimo requerido por contacto:</strong></p><ul><li>Nombre (nombre y apellido)</li><li>Email o número de teléfono</li><li>Tipo (Buyer/Seller/Investor/etc.)</li></ul><p><strong>Tip:</strong> ¡Comienza pequeño! Primero agrega tus clientes activos, importa el resto más tarde.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "3. Voeg properties toe (10 min)",
+            "en": "3. Add Properties (10 Min)",
+            "es": "3. Agregar propiedades (10 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Properties zijn wat je verkoopt/verhuurt. Zonder inventory kun je geen matching doen.</p><p><strong>Opties:</strong></p><ul><li><strong>Handmatig toevoegen</strong> - Klik + Property, vul basale info in (start met 2-3 listings)</li><li><strong>MLS sync</strong> - Verbind Idealista, Fotocasa feeds (Settings → Integrations → MLS)</li><li><strong>CSV import</strong> - Bulk upload je inventory</li></ul><p><strong>Minimum vereist per property:</strong></p><ul><li>Adres (straat, stad, postcode)</li><li>Type (Apartment, Villa, Townhouse, etc.)</li><li>Prijs</li><li>Status (For Sale, For Rent, Sold, etc.)</li><li>Minimaal 1 foto</li></ul><p><strong>Pro tip:</strong> MLS sync is de snelste weg. Binnen minuten heb je honderden properties geïmporteerd.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> Properties are what you sell/rent. Without inventory you can't do matching.</p><p><strong>Options:</strong></p><ul><li><strong>Manually add</strong> - Click + Property, fill in basic info (start with 2-3 listings)</li><li><strong>MLS sync</strong> - Connect Idealista, Fotocasa feeds (Settings → Integrations → MLS)</li><li><strong>CSV import</strong> - Bulk upload your inventory</li></ul><p><strong>Minimum required per property:</strong></p><ul><li>Address (street, city, postal code)</li><li>Type (Apartment, Villa, Townhouse, etc.)</li><li>Price</li><li>Status (For Sale, For Rent, Sold, etc.)</li><li>At least 1 photo</li></ul><p><strong>Pro tip:</strong> MLS sync is the fastest way. Within minutes you have hundreds of properties imported.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> Las propiedades son lo que vendes/alquilas. Sin inventario no puedes hacer matching.</p><p><strong>Opciones:</strong></p><ul><li><strong>Agregar manualmente</strong> - Haz clic en + Property, completa información básica (comienza con 2-3 listings)</li><li><strong>Sincronización MLS</strong> - Conecta feeds de Idealista, Fotocasa (Settings → Integrations → MLS)</li><li><strong>Importación CSV</strong> - Sube tu inventario en masa</li></ul><p><strong>Mínimo requerido por propiedad:</strong></p><ul><li>Dirección (calle, ciudad, código postal)</li><li>Tipo (Apartment, Villa, Townhouse, etc.)</li><li>Precio</li><li>Estado (For Sale, For Rent, Sold, etc.)</li><li>Al menos 1 foto</li></ul><p><strong>Consejo pro:</strong> La sincronización MLS es el camino más rápido. En minutos tienes cientos de propiedades importadas.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "4. Maak je eerste deal aan (5 min)",
+            "en": "4. Create Your First Deal (5 Min)",
+            "es": "4. Crear tu primer deal (5 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Deals tracken je sales pipeline. Dit is waar je geld verdient.</p><p><strong>Hoe een deal aanmaken:</strong></p><ol><li>Klik + Deal (of ga naar Deals module, klik + New Deal)</li><li>Koppel een contact (de buyer/renter)</li><li>Vul deal naam in (bijv. \"Jim Hendricks - Apartment Search\")</li><li>Kies deal stage (bijv. \"First Contact\" of \"Needs Analysis\")</li><li>Vul verwachte deal value in (geschatte transactie waarde)</li><li>Optioneel: Koppel property als je al weet welke</li></ol><p><strong>Tip:</strong> Begin met één actieve deal die je nu al in je hoofd hebt. Je kunt later meer toevoegen.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> Deals track your sales pipeline. This is where you make money.</p><p><strong>How to create a deal:</strong></p><ol><li>Click + Deal (or go to Deals module, click + New Deal)</li><li>Link a contact (the buyer/renter)</li><li>Fill in deal name (e.g. \"Jim Hendricks - Apartment Search\")</li><li>Choose deal stage (e.g. \"First Contact\" or \"Needs Analysis\")</li><li>Fill in expected deal value (estimated transaction value)</li><li>Optional: Link property if you already know which one</li></ol><p><strong>Tip:</strong> Start with one active deal you already have in mind. You can add more later.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> Los deals rastrean tu pipeline de ventas. Aquí es donde ganas dinero.</p><p><strong>Cómo crear un deal:</strong></p><ol><li>Haz clic en + Deal (o ve al módulo Deals, haz clic en + New Deal)</li><li>Vincula un contacto (el comprador/inquilino)</li><li>Completa el nombre del deal (ej. \"Jim Hendricks - Apartment Search\")</li><li>Elige la etapa del deal (ej. \"First Contact\" o \"Needs Analysis\")</li><li>Completa el valor esperado del deal (valor estimado de la transacción)</li><li>Opcional: Vincula propiedad si ya sabes cuál</li></ol><p><strong>Tip:</strong> Comienza con un deal activo que ya tengas en mente. Puedes agregar más después.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "5. Test AI property matching (5 min)",
+            "en": "5. Test AI Property Matching (5 Min)",
+            "es": "5. Probar matching de propiedades con IA (5 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> AI matching is de killer feature van Tesoro. Laat het systeem automatisch de beste properties vinden voor je deals.</p><p><strong>Hoe te testen:</strong></p><ol><li>Open je deal die je net hebt aangemaakt</li><li>Klik op het <strong>Properties</strong> tabblad</li><li>Klik <strong>AI Match Properties</strong></li><li>Het systeem scant je inventory en toont top matches</li><li>Bekijk de match percentage en reden</li><li>Selecteer properties om toe te voegen aan de deal</li></ol><p><strong>Wat AI matching checkt:</strong></p><ul><li>Prijs range van de contact vs property prijzen</li><li>Property type voorkeuren (apartment, villa, etc.)</li><li>Locatie voorkeuren (stad, wijk, postcode)</li><li>Aantal slaapkamers, badkamers</li><li>Speciale features (tuin, terras, parking, etc.)</li></ul><p><strong>Tip:</strong> Hoe meer detail je in het contact profiel hebt, hoe beter de matches!</p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> AI matching is Tesoro's killer feature. Let the system automatically find the best properties for your deals.</p><p><strong>How to test:</strong></p><ol><li>Open your deal you just created</li><li>Click the <strong>Properties</strong> tab</li><li>Click <strong>AI Match Properties</strong></li><li>The system scans your inventory and shows top matches</li><li>View the match percentage and reason</li><li>Select properties to add to the deal</li></ol><p><strong>What AI matching checks:</strong></p><ul><li>Price range of contact vs property prices</li><li>Property type preferences (apartment, villa, etc.)</li><li>Location preferences (city, neighborhood, postal code)</li><li>Number of bedrooms, bathrooms</li><li>Special features (garden, terrace, parking, etc.)</li></ul><p><strong>Tip:</strong> The more detail you have in the contact profile, the better the matches!</p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> El matching de IA es la característica estrella de Tesoro. Deja que el sistema encuentre automáticamente las mejores propiedades para tus deals.</p><p><strong>Cómo probar:</strong></p><ol><li>Abre tu deal que acabas de crear</li><li>Haz clic en la pestaña <strong>Properties</strong></li><li>Haz clic en <strong>AI Match Properties</strong></li><li>El sistema escanea tu inventario y muestra los mejores matches</li><li>Ve el porcentaje de match y la razón</li><li>Selecciona propiedades para agregar al deal</li></ol><p><strong>Qué verifica el matching de IA:</strong></p><ul><li>Rango de precio del contacto vs precios de propiedades</li><li>Preferencias de tipo de propiedad (apartment, villa, etc.)</li><li>Preferencias de ubicación (ciudad, vecindario, código postal)</li><li>Número de dormitorios, baños</li><li>Características especiales (jardín, terraza, parking, etc.)</li></ul><p><strong>Tip:</strong> ¡Cuanto más detalle tengas en el perfil del contacto, mejores son los matches!</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "6. Verbind je email (optioneel, 5 min)",
+            "en": "6. Connect Your Email (Optional, 5 Min)",
+            "es": "6. Conectar tu email (opcional, 5 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Email integratie betekent dat je alle client communicatie in Tesoro hebt, niet verspreid over apps.</p><p><strong>Ondersteunde email providers:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (andere providers)</li></ul><p><strong>Hoe te verbinden:</strong></p><ol><li>Ga naar Settings → Integrations → Email</li><li>Kies je provider (Gmail/Outlook/IMAP)</li><li>Klik Connect en autoriseer Tesoro</li><li>Emails worden automatisch gesynchroniseerd</li></ol><p><strong>Wat je krijgt:</strong></p><ul><li>Verstuur emails vanuit Tesoro (automatisch gelogd)</li><li>Ontvang emails in contact/deal tijdlijn</li><li>Email templates voor snelle communicatie</li><li>Track opens en clicks</li></ul><p><strong>Beveiligde verbinding:</strong> Tesoro gebruikt OAuth2 - we zien nooit je wachtwoord. Je kunt toegang altijd intrekken.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> Email integration means you have all client communication in Tesoro, not spread across apps.</p><p><strong>Supported email providers:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (other providers)</li></ul><p><strong>How to connect:</strong></p><ol><li>Go to Settings → Integrations → Email</li><li>Choose your provider (Gmail/Outlook/IMAP)</li><li>Click Connect and authorize Tesoro</li><li>Emails are automatically synchronized</li></ol><p><strong>What you get:</strong></p><ul><li>Send emails from Tesoro (automatically logged)</li><li>Receive emails in contact/deal timeline</li><li>Email templates for quick communication</li><li>Track opens and clicks</li></ul><p><strong>Secure connection:</strong> Tesoro uses OAuth2 - we never see your password. You can always revoke access.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> La integración de email significa que tienes toda la comunicación con clientes en Tesoro, no dispersa entre apps.</p><p><strong>Proveedores de email compatibles:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (otros proveedores)</li></ul><p><strong>Cómo conectar:</strong></p><ol><li>Ve a Settings → Integrations → Email</li><li>Elige tu proveedor (Gmail/Outlook/IMAP)</li><li>Haz clic en Connect y autoriza Tesoro</li><li>Los emails se sincronizan automáticamente</li></ol><p><strong>Lo que obtienes:</strong></p><ul><li>Envía emails desde Tesoro (registrados automáticamente)</li><li>Recibe emails en la línea de tiempo de contacto/deal</li><li>Plantillas de email para comunicación rápida</li><li>Rastrea aperturas y clics</li></ul><p><strong>Conexión segura:</strong> Tesoro usa OAuth2 - nunca vemos tu contraseña. Siempre puedes revocar el acceso.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "7. Verken het dashboard (5 min)",
+            "en": "7. Explore the Dashboard (5 Min)",
+            "es": "7. Explorar el dashboard (5 min)"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Het dashboard is je dagelijkse startpunt. Leer wat je er kunt zien.</p><p><strong>Wat te doen:</strong></p><ul><li>Bekijk je KPI's (deals, leads, avg value, time on market)</li><li>Check de date filter (probeer \"This Month\" vs \"All Time\")</li><li>Klik op een KPI card om naar de module te gaan</li><li>Bekijk Recent Activity - zie je je toegevoegde contacten?</li><li>Check Alerts - zijn er dingen die aandacht nodig hebben?</li></ul><p><strong>Dashboard tips:</strong></p><ul><li>Maak het dashboard je <strong>morning ritual</strong> - check het elke ochtend</li><li>Let op trends (groene/rode percentages), niet absolute cijfers</li><li>Use date filters om verschillende periodes te vergelijken</li></ul><p><strong>Zie ook:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
+            },
+            "en": {
+              "text": "<p><strong>Why this matters:</strong> The dashboard is your daily starting point. Learn what you can see there.</p><p><strong>What to do:</strong></p><ul><li>View your KPIs (deals, leads, avg value, time on market)</li><li>Check the date filter (try \"This Month\" vs \"All Time\")</li><li>Click on a KPI card to go to the module</li><li>View Recent Activity - do you see your added contacts?</li><li>Check Alerts - are there things needing attention?</li></ul><p><strong>Dashboard tips:</strong></p><ul><li>Make the dashboard your <strong>morning ritual</strong> - check it every morning</li><li>Pay attention to trends (green/red percentages), not absolute numbers</li><li>Use date filters to compare different periods</li></ul><p><strong>See also:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué esto importa:</strong> El dashboard es tu punto de partida diario. Aprende qué puedes ver allí.</p><p><strong>Qué hacer:</strong></p><ul><li>Ve tus KPIs (deals, leads, valor promedio, tiempo en el mercado)</li><li>Verifica el filtro de fecha (prueba \"This Month\" vs \"All Time\")</li><li>Haz clic en una tarjeta KPI para ir al módulo</li><li>Ve la Actividad Reciente - ¿ves tus contactos agregados?</li><li>Verifica Alertas - ¿hay cosas que necesitan atención?</li></ul><p><strong>Consejos para dashboard:</strong></p><ul><li>Haz del dashboard tu <strong>ritual matutino</strong> - revísalo cada mañana</li><li>Presta atención a las tendencias (porcentajes verdes/rojos), no a números absolutos</li><li>Usa filtros de fecha para comparar diferentes períodos</li></ul><p><strong>Ver también:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "congratulations",
+      "variant": "success",
+      "title": {
+        "nl": "Gefeliciteerd!",
+        "en": "Congratulations!",
+        "es": "¡Felicitaciones!"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Je bent klaar om te beginnen!</strong></p><p>Als je alle stappen hebt gevolgd, heb je nu:</p><ul><li>✅ Een compleet profiel</li><li>✅ Contacts in je database</li><li>✅ Properties in je inventory</li><li>✅ Je eerste deal aangemaakt</li><li>✅ AI matching getest</li><li>✅ Email verbonden (optioneel)</li><li>✅ Dashboard verkend</li></ul><p><strong>Volgende stappen:</strong></p><ul><li>Lees de <strong>Quick Start Guide</strong> voor een 15-min diepere tutorial</li><li>Verken andere modules (Calendar, Activities, Reports)</li><li>Nodig teamleden uit (Settings → Users)</li><li>Configureer client portal (Settings → Client Portal)</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>You're ready to get started!</strong></p><p>If you've followed all steps, you now have:</p><ul><li>✅ A complete profile</li><li>✅ Contacts in your database</li><li>✅ Properties in your inventory</li><li>✅ Your first deal created</li><li>✅ AI matching tested</li><li>✅ Email connected (optional)</li><li>✅ Dashboard explored</li></ul><p><strong>Next steps:</strong></p><ul><li>Read the <strong>Quick Start Guide</strong> for a 15-min deeper tutorial</li><li>Explore other modules (Calendar, Activities, Reports)</li><li>Invite team members (Settings → Users)</li><li>Configure client portal (Settings → Client Portal)</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>¡Estás listo para comenzar!</strong></p><p>Si has seguido todos los pasos, ahora tienes:</p><ul><li>✅ Un perfil completo</li><li>✅ Contactos en tu base de datos</li><li>✅ Propiedades en tu inventario</li><li>✅ Tu primer deal creado</li><li>✅ Matching de IA probado</li><li>✅ Email conectado (opcional)</li><li>✅ Dashboard explorado</li></ul><p><strong>Próximos pasos:</strong></p><ul><li>Lee la <strong>Quick Start Guide</strong> para un tutorial más profundo de 15 min</li><li>Explora otros módulos (Calendar, Activities, Reports)</li><li>Invita a miembros del equipo (Settings → Users)</li><li>Configura el portal del cliente (Settings → Client Portal)</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "welcome-to-tesoro",
+    "quick-start-guide",
+    "basic-contact-management-tutorial",
+    "property-management-tutorial"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik alle stappen in één keer doen?",
+        "en": "Do I have to do all steps at once?",
+        "es": "¿Tengo que hacer todos los pasos de una vez?"
+      },
+      "answer": {
+        "nl": "Nee! Je kunt pauzes nemen. Je voortgang wordt automatisch opgeslagen. Maar probeer de eerste 4 stappen (profiel, contacts, properties, deal) wel in één sessie te doen voor de beste ervaring.",
+        "en": "No! You can take breaks. Your progress is automatically saved. But try to do the first 4 steps (profile, contacts, properties, deal) in one session for the best experience.",
+        "es": "¡No! Puedes tomar descansos. Tu progreso se guarda automáticamente. Pero intenta hacer los primeros 4 pasos (perfil, contactos, propiedades, deal) en una sesión para la mejor experiencia."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat als ik nog geen properties heb om toe te voegen?",
+        "en": "What if I don't have properties to add yet?",
+        "es": "¿Qué pasa si aún no tengo propiedades para agregar?"
+      },
+      "answer": {
+        "nl": "Geen probleem! Je kunt demo properties gebruiken om het systeem te leren kennen, of je kunt beginnen met alleen contacts en leads. Properties kun je later toevoegen wanneer je ze hebt.",
+        "en": "No problem! You can use demo properties to learn the system, or you can start with just contacts and leads. You can add properties later when you have them.",
+        "es": "¡No hay problema! Puedes usar propiedades de demostración para aprender el sistema, o puedes comenzar solo con contactos y leads. Puedes agregar propiedades más tarde cuando las tengas."
+      }
+    },
+    {
+      "question": {
+        "nl": "Is email integratie verplicht?",
+        "en": "Is email integration required?",
+        "es": "¿Es obligatoria la integración de email?"
+      },
+      "answer": {
+        "nl": "Nee, het is optioneel. Je kunt Tesoro gebruiken zonder email integratie. Maar integratie maakt communicatie veel makkelijker omdat alles op één plek staat.",
+        "en": "No, it's optional. You can use Tesoro without email integration. But integration makes communication much easier because everything is in one place.",
+        "es": "No, es opcional. Puedes usar Tesoro sin integración de email. Pero la integración hace la comunicación mucho más fácil porque todo está en un solo lugar."
+      }
+    }
+  ]
+}

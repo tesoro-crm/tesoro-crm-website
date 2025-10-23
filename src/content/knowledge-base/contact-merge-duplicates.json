@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "id": "contact-merge-duplicates",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:40:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "duplicates", "merge", "data-quality", "cleanup"],
+    "featured": false,
+    "readingTime": 6,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["merge duplicates tesoro", "find duplicate contacts", "clean contact database", "duplicate detection", "contact cleanup"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Duplicaten Vinden en Samenvoegen",
+      "en": "Finding and Merging Duplicate Contacts",
+      "es": "Encontrar y Fusionar Contactos Duplicados"
+    },
+    "description": {
+      "nl": "Houd je contactdatabase schoon door duplicaten te identificeren en samen te voegen zonder data te verliezen.",
+      "en": "Keep your contact database clean by identifying and merging duplicates without losing data.",
+      "es": "Mantén tu base de datos de contactos limpia identificando y fusionando duplicados sin perder datos."
+    },
+    "icon": "content_copy"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "why-duplicates-happen",
+      "title": {
+        "nl": "Waarom Ontstaan Duplicaten?",
+        "en": "Why Do Duplicates Happen?",
+        "es": "¿Por qué Ocurren los Duplicados?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Duplicaten ontstaan op verschillende manieren:</p><ul><li><strong>Multiple imports:</strong> Hetzelfde contact geïmporteerd uit verschillende bronnen</li><li><strong>Spelling variaties:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Team input:</strong> Meerdere teamleden voegen hetzelfde contact toe</li><li><strong>Lead conversion:</strong> Lead wordt contact maar oude lead blijft bestaan</li><li><strong>Email variaties:</strong> john@gmail.com vs john@company.com</li><li><strong>Typo's:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impact van Duplicaten</h3><ul><li>Verwarrende communicatie (emails naar verkeerde versie)</li><li>Onvolledige geschiedenis (data verspreid over meerdere records)</li><li>Inefficiënte filters en rapporten</li><li>Opslagverspilling</li><li>Verlies van vertrouwen in CRM data</li></ul>"
+        },
+        "en": {
+          "text": "<p>Duplicates occur in various ways:</p><ul><li><strong>Multiple imports:</strong> Same contact imported from different sources</li><li><strong>Spelling variations:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Team input:</strong> Multiple team members add the same contact</li><li><strong>Lead conversion:</strong> Lead becomes contact but old lead remains</li><li><strong>Email variations:</strong> john@gmail.com vs john@company.com</li><li><strong>Typos:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impact of Duplicates</h3><ul><li>Confusing communication (emails to wrong version)</li><li>Incomplete history (data spread across multiple records)</li><li>Inefficient filters and reports</li><li>Storage waste</li><li>Loss of trust in CRM data</li></ul>"
+        },
+        "es": {
+          "text": "<p>Los duplicados ocurren de varias maneras:</p><ul><li><strong>Múltiples importaciones:</strong> Mismo contacto importado de diferentes fuentes</li><li><strong>Variaciones de ortografía:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Entrada del equipo:</strong> Múltiples miembros del equipo agregan el mismo contacto</li><li><strong>Conversión de lead:</strong> Lead se convierte en contacto pero el lead antiguo permanece</li><li><strong>Variaciones de email:</strong> john@gmail.com vs john@company.com</li><li><strong>Errores tipográficos:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impacto de los Duplicados</h3><ul><li>Comunicación confusa (emails a versión incorrecta)</li><li>Historial incompleto (datos dispersos en múltiples registros)</li><li>Filtros e informes ineficientes</li><li>Desperdicio de almacenamiento</li><li>Pérdida de confianza en datos CRM</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "finding-duplicates",
+      "title": {
+        "nl": "Duplicaten Vinden",
+        "en": "Finding Duplicates",
+        "es": "Encontrar Duplicados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Methode 1: Automatische Detectie",
+            "en": "Method 1: Automatic Detection",
+            "es": "Método 1: Detección Automática"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Tesoro heeft ingebouwde duplicate detection:</p><ol><li>Ga naar <strong>Contacts > Tools > Find Duplicates</strong></li><li>Tesoro scant je database</li><li>Duplicaten worden gegroepeerd op basis van:  <ul><li>Email match (hoogste prioriteit)</li><li>Naam + telefoon match</li><li>Vergelijkbare namen (fuzzy matching)</li></ul></li><li>Je ziet groepen van mogelijk dubbele contacten</li></ol><p><strong>Matching scores:</strong></p><ul><li>🔴 <strong>95-100%:</strong> Zeer waarschijnlijk duplicaat (zelfde email)</li><li>🟡 <strong>80-94%:</strong> Waarschijnlijk duplicaat (naam + telefoon)</li><li>🟢 <strong>60-79%:</strong> Mogelijk duplicaat (vergelijkbare naam)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Tesoro has built-in duplicate detection:</p><ol><li>Go to <strong>Contacts > Tools > Find Duplicates</strong></li><li>Tesoro scans your database</li><li>Duplicates are grouped based on:  <ul><li>Email match (highest priority)</li><li>Name + phone match</li><li>Similar names (fuzzy matching)</li></ul></li><li>You see groups of potential duplicate contacts</li></ol><p><strong>Matching scores:</strong></p><ul><li>🔴 <strong>95-100%:</strong> Very likely duplicate (same email)</li><li>🟡 <strong>80-94%:</strong> Likely duplicate (name + phone)</li><li>🟢 <strong>60-79%:</strong> Possible duplicate (similar name)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Tesoro tiene detección de duplicados integrada:</p><ol><li>Ve a <strong>Contacts > Tools > Find Duplicates</strong></li><li>Tesoro escanea tu base de datos</li><li>Los duplicados se agrupan según:  <ul><li>Coincidencia de email (prioridad más alta)</li><li>Coincidencia de nombre + teléfono</li><li>Nombres similares (coincidencia difusa)</li></ul></li><li>Ves grupos de contactos potencialmente duplicados</li></ol><p><strong>Puntuaciones de coincidencia:</strong></p><ul><li>🔴 <strong>95-100%:</strong> Muy probablemente duplicado (mismo email)</li><li>🟡 <strong>80-94%:</strong> Probablemente duplicado (nombre + teléfono)</li><li>🟢 <strong>60-79%:</strong> Posiblemente duplicado (nombre similar)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Methode 2: Handmatig Zoeken",
+            "en": "Method 2: Manual Search",
+            "es": "Método 2: Búsqueda Manual"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Zoek specifieke duplicaten:</p><ol><li>Gebruik global search met deel van een naam</li><li>Kijk naar resultaten - zie je vergelijkbare contacten?</li><li>Filter op email domein (@gmail.com) om duplicaten te vinden</li><li>Sorteer op creation date - recente duplicaten eerst</li></ol><p><strong>Handige filters voor duplicate hunting:</strong></p><ul><li>Same email domain</li><li>Same phone area code</li><li>Same city + similar name</li><li>Created within same week (bulk import duplicaten)</li></ul>"
+            },
+            "en": {
+              "text": "<p>Search for specific duplicates:</p><ol><li>Use global search with part of a name</li><li>Look at results - do you see similar contacts?</li><li>Filter by email domain (@gmail.com) to find duplicates</li><li>Sort by creation date - recent duplicates first</li></ol><p><strong>Useful filters for duplicate hunting:</strong></p><ul><li>Same email domain</li><li>Same phone area code</li><li>Same city + similar name</li><li>Created within same week (bulk import duplicates)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Buscar duplicados específicos:</p><ol><li>Usa búsqueda global con parte de un nombre</li><li>Mira los resultados - ¿ves contactos similares?</li><li>Filtra por dominio de email (@gmail.com) para encontrar duplicados</li><li>Ordena por fecha de creación - duplicados recientes primero</li></ol><p><strong>Filtros útiles para buscar duplicados:</strong></p><ul><li>Mismo dominio de email</li><li>Mismo código de área telefónico</li><li>Misma ciudad + nombre similar</li><li>Creados en la misma semana (duplicados de importación masiva)</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "id": "merging-process",
+      "title": {
+        "nl": "Duplicaten Samenvoegen (Merge)",
+        "en": "Merging Duplicates",
+        "es": "Fusionar Duplicados"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Selecteer Master Record",
+            "en": "Step 1: Select Master Record",
+            "es": "Paso 1: Seleccionar Registro Maestro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Bij merge moet je kiezen welk contact het 'master' wordt:</p><ol><li>Klik <strong>Merge</strong> bij een duplicaat groep</li><li>Tesoro toont de contacten naast elkaar</li><li>Selecteer het meest complete record als master</li></ol><p><strong>Kies master op basis van:</strong></p><ul><li>Meeste ingevulde velden</li><li>Meeste gekoppelde deals/properties</li><li>Langste activiteit geschiedenis</li><li>Correcte/meest actuele informatie</li></ul><p>Het master record blijft behouden, de andere(n) worden verwijderd.</p>"
+            },
+            "en": {
+              "text": "<p>When merging you must choose which contact becomes the 'master':</p><ol><li>Click <strong>Merge</strong> on a duplicate group</li><li>Tesoro shows the contacts side by side</li><li>Select the most complete record as master</li></ol><p><strong>Choose master based on:</strong></p><ul><li>Most filled fields</li><li>Most linked deals/properties</li><li>Longest activity history</li><li>Correct/most current information</li></ul><p>The master record is kept, the other(s) are removed.</p>"
+            },
+            "es": {
+              "text": "<p>Al fusionar debes elegir qué contacto se convierte en el 'maestro':</p><ol><li>Haz clic en <strong>Merge</strong> en un grupo de duplicados</li><li>Tesoro muestra los contactos uno al lado del otro</li><li>Selecciona el registro más completo como maestro</li></ol><p><strong>Elige maestro basado en:</strong></p><ul><li>Más campos completados</li><li>Más deals/propiedades vinculadas</li><li>Historial de actividad más largo</li><li>Información correcta/más actual</li></ul><p>El registro maestro se mantiene, el/los otro(s) se eliminan.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Selecteer Velden om te Behouden",
+            "en": "Step 2: Select Fields to Keep",
+            "es": "Paso 2: Seleccionar Campos a Mantener"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voor elk veld kun je kiezen welke waarde je wilt behouden:</p><p><strong>Tesoro toont:</strong></p><ul><li>Master record waarde (links)</li><li>Duplicate record waarde (rechts)</li><li>Verschillen zijn gemarkeerd</li></ul><p><strong>Per veld kun je:</strong></p><ul><li>Master waarde gebruiken (standaard)</li><li>Duplicate waarde overnemen</li><li>Handmatig nieuwe waarde invoeren</li></ul><p><strong>Velden die automatisch worden samengevoegd:</strong></p><ul><li>Tags (beide sets gecombineerd)</li><li>Notes (alle notes behouden)</li><li>Activity history (beide histories gecombineerd)</li><li>Linked deals/properties (alle koppelingen behouden)</li></ul>"
+            },
+            "en": {
+              "text": "<p>For each field you can choose which value to keep:</p><p><strong>Tesoro shows:</strong></p><ul><li>Master record value (left)</li><li>Duplicate record value (right)</li><li>Differences are highlighted</li></ul><p><strong>Per field you can:</strong></p><ul><li>Use master value (default)</li><li>Take over duplicate value</li><li>Manually enter new value</li></ul><p><strong>Fields that are automatically merged:</strong></p><ul><li>Tags (both sets combined)</li><li>Notes (all notes kept)</li><li>Activity history (both histories combined)</li><li>Linked deals/properties (all links kept)</li></ul>"
+            },
+            "es": {
+              "text": "<p>Para cada campo puedes elegir qué valor mantener:</p><p><strong>Tesoro muestra:</strong></p><ul><li>Valor del registro maestro (izquierda)</li><li>Valor del registro duplicado (derecha)</li><li>Las diferencias están resaltadas</li></ul><p><strong>Por campo puedes:</strong></p><ul><li>Usar valor maestro (predeterminado)</li><li>Tomar valor duplicado</li><li>Ingresar manualmente nuevo valor</li></ul><p><strong>Campos que se fusionan automáticamente:</strong></p><ul><li>Etiquetas (ambos conjuntos combinados)</li><li>Notas (todas las notas mantenidas)</li><li>Historial de actividad (ambos historiales combinados)</li><li>Deals/propiedades vinculadas (todos los vínculos mantenidos)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Bevestig en Voer Samen",
+            "en": "Step 3: Confirm and Merge",
+            "es": "Paso 3: Confirmar y Fusionar"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Controleer alle geselecteerde waarden</li><li>Lees de waarschuwing: Dit kan niet ongedaan worden gemaakt!</li><li>Klik <strong>Confirm Merge</strong></li></ol><p><strong>Na de merge:</strong></p><ul><li>Master contact heeft alle gecombineerde data</li><li>Duplicate contact is verwijderd</li><li>Alle koppelingen (deals, properties) zijn overgezet</li><li>Activity history is samengevoegd</li><li>Tags zijn gecombineerd</li></ul><p><strong>Belangrijk:</strong> Merge is permanent! Test eerst met testdata als je onzeker bent.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Check all selected values</li><li>Read the warning: This cannot be undone!</li><li>Click <strong>Confirm Merge</strong></li></ol><p><strong>After merge:</strong></p><ul><li>Master contact has all combined data</li><li>Duplicate contact is deleted</li><li>All links (deals, properties) are transferred</li><li>Activity history is merged</li><li>Tags are combined</li></ul><p><strong>Important:</strong> Merge is permanent! Test first with test data if uncertain.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Verifica todos los valores seleccionados</li><li>Lee la advertencia: ¡Esto no se puede deshacer!</li><li>Haz clic en <strong>Confirm Merge</strong></li></ol><p><strong>Después de fusionar:</strong></p><ul><li>El contacto maestro tiene todos los datos combinados</li><li>El contacto duplicado se elimina</li><li>Todos los vínculos (deals, propiedades) se transfieren</li><li>El historial de actividad se fusiona</li><li>Las etiquetas se combinan</li></ul><p><strong>Importante:</strong> ¡La fusión es permanente! Prueba primero con datos de prueba si no estás seguro.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "callout",
+      "id": "prevention-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Duplicaten Voorkomen",
+        "en": "Preventing Duplicates",
+        "es": "Prevenir Duplicados"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Best practices om duplicaten te voorkomen:</strong></p><ul><li><strong>Zoek eerst:</strong> Check of contact al bestaat voor je nieuwe aanmaakt</li><li><strong>Gebruik duplicate detection bij import:</strong> Sla duplicaten over tijdens CSV import</li><li><strong>Standaardiseer input:</strong> Gebruik consistente naam formatting (voornaam + achternaam)</li><li><strong>Email als unique identifier:</strong> Gebruik primair email als identifier</li><li><strong>Wekelijkse cleanup:</strong> Run duplicate detection weekly</li><li><strong>Team training:</strong> Train team om te zoeken voor ze toevoegen</li><li><strong>Validation rules:</strong> Gebruik required fields om incomplete records te voorkomen</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Best practices to prevent duplicates:</strong></p><ul><li><strong>Search first:</strong> Check if contact already exists before creating new one</li><li><strong>Use duplicate detection on import:</strong> Skip duplicates during CSV import</li><li><strong>Standardize input:</strong> Use consistent name formatting (first name + last name)</li><li><strong>Email as unique identifier:</strong> Use primary email as identifier</li><li><strong>Weekly cleanup:</strong> Run duplicate detection weekly</li><li><strong>Team training:</strong> Train team to search before adding</li><li><strong>Validation rules:</strong> Use required fields to prevent incomplete records</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Mejores prácticas para prevenir duplicados:</strong></p><ul><li><strong>Buscar primero:</strong> Verifica si el contacto ya existe antes de crear uno nuevo</li><li><strong>Usar detección de duplicados en importación:</strong> Omitir duplicados durante importación CSV</li><li><strong>Estandarizar entrada:</strong> Usar formato de nombre consistente (nombre + apellido)</li><li><strong>Email como identificador único:</strong> Usar email principal como identificador</li><li><strong>Limpieza semanal:</strong> Ejecutar detección de duplicados semanalmente</li><li><strong>Capacitación del equipo:</strong> Capacitar al equipo para buscar antes de agregar</li><li><strong>Reglas de validación:</strong> Usar campos obligatorios para prevenir registros incompletos</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-bulk-operations",
+    "creating-contacts-step-by-step",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een merge ongedaan maken?",
+        "en": "Can I undo a merge?",
+        "es": "¿Puedo deshacer una fusión?"
+      },
+      "answer": {
+        "nl": "Nee, merge is permanent en kan niet ongedaan gemaakt worden. Daarom is het belangrijk om zorgvuldig te controleren voor je merge bevestigt. Maak een backup export voor je begint met grote merge operaties.",
+        "en": "No, merge is permanent and cannot be undone. That's why it's important to check carefully before confirming merge. Make a backup export before starting large merge operations.",
+        "es": "No, la fusión es permanente y no se puede deshacer. Por eso es importante verificar cuidadosamente antes de confirmar la fusión. Haz una exportación de respaldo antes de comenzar grandes operaciones de fusión."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er met deals en properties bij een merge?",
+        "en": "What happens to deals and properties during a merge?",
+        "es": "¿Qué sucede con los deals y propiedades durante una fusión?"
+      },
+      "answer": {
+        "nl": "Alle koppelingen (deals, properties, tasks, meetings, etc.) van het duplicate record worden automatisch overgezet naar het master record. Niets gaat verloren - alles wordt gecombineerd.",
+        "en": "All links (deals, properties, tasks, meetings, etc.) from the duplicate record are automatically transferred to the master record. Nothing is lost - everything is combined.",
+        "es": "Todos los vínculos (deals, propiedades, tareas, reuniones, etc.) del registro duplicado se transfieren automáticamente al registro maestro. Nada se pierde - todo se combina."
+      }
+    }
+  ]
+}

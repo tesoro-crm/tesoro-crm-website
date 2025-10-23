@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "id": "contact-relationships-linking",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:35:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "relationships", "linking", "deals", "properties"],
+    "featured": false,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["link contacts tesoro", "contact relationships", "connect contacts deals", "link properties", "contact connections"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contacten Koppelen: Relaties en Verbindingen Beheren",
+      "en": "Linking Contacts: Managing Relationships and Connections",
+      "es": "Vincular Contactos: Gestionar Relaciones y Conexiones"
+    },
+    "description": {
+      "nl": "Leer hoe je contacten koppelt aan deals, woningen, projecten en andere contacten voor een compleet overzicht.",
+      "en": "Learn how to link contacts to deals, properties, projects and other contacts for a complete overview.",
+      "es": "Aprende cómo vincular contactos a deals, propiedades, proyectos y otros contactos para una visión completa."
+    },
+    "icon": "link"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "why-link-contacts",
+      "title": {
+        "nl": "Waarom Contacten Koppelen?",
+        "en": "Why Link Contacts?",
+        "es": "¿Por qué Vincular Contactos?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Koppelingen creëren context en relaties tussen verschillende resources in je CRM:</p><h3>Voordelen van Contact Linking</h3><ul><li><strong>Complete context:</strong> Zie alle deals, woningen en activiteiten van een contact op één plek</li><li><strong>Snelle navigatie:</strong> Spring direct van contact naar gerelateerde deal of woning</li><li><strong>Betere samenwerking:</strong> Team ziet complete relatie met klant</li><li><strong>Automatische updates:</strong> Wijzigingen propageren door gekoppelde resources</li><li><strong>Rapportage:</strong> Analyseer relaties tussen contacten, deals en woningen</li></ul><h3>Wat Kun Je Koppelen?</h3><ul><li><strong>Contacts ↔ Deals:</strong> Koppel een contact aan een kooptraject</li><li><strong>Contacts ↔ Properties:</strong> Wijs woningen van interesse toe</li><li><strong>Contacts ↔ Projects:</strong> Link aan nieuwbouwprojecten</li><li><strong>Contacts ↔ Contacts:</strong> Familie, zakenpartners, referrals</li><li><strong>Contacts ↔ Tasks:</strong> Taken toegewezen aan contact</li><li><strong>Contacts ↔ Meetings:</strong> Afspraken en viewings</li></ul>"
+        },
+        "en": {
+          "text": "<p>Links create context and relationships between different resources in your CRM:</p><h3>Benefits of Contact Linking</h3><ul><li><strong>Complete context:</strong> See all deals, properties and activities of a contact in one place</li><li><strong>Quick navigation:</strong> Jump directly from contact to related deal or property</li><li><strong>Better collaboration:</strong> Team sees complete relationship with client</li><li><strong>Automatic updates:</strong> Changes propagate through linked resources</li><li><strong>Reporting:</strong> Analyze relationships between contacts, deals and properties</li></ul><h3>What Can You Link?</h3><ul><li><strong>Contacts ↔ Deals:</strong> Link a contact to a sales process</li><li><strong>Contacts ↔ Properties:</strong> Assign properties of interest</li><li><strong>Contacts ↔ Projects:</strong> Link to new construction projects</li><li><strong>Contacts ↔ Contacts:</strong> Family, business partners, referrals</li><li><strong>Contacts ↔ Tasks:</strong> Tasks assigned to contact</li><li><strong>Contacts ↔ Meetings:</strong> Appointments and viewings</li></ul>"
+        },
+        "es": {
+          "text": "<p>Los vínculos crean contexto y relaciones entre diferentes recursos en tu CRM:</p><h3>Beneficios de Vincular Contactos</h3><ul><li><strong>Contexto completo:</strong> Ver todos los deals, propiedades y actividades de un contacto en un lugar</li><li><strong>Navegación rápida:</strong> Saltar directamente de contacto a deal o propiedad relacionada</li><li><strong>Mejor colaboración:</strong> El equipo ve la relación completa con el cliente</li><li><strong>Actualizaciones automáticas:</strong> Los cambios se propagan a través de recursos vinculados</li><li><strong>Reportes:</strong> Analizar relaciones entre contactos, deals y propiedades</li></ul><h3>¿Qué Puedes Vincular?</h3><ul><li><strong>Contactos ↔ Deals:</strong> Vincular un contacto a un proceso de venta</li><li><strong>Contactos ↔ Propiedades:</strong> Asignar propiedades de interés</li><li><strong>Contactos ↔ Proyectos:</strong> Vincular a proyectos de nueva construcción</li><li><strong>Contactos ↔ Contactos:</strong> Familia, socios comerciales, referidos</li><li><strong>Contactos ↔ Tareas:</strong> Tareas asignadas a contacto</li><li><strong>Contactos ↔ Reuniones:</strong> Citas y visitas</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "linking-deals",
+      "title": {
+        "nl": "Contacten Koppelen aan Deals",
+        "en": "Linking Contacts to Deals",
+        "es": "Vincular Contactos a Deals"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Methode 1: Vanuit Contact Detail Pagina",
+            "en": "Method 1: From Contact Detail Page",
+            "es": "Método 1: Desde Página de Detalles de Contacto"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Open een contact</li><li>Ga naar het <strong>Deals</strong> tab</li><li>Klik <strong>+ Link Deal</strong></li><li>Kies een bestaande deal OF maak een nieuwe deal aan</li><li>Klik <strong>Save</strong></li></ol><p>De deal verschijnt nu in het Deals overzicht van dit contact.</p>"
+            },
+            "en": {
+              "text": "<ol><li>Open a contact</li><li>Go to the <strong>Deals</strong> tab</li><li>Click <strong>+ Link Deal</strong></li><li>Choose an existing deal OR create a new deal</li><li>Click <strong>Save</strong></li></ol><p>The deal now appears in the Deals overview of this contact.</p>"
+            },
+            "es": {
+              "text": "<ol><li>Abre un contacto</li><li>Ve a la pestaña <strong>Deals</strong></li><li>Haz clic en <strong>+ Link Deal</strong></li><li>Elige un deal existente O crea un nuevo deal</li><li>Haz clic en <strong>Save</strong></li></ol><p>El deal ahora aparece en la vista general de Deals de este contacto.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Methode 2: Vanuit Deal Pagina",
+            "en": "Method 2: From Deal Page",
+            "es": "Método 2: Desde Página de Deal"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Open een deal</li><li>Ga naar <strong>Contacts</strong> sectie</li><li>Klik <strong>+ Add Contact</strong></li><li>Zoek en selecteer het contact</li><li>Kies de rol: Primary contact, Co-buyer, etc.</li><li>Klik <strong>Add</strong></li></ol><p><strong>Meerdere contacten per deal:</strong></p><p>Je kunt meerdere contacten koppelen aan één deal met verschillende rollen:</p><ul><li>Primary contact (koper)</li><li>Co-buyer (mede-koper, partner)</li><li>Seller (verkoper)</li><li>Agent (makelaar)</li></ul>"
+            },
+            "en": {
+              "text": "<ol><li>Open a deal</li><li>Go to <strong>Contacts</strong> section</li><li>Click <strong>+ Add Contact</strong></li><li>Search and select the contact</li><li>Choose the role: Primary contact, Co-buyer, etc.</li><li>Click <strong>Add</strong></li></ol><p><strong>Multiple contacts per deal:</strong></p><p>You can link multiple contacts to one deal with different roles:</p><ul><li>Primary contact (buyer)</li><li>Co-buyer (co-buyer, partner)</li><li>Seller (seller)</li><li>Agent (broker)</li></ul>"
+            },
+            "es": {
+              "text": "<ol><li>Abre un deal</li><li>Ve a la sección <strong>Contacts</strong></li><li>Haz clic en <strong>+ Add Contact</strong></li><li>Busca y selecciona el contacto</li><li>Elige el rol: Primary contact, Co-buyer, etc.</li><li>Haz clic en <strong>Add</strong></li></ol><p><strong>Múltiples contactos por deal:</strong></p><p>Puedes vincular múltiples contactos a un deal con diferentes roles:</p><ul><li>Primary contact (comprador)</li><li>Co-buyer (co-comprador, pareja)</li><li>Seller (vendedor)</li><li>Agent (corredor)</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "linking-properties",
+      "title": {
+        "nl": "Contacten Koppelen aan Woningen",
+        "en": "Linking Contacts to Properties",
+        "es": "Vincular Contactos a Propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Waarom Woningen Koppelen?</h3><p>Wijs woningen toe aan contacten om:</p><ul><li>Te laten zien welke woningen een klant heeft bekeken</li><li>Interesse te registreren zonder direct een deal aan te maken</li><li>AI matching resultaten op te slaan</li><li>Viewing geschiedenis bij te houden</li></ul><h3>Woningen Toewijzen</h3><p><strong>Vanuit Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Klik <strong>+ Link Property</strong></li><li>Zoek en selecteer woning(en)</li><li>Markeer interesse level: High, Medium, Low</li><li>Voeg notitie toe (optioneel)</li></ol><p><strong>Vanuit Property:</strong></p><ol><li>Open woning → <strong>Interested Contacts</strong></li><li>Klik <strong>+ Add Contact</strong></li><li>Selecteer contact(en)</li></ol><h3>AI Property Matching</h3><p>Tesoro kan automatisch woningen suggereren op basis van:</p><ul><li>Budget range van contact</li><li>Locatie voorkeuren</li><li>Property type voorkeuren</li><li>Bedrooms/bathrooms vereisten</li></ul><p>Klik op <strong>Suggest Properties</strong> in het contact om AI matches te zien.</p>"
+        },
+        "en": {
+          "text": "<h3>Why Link Properties?</h3><p>Assign properties to contacts to:</p><ul><li>Show which properties a client has viewed</li><li>Register interest without creating a deal immediately</li><li>Save AI matching results</li><li>Track viewing history</li></ul><h3>Assigning Properties</h3><p><strong>From Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Click <strong>+ Link Property</strong></li><li>Search and select property(ies)</li><li>Mark interest level: High, Medium, Low</li><li>Add note (optional)</li></ol><p><strong>From Property:</strong></p><ol><li>Open property → <strong>Interested Contacts</strong></li><li>Click <strong>+ Add Contact</strong></li><li>Select contact(s)</li></ol><h3>AI Property Matching</h3><p>Tesoro can automatically suggest properties based on:</p><ul><li>Contact's budget range</li><li>Location preferences</li><li>Property type preferences</li><li>Bedrooms/bathrooms requirements</li></ul><p>Click <strong>Suggest Properties</strong> in the contact to see AI matches.</p>"
+        },
+        "es": {
+          "text": "<h3>¿Por qué Vincular Propiedades?</h3><p>Asignar propiedades a contactos para:</p><ul><li>Mostrar qué propiedades ha visto un cliente</li><li>Registrar interés sin crear un deal inmediatamente</li><li>Guardar resultados de matching de IA</li><li>Seguir historial de visitas</li></ul><h3>Asignar Propiedades</h3><p><strong>Desde Contacto:</strong></p><ol><li>Abrir contacto → pestaña <strong>Properties</strong></li><li>Hacer clic en <strong>+ Link Property</strong></li><li>Buscar y seleccionar propiedad(es)</li><li>Marcar nivel de interés: High, Medium, Low</li><li>Agregar nota (opcional)</li></ol><p><strong>Desde Propiedad:</strong></p><ol><li>Abrir propiedad → <strong>Interested Contacts</strong></li><li>Hacer clic en <strong>+ Add Contact</strong></li><li>Seleccionar contacto(s)</li></ol><h3>Matching de Propiedades con IA</h3><p>Tesoro puede sugerir automáticamente propiedades basándose en:</p><ul><li>Rango de presupuesto del contacto</li><li>Preferencias de ubicación</li><li>Preferencias de tipo de propiedad</li><li>Requisitos de dormitorios/baños</li></ul><p>Haz clic en <strong>Suggest Properties</strong> en el contacto para ver matches de IA.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "family-linking",
+      "variant": "info",
+      "title": {
+        "nl": "Familie en Zakenpartners Koppelen",
+        "en": "Linking Family and Business Partners",
+        "es": "Vincular Familia y Socios Comerciales"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Contact-to-Contact relationships:</strong></p><p>Koppel gerelateerde contacten aan elkaar:</p><ul><li><strong>Family:</strong> Partner, kinderen, ouders</li><li><strong>Business:</strong> Collega's, zakenpartners</li><li><strong>Referral:</strong> Wie heeft wie doorverwezen</li></ul><p><strong>Hoe te koppelen:</strong></p><ol><li>Open contact A</li><li>Ga naar <strong>Related Contacts</strong> tab</li><li>Klik <strong>+ Add Relationship</strong></li><li>Selecteer contact B</li><li>Kies relatie type: Spouse, Child, Colleague, Referral, etc.</li><li>Klik <strong>Save</strong></li></ol><p>De relatie is nu zichtbaar in beide contacten.</p>"
+        },
+        "en": {
+          "text": "<p><strong>Contact-to-Contact relationships:</strong></p><p>Link related contacts to each other:</p><ul><li><strong>Family:</strong> Spouse, children, parents</li><li><strong>Business:</strong> Colleagues, business partners</li><li><strong>Referral:</strong> Who referred whom</li></ul><p><strong>How to link:</strong></p><ol><li>Open contact A</li><li>Go to <strong>Related Contacts</strong> tab</li><li>Click <strong>+ Add Relationship</strong></li><li>Select contact B</li><li>Choose relationship type: Spouse, Child, Colleague, Referral, etc.</li><li>Click <strong>Save</strong></li></ol><p>The relationship is now visible in both contacts.</p>"
+        },
+        "es": {
+          "text": "<p><strong>Relaciones Contacto-a-Contacto:</strong></p><p>Vincular contactos relacionados entre sí:</p><ul><li><strong>Familia:</strong> Cónyuge, hijos, padres</li><li><strong>Negocios:</strong> Colegas, socios comerciales</li><li><strong>Referencia:</strong> Quién refirió a quién</li></ul><p><strong>Cómo vincular:</strong></p><ol><li>Abrir contacto A</li><li>Ir a pestaña <strong>Related Contacts</strong></li><li>Hacer clic en <strong>+ Add Relationship</strong></li><li>Seleccionar contacto B</li><li>Elegir tipo de relación: Spouse, Child, Colleague, Referral, etc.</li><li>Hacer clic en <strong>Save</strong></li></ol><p>La relación ahora es visible en ambos contactos.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "creating-contacts-step-by-step",
+    "deal-pipeline-complete-guide",
+    "property-management-tutorial"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een koppeling later verwijderen?",
+        "en": "Can I remove a link later?",
+        "es": "¿Puedo eliminar un vínculo más tarde?"
+      },
+      "answer": {
+        "nl": "Ja, open het contact of de resource en ga naar de gekoppelde items. Klik op het verwijder (X) icoon naast de koppeling. De koppeling wordt verwijderd maar de contacten/resources zelf blijven bestaan.",
+        "en": "Yes, open the contact or resource and go to the linked items. Click the remove (X) icon next to the link. The link is removed but the contacts/resources themselves remain.",
+        "es": "Sí, abre el contacto o recurso y ve a los elementos vinculados. Haz clic en el icono de eliminar (X) junto al vínculo. El vínculo se elimina pero los contactos/recursos permanecen."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat gebeurt er als ik een contact verwijder dat gekoppeld is aan een deal?",
+        "en": "What happens if I delete a contact that's linked to a deal?",
+        "es": "¿Qué sucede si elimino un contacto que está vinculado a un deal?"
+      },
+      "answer": {
+        "nl": "De koppeling wordt automatisch verwijderd, maar de deal blijft bestaan. Je krijgt een waarschuwing voordat je een gekoppeld contact verwijdert zodat je de consequenties begrijpt.",
+        "en": "The link is automatically removed, but the deal remains. You'll get a warning before deleting a linked contact so you understand the consequences.",
+        "es": "El vínculo se elimina automáticamente, pero el deal permanece. Recibirás una advertencia antes de eliminar un contacto vinculado para que entiendas las consecuencias."
+      }
+    }
+  ]
+}

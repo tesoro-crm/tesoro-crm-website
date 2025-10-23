@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "id": "idealista-integration-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "integrations",
+    "difficulty": "intermediate",
+    "tags": ["integrations", "idealista", "xml-feed", "portal-sync", "property-listings"],
+    "featured": true,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["idealista integration", "xml feed setup", "property portal sync", "auto-sync idealista", "real estate portal integration"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Idealista integratie: automatische property synchronisatie",
+      "en": "Idealista Integration: Automatic Property Synchronization",
+      "es": "Integración de Idealista: sincronización automática de propiedades"
+    },
+    "description": {
+      "nl": "Synchroniseer je properties automatisch met Idealista via XML feed. Configureer in minuten en publiceer direct naar het grootste vastgoedportaal van Spanje.",
+      "en": "Automatically sync your properties with Idealista via XML feed. Configure in minutes and publish directly to Spain's largest real estate portal.",
+      "es": "Sincroniza tus propiedades automáticamente con Idealista mediante feed XML. Configura en minutos y publica directamente al portal inmobiliario más grande de España."
+    },
+    "icon": "sync"
+  },
+
+  "sections": [
+    {
+      "type": "introduction",
+      "id": "idealista-overview",
+      "title": {
+        "nl": "Wat is de Idealista integratie?",
+        "en": "What Is the Idealista Integration?",
+        "es": "¿Qué es la integración de Idealista?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De Idealista integratie maakt het mogelijk om properties in Tesoro CRM automatisch te synchroniseren met jouw Idealista account. Door een XML feed te configureren, worden nieuwe properties, updates en prijswijzigingen direct doorgestuurd naar Idealista zonder handmatige invoer.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Automatische synchronisatie van properties naar Idealista</li><li>Real-time updates van prijzen, beschikbaarheid en foto's</li><li>Geen dubbele invoer - beheer alles vanuit Tesoro</li><li>Verhoog zichtbaarheid op Spanje's grootste vastgoedportaal</li><li>Time-saving: geen handmatige export/import nodig</li></ul><p>Idealista is het grootste vastgoedportaal in Spanje met meer dan 50 miljoen bezoeken per maand. Door deze integratie maximaliseer je de exposure van je properties bij potentiële kopers en huurders.</p>"
+        },
+        "en": {
+          "text": "<p>The Idealista integration allows you to automatically synchronize properties in Tesoro CRM with your Idealista account. By configuring an XML feed, new properties, updates, and price changes are sent directly to Idealista without manual input.</p><p><strong>Key benefits:</strong></p><ul><li>Automatic synchronization of properties to Idealista</li><li>Real-time updates of prices, availability, and photos</li><li>No duplicate entry - manage everything from Tesoro</li><li>Increase visibility on Spain's largest real estate portal</li><li>Time-saving: no manual export/import needed</li></ul><p>Idealista is Spain's largest real estate portal with more than 50 million visits per month. Through this integration, you maximize the exposure of your properties to potential buyers and renters.</p>"
+        },
+        "es": {
+          "text": "<p>La integración de Idealista permite sincronizar automáticamente propiedades en Tesoro CRM con tu cuenta de Idealista. Al configurar un feed XML, las nuevas propiedades, actualizaciones y cambios de precio se envían directamente a Idealista sin entrada manual.</p><p><strong>Beneficios clave:</strong></p><ul><li>Sincronización automática de propiedades a Idealista</li><li>Actualizaciones en tiempo real de precios, disponibilidad y fotos</li><li>Sin entrada duplicada - gestiona todo desde Tesoro</li><li>Aumenta la visibilidad en el portal inmobiliario más grande de España</li><li>Ahorro de tiempo: no se necesita exportación/importación manual</li></ul><p>Idealista es el portal inmobiliario más grande de España con más de 50 millones de visitas por mes. A través de esta integración, maximizas la exposición de tus propiedades a compradores e inquilinos potenciales.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "solution",
+      "id": "idealista-setup-steps",
+      "title": {
+        "nl": "Idealista integratie configureren",
+        "en": "Configuring Idealista Integration",
+        "es": "Configurar integración de Idealista"
+      },
+      "subsections": [
+        {
+          "id": "step-1-idealista-account",
+          "title": {
+            "nl": "Stap 1: Idealista professional account",
+            "en": "Step 1: Idealista Professional Account",
+            "es": "Paso 1: cuenta profesional de Idealista"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Voor de XML feed integratie heb je een <strong>Idealista Professional account</strong> nodig.</p><h4>Vereisten:</h4><ul><li>Actief Idealista Professional abonnement</li><li>Toegang tot Idealista Pro dashboard</li><li>API credentials (verkrijgbaar via Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in op je Idealista Professional account</li><li>Ga naar <strong>Settings → Integrations</strong></li><li>Vraag XML feed toegang aan bij Idealista support</li><li>Noteer je API credentials (API key en client ID)</li></ol><p><strong>Tip:</strong> Als je nog geen Professional account hebt, neem contact op met Idealista sales om een account aan te maken.</p>"
+            },
+            "en": {
+              "text": "<p>For the XML feed integration, you need an <strong>Idealista Professional account</strong>.</p><h4>Requirements:</h4><ul><li>Active Idealista Professional subscription</li><li>Access to Idealista Pro dashboard</li><li>API credentials (available through Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in to your Idealista Professional account</li><li>Go to <strong>Settings → Integrations</strong></li><li>Request XML feed access from Idealista support</li><li>Note your API credentials (API key and client ID)</li></ol><p><strong>Tip:</strong> If you don't have a Professional account yet, contact Idealista sales to create an account.</p>"
+            },
+            "es": {
+              "text": "<p>Para la integración del feed XML, necesitas una <strong>cuenta profesional de Idealista</strong>.</p><h4>Requisitos:</h4><ul><li>Suscripción activa a Idealista Professional</li><li>Acceso al panel de Idealista Pro</li><li>Credenciales de API (disponibles a través del soporte de Idealista)</li></ul><h4>Configuración de cuenta:</h4><ol><li>Inicia sesión en tu cuenta de Idealista Professional</li><li>Ve a <strong>Settings → Integrations</strong></li><li>Solicita acceso al feed XML al soporte de Idealista</li><li>Anota tus credenciales de API (clave API e ID de cliente)</li></ol><p><strong>Consejo:</strong> Si aún no tienes una cuenta profesional, contacta con el equipo de ventas de Idealista para crear una cuenta.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-2-tesoro-integration",
+          "title": {
+            "nl": "Stap 2: Idealista integratie in Tesoro activeren",
+            "en": "Step 2: Activate Idealista Integration in Tesoro",
+            "es": "Paso 2: activar integración de Idealista en Tesoro"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Configureer de Idealista integratie in Tesoro CRM om de XML feed te activeren.</p><h4>Configuratiestappen:</h4><ol><li>Log in op Tesoro CRM</li><li>Ga naar <strong>Settings → Integrations → Property Portals</strong></li><li>Klik op <strong>+ Add Integration</strong></li><li>Selecteer <strong>Idealista</strong> uit de lijst</li><li>Vul je Idealista credentials in:  <ul><li><strong>API Key:</strong> Jouw Idealista API key</li><li><strong>Client ID:</strong> Jouw Idealista client ID</li><li><strong>Feed URL:</strong> Wordt automatisch gegenereerd</li></ul></li><li>Klik <strong>Test Connection</strong> om de verbinding te verifiëren</li><li>Klik <strong>Save & Activate</strong></li></ol><p>De integratie is nu actief. Tesoro genereert automatisch een XML feed URL die je aan Idealista moet doorgeven.</p>"
+            },
+            "en": {
+              "text": "<p>Configure the Idealista integration in Tesoro CRM to activate the XML feed.</p><h4>Configuration steps:</h4><ol><li>Log in to Tesoro CRM</li><li>Go to <strong>Settings → Integrations → Property Portals</strong></li><li>Click <strong>+ Add Integration</strong></li><li>Select <strong>Idealista</strong> from the list</li><li>Fill in your Idealista credentials:  <ul><li><strong>API Key:</strong> Your Idealista API key</li><li><strong>Client ID:</strong> Your Idealista client ID</li><li><strong>Feed URL:</strong> Automatically generated</li></ul></li><li>Click <strong>Test Connection</strong> to verify the connection</li><li>Click <strong>Save & Activate</strong></li></ol><p>The integration is now active. Tesoro automatically generates an XML feed URL that you must provide to Idealista.</p>"
+            },
+            "es": {
+              "text": "<p>Configura la integración de Idealista en Tesoro CRM para activar el feed XML.</p><h4>Pasos de configuración:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Ve a <strong>Settings → Integrations → Property Portals</strong></li><li>Haz clic en <strong>+ Add Integration</strong></li><li>Selecciona <strong>Idealista</strong> de la lista</li><li>Completa tus credenciales de Idealista:  <ul><li><strong>API Key:</strong> Tu clave API de Idealista</li><li><strong>Client ID:</strong> Tu ID de cliente de Idealista</li><li><strong>Feed URL:</strong> Se genera automáticamente</li></ul></li><li>Haz clic en <strong>Test Connection</strong> para verificar la conexión</li><li>Haz clic en <strong>Save & Activate</strong></li></ol><p>La integración ahora está activa. Tesoro genera automáticamente una URL de feed XML que debes proporcionar a Idealista.</p>"
+            }
+          }
+        },
+        {
+          "id": "step-3-xml-feed-setup",
+          "title": {
+            "nl": "Stap 3: XML feed URL doorgeven aan Idealista",
+            "en": "Step 3: Provide XML Feed URL to Idealista",
+            "es": "Paso 3: proporcionar URL del feed XML a Idealista"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Geef de gegenereerde XML feed URL door aan Idealista zodat ze properties kunnen synchroniseren.</p><h4>Feed URL verkrijgen:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Kopieer de <strong>XML Feed URL</strong> (bijv. https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Noteer de <strong>Sync Frequency</strong> (standaard: elk uur)</li></ol><h4>URL aan Idealista doorgeven:</h4><ol><li>Log in op Idealista Professional dashboard</li><li>Ga naar <strong>Settings → Integrations → XML Feed</strong></li><li>Plak de Tesoro XML feed URL</li><li>Kies synchronisatie frequentie (aanbevolen: hourly)</li><li>Klik <strong>Validate Feed</strong> om te testen</li><li>Klik <strong>Activate Feed</strong></li></ol><p><strong>Let op:</strong> Het kan 10-15 minuten duren voordat de eerste synchronisatie plaatsvindt.</p>"
+            },
+            "en": {
+              "text": "<p>Provide the generated XML feed URL to Idealista so they can synchronize properties.</p><h4>Obtaining feed URL:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copy the <strong>XML Feed URL</strong> (e.g., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Note the <strong>Sync Frequency</strong> (default: hourly)</li></ol><h4>Providing URL to Idealista:</h4><ol><li>Log in to Idealista Professional dashboard</li><li>Go to <strong>Settings → Integrations → XML Feed</strong></li><li>Paste the Tesoro XML feed URL</li><li>Choose sync frequency (recommended: hourly)</li><li>Click <strong>Validate Feed</strong> to test</li><li>Click <strong>Activate Feed</strong></li></ol><p><strong>Note:</strong> It may take 10-15 minutes before the first synchronization occurs.</p>"
+            },
+            "es": {
+              "text": "<p>Proporciona la URL del feed XML generado a Idealista para que puedan sincronizar propiedades.</p><h4>Obtener URL del feed:</h4><ol><li>En Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copia la <strong>XML Feed URL</strong> (ej., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Anota la <strong>Sync Frequency</strong> (predeterminado: cada hora)</li></ol><h4>Proporcionar URL a Idealista:</h4><ol><li>Inicia sesión en el panel de Idealista Professional</li><li>Ve a <strong>Settings → Integrations → XML Feed</strong></li><li>Pega la URL del feed XML de Tesoro</li><li>Elige frecuencia de sincronización (recomendado: cada hora)</li><li>Haz clic en <strong>Validate Feed</strong> para probar</li><li>Haz clic en <strong>Activate Feed</strong></li></ol><p><strong>Nota:</strong> Puede tomar 10-15 minutos antes de que ocurra la primera sincronización.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "property-mapping",
+      "title": {
+        "nl": "Property velden mapping",
+        "en": "Property Field Mapping",
+        "es": "Mapeo de campos de propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro maakt automatisch een mapping van property velden naar Idealista's verwachte formaat.</p><h4>Automatisch gemapte velden:</h4><table><thead><tr><th>Tesoro veld</th><th>Idealista veld</th><th>Beschrijving</th></tr></thead><tbody><tr><td>Property Title</td><td>title</td><td>Property naam</td></tr><tr><td>Description</td><td>description</td><td>Uitgebreide beschrijving</td></tr><tr><td>Price</td><td>price</td><td>Prijs in EUR</td></tr><tr><td>Property Type</td><td>propertyType</td><td>Flat, house, office, etc.</td></tr><tr><td>Transaction Type</td><td>operation</td><td>Sale, rent, transfer</td></tr><tr><td>Address</td><td>address</td><td>Volledig adres</td></tr><tr><td>City</td><td>municipality</td><td>Stad</td></tr><tr><td>Postal Code</td><td>postalCode</td><td>Postcode</td></tr><tr><td>Square Meters</td><td>size</td><td>Oppervlakte in m²</td></tr><tr><td>Bedrooms</td><td>rooms</td><td>Aantal slaapkamers</td></tr><tr><td>Bathrooms</td><td>bathrooms</td><td>Aantal badkamers</td></tr><tr><td>Floor</td><td>floor</td><td>Verdieping</td></tr><tr><td>Photos</td><td>images</td><td>Property foto's (max 50)</td></tr></tbody></table><h4>Optionele velden:</h4><ul><li><strong>Energy Certificate:</strong> Tesoro sync energie label</li><li><strong>Features:</strong> Lift, parking, terras, etc.</li><li><strong>Contact Info:</strong> Agent naam en telefoonnummer</li><li><strong>Virtual Tour:</strong> 360° tour URL</li></ul>"
+        },
+        "en": {
+          "text": "<p>Tesoro automatically creates a mapping of property fields to Idealista's expected format.</p><h4>Automatically mapped fields:</h4><table><thead><tr><th>Tesoro field</th><th>Idealista field</th><th>Description</th></tr></thead><tbody><tr><td>Property Title</td><td>title</td><td>Property name</td></tr><tr><td>Description</td><td>description</td><td>Extended description</td></tr><tr><td>Price</td><td>price</td><td>Price in EUR</td></tr><tr><td>Property Type</td><td>propertyType</td><td>Flat, house, office, etc.</td></tr><tr><td>Transaction Type</td><td>operation</td><td>Sale, rent, transfer</td></tr><tr><td>Address</td><td>address</td><td>Full address</td></tr><tr><td>City</td><td>municipality</td><td>City</td></tr><tr><td>Postal Code</td><td>postalCode</td><td>Postal code</td></tr><tr><td>Square Meters</td><td>size</td><td>Area in m²</td></tr><tr><td>Bedrooms</td><td>rooms</td><td>Number of bedrooms</td></tr><tr><td>Bathrooms</td><td>bathrooms</td><td>Number of bathrooms</td></tr><tr><td>Floor</td><td>floor</td><td>Floor level</td></tr><tr><td>Photos</td><td>images</td><td>Property photos (max 50)</td></tr></tbody></table><h4>Optional fields:</h4><ul><li><strong>Energy Certificate:</strong> Tesoro syncs energy label</li><li><strong>Features:</strong> Elevator, parking, terrace, etc.</li><li><strong>Contact Info:</strong> Agent name and phone number</li><li><strong>Virtual Tour:</strong> 360° tour URL</li></ul>"
+        },
+        "es": {
+          "text": "<p>Tesoro crea automáticamente un mapeo de campos de propiedad al formato esperado de Idealista.</p><h4>Campos mapeados automáticamente:</h4><table><thead><tr><th>Campo Tesoro</th><th>Campo Idealista</th><th>Descripción</th></tr></thead><tbody><tr><td>Property Title</td><td>title</td><td>Nombre de la propiedad</td></tr><tr><td>Description</td><td>description</td><td>Descripción extendida</td></tr><tr><td>Price</td><td>price</td><td>Precio en EUR</td></tr><tr><td>Property Type</td><td>propertyType</td><td>Piso, casa, oficina, etc.</td></tr><tr><td>Transaction Type</td><td>operation</td><td>Venta, alquiler, traspaso</td></tr><tr><td>Address</td><td>address</td><td>Dirección completa</td></tr><tr><td>City</td><td>municipality</td><td>Ciudad</td></tr><tr><td>Postal Code</td><td>postalCode</td><td>Código postal</td></tr><tr><td>Square Meters</td><td>size</td><td>Superficie en m²</td></tr><tr><td>Bedrooms</td><td>rooms</td><td>Número de habitaciones</td></tr><tr><td>Bathrooms</td><td>bathrooms</td><td>Número de baños</td></tr><tr><td>Floor</td><td>floor</td><td>Planta</td></tr><tr><td>Photos</td><td>images</td><td>Fotos de propiedad (máx 50)</td></tr></tbody></table><h4>Campos opcionales:</h4><ul><li><strong>Energy Certificate:</strong> Tesoro sincroniza etiqueta energética</li><li><strong>Features:</strong> Ascensor, parking, terraza, etc.</li><li><strong>Contact Info:</strong> Nombre del agente y número de teléfono</li><li><strong>Virtual Tour:</strong> URL de tour 360°</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "sync-behavior",
+      "variant": "info",
+      "title": {
+        "nl": "Synchronisatie gedrag",
+        "en": "Synchronization Behavior",
+        "es": "Comportamiento de sincronización"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Automatische synchronisatie:</strong></p><ul><li><strong>Nieuwe properties:</strong> Automatisch toegevoegd aan Idealista binnen 1 uur</li><li><strong>Updates:</strong> Prijswijzigingen, beschrijvingen en foto's worden direct gesynchroniseerd</li><li><strong>Verwijderde properties:</strong> Automatisch verwijderd van Idealista bij status 'Sold' of 'Archived'</li><li><strong>Status changes:</strong> Available, reserved, sold worden correct gemapped</li></ul><p><strong>Filter opties:</strong></p><p>Je kunt kiezen welke properties naar Idealista worden gesynchroniseerd:</p><ul><li>Alleen properties met status 'Available'</li><li>Specifieke property types (bijv. alleen appartementen)</li><li>Prijsrange filters</li><li>Custom tags (bijv. alleen 'Featured' properties)</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Automatic synchronization:</strong></p><ul><li><strong>New properties:</strong> Automatically added to Idealista within 1 hour</li><li><strong>Updates:</strong> Price changes, descriptions, and photos are synchronized immediately</li><li><strong>Deleted properties:</strong> Automatically removed from Idealista when status is 'Sold' or 'Archived'</li><li><strong>Status changes:</strong> Available, reserved, sold are correctly mapped</li></ul><p><strong>Filter options:</strong></p><p>You can choose which properties are synchronized to Idealista:</p><ul><li>Only properties with 'Available' status</li><li>Specific property types (e.g., apartments only)</li><li>Price range filters</li><li>Custom tags (e.g., only 'Featured' properties)</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Sincronización automática:</strong></p><ul><li><strong>Propiedades nuevas:</strong> Se agregan automáticamente a Idealista en 1 hora</li><li><strong>Actualizaciones:</strong> Los cambios de precio, descripciones y fotos se sincronizan inmediatamente</li><li><strong>Propiedades eliminadas:</strong> Se eliminan automáticamente de Idealista cuando el estado es 'Sold' o 'Archived'</li><li><strong>Cambios de estado:</strong> Available, reserved, sold se mapean correctamente</li></ul><p><strong>Opciones de filtro:</strong></p><p>Puedes elegir qué propiedades se sincronizan con Idealista:</p><ul><li>Solo propiedades con estado 'Available'</li><li>Tipos de propiedad específicos (ej., solo apartamentos)</li><li>Filtros de rango de precio</li><li>Etiquetas personalizadas (ej., solo propiedades 'Featured')</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "monitoring-troubleshooting",
+      "title": {
+        "nl": "Monitoring en troubleshooting",
+        "en": "Monitoring and Troubleshooting",
+        "es": "Monitoreo y solución de problemas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Synchronisatie status monitoren:</h4><ol><li>Ga naar <strong>Settings → Integrations → Idealista</strong></li><li>Bekijk <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Tijdstip van laatste synchronisatie</li><li><strong>Properties Synced:</strong> Aantal gesynchroniseerde properties</li><li><strong>Errors:</strong> Eventuele sync errors</li><li><strong>Pending Updates:</strong> Nog te synchroniseren wijzigingen</li></ul></li><li>Klik <strong>Sync Logs</strong> voor gedetailleerde geschiedenis</li></ol><h4>Veelvoorkomende problemen oplossen:</h4><p><strong>Properties verschijnen niet op Idealista:</strong></p><ul><li>Check of property status = 'Available'</li><li>Verifieer dat alle verplichte velden zijn ingevuld (prijs, adres, foto's)</li><li>Controleer filter instellingen in Tesoro integratie</li><li>Wacht tot volgende sync cycle (max 1 uur)</li></ul><p><strong>Foto's worden niet gesynchroniseerd:</strong></p><ul><li>Zorg dat foto's minimaal 800x600px zijn</li><li>Maximum 50 foto's per property</li><li>Ondersteunde formaten: JPG, PNG</li><li>Maximale bestandsgrootte: 10MB per foto</li></ul><p><strong>Sync errors in dashboard:</strong></p><ul><li>Klik op error message voor details</li><li>Veelvoorkomende errors:  <ul><li><strong>Missing required field:</strong> Vul ontbrekend veld in</li><li><strong>Invalid API credentials:</strong> Vernieuw Idealista API key</li><li><strong>Rate limit exceeded:</strong> Wacht 1 uur, sync hervat automatisch</li></ul></li></ul><h4>Handmatige sync forceren:</h4><p>Als je niet wilt wachten op automatische sync:</p><ol><li>Ga naar property detail pagina</li><li>Klik <strong>Sync to Portals</strong> knop</li><li>Selecteer <strong>Idealista</strong></li><li>Klik <strong>Sync Now</strong></li></ol>"
+        },
+        "en": {
+          "text": "<h4>Monitoring sync status:</h4><ol><li>Go to <strong>Settings → Integrations → Idealista</strong></li><li>View <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Time of last synchronization</li><li><strong>Properties Synced:</strong> Number of synced properties</li><li><strong>Errors:</strong> Any sync errors</li><li><strong>Pending Updates:</strong> Changes yet to be synchronized</li></ul></li><li>Click <strong>Sync Logs</strong> for detailed history</li></ol><h4>Resolving common issues:</h4><p><strong>Properties don't appear on Idealista:</strong></p><ul><li>Check if property status = 'Available'</li><li>Verify that all required fields are filled (price, address, photos)</li><li>Check filter settings in Tesoro integration</li><li>Wait for next sync cycle (max 1 hour)</li></ul><p><strong>Photos are not synchronized:</strong></p><ul><li>Ensure photos are at least 800x600px</li><li>Maximum 50 photos per property</li><li>Supported formats: JPG, PNG</li><li>Maximum file size: 10MB per photo</li></ul><p><strong>Sync errors in dashboard:</strong></p><ul><li>Click on error message for details</li><li>Common errors:  <ul><li><strong>Missing required field:</strong> Fill in missing field</li><li><strong>Invalid API credentials:</strong> Refresh Idealista API key</li><li><strong>Rate limit exceeded:</strong> Wait 1 hour, sync resumes automatically</li></ul></li></ul><h4>Force manual sync:</h4><p>If you don't want to wait for automatic sync:</p><ol><li>Go to property detail page</li><li>Click <strong>Sync to Portals</strong> button</li><li>Select <strong>Idealista</strong></li><li>Click <strong>Sync Now</strong></li></ol>"
+        },
+        "es": {
+          "text": "<h4>Monitorear estado de sincronización:</h4><ol><li>Ve a <strong>Settings → Integrations → Idealista</strong></li><li>Ver <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Hora de la última sincronización</li><li><strong>Properties Synced:</strong> Número de propiedades sincronizadas</li><li><strong>Errors:</strong> Cualquier error de sincronización</li><li><strong>Pending Updates:</strong> Cambios aún por sincronizar</li></ul></li><li>Haz clic en <strong>Sync Logs</strong> para historial detallado</li></ol><h4>Resolver problemas comunes:</h4><p><strong>Las propiedades no aparecen en Idealista:</strong></p><ul><li>Verifica que el estado de la propiedad = 'Available'</li><li>Verifica que todos los campos requeridos estén completados (precio, dirección, fotos)</li><li>Verifica la configuración de filtros en la integración de Tesoro</li><li>Espera al siguiente ciclo de sincronización (máx 1 hora)</li></ul><p><strong>Las fotos no se sincronizan:</strong></p><ul><li>Asegúrate de que las fotos tengan al menos 800x600px</li><li>Máximo 50 fotos por propiedad</li><li>Formatos soportados: JPG, PNG</li><li>Tamaño máximo de archivo: 10MB por foto</li></ul><p><strong>Errores de sincronización en el panel:</strong></p><ul><li>Haz clic en el mensaje de error para detalles</li><li>Errores comunes:  <ul><li><strong>Missing required field:</strong> Completa el campo faltante</li><li><strong>Invalid API credentials:</strong> Actualiza la clave API de Idealista</li><li><strong>Rate limit exceeded:</strong> Espera 1 hora, la sincronización se reanuda automáticamente</li></ul></li></ul><h4>Forzar sincronización manual:</h4><p>Si no quieres esperar a la sincronización automática:</p><ol><li>Ve a la página de detalle de la propiedad</li><li>Haz clic en el botón <strong>Sync to Portals</strong></li><li>Selecciona <strong>Idealista</strong></li><li>Haz clic en <strong>Sync Now</strong></li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "fotocasa-integration-guide",
+    "adding-properties-guide",
+    "property-media-management",
+    "api-webhooks-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoe vaak worden properties gesynchroniseerd naar Idealista?",
+        "en": "How often are properties synchronized to Idealista?",
+        "es": "¿Con qué frecuencia se sincronizan las propiedades con Idealista?"
+      },
+      "answer": {
+        "nl": "Standaard elk uur. Je kunt de frequentie aanpassen naar 30 minuten, 2 uur, of 4 uur in de integratie instellingen.",
+        "en": "Hourly by default. You can adjust the frequency to 30 minutes, 2 hours, or 4 hours in the integration settings.",
+        "es": "Cada hora por defecto. Puedes ajustar la frecuencia a 30 minutos, 2 horas o 4 horas en la configuración de integración."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik specifieke properties uitsluiten van Idealista sync?",
+        "en": "Can I exclude specific properties from Idealista sync?",
+        "es": "¿Puedo excluir propiedades específicas de la sincronización de Idealista?"
+      },
+      "answer": {
+        "nl": "Ja, bij elke property is een 'Sync to Idealista' toggle. Schakel deze uit om een property niet te synchroniseren.",
+        "en": "Yes, each property has a 'Sync to Idealista' toggle. Turn this off to exclude a property from syncing.",
+        "es": "Sí, cada propiedad tiene un interruptor 'Sync to Idealista'. Desactívalo para excluir una propiedad de la sincronización."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden wijzigingen aan properties in Idealista ook teruggekoppeld naar Tesoro?",
+        "en": "Are changes to properties in Idealista also synced back to Tesoro?",
+        "es": "¿Los cambios en las propiedades en Idealista también se sincronizan de vuelta a Tesoro?"
+      },
+      "answer": {
+        "nl": "Nee, de synchronisatie is één richting (Tesoro → Idealista). Tesoro is de single source of truth. Wijzigingen in Idealista worden overschreven bij de volgende sync.",
+        "en": "No, the synchronization is one-way (Tesoro → Idealista). Tesoro is the single source of truth. Changes in Idealista are overwritten on the next sync.",
+        "es": "No, la sincronización es unidireccional (Tesoro → Idealista). Tesoro es la única fuente de verdad. Los cambios en Idealista se sobrescriben en la siguiente sincronización."
+      }
+    },
+    {
+      "question": {
+        "nl": "Zijn er kosten verbonden aan de Idealista integratie?",
+        "en": "Are there costs associated with the Idealista integration?",
+        "es": "¿Hay costos asociados con la integración de Idealista?"
+      },
+      "answer": {
+        "nl": "De integratie zelf is gratis in Tesoro. Je hebt wel een actief Idealista Professional abonnement nodig (kosten variëren afhankelijk van aantal listings).",
+        "en": "The integration itself is free in Tesoro. You do need an active Idealista Professional subscription (costs vary depending on number of listings).",
+        "es": "La integración en sí es gratuita en Tesoro. Necesitas una suscripción activa a Idealista Professional (los costos varían según el número de anuncios)."
+      }
+    }
+  ]
+}

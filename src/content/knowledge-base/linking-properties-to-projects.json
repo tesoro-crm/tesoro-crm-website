@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "id": "linking-properties-to-projects",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "projects",
+    "difficulty": "intermediate",
+    "tags": ["projects", "properties", "units", "linking", "setup"],
+    "featured": false,
+    "readingTime": 8,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["link properties", "project units", "apartment linking", "tesoro projects", "development units"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Properties linken aan projecten",
+      "en": "Linking Properties to Projects",
+      "es": "Vincular propiedades a proyectos"
+    },
+    "description": {
+      "nl": "Leer hoe je individuele units (apartments, houses) toevoegt en linkt aan development projecten voor complete unit management.",
+      "en": "Learn how to add and link individual units (apartments, houses) to development projects for complete unit management.",
+      "es": "Aprende cómo agregar y vincular unidades individuales (apartamentos, casas) a proyectos de desarrollo para gestión completa de unidades."
+    },
+    "icon": "link"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Een <strong>Project</strong> in Tesoro is de container, maar <strong>Properties</strong> zijn de individuele units die je verkoopt. Deze gids legt uit hoe je Properties aanmaakt en linkt aan je development project.</p><p><strong>Waarom Properties linken?</strong></p><ul><li>Track beschikbaarheid per unit (Available, Reserved, Sold)</li><li>Individuele pricing per unit (kan variëren per floor, view)</li><li>Separate deals per unit</li><li>Unit-specific details (floor number, parking spot, balcony size)</li><li>Buyers kunnen specifieke units selecteren in client portal</li></ul><p><strong>Twee methodes:</strong></p><ul><li><strong>Method 1: Create new Properties</strong> - Vanaf scratch, link direct aan project</li><li><strong>Method 2: Link existing Properties</strong> - Als je units al hebt aangemaakt</li></ul>"
+        },
+        "en": {
+          "text": "<p>A <strong>Project</strong> in Tesoro is the container, but <strong>Properties</strong> are the individual units you sell. This guide explains how to create Properties and link them to your development project.</p><p><strong>Why link Properties?</strong></p><ul><li>Track availability per unit (Available, Reserved, Sold)</li><li>Individual pricing per unit (can vary per floor, view)</li><li>Separate deals per unit</li><li>Unit-specific details (floor number, parking spot, balcony size)</li><li>Buyers can select specific units in client portal</li></ul><p><strong>Two methods:</strong></p><ul><li><strong>Method 1: Create new Properties</strong> - From scratch, link directly to project</li><li><strong>Method 2: Link existing Properties</strong> - If you've already created units</li></ul>"
+        },
+        "es": {
+          "text": "<p>Un <strong>Project</strong> en Tesoro es el contenedor, pero <strong>Properties</strong> son las unidades individuales que vendes. Esta guía explica cómo crear Properties y vincularlas a tu proyecto de desarrollo.</p><p><strong>¿Por qué vincular Properties?</strong></p><ul><li>Rastrear disponibilidad por unidad (Available, Reserved, Sold)</li><li>Precio individual por unidad (puede variar por piso, vista)</li><li>Deals separados por unidad</li><li>Detalles específicos de unidad (número de piso, espacio de estacionamiento, tamaño de balcón)</li><li>Los compradores pueden seleccionar unidades específicas en portal del cliente</li></ul><p><strong>Dos métodos:</strong></p><ul><li><strong>Método 1: Crear nuevas Properties</strong> - Desde cero, vincular directamente al proyecto</li><li><strong>Método 2: Vincular Properties existentes</strong> - Si ya has creado unidades</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "method-1",
+      "title": {
+        "nl": "Methode 1: Nieuwe properties aanmaken en linken",
+        "en": "Method 1: Create New Properties and Link",
+        "es": "Método 1: crear nuevas properties y vincular"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Stap 1: Open het project",
+            "en": "Step 1: Open the Project",
+            "es": "Paso 1: abrir el proyecto"
+          },
+          "content": {
+            "nl": {
+              "text": "<ol><li>Ga naar <strong>Projects</strong> in sidebar</li><li>Klik op je project (bijv. \"Sunset Gardens Valencia\")</li><li>Ga naar het <strong>Units</strong> tabblad</li><li>Klik <strong>+ Add Units</strong></li></ol><p>Je ziet nu twee opties:</p><ul><li><strong>Quick Add:</strong> Meerdere units tegelijk (aanbevolen)</li><li><strong>Single Add:</strong> Eén unit per keer (voor custom units)</li></ul>"
+            },
+            "en": {
+              "text": "<ol><li>Go to <strong>Projects</strong> in sidebar</li><li>Click on your project (e.g. \"Sunset Gardens Valencia\")</li><li>Go to the <strong>Units</strong> tab</li><li>Click <strong>+ Add Units</strong></li></ol><p>You now see two options:</p><ul><li><strong>Quick Add:</strong> Multiple units at once (recommended)</li><li><strong>Single Add:</strong> One unit at a time (for custom units)</li></ul>"
+            },
+            "es": {
+              "text": "<ol><li>Ve a <strong>Projects</strong> en la barra lateral</li><li>Haz clic en tu proyecto (ej. \"Sunset Gardens Valencia\")</li><li>Ve a la pestaña <strong>Units</strong></li><li>Haz clic en <strong>+ Add Units</strong></li></ol><p>Ahora ves dos opciones:</p><ul><li><strong>Quick Add:</strong> Múltiples unidades a la vez (recomendado)</li><li><strong>Single Add:</strong> Una unidad a la vez (para unidades personalizadas)</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 2: Quick Add - Bulk units aanmaken",
+            "en": "Step 2: Quick Add - Bulk Create Units",
+            "es": "Paso 2: Quick Add - crear unidades en masa"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Ideaal voor:</strong> Meerdere identieke of vergelijkbare units (bijv. 30x Type B apartments)</p><h4>Vul in:</h4><ul><li><strong>Unit Type:</strong> Naam (bijv. \"Type B - 2BR Apartment\")</li><li><strong>Quantity:</strong> Hoeveel (bijv. 30)</li><li><strong>Building/Phase:</strong> Optioneel (bijv. \"Building A\")</li><li><strong>Floor Range:</strong> Floors 2-8 (Tesoro genereert automatisch unit numbers)</li><li><strong>Base Price:</strong> Starting price (bijv. €250,000)</li><li><strong>Price Variation:</strong> <ul><li>None - All same price</li><li>Per Floor - Higher floors = higher price (bijv. +€5K per floor)</li><li>Custom - Vul prijs per unit handmatig in</li></ul></li></ul><h4>Details die gedeeld worden:</h4><ul><li>Bedrooms: 2</li><li>Bathrooms: 1</li><li>Size: 75 m²</li><li>Features: Balcony, Open kitchen, Smart home ready</li></ul><p>Klik <strong>Generate Units</strong></p><p><strong>Resultaat:</strong> Tesoro maakt 30 Properties aan:</p><pre>A-201, A-202, A-203... (Floor 2)\nA-301, A-302, A-303... (Floor 3)\n...\nA-801, A-802, A-803... (Floor 8)\n</pre><p>Elk property is automatisch gelinkt aan het project en heeft dezelfde base kenmerken.</p>"
+            },
+            "en": {
+              "text": "<p><strong>Ideal for:</strong> Multiple identical or similar units (e.g. 30x Type B apartments)</p><h4>Fill in:</h4><ul><li><strong>Unit Type:</strong> Name (e.g. \"Type B - 2BR Apartment\")</li><li><strong>Quantity:</strong> How many (e.g. 30)</li><li><strong>Building/Phase:</strong> Optional (e.g. \"Building A\")</li><li><strong>Floor Range:</strong> Floors 2-8 (Tesoro auto-generates unit numbers)</li><li><strong>Base Price:</strong> Starting price (e.g. €250,000)</li><li><strong>Price Variation:</strong> <ul><li>None - All same price</li><li>Per Floor - Higher floors = higher price (e.g. +€5K per floor)</li><li>Custom - Fill in price per unit manually</li></ul></li></ul><h4>Details that are shared:</h4><ul><li>Bedrooms: 2</li><li>Bathrooms: 1</li><li>Size: 75 m²</li><li>Features: Balcony, Open kitchen, Smart home ready</li></ul><p>Click <strong>Generate Units</strong></p><p><strong>Result:</strong> Tesoro creates 30 Properties:</p><pre>A-201, A-202, A-203... (Floor 2)\nA-301, A-302, A-303... (Floor 3)\n...\nA-801, A-802, A-803... (Floor 8)\n</pre><p>Each property is automatically linked to the project and has the same base characteristics.</p>"
+            },
+            "es": {
+              "text": "<p><strong>Ideal para:</strong> Múltiples unidades idénticas o similares (ej. 30x apartamentos Type B)</p><h4>Completa:</h4><ul><li><strong>Unit Type:</strong> Nombre (ej. \"Type B - 2BR Apartment\")</li><li><strong>Quantity:</strong> Cuántas (ej. 30)</li><li><strong>Building/Phase:</strong> Opcional (ej. \"Building A\")</li><li><strong>Floor Range:</strong> Pisos 2-8 (Tesoro genera automáticamente números de unidad)</li><li><strong>Base Price:</strong> Precio inicial (ej. €250,000)</li><li><strong>Price Variation:</strong> <ul><li>None - Todas mismo precio</li><li>Per Floor - Pisos más altos = precio más alto (ej. +€5K por piso)</li><li>Custom - Completa precio por unidad manualmente</li></ul></li></ul><h4>Detalles que se comparten:</h4><ul><li>Dormitorios: 2</li><li>Baños: 1</li><li>Tamaño: 75 m²</li><li>Características: Balcón, Cocina abierta, Smart home ready</li></ul><p>Haz clic en <strong>Generate Units</strong></p><p><strong>Resultado:</strong> Tesoro crea 30 Properties:</p><pre>A-201, A-202, A-203... (Piso 2)\nA-301, A-302, A-303... (Piso 3)\n...\nA-801, A-802, A-803... (Piso 8)\n</pre><p>Cada property está automáticamente vinculada al proyecto y tiene las mismas características base.</p>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Stap 3: Aanpassen van individuele units",
+            "en": "Step 3: Customize Individual Units",
+            "es": "Paso 3: personalizar unidades individuales"
+          },
+          "content": {
+            "nl": {
+              "text": "<p>Na bulk creation kun je specifieke units customizen:</p><h4>Waarom customizen?</h4><ul><li><strong>Corner units:</strong> Groter balcony, extra window</li><li><strong>Premium floors:</strong> Top floors met beter view</li><li><strong>Special features:</strong> Private rooftop terrace, extra parking</li><li><strong>Price adjustments:</strong> Sea view = +€30K</li></ul><h4>Hoe:</h4><ol><li>Klik op een unit in de list (bijv. \"A-801\")</li><li>Edit details:<ul><li>Update size: 75 m² → 82 m² (corner unit is bigger)</li><li>Add features: \"Corner unit, panoramic sea view\"</li><li>Adjust price: €250K → €285K</li><li>Upload unit-specific photos</li></ul></li><li>Klik <strong>Save</strong></li></ol><p><strong>Pro tip:</strong> Je kunt units bulk updaten via CSV import als je veel customizations hebt.</p>"
+            },
+            "en": {
+              "text": "<p>After bulk creation you can customize specific units:</p><h4>Why customize?</h4><ul><li><strong>Corner units:</strong> Bigger balcony, extra window</li><li><strong>Premium floors:</strong> Top floors with better view</li><li><strong>Special features:</strong> Private rooftop terrace, extra parking</li><li><strong>Price adjustments:</strong> Sea view = +€30K</li></ul><h4>How:</h4><ol><li>Click on a unit in the list (e.g. \"A-801\")</li><li>Edit details:<ul><li>Update size: 75 m² → 82 m² (corner unit is bigger)</li><li>Add features: \"Corner unit, panoramic sea view\"</li><li>Adjust price: €250K → €285K</li><li>Upload unit-specific photos</li></ul></li><li>Click <strong>Save</strong></li></ol><p><strong>Pro tip:</strong> You can bulk update units via CSV import if you have many customizations.</p>"
+            },
+            "es": {
+              "text": "<p>Después de la creación en masa puedes personalizar unidades específicas:</p><h4>¿Por qué personalizar?</h4><ul><li><strong>Unidades de esquina:</strong> Balcón más grande, ventana extra</li><li><strong>Pisos premium:</strong> Pisos superiores con mejor vista</li><li><strong>Características especiales:</strong> Terraza privada en azotea, estacionamiento extra</li><li><strong>Ajustes de precio:</strong> Vista al mar = +€30K</li></ul><h4>Cómo:</h4><ol><li>Haz clic en una unidad en la lista (ej. \"A-801\")</li><li>Edita detalles:<ul><li>Actualiza tamaño: 75 m² → 82 m² (unidad de esquina es más grande)</li><li>Agrega características: \"Corner unit, panoramic sea view\"</li><li>Ajusta precio: €250K → €285K</li><li>Sube fotos específicas de unidad</li></ul></li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Consejo pro:</strong> Puedes actualizar unidades en masa via importación CSV si tienes muchas personalizaciones.</p>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "method-2",
+      "title": {
+        "nl": "Methode 2: Bestaande properties linken",
+        "en": "Method 2: Link Existing Properties",
+        "es": "Método 2: vincular properties existentes"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Als je Properties al eerder hebt aangemaakt (voordat je het Project maakte), kun je ze alsnog linken:</p><h4>Stap 1: Via Project</h4><ol><li>Open je Project → <strong>Units</strong> tab</li><li>Klik <strong>Link Existing Properties</strong></li><li>Zoek en selecteer de Properties die bij dit project horen</li><li>Klik <strong>Link Selected</strong></li></ol><h4>Stap 2: Via Property</h4><p>Je kunt ook vanuit de Property linken:</p><ol><li>Open een Property (bijv. apartment A-301)</li><li>In het detail scherm, vind <strong>Project</strong> field</li><li>Selecteer het project uit dropdown</li><li>Klik <strong>Save</strong></li></ol><h4>Bulk linken (voor veel units):</h4><ol><li>Ga naar <strong>Properties</strong> in sidebar</li><li>Filter op location/type die bij je project horen</li><li>Selecteer meerdere Properties (checkboxes)</li><li>Klik <strong>Bulk Actions → Link to Project</strong></li><li>Selecteer je project</li><li>Klik <strong>Apply</strong></li></ol><p><strong>Resultaat:</strong> Alle geselecteerde Properties zijn nu gelinkt aan het project.</p>"
+        },
+        "en": {
+          "text": "<p>If you've already created Properties earlier (before you made the Project), you can still link them:</p><h4>Step 1: Via Project</h4><ol><li>Open your Project → <strong>Units</strong> tab</li><li>Click <strong>Link Existing Properties</strong></li><li>Search and select the Properties that belong to this project</li><li>Click <strong>Link Selected</strong></li></ol><h4>Step 2: Via Property</h4><p>You can also link from the Property:</p><ol><li>Open a Property (e.g. apartment A-301)</li><li>In the detail screen, find <strong>Project</strong> field</li><li>Select the project from dropdown</li><li>Click <strong>Save</strong></li></ol><h4>Bulk linking (for many units):</h4><ol><li>Go to <strong>Properties</strong> in sidebar</li><li>Filter on location/type that belong to your project</li><li>Select multiple Properties (checkboxes)</li><li>Click <strong>Bulk Actions → Link to Project</strong></li><li>Select your project</li><li>Click <strong>Apply</strong></li></ol><p><strong>Result:</strong> All selected Properties are now linked to the project.</p>"
+        },
+        "es": {
+          "text": "<p>Si ya has creado Properties anteriormente (antes de crear el Project), aún puedes vincularlas:</p><h4>Paso 1: Via proyecto</h4><ol><li>Abre tu Project → pestaña <strong>Units</strong></li><li>Haz clic en <strong>Link Existing Properties</strong></li><li>Busca y selecciona las Properties que pertenecen a este proyecto</li><li>Haz clic en <strong>Link Selected</strong></li></ol><h4>Paso 2: Via property</h4><p>También puedes vincular desde la Property:</p><ol><li>Abre una Property (ej. apartamento A-301)</li><li>En la pantalla de detalle, encuentra el campo <strong>Project</strong></li><li>Selecciona el proyecto del dropdown</li><li>Haz clic en <strong>Save</strong></li></ol><h4>Vinculación en masa (para muchas unidades):</h4><ol><li>Ve a <strong>Properties</strong> en la barra lateral</li><li>Filtra por ubicación/tipo que pertenecen a tu proyecto</li><li>Selecciona múltiples Properties (checkboxes)</li><li>Haz clic en <strong>Bulk Actions → Link to Project</strong></li><li>Selecciona tu proyecto</li><li>Haz clic en <strong>Apply</strong></li></ol><p><strong>Resultado:</strong> Todas las Properties seleccionadas están ahora vinculadas al proyecto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "unit-management",
+      "title": {
+        "nl": "Unit management en tracking",
+        "en": "Unit Management and Tracking",
+        "es": "Gestión y seguimiento de unidades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Unit Status Tracking:</h4><p>Elke unit heeft een status die automatisch update:</p><ul><li><strong>Available:</strong> Ready to sell, geen active deal</li><li><strong>Reserved:</strong> Deal in progress, not yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>On Hold:</strong> Tijdelijk niet beschikbaar (bijv. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In het project dashboard zie je real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>Dit maakt het makkelijk om buyers te helpen de perfecte unit te vinden.</p>"
+        },
+        "en": {
+          "text": "<h4>Unit Status Tracking:</h4><p>Each unit has a status that automatically updates:</p><ul><li><strong>Available:</strong> Ready to sell, no active deal</li><li><strong>Reserved:</strong> Deal in progress, not yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>On Hold:</strong> Temporarily unavailable (e.g. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In the project dashboard you see real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>This makes it easy to help buyers find the perfect unit.</p>"
+        },
+        "es": {
+          "text": "<h4>Seguimiento de estado de unidades:</h4><p>Cada unidad tiene un estado que se actualiza automáticamente:</p><ul><li><strong>Available:</strong> Lista para vender, sin deal activo</li><li><strong>Reserved:</strong> Deal en progreso, aún no vendida</li><li><strong>Sold:</strong> Deal ganado, contrato firmado</li><li><strong>Delivered:</strong> Llaves entregadas al comprador</li><li><strong>On Hold:</strong> Temporalmente no disponible (ej. problemas de calidad)</li></ul><h4>Vista del dashboard del proyecto:</h4><p>En el dashboard del proyecto ves en tiempo real:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 unidades/mes</li><li><strong>Revenue:</strong> €7.8M / €18M objetivo (43%)</li></ul><h4>Filtrar unidades:</h4><p>Filtra unidades por:</p><ul><li>Estado (mostrar solo unidades Available)</li><li>Tipo (solo apartamentos 2BR)</li><li>Edificio/Fase (solo Edificio A)</li><li>Piso (solo pisos 5-8)</li><li>Rango de precio (€250K - €300K)</li></ul><p>Esto hace fácil ayudar a compradores a encontrar la unidad perfecta.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "info",
+      "title": {
+        "nl": "Best practices voor unit management",
+        "en": "Best Practices for Unit Management",
+        "es": "Mejores prácticas para gestión de unidades"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Naming convention:</strong> Use consistent format (Building-Floor-Unit, bijv. A-301)</li><li><strong>Update status:</strong> Wanneer deal moves, update unit status meteen</li><li><strong>Photos per unit:</strong> Upload minimaal 3-5 photos per unit (living room, kitchen, view)</li><li><strong>Floor plans:</strong> Include floor plan voor elk unit type</li><li><strong>Price strategy:</strong> Review pricing quarterly, adjust based on demand</li><li><strong>Reserve units:</strong> Hold 2-3 premium units voor late stage pricing optimization</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Naming convention:</strong> Use consistent format (Building-Floor-Unit, e.g. A-301)</li><li><strong>Update status:</strong> When deal moves, update unit status immediately</li><li><strong>Photos per unit:</strong> Upload at least 3-5 photos per unit (living room, kitchen, view)</li><li><strong>Floor plans:</strong> Include floor plan for each unit type</li><li><strong>Price strategy:</strong> Review pricing quarterly, adjust based on demand</li><li><strong>Reserve units:</strong> Hold 2-3 premium units for late stage pricing optimization</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Convención de nombres:</strong> Usa formato consistente (Edificio-Piso-Unidad, ej. A-301)</li><li><strong>Actualizar estado:</strong> Cuando el deal se mueve, actualiza estado de unidad inmediatamente</li><li><strong>Fotos por unidad:</strong> Sube al menos 3-5 fotos por unidad (sala, cocina, vista)</li><li><strong>Planos de piso:</strong> Incluye plano de piso para cada tipo de unidad</li><li><strong>Estrategia de precio:</strong> Revisa precios trimestralmente, ajusta según demanda</li><li><strong>Reservar unidades:</strong> Mantén 2-3 unidades premium para optimización de precios en etapa tardía</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "projects-overview-guide",
+    "creating-development-projects",
+    "project-progress-tracking",
+    "adding-properties-guide"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een unit van een project unlinken?",
+        "en": "Can I unlink a unit from a project?",
+        "es": "¿Puedo desvincular una unidad de un proyecto?"
+      },
+      "answer": {
+        "nl": "Ja, maar alleen als er geen active deals zijn voor die unit. Open de Property → Edit → Remove project link. De Property blijft bestaan maar is niet meer gelinkt aan het project.",
+        "en": "Yes, but only if there are no active deals for that unit. Open the Property → Edit → Remove project link. The Property remains but is no longer linked to the project.",
+        "es": "Sí, pero solo si no hay deals activos para esa unidad. Abre la Property → Edit → Remove project link. La Property permanece pero ya no está vinculada al proyecto."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel units kan een project hebben?",
+        "en": "How many units can a project have?",
+        "es": "¿Cuántas unidades puede tener un proyecto?"
+      },
+      "answer": {
+        "nl": "Er is geen technisch limit, maar voor performance raden we aan om projects > 500 units op te splitsen in phases. Bijv. een 1000-unit development wordt 2 projects: Phase 1 (500 units) en Phase 2 (500 units).",
+        "en": "There's no technical limit, but for performance we recommend splitting projects > 500 units into phases. E.g. a 1000-unit development becomes 2 projects: Phase 1 (500 units) and Phase 2 (500 units).",
+        "es": "No hay límite técnico, pero para rendimiento recomendamos dividir proyectos > 500 unidades en fases. Ej. un desarrollo de 1000 unidades se convierte en 2 proyectos: Fase 1 (500 unidades) y Fase 2 (500 unidades)."
+      }
+    }
+  ]
+}

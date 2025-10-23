@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "id": "contact-organization-best-practices",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T14:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "best-practices",
+    "difficulty": "intermediate",
+    "tags": ["contacts", "organization", "best-practices", "workflow", "efficiency"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1554224311-beee4ece65ba?w=1200&h=630&fit=crop",
+    "keywords": ["contact organization", "crm organization", "contact management tips", "database organization", "tesoro best practices"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Contacten effectief organiseren",
+      "en": "How to Organize Contacts Effectively",
+      "es": "Cómo organizar contactos efectivamente"
+    },
+    "description": {
+      "nl": "Leer bewezen strategieën voor het organiseren van je contactdatabase voor maximale efficiëntie en betere resultaten.",
+      "en": "Learn proven strategies for organizing your contact database for maximum efficiency and better results.",
+      "es": "Aprende estrategias probadas para organizar tu base de datos de contactos para máxima eficiencia y mejores resultados."
+    },
+    "icon": "folder_open"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Een goed georganiseerde contactdatabase is de ruggengraat van succesvol vastgoedbeheer. De manier waarop je je contacten organiseert bepaalt hoe snel je de juiste personen vindt, hoe effectief je communiceert, en uiteindelijk hoeveel deals je sluit.</p><p>Deze guide biedt praktische, meteen toepasbare strategieën die top-performing agents gebruiken om hun contactdatabases onder controle te houden.</p>"
+        },
+        "en": {
+          "text": "<p>A well-organized contact database is the backbone of successful real estate management. How you organize your contacts determines how quickly you find the right people, how effectively you communicate, and ultimately how many deals you close.</p><p>This guide provides practical, immediately applicable strategies that top-performing agents use to keep their contact databases under control.</p>"
+        },
+        "es": {
+          "text": "<p>Una base de datos de contactos bien organizada es la columna vertebral de la gestión inmobiliaria exitosa. La forma en que organizas tus contactos determina qué tan rápido encuentras a las personas correctas, qué tan efectivamente te comunicas y, en última instancia, cuántos deals cierras.</p><p>Esta guía proporciona estrategias prácticas e inmediatamente aplicables que los agentes de alto rendimiento usan para mantener sus bases de datos de contactos bajo control.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "segmentation-strategy",
+      "title": {
+        "nl": "Strategische segmentatie",
+        "en": "Strategic Segmentation",
+        "es": "Segmentación estratégica"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Waarom segmentatie essentieel is</h3><p>Segmentatie stelt je in staat om:</p><ul><li>Gerichte communicatie te sturen naar de juiste groepen</li><li>Prioriteit te geven aan high-value contacten</li><li>Gepersonaliseerde woningen voor te stellen op basis van interesses</li><li>Effectieve marketingcampagnes uit te voeren</li></ul><h3>Primaire segmentatie dimensies</h3><p><strong>1. Contact Type:</strong></p><ul><li><strong>Buyers:</strong> Actief zoekend naar woningen</li><li><strong>Sellers:</strong> Willen hun woning verkopen</li><li><strong>Buyers & Sellers:</strong> Tegelijk kopen en verkopen</li><li><strong>Investors:</strong> Focus op ROI en portofolio groei</li><li><strong>Landlords:</strong> Verhuurders op zoek naar huurders</li><li><strong>Tenants:</strong> Op zoek naar huurwoningen</li></ul><p><strong>2. Lead Status/Temperature:</strong></p><ul><li><strong>Hot (Rood):</strong> Direct klaar, actieve interesse, timeline <30 dagen</li><li><strong>Warm (Oranje):</strong> Geïnteresseerd, timeline 1-3 maanden</li><li><strong>Cold (Blauw):</strong> Toekomstige interesse, timeline >3 maanden</li><li><strong>Nurture (Groen):</strong> Periodieke updates, geen direct timeline</li></ul><p><strong>3. Property Preferences:</strong></p><ul><li>Price range (€0-200K, €200-400K, €400-600K, €600K+)</li><li>Location preferences (strand, city center, suburbs, rural)</li><li>Property type (appartement, villa, townhouse, commercial)</li><li>Bedrooms/bathrooms requirements</li><li>Special features (pool, garden, parking, views)</li></ul><p><strong>4. Lead Source:</strong></p><ul><li>Website inquiry</li><li>Referral (track referrer)</li><li>Open house</li><li>Social media</li><li>Third-party portals (Idealista, Fotocasa)</li><li>Walk-in</li><li>Past client re-engagement</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Why Segmentation is Essential</h3><p>Segmentation allows you to:</p><ul><li>Send targeted communication to the right groups</li><li>Prioritize high-value contacts</li><li>Propose personalized properties based on interests</li><li>Execute effective marketing campaigns</li></ul><h3>Primary Segmentation Dimensions</h3><p><strong>1. Contact Type:</strong></p><ul><li><strong>Buyers:</strong> Actively searching for properties</li><li><strong>Sellers:</strong> Want to sell their property</li><li><strong>Buyers & Sellers:</strong> Buying and selling simultaneously</li><li><strong>Investors:</strong> Focus on ROI and portfolio growth</li><li><strong>Landlords:</strong> Property owners looking for tenants</li><li><strong>Tenants:</strong> Looking for rental properties</li></ul><p><strong>2. Lead Status/Temperature:</strong></p><ul><li><strong>Hot (Red):</strong> Ready now, active interest, timeline <30 days</li><li><strong>Warm (Orange):</strong> Interested, timeline 1-3 months</li><li><strong>Cold (Blue):</strong> Future interest, timeline >3 months</li><li><strong>Nurture (Green):</strong> Periodic updates, no immediate timeline</li></ul><p><strong>3. Property Preferences:</strong></p><ul><li>Price range (€0-200K, €200-400K, €400-600K, €600K+)</li><li>Location preferences (beach, city center, suburbs, rural)</li><li>Property type (apartment, villa, townhouse, commercial)</li><li>Bedrooms/bathrooms requirements</li><li>Special features (pool, garden, parking, views)</li></ul><p><strong>4. Lead Source:</strong></p><ul><li>Website inquiry</li><li>Referral (track referrer)</li><li>Open house</li><li>Social media</li><li>Third-party portals (Idealista, Fotocasa)</li><li>Walk-in</li><li>Past client re-engagement</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Por qué la segmentación es esencial</h3><p>La segmentación te permite:</p><ul><li>Enviar comunicación dirigida a los grupos correctos</li><li>Priorizar contactos de alto valor</li><li>Proponer propiedades personalizadas basadas en intereses</li><li>Ejecutar campañas de marketing efectivas</li></ul><h3>Dimensiones primarias de segmentación</h3><p><strong>1. Tipo de contacto:</strong></p><ul><li><strong>Compradores:</strong> Buscando activamente propiedades</li><li><strong>Vendedores:</strong> Quieren vender su propiedad</li><li><strong>Compradores y vendedores:</strong> Comprando y vendiendo simultáneamente</li><li><strong>Inversores:</strong> Enfocados en ROI y crecimiento de cartera</li><li><strong>Propietarios:</strong> Dueños de propiedades buscando inquilinos</li><li><strong>Inquilinos:</strong> Buscando propiedades en alquiler</li></ul><p><strong>2. Estado de lead/temperatura:</strong></p><ul><li><strong>Hot (Rojo):</strong> Listo ahora, interés activo, timeline <30 días</li><li><strong>Warm (Naranja):</strong> Interesado, timeline 1-3 meses</li><li><strong>Cold (Azul):</strong> Interés futuro, timeline >3 meses</li><li><strong>Nutrir (Verde):</strong> Actualizaciones periódicas, sin timeline inmediato</li></ul><p><strong>3. Preferencias de propiedad:</strong></p><ul><li>Rango de precio (€0-200K, €200-400K, €400-600K, €600K+)</li><li>Preferencias de ubicación (playa, centro ciudad, suburbios, rural)</li><li>Tipo de propiedad (apartamento, villa, casa adosada, comercial)</li><li>Requisitos de habitaciones/baños</li><li>Características especiales (piscina, jardín, parking, vistas)</li></ul><p><strong>4. Fuente de lead:</strong></p><ul><li>Consulta en sitio web</li><li>Referencia (rastrear referidor)</li><li>Jornada de puertas abiertas</li><li>Redes sociales</li><li>Portales de terceros (Idealista, Fotocasa)</li><li>Visita directa</li><li>Re-compromiso de cliente pasado</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "naming-conventions",
+      "title": {
+        "nl": "Naamgevingsconventies en standaardisatie",
+        "en": "Naming Conventions and Standardization",
+        "es": "Convenciones de nomenclatura y estandarización"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Waarom consistente naming belangrijk is</h3><p>Inconsistente naamgeving leidt tot:</p><ul><li>Duplicaten (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Moeilijk zoeken en filteren</li><li>Onprofessionele communicatie</li><li>Team frustratie</li></ul><h3>Naming standaarden</h3><p><strong>Contact namen:</strong></p><ul><li>Format: First Name | Last Name (gescheiden velden)</li><li>First Name: \"Carlos\" (niet \"Mr. Carlos\" of \"carlos\")</li><li>Last Name: \"García\" (correct geaccentueerd)</li><li>Display Name: Automatisch gegenereerd als \"Carlos García\"</li></ul><p><strong>Company/Organization namen:</strong></p><ul><li>Volledige officiële naam: \"Inmobiliaria López S.L.\"</li><li>Gebruik abbreviaties alleen als officieel: \"IBM\" niet \"I.B.M.\"</li><li>Geen generieken: \"XYZ Real Estate\" niet \"real estate company\"</li></ul><p><strong>Email adressen:</strong></p><ul><li>Altijd lowercase: \"carlos@example.com\" niet \"Carlos@Example.com\"</li><li>Valideer format voor het opslaan</li><li>Primary email in hoofdveld, alternatieven in custom fields</li></ul><p><strong>Phone numbers:</strong></p><ul><li>International format: +34 600 123 456</li><li>Consistent gebruik van spaties (geen punten/streepjes)</li><li>Landcode altijd included voor international clients</li></ul><h3>Tag naming standards</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" niet \"hot lead\" of \"HOT LEAD\"</li><li><strong>Max 3 woorden:</strong> \"First Time Buyer\" niet \"First Time Home Buyer Looking For Property\"</li><li><strong>Specifiek, niet generiek:</strong> \"Luxury Buyer\" niet \"High End\"</li><li><strong>Geen synoniemen:</strong> Kies \"VIP Client\" OF \"Premium Client\", niet beide</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Why Consistent Naming Matters</h3><p>Inconsistent naming leads to:</p><ul><li>Duplicates (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Difficult searching and filtering</li><li>Unprofessional communication</li><li>Team frustration</li></ul><h3>Naming Standards</h3><p><strong>Contact names:</strong></p><ul><li>Format: First Name | Last Name (separate fields)</li><li>First Name: \"Carlos\" (not \"Mr. Carlos\" or \"carlos\")</li><li>Last Name: \"García\" (properly accented)</li><li>Display Name: Auto-generated as \"Carlos García\"</li></ul><p><strong>Company/Organization names:</strong></p><ul><li>Full official name: \"Inmobiliaria López S.L.\"</li><li>Use abbreviations only if official: \"IBM\" not \"I.B.M.\"</li><li>No generics: \"XYZ Real Estate\" not \"real estate company\"</li></ul><p><strong>Email addresses:</strong></p><ul><li>Always lowercase: \"carlos@example.com\" not \"Carlos@Example.com\"</li><li>Validate format before saving</li><li>Primary email in main field, alternatives in custom fields</li></ul><p><strong>Phone numbers:</strong></p><ul><li>International format: +34 600 123 456</li><li>Consistent use of spaces (no dots/dashes)</li><li>Country code always included for international clients</li></ul><h3>Tag Naming Standards</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" not \"hot lead\" or \"HOT LEAD\"</li><li><strong>Max 3 words:</strong> \"First Time Buyer\" not \"First Time Home Buyer Looking For Property\"</li><li><strong>Specific, not generic:</strong> \"Luxury Buyer\" not \"High End\"</li><li><strong>No synonyms:</strong> Choose \"VIP Client\" OR \"Premium Client\", not both</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Por qué importa la nomenclatura consistente</h3><p>La nomenclatura inconsistente conduce a:</p><ul><li>Duplicados (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Búsqueda y filtrado difícil</li><li>Comunicación no profesional</li><li>Frustración del equipo</li></ul><h3>Estándares de nomenclatura</h3><p><strong>Nombres de contactos:</strong></p><ul><li>Formato: Nombre | Apellido (campos separados)</li><li>Nombre: \"Carlos\" (no \"Sr. Carlos\" o \"carlos\")</li><li>Apellido: \"García\" (con acento correcto)</li><li>Nombre para mostrar: Auto-generado como \"Carlos García\"</li></ul><p><strong>Nombres de empresas/organizaciones:</strong></p><ul><li>Nombre oficial completo: \"Inmobiliaria López S.L.\"</li><li>Usa abreviaturas solo si son oficiales: \"IBM\" no \"I.B.M.\"</li><li>Sin genéricos: \"XYZ Real Estate\" no \"empresa inmobiliaria\"</li></ul><p><strong>Direcciones de email:</strong></p><ul><li>Siempre en minúsculas: \"carlos@example.com\" no \"Carlos@Example.com\"</li><li>Validar formato antes de guardar</li><li>Email principal en campo principal, alternativas en campos personalizados</li></ul><p><strong>Números de teléfono:</strong></p><ul><li>Formato internacional: +34 600 123 456</li><li>Uso consistente de espacios (sin puntos/guiones)</li><li>Código de país siempre incluido para clientes internacionales</li></ul><h3>Estándares de nomenclatura de etiquetas</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" no \"hot lead\" o \"HOT LEAD\"</li><li><strong>Máx 3 palabras:</strong> \"First Time Buyer\" no \"First Time Home Buyer Looking For Property\"</li><li><strong>Específico, no genérico:</strong> \"Luxury Buyer\" no \"High End\"</li><li><strong>Sin sinónimos:</strong> Elige \"VIP Client\" O \"Premium Client\", no ambos</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "folder-structure",
+      "title": {
+        "nl": "Effectieve folderstructuur met tags",
+        "en": "Effective Folder Structure with Tags",
+        "es": "Estructura efectiva de carpetas con etiquetas"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Tag-based organizing vs traditional folders</h3><p>Tesoro gebruikt een <strong>tag-based system</strong> in plaats van traditionele folders. Dit is krachtiger omdat:</p><ul><li>Een contact meerdere tags kan hebben (kan buyer EN investor zijn)</li><li>Tags zijn makkelijker te filteren en combineren</li><li>Geen \"waar moet ik dit opslaan?\" beslissingen</li><li>Dynamische smart lists op basis van tag combinaties</li></ul><h3>Recommended tag hierarchy</h3><p><strong>Tier 1: Contact Type (Primaire classificatie)</strong></p><ul><li>Buyer</li><li>Seller</li><li>Investor</li><li>Landlord</li><li>Tenant</li></ul><p><strong>Tier 2: Status/Priority (Urgentie)</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li><li>Past Client</li></ul><p><strong>Tier 3: Property Interest (Voorkeuren)</strong></p><ul><li>Luxury Segment</li><li>First Time Buyer</li><li>Beach Property</li><li>City Center</li><li>Investment Property</li></ul><p><strong>Tier 4: Source (Marketing attribution)</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Portal</li></ul><p><strong>Tier 5: Action Items (Workflow)</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Documents Pending</li><li>Offer Submitted</li></ul><h3>Smart list voorbeelden</h3><p>Combineer tags voor krachtige filters:</p><ul><li><strong>\"Hot Luxury Buyers\":</strong> Tags: Buyer + Hot Lead + Luxury Segment</li><li><strong>\"Website Leads Needing Follow-up\":</strong> Tags: Website + Needs Follow-up</li><li><strong>\"VIP Investors from Referrals\":</strong> Tags: Investor + VIP Client + Referral</li><li><strong>\"Past Clients for Re-engagement\":</strong> Tags: Past Client + (Geen activity laatste 6 maanden)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Tag-Based Organizing vs Traditional Folders</h3><p>Tesoro uses a <strong>tag-based system</strong> instead of traditional folders. This is more powerful because:</p><ul><li>A contact can have multiple tags (can be buyer AND investor)</li><li>Tags are easier to filter and combine</li><li>No \"where should I save this?\" decisions</li><li>Dynamic smart lists based on tag combinations</li></ul><h3>Recommended Tag Hierarchy</h3><p><strong>Tier 1: Contact Type (Primary classification)</strong></p><ul><li>Buyer</li><li>Seller</li><li>Investor</li><li>Landlord</li><li>Tenant</li></ul><p><strong>Tier 2: Status/Priority (Urgency)</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li><li>Past Client</li></ul><p><strong>Tier 3: Property Interest (Preferences)</strong></p><ul><li>Luxury Segment</li><li>First Time Buyer</li><li>Beach Property</li><li>City Center</li><li>Investment Property</li></ul><p><strong>Tier 4: Source (Marketing attribution)</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Portal</li></ul><p><strong>Tier 5: Action Items (Workflow)</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Documents Pending</li><li>Offer Submitted</li></ul><h3>Smart List Examples</h3><p>Combine tags for powerful filters:</p><ul><li><strong>\"Hot Luxury Buyers\":</strong> Tags: Buyer + Hot Lead + Luxury Segment</li><li><strong>\"Website Leads Needing Follow-up\":</strong> Tags: Website + Needs Follow-up</li><li><strong>\"VIP Investors from Referrals\":</strong> Tags: Investor + VIP Client + Referral</li><li><strong>\"Past Clients for Re-engagement\":</strong> Tags: Past Client + (No activity last 6 months)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Organización basada en etiquetas vs carpetas tradicionales</h3><p>Tesoro usa un <strong>sistema basado en etiquetas</strong> en lugar de carpetas tradicionales. Esto es más poderoso porque:</p><ul><li>Un contacto puede tener múltiples etiquetas (puede ser comprador E inversor)</li><li>Las etiquetas son más fáciles de filtrar y combinar</li><li>Sin decisiones de \"¿dónde guardo esto?\"</li><li>Listas inteligentes dinámicas basadas en combinaciones de etiquetas</li></ul><h3>Jerarquía recomendada de etiquetas</h3><p><strong>Nivel 1: Tipo de contacto (Clasificación primaria)</strong></p><ul><li>Buyer</li><li>Seller</li><li>Investor</li><li>Landlord</li><li>Tenant</li></ul><p><strong>Nivel 2: Estado/prioridad (Urgencia)</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li><li>Past Client</li></ul><p><strong>Nivel 3: Interés en propiedad (Preferencias)</strong></p><ul><li>Luxury Segment</li><li>First Time Buyer</li><li>Beach Property</li><li>City Center</li><li>Investment Property</li></ul><p><strong>Nivel 4: Fuente (Atribución de marketing)</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Portal</li></ul><p><strong>Nivel 5: Elementos de acción (Flujo de trabajo)</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Documents Pending</li><li>Offer Submitted</li></ul><h3>Ejemplos de listas inteligentes</h3><p>Combina etiquetas para filtros poderosos:</p><ul><li><strong>\"Compradores de lujo calientes\":</strong> Etiquetas: Buyer + Hot Lead + Luxury Segment</li><li><strong>\"Leads de sitio web que necesitan seguimiento\":</strong> Etiquetas: Website + Needs Follow-up</li><li><strong>\"Inversores VIP de referencias\":</strong> Etiquetas: Investor + VIP Client + Referral</li><li><strong>\"Clientes pasados para re-compromiso\":</strong> Etiquetas: Past Client + (Sin actividad últimos 6 meses)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "organization-principles",
+      "variant": "success",
+      "title": {
+        "nl": "Gouden regels voor contactorganisatie",
+        "en": "Golden Rules for Contact Organization",
+        "es": "Reglas de oro para organización de contactos"
+      },
+      "content": {
+        "nl": {
+          "text": "<ol><li><strong>Tag bij invoer:</strong> Voeg direct minimaal 3 tags toe bij het aanmaken (Type, Status, Source)</li><li><strong>Wees consistent:</strong> Volg je naming conventions strikt</li><li><strong>Minimaliseer tags:</strong> 20-30 goed gedefinieerde tags > 100 vage tags</li><li><strong>Review maandelijks:</strong> Evalueer je tag strategie en consolideer indien nodig</li><li><strong>Documenteer alles:</strong> Maak een team wiki met tag definities en gebruik cases</li><li><strong>Train je team:</strong> Zorg dat iedereen dezelfde standaarden volgt</li><li><strong>Gebruik kleuren:</strong> Color-code tag categorieën voor snelle visuele identificatie</li><li><strong>Archiveer, niet verwijderen:</strong> Verplaats oude contacten naar archive status in plaats van deleten</li></ol>"
+        },
+        "en": {
+          "text": "<ol><li><strong>Tag at entry:</strong> Add at least 3 tags immediately when creating (Type, Status, Source)</li><li><strong>Be consistent:</strong> Follow your naming conventions strictly</li><li><strong>Minimize tags:</strong> 20-30 well-defined tags > 100 vague tags</li><li><strong>Review monthly:</strong> Evaluate your tag strategy and consolidate if needed</li><li><strong>Document everything:</strong> Create a team wiki with tag definitions and use cases</li><li><strong>Train your team:</strong> Ensure everyone follows the same standards</li><li><strong>Use colors:</strong> Color-code tag categories for quick visual identification</li><li><strong>Archive, don't delete:</strong> Move old contacts to archive status instead of deleting</li></ol>"
+        },
+        "es": {
+          "text": "<ol><li><strong>Etiquetar al ingresar:</strong> Agrega al menos 3 etiquetas inmediatamente al crear (Tipo, Estado, Fuente)</li><li><strong>Ser consistente:</strong> Sigue tus convenciones de nomenclatura estrictamente</li><li><strong>Minimizar etiquetas:</strong> 20-30 etiquetas bien definidas > 100 etiquetas vagas</li><li><strong>Revisar mensualmente:</strong> Evalúa tu estrategia de etiquetas y consolida si es necesario</li><li><strong>Documentar todo:</strong> Crea un wiki de equipo con definiciones de etiquetas y casos de uso</li><li><strong>Capacitar a tu equipo:</strong> Asegúrate de que todos sigan los mismos estándares</li><li><strong>Usar colores:</strong> Codifica con colores las categorías de etiquetas para identificación visual rápida</li><li><strong>Archivar, no eliminar:</strong> Mueve contactos antiguos a estado de archivo en lugar de eliminar</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-tags-organization",
+    "contact-advanced-search",
+    "data-hygiene-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel tags moet ik per contact gebruiken?",
+        "en": "How many tags should I use per contact?",
+        "es": "¿Cuántas etiquetas debo usar por contacto?"
+      },
+      "answer": {
+        "nl": "Gebruik minimaal 3-5 tags per contact: 1 voor Type (Buyer/Seller), 1 voor Status (Hot/Warm/Cold), 1 voor Source (Website/Referral), en 1-2 voor specifieke interesses of acties. Maximum 10 tags om het overzichtelijk te houden.",
+        "en": "Use at least 3-5 tags per contact: 1 for Type (Buyer/Seller), 1 for Status (Hot/Warm/Cold), 1 for Source (Website/Referral), and 1-2 for specific interests or actions. Maximum 10 tags to keep it manageable.",
+        "es": "Usa al menos 3-5 etiquetas por contacto: 1 para Tipo (Comprador/Vendedor), 1 para Estado (Hot/Warm/Cold), 1 para Fuente (Sitio web/Referencia), y 1-2 para intereses o acciones específicas. Máximo 10 etiquetas para mantenerlo manejable."
+      }
+    },
+    {
+      "question": {
+        "nl": "Wat moet ik doen met oude contacten die niet meer actief zijn?",
+        "en": "What should I do with old contacts that are no longer active?",
+        "es": "¿Qué debo hacer con contactos antiguos que ya no están activos?"
+      },
+      "answer": {
+        "nl": "Verwijder ze NIET. Verplaats ze naar 'Archive' status of voeg een 'Past Client' tag toe. Deze contacten kunnen waardevol zijn voor toekomstige re-engagement campagnes, referrals, of marktonderzoek. Review archived contacts jaarlijks voor mogelijke re-activation.",
+        "en": "Do NOT delete them. Move them to 'Archive' status or add a 'Past Client' tag. These contacts can be valuable for future re-engagement campaigns, referrals, or market research. Review archived contacts annually for possible re-activation.",
+        "es": "NO los elimines. Muévelos a estado 'Archivo' o agrega una etiqueta 'Past Client'. Estos contactos pueden ser valiosos para futuras campañas de re-compromiso, referencias o investigación de mercado. Revisa contactos archivados anualmente para posible reactivación."
+      }
+    }
+  ]
+}

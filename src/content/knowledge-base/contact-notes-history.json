@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "contact-notes-history",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T22:45:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "contacts",
+    "difficulty": "beginner",
+    "tags": ["contacts", "notes", "history", "activity-tracking", "documentation"],
+    "featured": false,
+    "readingTime": 5,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "",
+    "keywords": ["contact notes tesoro", "activity history", "contact timeline", "track communication", "add notes crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Notities en Activiteiten Geschiedenis Bijhouden",
+      "en": "Tracking Notes and Activity History",
+      "es": "Seguimiento de Notas e Historial de Actividades"
+    },
+    "description": {
+      "nl": "Documenteer alle interacties met contacten via notities en bekijk de complete activiteiten geschiedenis.",
+      "en": "Document all interactions with contacts via notes and view complete activity history.",
+      "es": "Documenta todas las interacciones con contactos vía notas y ve el historial de actividad completo."
+    },
+    "icon": "history"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "notes-overview",
+      "title": {
+        "nl": "Notities Toevoegen aan Contacten",
+        "en": "Adding Notes to Contacts",
+        "es": "Agregar Notas a Contactos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Waarom Notities Gebruiken?</h3><p>Notities documenteren belangrijke informatie over contacten:</p><ul><li>Gesprek samenvattingen</li><li>Client voorkeuren</li><li>Afspraak details</li><li>Follow-up acties</li><li>Belangrijke data</li></ul><h3>Notitie Toevoegen</h3><ol><li>Open een contact</li><li>Ga naar <strong>Notes</strong> tab</li><li>Klik <strong>+ Add Note</strong></li><li>Typ je notitie (rich text editor beschikbaar)</li><li>Tag teamleden met @mention</li><li>Klik <strong>Save</strong></li></ol><p><strong>Rich Text Features:</strong></p><ul><li>Bold, italic, underline</li><li>Bullet lists, numbered lists</li><li>Links invoegen</li><li>@mentions voor teamleden</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Why Use Notes?</h3><p>Notes document important information about contacts:</p><ul><li>Conversation summaries</li><li>Client preferences</li><li>Appointment details</li><li>Follow-up actions</li><li>Important dates</li></ul><h3>Adding a Note</h3><ol><li>Open a contact</li><li>Go to <strong>Notes</strong> tab</li><li>Click <strong>+ Add Note</strong></li><li>Type your note (rich text editor available)</li><li>Tag team members with @mention</li><li>Click <strong>Save</strong></li></ol><p><strong>Rich Text Features:</strong></p><ul><li>Bold, italic, underline</li><li>Bullet lists, numbered lists</li><li>Insert links</li><li>@mentions for team members</li></ul>"
+        },
+        "es": {
+          "text": "<h3>¿Por qué Usar Notas?</h3><p>Las notas documentan información importante sobre contactos:</p><ul><li>Resúmenes de conversaciones</li><li>Preferencias del cliente</li><li>Detalles de cita</li><li>Acciones de seguimiento</li><li>Fechas importantes</li></ul><h3>Agregar una Nota</h3><ol><li>Abrir un contacto</li><li>Ir a pestaña <strong>Notes</strong></li><li>Hacer clic en <strong>+ Add Note</strong></li><li>Escribir tu nota (editor de texto enriquecido disponible)</li><li>Etiquetar miembros del equipo con @mención</li><li>Hacer clic en <strong>Save</strong></li></ol><p><strong>Características de Texto Enriquecido:</strong></p><ul><li>Negrita, cursiva, subrayado</li><li>Listas con viñetas, listas numeradas</li><li>Insertar enlaces</li><li>@menciones para miembros del equipo</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "activity-history",
+      "title": {
+        "nl": "Activiteiten Geschiedenis Bekijken",
+        "en": "Viewing Activity History",
+        "es": "Ver Historial de Actividades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Wat Wordt Bijgehouden?</h3><p>Tesoro houdt automatisch alle activiteiten bij:</p><p><strong>Contact Wijzigingen:</strong></p><ul><li>Contact created</li><li>Contact updated (met veld wijzigingen)</li><li>Status changed</li><li>Tags added/removed</li><li>Owner changed</li></ul><p><strong>Communicatie:</strong></p><ul><li>Emails sent/received</li><li>SMS messages</li><li>WhatsApp messages</li><li>Phone calls made/received</li></ul><p><strong>Activiteiten:</strong></p><ul><li>Tasks created/completed</li><li>Meetings scheduled/completed</li><li>Notes added</li><li>Comments added</li></ul><p><strong>Relaties:</strong></p><ul><li>Deals linked/unlinked</li><li>Properties assigned/removed</li><li>Files uploaded</li></ul><h3>Activity Timeline Bekijken</h3><ol><li>Open een contact</li><li>Ga naar <strong>Activity</strong> tab</li><li>Zie chronologische timeline van alle events</li><li>Filter op type: Emails, Calls, Notes, etc.</li><li>Filter op date range</li></ol>"
+        },
+        "en": {
+          "text": "<h3>What is Tracked?</h3><p>Tesoro automatically tracks all activities:</p><p><strong>Contact Changes:</strong></p><ul><li>Contact created</li><li>Contact updated (with field changes)</li><li>Status changed</li><li>Tags added/removed</li><li>Owner changed</li></ul><p><strong>Communication:</strong></p><ul><li>Emails sent/received</li><li>SMS messages</li><li>WhatsApp messages</li><li>Phone calls made/received</li></ul><p><strong>Activities:</strong></p><ul><li>Tasks created/completed</li><li>Meetings scheduled/completed</li><li>Notes added</li><li>Comments added</li></ul><p><strong>Relationships:</strong></p><ul><li>Deals linked/unlinked</li><li>Properties assigned/removed</li><li>Files uploaded</li></ul><h3>Viewing Activity Timeline</h3><ol><li>Open a contact</li><li>Go to <strong>Activity</strong> tab</li><li>See chronological timeline of all events</li><li>Filter by type: Emails, Calls, Notes, etc.</li><li>Filter by date range</li></ol>"
+        },
+        "es": {
+          "text": "<h3>¿Qué se Rastrea?</h3><p>Tesoro rastrea automáticamente todas las actividades:</p><p><strong>Cambios de Contacto:</strong></p><ul><li>Contacto creado</li><li>Contacto actualizado (con cambios de campo)</li><li>Estado cambiado</li><li>Etiquetas agregadas/eliminadas</li><li>Propietario cambiado</li></ul><p><strong>Comunicación:</strong></p><ul><li>Emails enviados/recibidos</li><li>Mensajes SMS</li><li>Mensajes WhatsApp</li><li>Llamadas telefónicas realizadas/recibidas</li></ul><p><strong>Actividades:</strong></p><ul><li>Tareas creadas/completadas</li><li>Reuniones programadas/completadas</li><li>Notas agregadas</li><li>Comentarios agregados</li></ul><p><strong>Relaciones:</strong></p><ul><li>Deals vinculados/desvinculados</li><li>Propiedades asignadas/eliminadas</li><li>Archivos cargados</li></ul><h3>Ver Línea de Tiempo de Actividad</h3><ol><li>Abrir un contacto</li><li>Ir a pestaña <strong>Activity</strong></li><li>Ver línea de tiempo cronológica de todos los eventos</li><li>Filtrar por tipo: Emails, Llamadas, Notas, etc.</li><li>Filtrar por rango de fecha</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "best-practices",
+      "variant": "success",
+      "title": {
+        "nl": "Best Practices voor Documentatie",
+        "en": "Best Practices for Documentation",
+        "es": "Mejores Prácticas para Documentación"
+      },
+      "content": {
+        "nl": {
+          "text": "<ul><li><strong>Document direct:</strong> Voeg notities toe direct na gesprek/meeting</li><li><strong>Wees specifiek:</strong> Vermeld concrete details en afspraken</li><li><strong>Gebruik @mentions:</strong> Tag teamleden voor visibility</li><li><strong>Consistente format:</strong> Gebruik template voor gesprek notities</li><li><strong>Include next steps:</strong> Wat is de volgende actie?</li><li><strong>Privacy:</strong> Markeer gevoelige notes als 'Private'</li></ul>"
+        },
+        "en": {
+          "text": "<ul><li><strong>Document immediately:</strong> Add notes right after call/meeting</li><li><strong>Be specific:</strong> Mention concrete details and agreements</li><li><strong>Use @mentions:</strong> Tag team members for visibility</li><li><strong>Consistent format:</strong> Use template for call notes</li><li><strong>Include next steps:</strong> What's the next action?</li><li><strong>Privacy:</strong> Mark sensitive notes as 'Private'</li></ul>"
+        },
+        "es": {
+          "text": "<ul><li><strong>Documentar inmediatamente:</strong> Agregar notas justo después de llamada/reunión</li><li><strong>Ser específico:</strong> Mencionar detalles concretos y acuerdos</li><li><strong>Usar @menciones:</strong> Etiquetar miembros del equipo para visibilidad</li><li><strong>Formato consistente:</strong> Usar plantilla para notas de llamada</li><li><strong>Incluir próximos pasos:</strong> ¿Cuál es la próxima acción?</li><li><strong>Privacidad:</strong> Marcar notas sensibles como 'Privado'</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "contact-complete-guide",
+    "contact-tasks-reminders",
+    "contact-email-integration",
+    "contact-best-practices"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kunnen andere teamleden mijn notities zien?",
+        "en": "Can other team members see my notes?",
+        "es": "¿Pueden otros miembros del equipo ver mis notas?"
+      },
+      "answer": {
+        "nl": "Standaard zijn notities zichtbaar voor alle teamleden. Je kunt een notitie als 'Private' markeren om deze alleen voor jezelf zichtbaar te maken.",
+        "en": "By default, notes are visible to all team members. You can mark a note as 'Private' to make it visible only to yourself.",
+        "es": "Por defecto, las notas son visibles para todos los miembros del equipo. Puedes marcar una nota como 'Privado' para hacerla visible solo para ti."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik notities bewerken nadat ze zijn opgeslagen?",
+        "en": "Can I edit notes after they're saved?",
+        "es": "¿Puedo editar notas después de que se guardan?"
+      },
+      "answer": {
+        "nl": "Ja, klik op een notitie en dan op het edit icoon. Wijzigingen worden bijgehouden in de note history, zodat je kunt zien wie wat heeft gewijzigd.",
+        "en": "Yes, click on a note and then on the edit icon. Changes are tracked in the note history, so you can see who changed what.",
+        "es": "Sí, haz clic en una nota y luego en el icono de editar. Los cambios se rastrean en el historial de notas, para que puedas ver quién cambió qué."
+      }
+    }
+  ]
+}

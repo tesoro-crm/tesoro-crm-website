@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "id": "property-bulk-import",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T18:30:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "intermediate",
+    "tags": ["properties", "import", "csv", "xml", "bulk-operations", "data-migration"],
+    "featured": false,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
+    "keywords": ["bulk import", "CSV import", "XML import", "data migration", "batch import", "property import"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property bulk import en data migration in Tesoro",
+      "en": "Property Bulk Import and Data Migration in Tesoro",
+      "es": "Importación masiva de propiedades y migración de datos en Tesoro"
+    },
+    "description": {
+      "nl": "Leer hoe je CSV/Excel bestanden importeert, XML feeds gebruikt, data mapt en hundreds of properties tegelijk uploadt naar Tesoro.",
+      "en": "Learn how to import CSV/Excel files, use XML feeds, map data and upload hundreds of properties at once to Tesoro.",
+      "es": "Aprende cómo importar archivos CSV/Excel, usar feeds XML, mapear datos y subir cientos de propiedades a la vez a Tesoro."
+    },
+    "icon": "upload_file"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "import-intro",
+      "variant": "info",
+      "title": {
+        "nl": "Wanneer bulk import gebruiken?",
+        "en": "When to use bulk import?",
+        "es": "¿Cuándo usar importación masiva?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Bulk import is perfect voor data migration, portal feeds en large property inventories.</p><p><strong>Supported import formats:</strong></p><ul><li>CSV/Excel files (recommended)</li><li>XML feeds (Idealista, Fotocasa formats)</li><li>Custom JSON imports</li><li>Portal exports (direct migration)</li></ul><p><strong>Maximum:</strong> 1000 properties per import batch</p>"
+        },
+        "en": {
+          "text": "<p>Bulk import is perfect for data migration, portal feeds and large property inventories.</p><p><strong>Supported import formats:</strong></p><ul><li>CSV/Excel files (recommended)</li><li>XML feeds (Idealista, Fotocasa formats)</li><li>Custom JSON imports</li><li>Portal exports (direct migration)</li></ul><p><strong>Maximum:</strong> 1000 properties per import batch</p>"
+        },
+        "es": {
+          "text": "<p>La importación masiva es perfecta para migración de datos, feeds de portales e inventarios grandes de propiedades.</p><p><strong>Formatos de importación soportados:</strong></p><ul><li>Archivos CSV/Excel (recomendado)</li><li>Feeds XML (formatos Idealista, Fotocasa)</li><li>Importaciones JSON personalizadas</li><li>Exportaciones de portales (migración directa)</li></ul><p><strong>Máximo:</strong> 1000 propiedades por lote de importación</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "csv-import",
+      "title": {
+        "nl": "CSV/Excel import proces",
+        "en": "CSV/Excel import process",
+        "es": "Proceso de importación CSV/Excel"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Step 1: Download template</h5><ol><li>Ga naar Properties → Import</li><li>Click 'Download CSV Template'</li><li>Open template in Excel/Google Sheets</li><li>Review all columns en required fields (marked with *)</li></ol><h5>Step 2: Prepare data</h5><p><strong>Required fields:</strong></p><ul><li>Property Type (apartment/house/villa/land/commercial)</li><li>Address (full address)</li><li>City</li><li>Country</li><li>Price</li><li>Currency (EUR/USD/GBP)</li></ul><p><strong>Recommended fields:</strong></p><ul><li>Bedrooms, Bathrooms</li><li>Total area (m²)</li><li>Description (NL/EN/ES columns)</li><li>Status (active/draft)</li><li>Reference number</li></ul><p><strong>Optional fields:</strong></p><ul><li>All property features (pool, garage, terrace, etc.)</li><li>Energy certificate data</li><li>Owner information</li><li>Images (URLs comma-separated)</li></ul><h5>Step 3: Field mapping</h5><ol><li>Upload prepared CSV file</li><li>Tesoro detecteert columns automatisch</li><li>Map CSV columns → Tesoro fields:<ul><li>Auto-mapping voor standard column names</li><li>Manual mapping voor custom columns</li><li>Preview mapped data</li></ul></li><li>Validate data (Tesoro checks for errors)</li></ol><h5>Step 4: Import execution</h5><ol><li>Review summary (X properties, Y errors)</li><li>Fix errors or skip invalid rows</li><li>Click 'Start Import'</li><li>Monitor progress (real-time)</li><li>Review results:<ul><li>Success: X properties imported</li><li>Errors: Y rows failed (download error log)</li></ul></li></ol>"
+        },
+        "en": {
+          "text": "<h5>Step 1: Download template</h5><ol><li>Go to Properties → Import</li><li>Click 'Download CSV Template'</li><li>Open template in Excel/Google Sheets</li><li>Review all columns and required fields (marked with *)</li></ol><h5>Step 2: Prepare data</h5><p><strong>Required fields:</strong></p><ul><li>Property Type (apartment/house/villa/land/commercial)</li><li>Address (full address)</li><li>City</li><li>Country</li><li>Price</li><li>Currency (EUR/USD/GBP)</li></ul><p><strong>Recommended fields:</strong></p><ul><li>Bedrooms, Bathrooms</li><li>Total area (m²)</li><li>Description (NL/EN/ES columns)</li><li>Status (active/draft)</li><li>Reference number</li></ul><p><strong>Optional fields:</strong></p><ul><li>All property features (pool, garage, terrace, etc.)</li><li>Energy certificate data</li><li>Owner information</li><li>Images (URLs comma-separated)</li></ul><h5>Step 3: Field mapping</h5><ol><li>Upload prepared CSV file</li><li>Tesoro detects columns automatically</li><li>Map CSV columns → Tesoro fields:<ul><li>Auto-mapping for standard column names</li><li>Manual mapping for custom columns</li><li>Preview mapped data</li></ul></li><li>Validate data (Tesoro checks for errors)</li></ol><h5>Step 4: Import execution</h5><ol><li>Review summary (X properties, Y errors)</li><li>Fix errors or skip invalid rows</li><li>Click 'Start Import'</li><li>Monitor progress (real-time)</li><li>Review results:<ul><li>Success: X properties imported</li><li>Errors: Y rows failed (download error log)</li></ul></li></ol>"
+        },
+        "es": {
+          "text": "<h5>Paso 1: Descargar plantilla</h5><ol><li>Ve a Propiedades → Importar</li><li>Haz clic en 'Descargar Plantilla CSV'</li><li>Abre plantilla en Excel/Google Sheets</li><li>Revisa todas las columnas y campos requeridos (marcados con *)</li></ol><h5>Paso 2: Preparar datos</h5><p><strong>Campos requeridos:</strong></p><ul><li>Tipo de Propiedad (apartamento/casa/villa/terreno/comercial)</li><li>Dirección (dirección completa)</li><li>Ciudad</li><li>País</li><li>Precio</li><li>Moneda (EUR/USD/GBP)</li></ul><p><strong>Campos recomendados:</strong></p><ul><li>Dormitorios, Baños</li><li>Área total (m²)</li><li>Descripción (columnas NL/EN/ES)</li><li>Estado (activa/borrador)</li><li>Número de referencia</li></ul><p><strong>Campos opcionales:</strong></p><ul><li>Todas las características de propiedades (piscina, garaje, terraza, etc.)</li><li>Datos de certificado energético</li><li>Información del propietario</li><li>Imágenes (URLs separadas por comas)</li></ul><h5>Paso 3: Mapeo de campos</h5><ol><li>Sube archivo CSV preparado</li><li>Tesoro detecta columnas automáticamente</li><li>Mapea columnas CSV → campos Tesoro:<ul><li>Auto-mapeo para nombres de columna estándar</li><li>Mapeo manual para columnas personalizadas</li><li>Vista previa de datos mapeados</li></ul></li><li>Valida datos (Tesoro verifica errores)</li></ol><h5>Paso 4: Ejecución de importación</h5><ol><li>Revisa resumen (X propiedades, Y errores)</li><li>Corrige errores o salta filas inválidas</li><li>Haz clic en 'Iniciar Importación'</li><li>Monitorea progreso (tiempo real)</li><li>Revisa resultados:<ul><li>Éxito: X propiedades importadas</li><li>Errores: Y filas fallaron (descarga registro de errores)</li></ul></li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "xml-import",
+      "title": {
+        "nl": "XML feed import",
+        "en": "XML feed import",
+        "es": "Importación de feed XML"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Supported XML formats</h5><p>Tesoro ondersteunt standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (bijvoorbeeld daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error notifications</li></ul><p>Tesoro fetches updates automatically en importeert nieuwe/changed properties.</p>"
+        },
+        "en": {
+          "text": "<h5>Supported XML formats</h5><p>Tesoro supports standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (e.g., daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error notifications</li></ul><p>Tesoro fetches updates automatically and imports new/changed properties.</p>"
+        },
+        "es": {
+          "text": "<h5>Formatos XML soportados</h5><p>Tesoro soporta formatos XML estándar de propiedades:</p><ul><li><strong>XML de Idealista:</strong> Importación directa de exportaciones de Idealista</li><li><strong>XML de Fotocasa:</strong> Compatible con formato Fotocasa</li><li><strong>XML personalizado:</strong> Mapea esquema XML personalizado a campos Tesoro</li></ul><h5>Flujo de trabajo de importación XML</h5><ol><li>Propiedades → Importar → Feed XML</li><li>Selecciona fuente:<ul><li>Sube archivo XML (importación manual)</li><li>Ingresa URL de feed XML (importaciones programadas)</li></ul></li><li>Elige formato (Idealista/Fotocasa/Personalizado)</li><li>Vista previa de datos parseados</li><li>Mapea campos (si XML personalizado)</li><li>Establece manejo de duplicados:<ul><li>Saltar duplicados (por número de referencia)</li><li>Actualizar propiedades existentes</li><li>Crear como propiedades nuevas</li></ul></li><li>Importar</li></ol><h5>Importaciones XML programadas</h5><p>Para importaciones recurrentes (ej., sincronizaciones diarias de portales):</p><ul><li>Configura URL de feed</li><li>Configura programa (diario/semanal/mensual)</li><li>Activa auto-importación</li><li>Establece notificaciones de error</li></ul><p>Tesoro obtiene actualizaciones automáticamente e importa propiedades nuevas/cambiadas.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "data-validation",
+      "title": {
+        "nl": "Data validation en error handling",
+        "en": "Data validation and error handling",
+        "es": "Validación de datos y manejo de errores"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check alle required fields zijn present</li><li><strong>Data types:</strong> Price moet numeric zijn, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type moet valid value zijn (not random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if not found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV voor batch fixing</li></ul><p>After import, review error log en fix problematic rows voor second import.</p>"
+        },
+        "en": {
+          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check all required fields are present</li><li><strong>Data types:</strong> Price must be numeric, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type must be valid value (not random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if not found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV for batch fixing</li></ul><p>After import, review error log and fix problematic rows for second import.</p>"
+        },
+        "es": {
+          "text": "<h5>Verificaciones automáticas de validación</h5><p>Tesoro valida datos antes de importar:</p><ul><li><strong>Campos requeridos:</strong> Verifica que todos los campos requeridos estén presentes</li><li><strong>Tipos de datos:</strong> El precio debe ser numérico, dormitorios entero, etc.</li><li><strong>Valores válidos:</strong> El tipo de propiedad debe ser valor válido (no texto aleatorio)</li><li><strong>Verificaciones de formato:</strong> Formato de email, formato de número de teléfono</li><li><strong>Geocodificación:</strong> Validación de dirección vía Mapbox (advertencia si no se encuentra)</li></ul><h5>Errores comunes de importación</h5><p><strong>Campos requeridos faltantes:</strong></p><ul><li>Error: \"Fila 45: Falta tipo de propiedad\"</li><li>Solución: Añade valor de tipo de propiedad en CSV</li></ul><p><strong>Tipos de datos inválidos:</strong></p><ul><li>Error: \"Fila 12: El precio debe ser numérico\"</li><li>Solución: Elimina símbolos de moneda (€, $) - solo números</li></ul><p><strong>Números de referencia duplicados:</strong></p><ul><li>Error: \"Fila 67: Referencia ABC123 ya existe\"</li><li>Opciones:<ul><li>Saltar esta fila</li><li>Actualizar propiedad existente</li><li>Cambiar número de referencia</li></ul></li></ul><h5>Opciones de manejo de errores</h5><ul><li><strong>Detener en error:</strong> La importación se detiene en el primer error (corrige y reintenta)</li><li><strong>Saltar errores:</strong> Importa filas válidas, salta inválidas (recomendado)</li><li><strong>Registrar errores:</strong> Descarga CSV de errores para corrección en lote</li></ul><p>Después de importar, revisa registro de errores y corrige filas problemáticas para segunda importación.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "import-tips",
+      "variant": "success",
+      "title": {
+        "nl": "Import best practices",
+        "en": "Import best practices",
+        "es": "Mejores prácticas de importación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Successful bulk imports:</strong></p><ol><li><strong>Test met small batch:</strong> Import eerst 10-20 properties om template/mapping te testen.</li><li><strong>Clean data first:</strong> Remove duplicates, fix typos in source data voor import.</li><li><strong>Use reference numbers:</strong> Assign unique reference numbers voor duplicate detection.</li><li><strong>Batch large imports:</strong> Split 500+ properties in batches van 200-300.</li><li><strong>Backup first:</strong> Export existing properties before large import (safety).</li><li><strong>Geocode addresses:</strong> Ensure addresses zijn correct - errors in address = missing map location.</li></ol>"
+        },
+        "en": {
+          "text": "<p><strong>Successful bulk imports:</strong></p><ol><li><strong>Test with small batch:</strong> Import first 10-20 properties to test template/mapping.</li><li><strong>Clean data first:</strong> Remove duplicates, fix typos in source data before import.</li><li><strong>Use reference numbers:</strong> Assign unique reference numbers for duplicate detection.</li><li><strong>Batch large imports:</strong> Split 500+ properties in batches of 200-300.</li><li><strong>Backup first:</strong> Export existing properties before large import (safety).</li><li><strong>Geocode addresses:</strong> Ensure addresses are correct - errors in address = missing map location.</li></ol>"
+        },
+        "es": {
+          "text": "<p><strong>Importaciones masivas exitosas:</strong></p><ol><li><strong>Prueba con lote pequeño:</strong> Importa primero 10-20 propiedades para probar plantilla/mapeo.</li><li><strong>Limpia datos primero:</strong> Elimina duplicados, corrige errores tipográficos en datos fuente antes de importar.</li><li><strong>Usa números de referencia:</strong> Asigna números de referencia únicos para detección de duplicados.</li><li><strong>Importaciones grandes en lotes:</strong> Divide 500+ propiedades en lotes de 200-300.</li><li><strong>Respaldo primero:</strong> Exporta propiedades existentes antes de importación grande (seguridad).</li><li><strong>Geocodifica direcciones:</strong> Asegúrate de que las direcciones sean correctas - errores en dirección = ubicación de mapa faltante.</li></ol>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "property-management-overview",
+    "adding-properties-guide",
+    "property-portal-integration",
+    "property-history-tracking"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Wat gebeurt er met bestaande properties bij een import met dezelfde reference numbers?",
+        "en": "What happens to existing properties when importing with same reference numbers?",
+        "es": "¿Qué pasa con las propiedades existentes al importar con los mismos números de referencia?"
+      },
+      "answer": {
+        "nl": "Je hebt 3 opties: 1) Skip duplicates - bestaande blijft, nieuwe wordt genegeerd, 2) Update existing - bestaande property wordt geüpdatet met nieuwe data, 3) Create new - nieuwe property wordt aangemaakt met nieuwe reference. Kies optie tijdens import setup. We raden 'Update existing' aan voor data sync, 'Skip duplicates' voor one-time migrations.",
+        "en": "You have 3 options: 1) Skip duplicates - existing remains, new is ignored, 2) Update existing - existing property is updated with new data, 3) Create new - new property is created with new reference. Choose option during import setup. We recommend 'Update existing' for data sync, 'Skip duplicates' for one-time migrations.",
+        "es": "Tienes 3 opciones: 1) Saltar duplicados - la existente permanece, la nueva se ignora, 2) Actualizar existente - la propiedad existente se actualiza con datos nuevos, 3) Crear nueva - se crea nueva propiedad con nueva referencia. Elige opción durante configuración de importación. Recomendamos 'Actualizar existente' para sincronización de datos, 'Saltar duplicados' para migraciones únicas."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik property images importeren via CSV?",
+        "en": "Can I import property images via CSV?",
+        "es": "¿Puedo importar imágenes de propiedades vía CSV?"
+      },
+      "answer": {
+        "nl": "Ja! Voeg een 'Images' column toe met comma-separated URLs (bijvoorbeeld \"https://example.com/img1.jpg,https://example.com/img2.jpg\"). Tesoro downloadt images automatisch en uploadt naar Cloudflare. Requirements: 1) Images moeten publicly accessible zijn, 2) Max 50MB per image, 3) Formats: JPG, PNG. Voor local images, upload eerst naar cloud storage (Dropbox/Google Drive) en use public URLs.",
+        "en": "Yes! Add an 'Images' column with comma-separated URLs (e.g., \"https://example.com/img1.jpg,https://example.com/img2.jpg\"). Tesoro downloads images automatically and uploads to Cloudflare. Requirements: 1) Images must be publicly accessible, 2) Max 50MB per image, 3) Formats: JPG, PNG. For local images, upload first to cloud storage (Dropbox/Google Drive) and use public URLs.",
+        "es": "¡Sí! Añade una columna 'Images' con URLs separadas por comas (ej., \"https://example.com/img1.jpg,https://example.com/img2.jpg\"). Tesoro descarga imágenes automáticamente y sube a Cloudflare. Requisitos: 1) Las imágenes deben ser públicamente accesibles, 2) Máx. 50MB por imagen, 3) Formatos: JPG, PNG. Para imágenes locales, sube primero a almacenamiento en nube (Dropbox/Google Drive) y usa URLs públicas."
+      }
+    }
+  ]
+}

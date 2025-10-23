@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "id": "performance-optimization-tips",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "troubleshooting",
+    "difficulty": "intermediate",
+    "tags": ["performance", "speed", "optimization", "browser", "slow"],
+    "featured": false,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro performance", "speed optimization", "slow crm", "browser optimization", "tesoro faster"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Tesoro sneller maken: performance tips",
+      "en": "Make Tesoro Faster: Performance Tips",
+      "es": "Hacer Tesoro más rápido: consejos de rendimiento"
+    },
+    "description": {
+      "nl": "Optimaliseer Tesoro's snelheid met browser settings, cache management en data optimalisatie.",
+      "en": "Optimize Tesoro's speed with browser settings, cache management and data optimization.",
+      "es": "Optimiza la velocidad de Tesoro con configuración de navegador, gestión de caché y optimización de datos."
+    },
+    "icon": "speed"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "browser-optimization",
+      "title": {
+        "nl": "Browser optimalisatie",
+        "en": "Browser Optimization",
+        "es": "Optimización de navegador"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>1. Gebruik een moderne browser</h4><p><strong>Aanbevolen (snelst naar langzaamst):</strong></p><ol><li><strong>Google Chrome</strong> - Beste performance</li><li><strong>Microsoft Edge</strong> - Goed (Chrome-based)</li><li><strong>Firefox</strong> - Goed</li><li><strong>Safari</strong> - OK (Mac only)</li></ol><p>❌ Niet aanbevolen: Internet Explorer (deprecated)</p><h4>2. Update je browser</h4><ol><li>Chrome: Menu → Help → About Google Chrome → Auto-update</li><li>Firefox: Menu → Help → About Firefox → Auto-update</li><li>Edge: Auto-updates with Windows</li></ol><h4>3. Disable onno dige extensies</h4><p>Extensions kunnen Tesoro vertragen:</p><ol><li>Chrome: Menu → Extensions → Disable unused</li><li>Vooral: Ad blockers, VPNs, privacy tools</li><li>Test in Incognito (extensies off) om te checken</li></ol>"
+        },
+        "en": {
+          "text": "<h4>1. Use a modern browser</h4><p><strong>Recommended (fastest to slowest):</strong></p><ol><li><strong>Google Chrome</strong> - Best performance</li><li><strong>Microsoft Edge</strong> - Good (Chrome-based)</li><li><strong>Firefox</strong> - Good</li><li><strong>Safari</strong> - OK (Mac only)</li></ol><p>❌ Not recommended: Internet Explorer (deprecated)</p><h4>2. Update your browser</h4><ol><li>Chrome: Menu → Help → About Google Chrome → Auto-update</li><li>Firefox: Menu → Help → About Firefox → Auto-update</li><li>Edge: Auto-updates with Windows</li></ol><h4>3. Disable unnecessary extensions</h4><p>Extensions can slow down Tesoro:</p><ol><li>Chrome: Menu → Extensions → Disable unused</li><li>Especially: Ad blockers, VPNs, privacy tools</li><li>Test in Incognito (extensions off) to check</li></ol>"
+        },
+        "es": {
+          "text": "<h4>1. Usa un navegador moderno</h4><p><strong>Recomendado (más rápido a más lento):</strong></p><ol><li><strong>Google Chrome</strong> - Mejor rendimiento</li><li><strong>Microsoft Edge</strong> - Bueno (basado en Chrome)</li><li><strong>Firefox</strong> - Bueno</li><li><strong>Safari</strong> - OK (solo Mac)</li></ol><p>❌ No recomendado: Internet Explorer (obsoleto)</p><h4>2. Actualiza tu navegador</h4><ol><li>Chrome: Menu → Help → About Google Chrome → Auto-actualización</li><li>Firefox: Menu → Help → About Firefox → Auto-actualización</li><li>Edge: Se actualiza automáticamente con Windows</li></ol><h4>3. Desactiva extensiones innecesarias</h4><p>Las extensiones pueden ralentizar Tesoro:</p><ol><li>Chrome: Menu → Extensions → Desactiva no usadas</li><li>Especialmente: Bloqueadores de anuncios, VPNs, herramientas de privacidad</li><li>Prueba en Incógnito (extensiones apagadas) para verificar</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "cache-management",
+      "title": {
+        "nl": "Cache en data management",
+        "en": "Cache and Data Management",
+        "es": "Gestión de caché y datos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Clear browser cache (monthly)</h4><p><strong>Chrome:</strong></p><ol><li>Menu → Settings → Privacy → Clear browsing data</li><li>Time range: All time</li><li>Check: Cached images and files</li><li>Uncheck: Passwords, Autofill (keep these!)</li><li>Click Clear data</li></ol><p><strong>Firefox:</strong></p><ol><li>Menu → Settings → Privacy → Clear Data</li><li>Check: Cached Web Content</li><li>Click Clear</li></ol><h4>Limit open tabs (max 10)</h4><p>Many tabs = slow browser:</p><ul><li>Close unused tabs</li><li>Use bookmarks instead</li><li>Use Tab Groups to organize</li></ul><h4>Restart browser weekly</h4><p>Fresh browser = fresh performance:</p><ol><li>Close ALL browser windows</li><li>Wait 10 seconds</li><li>Reopen browser</li><li>Login Tesoro</li></ol>"
+        },
+        "en": {
+          "text": "<h4>Clear browser cache (monthly)</h4><p><strong>Chrome:</strong></p><ol><li>Menu → Settings → Privacy → Clear browsing data</li><li>Time range: All time</li><li>Check: Cached images and files</li><li>Uncheck: Passwords, Autofill (keep these!)</li><li>Click Clear data</li></ol><p><strong>Firefox:</strong></p><ol><li>Menu → Settings → Privacy → Clear Data</li><li>Check: Cached Web Content</li><li>Click Clear</li></ol><h4>Limit open tabs (max 10)</h4><p>Many tabs = slow browser:</p><ul><li>Close unused tabs</li><li>Use bookmarks instead</li><li>Use Tab Groups to organize</li></ul><h4>Restart browser weekly</h4><p>Fresh browser = fresh performance:</p><ol><li>Close ALL browser windows</li><li>Wait 10 seconds</li><li>Reopen browser</li><li>Login Tesoro</li></ol>"
+        },
+        "es": {
+          "text": "<h4>Borra caché del navegador (mensualmente)</h4><p><strong>Chrome:</strong></p><ol><li>Menu → Settings → Privacy → Clear browsing data</li><li>Rango de tiempo: All time</li><li>Marca: Cached images and files</li><li>Desmarca: Passwords, Autofill (¡mantén estos!)</li><li>Haz clic en Clear data</li></ol><p><strong>Firefox:</strong></p><ol><li>Menu → Settings → Privacy → Clear Data</li><li>Marca: Cached Web Content</li><li>Haz clic en Clear</li></ol><h4>Limita pestañas abiertas (máx 10)</h4><p>Muchas pestañas = navegador lento:</p><ul><li>Cierra pestañas no usadas</li><li>Usa marcadores en su lugar</li><li>Usa Tab Groups para organizar</li></ul><h4>Reinicia navegador semanalmente</h4><p>Navegador fresco = rendimiento fresco:</p><ol><li>Cierra TODAS las ventanas del navegador</li><li>Espera 10 segundos</li><li>Reabre navegador</li><li>Inicia sesión en Tesoro</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "data-optimization",
+      "title": {
+        "nl": "Data optimalisatie in Tesoro",
+        "en": "Data Optimization in Tesoro",
+        "es": "Optimización de datos en Tesoro"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Archive old data</h4><p>Grote databases = slower queries:</p><ul><li><strong>Contacts:</strong> Archive contacts > 2 years old met no activity</li><li><strong>Deals:</strong> Archive Won/Lost deals > 1 year old</li><li><strong>Properties:</strong> Archive Sold properties > 6 months</li></ul><p>Archived data blijft beschikbaar maar wordt niet geladen by default.</p><h4>Optimize filters en searches</h4><p>Complex filters = slow:</p><ul><li>Use <strong>saved filters</strong> instead of rebuilding</li><li>Limit date ranges (don't use \"All time\")</li><li>Use specific search terms (not broad)</li></ul><h4>Reduce loaded lists</h4><p>Settings → Display → Items per page:</p><ul><li>Default: 50 items (balanced)</li><li>For speed: 25 items (faster loading)</li><li>For power users: 100 items (more scrolling, slower)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>Archive old data</h4><p>Large databases = slower queries:</p><ul><li><strong>Contacts:</strong> Archive contacts > 2 years old with no activity</li><li><strong>Deals:</strong> Archive Won/Lost deals > 1 year old</li><li><strong>Properties:</strong> Archive Sold properties > 6 months</li></ul><p>Archived data remains available but is not loaded by default.</p><h4>Optimize filters and searches</h4><p>Complex filters = slow:</p><ul><li>Use <strong>saved filters</strong> instead of rebuilding</li><li>Limit date ranges (don't use \"All time\")</li><li>Use specific search terms (not broad)</li></ul><h4>Reduce loaded lists</h4><p>Settings → Display → Items per page:</p><ul><li>Default: 50 items (balanced)</li><li>For speed: 25 items (faster loading)</li><li>For power users: 100 items (more scrolling, slower)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>Archivar datos antiguos</h4><p>Bases de datos grandes = consultas más lentas:</p><ul><li><strong>Contactos:</strong> Archiva contactos > 2 años sin actividad</li><li><strong>Deals:</strong> Archiva deals Won/Lost > 1 año</li><li><strong>Propiedades:</strong> Archiva propiedades Sold > 6 meses</li></ul><p>Los datos archivados permanecen disponibles pero no se cargan por defecto.</p><h4>Optimizar filtros y búsquedas</h4><p>Filtros complejos = lento:</p><ul><li>Usa <strong>filtros guardados</strong> en lugar de reconstruir</li><li>Limita rangos de fecha (no uses \"All time\")</li><li>Usa términos de búsqueda específicos (no amplios)</li></ul><h4>Reducir listas cargadas</h4><p>Settings → Display → Items per page:</p><ul><li>Default: 50 items (equilibrado)</li><li>Para velocidad: 25 items (carga más rápida)</li><li>Para usuarios avanzados: 100 items (más desplazamiento, más lento)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "quick-wins",
+      "variant": "success",
+      "title": {
+        "nl": "Quick wins voor instant speed boost",
+        "en": "Quick Wins for Instant Speed Boost",
+        "es": "Victorias rápidas para impulso instantáneo de velocidad"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Doe dit nu (5 minuten):</strong></p><ol><li>Close alle tabs behalve Tesoro</li><li>Hard refresh (Ctrl+Shift+R)</li><li>Disable AdBlock voor Tesoro</li><li>Update browser to latest version</li><li>Restart browser</li></ol><p>Dit geeft je direct 30-50% sneller performance!</p>"
+        },
+        "en": {
+          "text": "<p><strong>Do this now (5 minutes):</strong></p><ol><li>Close all tabs except Tesoro</li><li>Hard refresh (Ctrl+Shift+R)</li><li>Disable AdBlock for Tesoro</li><li>Update browser to latest version</li><li>Restart browser</li></ol><p>This gives you immediately 30-50% faster performance!</p>"
+        },
+        "es": {
+          "text": "<p><strong>Haz esto ahora (5 minutos):</strong></p><ol><li>Cierra todas las pestañas excepto Tesoro</li><li>Hard refresh (Ctrl+Shift+R)</li><li>Desactiva AdBlock para Tesoro</li><li>Actualiza navegador a última versión</li><li>Reinicia navegador</li></ol><p>¡Esto te da inmediatamente 30-50% más rendimiento!</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "browser-compatibility-guide",
+    "common-issues-solutions",
+    "getting-help-support"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Is Tesoro langzamer met veel data?",
+        "en": "Is Tesoro slower with lots of data?",
+        "es": "¿Es Tesoro más lento con muchos datos?"
+      },
+      "answer": {
+        "nl": "Minimaal. Tesoro gebruikt server-side filtering en pagination, dus database size heeft weinig impact op dagelijkse performance. Wel belangrijk: Archive old data en gebruik saved filters voor beste snelheid.",
+        "en": "Minimal. Tesoro uses server-side filtering and pagination, so database size has little impact on daily performance. Important: Archive old data and use saved filters for best speed.",
+        "es": "Mínimo. Tesoro usa filtrado del lado del servidor y paginación, por lo que el tamaño de la base de datos tiene poco impacto en el rendimiento diario. Importante: Archiva datos antiguos y usa filtros guardados para mejor velocidad."
+      }
+    }
+  ]
+}

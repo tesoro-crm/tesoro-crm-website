@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "id": "data-import-export-settings",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "carlos-martinez",
+    "category": "settings",
+    "difficulty": "intermediate",
+    "tags": ["settings", "import", "export", "data", "migration"],
+    "featured": false,
+    "readingTime": 9,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["data import", "data export", "migration", "bulk upload", "csv", "tesoro crm"]
+  },
+  "hero": {
+    "title": {
+      "nl": "Gegevens importeren en exporteren",
+      "en": "Importing and Exporting Data",
+      "es": "Importar y exportar datos"
+    },
+    "description": {
+      "nl": "Leer hoe u snel grote hoeveelheden gegevens kunt importeren vanuit andere systemen en uw CRM data kunt exporteren voor analyses en back-ups.",
+      "en": "Learn how to quickly import large amounts of data from other systems and export your CRM data for analysis and backups.",
+      "es": "Aprenda cómo importar rápidamente grandes cantidades de datos de otros sistemas y exportar sus datos de CRM para análisis y copias de seguridad."
+    },
+    "icon": "sync_alt"
+  },
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": "Of u nu migreert vanuit een ander CRM systeem, contacten importeert vanuit Excel, of een backup wilt maken van uw gegevens - Tesoro CRM's import/export functionaliteit maakt dit eenvoudig en betrouwbaar.\n\nMet ondersteuning voor CSV en Excel formaten, intelligente veldmapping en validatie, kunt u duizenden records in enkele minuten importeren terwijl u controle houdt over gegevenskwaliteit.",
+        "en": "Whether you're migrating from another CRM system, importing contacts from Excel, or want to back up your data - Tesoro CRM's import/export functionality makes this simple and reliable.\n\nWith support for CSV and Excel formats, intelligent field mapping and validation, you can import thousands of records in minutes while maintaining control over data quality.",
+        "es": "Ya sea que esté migrando desde otro sistema CRM, importando contactos desde Excel o desee hacer una copia de seguridad de sus datos, la funcionalidad de importación/exportación de Tesoro CRM hace que esto sea simple y confiable.\n\nCon soporte para formatos CSV y Excel, mapeo inteligente de campos y validación, puede importar miles de registros en minutos mientras mantiene el control sobre la calidad de los datos."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "import-data",
+      "title": {
+        "nl": "Gegevens importeren",
+        "en": "Importing Data",
+        "es": "Importar datos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Bereid uw importbestand voor",
+            "en": "Prepare Your Import File",
+            "es": "Preparar su archivo de importación"
+          },
+          "description": {
+            "nl": "Exporteer gegevens vanuit uw huidige systeem naar CSV of Excel (.xlsx) formaat. Zorg ervoor dat:\n- De eerste rij bevat kolomkoppen (veldnamen)\n- Elk record op een aparte rij staat\n- Datums zijn in het formaat DD-MM-YYYY of YYYY-MM-DD\n- E-mailadressen geldig zijn\n- Telefoonnummers zonder spaties of speciale tekens (behalve + voor internationale nummers)\n- Geen lege rijen tussen records",
+            "en": "Export data from your current system to CSV or Excel (.xlsx) format. Ensure that:\n- The first row contains column headers (field names)\n- Each record is on a separate row\n- Dates are in DD-MM-YYYY or YYYY-MM-DD format\n- Email addresses are valid\n- Phone numbers without spaces or special characters (except + for international numbers)\n- No empty rows between records",
+            "es": "Exporte datos de su sistema actual a formato CSV o Excel (.xlsx). Asegúrese de que:\n- La primera fila contiene encabezados de columna (nombres de campos)\n- Cada registro está en una fila separada\n- Las fechas están en formato DD-MM-YYYY o YYYY-MM-DD\n- Las direcciones de correo electrónico son válidas\n- Los números de teléfono sin espacios o caracteres especiales (excepto + para números internacionales)\n- Sin filas vacías entre registros"
+          }
+        },
+        {
+          "title": {
+            "nl": "Start de import wizard",
+            "en": "Start the Import Wizard",
+            "es": "Iniciar el asistente de importación"
+          },
+          "description": {
+            "nl": "Ga naar het objecttype dat u wilt importeren (Contacten, Woningen of Deals) en klik op 'Importeren'. Upload uw bestand - het systeem ondersteunt bestanden tot 10MB met maximaal 10.000 records per import. Voor grotere imports, splits het bestand op in meerdere kleinere bestanden.",
+            "en": "Go to the object type you want to import (Contacts, Properties, or Deals) and click 'Import'. Upload your file - the system supports files up to 10MB with a maximum of 10,000 records per import. For larger imports, split the file into multiple smaller files.",
+            "es": "Vaya al tipo de objeto que desea importar (Contactos, Propiedades o Acuerdos) y haga clic en 'Importar'. Cargue su archivo: el sistema admite archivos de hasta 10 MB con un máximo de 10,000 registros por importación. Para importaciones más grandes, divida el archivo en varios archivos más pequeños."
+          }
+        },
+        {
+          "title": {
+            "nl": "Map velden",
+            "en": "Map Fields",
+            "es": "Mapear campos"
+          },
+          "description": {
+            "nl": "Het systeem probeert automatisch uw kolommen te matchen met CRM velden. Controleer en pas de mapping aan:\n\n**Verplichte velden**: Moeten worden gemapt (bijv. naam, e-mail voor contacten)\n\n**Aangepaste velden**: Verschijnen in de lijst als ze bestaan\n\n**Negeren**: Kolommen die u niet wilt importeren\n\n**Standaardwaarde**: Stel een waarde in voor alle records als de kolom leeg is\n\nTip: Hernoem kolommen in uw Excel bestand om ze exact te laten matchen met CRM veldnamen voor automatische mapping.",
+            "en": "The system attempts to automatically match your columns to CRM fields. Review and adjust the mapping:\n\n**Required fields**: Must be mapped (e.g., name, email for contacts)\n\n**Custom fields**: Appear in the list if they exist\n\n**Ignore**: Columns you don't want to import\n\n**Default value**: Set a value for all records if the column is empty\n\nTip: Rename columns in your Excel file to exactly match CRM field names for automatic mapping.",
+            "es": "El sistema intenta hacer coincidir automáticamente sus columnas con los campos del CRM. Revise y ajuste el mapeo:\n\n**Campos requeridos**: Deben ser mapeados (por ejemplo, nombre, correo electrónico para contactos)\n\n**Campos personalizados**: Aparecen en la lista si existen\n\n**Ignorar**: Columnas que no desea importar\n\n**Valor predeterminado**: Establezca un valor para todos los registros si la columna está vacía\n\nConsejo: Cambie el nombre de las columnas en su archivo de Excel para que coincidan exactamente con los nombres de los campos del CRM para el mapeo automático."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies import opties",
+            "en": "Choose Import Options",
+            "es": "Elegir opciones de importación"
+          },
+          "description": {
+            "nl": "Configureer hoe duplicaten worden behandeld:\n\n**Nieuwe records maken**: Importeer alles als nieuwe records (risico op duplicaten)\n\n**Duplicaten overslaan**: Controleer op basis van e-mail of naam, sla dubbele over\n\n**Duplicaten bijwerken**: Update bestaande records met nieuwe informatie\n\n**Beide**: Maak nieuwe en update bestaande op basis van matching\n\nKies ook of u een eigenaar wilt toewijzen aan geïmporteerde records en welke tags automatisch moeten worden toegevoegd.",
+            "en": "Configure how duplicates are handled:\n\n**Create new records**: Import everything as new records (risk of duplicates)\n\n**Skip duplicates**: Check based on email or name, skip doubles\n\n**Update duplicates**: Update existing records with new information\n\n**Both**: Create new and update existing based on matching\n\nAlso choose whether to assign an owner to imported records and which tags should be automatically added.",
+            "es": "Configure cómo se manejan los duplicados:\n\n**Crear nuevos registros**: Importar todo como nuevos registros (riesgo de duplicados)\n\n**Omitir duplicados**: Verificar según el correo electrónico o el nombre, omitir duplicados\n\n**Actualizar duplicados**: Actualizar registros existentes con nueva información\n\n**Ambos**: Crear nuevos y actualizar existentes según la coincidencia\n\nTambién elija si desea asignar un propietario a los registros importados y qué etiquetas deben agregarse automáticamente."
+          }
+        },
+        {
+          "title": {
+            "nl": "Valideer en importeer",
+            "en": "Validate and Import",
+            "es": "Validar e importar"
+          },
+          "description": {
+            "nl": "Het systeem valideert uw gegevens voordat import:\n- Controleert verplichte velden\n- Valideert e-mailadressen en telefoonnummers\n- Detecteert ongeldige datums\n- Identificeert mogelijke duplicaten\n\nU ziet een preview van problemen. Los fouten op of kies om foutieve records over te slaan. Klik op 'Import starten' om het proces te beginnen. U ontvangt een notificatie wanneer de import is voltooid met een samenvatting van geïmporteerde, bijgewerkte en overgeslagen records.",
+            "en": "The system validates your data before import:\n- Checks required fields\n- Validates email addresses and phone numbers\n- Detects invalid dates\n- Identifies possible duplicates\n\nYou'll see a preview of issues. Fix errors or choose to skip faulty records. Click 'Start Import' to begin the process. You'll receive a notification when the import is complete with a summary of imported, updated, and skipped records.",
+            "es": "El sistema valida sus datos antes de la importación:\n- Verifica campos requeridos\n- Valida direcciones de correo electrónico y números de teléfono\n- Detecta fechas inválidas\n- Identifica posibles duplicados\n\nVerá una vista previa de los problemas. Corrija errores o elija omitir registros defectuosos. Haga clic en 'Iniciar importación' para comenzar el proceso. Recibirá una notificación cuando la importación esté completa con un resumen de registros importados, actualizados y omitidos."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "import-warning",
+      "variant": "warning",
+      "title": {
+        "nl": "Test eerst met een klein bestand",
+        "en": "Test First with a Small File",
+        "es": "Pruebe primero con un archivo pequeño"
+      },
+      "content": {
+        "nl": "Voordat u duizenden records importeert, test eerst met een klein bestand van 10-20 records. Controleer of de veldmapping correct is, duplicatendetectie werkt zoals verwacht en de gegevens er goed uitziet in het systeem. Dit voorkomt dat u grote importen moet terugdraaien.",
+        "en": "Before importing thousands of records, test first with a small file of 10-20 records. Check if field mapping is correct, duplicate detection works as expected, and data looks good in the system. This prevents having to roll back large imports.",
+        "es": "Antes de importar miles de registros, pruebe primero con un archivo pequeño de 10-20 registros. Verifique si el mapeo de campos es correcto, la detección de duplicados funciona como se espera y los datos se ven bien en el sistema. Esto evita tener que revertir importaciones grandes."
+      }
+    },
+    {
+      "type": "steps",
+      "id": "export-data",
+      "title": {
+        "nl": "Gegevens exporteren",
+        "en": "Exporting Data",
+        "es": "Exportar datos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Selecteer records om te exporteren",
+            "en": "Select Records to Export",
+            "es": "Seleccionar registros para exportar"
+          },
+          "description": {
+            "nl": "Ga naar de lijstweergave van het objecttype dat u wilt exporteren (Contacten, Woningen, Deals). U heeft drie opties:\n\n**Alle records**: Exporteer alle records waar u toegang toe heeft\n\n**Gefilterde records**: Pas eerst filters toe, exporteer dan alleen zichtbare records\n\n**Geselecteerde records**: Selecteer specifieke records met checkboxes, exporteer alleen selectie\n\nFilters zijn handig om bijvoorbeeld alleen actieve contacten of deals in een specifieke fase te exporteren.",
+            "en": "Go to the list view of the object type you want to export (Contacts, Properties, Deals). You have three options:\n\n**All records**: Export all records you have access to\n\n**Filtered records**: Apply filters first, then export only visible records\n\n**Selected records**: Select specific records with checkboxes, export only selection\n\nFilters are useful for example to export only active contacts or deals in a specific stage.",
+            "es": "Vaya a la vista de lista del tipo de objeto que desea exportar (Contactos, Propiedades, Acuerdos). Tiene tres opciones:\n\n**Todos los registros**: Exportar todos los registros a los que tiene acceso\n\n**Registros filtrados**: Aplique filtros primero, luego exporte solo los registros visibles\n\n**Registros seleccionados**: Seleccione registros específicos con casillas de verificación, exporte solo la selección\n\nLos filtros son útiles, por ejemplo, para exportar solo contactos activos o acuerdos en una fase específica."
+          }
+        },
+        {
+          "title": {
+            "nl": "Kies exportopties",
+            "en": "Choose Export Options",
+            "es": "Elegir opciones de exportación"
+          },
+          "description": {
+            "nl": "Klik op 'Exporteren' en configureer:\n\n**Bestandsformaat**: CSV (universeel) of Excel (.xlsx, met opmaak)\n\n**Welke velden**: Alle velden, alleen standaard velden, of aangepaste selectie\n\n**Gerelateerde gegevens**: Inclusief activiteiten, notities, documenten\n\n**Datum bereik**: Filter op aanmaak- of wijzigingsdatum\n\nVoor grote exports (>1000 records) ontvangt u een e-mail met downloadlink wanneer het bestand klaar is.",
+            "en": "Click 'Export' and configure:\n\n**File format**: CSV (universal) or Excel (.xlsx, with formatting)\n\n**Which fields**: All fields, only standard fields, or custom selection\n\n**Related data**: Include activities, notes, documents\n\n**Date range**: Filter by creation or modification date\n\nFor large exports (>1000 records) you'll receive an email with download link when the file is ready.",
+            "es": "Haga clic en 'Exportar' y configure:\n\n**Formato de archivo**: CSV (universal) o Excel (.xlsx, con formato)\n\n**Qué campos**: Todos los campos, solo campos estándar o selección personalizada\n\n**Datos relacionados**: Incluir actividades, notas, documentos\n\n**Rango de fechas**: Filtrar por fecha de creación o modificación\n\nPara exportaciones grandes (>1000 registros) recibirá un correo electrónico con enlace de descarga cuando el archivo esté listo."
+          }
+        },
+        {
+          "title": {
+            "nl": "Download en gebruik de export",
+            "en": "Download and Use the Export",
+            "es": "Descargar y usar la exportación"
+          },
+          "description": {
+            "nl": "Download het bestand en open het in Excel, Google Sheets of uw favoriete spreadsheet tool. Gebruik de export voor:\n- Analyses in Excel of BI tools\n- Mailings via MailChimp of andere tools\n- Backup van uw gegevens\n- Rapportage aan management\n- Migratie naar een ander systeem\n\nExports bevatten een tijdstempel in de bestandsnaam voor versiecontrole.",
+            "en": "Download the file and open it in Excel, Google Sheets, or your favorite spreadsheet tool. Use the export for:\n- Analysis in Excel or BI tools\n- Mailings via MailChimp or other tools\n- Backup of your data\n- Reporting to management\n- Migration to another system\n\nExports include a timestamp in the filename for version control.",
+            "es": "Descargue el archivo y ábralo en Excel, Google Sheets o su herramienta de hoja de cálculo favorita. Use la exportación para:\n- Análisis en Excel o herramientas de BI\n- Envíos por correo a través de MailChimp u otras herramientas\n- Copia de seguridad de sus datos\n- Informes a la gerencia\n- Migración a otro sistema\n\nLas exportaciones incluyen una marca de tiempo en el nombre del archivo para control de versiones."
+          }
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "id": "gdpr-export",
+      "variant": "info",
+      "title": {
+        "nl": "AVG recht op gegevensoverdracht",
+        "en": "GDPR Right to Data Portability",
+        "es": "Derecho de portabilidad de datos de GDPR"
+      },
+      "content": {
+        "nl": "Klanten hebben onder de AVG het recht om hun persoonsgegevens in een gestructureerd, gangbaar en machineleesbaar formaat te ontvangen. Gebruik de export functie om snel te voldoen aan dergelijke verzoeken. Exporteer alleen de gegevens van de betreffende persoon, niet de hele database.",
+        "en": "Under GDPR, customers have the right to receive their personal data in a structured, commonly used, and machine-readable format. Use the export function to quickly comply with such requests. Export only the data of the person concerned, not the entire database.",
+        "es": "Según el GDPR, los clientes tienen derecho a recibir sus datos personales en un formato estructurado, de uso común y legible por máquina. Use la función de exportación para cumplir rápidamente con tales solicitudes. Exporte solo los datos de la persona en cuestión, no toda la base de datos."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "import-export-tips",
+      "variant": "tip",
+      "title": {
+        "nl": "Best practices voor import/export",
+        "en": "Import/Export Best Practices",
+        "es": "Mejores prácticas de importación/exportación"
+      },
+      "content": {
+        "nl": "**Maak een backup eerst**: Voordat u grote imports doet, exporteer eerst uw huidige data\n\n**Gebruik consistente formats**: Houd datums, telefoonnummers en adressen consistent\n\n**Clean uw data**: Verwijder duplicaten en corrigeer fouten voordat u importeert\n\n**Test met kleine samples**: Probeer eerst met 10-20 records\n\n**Documenteer uw mapping**: Noteer welke velden met welke kolommen corresponderen\n\n**Plan grote imports**: Doe grote imports buiten kantooruren\n\n**Regelmatige backups**: Exporteer maandelijks een volledige backup",
+        "en": "**Make a backup first**: Before doing large imports, export your current data first\n\n**Use consistent formats**: Keep dates, phone numbers, and addresses consistent\n\n**Clean your data**: Remove duplicates and correct errors before importing\n\n**Test with small samples**: Try first with 10-20 records\n\n**Document your mapping**: Note which fields correspond to which columns\n\n**Plan large imports**: Do large imports outside office hours\n\n**Regular backups**: Export a complete backup monthly",
+        "es": "**Haga una copia de seguridad primero**: Antes de hacer grandes importaciones, exporte sus datos actuales primero\n\n**Use formatos consistentes**: Mantenga fechas, números de teléfono y direcciones consistentes\n\n**Limpie sus datos**: Elimine duplicados y corrija errores antes de importar\n\n**Pruebe con muestras pequeñas**: Intente primero con 10-20 registros\n\n**Documente su mapeo**: Anote qué campos corresponden a qué columnas\n\n**Planifique grandes importaciones**: Haga grandes importaciones fuera del horario de oficina\n\n**Copias de seguridad regulares**: Exporte una copia de seguridad completa mensualmente"
+      }
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": {
+        "nl": "Veelgestelde vragen",
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas frecuentes"
+      },
+      "questions": [
+        {
+          "question": {
+            "nl": "Kan ik afbeeldingen importeren voor woningen?",
+            "en": "Can I import images for properties?",
+            "es": "¿Puedo importar imágenes para propiedades?"
+          },
+          "answer": {
+            "nl": "Momenteel ondersteunt de import wizard geen directe afbeeldingsimport. U kunt wel URL's naar afbeeldingen importeren in een aangepast veld. Voor bulkupload van afbeeldingen, gebruik de API of neem contact op met support voor assistentie bij grote migraties.",
+            "en": "Currently the import wizard doesn't support direct image import. You can import URLs to images in a custom field. For bulk upload of images, use the API or contact support for assistance with large migrations.",
+            "es": "Actualmente el asistente de importación no admite la importación directa de imágenes. Puede importar URL de imágenes en un campo personalizado. Para carga masiva de imágenes, use la API o contacte al soporte para asistencia con migraciones grandes."
+          }
+        },
+        {
+          "question": {
+            "nl": "Wat gebeurt er als mijn import halverwege faalt?",
+            "en": "What happens if my import fails halfway?",
+            "es": "¿Qué sucede si mi importación falla a la mitad?"
+          },
+          "answer": {
+            "nl": "Imports zijn transactioneel: ofwel alle geldige records worden geïmporteerd, of geen enkele als er kritieke fouten zijn. U ontvangt een gedetailleerd rapport met welke records succesvol waren en welke gefaald zijn met een reden. U kunt het bestand corrigeren en opnieuw importeren met alleen de gefaalde records.",
+            "en": "Imports are transactional: either all valid records are imported, or none if there are critical errors. You receive a detailed report of which records were successful and which failed with a reason. You can correct the file and re-import with only the failed records.",
+            "es": "Las importaciones son transaccionales: o todos los registros válidos se importan, o ninguno si hay errores críticos. Recibe un informe detallado de qué registros tuvieron éxito y cuáles fallaron con una razón. Puede corregir el archivo y volver a importar solo los registros fallidos."
+          }
+        },
+        {
+          "question": {
+            "nl": "Kan ik relaties tussen records importeren?",
+            "en": "Can I import relationships between records?",
+            "es": "¿Puedo importar relaciones entre registros?"
+          },
+          "answer": {
+            "nl": "Ja, u kunt relaties importeren door referentievelden te gebruiken. Bijvoorbeeld: in uw contactimport kunt u een kolom 'Eigenaar Email' toevoegen die matcht met een bestaande gebruiker. Of 'Woning ID' om een contact aan een woning te koppelen. Het systeem zoekt de matches tijdens import.",
+            "en": "Yes, you can import relationships by using reference fields. For example: in your contact import you can add an 'Owner Email' column that matches an existing user. Or 'Property ID' to link a contact to a property. The system finds the matches during import.",
+            "es": "Sí, puede importar relaciones usando campos de referencia. Por ejemplo: en su importación de contactos puede agregar una columna 'Correo electrónico del propietario' que coincida con un usuario existente. O 'ID de propiedad' para vincular un contacto a una propiedad. El sistema encuentra las coincidencias durante la importación."
+          }
+        },
+        {
+          "question": {
+            "nl": "Hoe vaak kan ik data exporteren?",
+            "en": "How often can I export data?",
+            "es": "¿Con qué frecuencia puedo exportar datos?"
+          },
+          "answer": {
+            "nl": "Er zijn geen limieten op het aantal exports. U kunt zo vaak exporteren als u wilt. Voor geautomatiseerde exports, overweeg het gebruik van de Tesoro API die realtime toegang biedt tot uw data en kan worden geïntegreerd met uw BI tools of andere systemen.",
+            "en": "There are no limits on the number of exports. You can export as often as you want. For automated exports, consider using the Tesoro API which provides real-time access to your data and can be integrated with your BI tools or other systems.",
+            "es": "No hay límites en el número de exportaciones. Puede exportar tan a menudo como quiera. Para exportaciones automatizadas, considere usar la API de Tesoro que proporciona acceso en tiempo real a sus datos y puede integrarse con sus herramientas de BI u otros sistemas."
+          }
+        }
+      ]
+    }
+  ],
+  "relatedArticles": [
+    "custom-fields-setup",
+    "api-integration-guide",
+    "data-quality-best-practices"
+  ]
+}

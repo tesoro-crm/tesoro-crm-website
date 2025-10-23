@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "projects-overview-guide",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T23:50:00Z",
+    "authorId": "elena-rodriguez",
+    "category": "projects",
+    "difficulty": "beginner",
+    "tags": ["projects", "developments", "real-estate", "construction", "overview"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&h=630&fit=crop",
+    "keywords": ["real estate projects", "property development", "construction management", "tesoro projects", "development crm"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Projecten en ontwikkelingen: complete gids",
+      "en": "Projects and Developments: Complete Guide",
+      "es": "Proyectos y desarrollos: guía completa"
+    },
+    "description": {
+      "nl": "Leer hoe je nieuwbouwprojecten en ontwikkelingen beheert in Tesoro: van planning tot verkoop van de laatste unit.",
+      "en": "Learn how to manage new construction projects and developments in Tesoro: from planning to selling the last unit.",
+      "es": "Aprende cómo gestionar proyectos de construcción nueva y desarrollos en Tesoro: desde planificación hasta vender la última unidad."
+    },
+    "icon": "apartment"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Tesoro's Project Management module is ontworpen voor <strong>property developers, construction companies en agencies</strong> die nieuwbouwprojecten verkopen. Of je nu een klein 8-unit apartment complex bouwt of een 200-unit master development beheert, Tesoro helpt je om:</p><ul><li>Alle project informatie centraal te bewaren</li><li>Properties te linken aan development projects</li><li>Bouwvooruitgang en milestones te tracken</li><li>Buyers updates te geven via client portal</li><li>Sales performance per project te rapporteren</li></ul><p>Deze gids legt uit <strong>wat projects zijn, wanneer je ze moet gebruiken</strong>, en hoe ze verschillen van gewone property management.</p>"
+        },
+        "en": {
+          "text": "<p>Tesoro's Project Management module is designed for <strong>property developers, construction companies and agencies</strong> selling new construction projects. Whether you're building a small 8-unit apartment complex or managing a 200-unit master development, Tesoro helps you:</p><ul><li>Keep all project information centralized</li><li>Link properties to development projects</li><li>Track construction progress and milestones</li><li>Give buyers updates via client portal</li><li>Report sales performance per project</li></ul><p>This guide explains <strong>what projects are, when to use them</strong>, and how they differ from regular property management.</p>"
+        },
+        "es": {
+          "text": "<p>El módulo de Project Management de Tesoro está diseñado para <strong>desarrolladores inmobiliarios, empresas de construcción y agencias</strong> que venden proyectos de construcción nueva. Ya sea que estés construyendo un pequeño complejo de 8 unidades o gestionando un master development de 200 unidades, Tesoro te ayuda a:</p><ul><li>Mantener toda la información del proyecto centralizada</li><li>Vincular propiedades a proyectos de desarrollo</li><li>Rastrear el progreso de construcción y milestones</li><li>Dar actualizaciones a compradores via portal del cliente</li><li>Reportar rendimiento de ventas por proyecto</li></ul><p>Esta guía explica <strong>qué son los proyectos, cuándo usarlos</strong>, y cómo difieren de la gestión regular de propiedades.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "what-are-projects",
+      "title": {
+        "nl": "Wat zijn projects?",
+        "en": "What Are Projects?",
+        "es": "¿Qué son los proyectos?"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Een <strong>Project</strong> in Tesoro is een container voor een nieuwbouwontwikkeling met meerdere units die worden gebouwd en verkocht als onderdeel van hetzelfde development.</p><h4>Denk aan projects als:</h4><ul><li><strong>Apartment complexes</strong> - 10-200 units in één gebouw of complex</li><li><strong>Townhouse developments</strong> - Rij woningen met gedeelde voorzieningen</li><li><strong>Gated communities</strong> - Villas of homes binnen één master plan</li><li><strong>Mixed-use developments</strong> - Commercieel + residential in één project</li><li><strong>Office buildings</strong> - Meerdere kantoorruimtes of floors</li></ul><h4>Project vs Property:</h4><table><thead><tr><th>Project</th><th>Property</th></tr></thead><tbody><tr><td>Container voor meerdere units</td><td>Individuele unit (apartment, house, etc.)</td></tr><tr><td>Heeft construction timeline</td><td>Kan bestaand of nieuw zijn</td></tr><tr><td>Shared amenities, location</td><td>Unieke kenmerken per unit</td></tr><tr><td>Marketing als geheel</td><td>Marketing individueel</td></tr><tr><td>Progress tracking (% gebouwd)</td><td>Status tracking (Available, Sold, etc.)</td></tr></tbody></table><p><strong>Voorbeeld:</strong> \"Marina Bay Residences\" is een <strong>Project</strong> met 45 apartments. Elk apartment is een <strong>Property</strong> gelinkt aan dit project.</p>"
+        },
+        "en": {
+          "text": "<p>A <strong>Project</strong> in Tesoro is a container for a new construction development with multiple units being built and sold as part of the same development.</p><h4>Think of projects as:</h4><ul><li><strong>Apartment complexes</strong> - 10-200 units in one building or complex</li><li><strong>Townhouse developments</strong> - Row houses with shared amenities</li><li><strong>Gated communities</strong> - Villas or homes within one master plan</li><li><strong>Mixed-use developments</strong> - Commercial + residential in one project</li><li><strong>Office buildings</strong> - Multiple office spaces or floors</li></ul><h4>Project vs Property:</h4><table><thead><tr><th>Project</th><th>Property</th></tr></thead><tbody><tr><td>Container for multiple units</td><td>Individual unit (apartment, house, etc.)</td></tr><tr><td>Has construction timeline</td><td>Can be existing or new</td></tr><tr><td>Shared amenities, location</td><td>Unique characteristics per unit</td></tr><tr><td>Marketing as a whole</td><td>Marketing individually</td></tr><tr><td>Progress tracking (% built)</td><td>Status tracking (Available, Sold, etc.)</td></tr></tbody></table><p><strong>Example:</strong> \"Marina Bay Residences\" is a <strong>Project</strong> with 45 apartments. Each apartment is a <strong>Property</strong> linked to this project.</p>"
+        },
+        "es": {
+          "text": "<p>Un <strong>Project</strong> en Tesoro es un contenedor para un desarrollo de construcción nueva con múltiples unidades que se construyen y venden como parte del mismo desarrollo.</p><h4>Piensa en proyectos como:</h4><ul><li><strong>Complejos de apartamentos</strong> - 10-200 unidades en un edificio o complejo</li><li><strong>Desarrollos de townhouses</strong> - Casas en hilera con amenidades compartidas</li><li><strong>Comunidades cerradas</strong> - Villas o casas dentro de un master plan</li><li><strong>Desarrollos de uso mixto</strong> - Comercial + residencial en un proyecto</li><li><strong>Edificios de oficinas</strong> - Múltiples espacios de oficina o pisos</li></ul><h4>Proyecto vs Propiedad:</h4><table><thead><tr><th>Proyecto</th><th>Propiedad</th></tr></thead><tbody><tr><td>Contenedor para múltiples unidades</td><td>Unidad individual (apartamento, casa, etc.)</td></tr><tr><td>Tiene cronograma de construcción</td><td>Puede ser existente o nueva</td></tr><tr><td>Amenidades compartidas, ubicación</td><td>Características únicas por unidad</td></tr><tr><td>Marketing como un todo</td><td>Marketing individual</td></tr><tr><td>Seguimiento de progreso (% construido)</td><td>Seguimiento de estado (Available, Sold, etc.)</td></tr></tbody></table><p><strong>Ejemplo:</strong> \"Marina Bay Residences\" es un <strong>Project</strong> con 45 apartamentos. Cada apartamento es una <strong>Property</strong> vinculada a este proyecto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "when-to-use",
+      "title": {
+        "nl": "Wanneer projects gebruiken?",
+        "en": "When to Use Projects?",
+        "es": "¿Cuándo usar proyectos?"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>✅ Gebruik Projects voor:</h4><ul><li><strong>Nieuwbouw developments</strong> - Gebouwen/complexen die nog gebouwd worden</li><li><strong>Multiple units onder één naam</strong> - Bijv. \"Ocean View Apartments\" met 30 units</li><li><strong>Gedeelde marketing materials</strong> - Brochures, website, model homes die voor alle units gelden</li><li><strong>Construction progress updates</strong> - Buyers willen weten hoe de bouw vordert</li><li><strong>Phase-based releases</strong> - Je verkoopt units in phases (Phase 1, 2, 3)</li><li><strong>Shared amenities</strong> - Pool, gym, parking die voor alle units gelden</li><li><strong>Developer/builder focus</strong> - Je bent de developer of verkoopt namens developer</li></ul><h4>❌ Gebruik GEEN Projects voor:</h4><ul><li><strong>Bestaande properties</strong> - Resale homes, existing apartments (use normal Properties)</li><li><strong>Single properties</strong> - Een enkel huis of apartment dat je verkoopt</li><li><strong>Unrelated properties</strong> - Verschillende properties op verschillende locaties zonder verband</li><li><strong>Property management</strong> - Rental properties die je beheert (niet verkoopt)</li></ul><h4>Grijze zone - Beide kunnen:</h4><ul><li><strong>Small developments (2-4 units):</strong> Kan als Project OF als losse Properties, jouw keuze</li><li><strong>Renovation projects:</strong> Als je meerdere units renoveert en verkoopt, kan Project handig zijn</li></ul>"
+        },
+        "en": {
+          "text": "<h4>✅ Use Projects for:</h4><ul><li><strong>New construction developments</strong> - Buildings/complexes still being built</li><li><strong>Multiple units under one name</strong> - E.g. \"Ocean View Apartments\" with 30 units</li><li><strong>Shared marketing materials</strong> - Brochures, website, model homes that apply to all units</li><li><strong>Construction progress updates</strong> - Buyers want to know how construction is progressing</li><li><strong>Phase-based releases</strong> - You're selling units in phases (Phase 1, 2, 3)</li><li><strong>Shared amenities</strong> - Pool, gym, parking that apply to all units</li><li><strong>Developer/builder focus</strong> - You are the developer or selling on behalf of developer</li></ul><h4>❌ Do NOT Use Projects for:</h4><ul><li><strong>Existing properties</strong> - Resale homes, existing apartments (use normal Properties)</li><li><strong>Single properties</strong> - A single house or apartment you're selling</li><li><strong>Unrelated properties</strong> - Different properties in different locations without connection</li><li><strong>Property management</strong> - Rental properties you manage (not sell)</li></ul><h4>Gray zone - Both can work:</h4><ul><li><strong>Small developments (2-4 units):</strong> Can be Project OR separate Properties, your choice</li><li><strong>Renovation projects:</strong> If renovating and selling multiple units, Project can be useful</li></ul>"
+        },
+        "es": {
+          "text": "<h4>✅ Usar proyectos para:</h4><ul><li><strong>Desarrollos de construcción nueva</strong> - Edificios/complejos que aún se están construyendo</li><li><strong>Múltiples unidades bajo un nombre</strong> - Ej. \"Ocean View Apartments\" con 30 unidades</li><li><strong>Materiales de marketing compartidos</strong> - Folletos, sitio web, casas modelo que aplican a todas las unidades</li><li><strong>Actualizaciones de progreso de construcción</strong> - Los compradores quieren saber cómo progresa la construcción</li><li><strong>Lanzamientos basados en fases</strong> - Estás vendiendo unidades en fases (Fase 1, 2, 3)</li><li><strong>Amenidades compartidas</strong> - Piscina, gimnasio, estacionamiento que aplican a todas las unidades</li><li><strong>Enfoque desarrollador/constructor</strong> - Eres el desarrollador o vendes en nombre del desarrollador</li></ul><h4>❌ NO usar proyectos para:</h4><ul><li><strong>Propiedades existentes</strong> - Casas de reventa, apartamentos existentes (usar Properties normales)</li><li><strong>Propiedades individuales</strong> - Una sola casa o apartamento que estás vendiendo</li><li><strong>Propiedades no relacionadas</strong> - Diferentes propiedades en diferentes ubicaciones sin conexión</li><li><strong>Gestión de propiedades</strong> - Propiedades de alquiler que gestionas (no vendes)</li></ul><h4>Zona gris - Ambas pueden funcionar:</h4><ul><li><strong>Desarrollos pequeños (2-4 unidades):</strong> Puede ser Project O Properties separadas, tu elección</li><li><strong>Proyectos de renovación:</strong> Si estás renovando y vendiendo múltiples unidades, Project puede ser útil</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "key-features",
+      "title": {
+        "nl": "Key features van projects",
+        "en": "Key Features of Projects",
+        "es": "Características clave de proyectos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>1. Project Information & Branding</h4><ul><li>Project naam, developer, architect info</li><li>Master marketing materials (brochures, renders, videos)</li><li>Shared amenities en facilities</li><li>Location en neighborhood info</li></ul><h4>2. Construction Timeline & Milestones</h4><ul><li>Start date, expected completion date</li><li>Construction phases en milestones</li><li>Progress updates (% completed)</li><li>Photo/video documentation van progress</li></ul><h4>3. Unit Management</h4><ul><li>Link individual properties (apartments, units) to project</li><li>Track availability per unit (Available, Reserved, Sold)</li><li>Pricing per unit (kan variëren per floor, view, etc.)</li><li>Unit customization options</li></ul><h4>4. Sales Tracking</h4><ul><li>Total units vs units sold (Sales velocity)</li><li>Revenue tracking per project</li><li>Phase-based sales reports</li><li>Best-performing unit types</li></ul><h4>5. Buyer Communication</h4><ul><li>Construction progress updates naar buyers</li><li>Client portal access voor buyers</li><li>Milestone notifications (Foundation complete, etc.)</li><li>Photo galleries van construction progress</li></ul><h4>6. Reports & Analytics</h4><ul><li>Project performance dashboard</li><li>Sales velocity (units sold per month)</li><li>Revenue vs target</li><li>Time to sell (average days on market per unit)</li></ul>"
+        },
+        "en": {
+          "text": "<h4>1. Project Information & Branding</h4><ul><li>Project name, developer, architect info</li><li>Master marketing materials (brochures, renders, videos)</li><li>Shared amenities and facilities</li><li>Location and neighborhood info</li></ul><h4>2. Construction Timeline & Milestones</h4><ul><li>Start date, expected completion date</li><li>Construction phases and milestones</li><li>Progress updates (% completed)</li><li>Photo/video documentation of progress</li></ul><h4>3. Unit Management</h4><ul><li>Link individual properties (apartments, units) to project</li><li>Track availability per unit (Available, Reserved, Sold)</li><li>Pricing per unit (can vary per floor, view, etc.)</li><li>Unit customization options</li></ul><h4>4. Sales Tracking</h4><ul><li>Total units vs units sold (Sales velocity)</li><li>Revenue tracking per project</li><li>Phase-based sales reports</li><li>Best-performing unit types</li></ul><h4>5. Buyer Communication</h4><ul><li>Construction progress updates to buyers</li><li>Client portal access for buyers</li><li>Milestone notifications (Foundation complete, etc.)</li><li>Photo galleries of construction progress</li></ul><h4>6. Reports & Analytics</h4><ul><li>Project performance dashboard</li><li>Sales velocity (units sold per month)</li><li>Revenue vs target</li><li>Time to sell (average days on market per unit)</li></ul>"
+        },
+        "es": {
+          "text": "<h4>1. Información y marca del proyecto</h4><ul><li>Nombre del proyecto, desarrollador, información del arquitecto</li><li>Materiales de marketing maestros (folletos, renders, videos)</li><li>Amenidades y facilidades compartidas</li><li>Información de ubicación y vecindario</li></ul><h4>2. Cronograma de construcción y milestones</h4><ul><li>Fecha de inicio, fecha de finalización esperada</li><li>Fases de construcción y milestones</li><li>Actualizaciones de progreso (% completado)</li><li>Documentación fotográfica/video del progreso</li></ul><h4>3. Gestión de unidades</h4><ul><li>Vincular propiedades individuales (apartamentos, unidades) al proyecto</li><li>Rastrear disponibilidad por unidad (Available, Reserved, Sold)</li><li>Precio por unidad (puede variar por piso, vista, etc.)</li><li>Opciones de personalización de unidad</li></ul><h4>4. Seguimiento de ventas</h4><ul><li>Total de unidades vs unidades vendidas (Velocidad de ventas)</li><li>Seguimiento de ingresos por proyecto</li><li>Reportes de ventas basados en fases</li><li>Tipos de unidad con mejor rendimiento</li></ul><h4>5. Comunicación con compradores</h4><ul><li>Actualizaciones de progreso de construcción a compradores</li><li>Acceso al portal del cliente para compradores</li><li>Notificaciones de milestones (Fundación completa, etc.)</li><li>Galerías de fotos del progreso de construcción</li></ul><h4>6. Reportes y analíticas</h4><ul><li>Dashboard de rendimiento del proyecto</li><li>Velocidad de ventas (unidades vendidas por mes)</li><li>Ingresos vs objetivo</li><li>Tiempo para vender (días promedio en el mercado por unidad)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "real-example",
+      "variant": "info",
+      "title": {
+        "nl": "Real-world voorbeeld",
+        "en": "Real-World Example",
+        "es": "Ejemplo del mundo real"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>\"Sunset Gardens\" - Residential Development</strong></p><ul><li><strong>Type:</strong> 3-building apartment complex</li><li><strong>Location:</strong> Valencia, Spain</li><li><strong>Total units:</strong> 72 apartments (24 per building)</li><li><strong>Timeline:</strong> 18 months construction (Started Jan 2024, Completion June 2025)</li><li><strong>Sales approach:</strong> Pre-selling during construction, released in 3 phases</li></ul><p><strong>In Tesoro setup:</strong></p><ul><li><strong>1 Project:</strong> \"Sunset Gardens Valencia\"</li><li><strong>72 Properties:</strong> Elk apartment is een Property gelinkt aan het project</li><li><strong>3 Phases:</strong> Building A (Phase 1), Building B (Phase 2), Building C (Phase 3)</li><li><strong>Milestones:</strong> Foundation, Structure Complete, Windows/Doors, Interior Finish, Handover</li></ul><p>Buyers krijgen elke maand een update email met foto's van de bouwvooruitgang. Sales team ziet real-time hoeveel units er per building verkocht zijn.</p>"
+        },
+        "en": {
+          "text": "<p><strong>\"Sunset Gardens\" - Residential Development</strong></p><ul><li><strong>Type:</strong> 3-building apartment complex</li><li><strong>Location:</strong> Valencia, Spain</li><li><strong>Total units:</strong> 72 apartments (24 per building)</li><li><strong>Timeline:</strong> 18 months construction (Started Jan 2024, Completion June 2025)</li><li><strong>Sales approach:</strong> Pre-selling during construction, released in 3 phases</li></ul><p><strong>In Tesoro setup:</strong></p><ul><li><strong>1 Project:</strong> \"Sunset Gardens Valencia\"</li><li><strong>72 Properties:</strong> Each apartment is a Property linked to the project</li><li><strong>3 Phases:</strong> Building A (Phase 1), Building B (Phase 2), Building C (Phase 3)</li><li><strong>Milestones:</strong> Foundation, Structure Complete, Windows/Doors, Interior Finish, Handover</li></ul><p>Buyers receive monthly update emails with photos of construction progress. Sales team sees real-time how many units are sold per building.</p>"
+        },
+        "es": {
+          "text": "<p><strong>\"Sunset Gardens\" - Desarrollo residencial</strong></p><ul><li><strong>Tipo:</strong> Complejo de apartamentos de 3 edificios</li><li><strong>Ubicación:</strong> Valencia, España</li><li><strong>Total de unidades:</strong> 72 apartamentos (24 por edificio)</li><li><strong>Cronograma:</strong> 18 meses de construcción (Inicio Ene 2024, Finalización Jun 2025)</li><li><strong>Enfoque de ventas:</strong> Pre-venta durante construcción, lanzado en 3 fases</li></ul><p><strong>En configuración Tesoro:</strong></p><ul><li><strong>1 Proyecto:</strong> \"Sunset Gardens Valencia\"</li><li><strong>72 Propiedades:</strong> Cada apartamento es una Property vinculada al proyecto</li><li><strong>3 Fases:</strong> Edificio A (Fase 1), Edificio B (Fase 2), Edificio C (Fase 3)</li><li><strong>Milestones:</strong> Fundación, Estructura completa, Ventanas/Puertas, Acabado interior, Entrega</li></ul><p>Los compradores reciben emails de actualización mensuales con fotos del progreso de construcción. El equipo de ventas ve en tiempo real cuántas unidades se vendieron por edificio.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "workflow",
+      "title": {
+        "nl": "Typische project workflow",
+        "en": "Typical Project Workflow",
+        "es": "Flujo de trabajo típico del proyecto"
+      },
+      "content": {
+        "nl": {
+          "text": "<h4>Phase 1: Project Setup (Pre-construction)</h4><ol><li><strong>Create Project</strong> - Add name, developer, location, timeline</li><li><strong>Add marketing materials</strong> - Brochures, renders, site plans</li><li><strong>Define units</strong> - Create Properties voor elke unit, link aan project</li><li><strong>Set pricing</strong> - Price per unit (can vary)</li><li><strong>Marketing launch</strong> - Start promoting project</li></ol><h4>Phase 2: Construction & Sales (18-24 months)</h4><ol><li><strong>Start selling</strong> - Create deals voor interested buyers</li><li><strong>Update milestones</strong> - Log construction progress (Foundation complete, etc.)</li><li><strong>Send updates</strong> - Monthly emails naar buyers met progress photos</li><li><strong>Track sales velocity</strong> - Monitor hoeveel units verkocht per maand</li><li><strong>Adjust pricing</strong> - Price updates voor remaining units based on demand</li></ol><h4>Phase 3: Completion & Handover</h4><ol><li><strong>Final walkthroughs</strong> - Schedule met buyers</li><li><strong>Handover coordination</strong> - Keys, documentation, etc.</li><li><strong>Close deals</strong> - Mark units as Sold/Delivered</li><li><strong>Post-sales support</strong> - Warranty issues, punch lists</li><li><strong>Project completion</strong> - Archive project, final reports</li></ol>"
+        },
+        "en": {
+          "text": "<h4>Phase 1: Project Setup (Pre-construction)</h4><ol><li><strong>Create Project</strong> - Add name, developer, location, timeline</li><li><strong>Add marketing materials</strong> - Brochures, renders, site plans</li><li><strong>Define units</strong> - Create Properties for each unit, link to project</li><li><strong>Set pricing</strong> - Price per unit (can vary)</li><li><strong>Marketing launch</strong> - Start promoting project</li></ol><h4>Phase 2: Construction & Sales (18-24 months)</h4><ol><li><strong>Start selling</strong> - Create deals for interested buyers</li><li><strong>Update milestones</strong> - Log construction progress (Foundation complete, etc.)</li><li><strong>Send updates</strong> - Monthly emails to buyers with progress photos</li><li><strong>Track sales velocity</strong> - Monitor how many units sold per month</li><li><strong>Adjust pricing</strong> - Price updates for remaining units based on demand</li></ol><h4>Phase 3: Completion & Handover</h4><ol><li><strong>Final walkthroughs</strong> - Schedule with buyers</li><li><strong>Handover coordination</strong> - Keys, documentation, etc.</li><li><strong>Close deals</strong> - Mark units as Sold/Delivered</li><li><strong>Post-sales support</strong> - Warranty issues, punch lists</li><li><strong>Project completion</strong> - Archive project, final reports</li></ol>"
+        },
+        "es": {
+          "text": "<h4>Fase 1: Configuración del proyecto (Pre-construcción)</h4><ol><li><strong>Crear proyecto</strong> - Agregar nombre, desarrollador, ubicación, cronograma</li><li><strong>Agregar materiales de marketing</strong> - Folletos, renders, planos del sitio</li><li><strong>Definir unidades</strong> - Crear Properties para cada unidad, vincular al proyecto</li><li><strong>Establecer precios</strong> - Precio por unidad (puede variar)</li><li><strong>Lanzamiento de marketing</strong> - Comenzar a promover el proyecto</li></ol><h4>Fase 2: Construcción y ventas (18-24 meses)</h4><ol><li><strong>Comenzar a vender</strong> - Crear deals para compradores interesados</li><li><strong>Actualizar milestones</strong> - Registrar progreso de construcción (Fundación completa, etc.)</li><li><strong>Enviar actualizaciones</strong> - Emails mensuales a compradores con fotos de progreso</li><li><strong>Rastrear velocidad de ventas</strong> - Monitorear cuántas unidades vendidas por mes</li><li><strong>Ajustar precios</strong> - Actualizaciones de precio para unidades restantes basadas en demanda</li></ol><h4>Fase 3: Finalización y entrega</h4><ol><li><strong>Recorridos finales</strong> - Programar con compradores</li><li><strong>Coordinación de entrega</strong> - Llaves, documentación, etc.</li><li><strong>Cerrar deals</strong> - Marcar unidades como Sold/Delivered</li><li><strong>Soporte post-venta</strong> - Problemas de garantía, punch lists</li><li><strong>Finalización del proyecto</strong> - Archivar proyecto, reportes finales</li></ol>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "next-steps",
+      "variant": "success",
+      "title": {
+        "nl": "Volgende stappen",
+        "en": "Next Steps",
+        "es": "Próximos pasos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Nu je begrijpt wat Projects zijn en wanneer je ze moet gebruiken, leer je hoe je ze opzet en beheert:</p><ul><li><strong>Creating Development Projects</strong> - Step-by-step guide om je eerste project te maken</li><li><strong>Linking Properties to Projects</strong> - Hoe units aan projecten toevoegen</li><li><strong>Project Progress Tracking</strong> - Construction milestones en updates beheren</li><li><strong>Project Client Portal</strong> - Buyers toegang geven tot progress updates</li></ul>"
+        },
+        "en": {
+          "text": "<p>Now that you understand what Projects are and when to use them, learn how to set them up and manage them:</p><ul><li><strong>Creating Development Projects</strong> - Step-by-step guide to create your first project</li><li><strong>Linking Properties to Projects</strong> - How to add units to projects</li><li><strong>Project Progress Tracking</strong> - Manage construction milestones and updates</li><li><strong>Project Client Portal</strong> - Give buyers access to progress updates</li></ul>"
+        },
+        "es": {
+          "text": "<p>Ahora que entiendes qué son los proyectos y cuándo usarlos, aprende cómo configurarlos y gestionarlos:</p><ul><li><strong>Creating Development Projects</strong> - Guía paso a paso para crear tu primer proyecto</li><li><strong>Linking Properties to Projects</strong> - Cómo agregar unidades a proyectos</li><li><strong>Project Progress Tracking</strong> - Gestionar milestones de construcción y actualizaciones</li><li><strong>Project Client Portal</strong> - Dar acceso a compradores a actualizaciones de progreso</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "creating-development-projects",
+    "linking-properties-to-projects",
+    "project-progress-tracking",
+    "property-management-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Kan ik een bestaand building als Project gebruiken?",
+        "en": "Can I use an existing building as a Project?",
+        "es": "¿Puedo usar un edificio existente como un proyecto?"
+      },
+      "answer": {
+        "nl": "Ja, als je meerdere units in hetzelfde building verkoopt (bijv. 10 apartments in een bestaand complex), kun je dit als Project opzetten. Dit is vooral handig voor bulk sales of master agency agreements waar je alle units van een developer verkoopt.",
+        "en": "Yes, if you're selling multiple units in the same building (e.g. 10 apartments in an existing complex), you can set this up as a Project. This is especially useful for bulk sales or master agency agreements where you sell all units from a developer.",
+        "es": "Sí, si estás vendiendo múltiples unidades en el mismo edificio (ej. 10 apartamentos en un complejo existente), puedes configurar esto como un proyecto. Esto es especialmente útil para ventas al por mayor o acuerdos de agencia maestra donde vendes todas las unidades de un desarrollador."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoeveel units moet ik minimaal hebben voor een Project?",
+        "en": "How many units minimum should I have for a Project?",
+        "es": "¿Cuántas unidades mínimo debo tener para un proyecto?"
+      },
+      "answer": {
+        "nl": "Er is geen technisch minimum, maar Projects zijn het meest zinvol voor 5+ units. Voor 2-4 units kun je kiezen: ofwel als Project (als je construction progress wilt tracken) ofwel als losse Properties. Voor single units gebruik je altijd gewoon Properties.",
+        "en": "There's no technical minimum, but Projects make most sense for 5+ units. For 2-4 units you can choose: either as Project (if you want to track construction progress) or as separate Properties. For single units you always just use Properties.",
+        "es": "No hay un mínimo técnico, pero los proyectos tienen más sentido para 5+ unidades. Para 2-4 unidades puedes elegir: ya sea como proyecto (si quieres rastrear progreso de construcción) o como Properties separadas. Para unidades individuales siempre usas Properties normales."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik een Project later archiveren?",
+        "en": "Can I archive a Project later?",
+        "es": "¿Puedo archivar un proyecto más tarde?"
+      },
+      "answer": {
+        "nl": "Ja! Wanneer alle units verkocht zijn en het project is afgerond, kun je het Project archiveren. Gearchiveerde projecten blijven zichtbaar in reports maar verschijnen niet meer in je active project list. De gelinkte Properties blijven normaal beschikbaar.",
+        "en": "Yes! When all units are sold and the project is completed, you can archive the Project. Archived projects remain visible in reports but no longer appear in your active project list. Linked Properties remain normally available.",
+        "es": "¡Sí! Cuando todas las unidades están vendidas y el proyecto está completado, puedes archivar el proyecto. Los proyectos archivados permanecen visibles en reportes pero ya no aparecen en tu lista de proyectos activos. Las Properties vinculadas permanecen normalmente disponibles."
+      }
+    }
+  ]
+}

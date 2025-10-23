@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "id": "property-listing-optimization",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T15:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "best-practices",
+    "difficulty": "intermediate",
+    "tags": ["properties", "listings", "optimization", "marketing", "conversions"],
+    "featured": true,
+    "readingTime": 10,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property listing optimization", "real estate marketing", "property photos", "listing descriptions", "property conversions"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Woningen optimaliseren voor maximale conversie",
+      "en": "Optimizing Property Listings for Maximum Conversion",
+      "es": "Optimizar listados de propiedades para máxima conversión"
+    },
+    "description": {
+      "nl": "Leer hoe je property listings creëert die opvallen, meer viewings genereren, en sneller verkopen.",
+      "en": "Learn how to create property listings that stand out, generate more viewings, and sell faster.",
+      "es": "Aprende cómo crear listados de propiedades que destacan, generan más visitas y se venden más rápido."
+    },
+    "icon": "home_work"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Gemiddelde property listings krijgen 20-50 views. Geoptimaliseerde listings krijgen 200-500+ views EN genereren 3-5x meer viewing requests. Het verschil? Professionele presentatie, strategische content, en aandacht voor detail.</p><p>Deze guide toont je exact hoe je listings creëert die koper's aandacht trekken en vasthouden.</p>"
+        },
+        "en": {
+          "text": "<p>Average property listings get 20-50 views. Optimized listings get 200-500+ views AND generate 3-5x more viewing requests. The difference? Professional presentation, strategic content, and attention to detail.</p><p>This guide shows you exactly how to create listings that capture and hold buyer attention.</p>"
+        },
+        "es": {
+          "text": "<p>Los listados de propiedades promedio obtienen 20-50 vistas. Los listados optimizados obtienen 200-500+ vistas Y generan 3-5x más solicitudes de visita. ¿La diferencia? Presentación profesional, contenido estratégico y atención al detalle.</p><p>Esta guía te muestra exactamente cómo crear listados que capturan y mantienen la atención del comprador.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "photography",
+      "title": {
+        "nl": "Professionele fotografie",
+        "en": "Professional Photography",
+        "es": "Fotografía profesional"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Waarom fotografie het belangrijkst is</h3><p>95% van kopers beoordeelt een woning binnen 3 seconden op basis van de eerste foto. Slechte foto's = geen viewings, ongeacht hoe goed de woning is.</p><h3>Photo best practices</h3><p><strong>Essentials (minimaal):</strong></p><ul><li><strong>15-25 professional photos</strong> voor standaard woningen</li><li><strong>25-40 photos</strong> voor luxury properties (>€500K)</li><li>Wide-angle lens (16-24mm) voor ruimtelijk gevoel</li><li>Natural lighting + HDR voor balanced exposure</li><li>Shot tijdens golden hours (ochtend/avond licht)</li></ul><p><strong>Must-have shots (in deze volgorde):</strong></p><ol><li><strong>Hero shot:</strong> Beste exterior angle (curb appeal)</li><li><strong>Living room:</strong> Wide shot, meerdere hoeken</li><li><strong>Kitchen:</strong> Meerdere angles, details van appliances</li><li><strong>Master bedroom:</strong> Wide + detail shots</li><li><strong>Bathrooms:</strong> Minimaal 2 shots elk</li><li><strong>Additional bedrooms:</strong> Minimaal 1-2 shots elk</li><li><strong>Outdoor spaces:</strong> Garden, terrace, pool (indien van toepassing)</li><li><strong>Views:</strong> Indien exceptional (beach, mountains, city)</li><li><strong>Unique features:</strong> Wine cellar, home office, gym, etc.</li><li><strong>Neighborhood:</strong> 2-3 context shots (street, amenities)</li></ol><p><strong>Photography DON'Ts:</strong></p><ul><li>❌ Smartphone photos (unless professional-grade editing)</li><li>❌ Cluttered rooms (stage/clean eerst)</li><li>❌ Dark/underexposed shots</li><li>❌ Verticals not corrected (leaning walls)</li><li>❌ Personal items visible (family photos, clutter)</li><li>❌ Overuse van fisheye (distortion misleads)</li></ul><h3>Advanced: Video tours</h3><p>Listings with video krijgen 400% meer inquiries:</p><ul><li><strong>Walkthrough video:</strong> 2-3 minuten smooth tour</li><li><strong>Drone footage:</strong> Voor properties met land/views</li><li><strong>Neighborhood tour:</strong> Show nearby amenities</li><li><strong>Agent intro:</strong> Personal touch, build trust</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Why Photography Matters Most</h3><p>95% of buyers judge a property within 3 seconds based on the first photo. Bad photos = no viewings, regardless of how good the property is.</p><h3>Photo Best Practices</h3><p><strong>Essentials (minimum):</strong></p><ul><li><strong>15-25 professional photos</strong> for standard properties</li><li><strong>25-40 photos</strong> for luxury properties (>€500K)</li><li>Wide-angle lens (16-24mm) for spatial feel</li><li>Natural lighting + HDR for balanced exposure</li><li>Shot during golden hours (morning/evening light)</li></ul><p><strong>Must-have shots (in this order):</strong></p><ol><li><strong>Hero shot:</strong> Best exterior angle (curb appeal)</li><li><strong>Living room:</strong> Wide shot, multiple angles</li><li><strong>Kitchen:</strong> Multiple angles, appliance details</li><li><strong>Master bedroom:</strong> Wide + detail shots</li><li><strong>Bathrooms:</strong> At least 2 shots each</li><li><strong>Additional bedrooms:</strong> At least 1-2 shots each</li><li><strong>Outdoor spaces:</strong> Garden, terrace, pool (if applicable)</li><li><strong>Views:</strong> If exceptional (beach, mountains, city)</li><li><strong>Unique features:</strong> Wine cellar, home office, gym, etc.</li><li><strong>Neighborhood:</strong> 2-3 context shots (street, amenities)</li></ol><p><strong>Photography DON'Ts:</strong></p><ul><li>❌ Smartphone photos (unless professional-grade editing)</li><li>❌ Cluttered rooms (stage/clean first)</li><li>❌ Dark/underexposed shots</li><li>❌ Verticals not corrected (leaning walls)</li><li>❌ Personal items visible (family photos, clutter)</li><li>❌ Overuse of fisheye (distortion misleads)</li></ul><h3>Advanced: Video Tours</h3><p>Listings with video get 400% more inquiries:</p><ul><li><strong>Walkthrough video:</strong> 2-3 minute smooth tour</li><li><strong>Drone footage:</strong> For properties with land/views</li><li><strong>Neighborhood tour:</strong> Show nearby amenities</li><li><strong>Agent intro:</strong> Personal touch, build trust</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Por qué la fotografía importa más</h3><p>95% de los compradores juzgan una propiedad en 3 segundos basándose en la primera foto. Malas fotos = sin visitas, sin importar qué tan buena sea la propiedad.</p><h3>Mejores prácticas de fotografía</h3><p><strong>Esenciales (mínimo):</strong></p><ul><li><strong>15-25 fotos profesionales</strong> para propiedades estándar</li><li><strong>25-40 fotos</strong> para propiedades de lujo (>€500K)</li><li>Lente gran angular (16-24mm) para sensación espacial</li><li>Iluminación natural + HDR para exposición equilibrada</li><li>Toma durante horas doradas (luz de mañana/tarde)</li></ul><p><strong>Tomas imprescindibles (en este orden):</strong></p><ol><li><strong>Toma hero:</strong> Mejor ángulo exterior (atractivo de entrada)</li><li><strong>Sala de estar:</strong> Toma amplia, múltiples ángulos</li><li><strong>Cocina:</strong> Múltiples ángulos, detalles de electrodomésticos</li><li><strong>Dormitorio principal:</strong> Tomas amplias + detalles</li><li><strong>Baños:</strong> Al menos 2 tomas cada uno</li><li><strong>Dormitorios adicionales:</strong> Al menos 1-2 tomas cada uno</li><li><strong>Espacios exteriores:</strong> Jardín, terraza, piscina (si aplica)</li><li><strong>Vistas:</strong> Si son excepcionales (playa, montañas, ciudad)</li><li><strong>Características únicas:</strong> Bodega, oficina en casa, gimnasio, etc.</li><li><strong>Vecindario:</strong> 2-3 tomas de contexto (calle, servicios)</li></ol><p><strong>Lo que NO hacer en fotografía:</strong></p><ul><li>❌ Fotos de smartphone (a menos que edición de grado profesional)</li><li>❌ Habitaciones desordenadas (escenificar/limpiar primero)</li><li>❌ Tomas oscuras/subexpuestas</li><li>❌ Verticales no corregidas (paredes inclinadas)</li><li>❌ Artículos personales visibles (fotos familiares, desorden)</li><li>❌ Uso excesivo de ojo de pez (distorsión engaña)</li></ul><h3>Avanzado: tours en video</h3><p>Los listados con video obtienen 400% más consultas:</p><ul><li><strong>Video de recorrido:</strong> Tour suave de 2-3 minutos</li><li><strong>Imágenes de drone:</strong> Para propiedades con terreno/vistas</li><li><strong>Tour de vecindario:</strong> Mostrar servicios cercanos</li><li><strong>Intro del agente:</strong> Toque personal, construir confianza</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "description",
+      "title": {
+        "nl": "Overtuigende property descriptions",
+        "en": "Compelling Property Descriptions",
+        "es": "Descripciones convincentes de propiedades"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>Description structure die converteert</h3><p><strong>1. Opening hook (eerste zin):</strong></p><p>Grijp aandacht met het sterkste unique selling point:</p><ul><li>✅ \"Breathtaking panoramic sea views from every room in this stunning beachfront villa\"</li><li>✅ \"Rare opportunity: Completely renovated historic townhouse in the heart of old town\"</li><li>❌ \"This is a nice 3-bedroom house for sale\" (boring, generic)</li></ul><p><strong>2. Key features (2-3 zinnen):</strong></p><p>Highlight de top 3-5 features buyers zoeken:</p><ul><li>Bedrooms/bathrooms + sqm</li><li>Recent renovations/upgrades</li><li>Standout amenities (pool, garden, garage)</li><li>Location advantages</li></ul><p><strong>3. Lifestyle & benefits (2-3 zinnen):</strong></p><p>Paint het picture van living hier:</p><ul><li>\"Wake up to sunrise over Mediterranean while enjoying coffee on your private terrace\"</li><li>\"Walking distance to international schools, shops, and restaurants\"</li><li>\"Perfect for families seeking tranquil coastal lifestyle with modern amenities\"</li></ul><p><strong>4. Specific details (bulletpoints):</strong></p><ul><li>Square meters (built + plot)</li><li>Year built + renovations</li><li>Energy rating</li><li>Orientation (important voor sun/views)</li><li>Community fees/IBI taxes</li></ul><p><strong>5. Call-to-action:</strong></p><ul><li>\"Schedule your private viewing today\"</li><li>\"Contact us for detailed floor plans and additional photos\"</li><li>\"Don't miss this rare opportunity - viewings available this week\"</li></ul><h3>Power words die verkopen</h3><p><strong>Voor luxury properties:</strong></p><ul><li>Exclusive, exceptional, stunning, breathtaking</li><li>Prestigious, elegant, sophisticated</li><li>Immaculate, impeccable, meticulously</li></ul><p><strong>Voor family homes:</strong></p><ul><li>Spacious, comfortable, bright, welcoming</li><li>Safe, quiet, family-friendly</li><li>Practical, functional, well-maintained</li></ul><p><strong>Voor investment properties:</strong></p><ul><li>High-yield, rental-ready, turnkey</li><li>Prime location, growing area</li><li>Rental guaranteed, strong ROI potential</li></ul><h3>Common description mistakes</h3><ul><li>❌ All caps: \"AMAZING PROPERTY!!!\"</li><li>❌ Te lang: >300 woorden (niemand leest het)</li><li>❌ Te kort: <100 woorden (onvoldoende info)</li><li>❌ Overuse superlatives zonder facts</li><li>❌ Negative language: \"Needs some work\" (frame positive: \"Opportunity to customize\")</li><li>❌ Spelling/grammar errors (zeer unprofessional)</li></ul>"
+        },
+        "en": {
+          "text": "<h3>Description Structure That Converts</h3><p><strong>1. Opening Hook (First sentence):</strong></p><p>Grab attention with strongest unique selling point:</p><ul><li>✅ \"Breathtaking panoramic sea views from every room in this stunning beachfront villa\"</li><li>✅ \"Rare opportunity: Completely renovated historic townhouse in the heart of old town\"</li><li>❌ \"This is a nice 3-bedroom house for sale\" (boring, generic)</li></ul><p><strong>2. Key Features (2-3 sentences):</strong></p><p>Highlight the top 3-5 features buyers seek:</p><ul><li>Bedrooms/bathrooms + sqm</li><li>Recent renovations/upgrades</li><li>Standout amenities (pool, garden, garage)</li><li>Location advantages</li></ul><p><strong>3. Lifestyle & Benefits (2-3 sentences):</strong></p><p>Paint the picture of living here:</p><ul><li>\"Wake up to sunrise over Mediterranean while enjoying coffee on your private terrace\"</li><li>\"Walking distance to international schools, shops, and restaurants\"</li><li>\"Perfect for families seeking tranquil coastal lifestyle with modern amenities\"</li></ul><p><strong>4. Specific Details (bulletpoints):</strong></p><ul><li>Square meters (built + plot)</li><li>Year built + renovations</li><li>Energy rating</li><li>Orientation (important for sun/views)</li><li>Community fees/IBI taxes</li></ul><p><strong>5. Call-to-Action:</strong></p><ul><li>\"Schedule your private viewing today\"</li><li>\"Contact us for detailed floor plans and additional photos\"</li><li>\"Don't miss this rare opportunity - viewings available this week\"</li></ul><h3>Power Words That Sell</h3><p><strong>For Luxury Properties:</strong></p><ul><li>Exclusive, exceptional, stunning, breathtaking</li><li>Prestigious, elegant, sophisticated</li><li>Immaculate, impeccable, meticulously</li></ul><p><strong>For Family Homes:</strong></p><ul><li>Spacious, comfortable, bright, welcoming</li><li>Safe, quiet, family-friendly</li><li>Practical, functional, well-maintained</li></ul><p><strong>For Investment Properties:</strong></p><ul><li>High-yield, rental-ready, turnkey</li><li>Prime location, growing area</li><li>Rental guaranteed, strong ROI potential</li></ul><h3>Common Description Mistakes</h3><ul><li>❌ All caps: \"AMAZING PROPERTY!!!\"</li><li>❌ Too long: >300 words (nobody reads it)</li><li>❌ Too short: <100 words (insufficient info)</li><li>❌ Overuse superlatives without facts</li><li>❌ Negative language: \"Needs some work\" (frame positive: \"Opportunity to customize\")</li><li>❌ Spelling/grammar errors (very unprofessional)</li></ul>"
+        },
+        "es": {
+          "text": "<h3>Estructura de descripción que convierte</h3><p><strong>1. Gancho de apertura (primera oración):</strong></p><p>Capta atención con el punto de venta único más fuerte:</p><ul><li>✅ \"Impresionantes vistas panorámicas al mar desde cada habitación en esta impresionante villa frente al mar\"</li><li>✅ \"Oportunidad única: Casa histórica completamente renovada en el corazón del casco antiguo\"</li><li>❌ \"Esta es una bonita casa de 3 habitaciones en venta\" (aburrido, genérico)</li></ul><p><strong>2. Características clave (2-3 oraciones):</strong></p><p>Destaca las 3-5 características principales que buscan los compradores:</p><ul><li>Habitaciones/baños + m²</li><li>Renovaciones/mejoras recientes</li><li>Comodidades destacadas (piscina, jardín, garaje)</li><li>Ventajas de ubicación</li></ul><p><strong>3. Estilo de vida y beneficios (2-3 oraciones):</strong></p><p>Pinta la imagen de vivir aquí:</p><ul><li>\"Despierta con el amanecer sobre el Mediterráneo mientras disfrutas café en tu terraza privada\"</li><li>\"A distancia caminable de escuelas internacionales, tiendas y restaurantes\"</li><li>\"Perfecto para familias que buscan estilo de vida costero tranquilo con comodidades modernas\"</li></ul><p><strong>4. Detalles específicos (viñetas):</strong></p><ul><li>Metros cuadrados (construidos + parcela)</li><li>Año de construcción + renovaciones</li><li>Calificación energética</li><li>Orientación (importante para sol/vistas)</li><li>Tarifas de comunidad/impuestos IBI</li></ul><p><strong>5. Llamado a la acción:</strong></p><ul><li>\"Programa tu visita privada hoy\"</li><li>\"Contáctanos para planos detallados y fotos adicionales\"</li><li>\"No pierdas esta oportunidad única - visitas disponibles esta semana\"</li></ul><h3>Palabras poderosas que venden</h3><p><strong>Para propiedades de lujo:</strong></p><ul><li>Exclusivo, excepcional, impresionante, impactante</li><li>Prestigioso, elegante, sofisticado</li><li>Inmaculado, impecable, meticulosamente</li></ul><p><strong>Para viviendas familiares:</strong></p><ul><li>Espacioso, cómodo, luminoso, acogedor</li><li>Seguro, tranquilo, apto para familias</li><li>Práctico, funcional, bien mantenido</li></ul><p><strong>Para propiedades de inversión:</strong></p><ul><li>Alto rendimiento, listo para alquiler, llave en mano</li><li>Ubicación privilegiada, área en crecimiento</li><li>Alquiler garantizado, fuerte potencial de ROI</li></ul><h3>Errores comunes en descripciones</h3><ul><li>❌ Todo en mayúsculas: \"PROPIEDAD INCREÍBLE!!!\"</li><li>❌ Demasiado largo: >300 palabras (nadie lo lee)</li><li>❌ Demasiado corto: <100 palabras (info insuficiente)</li><li>❌ Uso excesivo de superlativos sin hechos</li><li>❌ Lenguaje negativo: \"Necesita algo de trabajo\" (encuadrar positivo: \"Oportunidad para personalizar\")</li><li>❌ Errores de ortografía/gramática (muy poco profesional)</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "pricing-strategy",
+      "title": {
+        "nl": "Pricing strategie",
+        "en": "Pricing Strategy",
+        "es": "Estrategia de precios"
+      },
+      "content": {
+        "nl": {
+          "text": "<h3>De kunst van strategic pricing</h3><p><strong>Market analysis (essentieel):</strong></p><ul><li>Comparable properties sold laatste 6 maanden</li><li>Current active listings in area</li><li>Price per square meter trends</li><li>Days on market average</li><li>Seasonality factors</li></ul><p><strong>Pricing strategies:</strong></p><p><strong>1. Competitive pricing (at market):</strong></p><ul><li><strong>When:</strong> Standard properties, balanced market</li><li><strong>Approach:</strong> Price binnen 5% van recent comparables</li><li><strong>Result:</strong> Steady interest, average time to sell</li></ul><p><strong>2. Aggressive pricing (below market):</strong></p><ul><li><strong>When:</strong> Need quick sale, hot market, multiple offers strategy</li><li><strong>Approach:</strong> Price 5-10% below comparables</li><li><strong>Result:</strong> High viewing volume, potential bidding war</li></ul><p><strong>3. Premium pricing (above market):</strong></p><ul><li><strong>When:</strong> Unique features, luxury segment, niet urgent</li><li><strong>Approach:</strong> Price 5-15% above comparables</li><li><strong>Result:</strong> Selective buyers, longer time to sell, maar higher final price</li></ul><p><strong>4. Psychological pricing:</strong></p><ul><li>€299,000 in plaats van €300,000 (feels significantly less)</li><li>€495,000 in plaats van €500,000</li><li>Avoid exact rounds voor luxury (€1,000,000 → €975,000)</li></ul><h3>Price adjustment protocol</h3><p><strong>Red flags voor overpricing:</strong></p><ul><li>Low viewing requests (<5 in first 2 weeks)</li><li>Views maar geen viewing requests</li><li>Feedback: \"Price too high\"</li><li>Competitor comparables selling while yours sits</li></ul><p><strong>When to adjust:</strong></p><ul><li><strong>Week 4-6:</strong> First reduction indien no serious interest</li><li><strong>Reduction amount:</strong> 5-10% meaningful enough to attract attention</li><li><strong>Communication:</strong> \"Price reduced!\" prominently displayed</li><li><strong>Relaunch:</strong> Treat zoals new listing (new photos, updated description)</li></ul><p><strong>Avoid:</strong> Small frequent drops (€5K every week) - shows desperation</p>"
+        },
+        "en": {
+          "text": "<h3>The Art of Strategic Pricing</h3><p><strong>Market Analysis (essential):</strong></p><ul><li>Comparable properties sold last 6 months</li><li>Current active listings in area</li><li>Price per square meter trends</li><li>Days on market average</li><li>Seasonality factors</li></ul><p><strong>Pricing Strategies:</strong></p><p><strong>1. Competitive Pricing (at market):</strong></p><ul><li><strong>When:</strong> Standard properties, balanced market</li><li><strong>Approach:</strong> Price within 5% of recent comparables</li><li><strong>Result:</strong> Steady interest, average time to sell</li></ul><p><strong>2. Aggressive Pricing (below market):</strong></p><ul><li><strong>When:</strong> Need quick sale, hot market, multiple offers strategy</li><li><strong>Approach:</strong> Price 5-10% below comparables</li><li><strong>Result:</strong> High viewing volume, potential bidding war</li></ul><p><strong>3. Premium Pricing (above market):</strong></p><ul><li><strong>When:</strong> Unique features, luxury segment, not urgent</li><li><strong>Approach:</strong> Price 5-15% above comparables</li><li><strong>Result:</strong> Selective buyers, longer time to sell, but higher final price</li></ul><p><strong>4. Psychological Pricing:</strong></p><ul><li>€299,000 instead of €300,000 (feels significantly less)</li><li>€495,000 instead of €500,000</li><li>Avoid exact rounds for luxury (€1,000,000 → €975,000)</li></ul><h3>Price Adjustment Protocol</h3><p><strong>Red flags for overpricing:</strong></p><ul><li>Low viewing requests (<5 in first 2 weeks)</li><li>Views but no viewing requests</li><li>Feedback: \"Price too high\"</li><li>Competitor comparables selling while yours sits</li></ul><p><strong>When to Adjust:</strong></p><ul><li><strong>Week 4-6:</strong> First reduction if no serious interest</li><li><strong>Reduction amount:</strong> 5-10% meaningful enough to attract attention</li><li><strong>Communication:</strong> \"Price reduced!\" prominently displayed</li><li><strong>Relaunch:</strong> Treat as new listing (new photos, updated description)</li></ul><p><strong>Avoid:</strong> Small frequent drops (€5K every week) - shows desperation</p>"
+        },
+        "es": {
+          "text": "<h3>El arte de la fijación estratégica de precios</h3><p><strong>Análisis de mercado (esencial):</strong></p><ul><li>Propiedades comparables vendidas últimos 6 meses</li><li>Listados activos actuales en área</li><li>Tendencias de precio por metro cuadrado</li><li>Promedio de días en mercado</li><li>Factores de estacionalidad</li></ul><p><strong>Estrategias de precios:</strong></p><p><strong>1. Precios competitivos (al mercado):</strong></p><ul><li><strong>Cuándo:</strong> Propiedades estándar, mercado equilibrado</li><li><strong>Enfoque:</strong> Precio dentro del 5% de comparables recientes</li><li><strong>Resultado:</strong> Interés constante, tiempo promedio para vender</li></ul><p><strong>2. Precios agresivos (debajo del mercado):</strong></p><ul><li><strong>Cuándo:</strong> Necesidad de venta rápida, mercado caliente, estrategia de múltiples ofertas</li><li><strong>Enfoque:</strong> Precio 5-10% debajo de comparables</li><li><strong>Resultado:</strong> Alto volumen de visitas, posible guerra de ofertas</li></ul><p><strong>3. Precios premium (arriba del mercado):</strong></p><ul><li><strong>Cuándo:</strong> Características únicas, segmento de lujo, no urgente</li><li><strong>Enfoque:</strong> Precio 5-15% arriba de comparables</li><li><strong>Resultado:</strong> Compradores selectivos, más tiempo para vender, pero precio final más alto</li></ul><p><strong>4. Precios psicológicos:</strong></p><ul><li>€299,000 en lugar de €300,000 (se siente significativamente menos)</li><li>€495,000 en lugar de €500,000</li><li>Evitar redondeos exactos para lujo (€1,000,000 → €975,000)</li></ul><h3>Protocolo de ajuste de precios</h3><p><strong>Señales de alerta por sobrevaluación:</strong></p><ul><li>Solicitudes de visita bajas (<5 en primeras 2 semanas)</li><li>Vistas pero sin solicitudes de visita</li><li>Retroalimentación: \"Precio demasiado alto\"</li><li>Comparables de competencia vendiendo mientras el tuyo se queda</li></ul><p><strong>Cuándo ajustar:</strong></p><ul><li><strong>Semana 4-6:</strong> Primera reducción si no hay interés serio</li><li><strong>Cantidad de reducción:</strong> 5-10% suficientemente significativo para atraer atención</li><li><strong>Comunicación:</strong> \"¡Precio reducido!\" mostrado prominentemente</li><li><strong>Relanzamiento:</strong> Tratar como nuevo listado (fotos nuevas, descripción actualizada)</li></ul><p><strong>Evitar:</strong> Pequeñas caídas frecuentes (€5K cada semana) - muestra desesperación</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "listing-checklist",
+      "variant": "info",
+      "title": {
+        "nl": "Pre-publication checklist",
+        "en": "Pre-Publication Checklist",
+        "es": "Lista de verificación previa a publicación"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor je publiceert, check:</strong></p><p><strong>Photos:</strong></p><ul><li>☐ 15-25+ professional photos</li><li>☐ Hero shot is compelling</li><li>☐ All rooms covered</li><li>☐ Bright, well-lit, clean</li><li>☐ No personal items visible</li></ul><p><strong>Description:</strong></p><ul><li>☐ Strong opening hook</li><li>☐ Key features highlighted</li><li>☐ 150-250 woorden</li><li>☐ No spelling/grammar errors</li><li>☐ Clear call-to-action</li></ul><p><strong>Details:</strong></p><ul><li>☐ Accurate sqm (built + plot)</li><li>☐ Correct bed/bath count</li><li>☐ Amenities listed</li><li>☐ Energy rating included</li><li>☐ Community fees specified</li></ul><p><strong>Price & Strategy:</strong></p><ul><li>☐ Market analysis completed</li><li>☐ Comparable properties reviewed</li><li>☐ Pricing strategy selected</li><li>☐ Psychological pricing applied</li></ul><p><strong>Distribution:</strong></p><ul><li>☐ Published on all relevant portals</li><li>☐ Shared on social media</li><li>☐ Sent to relevant buyers in CRM</li><li>☐ AI matching run voor buyers</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>Before you publish, check:</strong></p><p><strong>Photos:</strong></p><ul><li>☐ 15-25+ professional photos</li><li>☐ Hero shot is compelling</li><li>☐ All rooms covered</li><li>☐ Bright, well-lit, clean</li><li>☐ No personal items visible</li></ul><p><strong>Description:</strong></p><ul><li>☐ Strong opening hook</li><li>☐ Key features highlighted</li><li>☐ 150-250 words</li><li>☐ No spelling/grammar errors</li><li>☐ Clear call-to-action</li></ul><p><strong>Details:</strong></p><ul><li>☐ Accurate sqm (built + plot)</li><li>☐ Correct bed/bath count</li><li>☐ Amenities listed</li><li>☐ Energy rating included</li><li>☐ Community fees specified</li></ul><p><strong>Price & Strategy:</strong></p><ul><li>☐ Market analysis completed</li><li>☐ Comparable properties reviewed</li><li>☐ Pricing strategy selected</li><li>☐ Psychological pricing applied</li></ul><p><strong>Distribution:</strong></p><ul><li>☐ Published on all relevant portals</li><li>☐ Shared on social media</li><li>☐ Sent to relevant buyers in CRM</li><li>☐ AI matching run for buyers</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Antes de publicar, verifica:</strong></p><p><strong>Fotos:</strong></p><ul><li>☐ 15-25+ fotos profesionales</li><li>☐ Toma hero es convincente</li><li>☐ Todas las habitaciones cubiertas</li><li>☐ Brillantes, bien iluminadas, limpias</li><li>☐ Sin artículos personales visibles</li></ul><p><strong>Descripción:</strong></p><ul><li>☐ Gancho de apertura fuerte</li><li>☐ Características clave destacadas</li><li>☐ 150-250 palabras</li><li>☐ Sin errores de ortografía/gramática</li><li>☐ Llamado a la acción claro</li></ul><p><strong>Detalles:</strong></p><ul><li>☐ M² precisos (construidos + parcela)</li><li>☐ Conteo correcto de habitaciones/baños</li><li>☐ Comodidades listadas</li><li>☐ Calificación energética incluida</li><li>☐ Tarifas de comunidad especificadas</li></ul><p><strong>Precio y estrategia:</strong></p><ul><li>☐ Análisis de mercado completado</li><li>☐ Propiedades comparables revisadas</li><li>☐ Estrategia de precios seleccionada</li><li>☐ Precios psicológicos aplicados</li></ul><p><strong>Distribución:</strong></p><ul><li>☐ Publicado en todos los portales relevantes</li><li>☐ Compartido en redes sociales</li><li>☐ Enviado a compradores relevantes en CRM</li><li>☐ Matching IA ejecutado para compradores</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "adding-properties-guide",
+    "property-media-management",
+    "property-status-workflow",
+    "ai-property-matching-advanced"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Moet ik altijd professional fotograaf gebruiken?",
+        "en": "Should I always use a professional photographer?",
+        "es": "¿Debo usar siempre un fotógrafo profesional?"
+      },
+      "answer": {
+        "nl": "YES voor properties >€200K - ROI is immens (€200-400 investering → 3-5x meer viewing requests). Voor budget properties (<€150K), high-quality smartphone photos MET editing kunnen volstaan, maar professional is altijd better. Remember: 95% van kopers beslissen op basis van eerste foto. Slechte photos = geen viewings.",
+        "en": "YES for properties >€200K - ROI is immense (€200-400 investment → 3-5x more viewing requests). For budget properties (<€150K), high-quality smartphone photos WITH editing can suffice, but professional is always better. Remember: 95% of buyers decide based on first photo. Bad photos = no viewings.",
+        "es": "SÍ para propiedades >€200K - ROI es inmenso (inversión de €200-400 → 3-5x más solicitudes de visita). Para propiedades económicas (<€150K), fotos de smartphone de alta calidad CON edición pueden ser suficientes, pero profesional siempre es mejor. Recuerda: 95% de compradores deciden basándose en primera foto. Malas fotos = sin visitas."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe weet ik of mijn listing price te hoog is?",
+        "en": "How do I know if my listing price is too high?",
+        "es": "¿Cómo sé si mi precio de listado es demasiado alto?"
+      },
+      "answer": {
+        "nl": "Key indicators: (1) <5 viewing requests in eerste 2 weken, (2) Many views maar geen contact, (3) Viewers feedback \"overpriced\", (4) Comparable properties selling terwijl jouw niet. Solution: Run fresh market analysis, compare actief met recent sold properties, en overweeg 5-10% price reduction. Snelle correctie is beter dan months van stagnatie.",
+        "en": "Key indicators: (1) <5 viewing requests in first 2 weeks, (2) Many views but no contact, (3) Viewers feedback \"overpriced\", (4) Comparable properties selling while yours isn't. Solution: Run fresh market analysis, compare active with recent sold properties, and consider 5-10% price reduction. Quick correction is better than months of stagnation.",
+        "es": "Indicadores clave: (1) <5 solicitudes de visita en primeras 2 semanas, (2) Muchas vistas pero sin contacto, (3) Retroalimentación de espectadores \"sobrevalorado\", (4) Propiedades comparables vendiendo mientras la tuya no. Solución: Ejecuta análisis de mercado fresco, compara activo con propiedades vendidas recientes, y considera reducción de precio 5-10%. Corrección rápida es mejor que meses de estancamiento."
+      }
+    }
+  ]
+}

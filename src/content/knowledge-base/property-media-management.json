@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "id": "property-media-management",
+    "version": "1.0.0",
+    "publishDate": "2024-10-23",
+    "updatedAt": "2024-10-23T14:00:00Z",
+    "authorId": "sofia-lopez",
+    "category": "properties",
+    "difficulty": "beginner",
+    "tags": ["properties", "media", "photos", "videos", "virtual-tours"],
+    "featured": true,
+    "readingTime": 9,
+    "videoIncluded": true,
+    "aiGenerated": false
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
+    "keywords": ["property photos", "property media", "photo management", "virtual tours", "property videos"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Property media management: foto's, video's en virtual tours",
+      "en": "Property Media Management: Photos, Videos and Virtual Tours",
+      "es": "Gestión de medios de propiedades: fotos, videos y tours virtuales"
+    },
+    "description": {
+      "nl": "Complete gids voor het uploaden, organiseren en optimaliseren van property media. Leer best practices voor professional property presentations.",
+      "en": "Complete guide for uploading, organizing and optimizing property media. Learn best practices for professional property presentations.",
+      "es": "Guía completa para subir, organizar y optimizar medios de propiedades. Aprende mejores prácticas para presentaciones profesionales de propiedades."
+    },
+    "icon": "photo_library"
+  },
+
+  "sections": [
+    {
+      "type": "callout",
+      "id": "media-importance",
+      "variant": "info",
+      "title": {
+        "nl": "Waarom goede media essentieel is",
+        "en": "Why good media is essential",
+        "es": "Por qué los buenos medios son esenciales"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Properties met professionele foto's verkopen <strong>32% sneller</strong> en behalen <strong>47% meer bezichtigingsaanvragen</strong> dan properties met basic foto's.</p><p><strong>Impact van goede media:</strong></p><ul><li>Eerste indruk: 90% van kopers beslist binnen 10 seconden of ze verder kijken</li><li>Verkoop snelheid: Properties met 20+ foto's verkopen 2x sneller</li><li>Prijs realisatie: Betere presentatie = betere onderhandelingspositie</li><li>Portal ranking: Idealista en Fotocasa ranken properties met meer media hoger</li></ul>"
+        },
+        "en": {
+          "text": "<p>Properties with professional photos sell <strong>32% faster</strong> and achieve <strong>47% more viewing requests</strong> than properties with basic photos.</p><p><strong>Impact of good media:</strong></p><ul><li>First impression: 90% of buyers decide within 10 seconds whether to look further</li><li>Sales speed: Properties with 20+ photos sell 2x faster</li><li>Price realization: Better presentation = better negotiation position</li><li>Portal ranking: Idealista and Fotocasa rank properties with more media higher</li></ul>"
+        },
+        "es": {
+          "text": "<p>Las propiedades con fotos profesionales se venden <strong>32% más rápido</strong> y logran <strong>47% más solicitudes de visita</strong> que las propiedades con fotos básicas.</p><p><strong>Impacto de los buenos medios:</strong></p><ul><li>Primera impresión: 90% de los compradores decide en 10 segundos si seguir mirando</li><li>Velocidad de venta: Propiedades con 20+ fotos se venden 2x más rápido</li><li>Realización de precio: Mejor presentación = mejor posición de negociación</li><li>Ranking de portales: Idealista y Fotocasa clasifican propiedades con más medios más alto</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "video",
+      "id": "media-management-tutorial",
+      "title": {
+        "nl": "Video tutorial: media management",
+        "en": "Video tutorial: media management",
+        "es": "Video tutorial: gestión de medios"
+      },
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=450&fit=crop",
+      "caption": {
+        "nl": "9-minuten complete guide voor property media management",
+        "en": "9-minute complete guide for property media management",
+        "es": "Guía completa de 9 minutos para gestión de medios de propiedades"
+      },
+      "duration": "9:20"
+    },
+
+    {
+      "type": "steps",
+      "id": "upload-photos",
+      "title": {
+        "nl": "Foto's uploaden en organiseren",
+        "en": "Uploading and organizing photos",
+        "es": "Subir y organizar fotos"
+      },
+      "steps": [
+        {
+          "title": {
+            "nl": "Voorbereiding: foto's optimaliseren",
+            "en": "Preparation: optimizing photos",
+            "es": "Preparación: optimizar fotos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Technische specificaties:</strong></p><ul><li><strong>Resolutie:</strong> Minimaal 1200x800px voor hoofdfoto, 800x600px voor overige</li><li><strong>Formaat:</strong> JPG, PNG, of WEBP</li><li><strong>Bestandsgrootte:</strong> Max 10MB per foto (maar 2-5MB is optimaal)</li><li><strong>Aspect ratio:</strong> 4:3 of 16:9 voor beste weergave</li></ul><p><strong>Voor het uploaden:</strong></p><ol><li>Hernoem foto's logisch (bijv. woonkamer-01.jpg, keuken-01.jpg)</li><li>Sorteer foto's in volgorde waarin je ze wilt tonen</li><li>Verwijder slechte of dubbele foto's</li><li>Check belichting en scherpte</li></ol><p><strong>Tesoro's automatische optimalisatie:</strong></p><ul><li>Cloudflare hosting comprimeert foto's zonder kwaliteitsverlies</li><li>Automatische responsive sizing voor verschillende devices</li><li>CDN zorgt voor snelle loading wereldwijd</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Technical specifications:</strong></p><ul><li><strong>Resolution:</strong> Minimum 1200x800px for main photo, 800x600px for others</li><li><strong>Format:</strong> JPG, PNG, or WEBP</li><li><strong>File size:</strong> Max 10MB per photo (but 2-5MB is optimal)</li><li><strong>Aspect ratio:</strong> 4:3 or 16:9 for best display</li></ul><p><strong>Before uploading:</strong></p><ol><li>Rename photos logically (e.g. living-room-01.jpg, kitchen-01.jpg)</li><li>Sort photos in the order you want to show them</li><li>Remove bad or duplicate photos</li><li>Check lighting and sharpness</li></ol><p><strong>Tesoro's automatic optimization:</strong></p><ul><li>Cloudflare hosting compresses photos without quality loss</li><li>Automatic responsive sizing for different devices</li><li>CDN ensures fast loading worldwide</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Especificaciones técnicas:</strong></p><ul><li><strong>Resolución:</strong> Mínimo 1200x800px para foto principal, 800x600px para otras</li><li><strong>Formato:</strong> JPG, PNG, o WEBP</li><li><strong>Tamaño de archivo:</strong> Máx 10MB por foto (pero 2-5MB es óptimo)</li><li><strong>Relación de aspecto:</strong> 4:3 o 16:9 para mejor visualización</li></ul><p><strong>Antes de subir:</strong></p><ol><li>Renombra fotos lógicamente (ej. sala-estar-01.jpg, cocina-01.jpg)</li><li>Ordena fotos en el orden en que deseas mostrarlas</li><li>Elimina fotos malas o duplicadas</li><li>Verifica iluminación y nitidez</li></ol><p><strong>Optimización automática de Tesoro:</strong></p><ul><li>El alojamiento en Cloudflare comprime fotos sin pérdida de calidad</li><li>Dimensionamiento responsive automático para diferentes dispositivos</li><li>CDN asegura carga rápida en todo el mundo</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Upload hoofdfoto",
+            "en": "Upload main photo",
+            "es": "Subir foto principal"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Waarom de hoofdfoto belangrijk is:</strong> Dit is de eerste foto die kopers zien in zoekresultaten op portals en in de client portal. Een goede hoofdfoto bepaalt of iemand doorklikt.</p><p><strong>Upload proces:</strong></p><ol><li>Open de property in Tesoro CRM</li><li>Ga naar de \"Media\" tab</li><li>Klik \"Upload Hoofdfoto\" of sleep je foto naar het upload gebied</li><li>Wacht tot de upload compleet is (groene vinkje)</li><li>Preview verschijnt direct</li></ol><p><strong>Best practices voor hoofdfoto:</strong></p><ul><li><strong>Exterior shot:</strong> Toon de complete voorgevel bij daglicht</li><li><strong>Orientation:</strong> Altijd landscape (horizontaal), nooit portrait</li><li><strong>Context:</strong> Toon een deel van de omgeving (straat, tuin)</li><li><strong>Weer:</strong> Bij voorkeur blauwe lucht, geen regen</li><li><strong>Geen overlays:</strong> Geen tekst, watermerken, of prijzen (Tesoro doet dit automatisch)</li></ul><p><strong>Speciale gevallen:</strong></p><ul><li><strong>Appartement:</strong> Gebouw exterior of mooi interior shot</li><li><strong>Land:</strong> Overzicht met context van locatie</li><li><strong>Commercial:</strong> Prominent facade of entree</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Why the main photo is important:</strong> This is the first photo buyers see in search results on portals and in the client portal. A good main photo determines whether someone clicks through.</p><p><strong>Upload process:</strong></p><ol><li>Open the property in Tesoro CRM</li><li>Go to the \"Media\" tab</li><li>Click \"Upload Main Photo\" or drag your photo to the upload area</li><li>Wait for the upload to complete (green checkmark)</li><li>Preview appears immediately</li></ol><p><strong>Best practices for main photo:</strong></p><ul><li><strong>Exterior shot:</strong> Show the complete front facade in daylight</li><li><strong>Orientation:</strong> Always landscape (horizontal), never portrait</li><li><strong>Context:</strong> Show part of the surroundings (street, garden)</li><li><strong>Weather:</strong> Preferably blue sky, no rain</li><li><strong>No overlays:</strong> No text, watermarks, or prices (Tesoro does this automatically)</li></ul><p><strong>Special cases:</strong></p><ul><li><strong>Apartment:</strong> Building exterior or beautiful interior shot</li><li><strong>Land:</strong> Overview with location context</li><li><strong>Commercial:</strong> Prominent facade or entrance</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Por qué la foto principal es importante:</strong> Esta es la primera foto que los compradores ven en los resultados de búsqueda en portales y en el portal del cliente. Una buena foto principal determina si alguien hace clic.</p><p><strong>Proceso de subida:</strong></p><ol><li>Abre la propiedad en Tesoro CRM</li><li>Ve a la pestaña \"Medios\"</li><li>Haz clic en \"Subir Foto Principal\" o arrastra tu foto al área de subida</li><li>Espera a que se complete la subida (marca verde)</li><li>La vista previa aparece inmediatamente</li></ol><p><strong>Mejores prácticas para foto principal:</strong></p><ul><li><strong>Toma exterior:</strong> Muestra la fachada frontal completa con luz del día</li><li><strong>Orientación:</strong> Siempre paisaje (horizontal), nunca vertical</li><li><strong>Contexto:</strong> Muestra parte del entorno (calle, jardín)</li><li><strong>Clima:</strong> Preferiblemente cielo azul, sin lluvia</li><li><strong>Sin superposiciones:</strong> Sin texto, marcas de agua, o precios (Tesoro lo hace automáticamente)</li></ul><p><strong>Casos especiales:</strong></p><ul><li><strong>Apartamento:</strong> Exterior del edificio o hermosa toma interior</li><li><strong>Terreno:</strong> Vista general con contexto de ubicación</li><li><strong>Comercial:</strong> Fachada prominente o entrada</li></ul>"
+            }
+          }
+        },
+        {
+          "title": {
+            "nl": "Bulk foto upload",
+            "en": "Bulk photo upload",
+            "es": "Subida masiva de fotos"
+          },
+          "content": {
+            "nl": {
+              "text": "<p><strong>Multiple foto's tegelijk uploaden:</strong></p><ol><li>Scroll naar \"Interior Foto's\" of \"Exterior Foto's\" sectie</li><li>Klik \"Upload Foto's\" of sleep meerdere bestanden naar het gebied</li><li>Selecteer alle foto's die je wilt uploaden (Ctrl/Cmd + klik voor multiple)</li><li>Tesoro uploadt alle foto's parallel voor snelheid</li><li>Progress bar toont de upload status</li></ol><p><strong>Na de upload:</strong></p><ul><li>Foto's verschijnen automatisch in het grid</li><li>Je kunt direct de volgorde aanpassen door slepen</li><li>Klik op een foto voor preview en editing opties</li><li>Voeg captions toe indien gewenst</li></ul><p><strong>Aanbevolen foto aantallen:</strong></p><ul><li><strong>Appartement:</strong> 15-25 foto's (1 exterior, 14-24 interior)</li><li><strong>Huis:</strong> 20-30 foto's (3-5 exterior, rest interior)</li><li><strong>Villa:</strong> 30-50 foto's (5-10 exterior inc. tuin, rest interior)</li><li><strong>Commercial:</strong> 10-20 foto's (focus op werkbare ruimtes)</li><li><strong>Land:</strong> 5-10 foto's (verschillende hoeken en context)</li></ul>"
+            },
+            "en": {
+              "text": "<p><strong>Upload multiple photos at once:</strong></p><ol><li>Scroll to \"Interior Photos\" or \"Exterior Photos\" section</li><li>Click \"Upload Photos\" or drag multiple files to the area</li><li>Select all photos you want to upload (Ctrl/Cmd + click for multiple)</li><li>Tesoro uploads all photos in parallel for speed</li><li>Progress bar shows upload status</li></ol><p><strong>After upload:</strong></p><ul><li>Photos appear automatically in the grid</li><li>You can immediately adjust the order by dragging</li><li>Click on a photo for preview and editing options</li><li>Add captions if desired</li></ul><p><strong>Recommended photo numbers:</strong></p><ul><li><strong>Apartment:</strong> 15-25 photos (1 exterior, 14-24 interior)</li><li><strong>House:</strong> 20-30 photos (3-5 exterior, rest interior)</li><li><strong>Villa:</strong> 30-50 photos (5-10 exterior incl. garden, rest interior)</li><li><strong>Commercial:</strong> 10-20 photos (focus on workable spaces)</li><li><strong>Land:</strong> 5-10 photos (different angles and context)</li></ul>"
+            },
+            "es": {
+              "text": "<p><strong>Subir múltiples fotos a la vez:</strong></p><ol><li>Desplázate a la sección \"Fotos Interiores\" o \"Fotos Exteriores\"</li><li>Haz clic en \"Subir Fotos\" o arrastra múltiples archivos al área</li><li>Selecciona todas las fotos que deseas subir (Ctrl/Cmd + clic para múltiples)</li><li>Tesoro sube todas las fotos en paralelo para velocidad</li><li>La barra de progreso muestra el estado de subida</li></ol><p><strong>Después de la subida:</strong></p><ul><li>Las fotos aparecen automáticamente en la cuadrícula</li><li>Puedes ajustar inmediatamente el orden arrastrando</li><li>Haz clic en una foto para vista previa y opciones de edición</li><li>Agrega subtítulos si lo deseas</li></ul><p><strong>Números de fotos recomendados:</strong></p><ul><li><strong>Apartamento:</strong> 15-25 fotos (1 exterior, 14-24 interior)</li><li><strong>Casa:</strong> 20-30 fotos (3-5 exterior, resto interior)</li><li><strong>Villa:</strong> 30-50 fotos (5-10 exterior incl. jardín, resto interior)</li><li><strong>Comercial:</strong> 10-20 fotos (enfoque en espacios trabajables)</li><li><strong>Terreno:</strong> 5-10 fotos (diferentes ángulos y contexto)</li></ul>"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "text",
+      "id": "photo-organization",
+      "title": {
+        "nl": "Foto organisatie en volgorde",
+        "en": "Photo organization and ordering",
+        "es": "Organización y orden de fotos"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Logische foto volgorde</h5><p>De volgorde waarin je foto's toont is belangrijk voor de buyer journey. Aanbevolen structuur:</p><p><strong>Voor woningen:</strong></p><ol><li><strong>Exterior:</strong> Voorgevel (hoofdfoto)</li><li><strong>Entree/hal:</strong> Eerste indruk binnen</li><li><strong>Woonkamer:</strong> Grootste leefruimte eerst</li><li><strong>Keuken:</strong> Belangrijk decision-making punt</li><li><strong>Eetkamer/dining:</strong> Indien aanwezig</li><li><strong>Slaapkamers:</strong> Master bedroom eerst, dan overige</li><li><strong>Badkamers:</strong> Master bathroom eerst</li><li><strong>Speciale ruimtes:</strong> Kantoor, hobby ruimte, zolder</li><li><strong>Exterior:</strong> Tuin, terras, parking</li></ol><h5>Drag & drop herordenen</h5><p>Tesoro maakt het eenvoudig om foto's te herordenen:</p><ol><li>Ga naar Media tab van de property</li><li>Klik en sleep foto's naar nieuwe positie</li><li>Release de muis om de positie te bevestigen</li><li>Wijzigingen worden automatisch opgeslagen</li><li>Nieuwe volgorde wordt direct gesynchroniseerd naar portals</li></ol><h5>Foto tagging en categoriseren</h5><p>Voor betere organisatie kun je foto's taggen:</p><ul><li><strong>Room type:</strong> Automatische detectie via AI (optioneel)</li><li><strong>Custom tags:</strong> Bijvoorbeeld \"renovated\", \"sea view\", \"pool\"</li><li><strong>Exclude from portal:</strong> Foto's die alleen intern zichtbaar zijn</li><li><strong>Featured:</strong> Highlight specifieke foto's in listings</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Logical photo order</h5><p>The order in which you show photos is important for the buyer journey. Recommended structure:</p><p><strong>For residential:</strong></p><ol><li><strong>Exterior:</strong> Front facade (main photo)</li><li><strong>Entry/hallway:</strong> First impression inside</li><li><strong>Living room:</strong> Largest living space first</li><li><strong>Kitchen:</strong> Important decision-making point</li><li><strong>Dining room:</strong> If present</li><li><strong>Bedrooms:</strong> Master bedroom first, then others</li><li><strong>Bathrooms:</strong> Master bathroom first</li><li><strong>Special rooms:</strong> Office, hobby room, attic</li><li><strong>Exterior:</strong> Garden, terrace, parking</li></ol><h5>Drag & drop reordering</h5><p>Tesoro makes it easy to reorder photos:</p><ol><li>Go to Media tab of the property</li><li>Click and drag photos to new position</li><li>Release mouse to confirm position</li><li>Changes are automatically saved</li><li>New order is immediately synchronized to portals</li></ol><h5>Photo tagging and categorizing</h5><p>For better organization you can tag photos:</p><ul><li><strong>Room type:</strong> Automatic detection via AI (optional)</li><li><strong>Custom tags:</strong> For example \"renovated\", \"sea view\", \"pool\"</li><li><strong>Exclude from portal:</strong> Photos that are only visible internally</li><li><strong>Featured:</strong> Highlight specific photos in listings</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Orden lógico de fotos</h5><p>El orden en que muestras las fotos es importante para el viaje del comprador. Estructura recomendada:</p><p><strong>Para residencial:</strong></p><ol><li><strong>Exterior:</strong> Fachada frontal (foto principal)</li><li><strong>Entrada/pasillo:</strong> Primera impresión interior</li><li><strong>Sala de estar:</strong> Espacio de vida más grande primero</li><li><strong>Cocina:</strong> Punto de toma de decisiones importante</li><li><strong>Comedor:</strong> Si está presente</li><li><strong>Dormitorios:</strong> Dormitorio principal primero, luego otros</li><li><strong>Baños:</strong> Baño principal primero</li><li><strong>Habitaciones especiales:</strong> Oficina, sala de pasatiempos, ático</li><li><strong>Exterior:</strong> Jardín, terraza, estacionamiento</li></ol><h5>Reordenamiento por arrastrar y soltar</h5><p>Tesoro facilita reordenar fotos:</p><ol><li>Ve a la pestaña Medios de la propiedad</li><li>Haz clic y arrastra fotos a nueva posición</li><li>Suelta el mouse para confirmar posición</li><li>Los cambios se guardan automáticamente</li><li>El nuevo orden se sincroniza inmediatamente con portales</li></ol><h5>Etiquetado y categorización de fotos</h5><p>Para mejor organización puedes etiquetar fotos:</p><ul><li><strong>Tipo de habitación:</strong> Detección automática vía IA (opcional)</li><li><strong>Etiquetas personalizadas:</strong> Por ejemplo \"renovado\", \"vista al mar\", \"piscina\"</li><li><strong>Excluir del portal:</strong> Fotos que solo son visibles internamente</li><li><strong>Destacada:</strong> Resalta fotos específicas en listados</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "videos-and-tours",
+      "title": {
+        "nl": "Video's en virtual tours",
+        "en": "Videos and virtual tours",
+        "es": "Videos y tours virtuales"
+      },
+      "content": {
+        "nl": {
+          "text": "<h5>Property video's toevoegen</h5><p>Video's verhogen engagement met 80% en leiden tot 3x meer bezichtigingsaanvragen.</p><p><strong>Video opties in Tesoro:</strong></p><ul><li><strong>YouTube embed:</strong> Upload video naar YouTube, embed link in Tesoro</li><li><strong>Vimeo embed:</strong> Privacy-friendly optie met wachtwoord bescherming</li><li><strong>Direct video URL:</strong> Link naar hosted video bestand</li></ul><p><strong>Video toevoegen:</strong></p><ol><li>Ga naar Media tab</li><li>Scroll naar \"Video\" sectie</li><li>Plak de video URL (YouTube, Vimeo, of direct link)</li><li>Preview verschijnt automatisch</li><li>Video wordt getoond op property detail page en portals</li></ol><p><strong>Video best practices:</strong></p><ul><li><strong>Lengte:</strong> 1-3 minuten optimaal (niet langer dan 5 minuten)</li><li><strong>Kwaliteit:</strong> Minimaal 1080p HD</li><li><strong>Stabilisatie:</strong> Gebruik gimbal of stabilizer</li><li><strong>Audio:</strong> Voeg achtergrond muziek toe (copyright-vrij)</li><li><strong>Editing:</strong> Cut dead time, add smooth transitions</li></ul><h5>Virtual tours (360°)</h5><p>360° tours geven buyers een complete sense of space zonder fysieke bezichtiging.</p><p><strong>Supported platforms:</strong></p><ul><li>Matterport</li><li>iGuide</li><li>Roundme</li><li>Kuula</li><li>EyeSpy360</li></ul><p><strong>Virtual tour embedden:</strong></p><ol><li>Create tour op één van de supported platforms</li><li>Copy de embed link of iframe code</li><li>Ga naar Media tab → Virtual Tour sectie</li><li>Plak de URL</li><li>Preview en test de tour</li></ol><p><strong>Virtual tour voordelen:</strong></p><ul><li>24/7 beschikbaar voor bezichtiging</li><li>Internationale kopers kunnen property verkennen</li><li>Minder onnodige fysieke bezichtigingen</li><li>Premium presentatie van de property</li><li>Hogere engagement en time-on-page</li></ul>"
+        },
+        "en": {
+          "text": "<h5>Adding property videos</h5><p>Videos increase engagement by 80% and lead to 3x more viewing requests.</p><p><strong>Video options in Tesoro:</strong></p><ul><li><strong>YouTube embed:</strong> Upload video to YouTube, embed link in Tesoro</li><li><strong>Vimeo embed:</strong> Privacy-friendly option with password protection</li><li><strong>Direct video URL:</strong> Link to hosted video file</li></ul><p><strong>Adding video:</strong></p><ol><li>Go to Media tab</li><li>Scroll to \"Video\" section</li><li>Paste the video URL (YouTube, Vimeo, or direct link)</li><li>Preview appears automatically</li><li>Video is shown on property detail page and portals</li></ol><p><strong>Video best practices:</strong></p><ul><li><strong>Length:</strong> 1-3 minutes optimal (no longer than 5 minutes)</li><li><strong>Quality:</strong> Minimum 1080p HD</li><li><strong>Stabilization:</strong> Use gimbal or stabilizer</li><li><strong>Audio:</strong> Add background music (copyright-free)</li><li><strong>Editing:</strong> Cut dead time, add smooth transitions</li></ul><h5>Virtual tours (360°)</h5><p>360° tours give buyers a complete sense of space without physical viewing.</p><p><strong>Supported platforms:</strong></p><ul><li>Matterport</li><li>iGuide</li><li>Roundme</li><li>Kuula</li><li>EyeSpy360</li></ul><p><strong>Embedding virtual tour:</strong></p><ol><li>Create tour on one of the supported platforms</li><li>Copy the embed link or iframe code</li><li>Go to Media tab → Virtual Tour section</li><li>Paste the URL</li><li>Preview and test the tour</li></ol><p><strong>Virtual tour benefits:</strong></p><ul><li>24/7 available for viewing</li><li>International buyers can explore property</li><li>Fewer unnecessary physical viewings</li><li>Premium presentation of the property</li><li>Higher engagement and time-on-page</li></ul>"
+        },
+        "es": {
+          "text": "<h5>Agregar videos de propiedades</h5><p>Los videos aumentan el engagement en 80% y llevan a 3x más solicitudes de visita.</p><p><strong>Opciones de video en Tesoro:</strong></p><ul><li><strong>Incorporación de YouTube:</strong> Sube video a YouTube, incorpora link en Tesoro</li><li><strong>Incorporación de Vimeo:</strong> Opción amigable con privacidad con protección por contraseña</li><li><strong>URL de video directo:</strong> Link a archivo de video alojado</li></ul><p><strong>Agregar video:</strong></p><ol><li>Ve a la pestaña Medios</li><li>Desplázate a la sección \"Video\"</li><li>Pega la URL del video (YouTube, Vimeo, o link directo)</li><li>La vista previa aparece automáticamente</li><li>El video se muestra en la página de detalle de la propiedad y portales</li></ol><p><strong>Mejores prácticas de video:</strong></p><ul><li><strong>Duración:</strong> 1-3 minutos óptimo (no más de 5 minutos)</li><li><strong>Calidad:</strong> Mínimo 1080p HD</li><li><strong>Estabilización:</strong> Usa gimbal o estabilizador</li><li><strong>Audio:</strong> Agrega música de fondo (libre de derechos de autor)</li><li><strong>Edición:</strong> Corta tiempo muerto, agrega transiciones suaves</li></ul><h5>Tours virtuales (360°)</h5><p>Los tours 360° dan a los compradores una sensación completa del espacio sin visita física.</p><p><strong>Plataformas soportadas:</strong></p><ul><li>Matterport</li><li>iGuide</li><li>Roundme</li><li>Kuula</li><li>EyeSpy360</li></ul><p><strong>Incorporar tour virtual:</strong></p><ol><li>Crea tour en una de las plataformas soportadas</li><li>Copia el link de incorporación o código iframe</li><li>Ve a la pestaña Medios → sección Tour Virtual</li><li>Pega la URL</li><li>Vista previa y prueba el tour</li></ol><p><strong>Beneficios del tour virtual:</strong></p><ul><li>Disponible 24/7 para visualización</li><li>Los compradores internacionales pueden explorar la propiedad</li><li>Menos visitas físicas innecesarias</li><li>Presentación premium de la propiedad</li><li>Mayor engagement y tiempo en la página</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "photo-quality-checklist",
+      "variant": "success",
+      "title": {
+        "nl": "Foto kwaliteit checklist",
+        "en": "Photo quality checklist",
+        "es": "Lista de verificación de calidad de fotos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p><strong>Voor elke property foto, check:</strong></p><ul><li>Horizontaal (landscape) georiënteerd</li><li>Rechte lijnen (geen scheef perspectief)</li><li>Goede belichting (geen overbelichte ramen)</li><li>Scherp beeld (geen motion blur)</li><li>Property opgeruimd en schoon</li><li>Geen persoonlijke items zichtbaar</li><li>Geen mensen of huisdieren in beeld</li><li>Juiste kleurbalans (niet te oranje of blauw)</li></ul><p><strong>Extra voor hoofdfoto:</strong></p><ul><li>Complete voorgevel zichtbaar</li><li>Omgeving context (deel van straat/tuin)</li><li>Bij voorkeur blauwe lucht</li><li>Geen geparkeerde auto's die zicht blokkeren</li></ul>"
+        },
+        "en": {
+          "text": "<p><strong>For every property photo, check:</strong></p><ul><li>Horizontally (landscape) oriented</li><li>Straight lines (no skewed perspective)</li><li>Good lighting (no overexposed windows)</li><li>Sharp image (no motion blur)</li><li>Property tidy and clean</li><li>No personal items visible</li><li>No people or pets in view</li><li>Correct color balance (not too orange or blue)</li></ul><p><strong>Extra for main photo:</strong></p><ul><li>Complete front facade visible</li><li>Environment context (part of street/garden)</li><li>Preferably blue sky</li><li>No parked cars blocking view</li></ul>"
+        },
+        "es": {
+          "text": "<p><strong>Para cada foto de propiedad, verifica:</strong></p><ul><li>Orientada horizontalmente (paisaje)</li><li>Líneas rectas (sin perspectiva sesgada)</li><li>Buena iluminación (sin ventanas sobreexpuestas)</li><li>Imagen nítida (sin desenfoque de movimiento)</li><li>Propiedad ordenada y limpia</li><li>Sin artículos personales visibles</li><li>Sin personas o mascotas a la vista</li><li>Balance de color correcto (no demasiado naranja o azul)</li></ul><p><strong>Extra para foto principal:</strong></p><ul><li>Fachada frontal completa visible</li><li>Contexto del entorno (parte de calle/jardín)</li><li>Preferiblemente cielo azul</li><li>Sin autos estacionados bloqueando la vista</li></ul>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "adding-properties-guide",
+    "property-portal-integration",
+    "property-management-overview"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Hoeveel foto's kan ik uploaden per property?",
+        "en": "How many photos can I upload per property?",
+        "es": "¿Cuántas fotos puedo subir por propiedad?"
+      },
+      "answer": {
+        "nl": "Er is geen hard limiet, maar we raden aan 15-30 foto's voor residentieel vastgoed. Meer dan 50 foto's kan de loading tijd beïnvloeden. Focus op kwaliteit boven kwantiteit - 20 goede foto's werken beter dan 40 gemiddelde foto's.",
+        "en": "There is no hard limit, but we recommend 15-30 photos for residential real estate. More than 50 photos can affect loading time. Focus on quality over quantity - 20 good photos work better than 40 average photos.",
+        "es": "No hay límite estricto, pero recomendamos 15-30 fotos para inmuebles residenciales. Más de 50 fotos puede afectar el tiempo de carga. Enfócate en calidad sobre cantidad - 20 buenas fotos funcionan mejor que 40 fotos promedio."
+      }
+    },
+    {
+      "question": {
+        "nl": "Worden foto's automatisch gecomprimeerd?",
+        "en": "Are photos automatically compressed?",
+        "es": "¿Se comprimen las fotos automáticamente?"
+      },
+      "answer": {
+        "nl": "Ja, Tesoro's Cloudflare integratie comprimeert foto's automatisch zonder zichtbaar kwaliteitsverlies. Dit zorgt voor snelle loading op alle devices. Je originele foto's blijven beschikbaar voor download indien nodig.",
+        "en": "Yes, Tesoro's Cloudflare integration automatically compresses photos without visible quality loss. This ensures fast loading on all devices. Your original photos remain available for download if needed.",
+        "es": "Sí, la integración de Cloudflare de Tesoro comprime automáticamente las fotos sin pérdida visible de calidad. Esto asegura carga rápida en todos los dispositivos. Tus fotos originales permanecen disponibles para descarga si es necesario."
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "id": "dashboard-overview",
+    "version": "1.0.0",
+    "publishDate": "2025-10-23",
+    "updatedAt": "2025-10-23T10:00:00Z",
+    "authorId": "carlos-martinez",
+    "category": "getting-started",
+    "difficulty": "beginner",
+    "tags": ["dashboard", "getting-started", "metrics", "kpis", "overview"],
+    "featured": true,
+    "readingTime": 7,
+    "videoIncluded": false,
+    "aiGenerated": true
+  },
+
+  "seo": {
+    "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    "keywords": ["tesoro dashboard", "crm dashboard", "kpis", "metrics", "real estate analytics"]
+  },
+
+  "hero": {
+    "title": {
+      "nl": "Dashboard overzicht begrijpen",
+      "en": "Understanding Dashboard Overview",
+      "es": "Entender la vista general del dashboard"
+    },
+    "description": {
+      "nl": "Leer hoe je het dashboard gebruikt als je controlecentrum en krijg direct inzicht in je belangrijkste metrics en activiteiten.",
+      "en": "Learn how to use the dashboard as your control center and get immediate insights into your key metrics and activities.",
+      "es": "Aprende a usar el dashboard como tu centro de control y obtén información inmediata sobre tus métricas clave y actividades."
+    },
+    "icon": "dashboard"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "id": "intro",
+      "content": {
+        "nl": {
+          "text": "<p>Het Dashboard is het eerste wat je ziet wanneer je inlogt in Tesoro CRM. Het is ontworpen als jouw centrale controlecentrum - één plek waar je direct ziet wat er speelt in je business, waar je aandacht nodig is, en hoe je presteert.</p><p>Deze gids legt uit hoe je het dashboard kunt lezen, interpreteren en gebruiken om betere beslissingen te nemen.</p>"
+        },
+        "en": {
+          "text": "<p>The Dashboard is the first thing you see when you log into Tesoro CRM. It's designed as your central control center - one place where you immediately see what's happening in your business, where your attention is needed, and how you're performing.</p><p>This guide explains how to read, interpret and use the dashboard to make better decisions.</p>"
+        },
+        "es": {
+          "text": "<p>El Dashboard es lo primero que ves cuando inicias sesión en Tesoro CRM. Está diseñado como tu centro de control central - un lugar donde ves inmediatamente qué está pasando en tu negocio, dónde se necesita tu atención y cómo estás desempeñando.</p><p>Esta guía explica cómo leer, interpretar y usar el dashboard para tomar mejores decisiones.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "main-sections",
+      "title": {
+        "nl": "Belangrijkste secties",
+        "en": "Main Sections",
+        "es": "Secciones principales"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het dashboard bestaat uit verschillende secties die elk een specifiek doel dienen:</p><h4>1. KPI Cards (Bovenaan)</h4><p>De grote cijfers bovenaan tonen je belangrijkste metrics:</p><ul><li><strong>Deals (This Month)</strong> - Aantal actieve deals deze maand met % verandering t.o.v. vorige periode</li><li><strong>New Leads</strong> - Nieuwe leads deze periode</li><li><strong>Avg Deal Value</strong> - Gemiddelde waarde van je deals</li><li><strong>Time on Market</strong> - Gemiddelde tijd dat properties op de markt staan</li></ul><p>De groene/rode percentages laten zien of je beter of slechter presteert dan vorige maand.</p><h4>2. Date Filter</h4><p>Rechtsboven kun je de periode selecteren:</p><ul><li>Today</li><li>This Week</li><li>This Month</li><li>This Quarter</li><li>This Year</li><li>All Time</li><li>Custom Range (zelf datums kiezen)</li></ul><p>Alle data op het dashboard past zich aan op basis van je selectie.</p><h4>3. Alerts & Notifications</h4><p>Belangrijke meldingen die je aandacht nodig hebben:</p><ul><li>Deals die lang in dezelfde fase staan</li><li>Follow-ups die je gemist hebt</li><li>Properties met verouderde informatie</li><li>Nieuwe leads die nog niet zijn gekwalificeerd</li></ul><h4>4. Deal Pipeline Overview</h4><p>Visuele weergave van je deals per fase met totale waarde. Klik op een fase om direct naar het Kanban board te gaan.</p><h4>5. Recent Activity</h4><p>Chronologische lijst van laatste activiteiten in je CRM:</p><ul><li>Nieuwe contacts toegevoegd</li><li>Deals die van fase veranderen</li><li>Emails verzonden/ontvangen</li><li>Tasks voltooid</li><li>Properties geüpdatet</li></ul><h4>6. Team Performance (voor managers)</h4><p>Als je een team beheert, zie je hier:</p><ul><li>Performance per teamlid</li><li>Aantal deals per persoon</li><li>Conversion rates</li><li>Activity levels</li></ul>"
+        },
+        "en": {
+          "text": "<p>The dashboard consists of several sections that each serve a specific purpose:</p><h4>1. KPI Cards (Top)</h4><p>The large numbers at the top show your key metrics:</p><ul><li><strong>Deals (This Month)</strong> - Number of active deals this month with % change vs. previous period</li><li><strong>New Leads</strong> - New leads this period</li><li><strong>Avg Deal Value</strong> - Average value of your deals</li><li><strong>Time on Market</strong> - Average time properties are on the market</li></ul><p>The green/red percentages show if you're performing better or worse than last month.</p><h4>2. Date Filter</h4><p>Top right you can select the period:</p><ul><li>Today</li><li>This Week</li><li>This Month</li><li>This Quarter</li><li>This Year</li><li>All Time</li><li>Custom Range (choose dates yourself)</li></ul><p>All data on the dashboard adjusts based on your selection.</p><h4>3. Alerts & Notifications</h4><p>Important notifications that need your attention:</p><ul><li>Deals stuck in the same stage too long</li><li>Follow-ups you've missed</li><li>Properties with outdated information</li><li>New leads not yet qualified</li></ul><h4>4. Deal Pipeline Overview</h4><p>Visual representation of your deals per stage with total value. Click on a stage to go directly to the Kanban board.</p><h4>5. Recent Activity</h4><p>Chronological list of latest activities in your CRM:</p><ul><li>New contacts added</li><li>Deals changing stages</li><li>Emails sent/received</li><li>Tasks completed</li><li>Properties updated</li></ul><h4>6. Team Performance (for managers)</h4><p>If you manage a team, you see here:</p><ul><li>Performance per team member</li><li>Number of deals per person</li><li>Conversion rates</li><li>Activity levels</li></ul>"
+        },
+        "es": {
+          "text": "<p>El dashboard consta de varias secciones que cada una sirve un propósito específico:</p><h4>1. Tarjetas KPI (arriba)</h4><p>Los números grandes en la parte superior muestran tus métricas clave:</p><ul><li><strong>Deals (este mes)</strong> - Número de deals activos este mes con % de cambio vs. período anterior</li><li><strong>New Leads</strong> - Nuevos leads este período</li><li><strong>Avg Deal Value</strong> - Valor promedio de tus deals</li><li><strong>Time on Market</strong> - Tiempo promedio que las propiedades están en el mercado</li></ul><p>Los porcentajes verdes/rojos muestran si estás desempeñando mejor o peor que el mes pasado.</p><h4>2. Filtro de fecha</h4><p>Arriba a la derecha puedes seleccionar el período:</p><ul><li>Today</li><li>This Week</li><li>This Month</li><li>This Quarter</li><li>This Year</li><li>All Time</li><li>Custom Range (elegir fechas tú mismo)</li></ul><p>Todos los datos en el dashboard se ajustan según tu selección.</p><h4>3. Alertas y notificaciones</h4><p>Notificaciones importantes que necesitan tu atención:</p><ul><li>Deals atascados en la misma etapa demasiado tiempo</li><li>Seguimientos que has perdido</li><li>Propiedades con información desactualizada</li><li>Nuevos leads aún no calificados</li></ul><h4>4. Vista general del pipeline de deals</h4><p>Representación visual de tus deals por etapa con valor total. Haz clic en una etapa para ir directamente al tablero Kanban.</p><h4>5. Actividad reciente</h4><p>Lista cronológica de las últimas actividades en tu CRM:</p><ul><li>Nuevos contactos agregados</li><li>Deals cambiando etapas</li><li>Emails enviados/recibidos</li><li>Tareas completadas</li><li>Propiedades actualizadas</li></ul><h4>6. Rendimiento del equipo (para managers)</h4><p>Si gestionas un equipo, ves aquí:</p><ul><li>Rendimiento por miembro del equipo</li><li>Número de deals por persona</li><li>Tasas de conversión</li><li>Niveles de actividad</li></ul>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "metrics-tip",
+      "variant": "tip",
+      "title": {
+        "nl": "Pro tip: Gebruik trends, niet absolute cijfers",
+        "en": "Pro Tip: Use Trends, Not Absolute Numbers",
+        "es": "Consejo pro: Usa tendencias, no números absolutos"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>De meeste waarde van het dashboard zit niet in de absolute cijfers, maar in de <strong>trends</strong>. Let op:</p><ul><li><strong>+15% deals</strong> betekent dat je momentum opbouwt</li><li><strong>-20% leads</strong> is een vroeg waarschuwingssignaal dat je marketing moet verbeteren</li><li><strong>Stijgende avg deal value</strong> betekent dat je beter kwalificeert of hogere prijssegmenten bedient</li><li><strong>Dalende time on market</strong> betekent dat je properties sneller verkopen</li></ul><p>Check je dashboard elke ochtend en kijk naar de trends over meerdere weken - zo spot je problemen vroeg en kun je snel bijsturen.</p>"
+        },
+        "en": {
+          "text": "<p>The most value of the dashboard is not in the absolute numbers, but in the <strong>trends</strong>. Pay attention to:</p><ul><li><strong>+15% deals</strong> means you're building momentum</li><li><strong>-20% leads</strong> is an early warning signal that you need to improve your marketing</li><li><strong>Rising avg deal value</strong> means you're qualifying better or serving higher price segments</li><li><strong>Declining time on market</strong> means your properties are selling faster</li></ul><p>Check your dashboard every morning and look at trends over multiple weeks - this way you spot problems early and can adjust quickly.</p>"
+        },
+        "es": {
+          "text": "<p>El mayor valor del dashboard no está en los números absolutos, sino en las <strong>tendencias</strong>. Presta atención a:</p><ul><li><strong>+15% deals</strong> significa que estás construyendo impulso</li><li><strong>-20% leads</strong> es una señal de advertencia temprana de que necesitas mejorar tu marketing</li><li><strong>Valor promedio de deal en aumento</strong> significa que estás calificando mejor o sirviendo segmentos de precio más altos</li><li><strong>Tiempo en el mercado en descenso</strong> significa que tus propiedades se venden más rápido</li></ul><p>Revisa tu dashboard cada mañana y observa las tendencias durante varias semanas - así detectas problemas temprano y puedes ajustar rápidamente.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "customization",
+      "title": {
+        "nl": "Dashboard aanpassen",
+        "en": "Customizing Dashboard",
+        "es": "Personalizar dashboard"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Je kunt het dashboard aanpassen aan jouw werkstijl:</p><h4>Widgets toevoegen/verwijderen</h4><p>Klik rechtsboven op het <strong>tandwiel icoon</strong> om te kiezen welke secties je wilt zien. Verberg widgets die je niet gebruikt om focus te behouden.</p><h4>Layout aanpassen</h4><p>Sleep widgets om ze te herordenen. Zet de meest belangrijke metrics bovenaan waar je ze direct ziet.</p><h4>Default periode instellen</h4><p>In Settings kun je de default time range instellen. Veel gebruikers kiezen 'This Month' omdat dat de meest relevante periode is voor dagelijkse werk.</p><h4>Notificaties configureren</h4><p>Bepaal welke alerts je wilt zien:</p><ul><li>Deals zonder activity > X dagen</li><li>Leads niet gekwalificeerd > Y dagen</li><li>Properties zonder updates > Z weken</li></ul><p>Ga naar <strong>Settings → Notifications</strong> om deze in te stellen.</p>"
+        },
+        "en": {
+          "text": "<p>You can customize the dashboard to your work style:</p><h4>Add/Remove Widgets</h4><p>Click the <strong>gear icon</strong> in the top right to choose which sections you want to see. Hide widgets you don't use to maintain focus.</p><h4>Adjust Layout</h4><p>Drag widgets to reorder them. Put the most important metrics at the top where you see them immediately.</p><h4>Set Default Period</h4><p>In Settings you can set the default time range. Many users choose 'This Month' because that's the most relevant period for daily work.</p><h4>Configure Notifications</h4><p>Determine which alerts you want to see:</p><ul><li>Deals without activity > X days</li><li>Leads not qualified > Y days</li><li>Properties without updates > Z weeks</li></ul><p>Go to <strong>Settings → Notifications</strong> to set these up.</p>"
+        },
+        "es": {
+          "text": "<p>Puedes personalizar el dashboard según tu estilo de trabajo:</p><h4>Agregar/eliminar widgets</h4><p>Haz clic en el <strong>ícono de engranaje</strong> en la parte superior derecha para elegir qué secciones quieres ver. Oculta widgets que no uses para mantener el enfoque.</p><h4>Ajustar diseño</h4><p>Arrastra widgets para reordenarlos. Coloca las métricas más importantes en la parte superior donde las veas inmediatamente.</p><h4>Establecer período predeterminado</h4><p>En Settings puedes establecer el rango de tiempo predeterminado. Muchos usuarios eligen 'This Month' porque ese es el período más relevante para el trabajo diario.</p><h4>Configurar notificaciones</h4><p>Determina qué alertas quieres ver:</p><ul><li>Deals sin actividad > X días</li><li>Leads no calificados > Y días</li><li>Propiedades sin actualizaciones > Z semanas</li></ul><p>Ve a <strong>Settings → Notifications</strong> para configurar esto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "text",
+      "id": "quick-actions",
+      "title": {
+        "nl": "Snelle acties vanaf dashboard",
+        "en": "Quick Actions From Dashboard",
+        "es": "Acciones rápidas desde dashboard"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het dashboard is niet alleen een overzicht - je kunt er ook direct acties mee uitvoeren:</p><h4>+ Buttons</h4><p>Rechtsboven vind je snelkoppelingen:</p><ul><li><strong>+ Contact</strong> - Voeg direct een nieuwe contact toe</li><li><strong>+ Lead</strong> - Creëer een nieuwe lead</li><li><strong>+ Deal</strong> - Start een nieuwe deal</li><li><strong>+ Property</strong> - Voeg een property toe</li><li><strong>+ Task</strong> - Maak een taak aan</li></ul><h4>Klikbare KPI's</h4><p>Elke KPI card is klikbaar en brengt je naar de relevante module:</p><ul><li>Klik <strong>Deals</strong> → Deal Kanban board</li><li>Klik <strong>New Leads</strong> → Leads module gefilterd op 'New'</li><li>Klik <strong>Time on Market</strong> → Properties gesorteerd op leeftijd</li></ul><h4>Alert Actions</h4><p>Bij elke alert kun je direct actie ondernemen:</p><ul><li><strong>View Deal</strong> - Open de deal details</li><li><strong>Mark as Read</strong> - Verberg de alert</li><li><strong>Snooze</strong> - Herinner me later</li></ul><h4>Search Bar</h4><p>Bovenaan het dashboard vind je de global search. Type een naam, adres of referentienummer en spring direct naar het juiste record.</p>"
+        },
+        "en": {
+          "text": "<p>The dashboard is not just an overview - you can also perform actions directly:</p><h4>+ Buttons</h4><p>Top right you'll find quick links:</p><ul><li><strong>+ Contact</strong> - Add a new contact directly</li><li><strong>+ Lead</strong> - Create a new lead</li><li><strong>+ Deal</strong> - Start a new deal</li><li><strong>+ Property</strong> - Add a property</li><li><strong>+ Task</strong> - Create a task</li></ul><h4>Clickable KPIs</h4><p>Each KPI card is clickable and takes you to the relevant module:</p><ul><li>Click <strong>Deals</strong> → Deal Kanban board</li><li>Click <strong>New Leads</strong> → Leads module filtered on 'New'</li><li>Click <strong>Time on Market</strong> → Properties sorted by age</li></ul><h4>Alert Actions</h4><p>For each alert you can take immediate action:</p><ul><li><strong>View Deal</strong> - Open the deal details</li><li><strong>Mark as Read</strong> - Hide the alert</li><li><strong>Snooze</strong> - Remind me later</li></ul><h4>Search Bar</h4><p>At the top of the dashboard you'll find the global search. Type a name, address or reference number and jump directly to the right record.</p>"
+        },
+        "es": {
+          "text": "<p>El dashboard no es solo una vista general - también puedes realizar acciones directamente:</p><h4>Botones +</h4><p>Arriba a la derecha encontrarás enlaces rápidos:</p><ul><li><strong>+ Contact</strong> - Agrega un nuevo contacto directamente</li><li><strong>+ Lead</strong> - Crea un nuevo lead</li><li><strong>+ Deal</strong> - Inicia un nuevo deal</li><li><strong>+ Property</strong> - Agrega una propiedad</li><li><strong>+ Task</strong> - Crea una tarea</li></ul><h4>KPIs clicables</h4><p>Cada tarjeta KPI es clicable y te lleva al módulo relevante:</p><ul><li>Clic <strong>Deals</strong> → Tablero Kanban de deals</li><li>Clic <strong>New Leads</strong> → Módulo de leads filtrado en 'New'</li><li>Clic <strong>Time on Market</strong> → Propiedades ordenadas por antigüedad</li></ul><h4>Acciones de alerta</h4><p>Para cada alerta puedes tomar acción inmediata:</p><ul><li><strong>View Deal</strong> - Abre los detalles del deal</li><li><strong>Mark as Read</strong> - Oculta la alerta</li><li><strong>Snooze</strong> - Recuérdame más tarde</li></ul><h4>Barra de búsqueda</h4><p>En la parte superior del dashboard encontrarás la búsqueda global. Escribe un nombre, dirección o número de referencia y salta directamente al registro correcto.</p>"
+        }
+      }
+    },
+
+    {
+      "type": "callout",
+      "id": "mobile-dashboard",
+      "variant": "info",
+      "title": {
+        "nl": "Dashboard op mobiel",
+        "en": "Dashboard on Mobile",
+        "es": "Dashboard en móvil"
+      },
+      "content": {
+        "nl": {
+          "text": "<p>Het dashboard is volledig geoptimaliseerd voor mobiel gebruik. Op je smartphone zie je:</p><ul><li><strong>Collapsed KPI's</strong> - Scroll horizontaal door je metrics</li><li><strong>Priority Alerts</strong> - Alleen de belangrijkste notificaties bovenaan</li><li><strong>Quick Actions Menu</strong> - Tap het + icoon voor snelle acties</li><li><strong>Swipe Navigation</strong> - Swipe tussen secties</li></ul><p>Perfect voor wanneer je onderweg bent en snel wilt checken hoe je business draait.</p>"
+        },
+        "en": {
+          "text": "<p>The dashboard is fully optimized for mobile use. On your smartphone you see:</p><ul><li><strong>Collapsed KPIs</strong> - Scroll horizontally through your metrics</li><li><strong>Priority Alerts</strong> - Only the most important notifications at the top</li><li><strong>Quick Actions Menu</strong> - Tap the + icon for quick actions</li><li><strong>Swipe Navigation</strong> - Swipe between sections</li></ul><p>Perfect for when you're on the go and want to quickly check how your business is running.</p>"
+        },
+        "es": {
+          "text": "<p>El dashboard está completamente optimizado para uso móvil. En tu smartphone ves:</p><ul><li><strong>KPIs colapsados</strong> - Desplázate horizontalmente por tus métricas</li><li><strong>Alertas prioritarias</strong> - Solo las notificaciones más importantes en la parte superior</li><li><strong>Menú de acciones rápidas</strong> - Toca el ícono + para acciones rápidas</li><li><strong>Navegación por deslizamiento</strong> - Desliza entre secciones</li></ul><p>Perfecto para cuando estás en movimiento y quieres verificar rápidamente cómo está funcionando tu negocio.</p>"
+        }
+      }
+    }
+  ],
+
+  "relatedArticles": [
+    "welcome-to-tesoro",
+    "navigation-basics",
+    "deal-pipeline-complete-guide",
+    "first-steps-checklist"
+  ],
+
+  "faq": [
+    {
+      "question": {
+        "nl": "Waarom zie ik geen data in mijn dashboard?",
+        "en": "Why don't I see any data in my dashboard?",
+        "es": "¿Por qué no veo datos en mi dashboard?"
+      },
+      "answer": {
+        "nl": "Als je net bent begonnen, is je dashboard leeg totdat je eerste contacts, properties of deals hebt toegevoegd. Begin met het toevoegen van je eerste records - de metrics worden automatisch bijgewerkt.",
+        "en": "If you just started, your dashboard is empty until you've added your first contacts, properties or deals. Start by adding your first records - the metrics will update automatically.",
+        "es": "Si acabas de comenzar, tu dashboard está vacío hasta que hayas agregado tus primeros contactos, propiedades o deals. Comienza agregando tus primeros registros - las métricas se actualizarán automáticamente."
+      }
+    },
+    {
+      "question": {
+        "nl": "Hoe vaak worden de dashboard cijfers bijgewerkt?",
+        "en": "How often are the dashboard numbers updated?",
+        "es": "¿Con qué frecuencia se actualizan los números del dashboard?"
+      },
+      "answer": {
+        "nl": "Real-time! Zodra je een deal toevoegt, een lead kwalificeert, of een property update - zie je dit direct terug in je dashboard metrics. Er is geen delay of refresh nodig.",
+        "en": "Real-time! As soon as you add a deal, qualify a lead, or update a property - you see this immediately reflected in your dashboard metrics. There's no delay or refresh needed.",
+        "es": "¡En tiempo real! Tan pronto como agregues un deal, califiques un lead o actualices una propiedad - lo ves inmediatamente reflejado en las métricas de tu dashboard. No hay retraso ni necesidad de actualizar."
+      }
+    },
+    {
+      "question": {
+        "nl": "Kan ik mijn dashboard exporteren naar PDF?",
+        "en": "Can I export my dashboard to PDF?",
+        "es": "¿Puedo exportar mi dashboard a PDF?"
+      },
+      "answer": {
+        "nl": "Ja, klik rechtsboven op 'Export' en kies PDF. Dit is handig voor maandelijkse rapportages aan je manager of teamleden. Je kunt ook automatische weekly/monthly reports instellen via Settings → Reports.",
+        "en": "Yes, click 'Export' in the top right and choose PDF. This is useful for monthly reports to your manager or team members. You can also set up automatic weekly/monthly reports via Settings → Reports.",
+        "es": "Sí, haz clic en 'Export' en la parte superior derecha y elige PDF. Esto es útil para informes mensuales a tu gerente o miembros del equipo. También puedes configurar informes automáticos semanales/mensuales a través de Settings → Reports."
+      }
+    }
+  ]
+}
