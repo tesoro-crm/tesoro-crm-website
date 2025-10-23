@@ -199,6 +199,49 @@
         "cta": "Book Free Value Check"
       }
     },
+    "visuals": {
+      "inactive_contacts": {
+        "title": "Contacts",
+        "filter": "Not contacted in 10+ days",
+        "contact_1_name": "John Smith",
+        "contact_1_meta": "15 days no contact",
+        "contact_2_name": "Mary Johnson",
+        "contact_2_meta": "12 days no contact",
+        "contact_3_name": "Peter Davis",
+        "contact_3_meta": "10 days no contact",
+        "alert": "3 contacts need urgent attention"
+      },
+      "call_reminder": {
+        "title": "Reminder: Call Client Back",
+        "time": "Now",
+        "client_name": "John Smith",
+        "client_meta": "7 days since last contact",
+        "property_interest": "Interest: Villa Marbella",
+        "btn_call": "Call Now",
+        "btn_remind": "Remind Later"
+      },
+      "last_activity": {
+        "title": "Pipeline Overview",
+        "sort_label": "Last Activity",
+        "stage_leads": "Leads",
+        "stage_viewing": "Viewing",
+        "stage_negotiation": "Negotiation",
+        "client_1_name": "Mary Johnson",
+        "property_type_1": "Apartment",
+        "warning_no_activity": "No activity - at risk!",
+        "client_2_name": "John Baker",
+        "property_type_2": "Villa",
+        "client_3_name": "Peter Fox",
+        "property_type_3": "Penthouse",
+        "activity_note_1": "Viewing tomorrow 2:00 PM",
+        "client_4_name": "Lisa Jones",
+        "property_type_4": "House",
+        "client_5_name": "Tom Hendricks",
+        "property_type_5": "Loft",
+        "activity_note_2": "Called: increased bid",
+        "insights_banner": "2 deals had no activity this week"
+      }
+    },
     "demo": {
       "badge": "Proof of Value",
       "title": "See Tesoro CRM in action",

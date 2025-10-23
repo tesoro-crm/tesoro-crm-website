@@ -199,6 +199,49 @@
         "cta": "Reservar chequeo de valor gratis"
       }
     },
+    "visuals": {
+      "inactive_contacts": {
+        "title": "Contactos",
+        "filter": "No contactado en 10+ días",
+        "contact_1_name": "Juan García",
+        "contact_1_meta": "15 días sin contacto",
+        "contact_2_name": "María Rodríguez",
+        "contact_2_meta": "12 días sin contacto",
+        "contact_3_name": "Pedro Martínez",
+        "contact_3_meta": "10 días sin contacto",
+        "alert": "3 contactos necesitan atención urgente"
+      },
+      "call_reminder": {
+        "title": "Recordatorio: Llamar al cliente",
+        "time": "Ahora",
+        "client_name": "Juan García",
+        "client_meta": "7 días desde el último contacto",
+        "property_interest": "Interés: Villa Marbella",
+        "btn_call": "Llamar ahora",
+        "btn_remind": "Recordar más tarde"
+      },
+      "last_activity": {
+        "title": "Resumen del pipeline",
+        "sort_label": "Última actividad",
+        "stage_leads": "Leads",
+        "stage_viewing": "Visita",
+        "stage_negotiation": "Negociación",
+        "client_1_name": "María Rodríguez",
+        "property_type_1": "Apartamento",
+        "warning_no_activity": "Sin actividad - ¡en riesgo!",
+        "client_2_name": "Juan López",
+        "property_type_2": "Villa",
+        "client_3_name": "Pedro Sánchez",
+        "property_type_3": "Ático",
+        "activity_note_1": "Visita mañana 14:00",
+        "client_4_name": "Lisa Fernández",
+        "property_type_4": "Casa",
+        "client_5_name": "Tom Jiménez",
+        "property_type_5": "Loft",
+        "activity_note_2": "Llamado: oferta aumentada",
+        "insights_banner": "2 deals no tuvieron actividad esta semana"
+      }
+    },
     "demo": {
       "badge": "Prueba de Valor",
       "title": "Vea Tesoro CRM en acción",

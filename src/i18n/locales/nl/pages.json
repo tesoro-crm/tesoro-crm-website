@@ -199,6 +199,49 @@
         "cta": "Boek gratis waardecheck"
       }
     },
+    "visuals": {
+      "inactive_contacts": {
+        "title": "Contacten",
+        "filter": "Niet gecontacteerd in 10+ dagen",
+        "contact_1_name": "Jan Jansen",
+        "contact_1_meta": "15 dagen geen contact",
+        "contact_2_name": "Maria Smit",
+        "contact_2_meta": "12 dagen geen contact",
+        "contact_3_name": "Pieter de Vries",
+        "contact_3_meta": "10 dagen geen contact",
+        "alert": "3 contacten hebben dringend aandacht nodig"
+      },
+      "call_reminder": {
+        "title": "Reminder: Bel klant terug",
+        "time": "Nu",
+        "client_name": "Jan Jansen",
+        "client_meta": "7 dagen sinds laatste contact",
+        "property_interest": "Interesse: Villa Marbella",
+        "btn_call": "Nu bellen",
+        "btn_remind": "Herinner later"
+      },
+      "last_activity": {
+        "title": "Pipeline Overzicht",
+        "sort_label": "Laatste activiteit",
+        "stage_leads": "Leads",
+        "stage_viewing": "Viewing",
+        "stage_negotiation": "Negotiation",
+        "client_1_name": "Maria Smit",
+        "property_type_1": "Appartement",
+        "warning_no_activity": "Geen activiteit - risico!",
+        "client_2_name": "Jan Bakker",
+        "property_type_2": "Villa",
+        "client_3_name": "Pieter Vos",
+        "property_type_3": "Penthouse",
+        "activity_note_1": "Bezichtiging morgen 14:00",
+        "client_4_name": "Lisa de Jong",
+        "property_type_4": "Huis",
+        "client_5_name": "Tom Hendriks",
+        "property_type_5": "Loft",
+        "activity_note_2": "Gebeld: bod verhoogd",
+        "insights_banner": "2 deals hebben deze week geen activiteit gehad"
+      }
+    },
     "demo": {
       "badge": "Gratis Waardecheck",
       "title": "Zie Tesoro CRM in actie",

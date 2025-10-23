@@ -37,9 +37,9 @@ const ctaLabel = t(`home.pain_points.${painKey}.cta`, locale);
     </div>
 
     <div class="pain-point__visual">
-      {painKey === 'callback' && <InactiveContactsVisual />}
-      {painKey === 'follow_up' && <CallReminderVisual />}
-      {painKey === 'lost_deal' && <LastActivityVisual />}
+      {painKey === 'callback' && <InactiveContactsVisual locale={locale} />}
+      {painKey === 'follow_up' && <CallReminderVisual locale={locale} />}
+      {painKey === 'lost_deal' && <LastActivityVisual locale={locale} />}
     </div>
   </div>
 </section>

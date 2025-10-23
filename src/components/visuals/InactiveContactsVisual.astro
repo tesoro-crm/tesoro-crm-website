@@ -1,16 +1,23 @@
 ---
-// Visual for inactive contacts dashboard view
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
 ---
 
 <div class="inactive-contacts">
   <div class="dashboard-header">
     <div class="dashboard-title">
       <span class="icon">people</span>
-      <span>Contacten</span>
+      <span>{t('home.visuals.inactive_contacts.title', locale)}</span>
     </div>
     <div class="filter-badge">
       <span class="icon">filter_list</span>
-      <span>Niet gecontacteerd in 10+ dagen</span>
+      <span>{t('home.visuals.inactive_contacts.filter', locale)}</span>
     </div>
   </div>
 
@@ -18,10 +25,10 @@
     <div class="contact-card urgent">
       <div class="contact-avatar">JJ</div>
       <div class="contact-info">
-        <div class="contact-name">Jan Jansen</div>
+        <div class="contact-name">{t('home.visuals.inactive_contacts.contact_1_name', locale)}</div>
         <div class="contact-meta">
           <span class="icon warning">warning</span>
-          <span>15 dagen geen contact</span>
+          <span>{t('home.visuals.inactive_contacts.contact_1_meta', locale)}</span>
         </div>
       </div>
       <div class="contact-action">
@@ -34,10 +41,10 @@
     <div class="contact-card warning">
       <div class="contact-avatar">MS</div>
       <div class="contact-info">
-        <div class="contact-name">Maria Smit</div>
+        <div class="contact-name">{t('home.visuals.inactive_contacts.contact_2_name', locale)}</div>
         <div class="contact-meta">
           <span class="icon warning">schedule</span>
-          <span>12 dagen geen contact</span>
+          <span>{t('home.visuals.inactive_contacts.contact_2_meta', locale)}</span>
         </div>
       </div>
       <div class="contact-action">
@@ -50,10 +57,10 @@
     <div class="contact-card attention">
       <div class="contact-avatar">PD</div>
       <div class="contact-info">
-        <div class="contact-name">Pieter de Vries</div>
+        <div class="contact-name">{t('home.visuals.inactive_contacts.contact_3_name', locale)}</div>
         <div class="contact-meta">
           <span class="icon">access_time</span>
-          <span>10 dagen geen contact</span>
+          <span>{t('home.visuals.inactive_contacts.contact_3_meta', locale)}</span>
         </div>
       </div>
       <div class="contact-action">
@@ -66,7 +73,7 @@
 
   <div class="alert-banner">
     <span class="icon">notifications_active</span>
-    <span>3 contacten hebben dringend aandacht nodig</span>
+    <span>{t('home.visuals.inactive_contacts.alert', locale)}</span>
   </div>
 </div>
 

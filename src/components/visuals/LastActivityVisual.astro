@@ -1,29 +1,36 @@
 ---
-// Visual for last activity tracking
+import { t } from '../../i18n/utils';
+import type { Language } from '../../i18n/config';
+
+interface Props {
+  locale: Language;
+}
+
+const { locale } = Astro.props;
 ---
 
 <div class="last-activity">
   <div class="pipeline-header">
     <div class="header-title">
       <span class="icon">insights</span>
-      <span>Pipeline Overzicht</span>
+      <span>{t('home.visuals.last_activity.title', locale)}</span>
     </div>
     <div class="sort-toggle">
       <span class="icon">sort</span>
-      <span>Laatste activiteit</span>
+      <span>{t('home.visuals.last_activity.sort_label', locale)}</span>
     </div>
   </div>
 
   <div class="pipeline-stages">
     <div class="stage">
       <div class="stage-header">
-        <div class="stage-name">Leads</div>
+        <div class="stage-name">{t('home.visuals.last_activity.stage_leads', locale)}</div>
         <div class="stage-count">8</div>
       </div>
       <div class="stage-cards">
         <div class="deal-card stale">
           <div class="card-header">
-            <div class="client-name">Maria Smit</div>
+            <div class="client-name">{t('home.visuals.last_activity.client_1_name', locale)}</div>
             <div class="activity-badge critical">
               <span class="icon">history</span>
               <span>18d</span>
@@ -32,7 +39,7 @@
           <div class="card-body">
             <div class="card-detail">
               <span class="icon">home</span>
-              <span>Appartement</span>
+              <span>{t('home.visuals.last_activity.property_type_1', locale)}</span>
             </div>
             <div class="card-detail">
               <span class="icon">payments</span>
@@ -41,13 +48,13 @@
           </div>
           <div class="warning-bar">
             <span class="icon">warning</span>
-            <span>Geen activiteit - risico!</span>
+            <span>{t('home.visuals.last_activity.warning_no_activity', locale)}</span>
           </div>
         </div>
 
         <div class="deal-card">
           <div class="card-header">
-            <div class="client-name">Jan Bakker</div>
+            <div class="client-name">{t('home.visuals.last_activity.client_2_name', locale)}</div>
             <div class="activity-badge recent">
               <span class="icon">history</span>
               <span>2d</span>
@@ -56,7 +63,7 @@
           <div class="card-body">
             <div class="card-detail">
               <span class="icon">home</span>
-              <span>Villa</span>
+              <span>{t('home.visuals.last_activity.property_type_2', locale)}</span>
             </div>
             <div class="card-detail">
               <span class="icon">payments</span>
@@ -69,13 +76,13 @@
 
     <div class="stage">
       <div class="stage-header">
-        <div class="stage-name">Viewing</div>
+        <div class="stage-name">{t('home.visuals.last_activity.stage_viewing', locale)}</div>
         <div class="stage-count">5</div>
       </div>
       <div class="stage-cards">
         <div class="deal-card">
           <div class="card-header">
-            <div class="client-name">Pieter Vos</div>
+            <div class="client-name">{t('home.visuals.last_activity.client_3_name', locale)}</div>
             <div class="activity-badge recent">
               <span class="icon">history</span>
               <span>1d</span>
@@ -84,7 +91,7 @@
           <div class="card-body">
             <div class="card-detail">
               <span class="icon">home</span>
-              <span>Penthouse</span>
+              <span>{t('home.visuals.last_activity.property_type_3', locale)}</span>
             </div>
             <div class="card-detail">
               <span class="icon">payments</span>
@@ -93,13 +100,13 @@
           </div>
           <div class="activity-note">
             <span class="icon">event</span>
-            <span>Bezichtiging morgen 14:00</span>
+            <span>{t('home.visuals.last_activity.activity_note_1', locale)}</span>
           </div>
         </div>
 
         <div class="deal-card attention">
           <div class="card-header">
-            <div class="client-name">Lisa de Jong</div>
+            <div class="client-name">{t('home.visuals.last_activity.client_4_name', locale)}</div>
             <div class="activity-badge warning">
               <span class="icon">history</span>
               <span>8d</span>
@@ -108,7 +115,7 @@
           <div class="card-body">
             <div class="card-detail">
               <span class="icon">home</span>
-              <span>Huis</span>
+              <span>{t('home.visuals.last_activity.property_type_4', locale)}</span>
             </div>
             <div class="card-detail">
               <span class="icon">payments</span>
@@ -121,13 +128,13 @@
 
     <div class="stage">
       <div class="stage-header">
-        <div class="stage-name">Negotiation</div>
+        <div class="stage-name">{t('home.visuals.last_activity.stage_negotiation', locale)}</div>
         <div class="stage-count">3</div>
       </div>
       <div class="stage-cards">
         <div class="deal-card">
           <div class="card-header">
-            <div class="client-name">Tom Hendriks</div>
+            <div class="client-name">{t('home.visuals.last_activity.client_5_name', locale)}</div>
             <div class="activity-badge active">
               <span class="icon">history</span>
               <span>3u</span>
@@ -136,7 +143,7 @@
           <div class="card-body">
             <div class="card-detail">
               <span class="icon">home</span>
-              <span>Loft</span>
+              <span>{t('home.visuals.last_activity.property_type_5', locale)}</span>
             </div>
             <div class="card-detail">
               <span class="icon">payments</span>
@@ -145,7 +152,7 @@
           </div>
           <div class="activity-note success">
             <span class="icon">phone</span>
-            <span>Gebeld: bod verhoogd</span>
+            <span>{t('home.visuals.last_activity.activity_note_2', locale)}</span>
           </div>
         </div>
       </div>
@@ -154,7 +161,7 @@
 
   <div class="insights-banner">
     <span class="icon">lightbulb</span>
-    <span><strong>2 deals</strong> hebben deze week geen activiteit gehad</span>
+    <span set:html={t('home.visuals.last_activity.insights_banner', locale)}></span>
   </div>
 </div>
 
