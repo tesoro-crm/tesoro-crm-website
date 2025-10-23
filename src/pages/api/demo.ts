@@ -6,6 +6,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Extract form data
     const data = {
+      painPoint: formData.get('painPoint'),
       firstName: formData.get('firstName'),
       lastName: formData.get('lastName'),
       email: formData.get('email'),
@@ -20,7 +21,7 @@ export const POST: APIRoute = async ({ request }) => {
     };
 
     // Validate required fields
-    if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.company || !data.preferredDate || !data.preferredTime) {
+    if (!data.painPoint || !data.firstName || !data.lastName || !data.email || !data.phone || !data.company || !data.preferredDate || !data.preferredTime) {
       return new Response(
         JSON.stringify({
           success: false,

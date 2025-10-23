@@ -31,8 +31,9 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     const formData = await context.request.formData();
-    
+
     // Extract form fields
+    const painPoint = formData.get('painPoint') as string;
     const firstName = formData.get('firstName') as string;
     const lastName = formData.get('lastName') as string;
     const email = formData.get('email') as string;
@@ -44,7 +45,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     const turnstileToken = formData.get('cf-turnstile-response') as string;
 
     // Validate required fields
-    if (!firstName || !lastName || !email || !phone || !company || !preferredDate || !preferredTime) {
+    if (!painPoint || !firstName || !lastName || !email || !phone || !company || !preferredDate || !preferredTime) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
@@ -87,18 +88,23 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     <h1 style="color: white; margin: 0; font-size: 24px;">🎯 Nieuwe Demo Aanvraag</h1>
   </div>
   <div style="background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px;">
+    <div style="background: linear-gradient(135deg, #FEF3C7 0%, #FED7AA 100%); padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #F59E0B;">
+      <h2 style="color: #92400E; margin-top: 0; font-size: 18px;">💡 Wat houdt hen wakker?</h2>
+      <p style="font-size: 16px; color: #1F2937; line-height: 1.6; margin: 10px 0 0 0; white-space: pre-wrap;">${painPoint}</p>
+    </div>
+
     <h2 style="color: #667eea; margin-top: 0;">Contactgegevens</h2>
     <p><strong>Naam:</strong> ${firstName} ${lastName}</p>
     <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
     <p><strong>Telefoon:</strong> <a href="tel:${phone}">${phone}</a></p>
     <p><strong>Bedrijf:</strong> ${company}</p>
-    
+
     <h2 style="color: #667eea; margin-top: 30px;">Gewenste Planning</h2>
     <p><strong>Datum:</strong> ${preferredDate}</p>
     <p><strong>Tijd:</strong> ${preferredTime}</p>
-    
+
     ${notes ? `<h2 style="color: #667eea; margin-top: 30px;">Opmerkingen</h2><p>${notes}</p>` : ''}
-    
+
     <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666;">
       <p><strong>Bron:</strong> ${context.request.headers.get('referer') || 'Direct'}</p>
       <p><strong>IP:</strong> ${context.request.headers.get('cf-connecting-ip') || 'Unknown'}</p>
