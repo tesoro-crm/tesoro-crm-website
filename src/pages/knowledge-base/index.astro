@@ -200,7 +200,7 @@ const articlesText = locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artícul
 
             return (
               <a
-                href={getLocalizedPath(`/knowledge-base?category=${cat}`, locale)}
+                href={getLocalizedPath(`/knowledge-base/${cat}`, locale)}
                 class="kb-category-card"
                 data-category={cat}
               >

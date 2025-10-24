@@ -1,0 +1,504 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, getLocalizedPath } from '../../i18n/utils';
+import type { Language } from '../../types/knowledge-base';
+
+// Get all KB articles
+const articles = await getCollection('knowledge-base');
+const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
+
+// Category definitions (same as index)
+const categories: Record<string, { nl: string; en: string; es: string; description: { nl: string; en: string; es: string }; icon: string; priority: number }> = {
+  'getting-started': {
+    nl: 'Aan de slag',
+    en: 'Getting Started',
+    es: 'Comenzar',
+    description: {
+      nl: 'Start hier als nieuwe gebruiker',
+      en: 'Start here as a new user',
+      es: 'Comienza aquí como nuevo usuario'
+    },
+    icon: 'rocket_launch',
+    priority: 1
+  },
+  'contacts': {
+    nl: 'Contactbeheer',
+    en: 'Contact Management',
+    es: 'Gestión de contactos',
+    description: {
+      nl: 'Leads, kopers en verkopers beheren',
+      en: 'Manage leads, buyers and sellers',
+      es: 'Gestionar leads, compradores y vendedores'
+    },
+    icon: 'groups',
+    priority: 2
+  },
+  'properties': {
+    nl: 'Woningbeheer',
+    en: 'Property Management',
+    es: 'Gestión de propiedades',
+    description: {
+      nl: 'Portfolio, media en matching',
+      en: 'Portfolio, media and matching',
+      es: 'Portafolio, media y matching'
+    },
+    icon: 'home',
+    priority: 3
+  },
+  'projects': {
+    nl: 'Projecten',
+    en: 'Projects',
+    es: 'Proyectos',
+    description: {
+      nl: 'Nieuwbouw en ontwikkelingen',
+      en: 'New construction and developments',
+      es: 'Nueva construcción y desarrollos'
+    },
+    icon: 'apartment',
+    priority: 4
+  },
+  'communication': {
+    nl: 'Communicatie',
+    en: 'Communication',
+    es: 'Comunicación',
+    description: {
+      nl: 'Email, SMS, WhatsApp en telefoon',
+      en: 'Email, SMS, WhatsApp and phone',
+      es: 'Email, SMS, WhatsApp y teléfono'
+    },
+    icon: 'forum',
+    priority: 5
+  },
+  'integrations': {
+    nl: 'Integraties',
+    en: 'Integrations',
+    es: 'Integraciones',
+    description: {
+      nl: 'Idealista, Fotocasa en meer',
+      en: 'Idealista, Fotocasa and more',
+      es: 'Idealista, Fotocasa y más'
+    },
+    icon: 'hub',
+    priority: 6
+  },
+  'reports': {
+    nl: 'Rapportages',
+    en: 'Reports & Analytics',
+    es: 'Informes',
+    description: {
+      nl: 'Dashboard, KPIs en analytics',
+      en: 'Dashboard, KPIs and analytics',
+      es: 'Dashboard, KPIs y analytics'
+    },
+    icon: 'analytics',
+    priority: 7
+  },
+  'settings': {
+    nl: 'Instellingen',
+    en: 'Settings',
+    es: 'Configuración',
+    description: {
+      nl: 'Account, gebruikers en beveiliging',
+      en: 'Account, users and security',
+      es: 'Cuenta, usuarios y seguridad'
+    },
+    icon: 'settings',
+    priority: 8
+  },
+  'best-practices': {
+    nl: 'Best practices',
+    en: 'Best Practices',
+    es: 'Mejores prácticas',
+    description: {
+      nl: 'Tips van ervaren makelaars',
+      en: 'Tips from experienced agents',
+      es: 'Consejos de agentes experimentados'
+    },
+    icon: 'school',
+    priority: 9
+  },
+  'troubleshooting': {
+    nl: 'Probleemoplossing',
+    en: 'Troubleshooting',
+    es: 'Solución de problemas',
+    description: {
+      nl: 'Veelvoorkomende problemen oplossen',
+      en: 'Solve common problems',
+      es: 'Resolver problemas comunes'
+    },
+    icon: 'help',
+    priority: 10
+  },
+};
+
+// Get static paths for all categories
+export async function getStaticPaths() {
+  const articles = await getCollection('knowledge-base');
+  const categoryKeys = Object.keys(categories);
+
+  return categoryKeys.map(category => ({
+    params: { category }
+  }));
+}
+
+// Get current category from params
+const { category } = Astro.params;
+
+// Validate category exists
+if (!category || !categories[category]) {
+  return Astro.redirect('/knowledge-base');
+}
+
+// Filter articles for this category
+const categoryArticles = articles
+  .filter(a => a.data.meta.category === category)
+  .sort((a, b) => new Date(a.data.meta.publishDate).getTime() - new Date(b.data.meta.publishDate).getTime());
+
+// Get category info
+const categoryInfo = categories[category];
+const categoryTitle = categoryInfo[locale];
+const categoryDescription = categoryInfo.description[locale];
+const categoryIcon = categoryInfo.icon;
+
+// Page metadata
+const pageTitle = `${categoryTitle} - ${locale === 'nl' ? 'Kennisbank' : locale === 'es' ? 'Base de conocimientos' : 'Knowledge Base'}`;
+const pageDescription = categoryDescription;
+
+const backText = locale === 'nl' ? 'Terug naar alle categorieën' : locale === 'es' ? 'Volver a todas las categorías' : 'Back to all categories';
+const articlesText = locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artículos' : 'articles';
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <div class="kb-category-page">
+    <!-- Hero Section with Category Info -->
+    <section class="kb-hero">
+      <div class="kb-hero__container">
+        <!-- Breadcrumb / Back Link -->
+        <a href={getLocalizedPath('/knowledge-base', locale)} class="kb-back">
+          <span class="icon">arrow_back</span>
+          {backText}
+        </a>
+
+        <!-- Category Icon & Title -->
+        <div class="kb-hero__category">
+          <div class="kb-hero__icon">
+            <span class="icon">{categoryIcon}</span>
+          </div>
+          <h1 class="kb-hero__title">{categoryTitle}</h1>
+          <p class="kb-hero__subtitle">{categoryDescription}</p>
+          <span class="kb-hero__count">{categoryArticles.length} {articlesText}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles List -->
+    <div class="kb-container">
+      <section class="kb-articles">
+        <div class="kb-articles__grid">
+          {categoryArticles.map(article => {
+            const articleData = article.data;
+            const title = articleData.hero.title[locale];
+            const description = articleData.hero.description[locale];
+            const difficulty = articleData.meta.difficulty;
+            const readingTime = articleData.meta.readingTime;
+
+            return (
+              <a
+                href={getLocalizedPath(`/knowledge-base/${articleData.meta.id}`, locale)}
+                class="kb-article-card"
+              >
+                <div class="kb-article-card__header">
+                  <span class={`kb-article-card__difficulty kb-article-card__difficulty--${difficulty}`}>
+                    {difficulty}
+                  </span>
+                  {readingTime && (
+                    <span class="kb-article-card__time">
+                      <span class="icon">schedule</span> {readingTime} min
+                    </span>
+                  )}
+                </div>
+                <h2 class="kb-article-card__title">{title}</h2>
+                <p class="kb-article-card__description">{description}</p>
+                <div class="kb-article-card__footer">
+                  <span class="kb-article-card__link">
+                    {locale === 'nl' ? 'Lees artikel' : locale === 'es' ? 'Leer artículo' : 'Read article'}
+                    <span class="icon">arrow_forward</span>
+                  </span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .kb-category-page {
+    min-height: 100vh;
+    background: #fafafa;
+  }
+
+  /* Hero Section */
+  .kb-hero {
+    background: linear-gradient(135deg, #0a1f44 0%, #1e3a5f 100%);
+    color: white;
+    padding: 3rem 0 4rem;
+    position: relative;
+  }
+
+  .kb-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(245, 180, 0, 0.08) 0%, transparent 60%);
+    opacity: 1;
+  }
+
+  .kb-hero__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Back Link */
+  .kb-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+    padding: 0.5rem 0;
+  }
+
+  .kb-back:hover {
+    color: white;
+    transform: translateX(-4px);
+  }
+
+  .kb-back .icon {
+    font-size: 1.125rem;
+  }
+
+  /* Category Header */
+  .kb-hero__category {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .kb-hero__icon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    margin: 0 auto 1.5rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .kb-hero__icon .icon {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .kb-hero__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .kb-hero__subtitle {
+    font-size: 1.125rem;
+    opacity: 0.92;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .kb-hero__count {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Main Container */
+  .kb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  /* Articles Grid */
+  .kb-articles__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Article Card */
+  .kb-article-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .kb-article-card:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .kb-article-card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .kb-article-card__difficulty {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .kb-article-card__difficulty--beginner {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .kb-article-card__difficulty--intermediate {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .kb-article-card__difficulty--advanced {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  .kb-article-card__time {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  .kb-article-card__time .icon {
+    font-size: 1rem;
+  }
+
+  .kb-article-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .kb-article-card__description {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+  }
+
+  .kb-article-card__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .kb-article-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #003366;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+  }
+
+  .kb-article-card:hover .kb-article-card__link {
+    color: #F5B400;
+  }
+
+  .kb-article-card__link .icon {
+    font-size: 1.125rem;
+    transition: transform 0.2s;
+  }
+
+  .kb-article-card:hover .kb-article-card__link .icon {
+    transform: translateX(4px);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .kb-hero {
+      padding: 2rem 0 3rem;
+    }
+
+    .kb-hero__icon {
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .kb-hero__icon .icon {
+      font-size: 2rem;
+    }
+
+    .kb-hero__title {
+      font-size: 1.75rem;
+    }
+
+    .kb-hero__subtitle {
+      font-size: 1rem;
+    }
+
+    .kb-container {
+      padding: 3rem 1rem;
+    }
+
+    .kb-articles__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .kb-article-card {
+      padding: 1.5rem;
+    }
+  }
+</style>
