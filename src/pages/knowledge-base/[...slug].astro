@@ -32,6 +32,30 @@ const foundationArticles = allArticles
   .sort((a, b) => new Date(a.data.meta.publishDate).getTime() - new Date(b.data.meta.publishDate).getTime())
   .slice(0, 4);
 
+// Group all articles by category for left sidebar navigation
+const categories: Record<string, { nl: string; en: string; es: string; icon: string }> = {
+  'getting-started': { nl: 'Aan de slag', en: 'Getting Started', es: 'Comenzar', icon: 'rocket_launch' },
+  'contacts': { nl: 'Contactbeheer', en: 'Contact Management', es: 'Gestión de contactos', icon: 'groups' },
+  'properties': { nl: 'Woningbeheer', en: 'Property Management', es: 'Gestión de propiedades', icon: 'home' },
+  'projects': { nl: 'Projecten & ontwikkelingen', en: 'Projects & Developments', es: 'Proyectos y desarrollos', icon: 'apartment' },
+  'communication': { nl: 'Communicatie', en: 'Communication', es: 'Comunicación', icon: 'forum' },
+  'integrations': { nl: 'Integraties', en: 'Integrations', es: 'Integraciones', icon: 'hub' },
+  'reports': { nl: 'Rapportages & analytics', en: 'Reports & Analytics', es: 'Informes y analytics', icon: 'analytics' },
+  'settings': { nl: 'Instellingen', en: 'Settings', es: 'Configuración', icon: 'settings' },
+  'best-practices': { nl: 'Best practices', en: 'Best Practices', es: 'Mejores prácticas', icon: 'school' },
+  'troubleshooting': { nl: 'Probleemoplossing', en: 'Troubleshooting', es: 'Solución de problemas', icon: 'help' },
+};
+
+const sortedCategories = Object.keys(categories);
+const groupedArticles = sortedCategories.reduce((acc, cat) => {
+  acc[cat] = allArticles
+    .filter(a => a.data.meta.category === cat)
+    .sort((a, b) => new Date(a.data.meta.publishDate).getTime() - new Date(b.data.meta.publishDate).getTime());
+  return acc;
+}, {} as Record<string, typeof allArticles>);
+
+const currentCategory = articleData.meta.category;
+
 // Find current step and next step
 const currentStepIndex = foundationArticles.findIndex(a => a.data.meta.id === articleData.meta.id);
 const isFoundationStep = currentStepIndex !== -1;
@@ -119,53 +143,111 @@ const pageDescription = description;
     <!-- Main Content -->
     <div class="kb-article__container">
       <div class="kb-article__content-wrapper">
-        <!-- Table of Contents - Desktop -->
-        {tocItems.length > 0 && (
-          <aside class="kb-article__toc">
-            <div class="kb-article__toc-sticky">
-              <h3 class="kb-article__toc-title">
+        <!-- Left Sidebar - Category Navigation -->
+        <aside class="kb-sidebar">
+          <div class="kb-sidebar__sticky">
+            <div class="kb-sidebar__header">
+              <a href={getLocalizedPath('/knowledge-base', locale)} class="kb-sidebar__back">
+                <span class="icon icon-sm">arrow_back</span>
+                {locale === 'nl' ? 'Alle categorieën' : locale === 'es' ? 'Todas las categorías' : 'All categories'}
+              </a>
+            </div>
+            <nav class="kb-sidebar__nav">
+              {sortedCategories.map(cat => {
+                const articles = groupedArticles[cat];
+                if (articles.length === 0) return null;
+
+                return (
+                  <details class="kb-nav-category" open={currentCategory === cat}>
+                    <summary class="kb-nav-category__header">
+                      <span class="icon kb-nav-category__icon">{categories[cat].icon}</span>
+                      <span class="kb-nav-category__title">{categories[cat][locale]}</span>
+                      <span class="kb-nav-category__count">{articles.length}</span>
+                    </summary>
+                    <ul class="kb-nav-category__list">
+                      {articles.map(a => (
+                        <li class="kb-nav-category__item">
+                          <a
+                            href={getLocalizedPath(`/knowledge-base/${a.data.meta.id}`, locale)}
+                            class={`kb-nav-category__link ${a.data.meta.id === articleData.meta.id ? 'kb-nav-category__link--active' : ''}`}
+                          >
+                            {a.data.hero.title[locale]}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                );
+              })}
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Article Content (Center Column) -->
+        <main class="kb-article__content">
+          <!-- Mobile TOC - Shows on mobile only -->
+          {tocItems.length > 0 && (
+            <details class="kb-article__toc-mobile">
+              <summary class="kb-article__toc-mobile-header">
+                <span class="icon">list</span>
                 {locale === 'nl' ? 'Inhoudsopgave' : locale === 'es' ? 'Tabla de Contenidos' : 'Table of Contents'}
-              </h3>
-              <nav class="kb-article__toc-nav">
+                <span class="icon kb-article__toc-mobile-chevron">expand_more</span>
+              </summary>
+              <nav class="kb-article__toc-mobile-nav">
                 <ul class="kb-article__toc-list">
                   {tocItems.map(item => (
                     <li class="kb-article__toc-item">
-                      <a href={`#${item.id}`} class="kb-article__toc-link">
+                      <a href={`#${item.id}`} class="kb-article__toc-link" data-target={item.id}>
                         {item.title}
                       </a>
                     </li>
                   ))}
                 </ul>
               </nav>
-            </div>
-          </aside>
-        )}
-
-        <!-- Article Content -->
-        <main class="kb-article__content">
+            </details>
+          )}
           {articleData.sections && articleData.sections.map(section => (
             <KnowledgeBaseSectionRenderer section={section} lang={locale} />
           ))}
 
           <!-- Related Articles -->
-          {articleData.relatedArticles && articleData.relatedArticles.length > 0 && (
-            <section class="kb-article__related">
-              <h2 class="kb-article__related-title">
-                {locale === 'nl' ? 'Gerelateerde Artikelen' : locale === 'es' ? 'Artículos Relacionados' : 'Related Articles'}
-              </h2>
-              <div class="kb-article__related-grid">
-                {articleData.relatedArticles.map(relatedId => {
-                  // In a real implementation, you'd fetch the related articles
-                  // For now, just show the IDs as placeholders
-                  return (
-                    <a href={getLocalizedPath(`/knowledge-base/${relatedId}`, locale)} class="kb-article__related-card">
-                      <h3>{relatedId}</h3>
-                    </a>
-                  );
-                })}
-              </div>
-            </section>
-          )}
+          {articleData.relatedArticles && articleData.relatedArticles.length > 0 && (() => {
+            const relatedArticlesData = articleData.relatedArticles
+              .map(relatedId => allArticles.find(a => a.data.meta.id === relatedId))
+              .filter(Boolean);
+
+            if (relatedArticlesData.length === 0) return null;
+
+            return (
+              <section class="kb-article__related">
+                <h2 class="kb-article__related-title">
+                  {locale === 'nl' ? 'Gerelateerde artikelen' : locale === 'es' ? 'Artículos relacionados' : 'Related articles'}
+                </h2>
+                <div class="kb-article__related-grid">
+                  {relatedArticlesData.map(relatedArticle => {
+                    if (!relatedArticle) return null;
+                    const relatedData = relatedArticle.data;
+
+                    return (
+                      <a href={getLocalizedPath(`/knowledge-base/${relatedData.meta.id}`, locale)} class="kb-article__related-card">
+                        <div class="kb-article__related-card-header">
+                          <span class="icon kb-article__related-card-icon">{categories[relatedData.meta.category].icon}</span>
+                          <span class="kb-article__related-card-category">{categories[relatedData.meta.category][locale]}</span>
+                        </div>
+                        <h3 class="kb-article__related-card-title">{relatedData.hero.title[locale]}</h3>
+                        <p class="kb-article__related-card-desc">{relatedData.hero.description[locale]}</p>
+                        <div class="kb-article__related-card-meta">
+                          <span class="kb-article__related-card-time">
+                            <span class="icon icon-xs">schedule</span> {relatedData.meta.readingTime} {locale === 'nl' ? 'min' : 'min'}
+                          </span>
+                        </div>
+                      </a>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })()}
 
           <!-- FAQ Section -->
           {articleData.faq && articleData.faq.length > 0 && (
@@ -235,6 +317,41 @@ const pageDescription = description;
             </div>
           </footer>
         </main>
+
+        <!-- Right Sidebar - Table of Contents (Desktop Only) -->
+        {tocItems.length > 0 && (
+          <aside class="kb-article__toc-right">
+            <div class="kb-article__toc-sticky">
+              <h3 class="kb-article__toc-title">
+                {locale === 'nl' ? 'Op deze pagina' : locale === 'es' ? 'En esta página' : 'On this page'}
+              </h3>
+              <nav class="kb-article__toc-nav">
+                <ul class="kb-article__toc-list" id="toc-list">
+                  {tocItems.map(item => (
+                    <li class="kb-article__toc-item">
+                      <a href={`#${item.id}`} class="kb-article__toc-link" data-target={item.id}>
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        )}
+      </div>
+    </div>
+
+    <!-- Sticky Search Bar -->
+    <div class="kb-search-sticky" id="kb-search-sticky">
+      <div class="kb-search-sticky__inner">
+        <span class="icon kb-search-sticky__icon">search</span>
+        <input
+          type="search"
+          placeholder={locale === 'nl' ? 'Zoek in documentatie...' : locale === 'es' ? 'Buscar en documentación...' : 'Search documentation...'}
+          class="kb-search-sticky__input"
+          id="kb-sticky-search-input"
+        />
       </div>
     </div>
   </article>
@@ -394,16 +511,182 @@ const pageDescription = description;
     opacity: 0.9;
   }
 
-  /* Clean Content Layout */
+  /* Three-Column Layout */
   .kb-article__content-wrapper {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 3rem;
+    grid-template-columns: 260px 1fr 240px;
+    gap: 2.5rem;
     padding: 3rem 0;
+    align-items: start;
   }
 
-  /* Minimal Table of Contents */
-  .kb-article__toc {
+  /* Left Sidebar - Category Navigation */
+  .kb-sidebar {
+    position: relative;
+  }
+
+  .kb-sidebar__sticky {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for sidebar */
+  .kb-sidebar__sticky::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .kb-sidebar__sticky::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .kb-sidebar__sticky::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+  }
+
+  .kb-sidebar__sticky::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+
+  .kb-sidebar__header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .kb-sidebar__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    margin: -0.5rem -0.75rem;
+  }
+
+  .kb-sidebar__back:hover {
+    color: #003366;
+    background: #f8fafc;
+  }
+
+  .kb-sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Category Navigation Items */
+  .kb-nav-category {
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+
+  .kb-nav-category__header {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.75rem 0.875rem;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.875rem;
+    user-select: none;
+  }
+
+  .kb-nav-category__header::-webkit-details-marker {
+    display: none;
+  }
+
+  .kb-nav-category__header:hover {
+    background: #f8fafc;
+    color: #1e293b;
+  }
+
+  .kb-nav-category[open] .kb-nav-category__header {
+    color: #003366;
+    font-weight: 600;
+    background: #f0f4f8;
+  }
+
+  .kb-nav-category__icon {
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    color: #64748b;
+    transition: color 0.2s;
+  }
+
+  .kb-nav-category[open] .kb-nav-category__icon {
+    color: #003366;
+  }
+
+  .kb-nav-category__title {
+    flex: 1;
+  }
+
+  .kb-nav-category__count {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    background: #f1f5f9;
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .kb-nav-category[open] .kb-nav-category__count {
+    background: #dbeafe;
+    color: #003366;
+  }
+
+  .kb-nav-category__list {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .kb-nav-category__item {
+    margin: 0;
+  }
+
+  .kb-nav-category__link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+  }
+
+  .kb-nav-category__link:hover {
+    color: #1e293b;
+    background: #f8fafc;
+    border-left-color: #cbd5e1;
+  }
+
+  .kb-nav-category__link--active {
+    color: #003366;
+    background: #eff6ff;
+    font-weight: 600;
+    border-left-color: #003366;
+  }
+
+  /* Right Sidebar - Table of Contents */
+  .kb-article__toc-right {
     position: relative;
   }
 
@@ -413,17 +696,18 @@ const pageDescription = description;
   }
 
   .kb-article__toc-title {
-    font-size: 1rem;
+    font-size: 0.8125rem;
     font-weight: 600;
-    color: #1e293b;
+    color: #64748b;
     margin-bottom: 0.875rem;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   .kb-article__toc-nav {
     background: white;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 0.75rem;
     border: 1px solid #e2e8f0;
   }
 
@@ -434,7 +718,7 @@ const pageDescription = description;
   }
 
   .kb-article__toc-item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 
   .kb-article__toc-link {
@@ -442,23 +726,129 @@ const pageDescription = description;
     padding: 0.5rem 0.625rem;
     color: #64748b;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     border-radius: 6px;
     transition: all 0.2s;
     line-height: 1.5;
+    border-left: 2px solid transparent;
   }
 
   .kb-article__toc-link:hover {
+    color: #1e293b;
+    background: #f8fafc;
+  }
+
+  .kb-article__toc-link.active {
     color: #003366;
-    background: #f1f5f9;
+    background: #eff6ff;
+    border-left-color: #003366;
+    font-weight: 600;
   }
 
   /* Article Content */
   .kb-article__content {
-    max-width: none;
+    max-width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
-  /* Clean Related Articles */
+  /* Mobile TOC - Hidden on desktop */
+  .kb-article__toc-mobile {
+    display: none;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #e2e8f0;
+  }
+
+  .kb-article__toc-mobile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.9375rem;
+    user-select: none;
+  }
+
+  .kb-article__toc-mobile-header::-webkit-details-marker {
+    display: none;
+  }
+
+  .kb-article__toc-mobile-chevron {
+    margin-left: auto;
+    transition: transform 0.2s;
+  }
+
+  .kb-article__toc-mobile[open] .kb-article__toc-mobile-chevron {
+    transform: rotate(180deg);
+  }
+
+  .kb-article__toc-mobile-nav {
+    padding: 0 1.25rem 1rem;
+  }
+
+  /* Sticky Search Bar */
+  .kb-search-sticky {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.75rem 0;
+    z-index: 100;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .kb-search-sticky.visible {
+    top: 0;
+  }
+
+  .kb-search-sticky__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+  }
+
+  .kb-search-sticky__icon {
+    color: #64748b;
+    flex-shrink: 0;
+  }
+
+  .kb-search-sticky__input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    background: #f8fafc;
+    color: #1e293b;
+    transition: all 0.2s;
+  }
+
+  .kb-search-sticky__input:focus {
+    outline: none;
+    border-color: #003366;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+  }
+
+  .kb-search-sticky__input::placeholder {
+    color: #94a3b8;
+  }
+
+  /* Related Articles */
   .kb-article__related {
     margin-top: 3rem;
     padding-top: 2.5rem;
@@ -469,31 +859,86 @@ const pageDescription = description;
     font-size: 1.5rem;
     font-weight: 600;
     color: #1e293b;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     letter-spacing: -0.01em;
   }
 
   .kb-article__related-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
   }
 
   .kb-article__related-card {
-    display: block;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
     background: white;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
     color: inherit;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s;
+    border: 2px solid #e2e8f0;
+    transition: all 0.25s ease;
   }
 
   .kb-article__related-card:hover {
-    border-color: #cbd5e1;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
-    transform: translateY(-1px);
+    border-color: #003366;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .kb-article__related-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .kb-article__related-card-icon {
+    color: #003366;
+    font-size: 1.25rem;
+  }
+
+  .kb-article__related-card-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .kb-article__related-card-title {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.625rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  .kb-article__related-card-desc {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+
+  .kb-article__related-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .kb-article__related-card-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+    color: #94a3b8;
+    font-weight: 500;
   }
 
   /* Minimal FAQ Section */
@@ -727,18 +1172,43 @@ const pageDescription = description;
   }
 
   /* Responsive Design */
+  @media (max-width: 1280px) {
+    .kb-article__content-wrapper {
+      grid-template-columns: 240px 1fr;
+      gap: 2rem;
+    }
+
+    /* Hide right TOC on medium screens */
+    .kb-article__toc-right {
+      display: none;
+    }
+
+    /* Show mobile TOC at top of content */
+    .kb-article__toc-mobile {
+      display: block;
+    }
+  }
+
   @media (max-width: 1024px) {
     .kb-article__content-wrapper {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
 
-    .kb-article__toc {
-      order: -1;
+    /* Hide left sidebar on mobile */
+    .kb-sidebar {
+      display: none;
     }
 
-    .kb-article__toc-sticky {
-      position: static;
+    /* Right TOC already hidden from previous breakpoint */
+
+    /* Mobile TOC visible */
+    .kb-article__toc-mobile {
+      display: block;
+    }
+
+    .kb-article__content {
+      padding: 2rem 1.5rem;
     }
   }
 
@@ -765,6 +1235,10 @@ const pageDescription = description;
       gap: 0.75rem;
     }
 
+    .kb-article__content {
+      padding: 2rem 1.5rem;
+    }
+
     .kb-article__next-step {
       padding: 1.75rem;
     }
@@ -788,3 +1262,142 @@ const pageDescription = description;
     }
   }
 </style>
+
+<script>
+  // KNOWLEDGE BASE ARTICLE ENHANCEMENTS
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. ACTIVE TOC SECTION HIGHLIGHTING (Intersection Observer)
+    const initTOCHighlighting = (): void => {
+      const sections = document.querySelectorAll('section[id], div[id]');
+      const tocLinks = document.querySelectorAll('.kb-article__toc-link');
+
+      if (sections.length === 0 || tocLinks.length === 0) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Remove active class from all links
+            tocLinks.forEach(link => {
+              link.classList.remove('active');
+            });
+
+            // Add active class to current section's link
+            const activeLink = document.querySelector(
+              `.kb-article__toc-link[data-target="${entry.target.id}"]`
+            );
+            if (activeLink) {
+              activeLink.classList.add('active');
+            }
+          }
+        });
+      }, {
+        rootMargin: '-100px 0px -80% 0px',
+        threshold: 0
+      });
+
+      sections.forEach(section => {
+        if (section.id) {
+          observer.observe(section);
+        }
+      });
+    };
+
+    // 2. STICKY SEARCH BAR (appears after scrolling past hero)
+    const initStickySearch = (): void => {
+      const stickySearch = document.getElementById('kb-search-sticky');
+      if (!stickySearch) return;
+
+      let lastScrollY = window.scrollY;
+      let ticking = false;
+
+      const updateStickySearch = (): void => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > 400) {
+          stickySearch.classList.add('visible');
+        } else {
+          stickySearch.classList.remove('visible');
+        }
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+      };
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateStickySearch);
+          ticking = true;
+        }
+      });
+    };
+
+    // 3. SMOOTH SCROLL FOR TOC LINKS
+    const initSmoothScroll = (): void => {
+      const tocLinks = document.querySelectorAll('.kb-article__toc-link');
+
+      tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = (link as HTMLAnchorElement).getAttribute('href')?.substring(1);
+          if (!targetId) return;
+
+          const targetElement = document.getElementById(targetId);
+          if (!targetElement) return;
+
+          // Smooth scroll to target
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+
+          // Update URL without jumping
+          window.history.pushState(null, '', `#${targetId}`);
+
+          // Close mobile TOC if open
+          const mobileTOC = document.querySelector('.kb-article__toc-mobile') as HTMLDetailsElement;
+          if (mobileTOC && mobileTOC.open) {
+            mobileTOC.open = false;
+          }
+        });
+      });
+    };
+
+    // 4. SEARCH FUNCTIONALITY (sticky search bar)
+    const initSearch = (): void => {
+      const searchInput = document.getElementById('kb-sticky-search-input') as HTMLInputElement;
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', (e) => {
+        const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+        if (query.length > 0) {
+          // TODO: Implement search functionality
+          // For now, redirect to KB home with search query
+          console.log('Search query:', query);
+        }
+      });
+
+      // Submit on Enter
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const query = searchInput.value.trim();
+          if (query) {
+            // Get current locale from URL
+            const pathParts = window.location.pathname.split('/');
+            const locale = ['nl', 'en', 'es'].includes(pathParts[1]) ? pathParts[1] : '';
+            const kbPath = locale ? `/${locale}/knowledge-base` : '/knowledge-base';
+
+            // Redirect to KB home (search will be implemented there)
+            window.location.href = `${kbPath}?q=${encodeURIComponent(query)}`;
+          }
+        }
+      });
+    };
+
+    // Initialize all features
+    initTOCHighlighting();
+    initStickySearch();
+    initSmoothScroll();
+    initSearch();
+  });
+</script>

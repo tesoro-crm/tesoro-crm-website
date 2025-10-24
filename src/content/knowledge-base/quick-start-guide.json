@@ -10,7 +10,7 @@
     "tags": ["getting-started", "tutorial", "quick-start", "basics", "walkthrough"],
     "featured": true,
     "readingTime": 8,
-    "videoIncluded": false,
+    "videoIncluded": true,
     "aiGenerated": true
   },
 
@@ -52,11 +52,11 @@
 
     {
       "type": "steps",
-      "id": "tutorial-steps",
+      "id": "step-contact-creation",
       "title": {
-        "nl": "Stap-voor-stap tutorial",
-        "en": "Step-by-Step Tutorial",
-        "es": "Tutorial paso a paso"
+        "nl": "Stap 1: Contact aanmaken",
+        "en": "Step 1: Create Contact",
+        "es": "Paso 1: Crear contacto"
       },
       "steps": [
         {
@@ -76,7 +76,42 @@
               "text": "<p><strong>La situación:</strong> Recibes un email de Sarah Johnson. Está buscando un apartamento de 2 dormitorios en Barcelona, presupuesto €300K, quiere cerca de estación de metro.</p><p><strong>Paso 1: Crear el contacto</strong></p><ol><li>Haz clic arriba a la derecha en <strong>+ Contact</strong></li><li>Completa: <ul><li>First Name: Sarah</li><li>Last Name: Johnson</li><li>Email: sarah.johnson@example.com</li><li>Phone: +34 612 345 678</li><li>Type: Buyer</li></ul></li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Resultado:</strong> Sarah está ahora en tu base de datos. ¡Tiempo de comenzar un deal!</p>"
             }
           }
-        },
+        }
+      ]
+    },
+
+    {
+      "type": "image",
+      "id": "contact-creation-visual",
+      "title": {
+        "nl": "Contact aanmaken",
+        "en": "Creating a Contact",
+        "es": "Creando un contacto"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/08-contact-detail-sarah-johnson.png",
+      "alt": {
+        "nl": "Contact detail pagina met Sarah Johnson's gegevens",
+        "en": "Contact detail page with Sarah Johnson's information",
+        "es": "Página de detalle de contacto con información de Sarah Johnson"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "Na het opslaan zie je direct het complete contact profiel met alle gegevens",
+        "en": "After saving you immediately see the complete contact profile with all details",
+        "es": "Después de guardar ves inmediatamente el perfil de contacto completo con todos los detalles"
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "step-deal-requirements",
+      "title": {
+        "nl": "Stappen 2-3: Deal en voorkeuren",
+        "en": "Steps 2-3: Deal and Preferences",
+        "es": "Pasos 2-3: Deal y preferencias"
+      },
+      "steps": [
         {
           "title": {
             "nl": "Deal aanmaken en voorkeuren vastleggen",
@@ -94,7 +129,42 @@
               "text": "<p><strong>Paso 2: Iniciar el deal</strong></p><ol><li>Haz clic en la página de contacto de Sarah en <strong>Create Deal</strong> (o + Deal arriba a la derecha)</li><li>Completa:<ul><li>Deal Name: \"Sarah Johnson - Barcelona Apartment\"</li><li>Stage: \"First Contact\" (primera fase)</li><li>Expected Value: €300,000</li><li>Expected Close Date: En 2 meses</li></ul></li><li>Haz clic en <strong>Save & Continue</strong></li></ol><p><strong>Paso 3: Capturar requisitos de propiedad</strong></p><p>En la pantalla de detalle del deal, ve a la pestaña <strong>Requirements</strong>:</p><ul><li>Property Type: Apartment</li><li>Bedrooms: 2</li><li>Bathrooms: 1-2</li><li>Budget Min: €250K</li><li>Budget Max: €350K</li><li>Location: Barcelona (agrega vecindarios específicos si sabes)</li><li>Must-haves: Near metro, Modern kitchen</li></ul><p>Haz clic en <strong>Save Requirements</strong></p>"
             }
           }
-        },
+        }
+      ]
+    },
+
+    {
+      "type": "image",
+      "id": "deal-creation-visual",
+      "title": {
+        "nl": "Deal aanmaken met voorkeuren",
+        "en": "Creating a Deal with Preferences",
+        "es": "Creando un deal con preferencias"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/17-deal-detail-overview-javier.png",
+      "alt": {
+        "nl": "Deal detail pagina met buyer requirements en pipeline status",
+        "en": "Deal detail page with buyer requirements and pipeline status",
+        "es": "Página de detalle de deal con requisitos del comprador y estado del pipeline"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "Deal overview toont alle buyer requirements, contact info en deal summary",
+        "en": "Deal overview shows all buyer requirements, contact info and deal summary",
+        "es": "Vista general del deal muestra todos los requisitos del comprador, información de contacto y resumen del deal"
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "step-ai-matching",
+      "title": {
+        "nl": "Stappen 4-5: AI Property Matching",
+        "en": "Steps 4-5: AI Property Matching",
+        "es": "Pasos 4-5: Matching de propiedades con IA"
+      },
+      "steps": [
         {
           "title": {
             "nl": "AI matching: Vind perfecte properties",
@@ -112,7 +182,42 @@
               "text": "<p><strong>Paso 4: Deja que la IA haga el trabajo</strong></p><ol><li>En el detalle del deal, ve a la pestaña <strong>Properties</strong></li><li>Haz clic en el botón azul grande: <strong>AI Match Properties</strong></li><li>Espera 2-3 segundos mientras la IA escanea tu inventario</li></ol><p><strong>Lo que ves:</strong></p><p>Una lista de propiedades coincidentes, ordenadas por porcentaje de match:</p><ul><li><strong>92% match</strong> - apartamento 2 dormitorios, €295K, Eixample, 50m del metro</li><li><strong>87% match</strong> - apartamento 2 dormitorios, €320K, Gracia, cerca del metro</li><li><strong>81% match</strong> - apartamento 2 dormitorios, €285K, Poblenou, renovado</li></ul><p><strong>Paso 5: Seleccionar mejores candidatos</strong></p><ol><li>Haz clic en checkbox en las 3-5 propiedades principales</li><li>Haz clic en <strong>Add Selected to Deal</strong></li><li>Las propiedades se agregan al deal</li></ol><p><strong>Consejo pro:</strong> Haz clic en una propiedad para ver detalles antes de agregar. Verifica fotos, planos, descripción.</p>"
             }
           }
-        },
+        }
+      ]
+    },
+
+    {
+      "type": "image",
+      "id": "ai-matching-visual",
+      "title": {
+        "nl": "AI Property Matching in actie",
+        "en": "AI Property Matching in Action",
+        "es": "Matching de propiedades con IA en acción"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/18-properties-tab-overview.png",
+      "alt": {
+        "nl": "Properties tab met AI-matched properties gesorteerd in verschillende categorieën",
+        "en": "Properties tab with AI-matched properties sorted into different categories",
+        "es": "Pestaña de propiedades con propiedades coincidentes de IA ordenadas en diferentes categorías"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "AI organiseert automatisch properties in 'Preselect', 'Proposed', 'Interested' en andere stages",
+        "en": "AI automatically organizes properties into 'Preselect', 'Proposed', 'Interested' and other stages",
+        "es": "La IA organiza automáticamente las propiedades en 'Preselect', 'Proposed', 'Interested' y otras etapas"
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "step-email-client",
+      "title": {
+        "nl": "Stap 6: Email naar client",
+        "en": "Step 6: Email to Client",
+        "es": "Paso 6: Email al cliente"
+      },
+      "steps": [
         {
           "title": {
             "nl": "Send properties naar client",
@@ -130,7 +235,42 @@
               "text": "<p><strong>Paso 6: Email con selección de propiedades</strong></p><ol><li>Con 3-5 propiedades seleccionadas, haz clic en <strong>Send to Client</strong></li><li>Elige plantilla de email: \"Property Selection\"</li><li>Vista previa del email - ve cómo las propiedades se ven hermosas con fotos y detalles</li><li>Ajusta el mensaje (opcional): \"Hi Sarah, based on your requirements, here are my top picks...\"</li><li>Haz clic en <strong>Send Email</strong></li></ol><p><strong>Lo que Sarah recibe:</strong></p><ul><li>Email profesional con tu branding</li><li>Hermosas tarjetas de propiedad con fotos</li><li>Detalles clave (precio, dormitorios, ubicación)</li><li>Enlace al Portal del Cliente para más información</li><li>Llamada a la acción: \"Schedule a viewing\"</li></ul><p><strong>Seguimiento de email:</strong> ¡Ves automáticamente cuándo Sarah abre el email y en qué propiedades hace clic!</p>"
             }
           }
-        },
+        }
+      ]
+    },
+
+    {
+      "type": "image",
+      "id": "email-compose-visual",
+      "title": {
+        "nl": "Email sturen naar client",
+        "en": "Sending Email to Client",
+        "es": "Enviando email al cliente"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/22-email-compose-modal.png",
+      "alt": {
+        "nl": "Email compose modal met professionele template en email editor",
+        "en": "Email compose modal with professional template and email editor",
+        "es": "Modal de composición de email con plantilla profesional y editor de email"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "Stuur properties direct vanuit de deal met vooraf ingevulde client gegevens",
+        "en": "Send properties directly from the deal with pre-filled client details",
+        "es": "Envía propiedades directamente desde el deal con detalles del cliente prellenados"
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "step-kanban-pipeline",
+      "title": {
+        "nl": "Stappen 7-8: Kanban Pipeline Management",
+        "en": "Steps 7-8: Kanban Pipeline Management",
+        "es": "Pasos 7-8: Gestión de pipeline Kanban"
+      },
+      "steps": [
         {
           "title": {
             "nl": "Move deal door pipeline",
@@ -148,7 +288,42 @@
               "text": "<p><strong>Paso 7: Rastrear progreso con Kanban</strong></p><ol><li>Ve a <strong>Deals</strong> en la barra lateral</li><li>Ves el tablero Kanban con todas las etapas de deals</li><li>Encuentra el deal de Sarah en la columna \"First Contact\"</li></ol><p><strong>Paso 8: Mover a siguiente etapa</strong></p><p>Cuando Sarah responde \"I love #2! Can we schedule viewing?\", tiempo de mover el deal:</p><ol><li>Arrastra la tarjeta del deal de Sarah de \"First Contact\" a \"Viewing Scheduled\"</li><li>Se abre un modal: completa fecha/hora de la visita</li><li>Agrega una nota: \"Sarah interested in Gracia apartment\"</li><li>Haz clic en <strong>Save & Move</strong></li></ol><p><strong>Lo que sucede automáticamente:</strong></p><ul><li>La actualización de etapa del deal se registra en la línea de tiempo</li><li>La visita se agrega a tu Calendar</li><li>Sarah recibe automáticamente email de confirmación de visita</li><li>Las métricas de tu dashboard se actualizan en tiempo real</li></ul>"
             }
           }
-        },
+        }
+      ]
+    },
+
+    {
+      "type": "image",
+      "id": "kanban-board-visual",
+      "title": {
+        "nl": "Kanban Pipeline Management",
+        "en": "Kanban Pipeline Management",
+        "es": "Gestión de pipeline Kanban"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/24-deals-kanban-board-full.png",
+      "alt": {
+        "nl": "Volledige Kanban board met alle deal stages van 'Knowing Property' tot 'Won'",
+        "en": "Full Kanban board with all deal stages from 'Knowing Property' to 'Won'",
+        "es": "Tablero Kanban completo con todas las etapas de deal desde 'Knowing Property' hasta 'Won'"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "Overzicht van alle deals door alle pipeline stages - sleep cards om deals te verplaatsen",
+        "en": "Overview of all deals through all pipeline stages - drag cards to move deals",
+        "es": "Vista general de todos los deals a través de todas las etapas del pipeline - arrastra tarjetas para mover deals"
+      }
+    },
+
+    {
+      "type": "steps",
+      "id": "step-closing-deal",
+      "title": {
+        "nl": "Stap 9: Deal sluiten",
+        "en": "Step 9: Close the Deal",
+        "es": "Paso 9: Cerrar el deal"
+      },
+      "steps": [
         {
           "title": {
             "nl": "Close the deal!",
@@ -168,6 +343,29 @@
           }
         }
       ]
+    },
+
+    {
+      "type": "image",
+      "id": "pipeline-stages-visual",
+      "title": {
+        "nl": "Deal pipeline stages",
+        "en": "Deal Pipeline Stages",
+        "es": "Etapas del pipeline de deals"
+      },
+      "src": "/.playwright-mcp/.playwright-mcp/kb-quick-start/25-deal-detail-pipeline-stages.png",
+      "alt": {
+        "nl": "Deal detail met pipeline stage knoppen bovenaan",
+        "en": "Deal detail with pipeline stage buttons at the top",
+        "es": "Detalle del deal con botones de etapa del pipeline en la parte superior"
+      },
+      "width": 1200,
+      "height": 800,
+      "caption": {
+        "nl": "Klik op een stage button om de deal door de pipeline te bewegen - van 'Knowing Property' naar 'Won'",
+        "en": "Click a stage button to move the deal through the pipeline - from 'Knowing Property' to 'Won'",
+        "es": "Haz clic en un botón de etapa para mover el deal por el pipeline - desde 'Knowing Property' hasta 'Won'"
+      }
     },
 
     {
