@@ -264,7 +264,7 @@ const faqSchema = {
 
   .faq-question-text {
     flex: 1;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;        /* 18px - consistent with body text (was 17px) */
     font-weight: 600;
     color: #0a1f44;
     line-height: 1.5;
@@ -291,8 +291,8 @@ const faqSchema = {
   .faq-answer {
     padding: 0 1.5rem 1.5rem 1.5rem;
     color: #475569;
-    line-height: 1.7;
-    font-size: 0.9375rem;
+    line-height: 1.75;          /* Improved from 1.7 for consistency */
+    font-size: 1.125rem;        /* 18px - consistent with body text (was 15px) */
   }
 
   /* Footer */
@@ -355,12 +355,12 @@ const faqSchema = {
     }
 
     .faq-question-text {
-      font-size: 1rem;
+      font-size: 1.0625rem;       /* 17px on mobile - slightly smaller but still readable */
     }
 
     .faq-answer {
       padding: 0 1.25rem 1.25rem 1.25rem;
-      font-size: 0.875rem;
+      font-size: 1rem;            /* 16px on mobile - better than 14px */
     }
 
     .faq-footer {

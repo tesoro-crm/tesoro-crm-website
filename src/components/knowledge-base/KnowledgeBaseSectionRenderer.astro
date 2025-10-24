@@ -59,6 +59,10 @@ const { section, lang } = Astro.props;
         width={section.width}
         height={section.height}
         loading="lazy"
+        class="kb-image-clickable"
+        data-modal-src={section.src}
+        data-modal-alt={section.alt[lang]}
+        data-modal-caption={section.caption ? section.caption[lang] : ''}
       />
       {section.caption && (
         <figcaption>{section.caption[lang]}</figcaption>
@@ -87,15 +91,89 @@ const { section, lang } = Astro.props;
 )}
 
 <style>
+  /* Section Spacing */
   .knowledge-base-section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
+  .knowledge-base-section:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Typography - Professional Documentation Style */
+  /* Based on 2025 best practices: baseline grid (8px), optimal line heights, consistent vertical rhythm */
+
   .knowledge-base-section__title {
-    font-size: 1.75rem;
+    font-size: 1.875rem;         /* 30px */
     font-weight: 700;
     color: #0f172a;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;         /* 48px - closer to "double font size" rule */
+    line-height: 1.3;
+    letter-spacing: -0.01em;     /* Reduced for better readability */
+  }
+
+  /* Global Typography for Content */
+  .knowledge-base-section :global(p) {
+    font-size: 1.125rem;         /* 18px - optimal for body text */
+    line-height: 1.75;           /* 28px - excellent for reading */
+    color: #334155;
+    margin-bottom: 1.5rem;       /* 24px - 8px baseline grid */
+    max-width: 75ch;             /* Optimal line length */
+  }
+
+  .knowledge-base-section :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .knowledge-base-section :global(strong) {
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .knowledge-base-section :global(ul),
+  .knowledge-base-section :global(ol) {
+    font-size: 1.125rem;         /* 18px - matches body text (was 17px) */
+    line-height: 1.75;           /* Matches body text for consistency */
+    color: #334155;
+    margin-bottom: 1.5rem;       /* 24px - consistent with paragraphs */
+    max-width: 75ch;
+    padding-left: 1.5rem;
+  }
+
+  .knowledge-base-section :global(li) {
+    margin-bottom: 0.5rem;       /* 8px - consistent baseline grid */
+    padding-left: 0.25rem;
+  }
+
+  .knowledge-base-section :global(li:last-child) {
+    margin-bottom: 0;
+  }
+
+  .knowledge-base-section :global(ul ul),
+  .knowledge-base-section :global(ol ul),
+  .knowledge-base-section :global(ul ol),
+  .knowledge-base-section :global(ol ol) {
+    margin-top: 0.5rem;          /* 8px - baseline grid */
+    margin-bottom: 0;
+  }
+
+  .knowledge-base-section :global(h3) {
+    font-size: 1.5rem;           /* 24px */
+    font-weight: 600;
+    color: #1e293b;
+    margin-top: 2rem;            /* 32px - reduced from 40px for better flow */
+    margin-bottom: 1.5rem;       /* 24px - increased for better hierarchy */
+    line-height: 1.3;            /* Tighter for headings */
+    letter-spacing: normal;      /* Removed negative spacing for readability */
+  }
+
+  .knowledge-base-section :global(h4) {
+    font-size: 1.25rem;          /* 20px */
+    font-weight: 600;
+    color: #1e293b;
+    margin-top: 1.5rem;          /* 24px - consistent baseline grid */
+    margin-bottom: 1rem;         /* 16px - appropriate for smaller heading */
+    line-height: 1.4;
   }
 
   /* Code Block Styles */
@@ -124,24 +202,42 @@ const { section, lang } = Astro.props;
     font-style: italic;
   }
 
-  /* Image Styles */
+  /* Image Styles - Professional Documentation */
+  .knowledge-base-section--image {
+    margin: 3rem 0;
+  }
+
   .knowledge-base-section--image figure {
     margin: 0;
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
   }
 
   .knowledge-base-section--image img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .knowledge-base-section--image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.15), 0 15px 20px -10px rgba(0, 0, 0, 0.15);
   }
 
   .knowledge-base-section--image figcaption {
-    margin-top: 0.75rem;
+    margin-top: 1.25rem;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     color: #64748b;
-    font-style: italic;
+    line-height: 1.6;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* FAQ Styles */
@@ -202,4 +298,189 @@ const { section, lang } = Astro.props;
     color: #475569;
     line-height: 1.6;
   }
+
+  /* Image Modal/Lightbox */
+  .kb-image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    padding: 2rem;
+    overflow: auto;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
+  }
+
+  .kb-image-modal.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .kb-image-modal__content {
+    position: relative;
+    max-width: 95vw;
+    max-height: 90vh;
+    animation: scaleIn 0.3s ease;
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .kb-image-modal__image {
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .kb-image-modal__caption {
+    text-align: center;
+    color: white;
+    font-size: 0.9375rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kb-image-modal__close {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+  }
+
+  .kb-image-modal__close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+  }
+
+  .kb-image-modal__close-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.75rem;
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .kb-image-modal {
+      padding: 1rem;
+    }
+
+    .kb-image-modal__image {
+      max-height: 80vh;
+    }
+
+    .kb-image-modal__close {
+      top: 1rem;
+      right: 1rem;
+      width: 40px;
+      height: 40px;
+    }
+
+    .kb-image-modal__close-icon {
+      font-size: 1.5rem;
+    }
+  }
 </style>
+
+<!-- Image Modal -->
+<div id="kb-image-modal" class="kb-image-modal">
+  <button class="kb-image-modal__close" id="kb-modal-close" aria-label="Close image">
+    <span class="kb-image-modal__close-icon">close</span>
+  </button>
+  <div class="kb-image-modal__content">
+    <img id="kb-modal-image" class="kb-image-modal__image" src="" alt="" />
+    <div id="kb-modal-caption" class="kb-image-modal__caption"></div>
+  </div>
+</div>
+
+<script>
+  // Image modal functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('kb-image-modal');
+    const modalImage = document.getElementById('kb-modal-image');
+    const modalCaption = document.getElementById('kb-modal-caption');
+    const closeBtn = document.getElementById('kb-modal-close');
+    const clickableImages = document.querySelectorAll('.kb-image-clickable');
+
+    // Open modal when clicking on an image
+    clickableImages.forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.getAttribute('data-modal-src');
+        const alt = img.getAttribute('data-modal-alt');
+        const caption = img.getAttribute('data-modal-caption');
+
+        if (modalImage && modalCaption && modal) {
+          modalImage.src = src || '';
+          modalImage.alt = alt || '';
+          modalCaption.textContent = caption || '';
+          modalCaption.style.display = caption ? 'block' : 'none';
+          modal.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    // Close modal when clicking close button
+    closeBtn?.addEventListener('click', () => {
+      modal?.classList.remove('is-open');
+      document.body.style.overflow = '';
+    });
+
+    // Close modal when clicking backdrop
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal?.classList.contains('is-open')) {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+</script>
