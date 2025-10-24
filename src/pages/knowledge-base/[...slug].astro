@@ -6,6 +6,8 @@ import type { Language } from '../../types/knowledge-base';
 import KnowledgeBaseSectionRenderer from '../../components/knowledge-base/KnowledgeBaseSectionRenderer.astro';
 import { getAuthor } from '../../utils/authors';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const articles = await getCollection('knowledge-base');
 
@@ -43,11 +45,13 @@ const description = articleData.hero.description[locale];
 
 // Generate TOC from sections
 const tocItems = articleData.sections
-  .filter(section => section.title)
-  .map(section => ({
-    id: section.id,
-    title: section.title![locale] // We know title exists because we filtered
-  }));
+  ? articleData.sections
+      .filter(section => section.title)
+      .map(section => ({
+        id: section.id,
+        title: section.title![locale] // We know title exists because we filtered
+      }))
+  : [];
 
 // Page metadata
 const pageTitle = `${title} - Tesoro CRM Knowledge Base`;
@@ -139,7 +143,7 @@ const pageDescription = description;
 
         <!-- Article Content -->
         <main class="kb-article__content">
-          {articleData.sections.map(section => (
+          {articleData.sections && articleData.sections.map(section => (
             <KnowledgeBaseSectionRenderer section={section} lang={locale} />
           ))}
 
@@ -176,7 +180,7 @@ const pageDescription = description;
                       <span class="icon kb-article__faq-icon">chevron_right</span>
                       <span>{item.question[locale]}</span>
                     </summary>
-                    <div class="kb-article__faq-answer" set:html={item.answer[locale].text} />
+                    <div class="kb-article__faq-answer" set:html={item.answer[locale]} />
                   </details>
                 ))}
               </div>

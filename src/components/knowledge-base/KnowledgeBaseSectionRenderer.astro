@@ -73,13 +73,13 @@ const { section, lang } = Astro.props;
       <h2 class="knowledge-base-section__title">{section.title[lang]}</h2>
     )}
     <div class="faq-list">
-      {section.items.map((item: any) => (
+      {section.items && section.items.map((item: any) => (
         <details class="faq-item">
           <summary class="faq-question">
             <span class="icon faq-icon">chevron_right</span>
             <span>{item.question[lang]}</span>
           </summary>
-          <div class="faq-answer" set:html={item.answer[lang].text} />
+          <div class="faq-answer" set:html={item.answer[lang]} />
         </details>
       ))}
     </div>
