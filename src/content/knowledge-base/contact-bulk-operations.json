@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "bulk-operations", "import", "export", "efficiency"],
+    "tags": [
+      "contacts",
+      "bulk-operations",
+      "import",
+      "export",
+      "efficiency"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["bulk operations tesoro", "import contacts", "export contacts", "batch edit", "mass update crm"]
+    "keywords": [
+      "bulk operations tesoro",
+      "import contacts",
+      "export contacts",
+      "batch edit",
+      "mass update crm"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Bulk Operaties: Grote Aantallen Contacten Beheren",
@@ -32,7 +42,6 @@
     },
     "icon": "upload_file"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "importing-contacts",
@@ -156,7 +164,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "exporting-contacts",
@@ -177,7 +184,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -192,7 +198,7 @@
           "text": "<ul><li><strong>Test eerst met kleine batch:</strong> Importeer eerst 10 contacten om mapping te testen</li><li><strong>Maak een backup:</strong> Export je huidige database voor je grote import doet</li><li><strong>Valideer je data:</strong> Check op lege velden, ongeldige emails, duplicaten</li><li><strong>Gebruik consistente formatting:</strong> Zelfde format voor telefoon, data, etc.</li><li><strong>Plan import timing:</strong> Doe grote imports buiten piektijden</li><li><strong>Communiceer met team:</strong> Waarschuw teamleden bij grote wijzigingen</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Test first with small batch:</strong> Import 10 contacts first to test mapping</li><li><strong>Make a backup:</strong> Export your current database before doing large import</li><li><strong>Validate your data:</strong> Check for empty fields, invalid emails, duplicates</li><li><strong>Use consistent formatting:</strong> Same format for phone, dates, etc.</li><li><strong>Plan import timing:</strong> Do large imports outside peak hours</li><li><strong>Communicate with team:</strong> Warn team members of major changes</li></ul>"
+          "text": "<ul><li><strong>Test first with small batch:</strong> Import 10 contacts first to test mapping</li><li><strong>Make a backup:</strong> Export your current database before doing large import</li><li><strong>Validate your data:</strong> Check for empty fields, invalid emails, duplicates</li><li><strong>Use consistent formatting:</strong> Same format for phone, dates, etc.</li><li><strong>Plan import timing:</strong> Do large imports outside peak hours</li><li><strong>Communicate with team:</strong> Warn teamlids of major changes</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Prueba primero con lote pequeño:</strong> Importa 10 contactos primero para probar mapeo</li><li><strong>Haz un respaldo:</strong> Exporta tu base de datos actual antes de hacer importación grande</li><li><strong>Valida tus datos:</strong> Verifica campos vacíos, emails inválidos, duplicados</li><li><strong>Usa formato consistente:</strong> Mismo formato para teléfono, fechas, etc.</li><li><strong>Planifica el momento de importación:</strong> Haz importaciones grandes fuera de horas pico</li><li><strong>Comunica con el equipo:</strong> Advierte a los miembros del equipo sobre cambios importantes</li></ul>"
@@ -200,14 +206,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "creating-contacts-step-by-step",
     "contact-merge-duplicates",
     "contact-advanced-search"
   ],
-
   "faq": [
     {
       "question": {

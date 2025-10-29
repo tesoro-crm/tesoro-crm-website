@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "beginner",
-    "tags": ["contacts", "create-contact", "tutorial", "getting-started", "basics"],
+    "tags": [
+      "contacts",
+      "create-contact",
+      "tutorial",
+      "getting-started",
+      "basics"
+    ],
     "featured": true,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["create contact tesoro", "add contact crm", "new contact", "contact creation", "tesoro tutorial"]
+    "keywords": [
+      "create contact tesoro",
+      "add contact crm",
+      "new contact",
+      "contact creation",
+      "tesoro tutorial"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Contacten Toevoegen: Stap-voor-Stap Tutorial",
@@ -32,7 +42,6 @@
     },
     "icon": "person_add"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "detailed-creation-process",
@@ -145,19 +153,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Finaliseer je contact:</p><ol><li>Controleer of alle verplichte velden zijn ingevuld</li><li>Klik op <strong>Save Contact</strong> onderaan het formulier</li><li>Je contact wordt opgeslagen en verschijnt in je contactenlijst</li></ol><p><strong>Direct na het opslaan kun je:</strong></p><ul><li>Het contact koppelen aan een deal (Create Deal)</li><li>Een woning toewijzen (Link Property)</li><li>Een taak toevoegen (Add Task)</li><li>Een notitie schrijven (Add Note)</li><li>Een email sturen (Send Email)</li></ul><p>Je contact krijgt automatisch een uniek ID en wordt toegevoegd aan je database.</p>"
+              "text": "<p>Finaliseer je contact:</p><ol><li>Controleer of alle verplichte velden zijn ingevuld</li><li>Klik op <strong>Save Contact</strong> onderaan het formulier</li><li>Je contact wordt opgeslagen en verschijnt in je contactenlijst</li></ol><p><strong>Direct na het opslaan kun je:</strong></p><ul><li>Het contact koppelen aan een deal (Create Deal)</li><li>Een woning toewijzen (Link Property)</li><li>Een taak toevoegen (Add Task)</li><li>Een nietitie schrijven (Add niete)</li><li>Een email sturen (Send Email)</li></ul><p>Je contact krijgt automatisch een uniek ID en wordt toegevoegd aan je database.</p>"
             },
             "en": {
-              "text": "<p>Finalize your contact:</p><ol><li>Check that all required fields are filled in</li><li>Click <strong>Save Contact</strong> at the bottom of the form</li><li>Your contact is saved and appears in your contact list</li></ol><p><strong>Immediately after saving you can:</strong></p><ul><li>Link the contact to a deal (Create Deal)</li><li>Assign a property (Link Property)</li><li>Add a task (Add Task)</li><li>Write a note (Add Note)</li><li>Send an email (Send Email)</li></ul><p>Your contact automatically gets a unique ID and is added to your database.</p>"
+              "text": "<p>Finalize your contact:</p><ol><li>Check that all required fields are filled in</li><li>Click <strong>Save Contact</strong> at the bottom of the form</li><li>Your contact is saved and appears in your contact list</li></ol><p><strong>Immediately after saving you can:</strong></p><ul><li>Link the contact to a deal (Create Deal)</li><li>Assign a property (Link Property)</li><li>Add a task (Add Task)</li><li>Write a niete (Add niete)</li><li>Send an email (Send Email)</li></ul><p>Your contact automatically gets a unique ID and is added to your database.</p>"
             },
             "es": {
-              "text": "<p>Finaliza tu contacto:</p><ol><li>Verifica que todos los campos obligatorios estén completados</li><li>Haz clic en <strong>Save Contact</strong> en la parte inferior del formulario</li><li>Tu contacto se guarda y aparece en tu lista de contactos</li></ol><p><strong>Inmediatamente después de guardar puedes:</strong></p><ul><li>Vincular el contacto a un deal (Create Deal)</li><li>Asignar una propiedad (Link Property)</li><li>Agregar una tarea (Add Task)</li><li>Escribir una nota (Add Note)</li><li>Enviar un email (Send Email)</li></ul><p>Tu contacto obtiene automáticamente un ID único y se agrega a tu base de datos.</p>"
+              "text": "<p>Finaliza tu contacto:</p><ol><li>Verifica que todos los campos obligatorios estén completados</li><li>Haz clic en <strong>Save Contact</strong> en la parte inferior del formulario</li><li>Tu contacto se guarda y aparece en tu lista de contactos</li></ol><p><strong>Inmediatamente después de guardar puedes:</strong></p><ul><li>Vincular el contacto a un deal (Create Deal)</li><li>Asignar una propiedad (Link Property)</li><li>Agregar una tarea (Add Task)</li><li>Escribir una nieta (Add niete)</li><li>Enviar un email (Send Email)</li></ul><p>Tu contacto obtiene automáticamente un ID único y se agrega a tu base de datos.</p>"
             }
           }
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "advanced-fields",
@@ -180,14 +187,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-types-explained",
     "contact-custom-fields-guide",
     "contact-bulk-operations"
   ],
-
   "faq": [
     {
       "question": {

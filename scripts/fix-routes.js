@@ -22,6 +22,8 @@ const routes = {
     '/favicon.ico',
     '/robots.txt',
     '/sitemap-*.xml',
+    '/knowledge-base/*',  // Prerendered KB pages
+    '/blog/*',            // Prerendered blog pages
     '/*.png',
     '/*.jpg',
     '/*.jpeg',

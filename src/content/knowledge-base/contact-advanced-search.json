@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "search", "filters", "advanced", "segmentation"],
+    "tags": [
+      "contacts",
+      "search",
+      "filters",
+      "advanced",
+      "segmentation"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["tesoro advanced search", "contact filtering", "crm search", "find contacts", "contact segmentation"]
+    "keywords": [
+      "tesoro advanced search",
+      "contact filtering",
+      "crm search",
+      "find contacts",
+      "contact segmentation"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Geavanceerd Zoeken en Filteren van Contacten",
@@ -32,7 +42,6 @@
     },
     "icon": "search"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "using-advanced-filters",
@@ -129,7 +137,7 @@
               "text": "<p>Veelgebruikte filters kun je opslaan voor later:</p><ol><li>Stel je filters in zoals gewenst</li><li>Klik <strong>Save View</strong> onderaan het filter panel</li><li>Geef je view een naam (bijv. 'Amsterdam VIP Clients')</li><li>Klik <strong>Save</strong></li></ol><p><strong>Je saved view verschijnt nu:</strong></p><ul><li>In het snelmenu bovenaan de lijst</li><li>Als één-klik filter optie</li><li>Voor alle teamleden (als je wil)</li></ul><p><strong>Saved view beheren:</strong></p><ul><li>Edit view: Wijzig filters en klik 'Update View'</li><li>Rename view: Klik op het potlood icoon</li><li>Delete view: Klik op het prullenbak icoon</li><li>Set as default: Maak deze view je standaard weergave</li></ul>"
             },
             "en": {
-              "text": "<p>Save frequently used filters for later:</p><ol><li>Set up your filters as desired</li><li>Click <strong>Save View</strong> at the bottom of the filter panel</li><li>Give your view a name (e.g., 'Amsterdam VIP Clients')</li><li>Click <strong>Save</strong></li></ol><p><strong>Your saved view now appears:</strong></p><ul><li>In the quick menu at the top of the list</li><li>As a one-click filter option</li><li>For all team members (if you want)</li></ul><p><strong>Manage saved view:</strong></p><ul><li>Edit view: Change filters and click 'Update View'</li><li>Rename view: Click the pencil icon</li><li>Delete view: Click the trash icon</li><li>Set as default: Make this view your default display</li></ul>"
+              "text": "<p>Save frequently used filters for later:</p><ol><li>Set up your filters as desired</li><li>Click <strong>Save View</strong> at the bottom of the filter panel</li><li>Give your view a name (e.g., 'Amsterdam VIP Clients')</li><li>Click <strong>Save</strong></li></ol><p><strong>Your saved view now appears:</strong></p><ul><li>In the quick menu at the top of the list</li><li>As a one-click filter option</li><li>For all teamlids (if you want)</li></ul><p><strong>Manage saved view:</strong></p><ul><li>Edit view: Change filters and click 'Update View'</li><li>Rename view: Click the pencil icon</li><li>Delete view: Click the trash icon</li><li>Set as default: Make this view your default display</li></ul>"
             },
             "es": {
               "text": "<p>Guarda filtros frecuentemente usados para más tarde:</p><ol><li>Configura tus filtros como desees</li><li>Haz clic en <strong>Save View</strong> en la parte inferior del panel de filtros</li><li>Dale un nombre a tu vista (ej., 'Amsterdam VIP Clients')</li><li>Haz clic en <strong>Save</strong></li></ol><p><strong>Tu vista guardada ahora aparece:</strong></p><ul><li>En el menú rápido en la parte superior de la lista</li><li>Como una opción de filtro de un clic</li><li>Para todos los miembros del equipo (si quieres)</li></ul><p><strong>Gestionar vista guardada:</strong></p><ul><li>Editar vista: Cambia filtros y haz clic en 'Update View'</li><li>Renombrar vista: Haz clic en el icono de lápiz</li><li>Eliminar vista: Haz clic en el icono de papelera</li><li>Establecer como predeterminado: Hacer esta vista tu visualización predeterminada</li></ul>"
@@ -138,7 +146,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "power-user-tips",
@@ -161,14 +168,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-tags-organization",
     "contact-custom-fields-guide",
     "contact-bulk-operations"
   ],
-
   "faq": [
     {
       "question": {

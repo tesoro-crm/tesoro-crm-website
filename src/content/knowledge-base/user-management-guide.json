@@ -7,7 +7,13 @@
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "intermediate",
-    "tags": ["settings", "users", "permissions", "roles", "team"],
+    "tags": [
+      "settings",
+      "users",
+      "permissions",
+      "roles",
+      "team"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop",
-    "keywords": ["user management", "permissions", "roles", "team management", "access control", "tesoro crm"]
+    "keywords": [
+      "user management",
+      "permissions",
+      "roles",
+      "team management",
+      "access control",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -25,7 +38,7 @@
     },
     "description": {
       "nl": "Leer hoe u teamleden toevoegt, rollen toewijst en machtigingen configureert om veilige en efficiënte toegang tot uw CRM te garanderen.",
-      "en": "Learn how to add team members, assign roles, and configure permissions to ensure secure and efficient access to your CRM.",
+      "en": "Learn how to add teamlids, assign roles, and configure permissions to ensure secure and efficient access to your CRM.",
       "es": "Aprenda cómo agregar miembros del equipo, asignar roles y configurar permisos para garantizar un acceso seguro y eficiente a su CRM."
     },
     "icon": "group"
@@ -36,7 +49,7 @@
       "id": "intro",
       "content": {
         "nl": "Effectief gebruikersbeheer is essentieel voor het onderhouden van beveiliging en productiviteit binnen uw CRM. Tesoro CRM biedt een flexibel rolgebaseerd toegangscontrolesysteem waarmee u precies kunt bepalen wat elk teamlid kan zien en doen.\n\nMet maximaal 10 gebruikers in uw abonnement (€99/maand) is het belangrijk om uw team strategisch te structureren om efficiëntie te maximaliseren terwijl u gegevensbeveiliging handhaaft.",
-        "en": "Effective user management is essential for maintaining security and productivity within your CRM. Tesoro CRM provides a flexible role-based access control system that allows you to precisely control what each team member can see and do.\n\nWith up to 10 users included in your subscription (€99/month), it's important to structure your team strategically to maximize efficiency while maintaining data security.",
+        "en": "Effective user management is essential for maintaining security and productivity within your CRM. Tesoro CRM provides a flexible role-based access control system that allows you to precisely control what each teamlid can see and do.\n\nWith up to 10 users included in your subscription (€99/month), it's important to structure your team strategically to maximize efficiency while maintaining data security.",
         "es": "La gestión efectiva de usuarios es esencial para mantener la seguridad y productividad dentro de su CRM. Tesoro CRM proporciona un sistema flexible de control de acceso basado en roles que le permite controlar con precisión qué puede ver y hacer cada miembro del equipo.\n\nCon hasta 10 usuarios incluidos en su suscripción (€99/mes), es importante estructurar su equipo estratégicamente para maximizar la eficiencia mientras mantiene la seguridad de los datos."
       }
     },
@@ -69,7 +82,7 @@
           },
           "description": {
             "nl": "Klik op de knop 'Gebruiker toevoegen' rechtsboven. Vul het e-mailadres van de nieuwe gebruiker in, voornaam en achternaam toe. Het e-mailadres wordt hun unieke login en kan later niet worden gewijzigd zonder de gebruiker te verwijderen en opnieuw toe te voegen.",
-            "en": "Click the 'Add User' button in the top right. Enter the new user's email address, first name, and last name. The email address becomes their unique login and cannot be changed later without removing and re-adding the user.",
+            "en": "Click the 'Add User' button in the top right. Enter the new user's email address, first name, and last name. The email address becomes their unique login and canniet be changed later without removing and re-adding the user.",
             "es": "Haga clic en el botón 'Agregar usuario' en la parte superior derecha. Ingrese la dirección de correo electrónico del nuevo usuario, nombre y apellido. La dirección de correo electrónico se convierte en su inicio de sesión único y no se puede cambiar más tarde sin eliminar y volver a agregar al usuario."
           }
         },
@@ -131,7 +144,7 @@
           },
           "description": {
             "nl": "Volledige toegang tot alle functies en instellingen. Beheerders kunnen gebruikers toevoegen/verwijderen, bedrijfsinstellingen wijzigen, facturatie beheren en alle gegevens in het systeem zien en bewerken. Wijs deze rol alleen toe aan vertrouwde teamleden die volledige controle nodig hebben.",
-            "en": "Full access to all features and settings. Administrators can add/remove users, modify company settings, manage billing, and view and edit all data in the system. Only assign this role to trusted team members who need complete control.",
+            "en": "Full access to all features and settings. Administrators can add/remove users, modify company settings, manage billing, and view and edit all data in the system. Only assign this role to trusted teamlids who need complete control.",
             "es": "Acceso completo a todas las funciones y configuraciones. Los administradores pueden agregar/eliminar usuarios, modificar la configuración de la empresa, gestionar la facturación y ver y editar todos los datos en el sistema. Solo asigne este rol a miembros de confianza del equipo que necesiten control completo."
           }
         },
@@ -143,7 +156,7 @@
           },
           "description": {
             "nl": "Kan alle contacten, woningen en deals bekijken en beheren, maar kan geen gebruikers toevoegen of bedrijfsinstellingen wijzigen. Managers kunnen rapporten genereren, tags beheren en workflows configureren. Deze rol is ideaal voor teamleiders en verkoopmanagers.",
-            "en": "Can view and manage all contacts, properties, and deals, but cannot add users or change company settings. Managers can generate reports, manage tags, and configure workflows. This role is ideal for team leaders and sales managers.",
+            "en": "Can view and manage all contacts, properties, and deals, but canniet add users or change company settings. Managers can generate reports, manage tags, and configure workflows. This role is ideal for team leaders and sales managers.",
             "es": "Puede ver y gestionar todos los contactos, propiedades y acuerdos, pero no puede agregar usuarios ni cambiar la configuración de la empresa. Los gerentes pueden generar informes, gestionar etiquetas y configurar flujos de trabajo. Este rol es ideal para líderes de equipo y gerentes de ventas."
           }
         },
@@ -155,7 +168,7 @@
           },
           "description": {
             "nl": "Kan hun eigen contacten, woningen en deals beheren. Makelaars kunnen gegevens die aan hen zijn toegewezen zien en bewerken, maar hebben geen toegang tot records van andere teamleden tenzij deze expliciet worden gedeeld. Dit is de standaardrol voor de meeste teamleden.",
-            "en": "Can manage their own contacts, properties, and deals. Agents can view and edit data assigned to them but cannot access other team members' records unless explicitly shared. This is the default role for most team members.",
+            "en": "Can manage their own contacts, properties, and deals. Agents can view and edit data assigned to them but canniet access other teamlids' records unless explicitly shared. This is the default role for most teamlids.",
             "es": "Puede gestionar sus propios contactos, propiedades y acuerdos. Los agentes pueden ver y editar datos asignados a ellos pero no pueden acceder a los registros de otros miembros del equipo a menos que se compartan explícitamente. Este es el rol predeterminado para la mayoría de los miembros del equipo."
           }
         }
@@ -192,9 +205,9 @@
             "es": "Cambiar rol de usuario"
           },
           "description": {
-            "nl": "Klik op een gebruiker in de lijst om hun profiel te openen. Selecteer 'Rol bewerken' en kies de nieuwe rol. De wijziging wordt onmiddellijk van kracht en de gebruiker ontvangt een notificatie-e-mail over de rolwijziging en wat dit betekent voor hun machtigingen.",
-            "en": "Click on a user in the list to open their profile. Select 'Edit Role' and choose the new role. The change takes effect immediately and the user receives a notification email about the role change and what it means for their permissions.",
-            "es": "Haga clic en un usuario de la lista para abrir su perfil. Seleccione 'Editar rol' y elija el nuevo rol. El cambio surte efecto inmediatamente y el usuario recibe un correo electrónico de notificación sobre el cambio de rol y lo que significa para sus permisos."
+            "nl": "Klik op een gebruiker in de lijst om hun profiel te openen. Selecteer 'Rol bewerken' en kies de nieuwe rol. De wijziging wordt onmiddellijk van kracht en de gebruiker ontvangt een nietificatie-e-mail over de rolwijziging en wat dit betekent voor hun machtigingen.",
+            "en": "Click on a user in the list to open their profile. Select 'Edit Role' and choose the new role. The change takes effect immediately and the user receives a nietification email about the role change and what it means for their permissions.",
+            "es": "Haga clic en un usuario de la lista para abrir su perfil. Seleccione 'Editar rol' y elija el nuevo rol. El cambio surte efecto inmediatamente y el usuario recibe un correo electrónico de nietificación sobre el cambio de rol y lo que significa para sus permisos."
           }
         },
         {
@@ -205,7 +218,7 @@
           },
           "description": {
             "nl": "In plaats van een gebruiker te verwijderen, kunt u hun account deactiveren. Gedeactiveerde gebruikers kunnen niet inloggen, maar hun gegevens en activiteitsgeschiedenis blijven behouden. Dit is nuttig wanneer een teamlid tijdelijk afwezig is of het bedrijf verlaat. U kunt ze later weer activeren zonder gegevens te verliezen.",
-            "en": "Instead of deleting a user, you can deactivate their account. Deactivated users cannot log in, but their data and activity history are preserved. This is useful when a team member is temporarily away or leaves the company. You can reactivate them later without losing data.",
+            "en": "Instead of deleting a user, you can deactivate their account. Deactivated users canniet log in, but their data and activity history are preserved. This is useful when a teamlid is temporarily away or leaves the company. You can reactivate them later without losing data.",
             "es": "En lugar de eliminar un usuario, puede desactivar su cuenta. Los usuarios desactivados no pueden iniciar sesión, pero sus datos y el historial de actividad se conservan. Esto es útil cuando un miembro del equipo está temporalmente ausente o deja la empresa. Puede reactivarlos más tarde sin perder datos."
           }
         },
@@ -217,7 +230,7 @@
           },
           "description": {
             "nl": "Als een gebruiker hun wachtwoord vergeet, klik dan op hun profiel en selecteer 'Wachtwoord resetten'. De gebruiker ontvangt een e-mail met instructies om een nieuw wachtwoord in te stellen. Om beveiligingsredenen kunnen beheerders geen wachtwoorden van gebruikers zien of rechtstreeks instellen.",
-            "en": "If a user forgets their password, click on their profile and select 'Reset Password'. The user will receive an email with instructions to set a new password. For security reasons, administrators cannot view or directly set user passwords.",
+            "en": "If a user forgets their password, click on their profile and select 'Reset Password'. The user will receive an email with instructions to set a new password. For security reasons, administrators canniet view or directly set user passwords.",
             "es": "Si un usuario olvida su contraseña, haga clic en su perfil y seleccione 'Restablecer contraseña'. El usuario recibirá un correo electrónico con instrucciones para establecer una nueva contraseña. Por razones de seguridad, los administradores no pueden ver ni establecer directamente las contraseñas de los usuarios."
           }
         },
@@ -229,7 +242,7 @@
           },
           "description": {
             "nl": "Het verwijderen van een gebruiker is permanent en kan niet ongedaan worden gemaakt. Voordat u een gebruiker verwijdert, wijs alle contacten, woningen en deals opnieuw toe aan een andere teamlid. Het systeem zal u waarschuwen als er nog toegewezen records zijn. Gedeelde data zoals e-mailgeschiedenis blijft behouden.",
-            "en": "Deleting a user is permanent and cannot be undone. Before deleting a user, reassign all their contacts, properties, and deals to another team member. The system will warn you if there are still assigned records. Shared data like email history is preserved.",
+            "en": "Deleting a user is permanent and canniet be undone. Before deleting a user, reassign all their contacts, properties, and deals to aniether teamlid. The system will warn you if there are still assigned records. Shared data like email history is preserved.",
             "es": "Eliminar un usuario es permanente y no se puede deshacer. Antes de eliminar un usuario, reasigne todos sus contactos, propiedades y acuerdos a otro miembro del equipo. El sistema le advertirá si todavía hay registros asignados. Los datos compartidos como el historial de correo electrónico se conservan."
           }
         }
@@ -279,7 +292,7 @@
           },
           "description": {
             "nl": "Wijs een Manager-rol toe aan teamleiders zodat ze toegang hebben tot alle records van hun teamleden. Dit maakt coaching, kwaliteitscontrole en leadherverdeling gemakkelijker zonder volledige beheerrechten te hoeven geven.",
-            "en": "Assign the Manager role to team leaders so they can access all records of their team members. This makes coaching, quality control, and lead redistribution easier without needing to grant full administrator rights.",
+            "en": "Assign the Manager role to team leaders so they can access all records of their teamlids. This makes coaching, quality control, and lead redistribution easier without needing to grant full administrator rights.",
             "es": "Asigne el rol de Gerente a los líderes de equipo para que puedan acceder a todos los registros de los miembros de su equipo. Esto facilita el coaching, el control de calidad y la redistribución de clientes potenciales sin necesidad de otorgar derechos completos de administrador."
           }
         },
@@ -291,7 +304,7 @@
           },
           "description": {
             "nl": "Maak gedeelde contacten en woningen aan die alle teamleden kunnen bekijken (bijvoorbeeld kantoorcontacten, referentiewoningen). Gebruik tags om deze gemakkelijk te identificeren en te filteren in lijstweergaven.",
-            "en": "Create shared contacts and properties that all team members can view (e.g., office contacts, reference properties). Use tags to easily identify and filter these in list views.",
+            "en": "Create shared contacts and properties that all teamlids can view (e.g., office contacts, reference properties). Use tags to easily identify and filter these in list views.",
             "es": "Cree contactos y propiedades compartidos que todos los miembros del equipo puedan ver (por ejemplo, contactos de oficina, propiedades de referencia). Use etiquetas para identificarlos y filtrarlos fácilmente en las vistas de lista."
           }
         }
@@ -313,9 +326,9 @@
             "es": "¿Puedo promover a un usuario de Agente a Gerente?"
           },
           "answer": {
-            "nl": "Ja, u kunt de rol van een gebruiker op elk moment wijzigen. De nieuwe machtigingen worden onmiddellijk van kracht. De gebruiker ontvangt een notificatie over de rolwijziging en krijgt automatisch toegang tot functies die bij hun nieuwe rol horen.",
-            "en": "Yes, you can change a user's role at any time. The new permissions take effect immediately. The user receives a notification about the role change and automatically gains access to features associated with their new role.",
-            "es": "Sí, puede cambiar el rol de un usuario en cualquier momento. Los nuevos permisos surten efecto inmediatamente. El usuario recibe una notificación sobre el cambio de rol y obtiene automáticamente acceso a las funciones asociadas con su nuevo rol."
+            "nl": "Ja, u kunt de rol van een gebruiker op elk moment wijzigen. De nieuwe machtigingen worden onmiddellijk van kracht. De gebruiker ontvangt een nietificatie over de rolwijziging en krijgt automatisch toegang tot functies die bij hun nieuwe rol horen.",
+            "en": "Yes, you can change a user's role at any time. The new permissions take effect immediately. The user receives a nietification about the role change and automatically gains access to features associated with their new role.",
+            "es": "Sí, puede cambiar el rol de un usuario en cualquier momento. Los nuevos permisos surten efecto inmediatamente. El usuario recibe una nietificación sobre el cambio de rol y obtiene automáticamente acceso a las funciones asociadas con su nuevo rol."
           }
         },
         {
@@ -326,7 +339,7 @@
           },
           "answer": {
             "nl": "Alle gegevens blijven behouden. Contacten, woningen, deals en activiteitsgeschiedenis blijven in het systeem en kunnen worden bekeken door Managers en Beheerders. De gedeactiveerde gebruiker kan alleen niet meer inloggen. U kunt hun records opnieuw toewijzen aan actieve teamleden.",
-            "en": "All data is preserved. Contacts, properties, deals, and activity history remain in the system and can be viewed by Managers and Administrators. The deactivated user simply cannot log in anymore. You can reassign their records to active team members.",
+            "en": "All data is preserved. Contacts, properties, deals, and activity history remain in the system and can be viewed by Managers and Administrators. The deactivated user simply canniet log in anymore. You can reassign their records to active teamlids.",
             "es": "Todos los datos se conservan. Los contactos, propiedades, acuerdos e historial de actividad permanecen en el sistema y pueden ser vistos por Gerentes y Administradores. El usuario desactivado simplemente no puede iniciar sesión más. Puede reasignar sus registros a miembros activos del equipo."
           }
         },
@@ -338,7 +351,7 @@
           },
           "answer": {
             "nl": "Nee, Makelaars kunnen standaard alleen hun eigen contacten, woningen en deals zien. Als samenwerking nodig is, kan een Manager of Beheerder specifieke records delen met andere teamleden of hele teams toewijzen aan woningen of deals.",
-            "en": "No, by default Agents can only see their own contacts, properties, and deals. If collaboration is needed, a Manager or Administrator can share specific records with other team members or assign entire teams to properties or deals.",
+            "en": "No, by default Agents can only see their own contacts, properties, and deals. If collaboration is needed, a Manager or Administrator can share specific records with other teamlids or assign entire teams to properties or deals.",
             "es": "No, de manera predeterminada los Agentes solo pueden ver sus propios contactos, propiedades y acuerdos. Si se necesita colaboración, un Gerente o Administrador puede compartir registros específicos con otros miembros del equipo o asignar equipos completos a propiedades o acuerdos."
           }
         },

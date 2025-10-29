@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "integrations",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["integrations", "idealista", "xml-feed", "portal-sync", "property-listings"],
+    "tags": [
+      "integrations",
+      "idealista",
+      "xml-feed",
+      "portal-sync",
+      "property-listings"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["idealista integration", "xml feed setup", "property portal sync", "auto-sync idealista", "real estate portal integration"]
+    "keywords": [
+      "idealista integration",
+      "xml feed setup",
+      "property portal sync",
+      "auto-sync idealista",
+      "real estate portal integration"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Idealista integratie: automatische property synchronisatie",
@@ -32,7 +42,6 @@
     },
     "icon": "sync"
   },
-
   "sections": [
     {
       "type": "introduction",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "solution",
       "id": "idealista-setup-steps",
@@ -73,13 +81,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Voor de XML feed integratie heb je een <strong>Idealista Professional account</strong> nodig.</p><h4>Vereisten:</h4><ul><li>Actief Idealista Professional abonnement</li><li>Toegang tot Idealista Pro dashboard</li><li>API credentials (verkrijgbaar via Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in op je Idealista Professional account</li><li>Ga naar <strong>Settings → Integrations</strong></li><li>Vraag XML feed toegang aan bij Idealista support</li><li>Noteer je API credentials (API key en client ID)</li></ol><p><strong>Tip:</strong> Als je nog geen Professional account hebt, neem contact op met Idealista sales om een account aan te maken.</p>"
+              "text": "<p>Voor de XML feed integratie heb je een <strong>Idealista Professional account</strong> nodig.</p><h4>Vereisten:</h4><ul><li>Actief Idealista Professional abonnement</li><li>Toegang tot Idealista Pro dashboard</li><li>API credentials (verkrijgbaar via Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in op je Idealista Professional account</li><li>Ga naar <strong>Settings → Integrations</strong></li><li>Vraag XML feed toegang aan bij Idealista support</li><li>nieteer je API credentials (API key en client ID)</li></ol><p><strong>Tip:</strong> Als je nog geen Professional account hebt, neem contact op met Idealista sales om een account aan te maken.</p>"
             },
             "en": {
-              "text": "<p>For the XML feed integration, you need an <strong>Idealista Professional account</strong>.</p><h4>Requirements:</h4><ul><li>Active Idealista Professional subscription</li><li>Access to Idealista Pro dashboard</li><li>API credentials (available through Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in to your Idealista Professional account</li><li>Go to <strong>Settings → Integrations</strong></li><li>Request XML feed access from Idealista support</li><li>Note your API credentials (API key and client ID)</li></ol><p><strong>Tip:</strong> If you don't have a Professional account yet, contact Idealista sales to create an account.</p>"
+              "text": "<p>For the XML feed integration, you need an <strong>Idealista Professional account</strong>.</p><h4>Requirements:</h4><ul><li>Active Idealista Professional subscription</li><li>Access to Idealista Pro dashboard</li><li>API credentials (available through Idealista support)</li></ul><h4>Account setup:</h4><ol><li>Log in to your Idealista Professional account</li><li>Go to <strong>Settings → Integrations</strong></li><li>Request XML feed access from Idealista support</li><li>niete your API credentials (API key and client ID)</li></ol><p><strong>Tip:</strong> If you don't have a Professional account yet, contact Idealista sales to create an account.</p>"
             },
             "es": {
-              "text": "<p>Para la integración del feed XML, necesitas una <strong>cuenta profesional de Idealista</strong>.</p><h4>Requisitos:</h4><ul><li>Suscripción activa a Idealista Professional</li><li>Acceso al panel de Idealista Pro</li><li>Credenciales de API (disponibles a través del soporte de Idealista)</li></ul><h4>Configuración de cuenta:</h4><ol><li>Inicia sesión en tu cuenta de Idealista Professional</li><li>Ve a <strong>Settings → Integrations</strong></li><li>Solicita acceso al feed XML al soporte de Idealista</li><li>Anota tus credenciales de API (clave API e ID de cliente)</li></ol><p><strong>Consejo:</strong> Si aún no tienes una cuenta profesional, contacta con el equipo de ventas de Idealista para crear una cuenta.</p>"
+              "text": "<p>Para la integración del feed XML, necesitas una <strong>cuenta profesional de Idealista</strong>.</p><h4>Requisitos:</h4><ul><li>Suscripción activa a Idealista Professional</li><li>Acceso al panel de Idealista Pro</li><li>Credenciales de API (disponibles a través del soporte de Idealista)</li></ul><h4>Configuración de cuenta:</h4><ol><li>Inicia sesión en tu cuenta de Idealista Professional</li><li>Ve a <strong>Settings → Integrations</strong></li><li>Solicita acceso al feed XML al soporte de Idealista</li><li>Anieta tus credenciales de API (clave API e ID de cliente)</li></ol><p><strong>Consejo:</strong> Si aún no tienes una cuenta profesional, contacta con el equipo de ventas de Idealista para crear una cuenta.</p>"
             }
           }
         },
@@ -111,19 +119,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Geef de gegenereerde XML feed URL door aan Idealista zodat ze properties kunnen synchroniseren.</p><h4>Feed URL verkrijgen:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Kopieer de <strong>XML Feed URL</strong> (bijv. https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Noteer de <strong>Sync Frequency</strong> (standaard: elk uur)</li></ol><h4>URL aan Idealista doorgeven:</h4><ol><li>Log in op Idealista Professional dashboard</li><li>Ga naar <strong>Settings → Integrations → XML Feed</strong></li><li>Plak de Tesoro XML feed URL</li><li>Kies synchronisatie frequentie (aanbevolen: hourly)</li><li>Klik <strong>Validate Feed</strong> om te testen</li><li>Klik <strong>Activate Feed</strong></li></ol><p><strong>Let op:</strong> Het kan 10-15 minuten duren voordat de eerste synchronisatie plaatsvindt.</p>"
+              "text": "<p>Geef de gegenereerde XML feed URL door aan Idealista zodat ze properties kunnen synchroniseren.</p><h4>Feed URL verkrijgen:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Kopieer de <strong>XML Feed URL</strong> (bijv. https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>nieteer de <strong>Sync Frequency</strong> (standaard: elk uur)</li></ol><h4>URL aan Idealista doorgeven:</h4><ol><li>Log in op Idealista Professional dashboard</li><li>Ga naar <strong>Settings → Integrations → XML Feed</strong></li><li>Plak de Tesoro XML feed URL</li><li>Kies synchronisatie frequentie (aanbevolen: hourly)</li><li>Klik <strong>Validate Feed</strong> om te testen</li><li>Klik <strong>Activate Feed</strong></li></ol><p><strong>Let op:</strong> Het kan 10-15 minuten duren voordat de eerste synchronisatie plaatsvindt.</p>"
             },
             "en": {
-              "text": "<p>Provide the generated XML feed URL to Idealista so they can synchronize properties.</p><h4>Obtaining feed URL:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copy the <strong>XML Feed URL</strong> (e.g., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Note the <strong>Sync Frequency</strong> (default: hourly)</li></ol><h4>Providing URL to Idealista:</h4><ol><li>Log in to Idealista Professional dashboard</li><li>Go to <strong>Settings → Integrations → XML Feed</strong></li><li>Paste the Tesoro XML feed URL</li><li>Choose sync frequency (recommended: hourly)</li><li>Click <strong>Validate Feed</strong> to test</li><li>Click <strong>Activate Feed</strong></li></ol><p><strong>Note:</strong> It may take 10-15 minutes before the first synchronization occurs.</p>"
+              "text": "<p>Provide the generated XML feed URL to Idealista so they can synchronize properties.</p><h4>Obtaining feed URL:</h4><ol><li>In Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copy the <strong>XML Feed URL</strong> (e.g., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>niete the <strong>Sync Frequency</strong> (default: hourly)</li></ol><h4>Providing URL to Idealista:</h4><ol><li>Log in to Idealista Professional dashboard</li><li>Go to <strong>Settings → Integrations → XML Feed</strong></li><li>Paste the Tesoro XML feed URL</li><li>Choose sync frequency (recommended: hourly)</li><li>Click <strong>Validate Feed</strong> to test</li><li>Click <strong>Activate Feed</strong></li></ol><p><strong>niete:</strong> It may take 10-15 minutes before the first synchronization occurs.</p>"
             },
             "es": {
-              "text": "<p>Proporciona la URL del feed XML generado a Idealista para que puedan sincronizar propiedades.</p><h4>Obtener URL del feed:</h4><ol><li>En Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copia la <strong>XML Feed URL</strong> (ej., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Anota la <strong>Sync Frequency</strong> (predeterminado: cada hora)</li></ol><h4>Proporcionar URL a Idealista:</h4><ol><li>Inicia sesión en el panel de Idealista Professional</li><li>Ve a <strong>Settings → Integrations → XML Feed</strong></li><li>Pega la URL del feed XML de Tesoro</li><li>Elige frecuencia de sincronización (recomendado: cada hora)</li><li>Haz clic en <strong>Validate Feed</strong> para probar</li><li>Haz clic en <strong>Activate Feed</strong></li></ol><p><strong>Nota:</strong> Puede tomar 10-15 minutos antes de que ocurra la primera sincronización.</p>"
+              "text": "<p>Proporciona la URL del feed XML generado a Idealista para que puedan sincronizar propiedades.</p><h4>Obtener URL del feed:</h4><ol><li>En Tesoro: <strong>Settings → Integrations → Idealista</strong></li><li>Copia la <strong>XML Feed URL</strong> (ej., https://api.tesoro.estate/xml/idealista/your-company-id)</li><li>Anieta la <strong>Sync Frequency</strong> (predeterminado: cada hora)</li></ol><h4>Proporcionar URL a Idealista:</h4><ol><li>Inicia sesión en el panel de Idealista Professional</li><li>Ve a <strong>Settings → Integrations → XML Feed</strong></li><li>Pega la URL del feed XML de Tesoro</li><li>Elige frecuencia de sincronización (recomendado: cada hora)</li><li>Haz clic en <strong>Validate Feed</strong> para probar</li><li>Haz clic en <strong>Activate Feed</strong></li></ol><p><strong>nieta:</strong> Puede tomar 10-15 minutos antes de que ocurra la primera sincronización.</p>"
             }
           }
         }
       ]
     },
-
     {
       "type": "text",
       "id": "property-mapping",
@@ -144,7 +151,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "sync-behavior",
@@ -166,7 +172,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "monitoring-troubleshooting",
@@ -180,7 +185,7 @@
           "text": "<h4>Synchronisatie status monitoren:</h4><ol><li>Ga naar <strong>Settings → Integrations → Idealista</strong></li><li>Bekijk <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Tijdstip van laatste synchronisatie</li><li><strong>Properties Synced:</strong> Aantal gesynchroniseerde properties</li><li><strong>Errors:</strong> Eventuele sync errors</li><li><strong>Pending Updates:</strong> Nog te synchroniseren wijzigingen</li></ul></li><li>Klik <strong>Sync Logs</strong> voor gedetailleerde geschiedenis</li></ol><h4>Veelvoorkomende problemen oplossen:</h4><p><strong>Properties verschijnen niet op Idealista:</strong></p><ul><li>Check of property status = 'Available'</li><li>Verifieer dat alle verplichte velden zijn ingevuld (prijs, adres, foto's)</li><li>Controleer filter instellingen in Tesoro integratie</li><li>Wacht tot volgende sync cycle (max 1 uur)</li></ul><p><strong>Foto's worden niet gesynchroniseerd:</strong></p><ul><li>Zorg dat foto's minimaal 800x600px zijn</li><li>Maximum 50 foto's per property</li><li>Ondersteunde formaten: JPG, PNG</li><li>Maximale bestandsgrootte: 10MB per foto</li></ul><p><strong>Sync errors in dashboard:</strong></p><ul><li>Klik op error message voor details</li><li>Veelvoorkomende errors:  <ul><li><strong>Missing required field:</strong> Vul ontbrekend veld in</li><li><strong>Invalid API credentials:</strong> Vernieuw Idealista API key</li><li><strong>Rate limit exceeded:</strong> Wacht 1 uur, sync hervat automatisch</li></ul></li></ul><h4>Handmatige sync forceren:</h4><p>Als je niet wilt wachten op automatische sync:</p><ol><li>Ga naar property detail pagina</li><li>Klik <strong>Sync to Portals</strong> knop</li><li>Selecteer <strong>Idealista</strong></li><li>Klik <strong>Sync Now</strong></li></ol>"
         },
         "en": {
-          "text": "<h4>Monitoring sync status:</h4><ol><li>Go to <strong>Settings → Integrations → Idealista</strong></li><li>View <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Time of last synchronization</li><li><strong>Properties Synced:</strong> Number of synced properties</li><li><strong>Errors:</strong> Any sync errors</li><li><strong>Pending Updates:</strong> Changes yet to be synchronized</li></ul></li><li>Click <strong>Sync Logs</strong> for detailed history</li></ol><h4>Resolving common issues:</h4><p><strong>Properties don't appear on Idealista:</strong></p><ul><li>Check if property status = 'Available'</li><li>Verify that all required fields are filled (price, address, photos)</li><li>Check filter settings in Tesoro integration</li><li>Wait for next sync cycle (max 1 hour)</li></ul><p><strong>Photos are not synchronized:</strong></p><ul><li>Ensure photos are at least 800x600px</li><li>Maximum 50 photos per property</li><li>Supported formats: JPG, PNG</li><li>Maximum file size: 10MB per photo</li></ul><p><strong>Sync errors in dashboard:</strong></p><ul><li>Click on error message for details</li><li>Common errors:  <ul><li><strong>Missing required field:</strong> Fill in missing field</li><li><strong>Invalid API credentials:</strong> Refresh Idealista API key</li><li><strong>Rate limit exceeded:</strong> Wait 1 hour, sync resumes automatically</li></ul></li></ul><h4>Force manual sync:</h4><p>If you don't want to wait for automatic sync:</p><ol><li>Go to property detail page</li><li>Click <strong>Sync to Portals</strong> button</li><li>Select <strong>Idealista</strong></li><li>Click <strong>Sync Now</strong></li></ol>"
+          "text": "<h4>Monitoring sync status:</h4><ol><li>Go to <strong>Settings → Integrations → Idealista</strong></li><li>View <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Time of last synchronization</li><li><strong>Properties Synced:</strong> Number of synced properties</li><li><strong>Errors:</strong> Any sync errors</li><li><strong>Pending Updates:</strong> Changes yet to be synchronized</li></ul></li><li>Click <strong>Sync Logs</strong> for detailed history</li></ol><h4>Resolving common issues:</h4><p><strong>Properties don't appear on Idealista:</strong></p><ul><li>Check if property status = 'Available'</li><li>Verify that all required fields are filled (price, address, photos)</li><li>Check filter settings in Tesoro integration</li><li>Wait for next sync cycle (max 1 hour)</li></ul><p><strong>Photos are niet synchronized:</strong></p><ul><li>Ensure photos are at least 800x600px</li><li>Maximum 50 photos per property</li><li>Supported formats: JPG, PNG</li><li>Maximum file size: 10MB per photo</li></ul><p><strong>Sync errors in dashboard:</strong></p><ul><li>Click on error message for details</li><li>Common errors:  <ul><li><strong>Missing required field:</strong> Fill in missing field</li><li><strong>Invalid API credentials:</strong> Refresh Idealista API key</li><li><strong>Rate limit exceeded:</strong> Wait 1 hour, sync resumes automatically</li></ul></li></ul><h4>Force manual sync:</h4><p>If you don't want to wait for automatic sync:</p><ol><li>Go to property detail page</li><li>Click <strong>Sync to Portals</strong> button</li><li>Select <strong>Idealista</strong></li><li>Click <strong>Sync Now</strong></li></ol>"
         },
         "es": {
           "text": "<h4>Monitorear estado de sincronización:</h4><ol><li>Ve a <strong>Settings → Integrations → Idealista</strong></li><li>Ver <strong>Sync Status Dashboard</strong>:  <ul><li><strong>Last Sync:</strong> Hora de la última sincronización</li><li><strong>Properties Synced:</strong> Número de propiedades sincronizadas</li><li><strong>Errors:</strong> Cualquier error de sincronización</li><li><strong>Pending Updates:</strong> Cambios aún por sincronizar</li></ul></li><li>Haz clic en <strong>Sync Logs</strong> para historial detallado</li></ol><h4>Resolver problemas comunes:</h4><p><strong>Las propiedades no aparecen en Idealista:</strong></p><ul><li>Verifica que el estado de la propiedad = 'Available'</li><li>Verifica que todos los campos requeridos estén completados (precio, dirección, fotos)</li><li>Verifica la configuración de filtros en la integración de Tesoro</li><li>Espera al siguiente ciclo de sincronización (máx 1 hora)</li></ul><p><strong>Las fotos no se sincronizan:</strong></p><ul><li>Asegúrate de que las fotos tengan al menos 800x600px</li><li>Máximo 50 fotos por propiedad</li><li>Formatos soportados: JPG, PNG</li><li>Tamaño máximo de archivo: 10MB por foto</li></ul><p><strong>Errores de sincronización en el panel:</strong></p><ul><li>Haz clic en el mensaje de error para detalles</li><li>Errores comunes:  <ul><li><strong>Missing required field:</strong> Completa el campo faltante</li><li><strong>Invalid API credentials:</strong> Actualiza la clave API de Idealista</li><li><strong>Rate limit exceeded:</strong> Espera 1 hora, la sincronización se reanuda automáticamente</li></ul></li></ul><h4>Forzar sincronización manual:</h4><p>Si no quieres esperar a la sincronización automática:</p><ol><li>Ve a la página de detalle de la propiedad</li><li>Haz clic en el botón <strong>Sync to Portals</strong></li><li>Selecciona <strong>Idealista</strong></li><li>Haz clic en <strong>Sync Now</strong></li></ol>"
@@ -188,14 +193,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "fotocasa-integration-guide",
     "adding-properties-guide",
     "property-media-management",
     "api-webhooks-guide"
   ],
-
   "faq": [
     {
       "question": {

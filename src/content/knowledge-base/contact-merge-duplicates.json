@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "duplicates", "merge", "data-quality", "cleanup"],
+    "tags": [
+      "contacts",
+      "duplicates",
+      "merge",
+      "data-quality",
+      "cleanup"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["merge duplicates tesoro", "find duplicate contacts", "clean contact database", "duplicate detection", "contact cleanup"]
+    "keywords": [
+      "merge duplicates tesoro",
+      "find duplicate contacts",
+      "clean contact database",
+      "duplicate detection",
+      "contact cleanup"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Duplicaten Vinden en Samenvoegen",
@@ -32,7 +42,6 @@
     },
     "icon": "content_copy"
   },
-
   "sections": [
     {
       "type": "text",
@@ -47,14 +56,13 @@
           "text": "<p>Duplicaten ontstaan op verschillende manieren:</p><ul><li><strong>Multiple imports:</strong> Hetzelfde contact geïmporteerd uit verschillende bronnen</li><li><strong>Spelling variaties:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Team input:</strong> Meerdere teamleden voegen hetzelfde contact toe</li><li><strong>Lead conversion:</strong> Lead wordt contact maar oude lead blijft bestaan</li><li><strong>Email variaties:</strong> john@gmail.com vs john@company.com</li><li><strong>Typo's:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impact van Duplicaten</h3><ul><li>Verwarrende communicatie (emails naar verkeerde versie)</li><li>Onvolledige geschiedenis (data verspreid over meerdere records)</li><li>Inefficiënte filters en rapporten</li><li>Opslagverspilling</li><li>Verlies van vertrouwen in CRM data</li></ul>"
         },
         "en": {
-          "text": "<p>Duplicates occur in various ways:</p><ul><li><strong>Multiple imports:</strong> Same contact imported from different sources</li><li><strong>Spelling variations:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Team input:</strong> Multiple team members add the same contact</li><li><strong>Lead conversion:</strong> Lead becomes contact but old lead remains</li><li><strong>Email variations:</strong> john@gmail.com vs john@company.com</li><li><strong>Typos:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impact of Duplicates</h3><ul><li>Confusing communication (emails to wrong version)</li><li>Incomplete history (data spread across multiple records)</li><li>Inefficient filters and reports</li><li>Storage waste</li><li>Loss of trust in CRM data</li></ul>"
+          "text": "<p>Duplicates occur in various ways:</p><ul><li><strong>Multiple imports:</strong> Same contact imported from different sources</li><li><strong>Spelling variations:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Team input:</strong> Multiple teamlids add the same contact</li><li><strong>Lead conversion:</strong> Lead becomes contact but old lead remains</li><li><strong>Email variations:</strong> john@gmail.com vs john@company.com</li><li><strong>Typos:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impact of Duplicates</h3><ul><li>Confusing communication (emails to wrong version)</li><li>Incomplete history (data spread across multiple records)</li><li>Inefficient filters and reports</li><li>Storage waste</li><li>Loss of trust in CRM data</li></ul>"
         },
         "es": {
           "text": "<p>Los duplicados ocurren de varias maneras:</p><ul><li><strong>Múltiples importaciones:</strong> Mismo contacto importado de diferentes fuentes</li><li><strong>Variaciones de ortografía:</strong> 'John Smith' vs 'J. Smith' vs 'Jonathan Smith'</li><li><strong>Entrada del equipo:</strong> Múltiples miembros del equipo agregan el mismo contacto</li><li><strong>Conversión de lead:</strong> Lead se convierte en contacto pero el lead antiguo permanece</li><li><strong>Variaciones de email:</strong> john@gmail.com vs john@company.com</li><li><strong>Errores tipográficos:</strong> john.smith@gmail.com vs john.smtih@gmail.com</li></ul><h3>Impacto de los Duplicados</h3><ul><li>Comunicación confusa (emails a versión incorrecta)</li><li>Historial incompleto (datos dispersos en múltiples registros)</li><li>Filtros e informes ineficientes</li><li>Desperdicio de almacenamiento</li><li>Pérdida de confianza en datos CRM</li></ul>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "finding-duplicates",
@@ -102,7 +110,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "merging-process",
@@ -138,13 +145,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Voor elk veld kun je kiezen welke waarde je wilt behouden:</p><p><strong>Tesoro toont:</strong></p><ul><li>Master record waarde (links)</li><li>Duplicate record waarde (rechts)</li><li>Verschillen zijn gemarkeerd</li></ul><p><strong>Per veld kun je:</strong></p><ul><li>Master waarde gebruiken (standaard)</li><li>Duplicate waarde overnemen</li><li>Handmatig nieuwe waarde invoeren</li></ul><p><strong>Velden die automatisch worden samengevoegd:</strong></p><ul><li>Tags (beide sets gecombineerd)</li><li>Notes (alle notes behouden)</li><li>Activity history (beide histories gecombineerd)</li><li>Linked deals/properties (alle koppelingen behouden)</li></ul>"
+              "text": "<p>Voor elk veld kun je kiezen welke waarde je wilt behouden:</p><p><strong>Tesoro toont:</strong></p><ul><li>Master record waarde (links)</li><li>Duplicate record waarde (rechts)</li><li>Verschillen zijn gemarkeerd</li></ul><p><strong>Per veld kun je:</strong></p><ul><li>Master waarde gebruiken (standaard)</li><li>Duplicate waarde overnemen</li><li>Handmatig nieuwe waarde invoeren</li></ul><p><strong>Velden die automatisch worden samengevoegd:</strong></p><ul><li>Tags (beide sets gecombineerd)</li><li>notes (alle notes behouden)</li><li>Activity history (beide histories gecombineerd)</li><li>Linked deals/properties (alle koppelingen behouden)</li></ul>"
             },
             "en": {
-              "text": "<p>For each field you can choose which value to keep:</p><p><strong>Tesoro shows:</strong></p><ul><li>Master record value (left)</li><li>Duplicate record value (right)</li><li>Differences are highlighted</li></ul><p><strong>Per field you can:</strong></p><ul><li>Use master value (default)</li><li>Take over duplicate value</li><li>Manually enter new value</li></ul><p><strong>Fields that are automatically merged:</strong></p><ul><li>Tags (both sets combined)</li><li>Notes (all notes kept)</li><li>Activity history (both histories combined)</li><li>Linked deals/properties (all links kept)</li></ul>"
+              "text": "<p>For each field you can choose which value to keep:</p><p><strong>Tesoro shows:</strong></p><ul><li>Master record value (left)</li><li>Duplicate record value (right)</li><li>Differences are highlighted</li></ul><p><strong>Per field you can:</strong></p><ul><li>Use master value (default)</li><li>Take over duplicate value</li><li>Manually enter new value</li></ul><p><strong>Fields that are automatically merged:</strong></p><ul><li>Tags (both sets combined)</li><li>notes (all notes kept)</li><li>Activity history (both histories combined)</li><li>Linked deals/properties (all links kept)</li></ul>"
             },
             "es": {
-              "text": "<p>Para cada campo puedes elegir qué valor mantener:</p><p><strong>Tesoro muestra:</strong></p><ul><li>Valor del registro maestro (izquierda)</li><li>Valor del registro duplicado (derecha)</li><li>Las diferencias están resaltadas</li></ul><p><strong>Por campo puedes:</strong></p><ul><li>Usar valor maestro (predeterminado)</li><li>Tomar valor duplicado</li><li>Ingresar manualmente nuevo valor</li></ul><p><strong>Campos que se fusionan automáticamente:</strong></p><ul><li>Etiquetas (ambos conjuntos combinados)</li><li>Notas (todas las notas mantenidas)</li><li>Historial de actividad (ambos historiales combinados)</li><li>Deals/propiedades vinculadas (todos los vínculos mantenidos)</li></ul>"
+              "text": "<p>Para cada campo puedes elegir qué valor mantener:</p><p><strong>Tesoro muestra:</strong></p><ul><li>Valor del registro maestro (izquierda)</li><li>Valor del registro duplicado (derecha)</li><li>Las diferencias están resaltadas</li></ul><p><strong>Por campo puedes:</strong></p><ul><li>Usar valor maestro (predeterminado)</li><li>Tomar valor duplicado</li><li>Ingresar manualmente nuevo valor</li></ul><p><strong>Campos que se fusionan automáticamente:</strong></p><ul><li>Etiquetas (ambos conjuntos combinados)</li><li>nietas (todas las nietas mantenidas)</li><li>Historial de actividad (ambos historiales combinados)</li><li>Deals/propiedades vinculadas (todos los vínculos mantenidos)</li></ul>"
             }
           }
         },
@@ -159,7 +166,7 @@
               "text": "<ol><li>Controleer alle geselecteerde waarden</li><li>Lees de waarschuwing: Dit kan niet ongedaan worden gemaakt!</li><li>Klik <strong>Confirm Merge</strong></li></ol><p><strong>Na de merge:</strong></p><ul><li>Master contact heeft alle gecombineerde data</li><li>Duplicate contact is verwijderd</li><li>Alle koppelingen (deals, properties) zijn overgezet</li><li>Activity history is samengevoegd</li><li>Tags zijn gecombineerd</li></ul><p><strong>Belangrijk:</strong> Merge is permanent! Test eerst met testdata als je onzeker bent.</p>"
             },
             "en": {
-              "text": "<ol><li>Check all selected values</li><li>Read the warning: This cannot be undone!</li><li>Click <strong>Confirm Merge</strong></li></ol><p><strong>After merge:</strong></p><ul><li>Master contact has all combined data</li><li>Duplicate contact is deleted</li><li>All links (deals, properties) are transferred</li><li>Activity history is merged</li><li>Tags are combined</li></ul><p><strong>Important:</strong> Merge is permanent! Test first with test data if uncertain.</p>"
+              "text": "<ol><li>Check all selected values</li><li>Read the warning: This canniet be undone!</li><li>Click <strong>Confirm Merge</strong></li></ol><p><strong>After merge:</strong></p><ul><li>Master contact has all combined data</li><li>Duplicate contact is deleted</li><li>All links (deals, properties) are transferred</li><li>Activity history is merged</li><li>Tags are combined</li></ul><p><strong>Important:</strong> Merge is permanent! Test first with test data if uncertain.</p>"
             },
             "es": {
               "text": "<ol><li>Verifica todos los valores seleccionados</li><li>Lee la advertencia: ¡Esto no se puede deshacer!</li><li>Haz clic en <strong>Confirm Merge</strong></li></ol><p><strong>Después de fusionar:</strong></p><ul><li>El contacto maestro tiene todos los datos combinados</li><li>El contacto duplicado se elimina</li><li>Todos los vínculos (deals, propiedades) se transfieren</li><li>El historial de actividad se fusiona</li><li>Las etiquetas se combinan</li></ul><p><strong>Importante:</strong> ¡La fusión es permanente! Prueba primero con datos de prueba si no estás seguro.</p>"
@@ -168,7 +175,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "prevention-tips",
@@ -191,14 +197,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-bulk-operations",
     "creating-contacts-step-by-step",
     "contact-best-practices"
   ],
-
   "faq": [
     {
       "question": {
@@ -208,7 +212,7 @@
       },
       "answer": {
         "nl": "Nee, merge is permanent en kan niet ongedaan gemaakt worden. Daarom is het belangrijk om zorgvuldig te controleren voor je merge bevestigt. Maak een backup export voor je begint met grote merge operaties.",
-        "en": "No, merge is permanent and cannot be undone. That's why it's important to check carefully before confirming merge. Make a backup export before starting large merge operations.",
+        "en": "No, merge is permanent and canniet be undone. That's why it's important to check carefully before confirming merge. Make a backup export before starting large merge operations.",
         "es": "No, la fusión es permanente y no se puede deshacer. Por eso es importante verificar cuidadosamente antes de confirmar la fusión. Haz una exportación de respaldo antes de comenzar grandes operaciones de fusión."
       }
     },
@@ -220,7 +224,7 @@
       },
       "answer": {
         "nl": "Alle koppelingen (deals, properties, tasks, meetings, etc.) van het duplicate record worden automatisch overgezet naar het master record. Niets gaat verloren - alles wordt gecombineerd.",
-        "en": "All links (deals, properties, tasks, meetings, etc.) from the duplicate record are automatically transferred to the master record. Nothing is lost - everything is combined.",
+        "en": "All links (deals, properties, tasks, meetings, etc.) from the duplicate record are automatically transferred to the master record. niething is lost - everything is combined.",
         "es": "Todos los vínculos (deals, propiedades, tareas, reuniones, etc.) del registro duplicado se transfieren automáticamente al registro maestro. Nada se pierde - todo se combina."
       }
     }

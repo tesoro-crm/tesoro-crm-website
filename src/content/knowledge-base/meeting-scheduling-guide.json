@@ -5,9 +5,15 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "beginner",
-    "tags": ["calendar", "meetings", "scheduling", "clients", "collaboration"],
+    "tags": [
+      "calendar",
+      "meetings",
+      "scheduling",
+      "clients",
+      "collaboration"
+    ],
     "featured": false,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
-    "keywords": ["meeting scheduling", "client meetings", "tesoro meetings", "schedule appointments", "real estate meetings"]
+    "keywords": [
+      "meeting scheduling",
+      "client meetings",
+      "tesoro meetings",
+      "schedule appointments",
+      "real estate meetings"
+    ]
   },
   "hero": {
     "title": {
@@ -147,7 +159,7 @@
       "content": {
         "nl": "Voor klanten die minder tech-savvy zijn, kies je 'Telefonisch' als back-up locatie naast video call. Voeg beide opties toe aan de vergadernotities: 'We ontmoeten via video call (link in de uitnodiging), maar je kunt ook bellen naar [je nummer] als je problemen hebt met de technologie.' Dit voorkomt gemiste vergaderingen.",
         "en": "For clients who are less tech-savvy, choose 'Phone call' as a backup location alongside video call. Add both options to the meeting notes: 'We'll meet via video call (link in invitation), but you can also call [your number] if you have technology issues.' This prevents missed meetings.",
-        "es": "Para clientes menos familiarizados con la tecnología, elige 'Llamada telefónica' como ubicación de respaldo junto con videollamada. Agrega ambas opciones a las notas de la reunión: 'Nos reuniremos por videollamada (enlace en la invitación), pero también puedes llamar al [tu número] si tienes problemas con la tecnología.' Esto previene reuniones perdidas."
+        "es": "Para clientes menos familiarizados con la tecnología, elige 'Llamada telefónica' como ubicación de respaldo junto con videollamada. Agrega ambas opciones a las nietas de la reunión: 'Nos reuniremos por videollamada (enlace en la invitación), pero también puedes llamar al [tu número] si tienes problemas con la tecnología.' Esto previene reuniones perdidas."
       }
     },
     {
@@ -182,7 +194,7 @@
           "description": {
             "nl": "Klik op de vergadering en selecteer 'Contact geschiedenis bekijken' om snel alle eerdere interacties te zien: vorige vergaderingen, bezichtigingen, e-mails, notities. Dit helpt je de conversatie te personaliseren en laat je klant zien dat je hun voorkeuren onthoudt.",
             "en": "Click the meeting and select 'View Contact History' to quickly see all previous interactions: past meetings, viewings, emails, notes. This helps you personalize the conversation and shows your client you remember their preferences.",
-            "es": "Haz clic en la reunión y selecciona 'Ver historial de contacto' para ver rápidamente todas las interacciones previas: reuniones pasadas, visitas, correos electrónicos, notas. Esto te ayuda a personalizar la conversación y muestra a tu cliente que recuerdas sus preferencias."
+            "es": "Haz clic en la reunión y selecciona 'Ver historial de contacto' para ver rápidamente todas las interacciones previas: reuniones pasadas, visitas, correos electrónicos, nietas. Esto te ayuda a personalizar la conversación y muestra a tu cliente que recuerdas sus preferencias."
           }
         },
         {
@@ -249,13 +261,13 @@
         {
           "title": {
             "nl": "Maak snelle notities",
-            "en": "Take Quick Notes",
-            "es": "Tomar notas rápidas"
+            "en": "Take Quick notes",
+            "es": "Tomar nietas rápidas"
           },
           "description": {
             "nl": "Open de vergadering in de mobiele app of op je tablet en gebruik het notities veld om belangrijke punten vast te leggen. Tesoro synchroniseert deze automatisch naar het contactrecord. Gebruik sneltoetsen: '@' om een taak te creëren, '#' om een tag toe te voegen, of '[naam]' om een contact te vermelden.",
             "en": "Open the meeting in the mobile app or on your tablet and use the notes field to capture key points. Tesoro automatically syncs these to the contact record. Use shortcuts: '@' to create a task, '#' to add a tag, or '[name]' to mention a contact.",
-            "es": "Abre la reunión en la aplicación móvil o en tu tableta y usa el campo de notas para capturar puntos clave. Tesoro sincroniza automáticamente estos con el registro de contacto. Usa atajos: '@' para crear una tarea, '#' para agregar una etiqueta, o '[nombre]' para mencionar un contacto."
+            "es": "Abre la reunión en la aplicación móvil o en tu tableta y usa el campo de nietas para capturar puntos clave. Tesoro sincroniza automáticamente estos con el registro de contacto. Usa atajos: '@' para crear una tarea, '#' para agregar una etiqueta, o '[nombre]' para mencionar un contacto."
           }
         },
         {
@@ -290,7 +302,7 @@
           },
           "description": {
             "nl": "Voordat de vergadering eindigt, gebruik je de 'Volgende stappen' sectie om follow-up acties vast te leggen. Je kunt direct een volgende vergadering plannen, een bezichtiging inplannen, of taken creëren voor jezelf of teamleden. Dit zorgt ervoor dat niets tussen de cracks valt.",
-            "en": "Before the meeting ends, use the 'Next Steps' section to capture follow-up actions. You can directly schedule a next meeting, book a viewing, or create tasks for yourself or team members. This ensures nothing falls through the cracks.",
+            "en": "Before the meeting ends, use the 'Next Steps' section to capture follow-up actions. You can directly schedule a next meeting, book a viewing, or create tasks for yourself or teamlids. This ensures niething falls through the cracks.",
             "es": "Antes de que termine la reunión, usa la sección 'Próximos pasos' para capturar acciones de seguimiento. Puedes programar directamente una próxima reunión, reservar una visita o crear tareas para ti o miembros del equipo. Esto asegura que nada se pierda."
           }
         }
@@ -298,7 +310,7 @@
     },
     {
       "type": "callout",
-      "id": "recording-note",
+      "id": "recording-niete",
       "variant": "warning",
       "title": {
         "nl": "Privacy waarschuwing",
@@ -366,7 +378,7 @@
           },
           "description": {
             "nl": "Voor acties die je tijdens de vergadering hebt beloofd (marktanalyse opstellen, contracten sturen, extra panden zoeken), creëer je taken met deadlines. Wijs deze taken toe aan jezelf of teamleden. Taken worden gekoppeld aan het contact en verschijnen in ieders dashboard.",
-            "en": "For actions you promised during the meeting (prepare market analysis, send contracts, find additional properties), create tasks with deadlines. Assign these tasks to yourself or team members. Tasks are linked to the contact and appear in everyone's dashboard.",
+            "en": "For actions you promised during the meeting (prepare market analysis, send contracts, find additional properties), create tasks with deadlines. Assign these tasks to yourself or teamlids. Tasks are linked to the contact and appear in everyone's dashboard.",
             "es": "Para acciones que prometiste durante la reunión (preparar análisis de mercado, enviar contratos, encontrar propiedades adicionales), crea tareas con plazos. Asigna estas tareas a ti mismo o miembros del equipo. Las tareas se vinculan al contacto y aparecen en el panel de todos."
           }
         },
@@ -394,9 +406,9 @@
         "es": "Momento del seguimiento"
       },
       "content": {
-        "nl": "Onderzoek toont dat follow-up binnen 2 uur na een vergadering de hoogste respons rate heeft. Tesoro toont een notificatie na elke vergadering die je herinnert om follow-up te doen. Maak het een gewoonte om 15 minuten na elke vergadering te reserveren voor directe follow-up - het maakt een enorm verschil in conversieratio's.",
-        "en": "Research shows follow-up within 2 hours of a meeting has the highest response rate. Tesoro shows a notification after each meeting reminding you to follow up. Make it a habit to block 15 minutes after each meeting for immediate follow-up - it makes a huge difference in conversion rates.",
-        "es": "La investigación muestra que el seguimiento dentro de 2 horas de una reunión tiene la tasa de respuesta más alta. Tesoro muestra una notificación después de cada reunión recordándote hacer seguimiento. Haz un hábito de bloquear 15 minutos después de cada reunión para seguimiento inmediato - hace una enorme diferencia en las tasas de conversión."
+        "nl": "Onderzoek toont dat follow-up binnen 2 uur na een vergadering de hoogste respons rate heeft. Tesoro toont een nietificatie na elke vergadering die je herinnert om follow-up te doen. Maak het een gewoonte om 15 minuten na elke vergadering te reserveren voor directe follow-up - het maakt een enorm verschil in conversieratio's.",
+        "en": "Research shows follow-up within 2 hours of a meeting has the highest response rate. Tesoro shows a nietification after each meeting reminding you to follow up. Make it a habit to block 15 minutes after each meeting for immediate follow-up - it makes a huge difference in conversion rates.",
+        "es": "La investigación muestra que el seguimiento dentro de 2 horas de una reunión tiene la tasa de respuesta más alta. Tesoro muestra una nietificación después de cada reunión recordándote hacer seguimiento. Haz un hábito de bloquear 15 minutos después de cada reunión para seguimiento inmediato - hace una enorme diferencia en las tasas de conversión."
       }
     },
     {
@@ -428,7 +440,7 @@
           },
           "answer": {
             "nl": "Ga naar Instellingen > Planningslinks en maak een persoonlijke plannings link. Je kunt verschillende links maken voor verschillende vergadertypes (bijv. één voor eerste consultatiegesprekken, één voor voortgangsgesprekken). Stel je beschikbare uren en minimale opzegtermijn in. Deel de link via e-mail of op je website. Klanten kiezen een beschikbare tijd en de vergadering wordt automatisch gemaakt.",
-            "en": "Go to Settings > Scheduling Links and create a personal scheduling link. You can create different links for different meeting types (e.g., one for initial consultations, one for progress check-ins). Set your available hours and minimum notice period. Share the link via email or on your website. Clients choose an available time and the meeting is automatically created.",
+            "en": "Go to Settings > Scheduling Links and create a personal scheduling link. You can create different links for different meeting types (e.g., one for initial consultations, one for progress check-ins). Set your available hours and minimum nietice period. Share the link via email or on your website. Clients choose an available time and the meeting is automatically created.",
             "es": "Ve a Configuración > Enlaces de programación y crea un enlace de programación personal. Puedes crear diferentes enlaces para diferentes tipos de reunión (por ejemplo, uno para consultas iniciales, uno para revisiones de progreso). Establece tus horas disponibles y período mínimo de aviso. Comparte el enlace por correo electrónico o en tu sitio web. Los clientes eligen un horario disponible y la reunión se crea automáticamente."
           }
         },
@@ -439,15 +451,15 @@
             "es": "¿Qué pasa si necesito reprogramar una reunión en el último minuto?"
           },
           "answer": {
-            "nl": "Klik op de vergadering in je kalender, selecteer 'Bewerken', kies een nieuwe tijd en klik op 'Update versturen'. Alle deelnemers ontvangen onmiddellijk een e-mail met de wijziging en een bijgewerkte kalender uitnodiging. Voor noodsituaties kun je ook SMS notificaties sturen. Probeer te herplannen met minimaal 4 uur opzegtermijn om professioneel over te komen.",
-            "en": "Click the meeting in your calendar, select 'Edit', choose a new time, and click 'Send Update'. All attendees immediately receive an email with the change and an updated calendar invitation. For emergencies, you can also send SMS notifications. Try to reschedule with at least 4 hours notice to maintain professionalism.",
-            "es": "Haz clic en la reunión en tu calendario, selecciona 'Editar', elige un nuevo horario y haz clic en 'Enviar actualización'. Todos los asistentes reciben inmediatamente un correo electrónico con el cambio y una invitación de calendario actualizada. Para emergencias, también puedes enviar notificaciones SMS. Intenta reprogramar con al menos 4 horas de anticipación para mantener el profesionalismo."
+            "nl": "Klik op de vergadering in je kalender, selecteer 'Bewerken', kies een nieuwe tijd en klik op 'Update versturen'. Alle deelnemers ontvangen onmiddellijk een e-mail met de wijziging en een bijgewerkte kalender uitnodiging. Voor noodsituaties kun je ook SMS nietificaties sturen. Probeer te herplannen met minimaal 4 uur opzegtermijn om professioneel over te komen.",
+            "en": "Click the meeting in your calendar, select 'Edit', choose a new time, and click 'Send Update'. All attendees immediately receive an email with the change and an updated calendar invitation. For emergencies, you can also send SMS nietifications. Try to reschedule with at least 4 hours nietice to maintain professionalism.",
+            "es": "Haz clic en la reunión en tu calendario, selecciona 'Editar', elige un nuevo horario y haz clic en 'Enviar actualización'. Todos los asistentes reciben inmediatamente un correo electrónico con el cambio y una invitación de calendario actualizada. Para emergencias, también puedes enviar nietificaciones SMS. Intenta reprogramar con al menos 4 horas de anticipación para mantener el profesionalismo."
           }
         },
         {
           "question": {
             "nl": "Kan ik terugkerende vergaderingen instellen voor regelmatige check-ins?",
-            "en": "Can I set up recurring meetings for regular check-ins?",
+            "en": "Can I set up recurring meetings Voor regelmatige check-ins?",
             "es": "¿Puedo configurar reuniones recurrentes para revisiones regulares?"
           },
           "answer": {

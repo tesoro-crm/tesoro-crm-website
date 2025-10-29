@@ -169,8 +169,10 @@ const knowledgeBase = defineCollection({
       category: z.enum([
         'getting-started',
         'contacts',
+        'deals',
         'properties',
         'projects',
+        'calendar',
         'communication',
         'integrations',
         'reports',

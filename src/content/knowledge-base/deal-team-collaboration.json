@@ -5,20 +5,28 @@
     "publishDate": "2024-10-23",
     "updatedAt": "2024-10-23T11:30:00Z",
     "authorId": "carlos-martinez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["deals", "pipeline", "sales"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop",
-    "keywords": ["team collaboration", "deal sharing", "assign team members", "collaborative selling", "team deals"]
+    "keywords": [
+      "team collaboration",
+      "deal sharing",
+      "assign teamlids",
+      "collaborative selling",
+      "team deals"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Team collaboration voor deals",
@@ -26,30 +34,28 @@
       "es": "Colaboración en equipo para deals"
     },
     "description": {
-      "nl": "Leer hoe je team members assigned aan deals, shared ownership managed, en effective collaboration enabled voor better results.",
-      "en": "Learn how to assign team members to deals, manage shared ownership, and enable effective collaboration for better results.",
+      "nl": "Leer hoe je teamlids assigned aan deals, shared ownership managed, en effective collaboration enabled voor better results.",
+      "en": "Learn how to assign teamlids to deals, manage shared ownership, and enable effective collaboration for better results.",
       "es": "Aprende cómo asignar miembros del equipo a deals, gestionar propiedad compartida y habilitar colaboración efectiva para mejores resultados."
     },
     "icon": "groups"
   },
-
   "sections": [
     {
       "type": "text",
       "id": "intro",
       "content": {
         "nl": {
-          "text": "<p>Complex real estate deals require team collaboration. Tesoro CRM provides tools voor shared deal ownership, real-time notifications, @mentions, en role-based access voor efficient teamwork.</p>"
+          "text": "<p>Complex real estate deals require team collaboration. Tesoro CRM provides tools voor shared deal ownership, real-time nietifications, @mentions, en role-based access voor efficient teamwork.</p>"
         },
         "en": {
-          "text": "<p>Complex real estate deals require team collaboration. Tesoro CRM provides tools for shared deal ownership, real-time notifications, @mentions, and role-based access for efficient teamwork.</p>"
+          "text": "<p>Complex real estate deals require team collaboration. Tesoro CRM provides tools for shared deal ownership, real-time nietifications, @mentions, and role-based access for efficient teamwork.</p>"
         },
         "es": {
-          "text": "<p>Los deals inmobiliarios complejos requieren colaboración en equipo. Tesoro CRM proporciona herramientas para propiedad compartida de deals, notificaciones en tiempo real, @menciones y acceso basado en roles para trabajo en equipo eficiente.</p>"
+          "text": "<p>Los deals inmobiliarios complejos requieren colaboración en equipo. Tesoro CRM proporciona herramientas para propiedad compartida de deals, nietificaciones en tiempo real, @menciones y acceso basado en roles para trabajo en equipo eficiente.</p>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "team-setup",
@@ -67,13 +73,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Elke deal heeft één primary owner:</p><ul><li>Open deal detail view</li><li>Click op <strong>Owner</strong> field</li><li>Select primary agent responsible</li><li>Primary owner receives all notifications</li><li>Appears as main contact voor deal</li></ul><p><strong>Primary owner responsibilities:</strong></p><ul><li>Overall deal accountability</li><li>Client relationship management</li><li>Deal progression oversight</li><li>Final decision making</li></ul>"
+              "text": "<p>Elke deal heeft één primary owner:</p><ul><li>Open deal detail view</li><li>Click op <strong>Owner</strong> field</li><li>Select primary agent responsible</li><li>Primary owner receives all nietifications</li><li>Appears as main contact voor deal</li></ul><p><strong>Primary owner responsibilities:</strong></p><ul><li>Overall deal accountability</li><li>Client relationship management</li><li>Deal progression oversight</li><li>Final decision making</li></ul>"
             },
             "en": {
-              "text": "<p>Each deal has one primary owner:</p><ul><li>Open deal detail view</li><li>Click on <strong>Owner</strong> field</li><li>Select primary agent responsible</li><li>Primary owner receives all notifications</li><li>Appears as main contact for deal</li></ul><p><strong>Primary owner responsibilities:</strong></p><ul><li>Overall deal accountability</li><li>Client relationship management</li><li>Deal progression oversight</li><li>Final decision making</li></ul>"
+              "text": "<p>Each deal has one primary owner:</p><ul><li>Open deal detail view</li><li>Click on <strong>Owner</strong> field</li><li>Select primary agent responsible</li><li>Primary owner receives all nietifications</li><li>Appears as main contact for deal</li></ul><p><strong>Primary owner responsibilities:</strong></p><ul><li>Overall deal accountability</li><li>Client relationship management</li><li>Deal progression oversight</li><li>Final decision making</li></ul>"
             },
             "es": {
-              "text": "<p>Cada deal tiene un propietario principal:</p><ul><li>Abre vista de detalles del deal</li><li>Haz clic en campo <strong>Propietario</strong></li><li>Selecciona agente principal responsable</li><li>El propietario principal recibe todas las notificaciones</li><li>Aparece como contacto principal para deal</li></ul><p><strong>Responsabilidades del propietario principal:</strong></p><ul><li>Responsabilidad general del deal</li><li>Gestión de relación con cliente</li><li>Supervisión de progresión del deal</li><li>Toma de decisiones final</li></ul>"
+              "text": "<p>Cada deal tiene un propietario principal:</p><ul><li>Abre vista de detalles del deal</li><li>Haz clic en campo <strong>Propietario</strong></li><li>Selecciona agente principal responsable</li><li>El propietario principal recibe todas las nietificaciones</li><li>Aparece como contacto principal para deal</li></ul><p><strong>Responsabilidades del propietario principal:</strong></p><ul><li>Responsabilidad general del deal</li><li>Gestión de relación con cliente</li><li>Supervisión de progresión del deal</li><li>Toma de decisiones final</li></ul>"
             }
           }
         },
@@ -85,13 +91,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Add additional team members als collaborators:</p><ul><li>Click <strong>+ Add Team Member</strong></li><li>Select agent from list</li><li>Assign role: Support agent, Legal advisor, Assistant</li><li>Set permissions (view, edit, manage)</li><li>Configure notification preferences</li></ul><p><strong>Team member roles:</strong></p><ul><li><strong>Support Agent:</strong> Helps met viewings, follow-ups</li><li><strong>Administrative:</strong> Handles paperwork, scheduling</li><li><strong>Legal/Financial:</strong> Contract en financing support</li><li><strong>Manager:</strong> Oversight en approval</li></ul>"
+              "text": "<p>Add additional teamlids als collaborators:</p><ul><li>Click <strong>+ Add Team Member</strong></li><li>Select agent from list</li><li>Assign role: Support agent, Legal advisor, Assistant</li><li>Set permissions (view, edit, manage)</li><li>Configure nietification preferences</li></ul><p><strong>Team member roles:</strong></p><ul><li><strong>Support Agent:</strong> Helps met viewings, follow-ups</li><li><strong>Administrative:</strong> Handles paperwork, scheduling</li><li><strong>Legal/Financial:</strong> Contract en financing support</li><li><strong>Manager:</strong> Oversight en approval</li></ul>"
             },
             "en": {
-              "text": "<p>Add additional team members as collaborators:</p><ul><li>Click <strong>+ Add Team Member</strong></li><li>Select agent from list</li><li>Assign role: Support agent, Legal advisor, Assistant</li><li>Set permissions (view, edit, manage)</li><li>Configure notification preferences</li></ul><p><strong>Team member roles:</strong></p><ul><li><strong>Support Agent:</strong> Helps with viewings, follow-ups</li><li><strong>Administrative:</strong> Handles paperwork, scheduling</li><li><strong>Legal/Financial:</strong> Contract and financing support</li><li><strong>Manager:</strong> Oversight and approval</li></ul>"
+              "text": "<p>Add additional teamlids as collaborators:</p><ul><li>Click <strong>+ Add Team Member</strong></li><li>Select agent from list</li><li>Assign role: Support agent, Legal advisor, Assistant</li><li>Set permissions (view, edit, manage)</li><li>Configure nietification preferences</li></ul><p><strong>Team member roles:</strong></p><ul><li><strong>Support Agent:</strong> Helps with viewings, follow-ups</li><li><strong>Administrative:</strong> Handles paperwork, scheduling</li><li><strong>Legal/Financial:</strong> Contract and financing support</li><li><strong>Manager:</strong> Oversight and approval</li></ul>"
             },
             "es": {
-              "text": "<p>Agrega miembros adicionales del equipo como colaboradores:</p><ul><li>Haz clic en <strong>+ Agregar Miembro del Equipo</strong></li><li>Selecciona agente de lista</li><li>Asigna rol: Agente de soporte, Asesor legal, Asistente</li><li>Establece permisos (ver, editar, gestionar)</li><li>Configura preferencias de notificación</li></ul><p><strong>Roles de miembro del equipo:</strong></p><ul><li><strong>Agente de Soporte:</strong> Ayuda con visitas, seguimientos</li><li><strong>Administrativo:</strong> Maneja documentación, programación</li><li><strong>Legal/Financiero:</strong> Soporte de contrato y financiamiento</li><li><strong>Gerente:</strong> Supervisión y aprobación</li></ul>"
+              "text": "<p>Agrega miembros adicionales del equipo como colaboradores:</p><ul><li>Haz clic en <strong>+ Agregar Miembro del Equipo</strong></li><li>Selecciona agente de lista</li><li>Asigna rol: Agente de soporte, Asesor legal, Asistente</li><li>Establece permisos (ver, editar, gestionar)</li><li>Configura preferencias de nietificación</li></ul><p><strong>Roles de miembro del equipo:</strong></p><ul><li><strong>Agente de Soporte:</strong> Ayuda con visitas, seguimientos</li><li><strong>Administrativo:</strong> Maneja documentación, programación</li><li><strong>Legal/Financiero:</strong> Soporte de contrato y financiamiento</li><li><strong>Gerente:</strong> Supervisión y aprobación</li></ul>"
             }
           }
         },
@@ -103,19 +109,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Tag team members in notes voor instant notification:</p><ul><li>Type @ in any note field</li><li>Select team member from dropdown</li><li>Add context over wat ze moeten doen</li><li>They receive instant notification</li></ul><p><strong>Effective @mention usage:</strong></p><ul><li><code>@john please follow up with buyer about financing</code></li><li><code>@maria can you schedule second viewing for Thursday?</code></li><li><code>@carlos approval needed for discount offer</code></li></ul><p>Tagged members receive notification met direct link to deal.</p>"
+              "text": "<p>Tag teamlids in notes voor instant nietification:</p><ul><li>Type @ in any niete field</li><li>Select teamlid from dropdown</li><li>Add context over wat ze moeten doen</li><li>They receive instant nietification</li></ul><p><strong>Effective @mention usage:</strong></p><ul><li><code>@john please follow up with buyer about financing</code></li><li><code>@maria can you schedule second viewing for Thursday?</code></li><li><code>@carlos approval needed for discount offer</code></li></ul><p>Tagged members receive nietification met direct link to deal.</p>"
             },
             "en": {
-              "text": "<p>Tag team members in notes for instant notification:</p><ul><li>Type @ in any note field</li><li>Select team member from dropdown</li><li>Add context about what they need to do</li><li>They receive instant notification</li></ul><p><strong>Effective @mention usage:</strong></p><ul><li><code>@john please follow up with buyer about financing</code></li><li><code>@maria can you schedule second viewing for Thursday?</code></li><li><code>@carlos approval needed for discount offer</code></li></ul><p>Tagged members receive notification with direct link to deal.</p>"
+              "text": "<p>Tag teamlids in notes for instant nietification:</p><ul><li>Type @ in any niete field</li><li>Select teamlid from dropdown</li><li>Add context about what they need to do</li><li>They receive instant nietification</li></ul><p><strong>Effective @mention usage:</strong></p><ul><li><code>@john please follow up with buyer about financing</code></li><li><code>@maria can you schedule second viewing for Thursday?</code></li><li><code>@carlos approval needed for discount offer</code></li></ul><p>Tagged members receive nietification with direct link to deal.</p>"
             },
             "es": {
-              "text": "<p>Etiqueta miembros del equipo en notas para notificación instantánea:</p><ul><li>Escribe @ en cualquier campo de nota</li><li>Selecciona miembro del equipo del menú desplegable</li><li>Agrega contexto sobre lo que necesitan hacer</li><li>Reciben notificación instantánea</li></ul><p><strong>Uso efectivo de @mención:</strong></p><ul><li><code>@john por favor haz seguimiento con comprador sobre financiamiento</code></li><li><code>@maria puedes programar segunda visita para jueves?</code></li><li><code>@carlos se necesita aprobación para oferta con descuento</code></li></ul><p>Los miembros etiquetados reciben notificación con enlace directo al deal.</p>"
+              "text": "<p>Etiqueta miembros del equipo en nietas para nietificación instantánea:</p><ul><li>Escribe @ en cualquier campo de nieta</li><li>Selecciona miembro del equipo del menú desplegable</li><li>Agrega contexto sobre lo que necesitan hacer</li><li>Reciben nietificación instantánea</li></ul><p><strong>Uso efectivo de @mención:</strong></p><ul><li><code>@john por favor haz seguimiento con comprador sobre financiamiento</code></li><li><code>@maria puedes programar segunda visita para jueves?</code></li><li><code>@carlos se necesita aprobación para oferta con descuento</code></li></ul><p>Los miembros etiquetados reciben nietificación con enlace directo al deal.</p>"
             }
           }
         }
       ]
     },
-
     {
       "type": "text",
       "id": "real-time",
@@ -126,17 +131,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Live updates (Pusher integration):</strong></p><ul><li>See when team members zijn viewing deal</li><li>Instant notification bij status changes</li><li>Real-time note additions visible</li><li>Activity feed updates live</li></ul><p><strong>Shared inbox:</strong></p><ul><li>All team members see client emails</li><li>Email threads linked to deal</li><li>Sent emails visible to whole team</li><li>Prevents duplicate communications</li></ul><p><strong>Collaborative notes:</strong></p><ul><li>Multiple members can add notes simultaneously</li><li>Comment threads on notes</li><li>Edit history preserved</li><li>Private vs shared notes option</li></ul>"
+          "text": "<p><strong>Live updates (Pusher integration):</strong></p><ul><li>See when teamlids zijn viewing deal</li><li>Instant nietification bij status changes</li><li>Real-time niete additions visible</li><li>Activity feed updates live</li></ul><p><strong>Shared inbox:</strong></p><ul><li>All teamlids see client emails</li><li>Email threads linked to deal</li><li>Sent emails visible to whole team</li><li>Prevents duplicate communications</li></ul><p><strong>Collaborative notes:</strong></p><ul><li>Multiple members can add notes simultaneously</li><li>Comment threads on notes</li><li>Edit history preserved</li><li>Private vs shared notes option</li></ul>"
         },
         "en": {
-          "text": "<p><strong>Live updates (Pusher integration):</strong></p><ul><li>See when team members are viewing deal</li><li>Instant notification on status changes</li><li>Real-time note additions visible</li><li>Activity feed updates live</li></ul><p><strong>Shared inbox:</strong></p><ul><li>All team members see client emails</li><li>Email threads linked to deal</li><li>Sent emails visible to whole team</li><li>Prevents duplicate communications</li></ul><p><strong>Collaborative notes:</strong></p><ul><li>Multiple members can add notes simultaneously</li><li>Comment threads on notes</li><li>Edit history preserved</li><li>Private vs shared notes option</li></ul>"
+          "text": "<p><strong>Live updates (Pusher integration):</strong></p><ul><li>See when teamlids are viewing deal</li><li>Instant nietification on status changes</li><li>Real-time niete additions visible</li><li>Activity feed updates live</li></ul><p><strong>Shared inbox:</strong></p><ul><li>All teamlids see client emails</li><li>Email threads linked to deal</li><li>Sent emails visible to whole team</li><li>Prevents duplicate communications</li></ul><p><strong>Collaborative notes:</strong></p><ul><li>Multiple members can add notes simultaneously</li><li>Comment threads on notes</li><li>Edit history preserved</li><li>Private vs shared notes option</li></ul>"
         },
         "es": {
-          "text": "<p><strong>Actualizaciones en vivo (integración Pusher):</strong></p><ul><li>Ve cuando miembros del equipo están viendo deal</li><li>Notificación instantánea en cambios de estado</li><li>Adiciones de notas en tiempo real visibles</li><li>Fuente de actividad se actualiza en vivo</li></ul><p><strong>Bandeja de entrada compartida:</strong></p><ul><li>Todos los miembros del equipo ven emails del cliente</li><li>Hilos de email vinculados al deal</li><li>Emails enviados visibles para todo el equipo</li><li>Previene comunicaciones duplicadas</li></ul><p><strong>Notas colaborativas:</strong></p><ul><li>Múltiples miembros pueden agregar notas simultáneamente</li><li>Hilos de comentarios en notas</li><li>Historial de edición preservado</li><li>Opción de notas privadas vs compartidas</li></ul>"
+          "text": "<p><strong>Actualizaciones en vivo (integración Pusher):</strong></p><ul><li>Ve cuando miembros del equipo están viendo deal</li><li>nietificación instantánea en cambios de estado</li><li>Adiciones de nietas en tiempo real visibles</li><li>Fuente de actividad se actualiza en vivo</li></ul><p><strong>Bandeja de entrada compartida:</strong></p><ul><li>Todos los miembros del equipo ven emails del cliente</li><li>Hilos de email vinculados al deal</li><li>Emails enviados visibles para todo el equipo</li><li>Previene comunicaciones duplicadas</li></ul><p><strong>nietas colaborativas:</strong></p><ul><li>Múltiples miembros pueden agregar nietas simultáneamente</li><li>Hilos de comentarios en nietas</li><li>Historial de edición preservado</li><li>Opción de nietas privadas vs compartidas</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -148,35 +152,33 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Clear ownership:</strong> Altijd primary owner assign</li><li><strong>Role clarity:</strong> Define roles voor elk team member</li><li><strong>Use @mentions:</strong> Tag people voor specific actions</li><li><strong>Shared notes:</strong> Default to shared notes tenzij truly private</li><li><strong>Regular sync:</strong> Weekly team meetings to review deals</li><li><strong>Document decisions:</strong> All important decisions in notes</li></ul>"
+          "text": "<ul><li><strong>Clear ownership:</strong> Altijd primary owner assign</li><li><strong>Role clarity:</strong> Define roles voor elk teamlid</li><li><strong>Use @mentions:</strong> Tag people voor specific actions</li><li><strong>Shared notes:</strong> Default to shared notes tenzij truly private</li><li><strong>Regular sync:</strong> Weekly team meetings to review deals</li><li><strong>Document decisions:</strong> All important decisions in notes</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Clear ownership:</strong> Always assign primary owner</li><li><strong>Role clarity:</strong> Define roles for each team member</li><li><strong>Use @mentions:</strong> Tag people for specific actions</li><li><strong>Shared notes:</strong> Default to shared notes unless truly private</li><li><strong>Regular sync:</strong> Weekly team meetings to review deals</li><li><strong>Document decisions:</strong> All important decisions in notes</li></ul>"
+          "text": "<ul><li><strong>Clear ownership:</strong> Always assign primary owner</li><li><strong>Role clarity:</strong> Define roles for each teamlid</li><li><strong>Use @mentions:</strong> Tag people for specific actions</li><li><strong>Shared notes:</strong> Default to shared notes unless truly private</li><li><strong>Regular sync:</strong> Weekly team meetings to review deals</li><li><strong>Document decisions:</strong> All important decisions in notes</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Propiedad clara:</strong> Siempre asigna propietario principal</li><li><strong>Claridad de roles:</strong> Define roles para cada miembro del equipo</li><li><strong>Usar @menciones:</strong> Etiqueta personas para acciones específicas</li><li><strong>Notas compartidas:</strong> Por defecto notas compartidas a menos que sean verdaderamente privadas</li><li><strong>Sincronización regular:</strong> Reuniones semanales del equipo para revisar deals</li><li><strong>Documentar decisiones:</strong> Todas las decisiones importantes en notas</li></ul>"
+          "text": "<ul><li><strong>Propiedad clara:</strong> Siempre asigna propietario principal</li><li><strong>Claridad de roles:</strong> Define roles para cada miembro del equipo</li><li><strong>Usar @menciones:</strong> Etiqueta personas para acciones específicas</li><li><strong>nietas compartidas:</strong> Por defecto nietas compartidas a menos que sean verdaderamente privadas</li><li><strong>Sincronización regular:</strong> Reuniones semanales del equipo para revisar deals</li><li><strong>Documentar decisiones:</strong> Todas las decisiones importantes en nietas</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "deal-pipeline-overview",
     "deal-activities-timeline",
     "deal-best-practices"
   ],
-
   "faq": [
     {
       "question": {
         "nl": "Kan ik ownership transferren naar andere agent?",
-        "en": "Can I transfer ownership to another agent?",
+        "en": "Can I transfer ownership to aniether agent?",
         "es": "¿Puedo transferir propiedad a otro agente?"
       },
       "answer": {
-        "nl": "Ja, je kunt primary ownership wijzigen via deal settings. All history en activities blijven preserved, en nieuwe owner ontvangt notification. Commission split kan adjusted worden indien needed.",
-        "en": "Yes, you can change primary ownership via deal settings. All history and activities are preserved, and new owner receives notification. Commission split can be adjusted if needed.",
-        "es": "Sí, puedes cambiar la propiedad principal mediante configuración de deal. Todo el historial y actividades se preservan, y el nuevo propietario recibe notificación. La división de comisión puede ajustarse si es necesario."
+        "nl": "Ja, je kunt primary ownership wijzigen via deal settings. All history en activities blijven preserved, en nieuwe owner ontvangt nietification. Commission split kan adjusted worden indien needed.",
+        "en": "Yes, you can change primary ownership via deal settings. All history and activities are preserved, and new owner receives nietification. Commission split can be adjusted if needed.",
+        "es": "Sí, puedes cambiar la propiedad principal mediante configuración de deal. Todo el historial y actividades se preservan, y el nuevo propietario recibe nietificación. La división de comisión puede ajustarse si es necesario."
       }
     }
   ]

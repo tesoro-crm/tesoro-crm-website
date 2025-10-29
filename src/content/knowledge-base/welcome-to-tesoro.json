@@ -7,18 +7,27 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["getting-started", "overview", "introduction", "basics"],
+    "tags": [
+      "getting-started",
+      "overview",
+      "introduction",
+      "basics"
+    ],
     "featured": true,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro crm", "real estate crm", "getting started", "introduction", "crm overview"]
+    "keywords": [
+      "tesoro crm",
+      "real estate crm",
+      "getting started",
+      "introduction",
+      "crm overview"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Welkom bij Tesoro CRM",
@@ -32,7 +41,6 @@
     },
     "icon": "home"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +57,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "who-is-tesoro-for",
@@ -70,7 +77,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "key-benefits",
@@ -91,7 +97,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "quick-stats",
@@ -113,7 +118,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "main-modules",
@@ -124,17 +128,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p>Tesoro bestaat uit verschillende modules die naadloos samenwerken:</p><h4>Dashboard</h4><p>Je controlecentrum met KPI's, recent activity, en belangrijke alerts. Zie in één oogopslag hoeveel deals je hebt, nieuwe leads, en waar je aandacht nodig is.</p><h4>Leads</h4><p>Verzamel en kwalificeer nieuwe prospects. Track lead source, status, en voorkeuren. Converteer gekwalificeerde leads naar deals met één klik.</p><h4>Deals</h4><p>Visueel Kanban board met alle deal stages. Zie precies waar elke deal staat en wat de volgende actie is. Track deal value, closing probability en verwachte sluitingsdatum.</p><h4>Contacts</h4><p>Centrale database met al je contacten. Buyers, sellers, investors, partners - iedereen op één plek met volledige communicatiegeschiedenis.</p><h4>Properties</h4><p>Beheer je volledige property inventory. Voeg properties toe via MLS feeds of handmatig. Inclusief foto's, video's, documenten en alle specificaties.</p><h4>Activities & Calendar</h4><p>Plan je viewings, meetings en follow-ups. Synchroniseert met Google Calendar en Outlook.</p><h4>Settings</h4><p>Pas Tesoro aan naar jouw wensen. Configureer email templates, AI settings, integraties en meer.</p>"
+          "text": "<p>Tesoro bestaat uit verschillende modules die naadloos samenwerken:</p><h4>Dashboard</h4><p>Je controlecentrum met KPI's, recente activiteit, en belangrijke alerts. Zie in één oogopslag hoeveel deals je hebt, nieuwe leads, en waar je aandacht nodig is.</p><h4>Leads</h4><p>Verzamel en kwalificeer nieuwe prospects. Track lead source, status, en voorkeuren. Converteer gekwalificeerde leads naar deals met één klik.</p><h4>Deals</h4><p>Visueel Kanban board met alle deal stages. Zie precies waar elke deal staat en wat de volgende actie is. Track deal value, closing probability en verwachte sluitingsdatum.</p><h4>Contacts</h4><p>Centrale database met al je contacten. Buyers, sellers, investors, partners - iedereen op één plek met volledige communicatiegeschiedenis.</p><h4>Properties</h4><p>Beheer je volledige property inventory. Voeg properties toe via MLS feeds of handmatig. Inclusief foto's, video's, documenten en alle specificaties.</p><h4>Activities & Calendar</h4><p>Plan je viewings, meetings en follow-ups. Synchroniseert met Google Calendar en Outlook.</p><h4>Settings</h4><p>Pas Tesoro aan naar jouw wensen. Configureer email templates, AI settings, integraties en meer.</p>"
         },
         "en": {
-          "text": "<p>Tesoro consists of various modules that work seamlessly together:</p><h4>Dashboard</h4><p>Your control center with KPIs, recent activity, and important alerts. See at a glance how many deals you have, new leads, and where your attention is needed.</p><h4>Leads</h4><p>Collect and qualify new prospects. Track lead source, status, and preferences. Convert qualified leads to deals with one click.</p><h4>Deals</h4><p>Visual Kanban board with all deal stages. See exactly where each deal is and what the next action is. Track deal value, closing probability and expected closing date.</p><h4>Contacts</h4><p>Central database with all your contacts. Buyers, sellers, investors, partners - everyone in one place with complete communication history.</p><h4>Properties</h4><p>Manage your complete property inventory. Add properties via MLS feeds or manually. Including photos, videos, documents and all specifications.</p><h4>Activities & Calendar</h4><p>Schedule your viewings, meetings and follow-ups. Syncs with Google Calendar and Outlook.</p><h4>Settings</h4><p>Customize Tesoro to your needs. Configure email templates, AI settings, integrations and more.</p>"
+          "text": "<p>Tesoro consists of various modules that work seamlessly together:</p><h4>Dashboard</h4><p>Your control center with KPIs, recente activiteit, and important alerts. See at a glance how many deals you have, new leads, and where your attention is needed.</p><h4>Leads</h4><p>Collect and qualify new prospects. Track lead source, status, and preferences. Convert qualified leads to deals with one click.</p><h4>Deals</h4><p>Visual Kanban board with all deal stages. See exactly where each deal is and what the next action is. Track deal value, closing probability and expected closing date.</p><h4>Contacts</h4><p>Central database with all your contacts. Buyers, sellers, investors, partners - everyone in one place with complete communication history.</p><h4>Properties</h4><p>Manage your complete property inventory. Add properties via MLS feeds or manually. Including photos, videos, documents and all specifications.</p><h4>Activities & Calendar</h4><p>Schedule your viewings, meetings and follow-ups. Syncs with Google Calendar and Outlook.</p><h4>Settings</h4><p>Customize Tesoro to your needs. Configure email templates, AI settings, integrations and more.</p>"
         },
         "es": {
           "text": "<p>Tesoro consta de varios módulos que funcionan perfectamente juntos:</p><h4>Dashboard</h4><p>Tu centro de control con KPIs, actividad reciente y alertas importantes. Ve de un vistazo cuántos deals tienes, nuevos leads y dónde se necesita tu atención.</p><h4>Leads</h4><p>Recopila y califica nuevos prospectos. Rastrea la fuente del lead, estado y preferencias. Convierte leads calificados en deals con un clic.</p><h4>Deals</h4><p>Tablero Kanban visual con todas las etapas de deals. Ve exactamente dónde está cada deal y cuál es la siguiente acción. Rastrea el valor del deal, probabilidad de cierre y fecha de cierre esperada.</p><h4>Contacts</h4><p>Base de datos central con todos tus contactos. Compradores, vendedores, inversores, socios - todos en un solo lugar con historial de comunicación completo.</p><h4>Properties</h4><p>Gestiona tu inventario completo de propiedades. Agrega propiedades a través de feeds MLS o manualmente. Incluye fotos, videos, documentos y todas las especificaciones.</p><h4>Activities & Calendar</h4><p>Programa tus visitas, reuniones y seguimientos. Se sincroniza con Google Calendar y Outlook.</p><h4>Settings</h4><p>Personaliza Tesoro según tus necesidades. Configura plantillas de email, ajustes de IA, integraciones y más.</p>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "next-steps",
@@ -157,14 +160,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "account-registration-complete-guide",
     "dashboard-overview",
     "quick-start-guide",
     "first-steps-checklist"
   ],
-
   "faq": [
     {
       "question": {
@@ -198,7 +199,7 @@
       },
       "answer": {
         "nl": "Je kunt binnen 30 minuten starten. Account aanmaken duurt 5 minuten, eerste contacten en properties importeren nog eens 15-20 minuten. Voor volledige team onboarding reken je 1-2 dagen, afhankelijk van je teamgrootte.",
-        "en": "You can start within 30 minutes. Creating an account takes 5 minutes, importing first contacts and properties another 15-20 minutes. For full team onboarding, allow 1-2 days depending on your team size.",
+        "en": "You can start within 30 minutes. Creating an account takes 5 minutes, importing first contacts and properties aniether 15-20 minutes. For full team onboarding, allow 1-2 days depending on your team size.",
         "es": "Puedes comenzar en 30 minutos. Crear una cuenta toma 5 minutos, importar primeros contactos y propiedades otros 15-20 minutos. Para la incorporación completa del equipo, considera 1-2 días dependiendo del tamaño de tu equipo."
       }
     },

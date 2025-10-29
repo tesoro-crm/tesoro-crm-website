@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "troubleshooting",
     "difficulty": "intermediate",
-    "tags": ["import", "csv", "data", "migration", "troubleshooting"],
+    "tags": [
+      "import",
+      "csv",
+      "data",
+      "migration",
+      "troubleshooting"
+    ],
     "featured": false,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
-    "keywords": ["data import", "csv import", "import problems", "migration issues", "tesoro import"]
+    "keywords": [
+      "data import",
+      "csv import",
+      "import problems",
+      "migration issues",
+      "tesoro import"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Data import problemen oplossen",
@@ -32,7 +42,6 @@
     },
     "icon": "upload_file"
   },
-
   "sections": [
     {
       "type": "text",
@@ -44,17 +53,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Ondersteunde formats:</strong></p><ul><li>CSV (.csv) - Aanbevolen</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try opnieuw</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields voor Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (minimaal één)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save en reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correcte date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Aanbevolen</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Oplossing:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save en reimport</li></ol>"
+          "text": "<h4>❌ Error: \"File format niet supported\"</h4><p><strong>Ondersteunde formats:</strong></p><ul><li>CSV (.csv) - Aanbevolen</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try opnieuw</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields voor Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (minimaal één)</li></ul><p><strong>Oplossing:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save en reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correcte date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Aanbevolen</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Oplossing:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save en reimport</li></ol>"
         },
         "en": {
-          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Supported formats:</strong></p><ul><li>CSV (.csv) - Recommended</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solution:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try again</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields for Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (at least one)</li></ul><p><strong>Solution:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save and reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correct date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recommended</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Solution:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save and reimport</li></ol>"
+          "text": "<h4>❌ Error: \"File format niet supported\"</h4><p><strong>Supported formats:</strong></p><ul><li>CSV (.csv) - Recommended</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solution:</strong></p><ol><li>Check file extension</li><li>Open in Excel → Save As → CSV UTF-8</li><li>Try again</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Required fields for Contacts:</strong></p><ul><li>Name (First + Last) OR Company Name</li><li>Email OR Phone (at least one)</li></ul><p><strong>Solution:</strong></p><ol><li>Open CSV in Excel</li><li>Add missing columns</li><li>Fill required data</li><li>Save and reimport</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Correct date formats:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recommended</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - US format</li></ul><p><strong>Solution:</strong></p><ol><li>Format all date columns in Excel</li><li>Select column → Format Cells → Date → YYYY-MM-DD</li><li>Save and reimport</li></ol>"
         },
         "es": {
-          "text": "<h4>❌ Error: \"File format not supported\"</h4><p><strong>Formatos soportados:</strong></p><ul><li>CSV (.csv) - Recomendado</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solución:</strong></p><ol><li>Verifica extensión del archivo</li><li>Abre en Excel → Guardar Como → CSV UTF-8</li><li>Intenta de nuevo</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Campos requeridos para Contactos:</strong></p><ul><li>Nombre (First + Last) O Company Name</li><li>Email O Phone (al menos uno)</li></ul><p><strong>Solución:</strong></p><ol><li>Abre CSV en Excel</li><li>Agrega columnas faltantes</li><li>Completa datos requeridos</li><li>Guarda y reimporta</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Formatos de fecha correctos:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recomendado</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - formato US</li></ul><p><strong>Solución:</strong></p><ol><li>Formatea todas las columnas de fecha en Excel</li><li>Selecciona columna → Formato de Celdas → Fecha → YYYY-MM-DD</li><li>Guarda y reimporta</li></ol>"
+          "text": "<h4>❌ Error: \"File format niet supported\"</h4><p><strong>Formatos soportados:</strong></p><ul><li>CSV (.csv) - Recomendado</li><li>Excel (.xlsx, .xls)</li><li>vCard (.vcf)</li></ul><p><strong>Solución:</strong></p><ol><li>Verifica extensión del archivo</li><li>Abre en Excel → Guardar Como → CSV UTF-8</li><li>Intenta de nuevo</li></ol><h4>❌ Error: \"Missing required fields\"</h4><p><strong>Campos requeridos para Contactos:</strong></p><ul><li>Nombre (First + Last) O Company Name</li><li>Email O Phone (al menos uno)</li></ul><p><strong>Solución:</strong></p><ol><li>Abre CSV en Excel</li><li>Agrega columnas faltantes</li><li>Completa datos requeridos</li><li>Guarda y reimporta</li></ol><h4>❌ Error: \"Invalid date format\"</h4><p><strong>Formatos de fecha correctos:</strong></p><ul><li>YYYY-MM-DD (2024-10-23) - Recomendado</li><li>DD/MM/YYYY (23/10/2024)</li><li>MM/DD/YYYY (10/23/2024) - formato US</li></ul><p><strong>Solución:</strong></p><ol><li>Formatea todas las columnas de fecha en Excel</li><li>Selecciona columna → Formato de Celdas → Fecha → YYYY-MM-DD</li><li>Guarda y reimporta</li></ol>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "field-mapping",
@@ -71,11 +79,10 @@
           "text": "<h4>Map CSV columns to Tesoro fields:</h4><p><strong>Import wizard steps:</strong></p><ol><li>Upload CSV file</li><li>Tesoro shows column preview</li><li>Map each column to Tesoro field:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (splits automatically)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Preview mapping</li><li>Click Import</li></ol><h4>Map custom fields:</h4><p>If you have custom CSV columns:</p><ol><li>Create custom field in Tesoro first (Settings → Custom Fields)</li><li>During import: Map column to custom field</li><li>Data will be imported to custom field</li></ol><h4>Skip unwanted columns:</h4><ul><li>Columns you don't want to import: Select \"Skip\" in mapping dropdown</li><li>E.g. internal IDs, notes, etc.</li></ul>"
         },
         "es": {
-          "text": "<h4>Mapea columnas CSV a campos de Tesoro:</h4><p><strong>Pasos del asistente de importación:</strong></p><ol><li>Sube archivo CSV</li><li>Tesoro muestra vista previa de columnas</li><li>Mapea cada columna a campo de Tesoro:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (divide automáticamente)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Vista previa de mapeo</li><li>Haz clic en Import</li></ol><h4>Mapear campos personalizados:</h4><p>Si tienes columnas CSV personalizadas:</p><ol><li>Crea campo personalizado en Tesoro primero (Settings → Custom Fields)</li><li>Durante importación: Mapea columna a campo personalizado</li><li>Los datos se importarán a campo personalizado</li></ol><h4>Omitir columnas no deseadas:</h4><ul><li>Columnas que no quieres importar: Selecciona \"Skip\" en dropdown de mapeo</li><li>Ej. IDs internos, notas, etc.</li></ul>"
+          "text": "<h4>Mapea columnas CSV a campos de Tesoro:</h4><p><strong>Pasos del asistente de importación:</strong></p><ol><li>Sube archivo CSV</li><li>Tesoro muestra vista previa de columnas</li><li>Mapea cada columna a campo de Tesoro:<ul><li>\"Email Address\" → Email</li><li>\"Full Name\" → First Name (divide automáticamente)</li><li>\"Mobile\" → Phone</li><li>\"Company\" → Company Name</li></ul></li><li>Vista previa de mapeo</li><li>Haz clic en Import</li></ol><h4>Mapear campos personalizados:</h4><p>Si tienes columnas CSV personalizadas:</p><ol><li>Crea campo personalizado en Tesoro primero (Settings → Custom Fields)</li><li>Durante importación: Mapea columna a campo personalizado</li><li>Los datos se importarán a campo personalizado</li></ol><h4>Omitir columnas no deseadas:</h4><ul><li>Columnas que no quieres importar: Selecciona \"Skip\" en dropdown de mapeo</li><li>Ej. IDs internos, nietas, etc.</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "duplicate-handling",
@@ -98,13 +105,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-bulk-import",
     "contact-merge-duplicates",
     "common-issues-solutions"
   ],
-
   "faq": [
     {
       "question": {

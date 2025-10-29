@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "beginner",
-    "tags": ["contacts", "best-practices", "tips", "optimization", "workflow"],
+    "tags": [
+      "contacts",
+      "best-practices",
+      "tips",
+      "optimization",
+      "workflow"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["contact management best practices", "crm tips", "contact organization", "tesoro workflow", "contact database optimization"]
+    "keywords": [
+      "contact management best practices",
+      "crm tips",
+      "contact organization",
+      "tesoro workflow",
+      "contact database optimization"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Best Practices voor Contact Management",
@@ -32,7 +42,6 @@
     },
     "icon": "stars"
   },
-
   "sections": [
     {
       "type": "text",
@@ -47,14 +56,13 @@
           "text": "<h3>Waarom Data Kwaliteit Belangrijk Is</h3><p>Een schone, accurate contactdatabase is essentieel voor:</p><ul><li>Effectieve communicatie</li><li>Betrouwbare rapporten</li><li>Efficiënte workflows</li><li>Team vertrouwen in het systeem</li></ul><h3>Verplichte Velden Strategie</h3><p><strong>Minimaal verplicht:</strong></p><ul><li>First name</li><li>Last name</li><li>Email</li></ul><p><strong>Sterk aanbevolen:</strong></p><ul><li>Phone number</li><li>City/Location</li><li>Lead source</li><li>Status</li></ul><p><strong>Nice to have:</strong></p><ul><li>Company</li><li>Role</li><li>Address</li><li>Preferred communication</li></ul><h3>Data Hygiene Routine</h3><p><strong>Dagelijks:</strong></p><ul><li>Check nieuwe contacten op volledigheid</li><li>Update status na belangrijke interacties</li><li>Voeg notities toe na gesprekken</li></ul><p><strong>Wekelijks:</strong></p><ul><li>Run duplicate detection</li><li>Review en merge duplicaten</li><li>Update tags voor actuele status</li><li>Complete ontbrekende informatie</li></ul><p><strong>Maandelijks:</strong></p><ul><li>Archive inactive contacts (Lost/Won)</li><li>Review custom fields usage</li><li>Clean up unused tags</li><li>Export backup van database</li></ul>"
         },
         "en": {
-          "text": "<h3>Why Data Quality Matters</h3><p>A clean, accurate contact database is essential for:</p><ul><li>Effective communication</li><li>Reliable reports</li><li>Efficient workflows</li><li>Team trust in the system</li></ul><h3>Required Fields Strategy</h3><p><strong>Minimum required:</strong></p><ul><li>First name</li><li>Last name</li><li>Email</li></ul><p><strong>Highly recommended:</strong></p><ul><li>Phone number</li><li>City/Location</li><li>Lead source</li><li>Status</li></ul><p><strong>Nice to have:</strong></p><ul><li>Company</li><li>Role</li><li>Address</li><li>Preferred communication</li></ul><h3>Data Hygiene Routine</h3><p><strong>Daily:</strong></p><ul><li>Check new contacts for completeness</li><li>Update status after important interactions</li><li>Add notes after conversations</li></ul><p><strong>Weekly:</strong></p><ul><li>Run duplicate detection</li><li>Review and merge duplicates</li><li>Update tags for current status</li><li>Complete missing information</li></ul><p><strong>Monthly:</strong></p><ul><li>Archive inactive contacts (Lost/Won)</li><li>Review custom fields usage</li><li>Clean up unused tags</li><li>Export database backup</li></ul>"
+          "text": "<h3>Why Data Quality Matters</h3><p>A clean, accurate contact database is essential for:</p><ul><li>Effective communication</li><li>Reliable reports</li><li>Efficient workflows</li><li>Team trust in the system</li></ul><h3>Required Fields Strategy</h3><p><strong>Minimum required:</strong></p><ul><li>First name</li><li>Last name</li><li>Email</li></ul><p><strong>Highly recommended:</strong></p><ul><li>Phone number</li><li>City/Location</li><li>Lead source</li><li>Status</li></ul><p><strong>Nice to have:</strong></p><ul><li>Company</li><li>Role</li><li>Address</li><li>Preferred communication</li></ul><h3>Data Hygiene Routine</h3><p><strong>Daily:</strong></p><ul><li>Check new contacts for completeness</li><li>Update status after important interactions</li><li>Add notes after conversations</li></ul><p><strong>Weekly:</strong></p><ul><li>Run duplicate detection</li><li>Review and merge duplicates</li><li>Update tags for huidige status</li><li>Complete missing information</li></ul><p><strong>Monthly:</strong></p><ul><li>Archive inactive contacts (Lost/Won)</li><li>Review custom fields usage</li><li>Clean up unused tags</li><li>Export database backup</li></ul>"
         },
         "es": {
-          "text": "<h3>Por qué la Calidad de Datos Importa</h3><p>Una base de datos de contactos limpia y precisa es esencial para:</p><ul><li>Comunicación efectiva</li><li>Informes confiables</li><li>Flujos de trabajo eficientes</li><li>Confianza del equipo en el sistema</li></ul><h3>Estrategia de Campos Requeridos</h3><p><strong>Mínimo requerido:</strong></p><ul><li>Nombre</li><li>Apellido</li><li>Email</li></ul><p><strong>Altamente recomendado:</strong></p><ul><li>Número de teléfono</li><li>Ciudad/Ubicación</li><li>Fuente de lead</li><li>Estado</li></ul><p><strong>Agradable tener:</strong></p><ul><li>Empresa</li><li>Rol</li><li>Dirección</li><li>Comunicación preferida</li></ul><h3>Rutina de Higiene de Datos</h3><p><strong>Diariamente:</strong></p><ul><li>Verificar nuevos contactos para completitud</li><li>Actualizar estado después de interacciones importantes</li><li>Agregar notas después de conversaciones</li></ul><p><strong>Semanalmente:</strong></p><ul><li>Ejecutar detección de duplicados</li><li>Revisar y fusionar duplicados</li><li>Actualizar etiquetas para estado actual</li><li>Completar información faltante</li></ul><p><strong>Mensualmente:</strong></p><ul><li>Archivar contactos inactivos (Perdidos/Ganados)</li><li>Revisar uso de campos personalizados</li><li>Limpiar etiquetas no usadas</li><li>Exportar copia de seguridad de base de datos</li></ul>"
+          "text": "<h3>Por qué la Calidad de Datos Importa</h3><p>Una base de datos de contactos limpia y precisa es esencial para:</p><ul><li>Comunicación efectiva</li><li>Informes confiables</li><li>Flujos de trabajo eficientes</li><li>Confianza del equipo en el sistema</li></ul><h3>Estrategia de Campos Requeridos</h3><p><strong>Mínimo requerido:</strong></p><ul><li>Nombre</li><li>Apellido</li><li>Email</li></ul><p><strong>Altamente recomendado:</strong></p><ul><li>Número de teléfono</li><li>Ciudad/Ubicación</li><li>Fuente de lead</li><li>Estado</li></ul><p><strong>Agradable tener:</strong></p><ul><li>Empresa</li><li>Rol</li><li>Dirección</li><li>Comunicación preferida</li></ul><h3>Rutina de Higiene de Datos</h3><p><strong>Diariamente:</strong></p><ul><li>Verificar nuevos contactos para completitud</li><li>Actualizar estado después de interacciones importantes</li><li>Agregar nietas después de conversaciones</li></ul><p><strong>Semanalmente:</strong></p><ul><li>Ejecutar detección de duplicados</li><li>Revisar y fusionar duplicados</li><li>Actualizar etiquetas para estado actual</li><li>Completar información faltante</li></ul><p><strong>Mensualmente:</strong></p><ul><li>Archivar contactos inactivos (Perdidos/Ganados)</li><li>Revisar uso de campos personalizados</li><li>Limpiar etiquetas no usadas</li><li>Exportar copia de seguridad de base de datos</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "tagging-strategy",
@@ -68,14 +76,13 @@
           "text": "<h3>Tag Categorieën Systeem</h3><p>Organiseer tags in logische categorieën:</p><p><strong>1. Status Tags (Prioriteit/Temperatuur):</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li></ul><p><strong>2. Source Tags (Waar komt contact vandaan):</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Newsletter</li></ul><p><strong>3. Property Interest Tags:</strong></p><ul><li>Luxury Buyer</li><li>First-time Buyer</li><li>Investor</li><li>Beach Property</li><li>City Center</li></ul><p><strong>4. Action Tags (Follow-up):</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Waiting for Documents</li><li>Offer Submitted</li></ul><p><strong>5. Engagement Tags:</strong></p><ul><li>Newsletter Subscriber</li><li>Event Attendee</li><li>Webinar Participant</li></ul><h3>Naming Conventions</h3><ul><li>Gebruik consistente naming (Title Case)</li><li>Houd tags kort (max 3 woorden)</li><li>Vermijd synoniemen ('Hot Lead' niet 'Urgent Lead')</li><li>Gebruik kleuren voor categorieën</li></ul>"
         },
         "en": {
-          "text": "<h3>Tag Categories System</h3><p>Organize tags into logical categories:</p><p><strong>1. Status Tags (Priority/Temperature):</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li></ul><p><strong>2. Source Tags (Where contact came from):</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Newsletter</li></ul><p><strong>3. Property Interest Tags:</strong></p><ul><li>Luxury Buyer</li><li>First-time Buyer</li><li>Investor</li><li>Beach Property</li><li>City Center</li></ul><p><strong>4. Action Tags (Follow-up):</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Waiting for Documents</li><li>Offer Submitted</li></ul><p><strong>5. Engagement Tags:</strong></p><ul><li>Newsletter Subscriber</li><li>Event Attendee</li><li>Webinar Participant</li></ul><h3>Naming Conventions</h3><ul><li>Use consistent naming (Title Case)</li><li>Keep tags short (max 3 words)</li><li>Avoid synonyms ('Hot Lead' not 'Urgent Lead')</li><li>Use colors for categories</li></ul>"
+          "text": "<h3>Tag Categories System</h3><p>Organize tags into logical categories:</p><p><strong>1. Status Tags (Priority/Temperature):</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li></ul><p><strong>2. Source Tags (Where contact came from):</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Newsletter</li></ul><p><strong>3. Property Interest Tags:</strong></p><ul><li>Luxury Buyer</li><li>First-time Buyer</li><li>Investor</li><li>Beach Property</li><li>City Center</li></ul><p><strong>4. Action Tags (Follow-up):</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Waiting for Documents</li><li>Offer Submitted</li></ul><p><strong>5. Engagement Tags:</strong></p><ul><li>Newsletter Subscriber</li><li>Event Attendee</li><li>Webinar Participant</li></ul><h3>Naming Conventions</h3><ul><li>Use consistent naming (Title Case)</li><li>Keep tags short (max 3 words)</li><li>Avoid synonyms ('Hot Lead' niet 'Urgent Lead')</li><li>Use colors for categories</li></ul>"
         },
         "es": {
           "text": "<h3>Sistema de Categorías de Etiquetas</h3><p>Organiza etiquetas en categorías lógicas:</p><p><strong>1. Etiquetas de Estado (Prioridad/Temperatura):</strong></p><ul><li>Hot Lead</li><li>Warm Lead</li><li>Cold Lead</li><li>VIP Client</li></ul><p><strong>2. Etiquetas de Fuente (De dónde vino el contacto):</strong></p><ul><li>Website</li><li>Referral</li><li>Open House</li><li>Social Media</li><li>Newsletter</li></ul><p><strong>3. Etiquetas de Interés en Propiedad:</strong></p><ul><li>Luxury Buyer</li><li>First-time Buyer</li><li>Investor</li><li>Beach Property</li><li>City Center</li></ul><p><strong>4. Etiquetas de Acción (Seguimiento):</strong></p><ul><li>Needs Follow-up</li><li>Viewing Scheduled</li><li>Waiting for Documents</li><li>Offer Submitted</li></ul><p><strong>5. Etiquetas de Compromiso:</strong></p><ul><li>Newsletter Subscriber</li><li>Event Attendee</li><li>Webinar Participant</li></ul><h3>Convenciones de Nomenclatura</h3><ul><li>Usar nomenclatura consistente (Title Case)</li><li>Mantener etiquetas cortas (máx 3 palabras)</li><li>Evitar sinónimos ('Hot Lead' no 'Urgent Lead')</li><li>Usar colores para categorías</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "communication-workflow",
@@ -92,11 +99,10 @@
           "text": "<h3>Standard Follow-up Process</h3><p><strong>New Lead (Day 1):</strong></p><ol><li>Email confirmation within 1 hour</li><li>Add to CRM with source tag</li><li>Qualify: Hot/Warm/Cold</li><li>Schedule follow-up call (24-48 hours)</li></ol><p><strong>Hot Lead (Day 2-3):</strong></p><ol><li>Call for qualification conversation</li><li>Add detailed notes</li><li>Propose AI property matching</li><li>Schedule viewing within 1 week</li></ol><p><strong>Warm Lead (Week 1-2):</strong></p><ol><li>Send relevant properties weekly</li><li>Check-in call every 2 weeks</li><li>Stay in touch via newsletter</li><li>Monitor engagement (email opens)</li></ol><p><strong>Post-viewing:</strong></p><ol><li>Thank you email within 2 hours</li><li>Request feedback</li><li>Propose additional properties</li><li>Plan next steps</li></ol><h3>Template Usage</h3><ul><li><strong>Welcome email:</strong> New leads</li><li><strong>Property showcase:</strong> Matched properties</li><li><strong>Viewing confirmation:</strong> Appointment confirmation</li><li><strong>Follow-up:</strong> After viewing/conversation</li><li><strong>Check-in:</strong> Periodic updates</li></ul>"
         },
         "es": {
-          "text": "<h3>Proceso de Seguimiento Estándar</h3><p><strong>Nuevo Lead (Día 1):</strong></p><ol><li>Email de confirmación en 1 hora</li><li>Agregar a CRM con etiqueta de fuente</li><li>Calificar: Hot/Warm/Cold</li><li>Programar llamada de seguimiento (24-48 horas)</li></ol><p><strong>Hot Lead (Día 2-3):</strong></p><ol><li>Llamar para conversación de calificación</li><li>Agregar notas detalladas</li><li>Proponer matching de propiedades con IA</li><li>Programar visita en 1 semana</li></ol><p><strong>Warm Lead (Semana 1-2):</strong></p><ol><li>Enviar propiedades relevantes semanalmente</li><li>Llamada de verificación cada 2 semanas</li><li>Mantenerse en contacto vía newsletter</li><li>Monitorear compromiso (aperturas de email)</li></ol><p><strong>Post-visita:</strong></p><ol><li>Email de agradecimiento en 2 horas</li><li>Solicitar feedback</li><li>Proponer propiedades adicionales</li><li>Planificar próximos pasos</li></ol><h3>Uso de Plantillas</h3><ul><li><strong>Email de bienvenida:</strong> Nuevos leads</li><li><strong>Showcase de propiedad:</strong> Propiedades coincidentes</li><li><strong>Confirmación de visita:</strong> Confirmación de cita</li><li><strong>Seguimiento:</strong> Después de visita/conversación</li><li><strong>Verificación:</strong> Actualizaciones periódicas</li></ul>"
+          "text": "<h3>Proceso de Seguimiento Estándar</h3><p><strong>Nuevo Lead (Día 1):</strong></p><ol><li>Email de confirmación en 1 hora</li><li>Agregar a CRM con etiqueta de fuente</li><li>Calificar: Hot/Warm/Cold</li><li>Programar llamada de seguimiento (24-48 horas)</li></ol><p><strong>Hot Lead (Día 2-3):</strong></p><ol><li>Llamar para conversación de calificación</li><li>Agregar nietas detalladas</li><li>Proponer matching de propiedades con IA</li><li>Programar visita en 1 semana</li></ol><p><strong>Warm Lead (Semana 1-2):</strong></p><ol><li>Enviar propiedades relevantes semanalmente</li><li>Llamada de verificación cada 2 semanas</li><li>Mantenerse en contacto vía newsletter</li><li>Monitorear compromiso (aperturas de email)</li></ol><p><strong>Post-visita:</strong></p><ol><li>Email de agradecimiento en 2 horas</li><li>Solicitar feedback</li><li>Proponer propiedades adicionales</li><li>Planificar próximos pasos</li></ol><h3>Uso de Plantillas</h3><ul><li><strong>Email de bienvenida:</strong> Nuevos leads</li><li><strong>Showcase de propiedad:</strong> Propiedades coincidentes</li><li><strong>Confirmación de visita:</strong> Confirmación de cita</li><li><strong>Seguimiento:</strong> Después de visita/conversación</li><li><strong>Verificación:</strong> Actualizaciones periódicas</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "golden-rules",
@@ -108,25 +114,23 @@
       },
       "content": {
         "nl": {
-          "text": "<ol><li><strong>Document Everything:</strong> Voeg notities toe na ELKE interactie</li><li><strong>Same Day Follow-up:</strong> Reageer op nieuwe leads binnen 24 uur</li><li><strong>Update Status:</strong> Houd contact status actueel (Active/Won/Lost)</li><li><strong>Use Tags Consistently:</strong> Volg je tag strategie</li><li><strong>Weekly Cleanup:</strong> Vind en merge duplicaten wekelijks</li><li><strong>Respect Privacy:</strong> Honour GDPR rechten en consent</li><li><strong>Leverage AI:</strong> Gebruik property matching voor betere service</li><li><strong>Keep it Clean:</strong> Verwijder oude, irrelevante contacten</li><li><strong>Set Reminders:</strong> Laat niets door de mazen vallen</li><li><strong>Review & Improve:</strong> Analyseer je proces maandelijks</li></ol>"
+          "text": "<ol><li><strong>Document Everything:</strong> Voeg notities toe na ELKE interactie</li><li><strong>Same Day Follow-up:</strong> Reageer op nieuwe leads binnen 24 uur</li><li><strong>Update Status:</strong> Houd contact status actueel (Active/Won/Lost)</li><li><strong>Use Tags Consistently:</strong> Volg je tag strategie</li><li><strong>Weekly Cleanup:</strong> Vind en merge duplicaten wekelijks</li><li><strong>Respect Privacy:</strong> Honour GDPR rechten en consent</li><li><strong>Gebruik AI:</strong> Gebruik property matching voor betere service</li><li><strong>Keep it Clean:</strong> Verwijder oude, irrelevante contacten</li><li><strong>Set Reminders:</strong> Laat niets door de mazen vallen</li><li><strong>Review & Improve:</strong> Analyseer je proces maandelijks</li></ol>"
         },
         "en": {
-          "text": "<ol><li><strong>Document Everything:</strong> Add notes after EVERY interaction</li><li><strong>Same Day Follow-up:</strong> Respond to new leads within 24 hours</li><li><strong>Update Status:</strong> Keep contact status current (Active/Won/Lost)</li><li><strong>Use Tags Consistently:</strong> Follow your tag strategy</li><li><strong>Weekly Cleanup:</strong> Find and merge duplicates weekly</li><li><strong>Respect Privacy:</strong> Honor GDPR rights and consent</li><li><strong>Leverage AI:</strong> Use property matching for better service</li><li><strong>Keep it Clean:</strong> Delete old, irrelevant contacts</li><li><strong>Set Reminders:</strong> Don't let anything fall through the cracks</li><li><strong>Review & Improve:</strong> Analyze your process monthly</li></ol>"
+          "text": "<ol><li><strong>Document Everything:</strong> Add notes after EVERY interaction</li><li><strong>Same Day Follow-up:</strong> Respond to new leads within 24 hours</li><li><strong>Update Status:</strong> Keep contact status current (Active/Won/Lost)</li><li><strong>Use Tags Consistently:</strong> Follow your tag strategy</li><li><strong>Weekly Cleanup:</strong> Find and merge duplicates weekly</li><li><strong>Respect Privacy:</strong> Honor GDPR rights and consent</li><li><strong>Gebruik AI:</strong> Use property matching for better service</li><li><strong>Keep it Clean:</strong> Delete old, irrelevant contacts</li><li><strong>Set Reminders:</strong> Don't let anything fall through the cracks</li><li><strong>Review & Improve:</strong> Analyze your process monthly</li></ol>"
         },
         "es": {
-          "text": "<ol><li><strong>Documentar Todo:</strong> Agregar notas después de CADA interacción</li><li><strong>Seguimiento el Mismo Día:</strong> Responder a nuevos leads en 24 horas</li><li><strong>Actualizar Estado:</strong> Mantener estado de contacto actual (Active/Won/Lost)</li><li><strong>Usar Etiquetas Consistentemente:</strong> Seguir tu estrategia de etiquetas</li><li><strong>Limpieza Semanal:</strong> Encontrar y fusionar duplicados semanalmente</li><li><strong>Respetar Privacidad:</strong> Honrar derechos GDPR y consentimiento</li><li><strong>Aprovechar IA:</strong> Usar matching de propiedades para mejor servicio</li><li><strong>Mantenerlo Limpio:</strong> Eliminar contactos antiguos, irrelevantes</li><li><strong>Establecer Recordatorios:</strong> No dejar que nada se pierda</li><li><strong>Revisar y Mejorar:</strong> Analizar tu proceso mensualmente</li></ol>"
+          "text": "<ol><li><strong>Documentar Todo:</strong> Agregar nietas después de CADA interacción</li><li><strong>Seguimiento el Mismo Día:</strong> Responder a nuevos leads en 24 horas</li><li><strong>Actualizar Estado:</strong> Mantener estado de contacto actual (Active/Won/Lost)</li><li><strong>Usar Etiquetas Consistentemente:</strong> Seguir tu estrategia de etiquetas</li><li><strong>Limpieza Semanal:</strong> Encontrar y fusionar duplicados semanalmente</li><li><strong>Respetar Privacidad:</strong> Honrar derechos GDPR y consentimiento</li><li><strong>Aprovechar IA:</strong> Usar matching de propiedades para mejor servicio</li><li><strong>Mantenerlo Limpio:</strong> Eliminar contactos antiguos, irrelevantes</li><li><strong>Establecer Recordatorios:</strong> No dejar que nada se pierda</li><li><strong>Revisar y Mejorar:</strong> Analizar tu proceso mensualmente</li></ol>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "creating-contacts-step-by-step",
     "contact-tags-organization",
     "contact-advanced-search"
   ],
-
   "faq": [
     {
       "question": {
@@ -142,8 +146,8 @@
     },
     {
       "question": {
-        "nl": "Wat is de beste manier om team members te trainen in contact management?",
-        "en": "What's the best way to train team members in contact management?",
+        "nl": "Wat is de beste manier om teamlids te trainen in contact management?",
+        "en": "What's the best way to train teamlids in contact management?",
         "es": "¿Cuál es la mejor forma de capacitar a los miembros del equipo en gestión de contactos?"
       },
       "answer": {

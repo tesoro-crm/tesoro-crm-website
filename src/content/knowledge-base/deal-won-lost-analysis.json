@@ -5,20 +5,28 @@
     "publishDate": "2024-10-23",
     "updatedAt": "2024-10-23T12:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["deals", "pipeline", "sales"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&h=630&fit=crop",
-    "keywords": ["won deals", "lost deals", "deal analysis", "loss reasons", "win rate"]
+    "keywords": [
+      "won deals",
+      "lost deals",
+      "deal analysis",
+      "verlies redenen",
+      "win rate"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Won en lost deal analysis",
@@ -26,13 +34,12 @@
       "es": "Análisis de deals ganados y perdidos"
     },
     "description": {
-      "nl": "Leer hoe je deals correct marked als won of lost, loss reasons tracked, en insights gebruikt voor process improvement.",
-      "en": "Learn how to correctly mark deals as won or lost, track loss reasons, and use insights for process improvement.",
+      "nl": "Leer hoe je deals correct marked als won of lost, verlies redenen tracked, en insights gebruikt voor process improvement.",
+      "en": "Learn how to correctly mark deals as won or lost, track verlies redenen, and use insights for process improvement.",
       "es": "Aprende cómo marcar correctamente deals como ganados o perdidos, rastrear razones de pérdida y usar insights para mejora de procesos."
     },
     "icon": "analytics"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +56,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "won-deals",
@@ -73,7 +79,7 @@
               "text": "<p>When contract is signed and deal closed:</p><ul><li>Move deal to <strong>Won</strong> stage</li><li>Verify final deal value (actual closing price)</li><li>Confirm commission amount</li><li>Set actual closing date</li><li>Add final notes about closing process</li></ul>"
             },
             "es": {
-              "text": "<p>Cuando el contrato está firmado y el deal cerrado:</p><ul><li>Mueve deal a etapa <strong>Ganado</strong></li><li>Verifica valor final del deal (precio de cierre real)</li><li>Confirma monto de comisión</li><li>Establece fecha de cierre real</li><li>Agrega notas finales sobre proceso de cierre</li></ul>"
+              "text": "<p>Cuando el contrato está firmado y el deal cerrado:</p><ul><li>Mueve deal a etapa <strong>Ganado</strong></li><li>Verifica valor final del deal (precio de cierre real)</li><li>Confirma monto de comisión</li><li>Establece fecha de cierre real</li><li>Agrega nietas finales sobre proceso de cierre</li></ul>"
             }
           }
         },
@@ -97,7 +103,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "lost-deals",
@@ -115,13 +120,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Wanneer deal niet doorgaat:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (verplicht)</li><li>Add detailed notes explaining wat happened</li><li>Document competitor information (indien applicable)</li><li>Note lessons learned</li></ul>"
+              "text": "<p>Wanneer deal niet doorgaat:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (verplicht)</li><li>Add detailed notes explaining wat happened</li><li>Document competitor information (indien applicable)</li><li>niete geleerde lessen</li></ul>"
             },
             "en": {
-              "text": "<p>When deal doesn't close:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (required)</li><li>Add detailed notes explaining what happened</li><li>Document competitor information (if applicable)</li><li>Note lessons learned</li></ul>"
+              "text": "<p>When deal doesn't close:</p><ul><li>Move deal to <strong>Lost</strong> stage</li><li>Select loss reason (required)</li><li>Add detailed notes explaining what happened</li><li>Document competitor information (if applicable)</li><li>niete geleerde lessen</li></ul>"
             },
             "es": {
-              "text": "<p>Cuando el deal no cierra:</p><ul><li>Mueve deal a etapa <strong>Perdido</strong></li><li>Selecciona razón de pérdida (obligatorio)</li><li>Agrega notas detalladas explicando qué pasó</li><li>Documenta información de competidor (si aplica)</li><li>Nota lecciones aprendidas</li></ul>"
+              "text": "<p>Cuando el deal no cierra:</p><ul><li>Mueve deal a etapa <strong>Perdido</strong></li><li>Selecciona razón de pérdida (obligatorio)</li><li>Agrega nietas detalladas explicando qué pasó</li><li>Documenta información de competidor (si aplica)</li><li>nieta lecciones aprendidas</li></ul>"
             }
           }
         },
@@ -133,19 +138,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Common loss reasons:</strong></p><ul><li><strong>Price:</strong> Too expensive, couldn't negotiate</li><li><strong>Competition:</strong> Chose another agent/property</li><li><strong>Financing:</strong> Mortgage denied, insufficient funds</li><li><strong>Timing:</strong> Not ready, circumstances changed</li><li><strong>Property:</strong> Issues discovered, didn't meet expectations</li><li><strong>Communication:</strong> Poor response, service issues</li><li><strong>Other:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
+              "text": "<p><strong>Common verlies redenen:</strong></p><ul><li><strong>Prijs:</strong> Te duur, kon niet onderhandelen</li><li><strong>Concurrentie:</strong> Chose aniether agent/property</li><li><strong>Financiering:</strong> Hypotheek afgewezen, onvoldoende middelen</li><li><strong>Timing:</strong> niet ready, circumstances changed</li><li><strong>Woning:</strong> Problemen ontdekt, voldeed niet aan verwachtingen</li><li><strong>Communicatie:</strong> Slechte respons, service problemen</li><li><strong>Anders:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
             },
             "en": {
-              "text": "<p><strong>Common loss reasons:</strong></p><ul><li><strong>Price:</strong> Too expensive, couldn't negotiate</li><li><strong>Competition:</strong> Chose another agent/property</li><li><strong>Financing:</strong> Mortgage denied, insufficient funds</li><li><strong>Timing:</strong> Not ready, circumstances changed</li><li><strong>Property:</strong> Issues discovered, didn't meet expectations</li><li><strong>Communication:</strong> Poor response, service issues</li><li><strong>Other:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
+              "text": "<p><strong>Common verlies redenen:</strong></p><ul><li><strong>Prijs:</strong> Te duur, kon niet onderhandelen</li><li><strong>Concurrentie:</strong> Chose aniether agent/property</li><li><strong>Financiering:</strong> Hypotheek afgewezen, onvoldoende middelen</li><li><strong>Timing:</strong> niet ready, circumstances changed</li><li><strong>Woning:</strong> Problemen ontdekt, voldeed niet aan verwachtingen</li><li><strong>Communicatie:</strong> Slechte respons, service problemen</li><li><strong>Anders:</strong> Specify in notes</li></ul><p>Accurate categorization enables pattern analysis.</p>"
             },
             "es": {
-              "text": "<p><strong>Razones comunes de pérdida:</strong></p><ul><li><strong>Precio:</strong> Demasiado caro, no se pudo negociar</li><li><strong>Competencia:</strong> Eligió otro agente/propiedad</li><li><strong>Financiamiento:</strong> Hipoteca negada, fondos insuficientes</li><li><strong>Timing:</strong> No listo, circunstancias cambiaron</li><li><strong>Propiedad:</strong> Problemas descubiertos, no cumplió expectativas</li><li><strong>Comunicación:</strong> Mala respuesta, problemas de servicio</li><li><strong>Otro:</strong> Especificar en notas</li></ul><p>La categorización precisa permite análisis de patrones.</p>"
+              "text": "<p><strong>Razones comunes de pérdida:</strong></p><ul><li><strong>Precio:</strong> Demasiado caro, no se pudo negociar</li><li><strong>Competencia:</strong> Eligió otro agente/propiedad</li><li><strong>Financiamiento:</strong> Hipoteca negada, fondos insuficientes</li><li><strong>Timing:</strong> No listo, circunstancias cambiaron</li><li><strong>Propiedad:</strong> Problemas descubiertos, no cumplió expectativas</li><li><strong>Comunicación:</strong> Mala respuesta, problemas de servicio</li><li><strong>Otro:</strong> Especificar en nietas</li></ul><p>La categorización precisa permite análisis de patrones.</p>"
             }
           }
         }
       ]
     },
-
     {
       "type": "text",
       "id": "analysis",
@@ -156,17 +160,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Key metrics te monitoren:</strong></p><ul><li><strong>Win rate:</strong> % won deals van total</li><li><strong>Loss rate by reason:</strong> Welke reasons most common</li><li><strong>Win rate by stage:</strong> Waar deals meestal lost gaan</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long time-to-close: Streamline processes</li></ul>"
+          "text": "<p><strong>Key metrics te monitoren:</strong></p><ul><li><strong>Win rate:</strong> % won deals van total</li><li><strong>Loss rate by reason:</strong> Welke reasons most common</li><li><strong>Win rate by stage:</strong> Waar deals meestal lost gaan</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long tijd-tot-sluiting: Streamline processes</li></ul>"
         },
         "en": {
-          "text": "<p><strong>Key metrics to monitor:</strong></p><ul><li><strong>Win rate:</strong> % won deals of total</li><li><strong>Loss rate by reason:</strong> Which reasons most common</li><li><strong>Win rate by stage:</strong> Where deals usually get lost</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long time-to-close: Streamline processes</li></ul>"
+          "text": "<p><strong>Key metrics to monitor:</strong></p><ul><li><strong>Win rate:</strong> % won deals of total</li><li><strong>Loss rate by reason:</strong> Which reasons most common</li><li><strong>Win rate by stage:</strong> Where deals usually get lost</li><li><strong>Average time to close:</strong> Won vs lost deals</li><li><strong>Win rate by agent:</strong> Individual performance</li></ul><p><strong>Actionable insights:</strong></p><ul><li>If loss reason = Price: Review pricing strategy</li><li>If loss reason = Competition: Analyze competitor offerings</li><li>If loss at Negotiation: Improve offer preparation</li><li>If long tijd-tot-sluiting: Streamline processes</li></ul>"
         },
         "es": {
           "text": "<p><strong>Métricas clave a monitorear:</strong></p><ul><li><strong>Tasa de ganancia:</strong> % deals ganados del total</li><li><strong>Tasa de pérdida por razón:</strong> Qué razones son más comunes</li><li><strong>Tasa de ganancia por etapa:</strong> Dónde los deals usualmente se pierden</li><li><strong>Tiempo promedio de cierre:</strong> Deals ganados vs perdidos</li><li><strong>Tasa de ganancia por agente:</strong> Rendimiento individual</li></ul><p><strong>Insights accionables:</strong></p><ul><li>Si razón de pérdida = Precio: Revisar estrategia de precios</li><li>Si razón de pérdida = Competencia: Analizar ofertas de competidores</li><li>Si pérdida en Negociación: Mejorar preparación de oferta</li><li>Si tiempo de cierre largo: Optimizar procesos</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -178,24 +181,22 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Be honest:</strong> Accurate loss reasons, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes helpen future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
+          "text": "<ul><li><strong>Be honest:</strong> Accurate verlies redenen, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes helpen future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Be honest:</strong> Accurate loss reasons, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes help future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
+          "text": "<ul><li><strong>Be honest:</strong> Accurate verlies redenen, even if uncomfortable</li><li><strong>Detail matters:</strong> Comprehensive notes help future decisions</li><li><strong>Review monthly:</strong> Analyze won/lost patterns monthly</li><li><strong>Learn from losses:</strong> Each lost deal is learning opportunity</li><li><strong>Follow up lost:</strong> Some may return in future</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Ser honesto:</strong> Razones de pérdida precisas, incluso si son incómodas</li><li><strong>El detalle importa:</strong> Las notas completas ayudan en decisiones futuras</li><li><strong>Revisar mensualmente:</strong> Analiza patrones ganado/perdido mensualmente</li><li><strong>Aprender de pérdidas:</strong> Cada deal perdido es oportunidad de aprendizaje</li><li><strong>Hacer seguimiento de perdidos:</strong> Algunos pueden volver en el futuro</li></ul>"
+          "text": "<ul><li><strong>Ser honesto:</strong> Razones de pérdida precisas, incluso si son incómodas</li><li><strong>El detalle importa:</strong> Las nietas completas ayudan en decisiones futuras</li><li><strong>Revisar mensualmente:</strong> Analiza patrones ganado/perdido mensualmente</li><li><strong>Aprender de pérdidas:</strong> Cada deal perdido es oportunidad de aprendizaje</li><li><strong>Hacer seguimiento de perdidos:</strong> Algunos pueden volver en el futuro</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "deal-reporting-metrics",
     "deal-best-practices",
     "deal-pipeline-overview"
   ],
-
   "faq": [
     {
       "question": {

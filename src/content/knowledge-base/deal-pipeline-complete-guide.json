@@ -1,28 +1,38 @@
 {
   "meta": {
     "id": "deal-pipeline-complete-guide",
-    "version": "1.0.0", 
+    "version": "1.0.0",
     "publishDate": "2024-10-13",
     "updatedAt": "2024-10-13T15:30:00Z",
     "authorId": "maria-perez",
-    "category": "best-practices",
+    "category": "deals",
     "difficulty": "advanced",
-    "tags": ["deals", "pipeline", "sales-process", "automation", "real-time"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales-process",
+      "automation",
+      "real-time"
+    ],
     "featured": true,
     "readingTime": 12,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["deal pipeline", "verkoop proces", "Tesoro CRM deals", "sales automation", "vastgoed pipeline"]
+    "keywords": [
+      "deal pipeline",
+      "verkoop proces",
+      "Tesoro CRM deals",
+      "sales automation",
+      "vastgoed pipeline"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Complete Deal Pipeline Gids - 9 Stages naar Succes",
-      "en": "Complete Deal Pipeline Guide - 9 Stages to Success", 
+      "en": "Complete Deal Pipeline Guide - 9 Stages to Success",
       "es": "Guía Completa del Pipeline de Deals - 9 Etapas hacia el Éxito"
     },
     "description": {
@@ -32,7 +42,6 @@
     },
     "icon": "📈"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,9 +58,8 @@
         }
       }
     },
-
     {
-      "type": "callout", 
+      "type": "callout",
       "id": "unified-architecture",
       "variant": "info",
       "title": {
@@ -71,13 +79,12 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "deal-creation-process",
       "title": {
         "nl": "Deal Creatie Workflow",
-        "en": "Deal Creation Workflow", 
+        "en": "Deal Creation Workflow",
         "es": "Flujo de Trabajo de Creación de Deal"
       },
       "steps": [
@@ -125,10 +132,10 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Configureer de deal parameters:</p><ul><li><strong>Deal Type:</strong> Sale, Rent, Commercial</li><li><strong>Contact Type:</strong> Buyer, Seller, Investor</li><li><strong>Owner Assignment:</strong> Primaire agent verantwoordelijk</li><li><strong>Deal Status:</strong> Start meestal met 'New' of 'Qualified'</li><li><strong>Properties:</strong> Selecteer 1 of meerdere properties uit AI suggestions</li></ul>"
+              "text": "<p>Configureer de deal parameters:</p><ul><li><strong>Deal Type:</strong> Sale, Rent, Commercial</li><li><strong>Contact Type:</strong> Buyer, Seller, Investor</li><li><strong>Owner Assignment:</strong> Primaire agent verantwoordelijk</li><li><strong>Deal Status:</strong> Start meestal met 'New' of 'Qualified'</li><li><strong>Properties:</strong> Selecteer 1 of meerdere properties uit AI suggesties</li></ul>"
             },
             "en": {
-              "text": "<p>Configure the deal parameters:</p><ul><li><strong>Deal Type:</strong> Sale, Rent, Commercial</li><li><strong>Contact Type:</strong> Buyer, Seller, Investor</li><li><strong>Owner Assignment:</strong> Primary agent responsible</li><li><strong>Deal Status:</strong> Usually starts with 'New' or 'Qualified'</li><li><strong>Properties:</strong> Select 1 or multiple properties from AI suggestions</li></ul>"
+              "text": "<p>Configure the deal parameters:</p><ul><li><strong>Deal Type:</strong> Sale, Rent, Commercial</li><li><strong>Contact Type:</strong> Buyer, Seller, Investor</li><li><strong>Owner Assignment:</strong> Primary agent responsible</li><li><strong>Deal Status:</strong> Usually starts with 'New' or 'Qualified'</li><li><strong>Properties:</strong> Select 1 or multiple properties from AI suggesties</li></ul>"
             },
             "es": {
               "text": "<p>Configura los parámetros del deal:</p><ul><li><strong>Tipo de Deal:</strong> Venta, Alquiler, Comercial</li><li><strong>Tipo de Contacto:</strong> Comprador, Vendedor, Inversor</li><li><strong>Asignación de Propietario:</strong> Agente principal responsable</li><li><strong>Estado del Deal:</strong> Usualmente comienza con 'Nuevo' o 'Calificado'</li><li><strong>Propiedades:</strong> Selecciona 1 o múltiples propiedades de las sugerencias IA</li></ul>"
@@ -137,28 +144,26 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "pipeline-stages",
       "title": {
         "nl": "9-Stage Pipeline Breakdown",
-        "en": "9-Stage Pipeline Breakdown", 
+        "en": "9-Stage Pipeline Breakdown",
         "es": "Desglose del Pipeline de 9 Etapas"
       },
       "content": {
         "nl": {
-          "text": "<p>Het Tesoro deal pipeline bevat 9 customizable stages met automatische business rule enforcement:</p><ol><li><strong>New Lead</strong> - Initial contact, basic qualification</li><li><strong>Qualified</strong> - Budget en timeline geverifieerd</li><li><strong>Property Viewing</strong> - Actieve property bezichtigingen</li><li><strong>Interest Expressed</strong> - Client toont serieuze interesse</li><li><strong>Offer Prepared</strong> - Voorstel in voorbereiding</li><li><strong>Offer Submitted</strong> - Formele aanbieding ingediend</li><li><strong>Negotiation</strong> - Onderhandeling actief</li><li><strong>Contract Signed</strong> - Overeenkomst getekend</li><li><strong>Closed Won</strong> - Deal succesvol afgesloten</li></ol><p><em>Plus: 'Closed Lost' en 'On Hold' voor speciale situaties</em></p>"
+          "text": "<p>Het Tesoro deal pipeline bevat 9 customizable stages met automatische business rule enforcement:</p><ol><li><strong>New Lead</strong> - Initial contact, basic qualification</li><li><strong>Qualified</strong> - Budget en timeline geverifieerd</li><li><strong>Property Viewing</strong> - Actieve property bezichtigingen</li><li><strong>Interest Expressed</strong> - Client toont serieuze interesse</li><li><strong>Offer Prepared</strong> - Voorstel in voorbereiding</li><li><strong>Offer Submitted</strong> - Formele aanbieding ingediend</li><li><strong>Negotiation</strong> - Onderhandeling actief</li><li><strong>Contract Signed</strong> - Overeenkomst getekend</li><li><strong>Closed Won</strong> - Deal succesvol afgesloten</li></ol><p><em>Plus: 'Closed Lost' en 'Wachtend' voor speciale situaties</em></p>"
         },
         "en": {
-          "text": "<p>The Tesoro deal pipeline contains 9 customizable stages with automatic business rule enforcement:</p><ol><li><strong>New Lead</strong> - Initial contact, basic qualification</li><li><strong>Qualified</strong> - Budget and timeline verified</li><li><strong>Property Viewing</strong> - Active property viewings</li><li><strong>Interest Expressed</strong> - Client shows serious interest</li><li><strong>Offer Prepared</strong> - Proposal in preparation</li><li><strong>Offer Submitted</strong> - Formal offer submitted</li><li><strong>Negotiation</strong> - Negotiation active</li><li><strong>Contract Signed</strong> - Agreement signed</li><li><strong>Closed Won</strong> - Deal successfully closed</li></ol><p><em>Plus: 'Closed Lost' and 'On Hold' for special situations</em></p>"
+          "text": "<p>The Tesoro deal pipeline contains 9 customizable stages with automatic business rule enforcement:</p><ol><li><strong>New Lead</strong> - Initial contact, basic qualification</li><li><strong>Qualified</strong> - Budget and timeline verified</li><li><strong>Property Viewing</strong> - Active property viewings</li><li><strong>Interest Expressed</strong> - Client shows serious interest</li><li><strong>Offer Prepared</strong> - Proposal in preparation</li><li><strong>Offer Submitted</strong> - Formal offer submitted</li><li><strong>Negotiation</strong> - Negotiation active</li><li><strong>Contract Signed</strong> - Agreement signed</li><li><strong>Closed Won</strong> - Deal successfully closed</li></ol><p><em>Plus: 'Closed Lost' and 'Wachtend' for special situations</em></p>"
         },
         "es": {
           "text": "<p>El pipeline de deals de Tesoro contiene 9 etapas personalizables con aplicación automática de reglas de negocio:</p><ol><li><strong>Nuevo Lead</strong> - Contacto inicial, calificación básica</li><li><strong>Calificado</strong> - Presupuesto y cronograma verificados</li><li><strong>Visita de Propiedad</strong> - Visitas activas de propiedades</li><li><strong>Interés Expresado</strong> - El cliente muestra interés serio</li><li><strong>Oferta Preparada</strong> - Propuesta en preparación</li><li><strong>Oferta Enviada</strong> - Oferta formal enviada</li><li><strong>Negociación</strong> - Negociación activa</li><li><strong>Contrato Firmado</strong> - Acuerdo firmado</li><li><strong>Cerrado Ganado</strong> - Deal cerrado exitosamente</li></ol><p><em>Además: 'Cerrado Perdido' y 'En Espera' para situaciones especiales</em></p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "real-time-features",
@@ -169,17 +174,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Live Team Synchronization</h3><ul><li><strong>Pusher WebSockets:</strong> Instant updates wanneer team members deal status wijzigen</li><li><strong>@Mentions System:</strong> Tag collega's direct in deal notes en emails</li><li><strong>Activity Streams:</strong> Real-time feed van alle deal activiteiten</li><li><strong>Status Change Notifications:</strong> Toast notifications bij pipeline transitions</li></ul><h3>Advanced Deal Analytics</h3><ul><li><strong>Deal Velocity:</strong> Gemiddelde tijd per pipeline stage</li><li><strong>Conversion Rates:</strong> Success percentage per stage en agent</li><li><strong>Revenue Forecasting:</strong> Pipeline value berekeningen</li><li><strong>Agent Performance:</strong> Individual en team metrics</li></ul>"
+          "text": "<h3>Live Team Synchronization</h3><ul><li><strong>Pusher WebSockets:</strong> Instant updates wanneer teamlids deal status wijzigen</li><li><strong>@Mentions System:</strong> Tag collega's direct in deal notes en emails</li><li><strong>Activity Streams:</strong> Real-time feed van alle deal activiteiten</li><li><strong>Status Change nietifications:</strong> Toast nietifications bij pipeline transitions</li></ul><h3>Advanced Deal Analytics</h3><ul><li><strong>Deal Velocity:</strong> Gemiddelde tijd per pipeline stage</li><li><strong>Conversion Rates:</strong> Success percentage per stage en agent</li><li><strong>Revenue Forecasting:</strong> Pipeline value berekeningen</li><li><strong>Agent Performance:</strong> Individual en team metrics</li></ul>"
         },
         "en": {
-          "text": "<h3>Live Team Synchronization</h3><ul><li><strong>Pusher WebSockets:</strong> Instant updates when team members change deal status</li><li><strong>@Mentions System:</strong> Tag colleagues directly in deal notes and emails</li><li><strong>Activity Streams:</strong> Real-time feed of all deal activities</li><li><strong>Status Change Notifications:</strong> Toast notifications for pipeline transitions</li></ul><h3>Advanced Deal Analytics</h3><ul><li><strong>Deal Velocity:</strong> Average time per pipeline stage</li><li><strong>Conversion Rates:</strong> Success percentage per stage and agent</li><li><strong>Revenue Forecasting:</strong> Pipeline value calculations</li><li><strong>Agent Performance:</strong> Individual and team metrics</li></ul>"
+          "text": "<h3>Live Team Synchronization</h3><ul><li><strong>Pusher WebSockets:</strong> Instant updates when teamlids change deal status</li><li><strong>@Mentions System:</strong> Tag colleagues directly in deal notes and emails</li><li><strong>Activity Streams:</strong> Real-time feed of all deal activities</li><li><strong>Status Change nietifications:</strong> Toast nietifications for pipeline transitions</li></ul><h3>Advanced Deal Analytics</h3><ul><li><strong>Deal Velocity:</strong> Average time per pipeline stage</li><li><strong>Conversion Rates:</strong> Success percentage per stage and agent</li><li><strong>Revenue Forecasting:</strong> Pipeline value calculations</li><li><strong>Agent Performance:</strong> Individual and team metrics</li></ul>"
         },
         "es": {
-          "text": "<h3>Sincronización de Equipo en Vivo</h3><ul><li><strong>Pusher WebSockets:</strong> Actualizaciones instantáneas cuando los miembros del equipo cambian el estado del deal</li><li><strong>Sistema @Menciones:</strong> Etiqueta colegas directamente en notas de deals y emails</li><li><strong>Flujos de Actividad:</strong> Feed en tiempo real de todas las actividades del deal</li><li><strong>Notificaciones de Cambio de Estado:</strong> Notificaciones toast para transiciones de pipeline</li></ul><h3>Análisis Avanzado de Deals</h3><ul><li><strong>Velocidad de Deal:</strong> Tiempo promedio por etapa de pipeline</li><li><strong>Tasas de Conversión:</strong> Porcentaje de éxito por etapa y agente</li><li><strong>Pronóstico de Ingresos:</strong> Cálculos de valor de pipeline</li><li><strong>Rendimiento del Agente:</strong> Métricas individuales y de equipo</li></ul>"
+          "text": "<h3>Sincronización de Equipo en Vivo</h3><ul><li><strong>Pusher WebSockets:</strong> Actualizaciones instantáneas cuando los miembros del equipo cambian el estado del deal</li><li><strong>Sistema @Menciones:</strong> Etiqueta colegas directamente en nietas de deals y emails</li><li><strong>Flujos de Actividad:</strong> Feed en tiempo real de todas las actividades del deal</li><li><strong>nietificaciones de Cambio de Estado:</strong> nietificaciones toast para transiciones de pipeline</li></ul><h3>Análisis Avanzado de Deals</h3><ul><li><strong>Velocidad de Deal:</strong> Tiempo promedio por etapa de pipeline</li><li><strong>Tasas de Conversión:</strong> Porcentaje de éxito por etapa y agente</li><li><strong>Pronóstico de Ingresos:</strong> Cálculos de valor de pipeline</li><li><strong>Rendimiento del Agente:</strong> Métricas individuales y de equipo</li></ul>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "deal-management-workflow",
@@ -192,24 +196,24 @@
         {
           "title": {
             "nl": "Status Transitions",
-            "en": "Status Transitions", 
+            "en": "Status Transitions",
             "es": "Transiciones de Estado"
           },
           "content": {
             "nl": {
-              "text": "<p>Gebruik <code>updateDealStatus()</code> voor status wijzigingen:</p><ul><li><strong>Business Rule Validation:</strong> Systeem checkt of transition toegestaan is</li><li><strong>Automatic Rollback:</strong> Bij fout wordt vorige status hersteld</li><li><strong>Toast Notifications:</strong> User feedback bij elke status change</li><li><strong>Activity Logging:</strong> Alle changes worden automatisch gelogd</li></ul><p><strong>Tip:</strong> Het systeem gebruikt localStorage voor stepper tracking en undo functionaliteit.</p>"
+              "text": "<p>Gebruik <code>updateDealStatus()</code> voor status wijzigingen:</p><ul><li><strong>Business Rule Validation:</strong> Systeem checkt of transition toegestaan is</li><li><strong>Automatic Rollback:</strong> Bij fout wordt vorige status hersteld</li><li><strong>Toast nietifications:</strong> User feedback bij elke status change</li><li><strong>Activity Logging:</strong> Alle changes worden automatisch gelogd</li></ul><p><strong>Tip:</strong> Het systeem gebruikt localStorage voor stepper tracking en undo functionaliteit.</p>"
             },
             "en": {
-              "text": "<p>Use <code>updateDealStatus()</code> for status changes:</p><ul><li><strong>Business Rule Validation:</strong> System checks if transition is allowed</li><li><strong>Automatic Rollback:</strong> Previous status restored on error</li><li><strong>Toast Notifications:</strong> User feedback for every status change</li><li><strong>Activity Logging:</strong> All changes automatically logged</li></ul><p><strong>Tip:</strong> The system uses localStorage for stepper tracking and undo functionality.</p>"
+              "text": "<p>Use <code>updateDealStatus()</code> for status changes:</p><ul><li><strong>Business Rule Validation:</strong> System checks if transition is allowed</li><li><strong>Automatic Rollback:</strong> Previous status restored on error</li><li><strong>Toast nietifications:</strong> User feedback for every status change</li><li><strong>Activity Logging:</strong> All changes automatically logged</li></ul><p><strong>Tip:</strong> The system uses localStorage for stepper tracking and undo functionality.</p>"
             },
             "es": {
-              "text": "<p>Usa <code>updateDealStatus()</code> para cambios de estado:</p><ul><li><strong>Validación de Reglas de Negocio:</strong> El sistema verifica si la transición está permitida</li><li><strong>Rollback Automático:</strong> Estado previo restaurado en caso de error</li><li><strong>Notificaciones Toast:</strong> Retroalimentación del usuario para cada cambio de estado</li><li><strong>Registro de Actividad:</strong> Todos los cambios registrados automáticamente</li></ul><p><strong>Consejo:</strong> El sistema usa localStorage para seguimiento de stepper y funcionalidad de deshacer.</p>"
+              "text": "<p>Usa <code>updateDealStatus()</code> para cambios de estado:</p><ul><li><strong>Validación de Reglas de Negocio:</strong> El sistema verifica si la transición está permitida</li><li><strong>Rollback Automático:</strong> Estado previo restaurado en caso de error</li><li><strong>nietificaciones Toast:</strong> Retroalimentación del usuario para cada cambio de estado</li><li><strong>Registro de Actividad:</strong> Todos los cambios registrados automáticamente</li></ul><p><strong>Consejo:</strong> El sistema usa localStorage para seguimiento de stepper y funcionalidad de deshacer.</p>"
             }
           }
         },
         {
           "title": {
-            "nl": "Property Association Management", 
+            "nl": "Property Association Management",
             "en": "Property Association Management",
             "es": "Gestión de Asociación de Propiedades"
           },
@@ -228,28 +232,27 @@
         {
           "title": {
             "nl": "Team Collaboration Optimization",
-            "en": "Team Collaboration Optimization", 
+            "en": "Team Collaboration Optimization",
             "es": "Optimización de Colaboración en Equipo"
           },
           "content": {
             "nl": {
-              "text": "<p>Maximeer team efficiency:</p><ul><li><strong>Deal Ownership:</strong> Primaire agent + team members</li><li><strong>@Mentions in Notes:</strong> Tag team members voor input</li><li><strong>Shared Pipeline View:</strong> Alle team members zien deal progress</li><li><strong>Activity Notifications:</strong> Real-time updates via Pusher</li><li><strong>Next/Previous Navigation:</strong> <code>getNextAndPreviousRoute()</code> voor workflow continuity</li></ul>"
+              "text": "<p>Maximeer team efficiency:</p><ul><li><strong>Deal Ownership:</strong> Primaire agent + teamlids</li><li><strong>@Mentions in notes:</strong> Tag teamlids voor input</li><li><strong>Shared Pipeline View:</strong> Alle teamlids zien deal progress</li><li><strong>Activity nietifications:</strong> Real-time updates via Pusher</li><li><strong>Next/Previous Navigation:</strong> <code>getNextAndPreviousRoute()</code> voor workflow continuity</li></ul>"
             },
             "en": {
-              "text": "<p>Maximize team efficiency:</p><ul><li><strong>Deal Ownership:</strong> Primary agent + team members</li><li><strong>@Mentions in Notes:</strong> Tag team members for input</li><li><strong>Shared Pipeline View:</strong> All team members see deal progress</li><li><strong>Activity Notifications:</strong> Real-time updates via Pusher</li><li><strong>Next/Previous Navigation:</strong> <code>getNextAndPreviousRoute()</code> for workflow continuity</li></ul>"
+              "text": "<p>Maximize team efficiency:</p><ul><li><strong>Deal Ownership:</strong> Primary agent + teamlids</li><li><strong>@Mentions in notes:</strong> Tag teamlids for input</li><li><strong>Shared Pipeline View:</strong> All teamlids see deal progress</li><li><strong>Activity nietifications:</strong> Real-time updates via Pusher</li><li><strong>Next/Previous Navigation:</strong> <code>getNextAndPreviousRoute()</code> for workflow continuity</li></ul>"
             },
             "es": {
-              "text": "<p>Maximiza la eficiencia del equipo:</p><ul><li><strong>Propiedad del Deal:</strong> Agente principal + miembros del equipo</li><li><strong>@Menciones en Notas:</strong> Etiqueta miembros del equipo para entrada</li><li><strong>Vista de Pipeline Compartida:</strong> Todos los miembros del equipo ven el progreso del deal</li><li><strong>Notificaciones de Actividad:</strong> Actualizaciones en tiempo real vía Pusher</li><li><strong>Navegación Siguiente/Anterior:</strong> <code>getNextAndPreviousRoute()</code> para continuidad de flujo de trabajo</li></ul>"
+              "text": "<p>Maximiza la eficiencia del equipo:</p><ul><li><strong>Propiedad del Deal:</strong> Agente principal + miembros del equipo</li><li><strong>@Menciones en nietas:</strong> Etiqueta miembros del equipo para entrada</li><li><strong>Vista de Pipeline Compartida:</strong> Todos los miembros del equipo ven el progreso del deal</li><li><strong>nietificaciones de Actividad:</strong> Actualizaciones en tiempo real vía Pusher</li><li><strong>Navegación Siguiente/Anterior:</strong> <code>getNextAndPreviousRoute()</code> para continuidad de flujo de trabajo</li></ul>"
             }
           }
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "advanced-tips",
-      "variant": "success", 
+      "variant": "success",
       "title": {
         "nl": "🎯 Pro Tips voor Maximum Conversie",
         "en": "🎯 Pro Tips for Maximum Conversion",
@@ -257,10 +260,10 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>AI Property Matching:</strong> Laat het systeem minimaal 3-5 properties suggereren per deal voor optimale keuze.</p><p><strong>Status Transitions:</strong> Update deal status binnen 24 uur na elke belangrijke interactie.</p><p><strong>@Mentions Usage:</strong> Tag team members bij specifieke acties: '@john handle closing paperwork'</p><p><strong>Pipeline Analytics:</strong> Review wekelijks je conversion rates per stage om bottlenecks te identificeren.</p>"
+          "text": "<p><strong>AI Property Matching:</strong> Laat het systeem minimaal 3-5 properties suggereren per deal voor optimale keuze.</p><p><strong>Status Transitions:</strong> Update deal status binnen 24 uur na elke belangrijke interactie.</p><p><strong>@Mentions Usage:</strong> Tag teamlids bij specifieke acties: '@john handle closing paperwork'</p><p><strong>Pipeline Analytics:</strong> Review wekelijks je conversion rates per stage om bottlenecks te identificeren.</p>"
         },
         "en": {
-          "text": "<p><strong>AI Property Matching:</strong> Let the system suggest at least 3-5 properties per deal for optimal choice.</p><p><strong>Status Transitions:</strong> Update deal status within 24 hours of any major interaction.</p><p><strong>@Mentions Usage:</strong> Tag team members for specific actions: '@john handle closing paperwork'</p><p><strong>Pipeline Analytics:</strong> Review your conversion rates per stage weekly to identify bottlenecks.</p>"
+          "text": "<p><strong>AI Property Matching:</strong> Let the system suggest at least 3-5 properties per deal for optimal choice.</p><p><strong>Status Transitions:</strong> Update deal status within 24 hours of any major interaction.</p><p><strong>@Mentions Usage:</strong> Tag teamlids for specific actions: '@john handle closing paperwork'</p><p><strong>Pipeline Analytics:</strong> Review your conversion rates per stage weekly to identify bottlenecks.</p>"
         },
         "es": {
           "text": "<p><strong>Coincidencia de Propiedades IA:</strong> Deja que el sistema sugiera al menos 3-5 propiedades por deal para elección óptima.</p><p><strong>Transiciones de Estado:</strong> Actualiza el estado del deal dentro de 24 horas de cualquier interacción mayor.</p><p><strong>Uso de @Menciones:</strong> Etiqueta miembros del equipo para acciones específicas: '@john manejar documentos de cierre'</p><p><strong>Análisis de Pipeline:</strong> Revisa tus tasas de conversión por etapa semanalmente para identificar cuellos de botella.</p>"
@@ -268,13 +271,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "system-architecture-overview",
-    "property-management-advanced", 
+    "property-management-advanced",
     "ai-property-matching-guide"
   ],
-
   "faq": [
     {
       "question": {

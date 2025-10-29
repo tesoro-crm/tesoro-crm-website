@@ -1,13 +1,19 @@
 {
   "meta": {
-    "id": "calendar-reminders-notifications",
+    "id": "calendar-reminders-nietifications",
     "version": "1.0.0",
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "beginner",
-    "tags": ["calendar", "reminders", "notifications", "automation", "alerts"],
+    "tags": [
+      "calendar",
+      "reminders",
+      "nietifications",
+      "automation",
+      "alerts"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
@@ -15,20 +21,26 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=1200&h=630&fit=crop",
-    "keywords": ["calendar reminders", "appointment notifications", "tesoro alerts", "automatic reminders", "meeting alerts"]
+    "keywords": [
+      "calendar reminders",
+      "appointment nietifications",
+      "tesoro alerts",
+      "automatic reminders",
+      "meeting alerts"
+    ]
   },
   "hero": {
     "title": {
-      "nl": "Herinneringen en notificaties configureren",
-      "en": "Configuring Reminders and Notifications",
-      "es": "Configurar recordatorios y notificaciones"
+      "nl": "Herinneringen en nietificaties configureren",
+      "en": "Configuring Reminders and nietifications",
+      "es": "Configurar recordatorios y nietificaciones"
     },
     "description": {
-      "nl": "Leer hoe je automatische herinneringen instelt voor jezelf en je klanten, notificaties aanpast en nooit meer een afspraak mist.",
-      "en": "Learn how to set up automatic reminders for yourself and your clients, customize notifications, and never miss an appointment again.",
-      "es": "Aprende a configurar recordatorios automáticos para ti y tus clientes, personalizar notificaciones y nunca más perder una cita."
+      "nl": "Leer hoe je automatische herinneringen instelt voor jezelf en je klanten, nietificaties aanpast en nooit meer een afspraak mist.",
+      "en": "Learn how to set up automatic reminders for yourself and your clients, customize nietifications, and never miss an appointment again.",
+      "es": "Aprende a configurar recordatorios automáticos para ti y tus clientes, personalizar nietificaciones y nunca más perder una cita."
     },
-    "icon": "notifications"
+    "icon": "nietifications"
   },
   "sections": [
     {
@@ -56,9 +68,9 @@
             "es": "Configurar tus recordatorios personales"
           },
           "description": {
-            "nl": "Ga naar Instellingen > Kalender > Herinneringen. Stel in wanneer je herinneringen wilt ontvangen voor je eigen afspraken. Aanbevolen: 24 uur van tevoren (om je voor te bereiden), 1 uur van tevoren (om je klaar te maken), 15 minuten van tevoren (om te vertrekken). Je kunt kiezen tussen e-mail, push notificatie, SMS, of een combinatie.",
-            "en": "Go to Settings > Calendar > Reminders. Set when you want to receive reminders for your own appointments. Recommended: 24 hours in advance (to prepare), 1 hour in advance (to get ready), 15 minutes in advance (to depart). You can choose between email, push notification, SMS, or a combination.",
-            "es": "Ve a Configuración > Calendario > Recordatorios. Establece cuándo quieres recibir recordatorios para tus propias citas. Recomendado: 24 horas antes (para prepararte), 1 hora antes (para alistarte), 15 minutos antes (para partir). Puedes elegir entre correo electrónico, notificación push, SMS o una combinación."
+            "nl": "Ga naar Instellingen > Kalender > Herinneringen. Stel in wanneer je herinneringen wilt ontvangen voor je eigen afspraken. Aanbevolen: 24 uur van tevoren (om je voor te bereiden), 1 uur van tevoren (om je klaar te maken), 15 minuten van tevoren (om te vertrekken). Je kunt kiezen tussen e-mail, push nietificatie, SMS, of een combinatie.",
+            "en": "Go to Settings > Calendar > Reminders. Set when you want to receive reminders for your own appointments. Recommended: 24 hours in advance (to prepare), 1 hour in advance (to get ready), 15 minutes in advance (to depart). You can choose between email, push nietification, SMS, or a combination.",
+            "es": "Ve a Configuración > Calendario > Recordatorios. Establece cuándo quieres recibir recordatorios para tus propias citas. Recomendado: 24 horas antes (para prepararte), 1 hora antes (para alistarte), 15 minutos antes (para partir). Puedes elegir entre correo electrónico, nietificación push, SMS o una combinación."
           }
         },
         {
@@ -92,9 +104,9 @@
             "es": "Elegir métodos de entrega"
           },
           "description": {
-            "nl": "Voor belangrijke herinneringen, gebruik je meerdere kanalen. Eerste herinnering (24u): E-mail (gedetailleerd, met documenten). Tweede herinnering (2-4u): SMS (kort en direct). Laatste herinnering (15 min): Push notificatie (onmiddellijk). Deze gelaagde aanpak zorgt ervoor dat de boodschap doorkomt ongeacht hoe klanten hun communicatie beheren.",
-            "en": "For important reminders, use multiple channels. First reminder (24h): Email (detailed, with documents). Second reminder (2-4h): SMS (brief and direct). Last reminder (15 min): Push notification (immediate). This layered approach ensures the message gets through regardless of how clients manage their communication.",
-            "es": "Para recordatorios importantes, usa múltiples canales. Primer recordatorio (24h): Correo electrónico (detallado, con documentos). Segundo recordatorio (2-4h): SMS (breve y directo). Último recordatorio (15 min): Notificación push (inmediato). Este enfoque por capas asegura que el mensaje llegue independientemente de cómo los clientes gestionen su comunicación."
+            "nl": "Voor belangrijke herinneringen, gebruik je meerdere kanalen. Eerste herinnering (24u): E-mail (gedetailleerd, met documenten). Tweede herinnering (2-4u): SMS (kort en direct). Laatste herinnering (15 min): Push nietificatie (onmiddellijk). Deze gelaagde aanpak zorgt ervoor dat de boodschap doorkomt ongeacht hoe klanten hun communicatie beheren.",
+            "en": "For important reminders, use multiple channels. First reminder (24h): Email (detailed, with documents). Second reminder (2-4h): SMS (brief and direct). Last reminder (15 min): Push nietification (immediate). This layered approach ensures the message gets through regardless of how clients manage their communication.",
+            "es": "Para recordatorios importantes, usa múltiples canales. Primer recordatorio (24h): Correo electrónico (detallado, con documentos). Segundo recordatorio (2-4h): SMS (breve y directo). Último recordatorio (15 min): nietificación push (inmediato). Este enfoque por capas asegura que el mensaje llegue independientemente de cómo los clientes gestionen su comunicación."
           }
         }
       ]
@@ -156,9 +168,9 @@
             "es": "Agregar información útil"
           },
           "description": {
-            "nl": "Maak herinneringen nuttig, niet alleen notification. Voeg toe: directe link naar Google Maps voor navigatie, je mobiele nummer voor noodgevallen, parkeerinstructies als relevant, wat mee te brengen (ID, financiële documenten), geschatte duur van de afspraak. Dit reduceert verwarring en vragen.",
-            "en": "Make reminders useful, not just notifications. Add: direct link to Google Maps for navigation, your mobile number for emergencies, parking instructions if relevant, what to bring (ID, financial documents), estimated duration of appointment. This reduces confusion and questions.",
-            "es": "Haz que los recordatorios sean útiles, no solo notificaciones. Agrega: enlace directo a Google Maps para navegación, tu número móvil para emergencias, instrucciones de estacionamiento si son relevantes, qué traer (ID, documentos financieros), duración estimada de la cita. Esto reduce confusión y preguntas."
+            "nl": "Maak herinneringen nuttig, niet alleen nietification. Voeg toe: directe link naar Google Maps voor navigatie, je mobiele nummer voor noodgevallen, parkeerinstructies als relevant, wat mee te brengen (ID, financiële documenten), geschatte duur van de afspraak. Dit reduceert verwarring en vragen.",
+            "en": "Make reminders useful, niet just nietifications. Add: direct link to Google Maps for navigation, your mobile number for emergencies, parking instructions if relevant, what to bring (ID, financial documents), estimated duration of appointment. This reduces confusion and questions.",
+            "es": "Haz que los recordatorios sean útiles, no solo nietificaciones. Agrega: enlace directo a Google Maps para navegación, tu número móvil para emergencias, instrucciones de estacionamiento si son relevantes, qué traer (ID, documentos financieros), duración estimada de la cita. Esto reduce confusión y preguntas."
           }
         },
         {
@@ -181,8 +193,8 @@
           },
           "description": {
             "nl": "Voeg altijd een 'Kan niet komen? Klik hier om opnieuw te plannen' link toe aan herinneringen. Dit maakt het klanten makkelijk om afspraken te verplaatsen in plaats van gewoon niet te komen. Je ontvangt onmiddellijk een melding van wijzigingen en kunt de tijd aan iemand anders geven.",
-            "en": "Always add a 'Can't make it? Click here to reschedule' link to reminders. This makes it easy for clients to move appointments instead of just not showing up. You receive immediate notification of changes and can give the time to someone else.",
-            "es": "Siempre agrega un enlace 'No puedes asistir? Haz clic aquí para reprogramar' a los recordatorios. Esto facilita a los clientes mover citas en lugar de simplemente no presentarse. Recibes notificación inmediata de cambios y puedes dar el tiempo a otra persona."
+            "en": "Always add a 'Can't make it? Click here to reschedule' link to reminders. This makes it easy for clients to move appointments instead of just niet showing up. You receive immediate nietification of changes and can give the time to someone else.",
+            "es": "Siempre agrega un enlace 'No puedes asistir? Haz clic aquí para reprogramar' a los recordatorios. Esto facilita a los clientes mover citas en lugar de simplemente no presentarse. Recibes nietificación inmediata de cambios y puedes dar el tiempo a otra persona."
           }
         }
       ]
@@ -204,37 +216,37 @@
     },
     {
       "type": "text",
-      "id": "notification-preferences",
+      "id": "nietification-preferences",
       "title": {
-        "nl": "Notificatie voorkeuren beheren",
-        "en": "Managing Notification Preferences",
-        "es": "Gestionar preferencias de notificaciones"
+        "nl": "nietificatie voorkeuren beheren",
+        "en": "Managing nietification Preferences",
+        "es": "Gestionar preferencias de nietificaciones"
       },
       "content": {
-        "nl": "Te veel notificaties leiden tot notification fatigue - te weinig en je mist belangrijke updates. Vind de juiste balans voor jouw werkstijl.",
-        "en": "Too many notifications lead to notification fatigue - too few and you miss important updates. Find the right balance for your work style.",
-        "es": "Demasiadas notificaciones conducen a fatiga de notificaciones - muy pocas y pierdes actualizaciones importantes. Encuentra el equilibrio correcto para tu estilo de trabajo."
+        "nl": "Te veel nietificaties leiden tot nietification fatigue - te weinig en je mist belangrijke updates. Vind de juiste balans voor jouw werkstijl.",
+        "en": "Too many nietifications lead to nietification fatigue - too few and you miss important updates. Find the right balance for your work style.",
+        "es": "Demasiadas nietificaciones conducen a fatiga de nietificaciones - muy pocas y pierdes actualizaciones importantes. Encuentra el equilibrio correcto para tu estilo de trabajo."
       }
     },
     {
       "type": "steps",
-      "id": "notification-management",
+      "id": "nietification-management",
       "title": {
-        "nl": "Notificatie beheer",
-        "en": "Notification Management",
-        "es": "Gestión de notificaciones"
+        "nl": "nietificatie beheer",
+        "en": "nietification Management",
+        "es": "Gestión de nietificaciones"
       },
       "steps": [
         {
           "title": {
-            "nl": "Prioriteit gebaseerde notificaties",
-            "en": "Priority-Based Notifications",
-            "es": "Notificaciones basadas en prioridad"
+            "nl": "Prioriteit gebaseerde nietificaties",
+            "en": "Priority-Based nietifications",
+            "es": "nietificaciones basadas en prioridad"
           },
           "description": {
-            "nl": "Categoriseer notificaties in drie niveaus. Hoge prioriteit (push + geluid): nieuwe bezichtigingsaanvragen, klant cancellaties, deal updates, 15-min herinneringen. Middel prioriteit (push, geen geluid): nieuwe vergaderingen gepland, documenten getekend, taak deadlines. Lage prioriteit (alleen badge): systeem updates, tips, nieuwsbrieven.",
-            "en": "Categorize notifications into three levels. High priority (push + sound): new viewing requests, client cancellations, deal updates, 15-min reminders. Medium priority (push, no sound): new meetings scheduled, documents signed, task deadlines. Low priority (badge only): system updates, tips, newsletters.",
-            "es": "Categoriza las notificaciones en tres niveles. Alta prioridad (push + sonido): nuevas solicitudes de visita, cancelaciones de clientes, actualizaciones de negocios, recordatorios de 15 minutos. Prioridad media (push, sin sonido): nuevas reuniones programadas, documentos firmados, fechas límite de tareas. Baja prioridad (solo insignia): actualizaciones del sistema, consejos, boletines."
+            "nl": "Categoriseer nietificaties in drie niveaus. Hoge prioriteit (push + geluid): nieuwe bezichtigingsaanvragen, klant cancellaties, deal updates, 15-min herinneringen. Middel prioriteit (push, geen geluid): nieuwe vergaderingen gepland, documenten getekend, taak deadlines. Lage prioriteit (alleen badge): systeem updates, tips, nieuwsbrieven.",
+            "en": "Categorize nietifications into three levels. High priority (push + sound): new viewing requests, client cancellations, deal updates, 15-min reminders. Medium priority (push, no sound): new meetings scheduled, documents signed, task deadlines. Low priority (badge only): system updates, tips, newsletters.",
+            "es": "Categoriza las nietificaciones en tres niveles. Alta prioridad (push + sonido): nuevas solicitudes de visita, cancelaciones de clientes, actualizaciones de negocios, recordatorios de 15 minutos. Prioridad media (push, sin sonido): nuevas reuniones programadas, documentos firmados, fechas límite de tareas. Baja prioridad (solo insignia): actualizaciones del sistema, consejos, boletines."
           }
         },
         {
@@ -244,9 +256,9 @@
             "es": "Establecer horario de silencio"
           },
           "description": {
-            "nl": "Ga naar Instellingen > Notificaties > Stille uren. Definieer wanneer je geen notificaties wilt ontvangen (bijvoorbeeld 22:00-7:00). Kritieke notificaties (klant noodgevallen, deal deadlines) kunnen deze instelling doorbreken als je dat toestaat. Dit beschermt je persoonlijke tijd terwijl je responsief blijft waar het belangrijk is.",
-            "en": "Go to Settings > Notifications > Quiet Hours. Define when you don't want to receive notifications (for example, 22:00-7:00). Critical notifications (client emergencies, deal deadlines) can break through this setting if you allow it. This protects your personal time while keeping you responsive where it matters.",
-            "es": "Ve a Configuración > Notificaciones > Horario de silencio. Define cuándo no quieres recibir notificaciones (por ejemplo, 22:00-7:00). Las notificaciones críticas (emergencias de clientes, fechas límite de negocios) pueden atravesar esta configuración si lo permites. Esto protege tu tiempo personal mientras te mantiene receptivo donde importa."
+            "nl": "Ga naar Instellingen > nietificaties > Stille uren. Definieer wanneer je geen nietificaties wilt ontvangen (bijvoorbeeld 22:00-7:00). Kritieke nietificaties (klant noodgevallen, deal deadlines) kunnen deze instelling doorbreken als je dat toestaat. Dit beschermt je persoonlijke tijd terwijl je responsief blijft waar het belangrijk is.",
+            "en": "Go to Settings > nietifications > Quiet Hours. Define when you don't want to receive nietifications (for example, 22:00-7:00). Critical nietifications (client emergencies, deal deadlines) can break through this setting if you allow it. This protects your personal time while keeping you responsive where it matters.",
+            "es": "Ve a Configuración > nietificaciones > Horario de silencio. Define cuándo no quieres recibir nietificaciones (por ejemplo, 22:00-7:00). Las nietificaciones críticas (emergencias de clientes, fechas límite de negocios) pueden atravesar esta configuración si lo permites. Esto protege tu tiempo personal mientras te mantiene receptivo donde importa."
           }
         },
         {
@@ -256,9 +268,9 @@
             "es": "Preferencias de canal"
           },
           "description": {
-            "nl": "Verschillende notificatietypen werken beter via verschillende kanalen. Onmiddellijke acties: push notificaties (bezichtigingsaanvragen, cancellaties). Informationele updates: e-mail (dagelijkse samenvattingen, rapporten). Tijdgevoelige herinneringen: SMS (laatste-moment wijzigingen). Configureer elk notificatietype individueel voor optimale effectiviteit.",
-            "en": "Different notification types work better via different channels. Immediate actions: push notifications (viewing requests, cancellations). Informational updates: email (daily summaries, reports). Time-sensitive reminders: SMS (last-minute changes). Configure each notification type individually for optimal effectiveness.",
-            "es": "Diferentes tipos de notificaciones funcionan mejor a través de diferentes canales. Acciones inmediatas: notificaciones push (solicitudes de visita, cancelaciones). Actualizaciones informativas: correo electrónico (resúmenes diarios, informes). Recordatorios urgentes: SMS (cambios de último minuto). Configura cada tipo de notificación individualmente para efectividad óptima."
+            "nl": "Verschillende nietificatietypen werken beter via verschillende kanalen. Onmiddellijke acties: push nietificaties (bezichtigingsaanvragen, cancellaties). Informationele updates: e-mail (dagelijkse samenvattingen, rapporten). Tijdgevoelige herinneringen: SMS (laatste-moment wijzigingen). Configureer elk nietificatietype individueel voor optimale effectiviteit.",
+            "en": "Different nietification types work better via different channels. Immediate actions: push nietifications (viewing requests, cancellations). Informational updates: email (daily summaries, reports). Time-sensitive reminders: SMS (last-minute changes). Configure each nietification type individually for optimal effectiveness.",
+            "es": "Diferentes tipos de nietificaciones funcionan mejor a través de diferentes canales. Acciones inmediatas: nietificaciones push (solicitudes de visita, cancelaciones). Actualizaciones informativas: correo electrónico (resúmenes diarios, informes). Recordatorios urgentes: SMS (cambios de último minuto). Configura cada tipo de nietificación individualmente para efectividad óptima."
           }
         },
         {
@@ -268,9 +280,9 @@
             "es": "Modo resumen"
           },
           "description": {
-            "nl": "Voor niet-dringende notificaties, schakel je 'Digest mode' in. In plaats van aparte notificaties voor elke kleine update, ontvang je één samenvatting op vastgestelde tijden (bijvoorbeeld 8:00, 12:00, 17:00). Dit reduceert onderbrekingen terwijl je toch op de hoogte blijft van alle activiteit.",
-            "en": "For non-urgent notifications, enable 'Digest mode'. Instead of separate notifications for each small update, you receive one summary at set times (for example, 8:00, 12:00, 17:00). This reduces interruptions while still keeping you informed of all activity.",
-            "es": "Para notificaciones no urgentes, habilita 'Modo resumen'. En lugar de notificaciones separadas para cada pequeña actualización, recibes un resumen en horarios establecidos (por ejemplo, 8:00, 12:00, 17:00). Esto reduce interrupciones mientras te mantiene informado de toda la actividad."
+            "nl": "Voor niet-dringende nietificaties, schakel je 'Digest mode' in. In plaats van aparte nietificaties voor elke kleine update, ontvang je één samenvatting op vastgestelde tijden (bijvoorbeeld 8:00, 12:00, 17:00). Dit reduceert onderbrekingen terwijl je toch op de hoogte blijft van alle activiteit.",
+            "en": "For non-urgent nietifications, enable 'Digest mode'. Instead of separate nietifications for each small update, you receive one summary at set times (for example, 8:00, 12:00, 17:00). This reduces interruptions while still keeping you informed of all activity.",
+            "es": "Para nietificaciones no urgentes, habilita 'Modo resumen'. En lugar de nietificaciones separadas para cada pequeña actualización, recibes un resumen en horarios establecidos (por ejemplo, 8:00, 12:00, 17:00). Esto reduce interrupciones mientras te mantiene informado de toda la actividad."
           }
         }
       ]
@@ -285,9 +297,9 @@
         "es": "Modo enfoque"
       },
       "content": {
-        "nl": "Wanneer je diep werk doet of in een belangrijke vergadering zit, activeer je 'Focus mode' met één klik. Alle notificaties worden gepauzeerd behalve absolute noodgevallen. Tesoro stuurt automatische antwoorden naar mensen die je proberen te bereiken en laat hen weten wanneer je weer beschikbaar bent. Dit is essentieel voor productiviteit.",
-        "en": "When doing deep work or in an important meeting, activate 'Focus mode' with one click. All notifications are paused except absolute emergencies. Tesoro sends automatic responses to people trying to reach you and lets them know when you'll be available again. This is essential for productivity.",
-        "es": "Cuando hagas trabajo profundo o estés en una reunión importante, activa 'Modo enfoque' con un clic. Todas las notificaciones se pausan excepto emergencias absolutas. Tesoro envía respuestas automáticas a personas que intentan contactarte y les informa cuándo estarás disponible nuevamente. Esto es esencial para la productividad."
+        "nl": "Wanneer je diep werk doet of in een belangrijke vergadering zit, activeer je 'Focus mode' met één klik. Alle nietificaties worden gepauzeerd behalve absolute noodgevallen. Tesoro stuurt automatische antwoorden naar mensen die je proberen te bereiken en laat hen weten wanneer je weer beschikbaar bent. Dit is essentieel voor productiviteit.",
+        "en": "When doing deep work or in an important meeting, activate 'Focus mode' with one click. All nietifications are paused except absolute emergencies. Tesoro sends automatic responses to people trying to reach you and lets them know when you'll be available again. This is essential for productivity.",
+        "es": "Cuando hagas trabajo profundo o estés en una reunión importante, activa 'Modo enfoque' con un clic. Todas las nietificaciones se pausan excepto emergencias absolutas. Tesoro envía respuestas automáticas a personas que intentan contactarte y les informa cuándo estarás disponible nuevamente. Esto es esencial para la productividad."
       }
     },
     {
@@ -332,9 +344,9 @@
             "es": "Qué hacer con citas no confirmadas"
           },
           "description": {
-            "nl": "Stel je beleid in voor niet-bevestigde afspraken. Opties: Automatisch bellen 2 uur van tevoren, Markeren als 'Onzeker' in je kalender, Automatisch annuleren 1 uur van tevoren (met e-mail notificatie), Of gewoon verschijnen en hopen. Het eerste of tweede werkt het beste - proactieve communicatie voorkomt verspilde reizen.",
-            "en": "Set your policy for unconfirmed appointments. Options: Automatically call 2 hours in advance, Mark as 'Uncertain' in your calendar, Automatically cancel 1 hour in advance (with email notification), Or just show up and hope. The first or second works best - proactive communication prevents wasted trips.",
-            "es": "Establece tu política para citas no confirmadas. Opciones: Llamar automáticamente 2 horas antes, Marcar como 'Incierto' en tu calendario, Cancelar automáticamente 1 hora antes (con notificación por correo electrónico), O simplemente presentarte y esperar. La primera o segunda funciona mejor - la comunicación proactiva previene viajes desperdiciados."
+            "nl": "Stel je beleid in voor niet-bevestigde afspraken. Opties: Automatisch bellen 2 uur van tevoren, Markeren als 'Onzeker' in je kalender, Automatisch annuleren 1 uur van tevoren (met e-mail nietificatie), Of gewoon verschijnen en hopen. Het eerste of tweede werkt het beste - proactieve communicatie voorkomt verspilde reizen.",
+            "en": "Set your policy for unconfirmed appointments. Options: Automatically call 2 hours in advance, Mark as 'Uncertain' in your calendar, Automatically cancel 1 hour in advance (with email nietification), Or just show up and hope. The first or second works best - proactive communication prevents wasted trips.",
+            "es": "Establece tu política para citas no confirmadas. Opciones: Llamar automáticamente 2 horas antes, Marcar como 'Incierto' en tu calendario, Cancelar automáticamente 1 hora antes (con nietificación por correo electrónico), O simplemente presentarte y esperar. La primera o segunda funciona mejor - la comunicación proactiva previene viajes desperdiciados."
           }
         },
         {
@@ -368,7 +380,7 @@
           },
           "answer": {
             "nl": "Sleutel is personalisatie en waarde. Gebruik altijd de klant naam, specifieke pand details, en voeg nuttige informatie toe (kaart links, parkeerinstructies). Beperk het aantal herinneringen tot maximaal 3 per evenement. Geef klanten de optie om herinneringen af te melden (met uitzondering van kritieke bevestigingen). Een persoonlijke, nuttige herinnering voelt als service, niet als spam.",
-            "en": "The key is personalization and value. Always use the client's name, specific property details, and add useful information (map links, parking instructions). Limit the number of reminders to maximum 3 per event. Give clients the option to opt out of reminders (except for critical confirmations). A personal, useful reminder feels like service, not spam.",
+            "en": "The key is personalization and value. Always use the client's name, specific property details, and add useful information (map links, parking instructions). Limit the number of reminders to maximum 3 per event. Give clients the option to opt out of reminders (except for critical confirmations). A personal, useful reminder feels like service, niet spam.",
             "es": "La clave es personalización y valor. Siempre usa el nombre del cliente, detalles específicos de la propiedad y agrega información útil (enlaces de mapa, instrucciones de estacionamiento). Limita el número de recordatorios a máximo 3 por evento. Da a los clientes la opción de optar por no recibir recordatorios (excepto confirmaciones críticas). Un recordatorio personal y útil se siente como servicio, no como spam."
           }
         },
@@ -380,8 +392,8 @@
           },
           "answer": {
             "nl": "Ja! Elke herinnering e-mail bevat een 'Voorkeuren aanpassen' link onderaan. Klanten kunnen kiezen: hun voorkeurskanaal (e-mail, SMS, beide), voorkeurtiming (bijvoorbeeld alleen 1 dag van tevoren), of helemaal afmelden van niet-kritieke herinneringen. Je ontvangt een melding wanneer een klant hun voorkeuren wijzigt zodat je je verwachtingen kunt aanpassen.",
-            "en": "Yes! Every reminder email contains a 'Customize preferences' link at the bottom. Clients can choose: their preferred channel (email, SMS, both), preferred timing (for example, only 1 day in advance), or opt out of non-critical reminders entirely. You receive a notification when a client changes their preferences so you can adjust your expectations.",
-            "es": "¡Sí! Cada correo electrónico de recordatorio contiene un enlace 'Personalizar preferencias' en la parte inferior. Los clientes pueden elegir: su canal preferido (correo electrónico, SMS, ambos), momento preferido (por ejemplo, solo 1 día antes), o optar por no recibir recordatorios no críticos por completo. Recibes una notificación cuando un cliente cambia sus preferencias para que puedas ajustar tus expectativas."
+            "en": "Yes! Every reminder email contains a 'Customize preferences' link at the bottom. Clients can choose: their preferred channel (email, SMS, both), preferred timing (for example, only 1 day in advance), or opt out of non-critical reminders entirely. You receive a nietification when a client changes their preferences so you can adjust your expectations.",
+            "es": "¡Sí! Cada correo electrónico de recordatorio contiene un enlace 'Personalizar preferencias' en la parte inferior. Los clientes pueden elegir: su canal preferido (correo electrónico, SMS, ambos), momento preferido (por ejemplo, solo 1 día antes), o optar por no recibir recordatorios no críticos por completo. Recibes una nietificación cuando un cliente cambia sus preferencias para que puedas ajustar tus expectativas."
           }
         },
         {
@@ -392,7 +404,7 @@
           },
           "answer": {
             "nl": "SMS herinneringen werken op alle telefoons, niet alleen smartphones. Als een klant geen telefoon heeft of liever geen SMS ontvangt, kun je hun herinneringsmethode wijzigen naar alleen e-mail in hun contactrecord. Tesoro stuurt ook automatisch een back-up e-mail voor alle SMS herinneringen als extra zekerheid.",
-            "en": "SMS reminders work on all phones, not just smartphones. If a client doesn't have a phone or prefers not to receive SMS, you can change their reminder method to email-only in their contact record. Tesoro also automatically sends a backup email for all SMS reminders as extra assurance.",
+            "en": "SMS reminders work on all phones, niet just smartphones. If a client doesn't have a phone or prefers niet to receive SMS, you can change their reminder method to email-only in their contact record. Tesoro also automatically sends a backup email for all SMS reminders as extra assurance.",
             "es": "Los recordatorios SMS funcionan en todos los teléfonos, no solo teléfonos inteligentes. Si un cliente no tiene teléfono o prefiere no recibir SMS, puedes cambiar su método de recordatorio a solo correo electrónico en su registro de contacto. Tesoro también envía automáticamente un correo electrónico de respaldo para todos los recordatorios SMS como seguridad adicional."
           }
         },
@@ -404,8 +416,8 @@
           },
           "answer": {
             "nl": "Ja. Wanneer je tijd vrij plant in Kalender > Tijd vrij, kun je kiezen wat er gebeurt met geplande herinneringen. Opties: automatisch alle herinneringen doorsturen naar een collega, herinneringen pauzeren en hervatten na terugkeer, of herinneringen normaal blijven versturen (als je op afstand beschikbaar bent). Alle klanten met afspraken tijdens je afwezigheid ontvangen een melding van de wijziging.",
-            "en": "Yes. When you schedule time off in Calendar > Time Off, you can choose what happens to scheduled reminders. Options: automatically forward all reminders to a colleague, pause reminders and resume after return, or keep sending reminders normally (if you're available remotely). All clients with appointments during your absence receive notification of the change.",
-            "es": "Sí. Cuando programas tiempo libre en Calendario > Tiempo libre, puedes elegir qué sucede con los recordatorios programados. Opciones: reenviar automáticamente todos los recordatorios a un colega, pausar recordatorios y reanudar después del regreso, o seguir enviando recordatorios normalmente (si estás disponible remotamente). Todos los clientes con citas durante tu ausencia reciben notificación del cambio."
+            "en": "Yes. When you schedule time off in Calendar > Time Off, you can choose what happens to scheduled reminders. Options: automatically forward all reminders to a colleague, pause reminders and resume after return, or keep sending reminders normally (if you're available remotely). All clients with appointments during your absence receive nietification of the change.",
+            "es": "Sí. Cuando programas tiempo libre en Calendario > Tiempo libre, puedes elegir qué sucede con los recordatorios programados. Opciones: reenviar automáticamente todos los recordatorios a un colega, pausar recordatorios y reanudar después del regreso, o seguir enviando recordatorios normalmente (si estás disponible remotamente). Todos los clientes con citas durante tu ausencia reciben nietificación del cambio."
           }
         }
       ]

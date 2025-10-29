@@ -7,18 +7,28 @@
     "authorId": "maria-perez",
     "category": "communication",
     "difficulty": "beginner",
-    "tags": ["client-portal", "tutorial", "client-communication", "setup-guide", "crm-basics"],
+    "tags": [
+      "client-portal",
+      "tutorial",
+      "client-communication",
+      "setup-guide",
+      "crm-basics"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop",
-    "keywords": ["client portal setup", "klanten portal Tesoro", "client toegang CRM", "portal configuratie", "client communicatie"]
+    "keywords": [
+      "client portal setup",
+      "klanten portal Tesoro",
+      "client toegang CRM",
+      "portal configuratie",
+      "client communicatie"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Client Portal Setup in Tesoro CRM: Complete Configuratie Gids",
@@ -31,7 +41,6 @@
       "es": "Aprende paso a paso cómo configurar el portal del cliente, dar acceso a clientes, y optimizar el portal para mejor experiencia del cliente y comunicación."
     }
   },
-
   "sections": [
     {
       "type": "callout",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "client-portal-overview",
@@ -72,7 +80,6 @@
       },
       "duration": "7:24"
     },
-
     {
       "type": "text",
       "id": "what-is-client-portal",
@@ -93,7 +100,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "portal-activation",
@@ -137,13 +143,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>1. Klik op de <strong>\"Client Portal Activeren\"</strong> schakelaar bovenaan de pagina</p><p>2. De schakelaar wordt groen en toont \"Actief\"</p><p>3. Er verschijnt een bevestiging popup met je portal URL</p><p>4. Noteer deze URL - dit is het adres waar klanten inloggen</p><p><strong>Je Portal URL:</strong> Typisch iets als <code>portal.tesoro-crm.nl/jouwbedrijf</code></p><p><strong>Belangrijke Note:</strong> Eenmaal geactiveerd krijg je een 14-dagen trial periode. Daarna zijn er kosten verbonden aan het aantal actieve portal gebruikers.</p><p><strong>Eerste Configuratie:</strong> Na activatie wordt automatisch een basis portal setup aangemaakt met je bedrijfsgegevens.</p>"
+              "text": "<p>1. Klik op de <strong>\"Client Portal Activeren\"</strong> schakelaar bovenaan de pagina</p><p>2. De schakelaar wordt groen en toont \"Actief\"</p><p>3. Er verschijnt een bevestiging popup met je portal URL</p><p>4. nieteer deze URL - dit is het adres waar klanten inloggen</p><p><strong>Je Portal URL:</strong> Typisch iets als <code>portal.tesoro-crm.nl/jouwbedrijf</code></p><p><strong>Belangrijke niete:</strong> Eenmaal geactiveerd krijg je een 14-dagen trial periode. Daarna zijn er kosten verbonden aan het aantal actieve portal gebruikers.</p><p><strong>Eerste Configuratie:</strong> Na activatie wordt automatisch een basis portal setup aangemaakt met je bedrijfsgegevens.</p>"
             },
             "en": {
-              "text": "<p>1. Click on the <strong>\"Activate Client Portal\"</strong> toggle at the top of the page</p><p>2. The toggle turns green and shows \"Active\"</p><p>3. A confirmation popup appears with your portal URL</p><p>4. Note this URL - this is the address where clients log in</p><p><strong>Your Portal URL:</strong> Typically something like <code>portal.tesoro-crm.nl/yourcompany</code></p><p><strong>Important Note:</strong> Once activated you get a 14-day trial period. After that there are costs associated with the number of active portal users.</p><p><strong>Initial Configuration:</strong> After activation, a basic portal setup is automatically created with your company details.</p>"
+              "text": "<p>1. Click on the <strong>\"Activate Client Portal\"</strong> toggle at the top of the page</p><p>2. The toggle turns green and shows \"Active\"</p><p>3. A confirmation popup appears with your portal URL</p><p>4. niete this URL - this is the address where clients log in</p><p><strong>Your Portal URL:</strong> Typically something like <code>portal.tesoro-crm.nl/yourcompany</code></p><p><strong>Important niete:</strong> Once activated you get a 14-day trial period. After that there are costs associated with the number of active portal users.</p><p><strong>Initial Configuration:</strong> After activation, a basic portal setup is automatically created with your company details.</p>"
             },
             "es": {
-              "text": "<p>1. Haz clic en el interruptor <strong>\"Activar Portal del Cliente\"</strong> en la parte superior de la página</p><p>2. El interruptor se vuelve verde y muestra \"Activo\"</p><p>3. Aparece un popup de confirmación con tu URL del portal</p><p>4. Anota esta URL - esta es la dirección donde los clientes inician sesión</p><p><strong>Tu URL del Portal:</strong> Típicamente algo como <code>portal.tesoro-crm.nl/tuempresa</code></p><p><strong>Nota Importante:</strong> Una vez activado obtienes un período de prueba de 14 días. Después hay costos asociados con el número de usuarios activos del portal.</p><p><strong>Configuración Inicial:</strong> Después de la activación, se crea automáticamente una configuración básica del portal con los detalles de tu empresa.</p>"
+              "text": "<p>1. Haz clic en el interruptor <strong>\"Activar Portal del Cliente\"</strong> en la parte superior de la página</p><p>2. El interruptor se vuelve verde y muestra \"Activo\"</p><p>3. Aparece un popup de confirmación con tu URL del portal</p><p>4. Anieta esta URL - esta es la dirección donde los clientes inician sesión</p><p><strong>Tu URL del Portal:</strong> Típicamente algo como <code>portal.tesoro-crm.nl/tuempresa</code></p><p><strong>nieta Importante:</strong> Una vez activado obtienes un período de prueba de 14 días. Después hay costos asociados con el número de usuarios activos del portal.</p><p><strong>Configuración Inicial:</strong> Después de la activación, se crea automáticamente una configuración básica del portal con los detalles de tu empresa.</p>"
             }
           }
         },
@@ -167,7 +173,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "portal-branding",
@@ -188,7 +193,7 @@
               "text": "<p>1. Ga naar <strong>\"Branding\"</strong> tab in de portal instellingen</p><p>2. Klik op <strong>\"Upload Logo\"</strong> om je bedrijfslogo toe te voegen</p><p>3. Update je bedrijfsgegevens als deze niet correct zijn:</p><ul><li><strong>Bedrijfsnaam:</strong> Zoals klanten je kennen</li><li><strong>Tagline:</strong> Korte beschrijving van je service</li><li><strong>Contact informatie:</strong> Hoofd telefoon en email</li><li><strong>Adres:</strong> Bedrijfsadres voor vertrouwen</li></ul><p><strong>Logo Specificaties:</strong></p><ul><li><strong>Format:</strong> PNG, JPG, of SVG</li><li><strong>Grootte:</strong> Minimaal 200x80 pixels, maximaal 800x200 pixels</li><li><strong>Achtergrond:</strong> Bij voorkeur transparant (PNG)</li><li><strong>Kleur:</strong> Zorg dat het goed leesbaar is op lichte achtergrond</li></ul>"
             },
             "en": {
-              "text": "<p>1. Go to <strong>\"Branding\"</strong> tab in portal settings</p><p>2. Click on <strong>\"Upload Logo\"</strong> to add your company logo</p><p>3. Update your company details if they're not correct:</p><ul><li><strong>Company name:</strong> As clients know you</li><li><strong>Tagline:</strong> Short description of your service</li><li><strong>Contact information:</strong> Main phone and email</li><li><strong>Address:</strong> Business address for trust</li></ul><p><strong>Logo Specifications:</strong></p><ul><li><strong>Format:</strong> PNG, JPG, or SVG</li><li><strong>Size:</strong> Minimum 200x80 pixels, maximum 800x200 pixels</li><li><strong>Background:</strong> Preferably transparent (PNG)</li><li><strong>Color:</strong> Ensure it's readable on light background</li></ul>"
+              "text": "<p>1. Go to <strong>\"Branding\"</strong> tab in portal settings</p><p>2. Click on <strong>\"Upload Logo\"</strong> to add your company logo</p><p>3. Update your company details if they're niet correct:</p><ul><li><strong>Company name:</strong> As clients know you</li><li><strong>Tagline:</strong> Short description of your service</li><li><strong>Contact information:</strong> Main phone and email</li><li><strong>Address:</strong> Business address for trust</li></ul><p><strong>Logo Specifications:</strong></p><ul><li><strong>Format:</strong> PNG, JPG, or SVG</li><li><strong>Size:</strong> Minimum 200x80 pixels, maximum 800x200 pixels</li><li><strong>Background:</strong> Preferably transparent (PNG)</li><li><strong>Color:</strong> Ensure it's readable on light background</li></ul>"
             },
             "es": {
               "text": "<p>1. Ve a la pestaña <strong>\"Branding\"</strong> en la configuración del portal</p><p>2. Haz clic en <strong>\"Subir Logo\"</strong> para agregar el logo de tu empresa</p><p>3. Actualiza los detalles de tu empresa si no son correctos:</p><ul><li><strong>Nombre de la empresa:</strong> Como te conocen los clientes</li><li><strong>Tagline:</strong> Descripción corta de tu servicio</li><li><strong>Información de contacto:</strong> Teléfono y email principal</li><li><strong>Dirección:</strong> Dirección comercial para confianza</li></ul><p><strong>Especificaciones del Logo:</strong></p><ul><li><strong>Formato:</strong> PNG, JPG, o SVG</li><li><strong>Tamaño:</strong> Mínimo 200x80 píxeles, máximo 800x200 píxeles</li><li><strong>Fondo:</strong> Preferiblemente transparente (PNG)</li><li><strong>Color:</strong> Asegúrate de que sea legible en fondo claro</li></ul>"
@@ -233,7 +238,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "client-access",
@@ -254,7 +258,7 @@
               "text": "<p>1. Ga terug naar <strong>\"Client Portal\"</strong> hoofdpagina</p><p>2. Klik op <strong>\"+ Nieuwe Portal Toegang\"</strong></p><p>3. Zoek en selecteer het contact dat toegang moet krijgen</p><p>4. Het contact moet al bestaan in je CRM contactenlijst</p><p><strong>Vereisten voor Portal Toegang:</strong></p><ul><li><strong>Geldig email adres:</strong> Vereist voor login credentials</li><li><strong>Contact type:</strong> Moet ingesteld zijn als 'Klant' of 'Actieve Lead'</li><li><strong>Complete naam:</strong> Voor en achternaam moeten ingevuld zijn</li><li><strong>Gekoppeld aan property:</strong> Aanbevolen maar niet verplicht</li></ul><p><strong>Tip:</strong> Als je contact er niet tussen staat, ga dan eerst naar Contacten om de basisgegevens compleet te maken.</p>"
             },
             "en": {
-              "text": "<p>1. Go back to <strong>\"Client Portal\"</strong> main page</p><p>2. Click on <strong>\"+ New Portal Access\"</strong></p><p>3. Search and select the contact that should get access</p><p>4. The contact must already exist in your CRM contact list</p><p><strong>Requirements for Portal Access:</strong></p><ul><li><strong>Valid email address:</strong> Required for login credentials</li><li><strong>Contact type:</strong> Must be set as 'Client' or 'Active Lead'</li><li><strong>Complete name:</strong> First and last name must be filled in</li><li><strong>Linked to property:</strong> Recommended but not required</li></ul><p><strong>Tip:</strong> If your contact isn't listed, first go to Contacts to complete the basic information.</p>"
+              "text": "<p>1. Go back to <strong>\"Client Portal\"</strong> main page</p><p>2. Click on <strong>\"+ New Portal Access\"</strong></p><p>3. Search and select the contact that should get access</p><p>4. The contact must already exist in your CRM contact list</p><p><strong>Requirements for Portal Access:</strong></p><ul><li><strong>Valid email address:</strong> Required for login credentials</li><li><strong>Contact type:</strong> Must be set as 'Client' or 'Active Lead'</li><li><strong>Complete name:</strong> First and last name must be filled in</li><li><strong>Linked to property:</strong> Recommended but niet required</li></ul><p><strong>Tip:</strong> If your contact isn't listed, first go to Contacts to complete the basic information.</p>"
             },
             "es": {
               "text": "<p>1. Regresa a la página principal del <strong>\"Portal del Cliente\"</strong></p><p>2. Haz clic en <strong>\"+ Nuevo Acceso al Portal\"</strong></p><p>3. Busca y selecciona el contacto que debe obtener acceso</p><p>4. El contacto ya debe existir en tu lista de contactos CRM</p><p><strong>Requisitos para Acceso al Portal:</strong></p><ul><li><strong>Dirección de email válida:</strong> Requerida para credenciales de login</li><li><strong>Tipo de contacto:</strong> Debe estar configurado como 'Cliente' o 'Lead Activo'</li><li><strong>Nombre completo:</strong> Nombre y apellido deben estar completados</li><li><strong>Vinculado a propiedad:</strong> Recomendado pero no requerido</li></ul><p><strong>Tip:</strong> Si tu contacto no está listado, primero ve a Contactos para completar la información básica.</p>"
@@ -272,10 +276,10 @@
               "text": "<p><strong>Toegang Niveau Kiezen:</strong></p><ul><li><strong>Basis Toegang:</strong> Documenten bekijken, berichten ontvangen</li><li><strong>Standaard Toegang:</strong> + Berichten sturen, afspraken inzien</li><li><strong>Uitgebreide Toegang:</strong> + Documenten uploaden, notities toevoegen</li></ul><p><strong>Specifieke Rechten Instellen:</strong></p><ol><li><strong>Documenten:</strong> Welke documenten mag de klant zien?</li><li><strong>Properties:</strong> Welke properties zijn relevant?</li><li><strong>Communicatie:</strong> Mogen ze direct berichten sturen?</li><li><strong>Agenda:</strong> Mogen ze afspraken zien/plannen?</li></ol><p><strong>Privacy Instellingen:</strong></p><ul><li><strong>Data Retentie:</strong> Hoe lang blijft data beschikbaar?</li><li><strong>Download Rechten:</strong> Mogen ze documenten downloaden?</li><li><strong>Contact Zichtbaarheid:</strong> Mogen ze andere contacten zien?</li></ul>"
             },
             "en": {
-              "text": "<p><strong>Choose Access Level:</strong></p><ul><li><strong>Basic Access:</strong> View documents, receive messages</li><li><strong>Standard Access:</strong> + Send messages, view appointments</li><li><strong>Extended Access:</strong> + Upload documents, add notes</li></ul><p><strong>Set Specific Rights:</strong></p><ol><li><strong>Documents:</strong> Which documents may the client see?</li><li><strong>Properties:</strong> Which properties are relevant?</li><li><strong>Communication:</strong> May they send direct messages?</li><li><strong>Calendar:</strong> May they see/schedule appointments?</li></ol><p><strong>Privacy Settings:</strong></p><ul><li><strong>Data Retention:</strong> How long does data remain available?</li><li><strong>Download Rights:</strong> May they download documents?</li><li><strong>Contact Visibility:</strong> May they see other contacts?</li></ul>"
+              "text": "<p><strong>Choose Access Level:</strong></p><ul><li><strong>Basic Access:</strong> View documents, receive messages</li><li><strong>Standard Access:</strong> + Send messages, view appointments</li><li><strong>Extended Access:</strong> + Upload documents, add notes</li></ul><p><strong>Set Specific Rights:</strong></p><ol><li><strong>Documents:</strong> Which documents may the client see?</li><li><strong>Properties:</strong> Which properties are relevant?</li><li><strong>Communicatie:</strong> May they send direct messages?</li><li><strong>Calendar:</strong> May they see/schedule appointments?</li></ol><p><strong>Privacy Settings:</strong></p><ul><li><strong>Data Retention:</strong> How long does data remain available?</li><li><strong>Download Rights:</strong> May they download documents?</li><li><strong>Contact Visibility:</strong> May they see other contacts?</li></ul>"
             },
             "es": {
-              "text": "<p><strong>Elegir Nivel de Acceso:</strong></p><ul><li><strong>Acceso Básico:</strong> Ver documentos, recibir mensajes</li><li><strong>Acceso Estándar:</strong> + Enviar mensajes, ver citas</li><li><strong>Acceso Extendido:</strong> + Subir documentos, agregar notas</li></ul><p><strong>Establecer Derechos Específicos:</strong></p><ol><li><strong>Documentos:</strong> ¿Qué documentos puede ver el cliente?</li><li><strong>Propiedades:</strong> ¿Qué propiedades son relevantes?</li><li><strong>Comunicación:</strong> ¿Pueden enviar mensajes directos?</li><li><strong>Calendario:</strong> ¿Pueden ver/programar citas?</li></ol><p><strong>Configuraciones de Privacidad:</strong></p><ul><li><strong>Retención de Datos:</strong> ¿Cuánto tiempo permanecen disponibles los datos?</li><li><strong>Derechos de Descarga:</strong> ¿Pueden descargar documentos?</li><li><strong>Visibilidad de Contactos:</strong> ¿Pueden ver otros contactos?</li></ul>"
+              "text": "<p><strong>Elegir Nivel de Acceso:</strong></p><ul><li><strong>Acceso Básico:</strong> Ver documentos, recibir mensajes</li><li><strong>Acceso Estándar:</strong> + Enviar mensajes, ver citas</li><li><strong>Acceso Extendido:</strong> + Subir documentos, agregar nietas</li></ul><p><strong>Establecer Derechos Específicos:</strong></p><ol><li><strong>Documentos:</strong> ¿Qué documentos puede ver el cliente?</li><li><strong>Propiedades:</strong> ¿Qué propiedades son relevantes?</li><li><strong>Comunicación:</strong> ¿Pueden enviar mensajes directos?</li><li><strong>Calendario:</strong> ¿Pueden ver/programar citas?</li></ol><p><strong>Configuraciones de Privacidad:</strong></p><ul><li><strong>Retención de Datos:</strong> ¿Cuánto tiempo permanecen disponibles los datos?</li><li><strong>Derechos de Descarga:</strong> ¿Pueden descargar documentos?</li><li><strong>Visibilidad de Contactos:</strong> ¿Pueden ver otros contactos?</li></ul>"
             }
           }
         },
@@ -299,7 +303,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "client-experience-tips",
@@ -321,7 +324,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "next-steps",
@@ -332,24 +334,22 @@
       },
       "content": {
         "nl": {
-          "text": "<p>Nu je client portal is geconfigureerd en je eerste klanten toegang hebt gegeven, kun je verder gaan met:</p><h5>Gerelateerde Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectief documenten organiseren en delen</li><li><strong>Portal Analytics:</strong> Client engagement tracking en optimalisatie</li><li><strong>Automated Workflows:</strong> Portal updates automatiseren</li><li><strong>Advanced Communication:</strong> Messaging en notificatie systemen</li></ul><h5>Geavanceerde Portal Features:</h5><ul><li>White-label portal met eigen domein</li><li>Custom portal pagina's en content</li><li>Integration met externe document systemen</li><li>Geautomatiseerde client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimalisatie Mogelijkheden:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics en improvement insights</li><li>A/B testing van portal content</li><li>Mobiele app integratie</li><li>API toegang voor custom ontwikkelingen</li></ul><p><strong>Succes Meten:</strong> Monitor client login frequentie, document downloads, en message response rates om de effectiviteit van je portal te meten.</p>"
+          "text": "<p>Nu je client portal is geconfigureerd en je eerste klanten toegang hebt gegeven, kun je verder gaan met:</p><h5>Gerelateerde Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectief documenten organiseren en delen</li><li><strong>Portal Analytics:</strong> Client engagement tracking en optimalisatie</li><li><strong>Automated Workflows:</strong> Portal updates automatiseren</li><li><strong>Advanced Communication:</strong> Messaging en nietificatie systemen</li></ul><h5>Geavanceerde Portal Features:</h5><ul><li>White-label portal met eigen domein</li><li>Custom portal pagina's en content</li><li>Integration met externe document systemen</li><li>Geautomatiseerde client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimalisatie Mogelijkheden:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics en improvement insights</li><li>A/B testing van portal content</li><li>Mobiele app integratie</li><li>API toegang voor custom ontwikkelingen</li></ul><p><strong>Succes Meten:</strong> Monitor client login frequentie, document downloads, en message response rates om de effectiviteit van je portal te meten.</p>"
         },
         "en": {
-          "text": "<p>Now that your client portal is configured and you've given your first clients access, you can continue with:</p><h5>Related Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectively organize and share documents</li><li><strong>Portal Analytics:</strong> Client engagement tracking and optimization</li><li><strong>Automated Workflows:</strong> Automate portal updates</li><li><strong>Advanced Communication:</strong> Messaging and notification systems</li></ul><h5>Advanced Portal Features:</h5><ul><li>White-label portal with own domain</li><li>Custom portal pages and content</li><li>Integration with external document systems</li><li>Automated client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimization Opportunities:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics and improvement insights</li><li>A/B testing of portal content</li><li>Mobile app integration</li><li>API access for custom developments</li></ul><p><strong>Measuring Success:</strong> Monitor client login frequency, document downloads, and message response rates to measure your portal's effectiveness.</p>"
+          "text": "<p>Now that your client portal is configured and you've given your first clients access, you can continue with:</p><h5>Related Tutorials:</h5><ul><li><strong>Document Management:</strong> Effectively organize and share documents</li><li><strong>Portal Analytics:</strong> Client engagement tracking and optimization</li><li><strong>Automated Workflows:</strong> Automate portal updates</li><li><strong>Advanced Communication:</strong> Messaging and nietification systems</li></ul><h5>Advanced Portal Features:</h5><ul><li>White-label portal with own domain</li><li>Custom portal pages and content</li><li>Integration with external document systems</li><li>Automated client onboarding flows</li><li>Multi-language portal support</li></ul><h5>Optimization Opportunities:</h5><ul><li>Client satisfaction surveys via portal</li><li>Usage analytics and improvement insights</li><li>A/B testing of portal content</li><li>Mobile app integration</li><li>API access for custom developments</li></ul><p><strong>Measuring Success:</strong> Monitor client login frequency, document downloads, and message response rates to measure your portal's effectiveness.</p>"
         },
         "es": {
-          "text": "<p>Ahora que tu portal del cliente está configurado y has dado acceso a tus primeros clientes, puedes continuar con:</p><h5>Tutorials Relacionados:</h5><ul><li><strong>Gestión de Documentos:</strong> Organizar y compartir documentos efectivamente</li><li><strong>Analytics del Portal:</strong> Seguimiento de engagement del cliente y optimización</li><li><strong>Workflows Automatizados:</strong> Automatizar actualizaciones del portal</li><li><strong>Comunicación Avanzada:</strong> Sistemas de mensajería y notificaciones</li></ul><h5>Funciones Avanzadas del Portal:</h5><ul><li>Portal white-label con dominio propio</li><li>Páginas de portal personalizadas y contenido</li><li>Integración con sistemas de documentos externos</li><li>Flujos de onboarding automatizados de clientes</li><li>Soporte multi-idioma del portal</li></ul><h5>Oportunidades de Optimización:</h5><ul><li>Encuestas de satisfacción del cliente vía portal</li><li>Analytics de uso e insights de mejora</li><li>Pruebas A/B de contenido del portal</li><li>Integración de app móvil</li><li>Acceso API para desarrollos personalizados</li></ul><p><strong>Midiendo el Éxito:</strong> Monitorea la frecuencia de login del cliente, descargas de documentos, y tasas de respuesta de mensajes para medir la efectividad de tu portal.</p>"
+          "text": "<p>Ahora que tu portal del cliente está configurado y has dado acceso a tus primeros clientes, puedes continuar con:</p><h5>Tutorials Relacionados:</h5><ul><li><strong>Gestión de Documentos:</strong> Organizar y compartir documentos efectivamente</li><li><strong>Analytics del Portal:</strong> Seguimiento de engagement del cliente y optimización</li><li><strong>Workflows Automatizados:</strong> Automatizar actualizaciones del portal</li><li><strong>Comunicación Avanzada:</strong> Sistemas de mensajería y nietificaciones</li></ul><h5>Funciones Avanzadas del Portal:</h5><ul><li>Portal white-label con dominio propio</li><li>Páginas de portal personalizadas y contenido</li><li>Integración con sistemas de documentos externos</li><li>Flujos de onboarding automatizados de clientes</li><li>Soporte multi-idioma del portal</li></ul><h5>Oportunidades de Optimización:</h5><ul><li>Encuestas de satisfacción del cliente vía portal</li><li>Analytics de uso e insights de mejora</li><li>Pruebas A/B de contenido del portal</li><li>Integración de app móvil</li><li>Acceso API para desarrollos personalizados</li></ul><p><strong>Midiendo el Éxito:</strong> Monitorea la frecuencia de login del cliente, descargas de documentos, y tasas de respuesta de mensajes para medir la efectividad de tu portal.</p>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "basic-contact-management-tutorial",
     "property-management-tutorial",
     "email-integration-setup"
   ],
-
   "faq": [
     {
       "question": {
@@ -371,7 +371,7 @@
       },
       "answer": {
         "nl": "Er is geen technische limiet op het aantal portal gebruikers. Je betaalt per actieve gebruiker per maand. Inactieve accounts (>90 dagen geen login) worden niet meegerekend. Je kunt altijd gebruikers deactiveren om kosten te besparen.",
-        "en": "There's no technical limit on the number of portal users. You pay per active user per month. Inactive accounts (>90 days no login) are not counted. You can always deactivate users to save costs.",
+        "en": "There's no technical limit on the number of portal users. You pay per active user per month. Inactive accounts (>90 days no login) are niet counted. You can always deactivate users to save costs.",
         "es": "No hay límite técnico en el número de usuarios del portal. Pagas por usuario activo por mes. Las cuentas inactivas (>90 días sin login) no se cuentan. Siempre puedes desactivar usuarios para ahorrar costos."
       }
     },
@@ -382,9 +382,9 @@
         "es": "¿Pueden los clientes subir documentos al portal?"
       },
       "answer": {
-        "nl": "Ja, maar alleen als je hen 'Uitgebreide Toegang' geeft. Ze kunnen dan documenten uploaden in een speciale 'Client Upload' map die alleen jij kunt zien. Je krijgt een notificatie bij elke upload en kunt besluiten om het te delen of privé te houden.",
-        "en": "Yes, but only if you give them 'Extended Access'. They can then upload documents to a special 'Client Upload' folder that only you can see. You get a notification for every upload and can decide to share it or keep it private.",
-        "es": "Sí, pero solo si les das 'Acceso Extendido'. Entonces pueden subir documentos a una carpeta especial 'Subida del Cliente' que solo tú puedes ver. Recibes una notificación por cada subida y puedes decidir compartirla o mantenerla privada."
+        "nl": "Ja, maar alleen als je hen 'Uitgebreide Toegang' geeft. Ze kunnen dan documenten uploaden in een speciale 'Client Upload' map die alleen jij kunt zien. Je krijgt een nietificatie bij elke upload en kunt besluiten om het te delen of privé te houden.",
+        "en": "Yes, but only if you give them 'Extended Access'. They can then upload documents to a special 'Client Upload' folder that only you can see. You get a nietification for every upload and can decide to share it or keep it private.",
+        "es": "Sí, pero solo si les das 'Acceso Extendido'. Entonces pueden subir documentos a una carpeta especial 'Subida del Cliente' que solo tú puedes ver. Recibes una nietificación por cada subida y puedes decidir compartirla o mantenerla privada."
       }
     }
   ]

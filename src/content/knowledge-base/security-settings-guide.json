@@ -7,7 +7,13 @@
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "intermediate",
-    "tags": ["settings", "security", "password", "2fa", "authentication"],
+    "tags": [
+      "settings",
+      "security",
+      "password",
+      "2fa",
+      "authentication"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=630&fit=crop",
-    "keywords": ["security", "password", "two-factor authentication", "2fa", "login", "tesoro crm"]
+    "keywords": [
+      "security",
+      "password",
+      "two-factor authentication",
+      "2fa",
+      "login",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -57,7 +70,7 @@
           },
           "description": {
             "nl": "Ga naar Profiel > Beveiliging > Wachtwoord wijzigen. Voer uw huidige wachtwoord in en kies een nieuw wachtwoord dat voldoet aan:\n- Minimaal 12 tekens\n- Minimaal 1 hoofdletter\n- Minimaal 1 cijfer\n- Minimaal 1 speciaal teken (!@#$%^&*)\n- Mag niet uw naam of e-mailadres bevatten\n- Mag niet een van uw laatste 5 wachtwoorden zijn\n\nTip: Gebruik een wachtwoordmanager zoals 1Password of LastPass voor sterke, unieke wachtwoorden.",
-            "en": "Go to Profile > Security > Change Password. Enter your current password and choose a new password that meets:\n- Minimum 12 characters\n- At least 1 uppercase letter\n- At least 1 number\n- At least 1 special character (!@#$%^&*)\n- Cannot contain your name or email address\n- Cannot be one of your last 5 passwords\n\nTip: Use a password manager like 1Password or LastPass for strong, unique passwords.",
+            "en": "Go to Profile > Security > Change Password. Enter your current password and choose a new password that meets:\n- Minimum 12 characters\n- At least 1 uppercase letter\n- At least 1 number\n- At least 1 special character (!@#$%^&*)\n- Canniet contain your name or email address\n- Canniet be one of your last 5 passwords\n\nTip: Use a password manager like 1Password or LastPass for strong, unique passwords.",
             "es": "Vaya a Perfil > Seguridad > Cambiar contraseña. Ingrese su contraseña actual y elija una nueva contraseña que cumpla:\n- Mínimo 12 caracteres\n- Al menos 1 letra mayúscula\n- Al menos 1 número\n- Al menos 1 carácter especial (!@#$%^&*)\n- No puede contener su nombre o dirección de correo electrónico\n- No puede ser una de sus últimas 5 contraseñas\n\nConsejo: Use un administrador de contraseñas como 1Password o LastPass para contraseñas únicas y fuertes."
           }
         },
@@ -81,7 +94,7 @@
           },
           "description": {
             "nl": "Beheerders kunnen een wachtwoordverloopbeleid instellen in Instellingen > Beveiliging > Wachtwoordbeleid. Opties:\n\n**Nooit verlopen**: Wachtwoorden blijven onbeperkt geldig (niet aanbevolen)\n\n**90 dagen**: Gebruikers moeten elke 3 maanden wachtwoord wijzigen (standaard)\n\n**60 dagen**: Strengere beveiliging voor compliance\n\n**180 dagen**: Minder streng voor kleinere teams\n\nGebruikers ontvangen herinneringen 7 en 3 dagen voordat hun wachtwoord verloopt.",
-            "en": "Administrators can set a password expiration policy in Settings > Security > Password Policy. Options:\n\n**Never expire**: Passwords remain valid indefinitely (not recommended)\n\n**90 days**: Users must change password every 3 months (default)\n\n**60 days**: Stricter security for compliance\n\n**180 days**: Less strict for smaller teams\n\nUsers receive reminders 7 and 3 days before their password expires.",
+            "en": "Administrators can set a password expiration policy in Settings > Security > Password Policy. Options:\n\n**Never expire**: Passwords remain valid indefinitely (niet recommended)\n\n**90 days**: Users must change password every 3 months (default)\n\n**60 days**: Stricter security for compliance\n\n**180 days**: Less strict for smaller teams\n\nUsers receive reminders 7 and 3 days before their password expires.",
             "es": "Los administradores pueden establecer una política de caducidad de contraseñas en Configuración > Seguridad > Política de contraseñas. Opciones:\n\n**Nunca caducar**: Las contraseñas permanecen válidas indefinidamente (no recomendado)\n\n**90 días**: Los usuarios deben cambiar la contraseña cada 3 meses (predeterminado)\n\n**60 días**: Seguridad más estricta para cumplimiento\n\n**180 días**: Menos estricto para equipos más pequeños\n\nLos usuarios reciben recordatorios 7 y 3 días antes de que caduque su contraseña."
           }
         }
@@ -140,7 +153,7 @@
           },
           "description": {
             "nl": "Beheerders kunnen 2FA verplicht stellen voor alle gebruikers in Instellingen > Beveiliging > Tweefactorauthenticatie > 'Verplicht voor alle gebruikers'. Gebruikers krijgen 7 dagen om 2FA te activeren, daarna kunnen ze niet meer inloggen totdat ze 2FA hebben ingesteld. Dit is sterk aanbevolen voor naleving van beveiligingsstandaarden.",
-            "en": "Administrators can make 2FA mandatory for all users in Settings > Security > Two-Factor Authentication > 'Required for all users'. Users get 7 days to enable 2FA, after which they cannot log in until they've set up 2FA. This is strongly recommended for compliance with security standards.",
+            "en": "Administrators can make 2FA mandatory for all users in Settings > Security > Two-Factor Authentication > 'Required for all users'. Users get 7 days to enable 2FA, after which they canniet log in until they've set up 2FA. This is strongly recommended for compliance with security standards.",
             "es": "Los administradores pueden hacer obligatorio 2FA para todos los usuarios en Configuración > Seguridad > Autenticación de dos factores > 'Requerido para todos los usuarios'. Los usuarios tienen 7 días para habilitar 2FA, después de lo cual no pueden iniciar sesión hasta que hayan configurado 2FA. Esto se recomienda encarecidamente para el cumplimiento de los estándares de seguridad."
           }
         }
@@ -190,7 +203,7 @@
           },
           "description": {
             "nl": "U kunt individuele sessies beëindigen of alle sessies behalve uw huidige. Dit is nuttig als:\n- U uw laptop of telefoon bent kwijtgeraakt\n- U zich heeft ingelogd op een publieke computer\n- U verdachte activiteit ziet\n- Een teamlid het bedrijf verlaat (voor beheerders)\n\nNa beëindiging moet er opnieuw worden ingelogd op dat apparaat.",
-            "en": "You can terminate individual sessions or all sessions except your current one. This is useful if:\n- You've lost your laptop or phone\n- You logged in on a public computer\n- You see suspicious activity\n- A team member leaves the company (for administrators)\n\nAfter termination, login is required again on that device.",
+            "en": "You can terminate individual sessions or all sessions except your current one. This is useful if:\n- You've lost your laptop or phone\n- You logged in on a public computer\n- You see suspicious activity\n- A teamlid leaves the company (for administrators)\n\nAfter termination, login is required again on that device.",
             "es": "Puede terminar sesiones individuales o todas las sesiones excepto la actual. Esto es útil si:\n- Ha perdido su computadora portátil o teléfono\n- Inició sesión en una computadora pública\n- Ve actividad sospechosa\n- Un miembro del equipo deja la empresa (para administradores)\n\nDespués de la terminación, se requiere iniciar sesión nuevamente en ese dispositivo."
           }
         },
@@ -202,7 +215,7 @@
           },
           "description": {
             "nl": "Beheerders kunnen automatische uitlog configureren in Instellingen > Beveiliging. Opties:\n\n**Na inactiviteit**: Log gebruikers uit na 30, 60 of 120 minuten zonder activiteit\n\n**Dagelijks om**: Log alle gebruikers uit op een bepaald tijdstip (bijv. middernacht)\n\n**Nooit**: Sessies blijven actief totdat gebruiker uitlogt (niet aanbevolen)\n\nAutomatische uitlog beschermt tegen onbevoegde toegang op onbeheerde apparaten.",
-            "en": "Administrators can configure automatic logout in Settings > Security. Options:\n\n**After inactivity**: Log users out after 30, 60, or 120 minutes without activity\n\n**Daily at**: Log all users out at a specific time (e.g., midnight)\n\n**Never**: Sessions remain active until user logs out (not recommended)\n\nAutomatic logout protects against unauthorized access on unattended devices.",
+            "en": "Administrators can configure automatic logout in Settings > Security. Options:\n\n**After inactivity**: Log users out after 30, 60, or 120 minutes without activity\n\n**Daily at**: Log all users out at a specific time (e.g., midnight)\n\n**Never**: Sessions remain active until user logs out (niet recommended)\n\nAutomatic logout protects against unauthorized access on unattended devices.",
             "es": "Los administradores pueden configurar el cierre de sesión automático en Configuración > Seguridad. Opciones:\n\n**Después de inactividad**: Cerrar sesión de usuarios después de 30, 60 o 120 minutos sin actividad\n\n**Diariamente a las**: Cerrar sesión de todos los usuarios a una hora específica (por ejemplo, medianoche)\n\n**Nunca**: Las sesiones permanecen activas hasta que el usuario cierra sesión (no recomendado)\n\nEl cierre de sesión automático protege contra el acceso no autorizado en dispositivos desatendidos."
           }
         }

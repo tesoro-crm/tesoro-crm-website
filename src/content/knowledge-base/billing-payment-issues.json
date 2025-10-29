@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "carlos-martinez",
-    "category": "troubleshooting",
+    "category": "settings",
     "difficulty": "beginner",
-    "tags": ["billing", "payment", "subscription", "invoice", "troubleshooting"],
+    "tags": [
+      "billing",
+      "payment",
+      "subscription",
+      "invoice",
+      "troubleshooting"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
-    "keywords": ["billing issues", "payment problems", "subscription", "invoice", "tesoro billing"]
+    "keywords": [
+      "billing issues",
+      "payment problems",
+      "subscription",
+      "invoice",
+      "tesoro billing"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Billing en payment problemen oplossen",
@@ -32,7 +42,6 @@
     },
     "icon": "payment"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "subscription-management",
@@ -65,17 +73,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optioneel)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select nieuwe plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: Je betaalt verschil pro-rata (meteen)</li><li>Downgrade: Credit toegepast op next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access blijft tot end of billing period</li></ol><p><strong>Note:</strong> Data blijft 30 dagen na cancellation, daarna permanent deleted.</p>"
+          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optioneel)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select nieuwe plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: Je betaalt verschil pro-rata (meteen)</li><li>Downgrade: Credit toegepast op next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access blijft tot end of billing period</li></ol><p><strong>niete:</strong> Data blijft 30 dagen na cancellation, daarna permanent deleted.</p>"
         },
         "en": {
-          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optional)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select new plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: You pay difference pro-rata (immediately)</li><li>Downgrade: Credit applied to next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access remains until end of billing period</li></ol><p><strong>Note:</strong> Data remains 30 days after cancellation, then permanently deleted.</p>"
+          "text": "<h4>Update payment method:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Click <strong>Add New Card</strong></li><li>Enter card details (encrypted secure)</li><li>Set as default</li><li>Remove old card (optional)</li></ol><h4>Change subscription plan:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Click <strong>Change Plan</strong></li><li>Select new plan (upgrade/downgrade)</li><li>Preview price change</li><li>Confirm change</li></ol><p><strong>Prorated billing:</strong></p><ul><li>Upgrade: You pay difference pro-rata (immediately)</li><li>Downgrade: Credit applied to next invoice</li></ul><h4>Cancel subscription:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Select cancellation reason (feedback)</li><li>Confirm cancellation</li><li>Access remains until end of billing period</li></ol><p><strong>niete:</strong> Data remains 30 days after cancellation, then permanently deleted.</p>"
         },
         "es": {
-          "text": "<h4>Actualizar método de pago:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Haz clic en <strong>Add New Card</strong></li><li>Ingresa detalles de tarjeta (encriptado seguro)</li><li>Establece como predeterminado</li><li>Elimina tarjeta antigua (opcional)</li></ol><h4>Cambiar plan de suscripción:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Haz clic en <strong>Change Plan</strong></li><li>Selecciona nuevo plan (actualización/degradación)</li><li>Vista previa de cambio de precio</li><li>Confirma cambio</li></ol><p><strong>Facturación prorrateada:</strong></p><ul><li>Actualización: Pagas diferencia pro-rata (inmediatamente)</li><li>Degradación: Crédito aplicado a próxima factura</li></ul><h4>Cancelar suscripción:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Selecciona razón de cancelación (retroalimentación)</li><li>Confirma cancelación</li><li>El acceso permanece hasta el final del período de facturación</li></ol><p><strong>Nota:</strong> Los datos permanecen 30 días después de la cancelación, luego se eliminan permanentemente.</p>"
+          "text": "<h4>Actualizar método de pago:</h4><ol><li>Settings → Billing → <strong>Payment Methods</strong></li><li>Haz clic en <strong>Add New Card</strong></li><li>Ingresa detalles de tarjeta (encriptado seguro)</li><li>Establece como predeterminado</li><li>Elimina tarjeta antigua (opcional)</li></ol><h4>Cambiar plan de suscripción:</h4><ol><li>Settings → Billing → <strong>Plan</strong></li><li>Haz clic en <strong>Change Plan</strong></li><li>Selecciona nuevo plan (actualización/degradación)</li><li>Vista previa de cambio de precio</li><li>Confirma cambio</li></ol><p><strong>Facturación prorrateada:</strong></p><ul><li>Actualización: Pagas diferencia pro-rata (inmediatamente)</li><li>Degradación: Crédito aplicado a próxima factura</li></ul><h4>Cancelar suscripción:</h4><ol><li>Settings → Billing → <strong>Cancel Subscription</strong></li><li>Selecciona razón de cancelación (retroalimentación)</li><li>Confirma cancelación</li><li>El acceso permanece hasta el final del período de facturación</li></ol><p><strong>nieta:</strong> Los datos permanecen 30 días después de la cancelación, luego se eliminan permanentemente.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "invoices",
@@ -96,7 +103,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "billing-support",
@@ -119,12 +125,10 @@
       }
     }
   ],
-
   "relatedArticles": [
     "common-issues-solutions",
     "getting-help-support"
   ],
-
   "faq": [
     {
       "question": {

@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "troubleshooting",
     "difficulty": "beginner",
-    "tags": ["login", "access", "password", "authentication", "account"],
+    "tags": [
+      "login",
+      "access",
+      "password",
+      "authentication",
+      "account"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=630&fit=crop",
-    "keywords": ["login problems", "password reset", "account access", "authentication issues", "tesoro login"]
+    "keywords": [
+      "login problems",
+      "password reset",
+      "account access",
+      "authentication issues",
+      "tesoro login"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Login en toegangsproblemen oplossen",
@@ -32,7 +42,6 @@
     },
     "icon": "lock_reset"
   },
-
   "sections": [
     {
       "type": "text",
@@ -47,14 +56,13 @@
           "text": "<h4>❌ Probleem: \"Email or password incorrect\"</h4><p><strong>Oplossingen:</strong></p><ol><li>Check Caps Lock is OFF</li><li>Verify email spelling (common: .com vs .nl)</li><li>Try copy-paste wachtwoord (no spaces!)</li><li>Use \"Forgot Password\" als unsure</li></ol><h4>❌ Probleem: Password reset email niet ontvangen</h4><p><strong>Check:</strong></p><ol><li><strong>Spam folder:</strong> Look for email from noreply@tesorohq.io</li><li><strong>Correct email:</strong> Use exact email van je account</li><li><strong>Wait 5 min:</strong> Email kan vertraagd zijn</li><li><strong>Try again:</strong> Click \"Resend\" link</li></ol><h4>❌ Probleem: Account locked \"Too many login attempts\"</h4><p><strong>Oplossing:</strong></p><ul><li><strong>Wait 15 minutes:</strong> Account unlocks automatisch</li><li><strong>OR:</strong> Use password reset om meteen in te loggen</li><li><strong>Contact support:</strong> Als urgent (sales call!)</li></ul>"
         },
         "en": {
-          "text": "<h4>❌ Problem: \"Email or password incorrect\"</h4><p><strong>Solutions:</strong></p><ol><li>Check Caps Lock is OFF</li><li>Verify email spelling (common: .com vs .nl)</li><li>Try copy-paste password (no spaces!)</li><li>Use \"Forgot Password\" if unsure</li></ol><h4>❌ Problem: Password reset email not received</h4><p><strong>Check:</strong></p><ol><li><strong>Spam folder:</strong> Look for email from noreply@tesorohq.io</li><li><strong>Correct email:</strong> Use exact email from your account</li><li><strong>Wait 5 min:</strong> Email may be delayed</li><li><strong>Try again:</strong> Click \"Resend\" link</li></ol><h4>❌ Problem: Account locked \"Too many login attempts\"</h4><p><strong>Solution:</strong></p><ul><li><strong>Wait 15 minutes:</strong> Account unlocks automatically</li><li><strong>OR:</strong> Use password reset to log in immediately</li><li><strong>Contact support:</strong> If urgent (sales call!)</li></ul>"
+          "text": "<h4>❌ Problem: \"Email or password incorrect\"</h4><p><strong>Solutions:</strong></p><ol><li>Check Caps Lock is OFF</li><li>Verify email spelling (common: .com vs .nl)</li><li>Try copy-paste password (no spaces!)</li><li>Use \"Forgot Password\" if unsure</li></ol><h4>❌ Problem: Password reset email niet received</h4><p><strong>Check:</strong></p><ol><li><strong>Spam folder:</strong> Look for email from noreply@tesorohq.io</li><li><strong>Correct email:</strong> Use exact email from your account</li><li><strong>Wait 5 min:</strong> Email may be delayed</li><li><strong>Try again:</strong> Click \"Resend\" link</li></ol><h4>❌ Problem: Account locked \"Too many login attempts\"</h4><p><strong>Solution:</strong></p><ul><li><strong>Wait 15 minutes:</strong> Account unlocks automatically</li><li><strong>OR:</strong> Use password reset to log in immediately</li><li><strong>Contact support:</strong> If urgent (sales call!)</li></ul>"
         },
         "es": {
           "text": "<h4>❌ Problema: \"Email o contraseña incorrecta\"</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica que Caps Lock esté APAGADO</li><li>Verifica ortografía del email (común: .com vs .nl)</li><li>Intenta copiar-pegar contraseña (¡sin espacios!)</li><li>Usa \"Forgot Password\" si no estás seguro</li></ol><h4>❌ Problema: Email de reset de contraseña no recibido</h4><p><strong>Verifica:</strong></p><ol><li><strong>Carpeta de spam:</strong> Busca email de noreply@tesorohq.io</li><li><strong>Email correcto:</strong> Usa email exacto de tu cuenta</li><li><strong>Espera 5 min:</strong> El email puede estar retrasado</li><li><strong>Intenta de nuevo:</strong> Haz clic en enlace \"Resend\"</li></ol><h4>❌ Problema: Cuenta bloqueada \"Too many login attempts\"</h4><p><strong>Solución:</strong></p><ul><li><strong>Espera 15 minutos:</strong> La cuenta se desbloquea automáticamente</li><li><strong>O:</strong> Usa reset de contraseña para iniciar sesión inmediatamente</li><li><strong>Contacta soporte:</strong> Si es urgente (¡llamada de ventas!)</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "password-management",
@@ -75,7 +83,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "security-tips",
@@ -90,7 +97,7 @@
           "text": "<ul><li><strong>Never share:</strong> Je wachtwoord met niemand (ook niet support!)</li><li><strong>Use unique password:</strong> Niet hetzelfde als andere accounts</li><li><strong>Password manager:</strong> Use 1Password, LastPass, etc.</li><li><strong>Two-factor auth:</strong> Enable in Settings (coming soon)</li><li><strong>Log out:</strong> Op gedeelde computers</li><li><strong>Suspicious activity:</strong> Contact support@tesorohq.io meteen</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Never share:</strong> Your password with anyone (not even support!)</li><li><strong>Use unique password:</strong> Not the same as other accounts</li><li><strong>Password manager:</strong> Use 1Password, LastPass, etc.</li><li><strong>Two-factor auth:</strong> Enable in Settings (coming soon)</li><li><strong>Log out:</strong> On shared computers</li><li><strong>Suspicious activity:</strong> Contact support@tesorohq.io immediately</li></ul>"
+          "text": "<ul><li><strong>Never share:</strong> Your password with anyone (niet even support!)</li><li><strong>Use unique password:</strong> niet the same as other accounts</li><li><strong>Password manager:</strong> Use 1Password, LastPass, etc.</li><li><strong>Two-factor auth:</strong> Enable in Settings (coming soon)</li><li><strong>Log out:</strong> On shared computers</li><li><strong>Suspicious activity:</strong> Contact support@tesorohq.io immediately</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Nunca compartas:</strong> Tu contraseña con nadie (¡ni siquiera soporte!)</li><li><strong>Usa contraseña única:</strong> No la misma que otras cuentas</li><li><strong>Gestor de contraseñas:</strong> Usa 1Password, LastPass, etc.</li><li><strong>Autenticación de dos factores:</strong> Habilita en Settings (próximamente)</li><li><strong>Cerrar sesión:</strong> En computadoras compartidas</li><li><strong>Actividad sospechosa:</strong> Contacta support@tesorohq.io inmediatamente</li></ul>"
@@ -98,13 +105,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "common-issues-solutions",
     "getting-help-support",
     "user-profile-settings"
   ],
-
   "faq": [
     {
       "question": {

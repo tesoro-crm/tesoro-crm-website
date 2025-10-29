@@ -7,18 +7,28 @@
     "authorId": "tesoro-team",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["registration", "getting-started", "account", "setup", "onboarding"],
+    "tags": [
+      "registration",
+      "getting-started",
+      "account",
+      "setup",
+      "onboarding"
+    ],
     "featured": true,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["tesoro crm registratie", "account aanmaken", "tesoro inloggen", "crm account setup", "nieuwe gebruiker"]
+    "keywords": [
+      "tesoro crm registratie",
+      "account aanmaken",
+      "tesoro inloggen",
+      "crm account setup",
+      "nieuwe gebruiker"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Account Aanmaken: Volledige Stap-voor-Stap Handleiding",
@@ -31,7 +41,6 @@
       "es": "Aprende cómo crear tu cuenta de Tesoro CRM en 5 minutos y estar listo para comenzar con tus primeros deals."
     }
   },
-
   "sections": [
     {
       "type": "callout",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "registration-process",
@@ -75,7 +83,7 @@
               "text": "<p>Ga naar <strong>app.tesorohq.io/register</strong> en vul in:</p><ul><li><strong>First name:</strong> Je voornaam</li><li><strong>Last name:</strong> Je achternaam</li><li><strong>Email:</strong> Je zakelijke emailadres</li></ul><p><strong>Tip:</strong> Gebruik je zakelijke email - je kunt dit later niet meer wijzigen zonder support hulp.</p><p>Klik op <strong>'Next'</strong> om door te gaan.</p>"
             },
             "en": {
-              "text": "<p>Go to <strong>app.tesorohq.io/register</strong> and fill in:</p><ul><li><strong>First name:</strong> Your first name</li><li><strong>Last name:</strong> Your last name</li><li><strong>Email:</strong> Your business email address</li></ul><p><strong>Tip:</strong> Use your business email - you cannot change this later without support help.</p><p>Click <strong>'Next'</strong> to continue.</p>"
+              "text": "<p>Go to <strong>app.tesorohq.io/register</strong> and fill in:</p><ul><li><strong>First name:</strong> Your first name</li><li><strong>Last name:</strong> Your last name</li><li><strong>Email:</strong> Your business email address</li></ul><p><strong>Tip:</strong> Use your business email - you canniet change this later without support help.</p><p>Click <strong>'Next'</strong> to continue.</p>"
             },
             "es": {
               "text": "<p>Ve a <strong>app.tesorohq.io/register</strong> y completa:</p><ul><li><strong>First name:</strong> Tu nombre</li><li><strong>Last name:</strong> Tu apellido</li><li><strong>Email:</strong> Tu dirección de email empresarial</li></ul><p><strong>Tip:</strong> Usa tu email empresarial - no puedes cambiar esto más tarde sin ayuda de soporte.</p><p>Haz clic en <strong>'Next'</strong> para continuar.</p>"
@@ -156,7 +164,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "success-message",
@@ -178,7 +185,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "troubleshooting",
@@ -192,7 +198,7 @@
           "text": "<p><strong>Geen verificatiecode ontvangen?</strong></p><ol><li>Check je spam/junk folder</li><li>Wacht 2-3 minuten (emails kunnen vertraagd zijn)</li><li>Klik op 'Resend code'</li><li>Controleer of je emailadres correct is gespeld</li></ol><p><strong>Wachtwoord voldoet niet aan eisen?</strong></p><p>Zorg ervoor dat je wachtwoord alle vereiste karakters bevat. Gebruik een combinatie van hoofdletters, kleine letters, cijfers EN speciale tekens.</p><p><strong>Registratie knop reageert niet?</strong></p><p>Dit gebeurt als niet alle velden correct zijn ingevuld. Controleer of:</p><ul><li>Alle verplichte velden (*) zijn ingevuld</li><li>Je emailadres geldig is</li><li>Beide wachtwoorden identiek zijn</li></ul>"
         },
         "en": {
-          "text": "<p><strong>No verification code received?</strong></p><ol><li>Check your spam/junk folder</li><li>Wait 2-3 minutes (emails can be delayed)</li><li>Click 'Resend code'</li><li>Verify your email address is spelled correctly</li></ol><p><strong>Password doesn't meet requirements?</strong></p><p>Make sure your password contains all required characters. Use a combination of uppercase, lowercase, numbers AND special characters.</p><p><strong>Registration button not responding?</strong></p><p>This happens when not all fields are filled correctly. Check if:</p><ul><li>All required fields (*) are filled in</li><li>Your email address is valid</li><li>Both passwords are identical</li></ul>"
+          "text": "<p><strong>No verification code received?</strong></p><ol><li>Check your spam/junk folder</li><li>Wait 2-3 minutes (emails can be delayed)</li><li>Click 'Resend code'</li><li>Verify your email address is spelled correctly</li></ol><p><strong>Password doesn't meet requirements?</strong></p><p>Make sure your password contains all required characters. Use a combination of uppercase, lowercase, numbers AND special characters.</p><p><strong>Registration button niet responding?</strong></p><p>This happens when niet all fields are filled correctly. Check if:</p><ul><li>All required fields (*) are filled in</li><li>Your email address is valid</li><li>Both passwords are identical</li></ul>"
         },
         "es": {
           "text": "<p><strong>¿No recibiste el código de verificación?</strong></p><ol><li>Revisa tu carpeta de spam/correo no deseado</li><li>Espera 2-3 minutos (los emails pueden retrasarse)</li><li>Haz clic en 'Resend code'</li><li>Verifica que tu dirección de email esté escrita correctamente</li></ol><p><strong>¿La contraseña no cumple los requisitos?</strong></p><p>Asegúrate de que tu contraseña contenga todos los caracteres requeridos. Usa una combinación de mayúsculas, minúsculas, números Y caracteres especiales.</p><p><strong>¿El botón de registro no responde?</strong></p><p>Esto sucede cuando no todos los campos están completados correctamente. Verifica si:</p><ul><li>Todos los campos obligatorios (*) están completados</li><li>Tu dirección de email es válida</li><li>Ambas contraseñas son idénticas</li></ul>"
@@ -200,13 +206,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "basic-contact-management-tutorial",
     "property-management-tutorial",
     "your-first-5k-deal-7-days"
   ],
-
   "faq": [
     {
       "question": {

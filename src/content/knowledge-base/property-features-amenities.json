@@ -7,18 +7,29 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "features", "amenities", "specifications", "equipment"],
+    "tags": [
+      "properties",
+      "features",
+      "amenities",
+      "specifications",
+      "equipment"
+    ],
     "featured": true,
     "readingTime": 10,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop",
-    "keywords": ["property features", "amenities", "specifications", "equipment", "Tesoro features", "property details"]
+    "keywords": [
+      "property features",
+      "amenities",
+      "specifications",
+      "equipment",
+      "Tesoro features",
+      "property details"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Complete gids voor property features en amenities in Tesoro",
@@ -32,7 +43,6 @@
     },
     "icon": "tune"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +65,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "basic-specifications",
@@ -66,17 +75,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Bedrooms en bathrooms</h5><p>Het aantal bedrooms en bathrooms zijn de meest essentiële features voor property matching.</p><ul><li><strong>Bedrooms:</strong> Aantal slaapkamers (kan 0 zijn voor studio's)</li><li><strong>Bathrooms:</strong> Aantal badkamers (kan 0 zijn)</li><li><strong>Half bathrooms:</strong> Toiletruimtes zonder douche/bad</li></ul><p><strong>Matching impact:</strong> Leads kunnen specifiek zoeken op bedroom count (bijvoorbeeld \"3+ bedrooms\"), dus accurate input is cruciaal voor goede matching.</p><h5>Oppervlaktes</h5><ul><li><strong>Total area:</strong> Totale oppervlakte inclusief alle ruimtes</li><li><strong>Built area:</strong> Bebouwde oppervlakte</li><li><strong>Useful area:</strong> Gebruiksoppervlakte (excl. muren)</li><li><strong>Plot size:</strong> Kavelgrootte (voor huizen met tuin)</li></ul><p>Deze waarden worden gebruikt voor filtering en zijn zichtbaar op alle portals.</p>"
+          "text": "<h5>Bedrooms en bathrooms</h5><p>Het aantal bedrooms en bathrooms zijn de meest essentiële features voor property matching.</p><ul><li><strong>Bedrooms:</strong> Aantal slaapkamers (kan 0 zijn voor studio's)</li><li><strong>Bathrooms:</strong> Aantal badkamers (kan 0 zijn)</li><li><strong>Halve badkamers:</strong> Toiletruimtes zonder douche/bad</li></ul><p><strong>Matching impact:</strong> Leads kunnen specifiek zoeken op bedroom count (bijvoorbeeld \"3+ bedrooms\"), dus accurate input is cruciaal voor goede matching.</p><h5>Oppervlaktes</h5><ul><li><strong>Totale oppervlakte:</strong> Totale oppervlakte inclusief alle ruimtes</li><li><strong>Bebouwde oppervlakte:</strong> Bebouwde oppervlakte</li><li><strong>Nuttige oppervlakte:</strong> Gebruiksoppervlakte (excl. muren)</li><li><strong>Perceelgrootte:</strong> Kavelgrootte (voor huizen met tuin)</li></ul><p>Deze waarden worden gebruikt voor filtering en zijn zichtbaar op alle portals.</p>"
         },
         "en": {
-          "text": "<h5>Bedrooms and bathrooms</h5><p>The number of bedrooms and bathrooms are the most essential features for property matching.</p><ul><li><strong>Bedrooms:</strong> Number of bedrooms (can be 0 for studios)</li><li><strong>Bathrooms:</strong> Number of bathrooms (can be 0)</li><li><strong>Half bathrooms:</strong> Toilet rooms without shower/bath</li></ul><p><strong>Matching impact:</strong> Leads can specifically search for bedroom count (e.g., \"3+ bedrooms\"), so accurate input is crucial for good matching.</p><h5>Surface areas</h5><ul><li><strong>Total area:</strong> Total surface including all spaces</li><li><strong>Built area:</strong> Built surface area</li><li><strong>Useful area:</strong> Usable surface (excl. walls)</li><li><strong>Plot size:</strong> Plot size (for houses with garden)</li></ul><p>These values are used for filtering and are visible on all portals.</p>"
+          "text": "<h5>Bedrooms and bathrooms</h5><p>The number of bedrooms and bathrooms are the most essential features for property matching.</p><ul><li><strong>Bedrooms:</strong> Number of bedrooms (can be 0 for studios)</li><li><strong>Bathrooms:</strong> Number of bathrooms (can be 0)</li><li><strong>Halve badkamers:</strong> Toilet rooms without shower/bath</li></ul><p><strong>Matching impact:</strong> Leads can specifically search for bedroom count (e.g., \"3+ bedrooms\"), so accurate input is crucial for good matching.</p><h5>Surface areas</h5><ul><li><strong>Totale oppervlakte:</strong> Total surface including all spaces</li><li><strong>Bebouwde oppervlakte:</strong> Built surface area</li><li><strong>Nuttige oppervlakte:</strong> Usable surface (excl. walls)</li><li><strong>Perceelgrootte:</strong> Plot size (for houses with garden)</li></ul><p>These values are used for filtering and are visible on all portals.</p>"
         },
         "es": {
           "text": "<h5>Dormitorios y baños</h5><p>El número de dormitorios y baños son las características más esenciales para matching de propiedades.</p><ul><li><strong>Dormitorios:</strong> Número de dormitorios (puede ser 0 para estudios)</li><li><strong>Baños:</strong> Número de baños (puede ser 0)</li><li><strong>Medios baños:</strong> Aseos sin ducha/bañera</li></ul><p><strong>Impacto en matching:</strong> Los leads pueden buscar específicamente por número de dormitorios (ej., \"3+ dormitorios\"), por lo que la entrada precisa es crucial para buen matching.</p><h5>Superficies</h5><ul><li><strong>Área total:</strong> Superficie total incluyendo todos los espacios</li><li><strong>Área construida:</strong> Superficie construida</li><li><strong>Área útil:</strong> Superficie útil (excl. paredes)</li><li><strong>Tamaño de parcela:</strong> Tamaño de parcela (para casas con jardín)</li></ul><p>Estos valores se usan para filtrado y son visibles en todos los portales.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "outdoor-features",
@@ -97,7 +105,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "systems-equipment",
@@ -118,7 +125,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "building-features",
@@ -139,7 +145,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "furnishing-energy",
@@ -160,7 +165,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -172,10 +176,10 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Volg deze richtlijnen voor optimale resultaten:</strong></p><ol><li><strong>Wees compleet:</strong> Vul alle relevante features in, zelfs als het \"No\" is (bijvoorbeeld \"Pool: No\"). Dit verbetert matching accuracy.</li><li><strong>Consistentie:</strong> Gebruik dezelfde terminologie voor alle properties (niet \"garage\" in één property en \"parking\" in een ander).</li><li><strong>Verify energy labels:</strong> Zorg dat energy certificates actueel en correct zijn voor compliance.</li><li><strong>Update regularly:</strong> Review features bij status changes (bijvoorbeeld na renovaties).</li><li><strong>Use custom fields wisely:</strong> Voor zeer specifieke features die niet in standaard lijst zitten.</li></ol>"
+          "text": "<p><strong>Volg deze richtlijnen voor optimale resultaten:</strong></p><ol><li><strong>Wees compleet:</strong> Vul alle relevante features in, zelfs als het \"No\" is (bijvoorbeeld \"Pool: No\"). Dit verbetert matching accuracy.</li><li><strong>Consistentie:</strong> Gebruik dezelfde terminologie voor alle properties (niet \"garage\" in één property en \"parking\" in een ander).</li><li><strong>Verify energy labels:</strong> Zorg dat energy certificates actueel en correct zijn voor compliance.</li><li><strong>Update regelmatig:</strong> Review features bij status changes (bijvoorbeeld na renovaties).</li><li><strong>Use custom fields wisely:</strong> Voor zeer specifieke features die niet in standaard lijst zitten.</li></ol>"
         },
         "en": {
-          "text": "<p><strong>Follow these guidelines for optimal results:</strong></p><ol><li><strong>Be complete:</strong> Fill in all relevant features, even if it's \"No\" (e.g., \"Pool: No\"). This improves matching accuracy.</li><li><strong>Consistency:</strong> Use the same terminology for all properties (not \"garage\" in one property and \"parking\" in another).</li><li><strong>Verify energy labels:</strong> Ensure energy certificates are current and correct for compliance.</li><li><strong>Update regularly:</strong> Review features during status changes (e.g., after renovations).</li><li><strong>Use custom fields wisely:</strong> For very specific features not in standard list.</li></ol>"
+          "text": "<p><strong>Follow these guidelines for optimal results:</strong></p><ol><li><strong>Be complete:</strong> Fill in all relevant features, even if it's \"No\" (e.g., \"Pool: No\"). This improves matching accuracy.</li><li><strong>Consistency:</strong> Use the same terminology for all properties (niet \"garage\" in one property and \"parking\" in aniether).</li><li><strong>Verify energy labels:</strong> Ensure energy certificates are current and correct for compliance.</li><li><strong>Update regelmatig:</strong> Review features during status changes (e.g., after renovations).</li><li><strong>Use custom fields wisely:</strong> For very specific features niet in standard list.</li></ol>"
         },
         "es": {
           "text": "<p><strong>Sigue estas pautas para resultados óptimos:</strong></p><ol><li><strong>Sé completo:</strong> Rellena todas las características relevantes, incluso si es \"No\" (ej., \"Piscina: No\"). Esto mejora la precisión del matching.</li><li><strong>Consistencia:</strong> Usa la misma terminología para todas las propiedades (no \"garaje\" en una propiedad y \"parking\" en otra).</li><li><strong>Verifica etiquetas energéticas:</strong> Asegúrate de que los certificados energéticos estén actualizados y sean correctos para cumplimiento.</li><li><strong>Actualiza regularmente:</strong> Revisa características durante cambios de estado (ej., después de renovaciones).</li><li><strong>Usa campos personalizados sabiamente:</strong> Para características muy específicas que no están en la lista estándar.</li></ol>"
@@ -183,14 +187,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "adding-properties-guide",
     "property-pricing-valuation",
     "property-ai-matching"
   ],
-
   "faq": [
     {
       "question": {
@@ -200,14 +202,14 @@
       },
       "answer": {
         "nl": "Niet verplicht, maar aanbevolen. Hoe meer features je invult, hoe beter de AI-matching werkt en hoe gedetailleerder kopers kunnen filteren. Focus op de features die relevant zijn voor jouw market (bijvoorbeeld pool en AC in Spanje, heating in Nederland).",
-        "en": "Not required, but recommended. The more features you fill in, the better the AI-matching works and the more detailed buyers can filter. Focus on features relevant to your market (e.g., pool and AC in Spain, heating in Netherlands).",
+        "en": "niet required, but recommended. The more features you fill in, the better the AI-matching works and the more detailed buyers can filter. Focus on features relevant to your market (e.g., pool and AC in Spain, heating in Netherlands).",
         "es": "No es obligatorio, pero recomendado. Cuantas más características rellenes, mejor funciona el matching con IA y más detallados pueden filtrar los compradores. Enfócate en características relevantes para tu mercado (ej., piscina y AC en España, calefacción en Holanda)."
       }
     },
     {
       "question": {
         "nl": "Kan ik custom features toevoegen die niet in de standaard lijst staan?",
-        "en": "Can I add custom features that are not in the standard list?",
+        "en": "Can I add custom features that are niet in the standard list?",
         "es": "¿Puedo añadir características personalizadas que no están en la lista estándar?"
       },
       "answer": {

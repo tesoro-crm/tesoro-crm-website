@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "beginner",
-    "tags": ["contacts", "tasks", "reminders", "follow-up", "productivity"],
+    "tags": [
+      "contacts",
+      "tasks",
+      "reminders",
+      "follow-up",
+      "productivity"
+    ],
     "featured": false,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["contact tasks tesoro", "set reminders crm", "follow-up tasks", "task management", "contact reminders"]
+    "keywords": [
+      "contact tasks tesoro",
+      "set reminders crm",
+      "follow-up tasks",
+      "task management",
+      "contact reminders"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Taken en Herinneringen voor Contacten",
@@ -32,7 +42,6 @@
     },
     "icon": "task"
   },
-
   "sections": [
     {
       "type": "text",
@@ -44,38 +53,36 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Wat zijn Taken?</h3><p>Taken zijn to-do items gekoppeld aan contacten:</p><ul><li>Follow-up call</li><li>Send documents</li><li>Schedule viewing</li><li>Check-in with client</li><li>Update information</li></ul><h3>Taak Aanmaken</h3><ol><li>Open een contact</li><li>Ga naar <strong>Tasks</strong> tab</li><li>Klik <strong>+ Create Task</strong></li><li>Vul in:  <ul><li><strong>Title:</strong> Korte beschrijving</li><li><strong>Description:</strong> Gedetailleerde informatie</li><li><strong>Due date:</strong> Deadline</li><li><strong>Priority:</strong> High, Medium, Low</li><li><strong>Assigned to:</strong> Teamlid verantwoordelijk</li><li><strong>Reminder:</strong> Wanneer notificatie sturen</li></ul></li><li>Klik <strong>Save</strong></li></ol><h3>Taak Statussen</h3><ul><li><strong>Open:</strong> Nog niet gestart</li><li><strong>In Progress:</strong> Bezig</li><li><strong>Completed:</strong> Afgerond</li><li><strong>Cancelled:</strong> Niet meer relevant</li></ul>"
+          "text": "<h3>Wat zijn Taken?</h3><p>Taken zijn to-do items gekoppeld aan contacten:</p><ul><li>Follow-up call</li><li>Send documents</li><li>Schedule viewing</li><li>Check-in with client</li><li>Update information</li></ul><h3>Taak Aanmaken</h3><ol><li>Open een contact</li><li>Ga naar <strong>Tasks</strong> tab</li><li>Klik <strong>+ Create Task</strong></li><li>Vul in:  <ul><li><strong>Title:</strong> Korte beschrijving</li><li><strong>Description:</strong> Gedetailleerde informatie</li><li><strong>Due date:</strong> Deadline</li><li><strong>Priority:</strong> High, Medium, Low</li><li><strong>Assigned to:</strong> Teamlid verantwoordelijk</li><li><strong>Reminder:</strong> Wanneer nietificatie sturen</li></ul></li><li>Klik <strong>Save</strong></li></ol><h3>Taak Statussen</h3><ul><li><strong>Open:</strong> Nog niet gestart</li><li><strong>In Progress:</strong> Bezig</li><li><strong>Completed:</strong> Afgerond</li><li><strong>Cancelled:</strong> Niet meer relevant</li></ul>"
         },
         "en": {
-          "text": "<h3>What are Tasks?</h3><p>Tasks are to-do items linked to contacts:</p><ul><li>Follow-up call</li><li>Send documents</li><li>Schedule viewing</li><li>Check-in with client</li><li>Update information</li></ul><h3>Creating a Task</h3><ol><li>Open a contact</li><li>Go to <strong>Tasks</strong> tab</li><li>Click <strong>+ Create Task</strong></li><li>Fill in:  <ul><li><strong>Title:</strong> Short description</li><li><strong>Description:</strong> Detailed information</li><li><strong>Due date:</strong> Deadline</li><li><strong>Priority:</strong> High, Medium, Low</li><li><strong>Assigned to:</strong> Responsible team member</li><li><strong>Reminder:</strong> When to send notification</li></ul></li><li>Click <strong>Save</strong></li></ol><h3>Task Statuses</h3><ul><li><strong>Open:</strong> Not yet started</li><li><strong>In Progress:</strong> Working on it</li><li><strong>Completed:</strong> Finished</li><li><strong>Cancelled:</strong> No longer relevant</li></ul>"
+          "text": "<h3>What are Tasks?</h3><p>Tasks are to-do items linked to contacts:</p><ul><li>Follow-up call</li><li>Send documents</li><li>Schedule viewing</li><li>Check-in with client</li><li>Update information</li></ul><h3>Creating a Task</h3><ol><li>Open a contact</li><li>Go to <strong>Tasks</strong> tab</li><li>Click <strong>+ Create Task</strong></li><li>Fill in:  <ul><li><strong>Title:</strong> Short description</li><li><strong>Description:</strong> Detailed information</li><li><strong>Due date:</strong> Deadline</li><li><strong>Priority:</strong> High, Medium, Low</li><li><strong>Assigned to:</strong> Responsible teamlid</li><li><strong>Reminder:</strong> When to send nietification</li></ul></li><li>Click <strong>Save</strong></li></ol><h3>Task Statuses</h3><ul><li><strong>Open:</strong> niet yet started</li><li><strong>In Progress:</strong> Working on it</li><li><strong>Completed:</strong> Finished</li><li><strong>Cancelled:</strong> No longer relevant</li></ul>"
         },
         "es": {
-          "text": "<h3>¿Qué son las Tareas?</h3><p>Las tareas son elementos de tareas pendientes vinculados a contactos:</p><ul><li>Llamada de seguimiento</li><li>Enviar documentos</li><li>Programar visita</li><li>Verificar con cliente</li><li>Actualizar información</li></ul><h3>Crear una Tarea</h3><ol><li>Abrir un contacto</li><li>Ir a pestaña <strong>Tasks</strong></li><li>Hacer clic en <strong>+ Create Task</strong></li><li>Completar:  <ul><li><strong>Título:</strong> Descripción corta</li><li><strong>Descripción:</strong> Información detallada</li><li><strong>Fecha límite:</strong> Plazo</li><li><strong>Prioridad:</strong> Alta, Media, Baja</li><li><strong>Asignado a:</strong> Miembro del equipo responsable</li><li><strong>Recordatorio:</strong> Cuándo enviar notificación</li></ul></li><li>Hacer clic en <strong>Save</strong></li></ol><h3>Estados de Tareas</h3><ul><li><strong>Abierto:</strong> Aún no iniciado</li><li><strong>En Progreso:</strong> Trabajando en ello</li><li><strong>Completado:</strong> Terminado</li><li><strong>Cancelado:</strong> Ya no relevante</li></ul>"
+          "text": "<h3>¿Qué son las Tareas?</h3><p>Las tareas son elementos de tareas pendientes vinculados a contactos:</p><ul><li>Llamada de seguimiento</li><li>Enviar documentos</li><li>Programar visita</li><li>Verificar con cliente</li><li>Actualizar información</li></ul><h3>Crear una Tarea</h3><ol><li>Abrir un contacto</li><li>Ir a pestaña <strong>Tasks</strong></li><li>Hacer clic en <strong>+ Create Task</strong></li><li>Completar:  <ul><li><strong>Título:</strong> Descripción corta</li><li><strong>Descripción:</strong> Información detallada</li><li><strong>Fecha límite:</strong> Plazo</li><li><strong>Prioridad:</strong> Alta, Media, Baja</li><li><strong>Asignado a:</strong> Miembro del equipo responsable</li><li><strong>Recordatorio:</strong> Cuándo enviar nietificación</li></ul></li><li>Hacer clic en <strong>Save</strong></li></ol><h3>Estados de Tareas</h3><ul><li><strong>Abierto:</strong> Aún no iniciado</li><li><strong>En Progreso:</strong> Trabajando en ello</li><li><strong>Completado:</strong> Terminado</li><li><strong>Cancelado:</strong> Ya no relevante</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
-      "id": "reminders-notifications",
+      "id": "reminders-nietifications",
       "title": {
-        "nl": "Herinneringen en Notificaties",
-        "en": "Reminders and Notifications",
-        "es": "Recordatorios y Notificaciones"
+        "nl": "Herinneringen en nietificaties",
+        "en": "Reminders and nietifications",
+        "es": "Recordatorios y nietificaciones"
       },
       "content": {
         "nl": {
-          "text": "<h3>Reminder Opties</h3><p>Stel herinneringen in voor taken:</p><ul><li><strong>No reminder:</strong> Geen automatische notificatie</li><li><strong>At due time:</strong> Op exacte deadline</li><li><strong>15 min before:</strong> 15 minuten van tevoren</li><li><strong>1 hour before:</strong> 1 uur van tevoren</li><li><strong>1 day before:</strong> Dag van tevoren</li><li><strong>Custom:</strong> Kies zelf tijd</li></ul><h3>Notificatie Types</h3><ul><li><strong>In-app notification:</strong> Badge in Tesoro (altijd)</li><li><strong>Email notification:</strong> Email reminder (optioneel)</li><li><strong>SMS notification:</strong> SMS reminder (optioneel)</li></ul><h3>Notificaties Beheren</h3><p>Ga naar <strong>Settings > Notifications</strong> om te configureren:</p><ul><li>Welke notificaties je wilt ontvangen</li><li>Via welk kanaal (in-app, email, SMS)</li><li>Notificatie tijden</li></ul>"
+          "text": "<h3>Reminder Opties</h3><p>Stel herinneringen in voor taken:</p><ul><li><strong>No reminder:</strong> Geen automatische nietificatie</li><li><strong>At due time:</strong> Op exacte deadline</li><li><strong>15 min before:</strong> 15 minuten van tevoren</li><li><strong>1 hour before:</strong> 1 uur van tevoren</li><li><strong>1 day before:</strong> Dag van tevoren</li><li><strong>Custom:</strong> Kies zelf tijd</li></ul><h3>nietificatie Types</h3><ul><li><strong>In-app nietification:</strong> Badge in Tesoro (altijd)</li><li><strong>Email nietification:</strong> Email reminder (optioneel)</li><li><strong>SMS nietification:</strong> SMS reminder (optioneel)</li></ul><h3>nietificaties Beheren</h3><p>Ga naar <strong>Settings > nietifications</strong> om te configureren:</p><ul><li>Welke nietificaties je wilt ontvangen</li><li>Via welk kanaal (in-app, email, SMS)</li><li>nietificatie tijden</li></ul>"
         },
         "en": {
-          "text": "<h3>Reminder Options</h3><p>Set reminders for tasks:</p><ul><li><strong>No reminder:</strong> No automatic notification</li><li><strong>At due time:</strong> At exact deadline</li><li><strong>15 min before:</strong> 15 minutes in advance</li><li><strong>1 hour before:</strong> 1 hour in advance</li><li><strong>1 day before:</strong> Day in advance</li><li><strong>Custom:</strong> Choose your own time</li></ul><h3>Notification Types</h3><ul><li><strong>In-app notification:</strong> Badge in Tesoro (always)</li><li><strong>Email notification:</strong> Email reminder (optional)</li><li><strong>SMS notification:</strong> SMS reminder (optional)</li></ul><h3>Managing Notifications</h3><p>Go to <strong>Settings > Notifications</strong> to configure:</p><ul><li>Which notifications you want to receive</li><li>Via which channel (in-app, email, SMS)</li><li>Notification times</li></ul>"
+          "text": "<h3>Reminder Options</h3><p>Set reminders for tasks:</p><ul><li><strong>No reminder:</strong> No automatic nietification</li><li><strong>At due time:</strong> At exact deadline</li><li><strong>15 min before:</strong> 15 minutes in advance</li><li><strong>1 hour before:</strong> 1 hour in advance</li><li><strong>1 day before:</strong> Day in advance</li><li><strong>Custom:</strong> Choose your own time</li></ul><h3>nietification Types</h3><ul><li><strong>In-app nietification:</strong> Badge in Tesoro (always)</li><li><strong>Email nietification:</strong> Email reminder (optional)</li><li><strong>SMS nietification:</strong> SMS reminder (optional)</li></ul><h3>Managing nietifications</h3><p>Go to <strong>Settings > nietifications</strong> to configure:</p><ul><li>Which nietifications you want to receive</li><li>Via which channel (in-app, email, SMS)</li><li>nietification times</li></ul>"
         },
         "es": {
-          "text": "<h3>Opciones de Recordatorio</h3><p>Establecer recordatorios para tareas:</p><ul><li><strong>Sin recordatorio:</strong> Sin notificación automática</li><li><strong>A la hora límite:</strong> En el plazo exacto</li><li><strong>15 min antes:</strong> 15 minutos de antelación</li><li><strong>1 hora antes:</strong> 1 hora de antelación</li><li><strong>1 día antes:</strong> Día de antelación</li><li><strong>Personalizado:</strong> Elige tu propio tiempo</li></ul><h3>Tipos de Notificación</h3><ul><li><strong>Notificación en la app:</strong> Insignia en Tesoro (siempre)</li><li><strong>Notificación por email:</strong> Recordatorio por email (opcional)</li><li><strong>Notificación SMS:</strong> Recordatorio SMS (opcional)</li></ul><h3>Gestionar Notificaciones</h3><p>Ve a <strong>Settings > Notifications</strong> para configurar:</p><ul><li>Qué notificaciones quieres recibir</li><li>Por qué canal (in-app, email, SMS)</li><li>Tiempos de notificación</li></ul>"
+          "text": "<h3>Opciones de Recordatorio</h3><p>Establecer recordatorios para tareas:</p><ul><li><strong>Sin recordatorio:</strong> Sin nietificación automática</li><li><strong>A la hora límite:</strong> En el plazo exacto</li><li><strong>15 min antes:</strong> 15 minutos de antelación</li><li><strong>1 hora antes:</strong> 1 hora de antelación</li><li><strong>1 día antes:</strong> Día de antelación</li><li><strong>Personalizado:</strong> Elige tu propio tiempo</li></ul><h3>Tipos de nietificación</h3><ul><li><strong>nietificación en la app:</strong> Insignia en Tesoro (siempre)</li><li><strong>nietificación por email:</strong> Recordatorio por email (opcional)</li><li><strong>nietificación SMS:</strong> Recordatorio SMS (opcional)</li></ul><h3>Gestionar nietificaciones</h3><p>Ve a <strong>Settings > nietifications</strong> para configurar:</p><ul><li>Qué nietificaciones quieres recibir</li><li>Por qué canal (in-app, email, SMS)</li><li>Tiempos de nietificación</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "task-best-practices",
@@ -87,10 +94,10 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Specifieke titels:</strong> 'Call John about viewing' niet 'Follow-up'</li><li><strong>Realistische deadlines:</strong> Geef jezelf genoeg tijd</li><li><strong>Prioriteit toekennen:</strong> Gebruik High voor urgente taken</li><li><strong>Daily review:</strong> Check je taken elke ochtend</li><li><strong>Complete tasks:</strong> Markeer als completed zodra klaar</li><li><strong>Recurring tasks:</strong> Voor regelmatige check-ins</li></ul>"
+          "text": "<ul><li><strong>Specifieke titels:</strong> 'Call John about viewing' niet 'Follow-up'</li><li><strong>Realistische deadlines:</strong> Geef jezelf genoeg tijd</li><li><strong>Prioriteit toekennen:</strong> Gebruik High voor urgente taken</li><li><strong>Dagelijkse review:</strong> Check je taken elke ochtend</li><li><strong>Voltooi taken:</strong> Markeer als completed zodra klaar</li><li><strong>Terugkerende taken:</strong> Voor regelmatige check-ins</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Specific titles:</strong> 'Call John about viewing' not 'Follow-up'</li><li><strong>Realistic deadlines:</strong> Give yourself enough time</li><li><strong>Assign priority:</strong> Use High for urgent tasks</li><li><strong>Daily review:</strong> Check your tasks every morning</li><li><strong>Complete tasks:</strong> Mark as completed as soon as done</li><li><strong>Recurring tasks:</strong> For regular check-ins</li></ul>"
+          "text": "<ul><li><strong>Specifieke titels:</strong> 'Call John about viewing' niet 'Follow-up'</li><li><strong>Realistische deadlines:</strong> Geef jezelf genoeg tijd</li><li><strong>Wijs prioriteit toe:</strong> Gebruik Hoog voor urgente taken</li><li><strong>Dagelijkse review:</strong> Check your tasks elke ochtend</li><li><strong>Voltooi taken:</strong> Markeer als voltooid zodra klaar</li><li><strong>Terugkerende taken:</strong> Voor regelmatige check-ins</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Títulos específicos:</strong> 'Llamar a John sobre visita' no 'Seguimiento'</li><li><strong>Plazos realistas:</strong> Date tiempo suficiente</li><li><strong>Asignar prioridad:</strong> Usar Alta para tareas urgentes</li><li><strong>Revisión diaria:</strong> Verificar tus tareas cada mañana</li><li><strong>Completar tareas:</strong> Marcar como completado tan pronto como esté listo</li><li><strong>Tareas recurrentes:</strong> Para verificaciones regulares</li></ul>"
@@ -98,25 +105,23 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-notes-history",
     "contact-email-integration",
     "contact-best-practices"
   ],
-
   "faq": [
     {
       "question": {
         "nl": "Kan ik taken toewijzen aan andere teamleden?",
-        "en": "Can I assign tasks to other team members?",
+        "en": "Can I assign tasks to other teamlids?",
         "es": "¿Puedo asignar tareas a otros miembros del equipo?"
       },
       "answer": {
-        "nl": "Ja, selecteer het teamlid in het 'Assigned to' veld bij het aanmaken van de taak. Zij ontvangen automatisch een notificatie.",
-        "en": "Yes, select the team member in the 'Assigned to' field when creating the task. They'll automatically receive a notification.",
-        "es": "Sí, selecciona el miembro del equipo en el campo 'Asignado a' al crear la tarea. Recibirán automáticamente una notificación."
+        "nl": "Ja, selecteer het teamlid in het 'Assigned to' veld bij het aanmaken van de taak. Zij ontvangen automatisch een nietificatie.",
+        "en": "Yes, select the teamlid in the 'Assigned to' field when creating the task. They'll automatically receive a nietification.",
+        "es": "Sí, selecciona el miembro del equipo en el campo 'Asignado a' al crear la tarea. Recibirán automáticamente una nietificación."
       }
     },
     {

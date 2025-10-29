@@ -5,20 +5,28 @@
     "publishDate": "2024-10-23",
     "updatedAt": "2024-10-23T12:45:00Z",
     "authorId": "carlos-martinez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["deals", "pipeline", "sales"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales"
+    ],
     "featured": true,
     "readingTime": 9,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
-    "keywords": ["deal management", "sales best practices", "deal tips", "pipeline management", "sales success"]
+    "keywords": [
+      "deal management",
+      "sales best practices",
+      "deal tips",
+      "pipeline management",
+      "sales success"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Best practices voor effectief deal management",
@@ -26,20 +34,19 @@
       "es": "Mejores prácticas para gestión efectiva de deals"
     },
     "description": {
-      "nl": "Proven strategies en tips voor maximale deal conversie, efficient pipeline management, en sustained sales success.",
+      "nl": "Bewezen strategieën en tips voor maximale deal conversie, efficiënt pipeline management en aanhoudend verkoopsucces.",
       "en": "Proven strategies and tips for maximum deal conversion, efficient pipeline management, and sustained sales success.",
       "es": "Estrategias probadas y consejos para máxima conversión de deals, gestión eficiente del pipeline y éxito sostenido en ventas."
     },
     "icon": "workspace_premium"
   },
-
   "sections": [
     {
       "type": "text",
       "id": "intro",
       "content": {
         "nl": {
-          "text": "<p>Effectief deal management requires meer dan alleen het invoeren van data. Het vereist discipline, consistency, strategic thinking, en continuous improvement. Deze guide compileert proven best practices van top-performing agents.</p>"
+          "text": "<p>Effectief deal management vereist meer dan alleen het invoeren van data. Het vraagt om discipline, consistentie, strategisch denken en continue verbetering. Deze gids verzamelt bewezen best practices van top-presterende makelaars.</p>"
         },
         "en": {
           "text": "<p>Effective deal management requires more than just entering data. It requires discipline, consistency, strategic thinking, and continuous improvement. This guide compiles proven best practices from top-performing agents.</p>"
@@ -49,18 +56,17 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "qualification",
       "title": {
-        "nl": "1. Rigorous lead qualification",
+        "nl": "1. Grondige lead kwalificatie",
         "en": "1. Rigorous Lead Qualification",
         "es": "1. Calificación rigurosa de leads"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Why it matters:</strong> Better qualification = higher win rates, less wasted time.</p><p><strong>Qualification checklist:</strong></p><ul><li><strong>Budget verified:</strong> Pre-approval of financial capability confirmed</li><li><strong>Timeline clear:</strong> Urgency en realistic timeframe understood</li><li><strong>Motivation strong:</strong> Clear reasons voor buying/selling</li><li><strong>Decision maker identified:</strong> Who makes final decisions</li><li><strong>Criteria defined:</strong> Must-haves vs nice-to-haves documented</li></ul><p><strong>Red flags to watch:</strong></p><ul><li>Vague budget ('just looking')</li><li>No clear timeline</li><li>Shopping multiple agents simultaneously without commitment</li><li>Unrealistic expectations (price, features)</li><li>Poor communication responsiveness</li></ul><p><strong>Action:</strong> Move unqualified leads to 'On Hold' of 'Nurture' status instead van active pipeline.</p>"
+          "text": "<p><strong>Waarom het belangrijk is:</strong> Betere kwalificatie betekent hogere conversie en minder verspilde tijd.</p><p><strong>Kwalificatie checklist:</strong></p><ul><li><strong>Budget geverifieerd:</strong> Vooraf goedkeuring of financiële capaciteit bevestigd</li><li><strong>Tijdlijn duidelijk:</strong> Urgentie en realistische tijdsbestek begrepen</li><li><strong>Motivatie sterk:</strong> Duidelijke redenen voor kopen of verkopen</li><li><strong>Beslisser geïdentificeerd:</strong> Wie neemt de uiteindelijke beslissingen</li><li><strong>Criteria gedefinieerd:</strong> Must-haves versus nice-to-haves gedocumenteerd</li></ul><p><strong>Rode vlaggen om op te letten:</strong></p><ul><li>Vaag budget ('gewoon even kijken')</li><li>Geen duidelijke tijdlijn</li><li>Vergelijkt meerdere makelaars tegelijk zonder commitment</li><li>Onrealistische verwachtingen (prijs, kenmerken)</li><li>Slechte communicatie responsiviteit</li></ul><p><strong>Actie:</strong> Verplaats ongekwalificeerde leads naar status 'Wachtend' of 'Verzorgen' in plaats van actieve pipeline.</p>"
         },
         "en": {
           "text": "<p><strong>Why it matters:</strong> Better qualification = higher win rates, less wasted time.</p><p><strong>Qualification checklist:</strong></p><ul><li><strong>Budget verified:</strong> Pre-approval or financial capability confirmed</li><li><strong>Timeline clear:</strong> Urgency and realistic timeframe understood</li><li><strong>Motivation strong:</strong> Clear reasons for buying/selling</li><li><strong>Decision maker identified:</strong> Who makes final decisions</li><li><strong>Criteria defined:</strong> Must-haves vs nice-to-haves documented</li></ul><p><strong>Red flags to watch:</strong></p><ul><li>Vague budget ('just looking')</li><li>No clear timeline</li><li>Shopping multiple agents simultaneously without commitment</li><li>Unrealistic expectations (price, features)</li><li>Poor communication responsiveness</li></ul><p><strong>Action:</strong> Move unqualified leads to 'On Hold' or 'Nurture' status instead of active pipeline.</p>"
@@ -70,18 +76,17 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "communication",
       "title": {
-        "nl": "2. Proactive en timely communication",
+        "nl": "2. Proactieve en tijdige communicatie",
         "en": "2. Proactive and Timely Communication",
         "es": "2. Comunicación proactiva y oportuna"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Response time standards:</strong></p><ul><li>New leads: Respond binnen 1 hour (ideally < 15 min)</li><li>Active deals: Respond binnen 4 hours during business hours</li><li>After viewings: Follow up within 24 hours</li><li>Price negotiations: Respond same business day</li></ul><p><strong>Communication frequency:</strong></p><ul><li>Early stages (Lead, Qualification): Weekly touchpoint</li><li>Active stages (Viewing, Negotiation): 2-3× per week</li><li>Closing stage: Daily updates indien needed</li></ul><p><strong>Multi-channel approach:</strong></p><ul><li>Use client's preferred communication method</li><li>Email voor documentation, phone voor important discussions</li><li>WhatsApp voor quick updates (indien appropriate)</li><li>Always document important conversations in CRM</li></ul>"
+          "text": "<p><strong>Responstijd standaarden:</strong></p><ul><li>Nieuwe leads: Reageer binnen 1 uur (ideaal binnen 15 minuten)</li><li>Actieve deals: Reageer binnen 4 uur tijdens kantooruren</li><li>Na bezichtigingen: Follow-up binnen 24 uur</li><li>Prijs onderhandelingen: Reageer dezelfde werkdag</li></ul><p><strong>Communicatie frequentie:</strong></p><ul><li>Vroege fases (Lead, Kwalificatie): Wekelijks contactmoment</li><li>Actieve fases (Bezichtiging, Onderhandeling): 2-3 keer per week</li><li>Sluitingsfase: Dagelijkse updates indien nodig</li></ul><p><strong>Multi-channel aanpak:</strong></p><ul><li>Gebruik de voorkeur communicatiemethode van de klant</li><li>Email voor documentatie, telefoon voor belangrijke gesprekken</li><li>WhatsApp voor snelle updates (indien passend)</li><li>Documenteer altijd belangrijke gesprekken in het CRM</li></ul>"
         },
         "en": {
           "text": "<p><strong>Response time standards:</strong></p><ul><li>New leads: Respond within 1 hour (ideally < 15 min)</li><li>Active deals: Respond within 4 hours during business hours</li><li>After viewings: Follow up within 24 hours</li><li>Price negotiations: Respond same business day</li></ul><p><strong>Communication frequency:</strong></p><ul><li>Early stages (Lead, Qualification): Weekly touchpoint</li><li>Active stages (Viewing, Negotiation): 2-3× per week</li><li>Closing stage: Daily updates if needed</li></ul><p><strong>Multi-channel approach:</strong></p><ul><li>Use client's preferred communication method</li><li>Email for documentation, phone for important discussions</li><li>WhatsApp for quick updates (if appropriate)</li><li>Always document important conversations in CRM</li></ul>"
@@ -91,39 +96,37 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "pipeline-hygiene",
       "title": {
-        "nl": "3. Pipeline hygiene en maintenance",
+        "nl": "3. Pipeline hygiëne en onderhoud",
         "en": "3. Pipeline Hygiene and Maintenance",
         "es": "3. Higiene y mantenimiento del pipeline"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Daily habits:</strong></p><ul><li>Review Kanban board elke morning</li><li>Update deal statuses within 24 hours van major events</li><li>Log all client interactions same day</li><li>Complete assigned tasks promptly</li></ul><p><strong>Weekly reviews:</strong></p><ul><li>Review all active deals voor stagnation (>7 days in stage)</li><li>Follow up on deals without recent activity</li><li>Update closing dates based op current status</li><li>Clean up notes en ensure documentation complete</li></ul><p><strong>Monthly deep cleaning:</strong></p><ul><li>Mark truly lost deals as Lost (niet leave in pipeline)</li><li>Move long-term prospects to Nurture status</li><li>Archive closed deals (Won en Lost)</li><li>Review en update deal values for accuracy</li></ul>"
+          "text": "<p><strong>Dagelijkse gewoontes:</strong></p><ul><li>Bekijk Kanban board elke ochtend</li><li>Update deal statussen binnen 24 uur na belangrijke gebeurtenissen</li><li>Log alle klant interacties dezelfde dag</li><li>Voltooi toegewezen taken snel</li></ul><p><strong>Wekelijkse reviews:</strong></p><ul><li>Bekijk alle actieve deals op stagnatie (meer dan 7 dagen in fase)</li><li>Follow-up bij deals zonder recente activiteit</li><li>Update sluitingsdatums op basis van huidige status</li><li>Ruim notities op en zorg voor complete documentatie</li></ul><p><strong>Maandelijkse grondige schoonmaak:</strong></p><ul><li>Markeer echt verloren deals als Verloren (laat niet in pipeline staan)</li><li>Verplaats lange-termijn prospects naar status Verzorgen</li><li>Archiveer afgesloten deals (Gewonnen en Verloren)</li><li>Bekijk en update deal waardes voor nauwkeurigheid</li></ul>"
         },
         "en": {
           "text": "<p><strong>Daily habits:</strong></p><ul><li>Review Kanban board every morning</li><li>Update deal statuses within 24 hours of major events</li><li>Log all client interactions same day</li><li>Complete assigned tasks promptly</li></ul><p><strong>Weekly reviews:</strong></p><ul><li>Review all active deals for stagnation (>7 days in stage)</li><li>Follow up on deals without recent activity</li><li>Update closing dates based on current status</li><li>Clean up notes and ensure documentation complete</li></ul><p><strong>Monthly deep cleaning:</strong></p><ul><li>Mark truly lost deals as Lost (don't leave in pipeline)</li><li>Move long-term prospects to Nurture status</li><li>Archive closed deals (Won and Lost)</li><li>Review and update deal values for accuracy</li></ul>"
         },
         "es": {
-          "text": "<p><strong>Hábitos diarios:</strong></p><ul><li>Revisa tablero Kanban cada mañana</li><li>Actualiza estados de deals dentro de 24 horas de eventos mayores</li><li>Registra todas las interacciones con clientes el mismo día</li><li>Completa tareas asignadas rápidamente</li></ul><p><strong>Revisiones semanales:</strong></p><ul><li>Revisa todos los deals activos por estancamiento (>7 días en etapa)</li><li>Haz seguimiento de deals sin actividad reciente</li><li>Actualiza fechas de cierre basado en estado actual</li><li>Limpia notas y asegura documentación completa</li></ul><p><strong>Limpieza profunda mensual:</strong></p><ul><li>Marca deals verdaderamente perdidos como Perdidos (no dejes en pipeline)</li><li>Mueve prospectos a largo plazo a estado Nutrir</li><li>Archiva deals cerrados (Ganados y Perdidos)</li><li>Revisa y actualiza valores de deals para precisión</li></ul>"
+          "text": "<p><strong>Hábitos diarios:</strong></p><ul><li>Revisa tablero Kanban cada mañana</li><li>Actualiza estados de deals dentro de 24 horas de eventos mayores</li><li>Registra todas las interacciones con clientes el mismo día</li><li>Completa tareas asignadas rápidamente</li></ul><p><strong>Revisiones semanales:</strong></p><ul><li>Revisa todos los deals activos por estancamiento (>7 días en etapa)</li><li>Haz seguimiento de deals sin actividad reciente</li><li>Actualiza fechas de cierre basado en estado actual</li><li>Limpia nietas y asegura documentación completa</li></ul><p><strong>Limpieza profunda mensual:</strong></p><ul><li>Marca deals verdaderamente perdidos como Perdidos (no dejes en pipeline)</li><li>Mueve prospectos a largo plazo a estado Nutrir</li><li>Archiva deals cerrados (Ganados y Perdidos)</li><li>Revisa y actualiza valores de deals para precisión</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "ai-property-matching",
       "title": {
-        "nl": "4. Leverage AI property matching",
+        "nl": "4. Gebruik AI woningmatching",
         "en": "4. Leverage AI Property Matching",
         "es": "4. Aprovechar coincidencia de propiedades IA"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Maximale gebruik van AI:</strong></p><ul><li>Always run AI suggestions voor nieuwe deals</li><li>Review minimaal top 5 suggested properties</li><li>Provide feedback on suggestions (accept/reject) to improve algorithm</li><li>Re-run suggestions when buyer criteria change</li><li>Use AI-generated match scores to prioritize showings</li></ul><p><strong>Beyond AI suggestions:</strong></p><ul><li>Add manual properties based op local knowledge</li><li>Consider off-market opportunities</li><li>Think creatively about buyer needs</li><li>Don't limit to exact criteria - suggest adjacent options</li></ul>"
+          "text": "<p><strong>Maximaal gebruik van AI:</strong></p><ul><li>Voer altijd AI suggesties uit voor nieuwe deals</li><li>Bekijk minimaal de top 5 gesuggereerde woningen</li><li>Geef feedback op suggesties (accepteren/afwijzen) om het algoritme te verbeteren</li><li>Voer suggesties opnieuw uit wanneer koper criteria veranderen</li><li>Gebruik AI-gegenereerde match scores om bezichtigingen te prioriteren</li></ul><p><strong>Verder dan AI suggesties:</strong></p><ul><li>Voeg handmatige woningen toe op basis van lokale kennis</li><li>Overweeg off-market mogelijkheden</li><li>Denk creatief over koper behoeften</li><li>Beperk je niet tot exacte criteria - stel aangrenzende opties voor</li></ul>"
         },
         "en": {
           "text": "<p><strong>Maximize AI usage:</strong></p><ul><li>Always run AI suggestions for new deals</li><li>Review at least top 5 suggested properties</li><li>Provide feedback on suggestions (accept/reject) to improve algorithm</li><li>Re-run suggestions when buyer criteria change</li><li>Use AI-generated match scores to prioritize showings</li></ul><p><strong>Beyond AI suggestions:</strong></p><ul><li>Add manual properties based on local knowledge</li><li>Consider off-market opportunities</li><li>Think creatively about buyer needs</li><li>Don't limit to exact criteria - suggest adjacent options</li></ul>"
@@ -133,39 +136,37 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "team-collaboration",
       "title": {
-        "nl": "5. Effective team collaboration",
+        "nl": "5. Effectieve team samenwerking",
         "en": "5. Effective Team Collaboration",
         "es": "5. Colaboración efectiva en equipo"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>When to involve team:</strong></p><ul><li>High-value deals (>€500K): Add manager voor oversight</li><li>Complex negotiations: Include experienced negotiator</li><li>Legal/financial complexity: Add specialist</li><li>Multiple properties: Share viewing load</li></ul><p><strong>Collaboration best practices:</strong></p><ul><li>Clear role definition voor each team member</li><li>Use @mentions voor specific action items</li><li>Regular team sync meetings (weekly)</li><li>Shared notes (not private) unless truly sensitive</li><li>Celebrate team wins publicly</li></ul>"
+          "text": "<p><strong>Wanneer het team betrekken:</strong></p><ul><li>Hoge-waarde deals (meer dan €500K): Voeg manager toe voor toezicht</li><li>Complexe onderhandelingen: Betrek ervaren onderhandelaar</li><li>Juridische of financiële complexiteit: Voeg specialist toe</li><li>Meerdere woningen: Verdeel bezichtigingslast</li></ul><p><strong>Samenwerking best practices:</strong></p><ul><li>Duidelijke rolomschrijving voor elk teamlid</li><li>Gebruik @vermeldingen voor specifieke actiepunten</li><li>Regelmatige team sync meetings (wekelijks)</li><li>Gedeelde notities (niet privé) tenzij echt gevoelig</li><li>Vier team successen publiekelijk</li></ul>"
         },
         "en": {
-          "text": "<p><strong>When to involve team:</strong></p><ul><li>High-value deals (>€500K): Add manager for oversight</li><li>Complex negotiations: Include experienced negotiator</li><li>Legal/financial complexity: Add specialist</li><li>Multiple properties: Share viewing load</li></ul><p><strong>Collaboration best practices:</strong></p><ul><li>Clear role definition for each team member</li><li>Use @mentions for specific action items</li><li>Regular team sync meetings (weekly)</li><li>Shared notes (not private) unless truly sensitive</li><li>Celebrate team wins publicly</li></ul>"
+          "text": "<p><strong>When to involve team:</strong></p><ul><li>High-value deals (>€500K): Add manager for oversight</li><li>Complex negotiations: Include experienced negotiator</li><li>Legal/financial complexity: Add specialist</li><li>Multiple properties: Share viewing load</li></ul><p><strong>Collaboration best practices:</strong></p><ul><li>Clear role definition for each team member</li><li>Use @mentions for specific action items</li><li>Regular team sync meetings (weekly)</li><li>Shared notes (niet private) unless truly sensitive</li><li>Celebrate team wins publicly</li></ul>"
         },
         "es": {
-          "text": "<p><strong>Cuándo involucrar al equipo:</strong></p><ul><li>Deals de alto valor (>€500K): Agrega gerente para supervisión</li><li>Negociaciones complejas: Incluye negociador experimentado</li><li>Complejidad legal/financiera: Agrega especialista</li><li>Múltiples propiedades: Comparte carga de visitas</li></ul><p><strong>Mejores prácticas de colaboración:</strong></p><ul><li>Definición clara de rol para cada miembro del equipo</li><li>Usa @menciones para elementos de acción específicos</li><li>Reuniones regulares de sincronización del equipo (semanalmente)</li><li>Notas compartidas (no privadas) a menos que sean verdaderamente sensibles</li><li>Celebra victorias del equipo públicamente</li></ul>"
+          "text": "<p><strong>Cuándo involucrar al equipo:</strong></p><ul><li>Deals de alto valor (>€500K): Agrega gerente para supervisión</li><li>Negociaciones complejas: Incluye negociador experimentado</li><li>Complejidad legal/financiera: Agrega especialista</li><li>Múltiples propiedades: Comparte carga de visitas</li></ul><p><strong>Mejores prácticas de colaboración:</strong></p><ul><li>Definición clara de rol para cada miembro del equipo</li><li>Usa @menciones para elementos de acción específicos</li><li>Reuniones regulares de sincronización del equipo (semanalmente)</li><li>nietas compartidas (no privadas) a menos que sean verdaderamente sensibles</li><li>Celebra victorias del equipo públicamente</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "continuous-improvement",
       "title": {
-        "nl": "6. Data-driven continuous improvement",
+        "nl": "6. Data-gedreven continue verbetering",
         "en": "6. Data-Driven Continuous Improvement",
         "es": "6. Mejora continua basada en datos"
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Monthly analysis:</strong></p><ul><li>Review win/loss rates en identify patterns</li><li>Analyze time-to-close voor different deal types</li><li>Examine loss reasons en adjust strategy</li><li>Compare forecast accuracy en refine methodology</li></ul><p><strong>Quarterly deep dive:</strong></p><ul><li>Full pipeline health assessment</li><li>Agent performance review (individual en team)</li><li>Process bottleneck identification</li><li>Goal setting voor next quarter</li></ul><p><strong>Learning from losses:</strong></p><ul><li>Conduct post-mortem on significant lost deals</li><li>Document lessons learned</li><li>Share insights met team</li><li>Update processes based op findings</li></ul>"
+          "text": "<p><strong>Maandelijkse analyse:</strong></p><ul><li>Bekijk gewonnen/verloren ratio's en identificeer patronen</li><li>Analyseer tijd-tot-sluiting voor verschillende deal types</li><li>Onderzoek verlies redenen en pas strategie aan</li><li>Vergelijk voorspelling nauwkeurigheid en verfijn methodologie</li></ul><p><strong>Driemaandelijkse diepe duik:</strong></p><ul><li>Volledige pipeline gezondheid beoordeling</li><li>Makelaar prestatie review (individueel en team)</li><li>Proces bottleneck identificatie</li><li>Doelstelling voor volgend kwartaal</li></ul><p><strong>Leren van verliezen:</strong></p><ul><li>Voer post-mortem uit op significante verloren deals</li><li>Documenteer geleerde lessen</li><li>Deel inzichten met team</li><li>Update processen op basis van bevindingen</li></ul>"
         },
         "en": {
           "text": "<p><strong>Monthly analysis:</strong></p><ul><li>Review win/loss rates and identify patterns</li><li>Analyze time-to-close for different deal types</li><li>Examine loss reasons and adjust strategy</li><li>Compare forecast accuracy and refine methodology</li></ul><p><strong>Quarterly deep dive:</strong></p><ul><li>Full pipeline health assessment</li><li>Agent performance review (individual and team)</li><li>Process bottleneck identification</li><li>Goal setting for next quarter</li></ul><p><strong>Learning from losses:</strong></p><ul><li>Conduct post-mortem on significant lost deals</li><li>Document lessons learned</li><li>Share insights with team</li><li>Update processes based on findings</li></ul>"
@@ -175,22 +176,21 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "golden-rules",
       "variant": "success",
       "title": {
-        "nl": "10 Golden rules voor deal success",
+        "nl": "10 gouden regels voor deal succes",
         "en": "10 Golden Rules for Deal Success",
         "es": "10 reglas de oro para éxito en deals"
       },
       "content": {
         "nl": {
-          "text": "<ol><li><strong>Qualify rigorously</strong> - Better qualification = higher win rates</li><li><strong>Respond quickly</strong> - Speed wins deals</li><li><strong>Document everything</strong> - If it's not in CRM, it didn't happen</li><li><strong>Use AI suggestions</strong> - Let technology help</li><li><strong>Update status daily</strong> - Keep pipeline current</li><li><strong>Follow up persistently</strong> - Most deals need 5-7 touchpoints</li><li><strong>Be proactive</strong> - Anticipate client needs</li><li><strong>Collaborate effectively</strong> - Use team strengths</li><li><strong>Learn from data</strong> - Analyze en improve</li><li><strong>Celebrate wins</strong> - Acknowledge success</li></ol>"
+          "text": "<ol><li><strong>Kwalificeer grondig</strong> - Betere kwalificatie betekent hogere conversie</li><li><strong>Reageer snel</strong> - Snelheid wint deals</li><li><strong>Documenteer alles</strong> - Als het niet in het CRM staat, is het niet gebeurd</li><li><strong>Gebruik AI suggesties</strong> - Laat technologie helpen</li><li><strong>Update status dagelijks</strong> - Houd pipeline actueel</li><li><strong>Follow-up persistent</strong> - Meeste deals hebben 5-7 contactmomenten nodig</li><li><strong>Wees proactief</strong> - Anticipeer op klant behoeften</li><li><strong>Werk effectief samen</strong> - Gebruik team sterke punten</li><li><strong>Leer van data</strong> - Analyseer en verbeter</li><li><strong>Vier successen</strong> - Erken prestaties</li></ol>"
         },
         "en": {
-          "text": "<ol><li><strong>Qualify rigorously</strong> - Better qualification = higher win rates</li><li><strong>Respond quickly</strong> - Speed wins deals</li><li><strong>Document everything</strong> - If it's not in CRM, it didn't happen</li><li><strong>Use AI suggestions</strong> - Let technology help</li><li><strong>Update status daily</strong> - Keep pipeline current</li><li><strong>Follow up persistently</strong> - Most deals need 5-7 touchpoints</li><li><strong>Be proactive</strong> - Anticipate client needs</li><li><strong>Collaborate effectively</strong> - Use team strengths</li><li><strong>Learn from data</strong> - Analyze and improve</li><li><strong>Celebrate wins</strong> - Acknowledge success</li></ol>"
+          "text": "<ol><li><strong>Qualify rigorously</strong> - Better qualification = higher win rates</li><li><strong>Respond quickly</strong> - Speed wins deals</li><li><strong>Document everything</strong> - If it's niet in CRM, it didn't happen</li><li><strong>Use AI suggestions</strong> - Let technology help</li><li><strong>Update status daily</strong> - Keep pipeline current</li><li><strong>Follow up persistently</strong> - Most deals need 5-7 touchpoints</li><li><strong>Be proactive</strong> - Anticipate client needs</li><li><strong>Collaborate effectively</strong> - Use team strengths</li><li><strong>Learn from data</strong> - Analyze and improve</li><li><strong>Celebrate wins</strong> - Acknowledge success</li></ol>"
         },
         "es": {
           "text": "<ol><li><strong>Calificar rigurosamente</strong> - Mejor calificación = mayores tasas de ganancia</li><li><strong>Responder rápidamente</strong> - La velocidad gana deals</li><li><strong>Documentar todo</strong> - Si no está en CRM, no sucedió</li><li><strong>Usar sugerencias IA</strong> - Deja que la tecnología ayude</li><li><strong>Actualizar estado diariamente</strong> - Mantén pipeline actualizado</li><li><strong>Hacer seguimiento persistentemente</strong> - La mayoría de deals necesitan 5-7 puntos de contacto</li><li><strong>Ser proactivo</strong> - Anticipa necesidades del cliente</li><li><strong>Colaborar efectivamente</strong> - Usa fortalezas del equipo</li><li><strong>Aprender de datos</strong> - Analiza y mejora</li><li><strong>Celebrar victorias</strong> - Reconoce el éxito</li></ol>"
@@ -198,22 +198,20 @@
       }
     }
   ],
-
   "relatedArticles": [
     "deal-pipeline-overview",
     "deal-reporting-metrics",
     "deal-team-collaboration"
   ],
-
   "faq": [
     {
       "question": {
-        "nl": "Wat is de belangrijkste factor voor deal success?",
+        "nl": "Wat is de belangrijkste factor voor deal succes?",
         "en": "What is the most important factor for deal success?",
         "es": "¿Cuál es el factor más importante para el éxito en deals?"
       },
       "answer": {
-        "nl": "Lead qualification is de most important factor. High-quality, well-qualified leads hebben dramatisch higher win rates (40-50%) vergeleken met poorly qualified leads (<10%). Spend time qualifying properly upfront.",
+        "nl": "Lead kwalificatie is de belangrijkste factor. Hoge-kwaliteit, goed gekwalificeerde leads hebben dramatisch hogere conversie percentages (40-50%) vergeleken met slecht gekwalificeerde leads (minder dan 10%). Besteed tijd aan het grondig kwalificeren vooraf.",
         "en": "Lead qualification is the most important factor. High-quality, well-qualified leads have dramatically higher win rates (40-50%) compared to poorly qualified leads (<10%). Spend time qualifying properly upfront.",
         "es": "La calificación de leads es el factor más importante. Los leads de alta calidad bien calificados tienen tasas de ganancia dramáticamente más altas (40-50%) en comparación con leads mal calificados (<10%). Dedica tiempo a calificar adecuadamente desde el principio."
       }

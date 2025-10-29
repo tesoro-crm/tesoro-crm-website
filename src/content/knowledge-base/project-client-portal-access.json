@@ -7,22 +7,32 @@
     "authorId": "elena-rodriguez",
     "category": "projects",
     "difficulty": "beginner",
-    "tags": ["projects", "client-portal", "buyers", "updates", "communication"],
+    "tags": [
+      "projects",
+      "client-portal",
+      "buyers",
+      "updates",
+      "communication"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&h=630&fit=crop",
-    "keywords": ["client portal", "buyer access", "construction updates", "project portal", "tesoro portal"]
+    "keywords": [
+      "client portal",
+      "buyer access",
+      "construction updates",
+      "project portal",
+      "tesoro portal"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Client portal: geef buyers toegang tot project updates",
-        "en": "Client Portal: Give Buyers Access to Project Updates",
+      "en": "Client Portal: Give Buyers Access to Project Updates",
       "es": "Portal del cliente: dar acceso a compradores a actualizaciones del proyecto"
     },
     "description": {
@@ -32,7 +42,6 @@
     },
     "icon": "dashboard"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "setup-access",
@@ -97,7 +105,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "buyer-view",
@@ -118,7 +125,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "benefits",
@@ -141,14 +147,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "projects-overview-guide",
     "project-progress-tracking",
     "client-portal-setup-guide",
     "creating-development-projects"
   ],
-
   "faq": [
     {
       "question": {

@@ -7,18 +7,30 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "location", "mapping", "mapbox", "geocoding", "coordinates"],
+    "tags": [
+      "properties",
+      "location",
+      "mapping",
+      "mapbox",
+      "geocoding",
+      "coordinates"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=630&fit=crop",
-    "keywords": ["property location", "mapping", "Mapbox", "geocoding", "coordinates", "area information"]
+    "keywords": [
+      "property location",
+      "mapping",
+      "Mapbox",
+      "geocoding",
+      "coordinates",
+      "area information"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property location en mapping in Tesoro CRM",
@@ -32,7 +44,6 @@
     },
     "icon": "location_on"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -48,14 +59,13 @@
           "text": "<p>Location is de belangrijkste factor bij property search. Buyers zoeken eerst op location, dan op type en prijs.</p><p><strong>Tesoro's location features:</strong></p><ul><li>Automatic geocoding met Mapbox (latitude/longitude)</li><li>Interactive maps op property detail pages</li><li>Location-based lead matching (preferred areas)</li><li>Nearby amenities tracking (metro, schools, shops)</li><li>Area information en neighborhood data</li><li>Portal sync met accurate coordinates</li></ul>"
         },
         "en": {
-          "text": "<p>Location is the most important factor in property search. Buyers search first by location, then by type and price.</p><p><strong>Tesoro's location features:</strong></p><ul><li>Automatic geocoding with Mapbox (latitude/longitude)</li><li>Interactive maps on property detail pages</li><li>Location-based lead matching (preferred areas)</li><li>Nearby amenities tracking (metro, schools, shops)</li><li>Area information and neighborhood data</li><li>Portal sync with accurate coordinates</li></ul>"
+          "text": "<p>Location is de belangrijkste factor in property search. Buyers search first by location, then by type and price.</p><p><strong>Tesoro's location features:</strong></p><ul><li>Automatic geocoding with Mapbox (latitude/longitude)</li><li>Interactive maps on property detail pages</li><li>Location-based lead matching (preferred areas)</li><li>Nearby amenities tracking (metro, schools, shops)</li><li>Area information and neighborhood data</li><li>Portal sync with accurate coordinates</li></ul>"
         },
         "es": {
           "text": "<p>La ubicación es el factor más importante en la búsqueda de propiedades. Los compradores buscan primero por ubicación, luego por tipo y precio.</p><p><strong>Características de ubicación de Tesoro:</strong></p><ul><li>Geocodificación automática con Mapbox (latitud/longitud)</li><li>Mapas interactivos en páginas de detalle de propiedad</li><li>Matching de leads basado en ubicación (áreas preferidas)</li><li>Seguimiento de amenidades cercanas (metro, escuelas, tiendas)</li><li>Información de área y datos de vecindario</li><li>Sincronización de portales con coordenadas precisas</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "adding-address",
@@ -76,7 +86,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "mapbox-integration",
@@ -97,7 +106,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "area-information",
@@ -118,7 +126,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "location-matching",
@@ -139,7 +146,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "location-tips",
@@ -162,19 +168,17 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "adding-properties-guide",
     "property-search-filters",
     "property-ai-matching"
   ],
-
   "faq": [
     {
       "question": {
         "nl": "Wat als Mapbox het address niet kan vinden?",
-        "en": "What if Mapbox cannot find the address?",
+        "en": "What if Mapbox canniet find the address?",
         "es": "¿Qué pasa si Mapbox no puede encontrar la dirección?"
       },
       "answer": {

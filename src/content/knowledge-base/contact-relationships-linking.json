@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T22:35:00Z",
     "authorId": "elena-rodriguez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "beginner",
-    "tags": ["contacts", "relationships", "linking", "deals", "properties"],
+    "tags": [
+      "contacts",
+      "relationships",
+      "linking",
+      "deals",
+      "properties"
+    ],
     "featured": false,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["link contacts tesoro", "contact relationships", "connect contacts deals", "link properties", "contact connections"]
+    "keywords": [
+      "link contacts tesoro",
+      "contact relationships",
+      "connect contacts deals",
+      "link properties",
+      "contact connections"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Contacten Koppelen: Relaties en Verbindingen Beheren",
@@ -32,7 +42,6 @@
     },
     "icon": "link"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "linking-deals",
@@ -102,7 +110,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "linking-properties",
@@ -113,17 +120,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Waarom Woningen Koppelen?</h3><p>Wijs woningen toe aan contacten om:</p><ul><li>Te laten zien welke woningen een klant heeft bekeken</li><li>Interesse te registreren zonder direct een deal aan te maken</li><li>AI matching resultaten op te slaan</li><li>Viewing geschiedenis bij te houden</li></ul><h3>Woningen Toewijzen</h3><p><strong>Vanuit Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Klik <strong>+ Link Property</strong></li><li>Zoek en selecteer woning(en)</li><li>Markeer interesse level: High, Medium, Low</li><li>Voeg notitie toe (optioneel)</li></ol><p><strong>Vanuit Property:</strong></p><ol><li>Open woning → <strong>Interested Contacts</strong></li><li>Klik <strong>+ Add Contact</strong></li><li>Selecteer contact(en)</li></ol><h3>AI Property Matching</h3><p>Tesoro kan automatisch woningen suggereren op basis van:</p><ul><li>Budget range van contact</li><li>Locatie voorkeuren</li><li>Property type voorkeuren</li><li>Bedrooms/bathrooms vereisten</li></ul><p>Klik op <strong>Suggest Properties</strong> in het contact om AI matches te zien.</p>"
+          "text": "<h3>Waarom Woningen Koppelen?</h3><p>Wijs woningen toe aan contacten om:</p><ul><li>Te laten zien welke woningen een klant heeft bekeken</li><li>Interesse te registreren zonder direct een deal aan te maken</li><li>AI matching resultaten op te slaan</li><li>Viewing geschiedenis bij te houden</li></ul><h3>Woningen Toewijzen</h3><p><strong>Vanuit Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Klik <strong>+ Link Property</strong></li><li>Zoek en selecteer woning(en)</li><li>Markeer interesse level: High, Medium, Low</li><li>Voeg nietitie toe (optioneel)</li></ol><p><strong>Vanuit Property:</strong></p><ol><li>Open woning → <strong>Interested Contacts</strong></li><li>Klik <strong>+ Add Contact</strong></li><li>Selecteer contact(en)</li></ol><h3>AI Property Matching</h3><p>Tesoro kan automatisch woningen suggereren op basis van:</p><ul><li>Budget range van contact</li><li>Locatie voorkeuren</li><li>Property type voorkeuren</li><li>Bedrooms/bathrooms vereisten</li></ul><p>Klik op <strong>Suggest Properties</strong> in het contact om AI matches te zien.</p>"
         },
         "en": {
-          "text": "<h3>Why Link Properties?</h3><p>Assign properties to contacts to:</p><ul><li>Show which properties a client has viewed</li><li>Register interest without creating a deal immediately</li><li>Save AI matching results</li><li>Track viewing history</li></ul><h3>Assigning Properties</h3><p><strong>From Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Click <strong>+ Link Property</strong></li><li>Search and select property(ies)</li><li>Mark interest level: High, Medium, Low</li><li>Add note (optional)</li></ol><p><strong>From Property:</strong></p><ol><li>Open property → <strong>Interested Contacts</strong></li><li>Click <strong>+ Add Contact</strong></li><li>Select contact(s)</li></ol><h3>AI Property Matching</h3><p>Tesoro can automatically suggest properties based on:</p><ul><li>Contact's budget range</li><li>Location preferences</li><li>Property type preferences</li><li>Bedrooms/bathrooms requirements</li></ul><p>Click <strong>Suggest Properties</strong> in the contact to see AI matches.</p>"
+          "text": "<h3>Why Link Properties?</h3><p>Assign properties to contacts to:</p><ul><li>Show which properties a client has viewed</li><li>Register interest without creating a deal immediately</li><li>Save AI matching results</li><li>Track viewing history</li></ul><h3>Assigning Properties</h3><p><strong>From Contact:</strong></p><ol><li>Open contact → <strong>Properties</strong> tab</li><li>Click <strong>+ Link Property</strong></li><li>Search and select property(ies)</li><li>Mark interest level: High, Medium, Low</li><li>Add niete (optional)</li></ol><p><strong>From Property:</strong></p><ol><li>Open property → <strong>Interested Contacts</strong></li><li>Click <strong>+ Add Contact</strong></li><li>Select contact(s)</li></ol><h3>AI Property Matching</h3><p>Tesoro can automatically suggest properties based on:</p><ul><li>Contact's budget range</li><li>Location preferences</li><li>Property type preferences</li><li>Bedrooms/bathrooms requirements</li></ul><p>Click <strong>Suggest Properties</strong> in the contact to see AI matches.</p>"
         },
         "es": {
-          "text": "<h3>¿Por qué Vincular Propiedades?</h3><p>Asignar propiedades a contactos para:</p><ul><li>Mostrar qué propiedades ha visto un cliente</li><li>Registrar interés sin crear un deal inmediatamente</li><li>Guardar resultados de matching de IA</li><li>Seguir historial de visitas</li></ul><h3>Asignar Propiedades</h3><p><strong>Desde Contacto:</strong></p><ol><li>Abrir contacto → pestaña <strong>Properties</strong></li><li>Hacer clic en <strong>+ Link Property</strong></li><li>Buscar y seleccionar propiedad(es)</li><li>Marcar nivel de interés: High, Medium, Low</li><li>Agregar nota (opcional)</li></ol><p><strong>Desde Propiedad:</strong></p><ol><li>Abrir propiedad → <strong>Interested Contacts</strong></li><li>Hacer clic en <strong>+ Add Contact</strong></li><li>Seleccionar contacto(s)</li></ol><h3>Matching de Propiedades con IA</h3><p>Tesoro puede sugerir automáticamente propiedades basándose en:</p><ul><li>Rango de presupuesto del contacto</li><li>Preferencias de ubicación</li><li>Preferencias de tipo de propiedad</li><li>Requisitos de dormitorios/baños</li></ul><p>Haz clic en <strong>Suggest Properties</strong> en el contacto para ver matches de IA.</p>"
+          "text": "<h3>¿Por qué Vincular Propiedades?</h3><p>Asignar propiedades a contactos para:</p><ul><li>Mostrar qué propiedades ha visto un cliente</li><li>Registrar interés sin crear un deal inmediatamente</li><li>Guardar resultados de matching de IA</li><li>Seguir historial de visitas</li></ul><h3>Asignar Propiedades</h3><p><strong>Desde Contacto:</strong></p><ol><li>Abrir contacto → pestaña <strong>Properties</strong></li><li>Hacer clic en <strong>+ Link Property</strong></li><li>Buscar y seleccionar propiedad(es)</li><li>Marcar nivel de interés: High, Medium, Low</li><li>Agregar nieta (opcional)</li></ol><p><strong>Desde Propiedad:</strong></p><ol><li>Abrir propiedad → <strong>Interested Contacts</strong></li><li>Hacer clic en <strong>+ Add Contact</strong></li><li>Seleccionar contacto(s)</li></ol><h3>Matching de Propiedades con IA</h3><p>Tesoro puede sugerir automáticamente propiedades basándose en:</p><ul><li>Rango de presupuesto del contacto</li><li>Preferencias de ubicación</li><li>Preferencias de tipo de propiedad</li><li>Requisitos de dormitorios/baños</li></ul><p>Haz clic en <strong>Suggest Properties</strong> en el contacto para ver matches de IA.</p>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "family-linking",
@@ -146,14 +152,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "creating-contacts-step-by-step",
     "deal-pipeline-complete-guide",
     "property-management-tutorial"
   ],
-
   "faq": [
     {
       "question": {

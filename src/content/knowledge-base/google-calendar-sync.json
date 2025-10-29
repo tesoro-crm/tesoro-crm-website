@@ -5,24 +5,34 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "integrations",
+    "category": "calendar",
     "difficulty": "intermediate",
-    "tags": ["integrations", "google-calendar", "calendar", "scheduling", "meetings"],
+    "tags": [
+      "integrations",
+      "google-calendar",
+      "calendar",
+      "scheduling",
+      "meetings"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["google calendar integration", "calendar sync tesoro", "property viewing scheduling", "crm calendar sync", "google calendar crm"]
+    "keywords": [
+      "google calendar integration",
+      "calendar sync tesoro",
+      "property viewing scheduling",
+      "crm calendar sync",
+      "google calendar crm"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Google Calendar integratie: unified scheduling",
-        "en": "Google Calendar Integration: Unified Scheduling",
+      "en": "Google Calendar Integration: Unified Scheduling",
       "es": "Integración de Google Calendar: programación unificada"
     },
     "description": {
@@ -32,7 +42,6 @@
     },
     "icon": "event"
   },
-
   "sections": [
     {
       "type": "introduction",
@@ -44,17 +53,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p>De Google Calendar integratie synchroniseert je Tesoro CRM agenda met Google Calendar voor unified scheduling. Geen dubbele boekingen meer - al je property viewings, meetings en deadlines op één plek.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Bi-directionele sync tussen Tesoro en Google Calendar</li><li>Property viewings automatisch toegevoegd aan je agenda</li><li>Meeting invites versturen naar contacts via Google Calendar</li><li>Conflict detection - voorkom dubbele boekingen</li><li>Mobile access via Google Calendar app</li><li>Calendar sharing met team members</li><li>Reminders en notifications via Google</li></ul><p><strong>Use cases voor vastgoed:</strong></p><ul><li>Property viewing appointments</li><li>Client meetings en consultations</li><li>Open house events</li><li>Document signing appointments</li><li>Internal team meetings</li><li>Deadlines en follow-ups</li></ul><p>Deze guide leidt je door het setup proces van Google Calendar synchronisatie met Tesoro CRM.</p>"
+          "text": "<p>De Google Calendar integratie synchroniseert je Tesoro CRM agenda met Google Calendar voor unified scheduling. Geen dubbele boekingen meer - al je property viewings, meetings en deadlines op één plek.</p><p><strong>Belangrijkste voordelen:</strong></p><ul><li>Bi-directionele sync tussen Tesoro en Google Calendar</li><li>Property viewings automatisch toegevoegd aan je agenda</li><li>Meeting invites versturen naar contacts via Google Calendar</li><li>Conflict detection - voorkom dubbele boekingen</li><li>Mobile access via Google Calendar app</li><li>Calendar sharing met teamlids</li><li>Reminders en nietifications via Google</li></ul><p><strong>Use cases voor vastgoed:</strong></p><ul><li>Property viewing appointments</li><li>Client meetings en consultations</li><li>Open house events</li><li>Document signing appointments</li><li>Internal team meetings</li><li>Deadlines en follow-ups</li></ul><p>Deze guide leidt je door het setup proces van Google Calendar synchronisatie met Tesoro CRM.</p>"
         },
         "en": {
-          "text": "<p>The Google Calendar integration synchronizes your Tesoro CRM calendar with Google Calendar for unified scheduling. No more double bookings - all your property viewings, meetings, and deadlines in one place.</p><p><strong>Key benefits:</strong></p><ul><li>Bi-directional sync between Tesoro and Google Calendar</li><li>Property viewings automatically added to your calendar</li><li>Send meeting invites to contacts via Google Calendar</li><li>Conflict detection - prevent double bookings</li><li>Mobile access via Google Calendar app</li><li>Calendar sharing with team members</li><li>Reminders and notifications via Google</li></ul><p><strong>Real estate use cases:</strong></p><ul><li>Property viewing appointments</li><li>Client meetings and consultations</li><li>Open house events</li><li>Document signing appointments</li><li>Internal team meetings</li><li>Deadlines and follow-ups</li></ul><p>This guide walks you through the setup process of Google Calendar synchronization with Tesoro CRM.</p>"
+          "text": "<p>The Google Calendar integration synchronizes your Tesoro CRM calendar with Google Calendar for unified scheduling. No more double bookings - all your property viewings, meetings, and deadlines in one place.</p><p><strong>Key benefits:</strong></p><ul><li>Bi-directional sync between Tesoro and Google Calendar</li><li>Property viewings automatically added to your calendar</li><li>Send meeting invites to contacts via Google Calendar</li><li>Conflict detection - prevent double bookings</li><li>Mobile access via Google Calendar app</li><li>Calendar sharing with teamlids</li><li>Reminders and nietifications via Google</li></ul><p><strong>Real estate use cases:</strong></p><ul><li>Property viewing appointments</li><li>Client meetings and consultations</li><li>Open house events</li><li>Document signing appointments</li><li>Internal team meetings</li><li>Deadlines and follow-ups</li></ul><p>This guide walks you through the setup process of Google Calendar synchronization with Tesoro CRM.</p>"
         },
         "es": {
-          "text": "<p>La integración de Google Calendar sincroniza tu calendario de Tesoro CRM con Google Calendar para programación unificada. No más reservas dobles - todas tus visitas de propiedades, reuniones y fechas límite en un solo lugar.</p><p><strong>Beneficios clave:</strong></p><ul><li>Sincronización bidireccional entre Tesoro y Google Calendar</li><li>Visitas de propiedades agregadas automáticamente a tu calendario</li><li>Enviar invitaciones de reunión a contactos mediante Google Calendar</li><li>Detección de conflictos - previene reservas dobles</li><li>Acceso móvil mediante la aplicación Google Calendar</li><li>Compartir calendario con miembros del equipo</li><li>Recordatorios y notificaciones mediante Google</li></ul><p><strong>Casos de uso para inmobiliarias:</strong></p><ul><li>Citas de visitas de propiedades</li><li>Reuniones con clientes y consultas</li><li>Eventos de jornadas de puertas abiertas</li><li>Citas de firma de documentos</li><li>Reuniones internas del equipo</li><li>Fechas límite y seguimientos</li></ul><p>Esta guía te lleva a través del proceso de configuración de la sincronización de Google Calendar con Tesoro CRM.</p>"
+          "text": "<p>La integración de Google Calendar sincroniza tu calendario de Tesoro CRM con Google Calendar para programación unificada. No más reservas dobles - todas tus visitas de propiedades, reuniones y fechas límite en un solo lugar.</p><p><strong>Beneficios clave:</strong></p><ul><li>Sincronización bidireccional entre Tesoro y Google Calendar</li><li>Visitas de propiedades agregadas automáticamente a tu calendario</li><li>Enviar invitaciones de reunión a contactos mediante Google Calendar</li><li>Detección de conflictos - previene reservas dobles</li><li>Acceso móvil mediante la aplicación Google Calendar</li><li>Compartir calendario con miembros del equipo</li><li>Recordatorios y nietificaciones mediante Google</li></ul><p><strong>Casos de uso para inmobiliarias:</strong></p><ul><li>Citas de visitas de propiedades</li><li>Reuniones con clientes y consultas</li><li>Eventos de jornadas de puertas abiertas</li><li>Citas de firma de documentos</li><li>Reuniones internas del equipo</li><li>Fechas límite y seguimientos</li></ul><p>Esta guía te lleva a través del proceso de configuración de la sincronización de Google Calendar con Tesoro CRM.</p>"
         }
       }
     },
-
     {
       "type": "solution",
       "id": "calendar-setup",
@@ -111,19 +119,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Nu synchronisatie actief is, werken Tesoro en Google Calendar samen.</p><h4>Property viewing inplannen vanuit Tesoro:</h4><ol><li>Open een property in Tesoro</li><li>Klik <strong>Schedule Viewing</strong></li><li>Vul in:  <ul><li><strong>Contact:</strong> Selecteer contact</li><li><strong>Date & Time:</strong> Kies datum en tijd</li><li><strong>Duration:</strong> Duur van viewing</li><li><strong>Location:</strong> Automatisch ingevuld met property adres</li><li><strong>Notes:</strong> Optionele opmerkingen</li></ul></li><li>Klik <strong>Send Invite</strong></li></ol><p>Wat gebeurt er:</p><ul><li>Viewing wordt toegevoegd aan Tesoro calendar</li><li>Event wordt automatisch gesynchroniseerd naar Google Calendar</li><li>Contact ontvangt Google Calendar invite (indien email bekend)</li><li>Je ontvangt reminder via Google Calendar</li></ul><h4>Event aanmaken in Google Calendar:</h4><ol><li>Open Google Calendar</li><li>Klik <strong>+ Create</strong></li><li>Vul event details in</li><li>Klik <strong>Save</strong></li></ol><p>Wat gebeurt er:</p><ul><li>Event verschijnt in Google Calendar</li><li>Binnen 5-15 minuten: event verschijnt in Tesoro (afhankelijk van sync frequency)</li><li>Event is zichtbaar in Tesoro calendar view</li></ul><h4>Conflict detection:</h4><p>Tesoro detecteert automatisch dubbele boekingen:</p><ul><li>Bij het inplannen van viewing: waarschuwing als je al een event hebt op die tijd</li><li>Suggestie van alternatieve tijden</li><li>Override optie indien gewenst</li></ul>"
+              "text": "<p>Nu synchronisatie actief is, werken Tesoro en Google Calendar samen.</p><h4>Property viewing inplannen vanuit Tesoro:</h4><ol><li>Open een property in Tesoro</li><li>Klik <strong>Schedule Viewing</strong></li><li>Vul in:  <ul><li><strong>Contact:</strong> Selecteer contact</li><li><strong>Date & Time:</strong> Kies datum en tijd</li><li><strong>Duration:</strong> Duur van viewing</li><li><strong>Location:</strong> Automatisch ingevuld met property adres</li><li><strong>notes:</strong> Optionele opmerkingen</li></ul></li><li>Klik <strong>Send Invite</strong></li></ol><p>Wat gebeurt er:</p><ul><li>Viewing wordt toegevoegd aan Tesoro calendar</li><li>Event wordt automatisch gesynchroniseerd naar Google Calendar</li><li>Contact ontvangt Google Calendar invite (indien email bekend)</li><li>Je ontvangt reminder via Google Calendar</li></ul><h4>Event aanmaken in Google Calendar:</h4><ol><li>Open Google Calendar</li><li>Klik <strong>+ Create</strong></li><li>Vul event details in</li><li>Klik <strong>Save</strong></li></ol><p>Wat gebeurt er:</p><ul><li>Event verschijnt in Google Calendar</li><li>Binnen 5-15 minuten: event verschijnt in Tesoro (afhankelijk van sync frequency)</li><li>Event is zichtbaar in Tesoro calendar view</li></ul><h4>Conflict detection:</h4><p>Tesoro detecteert automatisch dubbele boekingen:</p><ul><li>Bij het inplannen van viewing: waarschuwing als je al een event hebt op die tijd</li><li>Suggestie van alternatieve tijden</li><li>Override optie indien gewenst</li></ul>"
             },
             "en": {
-              "text": "<p>Now that synchronization is active, Tesoro and Google Calendar work together.</p><h4>Scheduling property viewing from Tesoro:</h4><ol><li>Open a property in Tesoro</li><li>Click <strong>Schedule Viewing</strong></li><li>Fill in:  <ul><li><strong>Contact:</strong> Select contact</li><li><strong>Date & Time:</strong> Choose date and time</li><li><strong>Duration:</strong> Viewing duration</li><li><strong>Location:</strong> Automatically filled with property address</li><li><strong>Notes:</strong> Optional notes</li></ul></li><li>Click <strong>Send Invite</strong></li></ol><p>What happens:</p><ul><li>Viewing is added to Tesoro calendar</li><li>Event is automatically synced to Google Calendar</li><li>Contact receives Google Calendar invite (if email known)</li><li>You receive reminder via Google Calendar</li></ul><h4>Creating event in Google Calendar:</h4><ol><li>Open Google Calendar</li><li>Click <strong>+ Create</strong></li><li>Fill in event details</li><li>Click <strong>Save</strong></li></ol><p>What happens:</p><ul><li>Event appears in Google Calendar</li><li>Within 5-15 minutes: event appears in Tesoro (depending on sync frequency)</li><li>Event is visible in Tesoro calendar view</li></ul><h4>Conflict detection:</h4><p>Tesoro automatically detects double bookings:</p><ul><li>When scheduling viewing: warning if you already have an event at that time</li><li>Suggestion of alternative times</li><li>Override option if desired</li></ul>"
+              "text": "<p>Now that synchronization is active, Tesoro and Google Calendar work together.</p><h4>Scheduling property viewing from Tesoro:</h4><ol><li>Open a property in Tesoro</li><li>Click <strong>Schedule Viewing</strong></li><li>Fill in:  <ul><li><strong>Contact:</strong> Select contact</li><li><strong>Date & Time:</strong> Choose date and time</li><li><strong>Duration:</strong> Viewing duration</li><li><strong>Location:</strong> Automatically filled with property address</li><li><strong>notes:</strong> Optional notes</li></ul></li><li>Click <strong>Send Invite</strong></li></ol><p>What happens:</p><ul><li>Viewing is added to Tesoro calendar</li><li>Event is automatically synced to Google Calendar</li><li>Contact receives Google Calendar invite (if email known)</li><li>You receive reminder via Google Calendar</li></ul><h4>Creating event in Google Calendar:</h4><ol><li>Open Google Calendar</li><li>Click <strong>+ Create</strong></li><li>Fill in event details</li><li>Click <strong>Save</strong></li></ol><p>What happens:</p><ul><li>Event appears in Google Calendar</li><li>Within 5-15 minutes: event appears in Tesoro (depending on sync frequency)</li><li>Event is visible in Tesoro calendar view</li></ul><h4>Conflict detection:</h4><p>Tesoro automatically detects double bookings:</p><ul><li>When scheduling viewing: warning if you already have an event at that time</li><li>Suggestion of alternative times</li><li>Override option if desired</li></ul>"
             },
             "es": {
-              "text": "<p>Ahora que la sincronización está activa, Tesoro y Google Calendar trabajan juntos.</p><h4>Programar visita de propiedad desde Tesoro:</h4><ol><li>Abre una propiedad en Tesoro</li><li>Haz clic en <strong>Schedule Viewing</strong></li><li>Completa:  <ul><li><strong>Contact:</strong> Selecciona contacto</li><li><strong>Date & Time:</strong> Elige fecha y hora</li><li><strong>Duration:</strong> Duración de la visita</li><li><strong>Location:</strong> Completado automáticamente con dirección de propiedad</li><li><strong>Notes:</strong> Notas opcionales</li></ul></li><li>Haz clic en <strong>Send Invite</strong></li></ol><p>Qué sucede:</p><ul><li>La visita se agrega al calendario de Tesoro</li><li>El evento se sincroniza automáticamente con Google Calendar</li><li>El contacto recibe invitación de Google Calendar (si se conoce el email)</li><li>Recibes recordatorio mediante Google Calendar</li></ul><h4>Crear evento en Google Calendar:</h4><ol><li>Abre Google Calendar</li><li>Haz clic en <strong>+ Create</strong></li><li>Completa detalles del evento</li><li>Haz clic en <strong>Save</strong></li></ol><p>Qué sucede:</p><ul><li>El evento aparece en Google Calendar</li><li>En 5-15 minutos: el evento aparece en Tesoro (según frecuencia de sincronización)</li><li>El evento es visible en la vista de calendario de Tesoro</li></ul><h4>Detección de conflictos:</h4><p>Tesoro detecta automáticamente reservas dobles:</p><ul><li>Al programar visita: advertencia si ya tienes un evento a esa hora</li><li>Sugerencia de horarios alternativos</li><li>Opción de anular si se desea</li></ul>"
+              "text": "<p>Ahora que la sincronización está activa, Tesoro y Google Calendar trabajan juntos.</p><h4>Programar visita de propiedad desde Tesoro:</h4><ol><li>Abre una propiedad en Tesoro</li><li>Haz clic en <strong>Schedule Viewing</strong></li><li>Completa:  <ul><li><strong>Contact:</strong> Selecciona contacto</li><li><strong>Date & Time:</strong> Elige fecha y hora</li><li><strong>Duration:</strong> Duración de la visita</li><li><strong>Location:</strong> Completado automáticamente con dirección de propiedad</li><li><strong>notes:</strong> nietas opcionales</li></ul></li><li>Haz clic en <strong>Send Invite</strong></li></ol><p>Qué sucede:</p><ul><li>La visita se agrega al calendario de Tesoro</li><li>El evento se sincroniza automáticamente con Google Calendar</li><li>El contacto recibe invitación de Google Calendar (si se conoce el email)</li><li>Recibes recordatorio mediante Google Calendar</li></ul><h4>Crear evento en Google Calendar:</h4><ol><li>Abre Google Calendar</li><li>Haz clic en <strong>+ Create</strong></li><li>Completa detalles del evento</li><li>Haz clic en <strong>Save</strong></li></ol><p>Qué sucede:</p><ul><li>El evento aparece en Google Calendar</li><li>En 5-15 minutos: el evento aparece en Tesoro (según frecuencia de sincronización)</li><li>El evento es visible en la vista de calendario de Tesoro</li></ul><h4>Detección de conflictos:</h4><p>Tesoro detecta automáticamente reservas dobles:</p><ul><li>Al programar visita: advertencia si ya tienes un evento a esa hora</li><li>Sugerencia de horarios alternativos</li><li>Opción de anular si se desea</li></ul>"
             }
           }
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -145,7 +152,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "troubleshooting-calendar",
@@ -159,7 +165,7 @@
           "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>Events worden niet gesynchroniseerd:</strong></p><ul><li>Check of Google Calendar verbinding actief is (groen status)</li><li>Verifieer sync frequency setting (verlaag naar 5 min voor snellere sync)</li><li>Klik <strong>Force Sync</strong> voor handmatige synchronisatie</li><li>Check sync logs voor errors</li></ul><p><strong>Dubbele events in Google Calendar:</strong></p><ul><li>Dit kan gebeuren bij initiële sync</li><li>Verwijder duplicates handmatig in Google Calendar</li><li>Tesoro detecteert na verwijdering dat event al bestaat</li><li>Gebruik <strong>Deduplicate Calendar</strong> tool in Tesoro settings</li></ul><p><strong>Changes in Google Calendar verschijnen niet in Tesoro:</strong></p><ul><li>Verifieer dat two-way sync is enabled</li><li>Check of wijziging in de juiste calendar is gemaakt (Primary of Tesoro calendar)</li><li>Wacht op volgende sync cycle (max 15 min bij standaard settings)</li></ul><p><strong>'Permission denied' error:</strong></p><ul><li>OAuth token is verlopen of ingetrokken</li><li>Klik <strong>Reconnect Google Calendar</strong></li><li>Ga door OAuth flow opnieuw</li><li>Verifieer alle permissies</li></ul><p><strong>Viewings verschijnen niet in Google Calendar:</strong></p><ul><li>Check of 'Property viewings' is enabled in event types</li><li>Verifieer dat viewing correct is ingepland in Tesoro (status = Scheduled)</li><li>Check sync status in viewing detail</li></ul>"
         },
         "en": {
-          "text": "<h4>Common issues:</h4><p><strong>Events are not synchronized:</strong></p><ul><li>Check if Google Calendar connection is active (green status)</li><li>Verify sync frequency setting (lower to 5 min for faster sync)</li><li>Click <strong>Force Sync</strong> for manual synchronization</li><li>Check sync logs for errors</li></ul><p><strong>Duplicate events in Google Calendar:</strong></p><ul><li>This can happen during initial sync</li><li>Delete duplicates manually in Google Calendar</li><li>Tesoro detects after deletion that event already exists</li><li>Use <strong>Deduplicate Calendar</strong> tool in Tesoro settings</li></ul><p><strong>Changes in Google Calendar don't appear in Tesoro:</strong></p><ul><li>Verify that two-way sync is enabled</li><li>Check if change was made in the correct calendar (Primary or Tesoro calendar)</li><li>Wait for next sync cycle (max 15 min with default settings)</li></ul><p><strong>'Permission denied' error:</strong></p><ul><li>OAuth token is expired or revoked</li><li>Click <strong>Reconnect Google Calendar</strong></li><li>Go through OAuth flow again</li><li>Verify all permissions</li></ul><p><strong>Viewings don't appear in Google Calendar:</strong></p><ul><li>Check if 'Property viewings' is enabled in event types</li><li>Verify that viewing is correctly scheduled in Tesoro (status = Scheduled)</li><li>Check sync status in viewing detail</li></ul>"
+          "text": "<h4>Common issues:</h4><p><strong>Events are niet synchronized:</strong></p><ul><li>Check if Google Calendar connection is active (green status)</li><li>Verify sync frequency setting (lower to 5 min for faster sync)</li><li>Click <strong>Force Sync</strong> for manual synchronization</li><li>Check sync logs for errors</li></ul><p><strong>Duplicate events in Google Calendar:</strong></p><ul><li>This can happen during initial sync</li><li>Delete duplicates manually in Google Calendar</li><li>Tesoro detects after deletion that event already exists</li><li>Use <strong>Deduplicate Calendar</strong> tool in Tesoro settings</li></ul><p><strong>Changes in Google Calendar don't appear in Tesoro:</strong></p><ul><li>Verify that two-way sync is enabled</li><li>Check if change was made in the correct calendar (Primary or Tesoro calendar)</li><li>Wait for next sync cycle (max 15 min with default settings)</li></ul><p><strong>'Permission denied' error:</strong></p><ul><li>OAuth token is expired or revoked</li><li>Click <strong>Reconnect Google Calendar</strong></li><li>Go through OAuth flow again</li><li>Verify all permissions</li></ul><p><strong>Viewings don't appear in Google Calendar:</strong></p><ul><li>Check if 'Property viewings' is enabled in event types</li><li>Verify that viewing is correctly scheduled in Tesoro (status = Scheduled)</li><li>Check sync status in viewing detail</li></ul>"
         },
         "es": {
           "text": "<h4>Problemas comunes:</h4><p><strong>Los eventos no se sincronizan:</strong></p><ul><li>Verifica que la conexión de Google Calendar esté activa (estado verde)</li><li>Verifica la configuración de frecuencia de sincronización (reduce a 5 min para sincronización más rápida)</li><li>Haz clic en <strong>Force Sync</strong> para sincronización manual</li><li>Verifica los registros de sincronización en busca de errores</li></ul><p><strong>Eventos duplicados en Google Calendar:</strong></p><ul><li>Esto puede ocurrir durante la sincronización inicial</li><li>Elimina duplicados manualmente en Google Calendar</li><li>Tesoro detecta después de la eliminación que el evento ya existe</li><li>Usa la herramienta <strong>Deduplicate Calendar</strong> en configuración de Tesoro</li></ul><p><strong>Los cambios en Google Calendar no aparecen en Tesoro:</strong></p><ul><li>Verifica que la sincronización bidireccional esté habilitada</li><li>Verifica que el cambio se hizo en el calendario correcto (Primary o calendario de Tesoro)</li><li>Espera al siguiente ciclo de sincronización (máx 15 min con configuración predeterminada)</li></ul><p><strong>Error 'Permission denied':</strong></p><ul><li>El token OAuth ha expirado o ha sido revocado</li><li>Haz clic en <strong>Reconnect Google Calendar</strong></li><li>Pasa por el flujo OAuth nuevamente</li><li>Verifica todos los permisos</li></ul><p><strong>Las visitas no aparecen en Google Calendar:</strong></p><ul><li>Verifica que 'Property viewings' esté habilitado en tipos de eventos</li><li>Verifica que la visita esté programada correctamente en Tesoro (estado = Scheduled)</li><li>Verifica el estado de sincronización en el detalle de la visita</li></ul>"
@@ -167,13 +173,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "outlook-oauth-complete-setup",
     "property-management-tutorial",
     "deal-activities-timeline"
   ],
-
   "faq": [
     {
       "question": {

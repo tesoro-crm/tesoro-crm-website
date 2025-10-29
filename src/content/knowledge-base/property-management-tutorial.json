@@ -7,18 +7,28 @@
     "authorId": "maria-perez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "tutorial", "property-listing", "property-management", "crm-basics"],
+    "tags": [
+      "properties",
+      "tutorial",
+      "property-listing",
+      "property-management",
+      "crm-basics"
+    ],
     "featured": true,
     "readingTime": 6,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["property toevoegen Tesoro", "property listing CRM", "property management tutorial", "Tesoro CRM properties", "vastgoed beheer"]
+    "keywords": [
+      "property toevoegen Tesoro",
+      "property listing CRM",
+      "property management tutorial",
+      "Tesoro CRM properties",
+      "vastgoed beheer"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property Management in Tesoro CRM: Complete Tutorial voor Beginners",
@@ -32,7 +42,6 @@
     },
     "icon": "🏠"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "property-management-overview",
@@ -73,7 +81,6 @@
       },
       "duration": "6:18"
     },
-
     {
       "type": "steps",
       "id": "add-new-property",
@@ -165,7 +172,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "upload-photos",
@@ -231,7 +237,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "photo-quality-tips",
@@ -253,7 +258,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "link-contacts",
@@ -289,19 +293,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Geïnteresseerden Tracking:</strong> Houd bij wie interesse heeft getoond in deze property.</p><p><strong>Buyer Toevoegen:</strong></p><ol><li>Scroll naar \"Geïnteresseerde Partijen\"</li><li>Klik \"+ Voeg Geïnteresseerde Toe\"</li><li>Selecteer contact uit bestaande lijst</li><li>Kies interesse niveau: Bezichtiging, Serieus, Bod Gedaan</li><li>Voeg notitie toe over hun specifieke interesse</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overzicht:</strong> Zie direct alle geïnteresseerden per property</li><li><strong>Follow-up:</strong> Automatische herinneringen voor contact</li><li><strong>Analytics:</strong> Track welke properties populair zijn</li><li><strong>Matching:</strong> Tesoro kan vergelijkbare properties voorstellen</li></ul>"
+              "text": "<p><strong>Geïnteresseerden Tracking:</strong> Houd bij wie interesse heeft getoond in deze property.</p><p><strong>Buyer Toevoegen:</strong></p><ol><li>Scroll naar \"Geïnteresseerde Partijen\"</li><li>Klik \"+ Voeg Geïnteresseerde Toe\"</li><li>Selecteer contact uit bestaande lijst</li><li>Kies interesse niveau: Bezichtiging, Serieus, Bod Gedaan</li><li>Voeg nietitie toe over hun specifieke interesse</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overzicht:</strong> Zie direct alle geïnteresseerden per property</li><li><strong>Follow-up:</strong> Automatische herinneringen voor contact</li><li><strong>Analytics:</strong> Track welke properties populair zijn</li><li><strong>Matching:</strong> Tesoro kan vergelijkbare properties voorstellen</li></ul>"
             },
             "en": {
-              "text": "<p><strong>Interest Tracking:</strong> Keep track of who has shown interest in this property.</p><p><strong>Adding Buyer:</strong></p><ol><li>Scroll to \"Interested Parties\"</li><li>Click \"+ Add Interested Party\"</li><li>Select contact from existing list</li><li>Choose interest level: Viewing, Serious, Offer Made</li><li>Add note about their specific interest</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overview:</strong> See all interested parties per property directly</li><li><strong>Follow-up:</strong> Automatic reminders for contact</li><li><strong>Analytics:</strong> Track which properties are popular</li><li><strong>Matching:</strong> Tesoro can suggest similar properties</li></ul>"
+              "text": "<p><strong>Interest Tracking:</strong> Keep track of who has shown interest in this property.</p><p><strong>Adding Buyer:</strong></p><ol><li>Scroll to \"Interested Parties\"</li><li>Click \"+ Add Interested Party\"</li><li>Select contact from existing list</li><li>Choose interest level: Viewing, Serious, Offer Made</li><li>Add niete about their specific interest</li></ol><p><strong>📊 Interest Tracking Benefits:</strong></p><ul><li><strong>Overview:</strong> See all interested parties per property directly</li><li><strong>Follow-up:</strong> Automatic reminders for contact</li><li><strong>Analytics:</strong> Track which properties are popular</li><li><strong>Matching:</strong> Tesoro can suggest similar properties</li></ul>"
             },
             "es": {
-              "text": "<p><strong>Seguimiento de Interés:</strong> Mantén registro de quién ha mostrado interés en esta propiedad.</p><p><strong>Agregar Comprador:</strong></p><ol><li>Desplázate a \"Partes Interesadas\"</li><li>Haz clic en \"+ Agregar Parte Interesada\"</li><li>Selecciona contacto de la lista existente</li><li>Elige nivel de interés: Visita, Serio, Oferta Hecha</li><li>Agrega nota sobre su interés específico</li></ol><p><strong>📊 Beneficios del Seguimiento de Interés:</strong></p><ul><li><strong>Vista General:</strong> Ve todas las partes interesadas por propiedad directamente</li><li><strong>Seguimiento:</strong> Recordatorios automáticos para contacto</li><li><strong>Analytics:</strong> Rastrea qué propiedades son populares</li><li><strong>Matching:</strong> Tesoro puede sugerir propiedades similares</li></ul>"
+              "text": "<p><strong>Seguimiento de Interés:</strong> Mantén registro de quién ha mostrado interés en esta propiedad.</p><p><strong>Agregar Comprador:</strong></p><ol><li>Desplázate a \"Partes Interesadas\"</li><li>Haz clic en \"+ Agregar Parte Interesada\"</li><li>Selecciona contacto de la lista existente</li><li>Elige nivel de interés: Visita, Serio, Oferta Hecha</li><li>Agrega nieta sobre su interés específico</li></ol><p><strong>📊 Beneficios del Seguimiento de Interés:</strong></p><ul><li><strong>Vista General:</strong> Ve todas las partes interesadas por propiedad directamente</li><li><strong>Seguimiento:</strong> Recordatorios automáticos para contacto</li><li><strong>Analytics:</strong> Rastrea qué propiedades son populares</li><li><strong>Matching:</strong> Tesoro puede sugerir propiedades similares</li></ul>"
             }
           }
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "property-status-management",
@@ -319,13 +322,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Beschikbare Status Opties:</strong></p><ul><li><strong>🟢 Beschikbaar:</strong> Actief te koop/huur</li><li><strong>🟡 Onder Bod:</strong> Bod ontvangen, nog niet verkocht</li><li><strong>🔴 Verkocht/Verhuurd:</strong> Deal gesloten</li><li><strong>⚫ Offline:</strong> Tijdelijk niet beschikbaar</li><li><strong>🟣 Optie:</strong> Optie genomen door koper</li></ul><p><strong>Status Wijzigen:</strong></p><ol><li>Open de property voor bewerking</li><li>Klik op het huidige status label bovenaan</li><li>Selecteer nieuwe status uit dropdown</li><li>Voeg reden voor wijziging toe (optioneel)</li><li>Sla wijzigingen op</li></ol><p><strong>🔔 Automatische Notificaties:</strong> Tesoro stuurt automatisch updates naar geïnteresseerde partijen bij status wijzigingen.</p>"
+              "text": "<p><strong>Beschikbare Status Opties:</strong></p><ul><li><strong>🟢 Beschikbaar:</strong> Actief te koop/huur</li><li><strong>🟡 Onder Bod:</strong> Bod ontvangen, nog niet verkocht</li><li><strong>🔴 Verkocht/Verhuurd:</strong> Deal gesloten</li><li><strong>⚫ Offline:</strong> Tijdelijk niet beschikbaar</li><li><strong>🟣 Optie:</strong> Optie genomen door koper</li></ul><p><strong>Status Wijzigen:</strong></p><ol><li>Open de property voor bewerking</li><li>Klik op het huidige status label bovenaan</li><li>Selecteer nieuwe status uit dropdown</li><li>Voeg reden voor wijziging toe (optioneel)</li><li>Sla wijzigingen op</li></ol><p><strong>🔔 Automatische nietificaties:</strong> Tesoro stuurt automatisch updates naar geïnteresseerde partijen bij status wijzigingen.</p>"
             },
             "en": {
-              "text": "<p><strong>Available Status Options:</strong></p><ul><li><strong>🟢 Available:</strong> Active for sale/rent</li><li><strong>🟡 Under Offer:</strong> Offer received, not yet sold</li><li><strong>🔴 Sold/Rented:</strong> Deal closed</li><li><strong>⚫ Offline:</strong> Temporarily unavailable</li><li><strong>🟣 Option:</strong> Option taken by buyer</li></ul><p><strong>Changing Status:</strong></p><ol><li>Open the property for editing</li><li>Click on the current status label at the top</li><li>Select new status from dropdown</li><li>Add reason for change (optional)</li><li>Save changes</li></ol><p><strong>🔔 Automatic Notifications:</strong> Tesoro automatically sends updates to interested parties when status changes.</p>"
+              "text": "<p><strong>Available Status Options:</strong></p><ul><li><strong>🟢 Available:</strong> Active for sale/rent</li><li><strong>🟡 Under Offer:</strong> Offer received, niet yet sold</li><li><strong>🔴 Sold/Rented:</strong> Deal closed</li><li><strong>⚫ Offline:</strong> Temporarily unavailable</li><li><strong>🟣 Option:</strong> Option taken by buyer</li></ul><p><strong>Changing Status:</strong></p><ol><li>Open the property for editing</li><li>Click on the huidige status label at the top</li><li>Select new status from dropdown</li><li>Add reason for change (optional)</li><li>Save changes</li></ol><p><strong>🔔 Automatic nietifications:</strong> Tesoro automatically sends updates to interested parties when status changes.</p>"
             },
             "es": {
-              "text": "<p><strong>Opciones de Estado Disponibles:</strong></p><ul><li><strong>🟢 Disponible:</strong> Activa para venta/alquiler</li><li><strong>🟡 Bajo Oferta:</strong> Oferta recibida, aún no vendida</li><li><strong>🔴 Vendida/Alquilada:</strong> Deal cerrado</li><li><strong>⚫ Fuera de línea:</strong> Temporalmente no disponible</li><li><strong>🟣 Opción:</strong> Opción tomada por comprador</li></ul><p><strong>Cambiar Estado:</strong></p><ol><li>Abre la propiedad para edición</li><li>Haz clic en la etiqueta de estado actual en la parte superior</li><li>Selecciona nuevo estado del dropdown</li><li>Agrega razón para el cambio (opcional)</li><li>Guarda cambios</li></ol><p><strong>🔔 Notificaciones Automáticas:</strong> Tesoro envía automáticamente actualizaciones a partes interesadas cuando el estado cambia.</p>"
+              "text": "<p><strong>Opciones de Estado Disponibles:</strong></p><ul><li><strong>🟢 Disponible:</strong> Activa para venta/alquiler</li><li><strong>🟡 Bajo Oferta:</strong> Oferta recibida, aún no vendida</li><li><strong>🔴 Vendida/Alquilada:</strong> Deal cerrado</li><li><strong>⚫ Fuera de línea:</strong> Temporalmente no disponible</li><li><strong>🟣 Opción:</strong> Opción tomada por comprador</li></ul><p><strong>Cambiar Estado:</strong></p><ol><li>Abre la propiedad para edición</li><li>Haz clic en la etiqueta de estado actual en la parte superior</li><li>Selecciona nuevo estado del dropdown</li><li>Agrega razón para el cambio (opcional)</li><li>Guarda cambios</li></ol><p><strong>🔔 nietificaciones Automáticas:</strong> Tesoro envía automáticamente actualizaciones a partes interesadas cuando el estado cambia.</p>"
             }
           }
         },
@@ -337,19 +340,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Automatische Geschiedenis:</strong> Tesoro houdt automatisch bij:</p><ul><li>Status wijzigingen met tijdstempel</li><li>Prijs aanpassingen</li><li>Bezichtigingen en afspraken</li><li>Communicatie met eigenaar en geïnteresseerden</li><li>Foto en document uploads</li></ul><p><strong>Geschiedenis Bekijken:</strong></p><ol><li>Open property detail pagina</li><li>Klik op \"Geschiedenis\" tab</li><li>Bekijk chronologisch overzicht van alle activiteiten</li><li>Filter op type activiteit indien gewenst</li></ol><p><strong>📝 Handmatige Notities Toevoegen:</strong></p><p>Voor belangrijke events die niet automatisch getracked worden:</p><ol><li>Ga naar \"Geschiedenis\" tab</li><li>Klik \"+ Voeg Notitie Toe\"</li><li>Beschrijf wat er gebeurd is</li><li>Sla op - verschijnt in timeline</li></ol>"
+              "text": "<p><strong>Automatische Geschiedenis:</strong> Tesoro houdt automatisch bij:</p><ul><li>Status wijzigingen met tijdstempel</li><li>Prijs aanpassingen</li><li>Bezichtigingen en afspraken</li><li>Communicatie met eigenaar en geïnteresseerden</li><li>Foto en document uploads</li></ul><p><strong>Geschiedenis Bekijken:</strong></p><ol><li>Open property detail pagina</li><li>Klik op \"Geschiedenis\" tab</li><li>Bekijk chronologisch overzicht van alle activiteiten</li><li>Filter op type activiteit indien gewenst</li></ol><p><strong>📝 Handmatige notities Toevoegen:</strong></p><p>Voor belangrijke events die niet automatisch getracked worden:</p><ol><li>Ga naar \"Geschiedenis\" tab</li><li>Klik \"+ Voeg nietitie Toe\"</li><li>Beschrijf wat er gebeurd is</li><li>Sla op - verschijnt in timeline</li></ol>"
             },
             "en": {
-              "text": "<p><strong>Automatic History:</strong> Tesoro automatically tracks:</p><ul><li>Status changes with timestamp</li><li>Price adjustments</li><li>Viewings and appointments</li><li>Communication with owner and interested parties</li><li>Photo and document uploads</li></ul><p><strong>Viewing History:</strong></p><ol><li>Open property detail page</li><li>Click on \"History\" tab</li><li>View chronological overview of all activities</li><li>Filter by activity type if desired</li></ol><p><strong>📝 Adding Manual Notes:</strong></p><p>For important events not automatically tracked:</p><ol><li>Go to \"History\" tab</li><li>Click \"+ Add Note\"</li><li>Describe what happened</li><li>Save - appears in timeline</li></ol>"
+              "text": "<p><strong>Automatic History:</strong> Tesoro automatically tracks:</p><ul><li>Status changes with timestamp</li><li>Price adjustments</li><li>Viewings and appointments</li><li>Communication with owner and interested parties</li><li>Photo and document uploads</li></ul><p><strong>Viewing History:</strong></p><ol><li>Open property detail page</li><li>Click on \"History\" tab</li><li>View chronological overview of all activities</li><li>Filter by activity type if desired</li></ol><p><strong>📝 Adding Manual notes:</strong></p><p>For important events niet automatically tracked:</p><ol><li>Go to \"History\" tab</li><li>Click \"+ Add niete\"</li><li>Describe what happened</li><li>Save - appears in timeline</li></ol>"
             },
             "es": {
-              "text": "<p><strong>Historial Automático:</strong> Tesoro rastrea automáticamente:</p><ul><li>Cambios de estado con marca de tiempo</li><li>Ajustes de precio</li><li>Visitas y citas</li><li>Comunicación con propietario y partes interesadas</li><li>Subidas de fotos y documentos</li></ul><p><strong>Ver Historial:</strong></p><ol><li>Abre página de detalle de propiedad</li><li>Haz clic en la pestaña \"Historial\"</li><li>Ve resumen cronológico de todas las actividades</li><li>Filtra por tipo de actividad si deseas</li></ol><p><strong>📝 Agregar Notas Manuales:</strong></p><p>Para eventos importantes no rastreados automáticamente:</p><ol><li>Ve a la pestaña \"Historial\"</li><li>Haz clic en \"+ Agregar Nota\"</li><li>Describe qué pasó</li><li>Guarda - aparece en línea de tiempo</li></ol>"
+              "text": "<p><strong>Historial Automático:</strong> Tesoro rastrea automáticamente:</p><ul><li>Cambios de estado con marca de tiempo</li><li>Ajustes de precio</li><li>Visitas y citas</li><li>Comunicación con propietario y partes interesadas</li><li>Subidas de fotos y documentos</li></ul><p><strong>Ver Historial:</strong></p><ol><li>Abre página de detalle de propiedad</li><li>Haz clic en la pestaña \"Historial\"</li><li>Ve resumen cronológico de todas las actividades</li><li>Filtra por tipo de actividad si deseas</li></ol><p><strong>📝 Agregar nietas Manuales:</strong></p><p>Para eventos importantes no rastreados automáticamente:</p><ol><li>Ve a la pestaña \"Historial\"</li><li>Haz clic en \"+ Agregar nieta\"</li><li>Describe qué pasó</li><li>Guarda - aparece en línea de tiempo</li></ol>"
             }
           }
         }
       ]
     },
-
     {
       "type": "text",
       "id": "next-steps",
@@ -371,13 +373,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "basic-contact-management-tutorial",
     "client-portal-setup-guide",
     "advanced-search-filtering-tutorial"
   ],
-
   "faq": [
     {
       "question": {
@@ -387,8 +387,8 @@
       },
       "answer": {
         "nl": "Ja! Tesoro ondersteunt CSV import voor properties. Ga naar Properties → Import → Upload CSV. Er is een template beschikbaar met alle vereiste velden. Let op dat foto's apart geüpload moeten worden na de import.",
-        "en": "Yes! Tesoro supports CSV import for properties. Go to Properties → Import → Upload CSV. There's a template available with all required fields. Note that photos need to be uploaded separately after import.",
-        "es": "¡Sí! Tesoro soporta importación CSV para propiedades. Ve a Propiedades → Importar → Subir CSV. Hay una plantilla disponible con todos los campos requeridos. Nota que las fotos necesitan ser subidas por separado después de la importación."
+        "en": "Yes! Tesoro supports CSV import for properties. Go to Properties → Import → Upload CSV. There's a template available with all required fields. niete that photos need to be uploaded separately after import.",
+        "es": "¡Sí! Tesoro soporta importación CSV para propiedades. Ve a Propiedades → Importar → Subir CSV. Hay una plantilla disponible con todos los campos requeridos. nieta que las fotos necesitan ser subidas por separado después de la importación."
       }
     },
     {

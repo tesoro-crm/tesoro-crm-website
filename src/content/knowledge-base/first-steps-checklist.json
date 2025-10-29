@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["getting-started", "checklist", "onboarding", "setup", "first-steps"],
+    "tags": [
+      "getting-started",
+      "checklist",
+      "onboarding",
+      "setup",
+      "first-steps"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro checklist", "getting started", "onboarding", "first steps", "crm setup"]
+    "keywords": [
+      "tesoro checklist",
+      "getting started",
+      "onboarding",
+      "first steps",
+      "crm setup"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Eerste stappen checklist: wat te doen na signup",
@@ -32,7 +42,6 @@
     },
     "icon": "checklist"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "setup-checklist",
@@ -67,13 +75,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Waarom dit belangrijk is:</strong> Je profiel is wat clients zien in emails, het portal, en communicatie.</p><p><strong>Wat te doen:</strong></p><ul><li>Upload een professionele profielfoto</li><li>Vul je telefoonnummer in</li><li>Stel je email signature in</li><li>Kies je taal en timezone voorkeur</li><li>Configureer basis notificaties</li></ul><p><strong>Hoe:</strong> Klik rechtsboven op je foto → Settings → Personal Info</p><p><strong>Zie ook:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+              "text": "<p><strong>Waarom dit belangrijk is:</strong> Je profiel is wat clients zien in emails, het portal, en communicatie.</p><p><strong>Wat te doen:</strong></p><ul><li>Upload een professionele profielfoto</li><li>Vul je telefoonnummer in</li><li>Stel je email signature in</li><li>Kies je taal en timezone voorkeur</li><li>Configureer basis nietificaties</li></ul><p><strong>Hoe:</strong> Klik rechtsboven op je foto → Settings → Personal Info</p><p><strong>Zie ook:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
             },
             "en": {
-              "text": "<p><strong>Why this matters:</strong> Your profile is what clients see in emails, the portal, and communication.</p><p><strong>What to do:</strong></p><ul><li>Upload a professional profile photo</li><li>Fill in your phone number</li><li>Set up your email signature</li><li>Choose your language and timezone preference</li><li>Configure basic notifications</li></ul><p><strong>How:</strong> Click your photo top right → Settings → Personal Info</p><p><strong>See also:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+              "text": "<p><strong>Why this matters:</strong> Your profile is what clients see in emails, the portal, and communication.</p><p><strong>What to do:</strong></p><ul><li>Upload a professional profile photo</li><li>Fill in your phone number</li><li>Set up your email signature</li><li>Choose your language and timezone preference</li><li>Configure basic nietifications</li></ul><p><strong>How:</strong> Click your photo top right → Settings → Personal Info</p><p><strong>See also:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
             },
             "es": {
-              "text": "<p><strong>Por qué esto importa:</strong> Tu perfil es lo que los clientes ven en emails, el portal y la comunicación.</p><p><strong>Qué hacer:</strong></p><ul><li>Sube una foto de perfil profesional</li><li>Completa tu número de teléfono</li><li>Configura tu firma de email</li><li>Elige tu preferencia de idioma y zona horaria</li><li>Configura notificaciones básicas</li></ul><p><strong>Cómo:</strong> Haz clic en tu foto arriba a la derecha → Settings → Personal Info</p><p><strong>Ver también:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
+              "text": "<p><strong>Por qué esto importa:</strong> Tu perfil es lo que los clientes ven en emails, el portal y la comunicación.</p><p><strong>Qué hacer:</strong></p><ul><li>Sube una foto de perfil profesional</li><li>Completa tu número de teléfono</li><li>Configura tu firma de email</li><li>Elige tu preferencia de idioma y zona horaria</li><li>Configura nietificaciones básicas</li></ul><p><strong>Cómo:</strong> Haz clic en tu foto arriba a la derecha → Settings → Personal Info</p><p><strong>Ver también:</strong> <a href=\"/knowledge-base/user-profile-settings\">User Profile Settings Guide</a></p>"
             }
           }
         },
@@ -160,7 +168,7 @@
               "text": "<p><strong>Waarom dit belangrijk is:</strong> Email integratie betekent dat je alle client communicatie in Tesoro hebt, niet verspreid over apps.</p><p><strong>Ondersteunde email providers:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (andere providers)</li></ul><p><strong>Hoe te verbinden:</strong></p><ol><li>Ga naar Settings → Integrations → Email</li><li>Kies je provider (Gmail/Outlook/IMAP)</li><li>Klik Connect en autoriseer Tesoro</li><li>Emails worden automatisch gesynchroniseerd</li></ol><p><strong>Wat je krijgt:</strong></p><ul><li>Verstuur emails vanuit Tesoro (automatisch gelogd)</li><li>Ontvang emails in contact/deal tijdlijn</li><li>Email templates voor snelle communicatie</li><li>Track opens en clicks</li></ul><p><strong>Beveiligde verbinding:</strong> Tesoro gebruikt OAuth2 - we zien nooit je wachtwoord. Je kunt toegang altijd intrekken.</p>"
             },
             "en": {
-              "text": "<p><strong>Why this matters:</strong> Email integration means you have all client communication in Tesoro, not spread across apps.</p><p><strong>Supported email providers:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (other providers)</li></ul><p><strong>How to connect:</strong></p><ol><li>Go to Settings → Integrations → Email</li><li>Choose your provider (Gmail/Outlook/IMAP)</li><li>Click Connect and authorize Tesoro</li><li>Emails are automatically synchronized</li></ol><p><strong>What you get:</strong></p><ul><li>Send emails from Tesoro (automatically logged)</li><li>Receive emails in contact/deal timeline</li><li>Email templates for quick communication</li><li>Track opens and clicks</li></ul><p><strong>Secure connection:</strong> Tesoro uses OAuth2 - we never see your password. You can always revoke access.</p>"
+              "text": "<p><strong>Why this matters:</strong> Email integration means you have all client communication in Tesoro, niet spread across apps.</p><p><strong>Supported email providers:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (other providers)</li></ul><p><strong>How to connect:</strong></p><ol><li>Go to Settings → Integrations → Email</li><li>Choose your provider (Gmail/Outlook/IMAP)</li><li>Click Connect and authorize Tesoro</li><li>Emails are automatically synchronized</li></ol><p><strong>What you get:</strong></p><ul><li>Send emails from Tesoro (automatically logged)</li><li>Receive emails in contact/deal timeline</li><li>Email templates for quick communication</li><li>Track opens and clicks</li></ul><p><strong>Secure connection:</strong> Tesoro uses OAuth2 - we never see your password. You can always revoke access.</p>"
             },
             "es": {
               "text": "<p><strong>Por qué esto importa:</strong> La integración de email significa que tienes toda la comunicación con clientes en Tesoro, no dispersa entre apps.</p><p><strong>Proveedores de email compatibles:</strong></p><ul><li>Gmail (Google Workspace)</li><li>Outlook / Office 365</li><li>IMAP (otros proveedores)</li></ul><p><strong>Cómo conectar:</strong></p><ol><li>Ve a Settings → Integrations → Email</li><li>Elige tu proveedor (Gmail/Outlook/IMAP)</li><li>Haz clic en Connect y autoriza Tesoro</li><li>Los emails se sincronizan automáticamente</li></ol><p><strong>Lo que obtienes:</strong></p><ul><li>Envía emails desde Tesoro (registrados automáticamente)</li><li>Recibe emails en la línea de tiempo de contacto/deal</li><li>Plantillas de email para comunicación rápida</li><li>Rastrea aperturas y clics</li></ul><p><strong>Conexión segura:</strong> Tesoro usa OAuth2 - nunca vemos tu contraseña. Siempre puedes revocar el acceso.</p>"
@@ -178,7 +186,7 @@
               "text": "<p><strong>Waarom dit belangrijk is:</strong> Het dashboard is je dagelijkse startpunt. Leer wat je er kunt zien.</p><p><strong>Wat te doen:</strong></p><ul><li>Bekijk je KPI's (deals, leads, avg value, time on market)</li><li>Check de date filter (probeer \"This Month\" vs \"All Time\")</li><li>Klik op een KPI card om naar de module te gaan</li><li>Bekijk Recent Activity - zie je je toegevoegde contacten?</li><li>Check Alerts - zijn er dingen die aandacht nodig hebben?</li></ul><p><strong>Dashboard tips:</strong></p><ul><li>Maak het dashboard je <strong>morning ritual</strong> - check het elke ochtend</li><li>Let op trends (groene/rode percentages), niet absolute cijfers</li><li>Use date filters om verschillende periodes te vergelijken</li></ul><p><strong>Zie ook:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
             },
             "en": {
-              "text": "<p><strong>Why this matters:</strong> The dashboard is your daily starting point. Learn what you can see there.</p><p><strong>What to do:</strong></p><ul><li>View your KPIs (deals, leads, avg value, time on market)</li><li>Check the date filter (try \"This Month\" vs \"All Time\")</li><li>Click on a KPI card to go to the module</li><li>View Recent Activity - do you see your added contacts?</li><li>Check Alerts - are there things needing attention?</li></ul><p><strong>Dashboard tips:</strong></p><ul><li>Make the dashboard your <strong>morning ritual</strong> - check it every morning</li><li>Pay attention to trends (green/red percentages), not absolute numbers</li><li>Use date filters to compare different periods</li></ul><p><strong>See also:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
+              "text": "<p><strong>Why this matters:</strong> The dashboard is your daily starting point. Learn what you can see there.</p><p><strong>What to do:</strong></p><ul><li>View your KPIs (deals, leads, avg value, time on market)</li><li>Check the date filter (try \"This Month\" vs \"All Time\")</li><li>Click on a KPI card to go to the module</li><li>View Recent Activity - do you see your added contacts?</li><li>Check Alerts - are there things needing attention?</li></ul><p><strong>Dashboard tips:</strong></p><ul><li>Make the dashboard your <strong>morning ritual</strong> - check it elke ochtend</li><li>Pay attention to trends (green/red percentages), niet absolute numbers</li><li>Use date filters to compare different periods</li></ul><p><strong>See also:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
             },
             "es": {
               "text": "<p><strong>Por qué esto importa:</strong> El dashboard es tu punto de partida diario. Aprende qué puedes ver allí.</p><p><strong>Qué hacer:</strong></p><ul><li>Ve tus KPIs (deals, leads, valor promedio, tiempo en el mercado)</li><li>Verifica el filtro de fecha (prueba \"This Month\" vs \"All Time\")</li><li>Haz clic en una tarjeta KPI para ir al módulo</li><li>Ve la Actividad Reciente - ¿ves tus contactos agregados?</li><li>Verifica Alertas - ¿hay cosas que necesitan atención?</li></ul><p><strong>Consejos para dashboard:</strong></p><ul><li>Haz del dashboard tu <strong>ritual matutino</strong> - revísalo cada mañana</li><li>Presta atención a las tendencias (porcentajes verdes/rojos), no a números absolutos</li><li>Usa filtros de fecha para comparar diferentes períodos</li></ul><p><strong>Ver también:</strong> <a href=\"/knowledge-base/dashboard-overview\">Dashboard Overview Guide</a></p>"
@@ -187,7 +195,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "congratulations",
@@ -202,7 +209,7 @@
           "text": "<p><strong>Je bent klaar om te beginnen!</strong></p><p>Als je alle stappen hebt gevolgd, heb je nu:</p><ul><li>✅ Een compleet profiel</li><li>✅ Contacts in je database</li><li>✅ Properties in je inventory</li><li>✅ Je eerste deal aangemaakt</li><li>✅ AI matching getest</li><li>✅ Email verbonden (optioneel)</li><li>✅ Dashboard verkend</li></ul><p><strong>Volgende stappen:</strong></p><ul><li>Lees de <strong>Quick Start Guide</strong> voor een 15-min diepere tutorial</li><li>Verken andere modules (Calendar, Activities, Reports)</li><li>Nodig teamleden uit (Settings → Users)</li><li>Configureer client portal (Settings → Client Portal)</li></ul>"
         },
         "en": {
-          "text": "<p><strong>You're ready to get started!</strong></p><p>If you've followed all steps, you now have:</p><ul><li>✅ A complete profile</li><li>✅ Contacts in your database</li><li>✅ Properties in your inventory</li><li>✅ Your first deal created</li><li>✅ AI matching tested</li><li>✅ Email connected (optional)</li><li>✅ Dashboard explored</li></ul><p><strong>Next steps:</strong></p><ul><li>Read the <strong>Quick Start Guide</strong> for a 15-min deeper tutorial</li><li>Explore other modules (Calendar, Activities, Reports)</li><li>Invite team members (Settings → Users)</li><li>Configure client portal (Settings → Client Portal)</li></ul>"
+          "text": "<p><strong>You're ready to get started!</strong></p><p>If you've followed all steps, you now have:</p><ul><li>✅ A complete profile</li><li>✅ Contacts in your database</li><li>✅ Properties in your inventory</li><li>✅ Your first deal created</li><li>✅ AI matching tested</li><li>✅ Email connected (optional)</li><li>✅ Dashboard explored</li></ul><p><strong>Next steps:</strong></p><ul><li>Read the <strong>Quick Start Guide</strong> for a 15-min deeper tutorial</li><li>Explore other modules (Calendar, Activities, Reports)</li><li>Invite teamlids (Settings → Users)</li><li>Configure client portal (Settings → Client Portal)</li></ul>"
         },
         "es": {
           "text": "<p><strong>¡Estás listo para comenzar!</strong></p><p>Si has seguido todos los pasos, ahora tienes:</p><ul><li>✅ Un perfil completo</li><li>✅ Contactos en tu base de datos</li><li>✅ Propiedades en tu inventario</li><li>✅ Tu primer deal creado</li><li>✅ Matching de IA probado</li><li>✅ Email conectado (opcional)</li><li>✅ Dashboard explorado</li></ul><p><strong>Próximos pasos:</strong></p><ul><li>Lee la <strong>Quick Start Guide</strong> para un tutorial más profundo de 15 min</li><li>Explora otros módulos (Calendar, Activities, Reports)</li><li>Invita a miembros del equipo (Settings → Users)</li><li>Configura el portal del cliente (Settings → Client Portal)</li></ul>"
@@ -210,14 +217,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "welcome-to-tesoro",
     "quick-start-guide",
     "basic-contact-management-tutorial",
     "property-management-tutorial"
   ],
-
   "faq": [
     {
       "question": {

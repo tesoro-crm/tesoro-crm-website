@@ -7,18 +7,26 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "property-types", "categories", "classification"],
+    "tags": [
+      "properties",
+      "property-types",
+      "categories",
+      "classification"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["property types", "property categories", "apartment house commercial", "property classification"]
+    "keywords": [
+      "property types",
+      "property categories",
+      "apartment house commercial",
+      "property classification"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property types en categorieën in Tesoro CRM",
@@ -32,7 +40,6 @@
     },
     "icon": "category"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +61,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "residential-properties",
@@ -75,7 +81,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "commercial-properties",
@@ -96,7 +101,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "land-properties",
@@ -117,7 +121,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "classification-best-practices",
@@ -140,13 +143,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "adding-properties-guide",
     "property-features-amenities",
     "property-portal-integration"
   ],
-
   "faq": [
     {
       "question": {
@@ -156,7 +157,7 @@
       },
       "answer": {
         "nl": "Ja, je kunt het property type altijd wijzigen. Let op dat dit invloed kan hebben op beschikbare velden en portal synchronisatie. Bij wijziging worden de relevante velden automatisch aangepast.",
-        "en": "Yes, you can always change the property type. Note that this can affect available fields and portal synchronization. When changing, relevant fields are automatically adjusted.",
+        "en": "Yes, you can always change the property type. niete that this can affect available fields and portal synchronization. When changing, relevant fields are automatically adjusted.",
         "es": "Sí, siempre puedes cambiar el tipo de propiedad. Ten en cuenta que esto puede afectar los campos disponibles y la sincronización de portales. Al cambiar, los campos relevantes se ajustan automáticamente."
       }
     },

@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "gdpr", "privacy", "data-protection", "compliance"],
+    "tags": [
+      "contacts",
+      "gdpr",
+      "privacy",
+      "data-protection",
+      "compliance"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["gdpr tesoro", "contact privacy", "data protection", "gdpr compliance", "contact data security"]
+    "keywords": [
+      "gdpr tesoro",
+      "contact privacy",
+      "data protection",
+      "gdpr compliance",
+      "contact data security"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "GDPR en Privacy: Contactgegevens Beschermen",
@@ -32,7 +42,6 @@
     },
     "icon": "shield"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "gdpr-compliance-tesoro",
@@ -68,14 +76,13 @@
           "text": "<h3>Ingebouwde GDPR Tools</h3><p><strong>1. Consent Tracking:</strong></p><ul><li>Custom field 'Marketing Consent' (Yes/No)</li><li>Datum van consent bijhouden</li><li>Bron van consent documenteren</li></ul><p><strong>2. Data Export (Right to Access):</strong></p><ul><li>Export all contact data als CSV</li><li>Include activity history</li><li>Include communication history</li></ul><p><strong>3. Permanent Delete (Right to Erasure):</strong></p><ul><li>Delete contact → Confirm 'Permanent Delete'</li><li>Alle gekoppelde data wordt verwijderd</li><li>Irreversibel - niet te herstellen</li></ul><p><strong>4. Data Retention:</strong></p><ul><li>Auto-delete inactive contacts after X years (optional)</li><li>Compliance met data retention policies</li></ul><p><strong>5. Access Control:</strong></p><ul><li>Role-based permissions</li><li>Audit trail van wie data heeft bekeken</li><li>Field-level security</li></ul>"
         },
         "en": {
-          "text": "<h3>Built-in GDPR Tools</h3><p><strong>1. Consent Tracking:</strong></p><ul><li>Custom field 'Marketing Consent' (Yes/No)</li><li>Track consent date</li><li>Document consent source</li></ul><p><strong>2. Data Export (Right to Access):</strong></p><ul><li>Export all contact data as CSV</li><li>Include activity history</li><li>Include communication history</li></ul><p><strong>3. Permanent Delete (Right to Erasure):</strong></p><ul><li>Delete contact → Confirm 'Permanent Delete'</li><li>All linked data is removed</li><li>Irreversible - cannot be recovered</li></ul><p><strong>4. Data Retention:</strong></p><ul><li>Auto-delete inactive contacts after X years (optional)</li><li>Compliance with data retention policies</li></ul><p><strong>5. Access Control:</strong></p><ul><li>Role-based permissions</li><li>Audit trail of who viewed data</li><li>Field-level security</li></ul>"
+          "text": "<h3>Built-in GDPR Tools</h3><p><strong>1. Consent Tracking:</strong></p><ul><li>Custom field 'Marketing Consent' (Yes/No)</li><li>Track consent date</li><li>Document consent source</li></ul><p><strong>2. Data Export (Right to Access):</strong></p><ul><li>Export all contact data as CSV</li><li>Include activity history</li><li>Include communication history</li></ul><p><strong>3. Permanent Delete (Right to Erasure):</strong></p><ul><li>Delete contact → Confirm 'Permanent Delete'</li><li>All linked data is removed</li><li>Irreversible - canniet be recovered</li></ul><p><strong>4. Data Retention:</strong></p><ul><li>Auto-delete inactive contacts after X years (optional)</li><li>Compliance with data retention policies</li></ul><p><strong>5. Access Control:</strong></p><ul><li>Role-based permissions</li><li>Audit trail of who viewed data</li><li>Field-level security</li></ul>"
         },
         "es": {
           "text": "<h3>Herramientas GDPR Integradas</h3><p><strong>1. Seguimiento de Consentimiento:</strong></p><ul><li>Campo personalizado 'Marketing Consent' (Sí/No)</li><li>Rastrear fecha de consentimiento</li><li>Documentar fuente de consentimiento</li></ul><p><strong>2. Exportación de Datos (Derecho de Acceso):</strong></p><ul><li>Exportar todos los datos de contacto como CSV</li><li>Incluir historial de actividad</li><li>Incluir historial de comunicación</li></ul><p><strong>3. Eliminación Permanente (Derecho al Olvido):</strong></p><ul><li>Eliminar contacto → Confirmar 'Eliminación Permanente'</li><li>Todos los datos vinculados se eliminan</li><li>Irreversible - no se puede recuperar</li></ul><p><strong>4. Retención de Datos:</strong></p><ul><li>Auto-eliminar contactos inactivos después de X años (opcional)</li><li>Cumplimiento con políticas de retención de datos</li></ul><p><strong>5. Control de Acceso:</strong></p><ul><li>Permisos basados en roles</li><li>Registro de auditoría de quién vio los datos</li><li>Seguridad a nivel de campo</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "gdpr-best-practices",
@@ -87,25 +94,23 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Documenteer consent:</strong> Noteer wanneer en hoe je consent kreeg</li><li><strong>Privacy policy:</strong> Link naar je privacy policy in communicatie</li><li><strong>Opt-out optie:</strong> Maak het makkelijk om uit marketing te stappen</li><li><strong>Regular cleanup:</strong> Verwijder oude/inactieve contacten regelmatig</li><li><strong>Train je team:</strong> Zorg dat iedereen GDPR begrijpt</li><li><strong>Review permissions:</strong> Check regelmatig wie toegang heeft tot data</li></ul>"
+          "text": "<ul><li><strong>Documenteer consent:</strong> nieteer wanneer en hoe je consent kreeg</li><li><strong>Privacy policy:</strong> Link naar je privacy policy in communicatie</li><li><strong>Opt-out optie:</strong> Maak het makkelijk om uit marketing te stappen</li><li><strong>Regular cleanup:</strong> Verwijder oude/inactieve contacten regelmatig</li><li><strong>Train je team:</strong> Zorg dat iedereen GDPR begrijpt</li><li><strong>Review permissions:</strong> Check regelmatig wie toegang heeft tot data</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Document consent:</strong> Note when and how you got consent</li><li><strong>Privacy policy:</strong> Link to your privacy policy in communications</li><li><strong>Opt-out option:</strong> Make it easy to opt out of marketing</li><li><strong>Regular cleanup:</strong> Delete old/inactive contacts regularly</li><li><strong>Train your team:</strong> Ensure everyone understands GDPR</li><li><strong>Review permissions:</strong> Regularly check who has access to data</li></ul>"
+          "text": "<ul><li><strong>Document consent:</strong> niete when and how you got consent</li><li><strong>Privacy policy:</strong> Link to your privacy policy in communications</li><li><strong>Opt-out option:</strong> Make it easy to opt out of marketing</li><li><strong>Regular cleanup:</strong> Delete old/inactive contacts regularly</li><li><strong>Train your team:</strong> Ensure everyone understands GDPR</li><li><strong>Review permissions:</strong> Regularly check who has access to data</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Documentar consentimiento:</strong> Anota cuándo y cómo obtuviste el consentimiento</li><li><strong>Política de privacidad:</strong> Enlaza a tu política de privacidad en comunicaciones</li><li><strong>Opción de exclusión:</strong> Facilita la exclusión del marketing</li><li><strong>Limpieza regular:</strong> Elimina contactos antiguos/inactivos regularmente</li><li><strong>Capacita a tu equipo:</strong> Asegúrate de que todos entiendan GDPR</li><li><strong>Revisar permisos:</strong> Verifica regularmente quién tiene acceso a datos</li></ul>"
+          "text": "<ul><li><strong>Documentar consentimiento:</strong> Anieta cuándo y cómo obtuviste el consentimiento</li><li><strong>Política de privacidad:</strong> Enlaza a tu política de privacidad en comunicaciones</li><li><strong>Opción de exclusión:</strong> Facilita la exclusión del marketing</li><li><strong>Limpieza regular:</strong> Elimina contactos antiguos/inactivos regularmente</li><li><strong>Capacita a tu equipo:</strong> Asegúrate de que todos entiendan GDPR</li><li><strong>Revisar permisos:</strong> Verifica regularmente quién tiene acceso a datos</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-bulk-operations",
     "contact-merge-duplicates",
     "contact-best-practices"
   ],
-
   "faq": [
     {
       "question": {
@@ -116,7 +121,7 @@
       "answer": {
         "nl": "Open het contact, klik op Actions > Export Data. Alle contact informatie, notes, emails, tasks en activity history worden geëxporteerd als CSV. Stuur dit bestand naar de persoon die het heeft aangevraagd.",
         "en": "Open the contact, click Actions > Export Data. All contact information, notes, emails, tasks and activity history are exported as CSV. Send this file to the person who requested it.",
-        "es": "Abre el contacto, haz clic en Actions > Export Data. Toda la información de contacto, notas, emails, tareas e historial de actividad se exportan como CSV. Envía este archivo a la persona que lo solicitó."
+        "es": "Abre el contacto, haz clic en Actions > Export Data. Toda la información de contacto, nietas, emails, tareas e historial de actividad se exportan como CSV. Envía este archivo a la persona que lo solicitó."
       }
     },
     {
@@ -127,7 +132,7 @@
       },
       "answer": {
         "nl": "Open contact > Actions > Delete Contact. Kies 'Permanent Delete' (niet soft delete). Bevestig de actie. Het contact en alle gekoppelde data worden definitief verwijderd en kunnen niet worden hersteld.",
-        "en": "Open contact > Actions > Delete Contact. Choose 'Permanent Delete' (not soft delete). Confirm the action. The contact and all linked data are permanently deleted and cannot be recovered.",
+        "en": "Open contact > Actions > Delete Contact. Choose 'Permanent Delete' (niet soft delete). Confirm the action. The contact and all linked data are permanently deleted and canniet be recovered.",
         "es": "Abrir contacto > Actions > Delete Contact. Elegir 'Eliminación Permanente' (no eliminación suave). Confirmar la acción. El contacto y todos los datos vinculados se eliminan permanentemente y no se pueden recuperar."
       }
     }

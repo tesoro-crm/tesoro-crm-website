@@ -7,18 +7,30 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "intermediate",
-    "tags": ["properties", "import", "csv", "xml", "bulk-operations", "data-migration"],
+    "tags": [
+      "properties",
+      "import",
+      "csv",
+      "xml",
+      "bulk-operations",
+      "data-migration"
+    ],
     "featured": false,
     "readingTime": 10,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["bulk import", "CSV import", "XML import", "data migration", "batch import", "property import"]
+    "keywords": [
+      "bulk import",
+      "CSV import",
+      "XML import",
+      "data migration",
+      "batch import",
+      "property import"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property bulk import en data migration in Tesoro",
@@ -32,7 +44,6 @@
     },
     "icon": "upload_file"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +66,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "csv-import",
@@ -76,7 +86,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "xml-import",
@@ -87,17 +96,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Supported XML formats</h5><p>Tesoro ondersteunt standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (bijvoorbeeld daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error notifications</li></ul><p>Tesoro fetches updates automatically en importeert nieuwe/changed properties.</p>"
+          "text": "<h5>Supported XML formats</h5><p>Tesoro ondersteunt standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (bijvoorbeeld daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error nietifications</li></ul><p>Tesoro fetches updates automatically en importeert nieuwe/changed properties.</p>"
         },
         "en": {
-          "text": "<h5>Supported XML formats</h5><p>Tesoro supports standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (e.g., daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error notifications</li></ul><p>Tesoro fetches updates automatically and imports new/changed properties.</p>"
+          "text": "<h5>Supported XML formats</h5><p>Tesoro supports standard property XML formats:</p><ul><li><strong>Idealista XML:</strong> Direct import from Idealista exports</li><li><strong>Fotocasa XML:</strong> Compatible with Fotocasa format</li><li><strong>Custom XML:</strong> Map custom XML schema to Tesoro fields</li></ul><h5>XML import workflow</h5><ol><li>Properties → Import → XML Feed</li><li>Select source:<ul><li>Upload XML file (manual import)</li><li>Enter XML feed URL (scheduled imports)</li></ul></li><li>Choose format (Idealista/Fotocasa/Custom)</li><li>Preview parsed data</li><li>Map fields (if custom XML)</li><li>Set duplicate handling:<ul><li>Skip duplicates (by reference number)</li><li>Update existing properties</li><li>Create as new properties</li></ul></li><li>Import</li></ol><h5>Scheduled XML imports</h5><p>For recurring imports (e.g., daily portal syncs):</p><ul><li>Setup feed URL</li><li>Configure schedule (daily/weekly/monthly)</li><li>Enable auto-import</li><li>Set error nietifications</li></ul><p>Tesoro fetches updates automatically and imports new/changed properties.</p>"
         },
         "es": {
-          "text": "<h5>Formatos XML soportados</h5><p>Tesoro soporta formatos XML estándar de propiedades:</p><ul><li><strong>XML de Idealista:</strong> Importación directa de exportaciones de Idealista</li><li><strong>XML de Fotocasa:</strong> Compatible con formato Fotocasa</li><li><strong>XML personalizado:</strong> Mapea esquema XML personalizado a campos Tesoro</li></ul><h5>Flujo de trabajo de importación XML</h5><ol><li>Propiedades → Importar → Feed XML</li><li>Selecciona fuente:<ul><li>Sube archivo XML (importación manual)</li><li>Ingresa URL de feed XML (importaciones programadas)</li></ul></li><li>Elige formato (Idealista/Fotocasa/Personalizado)</li><li>Vista previa de datos parseados</li><li>Mapea campos (si XML personalizado)</li><li>Establece manejo de duplicados:<ul><li>Saltar duplicados (por número de referencia)</li><li>Actualizar propiedades existentes</li><li>Crear como propiedades nuevas</li></ul></li><li>Importar</li></ol><h5>Importaciones XML programadas</h5><p>Para importaciones recurrentes (ej., sincronizaciones diarias de portales):</p><ul><li>Configura URL de feed</li><li>Configura programa (diario/semanal/mensual)</li><li>Activa auto-importación</li><li>Establece notificaciones de error</li></ul><p>Tesoro obtiene actualizaciones automáticamente e importa propiedades nuevas/cambiadas.</p>"
+          "text": "<h5>Formatos XML soportados</h5><p>Tesoro soporta formatos XML estándar de propiedades:</p><ul><li><strong>XML de Idealista:</strong> Importación directa de exportaciones de Idealista</li><li><strong>XML de Fotocasa:</strong> Compatible con formato Fotocasa</li><li><strong>XML personalizado:</strong> Mapea esquema XML personalizado a campos Tesoro</li></ul><h5>Flujo de trabajo de importación XML</h5><ol><li>Propiedades → Importar → Feed XML</li><li>Selecciona fuente:<ul><li>Sube archivo XML (importación manual)</li><li>Ingresa URL de feed XML (importaciones programadas)</li></ul></li><li>Elige formato (Idealista/Fotocasa/Personalizado)</li><li>Vista previa de datos parseados</li><li>Mapea campos (si XML personalizado)</li><li>Establece manejo de duplicados:<ul><li>Saltar duplicados (por número de referencia)</li><li>Actualizar propiedades existentes</li><li>Crear como propiedades nuevas</li></ul></li><li>Importar</li></ol><h5>Importaciones XML programadas</h5><p>Para importaciones recurrentes (ej., sincronizaciones diarias de portales):</p><ul><li>Configura URL de feed</li><li>Configura programa (diario/semanal/mensual)</li><li>Activa auto-importación</li><li>Establece nietificaciones de error</li></ul><p>Tesoro obtiene actualizaciones automáticamente e importa propiedades nuevas/cambiadas.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "data-validation",
@@ -108,17 +116,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check alle required fields zijn present</li><li><strong>Data types:</strong> Price moet numeric zijn, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type moet valid value zijn (not random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if not found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV voor batch fixing</li></ul><p>After import, review error log en fix problematic rows voor second import.</p>"
+          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check alle required fields zijn present</li><li><strong>Data types:</strong> Price moet numeric zijn, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type moet valid value zijn (niet random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if niet found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV voor batch fixing</li></ul><p>After import, review error log en fix problematic rows voor second import.</p>"
         },
         "en": {
-          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check all required fields are present</li><li><strong>Data types:</strong> Price must be numeric, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type must be valid value (not random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if not found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV for batch fixing</li></ul><p>After import, review error log and fix problematic rows for second import.</p>"
+          "text": "<h5>Automatic validation checks</h5><p>Tesoro validates data before import:</p><ul><li><strong>Required fields:</strong> Check all required fields are present</li><li><strong>Data types:</strong> Price must be numeric, bedrooms integer, etc.</li><li><strong>Valid values:</strong> Property type must be valid value (niet random text)</li><li><strong>Format checks:</strong> Email format, phone number format</li><li><strong>Geocoding:</strong> Address validation via Mapbox (warning if niet found)</li></ul><h5>Common import errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Row 45: Missing property type\"</li><li>Fix: Add property type value in CSV</li></ul><p><strong>Invalid data types:</strong></p><ul><li>Error: \"Row 12: Price must be numeric\"</li><li>Fix: Remove currency symbols (€, $) - only numbers</li></ul><p><strong>Duplicate reference numbers:</strong></p><ul><li>Error: \"Row 67: Reference ABC123 already exists\"</li><li>Options:<ul><li>Skip this row</li><li>Update existing property</li><li>Change reference number</li></ul></li></ul><h5>Error handling options</h5><ul><li><strong>Stop on error:</strong> Import stops at first error (fix and retry)</li><li><strong>Skip errors:</strong> Import valid rows, skip invalid (recommended)</li><li><strong>Log errors:</strong> Download error CSV for batch fixing</li></ul><p>After import, review error log and fix problematic rows for second import.</p>"
         },
         "es": {
           "text": "<h5>Verificaciones automáticas de validación</h5><p>Tesoro valida datos antes de importar:</p><ul><li><strong>Campos requeridos:</strong> Verifica que todos los campos requeridos estén presentes</li><li><strong>Tipos de datos:</strong> El precio debe ser numérico, dormitorios entero, etc.</li><li><strong>Valores válidos:</strong> El tipo de propiedad debe ser valor válido (no texto aleatorio)</li><li><strong>Verificaciones de formato:</strong> Formato de email, formato de número de teléfono</li><li><strong>Geocodificación:</strong> Validación de dirección vía Mapbox (advertencia si no se encuentra)</li></ul><h5>Errores comunes de importación</h5><p><strong>Campos requeridos faltantes:</strong></p><ul><li>Error: \"Fila 45: Falta tipo de propiedad\"</li><li>Solución: Añade valor de tipo de propiedad en CSV</li></ul><p><strong>Tipos de datos inválidos:</strong></p><ul><li>Error: \"Fila 12: El precio debe ser numérico\"</li><li>Solución: Elimina símbolos de moneda (€, $) - solo números</li></ul><p><strong>Números de referencia duplicados:</strong></p><ul><li>Error: \"Fila 67: Referencia ABC123 ya existe\"</li><li>Opciones:<ul><li>Saltar esta fila</li><li>Actualizar propiedad existente</li><li>Cambiar número de referencia</li></ul></li></ul><h5>Opciones de manejo de errores</h5><ul><li><strong>Detener en error:</strong> La importación se detiene en el primer error (corrige y reintenta)</li><li><strong>Saltar errores:</strong> Importa filas válidas, salta inválidas (recomendado)</li><li><strong>Registrar errores:</strong> Descarga CSV de errores para corrección en lote</li></ul><p>Después de importar, revisa registro de errores y corrige filas problemáticas para segunda importación.</p>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "import-tips",
@@ -141,14 +148,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "adding-properties-guide",
     "property-portal-integration",
     "property-history-tracking"
   ],
-
   "faq": [
     {
       "question": {

@@ -7,7 +7,13 @@
     "authorId": "elena-rodriguez",
     "category": "reports",
     "difficulty": "beginner",
-    "tags": ["reports", "analytics", "kpis", "metrics", "dashboard"],
+    "tags": [
+      "reports",
+      "analytics",
+      "kpis",
+      "metrics",
+      "dashboard"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
-    "keywords": ["dashboard KPIs", "real estate metrics", "performance tracking", "CRM analytics", "key performance indicators", "sales dashboard"]
+    "keywords": [
+      "dashboard KPIs",
+      "real estate metrics",
+      "performance tracking",
+      "CRM analytics",
+      "key performance indicators",
+      "sales dashboard"
+    ]
   },
   "hero": {
     "title": {
@@ -90,7 +103,7 @@
           },
           "content": {
             "nl": "Als je een teamleider of manager bent, kun je de dashboard weergave filteren om specifieke teamleden of je hele team te zien. Gebruik de team filter dropdown om tussen individuele en team-brede metrics te schakelen.",
-            "en": "If you're a team leader or manager, you can filter the dashboard view to see specific team members or your entire team. Use the team filter dropdown to switch between individual and team-wide metrics.",
+            "en": "If you're a team leader or manager, you can filter the dashboard view to see specific teamlids or your entire team. Use the team filter dropdown to switch between individueel en team-wide metrics.",
             "es": "Si eres líder de equipo o gerente, puedes filtrar la vista del dashboard para ver miembros específicos del equipo o todo tu equipo. Usa el menú desplegable de filtro de equipo para cambiar entre métricas individuales y de todo el equipo."
           }
         },
@@ -102,7 +115,7 @@
           },
           "content": {
             "nl": "Klik op elk KPI kaartje om een gedetailleerde trend grafiek te zien. Deze grafieken tonen hoe de metric in de loop van de tijd is veranderd, waardoor je patronen en seizoenstrends kunt identificeren. Hover over datapunten voor exacte waarden.",
-            "en": "Click on any KPI card to see a detailed trend chart. These charts show how the metric has changed over time, allowing you to identify patterns and seasonal trends. Hover over data points for exact values.",
+            "en": "Click on any KPI card to see a detailed trend chart. These charts show how the metric has changed over time, allowing you to identificeer patronen and seasonal trends. Hover over data points for exact values.",
             "es": "Haz clic en cualquier tarjeta de KPI para ver un gráfico de tendencias detallado. Estos gráficos muestran cómo ha cambiado la métrica a lo largo del tiempo, permitiéndote identificar patrones y tendencias estacionales. Pasa el cursor sobre los puntos de datos para ver valores exactos."
           }
         },
@@ -155,7 +168,7 @@
       },
       "content": {
         "nl": "Niet alle KPI's zijn even belangrijk. Focus op metrics die direct correleren met omzet en winstgevendheid. Totale leads is minder waardevol dan gekwalificeerde leads. Website bezoeken zijn minder belangrijk dan geboekte afspraken. Prioriteer metrics die voorspellende waarde hebben voor je business resultaten.",
-        "en": "Not all KPIs are equally important. Focus on metrics that directly correlate with revenue and profitability. Total leads is less valuable than qualified leads. Website visits matter less than booked appointments. Prioritize metrics that have predictive value for your business outcomes.",
+        "en": "niet all KPIs are equally important. Focus on metrics that directly correlate with revenue and profitability. Total leads is less valuable than qualified leads. Website visits matter less than booked appointments. Prioritize metrics that have predictive value for your business outcomes.",
         "es": "No todos los KPIs son igualmente importantes. Concéntrate en métricas que se correlacionen directamente con ingresos y rentabilidad. Los leads totales son menos valiosos que los leads calificados. Las visitas al sitio web importan menos que las citas reservadas. Prioriza métricas que tengan valor predictivo para los resultados de tu negocio."
       }
     },
@@ -200,7 +213,7 @@
           },
           "answer": {
             "nl": "Dit gebeurt meestal door een verschil in timezone settings of datumfilters. Zorg ervoor dat je hetzelfde datumbereik en timezone selecteert bij het exporteren als je dashboard view. Let ook op dat sommige exports alle records bevatten terwijl het dashboard gefilterd kan zijn op je toegewezen records. Check je filter instellingen voor consistentie.",
-            "en": "This usually happens due to a difference in timezone settings or date filters. Ensure you're selecting the same date range and timezone when exporting as your dashboard view. Also note that some exports include all records while the dashboard may be filtered to your assigned records. Check your filter settings for consistency.",
+            "en": "This usually happens due to a difference in timezone settings or date filters. Ensure you're selecting the same date range and timezone when exporting as your dashboard view. Also niete that some exports include all records while the dashboard may be filtered to your assigned records. Check your filter settings for consistency.",
             "es": "Esto generalmente ocurre debido a una diferencia en la configuración de zona horaria o filtros de fecha. Asegúrate de seleccionar el mismo rango de fechas y zona horaria al exportar como tu vista del dashboard. También ten en cuenta que algunas exportaciones incluyen todos los registros mientras que el dashboard puede estar filtrado a tus registros asignados. Verifica tu configuración de filtros para mayor consistencia."
           }
         },

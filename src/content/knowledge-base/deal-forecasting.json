@@ -5,20 +5,28 @@
     "publishDate": "2024-10-23",
     "updatedAt": "2024-10-23T12:30:00Z",
     "authorId": "carlos-martinez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["deals", "pipeline", "sales"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop",
-    "keywords": ["revenue forecasting", "sales forecasting", "pipeline value", "deal forecasting", "sales prediction"]
+    "keywords": [
+      "revenue forecasting",
+      "sales forecasting",
+      "pipeline value",
+      "deal forecasting",
+      "sales prediction"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Revenue forecasting en pipeline value",
@@ -32,7 +40,6 @@
     },
     "icon": "trending_up"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +56,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "forecasting-methods",
@@ -60,17 +66,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum van alle active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (not all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based op actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
+          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum van alle active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (niet all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based op actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
         },
         "en": {
-          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum of all active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (not all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based on actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
+          "text": "<p><strong>1. Simple pipeline value:</strong></p><p>Total sum of all active deal values:</p><code>Total Pipeline = Sum of all deal values</code><p>Pro: Simple, easy to understand<br>Con: Overestimates revenue (niet all deals close)</p><p><strong>2. Weighted pipeline value:</strong></p><p>Multiply deal value × stage confidence percentage:</p><code>Weighted Value = Deal Value × Stage Confidence %</code><p>Example stage confidence:</p><ul><li>Lead: 10%</li><li>Qualification: 20%</li><li>Viewing: 40%</li><li>Negotiation: 70%</li><li>Closing: 90%</li></ul><p>Pro: More realistic forecast<br>Con: Requires accurate stage confidence data</p><p><strong>3. Historical conversion forecast:</strong></p><p>Based on actual win rates per stage:</p><code>Forecast = Pipeline Value × Historical Win Rate</code><p>Pro: Data-driven, improves over time<br>Con: Requires historical data</p>"
         },
         "es": {
           "text": "<p><strong>1. Valor simple del pipeline:</strong></p><p>Suma total de todos los valores de deals activos:</p><code>Pipeline Total = Suma de todos los valores de deals</code><p>Pro: Simple, fácil de entender<br>Con: Sobreestima ingresos (no todos los deals cierran)</p><p><strong>2. Valor ponderado del pipeline:</strong></p><p>Multiplicar valor del deal × porcentaje de confianza de etapa:</p><code>Valor Ponderado = Valor del Deal × % de Confianza de Etapa</code><p>Ejemplo de confianza de etapa:</p><ul><li>Lead: 10%</li><li>Calificación: 20%</li><li>Visita: 40%</li><li>Negociación: 70%</li><li>Cierre: 90%</li></ul><p>Pro: Pronóstico más realista<br>Con: Requiere datos precisos de confianza de etapa</p><p><strong>3. Pronóstico de conversión histórica:</strong></p><p>Basado en tasas de ganancia reales por etapa:</p><code>Pronóstico = Valor del Pipeline × Tasa Histórica de Ganancia</code><p>Pro: Basado en datos, mejora con el tiempo<br>Con: Requiere datos históricos</p>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "using-forecasting",
@@ -118,16 +123,16 @@
         },
         {
           "title": {
-            "nl": "3. Monitor forecast accuracy",
+            "nl": "3. Monitor voorspelling nauwkeurigheid",
             "en": "3. Monitor Forecast Accuracy",
             "es": "3. Monitorear precisión del pronóstico"
           },
           "content": {
             "nl": {
-              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate forecast accuracy percentage</li><li>Adjust confidence percentages based op accuracy</li><li>Refine methodology over time</li></ul>"
+              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate voorspelling nauwkeurigheid percentage</li><li>Adjust confidence percentages based op accuracy</li><li>Refine methodology over time</li></ul>"
             },
             "en": {
-              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate forecast accuracy percentage</li><li>Adjust confidence percentages based on accuracy</li><li>Refine methodology over time</li></ul>"
+              "text": "<p>Track forecast vs actual:</p><ul><li>Compare forecasted revenue to actual won</li><li>Calculate voorspelling nauwkeurigheid percentage</li><li>Adjust confidence percentages based on accuracy</li><li>Refine methodology over time</li></ul>"
             },
             "es": {
               "text": "<p>Rastrea pronóstico vs real:</p><ul><li>Compara ingresos pronosticados con ganados reales</li><li>Calcula porcentaje de precisión del pronóstico</li><li>Ajusta porcentajes de confianza basado en precisión</li><li>Refina metodología con el tiempo</li></ul>"
@@ -136,7 +141,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "practical-example",
@@ -157,7 +161,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -169,24 +172,22 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Update regularly:</strong> Refresh forecasts weekly</li><li><strong>Be conservative:</strong> Better to under-promise, over-deliver</li><li><strong>Use multiple methods:</strong> Combine weighted en historical</li><li><strong>Track accuracy:</strong> Monitor forecast vs actual monthly</li><li><strong>Adjust confidence:</strong> Refine stage percentages based op data</li><li><strong>Document assumptions:</strong> Note factors affecting forecast</li></ul>"
+          "text": "<ul><li><strong>Update regelmatig:</strong> Ververs voorspellingen wekelijks</li><li><strong>Wees conservatief:</strong> Beter te weinig beloven, te veel leveren</li><li><strong>Use multiple methods:</strong> Combine weighted en historical</li><li><strong>Track accuracy:</strong> Monitor voorspelling vs werkelijk maandelijks</li><li><strong>Adjust confidence:</strong> Refine stage percentages based op data</li><li><strong>Document assumptions:</strong> nieteer factoren die voorspelling beïnvloeden</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Update regularly:</strong> Refresh forecasts weekly</li><li><strong>Be conservative:</strong> Better to under-promise, over-deliver</li><li><strong>Use multiple methods:</strong> Combine weighted and historical</li><li><strong>Track accuracy:</strong> Monitor forecast vs actual monthly</li><li><strong>Adjust confidence:</strong> Refine stage percentages based on data</li><li><strong>Document assumptions:</strong> Note factors affecting forecast</li></ul>"
+          "text": "<ul><li><strong>Update regelmatig:</strong> Ververs voorspellingen wekelijks</li><li><strong>Wees conservatief:</strong> Beter te weinig beloven, te veel leveren</li><li><strong>Use multiple methods:</strong> Combineer gewogen en historisch</li><li><strong>Track accuracy:</strong> Monitor voorspelling vs werkelijk maandelijks</li><li><strong>Adjust confidence:</strong> Verfijn fase percentages op basis van data</li><li><strong>Document assumptions:</strong> nieteer factoren die voorspelling beïnvloeden</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza pronósticos semanalmente</li><li><strong>Ser conservador:</strong> Mejor prometer menos, entregar más</li><li><strong>Usar múltiples métodos:</strong> Combina ponderado e histórico</li><li><strong>Rastrear precisión:</strong> Monitorea pronóstico vs real mensualmente</li><li><strong>Ajustar confianza:</strong> Refina porcentajes de etapa basado en datos</li><li><strong>Documentar suposiciones:</strong> Nota factores que afectan pronóstico</li></ul>"
+          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza pronósticos semanalmente</li><li><strong>Ser conservador:</strong> Mejor prometer menos, entregar más</li><li><strong>Usar múltiples métodos:</strong> Combina ponderado e histórico</li><li><strong>Rastrear precisión:</strong> Monitorea pronóstico vs real mensualmente</li><li><strong>Ajustar confianza:</strong> Refina porcentajes de etapa basado en datos</li><li><strong>Documentar suposiciones:</strong> nieta factores que afectan pronóstico</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "deal-reporting-metrics",
     "deal-value-commission-tracking",
     "deal-pipeline-overview"
   ],
-
   "faq": [
     {
       "question": {

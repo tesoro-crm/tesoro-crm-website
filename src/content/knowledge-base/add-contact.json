@@ -5,20 +5,29 @@
     "publishDate": "2024-10-11",
     "updatedAt": "2024-10-11T17:00:00Z",
     "authorId": "maria-perez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "beginner",
-    "tags": ["contacts", "basics", "getting-started", "crm"],
+    "tags": [
+      "contacts",
+      "basics",
+      "getting-started",
+      "crm"
+    ],
     "featured": true,
     "readingTime": 3,
     "videoIncluded": true,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
-    "keywords": ["contact toevoegen", "CRM contact", "lead toevoegen", "Tesoro CRM", "contactbeheer"]
+    "keywords": [
+      "contact toevoegen",
+      "CRM contact",
+      "lead toevoegen",
+      "Tesoro CRM",
+      "contactbeheer"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "VEROUDERD: Zie 'Stop met Verliezen van €15.000 Deals'",
@@ -31,7 +40,6 @@
       "es": "Este artículo ha sido reemplazado con contenido enfocado en empresas. Haz clic en 'Deja de Perder Deals por Gestión de Contactos' para entrenamiento enfocado en impacto empresarial."
     }
   },
-
   "sections": [
     {
       "type": "text",
@@ -48,7 +56,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "tutorial-video",
@@ -66,7 +73,6 @@
       },
       "duration": "2:15"
     },
-
     {
       "type": "steps",
       "id": "add-contact-steps",
@@ -140,7 +146,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "tip-duplicate-check",
@@ -155,21 +160,19 @@
           "text": "<p>Tesoro CRM controleert automatisch op duplicaten op basis van email en telefoonnummer. Als er een match wordt gevonden, krijg je een melding met de optie om het bestaande contact te bekijken of toch een nieuw contact aan te maken.</p>"
         },
         "en": {
-          "text": "<p>Tesoro CRM automatically checks for duplicates based on email and phone number. If a match is found, you'll get a notification with the option to view the existing contact or create a new one anyway.</p>"
+          "text": "<p>Tesoro CRM automatically checks for duplicates based on email and phone number. If a match is found, you'll get a nietification with the option to view the existing contact or create a new one anyway.</p>"
         },
         "es": {
-          "text": "<p>Tesoro CRM verifica automáticamente duplicados basándose en el correo electrónico y el número de teléfono. Si se encuentra una coincidencia, recibirás una notificación con la opción de ver el contacto existente o crear uno nuevo de todos modos.</p>"
+          "text": "<p>Tesoro CRM verifica automáticamente duplicados basándose en el correo electrónico y el número de teléfono. Si se encuentra una coincidencia, recibirás una nietificación con la opción de ver el contacto existente o crear uno nuevo de todos modos.</p>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "stop-losing-deals-contact-management",
-    "why-enterprise-choose-tesoro", 
+    "why-enterprise-choose-tesoro",
     "roi-calculator-tesoro-vs-competition"
   ],
-
   "faq": [
     {
       "question": {
@@ -191,8 +194,8 @@
       },
       "answer": {
         "nl": "Je kunt het emailadres altijd aanpassen door het contact te openen en op 'Bewerken' te klikken. Let op: emails die al verzonden zijn kunnen niet worden teruggehaald.",
-        "en": "You can always edit the email address by opening the contact and clicking 'Edit'. Note: emails that have already been sent cannot be recalled.",
-        "es": "Siempre puedes editar la dirección de correo electrónico abriendo el contacto y haciendo clic en 'Editar'. Nota: los correos electrónicos que ya se han enviado no se pueden recuperar."
+        "en": "You can always edit the email address by opening the contact and clicking 'Edit'. niete: emails that have already been sent canniet be recalled.",
+        "es": "Siempre puedes editar la dirección de correo electrónico abriendo el contacto y haciendo clic en 'Editar'. nieta: los correos electrónicos que ya se han enviado no se pueden recuperar."
       }
     }
   ]

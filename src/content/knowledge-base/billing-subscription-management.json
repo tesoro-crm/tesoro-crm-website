@@ -7,7 +7,13 @@
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "beginner",
-    "tags": ["settings", "billing", "subscription", "payment", "invoice"],
+    "tags": [
+      "settings",
+      "billing",
+      "subscription",
+      "payment",
+      "invoice"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1554224311-beee460c201f?w=1200&h=630&fit=crop",
-    "keywords": ["billing", "subscription", "payment", "invoice", "pricing", "tesoro crm"]
+    "keywords": [
+      "billing",
+      "subscription",
+      "payment",
+      "invoice",
+      "pricing",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -57,7 +70,7 @@
           },
           "description": {
             "nl": "Ga naar Instellingen > Facturering & Abonnement. Deze optie is alleen zichtbaar voor accounteigenaren en beheerders met facturerings rechten. Reguliere gebruikers kunnen geen factureringsgegevens inzien of wijzigen om privacy en financiële controle te waarborgen.",
-            "en": "Go to Settings > Billing & Subscription. This option is only visible to account owners and administrators with billing rights. Regular users cannot view or modify billing details to ensure privacy and financial control.",
+            "en": "Go to Settings > Billing & Subscription. This option is only visible to account owners and administrators with billing rights. Regular users canniet view or modify billing details to ensure privacy and financial control.",
             "es": "Vaya a Configuración > Facturación y suscripción. Esta opción solo es visible para propietarios de cuentas y administradores con derechos de facturación. Los usuarios regulares no pueden ver ni modificar detalles de facturación para garantizar privacidad y control financiero."
           }
         },
@@ -92,7 +105,7 @@
           },
           "description": {
             "nl": "Klik op 'Betalingsmethode toevoegen' en kies:\n\n**Creditcard**: Visa, Mastercard, American Express\n\n**SEPA Automatische Incasso**: Voor Europese bankrekeningen\n\n**iDEAL**: Directe betaling via Nederlandse bank\n\nAlle betalingen worden beveiligd verwerkt via onze payment provider. Tesoro slaat geen volledige kaartgegevens op voor uw veiligheid.",
-            "en": "Click 'Add Payment Method' and choose:\n\n**Credit Card**: Visa, Mastercard, American Express\n\n**SEPA Direct Debit**: For European bank accounts\n\n**iDEAL**: Direct payment via Dutch bank\n\nAll payments are securely processed through our payment provider. Tesoro does not store complete card details for your security.",
+            "en": "Click 'Add Payment Method' and choose:\n\n**Credit Card**: Visa, Mastercard, American Express\n\n**SEPA Direct Debit**: For European bank accounts\n\n**iDEAL**: Direct payment via Dutch bank\n\nAll payments are securely processed through our payment provider. Tesoro does niet store complete card details for your security.",
             "es": "Haga clic en 'Agregar método de pago' y elija:\n\n**Tarjeta de crédito**: Visa, Mastercard, American Express\n\n**Débito directo SEPA**: Para cuentas bancarias europeas\n\n**iDEAL**: Pago directo a través de banco holandés\n\nTodos los pagos se procesan de forma segura a través de nuestro proveedor de pagos. Tesoro no almacena datos completos de tarjetas para su seguridad."
           }
         },
@@ -116,7 +129,7 @@
           },
           "description": {
             "nl": "Om een betalingsmethode te verwijderen, klik op het vuilnisbak icoon. U kunt de standaard betalingsmethode niet verwijderen - stel eerst een andere methode in als standaard. Het is verstandig om altijd minimaal één backup betalingsmethode te hebben om service onderbreking te voorkomen bij verlopen kaarten.",
-            "en": "To remove a payment method, click on the trash icon. You cannot remove the default payment method - first set another method as default. It's wise to always have at least one backup payment method to prevent service interruption when cards expire.",
+            "en": "To remove a payment method, click on the trash icon. You canniet remove the default payment method - first set aniether method as default. It's wise to always have at least one backup payment method to prevent service interruption when cards expire.",
             "es": "Para eliminar un método de pago, haga clic en el icono de papelera. No puede eliminar el método de pago predeterminado: primero establezca otro método como predeterminado. Es prudente tener siempre al menos un método de pago de respaldo para evitar la interrupción del servicio cuando las tarjetas caducan."
           }
         }
@@ -132,9 +145,9 @@
         "es": "¿Qué sucede con un pago fallido?"
       },
       "content": {
-        "nl": "Bij een mislukte betaling:\n1. U ontvangt direct een e-mailnotificatie\n2. We proberen automatisch opnieuw binnen 3 dagen\n3. Na 7 dagen zonder succesvolle betaling wordt uw account beperkt (alleen-lezen toegang)\n4. Na 30 dagen wordt uw account opgeschort\n\nUpdate uw betalingsmethode zo snel mogelijk om onderbreking te voorkomen. Uw data blijft veilig bewaard.",
-        "en": "With a failed payment:\n1. You receive an immediate email notification\n2. We automatically retry within 3 days\n3. After 7 days without successful payment, your account is restricted (read-only access)\n4. After 30 days your account is suspended\n\nUpdate your payment method as soon as possible to prevent interruption. Your data remains safely stored.",
-        "es": "Con un pago fallido:\n1. Recibe una notificación por correo electrónico inmediata\n2. Reintentamos automáticamente dentro de 3 días\n3. Después de 7 días sin pago exitoso, su cuenta está restringida (acceso de solo lectura)\n4. Después de 30 días su cuenta está suspendida\n\nActualice su método de pago lo antes posible para evitar interrupciones. Sus datos permanecen almacenados de forma segura."
+        "nl": "Bij een mislukte betaling:\n1. U ontvangt direct een e-mailnietificatie\n2. We proberen automatisch opnieuw binnen 3 dagen\n3. Na 7 dagen zonder succesvolle betaling wordt uw account beperkt (alleen-lezen toegang)\n4. Na 30 dagen wordt uw account opgeschort\n\nUpdate uw betalingsmethode zo snel mogelijk om onderbreking te voorkomen. Uw data blijft veilig bewaard.",
+        "en": "With a failed payment:\n1. You receive an immediate email nietification\n2. We automatically retry within 3 days\n3. After 7 days without successful payment, your account is restricted (read-only access)\n4. After 30 days your account is suspended\n\nUpdate your payment method as soon as possible to prevent interruption. Your data remains safely stored.",
+        "es": "Con un pago fallido:\n1. Recibe una nietificación por correo electrónico inmediata\n2. Reintentamos automáticamente dentro de 3 días\n3. Después de 7 días sin pago exitoso, su cuenta está restringida (acceso de solo lectura)\n4. Después de 30 días su cuenta está suspendida\n\nActualice su método de pago lo antes posible para evitar interrupciones. Sus datos permanecen almacenados de forma segura."
       }
     },
     {
@@ -166,7 +179,7 @@
           },
           "description": {
             "nl": "Klik op 'Factureringsgegevens bewerken' om te wijzigen:\n- Bedrijfsnaam op factuur\n- BTW nummer (voor btw-vrijstelling binnen EU)\n- Factuuradres\n- E-mailadres voor facturen\n- PO nummer of kostenplaats referentie\n\nWijzigingen worden toegepast op alle toekomstige facturen. Bestaande facturen kunnen niet worden aangepast (voor fiscale compliance).",
-            "en": "Click 'Edit Billing Details' to change:\n- Company name on invoice\n- VAT number (for VAT exemption within EU)\n- Billing address\n- Email address for invoices\n- PO number or cost center reference\n\nChanges are applied to all future invoices. Existing invoices cannot be modified (for fiscal compliance).",
+            "en": "Click 'Edit Billing Details' to change:\n- Company name on invoice\n- VAT number (for VAT exemption within EU)\n- Billing address\n- Email address for invoices\n- PO number or cost center reference\n\nChanges are applied to all future invoices. Existing invoices canniet be modified (for fiscal compliance).",
             "es": "Haga clic en 'Editar detalles de facturación' para cambiar:\n- Nombre de empresa en factura\n- Número de IVA (para exención de IVA dentro de la UE)\n- Dirección de facturación\n- Dirección de correo electrónico para facturas\n- Número de orden de compra o referencia de centro de costos\n\nLos cambios se aplican a todas las facturas futuras. Las facturas existentes no se pueden modificar (para cumplimiento fiscal)."
           }
         },
@@ -213,7 +226,7 @@
           },
           "description": {
             "nl": "U kunt uw abonnement op elk moment opzeggen zonder opzegtermijn. Ga naar Facturering > Abonnement opzeggen. U behoudt toegang tot het einde van uw betaalde periode. Na opzegging:\n- Uw data wordt 90 dagen bewaard voor export\n- Na 90 dagen wordt alle data permanent verwijderd\n- U kunt binnen 90 dagen uw abonnement heractiveren zonder dataverlies\n\nWe vragen om feedback waarom u opzegt zodat we onze service kunnen verbeteren.",
-            "en": "You can cancel your subscription at any time without notice period. Go to Billing > Cancel Subscription. You retain access until the end of your paid period. After cancellation:\n- Your data is retained for 90 days for export\n- After 90 days all data is permanently deleted\n- You can reactivate your subscription within 90 days without data loss\n\nWe ask for feedback on why you're canceling so we can improve our service.",
+            "en": "You can cancel your subscription at any time without nietice period. Go to Billing > Cancel Subscription. You retain access until the end of your paid period. After cancellation:\n- Your data is retained for 90 days for export\n- After 90 days all data is permanently deleted\n- You can reactivate your subscription within 90 days without data loss\n\nWe ask for feedback on why you're canceling so we can improve our service.",
             "es": "Puede cancelar su suscripción en cualquier momento sin período de aviso. Vaya a Facturación > Cancelar suscripción. Mantiene el acceso hasta el final de su período pagado. Después de la cancelación:\n- Sus datos se conservan durante 90 días para exportación\n- Después de 90 días todos los datos se eliminan permanentemente\n- Puede reactivar su suscripción dentro de 90 días sin pérdida de datos\n\nSolicitamos comentarios sobre por qué cancela para que podamos mejorar nuestro servicio."
           }
         }
@@ -287,7 +300,7 @@
           },
           "answer": {
             "nl": "Absoluut. We raden aan om eerst een volledige data export te maken (contacten, woningen, deals, documenten) voordat u opzegt. U heeft 90 dagen na opzegging om data te exporteren. Na die periode wordt alle data permanent verwijderd en kan het niet worden hersteld.",
-            "en": "Absolutely. We recommend making a complete data export first (contacts, properties, deals, documents) before canceling. You have 90 days after cancellation to export data. After that period, all data is permanently deleted and cannot be recovered.",
+            "en": "Absolutely. We recommend making a complete data export first (contacts, properties, deals, documents) before canceling. You have 90 days after cancellation to export data. After that period, all data is permanently deleted and canniet be recovered.",
             "es": "Absolutamente. Recomendamos hacer una exportación completa de datos primero (contactos, propiedades, acuerdos, documentos) antes de cancelar. Tiene 90 días después de la cancelación para exportar datos. Después de ese período, todos los datos se eliminan permanentemente y no se pueden recuperar."
           }
         }

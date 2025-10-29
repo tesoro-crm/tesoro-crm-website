@@ -5,9 +5,15 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "carlos-martinez",
-    "category": "settings",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["settings", "deals", "pipeline", "stages", "sales process"],
+    "tags": [
+      "settings",
+      "deals",
+      "pipeline",
+      "stages",
+      "sales process"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["deal stages", "pipeline", "sales process", "workflow", "customization", "tesoro crm"]
+    "keywords": [
+      "deal stages",
+      "pipeline",
+      "sales process",
+      "workflow",
+      "customization",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -103,9 +116,9 @@
             "es": "Establecer porcentaje de probabilidad"
           },
           "description": {
-            "nl": "Wijs aan elke fase een kanspercentage toe dat aangeeft hoe waarschijnlijk het is dat deals in deze fase worden afgesloten. Bijvoorbeeld: Eerste Contact (10%), Bezichtiging Gepland (25%), Bod Uitgebracht (50%), In Notaris (90%), Afgerond (100%). Dit helpt bij het forecasting van omzet.",
-            "en": "Assign each stage a probability percentage indicating how likely deals in this stage are to close. For example: Initial Contact (10%), Viewing Scheduled (25%), Offer Made (50%), At Notary (90%), Completed (100%). This helps with revenue forecasting.",
-            "es": "Asigne a cada fase un porcentaje de probabilidad que indique qué tan probable es que los acuerdos en esta fase se cierren. Por ejemplo: Contacto inicial (10%), Visualización programada (25%), Oferta realizada (50%), En notaría (90%), Completado (100%). Esto ayuda con la previsión de ingresos."
+            "nl": "Wijs aan elke fase een kanspercentage toe dat aangeeft hoe waarschijnlijk het is dat deals in deze fase worden afgesloten. Bijvoorbeeld: Eerste Contact (10%), Bezichtiging Gepland (25%), Bod Uitgebracht (50%), In nietaris (90%), Afgerond (100%). Dit helpt bij het forecasting van omzet.",
+            "en": "Assign each stage a probability percentage indicating how likely deals in this stage are to close. For example: Initial Contact (10%), Viewing Scheduled (25%), Offer Made (50%), At nietary (90%), Completed (100%). This helps with revenue forecasting.",
+            "es": "Asigne a cada fase un porcentaje de probabilidad que indique qué tan probable es que los acuerdos en esta fase se cierren. Por ejemplo: Contacto inicial (10%), Visualización programada (25%), Oferta realizada (50%), En nietaría (90%), Completado (100%). Esto ayuda con la previsión de ingresos."
           }
         },
         {
@@ -127,9 +140,9 @@
             "es": "Configurar acciones automatizadas"
           },
           "description": {
-            "nl": "Configureer wat er automatisch moet gebeuren wanneer een deal deze fase bereikt: verstuur een e-mailsjabloon, maak een taak voor opvolging, update tags, of notificeer teamleden. Automatisering zorgt ervoor dat geen enkele stap wordt vergeten.",
-            "en": "Configure what should automatically happen when a deal reaches this stage: send an email template, create a follow-up task, update tags, or notify team members. Automation ensures no step is forgotten.",
-            "es": "Configure qué debe suceder automáticamente cuando un acuerdo alcanza esta fase: enviar una plantilla de correo electrónico, crear una tarea de seguimiento, actualizar etiquetas o notificar a miembros del equipo. La automatización garantiza que no se olvide ningún paso."
+            "nl": "Configureer wat er automatisch moet gebeuren wanneer een deal deze fase bereikt: verstuur een e-mailsjabloon, maak een taak voor opvolging, update tags, of nietificeer teamleden. Automatisering zorgt ervoor dat geen enkele stap wordt vergeten.",
+            "en": "Configure what should automatically happen when a deal reaches this stage: send an email template, create a follow-up task, update tags, or nietify teamlids. Automation ensures no step is forgotten.",
+            "es": "Configure qué debe suceder automáticamente cuando un acuerdo alcanza esta fase: enviar una plantilla de correo electrónico, crear una tarea de seguimiento, actualizar etiquetas o nietificar a miembros del equipo. La automatización garantiza que no se olvide ningún paso."
           }
         },
         {
@@ -140,7 +153,7 @@
           },
           "description": {
             "nl": "Sleep en zet fases neer om de volgorde te bepalen. De volgorde moet het natuurlijke proces weerspiegelen van hoe een deal vordert. Meestal gaat dit van links (vroege fases) naar rechts (late fases). Een logische volgorde helpt gebruikers om snel te begrijpen waar een deal zich bevindt.",
-            "en": "Drag and drop stages to determine the order. The order should reflect the natural process of how a deal progresses. Usually this goes from left (early stages) to right (late stages). A logical order helps users quickly understand where a deal stands.",
+            "en": "Drag and drop stages to determine the order. The order should reflect the natural process of how a deal progresses. Usually this goes from left (vroege fases) to right (late stages). A logical order helps users quickly understand where a deal stands.",
             "es": "Arrastre y suelte fases para determinar el orden. El orden debe reflejar el proceso natural de cómo progresa un acuerdo. Generalmente esto va de izquierda (fases tempranas) a derecha (fases tardías). Un orden lógico ayuda a los usuarios a entender rápidamente dónde se encuentra un acuerdo."
           }
         }
@@ -156,9 +169,9 @@
         "es": "Diferentes canales para ventas y alquileres"
       },
       "content": {
-        "nl": "Het verkoop- en verhuurproces hebben verschillende stappen. Maak aparte pipelines:\n\n**Verkoop**: Eerste Contact → Bezichtiging → Bod → Notaris → Overdracht\n\n**Verhuur**: Interesse → Bezichtiging → Aanvraag → Screening → Contract → Sleuteloverdracht\n\nElk met eigen kanspercentages en automatiseringen die passen bij dat proces.",
-        "en": "The sales and rental process have different steps. Create separate pipelines:\n\n**Sales**: Initial Contact → Viewing → Offer → Notary → Transfer\n\n**Rental**: Interest → Viewing → Application → Screening → Contract → Key Handover\n\nEach with their own probability percentages and automations that fit that process.",
-        "es": "El proceso de ventas y alquileres tienen diferentes pasos. Cree canales separados:\n\n**Ventas**: Contacto inicial → Visualización → Oferta → Notaría → Transferencia\n\n**Alquiler**: Interés → Visualización → Solicitud → Selección → Contrato → Entrega de llaves\n\nCada uno con sus propios porcentajes de probabilidad y automatizaciones que se ajustan a ese proceso."
+        "nl": "Het verkoop- en verhuurproces hebben verschillende stappen. Maak aparte pipelines:\n\n**Verkoop**: Eerste Contact → Bezichtiging → Bod → nietaris → Overdracht\n\n**Verhuur**: Interesse → Bezichtiging → Aanvraag → Screening → Contract → Sleuteloverdracht\n\nElk met eigen kanspercentages en automatiseringen die passen bij dat proces.",
+        "en": "The sales and rental process have different steps. Create separate pipelines:\n\n**Sales**: Initial Contact → Viewing → Offer → nietary → Transfer\n\n**Rental**: Interest → Viewing → Application → Screening → Contract → Key Handover\n\nEach with their own probability percentages and automations that fit that process.",
+        "es": "El proceso de ventas y alquileres tienen diferentes pasos. Cree canales separados:\n\n**Ventas**: Contacto inicial → Visualización → Oferta → nietaría → Transferencia\n\n**Alquiler**: Interés → Visualización → Solicitud → Selección → Contrato → Entrega de llaves\n\nCada uno con sus propios porcentajes de probabilidad y automatizaciones que se ajustan a ese proceso."
       }
     },
     {
@@ -177,9 +190,9 @@
             "es": "Canal de ventas"
           },
           "description": {
-            "nl": "**Eerste Contact** (10%): Initieel gesprek, interesse getoond\n\n**Gekwalificeerd** (20%): Budget besproken, serieuze interesse\n\n**Bezichtiging Gepland** (30%): Afspraak gemaakt voor woning bezichtiging\n\n**Bezichtigd** (40%): Bezichtiging heeft plaatsgevonden\n\n**Bod Uitgebracht** (60%): Koper heeft officieel bod gedaan\n\n**Bod Geaccepteerd** (80%): Verkoper heeft bod geaccepteerd\n\n**In Notaris** (90%): Notaris koopakte aan het voorbereiden\n\n**Afgerond** (100%): Deal succesvol afgesloten, sleutel overgedragen\n\n**Verloren** (0%): Deal niet doorgegaan",
-            "en": "**Initial Contact** (10%): Initial conversation, interest shown\n\n**Qualified** (20%): Budget discussed, serious interest\n\n**Viewing Scheduled** (30%): Appointment made for property viewing\n\n**Viewed** (40%): Viewing has taken place\n\n**Offer Made** (60%): Buyer has made official offer\n\n**Offer Accepted** (80%): Seller has accepted offer\n\n**At Notary** (90%): Notary preparing purchase deed\n\n**Completed** (100%): Deal successfully closed, keys transferred\n\n**Lost** (0%): Deal did not proceed",
-            "es": "**Contacto inicial** (10%): Conversación inicial, interés mostrado\n\n**Calificado** (20%): Presupuesto discutido, interés serio\n\n**Visualización programada** (30%): Cita hecha para visualización de propiedad\n\n**Visto** (40%): La visualización ha tenido lugar\n\n**Oferta realizada** (60%): El comprador ha hecho una oferta oficial\n\n**Oferta aceptada** (80%): El vendedor ha aceptado la oferta\n\n**En notaría** (90%): Notario preparando escritura de compra\n\n**Completado** (100%): Acuerdo cerrado con éxito, llaves transferidas\n\n**Perdido** (0%): El acuerdo no procedió"
+            "nl": "**Eerste Contact** (10%): Initieel gesprek, interesse getoond\n\n**Gekwalificeerd** (20%): Budget besproken, serieuze interesse\n\n**Bezichtiging Gepland** (30%): Afspraak gemaakt voor woning bezichtiging\n\n**Bezichtigd** (40%): Bezichtiging heeft plaatsgevonden\n\n**Bod Uitgebracht** (60%): Koper heeft officieel bod gedaan\n\n**Bod Geaccepteerd** (80%): Verkoper heeft bod geaccepteerd\n\n**In nietaris** (90%): nietaris koopakte aan het voorbereiden\n\n**Afgerond** (100%): Deal succesvol afgesloten, sleutel overgedragen\n\n**Verloren** (0%): Deal niet doorgegaan",
+            "en": "**Initial Contact** (10%): Initial conversation, interest shown\n\n**Qualified** (20%): Budget discussed, serious interest\n\n**Viewing Scheduled** (30%): Appointment made for property viewing\n\n**Viewed** (40%): Viewing has taken place\n\n**Offer Made** (60%): Buyer has made official offer\n\n**Offer Accepted** (80%): Seller has accepted offer\n\n**At nietary** (90%): nietary preparing purchase deed\n\n**Completed** (100%): Deal successfully closed, keys transferred\n\n**Lost** (0%): Deal did niet proceed",
+            "es": "**Contacto inicial** (10%): Conversación inicial, interés mostrado\n\n**Calificado** (20%): Presupuesto discutido, interés serio\n\n**Visualización programada** (30%): Cita hecha para visualización de propiedad\n\n**Visto** (40%): La visualización ha tenido lugar\n\n**Oferta realizada** (60%): El comprador ha hecho una oferta oficial\n\n**Oferta aceptada** (80%): El vendedor ha aceptado la oferta\n\n**En nietaría** (90%): nietario preparando escritura de compra\n\n**Completado** (100%): Acuerdo cerrado con éxito, llaves transferidas\n\n**Perdido** (0%): El acuerdo no procedió"
           }
         },
         {
@@ -190,7 +203,7 @@
           },
           "description": {
             "nl": "**Interesse** (15%): Initieel contact, woningtype besproken\n\n**Bezichtiging Gepland** (30%): Afspraak gemaakt\n\n**Bezichtigd** (45%): Kandidaat heeft woning gezien\n\n**Aanvraag Ingediend** (60%): Huurder heeft aanvraagformulier ingevuld\n\n**Screening** (70%): Inkomenscheck en referenties worden gecontroleerd\n\n**Goedgekeurd** (85%): Screening succesvol, contract voorbereiden\n\n**Contract Getekend** (95%): Huurcontract ondertekend\n\n**Sleutel Overgedragen** (100%): Huurder heeft sleutel ontvangen\n\n**Afgewezen** (0%): Aanvraag niet goedgekeurd",
-            "en": "**Interest** (15%): Initial contact, property type discussed\n\n**Viewing Scheduled** (30%): Appointment made\n\n**Viewed** (45%): Candidate has seen property\n\n**Application Submitted** (60%): Tenant has completed application form\n\n**Screening** (70%): Income check and references being verified\n\n**Approved** (85%): Screening successful, preparing contract\n\n**Contract Signed** (95%): Rental contract signed\n\n**Keys Transferred** (100%): Tenant has received keys\n\n**Rejected** (0%): Application not approved",
+            "en": "**Interest** (15%): Initial contact, property type discussed\n\n**Viewing Scheduled** (30%): Appointment made\n\n**Viewed** (45%): Candidate has seen property\n\n**Application Submitted** (60%): Tenant has completed application form\n\n**Screening** (70%): Income check and references being verified\n\n**Approved** (85%): Screening successful, preparing contract\n\n**Contract Signed** (95%): Rental contract signed\n\n**Keys Transferred** (100%): Tenant has received keys\n\n**Rejected** (0%): Application niet approved",
             "es": "**Interés** (15%): Contacto inicial, tipo de propiedad discutido\n\n**Visualización programada** (30%): Cita hecha\n\n**Visto** (45%): El candidato ha visto la propiedad\n\n**Solicitud enviada** (60%): El inquilino ha completado el formulario de solicitud\n\n**Selección** (70%): Verificación de ingresos y referencias siendo verificadas\n\n**Aprobado** (85%): Selección exitosa, preparando contrato\n\n**Contrato firmado** (95%): Contrato de alquiler firmado\n\n**Llaves transferidas** (100%): El inquilino ha recibido las llaves\n\n**Rechazado** (0%): Solicitud no aprobada"
           }
         }
@@ -222,7 +235,7 @@
       },
       "content": {
         "nl": "Als u een fase verwijdert die nog deals bevat, moet u deze deals eerst naar een andere fase verplaatsen. Het systeem waarschuwt u en toont hoeveel deals worden beïnvloed. Plan grote pipeline wijzigingen buiten piekmomenten om verstoring te minimaliseren.",
-        "en": "If you delete a stage that still contains deals, you must first move these deals to another stage. The system warns you and shows how many deals are affected. Plan major pipeline changes outside peak times to minimize disruption.",
+        "en": "If you delete a stage that still contains deals, you must first move these deals to aniether stage. The system warns you and shows how many deals are affected. Plan major pipeline changes outside peak times to minimize disruption.",
         "es": "Si elimina una fase que aún contiene acuerdos, primero debe mover estos acuerdos a otra fase. El sistema le advierte y muestra cuántos acuerdos se ven afectados. Planifique cambios importantes en el canal fuera de las horas pico para minimizar la interrupción."
       }
     },

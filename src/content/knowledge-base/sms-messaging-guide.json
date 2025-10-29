@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "communication",
     "difficulty": "beginner",
-    "tags": ["sms", "messaging", "twilio", "communication", "mobile"],
+    "tags": [
+      "sms",
+      "messaging",
+      "twilio",
+      "communication",
+      "mobile"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["sms messaging crm", "twilio integration", "text messaging crm", "sms automation", "bulk sms"]
+    "keywords": [
+      "sms messaging crm",
+      "twilio integration",
+      "text messaging crm",
+      "sms automation",
+      "bulk sms"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "SMS berichten versturen via Twilio integratie",
@@ -32,7 +42,6 @@
     },
     "icon": "sms"
   },
-
   "sections": [
     {
       "type": "text",
@@ -47,14 +56,13 @@
           "text": "<p>SMS (tekstberichten) zijn een krachtig communicatiekanaal voor direct contact met klanten. Ze hebben een <strong>98% open rate</strong> binnen 3 minuten na ontvangst.</p><h3>Wanneer SMS Gebruiken?</h3><ul><li><strong>Urgente berichten:</strong> \"Uw bezichtiging is bevestigd voor vandaag 15:00\"</li><li><strong>Korte updates:</strong> \"Nieuwe property beschikbaar in uw zoekgebied\"</li><li><strong>Herinneringen:</strong> \"Meeting morgen om 10:00 op ons kantoor\"</li><li><strong>Quick follow-ups:</strong> \"Bedankt voor de bezichtiging, vragen?\"</li><li><strong>Two-way conversations:</strong> Klant kan terugsturen</li></ul><h3>Voordelen van SMS</h3><ul><li><strong>Hoge open rate:</strong> Veel hoger dan email (~98% vs ~25%)</li><li><strong>Snelle response:</strong> Meestal binnen minuten</li><li><strong>Direct bereik:</strong> Geen spam filters</li><li><strong>Mobiel-first:</strong> Ideaal voor onderweg</li><li><strong>Persoonlijk:</strong> Voelt directer dan email</li></ul><h3>SMS Beperkingen</h3><ul><li><strong>160 karakters:</strong> Beperkte lengte (of betaal voor meerdere berichten)</li><li><strong>Geen rich content:</strong> Alleen tekst, geen afbeeldingen/videos</li><li><strong>Kosten per bericht:</strong> Niet gratis zoals email</li><li><strong>Toestemming vereist:</strong> Klant moet opt-in voor marketing SMS</li></ul>"
         },
         "en": {
-          "text": "<p>SMS (text messages) are a powerful communication channel for direct customer contact. They have a <strong>98% open rate</strong> within 3 minutes of receipt.</p><h3>When to Use SMS?</h3><ul><li><strong>Urgent messages:</strong> \"Your viewing is confirmed for today at 3pm\"</li><li><strong>Short updates:</strong> \"New property available in your search area\"</li><li><strong>Reminders:</strong> \"Meeting tomorrow at 10am at our office\"</li><li><strong>Quick follow-ups:</strong> \"Thanks for the viewing, any questions?\"</li><li><strong>Two-way conversations:</strong> Customer can text back</li></ul><h3>Benefits of SMS</h3><ul><li><strong>High open rate:</strong> Much higher than email (~98% vs ~25%)</li><li><strong>Fast response:</strong> Usually within minutes</li><li><strong>Direct reach:</strong> No spam filters</li><li><strong>Mobile-first:</strong> Ideal for on-the-go</li><li><strong>Personal:</strong> Feels more direct than email</li></ul><h3>SMS Limitations</h3><ul><li><strong>160 characters:</strong> Limited length (or pay for multiple messages)</li><li><strong>No rich content:</strong> Text only, no images/videos</li><li><strong>Cost per message:</strong> Not free like email</li><li><strong>Permission required:</strong> Customer must opt-in for marketing SMS</li></ul>"
+          "text": "<p>SMS (text messages) are a powerful communication channel for direct customer contact. They have a <strong>98% open rate</strong> within 3 minutes of receipt.</p><h3>When to Use SMS?</h3><ul><li><strong>Urgent messages:</strong> \"Your viewing is confirmed for today at 3pm\"</li><li><strong>Short updates:</strong> \"New property available in your search area\"</li><li><strong>Reminders:</strong> \"Meeting tomorrow at 10am at our office\"</li><li><strong>Quick follow-ups:</strong> \"Thanks for the viewing, any questions?\"</li><li><strong>Two-way conversations:</strong> Customer can text back</li></ul><h3>Benefits of SMS</h3><ul><li><strong>High open rate:</strong> Much higher than email (~98% vs ~25%)</li><li><strong>Fast response:</strong> Usually within minutes</li><li><strong>Direct reach:</strong> No spam filters</li><li><strong>Mobile-first:</strong> Ideal for on-the-go</li><li><strong>Personal:</strong> Feels more direct than email</li></ul><h3>SMS Limitations</h3><ul><li><strong>160 characters:</strong> Limited length (or pay for multiple messages)</li><li><strong>No rich content:</strong> Text only, no images/videos</li><li><strong>Cost per message:</strong> niet free like email</li><li><strong>Permission required:</strong> Customer must opt-in for marketing SMS</li></ul>"
         },
         "es": {
           "text": "<p>Los SMS (mensajes de texto) son un canal de comunicación poderoso para contacto directo con clientes. Tienen una <strong>tasa de apertura del 98%</strong> dentro de 3 minutos de recibirse.</p><h3>¿Cuándo usar SMS?</h3><ul><li><strong>Mensajes urgentes:</strong> \"Su visita está confirmada para hoy a las 3pm\"</li><li><strong>Actualizaciones cortas:</strong> \"Nueva propiedad disponible en su área de búsqueda\"</li><li><strong>Recordatorios:</strong> \"Reunión mañana a las 10am en nuestra oficina\"</li><li><strong>Seguimientos rápidos:</strong> \"Gracias por la visita, ¿alguna pregunta?\"</li><li><strong>Conversaciones bidireccionales:</strong> El cliente puede responder</li></ul><h3>Beneficios del SMS</h3><ul><li><strong>Alta tasa de apertura:</strong> Mucho más alta que email (~98% vs ~25%)</li><li><strong>Respuesta rápida:</strong> Usualmente en minutos</li><li><strong>Alcance directo:</strong> Sin filtros de spam</li><li><strong>Móvil primero:</strong> Ideal para estar en movimiento</li><li><strong>Personal:</strong> Se siente más directo que email</li></ul><h3>Limitaciones del SMS</h3><ul><li><strong>160 caracteres:</strong> Longitud limitada (o paga por múltiples mensajes)</li><li><strong>Sin contenido enriquecido:</strong> Solo texto, sin imágenes/videos</li><li><strong>Costo por mensaje:</strong> No gratis como email</li><li><strong>Permiso requerido:</strong> El cliente debe optar por SMS de marketing</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "twilio-setup",
@@ -75,7 +83,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "sending-sms-messages",
@@ -96,7 +103,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "sms-best-practices",
@@ -111,14 +117,13 @@
           "text": "<ul><li><strong>Houd het kort:</strong> Ideaal < 160 karakters</li><li><strong>Duidelijke call-to-action:</strong> Wat moet klant doen?</li><li><strong>Include je naam:</strong> Zodat ontvanger weet wie stuurt</li><li><strong>Timing is belangrijk:</strong> Niet voor 9:00 of na 20:00</li><li><strong>Respect opt-outs:</strong> Stop direct bij \"STOP\" antwoord</li><li><strong>Gebruik afkortingen slim:</strong> \"ma\" voor maandag, \"max\" voor maximum</li><li><strong>Voeg link toe:</strong> Voor meer details (gebruik URL shortener)</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Keep it short:</strong> Ideal < 160 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Include your name:</strong> So recipient knows who's sending</li><li><strong>Timing matters:</strong> Not before 9am or after 8pm</li><li><strong>Respect opt-outs:</strong> Stop immediately at \"STOP\" reply</li><li><strong>Use abbreviations smartly:</strong> \"Mon\" for Monday, \"max\" for maximum</li><li><strong>Add link:</strong> For more details (use URL shortener)</li></ul>"
+          "text": "<ul><li><strong>Keep it short:</strong> Ideal < 160 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Include your name:</strong> So recipient knows who's sending</li><li><strong>Timing matters:</strong> niet before 9am or after 8pm</li><li><strong>Respect opt-outs:</strong> Stop immediately at \"STOP\" reply</li><li><strong>Use abbreviations smartly:</strong> \"Mon\" for Monday, \"max\" for maximum</li><li><strong>Add link:</strong> For more details (use URL shortener)</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Manténlo corto:</strong> Ideal < 160 caracteres</li><li><strong>Llamado a la acción claro:</strong> ¿Qué debe hacer el cliente?</li><li><strong>Incluye tu nombre:</strong> Para que el destinatario sepa quién envía</li><li><strong>El tiempo importa:</strong> No antes de las 9am ni después de las 8pm</li><li><strong>Respeta las exclusiones:</strong> Detén inmediatamente al responder \"STOP\"</li><li><strong>Usa abreviaturas inteligentemente:</strong> \"Lun\" para lunes, \"máx\" para máximo</li><li><strong>Agrega enlace:</strong> Para más detalles (usa acortador de URL)</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "bulk-sms-and-costs",
@@ -140,14 +145,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "communication-center-overview",
     "whatsapp-integration-guide",
     "communication-templates",
     "automated-follow-ups"
   ],
-
   "faq": [
     {
       "question": {

@@ -5,9 +5,15 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "beginner",
-    "tags": ["calendar", "google-calendar", "integration", "sync", "automation"],
+    "tags": [
+      "calendar",
+      "google-calendar",
+      "integration",
+      "sync",
+      "automation"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&h=630&fit=crop",
-    "keywords": ["google calendar sync", "tesoro google integration", "calendar sync real estate", "crm calendar integration", "google workspace tesoro"]
+    "keywords": [
+      "google calendar sync",
+      "tesoro google integration",
+      "calendar sync real estate",
+      "crm calendar integration",
+      "google workspace tesoro"
+    ]
   },
   "hero": {
     "title": {
@@ -84,7 +96,7 @@
           },
           "description": {
             "nl": "Klik op de knop 'Verbind met Google'. Je wordt doorgestuurd naar een Google-autorisatiescherm. Log in met je Google-account als je nog niet bent ingelogd. Google zal vragen om toestemming voor Tesoro om je kalender te lezen en te schrijven.",
-            "en": "Click the 'Connect to Google' button. You'll be redirected to a Google authorization screen. Sign in with your Google account if you're not already logged in. Google will ask for permission for Tesoro to read and write to your calendar.",
+            "en": "Click the 'Connect to Google' button. You'll be redirected to a Google authorization screen. Sign in with your Google account if you're niet already logged in. Google will ask for permission for Tesoro to read and write to your calendar.",
             "es": "Haz clic en el botón 'Conectar con Google'. Serás redirigido a una pantalla de autorización de Google. Inicia sesión con tu cuenta de Google si aún no lo has hecho. Google pedirá permiso para que Tesoro lea y escriba en tu calendario."
           }
         },
@@ -195,9 +207,9 @@
             "es": "Preferencias de recordatorio"
           },
           "description": {
-            "nl": "Kies of Tesoro-herinneringen synchroniseren met Google Agenda. Je kunt ervoor kiezen om beide systemen onafhankelijke herinneringen te laten verzenden, of alleen Tesoro-herinneringen te gebruiken (aanbevolen om dubbele notificaties te voorkomen).",
-            "en": "Choose whether Tesoro reminders sync to Google Calendar. You can opt to have both systems send independent reminders, or use only Tesoro reminders (recommended to avoid duplicate notifications).",
-            "es": "Elige si los recordatorios de Tesoro se sincronizan con Google Calendar. Puedes optar por que ambos sistemas envíen recordatorios independientes, o usar solo recordatorios de Tesoro (recomendado para evitar notificaciones duplicadas)."
+            "nl": "Kies of Tesoro-herinneringen synchroniseren met Google Agenda. Je kunt ervoor kiezen om beide systemen onafhankelijke herinneringen te laten verzenden, of alleen Tesoro-herinneringen te gebruiken (aanbevolen om dubbele nietificaties te voorkomen).",
+            "en": "Choose whether Tesoro reminders sync to Google Calendar. You can opt to have both systems send independent reminders, or use only Tesoro reminders (recommended to avoid duplicate nietifications).",
+            "es": "Elige si los recordatorios de Tesoro se sincronizan con Google Calendar. Puedes optar por que ambos sistemas envíen recordatorios independientes, o usar solo recordatorios de Tesoro (recomendado para evitar nietificaciones duplicadas)."
           }
         },
         {
@@ -208,8 +220,8 @@
           },
           "description": {
             "nl": "Configureer hoeveel details Tesoro toevoegt aan Google Agenda evenementen. Je kunt kiezen om contactnamen, pand adressen en dealdetails toe te voegen aan de evenementbeschrijving. Let op: deze informatie zal zichtbaar zijn voor iedereen met wie je je Google Agenda deelt.",
-            "en": "Configure how much detail Tesoro adds to Google Calendar events. You can choose to include contact names, property addresses, and deal details in the event description. Note: this information will be visible to anyone you share your Google Calendar with.",
-            "es": "Configura cuánto detalle agrega Tesoro a los eventos de Google Calendar. Puedes elegir incluir nombres de contactos, direcciones de propiedades y detalles del negocio en la descripción del evento. Nota: esta información será visible para cualquiera con quien compartas tu Google Calendar."
+            "en": "Configure how much detail Tesoro adds to Google Calendar events. You can choose to include contact names, property addresses, and deal details in the event description. niete: this information will be visible to anyone you share your Google Calendar with.",
+            "es": "Configura cuánto detalle agrega Tesoro a los eventos de Google Calendar. Puedes elegir incluir nombres de contactos, direcciones de propiedades y detalles del negocio en la descripción del evento. nieta: esta información será visible para cualquiera con quien compartas tu Google Calendar."
           }
         },
         {
@@ -394,7 +406,7 @@
           },
           "answer": {
             "nl": "Ja! Tesoro ondersteunt synchronisatie met meerdere Google-accounts. Dit is handig als je zowel persoonlijke als werk Google-accounts hebt. Ga naar Instellingen > Integraties > Google Agenda en klik op 'Extra account toevoegen' om een tweede account te verbinden.",
-            "en": "Yes! Tesoro supports syncing with multiple Google accounts. This is useful if you have both personal and work Google accounts. Go to Settings > Integrations > Google Calendar and click 'Add Another Account' to connect a second account.",
+            "en": "Yes! Tesoro supports syncing with multiple Google accounts. This is useful if you have both personal and work Google accounts. Go to Settings > Integrations > Google Calendar and click 'Add Aniether Account' to connect a second account.",
             "es": "¡Sí! Tesoro admite sincronización con múltiples cuentas de Google. Esto es útil si tienes cuentas de Google personales y de trabajo. Ve a Configuración > Integraciones > Google Calendar y haz clic en 'Agregar otra cuenta' para conectar una segunda cuenta."
           }
         },
@@ -416,7 +428,7 @@
   "relatedArticles": [
     "calendar-overview-guide",
     "ical-export-integration",
-    "calendar-reminders-notifications",
+    "calendar-reminders-nietifications",
     "email-integration-setup"
   ]
 }

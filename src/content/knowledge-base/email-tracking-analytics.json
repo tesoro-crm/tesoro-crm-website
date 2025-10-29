@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "communication",
     "difficulty": "beginner",
-    "tags": ["email", "tracking", "analytics", "engagement", "metrics"],
+    "tags": [
+      "email",
+      "tracking",
+      "analytics",
+      "engagement",
+      "metrics"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["email tracking crm", "email open rates", "email analytics", "email engagement tracking", "email click tracking"]
+    "keywords": [
+      "email tracking crm",
+      "email open rates",
+      "email analytics",
+      "email engagement tracking",
+      "email click tracking"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Email tracking en analytics: Meet je engagement",
@@ -32,7 +42,6 @@
     },
     "icon": "analytics"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "viewing-email-metrics",
@@ -65,17 +73,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Per Email Tracking</h3><p>Voor elke verzonden email zie je:</p><ol><li>Open contact of ga naar Communication Center</li><li>Selecteer een verzonden email</li><li>Email detail panel toont:  <ul><li><strong>Sent:</strong> Datum en tijd verzonden</li><li><strong>Opened:</strong> Eerste open + aantal keer geopend</li><li><strong>Clicked:</strong> Welke links + hoeveel keer</li><li><strong>Replied:</strong> Of ontvanger heeft gereageerd</li><li><strong>Device:</strong> Waarop email is geopend</li></ul></li></ol><h3>Open Notification</h3><p>Real-time notificaties:</p><ul><li>Desktop notificatie wanneer email wordt geopend</li><li>Badge bij contact naam</li><li>\"Just opened\" indicator in inbox</li></ul><h3>Click Tracking Details</h3><p>Voor elke link in je email:</p><ul><li>Aantal clicks per link</li><li>Timestamp van elke click</li><li>Device waarop geklikt</li><li>Meerdere clicks door zelfde ontvanger</li></ul><h3>Email Timeline</h3><p>Chronologische weergave:</p><ul><li>09:00 - Email verzonden</li><li>09:15 - Eerste keer geopend (iPhone)</li><li>09:17 - Link \"Property Details\" geklikt</li><li>14:30 - Email opnieuw geopend (Desktop)</li><li>14:32 - Link \"Book Viewing\" geklikt</li></ul>"
+          "text": "<h3>Per Email Tracking</h3><p>Voor elke verzonden email zie je:</p><ol><li>Open contact of ga naar Communication Center</li><li>Selecteer een verzonden email</li><li>Email detail panel toont:  <ul><li><strong>Sent:</strong> Datum en tijd verzonden</li><li><strong>Opened:</strong> Eerste open + aantal keer geopend</li><li><strong>Clicked:</strong> Welke links + hoeveel keer</li><li><strong>Replied:</strong> Of ontvanger heeft gereageerd</li><li><strong>Device:</strong> Waarop email is geopend</li></ul></li></ol><h3>Open nietification</h3><p>Real-time nietificaties:</p><ul><li>Desktop nietificatie wanneer email wordt geopend</li><li>Badge bij contact naam</li><li>\"Just opened\" indicator in inbox</li></ul><h3>Click Tracking Details</h3><p>Voor elke link in je email:</p><ul><li>Aantal clicks per link</li><li>Timestamp van elke click</li><li>Device waarop geklikt</li><li>Meerdere clicks door zelfde ontvanger</li></ul><h3>Email Timeline</h3><p>Chronologische weergave:</p><ul><li>09:00 - Email verzonden</li><li>09:15 - Eerste keer geopend (iPhone)</li><li>09:17 - Link \"Property Details\" geklikt</li><li>14:30 - Email opnieuw geopend (Desktop)</li><li>14:32 - Link \"Book Viewing\" geklikt</li></ul>"
         },
         "en": {
-          "text": "<h3>Per Email Tracking</h3><p>For each sent email you see:</p><ol><li>Open contact or go to Communication Center</li><li>Select a sent email</li><li>Email detail panel shows:  <ul><li><strong>Sent:</strong> Date and time sent</li><li><strong>Opened:</strong> First open + number of times opened</li><li><strong>Clicked:</strong> Which links + how many times</li><li><strong>Replied:</strong> If recipient has responded</li><li><strong>Device:</strong> On what email was opened</li></ul></li></ol><h3>Open Notification</h3><p>Real-time notifications:</p><ul><li>Desktop notification when email is opened</li><li>Badge next to contact name</li><li>\"Just opened\" indicator in inbox</li></ul><h3>Click Tracking Details</h3><p>For each link in your email:</p><ul><li>Number of clicks per link</li><li>Timestamp of each click</li><li>Device clicked on</li><li>Multiple clicks by same recipient</li></ul><h3>Email Timeline</h3><p>Chronological view:</p><ul><li>09:00 - Email sent</li><li>09:15 - First opened (iPhone)</li><li>09:17 - Link \"Property Details\" clicked</li><li>14:30 - Email reopened (Desktop)</li><li>14:32 - Link \"Book Viewing\" clicked</li></ul>"
+          "text": "<h3>Per Email Tracking</h3><p>For each sent email you see:</p><ol><li>Open contact or go to Communication Center</li><li>Select a sent email</li><li>Email detail panel shows:  <ul><li><strong>Sent:</strong> Date and time sent</li><li><strong>Opened:</strong> First open + number of times opened</li><li><strong>Clicked:</strong> Which links + how many times</li><li><strong>Replied:</strong> If recipient has responded</li><li><strong>Device:</strong> On what email was opened</li></ul></li></ol><h3>Open nietification</h3><p>Real-time nietifications:</p><ul><li>Desktop nietification when email is opened</li><li>Badge next to contact name</li><li>\"Just opened\" indicator in inbox</li></ul><h3>Click Tracking Details</h3><p>For each link in your email:</p><ul><li>Number of clicks per link</li><li>Timestamp of each click</li><li>Device clicked on</li><li>Multiple clicks by same recipient</li></ul><h3>Email Timeline</h3><p>Chronological view:</p><ul><li>09:00 - Email sent</li><li>09:15 - First opened (iPhone)</li><li>09:17 - Link \"Property Details\" clicked</li><li>14:30 - Email reopened (Desktop)</li><li>14:32 - Link \"Book Viewing\" clicked</li></ul>"
         },
         "es": {
-          "text": "<h3>Seguimiento por email</h3><p>Para cada email enviado ves:</p><ol><li>Abre contacto o ve al Centro de Comunicación</li><li>Selecciona un email enviado</li><li>El panel de detalles del email muestra:  <ul><li><strong>Enviado:</strong> Fecha y hora de envío</li><li><strong>Abierto:</strong> Primera apertura + número de veces abierto</li><li><strong>Clic:</strong> Qué enlaces + cuántas veces</li><li><strong>Respondido:</strong> Si el destinatario ha respondido</li><li><strong>Dispositivo:</strong> En qué se abrió el email</li></ul></li></ol><h3>Notificación de apertura</h3><p>Notificaciones en tiempo real:</p><ul><li>Notificación de escritorio cuando se abre el email</li><li>Insignia junto al nombre del contacto</li><li>Indicador \"Recién abierto\" en bandeja de entrada</li></ul><h3>Detalles de seguimiento de clics</h3><p>Para cada enlace en tu email:</p><ul><li>Número de clics por enlace</li><li>Marca de tiempo de cada clic</li><li>Dispositivo en el que se hizo clic</li><li>Múltiples clics del mismo destinatario</li></ul><h3>Línea de tiempo del email</h3><p>Vista cronológica:</p><ul><li>09:00 - Email enviado</li><li>09:15 - Primera apertura (iPhone)</li><li>09:17 - Clic en enlace \"Detalles de Propiedad\"</li><li>14:30 - Email reabierto (Escritorio)</li><li>14:32 - Clic en enlace \"Reservar Visita\"</li></ul>"
+          "text": "<h3>Seguimiento por email</h3><p>Para cada email enviado ves:</p><ol><li>Abre contacto o ve al Centro de Comunicación</li><li>Selecciona un email enviado</li><li>El panel de detalles del email muestra:  <ul><li><strong>Enviado:</strong> Fecha y hora de envío</li><li><strong>Abierto:</strong> Primera apertura + número de veces abierto</li><li><strong>Clic:</strong> Qué enlaces + cuántas veces</li><li><strong>Respondido:</strong> Si el destinatario ha respondido</li><li><strong>Dispositivo:</strong> En qué se abrió el email</li></ul></li></ol><h3>nietificación de apertura</h3><p>nietificaciones en tiempo real:</p><ul><li>nietificación de escritorio cuando se abre el email</li><li>Insignia junto al nombre del contacto</li><li>Indicador \"Recién abierto\" en bandeja de entrada</li></ul><h3>Detalles de seguimiento de clics</h3><p>Para cada enlace en tu email:</p><ul><li>Número de clics por enlace</li><li>Marca de tiempo de cada clic</li><li>Dispositivo en el que se hizo clic</li><li>Múltiples clics del mismo destinatario</li></ul><h3>Línea de tiempo del email</h3><p>Vista cronológica:</p><ul><li>09:00 - Email enviado</li><li>09:15 - Primera apertura (iPhone)</li><li>09:17 - Clic en enlace \"Detalles de Propiedad\"</li><li>14:30 - Email reabierto (Escritorio)</li><li>14:32 - Clic en enlace \"Reservar Visita\"</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "email-analytics-dashboard",
@@ -89,14 +96,13 @@
           "text": "<h3>Toegang tot Analytics</h3><ol><li>Ga naar <strong>Reports > Email Analytics</strong></li><li>Kies tijdsperiode (laatste 7/30/90 dagen, custom)</li><li>Filter op:  <ul><li>Template type</li><li>Recipient segment</li><li>Deal stage</li><li>Agent</li></ul></li></ol><h3>Key Metrics</h3><p>Dashboard toont:</p><ul><li><strong>Emails Sent:</strong> Totaal aantal verzonden</li><li><strong>Open Rate:</strong> % geopend (gemiddeld ~25-30%)</li><li><strong>Click Rate:</strong> % geklikt (gemiddeld ~3-5%)</li><li><strong>Reply Rate:</strong> % gereageerd</li><li><strong>Bounce Rate:</strong> % niet afgeleverd</li><li><strong>Unsubscribe Rate:</strong> % uitgeschreven</li></ul><h3>Engagement Over Time</h3><p>Grafiek toont:</p><ul><li>Open rates per dag/week/maand</li><li>Click rates trends</li><li>Beste verzendtijden (heatmap)</li><li>Peak engagement uren</li></ul><h3>Top Performing Emails</h3><p>Ranglijst van best presterende emails:</p><ul><li>Hoogste open rate</li><li>Meeste clicks</li><li>Snelste response tijd</li><li>Meest gebruikte templates</li></ul><h3>Engagement by Contact</h3><p>Zie welke contacten meest betrokken zijn:</p><ul><li><strong>Hot leads:</strong> Opent elke email binnen 1 uur</li><li><strong>Engaged:</strong> Regelmatig opent en klikt</li><li><strong>Cold:</strong> Opent zelden of nooit</li></ul>"
         },
         "en": {
-          "text": "<h3>Access to Analytics</h3><ol><li>Go to <strong>Reports > Email Analytics</strong></li><li>Choose time period (last 7/30/90 days, custom)</li><li>Filter by:  <ul><li>Template type</li><li>Recipient segment</li><li>Deal stage</li><li>Agent</li></ul></li></ol><h3>Key Metrics</h3><p>Dashboard shows:</p><ul><li><strong>Emails Sent:</strong> Total number sent</li><li><strong>Open Rate:</strong> % opened (average ~25-30%)</li><li><strong>Click Rate:</strong> % clicked (average ~3-5%)</li><li><strong>Reply Rate:</strong> % replied</li><li><strong>Bounce Rate:</strong> % not delivered</li><li><strong>Unsubscribe Rate:</strong> % unsubscribed</li></ul><h3>Engagement Over Time</h3><p>Graph shows:</p><ul><li>Open rates per day/week/month</li><li>Click rate trends</li><li>Best send times (heatmap)</li><li>Peak engagement hours</li></ul><h3>Top Performing Emails</h3><p>Ranking of best performing emails:</p><ul><li>Highest open rate</li><li>Most clicks</li><li>Fastest response time</li><li>Most used templates</li></ul><h3>Engagement by Contact</h3><p>See which contacts are most engaged:</p><ul><li><strong>Hot leads:</strong> Opens every email within 1 hour</li><li><strong>Engaged:</strong> Regularly opens and clicks</li><li><strong>Cold:</strong> Rarely or never opens</li></ul>"
+          "text": "<h3>Access to Analytics</h3><ol><li>Go to <strong>Reports > Email Analytics</strong></li><li>Choose time period (last 7/30/90 days, custom)</li><li>Filter by:  <ul><li>Template type</li><li>Recipient segment</li><li>Deal stage</li><li>Agent</li></ul></li></ol><h3>Key Metrics</h3><p>Dashboard shows:</p><ul><li><strong>Emails Sent:</strong> Total number sent</li><li><strong>Open Rate:</strong> % opened (average ~25-30%)</li><li><strong>Click Rate:</strong> % clicked (average ~3-5%)</li><li><strong>Reply Rate:</strong> % replied</li><li><strong>Bounce Rate:</strong> % niet delivered</li><li><strong>Unsubscribe Rate:</strong> % unsubscribed</li></ul><h3>Engagement Over Time</h3><p>Graph shows:</p><ul><li>Open rates per day/week/month</li><li>Click rate trends</li><li>Best send times (heatmap)</li><li>Peak engagement hours</li></ul><h3>Top Performing Emails</h3><p>Ranking of best performing emails:</p><ul><li>Highest open rate</li><li>Most clicks</li><li>Fastest response time</li><li>Most used templates</li></ul><h3>Engagement by Contact</h3><p>See which contacts are most engaged:</p><ul><li><strong>Hot leads:</strong> Opens every email within 1 hour</li><li><strong>Engaged:</strong> Regularly opens and clicks</li><li><strong>Cold:</strong> Rarely or never opens</li></ul>"
         },
         "es": {
           "text": "<h3>Acceso a análisis</h3><ol><li>Ve a <strong>Reports > Email Analytics</strong></li><li>Elige período de tiempo (últimos 7/30/90 días, personalizado)</li><li>Filtrar por:  <ul><li>Tipo de plantilla</li><li>Segmento de destinatarios</li><li>Etapa de trato</li><li>Agente</li></ul></li></ol><h3>Métricas clave</h3><p>El panel muestra:</p><ul><li><strong>Emails enviados:</strong> Número total enviado</li><li><strong>Tasa de apertura:</strong> % abierto (promedio ~25-30%)</li><li><strong>Tasa de clics:</strong> % hecho clic (promedio ~3-5%)</li><li><strong>Tasa de respuesta:</strong> % respondido</li><li><strong>Tasa de rebote:</strong> % no entregado</li><li><strong>Tasa de desuscripción:</strong> % desuscrito</li></ul><h3>Engagement a lo largo del tiempo</h3><p>El gráfico muestra:</p><ul><li>Tasas de apertura por día/semana/mes</li><li>Tendencias de tasas de clics</li><li>Mejores horarios de envío (mapa de calor)</li><li>Horas pico de engagement</li></ul><h3>Emails con mejor rendimiento</h3><p>Clasificación de emails con mejor rendimiento:</p><ul><li>Mayor tasa de apertura</li><li>Más clics</li><li>Tiempo de respuesta más rápido</li><li>Plantillas más usadas</li></ul><h3>Engagement por contacto</h3><p>Ve qué contactos están más comprometidos:</p><ul><li><strong>Leads calientes:</strong> Abre cada email dentro de 1 hora</li><li><strong>Comprometidos:</strong> Abre y hace clic regularmente</li><li><strong>Fríos:</strong> Rara vez o nunca abre</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "using-data-to-improve",
@@ -118,7 +124,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "privacy-and-compliance",
@@ -132,7 +137,7 @@
           "text": "<h3>Email Tracking en AVG/GDPR</h3><p>Tesoro email tracking is GDPR-compliant:</p><ul><li><strong>Transparantie:</strong> Ontvangers kunnen tracking zien in email footer</li><li><strong>Opt-out mogelijk:</strong> Klanten kunnen tracking uitschakelen</li><li><strong>Data minimalisatie:</strong> Alleen noodzakelijke data wordt verzameld</li><li><strong>Bewaartermijn:</strong> Tracking data wordt na 12 maanden verwijderd</li></ul><h3>Tracking Uitschakelen</h3><p>Voor specifieke emails kun je tracking uitschakelen:</p><ol><li>Bij email compose, klik <strong>Tracking Settings</strong></li><li>Schakel uit:  <ul><li>Open tracking</li><li>Click tracking</li><li>Location tracking</li></ul></li><li>Email wordt verstuurd zonder tracking</li></ol><h3>Tracking Pixel</h3><p>Hoe werkt open tracking?</p><ul><li>Kleine onzichtbare afbeelding in email</li><li>Wanneer email wordt geopend, wordt pixel geladen</li><li>Server registreert open event</li><li>Pixel is 1x1 px en onzichtbaar voor ontvanger</li></ul><h3>Tracking Beperkingen</h3><p>Let op deze beperkingen:</p><ul><li><strong>Email clients blokkeren:</strong> Sommige clients blokkeren tracking pixels (bijv. Apple Mail met privacy protection)</li><li><strong>Images disabled:</strong> Als ontvanger images uit heeft, geen tracking</li><li><strong>Plain text emails:</strong> Tracking werkt niet in plain text</li><li><strong>Forwards:</strong> Bij doorsturen naar anderen, geen aparte tracking</li></ul>"
         },
         "en": {
-          "text": "<h3>Email Tracking and GDPR</h3><p>Tesoro email tracking is GDPR-compliant:</p><ul><li><strong>Transparency:</strong> Recipients can see tracking in email footer</li><li><strong>Opt-out possible:</strong> Customers can disable tracking</li><li><strong>Data minimization:</strong> Only necessary data is collected</li><li><strong>Retention period:</strong> Tracking data is deleted after 12 months</li></ul><h3>Disable Tracking</h3><p>For specific emails you can disable tracking:</p><ol><li>At email compose, click <strong>Tracking Settings</strong></li><li>Disable:  <ul><li>Open tracking</li><li>Click tracking</li><li>Location tracking</li></ul></li><li>Email is sent without tracking</li></ol><h3>Tracking Pixel</h3><p>How does open tracking work?</p><ul><li>Small invisible image in email</li><li>When email is opened, pixel is loaded</li><li>Server registers open event</li><li>Pixel is 1x1 px and invisible to recipient</li></ul><h3>Tracking Limitations</h3><p>Note these limitations:</p><ul><li><strong>Email clients block:</strong> Some clients block tracking pixels (e.g., Apple Mail with privacy protection)</li><li><strong>Images disabled:</strong> If recipient has images disabled, no tracking</li><li><strong>Plain text emails:</strong> Tracking doesn't work in plain text</li><li><strong>Forwards:</strong> When forwarding to others, no separate tracking</li></ul>"
+          "text": "<h3>Email Tracking and GDPR</h3><p>Tesoro email tracking is GDPR-compliant:</p><ul><li><strong>Transparency:</strong> Recipients can see tracking in email footer</li><li><strong>Opt-out possible:</strong> Customers can disable tracking</li><li><strong>Data minimization:</strong> Only necessary data is collected</li><li><strong>Retention period:</strong> Tracking data is deleted after 12 months</li></ul><h3>Disable Tracking</h3><p>For specific emails you can disable tracking:</p><ol><li>At email compose, click <strong>Tracking Settings</strong></li><li>Disable:  <ul><li>Open tracking</li><li>Click tracking</li><li>Location tracking</li></ul></li><li>Email is sent without tracking</li></ol><h3>Tracking Pixel</h3><p>How does open tracking work?</p><ul><li>Small invisible image in email</li><li>When email is opened, pixel is loaded</li><li>Server registers open event</li><li>Pixel is 1x1 px and invisible to recipient</li></ul><h3>Tracking Limitations</h3><p>niete these limitations:</p><ul><li><strong>Email clients block:</strong> Some clients block tracking pixels (e.g., Apple Mail with privacy protection)</li><li><strong>Images disabled:</strong> If recipient has images disabled, no tracking</li><li><strong>Plain text emails:</strong> Tracking doesn't work in plain text</li><li><strong>Forwards:</strong> When forwarding to others, no separate tracking</li></ul>"
         },
         "es": {
           "text": "<h3>Seguimiento de email y GDPR</h3><p>El seguimiento de email de Tesoro cumple con GDPR:</p><ul><li><strong>Transparencia:</strong> Los destinatarios pueden ver el seguimiento en el pie de página del email</li><li><strong>Posibilidad de exclusión:</strong> Los clientes pueden desactivar el seguimiento</li><li><strong>Minimización de datos:</strong> Solo se recopilan datos necesarios</li><li><strong>Período de retención:</strong> Los datos de seguimiento se eliminan después de 12 meses</li></ul><h3>Desactivar seguimiento</h3><p>Para emails específicos puedes desactivar el seguimiento:</p><ol><li>Al componer email, haz clic en <strong>Tracking Settings</strong></li><li>Desactiva:  <ul><li>Seguimiento de apertura</li><li>Seguimiento de clics</li><li>Seguimiento de ubicación</li></ul></li><li>El email se envía sin seguimiento</li></ol><h3>Píxel de seguimiento</h3><p>¿Cómo funciona el seguimiento de apertura?</p><ul><li>Pequeña imagen invisible en email</li><li>Cuando se abre el email, se carga el píxel</li><li>El servidor registra el evento de apertura</li><li>El píxel es de 1x1 px e invisible para el destinatario</li></ul><h3>Limitaciones del seguimiento</h3><p>Ten en cuenta estas limitaciones:</p><ul><li><strong>Clientes de email bloquean:</strong> Algunos clientes bloquean píxeles de seguimiento (ej., Apple Mail con protección de privacidad)</li><li><strong>Imágenes desactivadas:</strong> Si el destinatario tiene imágenes desactivadas, sin seguimiento</li><li><strong>Emails de texto plano:</strong> El seguimiento no funciona en texto plano</li><li><strong>Reenvíos:</strong> Al reenviar a otros, sin seguimiento separado</li></ul>"
@@ -140,14 +145,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "email-templates-guide",
     "email-integration-setup",
     "automated-follow-ups",
     "communication-center-overview"
   ],
-
   "faq": [
     {
       "question": {

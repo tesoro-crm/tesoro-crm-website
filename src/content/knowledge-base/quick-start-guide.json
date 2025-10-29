@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T10:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "getting-started",
+    "category": "deals",
     "difficulty": "beginner",
-    "tags": ["getting-started", "tutorial", "quick-start", "basics", "walkthrough"],
+    "tags": [
+      "getting-started",
+      "tutorial",
+      "quick-start",
+      "basics",
+      "walkthrough"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": true,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro quick start", "crm tutorial", "getting started", "tesoro guide", "real estate crm"]
+    "keywords": [
+      "tesoro quick start",
+      "crm tutorial",
+      "getting started",
+      "tesoro guide",
+      "real estate crm"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Quick start gids: 15 minuten naar je eerste deal",
@@ -32,7 +42,6 @@
     },
     "icon": "rocket_launch"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "step-contact-creation",
@@ -79,7 +87,6 @@
         }
       ]
     },
-
     {
       "type": "image",
       "id": "contact-creation-visual",
@@ -102,7 +109,6 @@
         "es": "Después de guardar ves inmediatamente el perfil de contacto completo con todos los detalles"
       }
     },
-
     {
       "type": "steps",
       "id": "step-deal-requirements",
@@ -132,7 +138,6 @@
         }
       ]
     },
-
     {
       "type": "image",
       "id": "deal-creation-visual",
@@ -155,7 +160,6 @@
         "es": "Vista general del deal muestra todos los requisitos del comprador, información de contacto y resumen del deal"
       }
     },
-
     {
       "type": "steps",
       "id": "step-ai-matching",
@@ -185,7 +189,6 @@
         }
       ]
     },
-
     {
       "type": "image",
       "id": "ai-matching-visual",
@@ -208,7 +211,6 @@
         "es": "La IA organiza automáticamente las propiedades en 'Preselect', 'Proposed', 'Interested' y otras etapas"
       }
     },
-
     {
       "type": "steps",
       "id": "step-email-client",
@@ -238,7 +240,6 @@
         }
       ]
     },
-
     {
       "type": "image",
       "id": "email-compose-visual",
@@ -261,7 +262,6 @@
         "es": "Envía propiedades directamente desde el deal con detalles del cliente prellenados"
       }
     },
-
     {
       "type": "steps",
       "id": "step-kanban-pipeline",
@@ -279,19 +279,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Stap 7: Track progress met Kanban</strong></p><ol><li>Ga naar <strong>Deals</strong> in de sidebar</li><li>Je ziet het Kanban board met alle deal stages</li><li>Vind Sarah's deal in de \"First Contact\" kolom</li></ol><p><strong>Stap 8: Move to next stage</strong></p><p>Als Sarah reageert \"I love #2! Can we schedule viewing?\", tijd om de deal te verplaatsen:</p><ol><li>Sleep Sarah's deal card van \"First Contact\" naar \"Viewing Scheduled\"</li><li>Een modal opent: vul viewing datum/tijd in</li><li>Voeg een note toe: \"Sarah interested in Gracia apartment\"</li><li>Klik <strong>Save & Move</strong></li></ol><p><strong>Wat gebeurt er automatisch:</strong></p><ul><li>Deal stage update wordt gelogd in timeline</li><li>Viewing wordt toegevoegd aan je Calendar</li><li>Sarah krijgt automatisch viewing confirmation email</li><li>Je dashboard metrics updaten real-time</li></ul>"
+              "text": "<p><strong>Stap 7: Track progress met Kanban</strong></p><ol><li>Ga naar <strong>Deals</strong> in de sidebar</li><li>Je ziet het Kanban board met alle deal stages</li><li>Vind Sarah's deal in de \"First Contact\" kolom</li></ol><p><strong>Stap 8: Move to next stage</strong></p><p>Als Sarah reageert \"I love #2! Can we schedule viewing?\", tijd om de deal te verplaatsen:</p><ol><li>Sleep Sarah's deal card van \"First Contact\" naar \"Viewing Scheduled\"</li><li>Een modal opent: vul viewing datum/tijd in</li><li>Voeg een niete toe: \"Sarah interested in Gracia apartment\"</li><li>Klik <strong>Save & Move</strong></li></ol><p><strong>Wat gebeurt er automatisch:</strong></p><ul><li>Deal stage update wordt gelogd in timeline</li><li>Viewing wordt toegevoegd aan je Calendar</li><li>Sarah krijgt automatisch viewing confirmation email</li><li>Je dashboard metrics updaten real-time</li></ul>"
             },
             "en": {
-              "text": "<p><strong>Step 7: Track progress with Kanban</strong></p><ol><li>Go to <strong>Deals</strong> in the sidebar</li><li>You see the Kanban board with all deal stages</li><li>Find Sarah's deal in the \"First Contact\" column</li></ol><p><strong>Step 8: Move to next stage</strong></p><p>When Sarah responds \"I love #2! Can we schedule viewing?\", time to move the deal:</p><ol><li>Drag Sarah's deal card from \"First Contact\" to \"Viewing Scheduled\"</li><li>A modal opens: fill in viewing date/time</li><li>Add a note: \"Sarah interested in Gracia apartment\"</li><li>Click <strong>Save & Move</strong></li></ol><p><strong>What happens automatically:</strong></p><ul><li>Deal stage update is logged in timeline</li><li>Viewing is added to your Calendar</li><li>Sarah automatically gets viewing confirmation email</li><li>Your dashboard metrics update real-time</li></ul>"
+              "text": "<p><strong>Step 7: Track progress with Kanban</strong></p><ol><li>Go to <strong>Deals</strong> in the sidebar</li><li>You see the Kanban board with all deal stages</li><li>Find Sarah's deal in the \"First Contact\" column</li></ol><p><strong>Step 8: Move to next stage</strong></p><p>When Sarah responds \"I love #2! Can we schedule viewing?\", time to move the deal:</p><ol><li>Drag Sarah's deal card from \"First Contact\" to \"Viewing Scheduled\"</li><li>A modal opens: fill in viewing date/time</li><li>Add a niete: \"Sarah interested in Gracia apartment\"</li><li>Click <strong>Save & Move</strong></li></ol><p><strong>What happens automatically:</strong></p><ul><li>Deal stage update is logged in timeline</li><li>Viewing is added to your Calendar</li><li>Sarah automatically gets viewing confirmation email</li><li>Your dashboard metrics update real-time</li></ul>"
             },
             "es": {
-              "text": "<p><strong>Paso 7: Rastrear progreso con Kanban</strong></p><ol><li>Ve a <strong>Deals</strong> en la barra lateral</li><li>Ves el tablero Kanban con todas las etapas de deals</li><li>Encuentra el deal de Sarah en la columna \"First Contact\"</li></ol><p><strong>Paso 8: Mover a siguiente etapa</strong></p><p>Cuando Sarah responde \"I love #2! Can we schedule viewing?\", tiempo de mover el deal:</p><ol><li>Arrastra la tarjeta del deal de Sarah de \"First Contact\" a \"Viewing Scheduled\"</li><li>Se abre un modal: completa fecha/hora de la visita</li><li>Agrega una nota: \"Sarah interested in Gracia apartment\"</li><li>Haz clic en <strong>Save & Move</strong></li></ol><p><strong>Lo que sucede automáticamente:</strong></p><ul><li>La actualización de etapa del deal se registra en la línea de tiempo</li><li>La visita se agrega a tu Calendar</li><li>Sarah recibe automáticamente email de confirmación de visita</li><li>Las métricas de tu dashboard se actualizan en tiempo real</li></ul>"
+              "text": "<p><strong>Paso 7: Rastrear progreso con Kanban</strong></p><ol><li>Ve a <strong>Deals</strong> en la barra lateral</li><li>Ves el tablero Kanban con todas las etapas de deals</li><li>Encuentra el deal de Sarah en la columna \"First Contact\"</li></ol><p><strong>Paso 8: Mover a siguiente etapa</strong></p><p>Cuando Sarah responde \"I love #2! Can we schedule viewing?\", tiempo de mover el deal:</p><ol><li>Arrastra la tarjeta del deal de Sarah de \"First Contact\" a \"Viewing Scheduled\"</li><li>Se abre un modal: completa fecha/hora de la visita</li><li>Agrega una nieta: \"Sarah interested in Gracia apartment\"</li><li>Haz clic en <strong>Save & Move</strong></li></ol><p><strong>Lo que sucede automáticamente:</strong></p><ul><li>La actualización de etapa del deal se registra en la línea de tiempo</li><li>La visita se agrega a tu Calendar</li><li>Sarah recibe automáticamente email de confirmación de visita</li><li>Las métricas de tu dashboard se actualizan en tiempo real</li></ul>"
             }
           }
         }
       ]
     },
-
     {
       "type": "image",
       "id": "kanban-board-visual",
@@ -314,7 +313,6 @@
         "es": "Vista general de todos los deals a través de todas las etapas del pipeline - arrastra tarjetas para mover deals"
       }
     },
-
     {
       "type": "steps",
       "id": "step-closing-deal",
@@ -344,7 +342,6 @@
         }
       ]
     },
-
     {
       "type": "image",
       "id": "pipeline-stages-visual",
@@ -367,7 +364,6 @@
         "es": "Haz clic en un botón de etapa para mover el deal por el pipeline - desde 'Knowing Property' hasta 'Won'"
       }
     },
-
     {
       "type": "callout",
       "id": "tutorial-complete",
@@ -390,14 +386,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "first-steps-checklist",
     "deal-pipeline-complete-guide",
     "ai-property-matching-advanced",
     "basic-contact-management-tutorial"
   ],
-
   "faq": [
     {
       "question": {

@@ -7,7 +7,13 @@
     "authorId": "elena-rodriguez",
     "category": "reports",
     "difficulty": "intermediate",
-    "tags": ["reports", "sales", "performance", "tracking", "metrics"],
+    "tags": [
+      "reports",
+      "sales",
+      "performance",
+      "tracking",
+      "metrics"
+    ],
     "featured": false,
     "readingTime": 9,
     "videoIncluded": false,
@@ -15,7 +21,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["sales performance", "sales reports", "real estate sales tracking", "agent performance", "sales analytics", "revenue reports"]
+    "keywords": [
+      "sales performance",
+      "sales reports",
+      "real estate sales tracking",
+      "agent performance",
+      "sales analytics",
+      "revenue reports"
+    ]
   },
   "hero": {
     "title": {
@@ -90,7 +103,7 @@
           },
           "content": {
             "nl": "Stel je rapport parameters in: selecteer het datumbereik, kies welke team leden of teams je wilt opnemen, en pas eventuele extra filters toe. Voor revenue rapporten kun je ook deal fases selecteren om op te focussen. Gebruik de vergelijkingsfunctie om periode-over-periode analyse toe te voegen.",
-            "en": "Set your report parameters: select the date range, choose which team members or teams to include, and apply any additional filters. For revenue reports, you can also select deal stages to focus on. Use the comparison feature to add period-over-period analysis.",
+            "en": "Set your report parameters: select the date range, choose which teamlids or teams to include, and apply any additional filters. For revenue reports, you can also select deal stages to focus on. Use the comparison feature to add period-over-period analysis.",
             "es": "Establece los parámetros de tu informe: selecciona el rango de fechas, elige qué miembros del equipo o equipos incluir y aplica filtros adicionales. Para informes de ingresos, también puedes seleccionar etapas de negocio en las que enfocarte. Usa la función de comparación para agregar análisis de período a período."
           }
         },
@@ -114,7 +127,7 @@
           },
           "content": {
             "nl": "Export je rapport naar Excel, PDF, of CSV formaat door op de 'Export' knop te klikken. Je kunt het rapport ook direct delen met team leden via email door op 'Share' te klikken en hun email adressen in te voeren. Sla veelgebruikte rapporten op als templates voor snelle toegang in de toekomst.",
-            "en": "Export your report to Excel, PDF, or CSV format by clicking the 'Export' button. You can also share the report directly with team members via email by clicking 'Share' and entering their email addresses. Save frequently used reports as templates for quick access in the future.",
+            "en": "Export your report to Excel, PDF, or CSV format by clicking the 'Export' button. You can also share the report directly with teamlids via email by clicking 'Share' and entering their email addresses. Save frequently used reports as templates for quick access in the future.",
             "es": "Exporta tu informe a formato Excel, PDF o CSV haciendo clic en el botón 'Exportar'. También puedes compartir el informe directamente con miembros del equipo por correo electrónico haciendo clic en 'Compartir' e ingresando sus direcciones de correo electrónico. Guarda informes utilizados frecuentemente como plantillas para acceso rápido en el futuro."
           }
         }
@@ -155,7 +168,7 @@
       },
       "content": {
         "nl": "Wanneer je agent performance vergelijkt, houd dan rekening met context. Een nieuw teamlid zal natuurlijk lagere numbers hebben dan een veteraan. Agents die zich focussen op luxury properties hebben vaak lagere volume maar hogere deal waarde. Seizoenaliteit beïnvloedt performance metrics. Gebruik rapporten om trends te identificeren, niet om agents oneerlijk te vergelijken. Focus op individuele verbetering over tijd in plaats van alleen cross-agent vergelijkingen.",
-        "en": "When comparing agent performance, consider context. A new team member will naturally have lower numbers than a veteran. Agents focusing on luxury properties often have lower volume but higher deal value. Seasonality affects performance metrics. Use reports to identify trends, not to unfairly compare agents. Focus on individual improvement over time rather than just cross-agent comparisons.",
+        "en": "When comparing agent performance, consider context. A new teamlid will naturally have lower numbers than a veteran. Agents focusing on luxury properties often have lower volume but higher deal value. Seasonality affects performance metrics. Use reports to identify trends, niet to unfairly compare agents. Focus on individual improvement over time rather than just cross-agent comparisons.",
         "es": "Al comparar el rendimiento de los agentes, considera el contexto. Un nuevo miembro del equipo naturalmente tendrá números más bajos que un veterano. Los agentes que se enfocan en propiedades de lujo a menudo tienen menor volumen pero mayor valor de negocio. La estacionalidad afecta las métricas de rendimiento. Usa informes para identificar tendencias, no para comparar injustamente a los agentes. Concéntrate en la mejora individual a lo largo del tiempo en lugar de solo comparaciones entre agentes."
       }
     },

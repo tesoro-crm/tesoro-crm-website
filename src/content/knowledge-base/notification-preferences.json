@@ -1,13 +1,18 @@
 {
   "meta": {
-    "id": "notification-preferences",
+    "id": "nietification-preferences",
     "version": "1.0.0",
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "beginner",
-    "tags": ["settings", "notifications", "alerts", "preferences"],
+    "tags": [
+      "settings",
+      "nietifications",
+      "alerts",
+      "preferences"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
@@ -15,38 +20,44 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=1200&h=630&fit=crop",
-    "keywords": ["notifications", "alerts", "preferences", "settings", "tesoro crm"]
+    "keywords": [
+      "nietifications",
+      "alerts",
+      "preferences",
+      "settings",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
-      "nl": "Notificaties en meldingen configureren",
-      "en": "Configuring Notifications and Alerts",
-      "es": "Configurar notificaciones y alertas"
+      "nl": "nietificaties en meldingen configureren",
+      "en": "Configuring nietifications and Alerts",
+      "es": "Configurar nietificaciones y alertas"
     },
     "description": {
-      "nl": "Blijf op de hoogte van belangrijke gebeurtenissen door uw notificatie voorkeuren aan te passen aan uw werkstijl.",
-      "en": "Stay informed about important events by customizing your notification preferences to match your work style.",
-      "es": "Manténgase informado sobre eventos importantes personalizando sus preferencias de notificación para que coincidan con su estilo de trabajo."
+      "nl": "Blijf op de hoogte van belangrijke gebeurtenissen door uw nietificatie voorkeuren aan te passen aan uw werkstijl.",
+      "en": "Stay informed about important events by customizing your nietification preferences to match your work style.",
+      "es": "Manténgase informado sobre eventos importantes personalizando sus preferencias de nietificación para que coincidan con su estilo de trabajo."
     },
-    "icon": "notifications"
+    "icon": "nietifications"
   },
   "sections": [
     {
       "type": "text",
       "id": "intro",
       "content": {
-        "nl": "Notificaties zijn essentieel om op de hoogte te blijven van belangrijke gebeurtenissen in uw CRM, maar te veel notificaties kunnen afleiden en productiviteit schaden. Tesoro CRM biedt granulaire controle over welke meldingen u ontvangt, wanneer en via welk kanaal.\n\nDoor uw notificatie voorkeuren goed in te stellen, mist u geen belangrijke leads of taken, terwijl u ongestoord kunt werken wanneer dat nodig is.",
-        "en": "Notifications are essential to stay informed about important events in your CRM, but too many notifications can distract and harm productivity. Tesoro CRM offers granular control over which notifications you receive, when, and through which channel.\n\nBy properly configuring your notification preferences, you won't miss important leads or tasks while being able to work undisturbed when needed.",
-        "es": "Las notificaciones son esenciales para mantenerse informado sobre eventos importantes en su CRM, pero demasiadas notificaciones pueden distraer y dañar la productividad. Tesoro CRM ofrece control granular sobre qué notificaciones recibe, cuándo y a través de qué canal.\n\nAl configurar correctamente sus preferencias de notificación, no se perderá clientes potenciales o tareas importantes mientras puede trabajar sin interrupciones cuando sea necesario."
+        "nl": "nietificaties zijn essentieel om op de hoogte te blijven van belangrijke gebeurtenissen in uw CRM, maar te veel nietificaties kunnen afleiden en productiviteit schaden. Tesoro CRM biedt granulaire controle over welke meldingen u ontvangt, wanneer en via welk kanaal.\n\nDoor uw nietificatie voorkeuren goed in te stellen, mist u geen belangrijke leads of taken, terwijl u ongestoord kunt werken wanneer dat nodig is.",
+        "en": "nietifications are essential to stay informed about important events in your CRM, but too many nietifications can distract and harm productivity. Tesoro CRM offers granular control over which nietifications you receive, when, and through which channel.\n\nBy properly configuring your nietification preferences, you won't miss important leads or tasks while being able to work undisturbed when needed.",
+        "es": "Las nietificaciones son esenciales para mantenerse informado sobre eventos importantes en su CRM, pero demasiadas nietificaciones pueden distraer y dañar la productividad. Tesoro CRM ofrece control granular sobre qué nietificaciones recibe, cuándo y a través de qué canal.\n\nAl configurar correctamente sus preferencias de nietificación, no se perderá clientes potenciales o tareas importantes mientras puede trabajar sin interrupciones cuando sea necesario."
       }
     },
     {
       "type": "steps",
       "id": "access-preferences",
       "title": {
-        "nl": "Toegang tot notificatie instellingen",
-        "en": "Accessing Notification Settings",
-        "es": "Acceder a configuración de notificaciones"
+        "nl": "Toegang tot nietificatie instellingen",
+        "en": "Accessing nietification Settings",
+        "es": "Acceder a configuración de nietificaciones"
       },
       "steps": [
         {
@@ -56,32 +67,32 @@
             "es": "Abrir configuración de su perfil"
           },
           "description": {
-            "nl": "Klik op uw profielfoto rechtsboven en selecteer 'Instellingen'. Navigeer naar het tabblad 'Notificaties'. Hier kunt u al uw persoonlijke notificatie voorkeuren beheren. Deze instellingen zijn specifiek voor uw account en hebben geen invloed op andere teamleden.",
-            "en": "Click on your profile photo in the top right and select 'Settings'. Navigate to the 'Notifications' tab. Here you can manage all your personal notification preferences. These settings are specific to your account and don't affect other team members.",
-            "es": "Haga clic en su foto de perfil en la parte superior derecha y seleccione 'Configuración'. Navegue a la pestaña 'Notificaciones'. Aquí puede administrar todas sus preferencias de notificación personales. Estas configuraciones son específicas de su cuenta y no afectan a otros miembros del equipo."
+            "nl": "Klik op uw profielfoto rechtsboven en selecteer 'Instellingen'. Navigeer naar het tabblad 'nietificaties'. Hier kunt u al uw persoonlijke nietificatie voorkeuren beheren. Deze instellingen zijn specifiek voor uw account en hebben geen invloed op andere teamleden.",
+            "en": "Click on your profile photo in the top right and select 'Settings'. Navigate to the 'nietifications' tab. Here you can manage all your personal nietification preferences. These settings are specific to your account and don't affect other teamlids.",
+            "es": "Haga clic en su foto de perfil en la parte superior derecha y seleccione 'Configuración'. Navegue a la pestaña 'nietificaciones'. Aquí puede administrar todas sus preferencias de nietificación personales. Estas configuraciones son específicas de su cuenta y no afectan a otros miembros del equipo."
           }
         },
         {
           "title": {
-            "nl": "Kies notificatie kanalen",
-            "en": "Choose Notification Channels",
-            "es": "Elegir canales de notificación"
+            "nl": "Kies nietificatie kanalen",
+            "en": "Choose nietification Channels",
+            "es": "Elegir canales de nietificación"
           },
           "description": {
-            "nl": "Tesoro CRM ondersteunt drie notificatie kanalen:\n\n**In-app**: Meldingen binnen het CRM systeem (klokje-icoon rechtsboven)\n\n**E-mail**: Notificaties naar uw e-mailadres\n\n**Push notificaties**: Directe meldingen op uw apparaat (mobiele app)\n\nU kunt per gebeurtenistype kiezen welke kanalen u wilt gebruiken.",
-            "en": "Tesoro CRM supports three notification channels:\n\n**In-app**: Notifications within the CRM system (bell icon top right)\n\n**Email**: Notifications to your email address\n\n**Push notifications**: Direct notifications on your device (mobile app)\n\nYou can choose which channels to use for each event type.",
-            "es": "Tesoro CRM admite tres canales de notificación:\n\n**En la aplicación**: Notificaciones dentro del sistema CRM (icono de campana arriba a la derecha)\n\n**Correo electrónico**: Notificaciones a su dirección de correo electrónico\n\n**Notificaciones push**: Notificaciones directas en su dispositivo (aplicación móvil)\n\nPuede elegir qué canales usar para cada tipo de evento."
+            "nl": "Tesoro CRM ondersteunt drie nietificatie kanalen:\n\n**In-app**: Meldingen binnen het CRM systeem (klokje-icoon rechtsboven)\n\n**E-mail**: nietificaties naar uw e-mailadres\n\n**Push nietificaties**: Directe meldingen op uw apparaat (mobiele app)\n\nU kunt per gebeurtenistype kiezen welke kanalen u wilt gebruiken.",
+            "en": "Tesoro CRM supports three nietification channels:\n\n**In-app**: nietifications within the CRM system (bell icon top right)\n\n**Email**: nietifications to your email address\n\n**Push nietifications**: Direct nietifications on your device (mobile app)\n\nYou can choose which channels to use for each event type.",
+            "es": "Tesoro CRM admite tres canales de nietificación:\n\n**En la aplicación**: nietificaciones dentro del sistema CRM (icono de campana arriba a la derecha)\n\n**Correo electrónico**: nietificaciones a su dirección de correo electrónico\n\n**nietificaciones push**: nietificaciones directas en su dispositivo (aplicación móvil)\n\nPuede elegir qué canales usar para cada tipo de evento."
           }
         }
       ]
     },
     {
       "type": "steps",
-      "id": "notification-types",
+      "id": "nietification-types",
       "title": {
-        "nl": "Notificatie categorieën configureren",
-        "en": "Configuring Notification Categories",
-        "es": "Configurar categorías de notificaciones"
+        "nl": "nietificatie categorieën configureren",
+        "en": "Configuring nietification Categories",
+        "es": "Configurar categorías de nietificaciones"
       },
       "steps": [
         {
@@ -91,9 +102,9 @@
             "es": "Nuevos clientes potenciales y asignaciones"
           },
           "description": {
-            "nl": "Ontvang meldingen wanneer:\n- Een nieuwe lead wordt toegewezen aan u\n- Een contact of woning wordt gedeeld met u\n- Een deal wordt overgedragen naar u\n- Een teamlid u vermeldt in een opmerking\n\nAanbeveling: Schakel alle kanalen in voor dit type notificatie om geen belangrijke toewijzingen te missen.",
-            "en": "Receive notifications when:\n- A new lead is assigned to you\n- A contact or property is shared with you\n- A deal is transferred to you\n- A team member mentions you in a comment\n\nRecommendation: Enable all channels for this notification type to avoid missing important assignments.",
-            "es": "Reciba notificaciones cuando:\n- Se le asigna un nuevo cliente potencial\n- Se comparte un contacto o propiedad con usted\n- Se le transfiere un acuerdo\n- Un miembro del equipo lo menciona en un comentario\n\nRecomendación: Habilite todos los canales para este tipo de notificación para evitar perder asignaciones importantes."
+            "nl": "Ontvang meldingen wanneer:\n- Een nieuwe lead wordt toegewezen aan u\n- Een contact of woning wordt gedeeld met u\n- Een deal wordt overgedragen naar u\n- Een teamlid u vermeldt in een opmerking\n\nAanbeveling: Schakel alle kanalen in voor dit type nietificatie om geen belangrijke toewijzingen te missen.",
+            "en": "Receive nietifications when:\n- A new lead is assigned to you\n- A contact or property is shared with you\n- A deal is transferred to you\n- A teamlid mentions you in a comment\n\nRecommendation: Enable all channels for this nietification type to avoid missing important assignments.",
+            "es": "Reciba nietificaciones cuando:\n- Se le asigna un nuevo cliente potencial\n- Se comparte un contacto o propiedad con usted\n- Se le transfiere un acuerdo\n- Un miembro del equipo lo menciona en un comentario\n\nRecomendación: Habilite todos los canales para este tipo de nietificación para evitar perder asignaciones importantes."
           }
         },
         {
@@ -103,9 +114,9 @@
             "es": "Tareas y citas"
           },
           "description": {
-            "nl": "Ontvang meldingen wanneer:\n- Een taak die aan u is toegewezen bijna verlopen is (1 dag van tevoren)\n- Een afspraak nadert (1 uur van tevoren)\n- Een vervaltaak wordt gemist\n- Iemand uw afspraakverzoek accepteert of afwijst\n\nAanbeveling: In-app en push notificaties voor herinneringen, e-mail voor dagelijkse samenvatting van taken.",
-            "en": "Receive notifications when:\n- A task assigned to you is about to expire (1 day in advance)\n- An appointment is approaching (1 hour in advance)\n- A due task is missed\n- Someone accepts or declines your appointment request\n\nRecommendation: In-app and push notifications for reminders, email for daily task summary.",
-            "es": "Reciba notificaciones cuando:\n- Una tarea asignada a usted está por vencer (1 día de anticipación)\n- Se acerca una cita (1 hora de anticipación)\n- Se pierde una tarea vencida\n- Alguien acepta o rechaza su solicitud de cita\n\nRecomendación: Notificaciones en la aplicación y push para recordatorios, correo electrónico para resumen diario de tareas."
+            "nl": "Ontvang meldingen wanneer:\n- Een taak die aan u is toegewezen bijna verlopen is (1 dag van tevoren)\n- Een afspraak nadert (1 uur van tevoren)\n- Een vervaltaak wordt gemist\n- Iemand uw afspraakverzoek accepteert of afwijst\n\nAanbeveling: In-app en push nietificaties voor herinneringen, e-mail voor dagelijkse samenvatting van taken.",
+            "en": "Receive nietifications when:\n- A task assigned to you is about to expire (1 day in advance)\n- An appointment is approaching (1 hour in advance)\n- A due task is missed\n- Someone accepts or declines your appointment request\n\nRecommendation: In-app and push nietifications for reminders, email for daily task summary.",
+            "es": "Reciba nietificaciones cuando:\n- Una tarea asignada a usted está por vencer (1 día de anticipación)\n- Se acerca una cita (1 hora de anticipación)\n- Se pierde una tarea vencida\n- Alguien acepta o rechaza su solicitud de cita\n\nRecomendación: nietificaciones en la aplicación y push para recordatorios, correo electrónico para resumen diario de tareas."
           }
         },
         {
@@ -115,9 +126,9 @@
             "es": "Actualizaciones de acuerdos"
           },
           "description": {
-            "nl": "Ontvang meldingen wanneer:\n- Een deal van fase verandert\n- Een bod wordt uitgebracht op uw woning\n- Een deal wordt afgesloten (gewonnen of verloren)\n- De waarde van een deal significant wijzigt\n- Een deal langere tijd inactief is\n\nAanbeveling: In-app notificaties voor alle updates, e-mail alleen voor belangrijke wijzigingen (fase wijzigingen, biedingen).",
-            "en": "Receive notifications when:\n- A deal changes stage\n- An offer is made on your property\n- A deal closes (won or lost)\n- The value of a deal changes significantly\n- A deal has been inactive for a long time\n\nRecommendation: In-app notifications for all updates, email only for important changes (stage changes, offers).",
-            "es": "Reciba notificaciones cuando:\n- Un acuerdo cambia de fase\n- Se hace una oferta en su propiedad\n- Un acuerdo se cierra (ganado o perdido)\n- El valor de un acuerdo cambia significativamente\n- Un acuerdo ha estado inactivo durante mucho tiempo\n\nRecomendación: Notificaciones en la aplicación para todas las actualizaciones, correo electrónico solo para cambios importantes (cambios de fase, ofertas)."
+            "nl": "Ontvang meldingen wanneer:\n- Een deal van fase verandert\n- Een bod wordt uitgebracht op uw woning\n- Een deal wordt afgesloten (gewonnen of verloren)\n- De waarde van een deal significant wijzigt\n- Een deal langere tijd inactief is\n\nAanbeveling: In-app nietificaties voor alle updates, e-mail alleen voor belangrijke wijzigingen (fase wijzigingen, biedingen).",
+            "en": "Receive nietifications when:\n- A deal changes stage\n- An offer is made on your property\n- A deal closes (won or lost)\n- The value of a deal changes significantly\n- A deal has been inactive for a long time\n\nRecommendation: In-app nietifications for all updates, email only for important changes (stage changes, offers).",
+            "es": "Reciba nietificaciones cuando:\n- Un acuerdo cambia de fase\n- Se hace una oferta en su propiedad\n- Un acuerdo se cierra (ganado o perdido)\n- El valor de un acuerdo cambia significativamente\n- Un acuerdo ha estado inactivo durante mucho tiempo\n\nRecomendación: nietificaciones en la aplicación para todas las actualizaciones, correo electrónico solo para cambios importantes (cambios de fase, ofertas)."
           }
         },
         {
@@ -128,25 +139,25 @@
           },
           "description": {
             "nl": "Ontvang meldingen wanneer:\n- Een teamlid een nieuw commentaar toevoegt aan uw record\n- Uw wachtwoord binnenkort verloopt\n- Er zijn nieuwe functies beschikbaar\n- Systeem onderhoud is gepland\n- Team prestatie rapporten zijn beschikbaar (voor Managers)\n\nAanbeveling: E-mail voor systeem updates, in-app voor team communicatie.",
-            "en": "Receive notifications when:\n- A team member adds a new comment to your record\n- Your password is about to expire\n- New features are available\n- System maintenance is scheduled\n- Team performance reports are available (for Managers)\n\nRecommendation: Email for system updates, in-app for team communication.",
-            "es": "Reciba notificaciones cuando:\n- Un miembro del equipo agrega un nuevo comentario a su registro\n- Su contraseña está por vencer\n- Hay nuevas funciones disponibles\n- El mantenimiento del sistema está programado\n- Los informes de rendimiento del equipo están disponibles (para gerentes)\n\nRecomendación: Correo electrónico para actualizaciones del sistema, en la aplicación para comunicación del equipo."
+            "en": "Receive nietifications when:\n- A teamlid adds a new comment to your record\n- Your password is about to expire\n- New features are available\n- System maintenance is scheduled\n- Team performance reports are available (for Managers)\n\nRecommendation: Email for system updates, in-app for team communication.",
+            "es": "Reciba nietificaciones cuando:\n- Un miembro del equipo agrega un nuevo comentario a su registro\n- Su contraseña está por vencer\n- Hay nuevas funciones disponibles\n- El mantenimiento del sistema está programado\n- Los informes de rendimiento del equipo están disponibles (para gerentes)\n\nRecomendación: Correo electrónico para actualizaciones del sistema, en la aplicación para comunicación del equipo."
           }
         }
       ]
     },
     {
       "type": "callout",
-      "id": "notification-overload",
+      "id": "nietification-overload",
       "variant": "warning",
       "title": {
-        "nl": "Voorkom notificatie overload",
-        "en": "Prevent Notification Overload",
-        "es": "Prevenir sobrecarga de notificaciones"
+        "nl": "Voorkom nietificatie overload",
+        "en": "Prevent nietification Overload",
+        "es": "Prevenir sobrecarga de nietificaciones"
       },
       "content": {
-        "nl": "Te veel notificaties leiden tot 'notificatie blindheid' waarbij u belangrijke meldingen gaat negeren. Schakel alleen notificaties in die echt actie vereisen. Overweeg het bundelen van minder urgente updates in een dagelijkse samenvattingsmail in plaats van directe meldingen.",
-        "en": "Too many notifications lead to 'notification blindness' where you start ignoring important alerts. Only enable notifications that truly require action. Consider bundling less urgent updates into a daily summary email instead of immediate notifications.",
-        "es": "Demasiadas notificaciones conducen a 'ceguera de notificaciones' donde comienza a ignorar alertas importantes. Solo habilite notificaciones que realmente requieran acción. Considere agrupar actualizaciones menos urgentes en un correo electrónico de resumen diario en lugar de notificaciones inmediatas."
+        "nl": "Te veel nietificaties leiden tot 'nietificatie blindheid' waarbij u belangrijke meldingen gaat negeren. Schakel alleen nietificaties in die echt actie vereisen. Overweeg het bundelen van minder urgente updates in een dagelijkse samenvattingsmail in plaats van directe meldingen.",
+        "en": "Too many nietifications lead to 'nietification blindness' where you start ignoring important alerts. Only enable nietifications that truly require action. Consider bundling less urgent updates into a daily summary email instead of immediate nietifications.",
+        "es": "Demasiadas nietificaciones conducen a 'ceguera de nietificaciones' donde comienza a ignorar alertas importantes. Solo habilite nietificaciones que realmente requieran acción. Considere agrupar actualizaciones menos urgentes en un correo electrónico de resumen diario en lugar de nietificaciones inmediatas."
       }
     },
     {
@@ -165,38 +176,38 @@
             "es": "Establecer sus horas de trabajo"
           },
           "description": {
-            "nl": "Definieer wanneer u beschikbaar bent voor notificaties. Bijvoorbeeld: maandag-vrijdag 9:00-18:00. Buiten deze uren worden notificaties gedempt (behalve urgente meldingen die u expliciet hebt ingeschakeld). Dit helpt bij work-life balance en voorkomt burn-out.",
-            "en": "Define when you're available for notifications. For example: Monday-Friday 9:00-18:00. Outside these hours, notifications are muted (except urgent alerts you've explicitly enabled). This helps with work-life balance and prevents burnout.",
-            "es": "Defina cuándo está disponible para notificaciones. Por ejemplo: lunes a viernes 9:00-18:00. Fuera de estas horas, las notificaciones se silencian (excepto alertas urgentes que haya habilitado explícitamente). Esto ayuda con el equilibrio entre trabajo y vida personal y previene el agotamiento."
+            "nl": "Definieer wanneer u beschikbaar bent voor nietificaties. Bijvoorbeeld: maandag-vrijdag 9:00-18:00. Buiten deze uren worden nietificaties gedempt (behalve urgente meldingen die u expliciet hebt ingeschakeld). Dit helpt bij work-life balance en voorkomt burn-out.",
+            "en": "Define when you're available for nietifications. For example: Monday-Friday 9:00-18:00. Outside these hours, nietifications are muted (except urgent alerts you've explicitly enabled). This helps with work-life balance and prevents burnout.",
+            "es": "Defina cuándo está disponible para nietificaciones. Por ejemplo: lunes a viernes 9:00-18:00. Fuera de estas horas, las nietificaciones se silencian (excepto alertas urgentes que haya habilitado explícitamente). Esto ayuda con el equilibrio entre trabajo y vida personal y previene el agotamiento."
           }
         },
         {
           "title": {
-            "nl": "Urgente notificaties uitzondering",
-            "en": "Urgent Notification Exception",
-            "es": "Excepción de notificaciones urgentes"
+            "nl": "Urgente nietificaties uitzondering",
+            "en": "Urgent nietification Exception",
+            "es": "Excepción de nietificaciones urgentes"
           },
           "description": {
             "nl": "Sommige gebeurtenissen zijn zo belangrijk dat u ze altijd wilt ontvangen, ook buiten werkuren. Markeer deze als 'Urgent':\n- Bod ontvangen op uw woning\n- Klant belt (gemiste oproep)\n- Deal verloren/gewonnen\n- Kritieke systeem melding\n\nDeze doorbreken stille uren maar gebruik dit spaarzaam.",
-            "en": "Some events are so important you always want to receive them, even outside work hours. Mark these as 'Urgent':\n- Offer received on your property\n- Customer calls (missed call)\n- Deal lost/won\n- Critical system notification\n\nThese break through quiet hours but use this sparingly.",
-            "es": "Algunos eventos son tan importantes que siempre quiere recibirlos, incluso fuera del horario laboral. Márquelos como 'Urgentes':\n- Oferta recibida en su propiedad\n- Cliente llama (llamada perdida)\n- Acuerdo perdido/ganado\n- Notificación crítica del sistema\n\nEstos rompen las horas de silencio pero use esto con moderación."
+            "en": "Some events are so important you always want to receive them, even outside work hours. Mark these as 'Urgent':\n- Offer received on your property\n- Customer calls (missed call)\n- Deal lost/won\n- Critical system nietification\n\nThese break through quiet hours but use this sparingly.",
+            "es": "Algunos eventos son tan importantes que siempre quiere recibirlos, incluso fuera del horario laboral. Márquelos como 'Urgentes':\n- Oferta recibida en su propiedad\n- Cliente llama (llamada perdida)\n- Acuerdo perdido/ganado\n- nietificación crítica del sistema\n\nEstos rompen las horas de silencio pero use esto con moderación."
           }
         }
       ]
     },
     {
       "type": "callout",
-      "id": "notification-best-practices",
+      "id": "nietification-best-practices",
       "variant": "tip",
       "title": {
-        "nl": "Best practices voor notificaties",
-        "en": "Notification Best Practices",
-        "es": "Mejores prácticas para notificaciones"
+        "nl": "Best practices voor nietificaties",
+        "en": "nietification Best Practices",
+        "es": "Mejores prácticas para nietificaciones"
       },
       "content": {
-        "nl": "**Start conservatief**: Begin met weinig notificaties en voeg toe wat nodig is\n\n**Review regelmatig**: Evalueer maandelijks of notificaties nog nuttig zijn\n\n**Gebruik dagelijkse samenvattingen**: Voor niet-urgente updates\n\n**Respecteer stille uren**: Schakel alleen echt urgente doorbraakmeldingen in\n\n**Test nieuwe instellingen**: Pas notificaties aan en observeer het effect op productiviteit\n\n**Team afstemming**: Bespreek met uw team welke notificaties echt nodig zijn",
-        "en": "**Start conservative**: Begin with few notifications and add what's needed\n\n**Review regularly**: Evaluate monthly whether notifications are still useful\n\n**Use daily summaries**: For non-urgent updates\n\n**Respect quiet hours**: Only enable truly urgent breakthrough notifications\n\n**Test new settings**: Adjust notifications and observe the effect on productivity\n\n**Team alignment**: Discuss with your team which notifications are truly necessary",
-        "es": "**Comience conservadoramente**: Comience con pocas notificaciones y agregue lo que sea necesario\n\n**Revise regularmente**: Evalúe mensualmente si las notificaciones aún son útiles\n\n**Use resúmenes diarios**: Para actualizaciones no urgentes\n\n**Respete las horas de silencio**: Solo habilite notificaciones urgentes que realmente las necesiten\n\n**Pruebe nuevas configuraciones**: Ajuste las notificaciones y observe el efecto en la productividad\n\n**Alineación del equipo**: Discuta con su equipo qué notificaciones son realmente necesarias"
+        "nl": "**Start conservatief**: Begin met weinig nietificaties en voeg toe wat nodig is\n\n**Review regelmatig**: Evalueer maandelijks of nietificaties nog nuttig zijn\n\n**Gebruik dagelijkse samenvattingen**: Voor niet-urgente updates\n\n**Respecteer stille uren**: Schakel alleen echt urgente doorbraakmeldingen in\n\n**Test nieuwe instellingen**: Pas nietificaties aan en observeer het effect op productiviteit\n\n**Team afstemming**: Bespreek met uw team welke nietificaties echt nodig zijn",
+        "en": "**Start conservative**: Begin with few nietifications and add what's needed\n\n**Review regularly**: Evaluate monthly whether nietifications are still useful\n\n**Use daily summaries**: For non-urgent updates\n\n**Respect quiet hours**: Only enable truly urgent breakthrough nietifications\n\n**Test new settings**: Adjust nietifications and observe the effect on productivity\n\n**Team alignment**: Discuss with your team which nietifications are truly necessary",
+        "es": "**Comience conservadoramente**: Comience con pocas nietificaciones y agregue lo que sea necesario\n\n**Revise regularmente**: Evalúe mensualmente si las nietificaciones aún son útiles\n\n**Use resúmenes diarios**: Para actualizaciones no urgentes\n\n**Respete las horas de silencio**: Solo habilite nietificaciones urgentes que realmente las necesiten\n\n**Pruebe nuevas configuraciones**: Ajuste las nietificaciones y observe el efecto en la productividad\n\n**Alineación del equipo**: Discuta con su equipo qué nietificaciones son realmente necesarias"
       }
     },
     {
@@ -210,21 +221,21 @@
       "questions": [
         {
           "question": {
-            "nl": "Kan ik notificaties tijdelijk uitschakelen tijdens vakantie?",
-            "en": "Can I temporarily disable notifications during vacation?",
-            "es": "¿Puedo desactivar temporalmente las notificaciones durante las vacaciones?"
+            "nl": "Kan ik nietificaties tijdelijk uitschakelen tijdens vakantie?",
+            "en": "Can I temporarily disable nietifications during vacation?",
+            "es": "¿Puedo desactivar temporalmente las nietificaciones durante las vacaciones?"
           },
           "answer": {
-            "nl": "Ja, gebruik de 'Vakantie modus' in uw profiel instellingen. Dit schakelt alle notificaties uit behalve diegenen die u expliciet wilt blijven ontvangen. Stel uw afwezigheidsbericht in en wijs een collega aan om uw leads over te nemen tijdens uw afwezigheid.",
-            "en": "Yes, use 'Vacation mode' in your profile settings. This disables all notifications except those you explicitly want to continue receiving. Set your out-of-office message and designate a colleague to take over your leads during your absence.",
-            "es": "Sí, use el 'Modo de vacaciones' en la configuración de su perfil. Esto deshabilita todas las notificaciones excepto aquellas que desea seguir recibiendo explícitamente. Establezca su mensaje de ausencia de la oficina y designe a un colega para que se haga cargo de sus clientes potenciales durante su ausencia."
+            "nl": "Ja, gebruik de 'Vakantie modus' in uw profiel instellingen. Dit schakelt alle nietificaties uit behalve diegenen die u expliciet wilt blijven ontvangen. Stel uw afwezigheidsbericht in en wijs een collega aan om uw leads over te nemen tijdens uw afwezigheid.",
+            "en": "Yes, use 'Vacation mode' in your profile settings. This disables all nietifications except those you explicitly want to continue receiving. Set your out-of-office message and designate a colleague to take over your leads during your absence.",
+            "es": "Sí, use el 'Modo de vacaciones' en la configuración de su perfil. Esto deshabilita todas las nietificaciones excepto aquellas que desea seguir recibiendo explícitamente. Establezca su mensaje de ausencia de la oficina y designe a un colega para que se haga cargo de sus clientes potenciales durante su ausencia."
           }
         },
         {
           "question": {
-            "nl": "Waarom ontvang ik notificaties voor records die niet van mij zijn?",
-            "en": "Why do I receive notifications for records that aren't mine?",
-            "es": "¿Por qué recibo notificaciones para registros que no son míos?"
+            "nl": "Waarom ontvang ik nietificaties voor records die niet van mij zijn?",
+            "en": "Why do I receive nietifications for records that aren't mine?",
+            "es": "¿Por qué recibo nietificaciones para registros que no son míos?"
           },
           "answer": {
             "nl": "Dit kan verschillende redenen hebben: u bent lid van een team dat toegang heeft tot die records, een collega heeft u vermeld in een opmerking, of een Manager heeft 'Volg dit record' voor u ingeschakeld. Controleer uw 'Gevolgde items' in instellingen om te zien welke records u actief volgt.",
@@ -234,26 +245,26 @@
         },
         {
           "question": {
-            "nl": "Kan ik verschillende notificatie instellingen hebben voor mobiel en desktop?",
-            "en": "Can I have different notification settings for mobile and desktop?",
-            "es": "¿Puedo tener diferentes configuraciones de notificación para móvil y escritorio?"
+            "nl": "Kan ik verschillende nietificatie instellingen hebben voor mobiel en desktop?",
+            "en": "Can I have different nietification settings for mobile and desktop?",
+            "es": "¿Puedo tener diferentes configuraciones de nietificación para móvil y escritorio?"
           },
           "answer": {
-            "nl": "Nee, notificatie voorkeuren zijn gekoppeld aan uw account en gelden voor alle apparaten. Echter, u kunt wel per notificatie kanaal (in-app, e-mail, push) verschillende instellingen hebben. Bijvoorbeeld: push notificaties alleen voor urgente items, in-app voor alle updates.",
-            "en": "No, notification preferences are tied to your account and apply to all devices. However, you can have different settings per notification channel (in-app, email, push). For example: push notifications only for urgent items, in-app for all updates.",
-            "es": "No, las preferencias de notificación están vinculadas a su cuenta y se aplican a todos los dispositivos. Sin embargo, puede tener diferentes configuraciones por canal de notificación (en la aplicación, correo electrónico, push). Por ejemplo: notificaciones push solo para elementos urgentes, en la aplicación para todas las actualizaciones."
+            "nl": "Nee, nietificatie voorkeuren zijn gekoppeld aan uw account en gelden voor alle apparaten. Echter, u kunt wel per nietificatie kanaal (in-app, e-mail, push) verschillende instellingen hebben. Bijvoorbeeld: push nietificaties alleen voor urgente items, in-app voor alle updates.",
+            "en": "No, nietification preferences are tied to your account and apply to all devices. However, you can have different settings per nietification channel (in-app, email, push). For example: push nietifications only for urgent items, in-app for all updates.",
+            "es": "No, las preferencias de nietificación están vinculadas a su cuenta y se aplican a todos los dispositivos. Sin embargo, puede tener diferentes configuraciones por canal de nietificación (en la aplicación, correo electrónico, push). Por ejemplo: nietificaciones push solo para elementos urgentes, en la aplicación para todas las actualizaciones."
           }
         },
         {
           "question": {
-            "nl": "Hoe voorkom ik e-mail notificaties in mijn spam map?",
-            "en": "How do I prevent email notifications from going to spam?",
-            "es": "¿Cómo evito que las notificaciones por correo electrónico vayan a spam?"
+            "nl": "Hoe voorkom ik e-mail nietificaties in mijn spam map?",
+            "en": "How do I prevent email nietifications from going to spam?",
+            "es": "¿Cómo evito que las nietificaciones por correo electrónico vayan a spam?"
           },
           "answer": {
-            "nl": "Voeg notifications@tesoro.estate toe aan uw contacten en markeer een Tesoro notificatie e-mail als 'Geen spam'. De meeste e-mailproviders leren hiervan en leveren toekomstige notificaties in uw inbox. Check ook uw spam instellingen en whitelist het Tesoro domein.",
-            "en": "Add notifications@tesoro.estate to your contacts and mark a Tesoro notification email as 'Not spam'. Most email providers learn from this and deliver future notifications to your inbox. Also check your spam settings and whitelist the Tesoro domain.",
-            "es": "Agregue notifications@tesoro.estate a sus contactos y marque un correo electrónico de notificación de Tesoro como 'No es spam'. La mayoría de los proveedores de correo electrónico aprenden de esto y entregan notificaciones futuras en su bandeja de entrada. También verifique la configuración de spam y agregue el dominio de Tesoro a la lista blanca."
+            "nl": "Voeg nietifications@tesoro.estate toe aan uw contacten en markeer een Tesoro nietificatie e-mail als 'Geen spam'. De meeste e-mailproviders leren hiervan en leveren toekomstige nietificaties in uw inbox. Check ook uw spam instellingen en whitelist het Tesoro domein.",
+            "en": "Add nietifications@tesoro.estate to your contacts and mark a Tesoro nietification email as 'niet spam'. Most email providers learn from this and deliver future nietifications to your inbox. Also check your spam settings and whitelist the Tesoro domain.",
+            "es": "Agregue nietifications@tesoro.estate a sus contactos y marque un correo electrónico de nietificación de Tesoro como 'No es spam'. La mayoría de los proveedores de correo electrónico aprenden de esto y entregan nietificaciones futuras en su bandeja de entrada. También verifique la configuración de spam y agregue el dominio de Tesoro a la lista blanca."
           }
         }
       ]

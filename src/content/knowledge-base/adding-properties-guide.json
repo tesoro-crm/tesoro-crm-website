@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "tutorial", "property-creation", "getting-started", "step-by-step"],
+    "tags": [
+      "properties",
+      "tutorial",
+      "property-creation",
+      "getting-started",
+      "step-by-step"
+    ],
     "featured": true,
     "readingTime": 10,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["add property", "create property", "property fields", "property form", "new listing"]
+    "keywords": [
+      "add property",
+      "create property",
+      "property fields",
+      "property form",
+      "new listing"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Hoe voeg je properties toe aan Tesoro CRM",
@@ -32,7 +42,6 @@
     },
     "icon": "add_home"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "adding-property-tutorial",
@@ -73,7 +81,6 @@
       },
       "duration": "10:45"
     },
-
     {
       "type": "steps",
       "id": "navigate-to-properties",
@@ -129,7 +136,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "fill-basic-info",
@@ -204,7 +210,7 @@
               "text": "<p><strong>Status opties:</strong></p><ul><li><strong>Active:</strong> Beschikbaar voor verkoop/verhuur (default)</li><li><strong>Inactive:</strong> Tijdelijk niet beschikbaar</li><li><strong>Sold:</strong> Verkocht</li><li><strong>Rented:</strong> Verhuurd</li><li><strong>Draft:</strong> In voorbereiding (niet zichtbaar op portals)</li></ul><p><strong>Wanneer welke status:</strong></p><ul><li><strong>Nieuwe property zonder foto's:</strong> Draft</li><li><strong>Klaar voor marketing:</strong> Active</li><li><strong>Eigenaar wil pauze:</strong> Inactive</li><li><strong>Deal gesloten:</strong> Sold of Rented</li></ul><p><strong>Belangrijk:</strong> Alleen \"Active\" properties worden gesynchroniseerd met portals zoals Idealista en Fotocasa.</p>"
             },
             "en": {
-              "text": "<p><strong>Status options:</strong></p><ul><li><strong>Active:</strong> Available for sale/rent (default)</li><li><strong>Inactive:</strong> Temporarily unavailable</li><li><strong>Sold:</strong> Sold</li><li><strong>Rented:</strong> Rented</li><li><strong>Draft:</strong> In preparation (not visible on portals)</li></ul><p><strong>When to use which status:</strong></p><ul><li><strong>New property without photos:</strong> Draft</li><li><strong>Ready for marketing:</strong> Active</li><li><strong>Owner wants pause:</strong> Inactive</li><li><strong>Deal closed:</strong> Sold or Rented</li></ul><p><strong>Important:</strong> Only \"Active\" properties are synchronized with portals like Idealista and Fotocasa.</p>"
+              "text": "<p><strong>Status options:</strong></p><ul><li><strong>Active:</strong> Available for sale/rent (default)</li><li><strong>Inactive:</strong> Temporarily unavailable</li><li><strong>Sold:</strong> Sold</li><li><strong>Rented:</strong> Rented</li><li><strong>Draft:</strong> In preparation (niet visible on portals)</li></ul><p><strong>When to use which status:</strong></p><ul><li><strong>New property without photos:</strong> Draft</li><li><strong>Ready for marketing:</strong> Active</li><li><strong>Owner wants pause:</strong> Inactive</li><li><strong>Deal closed:</strong> Sold or Rented</li></ul><p><strong>Important:</strong> Only \"Active\" properties are synchronized with portals like Idealista and Fotocasa.</p>"
             },
             "es": {
               "text": "<p><strong>Opciones de estado:</strong></p><ul><li><strong>Activa:</strong> Disponible para venta/alquiler (predeterminado)</li><li><strong>Inactiva:</strong> Temporalmente no disponible</li><li><strong>Vendida:</strong> Vendida</li><li><strong>Alquilada:</strong> Alquilada</li><li><strong>Borrador:</strong> En preparación (no visible en portales)</li></ul><p><strong>Cuándo usar qué estado:</strong></p><ul><li><strong>Propiedad nueva sin fotos:</strong> Borrador</li><li><strong>Lista para marketing:</strong> Activa</li><li><strong>Propietario quiere pausa:</strong> Inactiva</li><li><strong>Deal cerrado:</strong> Vendida o Alquilada</li></ul><p><strong>Importante:</strong> Solo las propiedades \"Activas\" se sincronizan con portales como Idealista y Fotocasa.</p>"
@@ -213,7 +219,6 @@
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "add-property-details",
@@ -261,7 +266,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "quick-save-tip",
@@ -283,7 +287,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "next-steps-after-creation",
@@ -305,14 +308,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "property-media-management",
     "property-features-amenities",
     "property-types-categories"
   ],
-
   "faq": [
     {
       "question": {
@@ -322,7 +323,7 @@
       },
       "answer": {
         "nl": "Ja, foto's zijn niet verplicht. Gebruik status \"Draft\" voor properties zonder foto's. Je kunt foto's later toevoegen voordat je de property op \"Active\" zet.",
-        "en": "Yes, photos are not required. Use status \"Draft\" for properties without photos. You can add photos later before setting the property to \"Active\".",
+        "en": "Yes, photos are niet required. Use status \"Draft\" for properties without photos. You can add photos later before setting the property to \"Active\".",
         "es": "Sí, las fotos no son obligatorias. Usa estado \"Borrador\" para propiedades sin fotos. Puedes agregar fotos después antes de establecer la propiedad como \"Activa\"."
       }
     },

@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "overview", "property-management", "getting-started", "crm-basics"],
+    "tags": [
+      "properties",
+      "overview",
+      "property-management",
+      "getting-started",
+      "crm-basics"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["property management", "real estate CRM", "property inventory", "Tesoro properties", "property database"]
+    "keywords": [
+      "property management",
+      "real estate CRM",
+      "property inventory",
+      "Tesoro properties",
+      "property database"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Complete gids voor property management in Tesoro CRM",
@@ -32,7 +42,6 @@
     },
     "icon": "home"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "property-overview-video",
@@ -73,7 +81,6 @@
       },
       "duration": "8:15"
     },
-
     {
       "type": "text",
       "id": "property-types",
@@ -94,7 +101,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "core-features",
@@ -115,7 +121,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "automation-features",
@@ -126,17 +131,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>AI-powered lead matching</h5><p>Tesoro's intelligente matching algoritme koppelt automatisch properties aan geschikte leads op basis van:</p><ul><li>Property type matching</li><li>Locatie voorkeuren</li><li>Prijsklasse matching</li><li>Grootte en kamer vereisten</li><li>Specifieke features en amenities</li></ul><p>Het systeem berekent een match score (0-100) en rankt suggesties op compatibiliteit.</p><h5>Portal integratie</h5><p>Automatische sync met:</p><ul><li><strong>Idealista:</strong> Automatische property updates</li><li><strong>Fotocasa:</strong> Direct publishing en sync</li><li><strong>Custom portals:</strong> XML/JSON feed support</li></ul><p>Wijzigingen in Tesoro worden automatisch doorgevoerd naar alle gekoppelde portals.</p><h5>Client portal</h5><p>Genereer een publieke portal waar potentiële kopers:</p><ul><li>Available properties kunnen bekijken</li><li>Interesse kunnen tonen</li><li>Bezichtigingen kunnen aanvragen</li><li>Notities kunnen achterlaten</li></ul>"
+          "text": "<h5>AI-powered lead matching</h5><p>Tesoro's intelligente matching algoritme koppelt automatisch properties aan geschikte leads op basis van:</p><ul><li>Property type matching</li><li>Locatie voorkeuren</li><li>Prijsklasse matching</li><li>Grootte en kamer vereisten</li><li>Specifieke features en amenities</li></ul><p>Het systeem berekent een match score (0-100) en rankt suggesties op compatibiliteit.</p><h5>Portal integratie</h5><p>Automatische sync met:</p><ul><li><strong>Idealista:</strong> Automatische property updates</li><li><strong>Fotocasa:</strong> Direct publishing en sync</li><li><strong>Custom portals:</strong> XML/JSON feed support</li></ul><p>Wijzigingen in Tesoro worden automatisch doorgevoerd naar alle gekoppelde portals.</p><h5>Client portal</h5><p>Genereer een publieke portal waar potentiële kopers:</p><ul><li>Available properties kunnen bekijken</li><li>Interesse kunnen tonen</li><li>Bezichtigingen kunnen aanvragen</li><li>notities kunnen achterlaten</li></ul>"
         },
         "en": {
           "text": "<h5>AI-powered lead matching</h5><p>Tesoro's intelligent matching algorithm automatically links properties to suitable leads based on:</p><ul><li>Property type matching</li><li>Location preferences</li><li>Price range matching</li><li>Size and room requirements</li><li>Specific features and amenities</li></ul><p>The system calculates a match score (0-100) and ranks suggestions by compatibility.</p><h5>Portal integration</h5><p>Automatic sync with:</p><ul><li><strong>Idealista:</strong> Automatic property updates</li><li><strong>Fotocasa:</strong> Direct publishing and sync</li><li><strong>Custom portals:</strong> XML/JSON feed support</li></ul><p>Changes in Tesoro are automatically applied to all connected portals.</p><h5>Client portal</h5><p>Generate a public portal where potential buyers can:</p><ul><li>View available properties</li><li>Show interest</li><li>Request viewings</li><li>Leave notes</li></ul>"
         },
         "es": {
-          "text": "<h5>Matching con IA para leads</h5><p>El algoritmo inteligente de matching de Tesoro vincula automáticamente propiedades a leads adecuados basándose en:</p><ul><li>Tipo de propiedad matching</li><li>Preferencias de ubicación</li><li>Rango de precios matching</li><li>Requisitos de tamaño y habitaciones</li><li>Características y amenidades específicas</li></ul><p>El sistema calcula una puntuación de match (0-100) y clasifica sugerencias por compatibilidad.</p><h5>Integración de portales</h5><p>Sincronización automática con:</p><ul><li><strong>Idealista:</strong> Actualizaciones automáticas de propiedades</li><li><strong>Fotocasa:</strong> Publicación directa y sync</li><li><strong>Portales personalizados:</strong> Soporte para feed XML/JSON</li></ul><p>Los cambios en Tesoro se aplican automáticamente a todos los portales conectados.</p><h5>Portal del cliente</h5><p>Genera un portal público donde los compradores potenciales pueden:</p><ul><li>Ver propiedades disponibles</li><li>Mostrar interés</li><li>Solicitar visitas</li><li>Dejar notas</li></ul>"
+          "text": "<h5>Matching con IA para leads</h5><p>El algoritmo inteligente de matching de Tesoro vincula automáticamente propiedades a leads adecuados basándose en:</p><ul><li>Tipo de propiedad matching</li><li>Preferencias de ubicación</li><li>Rango de precios matching</li><li>Requisitos de tamaño y habitaciones</li><li>Características y amenidades específicas</li></ul><p>El sistema calcula una puntuación de match (0-100) y clasifica sugerencias por compatibilidad.</p><h5>Integración de portales</h5><p>Sincronización automática con:</p><ul><li><strong>Idealista:</strong> Actualizaciones automáticas de propiedades</li><li><strong>Fotocasa:</strong> Publicación directa y sync</li><li><strong>Portales personalizados:</strong> Soporte para feed XML/JSON</li></ul><p>Los cambios en Tesoro se aplican automáticamente a todos los portales conectados.</p><h5>Portal del cliente</h5><p>Genera un portal público donde los compradores potenciales pueden:</p><ul><li>Ver propiedades disponibles</li><li>Mostrar interés</li><li>Solicitar visitas</li><li>Dejar nietas</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "workflow-management",
@@ -157,7 +161,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "getting-started",
@@ -180,14 +183,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "adding-properties-guide",
     "property-media-management",
     "property-portal-integration",
     "property-ai-matching"
   ],
-
   "faq": [
     {
       "question": {

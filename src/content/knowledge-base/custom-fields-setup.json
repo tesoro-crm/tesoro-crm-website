@@ -7,7 +7,13 @@
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "intermediate",
-    "tags": ["settings", "custom fields", "configuration", "data", "customization"],
+    "tags": [
+      "settings",
+      "custom fields",
+      "configuration",
+      "data",
+      "customization"
+    ],
     "featured": false,
     "readingTime": 9,
     "videoIncluded": false,
@@ -15,7 +21,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=630&fit=crop",
-    "keywords": ["custom fields", "field types", "data customization", "crm configuration", "tesoro crm"]
+    "keywords": [
+      "custom fields",
+      "field types",
+      "data customization",
+      "crm configuration",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -120,7 +132,7 @@
           "description": {
             "nl": "Kies het juiste veldtype op basis van het soort gegevens dat u wilt vastleggen:\n\n**Tekst**: Voor korte tekstinvoer zoals namen of referenties (maximaal 255 tekens)\n\n**Lange tekst**: Voor beschrijvingen of opmerkingen (geen tekenlimiet)\n\n**Nummer**: Voor numerieke waarden zoals oppervlakte of bouwjaar\n\n**Geld**: Voor geldbedragen met valutasymbool\n\n**Datum**: Voor datums zoals beschikbaarheidsdatum\n\n**Selectie**: Voor keuzelijst met vooraf gedefinieerde opties\n\n**Meerkeuze**: Voor meerdere selecties uit een lijst\n\n**Checkbox**: Voor ja/nee of waar/onwaar waarden\n\n**URL**: Voor website links met automatische validatie",
             "en": "Choose the appropriate field type based on the kind of data you want to capture:\n\n**Text**: For short text input like names or references (max 255 characters)\n\n**Long Text**: For descriptions or notes (no character limit)\n\n**Number**: For numeric values like area or year built\n\n**Currency**: For monetary amounts with currency symbol\n\n**Date**: For dates like availability date\n\n**Dropdown**: For selection list with predefined options\n\n**Multi-select**: For multiple selections from a list\n\n**Checkbox**: For yes/no or true/false values\n\n**URL**: For website links with automatic validation",
-            "es": "Elija el tipo de campo apropiado según el tipo de datos que desea capturar:\n\n**Texto**: Para entrada de texto corto como nombres o referencias (máximo 255 caracteres)\n\n**Texto largo**: Para descripciones o notas (sin límite de caracteres)\n\n**Número**: Para valores numéricos como área o año de construcción\n\n**Moneda**: Para cantidades monetarias con símbolo de moneda\n\n**Fecha**: Para fechas como fecha de disponibilidad\n\n**Desplegable**: Para lista de selección con opciones predefinidas\n\n**Selección múltiple**: Para múltiples selecciones de una lista\n\n**Casilla de verificación**: Para valores sí/no o verdadero/falso\n\n**URL**: Para enlaces de sitios web con validación automática"
+            "es": "Elija el tipo de campo apropiado según el tipo de datos que desea capturar:\n\n**Texto**: Para entrada de texto corto como nombres o referencias (máximo 255 caracteres)\n\n**Texto largo**: Para descripciones o nietas (sin límite de caracteres)\n\n**Número**: Para valores numéricos como área o año de construcción\n\n**Moneda**: Para cantidades monetarias con símbolo de moneda\n\n**Fecha**: Para fechas como fecha de disponibilidad\n\n**Desplegable**: Para lista de selección con opciones predefinidas\n\n**Selección múltiple**: Para múltiples selecciones de una lista\n\n**Casilla de verificación**: Para valores sí/no o verdadero/falso\n\n**URL**: Para enlaces de sitios web con validación automática"
           }
         },
         {
@@ -241,7 +253,7 @@
           },
           "description": {
             "nl": "Het verwijderen van een veld is permanent en verwijdert alle gegevens in dat veld voor alle records. Het systeem vraagt om bevestiging en toont hoeveel records worden beïnvloed. Exporteer eerst gegevens als u deze mogelijk later nodig heeft. Standaardvelden kunnen niet worden verwijderd.",
-            "en": "Deleting a field is permanent and removes all data in that field for all records. The system asks for confirmation and shows how many records are affected. Export data first if you may need it later. Standard fields cannot be deleted.",
+            "en": "Deleting a field is permanent and removes all data in that field for all records. The system asks for confirmation and shows how many records are affected. Export data first if you may need it later. Standard fields canniet be deleted.",
             "es": "Eliminar un campo es permanente y elimina todos los datos en ese campo para todos los registros. El sistema solicita confirmación y muestra cuántos registros se ven afectados. Exporte los datos primero si puede necesitarlos más tarde. Los campos estándar no se pueden eliminar."
           }
         }
@@ -302,9 +314,9 @@
             "es": "Para acuerdos"
           },
           "description": {
-            "nl": "**Financieringstype**: Selectie (Hypotheek, Contant, Mix)\n\n**Ontbindende voorwaarden**: Meerkeuze (Financiering, Bouwkundig rapport, Verkoopwoning)\n\n**Notaris**: Tekst\n\n**Sleutels overgedragen**: Checkbox\n\n**Verkoopcommissie percentage**: Nummer (decimaal)\n\n**Verwijzingsbron**: Selectie (Website, Funda, Social media, Verwijzing, Walk-in)\n\n**Contractdatum**: Datum",
-            "en": "**Financing Type**: Dropdown (Mortgage, Cash, Mix)\n\n**Contingencies**: Multi-select (Financing, Building Inspection, Sale of Current Home)\n\n**Notary**: Text\n\n**Keys Transferred**: Checkbox\n\n**Commission Percentage**: Number (decimal)\n\n**Referral Source**: Dropdown (Website, Funda, Social Media, Referral, Walk-in)\n\n**Contract Date**: Date",
-            "es": "**Tipo de financiación**: Desplegable (Hipoteca, Efectivo, Mixto)\n\n**Contingencias**: Selección múltiple (Financiación, Inspección de construcción, Venta de casa actual)\n\n**Notario**: Texto\n\n**Llaves transferidas**: Casilla de verificación\n\n**Porcentaje de comisión**: Número (decimal)\n\n**Fuente de referencia**: Desplegable (Sitio web, Funda, Redes sociales, Referencia, Visita directa)\n\n**Fecha de contrato**: Fecha"
+            "nl": "**Financieringstype**: Selectie (Hypotheek, Contant, Mix)\n\n**Ontbindende voorwaarden**: Meerkeuze (Financiering, Bouwkundig rapport, Verkoopwoning)\n\n**nietaris**: Tekst\n\n**Sleutels overgedragen**: Checkbox\n\n**Verkoopcommissie percentage**: Nummer (decimaal)\n\n**Verwijzingsbron**: Selectie (Website, Funda, Social media, Verwijzing, Walk-in)\n\n**Contractdatum**: Datum",
+            "en": "**Financing Type**: Dropdown (Mortgage, Cash, Mix)\n\n**Contingencies**: Multi-select (Financing, Building Inspection, Sale of Current Home)\n\n**nietary**: Text\n\n**Keys Transferred**: Checkbox\n\n**Commission Percentage**: Number (decimal)\n\n**Referral Source**: Dropdown (Website, Funda, Social Media, Referral, Walk-in)\n\n**Contract Date**: Date",
+            "es": "**Tipo de financiación**: Desplegable (Hipoteca, Efectivo, Mixto)\n\n**Contingencias**: Selección múltiple (Financiación, Inspección de construcción, Venta de casa actual)\n\n**nietario**: Texto\n\n**Llaves transferidas**: Casilla de verificación\n\n**Porcentaje de comisión**: Número (decimal)\n\n**Fuente de referencia**: Desplegable (Sitio web, Funda, Redes sociales, Referencia, Visita directa)\n\n**Fecha de contrato**: Fecha"
           }
         }
       ]
@@ -377,7 +389,7 @@
           },
           "answer": {
             "nl": "Op dit moment ondersteunt Tesoro CRM geen formule-velden. Als u berekende waarden nodig heeft, kunt u deze automatiseren via workflow-regels die waarden bijwerken op basis van andere velden, of gebruik maken van de API voor complexere berekeningen buiten het systeem.",
-            "en": "Currently, Tesoro CRM does not support formula fields. If you need calculated values, you can automate these via workflow rules that update values based on other fields, or use the API for more complex calculations outside the system.",
+            "en": "Currently, Tesoro CRM does niet support formula fields. If you need calculated values, you can automate these via workflow rules that update values based on other fields, or use the API for more complex calculations outside the system.",
             "es": "Actualmente, Tesoro CRM no admite campos de fórmula. Si necesita valores calculados, puede automatizarlos a través de reglas de flujo de trabajo que actualizan valores según otros campos, o usar la API para cálculos más complejos fuera del sistema."
           }
         },

@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["navigation", "getting-started", "basics", "sidebar", "search"],
+    "tags": [
+      "navigation",
+      "getting-started",
+      "basics",
+      "sidebar",
+      "search"
+    ],
     "featured": true,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro navigation", "crm navigation", "sidebar menu", "quick actions", "search"]
+    "keywords": [
+      "tesoro navigation",
+      "crm navigation",
+      "sidebar menu",
+      "quick actions",
+      "search"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Navigatie basics: vind snel wat je zoekt",
@@ -32,7 +42,6 @@
     },
     "icon": "menu"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "sidebar-navigation",
@@ -60,17 +68,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p>De sidebar aan de linkerkant is je hoofdnavigatie. Hier vind je alle modules:</p><h4>Hoofdmodules</h4><ul><li><strong>Dashboard</strong> - Je overzicht en controlecentrum</li><li><strong>Leads</strong> - Nieuwe prospects en opportunities</li><li><strong>Deals</strong> - Actieve sales pipeline met Kanban board</li><li><strong>Contacts</strong> - Alle personen in je netwerk</li><li><strong>Relations</strong> - Bedrijven en organisaties</li><li><strong>Properties</strong> - Je volledige property inventory</li><li><strong>Projects</strong> - Ontwikkelprojecten en nieuwbouw</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Agenda en planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuratie en instellingen (onderaan sidebar)</li><li><strong>Help</strong> - Kennisbank en support (? icoon)</li><li><strong>Notifications</strong> - Bell icoon rechtsboven</li><li><strong>User Menu</strong> - Profile foto rechtsboven</li></ul><h4>Sidebar Tips</h4><ul><li>Klik op het <strong>hamburger menu</strong> om de sidebar in/uit te klappen (meer schermruimte)</li><li>Hover over icons om labels te zien als sidebar is ingeklapt</li><li>Actieve pagina is <strong>gemarkeerd</strong> met blauwe accentkleur</li><li>Badge cijfers tonen aantal ongelezen items (bijv. nieuwe leads)</li></ul>"
+          "text": "<p>De sidebar aan de linkerkant is je hoofdnavigatie. Hier vind je alle modules:</p><h4>Hoofdmodules</h4><ul><li><strong>Dashboard</strong> - Je overzicht en controlecentrum</li><li><strong>Leads</strong> - Nieuwe prospects en opportunities</li><li><strong>Deals</strong> - Actieve sales pipeline met Kanban board</li><li><strong>Contacts</strong> - Alle personen in je netwerk</li><li><strong>Relations</strong> - Bedrijven en organisaties</li><li><strong>Properties</strong> - Je volledige property inventory</li><li><strong>Projects</strong> - Ontwikkelprojecten en nieuwbouw</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Agenda en planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuratie en instellingen (onderaan sidebar)</li><li><strong>Help</strong> - Kennisbank en support (? icoon)</li><li><strong>nietifications</strong> - Bell icoon rechtsboven</li><li><strong>User Menu</strong> - Profile foto rechtsboven</li></ul><h4>Sidebar Tips</h4><ul><li>Klik op het <strong>hamburger menu</strong> om de sidebar in/uit te klappen (meer schermruimte)</li><li>Hover over icons om labels te zien als sidebar is ingeklapt</li><li>Actieve pagina is <strong>gemarkeerd</strong> met blauwe accentkleur</li><li>Badge cijfers tonen aantal ongelezen items (bijv. nieuwe leads)</li></ul>"
         },
         "en": {
-          "text": "<p>The sidebar on the left is your main navigation. Here you'll find all modules:</p><h4>Main Modules</h4><ul><li><strong>Dashboard</strong> - Your overview and control center</li><li><strong>Leads</strong> - New prospects and opportunities</li><li><strong>Deals</strong> - Active sales pipeline with Kanban board</li><li><strong>Contacts</strong> - All people in your network</li><li><strong>Relations</strong> - Companies and organizations</li><li><strong>Properties</strong> - Your complete property inventory</li><li><strong>Projects</strong> - Development projects and new construction</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Schedule and planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuration and settings (bottom of sidebar)</li><li><strong>Help</strong> - Knowledge base and support (? icon)</li><li><strong>Notifications</strong> - Bell icon top right</li><li><strong>User Menu</strong> - Profile photo top right</li></ul><h4>Sidebar Tips</h4><ul><li>Click the <strong>hamburger menu</strong> to collapse/expand sidebar (more screen space)</li><li>Hover over icons to see labels when sidebar is collapsed</li><li>Active page is <strong>highlighted</strong> with blue accent color</li><li>Badge numbers show unread items count (e.g. new leads)</li></ul>"
+          "text": "<p>The sidebar on the left is your main navigation. Here you'll find all modules:</p><h4>Main Modules</h4><ul><li><strong>Dashboard</strong> - Your overview and control center</li><li><strong>Leads</strong> - New prospects and opportunities</li><li><strong>Deals</strong> - Active sales pipeline with Kanban board</li><li><strong>Contacts</strong> - All people in your network</li><li><strong>Relations</strong> - Companies and organizations</li><li><strong>Properties</strong> - Your complete property inventory</li><li><strong>Projects</strong> - Development projects and new construction</li><li><strong>Activities</strong> - Tasks, calls, meetings, follow-ups</li><li><strong>Calendar</strong> - Schedule and planning</li></ul><h4>Settings & Tools</h4><ul><li><strong>Settings</strong> - Configuration and settings (bottom of sidebar)</li><li><strong>Help</strong> - Knowledge base and support (? icon)</li><li><strong>nietifications</strong> - Bell icon top right</li><li><strong>User Menu</strong> - Profile photo top right</li></ul><h4>Sidebar Tips</h4><ul><li>Click the <strong>hamburger menu</strong> to collapse/expand sidebar (more screen space)</li><li>Hover over icons to see labels when sidebar is collapsed</li><li>Active page is <strong>highlighted</strong> with blue accent color</li><li>Badge numbers show unread items count (e.g. new leads)</li></ul>"
         },
         "es": {
-          "text": "<p>La barra lateral a la izquierda es tu navegación principal. Aquí encontrarás todos los módulos:</p><h4>Módulos principales</h4><ul><li><strong>Dashboard</strong> - Tu vista general y centro de control</li><li><strong>Leads</strong> - Nuevos prospectos y oportunidades</li><li><strong>Deals</strong> - Pipeline de ventas activo con tablero Kanban</li><li><strong>Contacts</strong> - Todas las personas en tu red</li><li><strong>Relations</strong> - Empresas y organizaciones</li><li><strong>Properties</strong> - Tu inventario completo de propiedades</li><li><strong>Projects</strong> - Proyectos de desarrollo y construcción nueva</li><li><strong>Activities</strong> - Tareas, llamadas, reuniones, seguimientos</li><li><strong>Calendar</strong> - Agenda y planificación</li></ul><h4>Configuración y herramientas</h4><ul><li><strong>Settings</strong> - Configuración y ajustes (parte inferior de la barra lateral)</li><li><strong>Help</strong> - Base de conocimientos y soporte (ícono ?)</li><li><strong>Notifications</strong> - Ícono de campana arriba a la derecha</li><li><strong>User Menu</strong> - Foto de perfil arriba a la derecha</li></ul><h4>Consejos para barra lateral</h4><ul><li>Haz clic en el <strong>menú hamburguesa</strong> para colapsar/expandir la barra lateral (más espacio en pantalla)</li><li>Pasa el cursor sobre los íconos para ver las etiquetas cuando la barra lateral está colapsada</li><li>La página activa está <strong>resaltada</strong> con color de acento azul</li><li>Los números de insignia muestran el recuento de elementos no leídos (ej. nuevos leads)</li></ul>"
+          "text": "<p>La barra lateral a la izquierda es tu navegación principal. Aquí encontrarás todos los módulos:</p><h4>Módulos principales</h4><ul><li><strong>Dashboard</strong> - Tu vista general y centro de control</li><li><strong>Leads</strong> - Nuevos prospectos y oportunidades</li><li><strong>Deals</strong> - Pipeline de ventas activo con tablero Kanban</li><li><strong>Contacts</strong> - Todas las personas en tu red</li><li><strong>Relations</strong> - Empresas y organizaciones</li><li><strong>Properties</strong> - Tu inventario completo de propiedades</li><li><strong>Projects</strong> - Proyectos de desarrollo y construcción nueva</li><li><strong>Activities</strong> - Tareas, llamadas, reuniones, seguimientos</li><li><strong>Calendar</strong> - Agenda y planificación</li></ul><h4>Configuración y herramientas</h4><ul><li><strong>Settings</strong> - Configuración y ajustes (parte inferior de la barra lateral)</li><li><strong>Help</strong> - Base de conocimientos y soporte (ícono ?)</li><li><strong>nietifications</strong> - Ícono de campana arriba a la derecha</li><li><strong>User Menu</strong> - Foto de perfil arriba a la derecha</li></ul><h4>Consejos para barra lateral</h4><ul><li>Haz clic en el <strong>menú hamburguesa</strong> para colapsar/expandir la barra lateral (más espacio en pantalla)</li><li>Pasa el cursor sobre los íconos para ver las etiquetas cuando la barra lateral está colapsada</li><li>La página activa está <strong>resaltada</strong> con color de acento azul</li><li>Los números de insignia muestran el recuento de elementos no leídos (ej. nuevos leads)</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "global-search",
@@ -91,7 +98,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "pro-tip",
@@ -113,7 +119,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "quick-actions",
@@ -134,7 +139,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "breadcrumbs",
@@ -156,13 +160,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "dashboard-overview",
     "keyboard-shortcuts",
     "quick-start-guide"
   ],
-
   "faq": [
     {
       "question": {
@@ -172,7 +174,7 @@
       },
       "answer": {
         "nl": "Momenteel niet, maar we werken aan een feature waarmee je modules kunt slepen om je eigen volgorde te maken. Laat het ons weten in de feedback welke modules jij het belangrijkst vindt!",
-        "en": "Currently not, but we're working on a feature where you can drag modules to create your own order. Let us know in the feedback which modules you find most important!",
+        "en": "Currently niet, but we're working on a feature where you can drag modules to create your own order. Let us know in the feedback which modules you find most important!",
         "es": "Actualmente no, pero estamos trabajando en una función donde puedes arrastrar módulos para crear tu propio orden. ¡Haznos saber en los comentarios qué módulos encuentras más importantes!"
       }
     },

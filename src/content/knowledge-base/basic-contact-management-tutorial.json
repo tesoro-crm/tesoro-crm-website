@@ -7,18 +7,28 @@
     "authorId": "maria-perez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["contacts", "tutorial", "basic-features", "contact-management", "crm-basics"],
+    "tags": [
+      "contacts",
+      "tutorial",
+      "basic-features",
+      "contact-management",
+      "crm-basics"
+    ],
     "featured": true,
     "readingTime": 4,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&h=630&fit=crop",
-    "keywords": ["contact toevoegen Tesoro", "CRM contact beheer", "contacten organiseren", "Tesoro CRM tutorial", "contact informatie"]
+    "keywords": [
+      "contact toevoegen Tesoro",
+      "CRM contact beheer",
+      "contacten organiseren",
+      "Tesoro CRM tutorial",
+      "contact informatie"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Contact Management in Tesoro CRM: Complete Beginner Tutorial",
@@ -31,7 +41,6 @@
       "es": "Aprende paso a paso cómo agregar, organizar y gestionar contactos en Tesoro CRM. Desde la creación básica de contactos hasta técnicas de organización avanzadas."
     }
   },
-
   "sections": [
     {
       "type": "callout",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "contact-management-overview",
@@ -72,7 +80,6 @@
       },
       "duration": "5:12"
     },
-
     {
       "type": "steps",
       "id": "add-new-contact",
@@ -119,10 +126,10 @@
               "text": "<p>1. Zoek de blauwe knop <strong>\"+ Nieuw Contact\"</strong> rechtsboven in het scherm</p><p>2. Klik op deze knop om het contact formulier te openen</p><p>3. Het formulier opent in een popup venster of nieuwe pagina</p><p><strong>Let op:</strong> Als je de knop niet ziet, controleer of je de juiste rechten hebt. Neem contact op met je systeem administrator als de knop ontbreekt.</p>"
             },
             "en": {
-              "text": "<p>1. Look for the blue button <strong>\"+ New Contact\"</strong> in the top right of the screen</p><p>2. Click this button to open the contact form</p><p>3. The form opens in a popup window or new page</p><p><strong>Note:</strong> If you don't see the button, check if you have the right permissions. Contact your system administrator if the button is missing.</p>"
+              "text": "<p>1. Look for the blue button <strong>\"+ New Contact\"</strong> in the top right of the screen</p><p>2. Click this button to open the contact form</p><p>3. The form opens in a popup window or new page</p><p><strong>niete:</strong> If you don't see the button, check if you have the right permissions. Contact your system administrator if the button is missing.</p>"
             },
             "es": {
-              "text": "<p>1. Busca el botón azul <strong>\"+ Nuevo Contacto\"</strong> en la parte superior derecha de la pantalla</p><p>2. Haz clic en este botón para abrir el formulario de contacto</p><p>3. El formulario se abre en una ventana emergente o nueva página</p><p><strong>Nota:</strong> Si no ves el botón, verifica si tienes los permisos correctos. Contacta a tu administrador del sistema si falta el botón.</p>"
+              "text": "<p>1. Busca el botón azul <strong>\"+ Nuevo Contacto\"</strong> en la parte superior derecha de la pantalla</p><p>2. Haz clic en este botón para abrir el formulario de contacto</p><p>3. El formulario se abre en una ventana emergente o nueva página</p><p><strong>nieta:</strong> Si no ves el botón, verifica si tienes los permisos correctos. Contacta a tu administrador del sistema si falta el botón.</p>"
             }
           }
         },
@@ -164,7 +171,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "duplicate-prevention",
@@ -179,14 +185,13 @@
           "text": "<p>Tesoro CRM controleert automatisch op mogelijke duplicaten wanneer je een contact toevoegt:</p><ul><li><strong>Email Match:</strong> Waarschuwing als hetzelfde emailadres al bestaat</li><li><strong>Naam + Telefoonnummer:</strong> Suggestie bij vergelijkbare combinaties</li><li><strong>Bedrijf Match:</strong> Melding bij bestaande contacten van hetzelfde bedrijf</li></ul><p><strong>Wat te doen bij een duplicaat waarschuwing:</strong></p><ol><li>Klik op \"Bekijk bestaand contact\" om te vergelijken</li><li>Kies \"Samenvoegen\" om informatie te combineren</li><li>Of kies \"Toch toevoegen\" als het een ander persoon is</li></ol>"
         },
         "en": {
-          "text": "<p>Tesoro CRM automatically checks for possible duplicates when you add a contact:</p><ul><li><strong>Email Match:</strong> Warning if the same email address already exists</li><li><strong>Name + Phone Number:</strong> Suggestion for similar combinations</li><li><strong>Company Match:</strong> Notification for existing contacts from the same company</li></ul><p><strong>What to do with a duplicate warning:</strong></p><ol><li>Click \"View existing contact\" to compare</li><li>Choose \"Merge\" to combine information</li><li>Or choose \"Add anyway\" if it's a different person</li></ol>"
+          "text": "<p>Tesoro CRM automatically checks for possible duplicates when you add a contact:</p><ul><li><strong>Email Match:</strong> Warning if the same email address already exists</li><li><strong>Name + Phone Number:</strong> Suggestion for similar combinations</li><li><strong>Company Match:</strong> nietification for existing contacts from the same company</li></ul><p><strong>What to do with a duplicate warning:</strong></p><ol><li>Click \"View existing contact\" to compare</li><li>Choose \"Merge\" to combine information</li><li>Or choose \"Add anyway\" if it's a different person</li></ol>"
         },
         "es": {
-          "text": "<p>Tesoro CRM verifica automáticamente posibles duplicados cuando agregas un contacto:</p><ul><li><strong>Coincidencia de Email:</strong> Advertencia si la misma dirección de correo ya existe</li><li><strong>Nombre + Número de Teléfono:</strong> Sugerencia para combinaciones similares</li><li><strong>Coincidencia de Empresa:</strong> Notificación para contactos existentes de la misma empresa</li></ul><p><strong>Qué hacer con una advertencia de duplicado:</strong></p><ol><li>Haz clic en \"Ver contacto existente\" para comparar</li><li>Elige \"Fusionar\" para combinar información</li><li>O elige \"Agregar de todas formas\" si es una persona diferente</li></ol>"
+          "text": "<p>Tesoro CRM verifica automáticamente posibles duplicados cuando agregas un contacto:</p><ul><li><strong>Coincidencia de Email:</strong> Advertencia si la misma dirección de correo ya existe</li><li><strong>Nombre + Número de Teléfono:</strong> Sugerencia para combinaciones similares</li><li><strong>Coincidencia de Empresa:</strong> nietificación para contactos existentes de la misma empresa</li></ul><p><strong>Qué hacer con una advertencia de duplicado:</strong></p><ol><li>Haz clic en \"Ver contacto existente\" para comparar</li><li>Elige \"Fusionar\" para combinar información</li><li>O elige \"Agregar de todas formas\" si es una persona diferente</li></ol>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "edit-contact",
@@ -222,19 +227,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p><strong>Veelgemaakte wijzigingen:</strong></p><ul><li><strong>Contact informatie bijwerken:</strong> Nieuwe telefoon, email, adres</li><li><strong>Contact type aanpassen:</strong> Van prospect naar klant</li><li><strong>Notities toevoegen:</strong> Belangrijke informatie over voorkeuren</li><li><strong>Tags aanpassen:</strong> Voor betere organisatie</li></ul><p><strong>Let op bij wijzigen:</strong></p><ul><li>Email wijzigingen kunnen invloed hebben op automatische koppelingen</li><li>Adres wijzigingen updaten ook locatie-gebaseerde matches</li><li>Status wijzigingen kunnen workflow automations triggeren</li></ul>"
+              "text": "<p><strong>Veelgemaakte wijzigingen:</strong></p><ul><li><strong>Contact informatie bijwerken:</strong> Nieuwe telefoon, email, adres</li><li><strong>Contact type aanpassen:</strong> Van prospect naar klant</li><li><strong>notities toevoegen:</strong> Belangrijke informatie over voorkeuren</li><li><strong>Tags aanpassen:</strong> Voor betere organisatie</li></ul><p><strong>Let op bij wijzigen:</strong></p><ul><li>Email wijzigingen kunnen invloed hebben op automatische koppelingen</li><li>Adres wijzigingen updaten ook locatie-gebaseerde matches</li><li>Status wijzigingen kunnen workflow automations triggeren</li></ul>"
             },
             "en": {
               "text": "<p><strong>Common changes:</strong></p><ul><li><strong>Update contact info:</strong> New phone, email, address</li><li><strong>Adjust contact type:</strong> From prospect to client</li><li><strong>Add notes:</strong> Important information about preferences</li><li><strong>Modify tags:</strong> For better organization</li></ul><p><strong>Be careful when changing:</strong></p><ul><li>Email changes may affect automatic linkages</li><li>Address changes also update location-based matches</li><li>Status changes may trigger workflow automations</li></ul>"
             },
             "es": {
-              "text": "<p><strong>Cambios comunes:</strong></p><ul><li><strong>Actualizar info de contacto:</strong> Nuevo teléfono, email, dirección</li><li><strong>Ajustar tipo de contacto:</strong> De prospecto a cliente</li><li><strong>Agregar notas:</strong> Información importante sobre preferencias</li><li><strong>Modificar tags:</strong> Para mejor organización</li></ul><p><strong>Ten cuidado al cambiar:</strong></p><ul><li>Los cambios de email pueden afectar enlaces automáticos</li><li>Los cambios de dirección también actualizan matches basados en ubicación</li><li>Los cambios de estado pueden activar automatizaciones de workflow</li></ul>"
+              "text": "<p><strong>Cambios comunes:</strong></p><ul><li><strong>Actualizar info de contacto:</strong> Nuevo teléfono, email, dirección</li><li><strong>Ajustar tipo de contacto:</strong> De prospecto a cliente</li><li><strong>Agregar nietas:</strong> Información importante sobre preferencias</li><li><strong>Modificar tags:</strong> Para mejor organización</li></ul><p><strong>Ten cuidado al cambiar:</strong></p><ul><li>Los cambios de email pueden afectar enlaces automáticos</li><li>Los cambios de dirección también actualizan matches basados en ubicación</li><li>Los cambios de estado pueden activar automatizaciones de workflow</li></ul>"
             }
           }
         }
       ]
     },
-
     {
       "type": "steps",
       "id": "organize-contacts",
@@ -273,7 +277,7 @@
               "text": "<p><strong>Tags gebruiken voor filtering:</strong></p><ol><li>Ga naar je contacten overzicht</li><li>Zoek de \"Filter\" optie bovenaan de lijst</li><li>Klik op \"Filter op Tags\"</li><li>Selecteer één of meerdere tags om te filteren</li><li>De lijst toont nu alleen contacten met die tags</li></ol><p><strong>Geavanceerde filter opties:</strong></p><ul><li><strong>EN filtering:</strong> Contacten die ALLE geselecteerde tags hebben</li><li><strong>OF filtering:</strong> Contacten die MINIMAAL één van de tags hebben</li><li><strong>NIET filtering:</strong> Contacten die bepaalde tags NIET hebben</li></ul><p><strong>Tip:</strong> Combineer tag filtering met andere filters (locatie, datum, type) voor zeer specifieke lijsten.</p>"
             },
             "en": {
-              "text": "<p><strong>Using tags for filtering:</strong></p><ol><li>Go to your contacts overview</li><li>Look for the \"Filter\" option at the top of the list</li><li>Click on \"Filter by Tags\"</li><li>Select one or more tags to filter by</li><li>The list now shows only contacts with those tags</li></ol><p><strong>Advanced filter options:</strong></p><ul><li><strong>AND filtering:</strong> Contacts that have ALL selected tags</li><li><strong>OR filtering:</strong> Contacts that have AT LEAST one of the tags</li><li><strong>NOT filtering:</strong> Contacts that do NOT have certain tags</li></ul><p><strong>Tip:</strong> Combine tag filtering with other filters (location, date, type) for very specific lists.</p>"
+              "text": "<p><strong>Using tags for filtering:</strong></p><ol><li>Go to your contacts overview</li><li>Look for the \"Filter\" option at the top of the list</li><li>Click on \"Filter by Tags\"</li><li>Select one or more tags to filter by</li><li>The list now shows only contacts with those tags</li></ol><p><strong>Advanced filter options:</strong></p><ul><li><strong>AND filtering:</strong> Contacts that have ALL selected tags</li><li><strong>OR filtering:</strong> Contacts that have AT LEAST one of the tags</li><li><strong>niet filtering:</strong> Contacts that do niet have certain tags</li></ul><p><strong>Tip:</strong> Combine tag filtering with other filters (location, date, type) for very specific lists.</p>"
             },
             "es": {
               "text": "<p><strong>Usar tags para filtrado:</strong></p><ol><li>Ve a tu resumen de contactos</li><li>Busca la opción \"Filtro\" en la parte superior de la lista</li><li>Haz clic en \"Filtrar por Tags\"</li><li>Selecciona uno o más tags para filtrar</li><li>La lista ahora muestra solo contactos con esos tags</li></ol><p><strong>Opciones de filtro avanzadas:</strong></p><ul><li><strong>Filtrado Y:</strong> Contactos que tienen TODOS los tags seleccionados</li><li><strong>Filtrado O:</strong> Contactos que tienen AL MENOS uno de los tags</li><li><strong>Filtrado NO:</strong> Contactos que NO tienen ciertos tags</li></ul><p><strong>Consejo:</strong> Combina el filtrado por tags con otros filtros (ubicación, fecha, tipo) para listas muy específicas.</p>"
@@ -282,7 +286,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "next-steps",
@@ -304,13 +307,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-listing-creation-tutorial",
     "client-portal-setup-guide",
     "email-integration-setup"
   ],
-
   "faq": [
     {
       "question": {
@@ -332,8 +333,8 @@
       },
       "answer": {
         "nl": "Open het contact → Klik op de drie puntjes (⋯) rechtsboven → Kies 'Verwijderen' → Bevestig de actie. Let op: Verwijderde contacten kunnen niet hersteld worden. Overweeg in plaats daarvan een 'Inactief' tag toe te voegen.",
-        "en": "Open the contact → Click the three dots (⋯) in the top right → Choose 'Delete' → Confirm the action. Note: Deleted contacts cannot be restored. Consider adding an 'Inactive' tag instead.",
-        "es": "Abre el contacto → Haz clic en los tres puntos (⋯) en la parte superior derecha → Elige 'Eliminar' → Confirma la acción. Nota: Los contactos eliminados no se pueden restaurar. Considera agregar un tag 'Inactivo' en su lugar."
+        "en": "Open the contact → Click the three dots (⋯) in the top right → Choose 'Delete' → Confirm the action. niete: Deleted contacts canniet be restored. Consider adding an 'Inactive' tag instead.",
+        "es": "Abre el contacto → Haz clic en los tres puntos (⋯) en la parte superior derecha → Elige 'Eliminar' → Confirma la acción. nieta: Los contactos eliminados no se pueden restaurar. Considera agregar un tag 'Inactivo' en su lugar."
       }
     },
     {
@@ -344,8 +345,8 @@
       },
       "answer": {
         "nl": "Ja, maar Tesoro voorkomt conflicten door real-time sync. Als iemand anders het contact bewerkt, zie je een melding. Je laatste wijziging wordt opgeslagen, maar je krijgt de mogelijkheid om conflicterende wijzigingen te vergelijken.",
-        "en": "Yes, but Tesoro prevents conflicts through real-time sync. If someone else is editing the contact, you'll see a notification. Your latest change is saved, but you get the option to compare conflicting changes.",
-        "es": "Sí, pero Tesoro previene conflictos a través de sincronización en tiempo real. Si alguien más está editando el contacto, verás una notificación. Tu último cambio se guarda, pero obtienes la opción de comparar cambios conflictivos."
+        "en": "Yes, but Tesoro prevents conflicts through real-time sync. If someone else is editing the contact, you'll see a nietification. Your latest change is saved, but you get the option to compare conflicting changes.",
+        "es": "Sí, pero Tesoro previene conflictos a través de sincronización en tiempo real. Si alguien más está editando el contacto, verás una nietificación. Tu último cambio se guarda, pero obtienes la opción de comparar cambios conflictivos."
       }
     }
   ]

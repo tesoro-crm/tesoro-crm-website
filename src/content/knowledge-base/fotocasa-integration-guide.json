@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "integrations",
     "difficulty": "intermediate",
-    "tags": ["integrations", "fotocasa", "xml-feed", "portal-sync", "property-listings"],
+    "tags": [
+      "integrations",
+      "fotocasa",
+      "xml-feed",
+      "portal-sync",
+      "property-listings"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["fotocasa integration", "fotocasa xml feed", "property portal sync", "fotocasa tesoro", "auto-sync fotocasa"]
+    "keywords": [
+      "fotocasa integration",
+      "fotocasa xml feed",
+      "property portal sync",
+      "fotocasa tesoro",
+      "auto-sync fotocasa"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Fotocasa integratie: automatische property synchronisatie",
@@ -32,7 +42,6 @@
     },
     "icon": "sync_alt"
   },
-
   "sections": [
     {
       "type": "introduction",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "solution",
       "id": "fotocasa-setup",
@@ -73,13 +81,13 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Voor de XML feed integratie heb je een <strong>Fotocasa Professional account</strong> nodig.</p><h4>Vereisten:</h4><ul><li>Actief Fotocasa Professional abonnement</li><li>Toegang tot Fotocasa Pro dashboard</li><li>XML feed credentials (verkrijgbaar via Fotocasa support)</li></ul><h4>Account aanmaken:</h4><ol><li>Ga naar <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Klik <strong>Contrata tu anuncio</strong></li><li>Kies een abonnement (Pro, Premium, of Enterprise)</li><li>Vul bedrijfsgegevens in</li><li>Voltooi registratie en betaling</li></ol><h4>XML feed toegang aanvragen:</h4><ol><li>Log in op je Fotocasa Pro account</li><li>Ga naar <strong>Mi cuenta → Integraciones</strong></li><li>Vraag XML feed toegang aan via support ticket</li><li>Noteer je <strong>Feed ID</strong> en <strong>API Token</strong> (ontvang je via email)</li></ol>"
+              "text": "<p>Voor de XML feed integratie heb je een <strong>Fotocasa Professional account</strong> nodig.</p><h4>Vereisten:</h4><ul><li>Actief Fotocasa Professional abonnement</li><li>Toegang tot Fotocasa Pro dashboard</li><li>XML feed credentials (verkrijgbaar via Fotocasa support)</li></ul><h4>Account aanmaken:</h4><ol><li>Ga naar <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Klik <strong>Contrata tu anuncio</strong></li><li>Kies een abonnement (Pro, Premium, of Enterprise)</li><li>Vul bedrijfsgegevens in</li><li>Voltooi registratie en betaling</li></ol><h4>XML feed toegang aanvragen:</h4><ol><li>Log in op je Fotocasa Pro account</li><li>Ga naar <strong>Mi cuenta → Integraciones</strong></li><li>Vraag XML feed toegang aan via support ticket</li><li>nieteer je <strong>Feed ID</strong> en <strong>API Token</strong> (ontvang je via email)</li></ol>"
             },
             "en": {
-              "text": "<p>For the XML feed integration, you need a <strong>Fotocasa Professional account</strong>.</p><h4>Requirements:</h4><ul><li>Active Fotocasa Professional subscription</li><li>Access to Fotocasa Pro dashboard</li><li>XML feed credentials (available through Fotocasa support)</li></ul><h4>Creating account:</h4><ol><li>Go to <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Click <strong>Contrata tu anuncio</strong></li><li>Choose a subscription (Pro, Premium, or Enterprise)</li><li>Fill in company details</li><li>Complete registration and payment</li></ol><h4>Request XML feed access:</h4><ol><li>Log in to your Fotocasa Pro account</li><li>Go to <strong>Mi cuenta → Integraciones</strong></li><li>Request XML feed access via support ticket</li><li>Note your <strong>Feed ID</strong> and <strong>API Token</strong> (receive via email)</li></ol>"
+              "text": "<p>For the XML feed integration, you need a <strong>Fotocasa Professional account</strong>.</p><h4>Requirements:</h4><ul><li>Active Fotocasa Professional subscription</li><li>Access to Fotocasa Pro dashboard</li><li>XML feed credentials (available through Fotocasa support)</li></ul><h4>Creating account:</h4><ol><li>Go to <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Click <strong>Contrata tu anuncio</strong></li><li>Choose a subscription (Pro, Premium, or Enterprise)</li><li>Fill in company details</li><li>Complete registration and payment</li></ol><h4>Request XML feed access:</h4><ol><li>Log in to your Fotocasa Pro account</li><li>Go to <strong>Mi cuenta → Integraciones</strong></li><li>Request XML feed access via support ticket</li><li>niete your <strong>Feed ID</strong> and <strong>API Token</strong> (receive via email)</li></ol>"
             },
             "es": {
-              "text": "<p>Para la integración del feed XML, necesitas una <strong>cuenta profesional de Fotocasa</strong>.</p><h4>Requisitos:</h4><ul><li>Suscripción activa a Fotocasa Professional</li><li>Acceso al panel de Fotocasa Pro</li><li>Credenciales de feed XML (disponibles a través del soporte de Fotocasa)</li></ul><h4>Crear cuenta:</h4><ol><li>Ve a <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Haz clic en <strong>Contrata tu anuncio</strong></li><li>Elige una suscripción (Pro, Premium o Enterprise)</li><li>Completa los detalles de la empresa</li><li>Completa el registro y el pago</li></ol><h4>Solicitar acceso al feed XML:</h4><ol><li>Inicia sesión en tu cuenta de Fotocasa Pro</li><li>Ve a <strong>Mi cuenta → Integraciones</strong></li><li>Solicita acceso al feed XML mediante ticket de soporte</li><li>Anota tu <strong>Feed ID</strong> y <strong>API Token</strong> (recibirás por correo electrónico)</li></ol>"
+              "text": "<p>Para la integración del feed XML, necesitas una <strong>cuenta profesional de Fotocasa</strong>.</p><h4>Requisitos:</h4><ul><li>Suscripción activa a Fotocasa Professional</li><li>Acceso al panel de Fotocasa Pro</li><li>Credenciales de feed XML (disponibles a través del soporte de Fotocasa)</li></ul><h4>Crear cuenta:</h4><ol><li>Ve a <a href=\"https://www.fotocasa.es/es/profesionales\" target=\"_blank\">fotocasa.es/profesionales</a></li><li>Haz clic en <strong>Contrata tu anuncio</strong></li><li>Elige una suscripción (Pro, Premium o Enterprise)</li><li>Completa los detalles de la empresa</li><li>Completa el registro y el pago</li></ol><h4>Solicitar acceso al feed XML:</h4><ol><li>Inicia sesión en tu cuenta de Fotocasa Pro</li><li>Ve a <strong>Mi cuenta → Integraciones</strong></li><li>Solicita acceso al feed XML mediante ticket de soporte</li><li>Anieta tu <strong>Feed ID</strong> y <strong>API Token</strong> (recibirás por correo electrónico)</li></ol>"
             }
           }
         },
@@ -123,7 +131,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "field-mapping",
@@ -144,7 +151,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -159,14 +165,13 @@
           "text": "<p><strong>Maximaliseer je listing performance:</strong></p><ul><li><strong>Foto's:</strong> Upload minimaal 10 foto's van hoge kwaliteit (1200x800px of hoger)</li><li><strong>Beschrijving:</strong> Schrijf een gedetailleerde beschrijving van 300-500 woorden met relevante zoekwoorden</li><li><strong>Titel:</strong> Gebruik beschrijvende titels met locatie en property type (bijv. 'Luxe Appartement met Zeezicht in Barcelona')</li><li><strong>Prijs:</strong> Zet een realistische prijs - overpriced listings krijgen minder views</li><li><strong>Features:</strong> Vul alle beschikbare features in (lift, parking, terras) - dit verbetert filtering</li><li><strong>Energy Certificate:</strong> Verplicht sinds 2021 - zorg dat deze is ingevuld</li></ul>"
         },
         "en": {
-          "text": "<p><strong>Maximize your listing performance:</strong></p><ul><li><strong>Photos:</strong> Upload at least 10 high-quality photos (1200x800px or higher)</li><li><strong>Description:</strong> Write a detailed description of 300-500 words with relevant keywords</li><li><strong>Title:</strong> Use descriptive titles with location and property type (e.g., 'Luxury Apartment with Sea View in Barcelona')</li><li><strong>Price:</strong> Set a realistic price - overpriced listings get fewer views</li><li><strong>Features:</strong> Fill in all available features (elevator, parking, terrace) - this improves filtering</li><li><strong>Energy Certificate:</strong> Required since 2021 - make sure this is filled in</li></ul>"
+          "text": "<p><strong>Maximize your listing performance:</strong></p><ul><li><strong>Photos:</strong> Upload at least 10 high-quality photos (1200x800px or higher)</li><li><strong>Description:</strong> Write a detailed description of 300-500 words with relevant keywords</li><li><strong>Title:</strong> Use descriptive titles with location and property type (e.g., 'Luxury Apartment with Sea View in Barcelona')</li><li><strong>Prijs:</strong> Set a realistic price - overpriced listings get fewer views</li><li><strong>Features:</strong> Fill in all available features (elevator, parking, terrace) - this improves filtering</li><li><strong>Energy Certificate:</strong> Required since 2021 - make sure this is filled in</li></ul>"
         },
         "es": {
           "text": "<p><strong>Maximiza el rendimiento de tu anuncio:</strong></p><ul><li><strong>Fotos:</strong> Sube al menos 10 fotos de alta calidad (1200x800px o superior)</li><li><strong>Descripción:</strong> Escribe una descripción detallada de 300-500 palabras con palabras clave relevantes</li><li><strong>Título:</strong> Usa títulos descriptivos con ubicación y tipo de propiedad (ej., 'Apartamento de lujo con vistas al mar en Barcelona')</li><li><strong>Precio:</strong> Establece un precio realista - los anuncios sobrevalorados reciben menos vistas</li><li><strong>Características:</strong> Completa todas las características disponibles (ascensor, parking, terraza) - esto mejora el filtrado</li><li><strong>Certificado energético:</strong> Obligatorio desde 2021 - asegúrate de que esté completado</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "troubleshooting",
@@ -180,7 +185,7 @@
           "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>Properties verschijnen niet op Fotocasa:</strong></p><ul><li>Check of property status = 'Available'</li><li>Verifieer dat alle verplichte velden zijn ingevuld (prijs, adres, postcode, minimaal 1 foto)</li><li>Controleer of 'Sync to Fotocasa' is enabled bij de property</li><li>Bekijk sync errors in <strong>Settings → Integrations → Fotocasa → Sync Logs</strong></li></ul><p><strong>Sync errors 'Missing required field':</strong></p><ul><li>Open de property in Tesoro</li><li>Vul het ontbrekende veld in (foutmelding geeft aan welk veld)</li><li>Klik <strong>Save</strong></li><li>Forceer handmatige sync via <strong>Sync to Portals</strong></li></ul><p><strong>Foto's worden niet getoond:</strong></p><ul><li>Check dat foto's minimaal 800x600px zijn</li><li>Maximaal 40 foto's per property</li><li>Ondersteunde formaten: JPG, PNG</li><li>Maximale bestandsgrootte: 10MB per foto</li></ul><p><strong>Prijswijzigingen worden niet gesynchroniseerd:</strong></p><ul><li>Wacht tot volgende sync cycle (max 1 uur)</li><li>Of forceer handmatige sync</li><li>Check of Fotocasa rate limit is bereikt (max 1000 requests/uur)</li></ul>"
         },
         "en": {
-          "text": "<h4>Common issues:</h4><p><strong>Properties don't appear on Fotocasa:</strong></p><ul><li>Check if property status = 'Available'</li><li>Verify that all required fields are filled (price, address, postal code, at least 1 photo)</li><li>Check if 'Sync to Fotocasa' is enabled for the property</li><li>View sync errors in <strong>Settings → Integrations → Fotocasa → Sync Logs</strong></li></ul><p><strong>Sync errors 'Missing required field':</strong></p><ul><li>Open the property in Tesoro</li><li>Fill in the missing field (error message indicates which field)</li><li>Click <strong>Save</strong></li><li>Force manual sync via <strong>Sync to Portals</strong></li></ul><p><strong>Photos are not displayed:</strong></p><ul><li>Check that photos are at least 800x600px</li><li>Maximum 40 photos per property</li><li>Supported formats: JPG, PNG</li><li>Maximum file size: 10MB per photo</li></ul><p><strong>Price changes are not synchronized:</strong></p><ul><li>Wait for next sync cycle (max 1 hour)</li><li>Or force manual sync</li><li>Check if Fotocasa rate limit is reached (max 1000 requests/hour)</li></ul>"
+          "text": "<h4>Common issues:</h4><p><strong>Properties don't appear on Fotocasa:</strong></p><ul><li>Check if property status = 'Available'</li><li>Verify that all required fields are filled (price, address, postal code, at least 1 photo)</li><li>Check if 'Sync to Fotocasa' is enabled for the property</li><li>View sync errors in <strong>Settings → Integrations → Fotocasa → Sync Logs</strong></li></ul><p><strong>Sync errors 'Missing required field':</strong></p><ul><li>Open the property in Tesoro</li><li>Fill in the missing field (error message indicates which field)</li><li>Click <strong>Save</strong></li><li>Force manual sync via <strong>Sync to Portals</strong></li></ul><p><strong>Photos are niet displayed:</strong></p><ul><li>Check that photos are at least 800x600px</li><li>Maximum 40 photos per property</li><li>Supported formats: JPG, PNG</li><li>Maximum file size: 10MB per photo</li></ul><p><strong>Price changes are niet synchronized:</strong></p><ul><li>Wait for next sync cycle (max 1 hour)</li><li>Or force manual sync</li><li>Check if Fotocasa rate limit is reached (max 1000 requests/hour)</li></ul>"
         },
         "es": {
           "text": "<h4>Problemas comunes:</h4><p><strong>Las propiedades no aparecen en Fotocasa:</strong></p><ul><li>Verifica que el estado de la propiedad = 'Available'</li><li>Verifica que todos los campos requeridos estén completados (precio, dirección, código postal, al menos 1 foto)</li><li>Verifica que 'Sync to Fotocasa' esté habilitado para la propiedad</li><li>Ver errores de sincronización en <strong>Settings → Integrations → Fotocasa → Sync Logs</strong></li></ul><p><strong>Errores de sincronización 'Missing required field':</strong></p><ul><li>Abre la propiedad en Tesoro</li><li>Completa el campo faltante (el mensaje de error indica qué campo)</li><li>Haz clic en <strong>Save</strong></li><li>Fuerza sincronización manual mediante <strong>Sync to Portals</strong></li></ul><p><strong>Las fotos no se muestran:</strong></p><ul><li>Verifica que las fotos tengan al menos 800x600px</li><li>Máximo 40 fotos por propiedad</li><li>Formatos soportados: JPG, PNG</li><li>Tamaño máximo de archivo: 10MB por foto</li></ul><p><strong>Los cambios de precio no se sincronizan:</strong></p><ul><li>Espera al siguiente ciclo de sincronización (máx 1 hora)</li><li>O fuerza sincronización manual</li><li>Verifica si se alcanzó el límite de tasa de Fotocasa (máx 1000 solicitudes/hora)</li></ul>"
@@ -188,14 +193,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "idealista-integration-guide",
     "adding-properties-guide",
     "property-media-management",
     "api-webhooks-guide"
   ],
-
   "faq": [
     {
       "question": {

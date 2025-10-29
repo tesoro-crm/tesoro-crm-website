@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T10:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "getting-started",
+    "category": "settings",
     "difficulty": "beginner",
-    "tags": ["settings", "profile", "preferences", "notifications", "getting-started"],
+    "tags": [
+      "settings",
+      "profile",
+      "preferences",
+      "nietifications",
+      "getting-started"
+    ],
     "featured": true,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro settings", "user profile", "preferences", "notifications", "crm settings"]
+    "keywords": [
+      "tesoro settings",
+      "user profile",
+      "preferences",
+      "nietifications",
+      "crm settings"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Profiel en instellingen configureren",
@@ -26,13 +36,12 @@
       "es": "Configurar perfil y ajustes"
     },
     "description": {
-      "nl": "Leer hoe je je profiel instelt, voorkeuren aanpast en notificaties configureert voor een optimale Tesoro ervaring.",
-      "en": "Learn how to set up your profile, adjust preferences and configure notifications for an optimal Tesoro experience.",
-      "es": "Aprende a configurar tu perfil, ajustar preferencias y configurar notificaciones para una experiencia óptima de Tesoro."
+      "nl": "Leer hoe je je profiel instelt, voorkeuren aanpast en nietificaties configureert voor een optimale Tesoro ervaring.",
+      "en": "Learn how to set up your profile, adjust preferences and configure nietifications for an optimal Tesoro experience.",
+      "es": "Aprende a configurar tu perfil, ajustar preferencias y configurar nietificaciones para una experiencia óptima de Tesoro."
     },
     "icon": "settings"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "profile-setup",
@@ -85,31 +93,31 @@
           },
           "content": {
             "nl": {
-              "text": "<p>In het <strong>Personal Info</strong> tabblad vul je in:</p><ul><li><strong>Profile Photo</strong> - Upload een professionele foto (gebruikt in emails en portaal)</li><li><strong>Display Name</strong> - Hoe je naam verschijnt in het systeem</li><li><strong>Job Title</strong> - Je functie (verschijnt in email signature)</li><li><strong>Phone Number</strong> - Voor client contact (optioneel)</li><li><strong>Mobile</strong> - Voor SMS notificaties (optioneel)</li><li><strong>Email Signature</strong> - Automatisch toegevoegd aan uitgaande emails</li></ul><p><strong>Tip:</strong> Een goede profielfoto en professionele signature maken je communicatie geloofwaardiger.</p>"
+              "text": "<p>In het <strong>Personal Info</strong> tabblad vul je in:</p><ul><li><strong>Profile Photo</strong> - Upload een professionele foto (gebruikt in emails en portaal)</li><li><strong>Display Name</strong> - Hoe je naam verschijnt in het systeem</li><li><strong>Job Title</strong> - Je functie (verschijnt in email signature)</li><li><strong>Phone Number</strong> - Voor client contact (optioneel)</li><li><strong>Mobile</strong> - Voor SMS nietificaties (optioneel)</li><li><strong>Email Signature</strong> - Automatisch toegevoegd aan uitgaande emails</li></ul><p><strong>Tip:</strong> Een goede profielfoto en professionele signature maken je communicatie geloofwaardiger.</p>"
             },
             "en": {
-              "text": "<p>In the <strong>Personal Info</strong> tab you fill in:</p><ul><li><strong>Profile Photo</strong> - Upload a professional photo (used in emails and portal)</li><li><strong>Display Name</strong> - How your name appears in the system</li><li><strong>Job Title</strong> - Your function (appears in email signature)</li><li><strong>Phone Number</strong> - For client contact (optional)</li><li><strong>Mobile</strong> - For SMS notifications (optional)</li><li><strong>Email Signature</strong> - Automatically added to outgoing emails</li></ul><p><strong>Tip:</strong> A good profile photo and professional signature make your communication more credible.</p>"
+              "text": "<p>In the <strong>Personal Info</strong> tab you fill in:</p><ul><li><strong>Profile Photo</strong> - Upload a professional photo (used in emails and portal)</li><li><strong>Display Name</strong> - How your name appears in the system</li><li><strong>Job Title</strong> - Your function (appears in email signature)</li><li><strong>Phone Number</strong> - For client contact (optional)</li><li><strong>Mobile</strong> - For SMS nietifications (optional)</li><li><strong>Email Signature</strong> - Automatically added to outgoing emails</li></ul><p><strong>Tip:</strong> A good profile photo and professional signature make your communication more credible.</p>"
             },
             "es": {
-              "text": "<p>En la pestaña <strong>Personal Info</strong> completas:</p><ul><li><strong>Profile Photo</strong> - Sube una foto profesional (usada en emails y portal)</li><li><strong>Display Name</strong> - Cómo aparece tu nombre en el sistema</li><li><strong>Job Title</strong> - Tu función (aparece en la firma de email)</li><li><strong>Phone Number</strong> - Para contacto con clientes (opcional)</li><li><strong>Mobile</strong> - Para notificaciones SMS (opcional)</li><li><strong>Email Signature</strong> - Agregado automáticamente a emails salientes</li></ul><p><strong>Tip:</strong> Una buena foto de perfil y firma profesional hacen tu comunicación más creíble.</p>"
+              "text": "<p>En la pestaña <strong>Personal Info</strong> completas:</p><ul><li><strong>Profile Photo</strong> - Sube una foto profesional (usada en emails y portal)</li><li><strong>Display Name</strong> - Cómo aparece tu nombre en el sistema</li><li><strong>Job Title</strong> - Tu función (aparece en la firma de email)</li><li><strong>Phone Number</strong> - Para contacto con clientes (opcional)</li><li><strong>Mobile</strong> - Para nietificaciones SMS (opcional)</li><li><strong>Email Signature</strong> - Agregado automáticamente a emails salientes</li></ul><p><strong>Tip:</strong> Una buena foto de perfil y firma profesional hacen tu comunicación más creíble.</p>"
             }
           }
         },
         {
           "title": {
-            "nl": "Stap 3: Notificatie voorkeuren",
-            "en": "Step 3: Notification Preferences",
-            "es": "Paso 3: Preferencias de notificación"
+            "nl": "Stap 3: nietificatie voorkeuren",
+            "en": "Step 3: nietification Preferences",
+            "es": "Paso 3: Preferencias de nietificación"
           },
           "content": {
             "nl": {
-              "text": "<p>Ga naar het <strong>Notifications</strong> tabblad en kies wat je wilt ontvangen:</p><h4>Email Notificaties</h4><ul><li>Nieuwe leads assigned aan jou</li><li>Deals veranderen van fase</li><li>Taken die binnenkort verlopen</li><li>Nieuwe berichten van clients</li><li>Wekelijkse performance summary</li></ul><h4>In-App Notificaties</h4><ul><li>Real-time updates (bell icoon)</li><li>Desktop notifications (browser permission nodig)</li><li>Sound alerts voor belangrijke events</li></ul><h4>SMS Notificaties (optioneel)</h4><ul><li>Urgent client requests</li><li>Meetings binnen 30 minuten</li><li>Hot leads die actie nodig hebben</li></ul><p><strong>Tip:</strong> Begin conservatief met notificaties. Je kunt altijd meer aanzetten als je weet wat je mist.</p>"
+              "text": "<p>Ga naar het <strong>nietifications</strong> tabblad en kies wat je wilt ontvangen:</p><h4>Email nietificaties</h4><ul><li>Nieuwe leads assigned aan jou</li><li>Deals veranderen van fase</li><li>Taken die binnenkort verlopen</li><li>Nieuwe berichten van clients</li><li>Wekelijkse performance summary</li></ul><h4>In-App nietificaties</h4><ul><li>Real-time updates (bell icoon)</li><li>Desktop nietifications (browser permission nodig)</li><li>Sound alerts voor belangrijke events</li></ul><h4>SMS nietificaties (optioneel)</h4><ul><li>Urgent client requests</li><li>Meetings binnen 30 minuten</li><li>Hot leads die actie nodig hebben</li></ul><p><strong>Tip:</strong> Begin conservatief met nietificaties. Je kunt altijd meer aanzetten als je weet wat je mist.</p>"
             },
             "en": {
-              "text": "<p>Go to the <strong>Notifications</strong> tab and choose what you want to receive:</p><h4>Email Notifications</h4><ul><li>New leads assigned to you</li><li>Deals changing stages</li><li>Tasks expiring soon</li><li>New messages from clients</li><li>Weekly performance summary</li></ul><h4>In-App Notifications</h4><ul><li>Real-time updates (bell icon)</li><li>Desktop notifications (browser permission needed)</li><li>Sound alerts for important events</li></ul><h4>SMS Notifications (optional)</h4><ul><li>Urgent client requests</li><li>Meetings within 30 minutes</li><li>Hot leads needing action</li></ul><p><strong>Tip:</strong> Start conservatively with notifications. You can always turn on more if you know what you're missing.</p>"
+              "text": "<p>Go to the <strong>nietifications</strong> tab and choose what you want to receive:</p><h4>Email nietifications</h4><ul><li>New leads assigned to you</li><li>Deals changing stages</li><li>Tasks expiring soon</li><li>New messages from clients</li><li>Weekly performance summary</li></ul><h4>In-App nietifications</h4><ul><li>Real-time updates (bell icon)</li><li>Desktop nietifications (browser permission needed)</li><li>Sound alerts for important events</li></ul><h4>SMS nietifications (optional)</h4><ul><li>Urgent client requests</li><li>Meetings within 30 minutes</li><li>Hot leads needing action</li></ul><p><strong>Tip:</strong> Start conservatively with nietifications. You can always turn on more if you know what you're missing.</p>"
             },
             "es": {
-              "text": "<p>Ve a la pestaña <strong>Notifications</strong> y elige qué quieres recibir:</p><h4>Notificaciones por email</h4><ul><li>Nuevos leads asignados a ti</li><li>Deals cambiando etapas</li><li>Tareas que expiran pronto</li><li>Nuevos mensajes de clientes</li><li>Resumen de rendimiento semanal</li></ul><h4>Notificaciones en la app</h4><ul><li>Actualizaciones en tiempo real (ícono de campana)</li><li>Notificaciones de escritorio (permiso de navegador necesario)</li><li>Alertas de sonido para eventos importantes</li></ul><h4>Notificaciones SMS (opcional)</h4><ul><li>Solicitudes urgentes de clientes</li><li>Reuniones dentro de 30 minutos</li><li>Hot leads que necesitan acción</li></ul><p><strong>Tip:</strong> Comienza de forma conservadora con las notificaciones. Siempre puedes activar más si sabes lo que te estás perdiendo.</p>"
+              "text": "<p>Ve a la pestaña <strong>nietifications</strong> y elige qué quieres recibir:</p><h4>nietificaciones por email</h4><ul><li>Nuevos leads asignados a ti</li><li>Deals cambiando etapas</li><li>Tareas que expiran pronto</li><li>Nuevos mensajes de clientes</li><li>Resumen de rendimiento semanal</li></ul><h4>nietificaciones en la app</h4><ul><li>Actualizaciones en tiempo real (ícono de campana)</li><li>nietificaciones de escritorio (permiso de navegador necesario)</li><li>Alertas de sonido para eventos importantes</li></ul><h4>nietificaciones SMS (opcional)</h4><ul><li>Solicitudes urgentes de clientes</li><li>Reuniones dentro de 30 minutos</li><li>Hot leads que necesitan acción</li></ul><p><strong>Tip:</strong> Comienza de forma conservadora con las nietificaciones. Siempre puedes activar más si sabes lo que te estás perdiendo.</p>"
             }
           }
         },
@@ -124,10 +132,10 @@
               "text": "<p>In het <strong>Preferences</strong> tabblad:</p><ul><li><strong>Language</strong> - Kies tussen Nederlands, English, Español</li><li><strong>Timezone</strong> - Belangrijk voor scheduling (auto-detect werkt meestal)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) of MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) of 1,000.00 (US/UK)</li></ul><p><strong>Belangrijke opmerking:</strong> Deze instellingen beïnvloeden alleen hoe JIJ data ziet. Clients zien content in hun eigen taal via de portal.</p>"
             },
             "en": {
-              "text": "<p>In the <strong>Preferences</strong> tab:</p><ul><li><strong>Language</strong> - Choose between Nederlands, English, Español</li><li><strong>Timezone</strong> - Important for scheduling (auto-detect usually works)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) or MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) or 1,000.00 (US/UK)</li></ul><p><strong>Important note:</strong> These settings only affect how YOU see data. Clients see content in their own language via the portal.</p>"
+              "text": "<p>In the <strong>Preferences</strong> tab:</p><ul><li><strong>Language</strong> - Choose between Nederlands, English, Español</li><li><strong>Timezone</strong> - Important for scheduling (auto-detect usually works)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) or MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) or 1,000.00 (US/UK)</li></ul><p><strong>Important niete:</strong> These settings only affect how YOU see data. Clients see content in their own language via the portal.</p>"
             },
             "es": {
-              "text": "<p>En la pestaña <strong>Preferences</strong>:</p><ul><li><strong>Language</strong> - Elige entre Nederlands, English, Español</li><li><strong>Timezone</strong> - Importante para programación (auto-detect generalmente funciona)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) o MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) o 1,000.00 (US/UK)</li></ul><p><strong>Nota importante:</strong> Estos ajustes solo afectan cómo TÚ ves los datos. Los clientes ven contenido en su propio idioma a través del portal.</p>"
+              "text": "<p>En la pestaña <strong>Preferences</strong>:</p><ul><li><strong>Language</strong> - Elige entre Nederlands, English, Español</li><li><strong>Timezone</strong> - Importante para programación (auto-detect generalmente funciona)</li><li><strong>Date Format</strong> - DD/MM/YYYY (EU) o MM/DD/YYYY (US)</li><li><strong>Currency</strong> - EUR, USD, GBP, etc.</li><li><strong>Number Format</strong> - 1.000,00 (EU) o 1,000.00 (US/UK)</li></ul><p><strong>nieta importante:</strong> Estos ajustes solo afectan cómo TÚ ves los datos. Los clientes ven contenido en su propio idioma a través del portal.</p>"
             }
           }
         },
@@ -151,7 +159,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "company-settings",
@@ -166,14 +173,13 @@
           "text": "<p>Als je <strong>admin rechten</strong> hebt, zie je ook Company Settings:</p><ul><li><strong>Company Profile</strong> - Bedrijfsnaam, logo, adres</li><li><strong>User Management</strong> - Team leden toevoegen/verwijderen</li><li><strong>AI Settings</strong> - AI matching configureren</li><li><strong>Email Integration</strong> - Gmail/Outlook koppelen</li><li><strong>MLS Feeds</strong> - Idealista, Fotocasa integraties</li><li><strong>Client Portal</strong> - Portal URL en branding</li><li><strong>Billing</strong> - Subscription en betalingen</li></ul><p>Deze settings beïnvloeden het hele team. Wees voorzichtig met wijzigingen hier!</p>"
         },
         "en": {
-          "text": "<p>If you have <strong>admin permissions</strong>, you also see Company Settings:</p><ul><li><strong>Company Profile</strong> - Company name, logo, address</li><li><strong>User Management</strong> - Add/remove team members</li><li><strong>AI Settings</strong> - Configure AI matching</li><li><strong>Email Integration</strong> - Connect Gmail/Outlook</li><li><strong>MLS Feeds</strong> - Idealista, Fotocasa integrations</li><li><strong>Client Portal</strong> - Portal URL and branding</li><li><strong>Billing</strong> - Subscription and payments</li></ul><p>These settings affect the entire team. Be careful with changes here!</p>"
+          "text": "<p>If you have <strong>admin permissions</strong>, you also see Company Settings:</p><ul><li><strong>Company Profile</strong> - Company name, logo, address</li><li><strong>User Management</strong> - Add/remove teamlids</li><li><strong>AI Settings</strong> - Configure AI matching</li><li><strong>Email Integration</strong> - Connect Gmail/Outlook</li><li><strong>MLS Feeds</strong> - Idealista, Fotocasa integrations</li><li><strong>Client Portal</strong> - Portal URL and branding</li><li><strong>Billing</strong> - Subscription and payments</li></ul><p>These settings affect the entire team. Be careful with changes here!</p>"
         },
         "es": {
           "text": "<p>Si tienes <strong>permisos de admin</strong>, también ves Company Settings:</p><ul><li><strong>Company Profile</strong> - Nombre de empresa, logo, dirección</li><li><strong>User Management</strong> - Agregar/eliminar miembros del equipo</li><li><strong>AI Settings</strong> - Configurar matching de IA</li><li><strong>Email Integration</strong> - Conectar Gmail/Outlook</li><li><strong>MLS Feeds</strong> - Integraciones Idealista, Fotocasa</li><li><strong>Client Portal</strong> - URL del portal y branding</li><li><strong>Billing</strong> - Suscripción y pagos</li></ul><p>Estos ajustes afectan a todo el equipo. ¡Ten cuidado con los cambios aquí!</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "best-practices",
@@ -184,24 +190,22 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Profiel Foto</h4><p>Gebruik een <strong>professionele headshot</strong> met neutrale achtergrond. Dit is wat clients zien in emails en het portal - het vormt je eerste indruk.</p><h4>Email Signature</h4><p>Include altijd:</p><ul><li>Je naam en functie</li><li>Telefoonnummer (direct of mobiel)</li><li>Email adres</li><li>Bedrijfsnaam en website</li><li>Optioneel: LinkedIn profiel, licentienummers</li></ul><h4>Notificaties</h4><p>Aanbevolen setup voor makelaars:</p><ul><li><strong>Email:</strong> Alleen dagelijkse summary (niet elke update)</li><li><strong>In-app:</strong> Nieuwe leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Alleen urgent (hot leads, meetings < 1 uur)</li></ul><h4>Privacy</h4><p>Check regelmatig je <strong>Active Sessions</strong>. Log uit op devices die je niet meer gebruikt (oude laptops, public computers).</p>"
+          "text": "<h4>Profiel Foto</h4><p>Gebruik een <strong>professionele headshot</strong> met neutrale achtergrond. Dit is wat clients zien in emails en het portal - het vormt je eerste indruk.</p><h4>Email Signature</h4><p>Include altijd:</p><ul><li>Je naam en functie</li><li>Telefoonnummer (direct of mobiel)</li><li>Email adres</li><li>Bedrijfsnaam en website</li><li>Optioneel: LinkedIn profiel, licentienummers</li></ul><h4>nietificaties</h4><p>Aanbevolen setup voor makelaars:</p><ul><li><strong>Email:</strong> Alleen dagelijkse summary (niet elke update)</li><li><strong>In-app:</strong> Nieuwe leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Alleen urgent (hot leads, meetings < 1 uur)</li></ul><h4>Privacy</h4><p>Check regelmatig je <strong>Active Sessions</strong>. Log uit op devices die je niet meer gebruikt (oude laptops, public computers).</p>"
         },
         "en": {
-          "text": "<h4>Profile Photo</h4><p>Use a <strong>professional headshot</strong> with neutral background. This is what clients see in emails and the portal - it forms your first impression.</p><h4>Email Signature</h4><p>Always include:</p><ul><li>Your name and function</li><li>Phone number (direct or mobile)</li><li>Email address</li><li>Company name and website</li><li>Optional: LinkedIn profile, license numbers</li></ul><h4>Notifications</h4><p>Recommended setup for agents:</p><ul><li><strong>Email:</strong> Only daily summary (not every update)</li><li><strong>In-app:</strong> New leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Only urgent (hot leads, meetings < 1 hour)</li></ul><h4>Privacy</h4><p>Regularly check your <strong>Active Sessions</strong>. Log out on devices you no longer use (old laptops, public computers).</p>"
+          "text": "<h4>Profile Photo</h4><p>Use a <strong>professional headshot</strong> with neutral background. This is what clients see in emails and the portal - it forms your first impression.</p><h4>Email Signature</h4><p>Always include:</p><ul><li>Your name and function</li><li>Phone number (direct or mobile)</li><li>Email address</li><li>Company name and website</li><li>Optional: LinkedIn profile, license numbers</li></ul><h4>nietifications</h4><p>Recommended setup for agents:</p><ul><li><strong>Email:</strong> Only daily summary (niet every update)</li><li><strong>In-app:</strong> New leads, deal stage changes, client messages</li><li><strong>SMS:</strong> Only urgent (hot leads, meetings < 1 hour)</li></ul><h4>Privacy</h4><p>Regularly check your <strong>Active Sessions</strong>. Log out on devices you no longer use (old laptops, public computers).</p>"
         },
         "es": {
-          "text": "<h4>Foto de perfil</h4><p>Usa un <strong>retrato profesional</strong> con fondo neutral. Esto es lo que los clientes ven en emails y el portal - forma tu primera impresión.</p><h4>Firma de email</h4><p>Incluye siempre:</p><ul><li>Tu nombre y función</li><li>Número de teléfono (directo o móvil)</li><li>Dirección de email</li><li>Nombre de empresa y sitio web</li><li>Opcional: Perfil de LinkedIn, números de licencia</li></ul><h4>Notificaciones</h4><p>Configuración recomendada para agentes:</p><ul><li><strong>Email:</strong> Solo resumen diario (no cada actualización)</li><li><strong>En la app:</strong> Nuevos leads, cambios de etapa de deal, mensajes de clientes</li><li><strong>SMS:</strong> Solo urgente (hot leads, reuniones < 1 hora)</li></ul><h4>Privacidad</h4><p>Verifica regularmente tus <strong>Active Sessions</strong>. Cierra sesión en dispositivos que ya no usas (laptops antiguas, computadoras públicas).</p>"
+          "text": "<h4>Foto de perfil</h4><p>Usa un <strong>retrato profesional</strong> con fondo neutral. Esto es lo que los clientes ven en emails y el portal - forma tu primera impresión.</p><h4>Firma de email</h4><p>Incluye siempre:</p><ul><li>Tu nombre y función</li><li>Número de teléfono (directo o móvil)</li><li>Dirección de email</li><li>Nombre de empresa y sitio web</li><li>Opcional: Perfil de LinkedIn, números de licencia</li></ul><h4>nietificaciones</h4><p>Configuración recomendada para agentes:</p><ul><li><strong>Email:</strong> Solo resumen diario (no cada actualización)</li><li><strong>En la app:</strong> Nuevos leads, cambios de etapa de deal, mensajes de clientes</li><li><strong>SMS:</strong> Solo urgente (hot leads, reuniones < 1 hora)</li></ul><h4>Privacidad</h4><p>Verifica regularmente tus <strong>Active Sessions</strong>. Cierra sesión en dispositivos que ya no usas (laptops antiguas, computadoras públicas).</p>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "account-registration-complete-guide",
     "dashboard-overview",
     "getting-help-support"
   ],
-
   "faq": [
     {
       "question": {
@@ -229,14 +233,14 @@
     },
     {
       "question": {
-        "nl": "Krijgen mijn teamleden mijn notificaties ook te zien?",
-        "en": "Do my team members also see my notifications?",
-        "es": "¿Mis compañeros de equipo también ven mis notificaciones?"
+        "nl": "Krijgen mijn teamleden mijn nietificaties ook te zien?",
+        "en": "Do my teamlids also see my nietifications?",
+        "es": "¿Mis compañeros de equipo también ven mis nietificaciones?"
       },
       "answer": {
-        "nl": "Nee, notificatie instellingen zijn volledig persoonlijk. Wat jij ontvangt heeft geen invloed op wat anderen ontvangen. Elk teamlid configureert zijn eigen voorkeuren.",
-        "en": "No, notification settings are completely personal. What you receive doesn't affect what others receive. Each team member configures their own preferences.",
-        "es": "No, la configuración de notificaciones es completamente personal. Lo que recibes no afecta lo que otros reciben. Cada miembro del equipo configura sus propias preferencias."
+        "nl": "Nee, nietificatie instellingen zijn volledig persoonlijk. Wat jij ontvangt heeft geen invloed op wat anderen ontvangen. Elk teamlid configureert zijn eigen voorkeuren.",
+        "en": "No, nietification settings are completely personal. What you receive doesn't affect what others receive. Each teamlid configures their own preferences.",
+        "es": "No, la configuración de nietificaciones es completamente personal. Lo que recibes no afecta lo que otros reciben. Cada miembro del equipo configura sus propias preferencias."
       }
     }
   ]

@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "email", "communication", "gmail", "outlook"],
+    "tags": [
+      "contacts",
+      "email",
+      "communication",
+      "gmail",
+      "outlook"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["email integration tesoro", "send emails crm", "gmail integration", "outlook sync", "email tracking"]
+    "keywords": [
+      "email integration tesoro",
+      "send emails crm",
+      "gmail integration",
+      "outlook sync",
+      "email tracking"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Email Integratie: Communiceer Direct vanuit je CRM",
@@ -32,7 +42,6 @@
     },
     "icon": "email"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "sending-emails",
@@ -75,7 +83,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "email-tracking",
@@ -98,14 +105,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-notes-history",
     "contact-tasks-reminders",
     "contact-best-practices"
   ],
-
   "faq": [
     {
       "question": {

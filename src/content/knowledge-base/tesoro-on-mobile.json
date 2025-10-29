@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["mobile", "app", "getting-started", "responsive", "on-the-go"],
+    "tags": [
+      "mobile",
+      "app",
+      "getting-started",
+      "responsive",
+      "on-the-go"
+    ],
     "featured": false,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro mobile", "mobile crm", "mobile app", "on the go", "smartphone crm"]
+    "keywords": [
+      "tesoro mobile",
+      "mobile crm",
+      "mobile app",
+      "on the go",
+      "smartphone crm"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Tesoro op mobiel gebruiken",
@@ -32,7 +42,6 @@
     },
     "icon": "smartphone"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "accessing-mobile",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "mobile-features",
@@ -81,17 +88,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Dashboard on the Go</h4><ul><li>Swipe horizontaal door KPI cards</li><li>Tap een KPI om naar de module te gaan</li><li>Pull-to-refresh voor latest data</li><li>Compact layout voor kleine schermen</li></ul><h4>Quick Actions</h4><ul><li>Floating <strong>+</strong> button rechtsonder</li><li>Tap voor: New Contact, Lead, Deal, Task, Note</li><li>Voice-to-text support voor snelle note entries</li></ul><h4>Kanban Board</h4><ul><li>Horizontal scroll door deal stages</li><li>Tap-and-hold om deal te verplaatsen</li><li>Pinch-to-zoom voor overview</li><li>Collapsed view toont alleen essentials</li></ul><h4>Contact & Deal Cards</h4><ul><li>Tap voor quick view</li><li>Swipe left voor actions (Edit, Delete, Archive)</li><li>Swipe right voor communication (Call, Email, WhatsApp)</li><li>Long press voor context menu</li></ul><h4>Property Viewing</h4><ul><li>Photo gallery met swipe navigation</li><li>Pinch-to-zoom op floor plans</li><li>Tap-to-call agent direct vanuit listing</li><li>Share properties via native share sheet</li></ul><h4>Offline Support</h4><ul><li>Recent data cached lokaal</li><li>View contacts/deals zonder internet</li><li>Changes sync automatisch when online</li><li>Indicator toont sync status</li></ul>"
+          "text": "<h4>Dashboard on the Go</h4><ul><li>Swipe horizontaal door KPI cards</li><li>Tap een KPI om naar de module te gaan</li><li>Pull-to-refresh voor latest data</li><li>Compact layout voor kleine schermen</li></ul><h4>Quick Actions</h4><ul><li>Floating <strong>+</strong> button rechtsonder</li><li>Tap voor: New Contact, Lead, Deal, Task, niete</li><li>Voice-to-text support voor snelle niete entries</li></ul><h4>Kanban Board</h4><ul><li>Horizontal scroll door deal stages</li><li>Tap-and-hold om deal te verplaatsen</li><li>Pinch-to-zoom voor overview</li><li>Collapsed view toont alleen essentials</li></ul><h4>Contact & Deal Cards</h4><ul><li>Tap voor quick view</li><li>Swipe left voor actions (Edit, Delete, Archive)</li><li>Swipe right voor communication (Call, Email, WhatsApp)</li><li>Long press voor context menu</li></ul><h4>Property Viewing</h4><ul><li>Photo gallery met swipe navigation</li><li>Pinch-to-zoom op floor plans</li><li>Tap-to-call agent direct vanuit listing</li><li>Share properties via native share sheet</li></ul><h4>Offline Support</h4><ul><li>Recent data cached lokaal</li><li>View contacts/deals zonder internet</li><li>Changes sync automatisch when online</li><li>Indicator toont sync status</li></ul>"
         },
         "en": {
-          "text": "<h4>Dashboard on the Go</h4><ul><li>Swipe horizontally through KPI cards</li><li>Tap a KPI to go to the module</li><li>Pull-to-refresh for latest data</li><li>Compact layout for small screens</li></ul><h4>Quick Actions</h4><ul><li>Floating <strong>+</strong> button bottom right</li><li>Tap for: New Contact, Lead, Deal, Task, Note</li><li>Voice-to-text support for quick note entries</li></ul><h4>Kanban Board</h4><ul><li>Horizontal scroll through deal stages</li><li>Tap-and-hold to move deal</li><li>Pinch-to-zoom for overview</li><li>Collapsed view shows only essentials</li></ul><h4>Contact & Deal Cards</h4><ul><li>Tap for quick view</li><li>Swipe left for actions (Edit, Delete, Archive)</li><li>Swipe right for communication (Call, Email, WhatsApp)</li><li>Long press for context menu</li></ul><h4>Property Viewing</h4><ul><li>Photo gallery with swipe navigation</li><li>Pinch-to-zoom on floor plans</li><li>Tap-to-call agent directly from listing</li><li>Share properties via native share sheet</li></ul><h4>Offline Support</h4><ul><li>Recent data cached locally</li><li>View contacts/deals without internet</li><li>Changes sync automatically when online</li><li>Indicator shows sync status</li></ul>"
+          "text": "<h4>Dashboard on the Go</h4><ul><li>Swipe horizontally through KPI cards</li><li>Tap a KPI to go to the module</li><li>Pull-to-refresh for latest data</li><li>Compact layout for small screens</li></ul><h4>Quick Actions</h4><ul><li>Floating <strong>+</strong> button bottom right</li><li>Tap for: New Contact, Lead, Deal, Task, niete</li><li>Voice-to-text support for quick niete entries</li></ul><h4>Kanban Board</h4><ul><li>Horizontal scroll through deal stages</li><li>Tap-and-hold to move deal</li><li>Pinch-to-zoom for overview</li><li>Collapsed view shows only essentials</li></ul><h4>Contact & Deal Cards</h4><ul><li>Tap for quick view</li><li>Swipe left for actions (Edit, Delete, Archive)</li><li>Swipe right for communication (Call, Email, WhatsApp)</li><li>Long press for context menu</li></ul><h4>Property Viewing</h4><ul><li>Photo gallery with swipe navigation</li><li>Pinch-to-zoom on floor plans</li><li>Tap-to-call agent directly from listing</li><li>Share properties via native share sheet</li></ul><h4>Offline Support</h4><ul><li>Recent data cached locally</li><li>View contacts/deals without internet</li><li>Changes sync automatically when online</li><li>Indicator shows sync status</li></ul>"
         },
         "es": {
-          "text": "<h4>Dashboard en movimiento</h4><ul><li>Desliza horizontalmente por tarjetas KPI</li><li>Toca un KPI para ir al módulo</li><li>Pull-to-refresh para datos más recientes</li><li>Diseño compacto para pantallas pequeñas</li></ul><h4>Acciones rápidas</h4><ul><li>Botón <strong>+</strong> flotante abajo a la derecha</li><li>Toca para: New Contact, Lead, Deal, Task, Note</li><li>Soporte de voz a texto para entradas rápidas de notas</li></ul><h4>Tablero Kanban</h4><ul><li>Desplazamiento horizontal por etapas de deals</li><li>Toca y mantén para mover deal</li><li>Pellizca para zoom para vista general</li><li>Vista colapsada muestra solo lo esencial</li></ul><h4>Tarjetas de contacto y deal</h4><ul><li>Toca para vista rápida</li><li>Desliza a la izquierda para acciones (Edit, Delete, Archive)</li><li>Desliza a la derecha para comunicación (Call, Email, WhatsApp)</li><li>Mantén presionado para menú contextual</li></ul><h4>Visualización de propiedades</h4><ul><li>Galería de fotos con navegación por deslizamiento</li><li>Pellizca para zoom en planos de planta</li><li>Toca para llamar al agente directamente desde el listing</li><li>Comparte propiedades a través de la hoja de compartir nativa</li></ul><h4>Soporte sin conexión</h4><ul><li>Datos recientes almacenados localmente</li><li>Ve contactos/deals sin internet</li><li>Los cambios se sincronizan automáticamente cuando estás en línea</li><li>El indicador muestra el estado de sincronización</li></ul>"
+          "text": "<h4>Dashboard en movimiento</h4><ul><li>Desliza horizontalmente por tarjetas KPI</li><li>Toca un KPI para ir al módulo</li><li>Pull-to-refresh para datos más recientes</li><li>Diseño compacto para pantallas pequeñas</li></ul><h4>Acciones rápidas</h4><ul><li>Botón <strong>+</strong> flotante abajo a la derecha</li><li>Toca para: New Contact, Lead, Deal, Task, niete</li><li>Soporte de voz a texto para entradas rápidas de nietas</li></ul><h4>Tablero Kanban</h4><ul><li>Desplazamiento horizontal por etapas de deals</li><li>Toca y mantén para mover deal</li><li>Pellizca para zoom para vista general</li><li>Vista colapsada muestra solo lo esencial</li></ul><h4>Tarjetas de contacto y deal</h4><ul><li>Toca para vista rápida</li><li>Desliza a la izquierda para acciones (Edit, Delete, Archive)</li><li>Desliza a la derecha para comunicación (Call, Email, WhatsApp)</li><li>Mantén presionado para menú contextual</li></ul><h4>Visualización de propiedades</h4><ul><li>Galería de fotos con navegación por deslizamiento</li><li>Pellizca para zoom en planos de planta</li><li>Toca para llamar al agente directamente desde el listing</li><li>Comparte propiedades a través de la hoja de compartir nativa</li></ul><h4>Soporte sin conexión</h4><ul><li>Datos recientes almacenados localmente</li><li>Ve contactos/deals sin internet</li><li>Los cambios se sincronizan automáticamente cuando estás en línea</li><li>El indicador muestra el estado de sincronización</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "mobile-tips",
@@ -103,17 +109,16 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Enable Face ID/Touch ID</strong> - Log snel in zonder password te typen (Settings → Security)</li><li><strong>Use voice input</strong> - Bij notes en emails, gebruik voice-to-text voor snellere entry</li><li><strong>Pin frequent contacts</strong> - Swipe right op contact → Pin to Top</li><li><strong>Use widgets</strong> (iOS 14+) - Voeg Tesoro widget toe aan home screen voor quick stats</li><li><strong>Enable push notifications</strong> - Blijf op de hoogte van hot leads en belangrijke updates</li><li><strong>Download voor offline</strong> - Voor belangrijke viewings, open properties van tevoren zodat ze cached zijn</li></ul>"
+          "text": "<ul><li><strong>Enable Face ID/Touch ID</strong> - Log snel in zonder password te typen (Settings → Security)</li><li><strong>Use voice input</strong> - Bij notes en emails, gebruik voice-to-text voor snellere entry</li><li><strong>Pin frequent contacts</strong> - Swipe right op contact → Pin to Top</li><li><strong>Use widgets</strong> (iOS 14+) - Voeg Tesoro widget toe aan home screen voor quick stats</li><li><strong>Enable push nietifications</strong> - Blijf op de hoogte van hot leads en belangrijke updates</li><li><strong>Download voor offline</strong> - Voor belangrijke viewings, open properties van tevoren zodat ze cached zijn</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Enable Face ID/Touch ID</strong> - Log in quickly without typing password (Settings → Security)</li><li><strong>Use voice input</strong> - For notes and emails, use voice-to-text for faster entry</li><li><strong>Pin frequent contacts</strong> - Swipe right on contact → Pin to Top</li><li><strong>Use widgets</strong> (iOS 14+) - Add Tesoro widget to home screen for quick stats</li><li><strong>Enable push notifications</strong> - Stay informed about hot leads and important updates</li><li><strong>Download for offline</strong> - For important viewings, open properties beforehand so they're cached</li></ul>"
+          "text": "<ul><li><strong>Enable Face ID/Touch ID</strong> - Log in quickly without typing password (Settings → Security)</li><li><strong>Use voice input</strong> - For notes and emails, use voice-to-text for faster entry</li><li><strong>Pin frequent contacts</strong> - Swipe right on contact → Pin to Top</li><li><strong>Use widgets</strong> (iOS 14+) - Add Tesoro widget to home screen for quick stats</li><li><strong>Enable push nietifications</strong> - Stay informed about hot leads and important updates</li><li><strong>Download for offline</strong> - For important viewings, open properties beforehand so they're cached</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Habilitar Face ID/Touch ID</strong> - Inicia sesión rápidamente sin escribir contraseña (Settings → Security)</li><li><strong>Usar entrada de voz</strong> - Para notas y emails, usa voz a texto para entrada más rápida</li><li><strong>Anclar contactos frecuentes</strong> - Desliza a la derecha en contacto → Pin to Top</li><li><strong>Usar widgets</strong> (iOS 14+) - Agrega widget de Tesoro a la pantalla de inicio para estadísticas rápidas</li><li><strong>Habilitar notificaciones push</strong> - Mantente informado sobre hot leads y actualizaciones importantes</li><li><strong>Descargar para sin conexión</strong> - Para visitas importantes, abre propiedades con anticipación para que se almacenen en caché</li></ul>"
+          "text": "<ul><li><strong>Habilitar Face ID/Touch ID</strong> - Inicia sesión rápidamente sin escribir contraseña (Settings → Security)</li><li><strong>Usar entrada de voz</strong> - Para nietas y emails, usa voz a texto para entrada más rápida</li><li><strong>Anclar contactos frecuentes</strong> - Desliza a la derecha en contacto → Pin to Top</li><li><strong>Usar widgets</strong> (iOS 14+) - Agrega widget de Tesoro a la pantalla de inicio para estadísticas rápidas</li><li><strong>Habilitar nietificaciones push</strong> - Mantente informado sobre hot leads y actualizaciones importantes</li><li><strong>Descargar para sin conexión</strong> - Para visitas importantes, abre propiedades con anticipación para que se almacenen en caché</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "common-scenarios",
@@ -124,24 +129,22 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Scenario 1: Bij Viewing</h4><ol><li>Open de deal op je phone</li><li>Tap Properties tab om listing details te zien</li><li>Show photo gallery aan client</li><li>Na viewing: tap Notes, voice-record je impressie</li><li>Update deal stage naar \"Viewed\"</li></ol><h4>Scenario 2: Nieuwe Lead op Event</h4><ol><li>Tap floating + button</li><li>Tap \"New Contact\"</li><li>Scan business card met camera (auto-fill OCR)</li><li>Add quick note over waar je hen ontmoette</li><li>Tap \"Create Deal\" direct vanuit contact</li></ol><h4>Scenario 3: Client Belt Tijdens Lunch</h4><ol><li>Call komt binnen, caller ID toont Tesoro contact info</li><li>Na gesprek: notification \"Log call?\"</li><li>Tap yes, speak summary met voice-to-text</li><li>Auto-saved in contact timeline</li></ol><h4>Scenario 4: Property Info Delen</h4><ol><li>Open property</li><li>Tap Share icoon</li><li>Choose WhatsApp, Email, or SMS</li><li>Preview shows beautiful property card</li><li>Send direct vanuit Tesoro</li></ol>"
+          "text": "<h4>Scenario 1: Bij Viewing</h4><ol><li>Open de deal op je phone</li><li>Tap Properties tab om listing details te zien</li><li>Show photo gallery aan client</li><li>Na viewing: tap notes, voice-record je impressie</li><li>Update deal stage naar \"Viewed\"</li></ol><h4>Scenario 2: Nieuwe Lead op Event</h4><ol><li>Tap floating + button</li><li>Tap \"New Contact\"</li><li>Scan business card met camera (auto-fill OCR)</li><li>Add quick niete over waar je hen ontmoette</li><li>Tap \"Create Deal\" direct vanuit contact</li></ol><h4>Scenario 3: Client Belt Tijdens Lunch</h4><ol><li>Call komt binnen, caller ID toont Tesoro contact info</li><li>Na gesprek: nietification \"Log call?\"</li><li>Tap yes, speak summary met voice-to-text</li><li>Auto-saved in contact timeline</li></ol><h4>Scenario 4: Property Info Delen</h4><ol><li>Open property</li><li>Tap Share icoon</li><li>Choose WhatsApp, Email, or SMS</li><li>Preview shows beautiful property card</li><li>Send direct vanuit Tesoro</li></ol>"
         },
         "en": {
-          "text": "<h4>Scenario 1: At Viewing</h4><ol><li>Open the deal on your phone</li><li>Tap Properties tab to see listing details</li><li>Show photo gallery to client</li><li>After viewing: tap Notes, voice-record your impression</li><li>Update deal stage to \"Viewed\"</li></ol><h4>Scenario 2: New Lead at Event</h4><ol><li>Tap floating + button</li><li>Tap \"New Contact\"</li><li>Scan business card with camera (auto-fill OCR)</li><li>Add quick note about where you met them</li><li>Tap \"Create Deal\" directly from contact</li></ol><h4>Scenario 3: Client Calls During Lunch</h4><ol><li>Call comes in, caller ID shows Tesoro contact info</li><li>After call: notification \"Log call?\"</li><li>Tap yes, speak summary with voice-to-text</li><li>Auto-saved in contact timeline</li></ol><h4>Scenario 4: Share Property Info</h4><ol><li>Open property</li><li>Tap Share icon</li><li>Choose WhatsApp, Email, or SMS</li><li>Preview shows beautiful property card</li><li>Send directly from Tesoro</li></ol>"
+          "text": "<h4>Scenario 1: At Viewing</h4><ol><li>Open the deal on your phone</li><li>Tap Properties tab to see listing details</li><li>Show photo gallery to client</li><li>After viewing: tap notes, voice-record your impression</li><li>Update deal stage to \"Viewed\"</li></ol><h4>Scenario 2: New Lead at Event</h4><ol><li>Tap floating + button</li><li>Tap \"New Contact\"</li><li>Scan business card with camera (auto-fill OCR)</li><li>Add quick niete about where you met them</li><li>Tap \"Create Deal\" directly from contact</li></ol><h4>Scenario 3: Client Calls During Lunch</h4><ol><li>Call comes in, caller ID shows Tesoro contact info</li><li>After call: nietification \"Log call?\"</li><li>Tap yes, speak summary with voice-to-text</li><li>Auto-saved in contact timeline</li></ol><h4>Scenario 4: Share Property Info</h4><ol><li>Open property</li><li>Tap Share icon</li><li>Choose WhatsApp, Email, or SMS</li><li>Preview shows beautiful property card</li><li>Send directly from Tesoro</li></ol>"
         },
         "es": {
-          "text": "<h4>Escenario 1: En la visita</h4><ol><li>Abre el deal en tu teléfono</li><li>Toca la pestaña Properties para ver detalles del listing</li><li>Muestra la galería de fotos al cliente</li><li>Después de la visita: toca Notes, graba tu impresión por voz</li><li>Actualiza la etapa del deal a \"Viewed\"</li></ol><h4>Escenario 2: Nuevo lead en evento</h4><ol><li>Toca el botón + flotante</li><li>Toca \"New Contact\"</li><li>Escanea tarjeta de visita con cámara (auto-completado OCR)</li><li>Agrega nota rápida sobre dónde los conociste</li><li>Toca \"Create Deal\" directamente desde contacto</li></ol><h4>Escenario 3: Cliente llama durante almuerzo</h4><ol><li>Entra llamada, identificador de llamadas muestra info de contacto Tesoro</li><li>Después de llamada: notificación \"Log call?\"</li><li>Toca sí, habla resumen con voz a texto</li><li>Auto-guardado en línea de tiempo de contacto</li></ol><h4>Escenario 4: Compartir info de propiedad</h4><ol><li>Abre propiedad</li><li>Toca ícono Share</li><li>Elige WhatsApp, Email o SMS</li><li>Vista previa muestra hermosa tarjeta de propiedad</li><li>Envía directamente desde Tesoro</li></ol>"
+          "text": "<h4>Escenario 1: En la visita</h4><ol><li>Abre el deal en tu teléfono</li><li>Toca la pestaña Properties para ver detalles del listing</li><li>Muestra la galería de fotos al cliente</li><li>Después de la visita: toca notes, graba tu impresión por voz</li><li>Actualiza la etapa del deal a \"Viewed\"</li></ol><h4>Escenario 2: Nuevo lead en evento</h4><ol><li>Toca el botón + flotante</li><li>Toca \"New Contact\"</li><li>Escanea tarjeta de visita con cámara (auto-completado OCR)</li><li>Agrega nieta rápida sobre dónde los conociste</li><li>Toca \"Create Deal\" directamente desde contacto</li></ol><h4>Escenario 3: Cliente llama durante almuerzo</h4><ol><li>Entra llamada, identificador de llamadas muestra info de contacto Tesoro</li><li>Después de llamada: nietificación \"Log call?\"</li><li>Toca sí, habla resumen con voz a texto</li><li>Auto-guardado en línea de tiempo de contacto</li></ol><h4>Escenario 4: Compartir info de propiedad</h4><ol><li>Abre propiedad</li><li>Toca ícono Share</li><li>Elige WhatsApp, Email o SMS</li><li>Vista previa muestra hermosa tarjeta de propiedad</li><li>Envía directamente desde Tesoro</li></ol>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "navigation-basics",
     "quick-start-guide",
     "keyboard-shortcuts"
   ],
-
   "faq": [
     {
       "question": {

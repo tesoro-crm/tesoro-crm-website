@@ -7,18 +7,30 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "documents", "files", "contracts", "certificates", "floor-plans"],
+    "tags": [
+      "properties",
+      "documents",
+      "files",
+      "contracts",
+      "certificates",
+      "floor-plans"
+    ],
     "featured": false,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&h=630&fit=crop",
-    "keywords": ["property documents", "file management", "contracts", "certificates", "floor plans", "legal documents"]
+    "keywords": [
+      "property documents",
+      "file management",
+      "contracts",
+      "certificates",
+      "floor plans",
+      "legal documents"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property documents en file management in Tesoro",
@@ -32,7 +44,6 @@
     },
     "icon": "folder"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +66,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "uploading-documents",
@@ -66,17 +76,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>File upload process</h5><p>Upload documents naar een property in 3 stappen:</p><ol><li>Open property detail page</li><li>Ga naar 'Documents' tab</li><li>Click 'Upload File' of drag-and-drop files<ul><li>Select één of meerdere files (max 50MB per file)</li><li>Supported formats: PDF, DOC/DOCX, XLS/XLSX, JPG/PNG, ZIP</li><li>Files worden automatisch uploaded naar Cloudflare</li></ul></li></ol><h5>Document categorisatie</h5><p>Organiseer documents met categories:</p><ul><li><strong>Contracts:</strong> Purchase agreements, rental contracts</li><li><strong>Certificates:</strong> Energy certificates, habitability certificates</li><li><strong>Floor Plans:</strong> Architecture plans, layout diagrams</li><li><strong>Legal Documents:</strong> Property deeds, mortgage documents</li><li><strong>Inspection Reports:</strong> Technical reports, appraisals</li><li><strong>Other:</strong> Custom category</li></ul><p>Assign category bij upload of update later via 'Edit Document'.</p><h5>Document naming en tagging</h5><p>Best practices voor file organization:</p><ul><li><strong>Descriptive names:</strong> \"Energy_Certificate_2024.pdf\" niet \"doc1.pdf\"</li><li><strong>Tags:</strong> Add tags zoals \"required\", \"expired\", \"draft\"</li><li><strong>Version numbers:</strong> Voor multiple versions (\"Contract_v2.pdf\")</li><li><strong>Date stamps:</strong> Include date in filename (\"Inspection_2024-10-23.pdf\")</li></ul>"
+          "text": "<h5>File upload process</h5><p>Upload documents naar een property in 3 stappen:</p><ol><li>Open property detail page</li><li>Ga naar 'Documents' tab</li><li>Click 'Upload File' of drag-and-drop files<ul><li>Select één of meerdere files (max 50MB per file)</li><li>Supported formats: PDF, DOC/DOCX, XLS/XLSX, JPG/PNG, ZIP</li><li>Files worden automatisch uploaded naar Cloudflare</li></ul></li></ol><h5>Document categorisatie</h5><p>Organiseer documents met categories:</p><ul><li><strong>Contracts:</strong> Purchase agreements, rental contracts</li><li><strong>Certificates:</strong> Energy certificates, habitability certificates</li><li><strong>Floor Plans:</strong> Architecture plans, layout diagrams</li><li><strong>Legal Documents:</strong> Property deeds, mortgage documents</li><li><strong>Inspection Reports:</strong> Technical reports, appraisals</li><li><strong>Anders:</strong> Custom category</li></ul><p>Assign category bij upload of update later via 'Edit Document'.</p><h5>Document naming en tagging</h5><p>Best practices voor file organization:</p><ul><li><strong>Descriptive names:</strong> \"Energy_Certificate_2024.pdf\" niet \"doc1.pdf\"</li><li><strong>Tags:</strong> Add tags zoals \"required\", \"expired\", \"draft\"</li><li><strong>Version numbers:</strong> Voor multiple versions (\"Contract_v2.pdf\")</li><li><strong>Date stamps:</strong> Include date in filename (\"Inspection_2024-10-23.pdf\")</li></ul>"
         },
         "en": {
-          "text": "<h5>File upload process</h5><p>Upload documents to a property in 3 steps:</p><ol><li>Open property detail page</li><li>Go to 'Documents' tab</li><li>Click 'Upload File' or drag-and-drop files<ul><li>Select one or multiple files (max 50MB per file)</li><li>Supported formats: PDF, DOC/DOCX, XLS/XLSX, JPG/PNG, ZIP</li><li>Files are automatically uploaded to Cloudflare</li></ul></li></ol><h5>Document categorization</h5><p>Organize documents with categories:</p><ul><li><strong>Contracts:</strong> Purchase agreements, rental contracts</li><li><strong>Certificates:</strong> Energy certificates, habitability certificates</li><li><strong>Floor Plans:</strong> Architecture plans, layout diagrams</li><li><strong>Legal Documents:</strong> Property deeds, mortgage documents</li><li><strong>Inspection Reports:</strong> Technical reports, appraisals</li><li><strong>Other:</strong> Custom category</li></ul><p>Assign category on upload or update later via 'Edit Document'.</p><h5>Document naming and tagging</h5><p>Best practices for file organization:</p><ul><li><strong>Descriptive names:</strong> \"Energy_Certificate_2024.pdf\" not \"doc1.pdf\"</li><li><strong>Tags:</strong> Add tags like \"required\", \"expired\", \"draft\"</li><li><strong>Version numbers:</strong> For multiple versions (\"Contract_v2.pdf\")</li><li><strong>Date stamps:</strong> Include date in filename (\"Inspection_2024-10-23.pdf\")</li></ul>"
+          "text": "<h5>File upload process</h5><p>Upload documents to a property in 3 steps:</p><ol><li>Open property detail page</li><li>Go to 'Documents' tab</li><li>Click 'Upload File' or drag-and-drop files<ul><li>Select one or multiple files (max 50MB per file)</li><li>Supported formats: PDF, DOC/DOCX, XLS/XLSX, JPG/PNG, ZIP</li><li>Files are automatically uploaded to Cloudflare</li></ul></li></ol><h5>Document categorization</h5><p>Organize documents with categories:</p><ul><li><strong>Contracts:</strong> Purchase agreements, rental contracts</li><li><strong>Certificates:</strong> Energy certificates, habitability certificates</li><li><strong>Floor Plans:</strong> Architecture plans, layout diagrams</li><li><strong>Legal Documents:</strong> Property deeds, mortgage documents</li><li><strong>Inspection Reports:</strong> Technical reports, appraisals</li><li><strong>Anders:</strong> Custom category</li></ul><p>Assign category on upload or update later via 'Edit Document'.</p><h5>Document naming and tagging</h5><p>Best practices for file organization:</p><ul><li><strong>Descriptive names:</strong> \"Energy_Certificate_2024.pdf\" niet \"doc1.pdf\"</li><li><strong>Tags:</strong> Add tags like \"required\", \"expired\", \"draft\"</li><li><strong>Version numbers:</strong> For multiple versions (\"Contract_v2.pdf\")</li><li><strong>Date stamps:</strong> Include date in filename (\"Inspection_2024-10-23.pdf\")</li></ul>"
         },
         "es": {
           "text": "<h5>Proceso de subida de archivos</h5><p>Sube documentos a una propiedad en 3 pasos:</p><ol><li>Abre página de detalle de propiedad</li><li>Ve a la pestaña 'Documentos'</li><li>Haz clic en 'Subir Archivo' o arrastra y suelta archivos<ul><li>Selecciona uno o múltiples archivos (máx. 50MB por archivo)</li><li>Formatos soportados: PDF, DOC/DOCX, XLS/XLSX, JPG/PNG, ZIP</li><li>Los archivos se suben automáticamente a Cloudflare</li></ul></li></ol><h5>Categorización de documentos</h5><p>Organiza documentos con categorías:</p><ul><li><strong>Contratos:</strong> Acuerdos de compra, contratos de alquiler</li><li><strong>Certificados:</strong> Certificados energéticos, certificados de habitabilidad</li><li><strong>Planos:</strong> Planos arquitectónicos, diagramas de diseño</li><li><strong>Documentos legales:</strong> Escrituras de propiedad, documentos de hipoteca</li><li><strong>Informes de inspección:</strong> Informes técnicos, tasaciones</li><li><strong>Otro:</strong> Categoría personalizada</li></ul><p>Asigna categoría al subir o actualiza más tarde vía 'Editar Documento'.</p><h5>Nombrar documentos y etiquetado</h5><p>Mejores prácticas para organización de archivos:</p><ul><li><strong>Nombres descriptivos:</strong> \"Certificado_Energetico_2024.pdf\" no \"doc1.pdf\"</li><li><strong>Etiquetas:</strong> Añade etiquetas como \"requerido\", \"expirado\", \"borrador\"</li><li><strong>Números de versión:</strong> Para múltiples versiones (\"Contrato_v2.pdf\")</li><li><strong>Marcas de fecha:</strong> Incluye fecha en nombre de archivo (\"Inspeccion_2024-10-23.pdf\")</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "essential-documents",
@@ -97,7 +106,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "access-control",
@@ -108,17 +116,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Document visibility settings</h5><p>Control wie documents kan zien per document type:</p><ul><li><strong>Private (Team only):</strong><ul><li>Alleen team members kunnen zien</li><li>Voor sensitive documents (contracts, deeds)</li><li>Default voor legal documents</li></ul></li><li><strong>Client visible:</strong><ul><li>Beschikbaar in client portal</li><li>Voor public documents (floor plans, brochures)</li><li>Buyers kunnen downloaden</li></ul></li><li><strong>Public:</strong><ul><li>Zichtbaar op website (if enabled)</li><li>Voor marketing materials</li></ul></li></ul><p>Stel visibility in bij document upload of update later.</p><h5>Client portal document access</h5><p>Wanneer je documents shared met buyers via client portal:</p><ul><li>Select 'Client visible' bij upload</li><li>Document verschijnt in buyer's portal onder property details</li><li>Download wordt gelogd (who downloaded, when)</li><li>Je kunt access later revoke (change to 'Private')</li></ul><p><strong>Use case:</strong> Share floor plans en brochures met interested buyers, maar keep contracts private tot closing.</p><h5>Document expiration tracking</h5><p>Voor certificates met expiration dates:</p><ul><li>Add expiration date bij document upload</li><li>Tesoro toont \"Expires soon\" warning (30 days before)</li><li>Dashboard alert voor expired certificates</li><li>Notification naar property owner (optioneel)</li></ul><p>Belangrijk voor energy certificates en habitability certificates.</p>"
+          "text": "<h5>Document visibility settings</h5><p>Control wie documents kan zien per document type:</p><ul><li><strong>Private (Team only):</strong><ul><li>Alleen teamlids kunnen zien</li><li>Voor sensitive documents (contracts, deeds)</li><li>Default voor legal documents</li></ul></li><li><strong>Client visible:</strong><ul><li>Beschikbaar in client portal</li><li>Voor public documents (floor plans, brochures)</li><li>Buyers kunnen downloaden</li></ul></li><li><strong>Public:</strong><ul><li>Zichtbaar op website (if enabled)</li><li>Voor marketing materials</li></ul></li></ul><p>Stel visibility in bij document upload of update later.</p><h5>Client portal document access</h5><p>Wanneer je documents shared met buyers via client portal:</p><ul><li>Select 'Client visible' bij upload</li><li>Document verschijnt in buyer's portal onder property details</li><li>Download wordt gelogd (who downloaded, when)</li><li>Je kunt access later revoke (change to 'Private')</li></ul><p><strong>Use case:</strong> Share floor plans en brochures met interested buyers, maar keep contracts private tot closing.</p><h5>Document expiration tracking</h5><p>Voor certificates met expiration dates:</p><ul><li>Add expiration date bij document upload</li><li>Tesoro toont \"Expires soon\" warning (30 days before)</li><li>Dashboard alert voor expired certificates</li><li>nietification naar property owner (optioneel)</li></ul><p>Belangrijk voor energy certificates en habitability certificates.</p>"
         },
         "en": {
-          "text": "<h5>Document visibility settings</h5><p>Control who can see documents per document type:</p><ul><li><strong>Private (Team only):</strong><ul><li>Only team members can see</li><li>For sensitive documents (contracts, deeds)</li><li>Default for legal documents</li></ul></li><li><strong>Client visible:</strong><ul><li>Available in client portal</li><li>For public documents (floor plans, brochures)</li><li>Buyers can download</li></ul></li><li><strong>Public:</strong><ul><li>Visible on website (if enabled)</li><li>For marketing materials</li></ul></li></ul><p>Set visibility on document upload or update later.</p><h5>Client portal document access</h5><p>When you share documents with buyers via client portal:</p><ul><li>Select 'Client visible' on upload</li><li>Document appears in buyer's portal under property details</li><li>Download is logged (who downloaded, when)</li><li>You can revoke access later (change to 'Private')</li></ul><p><strong>Use case:</strong> Share floor plans and brochures with interested buyers, but keep contracts private until closing.</p><h5>Document expiration tracking</h5><p>For certificates with expiration dates:</p><ul><li>Add expiration date on document upload</li><li>Tesoro shows \"Expires soon\" warning (30 days before)</li><li>Dashboard alert for expired certificates</li><li>Notification to property owner (optional)</li></ul><p>Important for energy certificates and habitability certificates.</p>"
+          "text": "<h5>Document visibility settings</h5><p>Control who can see documents per document type:</p><ul><li><strong>Private (Team only):</strong><ul><li>Only teamlids can see</li><li>For sensitive documents (contracts, deeds)</li><li>Default for legal documents</li></ul></li><li><strong>Client visible:</strong><ul><li>Available in client portal</li><li>For public documents (floor plans, brochures)</li><li>Buyers can download</li></ul></li><li><strong>Public:</strong><ul><li>Visible on website (if enabled)</li><li>For marketing materials</li></ul></li></ul><p>Set visibility on document upload or update later.</p><h5>Client portal document access</h5><p>When you share documents with buyers via client portal:</p><ul><li>Select 'Client visible' on upload</li><li>Document appears in buyer's portal under property details</li><li>Download is logged (who downloaded, when)</li><li>You can revoke access later (change to 'Private')</li></ul><p><strong>Use case:</strong> Share floor plans and brochures with interested buyers, but keep contracts private until closing.</p><h5>Document expiration tracking</h5><p>For certificates with expiration dates:</p><ul><li>Add expiration date on document upload</li><li>Tesoro shows \"Expires soon\" warning (30 days before)</li><li>Dashboard alert for expired certificates</li><li>nietification to property owner (optional)</li></ul><p>Important for energy certificates and habitability certificates.</p>"
         },
         "es": {
-          "text": "<h5>Configuración de visibilidad de documentos</h5><p>Controla quién puede ver documentos por tipo de documento:</p><ul><li><strong>Privado (Solo equipo):</strong><ul><li>Solo los miembros del equipo pueden ver</li><li>Para documentos sensibles (contratos, escrituras)</li><li>Predeterminado para documentos legales</li></ul></li><li><strong>Visible para cliente:</strong><ul><li>Disponible en portal de clientes</li><li>Para documentos públicos (planos, folletos)</li><li>Los compradores pueden descargar</li></ul></li><li><strong>Público:</strong><ul><li>Visible en sitio web (si está habilitado)</li><li>Para materiales de marketing</li></ul></li></ul><p>Establece visibilidad al subir documento o actualiza más tarde.</p><h5>Acceso a documentos en portal de clientes</h5><p>Cuando compartes documentos con compradores vía portal de clientes:</p><ul><li>Selecciona 'Visible para cliente' al subir</li><li>El documento aparece en el portal del comprador bajo detalles de propiedad</li><li>La descarga se registra (quién descargó, cuándo)</li><li>Puedes revocar acceso más tarde (cambiar a 'Privado')</li></ul><p><strong>Caso de uso:</strong> Comparte planos y folletos con compradores interesados, pero mantén contratos privados hasta el cierre.</p><h5>Seguimiento de vencimiento de documentos</h5><p>Para certificados con fechas de vencimiento:</p><ul><li>Añade fecha de vencimiento al subir documento</li><li>Tesoro muestra advertencia \"Expira pronto\" (30 días antes)</li><li>Alerta en dashboard para certificados expirados</li><li>Notificación al propietario (opcional)</li></ul><p>Importante para certificados energéticos y certificados de habitabilidad.</p>"
+          "text": "<h5>Configuración de visibilidad de documentos</h5><p>Controla quién puede ver documentos por tipo de documento:</p><ul><li><strong>Privado (Solo equipo):</strong><ul><li>Solo los miembros del equipo pueden ver</li><li>Para documentos sensibles (contratos, escrituras)</li><li>Predeterminado para documentos legales</li></ul></li><li><strong>Visible para cliente:</strong><ul><li>Disponible en portal de clientes</li><li>Para documentos públicos (planos, folletos)</li><li>Los compradores pueden descargar</li></ul></li><li><strong>Público:</strong><ul><li>Visible en sitio web (si está habilitado)</li><li>Para materiales de marketing</li></ul></li></ul><p>Establece visibilidad al subir documento o actualiza más tarde.</p><h5>Acceso a documentos en portal de clientes</h5><p>Cuando compartes documentos con compradores vía portal de clientes:</p><ul><li>Selecciona 'Visible para cliente' al subir</li><li>El documento aparece en el portal del comprador bajo detalles de propiedad</li><li>La descarga se registra (quién descargó, cuándo)</li><li>Puedes revocar acceso más tarde (cambiar a 'Privado')</li></ul><p><strong>Caso de uso:</strong> Comparte planos y folletos con compradores interesados, pero mantén contratos privados hasta el cierre.</p><h5>Seguimiento de vencimiento de documentos</h5><p>Para certificados con fechas de vencimiento:</p><ul><li>Añade fecha de vencimiento al subir documento</li><li>Tesoro muestra advertencia \"Expira pronto\" (30 días antes)</li><li>Alerta en dashboard para certificados expirados</li><li>nietificación al propietario (opcional)</li></ul><p>Importante para certificados energéticos y certificados de habitabilidad.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "version-management",
@@ -139,7 +146,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "document-tips",
@@ -162,14 +168,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "adding-properties-guide",
     "property-media-management",
     "property-client-portal"
   ],
-
   "faq": [
     {
       "question": {
@@ -191,7 +195,7 @@
       },
       "answer": {
         "nl": "Deleted documents worden 30 dagen bewaard in 'Deleted Documents' folder. Je kunt ze binnen deze periode restoren via 'Undo Delete'. Na 30 dagen worden ze permanent verwijderd en kunnen niet meer recovered worden. Admins ontvangen een monthly reminder om deleted docs te reviewen.",
-        "en": "Deleted documents are kept for 30 days in 'Deleted Documents' folder. You can restore them within this period via 'Undo Delete'. After 30 days they are permanently deleted and cannot be recovered anymore. Admins receive a monthly reminder to review deleted docs.",
+        "en": "Deleted documents are kept for 30 days in 'Deleted Documents' folder. You can restore them within this period via 'Undo Delete'. After 30 days they are permanently deleted and canniet be recovered anymore. Admins receive a monthly reminder to review deleted docs.",
         "es": "Los documentos eliminados se conservan por 30 días en la carpeta 'Documentos Eliminados'. Puedes restaurarlos dentro de este período vía 'Deshacer Eliminar'. Después de 30 días se eliminan permanentemente y no se pueden recuperar más. Los admins reciben un recordatorio mensual para revisar documentos eliminados."
       }
     },
@@ -203,7 +207,7 @@
       },
       "answer": {
         "nl": "Currently niet direct, maar je kunt: 1) Upload documents naar eerste property, 2) Use 'Duplicate Property' feature om property te kopiëren (documents worden mee gekopieerd), 3) Update property details per copy. Voor bulk import van properties met documents, gebruik CSV import met document URLs (zie 'Property Bulk Import' guide).",
-        "en": "Currently not directly, but you can: 1) Upload documents to first property, 2) Use 'Duplicate Property' feature to copy property (documents are copied along), 3) Update property details per copy. For bulk import of properties with documents, use CSV import with document URLs (see 'Property Bulk Import' guide).",
+        "en": "Currently niet directly, but you can: 1) Upload documents to first property, 2) Use 'Duplicate Property' feature to copy property (documents are copied along), 3) Update property details per copy. For bulk import of properties with documents, use CSV import with document URLs (see 'Property Bulk Import' guide).",
         "es": "Actualmente no directamente, pero puedes: 1) Subir documentos a primera propiedad, 2) Usar característica 'Duplicar Propiedad' para copiar propiedad (los documentos se copian junto), 3) Actualizar detalles de propiedad por copia. Para importación masiva de propiedades con documentos, usa importación CSV con URLs de documentos (ve guía 'Importación Masiva de Propiedades')."
       }
     }

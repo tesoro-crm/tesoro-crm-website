@@ -3,22 +3,32 @@
     "id": "ai-property-matching-advanced",
     "version": "1.0.0",
     "publishDate": "2024-10-13",
-    "updatedAt": "2024-10-13T16:00:00Z", 
+    "updatedAt": "2024-10-13T16:00:00Z",
     "authorId": "maria-perez",
     "category": "properties",
     "difficulty": "advanced",
-    "tags": ["ai", "property-matching", "automation", "algorithms", "intelligent-suggestions"],
+    "tags": [
+      "ai",
+      "property-matching",
+      "automation",
+      "algorithms",
+      "intelligent-suggestions"
+    ],
     "featured": true,
     "readingTime": 10,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630&fit=crop",
-    "keywords": ["AI property matching", "intelligente woningen", "property algoritme", "Tesoro CRM AI", "automatische matching"]
+    "keywords": [
+      "AI property matching",
+      "intelligente woningen",
+      "property algoritme",
+      "Tesoro CRM AI",
+      "automatische matching"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "AI Property Matching - 69+ Attributen Smart Algoritme",
@@ -31,11 +41,10 @@
       "es": "Domina el sistema avanzado de coincidencia de propiedades IA de Tesoro con más de 69 tipos enum, coincidencia inversa, puntuación de interés, y sugerencias inteligentes de propiedades para máxima conversión de deals."
     }
   },
-
   "sections": [
     {
       "type": "text",
-      "id": "intro", 
+      "id": "intro",
       "content": {
         "nl": {
           "text": "<p>Het AI Property Matching systeem van Tesoro CRM is een van de meest geavanceerde property algoritmes in de vastgoed industrie. Met 69+ property enum classificaties, bidirectionele matching, en intelligent interest scoring maximaliseert het systeem je deal conversies.</p><p>Deze guide laat je zien hoe je het complete AI matching systeem benut voor optimale resultaten.</p>"
@@ -48,7 +57,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "algorithm-overview",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "property-enum-system",
@@ -91,7 +98,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "matching-algorithm-workflow",
@@ -140,7 +146,7 @@
         {
           "title": {
             "nl": "3. Interest Scoring & Ranking",
-            "en": "3. Interest Scoring & Ranking", 
+            "en": "3. Interest Scoring & Ranking",
             "es": "3. Puntuación de Interés y Clasificación"
           },
           "content": {
@@ -163,19 +169,18 @@
           },
           "content": {
             "nl": {
-              "text": "<p>Reverse matching voor nieuwe properties:</p><ul><li><strong>New Property Analysis:</strong> Alle attributen van nieuwe property</li><li><strong>Deal Database Scan:</strong> Zoek actieve deals met matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score berekening per deal</li><li><strong>Agent Notifications:</strong> Alert agents over potential matches</li><li><strong>Interest Tracking:</strong> Monitor welke deals interesse tonen</li></ul><p>Dit maximaliseert property exposure en deal opportunities.</p>"
+              "text": "<p>Reverse matching voor nieuwe properties:</p><ul><li><strong>New Property Analysis:</strong> Alle attributen van nieuwe property</li><li><strong>Deal Database Scan:</strong> Zoek actieve deals met matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score berekening per deal</li><li><strong>Agent nietifications:</strong> Alert agents over potential matches</li><li><strong>Interest Tracking:</strong> Monitor welke deals interesse tonen</li></ul><p>Dit maximaliseert property exposure en deal opportunities.</p>"
             },
             "en": {
-              "text": "<p>Reverse matching for new properties:</p><ul><li><strong>New Property Analysis:</strong> All attributes of new property</li><li><strong>Deal Database Scan:</strong> Search active deals with matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score calculation per deal</li><li><strong>Agent Notifications:</strong> Alert agents about potential matches</li><li><strong>Interest Tracking:</strong> Monitor which deals show interest</li></ul><p>This maximizes property exposure and deal opportunities.</p>"
+              "text": "<p>Reverse matching for new properties:</p><ul><li><strong>New Property Analysis:</strong> All attributes of new property</li><li><strong>Deal Database Scan:</strong> Search active deals with matching criteria</li><li><strong>Compatibility Scoring:</strong> Match score calculation per deal</li><li><strong>Agent nietifications:</strong> Alert agents about potential matches</li><li><strong>Interest Tracking:</strong> Monitor which deals show interest</li></ul><p>This maximizes property exposure and deal opportunities.</p>"
             },
             "es": {
-              "text": "<p>Coincidencia inversa para nuevas propiedades:</p><ul><li><strong>Análisis de Nueva Propiedad:</strong> Todos los atributos de la nueva propiedad</li><li><strong>Escaneo de Base de Datos de Deals:</strong> Busca deals activos con criterios coincidentes</li><li><strong>Puntuación de Compatibilidad:</strong> Cálculo de puntuación de coincidencia por deal</li><li><strong>Notificaciones del Agente:</strong> Alerta a los agentes sobre coincidencias potenciales</li><li><strong>Seguimiento de Interés:</strong> Monitorea qué deals muestran interés</li></ul><p>Esto maximiza la exposición de propiedades y oportunidades de deals.</p>"
+              "text": "<p>Coincidencia inversa para nuevas propiedades:</p><ul><li><strong>Análisis de Nueva Propiedad:</strong> Todos los atributos de la nueva propiedad</li><li><strong>Escaneo de Base de Datos de Deals:</strong> Busca deals activos con criterios coincidentes</li><li><strong>Puntuación de Compatibilidad:</strong> Cálculo de puntuación de coincidencia por deal</li><li><strong>nietificaciones del Agente:</strong> Alerta a los agentes sobre coincidencias potenciales</li><li><strong>Seguimiento de Interés:</strong> Monitorea qué deals muestran interés</li></ul><p>Esto maximiza la exposición de propiedades y oportunidades de deals.</p>"
             }
           }
         }
       ]
     },
-
     {
       "type": "text",
       "id": "advanced-features",
@@ -196,7 +201,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "optimization-tips",
@@ -219,13 +223,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "system-architecture-overview",
     "deal-pipeline-complete-guide",
     "property-management-advanced"
   ],
-
   "faq": [
     {
       "question": {

@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "best-practices",
     "difficulty": "intermediate",
-    "tags": ["lead-nurturing", "conversion", "follow-up", "engagement", "sales-funnel"],
+    "tags": [
+      "lead-nurturing",
+      "conversion",
+      "follow-up",
+      "engagement",
+      "sales-funnel"
+    ],
     "featured": true,
     "readingTime": 11,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
-    "keywords": ["lead nurturing", "lead conversion", "sales funnel", "follow-up strategies", "real estate leads"]
+    "keywords": [
+      "lead nurturing",
+      "lead conversion",
+      "sales funnel",
+      "follow-up strategies",
+      "real estate leads"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Lead nurturing strategieën die converteren",
@@ -32,24 +42,22 @@
     },
     "icon": "psychology"
   },
-
   "sections": [
     {
       "type": "text",
       "id": "intro",
       "content": {
         "nl": {
-          "text": "<p>80% van de sales vereisen 5-7 follow-up touchpoints, maar 44% van agents geeft op na slechts één poging. Dit is waarom lead nurturing het verschil maakt tussen gemiddelde en topresultaten.</p><p>Lead nurturing is niet \"achter mensen aanlopen\" - het is het systematisch bouwen van vertrouwen en relaties terwijl je leads door je sales funnel begeleidt. Deze guide toont je hoe.</p>"
+          "text": "<p>80% van de sales vereisen 5-7 follow-up contactmomenten, maar 44% van agents geeft op na slechts één poging. Dit is waarom lead nurturing het verschil maakt tussen gemiddelde en topresultaten.</p><p>Lead nurturing is niet \"achter mensen aanlopen\" - het is het systematisch bouwen van vertrouwen en relaties terwijl je leads door je sales funnel begeleidt. Deze guide toont je hoe.</p>"
         },
         "en": {
-          "text": "<p>80% of sales require 5-7 follow-up touchpoints, but 44% of agents give up after just one attempt. This is why lead nurturing makes the difference between average and top results.</p><p>Lead nurturing isn't \"chasing people\" - it's systematically building trust and relationships while guiding leads through your sales funnel. This guide shows you how.</p>"
+          "text": "<p>80% of sales require 5-7 follow-up contactmomenten, but 44% of agents give up after just one attempt. This is why lead nurturing makes the difference between average and top results.</p><p>Lead nurturing isn't \"chasing people\" - it's systematically building trust and relationships while guiding leads through your sales funnel. This guide shows you how.</p>"
         },
         "es": {
           "text": "<p>80% de las ventas requieren 5-7 puntos de contacto de seguimiento, pero 44% de los agentes se rinde después de solo un intento. Por esto el nurturing de leads marca la diferencia entre resultados promedio y top.</p><p>El nurturing de leads no es \"perseguir personas\" - es construir sistemáticamente confianza y relaciones mientras guías leads a través de tu embudo de ventas. Esta guía te muestra cómo.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "nurturing-framework",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "multi-channel",
@@ -84,14 +91,13 @@
           "text": "<h3>Channel selectie per fase</h3><p>Gebruik verschillende channels strategisch:</p><p><strong>Email (Primary channel):</strong></p><ul><li><strong>Best voor:</strong> Property showcases, market updates, educational content</li><li><strong>Frequency:</strong> 1-3x per week afhankelijk van lead temperature</li><li><strong>Advantage:</strong> Trackable, scalable, detailed information</li></ul><p><strong>Phone calls:</strong></p><ul><li><strong>Best voor:</strong> Qualification, objection handling, relationship building</li><li><strong>Frequency:</strong> First contact, after viewing, major milestones</li><li><strong>Advantage:</strong> Personal touch, immediate feedback, rapport</li></ul><p><strong>SMS/WhatsApp:</strong></p><ul><li><strong>Best voor:</strong> Quick updates, viewing reminders, urgent info</li><li><strong>Frequency:</strong> Max 1-2x per week</li><li><strong>Advantage:</strong> 98% open rate, instant delivery, conversational</li></ul><p><strong>Social Media (LinkedIn, Instagram):</strong></p><ul><li><strong>Best voor:</strong> Passive nurturing, brand building, social proof</li><li><strong>Frequency:</strong> Consistent presence, niet direct outreach</li><li><strong>Advantage:</strong> Non-intrusive, showcases lifestyle/expertise</li></ul><p><strong>In-person (Events, Open Houses):</strong></p><ul><li><strong>Best voor:</strong> High-value leads, relationship deepening</li><li><strong>Frequency:</strong> Monthly events, strategic 1-on-1 meetings</li><li><strong>Advantage:</strong> Strongest relationship building, trust acceleration</li></ul><h3>Recommended channel mix</h3><p><strong>Week 1 (First Contact):</strong></p><ul><li>Day 1: Email + SMS</li><li>Day 1: Phone call (1 hour later)</li><li>Day 2: Follow-up email</li><li>Day 2: Second phone attempt</li><li>Day 3: WhatsApp message</li></ul><p><strong>Weeks 2-4 (Active Nurture - Hot Lead):</strong></p><ul><li>Monday: Property email</li><li>Wednesday: Phone check-in</li><li>Thursday: Additional properties email</li><li>Friday: WhatsApp quick update</li></ul><p><strong>Weeks 2-4 (Warm Lead):</strong></p><ul><li>Tuesday: Weekly property showcase email</li><li>Friday: Follow-up call if no response</li></ul><p><strong>Month 2+ (Long-term Nurture):</strong></p><ul><li>Monthly: Newsletter email</li><li>Quarterly: Personal phone check-in</li><li>As appropriate: Event invitations</li></ul>"
         },
         "en": {
-          "text": "<h3>Channel Selection per Phase</h3><p>Use different channels strategically:</p><p><strong>Email (Primary channel):</strong></p><ul><li><strong>Best for:</strong> Property showcases, market updates, educational content</li><li><strong>Frequency:</strong> 1-3x per week depending on lead temperature</li><li><strong>Advantage:</strong> Trackable, scalable, detailed information</li></ul><p><strong>Phone Calls:</strong></p><ul><li><strong>Best for:</strong> Qualification, objection handling, relationship building</li><li><strong>Frequency:</strong> First contact, after viewing, major milestones</li><li><strong>Advantage:</strong> Personal touch, immediate feedback, rapport</li></ul><p><strong>SMS/WhatsApp:</strong></p><ul><li><strong>Best for:</strong> Quick updates, viewing reminders, urgent info</li><li><strong>Frequency:</strong> Max 1-2x per week</li><li><strong>Advantage:</strong> 98% open rate, instant delivery, conversational</li></ul><p><strong>Social Media (LinkedIn, Instagram):</strong></p><ul><li><strong>Best for:</strong> Passive nurturing, brand building, social proof</li><li><strong>Frequency:</strong> Consistent presence, not direct outreach</li><li><strong>Advantage:</strong> Non-intrusive, showcases lifestyle/expertise</li></ul><p><strong>In-Person (Events, Open Houses):</strong></p><ul><li><strong>Best for:</strong> High-value leads, relationship deepening</li><li><strong>Frequency:</strong> Monthly events, strategic 1-on-1 meetings</li><li><strong>Advantage:</strong> Strongest relationship building, trust acceleration</li></ul><h3>Recommended Channel Mix</h3><p><strong>Week 1 (First Contact):</strong></p><ul><li>Day 1: Email + SMS</li><li>Day 1: Phone call (1 hour later)</li><li>Day 2: Follow-up email</li><li>Day 2: Second phone attempt</li><li>Day 3: WhatsApp message</li></ul><p><strong>Weeks 2-4 (Active Nurture - Hot Lead):</strong></p><ul><li>Monday: Property email</li><li>Wednesday: Phone check-in</li><li>Thursday: Additional properties email</li><li>Friday: WhatsApp quick update</li></ul><p><strong>Weeks 2-4 (Warm Lead):</strong></p><ul><li>Tuesday: Weekly property showcase email</li><li>Friday: Follow-up call if no response</li></ul><p><strong>Month 2+ (Long-term Nurture):</strong></p><ul><li>Monthly: Newsletter email</li><li>Quarterly: Personal phone check-in</li><li>As appropriate: Event invitations</li></ul>"
+          "text": "<h3>Channel Selection per Phase</h3><p>Use different channels strategically:</p><p><strong>Email (Primary channel):</strong></p><ul><li><strong>Best for:</strong> Property showcases, market updates, educational content</li><li><strong>Frequency:</strong> 1-3x per week depending on lead temperature</li><li><strong>Advantage:</strong> Trackable, scalable, detailed information</li></ul><p><strong>Phone Calls:</strong></p><ul><li><strong>Best for:</strong> Qualification, objection handling, relationship building</li><li><strong>Frequency:</strong> First contact, after viewing, major milestones</li><li><strong>Advantage:</strong> Personal touch, immediate feedback, rapport</li></ul><p><strong>SMS/WhatsApp:</strong></p><ul><li><strong>Best for:</strong> Quick updates, viewing reminders, urgent info</li><li><strong>Frequency:</strong> Max 1-2x per week</li><li><strong>Advantage:</strong> 98% open rate, instant delivery, conversational</li></ul><p><strong>Social Media (LinkedIn, Instagram):</strong></p><ul><li><strong>Best for:</strong> Passive nurturing, brand building, social proof</li><li><strong>Frequency:</strong> Consistent presence, niet direct outreach</li><li><strong>Advantage:</strong> Non-intrusive, showcases lifestyle/expertise</li></ul><p><strong>In-Person (Events, Open Houses):</strong></p><ul><li><strong>Best for:</strong> High-value leads, relationship deepening</li><li><strong>Frequency:</strong> Monthly events, strategic 1-on-1 meetings</li><li><strong>Advantage:</strong> Strongest relationship building, trust acceleration</li></ul><h3>Recommended Channel Mix</h3><p><strong>Week 1 (First Contact):</strong></p><ul><li>Day 1: Email + SMS</li><li>Day 1: Phone call (1 hour later)</li><li>Day 2: Follow-up email</li><li>Day 2: Second phone attempt</li><li>Day 3: WhatsApp message</li></ul><p><strong>Weeks 2-4 (Active Nurture - Hot Lead):</strong></p><ul><li>Monday: Property email</li><li>Wednesday: Phone check-in</li><li>Thursday: Additional properties email</li><li>Friday: WhatsApp quick update</li></ul><p><strong>Weeks 2-4 (Warm Lead):</strong></p><ul><li>Tuesday: Weekly property showcase email</li><li>Friday: Follow-up call if no response</li></ul><p><strong>Month 2+ (Long-term Nurture):</strong></p><ul><li>Monthly: Newsletter email</li><li>Quarterly: Personal phone check-in</li><li>As appropriate: Event invitations</li></ul>"
         },
         "es": {
           "text": "<h3>Selección de canales por fase</h3><p>Usa diferentes canales estratégicamente:</p><p><strong>Email (canal primario):</strong></p><ul><li><strong>Mejor para:</strong> Muestras de propiedades, actualizaciones de mercado, contenido educativo</li><li><strong>Frecuencia:</strong> 1-3x por semana dependiendo de temperatura de lead</li><li><strong>Ventaja:</strong> Rastreable, escalable, información detallada</li></ul><p><strong>Llamadas telefónicas:</strong></p><ul><li><strong>Mejor para:</strong> Calificación, manejo de objeciones, construcción de relaciones</li><li><strong>Frecuencia:</strong> Primer contacto, después de visita, hitos mayores</li><li><strong>Ventaja:</strong> Toque personal, retroalimentación inmediata, rapport</li></ul><p><strong>SMS/WhatsApp:</strong></p><ul><li><strong>Mejor para:</strong> Actualizaciones rápidas, recordatorios de visitas, info urgente</li><li><strong>Frecuencia:</strong> Máx 1-2x por semana</li><li><strong>Ventaja:</strong> Tasa de apertura 98%, entrega instantánea, conversacional</li></ul><p><strong>Redes sociales (LinkedIn, Instagram):</strong></p><ul><li><strong>Mejor para:</strong> Nurturing pasivo, construcción de marca, prueba social</li><li><strong>Frecuencia:</strong> Presencia consistente, no alcance directo</li><li><strong>Ventaja:</strong> No intrusivo, muestra estilo de vida/experiencia</li></ul><p><strong>En persona (eventos, jornadas de puertas abiertas):</strong></p><ul><li><strong>Mejor para:</strong> Leads de alto valor, profundización de relaciones</li><li><strong>Frecuencia:</strong> Eventos mensuales, reuniones estratégicas 1-a-1</li><li><strong>Ventaja:</strong> Construcción de relaciones más fuerte, aceleración de confianza</li></ul><h3>Mix de canales recomendado</h3><p><strong>Semana 1 (primer contacto):</strong></p><ul><li>Día 1: Email + SMS</li><li>Día 1: Llamada telefónica (1 hora después)</li><li>Día 2: Email de seguimiento</li><li>Día 2: Segundo intento de llamada</li><li>Día 3: Mensaje de WhatsApp</li></ul><p><strong>Semanas 2-4 (nurture activo - hot lead):</strong></p><ul><li>Lunes: Email de propiedad</li><li>Miércoles: Verificación telefónica</li><li>Jueves: Email de propiedades adicionales</li><li>Viernes: Actualización rápida por WhatsApp</li></ul><p><strong>Semanas 2-4 (warm lead):</strong></p><ul><li>Martes: Email semanal de muestra de propiedades</li><li>Viernes: Llamada de seguimiento si no hay respuesta</li></ul><p><strong>Mes 2+ (nurture a largo plazo):</strong></p><ul><li>Mensual: Email de newsletter</li><li>Trimestral: Verificación telefónica personal</li><li>Según corresponda: Invitaciones a eventos</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "content-strategy",
@@ -105,14 +111,13 @@
           "text": "<h3>De 60/30/10 content regel</h3><p><strong>60% Relevant & Valuable:</strong></p><ul><li>Property suggestions matching their criteria</li><li>Market insights voor their target area</li><li>Neighborhood guides</li><li>Financing options/calculators</li></ul><p><strong>30% Educational & Helpful:</strong></p><ul><li>Buying process guides</li><li>Legal requirements (Spain-specific)</li><li>Tax implications for buyers</li><li>Home inspection tips</li><li>Moving/relocation resources</li></ul><p><strong>10% Promotional:</strong></p><ul><li>Your services/value proposition</li><li>Client testimonials</li><li>Awards/recognition</li><li>Call-to-action voor next steps</li></ul><h3>Content types die engagement genereren</h3><p><strong>1. Comparison guides:</strong></p><ul><li>\"Beach vs City: Which is Right for You?\"</li><li>Property A vs Property B side-by-side</li><li>Financing options comparison</li></ul><p><strong>2. Local expertise:</strong></p><ul><li>\"Hidden gems in [Neighborhood]\"</li><li>\"Best schools near [Area]\"</li><li>\"Cost of living in [City] - Complete breakdown\"</li></ul><p><strong>3. Success stories:</strong></p><ul><li>Recent buyer testimonials (with permission)</li><li>Before/after renovation stories</li><li>First-time buyer journeys</li></ul><p><strong>4. Market intelligence:</strong></p><ul><li>Price trends in their target areas</li><li>Inventory updates (low supply = urgency)</li><li>Forecast for upcoming quarters</li></ul><p><strong>5. Interactive content:</strong></p><ul><li>Mortgage calculators</li><li>ROI estimators voor investment properties</li><li>Property comparison tools</li><li>Neighborhood match quiz</li></ul><h3>Personalization tactics</h3><ul><li><strong>Name usage:</strong> \"Hi Carlos\" niet \"Dear Client\"</li><li><strong>Reference history:</strong> \"Following up on the villa you viewed...\"</li><li><strong>Acknowledge preferences:</strong> \"Since you mentioned beach views...\"</li><li><strong>Celebrate milestones:</strong> \"Happy 1-month search anniversary!\"</li><li><strong>Timely relevance:</strong> \"Your saved property just dropped €20K\"</li></ul>"
         },
         "en": {
-          "text": "<h3>The 60/30/10 Content Rule</h3><p><strong>60% Relevant & Valuable:</strong></p><ul><li>Property suggestions matching their criteria</li><li>Market insights for their target area</li><li>Neighborhood guides</li><li>Financing options/calculators</li></ul><p><strong>30% Educational & Helpful:</strong></p><ul><li>Buying process guides</li><li>Legal requirements (Spain-specific)</li><li>Tax implications for buyers</li><li>Home inspection tips</li><li>Moving/relocation resources</li></ul><p><strong>10% Promotional:</strong></p><ul><li>Your services/value proposition</li><li>Client testimonials</li><li>Awards/recognition</li><li>Call-to-action for next steps</li></ul><h3>Content Types That Generate Engagement</h3><p><strong>1. Comparison guides:</strong></p><ul><li>\"Beach vs City: Which is Right for You?\"</li><li>Property A vs Property B side-by-side</li><li>Financing options comparison</li></ul><p><strong>2. Local expertise:</strong></p><ul><li>\"Hidden gems in [Neighborhood]\"</li><li>\"Best schools near [Area]\"</li><li>\"Cost of living in [City] - Complete breakdown\"</li></ul><p><strong>3. Success stories:</strong></p><ul><li>Recent buyer testimonials (with permission)</li><li>Before/after renovation stories</li><li>First-time buyer journeys</li></ul><p><strong>4. Market intelligence:</strong></p><ul><li>Price trends in their target areas</li><li>Inventory updates (low supply = urgency)</li><li>Forecast for upcoming quarters</li></ul><p><strong>5. Interactive content:</strong></p><ul><li>Mortgage calculators</li><li>ROI estimators for investment properties</li><li>Property comparison tools</li><li>Neighborhood match quiz</li></ul><h3>Personalization Tactics</h3><ul><li><strong>Name usage:</strong> \"Hi Carlos\" not \"Dear Client\"</li><li><strong>Reference history:</strong> \"Following up on the villa you viewed...\"</li><li><strong>Acknowledge preferences:</strong> \"Since you mentioned beach views...\"</li><li><strong>Celebrate milestones:</strong> \"Happy 1-month search anniversary!\"</li><li><strong>Timely relevance:</strong> \"Your saved property just dropped €20K\"</li></ul>"
+          "text": "<h3>The 60/30/10 Content Rule</h3><p><strong>60% Relevant & Valuable:</strong></p><ul><li>Property suggestions matching their criteria</li><li>Market insights for their target area</li><li>Neighborhood guides</li><li>Financing options/calculators</li></ul><p><strong>30% Educational & Helpful:</strong></p><ul><li>Buying process guides</li><li>Legal requirements (Spain-specific)</li><li>Tax implications for buyers</li><li>Home inspection tips</li><li>Moving/relocation resources</li></ul><p><strong>10% Promotional:</strong></p><ul><li>Your services/value proposition</li><li>Client testimonials</li><li>Awards/recognition</li><li>Call-to-action for next steps</li></ul><h3>Content Types That Generate Engagement</h3><p><strong>1. Comparison guides:</strong></p><ul><li>\"Beach vs City: Which is Right for You?\"</li><li>Property A vs Property B side-by-side</li><li>Financing options comparison</li></ul><p><strong>2. Local expertise:</strong></p><ul><li>\"Hidden gems in [Neighborhood]\"</li><li>\"Best schools near [Area]\"</li><li>\"Cost of living in [City] - Complete breakdown\"</li></ul><p><strong>3. Success stories:</strong></p><ul><li>Recent buyer testimonials (with permission)</li><li>Before/after renovation stories</li><li>First-time buyer journeys</li></ul><p><strong>4. Market intelligence:</strong></p><ul><li>Price trends in their target areas</li><li>Inventory updates (low supply = urgency)</li><li>Forecast for upcoming quarters</li></ul><p><strong>5. Interactive content:</strong></p><ul><li>Mortgage calculators</li><li>ROI estimators for investment properties</li><li>Property comparison tools</li><li>Neighborhood match quiz</li></ul><h3>Personalization Tactics</h3><ul><li><strong>Name usage:</strong> \"Hi Carlos\" niet \"Dear Client\"</li><li><strong>Reference history:</strong> \"Following up on the villa you viewed...\"</li><li><strong>Acknowledge preferences:</strong> \"Since you mentioned beach views...\"</li><li><strong>Celebrate milestones:</strong> \"Happy 1-month search anniversary!\"</li><li><strong>Timely relevance:</strong> \"Your saved property just dropped €20K\"</li></ul>"
         },
         "es": {
           "text": "<h3>La regla de contenido 60/30/10</h3><p><strong>60% Relevante y valioso:</strong></p><ul><li>Sugerencias de propiedades que coinciden con sus criterios</li><li>Insights de mercado para su área objetivo</li><li>Guías de vecindarios</li><li>Opciones de financiamiento/calculadoras</li></ul><p><strong>30% Educativo y útil:</strong></p><ul><li>Guías del proceso de compra</li><li>Requisitos legales (específicos de España)</li><li>Implicaciones fiscales para compradores</li><li>Consejos de inspección de vivienda</li><li>Recursos de mudanza/reubicación</li></ul><p><strong>10% Promocional:</strong></p><ul><li>Tus servicios/propuesta de valor</li><li>Testimonios de clientes</li><li>Premios/reconocimiento</li><li>Llamado a la acción para próximos pasos</li></ul><h3>Tipos de contenido que generan compromiso</h3><p><strong>1. Guías de comparación:</strong></p><ul><li>\"Playa vs Ciudad: ¿Cuál es adecuado para ti?\"</li><li>Propiedad A vs Propiedad B lado a lado</li><li>Comparación de opciones de financiamiento</li></ul><p><strong>2. Experiencia local:</strong></p><ul><li>\"Joyas ocultas en [Vecindario]\"</li><li>\"Mejores escuelas cerca de [Área]\"</li><li>\"Costo de vida en [Ciudad] - Desglose completo\"</li></ul><p><strong>3. Historias de éxito:</strong></p><ul><li>Testimonios recientes de compradores (con permiso)</li><li>Historias de antes/después de renovación</li><li>Viajes de compradores primerizos</li></ul><p><strong>4. Inteligencia de mercado:</strong></p><ul><li>Tendencias de precios en sus áreas objetivo</li><li>Actualizaciones de inventario (baja oferta = urgencia)</li><li>Pronóstico para próximos trimestres</li></ul><p><strong>5. Contenido interactivo:</strong></p><ul><li>Calculadoras de hipoteca</li><li>Estimadores de ROI para propiedades de inversión</li><li>Herramientas de comparación de propiedades</li><li>Quiz de coincidencia de vecindario</li></ul><h3>Tácticas de personalización</h3><ul><li><strong>Uso de nombre:</strong> \"Hola Carlos\" no \"Estimado Cliente\"</li><li><strong>Referencia al historial:</strong> \"Seguimiento de la villa que visitaste...\"</li><li><strong>Reconocer preferencias:</strong> \"Ya que mencionaste vistas a la playa...\"</li><li><strong>Celebrar hitos:</strong> \"¡Feliz aniversario de 1 mes de búsqueda!\"</li><li><strong>Relevancia oportuna:</strong> \"Tu propiedad guardada acaba de bajar €20K\"</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "nurturing-playbook",
@@ -135,14 +140,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "email-marketing-best-practices",
     "client-communication-templates",
     "conversion-optimization-guide",
     "contact-organization-best-practices"
   ],
-
   "faq": [
     {
       "question": {
@@ -151,8 +154,8 @@
         "es": "¿Cuántos seguimientos debo hacer antes de rendirme?"
       },
       "answer": {
-        "nl": "Minimaal 7-10 touchpoints over 2-3 weken voor nieuwe leads. 80% van conversies gebeurt na 5+ touchpoints, maar 44% van agents geeft op na 1 poging. Voor cold leads: blijf nurturing met maandelijkse newsletter, geef nooit echt op. Move naar 'Long-term Nurture' status maar delete niet - ze kunnen over 6-12 maanden weer actief worden.",
-        "en": "Minimum 7-10 touchpoints over 2-3 weeks for new leads. 80% of conversions happen after 5+ touchpoints, but 44% of agents give up after 1 attempt. For cold leads: keep nurturing with monthly newsletter, never truly give up. Move to 'Long-term Nurture' status but don't delete - they may become active again in 6-12 months.",
+        "nl": "Minimaal 7-10 contactmomenten over 2-3 weken voor nieuwe leads. 80% van conversies gebeurt na 5+ contactmomenten, maar 44% van agents geeft op na 1 poging. Voor cold leads: blijf nurturing met maandelijkse newsletter, geef nooit echt op. Move naar 'Long-term Nurture' status maar delete niet - ze kunnen over 6-12 maanden weer actief worden.",
+        "en": "Minimum 7-10 contactmomenten over 2-3 weeks for new leads. 80% of conversions happen after 5+ contactmomenten, but 44% of agents give up after 1 attempt. For cold leads: keep nurturing with monthly newsletter, never truly give up. Move to 'Long-term Nurture' status but don't delete - they may become active again in 6-12 months.",
         "es": "Mínimo 7-10 puntos de contacto durante 2-3 semanas para nuevos leads. 80% de conversiones ocurren después de 5+ puntos de contacto, pero 44% de agentes se rinde después de 1 intento. Para cold leads: sigue nutriendo con newsletter mensual, nunca te rindas realmente. Mueve a estado 'Nurture a largo plazo' pero no elimines - pueden volverse activos nuevamente en 6-12 meses."
       }
     },

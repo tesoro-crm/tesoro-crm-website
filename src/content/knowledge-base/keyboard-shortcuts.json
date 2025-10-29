@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["keyboard-shortcuts", "productivity", "power-user", "efficiency", "getting-started"],
+    "tags": [
+      "keyboard-shortcuts",
+      "productivity",
+      "power-user",
+      "efficiency",
+      "getting-started"
+    ],
     "featured": false,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200&h=630&fit=crop",
-    "keywords": ["keyboard shortcuts", "tesoro shortcuts", "productivity", "power user", "efficiency"]
+    "keywords": [
+      "keyboard shortcuts",
+      "tesoro shortcuts",
+      "productivity",
+      "power user",
+      "efficiency"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Keyboard shortcuts: werk 2x sneller",
@@ -32,7 +42,6 @@
     },
     "icon": "keyboard"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "global-shortcuts",
@@ -63,14 +71,13 @@
           "text": "<table><thead><tr><th>Shortcut</th><th>Actie</th><th>Beschrijving</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Global Search</td><td>Open search modal, zoek alles</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>New</td><td>Nieuw item (afhankelijk van pagina)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Save</td><td>Opslaan (in forms/editors)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Command Palette</td><td>Open command palette voor snelle acties</td></tr><tr><td><code>?</code></td><td>Help/Shortcuts</td><td>Toon shortcuts overlay</td></tr><tr><td><code>Esc</code></td><td>Close/Cancel</td><td>Sluit modals, cancel edits</td></tr></tbody></table><p><strong>Opmerking:</strong> <code>Cmd</code> op Mac = <code>Ctrl</code> op Windows/Linux</p>"
         },
         "en": {
-          "text": "<table><thead><tr><th>Shortcut</th><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Global Search</td><td>Open search modal, search everything</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>New</td><td>New item (depending on page)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Save</td><td>Save (in forms/editors)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Command Palette</td><td>Open command palette for quick actions</td></tr><tr><td><code>?</code></td><td>Help/Shortcuts</td><td>Show shortcuts overlay</td></tr><tr><td><code>Esc</code></td><td>Close/Cancel</td><td>Close modals, cancel edits</td></tr></tbody></table><p><strong>Note:</strong> <code>Cmd</code> on Mac = <code>Ctrl</code> on Windows/Linux</p>"
+          "text": "<table><thead><tr><th>Shortcut</th><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Global Search</td><td>Open search modal, search everything</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>New</td><td>New item (depending on page)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Save</td><td>Save (in forms/editors)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Command Palette</td><td>Open command palette for quick actions</td></tr><tr><td><code>?</code></td><td>Help/Shortcuts</td><td>Show shortcuts overlay</td></tr><tr><td><code>Esc</code></td><td>Close/Cancel</td><td>Close modals, cancel edits</td></tr></tbody></table><p><strong>niete:</strong> <code>Cmd</code> on Mac = <code>Ctrl</code> on Windows/Linux</p>"
         },
         "es": {
-          "text": "<table><thead><tr><th>Atajo</th><th>Acción</th><th>Descripción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Búsqueda global</td><td>Abrir modal de búsqueda, buscar todo</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>Nuevo</td><td>Nuevo elemento (dependiendo de la página)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Guardar</td><td>Guardar (en formularios/editores)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Paleta de comandos</td><td>Abrir paleta de comandos para acciones rápidas</td></tr><tr><td><code>?</code></td><td>Ayuda/Atajos</td><td>Mostrar superposición de atajos</td></tr><tr><td><code>Esc</code></td><td>Cerrar/Cancelar</td><td>Cerrar modales, cancelar ediciones</td></tr></tbody></table><p><strong>Nota:</strong> <code>Cmd</code> en Mac = <code>Ctrl</code> en Windows/Linux</p>"
+          "text": "<table><thead><tr><th>Atajo</th><th>Acción</th><th>Descripción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + K</code></td><td>Búsqueda global</td><td>Abrir modal de búsqueda, buscar todo</td></tr><tr><td><code>Cmd/Ctrl + N</code></td><td>Nuevo</td><td>Nuevo elemento (dependiendo de la página)</td></tr><tr><td><code>Cmd/Ctrl + S</code></td><td>Guardar</td><td>Guardar (en formularios/editores)</td></tr><tr><td><code>Cmd/Ctrl + /</code></td><td>Paleta de comandos</td><td>Abrir paleta de comandos para acciones rápidas</td></tr><tr><td><code>?</code></td><td>Ayuda/Atajos</td><td>Mostrar superposición de atajos</td></tr><tr><td><code>Esc</code></td><td>Cerrar/Cancelar</td><td>Cerrar modales, cancelar ediciones</td></tr></tbody></table><p><strong>nieta:</strong> <code>Cmd</code> en Mac = <code>Ctrl</code> en Windows/Linux</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "navigation-shortcuts",
@@ -91,7 +98,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "list-shortcuts",
@@ -112,7 +118,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "deal-kanban-shortcuts",
@@ -133,7 +138,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "editor-shortcuts",
@@ -144,17 +148,16 @@
       },
       "content": {
         "nl": {
-          "text": "<p>In forms en text editors (Notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Actie</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
+          "text": "<p>In forms en text editors (notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Actie</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
         },
         "en": {
-          "text": "<p>In forms and text editors (Notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
+          "text": "<p>In forms and text editors (notes, Emails, etc.):</p><table><thead><tr><th>Shortcut</th><th>Action</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Bold text</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Italic text</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Underline text</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insert link</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Undo</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Redo</td></tr><tr><td><code>Tab</code></td><td>Next field / Indent</td></tr><tr><td><code>Shift + Tab</code></td><td>Previous field / Outdent</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Submit form / Send email</td></tr></tbody></table>"
         },
         "es": {
-          "text": "<p>En formularios y editores de texto (Notes, Emails, etc.):</p><table><thead><tr><th>Atajo</th><th>Acción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Texto en negrita</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Texto en cursiva</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Subrayar texto</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insertar enlace</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Deshacer</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Rehacer</td></tr><tr><td><code>Tab</code></td><td>Siguiente campo / Sangría</td></tr><tr><td><code>Shift + Tab</code></td><td>Campo anterior / Quitar sangría</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Enviar formulario / Enviar email</td></tr></tbody></table>"
+          "text": "<p>En formularios y editores de texto (notes, Emails, etc.):</p><table><thead><tr><th>Atajo</th><th>Acción</th></tr></thead><tbody><tr><td><code>Cmd/Ctrl + B</code></td><td>Texto en negrita</td></tr><tr><td><code>Cmd/Ctrl + I</code></td><td>Texto en cursiva</td></tr><tr><td><code>Cmd/Ctrl + U</code></td><td>Subrayar texto</td></tr><tr><td><code>Cmd/Ctrl + K</code></td><td>Insertar enlace</td></tr><tr><td><code>Cmd/Ctrl + Z</code></td><td>Deshacer</td></tr><tr><td><code>Cmd/Ctrl + Shift + Z</code></td><td>Rehacer</td></tr><tr><td><code>Tab</code></td><td>Siguiente campo / Sangría</td></tr><tr><td><code>Shift + Tab</code></td><td>Campo anterior / Quitar sangría</td></tr><tr><td><code>Cmd/Ctrl + Enter</code></td><td>Enviar formulario / Enviar email</td></tr></tbody></table>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "learning-tip",
@@ -177,13 +180,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "navigation-basics",
     "quick-start-guide",
     "dashboard-overview"
   ],
-
   "faq": [
     {
       "question": {
@@ -193,7 +194,7 @@
       },
       "answer": {
         "nl": "Momenteel niet, maar we werken aan een feature waarmee je je eigen shortcuts kunt configureren. Laat het ons weten in de feedback welke shortcuts jij zou willen aanpassen!",
-        "en": "Currently not, but we're working on a feature where you can configure your own shortcuts. Let us know in the feedback which shortcuts you'd like to customize!",
+        "en": "Currently niet, but we're working on a feature where you can configure your own shortcuts. Let us know in the feedback which shortcuts you'd like to customize!",
         "es": "Actualmente no, pero estamos trabajando en una función donde puedes configurar tus propios atajos. ¡Haznos saber en los comentarios qué atajos te gustaría personalizar!"
       }
     },

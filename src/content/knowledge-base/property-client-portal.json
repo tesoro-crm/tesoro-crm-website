@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "client-portal", "buyer-portal", "self-service", "property-sharing"],
+    "tags": [
+      "properties",
+      "client-portal",
+      "buyer-portal",
+      "self-service",
+      "property-sharing"
+    ],
     "featured": true,
     "readingTime": 9,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["client portal", "buyer portal", "property sharing", "self-service portal", "property access"]
+    "keywords": [
+      "client portal",
+      "buyer portal",
+      "property sharing",
+      "self-service portal",
+      "property access"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Client portal en property sharing in Tesoro",
@@ -32,7 +42,6 @@
     },
     "icon": "person"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "portal-setup",
@@ -76,7 +84,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "user-management",
@@ -97,7 +104,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "property-sharing",
@@ -108,17 +114,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Direct property sharing</h5><p>Share specific properties met individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link voor anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>Voor organized buyer journeys:</p><ol><li>Create deal voor buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer ziet curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'Not Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing voor multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections voor buyers:</p><ol><li>Create 'Collection' (bijvoorbeeld \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link met buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect voor presenting themed property selections.</p>"
+          "text": "<h5>Direct property sharing</h5><p>Share specific properties met individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link voor anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>Voor organized buyer journeys:</p><ol><li>Create deal voor buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer ziet curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'niet Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing voor multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections voor buyers:</p><ol><li>Create 'Collection' (bijvoorbeeld \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link met buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect voor presenting themed property selections.</p>"
         },
         "en": {
-          "text": "<h5>Direct property sharing</h5><p>Share specific properties with individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link for anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>For organized buyer journeys:</p><ol><li>Create deal for buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer sees curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'Not Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing for multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections for buyers:</p><ol><li>Create 'Collection' (e.g., \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link with buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect for presenting themed property selections.</p>"
+          "text": "<h5>Direct property sharing</h5><p>Share specific properties with individual clients:</p><ol><li>Open property detail</li><li>Click 'Share Property'</li><li>Select sharing method:<ul><li><strong>Portal user:</strong> Share to existing portal user account</li><li><strong>Email link:</strong> Send shareable link via email</li><li><strong>Public link:</strong> Generate link for anyone</li></ul></li><li>Add optional message</li><li>Send</li></ol><h5>Deal-based sharing</h5><p>For organized buyer journeys:</p><ol><li>Create deal for buyer</li><li>Add properties to deal offers</li><li>Click 'Share Deal Properties'</li><li>Buyer sees curated selection in portal</li><li>Track which properties buyer likes/rejects</li></ol><p><strong>Deal portal features:</strong></p><ul><li>Buyer can mark properties as 'Interested' or 'niet Interested'</li><li>Leave notes on each property</li><li>Compare properties side-by-side</li><li>Request viewing for multiple properties</li></ul><h5>Sharing via collections</h5><p>Group properties in collections for buyers:</p><ol><li>Create 'Collection' (e.g., \"Barcelona Beachfront\")</li><li>Add relevant properties</li><li>Share collection link with buyer</li><li>Buyer browses curated selection</li></ol><p>Perfect for presenting themed property selections.</p>"
         },
         "es": {
-          "text": "<h5>Compartir propiedades directamente</h5><p>Comparte propiedades específicas con clientes individuales:</p><ol><li>Abre detalle de propiedad</li><li>Haz clic en 'Compartir Propiedad'</li><li>Selecciona método de compartir:<ul><li><strong>Usuario del portal:</strong> Compartir a cuenta de usuario del portal existente</li><li><strong>Enlace por email:</strong> Enviar enlace compartible vía email</li><li><strong>Enlace público:</strong> Generar enlace para cualquiera</li></ul></li><li>Añade mensaje opcional</li><li>Enviar</li></ol><h5>Compartir basado en deals</h5><p>Para viajes organizados de compradores:</p><ol><li>Crea deal para comprador</li><li>Añade propiedades a ofertas de deal</li><li>Haz clic en 'Compartir Propiedades de Deal'</li><li>El comprador ve selección curada en el portal</li><li>Rastrea qué propiedades le gustan/rechaza el comprador</li></ol><p><strong>Características del portal de deals:</strong></p><ul><li>El comprador puede marcar propiedades como 'Interesado' o 'No Interesado'</li><li>Dejar notas en cada propiedad</li><li>Comparar propiedades lado a lado</li><li>Solicitar visita para múltiples propiedades</li></ul><h5>Compartir vía colecciones</h5><p>Agrupa propiedades en colecciones para compradores:</p><ol><li>Crea 'Colección' (ej., \"Frente a la Playa Barcelona\")</li><li>Añade propiedades relevantes</li><li>Comparte enlace de colección con comprador</li><li>El comprador explora selección curada</li></ol><p>Perfecto para presentar selecciones temáticas de propiedades.</p>"
+          "text": "<h5>Compartir propiedades directamente</h5><p>Comparte propiedades específicas con clientes individuales:</p><ol><li>Abre detalle de propiedad</li><li>Haz clic en 'Compartir Propiedad'</li><li>Selecciona método de compartir:<ul><li><strong>Usuario del portal:</strong> Compartir a cuenta de usuario del portal existente</li><li><strong>Enlace por email:</strong> Enviar enlace compartible vía email</li><li><strong>Enlace público:</strong> Generar enlace para cualquiera</li></ul></li><li>Añade mensaje opcional</li><li>Enviar</li></ol><h5>Compartir basado en deals</h5><p>Para viajes organizados de compradores:</p><ol><li>Crea deal para comprador</li><li>Añade propiedades a ofertas de deal</li><li>Haz clic en 'Compartir Propiedades de Deal'</li><li>El comprador ve selección curada en el portal</li><li>Rastrea qué propiedades le gustan/rechaza el comprador</li></ol><p><strong>Características del portal de deals:</strong></p><ul><li>El comprador puede marcar propiedades como 'Interesado' o 'No Interesado'</li><li>Dejar nietas en cada propiedad</li><li>Comparar propiedades lado a lado</li><li>Solicitar visita para múltiples propiedades</li></ul><h5>Compartir vía colecciones</h5><p>Agrupa propiedades en colecciones para compradores:</p><ol><li>Crea 'Colección' (ej., \"Frente a la Playa Barcelona\")</li><li>Añade propiedades relevantes</li><li>Comparte enlace de colección con comprador</li><li>El comprador explora selección curada</li></ol><p>Perfecto para presentar selecciones temáticas de propiedades.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "portal-analytics",
@@ -139,7 +144,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "portal-tips",
@@ -151,10 +155,10 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties hebben detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly welke properties buyers view most - adjust strategy.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours voor best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") voor better engagement.</li></ol>"
+          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties hebben detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly welke properties buyers view most - pas strategie aan.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours voor best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") voor better engagement.</li></ol>"
         },
         "en": {
-          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties have detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly which properties buyers view most - adjust strategy.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours for best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") for better engagement.</li></ol>"
+          "text": "<p><strong>Maximize portal effectiveness:</strong></p><ol><li><strong>Keep portal updated:</strong> Remove sold/rented properties promptly - stale listings reduce trust.</li><li><strong>High-quality images:</strong> Portal properties should have min 5 professional photos.</li><li><strong>Complete descriptions:</strong> Ensure all visible properties have detailed NL/EN/ES descriptions.</li><li><strong>Monitor user activity:</strong> Check weekly which properties buyers view most - pas strategie aan.</li><li><strong>Follow up fast:</strong> Respond to viewing requests within 2 hours for best conversion.</li><li><strong>Use collections:</strong> Create themed collections (\"New this week\", \"Price reduced\") for better engagement.</li></ol>"
         },
         "es": {
           "text": "<p><strong>Maximiza efectividad del portal:</strong></p><ol><li><strong>Mantén portal actualizado:</strong> Elimina propiedades vendidas/alquiladas rápidamente - listados obsoletos reducen confianza.</li><li><strong>Imágenes de alta calidad:</strong> Las propiedades del portal deben tener mín. 5 fotos profesionales.</li><li><strong>Descripciones completas:</strong> Asegúrate de que todas las propiedades visibles tengan descripciones detalladas en NL/EN/ES.</li><li><strong>Monitorea actividad del usuario:</strong> Verifica semanalmente qué propiedades ven más los compradores - ajusta estrategia.</li><li><strong>Seguimiento rápido:</strong> Responde a solicitudes de visita en 2 horas para mejor conversión.</li><li><strong>Usa colecciones:</strong> Crea colecciones temáticas (\"Nuevo esta semana\", \"Precio reducido\") para mejor compromiso.</li></ol>"
@@ -162,14 +166,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "property-ai-matching",
     "property-search-filters",
     "property-documents-management"
   ],
-
   "faq": [
     {
       "question": {

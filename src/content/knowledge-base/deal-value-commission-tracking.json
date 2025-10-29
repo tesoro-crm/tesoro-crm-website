@@ -5,20 +5,28 @@
     "publishDate": "2024-10-23",
     "updatedAt": "2024-10-23T11:00:00Z",
     "authorId": "carlos-martinez",
-    "category": "contacts",
+    "category": "deals",
     "difficulty": "intermediate",
-    "tags": ["deals", "pipeline", "sales"],
+    "tags": [
+      "deals",
+      "pipeline",
+      "sales"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
-    "keywords": ["deal value", "commission tracking", "revenue forecasting", "deal commission", "sales tracking"]
+    "keywords": [
+      "deal value",
+      "commission tracking",
+      "revenue forecasting",
+      "deal commission",
+      "sales tracking"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Deal value en commissie tracking",
@@ -32,7 +40,6 @@
     },
     "icon": "payments"
   },
-
   "sections": [
     {
       "type": "text",
@@ -42,14 +49,13 @@
           "text": "<p>Accurate deal value en commission tracking zijn essentieel voor revenue forecasting, agent performance measurement, en business planning. Tesoro CRM biedt comprehensive tools voor het tracken van deal values, automatische commission calculations, en real-time revenue reporting.</p>"
         },
         "en": {
-          "text": "<p>Accurate deal value and commission tracking are essential for revenue forecasting, agent performance measurement, and business planning. Tesoro CRM provides comprehensive tools for tracking deal values, automatic commission calculations, and real-time revenue reporting.</p>"
+          "text": "<p>Accurate deal value and commission tracking are essential for revenue forecasting, agent performance measurement, and business planning. Tesoro CRM provides comprehensive tools for tracking deal values, Automatische commissie berekeningen, and real-time revenue reporting.</p>"
         },
         "es": {
           "text": "<p>El seguimiento preciso de valor y comisión de deals es esencial para pronósticos de ingresos, medición de rendimiento de agentes y planificación empresarial. Tesoro CRM proporciona herramientas completas para rastrear valores de deals, cálculos automáticos de comisiones y reportes de ingresos en tiempo real.</p>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "value-tracking",
@@ -133,7 +139,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "reporting",
@@ -154,7 +159,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -166,24 +170,22 @@
       },
       "content": {
         "nl": {
-          "text": "<ul><li><strong>Update regularly:</strong> Update values bij price negotiations</li><li><strong>Be realistic:</strong> Use realistic expected values, not optimistic</li><li><strong>Set closing dates:</strong> Altijd closing date toevoegen voor forecasting</li><li><strong>Track confidence:</strong> Update confidence level als deal progresses</li><li><strong>Document changes:</strong> Add notes wanneer values veranderen</li><li><strong>Review forecasts:</strong> Weekly review van pipeline value en forecasts</li></ul>"
+          "text": "<ul><li><strong>Update regelmatig:</strong> Update values bij price negotiations</li><li><strong>Wees realistisch:</strong> Gebruik realistische verwachte waardes, niet optimistisch</li><li><strong>Stel sluitingsdatums in:</strong> Altijd closing date toevoegen voor forecasting</li><li><strong>Volg vertrouwen:</strong> Update confidence level als deal progresses</li><li><strong>Documenteer wijzigingen:</strong> Add notes wanneer values veranderen</li><li><strong>Bekijk voorspellingen:</strong> Weekly review van pipeline value en forecasts</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Update regularly:</strong> Update values during price negotiations</li><li><strong>Be realistic:</strong> Use realistic expected values, not optimistic</li><li><strong>Set closing dates:</strong> Always add closing date for forecasting</li><li><strong>Track confidence:</strong> Update confidence level as deal progresses</li><li><strong>Document changes:</strong> Add notes when values change</li><li><strong>Review forecasts:</strong> Weekly review of pipeline value and forecasts</li></ul>"
+          "text": "<ul><li><strong>Update regelmatig:</strong> Update waardes tijdens prijs onderhandelingen</li><li><strong>Wees realistisch:</strong> Gebruik realistische verwachte waardes, niet optimistisch</li><li><strong>Stel sluitingsdatums in:</strong> Voeg altijd sluitingsdatum toe voor forecasting</li><li><strong>Volg vertrouwen:</strong> Update vertrouwen niveau terwijl deal vordert</li><li><strong>Documenteer wijzigingen:</strong> Voeg notities toe wanneer waardes veranderen</li><li><strong>Bekijk voorspellingen:</strong> Wekelijkse review van pipeline waarde en voorspellingen</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza valores durante negociaciones de precio</li><li><strong>Ser realista:</strong> Usa valores esperados realistas, no optimistas</li><li><strong>Establecer fechas de cierre:</strong> Siempre agrega fecha de cierre para pronósticos</li><li><strong>Rastrear confianza:</strong> Actualiza nivel de confianza a medida que el deal progresa</li><li><strong>Documentar cambios:</strong> Agrega notas cuando los valores cambien</li><li><strong>Revisar pronósticos:</strong> Revisión semanal de valor del pipeline y pronósticos</li></ul>"
+          "text": "<ul><li><strong>Actualizar regularmente:</strong> Actualiza valores durante negociaciones de precio</li><li><strong>Ser realista:</strong> Usa valores esperados realistas, no optimistas</li><li><strong>Establecer fechas de cierre:</strong> Siempre agrega fecha de cierre para pronósticos</li><li><strong>Rastrear confianza:</strong> Actualiza nivel de confianza a medida que el deal progresa</li><li><strong>Documentar cambios:</strong> Agrega nietas cuando los valores cambien</li><li><strong>Revisar pronósticos:</strong> Revisión semanal de valor del pipeline y pronósticos</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "deal-pipeline-overview",
     "deal-forecasting",
     "deal-reporting-metrics"
   ],
-
   "faq": [
     {
       "question": {

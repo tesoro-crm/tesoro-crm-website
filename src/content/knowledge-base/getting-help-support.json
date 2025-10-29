@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "getting-started",
     "difficulty": "beginner",
-    "tags": ["support", "help", "getting-started", "troubleshooting", "contact"],
+    "tags": [
+      "support",
+      "help",
+      "getting-started",
+      "troubleshooting",
+      "contact"
+    ],
     "featured": true,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro support", "help", "customer support", "contact tesoro", "crm help"]
+    "keywords": [
+      "tesoro support",
+      "help",
+      "customer support",
+      "contact tesoro",
+      "crm help"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Help en support krijgen",
@@ -32,7 +42,6 @@
     },
     "icon": "support"
   },
-
   "sections": [
     {
       "type": "text",
@@ -42,14 +51,13 @@
           "text": "<p>Je bent niet alleen! Het Tesoro team en community staan klaar om te helpen wanneer je vast zit, vragen hebt, of feedback wilt delen. Deze gids laat zien waar je terecht kunt voor elke situatie.</p>"
         },
         "en": {
-          "text": "<p>You're not alone! The Tesoro team and community are ready to help when you're stuck, have questions, or want to share feedback. This guide shows you where to go for every situation.</p>"
+          "text": "<p>You're niet alone! The Tesoro team and community are ready to help when you're stuck, have questions, or want to share feedback. This guide shows you where to go for every situation.</p>"
         },
         "es": {
           "text": "<p>¡No estás solo! El equipo y la comunidad de Tesoro están listos para ayudar cuando estés atascado, tengas preguntas o quieras compartir comentarios. Esta guía te muestra a dónde ir para cada situación.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "self-service",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "contact-support",
@@ -91,7 +98,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "feedback",
@@ -113,7 +119,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "emergency-support",
@@ -127,14 +132,13 @@
           "text": "<p>Als je een <strong>business-critical probleem</strong> hebt (bijv. complete system down, data loss, security breach):</p><ol><li><strong>Email:</strong> support@tesorohq.io met subject \"URGENT\"</li><li><strong>Call:</strong> +31 (0)20 123 4567 (24/7 voor emergencies)</li><li><strong>Live Chat:</strong> Als beschikbaar, gebruik chat en mention \"URGENT\"</li></ol><p><strong>Wat is business-critical?</strong></p><ul><li>Tesoro is volledig niet bereikbaar</li><li>Data loss of corruptie</li><li>Security incident (ongeautoriseerde toegang)</li><li>Kritieke deals kunnen niet worden verwerkt</li></ul><p><strong>Wat is NIET business-critical?</strong></p><ul><li>Feature werkt niet zoals verwacht (gebruik normal support)</li><li>Vragen over hoe iets te gebruiken (gebruik kennisbank/chat)</li><li>Feature requests (gebruik feedback channels)</li></ul><p><strong>SLA voor emergencies:</strong></p><ul><li><strong>Standard plans:</strong> Response binnen 4 uur</li><li><strong>Enterprise plans:</strong> Response binnen 1 uur, 24/7</li></ul>"
         },
         "en": {
-          "text": "<p>If you have a <strong>business-critical problem</strong> (e.g. complete system down, data loss, security breach):</p><ol><li><strong>Email:</strong> support@tesorohq.io with subject \"URGENT\"</li><li><strong>Call:</strong> +31 (0)20 123 4567 (24/7 for emergencies)</li><li><strong>Live Chat:</strong> If available, use chat and mention \"URGENT\"</li></ol><p><strong>What is business-critical?</strong></p><ul><li>Tesoro is completely unreachable</li><li>Data loss or corruption</li><li>Security incident (unauthorized access)</li><li>Critical deals cannot be processed</li></ul><p><strong>What is NOT business-critical?</strong></p><ul><li>Feature doesn't work as expected (use normal support)</li><li>Questions about how to use something (use knowledge base/chat)</li><li>Feature requests (use feedback channels)</li></ul><p><strong>SLA for emergencies:</strong></p><ul><li><strong>Standard plans:</strong> Response within 4 hours</li><li><strong>Enterprise plans:</strong> Response within 1 hour, 24/7</li></ul>"
+          "text": "<p>If you have a <strong>business-critical problem</strong> (e.g. complete system down, data loss, security breach):</p><ol><li><strong>Email:</strong> support@tesorohq.io with subject \"URGENT\"</li><li><strong>Call:</strong> +31 (0)20 123 4567 (24/7 for emergencies)</li><li><strong>Live Chat:</strong> If available, use chat and mention \"URGENT\"</li></ol><p><strong>What is business-critical?</strong></p><ul><li>Tesoro is completely unreachable</li><li>Data loss or corruption</li><li>Security incident (unauthorized access)</li><li>Critical deals canniet be processed</li></ul><p><strong>What is niet business-critical?</strong></p><ul><li>Feature doesn't work as expected (use normal support)</li><li>Questions about how to use something (use knowledge base/chat)</li><li>Feature requests (use feedback channels)</li></ul><p><strong>SLA for emergencies:</strong></p><ul><li><strong>Standard plans:</strong> Response within 4 hours</li><li><strong>Enterprise plans:</strong> Response within 1 hour, 24/7</li></ul>"
         },
         "es": {
           "text": "<p>Si tienes un <strong>problema crítico para el negocio</strong> (ej. sistema completamente caído, pérdida de datos, brecha de seguridad):</p><ol><li><strong>Email:</strong> support@tesorohq.io con asunto \"URGENT\"</li><li><strong>Llamar:</strong> +31 (0)20 123 4567 (24/7 para emergencias)</li><li><strong>Chat en vivo:</strong> Si está disponible, usa chat y menciona \"URGENT\"</li></ol><p><strong>¿Qué es crítico para el negocio?</strong></p><ul><li>Tesoro es completamente inaccesible</li><li>Pérdida o corrupción de datos</li><li>Incidente de seguridad (acceso no autorizado)</li><li>Los deals críticos no se pueden procesar</li></ul><p><strong>¿Qué NO es crítico para el negocio?</strong></p><ul><li>La característica no funciona como se esperaba (usa soporte normal)</li><li>Preguntas sobre cómo usar algo (usa base de conocimientos/chat)</li><li>Solicitudes de características (usa canales de comentarios)</li></ul><p><strong>SLA para emergencias:</strong></p><ul><li><strong>Planes estándar:</strong> Respuesta dentro de 4 horas</li><li><strong>Planes Enterprise:</strong> Respuesta dentro de 1 hora, 24/7</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "community",
@@ -156,13 +160,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "welcome-to-tesoro",
     "tesoro-glossary",
     "first-steps-checklist"
   ],
-
   "faq": [
     {
       "question": {

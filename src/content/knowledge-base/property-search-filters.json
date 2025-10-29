@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "search", "filters", "advanced-search", "saved-searches"],
+    "tags": [
+      "properties",
+      "search",
+      "filters",
+      "advanced-search",
+      "saved-searches"
+    ],
     "featured": false,
     "readingTime": 9,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1200&h=630&fit=crop",
-    "keywords": ["property search", "filters", "advanced search", "saved searches", "search criteria"]
+    "keywords": [
+      "property search",
+      "filters",
+      "advanced search",
+      "saved searches",
+      "search criteria"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Advanced property search en filters in Tesoro",
@@ -32,7 +42,6 @@
     },
     "icon": "search"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "basic-filters",
@@ -66,17 +74,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Property type filter</h5><ul><li>Apartment, House, Villa, Land, Commercial, Industrial</li><li>Multi-select (select multiple types)</li><li>Quick buttons voor common types</li></ul><h5>Location filters</h5><ul><li><strong>City:</strong> Dropdown met alle cities in database</li><li><strong>Area/Neighborhood:</strong> Specific neighborhoods</li><li><strong>Postal code:</strong> Text input voor postal codes</li><li><strong>Radius search:</strong> \"Within X km of location\"</li></ul><h5>Price range</h5><ul><li>Min price slider</li><li>Max price slider</li><li>Price per m² option</li><li>Quick presets (€0-200k, €200-400k, €400k+)</li></ul><h5>Size filters</h5><ul><li><strong>Bedrooms:</strong> 1, 2, 3, 4, 5+ (multi-select)</li><li><strong>Bathrooms:</strong> 1, 2, 3+ (multi-select)</li><li><strong>Total area:</strong> Min/max m² range</li><li><strong>Plot size:</strong> For houses with land</li></ul>"
+          "text": "<h5>Property type filter</h5><ul><li>Apartment, House, Villa, Land, Commercial, Industrial</li><li>Multi-select (select multiple types)</li><li>Quick buttons voor common types</li></ul><h5>Location filters</h5><ul><li><strong>City:</strong> Dropdown met alle cities in database</li><li><strong>Area/Neighborhood:</strong> Specific neighborhoods</li><li><strong>Postal code:</strong> Text input voor postal codes</li><li><strong>Radius search:</strong> \"Within X km of location\"</li></ul><h5>Price range</h5><ul><li>Min price slider</li><li>Max price slider</li><li>Price per m² option</li><li>Quick presets (€0-200k, €200-400k, €400k+)</li></ul><h5>Size filters</h5><ul><li><strong>Bedrooms:</strong> 1, 2, 3, 4, 5+ (multi-select)</li><li><strong>Bathrooms:</strong> 1, 2, 3+ (multi-select)</li><li><strong>Totale oppervlakte:</strong> Min/max m² range</li><li><strong>Perceelgrootte:</strong> For houses with land</li></ul>"
         },
         "en": {
-          "text": "<h5>Property type filter</h5><ul><li>Apartment, House, Villa, Land, Commercial, Industrial</li><li>Multi-select (select multiple types)</li><li>Quick buttons for common types</li></ul><h5>Location filters</h5><ul><li><strong>City:</strong> Dropdown with all cities in database</li><li><strong>Area/Neighborhood:</strong> Specific neighborhoods</li><li><strong>Postal code:</strong> Text input for postal codes</li><li><strong>Radius search:</strong> \"Within X km of location\"</li></ul><h5>Price range</h5><ul><li>Min price slider</li><li>Max price slider</li><li>Price per m² option</li><li>Quick presets (€0-200k, €200-400k, €400k+)</li></ul><h5>Size filters</h5><ul><li><strong>Bedrooms:</strong> 1, 2, 3, 4, 5+ (multi-select)</li><li><strong>Bathrooms:</strong> 1, 2, 3+ (multi-select)</li><li><strong>Total area:</strong> Min/max m² range</li><li><strong>Plot size:</strong> For houses with land</li></ul>"
+          "text": "<h5>Property type filter</h5><ul><li>Apartment, House, Villa, Land, Commercial, Industrial</li><li>Multi-select (select multiple types)</li><li>Quick buttons for common types</li></ul><h5>Location filters</h5><ul><li><strong>City:</strong> Dropdown with all cities in database</li><li><strong>Area/Neighborhood:</strong> Specific neighborhoods</li><li><strong>Postal code:</strong> Text input for postal codes</li><li><strong>Radius search:</strong> \"Within X km of location\"</li></ul><h5>Price range</h5><ul><li>Min price slider</li><li>Max price slider</li><li>Price per m² option</li><li>Quick presets (€0-200k, €200-400k, €400k+)</li></ul><h5>Size filters</h5><ul><li><strong>Bedrooms:</strong> 1, 2, 3, 4, 5+ (multi-select)</li><li><strong>Bathrooms:</strong> 1, 2, 3+ (multi-select)</li><li><strong>Totale oppervlakte:</strong> Min/max m² range</li><li><strong>Perceelgrootte:</strong> For houses with land</li></ul>"
         },
         "es": {
           "text": "<h5>Filtro de tipo de propiedad</h5><ul><li>Apartamento, Casa, Villa, Terreno, Comercial, Industrial</li><li>Multi-selección (selecciona múltiples tipos)</li><li>Botones rápidos para tipos comunes</li></ul><h5>Filtros de ubicación</h5><ul><li><strong>Ciudad:</strong> Menú desplegable con todas las ciudades en la base de datos</li><li><strong>Área/Vecindario:</strong> Vecindarios específicos</li><li><strong>Código postal:</strong> Entrada de texto para códigos postales</li><li><strong>Búsqueda por radio:</strong> \"Dentro de X km de ubicación\"</li></ul><h5>Rango de precio</h5><ul><li>Deslizador de precio mínimo</li><li>Deslizador de precio máximo</li><li>Opción de precio por m²</li><li>Preajustes rápidos (€0-200k, €200-400k, €400k+)</li></ul><h5>Filtros de tamaño</h5><ul><li><strong>Dormitorios:</strong> 1, 2, 3, 4, 5+ (multi-selección)</li><li><strong>Baños:</strong> 1, 2, 3+ (multi-selección)</li><li><strong>Área total:</strong> Rango de m² mín/máx</li><li><strong>Tamaño de parcela:</strong> Para casas con terreno</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "advanced-filters",
@@ -87,17 +94,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Amenities en features</h5><p>Filter op specific property features:</p><ul><li><strong>Outdoor:</strong> Pool, Garden, Terrace, Balcony, Patio</li><li><strong>Parking:</strong> Garage, Open parking, Carport</li><li><strong>Building:</strong> Elevator, Storage room, Basement</li><li><strong>Systems:</strong> AC, Heating, Solar panels</li><li><strong>Furnishing:</strong> Furnished, Semi-furnished, Unfurnished</li><li><strong>Views:</strong> Sea view, Mountain view, City view</li></ul><p>Alle feature filters zijn multi-select (bijvoorbeeld \"Pool OR Garden\").</p><h5>Status en availability</h5><ul><li><strong>Status:</strong> Active, Inactive, Sold, Rented, Draft</li><li><strong>MLS status:</strong> Published, Not published, Pending</li><li><strong>Availability:</strong> Immediate, 1-3 months, 3-6 months</li></ul><h5>Property condition</h5><ul><li>New construction</li><li>Excellent condition</li><li>Good condition</li><li>Needs renovation</li><li>Off-plan (yet to be built)</li></ul><h5>Owner en agent filters</h5><ul><li><strong>Owned by:</strong> Filter op property owner</li><li><strong>Assigned to:</strong> Filter op assigned agent</li><li><strong>Created by:</strong> Who added property</li><li><strong>Project:</strong> Properties in specific project</li></ul>"
+          "text": "<h5>Amenities en features</h5><p>Filter op specific property features:</p><ul><li><strong>Outdoor:</strong> Pool, Garden, Terrace, Balcony, Patio</li><li><strong>Parking:</strong> Garage, Open parking, Carport</li><li><strong>Building:</strong> Elevator, Storage room, Basement</li><li><strong>Systems:</strong> AC, Heating, Solar panels</li><li><strong>Furnishing:</strong> Furnished, Semi-furnished, Unfurnished</li><li><strong>Views:</strong> Sea view, Mountain view, City view</li></ul><p>Alle feature filters zijn multi-select (bijvoorbeeld \"Pool OR Garden\").</p><h5>Status en availability</h5><ul><li><strong>Status:</strong> Active, Inactive, Sold, Rented, Draft</li><li><strong>MLS status:</strong> Published, niet published, Pending</li><li><strong>Availability:</strong> Immediate, 1-3 months, 3-6 months</li></ul><h5>Property condition</h5><ul><li>New construction</li><li>Excellent condition</li><li>Good condition</li><li>Needs renovation</li><li>Off-plan (yet to be built)</li></ul><h5>Owner en agent filters</h5><ul><li><strong>Owned by:</strong> Filter op property owner</li><li><strong>Assigned to:</strong> Filter op assigned agent</li><li><strong>Created by:</strong> Who added property</li><li><strong>Project:</strong> Properties in specific project</li></ul>"
         },
         "en": {
-          "text": "<h5>Amenities and features</h5><p>Filter on specific property features:</p><ul><li><strong>Outdoor:</strong> Pool, Garden, Terrace, Balcony, Patio</li><li><strong>Parking:</strong> Garage, Open parking, Carport</li><li><strong>Building:</strong> Elevator, Storage room, Basement</li><li><strong>Systems:</strong> AC, Heating, Solar panels</li><li><strong>Furnishing:</strong> Furnished, Semi-furnished, Unfurnished</li><li><strong>Views:</strong> Sea view, Mountain view, City view</li></ul><p>All feature filters are multi-select (e.g., \"Pool OR Garden\").</p><h5>Status and availability</h5><ul><li><strong>Status:</strong> Active, Inactive, Sold, Rented, Draft</li><li><strong>MLS status:</strong> Published, Not published, Pending</li><li><strong>Availability:</strong> Immediate, 1-3 months, 3-6 months</li></ul><h5>Property condition</h5><ul><li>New construction</li><li>Excellent condition</li><li>Good condition</li><li>Needs renovation</li><li>Off-plan (yet to be built)</li></ul><h5>Owner and agent filters</h5><ul><li><strong>Owned by:</strong> Filter on property owner</li><li><strong>Assigned to:</strong> Filter on assigned agent</li><li><strong>Created by:</strong> Who added property</li><li><strong>Project:</strong> Properties in specific project</li></ul>"
+          "text": "<h5>Amenities and features</h5><p>Filter on specific property features:</p><ul><li><strong>Outdoor:</strong> Pool, Garden, Terrace, Balcony, Patio</li><li><strong>Parking:</strong> Garage, Open parking, Carport</li><li><strong>Building:</strong> Elevator, Storage room, Basement</li><li><strong>Systems:</strong> AC, Heating, Solar panels</li><li><strong>Furnishing:</strong> Furnished, Semi-furnished, Unfurnished</li><li><strong>Views:</strong> Sea view, Mountain view, City view</li></ul><p>All feature filters are multi-select (e.g., \"Pool OR Garden\").</p><h5>Status and availability</h5><ul><li><strong>Status:</strong> Active, Inactive, Sold, Rented, Draft</li><li><strong>MLS status:</strong> Published, niet published, Pending</li><li><strong>Availability:</strong> Immediate, 1-3 months, 3-6 months</li></ul><h5>Property condition</h5><ul><li>New construction</li><li>Excellent condition</li><li>Good condition</li><li>Needs renovation</li><li>Off-plan (yet to be built)</li></ul><h5>Owner and agent filters</h5><ul><li><strong>Owned by:</strong> Filter on property owner</li><li><strong>Assigned to:</strong> Filter on assigned agent</li><li><strong>Created by:</strong> Who added property</li><li><strong>Project:</strong> Properties in specific project</li></ul>"
         },
         "es": {
           "text": "<h5>Amenidades y características</h5><p>Filtra en características específicas de propiedades:</p><ul><li><strong>Exterior:</strong> Piscina, Jardín, Terraza, Balcón, Patio</li><li><strong>Estacionamiento:</strong> Garaje, Estacionamiento abierto, Cochera</li><li><strong>Edificio:</strong> Ascensor, Trastero, Sótano</li><li><strong>Sistemas:</strong> AC, Calefacción, Paneles solares</li><li><strong>Mobiliario:</strong> Amueblado, Semi-amueblado, Sin amueblar</li><li><strong>Vistas:</strong> Vista al mar, Vista a la montaña, Vista a la ciudad</li></ul><p>Todos los filtros de características son multi-selección (ej., \"Piscina O Jardín\").</p><h5>Estado y disponibilidad</h5><ul><li><strong>Estado:</strong> Activa, Inactiva, Vendida, Alquilada, Borrador</li><li><strong>Estado MLS:</strong> Publicada, No publicada, Pendiente</li><li><strong>Disponibilidad:</strong> Inmediata, 1-3 meses, 3-6 meses</li></ul><h5>Condición de propiedad</h5><ul><li>Obra nueva</li><li>Excelente condición</li><li>Buena condición</li><li>Necesita renovación</li><li>Sobre plano (aún por construir)</li></ul><h5>Filtros de propietario y agente</h5><ul><li><strong>Propiedad de:</strong> Filtrar por propietario de propiedad</li><li><strong>Asignado a:</strong> Filtrar por agente asignado</li><li><strong>Creado por:</strong> Quién añadió propiedad</li><li><strong>Proyecto:</strong> Propiedades en proyecto específico</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "saved-searches",
@@ -108,17 +114,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Creating saved searches</h5><p>Save frequently used search criteria:</p><ol><li>Configure filters (type, location, price, etc.)</li><li>Click 'Save Search' button</li><li>Name search (bijvoorbeeld \"Barcelona 3-bed under 400k\")</li><li>Enable 'Notify me of new matches' (optional)</li><li>Save</li></ol><p>Saved searches verschijnen in sidebar voor quick access.</p><h5>Search alerts</h5><p>Get notified wanneer nieuwe properties match your criteria:</p><ul><li><strong>Email alerts:</strong> Daily digest of new matches</li><li><strong>In-app notifications:</strong> Real-time badge when new property added</li><li><strong>SMS alerts:</strong> For urgent/high-priority searches (optional)</li></ul><p>Configure alert frequency in Settings → Notifications.</p><h5>Sharing saved searches</h5><p>Share search with team members of clients:</p><ul><li>Open saved search</li><li>Click 'Share' button</li><li>Select:<ul><li>Team members (internal sharing)</li><li>Client portal users (for buyers)</li><li>Public link (generate shareable URL)</li></ul></li><li>Recipients zien live results</li></ul><p><strong>Use case:</strong> Share \"Beachfront villas Costa del Sol\" search met international buyer via public link.</p>"
+          "text": "<h5>Creating saved searches</h5><p>Save frequently used search criteria:</p><ol><li>Configure filters (type, location, price, etc.)</li><li>Click 'Save Search' button</li><li>Name search (bijvoorbeeld \"Barcelona 3-bed under 400k\")</li><li>Enable 'nietify me of new matches' (optional)</li><li>Save</li></ol><p>Saved searches verschijnen in sidebar voor quick access.</p><h5>Search alerts</h5><p>Get nietified wanneer nieuwe properties match your criteria:</p><ul><li><strong>Email alerts:</strong> Daily digest of new matches</li><li><strong>In-app nietifications:</strong> Real-time badge when new property added</li><li><strong>SMS alerts:</strong> For urgent/high-priority searches (optional)</li></ul><p>Configure alert frequency in Settings → nietifications.</p><h5>Sharing saved searches</h5><p>Share search with teamlids of clients:</p><ul><li>Open saved search</li><li>Click 'Share' button</li><li>Select:<ul><li>Team members (internal sharing)</li><li>Client portal users (for buyers)</li><li>Public link (generate shareable URL)</li></ul></li><li>Recipients zien live results</li></ul><p><strong>Use case:</strong> Share \"Beachfront villas Costa del Sol\" search met international buyer via public link.</p>"
         },
         "en": {
-          "text": "<h5>Creating saved searches</h5><p>Save frequently used search criteria:</p><ol><li>Configure filters (type, location, price, etc.)</li><li>Click 'Save Search' button</li><li>Name search (e.g., \"Barcelona 3-bed under 400k\")</li><li>Enable 'Notify me of new matches' (optional)</li><li>Save</li></ol><p>Saved searches appear in sidebar for quick access.</p><h5>Search alerts</h5><p>Get notified when new properties match your criteria:</p><ul><li><strong>Email alerts:</strong> Daily digest of new matches</li><li><strong>In-app notifications:</strong> Real-time badge when new property added</li><li><strong>SMS alerts:</strong> For urgent/high-priority searches (optional)</li></ul><p>Configure alert frequency in Settings → Notifications.</p><h5>Sharing saved searches</h5><p>Share search with team members or clients:</p><ul><li>Open saved search</li><li>Click 'Share' button</li><li>Select:<ul><li>Team members (internal sharing)</li><li>Client portal users (for buyers)</li><li>Public link (generate shareable URL)</li></ul></li><li>Recipients see live results</li></ul><p><strong>Use case:</strong> Share \"Beachfront villas Costa del Sol\" search with international buyer via public link.</p>"
+          "text": "<h5>Creating saved searches</h5><p>Save frequently used search criteria:</p><ol><li>Configure filters (type, location, price, etc.)</li><li>Click 'Save Search' button</li><li>Name search (e.g., \"Barcelona 3-bed under 400k\")</li><li>Enable 'nietify me of new matches' (optional)</li><li>Save</li></ol><p>Saved searches appear in sidebar for quick access.</p><h5>Search alerts</h5><p>Get nietified when new properties match your criteria:</p><ul><li><strong>Email alerts:</strong> Daily digest of new matches</li><li><strong>In-app nietifications:</strong> Real-time badge when new property added</li><li><strong>SMS alerts:</strong> For urgent/high-priority searches (optional)</li></ul><p>Configure alert frequency in Settings → nietifications.</p><h5>Sharing saved searches</h5><p>Share search with teamlids or clients:</p><ul><li>Open saved search</li><li>Click 'Share' button</li><li>Select:<ul><li>Team members (internal sharing)</li><li>Client portal users (for buyers)</li><li>Public link (generate shareable URL)</li></ul></li><li>Recipients see live results</li></ul><p><strong>Use case:</strong> Share \"Beachfront villas Costa del Sol\" search with international buyer via public link.</p>"
         },
         "es": {
-          "text": "<h5>Crear búsquedas guardadas</h5><p>Guarda criterios de búsqueda frecuentemente usados:</p><ol><li>Configura filtros (tipo, ubicación, precio, etc.)</li><li>Haz clic en botón 'Guardar Búsqueda'</li><li>Nombra búsqueda (ej., \"Barcelona 3-dorm menos de 400k\")</li><li>Activa 'Notifícame de nuevos matches' (opcional)</li><li>Guardar</li></ol><p>Las búsquedas guardadas aparecen en la barra lateral para acceso rápido.</p><h5>Alertas de búsqueda</h5><p>Recibe notificaciones cuando propiedades nuevas hacen match con tus criterios:</p><ul><li><strong>Alertas por email:</strong> Resumen diario de nuevos matches</li><li><strong>Notificaciones en la app:</strong> Insignia en tiempo real cuando se añade nueva propiedad</li><li><strong>Alertas SMS:</strong> Para búsquedas urgentes/alta prioridad (opcional)</li></ul><p>Configura frecuencia de alertas en Configuración → Notificaciones.</p><h5>Compartir búsquedas guardadas</h5><p>Comparte búsqueda con miembros del equipo o clientes:</p><ul><li>Abre búsqueda guardada</li><li>Haz clic en botón 'Compartir'</li><li>Selecciona:<ul><li>Miembros del equipo (compartir interno)</li><li>Usuarios del portal de clientes (para compradores)</li><li>Enlace público (genera URL compartible)</li></ul></li><li>Los destinatarios ven resultados en vivo</li></ul><p><strong>Caso de uso:</strong> Comparte búsqueda \"Villas frente a la playa Costa del Sol\" con comprador internacional vía enlace público.</p>"
+          "text": "<h5>Crear búsquedas guardadas</h5><p>Guarda criterios de búsqueda frecuentemente usados:</p><ol><li>Configura filtros (tipo, ubicación, precio, etc.)</li><li>Haz clic en botón 'Guardar Búsqueda'</li><li>Nombra búsqueda (ej., \"Barcelona 3-dorm menos de 400k\")</li><li>Activa 'nietifícame de nuevos matches' (opcional)</li><li>Guardar</li></ol><p>Las búsquedas guardadas aparecen en la barra lateral para acceso rápido.</p><h5>Alertas de búsqueda</h5><p>Recibe nietificaciones cuando propiedades nuevas hacen match con tus criterios:</p><ul><li><strong>Alertas por email:</strong> Resumen diario de nuevos matches</li><li><strong>nietificaciones en la app:</strong> Insignia en tiempo real cuando se añade nueva propiedad</li><li><strong>Alertas SMS:</strong> Para búsquedas urgentes/alta prioridad (opcional)</li></ul><p>Configura frecuencia de alertas en Configuración → nietificaciones.</p><h5>Compartir búsquedas guardadas</h5><p>Comparte búsqueda con miembros del equipo o clientes:</p><ul><li>Abre búsqueda guardada</li><li>Haz clic en botón 'Compartir'</li><li>Selecciona:<ul><li>Miembros del equipo (compartir interno)</li><li>Usuarios del portal de clientes (para compradores)</li><li>Enlace público (genera URL compartible)</li></ul></li><li>Los destinatarios ven resultados en vivo</li></ul><p><strong>Caso de uso:</strong> Comparte búsqueda \"Villas frente a la playa Costa del Sol\" con comprador internacional vía enlace público.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "map-search-export",
@@ -139,7 +144,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "search-tips",
@@ -162,14 +166,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "property-ai-matching",
     "property-client-portal",
     "adding-properties-guide"
   ],
-
   "faq": [
     {
       "question": {

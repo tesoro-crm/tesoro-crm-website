@@ -5,9 +5,16 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "intermediate",
-    "tags": ["calendar", "ical", "export", "integration", "sync", "outlook"],
+    "tags": [
+      "calendar",
+      "ical",
+      "export",
+      "integration",
+      "sync",
+      "outlook"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
@@ -15,7 +22,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=630&fit=crop",
-    "keywords": ["ical export", "calendar integration", "outlook sync", "apple calendar", "calendar feed", "tesoro export"]
+    "keywords": [
+      "ical export",
+      "calendar integration",
+      "outlook sync",
+      "apple calendar",
+      "calendar feed",
+      "tesoro export"
+    ]
   },
   "hero": {
     "title": {
@@ -36,13 +50,13 @@
       "id": "intro",
       "content": {
         "nl": "Hoewel Tesoro een krachtig ingebouwd kalendersysteem heeft, begrijpen we dat je mogelijk je afspraken wilt zien in je favoriete kalender app. Of je nu Outlook gebruikt voor zakelijke integratie, Apple Calendar voor je iPhone, of een andere kalender app, Tesoro maakt het eenvoudig om je agenda te synchroniseren via standaard iCal formaten. Deze gids laat je zien hoe je je Tesoro kalender exporteert en synchroniseert met externe systemen.",
-        "en": "While Tesoro has a powerful built-in calendar system, we understand you may want to see your appointments in your favorite calendar app. Whether you use Outlook for business integration, Apple Calendar for your iPhone, or another calendar app, Tesoro makes it easy to sync your schedule via standard iCal formats. This guide will show you how to export and sync your Tesoro calendar with external systems.",
+        "en": "While Tesoro has a powerful built-in calendar system, we understand you may want to see your appointments in your favorite calendar app. Whether you use Outlook for business integration, Apple Calendar for your iPhone, or aniether calendar app, Tesoro makes it easy to sync your schedule via standard iCal formats. This guide will show you how to export and sync your Tesoro calendar with external systems.",
         "es": "Aunque Tesoro tiene un poderoso sistema de calendario incorporado, entendemos que es posible que quieras ver tus citas en tu aplicación de calendario favorita. Ya sea que uses Outlook para integración empresarial, Apple Calendar para tu iPhone u otra aplicación de calendario, Tesoro facilita sincronizar tu agenda mediante formatos iCal estándar. Esta guía te mostrará cómo exportar y sincronizar tu calendario de Tesoro con sistemas externos."
       }
     },
     {
       "type": "callout",
-      "id": "google-note",
+      "id": "google-niete",
       "variant": "info",
       "title": {
         "nl": "Google Agenda gebruikers",
@@ -259,8 +273,8 @@
           },
           "description": {
             "nl": "De feed bevat: evenementtitel, datum en tijd, locatie (adres), beschrijving (aangepast op basis van je privacy instellingen), deelnemerslijst (optioneel). Niet gesynchroniseerd: privé notities, interne tags, gekoppelde deals/contacten (tenzij je kiest om deze te delen), bijlagen.",
-            "en": "The feed contains: event title, date and time, location (address), description (adjusted based on your privacy settings), attendee list (optional). Not synced: private notes, internal tags, linked deals/contacts (unless you choose to share them), attachments.",
-            "es": "El feed contiene: título del evento, fecha y hora, ubicación (dirección), descripción (ajustada según tu configuración de privacidad), lista de asistentes (opcional). No sincronizado: notas privadas, etiquetas internas, negocios/contactos vinculados (a menos que elijas compartirlos), adjuntos."
+            "en": "The feed contains: event title, date and time, location (address), description (adjusted based on your privacy settings), attendee list (optional). niet synced: private notes, internal tags, linked deals/contacts (unless you choose to share them), attachments.",
+            "es": "El feed contiene: título del evento, fecha y hora, ubicación (dirección), descripción (ajustada según tu configuración de privacidad), lista de asistentes (opcional). No sincronizado: nietas privadas, etiquetas internas, negocios/contactos vinculados (a menos que elijas compartirlos), adjuntos."
           }
         },
         {
@@ -300,7 +314,7 @@
       },
       "content": {
         "nl": "Als je feed niet synchroniseert: Controleer of de feed URL correct is (kopieer opnieuw vanuit Tesoro), Forceer handmatige verversing in je kalender app, Controleer je internetverbinding, Wacht minimaal 1 uur (sommige apps hebben vertraging), Als niks werkt: verwijder het abonnement en voeg opnieuw toe. Voor persistente problemen, genereer een nieuwe feed URL.",
-        "en": "If your feed isn't syncing: Check if the feed URL is correct (copy again from Tesoro), Force manual refresh in your calendar app, Check your internet connection, Wait at least 1 hour (some apps have delay), If nothing works: remove the subscription and add again. For persistent issues, generate a new feed URL.",
+        "en": "If your feed isn't syncing: Check if the feed URL is correct (copy again from Tesoro), Force manual refresh in your calendar app, Check your internet connection, Wait at least 1 hour (some apps have delay), If niething works: remove the subscription and add again. For persistent issues, generate a new feed URL.",
         "es": "Si tu feed no se sincroniza: Verifica si la URL del feed es correcta (copia nuevamente desde Tesoro), Fuerza actualización manual en tu aplicación de calendario, Verifica tu conexión a internet, Espera al menos 1 hora (algunas aplicaciones tienen retraso), Si nada funciona: elimina la suscripción y agrégala nuevamente. Para problemas persistentes, genera una nueva URL de feed."
       }
     },
@@ -418,8 +432,8 @@
           },
           "answer": {
             "nl": "De synchronisatiesnelheid wordt bepaald door je externe kalender app, niet door Tesoro. In de meeste apps kun je de vernieuwingsfrequentie aanpassen: in Outlook rechtsklik je op de geïmporteerde kalender > Eigenschappen > Vernieuwingsinterval. In Apple Calendar klik je op de kalender > Bewerken > Vernieuwing. Stel in op 'elk uur' of '15 minuten' voor snellere updates. Let op: frequentere synchronisatie gebruikt meer batterij op mobiele apparaten.",
-            "en": "Sync speed is determined by your external calendar app, not by Tesoro. In most apps, you can adjust the refresh frequency: in Outlook, right-click the imported calendar > Properties > Refresh interval. In Apple Calendar, click the calendar > Edit > Refresh. Set to 'every hour' or '15 minutes' for faster updates. Note: more frequent sync uses more battery on mobile devices.",
-            "es": "La velocidad de sincronización está determinada por tu aplicación de calendario externa, no por Tesoro. En la mayoría de las aplicaciones, puedes ajustar la frecuencia de actualización: en Outlook, haz clic derecho en el calendario importado > Propiedades > Intervalo de actualización. En Apple Calendar, haz clic en el calendario > Editar > Actualizar. Configura en 'cada hora' o '15 minutos' para actualizaciones más rápidas. Nota: la sincronización más frecuente usa más batería en dispositivos móviles."
+            "en": "Sync speed is determined by your external calendar app, niet by Tesoro. In most apps, you can adjust the refresh frequency: in Outlook, right-click the imported calendar > Properties > Refresh interval. In Apple Calendar, click the calendar > Edit > Refresh. Set to 'every hour' or '15 minutes' for faster updates. niete: more frequent sync uses more battery on mobile devices.",
+            "es": "La velocidad de sincronización está determinada por tu aplicación de calendario externa, no por Tesoro. En la mayoría de las aplicaciones, puedes ajustar la frecuencia de actualización: en Outlook, haz clic derecho en el calendario importado > Propiedades > Intervalo de actualización. En Apple Calendar, haz clic en el calendario > Editar > Actualizar. Configura en 'cada hora' o '15 minutos' para actualizaciones más rápidas. nieta: la sincronización más frecuente usa más batería en dispositivos móviles."
           }
         }
       ]

@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "communication",
     "difficulty": "beginner",
-    "tags": ["email", "templates", "productivity", "automation", "communication"],
+    "tags": [
+      "email",
+      "templates",
+      "productivity",
+      "automation",
+      "communication"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["email templates crm", "email automation", "personalized email templates", "crm email shortcuts", "tesoro templates"]
+    "keywords": [
+      "email templates crm",
+      "email automation",
+      "personalized email templates",
+      "crm email shortcuts",
+      "tesoro templates"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Email templates: Sneller reageren met herbruikbare inhoud",
@@ -32,7 +42,6 @@
     },
     "icon": "draft"
   },
-
   "sections": [
     {
       "type": "text",
@@ -54,7 +63,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "creating-email-templates",
@@ -75,7 +83,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "using-email-templates",
@@ -96,7 +103,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "template-best-practices",
@@ -111,14 +117,13 @@
           "text": "<ul><li><strong>Houd het persoonlijk:</strong> Gebruik voornaam en context variabelen</li><li><strong>Korte onderwerpregel:</strong> Max 60 karakters</li><li><strong>Duidelijke call-to-action:</strong> Wat moet klant doen?</li><li><strong>Mobiel-vriendelijk:</strong> Test hoe email eruit ziet op telefoon</li><li><strong>Voeg handtekening toe:</strong> Gebruik {{agent}} variabelen</li><li><strong>A/B test:</strong> Maak varianten en meet response rates</li><li><strong>Update regelmatig:</strong> Verouderde templates verwijderen</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Keep it personal:</strong> Use first name and context variables</li><li><strong>Short subject line:</strong> Max 60 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Mobile-friendly:</strong> Test how email looks on phone</li><li><strong>Add signature:</strong> Use {{agent}} variables</li><li><strong>A/B test:</strong> Create variants and measure response rates</li><li><strong>Update regularly:</strong> Remove outdated templates</li></ul>"
+          "text": "<ul><li><strong>Keep it personal:</strong> Use first name and context variables</li><li><strong>Short subject line:</strong> Max 60 characters</li><li><strong>Clear call-to-action:</strong> What should customer do?</li><li><strong>Mobile-friendly:</strong> Test how email looks on phone</li><li><strong>Add signature:</strong> Use {{agent}} variables</li><li><strong>A/B test:</strong> Create variants and measure response rates</li><li><strong>Update regelmatig:</strong> Remove outdated templates</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Manténlo personal:</strong> Usa nombre y variables de contexto</li><li><strong>Línea de asunto corta:</strong> Máx. 60 caracteres</li><li><strong>Llamado a la acción claro:</strong> ¿Qué debe hacer el cliente?</li><li><strong>Amigable para móvil:</strong> Prueba cómo se ve el email en teléfono</li><li><strong>Agrega firma:</strong> Usa variables {{agent}}</li><li><strong>Prueba A/B:</strong> Crea variantes y mide tasas de respuesta</li><li><strong>Actualiza regularmente:</strong> Elimina plantillas desactualizadas</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "managing-templates",
@@ -132,22 +137,20 @@
           "text": "<h3>Template Bibliotheek</h3><p>Organiseer templates voor overzicht:</p><ul><li><strong>Categorieën:</strong> Lead, Property, Deal, Follow-up, General</li><li><strong>Tags:</strong> Voeg labels toe voor filtering (bijv. \"urgent\", \"introductie\")</li><li><strong>Favorieten:</strong> Ster je meest gebruikte templates</li><li><strong>Zoeken:</strong> Zoek op naam of inhoud</li></ul><h3>Template Statistieken</h3><p>Tesoro houdt bij:</p><ul><li><strong>Usage count:</strong> Hoe vaak is template gebruikt</li><li><strong>Open rate:</strong> % van ontvangers die email opent</li><li><strong>Click rate:</strong> % die op links klikt</li><li><strong>Response rate:</strong> % die reageert</li><li><strong>Last used:</strong> Wanneer laatst gebruikt</li></ul><h3>Templates Dupliceren</h3><ol><li>Open template in bibliotheek</li><li>Klik <strong>Duplicate</strong></li><li>Nieuwe kopie wordt gemaakt</li><li>Pas aan voor andere use case</li></ol><h3>Templates Delen met Team</h3><p>Voor team collaboratie:</p><ul><li><strong>Shared templates:</strong> Zichtbaar voor hele team</li><li><strong>Personal templates:</strong> Alleen jij ziet ze</li><li>Klik <strong>Share with team</strong> om te delen</li><li>Team members kunnen gebruiken maar niet wijzigen</li></ul><h3>Templates Verwijderen</h3><ol><li>Open template</li><li>Klik <strong>...</strong> menu</li><li>Selecteer <strong>Delete</strong></li><li>Bevestig met <strong>\"Yes, delete\"</strong></li></ol><p><strong>Let op:</strong> Verzonden emails met deze template blijven behouden.</p>"
         },
         "en": {
-          "text": "<h3>Template Library</h3><p>Organize templates for overview:</p><ul><li><strong>Categories:</strong> Lead, Property, Deal, Follow-up, General</li><li><strong>Tags:</strong> Add labels for filtering (e.g., \"urgent\", \"introduction\")</li><li><strong>Favorites:</strong> Star your most used templates</li><li><strong>Search:</strong> Search by name or content</li></ul><h3>Template Statistics</h3><p>Tesoro tracks:</p><ul><li><strong>Usage count:</strong> How often template is used</li><li><strong>Open rate:</strong> % of recipients who open email</li><li><strong>Click rate:</strong> % who click on links</li><li><strong>Response rate:</strong> % who respond</li><li><strong>Last used:</strong> When last used</li></ul><h3>Duplicate Templates</h3><ol><li>Open template in library</li><li>Click <strong>Duplicate</strong></li><li>New copy is created</li><li>Adjust for other use case</li></ol><h3>Share Templates with Team</h3><p>For team collaboration:</p><ul><li><strong>Shared templates:</strong> Visible to entire team</li><li><strong>Personal templates:</strong> Only you see them</li><li>Click <strong>Share with team</strong> to share</li><li>Team members can use but not modify</li></ul><h3>Delete Templates</h3><ol><li>Open template</li><li>Click <strong>...</strong> menu</li><li>Select <strong>Delete</strong></li><li>Confirm with <strong>\"Yes, delete\"</strong></li></ol><p><strong>Note:</strong> Sent emails with this template are preserved.</p>"
+          "text": "<h3>Template Library</h3><p>Organize templates for overview:</p><ul><li><strong>Categories:</strong> Lead, Property, Deal, Follow-up, General</li><li><strong>Tags:</strong> Add labels for filtering (e.g., \"urgent\", \"introduction\")</li><li><strong>Favorites:</strong> Star your most used templates</li><li><strong>Search:</strong> Search by name or content</li></ul><h3>Template Statistics</h3><p>Tesoro tracks:</p><ul><li><strong>Usage count:</strong> How often template is used</li><li><strong>Open rate:</strong> % of recipients who open email</li><li><strong>Click rate:</strong> % who click on links</li><li><strong>Response rate:</strong> % who respond</li><li><strong>Last used:</strong> When last used</li></ul><h3>Duplicate Templates</h3><ol><li>Open template in library</li><li>Click <strong>Duplicate</strong></li><li>New copy is created</li><li>Adjust for other use case</li></ol><h3>Share Templates with Team</h3><p>For team collaboration:</p><ul><li><strong>Shared templates:</strong> Visible to entire team</li><li><strong>Personal templates:</strong> Only you see them</li><li>Click <strong>Share with team</strong> to share</li><li>Team members can use but niet modify</li></ul><h3>Delete Templates</h3><ol><li>Open template</li><li>Click <strong>...</strong> menu</li><li>Select <strong>Delete</strong></li><li>Confirm with <strong>\"Yes, delete\"</strong></li></ol><p><strong>niete:</strong> Sent emails with this template are preserved.</p>"
         },
         "es": {
-          "text": "<h3>Biblioteca de plantillas</h3><p>Organiza plantillas para tener una vista general:</p><ul><li><strong>Categorías:</strong> Lead, Propiedad, Trato, Seguimiento, General</li><li><strong>Etiquetas:</strong> Agrega etiquetas para filtrado (ej., \"urgente\", \"introducción\")</li><li><strong>Favoritos:</strong> Marca con estrella tus plantillas más usadas</li><li><strong>Buscar:</strong> Busca por nombre o contenido</li></ul><h3>Estadísticas de plantilla</h3><p>Tesoro rastrea:</p><ul><li><strong>Conteo de uso:</strong> Con qué frecuencia se usa la plantilla</li><li><strong>Tasa de apertura:</strong> % de destinatarios que abren email</li><li><strong>Tasa de clics:</strong> % que hace clic en enlaces</li><li><strong>Tasa de respuesta:</strong> % que responde</li><li><strong>Último uso:</strong> Cuándo se usó por última vez</li></ul><h3>Duplicar plantillas</h3><ol><li>Abre plantilla en biblioteca</li><li>Haz clic en <strong>Duplicate</strong></li><li>Se crea una nueva copia</li><li>Ajusta para otro caso de uso</li></ol><h3>Compartir plantillas con equipo</h3><p>Para colaboración en equipo:</p><ul><li><strong>Plantillas compartidas:</strong> Visibles para todo el equipo</li><li><strong>Plantillas personales:</strong> Solo tú las ves</li><li>Haz clic en <strong>Share with team</strong> para compartir</li><li>Los miembros del equipo pueden usar pero no modificar</li></ul><h3>Eliminar plantillas</h3><ol><li>Abre plantilla</li><li>Haz clic en el menú <strong>...</strong></li><li>Selecciona <strong>Delete</strong></li><li>Confirma con <strong>\"Yes, delete\"</strong></li></ol><p><strong>Nota:</strong> Los emails enviados con esta plantilla se conservan.</p>"
+          "text": "<h3>Biblioteca de plantillas</h3><p>Organiza plantillas para tener una vista general:</p><ul><li><strong>Categorías:</strong> Lead, Propiedad, Trato, Seguimiento, General</li><li><strong>Etiquetas:</strong> Agrega etiquetas para filtrado (ej., \"urgente\", \"introducción\")</li><li><strong>Favoritos:</strong> Marca con estrella tus plantillas más usadas</li><li><strong>Buscar:</strong> Busca por nombre o contenido</li></ul><h3>Estadísticas de plantilla</h3><p>Tesoro rastrea:</p><ul><li><strong>Conteo de uso:</strong> Con qué frecuencia se usa la plantilla</li><li><strong>Tasa de apertura:</strong> % de destinatarios que abren email</li><li><strong>Tasa de clics:</strong> % que hace clic en enlaces</li><li><strong>Tasa de respuesta:</strong> % que responde</li><li><strong>Último uso:</strong> Cuándo se usó por última vez</li></ul><h3>Duplicar plantillas</h3><ol><li>Abre plantilla en biblioteca</li><li>Haz clic en <strong>Duplicate</strong></li><li>Se crea una nueva copia</li><li>Ajusta para otro caso de uso</li></ol><h3>Compartir plantillas con equipo</h3><p>Para colaboración en equipo:</p><ul><li><strong>Plantillas compartidas:</strong> Visibles para todo el equipo</li><li><strong>Plantillas personales:</strong> Solo tú las ves</li><li>Haz clic en <strong>Share with team</strong> para compartir</li><li>Los miembros del equipo pueden usar pero no modificar</li></ul><h3>Eliminar plantillas</h3><ol><li>Abre plantilla</li><li>Haz clic en el menú <strong>...</strong></li><li>Selecciona <strong>Delete</strong></li><li>Confirma con <strong>\"Yes, delete\"</strong></li></ol><p><strong>nieta:</strong> Los emails enviados con esta plantilla se conservan.</p>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "communication-center-overview",
     "email-integration-setup",
     "automated-follow-ups",
     "communication-templates"
   ],
-
   "faq": [
     {
       "question": {

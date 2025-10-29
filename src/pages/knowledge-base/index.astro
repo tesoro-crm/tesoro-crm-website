@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content';
 import { getLocale, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../types/knowledge-base';
 
+export const prerender = true;
+
 const articles = await getCollection('knowledge-base');
 const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
 
@@ -33,6 +35,18 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
     icon: 'groups',
     priority: 2
   },
+  'deals': {
+    nl: 'Dealmanagement',
+    en: 'Deal Management',
+    es: 'Gestión de deals',
+    description: {
+      nl: 'Pipeline, kansen en conversie',
+      en: 'Pipeline, opportunities and conversion',
+      es: 'Pipeline, oportunidades y conversión'
+    },
+    icon: 'handshake',
+    priority: 3
+  },
   'properties': {
     nl: 'Woningbeheer',
     en: 'Property Management',
@@ -43,7 +57,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Portafolio, media y matching'
     },
     icon: 'home',
-    priority: 3
+    priority: 4
   },
   'projects': {
     nl: 'Projecten',
@@ -55,7 +69,19 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Nueva construcción y desarrollos'
     },
     icon: 'apartment',
-    priority: 4
+    priority: 5
+  },
+  'calendar': {
+    nl: 'Agenda',
+    en: 'Calendar',
+    es: 'Calendario',
+    description: {
+      nl: 'Afspraken, bezichtigingen en planning',
+      en: 'Appointments, viewings and scheduling',
+      es: 'Citas, visitas y planificación'
+    },
+    icon: 'calendar_month',
+    priority: 6
   },
   'communication': {
     nl: 'Communicatie',
@@ -67,7 +93,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Email, SMS, WhatsApp y teléfono'
     },
     icon: 'forum',
-    priority: 5
+    priority: 7
   },
   'integrations': {
     nl: 'Integraties',
@@ -79,7 +105,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Idealista, Fotocasa y más'
     },
     icon: 'hub',
-    priority: 6
+    priority: 8
   },
   'reports': {
     nl: 'Rapportages',
@@ -91,7 +117,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Dashboard, KPIs y analytics'
     },
     icon: 'analytics',
-    priority: 7
+    priority: 9
   },
   'settings': {
     nl: 'Instellingen',
@@ -103,7 +129,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Cuenta, usuarios y seguridad'
     },
     icon: 'settings',
-    priority: 8
+    priority: 10
   },
   'best-practices': {
     nl: 'Best practices',
@@ -115,7 +141,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Consejos de agentes experimentados'
     },
     icon: 'school',
-    priority: 9
+    priority: 11
   },
   'troubleshooting': {
     nl: 'Probleemoplossing',
@@ -127,7 +153,7 @@ const categories: Record<string, { nl: string; en: string; es: string; descripti
       es: 'Resolver problemas comunes'
     },
     icon: 'help',
-    priority: 10
+    priority: 12
   },
 };
 
@@ -200,7 +226,7 @@ const articlesText = locale === 'nl' ? 'artikelen' : locale === 'es' ? 'artícul
 
             return (
               <a
-                href={getLocalizedPath(`/knowledge-base/${cat}`, locale)}
+                href={getLocalizedPath(`/knowledge-base/category/${cat}`, locale)}
                 class="kb-category-card"
                 data-category={cat}
               >

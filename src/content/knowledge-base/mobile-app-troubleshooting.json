@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "troubleshooting",
     "difficulty": "beginner",
-    "tags": ["mobile", "app", "ios", "android", "troubleshooting"],
+    "tags": [
+      "mobile",
+      "app",
+      "ios",
+      "android",
+      "troubleshooting"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro mobile", "mobile app problems", "ios app", "android app", "mobile troubleshooting"]
+    "keywords": [
+      "tesoro mobile",
+      "mobile app problems",
+      "ios app",
+      "android app",
+      "mobile troubleshooting"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Mobile app problemen oplossen",
@@ -32,7 +42,6 @@
     },
     "icon": "phone_iphone"
   },
-
   "sections": [
     {
       "type": "text",
@@ -44,17 +53,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>❌ Probleem: App sync niet met web versie</h4><p><strong>Diagnose:</strong></p><ol><li>Check internet connection (WiFi or mobile data)</li><li>Check last sync time (pull down to refresh)</li><li>Verify logged in same account</li></ol><p><strong>Oplossing:</strong></p><ol><li>Pull down to <strong>force refresh</strong></li><li>Check Settings → Sync → Enable background sync</li><li>Log out + log in again</li><li>Reinstall app (nuclear option)</li></ol><h4>❌ Probleem: App crasht bij openen</h4><p><strong>Oplossingen:</strong></p><ol><li><strong>Force close app:</strong><ul><li>iOS: Swipe up from bottom, swipe app away</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Clear app cache:</strong><ul><li>iOS: Reinstall app (iOS doesn't have cache clear)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Update app:</strong> Check App Store/Play Store for updates</li><li><strong>Restart phone:</strong> Sometimes fixes everything</li></ol><h4>❌ Probleem: Notifications werken niet</h4><p><strong>Check settings:</strong></p><ol><li><strong>iOS:</strong> Settings → Notifications → Tesoro → Allow Notifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → Notifications → ON</li><li><strong>In app:</strong> Profile → Settings → Enable push notifications</li><li><strong>Do Not Disturb:</strong> Check not active</li></ol>"
+          "text": "<h4>❌ Probleem: App sync niet met web versie</h4><p><strong>Diagnose:</strong></p><ol><li>Check internet connection (WiFi or mobile data)</li><li>Check last sync time (pull down to refresh)</li><li>Verify logged in same account</li></ol><p><strong>Oplossing:</strong></p><ol><li>Pull down to <strong>force refresh</strong></li><li>Check Settings → Sync → Enable background sync</li><li>Log out + log in again</li><li>Reinstall app (nuclear option)</li></ol><h4>❌ Probleem: App crasht bij openen</h4><p><strong>Oplossingen:</strong></p><ol><li><strong>Force close app:</strong><ul><li>iOS: Swipe up from bottom, swipe app away</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Wis app cache:</strong><ul><li>iOS: Reinstall app (iOS doesn't have cache clear)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Update app:</strong> Check App Store/Play Store for updates</li><li><strong>Herstart telefoon:</strong> Sometimes fixes everything</li></ol><h4>❌ Probleem: nietifications werken niet</h4><p><strong>Check settings:</strong></p><ol><li><strong>iOS:</strong> Settings → nietifications → Tesoro → Allow nietifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → nietifications → ON</li><li><strong>In app:</strong> Profile → Settings → Enable push nietifications</li><li><strong>Do niet Disturb:</strong> Check niet active</li></ol>"
         },
         "en": {
-          "text": "<h4>❌ Problem: App doesn't sync with web version</h4><p><strong>Diagnosis:</strong></p><ol><li>Check internet connection (WiFi or mobile data)</li><li>Check last sync time (pull down to refresh)</li><li>Verify logged in same account</li></ol><p><strong>Solution:</strong></p><ol><li>Pull down to <strong>force refresh</strong></li><li>Check Settings → Sync → Enable background sync</li><li>Log out + log in again</li><li>Reinstall app (nuclear option)</li></ol><h4>❌ Problem: App crashes when opening</h4><p><strong>Solutions:</strong></p><ol><li><strong>Force close app:</strong><ul><li>iOS: Swipe up from bottom, swipe app away</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Clear app cache:</strong><ul><li>iOS: Reinstall app (iOS doesn't have cache clear)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Update app:</strong> Check App Store/Play Store for updates</li><li><strong>Restart phone:</strong> Sometimes fixes everything</li></ol><h4>❌ Problem: Notifications don't work</h4><p><strong>Check settings:</strong></p><ol><li><strong>iOS:</strong> Settings → Notifications → Tesoro → Allow Notifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → Notifications → ON</li><li><strong>In app:</strong> Profile → Settings → Enable push notifications</li><li><strong>Do Not Disturb:</strong> Check not active</li></ol>"
+          "text": "<h4>❌ Problem: App doesn't sync with web version</h4><p><strong>Diagnosis:</strong></p><ol><li>Check internet connection (WiFi or mobile data)</li><li>Check last sync time (pull down to refresh)</li><li>Verify logged in same account</li></ol><p><strong>Solution:</strong></p><ol><li>Pull down to <strong>force refresh</strong></li><li>Check Settings → Sync → Enable background sync</li><li>Log out + log in again</li><li>Reinstall app (nuclear option)</li></ol><h4>❌ Problem: App crashes when opening</h4><p><strong>Solutions:</strong></p><ol><li><strong>Force close app:</strong><ul><li>iOS: Swipe up from bottom, swipe app away</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Wis app cache:</strong><ul><li>iOS: Reinstall app (iOS doesn't have cache clear)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Update app:</strong> Check App Store/Play Store for updates</li><li><strong>Herstart telefoon:</strong> Sometimes fixes everything</li></ol><h4>❌ Problem: nietifications don't work</h4><p><strong>Check settings:</strong></p><ol><li><strong>iOS:</strong> Settings → nietifications → Tesoro → Allow nietifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → nietifications → ON</li><li><strong>In app:</strong> Profile → Settings → Enable push nietifications</li><li><strong>Do niet Disturb:</strong> Check niet active</li></ol>"
         },
         "es": {
-          "text": "<h4>❌ Problema: La app no sincroniza con versión web</h4><p><strong>Diagnóstico:</strong></p><ol><li>Verifica conexión a internet (WiFi o datos móviles)</li><li>Verifica hora de última sincronización (desliza hacia abajo para refrescar)</li><li>Verifica que iniciaste sesión en misma cuenta</li></ol><p><strong>Solución:</strong></p><ol><li>Desliza hacia abajo para <strong>forzar actualización</strong></li><li>Verifica Settings → Sync → Habilita background sync</li><li>Cierra sesión + vuelve a iniciar</li><li>Reinstala app (opción nuclear)</li></ol><h4>❌ Problema: La app se cierra al abrir</h4><p><strong>Soluciones:</strong></p><ol><li><strong>Forzar cierre de app:</strong><ul><li>iOS: Desliza hacia arriba desde abajo, desliza app fuera</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Borrar caché de app:</strong><ul><li>iOS: Reinstala app (iOS no tiene opción de borrar caché)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Actualizar app:</strong> Verifica App Store/Play Store para actualizaciones</li><li><strong>Reiniciar teléfono:</strong> A veces arregla todo</li></ol><h4>❌ Problema: Las notificaciones no funcionan</h4><p><strong>Verifica configuración:</strong></p><ol><li><strong>iOS:</strong> Settings → Notifications → Tesoro → Allow Notifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → Notifications → ON</li><li><strong>En la app:</strong> Profile → Settings → Habilita push notifications</li><li><strong>Do Not Disturb:</strong> Verifica que no esté activo</li></ol>"
+          "text": "<h4>❌ Problema: La app no sincroniza con versión web</h4><p><strong>Diagnóstico:</strong></p><ol><li>Verifica conexión a internet (WiFi o datos móviles)</li><li>Verifica hora de última sincronización (desliza hacia abajo para refrescar)</li><li>Verifica que iniciaste sesión en misma cuenta</li></ol><p><strong>Solución:</strong></p><ol><li>Desliza hacia abajo para <strong>forzar actualización</strong></li><li>Verifica Settings → Sync → Habilita background sync</li><li>Cierra sesión + vuelve a iniciar</li><li>Reinstala app (opción nuclear)</li></ol><h4>❌ Problema: La app se cierra al abrir</h4><p><strong>Soluciones:</strong></p><ol><li><strong>Forzar cierre de app:</strong><ul><li>iOS: Desliza hacia arriba desde abajo, desliza app fuera</li><li>Android: Settings → Apps → Tesoro → Force Stop</li></ul></li><li><strong>Borrar caché de app:</strong><ul><li>iOS: Reinstala app (iOS no tiene opción de borrar caché)</li><li>Android: Settings → Apps → Tesoro → Clear Cache</li></ul></li><li><strong>Actualizar app:</strong> Verifica App Store/Play Store para actualizaciones</li><li><strong>Reiniciar teléfono:</strong> A veces arregla todo</li></ol><h4>❌ Problema: Las nietificaciones no funcionan</h4><p><strong>Verifica configuración:</strong></p><ol><li><strong>iOS:</strong> Settings → nietifications → Tesoro → Allow nietifications</li><li><strong>Android:</strong> Settings → Apps → Tesoro → nietifications → ON</li><li><strong>En la app:</strong> Profile → Settings → Habilita push nietifications</li><li><strong>Do niet Disturb:</strong> Verifica que no esté activo</li></ol>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "mobile-performance",
@@ -65,17 +73,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>App is slow:</h4><ol><li><strong>Close background apps:</strong> Free up memory</li><li><strong>Clear app cache:</strong> (Android only, iOS needs reinstall)</li><li><strong>Update app:</strong> Latest version is faster</li><li><strong>Restart phone:</strong> Fresh start helps</li><li><strong>Check storage:</strong> Phone needs 1GB+ free space</li></ol><h4>Battery drain:</h4><p>Tesoro uses minimal battery, but if draining:</p><ol><li>Settings → Sync → Disable \"Continuous sync\" (use manual refresh)</li><li>Disable location services for Tesoro (if not needed)</li><li>Enable battery saver mode</li></ol><h4>Mobile data usage:</h4><p>Reduce data usage:</p><ul><li>Settings → Sync → Wi-Fi only</li><li>Settings → Media → Don't auto-download images</li><li>Limit synced date range (last 30 days instead of all)</li></ul>"
+          "text": "<h4>App is slow:</h4><ol><li><strong>Sluit achtergrond apps:</strong> Maak geheugen vrij</li><li><strong>Wis app cache:</strong> (Android only, iOS needs reinstall)</li><li><strong>Update app:</strong> Laatste versie is sneller</li><li><strong>Herstart telefoon:</strong> Verse start helpt</li><li><strong>Controleer opslag:</strong> Phone needs 1GB+ free space</li></ol><h4>Battery drain:</h4><p>Tesoro uses minimal battery, but if draining:</p><ol><li>Settings → Sync → Disable \"Continuous sync\" (use manual refresh)</li><li>Disable location services for Tesoro (if niet needed)</li><li>Enable battery saver mode</li></ol><h4>Mobile data usage:</h4><p>Reduce data usage:</p><ul><li>Settings → Sync → Wi-Fi only</li><li>Settings → Media → Don't auto-download images</li><li>Limit synced date range (last 30 days instead of all)</li></ul>"
         },
         "en": {
-          "text": "<h4>App is slow:</h4><ol><li><strong>Close background apps:</strong> Free up memory</li><li><strong>Clear app cache:</strong> (Android only, iOS needs reinstall)</li><li><strong>Update app:</strong> Latest version is faster</li><li><strong>Restart phone:</strong> Fresh start helps</li><li><strong>Check storage:</strong> Phone needs 1GB+ free space</li></ol><h4>Battery drain:</h4><p>Tesoro uses minimal battery, but if draining:</p><ol><li>Settings → Sync → Disable \"Continuous sync\" (use manual refresh)</li><li>Disable location services for Tesoro (if not needed)</li><li>Enable battery saver mode</li></ol><h4>Mobile data usage:</h4><p>Reduce data usage:</p><ul><li>Settings → Sync → Wi-Fi only</li><li>Settings → Media → Don't auto-download images</li><li>Limit synced date range (last 30 days instead of all)</li></ul>"
+          "text": "<h4>App is slow:</h4><ol><li><strong>Sluit achtergrond apps:</strong> Maak geheugen vrij</li><li><strong>Wis app cache:</strong> (Android only, iOS needs reinstall)</li><li><strong>Update app:</strong> Laatste versie is sneller</li><li><strong>Herstart telefoon:</strong> Verse start helpt</li><li><strong>Controleer opslag:</strong> Phone needs 1GB+ free space</li></ol><h4>Battery drain:</h4><p>Tesoro uses minimal battery, but if draining:</p><ol><li>Settings → Sync → Disable \"Continuous sync\" (use manual refresh)</li><li>Disable location services for Tesoro (if niet needed)</li><li>Enable battery saver mode</li></ol><h4>Mobile data usage:</h4><p>Reduce data usage:</p><ul><li>Settings → Sync → Wi-Fi only</li><li>Settings → Media → Don't auto-download images</li><li>Limit synced date range (last 30 days instead of all)</li></ul>"
         },
         "es": {
           "text": "<h4>La app es lenta:</h4><ol><li><strong>Cierra apps en segundo plano:</strong> Libera memoria</li><li><strong>Borra caché de app:</strong> (Solo Android, iOS necesita reinstalación)</li><li><strong>Actualiza app:</strong> La última versión es más rápida</li><li><strong>Reinicia teléfono:</strong> Un inicio fresco ayuda</li><li><strong>Verifica almacenamiento:</strong> El teléfono necesita 1GB+ de espacio libre</li></ol><h4>Agotamiento de batería:</h4><p>Tesoro usa batería mínima, pero si se agota:</p><ol><li>Settings → Sync → Desactiva \"Continuous sync\" (usa refresh manual)</li><li>Desactiva servicios de ubicación para Tesoro (si no se necesita)</li><li>Habilita modo de ahorro de batería</li></ol><h4>Uso de datos móviles:</h4><p>Reduce uso de datos:</p><ul><li>Settings → Sync → Solo Wi-Fi</li><li>Settings → Media → No descargar imágenes automáticamente</li><li>Limita rango de fecha sincronizado (últimos 30 días en lugar de todos)</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "mobile-vs-web",
@@ -87,24 +94,22 @@
       },
       "content": {
         "nl": {
-          "text": "<p><strong>Mobile app best voor:</strong></p><ul><li>Quick data entry (on the go)</li><li>Viewing contacts/properties</li><li>Making calls</li><li>Push notifications</li><li>Offline access (limited)</li></ul><p><strong>Web versie best voor:</strong></p><ul><li>Complex workflows (deals, campaigns)</li><li>Bulk operations</li><li>Reports en analytics</li><li>Settings en configuration</li><li>Email campaigns</li></ul>"
+          "text": "<p><strong>Mobile app best voor:</strong></p><ul><li>Quick data entry (on the go)</li><li>Viewing contacts/properties</li><li>Making calls</li><li>Push nietifications</li><li>Offline access (limited)</li></ul><p><strong>Web versie best voor:</strong></p><ul><li>Complex workflows (deals, campaigns)</li><li>Bulk operations</li><li>Reports en analytics</li><li>Settings en configuration</li><li>Email campaigns</li></ul>"
         },
         "en": {
-          "text": "<p><strong>Mobile app best for:</strong></p><ul><li>Quick data entry (on the go)</li><li>Viewing contacts/properties</li><li>Making calls</li><li>Push notifications</li><li>Offline access (limited)</li></ul><p><strong>Web version best for:</strong></p><ul><li>Complex workflows (deals, campaigns)</li><li>Bulk operations</li><li>Reports and analytics</li><li>Settings and configuration</li><li>Email campaigns</li></ul>"
+          "text": "<p><strong>Mobile app best for:</strong></p><ul><li>Quick data entry (on the go)</li><li>Viewing contacts/properties</li><li>Making calls</li><li>Push nietifications</li><li>Offline access (limited)</li></ul><p><strong>Web version best for:</strong></p><ul><li>Complex workflows (deals, campaigns)</li><li>Bulk operations</li><li>Reports and analytics</li><li>Settings and configuration</li><li>Email campaigns</li></ul>"
         },
         "es": {
-          "text": "<p><strong>App móvil mejor para:</strong></p><ul><li>Entrada rápida de datos (en movimiento)</li><li>Ver contactos/propiedades</li><li>Hacer llamadas</li><li>Notificaciones push</li><li>Acceso offline (limitado)</li></ul><p><strong>Versión web mejor para:</strong></p><ul><li>Flujos de trabajo complejos (deals, campañas)</li><li>Operaciones masivas</li><li>Reportes y analíticas</li><li>Configuración y ajustes</li><li>Campañas de email</li></ul>"
+          "text": "<p><strong>App móvil mejor para:</strong></p><ul><li>Entrada rápida de datos (en movimiento)</li><li>Ver contactos/propiedades</li><li>Hacer llamadas</li><li>nietificaciones push</li><li>Acceso offline (limitado)</li></ul><p><strong>Versión web mejor para:</strong></p><ul><li>Flujos de trabajo complejos (deals, campañas)</li><li>Operaciones masivas</li><li>Reportes y analíticas</li><li>Configuración y ajustes</li><li>Campañas de email</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "tesoro-on-mobile",
     "common-issues-solutions",
     "performance-optimization-tips"
   ],
-
   "faq": [
     {
       "question": {

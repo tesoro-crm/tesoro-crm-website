@@ -7,18 +7,29 @@
     "authorId": "elena-rodriguez",
     "category": "communication",
     "difficulty": "beginner",
-    "tags": ["communication", "inbox", "email", "sms", "whatsapp", "calls"],
+    "tags": [
+      "communication",
+      "inbox",
+      "email",
+      "sms",
+      "whatsapp",
+      "calls"
+    ],
     "featured": true,
     "readingTime": 5,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["communication center tesoro", "unified inbox", "crm communication", "email sms whatsapp", "contact communication"]
+    "keywords": [
+      "communication center tesoro",
+      "unified inbox",
+      "crm communication",
+      "email sms whatsapp",
+      "contact communication"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Communicatiecentrum: Alle kanalen op één plek",
@@ -32,7 +43,6 @@
     },
     "icon": "forum"
   },
-
   "sections": [
     {
       "type": "text",
@@ -50,11 +60,10 @@
           "text": "<p>The Communication Center is your central hub for all customer communication in Tesoro CRM. Instead of switching between Gmail, WhatsApp, SMS and your phone, you see all conversations in one place.</p><h3>Supported Channels</h3><ul><li><strong>Email:</strong> Gmail and Outlook via OAuth</li><li><strong>SMS:</strong> Via Twilio integration</li><li><strong>WhatsApp:</strong> WhatsApp Business API</li><li><strong>Phone:</strong> Call history and notes</li></ul><h3>Key Benefits</h3><ul><li>All communication automatically linked to contact</li><li>Complete conversation history per customer</li><li>No missed messages or follow-ups</li><li>Context of all interactions in one view</li><li>Respond faster to customers</li></ul>"
         },
         "es": {
-          "text": "<p>El Centro de Comunicación es tu hub central para toda la comunicación con clientes en Tesoro CRM. En lugar de cambiar entre Gmail, WhatsApp, SMS y tu teléfono, ves todas las conversaciones en un solo lugar.</p><h3>Canales soportados</h3><ul><li><strong>Email:</strong> Gmail y Outlook vía OAuth</li><li><strong>SMS:</strong> Vía integración con Twilio</li><li><strong>WhatsApp:</strong> WhatsApp Business API</li><li><strong>Teléfono:</strong> Historial de llamadas y notas</li></ul><h3>Beneficios clave</h3><ul><li>Toda la comunicación automáticamente vinculada al contacto</li><li>Historial completo de conversación por cliente</li><li>Sin mensajes perdidos ni seguimientos olvidados</li><li>Contexto de todas las interacciones en una vista</li><li>Responde más rápido a los clientes</li></ul>"
+          "text": "<p>El Centro de Comunicación es tu hub central para toda la comunicación con clientes en Tesoro CRM. En lugar de cambiar entre Gmail, WhatsApp, SMS y tu teléfono, ves todas las conversaciones en un solo lugar.</p><h3>Canales soportados</h3><ul><li><strong>Email:</strong> Gmail y Outlook vía OAuth</li><li><strong>SMS:</strong> Vía integración con Twilio</li><li><strong>WhatsApp:</strong> WhatsApp Business API</li><li><strong>Teléfono:</strong> Historial de llamadas y nietas</li></ul><h3>Beneficios clave</h3><ul><li>Toda la comunicación automáticamente vinculada al contacto</li><li>Historial completo de conversación por cliente</li><li>Sin mensajes perdidos ni seguimientos olvidados</li><li>Contexto de todas las interacciones en una vista</li><li>Responde más rápido a los clientes</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "accessing-communication-center",
@@ -75,7 +84,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "unified-conversation-view",
@@ -86,17 +94,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Alle Kanalen in Één Thread</h3><p>Wanneer je een contact opent, zie je alle communicatie chronologisch:</p><ul><li><strong>Emails:</strong> Volledig met onderwerp en inhoud</li><li><strong>SMS:</strong> Tekstberichten met timestamp</li><li><strong>WhatsApp:</strong> Berichten inclusief media</li><li><strong>Oproepen:</strong> Duur, richting (inkomend/uitgaand), notities</li></ul><h3>Conversatie Acties</h3><p>Vanuit elke conversatie kun je:</p><ul><li><strong>Reageren:</strong> Kies kanaal (email/SMS/WhatsApp)</li><li><strong>Tag toevoegen:</strong> Label voor categorisatie</li><li><strong>Toewijzen:</strong> Aan teamlid</li><li><strong>Taak maken:</strong> Follow-up reminder</li><li><strong>Deal koppelen:</strong> Link aan verkoopkans</li><li><strong>Notitie toevoegen:</strong> Interne notitie (niet zichtbaar voor klant)</li></ul><h3>Smart Context</h3><p>Tesoro toont automatisch:</p><ul><li>Gekoppelde properties die besproken zijn</li><li>Openstaande deals met dit contact</li><li>Recente activiteiten en interacties</li><li>Contact voorkeuren en tags</li></ul>"
+          "text": "<h3>Alle Kanalen in Één Thread</h3><p>Wanneer je een contact opent, zie je alle communicatie chronologisch:</p><ul><li><strong>Emails:</strong> Volledig met onderwerp en inhoud</li><li><strong>SMS:</strong> Tekstberichten met timestamp</li><li><strong>WhatsApp:</strong> Berichten inclusief media</li><li><strong>Oproepen:</strong> Duur, richting (inkomend/uitgaand), notities</li></ul><h3>Conversatie Acties</h3><p>Vanuit elke conversatie kun je:</p><ul><li><strong>Reageren:</strong> Kies kanaal (email/SMS/WhatsApp)</li><li><strong>Tag toevoegen:</strong> Label voor categorisatie</li><li><strong>Toewijzen:</strong> Aan teamlid</li><li><strong>Taak maken:</strong> Follow-up reminder</li><li><strong>Deal koppelen:</strong> Link aan verkoopkans</li><li><strong>nietitie toevoegen:</strong> Interne nietitie (niet zichtbaar voor klant)</li></ul><h3>Smart Context</h3><p>Tesoro toont automatisch:</p><ul><li>Gekoppelde properties die besproken zijn</li><li>Openstaande deals met dit contact</li><li>Recente activiteiten en interacties</li><li>Contact voorkeuren en tags</li></ul>"
         },
         "en": {
-          "text": "<h3>All Channels in One Thread</h3><p>When you open a contact, you see all communication chronologically:</p><ul><li><strong>Emails:</strong> Complete with subject and content</li><li><strong>SMS:</strong> Text messages with timestamp</li><li><strong>WhatsApp:</strong> Messages including media</li><li><strong>Calls:</strong> Duration, direction (inbound/outbound), notes</li></ul><h3>Conversation Actions</h3><p>From any conversation you can:</p><ul><li><strong>Reply:</strong> Choose channel (email/SMS/WhatsApp)</li><li><strong>Add tag:</strong> Label for categorization</li><li><strong>Assign:</strong> To team member</li><li><strong>Create task:</strong> Follow-up reminder</li><li><strong>Link deal:</strong> Connect to sales opportunity</li><li><strong>Add note:</strong> Internal note (not visible to customer)</li></ul><h3>Smart Context</h3><p>Tesoro automatically shows:</p><ul><li>Linked properties that were discussed</li><li>Open deals with this contact</li><li>Recent activities and interactions</li><li>Contact preferences and tags</li></ul>"
+          "text": "<h3>All Channels in One Thread</h3><p>When you open a contact, you see all communication chronologically:</p><ul><li><strong>Emails:</strong> Complete with subject and content</li><li><strong>SMS:</strong> Text messages with timestamp</li><li><strong>WhatsApp:</strong> Messages including media</li><li><strong>Calls:</strong> Duration, direction (inbound/outbound), notes</li></ul><h3>Conversation Actions</h3><p>From any conversation you can:</p><ul><li><strong>Reply:</strong> Choose channel (email/SMS/WhatsApp)</li><li><strong>Add tag:</strong> Label for categorization</li><li><strong>Assign:</strong> To teamlid</li><li><strong>Create task:</strong> Follow-up reminder</li><li><strong>Link deal:</strong> Connect to sales opportunity</li><li><strong>Add niete:</strong> Internal niete (niet visible to customer)</li></ul><h3>Smart Context</h3><p>Tesoro automatically shows:</p><ul><li>Linked properties that were discussed</li><li>Open deals with this contact</li><li>Recent activities and interactions</li><li>Contact preferences and tags</li></ul>"
         },
         "es": {
-          "text": "<h3>Todos los canales en un hilo</h3><p>Cuando abres un contacto, ves toda la comunicación cronológicamente:</p><ul><li><strong>Emails:</strong> Completos con asunto y contenido</li><li><strong>SMS:</strong> Mensajes de texto con marca de tiempo</li><li><strong>WhatsApp:</strong> Mensajes incluyendo medios</li><li><strong>Llamadas:</strong> Duración, dirección (entrante/saliente), notas</li></ul><h3>Acciones de conversación</h3><p>Desde cualquier conversación puedes:</p><ul><li><strong>Responder:</strong> Elegir canal (email/SMS/WhatsApp)</li><li><strong>Agregar etiqueta:</strong> Etiqueta para categorización</li><li><strong>Asignar:</strong> A miembro del equipo</li><li><strong>Crear tarea:</strong> Recordatorio de seguimiento</li><li><strong>Vincular trato:</strong> Conectar a oportunidad de venta</li><li><strong>Agregar nota:</strong> Nota interna (no visible para el cliente)</li></ul><h3>Contexto inteligente</h3><p>Tesoro muestra automáticamente:</p><ul><li>Propiedades vinculadas que se discutieron</li><li>Tratos abiertos con este contacto</li><li>Actividades e interacciones recientes</li><li>Preferencias y etiquetas del contacto</li></ul>"
+          "text": "<h3>Todos los canales en un hilo</h3><p>Cuando abres un contacto, ves toda la comunicación cronológicamente:</p><ul><li><strong>Emails:</strong> Completos con asunto y contenido</li><li><strong>SMS:</strong> Mensajes de texto con marca de tiempo</li><li><strong>WhatsApp:</strong> Mensajes incluyendo medios</li><li><strong>Llamadas:</strong> Duración, dirección (entrante/saliente), nietas</li></ul><h3>Acciones de conversación</h3><p>Desde cualquier conversación puedes:</p><ul><li><strong>Responder:</strong> Elegir canal (email/SMS/WhatsApp)</li><li><strong>Agregar etiqueta:</strong> Etiqueta para categorización</li><li><strong>Asignar:</strong> A miembro del equipo</li><li><strong>Crear tarea:</strong> Recordatorio de seguimiento</li><li><strong>Vincular trato:</strong> Conectar a oportunidad de venta</li><li><strong>Agregar nieta:</strong> nieta interna (no visible para el cliente)</li></ul><h3>Contexto inteligente</h3><p>Tesoro muestra automáticamente:</p><ul><li>Propiedades vinculadas que se discutieron</li><li>Tratos abiertos con este contacto</li><li>Actividades e interacciones recientes</li><li>Preferencias y etiquetas del contacto</li></ul>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "communication-best-practices",
@@ -111,43 +118,40 @@
           "text": "<ul><li><strong>Check je inbox dagelijks:</strong> Mis geen belangrijke berichten</li><li><strong>Wijs conversaties toe:</strong> Duidelijke verantwoordelijkheid</li><li><strong>Tag voor prioriteit:</strong> \"Hot Lead\", \"Urgent\", \"Follow-up\"</li><li><strong>Gebruik templates:</strong> Snellere responses</li><li><strong>Link aan deals:</strong> Houd context bij verkoopproces</li><li><strong>Voeg notities toe:</strong> Context voor teamleden</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Check your inbox daily:</strong> Don't miss important messages</li><li><strong>Assign conversations:</strong> Clear responsibility</li><li><strong>Tag for priority:</strong> \"Hot Lead\", \"Urgent\", \"Follow-up\"</li><li><strong>Use templates:</strong> Faster responses</li><li><strong>Link to deals:</strong> Maintain context with sales process</li><li><strong>Add notes:</strong> Context for team members</li></ul>"
+          "text": "<ul><li><strong>Check your inbox daily:</strong> Don't miss important messages</li><li><strong>Assign conversations:</strong> Clear responsibility</li><li><strong>Tag for priority:</strong> \"Hot Lead\", \"Urgent\", \"Follow-up\"</li><li><strong>Use templates:</strong> Faster responses</li><li><strong>Link to deals:</strong> Maintain context with sales process</li><li><strong>Add notes:</strong> Context for teamlids</li></ul>"
         },
         "es": {
-          "text": "<ul><li><strong>Revisa tu bandeja de entrada diariamente:</strong> No pierdas mensajes importantes</li><li><strong>Asigna conversaciones:</strong> Responsabilidad clara</li><li><strong>Etiqueta por prioridad:</strong> \"Hot Lead\", \"Urgente\", \"Seguimiento\"</li><li><strong>Usa plantillas:</strong> Respuestas más rápidas</li><li><strong>Vincula a tratos:</strong> Mantén el contexto con el proceso de ventas</li><li><strong>Agrega notas:</strong> Contexto para miembros del equipo</li></ul>"
+          "text": "<ul><li><strong>Revisa tu bandeja de entrada diariamente:</strong> No pierdas mensajes importantes</li><li><strong>Asigna conversaciones:</strong> Responsabilidad clara</li><li><strong>Etiqueta por prioridad:</strong> \"Hot Lead\", \"Urgente\", \"Seguimiento\"</li><li><strong>Usa plantillas:</strong> Respuestas más rápidas</li><li><strong>Vincula a tratos:</strong> Mantén el contexto con el proceso de ventas</li><li><strong>Agrega nietas:</strong> Contexto para miembros del equipo</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
-      "id": "communication-notifications",
+      "id": "communication-nietifications",
       "title": {
-        "nl": "Notificaties en Alerts",
-        "en": "Notifications and Alerts",
-        "es": "Notificaciones y alertas"
+        "nl": "nietificaties en Alerts",
+        "en": "nietifications and Alerts",
+        "es": "nietificaciones y alertas"
       },
       "content": {
         "nl": {
-          "text": "<h3>Real-time Notificaties</h3><p>Ontvang alerts voor:</p><ul><li><strong>Nieuw bericht:</strong> Email, SMS, WhatsApp inkomend</li><li><strong>Contact antwoord:</strong> Reactie op jouw bericht</li><li><strong>Gemiste oproep:</strong> Wanneer klant belt</li><li><strong>Toegewezen conversatie:</strong> Teamlid wijst toe</li></ul><h3>Notificatie Instellingen</h3><p>Personaliseer je notificaties:</p><ol><li>Ga naar <strong>Settings > Notifications</strong></li><li>Kies per kanaal:  <ul><li><strong>Desktop push:</strong> Browser notificaties</li><li><strong>Email digest:</strong> Dagelijks overzicht</li><li><strong>Mobile push:</strong> Via Tesoro app</li><li><strong>Uit:</strong> Geen notificaties</li></ul></li><li>Stel <strong>Quiet Hours</strong> in (bijv. 20:00-08:00)</li><li>Klik <strong>Save</strong></li></ol><h3>Notificatie Badge</h3><p>Rode badge toont aantal ongelezen berichten:</p><ul><li>In hoofdmenu bij Communication</li><li>In browser tab titel</li><li>Klik om direct naar inbox te gaan</li></ul>"
+          "text": "<h3>Real-time nietificaties</h3><p>Ontvang alerts voor:</p><ul><li><strong>Nieuw bericht:</strong> Email, SMS, WhatsApp inkomend</li><li><strong>Contact antwoord:</strong> Reactie op jouw bericht</li><li><strong>Gemiste oproep:</strong> Wanneer klant belt</li><li><strong>Toegewezen conversatie:</strong> Teamlid wijst toe</li></ul><h3>nietificatie Instellingen</h3><p>Personaliseer je nietificaties:</p><ol><li>Ga naar <strong>Settings > nietifications</strong></li><li>Kies per kanaal:  <ul><li><strong>Desktop push:</strong> Browser nietificaties</li><li><strong>Email digest:</strong> Dagelijks overzicht</li><li><strong>Mobile push:</strong> Via Tesoro app</li><li><strong>Uit:</strong> Geen nietificaties</li></ul></li><li>Stel <strong>Quiet Hours</strong> in (bijv. 20:00-08:00)</li><li>Klik <strong>Save</strong></li></ol><h3>nietificatie Badge</h3><p>Rode badge toont aantal ongelezen berichten:</p><ul><li>In hoofdmenu bij Communication</li><li>In browser tab titel</li><li>Klik om direct naar inbox te gaan</li></ul>"
         },
         "en": {
-          "text": "<h3>Real-time Notifications</h3><p>Receive alerts for:</p><ul><li><strong>New message:</strong> Email, SMS, WhatsApp incoming</li><li><strong>Contact reply:</strong> Response to your message</li><li><strong>Missed call:</strong> When customer calls</li><li><strong>Assigned conversation:</strong> Team member assigns</li></ul><h3>Notification Settings</h3><p>Personalize your notifications:</p><ol><li>Go to <strong>Settings > Notifications</strong></li><li>Choose per channel:  <ul><li><strong>Desktop push:</strong> Browser notifications</li><li><strong>Email digest:</strong> Daily summary</li><li><strong>Mobile push:</strong> Via Tesoro app</li><li><strong>Off:</strong> No notifications</li></ul></li><li>Set <strong>Quiet Hours</strong> (e.g., 8pm-8am)</li><li>Click <strong>Save</strong></li></ol><h3>Notification Badge</h3><p>Red badge shows number of unread messages:</p><ul><li>In main menu at Communication</li><li>In browser tab title</li><li>Click to go directly to inbox</li></ul>"
+          "text": "<h3>Real-time nietifications</h3><p>Receive alerts for:</p><ul><li><strong>New message:</strong> Email, SMS, WhatsApp incoming</li><li><strong>Contact reply:</strong> Response to your message</li><li><strong>Missed call:</strong> When customer calls</li><li><strong>Assigned conversation:</strong> Team member assigns</li></ul><h3>nietification Settings</h3><p>Personalize your nietifications:</p><ol><li>Go to <strong>Settings > nietifications</strong></li><li>Choose per channel:  <ul><li><strong>Desktop push:</strong> Browser nietifications</li><li><strong>Email digest:</strong> Daily summary</li><li><strong>Mobile push:</strong> Via Tesoro app</li><li><strong>Off:</strong> No nietifications</li></ul></li><li>Set <strong>Quiet Hours</strong> (e.g., 8pm-8am)</li><li>Click <strong>Save</strong></li></ol><h3>nietification Badge</h3><p>Red badge shows number of unread messages:</p><ul><li>In main menu at Communication</li><li>In browser tab title</li><li>Click to go directly to inbox</li></ul>"
         },
         "es": {
-          "text": "<h3>Notificaciones en tiempo real</h3><p>Recibe alertas para:</p><ul><li><strong>Nuevo mensaje:</strong> Email, SMS, WhatsApp entrante</li><li><strong>Respuesta de contacto:</strong> Respuesta a tu mensaje</li><li><strong>Llamada perdida:</strong> Cuando el cliente llama</li><li><strong>Conversación asignada:</strong> Miembro del equipo asigna</li></ul><h3>Configuración de notificaciones</h3><p>Personaliza tus notificaciones:</p><ol><li>Ve a <strong>Settings > Notifications</strong></li><li>Elige por canal:  <ul><li><strong>Push de escritorio:</strong> Notificaciones del navegador</li><li><strong>Resumen por email:</strong> Resumen diario</li><li><strong>Push móvil:</strong> Vía app de Tesoro</li><li><strong>Desactivado:</strong> Sin notificaciones</li></ul></li><li>Configura <strong>Quiet Hours</strong> (ej., 8pm-8am)</li><li>Haz clic en <strong>Save</strong></li></ol><h3>Insignia de notificación</h3><p>Insignia roja muestra número de mensajes no leídos:</p><ul><li>En el menú principal en Communication</li><li>En el título de la pestaña del navegador</li><li>Haz clic para ir directamente a la bandeja de entrada</li></ul>"
+          "text": "<h3>nietificaciones en tiempo real</h3><p>Recibe alertas para:</p><ul><li><strong>Nuevo mensaje:</strong> Email, SMS, WhatsApp entrante</li><li><strong>Respuesta de contacto:</strong> Respuesta a tu mensaje</li><li><strong>Llamada perdida:</strong> Cuando el cliente llama</li><li><strong>Conversación asignada:</strong> Miembro del equipo asigna</li></ul><h3>Configuración de nietificaciones</h3><p>Personaliza tus nietificaciones:</p><ol><li>Ve a <strong>Settings > nietifications</strong></li><li>Elige por canal:  <ul><li><strong>Push de escritorio:</strong> nietificaciones del navegador</li><li><strong>Resumen por email:</strong> Resumen diario</li><li><strong>Push móvil:</strong> Vía app de Tesoro</li><li><strong>Desactivado:</strong> Sin nietificaciones</li></ul></li><li>Configura <strong>Quiet Hours</strong> (ej., 8pm-8am)</li><li>Haz clic en <strong>Save</strong></li></ol><h3>Insignia de nietificación</h3><p>Insignia roja muestra número de mensajes no leídos:</p><ul><li>En el menú principal en Communication</li><li>En el título de la pestaña del navegador</li><li>Haz clic para ir directamente a la bandeja de entrada</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "email-integration-setup",
     "sms-messaging-guide",
     "whatsapp-integration-guide",
     "call-logging-management"
   ],
-
   "faq": [
     {
       "question": {

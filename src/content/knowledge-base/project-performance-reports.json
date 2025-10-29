@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "projects",
     "difficulty": "intermediate",
-    "tags": ["projects", "reports", "analytics", "sales", "performance"],
+    "tags": [
+      "projects",
+      "reports",
+      "analytics",
+      "sales",
+      "performance"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["project reports", "sales analytics", "development performance", "tesoro reporting", "project metrics"]
+    "keywords": [
+      "project reports",
+      "sales analytics",
+      "development performance",
+      "tesoro reporting",
+      "project metrics"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Project performance en sales rapportage",
@@ -32,7 +42,6 @@
     },
     "icon": "analytics"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "dashboard",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "sales-reports",
@@ -81,17 +88,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Unit Type Performance:</h4><p>Zie welke unit types het beste verkopen:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) verkoop het snelst. Penthouses zijn slower maar higher value. Overweeg pricing adjustment voor Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (not released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
+          "text": "<h4>Unit Type Performance:</h4><p>Zie welke unit types het beste verkopen:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) verkoop het snelst. Penthouses zijn slower maar higher value. Overweeg pricing adjustment voor Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (niet released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
         },
         "en": {
-          "text": "<h4>Unit Type Performance:</h4><p>See which unit types sell best:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) sells fastest. Penthouses are slower but higher value. Consider pricing adjustment for Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (not released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
+          "text": "<h4>Unit Type Performance:</h4><p>See which unit types sell best:</p><table><thead><tr><th>Type</th><th>Total</th><th>Sold</th><th>Sell %</th><th>Avg Price</th><th>Days to Sell</th></tr></thead><tbody><tr><td>1BR (Type A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 days</td></tr><tr><td>2BR (Type B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 days</td></tr><tr><td>2BR Deluxe (Type C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 days</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 days</td></tr></tbody></table><p><strong>Insights:</strong> Type A (1BR) sells fastest. Penthouses are slower but higher value. Consider pricing adjustment for Type C.</p><h4>Sales by Building/Phase:</h4><ul><li><strong>Building A:</strong> 16/24 sold (67%) - Best performing</li><li><strong>Building B:</strong> 10/24 sold (42%) - Average</li><li><strong>Building C:</strong> 3/24 sold (13%) - Slow (niet released yet)</li></ul><h4>Sales by Floor:</h4><ul><li>Floors 5-7 sell fastest (premium views)</li><li>Ground floor sells slowest (privacy concerns)</li><li>Top floor (8) sells at premium (+15% vs mid-floors)</li></ul>"
         },
         "es": {
           "text": "<h4>Rendimiento por tipo de unidad:</h4><p>Ve qué tipos de unidad se venden mejor:</p><table><thead><tr><th>Tipo</th><th>Total</th><th>Vendidas</th><th>% Venta</th><th>Precio prom</th><th>Días para vender</th></tr></thead><tbody><tr><td>1BR (Tipo A)</td><td>24</td><td>18</td><td>75%</td><td>€190K</td><td>12 días</td></tr><tr><td>2BR (Tipo B)</td><td>30</td><td>17</td><td>57%</td><td>€265K</td><td>16 días</td></tr><tr><td>2BR Deluxe (Tipo C)</td><td>12</td><td>6</td><td>50%</td><td>€335K</td><td>24 días</td></tr><tr><td>3BR Penthouse</td><td>6</td><td>2</td><td>33%</td><td>€475K</td><td>45 días</td></tr></tbody></table><p><strong>Insights:</strong> Tipo A (1BR) se vende más rápido. Los penthouses son más lentos pero de mayor valor. Considera ajuste de precio para Tipo C.</p><h4>Ventas por edificio/fase:</h4><ul><li><strong>Edificio A:</strong> 16/24 vendidas (67%) - Mejor rendimiento</li><li><strong>Edificio B:</strong> 10/24 vendidas (42%) - Promedio</li><li><strong>Edificio C:</strong> 3/24 vendidas (13%) - Lento (aún no lanzado)</li></ul><h4>Ventas por piso:</h4><ul><li>Pisos 5-7 se venden más rápido (vistas premium)</li><li>Planta baja se vende más lento (preocupaciones de privacidad)</li><li>Piso superior (8) se vende con premium (+15% vs pisos medios)</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "export-reports",
@@ -113,14 +119,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "projects-overview-guide",
     "creating-development-projects",
     "project-progress-tracking",
     "deal-reporting-metrics"
   ],
-
   "faq": [
     {
       "question": {

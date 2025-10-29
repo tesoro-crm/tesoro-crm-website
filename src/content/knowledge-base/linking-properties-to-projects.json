@@ -5,20 +5,30 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "elena-rodriguez",
-    "category": "projects",
+    "category": "properties",
     "difficulty": "intermediate",
-    "tags": ["projects", "properties", "units", "linking", "setup"],
+    "tags": [
+      "projects",
+      "properties",
+      "units",
+      "linking",
+      "setup"
+    ],
     "featured": false,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["link properties", "project units", "apartment linking", "tesoro projects", "development units"]
+    "keywords": [
+      "link properties",
+      "project units",
+      "apartment linking",
+      "tesoro projects",
+      "development units"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Properties linken aan projecten",
@@ -32,7 +42,6 @@
     },
     "icon": "link"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "steps",
       "id": "method-1",
@@ -115,7 +123,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "method-2",
@@ -136,7 +143,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "unit-management",
@@ -147,17 +153,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h4>Unit Status Tracking:</h4><p>Elke unit heeft een status die automatisch update:</p><ul><li><strong>Available:</strong> Ready to sell, geen active deal</li><li><strong>Reserved:</strong> Deal in progress, not yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>On Hold:</strong> Tijdelijk niet beschikbaar (bijv. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In het project dashboard zie je real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>Dit maakt het makkelijk om buyers te helpen de perfecte unit te vinden.</p>"
+          "text": "<h4>Unit Status Tracking:</h4><p>Elke unit heeft een status die automatisch update:</p><ul><li><strong>Available:</strong> Ready to sell, geen active deal</li><li><strong>Reserved:</strong> Deal in progress, niet yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>Wachtend:</strong> Tijdelijk niet beschikbaar (bijv. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In het project dashboard zie je real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>Dit maakt het makkelijk om buyers te helpen de perfecte unit te vinden.</p>"
         },
         "en": {
-          "text": "<h4>Unit Status Tracking:</h4><p>Each unit has a status that automatically updates:</p><ul><li><strong>Available:</strong> Ready to sell, no active deal</li><li><strong>Reserved:</strong> Deal in progress, not yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>On Hold:</strong> Temporarily unavailable (e.g. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In the project dashboard you see real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>This makes it easy to help buyers find the perfect unit.</p>"
+          "text": "<h4>Unit Status Tracking:</h4><p>Each unit has a status that automatically updates:</p><ul><li><strong>Available:</strong> Ready to sell, no active deal</li><li><strong>Reserved:</strong> Deal in progress, niet yet sold</li><li><strong>Sold:</strong> Deal won, contract signed</li><li><strong>Delivered:</strong> Keys handed over to buyer</li><li><strong>Wachtend:</strong> Temporarily unavailable (e.g. quality issues)</li></ul><h4>Project Dashboard View:</h4><p>In the project dashboard you see real-time:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 units/month</li><li><strong>Revenue:</strong> €7.8M / €18M target (43%)</li></ul><h4>Filtering Units:</h4><p>Filter units by:</p><ul><li>Status (show only Available units)</li><li>Type (only 2BR apartments)</li><li>Building/Phase (only Building A)</li><li>Floor (only floors 5-8)</li><li>Price range (€250K - €300K)</li></ul><p>This makes it easy to help buyers find the perfect unit.</p>"
         },
         "es": {
-          "text": "<h4>Seguimiento de estado de unidades:</h4><p>Cada unidad tiene un estado que se actualiza automáticamente:</p><ul><li><strong>Available:</strong> Lista para vender, sin deal activo</li><li><strong>Reserved:</strong> Deal en progreso, aún no vendida</li><li><strong>Sold:</strong> Deal ganado, contrato firmado</li><li><strong>Delivered:</strong> Llaves entregadas al comprador</li><li><strong>On Hold:</strong> Temporalmente no disponible (ej. problemas de calidad)</li></ul><h4>Vista del dashboard del proyecto:</h4><p>En el dashboard del proyecto ves en tiempo real:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 unidades/mes</li><li><strong>Revenue:</strong> €7.8M / €18M objetivo (43%)</li></ul><h4>Filtrar unidades:</h4><p>Filtra unidades por:</p><ul><li>Estado (mostrar solo unidades Available)</li><li>Tipo (solo apartamentos 2BR)</li><li>Edificio/Fase (solo Edificio A)</li><li>Piso (solo pisos 5-8)</li><li>Rango de precio (€250K - €300K)</li></ul><p>Esto hace fácil ayudar a compradores a encontrar la unidad perfecta.</p>"
+          "text": "<h4>Seguimiento de estado de unidades:</h4><p>Cada unidad tiene un estado que se actualiza automáticamente:</p><ul><li><strong>Available:</strong> Lista para vender, sin deal activo</li><li><strong>Reserved:</strong> Deal en progreso, aún no vendida</li><li><strong>Sold:</strong> Deal ganado, contrato firmado</li><li><strong>Delivered:</strong> Llaves entregadas al comprador</li><li><strong>Wachtend:</strong> Temporalmente no disponible (ej. problemas de calidad)</li></ul><h4>Vista del dashboard del proyecto:</h4><p>En el dashboard del proyecto ves en tiempo real:</p><ul><li><strong>Total Units:</strong> 72</li><li><strong>Available:</strong> 28 (39%)</li><li><strong>Reserved:</strong> 15 (21%)</li><li><strong>Sold:</strong> 29 (40%)</li><li><strong>Sales Velocity:</strong> 3.2 unidades/mes</li><li><strong>Revenue:</strong> €7.8M / €18M objetivo (43%)</li></ul><h4>Filtrar unidades:</h4><p>Filtra unidades por:</p><ul><li>Estado (mostrar solo unidades Available)</li><li>Tipo (solo apartamentos 2BR)</li><li>Edificio/Fase (solo Edificio A)</li><li>Piso (solo pisos 5-8)</li><li>Rango de precio (€250K - €300K)</li></ul><p>Esto hace fácil ayudar a compradores a encontrar la unidad perfecta.</p>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -180,14 +185,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "projects-overview-guide",
     "creating-development-projects",
     "project-progress-tracking",
     "adding-properties-guide"
   ],
-
   "faq": [
     {
       "question": {

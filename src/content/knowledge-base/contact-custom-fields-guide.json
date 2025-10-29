@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "intermediate",
-    "tags": ["contacts", "custom-fields", "configuration", "advanced", "organization"],
+    "tags": [
+      "contacts",
+      "custom-fields",
+      "configuration",
+      "advanced",
+      "organization"
+    ],
     "featured": false,
     "readingTime": 6,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["tesoro custom fields", "contact custom fields", "crm customization", "add fields", "custom contact data"]
+    "keywords": [
+      "tesoro custom fields",
+      "contact custom fields",
+      "crm customization",
+      "add fields",
+      "custom contact data"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Aangepaste Velden: Contacten Personaliseren voor je Business",
@@ -32,7 +42,6 @@
     },
     "icon": "tune"
   },
-
   "sections": [
     {
       "type": "text",
@@ -50,11 +59,10 @@
           "text": "<p>Tesoro CRM offers 30+ standard fields for contacts. But every business is unique - maybe you want to track:</p><ul><li>Preferred investment type (luxury, budget, commercial)</li><li>Language preference (English, Spanish, Dutch)</li><li>Referral source details</li><li>Client lifetime value</li><li>VIP status level</li><li>Special requests or preferences</li></ul><p>Custom fields let you store this information in a structured way without using notes.</p><h3>Benefits of Custom Fields</h3><ul><li><strong>Better organization:</strong> Fixed fields instead of free-text notes</li><li><strong>Filtering & segmentation:</strong> Search and filter on custom field values</li><li><strong>Reporting:</strong> Generate reports based on custom data</li><li><strong>Workflow automation:</strong> Trigger actions on custom field values</li><li><strong>API integration:</strong> Sync custom fields with other systems</li></ul>"
         },
         "es": {
-          "text": "<p>Tesoro CRM ofrece más de 30 campos estándar para contactos. Pero cada negocio es único - tal vez quieras seguir:</p><ul><li>Tipo de inversión preferido (lujo, presupuesto, comercial)</li><li>Preferencia de idioma (inglés, español, holandés)</li><li>Detalles de fuente de referencia</li><li>Valor de vida del cliente</li><li>Nivel de estado VIP</li><li>Solicitudes o preferencias especiales</li></ul><p>Los campos personalizados te permiten almacenar esta información de manera estructurada sin usar notas.</p><h3>Beneficios de los Campos Personalizados</h3><ul><li><strong>Mejor organización:</strong> Campos fijos en lugar de notas de texto libre</li><li><strong>Filtrado y segmentación:</strong> Buscar y filtrar por valores de campo personalizado</li><li><strong>Reportes:</strong> Generar informes basados en datos personalizados</li><li><strong>Automatización de flujo de trabajo:</strong> Activar acciones en valores de campo personalizado</li><li><strong>Integración API:</strong> Sincronizar campos personalizados con otros sistemas</li></ul>"
+          "text": "<p>Tesoro CRM ofrece más de 30 campos estándar para contactos. Pero cada negocio es único - tal vez quieras seguir:</p><ul><li>Tipo de inversión preferido (lujo, presupuesto, comercial)</li><li>Preferencia de idioma (inglés, español, holandés)</li><li>Detalles de fuente de referencia</li><li>Valor de vida del cliente</li><li>Nivel de estado VIP</li><li>Solicitudes o preferencias especiales</li></ul><p>Los campos personalizados te permiten almacenar esta información de manera estructurada sin usar nietas.</p><h3>Beneficios de los Campos Personalizados</h3><ul><li><strong>Mejor organización:</strong> Campos fijos en lugar de nietas de texto libre</li><li><strong>Filtrado y segmentación:</strong> Buscar y filtrar por valores de campo personalizado</li><li><strong>Reportes:</strong> Generar informes basados en datos personalizados</li><li><strong>Automatización de flujo de trabajo:</strong> Activar acciones en valores de campo personalizado</li><li><strong>Integración API:</strong> Sincronizar campos personalizados con otros sistemas</li></ul>"
         }
       }
     },
-
     {
       "type": "steps",
       "id": "creating-custom-fields",
@@ -138,7 +146,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -153,7 +160,7 @@
           "text": "<ul><li><strong>Plan vooruit:</strong> Bedenk welke data je echt nodig hebt voordat je velden aanmaakt</li><li><strong>Consistente naming:</strong> Gebruik duidelijke namen zoals 'vip_level' niet 'field1'</li><li><strong>Beperk het aantal:</strong> Teveel custom fields maken het formulier onoverzichtelijk</li><li><strong>Gebruik dropdowns:</strong> Voor gestandaardiseerde waarden (beter dan vrije tekst)</li><li><strong>Documenteer:</strong> Houd bij wat elk custom field betekent en hoe het gebruikt wordt</li><li><strong>Test eerst:</strong> Maak een test field aan voordat je het breed uitrolt</li><li><strong>Review regelmatig:</strong> Verwijder custom fields die niet meer gebruikt worden</li></ul>"
         },
         "en": {
-          "text": "<ul><li><strong>Plan ahead:</strong> Think about what data you really need before creating fields</li><li><strong>Consistent naming:</strong> Use clear names like 'vip_level' not 'field1'</li><li><strong>Limit the number:</strong> Too many custom fields make the form cluttered</li><li><strong>Use dropdowns:</strong> For standardized values (better than free text)</li><li><strong>Document:</strong> Keep track of what each custom field means and how it's used</li><li><strong>Test first:</strong> Create a test field before rolling it out broadly</li><li><strong>Review regularly:</strong> Remove custom fields that are no longer used</li></ul>"
+          "text": "<ul><li><strong>Plan ahead:</strong> Think about what data you really need before creating fields</li><li><strong>Consistent naming:</strong> Use clear names like 'vip_level' niet 'field1'</li><li><strong>Limit the number:</strong> Too many custom fields make the form cluttered</li><li><strong>Use dropdowns:</strong> For standardized values (better than free text)</li><li><strong>Document:</strong> Keep track of what each custom field means and how it's used</li><li><strong>Test first:</strong> Create a test field before rolling it out broadly</li><li><strong>Review regelmatig:</strong> Remove custom fields that are no longer used</li></ul>"
         },
         "es": {
           "text": "<ul><li><strong>Planifica con anticipación:</strong> Piensa qué datos realmente necesitas antes de crear campos</li><li><strong>Nomenclatura consistente:</strong> Usa nombres claros como 'vip_level' no 'field1'</li><li><strong>Limita el número:</strong> Demasiados campos personalizados desordenan el formulario</li><li><strong>Usa dropdowns:</strong> Para valores estandarizados (mejor que texto libre)</li><li><strong>Documenta:</strong> Mantén registro de qué significa cada campo personalizado y cómo se usa</li><li><strong>Prueba primero:</strong> Crea un campo de prueba antes de implementarlo ampliamente</li><li><strong>Revisa regularmente:</strong> Elimina campos personalizados que ya no se usan</li></ul>"
@@ -161,14 +168,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "creating-contacts-step-by-step",
     "contact-tags-organization",
     "contact-advanced-search"
   ],
-
   "faq": [
     {
       "question": {

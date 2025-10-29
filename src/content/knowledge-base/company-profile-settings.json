@@ -7,7 +7,12 @@
     "authorId": "carlos-martinez",
     "category": "settings",
     "difficulty": "beginner",
-    "tags": ["settings", "configuration", "company", "branding"],
+    "tags": [
+      "settings",
+      "configuration",
+      "company",
+      "branding"
+    ],
     "featured": true,
     "readingTime": 6,
     "videoIncluded": false,
@@ -15,7 +20,14 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop",
-    "keywords": ["company profile", "branding", "settings", "configuration", "company information", "tesoro crm"]
+    "keywords": [
+      "company profile",
+      "branding",
+      "settings",
+      "configuration",
+      "company information",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -207,12 +219,12 @@
         },
         {
           "title": {
-            "nl": "Valuta en getalnotatie",
+            "nl": "Valuta en getalnietatie",
             "en": "Currency and Number Format",
             "es": "Moneda y formato de números"
           },
           "description": {
-            "nl": "Selecteer uw standaard valuta (EUR, USD, GBP, etc.) en getalnotatie. Deze instellingen bepalen hoe prijzen, deals en financiële gegevens worden weergegeven. Zorg ervoor dat deze overeenkomt met uw boekhoudsysteem.",
+            "nl": "Selecteer uw standaard valuta (EUR, USD, GBP, etc.) en getalnietatie. Deze instellingen bepalen hoe prijzen, deals en financiële gegevens worden weergegeven. Zorg ervoor dat deze overeenkomt met uw boekhoudsysteem.",
             "en": "Select your default currency (EUR, USD, GBP, etc.) and number format. These settings determine how prices, deals, and financial data are displayed. Ensure this matches your accounting system.",
             "es": "Seleccione su moneda predeterminada (EUR, USD, GBP, etc.) y formato de números. Estas configuraciones determinan cómo se muestran los precios, acuerdos y datos financieros. Asegúrese de que coincida con su sistema contable."
           }
@@ -242,7 +254,7 @@
       },
       "content": {
         "nl": "De bedrijfsinstellingen zijn beperkt tot gebruikers met beheerdersrechten of accounteigenaren. Standaardgebruikers en makelaars kunnen deze instellingen bekijken maar niet wijzigen. Dit voorkomt onbedoelde wijzigingen die invloed hebben op de hele organisatie.",
-        "en": "Company settings are restricted to users with administrator rights or account owners. Standard users and agents can view these settings but cannot modify them. This prevents accidental changes that affect the entire organization.",
+        "en": "Company settings are restricted to users with administrator rights or account owners. Standard users and agents can view these settings but canniet modify them. This prevents accidental changes that affect the entire organization.",
         "es": "La configuración de empresa está restringida a usuarios con derechos de administrador o propietarios de cuentas. Los usuarios estándar y agentes pueden ver estas configuraciones pero no pueden modificarlas. Esto previene cambios accidentales que afectan a toda la organización."
       }
     },

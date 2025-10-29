@@ -5,9 +5,14 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "beginner",
-    "tags": ["calendar", "overview", "scheduling", "time-management"],
+    "tags": [
+      "calendar",
+      "overview",
+      "scheduling",
+      "time-management"
+    ],
     "featured": true,
     "readingTime": 7,
     "videoIncluded": false,
@@ -15,7 +20,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro calendar", "real estate scheduling", "crm calendar", "property viewing calendar", "meeting scheduler"]
+    "keywords": [
+      "tesoro calendar",
+      "real estate scheduling",
+      "crm calendar",
+      "property viewing calendar",
+      "meeting scheduler"
+    ]
   },
   "hero": {
     "title": {
@@ -326,7 +337,7 @@
           },
           "description": {
             "nl": "Bekijk de kalenders van je teamleden naast de jouwe om vergaderingen te coördineren en gedeelde beschikbaarheid te vinden. Ideaal voor teams die samenwerken aan deals of dubbele bezichtigingen organiseren.",
-            "en": "View your team members' calendars alongside yours to coordinate meetings and find shared availability. Ideal for teams collaborating on deals or organizing double viewings.",
+            "en": "View your teamlids' calendars alongside yours to coordinate meetings and find shared availability. Ideal for teams collaborating on deals or organizing double viewings.",
             "es": "Ve los calendarios de los miembros de tu equipo junto al tuyo para coordinar reuniones y encontrar disponibilidad compartida. Ideal para equipos que colaboran en negocios u organizan visitas dobles."
           }
         },

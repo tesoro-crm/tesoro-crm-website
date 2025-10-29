@@ -7,18 +7,28 @@
     "authorId": "elena-rodriguez",
     "category": "contacts",
     "difficulty": "beginner",
-    "tags": ["contacts", "contact-management", "crm-basics", "getting-started", "tutorial"],
+    "tags": [
+      "contacts",
+      "contact-management",
+      "crm-basics",
+      "getting-started",
+      "tutorial"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["tesoro contact management", "crm contacts", "contact database", "managing contacts", "contact organization"]
+    "keywords": [
+      "tesoro contact management",
+      "crm contacts",
+      "contact database",
+      "managing contacts",
+      "contact organization"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Contactbeheer: Complete Gids voor Tesoro CRM",
@@ -32,7 +42,6 @@
     },
     "icon": "contacts"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "contact-types",
@@ -76,7 +84,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "contact-fields",
@@ -97,7 +104,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "best-practices",
@@ -115,19 +121,17 @@
           "text": "<p><strong>Keep your contact database clean and up-to-date:</strong></p><ul><li>Fill in at least name, email and phone for each contact</li><li>Use tags for quick segmentation (VIP, Hot Lead, Follow-up)</li><li>Update status regularly (Active → Won/Lost)</li><li>Add notes after each conversation or meeting</li><li>Link contacts to deals and properties for full context</li><li>Use custom fields for industry-specific information</li><li>Remove duplicates regularly with the merge function</li></ul>"
         },
         "es": {
-          "text": "<p><strong>Mantén tu base de datos de contactos limpia y actualizada:</strong></p><ul><li>Completa al menos nombre, email y teléfono para cada contacto</li><li>Usa etiquetas para segmentación rápida (VIP, Hot Lead, Follow-up)</li><li>Actualiza el estado regularmente (Active → Won/Lost)</li><li>Agrega notas después de cada conversación o reunión</li><li>Vincula contactos a deals y propiedades para contexto completo</li><li>Usa campos personalizados para información específica del sector</li><li>Elimina duplicados regularmente con la función de fusión</li></ul>"
+          "text": "<p><strong>Mantén tu base de datos de contactos limpia y actualizada:</strong></p><ul><li>Completa al menos nombre, email y teléfono para cada contacto</li><li>Usa etiquetas para segmentación rápida (VIP, Hot Lead, Follow-up)</li><li>Actualiza el estado regularmente (Active → Won/Lost)</li><li>Agrega nietas después de cada conversación o reunión</li><li>Vincula contactos a deals y propiedades para contexto completo</li><li>Usa campos personalizados para información específica del sector</li><li>Elimina duplicados regularmente con la función de fusión</li></ul>"
         }
       }
     }
   ],
-
   "relatedArticles": [
     "creating-contacts-step-by-step",
     "contact-types-explained",
     "contact-tags-organization",
     "contact-advanced-search"
   ],
-
   "faq": [
     {
       "question": {

@@ -1,0 +1,306 @@
+=== COMPREHENSIVE KNOWLEDGE BASE CATEGORIZATION PLAN ===
+
+Total Articles: 129
+
+=== PROPOSED CATEGORY STRUCTURE ===
+
+Current categories: 10
+Proposed categories: 12 (NEW: deals, calendar)
+
+  getting-started       12 articles
+  contacts              14 articles
+  deals                 21 articles
+  properties            19 articles
+  projects               5 articles
+  calendar               9 articles
+  communication         17 articles
+  integrations           4 articles
+  reports                7 articles
+  settings              10 articles
+  best-practices         6 articles
+  troubleshooting        5 articles
+
+
+=== ARTICLES REQUIRING CATEGORY CHANGE ===
+
+Total articles to recategorize: 41
+
+
+### best-practices → communication (2 articles) ###
+  - client-communication-templates
+    "Communication Templates That Convert"
+  - email-marketing-best-practices
+    "Effective Email Marketing for Real Estate"
+
+### best-practices → deals (3 articles) ###
+  - conversion-optimization-guide
+    "Lead-to-Deal Conversion Optimization"
+  - deal-pipeline-complete-guide
+    "Complete Deal Pipeline Guide - 9 Stages to Success"
+  - deal-pipeline-optimization
+    "Optimizing Your Pipeline for Maximum Conversion"
+
+### best-practices → properties (1 articles) ###
+  - property-listing-optimization
+    "Optimizing Property Listings for Maximum Conversion"
+
+### communication → calendar (8 articles) ###
+  - calendar-availability-management
+    "Managing Availability and Time Blocks"
+  - calendar-overview-guide
+    "Calendar Overview and Navigation"
+  - calendar-reminders-notifications
+    "Configuring Reminders and Notifications"
+  - google-calendar-sync-setup
+    "Setting Up Google Calendar Sync"
+  - ical-export-integration
+    "iCal Export and External Calendar Integration"
+  - meeting-scheduling-guide
+    "Scheduling Meetings With Clients"
+  - scheduling-property-viewings
+    "Scheduling and Managing Property Viewings"
+  - team-calendar-coordination
+    "Viewing and Coordinating Team Calendars"
+
+### contacts → deals (14 articles) ###
+  - add-contact
+    "DEPRECATED: See 'Stop Losing €15,000 Deals' Article"
+  - contact-relationships-linking
+    "Linking Contacts: Managing Relationships and Connections"
+  - creating-deals-guide
+    "Creating Deals and Linking Contacts and Properties"
+  - deal-activities-timeline
+    "Deal Activities and Timeline Tracking"
+  - deal-automation-workflows
+    "Deal Automation and Workflows"
+  - deal-best-practices
+    "Best Practices for Effective Deal Management"
+  - deal-forecasting
+    "Revenue Forecasting and Pipeline Value"
+  - deal-kanban-board-guide
+    "Kanban Board Guide: Visual Deal Management"
+  - deal-pipeline-overview
+    "Complete Deal Pipeline Overview"
+  - deal-reporting-metrics
+    "Deal Reporting and Key Metrics"
+  - deal-stages-explained
+    "Deal Stages Explained: When to Move Deals"
+  - deal-team-collaboration
+    "Team Collaboration for Deals"
+  - deal-value-commission-tracking
+    "Deal Value and Commission Tracking"
+  - deal-won-lost-analysis
+    "Won and Lost Deal Analysis"
+
+### getting-started → deals (1 articles) ###
+  - quick-start-guide
+    "Quick Start Guide: 15 Minutes to Your First Deal"
+
+### getting-started → settings (1 articles) ###
+  - user-profile-settings
+    "Configuring Profile and Settings"
+
+### integrations → calendar (1 articles) ###
+  - google-calendar-sync
+    "Google Calendar Integration: Unified Scheduling"
+
+### integrations → communication (2 articles) ###
+  - twilio-sms-integration
+    "Twilio SMS Integration: Automated SMS Communication"
+  - whatsapp-business-api
+    "WhatsApp Business API: Professional Messaging Integration"
+
+### integrations → deals (1 articles) ###
+  - idealista-integration-guide
+    "Idealista Integration: Automatic Property Synchronization"
+
+### projects → properties (1 articles) ###
+  - linking-properties-to-projects
+    "Linking Properties to Projects"
+
+### reports → deals (1 articles) ###
+  - conversion-rate-analysis
+    "Lead-To-Deal Conversion Tracking"
+
+### settings → communication (1 articles) ###
+  - email-templates-management
+    "Creating and Managing Email Templates"
+
+### settings → deals (1 articles) ###
+  - deal-stages-customization
+    "Customizing Deal Pipeline and Stages"
+
+### troubleshooting → best-practices (1 articles) ###
+  - performance-optimization-tips
+    "Make Tesoro Faster: Performance Tips"
+
+### troubleshooting → communication (1 articles) ###
+  - email-sync-troubleshooting
+    "Fixing Email Synchronization Problems"
+
+### troubleshooting → settings (1 articles) ###
+  - billing-payment-issues
+    "Solving Billing and Payment Issues"
+
+
+=== NEW CATEGORY: DEALS (Pipeline Management) ===
+
+This new category separates deal/pipeline management from contacts.
+
+Articles in this category:
+  - deal-best-practices
+    "Best Practices for Effective Deal Management"
+    From: contacts
+  - deal-pipeline-complete-guide
+    "Complete Deal Pipeline Guide - 9 Stages to Success"
+    From: best-practices
+  - deal-pipeline-overview
+    "Complete Deal Pipeline Overview"
+    From: contacts
+  - creating-deals-guide
+    "Creating Deals and Linking Contacts and Properties"
+    From: contacts
+  - deal-stages-customization
+    "Customizing Deal Pipeline and Stages"
+    From: settings
+  - deal-activities-timeline
+    "Deal Activities and Timeline Tracking"
+    From: contacts
+  - deal-automation-workflows
+    "Deal Automation and Workflows"
+    From: contacts
+  - deal-reporting-metrics
+    "Deal Reporting and Key Metrics"
+    From: contacts
+  - deal-stages-explained
+    "Deal Stages Explained: When to Move Deals"
+    From: contacts
+  - deal-value-commission-tracking
+    "Deal Value and Commission Tracking"
+    From: contacts
+  - add-contact
+    "DEPRECATED: See 'Stop Losing €15,000 Deals' Article"
+    From: contacts
+  - idealista-integration-guide
+    "Idealista Integration: Automatic Property Synchronization"
+    From: integrations
+  - deal-kanban-board-guide
+    "Kanban Board Guide: Visual Deal Management"
+    From: contacts
+  - conversion-optimization-guide
+    "Lead-to-Deal Conversion Optimization"
+    From: best-practices
+  - conversion-rate-analysis
+    "Lead-To-Deal Conversion Tracking"
+    From: reports
+  - contact-relationships-linking
+    "Linking Contacts: Managing Relationships and Connections"
+    From: contacts
+  - deal-pipeline-optimization
+    "Optimizing Your Pipeline for Maximum Conversion"
+    From: best-practices
+  - quick-start-guide
+    "Quick Start Guide: 15 Minutes to Your First Deal"
+    From: getting-started
+  - deal-forecasting
+    "Revenue Forecasting and Pipeline Value"
+    From: contacts
+  - deal-team-collaboration
+    "Team Collaboration for Deals"
+    From: contacts
+  - deal-won-lost-analysis
+    "Won and Lost Deal Analysis"
+    From: contacts
+
+
+=== NEW CATEGORY: CALENDAR (Scheduling) ===
+
+This new category groups all calendar and scheduling functionality.
+
+Articles in this category:
+  - calendar-overview-guide
+    "Calendar Overview and Navigation"
+    From: communication
+  - calendar-reminders-notifications
+    "Configuring Reminders and Notifications"
+    From: communication
+  - google-calendar-sync
+    "Google Calendar Integration: Unified Scheduling"
+    From: integrations
+  - ical-export-integration
+    "iCal Export and External Calendar Integration"
+    From: communication
+  - calendar-availability-management
+    "Managing Availability and Time Blocks"
+    From: communication
+  - scheduling-property-viewings
+    "Scheduling and Managing Property Viewings"
+    From: communication
+  - meeting-scheduling-guide
+    "Scheduling Meetings With Clients"
+    From: communication
+  - google-calendar-sync-setup
+    "Setting Up Google Calendar Sync"
+    From: communication
+  - team-calendar-coordination
+    "Viewing and Coordinating Team Calendars"
+    From: communication
+
+
+=== CONTACTS CATEGORY (Cleaned Up) ===
+
+After removing deal-related articles, contacts focuses purely on contact management.
+
+Articles remaining in contacts:
+  - contact-advanced-search
+    "Advanced Contact Search and Filtering"
+  - contact-best-practices
+    "Best Practices for Contact Management"
+  - contact-bulk-operations
+    "Bulk Operations: Managing Large Numbers of Contacts"
+  - contact-complete-guide
+    "Contact Management: Complete Guide for Tesoro CRM"
+  - contact-types-explained
+    "Contact Types Explained: Leads, Contacts and Relations"
+  - creating-contacts-step-by-step
+    "Creating Contacts: Step-by-Step Tutorial"
+  - contact-custom-fields-guide
+    "Custom Fields: Personalizing Contacts for Your Business"
+  - contact-email-integration
+    "Email Integration: Communicate Directly from Your CRM"
+  - contact-merge-duplicates
+    "Finding and Merging Duplicate Contacts"
+  - contact-gdpr-privacy
+    "GDPR and Privacy: Protecting Contact Data"
+  - contact-scoring-qualification
+    "Lead Scoring and Qualification"
+  - contact-tags-organization
+    "Organizing Contacts with Tags and Hashtags"
+  - contact-tasks-reminders
+    "Tasks and Reminders for Contacts"
+  - contact-notes-history
+    "Tracking Notes and Activity History"
+
+
+=== SUMMARY OF CHANGES ===
+
+BEFORE (current state):
+  - contacts: 28 articles (mixed contact + deal management)
+  - communication: 19 articles (mixed communication + calendar)
+  - best-practices: 11 articles (mixed strategy + operational)
+  - Total: 10 categories
+
+AFTER (proposed state):
+  - contacts: 14 articles (pure contact management)
+  - deals: 21 articles (NEW - pipeline/deal management)
+  - communication: 17 articles (email, SMS, WhatsApp, calls)
+  - calendar: 9 articles (NEW - scheduling/calendar)
+  - best-practices: 6 articles (strategic guidance only)
+  - Total: 12 categories
+
+BENEFITS:
+  ✓ Clear separation of contact vs deal management
+  ✓ Dedicated calendar/scheduling category
+  ✓ Better user navigation and findability
+  ✓ Logical grouping by functionality
+  ✓ Easier to grow knowledge base in the future

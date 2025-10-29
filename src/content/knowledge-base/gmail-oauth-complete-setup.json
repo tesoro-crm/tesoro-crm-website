@@ -7,18 +7,29 @@
     "authorId": "carlos-martinez",
     "category": "integrations",
     "difficulty": "intermediate",
-    "tags": ["integrations", "gmail", "oauth", "email", "google", "communication"],
+    "tags": [
+      "integrations",
+      "gmail",
+      "oauth",
+      "email",
+      "google",
+      "communication"
+    ],
     "featured": true,
     "readingTime": 9,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "",
-    "keywords": ["gmail oauth setup", "connect gmail tesoro", "email integration", "google oauth", "gmail sync crm"]
+    "keywords": [
+      "gmail oauth setup",
+      "connect gmail tesoro",
+      "email integration",
+      "google oauth",
+      "gmail sync crm"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Gmail OAuth integratie: complete setup guide",
@@ -32,7 +43,6 @@
     },
     "icon": "mail"
   },
-
   "sections": [
     {
       "type": "introduction",
@@ -54,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "solution",
       "id": "gmail-setup-steps",
@@ -95,7 +104,7 @@
               "text": "<p>Start het OAuth verbindingsproces vanuit Tesoro CRM.</p><h4>Verbindingsstappen:</h4><ol><li>Log in op Tesoro CRM</li><li>Klik op je <strong>avatar rechts boven</strong></li><li>Ga naar <strong>Settings → Email Accounts</strong></li><li>Klik <strong>+ Connect Email Account</strong></li><li>Selecteer <strong>Gmail</strong> uit de provider lijst</li><li>Klik <strong>Connect with Google</strong></li></ol><p>Je wordt nu doorgestuurd naar Google's OAuth login scherm.</p><h4>Google OAuth autorisatie:</h4><ol><li>Selecteer het Gmail account dat je wilt verbinden</li><li>Google toont welke permissies Tesoro vraagt:  <ul><li>Read, compose, send, and permanently delete all your email from Gmail</li><li>See, edit, create, and delete labels</li><li>Manage drafts and send emails</li></ul></li><li>Lees de permissies zorgvuldig door</li><li>Klik <strong>Allow</strong> om Tesoro toegang te geven</li><li>Je wordt teruggestuurd naar Tesoro</li></ol><p><strong>Beveiligingsmelding:</strong> Als Google een waarschuwing toont ('This app isn't verified'), klik <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. Dit is normaal voor OAuth apps en betekent niet dat Tesoro onveilig is.</p>"
             },
             "en": {
-              "text": "<p>Start the OAuth connection process from Tesoro CRM.</p><h4>Connection steps:</h4><ol><li>Log in to Tesoro CRM</li><li>Click your <strong>avatar in the top right</strong></li><li>Go to <strong>Settings → Email Accounts</strong></li><li>Click <strong>+ Connect Email Account</strong></li><li>Select <strong>Gmail</strong> from the provider list</li><li>Click <strong>Connect with Google</strong></li></ol><p>You will now be redirected to Google's OAuth login screen.</p><h4>Google OAuth authorization:</h4><ol><li>Select the Gmail account you want to connect</li><li>Google shows which permissions Tesoro requests:  <ul><li>Read, compose, send, and permanently delete all your email from Gmail</li><li>See, edit, create, and delete labels</li><li>Manage drafts and send emails</li></ul></li><li>Read the permissions carefully</li><li>Click <strong>Allow</strong> to grant Tesoro access</li><li>You will be redirected back to Tesoro</li></ol><p><strong>Security notice:</strong> If Google shows a warning ('This app isn't verified'), click <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. This is normal for OAuth apps and doesn't mean Tesoro is unsafe.</p>"
+              "text": "<p>Start the OAuth connection process from Tesoro CRM.</p><h4>Connection steps:</h4><ol><li>Log in to Tesoro CRM</li><li>Click your <strong>avatar in the top right</strong></li><li>Go to <strong>Settings → Email Accounts</strong></li><li>Click <strong>+ Connect Email Account</strong></li><li>Select <strong>Gmail</strong> from the provider list</li><li>Click <strong>Connect with Google</strong></li></ol><p>You will now be redirected to Google's OAuth login screen.</p><h4>Google OAuth authorization:</h4><ol><li>Select the Gmail account you want to connect</li><li>Google shows which permissions Tesoro requests:  <ul><li>Read, compose, send, and permanently delete all your email from Gmail</li><li>See, edit, create, and delete labels</li><li>Manage drafts and send emails</li></ul></li><li>Read the permissions carefully</li><li>Click <strong>Allow</strong> to grant Tesoro access</li><li>You will be redirected back to Tesoro</li></ol><p><strong>Security nietice:</strong> If Google shows a warning ('This app isn't verified'), click <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. This is normal for OAuth apps and doesn't mean Tesoro is unsafe.</p>"
             },
             "es": {
               "text": "<p>Inicia el proceso de conexión OAuth desde Tesoro CRM.</p><h4>Pasos de conexión:</h4><ol><li>Inicia sesión en Tesoro CRM</li><li>Haz clic en tu <strong>avatar en la parte superior derecha</strong></li><li>Ve a <strong>Settings → Email Accounts</strong></li><li>Haz clic en <strong>+ Connect Email Account</strong></li><li>Selecciona <strong>Gmail</strong> de la lista de proveedores</li><li>Haz clic en <strong>Connect with Google</strong></li></ol><p>Ahora serás redirigido a la pantalla de inicio de sesión OAuth de Google.</p><h4>Autorización OAuth de Google:</h4><ol><li>Selecciona la cuenta de Gmail que deseas conectar</li><li>Google muestra qué permisos solicita Tesoro:  <ul><li>Leer, redactar, enviar y eliminar permanentemente todos tus correos electrónicos de Gmail</li><li>Ver, editar, crear y eliminar etiquetas</li><li>Gestionar borradores y enviar emails</li></ul></li><li>Lee los permisos cuidadosamente</li><li>Haz clic en <strong>Allow</strong> para otorgar acceso a Tesoro</li><li>Serás redirigido de vuelta a Tesoro</li></ol><p><strong>Aviso de seguridad:</strong> Si Google muestra una advertencia ('This app isn't verified'), haz clic en <strong>Advanced</strong> → <strong>Go to Tesoro CRM (unsafe)</strong>. Esto es normal para aplicaciones OAuth y no significa que Tesoro sea inseguro.</p>"
@@ -142,7 +151,6 @@
         }
       ]
     },
-
     {
       "type": "callout",
       "id": "security-best-practices",
@@ -164,7 +172,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "advanced-features",
@@ -185,7 +192,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "troubleshooting",
@@ -199,7 +205,7 @@
           "text": "<h4>Veelvoorkomende problemen:</h4><p><strong>'Authorization failed' error tijdens OAuth:</strong></p><ul><li>Controleer of je de juiste Google account hebt geselecteerd</li><li>Verifieer dat je 'Allow' hebt geklikt (niet 'Deny')</li><li>Probeer opnieuw in incognito mode</li><li>Clear browser cookies en cache</li><li>Gebruik een andere browser</li></ul><p><strong>Emails worden niet verzonden:</strong></p><ul><li>Check of Gmail account status = 'Connected' (groen)</li><li>Klik <strong>Reconnect</strong> om OAuth token te vernieuwen</li><li>Verifieer dat Gmail account niet vol is (storage limit)</li><li>Check of Gmail account niet is geblokkeerd door Google</li></ul><p><strong>Emails verschijnen niet in Tesoro:</strong></p><ul><li>Check of <strong>Auto-Sync</strong> is enabled</li><li>Verlaag <strong>Sync Frequency</strong> naar 1 minuut voor snellere sync</li><li>Klik <strong>Sync Now</strong> voor handmatige sync</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>OAuth token expired:</strong></p><ul><li>Tokens verlopen na 7 dagen inactiviteit</li><li>Klik <strong>Reconnect Gmail</strong> om token te vernieuwen</li><li>Ga door OAuth flow opnieuw</li><li>Enable <strong>Auto-Refresh Tokens</strong> om automatische vernieuwing te activeren</li></ul><p><strong>Google Workspace admin blokkering:</strong></p><ul><li>Neem contact op met je Google Workspace admin</li><li>Vraag om Tesoro CRM toe te voegen aan whitelist</li><li>Admin moet API access enablen in Google Admin Console</li></ul>"
         },
         "en": {
-          "text": "<h4>Common issues:</h4><p><strong>'Authorization failed' error during OAuth:</strong></p><ul><li>Check if you selected the correct Google account</li><li>Verify that you clicked 'Allow' (not 'Deny')</li><li>Try again in incognito mode</li><li>Clear browser cookies and cache</li><li>Use a different browser</li></ul><p><strong>Emails are not being sent:</strong></p><ul><li>Check if Gmail account status = 'Connected' (green)</li><li>Click <strong>Reconnect</strong> to refresh OAuth token</li><li>Verify that Gmail account is not full (storage limit)</li><li>Check if Gmail account is not blocked by Google</li></ul><p><strong>Emails don't appear in Tesoro:</strong></p><ul><li>Check if <strong>Auto-Sync</strong> is enabled</li><li>Lower <strong>Sync Frequency</strong> to 1 minute for faster sync</li><li>Click <strong>Sync Now</strong> for manual sync</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>OAuth token expired:</strong></p><ul><li>Tokens expire after 7 days of inactivity</li><li>Click <strong>Reconnect Gmail</strong> to refresh token</li><li>Go through OAuth flow again</li><li>Enable <strong>Auto-Refresh Tokens</strong> to activate automatic renewal</li></ul><p><strong>Google Workspace admin blocking:</strong></p><ul><li>Contact your Google Workspace admin</li><li>Request to add Tesoro CRM to whitelist</li><li>Admin must enable API access in Google Admin Console</li></ul>"
+          "text": "<h4>Common issues:</h4><p><strong>'Authorization failed' error during OAuth:</strong></p><ul><li>Check if you selected the correct Google account</li><li>Verify that you clicked 'Allow' (niet 'Deny')</li><li>Try again in incognito mode</li><li>Clear browser cookies and cache</li><li>Use a different browser</li></ul><p><strong>Emails are niet being sent:</strong></p><ul><li>Check if Gmail account status = 'Connected' (green)</li><li>Click <strong>Reconnect</strong> to refresh OAuth token</li><li>Verify that Gmail account is niet full (storage limit)</li><li>Check if Gmail account is niet blocked by Google</li></ul><p><strong>Emails don't appear in Tesoro:</strong></p><ul><li>Check if <strong>Auto-Sync</strong> is enabled</li><li>Lower <strong>Sync Frequency</strong> to 1 minute for faster sync</li><li>Click <strong>Sync Now</strong> for manual sync</li><li>Check sync errors in <strong>Sync Logs</strong></li></ul><p><strong>OAuth token expired:</strong></p><ul><li>Tokens expire after 7 days of inactivity</li><li>Click <strong>Reconnect Gmail</strong> to refresh token</li><li>Go through OAuth flow again</li><li>Enable <strong>Auto-Refresh Tokens</strong> to activate automatic renewal</li></ul><p><strong>Google Workspace admin blocking:</strong></p><ul><li>Contact your Google Workspace admin</li><li>Request to add Tesoro CRM to whitelist</li><li>Admin must enable API access in Google Admin Console</li></ul>"
         },
         "es": {
           "text": "<h4>Problemas comunes:</h4><p><strong>Error 'Authorization failed' durante OAuth:</strong></p><ul><li>Verifica si seleccionaste la cuenta de Google correcta</li><li>Verifica que hayas hecho clic en 'Allow' (no 'Deny')</li><li>Intenta nuevamente en modo incógnito</li><li>Limpia las cookies y caché del navegador</li><li>Usa un navegador diferente</li></ul><p><strong>Los emails no se envían:</strong></p><ul><li>Verifica que el estado de la cuenta de Gmail = 'Connected' (verde)</li><li>Haz clic en <strong>Reconnect</strong> para actualizar el token OAuth</li><li>Verifica que la cuenta de Gmail no esté llena (límite de almacenamiento)</li><li>Verifica que la cuenta de Gmail no esté bloqueada por Google</li></ul><p><strong>Los emails no aparecen en Tesoro:</strong></p><ul><li>Verifica que <strong>Auto-Sync</strong> esté habilitado</li><li>Reduce <strong>Sync Frequency</strong> a 1 minuto para sincronización más rápida</li><li>Haz clic en <strong>Sync Now</strong> para sincronización manual</li><li>Verifica errores de sincronización en <strong>Sync Logs</strong></li></ul><p><strong>Token OAuth expirado:</strong></p><ul><li>Los tokens expiran después de 7 días de inactividad</li><li>Haz clic en <strong>Reconnect Gmail</strong> para actualizar el token</li><li>Pasa por el flujo OAuth nuevamente</li><li>Habilita <strong>Auto-Refresh Tokens</strong> para activar la renovación automática</li></ul><p><strong>Bloqueo del administrador de Google Workspace:</strong></p><ul><li>Contacta a tu administrador de Google Workspace</li><li>Solicita agregar Tesoro CRM a la lista blanca</li><li>El administrador debe habilitar el acceso API en Google Admin Console</li></ul>"
@@ -207,13 +213,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "outlook-oauth-complete-setup",
     "contact-email-integration",
     "api-webhooks-guide"
   ],
-
   "faq": [
     {
       "question": {
@@ -247,7 +251,7 @@
       },
       "answer": {
         "nl": "Nee, Google heeft geen toegang tot je emails in Tesoro. OAuth geeft Tesoro alleen toegang tot je Gmail account - Google kan niet in Tesoro kijken.",
-        "en": "No, Google has no access to your emails in Tesoro. OAuth only gives Tesoro access to your Gmail account - Google cannot see into Tesoro.",
+        "en": "No, Google has no access to your emails in Tesoro. OAuth only gives Tesoro access to your Gmail account - Google canniet see into Tesoro.",
         "es": "No, Google no tiene acceso a tus emails en Tesoro. OAuth solo otorga acceso a Tesoro a tu cuenta de Gmail - Google no puede ver dentro de Tesoro."
       }
     },

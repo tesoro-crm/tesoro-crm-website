@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "best-practices",
     "difficulty": "intermediate",
-    "tags": ["contacts", "organization", "best-practices", "workflow", "efficiency"],
+    "tags": [
+      "contacts",
+      "organization",
+      "best-practices",
+      "workflow",
+      "efficiency"
+    ],
     "featured": true,
     "readingTime": 10,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1554224311-beee4ece65ba?w=1200&h=630&fit=crop",
-    "keywords": ["contact organization", "crm organization", "contact management tips", "database organization", "tesoro best practices"]
+    "keywords": [
+      "contact organization",
+      "crm organization",
+      "contact management tips",
+      "database organization",
+      "tesoro best practices"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Contacten effectief organiseren",
@@ -32,7 +42,6 @@
     },
     "icon": "folder_open"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "segmentation-strategy",
@@ -70,7 +78,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "naming-conventions",
@@ -84,14 +91,13 @@
           "text": "<h3>Waarom consistente naming belangrijk is</h3><p>Inconsistente naamgeving leidt tot:</p><ul><li>Duplicaten (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Moeilijk zoeken en filteren</li><li>Onprofessionele communicatie</li><li>Team frustratie</li></ul><h3>Naming standaarden</h3><p><strong>Contact namen:</strong></p><ul><li>Format: First Name | Last Name (gescheiden velden)</li><li>First Name: \"Carlos\" (niet \"Mr. Carlos\" of \"carlos\")</li><li>Last Name: \"García\" (correct geaccentueerd)</li><li>Display Name: Automatisch gegenereerd als \"Carlos García\"</li></ul><p><strong>Company/Organization namen:</strong></p><ul><li>Volledige officiële naam: \"Inmobiliaria López S.L.\"</li><li>Gebruik abbreviaties alleen als officieel: \"IBM\" niet \"I.B.M.\"</li><li>Geen generieken: \"XYZ Real Estate\" niet \"real estate company\"</li></ul><p><strong>Email adressen:</strong></p><ul><li>Altijd lowercase: \"carlos@example.com\" niet \"Carlos@Example.com\"</li><li>Valideer format voor het opslaan</li><li>Primary email in hoofdveld, alternatieven in custom fields</li></ul><p><strong>Phone numbers:</strong></p><ul><li>International format: +34 600 123 456</li><li>Consistent gebruik van spaties (geen punten/streepjes)</li><li>Landcode altijd included voor international clients</li></ul><h3>Tag naming standards</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" niet \"hot lead\" of \"HOT LEAD\"</li><li><strong>Max 3 woorden:</strong> \"First Time Buyer\" niet \"First Time Home Buyer Looking For Property\"</li><li><strong>Specifiek, niet generiek:</strong> \"Luxury Buyer\" niet \"High End\"</li><li><strong>Geen synoniemen:</strong> Kies \"VIP Client\" OF \"Premium Client\", niet beide</li></ul>"
         },
         "en": {
-          "text": "<h3>Why Consistent Naming Matters</h3><p>Inconsistent naming leads to:</p><ul><li>Duplicates (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Difficult searching and filtering</li><li>Unprofessional communication</li><li>Team frustration</li></ul><h3>Naming Standards</h3><p><strong>Contact names:</strong></p><ul><li>Format: First Name | Last Name (separate fields)</li><li>First Name: \"Carlos\" (not \"Mr. Carlos\" or \"carlos\")</li><li>Last Name: \"García\" (properly accented)</li><li>Display Name: Auto-generated as \"Carlos García\"</li></ul><p><strong>Company/Organization names:</strong></p><ul><li>Full official name: \"Inmobiliaria López S.L.\"</li><li>Use abbreviations only if official: \"IBM\" not \"I.B.M.\"</li><li>No generics: \"XYZ Real Estate\" not \"real estate company\"</li></ul><p><strong>Email addresses:</strong></p><ul><li>Always lowercase: \"carlos@example.com\" not \"Carlos@Example.com\"</li><li>Validate format before saving</li><li>Primary email in main field, alternatives in custom fields</li></ul><p><strong>Phone numbers:</strong></p><ul><li>International format: +34 600 123 456</li><li>Consistent use of spaces (no dots/dashes)</li><li>Country code always included for international clients</li></ul><h3>Tag Naming Standards</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" not \"hot lead\" or \"HOT LEAD\"</li><li><strong>Max 3 words:</strong> \"First Time Buyer\" not \"First Time Home Buyer Looking For Property\"</li><li><strong>Specific, not generic:</strong> \"Luxury Buyer\" not \"High End\"</li><li><strong>No synonyms:</strong> Choose \"VIP Client\" OR \"Premium Client\", not both</li></ul>"
+          "text": "<h3>Why Consistent Naming Matters</h3><p>Inconsistent naming leads to:</p><ul><li>Duplicates (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Difficult searching and filtering</li><li>Unprofessional communication</li><li>Team frustration</li></ul><h3>Naming Standards</h3><p><strong>Contact names:</strong></p><ul><li>Format: First Name | Last Name (separate fields)</li><li>First Name: \"Carlos\" (niet \"Mr. Carlos\" or \"carlos\")</li><li>Last Name: \"García\" (properly accented)</li><li>Display Name: Auto-generated as \"Carlos García\"</li></ul><p><strong>Company/Organization names:</strong></p><ul><li>Full official name: \"Inmobiliaria López S.L.\"</li><li>Use abbreviations only if official: \"IBM\" niet \"I.B.M.\"</li><li>No generics: \"XYZ Real Estate\" niet \"real estate company\"</li></ul><p><strong>Email addresses:</strong></p><ul><li>Always lowercase: \"carlos@example.com\" niet \"Carlos@Example.com\"</li><li>Validate format before saving</li><li>Primary email in main field, alternatives in custom fields</li></ul><p><strong>Phone numbers:</strong></p><ul><li>International format: +34 600 123 456</li><li>Consistent use of spaces (no dots/dashes)</li><li>Country code always included for international clients</li></ul><h3>Tag Naming Standards</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" niet \"hot lead\" or \"HOT LEAD\"</li><li><strong>Max 3 words:</strong> \"First Time Buyer\" niet \"First Time Home Buyer Looking For Property\"</li><li><strong>Specific, niet generic:</strong> \"Luxury Buyer\" niet \"High End\"</li><li><strong>No synonyms:</strong> Choose \"VIP Client\" OR \"Premium Client\", niet both</li></ul>"
         },
         "es": {
           "text": "<h3>Por qué importa la nomenclatura consistente</h3><p>La nomenclatura inconsistente conduce a:</p><ul><li>Duplicados (\"John Smith\" vs \"Smith, John\" vs \"J. Smith\")</li><li>Búsqueda y filtrado difícil</li><li>Comunicación no profesional</li><li>Frustración del equipo</li></ul><h3>Estándares de nomenclatura</h3><p><strong>Nombres de contactos:</strong></p><ul><li>Formato: Nombre | Apellido (campos separados)</li><li>Nombre: \"Carlos\" (no \"Sr. Carlos\" o \"carlos\")</li><li>Apellido: \"García\" (con acento correcto)</li><li>Nombre para mostrar: Auto-generado como \"Carlos García\"</li></ul><p><strong>Nombres de empresas/organizaciones:</strong></p><ul><li>Nombre oficial completo: \"Inmobiliaria López S.L.\"</li><li>Usa abreviaturas solo si son oficiales: \"IBM\" no \"I.B.M.\"</li><li>Sin genéricos: \"XYZ Real Estate\" no \"empresa inmobiliaria\"</li></ul><p><strong>Direcciones de email:</strong></p><ul><li>Siempre en minúsculas: \"carlos@example.com\" no \"Carlos@Example.com\"</li><li>Validar formato antes de guardar</li><li>Email principal en campo principal, alternativas en campos personalizados</li></ul><p><strong>Números de teléfono:</strong></p><ul><li>Formato internacional: +34 600 123 456</li><li>Uso consistente de espacios (sin puntos/guiones)</li><li>Código de país siempre incluido para clientes internacionales</li></ul><h3>Estándares de nomenclatura de etiquetas</h3><ul><li><strong>Title Case:</strong> \"Hot Lead\" no \"hot lead\" o \"HOT LEAD\"</li><li><strong>Máx 3 palabras:</strong> \"First Time Buyer\" no \"First Time Home Buyer Looking For Property\"</li><li><strong>Específico, no genérico:</strong> \"Luxury Buyer\" no \"High End\"</li><li><strong>Sin sinónimos:</strong> Elige \"VIP Client\" O \"Premium Client\", no ambos</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "folder-structure",
@@ -112,7 +118,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "organization-principles",
@@ -127,7 +132,7 @@
           "text": "<ol><li><strong>Tag bij invoer:</strong> Voeg direct minimaal 3 tags toe bij het aanmaken (Type, Status, Source)</li><li><strong>Wees consistent:</strong> Volg je naming conventions strikt</li><li><strong>Minimaliseer tags:</strong> 20-30 goed gedefinieerde tags > 100 vage tags</li><li><strong>Review maandelijks:</strong> Evalueer je tag strategie en consolideer indien nodig</li><li><strong>Documenteer alles:</strong> Maak een team wiki met tag definities en gebruik cases</li><li><strong>Train je team:</strong> Zorg dat iedereen dezelfde standaarden volgt</li><li><strong>Gebruik kleuren:</strong> Color-code tag categorieën voor snelle visuele identificatie</li><li><strong>Archiveer, niet verwijderen:</strong> Verplaats oude contacten naar archive status in plaats van deleten</li></ol>"
         },
         "en": {
-          "text": "<ol><li><strong>Tag at entry:</strong> Add at least 3 tags immediately when creating (Type, Status, Source)</li><li><strong>Be consistent:</strong> Follow your naming conventions strictly</li><li><strong>Minimize tags:</strong> 20-30 well-defined tags > 100 vague tags</li><li><strong>Review monthly:</strong> Evaluate your tag strategy and consolidate if needed</li><li><strong>Document everything:</strong> Create a team wiki with tag definitions and use cases</li><li><strong>Train your team:</strong> Ensure everyone follows the same standards</li><li><strong>Use colors:</strong> Color-code tag categories for quick visual identification</li><li><strong>Archive, don't delete:</strong> Move old contacts to archive status instead of deleting</li></ol>"
+          "text": "<ol><li><strong>Tag at entry:</strong> Add at least 3 tags immediately when creating (Type, Status, Source)</li><li><strong>Be consistent:</strong> Follow your naming conventions strictly</li><li><strong>Minimize tags:</strong> 20-30 well-defined tags > 100 vague tags</li><li><strong>Review monthly:</strong> Evaluate your tag strategy and consolidate if needed</li><li><strong>Documenteer alles:</strong> Create a team wiki with tag definitions and use cases</li><li><strong>Train your team:</strong> Ensure everyone follows the same standards</li><li><strong>Use colors:</strong> Color-code tag categories for quick visual identification</li><li><strong>Archive, don't delete:</strong> Move old contacts to archive status instead of deleting</li></ol>"
         },
         "es": {
           "text": "<ol><li><strong>Etiquetar al ingresar:</strong> Agrega al menos 3 etiquetas inmediatamente al crear (Tipo, Estado, Fuente)</li><li><strong>Ser consistente:</strong> Sigue tus convenciones de nomenclatura estrictamente</li><li><strong>Minimizar etiquetas:</strong> 20-30 etiquetas bien definidas > 100 etiquetas vagas</li><li><strong>Revisar mensualmente:</strong> Evalúa tu estrategia de etiquetas y consolida si es necesario</li><li><strong>Documentar todo:</strong> Crea un wiki de equipo con definiciones de etiquetas y casos de uso</li><li><strong>Capacitar a tu equipo:</strong> Asegúrate de que todos sigan los mismos estándares</li><li><strong>Usar colores:</strong> Codifica con colores las categorías de etiquetas para identificación visual rápida</li><li><strong>Archivar, no eliminar:</strong> Mueve contactos antiguos a estado de archivo en lugar de eliminar</li></ol>"
@@ -135,14 +140,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "contact-complete-guide",
     "contact-tags-organization",
     "contact-advanced-search",
     "data-hygiene-practices"
   ],
-
   "faq": [
     {
       "question": {
@@ -164,7 +167,7 @@
       },
       "answer": {
         "nl": "Verwijder ze NIET. Verplaats ze naar 'Archive' status of voeg een 'Past Client' tag toe. Deze contacten kunnen waardevol zijn voor toekomstige re-engagement campagnes, referrals, of marktonderzoek. Review archived contacts jaarlijks voor mogelijke re-activation.",
-        "en": "Do NOT delete them. Move them to 'Archive' status or add a 'Past Client' tag. These contacts can be valuable for future re-engagement campaigns, referrals, or market research. Review archived contacts annually for possible re-activation.",
+        "en": "Do niet delete them. Move them to 'Archive' status or add a 'Past Client' tag. These contacts can be valuable for future re-engagement campaigns, referrals, or market research. Review archived contacts annually for possible re-activation.",
         "es": "NO los elimines. Muévelos a estado 'Archivo' o agrega una etiqueta 'Past Client'. Estos contactos pueden ser valiosos para futuras campañas de re-compromiso, referencias o investigación de mercado. Revisa contactos archivados anualmente para posible reactivación."
       }
     }

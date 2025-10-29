@@ -36,8 +36,10 @@ const foundationArticles = allArticles
 const categories: Record<string, { nl: string; en: string; es: string; icon: string }> = {
   'getting-started': { nl: 'Aan de slag', en: 'Getting Started', es: 'Comenzar', icon: 'rocket_launch' },
   'contacts': { nl: 'Contactbeheer', en: 'Contact Management', es: 'Gestión de contactos', icon: 'groups' },
+  'deals': { nl: 'Dealmanagement', en: 'Deal Management', es: 'Gestión de deals', icon: 'handshake' },
   'properties': { nl: 'Woningbeheer', en: 'Property Management', es: 'Gestión de propiedades', icon: 'home' },
   'projects': { nl: 'Projecten & ontwikkelingen', en: 'Projects & Developments', es: 'Proyectos y desarrollos', icon: 'apartment' },
+  'calendar': { nl: 'Agenda', en: 'Calendar', es: 'Calendario', icon: 'calendar_month' },
   'communication': { nl: 'Communicatie', en: 'Communication', es: 'Comunicación', icon: 'forum' },
   'integrations': { nl: 'Integraties', en: 'Integrations', es: 'Integraciones', icon: 'hub' },
   'reports': { nl: 'Rapportages & analytics', en: 'Reports & Analytics', es: 'Informes y analytics', icon: 'analytics' },
@@ -97,7 +99,12 @@ const pageDescription = description;
 
         <div class="kb-article__hero-content">
           <div class="kb-article__meta">
-            <span class="kb-article__category">{articleData.meta.category}</span>
+            <a
+              href={getLocalizedPath(`/knowledge-base/category/${articleData.meta.category}`, locale)}
+              class="kb-article__category"
+            >
+              {categories[articleData.meta.category][locale]}
+            </a>
             <span class="kb-article__difficulty kb-article__difficulty--{articleData.meta.difficulty}">
               {articleData.meta.difficulty}
             </span>

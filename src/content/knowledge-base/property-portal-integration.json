@@ -7,18 +7,30 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "intermediate",
-    "tags": ["properties", "portals", "idealista", "fotocasa", "xml-feed", "integration"],
+    "tags": [
+      "properties",
+      "portals",
+      "idealista",
+      "fotocasa",
+      "xml-feed",
+      "integration"
+    ],
     "featured": true,
     "readingTime": 11,
     "videoIncluded": false,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "keywords": ["portal integration", "Idealista", "Fotocasa", "XML feed", "auto-sync", "property portals"]
+    "keywords": [
+      "portal integration",
+      "Idealista",
+      "Fotocasa",
+      "XML feed",
+      "auto-sync",
+      "property portals"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property portal integration in Tesoro CRM",
@@ -32,7 +44,6 @@
     },
     "icon": "sync"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +66,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "idealista-setup",
@@ -66,17 +76,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>API credentials instellen</h5><p>Configureer Idealista integration in 5 stappen:</p><ol><li>Ga naar Settings → Integrations → Idealista</li><li>Enter je Idealista API key (verkrijgbaar via Idealista Pro account)</li><li>Enter je Idealista username en password</li><li>Click 'Test Connection' om credentials te verifiëren</li><li>Enable 'Auto-sync' om automatische updates te activeren</li></ol><h5>Field mapping</h5><p>Tesoro mapt automatisch Tesoro fields naar Idealista fields:</p><ul><li><strong>Property type:</strong> Apartment → Piso, House → Casa, etc.</li><li><strong>Features:</strong> Pool → Piscina, Garage → Garaje</li><li><strong>Price:</strong> Automatic currency conversion</li><li><strong>Description:</strong> Multi-language support (ES/EN)</li><li><strong>Images:</strong> All images sync'd with order preserved</li></ul><p>Custom field mapping beschikbaar in Settings → Idealista → Field Mapping.</p><h5>Sync frequency</h5><ul><li><strong>Real-time sync:</strong> Changes in Tesoro → immediately to Idealista (via API)</li><li><strong>Bi-directional sync:</strong> Updates vanuit Idealista → Tesoro (every 1 hour)</li><li><strong>Manual sync:</strong> Force sync via 'Sync Now' button</li></ul>"
+          "text": "<h5>API credentials instellen</h5><p>Configureer Idealista integration in 5 stappen:</p><ol><li>Ga naar Settings → Integrations → Idealista</li><li>Enter je Idealista API key (verkrijgbaar via Idealista Pro account)</li><li>Enter je Idealista username en password</li><li>Click 'Test Connection' om credentials te verifiëren</li><li>Enable 'Auto-sync' om automatische updates te activeren</li></ol><h5>Field mapping</h5><p>Tesoro mapt automatisch Tesoro fields naar Idealista fields:</p><ul><li><strong>Property type:</strong> Apartment → Piso, House → Casa, etc.</li><li><strong>Features:</strong> Pool → Piscina, Garage → Garaje</li><li><strong>Prijs:</strong> Automatic currency conversion</li><li><strong>Description:</strong> Multi-language support (ES/EN)</li><li><strong>Images:</strong> All images sync'd with order preserved</li></ul><p>Custom field mapping beschikbaar in Settings → Idealista → Field Mapping.</p><h5>Sync frequency</h5><ul><li><strong>Real-time sync:</strong> Changes in Tesoro → immediately to Idealista (via API)</li><li><strong>Bi-directional sync:</strong> Updates vanuit Idealista → Tesoro (every 1 hour)</li><li><strong>Manual sync:</strong> Force sync via 'Sync Now' button</li></ul>"
         },
         "en": {
-          "text": "<h5>Setting up API credentials</h5><p>Configure Idealista integration in 5 steps:</p><ol><li>Go to Settings → Integrations → Idealista</li><li>Enter your Idealista API key (available via Idealista Pro account)</li><li>Enter your Idealista username and password</li><li>Click 'Test Connection' to verify credentials</li><li>Enable 'Auto-sync' to activate automatic updates</li></ol><h5>Field mapping</h5><p>Tesoro automatically maps Tesoro fields to Idealista fields:</p><ul><li><strong>Property type:</strong> Apartment → Piso, House → Casa, etc.</li><li><strong>Features:</strong> Pool → Piscina, Garage → Garaje</li><li><strong>Price:</strong> Automatic currency conversion</li><li><strong>Description:</strong> Multi-language support (ES/EN)</li><li><strong>Images:</strong> All images synced with order preserved</li></ul><p>Custom field mapping available in Settings → Idealista → Field Mapping.</p><h5>Sync frequency</h5><ul><li><strong>Real-time sync:</strong> Changes in Tesoro → immediately to Idealista (via API)</li><li><strong>Bi-directional sync:</strong> Updates from Idealista → Tesoro (every 1 hour)</li><li><strong>Manual sync:</strong> Force sync via 'Sync Now' button</li></ul>"
+          "text": "<h5>Setting up API credentials</h5><p>Configure Idealista integration in 5 steps:</p><ol><li>Go to Settings → Integrations → Idealista</li><li>Enter your Idealista API key (available via Idealista Pro account)</li><li>Enter your Idealista username and password</li><li>Click 'Test Connection' to verify credentials</li><li>Enable 'Auto-sync' to activate automatic updates</li></ol><h5>Field mapping</h5><p>Tesoro automatically maps Tesoro fields to Idealista fields:</p><ul><li><strong>Property type:</strong> Apartment → Piso, House → Casa, etc.</li><li><strong>Features:</strong> Pool → Piscina, Garage → Garaje</li><li><strong>Prijs:</strong> Automatic currency conversion</li><li><strong>Description:</strong> Multi-language support (ES/EN)</li><li><strong>Images:</strong> All images synced with order preserved</li></ul><p>Custom field mapping available in Settings → Idealista → Field Mapping.</p><h5>Sync frequency</h5><ul><li><strong>Real-time sync:</strong> Changes in Tesoro → immediately to Idealista (via API)</li><li><strong>Bi-directional sync:</strong> Updates from Idealista → Tesoro (every 1 hour)</li><li><strong>Manual sync:</strong> Force sync via 'Sync Now' button</li></ul>"
         },
         "es": {
           "text": "<h5>Configurar credenciales de API</h5><p>Configura la integración de Idealista en 5 pasos:</p><ol><li>Ve a Configuración → Integraciones → Idealista</li><li>Ingresa tu API key de Idealista (disponible vía cuenta Idealista Pro)</li><li>Ingresa tu nombre de usuario y contraseña de Idealista</li><li>Haz clic en 'Probar Conexión' para verificar credenciales</li><li>Activa 'Auto-sincronización' para activar actualizaciones automáticas</li></ol><h5>Mapeo de campos</h5><p>Tesoro mapea automáticamente campos de Tesoro a campos de Idealista:</p><ul><li><strong>Tipo de propiedad:</strong> Apartment → Piso, House → Casa, etc.</li><li><strong>Características:</strong> Pool → Piscina, Garage → Garaje</li><li><strong>Precio:</strong> Conversión automática de moneda</li><li><strong>Descripción:</strong> Soporte multi-idioma (ES/EN)</li><li><strong>Imágenes:</strong> Todas las imágenes sincronizadas con orden preservado</li></ul><p>Mapeo de campos personalizado disponible en Configuración → Idealista → Mapeo de Campos.</p><h5>Frecuencia de sincronización</h5><ul><li><strong>Sincronización en tiempo real:</strong> Cambios en Tesoro → inmediatamente a Idealista (vía API)</li><li><strong>Sincronización bidireccional:</strong> Actualizaciones de Idealista → Tesoro (cada 1 hora)</li><li><strong>Sincronización manual:</strong> Forzar sincronización vía botón 'Sincronizar Ahora'</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "fotocasa-setup",
@@ -90,14 +99,13 @@
           "text": "<h5>Fotocasa configuratie</h5><p>Setup vergelijkbaar met Idealista:</p><ol><li>Settings → Integrations → Fotocasa</li><li>Enter Fotocasa account credentials</li><li>Configure field mapping (automatisch voor standaard fields)</li><li>Enable auto-sync</li><li>Test met één property voor validation</li></ol><h5>Fotocasa specifieke features</h5><ul><li><strong>Property highlighting:</strong> Option om properties te highlighten op Fotocasa (premium feature)</li><li><strong>Top position:</strong> Boost properties naar top van search results</li><li><strong>Statistics import:</strong> View counts en contact requests vanuit Fotocasa → Tesoro</li></ul><h5>Sync timing</h5><p>Fotocasa updates zijn niet real-time maar wel frequent:</p><ul><li>New properties: Within 5-10 minutes</li><li>Price changes: Within 10 minutes</li><li>Status changes (sold/rented): Within 15 minutes</li><li>Image updates: Within 30 minutes</li></ul><p>Check sync status in Settings → Fotocasa → Sync Log.</p>"
         },
         "en": {
-          "text": "<h5>Fotocasa configuration</h5><p>Setup similar to Idealista:</p><ol><li>Settings → Integrations → Fotocasa</li><li>Enter Fotocasa account credentials</li><li>Configure field mapping (automatic for standard fields)</li><li>Enable auto-sync</li><li>Test with one property for validation</li></ol><h5>Fotocasa specific features</h5><ul><li><strong>Property highlighting:</strong> Option to highlight properties on Fotocasa (premium feature)</li><li><strong>Top position:</strong> Boost properties to top of search results</li><li><strong>Statistics import:</strong> View counts and contact requests from Fotocasa → Tesoro</li></ul><h5>Sync timing</h5><p>Fotocasa updates are not real-time but frequent:</p><ul><li>New properties: Within 5-10 minutes</li><li>Price changes: Within 10 minutes</li><li>Status changes (sold/rented): Within 15 minutes</li><li>Image updates: Within 30 minutes</li></ul><p>Check sync status in Settings → Fotocasa → Sync Log.</p>"
+          "text": "<h5>Fotocasa configuration</h5><p>Setup similar to Idealista:</p><ol><li>Settings → Integrations → Fotocasa</li><li>Enter Fotocasa account credentials</li><li>Configure field mapping (automatic for standard fields)</li><li>Enable auto-sync</li><li>Test with one property for validation</li></ol><h5>Fotocasa specific features</h5><ul><li><strong>Property highlighting:</strong> Option to highlight properties on Fotocasa (premium feature)</li><li><strong>Top position:</strong> Boost properties to top of search results</li><li><strong>Statistics import:</strong> View counts and contact requests from Fotocasa → Tesoro</li></ul><h5>Sync timing</h5><p>Fotocasa updates are niet real-time but frequent:</p><ul><li>New properties: Within 5-10 minutes</li><li>Price changes: Within 10 minutes</li><li>Status changes (sold/rented): Within 15 minutes</li><li>Image updates: Within 30 minutes</li></ul><p>Check sync status in Settings → Fotocasa → Sync Log.</p>"
         },
         "es": {
           "text": "<h5>Configuración de Fotocasa</h5><p>Configuración similar a Idealista:</p><ol><li>Configuración → Integraciones → Fotocasa</li><li>Ingresa credenciales de cuenta Fotocasa</li><li>Configura mapeo de campos (automático para campos estándar)</li><li>Activa auto-sincronización</li><li>Prueba con una propiedad para validación</li></ol><h5>Características específicas de Fotocasa</h5><ul><li><strong>Destacar propiedad:</strong> Opción para destacar propiedades en Fotocasa (característica premium)</li><li><strong>Posición superior:</strong> Impulsar propiedades a la parte superior de resultados de búsqueda</li><li><strong>Importación de estadísticas:</strong> Conteos de vistas y solicitudes de contacto de Fotocasa → Tesoro</li></ul><h5>Tiempo de sincronización</h5><p>Las actualizaciones de Fotocasa no son en tiempo real pero son frecuentes:</p><ul><li>Propiedades nuevas: En 5-10 minutos</li><li>Cambios de precio: En 10 minutos</li><li>Cambios de estado (vendido/alquilado): En 15 minutos</li><li>Actualizaciones de imágenes: En 30 minutos</li></ul><p>Verifica estado de sincronización en Configuración → Fotocasa → Registro de Sync.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "xml-feeds",
@@ -118,7 +126,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "sync-monitoring",
@@ -129,17 +136,16 @@
       },
       "content": {
         "nl": {
-          "text": "<h5>Sync status tracking</h5><p>Monitor portal sync status in real-time:</p><ul><li><strong>Dashboard widget:</strong> Shows sync health (green/yellow/red)</li><li><strong>Property detail:</strong> Last synced timestamp per portal</li><li><strong>Sync log:</strong> Complete history van alle sync events</li><li><strong>Error alerts:</strong> Notification bij sync failures</li></ul><h5>Common sync errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Property missing energy certificate\"</li><li>Fix: Upload energy certificate in Documents tab</li></ul><p><strong>Invalid coordinates:</strong></p><ul><li>Error: \"Invalid location data\"</li><li>Fix: Re-geocode address via Mapbox lookup</li></ul><p><strong>Image upload failures:</strong></p><ul><li>Error: \"Image too large for portal\"</li><li>Fix: Tesoro auto-resizes images - check image format (JPG/PNG only)</li></ul><p><strong>API rate limits:</strong></p><ul><li>Error: \"Too many requests\"</li><li>Fix: Automatic retry after 1 hour, no action needed</li></ul><h5>Sync troubleshooting checklist</h5><ol><li>Check Settings → Portal Integration → Connection Status</li><li>Verify API credentials zijn correct</li><li>Review Sync Log voor specific error messages</li><li>Test connection via 'Test API' button</li><li>Check property has all required fields</li><li>Contact support als errors persistent zijn</li></ol>"
+          "text": "<h5>Sync status tracking</h5><p>Monitor portal sync status in real-time:</p><ul><li><strong>Dashboard widget:</strong> Shows sync health (green/yellow/red)</li><li><strong>Property detail:</strong> Last synced timestamp per portal</li><li><strong>Sync log:</strong> Complete history van alle sync events</li><li><strong>Error alerts:</strong> nietification bij sync failures</li></ul><h5>Common sync errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Property missing energy certificate\"</li><li>Fix: Upload energy certificate in Documents tab</li></ul><p><strong>Invalid coordinates:</strong></p><ul><li>Error: \"Invalid location data\"</li><li>Fix: Re-geocode address via Mapbox lookup</li></ul><p><strong>Image upload failures:</strong></p><ul><li>Error: \"Image too large for portal\"</li><li>Fix: Tesoro auto-resizes images - check image format (JPG/PNG only)</li></ul><p><strong>API rate limits:</strong></p><ul><li>Error: \"Too many requests\"</li><li>Fix: Automatic retry after 1 hour, no action needed</li></ul><h5>Sync troubleshooting checklist</h5><ol><li>Check Settings → Portal Integration → Connection Status</li><li>Verify API credentials zijn correct</li><li>Review Sync Log voor specific error messages</li><li>Test connection via 'Test API' button</li><li>Check property has all required fields</li><li>Contact support als errors persistent zijn</li></ol>"
         },
         "en": {
-          "text": "<h5>Sync status tracking</h5><p>Monitor portal sync status in real-time:</p><ul><li><strong>Dashboard widget:</strong> Shows sync health (green/yellow/red)</li><li><strong>Property detail:</strong> Last synced timestamp per portal</li><li><strong>Sync log:</strong> Complete history of all sync events</li><li><strong>Error alerts:</strong> Notification on sync failures</li></ul><h5>Common sync errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Property missing energy certificate\"</li><li>Fix: Upload energy certificate in Documents tab</li></ul><p><strong>Invalid coordinates:</strong></p><ul><li>Error: \"Invalid location data\"</li><li>Fix: Re-geocode address via Mapbox lookup</li></ul><p><strong>Image upload failures:</strong></p><ul><li>Error: \"Image too large for portal\"</li><li>Fix: Tesoro auto-resizes images - check image format (JPG/PNG only)</li></ul><p><strong>API rate limits:</strong></p><ul><li>Error: \"Too many requests\"</li><li>Fix: Automatic retry after 1 hour, no action needed</li></ul><h5>Sync troubleshooting checklist</h5><ol><li>Check Settings → Portal Integration → Connection Status</li><li>Verify API credentials are correct</li><li>Review Sync Log for specific error messages</li><li>Test connection via 'Test API' button</li><li>Check property has all required fields</li><li>Contact support if errors persist</li></ol>"
+          "text": "<h5>Sync status tracking</h5><p>Monitor portal sync status in real-time:</p><ul><li><strong>Dashboard widget:</strong> Shows sync health (green/yellow/red)</li><li><strong>Property detail:</strong> Last synced timestamp per portal</li><li><strong>Sync log:</strong> Complete history of all sync events</li><li><strong>Error alerts:</strong> nietification on sync failures</li></ul><h5>Common sync errors</h5><p><strong>Missing required fields:</strong></p><ul><li>Error: \"Property missing energy certificate\"</li><li>Fix: Upload energy certificate in Documents tab</li></ul><p><strong>Invalid coordinates:</strong></p><ul><li>Error: \"Invalid location data\"</li><li>Fix: Re-geocode address via Mapbox lookup</li></ul><p><strong>Image upload failures:</strong></p><ul><li>Error: \"Image too large for portal\"</li><li>Fix: Tesoro auto-resizes images - check image format (JPG/PNG only)</li></ul><p><strong>API rate limits:</strong></p><ul><li>Error: \"Too many requests\"</li><li>Fix: Automatic retry after 1 hour, no action needed</li></ul><h5>Sync troubleshooting checklist</h5><ol><li>Check Settings → Portal Integration → Connection Status</li><li>Verify API credentials are correct</li><li>Review Sync Log for specific error messages</li><li>Test connection via 'Test API' button</li><li>Check property has all required fields</li><li>Contact support if errors persist</li></ol>"
         },
         "es": {
-          "text": "<h5>Seguimiento de estado de sincronización</h5><p>Monitorea el estado de sincronización de portales en tiempo real:</p><ul><li><strong>Widget de dashboard:</strong> Muestra salud de sincronización (verde/amarillo/rojo)</li><li><strong>Detalle de propiedad:</strong> Marca de tiempo de última sincronización por portal</li><li><strong>Registro de sincronización:</strong> Historial completo de todos los eventos de sincronización</li><li><strong>Alertas de errores:</strong> Notificación en fallas de sincronización</li></ul><h5>Errores comunes de sincronización</h5><p><strong>Campos requeridos faltantes:</strong></p><ul><li>Error: \"Propiedad sin certificado energético\"</li><li>Solución: Sube certificado energético en pestaña Documentos</li></ul><p><strong>Coordenadas inválidas:</strong></p><ul><li>Error: \"Datos de ubicación inválidos\"</li><li>Solución: Re-geocodifica dirección vía búsqueda de Mapbox</li></ul><p><strong>Fallas de subida de imágenes:</strong></p><ul><li>Error: \"Imagen demasiado grande para portal\"</li><li>Solución: Tesoro redimensiona imágenes automáticamente - verifica formato de imagen (solo JPG/PNG)</li></ul><p><strong>Límites de tasa de API:</strong></p><ul><li>Error: \"Demasiadas solicitudes\"</li><li>Solución: Reintento automático después de 1 hora, no se necesita acción</li></ul><h5>Lista de verificación de solución de problemas de sincronización</h5><ol><li>Verifica Configuración → Integración de Portales → Estado de Conexión</li><li>Verifica que las credenciales de API son correctas</li><li>Revisa Registro de Sincronización para mensajes de error específicos</li><li>Prueba conexión vía botón 'Probar API'</li><li>Verifica que la propiedad tiene todos los campos requeridos</li><li>Contacta soporte si los errores persisten</li></ol>"
+          "text": "<h5>Seguimiento de estado de sincronización</h5><p>Monitorea el estado de sincronización de portales en tiempo real:</p><ul><li><strong>Widget de dashboard:</strong> Muestra salud de sincronización (verde/amarillo/rojo)</li><li><strong>Detalle de propiedad:</strong> Marca de tiempo de última sincronización por portal</li><li><strong>Registro de sincronización:</strong> Historial completo de todos los eventos de sincronización</li><li><strong>Alertas de errores:</strong> nietificación en fallas de sincronización</li></ul><h5>Errores comunes de sincronización</h5><p><strong>Campos requeridos faltantes:</strong></p><ul><li>Error: \"Propiedad sin certificado energético\"</li><li>Solución: Sube certificado energético en pestaña Documentos</li></ul><p><strong>Coordenadas inválidas:</strong></p><ul><li>Error: \"Datos de ubicación inválidos\"</li><li>Solución: Re-geocodifica dirección vía búsqueda de Mapbox</li></ul><p><strong>Fallas de subida de imágenes:</strong></p><ul><li>Error: \"Imagen demasiado grande para portal\"</li><li>Solución: Tesoro redimensiona imágenes automáticamente - verifica formato de imagen (solo JPG/PNG)</li></ul><p><strong>Límites de tasa de API:</strong></p><ul><li>Error: \"Demasiadas solicitudes\"</li><li>Solución: Reintento automático después de 1 hora, no se necesita acción</li></ul><h5>Lista de verificación de solución de problemas de sincronización</h5><ol><li>Verifica Configuración → Integración de Portales → Estado de Conexión</li><li>Verifica que las credenciales de API son correctas</li><li>Revisa Registro de Sincronización para mensajes de error específicos</li><li>Prueba conexión vía botón 'Probar API'</li><li>Verifica que la propiedad tiene todos los campos requeridos</li><li>Contacta soporte si los errores persisten</li></ol>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "portal-best-practices",
@@ -162,14 +168,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "property-management-overview",
     "adding-properties-guide",
     "property-bulk-import",
     "property-media-management"
   ],
-
   "faq": [
     {
       "question": {
@@ -179,14 +183,14 @@
       },
       "answer": {
         "nl": "Met Idealista's API integration zijn nieuwe properties doorgaans binnen 5-15 minuten zichtbaar op Idealista. De exacte timing hangt af van Idealista's processing queue. Je kunt de sync status checken in Settings → Idealista → Sync Log. Als een property na 30 minuten nog niet zichtbaar is, check de Sync Log voor errors.",
-        "en": "With Idealista's API integration, new properties are typically visible on Idealista within 5-15 minutes. The exact timing depends on Idealista's processing queue. You can check sync status in Settings → Idealista → Sync Log. If a property is not visible after 30 minutes, check the Sync Log for errors.",
+        "en": "With Idealista's API integration, new properties are typically visible on Idealista within 5-15 minutes. The exact timing depends on Idealista's processing queue. You can check sync status in Settings → Idealista → Sync Log. If a property is niet visible after 30 minutes, check the Sync Log for errors.",
         "es": "Con la integración de API de Idealista, las propiedades nuevas son típicamente visibles en Idealista en 5-15 minutos. El tiempo exacto depende de la cola de procesamiento de Idealista. Puedes verificar el estado de sincronización en Configuración → Idealista → Registro de Sync. Si una propiedad no es visible después de 30 minutos, verifica el Registro de Sync para errores."
       }
     },
     {
       "question": {
         "nl": "Kan ik selectief properties synchroniseren (niet alle properties naar elke portal)?",
-        "en": "Can I selectively sync properties (not all properties to each portal)?",
+        "en": "Can I selectively sync properties (niet all properties to each portal)?",
         "es": "¿Puedo sincronizar propiedades selectivamente (no todas las propiedades a cada portal)?"
       },
       "answer": {

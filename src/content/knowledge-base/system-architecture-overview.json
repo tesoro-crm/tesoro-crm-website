@@ -4,25 +4,34 @@
     "version": "1.0.0",
     "publishDate": "2024-10-13",
     "updatedAt": "2024-10-13T15:00:00Z",
-    "authorId": "maria-perez", 
+    "authorId": "maria-perez",
     "category": "getting-started",
     "difficulty": "intermediate",
-    "tags": ["architecture", "system-overview", "modules", "enterprise"],
+    "tags": [
+      "architecture",
+      "system-overview",
+      "modules",
+      "enterprise"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop",
-    "keywords": ["Tesoro CRM architectuur", "systeem overzicht", "modules", "enterprise CRM", "real estate platform"]
+    "keywords": [
+      "Tesoro CRM architectuur",
+      "systeem overzicht",
+      "modules",
+      "enterprise CRM",
+      "real estate platform"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Tesoro CRM Systeem Architectuur - Complete Gids",
-      "en": "Tesoro CRM System Architecture - Complete Guide", 
+      "en": "Tesoro CRM System Architecture - Complete Guide",
       "es": "Arquitectura del Sistema Tesoro CRM - Guía Completa"
     },
     "description": {
@@ -32,7 +41,6 @@
     },
     "icon": "🏗️"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +57,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "core-modules",
@@ -70,14 +77,13 @@
         }
       }
     },
-
     {
       "type": "callout",
-      "id": "unified-architecture", 
+      "id": "unified-architecture",
       "variant": "info",
       "title": {
         "nl": "💡 Unified Component Architecture",
-        "en": "💡 Unified Component Architecture", 
+        "en": "💡 Unified Component Architecture",
         "es": "💡 Arquitectura de Componentes Unificada"
       },
       "content": {
@@ -92,7 +98,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "detailed-modules",
@@ -103,38 +108,36 @@
       },
       "content": {
         "nl": {
-          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basis contactinformatie en preferences</li><li><strong>DEAL</strong> - Gekoppelde deals en pipeline status</li><li><strong>EMAILS</strong> - Complete email geschiedenis met threading</li><li><strong>CALLS</strong> - Call logs met Twilio integratie</li><li><strong>MEETINGS</strong> - Meeting historie en scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>NOTES</strong> - Notes met @mentions en AI translation</li><li><strong>SMS</strong> - SMS communicatie historie</li><li><strong>WHATSAPP</strong> - WhatsApp Business integratie</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>Het property systeem bevat <strong>69+ enum types</strong> voor complete property characterisatie: van basic types (status, type, contactType) tot geavanceerde features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integratie voor 13 talen en 3 landen.</p>"
+          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basis contactinformatie en preferences</li><li><strong>DEAL</strong> - Gekoppelde deals en pipeline status</li><li><strong>EMAILS</strong> - Complete email geschiedenis met threading</li><li><strong>CALLS</strong> - Call logs met Twilio integratie</li><li><strong>MEETINGS</strong> - Meeting historie en scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>nietES</strong> - notes met @mentions en AI translation</li><li><strong>SMS</strong> - SMS communicatie historie</li><li><strong>WHATSAPP</strong> - WhatsApp Business integratie</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>Het property systeem bevat <strong>69+ enum types</strong> voor complete property characterisatie: van basic types (status, type, contactType) tot geavanceerde features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integratie voor 13 talen en 3 landen.</p>"
         },
         "en": {
-          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basic contact information and preferences</li><li><strong>DEAL</strong> - Associated deals and pipeline status</li><li><strong>EMAILS</strong> - Complete email history with threading</li><li><strong>CALLS</strong> - Call logs with Twilio integration</li><li><strong>MEETINGS</strong> - Meeting history and scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>NOTES</strong> - Notes with @mentions and AI translation</li><li><strong>SMS</strong> - SMS communication history</li><li><strong>WHATSAPP</strong> - WhatsApp Business integration</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>The property system contains <strong>69+ enum types</strong> for complete property characterization: from basic types (status, type, contactType) to advanced features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integration for 13 languages and 3 countries.</p>"
+          "text": "<h3>Contact/Lead Sub-Modules (10 Tabs per Contact)</h3><ul><li><strong>INFO</strong> - Basic contact information and preferences</li><li><strong>DEAL</strong> - Associated deals and pipeline status</li><li><strong>EMAILS</strong> - Complete email history with threading</li><li><strong>CALLS</strong> - Call logs with Twilio integration</li><li><strong>MEETINGS</strong> - Meeting history and scheduling</li><li><strong>TASKS</strong> - Task management per contact</li><li><strong>nietES</strong> - notes with @mentions and AI translation</li><li><strong>SMS</strong> - SMS communication history</li><li><strong>WHATSAPP</strong> - WhatsApp Business integration</li><li><strong>ATTACHMENTS</strong> - File management per contact</li></ul><h3>Advanced Property System</h3><p>The property system contains <strong>69+ enum types</strong> for complete property characterization: from basic types (status, type, contactType) to advanced features (energyRatingType, swimmingPoolType, windowsMaterialType). Plus Kyero MLS integration for 13 languages and 3 countries.</p>"
         },
         "es": {
-          "text": "<h3>Sub-Módulos de Contacto/Lead (10 Pestañas por Contacto)</h3><ul><li><strong>INFO</strong> - Información básica de contacto y preferencias</li><li><strong>DEAL</strong> - Deals asociados y estado del pipeline</li><li><strong>EMAILS</strong> - Historial completo de emails con hilos</li><li><strong>CALLS</strong> - Registros de llamadas con integración Twilio</li><li><strong>MEETINGS</strong> - Historial de reuniones y programación</li><li><strong>TASKS</strong> - Gestión de tareas por contacto</li><li><strong>NOTES</strong> - Notas con @menciones y traducción IA</li><li><strong>SMS</strong> - Historial de comunicación SMS</li><li><strong>WHATSAPP</strong> - Integración WhatsApp Business</li><li><strong>ATTACHMENTS</strong> - Gestión de archivos por contacto</li></ul><h3>Sistema de Propiedades Avanzado</h3><p>El sistema de propiedades contiene <strong>más de 69 tipos de enum</strong> para caracterización completa de propiedades: desde tipos básicos (estado, tipo, contactType) hasta características avanzadas (energyRatingType, swimmingPoolType, windowsMaterialType). Además de integración Kyero MLS para 13 idiomas y 3 países.</p>"
+          "text": "<h3>Sub-Módulos de Contacto/Lead (10 Pestañas por Contacto)</h3><ul><li><strong>INFO</strong> - Información básica de contacto y preferencias</li><li><strong>DEAL</strong> - Deals asociados y estado del pipeline</li><li><strong>EMAILS</strong> - Historial completo de emails con hilos</li><li><strong>CALLS</strong> - Registros de llamadas con integración Twilio</li><li><strong>MEETINGS</strong> - Historial de reuniones y programación</li><li><strong>TASKS</strong> - Gestión de tareas por contacto</li><li><strong>nietES</strong> - nietas con @menciones y traducción IA</li><li><strong>SMS</strong> - Historial de comunicación SMS</li><li><strong>WHATSAPP</strong> - Integración WhatsApp Business</li><li><strong>ATTACHMENTS</strong> - Gestión de archivos por contacto</li></ul><h3>Sistema de Propiedades Avanzado</h3><p>El sistema de propiedades contiene <strong>más de 69 tipos de enum</strong> para caracterización completa de propiedades: desde tipos básicos (estado, tipo, contactType) hasta características avanzadas (energyRatingType, swimmingPoolType, windowsMaterialType). Además de integración Kyero MLS para 13 idiomas y 3 países.</p>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "communication-systems",
       "title": {
         "nl": "Communication Ecosystem",
-        "en": "Communication Ecosystem", 
+        "en": "Communication Ecosystem",
         "es": "Ecosistema de Comunicación"
       },
       "content": {
         "nl": {
-          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integreert alle communicatiekanalen in één systeem:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony met real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, en IMAP/SMTP integratie</li><li><strong>WhatsApp Business</strong> - Template-based messaging met pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS verzending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels voor live data sync</li><li><strong>@Mentions System</strong> - Tag team members in notes, emails, deals</li><li><strong>Audio Notifications</strong> - Sound alerts voor critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all team members</li></ul>"
+          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integreert alle communicatiekanalen in één systeem:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony met real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, en IMAP/SMTP integratie</li><li><strong>WhatsApp Business</strong> - Template-based messaging met pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS verzending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels voor live data sync</li><li><strong>@Mentions System</strong> - Tag teamlids in notes, emails, deals</li><li><strong>Audio nietifications</strong> - Sound alerts voor critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all teamlids</li></ul>"
         },
         "en": {
-          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integrates all communication channels into one system:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony with real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, and IMAP/SMTP integration</li><li><strong>WhatsApp Business</strong> - Template-based messaging with pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS sending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels for live data sync</li><li><strong>@Mentions System</strong> - Tag team members in notes, emails, deals</li><li><strong>Audio Notifications</strong> - Sound alerts for critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all team members</li></ul>"
+          "text": "<h3>Multi-Channel Communication Hub</h3><p>Tesoro integrates all communication channels into one system:</p><ul><li><strong>Twilio Calls</strong> - Enterprise telephony with real-time call events via Pusher WebSockets</li><li><strong>Email Threading</strong> - Gmail API, Outlook API, and IMAP/SMTP integration</li><li><strong>WhatsApp Business</strong> - Template-based messaging with pre-approved business templates</li><li><strong>SMS Integration</strong> - Direct SMS sending via provider</li></ul><h3>Real-Time Collaboration</h3><ul><li><strong>Pusher WebSockets</strong> - Per-user channels for live data sync</li><li><strong>@Mentions System</strong> - Tag teamlids in notes, emails, deals</li><li><strong>Audio nietifications</strong> - Sound alerts for critical events</li><li><strong>Live Updates</strong> - Real-time refresh across all teamlids</li></ul>"
         },
         "es": {
-          "text": "<h3>Hub de Comunicación Multi-Canal</h3><p>Tesoro integra todos los canales de comunicación en un sistema:</p><ul><li><strong>Llamadas Twilio</strong> - Telefonía empresarial con eventos de llamadas en tiempo real a través de Pusher WebSockets</li><li><strong>Hilos de Email</strong> - Integración Gmail API, Outlook API e IMAP/SMTP</li><li><strong>WhatsApp Business</strong> - Mensajería basada en plantillas con templates de negocio pre-aprobados</li><li><strong>Integración SMS</strong> - Envío directo de SMS a través del proveedor</li></ul><h3>Colaboración en Tiempo Real</h3><ul><li><strong>Pusher WebSockets</strong> - Canales por usuario para sincronización de datos en vivo</li><li><strong>Sistema @Menciones</strong> - Etiqueta miembros del equipo en notas, emails, deals</li><li><strong>Notificaciones de Audio</strong> - Alertas de sonido para eventos críticos</li><li><strong>Actualizaciones en Vivo</strong> - Actualización en tiempo real para todos los miembros del equipo</li></ul>"
+          "text": "<h3>Hub de Comunicación Multi-Canal</h3><p>Tesoro integra todos los canales de comunicación en un sistema:</p><ul><li><strong>Llamadas Twilio</strong> - Telefonía empresarial con eventos de llamadas en tiempo real a través de Pusher WebSockets</li><li><strong>Hilos de Email</strong> - Integración Gmail API, Outlook API e IMAP/SMTP</li><li><strong>WhatsApp Business</strong> - Mensajería basada en plantillas con templates de negocio pre-aprobados</li><li><strong>Integración SMS</strong> - Envío directo de SMS a través del proveedor</li></ul><h3>Colaboración en Tiempo Real</h3><ul><li><strong>Pusher WebSockets</strong> - Canales por usuario para sincronización de datos en vivo</li><li><strong>Sistema @Menciones</strong> - Etiqueta miembros del equipo en nietas, emails, deals</li><li><strong>nietificaciones de Audio</strong> - Alertas de sonido para eventos críticos</li><li><strong>Actualizaciones en Vivo</strong> - Actualización en tiempo real para todos los miembros del equipo</li></ul>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "ai-automation",
@@ -155,7 +158,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "enterprise-features",
@@ -178,13 +180,11 @@
       }
     }
   ],
-
   "relatedArticles": [
-    "deal-pipeline-guide", 
+    "deal-pipeline-guide",
     "property-management-advanced",
     "ai-translation-features"
   ],
-
   "faq": [
     {
       "question": {

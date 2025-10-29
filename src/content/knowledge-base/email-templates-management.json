@@ -5,9 +5,15 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "carlos-martinez",
-    "category": "settings",
+    "category": "communication",
     "difficulty": "intermediate",
-    "tags": ["settings", "email", "templates", "communication", "automation"],
+    "tags": [
+      "settings",
+      "email",
+      "templates",
+      "communication",
+      "automation"
+    ],
     "featured": false,
     "readingTime": 8,
     "videoIncluded": false,
@@ -15,7 +21,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1200&h=630&fit=crop",
-    "keywords": ["email templates", "email automation", "communication", "templates", "tesoro crm"]
+    "keywords": [
+      "email templates",
+      "email automation",
+      "communication",
+      "templates",
+      "tesoro crm"
+    ]
   },
   "hero": {
     "title": {
@@ -178,9 +190,9 @@
             "es": "Ofertas y negociaciones"
           },
           "description": {
-            "nl": "**Bevestiging bod ontvangen**: Bevestig ontvangst en leg vervolgproces uit\n\n**Bod geaccepteerd**: Felicitaties en volgende stappen naar notaris\n\n**Bod afgewezen**: Leg uit waarom en stel alternatieven voor\n\n**Tegenbod ontvangen**: Communiceer nieuwe voorwaarden",
-            "en": "**Offer received confirmation**: Confirm receipt and explain follow-up process\n\n**Offer accepted**: Congratulations and next steps to notary\n\n**Offer rejected**: Explain why and suggest alternatives\n\n**Counter-offer received**: Communicate new conditions",
-            "es": "**Confirmación de oferta recibida**: Confirme la recepción y explique el proceso de seguimiento\n\n**Oferta aceptada**: Felicitaciones y próximos pasos hacia el notario\n\n**Oferta rechazada**: Explique por qué y sugiera alternativas\n\n**Contraoferta recibida**: Comunique las nuevas condiciones"
+            "nl": "**Bevestiging bod ontvangen**: Bevestig ontvangst en leg vervolgproces uit\n\n**Bod geaccepteerd**: Felicitaties en volgende stappen naar nietaris\n\n**Bod afgewezen**: Leg uit waarom en stel alternatieven voor\n\n**Tegenbod ontvangen**: Communiceer nieuwe voorwaarden",
+            "en": "**Offer received confirmation**: Confirm receipt and explain follow-up process\n\n**Offer accepted**: Congratulations and next steps to nietary\n\n**Offer rejected**: Explain why and suggest alternatives\n\n**Counter-offer received**: Communicate new conditions",
+            "es": "**Confirmación de oferta recibida**: Confirme la recepción y explique el proceso de seguimiento\n\n**Oferta aceptada**: Felicitaciones y próximos pasos hacia el nietario\n\n**Oferta rechazada**: Explique por qué y sugiera alternativas\n\n**Contraoferta recibida**: Comunique las nuevas condiciones"
           }
         },
         {
@@ -190,9 +202,9 @@
             "es": "Contrato y transferencia"
           },
           "description": {
-            "nl": "**Notaris geselecteerd**: Introductie notaris en benodigde documenten\n\n**Koopakte klaar**: Uitnodiging voor ondertekening\n\n**Datum overdracht bevestigd**: Praktische zaken sleuteloverdracht\n\n**Gefeliciteerd met uw nieuwe huis**: Afsluiting deal en verzoek om review",
-            "en": "**Notary selected**: Introduction notary and required documents\n\n**Purchase deed ready**: Invitation for signing\n\n**Transfer date confirmed**: Practical matters key handover\n\n**Congratulations on your new home**: Deal closure and review request",
-            "es": "**Notario seleccionado**: Introducción del notario y documentos requeridos\n\n**Escritura de compra lista**: Invitación para firmar\n\n**Fecha de transferencia confirmada**: Asuntos prácticos entrega de llaves\n\n**Felicitaciones por su nuevo hogar**: Cierre del acuerdo y solicitud de revisión"
+            "nl": "**nietaris geselecteerd**: Introductie nietaris en benodigde documenten\n\n**Koopakte klaar**: Uitnodiging voor ondertekening\n\n**Datum overdracht bevestigd**: Praktische zaken sleuteloverdracht\n\n**Gefeliciteerd met uw nieuwe huis**: Afsluiting deal en verzoek om review",
+            "en": "**nietary selected**: Introduction nietary and required documents\n\n**Purchase deed ready**: Invitation for signing\n\n**Transfer date confirmed**: Practical matters key handover\n\n**Congratulations on your new home**: Deal closure and review request",
+            "es": "**nietario seleccionado**: Introducción del nietario y documentos requeridos\n\n**Escritura de compra lista**: Invitación para firmar\n\n**Fecha de transferencia confirmada**: Asuntos prácticos entrega de llaves\n\n**Felicitaciones por su nuevo hogar**: Cierre del acuerdo y solicitud de revisión"
           }
         }
       ]
@@ -252,9 +264,9 @@
             "es": "Activadores basados en etiquetas"
           },
           "description": {
-            "nl": "Verstuur sjablonen automatisch wanneer een specifieke tag wordt toegevoegd. Bijvoorbeeld: wanneer tag 'Hot Lead' wordt toegevoegd, notificeer de manager en verstuur een prioriteits follow-up sjabloon. Of wanneer tag 'VIP' wordt toegevoegd, activeer een speciaal welkomstproces.",
-            "en": "Send templates automatically when a specific tag is added. For example: when 'Hot Lead' tag is added, notify the manager and send a priority follow-up template. Or when 'VIP' tag is added, activate a special welcome process.",
-            "es": "Envíe plantillas automáticamente cuando se agrega una etiqueta específica. Por ejemplo: cuando se agrega la etiqueta 'Cliente potencial caliente', notifique al gerente y envíe una plantilla de seguimiento prioritaria. O cuando se agrega la etiqueta 'VIP', active un proceso de bienvenida especial."
+            "nl": "Verstuur sjablonen automatisch wanneer een specifieke tag wordt toegevoegd. Bijvoorbeeld: wanneer tag 'Hot Lead' wordt toegevoegd, nietificeer de manager en verstuur een prioriteits follow-up sjabloon. Of wanneer tag 'VIP' wordt toegevoegd, activeer een speciaal welkomstproces.",
+            "en": "Send templates automatically when a specific tag is added. For example: when 'Hot Lead' tag is added, nietify the manager and send a priority follow-up template. Or when 'VIP' tag is added, activate a special welcome process.",
+            "es": "Envíe plantillas automáticamente cuando se agrega una etiqueta específica. Por ejemplo: cuando se agrega la etiqueta 'Cliente potencial caliente', nietifique al gerente y envíe una plantilla de seguimiento prioritaria. O cuando se agrega la etiqueta 'VIP', active un proceso de bienvenida especial."
           }
         }
       ]
@@ -292,7 +304,7 @@
           "answer": {
             "nl": "Ja, wanneer u een sjabloon selecteert, kunt u altijd de inhoud aanpassen voordat u verzendt. Dit is handig voor het toevoegen van persoonlijke notities of aanpassen van details voor een specifieke situatie. Het originele sjabloon blijft ongewijzigd.",
             "en": "Yes, when you select a template, you can always modify the content before sending. This is useful for adding personal notes or adjusting details for a specific situation. The original template remains unchanged.",
-            "es": "Sí, cuando selecciona una plantilla, siempre puede modificar el contenido antes de enviar. Esto es útil para agregar notas personales o ajustar detalles para una situación específica. La plantilla original permanece sin cambios."
+            "es": "Sí, cuando selecciona una plantilla, siempre puede modificar el contenido antes de enviar. Esto es útil para agregar nietas personales o ajustar detalles para una situación específica. La plantilla original permanece sin cambios."
           }
         },
         {
@@ -303,7 +315,7 @@
           },
           "answer": {
             "nl": "Als een dynamisch veld geen waarde heeft (bijvoorbeeld {{property.price}} maar de woning heeft geen prijs), wordt het veld niet weergegeven in de verzonden e-mail. Het systeem waarschuwt u bij het opstellen als essentiële velden ontbreken, zodat u deze kunt aanvullen of het sjabloon kunt aanpassen.",
-            "en": "If a dynamic field has no value (e.g., {{property.price}} but the property has no price), the field is not displayed in the sent email. The system warns you when composing if essential fields are missing, so you can fill them in or adjust the template.",
+            "en": "If a dynamic field has no value (e.g., {{property.price}} but the property has no price), the field is niet displayed in the sent email. The system warns you when composing if essential fields are missing, so you can fill them in or adjust the template.",
             "es": "Si un campo dinámico no tiene valor (por ejemplo, {{property.price}} pero la propiedad no tiene precio), el campo no se muestra en el correo electrónico enviado. El sistema le advierte al redactar si faltan campos esenciales, para que pueda completarlos o ajustar la plantilla."
           }
         },

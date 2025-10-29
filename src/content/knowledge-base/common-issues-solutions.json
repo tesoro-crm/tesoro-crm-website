@@ -7,18 +7,28 @@
     "authorId": "carlos-martinez",
     "category": "troubleshooting",
     "difficulty": "beginner",
-    "tags": ["troubleshooting", "faq", "common-problems", "solutions", "support"],
+    "tags": [
+      "troubleshooting",
+      "faq",
+      "common-problems",
+      "solutions",
+      "support"
+    ],
     "featured": true,
     "readingTime": 8,
     "videoIncluded": false,
     "aiGenerated": true
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&fit=crop",
-    "keywords": ["tesoro problems", "common issues", "troubleshooting guide", "crm solutions", "faq"]
+    "keywords": [
+      "tesoro problems",
+      "common issues",
+      "troubleshooting guide",
+      "crm solutions",
+      "faq"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Veelvoorkomende problemen en oplossingen",
@@ -32,7 +42,6 @@
     },
     "icon": "help_center"
   },
-
   "sections": [
     {
       "type": "text",
@@ -49,7 +58,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "ui-issues",
@@ -63,14 +71,13 @@
           "text": "<h4>❌ Probleem: Page loads niet of blijft loading</h4><p><strong>Oplossingen:</strong></p><ol><li>Check internet connection (test op andere website)</li><li>Hard refresh: Ctrl+Shift+R (Windows) of Cmd+Shift+R (Mac)</li><li>Clear browser cache:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Try een ander browser (Chrome aanbevolen)</li><li>Check Tesoro status: status.tesorohq.io</li></ol><h4>❌ Probleem: Layout ziet er broken uit</h4><p><strong>Oorzaak:</strong> Oude cached CSS/JS files</p><p><strong>Oplossing:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>Als nog steeds broken: Clear cache + cookies</li><li>Restart browser</li></ol><h4>❌ Probleem: Buttons doen niets bij klikken</h4><p><strong>Oplossingen:</strong></p><ol><li>Check console for errors (F12 → Console tab)</li><li>Disable browser extensions (AdBlock kan interferen)</li><li>Try in Incognito/Private mode</li><li>Update browser to latest version</li></ol>"
         },
         "en": {
-          "text": "<h4>❌ Problem: Page doesn't load or keeps loading</h4><p><strong>Solutions:</strong></p><ol><li>Check internet connection (test on other website)</li><li>Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li><li>Clear browser cache:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Try another browser (Chrome recommended)</li><li>Check Tesoro status: status.tesorohq.io</li></ol><h4>❌ Problem: Layout looks broken</h4><p><strong>Cause:</strong> Old cached CSS/JS files</p><p><strong>Solution:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>If still broken: Clear cache + cookies</li><li>Restart browser</li></ol><h4>❌ Problem: Buttons don't work when clicked</h4><p><strong>Solutions:</strong></p><ol><li>Check console for errors (F12 → Console tab)</li><li>Disable browser extensions (AdBlock can interfere)</li><li>Try in Incognito/Private mode</li><li>Update browser to latest version</li></ol>"
+          "text": "<h4>❌ Problem: Page doesn't load or keeps loading</h4><p><strong>Solutions:</strong></p><ol><li>Check internet connection (test on other website)</li><li>Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)</li><li>Clear browser cache:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Try aniether browser (Chrome recommended)</li><li>Check Tesoro status: status.tesorohq.io</li></ol><h4>❌ Problem: Layout looks broken</h4><p><strong>Cause:</strong> Old cached CSS/JS files</p><p><strong>Solution:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>If still broken: Clear cache + cookies</li><li>Restart browser</li></ol><h4>❌ Problem: Buttons don't work when clicked</h4><p><strong>Solutions:</strong></p><ol><li>Check console for errors (F12 → Console tab)</li><li>Disable browser extensions (AdBlock can interfere)</li><li>Try in Incognito/Private mode</li><li>Update browser to latest version</li></ol>"
         },
         "es": {
           "text": "<h4>❌ Problema: La página no carga o sigue cargando</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica conexión a internet (prueba en otro sitio web)</li><li>Hard refresh: Ctrl+Shift+R (Windows) o Cmd+Shift+R (Mac)</li><li>Borra caché del navegador:<ul><li>Chrome: Settings → Privacy → Clear browsing data</li><li>Firefox: Settings → Privacy → Clear Data</li><li>Safari: Safari → Clear History</li></ul></li><li>Prueba otro navegador (Chrome recomendado)</li><li>Verifica estado de Tesoro: status.tesorohq.io</li></ol><h4>❌ Problema: El diseño se ve roto</h4><p><strong>Causa:</strong> Archivos CSS/JS antiguos en caché</p><p><strong>Solución:</strong></p><ol><li>Hard refresh (Ctrl+Shift+R)</li><li>Si aún está roto: Borra caché + cookies</li><li>Reinicia navegador</li></ol><h4>❌ Problema: Los botones no funcionan al hacer clic</h4><p><strong>Soluciones:</strong></p><ol><li>Verifica errores en consola (F12 → pestaña Console)</li><li>Desactiva extensiones del navegador (AdBlock puede interferir)</li><li>Prueba en modo Incognito/Privado</li><li>Actualiza navegador a última versión</li></ol>"
         }
       }
     },
-
     {
       "type": "text",
       "id": "data-issues",
@@ -84,35 +91,33 @@
           "text": "<h4>❌ Probleem: Changes worden niet saved</h4><p><strong>Diagnose:</strong></p><ol><li>Check for save confirmation (green checkmark/toast)</li><li>Look for error message (red banner)</li><li>Check if fields zijn required maar leeg</li></ol><p><strong>Oplossingen:</strong></p><ul><li>Vul alle required fields in (marked met *)</li><li>Check data format (email, phone, date correctness)</li><li>Reduce file size als je attachments upload (max 10MB)</li><li>Try opslaan zonder attachment eerst</li></ul><h4>❌ Probleem: Data synchroniseert niet tussen devices</h4><p><strong>Oorzaak:</strong> Browser cache of offline mode</p><p><strong>Oplossing:</strong></p><ol><li>Refresh page (F5)</li><li>Check internet connection</li><li>Log out + log in again</li><li>Clear browser data op oude device</li></ol><h4>❌ Probleem: Contacts/Properties verdwijnen</h4><p><strong>Mogelijke oorzaken:</strong></p><ol><li><strong>Filters actief:</strong> Check filter settings (reset all filters)</li><li><strong>Search actief:</strong> Clear search box</li><li><strong>Archived:</strong> Check \"Show Archived\" toggle</li><li><strong>Permissions:</strong> Ask admin als je geen toegang hebt</li></ol>"
         },
         "en": {
-          "text": "<h4>❌ Problem: Changes are not saved</h4><p><strong>Diagnosis:</strong></p><ol><li>Check for save confirmation (green checkmark/toast)</li><li>Look for error message (red banner)</li><li>Check if fields are required but empty</li></ol><p><strong>Solutions:</strong></p><ul><li>Fill in all required fields (marked with *)</li><li>Check data format (email, phone, date correctness)</li><li>Reduce file size if uploading attachments (max 10MB)</li><li>Try saving without attachment first</li></ul><h4>❌ Problem: Data doesn't sync between devices</h4><p><strong>Cause:</strong> Browser cache or offline mode</p><p><strong>Solution:</strong></p><ol><li>Refresh page (F5)</li><li>Check internet connection</li><li>Log out + log in again</li><li>Clear browser data on old device</li></ol><h4>❌ Problem: Contacts/Properties disappear</h4><p><strong>Possible causes:</strong></p><ol><li><strong>Filters active:</strong> Check filter settings (reset all filters)</li><li><strong>Search active:</strong> Clear search box</li><li><strong>Archived:</strong> Check \"Show Archived\" toggle</li><li><strong>Permissions:</strong> Ask admin if you don't have access</li></ol>"
+          "text": "<h4>❌ Problem: Changes are niet saved</h4><p><strong>Diagnosis:</strong></p><ol><li>Check for save confirmation (green checkmark/toast)</li><li>Look for error message (red banner)</li><li>Check if fields are required but empty</li></ol><p><strong>Solutions:</strong></p><ul><li>Fill in all required fields (marked with *)</li><li>Check data format (email, phone, date correctness)</li><li>Reduce file size if uploading attachments (max 10MB)</li><li>Try saving without attachment first</li></ul><h4>❌ Problem: Data doesn't sync between devices</h4><p><strong>Cause:</strong> Browser cache or offline mode</p><p><strong>Solution:</strong></p><ol><li>Refresh page (F5)</li><li>Check internet connection</li><li>Log out + log in again</li><li>Clear browser data on old device</li></ol><h4>❌ Problem: Contacts/Properties disappear</h4><p><strong>Possible causes:</strong></p><ol><li><strong>Filters active:</strong> Check filter settings (reset all filters)</li><li><strong>Search active:</strong> Clear search box</li><li><strong>Archived:</strong> Check \"Show Archived\" toggle</li><li><strong>Permissions:</strong> Ask admin if you don't have access</li></ol>"
         },
         "es": {
           "text": "<h4>❌ Problema: Los cambios no se guardan</h4><p><strong>Diagnóstico:</strong></p><ol><li>Verifica confirmación de guardado (marca verde/toast)</li><li>Busca mensaje de error (banner rojo)</li><li>Verifica si los campos son requeridos pero están vacíos</li></ol><p><strong>Soluciones:</strong></p><ul><li>Completa todos los campos requeridos (marcados con *)</li><li>Verifica formato de datos (email, teléfono, fecha correcta)</li><li>Reduce tamaño de archivo si subes adjuntos (máx 10MB)</li><li>Intenta guardar sin adjunto primero</li></ul><h4>❌ Problema: Los datos no se sincronizan entre dispositivos</h4><p><strong>Causa:</strong> Caché del navegador o modo offline</p><p><strong>Solución:</strong></p><ol><li>Actualiza página (F5)</li><li>Verifica conexión a internet</li><li>Cierra sesión + vuelve a iniciar</li><li>Borra datos del navegador en dispositivo antiguo</li></ol><h4>❌ Problema: Contactos/Propiedades desaparecen</h4><p><strong>Posibles causas:</strong></p><ol><li><strong>Filtros activos:</strong> Verifica configuración de filtros (resetea todos los filtros)</li><li><strong>Búsqueda activa:</strong> Borra cuadro de búsqueda</li><li><strong>Archivado:</strong> Verifica toggle \"Show Archived\"</li><li><strong>Permisos:</strong> Pregunta al admin si no tienes acceso</li></ol>"
         }
       }
     },
-
     {
       "type": "text",
-      "id": "notifications",
+      "id": "nietifications",
       "title": {
-        "nl": "Email en notificaties problemen",
-        "en": "Email and Notification Issues",
-        "es": "Problemas de email y notificaciones"
+        "nl": "Email en nietificaties problemen",
+        "en": "Email and nietification Issues",
+        "es": "Problemas de email y nietificaciones"
       },
       "content": {
         "nl": {
-          "text": "<h4>❌ Probleem: Emails worden niet verstuurd</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email not connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Probleem: Emails gaan naar spam</h4><p><strong>Preventie:</strong></p><ul><li>Use proper sender name (not \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Probleem: Geen notificaties ontvangen</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Enable desktop notifications (browser permission)</li><li>Enable email notifications</li><li>Choose notification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
+          "text": "<h4>❌ Probleem: Emails worden niet verstuurd</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email niet connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Probleem: Emails gaan naar spam</h4><p><strong>Preventie:</strong></p><ul><li>Use proper sender name (niet \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Probleem: Geen nietificaties ontvangen</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>nietifications</strong></li><li>Enable desktop nietifications (browser permission)</li><li>Enable email nietifications</li><li>Choose nietification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
         },
         "en": {
-          "text": "<h4>❌ Problem: Emails are not sent</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email not connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Problem: Emails go to spam</h4><p><strong>Prevention:</strong></p><ul><li>Use proper sender name (not \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Problem: Not receiving notifications</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Enable desktop notifications (browser permission)</li><li>Enable email notifications</li><li>Choose notification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
+          "text": "<h4>❌ Problem: Emails are niet sent</h4><p><strong>Diagnostic steps:</strong></p><ol><li>Check <strong>Sent</strong> folder in Communication tab</li><li>Look for error message in email timeline</li><li>Verify email address is correct</li></ol><p><strong>Common causes + fixes:</strong></p><ul><li><strong>Bounced email:</strong> Recipient email invalid → Update contact email</li><li><strong>Daily limit reached:</strong> Max 500 emails/day → Wait til tomorrow</li><li><strong>Email niet connected:</strong> Gmail/Outlook → Reconnect in Settings</li><li><strong>Template error:</strong> Check template for missing fields</li></ul><h4>❌ Problem: Emails go to spam</h4><p><strong>Prevention:</strong></p><ul><li>Use proper sender name (niet \"noreply\")</li><li>Avoid spam words (FREE, URGENT, CLICK NOW)</li><li>Include unsubscribe link</li><li>Setup SPF/DKIM records (ask IT)</li><li>Don't send to old/inactive lists</li></ul><h4>❌ Problem: niet receiving nietifications</h4><p><strong>Check settings:</strong></p><ol><li>Profile → Settings → <strong>nietifications</strong></li><li>Enable desktop nietifications (browser permission)</li><li>Enable email nietifications</li><li>Choose nietification types (new lead, deal update, etc.)</li><li>Check email spam folder</li></ol>"
         },
         "es": {
-          "text": "<h4>❌ Problema: Los emails no se envían</h4><p><strong>Pasos de diagnóstico:</strong></p><ol><li>Verifica carpeta <strong>Sent</strong> en pestaña Communication</li><li>Busca mensaje de error en línea de tiempo del email</li><li>Verifica que la dirección de email sea correcta</li></ol><p><strong>Causas comunes + soluciones:</strong></p><ul><li><strong>Email rebotado:</strong> Email del destinatario inválido → Actualiza email del contacto</li><li><strong>Límite diario alcanzado:</strong> Máx 500 emails/día → Espera hasta mañana</li><li><strong>Email no conectado:</strong> Gmail/Outlook → Reconecta en Settings</li><li><strong>Error de plantilla:</strong> Verifica plantilla para campos faltantes</li></ul><h4>❌ Problema: Los emails van a spam</h4><p><strong>Prevención:</strong></p><ul><li>Usa nombre de remitente apropiado (no \"noreply\")</li><li>Evita palabras spam (GRATIS, URGENTE, HAZ CLIC AHORA)</li><li>Incluye enlace de cancelación de suscripción</li><li>Configura registros SPF/DKIM (pregunta a IT)</li><li>No envíes a listas antiguas/inactivas</li></ul><h4>❌ Problema: No recibo notificaciones</h4><p><strong>Verifica configuración:</strong></p><ol><li>Profile → Settings → <strong>Notifications</strong></li><li>Habilita notificaciones de escritorio (permiso del navegador)</li><li>Habilita notificaciones por email</li><li>Elige tipos de notificación (nuevo lead, actualización de deal, etc.)</li><li>Verifica carpeta de spam del email</li></ol>"
+          "text": "<h4>❌ Problema: Los emails no se envían</h4><p><strong>Pasos de diagnóstico:</strong></p><ol><li>Verifica carpeta <strong>Sent</strong> en pestaña Communication</li><li>Busca mensaje de error en línea de tiempo del email</li><li>Verifica que la dirección de email sea correcta</li></ol><p><strong>Causas comunes + soluciones:</strong></p><ul><li><strong>Email rebotado:</strong> Email del destinatario inválido → Actualiza email del contacto</li><li><strong>Límite diario alcanzado:</strong> Máx 500 emails/día → Espera hasta mañana</li><li><strong>Email no conectado:</strong> Gmail/Outlook → Reconecta en Settings</li><li><strong>Error de plantilla:</strong> Verifica plantilla para campos faltantes</li></ul><h4>❌ Problema: Los emails van a spam</h4><p><strong>Prevención:</strong></p><ul><li>Usa nombre de remitente apropiado (no \"noreply\")</li><li>Evita palabras spam (GRATIS, URGENTE, HAZ CLIC AHORA)</li><li>Incluye enlace de cancelación de suscripción</li><li>Configura registros SPF/DKIM (pregunta a IT)</li><li>No envíes a listas antiguas/inactivas</li></ul><h4>❌ Problema: No recibo nietificaciones</h4><p><strong>Verifica configuración:</strong></p><ol><li>Profile → Settings → <strong>nietifications</strong></li><li>Habilita nietificaciones de escritorio (permiso del navegador)</li><li>Habilita nietificaciones por email</li><li>Elige tipos de nietificación (nuevo lead, actualización de deal, etc.)</li><li>Verifica carpeta de spam del email</li></ol>"
         }
       }
     },
-
     {
       "type": "callout",
       "id": "when-contact-support",
@@ -135,14 +140,12 @@
       }
     }
   ],
-
   "relatedArticles": [
     "email-sync-troubleshooting",
     "login-access-troubleshooting",
     "performance-optimization-tips",
     "getting-help-support"
   ],
-
   "faq": [
     {
       "question": {

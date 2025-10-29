@@ -7,18 +7,28 @@
     "authorId": "sofia-lopez",
     "category": "properties",
     "difficulty": "beginner",
-    "tags": ["properties", "media", "photos", "videos", "virtual-tours"],
+    "tags": [
+      "properties",
+      "media",
+      "photos",
+      "videos",
+      "virtual-tours"
+    ],
     "featured": true,
     "readingTime": 9,
     "videoIncluded": true,
     "aiGenerated": false
   },
-
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=630&fit=crop",
-    "keywords": ["property photos", "property media", "photo management", "virtual tours", "property videos"]
+    "keywords": [
+      "property photos",
+      "property media",
+      "photo management",
+      "virtual tours",
+      "property videos"
+    ]
   },
-
   "hero": {
     "title": {
       "nl": "Property media management: foto's, video's en virtual tours",
@@ -32,7 +42,6 @@
     },
     "icon": "photo_library"
   },
-
   "sections": [
     {
       "type": "callout",
@@ -55,7 +64,6 @@
         }
       }
     },
-
     {
       "type": "video",
       "id": "media-management-tutorial",
@@ -73,7 +81,6 @@
       },
       "duration": "9:20"
     },
-
     {
       "type": "steps",
       "id": "upload-photos",
@@ -139,7 +146,6 @@
         }
       ]
     },
-
     {
       "type": "text",
       "id": "photo-organization",
@@ -160,7 +166,6 @@
         }
       }
     },
-
     {
       "type": "text",
       "id": "videos-and-tours",
@@ -181,7 +186,6 @@
         }
       }
     },
-
     {
       "type": "callout",
       "id": "photo-quality-checklist",
@@ -196,7 +200,7 @@
           "text": "<p><strong>Voor elke property foto, check:</strong></p><ul><li>Horizontaal (landscape) georiënteerd</li><li>Rechte lijnen (geen scheef perspectief)</li><li>Goede belichting (geen overbelichte ramen)</li><li>Scherp beeld (geen motion blur)</li><li>Property opgeruimd en schoon</li><li>Geen persoonlijke items zichtbaar</li><li>Geen mensen of huisdieren in beeld</li><li>Juiste kleurbalans (niet te oranje of blauw)</li></ul><p><strong>Extra voor hoofdfoto:</strong></p><ul><li>Complete voorgevel zichtbaar</li><li>Omgeving context (deel van straat/tuin)</li><li>Bij voorkeur blauwe lucht</li><li>Geen geparkeerde auto's die zicht blokkeren</li></ul>"
         },
         "en": {
-          "text": "<p><strong>For every property photo, check:</strong></p><ul><li>Horizontally (landscape) oriented</li><li>Straight lines (no skewed perspective)</li><li>Good lighting (no overexposed windows)</li><li>Sharp image (no motion blur)</li><li>Property tidy and clean</li><li>No personal items visible</li><li>No people or pets in view</li><li>Correct color balance (not too orange or blue)</li></ul><p><strong>Extra for main photo:</strong></p><ul><li>Complete front facade visible</li><li>Environment context (part of street/garden)</li><li>Preferably blue sky</li><li>No parked cars blocking view</li></ul>"
+          "text": "<p><strong>For every property photo, check:</strong></p><ul><li>Horizontally (landscape) oriented</li><li>Straight lines (no skewed perspective)</li><li>Good lighting (no overexposed windows)</li><li>Sharp image (no motion blur)</li><li>Property tidy and clean</li><li>No personal items visible</li><li>No people or pets in view</li><li>Correct color balance (niet too orange or blue)</li></ul><p><strong>Extra for main photo:</strong></p><ul><li>Complete front facade visible</li><li>Environment context (part of street/garden)</li><li>Preferably blue sky</li><li>No parked cars blocking view</li></ul>"
         },
         "es": {
           "text": "<p><strong>Para cada foto de propiedad, verifica:</strong></p><ul><li>Orientada horizontalmente (paisaje)</li><li>Líneas rectas (sin perspectiva sesgada)</li><li>Buena iluminación (sin ventanas sobreexpuestas)</li><li>Imagen nítida (sin desenfoque de movimiento)</li><li>Propiedad ordenada y limpia</li><li>Sin artículos personales visibles</li><li>Sin personas o mascotas a la vista</li><li>Balance de color correcto (no demasiado naranja o azul)</li></ul><p><strong>Extra para foto principal:</strong></p><ul><li>Fachada frontal completa visible</li><li>Contexto del entorno (parte de calle/jardín)</li><li>Preferiblemente cielo azul</li><li>Sin autos estacionados bloqueando la vista</li></ul>"
@@ -204,13 +208,11 @@
       }
     }
   ],
-
   "relatedArticles": [
     "adding-properties-guide",
     "property-portal-integration",
     "property-management-overview"
   ],
-
   "faq": [
     {
       "question": {

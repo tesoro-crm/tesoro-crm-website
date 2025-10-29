@@ -5,9 +5,15 @@
     "publishDate": "2025-10-23",
     "updatedAt": "2025-10-23T23:50:00Z",
     "authorId": "sofia-lopez",
-    "category": "communication",
+    "category": "calendar",
     "difficulty": "intermediate",
-    "tags": ["calendar", "team", "collaboration", "scheduling", "coordination"],
+    "tags": [
+      "calendar",
+      "team",
+      "collaboration",
+      "scheduling",
+      "coordination"
+    ],
     "featured": false,
     "readingTime": 7,
     "videoIncluded": false,
@@ -15,7 +21,13 @@
   },
   "seo": {
     "socialImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
-    "keywords": ["team calendar", "calendar collaboration", "shared calendar", "team scheduling", "coordinate meetings"]
+    "keywords": [
+      "team calendar",
+      "calendar collaboration",
+      "shared calendar",
+      "team scheduling",
+      "coordinate meetings"
+    ]
   },
   "hero": {
     "title": {
@@ -25,7 +37,7 @@
     },
     "description": {
       "nl": "Leer hoe je de kalenders van je teamleden kunt bekijken, gedeelde beschikbaarheid kunt vinden en effectief kunt samenwerken aan deals en afspraken.",
-      "en": "Learn how to view your team members' calendars, find shared availability, and effectively collaborate on deals and appointments.",
+      "en": "Learn how to view your teamlids' calendars, find shared availability, and effectively collaborate on deals and appointments.",
       "es": "Aprende a ver los calendarios de los miembros de tu equipo, encontrar disponibilidad compartida y colaborar efectivamente en negocios y citas."
     },
     "icon": "groups"
@@ -57,7 +69,7 @@
           },
           "description": {
             "nl": "Klik in je kalender op 'Teamweergave' bovenaan het scherm. Je ziet nu meerdere kalenders naast elkaar, één voor elk teamlid. In weekweergave verschijnt elke persoon in een eigen kolom. In dagweergave zie je alle teamleden in één geïntegreerde tijdlijn met kleurcodering per persoon.",
-            "en": "In your calendar, click 'Team View' at the top of the screen. You now see multiple calendars side by side, one for each team member. In week view, each person appears in their own column. In day view, you see all team members in one integrated timeline with color-coding per person.",
+            "en": "In your calendar, click 'Team View' at the top of the screen. You now see multiple calendars side by side, one for each teamlid. In week view, each person appears in their own column. In day view, you see all teamlids in one integrated timeline with color-coding per person.",
             "es": "En tu calendario, haz clic en 'Vista de equipo' en la parte superior de la pantalla. Ahora ves múltiples calendarios lado a lado, uno para cada miembro del equipo. En vista de semana, cada persona aparece en su propia columna. En vista de día, ves a todos los miembros del equipo en una línea de tiempo integrada con código de colores por persona."
           }
         },
@@ -69,7 +81,7 @@
           },
           "description": {
             "nl": "Klik op 'Kalenders' in de linker zijbalk om te kiezen welke teamleden je wilt zien. Je kunt specifieke personen selecteren (bijvoorbeeld alleen je directe collega's) of hele teams (bijvoorbeeld 'Verkoopteam' of 'Acquisitie team'). Tesoro onthoudt je voorkeuren, dus je hoeft dit niet elke keer opnieuw in te stellen.",
-            "en": "Click 'Calendars' in the left sidebar to choose which team members you want to see. You can select specific people (for example, only your direct colleagues) or entire teams (for example, 'Sales Team' or 'Acquisition Team'). Tesoro remembers your preferences, so you don't have to set this up each time.",
+            "en": "Click 'Calendars' in the left sidebar to choose which teamlids you want to see. You can select specific people (for example, only your direct colleagues) or entire teams (for example, 'Sales Team' or 'Acquisition Team'). Tesoro remembers your preferences, so you don't have to set this up each time.",
             "es": "Haz clic en 'Calendarios' en la barra lateral izquierda para elegir qué miembros del equipo quieres ver. Puedes seleccionar personas específicas (por ejemplo, solo tus colegas directos) o equipos completos (por ejemplo, 'Equipo de ventas' o 'Equipo de adquisición'). Tesoro recuerda tus preferencias, así que no tienes que configurar esto cada vez."
           }
         },
@@ -81,8 +93,8 @@
           },
           "description": {
             "nl": "Wat je ziet van teamleden kalenders hangt af van hun privacyinstellingen en jouw toegangsniveau. Standaard zie je: beschikbaar/bezet status (geen details), evenementtitels en tijden, locaties (voor coördinatie). Volledige details (klant namen, notities) zie je alleen als: het evenement met jou is gedeeld, jullie samen aan een deal werken, je manager bent.",
-            "en": "What you see of team members' calendars depends on their privacy settings and your access level. By default, you see: available/busy status (no details), event titles and times, locations (for coordination). Full details (client names, notes) you only see if: the event is shared with you, you're working together on a deal, you're a manager.",
-            "es": "Lo que ves de los calendarios de los miembros del equipo depende de sus configuraciones de privacidad y tu nivel de acceso. Por defecto, ves: estado disponible/ocupado (sin detalles), títulos y horarios de eventos, ubicaciones (para coordinación). Detalles completos (nombres de clientes, notas) solo los ves si: el evento se comparte contigo, están trabajando juntos en un negocio, eres gerente."
+            "en": "What you see of teamlids' calendars depends on their privacy settings and your access level. By default, you see: available/busy status (no details), event titles and times, locations (for coordination). Full details (client names, notes) you only see if: the event is shared with you, you're working together on a deal, you're a manager.",
+            "es": "Lo que ves de los calendarios de los miembros del equipo depende de sus configuraciones de privacidad y tu nivel de acceso. Por defecto, ves: estado disponible/ocupado (sin detalles), títulos y horarios de eventos, ubicaciones (para coordinación). Detalles completos (nombres de clientes, nietas) solo los ves si: el evento se comparte contigo, están trabajando juntos en un negocio, eres gerente."
           }
         },
         {
@@ -93,7 +105,7 @@
           },
           "description": {
             "nl": "Gebruik de 'Alleen beschikbare teamleden tonen' filter om snel te zien wie beschikbaar is voor nieuwe afspraken. Dit is essentieel wanneer een klant belt en je een collega nodig hebt om een bezichtiging te doen. Je ziet onmiddellijk wie vrij is zonder door elke kalender te scrollen.",
-            "en": "Use the 'Show only available team members' filter to quickly see who's available for new appointments. This is essential when a client calls and you need a colleague to do a viewing. You immediately see who's free without scrolling through each calendar.",
+            "en": "Use the 'Show only available teamlids' filter to quickly see who's available for new appointments. This is essential when a client calls and you need a colleague to do a viewing. You immediately see who's free without scrolling through each calendar.",
             "es": "Usa el filtro 'Mostrar solo miembros del equipo disponibles' para ver rápidamente quién está disponible para nuevas citas. Esto es esencial cuando un cliente llama y necesitas un colega para hacer una visita. Ves inmediatamente quién está libre sin desplazarte por cada calendario."
           }
         }
@@ -145,7 +157,7 @@
           },
           "description": {
             "nl": "Klik op 'Nieuwe vergadering' en voeg de teamleden toe die moeten deelnemen. In plaats van een tijd te kiezen, klik je op 'Beste tijd zoeken'. Tesoro analyseert de kalenders van alle deelnemers en toont tijdslots waarop iedereen beschikbaar is, gesorteerd op optimale tijd (bijvoorbeeld vroeg op de dag voor maximale alertheid).",
-            "en": "Click 'New Meeting' and add the team members who need to attend. Instead of choosing a time, click 'Find best time'. Tesoro analyzes the calendars of all attendees and shows time slots when everyone is available, sorted by optimal time (for example, early in the day for maximum alertness).",
+            "en": "Click 'New Meeting' and add the teamlids who need to attend. Instead of choosing a time, click 'Find best time'. Tesoro analyzes the calendars of all attendees and shows time slots when everyone is available, sorted by optimal time (for example, early in the day for maximum alertness).",
             "es": "Haz clic en 'Nueva reunión' y agrega los miembros del equipo que necesitan asistir. En lugar de elegir un horario, haz clic en 'Encontrar mejor horario'. Tesoro analiza los calendarios de todos los asistentes y muestra intervalos de tiempo cuando todos están disponibles, ordenados por horario óptimo (por ejemplo, temprano en el día para máximo estado de alerta)."
           }
         },
@@ -169,7 +181,7 @@
           },
           "description": {
             "nl": "Markeer sommige teamleden als 'optioneel'. Tesoro zoekt eerst tijden waarop alle verplichte deelnemers beschikbaar zijn, en toont dan welke optionele deelnemers ook kunnen. Dit is handig voor grote teamvergaderingen waar niet iedereen essentieel is.",
-            "en": "Mark some team members as 'optional'. Tesoro first finds times when all required attendees are available, then shows which optional attendees can also make it. This is useful for large team meetings where not everyone is essential.",
+            "en": "Mark some teamlids as 'optional'. Tesoro first finds times when all required attendees are available, then shows which optional attendees can also make it. This is useful for large team meetings where niet everyone is essential.",
             "es": "Marca algunos miembros del equipo como 'opcionales'. Tesoro primero encuentra horarios cuando todos los asistentes requeridos están disponibles, luego muestra qué asistentes opcionales también pueden asistir. Esto es útil para reuniones de equipo grandes donde no todos son esenciales."
           }
         },
@@ -189,7 +201,7 @@
     },
     {
       "type": "callout",
-      "id": "timezone-note",
+      "id": "timezone-niete",
       "variant": "info",
       "title": {
         "nl": "Tijdzones beheren",
@@ -198,7 +210,7 @@
       },
       "content": {
         "nl": "Als je teamleden in verschillende tijdzones werken, toont Tesoro automatisch alle tijden in de lokale tijdzone van elke deelnemer. Wanneer je een vergadering plant, zie je een klein tijdzone indicator die laat zien wat de vergaderingstijd is voor elk teamlid. Dit voorkomt verwarring en gemiste vergaderingen.",
-        "en": "If your team members work in different timezones, Tesoro automatically shows all times in each attendee's local timezone. When you schedule a meeting, you see a small timezone indicator showing what the meeting time is for each team member. This prevents confusion and missed meetings.",
+        "en": "If your teamlids work in different timezones, Tesoro automatically shows all times in each attendee's local timezone. When you schedule a meeting, you see a small timezone indicator showing what the meeting time is for each teamlid. This prevents confusion and missed meetings.",
         "es": "Si los miembros de tu equipo trabajan en diferentes zonas horarias, Tesoro muestra automáticamente todos los horarios en la zona horaria local de cada asistente. Cuando programas una reunión, ves un pequeño indicador de zona horaria que muestra cuál es el horario de la reunión para cada miembro del equipo. Esto previene confusión y reuniones perdidas."
       }
     },
@@ -212,7 +224,7 @@
       },
       "content": {
         "nl": "Sommige situaties vereisen dat meerdere teamleden samenwerken aan één afspraak. Tesoro maakt dit type coördinatie eenvoudig.",
-        "en": "Some situations require multiple team members to collaborate on a single appointment. Tesoro makes this type of coordination easy.",
+        "en": "Some situations require multiple teamlids to collaborate on a single appointment. Tesoro makes this type of coordination easy.",
         "es": "Algunas situaciones requieren que múltiples miembros del equipo colaboren en una sola cita. Tesoro facilita este tipo de coordinación."
       }
     },
@@ -233,8 +245,8 @@
           },
           "description": {
             "nl": "Wanneer je een bezichtiging of vergadering aanmaakt, kun je een 'Co-host' toevoegen. Dit is een tweede teamlid dat mee gaat naar de afspraak. Beide hosts zien het evenement in hun kalender, ontvangen herinneringen, en kunnen notities toevoegen. Perfect voor: trainee bezichtigingen, dubbele showings, complexe klantvergaderingen die expertise van twee mensen vereisen.",
-            "en": "When you create a viewing or meeting, you can add a 'Co-host'. This is a second team member who will join the appointment. Both hosts see the event in their calendar, receive reminders, and can add notes. Perfect for: trainee viewings, double showings, complex client meetings requiring two people's expertise.",
-            "es": "Cuando creas una visita o reunión, puedes agregar un 'Co-anfitrión'. Este es un segundo miembro del equipo que se unirá a la cita. Ambos anfitriones ven el evento en su calendario, reciben recordatorios y pueden agregar notas. Perfecto para: visitas de aprendices, presentaciones dobles, reuniones complejas con clientes que requieren la experiencia de dos personas."
+            "en": "When you create a viewing or meeting, you can add a 'Co-host'. This is a second teamlid who will join the appointment. Both hosts see the event in their calendar, receive reminders, and can add notes. Perfect for: trainee viewings, double showings, complex client meetings requiring two people's expertise.",
+            "es": "Cuando creas una visita o reunión, puedes agregar un 'Co-anfitrión'. Este es un segundo miembro del equipo que se unirá a la cita. Ambos anfitriones ven el evento en su calendario, reciben recordatorios y pueden agregar nietas. Perfecto para: visitas de aprendices, presentaciones dobles, reuniones complejas con clientes que requieren la experiencia de dos personas."
           }
         },
         {
@@ -245,8 +257,8 @@
           },
           "description": {
             "nl": "Als je een afspraak niet kunt halen, kun je deze overdragen aan een teamlid. Klik op het evenement en selecteer 'Overdragen aan...'. Kies een collega, voeg context toe, en klik op 'Overdragen'. Je collega ontvangt een melding met alle details en kan accepteren of afwijzen. Als geaccepteerd, wordt het evenement verplaatst naar hun kalender en ontvangt de klant een update.",
-            "en": "If you can't make an appointment, you can transfer it to a team member. Click the event and select 'Transfer to...'. Choose a colleague, add context, and click 'Transfer'. Your colleague receives a notification with all details and can accept or decline. If accepted, the event moves to their calendar and the client receives an update.",
-            "es": "Si no puedes asistir a una cita, puedes transferirla a un miembro del equipo. Haz clic en el evento y selecciona 'Transferir a...'. Elige un colega, agrega contexto y haz clic en 'Transferir'. Tu colega recibe una notificación con todos los detalles y puede aceptar o rechazar. Si se acepta, el evento se mueve a su calendario y el cliente recibe una actualización."
+            "en": "If you can't make an appointment, you can transfer it to a teamlid. Click the event and select 'Transfer to...'. Choose a colleague, add context, and click 'Transfer'. Your colleague receives a nietification with all details and can accept or decline. If accepted, the event moves to their calendar and the client receives an update.",
+            "es": "Si no puedes asistir a una cita, puedes transferirla a un miembro del equipo. Haz clic en el evento y selecciona 'Transferir a...'. Elige un colega, agrega contexto y haz clic en 'Transferir'. Tu colega recibe una nietificación con todos los detalles y puede aceptar o rechazar. Si se acepta, el evento se mueve a su calendario y el cliente recibe una actualización."
           }
         },
         {
@@ -257,7 +269,7 @@
           },
           "description": {
             "nl": "Voor dingen zoals kantoor wachtdiensten, open huis rotaties, of lead opvolging, maak je een 'Teamkalender'. Dit is een gedeelde kalender waar teamleden evenementen kunnen toevoegen. Bijvoorbeeld: een 'Wachtdienst' kalender waar teamleden zich inschrijven voor shifts om telefoontjes te beantwoorden. Iedereen ziet wie wanneer verantwoordelijk is.",
-            "en": "For things like office duty, open house rotations, or lead follow-up, create a 'Team Calendar'. This is a shared calendar where team members can add events. For example: a 'Duty' calendar where team members sign up for shifts to answer phone calls. Everyone sees who's responsible when.",
+            "en": "For things like office duty, open house rotations, or lead follow-up, create a 'Team Calendar'. This is a shared calendar where teamlids can add events. For example: a 'Duty' calendar where teamlids sign up for shifts to answer phone calls. Everyone sees who's responsible when.",
             "es": "Para cosas como guardia de oficina, rotaciones de casa abierta o seguimiento de prospectos, crea un 'Calendario de equipo'. Este es un calendario compartido donde los miembros del equipo pueden agregar eventos. Por ejemplo: un calendario de 'Guardia' donde los miembros del equipo se inscriben para turnos para responder llamadas telefónicas. Todos ven quién es responsable cuándo."
           }
         },
@@ -268,9 +280,9 @@
             "es": "Comentarios y actualizaciones de eventos"
           },
           "description": {
-            "nl": "Voor evenementen met meerdere teamleden, gebruik je de opmerkingenfunctie om te communiceren. Klik op een evenement en selecteer 'Opmerkingen'. Voeg updates toe ('Klant vroeg om extra info over financiering'), stel vragen, of deel voorbereiding. Alle co-hosts ontvangen notificaties van nieuwe opmerkingen. Dit houdt iedereen op dezelfde pagina zonder groepschats.",
-            "en": "For events with multiple team members, use the comments feature to communicate. Click an event and select 'Comments'. Add updates ('Client asked for extra info on financing'), ask questions, or share preparation. All co-hosts receive notifications of new comments. This keeps everyone on the same page without group chats.",
-            "es": "Para eventos con múltiples miembros del equipo, usa la función de comentarios para comunicarte. Haz clic en un evento y selecciona 'Comentarios'. Agrega actualizaciones ('El cliente pidió información adicional sobre financiamiento'), haz preguntas o comparte preparación. Todos los co-anfitriones reciben notificaciones de nuevos comentarios. Esto mantiene a todos en la misma página sin chats grupales."
+            "nl": "Voor evenementen met meerdere teamleden, gebruik je de opmerkingenfunctie om te communiceren. Klik op een evenement en selecteer 'Opmerkingen'. Voeg updates toe ('Klant vroeg om extra info over financiering'), stel vragen, of deel voorbereiding. Alle co-hosts ontvangen nietificaties van nieuwe opmerkingen. Dit houdt iedereen op dezelfde pagina zonder groepschats.",
+            "en": "For events with multiple teamlids, use the comments feature to communicate. Click an event and select 'Comments'. Add updates ('Client asked for extra info on financing'), ask questions, or share preparation. All co-hosts receive nietifications of new comments. This keeps everyone on the same page without group chats.",
+            "es": "Para eventos con múltiples miembros del equipo, usa la función de comentarios para comunicarte. Haz clic en un evento y selecciona 'Comentarios'. Agrega actualizaciones ('El cliente pidió información adicional sobre financiamiento'), haz preguntas o comparte preparación. Todos los co-anfitriones reciben nietificaciones de nuevos comentarios. Esto mantiene a todos en la misma página sin chats grupales."
           }
         }
       ]
@@ -286,7 +298,7 @@
       },
       "content": {
         "nl": "Stel een 'backup buddy' systeem in waar elk teamlid een standaard backup heeft. Als je ziek wordt of een noodgeval hebt, kan je buddy met één klik al je afspraken voor de dag zien en overnemen. Dit beschermt klanten en voorkomt gemiste afspraken. Configureer dit in Instellingen > Team > Backup systeem.",
-        "en": "Set up a 'backup buddy' system where each team member has a default backup. If you get sick or have an emergency, your buddy can see and take over all your appointments for the day with one click. This protects clients and prevents missed appointments. Configure this in Settings > Team > Backup system.",
+        "en": "Set up a 'backup buddy' system where each teamlid has a default backup. If you get sick or have an emergency, your buddy can see and take over all your appointments for the day with one click. This protects clients and prevents missed appointments. Configure this in Settings > Team > Backup system.",
         "es": "Configura un sistema de 'compañero de respaldo' donde cada miembro del equipo tiene un respaldo predeterminado. Si te enfermas o tienes una emergencia, tu compañero puede ver y tomar todas tus citas del día con un clic. Esto protege a los clientes y previene citas perdidas. Configura esto en Configuración > Equipo > Sistema de respaldo."
       }
     },
@@ -321,7 +333,7 @@
           },
           "description": {
             "nl": "Ga naar Team > Kalender analytics om te zien hoeveel afspraken elk teamlid heeft gepland. Visuele heatmaps tonen wie overbelast is (veel rode blokken) en wie capaciteit heeft (veel groene tijd). Dit helpt bij het eerlijk verdelen van leads en het voorkomen van burnout.",
-            "en": "Go to Team > Calendar analytics to see how many appointments each team member has scheduled. Visual heatmaps show who's overloaded (lots of red blocks) and who has capacity (lots of green time). This helps distribute leads fairly and prevent burnout.",
+            "en": "Go to Team > Calendar analytics to see how many appointments each teamlid has scheduled. Visual heatmaps show who's overloaded (lots of red blocks) and who has capacity (lots of green time). This helps distribute leads fairly and prevent burnout.",
             "es": "Ve a Equipo > Análisis de calendario para ver cuántas citas tiene programadas cada miembro del equipo. Los mapas de calor visuales muestran quién está sobrecargado (muchos bloques rojos) y quién tiene capacidad (mucho tiempo verde). Esto ayuda a distribuir prospectos de manera justa y prevenir el agotamiento."
           }
         },
@@ -333,7 +345,7 @@
           },
           "description": {
             "nl": "Zie gemiddelde responstijden voor nieuwe afspraken per teamlid. Als iemand consistent langzamer is, kan dat duiden op overbelasting of inefficiëntie. Ook zie je no-show rates per agent - hoge no-show rates kunnen duiden op slechte herinneringspraktijken of klant selectie problemen.",
-            "en": "See average response times for new appointments per team member. If someone is consistently slower, it may indicate overload or inefficiency. You also see no-show rates per agent - high no-show rates may indicate poor reminder practices or client selection issues.",
+            "en": "See average response times for new appointments per teamlid. If someone is consistently slower, it may indicate overload or inefficiency. You also see no-show rates per agent - high no-show rates may indicate poor reminder practices or client selection issues.",
             "es": "Ve los tiempos de respuesta promedio para nuevas citas por miembro del equipo. Si alguien es consistentemente más lento, puede indicar sobrecarga o ineficiencia. También ves tasas de no presentación por agente - altas tasas de no presentación pueden indicar malas prácticas de recordatorio o problemas de selección de clientes."
           }
         },
@@ -345,7 +357,7 @@
           },
           "description": {
             "nl": "Zie welke teamleden het meest samenwerken (co-hosted evenementen, gedeelde deals). Dit helpt bij het identificeren van natuurlijke partnerships en het structureren van teams rond deze relaties. Ook zie je wie geïsoleerd werkt en misschien meer teamwork nodig heeft.",
-            "en": "See which team members collaborate most (co-hosted events, shared deals). This helps identify natural partnerships and structure teams around these relationships. You also see who works in isolation and might need more teamwork.",
+            "en": "See which teamlids collaborate most (co-hosted events, shared deals). This helps identify natural partnerships and structure teams around these relationships. You also see who works in isolation and might need more teamwork.",
             "es": "Ve qué miembros del equipo colaboran más (eventos co-organizados, negocios compartidos). Esto ayuda a identificar asociaciones naturales y estructurar equipos alrededor de estas relaciones. También ves quién trabaja aislado y podría necesitar más trabajo en equipo."
           }
         }
@@ -368,19 +380,19 @@
           },
           "answer": {
             "nl": "Ja. Wanneer je een evenement aanmaakt, vink je 'Privé - Details verbergen voor team' aan. Je teamleden zien alleen dat je bezet bent op die tijd, maar niet wat je doet of met wie. Dit is handig voor persoonlijke afspraken, doktersbezoeken, of gevoelige klantvergaderingen. De tijd is geblokkeerd maar details blijven privé.",
-            "en": "Yes. When you create an event, check 'Private - Hide details from team'. Your team members only see that you're busy at that time, but not what you're doing or with whom. This is useful for personal appointments, doctor visits, or sensitive client meetings. The time is blocked but details remain private.",
+            "en": "Yes. When you create an event, check 'Private - Hide details from team'. Your teamlids only see that you're busy at that time, but niet what you're doing or with whom. This is useful for personal appointments, doctor visits, or sensitive client meetings. The time is blocked but details remain private.",
             "es": "Sí. Cuando creas un evento, marca 'Privado - Ocultar detalles del equipo'. Los miembros de tu equipo solo ven que estás ocupado en ese momento, pero no qué estás haciendo o con quién. Esto es útil para citas personales, visitas al médico o reuniones sensibles con clientes. El tiempo está bloqueado pero los detalles permanecen privados."
           }
         },
         {
           "question": {
             "nl": "Hoe voorkom ik dat teamleden evenementen in mijn kalender maken?",
-            "en": "How do I prevent team members from creating events in my calendar?",
+            "en": "How do I prevent teamlids from creating events in my calendar?",
             "es": "¿Cómo evito que los miembros del equipo creen eventos en mi calendario?"
           },
           "answer": {
             "nl": "Standaard kunnen teamleden je kalender alleen bekijken, niet bewerken. Ze kunnen wel: voorstellen doen voor nieuwe tijden (die jij moet goedkeuren), afspraken naar je overdragen (die jij moet accepteren), je uitnodigen voor evenementen (die jij kunt afwijzen). Dit geeft je volledige controle terwijl samenwerking mogelijk blijft.",
-            "en": "By default, team members can only view your calendar, not edit it. They can: suggest new times (which you must approve), transfer appointments to you (which you must accept), invite you to events (which you can decline). This gives you full control while keeping collaboration possible.",
+            "en": "By default, teamlids can only view your calendar, niet edit it. They can: suggest new times (which you must approve), transfer appointments to you (which you must accept), invite you to events (which you can decline). This gives you full control while keeping collaboration possible.",
             "es": "Por defecto, los miembros del equipo solo pueden ver tu calendario, no editarlo. Pueden: sugerir nuevos horarios (que debes aprobar), transferirte citas (que debes aceptar), invitarte a eventos (que puedes rechazar). Esto te da control total mientras mantiene posible la colaboración."
           }
         },
@@ -392,7 +404,7 @@
           },
           "answer": {
             "nl": "Tesoro stuurt wekelijkse herinneringen naar teamleden met verouderde kalenders (geen evenementen in de komende week terwijl ze actief zijn in het CRM). Managers kunnen ook een 'Kalender completheid' metric zien die toont hoe up-to-date elke persoon hun kalender houdt. Teams met hoge kalender discipline hebben 40% betere coördinatie.",
-            "en": "Tesoro sends weekly reminders to team members with outdated calendars (no events in the coming week while they're active in the CRM). Managers can also see a 'Calendar completeness' metric showing how up-to-date each person keeps their calendar. Teams with high calendar discipline have 40% better coordination.",
+            "en": "Tesoro sends weekly reminders to teamlids with outdated calendars (no events in the coming week while they're active in the CRM). Managers can also see a 'Calendar completeness' metric showing how up-to-date each person keeps their calendar. Teams with high calendar discipline have 40% better coordination.",
             "es": "Tesoro envía recordatorios semanales a miembros del equipo con calendarios desactualizados (sin eventos en la próxima semana mientras están activos en el CRM). Los gerentes también pueden ver una métrica de 'Completitud del calendario' que muestra qué tan actualizado mantiene cada persona su calendario. Los equipos con alta disciplina de calendario tienen un 40% mejor coordinación."
           }
         },
@@ -403,9 +415,9 @@
             "es": "¿Puedo sincronizar un calendario de equipo con socios externos?"
           },
           "answer": {
-            "nl": "Ja, maar met beperkingen. Je kunt een 'Read-only' link genereren voor een teamkalender die je kunt delen met externe partners (notarissen, hypotheekadviseurs, bouwers). Ze kunnen je beschikbaarheid zien maar niet bewerken. Voor volledige twee-richtings synchronisatie met partners, voeg je hen toe als 'Externe teamleden' met beperkte rechten.",
-            "en": "Yes, but with limitations. You can generate a 'Read-only' link for a team calendar that you can share with external partners (notaries, mortgage advisors, builders). They can see your availability but not edit. For full two-way sync with partners, add them as 'External team members' with limited rights.",
-            "es": "Sí, pero con limitaciones. Puedes generar un enlace de 'Solo lectura' para un calendario de equipo que puedes compartir con socios externos (notarios, asesores hipotecarios, constructores). Pueden ver tu disponibilidad pero no editar. Para sincronización bidireccional completa con socios, agrégalos como 'Miembros externos del equipo' con derechos limitados."
+            "nl": "Ja, maar met beperkingen. Je kunt een 'Read-only' link genereren voor een teamkalender die je kunt delen met externe partners (nietarissen, hypotheekadviseurs, bouwers). Ze kunnen je beschikbaarheid zien maar niet bewerken. Voor volledige twee-richtings synchronisatie met partners, voeg je hen toe als 'Externe teamleden' met beperkte rechten.",
+            "en": "Yes, but with limitations. You can generate a 'Read-only' link for a team calendar that you can share with external partners (nietaries, mortgage advisors, builders). They can see your availability but niet edit. For full two-way sync with partners, add them as 'External teamlids' with limited rights.",
+            "es": "Sí, pero con limitaciones. Puedes generar un enlace de 'Solo lectura' para un calendario de equipo que puedes compartir con socios externos (nietarios, asesores hipotecarios, constructores). Pueden ver tu disponibilidad pero no editar. Para sincronización bidireccional completa con socios, agrégalos como 'Miembros externos del equipo' con derechos limitados."
           }
         }
       ]
