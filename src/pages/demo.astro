@@ -239,34 +239,48 @@ await loadTranslations(locale);
     }
 
     /**
-     * Render time slot buttons
-     * @param slots - Array of time slots from Zoho
-     * @param isStale - If true, slots are from cache and may be outdated
+     * Generate all possible time slots (9:00 - 17:00, 4 per hour = 32 slots)
      */
-    function renderTimeSlots(slots: any[], isStale = false) {
+    function generateAllTimeSlots(): string[] {
+      const slots: string[] = [];
+      for (let hour = 9; hour < 17; hour++) {
+        for (let minute = 0; minute < 60; minute += 15) {
+          const timeStr = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+          slots.push(timeStr);
+        }
+      }
+      return slots;
+    }
+
+    /**
+     * Render all time slot buttons instantly
+     * @param availableSlots - Optional array of available times from Zoho API
+     */
+    function renderAllTimeSlots(availableSlots?: string[]) {
       if (!timeSlotsGrid) return;
 
       timeSlotsGrid.innerHTML = '';
+      const allSlots = generateAllTimeSlots();
 
-      if (slots.length === 0) {
-        if (timeSlotsError) {
-          timeSlotsError.textContent = 'Geen beschikbare tijdslots voor deze datum.';
-          timeSlotsError.style.display = 'block';
-        }
-        return;
-      }
-
-      slots.forEach((slot: any) => {
+      allSlots.forEach((timeStr) => {
         const button = document.createElement('button');
         button.type = 'button';
-        button.className = 'time-slot-btn px-4 py-3 text-sm font-medium border-2 border-neutral-300 rounded-lg hover:border-primary hover:bg-primary/5 transition-all duration-200';
-        button.textContent = slot.from_time || slot.start_time;
-        button.dataset.time = slot.from_time || slot.start_time;
+        button.className = 'time-slot-btn px-4 py-3 text-sm font-medium border-2 rounded-lg transition-all duration-200';
+        button.textContent = timeStr;
+        button.dataset.time = timeStr;
 
-        // If showing stale data, add visual indicator
-        if (isStale) {
-          button.classList.add('opacity-75');
-          button.disabled = true; // Temporarily disabled while revalidating
+        // If we have Zoho data, mark unavailable slots
+        if (availableSlots) {
+          const isAvailable = availableSlots.includes(timeStr);
+          if (isAvailable) {
+            button.classList.add('border-neutral-300', 'hover:border-primary', 'hover:bg-primary/5');
+          } else {
+            button.classList.add('border-neutral-200', 'bg-neutral-50', 'text-neutral-400', 'cursor-not-allowed', 'opacity-50');
+            button.disabled = true;
+          }
+        } else {
+          // Loading state - all slots clickable but with loading indicator
+          button.classList.add('border-neutral-300', 'hover:border-primary', 'hover:bg-primary/5', 'opacity-75');
         }
 
         button.addEventListener('click', () => {
@@ -275,7 +289,6 @@ await loadTranslations(locale);
           // Remove active class from all buttons
           timeSlotsGrid.querySelectorAll('.time-slot-btn').forEach(btn => {
             btn.classList.remove('border-primary', 'bg-primary/10', 'text-primary');
-            btn.classList.add('border-neutral-300');
           });
 
           // Add active class to clicked button
@@ -292,90 +305,58 @@ await loadTranslations(locale);
       });
     }
 
-    /**
-     * Update existing slots with fresh data
-     * Grays out unavailable slots instead of removing them
-     */
-    function updateSlotsWithFreshData(freshSlots: any[]) {
-      if (!timeSlotsGrid) return;
-
-      const availableTimes = new Set(freshSlots.map(slot => slot.from_time || slot.start_time));
-      const allButtons = timeSlotsGrid.querySelectorAll('.time-slot-btn') as NodeListOf<HTMLButtonElement>;
-
-      allButtons.forEach(button => {
-        const timeValue = button.dataset.time;
-
-        if (availableTimes.has(timeValue)) {
-          // Slot is available - enable it
-          button.disabled = false;
-          button.classList.remove('opacity-75', 'opacity-50', 'cursor-not-allowed');
-          button.classList.add('hover:border-primary', 'hover:bg-primary/5');
-        } else {
-          // Slot is NOT available - gray it out
-          button.disabled = true;
-          button.classList.add('opacity-50', 'cursor-not-allowed', 'line-through');
-          button.classList.remove('hover:border-primary', 'hover:bg-primary/5', 'border-primary', 'bg-primary/10', 'text-primary');
-          button.classList.add('border-neutral-200', 'text-neutral-400');
-        }
-      });
-    }
-
-    // When date is selected, show cached slots immediately then revalidate
+    // When date is selected, instantly show all possible slots then update with Zoho data
     dateInput?.addEventListener('change', async (e) => {
       const selectedDate = (e.target as HTMLInputElement).value;
       if (!selectedDate) return;
 
-      // Show container
+      // Show container and clear previous selection
       if (timeSlotsContainer) timeSlotsContainer.style.display = 'block';
       if (timeSlotsError) timeSlotsError.style.display = 'none';
       if (selectedTimeSlotInput) selectedTimeSlotInput.value = '';
+      if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
 
-      // Check if we have cached slots for this date
-      const cachedSlots = slotsCache.get(selectedDate);
+      // INSTANT: Show all possible time slots immediately (9:00 - 17:00, 4 per hour)
+      renderAllTimeSlots(); // No availableSlots = loading state with opacity
 
-      if (cachedSlots && cachedSlots.length > 0) {
-        // INSTANT: Show cached slots immediately (stale)
-        if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
-        renderTimeSlots(cachedSlots, true); // isStale = true
-      } else {
-        // No cache: show loading state
-        if (timeSlotsLoading) timeSlotsLoading.style.display = 'block';
-        if (timeSlotsGrid) timeSlotsGrid.innerHTML = '';
-      }
-
-      // REVALIDATE: Fetch fresh data in background
+      // FETCH: Get availability from Zoho API in background
       try {
         const response = await fetch(`/api/available-slots?date=${selectedDate}`);
         const data = await response.json();
-
-        if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
 
         if (!response.ok || data.error) {
           throw new Error(data.error || 'Failed to fetch slots');
         }
 
         // Handle case where Zoho returns "Slots Not Available" as a string instead of array
-        const freshSlots = Array.isArray(data.slots) ? data.slots : [];
+        const zohoSlots = Array.isArray(data.slots) ? data.slots : [];
 
-        // Update cache
-        slotsCache.set(selectedDate, freshSlots);
+        // Extract available time strings from Zoho response
+        const availableTimes = zohoSlots.map((slot: any) => slot.from_time || slot.start_time);
 
-        if (cachedSlots && cachedSlots.length > 0) {
-          // Had cached data: UPDATE existing UI by graying out unavailable slots
-          updateSlotsWithFreshData(freshSlots);
-        } else {
-          // No cached data: RENDER fresh slots normally
-          renderTimeSlots(freshSlots, false);
-        }
+        // UPDATE: Re-render all slots with availability data
+        renderAllTimeSlots(availableTimes);
+
+        // Cache the available times for this date
+        slotsCache.set(selectedDate, availableTimes);
 
       } catch (error) {
         console.error('Error fetching time slots:', error);
-        if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
 
-        // If we showed stale data and fetch failed, keep showing stale data
-        if (!cachedSlots || cachedSlots.length === 0) {
+        // Check if we have cached data
+        const cachedTimes = slotsCache.get(selectedDate);
+
+        if (cachedTimes && cachedTimes.length > 0) {
+          // Show cached data with a warning
+          renderAllTimeSlots(cachedTimes);
           if (timeSlotsError) {
-            timeSlotsError.textContent = 'Fout bij het laden van tijdslots. Probeer het opnieuw.';
+            timeSlotsError.textContent = 'Toont beschikbaarheid van eerder. Mogelijk niet actueel.';
+            timeSlotsError.style.display = 'block';
+          }
+        } else {
+          // No cached data and fetch failed - keep all slots enabled but show error
+          if (timeSlotsError) {
+            timeSlotsError.textContent = 'Kon beschikbaarheid niet laden. Alle tijden worden getoond.';
             timeSlotsError.style.display = 'block';
           }
         }
