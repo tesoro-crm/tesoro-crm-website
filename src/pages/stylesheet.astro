@@ -1,0 +1,2699 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+
+const title = 'Stylesheet - Tesoro Design System';
+const description = 'Complete overzicht van alle UI componenten, cards en buttons';
+---
+
+<Layout title={title} description={description}>
+  <div class="design-system">
+    <!-- Header -->
+    <section class="ds-header">
+      <div class="container">
+        <h1 class="ds-header__title">Stylesheet</h1>
+        <p class="ds-header__subtitle">Alle UI componenten, cards en buttons van het Tesoro design system</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- 0. TYPOGRAPHY -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Typography</h2>
+          <p class="ds-section__desc">Heading levels, text sizes, weights en special styles</p>
+        </div>
+
+        <!-- Headings -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Headings</h3>
+          <div class="typo-grid">
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H1</div>
+              <div class="typo-demo">
+                <h1 class="text-6xl font-display font-bold typo-sample">Heading 1</h1>
+                <div class="typo-meta">text-6xl • 3.75rem / 1.1 line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H2</div>
+              <div class="typo-demo">
+                <h2 class="text-5xl font-display font-bold typo-sample">Heading 2</h2>
+                <div class="typo-meta">text-5xl • 3rem / 1.2 line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H3</div>
+              <div class="typo-demo">
+                <h3 class="text-4xl font-display font-semibold typo-sample">Heading 3</h3>
+                <div class="typo-meta">text-4xl • 2.25rem / 2.5rem line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H4</div>
+              <div class="typo-demo">
+                <h4 class="text-3xl font-display font-semibold typo-sample">Heading 4</h4>
+                <div class="typo-meta">text-3xl • 1.875rem / 2.25rem line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H5</div>
+              <div class="typo-demo">
+                <h5 class="text-2xl font-display font-semibold typo-sample">Heading 5</h5>
+                <div class="typo-meta">text-2xl • 1.5rem / 2rem line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-H6</div>
+              <div class="typo-demo">
+                <h6 class="text-xl font-display font-semibold typo-sample">Heading 6</h6>
+                <div class="typo-meta">text-xl • 1.25rem / 1.75rem line-height • font-display (Poppins)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body Text -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Body Text</h3>
+          <div class="typo-grid">
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-XL</div>
+              <div class="typo-demo">
+                <p class="text-xl typo-sample">Extra Large Text (1.25rem / 20px)</p>
+                <div class="typo-meta">font-size: 1.25rem • line-height: 1.75rem • Inter</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-LG</div>
+              <div class="typo-demo">
+                <p class="text-lg typo-sample">Large Text (1.125rem / 18px)</p>
+                <div class="typo-meta">font-size: 1.125rem • line-height: 1.75rem • Inter</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-BASE</div>
+              <div class="typo-demo">
+                <p class="text-base typo-sample">Base Text (1rem / 16px)</p>
+                <div class="typo-meta">font-size: 1rem • line-height: 1.6 • Inter</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-SM</div>
+              <div class="typo-demo">
+                <p class="text-sm typo-sample">Small Text (0.875rem / 14px)</p>
+                <div class="typo-meta">font-size: 0.875rem • line-height: 1.25rem • Inter</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-XS</div>
+              <div class="typo-demo">
+                <p class="text-xs typo-sample">Extra Small Text (0.75rem / 12px)</p>
+                <div class="typo-meta">font-size: 0.75rem • line-height: 1rem • Inter</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Font Weights -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Font Weights</h3>
+          <div class="typo-grid">
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-W3</div>
+              <div class="typo-demo">
+                <p class="font-light typo-sample">Light (300)</p>
+                <div class="typo-meta">font-weight: 300 • Voor subtiele text</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-W4</div>
+              <div class="typo-demo">
+                <p class="font-normal typo-sample">Regular (400)</p>
+                <div class="typo-meta">font-weight: 400 • Body text default</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-W5</div>
+              <div class="typo-demo">
+                <p class="font-medium typo-sample">Medium (500)</p>
+                <div class="typo-meta">font-weight: 500 • Lichte nadruk</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-W6</div>
+              <div class="typo-demo">
+                <p class="font-semibold typo-sample">Semibold (600)</p>
+                <div class="typo-meta">font-weight: 600 • Medium nadruk</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-W7</div>
+              <div class="typo-demo">
+                <p class="font-bold typo-sample">Bold (700)</p>
+                <div class="typo-meta">font-weight: 700 • Sterke nadruk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Styles -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Special Styles</h3>
+          <div class="typo-grid">
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-LINK</div>
+              <div class="typo-demo">
+                <a href="#" class="typo-sample text-primary hover:underline">Dit is een link</a>
+                <div class="typo-meta">color: primary • hover: underline</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-CODE</div>
+              <div class="typo-demo">
+                <code class="typo-sample bg-neutral-100 px-2 py-1 rounded text-sm font-mono">const example = true;</code>
+                <div class="typo-meta">font-family: monospace • bg: neutral-100</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-QUOTE</div>
+              <div class="typo-demo">
+                <blockquote class="typo-sample border-l-4 border-primary pl-4 italic text-neutral-600">
+                  "Dit is een quote"
+                </blockquote>
+                <div class="typo-meta">border-left • italic • neutral-600</div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">TYP-MUTED</div>
+              <div class="typo-demo">
+                <p class="typo-sample text-neutral-500">Muted text voor secundaire info</p>
+                <div class="typo-meta">color: neutral-500 • Voor meta informatie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. PATH SELECTION CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Path Selection Card</h2>
+          <p class="ds-section__desc">Primaire keuze-cards voor navigatie en onboarding flows</p>
+        </div>
+
+        <div class="ds-grid ds-grid--3">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CPS-1</div>
+            <div class="path-card">
+              <div class="path-card__icon">
+                <span class="icon">rocket_launch</span>
+              </div>
+              <h3 class="path-card__title">Nieuw bij Tesoro</h3>
+              <p class="path-card__desc">Stap-voor-stap onboarding. Account aanmaken, team uitnodigen en je eerste deals.</p>
+              <Button variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Start onboarding
+              </Button>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CPS-2</div>
+            <div class="path-card">
+              <div class="path-card__icon">
+                <span class="icon">menu_book</span>
+              </div>
+              <h3 class="path-card__title">Documentatie</h3>
+              <p class="path-card__desc">Zoek in alle handleidingen en vind snel technische antwoorden.</p>
+              <Button variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Bekijk docs
+              </Button>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CPS-3</div>
+            <div class="path-card">
+              <div class="path-card__icon">
+                <span class="icon">bolt</span>
+              </div>
+              <h3 class="path-card__title">Expert Tips</h3>
+              <p class="path-card__desc">Geavanceerde workflows en power-user functionaliteit.</p>
+              <Button variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Ontdekken
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. FEATURE CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Feature Card</h2>
+          <p class="ds-section__desc">Voor product features met benefits lijst</p>
+        </div>
+
+        <div class="ds-grid ds-grid--3">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CFB-1</div>
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <span class="icon">person_add</span>
+              </div>
+              <h3 class="feature-card__title">Lead Management</h3>
+              <p class="feature-card__desc">Centraliseer al je leads en converteer ze naar klanten.</p>
+
+              <ul class="feature-card__benefits">
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Automatische lead capture
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Real-time notificaties
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Lead scoring & routing
+                </li>
+              </ul>
+
+              <Button href="#" variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Meer info
+              </Button>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CFB-2</div>
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <span class="icon">view_kanban</span>
+              </div>
+              <h3 class="feature-card__title">Deal Pipeline</h3>
+              <p class="feature-card__desc">Visueel overzicht van je sales pipeline met drag & drop.</p>
+
+              <ul class="feature-card__benefits">
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Kanban board interface
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Automatische fase updates
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Revenue forecasting
+                </li>
+              </ul>
+
+              <Button href="#" variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Meer info
+              </Button>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CFB-3</div>
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <span class="icon">psychology</span>
+              </div>
+              <h3 class="feature-card__title">AI Matching</h3>
+              <p class="feature-card__desc">Slimme AI die klanten en properties automatisch matcht.</p>
+
+              <ul class="feature-card__benefits">
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Machine learning engine
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Preference learning
+                </li>
+                <li class="feature-card__benefit">
+                  <span class="icon icon-sm">check</span>
+                  Match score insights
+                </li>
+              </ul>
+
+              <Button href="#" variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                Meer info
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. STEP CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Step Card</h2>
+          <p class="ds-section__desc">Voor geordende stappen en tutorials</p>
+        </div>
+
+        <div class="ds-grid ds-grid--1">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSP-1</div>
+            <a href="#" class="step-card">
+              <div class="step-card__number">1</div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Account aanmaken</h3>
+                <p class="step-card__desc">Registreer je account en configureer je basis instellingen.</p>
+                <div class="step-card__meta">
+                  <span class="step-card__time">
+                    <span class="icon icon-sm">schedule</span> 5 min
+                  </span>
+                  <span class="step-card__badge">
+                    <span class="icon icon-sm">play_circle</span> Video
+                  </span>
+                </div>
+              </div>
+              <div class="step-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSP-2</div>
+            <a href="#" class="step-card">
+              <div class="step-card__number">2</div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Team uitnodigen</h3>
+                <p class="step-card__desc">Voeg je collega's toe en stel permissies in voor samenwerking.</p>
+                <div class="step-card__meta">
+                  <span class="step-card__time">
+                    <span class="icon icon-sm">schedule</span> 3 min
+                  </span>
+                </div>
+              </div>
+              <div class="step-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSP-3</div>
+            <a href="#" class="step-card step-card--completed">
+              <div class="step-card__number">3</div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Email koppelen</h3>
+                <p class="step-card__desc">Koppel je Gmail of Outlook om alle communicatie te centraliseren.</p>
+                <div class="step-card__meta">
+                  <span class="step-card__time">
+                    <span class="icon icon-sm">schedule</span> 7 min
+                  </span>
+                  <span class="step-card__badge step-card__badge--success">
+                    <span class="icon icon-sm">check_circle</span> Voltooid
+                  </span>
+                </div>
+              </div>
+              <div class="step-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. INFO CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Info Card</h2>
+          <p class="ds-section__desc">Algemene content cards voor tips, updates, announcements</p>
+        </div>
+
+        <div class="ds-grid ds-grid--2">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIS-1</div>
+            <div class="info-card">
+              <div class="info-card__icon info-card__icon--primary">
+                <span class="icon">lightbulb</span>
+              </div>
+              <h3 class="info-card__title">Pro Tip</h3>
+              <p class="info-card__content">Gebruik keyboard shortcuts om sneller te werken. Druk op <kbd>?</kbd> voor een volledig overzicht.</p>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIS-2</div>
+            <div class="info-card">
+              <div class="info-card__icon info-card__icon--success">
+                <span class="icon">campaign</span>
+              </div>
+              <h3 class="info-card__title">Nieuw Feature</h3>
+              <p class="info-card__content">AI-powered email templates zijn nu beschikbaar! Laat AI je follow-up emails schrijven.</p>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIS-3</div>
+            <div class="info-card">
+              <div class="info-card__icon info-card__icon--warning">
+                <span class="icon">warning</span>
+              </div>
+              <h3 class="info-card__title">Let op</h3>
+              <p class="info-card__content">Geplande onderhoud op 20 oktober van 22:00-23:00 CET. Je data blijft veilig opgeslagen.</p>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIS-4</div>
+            <div class="info-card">
+              <div class="info-card__icon info-card__icon--info">
+                <span class="icon">info</span>
+              </div>
+              <h3 class="info-card__title">Wist je dat?</h3>
+              <p class="info-card__content">Je kunt tasks direct vanuit emails aanmaken door ze te forwarden naar tasks@tesoro.estate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. STAT CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Stat Card</h2>
+          <p class="ds-section__desc">Voor cijfers, statistieken en metrics</p>
+        </div>
+
+        <div class="ds-grid ds-grid--4">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSM-1</div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <span class="icon">trending_up</span>
+              </div>
+              <div class="stat-card__value">€127K</div>
+              <div class="stat-card__label">Revenue deze maand</div>
+              <div class="stat-card__change stat-card__change--positive">
+                <span class="icon icon-sm">arrow_upward</span> +23%
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSM-2</div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <span class="icon">handshake</span>
+              </div>
+              <div class="stat-card__value">34</div>
+              <div class="stat-card__label">Gesloten deals</div>
+              <div class="stat-card__change stat-card__change--positive">
+                <span class="icon icon-sm">arrow_upward</span> +12%
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSM-3</div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <span class="icon">groups</span>
+              </div>
+              <div class="stat-card__value">142</div>
+              <div class="stat-card__label">Actieve leads</div>
+              <div class="stat-card__change stat-card__change--neutral">
+                <span class="icon icon-sm">remove</span> 0%
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CSM-4</div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <span class="icon">email</span>
+              </div>
+              <div class="stat-card__value">89%</div>
+              <div class="stat-card__label">Email open rate</div>
+              <div class="stat-card__change stat-card__change--negative">
+                <span class="icon icon-sm">arrow_downward</span> -3%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. INTEGRATION CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Integration Card</h2>
+          <p class="ds-section__desc">Compacte cards voor integraties en tools - 4 varianten</p>
+        </div>
+
+        <!-- Variant A: Basic (naam + category) -->
+        <h3 class="ds-subsection__title">Variant A: Basic</h3>
+        <div class="ds-grid ds-grid--4">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIB-1</div>
+            <div class="integration-card">
+              <div class="integration-card__name">Gmail</div>
+              <div class="integration-card__category">Email</div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIB-2</div>
+            <div class="integration-card">
+              <div class="integration-card__name">Outlook</div>
+              <div class="integration-card__category">Email</div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIB-3</div>
+            <div class="integration-card">
+              <div class="integration-card__name">Slack</div>
+              <div class="integration-card__category">Communication</div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIB-4</div>
+            <div class="integration-card">
+              <div class="integration-card__name">Zapier</div>
+              <div class="integration-card__category">Automation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Feature Card (Gradient Background) -->
+        <h3 class="ds-subsection__title">Variant B: Feature Card</h3>
+        <div class="ds-grid ds-grid--4">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CID-1</div>
+            <div class="integration-card-v2">
+              <div class="integration-card-v2__gradient integration-card-v2__gradient--blue"></div>
+              <div class="integration-card-v2__content">
+                <div class="integration-card-v2__icon">
+                  <span class="icon">mail</span>
+                </div>
+                <div class="integration-card-v2__name">Gmail</div>
+                <div class="integration-card-v2__category">Email integratie</div>
+              </div>
+              <div class="integration-card-v2__badge">Popular</div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CID-2</div>
+            <div class="integration-card-v2">
+              <div class="integration-card-v2__gradient integration-card-v2__gradient--purple"></div>
+              <div class="integration-card-v2__content">
+                <div class="integration-card-v2__icon">
+                  <span class="icon">chat</span>
+                </div>
+                <div class="integration-card-v2__name">Slack</div>
+                <div class="integration-card-v2__category">Team communicatie</div>
+              </div>
+              <div class="integration-card-v2__badge">New</div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CID-3</div>
+            <div class="integration-card-v2">
+              <div class="integration-card-v2__gradient integration-card-v2__gradient--green"></div>
+              <div class="integration-card-v2__content">
+                <div class="integration-card-v2__icon">
+                  <span class="icon">event</span>
+                </div>
+                <div class="integration-card-v2__name">Calendar</div>
+                <div class="integration-card-v2__category">Agenda sync</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CID-4</div>
+            <div class="integration-card-v2">
+              <div class="integration-card-v2__gradient integration-card-v2__gradient--orange"></div>
+              <div class="integration-card-v2__content">
+                <div class="integration-card-v2__icon">
+                  <span class="icon">payments</span>
+                </div>
+                <div class="integration-card-v2__name">Stripe</div>
+                <div class="integration-card-v2__category">Betalingen</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant C: Horizontal Card met Logo -->
+        <h3 class="ds-subsection__title">Variant C: Horizontal Layout</h3>
+        <div class="ds-grid ds-grid--2">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIC-1</div>
+            <div class="integration-card-v3">
+              <div class="integration-card-v3__logo integration-card-v3__logo--gmail">
+                <span class="icon">mail</span>
+              </div>
+              <div class="integration-card-v3__content">
+                <div class="integration-card-v3__header">
+                  <div class="integration-card-v3__name">Gmail</div>
+                  <div class="integration-card-v3__status integration-card-v3__status--active">
+                    <span class="icon icon-xs">check_circle</span>
+                    Active
+                  </div>
+                </div>
+                <div class="integration-card-v3__desc">Sync emails, contacts en agenda automatisch</div>
+                <div class="integration-card-v3__meta">
+                  <span class="integration-card-v3__tag">Email</span>
+                  <span class="integration-card-v3__tag">CRM</span>
+                </div>
+              </div>
+              <Button variant="ghost" size="sm" icon="settings" autoIcon={false} />
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIC-2</div>
+            <div class="integration-card-v3">
+              <div class="integration-card-v3__logo integration-card-v3__logo--slack">
+                <span class="icon">chat</span>
+              </div>
+              <div class="integration-card-v3__content">
+                <div class="integration-card-v3__header">
+                  <div class="integration-card-v3__name">Slack</div>
+                  <div class="integration-card-v3__status integration-card-v3__status--inactive">
+                    <span class="icon icon-xs">error</span>
+                    Error
+                  </div>
+                </div>
+                <div class="integration-card-v3__desc">Real-time notificaties en team updates</div>
+                <div class="integration-card-v3__meta">
+                  <span class="integration-card-v3__tag">Communication</span>
+                </div>
+              </div>
+              <Button variant="ghost" size="sm" icon="refresh" autoIcon={false} />
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIC-3</div>
+            <div class="integration-card-v3">
+              <div class="integration-card-v3__logo integration-card-v3__logo--calendar">
+                <span class="icon">event</span>
+              </div>
+              <div class="integration-card-v3__content">
+                <div class="integration-card-v3__header">
+                  <div class="integration-card-v3__name">Google Calendar</div>
+                  <div class="integration-card-v3__status integration-card-v3__status--pending">
+                    <span class="icon icon-xs">schedule</span>
+                    Pending
+                  </div>
+                </div>
+                <div class="integration-card-v3__desc">Afspraken synchroniseren met je CRM</div>
+                <div class="integration-card-v3__meta">
+                  <span class="integration-card-v3__tag">Calendar</span>
+                  <span class="integration-card-v3__tag">Sync</span>
+                </div>
+              </div>
+              <Button variant="ghost" size="sm" icon="settings" autoIcon={false} />
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIC-4</div>
+            <div class="integration-card-v3 integration-card-v3--available">
+              <div class="integration-card-v3__logo integration-card-v3__logo--stripe">
+                <span class="icon">payments</span>
+              </div>
+              <div class="integration-card-v3__content">
+                <div class="integration-card-v3__header">
+                  <div class="integration-card-v3__name">Stripe</div>
+                  <div class="integration-card-v3__status">
+                    <span class="icon icon-xs">add_circle</span>
+                    Available
+                  </div>
+                </div>
+                <div class="integration-card-v3__desc">Accepteer betalingen direct in je CRM</div>
+                <div class="integration-card-v3__meta">
+                  <span class="integration-card-v3__tag">Payments</span>
+                  <span class="integration-card-v3__tag">Finance</span>
+                </div>
+              </div>
+              <Button variant="primary" size="sm" icon="add" autoIcon={false} />
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant D: Rich Card met Stats -->
+        <h3 class="ds-subsection__title">Variant D: Rich Card</h3>
+        <div class="ds-grid ds-grid--3">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIR-1</div>
+            <div class="integration-card-v4">
+              <div class="integration-card-v4__header">
+                <div class="integration-card-v4__logo integration-card-v4__logo--primary">
+                  <span class="icon">mail</span>
+                </div>
+                <div class="integration-card-v4__badge">Active</div>
+              </div>
+              <h3 class="integration-card-v4__name">Gmail Integration</h3>
+              <p class="integration-card-v4__desc">Bidirectionele email sync met je CRM</p>
+
+              <div class="integration-card-v4__stats">
+                <div class="integration-card-v4__stat">
+                  <div class="integration-card-v4__stat-value">1,247</div>
+                  <div class="integration-card-v4__stat-label">Emails synced</div>
+                </div>
+                <div class="integration-card-v4__stat">
+                  <div class="integration-card-v4__stat-value">98%</div>
+                  <div class="integration-card-v4__stat-label">Uptime</div>
+                </div>
+              </div>
+
+              <div class="integration-card-v4__footer">
+                <Button variant="outline" size="sm" icon="settings" iconPosition="start" class="flex-1">
+                  Configure
+                </Button>
+                <Button variant="ghost" size="sm" icon="more_vert" autoIcon={false} />
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIR-2</div>
+            <div class="integration-card-v4">
+              <div class="integration-card-v4__header">
+                <div class="integration-card-v4__logo integration-card-v4__logo--success">
+                  <span class="icon">chat</span>
+                </div>
+                <div class="integration-card-v4__badge integration-card-v4__badge--new">New</div>
+              </div>
+              <h3 class="integration-card-v4__name">Slack Connect</h3>
+              <p class="integration-card-v4__desc">Real-time notificaties en updates</p>
+
+              <div class="integration-card-v4__stats">
+                <div class="integration-card-v4__stat">
+                  <div class="integration-card-v4__stat-value">342</div>
+                  <div class="integration-card-v4__stat-label">Notifications</div>
+                </div>
+                <div class="integration-card-v4__stat">
+                  <div class="integration-card-v4__stat-value">5</div>
+                  <div class="integration-card-v4__stat-label">Channels</div>
+                </div>
+              </div>
+
+              <div class="integration-card-v4__footer">
+                <Button variant="outline" size="sm" icon="settings" iconPosition="start" class="flex-1">
+                  Configure
+                </Button>
+                <Button variant="ghost" size="sm" icon="more_vert" autoIcon={false} />
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CIR-3</div>
+            <div class="integration-card-v4 integration-card-v4--inactive">
+              <div class="integration-card-v4__header">
+                <div class="integration-card-v4__logo">
+                  <span class="icon">event</span>
+                </div>
+              </div>
+              <h3 class="integration-card-v4__name">Google Calendar</h3>
+              <p class="integration-card-v4__desc">Synchroniseer afspraken automatisch</p>
+
+              <div class="integration-card-v4__features">
+                <div class="integration-card-v4__feature">
+                  <span class="icon icon-sm">check</span>
+                  2-way sync
+                </div>
+                <div class="integration-card-v4__feature">
+                  <span class="icon icon-sm">check</span>
+                  Auto-reminders
+                </div>
+                <div class="integration-card-v4__feature">
+                  <span class="icon icon-sm">check</span>
+                  Team calendars
+                </div>
+              </div>
+
+              <div class="integration-card-v4__footer">
+                <Button variant="primary" size="sm" icon="add" iconPosition="start" class="flex-1">
+                  Connect Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. TESTIMONIAL CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Testimonial Card</h2>
+          <p class="ds-section__desc">Voor klant reviews en testimonials</p>
+        </div>
+
+        <div class="ds-grid ds-grid--2">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CT-1</div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote">
+                <span class="icon">format_quote</span>
+                <p>Tesoro heeft onze sales pipeline gestroomlijnd en ons geholpen 40% meer deals te sluiten. De AI matching is game-changing.</p>
+              </div>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">JS</div>
+                <div class="testimonial-card__info">
+                  <div class="testimonial-card__name">John Stevens</div>
+                  <div class="testimonial-card__role">CEO, Premium Real Estate</div>
+                </div>
+              </div>
+              <div class="testimonial-card__rating">
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CT-2</div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote">
+                <span class="icon">format_quote</span>
+                <p>De email integratie is briljant. Alle communicatie automatisch gelogd en gekoppeld aan deals. Scheelt me 10 uur per week.</p>
+              </div>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">MJ</div>
+                <div class="testimonial-card__info">
+                  <div class="testimonial-card__name">Maria Jansen</div>
+                  <div class="testimonial-card__role">Makelaar, Jansen & Partners</div>
+                </div>
+              </div>
+              <div class="testimonial-card__rating">
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+                <span class="icon">star</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. LINK CARD -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Link Card</h2>
+          <p class="ds-section__desc">Simpele navigatie cards met icon</p>
+        </div>
+
+        <div class="ds-grid ds-grid--3">
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CLN-1</div>
+            <a href="#" class="link-card">
+              <div class="link-card__icon">
+                <span class="icon">description</span>
+              </div>
+              <div class="link-card__content">
+                <h3 class="link-card__title">Documentatie</h3>
+                <p class="link-card__desc">Alle handleidingen en guides</p>
+              </div>
+              <div class="link-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CLN-2</div>
+            <a href="#" class="link-card">
+              <div class="link-card__icon">
+                <span class="icon">support_agent</span>
+              </div>
+              <div class="link-card__content">
+                <h3 class="link-card__title">Support</h3>
+                <p class="link-card__desc">Neem contact op met ons team</p>
+              </div>
+              <div class="link-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="ds-element-wrapper">
+            <div class="ds-element-badge">CLN-3</div>
+            <a href="#" class="link-card">
+              <div class="link-card__icon">
+                <span class="icon">school</span>
+              </div>
+              <div class="link-card__content">
+                <h3 class="link-card__title">Academy</h3>
+                <p class="link-card__desc">Leer Tesoro effectief gebruiken</p>
+              </div>
+              <div class="link-card__arrow">
+                <span class="icon">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. BUTTON COMPONENT -->
+      <section class="ds-section">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Button Component</h2>
+          <p class="ds-section__desc">Alle button varianten met sizes en icon support</p>
+        </div>
+
+        <!-- Variants -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Button Varianten</h3>
+          <div class="button-showcase">
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-P</div>
+              <div class="button-demo">
+                <div class="button-demo__label">Primary</div>
+                <div class="button-demo__example">
+                  <Button variant="primary" size="md">
+                    Primaire actie
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="primary"
+                </div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-S</div>
+              <div class="button-demo">
+                <div class="button-demo__label">Secondary</div>
+                <div class="button-demo__example">
+                  <Button variant="secondary" size="md">
+                    Secundaire actie
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="secondary"
+                </div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-O</div>
+              <div class="button-demo">
+                <div class="button-demo__label">Outline</div>
+                <div class="button-demo__example">
+                  <Button variant="outline" size="md">
+                    Tertiaire actie
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="outline"
+                </div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-G</div>
+              <div class="button-demo">
+                <div class="button-demo__label">Ghost</div>
+                <div class="button-demo__example">
+                  <Button variant="ghost" size="md">
+                    Subtle actie
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="ghost"
+                </div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-Gr</div>
+              <div class="button-demo">
+                <div class="button-demo__label">Gradient</div>
+                <div class="button-demo__example">
+                  <Button variant="gradient" size="md">
+                    Special CTA
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="gradient"
+                </div>
+              </div>
+            </div>
+
+            <div class="ds-element-wrapper">
+              <div class="ds-element-badge">BTN-W</div>
+              <div class="button-demo">
+                <div class="button-demo__label">White</div>
+                <div class="button-demo__example button-demo__example--dark">
+                  <Button variant="white" size="md">
+                    Op donker
+                  </Button>
+                </div>
+                <div class="button-demo__code">
+                  variant="white"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sizes -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Button Sizes</h3>
+          <div class="button-showcase button-showcase--inline">
+            <div class="button-demo">
+              <div class="button-demo__label">Small</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="sm">
+                  Small button
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                size="sm"
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Medium (default)</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md">
+                  Medium button
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                size="md"
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Large</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="lg">
+                  Large button
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                size="lg"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Icons -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">Buttons met Icons</h3>
+          <div class="button-showcase">
+            <div class="button-demo">
+              <div class="button-demo__label">Icon aan start</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" icon="download" iconPosition="start">
+                  Download PDF
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                icon="download"<br>iconPosition="start"
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Icon aan einde</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" icon="arrow_forward" iconPosition="end">
+                  Volgende stap
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                icon="arrow_forward"<br>iconPosition="end"
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Auto-icon (external link)</div>
+              <div class="button-demo__example">
+                <Button variant="secondary" size="md" href="https://example.com">
+                  Externe link
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                href="https://..."<br>(auto: open_in_new)
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Auto-icon (submit)</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" type="submit">
+                  Versturen
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                type="submit"<br>(auto: send)
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Ghost met icon</div>
+              <div class="button-demo__example">
+                <Button variant="ghost" size="sm" icon="settings">
+                  Instellingen
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                variant="ghost"<br>icon="settings"
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Icon only</div>
+              <div class="button-demo__example">
+                <Button variant="ghost" size="md" icon="more_vert" autoIcon={false} />
+              </div>
+              <div class="button-demo__code">
+                icon="more_vert"<br>autoIcon={false}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- States & Use Cases -->
+        <div class="ds-subsection">
+          <h3 class="ds-subsection__title">States & Special Cases</h3>
+          <div class="button-showcase">
+            <div class="button-demo">
+              <div class="button-demo__label">Disabled</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" disabled>
+                  Disabled button
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                disabled
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Full width</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" fullWidth>
+                  Full width button
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                fullWidth
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Als link (href)</div>
+              <div class="button-demo__example">
+                <Button variant="secondary" size="md" href="/pricing">
+                  Naar pricing
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                href="/pricing"<br>(renders &lt;a&gt; tag)
+              </div>
+            </div>
+
+            <div class="button-demo">
+              <div class="button-demo__label">Modal trigger</div>
+              <div class="button-demo__example">
+                <Button variant="primary" size="md" data-modal-target="contact-modal">
+                  Contact
+                </Button>
+              </div>
+              <div class="button-demo__code">
+                data-modal-target="..."<br>(auto: mail icon)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Guidelines -->
+        <div class="ds-subsection">
+          <div class="usage-guidelines">
+            <h3 class="usage-guidelines__title">Gebruik Richtlijnen</h3>
+            <div class="usage-guidelines__grid">
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--primary">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">Primary Button</h4>
+                  <p>Gebruik voor de belangrijkste actie op een pagina. Maximaal 1 per scherm.</p>
+                  <p class="usage-guideline__example">Voorbeeld: "Aanmelden", "Kopen", "Start nu"</p>
+                </div>
+              </div>
+
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--secondary">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">Secondary Button</h4>
+                  <p>Gebruik voor secundaire acties die minder belangrijk zijn dan primary.</p>
+                  <p class="usage-guideline__example">Voorbeeld: "Meer info", "Download", "Contact"</p>
+                </div>
+              </div>
+
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--outline">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">Outline Button</h4>
+                  <p>Gebruik voor tertiaire acties of als alternatief naast een primary button.</p>
+                  <p class="usage-guideline__example">Voorbeeld: "Annuleren", "Terug", "Overslaan"</p>
+                </div>
+              </div>
+
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--ghost">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">Ghost Button</h4>
+                  <p>Gebruik voor minimale acties, utility buttons of icon-only buttons.</p>
+                  <p class="usage-guideline__example">Voorbeeld: "Sluiten", "Instellingen", "Menu"</p>
+                </div>
+              </div>
+
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--gradient">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">Gradient Button</h4>
+                  <p>Gebruik spaarzaam voor speciale CTAs die extra aandacht verdienen.</p>
+                  <p class="usage-guideline__example">Voorbeeld: "Probeer gratis", "Start demo"</p>
+                </div>
+              </div>
+
+              <div class="usage-guideline">
+                <div class="usage-guideline__icon usage-guideline__icon--white">
+                  <span class="icon">done</span>
+                </div>
+                <div class="usage-guideline__content">
+                  <h4 class="usage-guideline__heading">White Button</h4>
+                  <p>Gebruik alleen op donkere achtergronden voor goede contrast.</p>
+                  <p class="usage-guideline__example">Voorbeeld: In hero sections, CTA secties</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  /* DESIGN SYSTEM LAYOUT */
+  .design-system {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding-bottom: 4rem;
+  }
+
+  .ds-header {
+    background: linear-gradient(135deg, #0a1f44 0%, #1e3a5f 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .ds-header__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .ds-header__subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .ds-section {
+    margin-bottom: 4rem;
+  }
+
+  .ds-section__header {
+    margin-bottom: 2rem;
+  }
+
+  .ds-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .ds-section__desc {
+    font-size: 1rem;
+    color: #64748b;
+  }
+
+  .ds-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .ds-grid--1 { grid-template-columns: 1fr; }
+  .ds-grid--2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .ds-grid--3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .ds-grid--4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+  /* Element Wrapper with Badge */
+  .ds-element-wrapper {
+    position: relative;
+    height: 100%;
+  }
+
+  .ds-element-badge {
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+    background: linear-gradient(135deg, #003366 0%, #0a4a7a 100%);
+    color: white;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    font-family: 'Monaco', 'Courier New', monospace;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    z-index: 10;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(0, 51, 102, 0.2);
+    text-transform: lowercase;
+  }
+
+  /* ===== 0. TYPOGRAPHY ===== */
+  .typo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .typo-demo {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    transition: all 0.25s ease;
+  }
+
+  .typo-demo:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px -2px rgba(0, 51, 102, 0.08);
+  }
+
+  .typo-sample {
+    margin-bottom: 1rem;
+    color: #1e293b;
+  }
+
+  .typo-meta {
+    font-size: 0.8125rem;
+    color: #94a3b8;
+    font-family: 'Monaco', 'Courier New', monospace;
+    padding: 0.5rem 0.75rem;
+    background: #f8fafc;
+    border-radius: 6px;
+    border-left: 3px solid #cbd5e1;
+  }
+
+  /* ===== 1. PATH SELECTION CARD ===== */
+  .path-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .path-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #003366 0%, #004080 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  /* Tesoro T-inspired geometric overlay */
+  .path-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(245, 180, 0, 0.03) 0%, rgba(0, 51, 102, 0.04) 100%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .path-card:hover {
+    border-color: #003366;
+    box-shadow: 0 12px 24px rgba(0, 51, 102, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .path-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .path-card:hover::after {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+
+  .path-card__icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .path-card__icon .icon {
+    font-size: 3rem;
+    color: #003366;
+  }
+
+  .path-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .path-card__desc {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+
+  /* ===== 2. FEATURE CARD ===== */
+  .feature-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #003366 0%, #004080 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  /* Geometric corner accent - Tesoro T-inspired */
+  .feature-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.03) 0%, transparent 100%);
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-card:hover {
+    border-color: #003366;
+    box-shadow: 0 12px 24px rgba(0, 51, 102, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .feature-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .feature-card:hover::after {
+    opacity: 1;
+  }
+
+  .feature-card__icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-card__icon .icon {
+    font-size: 3rem;
+    color: #003366;
+  }
+
+  .feature-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+  }
+
+  .feature-card__desc {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-card__benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .feature-card__benefit {
+    font-size: 0.875rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+  }
+
+  .feature-card__benefit .icon {
+    color: #10b981;
+    flex-shrink: 0;
+  }
+
+
+  /* ===== 3. STEP CARD ===== */
+  .step-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 1.75rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+
+  .step-card:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .step-card__number {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.2);
+  }
+
+  .step-card__content {
+    flex: 1;
+  }
+
+  .step-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-card__desc {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-size: 0.9375rem;
+  }
+
+  .step-card__meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+  }
+
+  .step-card__time,
+  .step-card__badge {
+    color: #64748b;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .step-card__badge--success {
+    color: #10b981;
+    font-weight: 600;
+  }
+
+  .step-card__arrow {
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .step-card:hover .step-card__arrow {
+    color: #003366;
+    transform: translateX(4px);
+  }
+
+  /* Completed state */
+  .step-card--completed {
+    border-color: #10b981;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  }
+
+  .step-card--completed .step-card__number {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  }
+
+  /* ===== 4. INFO CARD ===== */
+  .info-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.25s ease;
+  }
+
+  .info-card:hover {
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.1);
+  }
+
+  .info-card__icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .info-card__icon--primary {
+    background: rgba(0, 51, 102, 0.1);
+    color: #003366;
+  }
+
+  .info-card__icon--success {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+  }
+
+  .info-card__icon--warning {
+    background: rgba(245, 180, 0, 0.1);
+    color: #F5B400;
+  }
+
+  .info-card__icon--info {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+  }
+
+  .info-card__icon .icon {
+    font-size: 1.5rem;
+  }
+
+  .info-card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card__content {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  kbd {
+    padding: 0.125rem 0.375rem;
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.875em;
+  }
+
+  /* ===== 5. STAT CARD ===== */
+  .stat-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.25s ease;
+  }
+
+  .stat-card:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .stat-card__icon {
+    color: #003366;
+    margin-bottom: 0.75rem;
+  }
+
+  .stat-card__icon .icon {
+    font-size: 2rem;
+  }
+
+  .stat-card__value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-card__label {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.75rem;
+  }
+
+  .stat-card__change {
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .stat-card__change--positive {
+    color: #10b981;
+  }
+
+  .stat-card__change--negative {
+    color: #ef4444;
+  }
+
+  .stat-card__change--neutral {
+    color: #64748b;
+  }
+
+  /* ===== 6. INTEGRATION CARD ===== */
+  .ds-subsection__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #475569;
+    margin: 2rem 0 1rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .ds-subsection__title:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /* Variant A: Basic */
+  .integration-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.25s ease;
+  }
+
+  .integration-card:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .integration-card__name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+
+  .integration-card__category {
+    font-size: 0.75rem;
+    color: #64748b;
+  }
+
+  /* ===== VARIANT B: GRADIENT FEATURE CARD ===== */
+  .integration-card-v2 {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .integration-card-v2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -12px rgba(0, 51, 102, 0.2);
+    border-color: #003366;
+  }
+
+  .integration-card-v2__gradient {
+    height: 100px;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    position: relative;
+  }
+
+  .integration-card-v2__gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+  }
+
+  /* Tesoro T-inspired diagonal accent */
+  .integration-card-v2__gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+  }
+
+  .integration-card-v2__gradient--blue {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  }
+
+  .integration-card-v2__gradient--purple {
+    background: linear-gradient(135deg, #6b21a8 0%, #a855f7 100%);
+  }
+
+  .integration-card-v2__gradient--green {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+  }
+
+  .integration-card-v2__gradient--orange {
+    background: linear-gradient(135deg, #c2410c 0%, #f97316 100%);
+  }
+
+  .integration-card-v2__content {
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+  }
+
+  .integration-card-v2__icon {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 16px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 3px solid white;
+  }
+
+  .integration-card-v2__icon .icon {
+    font-size: 2.5rem;
+    color: #003366;
+  }
+
+  .integration-card-v2__name {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+
+  .integration-card-v2__category {
+    font-size: 0.8125rem;
+    color: #64748b;
+  }
+
+  .integration-card-v2__badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #003366;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(8px);
+  }
+
+  /* ===== VARIANT C: HORIZONTAL LAYOUT ===== */
+  .integration-card-v3 {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.25s ease;
+  }
+
+  .integration-card-v3:hover {
+    border-color: #003366;
+    box-shadow: 0 12px 24px -8px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .integration-card-v3__logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .integration-card-v3__logo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+  }
+
+  .integration-card-v3__logo .icon {
+    font-size: 1.75rem;
+    color: white;
+    position: relative;
+  }
+
+  .integration-card-v3__logo--gmail {
+    background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%);
+  }
+
+  .integration-card-v3__logo--slack {
+    background: linear-gradient(135deg, #611f69 0%, #4a154b 100%);
+  }
+
+  .integration-card-v3__logo--calendar {
+    background: linear-gradient(135deg, #4285f4 0%, #1967d2 100%);
+  }
+
+  .integration-card-v3__logo--stripe {
+    background: linear-gradient(135deg, #635bff 0%, #5348d5 100%);
+  }
+
+  .integration-card-v3__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .integration-card-v3__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .integration-card-v3__name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1e293b;
+  }
+
+  .integration-card-v3__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
+  .integration-card-v3__status--active {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+  }
+
+  .integration-card-v3__status--inactive {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+  }
+
+  .integration-card-v3__status--pending {
+    background: rgba(245, 180, 0, 0.1);
+    color: #d97706;
+  }
+
+  .integration-card-v3__desc {
+    font-size: 0.8125rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .integration-card-v3__meta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .integration-card-v3__tag {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+  }
+
+
+  .integration-card-v3--available {
+    border-style: dashed;
+  }
+
+  .integration-card-v3--available:hover {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  }
+
+  /* ===== VARIANT D: RICH CARD ===== */
+  .integration-card-v4 {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .integration-card-v4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #003366 0%, #10b981 50%, #3b82f6 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .integration-card-v4:hover {
+    border-color: #003366;
+    box-shadow: 0 16px 32px -8px rgba(0, 51, 102, 0.2);
+    transform: translateY(-4px);
+  }
+
+  .integration-card-v4:hover::before {
+    opacity: 1;
+  }
+
+  .integration-card-v4__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  .integration-card-v4__logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(0, 51, 102, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .integration-card-v4__logo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
+  }
+
+  .integration-card-v4__logo .icon {
+    font-size: 1.75rem;
+    color: #003366;
+    position: relative;
+  }
+
+  .integration-card-v4__logo--primary {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+  }
+
+  .integration-card-v4__logo--success {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    color: #047857;
+  }
+
+  .integration-card-v4__badge {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    border-radius: 12px;
+    background: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .integration-card-v4__badge--new {
+    background: rgba(99, 102, 241, 0.12);
+    color: #4f46e5;
+  }
+
+  .integration-card-v4__name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+
+  .integration-card-v4__desc {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .integration-card-v4__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+  }
+
+  .integration-card-v4__stat {
+    text-align: center;
+  }
+
+  .integration-card-v4__stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #003366;
+    margin-bottom: 0.25rem;
+  }
+
+  .integration-card-v4__stat-label {
+    font-size: 0.6875rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .integration-card-v4__features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .integration-card-v4__feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #475569;
+  }
+
+  .integration-card-v4__feature .icon {
+    color: #10b981;
+  }
+
+  .integration-card-v4__footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .integration-card-v4--inactive {
+    border-style: dashed;
+  }
+
+  .integration-card-v4--inactive:hover {
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  }
+
+  /* ===== 7. TESTIMONIAL CARD ===== */
+  .testimonial-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.25s ease;
+  }
+
+  .testimonial-card:hover {
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+  }
+
+  .testimonial-card__quote {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .testimonial-card__quote .icon {
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    font-size: 2rem;
+    color: #e2e8f0;
+  }
+
+  .testimonial-card__quote p {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    font-style: italic;
+    padding-left: 1.5rem;
+  }
+
+  .testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .testimonial-card__name {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.9375rem;
+  }
+
+  .testimonial-card__role {
+    font-size: 0.8125rem;
+    color: #64748b;
+  }
+
+  .testimonial-card__rating {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .testimonial-card__rating .icon {
+    color: #F5B400;
+    font-size: 1.125rem;
+  }
+
+  /* ===== 8. LINK CARD ===== */
+  .link-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .link-card:hover {
+    border-color: #003366;
+    box-shadow: 0 8px 16px -4px rgba(0, 51, 102, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .link-card__icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: rgba(0, 51, 102, 0.1);
+    color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .link-card__icon .icon {
+    font-size: 1.5rem;
+  }
+
+  .link-card__content {
+    flex: 1;
+  }
+
+  .link-card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+
+  .link-card__desc {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+
+  .link-card__arrow {
+    color: #94a3b8;
+    transition: all 0.2s ease;
+  }
+
+  .link-card:hover .link-card__arrow {
+    color: #003366;
+    transform: translateX(4px);
+  }
+
+  /* ===== 9. BUTTON SHOWCASE ===== */
+  .button-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .button-showcase--inline {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .button-demo {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.25s ease;
+  }
+
+  .button-demo:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px -2px rgba(0, 51, 102, 0.08);
+  }
+
+  .button-demo__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+
+  .button-demo__example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: #f8fafc;
+  }
+
+  .button-demo__example--dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+
+  .button-demo__code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #cbd5e1;
+    line-height: 1.6;
+  }
+
+  /* Usage Guidelines */
+  .usage-guidelines {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin-top: 3rem;
+  }
+
+  .usage-guidelines__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .usage-guidelines__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .usage-guideline {
+    display: flex;
+    gap: 1.25rem;
+    align-items: start;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+  }
+
+  .usage-guideline:hover {
+    box-shadow: 0 4px 12px -2px rgba(0, 51, 102, 0.1);
+    border-color: #cbd5e1;
+  }
+
+  .usage-guideline__icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+  }
+
+  .usage-guideline__icon--primary {
+    background: linear-gradient(135deg, #003366 0%, #0a4a7a 100%);
+    color: white;
+  }
+
+  .usage-guideline__icon--secondary {
+    background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+    color: white;
+  }
+
+  .usage-guideline__icon--outline {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    color: #003366;
+  }
+
+  .usage-guideline__icon--ghost {
+    background: linear-gradient(135deg, #fafafa 0%, #f1f5f9 100%);
+    color: #475569;
+  }
+
+  .usage-guideline__icon--gradient {
+    background: linear-gradient(135deg, #003366 0%, #F5B400 100%);
+    color: white;
+  }
+
+  .usage-guideline__icon--white {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    color: #003366;
+    border: 2px solid #e2e8f0;
+  }
+
+  .usage-guideline__content {
+    flex: 1;
+  }
+
+  .usage-guideline__heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+
+  .usage-guideline__content p {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .usage-guideline__content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .usage-guideline__example {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    font-style: italic;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .ds-header__title {
+      font-size: 2rem;
+    }
+
+    .ds-section__title {
+      font-size: 1.5rem;
+    }
+
+    .ds-grid--2,
+    .ds-grid--3,
+    .ds-grid--4 {
+      grid-template-columns: 1fr;
+    }
+
+    .step-card {
+      flex-direction: column;
+    }
+
+    .link-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .link-card__arrow {
+      display: none;
+    }
+
+    .button-showcase--inline {
+      grid-template-columns: 1fr;
+    }
+
+    .usage-guidelines {
+      padding: 1.5rem 1rem;
+    }
+
+    .usage-guideline {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .typo-demo {
+      padding: 1.5rem 1rem;
+    }
+
+    .typo-sample h1 {
+      font-size: 2.5rem;
+    }
+
+    .typo-sample h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
