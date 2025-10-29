@@ -8,6 +8,43 @@ interface ZohoTokenResponse {
   expires_in: number;
 }
 
+interface CachedToken {
+  token: string;
+  expiresAt: number;
+}
+
+// In-memory token cache (survives across requests in same runtime)
+let cachedToken: CachedToken | null = null;
+
+/**
+ * Get Zoho access token using refresh token (with caching)
+ */
+async function getCachedZohoAccessToken(
+  clientId: string,
+  clientSecret: string,
+  refreshToken: string,
+  datacenter: string
+): Promise<string> {
+  const now = Date.now();
+
+  // Return cached token if still valid (with 5-minute buffer)
+  if (cachedToken && cachedToken.expiresAt > now + 300000) {
+    console.log('Using cached Zoho token');
+    return cachedToken.token;
+  }
+
+  console.log('Fetching new Zoho token');
+  const token = await getZohoAccessToken(clientId, clientSecret, refreshToken, datacenter);
+
+  // Cache token for 1 hour (Zoho tokens typically valid for 1 hour)
+  cachedToken = {
+    token,
+    expiresAt: now + 3600000
+  };
+
+  return token;
+}
+
 /**
  * Get Zoho access token using refresh token
  */
@@ -78,8 +115,8 @@ export const GET: APIRoute = async ({ request, url, locals }) => {
     const year = date.getFullYear();
     const zohoDate = `${day}-${month}-${year}`;
 
-    // Get access token
-    const accessToken = await getZohoAccessToken(
+    // Get access token (cached)
+    const accessToken = await getCachedZohoAccessToken(
       zohoClientId,
       zohoClientSecret,
       zohoRefreshToken,
@@ -113,7 +150,13 @@ export const GET: APIRoute = async ({ request, url, locals }) => {
       slots: slots,
     }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        // Cache for 10 minutes (slots don't change that often)
+        'Cache-Control': 'public, max-age=600, s-maxage=600',
+        // Cloudflare-specific: cache at edge for 10 minutes
+        'CDN-Cache-Control': 'public, max-age=600'
+      },
     });
 
   } catch (error) {

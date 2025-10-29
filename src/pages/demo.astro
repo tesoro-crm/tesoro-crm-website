@@ -217,6 +217,9 @@ await loadTranslations(locale);
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
+  // Stale-while-revalidate cache for time slots
+  const slotsCache = new Map<string, any[]>();
+
   // Import the same logic as DemoModal
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('demo-form') as HTMLFormElement;
@@ -235,18 +238,112 @@ await loadTranslations(locale);
       dateInput.setAttribute('min', minDate);
     }
 
-    // When date is selected, fetch available time slots
+    /**
+     * Render time slot buttons
+     * @param slots - Array of time slots from Zoho
+     * @param isStale - If true, slots are from cache and may be outdated
+     */
+    function renderTimeSlots(slots: any[], isStale = false) {
+      if (!timeSlotsGrid) return;
+
+      timeSlotsGrid.innerHTML = '';
+
+      if (slots.length === 0) {
+        if (timeSlotsError) {
+          timeSlotsError.textContent = 'Geen beschikbare tijdslots voor deze datum.';
+          timeSlotsError.style.display = 'block';
+        }
+        return;
+      }
+
+      slots.forEach((slot: any) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'time-slot-btn px-4 py-3 text-sm font-medium border-2 border-neutral-300 rounded-lg hover:border-primary hover:bg-primary/5 transition-all duration-200';
+        button.textContent = slot.from_time || slot.start_time;
+        button.dataset.time = slot.from_time || slot.start_time;
+
+        // If showing stale data, add visual indicator
+        if (isStale) {
+          button.classList.add('opacity-75');
+          button.disabled = true; // Temporarily disabled while revalidating
+        }
+
+        button.addEventListener('click', () => {
+          if (button.disabled) return;
+
+          // Remove active class from all buttons
+          timeSlotsGrid.querySelectorAll('.time-slot-btn').forEach(btn => {
+            btn.classList.remove('border-primary', 'bg-primary/10', 'text-primary');
+            btn.classList.add('border-neutral-300');
+          });
+
+          // Add active class to clicked button
+          button.classList.remove('border-neutral-300');
+          button.classList.add('border-primary', 'bg-primary/10', 'text-primary');
+
+          // Set hidden input value
+          if (selectedTimeSlotInput) {
+            selectedTimeSlotInput.value = button.dataset.time || '';
+          }
+        });
+
+        timeSlotsGrid.appendChild(button);
+      });
+    }
+
+    /**
+     * Update existing slots with fresh data
+     * Grays out unavailable slots instead of removing them
+     */
+    function updateSlotsWithFreshData(freshSlots: any[]) {
+      if (!timeSlotsGrid) return;
+
+      const availableTimes = new Set(freshSlots.map(slot => slot.from_time || slot.start_time));
+      const allButtons = timeSlotsGrid.querySelectorAll('.time-slot-btn') as NodeListOf<HTMLButtonElement>;
+
+      allButtons.forEach(button => {
+        const timeValue = button.dataset.time;
+
+        if (availableTimes.has(timeValue)) {
+          // Slot is available - enable it
+          button.disabled = false;
+          button.classList.remove('opacity-75', 'opacity-50', 'cursor-not-allowed');
+          button.classList.add('hover:border-primary', 'hover:bg-primary/5');
+        } else {
+          // Slot is NOT available - gray it out
+          button.disabled = true;
+          button.classList.add('opacity-50', 'cursor-not-allowed', 'line-through');
+          button.classList.remove('hover:border-primary', 'hover:bg-primary/5', 'border-primary', 'bg-primary/10', 'text-primary');
+          button.classList.add('border-neutral-200', 'text-neutral-400');
+        }
+      });
+    }
+
+    // When date is selected, show cached slots immediately then revalidate
     dateInput?.addEventListener('change', async (e) => {
       const selectedDate = (e.target as HTMLInputElement).value;
       if (!selectedDate) return;
 
-      // Show container and loading state
+      // Show container
       if (timeSlotsContainer) timeSlotsContainer.style.display = 'block';
-      if (timeSlotsLoading) timeSlotsLoading.style.display = 'block';
-      if (timeSlotsGrid) timeSlotsGrid.innerHTML = '';
       if (timeSlotsError) timeSlotsError.style.display = 'none';
       if (selectedTimeSlotInput) selectedTimeSlotInput.value = '';
 
+      // Check if we have cached slots for this date
+      const cachedSlots = slotsCache.get(selectedDate);
+
+      if (cachedSlots && cachedSlots.length > 0) {
+        // INSTANT: Show cached slots immediately (stale)
+        if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
+        renderTimeSlots(cachedSlots, true); // isStale = true
+      } else {
+        // No cache: show loading state
+        if (timeSlotsLoading) timeSlotsLoading.style.display = 'block';
+        if (timeSlotsGrid) timeSlotsGrid.innerHTML = '';
+      }
+
+      // REVALIDATE: Fetch fresh data in background
       try {
         const response = await fetch(`/api/available-slots?date=${selectedDate}`);
         const data = await response.json();
@@ -257,51 +354,29 @@ await loadTranslations(locale);
           throw new Error(data.error || 'Failed to fetch slots');
         }
 
-        const slots = data.slots || [];
+        const freshSlots = data.slots || [];
 
-        if (slots.length === 0) {
-          if (timeSlotsError) {
-            timeSlotsError.textContent = 'Geen beschikbare tijdslots voor deze datum.';
-            timeSlotsError.style.display = 'block';
-          }
-          return;
+        // Update cache
+        slotsCache.set(selectedDate, freshSlots);
+
+        if (cachedSlots && cachedSlots.length > 0) {
+          // Had cached data: UPDATE existing UI by graying out unavailable slots
+          updateSlotsWithFreshData(freshSlots);
+        } else {
+          // No cached data: RENDER fresh slots normally
+          renderTimeSlots(freshSlots, false);
         }
 
-        // Render time slot buttons
-        if (timeSlotsGrid) {
-          slots.forEach((slot: any) => {
-            const button = document.createElement('button');
-            button.type = 'button';
-            button.className = 'time-slot-btn px-4 py-3 text-sm font-medium border-2 border-neutral-300 rounded-lg hover:border-primary hover:bg-primary/5 transition-all duration-200';
-            button.textContent = slot.from_time || slot.start_time;
-            button.dataset.time = slot.from_time || slot.start_time;
-
-            button.addEventListener('click', () => {
-              // Remove active class from all buttons
-              timeSlotsGrid.querySelectorAll('.time-slot-btn').forEach(btn => {
-                btn.classList.remove('border-primary', 'bg-primary/10', 'text-primary');
-                btn.classList.add('border-neutral-300');
-              });
-
-              // Add active class to clicked button
-              button.classList.remove('border-neutral-300');
-              button.classList.add('border-primary', 'bg-primary/10', 'text-primary');
-
-              // Set hidden input value
-              if (selectedTimeSlotInput) {
-                selectedTimeSlotInput.value = button.dataset.time || '';
-              }
-            });
-
-            timeSlotsGrid.appendChild(button);
-          });
-        }
       } catch (error) {
         console.error('Error fetching time slots:', error);
         if (timeSlotsLoading) timeSlotsLoading.style.display = 'none';
-        if (timeSlotsError) {
-          timeSlotsError.textContent = 'Fout bij het laden van tijdslots. Probeer het opnieuw.';
-          timeSlotsError.style.display = 'block';
+
+        // If we showed stale data and fetch failed, keep showing stale data
+        if (!cachedSlots || cachedSlots.length === 0) {
+          if (timeSlotsError) {
+            timeSlotsError.textContent = 'Fout bij het laden van tijdslots. Probeer het opnieuw.';
+            timeSlotsError.style.display = 'block';
+          }
         }
       }
     });
