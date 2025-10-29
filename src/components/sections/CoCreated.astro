@@ -1,6 +1,8 @@
 ---
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+import Button from '../ui/Button.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
 
 interface Props {
   readonly locale: Language;
@@ -31,11 +33,13 @@ const partners: readonly Partner[] = [
 
 <section class="cocreated">
   <div class="cocreated__container">
-    <!-- Header -->
-    <div class="cocreated__header">
-      <h2 class="cocreated__headline">{t('home.cocreated.headline', locale)}</h2>
-      <p class="cocreated__subheadline">{t('home.cocreated.subheadline', locale)}</p>
-    </div>
+    <SectionHeader
+      title={t('home.cocreated.headline', locale)}
+      description={t('home.cocreated.subheadline', locale)}
+      size="lg"
+      alignment="center"
+      class="cocreated__header"
+    />
 
     <!-- Partners Grid -->
     <div class="cocreated__partners">
@@ -133,9 +137,9 @@ const partners: readonly Partner[] = [
 
     <!-- CTA -->
     <div class="cocreated__cta">
-      <a href="#contact" class="cocreated__cta-button">
+      <Button variant="gradient" size="lg" data-scroll-to="contact">
         {t('home.cocreated.cta', locale)}
-      </a>
+      </Button>
       <p class="cocreated__cta-benefit">{t('home.cocreated.cta_benefit', locale)}</p>
     </div>
   </div>
@@ -195,6 +199,17 @@ const partners: readonly Partner[] = [
 
   initCoCreated();
   document.addEventListener('astro:after-swap', initCoCreated);
+
+  // Scroll to contact on button click
+  const ctaButton = document.querySelector('[data-scroll-to="contact"]');
+  if (ctaButton) {
+    ctaButton.addEventListener('click', () => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
 </script>
 
 <style>
@@ -709,23 +724,6 @@ const partners: readonly Partner[] = [
 
   .cocreated__cta {
     text-align: center;
-  }
-
-  .cocreated__cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #ff6b9d 0%, #ff9b6b 100%);
-    color: white;
-    font-weight: 600;
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-size: 1.125rem;
-  }
-
-  .cocreated__cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 107, 157, 0.4);
   }
 
   .cocreated__cta-benefit {

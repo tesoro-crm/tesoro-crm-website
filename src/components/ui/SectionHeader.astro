@@ -1,0 +1,124 @@
+---
+export interface Props {
+  // Content
+  badge?: string;
+  badgeVariant?: 'default' | 'gradient';
+  title: string;
+  description?: string;
+
+  // Semantic HTML
+  titleTag?: 'h1' | 'h2' | 'h3';
+
+  // Layout
+  alignment?: 'center' | 'left';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl';
+
+  // Styling
+  theme?: 'light' | 'dark';
+  class?: string;
+}
+
+const {
+  badge,
+  badgeVariant = 'default',
+  title,
+  description,
+  titleTag = 'h2',
+  alignment = 'center',
+  size = 'lg',
+  maxWidth = '3xl',
+  theme = 'light',
+  class: className = '',
+} = Astro.props;
+
+// Component ID for tracking (SH = Section Header)
+const componentId = 'SH';
+
+// Title tag component
+const TitleTag = titleTag;
+
+// Alignment classes
+const alignmentClasses = alignment === 'center' ? 'text-center' : 'text-left';
+
+// Title size classes
+const titleSizeClasses = {
+  sm: 'text-2xl lg:text-3xl',
+  md: 'text-3xl lg:text-4xl',
+  lg: 'text-4xl lg:text-5xl',
+  xl: 'text-4xl sm:text-5xl lg:text-6xl',
+};
+
+// Description size classes
+const descSizeClasses = {
+  sm: 'text-base',
+  md: 'text-lg',
+  lg: 'text-lg sm:text-xl',
+  xl: 'text-xl',
+};
+
+// Max-width classes
+const maxWidthClasses = {
+  sm: 'max-w-xl',
+  md: 'max-w-2xl',
+  lg: 'max-w-3xl',
+  xl: 'max-w-4xl',
+  '2xl': 'max-w-5xl',
+  '3xl': 'max-w-6xl',
+};
+
+// Theme-based text colors
+const titleColorClass = theme === 'dark' ? 'text-white' : 'text-neutral-900';
+const descColorClass = theme === 'dark' ? 'text-white/90' : 'text-neutral-700';
+
+// Badge variant classes
+const badgeClasses = badgeVariant === 'gradient'
+  ? 'badge-gradient'
+  : 'inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6';
+---
+
+<div
+  class={`section-header ${alignmentClasses} ${className}`}
+  data-component-id={componentId}
+>
+  {badge && (
+    <div class={badgeClasses}>
+      {badge}
+    </div>
+  )}
+
+  <TitleTag class={`${titleSizeClasses[size]} font-display font-bold ${titleColorClass} mb-4`}>
+    {title}
+  </TitleTag>
+
+  {description && (
+    <p class={`${descSizeClasses[size]} ${descColorClass} ${maxWidthClasses[maxWidth]} ${alignment === 'center' ? 'mx-auto' : ''}`}>
+      {description}
+    </p>
+  )}
+</div>
+
+<style>
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .badge-gradient {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #003366, #0a4a7a);
+    color: white;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 640px) {
+    .section-header {
+      margin-bottom: 2rem;
+    }
+  }
+</style>

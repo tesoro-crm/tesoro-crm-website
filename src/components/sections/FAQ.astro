@@ -1,6 +1,8 @@
 ---
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+import Button from '../ui/Button.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
 
 export interface Props {
   locale: Language;
@@ -68,11 +70,13 @@ const faqSchema = {
 
 <section class="faq-section">
   <div class="faq-container">
-    <!-- Header -->
-    <div class="faq-header">
-      <h2 class="faq-title">{t('home.faq.title', locale)}</h2>
-      <p class="faq-subtitle">{t('home.faq.subtitle', locale)}</p>
-    </div>
+    <SectionHeader
+      title={t('home.faq.title', locale)}
+      description={t('home.faq.subtitle', locale)}
+      size="md"
+      alignment="center"
+      class="faq-header"
+    />
 
     <!-- FAQ Accordion -->
     <div class="faq-accordion" itemscope itemtype="https://schema.org/FAQPage">
@@ -113,12 +117,13 @@ const faqSchema = {
     <!-- CTA Footer -->
     <div class="faq-footer">
       <p class="faq-footer-text">{t('home.faq.more_questions', locale)}</p>
-      <button
-        class="faq-cta-button"
+      <Button
+        variant="white"
+        size="lg"
         data-modal-target="contact-modal"
       >
         {t('home.faq.contact_cta', locale)}
-      </button>
+      </Button>
     </div>
   </div>
 </section>
@@ -308,32 +313,6 @@ const faqSchema = {
     font-size: 1rem;
     color: #64748b;
     margin-bottom: 1.25rem;
-  }
-
-  .faq-cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: white;
-    color: #0a1f44;
-    font-weight: 600;
-    padding: 0.875rem 2rem;
-    border: 2px solid #0a1f44;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-size: 1rem;
-  }
-
-  .faq-cta-button:hover {
-    background: #0a1f44;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(10, 31, 68, 0.2);
-  }
-
-  .faq-cta-button:active {
-    transform: translateY(0);
   }
 
   /* Responsive */

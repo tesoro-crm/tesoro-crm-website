@@ -1,7 +1,7 @@
 ---
 import Button from '../ui/Button.astro';
 import Card from '../ui/Card.astro';
-import Badge from '../ui/Badge.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
 import { t, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
 
@@ -14,18 +14,15 @@ const { locale } = Astro.props;
 
 <section class="py-16 lg:py-24 bg-gradient-to-br from-neutral-50 via-white to-neutral-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-      <Badge variant="secondary" size="md" class="mb-4">
-        {t('home.website_showcase.badge', locale)}
-      </Badge>
-      <h2 class="text-3xl lg:text-4xl font-display font-bold text-neutral-900 mb-4">
-        {t('home.website_showcase.title', locale)}
-      </h2>
-      <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-        {t('home.website_showcase.description', locale)}
-      </p>
-    </div>
+    <SectionHeader
+      badge={t('home.website_showcase.badge', locale)}
+      badgeVariant="default"
+      title={t('home.website_showcase.title', locale)}
+      description={t('home.website_showcase.description', locale)}
+      size="md"
+      alignment="center"
+      class="mb-12"
+    />
 
     <!-- Split Layout: Visual + Benefits -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
@@ -125,9 +122,8 @@ const { locale } = Astro.props;
 
     <!-- CTA -->
     <div class="text-center">
-      <Button variant="primary" size="lg" href={getLocalizedPath('/website-services', locale)}>
+      <Button variant="primary" size="lg" href={getLocalizedPath('/website-services', locale)} icon="arrow_forward" iconPosition="end">
         {t('home.website_showcase.cta_button', locale)}
-        <span class="icon">arrow_forward</span>
       </Button>
     </div>
   </div>

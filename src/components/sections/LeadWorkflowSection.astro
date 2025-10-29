@@ -1,7 +1,9 @@
 ---
 import LeadWorkflowVisual from './LeadWorkflowVisual.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+import Button from '../ui/Button.astro';
 
 interface Props {
   locale: Language;
@@ -52,10 +54,13 @@ const timeToday = t('home.lead_workflow.time_today', locale);
 ---
 <section class="lead-workflow">
   <div class="lead-workflow__container">
-    <div class="lead-workflow__header">
-      <h2 class="lead-workflow__title">{title}</h2>
-      <p class="lead-workflow__subtitle">{subtitle}</p>
-    </div>
+    <SectionHeader
+      title={title}
+      description={subtitle}
+      size="lg"
+      alignment="center"
+      class="lead-workflow__header"
+    />
 
     <LeadWorkflowVisual
       step1Title={step1Title}
@@ -103,7 +108,9 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     </div>
 
     <div class="lead-workflow__cta-wrapper">
-      <button class="lead-workflow__cta" data-video-modal-target="video-modal">{ctaLabel}</button>
+      <Button variant="secondary" size="lg" data-video-modal-target="video-modal">
+        {ctaLabel}
+      </Button>
     </div>
   </div>
 </section>
@@ -121,23 +128,7 @@ const timeToday = t('home.lead_workflow.time_today', locale);
   }
 
   .lead-workflow__header {
-    text-align: center;
     margin-bottom: 3rem;
-  }
-
-  .lead-workflow__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 700;
-    color: #0a1f44;
-    margin-bottom: 1rem;
-  }
-
-  .lead-workflow__subtitle {
-    font-size: 1.1rem;
-    color: rgba(10, 31, 68, 0.7);
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
   }
 
   .lead-workflow__benefits {
@@ -223,26 +214,6 @@ const timeToday = t('home.lead_workflow.time_today', locale);
     margin-top: 3rem;
   }
 
-  .lead-workflow__cta {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: var(--accent-primary);
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.75rem;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  }
-
-  .lead-workflow__cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 30px rgba(245, 158, 11, 0.35);
-    background: var(--accent-secondary);
-  }
 
   /* Mobile improvements */
   @media (max-width: 767px) {
@@ -282,11 +253,6 @@ const timeToday = t('home.lead_workflow.time_today', locale);
       transform: none;
     }
 
-    .lead-workflow__cta {
-      width: 100%;
-      padding: 1.125rem 2rem;
-      font-size: 1rem;
-    }
 
     .lead-workflow__cta-wrapper {
       margin-top: 2rem;
