@@ -11,11 +11,11 @@ const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
 
 const demoFeatures = [
-  'Persoonlijke productdemonstratie (30 minuten)',
-  'Live Q&A met productexpert',
-  'Overzicht van integratie mogelijkheden',
-  'Antwoorden op al je vragen',
-  'Geen verplichtingen'
+  t('home.demo_page.benefit_1', locale),
+  t('home.demo_page.benefit_2', locale),
+  t('home.demo_page.benefit_3', locale),
+  t('home.demo_page.benefit_4', locale),
+  t('home.demo_page.benefit_5', locale)
 ];
 
 const timeSlots = [
@@ -30,20 +30,20 @@ const timeSlots = [
 ---
 
 <Layout
-  title="Demo Boeken - Tesoro CRM"
-  description="Boek een gratis persoonlijke demo van Tesoro CRM. Ontdek hoe ons AI-powered platform je helpt bij vastgoed leadgeneratie."
+  title={t('home.demo_page.meta_title', locale)}
+  description={t('home.demo_page.meta_description', locale)}
 >
   <section class="py-16 lg:py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <div class="text-center mb-16">
         <Badge variant="primary" size="md" class="mb-4">
-          Gratis Demo
+          {t('home.demo_page.badge', locale)}
         </Badge>
         <h1 class="text-4xl lg:text-5xl font-display font-bold text-neutral-900 mb-6">
-          Zie Tesoro CRM in actie
+          {t('home.demo_page.title', locale)}
         </h1>
         <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-          Boek een gratis persoonlijke demo en ontdek hoe Tesoro CRM je helpt om meer vastgoed leads te genereren en je workflow te automatiseren.
+          {t('home.demo_page.description', locale)}
         </p>
       </div>
 
@@ -51,21 +51,21 @@ const timeSlots = [
         <!-- Demo Booking Form -->
         <Card variant="default" padding="lg">
           <h2 class="text-2xl font-display font-bold text-neutral-900 mb-6">
-            Demo inplannen
+            {t('home.demo_page.form_title', locale)}
           </h2>
 
           <form action="/api/demo" method="POST" class="space-y-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Input
                 name="firstName"
-                label="Voornaam"
-                placeholder="Jan"
+                label={t('home.demo_page.label_first_name', locale)}
+                placeholder={t('home.demo_page.placeholder_first_name', locale)}
                 required
               />
               <Input
                 name="lastName"
-                label="Achternaam"
-                placeholder="Jansen"
+                label={t('home.demo_page.label_last_name', locale)}
+                placeholder={t('home.demo_page.placeholder_last_name', locale)}
                 required
               />
             </div>
@@ -73,33 +73,33 @@ const timeSlots = [
             <Input
               type="email"
               name="email"
-              label="E-mailadres"
-              placeholder="jan.jansen@bedrijf.nl"
+              label={t('home.demo_page.label_email', locale)}
+              placeholder={t('home.demo_page.placeholder_email', locale)}
               required
             />
 
             <Input
               type="tel"
               name="phone"
-              label="Telefoonnummer"
-              placeholder="+31 6 1234 5678"
+              label={t('home.demo_page.label_phone', locale)}
+              placeholder={t('home.demo_page.placeholder_phone', locale)}
               required
             />
 
             <div>
               <label class="block text-sm font-medium text-neutral-700 mb-2">
-                Bedrijfsnaam
+                {t('home.demo_page.label_company', locale)}
               </label>
               <Input
                 name="company"
-                placeholder="Makelaardij Jansen"
+                placeholder={t('home.demo_page.placeholder_company', locale)}
                 required
               />
             </div>
 
             <div>
               <label class="block text-sm font-medium text-neutral-700 mb-2">
-                Voorkeursdatum
+                {t('home.demo_page.label_preferred_date', locale)}
               </label>
               <Input
                 type="date"
@@ -110,14 +110,14 @@ const timeSlots = [
 
             <div>
               <label class="block text-sm font-medium text-neutral-700 mb-2">
-                Voorkeurstijd
+                {t('home.demo_page.label_preferred_time', locale)}
               </label>
               <select
                 name="preferredTime"
                 class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200"
                 required
               >
-                <option value="">Selecteer een tijd</option>
+                <option value="">{t('home.demo_page.placeholder_time_select', locale)}</option>
                 {timeSlots.map((slot) => (
                   <option value={slot}>{slot}</option>
                 ))}
@@ -126,14 +126,14 @@ const timeSlots = [
 
             <div>
               <label for="notes" class="block text-sm font-medium text-neutral-700 mb-2">
-                Opmerkingen (optioneel)
+                {t('home.demo_page.label_notes', locale)}
               </label>
               <textarea
                 name="notes"
                 id="notes"
                 rows="3"
                 class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
-                placeholder="Specifieke vragen of onderwerpen die je wilt bespreken..."
+                placeholder={t('home.demo_page.placeholder_notes', locale)}
               ></textarea>
             </div>
 
@@ -146,12 +146,12 @@ const timeSlots = [
                 required
               />
               <label for="privacy" class="text-sm text-neutral-600">
-                Ik ga akkoord met het <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline">privacybeleid</a> en geef toestemming voor contact.
+                {t('home.demo_page.privacy_text', locale)} <a href={getLocalizedPath('/privacy', locale)} class="text-primary hover:underline">{t('home.demo_page.privacy_link_text', locale)}</a> {t('home.demo_page.privacy_text_end', locale)}
               </label>
             </div>
 
             <Button variant="primary" size="lg" type="submit" fullWidth>
-              Demo Boeken
+              {t('home.demo_page.submit_button', locale)}
             </Button>
           </form>
         </Card>
@@ -160,7 +160,7 @@ const timeSlots = [
         <div class="space-y-6">
           <Card variant="default" padding="lg">
             <h3 class="text-2xl font-display font-bold text-neutral-900 mb-6">
-              Wat kun je verwachten?
+              {t('home.demo_page.benefits_title', locale)}
             </h3>
 
             <div class="space-y-4">
@@ -176,10 +176,10 @@ const timeSlots = [
           <Card variant="elevated" padding="lg">
             <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
               <span class="icon icon-sm text-primary">calendar_month</span>
-              Wanneer past het jou?
+              {t('home.demo_page.schedule_card_title', locale)}
             </h4>
             <p class="text-sm text-neutral-600 mb-4">
-              We plannen demo's in op werkdagen tussen 9:00 en 17:00. Niet de juiste tijd beschikbaar? Neem contact op voor alternatieven.
+              {t('home.demo_page.schedule_card_text', locale)}
             </p>
 
             <div class="grid grid-cols-2 gap-2 text-xs">
@@ -192,13 +192,13 @@ const timeSlots = [
           <Card variant="outline" padding="lg">
             <h4 class="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
               <span class="icon icon-sm text-primary">phone</span>
-              Liever direct bellen?
+              {t('home.demo_page.phone_card_title', locale)}
             </h4>
             <p class="text-sm text-neutral-600 mb-4">
-              Voor urgente vragen kun je ons altijd bellen op +31 20 123 4567.
+              {t('home.demo_page.phone_card_text', locale)}
             </p>
             <Button variant="outline" size="sm" href="tel:+31201234567">
-              Nu Bellen
+              {t('home.demo_page.phone_button', locale)}
             </Button>
           </Card>
         </div>
