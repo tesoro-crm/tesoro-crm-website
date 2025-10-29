@@ -1,8 +1,35 @@
 import type { APIRoute } from 'astro';
 
+// Localized messages
+const messages = {
+  es: {
+    missing_fields: 'Faltan campos obligatorios',
+    invalid_email: 'Dirección de correo electrónico no válida',
+    generic_error: 'Algo salió mal. Por favor, inténtalo de nuevo más tarde.',
+    success: '¡Gracias por tu mensaje! Nos pondremos en contacto contigo en 24 horas.'
+  },
+  en: {
+    missing_fields: 'Missing required fields',
+    invalid_email: 'Invalid email address',
+    generic_error: 'Something went wrong. Please try again later.',
+    success: "Thank you for your message! We'll get back to you within 24 hours."
+  },
+  nl: {
+    missing_fields: 'Ontbrekende verplichte velden',
+    invalid_email: 'Ongeldig e-mailadres',
+    generic_error: 'Er is iets misgegaan. Probeer het later opnieuw.',
+    success: 'Bedankt voor je bericht! We nemen binnen 24 uur contact met je op.'
+  }
+};
+
 export const POST: APIRoute = async ({ request }) => {
   try {
     const formData = await request.formData();
+    const language = (formData.get('language') as string) || 'es'; // Default to Spanish
+
+    // Get localized messages
+    const locale = language as keyof typeof messages;
+    const msg = messages[locale] || messages.es;
 
     // Extract form data
     const data = {
@@ -14,7 +41,8 @@ export const POST: APIRoute = async ({ request }) => {
       message: formData.get('message'),
       privacy: formData.get('privacy') === 'on',
       timestamp: new Date().toISOString(),
-      type: 'contact'
+      type: 'contact',
+      language: language
     };
 
     // Validate required fields
@@ -22,7 +50,7 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response(
         JSON.stringify({
           success: false,
-          error: 'Ontbrekende verplichte velden'
+          error: msg.missing_fields
         }),
         {
           status: 400,
@@ -37,7 +65,7 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response(
         JSON.stringify({
           success: false,
-          error: 'Ongeldig e-mailadres'
+          error: msg.invalid_email
         }),
         {
           status: 400,
@@ -58,7 +86,7 @@ export const POST: APIRoute = async ({ request }) => {
     return new Response(
       JSON.stringify({
         success: true,
-        message: 'Bedankt voor je bericht! We nemen binnen 24 uur contact met je op.'
+        message: msg.success
       }),
       {
         status: 200,
@@ -68,11 +96,14 @@ export const POST: APIRoute = async ({ request }) => {
 
   } catch (error) {
     console.error('Contact form error:', error);
+    const language = 'es'; // Default fallback
+    const locale = language as keyof typeof messages;
+    const msg = messages[locale];
 
     return new Response(
       JSON.stringify({
         success: false,
-        error: 'Er is iets misgegaan. Probeer het later opnieuw.'
+        error: msg.generic_error
       }),
       {
         status: 500,

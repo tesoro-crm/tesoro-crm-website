@@ -218,6 +218,14 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
             {t('nav.blog', locale)}
           </a>
         </li>
+        <li>
+          <a
+            href={getLocalizedPath('/contact', locale)}
+            class={`text-sm font-medium transition-colors py-1 ${currentPath === '/contact' || currentPath === `/${locale}/contact` ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+          >
+            {t('nav.contact', locale)}
+          </a>
+        </li>
       </ul>
 
       <!-- Right Side Actions -->
@@ -302,6 +310,11 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         <li>
           <a href={getLocalizedPath('/blog', locale)} class="block py-2 text-neutral-700 hover:text-primary">
             {t('nav.blog', locale)}
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath('/contact', locale)} class="block py-2 text-neutral-700 hover:text-primary">
+            {t('nav.contact', locale)}
           </a>
         </li>
         <li>

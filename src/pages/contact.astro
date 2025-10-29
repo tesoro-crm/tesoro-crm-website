@@ -57,7 +57,13 @@ const contactMethods = [
             {t('contact.form_title', locale)}
           </h2>
 
-          <form action="/api/contact" method="POST" class="space-y-6">
+          <form
+            action="/api/contact"
+            method="POST"
+            class="space-y-6"
+            data-locale={locale}
+            data-submitting-text={t('contact.submitting', locale)}
+          >
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Input
                 name="firstName"
@@ -185,8 +191,8 @@ const contactMethods = [
 </Layout>
 
 <script>
-  // Pre-select subject dropdown based on query parameter
   document.addEventListener('DOMContentLoaded', () => {
+    // Pre-select subject dropdown based on query parameter
     const params = new URLSearchParams(window.location.search);
     const subject = params.get('subject');
 
@@ -206,6 +212,71 @@ const contactMethods = [
           });
         }
       }
+    }
+
+    // Handle form submission via JavaScript
+    const contactForm = document.querySelector('form[action="/api/contact"]') as HTMLFormElement;
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const submitButton = contactForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const originalButtonText = submitButton.textContent || '';
+
+        // Get locale and localized text from data attributes
+        const locale = contactForm.dataset.locale || 'es';
+        const submittingText = contactForm.dataset.submittingText || 'Sending...';
+
+        // Add language to form data
+        formData.append('language', locale);
+
+        // Disable form during submission
+        submitButton.disabled = true;
+        submitButton.textContent = submittingText;
+        submitButton.style.opacity = '0.6';
+
+        try {
+          // Use absolute URL to ensure it works from any page
+          const apiUrl = `${window.location.origin}/api/contact`;
+
+          const response = await fetch(apiUrl, {
+            method: 'POST',
+            body: formData
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            // Show success message
+            contactForm.reset();
+            submitButton.textContent = data.message;
+            submitButton.style.backgroundColor = '#10b981';
+
+            // Reset after 3 seconds
+            setTimeout(() => {
+              submitButton.textContent = originalButtonText;
+              submitButton.style.backgroundColor = '';
+              submitButton.disabled = false;
+              submitButton.style.opacity = '1';
+            }, 3000);
+          } else {
+            // Show error message
+            alert(data.error);
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+            submitButton.style.opacity = '1';
+          }
+        } catch (error) {
+          console.error('Contact form submission error:', error);
+          // Generic error - this shouldn't happen in normal operation
+          alert('Network error. Please try again.');
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+          submitButton.style.opacity = '1';
+        }
+      });
     }
   });
 </script>
