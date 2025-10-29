@@ -605,5 +605,60 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         }
       });
     }
+
+    // Newsletter form submission
+    const newsletterForms = document.querySelectorAll('.newsletter-form');
+
+    newsletterForms.forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formElement = e.target as HTMLFormElement;
+        const emailInput = formElement.querySelector('input[name="email"]') as HTMLInputElement;
+        const submitButton = formElement.querySelector('button[type="submit"]') as HTMLButtonElement;
+        const email = emailInput.value;
+
+        // Disable form during submission
+        emailInput.disabled = true;
+        submitButton.disabled = true;
+        submitButton.style.opacity = '0.6';
+
+        try {
+          const response = await fetch('/api/newsletter', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({ email })
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            // Show success message
+            emailInput.value = '';
+            emailInput.placeholder = data.message || 'Thank you for subscribing!';
+            emailInput.style.borderColor = '#10b981';
+
+            // Reset after 3 seconds
+            setTimeout(() => {
+              emailInput.placeholder = emailInput.getAttribute('placeholder') || 'Enter your email';
+              emailInput.style.borderColor = '';
+            }, 3000);
+          } else {
+            // Show error message
+            alert(data.error || 'Something went wrong. Please try again.');
+          }
+        } catch (error) {
+          console.error('Newsletter subscription error:', error);
+          alert('Something went wrong. Please try again later.');
+        } finally {
+          // Re-enable form
+          emailInput.disabled = false;
+          submitButton.disabled = false;
+          submitButton.style.opacity = '1';
+        }
+      });
+    });
   });
 </script>
