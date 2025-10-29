@@ -183,3 +183,29 @@ const contactMethods = [
     </div>
   </section>
 </Layout>
+
+<script>
+  // Pre-select subject dropdown based on query parameter
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const subject = params.get('subject');
+
+    if (subject) {
+      const select = document.querySelector('select[name="subject"]') as HTMLSelectElement;
+      if (select) {
+        // Try to set the value directly
+        select.value = subject;
+
+        // If the value doesn't exist, try to find a matching option
+        if (!select.value) {
+          const options = select.querySelectorAll('option');
+          options.forEach((option) => {
+            if (option.value === subject) {
+              select.value = subject;
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
