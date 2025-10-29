@@ -354,7 +354,8 @@ await loadTranslations(locale);
           throw new Error(data.error || 'Failed to fetch slots');
         }
 
-        const freshSlots = data.slots || [];
+        // Handle case where Zoho returns "Slots Not Available" as a string instead of array
+        const freshSlots = Array.isArray(data.slots) ? data.slots : [];
 
         // Update cache
         slotsCache.set(selectedDate, freshSlots);
