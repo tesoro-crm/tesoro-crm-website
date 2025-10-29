@@ -15,38 +15,38 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
   <div class="footer-gradient"></div>
 
   <div class="footer-container">
-    <!-- Main Footer Content -->
-    <div class="footer-grid">
-      <!-- Logo & Newsletter Column -->
-      <div class="footer-brand">
-        <a href={getLocalizedPath('/', locale)} class="footer-logo">
-          <img src="/logos/tesoro-logo-white-rgb.svg" alt="Tesoro CRM" />
-        </a>
-        <p class="footer-tagline">
-          {t('footer.tagline', locale)}
-        </p>
+    <!-- Main Footer Content with Language Selector -->
+    <div class="footer-main">
+      <!-- Footer Grid (Logo + Columns) -->
+      <div class="footer-grid">
+        <!-- Logo & Newsletter Column -->
+        <div class="footer-brand">
+          <a href={getLocalizedPath('/', locale)} class="footer-logo">
+            <img src="/logos/tesoro-logo-white-rgb.svg" alt="Tesoro CRM" />
+          </a>
+          <p class="footer-tagline">
+            {t('footer.tagline', locale)}
+          </p>
 
-        <!-- Newsletter Signup -->
-        <div class="newsletter">
-          <h4 class="newsletter-title">{t('footer.newsletter', locale)}</h4>
-          <p class="newsletter-description">{t('footer.newsletter_description', locale)}</p>
-          <form class="newsletter-form" action="/api/newsletter" method="POST">
-            <input
-              type="email"
-              name="email"
-              placeholder={t('footer.newsletter_placeholder', locale)}
-              class="newsletter-input"
-              required
-            />
-            <button type="submit" class="newsletter-button">
-              <span class="icon">send</span>
-            </button>
-          </form>
-          <p class="newsletter-privacy">{t('footer.newsletter_privacy', locale)}</p>
-        </div>
+          <!-- Newsletter Signup -->
+          <div class="newsletter">
+            <h4 class="newsletter-title">{t('footer.newsletter', locale)}</h4>
+            <p class="newsletter-description">{t('footer.newsletter_description', locale)}</p>
+            <form class="newsletter-form" action="/api/newsletter" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder={t('footer.newsletter_placeholder', locale)}
+                class="newsletter-input"
+                required
+              />
+              <button type="submit" class="newsletter-button">
+                <span class="icon">send</span>
+              </button>
+            </form>
+            <p class="newsletter-privacy">{t('footer.newsletter_privacy', locale)}</p>
+          </div>
 
-        <!-- Social Media & Language Selector Row -->
-        <div class="footer-social-row">
           <!-- Social Media -->
           <div class="footer-social">
             <h4 class="social-title">{t('footer.follow_us', locale)}</h4>
@@ -73,38 +73,7 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
               </a>
             </div>
           </div>
-
-          <!-- Language Selector Dropdown -->
-          <div class="footer-language">
-            <h4 class="language-title">{t('footer.language', locale)}</h4>
-            <div class="language-dropdown-container">
-              <button
-                id="footer-language-button"
-                class="language-dropdown-button"
-                aria-label="Select language"
-              >
-                <span class="language-dropdown-text">{languages[locale]}</span>
-                <svg class="language-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div
-                id="footer-language-menu"
-                class="language-dropdown-menu hidden"
-              >
-                {Object.entries(languages).map(([lang, name]) => (
-                  <a
-                    href={getLocalizedPath(basePath, lang as Language)}
-                    class={`language-dropdown-item ${locale === lang ? 'active' : ''}`}
-                  >
-                    {name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
       <!-- Product Column -->
       <div class="footer-links">
@@ -139,6 +108,37 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         </ul>
       </div>
     </div>
+
+    <!-- Language Selector (Positioned Far Right) -->
+    <div class="footer-language">
+      <h4 class="language-title">{t('footer.language', locale)}</h4>
+      <div class="language-dropdown-container">
+        <button
+          id="footer-language-button"
+          class="language-dropdown-button"
+          aria-label="Select language"
+        >
+          <span class="language-dropdown-text">{languages[locale]}</span>
+          <svg class="language-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div
+          id="footer-language-menu"
+          class="language-dropdown-menu hidden"
+        >
+          {Object.entries(languages).map(([lang, name]) => (
+            <a
+              href={getLocalizedPath(basePath, lang as Language)}
+              class={`language-dropdown-item ${locale === lang ? 'active' : ''}`}
+            >
+              {name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Trust Badges & Copyright -->
     <div class="footer-bottom">
@@ -218,11 +218,18 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     padding: 0 1.5rem;
   }
 
+  .footer-main {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
   .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 4rem;
-    margin-bottom: 3rem;
+    flex: 1;
   }
 
   /* Logo & Brand */
@@ -324,16 +331,9 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     color: #94a3b8;
   }
 
-  /* Social Media & Language Row */
-  .footer-social-row {
-    margin-top: 2rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
+  /* Social Media */
   .footer-social {
-    flex: 0 0 auto;
+    margin-top: 2.5rem;
   }
 
   .social-title {
@@ -348,9 +348,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     gap: 1rem;
   }
 
+  /* Language Selector (Far Right) */
   .footer-language {
-    flex: 0 0 auto;
-    margin-left: auto;
+    flex-shrink: 0;
+    width: 200px;
     text-align: right;
   }
 
@@ -534,6 +535,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 
   /* Responsive */
   @media (max-width: 1024px) {
+    .footer-main {
+      flex-direction: column;
+    }
+
     .footer-grid {
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
@@ -542,6 +547,11 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     .footer-brand {
       grid-column: 1 / -1;
       max-width: 100%;
+    }
+
+    .footer-language {
+      width: 100%;
+      text-align: left;
     }
   }
 
@@ -557,11 +567,6 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 
     .footer-brand {
       grid-column: 1;
-    }
-
-    .footer-social-row {
-      flex-direction: column;
-      gap: 2rem;
     }
 
     .footer-language {
