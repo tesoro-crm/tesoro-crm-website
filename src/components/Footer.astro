@@ -619,6 +619,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
         const submitButton = formElement.querySelector('button[type="submit"]') as HTMLButtonElement;
         const email = emailInput.value;
 
+        // Detect language from URL path
+        const pathParts = window.location.pathname.split('/').filter(part => part);
+        const language = (pathParts[0] === 'nl' || pathParts[0] === 'en') ? pathParts[0] : 'es';
+
         // Disable form during submission
         emailInput.disabled = true;
         submitButton.disabled = true;
@@ -630,7 +634,10 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: new URLSearchParams({ email })
+            body: new URLSearchParams({
+              email,
+              language
+            })
           });
 
           const data = await response.json();

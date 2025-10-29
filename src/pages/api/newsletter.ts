@@ -4,6 +4,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const formData = await request.formData();
     const email = formData.get('email') as string;
+    const language = formData.get('language') as string || 'es'; // Default to Spanish
 
     // Validate email
     if (!email) {
@@ -66,7 +67,12 @@ export const POST: APIRoute = async ({ request }) => {
       body: new URLSearchParams({
         address: email,
         subscribed: 'yes',
-        upsert: 'yes' // Update if already exists
+        upsert: 'yes', // Update if already exists
+        vars: JSON.stringify({
+          language: language,
+          signup_date: new Date().toISOString(),
+          source: 'website_footer'
+        })
       })
     });
 
@@ -100,7 +106,7 @@ export const POST: APIRoute = async ({ request }) => {
       );
     }
 
-    console.log('Newsletter subscription successful:', email);
+    console.log('Newsletter subscription successful:', email, 'Language:', language);
 
     return new Response(
       JSON.stringify({
