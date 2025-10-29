@@ -213,7 +213,67 @@ await loadTranslations(locale);
       </form>
     </div>
   </section>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" style="display: none;">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-fade-in">
+      <!-- Success Icon -->
+      <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <span class="icon text-4xl text-green-600">check_circle</span>
+      </div>
+
+      <!-- Success Message -->
+      <h3 class="text-2xl font-bold text-center text-neutral-900 mb-2">
+        ¡Solicitud recibida!
+      </h3>
+      <p class="text-center text-neutral-600 mb-6">
+        Gracias por tu interés en Tesoro CRM. Hemos recibido tu solicitud de demo y nos pondremos en contacto contigo dentro de 24 horas para confirmar la cita.
+      </p>
+
+      <!-- Booking Details (if available) -->
+      <div id="booking-details" class="bg-primary/5 rounded-xl p-4 mb-6" style="display: none;">
+        <p class="text-sm font-medium text-neutral-700 mb-2">
+          <span class="icon text-primary text-sm">event</span>
+          Cita programada
+        </p>
+        <p id="booking-info" class="text-sm text-neutral-600"></p>
+      </div>
+
+      <!-- Check Email Message -->
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+        <p class="text-sm text-blue-900">
+          <span class="icon text-blue-600 text-sm">mail</span>
+          Revisa tu email para la confirmación de tu solicitud.
+        </p>
+      </div>
+
+      <!-- Close Button -->
+      <button
+        id="close-modal"
+        type="button"
+        class="w-full px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl transition-all duration-200"
+      >
+        Cerrar
+      </button>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+</style>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
@@ -414,8 +474,36 @@ await loadTranslations(locale);
         const result = await response.json();
 
         if (response.ok && result.success) {
-          // Redirect to success page
-          window.location.href = '/success?type=demo';
+          // Show success modal instead of redirecting
+          const modal = document.getElementById('success-modal');
+          const bookingDetails = document.getElementById('booking-details');
+          const bookingInfo = document.getElementById('booking-info');
+
+          // Show booking details if Zoho booking was successful
+          if (result.zohoBookingId && bookingDetails && bookingInfo) {
+            const selectedDate = (dateInput as HTMLInputElement).value;
+            const selectedTime = (selectedTimeSlotInput as HTMLInputElement).value;
+            bookingInfo.textContent = `${selectedDate} a las ${selectedTime}`;
+            bookingDetails.style.display = 'block';
+          }
+
+          // Show the modal
+          if (modal) {
+            modal.style.display = 'flex';
+
+            // Reset form after showing modal
+            form.reset();
+            // Hide time slots container
+            if (timeSlotsContainer) timeSlotsContainer.style.display = 'none';
+            // Clear selected time slot
+            if (selectedTimeSlotInput) selectedTimeSlotInput.value = '';
+          }
+
+          // Re-enable submit button
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span class="icon">send</span> Verzenden';
+          }
         } else {
           throw new Error(result.error || 'Something went wrong');
         }
@@ -430,5 +518,22 @@ await loadTranslations(locale);
         }
       }
     });
+  });
+
+  // Handle success modal close
+  const closeModalBtn = document.getElementById('close-modal');
+  const successModal = document.getElementById('success-modal');
+
+  closeModalBtn?.addEventListener('click', () => {
+    if (successModal) {
+      successModal.style.display = 'none';
+    }
+  });
+
+  // Also close modal when clicking outside
+  successModal?.addEventListener('click', (e) => {
+    if (e.target === successModal) {
+      successModal.style.display = 'none';
+    }
   });
 </script>
