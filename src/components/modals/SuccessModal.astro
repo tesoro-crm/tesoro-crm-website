@@ -1,5 +1,6 @@
 ---
 import Modal from '../ui/Modal.astro';
+import Button from '../ui/Button.astro';
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
 
@@ -22,6 +23,6 @@ const { locale } = Astro.props;
       <p class="text-neutral-600 mb-4">{t('home.modals.success.message', locale)}</p>
       <p class="text-sm text-neutral-500">{t('home.modals.success.email_confirmation', locale)}</p>
     </div>
-    <button data-modal-close class="btn btn-primary">{t('home.modals.success.close', locale)}</button>
+    <Button data-modal-close variant="primary">{t('home.modals.success.close', locale)}</Button>
   </div>
 </Modal>

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { getLocale, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../types/knowledge-base';
+import Button from '../../components/ui/Button.astro';
 
 const academyGuides = await getCollection('academy');
 const locale: Language = (getLocale(Astro.currentLocale, Astro.url) as Language) || 'nl';
@@ -209,10 +210,9 @@ const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
               ? 'Consulta nuestra documentación técnica para tutoriales paso a paso'
               : 'Check out our technical documentation for step-by-step tutorials'}
           </p>
-          <a href={getLocalizedPath('/knowledge-base', locale)} class="cta-button">
+          <Button href={getLocalizedPath('/knowledge-base', locale)} variant="white" size="lg" icon="arrow_forward" iconPosition="end">
             {locale === 'nl' ? 'Knowledge Base' : locale === 'es' ? 'Base de Conocimientos' : 'Knowledge Base'}
-            <span class="icon icon-inline-end">arrow_forward</span>
-          </a>
+          </Button>
         </div>
       </section>
     </div>
@@ -605,30 +605,6 @@ const minutesText = locale === 'nl' ? 'min' : locale === 'es' ? 'min' : 'min';
     font-size: 1.125rem;
     opacity: 0.9;
     margin-bottom: 2rem;
-  }
-
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: white;
-    color: #003366;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.125rem;
-    transition: all 0.3s ease;
-  }
-
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .cta-button:hover .icon {
-    transform: translateX(4px);
-    transition: transform 0.3s ease;
   }
 
   /* Responsive */

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import RelatedPosts from '../../components/blog/RelatedPosts.astro';
 import SectionRenderer from '../../components/blog/SectionRenderer.astro';
 import ImageWithFallback from '../../components/blog/ImageWithFallback.astro';
+import Button from '../../components/ui/Button.astro';
 import { getCollection } from 'astro:content';
 import { getLocale } from '../../i18n/utils';
 import type { Language } from '../../types/blog';
@@ -194,13 +195,14 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
             >
               Facebook
             </a>
-            <button
-              class="blog-article__share-button blog-article__share-button--copy"
+            <Button
+              variant="ghost"
+              size="sm"
               onclick={`navigator.clipboard.writeText('${Astro.url.href}')`}
               aria-label={locale === 'nl' ? 'Kopieer link' : locale === 'es' ? 'Copiar enlace' : 'Copy link'}
             >
               {locale === 'nl' ? 'Kopieer Link' : locale === 'es' ? 'Copiar Enlace' : 'Copy Link'}
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -227,9 +229,9 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
               class="blog-article__newsletter-input"
               aria-describedby="newsletter-description"
             />
-            <button type="submit" class="blog-article__newsletter-submit">
+            <Button type="submit" variant="white" size="md">
               {locale === 'nl' ? 'Abonneren' : locale === 'es' ? 'Suscribirse' : 'Subscribe'}
-            </button>
+            </Button>
           </form>
           <p id="newsletter-description" class="blog-article__newsletter-privacy">
             {locale === 'nl' 
@@ -837,17 +839,6 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
     background: #365899;
   }
 
-  .blog-article__share-button--copy {
-    background: white;
-    color: #475569;
-    border-color: #e2e8f0;
-  }
-
-  .blog-article__share-button--copy:hover {
-    background: #f8fafc;
-    color: #0f172a;
-  }
-
   .blog-article__newsletter {
     background: #0f172a;
     color: white;
@@ -892,21 +883,6 @@ const faqStructuredData = generateFAQStructuredData(blogData, locale);
     outline: 2px solid white;
     outline-offset: 2px;
     border-color: white;
-  }
-
-  .blog-article__newsletter-submit {
-    background: white;
-    color: #0f172a;
-    border: none;
-    padding: 0.875rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .blog-article__newsletter-submit:hover {
-    background: #f1f5f9;
   }
 
   .blog-article__newsletter-privacy {

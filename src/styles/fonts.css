@@ -1,44 +1,11 @@
 /**
  * Font Loading Configuration
  *
- * Ensures proper font-display strategy and browser compatibility
- * All @fontsource packages are configured with font-display: swap
+ * Fonts are loaded via @fontsource packages in Layout.astro
+ * This file only contains additional styling for Material Symbols
  */
 
-/* Override any default font-display values to ensure swap behavior */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 900;
-  src: local('Inter'), local('Inter-Variable');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400 700;
-  src: local('Poppins');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 800;
-  src: local('JetBrains Mono'), local('JetBrainsMono');
-}
-
-@font-face {
-  font-family: 'Ledger';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local('Ledger');
-}
-
-/* Ensure Material Symbols also uses swap */
+/* Material Symbols styling */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;

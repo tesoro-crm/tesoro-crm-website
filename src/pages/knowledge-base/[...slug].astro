@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/ui/Button.astro';
 import { getCollection } from 'astro:content';
 import { getLocale, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../types/knowledge-base';
@@ -290,13 +291,15 @@ const pageDescription = description;
                 <p class="kb-article__next-step-desc">
                   {nextStep.data.hero.description[locale]}
                 </p>
-                <a
+                <Button
                   href={getLocalizedPath(`/knowledge-base/${nextStep.data.meta.id}`, locale)}
-                  class="kb-article__next-step-btn"
+                  variant="secondary"
+                  size="lg"
+                  icon="arrow_forward"
+                  iconPosition="end"
                 >
                   {locale === 'nl' ? 'Begin met stap' : locale === 'es' ? 'Comenzar paso' : 'Start step'} {currentStepIndex + 2}
-                  <span class="icon">arrow_forward</span>
-                </a>
+                </Button>
               </div>
             </section>
           )}
@@ -308,12 +311,12 @@ const pageDescription = description;
                 {locale === 'nl' ? 'Vond je dit artikel nuttig?' : locale === 'es' ? '¿Te resultó útil este artículo?' : 'Did you find this article helpful?'}
               </p>
               <div class="kb-article__footer-actions">
-                <button class="kb-article__footer-btn kb-article__footer-btn--positive">
-                  <span class="icon icon-sm">thumb_up</span> {locale === 'nl' ? 'Ja' : locale === 'es' ? 'Sí' : 'Yes'}
-                </button>
-                <button class="kb-article__footer-btn kb-article__footer-btn--negative">
-                  <span class="icon icon-sm">thumb_down</span> {locale === 'nl' ? 'Nee' : locale === 'es' ? 'No' : 'No'}
-                </button>
+                <Button variant="ghost" size="sm" icon="thumb_up" iconPosition="start">
+                  {locale === 'nl' ? 'Ja' : locale === 'es' ? 'Sí' : 'Yes'}
+                </Button>
+                <Button variant="ghost" size="sm" icon="thumb_down" iconPosition="start">
+                  {locale === 'nl' ? 'Nee' : locale === 'es' ? 'No' : 'No'}
+                </Button>
               </div>
             </div>
 
@@ -1078,35 +1081,6 @@ const pageDescription = description;
     line-height: 1.6;
   }
 
-  .kb-article__next-step-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.625rem;
-    padding: 0.875rem 1.75rem;
-    background: #F5B400;
-    color: #0a1f44;
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    box-shadow: 0 4px 12px rgba(245, 180, 0, 0.3);
-  }
-
-  .kb-article__next-step-btn:hover {
-    background: #FFD700;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(245, 180, 0, 0.4);
-  }
-
-  .kb-article__next-step-btn .icon {
-    transition: transform 0.25s ease;
-  }
-
-  .kb-article__next-step-btn:hover .icon {
-    transform: translateX(4px);
-  }
-
   /* Clean Article Footer */
   .kb-article__footer {
     margin-top: 4rem;
@@ -1131,35 +1105,6 @@ const pageDescription = description;
     justify-content: center;
     gap: 0.875rem;
     margin-bottom: 2rem;
-  }
-
-  .kb-article__footer-btn {
-    padding: 0.625rem 1.25rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    background: white;
-    color: #64748b;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-size: 0.9375rem;
-  }
-
-  .kb-article__footer-btn:hover {
-    border-color: #cbd5e1;
-    background: #f8fafc;
-  }
-
-  .kb-article__footer-btn--positive:hover {
-    background: #ecfdf5;
-    border-color: #10b981;
-    color: #047857;
-  }
-
-  .kb-article__footer-btn--negative:hover {
-    background: #fef2f2;
-    border-color: #dc2626;
-    color: #991b1b;
   }
 
   .kb-article__footer-navigation {

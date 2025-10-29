@@ -4,7 +4,6 @@ import tailwind from '@astrojs/tailwind';
 import spotlight from '@spotlightjs/astro';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
-import partytown from '@astrojs/partytown';
 import compress from '@playform/compress';
 import robotsTxt from 'astro-robots-txt';
 import icon from 'astro-icon';
@@ -18,7 +17,8 @@ export default defineConfig({
       strategy: 'include',
       include: ['/*'],
       exclude: ['/_astro/*', '/_worker.js/*', '/favicon.ico', '/robots.txt', '/sitemap-*.xml', '/*.png', '/*.jpg', '/*.jpeg', '/*.webp', '/*.svg', '/*.ico', '/*.woff', '/*.woff2', '/*.ttf', '/*.eot']
-    }
+    },
+    imageService: 'compile' // Optimize images at build time with sharp
   }),
   site: process.env.SITE_URL || 'https://new.tesorohq.io',
   integrations: [
@@ -33,12 +33,6 @@ export default defineConfig({
           en: 'en',
           nl: 'nl',
         },
-      },
-    }),
-    partytown({
-      config: {
-        forward: ['dataLayer.push'], // For Google Analytics/Tag Manager (if needed)
-        // Cloudflare Web Analytics works automatically via type="text/partytown"
       },
     }),
     compress({

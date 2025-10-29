@@ -1,12 +1,17 @@
 ---
 export interface Props {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'gradient' | 'white';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
   fullWidth?: boolean;
   class?: string;
+
+  // Icon support
+  icon?: string;              // Manual icon name (Material Symbol)
+  iconPosition?: 'start' | 'end'; // Icon before or after text
+  autoIcon?: boolean;         // Auto-detect icon based on context (default: true)
 }
 
 const {
@@ -17,34 +22,105 @@ const {
   disabled = false,
   fullWidth = false,
   class: className = '',
+  icon,
+  iconPosition = 'start',
+  autoIcon = true,
 } = Astro.props;
+
+// Auto-detect icon based on context
+function getAutoIcon(): string | null {
+  if (icon) return icon; // Manual icon always wins
+  if (!autoIcon) return null;
+
+  // Detect based on data attributes
+  const modalTarget = Astro.props['data-modal-target'];
+  const videoTarget = Astro.props['data-video-modal-target'];
+
+  if (videoTarget) return 'play_circle';
+  if (modalTarget === 'contact-modal') return 'mail';
+  if (modalTarget === 'signup-modal') return 'person_add';
+  if (modalTarget === 'demo-modal') return 'calendar_today';
+
+  // Detect based on href
+  if (href) {
+    if (href.startsWith('http') || href.startsWith('//')) return 'open_in_new';
+    if (href.includes('/download')) return 'download';
+    if (href.includes('/pricing')) return 'payments';
+    if (href.includes('/contact')) return 'mail';
+    if (href.includes('tel:')) return 'call';
+    if (href.includes('mailto:')) return 'mail';
+  }
+
+  // Detect based on type
+  if (type === 'submit') return 'send';
+
+  return null;
+}
+
+const displayIcon = getAutoIcon();
+
+// Map variant to component ID prefix for stylesheet reference
+const variantIds = {
+  primary: 'BTN-P',
+  secondary: 'BTN-S',
+  outline: 'BTN-O',
+  ghost: 'BTN-G',
+  gradient: 'BTN-Gr',
+  white: 'BTN-W',
+};
+
+// Build complete component ID with size extension
+const componentId = `${variantIds[variant]}-${size}`;
 
 const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
 const variantClasses = {
   primary: 'bg-primary text-white hover:bg-primary-accent focus:ring-primary-accent',
-  secondary: 'bg-secondary text-neutral-900 hover:bg-secondary-dark focus:ring-secondary',
+  secondary: 'bg-gradient-to-br from-[#10B981] to-[#059669] text-white hover:from-[#059669] hover:to-[#047857] focus:ring-[#10B981]',
   outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary',
   ghost: 'text-primary hover:bg-primary/10 focus:ring-primary',
+  gradient: 'bg-gradient-to-r from-[#ff6b9d] to-[#e84b93] text-white hover:-translate-y-0.5 hover:shadow-[0_8px_16px_rgba(255,107,157,0.3)] focus:ring-[#ff6b9d]',
+  white: 'bg-white text-primary border-2 border-primary hover:-translate-y-0.5 hover:shadow-[0_8px_16px_rgba(10,31,68,0.2)] hover:bg-primary hover:text-white focus:ring-primary',
 };
 
 const sizeClasses = {
-  sm: 'px-3 py-1.5 text-sm rounded-md',
-  md: 'px-6 py-3 text-base rounded-lg',
+  sm: 'px-3 py-1.5 text-sm rounded-xl',
+  md: 'px-6 py-3 text-base rounded-xl',
   lg: 'px-8 py-4 text-lg rounded-xl',
 };
 
 const widthClass = fullWidth ? 'w-full' : '';
+const gapClass = displayIcon ? 'gap-2' : '';
 
-const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass} ${className}`;
+const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass} ${gapClass} ${className}`;
 
 const Component = href ? 'a' : 'button';
-const componentProps = href ? { href } : { type, disabled };
+const componentProps = href
+  ? { href, 'data-component-id': componentId }
+  : { type, disabled, 'data-component-id': componentId };
 
 // Get all other props to pass through (like data-modal-target)
-const { variant: _, size: __, href: ___, type: ____, disabled: _____, fullWidth: ______, class: _______, ...restProps } = Astro.props;
+const {
+  variant: _,
+  size: __,
+  href: ___,
+  type: ____,
+  disabled: _____,
+  fullWidth: ______,
+  class: _______,
+  icon: ________,
+  iconPosition: _________,
+  autoIcon: __________,
+  ...restProps
+} = Astro.props;
 ---
 
 <Component class={classes} {...componentProps} {...restProps}>
+  {displayIcon && iconPosition === 'start' && (
+    <span class="icon" aria-hidden="true">{displayIcon}</span>
+  )}
   <slot />
+  {displayIcon && iconPosition === 'end' && (
+    <span class="icon" aria-hidden="true">{displayIcon}</span>
+  )}
 </Component>

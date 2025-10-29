@@ -1,5 +1,6 @@
 ---
 import type { CTASection, Language } from '../../../types/blog';
+import Button from '../../ui/Button.astro';
 
 interface Props {
   section: CTASection;
@@ -9,6 +10,20 @@ interface Props {
 const { section, lang } = Astro.props;
 const title = section.title?.[lang];
 const content = section.content[lang];
+
+// Map button styles from JSON to Button component variants
+const mapStyleToVariant = (style: string): 'primary' | 'secondary' | 'outline' | 'white' => {
+  switch (style) {
+    case 'primary':
+      return 'white'; // White text on dark CTA background
+    case 'secondary':
+      return 'outline'; // Transparent with border
+    case 'outline':
+      return 'outline';
+    default:
+      return 'white';
+  }
+};
 ---
 
 <section class="blog-section blog-section--cta" id={section.id}>
@@ -18,12 +33,13 @@ const content = section.content[lang];
     
     <div class="cta-box__buttons">
       {section.buttons.map((button) => (
-        <a 
-          href={button.url} 
-          class={`cta-button cta-button--${button.style}`}
+        <Button
+          href={button.url}
+          variant={mapStyleToVariant(button.style)}
+          size="lg"
         >
           {button.text[lang]}
-        </a>
+        </Button>
       ))}
     </div>
   </div>
@@ -72,52 +88,6 @@ const content = section.content[lang];
     flex-wrap: wrap;
   }
 
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.875rem 1.75rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border: 2px solid transparent;
-  }
-
-  .cta-button--primary {
-    background: white;
-    color: #0f172a;
-  }
-
-  .cta-button--primary:hover {
-    background: #f1f5f9;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .cta-button--secondary {
-    background: transparent;
-    color: white;
-    border-color: white;
-  }
-
-  .cta-button--secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-  }
-
-  .cta-button--outline {
-    background: transparent;
-    color: white;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .cta-button--outline:hover {
-    border-color: white;
-    background: rgba(255, 255, 255, 0.05);
-  }
-
   @media (max-width: 640px) {
     .cta-box {
       padding: 2rem 1.5rem;
@@ -129,10 +99,6 @@ const content = section.content[lang];
 
     .cta-box__buttons {
       flex-direction: column;
-    }
-
-    .cta-button {
-      width: 100%;
     }
   }
 </style>

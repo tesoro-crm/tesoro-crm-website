@@ -1,6 +1,8 @@
 ---
 import type { Language } from '../../types/language';
 import { t, getLocalizedPath } from '../../i18n/utils';
+import Button from '../ui/Button.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
 
 interface Props {
   locale: Language;
@@ -15,10 +17,14 @@ const blogPath = getLocalizedPath('/blog/upgrade-from-sooprema', locale);
 
 <section class="competitor-comparison">
   <div class="container">
-    <div class="badge">{t('home.competitor_comparison.badge', locale)}</div>
-
-    <h2 class="title">{t('home.competitor_comparison.title', locale)}</h2>
-    <p class="subtitle">{t('home.competitor_comparison.subtitle', locale)}</p>
+    <SectionHeader
+      badge={t('home.competitor_comparison.badge', locale)}
+      badgeVariant="gradient"
+      title={t('home.competitor_comparison.title', locale)}
+      description={t('home.competitor_comparison.subtitle', locale)}
+      size="md"
+      maxWidth="lg"
+    />
 
     <div class="features-grid">
       <div class="feature-card">
@@ -47,12 +53,12 @@ const blogPath = getLocalizedPath('/blog/upgrade-from-sooprema', locale);
     </div>
 
     <div class="cta-buttons">
-      <a href={alternativesPath} class="btn btn-primary">
+      <Button href={alternativesPath} variant="primary" size="lg">
         {t('home.competitor_comparison.cta_primary', locale)}
-      </a>
-      <a href={blogPath} class="btn btn-secondary">
+      </Button>
+      <Button href={blogPath} variant="secondary" size="lg">
         {t('home.competitor_comparison.cta_secondary', locale)}
-      </a>
+      </Button>
     </div>
   </div>
 </section>
@@ -79,36 +85,6 @@ const blogPath = getLocalizedPath('/blog/upgrade-from-sooprema', locale);
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #003366, #0a4a7a);
-    color: white;
-    border-radius: 2rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #003366;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-  }
-
-  .subtitle {
-    font-size: 1.25rem;
-    color: #64748b;
-    margin-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .features-grid {
@@ -161,38 +137,6 @@ const blogPath = getLocalizedPath('/blog/upgrade-from-sooprema', locale);
     flex-wrap: wrap;
   }
 
-  .btn {
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-
-  .btn-primary {
-    background: linear-gradient(135deg, #003366, #0a4a7a);
-    color: white;
-    border: 2px solid transparent;
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 51, 102, 0.3);
-  }
-
-  .btn-secondary {
-    background: white;
-    color: #003366;
-    border: 2px solid #003366;
-  }
-
-  .btn-secondary:hover {
-    background: #003366;
-    color: white;
-  }
-
   @media (max-width: 768px) {
     .competitor-comparison {
       padding: 4rem 1rem;
@@ -217,11 +161,6 @@ const blogPath = getLocalizedPath('/blog/upgrade-from-sooprema', locale);
 
     .cta-buttons {
       flex-direction: column;
-    }
-
-    .btn {
-      width: 100%;
-      text-align: center;
     }
   }
 </style>

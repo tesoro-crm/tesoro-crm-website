@@ -2,6 +2,7 @@
 import { getLocale, loadTranslations, t, getLocalizedPath } from '../i18n/utils';
 import { languages } from '../i18n/config';
 import type { Language } from '../i18n/config';
+import Button from './ui/Button.astro';
 
 const locale: Language = getLocale(Astro.currentLocale, Astro.url);
 await loadTranslations(locale);
@@ -40,9 +41,8 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                 class="newsletter-input"
                 required
               />
-              <button type="submit" class="newsletter-button">
-                <span class="icon">send</span>
-              </button>
+              <Button type="submit" variant="gradient" size="md" icon="send">
+              </Button>
             </form>
             <p class="newsletter-privacy">{t('footer.newsletter_privacy', locale)}</p>
           </div>
@@ -61,12 +61,12 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              <a href="https://instagram.com/tesoro.crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/tesoro_crm/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </a>
-              <a href="https://youtube.com/@tesoro-crm" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+              <a href="https://www.youtube.com/@Tesoro_CRM" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
@@ -305,28 +305,6 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .newsletter-button {
-    padding: 0.75rem 1.25rem;
-    background: linear-gradient(135deg, #ff6b9d 0%, #e84b93 100%);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .newsletter-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(255, 107, 157, 0.3);
-  }
-
-  .newsletter-button:active {
-    transform: translateY(0);
-  }
-
   .newsletter-privacy {
     font-size: 0.75rem;
     color: #94a3b8;
@@ -402,8 +380,8 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
   .language-dropdown-menu {
     position: absolute;
     right: 0;
-    bottom: 100%;
-    margin-bottom: 0.5rem;
+    top: 100%;
+    margin-top: 0.5rem;
     width: 160px;
     background: #1a2f54;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -587,26 +565,29 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 </style>
 
 <script>
-  // Footer language dropdown functionality
-  document.addEventListener('DOMContentLoaded', () => {
+  // Footer language dropdown functionality with event delegation
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
     const languageButton = document.getElementById('footer-language-button');
     const languageMenu = document.getElementById('footer-language-menu');
 
-    if (languageButton && languageMenu) {
-      languageButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        languageMenu.classList.toggle('hidden');
-      });
+    if (!languageButton || !languageMenu) return;
 
-      // Close language menu when clicking outside
-      document.addEventListener('click', (e) => {
-        const target = e.target as HTMLElement;
-        if (!languageButton.contains(target) && !languageMenu.contains(target)) {
-          languageMenu.classList.add('hidden');
-        }
-      });
+    // Toggle dropdown when button is clicked
+    if (languageButton.contains(target)) {
+      e.stopPropagation();
+      languageMenu.classList.toggle('hidden');
+      return;
     }
 
+    // Close dropdown when clicking outside
+    if (!languageMenu.contains(target)) {
+      languageMenu.classList.add('hidden');
+    }
+  });
+
+  // Newsletter form submission
+  document.addEventListener('DOMContentLoaded', () => {
     // Newsletter form submission
     const newsletterForms = document.querySelectorAll('.newsletter-form');
 
@@ -644,11 +625,18 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
 
           const data = await response.json();
 
+          console.log('Newsletter API response:', data);
+
           if (data.success) {
             // Show success message
             emailInput.value = '';
             emailInput.placeholder = data.message || 'Thank you for subscribing!';
             emailInput.style.borderColor = '#10b981';
+
+            // Log debug info if present
+            if (data.debug) {
+              console.log('Success debug info:', data.debug);
+            }
 
             // Reset after 3 seconds
             setTimeout(() => {
@@ -656,12 +644,18 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
               emailInput.style.borderColor = '';
             }, 3000);
           } else {
-            // Show error message
-            alert(data.error || 'Something went wrong. Please try again.');
+            // Show error message with debug info
+            console.error('Newsletter error:', data.error);
+            if (data.debug) {
+              console.error('Debug info:', data.debug);
+              alert(data.error + '\n\nDebug info (see console for details):\n' + JSON.stringify(data.debug, null, 2));
+            } else {
+              alert(data.error || 'Something went wrong. Please try again.');
+            }
           }
         } catch (error) {
           console.error('Newsletter subscription error:', error);
-          alert('Something went wrong. Please try again later.');
+          alert('Network error. Please try again later.\n\nError: ' + (error instanceof Error ? error.message : String(error)));
         } finally {
           // Re-enable form
           emailInput.disabled = false;

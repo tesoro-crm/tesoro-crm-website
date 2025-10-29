@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import Button from '../../../components/ui/Button.astro';
 import { getLocale, loadTranslations } from '../../../i18n/utils';
 import type { Language } from '../../../i18n/config';
 
@@ -236,8 +237,12 @@ const competitors = [
         </div>
 
         <div class="cta-buttons">
-          <a href="/contact" class="btn btn-primary">Hablar con Migraciones</a>
-          <a href="/" class="btn btn-secondary">Ver Tesoro en Acción</a>
+          <Button href="/contact" variant="secondary" size="lg">
+            Hablar con Migraciones
+          </Button>
+          <Button href="/" variant="white" size="lg">
+            Ver Tesoro en Acción
+          </Button>
         </div>
 
         <p class="guarantee">💚 Garantía: Si no funciona en 14 días, te devolvemos todo y te ayudamos a volver.</p>
@@ -534,33 +539,6 @@ const competitors = [
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-  }
-
-  .btn {
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  .btn-primary {
-    background: #F5B400;
-    color: #003366;
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(245, 180, 0, 0.3);
-  }
-
-  .btn-secondary {
-    background: white;
-    color: #003366;
-  }
-
-  .btn-secondary:hover {
-    transform: translateY(-2px);
   }
 
   .guarantee {

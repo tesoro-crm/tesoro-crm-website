@@ -4,7 +4,6 @@ import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StructuredData from '../components/StructuredData.astro';
-import AIChatWidget from '../components/AIChatWidget.astro';
 import { getLocale, getAlternateLinks } from '../i18n/utils';
 import type { Language } from '../i18n/config';
 
@@ -92,30 +91,24 @@ const {
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
-		<!-- Preload critical fonts for better performance -->
-		<link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin />
 
 		<!-- Fonts loaded locally via @fontsource for better performance -->
-		<!-- Ledger font from Google Fonts (no @fontsource package available) -->
+		<!-- Material Symbols Outlined - Load asynchronously to prevent render blocking -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet" />
 
-		<!-- Material Symbols Outlined - Variable Font for optimal flexibility -->
-		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript>
+			<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+		</noscript>
 		
 		<!-- Structured Data Component -->
 		<StructuredData locale={locale} siteUrl={siteUrl} />
-		
-		<!-- Cloudflare Turnstile -->
-		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 		<!-- Cloudflare Web Analytics (Privacy-friendly, no cookies, no GDPR banner needed) -->
 		{import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN && (
 			<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-			        data-cf-beacon={JSON.stringify({ token: import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN })}
-			        type="text/partytown"></script>
+			        data-cf-beacon={JSON.stringify({ token: import.meta.env.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN })}></script>
 		)}
 
 		<!-- View Transitions -->
@@ -127,8 +120,5 @@ const {
 			<slot />
 		</main>
 		<Footer />
-		
-		<!-- AI Chat Widget (Bottom Right) -->
-		<AIChatWidget locale={locale} />
 	</body>
 </html>

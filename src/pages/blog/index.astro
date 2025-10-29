@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ImageWithFallback from '../../components/blog/ImageWithFallback.astro';
+import Button from '../../components/ui/Button.astro';
 import { getCollection } from 'astro:content';
 import { getLocale, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../types/blog';
@@ -221,23 +222,25 @@ const readMoreText = locale === 'nl' ? 'Lees meer' : locale === 'es' ? 'Leer má
           {totalPages > 1 && (
             <nav class="magazine__pagination">
               {currentPage > 1 && (
-                <a
+                <Button
                   href={getLocalizedPath(`/blog?page=${currentPage - 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
-                  class="magazine__pagination-btn magazine__pagination-btn--prev"
+                  variant="outline"
+                  size="md"
                 >
                   ← {locale === 'nl' ? 'Vorige' : locale === 'es' ? 'Anterior' : 'Previous'}
-                </a>
+                </Button>
               )}
               <span class="magazine__pagination-info">
                 {locale === 'nl' ? 'Pagina' : locale === 'es' ? 'Página' : 'Page'} {currentPage} {locale === 'nl' ? 'van' : locale === 'es' ? 'de' : 'of'} {totalPages}
               </span>
               {currentPage < totalPages && (
-                <a
+                <Button
                   href={getLocalizedPath(`/blog?page=${currentPage + 1}${Astro.url.searchParams.get('category') ? `&category=${Astro.url.searchParams.get('category')}` : ''}`, locale)}
-                  class="magazine__pagination-btn magazine__pagination-btn--next"
+                  variant="outline"
+                  size="md"
                 >
                   {locale === 'nl' ? 'Volgende' : locale === 'es' ? 'Siguiente' : 'Next'} →
-                </a>
+                </Button>
               )}
             </nav>
           )}
@@ -287,9 +290,9 @@ const readMoreText = locale === 'nl' ? 'Lees meer' : locale === 'es' ? 'Leer má
                 class="magazine__newsletter-input"
                 required
               />
-              <button type="submit" class="magazine__newsletter-btn">
+              <Button type="submit" variant="white" size="md" fullWidth>
                 {locale === 'nl' ? 'Abonneren' : locale === 'es' ? 'Suscribirse' : 'Subscribe'}
-              </button>
+              </Button>
             </form>
           </div>
         </aside>
@@ -733,22 +736,6 @@ const readMoreText = locale === 'nl' ? 'Lees meer' : locale === 'es' ? 'Leer má
     border-color: white;
   }
 
-  .magazine__newsletter-btn {
-    padding: 0.875rem 1.5rem;
-    background: white;
-    color: #111827;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-
-  .magazine__newsletter-btn:hover {
-    background: #f3f4f6;
-  }
-
   /* Pagination */
   .magazine__pagination {
     display: flex;
@@ -758,24 +745,6 @@ const readMoreText = locale === 'nl' ? 'Lees meer' : locale === 'es' ? 'Leer má
     margin-top: 4rem;
     padding-top: 3rem;
     border-top: 1px solid #e5e7eb;
-  }
-
-  .magazine__pagination-btn {
-    padding: 0.875rem 1.75rem;
-    background: white;
-    color: #111827;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .magazine__pagination-btn:hover {
-    background: #111827;
-    color: white;
-    border-color: #111827;
   }
 
   .magazine__pagination-info {

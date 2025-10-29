@@ -1,6 +1,7 @@
 ---
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+import Button from '../ui/Button.astro';
 
 interface Props {
   locale: Language;
@@ -39,12 +40,12 @@ const properties = [
         <p class="hero-simple__subheadline">{subheadline}</p>
 
         <div class="hero-simple__ctas">
-          <button data-modal-target="demo-modal" class="hero-simple__cta hero-simple__cta--primary">
+          <Button variant="secondary" size="lg" data-modal-target="demo-modal">
             {ctaPrimary}
-          </button>
-          <button data-video-modal-target="video-modal" class="hero-simple__cta hero-simple__cta--secondary">
+          </Button>
+          <Button variant="outline" size="lg" data-video-modal-target="video-modal">
             {ctaSecondary}
-          </button>
+          </Button>
         </div>
 
         <div class="hero-simple__trust-grid">
@@ -316,39 +317,6 @@ const properties = [
     margin-top: 0.5rem;
   }
 
-  .hero-simple__cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.9rem 1.75rem;
-    border-radius: 0.75rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  }
-
-  .hero-simple__cta--primary {
-    background: var(--accent-primary);
-    color: white;
-    box-shadow: 0 20px 30px rgba(245, 158, 11, 0.35);
-  }
-
-  .hero-simple__cta--primary:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 26px 40px rgba(245, 158, 11, 0.45);
-    background: var(--accent-secondary);
-  }
-
-  .hero-simple__cta--secondary {
-    border: 2px solid #0a1f44;
-    color: #0a1f44;
-    background: transparent;
-  }
-
-  .hero-simple__cta--secondary:hover {
-    background: #0a1f44;
-    color: white;
-  }
 
   .hero-simple__trust-grid {
     display: grid;
@@ -624,11 +592,6 @@ const properties = [
       padding: 2rem 0 1.5rem;
     }
 
-    .hero-simple__cta {
-      width: 100%;
-      padding: 1rem 1.5rem;
-      font-size: 1rem;
-    }
 
     .hero-simple__trust-grid {
       grid-template-columns: 1fr;

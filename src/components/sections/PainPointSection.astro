@@ -1,6 +1,7 @@
 ---
 import { t } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+import Button from '../ui/Button.astro';
 import InactiveContactsVisual from '../visuals/InactiveContactsVisual.astro';
 import CallReminderVisual from '../visuals/CallReminderVisual.astro';
 import LastActivityVisual from '../visuals/LastActivityVisual.astro';
@@ -28,12 +29,13 @@ const ctaLabel = t(`home.pain_points.${painKey}.cta`, locale);
         <span class="icon pain-point__check">check_circle</span>
         <p>{solution}</p>
       </div>
-      <button
-        class="pain-point__cta"
+      <Button
+        variant="secondary"
+        size="lg"
         data-modal-target="demo-modal"
       >
         {ctaLabel}
-      </button>
+      </Button>
     </div>
 
     <div class="pain-point__visual">
@@ -149,27 +151,6 @@ const ctaLabel = t(`home.pain_points.${painKey}.cta`, locale);
     line-height: 1.6;
   }
 
-  .pain-point__cta {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: var(--accent-primary);
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.75rem;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    align-self: flex-start;
-  }
-
-  .pain-point__cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 30px rgba(245, 158, 11, 0.35);
-    background: var(--accent-secondary);
-  }
 
   .pain-point__visual {
     position: relative;
@@ -212,16 +193,5 @@ const ctaLabel = t(`home.pain_points.${painKey}.cta`, locale);
       font-size: 1rem;
     }
 
-    .pain-point__cta {
-      width: 100%;
-      text-align: center;
-      padding: 1.125rem 2rem;
-    }
-
-    /* Disable hover on mobile */
-    .pain-point__cta:hover {
-      transform: none;
-      box-shadow: 0 10px 20px rgba(245, 158, 11, 0.25);
-    }
   }
 </style>
