@@ -128,6 +128,63 @@ const localizedText = {
 
 Default locale is Spanish with fallback routing configured.
 
+### Helper Scripts & Temporary Files
+
+**IMPORTANT: Use clear naming conventions to distinguish permanent tooling from temporary helper scripts.**
+
+#### Script Types
+
+**Permanent Scripts** (used by npm commands or core workflow):
+- ✅ `scripts/validate-translations.js` - Part of build validation
+- ✅ `scripts/check-button-usage.js` - Part of build validation
+- ✅ `scripts/fix-routes.js` - Part of build process
+- ✅ `.playwright-mcp/screenshot-helper.cjs` - Documentation workflow tool
+
+**Temporary Helper Scripts** (one-time tasks, can be deleted after use):
+- Use prefix `helper-` for general helper scripts
+- Use prefix `temp-` for temporary fixes
+- Use prefix `one-time-` for one-off tasks
+
+#### Naming Examples
+
+```bash
+# ✅ CORRECT - Clear that these are temporary
+scripts/helper-detect-fake-content.js
+scripts/temp-fix-dutch-bullets.js
+scripts/one-time-remove-emojis.sh
+scripts/helper-record-videos.js
+
+# ❌ WRONG - Unclear if permanent or temporary
+scripts/detect-fake-content.js
+scripts/fix-dutch-bullets.js
+scripts/remove-emojis.sh
+scripts/record-videos.js
+```
+
+#### When to Delete Helper Scripts
+
+- ✅ Delete helper scripts immediately after completing their one-time task
+- ✅ If unsure whether to keep: add comment at top of file explaining purpose and whether it's needed long-term
+- ✅ Regular cleanup: Check for obsolete `helper-*`, `temp-*`, `one-time-*` scripts monthly
+
+#### Creating New Helper Scripts
+
+When creating a temporary script:
+1. Use appropriate prefix (`helper-`, `temp-`, or `one-time-`)
+2. Add comment at top explaining what it does and when it can be deleted
+3. Put in `scripts/` directory (not root)
+4. Delete immediately after task completion
+
+```javascript
+// helper-example.js
+/**
+ * TEMPORARY HELPER SCRIPT
+ * Purpose: One-time migration of old format to new format
+ * Delete after: Migration is complete and verified
+ * Created: 2025-10-30
+ */
+```
+
 ### Git Workflow and Branch Strategy
 
 **CRITICAL: ALL new features and fixes MUST be developed in feature branches, NOT directly in main.**
