@@ -12,6 +12,9 @@ import inmobiliariasilva_com from '../../assets/websites/inmobiliariasilva_com.p
 import propertypartners_nl from '../../assets/websites/propertypartners_nl.png';
 import realestatemadrid_es from '../../assets/websites/realestatemadrid_es.png';
 import deluxehomesjavea_com from '../../assets/websites/deluxehomesjavea_com.png';
+import elialiving_es from '../../assets/websites/elialiving_es.png';
+import momentsestates_com from '../../assets/websites/momentsestates_com.png';
+import ca_realestates_com from '../../assets/websites/ca-realestates_com.png';
 
 export interface Props {
   locale: Language;
@@ -23,6 +26,12 @@ const { locale } = Astro.props;
 // URL is derived from the import name (e.g., 'inmobiliariasilva_com' -> 'inmobiliariasilva.com')
 const websites = [
   {
+    name: 'Elia Living',
+    url: 'elialiving.es',
+    screenshot: elialiving_es,
+    alt: 'Elia Living - Real Estate Website'
+  },
+  {
     name: 'Inmobiliaria Silva',
     url: 'inmobiliariasilva.com',
     screenshot: inmobiliariasilva_com,
@@ -33,6 +42,18 @@ const websites = [
     url: 'deluxehomesjavea.com',
     screenshot: deluxehomesjavea_com,
     alt: 'Deluxe Homes Javea - Real Estate Website'
+  },
+  {
+    name: 'Moments Estates',
+    url: 'momentsestates.com',
+    screenshot: momentsestates_com,
+    alt: 'Moments Estates - Real Estate Website'
+  },
+  {
+    name: 'Cynthia Anthonio Real Estate',
+    url: 'ca-realestates.com',
+    screenshot: ca_realestates_com,
+    alt: 'Cynthia Anthonio Real Estate - Real Estate Website'
   },
   {
     name: 'Property Partners',
