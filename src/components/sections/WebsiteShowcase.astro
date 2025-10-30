@@ -2,8 +2,14 @@
 import Button from '../ui/Button.astro';
 import Card from '../ui/Card.astro';
 import SectionHeader from '../ui/SectionHeader.astro';
+import { Image } from 'astro:assets';
 import { t, getLocalizedPath } from '../../i18n/utils';
 import type { Language } from '../../i18n/config';
+
+// Import website screenshots
+import inmobiliariaScreenshot from '../../assets/websites/website-inmobiliaria-silva.png';
+import propertyPartnersScreenshot from '../../assets/websites/website-property-partners.png';
+import realEstateMadridScreenshot from '../../assets/websites/website-real-estate-madrid.png';
 
 export interface Props {
   locale: Language;
@@ -11,24 +17,24 @@ export interface Props {
 
 const { locale } = Astro.props;
 
-// Array of delivered websites
+// Array of delivered websites with imported images
 const websites = [
   {
     name: 'Inmobiliaria Silva',
     url: 'inmobiliariasilva.com',
-    screenshot: '/images/websites/website-inmobiliaria-silva.png',
+    screenshot: inmobiliariaScreenshot,
     alt: 'Inmobiliaria Silva - Real Estate Website'
   },
   {
     name: 'Property Partners',
     url: 'propertypartners.nl',
-    screenshot: '/images/websites/website-property-partners.png',
+    screenshot: propertyPartnersScreenshot,
     alt: 'Property Partners - Real Estate Website'
   },
   {
     name: 'Real Estate Madrid',
     url: 'realestatemadrid.es',
-    screenshot: '/images/websites/website-real-estate-madrid.png',
+    screenshot: realEstateMadridScreenshot,
     alt: 'Real Estate Madrid - Real Estate Website'
   },
 ];
@@ -71,11 +77,15 @@ const websites = [
                 class={`website-slide absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
                 data-index={index}
               >
-                <img
+                <Image
                   src={website.screenshot}
                   alt={website.alt}
                   class="w-full h-full object-cover object-top"
                   loading={index === 0 ? "eager" : "lazy"}
+                  widths={[800, 1200, 1600, 1920]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  format="webp"
+                  quality={85}
                 />
               </div>
             ))}
