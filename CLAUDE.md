@@ -700,6 +700,50 @@ Screenshots should use descriptive names:
 - `{module}-{view}-{detail}.png` (e.g., `dashboard-overview-with-kpis.png`)
 - `{workflow}-{step-number}-{action}.png` (e.g., `signup-03-company-details.png`)
 
+### Website Showcase Screenshots
+
+**Purpose**: The WebsiteShowcase component (src/components/sections/WebsiteShowcase.astro) displays real websites delivered by Tesoro in a fade in/out carousel with browser chrome mockup.
+
+**Location**: `public/images/websites/`
+
+**Specifications**:
+- **Resolution**: 1920×1200 pixels (16:10 aspect ratio) - preferred
+- **Alternative**: 1600×1000px or similar 16:10 ratio
+- **Format**: PNG (best quality for text) or WebP (smaller file size)
+- **Quality**: Full-page desktop screenshots, clean (no cookie banners, fully loaded)
+- **Naming**: `website-{client-name}.png` (e.g., `website-inmobiliaria-silva.png`)
+
+**Capture Guidelines**:
+1. Use desktop viewport at 1920px width minimum
+2. Capture homepage with hero section + first few sections visible
+3. Remove cookie consent banners before capturing
+4. Ensure all images and content are fully loaded
+5. Focus on the hero section and key visual elements
+
+**Implementation**:
+```typescript
+// Add to websites array in WebsiteShowcase.astro
+const websites = [
+  {
+    name: 'Client Name',
+    url: 'clientwebsite.com',
+    screenshot: '/images/websites/website-client-name.png',
+    alt: 'Client Name - Real Estate Website'
+  },
+];
+```
+
+**Carousel Behavior**:
+- Automatic fade transition every 5 seconds
+- Pause on hover (desktop) or touch (mobile)
+- URL updates in browser chrome to match current website
+- Smooth opacity transitions (1000ms duration)
+
+**File Size Considerations**:
+- Aim for <5MB per screenshot (use PNG compression or WebP)
+- Images are lazy-loaded (only first screenshot loads eagerly)
+- Consider using WebP format for better compression with good quality
+
 ### Title Case Rules by Language
 
 **CRITICAL: Title capitalization differs by language!**

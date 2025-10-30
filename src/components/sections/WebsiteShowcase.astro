@@ -10,6 +10,28 @@ export interface Props {
 }
 
 const { locale } = Astro.props;
+
+// Array of delivered websites
+const websites = [
+  {
+    name: 'Inmobiliaria Silva',
+    url: 'inmobiliariasilva.com',
+    screenshot: '/images/websites/website-inmobiliaria-silva.png',
+    alt: 'Inmobiliaria Silva - Real Estate Website'
+  },
+  {
+    name: 'Property Partners',
+    url: 'propertypartners.nl',
+    screenshot: '/images/websites/website-property-partners.png',
+    alt: 'Property Partners - Real Estate Website'
+  },
+  {
+    name: 'Real Estate Madrid',
+    url: 'realestatemadrid.es',
+    screenshot: '/images/websites/website-real-estate-madrid.png',
+    alt: 'Real Estate Madrid - Real Estate Website'
+  },
+];
 ---
 
 <section class="py-16 lg:py-24 bg-gradient-to-br from-neutral-50 via-white to-neutral-50">
@@ -29,7 +51,7 @@ const { locale } = Astro.props;
       <!-- Left: Visual Preview -->
       <div class="relative">
         <!-- Browser Mockup -->
-        <div class="bg-white rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden">
+        <div class="bg-white rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden website-showcase-carousel">
           <!-- Browser Chrome -->
           <div class="bg-neutral-100 px-4 py-3 border-b border-neutral-200 flex items-center gap-2">
             <div class="flex gap-2">
@@ -37,35 +59,26 @@ const { locale } = Astro.props;
               <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
               <div class="w-3 h-3 rounded-full bg-green-400"></div>
             </div>
-            <div class="flex-1 bg-white rounded-md px-3 py-1 text-xs text-neutral-500 mx-4">
-              jouwmakelaarskantoor.nl
+            <div class="flex-1 bg-white rounded-md px-3 py-1 text-xs text-neutral-500 mx-4 website-url">
+              {websites[0].url}
             </div>
           </div>
 
-          <!-- Website Preview Content -->
-          <div class="bg-gradient-to-br from-primary to-primary-accent p-8 text-white aspect-[16/10]">
-            <div class="flex flex-col h-full justify-between">
-              <div>
-                <div class="text-xs font-semibold mb-2 opacity-90">JOUW AGENCY</div>
-                <h3 class="text-2xl font-display font-bold mb-4">
-                  {t('home.website_showcase.preview_headline', locale)}
-                </h3>
-                <p class="text-white/90 text-sm mb-6">
-                  {t('home.website_showcase.preview_subheadline', locale)}
-                </p>
-                <div class="inline-flex items-center gap-2 bg-secondary text-neutral-900 px-4 py-2 rounded-lg text-sm font-semibold">
-                  <span>{t('home.website_showcase.preview_cta', locale)}</span>
-                  <span class="icon text-sm">arrow_forward</span>
-                </div>
+          <!-- Website Screenshots Carousel -->
+          <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
+            {websites.map((website, index) => (
+              <div
+                class={`website-slide absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+                data-index={index}
+              >
+                <img
+                  src={website.screenshot}
+                  alt={website.alt}
+                  class="w-full h-full object-cover object-top"
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
               </div>
-
-              <!-- Property Cards Mockup -->
-              <div class="grid grid-cols-3 gap-2">
-                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
-                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
-                <div class="bg-white/10 backdrop-blur-sm rounded-lg h-20"></div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -128,6 +141,80 @@ const { locale } = Astro.props;
     </div>
   </div>
 </section>
+
+<script define:vars={{ websites }}>
+  // Carousel logic
+  let currentIndex = 0;
+  let intervalId = null;
+  let isPaused = false;
+
+  const carousel = document.querySelector('.website-showcase-carousel');
+  const slides = document.querySelectorAll('.website-slide');
+  const urlDisplay = document.querySelector('.website-url');
+
+  const showSlide = (index) => {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.remove('opacity-0');
+        slide.classList.add('opacity-100');
+      } else {
+        slide.classList.remove('opacity-100');
+        slide.classList.add('opacity-0');
+      }
+    });
+
+    // Update URL in browser chrome
+    if (urlDisplay) {
+      urlDisplay.textContent = websites[index].url;
+    }
+  };
+
+  const nextSlide = () => {
+    if (isPaused) return;
+    currentIndex = (currentIndex + 1) % websites.length;
+    showSlide(currentIndex);
+  };
+
+  // Start carousel
+  const startCarousel = () => {
+    if (intervalId) clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, 5000); // Change every 5 seconds
+  };
+
+  // Pause on hover
+  if (carousel) {
+    carousel.addEventListener('mouseenter', () => {
+      isPaused = true;
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+      isPaused = false;
+    });
+
+    // Pause on touch for mobile
+    carousel.addEventListener('touchstart', () => {
+      isPaused = true;
+    });
+
+    carousel.addEventListener('touchend', () => {
+      setTimeout(() => {
+        isPaused = false;
+      }, 3000); // Resume after 3 seconds
+    });
+  }
+
+  // Initialize
+  if (slides.length > 1) {
+    startCarousel();
+  }
+
+  // Cleanup on page navigation
+  document.addEventListener('astro:before-swap', () => {
+    if (intervalId) {
+      clearInterval(intervalId);
+    }
+  });
+</script>
 
 <style>
   /* Subtle animation for preview */
