@@ -8,9 +8,6 @@ import type { Language } from '../../i18n/config';
 
 // Import website screenshots - filenames use underscore format (e.g., domain_com.png)
 // The domain is automatically extracted from the filename for the URL
-import inmobiliariasilva_com from '../../assets/websites/inmobiliariasilva_com.png';
-import propertypartners_nl from '../../assets/websites/propertypartners_nl.png';
-import realestatemadrid_es from '../../assets/websites/realestatemadrid_es.png';
 import deluxehomesjavea_com from '../../assets/websites/deluxehomesjavea_com.png';
 import elialiving_es from '../../assets/websites/elialiving_es.png';
 import momentsestates_com from '../../assets/websites/momentsestates_com.png';
@@ -22,20 +19,14 @@ export interface Props {
 
 const { locale } = Astro.props;
 
-// Array of delivered websites
-// URL is derived from the import name (e.g., 'inmobiliariasilva_com' -> 'inmobiliariasilva.com')
+// Array of delivered websites - real client sites only
+// URL is derived from the import name (e.g., 'deluxehomesjavea_com' -> 'deluxehomesjavea.com')
 const websites = [
   {
     name: 'Elia Living',
     url: 'elialiving.es',
     screenshot: elialiving_es,
     alt: 'Elia Living - Real Estate Website'
-  },
-  {
-    name: 'Inmobiliaria Silva',
-    url: 'inmobiliariasilva.com',
-    screenshot: inmobiliariasilva_com,
-    alt: 'Inmobiliaria Silva - Real Estate Website'
   },
   {
     name: 'Deluxe Homes Javea',
@@ -54,18 +45,6 @@ const websites = [
     url: 'ca-realestates.com',
     screenshot: ca_realestates_com,
     alt: 'Cynthia Anthonio Real Estate - Real Estate Website'
-  },
-  {
-    name: 'Property Partners',
-    url: 'propertypartners.nl',
-    screenshot: propertypartners_nl,
-    alt: 'Property Partners - Real Estate Website'
-  },
-  {
-    name: 'Real Estate Madrid',
-    url: 'realestatemadrid.es',
-    screenshot: realestatemadrid_es,
-    alt: 'Real Estate Madrid - Real Estate Website'
   },
 ];
 ---
