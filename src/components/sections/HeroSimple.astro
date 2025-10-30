@@ -145,89 +145,147 @@ const properties = [
 
   <script>
     function initKanbanAnimation() {
-      // Simple Kanban animation: Proposed → Interested → Rejected → Reset
       const kanban = document.querySelector('[data-kanban]');
 
       // Disable animations on mobile (< 1024px) or if user prefers reduced motion
       if (!kanban || window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(max-width: 1023px)').matches) {
         return;
       }
-      const mainCard = kanban.querySelector('[data-property-card="main"]') as HTMLElement | null;
-      const secondCard = kanban.querySelector('[data-property-card="second"]') as HTMLElement | null;
-      let step = 0;
 
-      const animateCard = (card: HTMLElement | null, toStageIndex: number): void => {
-        if (!card) return;
-        
-        const targetStage = kanban.querySelectorAll('[data-stage]')[toStageIndex] as HTMLElement | null;
-        const targetCards = targetStage?.querySelector('[data-kanban-cards]') as HTMLElement | null;
-        if (!targetCards) return;
-        
-        const clone = card.cloneNode(true) as HTMLElement;
-        const startRect = card.getBoundingClientRect();
-        const kanbanRect = kanban.getBoundingClientRect();
-        
-        clone.style.position = 'absolute';
-        clone.style.left = startRect.left - kanbanRect.left + 'px';
-        clone.style.top = startRect.top - kanbanRect.top + 'px';
-        clone.style.width = startRect.width + 'px';
-        clone.style.zIndex = '10';
-        clone.style.pointerEvents = 'none';
-        clone.style.transform = 'rotate(-3deg)';
-        clone.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-        
-        kanban.appendChild(clone);
-        card.style.opacity = '0';
-        
-        targetCards.insertBefore(card, targetCards.firstChild);
-        
-        const endRect = card.getBoundingClientRect();
-        requestAnimationFrame(() => {
-          clone.style.left = endRect.left - kanbanRect.left + 'px';
-          clone.style.top = endRect.top - kanbanRect.top + 'px';
-          clone.style.transform = 'rotate(-2deg)';
+      let intervalId: number | null = null;
+      let isAnimating = false;
+
+      // Get all stages
+      const stages = kanban.querySelectorAll('[data-stage]') as NodeListOf<HTMLElement>;
+      const proposedStage = stages[0];
+      const interestedStage = stages[1];
+      const rejectedStage = stages[2];
+
+      // Update stage counts
+      const updateCounts = () => {
+        stages.forEach((stage) => {
+          const cards = stage.querySelectorAll('.hero-simple__property-card');
+          const countEl = stage.querySelector('.hero-simple__kanban-count');
+          if (countEl) {
+            countEl.textContent = cards.length.toString();
+          }
         });
-        
-        setTimeout(() => {
-          clone.remove();
-          card.style.opacity = '1';
-        }, 600);
       };
 
-      const runAnimation = () => {
-        step++;
-        if (step === 1) {
-          animateCard(mainCard, 1);
-        } else if (step === 2) {
-          setTimeout(() => animateCard(secondCard, 2), 1500);
-        } else {
-          // Reset: fade out and restart
+      // Animate card movement from one stage to another
+      const animateCard = (card: HTMLElement, toStage: HTMLElement): Promise<void> => {
+        return new Promise((resolve) => {
+          const targetCards = toStage.querySelector('[data-kanban-cards]') as HTMLElement;
+          if (!targetCards) {
+            resolve();
+            return;
+          }
+
+          const clone = card.cloneNode(true) as HTMLElement;
+          const startRect = card.getBoundingClientRect();
+          const kanbanRect = kanban.getBoundingClientRect();
+
+          clone.style.position = 'absolute';
+          clone.style.left = startRect.left - kanbanRect.left + 'px';
+          clone.style.top = startRect.top - kanbanRect.top + 'px';
+          clone.style.width = startRect.width + 'px';
+          clone.style.zIndex = '10';
+          clone.style.pointerEvents = 'none';
+          clone.style.transform = 'rotate(-3deg)';
+          clone.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+
+          kanban.appendChild(clone);
+          card.style.opacity = '0';
+
+          // Move actual card to new stage
+          targetCards.insertBefore(card, targetCards.firstChild);
+
+          const endRect = card.getBoundingClientRect();
+          requestAnimationFrame(() => {
+            clone.style.left = endRect.left - kanbanRect.left + 'px';
+            clone.style.top = endRect.top - kanbanRect.top + 'px';
+            clone.style.transform = 'rotate(-2deg)';
+          });
+
           setTimeout(() => {
-            step = 0;
-            // Fade out all cards
-            const allCards = kanban.querySelectorAll('.hero-simple__property-card') as NodeListOf<HTMLElement>;
-            allCards.forEach(card => {
-              card.style.transition = 'opacity 0.3s ease';
-              card.style.opacity = '0';
-            });
-            
-            // Reset after fade
-            setTimeout(() => {
-              allCards.forEach(card => {
-                card.style.opacity = '1';
-              });
-            }, 300);
-          }, 2000);
+            clone.remove();
+            card.style.opacity = '1';
+            updateCounts();
+            resolve();
+          }, 600);
+        });
+      };
+
+      // Reset all cards back to "Proposed" stage
+      const resetKanban = async () => {
+        const proposedCards = proposedStage.querySelector('[data-kanban-cards]') as HTMLElement;
+        if (!proposedCards) return;
+
+        // Gather all cards from interested and rejected stages
+        const interestedCards = Array.from(interestedStage.querySelectorAll('.hero-simple__property-card')) as HTMLElement[];
+        const rejectedCards = Array.from(rejectedStage.querySelectorAll('.hero-simple__property-card')) as HTMLElement[];
+        const allCards = [...interestedCards, ...rejectedCards];
+
+        // Move all cards back to proposed (no animation, instant reset)
+        allCards.forEach(card => {
+          proposedCards.appendChild(card);
+          card.style.opacity = '1';
+        });
+
+        updateCounts();
+      };
+
+      // Move one random card from Proposed to either Interested or Rejected
+      const moveRandomCard = async () => {
+        if (isAnimating) return;
+
+        const proposedCards = Array.from(proposedStage.querySelectorAll('.hero-simple__property-card')) as HTMLElement[];
+
+        // If no cards in Proposed, reset
+        if (proposedCards.length === 0) {
+          isAnimating = true;
+          await resetKanban();
+          isAnimating = false;
+          return;
+        }
+
+        // Pick random card from Proposed
+        const randomCard = proposedCards[Math.floor(Math.random() * proposedCards.length)];
+
+        // Pick random destination: Interested (60%) or Rejected (40%)
+        const destinationStage = Math.random() < 0.6 ? interestedStage : rejectedStage;
+
+        isAnimating = true;
+        await animateCard(randomCard, destinationStage);
+        isAnimating = false;
+      };
+
+      // Start animation loop
+      const startAnimation = () => {
+        if (intervalId) clearInterval(intervalId);
+        intervalId = window.setInterval(moveRandomCard, 2000);
+      };
+
+      // Pause animation
+      const pauseAnimation = () => {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
         }
       };
 
-      const interval = setInterval(runAnimation, 3000);
-      
+      // Initialize counts
+      updateCounts();
+
+      // Start animation
+      startAnimation();
+
       // Pause on hover (desktop)
-      kanban.addEventListener('mouseenter', () => clearInterval(interval));
-      
+      kanban.addEventListener('mouseenter', pauseAnimation);
+      kanban.addEventListener('mouseleave', startAnimation);
+
       // Pause on touch (mobile)
-      kanban.addEventListener('touchstart', () => clearInterval(interval), { passive: true });
+      kanban.addEventListener('touchstart', pauseAnimation, { passive: true });
     }
 
     // Run on initial load
