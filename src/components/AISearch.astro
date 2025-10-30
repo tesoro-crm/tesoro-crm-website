@@ -1,5 +1,6 @@
 ---
 // AI-powered search component for Cloudflare AI Search
+// Full-screen overlay with frosted glass background and live results
 // Docs: https://developers.cloudflare.com/ai-search/
 
 import { t } from '../i18n/utils';
@@ -12,166 +13,247 @@ interface Props {
 const { locale } = Astro.props;
 ---
 
-<div class="ai-search">
-  <button
-    type="button"
-    class="ai-search__trigger"
-    aria-label={t('search.open', locale)}
-    data-search-trigger
-  >
-    <span class="icon icon-sm">search</span>
-    <span class="ai-search__text">{t('search.placeholder', locale)}</span>
-    <kbd class="ai-search__kbd">⌘K</kbd>
-  </button>
+<!-- Fullscreen Search Overlay -->
+<div class="ai-search-overlay" data-search-overlay>
+  <!-- Frosted Glass Background -->
+  <div class="ai-search-backdrop" data-search-backdrop></div>
 
-  <dialog class="ai-search__dialog" data-search-dialog>
-    <div class="ai-search__container">
-      <div class="ai-search__header">
-        <span class="icon icon-sm ai-search__header-icon">search</span>
-        <input
-          type="search"
-          class="ai-search__input"
-          placeholder={t('search.placeholder', locale)}
-          aria-label={t('search.label', locale)}
-          data-search-input
-        />
-        <button
-          type="button"
-          class="ai-search__close"
-          aria-label={t('search.close', locale)}
-          data-search-close
-        >
-          <span class="icon icon-sm">close</span>
-        </button>
+  <!-- Search Container (Centered) -->
+  <div class="ai-search-content">
+    <!-- Close Button (Top Right) -->
+    <button
+      type="button"
+      class="ai-search-close"
+      aria-label={t('search.close', locale)}
+      data-search-close
+    >
+      <span class="icon">close</span>
+    </button>
+
+    <!-- Large Search Input -->
+    <div class="ai-search-input-wrapper">
+      <span class="icon ai-search-icon">search</span>
+      <input
+        type="search"
+        class="ai-search-input"
+        placeholder={t('search.placeholder', locale)}
+        aria-label={t('search.label', locale)}
+        data-search-input
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="ai-search-kbd">ESC</kbd>
+    </div>
+
+    <!-- Search Results (Live as you type) -->
+    <div class="ai-search-results-wrapper" data-search-results-wrapper>
+      <!-- Empty State -->
+      <div class="ai-search-empty" data-search-empty>
+        <span class="icon ai-search-empty-icon">search</span>
+        <p class="ai-search-empty-text">{t('search.empty', locale)}</p>
+        <p class="ai-search-empty-hint">Zoek naar features, prijzen, documentatie, blog posts...</p>
       </div>
 
-      <div class="ai-search__results" data-search-results>
-        <div class="ai-search__empty">
-          <span class="icon icon-2xl ai-search__empty-icon">search</span>
-          <p class="ai-search__empty-text">{t('search.empty', locale)}</p>
-        </div>
+      <!-- Loading State -->
+      <div class="ai-search-loading" data-search-loading style="display: none;">
+        <div class="ai-search-spinner"></div>
+        <p>Zoeken met AI...</p>
       </div>
 
-      <div class="ai-search__footer">
-        <span class="ai-search__powered">
-          Powered by 
-          <strong>Cloudflare AI</strong>
-        </span>
-        <div class="ai-search__shortcuts">
-          <kbd>↑↓</kbd> {t('search.navigate', locale)}
-          <kbd>↵</kbd> {t('search.select', locale)}
-          <kbd>esc</kbd> {t('search.close', locale)}
-        </div>
+      <!-- Results Container -->
+      <div class="ai-search-results" data-search-results style="display: none;">
+        <!-- Results will be injected here by JavaScript -->
+      </div>
+
+      <!-- No Results -->
+      <div class="ai-search-no-results" data-search-no-results style="display: none;">
+        <span class="icon ai-search-no-results-icon">search_off</span>
+        <p>Geen resultaten gevonden</p>
+        <p class="ai-search-no-results-hint">Probeer een andere zoekopdracht</p>
       </div>
     </div>
-  </dialog>
+
+    <!-- Footer with Shortcuts -->
+    <div class="ai-search-footer">
+      <div class="ai-search-powered">
+        Powered by <strong>Cloudflare AI</strong>
+      </div>
+      <div class="ai-search-shortcuts">
+        <span><kbd>↑</kbd><kbd>↓</kbd> Navigeren</span>
+        <span><kbd>↵</kbd> Selecteren</span>
+        <span><kbd>ESC</kbd> Sluiten</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
   function initAISearch(): void {
-    const trigger = document.querySelector('[data-search-trigger]') as HTMLButtonElement;
-    const dialog = document.querySelector('[data-search-dialog]') as HTMLDialogElement;
+    const overlay = document.querySelector('[data-search-overlay]') as HTMLElement;
+    const backdrop = document.querySelector('[data-search-backdrop]') as HTMLElement;
     const input = document.querySelector('[data-search-input]') as HTMLInputElement;
     const closeBtn = document.querySelector('[data-search-close]') as HTMLButtonElement;
+
+    // State containers
+    const emptyState = document.querySelector('[data-search-empty]') as HTMLElement;
+    const loadingState = document.querySelector('[data-search-loading]') as HTMLElement;
     const resultsContainer = document.querySelector('[data-search-results]') as HTMLElement;
+    const noResultsState = document.querySelector('[data-search-no-results]') as HTMLElement;
 
-    if (!trigger || !dialog || !input || !closeBtn || !resultsContainer) return;
+    if (!overlay || !input || !closeBtn) return;
 
-    // Open dialog
-    const openDialog = (): void => {
-      dialog.showModal();
-      input.focus();
+    // Open search overlay
+    const openSearch = (): void => {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      // Focus input after animation
+      setTimeout(() => input.focus(), 100);
     };
 
-    // Close dialog
-    const closeDialog = (): void => {
-      dialog.close();
+    // Close search overlay
+    const closeSearch = (): void => {
+      overlay.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scroll
       input.value = '';
-      resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">Start typing to search...</p></div>';
+      showState('empty');
     };
 
-    // Keyboard shortcut (Cmd/Ctrl + K)
+    // Show specific state (empty, loading, results, no-results)
+    const showState = (state: 'empty' | 'loading' | 'results' | 'no-results'): void => {
+      emptyState.style.display = state === 'empty' ? 'flex' : 'none';
+      loadingState.style.display = state === 'loading' ? 'flex' : 'none';
+      resultsContainer.style.display = state === 'results' ? 'block' : 'none';
+      noResultsState.style.display = state === 'no-results' ? 'flex' : 'none';
+    };
+
+    // Keyboard shortcuts
     document.addEventListener('keydown', (e: KeyboardEvent) => {
+      // Cmd/Ctrl + K to open
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
-        openDialog();
+        openSearch();
       }
-      if (e.key === 'Escape' && dialog.open) {
-        closeDialog();
-      }
-    });
-
-    trigger.addEventListener('click', openDialog);
-    closeBtn.addEventListener('click', closeDialog);
-
-    // Close on backdrop click
-    dialog.addEventListener('click', (e: MouseEvent) => {
-      if (e.target === dialog) {
-        closeDialog();
+      // ESC to close
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        e.preventDefault();
+        closeSearch();
       }
     });
 
-    // Search functionality
+    // Close button
+    closeBtn.addEventListener('click', closeSearch);
+
+    // Click backdrop to close
+    backdrop.addEventListener('click', closeSearch);
+
+    // Expose openSearch globally so Header can call it
+    (window as any).openAISearch = openSearch;
+
+    // Live search with debounce
     let debounceTimer: number;
+    let currentResults: any[] = [];
+    let selectedIndex = -1;
+
     input.addEventListener('input', () => {
       clearTimeout(debounceTimer);
-      debounceTimer = window.setTimeout(async () => {
-        const query = input.value.trim();
-        
-        if (!query) {
-          resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">Start typing to search...</p></div>';
-          return;
-        }
+      const query = input.value.trim();
 
-        // Show loading
-        resultsContainer.innerHTML = '<div class="ai-search__loading"><div class="ai-search__spinner"></div><p>Searching with AI...</p></div>';
+      if (!query) {
+        showState('empty');
+        currentResults = [];
+        selectedIndex = -1;
+        return;
+      }
+
+      // Show loading after 150ms (only if still typing)
+      debounceTimer = window.setTimeout(async () => {
+        showState('loading');
 
         try {
-          // Call our Cloudflare Worker proxy (no CORS issues, token stays secure)
-          console.log('Searching for:', query);
           const response = await fetch('/api/search', {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query }),
           });
-          
-          console.log('Response status:', response.status);
-          
+
           if (!response.ok) {
-            const errorText = await response.text();
-            console.error('API error:', errorText);
-            throw new Error(`Search failed: ${response.status} - ${errorText}`);
+            throw new Error(`Search failed: ${response.status}`);
           }
 
           const data = await response.json();
-          console.log('Search results:', data);
-          const results = data.result?.results || [];
-          
+          const results = data.results || [];
+          currentResults = results;
+          selectedIndex = -1;
+
           if (results.length === 0) {
-            resultsContainer.innerHTML = '<div class="ai-search__empty"><span class="icon icon-2xl ai-search__empty-icon">search</span><p class="ai-search__empty-text">No results found</p></div>';
+            showState('no-results');
             return;
           }
 
           // Render results
-          resultsContainer.innerHTML = results.map((result: any) => `
-            <a href="${result.url}" class="ai-search__result">
-              <div class="ai-search__result-header">
-                <h3 class="ai-search__result-title">${result.title}</h3>
-                ${result.score ? `<span class="ai-search__result-score">${Math.round(result.score * 100)}% match</span>` : ''}
+          resultsContainer.innerHTML = results.map((result: any, index: number) => `
+            <a
+              href="${result.url}"
+              class="ai-search-result"
+              data-result-index="${index}"
+            >
+              <div class="ai-search-result-header">
+                <h3 class="ai-search-result-title">${result.title}</h3>
+                ${result.score ? `<span class="ai-search-result-score">${Math.round(result.score * 100)}%</span>` : ''}
               </div>
-              <p class="ai-search__result-excerpt">${result.excerpt}</p>
-              <span class="ai-search__result-url">${result.url}</span>
+              <p class="ai-search-result-excerpt">${result.excerpt || result.content || 'No description available'}</p>
+              <span class="ai-search-result-url">${result.url}</span>
             </a>
           `).join('');
+
+          showState('results');
+
         } catch (error) {
           console.error('Search error:', error);
-          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-          resultsContainer.innerHTML = `<div class="ai-search__error"><p><strong>Search error:</strong> ${errorMessage}</p><p class="text-sm mt-2">Check browser console for details.</p></div>`;
+          resultsContainer.innerHTML = `
+            <div class="ai-search-error">
+              <span class="icon">error</span>
+              <p>Er ging iets mis bij het zoeken</p>
+              <p class="ai-search-error-hint">Probeer het opnieuw</p>
+            </div>
+          `;
+          showState('results');
         }
-      }, 300);
+      }, 300); // 300ms debounce
     });
+
+    // Keyboard navigation (arrow keys, enter)
+    input.addEventListener('keydown', (e: KeyboardEvent) => {
+      const resultElements = resultsContainer.querySelectorAll('.ai-search-result');
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        selectedIndex = Math.min(selectedIndex + 1, resultElements.length - 1);
+        updateSelection(resultElements);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        selectedIndex = Math.max(selectedIndex - 1, -1);
+        updateSelection(resultElements);
+      } else if (e.key === 'Enter' && selectedIndex >= 0) {
+        e.preventDefault();
+        const selectedResult = resultElements[selectedIndex] as HTMLAnchorElement;
+        if (selectedResult) {
+          window.location.href = selectedResult.href;
+        }
+      }
+    });
+
+    // Update visual selection
+    const updateSelection = (elements: NodeListOf<Element>): void => {
+      elements.forEach((el, index) => {
+        if (index === selectedIndex) {
+          el.classList.add('selected');
+          el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        } else {
+          el.classList.remove('selected');
+        }
+      });
+    };
   }
 
   // Initialize on load
@@ -182,156 +264,243 @@ const { locale } = Astro.props;
 </script>
 
 <style>
-  .ai-search__trigger {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.5rem;
-    color: #6b7280;
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  /* Fullscreen Overlay (Hidden by default) */
+  .ai-search-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
-  .ai-search__trigger:hover {
-    border-color: #0a1f44;
+  .ai-search-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  /* Frosted Glass Backdrop */
+  .ai-search-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 31, 68, 0.7); /* Primary color with transparency */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  /* Content Container (Centered) */
+  .ai-search-content {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+  }
+
+  .ai-search-overlay.active .ai-search-content {
+    transform: translateY(0);
+  }
+
+  /* Close Button (Top Right) */
+  .ai-search-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .ai-search-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+  .ai-search-close .icon {
+    font-size: 24px;
+  }
+
+  /* Large Search Input */
+  .ai-search-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-search-icon {
+    font-size: 32px;
+    color: #003366; /* Primary color */
+    flex-shrink: 0;
+  }
+
+  .ai-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #0a1f44;
   }
 
-  .ai-search__trigger .icon {
-    font-size: 1.125rem; /* 18px */
-  }
-
-  .ai-search__text {
+  .ai-search-input::placeholder {
     color: #9ca3af;
   }
 
-  .ai-search__kbd {
-    padding: 0.125rem 0.375rem;
+  .ai-search-kbd {
+    padding: 0.5rem 0.75rem;
     background: #f3f4f6;
     border: 1px solid #e5e7eb;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
     font-family: monospace;
-    color: #6b7280;
-  }
-
-  .ai-search__dialog {
-    max-width: 640px;
-    width: 90vw;
-    max-height: 80vh;
-    padding: 0;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    background: white;
-  }
-
-  .ai-search__dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-  }
-
-  .ai-search__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .ai-search__header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .ai-search__header-icon {
     color: #6b7280;
     flex-shrink: 0;
   }
 
-  .ai-search__input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: #0a1f44;
-  }
-
-  .ai-search__input::placeholder {
-    color: #9ca3af;
-  }
-
-  .ai-search__close {
-    padding: 0.5rem;
-    background: none;
-    border: none;
-    color: #6b7280;
-    cursor: pointer;
-    border-radius: 0.375rem;
-    transition: all 0.2s ease;
-  }
-
-  .ai-search__close:hover {
-    background: #f3f4f6;
-    color: #0a1f44;
-  }
-
-  .ai-search__results {
-    flex: 1;
+  /* Results Wrapper */
+  .ai-search-results-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-height: 60vh;
     overflow-y: auto;
-    padding: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
-  .ai-search__empty,
-  .ai-search__loading,
-  .ai-search__error {
+  /* Empty State */
+  .ai-search-empty {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 1rem;
+    padding: 4rem 2rem;
     text-align: center;
-    color: #6b7280;
+    gap: 1rem;
   }
 
-  .ai-search__empty-icon {
-    margin-bottom: 1rem;
+  .ai-search-empty-icon {
+    font-size: 64px;
     color: #d1d5db;
   }
 
-  .ai-search__spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid #f3f4f6;
-    border-top-color: #0a1f44;
+  .ai-search-empty-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0a1f44;
+    margin: 0;
+  }
+
+  .ai-search-empty-hint {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  /* Loading State */
+  .ai-search-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+  }
+
+  .ai-search-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #e5e7eb;
+    border-top-color: #003366;
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
-    margin-bottom: 1rem;
   }
 
   @keyframes spin {
     to { transform: rotate(360deg); }
   }
 
-  .ai-search__result {
+  .ai-search-loading p {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+
+  /* No Results State */
+  .ai-search-no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+  }
+
+  .ai-search-no-results-icon {
+    font-size: 64px;
+    color: #d1d5db;
+  }
+
+  .ai-search-no-results p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0a1f44;
+    margin: 0;
+  }
+
+  .ai-search-no-results-hint {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  /* Results Container */
+  .ai-search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Individual Result */
+  .ai-search-result {
     display: block;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 1.25rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
     text-decoration: none;
     color: inherit;
-    transition: background 0.2s ease;
+    transition: all 0.2s ease;
   }
 
-  .ai-search__result:hover {
+  .ai-search-result:hover,
+  .ai-search-result.selected {
     background: #f9fafb;
+    border-color: #003366;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
   }
 
-  .ai-search__result-header {
+  .ai-search-result-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -339,73 +508,165 @@ const { locale } = Astro.props;
     margin-bottom: 0.5rem;
   }
 
-  .ai-search__result-title {
-    font-size: 1rem;
+  .ai-search-result-title {
+    font-size: 1.125rem;
     font-weight: 600;
     color: #0a1f44;
     margin: 0;
   }
 
-  .ai-search__result-score {
-    padding: 0.125rem 0.5rem;
+  .ai-search-result-score {
+    padding: 0.25rem 0.75rem;
     background: #10b981;
     color: white;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 600;
+    flex-shrink: 0;
   }
 
-  .ai-search__result-excerpt {
-    font-size: 0.875rem;
+  .ai-search-result-excerpt {
+    font-size: 0.9375rem;
     color: #6b7280;
-    margin: 0 0 0.5rem 0;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0 0 0.75rem 0;
   }
 
-  .ai-search__result-url {
-    font-size: 0.75rem;
+  .ai-search-result-url {
+    font-size: 0.8125rem;
     color: #9ca3af;
   }
 
-  .ai-search__footer {
+  /* Error State */
+  .ai-search-error {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1rem;
-    border-top: 1px solid #e5e7eb;
-    font-size: 0.75rem;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .ai-search-error .icon {
+    font-size: 48px;
+    color: #ef4444;
+  }
+
+  .ai-search-error p {
+    font-size: 1rem;
+    color: #0a1f44;
+    margin: 0;
+  }
+
+  .ai-search-error-hint {
+    font-size: 0.875rem;
     color: #6b7280;
   }
 
-  .ai-search__powered strong {
-    color: #0a1f44;
-  }
-
-  .ai-search__shortcuts {
+  /* Footer */
+  .ai-search-footer {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
-  .ai-search__shortcuts kbd {
-    padding: 0.125rem 0.375rem;
-    background: #f3f4f6;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.25rem;
+  .ai-search-powered {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .ai-search-powered strong {
+    color: white;
+    font-weight: 600;
+  }
+
+  .ai-search-shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .ai-search-shortcuts kbd {
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.375rem;
     font-family: monospace;
+    font-size: 0.75rem;
+    color: white;
   }
 
-  @media (max-width: 640px) {
-    .ai-search__dialog {
-      width: 100vw;
-      max-width: 100vw;
-      height: 100vh;
-      max-height: 100vh;
-      border-radius: 0;
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ai-search-content {
+      width: 95%;
+      padding: 1rem;
+      gap: 1rem;
     }
 
-    .ai-search__kbd {
+    .ai-search-close {
+      top: 1rem;
+      right: 1rem;
+      width: 40px;
+      height: 40px;
+    }
+
+    .ai-search-input-wrapper {
+      padding: 1rem 1.5rem;
+    }
+
+    .ai-search-input {
+      font-size: 1.25rem;
+    }
+
+    .ai-search-icon {
+      font-size: 28px;
+    }
+
+    .ai-search-kbd {
       display: none;
     }
+
+    .ai-search-results-wrapper {
+      padding: 1rem;
+      max-height: 50vh;
+    }
+
+    .ai-search-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+    }
+
+    .ai-search-shortcuts {
+      gap: 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Smooth Scrollbar */
+  .ai-search-results-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .ai-search-results-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .ai-search-results-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  .ai-search-results-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 </style>

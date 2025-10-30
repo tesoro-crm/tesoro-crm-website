@@ -343,6 +343,9 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
   </nav>
 </header>
 
+<!-- AI-Powered Search Overlay -->
+<AISearch locale={locale} />
+
 <script>
   function initHeader() {
     // Mobile menu toggle
@@ -355,12 +358,13 @@ const basePath = currentPath.replace(/^\/(en|es|nl)/, '') || '/';
       });
     }
 
-    // Search button - placeholder for future search functionality
+    // Search button - open AI-powered search overlay
     const searchButton = document.getElementById('search-button');
     if (searchButton) {
       searchButton.addEventListener('click', () => {
-        // TODO: Implement search modal/functionality
-        console.log('Search clicked - implement search functionality');
+        if ((window as any).openAISearch) {
+          (window as any).openAISearch();
+        }
       });
     }
 
