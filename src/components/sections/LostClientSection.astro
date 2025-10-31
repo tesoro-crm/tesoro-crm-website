@@ -70,7 +70,7 @@ const reminderBtnRemind = t('home.visuals.call_reminder.btn_remind', locale);
 
       <!-- Right: Content -->
       <div class="lost-client-section__content">
-        <h2 class="lost-client-section__headline" data-animate="fade-in">{headline}</h2>
+        <h2 class="lost-client-section__headline" data-animate="fade-in" set:html={headline}></h2>
 
         <p class="lost-client-section__subline" data-animate="fade-in-delay-1">{subline}</p>
 
