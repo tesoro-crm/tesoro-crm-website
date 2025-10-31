@@ -1,0 +1,516 @@
+---
+import type { Language } from '../../i18n/types';
+import { getLocale, loadTranslations, t } from '../../i18n/utils';
+
+// Get current locale
+const locale: Language = getLocale(Astro.currentLocale);
+await loadTranslations(locale);
+
+// Translation keys
+const headline = t('home.lost_client_section.headline', locale);
+const subline = t('home.lost_client_section.subline', locale);
+const featureTitle = t('home.lost_client_section.feature_title', locale);
+const featureDescription = t('home.lost_client_section.feature_description', locale);
+const cta = t('home.lost_client_section.cta', locale);
+
+// Reminder card translations (reusing existing visual keys)
+const reminderTitle = t('home.visuals.call_reminder.title', locale);
+const reminderTime = t('home.visuals.call_reminder.time', locale);
+const reminderClientName = t('home.visuals.call_reminder.client_name', locale);
+const reminderClientMeta = t('home.visuals.call_reminder.client_meta', locale);
+const reminderPropertyInterest = t('home.visuals.call_reminder.property_interest', locale);
+const reminderBtnCall = t('home.visuals.call_reminder.btn_call', locale);
+const reminderBtnRemind = t('home.visuals.call_reminder.btn_remind', locale);
+---
+
+<section class="lost-client-section" data-section="lost-client">
+  <div class="lost-client-section__container">
+    <div class="lost-client-section__grid">
+
+      <!-- Left: Reminder Card UI -->
+      <div class="lost-client-section__visual">
+        <div class="reminder-card" data-animate="bounce-in">
+          <div class="reminder-card__header">
+            <span class="reminder-card__icon material-symbols-outlined">notifications_active</span>
+            <div class="reminder-card__header-text">
+              <h3 class="reminder-card__title">{reminderTitle}</h3>
+              <span class="reminder-card__time">{reminderTime}</span>
+            </div>
+          </div>
+
+          <div class="reminder-card__content">
+            <div class="reminder-card__client">
+              <div class="reminder-card__avatar">
+                <span class="material-symbols-outlined">person</span>
+              </div>
+              <div class="reminder-card__client-info">
+                <h4 class="reminder-card__client-name">{reminderClientName}</h4>
+                <p class="reminder-card__client-meta">{reminderClientMeta}</p>
+              </div>
+            </div>
+
+            <div class="reminder-card__property">
+              <span class="material-symbols-outlined">home</span>
+              <p class="reminder-card__property-text">{reminderPropertyInterest}</p>
+            </div>
+          </div>
+
+          <div class="reminder-card__actions">
+            <button class="reminder-card__btn reminder-card__btn--primary">
+              <span class="material-symbols-outlined">phone</span>
+              {reminderBtnCall}
+            </button>
+            <button class="reminder-card__btn reminder-card__btn--secondary">
+              <span class="material-symbols-outlined">schedule</span>
+              {reminderBtnRemind}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="lost-client-section__content">
+        <h2 class="lost-client-section__headline" data-animate="fade-in">{headline}</h2>
+
+        <p class="lost-client-section__subline" data-animate="fade-in-delay-1">{subline}</p>
+
+        <div class="lost-client-section__feature" data-animate="fade-in-delay-2">
+          <div class="feature-block">
+            <div class="feature-block__icon">
+              <span class="material-symbols-outlined">check_circle</span>
+            </div>
+            <div class="feature-block__content">
+              <h3 class="feature-block__title">{featureTitle}</h3>
+              <p class="feature-block__description">{featureDescription}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lost-client-section__cta" data-animate="fade-in-delay-3">
+          <button class="lost-client-section__cta-btn">
+            <span class="material-symbols-outlined">event</span>
+            {cta}
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.lost-client-section {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.lost-client-section__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.lost-client-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Visual (Left side) */
+.lost-client-section__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reminder Card */
+.reminder-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 51, 102, 0.12);
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.reminder-card:hover {
+  box-shadow: 0 12px 48px rgba(0, 51, 102, 0.18);
+  transform: translateY(-4px);
+}
+
+.reminder-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.reminder-card__icon {
+  color: #f59e0b;
+  font-size: 1.75rem;
+  animation: pulse-icon 2s ease-in-out infinite;
+}
+
+@keyframes pulse-icon {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+.reminder-card__header-text {
+  flex: 1;
+}
+
+.reminder-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin: 0;
+}
+
+.reminder-card__time {
+  font-size: 0.875rem;
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.reminder-card__content {
+  margin-bottom: 1.25rem;
+}
+
+.reminder-card__client {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.reminder-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #003366 0%, #0047b3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.reminder-card__client-info {
+  flex: 1;
+}
+
+.reminder-card__client-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin: 0 0 0.25rem 0;
+}
+
+.reminder-card__client-meta {
+  font-size: 0.875rem;
+  color: #f59e0b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.reminder-card__property {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.reminder-card__property .material-symbols-outlined {
+  color: #003366;
+  font-size: 1.25rem;
+}
+
+.reminder-card__property-text {
+  font-size: 0.875rem;
+  color: #475569;
+  margin: 0;
+}
+
+.reminder-card__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.reminder-card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.reminder-card__btn--primary {
+  background: #00a870;
+  color: white;
+}
+
+.reminder-card__btn--primary:hover {
+  background: #008f5f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 112, 0.3);
+}
+
+.reminder-card__btn--secondary {
+  background: white;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.reminder-card__btn--secondary:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.reminder-card__btn .material-symbols-outlined {
+  font-size: 1.125rem;
+}
+
+/* Content (Right side) */
+.lost-client-section__content {
+  padding-left: 2rem;
+}
+
+.lost-client-section__headline {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.lost-client-section__subline {
+  font-size: clamp(1.0625rem, 1.85vw, 1.125rem);
+  color: #334155;
+  opacity: 0.7;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+}
+
+.feature-block {
+  background: #f3fff8;
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 168, 112, 0.08);
+  margin-bottom: 2rem;
+}
+
+.feature-block__icon {
+  flex-shrink: 0;
+}
+
+.feature-block__icon .material-symbols-outlined {
+  font-size: 2rem;
+  color: #00a870;
+}
+
+.feature-block__content {
+  flex: 1;
+}
+
+.feature-block__title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.feature-block__description {
+  font-size: 0.9375rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.lost-client-section__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #00a870;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-shadow: 0 4px 16px rgba(0, 168, 112, 0.2);
+}
+
+.lost-client-section__cta-btn:hover {
+  background: #008f5f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 168, 112, 0.3);
+}
+
+.lost-client-section__cta-btn .material-symbols-outlined {
+  font-size: 1.25rem;
+}
+
+/* Animations */
+[data-animate] {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+[data-animate="fade-in"] {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+[data-animate="fade-in-delay-1"] {
+  animation: fadeInUp 0.6s ease-out 0.15s forwards;
+}
+
+[data-animate="fade-in-delay-2"] {
+  animation: fadeInUp 0.6s ease-out 0.3s forwards;
+}
+
+[data-animate="fade-in-delay-3"] {
+  animation: fadeInUp 0.6s ease-out 0.45s forwards;
+}
+
+[data-animate="bounce-in"] {
+  animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  50% {
+    transform: scale(1.05) translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .lost-client-section__grid {
+    gap: 3rem;
+  }
+
+  .lost-client-section__content {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lost-client-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .lost-client-section__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .lost-client-section__visual {
+    order: 2;
+  }
+
+  .lost-client-section__content {
+    order: 1;
+    padding-left: 0;
+  }
+
+  .lost-client-section__headline {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .lost-client-section__subline {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-block {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reminder-card {
+    max-width: 100%;
+  }
+
+  .reminder-card__actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .lost-client-section {
+    padding: 3rem 1rem;
+  }
+
+  .lost-client-section__headline {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .lost-client-section__subline {
+    font-size: 0.9375rem;
+  }
+
+  .lost-client-section__cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .feature-block {
+    flex-direction: column;
+  }
+
+  .feature-block__icon {
+    align-self: flex-start;
+  }
+}
+</style>

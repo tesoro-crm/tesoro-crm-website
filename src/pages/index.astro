@@ -14,6 +14,7 @@ import Modal from '../components/ui/Modal.astro';
 import HeroSimple from '../components/sections/HeroSimple.astro';
 import WebsiteShowcase from '../components/sections/WebsiteShowcase.astro';
 import LeadWorkflowSection from '../components/sections/LeadWorkflowSection.astro';
+import LostClientSection from '../components/sections/LostClientSection.astro';
 import PainPointSection from '../components/sections/PainPointSection.astro';
 import CoCreated from '../components/sections/CoCreated.astro';
 import Testimonials from '../components/sections/Testimonials.astro';
@@ -49,6 +50,9 @@ await loadTranslations(locale);
   />
 
   <LeadWorkflowSection locale={locale} />
+
+  <!-- Lost Client Section -->
+  <LostClientSection />
 
   <CoCreated locale={locale} />
   <Testimonials locale={locale} />
