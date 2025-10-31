@@ -10,6 +10,7 @@ interface Props {
 const { locale } = Astro.props;
 
 const headline = t('home.hero.headline', locale);
+const tagline = t('home.hero.tagline', locale);
 const subheadline = t('home.hero.subheadline', locale);
 const ctaPrimary = t('home.hero.cta_primary', locale);
 const ctaSecondary = t('home.hero.cta_secondary', locale);
@@ -37,6 +38,7 @@ const properties = [
     <div class="hero-simple__grid">
       <div class="hero-simple__content">
         <h1 class="hero-simple__headline">{headline}</h1>
+        <p class="hero-simple__tagline">{tagline}</p>
         <p class="hero-simple__subheadline">{subheadline}</p>
 
         <div class="hero-simple__ctas">
@@ -359,6 +361,18 @@ const properties = [
     line-height: 1.2;
     color: #0a1f44;
     letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-simple__tagline {
+    font-size: clamp(1rem, 1.85vw, 1.15rem);
+    font-style: italic;
+    color: #64748b;
+    max-width: 32rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
   }
 
   .hero-simple__subheadline {
@@ -599,6 +613,13 @@ const properties = [
     .hero-simple__headline {
       font-size: clamp(1.5rem, 5vw, 2rem);
       line-height: 1.25;
+      margin-bottom: 0.65rem;
+    }
+
+    .hero-simple__tagline {
+      font-size: 0.975rem;
+      line-height: 1.5;
+      margin-bottom: 0.85rem;
     }
 
     .hero-simple__subheadline {
