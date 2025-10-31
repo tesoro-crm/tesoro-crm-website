@@ -15,7 +15,6 @@ import HeroSimple from '../components/sections/HeroSimple.astro';
 import WebsiteShowcase from '../components/sections/WebsiteShowcase.astro';
 import LeadWorkflowSection from '../components/sections/LeadWorkflowSection.astro';
 import LostClientSection from '../components/sections/LostClientSection.astro';
-import PainPointSection from '../components/sections/PainPointSection.astro';
 import CoCreated from '../components/sections/CoCreated.astro';
 import Testimonials from '../components/sections/Testimonials.astro';
 import DemoSection from '../components/sections/DemoSection.astro';
@@ -34,34 +33,15 @@ await loadTranslations(locale);
 >
   <HeroSimple locale={locale} />
 
-  <!-- Pain Point 1: Callback -->
-  <PainPointSection
-    locale={locale}
-    painKey="callback"
-  />
-
   <WebsiteShowcase locale={locale} />
-
-  <!-- Pain Point 2: Follow-up -->
-  <PainPointSection
-    locale={locale}
-    painKey="follow_up"
-    reverse={true}
-  />
-
-  <LeadWorkflowSection locale={locale} />
 
   <!-- Lost Client Section -->
   <LostClientSection />
 
+  <LeadWorkflowSection locale={locale} />
+
   <CoCreated locale={locale} />
   <Testimonials locale={locale} />
-
-  <!-- Pain Point 3: Lost Deal -->
-  <PainPointSection
-    locale={locale}
-    painKey="lost_deal"
-  />
 
   <DemoSection locale={locale} />
   <FAQ locale={locale} />
