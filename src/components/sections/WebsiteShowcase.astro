@@ -83,7 +83,7 @@ const websites = [
           <div class="relative aspect-[16/10] bg-neutral-100 overflow-hidden">
             {websites.map((website, index) => (
               <div
-                class={`website-slide absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+                class={`website-slide absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                 data-index={index}
               >
                 <a
@@ -186,11 +186,11 @@ const websites = [
   const showSlide = (index) => {
     slides.forEach((slide, i) => {
       if (i === index) {
-        slide.classList.remove('opacity-0');
+        slide.classList.remove('opacity-0', 'pointer-events-none');
         slide.classList.add('opacity-100');
       } else {
         slide.classList.remove('opacity-100');
-        slide.classList.add('opacity-0');
+        slide.classList.add('opacity-0', 'pointer-events-none');
       }
     });
 
