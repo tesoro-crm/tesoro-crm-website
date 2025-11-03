@@ -89,7 +89,7 @@ const timeline = t('home.ideas_built_section.timeline', locale);
   z-index: 0;
 }
 
-/* Glowing filament inside the lightbulb */
+/* Glowing filament spiral inside the lightbulb */
 .ideas-built-section::after {
   content: '';
   position: absolute;
@@ -98,25 +98,27 @@ const timeline = t('home.ideas_built_section.timeline', locale);
   transform: translate(-50%, -50%) rotate(-15deg);
   width: 600px;
   height: 600px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 6c-1.1 0-2 .9-2 2v3c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V8c0-1.1-.9-2-2-2z' fill='%23fbbf24' opacity='0.9'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M11 15L10.8 9' stroke='%23fbbf24' stroke-width='0.5' opacity='0.25'/%3E%3Cpath d='M13 15L13.2 9' stroke='%23fbbf24' stroke-width='0.5' opacity='0.25'/%3E%3Cpath d='M10.8 9Q11 8.5 11.3 8.2 11.7 8 12 8 12.3 8 12.7 8.2 13 8.5 13.2 9' stroke='%23fbbf24' stroke-width='1.1'/%3E%3Cpath d='M11 8.7Q11.3 8.4 11.6 8.2 12 8.1 12.4 8.2 12.7 8.4 13 8.7' stroke='%23fbbf24' stroke-width='1.0'/%3E%3Cpath d='M11.2 8.4Q11.5 8.2 11.8 8.1 12.2 8 12.6 8.1 12.8 8.2 12.8 8.4' stroke='%23fbbf24' stroke-width='0.9'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.7;
   pointer-events: none;
   z-index: 1;
-  animation: lightbulbGlow 2s ease-in-out infinite alternate;
-  filter: blur(1px);
+  animation: filamentGlow 12s ease-in-out infinite;
 }
 
-@keyframes lightbulbGlow {
-  0% {
-    opacity: 0.5;
-    filter: blur(1px) drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+@keyframes filamentGlow {
+  0%, 83.33% {
+    opacity: 0;
+    filter: blur(1px) drop-shadow(0 0 0px rgba(251, 191, 36, 0));
+  }
+  91.67% {
+    opacity: 0.9;
+    filter: blur(1px) drop-shadow(0 0 24px rgba(251, 191, 36, 1)) drop-shadow(0 0 40px rgba(251, 191, 36, 0.8));
   }
   100% {
-    opacity: 0.8;
-    filter: blur(1px) drop-shadow(0 0 16px rgba(251, 191, 36, 0.9));
+    opacity: 0;
+    filter: blur(1px) drop-shadow(0 0 0px rgba(251, 191, 36, 0));
   }
 }
 
